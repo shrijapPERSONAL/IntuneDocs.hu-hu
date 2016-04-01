@@ -688,6 +688,9 @@
   "e868289a41edf196acb6251aa66ff41232be4693": [
     "InTuneDocs\\zDeletedTopics\\get-started-with-a-30-day-trial-of-microsoft-intune-bryanla.md"
   ],
+  "010f675e6daeb3f1b408889bf0f85be9eb3fd53b": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md"
+  ],
   "e5a48532c0136936cff841f88f50e7b2d328d7db": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md"
   ],
@@ -709,6 +712,9 @@
   "37b42c1856d9d95b392667129a05ec58af972428": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md"
   ],
+  "beb72805ef91bb7767e1292f1ebf3ac5269dc320": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md"
+  ],
   "a2bca4c6517ee74956b0af57d28c0ad6443cf3c7": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md"
   ],
@@ -718,11 +724,17 @@
   "233bf09a4f18b14d3de87fe3f8346eb3e7de491e": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md"
   ],
+  "3e8fc61c7cc477c6634fe09a9fc340c3716a2de6": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md"
+  ],
   "8c90cb4e5739d0b298ce6e68ad44e96baa359df1": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md"
   ],
   "6a7276fe891f9ab7df8f047812d786292cb10c4f": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md"
+  ],
+  "9de00ca38ba044a9f932ac030d345bf8975fca1e": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md"
   ],
   "e935f718f4f0f790204fe17b4df8d6153bee7685": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md"
@@ -732,6 +744,9 @@
   ],
   "2807a7d688e6cda2794c4582a13db9f5afdaad8e": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md"
+  ],
+  "49ab089de9c7a66aa67e7bbb44214090dc6856aa": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md"
   ],
   "01cd5d5f2b38ab3d8d73f4d0408b22646b14a846": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md"
@@ -745,6 +760,9 @@
   "f613536f3128351d18634ab0c9b66995d38b5567": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md"
   ],
+  "32e40eb93e1dcc65f81306d373a734958aee73de": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md"
+  ],
   "5a0328e5bd2c904edc72342a4243157be5fd6694": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md"
   ],
@@ -756,6 +774,9 @@
   ],
   "deb368f6ab007bba9bb1f22ca0b2cbc4c0b0d90e": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md"
+  ],
+  "03308728fa55849a6d64317e27fd78b9e8877058": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md"
   ],
   "b1ba4c92d9602389ff51031b93e3810490af635e": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md"
@@ -774,6 +795,9 @@
   ],
   "885686b1306c5cb98706e7590c8a0c49eeb3aa63": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md"
+  ],
+  "8f15283b1694a6f70f44259de6864e96f7b706fd": [
+    "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md"
   ],
   "e4063c26ebfbc67619eb3bbc663051ceac18eaa4": [
     "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md"
@@ -4131,5 +4155,17 @@
   ],
   "b5de57ae1991be5118d0254fe2b391d9c7fbc9cd": [
     "InTuneDocs\\DeployUse\\ios-mam-policy-settings.md"
+  ],
+  "f12f9ce7f1cc2617755aa8884f51cc557ac9f59b": [
+    "InTuneDocs\\GetStarted\\media\\companyportal.png"
+  ],
+  "beb27bab4afd25c8d6a30c711a85fe0141176c26": [
+    "InTuneDocs\\GetStarted\\media\\groups.png"
+  ],
+  "fb6243f0baeb0253a55299242cf8eeb596ca0e14": [
+    "InTuneDocs\\GetStarted\\media\\mdmAuthority.png"
+  ],
+  "a300bc7b0d71c64f0b79844c673ba810b9206cd7": [
+    "InTuneDocs\\GetStarted\\media\\policy.png"
   ]
 }
