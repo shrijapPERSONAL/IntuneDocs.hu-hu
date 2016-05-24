@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\includes\accessibility12.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility12.md) | InSyncHandedBackSuccess | [Details](#bf20d3df144eed21166ea7235e9e3f1a45cbc7cd543)
 
 ## Item Details
-##### <a name='bf20d3df144eed21166ea7235e9e3f1a45cbc7cd543'></a> Source: [InTuneDocs\includes\accessibility12.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility12.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\accessibility12.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/574dacbfe44cc4f88dc0f30baffd0d8c6b1943a1/InTuneDocs/includes/accessibility12.md)
-* Handoff File: [accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/a09ae1742665b663b18c81e1fe0294265d15f33d/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf)
-* Handoff Datetime: 2016-05-01 17:26:41
-* Handoff Reason: Include
-* Archive File: [accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/a421b82c21aa6c13cb505970f6bb2d531306995c/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf)
-* Archive Datetime: 2016-05-08 03:03:12
-* Handback File: [accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/caa1e71214ba7353f9d3e39c2c24c04f13b07407/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/accessibility12.70d642947230a7d96986ce96b54502fec8b9ba2b.hu-hu.xlf)
-* Handback Datetime: 2016-05-24 07:53:08
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
