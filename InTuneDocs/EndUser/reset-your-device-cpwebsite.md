@@ -1,0 +1,51 @@
+---
+# required metadata
+
+title: Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
+
+Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](http://portal.manage.microsoft.com) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
+
+Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati portálon, és visszaállnak rajta a gyári alapbeállítások. 
+
+Az eszköz alaphelyzetbe állítása:
+
+1.  Nyissa meg a [Vállalati portál webhelyet](http://portal.manage.microsoft.com), és koppintson annak az eszköznek a nevére, amelyet módosítani szeretne.
+
+2.  Koppintson az **Alaphelyzet** elemre..
+
+    ![eszköz-alaphelyzetbe-állítása](./media//iwp-1-tap-reset-passcode.png)
+
+Az eszköz alaphelyzetbe állítása megtörtént.
+
+### További információ
+[Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
+
+
+<!--HONumber=May16_HO1-->
+
+

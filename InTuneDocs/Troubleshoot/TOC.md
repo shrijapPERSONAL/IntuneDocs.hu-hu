@@ -1,15 +1,20 @@
-# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Ismertetés és felfedezés](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 
-# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
-## [How to get support](how-to-get-support-for-microsoft-intune.md)
-## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
-## [Troubleshoot company resource access problems](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-## [Troubleshoot app deployment problems](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-## [Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md)
-## [Troubleshoot policies](Troubleshoot-policies-in-microsoft-intune.md)
-## [Troubleshoot client setup](Troubleshoot-client-setup-in-microsoft-intune.md)
-## [Troubleshoot software updates](Troubleshoot-software-updates-in-microsoft-intune.md)
-## [Troubleshoot email profiles](Troubleshoot-email-profiles-in-microsoft-intune.md)
+# [Hibaelhárítás](how-to-get-support-for-microsoft-intune.md)
+## [Támogatás igénylése](how-to-get-support-for-microsoft-intune.md)
+## [Az Endpoint Protection hibáinak elhárítása](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
+## [Vállalati erőforrás-hozzáférési problémák elhárítása](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+## [Alkalmazástelepítéssel kapcsolatos problémák elhárítása](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+## [Eszközök regisztrálásával kapcsolatos problémák elhárítása](troubleshoot-device-enrollment-in-intune.md)
+## [Szabályzatokkal kapcsolatos problémák elhárítása](Troubleshoot-policies-in-microsoft-intune.md)
+## [Az ügyfél beállításával kapcsolatos hibák elhárítása](Troubleshoot-client-setup-in-microsoft-intune.md)
+## [Szoftverfrissítésekkel kapcsolatos hibák elhárítása](Troubleshoot-software-updates-in-microsoft-intune.md)
+## [Az e-mail-profilok hibaelhárítása](Troubleshoot-email-profiles-in-microsoft-intune.md)
+
+
+<!--HONumber=May16_HO1-->
+
+

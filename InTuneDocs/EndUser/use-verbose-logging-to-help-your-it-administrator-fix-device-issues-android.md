@@ -1,0 +1,40 @@
+---
+# required metadata
+
+title: Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+
+# Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással
+
+Miután regisztrálta Android-alapú eszközét az Intune-ban, a **Részletes naplózás** beállítással megadhatja, hogy a Vállalati portál alkalmazás és az Intune által kezelt alkalmazások részletes naplófájlokban rögzítsék az eszközön zajló műveleteket. Ezekkel a naplókkal a rendszergazdák meg tudják oldani a vállalati portál vagy az Intune által kezelt alkalmazások használatakor fellépő esetleges problémákat. A Részletes naplózás beállítás alapértelmezés szerint engedélyezve van az eszközön, a rendszergazdának elküldött naplókban pedig szerepel a felhasználó e-mail címe.
+
+A **Részletes naplózás** beállítás be- vagy kikapcsolásához jelentkezzen be a Vállalati portál alkalmazásba a munkahelyi vagy az iskolai fiókjával, koppintson a **Beállítások** elemre, és kapcsolja be vagy ki a **Részletes naplózás** beállítást.
+
+### További információ
+[Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
+
+<!--HONumber=May16_HO1-->
+
+
