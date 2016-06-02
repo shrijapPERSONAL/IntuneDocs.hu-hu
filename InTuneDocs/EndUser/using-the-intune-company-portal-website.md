@@ -52,9 +52,9 @@ A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat v�
 
 - [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Android-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
+- [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

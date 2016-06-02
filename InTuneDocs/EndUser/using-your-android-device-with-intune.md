@@ -63,11 +63,12 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 - [Regisztrálási hibák elküldése a rendszergazdának](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Az eszközhöz hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-android.md)
+- [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Az eszközhöz hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO1-->
 
 
