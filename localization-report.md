@@ -2161,9 +2161,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/9345b97e716c5a6230288f5558ef35f3f5168445/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d11ad02dc93b96b13c046a17ce83a266e627da6f/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-01 01:20:35
+* Current Target File: [InTuneDocs\DeployUse\mac-os-x-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/cac43f38a2333949bea4d8d7c37151528348dde8/InTuneDocs/DeployUse/mac-os-x-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/0375b86787994caea25be86555473231b17000c6/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/mac-os-x-policy-settings-in-microsoft-intune.7f644833543dbdbe0b5a2660af9c77c7b8a170d3.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:25
 * [Back to Top](#report-top)
 
 ##### <a name='bd7ae595f3edd0d0a21a9941570e567b5b82b56c66'></a> Source: [InTuneDocs\DeployUse\manage-alerts-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/cc64e51499908d08823429871cda91dfb0078b1e/InTuneDocs/DeployUse/manage-alerts-in-microsoft-intune.md)
@@ -2203,21 +2203,21 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/9345b97e716c5a6230288f5558ef35f3f5168445/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
-* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d11ad02dc93b96b13c046a17ce83a266e627da6f/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-01 01:20:35
+* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/cac43f38a2333949bea4d8d7c37151528348dde8/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
+* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/0375b86787994caea25be86555473231b17000c6/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:25
 * [Back to Top](#report-top)
 
 ##### <a name='2521500820d769bfe7c5742cf035e5eee8f2aacc69'></a> Source: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/9345b97e716c5a6230288f5558ef35f3f5168445/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/cac43f38a2333949bea4d8d7c37151528348dde8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 * Handoff File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/a09ae1742665b663b18c81e1fe0294265d15f33d/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
 * Handoff Datetime: 2016-05-01 17:26:41
 * Handoff Reason: Include
 * Archive File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/7a91b84fed742189413601c5b51226af3473400e/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
 * Archive Datetime: 2016-05-08 00:20:35
-* Handback File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d11ad02dc93b96b13c046a17ce83a266e627da6f/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
-* Handback Datetime: 2016-06-01 01:20:35
+* Handback File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/0375b86787994caea25be86555473231b17000c6/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
+* Handback Datetime: 2016-06-02 05:49:25
 * [Back to Top](#report-top)
 
 ##### <a name='3de3b55426636dad69e527e186ff27cb2cd3cb5070'></a> Source: [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md)

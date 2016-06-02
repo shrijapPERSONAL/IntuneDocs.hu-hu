@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#2521500820d769bfe7c5742cf035e5eee8f2aacc69)
 
 ## Item Details
+##### <a name='2521500820d769bfe7c5742cf035e5eee8f2aacc69'></a> Source: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/cac43f38a2333949bea4d8d7c37151528348dde8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+* Handoff File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/a09ae1742665b663b18c81e1fe0294265d15f33d/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
+* Handoff Datetime: 2016-05-01 17:26:41
+* Handoff Reason: Include
+* Archive File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/7a91b84fed742189413601c5b51226af3473400e/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
+* Archive Datetime: 2016-05-08 00:20:35
+* Handback File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/0375b86787994caea25be86555473231b17000c6/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.hu-hu.xlf)
+* Handback Datetime: 2016-06-02 05:49:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
