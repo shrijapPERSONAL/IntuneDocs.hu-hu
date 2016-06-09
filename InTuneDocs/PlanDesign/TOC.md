@@ -17,9 +17,10 @@
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
 
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 # [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

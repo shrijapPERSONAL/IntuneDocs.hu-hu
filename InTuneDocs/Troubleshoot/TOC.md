@@ -2,6 +2,7 @@
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
 # [Hibaelhárítás](how-to-get-support-for-microsoft-intune.md)
 ## [Támogatás igénylése](how-to-get-support-for-microsoft-intune.md)
@@ -15,6 +16,6 @@
 ## [Az e-mail-profilok hibaelhárítása](Troubleshoot-email-profiles-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

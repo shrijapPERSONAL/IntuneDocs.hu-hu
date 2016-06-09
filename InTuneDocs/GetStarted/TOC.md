@@ -21,11 +21,9 @@
 ### [Mobileszközök regisztrálása és alkalmazások telepítése](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfiguráció utáni feladatok](post-configuration-tasks.md)
 
-<!--
-## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
--->
+## [Az eszközkezelés módjának kiválasztása](choose-how-to-manage-devices.md)
+### [Mobileszköz-kezelési képességek](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [A Windows-számítógépek felügyeletére szolgáló képességek](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Az Intune üzembe helyezésének bevezetési szakaszai](rollout-phases-for-microsoft-intune-deployment.md)
 ### [A projekt hatóköre](project-scope.md)
@@ -34,12 +32,12 @@
 ### [Vállalati bevezetés](enterprise-rollout.md)
 ### [Üzemeltetés és karbantartás](operations-and-maintenance.md)
 
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 # [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
