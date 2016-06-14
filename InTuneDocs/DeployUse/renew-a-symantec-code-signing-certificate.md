@@ -59,7 +59,7 @@ Jelenleg kizárólag az aláírt SSP.xap fájl biztosításával adható meg a f
 
 2.  Nyissa meg az Intune felügyeleti konzolját ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), majd a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** lapot, és kattintson az **Aláírt alkalmazás feltöltése** elemre..
 
-3.  Töltse fel az imént aláírt Vállalati portál alkalmazást. You’ll need the newly signed SSP.xap and the new .PFX file you received from Symantec or the Application enrollment token that was created with this new .PFX file.
+3.  Töltse fel az imént aláírt Vállalati portál alkalmazást. Az újonnan aláírt SSP.xap fájlra és a Symantectől kapott új .PFX-fájlra, vagy az ezzel az új .PFX-fájllal létrehozott alkalmazásregisztrációs adatblokkra lesz szüksége.
 
 4.  A feltöltés befejeződése után távolítsa el a vállalati portál régi verzióját a **Szoftverek**  munkaterületről.
 
