@@ -30,7 +30,7 @@ ms.suite: ems
 Ebből a témakörből megtudhatja, hogyan adhatja hozzá a kívánt alkalmazásokat az Intune-hoz a központi telepítésük előtt.
 
 > [!IMPORTANT]
-> Az ebben a témakörben található információk segítik az alkalmazások hozzáadását azon Windows-számítógépeken, amelyeket az Intune számítógépes ügyfélszoftver használatával felügyel. Ha regisztrált Windows-számítógépekhez vagy más mobileszközökhöz szeretne alkalmazásokat adni, olvassa el az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](add-apps-for-mobile-devices-in-microsoft-intune.md) című cikket..
+> Az ebben a témakörben található információk segítik az alkalmazások hozzáadását azon Windows-számítógépeken, amelyeket az Intune számítógépes ügyfélszoftver használatával felügyel. Ha regisztrált Windows-számítógépekhez vagy más mobileszközökhöz szeretne alkalmazásokat adni, olvassa el az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](add-apps-for-mobile-devices-in-microsoft-intune.md) című cikket.
 
 
 ## Az alkalmazás hozzáadása
@@ -38,8 +38,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások felvétele** elemre az Intune Software Publisher elindításához.
 
-    > [!TIP]
-    > Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
+    > [!TIP] Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
 
 
 
@@ -47,9 +46,12 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
     **Válassza ki, hogyan szeretné elérhetővé tenni ezt a szoftvert az eszközök számára** – Válassza a **Szoftver telepítője** lehetőséget, majd adja meg az alábbi beállításokat:
 
-    - **Válassza ki a szoftver telepítőjének fájltípusát**|Ez adja meg a telepítendő szoftver típusát. Windows-számítógép esetén válassza a **Windows Installer** lehetőséget..|
-    - **Adja meg a szoftver telepítőfájljainak helyét**|Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
-    - **A mappában található további fájlokkal és almappákkal együtt**|A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.|
+    - **Válassza ki a szoftver telepítőjének fájltípusát** – Ez adja meg a telepítendő szoftver típusát. Windows-számítógép esetén válassza a **Windows Installer** lehetőséget.
+    - **Adja meg a szoftver telepítőfájljainak helyét** – Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
+    - **A mappában található további fájlokkal és almappákkal együtt** – A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.
+
+    Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![számítógépes Software Publisher](./media/publisher-for-pc.png).
+
    Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
 
 3.  A **Szoftver leírása** lapon konfigurálja a következő beállításokat:
@@ -57,15 +59,14 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
     A telepítőfájl típusától függően előfordulhat, hogy az alábbi értékek némelyike nem jelenik meg, vagy ezeket a rendszer automatikusan megadja.
 
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
-    - **Név** – Itt adhatja meg az alkalmazásnak a vállalati portálon megjelenő nevét.<br /><br />Ellenőrizze, hogy a megadott alkalmazásnevek egyediek-e. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.|
-    - **Leírás** – Itt adhatja meg az alkalmazás leírását. Ez megjelenik a felhasználók számára a vállalati portálon.|
-    - **Szoftveradatok URL-címe**|(nem kötelező) Adja meg egy olyan weblap URL-címét, amely információkat tartalmaz az alkalmazásról. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Név** – Itt adhatja meg az alkalmazásnak a vállalati portálon megjelenő nevét.<br /><br />Ellenőrizze, hogy a megadott alkalmazásnevek egyediek-e. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Leírás** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
+    - **Szoftveradatok URL-címe** – (nem kötelező) Itt adhatja meg egy, az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Adatvédelmi nyilatkozat URL-címe** – (nem kötelező) Itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Kategória** – (nem kötelező) Itt választhat a beépített alkalmazáskategóriák közül. Ezzel megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
     - **Ikon** – (nem kötelező) Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
 
-    Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap:
-    ![A Software Publisher személyi számítógépen](./media/publisher-for-pc.png)
+
 
 4.  A **Követelmények** lapon adja meg azokat az alkalmazás telepítéséhez szükséges követelményeket, amelyeknek az eszköznek meg kell felelnie. Válasszon az **Architektúra** menüből – Adja meg, hogy az alkalmazást 32 bites, 64 bites vagy mindkét típusú operációs rendszerekre lehessen telepíteni, **Operációs rendszer** – Itt adhatja meg azt a legrégebbi operációsrendszer-verziót, amelyre még telepíthető az alkalmazás.
 
@@ -82,7 +83,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 7.  Csak a **Windows Installer** fájltípus (.exe) esetében: a **Visszatérési kódok** lapon olyan új hibakódokat vehet fel, amelyeket az Intune az alkalmazás felügyelt Windows-számítógépre való telepítésekor értelmez.
     Alapértelmezés szerint az Intune az iparági szabványnak megfelelő visszatérési kódok segítségével jelenti az alkalmazáscsomagok telepítésének sikerességét vagy sikertelenségét: **0** – Sikeres vagy **3010** – Sikeres, újraindítással. Ehhez a listához saját visszatérési kódjait is hozzáadhatja. Ha megad egy visszatérésikód-listát, és az alkalmazás telepítőprogramja olyan kódot ad vissza, amely nem szerepel a listán, a rendszer a kódot hibaként értelmezi.
 
-8.  Az **Összefoglalás** lapon ellenőrizze a megadott adatokat. Ha ezzel elkészült, kattintson a **Feltöltés** gombra..
+8.  Az **Összefoglalás** lapon ellenőrizze a megadott adatokat. Ha ezzel elkészült, kattintson a **Feltöltés** gombra.
 
 9. A befejezéshez kattintson a **Bezárás** gombra.
 
@@ -90,8 +91,8 @@ Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** c
 
 ## További lépések
 
-Ha létrehozta az alkalmazást, a következő lépés a telepítés. További információért lásd: [Alkalmazások központi telepítése a Microsoft Intune-ban.md](deploy-apps.md)
+Ha létrehozta az alkalmazást, a következő lépés a telepítése. További információért lásd: [Alkalmazások központi telepítése a Microsoft Intune-ban](deploy-apps.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

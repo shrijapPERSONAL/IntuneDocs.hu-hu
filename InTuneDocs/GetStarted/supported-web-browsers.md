@@ -27,13 +27,12 @@ ms.suite: ems
 
 # A Microsoft Intune által támogatott webböngészők
 
-Az Intune beállítása előtt olvassa el ezt a témakört, valamint [a kezdés előtti tudnivalókat ismertető](what-to-know-before-you-start-microsoft-intune.md) témakört..
+Az Intune beállítása előtt olvassa el ezt a témakört, valamint [a kezdés előtti tudnivalókat ismertető](what-to-know-before-you-start-microsoft-intune.md) témakört.
 
 |Intune-funkció |Támogatott böngészők|
 |---------|---------|
 |Intune felügyeleti konzol     |  Internet Explorer 10 vagy újabb<br /><br />Google Chrome (42-es vagy korábbi verziók)<br /><br />Mozilla Firefox <br /><br />**Megjegyezés:** Az Edge használata a Felügyeleti konzol esetében jelenleg nem támogatott.                      
-|Intune-fiókportál     | Internet Explorer 10 vagy újabb<br /><br />Google Chrome <br /><br />Mozilla Firefox<br /><br />**Megjegyezés:** Amennyiben az Intune-fiókportált felváltó Office 365 felügyeleti portált használja, tekintse meg az alábbi „Office 365 felügyeleti portál” című részt a böngészők listájáért.    
-|Office 365 felügyeleti portál     |Internet Explorer 10 vagy újabb<br /><br />Google Chrome<br /><br />Mozilla Firefox <br /><br />Microsoft Edge  |
+|Office 365 felügyeleti portál     |Minden böngésző  |
 |Munkahelyi portál webhely     |**Mobileszközökön:** használja a támogatott platformhoz tartozó alapértelmezett webböngészőt   <br /><br />**Windows rendszerű számítógépeken:** Internet Explorer 10 vagy újabb, illetve Microsoft Edge<br /><br />**Mac OS X 10.9 vagy újabb:** Apple Safari    |
 
 
@@ -43,6 +42,6 @@ Az Intune beállítása előtt olvassa el ezt a témakört, valamint [a kezdés 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -48,20 +48,23 @@ Az Intune a következő kapcsolattípusokat használó VPN-profilok létrehozás
 
 
 
-Kapcsolat típusa |iOS és Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 asztali és mobil verziója |
----------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Igen |Igen   |Nem    |     Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
-Pulse Secure |Igen  |Igen |Igen   |Nem  |Igen  |Igen| Igen|        
-F5 Edge Client |Igen |Igen |Igen |Nem  |Igen  |   Igen |  Igen|   
-Dell SonicWALL Mobile Connect |Igen |Igen |Igen |Nem  |Igen |Igen |Igen|         
-CheckPoint Mobile VPN |Igen |Igen |Igen |Igen |Igen|Igen|Igen|
-
-
+Kapcsolat típusa |iOS és Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 asztali és mobil verziója |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Cisco AnyConnect|Igen |Igen   |Nem    |     Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
+Pulse Secure|Igen  |Igen |Igen   |Nem  |Igen  |Igen| Igen|        
+F5 Edge Client|Igen |Igen |Igen |Nem  |Igen  |   Igen |  Igen|   
+Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Nem  |Igen |Igen |Igen|         
+CheckPoint Mobile VPN|Igen |Igen |Igen |Igen |Igen|Igen|Igen|
+Microsoft SSL (SSTP)|Nem |Nem |Nem |Nem |Nem|Nem|Nem|
+Microsoft Automatic|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
+IKEv2|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
+PPTP|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
+L2TP|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
 
 
 > [!IMPORTANT] Az eszközökre alkalmazott VPN-profilok használatához telepítenie kell a megfelelő VPN-alkalmazást a profilhoz. A megfelelő alkalmazás Intune-nal történő telepítéséhez a következő dokumentumban talál segítséget: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).  
 
- Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszban tájékozódhat arról, hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal..     
+ Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszból tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
 
 ## A VPN-profilok védelmének biztosítása
 
@@ -73,7 +76,7 @@ A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy .PFX-tanúsítv
 
 Ez identitástanúsítványként is ismert, és segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy főtanúsítvánnyal), amelyet Ön annak érdekében hozott létre, hogy engedélyezze a felhasználó eszközének a csatlakozást. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
 
-A tanúsítványprofilok Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md)..
+A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
 
 ### Felhasználónév és jelszó
 
@@ -81,7 +84,7 @@ A felhasználó a VPN-kiszolgálón felhasználónév és jelszó megadásával 
 
 ## VPN-profil létrehozása
 
-1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend > Házirend hozzáadása** elemre..
+1. A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Házirend > Házirend hozzáadása** elemet.
 2. Válasszon sablont az új szabályzathoz a megfelelő eszköztípus kibontásával, majd válasszon VPN-profilt az eszköznek:
     * **VPN-profil (Android 4 és újabb)**
     * **VPN-profil (iOS 7.1 és újabb)**
@@ -102,15 +105,15 @@ Beállítás neve  |További információ
 **Kapcsolat típusa**     |  Válasszon egyet a következő kapcsolattípusok közül a VPN-profilban való használathoz: **Cisco AnyConnect** (nem érhető el a Windows 8.1 vagy Windows Phone 8.1 rendszerhez), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**
 **VPN-kiszolgáló leírása**     | Adjon meg egy leírást ahhoz a VPN-kiszolgálóhoz, amelyhez az eszközök csatlakozni fognak. **Például:** Contoso VPN-kiszolgáló. Ha a kapcsolat típusa **F5 Edge Client**, a **Kiszolgálólista** mezőben adja meg a kiszolgálóleírások és IP-címek listáját.
 **A kiszolgáló IP-címe vagy teljesen minősített tartományneve**    |Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljesen minősített tartománynevét, amelyhez az eszközök csatlakozni fognak. **Példák:** 192.168.1.1, vpn.contoso.com.  Ha a kapcsolat típusa **F5 Edge Client**, a **Kiszolgálólista** mezőben adja meg a kiszolgálóleírások és IP-címek listáját.         |         
-**Kiszolgálólista**     |A **Hozzáadás** elemre kattintva felvehet egy új VPN-kiszolgálót a VPN-kapcsolathoz való használatra. Azt is megadhatja, hogy melyik kiszolgáló legyen az alapértelmezett a kapcsolathoz. Ez a beállítás csak akkor látható, ha a kapcsolat típusa **F5 Edge-ügyfél**..         
+**Kiszolgálólista**     |A **Hozzáadás** elemre kattintva felvehet egy új VPN-kiszolgálót, amelyet aztán alkalmazhat a VPN-kapcsolat kialakításához. Azt is megadhatja, hogy melyik kiszolgáló legyen az alapértelmezett a kapcsolathoz. Ez a beállítás csak akkor látható, ha a kapcsolat típusa **F5 Edge Client**.         
 **Az összes hálózati forgalom elküldése a VPN-kapcsolaton keresztül**     |Ha ezt a lehetőséget választja, azzal minden hálózati forgalmat a VPN-kapcsolaton keresztül küld el. Ha nem ezt a lehetőséget választja, az ügyfélprogram dinamikusan egyezteti a vegyes alagútkezelés útvonalait a külső VPN-kiszolgálóhoz való csatlakozáskor. Csak a vállalati hálózat kapcsolatainak küldése történik VPN-alagúton keresztül. Az interneten megtalálható erőforrásokhoz való csatlakozás esetén a program nem használ VPN-alagutat.
 **Hitelesítési módszer**| Válassza ki a VPN-kapcsolat által használandó hitelesítési módszert: **Tanúsítványok** vagy **Felhasználónév és jelszó**. A Felhasználónév és jelszó beállítás nem érhető el, ha a kapcsolat típusa Cisco AnyConnect. A **Hitelesítési módszer** beállítás Windows 8.1 esetén nem áll rendelkezésre.
 **A felhasználói hitelesítő adatok megjegyzése minden egyes bejelentkezéskor**|Ezzel a beállítással gondoskodhat arról, hogy a rendszer megjegyezze a felhasználó hitelesítő adatait, így a felhasználónak nem kell megadnia őket minden egyes alkalommal, amikor kapcsolatot létesít.
-**Ügyféltanúsítvány kiválasztása ügyfél-hitelesítéshez (identitástanúsítvány)**|Válassza ki azt a korábban az ügyfélprogramhoz létrehozott SCEP tanúsítványt, amelyet a VPN-kapcsolat hitelesítéséhez szeretne használni. A tanúsítványprofilok Intune-ban történő használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md). Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**..
-**Szerepkör**| Adja meg annak a felhasználói szerepkörnek a nevét, amely hozzáfér ehhez a kapcsolathoz. A felhasználói szerepkörök személyes beállításokat definiálnak, és engedélyeznek vagy letiltanak bizonyos hozzáférési funkciókat. Ez a beállítás csak akkor látható, ha a kapcsolat **Pulse Secure** típusú..
-**Tartomány**|Adja meg a használni kívánt hitelesítési tartomány nevét. A hitelesítési tartomány a Pulse Secure kapcsolattípus által használt hitelesítési erőforrások csoportosítása. Ez a beállítás csak akkor látható, ha a kapcsolat **Pulse Secure** típusú..
-**Bejelentkezési csoport vagy tartomány**|Adja meg annak a bejelentkezési csoportnak vagy tartománynak a nevét, amelyhez csatlakozni szeretne. Ez a beállítás csak akkor látható, ha a kapcsolat típusa **Dell SonicWALL Mobile Connect**..
-**Ujjlenyomat**|Adjon meg egy karakterláncot (például „Contoso ujjlenyomatkód”), amelyet a rendszer a VPN-kiszolgáló megbízhatóságának ellenőrzésére fog használni. Az ujjlenyomatok: elküldhetők az ügyfélprogramnak, így az tudni fogja, hogy megbízhat-e az azonos ujjlenyomattal rendelkező kiszolgálókban a csatlakozáskor. Ha az eszköz még nem rendelkezik ujjlenyomattal, akkor arra fogja kérni a felhasználót, hogy bízzon meg a VPN-kiszolgálóban, amelyhez csatlakozik, miközben megjeleníti az ujjlenyomatot (a felhasználó manuálisan ellenőrizheti az ujjlenyomatot, majd a **Megbízom benne elemre** kattintva csatlakozhat). Ez a beállítás csak akkor látható, ha a kapcsolat típusa **CheckPoint Mobile VPN**..
+**Ügyféltanúsítvány kiválasztása ügyfél-hitelesítéshez (identitástanúsítvány)**|Válassza ki azt a korábban az ügyfélprogramhoz létrehozott SCEP tanúsítványt, amelyet a VPN-kapcsolat hitelesítéséhez szeretne használni. A tanúsítványprofilok Intune-ban történő használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md). Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.
+**Szerepkör**| Adja meg annak a felhasználói szerepkörnek a nevét, amely hozzáfér ehhez a kapcsolathoz. A felhasználói szerepkörök személyes beállításokat definiálnak, és engedélyeznek vagy letiltanak bizonyos hozzáférési funkciókat. Ez a beállítás csak akkor látható, ha a kapcsolat **Pulse Secure** típusú.
+**Tartomány**|Adja meg a használni kívánt hitelesítési tartomány nevét. A hitelesítési tartomány a Pulse Secure kapcsolattípus által használt hitelesítési erőforrások csoportosítása. Ez a beállítás csak akkor látható, ha a kapcsolat **Pulse Secure** típusú.
+**Bejelentkezési csoport vagy tartomány**|Adja meg annak a bejelentkezési csoportnak vagy tartománynak a nevét, amelyhez csatlakozni szeretne. Ez a beállítás csak akkor látható, ha a kapcsolat típusa **Dell SonicWALL Mobile Connect**.
+**Ujjlenyomat**|Adjon meg egy karakterláncot (például „Contoso ujjlenyomatkód”), amelyet a rendszer a VPN-kiszolgáló megbízhatóságának ellenőrzésére fog használni. Az ujjlenyomatok: elküldhetők az ügyfélprogramnak, így az tudni fogja, hogy megbízhat-e az azonos ujjlenyomattal rendelkező kiszolgálókban a csatlakozáskor. Ha az eszköz még nem rendelkezik ujjlenyomattal, akkor arra fogja kérni a felhasználót, hogy bízzon meg a VPN-kiszolgálóban, amelyhez csatlakozik, miközben megjeleníti az ujjlenyomatot (a felhasználó manuálisan ellenőrizheti az ujjlenyomatot, majd a **Megbízom benne** elemet választva csatlakozhat). Ez a beállítás csak akkor látható, ha a kapcsolat típusa **CheckPoint Mobile VPN**.
 **Alkalmazásonkénti VPN**|Ha a VPN-kapcsolatot egy iOS- vagy Mac OS X-alkalmazással társítaná, válassza ezt a lehetőséget. A rendszer ezt a kapcsolatot fogja megnyitni az alkalmazás futtatásakor. A VPN-profilt a szoftver telepítésekor társíthatja egy alkalmazással. További információ: [Alkalmazások központi telepítése a Microsoft Intune-ban)](deploy-apps-in-microsoft-intune.md)
 **Proxybeállítások automatikus észlelése** (csak iOS, Mac OS X, Windows 8.1 és Windows Phone 8.1 esetén)|Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e, ha az eszközök automatikusan észlelnék a kapcsolatbeállításokat. További információt a Windows Server dokumentációjában talál.
 **Automatikus konfigurációs parancsfájl használata** (csak iOS, Mac OS X, Windows 8.1 és Windows Phone 8.1 esetén)|Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e egy automatikus konfigurációs parancsfájllal definiálni a beállításokat, majd adja meg a beállításokat tartalmazó fájl URL-címét. További információt a Windows Server dokumentációjában talál.
@@ -131,6 +134,8 @@ Beállítás neve  |További információ
 **Társított alkalmazások**     | Megadhatja a VPN-kapcsolatot automatikusan használó alkalmazások listáját. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén – adja meg a Csomagcsalád nevét, valamint asztali alkalmazások esetén – adja meg az alkalmazás fájlútvonalát.          
 
 
+> [!IMPORTANT] Javasoljuk, hogy az alkalmazásonkénti VPN-konfigurációban való használat céljából összeállított alkalmazáslistákat mindig lássa el védelemmel. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
+
 Többek között a következő esetben lehet érdemes vállalati határbeállításokat használni. Ha a VPN-t csak távoli asztalokhoz szeretné engedélyezni, akkor létre kell hoznia például egy olyan hálózati forgalmi szabályt, amely engedélyezi a 27-es számú protokollhoz tartozó forgalmat a 3996-os külső porton. A VPN-t csak ez a típusú forgalom fogja használni.
 
 Akkor lehet hasznos útvonalakat megadni a vállalati határokban, ha a VPN-kapcsolat típusa nem engedélyezi annak meghatározását, hogy a rendszer hogyan kezelje a forgalmat vegyes alagútkezelés esetén. Ilyenkor használja az **Útvonalak** elemet a VPN-t használó útvonalak felsorolásához.
@@ -139,23 +144,26 @@ Egy egyéni OMA-URI beállítás létrehozásával a Windows 10-es eszközök VP
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
-## A házirend telepítése
+## A szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** lehetőségre..
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra..
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
-    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra..
+    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 
 A sikeres alkalmazást követően a felhasználók látni fogják a VPN-kapcsolat Ön által megadott nevét a VPN-kapcsolatok listájában az eszközükön.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
 
+### További információ
+[VPN-profilokhoz alkalmazható egyéni konfigurációk](Custom-configurations-for-VPN-profiles.md)
+[Alkalmazásonkénti VPN az Android Pulse Secure használatával](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

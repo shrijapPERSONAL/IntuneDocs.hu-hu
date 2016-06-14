@@ -30,13 +30,13 @@ ms.suite: ems
 Az **Azure-portálon** lehetősége van mobilalkalmazás-felügyeleti szabályzatok létrehozására és kezelésére.
 
 Az Azure-portálon az alábbiakhoz támogatott a MAM-szabályzatok létrehozása:
-- Az **Intune-ban regisztrált és általa kezelt** eszközökön futó alkalmazások..
+- Az **Intune-ban regisztrált és általa kezelt** eszközökön futó alkalmazások.
 - Semmilyen MDM-megoldásban **nem regisztrált** eszközökön futó alkalmazások.
-- **Harmadik féltől származó MDM-megoldásban regisztrált** eszközökön futó alkalmazások..
+- **Harmadik féltől származó MDM-megoldásban regisztrált** eszközökön futó alkalmazások.
 
-Ha jelenleg az **Intune felügyeleti konzolt** használja eszközeinek kezelésére, az [Intune felügyeleti konzol](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) segítségével létrehozhat egy olyan MAM-szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja..
+Ha jelenleg az **Intune felügyeleti konzolját** használja eszközei kezelésére, az [Intune felügyeleti konzol](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) segítségével létrehozhat egy olyan MAM-szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja.
 >[!IMPORTANT]
-> Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál.
+> Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál. Ha mind az Intune felügyeleti konzoljában, mind az Azure-portálon létrehoz MAM-szabályzatokat, a rendszer az Azure-portálon érvényes szabályzatot alkalmazza az alkalmazásokra, illetve telepíti a felhasználók számára.
 
 ## Bejelentkezés az Azure-portálra és a kezdőlap testreszabása
 
@@ -50,9 +50,9 @@ Ha jelenleg az **Intune felügyeleti konzolt** használja eszközeinek kezelés�
 
 3.  A **Tallózás** menüben keresse meg az **Intune** elemet.![A Tallózás menü képernyőképe az Intune kiemelésével](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Kattintson az **Intune > Intune mobilalkalmazás-felügyelet > Beállítások** elemre..
+4.  Kattintson az **Intune > Intune mobilalkalmazás-kezelés > Beállítások** elemre.
 
-    ![Az Intune mobilalkalmazás-felügyelet panel képernyőképe](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
     > [!TIP]
     > Ha rögzíteni szeretne egy panelt a **kezdőlapon** , válassza a **Rögzítés** lehetőséget a panelen.  Az **Intune-alapú mobilalkalmazás-felügyelet**panelt a rögzítés ikonjára kattintva rögzítheti a **kezdőlapon** .
@@ -64,6 +64,6 @@ Ha jelenleg az **Intune felügyeleti konzolt** használja eszközeinek kezelés�
 [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

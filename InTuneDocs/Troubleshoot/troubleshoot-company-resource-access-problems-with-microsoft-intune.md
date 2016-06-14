@@ -374,9 +374,9 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016346011|0x87D10065|A megadott SyncML-parancs végrehajtása folyamatban van, de még nem fejeződött be.|
 
 ### További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint..
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

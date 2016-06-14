@@ -38,13 +38,13 @@ A Microsoft Intune App SDK-val lehetővé teheti az Intune számára az iOS- vag
 
 Az SDK használatához hozzá kell férni az alkalmazás forráskódjához, az SDK funkcióinak többségét ugyanakkor anélkül is engedélyezheti, hogy ehhez módosítania kellene az alkalmazás működését.
 
-Az SDK-ról az [Áttekintés](https://msdn.microsoft.com/en-us/library/mt627767.aspx) lapon olvashat további tudnivalókat. Az Intune App SDK használatbavételéhez olvassa el a [Bevezetés a Microsoft Intune App SDK használatába](https://msdn.microsoft.com/library/mt627766.aspx) című szakaszt..
+Az SDK-ról az [Áttekintés](/intune/develop/intune-app-sdk) lapon olvashat további tudnivalókat. Az Intune App SDK használatának megkezdéséhez olvassa el a [Bevezetés a Microsoft Intune App SDK használatába](/intune/develop/intune-app-sdk-get-started) című szakaszt.
 
 ### További információ
 [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

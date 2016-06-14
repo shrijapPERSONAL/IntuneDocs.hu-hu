@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Eszközök kategorizálása eszközcsoport-leképezéssel a Microsoft Intune-ban | Microsoft Intune
+title: Eszközök kategorizálása eszközcsoport-leképezéssel | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,19 +45,19 @@ Kategóriák lehetnek például:
 A kategóriákat tetszőlegesen választhatja meg.
 
 ## Az eszközcsoport-leképezések konfigurálása
-1. Minden használni kívánt eszközcsoporthoz hozzon létre egy Intune-eszközcsoportot. A csoportok létrehozásával kapcsolatos további információért lásd: [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)..
-2. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** elemre..
-3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson az **Eszközcsoport-leképezés** elemre..
+1. Minden használni kívánt eszközcsoporthoz hozzon létre egy Intune-eszközcsoportot. A csoportok létrehozásával kapcsolatos további információkért lásd: [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+2. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** elemre.
+3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson az **Eszközcsoport-leképezés** elemre.
 4. Az **Eszközcsoport-leképezés** oldalon engedélyezze az eszközcsoport-leképezés funkciót.
 5. Új leképezési szabály felvételéhez kattintson a **Hozzáadás** elemre.
 6. Az **Eszközcsoport-leképezési szabály hozzáadása** párbeszédpanelen adja meg a létrehozni kívánt kategória nevét, majd a legördülő listából válassza ki azt az eszközgyűjteményt, amelyhez párosítani szeretné ezt a kategóriát. Ha elkészült, kattintson a **Hozzáadás** gombra.
-7. Ha befejezte a kategóriák és a csoportok hozzáadását, kattintson a **Mentés** gombra..
+7. Ha befejezte a kategóriák és a csoportok hozzáadását, kattintson a **Mentés** gombra.
 
 Ezt követően amikor a felhasználók regisztrálják eszközüket, meg fog jelenni számukra az Ön által beállított kategóriák listája. A kategória kiválasztását és a regisztráció befejezését követően a rendszer a kiválasztott kategóriának megfelelő eszközcsoporthoz adja az eszközüket.
 
 ### További információ
 [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

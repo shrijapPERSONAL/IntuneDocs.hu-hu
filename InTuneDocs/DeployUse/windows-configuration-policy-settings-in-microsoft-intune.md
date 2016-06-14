@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windowsos szabályzatbeállítások a Microsoft Intune-ban | Microsoft Intune
+title: Windowsos szabályzatbeállítások | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Windowsos szabályzatbeállítások a Microsoft Intune-ban
-A Microsoft Intune **Windows-eszközökhöz készült általános konfigurációs házirendjét** regisztrált Windows 8- és Windows 8.1-eszközökhöz használhatja:
+A Microsoft Intune **Windows-eszközökhöz készült általános konfigurációs házirendjét (Windows 8.1 és újabb verziók)** regisztrált Windows 8.1- és Windows 8-eszközökhöz használhatja:
+
+## Alkalmazhatósági beállítások
+
+|Beállítás neve|Részletek|
+|----------------|----------------------------------|
+|**Az összes konfiguráció alkalmazása a Windows 10-re**|Ezzel a beállítással engedélyezheti, hogy a szabályzatban szereplő beállítások a rendszer Windows Phone 8- és 8.1-eszközökön felül a Windows 10-eszközökre is alkalmazza.|
 
 ## Biztonsági beállítások
 
@@ -37,9 +43,9 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 |**Jelszó minimális hossza**<sup>1</sup>|Konfigurálja a minimálisan szükséges hossza (karakter) a jelszót az eszközökön.|Igen|Igen|
 |**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Törli az eszközt a megadott számú sikertelen bejelentkezést követően.|Igen|Igen|
 |**Képernyő kikapcsolása ennyi perc inaktivitás után**|Adja meg, hogy az eszköz hány perc tétlenség után kérjen jelszót a zárolás feloldásához.| Igen|Igen|
-|**Jelszó lejárata (nap)**|A napok számát adja meg, amely után meg kell változtatni az eszköz jelszavát.|Igen|Igen|
+|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
 |**Jelszóelőzmények megjegyzése**|Ez a beállítás azt határozza meg, hogy a felhasználó beállíthat-e általa korábban már használt jelszavakat.|Igen|Igen|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás a eszköz által megjegyzett korábbi jelszavak számát határozza meg.|Igen|Igen|
+|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.|Igen|Igen|
 |**Képjelszó és PIN-kód engedélyezése**|Engedélyezi a képjelszó és a PIN-kód használatát az eszközön. A képjelszó segítségével a felhasználó egy képre rajzolt kézmozdulatokkal jelentkezhet be. A PIN-kód gyors bejelentkezést tesz lehetővé egy négyjegyű kóddal.|Igen|Igen|
 <sup>1</sup> Ha Windows RT rendszerű eszközökre beállítja a jelszóhosszúságra vonatkozó házirend alkalmazását, a rendszer a felhasználókat a jelszavuk módosítására kényszeríti, még akkor is, ha az aktuális jelszó megfelel a házirend követelményeinek.
 
@@ -47,7 +53,7 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Az eszközön található összes fájlnak titkosítva kell lennie.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani..|Igen|Nem|
+|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Az eszközön található összes fájlnak titkosítva kell lennie.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.|Igen|Nem|
 <sup>1</sup> További információ a Windows 8.1 rendszerű eszközökhöz
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](http://support.microsoft.com/kb/3013816) .
@@ -119,6 +125,6 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

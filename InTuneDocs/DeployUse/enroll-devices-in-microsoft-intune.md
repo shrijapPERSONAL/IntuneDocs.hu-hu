@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Eszközök regisztrálása a Microsoft Intune-ban | Microsoft Intune
+title: Eszközök regisztrálása | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Eszközök regisztrálása felügyeletre a Microsoft Intune-ban
 A Microsoft Intune mobileszköz-kezelési (MDM) funkciója a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést. Az eszközök regisztrálásának módja az eszköz típusától, a tulajdonostól, és a felügyeleti szinttől függ. A „saját eszközök használata” (BYOD) és a vállalati tulajdonban lévő eszközök (COD) használata esetén szükség van a regisztrálási folyamatra. A helyi vagy felhőalapú Exchange ActiveSync programot használó vállalatok számára egyszerűbb, regisztráció nélküli felügyelet is megvalósítható. Az Intune ügyfélszoftvere segítségével Windows-számítógépek is felügyelhetők.
+
+###  Támogatott eszközplatformok
+
+Az Intune a következő eszközplatformokat képes kezelni:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Eszközök regisztrálásának lehetővé tétele  
  A regisztráció segítségével a felhasználók saját eszközükön is hozzáférhetnek a vállalati erőforrásokhoz, a rendszergazdák pedig ellenőrizhetik, hogy ezek az eszközök megfelelnek-e a vállalati erőforrások védelmét szolgáló szabályzatok előírásainak. Ez a legjobb módszer arra, hogy az Intune segítségével lehetővé váljon a „saját eszközök használata”. A rendszergazdának engedélyeznie kell a regisztrációt az Intune konzolban. Ehhez esetenként megbízhatósági kapcsolatot kell létrehozni az eszközzel, és licencet kell rendelni a felhasználókhoz. Ezt követően megtörténik az eszköz regisztrálása, általában azzal, hogy a felhasználó megadja munkahelyi vagy iskolai hitelesítő adatait. Az eszköz lekéri a szabályzatot az Intune-ból, és ezzel hozzáféréshez jut az erőforrásokhoz.
@@ -58,6 +64,6 @@ Az Intune ügyfélszoftverével felügyelt számítógépeken nem lehet szelekt�
 [Windows rendszerű számítógépek felügyelete az Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

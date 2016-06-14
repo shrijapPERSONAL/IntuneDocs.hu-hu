@@ -26,11 +26,22 @@ ms.suite: ems
 ---
 
 # Tudnivalók a Microsoft Intune elindítása előtt
+
 ## Általános eszköz- és alkalmazásfelügyeleti képességek
-A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] telepítése előtt olvassa el [Az Intune bemutatása](/intune/understand-explore/introduction-to-microsoft-intune) című fejezetet, és ismerkedjen meg az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] jelen szakaszban bemutatott képességeivel. Az Intune lehetőségeinek megismerése után készen fog állni fizetős előfizetése beállítására. Ha először a próba-előfizetést választja, azt később átalakíthatja teljes előfizetéssé. Lásd: [A Microsoft Intune megvásárlása](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
+A Microsoft Intune telepítése előtt olvassa el [Az Intune bemutatása](/intune/understand-explore/introduction-to-microsoft-intune) című fejezetet, és ismerkedjen meg az Intune jelen szakaszban bemutatott funkcióival. Az Intune lehetőségeinek megismerése után készen fog állni fizetős előfizetése beállítására. Ha először a próba-előfizetést választja, azt később átalakíthatja teljes előfizetéssé. Lásd: [A Microsoft Intune megvásárlása](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Mobileszközök és számítógépek felügyelete kiszolgálói vagy intranetes követelmények nélkül
-A mobileszközöket és számítógépeket akkor is felügyelheti, ha nem kapcsolódnak tartományhoz, vagy nincsenek a helyszínen. Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] épp ezért tökéletes választás a mobil, vagy földrajzilag nagy eloszlású munkaerővel rendelkező vállalatok számára.
+A következő rendszerű mobileszközök és számítógépek felügyeletére van lehetőség:
+
+-   Apple iOS 7.1 és újabb verziók
+-   Google Android 4.0 és újabb verziók (beleértve a Samsung KNOX-ot is)
+-   Windows Phone 8.0 és újabb verziók
+-   Windows RT és Windows 8.1 RT
+-   Windows 8.1 operációs rendszerű számítógépek
+-   Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
+-   Mac OS X 10.9 és újabb verziók
+
+Az ilyen eszközöket és számítógépeket akkor is felügyelheti, ha nem kapcsolódnak tartományhoz, illetve nincsenek a helyszínen. Az Intune ezért rendkívül jó választás a mobilis, vagy több különböző földrajzi helyen dolgozó alkalmazottakat foglalkoztató vállalatok számára. Az eszközök felügyeletével kapcsolatos további információkért lásd: [Az eszközkezelés módjának kiválasztása](/Intune/Deploy-use/choose-how-to-manage-devices).
 
 ### A mobileszközök és számítógépek titkosításának megkövetelése
 A titkosítást támogató mobileszközöktől megkövetelhető a titkosítás használata. A BitLocker meghajtótitkosítást támogató számítógépektől ezen titkosítási mód használatát is megkövetelheti. Ha egy titkosított mobileszköz vagy számítógép elveszik vagy ellopják, akkor az eszköz adathordozóján tárolt adatok olvashatatlanok, így biztosítva az adatok lopás elleni védelmét.
@@ -45,10 +56,10 @@ Riasztásokat hozhat létre, amelyek jelzik, ha probléma van egy mobileszközze
 A felhasználók a Vállalati portálon regisztrálhatják eszközeiket, helyi licences szoftvereket telepíthetnek, illetve itt megtalálják a informatikai rendszergazdák elérhetőségeit is.
 
 ### A többtényezős hitelesítés támogatása
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Az Intune már a többtényezős hitelesítést is támogatja. További részletek: [Windowsos eszközök védelme többtényezős hitelesítéssel](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)..
+Az Intune a többtényezős hitelesítést is támogatja. További részletek: [Windowsos eszközök védelme többtényezős hitelesítéssel](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
 
 ### Több nyelven is elérhető.
-Az Intune a következő nyelveken érhető el: angol, cseh, dán, finn, francia, görög, holland, japán, kínai (egyszerűsített és hagyományos), koreai, lengyel, magyar, német, norvég, olasz, orosz, portugál, román, spanyol, svéd és török. Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] szolgáltatást támogató országok listáját itt találja: [Nemzetközi elérhetőség](https://products.office.com/en-us/business/international-availability)..
+Az Intune a következő nyelveken érhető el: angol, cseh, dán, finn, francia, görög, holland, japán, kínai (egyszerűsített és hagyományos), koreai, lengyel, magyar, német, norvég, olasz, orosz, portugál, román, spanyol, svéd és török. Az Intune szolgáltatást támogató országok listáját itt találja: [Nemzetközi elérhetőség](https://products.office.com/en-us/business/international-availability).
 
 ## További követelmények és képességek   
 Az itt leírt általános képességek mellett ismerje meg a következőket is:
@@ -62,6 +73,6 @@ Az itt leírt általános képességek mellett ismerje meg a következőket is:
 - [A Microsoft Intune szolgáltatásban használt tartománynevek](domain-names-for-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

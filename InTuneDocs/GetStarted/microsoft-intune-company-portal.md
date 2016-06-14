@@ -27,15 +27,14 @@ ms.suite: ems
 
 # Munkahelyi Microsoft Intune-portál
 
-A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt című](what-to-know-before-you-start-microsoft-intune.md) témakört..
+A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beállítása előtt olvassa el ezt a témakört, valamint ismerkedjen meg a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben leírt követelményekkel.
 
 Az Intune Vállalati portál olyan eszköz, amely a felhasználók számára hozzáférést biztosít a vállalati adatokhoz és alkalmazásokhoz. A Vállalati portál két formában érhető el:
 
--   **A Vállalati portál alkalmazás**: Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által felügyelt eszközökön elérhető alkalmazás. További információ a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
-és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszer esetére..
+-   **A Vállalati portál alkalmazás**: Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által felügyelt eszközökön elérhető alkalmazás. További információk a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszerekhez.
 
 
-- **A Vállalati portál webhelye**: Olyan webhely, amely egy [támogatott böngésző](supported-web-browsers.md) használatával érhető el. URL-címe: [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók..
+- **A Vállalati portál webhelye**: Olyan webhely, amely egy [támogatott böngésző](supported-web-browsers.md) használatával érhető el. Az URL-cím a következő: [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók.
 
 Néhány művelet, amelyeket a felhasználók elvégezhetnek a Vállalati portálon:
 
@@ -59,6 +58,6 @@ Ahhoz, hogy a felhasználók hozzáférhessenek a Vállalati portálhoz, a felha
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

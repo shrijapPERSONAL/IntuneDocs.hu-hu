@@ -36,15 +36,21 @@ A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetne
 
 -   Vállalati adatok elérésének konfigurálása
 
-Csak olyan eszközökhöz használja az eszközkezelő fiókot, amely nem fogad e-mailt, illetve nem konkrét felhasználóként jelentkezik be. Az eszközkezelő fiókkal kezelt eszközökön nem konfigurálható a feltételes hozzáférés, hiszen ezek is felhasználónkénti forgatókönyvek. A tárolókezelő nem állíthatja alaphelyzetbe az eszközt a vállalati portálról.
 
-**Eszközregisztráció-kezelői forgatókönyvek példái:**
-Egy étterem pénztári táblagépeket szeretne beállítani a felszolgálóknak és rendelési monitorokat a konyhai személyzetnek. Az alkalmazottaknak nincs szükségük hozzáférésre a vállalati adatokhoz, illetve nem kell felhasználóként bejelentkezniük. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot, és a fiókot használva regisztrálja a vállalat tulajdonában álló eszközöket. Másik lehetőségként a rendszergazda eszközregisztráció-kezelői hitelesítő adatokat adhat egy étterem vezetőjének, lehetővé téve, hogy regisztrálja és felügyelje az eszközöket.
+**Eszközregisztráció-kezelői forgatókönyvek példái:** Egy étterem POS táblagépeket szeretne rendelni a pincéreknek, és a rendeléseket megjelenítő kijelzőket a konyhai személyzetnek. Az alkalmazottaknak nincs szükségük hozzáférésre a vállalati adatokhoz, illetve nem kell felhasználóként bejelentkezniük. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot, és a fiókot használva regisztrálja a vállalat tulajdonában álló eszközöket. Másik lehetőségként a rendszergazda eszközregisztráció-kezelői hitelesítő adatokat adhat egy étterem vezetőjének, lehetővé téve, hogy regisztrálja és felügyelje az eszközöket.
 
 A rendszergazda vagy vezető szerepkör-specifikus alkalmazásokat telepíthet az éttermi eszközökre. A rendszergazdák kijelölhetik az eszközt az Intune-konzolon, és a felügyeleti konzollal kivonhatják a mobileszköz-felügyelet alól.
 
+Az eszközregisztráció-kezelői (DEM-) fiókokkal regisztrált eszközökre a következő korlátozások vonatkoznak:
+  - Nincs konkrét felhasználó, így ezek az eszközök „felhasználómentesek”. Ez azt jelenti, hogy nem lehet róluk elérni az e-maileket vagy a vállalati adatokat, habár például a VPN segítségével lehet hozzáférést biztosítani az eszközön futó alkalmazások számára az adatokhoz.
+  - Nincs feltételes hozzáférés, mivel az a felhasználókon alapul.
+  - Az eszközöket nem lehet újraindítani a Vállalati portálról.
+  - Az eszközökön nem lehet az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat futtatni, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
+  - Az eszközöket nem lehet az Apple Configuratorral vagy az Apple készülékregisztrációs programjában is regisztrálni (ez az iOS-eszközökre vonatkozik).
+
 > [!NOTE]
 > A több mint 20 regisztrált eszközzel rendelkező eszközregisztráció-kezelői felhasználói fiókoknak problémái lehetnek a Vállalati portál alkalmazás használatával. A vállalati alkalmazások eszközregisztráció-kezelővel felügyelt eszközökre történő telepítéséhez telepítse a Vállalati portál alkalmazást **Szükséges telepítésként** az eszközregisztráció-kezelő felhasználói fiókjára.
+> A teljesítmény javítása érdekében a DEM-eszközökön a Vállalati portál alkalmazás kizárólag a helyi eszközöket jeleníti meg, és ezeket is csak akkor, ha az eszközt a Vállalati portál alkalmazással regisztrálták. A többi DEM-eszköz távoli felügyelete kizárólag az Intune-konzolból valósítható meg.
 
 ## Eszközregisztráció-kezelői fiókok létrehozása
 Az eszközregisztráció-kezelői fiókok nagyszámú vállalati eszköz regisztrálására vonatkozó engedéllyel rendelkező felhasználói fiókok. Csak az Intune-konzolon szereplő felhasználók lehetnek eszközregisztráció-kezelők.
@@ -53,7 +59,7 @@ Az eszközregisztráció-kezelői fiókok nagyszámú vállalati eszköz regiszt
 
 1.  Nyissa meg a [Microsoft Intune fiókportált](http://go.microsoft.com/fwlink/?LinkId=698854), és jelentkezzen be a rendszergazdai fiókjával.
 
-2.  Kattintson a **Felhasználó hozzáadása** elemre..
+2.  Kattintson a **Felhasználó hozzáadása**elemre.
 
 3.  Győződjön meg arról, hogy a listán szerepel az a felhasználói fiók, amely az eszközregisztráció-kezelő lesz. Ha nem szerepel, az **Új** elemre kattintva és a felhasználó-hozzáadási folyamatot végrehajtva vegye fel a felhasználót. Előfizetési licencre van szükség minden olyan felhasználóhoz, aki hozzáfér a szolgáltatáshoz, és az *eszközregisztráció-kezelő* nem lehet Intune-rendszergazda. Határozza meg, hogy a szolgáltatás használata előtt hozzá kell-e adnia további licenceket.
 
@@ -90,6 +96,6 @@ Az eszközregisztráció-kezelő törlése nincs hatással a regisztrált eszkö
 -   A törölt eszközregisztráció-kezelői fiók kapcsolata megmarad a regisztrált fiókokkal, de további eszközöket nem lehet regisztrálni
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

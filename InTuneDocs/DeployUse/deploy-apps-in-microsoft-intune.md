@@ -1,5 +1,5 @@
 ---
-title: Alkalmazások telepítése a Microsoft Intune-ban | Microsoft Intune
+title: Alkalmazások telepítése | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre a kiv
 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások** elemre az Ön által kezelt alkalmazások listájának megtekintéséhez.
 
-2.  Jelölje ki a telepíteni kívánt alkalmazást, majd kattintson a **Központi telepítés kezelése** elemre..
+2.  Jelölje ki a telepíteni kívánt alkalmazást, majd kattintson a **Központi telepítés kezelése** elemre.
 
 3.  Az *&lt;alkalmazásnév&gt;* párbeszédpanel **Csoportok kiválasztása** lapján adja meg, hogy mely felhasználói vagy eszközcsoportok számára kívánja telepítésre elérhetővé tenni az alkalmazást.
 
@@ -39,7 +39,7 @@ Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre a kiv
     [Itt megtekintheti a mobilalkalmazás-felügyeleti házirendekkel kompatibilis Microsoft-alkalmazásokat.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Ha a telepítésre elérhetővé tett alkalmazás kompatibilis az Intune VPN-profiljaival, a **VPN-profil** lap is megjelenik. Ezen a lapon hozzárendelheti az iOS-alkalmazásokat egy Ön által telepített VPN-profilhoz. A VPN-kapcsolat az alkalmazás indításakor automatikusan meg fog nyílni. Csak azok a VPN-profilok tehetők elérhetővé, amelyek **Alkalmazásonkénti VPN** profilbeállítása engedélyezve van.
- További információ a VPN-profilok konfigurálásáról, beleértve a profilok alkalmazásokhoz való társításának támogatását: [Segítség a felhasználóknak a munkájukhoz való csatlakozásban VPN-profilok használatával a Microsoft Intune-nal](vpn-connections-in-microsoft-intune.md)..
+ További információ a VPN-profilok konfigurálásáról, beleértve a profilok alkalmazásokhoz való társításának támogatását: [Segítség a felhasználóknak a munkájukhoz való csatlakozásban VPN-profilok használatával a Microsoft Intune-nal](vpn-connections-in-microsoft-intune.md).
 
 ## Példa
 
@@ -52,9 +52,9 @@ Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a
 
 ## További lépések
 
-Miután telepített egy alkalmazást, érdemes figyelnie az előrehaladását. További információ: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md)..
+Miután telepített egy alkalmazást, érdemes figyelnie az előrehaladását. További információk: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

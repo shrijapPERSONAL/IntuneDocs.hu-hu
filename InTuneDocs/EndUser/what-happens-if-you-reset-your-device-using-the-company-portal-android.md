@@ -28,16 +28,19 @@ ms.suite: ems
 
 # Mi történik, ha alaphelyzetbe állít egy saját eszközt a Vállalati portálon?
 
-Ha a Vállalati portál segítségével alaphelyzetbe állítja androidos eszközét, az eszközön található beállítások és alkalmazások egy része törlődhet, köztük egyes személyes adatok is. Az, hogy az adott eszközön mi történik, az eszköz típusától és használati módjától függ – erről részletes információk az alábbi táblázatban láthatók.
+Ha a Vállalati portál alkalmazás segítségével állítja alaphelyzetbe androidos eszközét, az azt jelenti, hogy az eszközön található összes alkalmazás, beállítás és személyes adat törlődik, és az eszközön visszaállnak a gyári alapértelmezett beállítások.
 
-|Eszközök konfigurálása és felügyelete|Eszköz típusa|
-|---------------------------------------|---------------|
-|A rendszergazda felügyeli a mobileszközt|Az androidos eszköz visszaállításakor az eszköz nem jelenik meg többé a Vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.|
-|Az eszköz csak a vállalati e-mailekhez férhet hozzá.|Az androidos eszköz visszaállításakor az eszköz nem jelenik meg többé a Vállalati portálon, és a Vállalati portál megpróbálja visszaállítani az eszközt a gyári alapértékekre. A rendszer eltávolítja az összes személyes adatát és beállítását.|
+A Samsung KNOX-eszközökön „szelektív törlés” is végezhető. Ehhez használja a Vállalati portál **eszközeltávolítás** funkcióját. A szelektív törlés funkció a következőket távolítja el:
+
+- A rendszergazda által elérhetővé tett vállalati alkalmazások
+- E-mailek, VPN és Wi-Fi
+- A rendszergazda azon képessége, hogy megköveteljen bizonyos beállításokat
+
+
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

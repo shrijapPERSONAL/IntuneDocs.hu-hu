@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ A regisztrált eszközökön a következőkre van lehetősége a rendszergazdán
 
 -   Az automatikus fájlszinkronizálás engedélyezése vagy letiltása, amíg az eszköz barangol. Az automatikus fájlszinkronizálás engedélyezése barangolási költségekkel járhat.
 
-A regisztráláshoz lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve: [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md)..
+A regisztráláshoz lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve: [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A Microsoft Passport beállításainak szabályozása az eszközökön a Microsoft Intune-nal | Microsoft Intune
+title: A Microsoft Passport beállításainak szabályozása az eszközökön | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,11 +34,11 @@ Az Intune két módon integrálható a Passport for Workkel:
 
 -   Intune-szabályzatokkal szabályozható, hogy a felhasználók mely hitelesítési módokkal jelentkezhetnek be, és melyekkel nem
 
--   A hitelesítési tanúsítványokat tárolhatja a Passport for Work kulcstároló-szolgáltatójában. További információkért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md)..
+-   A hitelesítési tanúsítványokat tárolhatja a Passport for Work kulcstároló-szolgáltatójában. További információkért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).
 
 ## Passport for Work-házirend létrehozása
 
-1.  A Passport for Work alábbi oldalának megnyitásához a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows** &gt; **Passport for Work** lehetőségre.
+1.  A Passport for Work alábbi oldalának megnyitásához a [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows** &gt; **Passport for Work** lehetőségre.
 
     ![Passport for Work oldal](../media/passport.png)
 
@@ -47,7 +47,7 @@ Az Intune két módon integrálható a Passport for Workkel:
     - **A Passport for Work engedélyezése a regisztrált eszközökön** – Válassza ezt a beállítást, ha a Passport for Work beállításait minden Windows 10 eszközön konfigurálni kívánja.
     - **Nincs konfigurálva** – Válassza ezt a beállítást, ha nem kívánja az Intune-nal vezérelni a Passport beállításait. A Windows 10 eszközökön meglévő Passport for Work-beállítások nem módosulnak. A képernyőn az összes többi beállítás le van tiltva.
 3.  Ha **A Passport for Work engedélyezése a regisztrált eszközökön** lehetőséget választotta, akkor konfigurálja a szükséges beállításokat. A rendszer az összes regisztrált Windows 10 és Windows 10 Mobile eszközre alkalmazni fogja őket.
-3.  Amikor végzett, kattintson a **Mentés** gombra..
+3.  Amikor végzett, kattintson a **Mentés** gombra.
 
 ## Passport for Work oldal: PIN-beállítások
 
@@ -57,8 +57,7 @@ Az Intune két módon integrálható a Passport for Workkel:
     - **Engedélyezett** – A felhasználók használhatják a karaktertípust a PIN-kódjukban, de ez nem kötelező.
     - **Kötelező** – A felhasználóknak a karaktertípusból legalább egyet használniuk kell a PIN-kódjukban. Például általános gyakorlat legalább egy nagybetű és egy speciális karakter megkövetelése.
     - **Nem engedélyezett** (alapértelmezett) – A felhasználók ezeket a karaktertípusokat nem használhatják a PIN-kódjukban (ez történik akkor is, ha a beállítás nincs konfigurálva).
-    > [!TIP]
-    > A speciális karakterek a következők: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] A speciális karakterek a következők: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN-kód lejárata (nap)** – A PIN-kódhoz célszerű lejárati időt megadni, amelynek eltelte után a végfelhasználóknak módosítaniuk kell a PIN-kódot. Az alapértelmezett érték 41 nap. 
 - **PIN-előzmények megjegyzése** – Ezzel a beállítással korlátozható a korábban használt PIN-kódok ismételt használata. Alapértelmezés szerint az 5 legutóbb használt PIN-kód nem használható újra.
 
@@ -80,6 +79,6 @@ A Microsoft Passporttal kapcsolatos további információkért olvassa el a Wind
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

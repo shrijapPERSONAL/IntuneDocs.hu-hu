@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # A Microsoft Intune hálózati infrastruktúrával kapcsolatos követelményei
-A Microsoft Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben felsorolt követelmények listáját..
+A Microsoft Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben felsorolt követelmények listáját.
 
 Ez a témakör azokat a követelményeket ismerteti, amelyek lehetővé teszik, hogy a hálózati infrastruktúra továbbítani tudja a kezelt eszközök, az Intune-előfizetés kezeléséhez használt eszközök, valamint a felhőalapú szolgáltatás által használt internetes webhelyek között folyó kommunikációt.
 
@@ -169,20 +169,10 @@ Az egyes ügyfélszámítógépeken módosíthatja a proxykiszolgáló beállít
 Olyan proxykiszolgálót is használhat, amely a tartalom gyorsítótárazásával [csökkenti az Intune-ügyfelek sávszélesség-használatát](network-bandwidth-use.md).
 
 
-
-## A Service to Service összekötőre vonatkozó követelmények
-A Service to Service összekötő csak a felhőalapú Exchange-et támogatja, így nincsenek a helyszíni infrastruktúrára vonatkozó követelményei.
-
-Az összekötő használatához teljesülniük kell a következőknek:
-
--   Olyan Office 365-előfizetéssel rendelkezik, amelyhez tartozik egy Exchange Server 2013-bérlő. Mindaddig, amíg a bérlő az Exchange Server 2013, az összekötő ugyanabban a környezetben támogatja az Exchange Server 2010-et is.
-
--   Az On-Premises Connector telepítéséhez használt felhasználói fióknak bérlői rendszergazdának kell lennie az Intune-ban, és rendszergazdának az Exchange Server 2013 használatához licenccel rendelkező Exchange-bérlőnél.
-
 ### További információ
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

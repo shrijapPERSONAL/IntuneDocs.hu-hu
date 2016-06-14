@@ -39,25 +39,27 @@ Mielőtt elkezdi a Vállalati Windows Áruházból származó alkalmazások szin
 * Miután összekapcsolta a Vállalati Windows Áruház-fiókját az Intune-nal, később nem választhat hozzá másik fiókot.
 * Az áruházból beszerzett alkalmazások nem vehetők fel és nem törölhetők manuálisan az Intune-ban. Az alkalmazások csak a Vállalati Windows Áruházzal szinkronizálhatók.
 * Az Intune csak a Vállalati Windows Áruházban vásárolt, online licenccel rendelkező alkalmazásokat szinkronizálja.
+* Az eszközök akkor használhatják ezt a funkciót, ha csatlakoztak az Active Directory-tartományhoz vagy a munkahelyhez.
+* A regisztrált eszközöknek a Windows 10 1511-es verzióját kell használniuk.
 
 ## A Vállalati Windows Áruház-fiók összekapcsolása az Intune-nal
 Mielőtt engedélyezné a szinkronizálást az Intune-konzolon, konfigurálnia kell az áruházbeli fiókját az Intune használatára felügyeleti eszközként:
 1. Ügyeljen arra, hogy a Vállalati Áruházba való bejelentkezéshez ugyanazt a bérlőt használja, mint az Intune-ba való bejelentkezéshez.
-2. A Vállalati Áruházban válassza a **Beállítások** > **Felügyeleti eszközök** lehetőséget..
+2. A Vállalati Áruházban válassza a **Beállítások** > **Felügyeleti eszközök** lehetőséget.
 3. A Felügyeleti eszközök lapon válassza a **Felügyeleti eszköz hozzáadása** lehetőséget, és adja meg a Microsoft Intune-t.
 
 Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az Intune-konzolon.
 
 ## A szinkronizálás konfigurálása
 
-1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** elemre..
-2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson a **Vállalati Áruház** elemre..
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Felügyelet** elemre.
+2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson a **Vállalati Áruház** elemre.
 3. A **Vállalati Windows Áruház** lapon hajtsa végre a következő műveletet:
 * Ha még nem tette meg, kattintson a Vállalati Windows Áruház regisztrálási hivatkozására.
 * Miután regisztrálta magát, kattintson a **Szinkronizálás konfigurálása** elemre.
-4. **A Vállalati Windows Áruházzal való alkalmazásszinkronizálás konfigurálása** párbeszédpanelen válassza a **Vállalati Windows Áruházzal való szinkronizálás engedélyezése** lehetőséget..
+4. **A Vállalati Windows Áruházzal való alkalmazásszinkronizálás konfigurálása** párbeszédpanelen válassza a **Vállalati Windows Áruházzal való szinkronizálás engedélyezése** lehetőséget.
 5. A **Nyelv** legördülő listán válassza ki azt a nyelvet, amelyet a Vállalati Windows Áruházból származó alkalmazásoknak az Intune-konzolon való megjelenítéséhez kíván használni. Az alkalmazások a végfelhasználó nyelvén lesznek telepítve (ha ez elérhető), függetlenül a megjelenítéshez választott nyelvtől.
-6. Kattintson az **OK** gombra..
+6. Kattintson az **OK**gombra.
 
 ## Az alkalmazások szinkronizálása
 
@@ -67,7 +69,7 @@ Az ebben a csomópontban található alkalmazásoknál megjelenik az Ön tulajdo
 
 ## Alkalmazások telepítése
 
-Az Áruházból származó alkalmazásokat ugyanúgy telepítheti, mint a többi Intune-alkalmazást. További információ: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md)..
+Az Áruházból származó alkalmazásokat ugyanúgy telepítheti, mint a többi Intune-alkalmazást. További információk: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
 A Vállalati Windows Áruházból származó alkalmazások központi telepítésekor az alkalmazást telepítő minden felhasználóhoz meg kell adnia egy-egy licencet. Ha felhasználja egy telepített alkalmazás minden elérhető licencét, már nem telepíthet több példányt, és a végre kell hajtania a következő műveletek valamelyikét:
 * Távolítsa el az alkalmazást néhány eszközről.
 * Csökkentse az aktuális telepítés hatókörét annyi felhasználóra, ahány licenccel rendelkezik.
@@ -80,6 +82,6 @@ A Vállalati Windows Áruházból származó alkalmazások központi telepítés
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

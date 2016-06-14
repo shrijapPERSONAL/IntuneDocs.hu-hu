@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Mi történik, ha törli az eszköz regisztrációját az Intune-ból?
 
-Amikor eltávolítja a Vállalati portál alkalmazást az eszközről, azzal az eszköz Intune-beli regisztrálását is törli. Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő eszközhöz tartozó hivatkozásra.
+Amikor eltávolítja a Vállalati portál alkalmazást az eszközről, azzal az eszköz Intune-beli regisztrálását is törli. Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő eszközhöz tartozó hivatkozásra a fenti „A cikk tartalma” részben.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 vagy Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,8 +43,7 @@ Amikor eltávolítja a Vállalati portál alkalmazást az eszközről, azzal az 
 
 -   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is van telepítve, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően újra engedélyezni lehet ezt az alkalmazást. Javasoljuk, hogy a Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
 
-    > [!IMPORTANT]
-    > Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, akkor a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
+    > [!IMPORTANT] Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása) hatályukat veszítik.
 
@@ -97,6 +96,6 @@ Windows RT-alapú eszköz eltávolításakor a következők történnek:
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

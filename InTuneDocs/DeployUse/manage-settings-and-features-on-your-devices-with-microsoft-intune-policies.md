@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával | Microsoft Intune
+title: Az eszközök beállításainak és funkcióinak kezelése | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,33 +35,32 @@ Az Intune-szabályzatok két kategóriába sorolhatók: A használt kategória h
 
 - **Konfigurációs szabályzatok:** Ezek általában az eszközök biztonsági beállításainak és szolgáltatásainak kezelésére használhatók. A témakörben található információk alapján megismerheti a szabályzatok létrehozását és telepítését, valamint a rendelkezésre álló beállításokat.
 - **Eszközök megfelelőségi szabályzatai:** Ezek határozzák meg az eszközre vonatkozó szabályokat és beállításokat, amelyek ahhoz szükségesek, hogy az eszköz megfeleljen a feltételes hozzáférési szabályzatok előírásainak. A megfelelőségi szabályzatok a feltételes hozzáféréstől függetlenül is megfigyelheti és kijavíthatja az eszközök megfelelőséggel kapcsolatos hibáit.
-A részleteket lásd: [Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban](introduction-to-device-compliance-policies-in-microsoft-intune.md)..
+A részleteket lásd: [Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Feltételes hozzáférési szabályzatok:** Ezekkel a szabályzatokkal a megadott feltételek alapján biztosíthatja a levelezés és más szolgáltatások védelmét.
-A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)..
-- **Vállalati eszközregisztrációs szabályzatok:** A vállalati eszközregisztrációs szabályzatok létrehozásának részletes ismertetését lásd: [Az iOS és a Mac kezelésének beállítása a Microsoft Intune-nal](set-up-ios-and-mac-management-with-microsoft-intune.md)..
+A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+- **Vállalati eszközregisztrációs szabályzatok:** a vállalati eszközregisztrációs szabályzatok létrehozásának részletes ismertetését lásd: [Az iOS és a Mac kezelésének beállítása a Microsoft Intune-nal](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Erőforrás-hozzáférési szabályzatok:** A szabályzatok ezen csoportja együttműködve biztosítja a hozzáférést a felhasználóknak a munkájuk sikeres elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is.
-A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](enable-access-to-company-resources-with-microsoft-intune.md)..
+A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](enable-access-to-company-resources-with-microsoft-intune.md).
 
 
-Az Intune házirendek teljes listáját lásd: [A Microsoft Intune házirendjeinek ismertetése](microsoft-intune-policy-reference.md)..
+Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md).
 
 
 
 
 ## Konfigurációs házirend létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com/) kattintson a **Házirend** &gt; **Konfigurációs szabályzatok** &gt; **Hozzáadás** elemre..
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com/) kattintson a **Házirend** &gt; **Konfigurációs házirendek** &gt; **Hozzáadás** elemre.
 
 2.  Válassza ki a kívánt házirendet, és válassza a hozzá ajánlott beállítások használatát (ha elérhető; a beállítások később módosíthatók), vagy hozzon létre egyéni házirendet a saját beállításaival.
 
-    > [!TIP]
-    > A megfelelő házirend kiválasztásához a [Microsoft Intune házirendjeinek ismertetésében](microsoft-intune-policy-reference.md) talál segítséget..
+    > [!TIP] A megfelelő szabályzat kiválasztásához [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md) témakörben talál segítséget.
 
-3.  Ha készen áll, kattintson a **Házirend létrehozása** elemre..
+3.  Ha készen áll, kattintson a **Házirend létrehozása**elemre.
 
 4.  A **Házirend létrehozása** képernyőn adja meg a házirend nevét, illetve igény szerint a leírását.
 
-5.  Konfigurálja a kívánt házirend-beállításokat, majd kattintson a **Házirend mentése** elemre..
+5.  Konfigurálja a kívánt házirend-beállításokat, majd kattintson a **Házirend mentése**elemre.
 
     Ha segítségre van szüksége bármelyik házirend-beállítással kapcsolatban, válassza ki a házirendtípust a következő listából:
 
@@ -90,13 +89,13 @@ A létrehozott házirendet általában telepíteni kell egy vagy több felhaszn�
 
 ## Konfigurációs szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése** elemre..
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra..
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
-    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra..
+    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
@@ -108,7 +107,7 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 - **Szerkesztés** – Megnyitja a kiválasztott szabályzat tulajdonságait, hogy módosíthassa őket.
 - **Törlés** – Törli a kiválasztott házirendet.<br>Ha töröl egy házirendet, az minden olyan csoportból törlődik, ahol telepítve volt.
-- **Központi telepítés kezelése** – Válassza ki azt a csoportot, amely számára telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** gombra..
+- **Központi telepítés kezelése** – Válassza ki azt a csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** gombra.
 
 ## Az Intune házirendek esetében elvégzendő feladatok
 
@@ -116,11 +115,11 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/)kattintson a **Csoportok**elemre, majd válasszon ki egy eszközcsoportot.
 
-2.  Válassza ki azokat az eszközöket, amelyek szabályzatait frissíteni kívánja, majd kattintson a **Távoli feladatok** &gt; **Házirendek frissítése** elemre..
+2.  Válassza ki azokat az eszközöket, amelyeknek a szabályzatait frissíteni kívánja, majd kattintson a **Távoli feladatok** &gt; **Házirendek frissítése** elemre.
 
 3.  A feladat állapotának megtekintéséhez kattintson az Intune felügyeleti konzoljának jobb alsó sarkában lévő **Távoli feladatok** elemre.
 
-## Referenciainformációk az Intune-szabályzatokhoz
+## A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
 
 ### Mennyi időt vesz igénybe, hogy a mobileszközök megkapják a házirendet vagy az alkalmazásokat a telepítés után?
 Egy házirend vagy alkalmazás telepítésekor az Intune megpróbálja értesíteni az eszközt, hogy jelentkezzen be az Intune-ba. Ez általában 5 percnél kevesebb időt vesz igénybe.
@@ -132,7 +131,8 @@ Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemez
 - iOS – 6 óránként
 - Android – 8 óránként
 - Windows Phone – 8 óránként
-- Eszközként regisztrált Windows-számítógépek – 24 óránként
+- Regisztrált Windows RT-eszközök – 24 óránként
+- Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek – 8 óránként
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
 
@@ -172,7 +172,7 @@ Az Intune nem értékeli az Apple konfigurációs fájlok vagy az egyéni OMA-UR
 
 Ezért ha egyéni házirendet telepít, győződjön meg arról, hogy a konfigurált beállítások nem ütköznek a megfelelőségi, konfigurációs vagy az egyéb egyéni házirendekkel. A beállítási ütközést tartalmazó egyéni házirendekben a beállítások alkalmazásának sorrendje véletlenszerű.
 
-### Mi történik, ha egy házirendet törölnek, vagy a házirend alkalmazhatatlanná válik?
+### Mi történik, ha egy szabályzatot törölnek, vagy a szabályzat alkalmazhatatlanná válik?
 Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportból, amelyen a házirend telepítve volt, akkor a házirend és a beállítások a következő táblázatban összefoglaltak szerint törlődnek az adott eszközről:
 
 #### Regisztrált eszközök
@@ -214,15 +214,15 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
 
 #### Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek
 
-- **Endpoint Protection-beállítások** – A beállítások visszaállnak az ajánlott értékekre. Az egyetlen kivétel a **Csatlakozás a Microsoft Active Protection Service szolgáltatáshoz** beállítás, amelynek az alapértelmezett értéke **Nem**. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)..
-- **Szoftverfrissítések beállításai** – A beállítások az operációs rendszer alapértelmezett állapotára állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)..
+- **Endpoint Protection-beállítások** – A beállítások visszaállnak az ajánlott értékekre. Az egyetlen kivétel a **Csatlakozás a Microsoft Active Protection Service szolgáltatáshoz** beállítás, amelynek az alapértelmezett értéke **Nem**. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Szoftverfrissítések beállításai** – A beállítások az operációs rendszer alapértelmezett állapotára állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **A Microsoft Intune Center beállításai** – Minden olyan támogatási kapcsolattartási adat törlődik a számítógépről, amelyet a szabályzat adott meg.
-- **A Windows tűzfal beállításai** – A beállítások a számítógép operációs rendszerének alapértelmezett értékeire állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)..
+- **A Windows tűzfal beállításai** – A beállítások a számítógép operációs rendszerének alapértelmezett értékeire állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

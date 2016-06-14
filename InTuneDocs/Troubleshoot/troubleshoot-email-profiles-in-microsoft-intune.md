@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,26 +37,26 @@ Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett 
 
 ### Intune-megoldás
 
-1.  Nyissa meg a Microsoft Intune felügyeleti konzolját, és válassza a **Házirend**&gt; **Konfigurációs szabályzat** lehetőséget..
+1.  Nyissa meg a Microsoft Intune felügyeleti konzolját, és válassza a **Házirend** &gt; **Konfigurációs szabályzat** lehetőséget.
 
-2.  Válassza ki a kívánt e-mail profilt, és kattintson a **Szerkesztés** elemre..
+2.  Válassza ki a kívánt e-mail-profilt, majd válassza a **Szerkesztés** lehetőséget.
 
 3.  Válassza ki a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** beállítást.
 
 ### Intune-megoldással integrált Configuration Manager
 
-1.  Nyissa meg a Configuration Manager-konzol &gt; **Eszközök és megfelelőség** elemét..
+1.  Nyissa meg a Configuration Manager-konzol &gt; **Eszközök és megfelelőség** elemét.
 
-2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállítások** -&gt; **Hozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget..
+2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállítások** -&gt; **Hozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget.
 
-3.  Kattintson a jobb gombbal az e-mail profilra, és nyissa meg a **Tulajdonságok** beállítást..
+3.  Kattintson a jobb gombbal az e-mail-profilra, és nyissa meg a **Tulajdonságok** menüt.
 
-4.  A **Szinkronizációs beállítások** lapon válassza ki a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** beállítást..
+4.  A **Szinkronizációs beállítások** lapon válassza a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** lehetőséget.
 
 ## További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint..
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

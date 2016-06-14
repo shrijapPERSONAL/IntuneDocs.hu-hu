@@ -56,10 +56,10 @@ A Microsoft Intune Center minden felügyelt számítógépre telepítve van. Az 
 |**Megjegyzések**|A felhasználóknak megjelenített megjegyzés.<br /><br />Maximális hossz: 120 karakter|
 
 ### Szoftverfrissítések beállításainak kezelése
-Házirendek használata azon beállítások konfigurálásához, amelyeket a felügyelt számítógépek a Microsofttól és külső gyártóktól származó frissítések kereséséhez és letöltéséhez használnak. További információkért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)..
+Házirendek használata azon beállítások konfigurálásához, amelyeket a felügyelt számítógépek a Microsofttól és külső gyártóktól származó frissítések kereséséhez és letöltéséhez használnak. További információt a [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) című cikkben találhat.
 
 ### Endpoint Protection-beállítások felügyelete
-Szabályzatok használata az Endpoint Protection beállításainak konfigurálásához, amelyek később a felügyelt számítógépekre lesznek telepítve. Ez tartalmazza a vizsgálatütemezéseket, a kártevők észlelésekor végrehajtott műveleteket stb. További információkért lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)..
+Szabályzatok használata az Endpoint Protection beállításainak konfigurálásához, amelyek később a felügyelt számítógépekre lesznek telepítve. Ez tartalmazza a vizsgálatütemezéseket, a kártevők észlelésekor végrehajtott műveleteket stb. További információt a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) című cikkben találhat.
 
 ## Hardver- és szoftverleltár megtekintése
 Az Intune részletes információkat gyűjt a felügyelt számítógépek hardvereiről és szoftvereiről. Az alábbi eljárásokban lévő információkból megtudhatja:
@@ -72,7 +72,7 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 ### A számítógépekkel kapcsolatos információk megjelenítése
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Jelentések** &gt; **Számítógépleltár-jelentések** lehetőséget..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Jelentések** &gt; **Számítógépleltár-jelentések** lehetőséget.
 
 2.  Az **Új jelentés létrehozása** lapon fogadja el az alapértelmezett értékeket, vagy állítsa be őket a jelentés által visszaadott eredmények szűrésére. Kiválaszthatja például, hogy csak a Windows 8.1-et futtató számítógépek jelenjenek meg a jelentésben.
 
@@ -82,7 +82,7 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 ### A számítógépekre telepített szoftverek megjelenítése
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Jelentések** &gt; **Észlelt szoftverek jelentései** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Jelentések** &gt; **Észlelt szoftverek jelentései** elemet.
 
 2.  Az **Új jelentés létrehozása** lapon fogadja el az alapértelmezett értékeket, vagy állítsa be őket a jelentés által visszaadott eredmények szűrésére. Kiválaszthatja például, hogy csak a Microsoft által kiadott szoftverek jelenjenek meg a jelentésben.
 
@@ -96,7 +96,7 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 2.  Válasszon ki egy számítógépet, vagy tartsa lenyomva a **Ctrl** billentyűt több számítógép kijelöléséhez.
 
-3.  A tálcán válassza a **Távoli feladatok** &gt; **Leltár frissítése** elemet..
+3.  A tálcán válassza a **Távoli feladatok** &gt; **Leltár frissítése** elemet.
 
 4.  A feladat állapotának megtekintéséhez válassza a lap jobb alsó sarkában található **Távoli feladatok** elemet.
 
@@ -107,7 +107,7 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza azt a számítógépet, amelyet újra szeretne indítani).
 
-2.  Jelöljön ki egy vagy több számítógépet, majd válassza a **Távoli feladatok** &gt; **Számítógép újraindítása** elemet.
+2.  Jelöljön ki egy vagy több számítógépet, majd válassza a **Távoli feladatok** &gt; **Számítógép újraindítása** elemet
 
 3.  A feladat állapotának megtekintéséhez válassza a lap jobb alsó sarkában található **Távoli feladatok** elemet.
 
@@ -115,9 +115,9 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 ## Számítógépek kivonása
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza a kivonni kívánt számítógépet).
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza azt a számítógépet, amelyet ki szeretne vonni).
 
-2.  Jelölje ki a kivonni kívánt eszközöket, majd válassza a **Kivonás/Összes adat törlése** elemet..
+2.  Jelölje ki a kivonni kívánt eszközöket, majd válassza a **Kivonás/Összes adat törlése** elemet.
 
 Ha a számítógépet újból regisztrálni szeretné az Intune-ban, telepítse újra az ügyfélszoftvert a számítógépen [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben található információk segítségével.
 
@@ -139,8 +139,7 @@ A számítógép eltávolításakor:
 
 -   Konfigurációjuktól függően az eltávolított számítógépek a Windows Server Update Services, a Windows Update vagy a Microsoft Update használatával továbbra is kaphatnak frissítéseket.
 
-    > [!IMPORTANT]
-    > Ha az ügyfélszoftver egy csoportházirend-objektummal (GPO) lett telepítve, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy megakadályozza a szoftver újratelepítését.
+    > [!IMPORTANT] Ha az ügyfélszoftvert csoportházirend-objektummal (GPO) telepítették, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy a szoftver ne települjön újra.
 
     Ha az ügyfél eltávolítása nem sikerült, további segítséget itt találhat: [Az Endpoint Protection hibáinak elhárítása](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
@@ -151,51 +150,73 @@ Mielőtt szoftvereket telepítene egy felhasználónak, a felhasználót egy sz�
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza azt a számítógépet, amelyet egy felhasználóhoz szeretne kapcsolni).
 
-2.  Jelölje ki a felhasználóval összekapcsolni kívánt számítógépet, majd válassza a **Felhasználó összekapcsolása** elemet..
+2.  Jelölje ki a felhasználóval összekapcsolni kívánt számítógépet, majd válassza a **Felhasználó összekapcsolása** elemet.
 
-    A **Felhasználó összekapcsolása** párbeszédpanel megjeleníti az elérhető felhasználók listáját a megjelenített nevükkel, a felhasználói azonosítójukkal és azon számítógépek számával, amelyekhez az egyes felhasználók jelenleg kapcsolva vannak. Ha a kijelölt számítógéphez már van felhasználó kapcsolva, akkor annak a felhasználónak a neve és felhasználói azonosítója megjelenik az **Aktuális felhasználó**területen. Ha a számítógép nincs felhasználóhoz kapcsolva, akkor az **Aktuális felhasználó** területen a **Nincs felhasználó** felirat jelenik meg..
+    A **Felhasználó összekapcsolása** párbeszédpanel megjeleníti az elérhető felhasználók listáját a megjelenített nevükkel, a felhasználói azonosítójukkal és azon számítógépek számával, amelyekhez az egyes felhasználók jelenleg kapcsolva vannak. Ha a kijelölt számítógéphez már van felhasználó kapcsolva, akkor annak a felhasználónak a neve és felhasználói azonosítója megjelenik az **Aktuális felhasználó**területen. Ha a számítógép nincs felhasználóhoz kapcsolva, akkor az **Aktuális felhasználó** területen a **Nincs felhasználó**felirat jelenik meg.
 
 3.  Tegye a következők valamelyikét:
 
-    -   Ha azt szeretné, hogy a számítógép továbbra is az aktuális felhasználóhoz legyen kapcsolva (ha van ilyen), válassza a **Mégse** lehetőséget..
+    -   Ha azt szeretné, hogy a számítógép továbbra is az aktuális felhasználóhoz legyen kapcsolva (ha van ilyen), válassza a **Mégse** lehetőséget.
 
-    -   Ha el szeretné távolítani az aktuális felhasználóhoz való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt;**OK** lehetőséget.
+    -   Ha el szeretné távolítani az aktuális felhasználóval való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt; **OK** lehetőséget.
 
-    -   Ha a számítógépet egy új felhasználóhoz szeretné kapcsolni, válasszon ki egy felhasználót a **Minden felhasználó** listában. Erősítse meg, hogy a felhasználói adatok helyesek, majd válassza az **OK** lehetőséget..
+    -   Ha a számítógépet egy új felhasználóhoz szeretné kapcsolni, válasszon ki egy felhasználót a **Minden felhasználó** listában. Erősítse meg, hogy a felhasználói adatok helyesek, majd kattintson az **OK** gombra.
 
-> [!TIP]
-> Ha korlátozni szeretné végfelhasználókat abban, hogy önmagukat számítógépekkel kössék össze, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást A **Microsoft Intune-ügynök beállításai** házirendben.
+> [!TIP] Ha korlátozni szeretné a végfelhasználókat abban, hogy önmagukat számítógépekkel kapcsolják össze, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást **A Microsoft Intune-ügynök beállításai** szabályzatban.
 
-## Válasz távsegítségre vonatkozó kérésre
-A felhasználók a felügyelt számítógépekre automatikusan telepített Microsoft Easy Assist Távsegítség funkciója segítségével kérhetnek segítséget. A kérések elküldésekor egy riasztás jelenik meg az Intune-konzolon.
+## Távsegítség kérése és biztosítása az Intune ügyfélszoftverét használó Windows-számítógépeken
 
 > [!IMPORTANT]
-> A távsegítség Windows 8 vagy újabb rendszert futtató számítógépeken nem támogatott.
->
-> Ha olyan számítógépről fogad el távsegítségre vonatkozó kérést, amelyen nincs telepítve a Microsoft Easy Assist, akkor a rendszer felajánlja a felhasználónak a telepítését. A telepítés után a számítógépet újra kell indítani. Az újraindítás elkerülése érdekében fontolja meg a Microsoft Easy Assist előzetes feltöltését a felhasználók számítógépeire.
+> Előfordulhat, hogy még nem látja a TeamViewer-integrációval megvalósított távsegítség beállítására szolgáló lehetőséget az Intune felügyeleti konzoljában. Ehhez a funkcióhoz egyelőre nem minden ügyfelünk fér hozzá, de terveink szerint hamarosan szélesebb körben is elérhetővé tesszük.
+     
 
-### Távsegítségre vonatkozó kérések felügyelete
-
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Riasztások** &gt; **Távsegítség** elemet..
-
-2.  A kérelem Tulajdonságok lapjának megnyitásához válassza ki a távsegítségre vonatkozó kérést a **Riasztások** listában.
-
-3.  Válassza a **Kérelem jóváhagyása és távsegítség indítása** elemet egy párbeszédpanel megnyitásához, amely lehetőségeket kínál a riasztás feloldásához.
-
-4.  Tegye a következők valamelyikét:
-
-    -   **A kérés elfogadása** – A távoli munkamenethez való csatlakozáshoz válassza **A távsegítségkérés elfogadása** elemet..
-
-        A felhasználónál a következő üzenet jelenik meg: **A rendszergazda elfogadta a kérést. A megfelelő programot vagy az asztal tartalmát az Easy Assist alkalmazásban található útmutatást követve oszthatja meg a rendszergazdával.**.
-
-        > [!IMPORTANT]
-        > Az Intune felügyeleti konzolt futtató Mac gépeken nem fogadhat el távsegítségre vonatkozó kéréseket.
-
-    -   **A kérés elutasítása** – Zárja be a **Hibaelhárítási információk megjelenítése** ablakot, majd válassza **A riasztás bezárása** elemet a riasztás tulajdonságai ablakban.
-
-        A kérés bezárul, és a felhasználó egy üzenetet kap, hogy a kérelmet elutasították. Távsegítség ismételt kéréséhez a felhasználónak új távsegítségre vonatkozó kérést kell küldenie. Ha véletlenül bezárta a távsegítségre vonatkozó riasztást, lépjen kapcsolatba a távsegítségre vonatkozó kérést küldő felhasználóval, és kérje meg, hogy küldjön egy új kérést.
+A Microsoft Intune a [TeamViewer](https://www.teamviewer.com) szoftver segítségével távsegítséget biztosíthat azon felhasználók számára, akiknek a számítógépén fut az Intune ügyfélszoftvere. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást.
+Ez a funkció az Intune jelenlegi Windows Távsegítség szolgáltatását cseréli le.
 
 
-<!--HONumber=May16_HO1-->
+### Előkészületek
+
+Ahhoz, hogy a távsegítség funkcióval támogatást biztosíthasson az azt kérő felhasználóknak, teljesítenie kell a következő előfeltételeket:
+
+- [Regisztrálnia kell egy TeamViewer-fiókot](https://login.teamviewer.com/LogOn#register), hogy be tudjon jelentkezni a TeamViewer weboldalára.
+- A kezelni kívánt Windows-számítógépeket [a Windows rendszerű számítógépügyfélnek kell felügyelnie](manage-windows-pcs-with-microsoft-intune.md).
+- Az Intune által támogatott bármely számítógépes Windows operációs rendszer támogatható.
+
+### A TeamViewer-összekötő konfigurálása
+
+1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
+2. A **Felügyelet** munkaterületen válassza a **TeamViewer** lehetőséget.
+3. A **TeamViewer** oldal **TeamViewer-összekötő** részénél válassza az **Engedélyezés** lehetőséget.
+4. **A TeamViewer engedélyezése** párbeszédpanelen olvassa el, majd az **Elfogadás** gombra kattintva fogadja el a licencfeltételeket. Ha még nem rendelkezik TeamViewer-licenccel, kattintson a **TeamViewer-licenc vásárlása** elemre.
+5. Megnyílik a TeamViewer böngészőablaka. Jelentkezzen be az oldalra a TeamViewerhez kapott hitelesítő adataival.
+6. A TeamViewer oldalán olvassa el, majd fogadja el a beállításokat, amelyek lehetővé teszik az Intune és a TeamViewer összekapcsolását.
+7. Az Intune-konzolban ellenőrizze, hogy a **TeamViewer-összekötő** beállítás értéke a következő-e: **Engedélyezve**.
+
+
+### Végfelhasználói távsegítségkérés benyújtása
+
+1. A Windows rendszerű ügyfélszámítógépen nyissa meg a **Microsoft Intune Centert**.
+2. A **Távsegítség** menüben válassza a **Távsegítség kérése** lehetőséget.
+3. A kérés jóváhagyását követően (lásd alább) az ügyfél megnyitja a TeamViewert. A felhasználónak jóvá kell hagynia az esetleg megjelenő üzeneteket, amelyek arról tájékoztatják, hogy a böngésző meg szeretné nyitni a TeamViewer alkalmazást.
+4. A felhasználónál megjelenik egy üzenet, amely megkérdezi, hogy szeretné-e engedélyezni, hogy Ön átvegye az irányítást a számítógép felett. A folytatáshoz meg kell adni az engedélyt.
+5. A távsegítség-munkamenet során a felhasználót egy ablak tájékoztatja arról, hogy Ön csatlakozik hozzá. Az ablak bezárása esetén a távoli munkamenet is lezárul.
+
+### Válasz távsegítségre vonatkozó kérésre
+
+1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Példa:
+> ![Távsegítségkérést bemutató képernyőkép](./media/team-viewer.png)
+
+<br>Azokat a kéréseket, amelyekre 4 órán át nem érkezik válasz, a rendszer eltávolítja.
+2. A kérés elfogadásához kattintson **A kérelem jóváhagyása és a Távsegítség alkalmazás elindítása** elemre.
+3. A **Függőben van egy új távsegítség-kérés** párbeszédpanelen válassza **A távsegítségkérés elfogadása** lehetőséget. Ha még nincs telepítve a számítógépre a TeamViewer a további szükséges alkalmazásokkal együtt, megtörténik a telepítés.
+4. A TeamViewer ezt követően tájékoztatja a végfelhasználót, hogy Ön szeretné átvenni az irányítást a számítógép felett. Ha a felhasználó megadja az engedélyt, megnyílik a TeamViewer ablaka, és Ön megkezdheti a felhasználó számítógépének kezelését. 
+ 
+A távsegítség-munkamenet ideje alatt a TeamViewer összes rendelkezésre álló parancsa használható a távoli számítógép vezérlésére. A parancsokkal kapcsolatban a TeamViewer webhelyén található [Manual for remote control](http://www.teamviewer.com/en/support/documents/) (Távvezérlési kézikönyv) dokumentumban talál további információkat.
+
+### A távsegítség-munkamenet lezárása
+
+A **TeamViewer** ablakának **Műveletek** menüjében válassza a **Munkamenet vége** lehetőséget.
+
+<!--HONumber=Jun16_HO1-->
 
 

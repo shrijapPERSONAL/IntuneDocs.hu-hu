@@ -30,14 +30,13 @@ ms.suite: ems
 
 Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, az eszköz alaphelyzetbe állításához a [Vállalati portál webhelyét](http://portal.manage.microsoft.com) használhatja. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
-> [!NOTE] 
-> Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
+> [!NOTE] Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
 
 A jelszó alaphelyzetbe állítása:
 
 1.  Nyissa meg a [Vállalati portál webhelyét](http://portal.manage.microsoft.com), és koppintson arra az eszközre, amelynek a jelszavát alaphelyzetbe kívánja állítani.
 
-2.  Koppintson a **Jelszó alaphelyzetbe állítása** gombra..
+2.  Koppintson a **Jelszó alaphelyzetbe állítása** gombra.
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -45,7 +44,7 @@ A jelszó alaphelyzetbe állítása:
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  Koppintson a **Jelszó alaphelyzetbe állítása** gombra..
+4.  Koppintson a **Jelszó alaphelyzetbe állítása** gombra.
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -66,6 +65,6 @@ A jelszó alaphelyzetbe állítása:
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

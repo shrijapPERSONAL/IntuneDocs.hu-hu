@@ -46,11 +46,11 @@ A Távoli zárolás funkció használata az eszköz zárolásához:
 
 1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) koppintson annak az eszköznek a nevére, amelyet zárolni szeretne.
 
-2.  Koppintson a **Távoli zárolás** elemre..
+2.  Koppintson a **Távoli zárolás** elemre.
 
     A **Távoli zárolás** elemre való koppintás után megjelenik a „Távoli zárolás függőben” állapot.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
-    Az állapot három helyen jelenik meg:
+    A Távoli zárolás állapota három helyen jelenik meg:
 
     * A webhely értesítési területén. 
     * Az eszköz Részletek lapján.
@@ -64,6 +64,6 @@ A Távoli zárolás funkció használata az eszköz zárolásához:
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

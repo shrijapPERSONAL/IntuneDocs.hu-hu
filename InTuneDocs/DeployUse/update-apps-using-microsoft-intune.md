@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Alkalmazások frissítése a Microsoft Intune-nal | Microsoft Intune
+title: Alkalmazások frissítése | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,18 +34,18 @@ Amikor megjelenik egy telepített alkalmazás egy új verziója, az Intune lehet
 > [!IMPORTANT]
 > Ha egy alkalmazást a **Szükséges telepítés** központi telepítési művelettel telepít, majd később a központi telepítési műveletet az **Elérhető telepítés**lehetőségre módosítja, az alkalmazás frissítései nem lesznek automatikusan telepítve azokon az eszközökön, melyeken a központi telepítési módosítás előtt települt az alkalmazás. A probléma megoldásához tegye a következőket:
 > 
-> -   Kérje meg az eszköz felhasználóját, hogy nyissa meg a vállalati portált, válassza ki a telepített alkalmazást, majd kattintson a **Telepítés** lehetőségre..
-> -   Módosítsa a központi telepítési műveletet az **Eltávolítás** lehetőségre, és az alkalmazás eltávolítása után telepítse újra az alkalmazást az **Elérhető telepítés** központi telepítési művelettel..
+> -   Kérje meg az eszköz felhasználóját, hogy nyissa meg a vállalati portált, válassza ki a telepített alkalmazást, majd kattintson a **Telepítés**lehetőségre.
+> -   Módosítsa a központi telepítési műveletet az **Eltávolítás**lehetőségre, és az alkalmazás eltávolítása után telepítse újra az alkalmazást az **Elérhető telepítés**központi telepítési művelettel.
 
 ### Alkalmazás frissítésére
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások** elemre.
 
-2.  Válassza ki a frissíteni kívánt alkalmazást az **Alkalmazások** listáról, majd kattintson a **Szerkesztés** lehetőségre..
+2.  Válassza ki a frissíteni kívánt alkalmazást az **Alkalmazások** listáról, majd kattintson a **Szerkesztés**lehetőségre.
 
 3.  A **Szoftver szerkesztése** varázslóban adja meg az alkalmazáscsomag minden új adatát.
 
-4.  Amikor elkészült, kattintson a **Frissítés** gombra..
+4.  Amikor elkészült, kattintson a **Frissítés**gombra.
 
 Amikor az eszközök legközelebb keresnek elérhető alkalmazásokat, az alkalmazás automatikusan a legújabb verzióra fog frissülni.
 
@@ -53,6 +53,6 @@ Amikor az eszközök legközelebb keresnek elérhető alkalmazásokat, az alkalm
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

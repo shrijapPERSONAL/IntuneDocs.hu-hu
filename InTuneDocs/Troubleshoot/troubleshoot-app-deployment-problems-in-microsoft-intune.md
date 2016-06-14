@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,13 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 1.  Ellenőrizze, hogy a fiók létezik-e az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854), vagy hogy nincs-e letiltva.
 
-2.  Győződjön meg arról, hogy regisztrálva van-e ehhez a fiókhoz az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)..
+2.  Győződjön meg róla, hogy regisztrálva van-e ehhez a fiókhoz az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  Az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) győződjön meg arról, hogy a helyes felhasználónévvel és jelszóval próbál bejelentkezni az Intune-ba, és hogy ezeket a következő formátumban adta meg: **joe@domain.com**..
+3.  Az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) győződjön meg róla, hogy a helyes felhasználónévvel és jelszóval próbál-e bejelentkezni az Intune-ba, illetve, hogy ezeket a következő formátumban adta-e meg: **joe@tartomány.com**.
 
 ### Ha hiányzik az IT-csoport elérhetőségével kapcsolatos információ a vállalati portálról
 
-1.  Az Intune felügyeleti konzolon kattintson a **Felügyelet** &gt; **Vállalati portál** lehetőségre..
+1.  Az Intune felügyeleti konzoljában válassza a **Felügyelet** &gt; **Vállalati portál** lehetőséget.
 
 2.  Adja meg az **IT-csoport elérhetőségi** adatait.
 
@@ -63,7 +63,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 4.  Ha az iOS-alkalmazás letöltése befejeződött, de az alkalmazástelepítés sikertelen, lehetséges, hogy gond van a megadott alkalmazásfájlokkal.
 
-### Ha egy iOS-alkalmazásra mutató hivatkozásra kattintva az iTunes alkalmazásáruház egy korábban felkeresett weblapja jelenik meg
+### Ha egy iOS-alkalmazásra mutató hivatkozás az iTunes alkalmazás-áruház egy korábban felkeresett oldalára viszi
 
 1.  Az aktuális iTunes alkalmazásáruházbeli munkamenet a korábbi alkalmazáslapon nyílik meg.
 
@@ -87,13 +87,13 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 ### Hiba: A gyártó nem létezik
 A 3. fél licencszerződések hozzáadásához az **Egyéb szoftverlicenc-szerződések hozzáadása** beállítást használja. Megpróbálja felvenni a gyártót az **Egyéb szoftverlicenc-szerződések** lapon. A lap tartalmazza a létező gyártók betűrendbe szedett listáját.
-Megadja a hiányzó gyártót, de **A gyártó nem létezik** hibaüzenet kap.. 
+Megadja a hiányzó gyártót, de **A gyártó nem létezik** hibaüzenet kap. 
 
 Ez a rendszer kialakításából fakad. Az Intune csak a népszerű szoftvercímek licenceit követi nyomon. Legalább 4 külön fióktól származó jelentés szükséges ahhoz, hogy az Intune választási lehetőségként elérhetővé tegyen egy adott szoftvert a licencelési feladatok között.
 
 ### Ha a felügyelt alkalmazások nem jelentik a telepítési állapotot
 
-A rendszer nem gyűjtötte be a felügyelt alkalmazások telepítési állapotát a Microsoft Intune 2014 novemberi szolgáltatásfrissítése előtt. Olyan eszközöknél, amelyeken e szolgáltatásfrissítés előtt telepített felügyelt alkalmazásokat, frissítse az egyes alkalmazástelepítéseket a megfelelő telepítési művelettel (például: **Elérhető telepítés**). Minden eszköz frissíteni fogja az alkalmazást az elérhető alkalmazások automatikus ellenőrzésekor. További információ: [Alkalmazások frissítése a Microsoft Intune-nal](/intune/deploy-use/update-apps-using-microsoft-intune)..
+A rendszer nem gyűjtötte be a felügyelt alkalmazások telepítési állapotát a Microsoft Intune 2014 novemberi szolgáltatásfrissítése előtt. Olyan eszközöknél, amelyeken e szolgáltatásfrissítés előtt telepített felügyelt alkalmazásokat, frissítse az egyes alkalmazástelepítéseket a megfelelő telepítési művelettel (például: **Elérhető telepítés**). Minden eszköz frissíteni fogja az alkalmazást az elérhető alkalmazások automatikus ellenőrzésekor. További információ: [Alkalmazások frissítése a Microsoft Intune-nal](/intune/deploy-use/update-apps-using-microsoft-intune).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>Alkalmazástelepítési hibakódok
 A következő táblázat az Intune-alkalmazástelepítés közben gyakran előforduló hibákat, a valószínű okokat és a hibakereséshez szükséges lehetséges megoldásokat tartalmazza.
@@ -106,9 +106,9 @@ A következő táblázat az Intune-alkalmazástelepítés közben gyakran előfo
 |0x80073CFB|A megadott csomag már telepítve van, és a csomag újratelepítése le van tiltva.|Ez a hiba akkor fordulhat elő, ha olyan csomagot telepít, amely nem azonos a már telepített csomaggal. Ellenőrizze, hogy a csomag tartalmaz-e digitális aláírást. Ha újraépít vagy újra aláír egy csomagot, a csomag nem lesz bitenként azonos az előzőleg telepített csomaggal. Ez a hiba kétféleképpen javítható ki:<br /><br />-   Növelje az alkalmazás verziószámát, majd építse és írja alá újra a csomagot.<br />-   Az új csomag telepítése előtt távolítsa el a régi csomagot a rendszer minden felhasználója esetében.|
 
 ### További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint..
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

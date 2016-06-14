@@ -29,10 +29,10 @@ ms.suite: ems
 
 Az Intune-eszköz életciklusa az eszköz regisztrálásával kezdődik, majd számos lépésen áthaladva addig tart, amikor már nincs szükség az eszközre.
 
-![Az eszközök életciklusa](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Az eszközök életciklusa](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Regisztrálás
-A mai mobileszköz-kezelési (MDM) stratégiák számos különböző telefont, táblagépet és számítógépet kezelnek (iOS, Android, Windows és Mac OS X). Ha szüksége van az eszköz kezelhetőségére, ami általában a vállalati tulajdonú eszközök esetében fordul elő, akkor az első lépés az [eszközregisztráció beállítása](enroll-devices-in-microsoft-intune.md). Windows rendszerű számítógépeket is kezelhet, ha regisztrálja őket az Intune-ban (MDM) vagy [telepíti az Intune ügyfélszoftverét](manage-windows-pcs-with-microsoft-intune.md)..
+A mai mobileszköz-kezelési (MDM) stratégiák számos különböző telefont, táblagépet és számítógépet kezelnek (iOS, Android, Windows és Mac OS X). Ha szüksége van az eszköz kezelhetőségére, ami általában a vállalati tulajdonú eszközök esetében fordul elő, akkor az első lépés az [eszközregisztráció beállítása](enroll-devices-in-microsoft-intune.md). Windows rendszerű számítógépeket is kezelhet, ha regisztrálja őket az Intune-ban (MDM), vagy [telepíti az Intune ügyfélszoftverét](manage-windows-pcs-with-microsoft-intune.md).
 
 ## Konfigurálás
 Az eszközök regisztrálása csak az első lépés. Az Intune teljes kínálatának kihasználásához, valamint az eszközök biztonságosságának és a vállalati előírásoknak való megfelelőségének biztosításához számos **szabályzat** közül választhat, amelyekkel a felügyelt eszközök működésének szinte minden szempontját konfigurálhatja. Szeretné például, hogy a felhasználók jelszót használjanak a vállalati adatokhoz hozzáférő eszközökhöz? A jelszó használata kötelezővé tehető. Használ vállalati Wi-Fi-t? Ha igen, automatikusan konfigurálhatja. Az elérhető konfigurációs lehetőségek a következők:
@@ -51,6 +51,6 @@ A modern informatikai világban az eszközök jogosulatlan hozzáférés elleni 
 Az eszközök elvesztése, ellopása vagy szükségessé váló cseréje esetén, vagy ha a felhasználók más helyre vagy beosztásba kerülnek, az adott eszközt [ki kell vonni vagy törölni kell a tartalmát](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Ezt többféleképpen is megteheti, például alaphelyzetbe állíthatja az eszközt, megszüntetheti a felügyeletét vagy törölheti az eszközön található vállalati adatokat.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A vállalati portállal kapcsolatos gyakori kérdések | Microsoft Intune
+title: A Vállalati portál ismertetése| Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# A vállalati portállal kapcsolatos gyakori kérdések
+# A Vállalati portál ismertetése
 
+## Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
+A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
+- Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája más módszerekkel is telepítheti Önnek az alkalmazást.
+- Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com). 
 
-## Mi a Vállalati portál?
-A Vállalati portál a vállalat felülete, amelyről a munkához használt számítógépeket és eszközöket, vagy a munkához választott személyes számítógépeket és eszközöket kezelheti.  A Vállalati portál lehet egy felkereshető webhely, de egy, az eszközére telepített alkalmazás is.
+A Vállalati portál alkalmazás és webhely között van néhány apróbb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány példa:
 
-## Mit tehetek a Vállalati portálon?
-Miután hozzáadja számítógépét vagy eszközét a Vállalati portálhoz, böngészhet a telepíthető vállalati alkalmazások között, kezelheti a többi hozzáadott eszközt, és a informatikai rendszergazda kapcsolattartási adatait is itt találja.
+- Eszközök regisztrálása
+- Az eszközök állapotának megtekintése
+- A vállalat vagy az iskola által elérhetővé tett alkalmazások letöltése
+- Átnevezheti az eszközét
+- PIN-kód visszaállítása
+- Segítség kérése az informatikai részlegtől
+
+A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS és Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [Munkahelyi portál webhely](using-the-intune-company-portal-website.md)
 
 ## Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
-Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően).  Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi az IT rendszergazdának az eszköz felügyeletét.  
+Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően).  Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi az IT rendszergazdának az eszköz felügyeletét.
+
+Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén, kövesse az Ön által használt eszköznek megfelelő hivatkozást:
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS és Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Milyen számítógépeket és eszközöket adhatok hozzá a Vállalati portálhoz?
 
--   Windows 10 mobil verzió
-
--   Windows 10 asztali verzió
-
--   Windows Phone 8.1
-
--   Windows 8.1
-
--   Windows RT-alapú eszközök
-
--   Windows Phone 8
-
 -   iPhone és iPad készülékek, illetve Mac OS X-eszközök
 
--   Androidos eszközök
+-   Android rendszerű mobileszközök
 
-## A Vállalati portál alkalmazás nem támogatott
-A Vállalati portál ezen verziója már nem használható. A folytatáshoz telepítse a **Vállalati portál** alkalmazást a Windows Áruházból.
+-   Windows-eszközök
+    -   10 Mobile
+    -   Windows 10 asztali verzió
+    -   Windows Phone 8.1
+    -   Windows 8.1
+    -   Windows RT-alapú eszközök
+    -   Windows Phone 8
+    -   iPhone és iPad készülékek, illetve Mac OS X-eszközök
+    -   Android rendszerű mobileszközök
+
 
 ## Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
-Igen, a Vállalati portálról eltávolíthat, vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt.  Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban vannak különbségek:
+Igen, a Vállalati portálról eltávolíthat, vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban vannak különbségek:
 
--   Egy számítógép vagy eszköz eltávolításakor az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és előfordulhat, hogy némely vállalati adatok törlődnek az eszközről.
+Számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról az alábbi hivatkozások egyikén találhat információkat:
 
--   Egy számítógép vagy eszköz alaphelyzetbe állításakor a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerint alaphelyzetbe állítani a számítógépet vagy eszközt.  Emiatt előfordulhat, hogy mind a vállalati és mind a személyes adatok törlődnek.
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS és Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+Számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerinti helyzetbe állítani a számítógépet vagy eszközt. Az eszköz alaphelyzetbe állításával töröl minden vállalati és személyes adatot az eszközről! Ha elvesztette az eszközét, akkor távolról, a Vállalati portál webhelyéről is alaphelyzetbe állíthatja.
+
+Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén találhat további információkat:
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS és Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről](reset-your-device-cpwebsite.md)
 
 ## Nem látom minden eszközömet a vállalati portálon
 Az eszközök csak akkor láthatók, ha hozzáadja őket a Vállalati portálhoz. A rendszergazda útmutatása alapján tallózzon a Vállalati portálon, és kövesse az eszközéhez vezető lépéseket. A vállalat által birtokolt vagy kezelt eszközöket sem fogja látni.
 
-## Telepítenem kell a Vállalati portál új verzióját
-Ha az Ön által használt Vállalati portál-verzió már nem támogatott, vagy ha elérhető a Vállalati portál újabb verziója, az alábbi eljárásokkal frissítheti eszközét.
-
-### Windows-eszköz frissítése
-
-1.  Nyissa meg a Windows Áruházat, és keressen rá a **vállalati portál** kifejezésre..
-
-2.  Kövesse a telepítési utasításokat.
-
-    > [!NOTE]
-    > Ha nem fér hozzá a Windows Áruházhoz, lépjen kapcsolatba a rendszergazdával.
-
-### iOS-eszköz frissítése
-
-Az Apple AppStore riasztást küld, ha elérhető a Vállalati portál új verziója. Az eszköz frissítéséhez kövesse a riasztásban megjelenő utasításokat.
-
-## Azt a hibaüzenetet kapom, hogy a számítógépem már regisztrálva lett
-Ez azt jelenti, hogy a számítógép már szerepel a Vállalati portálon, de még nincs hozzákapcsolva a felhasználói fiókjához. Az alábbi eljárás segítségével kapcsolja össze számítógépét a felhasználói fiókjával, és fejezze be a folyamatot.
-
-### A számítógép összekapcsolása
-
-1.  A fiókkal összekapcsolni kívánt számítógépen kattintson a **Start** gombra, majd a **Microsoft Intune Center** lehetőségre..
-
-2.  Nyissa meg a Vállalati portált.
-
-3.  A képernyőn megjelenő utasításokat követve kapcsolja össze számítógépét a felhasználói fiókjával.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

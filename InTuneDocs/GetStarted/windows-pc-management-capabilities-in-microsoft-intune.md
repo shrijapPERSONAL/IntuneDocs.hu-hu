@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei | Microsoft Intune
+title: Windows-számítógépek felügyeletére szolgáló funkciók | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,7 +34,7 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 
 -   **Kártevők elleni védelem** – Az Intune Endpoint Protection védelmet használ, amely segít a számítógépek kártevők elleni védelmében.
 
--   **Távsegítség.** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune-hoz tartozó távoli asztal szolgáltatás segítségével a felhasználók kapcsolatba lépjenek az informatikai támogatási csapattal.
+-   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune-hoz tartozó távoli asztal szolgáltatás segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
 -   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
@@ -46,11 +46,13 @@ Az Intune a Windows következő verzióival rendelkező számítógépek felügy
 
 -   **Windows Vista** – Business, Enterprise és Ultimate verziók.
 
--   **Windows 7** – Professional, Enterprise és Ultimate verziók (szervizcsomag nélkül vagy SP1-gyel).
+-   **Windows 7** – Pro, Enterprise és Ultimate verziók (szervizcsomag nélkül vagy SP1-gyel).
 
--   **Windows 8** – Professional és Enterprise verziók.
+-   **Windows 8** – Pro és Enterprise verziók.
 
--   **Windows 8.1** – Professional és Enterprise verziók.
+-   **Windows 8.1** – Pro és Enterprise verziók.
+
+- **Windows 10** – Home, Pro, Education és Enterprise verziók.
 
 
 ## Minimális hardverkövetelmények
@@ -72,9 +74,9 @@ A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelmén
 |Nem kompatibilis ügyfélszoftver eltávolítása|A számítógépes Intune ügyfélszoftver telepítése előtt távolítsa el a következő ügyfélszoftvereket a számítógépről:<br /><br />- A Configuration Manager bármely verziója<br />- A Microsoft Systems Management Server (SMS) bármely verziója|
 
 ### További információ
-[A Microsoft Intune mobileszköz-kezelési képességei](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
+[A Microsoft Intune mobileszköz-kezelési képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

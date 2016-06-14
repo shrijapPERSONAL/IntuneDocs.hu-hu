@@ -15,7 +15,7 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,16 +28,16 @@ ms.suite: ems
 
 # Mac OS X-eszköz regisztrálása az Intune-ban
 
-Ha regisztrálja Mac OS X-eszközét az Intune-ban, hozzáférhet munkahelye hálózatához, a munkahelyi levelezéséhez, a munkája során használt fájlokhoz és a munkahelyi alkalmazásokhoz. A [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című rész bővebben ismerteti, hogy mi történik az eszköz regisztrálásakor..
+Ha regisztrálja Mac OS X-eszközét az Intune-ban, hozzáférhet munkahelye hálózatához, a munkahelyi levelezéséhez, a munkája során használt fájlokhoz és a munkahelyi alkalmazásokhoz. A [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című rész bővebben ismerteti, hogy mi történik az eszköz regisztrálásakor.
 
-Ha Mac OS X rendszerű eszközt szeretne regisztrálni, lásd: [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md).
+Ha iOS rendszerű eszközt szeretne regisztrálni, lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md).
 
 
 A Mac OS X-eszköz regisztrálása:
 
 1.  A Safari böngészőben nyissa meg a [Vállalati portál webhelyét](https://portal.manage.microsoft.com), és koppintson az értesítési sávra.
 
-2.  Koppintson **Az eszköz nincs regisztrálva, vagy a Vállalati portál nem képes azonosítani** elemre..
+2.  Koppintson **Az eszköz nincs regisztrálva, vagy a Vállalati portál nem képes azonosítani** elemre.
 
     ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
 
@@ -45,7 +45,7 @@ A Mac OS X-eszköz regisztrálása:
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
 
-4.  A **Felügyeleti profil telepítése** párbeszédpanelen koppintson a **Telepítés** gombra. Ha megjelenik egy párbeszédpanel, amely kéri a hitelesítő adatainak megadását, írja be a felhasználónevét és jelszavát, majd koppintson a **Folytatás** &gt; **Telepítés** elemre..
+4.  A **Felügyeleti profil telepítése** párbeszédpanelen koppintson a **Telepítés** gombra. Ha megjelenik a hitelesítő adatai megadását kérő párbeszédpanel, írja be a felhasználónevét és jelszavát, majd koppintson a **Folytatás** &gt; **Telepítés** elemre.
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
 
@@ -56,6 +56,6 @@ A Mac OS X-eszköz regisztrálása:
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -53,21 +53,21 @@ Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell 
 
 2.  Kattintson az **Apple VPP-fiók** hivatkozásra, és ha még nem tette meg, regisztráljon a Volume Purchase Program for Business programba. Miután bejelentkezett, töltse le a fiókjához tartozó Apple VPP-tokent.
 
-3.  Az Intune-konzol **Apple Volume Purchase Program (VPP) kezelése** oldalán kattintson a **VPP-token feltöltése** lehetőségre..
+3.  Az Intune-konzol **Apple Volume Purchase Program (VPP) kezelése** oldalán kattintson a **VPP-token feltöltése** lehetőségre.
 
-4.  A **VPP-token feltöltése** párbeszédpanelen írja be vagy másolja be a VPP-token nevét és az Apple ID-ját, majd kattintson a **Feltöltés** gombra..
+4.  A **VPP-token feltöltése** párbeszédpanelen írja be vagy másolja be a VPP-token nevét és az Apple ID-ját, majd kattintson a **Feltöltés** gombra.
 
-5.  A figyelmeztető párbeszédpanelen a jelölőnégyzet bejelölésével jelezze, hogy tudomásul veszi, hogy később nem válthat másik VPP-fiókra, majd kattintson az **Igen** gombra..
+5.  A figyelmeztető párbeszédpanelen a jelölőnégyzet bejelölésével jelezze, hogy tudomásul veszi, hogy később nem válthat másik VPP-fiókra, majd kattintson az **Igen** gombra.
 
 A **Volume Purchase Program** oldalon most megtekintheti az Apple VPP-token információit, beleértve az utolsó frissítés idejét, a lejárat idejét, valamint hogy mikor volt utoljára szinkronizálva az Intune-nal.
 
-Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **Szinkronizálás** gombra kattintva..
+Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **Szinkronizálás** gombra kattintva.
 
-## Mennyiségi vásárlási programban vásárolt alkalmazás frissítése és telepítése
+## Mennyiségi programban vásárolt alkalmazás telepítése
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** elemre..
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** elemre. Ebben a listában az összes, az Apple VPP-szolgáltatásából szinkronizált alkalmazás szerepel.
 
-2.  Az [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) című témakörben megtalálja az alkalmazás feltöltésének, létrehozásának és telepítésének útmutatásait.
+2.  Válassza ki a telepíteni kívánt alkalmazást, kattintson a **Központi telepítés kezelése** elemre, majd az [Alkalmazások telepítése Microsoft Intune-beli mobileszközökre](deploy-apps-in-microsoft-intune.md) című témakörben található utasítások segítségével végezze el az alkalmazás feltöltését, létrehozását és központi telepítését.
 
 Amikor az alkalmazást **Szükséges** telepítésként telepíti, akkor az alkalmazást telepítő összes felhasználó felhasznál egy licencet.
 
@@ -75,22 +75,20 @@ A licencek visszanyeréséhez módosítania kell a központi telepítési művel
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Ezt a lépést az alkalmazás telepítésének folytatása előtt kell megtennie.
 
-> [!TIP]
-> A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazás telepítve lett.
+> [!TIP] A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazást telepítették.
 
 Ha nincsenek további elérhető licencek, a telepítés meghiúsul.
 
 ## Apple VPP-alkalmazások figyelése
-A **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópont **Alkalmazások** munkaterületén követheti nyomon, hogy mely VPP-alkalmazások lettek telepítve, és hogy hány licencet használtak fel.
+Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítettek, és hány licencet használtak fel.
 
-> [!TIP]
-> Az alkalmazás **Szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
+> [!TIP] Az alkalmazás **szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
 
 ### Lásd még:
-[Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

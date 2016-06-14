@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Az iOS-eszközök védelme a Microsoft Intune-hoz készült aktiválásizár-megkerüléssel | Microsoft Intune
+title: Az iOS-eszközök védelme az aktiválásizár-megkerüléssel | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megk
 > Az iOS-eszközök felügyelt módja lehetővé teszi az eszközök az Apple Configurator eszközzel való zárolását, így meghatározott üzleti célokra korlátozva annak funkcióit. A felügyelt mód általánosságban csak céges eszközökhöz használható.
 
 ## Az aktiválási zár kezelése az Intune-nal
-Az Intune a felügyelt és a felügyeletlen iOS 7.1 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. A felügyelt eszközök esetén az Intune le tudja kérdezni az aktiválásizár-áthidaló kódot, és közvetlenül ki tudja adni azt az eszköznek. Ha törölték az eszköz adatait, a kódot felhasználónévként használva és üres jelszóval közvetlenül hozzáférhet az eszközhöz.
+Az Intune a felügyelt és a felügyeletlen iOS 7.1 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. Kizárólag a felügyelt eszközök esetében az Intune képes lekérdezni az aktiválásizár-áthidaló kódot, és közvetlenül kiadni azt az eszköznek. Ha törölték az eszköz adatait, a kódot felhasználónévként használva és üres jelszóval közvetlenül hozzáférhet az eszközhöz.
 
 **Ennek a következők az üzleti előnyei**:
 
@@ -59,11 +59,11 @@ Az Intune a felügyelt és a felügyeletlen iOS 7.1 vagy újabb rendszerű eszk�
 
 ## Az aktiválási zár megkerülésének használata az Intune felügyeleti konzolon
 > [!IMPORTANT]
-> Az aktiválási zár megkerülése után az eszköz a Find My iPhone alkalmazás megnyitásakor automatikusan egy újabb aktiválási zárat fog alkalmazni. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**..
+> Az aktiválási zár megkerülése után az eszköz a Find My iPhone alkalmazás megnyitásakor automatikusan egy újabb aktiválási zárat fog alkalmazni. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** elemet..
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** elemet.
 
-2.  Válassza ki azt az eszközt, amelynek aktiválási zárját meg szeretné kerülni. Válassza az **Aktiválási zár megkerülése** lehetőséget..
+2.  Válassza ki azt az eszközt, amelynek aktiválási zárját meg szeretné kerülni. Válassza az **Aktiválási zár megkerülése** lehetőséget.
 
 3.  Olvassa el a figyelmeztető üzenetet. A folytatáshoz válassza az **Igen** lehetőséget.
 
@@ -93,6 +93,6 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 [Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

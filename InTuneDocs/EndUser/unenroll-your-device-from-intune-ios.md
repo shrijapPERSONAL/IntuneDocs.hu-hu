@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,7 +34,7 @@ Ha az eszköz regisztrációját törölni szeretné az Intune-ból, kövesse az
 
 1.  A Vállalati portál alkalmazás **Eszközök**csoportjában válassza ki azt az eszközt, amelynek a regisztrációját törölni szeretné.
 
-2.  Koppintson az **Eltávolítás** &gt; **Eltávolítás** lehetőségre..
+2.  Koppintson az **Eltávolítás** &gt; **Eltávolítás** lehetőségre.
 
 Az eszköz regisztrációjának Intune-ból való törlésekor a következők történnek:
 
@@ -57,6 +57,6 @@ Az eszköz regisztrációjának Intune-ból való törlésekor a következők t�
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

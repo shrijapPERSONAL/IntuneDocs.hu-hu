@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A Mac OS X szabályzatbeállításai a Microsoft Intune-ban | Microsoft Intune
+title: A Mac OS X-házirendek beállításai | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,12 +43,12 @@ Ha ez a lista nem tartalmazza a keresett beállítást, próbálja meg létrehoz
 |----------------|---------------|
 |**Jelszó kérése az eszközzárolás feloldásához**|Itt adhatja meg, hogy a felhasználónak kell-e jelszót használnia Mac-számítógépe eléréséhez. **Fontos:** Az IOS-eszközöktől eltérően a Mac OS X-eszközökön a felhasználó nem azonnal kap jelszófrissítési értesítést a beállításnak való megfelelés érdekében.|
 |**Kötelező jelszótípus**|Annak megadása, hogy a jelszó csak numerikus lehet-e, illetve hogy **alfanumerikusnak** kell-e lennie (betűket és számokat is tartalmaznia kell). **Fontos:** Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.|
-|**Jelszó speciális karaktereinek minimális száma**|A jelszóban használandó speciális karakterek minimális számának (**0** - **4**) megadása.).<br /><br />A speciális karakterek szimbólumok, mint például a kérdőjel (**?**)'|
+|**Jelszó speciális karaktereinek minimális száma**|A jelszóban használandó speciális karakterek minimális számának (**0** - **4**) megadása.<br /><br />A speciális karakterek szimbólumok, mint például a kérdőjel (**?**)|
 |**Jelszó minimális hossza**|A jelszó minimális hosszának ( **4** – **14** karakter) megadása.|
-|**Egyszerű jelszavak engedélyezése**|Az egyszerű jelszavak (például a **0000** vagy az **1234**) használatának engedélyezése'.|
+|**Egyszerű jelszavak engedélyezése**|Az egyszerű jelszavak (például a**0000**vagy az**1234**) használatának engedélyezése.|
 |**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Annak megadása, hogy mennyi ideig legyen a számítógép inaktív ahhoz, hogy bekapcsoljon a jelszavas zárolás.|
 |**Jelszó lejárata (nap)**|Itt adhatja meg, hogy mennyi idő telhet el a kötelező jelszómódosításig (**1** - **255** nap).|
-|**Jelszóelőzmények megjegyzése**|Ezzel a beállítással megakadályozhatja, hogy a felhasználó a korábban használt jelszavakat használja. Ha ezt a beállítást engedélyezi, akkor a **Korábbi jelszavak újbóli használatának tiltása** beállítással megadhatja, hogy hány korábban használt jelszó nem használható fel újra (**1** - **24**).).|
+|**Jelszóelőzmények megjegyzése**|Ezzel a beállítással megakadályozhatja, hogy a felhasználó a korábban használt jelszavakat használja. Ha engedélyezi ezt a beállítást, a **Korábbi jelszavak újbóli használatának tiltása** beállítással megadhatja, hogy hány korábban használt jelszó ne legyen újra felhasználható (**1** - **24**).|
 |**Képernyőkímélő bekapcsolása ennyi perc inaktivitás után**|Annak megadása, hogy a számítógépnek mennyi ideig kell inaktívnak lennie a képernyőkímélő aktiválásához.|
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
@@ -61,14 +61,13 @@ A **Szabályzatnak megfelelő &amp; nem megfelelő alkalmazások Mac OS X-es esz
 
 |Beállítás neve|Részletek|
 |----------------|---------------|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azon alkalmazások felsorolása, amelyek telepítésére a felhasználók nem jogosultak. Ha a felhasználók ezen alkalmazások bármelyikét telepítik, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**..|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azon Mac OS X-alkalmazások felsorolása, amelyek telepítésére a felhasználók jogosultak. Ha a felhasználók bármilyen más alkalmazást telepítenek, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**..|
-|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás csomagazonosítóját. **Tipp:** Az alkalmazás csomagazonosítóját az alábbi lépésekkel keresheti meg a telepített alkalmazást futtató Mac számítógépen:<ol><li>Nyissa meg az alkalmazás telepítési mappáját (például **/Applications**.)</li><li>Jelölje ki az *&lt;alkalmazásnév&gt;***.app** csomagot, és válassza a **Show Package Contents** (Csomag tartalmának megjelenítése) lehetőséget.</li><li>Nyissa meg az **Info.plist** fájl</li><li>Ellenőrizze a **CFBundleIdentifier**kulcshoz hozzárendelt értéket</li></ol>A csomagazonosító formátuma: **com.contoso.alkalmazásnév**|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azon alkalmazások felsorolása, amelyek telepítésére a felhasználók nem jogosultak. Ha a felhasználók ezen alkalmazások bármelyikét telepítik, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azon Mac OS X-alkalmazások felsorolása, amelyek telepítésére a felhasználók jogosultak. Ha a felhasználók bármilyen más alkalmazást telepítenek, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
+|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás csomagazonosítóját. **Tipp:** Az alkalmazás csomagazonosítóját az alábbi lépésekkel keresheti meg a telepített alkalmazást futtató Mac számítógépen:<ol><li>Nyissa meg az alkalmazás telepítési mappáját (például **/Applications**)</li><li>Jelölje ki az *&lt;alkalmazásnév&gt;***.app** csomagot, és válassza a **Show Package Contents** (Csomag tartalmának megjelenítése) lehetőséget.</li><li>Nyissa meg az **Info.plist** fájl</li><li>Ellenőrizze a **CFBundleIdentifier**kulcshoz hozzárendelt értéket</li></ol>A csomagazonosító formátuma: **com.contoso.alkalmazásnév**|
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és alkalmazáscsomag-azonosítót.|
 |**Szerkesztés**|A kiválasztott alkalmazás nevének, kiadójának és alkalmazáscsomag-azonosítójának szerkesztése.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
-> [!TIP]
-> Az Intune-jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](understand-microsoft-intune-operations-by-using-reports.md)..
+> [!TIP] Az Intune-jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Ha egy Mac OS X-eszköz készenléti állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg, amíg az eszköz fel nem ébred a készenléti üzemmódból.
@@ -78,9 +77,9 @@ A **szabályzatnak nem megfelelő alkalmazásokról készült jelentésben** meg
 
 #### A jelentés futtatása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Szabályzatoknak nem megfelelő alkalmazások – jelentések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Szabályzatoknak nem megfelelő alkalmazások – jelentések** elemre.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése** elemre.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
 
 ## Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban
 A Microsoft Intune **egyéni Mac OS X-konfigurációs szabályzatával** léptetheti érvénybe az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) létrehozott beállításokat a Mac OS X-eszközökön. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később egy Intune-beli egyéni Mac OS X-szabályzatba importálhatja, és a beállításokat telepítheti a szervezetben lévő felhasználók és eszközök számára.
@@ -116,7 +115,7 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 
 -   A fájl Apple Configurator eszközből történő exportálásával ( **.mobileconfig**kiterjesztéssel).
 
--   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) megfelelő sémáját használja..
+-   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html)megfelelő sémáját használja.
 
 
 > [!IMPORTANT]
@@ -127,6 +126,6 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

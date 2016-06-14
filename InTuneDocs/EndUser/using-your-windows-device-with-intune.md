@@ -42,6 +42,7 @@ Az itt olvasható információk az Intune Vállalati portál telepítésében é
 Az itt olvasható információk a Windows-eszköz Intune-beli regisztrálását követően elvégezhető műveletekhez nyújtanak segítséget.
 
 - [Az eszköz titkosítása](encrypt-your-device-windows.md)</br>
+- [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)</br>
 - [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-windows.md)</br>
 - [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ Az itt olvasható információk a Windows-eszköz Intune-beli regisztrálását 
 Az itt olvasható információk a Windows-eszköz Intune-beli regisztrálásakor előforduló hibák elhárításában nyújtanak segítséget.
 
 - [Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [Az eszközön nincs engedélyezve a BitLocker](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [Az eszközön nincs kártevőirtó szoftver engedélyezve](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [Az eszközön nincs engedélyezve a biztonságos rendszerindítás](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ Az itt olvasható információk a Windows-eszköz Intune-beli regisztrálásakor
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

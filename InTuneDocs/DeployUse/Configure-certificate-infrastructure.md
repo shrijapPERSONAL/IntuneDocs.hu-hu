@@ -47,8 +47,8 @@ A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgált
 
 -    **Active Directory-tartomány**: A jelen szakaszban felsorolt összes kiszolgálónak (a webalkalmazás-proxykiszolgáló kivételével) csatlakoznia kell a szervezet Active Directory-tartományához.
 
--  **Hitelesítésszolgáltató** (CA): Olyan vállalati hitelesítésszolgáltató (CA), amely a Windows Server 2008 R2 vagy újabb rendszer vállalati verzióján fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx)..
-    Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/)..
+-  **Hitelesítésszolgáltató** (CA): Olyan vállalati hitelesítésszolgáltató (CA), amely a Windows Server 2008 R2 vagy újabb rendszer vállalati verzióján fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx).
+    Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
 
 -  **NDES-kiszolgáló** (csak SCEP esetén): A Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkben tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására.
 -  **Egy olyan számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval** (csak PFX esetén): Másik megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
@@ -58,9 +58,9 @@ A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgált
     -  Biztonsági ajánlás olyan környezetekben, ahol az eszközök az interneten keresztül csatlakozva kapnak és újítanak meg tanúsítványokat.
 
 > [!NOTE]           
-> -    A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-ös jelű frissítésként](http://support.microsoft.com/kb/3011135)..
+> -    A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 >-  Ezenkívül a WAP-ot futtató kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
-    A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. A WAP-kiszolgálókkal kapcsolatos általános információkért lásd: [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx)..|
+A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. A WAP-kiszolgálókkal kapcsolatos általános információkért tekintse meg [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx) című témakört.
 
 
 ### Tanúsítványok és sablonok
@@ -94,8 +94,7 @@ A feladat tartalma:
 
 -   NDES szolgáltatásfiók létrehozása
 
-    > [!NOTE]
-    > A tanúsítványok visszavonásához az NDES szolgáltatásfiók a *Tanúsítványok kiállítása és kezelése* nevű jogosultságot igényli a tanúsítványprofilok által használt összes tanúsítványprofilhoz.
+    > [!NOTE] A tanúsítványok visszavonásához az NDES szolgáltatásfiók a *Tanúsítványok kiállítása és kezelése* nevű jogosultságot igényli a tanúsítványprofilok által használt összes tanúsítványprofilhoz.
 
 -   Tanúsítványsablon konfigurálása az NDES számára
 
@@ -113,17 +112,15 @@ A feladat tartalma:
 
     -   A **Tulajdonos neve** lapon válassza **A kérelem fogja tartalmazni**lehetőséget. (A biztonságot az Intune NDES-házirendmodulja fogja érvényesíteni.)
 
-    -   A **Kiterjesztések** lapon ellenőrizze, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza-e az **Ügyfél-hitelesítés** elemet..
+    -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
 
-        > [!IMPORTANT]
-        > iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és győződjön meg arról, hogy **Az aláírás az eredet igazolása** lehetőség nincs kiválasztva.
+        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és ellenőrizze, hogy **Az aláírás az eredet igazolása** lehetőség nincs-e kiválasztva.
 
     -   A **Biztonság** lapon adja hozzá az NDES szolgáltatásfiókot, és adjon meg hozzá **Regisztrálás** engedélyt a sablonhoz.
 
 3.  Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. Lehetősége van azonban arra is, hogy a hitelesítésszolgáltató konfigurálásával engedélyezze a kérelmezőnek egy másik érték megadását, amelyet aztán az Intune felügyeleti konzoljából tud megadni. Ha azt szeretné, hogy mindig a sablonban lévő érték legyen használva, hagyja ki ennek a lépésnek a hátralévő részét.
 
-    > [!IMPORTANT]
-    > Az iOS és a Mac OS X platform mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
+    > [!IMPORTANT] Az iOS és a Mac OS X platform mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
 
     Ha a hitelesítésszolgáltató konfigurálásával lehetővé kívánja tenni a kérelmezőnek az érvényességi időszak megadását, futtassa az alábbi parancsokat a hitelesítésszolgáltatón:
 
@@ -135,7 +132,7 @@ A feladat tartalma:
 
 4.  Tegye közzé a Hitelesítésszolgáltató beépülő modullal a tanúsítványsablont a vállalati hitelesítésszolgáltatón.
 
-    1.  Válassza a **Tanúsítványsablonok** csomópontot, válassza a **Művelet**-&gt; **Új** &gt; **Kiállítandó tanúsítványsablon** lehetőséget, és válassza ki a 2. lépésben létrehozott sablont.
+    1.  Válassza a **Tanúsítványsablonok** csomópontot, kattintson a **Művelet**-&gt; **Új** &gt; **Kiállítandó tanúsítványsablon** lehetőségre, majd válassza ki a 2. lépésben létrehozott sablont.
 
     2.  Ellenőrizze a **Tanúsítványsablonok** mappában, hogy a sablon közzététele sikerült-e.
 
@@ -163,19 +160,19 @@ A feladat tartalma:
 
         -   **Webkiszolgáló** &gt; **Biztonság** &gt; **Kérelemszűrés**
 
-        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 3.5**. Az ASP.NET 3.5 telepítése telepíti a .NET-keretrendszer 3.5-öt is. A .NET-keretrendszer 3.5 telepítésekor a **.NET-keretrendszer 3.5** alapszolgáltatásai mellett telepítse a **HTTP-aktiválás**szolgáltatást is..
+        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 3.5**. Az ASP.NET 3.5 telepítése telepíti a .NET-keretrendszer 3.5-öt is. A .NET-keretrendszer 3.5 telepítésekor a **.NET-keretrendszer 3.5** alapszolgáltatásai mellett telepítse a **HTTP-aktiválás**szolgáltatást is.
 
         -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 4.5**. Az ASP.NET 4.5 telepítése a .NET-keretrendszer 4.5-ös verzióját is telepíti. A .NET-keretrendszer 4.5 telepítésekor a **.NET-keretrendszer 4.5** alapszolgáltatásai mellett telepítse az **ASP.NET 4.5** és a **WCF-szolgáltatások** &gt; **HTTP-aktiválás** szolgáltatást is.
 
         -   **Felügyeleti eszközök** &gt; **Kompatibilitás az IIS 6 kezelésével** &gt; **Kompatibilitás az IIS 6 metabázisával**
 
-        -   **Felügyeleti eszközök** &gt; **Kompatibilitás az IIS 6 kezelésével** &gt; **IIS 6 WMI kompatibilitási mód**
+        -   **Felügyeleti eszközök** &gt; **Kompatibilitás az IIS 6 kezelésével** &gt; **Kompatibilitás az IIS 6 WMI-vel**
 
 2.  Vegye fel a kiszolgálón az NDES szolgáltatásfiókot az **IIS_IUSR** csoport tagjaként.
 
 3.  Futtassa az alábbi parancsot az NDES szolgáltatásfiók egyszerű szolgáltatásnevének beállításához:
 
-    -   **setspn -s http/&lt;NDES-kiszolgáló DNS-neve&gt; &lt;Tartománynév&gt;\&lt;<NDES-szolgáltatásfiók neve&gt;**
+    -   **setspn -s http/&lt;NDES-kiszolgáló DNS-neve&gt; &lt;Tartománynév&gt;\&lt;NDES-szolgáltatásfiók neve&gt;**
 
     Ha például az NDES kiszolgáló neve **Kiszolgalo01**, a tartomány **Contoso.com**és a szolgáltatásfiók **NDESSzolgaltatas**, akkor az alábbi parancsot kell használnia:
 
@@ -197,7 +194,7 @@ A feladat tartalma:
     > [!TIP]
     > Ha az előző feladatban rákattintott a hivatkozásra, akkor ez a varázsló már meg van nyitva. Ellenkező esetben nyissa meg a Kiszolgálókezelőt az Active Directory tanúsítványszolgáltatások telepítés utáni konfigurációjának eléréséhez.
 
-    -   A **Szerepkör-szolgáltatások** lapon válassza a **Hálózati eszközök tanúsítványigénylési szolgáltatása** lehetőséget..
+    -   A **Szerepkör-szolgáltatások** lapon válassza a **Hálózati eszközök tanúsítványigénylési szolgáltatása**lehetőséget.
 
     -   A **Hálózati eszközök tanúsítványigénylési szolgáltatásának szolgáltatásfiókja** lapon adja meg az NDES szolgáltatásfiókot.
 
@@ -235,20 +232,19 @@ A feladat tartalma:
 
     3.  Az **SSL-tanúsítvány**beállításnál adja meg a kiszolgálóhitelesítő tanúsítványt.
 
-        > [!NOTE]
-        > Ha az NDES-kiszolgáló külső és belső nevet is használ egyetlen hálózati címhez, akkor a kiszolgálóhitelesítő tanúsítvány **Tulajdonos neve** beállításának egy külső nyilvános kiszolgálónevet, a **Tulajdonos alternatív neve** beállításának pedig egy belső kiszolgálónevet kell tartalmaznia.
+        > [!NOTE] Ha az NDES-kiszolgáló külső és belső nevet is használ egyetlen hálózati címhez, akkor a kiszolgálóhitelesítő tanúsítvány **Tulajdonos neve** beállításának egy külső nyilvános kiszolgálónevet, a **Tulajdonos alternatív neve** beállításának pedig egy belső kiszolgálónevet kell tartalmaznia.
 
 2.  Kérelmezzen a belső vagy a nyilvános hitelesítésszolgáltatótól egy **ügyfél-hitelesítő** tanúsítványt, és telepítse az NDES-kiszolgálón. Ez lehet ugyanaz, mint a kiszolgálóhitelesítő tanúsítvány, ha a tanúsítvány mindkét használati módra fel van készítve.
 
     Az ügyfél-hitelesítő tanúsítványnak az alábbi tulajdonságokkal kell rendelkeznie:
 
-    **Kibővített kulcshasználat** – Tartalmaznia kell az **Ügyfél-hitelesítés** szolgáltatást..
+    **Kibővített kulcshasználat** – Tartalmaznia kell az **Ügyfél-hitelesítés** szolgáltatást.
 
     **Tulajdonos neve** – Meg kell egyeznie annak a kiszolgálónak a DNS-nevével, amelyen a tanúsítványt telepítette (ez az NDES-kiszolgáló).
 
 ##### A kérelmek szűrésének IIS-ben való konfigurálásához
 
-1.  Nyissa meg az NDES-kiszolgálón az **IIS-kezelőt**, válassza az **Alapértelmezett webhely** lehetőséget a **Kapcsolatok** ablaktáblán, és nyissa meg a **Kérelmek szűrése** beállítást..
+1.  Nyissa meg az NDES-kiszolgálón az **IIS-kezelőt**, válassza az **Alapértelmezett webhely** lehetőséget a **Kapcsolatok** ablaktáblán, és nyissa meg a **Kérelmek szűrése**beállítást.
 
 2.  Kattintson a **Szolgáltatás beállításainak szerkesztése**lehetőségre, és adja meg a következőket:
 
@@ -277,19 +273,19 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 ##### A tanúsítvány-összekötő támogatásának engedélyezéséhez
 
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és válassza a **Rendszergazda** &gt; **Tanúsítvány-összekötő** lehetőséget..
+1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és válassza a **Felügyelet** &gt; **Tanúsítvány-összekötő** lehetőséget.
 
-2.  Kattintson a **Helyszíni tanúsítvány-összekötő konfigurálása** elemre..
+2.  Kattintson a **Helyszíni tanúsítvány-összekötő konfigurálása** elemre.
 
-3.  Válassza a **Tanúsítvány-összekötő engedélyezése** lehetőséget, és kattintson az **OK** gombra..
+3.  Válassza az **Enable Certificate Connector**(Certificate Connector engedélyezése) lehetőséget, és kattintson az **OK**gombra.
 
 ##### A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálásához
 
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Rendszergazda** &gt; **Mobileszköz-kezelés** &gt; **Tanúsítvány-összekötő** &gt; **Tanúsítvány-összekötő letöltése** lehetőségre..
+1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Tanúsítvány-összekötő** &gt; **Tanúsítvány-összekötő letöltése** lehetőségre.
 
 2.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**):
 
-    -   .PFX-tanúsítványok esetén azon a számítógépen futtassa a telepítőt, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) témakörben leírtaknak megfelelően..
+    -   .PFX-tanúsítványok esetén azon a számítógépen futtassa a telepítőt, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) című témakörben leírtaknak megfelelően.
 
     -   SCEP-tanúsítványok esetén a telepítőt futtassa egy Windows Server 2012 R2-kiszolgálón
 
@@ -300,12 +296,11 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 3.  Ha a rendszer kéri az ügyféltanúsítványt a tanúsítvány-összekötőhöz, válassza a **Kijelölés**lehetőséget, és válassza ki az **ügyfél-hitelesítő** tanúsítványt, amelyet a 3. feladatban telepített az NDES-kiszolgálóra.
 
-    Miután kiválasztotta az ügyfél-hitelesítési tanúsítványt, a rendszer visszairányítja az **Client Certificate for Microsoft Intune Certificate Connector** (Ügyféltanúsítvány a Microsoft Intune Certificate Connectorhoz) felületre. Bár a választott tanúsítvány nem látható, kattintson a **Tovább** gombra a tanúsítvány tulajdonságainak megtekintéséhez. Ezután kattintson ismét a **Tovább** gombra, majd a **Telepítés** gombra..
+    Miután kiválasztotta az ügyfél-hitelesítési tanúsítványt, a rendszer visszairányítja az **Client Certificate for Microsoft Intune Certificate Connector** (Ügyféltanúsítvány a Microsoft Intune Certificate Connectorhoz) felületre. Bár a választott tanúsítvány nem látható, kattintson a **Tovább** gombra a tanúsítvány tulajdonságainak megtekintéséhez. Ezután kattintson ismét a **Tovább**gombra, majd a **Telepítés**gombra.
 
-4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson a **Launch the Certificate Connector UI** (A Tanúsítvány-összekötő felhasználói felületének indítása) lehetőségre..
+4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
-    > [!TIP]
-    > Ha bezárná a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, akkor az alábbi parancs futtatásával nyithatja meg:
+    > [!TIP] Ha bezárta volna a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, az alábbi parancs futtatásával újra megnyithatja:
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -315,20 +310,20 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
     Ha a szervezet proxykiszolgálót használ, és proxy szükséges ahhoz, hogy az NDES-kiszolgáló el tudja érni az internetet, kattintson a **Proxykiszolgáló használata** lehetőségre, és adja meg a proxykiszolgáló nevét és portját, illetve a csatlakozáshoz szükséges fiókadatokat.
 
-    Váltson a **Speciális** lapra, adja meg egy olyan fiók hitelesítő adatait, amely rendelkezik **Tanúsítványok kiállítása és kezelése** engedéllyel a vállalati hitelesítésszolgáltatónál, majd kattintson az **Alkalmaz** gombra..
+    Váltson a **Speciális** lapra, adja meg egy olyan fiók hitelesítő adatait, amely rendelkezik **Tanúsítványok kiállítása és kezelése** engedéllyel a vállalati hitelesítésszolgáltatónál, majd kattintson az **Alkalmaz**gombra.
 
     Bezárhatja a tanúsítvány-összekötő felhasználói felületét.
 
-6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja meg az **Enter** billentyűt, kattintson a jobb gombbal a **Certificate Connector Service** (Certificate Connector szolgáltatás) elemre, és válassza az **Újraindítás** parancsot..
+6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja le az **Enter** billentyűt, kattintson a jobb gombbal az **	Intune-összekötő szolgáltatás** elemre, és válassza az **Újraindítás** parancsot.
 
 A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és írja be az alábbi URL-t, melynek egy **403-as** hibát kell visszaadnia:
 
 **http:// &lt;NDES-kiszolgáló_teljes_tartományneve&gt;/certsrv/mscep/mscep.dll**
 
 ### További lépések
-Ezzel készen áll a tanúsítványprofilok konfigurálására, amelyről a következő témakörben olvashat: [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md)..
+Ezzel készen áll a tanúsítványprofilok konfigurálására, amelyről a következő témakörben olvashat: [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

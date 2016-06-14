@@ -28,18 +28,17 @@ ms.suite: ems
 
 # Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)
 
-Ha telefonja elveszett vagy ellopták, Vállalati portál alkalmazásból vagy webhelyről visszaállíthatja rajta a gyári beállításokat. A Vállalati portál alkalmazás használatával kapcsolatos útmutatást a következő lépésekben vagy ebben a [videóban](http://aka.ms/ly1x17) talál. A [Vállalati portál webhely segítségével is alaphelyzetbe állíthatja az eszközt](reset-your-device-cpwebsite.md)..
+Ha androidos telefonja elveszett vagy ellopták, a Vállalati portál alkalmazásból vagy webhelyről visszaállíthatja rajta a gyári beállításokat. A Vállalati portál alkalmazás használatával kapcsolatos útmutatást a következő lépésekben vagy ebben a [videóban](http://aka.ms/ly1x17) talál. A [Vállalati portál webhely segítségével is alaphelyzetbe állíthatja az eszközt](reset-your-device-cpwebsite.md).
 
-Az eszköz alaphelyzetbe állításakor történtekkel kapcsolatos további információkért lásd: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)..
+Ha szeretné megtudni, hogy mi történik, ha alaphelyzetbe állítja az eszközét, olvassa el a következő cikket: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
-> A gyári beállítások visszaállításával a telefonról törlődnek mind a személyes, mind a munkahelyi adatai.
+> [!WARNING] A gyári beállítások visszaállítása törli a telefonról a személyes és munkahelyi adatokat.
 
 1.  A böngészőben nyissa meg a [Vállalati portál webhelyét](http://portal.manage.microsoft.com), és jelentkezzen be munkahelyi fiókjába.
 
 2.  Koppintson a **Saját eszközök** elemre, és válassza ki az elveszett vagy ellopott eszköz nevét.
 
-3.  Kattintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzet** elemre..
+3.  Kattintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 
 Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe.
 
@@ -48,6 +47,6 @@ Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

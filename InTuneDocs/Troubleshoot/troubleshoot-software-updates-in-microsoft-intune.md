@@ -30,7 +30,7 @@ Az ebben a részben ismertetett információk segítséget nyújtanak a Microsof
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
-A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. Ha nem talál meg egy adott hibakódot a táblázatban, lásd: [A Windows Update ügynök eredménykódjai](http://go.microsoft.com/fwlink/?LinkID=221542)..
+A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. Ha nem talál meg egy adott hibakódot a táblázatban, lásd: [A Windows Update ügynök eredménykódjai](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Hibakód|Szimbolikus név|További információ|
 |--------------|-----------------|--------------------|
@@ -264,10 +264,10 @@ Ezt a problémát az okozhatja, ha a felülírt frissítéseket (vagyis azokat a
 Ha Windows 7 rendszert használ, ezenfelül ellenőrizze, hogy telepítette-e a következő frissítést:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
 
 ### További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint..
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -45,7 +45,7 @@ Az üzenet arra kéri a felhasználót, hogy engedélyezze eszköze telefonszám
 > [!NOTE]
 > **A Munkahelyi portál alkalmazás soha nem indít telefonhívásokat, és nem is kezeli azokat.** Az üzenet szövegét a Google szabja meg, és nem módosítható.
 
-A **Hardver** lap megnyitásához válassza a **Csoportok** > **Minden mobileszköz** > **Eszközök** lehetőséget. Jelölje ki a felhasználó eszközét, és válassza a **Tulajdonságok megjelenítése** > **Hardver** lehetőséget..
+A **Hardver** lap megnyitásához válassza a **Csoportok** > **Minden mobileszköz** > **Eszközök** lehetőséget. Jelölje ki a felhasználó eszközét, majd válassza a **Tulajdonságok megjelenítése** > **Hardver** lehetőséget.
 
 ### Ez történik, ha a felhasználó engedélyezi vagy nem engedélyezi a hozzáférést
 Ha a felhasználó engedélyezi a hozzáférést, az eszköz telefonszáma és IMEI-száma megjelenik a felügyeleti konzol Hardver lapján.
@@ -55,7 +55,7 @@ Ha a felhasználó nem engedélyezi a hozzáférést, attól továbbra is haszn�
 Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja azt, az üzenet újból megjelenik, amikor a felhasználó a regisztrálást követően először bejelentkezik a Vállalati portál alkalmazásba.</br></br>Amennyiben a felhasználó később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Telefon** lapon teheti ezt meg.
 
 ### További információ biztosítása a felhasználónak
-[Bejelentkezés a Vállalati portál alkalmazásba](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+5 .lépés a következőben: [Android-eszköz regisztrálása az Intune-ban](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)
 
@@ -83,6 +83,6 @@ Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentke
 [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

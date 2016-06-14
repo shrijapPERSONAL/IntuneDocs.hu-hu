@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Eszközök védelme a Microsoft Intune-nal | Microsoft Intune
+title: Eszközök védelme | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -41,9 +41,9 @@ A[többtényezős hitelesítés (MFA)](protect-windows-devices-with-multi-factor
 Az Intune lehetővé teszi az integrációt a [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) nevű, a Windows 10-ben vagy későbbi verzióban használható alternatív bejelentkezési módszer alkalmazását. Ez az Active Directoryt vagy az Azure Active Directory egy fiókját használja jelszó, intelligens kártya vagy virtuális intelligens kártya helyett.
 
 ## Intune ügyfélprogram által felügyelt Windows rendszerű számítógépek védelme
-Az Intune továbbra is támogatja az olyan Windows rendszerű számítógépek védelmét, amelyek nincsenek regisztrálva, de felügyeletüket az Intune ügyfélszoftvere biztosítja. Ha szeretné tudni, hogyan segítik ezek a szabályzatok a Windows rendszerű számítógépek védelmét, a [ Szabályzatok használata az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md) című témakörből tájékozódhat..
+Az Intune továbbra is támogatja az olyan Windows rendszerű számítógépek védelmét, amelyek nincsenek regisztrálva, de felügyeletüket az Intune ügyfélszoftvere biztosítja. Ha szeretné tudni, hogyan segítik ezek a szabályzatok a Windows rendszerű számítógépek védelmét, a [ Szabályzatok használata az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md) című témakörből tájékozódhat.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

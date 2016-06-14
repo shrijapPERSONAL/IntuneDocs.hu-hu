@@ -61,10 +61,11 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 
 -   **Szükséges telepítés** – az alkalmazás végfelhasználói beavatkozás nélkül települ az eszközön.
 
-    > [!TIP]
-    > Nem felügyelt üzemmódban működő IOS-eszközök és az összes Android-eszköz esetén az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
+    > [!TIP] Nem felügyelt üzemmódban működő IOS-eszközök és az összes Android-eszköz esetében az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
     >
     > Az iOS 7.1-es verziójánál régebbi rendszerű iOS-eszközökhöz már nem készíthetők új alkalmazáspéldányok. Az iOS 7.1-es verziójánál korábbi rendszerű eszközökhöz készült meglévő alkalmazáspéldányok azonban továbbra is működnek az Intune-ban, és az Intune felügyeli őket.
+    > 
+    >  Ha egy végfelhasználó Ön által kötelezőnek jelölt alkalmazást töröl, az Intune a következő leltározási ciklus során (amely általában 7 naponta következik be) automatikusan újratelepíti az alkalmazást.
 
 -   **Elérhető telepítés** – az alkalmazás megjelenik a vállalati portálon, és a végfelhasználók igény szerint telepíthetik.
 
@@ -86,8 +87,7 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 |Külső hivatkozás (eszközcsoport számára telepített)|Nem|Nem|Nem|Nem|
 |Felügyelt iOS-alkalmazás az App Store-ból (felhasználói csoport számára telepített)|Igen|Igen|Igen|Igen|
 |Felügyelt iOS-alkalmazás az App Store-ból (eszközcsoport számára telepített)|Igen|Nem|Igen|Igen|
-> [!TIP]
-> Ha az alkalmazás telepítése során felhasználói és eszközcsoportokat egyaránt megad, az alkalmazást csak **Elérhető telepítés** módban telepítheti..
+> [!TIP] Ha az alkalmazás telepítése során felhasználói és eszközcsoportokat egyaránt megad, az alkalmazást csak **Elérhető telepítés módban** telepítheti.
 
 ## A telepítés során fellépő ütközések
 Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik egy eszközre, az alábbi szabályok vonatkoznak:
@@ -103,8 +103,8 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 
 ## További lépések
 
-Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md)..
+Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ Az itt olvasható információk az Intune Vállalati portál telepítésében é
 Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálását követően elvégezhető műveletekhez nyújtanak segítséget.
 
 - [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)</br>
+- [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)</br>
 - [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

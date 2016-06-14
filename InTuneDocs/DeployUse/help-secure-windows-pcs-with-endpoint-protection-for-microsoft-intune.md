@@ -28,7 +28,7 @@ ms.suite: ems
 # Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással
 A Microsoft Intune-nal számos módon biztonságossá teheti a kezelt számítógépeket, beleértve az Endpoint Protectiont, amely valós idejű védelmet biztosít a veszélyes kártevők ellen, naprakészen tartja a kártevő-definíciókat, valamint automatikus vizsgálatokat végez a számítógépeken. Az Endpoint Protection olyan eszközöket is biztosít, amelyek segítenek kezelni és megfigyelni a kártékony programok támadásait.
 
-Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről..
+Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
 
 Az alábbi szakaszokban található információk segítségével konfigurálhatja, telepítheti és figyelheti az Endpoint Protection szolgáltatást.
 
@@ -48,17 +48,16 @@ Az aktuálisan használt végpontvédelmi alkalmazásról a Microsoft Intune End
 
 3.  Távolítsa el a külső gyártó végpontvédelmi szoftverét a következőképpen:
 
-    -   Az Intune szoftverterjesztés használatával telepítse a külső végpontvédelmi alkalmazás gyártója által biztosított szoftvereltávolító eszközt. További információ: [Alkalmazások központi telepítése a Microsoft Intune-nal](deploy-apps.md)..
+    -   Az Intune szoftverterjesztés használatával telepítse a külső végpontvédelmi alkalmazás gyártója által biztosított szoftvereltávolító eszközt. További információk: [Alkalmazások központi telepítése a Microsoft Intune-nal](deploy-apps.md).
 
     -   A külső gyártótól származó végpontvédelmi alkalmazás manuális eltávolításával.
 
-> [!NOTE]
-> Az Intune nem végzi el automatikusan a külső gyártótól származó végpontvédelmi alkalmazások eltávolítását.
+> [!NOTE] Az Intune nem végzi el automatikusan a külső gyártótól származó végpontvédelmi alkalmazások eltávolítását.
 
 ## A Microsoft Intune Endpoint Protection konfigurálása
 A Microsoft Intune Endpoint Protection konfigurálásához hajtsa végre a következő lépéseket.
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com/) kattintson a **Házirend** > **Házirend hozzáadása** elemre..
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com/) kattintson a **Házirend ** > **Házirend hozzáadása** elemre.
 
 2.  Bontsa ki a **Számítógép-kezelés** elemet, és válassza ki **A Microsoft Intune-ügynök beállításai** elemet. Válassza az **Egyéni házirend létrehozása és központi telepítése** lehetőséget az Endpoint Protection-beállítások házirendjének megadásához, majd kattintson a **Házirend létrehozása** gombra. Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. Ha a házirendek létrehozásával és alkalmazásával kapcsolatban további tudnivalókra van szüksége, [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) című témakörben olvashat erről bővebben.
 
@@ -70,7 +69,7 @@ Az alkalmazott Endpoint Protection-házirendet a **Házirend** munkaterület **M
 
 |Házirend-beállítás|Részletek|
 |------------------|--------------------|
-|**Endpoint Protection telepítése**|Állítsa az **Igen** értékre, ha telepíteni szeretné az Endpoint Protectiont a kezelt számítógépekre. Ha a telepítés során a rendszer egy külső gyártótól származó végpontvédelmi alkalmazást észlel, az Endpoint Protection nem lesz telepítve, kivéve, ha **Az Endpoint Protection telepítése, akkor is, ha már van telepítve harmadik féltől származó végpontvédelmi alkalmazás** beállítás értéke **Igen**. **Megjegyzés:** Az Intune Endpoint Protection automatikusan telepítve van a kezelt számítógépeken. Ha nem szeretné, hogy a kezelt számítógépeken telepítve legyen az Endpoint Protection szolgáltatás, explicit módon a **Nem** értékre kell állítania ezt a házirend-beállítást. Ha az Endpoint Protection korábban telepítve lett, és a házirendet a **Nem** értékre módosítja, akkor a rendszer eltávolítja az Endpoint Protection szolgáltatást.<br />Javasolt érték: **Igen**|
+|**Endpoint Protection telepítése**|Állítsa az **Igen** értékre, ha telepíteni szeretné az Endpoint Protectiont a kezelt számítógépekre. Ha a telepítés során a rendszer egy külső gyártótól származó végpontvédelmi alkalmazást észlel, nem telepíti az Endpoint Protection alkalmazást, kivéve, ha **Az Endpoint Protection telepítése, akkor is, ha már van telepítve harmadik féltől származó végpontvédelmi alkalmazás** beállításnál az **Igen** értéket adták meg. **Megjegyzés:** A rendszer alapértelmezés szerint telepíti az Intune Endpoint Protection szolgáltatást a felügyelt számítógépekre. Ha nem szeretné, hogy a kezelt számítógépeken telepítve legyen az Endpoint Protection szolgáltatás, explicit módon a **Nem** értékre kell állítania ezt a házirend-beállítást. Ha az Endpoint Protection korábban telepítve lett, és a házirendet a **Nem** értékre módosítja, akkor a rendszer eltávolítja az Endpoint Protection szolgáltatást.<br />Javasolt érték: **Igen**|
 |**Az Endpoint Protection telepítése akkor is, ha egy külső gyártó végpontvédelmi alkalmazása telepítve van**|Válassza az **Igen** értéket, ha a Microsoft Intune Endpoint Protection szolgáltatást akkor is telepíteni szeretné, ha a rendszer külső gyártó végpontvédelmi alkalmazását észleli.<br /><br />Javasolt érték: **Igen**|
 |**Endpoint Protection engedélyezése**|Állítsa **Igen** értékűre a Microsoft Intune Endpoint Protection engedélyezéséhez az Endpoint Protection-ügyféllel rendelkező számítógépeken.<br /><br />Ha a **Nem** értékre van állítva, és a Microsoft Intune Endpoint Protection telepítve van, az Endpoint Protection-ügyfél felhasználói felülete nem jelenik meg a felhasználók számára, és minden védelmi szolgáltatás inaktív.<br /><br />Javasolt érték: **Igen**|
 |**Ügyfél felhasználói felületének letiltása**|Állítsa az **Igen** értékre a Microsoft Intune Endpoint Protection-ügyfél felhasználói felületének a felhasználók elől való elrejtéséhez (az érvénybe lépéséhez az ügyfélszámítógép újraindítása szükséges).<br /><br />Javasolt érték: **Nem**|
@@ -128,7 +127,7 @@ Az **Adja meg, hogy az Endpoint Protection hogyan kezelje az alábbi riasztási 
 
 ### A kizárt folyamatok beállításai
 
-**A valós idejű védelem által és a teljes ellenőrzések végrehajtásakor figyelmen kívül hagyott folyamatok** beállítással kizárhat meghatározott folyamatokat, amikor vizsgálatot futtat vagy valós idejű védelmet használ. Csak a következő kiterjesztésű fájlokat lehet kizárni: **.exe**, **.com** vagy **.scr**..
+**A valós idejű védelem által és a teljes ellenőrzések végrehajtásakor figyelmen kívül hagyott folyamatok** beállítással kizárhat meghatározott folyamatokat, amikor vizsgálatot futtat vagy valós idejű védelmet használ. Csak a következő kiterjesztésű fájlokat lehet kizárni: **.exe**, **.com** vagy **.scr**.
 
 ### A kizárt fájltípusok beállításai
 
@@ -139,16 +138,16 @@ A Microsoft Active Protection Service egy online közösség, amely segít eldö
   - **Alapszintű** – alapvető adatok küldése a Microsoftnak az észlelt kártevőkkel kapcsolatban. Ez magában foglalja a szoftver származási helyét, az alkalmazott, illetve az Endpoint Protection által automatikusan alkalmazott műveleteket, valamint azt, hogy sikeresek voltak-e a műveletek.
   - **Speciális** – több adat küldése a Microsoftnak a kártevőkkel, kémprogramokkal és vélhetően nemkívánatos szoftverekkel kapcsolatban. Ez magába foglalja a szoftverek helyét, a fájlneveket, valamint hogy a szoftverek hogyan működnek és milyen hatással vannak a számítógépre.
 
-Ezenkívül bekapcsolhatja a **Microsoft Active Protection Service-jelentéseken alapuló dinamikus definíciók fogadása** beállítást is..
+Ezenkívül bekapcsolhatja a **Microsoft Active Protection Service-jelentéseken alapuló dinamikus definíciók fogadása** beállítást is.
 
 ## Az Endpoint Protection szolgáltatás kezelési feladatai
 A következő műveletekkel különböző kezelési feladatokat hajthat végre az Endpoint Protection szolgáltatást futtató kezelt számítógépeken.
  - Kártevő-definíciók frissítése
-  - Intune konzol – A **Csoportok** munkaterületen jelölje ki a frissíteni kívánt számítógépeket. Kattintson a **Távoli feladatok** &gt; **Kártevő-definíciók frissítése** elemre..
-  - Felügyelt számítógép – Indítsa el a végpontvédelmi ügyfélszoftvert a Windows értesítési területéről. Kattintson a **Frissítés** lapra, majd a **Frissítés** parancsra..
+  - Intune konzol – A **Csoportok** munkaterületen jelölje ki a frissíteni kívánt számítógépeket. Kattintson a **Távoli feladatok** &gt; **Kártevőszoftver-leírások frissítése** elemre.
+  - Felügyelt számítógép – Indítsa el a végpontvédelmi ügyfélszoftvert a Windows értesítési területéről. Kattintson a **Frissítés** lapra, majd a **Frissítés**parancsra.
  - Kártevő-ellenőrzés futtatása
-  - Intune konzol – A **Csoportok** munkaterületen jelölje ki az ellenőrizni kívánt számítógépeket. Kattintson a **Teljes kártevő-ellenőrzés futtatása** vagy a **Gyors kártevő-ellenőrzés futtatása** elemre..
-  - Felügyelt számítógép – Indítsa el a végpontvédelmi ügyfélszoftvert a Windows értesítési területéről. Válassza a **Gyors**, a **Teljes** vagy az **Egyéni** lehetőséget, majd kattintson a **Vizsgálat** gombra..
+  - Intune konzol – A **Csoportok** munkaterületen jelölje ki az ellenőrizni kívánt számítógépeket. Kattintson a **Teljes kártevőellenőrzés futtatása** vagy a **Gyors kártevőellenőrzés futtatása**lehetőségre.
+  - Felügyelt számítógép – Indítsa el a végpontvédelmi ügyfélszoftvert a Windows értesítési területéről. Válassza a **Gyors**, a **Teljes**, vagy az **Egyéni**lehetőséget, majd kattintson a **Vizsgálat**gombra.
 
 Az Intune-konzol jobb alsó sarkában található **Távoli feladatok** hivatkozásra kattintva megtekintheti a távoli feladatok állapotát. A **Távoli feladatok állapota** párbeszédpanelen az aktuális távoli feladatok, a feladatok állapota, az eszközök nevei és az esetlegesen jelzett hibák láthatók, illetve ahol lehetséges, egy hibaelhárítási információkra mutató hivatkozás is megjelenik.
 
@@ -163,27 +162,36 @@ A **Microsoft Intune felügyeleti konzol** [Védelem](https://manage.microsoft.c
   - **Tulajdonságok megtekintése** – a kijelölt kártevő további adatait tartalmazó oldal megnyitása.
   - **További tudnivalók erről a kártevő szoftverről** – a Microsoft kártevőkezelési központ a kártevővel kapcsolatos további információkat tartalmazó témakörének megnyitása.
 
-> [!IMPORTANT]
-> A **Védelem** munkaterület addig nem jelenik meg a felügyeleti konzolon, amíg nem telepíti az ügyfelet legalább egy számítógépen, és nem kezdi meg annak kezelését.
+> [!IMPORTANT]A **Védelem** munkaterület addig nem jelenik meg a felügyeleti konzolon, amíg nem telepíti az ügyfelet legalább egy számítógépen, és nem kezdi meg annak kezelését.
 
   ![Az Endpoint Protection figyelése](./media/pol-sa-ep-monitor.png)
 
 ### A kártevők legutóbbi észlelési útvonalainak megtekintése számítógépen
 Az Intune meg tudja jeleníteni az eszközökön észlelt 10 legutóbbi kártevőpéldány útvonalát. A **Legutóbbi észlelési útvonal** alapértelmezés szerint le van tiltva. A nézet engedélyezése:
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Csoportok** > **Minden eszköz** . **Kártevő** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Csoportok** > **Minden eszköz** elemre. **Kártevő**.
 
 2.  Kattintson a jobb gombbal egy oszlopfejlécre. Megjelenik az elérhető oszlopok listája.
 
 3.  Jelölje be a lista **Legutóbbi észlelési útvonalak** jelölőnégyzetét. Megjelenik a **Legutóbbi észlelési útvonalak** oszlop és megjeleníti az eszközön megfigyelt legfeljebb 10 legutóbbi kártevőpéldányt.
 
+## Kártevő-ellenőrzés futtatása, vagy a számítógép kártevőszoftver-leírásainak frissítése
+Az Intune az Endpoint Protection vagy a Windows Defender használatával teljes vagy gyors kártevő-ellenőrzést is képes futtatni azokon a távoli felügyelt számítógépeken, amelyeken az Intune-ügyfél telepítve van.
+
+1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) lépjen a **Csoportok** > **Áttekintés** > **Minden eszköz** > **Minden számítógép** elemre, és jelölje ki a célozni kívánt számítógépet.
+
+2. Kattintson a **Távoli feladatok** legördülő listára, és válassza ki a feladatot. A távoli számítógépen futtatandó feladat:
+![Távoli kártevő-ellenőrzés futtatása](../media/ep_sa_malwarescan.png)
+
+
+
 ## További segítségre van szüksége?
-További segítség és támogatás: [Az Endpoint Protection hibáinak elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)..
+További segítség és támogatás: [Az Endpoint Protection hibáinak elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
 ### Lásd még:
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

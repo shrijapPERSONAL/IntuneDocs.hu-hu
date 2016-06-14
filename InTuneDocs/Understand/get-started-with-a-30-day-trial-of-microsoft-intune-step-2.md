@@ -37,7 +37,7 @@ Az Intune felügyeleti konzolján megtekintheti a bérlői rendszergazda adatait
 ## Felhasználói fiókok egyesével történő hozzáadása
 Az alábbi lépéseket követve adhat hozzá további felhasználói fiókokat próbaverziós bérlői fiókjához. A rendszer minden hozzáadott felhasználói fiókot az Intune ingyenes próbaverziójának részeként rendelkezésre álló 100 licencből von le.
 
-1.  AZ [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/p/?LinkId=698854) válassza a **Felhasználó hozzáadása** &gt; **Új**&gt; **Felhasználó** elemet az **Új felhasználók** varázsló elindításához.
+1.  AZ [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkID=787455) válassza a **Felhasználó hozzáadása** &gt; **Új**&gt; **Felhasználó** elemet az **Új felhasználók** varázsló elindításához.
 
 2.  A **Rrészletek** lapon töltse ki a kötelező mezőket.
 
@@ -51,14 +51,14 @@ Az alábbi lépéseket követve adhat hozzá további felhasználói fiókokat p
 
 7.  Ha az új felhasználó megjelenik az Office 365 felügyeleti konzoljában, ellenőrizze, hogy az új felhasználó létrehozása sikeres volt-e:
 
-    1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Felügyelet** &gt; **Vállalati portál** elemre, és görgessen a képernyő aljára. Másolja a **Munkahelyi Intune-portál** mezőben látható URL-címet..
+    1.  Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Vállalati portál** elemet, majd görgessen a képernyő aljára. Másolja a **Munkahelyi Intune-portál** mezőben látható URL-címet.
 
     2.  Nyisson új böngészőablakot „adatvédelmi üzemmódban” (az Internet Explorerben kattintson az **Eszközök** &gt; **InPrivate-böngészés** parancsra), vagy nyisson új böngészőablakot egy másik eszközön, és navigáljon arra az URL-címre, amelyet az előző lépésben a vágólapra másolt. Amikor a felhasználók első alkalommal jelentkeznek be, meg kell adniuk egy új jelszót a fiókhoz.
 
 ## Több felhasználó hozzáadása egyszerre
-Egyszerre több felhasználót is hozzáadhat az Intune-ban. Ehhez a **Felhasználók tömeges hozzáadása** varázslóban fel kell töltenie egy felhasználói adatokat tartalmazó CSV-fájlt. A varázslóban található hivatkozások segítségével letölthet egy üres sablont és egy CSV-mintafájlt. A CSV-fájl első sorának a felhasználói adatok oszlopainak megfelelő sorrendben megadott feliratait kell tartalmaznia. Ezután minden, a CSV-fájlban szereplő felhasználó esetében meg kell adni a **felhasználónevet** (például **tibor@contoso.com**) és a **megjelenítendő nevet** (például **Lukács Tibor**).).
+Egyszerre több felhasználót is hozzáadhat az Intune-ban. Ehhez a **Felhasználók tömeges hozzáadása** varázslóban fel kell töltenie egy felhasználói adatokat tartalmazó CSV-fájlt. A varázslóban található hivatkozások segítségével letölthet egy üres sablont és egy CSV-mintafájlt. A CSV-fájl első sorának a felhasználói adatok oszlopainak megfelelő sorrendben megadott feliratait kell tartalmaznia. Ezután a CSV-fájlban szereplő minden felhasználó esetében meg kell adni a **felhasználónevet** (például **tibor@contoso.com**) és a **megjelenítendő nevet** (például **Lukács Tibor**).
 
-1.  Az [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/p/?LinkId=698854) válassza a **Felhasználók** &gt; **Új** elemet..
+1.  Az [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkID=787455) válassza a **Felhasználók** &gt; **Új** elemet.
 
 2.  Válassza a **Tömeges hozzáadás** elemet a Felhasználók tömeges hozzáadása varázsló elindításához.
 
@@ -84,6 +84,6 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 2. l
 >[&larr; **Regisztrálás próbaverzióra**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Csoportok létrehozása** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

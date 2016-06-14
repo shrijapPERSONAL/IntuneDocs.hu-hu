@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Az eszköz regisztrációjának törlése az Intune-ból
 
-Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt.   Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt. Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információkért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Az eszköz regisztrációjának törléséhez kövesse a használt eszköznek megfelelő lépéseket:
+Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tartalma” résznél látható hivatkozások közül azt, amely megfelel az Ön által használt eszköz típusának:
 
 -   [Windows 10-es eszköz regisztrációjának törlése](#unenroll-your-windows-10-device)
 -   [Windows 8.1-es számítógép regisztrációjának törlése](#unenroll-your-windows-8-1-computer)
@@ -44,31 +44,31 @@ Az eszköz regisztrációjának törléséhez kövesse a használt eszköznek me
 
 3.  Az **Eszközök**részben válassza ki azt az eszközt, amelynek regisztrációját törölni szeretné.
 
-4.  Koppintson az **Eltávolítás** &gt; **Eltávolítás** lehetőségre..
+4.  Koppintson az **Eltávolítás** &gt; **Eltávolítás** lehetőségre.
 
 ## Windows 8.1-es számítógép regisztrációjának törlése
 
-1.  Lépjen a **Gépház** &gt; **Hálózat** &gt; **Munkahely** lehetőséghez..
+1.  Lépjen a **Gépház** &gt; **Hálózat** &gt; **Munkaterület** menüpontra.
 
-2.  A **Csatlakozás munkahelyhez** területen koppintson a **Kilépés** gombra..
+2.  A **Csatlakozás munkahelyhez** területen koppintson a **Kilépés** gombra.
 
-3.  Koppintson az **Eszközkezelés bekapcsolása** terület **Kikapcsolás** elemére..
+3.  Koppintson az **Eszközkezelés bekapcsolása** terület **Kikapcsolás** elemére.
 
-4.  A megjelenő előugró ablakban koppintson a **Kikapcsolás** gombra..
+4.  A megjelenő előugró ablakban koppintson a **Kikapcsolás** gombra.
 
 ## Windows Phone 8.1-es eszköz regisztrációjának törlése
 
-1.  Lépjen a **Beállítások** &gt; **Munkahely** területre..
+1.  Lépjen a **Beállítások** &gt; **Munkaterület** menüpontra.
 
 2.  Koppintson a törölni kívánt munkahelyi fiókra.
 
 3.  A képernyő alsó részén koppintson a **Törlés** elemre.
 
-4.  A **Fiók törlése** párbeszédpanelen koppintson a **Törlés** gombra..
+4.  A **Fiók törlése** párbeszédpanelen koppintson a **Törlés** gombra.
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

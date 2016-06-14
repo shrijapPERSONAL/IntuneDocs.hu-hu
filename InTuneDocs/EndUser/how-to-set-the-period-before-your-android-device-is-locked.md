@@ -15,7 +15,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,16 +28,16 @@ ms.suite: ems
 # Az Android-eszköz zárolása előtti időtartam megadása
 Ha újból csatlakozni szeretne a munkájához, az alábbi utasításokat követve be kell állítania eszközén a jelszó lejáratát:
 
-1.  Eszközének **Settings** (Beállítások) képernyőjén kattintson a **Security** (Biztonság) &gt; **Automatically Lock** (Automatikus lezárás; egyes eszközökön **Lock phone after** (Telefon zárolása ezt követően) a neve) elemre.
+1.  Az eszköz **Beállítások** menüjében kattintson a **Biztonság** &gt; **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) elemre.
 
-    Ha az **Automatikus zárolás** (egyes eszközökön a  (**Telefon zárolása ezt követően:**) beállítás nem látható, ellenőrizze, hogy érvényes jelszót adott-e meg a **Beállítások** &gt; **Képernyőzár** &gt; **Jelszó** beállításnál..
+    Ha az **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) menüelem nem látható, ellenőrizze, hogy érvényes jelszót adott-e meg a **Beállítások** &gt; **Képernyőzár** &gt; **Jelszó** beállításban.
 
 2.  Adja meg a jelszó lejárati értékét.
 
-3.  Ellenőrizze, hogy az eszköz regisztrálva van az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatása szerint..
+3.  Ellenőrizze, hogy az eszköz regisztrálva van-e az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatásai szerint.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

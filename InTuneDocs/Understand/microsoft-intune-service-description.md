@@ -29,7 +29,7 @@ ms.suite: ems
 
 A Microsoft Intune egy felhőalapú szolgáltatás, amellyel Windows és Mac OS X rendszerű számítógépek, illetve iOS, Android és Windows rendszerű mobileszközök is felügyelhetők. Az Intune ezenkívül a vállalati alkalmazások és adatok védelmét is biztosítja. Használható önállóan, vagy a kezelési lehetőségek bővítése céljából a System Center 2012 R2 Configuration Managerrel integrálva.
 
-A Microsoft az Intune bevezetési juttatást a jogosult csomagokban foglalt jogosult szolgáltatások esetében kínálja. Ez lehetővé teszi, hogy távoli segítséget kérjen a Microsoft szakértőitől az Intune-környezet üzembe helyezéséhez. További információ: [A Microsoft Intune bevezetési juttatás leírása](http://go.microsoft.com/fwlink/?LinkId=619281).
+A Microsoft az Intune bevezetési juttatást a jogosult csomagokban foglalt jogosult szolgáltatások esetében kínálja. Ez lehetővé teszi, hogy távoli segítséget kérjen a Microsoft szakértőitől az Intune-környezet üzembe helyezéséhez. További információ: [A Microsoft Intune szolgáltatási juttatás leírása](http://go.microsoft.com/fwlink/?LinkId=619281).
 
 Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [kattintson ide, és látogasson el az Intune bejelentkezési oldalára](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Ha szervezete vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
 
@@ -51,7 +51,9 @@ Ebből a témakörből megtudhatja, hogy milyen gyakran jelennek meg ezek a szol
 
 Az Intune szolgáltatás változásainak megismeréséhez lásd az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/Whats-new-in-microsoft-intune.md) című témakört. A [Microsoft Intune blog](http://blogs.technet.com/b/microsoftintune/) ugyancsak ismerteti a szolgáltatást érintő változásokat, ezenkívül hasznos tippekkel szolgál az Intune minél hatékonyabb használatához.
 
-A fontos szolgáltatásfrissítésekről emellett közvetlenül az Intune konzoljának üzenőfaláról is értesülni fog.
+Az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) üzenetközpontja ezenfelül a fontos szolgáltatásfrissítésekről is tájékoztatást nyújt. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket.
+
+> [!NOTE] Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét.  
 
 A Microsoft Intune szolgáltatással kapcsolatos figyelmeztetéseinek típusai a következők:
 -   Hogy fel tudjon készülni a szolgáltatás változásaira, a szolgáltatásfrissítést megelőzően legalább 30–90 nappal értesítjük, annak függvényében, hogy milyen hatású a változtatás. Erre a terméken belüli kommunikációs csatornákon (például a hirdetőtáblán közzétett értesítéseken) keresztül kerül majd sor. Ezek a változások a következők lehetnek:
@@ -60,7 +62,7 @@ A Microsoft Intune szolgáltatással kapcsolatos figyelmeztetéseinek típusai a
 * Új vagy módosult API-k (értesítés arról, hogy tesztelni kell az egyéni alkalmazások visszamenőleges kompatibilitását)
 * A rendszerkövetelmények változásai, például a minimálisan szükséges böngészőverzió
 * Minden olyan frissítés, amely felhasználói beavatkozást igényel a funkció engedélyezéséhez vagy a funkció működésének zavartalanságához
--   A Microsoft a havonta esedékes szolgáltatásfrissítés részeként az új szolgáltatásokkal, új funkciókkal és a meglévő funkciók fejlesztéseivel kapcsolatos információkat is biztosít. A Microsoft rendszerint minden hónap 15-e körül adja ki a szolgáltatásfrissítéseket. A frissítések leírását az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune.md) című témakörben találja..
+-   A Microsoft a havonta esedékes szolgáltatásfrissítés részeként az új szolgáltatásokkal, új funkciókkal és a meglévő funkciók fejlesztéseivel kapcsolatos információkat is biztosít. A Microsoft rendszerint minden hónap 15-e körül adja ki a szolgáltatásfrissítéseket. A frissítések leírását az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune.md) című témakörben találja.
 -   Az Intune szolgáltatás kivonása esetén 12 hónappal korábban értesítjük.
 
 ## Válassza ki az Ön számára megfelelő felügyeleti megoldást
@@ -86,6 +88,6 @@ Az alábbi forrásokból többet is megtudhat az Intune-ról:
 [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

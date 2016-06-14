@@ -67,11 +67,11 @@ Az adott feladattal foglalkozó dolgozók körében egyre jobban terjed a mobil 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Az Office 365 nem felügyelt nyilvános kioszkból történő biztonságos elérésének engedélyezése a dolgozók számára
-A dolgozóknak néha olyan eszközöket, alkalmazásokat vagy böngészőket kell használniuk, amelyeket a vállalat nem tud felügyelni, mint például a kereskedelmi vásárokon vagy a szállodák előterében található nyilvános számítógépeket.  Engedélyezheti a dolgozóknak a vállalati e-mailek elérését ilyen számítógépről?  Az Intune-nal és a nagyvállalati mobilitási csomaggal van választási lehetősége.  A válasz lehet egyszerűen „nem”, ha a szervezet által felügyelt eszközökre korlátozza az e-mailek elérését.  Másik lehetőségként engedélyezhet korlátozott hozzáférést ezekhez a nem megbízható számítógépekhez úgy, hogy többtényezős hitelesítést ír elő, és csak böngészős hozzáférést (Outlook Web Access) engedélyez olyan módban, amelyben nem lehet letölteni fájlokat (például az e-mailek mellékleteit).  Ezzel biztosíthatja, hogy az erős hitelesítésen átesett dolgozók nem hagynak véletlenül vállalati adatokat a nem megbízható számítógépen.
+A dolgozóknak néha olyan eszközöket, alkalmazásokat vagy böngészőket kell használniuk, amelyeket a vállalat nem tud felügyelni, mint például a kereskedelmi vásárokon vagy a szállodák előterében található nyilvános számítógépeket. Engedélyezheti a dolgozóknak a vállalati e-mailek elérését ilyen számítógépről? Az Intune-nal és a nagyvállalati mobilitási csomaggal  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  a válasz lehet egyszerűen „nem”, ha a szervezet által felügyelt eszközökre korlátozza az e-mailek elérését.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

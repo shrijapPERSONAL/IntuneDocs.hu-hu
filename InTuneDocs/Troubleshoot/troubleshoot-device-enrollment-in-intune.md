@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Az alábbiakban az eszközök regisztrálásával kapcsolatos néhány problém�
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
 ## Eszközök maximális száma elérve
-**Hiba:** A regisztráció során hibaüzenet (például **A Vállalati portál átmenetileg nem érhető el**) jelenik meg egy iOS-eszközön, és a Configuration Managerben a DMPdownloader.log a **DeviceCapReached** hibát tartalmazza..
+**Probléma:** A regisztráció során hibaüzenet (például **A Vállalati portál átmenetileg nem érhető el**) jelenik meg egy iOS-eszközön, és a Configuration Managerben a DMPdownloader.log a **DeviceCapReached** hibát tartalmazza.
 
 **Megoldás:** A felhasználók legfeljebb 5 eszközt regisztrálhatnak.
 
@@ -50,13 +50,13 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 2.  Az Intune felügyeleti portál Felügyelet\Mobileszköz-kezelés\Regisztráció szabályai részén ellenőrizze, hogy a regisztrált eszközök maximális száma 5-re van-e állítva.
 
-A mobileszköz-felhasználók a következő URL-címen törölhetnek eszközöket: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)..
+A mobileszköz-felhasználók a következő URL-címen törölhetnek eszközöket: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
 A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket.
 
 ### Eszközök törlése az Azure Active Directory portálon
 
-1.  Keresse meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy a [https://portal.office.com](https://portal.office.com) portálon kattintson a **Rendszergazda** &gt; **Azure AD** elemre..
+1.  Nyissa meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget a [https://portal.office.com](https://portal.office.com) portálon.
 
 2.  A lap bal oldalán található hivatkozást használva jelentkezzen be a szervezeti azonosítójával.
 
@@ -68,13 +68,13 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 6.  Jelölje ki azokat a felhasználókat, akiknek az eszközeit törölni szeretné.
 
-7.  Kattintson az **Eszközök** elemre..
+7.  Válassza az **Eszközök** lehetőséget.
 
 8.  Szükség szerint távolítson el eszközöket, többek között azokat, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
 
 > [!NOTE]
 
-> Az eszközregisztráció-kezelők használatával elkerülheti a maximális szám elérését az eszközregisztráció során. Lásd: [Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel a Microsoft Intune-ban](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)..
+> Az eszközregisztráció-kezelők használatával elkerülheti a maximális szám elérését az eszközregisztráció során. Lásd: [Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel a Microsoft Intune-ban](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > A Készülékregisztráció-kezelők csoportba felvett felhasználói fiók nem tud regisztrálást végrehajtani, ha az adott felhasználói bejelentkezéshez a Feltételes hozzáférés szabályzat érvényes.
 
@@ -111,10 +111,9 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 ### A Nincs megadva mobileszköz-kezelési szolgáltató hiba elhárítása
 
-1.  Ellenőrizze, hogy a mobileszköz-kezelési szolgáltató megfelelően be van-e állítva a használt Intune szolgáltatáshoz, az O365 Mobileszköz-kezeléshez vagy a System Center Configuration Managerbe integrált Intune-hoz. Az Intune esetén a mobileszköz-kezelési szolgáltató a **Felügyelet** &gt; **Mobileszköz-kezelés** részen állítható be. Az Intune-ba integrált Configuration Manager esetén az Intune-összekötő konfigurálásakor adhatja meg, míg az O365 esetén ez a **Mobileszközök** beállításai közé tartozik..
+1.  Ellenőrizze, hogy a mobileszköz-kezelési szolgáltató megfelelően be van-e állítva a használt Intune szolgáltatáshoz, az O365 Mobileszköz-kezeléshez vagy a System Center Configuration Managerbe integrált Intune-hoz. Az Intune esetében a mobileszköz-kezelési szolgáltató a **Felügyelet** &gt; **Mobileszköz-kezelés** részen állítható be. Az Intune-ba integrált Configuration Manager esetében az Intune-összekötő konfigurálásakor adhatja meg, míg az O365 esetén ez a **Mobileszközök** beállításai közé tartozik.
 
-    > [!NOTE]
-    > Miután megadta a mobileszköz-kezelési szolgáltatót, csak az ügyfélszolgálaton keresztül tudja módosítani. Lásd: [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md)..
+    > [!NOTE] Ha egyszer már megadta a mobileszköz-kezelési szolgáltatót, azt csak az ügyfélszolgálaton keresztül tudja módosítani. Lásd: [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md).
 
 2.  Győződjön meg arról, hogy a rendszer megfelelően szinkronizálta a felhasználói hitelesítő adatokat az Azure Active Directoryval. Ehhez ellenőrizze, hogy az egyszerű felhasználónevük megegyezik-e az Active Directory adataival a fiókportálon.
     Ha a felhasználónév nem egyezik meg az Active Directory adataival:
@@ -135,15 +134,13 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
     3.  Nyissa meg az adatbázismappát, és keresse meg, majd nyissa meg a **CM_DBName** mappát, ahol a DBName az ügyféladatbázis neve.
 
-    4.  A lap tetején kattintson az Új lekérdezés elemre, és hajtsa végre az alábbi lekérdezéseket:
+    4.  A lap tetején kattintson az **Új lekérdezés** elemre, majd hajtsa végre az alábbi lekérdezéseket:
 
-        -   Az összes felhasználó megjelenítése:
-            `select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   Az összes felhasználó megjelenítése: `select * from [CM_ DBName].[dbo].[User_DISC]`.
 
-        -   Adott felhasználók megjelenítéséhez használja a következő lekérdezést, ahol a %testuser1% képviseli a megkeresni kívánt felhasználóhoz tartozó felhasznalonev@tartomany.com címet:
-            `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Adott felhasználók megjelenítéséhez használja a következő lekérdezést, ahol a %testuser1% képviseli a megkeresni kívánt felhasználóhoz tartozó felhasznalonev@tartomany.com címet: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`.
 
-        A lekérdezés megírása után kattintson az **!Execute** elemre..
+        A lekérdezés megírása után válassza az **!Execute** lehetőséget.
         Az eredmények visszaadása után keresse meg a felhő felhasználójának azonosítóját.  Ha nem található azonosító, a felhasználó nem rendelkezik Intune-licenccel.
 
 ## A System Center Configuration Managerbe integrált Intune használata esetén eltűnnek a mobileszközök
@@ -153,9 +150,9 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 ### Az eszköz eltávolításának ellenőrzése
 
-1.  A Configuration Manager felügyeleti konzolban válassza a **Figyelés** &gt; **Rendszer állapota** &gt; **Állapotüzenet-lekérdezések** elemet..
+1.  A Configuration Manager felügyeleti konzolban válassza a **Figyelés** &gt; **Rendszer állapota** &gt; **Állapotüzenet-lekérdezések** elemet.
 
-2.  Kattintson a jobb gombbal a **Manuálisan törölt gyűjtemény tagerőforrások** elemre, és válassza az **Üzenetek megjelenítése** parancsot..
+2.  Kattintson a jobb gombbal a **Manuálisan törölt gyűjtemény tagerőforrások** elemre, és válassza az **Üzenetek megjelenítése** parancsot.
 
 3.  Válasszon ki egy megfelelő időpontot vagy dátumot, illetve az elmúlt 12 órát.
 
@@ -175,7 +172,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 **Megoldás:** Hajtsa végre a következő lépéseket:
 
 1. Tiltsa le az iOS rendszert a Windows Intune-összekötőben. 
-    1. Kattintson az egér jobb gombjával az Intune-előfizetésre, és válassza a „Tulajdonságok” parancsot.
+    1. Kattintson a jobb gombbal az Intune-előfizetésre, és válassza a **Tulajdonságok** lehetőséget.
     1. Az „iOS” lapon törölje a jelet az „iOS-eszközök regisztrációjának engedélyezése” jelölőnégyzetből.
 
 
@@ -197,7 +194,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 
 ## A gép már regisztrálva van – hibakód: hr 0x8007064c
-**Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza..
+**Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
   
 Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
 
@@ -205,10 +202,10 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 
 **Megoldás:** 
 
-1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot.. 
-1. Válassza a **Fájl** -> **Beépülő modulok hozzáadása/eltávolítása** parancsot..
-1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** lehetőséget, kattintson a **Tovább** gombra, és válassza a **Helyi számítógép** lehetőséget..
-1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, és válassza a **Személyes/Tanúsítványok** lehetőséget.. 
+1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot. 
+1. Válassza a **Fájl** -> **Beépülő modulok hozzáadása/eltávolítása** parancsot.
+1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
+1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget. 
 1. Keresse meg az Sc_Online_Issuing által kiadott Intune-tanúsítványt, és ha létezik, törölje.
 1. Ha létezik, törölje a következő beállításkulcsot és az összes alkulcsát: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
 1. Próbálja meg újból elvégezni a regisztrálást. 
@@ -248,20 +245,20 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 |0x80043007, 0x80CF3007|A tanúsítványfájl nem található abban a mappában, amelyben a telepítőprogram van.|A telepítés kezdete előtt az összes fájlt csomagolja ki. Ne nevezze át és ne helyezze át a kicsomagolt fájlokat: az összes fájlnak ugyanabban a mappában kell lennie, különben a telepítés sikertelen lesz.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|A szoftvert nem lehet telepíteni, mert függőben van az ügyfélszámítógép újraindítása.|Indítsa újra a számítógépet, majd próbálja meg újból az ügyfélszoftver telepítését.|
 |0x80070032|Az ügyfélszámítógép nem felel meg az ügyfélszoftver telepítéséhez szükséges egy vagy több előfeltételnek.|Gondoskodjon róla, hogy minden szükséges frissítés telepítve legyen az ügyfélszámítógépen, majd próbálja meg újból az ügyfélszoftver telepítését.|
-|0x80043008, 0x80CF3008|Nem sikerült elindítani a Microsoft Online Management Updates szolgáltatást.|Lépjen kapcsolatba a Terméktámogatási szolgálattal a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című szakaszban leírtak szerint..|
+|0x80043008, 0x80CF3008|Nem sikerült elindítani a Microsoft Online Management Updates szolgáltatást.|Lépjen kapcsolatba a Terméktámogatási szolgálattal a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című szakaszban leírtak szerint.|
 |0x80043009, 0x80CF3009|Az ügyfélszámítógép már be van léptetve a szolgáltatásba.|Az ügyfélszámítógépet el kell távolítania, mielőtt újból beléptetheti a szolgáltatásba.|
 |0x8004300B, 0x80CF300B|Az ügyfélszoftver telepítési csomagja nem futtatható, mert az ügyfélen futó Windows-verzió nem támogatott.|Az Intune nem támogatja az ügyfélszámítógépen futó Windows-verziót.|
-|0xAB2|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibáinak elhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038) (Hasznos eszközök csomag- és telepítési problémák esetére)..|
+|0xAB2|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibáinak elhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038) (Hasznos eszközök csomag- és telepítési problémák esetére).|
 |0x80cf0440|Megszakadt a kapcsolat a szolgáltatásvégponttal.|A próbafiók vagy a díjköteles fiók fel van függesztve. Hozzon létre egy új próbafiókot vagy díjköteles fiókot, és végezze el újból a regisztrálást.|
 
 
 ## Az iOS beléptetési hibái
-Az iOS-eszközök egyéb regisztrálási hibáinak listáját az eszközfelhasználói dokumentáció [Hibába ütközik, amikor megpróbálja regisztrálni az eszközt az Intune-ban](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) című szakaszában találhatja..
+Az iOS-eszközök egyéb regisztrálási hibáinak listáját az eszközfelhasználói dokumentáció [Hibába ütközik, amikor megpróbálja regisztrálni az eszközt az Intune-ban](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) című szakaszában találhatja.
 
 ### További lépések
-Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint..
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

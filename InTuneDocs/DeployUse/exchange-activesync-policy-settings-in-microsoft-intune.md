@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban | Microsoft Intune
+title: Exchange ActiveSync házirend-beállítások | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,7 +47,7 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 |Beállítás neve|Részletek|
 |----------------|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br>Windows Phone 8 rendszerű eszközök esetén a beállítást az **Igen** értékre kell állítania..<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítást engedélyezni kell..|
+|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|
 |**Titkosítás megkövetelése tárolókártyákon**|A külső tárhelyen, például egy SD-kártyán tárolt adatok titkosítása szükséges (a támogatott eszközökön).
 <sup>1</sup> További információk a Windows 8.1 rendszerű eszközökhöz
 
@@ -86,6 +86,6 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

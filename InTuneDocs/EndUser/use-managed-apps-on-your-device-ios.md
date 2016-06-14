@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -39,7 +39,7 @@ Amikor felügyelt alkalmazásban fér hozzá vállalati adatokhoz, az alábbihoz
 ### Hogyan szerezhetők be a felügyelt alkalmazások?
 Különböző módokon szerezhet be felügyelt alkalmazásokat:
 
--   Ha az eszköze regisztrálva van a Microsoft Intune-nal, akkor telepítheti az alkalmazást a Vállalati portál alkalmazásból vagy a Vállalati portál webhelyről, illetve a rendszergazda is telepítheti azt az eszközére. A regisztrálással kapcsolatban lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve [Max OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md)..
+-   Ha az eszköze regisztrálva van a Microsoft Intune-nal, akkor telepítheti az alkalmazást a Vállalati portál alkalmazásból vagy a Vállalati portál webhelyről, illetve a rendszergazda is telepítheti azt az eszközére. A regisztrálással kapcsolatban lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve [Max OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md).
 
 -   Alkalmazást telepíthet az App Store-ból is, majd bejelentkezhet az Intune által felügyelt vállalati felhasználói fiókjával.
 
@@ -81,6 +81,6 @@ Az eszközén lévő felügyelt alkalmazásokról további információért lép
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

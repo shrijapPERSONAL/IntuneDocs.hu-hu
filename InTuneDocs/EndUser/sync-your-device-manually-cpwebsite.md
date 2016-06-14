@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Az eszköz manuális szinkronizálása
 
-Ha túl sokáig tart az alkalmazási telepítése, megpróbálkozhat az eszköz manuális szinkronizálásával, ez segíthet a telepítés felgyorsításában. A használt eszköz típusának megfelelő utasításokat kövesse:
+Ha túl sokáig tart az alkalmazási telepítése, megpróbálkozhat az eszköz manuális szinkronizálásával, ez segíthet a telepítés felgyorsításában. Az alábbi utasítások közül azt kövesse, amely megfelel az Ön által használt eszköztípusnak vagy Windows-verziónak. Kizárólag a felsorolásban szereplő verziók élveznek támogatást.
 
 * [Windows 10 mobil verzió](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 asztali verzió](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

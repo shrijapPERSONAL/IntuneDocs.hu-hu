@@ -28,14 +28,14 @@ ms.suite: ems
 # Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban
 A mobilalkalmazás-felügyeleti (MAM) szabályzatok alkalmazhatók az Intune által felügyelt vagy nem felügyelt eszközökön futó alkalmazásokra. A MAM-szabályzatok működésének részletes leírását és az Intune MAM-szabályzatai által támogatott forgatókönyveket az [Alkalmazásadatok védelme mobilalkalmazás-felügyeleti szabályzatokkal](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) témakör tartalmazza.
 
-Ez a témakör a MAM-szabályzat **Azure-portálon** történő létrehozásának folyamatát mutatja be. Az Azure-portálon létrehozott MAM-szabályzat minden MAM-forgatókönyv esetében támogatott:
+Ez a témakör a MAM-szabályzat **Azure-portálon** történő létrehozásának folyamatát mutatja be. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál. Javasoljuk, hogy a továbbiakban ezen a portálon hozza létre a MAM-szabályzatokat. Az Azure-portál a következő MAM-forgatókönyveket teszi lehetővé:
 - Az Intune-ban regisztrált eszközök
 - Külső MDM-megoldás által kezelt eszközök
 - MDM-megoldással (BYOD) nem kezelt eszközök
 
-Ha jelenleg az **Intune felügyeleti konzolt** használja az eszközeinek kezelésére, az [Intune felügyeleti konzol](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) segítségével létrehozhat egy olyan MAM-szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja..
+Ha jelenleg az **Intune felügyeleti konzolját** használja eszközei kezelésére, az [Intune felügyeleti konzolja](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) segítségével létrehozhat egy olyan MAM-szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja.
 >[!IMPORTANT]
-> Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál.
+> Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál. Ha mind az Intune felügyeleti konzoljában, mind az Azure-portálon létrehoz MAM-szabályzatokat, a rendszer az Azure-portálon érvényes szabályzatot alkalmazza az alkalmazásokra, illetve telepíti a felhasználók számára.
 
 Az Android és az iOS platformokon támogatott szabályzatbeállítások listájának megtekintéséhez válasszon a következő lehetőségek közül:
 
@@ -49,14 +49,13 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
 
     ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP]
-    > Ha első alkalommal használja az Azure-portált, az [Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakörben ismerkedhet meg a portállal.
+    > [!TIP] Ha első alkalommal használja az Azure-portált, érdemes felkeresni az [Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakört, amelyben megismerkedhet a portál használatának alapjaival.
 
 2.  A **Beállítások** panelen válassza az **Alkalmazásszabályzat** elemet.  Ekkor megnyílik a **Alkalmazás-szabályzat** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévő szabályzatokat.
 
     ![Képernyőfelvétel a meglévő szabályzatok listáját tartalmazó Alkalmazásszabályzat panelről](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Válassza a **Szabályzat hozzáadása** elemet..
+3.  Válassza a **Házirend hozzáadása** elemet.
 
     ![A kijelölt Szabályzat hozzáadása menüpont az Alkalmazásszabályzat panelen – képernyőfelvétel ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -66,8 +65,7 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
 
 5.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzat társításához. Ha kiválasztotta az alkalmazásokat, válassza az **Alkalmazások** panel alján található **Kiválasztás** gombot a mentéshez.
 
-    > [!IMPORTANT]
-    > Legalább egy alkalmazást ki kell jelölnie a szabályzat létrehozásához.
+    > [!IMPORTANT] Legalább egy alkalmazást ki kell jelölnie a szabályzat létrehozásához.
 
 6.  A **Szabályzat hozzáadása** panelen kattintson a **Kötelező beállítások konfigurálása** elemre a szabályzatbeállítási panel megnyitásához.
 
@@ -169,6 +167,6 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 [Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

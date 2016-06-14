@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Az eszköz manuális szinkronizálása
-Ha az alkalmazás telepítése túl sokáig tart, az alábbi utasításokat követve manuálisan is szinkronizálhatja Windows-eszközét, ezzel felgyorsíthatja a telepítést. A használt eszköz típusának megfelelő utasításokat kövesse:
+Ha az alkalmazás telepítése túl sokáig tart, az alábbi utasításokat követve manuálisan is szinkronizálhatja Windows-eszközét, ezzel felgyorsíthatja a telepítést. Kizárólag az alább felsorolt verziók élveznek támogatást. Használja a fenti „A cikk tartalma” résznél látható hivatkozások közül azt, amely megfelel az eszköz típusának:
 
 * [Windows 10 mobil verzió](#windows-10-mobile)
 * [Windows 10 asztali verzió](#windows-10-desktop)
@@ -37,11 +37,11 @@ Ha az alkalmazás telepítése túl sokáig tart, az alábbi utasításokat köv
 ## Windows 10 mobil verzió
 Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
-1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** beállításhoz..
+1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** menüpontra.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. Koppintson a **Munkahelyi hozzáférés** elemre..
+2. Koppintson a **Munkahelyi hozzáférés** elemre.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalm
 ## Windows 10 asztali verzió
 Windows 10 asztali eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
-1. Lépjen az alább látható **Start** gombra, és válassza a **Beállítások** lehetőséget..
+1. Lépjen az alább látható **Start** gombra, és válassza a **Beállítások** lehetőséget.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. A **Beállítások** lapon válassza **Fiókok** lehetőséget..
+2. A **Beállítások** lapon válassza **Fiókok** lehetőséget.
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. A **Fiókok** lapon válassza **Munkahelyi hozzáférés** lehetőséget..
+3. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** lehetőséget.
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ Windows 10 asztali eszköz manuális szinkronizálása a lassú alkalmazástelep
 ## Windows Phone 8.1
 Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
-1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Munkahely** beállításhoz..
+1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Munkahely** menüpontra.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalm
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

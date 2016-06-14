@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban | Microsoft Intune
+title: iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,19 +42,18 @@ A mobilalkalmazás-konfigurációs házirendek segítséget nyújthatnak ezeknek
 
 Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és eszközök számára. Ehelyett a házirendet társítani kell egy alkalmazáshoz, majd telepíteni kell az alkalmazást. A házirend-beállítások akkor lesznek felhasználva, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
-> [!TIP]
-> Ez a házirendtípus jelenleg csak az iOS 7.1-es és újabb verzióit futtató eszközökön érhető el, és a következő alkalmazástelepítés-típusokat támogatja:
+> [!TIP] Ez a szabályzattípus jelenleg csak az iOS 7.1-es és újabb verzióit futtató eszközökön érhető el, és a következő alkalmazástelepítés-típusokat támogatja:
 > 
 > -   **Felügyelt iOS-alkalmazás az App Store-ból**
 > -   **Alkalmazáscsomag az iOS számára**
 > 
-> Az alkalmazástelepítés-típusokról bővebben a következő témakörben olvashat: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md)..
+> Az alkalmazástelepítés-típusokról bővebben a következő témakörben olvashat: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md).
 
 ## Mobilalkalmazás-konfigurációs házirend konfigurálása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemre..
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemre.
 
-2.  A házirendek listájában bontsa ki az **iOS** csomópontot, kattintson a **Mobilalkalmazás konfigurálása** lehetőségre, majd a **Házirend létrehozása** elemre..
+2.  A házirendek listájában bontsa ki az **iOS**csomópontot, kattintson a **Mobilalkalmazás konfigurálása**lehetőségre, majd a **Házirend létrehozása**elemre.
 
     > [!TIP]
     > Ehhez a házirendtípushoz csak egyéni beállításokat lehet megadni. Ajánlott beállítások nem állnak rendelkezésre.
@@ -63,8 +62,7 @@ Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és 
 
 4.  Az oldal **Mobilalkalmazás-konfigurációs házirend** részében írja vagy illessze be a mezőbe a kívánt alkalmazáskonfigurációs beállításokat tartalmazó XML-tulajdonságlistát.
 
-    > [!TIP]
-    > Az XML-tulajdonságlistákkal kapcsolatos további információért tekintse meg az iOS Developer Library [Understanding XML Property Lists ](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Az XML-tulajdonságlisták ismertetése) című témakörét.
+    > [!TIP] Az XML-tulajdonságlistákkal kapcsolatos további információkért tekintse meg az iOS Developer Library [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)  (Az XML-tulajdonságlisták ismertetése) című témakörét.
     > 
     > Az XML-tulajdonságlista formátuma a konfigurálni kívánt alkalmazás függvényében eltérő. A használandó formátummal kapcsolatban forduljon az alkalmazás szállítójához.
     > 
@@ -72,8 +70,8 @@ Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és 
     > 
     > &lt;integer&gt;
     > &lt;real&gt;
-    > &lt;karakterlánc&gt;
-    > &lt;tömb&gt;
+    > &lt;string&gt;
+    > &lt;array&gt;
     > &lt;dict&gt;
     > &lt;true /&gt; vagy &lt;false /&gt;
     > 
@@ -81,17 +79,9 @@ Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és 
     >
         > Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlistában:
     >    
-    > \{\{egyszerűfelhasználónév\}\} – (Példa: **John@contoso.com**))
-    > \{\{e-mail\}\} – (Példa: **John@contoso.com**)
-    > \{\{részlegesupn\}\} – (Példa: **John**)
-    > \{\{fiókazonosító\}\} – (Példa: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{eszközazonosító\}\} – (Példa: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{felhasználóazonosító\}\} – (Példa: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{felhasználónév\}\} – (Példa: **John Doe**)
-    > \{\{sorozatszám\}\} – (Példa: **F4KN99ZUG5V2**) iOS eszközök esetében
-    > \{\{sorozatszámutolsó4számjegye\}\} – (Példa: **G5V2**) iOS eszközök esetében
+    > \{\{userprincipalname\}\} - (példa: **John@contoso.com**) \{\{mail\}\} - (példa: **John@contoso.com**) \{\{partialupn\}\} - (példa: **John**) \{\{accountid\}\} - (példa: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (példa: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (példa: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (példa: **John Doe**) \{\{serialnumber\}\} - (példa: **F4KN99ZUG5V2**) iOS-eszközök esetében \{\{serialnumberlast4digits\}\} - (példa: **G5V2**) iOS-eszközök esetében
 >
-> A \{\{ és \}\} karaktereket csak a tokentípusok használják, és más célokra nem használhatók.
+> A \{\{ és \}\} karaktereket csak a tokentípusok használják, ezek más célokra nem használhatók.
 
 
 
@@ -101,7 +91,7 @@ Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és 
     > [!IMPORTANT]
     > Amikor az **Ellenőrzés**lehetőségre kattint, az Intune ellenőrzi, hogy érvényes-e a megadott XML formátuma. Azt nem ellenőrzi, hogy az XML-tulajdonságlista működni fog-e az alkalmazással, amelyhez társítva van.
 
-6.  Amikor elkészült, kattintson a **Házirend mentése**gombra..
+6.  Amikor elkészült, kattintson a **Házirend mentése**gombra.
 
 Az új szabályzat megjelenik a **Konfigurációs szabályzatok** csomópontban.
 
@@ -114,8 +104,7 @@ Ezután a megszokott módon haladjon tovább az alkalmazás telepítésével és
 
 Amikor a telepített alkalmazást futtatják egy eszközön, akkor az a mobilalkalmazás-konfigurációs házirendben megadott beállításokkal fog futni.
 
-> [!TIP]
-> Ha egy vagy több mobilalkalmazás-konfigurációs szabályzatnál ütközés lép fel, a rendszer egyik szabályzatot sem foganatosítja, az ütközésről pedig jelentés készül az Intune felügyeleti konzoljának **Irányítópult** területén..
+> [!TIP] Ha egy vagy több mobilalkalmazás-konfigurációs szabályzatnál ütközés lép fel, a rendszer egyik szabályzatot sem tartatja be, az ütközésről pedig jelentés készül az Intune felügyeleti konzoljának **Irányítópult** területén.
 
 ## Mobilalkalmazás-konfigurációs XML-fájl példaformátuma
 
@@ -150,6 +139,6 @@ Mobilalkalmazás-konfigurációs fájl létrehozásakor a következő értékek 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -31,8 +31,7 @@ A Windows 10 Mobile- vagy Windows Phone-eszközök Microsoft Intune-beli kezelé
 
 A legtöbb esetben a felhasználók a Windows Áruházból telepíthetik a Vállalati portál alkalmazást. Ha Windows Phone 8.0 rendszerű eszközöket kezel, vagy a Vállalati portált Windows Phone-eszközökre kell telepítenie, le is kell töltenie a Vállalati portál alkalmazást, és be kell jelentkeznie. Lásd: [Windows Phone 8.0 rendszerű telefonok kezelésének beállítása](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-1.  **Az Intune beállítása**
-    Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
+1.  **Az Intune beállítása** Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be a [mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
 
 2.  **A regisztrációs kiszolgáló címéhez tartozó DNS-alias beállítása** (nem kötelező)
 
@@ -51,17 +50,17 @@ A legtöbb esetben a felhasználók a Windows Áruházból telepíthetik a Váll
 
       **EnterpriseRegistration.windows.net** – Azokat a Windows 8.1 és Windows 10 Mobile- eszközöket támogatja, amelyeket a munkahelyi vagy iskolai fiókkal az Azure Active Directoryban fognak regisztrálni.
 
-    2.  Az [Intune felügyeleti konzolján](http://manage.microsoft.com) válassza a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** lehetőséget..
+    2.  Az [Intune felügyeleti konzolján](http://manage.microsoft.com) válassza a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone lehetőséget**.
 
       ![Windows mobileszköz-felügyeletének beállítása párbeszédpanel](../media/windows-device-enrollment.png)
 
-    3.  Írja be a munkahelyi webhely ellenőrzött tartományának URL-címét az **Adja meg egy ellenőrzött tartomány nevét** mezőbe, és kattintson az **Automatikus észlelés tesztelése** elemre..
+    3.  Írja be a munkahelyi webhely ellenőrzött tartományának URL-címét az **Adja meg egy ellenőrzött tartomány nevét** mezőbe, majd kattintson az **Automatikus észlelés tesztelése** elemre.
 
 
 
-Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati portált.  A felügyeleti konzol 2., 3. és 4. lépése biztonsággal figyelmen kívül hagyható.
+Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati portált.  A felügyeleti konzol 2. és 3. lépése biztonsággal figyelmen kívül hagyható.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

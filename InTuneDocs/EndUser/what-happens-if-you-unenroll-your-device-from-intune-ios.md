@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -44,11 +44,11 @@ Miután törli az iOS-es eszköz regisztrációját az Intune-ból:
 
 -   A rendszer eltávolítja a vállalati e-mail profilokat az eszközről.
 
-A regisztráció törlését ismertető útmutatást lásd: A regisztráció törlésének utasításaiért lásd: [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md)..
+A regisztráció törlésének utasításaiért lásd: [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

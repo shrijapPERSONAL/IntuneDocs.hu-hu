@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával | Microsoft Intune
+title: A regisztrált eszközök áttekintése a leltárfunkcióval | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ A mobileszközök által összegyűjtött leltáradatok megtekintéséhez futtas
 |**Titkosítás engedélyezve**|All rendszerű eszközök|
 
 ## Windows rendszerű számítógépekről gyűjtött adatok
-> [!IMPORTANT]
-> Ez a szakasz csak az Intune Windows PC-ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik.
+> [!IMPORTANT] Ez a szakasz csak az Intune Windows PC-ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik.
 
 A windowsos számítógépek által összegyűjtött leltáradatok megtekintéséhez futtassa a [Számítógépleltár-jelentések](understand-microsoft-intune-operations-by-using-reports.md) funkciót. Az Intune az alábbi táblázatban szereplő leltáradatokat gyűjti össze a Windows rendszerű számítógépekről:
 
@@ -113,11 +112,12 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 -   **Utolsó frissítés**
 
-### Lásd még:
-[Figyelés és jelentéskészítés a Microsoft Intune-ban](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

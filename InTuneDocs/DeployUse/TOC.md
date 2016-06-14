@@ -30,7 +30,7 @@
 
 ### [Az eszközök beállításainak és funkcióinak kezelése szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-beállítások](ios-policy-settings-in-microsoft-intune.md)
-#### [Android-beállítások](android-policy-settings-in-microsoft-intune.md)
+#### [Android- és Samsung KNOX-beállítások](android-policy-settings-in-microsoft-intune.md)
 #### [Windows 8- és Windows 8.1-beállítások](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1-beállítások](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [A Windows 10 asztali és mobil verziójának beállításai](windows-10-policy-settings-in-microsoft-intune.md)
@@ -106,6 +106,7 @@
 ### [Üzletági alkalmazások előkészítése mobilalkalmazás-felügyelethez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [iOS-alkalmazások burkolása](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Android-alkalmazások burkolása](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Üzletviteli (LOB) alkalmazások a nem az Intune által felügyelt eszközökön](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [SDK használata alkalmazás írásakor](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
@@ -120,9 +121,11 @@
 
 ## [Újdonságok](whats-new-in-microsoft-intune.md)
 
+# [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
+
 # [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

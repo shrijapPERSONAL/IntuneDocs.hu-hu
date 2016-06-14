@@ -32,17 +32,17 @@ Ez a témakör ismerteti, hogy végfelhasználói hol és hogyan juthatnak hozz�
 
 **Kötelező alkalmazások** – A rendszergazda által kötelezően előírt alkalmazások, amelyeknek a telepítéséhez az adott platformtól függően minimális felhasználói beavatkozás szükséges.
 
-**Kötelező alkalmazások** – A Vállalati portál alkalmazáslistájában szereplő azon alkalmazások, amelyeknek a telepítése nem kötelező.
+**Elérhető alkalmazások** – A Vállalati portál alkalmazáslistájában szereplő azon alkalmazások, amelyeknek a telepítése nem kötelező.
 
 **Felügyelt alkalmazások** – Az Intune által szabályzatokkal felügyelt és „becsomagolt”, illetve az Intune Mobile Application Management (MAM) SDK-val készített alkalmazások. Ezek az alkalmazások az Intune-nal kezelhetők, és alkalmazás-házirendekkel felügyelhetők.
 
 **Nem felügyelt alkalmazások** – Azok az alkalmazások, amelyeket nem az Intune csomagolt be, illetve amelyek nem foglalják magukban az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
-###További információ
-[Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)</br>
-[iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
+###Lásd még: [Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md).
+[iOS-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)</br>
+[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

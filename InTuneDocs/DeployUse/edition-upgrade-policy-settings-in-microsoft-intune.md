@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A Windows kiadásfrissítési házirendjének beállításai a Microsoft Intune-ban | Microsoft Intune
+title: A Windows kiadásfrissítési házirendjének beállításai | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,11 +44,11 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 |**Leírás**|Megadhatja a házirend leírását, hogy könnyebb legyen azonosítani az Intune-konzolon (nem kötelező).
 |**Frissítés erre a kiadásra**|A legördülő listából válassza ki a Windows 10 asztali verziónak, a Windows 10 Holographic vagy a Windows 10 Mobile rendszernek azt a verzióját, amelyre a megcélzott eszközöket frissíteni szeretné.
 |**Termékkulcs**|Adja meg a Microsofttól kapott, minden megcélzott Windows 10 asztali eszköz frissítéséhez használható termékkulcsot.<br>Miután létrehozta a termékkulcsot tartalmazó házirendet, a termékkulcsot már nem szerkesztheti. Ennek oka a kulcs biztonsági okokból történő elrejtése. Ha módosítani szeretné a termékkulcsot, a teljes kulcsot újra meg kell adnia.
-|**Licencfájl**|Kattintson a **Tallózás** elemre, és válassza ki a Windows Holographic azon kiadásának licencadatait tartalmazó, a Microsofttól kapott licencfájlt, amelyre a megcélzott eszközöket frissíteni szeretné.
+|**Licencfájl**|Kattintson a **Tallózás** elemre, és válassza ki a Microsofttól kapott, a Windows Holographic vagy Windows 10 Mobile azon kiadásának licencadatait tartalmazó licencfájlt, amelyre a megcélzott eszközöket frissíteni szeretné.
 
 ### További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

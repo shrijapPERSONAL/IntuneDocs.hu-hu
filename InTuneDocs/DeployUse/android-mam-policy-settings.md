@@ -53,7 +53,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 - **Kivágási, másolási és beillesztési műveletek korlátozása más alkalmazásokkal:** Megadhatja, milyen esetekben korlátozza a kivágási, másolási és beillesztési műveleteket. A következő lehetőségek közül választhat:
   -   **Letiltva**: A kivágási, másolási és beillesztési műveletek tiltása a szabályzattal felügyelt alkalmazások között.
   -   **Szabályzattal felügyelt alkalmazások**: A kivágási, másolási és beillesztési műveletek elvégzése csak a szabályzattal felügyelt alkalmazások körében engedélyezett.
-  -   **Szabályzattal felügyelt alkalmazások beillesztési lehetőséggel**: A kivágási vagy másolási művelet engedélyezett a szabályzattal felügyelt alkalmazások körében. Bármely alkalmazásból kivágott vagy másolt adatok beilleszthetők ebbe az alkalmazásba.
+  -   **Szabályzattal felügyelt alkalmazások beillesztési lehetőséggel**: A kivágási vagy másolási művelet engedélyezett a szabályzattal felügyelt alkalmazások körében. A bármelyik alkalmazásból kivágott vagy másolt adatok beilleszthetők ebbe az alkalmazásba.
   -   **Bármely alkalmazás**: Az alkalmazások közötti kivágási, másolási és beillesztési műveletek nem korlátozottak.
 
     **Alapértelmezett érték = Szabályzattal felügyelt alkalmazások beillesztési lehetőséggel**
@@ -61,26 +61,28 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 
   Az Intune-ban nem regisztrált eszközök esetében a szabályzattal felügyelt alkalmazásokban a webhivatkozások a mobilalkalmazás-felügyeleti szabályzat használatakor kizárólag a Managed Browser alkalmazásban nyílnak meg.
 
-  Ha az Intune-t használja az eszközök kezeléséhez, olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](manage-internet-access-using-managed-browser-policies.md) című témakört..
+  Ha az Intune-t használja az eszközök kezeléséhez, olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](manage-internet-access-using-managed-browser-policies.md) című témakört.
 
     **Alapértelmezett érték = Igen**
 - **Alkalmazásadatok titkosítása:** Válassza az **Igen** lehetőséget a titkosítás engedélyezéséhez. Amikor engedélyezve van ez a beállítás, a mobilalkalmazás-felügyeleti szabályzattal társított alkalmazások esetén a titkosításról a Microsoft gondoskodik. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során. Az eszköz tárhelyén található tartalom mindig titkosított marad.
+  >[!NOTE] A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.
 
   **Alapértelmezett érték = Igen**
 
-- **ContactSyncDisabled** (Névjegy-szinkronizálás letiltása): Ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával, válassza az **Igen** lehetőséget. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.<br/>Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer eltávolítja az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
+- **ContactSyncDisabled** (Névjegy-szinkronizálás letiltása): Ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával, válassza az **Igen** lehetőséget. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.<br/>Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
 
   **Alapértelmezett érték = Igen**
 
 ##  A hozzáférési szabályzatok beállításai Android rendszeren
 A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra utal, amelyekhez MAM-szabályzatot állítottak be.
 
-- **A hozzáféréshez egyszerű PIN kód szükséges:** Ha azt szeretné, hogy a szabályzattal felügyelt alkalmazások használatához PIN-kód megadása legyen szükséges, válassza az **Igen** lehetőséget. Ha a felhasználó első alkalommal futtatja az alkalmazást munkahelyi környezetben, a rendszer a kód beállítására kéri.
+- **PIN-kód megkövetelése a hozzáféréshez:** Ha szeretné, hogy a szabályzattal felügyelt alkalmazások használatához PIN-kód megadása legyen szükséges, válassza az **Igen** lehetőséget. Ha a felhasználó első alkalommal futtatja az alkalmazást munkahelyi környezetben, a rendszer a kód beállítására kéri.
 
  **Alapértelmezett érték = Igen**
-- **Próbálkozások száma a PIN kód alaphelyzetbe állítása előtt:** Itt beállíthatja, hogy hányszor tehessen kísérletet a felhasználó a PIN-kód megadására, mielőtt a rendszer a PIN-kód alaphelyzetbe állítását kérné.
 
- **A beállításnak nincs alapértelmezett értéke.**
+ -  **Egyszerű PIN-kód engedélyezése:** Azt határozza meg, hogy a felhasználó használhat-e egyszerű PIN-kódokat (például 1234 vagy 1111). **Alapértelmezett érték = Igen**.
+ - **PIN-kód hossza:** azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kel tartalmazniuk. **Alapértelmezett érték = 4**
+ - **Próbálkozások száma a PIN kód alaphelyzetbe állítása előtt:** Itt beállíthatja, hogy hányszor tehessen kísérletet a felhasználó a PIN-kód megadására, mielőtt a rendszer a PIN-kód alaphelyzetbe állítását kérné. **A beállításnak nincs alapértelmezett értéke.**
 - **Vállalati hitelesítő adatok szükségesek a hozzáféréshez:** Az **Igen** lehetőséget választva a rendszer a számokból álló PIN-kód helyett vállalati hitelesítő adatokat kér az alkalmazás eléréséhez.  Az **Igen** érték megadásával a rendszer felülírja a PIN-kóddal vagy az ujjlenyomatos azonosítással kapcsolatos követelményeket.  A rendszer a vállalati hitelesítő adatok megadását fogja kérni a felhasználótól.
 
   **Alapértelmezett érték = Nem**
@@ -98,6 +100,6 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 - **Képernyőfelvétel és az Android Assistant alkalmazás tiltása (Android 6 Marshmallow vagy újabb):** Válassza az **Igen** lehetőséget a képernyőfelvétel-készítés és az eszköz **Android Assistant**-funkcióinak letiltásához az alkalmazás használatakor.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

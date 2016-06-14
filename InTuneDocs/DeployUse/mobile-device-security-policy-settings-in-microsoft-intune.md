@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-nal | Microsoft Intune
+title: Mobileszközök biztonsági házirendjének beállításai | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Ha Windows RT rendszerű eszközökre beállítja a jelszóhosszúságra vonatko
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt **Igen** értékre kell állítani..<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítást engedélyezni kell..|Igen|Nem|Igen|Nem|Igen|
+|**Titkosítás megkövetelése mobileszközön**<sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|Igen|Nem|Igen|Nem|Igen|
 |**Titkosítás megkövetelése tárolókártyákon**<br /><br />Az Exchange ActiveSync által kezelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|n/a (az alkalmazások és a vonatkozó adatok titkosítása automatikusan megtörténik)|nem áll rendelkezésre|Igen|
 További információk a Windows 8.1 rendszerű eszközökhöz
 
@@ -217,6 +217,6 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
