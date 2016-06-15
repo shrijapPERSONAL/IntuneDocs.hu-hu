@@ -1,42 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b41c9f0d7c449d83f8359aaea21b880b557a55de/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9261)
- [InTuneDocs\develop\intune-app-sdk-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2915cca314b489bbcb590d01b03a0b38134fa619/InTuneDocs/develop/intune-app-sdk-android.md) | InSyncHandedBackSuccess | [Details](#d2e4b6903d86b79edd9c758b2ce51733831e785a268)
 
 ## Item Details
-##### <a name='0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9261'></a> Source: [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b41c9f0d7c449d83f8359aaea21b880b557a55de/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/ce2a92defb35cd0c5a6f3fd4966f36b2a94d96af/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf)
-* Handoff Datetime: 2016-06-10 02:43:48
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/d751e614adb60885f249aae3180b96792583f6b8/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/f49a095e60ab5a90fef1f249a26420072ff804d1/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-15 12:04:39
-* [Back to Top](#report-top)
-
-##### <a name='d2e4b6903d86b79edd9c758b2ce51733831e785a268'></a> Source: [InTuneDocs\develop\intune-app-sdk-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2915cca314b489bbcb590d01b03a0b38134fa619/InTuneDocs/develop/intune-app-sdk-android.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\develop\intune-app-sdk-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/d751e614adb60885f249aae3180b96792583f6b8/InTuneDocs/develop/intune-app-sdk-android.md)
-* Handoff File: [intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/24a3a49cf914bbf2f1bb5d21135ac0bc013bc464/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf)
-* Handoff Datetime: 2016-06-02 21:29:42
-* Handoff Reason: Include
-* Archive File: [intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/ee1177a1033ff616db6e2eda0fd6605da46595e8/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf)
-* Archive Datetime: 2016-06-09 02:10:17
-* Handback File: [intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/f49a095e60ab5a90fef1f249a26420072ff804d1/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/intune-app-sdk-android.13ba26a9f5060cab39ff9d68283cfc8d10856886.hu-hu.xlf)
-* Handback Datetime: 2016-06-15 12:04:39
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
