@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Phone 8.1-es házirend-beállítások a Microsoft Intune-ban | Microsoft Intune
+title: Windows Phone 8.1-es házirend-beállítások | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Általános konfigurációs beállítások
 
-A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigurációs szabályzatával** a következő beállításokat adhatja meg a Windows 8.1-eszközökön:
+A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigurációs szabályzatával (Windows Phone 8.1 és újabb rendszereknél)** a következő beállításokat adhatja meg a Windows 8.1-eszközökön:
 
 -   **Mobileszköz-biztonsági beállítások** – előre meghatározott beállítások egy listájából választva számos szolgáltatást és funkciót szabályozhat az eszközökön.
 
 -   **Megfelelő és nem megfelelő alkalmazások** – egy listában megadhatja a vállalatban megfelelőnek vagy nem megfelelőnek ítélt alkalmazásokat. A Windows Phone-telefonok blokkolhatják vagy engedélyezhetik ezeknek az alkalmazásoknak a telepítését.
+
+### Alkalmazhatósági beállítások
+
+|Beállítás neve|Részletek|
+|----------------|----------------------------------|
+|**Az összes konfiguráció alkalmazása a Windows 10-re**|Ezzel a beállítással engedélyezheti, hogy a szabályzatban szereplő beállítások a rendszer Windows Phone 8.1-eszközökön felül a Windows 10 Mobile-eszközökre is alkalmazza.|
 
 ### Jelszóbeállítások
 
@@ -46,7 +52,7 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 |**Egyszerű jelszavak engedélyezése**|Egyszerű jelszó például a „0000” és az „1234”|Igen|Igen|
 |**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Meghatározza, hogy a felhasználó hányszor adhat meg helytelen jelszót, mielőtt a rendszer törölné az eszközt.|Igen|Igen|
 |**Képernyő kikapcsolása ennyi perc inaktivitás után**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő automatikus zárolása előtt.|Igen|Igen|
-|**Jelszó lejárata (nap)**|A napok számát adja meg, amely után meg kell változtatni az eszköz jelszavát.|Igen|Igen|
+|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
 |**Jelszóelőzmények megjegyzése**|Meghatározza, hogy a korábban használt jelszavak rendszer megjegyezze annak megakadályozásához, hogy a felhasználó újra használni.|Igen|Igen|
 |**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Meghatározza, hogy a rendszer hány korábban használt jelszót jegyezzen meg.|Igen|Igen|
 
@@ -54,7 +60,7 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Mobileszköz titkosításának kötelezővé tétele**|Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani..|Igen|Igen|
+|**Mobileszköz titkosításának kötelezővé tétele**|Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.|Igen|Igen|
 
 ### Rendszerbeállítások
 
@@ -121,8 +127,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
-> [!IMPORTANT]
-> Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1 rendszerű eszközökhöz, fel kell vennie a Vállalati portál alkalmazást, mert ellenkező esetben az le lesz tiltva.
+> [!IMPORTANT] Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1-eszközökhöz, hozzá kell adnia a Vállalati portál alkalmazást is a listához, ellenkező esetben azt a rendszer letiltja.
 
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
@@ -134,14 +139,14 @@ A [Windows Phone Alkalmazások+játékok lapon](http://www.windowsphone.com/en-u
 
 Nyissa meg az alkalmazás lapját, és másolja az URL-címet a vágólapra. Most ezt a címet felhasználhatja URL-címként a kompatibilis vagy a nem kompatibilis alkalmazások listájában.
 
-**Például:** Keressen rá az áruházban a Skype alkalmazásra. A használt URL-cím a következő: **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**..
+**Például:** Keressen rá az áruházban a Skype alkalmazásra. A használt URL-cím a következő: **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
-## Egyéni házirend-beállítások 
+## Egyéni szabályzatbeállítások 
 A Microsoft Intune **Windows Phone egyéni konfigurációs házirenddel** OMA-URI beállításokat telepíthet. Ezekkel vezérelhetők a **Windows Phone 8.1-eszközök** szolgáltatásai. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a funkcióval olyan Windows Phone-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános konfigurációs házirendjével. Az ezen házirendekkel konfigurálható beállításokkal kapcsolatos további információért lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Ezzel a funkcióval olyan Windows Phone-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános konfigurációs házirendjével. Az ezen házirendekkel konfigurálható beállításokkal kapcsolatos további információkért lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-A Windows Phone-telefonokra érvényes OMA-URI beállítások létrehozásához lásd a [Windows Phone 8.1 MDM-protokoll dokumentációját](http://technet.microsoft.com/library/dn499787.aspx)..
+A Windows Phone-telefonokra érvényes OMA-URI beállítások létrehozásához lásd a [Windows Phone 8.1 MDM-protokoll dokumentációját](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Általános beállítások
 
@@ -169,6 +174,6 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

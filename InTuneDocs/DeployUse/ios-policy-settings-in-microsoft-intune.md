@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS-szabályzatbeállítások a Microsoft Intune-ban | Microsoft Intune
+title: Az iOS szabályzatbeállításai | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -160,7 +160,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Csengetőkapcsoló engedélyezése**|Engedélyezheti vagy letilthatja a csengető- (némító-) kapcsolót az eszközön.|
 |**Képernyő ébresztőgombjának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|
 |**Automatikus zárolás engedélyezése**|Engedélyezheti vagy letilthatja az eszköz automatikus zárolását.|
-|**Monó hang engedélyezése**|Engedélyezheti vagy letilthatja a **Monó hang**kisegítő beállítást..|
+|**Monó hang engedélyezése**|Engedélyezheti vagy letilthatja a **Monó hang**kisegítő beállítást.|
 |**Hangalámondás engedélyezése**|Engedélyezheti vagy letilthatja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.|
 |**A hangalámondás módosításának engedélyezése**|Engedélyezheti vagy letilthatja a VoiceOver funkció módosítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).|
 |**Nagyítás engedélyezése**|Engedélyezheti vagy letilthatja a **Nagyítás** kisegítő beállítást, amellyel érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.|
@@ -170,8 +170,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Kisegítő érintés engedélyezése**|Engedélyezheti vagy letilthatja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
 |**Kisegítő érintés módosításának engedélyezése**|Engedélyezheti vagy letilthatja a Kisegítő érintés funkció módosítását.|
 |**Beszéd kiválasztásának engedélyezése**|Engedélyezheti vagy letilthatja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható az Ön által kijelölt szöveg.|
-> [!NOTE]
-> Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
+> [!NOTE] Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
 > 
 > -   Az iOS-eszközök a teljes képernyős módra való konfigurálása előtt felügyelt módra kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 > -   Ha a megadott iOS-alkalmazás a konfigurációs házirend alkalmazása után települ, az eszköz mindaddig nem lép Kioszk módba, amíg újra nem indítják.
@@ -185,7 +184,7 @@ A **Nem kompatibilis alkalmazások jelentése** beállítás használatával meg
 
 1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Nem kompatibilis alkalmazások jelentése** elemre.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése** elemre.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
 
 #### Alkalmazás-áruházak URL-címének megadása
 Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, illetve **Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása** beállításban (csak iOS rendszerben), használja a következő formátumot:
@@ -194,10 +193,9 @@ Egy keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban h
 
 Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a kompatibilis és nem kompatibilis alkalmazások listájának, illetve a Kioszk módban futtatni kívánt alkalmazásnak a konfigurálásához.
 
-**Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Ebben az esetben a következő URL-címet használja: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**..
+**Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Ebben az esetben a következő URL-t használja: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
+> [!NOTE] Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával hozzájuthat az alkalmazás URL-címéhez.
 
 
 ## Egyéni szabályzatbeállítások
@@ -232,6 +230,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

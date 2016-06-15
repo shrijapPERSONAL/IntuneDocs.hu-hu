@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android-eszközök konfigurációs szabályzatának beállításai a Microsoft Intune-ban | Microsoft Intune
+title: Android- és Samsung KNOX-eszközök konfigurációs házirendjének beállításai | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Android-szabályzatbeállítások a Microsoft Intune-ban
+# Android- és Samsung KNOX-eszközök konfigurációs házirendjének beállításai a Microsoft Intune-ban
 
 ## Általános konfigurációs szabályzat
 
@@ -107,7 +107,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |**Cserélhető tároló használatának engedélyezése**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|Nem|Igen|
 |**Wi-Fi használatának engedélyezése**|Az eszköz Wi-Fi-funkciójának engedélyezése.|Nem|Igen|
 |**Wi-Fi alapú internetmegosztás használatának engedélyezése**|Az eszköz Wi-Fi-alapú internetmegosztási funkciójának engedélyezése.|Nem|Igen|
-|**Földrajzi hely meghatározásának engedélyezése**|Az eszköz földrajzi helymeghatározási funkciójának engedélyezése.|Nem|Igen|
+|**Földrajzi hely meghatározásának engedélyezése**|Engedélyezi az eszköz számára a helyadatok használatát.|Nem|Igen|
 |**NFC használatának engedélyezése**|A kis hatótávolságú kommunikációt használó műveletek engedélyezése (ha az eszköz támogatja ezt a funkciót).|Nem|Igen|
 |**Bluetooth használatának engedélyezése**|Az eszköz Bluetooth-funkciójának engedélyezése.|Nem|Igen|
 |**Kikapcsolás engedélyezése**|Az eszköz felhasználó általi kikapcsolásának engedélyezése.<br /><br />Ha ez a beállítás le van tiltva, a **Megengedett sikertelen bejelentkezések száma az eszközön tárolt adatok törléséig** beállítás Samsung KNOX-eszközökön nem működik.|Nem|Igen|
@@ -131,7 +131,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |**A YouTube használatának engedélyezése**|A YouTube használatának engedélyezése az eszközön.|Nem|Igen|
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
-A **Kompatibilis és nem kompatibilis alkalmazások** listában adja meg a kompatibilis vagy nem kompatibilis eszközök listáját az alábbi információk alapján:
+A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja meg a kompatibilis vagy nem kompatibilis eszközök listáját az alábbi információk alapján:
 
 > [!NOTE]
 > Egy házirendben csak egy, kompatibilis vagy nem kompatibilis alkalmazásokat tartalmazó lista szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
@@ -150,7 +150,7 @@ Adja meg a következő értékeket a **Samsung KNOX**-eszközök beállításhoz
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Kattintson a **Tallózás** gombra, majd válassza ki azt a kezelt alkalmazást, illetve áruházbeli alkalmazást, amelynek engedélyezni szeretné a futtatását, amikor az eszköz teljes képernyős módban van. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.<br /><br />További segítségért olvassa el az ebben a témakörben alább található Alkalmazás-áruházak URL-címének megadása című részt.|
+|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Kattintson a **Tallózás** gombra, majd válassza ki a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz kioszk módban is futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem élveznek támogatást). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.|
 |**Hangerőszabályzó gombok engedélyezése**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|
 |**Képernyő ébresztőgombjának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|
 
@@ -166,7 +166,7 @@ A **Nem kompatibilis alkalmazások jelentése** beállítás használatával meg
 2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
 
 #### Alkalmazás-áruházak URL-címének megadása
-Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, illetve **Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása** beállításban (csak iOS rendszerben), használja a következő formátumot:
+Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, használja a következő formátumot:
 
 A [Google Play Alkalmazások szakaszában](https://play.google.com/store/apps) keresse meg a használni kívánt alkalmazást.
 
@@ -177,7 +177,7 @@ Nyissa meg az alkalmazás telepítési lapját, és másolja az URL-címet a vá
 ## Egyéni szabályzatbeállítások
 A Microsoft Intune **Android egyéni konfigurációs házirenddel** OMA-URI-beállításokat telepíthet, melyekkel vezérelhetők az Android-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az ezekkel a szabályzatokkal konfigurálható beállításokkal kapcsolatos további információkért lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az ezekkel a házirendekkel konfigurálható beállításokkal kapcsolatos további információért lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
 > Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják. További információkért olvassa el a témakörben alább található Egyéni Wi-Fi-profil konfigurálása előmegosztott kulccsal című részt.
@@ -258,6 +258,6 @@ Bár az Intune támogatja az Android-eszközök Wi-Fi-profiljait, ez a szolgált
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
