@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,26 +28,31 @@ ms.suite: ems
 
 # Az eszköz titkosítása
 
-Ha vállalata vagy szervezete megköveteli Android-eszközének titkosítását a vállalati fájlokhoz, levelekhez vagy adatokhoz való hozzáféréshez, titkosítsa az eszközt a következő lépésekkel:
+Ha a vállalata vagy szervezete megköveteli Android-eszközének titkosítását a vállalati fájlokhoz, levelekhez vagy adatokhoz való hozzáféréshez, az eszközt az alábbi lépésekkel titkosíthatja. Ha a rendszergazda ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
 
-1.  Győződjön meg arról, hogy az eszköz csatlakoztatva van a töltőhöz.
+Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad. 
 
-2.  Koppintson a **Keresés** elemre. A Search (Keresés) mezőbe írja be a **company portal** (vállalati portál) kifejezést..
+1.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön. 
 
-3.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön.
+2.  A **Beállítások** alatt kattintson a **Biztonság** &gt; **Telefon titkosítása** lehetőségre.
+    (Egyes telefonokon a **Tárolás** &gt; **Tárolás titkosítása** vagy a **Tárolás** &gt; **Zárolási képernyő és biztonság** &gt; **További biztonsági beállítások** alatt található a „Titkosítás” opció).
 
-4.  A Settings (Beállítások) lehetőségnél kattintson a **Security** (Biztonság) &gt; **Encrypt Phone** (Eszköz titkosítása) lehetőségre..
-    (Egyes telefonokon a **Storage** &gt;  (Tárhely)**Storage encryption** (Tárhely titkosítása) lehetőséget kell választania.)).
+3.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
 
-5.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
+### Mi a teendő ha problémába ütközik?
+**Probléma**: Már titkosította az eszközt, és a következők egyikét látja: – A titkosítás gomb le van tiltva.
+– Egy üzenet, amely jelzi, hogy titkosítania kell az eszközt.
+– Hibaüzenet a Vállalati portál alkalmazás használatakor.
 
-6.  [Az eszköznek a Microsoft Intune-ban való regisztrálásával foglalkozó cikk](enroll-your-device-in-Intune-android.md) utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e a Microsoft Intune-ban..
+**Megoldás**: Győződjön meg arról, hogy beállított egy PIN-kódot vagy jelszót az eszközön.
+
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
