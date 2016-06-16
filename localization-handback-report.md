@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39bcea03cad061e5b84e073cc5affcdd14fc6015/InTuneDocs/EndUser/encrypt-your-device-android.md) | InSyncHandedBackSuccess | [Details](#22e9071171d2dc63562e94cabe2abdec3b2bd85e288)
 
 ## Item Details
+##### <a name='22e9071171d2dc63562e94cabe2abdec3b2bd85e288'></a> Source: [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39bcea03cad061e5b84e073cc5affcdd14fc6015/InTuneDocs/EndUser/encrypt-your-device-android.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/07cd3feb86989a6a081eba6721e37be4f9d9a445/InTuneDocs/EndUser/encrypt-your-device-android.md)
+* Handoff File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/8e7ecc00bd34d7f71e0bae2115370ed0b8937b4e/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf)
+* Handoff Datetime: 2016-06-07 22:43:55
+* Handoff Reason: Include
+* Archive File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/ee1177a1033ff616db6e2eda0fd6605da46595e8/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf)
+* Archive Datetime: 2016-06-09 02:10:17
+* Handback File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/8b4bc76dfbe706024fac1ad5ad325bd126c91d88/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.hu-hu.xlf)
+* Handback Datetime: 2016-06-16 19:38:37
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
