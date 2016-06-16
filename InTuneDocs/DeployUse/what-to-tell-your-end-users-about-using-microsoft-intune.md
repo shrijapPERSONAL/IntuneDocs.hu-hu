@@ -34,6 +34,8 @@ Az itt szereplő hivatkozások és információk a következőkben segítenek:
 - Megismerni, hogy a felhasználóknak milyen lépéseket kell tenniük az Intune-ban különböző feladatok végrehajtásához.
 - Az információk átadásával segíthet a felhasználóknak elvégezni a megfelelő lépéseket és megoldani az esetleges problémákat az Intune használata során.
 
+Ne felejtse el megadni a rendszergazda kapcsolattartási adatait a [Vállalati portál testreszabásakor](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7), hogy a felhasználók szükség esetén tudjanak segítséget kérni.
+
 
 ## Hol találnak a végfelhasználók információt a gyakori feladatokról?
 
@@ -61,9 +63,9 @@ Ha szeretné megtudni, hogy a végfelhasználók hogyan tölthetnek le alkalmaz�
 
 ## A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
-Ha segíteni szeretne felhasználóinak megoldani a Vállalati portál használata során felmerülő esetleges problémákat, tekintse meg, hogy [milyen üzenetekkel találkozhatnak a Vállalati portálon](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)..
+Ha segíteni szeretne felhasználóinak megoldani a Vállalati portál használata során felmerülő esetleges problémákat, tekintse meg, hogy [milyen üzenetekkel találkozhatnak a Vállalati portálon](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A Mac OS X-házirendek beállításai | Microsoft Intune
+title: Szabályzatok beállításai Mac OS X rendszeren | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

@@ -90,11 +90,11 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
   **Alapértelmezett érték = Igen**
 ##  A hozzáférési szabályzatok beállításai iOS rendszeren
 A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra utal, amelyekhez MAM-szabályzatot állítottak be.
-- **PIN-kód megkövetelése a hozzáféréshez:** ha szeretné, hogy a szabályzattal felügyelt alkalmazások használatához PIN-kód megadása legyen szükséges, válassza az **Igen** lehetőséget. Ha a felhasználó első alkalommal futtatja az alkalmazást munkahelyi környezetben, a rendszer a kód beállítására kéri.
+- **PIN-kód megkövetelése a hozzáféréshez:** Ha azt szeretné, hogy a szabályzattal felügyelt alkalmazások használatához PIN-kód megadása legyen szükséges, válassza az **Igen** lehetőséget. Ha a felhasználó első alkalommal futtatja az alkalmazást munkahelyi környezetben, a rendszer a kód beállítására kéri.
 
   **Alapértelmezett érték = Igen**
     -  **Egyszerű PIN-kód engedélyezése:** Azt határozza meg, hogy a felhasználó használhat-e egyszerű PIN-kódokat (például 1234 vagy 1111). **Alapértelmezett érték = Igen**.
-    - **PIN-kód hossza:** azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kel tartalmazniuk. **Alapértelmezett érték = 4**
+    - **PIN-kód hossza:** Azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kell tartalmazniuk. **Alapértelmezett érték = 4**
     - **Próbálkozások száma a PIN kód alaphelyzetbe állítása előtt:** Itt beállíthatja, hogy hányszor tehessen kísérletet a felhasználó a PIN-kód megadására, mielőtt a rendszer a PIN-kód alaphelyzetbe állítását kérné.
   **A beállításnak nincs alapértelmezett értéke**.
 

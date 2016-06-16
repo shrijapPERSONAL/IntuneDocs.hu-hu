@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,23 +48,24 @@ Az Intune a következő kapcsolattípusokat használó VPN-profilok létrehozás
 
 
 
-Kapcsolat típusa |iOS és Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 asztali és mobil verziója |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Kapcsolat típusa |iOS és Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 asztali és mobil verziója |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Igen |Igen   |Nem    |     Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
 Pulse Secure|Igen  |Igen |Igen   |Nem  |Igen  |Igen| Igen|        
 F5 Edge Client|Igen |Igen |Igen |Nem  |Igen  |   Igen |  Igen|   
 Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Nem  |Igen |Igen |Igen|         
 CheckPoint Mobile VPN|Igen |Igen |Igen |Igen |Igen|Igen|Igen|
-Microsoft SSL (SSTP)|Nem |Nem |Nem |Nem |Nem|Nem|Nem|
-Microsoft Automatic|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
-IKEv2|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
-PPTP|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
-L2TP|Nem |Nem |Nem |Nem |Nem|Nem|Igen|
+Microsoft SSL (SSTP)|Nem |Nem |Nem |Nem |Nem|Nem|VPNv1 OMA-URI *|
+Microsoft Automatic|Nem |Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
+IKEv2|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
+PPTP|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Nem|Igen|
+L2TP|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
 
+\* A Windows 10-hez egyébként rendelkezésre álló további beállítások nélkül.
 
 > [!IMPORTANT] Az eszközökre alkalmazott VPN-profilok használatához telepítenie kell a megfelelő VPN-alkalmazást a profilhoz. A megfelelő alkalmazás Intune-nal történő telepítéséhez a következő dokumentumban talál segítséget: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).  
 
- Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszból tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
+ Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszban tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
 
 ## A VPN-profilok védelmének biztosítása
 
@@ -76,7 +77,7 @@ A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy .PFX-tanúsítv
 
 Ez identitástanúsítványként is ismert, és segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy főtanúsítvánnyal), amelyet Ön annak érdekében hozott létre, hogy engedélyezze a felhasználó eszközének a csatlakozást. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
 
-A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
+A tanúsítványprofilok Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
 
 ### Felhasználónév és jelszó
 
@@ -134,7 +135,7 @@ Beállítás neve  |További információ
 **Társított alkalmazások**     | Megadhatja a VPN-kapcsolatot automatikusan használó alkalmazások listáját. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén – adja meg a Csomagcsalád nevét, valamint asztali alkalmazások esetén – adja meg az alkalmazás fájlútvonalát.          
 
 
-> [!IMPORTANT] Javasoljuk, hogy az alkalmazásonkénti VPN-konfigurációban való használat céljából összeállított alkalmazáslistákat mindig lássa el védelemmel. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
+> [!IMPORTANT] Javasoljuk, hogy az alkalmazásonkénti VPN-konfigurációban való használat céljából összeállított alkalmazáslistákat mindig helyezze biztonságba. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést biztosíthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták biztonságba helyezésének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
 
 Többek között a következő esetben lehet érdemes vállalati határbeállításokat használni. Ha a VPN-t csak távoli asztalokhoz szeretné engedélyezni, akkor létre kell hoznia például egy olyan hálózati forgalmi szabályt, amely engedélyezi a 27-es számú protokollhoz tartozó forgalmat a 3996-os külső porton. A VPN-t csak ez a típusú forgalom fogja használni.
 
@@ -150,7 +151,7 @@ Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
@@ -164,6 +165,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 [Alkalmazásonkénti VPN az Android Pulse Secure használatával](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

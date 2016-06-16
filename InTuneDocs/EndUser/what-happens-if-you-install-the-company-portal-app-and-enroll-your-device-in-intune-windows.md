@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?
 
-Ha szeretné megtudni, hogy mi történik a Vállalati portál alkalmazás telepítésekor és az eszköznek az Intune-beli regisztrálásakor, kattintson az eszközének megfelelő hivatkozásra a fenti „A cikk tartalma” részben. Windows 10-eszközökkel kapcsolatos információkért nyissa meg [ezt az oldalt](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Ha szeretné megtudni, hogy mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor, kattintson az eszközének megfelelő hivatkozásra a fenti „A cikk tartalma” részben. Windows 10-eszközökkel kapcsolatos információkért nyissa meg [ezt az oldalt](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## Windows 8.1 és Windows RT
 Miután telepítette a Vállalati portál alkalmazást, és annak használatával regisztrálta a Windows 8.1 Enterprise, Windows 8.1 Professional vagy Windows RT rendszerű eszközét az Intune-ban, lehetősége nyílik a következőkre:
@@ -124,6 +124,8 @@ Számítógép hozzáadásakor:
 -   Az IT rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
 
 -   Az IT rendszergazda házirendeket léptethet életbe a számítógépen. Lehetséges például, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen; ebből fakadóan kizárhatja magát a számítógépről, vagy letörölheti az összes adatot a számítógép merevlemezéről, ha túlságosan sokszor adja meg hibásan a jelszót.
+
+Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)

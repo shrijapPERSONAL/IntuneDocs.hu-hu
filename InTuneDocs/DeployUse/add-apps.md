@@ -33,7 +33,7 @@ Az Intune által támogatott összes eszköztípusra telepíthetők alkalmazáso
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). A gyakran használt parancssori kapcsolók listáját [itt](https://support.microsoft.com/en-us/kb/227091) találja.
+- Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). A gyakran használt parancssori kapcsolók listája [itt](https://support.microsoft.com/en-us/kb/227091) található.
 - Az alkalmazás telepítőprogramja által igényelt minden további fájlnak és mappának elérhetőnek kell lennie az alkalmazás telepítési fájljai számára megadott helyen.
 - A legtöbb esetben a Windows Installer-fájlok (.msi) és a Windows Installer-javítófájlok (.msp) fájlok Intune általi telepítése nem igényel parancssori argumentumokat. Tanulmányozza az alkalmazás dokumentációját. Ha parancssori argumentumokra van szükség, azokat Név=Érték párként kell megadni (például TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ Az ilyen típusú alkalmazást feltölti a rendszer a felhőalapú tárhelyre.
 
 Az ilyen típusú alkalmazást feltölti a rendszer a felhőalapú tárhelyre.
 
-Jelenleg a végfelhasználók számára nem tud közvetlenül telepíteni vállalati alkalmazásokat az iOS rendszerhez készült Vállalati portál alkalmazásából. A telepítés az iOS App Store-ban közzétett alkalmazásokra vonatkozó korlátozások miatt nem lehetséges (lásd az [App Store felülvizsgálati irányelveit](https://developer.apple.com/app-store/review/guidelines/)). A felhasználók úgy férhetnek hozzá a vállalati alkalmazásokhoz (beleértve a felügyelt App Store-alkalmazásokat és az üzletági alkalmazáscsomagokat is), ha elindítják a Vállalati portál alkalmazást az eszközükön, majd a Vállalati alkalmazások csempére koppintanak, amely megnyitja a böngészőt, és átirányítja őket az Intune webportáljára.
+A végfelhasználók jelenleg nem tudnak közvetlenül telepíteni vállalati alkalmazásokat az iOS rendszerhez készült Intune Vállalati portál alkalmazásból. A telepítés az iOS App Store-ban közzétett alkalmazásokra vonatkozó korlátozások miatt nem lehetséges (lásd az [App Store felülvizsgálati irányelveit](https://developer.apple.com/app-store/review/guidelines/)). A felhasználók úgy férhetnek hozzá a vállalati alkalmazásokhoz (beleértve a felügyelt App Store-alkalmazásokat és az üzletági alkalmazáscsomagokat is), ha elindítják a Vállalati portál alkalmazást az eszközükön, majd a Vállalati alkalmazások csempére koppintanak, amely megnyitja a böngészőt, és átirányítja őket az Intune webportáljára.
 
 ### **Windows Phone-alkalmazáscsomag (&#42;.xap, .appx, .appxbundle)**
 - Alkalmazások telepítéséhez vállalati mobil-kódaláíró tanúsítvánnyal kell rendelkeznie. Részletekért olvassa el a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](set-up-windows-phone-management-with-microsoft-intune.md) című cikket.
@@ -81,7 +81,7 @@ A következők esetében használatos:
 A külső hivatkozásokon alapuló alkalmazásokat nem tárolja a rendszer az Intune felhőbeli tárhelyén.
 ### **Felügyelt iOS-alkalmazás az App Store-ból**
 Az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését teszi lehetővé. [Mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is társíthat [kompatibilis alkalmazásokhoz](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
-> [!TIP] A mobileszközökre vonatkozó beállítások csak azt követően válnak elérhetővé, hogy a [Mobileszköz-felügyeleti szolgáltató megadása beállítást](get-ready-to-enroll-devices-in-microsoft-intune.md) az Intune-ra állította.
+> [!TIP] A mobileszközökre vonatkozó beállítások csak azt követően válnak elérhetővé, hogy a [Mobileszköz-kezelő szolgáltató megadása beállítást](get-ready-to-enroll-devices-in-microsoft-intune.md) az Intune-ra állította.
 
 ## Az univerzális Windows-platformra épülő alkalmazások támogatása
 A Windows 10-es eszközökre közvetlen telepítésre szolgáló kulcs nélkül is telepíthetők az üzletági alkalmazások. A közvetlen telepítés azonban csak akkor lehetséges, ha a **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** beállításkulcs értéke **1**.

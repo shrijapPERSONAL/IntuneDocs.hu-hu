@@ -55,7 +55,7 @@ Ha a felhasználó nem engedélyezi a hozzáférést, attól továbbra is haszn�
 Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja azt, az üzenet újból megjelenik, amikor a felhasználó a regisztrálást követően először bejelentkezik a Vállalati portál alkalmazásba.</br></br>Amennyiben a felhasználó később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Telefon** lapon teheti ezt meg.
 
 ### További információ biztosítása a felhasználónak
-5 .lépés a következőben: [Android-eszköz regisztrálása az Intune-ban](/Intune/EndUser/enroll-your-device-in-intune-android)
+5. lépés a következőben: [Android-eszköz regisztrálása az Intune-ban](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)
 

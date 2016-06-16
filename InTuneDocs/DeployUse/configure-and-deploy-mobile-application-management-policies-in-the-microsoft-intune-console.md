@@ -42,9 +42,9 @@ Az Intune más szabályzataitól eltérően a mobilalkalmazás-kezelési szabál
 
 Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmazásnak tartalmaznia kell a Microsoft alkalmazás-szoftverfejlesztői készletét (SDK). Ilyen típusú alkalmazást az alábbi két módszerrel lehet beszerezni:
 
--   **Házirend által kezelt alkalmazás használata** – Beépített App SDK-val rendelkezik. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. [A Microsoft Intune mobilalkalmazás-kezelési szabályzatokkal használható alkalmazások](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) listájának megtekintése.
+-   **Házirend által kezelt alkalmazás használata** – Beépített App SDK-val rendelkezik. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. Itt megtekintheti [a Microsoft Intune mobilalkalmazás-kezelési szabályzatokkal használható alkalmazásokat](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Becsomagolt alkalmazás használata** – Alkalmazások, amelyek abból a célból lettek újracsomagolva a **Microsoft Intune alkalmazásburkoló eszközzel**, hogy tartalmazzák az App SDK-t. Ez az eszköz általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használatos. Nem használható az alkalmazás-áruházból letöltött alkalmazások feldolgozásához. Lásd: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Becsomagolt alkalmazás használata** – Alkalmazások, amelyek abból a célból lettek újracsomagolva a **Microsoft Intune alkalmazásburkoló eszközzel**, hogy tartalmazzák az App SDK-t. Ez az eszköz általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használatos. Nem használható az alkalmazás-áruházból letöltött alkalmazások feldolgozásához. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 Néhány kezelt alkalmazás, például az iOS és az Android rendszer Outlook alkalmazása támogatja a **többszörös identitást**. Ez azt jelenti, hogy az Intune csak az alkalmazásban lévő vállalati fiókokra vagy adatokra alkalmazza a felügyeleti beállításokat.
 
@@ -56,7 +56,7 @@ Az Outlook alkalmazás használata esetén például:
 
 -   A használt vállalati fióknak egyeznie kell azzal a fiókkal, amelyet az eszköz az Intune-nal végzett regisztrációhoz használt.
 
-> [!TIP] Ha a Configuration Managerrel használja az Intune-t, olvassa el az [Alkalmazások vezérlése mobilalkalmazás-felügyeleti szabályzatokkal a Configuration Managerben című témakört](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP] Ha a Configuration Managerrel használja az Intune-t, olvassa el az [Alkalmazások vezérlése mobilalkalmazás-felügyeleti szabályzatokkal a Configuration Managerben](https://technet.microsoft.com/library/mt131414.aspx) című témakört.
 
 ## Alkalmazás létrehozása és telepítése mobilalkalmazás-kezelési házirenddel
 
@@ -85,7 +85,7 @@ Amikor közzétesz egy kezelt alkalmazást, az eljárások különböznek attól
 
 #### Házirend által kezelt alkalmazás közzététele
 
-1.  Ha készen áll rá, hogy feltöltse az alkalmazást felhőtárhelyére, járjon el a következő dokumentum utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Ha készen áll rá, hogy feltöltse az alkalmazást a felhőtárhelyre, járjon el a következő cikk utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  iOS-alkalmazások esetén válassza a **Kezelt iOS-alkalmazás az alkalmazás-áruházból**lehetőséget az **Adja meg, hogy hogyan legyen elérhetővé téve a szoftver az eszközöknek**csoportban.
 
@@ -99,7 +99,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
 
 #### A Microsoft Intune alkalmazásburkoló eszközzel feldolgozott alkalmazás közzététele
 
-1.  Ha készen áll rá, hogy feltöltse az alkalmazást felhőtárhelyére, járjon el a következő dokumentum utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Ha készen áll rá, hogy feltöltse az alkalmazást a felhőtárhelyre, járjon el a következő cikk utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  Válassza a **Szoftvertelepítő**lehetőséget az **Adja meg, hogy hogyan legyen elérhetővé téve a szoftver az eszközöknek**csoportban.
 
@@ -119,7 +119,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
 
     -   **Mobilalkalmazás-kezelési házirend (iOS 7 és újabb)**
 
-    Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. További információkért lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+    Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. További információt [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) című témakörben találhat.
 
 3.  Adja meg saját igényeinek megfelelően a következő beállításokat: A beállítások eltérhetnek attól függően, hogy a házirendet milyen típusú eszközhöz konfigurálja.
 
@@ -149,9 +149,9 @@ Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok
 ## **4. lépés:** Az alkalmazás társítása egy mobilalkalmazás-kezelési házirenddel, majd az alkalmazás telepítése
 Az alkalmazás telepítésekor gondoskodjon arról, hogy a **Mobilalkalmazás-kezelés** lapon a mobilalkalmazás-kezelési házirend kiválasztásával társítja a házirendet az alkalmazással.
 
-További információkért lásd: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md).
+További információt az [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md) című témakörben találhat.
 
-> [!IMPORTANT] Az iOS 7.1-es verziójánál korábbi operációs rendszereket futtató eszközök esetében a társított házirendeket a rendszer nem távolítja el, amikor az alkalmazást magát eltávolítják.
+> [!IMPORTANT] Az iOS 7.1-es verziójánál korábbi operációs rendszereket futtató eszközök esetében a társított házirendeket a rendszer nem távolítja el, amikor az alkalmazást eltávolítják.
 >
 > Ha az eszközt kiléptetik az Intune-ból, a rendszer nem távolítja el a házirendeket az alkalmazásokból; az alkalmazások, amelyekre házirendeket alkalmaztak, eltávolítás és újratelepítés után is megőrzik a házirend-beállításokat.
 

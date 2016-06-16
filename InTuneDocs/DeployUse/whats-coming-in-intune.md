@@ -30,29 +30,17 @@ Ezekre az információkra igen szigorú titoktartási szerződés vonatkozik. Az
 
 A lap tartalmát rendszeresen frissítjük. A várható újdonságokkal kapcsolatban friss hírekért látogasson vissza.
 
-A következő változtatások vannak fejlesztés alatt az Intune-hoz. Mindezeket a funkciókat a hibrid ügyfélkörnyezetek is támogatni fogják (tehát az Intune-nal integrált Configuration Manager is). Az új hibrid funkciókkal kapcsolatos további információkért tekintse meg a [hibrid újdonságok oldalát](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+A következő változtatások vannak fejlesztés alatt az Intune-hoz. Mindezeket a funkciókat a hibrid ügyfélkörnyezetek is támogatni fogják (tehát az Intune-nal integrált Configuration Manager is). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok oldalát](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
-## Intune-kommunikáció
-- **Az Intune-ra vonatkozó szolgáltatásállapot-adatok** átkerültek a központi, a többi Microsoft-szolgáltatásról is információt nyújtó helyre. Ezt az információt mostantól az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) Szolgáltatás állapota menüjében találja meg. További információkat [ebben a blogposztban](https://blogs.technet.microsoft.com/microsoftintune/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/) talál.
-
-- **Az üzenetközpont felhasználói felület bevezetése.** Az Intune-nak az [Office 365 felügyeleti portálra](https://portal.office.com/) való áttelepítése keretében az Office 365 üzenetközpontját fogjuk használni az új funkciókkal kapcsolatos és egyéb típusú értesítések küldéséhez. Emellett az Office 365 Admin felügyeleti társalkalmazás telepítésével mobiltelefonos értesítéseket kaphat, és egyszerűen továbbíthat bármilyen üzenetet a felhasználóknak vagy egy terjesztési célú aliasra.
-Az üzenetközpontot a májusi kiadással kezdjük el használni, és a továbbiakban itt értesítjük a felhasználókat a frissítések elkészültéről, valamint az Intune új és továbbfejlesztett funkcióiról. Az üzenetközpont megtekintéséhez jelentkezzen be az [Office 365 felügyeleti portálra](https://portal.office.com/), és a bal oldali navigációs ablakból válassza az **Üzenetközpont** elemet.
 
 ## Alkalmazáskezelés
-- **MAM-szabályzatokkal való felügyeletre alkalmas új alkalmazások.** Az androidos Microsoft Word, Excel és PowerPoint alkalmazásokhoz mostantól az Intune-ban nem regisztrált eszközökön is MAM-szabályzatok társíthatók. A támogatott alkalmazások teljes listájának megtekintéséhez keresse fel a Microsoft Intune mobilalkalmazás-galériát a [Microsoft Intune alkalmazáspartnerek oldalán](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
-
+- **A Windows 10 Enterprise adatházirendjének változásai.** A Windows 10 Enterprise adatházirendjéhez tartozó alkalmazásházirend javítása miatt, ha alkalmazásszabályokkal konfigurált házirendet ment (korábbi nevén védett alkalmazások), minden eddig konfigurált szabály el fog veszni. A folytatáshoz újra kell konfigurálnia ezeket az alkalmazásszabályokat.
 
 - **Feltételes hozzáférés böngészőhöz.** Lehetősége nyílik majd, hogy feltételes hozzáférési házirendet állítson be az Exchange Online-hoz és a SharePoint Online-hoz, így azokat csak a felügyelt és a szabályozásoknak megfelelő iOS- és Android-eszközök érhetik majd el. Az Outlook Web Accessbe (OWA) és a SharePoint-webhelyekre iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a rendszer a bejelentkezés előtt kérni fogja az eszköz Intune-beli regisztrálását, valamint az esetleges szabályozási hiányosságok elhárítását.
 <!---TFS 1175844--->
 
-- **MAM SDK: PIN-kód hosszának konfigurálása.** A mobilalkalmazás-felügyeleti (MAM-) alkalmazásoknál az eszközök PIN-kódjához hasonlóan meghatározható lesz a PIN-kód hossza. Ebben az esetben a végfelhasználóknak meg kell felelniük a beállított új korlátozásoknak. A felhasználók számára kissé más képernyő jelenik meg a hosszabb PIN-kód beviteléhez.
-<!--- TFS 1104753--->
-
-- **Skype Vállalati verzió Androidra.** Az Intune-rendszergazdák már a Skype Vállalati verziót is beállíthatják mobilalkalmazás-felügyeleti (MAM-) célként, regisztrálási házirendek nélkül.  A felhasználók bejelentkezését követően a rendszer érvénybe lépteti a MAM-házirendeket.
-<!--- TFS item 1248444 --->
-
-- **Skype Vállalati verzió iOS-re.** Az Intune-rendszergazdák már a Skype Vállalati verziót is beállíthatják mobilalkalmazás-felügyeleti (MAM-) célként, regisztrálási házirendek nélkül.  A felhasználók bejelentkezését követően a rendszer érvénybe lépteti a MAM-házirendeket.
-<!--- TFS item 1248443 --->
+- **A Dynamics CRM Online támogatja a feltételes hozzáférést.** Az ügyfelek feltételes hozzáférési házirendet állíthatnak be a Dynamics CRM Online-hoz, hogy csak a felügyelt és a szabályozásnak megfelelő iOS- és Android-eszközök érhessék el. A Dynamics CRM mobilalkalmazásba iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a bejelentkezés végrehajtása előtt a rendszer kérni fogja a regisztrálást az Intune-ba, valamint a meg nem felelést okozó problémák megszüntetését.
+<!---TFS1295358--->
 
 ### Xamarin-támogatás
 A Microsoft Intune App SDK már támogatja a Xamarin-alkalmazásokat a következő használati helyzetekben:
@@ -64,33 +52,16 @@ Ha segítségre van szüksége a megfelelő módszer kiválasztásához, lásd: 
 <!--- TFS 1061478 & TFS 1152340--->
 
 
-## Eszközkezelés
-- **Távsegítségi munkamenetek Windows-számítógépekhez.** A Windows asztali ügynökprogrammal felügyelt számítógépek TeamViewer-integrációja révén távsegítségi munkameneteket kezdeményezhet a Windows asztali ügynökprogrammal felügyelt számítógépekkel, ami a végfelhasználói támogatási szolgálatok munkájához nyújt segítséget. Ez a lehetőség a Windows 7, 8, 8.1 és Windows 10 rendszerekre egyaránt kiterjed.
-<!--- TFS 1284856--->
-
-
-
 ## Vállalati portál
-
-- **Végfelhasználói bejelentési értesítések:** A végfelhasználók mostantól bejelentési értesítést kapnak az androidos Vállalati portál alkalmazástól, amikor regisztrálják eszközüket a Vállalati portálon, illetve amikor eltávolítják eszközüket a portálról.
-- **Az eszközazonosító sáv több információt nyújt a végfelhasználók számára.** A végfelhasználók könnyebben azonosíthatják a választott eszközt a Vállalati portál webhelyen. Ha nem jól választottak, a kezdőlapi sávon a „Koppintson ide” hivatkozással kijelölhetik a megfelelő eszközt.
-<!--- TFS 1231157--->
-
-- **Változások a készülékregisztráció-kezelői fiókokban az androidos Vállalati portál alkalmazásban.** A jobb teljesítmény és méretezés érdekében az Intune a jövőben nem fogja megjeleníteni az összes készülékregisztráció-kezelő (DEM-) eszközt az androidos Vállalati portál alkalmazás **Saját eszközök** panelén. Csak az alkalmazást futtató helyi eszköz jelenik meg, és az is csak abban az esetben, ha korábban már regisztrálták a Vállalati portálon. A DEM-felhasználó a helyi eszközön elvégezheti a kapcsolódó műveleteket, de a további regisztrált eszközök távoli felügyeleti teendői csak az Intune felügyeleti konzolon hajthatók végre.
-
-- **Változások a készülékregisztráció-kezelői fiókokban az iOS-es Vállalati portál alkalmazásban.** A jobb teljesítmény és méretezhetőség érdekében az Intune mostantól nem jeleníti meg az összes készülékregisztráció-kezelő (DEM-) eszközt az iOS-es Vállalati portál alkalmazás Saját eszközök panelén. Csak az alkalmazást futtató helyi eszköz fog megjelenni, és csak abban az esetben, ha azt korábban már regisztrálták a Vállalati portálon. A DEM-felhasználó a helyi eszközön elvégezheti a kapcsolódó műveleteket, de a további regisztrált eszközök távoli felügyeleti teendői csak az Intune felügyeleti konzolon hajthatók végre.  Emellett az Intune-ból kivezettük a DEM-fiókok használati lehetőségét az Apple Device Enrollment Programmal és az Apple Configurator eszközzel. Ezek a regisztrálási módszerek alapértelmezés szerint támogatják a megosztott iOS-eszközök felhasználó nélküli regisztrálását.  Csak akkor használjon DEM-fiókot, ha a megosztott eszközök felhasználó nélküli regisztrálása nem lehetséges.
-
-
+**Változások a készülékregisztráció-kezelői fiókokban az iOS-es Vállalati portál alkalmazásban.** A jobb teljesítmény és méretezhetőség érdekében az Intune mostantól nem jeleníti meg az összes készülékregisztráció-kezelő (DEM-) eszközt az iOS-es Vállalati portál alkalmazás Saját eszközök panelén. Csak az alkalmazást futtató helyi eszköz fog megjelenni, és csak abban az esetben, ha azt korábban már regisztrálták a Vállalati portálon. A DEM-felhasználó a helyi eszközön elvégezheti a kapcsolódó műveleteket, de a további regisztrált eszközök távoli felügyeleti teendői csak az Intune felügyeleti konzolon hajthatók végre.  Emellett az Intune-ból kivezettük a DEM-fiókok használati lehetőségét az Apple Device Enrollment Programmal és az Apple Configurator eszközzel. Ezek a regisztrálási módszerek alapértelmezés szerint támogatják a megosztott iOS-eszközök felhasználó nélküli regisztrálását.  Csak akkor használjon DEM-fiókot, ha a megosztott eszközök felhasználó nélküli regisztrálása nem lehetséges.
+<!---TFS 1233681--->
 
 ## Szolgáltatások érvénytelenítése
+**A Windows 8 és a Windows Phone 8 vállalati portál alkalmazásai 2016. szeptembertől elavulttá válnak.** 2016. szeptembertől a Microsoft Intune már nem fogja támogatni a Microsoft Intune vállalati portál alkalmazásait Windows Phone 8 és Windows 8 platformokon. Frissítése az eszközöket a Windows 8.1 és a Windows Phone 8.1 rendszerekre, és használja a megfelelő Windows 8.1 és Windows Phone 8.1 vállalati portál alkalmazásokat az alkalmazásoknak ezekre az eszközökre történő további terjesztésére.
+<!---TFS 1255391--->
+
 **Az értesítési szabályok egyéni csoportcélzási lehetősége megszűnik.**
-Az Intune értesítési szabályai határozzák meg, hogy kinek küld e-mail-értesítést az Intune. Jelenleg úgy is beállíthatja az értesítési szabályokat, hogy a rendszer a létrehozott Intune-eszközcsoportokhoz tartozó eszközök összes felhasználójának elküldje az e-maileket. 2016. június 1-jétől fogva a felhasználó által létrehozott csoportok megcélzása nem lesz megvalósítható.
-
-Ma a következő lépések szükségesek ahhoz, hogy egy értesítési szabállyal egy Ön által létrehozott csoportot célozzon meg a Microsoft Intune felügyeleti konzoljában:
-
-A **Felügyelet** munkaterületen kattintson az **Értesítési szabályok** > **Új szabály létrehozása** elemre.
-
-Az Értesítési szabály létrehozása varázsló második lépésében válassza ki a szabály által megcélzott eszközcsoportokat. Ez az eszközcsoportok kiválasztására szolgáló lépés a jövőben nem lesz elérhető az Intune-konzolon.
+Az e-mail-riasztások címzettjeit Intune értesítési szabályok határozzák meg. Jelenleg úgy is beállíthatja az értesítési szabályokat, hogy a rendszer a létrehozott Intune-eszközcsoportokhoz tartozó eszközök összes felhasználójának elküldje az e-maileket. 2016. június 1-jétől fogva a felhasználó által létrehozott csoportok megcélzása nem lesz megvalósítható.
 
 A módosítás előzetes ütemterve a következő:
 - 2016 júniusától az új bérlők számára nem fog megjelenni az Értesítési szabály létrehozása varázsló második lépése. A meglévő bérlőkre ekkor még nem lesz érvényes a változás.
@@ -98,25 +69,21 @@ A módosítás előzetes ütemterve a következő:
 - 2016 októberétől kezdve terveink szerint már egyetlen bérlő számára sem fog megjelenni az eszközcsoportok kiválasztására szolgáló lépés a varázslóban.
 
 <!---   TFS 1278864--->
-**Az iOS-es Vállalati portál alkalmazás támogatására vonatkozó módosítások.**
-Néhány hónapon belül meg fog jelenni egy frissítés az iOS-es Microsoft Intune Vállalati portál alkalmazáshoz, amely csak az iOS 8.0-s vagy újabb rendszerű eszközöket fogja támogatni. Az iOS 8.0-s verziójánál régebbi rendszerrel futó új eszközöket ettől kezdve nem lehet majd regisztrálni. Az iOS 8.0-s verziójánál régebbi rendszerrel futó, de korábban már regisztrált eszközök korlátozott ideig még felügyelhetők, és használhatják a Vállalati portál alkalmazást. A Vállalati portál alkalmazás legújabb verzióját azonban csak az iOS 8.0-s vagy újabb rendszerrel futó eszközök fogják tudni elérni. Javasoljuk, hogy értesítse a felhasználókat, hogy az Intune új funkcióinak teljes körű kihasználása érdekében frissítsenek legalább iOS 8.0 rendszerre.  
+**Az iOS rendszerű vállalati portál alkalmazás támogatására vonatkozó módosítások.**
+A felhasználóknak frissíteniük kell a legújabb iOS rendszerű vállalati portál alkalmazásra. Az elkövetkező hónapokban az iOS rendszerhez készült Microsoft Intune vállalati portál alkalmazás minden felhasználójának az alkalmazás legújabb verzióját kell majd használnia. Az új felhasználók csak a legújabb verziót fogják tudni letölteni, a jelenlegi felhasználóknak pedig frissíteniük kell erre a verzióra. A vállalati portál legújabb verziójához iOS 8.0-s vagy újabb operációs rendszer szükséges, ezért a régebbi iOS-verziót futtató eszközök felhasználói nem fogják tudni használni a vállalati portált, sem pedig regisztrálni, amíg nem frissítik az eszközt iOS 8.0-s vagy újabb verzióra, majd ezt követően a vállalati portál alkalmazást is a legújabb verzióra. Az iOS 8.0-s verziójánál régebbi verziót futtató regisztrált eszközök továbbra is láthatóak és felügyelhetőek lesznek az Intune felügyeleti konzolján.  
 
-- **Intune Viewer-alkalmazások.** Az új RMS-megosztó alkalmazás megjelenésével 2016 augusztusától kezdve megszüntetjük a következő Intune Viewer-alkalmazásokat:
-    - Intune AV Viewer
-    - Intune PDF Viewer
-    - Intune Image Viewer Android-eszközökre a Google Play Áruházból
+**Intune Viewer-alkalmazások.** Az új RMS-megosztó alkalmazás megjelenésével 2016 augusztusától kezdve megszüntetjük a következő Intune Viewer-alkalmazásokat:
+- Intune AV Viewer
+- Intune PDF Viewer
+- Intune Image Viewer Android-eszközökre a Google Play Áruházból
 
-  Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos Rights Management alkalmazás (RMS-megosztó alkalmazás) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. További információk az RMS-megosztó alkalmazásról (a dokumentációra mutató hivatkozással).
-
-
-
-
+Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos Rights Management alkalmazás (RMS-megosztó alkalmazás) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. További információk az RMS-megosztó alkalmazásról (a dokumentációra mutató hivatkozással).
 
 
 ### További információ
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new-in-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

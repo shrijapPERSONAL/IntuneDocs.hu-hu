@@ -38,7 +38,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások felvétele** elemre az Intune Software Publisher elindításához.
 
-    > [!TIP] Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
+    > [!TIP] Előfordulhat, hogy a Software Publisher elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
 
 
 
@@ -50,7 +50,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
     - **Adja meg a szoftver telepítőfájljainak helyét** – Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
     - **A mappában található további fájlokkal és almappákkal együtt** – A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.
 
-    Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![számítógépes Software Publisher](./media/publisher-for-pc.png).
+    Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![számítógépes Software Publisher](./media/publisher-for-pc.png)
 
    Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
 

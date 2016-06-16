@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Az eszköz regisztrációjának törlése az Intune-ból
 
-Amikor törli az androidos eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz.  A törlés további következményeiről további információért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Amikor törli az androidos eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz.  A törlés további következményeiről további információért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
 Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szeretné távolítani a Vállalati portál alkalmazást, kövesse ezeket a lépéseket, vagy tekintse meg ezt a [videót](http://aka.ms/gyq2du):
 
@@ -46,10 +46,11 @@ Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szer
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

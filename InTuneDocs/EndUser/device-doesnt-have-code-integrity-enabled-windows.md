@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,9 +36,11 @@ A Biztonságos rendszerindítás engedélyezése tapasztalt felhasználók álta
 
 Ha számítógépet használ, kapcsolatba léphet az informatikai rendszergazdával, vagy elolvashatja a [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) (Biztonságos rendszerindítás letiltása) oldalon a „To re-enable Secure Boot” (Biztonságos rendszerindítás ismételt engedélyezése) című szakaszt, hogy megpróbálja saját kezűleg engedélyezni a Biztonságos rendszerindítást.
 
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

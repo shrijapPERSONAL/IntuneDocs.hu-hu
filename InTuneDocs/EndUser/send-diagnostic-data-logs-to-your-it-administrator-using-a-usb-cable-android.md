@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ Ha nem mobileszközt, hanem számítógépet használva szeretné elküldeni a n
 
 2.  USB-kábellel csatlakoztassa az Android-eszközt a számítógéphez.
 
-3.  A számítógépen keresse meg a telefon nevével megegyező nevű könyvtárat. Ebben a könyvtárban keresse meg az &lt;Androidos eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ mappát.
+3.  A számítógépen keresse meg a telefon nevével megegyező nevű könyvtárat. Ebben a könyvtárban keresse meg az &lt;Android-eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files mappát.\.
 
 4.  Csatolja az összes fájlt egy e-mailhez, és küldje el azt a rendszergazdának.
+
+Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

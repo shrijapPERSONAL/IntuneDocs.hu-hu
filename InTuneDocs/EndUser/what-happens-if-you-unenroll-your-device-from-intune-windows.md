@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -43,7 +43,7 @@ Amikor eltávolítja a Vállalati portál alkalmazást az eszközről, azzal az 
 
 -   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is van telepítve, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően újra engedélyezni lehet ezt az alkalmazást. Javasoljuk, hogy a Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
 
-    > [!IMPORTANT] Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
+    > [!IMPORTANT] Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, a számítógép védtelen maradhat a vírusokkal és egyéb kártevőkkel szemben.
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása) hatályukat veszítik.
 
@@ -92,10 +92,11 @@ Windows RT-alapú eszköz eltávolításakor a következők történnek:
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
 
+Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

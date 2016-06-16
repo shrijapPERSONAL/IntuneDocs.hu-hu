@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Munkahelyi Microsoft Intune-portál
 
-A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beállítása előtt olvassa el ezt a témakört, valamint ismerkedjen meg a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben leírt követelményekkel.
+Az Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakört.
 
 Az Intune Vállalati portál olyan eszköz, amely a felhasználók számára hozzáférést biztosít a vállalati adatokhoz és alkalmazásokhoz. A Vállalati portál két formában érhető el:
 
@@ -58,6 +58,6 @@ Ahhoz, hogy a felhasználók hozzáférhessenek a Vállalati portálhoz, a felha
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

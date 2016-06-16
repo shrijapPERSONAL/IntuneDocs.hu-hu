@@ -75,9 +75,9 @@ Akkor fontolja meg az Intune-számítógépügyfél használatát, ha a követke
 ## Felügyelet az Exchange ActiveSync segítségével
 Az Exchange ActiveSync segítségével is felügyelheti az eszközöket. Ehhez telepítenie kell az intézményi összekötőt, vagy a beépített Service to Service összekötővel kell kapcsolódnia az Exchange Serverhez.
 
-Az On-Premises Connector telepítésére vonatkozó hardver- és a szoftverkövetelményeket a következő szakaszban találja: [Az On-Premises Connectorra vonatkozó követelmények](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
+A helyszíni összekötő telepítésére vonatkozó hardver- és a szoftverkövetelményekről [A helyszíni összekötőre vonatkozó követelmények](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) című témakörben olvashat.
 
-További információk az On-Premises Connector vagy a Service to Service Connector összekötőnek az Exchange-dzsel történő használatáról: [Mobileszköz-kezelés az Exchange ActiveSync és a Microsoft Intune használatával](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+További információt a helyszíni összekötő vagy a szolgáltatások közötti összekötőnek az Exchange-dzsel történő használatáról a [Mobileszközök felügyeletének beállítása az Exchange ActiveSynckel a Microsoft Intune-ban](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) című témakörben találhat.
 
 
 

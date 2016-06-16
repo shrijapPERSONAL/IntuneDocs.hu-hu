@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Mobilalkalmazás-felügyeleti szabályzatok figyelése a Microsoft Intune-nal
-Miután beállította a MAM-szabályzatot, és alkalmazta a felhasználókra, az Azure-portálon felügyelheti a megfelelési állapotokat. Az Azure portálon információkat talál a házirend által érintett felhasználókról, a megfelelési állapotokról, valamint a végfelhasználók által tapasztalt problémákról.
+Miután beállította a MAM-szabályzatot, és alkalmazta a felhasználókra, az [Azure-portálon](https://portal.azure.com) felügyelheti a megfelelési állapotokat. Az Azure portálon információkat talál a házirend által érintett felhasználókról, a megfelelési állapotokról, valamint a végfelhasználók által tapasztalt problémákról.
 ## Összesített nézet
 Az **Intune mobilalkalmazás-kezelés** panelen megtekintheti a megfelelési állapot összefoglalását, amelynek leírását alább találja:
 
@@ -39,7 +39,7 @@ Az **Intune mobilalkalmazás-kezelés** panelen megtekintheti a megfelelési ál
 
 -   **NEM TALÁLHATÓ HÁZIREND:** azon felhasználók száma, akik használják ugyan a szabályzathoz társított alkalmazásokat, de nem vonatkozik rájuk a beállított szabályzat.  Érdemes megfontolni ezen felhasználók bevonását a házirend hatálya alá.
 
-- **Megjelölt felhasználók:** a problémákat tapasztaló felhasználók száma. A rendszer jelenleg a **Megjelölt felhasználók** részben kizárólag a feltört eszközt használó felhasználókat jelöli meg..
+- **Megjelölt felhasználók:** a problémákat tapasztaló felhasználók száma. A rendszer jelenleg a **Megjelölt felhasználók** részben kizárólag a feltört eszközt használó felhasználókat jelöli meg.
 
 
 ## Részletes nézet
@@ -77,6 +77,6 @@ A részletes nézetben megtekinthető a hibaüzenet, az alkalmazás neve, amelyn
 [Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

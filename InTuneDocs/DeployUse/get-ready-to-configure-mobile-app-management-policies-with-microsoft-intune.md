@@ -35,7 +35,7 @@ A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új fe
 
 Ha most ismerkedik az Azure-portál használatával, az [Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakör elolvasásával gyorsan áttekintheti a tudnivalókat.
 
-Ha jelenleg az **Intune felügyeleti konzolt** használja az eszközei kezelésére, az **Intune felügyeleti konzol** segítségével létrehozhat olyan MAM-szabályzatokat, amelyek az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatják, de javasoljuk, hogy még az Intune-ban regisztrált eszközök esetén is inkább az Azure-portált használja. A MAM-szabályzatoknak a Intune felügyeleti konzolon történő létrehozásával kapcsolatban [itt](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) talál útmutatást.
+Ha jelenleg az **Intune felügyeleti konzolt** használja az eszközeinek kezelésére, az **Intune felügyeleti konzol** segítségével létrehozhat olyan MAM-szabályzatokat, amelyek az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatják, de javasoljuk, hogy még az Intune-ban regisztrált eszközök esetében is inkább az Azure-portált használja. A MAM-szabályzatoknak a Intune felügyeleti konzolon történő létrehozásával kapcsolatban [itt](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) talál útmutatást.
 
 >[!IMPORTANT]
 > Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. Ha mind az Intune felügyeleti konzoljában, mind az Azure-portálon létrehoz MAM-szabályzatokat, a rendszer az Azure-portálon érvényes szabályzatot alkalmazza az alkalmazásokra, illetve telepíti a felhasználók számára.
@@ -47,11 +47,11 @@ Ha jelenleg az **Intune felügyeleti konzolt** használja az eszközei kezelés�
 - Android 4 vagy újabb verzió
 
 ##  Támogatott alkalmazások
-* **Microsoft-alkalmazások:** Ezek az alkalmazások beépítve tartalmazzák az Intune App SDK-t, ezért a MAM-szabályzatok alkalmazása előtt nincs szükség további feldolgozásukra.
+* **Microsoft-alkalmazások:** Ezek az alkalmazások beépítve tartalmazzák az Intune App SDK-t, és a MAM-szabályzatok alkalmazása előtt nincs szükség további feldolgozásra.
 A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez keresse fel a [Microsoft Intune mobilalkalmazás-galériát](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) a Microsoft Intune alkalmazáspartnerek oldalán. Ha szeretné megtekinteni a támogatott forgatókönyveket, platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, kattintson az adott alkalmazásra.
-* Belső fejlesztésű **üzletági alkalmazások:** Ezeket az alkalmazásokat a MAM-szabályzatok alkalmazása előtt elő kell készíteni az Intune App SDK telepítésére.
+* Belső fejlesztésű **Üzletági alkalmazások:** Ezeket az alkalmazásokat a MAM-szabályzatok alkalmazása előtt elő kell készíteni az Intune App SDK telepítésére.
 
-  * Az Intune által felügyelt eszközök esetében lásd: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * Az Intune által kezelt eszközök esetén lásd: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
   * A nem felügyelt eszközök, például az alkalmazottak saját tulajdonú eszközei vagy egy külső mobileszköz-felügyeleti megoldás által kezelt eszközök esetén lásd: [Üzletági alkalmazások és adatok védelme az Intune-ban nem regisztrált eszközökön](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 MAM-szabályzatok **konfigurálásához** a következőkre lesz szüksége:
@@ -66,7 +66,7 @@ MAM-szabályzatok **konfigurálásához** a következőkre lesz szüksége:
 
 - **Microsoft Azure Active Directory (Azure AD)** a felhasználók létrehozásához. Az Azure AD akkor hitelesíti a felhasználót, amikor az végfelhasználóként elindítja az alkalmazást, és megadja a munkahelyi hitelesítő adatokat.
 
-    > [!NOTE] Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-konzolon végzi a felhasználók beállítását, vegye figyelembe, hogy a rendszer az Azure-portálra továbbítja a MAM-szabályzat konfigurációját, e portál használatához pedig Azure AD felhasználói csoportokat kell létrehoznia az Office 365-portál használatával.
+    > [!NOTE]Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-konzolon végzi a felhasználók beállítását, vegye figyelembe, hogy a rendszer az Azure-portálra továbbítja a MAM-szabályzat konfigurációját, e portál használatához pedig Azure AD felhasználói csoportokat kell létrehoznia az Office 365-portál használatával.
 
 
 ## Felhasználók létrehozása és Microsoft Intune-licencek kiosztása
@@ -117,7 +117,7 @@ A **globális rendszergazdák** hozzáférhetnek az [Azure-portálhoz](https://p
 
     ![Az Azure-portál Felhasználók hozzáadása paneljét bemutató képernyőkép](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
 
-    > [!IMPORTANT] Ha [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel nem rendelkező felhasználót választ ki, a felhasználó nem fogja tudni elérni a portált.
+    > [!IMPORTANT]Ha [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel nem rendelkező felhasználót választ ki, a felhasználó nem fogja tudni elérni a portált.
 
 ## További lépések
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

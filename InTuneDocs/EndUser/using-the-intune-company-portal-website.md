@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ A következőkre használhatja a Vállalati portál webhelyét:
 
 -   [Eszköz manuális szinkronizálása a lassú alkalmazástelepítések felgyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
--   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította
+-   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította. Ha nem találja, nézze meg, hogy nincs-e megadva a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 -   Az eszköz adatainak megtekintése, beleértve, hogy megfelel-e a munkahelye vagy iskolája házirendjeinek
 
@@ -55,6 +55,6 @@ A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat v�
 - [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

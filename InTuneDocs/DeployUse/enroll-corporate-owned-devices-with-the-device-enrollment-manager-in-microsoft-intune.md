@@ -42,11 +42,11 @@ A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetne
 A rendszergazda vagy vezető szerepkör-specifikus alkalmazásokat telepíthet az éttermi eszközökre. A rendszergazdák kijelölhetik az eszközt az Intune-konzolon, és a felügyeleti konzollal kivonhatják a mobileszköz-felügyelet alól.
 
 Az eszközregisztráció-kezelői (DEM-) fiókokkal regisztrált eszközökre a következő korlátozások vonatkoznak:
-  - Nincs konkrét felhasználó, így ezek az eszközök „felhasználómentesek”. Ez azt jelenti, hogy nem lehet róluk elérni az e-maileket vagy a vállalati adatokat, habár például a VPN segítségével lehet hozzáférést biztosítani az eszközön futó alkalmazások számára az adatokhoz.
-  - Nincs feltételes hozzáférés, mivel az a felhasználókon alapul.
-  - Az eszközöket nem lehet újraindítani a Vállalati portálról.
-  - Az eszközökön nem lehet az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat futtatni, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
-  - Az eszközöket nem lehet az Apple Configuratorral vagy az Apple készülékregisztrációs programjában is regisztrálni (ez az iOS-eszközökre vonatkozik).
+  - Nincs konkrét felhasználó, így ezek az eszközök „felhasználómentesek”. Ez azt jelenti, hogy nem lehet róluk elérni az e-maileket vagy a vállalati adatokat, habár például a VPN segítségével lehet hozzáférést biztosítani az eszközön futó alkalmazások számára az adatokhoz
+  - Nincs feltételes hozzáférés, mivel az a felhasználókon alapul
+  - Az eszközöket nem lehet újraindítani a Vállalati portálról
+  - Az eszközökön nem lehet az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat futtatni, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség
+  - Az eszközöket nem lehet az Apple Configuratorral vagy az Apple készülékregisztrációs programjában is regisztrálni (ez az iOS-eszközökre vonatkozik)
 
 > [!NOTE]
 > A több mint 20 regisztrált eszközzel rendelkező eszközregisztráció-kezelői felhasználói fiókoknak problémái lehetnek a Vállalati portál alkalmazás használatával. A vállalati alkalmazások eszközregisztráció-kezelővel felügyelt eszközökre történő telepítéséhez telepítse a Vállalati portál alkalmazást **Szükséges telepítésként** az eszközregisztráció-kezelő felhasználói fiókjára.

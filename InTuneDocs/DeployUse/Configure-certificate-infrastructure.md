@@ -18,7 +18,7 @@ ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,7 +60,7 @@ A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgált
 > [!NOTE]           
 > -    A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 >-  Ezenkívül a WAP-ot futtató kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
-A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. A WAP-kiszolgálókkal kapcsolatos általános információkért tekintse meg [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx) című témakört.
+A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. A WAP-kiszolgálókkal kapcsolatos általános információkért tekintse meg [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx) című témakört.|
 
 
 ### Tanúsítványok és sablonok
@@ -114,7 +114,7 @@ A feladat tartalma:
 
     -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
 
-        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és ellenőrizze, hogy **Az aláírás az eredet igazolása** lehetőség nincs-e kiválasztva.
+        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és ellenőrizze, hogy **Az aláírás az eredet igazolása** lehetőség nincs kiválasztva.
 
     -   A **Biztonság** lapon adja hozzá az NDES szolgáltatásfiókot, és adjon meg hozzá **Regisztrálás** engedélyt a sablonhoz.
 
@@ -158,11 +158,11 @@ A feladat tartalma:
 
     2.  Az NDES kiszolgálóhoz való hozzáadásakor a varázsló az IIS-t is telepíti. Az IIS-nek az alábbi konfigurációval kell rendelkeznie:
 
-        -   **Webkiszolgáló** &gt; **Biztonság** &gt; **Kérelemszűrés**
+        -   **Webkiszolgáló** &gt; **Biztonság** &gt; **Kérésszűrés**
 
         -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 3.5**. Az ASP.NET 3.5 telepítése telepíti a .NET-keretrendszer 3.5-öt is. A .NET-keretrendszer 3.5 telepítésekor a **.NET-keretrendszer 3.5** alapszolgáltatásai mellett telepítse a **HTTP-aktiválás**szolgáltatást is.
 
-        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 4.5**. Az ASP.NET 4.5 telepítése a .NET-keretrendszer 4.5-ös verzióját is telepíti. A .NET-keretrendszer 4.5 telepítésekor a **.NET-keretrendszer 4.5** alapszolgáltatásai mellett telepítse az **ASP.NET 4.5** és a **WCF-szolgáltatások** &gt; **HTTP-aktiválás** szolgáltatást is.
+        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 4.5**. Az ASP.NET 4.5 telepítése a .NET-keretrendszer 4.5-ös verzióját is telepíti. A .NET-keretrendszer 4.5 telepítésekor a **.NET-keretrendszer 4.5** alapszolgáltatásai mellett telepítse az **ASP.NET 4.5** és a **WCF-szolgáltatások** &gt; **HTTP-aktiválás** szolgáltatását is.
 
         -   **Felügyeleti eszközök** &gt; **Kompatibilitás az IIS 6 kezelésével** &gt; **Kompatibilitás az IIS 6 metabázisával**
 
@@ -285,7 +285,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 2.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**):
 
-    -   .PFX-tanúsítványok esetén azon a számítógépen futtassa a telepítőt, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) című témakörben leírtaknak megfelelően.
+    -   .PFX-tanúsítványok esetén azon a számítógépen futtassa a telepítőt, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) témakörben leírtaknak megfelelően.
 
     -   SCEP-tanúsítványok esetén a telepítőt futtassa egy Windows Server 2012 R2-kiszolgálón
 
@@ -300,7 +300,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
-    > [!TIP] Ha bezárta volna a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, az alábbi parancs futtatásával újra megnyithatja:
+    > [!TIP] Ha bezárta a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, az alábbi parancs futtatásával újra megnyithatja:
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -314,7 +314,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
     Bezárhatja a tanúsítvány-összekötő felhasználói felületét.
 
-6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja le az **Enter** billentyűt, kattintson a jobb gombbal az **	Intune-összekötő szolgáltatás** elemre, és válassza az **Újraindítás** parancsot.
+6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja meg az **Enter** billentyűt, kattintson a jobb gombbal az **Intune-összekötő szolgáltatás** elemre, és válassza az **Újraindítás** parancsot.
 
 A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és írja be az alábbi URL-t, melynek egy **403-as** hibát kell visszaadnia:
 

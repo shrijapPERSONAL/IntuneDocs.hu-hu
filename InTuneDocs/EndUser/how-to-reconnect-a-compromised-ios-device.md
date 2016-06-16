@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Sérült biztonságú iOS-készülék újracsatlakoztatása
-A rendszergazda azt észlelte, hogy Ön egy feltört eszközt használ. Ez a konfiguráció kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra.
+A rendszergazda azt észlelte, hogy Ön egy feltört eszközt használ. A „feltört” állapot azt jelenti, hogy az iOS által meghatározott szoftverkorlátozásokat eltávolították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve. Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a vállalati erőforrásokhoz.
 
-Kérje a rendszergazda segítségét az eszköz ismételt csatlakoztatásához.
+Kérje a rendszergazda segítségét az eszköz ismételt csatlakoztatásához. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

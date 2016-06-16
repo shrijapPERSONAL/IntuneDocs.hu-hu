@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,32 +27,21 @@ ms.suite: ems
 
 
 # Windows-eszköz titkosítása
-Előfordulhat, hogy a rendszergazda a munkahelyi vagy iskolai adatok védelme érdekében megköveteli a Windows-eszköz titkosítását. Ha megjelenik egy üzenet, amely szerint titkosítania kell az eszközt, a rendszergazdának kell tájékoztatnia arról, hogy az alábbi lépések közül melyekkel kell titkosítania az eszközt.
 
-Az eszközt egy Microsoft-fiók hozzáadásával vagy a BitLocker engedélyezésével titkosíthatja.
+Előfordulhat, hogy a rendszergazda a munkahelyi vagy iskolai adatok védelme érdekében megköveteli a Windows-eszköz titkosítását. Ha Windows Phone-telefonnal rendelkezik, és az regisztrálva van, kötelező titkosítás esetén a rendszer automatikusan titkosítja az eszközt.
 
-**1. módszer: Microsoft-fiók hozzáadása**
-
-1.  Keresse meg, majd indítsa el a **Gépház** alkalmazást.
-
-2.  Koppintson a **Fiókok** &gt; **Az Ön fiókja** lehetőségre, majd koppintson az **Összekapcsolás Microsoft-fiókkal** hivatkozásra..
-
-3.  Kövesse a megjelenő utasításokat.
-
-4.  A [Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md) című cikk utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e az Intune-ban..
-
-**2. lehetőség: A BitLocker engedélyezése**
+Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz. 
 
 1.  Keresse meg, majd indítsa el a **BitLocker kezelése** alkalmazást.
 
 2.  Kattintson a **BitLocker szolgáltatás bekapcsolása** hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
 
-3.  A [Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md) című cikk utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e az Intune-ban..
-
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
+[Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md)</br>
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

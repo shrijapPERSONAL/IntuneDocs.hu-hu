@@ -45,7 +45,7 @@ Kategóriák lehetnek például:
 A kategóriákat tetszőlegesen választhatja meg.
 
 ## Az eszközcsoport-leképezések konfigurálása
-1. Minden használni kívánt eszközcsoporthoz hozzon létre egy Intune-eszközcsoportot. A csoportok létrehozásával kapcsolatos további információkért lásd: [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+1. Minden használni kívánt eszközcsoporthoz hozzon létre egy Intune-eszközcsoportot. A csoportok létrehozásával kapcsolatban további információt a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) című témakörben találhat.
 2. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** elemre.
 3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson az **Eszközcsoport-leképezés** elemre.
 4. Az **Eszközcsoport-leképezés** oldalon engedélyezze az eszközcsoport-leképezés funkciót.

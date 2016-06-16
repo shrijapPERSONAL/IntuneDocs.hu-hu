@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ ms.suite: ems
 Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a készüléken visszaállíthatja az alapértelmezett gyári beállításokat egy másik eszköz Vállalati portál alkalmazásából vagy a [vállalati portál webhelyéről](http://portal.manage.microsoft.com).
 
 > [!WARNING]
-> A gyári beállítások visszaállításával az eszközről törlődnek mind a személyes, mind a munkahelyi adatai. Arról, hogy mi történik, ha alaphelyzetbe állítja az eszközt, további információkat olvashat itt: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
+> A gyári beállítások visszaállításával az eszközről törlődnek mind a személyes, mind a munkahelyi adatai. Arról, hogy mi történik, ha alaphelyzetbe állítja az eszközt, további információt a [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) című témakörben találhat.
 
 Az eszköz visszaállítása a Vállalati portál alkalmazással:
 
@@ -44,11 +44,12 @@ Ha az eszközt a Vállalati portál webhelyen szeretné visszaállítani, haszn�
 1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) válassza ki azt az eszközt, amelyet alaphelyzetbe szeretne állítani.
 
 2.  Koppintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
-> [!NOTE] Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe az eszközt Önnek.
+> [!NOTE]
+> Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

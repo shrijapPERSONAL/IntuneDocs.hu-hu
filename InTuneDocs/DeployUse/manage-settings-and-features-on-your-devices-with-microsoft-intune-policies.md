@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Az eszközök beállításainak és funkcióinak kezelése | Microsoft Intune
+title: Az eszközök beállításainak és funkcióinak kezelése házirendek használatával | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Az Intune-szabályzatok két kategóriába sorolhatók: A használt kategória h
 A részleteket lásd: [Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Feltételes hozzáférési szabályzatok:** Ezekkel a szabályzatokkal a megadott feltételek alapján biztosíthatja a levelezés és más szolgáltatások védelmét.
 A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **Vállalati eszközregisztrációs szabályzatok:** a vállalati eszközregisztrációs szabályzatok létrehozásának részletes ismertetését lásd: [Az iOS és a Mac kezelésének beállítása a Microsoft Intune-nal](set-up-ios-and-mac-management-with-microsoft-intune.md).
+- **Vállalati eszközregisztrációs szabályzatok:** a vállalati eszközregisztrációs szabályzatok létrehozásának részletes ismertetését lásd: [iOS- és Mac-eszközök kezelésének beállítása a Microsoft Intune-ban](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Erőforrás-hozzáférési szabályzatok:** A szabályzatok ezen csoportja együttműködve biztosítja a hozzáférést a felhasználóknak a munkájuk sikeres elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is.
 A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](enable-access-to-company-resources-with-microsoft-intune.md).
 
@@ -50,11 +50,11 @@ Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzat
 
 ## Konfigurációs házirend létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com/) kattintson a **Házirend** &gt; **Konfigurációs házirendek** &gt; **Hozzáadás** elemre.
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com/) kattintson a **Házirend** &gt; **Konfigurációs szabályzatok** &gt; **Hozzáadás** elemre.
 
 2.  Válassza ki a kívánt házirendet, és válassza a hozzá ajánlott beállítások használatát (ha elérhető; a beállítások később módosíthatók), vagy hozzon létre egyéni házirendet a saját beállításaival.
 
-    > [!TIP] A megfelelő szabályzat kiválasztásához [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md) témakörben talál segítséget.
+    > [!TIP] A megfelelő szabályzat kiválasztásához [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md) című témakörben talál segítséget.
 
 3.  Ha készen áll, kattintson a **Házirend létrehozása**elemre.
 

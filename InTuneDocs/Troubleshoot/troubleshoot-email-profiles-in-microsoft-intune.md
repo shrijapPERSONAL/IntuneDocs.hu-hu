@@ -47,7 +47,7 @@ Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett 
 
 1.  Nyissa meg a Configuration Manager-konzol &gt; **Eszközök és megfelelőség** elemét.
 
-2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállítások** -&gt; **Hozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget.
+2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállításo** -&gt; **kHozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget.
 
 3.  Kattintson a jobb gombbal az e-mail-profilra, és nyissa meg a **Tulajdonságok** menüt.
 

@@ -28,7 +28,7 @@ ms.suite: ems
 # Felkészülés az eszközök regisztrálására a Microsoft Intune-ban
 Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
 
-## <a name="BKMK_Set_MDM_Authority"></a>A mobileszköz-kezelő szolgáltató beállítása
+## A mobileszköz-kezelő szolgáltató beállítása
 A mobileszköz-felügyeleti szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például az Intune önmagában, illetve az Intune-nal bővített Configuration Manager. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
@@ -44,12 +44,18 @@ A mobileszköz-felügyeleti szolgáltató határozza meg azt a felügyeleti szol
 
 3.  Az Intune annak megerősítését kéri, hogy be szeretné állítani MDM-szolgáltatóként. Ha az Intune-t szeretné használni a mobileszközök kezeléséhez, jelölje be a jelölőnégyzetet, majd kattintson az **Igen** lehetőségre.
 
-## Az Intune vállalati portál konfigurálása
+## Az Intune Vállalati portál konfigurálása
+
+A felhasználók az Intune Vállalati portálon érhetik el a vállalati adatokat, és olyan gyakori feladatokat hajthatnak végre, mint például az eszközök regisztrálása, az alkalmazások telepítése és az informatikai támogatási információk megtekintése.
+
+> [!TIP] A Vállalati portál testreszabása a Vállalati portál webhelyére és a Vállalati portál alkalmazásaira egyaránt hatással van.
+
 A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Ehhez jelentkezzen be a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) bérlői vagy szolgáltatás-rendszergazdaként, válassza a **Felügyelet** &gt; **Vállalati portál** lehetőséget, és konfigurálja a Vállalati portál beállításait.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Vállalat kapcsolattartási adatai és adatvédelmi nyilatkozata
+
 A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartási adatokat és részleteket a felhasználók a Vállalati portál IT-csoport elérhetősége képernyőjén tekinthetik meg. Az adatvédelmi nyilatkozat az Adatvédelem hivatkozásra kattintva jeleníthető meg.
 
 |Mező neve|Maximális hossz|További információ|
@@ -69,7 +75,9 @@ A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi 
     |Támogatási webhely URL-címe|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-címet a https://www.contoso.com formátumban kell megadni. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|
     |Webhely neve|40|Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de egyszerű nevet nem, akkor **Az IT-csoport weboldalának megnyitása** felirat jelenik meg a Vállalati portál **IT-csoport elérhetősége** lapján.|
 
-## Vállalati arculat szerinti testreszabás
+
+#### Vállalati arculat szerinti testreszabás
+
 A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával.
 
 |Mező neve|További információ|
@@ -81,13 +89,11 @@ A Vállalati portál testre szabható a vállalat emblémájának és nevének, 
 
 A módosítások mentése után a felügyeleti konzol **Vállalati portál** lapjának alján található hivatkozásokra kattintva megtekintheti a Vállalati portál webhelyét. Ezek a hivatkozások nem módosíthatók. A felhasználók bejelentkezésekor ezek a hivatkozások a Vállalati portálon megjelenítik az Ön előfizetéseit.
 
-
-
 ## Intune felhasználói licenc hozzárendelése
 
-A(z) **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
+Az **Office 365 felügyeleti portáljának** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
 
-1.  Jelentkezzen be az [Intune fiókportálon](https://portal.office.com/Admin/Default.aspx) a bérlői rendszergazda hitelesítő adataival.
+1.  Jelentkezzen be az [Office 365 felügyeleti portálján](https://portal.office.com/Admin/Default.aspx) bérlői rendszergazdai hitelesítő adataival.
 
 2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, és a felhasználói fiók tulajdonságainál jelölje be a **Microsoft Intune** jelölőnégyzetet.
 

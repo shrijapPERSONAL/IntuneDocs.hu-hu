@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Az eszköz regisztrációjának törlése az Intune-ból
 
-Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt. Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információkért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt. Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információkért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
 Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tartalma” résznél látható hivatkozások közül azt, amely megfelel az Ön által használt eszköz típusának:
 
@@ -66,9 +66,11 @@ Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tarta
 
 4.  A **Fiók törlése** párbeszédpanelen koppintson a **Törlés** gombra.
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

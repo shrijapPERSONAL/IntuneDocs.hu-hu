@@ -111,7 +111,7 @@ Ebben a forgatókönyvben a Microsoft Word szerepel példaként.
 
     ![A Facebook-hozzászólásban nem jelennek meg a beilleszteni próbált adatok – képernyőfelvétel](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  A 2. és a 3. lépést megismételve hozzon létre még egy új dokumentumot, írjon be néhány mondatot, és ezúttal a munkahelyi helyett személyes helyre, például a **személyes OneDrive-tárhelyére** mentse a dokumentumot.
+6.  A 2. és a 3. lépést megismételve hozzon létre még egy új dokumentumot, írjon be néhány mondatot, és ezúttal a munkahelyi helyett személyes helyre, például a **OneDrive személyes verziójára** mentse a dokumentumot.
 
     ![Képernyőfelvétel a kivágási, a másolási és a beillesztési lehetőségről és a másolásra kijelölt mondatról](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -140,7 +140,7 @@ Ha iOS-eszközt használ, és egy második munkahelyi fiókot próbál felvenni 
 
 ![Képernyőfelvétel a blokkolási üzenetről és az Igen és a Nem lehetőségről](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Android-eszközön blokkoló üzenet jelenhet meg, amely ismerteti a meglévő fiók eltávolításának és új fiók felvételének lépéseit.  Android-eszközön a meglévő fiók eltávolításához válassza a **Settings (Beállítások) &gt; General (Általános) &gt; Application Manager (Alkalmazáskezelő) &gt; Company Portal (Vállalati portál), végül a Clear Data (Adatok törlése)** lehetőséget.
+Android-eszközön blokkoló üzenet jelenhet meg, amely ismerteti a meglévő fiók eltávolításának és új fiók felvételének lépéseit.  Android-eszközön a meglévő fiók eltávolításához válassza a **Beállítások &gt;Általános &gt; Alkalmazáskezelő &gt;Vállalati portál, végül az Adatok törlése** lehetőséget.
 
 ![Képernyőfelvétel a hibaüzenetről és a fiók eltávolítására vonatkozó utasításokról](../media/AppManagement/Android_SwitchUser.png)
 
@@ -155,7 +155,7 @@ Ahhoz, hogy az Intune által felügyelt más alkalmazásokból származó fájlo
 
 **A hitelesítés sikerült – Mostantól megtekintheti a vállalati fájlokat, de szervezete nem áll készen a fájlok védelmére. További részletekért kérje a rendszergazda segítségét.**
 
-Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekintse a vállalati fájlokat. Továbbra is megnyithatja és megtekintheti az Intune által felügyelt más alkalmazásokból származó fájlokat, és a MAM-szabályzatok is érvényben maradnak.  Az üzenet arról tájékoztatja Önt, hogy nem lesz lehetősége használni az RMS-megosztóalkalmazás által biztosított további védelmi funkciókat.  Ahhoz, hogy védelemmel lássa el fájljait, RMS-licencre van szükség. Az RMS által biztosított fájlvédelmi funkciókkal kapcsolatos további információkért lásd: [Eszközön lévő fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) és [E-mailben megosztott fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
+Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekintse a vállalati fájlokat. Továbbra is megnyithatja és megtekintheti az Intune által felügyelt más alkalmazásokból származó fájlokat, és a MAM-szabályzatok is érvényben maradnak.  Az üzenet arról tájékoztatja Önt, hogy nem lesz lehetősége használni az RMS-megosztóalkalmazás által biztosított további védelmi funkciókat.  Ahhoz, hogy védelemmel lássa el fájljait, RMS-licencre van szükség. Az RMS által biztosított fájlvédelmi funkciókról további információt az [Eszközön lévő fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) és az [E-mailben megosztott fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) című cikkben találhat.
 
 
 ### További információ

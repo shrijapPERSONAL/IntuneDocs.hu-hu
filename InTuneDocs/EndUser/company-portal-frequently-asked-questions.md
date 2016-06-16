@@ -30,19 +30,19 @@ ms.suite: ems
 ## Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
 A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
-- Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája más módszerekkel is telepítheti Önnek az alkalmazást.
+- Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája más módszerrel is telepítheti Önnek az alkalmazást.
 - Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com). 
 
-A Vállalati portál alkalmazás és webhely között van néhány apróbb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány példa:
+A Vállalati portál alkalmazása és webhelye között van néhány apróbb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány példa:
 
 - Eszközök regisztrálása
 - Az eszközök állapotának megtekintése
 - A vállalat vagy az iskola által elérhetővé tett alkalmazások letöltése
 - Átnevezheti az eszközét
-- PIN-kód visszaállítása
+- PIN-kód vagy jelszó visszaállítása
 - Segítség kérése az informatikai részlegtől
 
-A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
+A Vállalati portál webhelyén, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi linkek egyikén tekintheti meg:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -53,7 +53,7 @@ A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladato
 ## Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
 Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően).  Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi az IT rendszergazdának az eszköz felügyeletét.
 
-Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén, kövesse az Ön által használt eszköznek megfelelő hivatkozást:
+Ha azt szeretné megtudni, hogy rendszergazdája mit lát az Ön eszközén, válassza az Ön által használt eszköznek megfelelő hivatkozást:
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -80,16 +80,16 @@ Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén
 ## Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
 Igen, a Vállalati portálról eltávolíthat, vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban vannak különbségek:
 
-Számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról az alábbi hivatkozások egyikén találhat információkat:
+Egy számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról információt az alábbi hivatkozások egyikén találhat:
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
 - [iOS és Mac OS X](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
-Számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerinti helyzetbe állítani a számítógépet vagy eszközt. Az eszköz alaphelyzetbe állításával töröl minden vállalati és személyes adatot az eszközről! Ha elvesztette az eszközét, akkor távolról, a Vállalati portál webhelyéről is alaphelyzetbe állíthatja.
+Egy számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerint alaphelyzetbe állítani a számítógépet vagy eszközt. Az eszköz alaphelyzetbe állítása töröl minden vállalati és személyes adatot az eszközről! Ha elvesztette az eszközét, akkor azt távolról, a Vállalati portál webhelyéről is alaphelyzetbe állíthatja.
 
-Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén találhat további információkat:
+Az eszközök alaphelyzetbe állításáról információt az alábbi hivatkozások egyikén találhat:
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
@@ -100,10 +100,14 @@ Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén t
 ## Nem látom minden eszközömet a vállalati portálon
 Az eszközök csak akkor láthatók, ha hozzáadja őket a Vállalati portálhoz. A rendszergazda útmutatása alapján tallózzon a Vállalati portálon, és kövesse az eszközéhez vezető lépéseket. A vállalat által birtokolt vagy kezelt eszközöket sem fogja látni.
 
+## Ha kérdése van, lépjen kapcsolatba a rendszergazdával
+Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

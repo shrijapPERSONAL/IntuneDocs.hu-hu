@@ -44,7 +44,7 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
     -   Az aktív riasztások teljes számát
 
-3.  Válassza az **Összes riasztás** lehetőséget a következő információknak a **Riasztások** lapon való megjelenítéséhez. Először a kritikus riasztások jelennek meg:
+3.  Válassza az **Összes riasztás** lehetőséget a következő információk **Riasztások** lapon való megjelenítéséhez. Először a kritikus riasztások jelennek meg:
 
     -   **Név** – Annak a riasztástípusnak a neve, amely a riasztást előidézte.
 
@@ -72,7 +72,7 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
 Ezt a problémát az okozhatja, hogy a számítógépről kritikus szoftverfrissítések hiányoznak.
 
-**Megoldás:** gondoskodjon róla, hogy a szoftverfrissítési szabályzat engedélyezze a kritikus frissítések telepítését, ennek menetéért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune). 
+**Megoldás:** gondoskodjon róla, hogy a szoftverfrissítési szabályzat engedélyezze a kritikus frissítések telepítését, ennek menetéért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
 
 
 ## Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
@@ -127,7 +127,7 @@ A következő táblázat azokat a hibakódokat ismerteti, amelyek megjelenhetnek
 Ha a telepítéssel kapcsolatos problémák továbbra is fennállnak, forduljon az támogatási szolgálathoz a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című szakaszban leírtak szerint. Tegye elérhetővé az ügyfélszámítógép beléptetési naplóját (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log és %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) és a Windows Update naplóját (%*windir*%\windowsupdate.log) a támogatási szakemberek számára.
 
 ### További lépések
-Ha az itt olvasható hibaelhárítási információk nem segítettek a probléma megoldásában, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
+Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 <!--HONumber=Jun16_HO1-->

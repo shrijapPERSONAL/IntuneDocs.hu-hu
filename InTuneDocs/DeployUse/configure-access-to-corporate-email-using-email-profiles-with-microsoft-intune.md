@@ -18,7 +18,7 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,7 @@ ms.suite: ems
 # Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban
 Sok mobilplatform *natív* e-mail-ügyfélprogramot tartalmaz, amely az operációs rendszer részét képezi.  Ezek közül egyes ügyfélprogramok e-mail-profilok használatával konfigurálhatók, az ebben a témakörben ismertetett módon.
 
-Ha még erősebb adatveszteség-megelőzési intézkedéseket szeretne foganatosítani, válassza a [feltételes hozzáférést](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), amellyel a felhasználó
- postaládájához való hozzáférés minden e-mail-ügyfélprogram esetében vezérelhető, beleértve a natív e-mail-ügyfélprogramokat is.
+Ha még erősebb adatveszteség-megelőzési intézkedéseket szeretne foganatosítani, válassza a [feltételes hozzáférést](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), amely a felhasználó postaládájához szabályozza a hozzáférést, bármilyen levelezőprogramot is használjon (beleértve a natív levelezőprogramokat).
 
 Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára.   A legtöbb mobilplatform *natív* e-mail-ügyfélprogramot tartalmaz, amely az operációs rendszer részét képezi.  A támogatott platformokon a natív e-mail-ügyfélprogramok úgy konfigurálhatók a Microsoft Intune segítségével, hogy a felhasználók saját eszközeiken telepítés nélkül hozzáférhessenek a vállalati e-mailjeikhez.  
 
@@ -50,7 +49,7 @@ Az e-mail-profilok az alábbi két módszer egyikével tehetők biztonságossá:
 ### Tanúsítványok
 Az e-mail-profil létrehozásakor válassza ki a korábban az Intune-ban már létrehozott tanúsítványprofilt. Ez identitástanúsítványként is ismert. Ezt hitelesíti a rendszer egy megbízható tanúsítványprofilhoz (vagy főtanúsítványhoz) képest, hogy ellenőrizze a felhasználó eszközének a csatlakozásra való jogosultságát. A megbízható tanúsítvány az e-mail-kapcsolatot hitelesítő számítógépre van telepítve. Ez általában a natív levelezési kiszolgáló.
 
-A tanúsítványprofilok Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
+További információt a tanúsítványprofilok Intune-ban történő létrehozásáról és használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat.
 
 ### Felhasználónév és jelszó
 A felhasználó a natív levelezési kiszolgálón felhasználónév és jelszó megadásával hitelesíti magát.
@@ -59,7 +58,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
 
 ### E-mail profil létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Házirend hozzáadása** elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Házirend hozzáadása** elemre.
 
 2.  Konfigurálja a következő házirendtípusok egyikét:
 
@@ -75,7 +74,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
 
 3.  A következő táblázat segítségével konfigurálja az e-mail-profil beállításait:
     |Beállítás neve|További információ|
-    |----------------|--------------------|
+    |----------------|-----------------------------------------------------------------------------|
     |**Név**|Az e-mail-profil egyedi neve.|
     |**Leírás**|A profil azonosítását megkönnyítő leírás.|
     |**Gazdagép**|Annak a vállalati kiszolgálónak az állomásneve, amelyen a natív e-mail-szolgáltatást fut.|
@@ -83,39 +82,38 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**Felhasználónév**|Az e-mail-fiókhoz tartozó felhasználónév megszerzésének módja: Helyszíni Exchange-kiszolgáló esetén válassza a **Felhasználónév**, Office 365 esetén pedig az **Egyszerű felhasználónév** lehetőséget.|
     |**E-mail cím**|A felhasználóhoz tartozó e-mail-cím előállításának módja az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.|
     |**Hitelesítési módszer** (Samsung KNOX és iOS)|Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget.|
-    |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. A tanúsítványprofilok Intune-ban történő használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).<br /><br />Ez a beállítás csak akkor jelenik meg, ha hitelesítési módszernek a **Tanúsítványok** lehetőséget választotta.|
+    |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. További információt a tanúsítványprofilok Intune-ban történő használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat.<br /><br />Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.|
     |**S/MIME használata** (Samsung KNOX és iOS)|Kimenő e-mailek küldése S/MIME titkosítással.|
     |**Aláíró tanúsítvány** (Samsung KNOX és iOS)|Válassza ki a kimenő e-mailek aláírására használt aláíró tanúsítványt.<br /><br />Ez a lehetőség csak akkor jelenik meg, ha az **S/MIME használata** lehetőséget választotta.|
     |**E-mailek szinkronizálása ennyi napra visszamenőleg**|Ennyi napra visszamenőleg kívánja szinkronizálni az e-maileket; az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.|
     |**Szinkronizálás ütemezése** (Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange Server kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
     |**SSL használata**|Biztonságos szoftvercsatornás (SSL) kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange Server kiszolgálóval való kommunikációhoz. <br /><br />A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange Serverre.|
-    |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.| |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|Az e-mailek natív e-mail alkalmazásban történő megnyitásának engedélyezése külső alkalmazások számára, például fájlok e-mailhez való csatolásához.|
+    |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.| 
+    |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|Az e-mailek natív e-mail alkalmazásban történő megnyitásának engedélyezése külső alkalmazások számára, például fájlok e-mailhez való csatolásához.|
 
-    > [!IMPORTANT]
-    > Ha már telepített egy e-mail-profilt, de szeretné megváltoztatni az **állomás** vagy az **E-mail cím** beállítás értékét, akkor törölje a meglévő e-mail-profilt, majd hozzon létre egy újat a kívánt értékekkel.
+    > [!IMPORTANT] Ha már telepített egy e-mail-profilt, de szeretné megváltoztatni az **állomás** vagy az **E-mail cím** beállítás értékét, akkor törölje a meglévő e-mail-profilt, majd hozzon létre egy újat a kívánt értékekkel.
 
-4.  Ha elkészült, kattintson a **Házirend mentése** gombra.
+4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
-## A házirend telepítése
+## A szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése**lehetőségre..
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
-    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra..
+    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
 
-> [!NOTE]
-> Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz.
+> [!NOTE] Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

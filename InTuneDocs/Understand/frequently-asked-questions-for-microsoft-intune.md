@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Gyakori kérdések a Microsoft Intune-ról
-Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gyakran felmerülő kérdést. Ha itt nem talál választ a kérdésére, feltétlenül [tudassa velünk](https://microsoftintune.uservoice.com/)..
+Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gyakran felmerülő kérdést. Ha itt nem talál választ a kérdésére, feltétlenül [tudassa velünk](https://microsoftintune.uservoice.com/).
 
 ## Általános problémák
 
@@ -40,13 +40,13 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 -   **Van távoli segítségnyújtási funkció a mobileszközökhöz készült Intune-ban?**
 
-    Nincs. Hasznosak lehetnek bizonyos külső alkalmazások, például a [Bomgar](http://www.bomgar.com/) vagy a [TeamViewer](https://www.teamviewer.com/).
+    Nincs. Hasznosak lehetnek bizonyos külső alkalmazások, például a [Bomgar](http://www.bomgar.com/) <!---and [TeamViewer](https://www.teamviewer.com/)---> alkalmazás.
 
 ## Fiókok
 
 -   **Ha megkezdtem az Intune kipróbálását, és létrehozok egy új bérlőt a próbaverzióhoz, felvehetem az Office 365-öt a próbaverzióba ugyanannak a bérlőnek a használatával?**
 
-    Igen. Csak jelentkezzen be egy globális rendszergazdai fiókkal (például *globalisrendszergazda@&lt;vallalat&gt;.onmicrosoft.com*) meglévő Intune-bérlőjéből/-előfizetéséből..
+    Igen. Csak jelentkezzen be egy globális rendszergazdai fiókkal (például *globalisrendszergazda@&lt;vallalat&gt;.onmicrosoft.com*) meglévő Intune-bérlőjéből/-előfizetéséből.
 
 -   **Ha hozzárendelek egy MDM-szolgáltatót az Intune-hoz egy próbaverziós előfizetés során, akkor nehezebben fogok tudni váltani egy másik vállalat szolgáltatására, amennyiben meggondolnám magamat az Intune-nal kapcsolatban?**
 
@@ -62,15 +62,15 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 -   **Hol tudhatják meg felhasználóim, hogy hogyan regisztrálhatják eszközeiket?**
 
-    Ehhez a [Végfelhasználók Intune-regisztrálására vonatkozó utasítások rendszergazdák számára](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) oldalon található, igény szerint testre szabható információkat használja..
+    Ehhez az [End-user Intune enrollment instructions for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) (Végfelhasználók Intune-regisztrálására vonatkozó utasítások rendszergazdák számára) oldalon található, igény szerint testre szabható információkat használja.
 
 -   **Hogyan háríthatom el az eszközök beléptetésével kapcsolatos hibákat?**
 
-    A regisztráció általános problémáinak megoldásai az [Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune) című szakaszban találhatók..
+    A regisztráció általános problémáinak megoldásai az [Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune) című szakaszban találhatók.
 
 -   **Hogyan gyűjthetem be a beléptetési naplókat, ha egy felhasználó beléptetési problémát tapasztal?**
 
-    Kövesse a [megjelenő útmutatást](http://www.microsoft.com/en-us/download/46391)..
+    Kövesse a [megjelenő útmutatást](http://www.microsoft.com/en-us/download/46391).
 
 ## Mobil eszközök felügyelete
 
@@ -78,15 +78,15 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
     -   **Az Intune észleli, ha az eszközt feltörik?**
 
-        Igen, bizonyos operációs rendszerek esetén. A feltört eszközök felügyeletének módjával kapcsolatos információkért lásd: [Eszközmegfelelőségi szabályzat létrehozása](/intune/deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)..
+        Igen, bizonyos operációs rendszerek esetén. A feltört eszközök felügyeletének módjával kapcsolatos információkért lásd: [Eszközmegfelelőségi szabályzat létrehozása](/intune/deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md).
 
     -   **Törölhetem külön csak a vállalati adatokat egy eszközről?**
 
-        Igen. A szelektív törléssel kapcsolatos információkért lásd: [Az adatok védelme távoli törléssel, távoli zárolással vagy új PIN kód létrehozásával](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)..
+        Igen. A szelektív törléssel kapcsolatos információkért lásd: [Az adatok védelme távoli törléssel, távoli zárolással vagy új PIN kód létrehozásával](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md).
 
     -   **Van mód bizonyos webhelyek letiltására a mobileszköz böngészőjében az Intune-on keresztül?**
 
-        A különböző platformok natív böngészőjében nincs erre lehetőség. Ha azonban telepíti az Intune által kezelt webböngészőt iOS- vagy Android-eszközére, lehetősége van engedélyezni vagy blokkolni az egyes URL-címeket. További információkért lásd: [Az internet-hozzáférés kezelése felügyelt böngészőszabályzatokkal](/intune/Deploy-Use/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md)..
+        A különböző platformok natív böngészőjében nincs erre lehetőség. Ha azonban telepíti az Intune által kezelt webböngészőt iOS- vagy Android-eszközére, lehetősége van engedélyezni vagy blokkolni az egyes URL-címeket. További információkért lásd: [Az internet-hozzáférés kezelése felügyelt böngészőszabályzatokkal](/intune/Deploy-Use/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).
 
     -   **Korlátozható, hogy egy felhasználó mely alkalmazásokat távolíthatja el?**
 
@@ -104,10 +104,7 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
         Bizonyos esetekben megváltoztathatja az MDM-szolgáltatót. Ehhez lépjen kapcsolatba a Terméktámogatással a [Hogyan kérhet támogatást az Intune-hoz](/intune/Troubleshoot/How-to-get-support-for-Microsoft-Intune.md) című szakaszban leírtak szerint. Az alábbi táblázat összefoglalja, hogy milyen változtatások lehetségesek. Az MDM-szolgáltató módosításához újra be kell léptetni az eszközöket.
 
-        ||**Ide:** Intune!**Ide:** O365|**Ide:** Intune-nal bővített Configuration Manager|
-        |**Innen:** Intune| |Igen&#42;|Igen|
-        |**Innen:** O365||Igen&#42;||Igen|
-        |**Innen:** Intune-nal bővített Configuration Manager|Igen|Igen| |
+        ||**Ide:** Intune!**Ide:** O365|**Ide:** Intune-nal bővített Configuration Manager| |**Innen:** Intune| |Igen&#42;|Igen| |**Innen:** O365||Igen&#42;||Igen| |**Innen:** Intune-nal bővített Configuration Manager|Igen|Igen| |
         
         &#42;Az Office 365 és az Intune MDM-szolgáltatója egyszerre is használható, így nem kell ismét beléptetnie az eszközöket.
 
@@ -143,8 +140,7 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
     **Hogyan hozza létre a rendszer az alkalmazásregisztrációs adatblokkot Intune-felhasználók számára?**
   Amikor a rendszergazdák feltöltik a Symantec-tanúsítványuk .pfx-fájlját, az Intune automatikusan létrehozza az AET-t, és telepíti a regisztrált Windows Phone-telefonokra. Az Intune-rendszergazdáknak nem szükséges a Windows Phone SDK AET Generator eszközét használniuk.
 
-      > [!IMPORTANT]
-        > Az Intune nem támogatja az AET manuális létrehozását és sávon kívüli telepítését.
+      > [!IMPORTANT] Az Intune nem támogatja az AET manuális létrehozását és sávon kívüli telepítését.
 
     **Milyen módosítások történtek, melyeknek köszönhetően csökkentek a Symantec-tanúsítvánnyal kapcsolatos követelmények?**
        Az Intune 2014. novemberi kiadásában olyan módosítások történtek, melyek lehetővé tesznek olyan forgatókönyveket, amelyekben a vállalatok nem rendelkeznek Symantec-tanúsítvánnyal.
@@ -277,11 +273,11 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 -   **Hogyan vehetek fel egy ajánlott alkalmazást?**
 
-    Az Intune-ban ezek „kiemelt alkalmazások”, és az [Alkalmazások telepítése a Microsoft Intune-ban](/Intune/Deploy-Use/deploy-apps-in-microsoft-intune.md) című szakaszban szerepelnek..
+    Az Intune-ban ezek „kiemelt alkalmazások”, és az [Alkalmazások telepítése a Microsoft Intune-ban](/Intune/Deploy-Use/deploy-apps-in-microsoft-intune.md) című szakaszban szerepelnek.
 
 -   **Kaphatok további felhőalapú tárhelyet a telepíteni kívánt alkalmazásokhoz?**
 
-    Igen. Erről az [Alkalmazások telepítése](/Intune/Deploy-Use/deploy-apps.md) témakör *A felhőbeli tárhellyel kapcsolatos követelmények* című szakaszában olvashat..
+    Igen. Erről az [Alkalmazások telepítése](/Intune/Deploy-Use/deploy-apps.md) témakör *A felhőbeli tárhellyel kapcsolatos követelmények* című szakaszában olvashat.
 
 ## Biztonság
 
@@ -291,7 +287,7 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 -   **Ha a BitLocker használatával titkosítok egy Windows 8-as táblagépet, kényszeríthetem az eszköz összes adatának törlését, ha egy felhasználónak egymás után több alkalommal nem sikerül bejelentkeznie?**
 
-    Az összes adat törlésére nincs külön beállítás a Windows 8.1/RT rendszerű eszközökön egyik mobileszköz-kezelő szolgáltatás, így az Intune esetében sem. Az Intune az ilyen eszközökön a szelektív törlés lehetőségét biztosítja. Az Intune törlés/szelektív törlés funkciójával kapcsolatban lásd: [Az alkalmazások és az adatok védelme a Microsoft Intune-nal](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md)..
+    Az összes adat törlésére nincs külön beállítás a Windows 8.1/RT rendszerű eszközökön egyik mobileszköz-kezelő szolgáltatás, így az Intune esetében sem. Az Intune az ilyen eszközökön a szelektív törlés lehetőségét biztosítja. Az Intune törlés/szelektív törlés funkciójával kapcsolatban lásd: [Az alkalmazások és az adatok védelme a Microsoft Intune-nal](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md).
 
 ## Vállalati portál
 
@@ -307,7 +303,7 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 -   **Végezhetek szelektív törlést az eszközökön?**
 
-    Ha az Intune-nal bővített System Center 2012 R2 Configuration Managert vagy annak egy újabb verzióját használja, szelektív törléssel végleg eltávolíthatja eszközeiről a munkahelyi adatokat. További információ: [Az alkalmazások és az adatok védelme a Microsoft Intune-nal](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md)..
+    Ha az Intune-nal bővített System Center 2012 R2 Configuration Managert vagy annak egy újabb verzióját használja, szelektív törléssel végleg eltávolíthatja eszközeiről a munkahelyi adatokat. További információ: [Az alkalmazások és az adatok védelme a Microsoft Intune-nal](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md).
 
 -   **Ha a Configuration Managert és az Intune-t egyaránt használom, akkor is használhatom az Intune felügyeleti portálját?**
 
@@ -315,6 +311,6 @@ Ebben a cikkben megválaszolunk néhány, a Microsoft Intune-nal kapcsolatban gy
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

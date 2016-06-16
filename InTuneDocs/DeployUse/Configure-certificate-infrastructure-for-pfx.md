@@ -1,5 +1,5 @@
 ---
-title: PFX-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune|
+title: PFX-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -16,7 +16,7 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,11 +30,11 @@ Ha bármilyen tanúsítványalapú hitelesítést szeretne végrehajtani a szerv
 
 A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgáltatón kívül a következőkre is szüksége lesz:
 
--   Egy számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval. Alternatív megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
+-   Egy olyan számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval, de használhatja magát a hitelesítésszolgáltató számítógépet is.
 
  -  A hitelesítésszolgáltatóval kommunikálni képes számítógépen futó Intune Certificate Connector.
 
-## A helyszíni infrastruktúra leírása
+## Helyszíni infrastruktúra leírása
 
 
 -    **Active Directory-tartomány**: A jelen szakaszban felsorolt összes kiszolgálónak (a webalkalmazás-proxykiszolgáló kivételével) csatlakoznia kell a szervezet Active Directory-tartományához.
@@ -42,7 +42,7 @@ A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgált
 -  **Hitelesítésszolgáltató** (CA): Olyan vállalati hitelesítésszolgáltató (CA), amely a Windows Server 2008 R2 vagy újabb rendszer vállalati verzióján fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx).
     Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
 
- -  **Egy számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval**: Másik megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
+ -  **Egy olyan számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval**: Másik megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
 -  **Microsoft Intune Certificate Connector**: Az Intune felügyeleti konzollal töltse le a **Certificate Connector** (Tanúsítvány-összekötő) telepítőjét (**ndesconnectorssetup.exe**). Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt. A . PFX-tanúsítványprofilok esetében a hitelesítésszolgáltatóval kommunikáló számítógépre telepítse a tanúsítvány-összekötőt.
 -  **Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) használhat olyan kiszolgálót, amelyen a Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
     -  Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
@@ -68,7 +68,7 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 **1. feladat** – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatón **2. feladat** – Az Intune tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
 
 ### 1. feladat – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-Ebben a feladatban teszi közzé a tanúsítványsablont.
+Ebben a feladatban teszi közzé a tanúsítványsablont
 
 ##### A hitelesítésszolgáltató konfigurálásához
 
@@ -82,7 +82,7 @@ Ebben a feladatban teszi közzé a tanúsítványsablont.
 
     -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
 
-        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon módosítsa a **Kulcshasználat** beállítást, és győződjön meg róla, hogy nincs-e bejelölve **Az aláírás az eredet igazolása** lehetőség.
+        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és győződjön meg arról, hogy **Az aláírás az eredet igazolása** lehetőség nincs kiválasztva.
 
 
 3.  Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. Lehetősége van azonban arra is, hogy a hitelesítésszolgáltató konfigurálásával engedélyezze a kérelmezőnek egy másik érték megadását, amelyet aztán az Intune felügyeleti konzoljából tud megadni. Ha azt szeretné, hogy mindig a sablonban lévő érték legyen használva, hagyja ki ennek a lépésnek a hátralévő részét.
@@ -103,16 +103,16 @@ Ebben a feladatban teszi közzé a tanúsítványsablont.
 
     2.  Ellenőrizze a **Tanúsítványsablonok** mappában, hogy a sablon közzététele sikerült-e.
 
-5.  A hitelesítésszolgáltató számítógépen győződjön meg róla, hogy az Intune tanúsítvány-összekötő gazdagépe rendelkezik-e regisztrálási engedéllyel, hogy hozzáférhessen a .PFX-profil létrehozásakor használt sablonhoz. Állítsa be az engedélyt a hitelesítésszolgáltató számítógép tulajdonságainak **Biztonság** lapján.
+5.  A hitelesítésszolgáltató számítógépen győződjön meg arról, hogy az Intune tanúsítvány-összekötő gazdagépe rendelkezik regisztrálási engedéllyel, így hozzáférhet a .PFX-profil létrehozásakor használt sablonhoz. Állítsa be az engedélyt a hitelesítésszolgáltató számítógép tulajdonságainak **Biztonság** lapján.
 
-### 4. feladat – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+### 2. feladat – Az Intune tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
 A feladat tartalma:
 
 A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
 
 ##### A tanúsítvány-összekötő támogatásának engedélyezéséhez
 
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és válassza a **Felügyelet** &gt; **Tanúsítvány-összekötő** lehetőséget.
+1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és válassza a **Rendszergazda** &gt; **Certificate Connector** (Tanúsítvány-összekötő) lehetőséget.
 
 2.  Kattintson a **Helyszíni tanúsítvány-összekötő konfigurálása** elemre.
 
@@ -120,21 +120,21 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
 
 ##### A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálásához
 
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Tanúsítvány-összekötő** &gt; **Tanúsítvány-összekötő letöltése** lehetőségre.
+1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Rendszergazda** &gt; **Mobileszköz-kezelés** &gt; **Certificate Connector** (Tanúsítvány-összekötő) &gt; **Download Certificate Connector** (Tanúsítvány-összekötő letöltése) lehetőségre.
 
 2.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**):
 
-  Futtassa a telepítőt azon a számítógépen, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) témakörben leírtaknak megfelelően.
+  Futtassa a telepítőt azon a számítógépen amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a .PFX típusú tanúsítványt terjesztő beállítást, és kattintson a Telepítés elemre. A telepítés befejezése után következő lépésként hozzon létre egy tanúsítványprofilt a [Tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) témakörben leírtaknak megfelelően.
 
    <!-- Not sure about step 3 below -->
 
-3.  Ha a rendszer kéri az ügyféltanúsítványt a tanúsítvány-összekötőhöz, kattintson a **Kijelölés** lehetőségre, és válassza ki a 3. feladatban telepített **ügyfél-hitelesítő** tanúsítványt.
+3.  Ha a rendszer kéri az ügyféltanúsítványt a tanúsítvány-összekötőhöz, kattintson a **Kijelölés**lehetőségre, és válassza ki a 3. feladatban telepített **ügyfél-hitelesítő** tanúsítványt.
 
     Miután kiválasztotta az ügyfél-hitelesítési tanúsítványt, a rendszer visszairányítja az **Client Certificate for Microsoft Intune Certificate Connector** (Ügyféltanúsítvány a Microsoft Intune Certificate Connectorhoz) felületre. Bár a választott tanúsítvány nem látható, kattintson a **Tovább** gombra a tanúsítvány tulajdonságainak megtekintéséhez. Ezután kattintson ismét a **Tovább**gombra, majd a **Telepítés**gombra.
 
 4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
-    > [!TIP] Ha bezárta volna a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, az alábbi parancs futtatásával újra megnyithatja:
+    > [!TIP] Ha bezárná a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, akkor az alábbi parancs futtatásával újra megnyithatja:
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -148,7 +148,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
 
     Bezárhatja a tanúsítvány-összekötő felhasználói felületét.
 
-6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja le az **Enter** billentyűt, kattintson jobb gombbal az **Intune-összekötő szolgáltatás** elemre, és válassza az **Újraindítás** parancsot.
+6.  Nyisson meg egy parancssort, írja be a **services.msc** fájlnevet, nyomja meg az **Enter** billentyűt, kattintson a jobb gombbal az **Intune Connector Service** (Intune-összekötő szolgáltatás) elemre, és válassza az **Újraindítás** parancsot.
 
 A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és írja be az alábbi URL-t, melynek egy **403-as** hibát kell visszaadnia:
 

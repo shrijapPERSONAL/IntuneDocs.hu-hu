@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows-számítógépes szoftverek licencszerződéseinek kezelése | Microsoft
+title: Windows-számítógépes szoftverek licencszerződéseinek kezelése | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -178,7 +178,7 @@ A szoftverlicenc-szerződéseket licenccsoportokhoz lehet hozzáadni. A licenccs
 |Licenccsoport létrehozása|A **Licencek** munkaterület **Áttekintés** lapján kattintson a **Feladatok** menü **Licenccsoport létrehozása** parancsára. **Megjegyzés:** legfeljebb 500 licenccsoportot hozhat létre.|
 |Licenccsoport átnevezése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd kattintson a **Feladatok** menü **Licenccsoport szerkesztése** elemére.|
 |Licenccsoport törlése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd kattintson a **Feladatok** menü **Licenccsoport törlése** parancsára. **Tipp:** a törölt csoportban lévő összes licenc a **Hozzá nem rendelt szerződések** licenccsoportba kerül.|
-|Licencszerződések törlése|A **Licencek** munkaterületen válasszon ki egy szerződést, majd kattintson a **Törlés** elemre. **Tipp:** Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez kattintson a **Licencek áttekintése** lap vagy az adott licenccsoport **Általános** lapjának **Frissítés most** gombjára.|
+|Licencszerződések törlése|A **Licencek** munkaterületen válasszon ki egy szerződést, majd kattintson a **Törlés** elemre. **Tipp:** Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez kattintson a **Licencek áttekintése** lap vagy az adott licenccsoport **Általános** lapfülének **Frissítés most** gombjára.|
 
 
 

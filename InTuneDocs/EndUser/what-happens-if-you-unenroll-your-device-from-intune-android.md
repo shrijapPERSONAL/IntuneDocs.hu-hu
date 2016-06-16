@@ -18,7 +18,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,11 +42,13 @@ Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
 Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli az eszköz regisztrációját, az eszköz többé nem jelenik meg a Vállalati portálon. 
 
-A regisztráció törlésére vonatkozó utasításokért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
+A regisztráció törlésének utasításaiért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
+
+Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

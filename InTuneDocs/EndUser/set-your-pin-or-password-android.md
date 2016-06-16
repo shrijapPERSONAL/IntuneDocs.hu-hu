@@ -18,7 +18,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,17 +30,19 @@ ms.suite: ems
 
 A rendszergazda megkövetelheti, hogy Ön PIN-kódot vagy jelszót állítson be Android-eszközén, ha az Intune segítségével éri el a munkahelyi vagy az iskolai adatokat. Ha a PIN-kód vagy jelszó megadását kérő üzenet jelenik meg, kövesse az alábbi lépéseket.
 
-1.  Koppintson a  **Settings** &gt;  (Beállítások)**Security** (Biztonság) &gt; **Screen Lock** (Képernyőzár) &gt; **Password** (Jelszó) lehetőségre..
+1.  Koppintson a **Settings** (Beállítások) &gt; **Security** (Biztonság) &gt; **Screen Lock** (Képernyőzárolás) &gt; **Password** (Jelszó) elemre.
 
 2.  Állítsa be és erősítse meg az új jelszót.
 
-3.  [Az eszköznek a Microsoft Intune-ban való regisztrálásával foglalkozó cikk](enroll-your-device-in-Intune-android.md) utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e a Microsoft Intune-ban..
+3.  [Az eszköznek a Microsoft Intune-ban való regisztrálásával foglalkozó cikk](enroll-your-device-in-Intune-android.md) utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e a Microsoft Intune-ban.
 
-4.  Koppintson a **GET** &gt;  (LETÖLTÉS)**INSTALL** (TELEPÍTÉS) lehetőségre..
+4.  Koppintson a **GET** (Beszerzés) &gt; **INSTALL** (Telepítés) gombra.
+
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

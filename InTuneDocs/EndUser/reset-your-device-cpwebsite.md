@@ -18,7 +18,7 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,16 +36,18 @@ Az eszköz alaphelyzetbe állítása:
 
 1.  Nyissa meg a [Vállalati portál webhelyet](http://portal.manage.microsoft.com), és koppintson annak az eszköznek a nevére, amelyet módosítani szeretne.
 
-2.  Koppintson az **Alaphelyzet** elemre..
+2.  Koppintson az **Alaphelyzetbe állítás** elemre.
 
     ![eszköz-alaphelyzetbe-állítása](./media//iwp-1-tap-reset-passcode.png)
 
 Az eszköz alaphelyzetbe állítása megtörtént.
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

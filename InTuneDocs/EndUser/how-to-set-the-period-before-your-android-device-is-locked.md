@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,16 +28,16 @@ ms.suite: ems
 # Az Android-eszköz zárolása előtti időtartam megadása
 Ha újból csatlakozni szeretne a munkájához, az alábbi utasításokat követve be kell állítania eszközén a jelszó lejáratát:
 
-1.  Az eszköz **Beállítások** menüjében kattintson a **Biztonság** &gt; **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) elemre.
+1.  Eszközének **Settings** (Beállítások) képernyőjén kattintson a **Security (Biztonság) ** &gt; **Automatically Lock** (Automatikus lezárás) (egyes eszközökön **Lock phone after** (Telefon zárolása ezt követően)) elemre.
 
-    Ha az **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) menüelem nem látható, ellenőrizze, hogy érvényes jelszót adott-e meg a **Beállítások** &gt; **Képernyőzár** &gt; **Jelszó** beállításban.
+    Ha az **Automatically Lock (Automatikus lezárás**) (egyes eszközökön **Lock phone after (Telefon zárolása ezt követően:**) menüpont nem látható, ellenőrizze, hogy érvényes jelszót adott-e meg a **Settings (Beállítások)** &gt; **Screen Lock** (Képernyőzárolás) &gt; **Password** (Jelszó) beállításban.
 
 2.  Adja meg a jelszó lejárati értékét.
 
-3.  Ellenőrizze, hogy az eszköz regisztrálva van-e az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatásai szerint.
+3.  Ellenőrizze, hogy az eszköz regisztrálva van az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatása szerint.
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

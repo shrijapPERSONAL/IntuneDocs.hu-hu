@@ -39,7 +39,7 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
       ![DEP-token frissítése](../media/dev-sa-ios-dep.png)
 
-3.  **DEP-token beszerzése** – Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID azonosítóval. A későbbiekben ezt az Apple ID-t kell használnia a DEP-token megújításához.
+3.  **DEP-token beszerzése** – Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-val. A későbbiekben ezt az Apple ID-t kell használnia a DEP-token megújításához.
 
     1.  A [Device Enrollment Program portálon](https://deploy.apple.com) válassza a **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Servers** (Kiszolgálók kezelése) elemet, és kattintson az **Add MDM Server** (MDM-kiszolgáló felvétele) elemre.
 
@@ -55,8 +55,8 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
 5.  **A vállalati eszközregisztrációs szabályzat felvétele** – A [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Házirend** &gt; **Munkahelyi eszközök regisztrációja** területén kattintson a **Hozzáadás** elemre.
 
-    A DEP támogatásához adja meg az **Általános** adatokat, például a **Nevet** és a **Leírást**, és adja meg, hogy a profilhoz rendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e.
-      - **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez.  **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak, és a Vállalati portált kell használniuk (például alkalmazások telepítéséhez). 
+    A DEP támogatásához adja meg az **Általános** adatokat, például a **Nevet** és a **Leírást**, és adja meg, hogy a profilhoz hozzárendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e.
+      - **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez.  **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak. Az ilyen eszközöknek a Vállalati portált kell használniuk (például alkalmazások telepítéséhez). 
       - **Nincs megadva a felhasználói affinitás** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Vállalati portál alkalmazást is beleértve, nem fognak működni.
 
     Következő lépésként engedélyezze **A szabályzat DEP-beállításainak konfigurálása** beállítást a DEP támogatásához.
@@ -67,31 +67,31 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
      - **Részleg** – Akkor jelenik meg, amikor a felhasználó az aktiválás közben az „About Configuration” (Konfiguráció névjegye) elemre koppint.
      - **Ügyfélszolgálat telefonszáma** – Akkor jelenik meg, amikor a felhasználó az aktiválás közben a **Segítségre van szüksége?** gombra kattint.
-     - **Előkészítés módja** – Ezt az állapotot aktiválás közben lehet beállítani, és az eszköz gyári beállításainak visszaállítása nélkül nem módosítható:
-        - **Felügyeletlen** – Korlátozott felügyeleti funkciók
-        - **Felügyelt** – Több felügyeleti funkciót engedélyez, és alapértelmezés szerint letiltja az Aktiválási zár funkciót
-     - **A regisztrálási profil rögzítése a következő eszközhöz** – Ezt az állapotot aktiválás közben lehet beállítani, és a gyári beállítások visszaállítása nélkül nem módosítható.
+     - **Előkészítés módja** – Ezt az állapotot az aktiválás közben állítja be a rendszer, és az eszköz gyári beállításainak visszaállítása nélkül nem lehet módosítani:
+        - **Felügyeletlen** – Korlátozott felügyeleti képességek
+        - **Felügyelt** – Több felügyeleti lehetőséget engedélyez, és alapértelmezés szerint letiltja az Aktiválási zár funkciót.
+     - **A regisztrálási profil rögzítése a következő eszközhöz** – Ez az állapot az aktiválás közben van beállítva, és a gyári beállítások visszaállítása nélkül nem lehet módosítani.
         - **Letiltás** – Lehetővé teszi a felügyeleti profil eltávolítását a **Beállítások** menüből.
-        - **Engedélyezés** – (Az **Előkészítés módja** = **Felügyelt** beállítás szükséges hozzá.) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását.
+        - **Engedélyezés** – (Az **Előkészítés módja** = **Felügyelt** beállítást igényli.) Letiltja az iOS azon beállításait, amelyek a felügyeleti profil eltávolítását tennék lehetővé.
      - **Beállítási asszisztens – Beállítások** – Ezeknek a beállításoknak a megadása nem kötelező, és az iOS **Beállítások** menüjében később is konfigurálhatók.
-        - **PIN-kód** – PIN-kód kérése aktiváláskor. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonságát, illetve hozzáférésének ellenőrzését valamilyen más módon oldja meg (például teljes képernyős móddal, amely egy alkalmazás futtatására korlátozza az eszközt).
-        - **Helyalapú szolgáltatások** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja a szolgáltatást.
-        - **Visszaállítás** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során iCloud-alapú biztonsági mentést fog kérni.
-        - **Apple ID** – Az App Store-beli iOS-alkalmazások letöltéséhez Apple ID azonosító szükséges, az Intune által telepített alkalmazásokat is beleértve. Ha engedélyezte, az iOS kérni fogja a felhasználótól az Apple ID azonosítót, ha az azonosító megadása nélkül próbál alkalmazást telepíteni az Intune-ban.
-        - **Feltételek és kikötések** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során arra fogja kérni a felhasználót, hogy fogadja el az Apple használati feltételeit.
-        - **Touch ID** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
-        - **Apple Pay** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
-        - **Nagyítás** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
-        - **Siri** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
-        - **Diagnosztikai adatok küldése az Apple-nek** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
-     -  **Az Apple Configurator további felügyeleti funkcióinak engedélyezése** – Állítsa a **Letiltás** értékre a fájlok iTunesszal való szinkronizálásának, illetve az Apple Configuratoron keresztüli felügyelet megakadályozása érdekében. A Microsoft javasolja, hogy állítsa a beállítást a **Letiltás** értékre, a további konfigurációkat exportálja az Apple Configuratorból, majd az Intune-on keresztül telepítse ezeket egyéni iOS-konfigurációs profilként ahelyett, hogy ezzel a beállítással engedélyezné a tanúsítvánnyal vagy anélkül történő manuális telepítést.
+        - **PIN-kód** – PIN-kód kérése aktiváláskor. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonsága, illetve elérésének ellenőrzése valamilyen más módon lesz biztosítva (pl. teljes képernyős móddal, amely egyetlen alkalmazás futtatására korlátozza az eszközt).
+        - **Helyalapú szolgáltatások** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja a szolgáltatást.
+        - **Visszaállítás** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során iCloud-alapú biztonsági mentést kér.
+        - **Apple ID** – Az App Store-beli iOS-alkalmazások letöltéséhez Apple ID szükséges, az Intune által telepített alkalmazásokat is beleértve. Ha engedélyezve van, az iOS kérni fogja a felhasználótól az Apple ID azonosítót, amikor az Intune egy azonosító nélküli alkalmazást próbál telepíteni.
+        - **Feltételek és kikötések** – Ha engedélyezve van, a Beállítási asszisztens az aktiválás során arra kéri a felhasználót, hogy fogadja el az Apple használati feltételeit.
+        - **Touch ID** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Apple Pay** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Nagyítás** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Siri** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Diagnosztikai adatok küldése az Apple-nek** – Ha ez a beállítás engedélyezve van, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+     -  **Az Apple Configurator további felügyeleti funkcióinak engedélyezése** – Állítsa a **Letiltás** beállításra, hogy megakadályozza a fájloknak az iTunesszal való szinkronizálását, illetve az Apple Configuratoron keresztüli felügyeletet. A Microsoft azt javasolja, hogy állítsa a beállítást a **Letiltás** értékre, a további konfigurációkat exportálja az Apple Configuratorból, majd az Intune-on keresztül telepítse ezeket egyéni iOS konfigurációs profilként ahelyett, hogy ezzel a beállítással engedélyezné a tanúsítvánnyal vagy anélkül történő manuális telepítést.
         - **Letiltás** – Megakadályozza, hogy az eszköz USB-kapcsolaton keresztül kommunikáljon (párosítás letiltása).
         - **Engedélyezés** – Engedélyezi az eszköz és bármely PC vagy Mac számítógép közötti, USB-kapcsolaton keresztüli kommunikációt.
         - **Tanúsítvány megkövetelése** – Engedélyezi a regisztrációs profilba importált tanúsítvánnyal rendelkező Mac számítógépekkel való párosítást.
 
 6.  **DEP-eszközök hozzárendelése kezelés céljából** – Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-vel. Válassza a **Deployment Program** (Telepítési program) &gt; **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Devices** (Eszközök kezelése) lehetőséget. Adja meg, hogy miként fogja kiválasztani az eszközöket ( **Choose Devices**), adja meg az eszközinformációkat, és adja meg a részleteket az eszköz sorozatszáma ( **Serial Number**) vagy rendelésszáma ( **Order Number**) alapján, illetve CSV-fájl feltöltésével ( **Upload CSV File**). Ezután válassza az **Assign to Server** (Hozzárendelés kiszolgálóhoz) lehetőséget, válassza ki a Microsoft Intune-hoz megadott &lt;Kiszolgálónevet&gt;, majd kattintson az **OK** gombra.
 
-7.  **DEP által felügyelt eszközök szinkronizálása** Rendszergazda felhasználóként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen kattintson a **Szinkronizálás** elemre. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek. Ha meg szeretné tekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Csoportok** &gt; **Minden céges eszköz** területét. A **Céges eszközök** munkaterületen, a felügyelt eszközök **Állapot** területén mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
+7.  **DEP által felügyelt eszközök szinkronizálása** – Rendszergazda felhasználóként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen kattintson a **Szinkronizálás** elemre. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek. Ha meg szeretné tekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Csoportok** &gt; **Minden céges eszköz** területét. A **Céges eszközök** munkaterületen, a felügyelt eszközök **Állapot** területén mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
 
     Az Apple elfogadható DEP-forgalomra vonatkozó feltételeinek teljesítése érdekében az Intune a következő korlátozásokat írja elő:
      -  Teljes DEP-szinkronizálás legfeljebb 7 naponként futtatható. Teljes szinkronizálás során az Intune minden Apple által hozzárendelt Intune-sorozatszámot frissít, függetlenül attól, hogy azt már korábban szinkronizálták-e, vagy sem. Ha az előző teljes szinkronizálástól számított 7 napon belül egy újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.

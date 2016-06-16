@@ -59,12 +59,12 @@ A regisztrációs e-mail címet használjuk a regisztrációs folyamat megerős�
 
 iOS-mobilalkalmazás engedélyezéséhez a következőkre lesz szüksége:
 
-1. **[iOS-hez készült Microsoft Intune App SDK – fejlesztői útmutató](intune-app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a mobil iOS-alkalmazás Intune App SDK-val való engedélyezésének lépéseit. A dokumentum az Intune App SDK csomag részeként letöltött dokumentációs mappában található.
+1. **[iOS-hez készült Microsoft Intune App SDK – fejlesztői útmutató](intune-app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a mobil iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit. A dokumentum az Intune App SDK csomag részeként letöltött dokumentációs mappában található.
 2. **Intune App SDK iOS-ban**: A Microsoft Intune-ból letöltött Intune App SDK csomag tartalmaz egy „Intune App SDK for iOS” nevű aláírt mappát. Ebben a mappában megtalálja az iOS rendszerhez készült Intune App SDK teljes tartalmát.
 
 Androidos mobilalkalmazás Intune App SDK-val való engedélyezéséhez a következőkre lesz szüksége:
 
-1. **[Androidhoz készült Microsoft Intune App SDK – fejlesztői útmutató](intune-app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti az androidos mobilalkalmazás Intune App SDK-val való engedélyezésének lépéseit. A dokumentum az Intune App SDK csomag részeként letöltött dokumentációs mappában található.
+1. **[Androidhoz készült Microsoft Intune App SDK – fejlesztői útmutató](intune-app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti az androidos mobilalkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit. A dokumentum az Intune App SDK csomag részeként letöltött dokumentációs mappában található.
 2. **Intune App SDK Androidban**: A Microsoft Intune-ból letöltött Intune App SDK csomag tartalmaz egy „Intune App SDK for Android” nevű aláírt mappát. Ebben a mappában megtalálja az Android rendszerhez készült Intune App SDK teljes tartalmát.
 
 ## Telemetria kikapcsolása az alkalmazásra vonatkozóan

@@ -37,7 +37,7 @@ Az Intune felügyeleti konzolján megtekintheti a bérlői rendszergazda adatait
 ## Felhasználói fiókok egyesével történő hozzáadása
 Az alábbi lépéseket követve adhat hozzá további felhasználói fiókokat próbaverziós bérlői fiókjához. A rendszer minden hozzáadott felhasználói fiókot az Intune ingyenes próbaverziójának részeként rendelkezésre álló 100 licencből von le.
 
-1.  AZ [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkID=787455) válassza a **Felhasználó hozzáadása** &gt; **Új**&gt; **Felhasználó** elemet az **Új felhasználók** varázsló elindításához.
+1.  Az [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkID=787455) válassza a **Felhasználó hozzáadása** &gt; **Új**&gt; **Felhasználó** elemet az **Új felhasználók** varázsló elindításához.
 
 2.  A **Rrészletek** lapon töltse ki a kötelező mezőket.
 

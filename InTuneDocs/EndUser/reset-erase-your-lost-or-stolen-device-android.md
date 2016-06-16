@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Ha androidos telefonja elveszett vagy ellopták, a Vállalati portál alkalmazásból vagy webhelyről visszaállíthatja rajta a gyári beállításokat. A Vállalati portál alkalmazás használatával kapcsolatos útmutatást a következő lépésekben vagy ebben a [videóban](http://aka.ms/ly1x17) talál. A [Vállalati portál webhely segítségével is alaphelyzetbe állíthatja az eszközt](reset-your-device-cpwebsite.md).
 
-Ha szeretné megtudni, hogy mi történik, ha alaphelyzetbe állítja az eszközét, olvassa el a következő cikket: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
+Ha szeretné megtudni, hogy mi történik az eszköz alaphelyzetbe állításakor, olvassa el a következő cikket: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
 > [!WARNING] A gyári beállítások visszaállítása törli a telefonról a személyes és munkahelyi adatokat.
 
@@ -40,13 +40,13 @@ Ha szeretné megtudni, hogy mi történik, ha alaphelyzetbe állítja az eszköz
 
 3.  Kattintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 
-Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe.
+Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

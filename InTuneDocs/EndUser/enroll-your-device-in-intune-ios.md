@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,6 +33,7 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következőt: [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md).
 
 
+
 **iOS-eszköz regisztrálása:**
 
 1.  Végezze el [Az Intune Vállalati portál alkalmazásának telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md) című részben ismertetett lépéseket.
@@ -41,7 +42,7 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
     ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
 
-3. A **Miért érdemes regisztrálni az eszközt?** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **Folytatás** elemre.
+3. A **Miért érdemes regisztrálnia az eszközét?** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **Folytatás** elemre.
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
 
@@ -79,7 +80,7 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
 
-12. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **Folytatás** elemre. Ha a rendszergazda további biztonsági követelményeket (például a jelszó beállításának szükségességét) állított be, kövesse a képernyőn megjelenő utasításokat, amíg ki nem elégíti az összes megfelelőségi követelményt. Ekkor a rendszer visszalépteti a Vállalati hozzáférés beállítása képernyőre. Itt koppintson a **Folytatás** elemre.
+12. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **Folytatás** elemre. Ha a rendszergazda további biztonsági követelményeket (például a jelszó beállításának szükségességét) állított be, kövesse a képernyőn megjelenő utasításokat, amíg nem teljesíti az összes megfelelőségi követelményt. Ekkor a rendszer visszalépteti a Vállalati hozzáférés beállítása képernyőre. Itt koppintson a **Folytatás** elemre.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
 
@@ -89,13 +90,11 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
 Ezzel megtörtént az eszköz Intune-beli regisztrálása, és a rendszer visszalépteti a Vállalati portál alkalmazásba.
 
-    
-
-  
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

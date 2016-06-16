@@ -18,7 +18,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ A Microsoft Intune Center a következőket teszi lehetővé a felhasználók sz
 
 -   A Microsoft Intune Endpoint Protection felügyelete
 
--   távsegítség kérése.
+<!--- -   Request remote assistance.--->
 
 A Microsoft Intune Center minden felügyelt számítógépre telepítve van. Az alábbi beállításokat konfigurálhatja egy Intune-szabályzatban, és ezek jelennek meg a felhasználóknak a Microsoft Intune Centerben:
 
@@ -107,7 +107,7 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza azt a számítógépet, amelyet újra szeretne indítani).
 
-2.  Jelöljön ki egy vagy több számítógépet, majd válassza a **Távoli feladatok** &gt; **Számítógép újraindítása** elemet
+2.  Jelöljön ki egy vagy több számítógépet, majd válassza a **Távoli feladatok** &gt; **Számítógép újraindítása** elemet.
 
 3.  A feladat állapotának megtekintéséhez válassza a lap jobb alsó sarkában található **Távoli feladatok** elemet.
 
@@ -139,7 +139,7 @@ A számítógép eltávolításakor:
 
 -   Konfigurációjuktól függően az eltávolított számítógépek a Windows Server Update Services, a Windows Update vagy a Microsoft Update használatával továbbra is kaphatnak frissítéseket.
 
-    > [!IMPORTANT] Ha az ügyfélszoftvert csoportházirend-objektummal (GPO) telepítették, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy a szoftver ne települjön újra.
+    > [!IMPORTANT] Ha az ügyfélszoftver egy csoportházirend-objektummal (GPO) lett telepítve, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy megakadályozza a szoftver újratelepítését.
 
     Ha az ügyfél eltávolítása nem sikerült, további segítséget itt találhat: [Az Endpoint Protection hibáinak elhárítása](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
@@ -158,65 +158,65 @@ Mielőtt szoftvereket telepítene egy felhasználónak, a felhasználót egy sz�
 
     -   Ha azt szeretné, hogy a számítógép továbbra is az aktuális felhasználóhoz legyen kapcsolva (ha van ilyen), válassza a **Mégse** lehetőséget.
 
-    -   Ha el szeretné távolítani az aktuális felhasználóval való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt; **OK** lehetőséget.
+    -   Ha el szeretné távolítani az aktuális felhasználóhoz való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt; **OK** lehetőséget.
 
     -   Ha a számítógépet egy új felhasználóhoz szeretné kapcsolni, válasszon ki egy felhasználót a **Minden felhasználó** listában. Erősítse meg, hogy a felhasználói adatok helyesek, majd kattintson az **OK** gombra.
 
-> [!TIP] Ha korlátozni szeretné a végfelhasználókat abban, hogy önmagukat számítógépekkel kapcsolják össze, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást **A Microsoft Intune-ügynök beállításai** szabályzatban.
+> [!TIP] Ha korlátozni szeretné a végfelhasználókat abban, hogy önmagukat számítógépekhez csatolhassák, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást A **Microsoft Intune-ügynök beállításai** házirendben.
 
-## Távsegítség kérése és biztosítása az Intune ügyfélszoftverét használó Windows-számítógépeken
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Előfordulhat, hogy még nem látja a TeamViewer-integrációval megvalósított távsegítség beállítására szolgáló lehetőséget az Intune felügyeleti konzoljában. Ehhez a funkcióhoz egyelőre nem minden ügyfelünk fér hozzá, de terveink szerint hamarosan szélesebb körben is elérhetővé tesszük.
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-A Microsoft Intune a [TeamViewer](https://www.teamviewer.com) szoftver segítségével távsegítséget biztosíthat azon felhasználók számára, akiknek a számítógépén fut az Intune ügyfélszoftvere. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást.
-Ez a funkció az Intune jelenlegi Windows Távsegítség szolgáltatását cseréli le.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### Előkészületek
+### Before you start
 
-Ahhoz, hogy a távsegítség funkcióval támogatást biztosíthasson az azt kérő felhasználóknak, teljesítenie kell a következő előfeltételeket:
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- [Regisztrálnia kell egy TeamViewer-fiókot](https://login.teamviewer.com/LogOn#register), hogy be tudjon jelentkezni a TeamViewer weboldalára.
-- A kezelni kívánt Windows-számítógépeket [a Windows rendszerű számítógépügyfélnek kell felügyelnie](manage-windows-pcs-with-microsoft-intune.md).
-- Az Intune által támogatott bármely számítógépes Windows operációs rendszer támogatható.
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### A TeamViewer-összekötő konfigurálása
+### Configure the TeamViewer Connector
 
-1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
-2. A **Felügyelet** munkaterületen válassza a **TeamViewer** lehetőséget.
-3. A **TeamViewer** oldal **TeamViewer-összekötő** részénél válassza az **Engedélyezés** lehetőséget.
-4. **A TeamViewer engedélyezése** párbeszédpanelen olvassa el, majd az **Elfogadás** gombra kattintva fogadja el a licencfeltételeket. Ha még nem rendelkezik TeamViewer-licenccel, kattintson a **TeamViewer-licenc vásárlása** elemre.
-5. Megnyílik a TeamViewer böngészőablaka. Jelentkezzen be az oldalra a TeamViewerhez kapott hitelesítő adataival.
-6. A TeamViewer oldalán olvassa el, majd fogadja el a beállításokat, amelyek lehetővé teszik az Intune és a TeamViewer összekapcsolását.
-7. Az Intune-konzolban ellenőrizze, hogy a **TeamViewer-összekötő** beállítás értéke a következő-e: **Engedélyezve**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### Végfelhasználói távsegítségkérés benyújtása
+### Open a remote assistance request (end user)
 
-1. A Windows rendszerű ügyfélszámítógépen nyissa meg a **Microsoft Intune Centert**.
-2. A **Távsegítség** menüben válassza a **Távsegítség kérése** lehetőséget.
-3. A kérés jóváhagyását követően (lásd alább) az ügyfél megnyitja a TeamViewert. A felhasználónak jóvá kell hagynia az esetleg megjelenő üzeneteket, amelyek arról tájékoztatják, hogy a böngésző meg szeretné nyitni a TeamViewer alkalmazást.
-4. A felhasználónál megjelenik egy üzenet, amely megkérdezi, hogy szeretné-e engedélyezni, hogy Ön átvegye az irányítást a számítógép felett. A folytatáshoz meg kell adni az engedélyt.
-5. A távsegítség-munkamenet során a felhasználót egy ablak tájékoztatja arról, hogy Ön csatlakozik hozzá. Az ablak bezárása esetén a távoli munkamenet is lezárul.
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### Válasz távsegítségre vonatkozó kérésre
+### Respond to a remote assistance request
 
-1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Példa:
-> ![Távsegítségkérést bemutató képernyőkép](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>Azokat a kéréseket, amelyekre 4 órán át nem érkezik válasz, a rendszer eltávolítja.
-2. A kérés elfogadásához kattintson **A kérelem jóváhagyása és a Távsegítség alkalmazás elindítása** elemre.
-3. A **Függőben van egy új távsegítség-kérés** párbeszédpanelen válassza **A távsegítségkérés elfogadása** lehetőséget. Ha még nincs telepítve a számítógépre a TeamViewer a további szükséges alkalmazásokkal együtt, megtörténik a telepítés.
-4. A TeamViewer ezt követően tájékoztatja a végfelhasználót, hogy Ön szeretné átvenni az irányítást a számítógép felett. Ha a felhasználó megadja az engedélyt, megnyílik a TeamViewer ablaka, és Ön megkezdheti a felhasználó számítógépének kezelését. 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-A távsegítség-munkamenet ideje alatt a TeamViewer összes rendelkezésre álló parancsa használható a távoli számítógép vezérlésére. A parancsokkal kapcsolatban a TeamViewer webhelyén található [Manual for remote control](http://www.teamviewer.com/en/support/documents/) (Távvezérlési kézikönyv) dokumentumban talál további információkat.
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### A távsegítség-munkamenet lezárása
+### Close the remote assistance session
 
-A **TeamViewer** ablakának **Műveletek** menüjében válassza a **Munkamenet vége** lehetőséget.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

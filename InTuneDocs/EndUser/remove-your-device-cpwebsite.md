@@ -18,7 +18,7 @@ ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,15 +36,17 @@ Az eszköz eltávolítása:
 
 1.  Nyissa meg a [Vállalati portál webhelyet](http://portal.manage.microsoft.com), és koppintson annak az eszköznek a nevére, amelyet módosítani szeretne.
 
-2.  Koppintson az **Eltávolítás** lehetőségre..
+2.  Koppintson az **Eltávolítás** lehetőségre.
 
     ![remove-device](./media/iwp-1-tap-reset-passcode.png)
 
 Az eszköz eltávolítása megtörtént.
 
+Ha segítségre van szüksége, de nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

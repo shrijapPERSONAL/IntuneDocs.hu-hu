@@ -55,7 +55,7 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
 
     ![Képernyőfelvétel a meglévő szabályzatok listáját tartalmazó Alkalmazásszabályzat panelről](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Válassza a **Házirend hozzáadása** elemet.
+3.  Válassza a **Szabályzat hozzáadása** elemet.
 
     ![A kijelölt Szabályzat hozzáadása menüpont az Alkalmazásszabályzat panelen – képernyőfelvétel ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 

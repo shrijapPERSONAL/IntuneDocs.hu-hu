@@ -61,11 +61,11 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 
 -   **Szükséges telepítés** – az alkalmazás végfelhasználói beavatkozás nélkül települ az eszközön.
 
-    > [!TIP] Nem felügyelt üzemmódban működő IOS-eszközök és az összes Android-eszköz esetében az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
+    > [!TIP] Nem felügyelt üzemmódban működő iOS-eszközök és az összes Android-eszköz esetében az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
     >
     > Az iOS 7.1-es verziójánál régebbi rendszerű iOS-eszközökhöz már nem készíthetők új alkalmazáspéldányok. Az iOS 7.1-es verziójánál korábbi rendszerű eszközökhöz készült meglévő alkalmazáspéldányok azonban továbbra is működnek az Intune-ban, és az Intune felügyeli őket.
     > 
-    >  Ha egy végfelhasználó Ön által kötelezőnek jelölt alkalmazást töröl, az Intune a következő leltározási ciklus során (amely általában 7 naponta következik be) automatikusan újratelepíti az alkalmazást.
+    >  Ha egy végfelhasználó törl egy Ön által kötelezőnek jelölt alkalmazást, az Intune a következő leltározási ciklus során (amely általában 7 naponta következik be) automatikusan újratelepíti az alkalmazást.
 
 -   **Elérhető telepítés** – az alkalmazás megjelenik a vállalati portálon, és a végfelhasználók igény szerint telepíthetik.
 

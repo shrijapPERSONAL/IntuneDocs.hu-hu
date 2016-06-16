@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével | Microsoft Intune
+title: Vállalati erőforrások elérésének lehetővé tétele tanúsítványprofilokkal | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 # Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével
 Amikor engedélyezi a vállalati erőforrások VPN-en, Wi-Fi-n vagy e-mailes profilokon keresztüli hozzáférését, biztonságossá teheti ezt a hozzáférést az egyes felhasználói eszközökre telepített tanúsítvánnyal. Működési elv:
 
-1. Győződjön meg arról, hogy már működik a megfelelő tanúsítványinfrastruktúra a [Tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure.md) című témakörben foglaltak szerint..
+1. Győződjön meg arról, hogy már működik a megfelelő tanúsítványinfrastruktúra a [Tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure.md) című témakörben foglaltak szerint.
 
 2. Telepítsen egy főtanúsítványt (vagy köztes hitelesítésszolgáltatói tanúsítványt) minden eszközön, hogy az eszköz felismerje a hitelesítésszolgáltató érvényességét. Ezt egy **megbízhatótanúsítvány-profil** létrehozásával és telepítésével teheti meg. A profil telepítésekor az Intune-nal felügyelt eszközök lekérik és megkapják a főtanúsítványt. Mindegyik platformhoz különálló profilt kell létrehoznia. A **megbízható tanúsítványprofil** a következő platformokhoz érhető el:
  -  iOS 7.1-es és újabb verziók
@@ -61,6 +61,6 @@ Mindegyik platformhoz különálló profilt kell létrehoznia. A profil létreho
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

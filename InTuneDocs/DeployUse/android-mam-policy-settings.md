@@ -65,7 +65,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 
     **Alapértelmezett érték = Igen**
 - **Alkalmazásadatok titkosítása:** Válassza az **Igen** lehetőséget a titkosítás engedélyezéséhez. Amikor engedélyezve van ez a beállítás, a mobilalkalmazás-felügyeleti szabályzattal társított alkalmazások esetén a titkosításról a Microsoft gondoskodik. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során. Az eszköz tárhelyén található tartalom mindig titkosított marad.
-  >[!NOTE] A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.
+  >[!NOTE] A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány
 
   **Alapértelmezett érték = Igen**
 
@@ -81,7 +81,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
  **Alapértelmezett érték = Igen**
 
  -  **Egyszerű PIN-kód engedélyezése:** Azt határozza meg, hogy a felhasználó használhat-e egyszerű PIN-kódokat (például 1234 vagy 1111). **Alapértelmezett érték = Igen**.
- - **PIN-kód hossza:** azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kel tartalmazniuk. **Alapértelmezett érték = 4**
+ - **PIN-kód hossza:** Azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kel tartalmazniuk. **Alapértelmezett érték = 4**
  - **Próbálkozások száma a PIN kód alaphelyzetbe állítása előtt:** Itt beállíthatja, hogy hányszor tehessen kísérletet a felhasználó a PIN-kód megadására, mielőtt a rendszer a PIN-kód alaphelyzetbe állítását kérné. **A beállításnak nincs alapértelmezett értéke.**
 - **Vállalati hitelesítő adatok szükségesek a hozzáféréshez:** Az **Igen** lehetőséget választva a rendszer a számokból álló PIN-kód helyett vállalati hitelesítő adatokat kér az alkalmazás eléréséhez.  Az **Igen** érték megadásával a rendszer felülírja a PIN-kóddal vagy az ujjlenyomatos azonosítással kapcsolatos követelményeket.  A rendszer a vállalati hitelesítő adatok megadását fogja kérni a felhasználótól.
 

@@ -18,7 +18,7 @@ ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,8 +38,8 @@ A számítógép összekapcsolása:
 
 3.  A képernyőn megjelenő utasításokat követve kapcsolja össze számítógépét a felhasználói fiókjával.
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

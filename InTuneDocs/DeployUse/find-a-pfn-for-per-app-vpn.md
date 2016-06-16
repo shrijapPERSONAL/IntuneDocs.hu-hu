@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-ekhez |Microsoft Intune|
+title: Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-ekhez | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -18,7 +18,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: tycast
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 
 Ahhoz, hogy egy alkalmazásonkénti VPN-t konfigurálni tudjon, két lehetősége is van a PFN megkeresésére.
 
-## PFN keresése Windows 10 rendszerű számítógépre telepített alkalmazásokhoz 
+## Egy Windows 10 rendszerű számítógépre telepített alkalmazás PFN-jének megkeresése 
 
 Ha már telepítve van egy Windows 10 rendszerű számítógépre az az alkalmazás, amellyel dolgozik, a [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell-parancsmag használatával is beolvashatja a PFN-t.
 
@@ -42,7 +42,7 @@ A Get-AppxPackage szintaxisa a következő:
 
 Ha például a számítógépre telepített összes univerzális alkalmazásra vonatkozó adatot szeretné lekérni, használja a `Get-AppxPackage` parancsot.
 
-Ha olyan alkalmazás adatait szeretné lekérni, amelynek tudja a nevét vagy a név egy részét, használja a `Get-AppxPackage *<app_name>` parancsot. Felhívjuk figyelemét a helyettesítő karakter használatára, amely különösen akkor hasznos, ha nem tudja biztosan az alkalmazás teljes nevét. A OneNote adatainak lekéréséhez például használja a `Get-AppxPackage *OneNote` parancsot.
+Ha olyan alkalmazás adatait szeretné lekérni, amelynek tudja a nevét vagy a név egy részét, használja a `Get-AppxPackage *<app_name>` parancsot. Felhívjuk figyelemét a helyettesítő karakter használatára. Ez különösen akkor hasznos, ha nem tudja biztosan az alkalmazás teljes nevét. A OneNote adatainak lekéréséhez például használja a `Get-AppxPackage *OneNote` parancsot.
 
 
 A OneNote-ra vonatkozóan lekért adatok a következők:
@@ -71,7 +71,7 @@ A OneNote-ra vonatkozóan lekért adatok a következők:
 
 
 
-## PFN keresése, ha az alkalmazás nincs telepítve a számítógépre
+## A PFN megkeresése, ha az alkalmazás nincs telepítve a számítógépre
 
 1.  Nyissa meg a https://www.microsoft.com/hu-hu/store/apps webhelyet.
 2.  Írja be az alkalmazás nevét a keresősávba. A jelen példában keressen rá a OneNote-ra.

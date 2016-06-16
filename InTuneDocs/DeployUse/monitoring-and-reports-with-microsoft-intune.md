@@ -18,7 +18,7 @@ ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,10 +33,10 @@ Informatikai rendszergazdaként szeretné megfigyelni az eszközök állapotát 
 
 -   A **[Riasztások](get-notified-by-microsoft-intune-alerts.md)** segítségével figyelheti az Intune-nal kezelt eszközök állapotát (beleértve az Endpoint Protection állapotát és figyelmeztetéseit; a kártevő szoftverekkel kapcsolatos riasztásokat; illetve a lemezterület szűkösségére vagy a hálózati kapcsolat hiányára vonatkozó figyelmeztetéseket).
 
--   Az Intune által kezelt eszközök és számítógépek részletes információkat adnak a tulajdonságaikról és a telepített szoftvereikről.  Az Intune eszközeivel és jelentéseivel megvizsgálhatók és ábrázolhatók ezek az adatok. Részletekért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](understand-your-devices-with-inventory-in-microsoft-intune.md)..
+-   Az Intune által kezelt eszközök és számítógépek részletes információkat adnak a tulajdonságaikról és a telepített szoftvereikről.  Az Intune eszközeivel és jelentéseivel megvizsgálhatók és ábrázolhatók ezek az adatok. Részletekért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](understand-your-devices-with-inventory-in-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

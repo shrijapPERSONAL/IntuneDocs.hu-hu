@@ -49,11 +49,11 @@ Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell 
 
 ## Apple VPP-token beszerzése és feltöltése
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **iOS és Mac OS X** &gt;  **Volume Purchase Program** elemre.
+1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **iOS és Mac OS X** &gt; **Volume Purchase Program** elemre.
 
 2.  Kattintson az **Apple VPP-fiók** hivatkozásra, és ha még nem tette meg, regisztráljon a Volume Purchase Program for Business programba. Miután bejelentkezett, töltse le a fiókjához tartozó Apple VPP-tokent.
 
-3.  Az Intune-konzol **Apple Volume Purchase Program (VPP) kezelése** oldalán kattintson a **VPP-token feltöltése** lehetőségre.
+3.  Az Intune-konzolon **Az Apple Volume Purchase Program (VPP) kezelése** oldalon kattintson **A VPP-token feltöltése** lehetőségre.
 
 4.  A **VPP-token feltöltése** párbeszédpanelen írja be vagy másolja be a VPP-token nevét és az Apple ID-ját, majd kattintson a **Feltöltés** gombra.
 
@@ -75,12 +75,12 @@ A licencek visszanyeréséhez módosítania kell a központi telepítési művel
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Ezt a lépést az alkalmazás telepítésének folytatása előtt kell megtennie.
 
-> [!TIP] A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazást telepítették.
+> [!TIP] A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazást telepítve van.
 
 Ha nincsenek további elérhető licencek, a telepítés meghiúsul.
 
 ## Apple VPP-alkalmazások figyelése
-Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítettek, és hány licencet használtak fel.
+Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítették, és hány licencet használtak fel.
 
 > [!TIP] Az alkalmazás **szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
 

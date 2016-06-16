@@ -18,7 +18,7 @@ ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,15 +30,17 @@ ms.suite: ems
 
 Ha a rendszergazda VPN-alkalmazást konfigurált, hogy a felhasználók hozzá tudjanak férni a vállalati erőforrásokhoz, akkor megjelenik egy értesítés az Android-eszközén, amely arról tájékoztatja, hogy telepítenie kell egy VPN-alkalmazást. Kövesse a következő lépéseket a VPN-alkalmazás telepítéséhez:
 
-1.  Húzza le az értesítési fiókot, és koppintson **A szükséges alkalmazás telepítéséhez koppintson ide** elemre..
+1.  Húzza le az értesítési fiókot, és koppintson **A szükséges alkalmazás telepítéséhez koppintson ide.** elemre.
 
 2.  A **Play áruházban** kattintson a **TELEPÍTÉS** gombra, és kövesse a megjelenő utasításokat az alkalmazás telepítéséhez.
 
 3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és a lépéseket követve fogadja el a feltételeket, majd aktiválja az alkalmazást.
 
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

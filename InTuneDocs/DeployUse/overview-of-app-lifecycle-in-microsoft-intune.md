@@ -29,11 +29,11 @@ ms.suite: ems
 
 Az Intune alkalmazás-életciklusa akkor kezdődik, amikor felvesznek az Intune-ba egy alkalmazást. Ez különböző fázisokon halad át az életciklusa folyamán, amíg el nem távolítják.
 
-![Az alkalmazások életciklusa](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Az alkalmazások életciklusa](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Hozzáadás
 
-Az alkalmazások telepítésének első lépéseként fel kell vennie az Intune-ban felügyelni és telepíteni kívánt alkalmazást. Habár számos különböző típusú alkalmazás létezik, az alapvető eljárás mindegyik esetében megegyezik. Az Intune-ban [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md), valamint [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) egyaránt vehet fel alkalmazásokat..
+Az alkalmazások telepítésének első lépéseként fel kell vennie az Intune-ban felügyelni és telepíteni kívánt alkalmazást. Habár számos különböző típusú alkalmazás létezik, az alapvető eljárás mindegyik esetében megegyezik. Az Intune-ban [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md), valamint [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) egyaránt vehet fel alkalmazásokat.
 
 ## Telepítés
 
@@ -48,14 +48,14 @@ Az alkalmazások életciklusa során általában az alkalmazás több új verzi�
 ## Védelem
 
 Az Intune számos módszert kínál az alkalmazásokban tárolt adatok védelmére. A legfontosabb megoldások a következők:
-- A [feltételes hozzáférés](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) funkció segítségével az Ön által megadott feltételek (például az eszköz típusa, illetve a telepített [eszközmegfelelőségi szabályzat](introduction-to-device-compliance-policies-in-microsoft-intune.md)) alapján szabályozhatja a hozzáférést az e-mailekhez és más szolgáltatásokhoz.
-- A [mobilalkalmazás-kezelés (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) funkció az egyes alkalmazásokkal együttműködve nyújt védelmet az általuk használt vállalati adatok számára. Letilthatja például az adatok nem felügyelet alkalmazások és az Ön által felügyelt alkalmazások közötti másolását, illetve megakadályozhatja, hogy az alkalmazások elinduljanak függetlenített vagy feltört eszközökön.
+- A [Feltételes hozzáférés](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) funkció segítségével az Ön által megadott feltételek (például az eszköz típusa, illetve a telepített [eszközmegfelelőségi szabályzat](introduction-to-device-compliance-policies-in-microsoft-intune.md)) alapján szabályozhatja a hozzáférést az e-mailekhez és más szolgáltatásokhoz.
+- A [Mobilalkalmazás-kezelés (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) funkció az egyes alkalmazásokkal együttműködve nyújt védelmet az általuk használt vállalati adatok számára. Letilthatja például az adatok nem felügyelet alkalmazások és az Ön által felügyelt alkalmazások közötti másolását, illetve megakadályozhatja, hogy az alkalmazások elinduljanak függetlenített vagy feltört eszközökön.
 
 ## Kivonás
 
-Az idő múlásával a telepített alkalmazások elavulttá válnak, így el kell őket távolítani. Az Intune segítségével egyszerűen [kivonhatja a kívánt alkalmazásokat a szolgáltatásból](retire-apps-using-microsoft-intune.md)..
+Az idő múlásával a telepített alkalmazások elavulttá válnak, így el kell őket távolítani. Az Intune segítségével egyszerűen [kivonhatja a kívánt alkalmazásokat a szolgáltatásból](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

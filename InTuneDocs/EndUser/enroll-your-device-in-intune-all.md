@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -28,7 +28,7 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 
 # Eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Windows-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. Ha szeretne többet tudni a regisztrációról, valamint arról, hogy mi az, amit a rendszergazda megtekinthet eszközén, kövesse a témakör alján található hivatkozásokat.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Windows-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. Ha szeretne többet megtudni a regisztrációról, valamint arról, hogy mi az, amit a rendszergazda megtekinthet eszközén, kövesse a témakör alján található hivatkozásokat.
 
 A regisztrációval kapcsolatos utasítások eléréséhez használja az Ön által használt eszköznek megfelelő hivatkozást:
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Windows-eszköz titkosítása
-A munkahelyi hálózathoz való újracsatlakozáshoz titkosítania kell az eszközét az alábbi utasításokat követve:
 
-## 1. lehetőség – Microsoft-fiók hozzáadása
+Előfordulhat, hogy a rendszergazda a munkahelyi vagy iskolai adatok védelme érdekében megköveteli a Windows-eszköz titkosítását. Ha Windows Phone rendszerű eszközzel rendelkezik, és az regisztrálva van, kötelező titkosítás esetén a rendszer automatikusan titkosítja az eszközt.
 
-1.  Keresse meg, majd indítsa el a **Gépház** alkalmazást.
-
-2.  Kattintson a **Fiókok** &gt; **Az Ön fiókja** lehetőségre, majd kattintson az **Összekapcsolás Microsoft-fiókkal** hivatkozásra..
-
-3.  Kövesse a megjelenő utasításokat.
-
-4.  Ellenőrizze, hogy az eszköz regisztrálva van az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatása szerint..
-
-## 2. lehetőség – A BitLocker engedélyezése:
+Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz. 
 
 1.  Keresse meg, majd indítsa el a **BitLocker kezelése** alkalmazást.
 
-2.  Kattintson a **BitLocker szolgáltatás bekapcsolása**hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
+2.  Kattintson a **BitLocker szolgáltatás bekapcsolása** hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
 
-3.  Ellenőrizze, hogy az eszköz regisztrálva van az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatása szerint..
+Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

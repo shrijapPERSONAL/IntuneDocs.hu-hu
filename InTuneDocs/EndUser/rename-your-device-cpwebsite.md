@@ -18,7 +18,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,15 +34,17 @@ Az eszköz átnevezése:
 
 1.  Nyissa meg a [Vállalati portál webhelyet](http://portal.manage.microsoft.com), és koppintson annak az eszköznek a nevére, amelyet módosítani szeretne.
 
-2.  Koppintson az **Átnevezés** parancsra..
+2.  Koppintson az **Átnevezés** parancsra.
 
     ![rename-device](./media/iwp-1-tap-reset-passcode.png)
 
 3.  Írja be az eszköz új nevét a régi név helyére, majd koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.
 
+Ha segítségre van szüksége, de nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

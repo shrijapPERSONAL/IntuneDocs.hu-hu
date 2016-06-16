@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ Már van a vállalati e-mail fiókja. A vállalati e-mailjeihez való csatlakoz�
 
 1.  Az eszköz **Beállítások** funkciójában törölje a vállalati e-maillel korábban létesített kapcsolatot.
 
-    iOS-eszközön például koppintson a **Settings** &gt; **Mail, Contacts, Calendar** (Beállítások, Levelezés, Névjegyek, Naptár) parancsra. Jelölje ki a munkahelyi e-mail-fiókját, majd kattintson a **Delete** (Törlés) gombra..
+    iOS-eszközön például koppintson a **Settings** &gt; **Mail, Contacts, Calendar** (Beállítások, Levelezés, Névjegyek, Naptár) parancsra. Jelölje ki a munkahelyi e-mail-fiókját, majd kattintson a **Delete** (Törlés) gombra.
 
-2.  Nyissa meg a Vállalati portál alkalmazást az eszközön, és koppintson **Megfelelőség ellenőrzése** elemre..
+2.  Nyissa meg a Vállalati portál alkalmazást az eszközön, és koppintson **Megfelelőség ellenőrzése** elemre.
 
 3.  Ekkor egy keveset várnia kell, amíg a rendszer automatikusan alkalmazza az új e-mail-beállításokat.
 
-Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon a rendszergazdához.
+Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon a rendszergazdához. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

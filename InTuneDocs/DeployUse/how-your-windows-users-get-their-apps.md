@@ -38,9 +38,9 @@ Ez a témakör ismerteti, hogy végfelhasználói hol és hogyan juthatnak hozz�
 
 **Nem felügyelt alkalmazások** – Azok az alkalmazások, amelyeket nem az Intune csomagolt be, illetve amelyek nem foglalják magukban az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
-###Lásd még: [Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md).
-[iOS-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)</br>
-[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
+###További információ
+[Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)</br>
+[iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
 
 
 <!--HONumber=Jun16_HO1-->

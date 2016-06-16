@@ -27,7 +27,7 @@ ms.suite: ems
 
 # A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
-> [!NOTE] Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](intune-app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit és az integrációval kapcsolatos előkészületeket a támogatott platformokon. 
+> [!NOTE] Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](intune-app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit, és az integrációval kapcsolatos előkészületeket a támogatott platformokon. 
 
 # Az SDK tartalma 
 
@@ -237,7 +237,7 @@ Ez a beállítás minden API esetén elérhető, és a `BackupAgent` , illetve a
 
 ### A BackupAgentHelper használata
 
-`BackupAgentHelper` megvalósítása jóval egyszerűbb, mint a `BackupAgent` osztályé, mind a natív androidos funkciókat, mind a MAM-integrációt tekintve. `BackupAgentHelper` lehetővé teszi, hogy a fejlesztő teljes fájlokat és közös beállításokat regisztráljon egy `FileBackupHelper` vagy egy `SharedPreferencesBackupHelper` osztályban, amelyeket a rendszer ezt követően létrehozáskor hozzáadja a `BackupAgentHelper` osztályhoz. 
+`BackupAgentHelper` megvalósítása jóval egyszerűbb, mint a `BackupAgent` osztályé, mind a natív androidos funkciókat, mind a MAM-integrációt tekintve. `BackupAgentHelper` lehetővé teszi, hogy a fejlesztő teljes fájlokat és közös beállításokat regisztráljon egy `FileBackupHelper` vagy egy `SharedPreferencesBackupHelper` osztályban, amelyeket a rendszer ezt követően létrehozáskor hozzáad a `BackupAgentHelper` osztályhoz. 
 
 ### A BackupAgent használata
 
@@ -307,7 +307,7 @@ Az alábbiak a fenti értékek általános beállításai.
 
 * Ügyfél-azonosítóként az alkalmazás ügyfél-azonosítóját kell beállítani.
 
-* `NonBrokerRedirectURI` értékeként az alkalmazáshoz tartozó érvényes átirányítási URI-t kell beállítani,
+* `NonBrokerRedirectURI` értékeként az alkalmazáshoz tartozó érvényes átirányítási URI-t kell beállítani.
     * Or `urn:ietf:wg:oauth:2.0:oob` értéket kell beállítani érvényes AAD átirányítási URI-ként.
 
 * A SkipBroker értékét hamisra kell állítani (vagy el kell hagyni)
@@ -320,7 +320,7 @@ Az alábbiak a fenti értékek általános beállításai.
 
 * Ügyfél-azonosítóként az alkalmazás ügyfél-azonosítóját kell beállítani.
 
-* `NonBrokerRedirectURI` értékeként az alkalmazáshoz tartozó érvényes átirányítási URI-t kell beállítani,
+* `NonBrokerRedirectURI` értékeként az alkalmazáshoz tartozó érvényes átirányítási URI-t kell beállítani.
 
     * Or `urn:ietf:wg:oauth:2.0:oob` értéket kell beállítani érvényes AAD átirányítási URI-ként.
 

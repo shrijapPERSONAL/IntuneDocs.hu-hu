@@ -52,7 +52,7 @@ Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a
 
 ## További lépések
 
-Miután telepített egy alkalmazást, érdemes figyelnie az előrehaladását. További információk: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md).
+Miután telepített egy alkalmazást, érdemes figyelnie az előrehaladását. További információ: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md).
 
 
 <!--HONumber=Jun16_HO1-->

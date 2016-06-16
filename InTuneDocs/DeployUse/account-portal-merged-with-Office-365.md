@@ -25,17 +25,17 @@ ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
 
 ---
 
-# Az Intune-fiókportál mostantól az Office 365 felügyeleti portállal közösen működik.
+# Az Intune-fiókportál már az Office 365 felügyeleti portállal közösen működik
 
 Tavaly kezdtük meg az Intune-fiókportál funkcióinak áttelepítését az Office 365 felügyeleti portálra. Ez a művelet befejeződött, az Intune fiókportált így visszavontuk.
 
-A Felhasználók és a Csoportok a megfelelő nevű lapfüleken kezelhetők, a beszerzés és előfizetés-kezelés pedig mostantól a Számlázás lapfülön található.
+A Felhasználók és a Csoportok a megfelelő füleken kezelhetők, a beszerzés és előfizetés-kezelés pedig mostantól a Számlázás fülön található.
 
 A vásárlás módjától függően a szoftverletöltésekhez vagy a Mennyiségi licencelési portálon, vagy a [Microsoft Online Services felhasználói portálon](http://go.microsoft.com/fwlink/?LinkId=259567) férhet hozzá.
 
 Ne felejtse el frissíteni a könyvjelzőit.
 
-Az áttelepítésről további információkat a [Microsoft Intune blogján](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/), vagy a meglévő hitelesítő adataival elérhető új [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) (https://portal.office.com/Admin/Default.aspx) találhat.
+Az áttelepítésről további információt a [Microsoft Intune blogján](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) vagy a meglévő hitelesítő adataival elérhető új [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) (https://portal.office.com/Admin/Default.aspx) találhat.
 
 
 <!--HONumber=Jun16_HO1-->

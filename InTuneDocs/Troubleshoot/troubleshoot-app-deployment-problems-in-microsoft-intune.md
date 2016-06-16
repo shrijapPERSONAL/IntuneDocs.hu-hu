@@ -63,7 +63,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 4.  Ha az iOS-alkalmazás letöltése befejeződött, de az alkalmazástelepítés sikertelen, lehetséges, hogy gond van a megadott alkalmazásfájlokkal.
 
-### Ha egy iOS-alkalmazásra mutató hivatkozás az iTunes alkalmazás-áruház egy korábban felkeresett oldalára viszi
+### Ha egy iOS-alkalmazásra mutató hivatkozás az iTunes alkalmazásáruház egy korábban felkeresett oldalára viszi
 
 1.  Az aktuális iTunes alkalmazásáruházbeli munkamenet a korábbi alkalmazáslapon nyílik meg.
 

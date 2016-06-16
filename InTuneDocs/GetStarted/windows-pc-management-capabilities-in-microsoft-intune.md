@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 
 -   **Kártevők elleni védelem** – Az Intune Endpoint Protection védelmet használ, amely segít a számítógépek kártevők elleni védelmében.
 
--   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune-hoz tartozó távoli asztal szolgáltatás segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
+-   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy kapcsolatba lépjenek az informatikai támogatási csapattal, akik ezt követően az Intune távoli asztal funkciójával segítséget nyújthatnak <!--- (requires TeamViewer software)--->.
 
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
 -   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
@@ -77,6 +77,6 @@ A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelmén
 [A Microsoft Intune mobileszköz-kezelési képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
