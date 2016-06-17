@@ -36,11 +36,11 @@ Ha a rendszergazda VPN-alkalmazást konfigurált, hogy a felhasználók hozzá t
 
 3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és a lépéseket követve fogadja el a feltételeket, majd aktiválja az alkalmazást.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -36,10 +36,10 @@ Már van a vállalati e-mail fiókja. A vállalati e-mailjeihez való csatlakoz�
 
 3.  Ekkor egy keveset várnia kell, amíg a rendszer automatikusan alkalmazza az új e-mail-beállításokat.
 
-Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon a rendszergazdához. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -81,7 +81,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
  **Alapértelmezett érték = Igen**
 
  -  **Egyszerű PIN-kód engedélyezése:** Azt határozza meg, hogy a felhasználó használhat-e egyszerű PIN-kódokat (például 1234 vagy 1111). **Alapértelmezett érték = Igen**.
- - **PIN-kód hossza:** Azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kel tartalmazniuk. **Alapértelmezett érték = 4**
+ - **PIN-kód hossza:** Azt határozza meg, hogy a PIN-kódoknak legalább hány számjegyet kell tartalmazniuk. **Alapértelmezett érték = 4**
  - **Próbálkozások száma a PIN kód alaphelyzetbe állítása előtt:** Itt beállíthatja, hogy hányszor tehessen kísérletet a felhasználó a PIN-kód megadására, mielőtt a rendszer a PIN-kód alaphelyzetbe állítását kérné. **A beállításnak nincs alapértelmezett értéke.**
 - **Vállalati hitelesítő adatok szükségesek a hozzáféréshez:** Az **Igen** lehetőséget választva a rendszer a számokból álló PIN-kód helyett vállalati hitelesítő adatokat kér az alkalmazás eléréséhez.  Az **Igen** érték megadásával a rendszer felülírja a PIN-kóddal vagy az ujjlenyomatos azonosítással kapcsolatos követelményeket.  A rendszer a vállalati hitelesítő adatok megadását fogja kérni a felhasználótól.
 
@@ -100,6 +100,6 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 - **Képernyőfelvétel és az Android Assistant alkalmazás tiltása (Android 6 Marshmallow vagy újabb):** Válassza az **Igen** lehetőséget a képernyőfelvétel-készítés és az eszköz **Android Assistant**-funkcióinak letiltásához az alkalmazás használatakor.
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

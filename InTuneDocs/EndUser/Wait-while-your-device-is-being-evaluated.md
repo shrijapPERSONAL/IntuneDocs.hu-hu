@@ -28,10 +28,10 @@ ms.suite: ems
 # Várjon, amíg az eszköz kiértékelése megtörténik
 Még mindig tart az eszköz kompatibilitásának kiértékelése. Várjon még néhány percet, amíg a kompatibilitás kiértékelése befejeződik.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

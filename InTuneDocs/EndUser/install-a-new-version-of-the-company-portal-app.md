@@ -47,7 +47,7 @@ Az Apple AppStore riasztást küld, ha elérhető a Vállalati portál új verzi
     > [!NOTE] Ha nem fér hozzá a Windows Áruházhoz, lépjen kapcsolatba a rendszergazdával.
 
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 Az eszközzel elvégezhető egyéb feladatokkal kapcsolatos további információkért kövesse az Ön által használt eszköz típusának megfelelő hivatkozást:
 
@@ -57,6 +57,6 @@ Az eszközzel elvégezhető egyéb feladatokkal kapcsolatos további informáci�
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

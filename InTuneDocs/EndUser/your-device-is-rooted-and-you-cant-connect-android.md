@@ -30,11 +30,11 @@ ms.suite: ems
 
 Ha az androidos eszköz rootolva van, az egyben azt is jelenti, hogy az eszközön olyan képességek is engedélyezve lettek, amelyek veszélyeztethetik a vállalati erőforrásokat és a biztonságot. Ha az eszköz rootolva van, nem tudja elérni a vállalati erőforrásokat, és kapcsolatba kell lépnie az informatikai rendszergazdával, hogy újra csatlakozhasson a vállalati erőforrásokhoz.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

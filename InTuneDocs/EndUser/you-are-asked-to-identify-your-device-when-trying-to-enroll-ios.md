@@ -34,11 +34,11 @@ Ha az Intune-ban próbálja meg regisztrálni iOS vagy Mac OS X rendszerű eszk�
 2. Koppintson a **folytatás** gombra.
 3. Írja be az eszköz sorozatszámának utolsó négy számjegyét, hogy az Intune ellenőrizhesse az regisztrációs állapotát. A sorozatszám megkereséséhez lásd: [Hogyan találhatom meg az eszköz sorozatszámát?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

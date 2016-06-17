@@ -18,7 +18,7 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -64,6 +64,6 @@ Ha jelenleg az **Intune felügyeleti konzolját** használja eszközei kezelés�
 [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

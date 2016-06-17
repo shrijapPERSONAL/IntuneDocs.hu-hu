@@ -45,11 +45,11 @@ Ha az eszközt a Vállalati portál webhelyen szeretné visszaállítani, haszn�
 
 2.  Koppintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 > [!NOTE]
-> Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+> Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

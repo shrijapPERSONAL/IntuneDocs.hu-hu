@@ -64,23 +64,12 @@ Itt talál néhány példát arra, hogy melyek lehetnek azok a rendszergazda ál
 
 -   Adattitkosítási követelmények
 
-A következők olyan általános alkalmazások, amelyeket az informatikai részlege felügyelhet:
 
--   Felügyelt webböngésző
-
--   Felügyelt képmegtekintő
-
--   Felügyelt PDF-megtekintő
-
--   Felügyelt AV-lejátszó
-
--   Microsoft Word, Excel, PowerPoint
-
-Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba az informatikai rendszergazdájával. Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba az informatikai rendszergazdájával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

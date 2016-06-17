@@ -42,7 +42,7 @@ A következőkre használhatja a Vállalati portál webhelyét:
 
 -   [Eszköz manuális szinkronizálása a lassú alkalmazástelepítések felgyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
--   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította. Ha nem találja, nézze meg, hogy nincs-e megadva a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+-   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította. 
 
 -   Az eszköz adatainak megtekintése, beleértve, hogy megfelel-e a munkahelye vagy iskolája házirendjeinek
 
@@ -55,6 +55,6 @@ A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat v�
 - [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

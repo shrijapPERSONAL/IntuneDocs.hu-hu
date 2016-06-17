@@ -31,7 +31,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem felel meg egy vagy több, a rendszergazda által az eszközre vonatkozóan beállított követelményeknek. A rendszergazda által létrehozott szabályzattól függően az alábbi problémák egyike, illetve ezek kombinációja állhat fenn:
 
 - Nincsenek számok, nagybetűk, speciális karakterek a jelszóban.
-- A jelszó túl egyszerű és nem elég biztonságos.
+- A jelszó túl egyszerű, így nem elég biztonságos.
 - A jelszó lejárt.
 - Nincs beállítva jelszó.
 - A jelszó túl rövid.
@@ -44,8 +44,8 @@ A PIN-kód és a jelszó beállításával, illetve az eszközzel elvégezhető 
 - [iOS-eszköz PIN-kódjának beállítása és módosítása](set-or-change-your-passcode-ios.md)
 - [Windows-eszköz jelszavának beállítása és módosítása](set-or-change-your-password-windows.md)
 
-Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a rendszergazdához. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

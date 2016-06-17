@@ -18,7 +18,7 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvass
 
 -   A **helyszíni Exchange összekötőjét** kell használnia, amely összeköti az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t és a helyszíni Microsoft Exchange-et. Ez lehetővé az eszközök kezelését az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján keresztül. További tudnivalók az összekötőről: [Az Intune helyszíni Exchange-összekötője](intune-on-premises-exchange-connector.md).
 
-    -   Az Intune-konzolon elérhető helyszíni Exchange-összekötő az Intune-bérlőjéhez tartozik, és semmilyen más bérlővel nem használható. Gondoskodnia kell arról, hogy a bérlője Exchange-összekötője **csak egy számítógépen** legyen telepítve.
+    -   Az Intune-konzolon elérhető helyszíni Exchange-összekötő az Intune-bérlőjéhez tartozik, és semmilyen más bérlővel nem használható. Gondoskodjon róla, hogy bérlője Exchange-összekötője **csak egy számítógépen** legyen telepítve.
 
         Ezt az összekötőt az Intune felügyeleti konzoljáról kell letölteni.  A helyszíni Exchange-összekötő konfigurálásával kapcsolatos általános bemutató: [Az Exchange helyszíni összekötő konfigurálása helyszíni vagy üzemeltetett Exchange használatához](intune-on-premises-exchange-connector.md).
 
@@ -75,7 +75,7 @@ A következő diagram azt a folyamatot mutatja be, amelyet a helyszíni Exchange
 -   Natív e-mail alkalmazás iOS rendszerű eszközökön.
 
 -   Natív e-mail alkalmazás Android 4 vagy újabb rendszerű eszközökön
-> [!NOTE] A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
+> [!NOTE] A Microsoft Outlook alkalmazás Android- és iOS-verziója nem élvez támogatást.
 
 ## Számítógépek támogatása
 
@@ -106,13 +106,13 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
   - **Felhasználó értesítése:** Az Exchange által küldött értesítő e-mail mellett az Intune e-mailt küld, amely tartalmazza az eszköz feloldásának lépéseit. Az alapértelmezett üzenetet az igényeinek megfelelően módosíthatja. Mivel a javítással kapcsolatos utasításokat tartalmazó Intune értesítő e-mail a felhasználó Exchange-postaládájába kerül, ha a felhasználó eszköze le van tiltva az e-mail üzenet megérkezése előtt, egy le nem tiltott eszközzel vagy más módon érheti el az Exchange-fiókot és tekintheti meg az üzenetet. Ez különösen igaz olyankor, ha az **Alapértelmezett szabály** az eszközök blokkolására vagy karanténba helyezésére van beállítva.  Ilyen esetben a végfelhasználónak meg kell nyitnia az alkalmazás-áruházat, le kell töltenie a Microsoft Vállalati portál alkalmazást, és regisztrálnia kell az eszközét. Ez egyaránt vonatkozik az iOS, a Windows és a Samsung KNOX rendszerű eszközökre.  A nem Samsung KNOX-alapú androidos eszközök esetében egy másodlagos e-mail fiókba kell küldenie a karanténba helyezésről értesítő e-mailt, amelyet a regisztrálási és megfelelőség-ellenőrzési folyamat elvégzéséhez a végfelhasználónak a blokkolt eszközére kell másolnia.
   > [!NOTE] Meg kell adnia az értesítő e-mail elküldéséhez használt fiókot, hogy az Exchange elküldhesse az értesítő e-mailt.
   >
-  > Részletes információ: [A helyszíni Exchange-összekötő konfigurálása helyszíni vagy üzemeltetett Exchange használatához](intune-on-premises-exchange-connector.md).
+  > További információk: [A helyszíni Exchange-összekötő konfigurálása helyszíni vagy üzemeltetett Exchange használatához](intune-on-premises-exchange-connector.md).
 
 3.  Ha elkészült, válassza a **Mentés** elemet.
 
 -   Nem kell telepítenie a feltételes hozzáférési házirendet, azonnal érvénybe lép.
 
--   Miután a felhasználó beállította az Exchange ActiveSync-profilt, az eszköz letiltása 1–3 órát vehet igénybe (ha nem kezeli az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Miután a felhasználó beállította az Exchange ActiveSync-profilt, az eszköz letiltása 1–3 órát vehet igénybe (ha nem az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kezeli).
 
 -   Ha egy letiltott felhasználó ezután regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, és kijavítja a nem megfelelőséget, a rendszer 2 percen belül feloldja az e-mailek elérését.
 
@@ -126,6 +126,6 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
 [A Skype Vállalati online verzióhoz való hozzáférés korlátozása](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

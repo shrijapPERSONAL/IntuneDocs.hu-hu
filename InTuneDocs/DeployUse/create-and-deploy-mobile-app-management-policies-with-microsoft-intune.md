@@ -18,7 +18,7 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -167,6 +167,6 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 [Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

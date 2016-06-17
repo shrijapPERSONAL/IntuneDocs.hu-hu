@@ -18,7 +18,7 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -64,6 +64,6 @@ Az Intune ügyfélszoftverével felügyelt számítógépeken nem lehet szelekt�
 [Windows rendszerű számítógépek felügyelete az Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

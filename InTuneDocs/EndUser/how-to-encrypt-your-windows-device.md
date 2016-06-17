@@ -35,10 +35,10 @@ Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz.
 
 2.  Kattintson a **BitLocker szolgáltatás bekapcsolása** hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

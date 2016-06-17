@@ -38,11 +38,11 @@ Ha nem mobileszközt, hanem számítógépet használva szeretné elküldeni a n
 
 4.  Csatolja az összes fájlt egy e-mailhez, és küldje el azt a rendszergazdának.
 
-Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

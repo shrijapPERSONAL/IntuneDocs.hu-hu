@@ -42,11 +42,11 @@ Az eszköz eltávolítása:
 
 Az eszköz eltávolítása megtörtént.
 
-Ha segítségre van szüksége, de nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

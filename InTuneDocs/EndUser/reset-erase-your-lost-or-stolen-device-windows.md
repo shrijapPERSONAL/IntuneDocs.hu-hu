@@ -41,11 +41,11 @@ Ha elhagyta vagy ellopták egy regisztrált Windows-eszközét, visszaállíthat
 3.  Koppintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 
 > [!NOTE]
-> Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje az IT-csoport segítségét az eszköz alaphelyzetbe állításához. Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+> Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje az IT-csoport segítségét az eszköz alaphelyzetbe állításához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

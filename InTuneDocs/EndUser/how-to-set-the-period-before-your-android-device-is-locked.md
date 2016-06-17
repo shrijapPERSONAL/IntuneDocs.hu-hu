@@ -36,8 +36,8 @@ Ha újból csatlakozni szeretne a munkájához, az alábbi utasításokat követ
 
 3.  Ellenőrizze, hogy az eszköz regisztrálva van az Intune-ban [Az eszköz regisztrálása a munkahelyi hálózatban](http://go.microsoft.com/fwlink/?LinkId=519071) című témakör útmutatása szerint.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

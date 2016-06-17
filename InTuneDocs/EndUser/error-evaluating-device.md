@@ -31,10 +31,10 @@ Az eszköz nem felel meg a vállalat legalább egy szabályzatának, és hiba t�
 
 A probléma megoldásához várjon néhány percet, és koppintson **Megfelelőség ellenőrzése** elemre.
 
-Ha nem oldódik meg a probléma, forduljon a rendszergazdához Ha nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem oldódik meg a probléma, forduljon a rendszergazdához Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

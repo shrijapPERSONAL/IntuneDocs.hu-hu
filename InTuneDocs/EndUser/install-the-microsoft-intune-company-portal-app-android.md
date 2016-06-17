@@ -48,9 +48,11 @@ Az Android-eszközökre telepíthető Vállalati portál alkalmazás hozzáfér�
 
 Az eszköznek az Intune-ban való regisztrálásáról és a munkahelyi vagy iskolai adatok és erőforrások eléréséről az [Eszköz regisztrálása az Intune-ban](enroll-your-device-in-Intune-android.md) című témakör nyújt tájékoztatást.
 
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -97,11 +97,12 @@ Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalm
     
    A képernyő tetején a „Fiók szinkronizálása” üzenet lesz látható egészen addig, amíg az eszköz szinkronizálása be nem fejeződik.
 
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

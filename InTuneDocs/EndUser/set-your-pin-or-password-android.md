@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,15 +34,12 @@ A rendszergazda megkövetelheti, hogy Ön PIN-kódot vagy jelszót állítson be
 
 2.  Állítsa be és erősítse meg az új jelszót.
 
-3.  [Az eszköznek a Microsoft Intune-ban való regisztrálásával foglalkozó cikk](enroll-your-device-in-Intune-android.md) utasításait követve ellenőrizze, hogy az eszköz regisztrálva van-e a Microsoft Intune-ban.
 
-4.  Koppintson a **GET** (Beszerzés) &gt; **INSTALL** (Telepítés) gombra.
-
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
