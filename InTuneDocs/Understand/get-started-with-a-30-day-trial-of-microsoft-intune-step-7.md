@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Az Intune kipróbálásának befejezését követő lépések
-Ha legalább 150 licencet vásárolt a Microsoft Intune-hoz egy erre jogosult csomagban, használhatja a FastTrack Center juttatást, azt a szolgáltatást, amelyben a Microsoft szakértőivel együtt készítheti fel környezetét az Intune használatára. Lásd: [A Nagyvállalati mobilitási csomag (EMS) FastTrack Center juttatása](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
+Ha legalább 150 licencet vásárolt a Microsoft Intune-hoz egy erre jogosult csomagban, használhatja a FastTrack Center juttatást, azt a szolgáltatást, amelyben a Microsoft szakértőivel együtt készítheti fel környezetét az Intune használatára. Lásd: [FastTrack Center Benefit for Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems) (A Nagyvállalati mobilitási csomag (EMS) FastTrack Center juttatása).
 
 Az Intune ingyenes próbaverziójáról a következőképpen válthat a fizetős változatra:
 

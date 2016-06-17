@@ -170,7 +170,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Kisegítő érintés engedélyezése**|Engedélyezheti vagy letilthatja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
 |**Kisegítő érintés módosításának engedélyezése**|Engedélyezheti vagy letilthatja a Kisegítő érintés funkció módosítását.|
 |**Beszéd kiválasztásának engedélyezése**|Engedélyezheti vagy letilthatja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható az Ön által kijelölt szöveg.|
-> [!NOTE] Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
+> [!NOTE] Az alábbi megjegyzések az iOS-eszközök kioszkmódjának beállításaira vonatkoznak:
 > 
 > -   Az iOS-eszközök a teljes képernyős módra való konfigurálása előtt felügyelt módra kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 > -   Ha a megadott iOS-alkalmazás a konfigurációs házirend alkalmazása után települ, az eszköz mindaddig nem lép Kioszk módba, amíg újra nem indítják.
@@ -182,7 +182,7 @@ A **Nem kompatibilis alkalmazások jelentése** beállítás használatával meg
 
 ##### A nem kompatibilis alkalmazások jelentésének futtatása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Nem kompatibilis alkalmazások jelentése** elemre.
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemre.
 
 2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
 
