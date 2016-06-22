@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzat
 
 ## Konfigurációs házirend létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com/) kattintson a **Házirend** &gt; **Konfigurációs szabályzatok** &gt; **Hozzáadás** elemre.
+1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Konfigurációs szabályzatok** &gt; **Hozzáadás** lehetőséget.
 
 2.  Válassza ki a kívánt házirendet, és válassza a hozzá ajánlott beállítások használatát (ha elérhető; a beállítások később módosíthatók), vagy hozzon létre egyéni házirendet a saját beállításaival.
 
-    > [!TIP] A megfelelő szabályzat kiválasztásához [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md) című témakörben talál segítséget.
+    > [!TIP] A megfelelő szabályzat kiválasztásához [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md) témakörben talál segítséget.
 
-3.  Ha készen áll, kattintson a **Házirend létrehozása**elemre.
+3.  Amikor elkészült, válassza a **Házirend létrehozása** lehetőséget.
 
 4.  A **Házirend létrehozása** képernyőn adja meg a házirend nevét, illetve igény szerint a leírását.
 
-5.  Konfigurálja a kívánt házirend-beállításokat, majd kattintson a **Házirend mentése**elemre.
+5.  Konfigurálja a kívánt házirend-beállításokat, majd válassza a **Házirend mentése** lehetőséget.
 
     Ha segítségre van szüksége bármelyik házirend-beállítással kapcsolatban, válassza ki a házirendtípust a következő listából:
 
@@ -72,11 +72,11 @@ Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzat
     - [Windows Team-eszközök beállításai](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [A Windows-kiadás frissítésének beállításai](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Mac OS X-eszközbeállítások](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Az Exchange ActiveSync beállításai](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Használati feltételek szabályzatbeállításai](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Az Exchange ActiveSync-beállításai](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [A használati feltételekre vonatkozó házirend beállításai](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Mobileszközök általános beállításai (örökölt)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  A megerősítő párbeszédpanelen kattintson az **Igen** gombra a házirend telepítéséhez, vagy a **Nem** gombra, ha telepítés nélkül kívánja azt létrehozni.
+4.  A megerősítő párbeszédpanelen válassza az **Igen** lehetőséget a házirend telepítéséhez, vagy a **Nem** lehetőséget, ha telepítés nélkül kívánja azt létrehozni.
 
 Az új házirend megtekintéséhez és szerkesztéséhez keresse meg azt az egyes házirendtípusok szakaszaiban a **Házirend** munkaterületen.
 
@@ -89,11 +89,11 @@ A létrehozott házirendet általában telepíteni kell egy vagy több felhaszn�
 
 ## Konfigurációs szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
@@ -101,23 +101,14 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 ## A szabályzatok kezelése
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/)kattintson a **Házirend**elemre, majd keresse meg és válassza ki a kezelni kívánt házirendet.
+1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Házirend** lehetőséget, majd keresse meg és válassza ki a kezelni kívánt házirendet.
 
 2.  Válasszon a következő lehetőségek közül:
 
 - **Szerkesztés** – Megnyitja a kiválasztott szabályzat tulajdonságait, hogy módosíthassa őket.
 - **Törlés** – Törli a kiválasztott házirendet.<br>Ha töröl egy házirendet, az minden olyan csoportból törlődik, ahol telepítve volt.
-- **Központi telepítés kezelése** – Válassza ki azt a csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** gombra.
+- **Központi telepítés kezelése** – Válassza ki azt a csoportot, amely számára telepíteni kívánja a házirendet, majd válassza a **Hozzáadás** lehetőséget.
 
-## Az Intune házirendek esetében elvégzendő feladatok
-
-### Frissítse a szabályzatokat az eszközökön a naprakész állapot biztosításához (ez csak az Intune ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik).
-
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/)kattintson a **Csoportok**elemre, majd válasszon ki egy eszközcsoportot.
-
-2.  Válassza ki azokat az eszközöket, amelyeknek a szabályzatait frissíteni kívánja, majd kattintson a **Távoli feladatok** &gt; **Házirendek frissítése** elemre.
-
-3.  A feladat állapotának megtekintéséhez kattintson az Intune felügyeleti konzoljának jobb alsó sarkában lévő **Távoli feladatok** elemre.
 
 ## A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
 
@@ -187,25 +178,7 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
         - Kötelező jelszótípus
         - Jelszó lejárata (nap)
         - Jelszóelőzmények megjegyzése
-        - Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt
-        - Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót
-        - Kötelező jelszótípus – megadandó karakterek minimális száma
-        - Kamera használatának engedélyezése
-        - Mobileszköz titkosításának kötelezővé tétele
-        - Cserélhető tároló használatának engedélyezése
-        - Webböngésző használatának engedélyezése
-        - Alkalmazástároló használatának engedélyezése
-        - Képernyőfelvétel-készítés használatának engedélyezése
-        - Földrajzi hely meghatározásának engedélyezése
-        - Microsoft-fiók használatának engedélyezése
-        - Másolás és beillesztés használatának engedélyezése
-        - Wi-Fi alapú internetmegosztás használatának engedélyezése
-        - Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése
-        - Wi-Fi elérési pontok jelentéskészítésének engedélyezése
-        - Gyári beállítások visszaállításának engedélyezése
-        - Bluetooth használatának engedélyezése
-        - NFC használatának engedélyezése
-        - Wi-Fi használatának engedélyezése
+        - Megengedett sikertelen bejelentkezések száma az eszközön tárolt adatok törléséig – Jelszó kérése ennyi perc inaktivitás után – Megkövetelt jelszótípus – Karakterkészletek minimális száma – Kamera engedélyezése – Titkosítás megkövetelése mobileszközökön – Cserélhető tároló engedélyezése – Webböngésző engedélyezése – Alkalmazás-áruház engedélyezése – Képernyőfelvétel-készítés engedélyezése – Földrajzi hely meghatározásának engedélyezése – Microsoft-fiók használatának engedélyezése – Másolás és beillesztés engedélyezése – Wi-Fi alapú internetmegosztás engedélyezése – Ingyenes Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése – Wi-Fi elérési pontok jelentésének engedélyezése – Gyári beállítások visszaállításának engedélyezése – Bluetooth engedélyezése – NFC engedélyezése – Wi-Fi engedélyezése
     
     - **iOS** – Az összes beállítás törlődik, kivéve a következőket:
         - Hangroaming használatának engedélyezése
@@ -220,9 +193,16 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
 - **A Windows tűzfal beállításai** – A beállítások a számítógép operációs rendszerének alapértelmezett értékeire állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### A szabályzatok frissítése az eszközökön a naprakész állapot biztosításához (csak az Intune ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik)
+
+1.  Bármely eszközcsoportban válassza ki azokat az eszközöket, amelyeknek a házirendjeit frissíteni kívánja, majd válassza a **Távoli feladatok** &gt; **Házirendek frissítése** lehetőségre.
+2.  A feladat állapotának megtekintéséhez válassza az Intune felügyeleti konzoljának jobb alsó sarkában lévő **Távoli feladatok** elemet.
+
+### Hol találhatok segítséget a szabályzatokkal kapcsolatos problémák elhárításához?
+
+Lásd a [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune) (Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban) című témakört.
 
 
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

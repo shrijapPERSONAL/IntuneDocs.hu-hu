@@ -53,7 +53,7 @@ Az alábbi lépések segítségével egy mobileszköz-konfigurációs szabályza
 
 4.  A szabályzatok listájában bontsa ki azt a platformot, amelyre a létrehozandó szabályzat vonatkozni fog, ezt követően válassza az **Általános konfiguráció** > **Egyéni házirend létrehozása és telepítése az ajánlott beállításokkal** > **Házirend létrehozása** lehetőséget.
 
-5.  Ha a rendszer a **Válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet** üzenetben felszólítja erre, a rendelkezésre álló csoportok listájából válassza az **Intune-felhasználók** csoportot (a csoport az előző lépésben jött létre), majd kattintson a **Hozzáadás** > **OK** gombra.
+5.  Ha a rendszer a **Válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet** üzenetben felszólítja erre, a rendelkezésre álló csoportok listájából válasszon ki egy csoportot, majd kattintson a **Hozzáadás** > **OK** gombra.
 
 A szabályzat ekkor megjelenik a konfigurációs szabályzatok listájában, és már alkalmazva van az **Intune-felhasználók** csoportra. A beállítások megtekintéséhez kattintson duplán a házirendre.
 
@@ -114,6 +114,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutató* 6. lép
 >[&larr; **Felhasználók és eszközök rendszerezése**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**A Vállalati portál testreszabása** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

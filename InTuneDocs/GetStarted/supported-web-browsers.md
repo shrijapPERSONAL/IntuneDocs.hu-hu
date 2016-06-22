@@ -31,8 +31,8 @@ Az Intune beállítása előtt olvassa el ezt a témakört, valamint [a kezdés 
 
 |Intune-funkció |Támogatott böngészők|
 |---------|---------|
-|Intune felügyeleti konzol     |  Internet Explorer 10 vagy újabb<br /><br />Google Chrome (42-es vagy korábbi verziók)<br /><br />Mozilla Firefox <br /><br />**Megjegyezés:** Az Edge használata a Felügyeleti konzol esetében jelenleg nem támogatott.                      
-|Office 365 felügyeleti portál     |Minden böngésző  |
+|Intune felügyeleti konzol     |  Internet Explorer 10 vagy újabb<br /><br />Google Chrome (42-es vagy korábbi verziók)<br /><br />Mozilla Firefox <br /><br />**Megjegyzés:** A Microsoft Edge és a mobilböngészők használata nem támogatott a felügyeleti konzolon.                      
+|Office 365 felügyeleti portál     |Minden böngésző, beleértve a mobilböngészőket és a felügyelt böngészőket  |
 |Munkahelyi portál webhely     |**Mobileszközökön:** használja a támogatott platformhoz tartozó alapértelmezett webböngészőt   <br /><br />**Windows rendszerű számítógépeken:** Internet Explorer 10 vagy újabb, illetve Microsoft Edge<br /><br />**Mac OS X 10.9 vagy újabb:** Apple Safari    |
 
 
@@ -42,6 +42,6 @@ Az Intune beállítása előtt olvassa el ezt a témakört, valamint [a kezdés 
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

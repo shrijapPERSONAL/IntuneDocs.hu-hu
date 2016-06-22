@@ -79,17 +79,16 @@ Az alábbi lista tartalmazza a **Vállalati bevezetés** fázissal való munka e
 
 -   Határozza meg azokat a csoportokat, amelyek esetében célzott kommunikációra és képzésre lehet szükség.
 
--   Tervezze meg a testreszabott e-mail kommunikációt, és frissítse az intranetes webhelyet.
-    Jelölje ki a kommunikáció és az erőforrások frissítésének felelősét.
+-   Tervezze meg a testreszabott e-mail kommunikációt, és frissítse az intranetes webhelyet. Jelölje ki a kommunikáció és az erőforrások frissítésének felelősét.
 
 -   Vázolja fel a használandó képzési módszereket.
 
 -   Hozzon létre ellenőrzőlistát a kezdéshez és beléptetési útmutatót a felhasználók számára.
     Kiindulási pontként a következő felhasználói útmutatókat használhatja:
-    -  [Windows-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Android-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [iOS-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Mac OS X-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Windows-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Android-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [iOS-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Mac OS X-eszköz regisztrálása az Intune-ban](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Igény szerint határozza meg az oktatási anyagok frissítésének folyamatát.
 
@@ -114,6 +113,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet a **Válla
 [Üzemeltetés és karbantartás](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
