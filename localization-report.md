@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 17
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 66
-[ In Sync Handback Files ](#insync-handback-success-list)| 340
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 43
+[ In Sync Handback Files ](#insync-handback-success-list)| 363
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -660,9 +660,7 @@
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\account-portal-merged-with-Office-365.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/account-portal-merged-with-Office-365.md) | OutofSyncHandedBackSuccess | [Details](#505e446125c938a9a978eb2908cfa0873ed66fcc9)
  [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f85e91b985d9d30c71dff9e0d910293354fc40b7/InTuneDocs/DeployUse/add-apps.md) | OutofSyncHandedBackSuccess | [Details](#119a795697feb0cdbc2b93293cd66df7e77147cf12)
- [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/024ba0e2c63a42c121bd27302e8926bddac5566b/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#7da75576bf5296da6fbf35fb3c35c5d0d45c511d11)
  [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/50e7431add65fec28c4aeac64e43324e1c9ff2a7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#6857ff52d29fcc12b54e2a7b11a747c1102acdcc15)
  [InTuneDocs\DeployUse\categorize-devices-with-device-group-mapping-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a/InTuneDocs/DeployUse/categorize-devices-with-device-group-mapping-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#55f811153bf37048a4fcdfc6da301a5f181700c317)
  [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bddb2a583ea1c46953016995f0baedc0426fe3de/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) | OutofSyncHandedBackSuccess | [Details](#ae075e5343d251519918da2b74a28ccb57221f8620)
@@ -671,21 +669,17 @@
  [InTuneDocs\DeployUse\end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff/InTuneDocs/DeployUse/end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#9b557c272c9d740792560a392d52efff6a7deed138)
  [InTuneDocs\DeployUse\enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/7b0154d73ab540e7543fab9088463ed8b61b45a0/InTuneDocs/DeployUse/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#74ff3209d00dee0b5ddd14e107b5544b364d08f739)
  [InTuneDocs\DeployUse\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6a989482e9c3c35c1f377e0b32bf04beb89e60a3/InTuneDocs/DeployUse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#da4020eb71432f9bccb52909272d027da64ee47c46)
- [InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/ios-device-enrollment-program-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#c0016056e2176290d75e91c1cab827ce2e6b340c59)
  [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b6c33f6e49277a00d18a0dd38450d3343090954d/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#b105eca7a93b8648e832e422239709b284b5f0ef62)
  [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2df44199ecd904dcfb6774a942244338c1384186/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md) | OutofSyncHandedBackSuccess | [Details](#c4462af584d54225084159dfa35f5e1d07c3639770)
- [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ccb494f64426e6c2f21a59d8f52b84afe534d721/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#65ceaa5a8f6604463463820545a9d108839c00c171)
  [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a72eb572f75b2538777b2ead256030b03f59683d/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) | OutofSyncHandedBackSuccess | [Details](#479995dec5b161a23ce6a9afa4fa69862d8bf71573)
  [InTuneDocs\DeployUse\per-app-vpn-for-android-pulse-secure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/40e5602a4675bd92a85001827fb43426c41ed1e3/InTuneDocs/DeployUse/per-app-vpn-for-android-pulse-secure.md) | OutofSyncHandedBackSuccess | [Details](#fc58e71a9b2279200dee2630aab7dbab727ea128211)
  [InTuneDocs\DeployUse\prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e91193523284113c2029e0762dfc48ddc15540d4/InTuneDocs/DeployUse/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) | OutofSyncHandedBackSuccess | [Details](#4342a00029c4943f67ff0420d43f885153f579e5216)
  [InTuneDocs\DeployUse\prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/DeployUse/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) | OutofSyncHandedBackSuccess | [Details](#c78770d613e8a8a968e194a93036e67f5a1dd1ad218)
  [InTuneDocs\DeployUse\previous-intune-releases.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3080d23f464e96315ed9e5fd59774ba9f1b2dd86/InTuneDocs/DeployUse/previous-intune-releases.md) | OutofSyncHandedBackSuccess | [Details](#65d582958d77150091880cce72e079b87308209f219)
- [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e05303a6f0a083eaa91209405e9c66422d859cc8/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#3b80551ccb68248a5d80fc2465be8c83542b8df6222)
  [InTuneDocs\DeployUse\restrict-access-to-email-and-o365-services-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f770bdc312879d1c833e8861494ecd2204ea603a/InTuneDocs/DeployUse/restrict-access-to-email-and-o365-services-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#ebce26b0e09bb5282475cb1a39c8070a5d5b44aa229)
  [InTuneDocs\DeployUse\restrict-access-to-exchange-online-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2836c20f773f8478aef7a1d7a19750c8d87c25a0/InTuneDocs/DeployUse/restrict-access-to-exchange-online-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#02def5a8d03e4c0b129881f37c37584f2af8eddc230)
  [InTuneDocs\DeployUse\restrict-access-to-sharepoint-online-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9924203b940a0d2212e845256d8b0c0638b436f9/InTuneDocs/DeployUse/restrict-access-to-sharepoint-online-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#0be4724cbcd80cce83e8efdcce9cb5289d6f5082233)
  [InTuneDocs\DeployUse\restrict-access-to-skype-for-business-online-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cbf748ffee8fbb53f7e64a5499f06d5bd89c415/InTuneDocs/DeployUse/restrict-access-to-skype-for-business-online-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#c26f3b732eb42903c72e8655542ee1ed586f5c67234)
- [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eed5855f3e27460146703ddf40fd935229a974e5/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#02f9b7c7abe2daf942299015bfdfb052755ec2de243)
  [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/398d93d4e2317d00a2f9d5f89966aaec3b942504/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) | OutofSyncHandedBackSuccess | [Details](#af4b87eb8082ee5ff11cd2d42b788ad17b334bcb245)
  [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/99c0a51beb89cfe14faef20b7cde2afca41b490f/InTuneDocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#56a2caeb6f74f3d53870e46d9c95482f0e882354248)
  [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md) | OutofSyncHandedBackSuccess | [Details](#b8af36cef1bcb9077d0ab611a14fb88c0f458ece249)
@@ -695,24 +689,8 @@
  [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/075ce9795e25d6d5bf80c0cd163406c50cb6a035/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#2d7e32ff876139f15d1322dd154ecdc0b32fc33d261)
  [InTuneDocs\DeployUse\wi-fi-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/DeployUse/wi-fi-connections-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#1ab6229a31da94ba8fe46534a7d2cd386bb37362262)
  [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1cccafa5f740bad50779ae36c899fd23ee7dc5f3/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#70347776f72a3534a4c384957aef01a909767b99263)
- [InTuneDocs\EndUser\enroll-your-device-in-Intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/enroll-your-device-in-Intune-android.md) | OutofSyncHandedBackSuccess | [Details](#76cc1a43e09039285be76858155ef22f7b41cf9b293)
- [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md) | OutofSyncHandedBackSuccess | [Details](#63799f8242db4618ea7b71af9608e30b98a8a27a423)
- [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md) | OutofSyncHandedBackSuccess | [Details](#57646f103fb0520295729a89a30692c657896e55429)
- [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md) | OutofSyncHandedBackSuccess | [Details](#5a25d845113ef6a3cb402923ef451fab63138979447)
  [InTuneDocs\EndUser\using-your-android-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b76c04545b9b26a0e2470b95a3f5ac0a81b07817/InTuneDocs/EndUser/using-your-android-device-with-intune.md) | OutofSyncHandedBackSuccess | [Details](#3e60dc4581371332cc66f42ecfc3d8b977e3541f451)
- [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) | OutofSyncHandedBackSuccess | [Details](#04131fc569c904cf948683089933c38786a9b847455)
- [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) | OutofSyncHandedBackSuccess | [Details](#e2f5849a63dceabb42b910b50f0257bc823a251a456)
- [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) | OutofSyncHandedBackSuccess | [Details](#a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4457)
- [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) | OutofSyncHandedBackSuccess | [Details](#e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01458)
- [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md) | OutofSyncHandedBackSuccess | [Details](#565ada54c6267d38764f3e1049b5569da1f796cd461)
- [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) | OutofSyncHandedBackSuccess | [Details](#a9512738cd48438d85c7a98b0d533fbe6e6b8ba2462)
- [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39e810466d3a98789f0f1338f68d2be80d757d39/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) | OutofSyncHandedBackSuccess | [Details](#9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd463)
- [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-android.md) | OutofSyncHandedBackSuccess | [Details](#f0465d4302bda3df82c994043df52c27761a8345464)
- [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md) | OutofSyncHandedBackSuccess | [Details](#073c94e51f61e091f0055c96e8ad183e57fafabd465)
- [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md) | OutofSyncHandedBackSuccess | [Details](#f0108b884439aac9661c9f36f85b47d80209d155466)
- [InTuneDocs\EndUser\your-computer-is-already-enrolled.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/your-computer-is-already-enrolled.md) | OutofSyncHandedBackSuccess | [Details](#7333babab0453de1158d02027870b03f6e740e16475)
  [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e91193523284113c2029e0762dfc48ddc15540d4/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md) | OutofSyncHandedBackSuccess | [Details](#c105d7c907a119fd10762608e8cc86548bda7a24474)
- [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md) | OutofSyncHandedBackSuccess | [Details](#00767d06fe0d7a10cba10d0dd428f99be0390866495)
  [InTuneDocs\GetStarted\domain-names-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6bca8e95d777ed38d80669503efb426998b1d15d/InTuneDocs/GetStarted/domain-names-for-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#6eef1ae0a6c93e6fd2d36fdf665883af7a0623a7498)
  [InTuneDocs\GetStarted\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/601543dee6ce628e129561c95edf7e7363924cd5/InTuneDocs/GetStarted/mobile-device-management-capabilities-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#e1657b557998b81c96b1277c9b361ed63b2ef669519)
  [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2847c9af38ae0ddddc8d76d548ae7abddc63e4c1/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) | OutofSyncHandedBackSuccess | [Details](#e764dc73492db984fcbb118597ad1d08491d3427533)
@@ -723,7 +701,6 @@
  [InTuneDocs\Troubleshoot\how-to-get-support-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/632115d1010217f927e20a7e9532311d48f2b106/InTuneDocs/Troubleshoot/how-to-get-support-for-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#a6cb77b441c7c44f33c0353232409f8d7b2daa6a1151)
  [InTuneDocs\Troubleshoot\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cd5425af051a5221518c603ef2bc99797f950ad/InTuneDocs/Troubleshoot/TOC.md) | OutofSyncHandedBackSuccess | [Details](#1eb99ff99af6e3cc4e966e1f6a589e835bf7e4b71156)
  [InTuneDocs\Troubleshoot\troubleshoot-app-deployment-problems-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/327c3aaf42aaf7f97e2b78d5ae38584bc13773e1/InTuneDocs/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#dc782a54983e4db39a029a15183834a925d0e00c1157)
- [InTuneDocs\Troubleshoot\troubleshoot-device-enrollment-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/502fb25c0dc050fb3f08fbba4d02148add3faf8e/InTuneDocs/Troubleshoot/troubleshoot-device-enrollment-in-intune.md) | OutofSyncHandedBackSuccess | [Details](#ae2b35321b0664c5b54708d7389e9eb0262bb2d61160)
  [InTuneDocs\Troubleshoot\troubleshoot-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ac3417781df0a5b092a70620aa7343849b1e8c82/InTuneDocs/Troubleshoot/troubleshoot-policies-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e61163)
  [InTuneDocs\Understand\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cd5425af051a5221518c603ef2bc99797f950ad/InTuneDocs/Understand/TOC.md) | OutofSyncHandedBackSuccess | [Details](#8e24b2f0d978fe59c1fab350230026c58171fa2b1255)
 
@@ -731,7 +708,9 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [InTuneDocs\accessibility-features-of-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/accessibility-features-of-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#d34e754e3815b43f4b5b74d24711cf55aacfc7575)
+ [InTuneDocs\DeployUse\account-portal-merged-with-Office-365.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/account-portal-merged-with-Office-365.md) | InSyncHandedBackSuccess | [Details](#505e446125c938a9a978eb2908cfa0873ed66fcc9)
  [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6a232475ebd6fb301ba04c00d2c12b7111fa8976/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#eb735cdbaf574104ad090c770fcc9f1f18a54d3010)
+ [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/024ba0e2c63a42c121bd27302e8926bddac5566b/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#7da75576bf5296da6fbf35fb3c35c5d0d45c511d11)
  [InTuneDocs\DeployUse\android-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/android-compliance-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c081f6a7db1f99ae54617d39ca76d45e29a08b6113)
  [InTuneDocs\DeployUse\android-mam-policy-settings.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/android-mam-policy-settings.md) | InSyncHandedBackSuccess | [Details](#dcc1af47b789dc62a9cda877ea991af991950c8214)
  [InTuneDocs\DeployUse\azure-portal-for-microsoft-intune-mam-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/azure-portal-for-microsoft-intune-mam-policies.md) | InSyncHandedBackSuccess | [Details](#519bde55966d88f516553d509af60e34a6af62a916)
@@ -769,6 +748,7 @@
  [InTuneDocs\DeployUse\intune-on-premises-exchange-connector.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/intune-on-premises-exchange-connector.md) | InSyncHandedBackSuccess | [Details](#892ca1e2260372487e94350cd919fddde897160c56)
  [InTuneDocs\DeployUse\intune-service-to-service-exchange-connector.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/intune-service-to-service-exchange-connector.md) | InSyncHandedBackSuccess | [Details](#6cfc532cba2f53034c4c3ef0c2df3d6c1e6e784157)
  [InTuneDocs\DeployUse\ios-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/ios-compliance-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#fdfd6bb78e266c51dede79db433ffff648ae574958)
+ [InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/ios-device-enrollment-program-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c0016056e2176290d75e91c1cab827ce2e6b340c59)
  [InTuneDocs\DeployUse\ios-direct-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eea94723bb64e751acf155f9db66e7b31ff8c0bd/InTuneDocs/DeployUse/ios-direct-enrollment-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#5848a8767751a21fe7e2b0a14a4f5c2d16779e5960)
  [InTuneDocs\DeployUse\ios-mam-policy-settings.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/ios-mam-policy-settings.md) | InSyncHandedBackSuccess | [Details](#066d7931904ec3c0a618c79a84dba7f11e58c55061)
  [InTuneDocs\DeployUse\ios-setup-assistant-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eea94723bb64e751acf155f9db66e7b31ff8c0bd/InTuneDocs/DeployUse/ios-setup-assistant-enrollment-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#605734e4fe64ed101c3e05b19d28b3ec41787c8763)
@@ -778,6 +758,7 @@
  [InTuneDocs\DeployUse\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#b6e2f0ec13caa9616b72a2fa225e77fe43a4755c67)
  [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eea94723bb64e751acf155f9db66e7b31ff8c0bd/InTuneDocs/DeployUse/manage-corporate-owned-devices.md) | InSyncHandedBackSuccess | [Details](#25d293e4821bfcfb364c1eca0297252885989e6468)
  [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#2521500820d769bfe7c5742cf035e5eee8f2aacc69)
+ [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ccb494f64426e6c2f21a59d8f52b84afe534d721/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#65ceaa5a8f6604463463820545a9d108839c00c171)
  [InTuneDocs\DeployUse\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#575b8525b8b99d06358a911b8deb24ee5de48fe172)
  [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#0b8da55b81040fd20e8234303ac4da384de954d874)
  [InTuneDocs\DeployUse\manage-windows-pcs-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0335b80afa8e330263baad054f0e902f019f75bb/InTuneDocs/DeployUse/manage-windows-pcs-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f75)
@@ -799,6 +780,7 @@
  [InTuneDocs\DeployUse\pre-shared-key-wi-fi-profile.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5a7699050b9b46d93b0936c2256397bc776529b5/InTuneDocs/DeployUse/pre-shared-key-wi-fi-profile.md) | InSyncHandedBackSuccess | [Details](#3c10ea313e9f5f1cdbbe98868b66c20a644a08ca214)
  [InTuneDocs\DeployUse\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/22406001462fc8bee19ae9b6cb1cf0a735857f94/InTuneDocs/DeployUse/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9b2f625f3871746f758320e1c4c988ce48cbb47f220)
  [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9445b4b171eb2102d73cf0e866e85b535274eee2221)
+ [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e05303a6f0a083eaa91209405e9c66422d859cc8/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#3b80551ccb68248a5d80fc2465be8c83542b8df6222)
  [InTuneDocs\DeployUse\protect-windows-devices-with-multi-factor-authentication.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2023d7bc1d35b423a216ece195cdca9a6a542446/InTuneDocs/DeployUse/protect-windows-devices-with-multi-factor-authentication.md) | InSyncHandedBackSuccess | [Details](#15e546b93c2a3aff551efa36ac80ff212ada5812223)
  [InTuneDocs\DeployUse\protect-your-devices-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c52448ab454a764be922319fb930a85a86c3996e/InTuneDocs/DeployUse/protect-your-devices-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c8f833593e6a4606b0dd56373d4dc016c7ea0924224)
  [InTuneDocs\DeployUse\Release-notes-for-Microsoft-Intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/Release-notes-for-Microsoft-Intune.md) | InSyncHandedBackSuccess | [Details](#1906f14568484ebbf23ac7c4350964fb2d5d508f225)
@@ -813,6 +795,7 @@
  [InTuneDocs\DeployUse\set-up-android-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/set-up-android-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#af1976c092b3a380c09006227bfc16e1e7933d6d240)
  [InTuneDocs\DeployUse\set-up-ios-and-mac-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bb44d53c87bec1b6892bf49a65f3df684199ed08/InTuneDocs/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9766b6e64259d809b04e6f6004c25ed88ad72659241)
  [InTuneDocs\DeployUse\set-up-windows-device-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6951ccdb0e37489217ef939f0cbf6fc1133a6d3c/InTuneDocs/DeployUse/set-up-windows-device-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c18445385e8361cf01948b583f08e992658a8762242)
+ [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eed5855f3e27460146703ddf40fd935229a974e5/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#02f9b7c7abe2daf942299015bfdfb052755ec2de243)
  [InTuneDocs\DeployUse\set-up-windows-phone-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c5d1b53f09ce2f475cd934e36ddb19d019737431/InTuneDocs/DeployUse/set-up-windows-phone-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#e67a5be851b68d87a4cdda871824cf0ecb14579e244)
  [InTuneDocs\DeployUse\subscription-might-include-downloadable-software.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4b4371fd7c505db75e18505160de88456fceece2/InTuneDocs/DeployUse/subscription-might-include-downloadable-software.md) | InSyncHandedBackSuccess | [Details](#de8d822c9df7aa0235a998a64b412afd6fc48bd5246)
  [InTuneDocs\DeployUse\terms-and-condition-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/terms-and-condition-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#8079ca5abcedbe024fb6347e02c7cf61ae541a30247)
@@ -851,6 +834,7 @@
  [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39bcea03cad061e5b84e073cc5affcdd14fc6015/InTuneDocs/EndUser/encrypt-your-device-android.md) | InSyncHandedBackSuccess | [Details](#22e9071171d2dc63562e94cabe2abdec3b2bd85e290)
  [InTuneDocs\EndUser\encrypt-your-device-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/encrypt-your-device-windows.md) | InSyncHandedBackSuccess | [Details](#aeeb607e54a207792e1cc8c16ee2ecd25a553e34291)
  [InTuneDocs\EndUser\enroll-your-device-in-intune-all.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/enroll-your-device-in-intune-all.md) | InSyncHandedBackSuccess | [Details](#b38457634263b8fbda0c6b6e3e5d9156dd6668a8292)
+ [InTuneDocs\EndUser\enroll-your-device-in-Intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/enroll-your-device-in-Intune-android.md) | InSyncHandedBackSuccess | [Details](#76cc1a43e09039285be76858155ef22f7b41cf9b293)
  [InTuneDocs\EndUser\enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/enroll-your-device-in-intune-ios.md) | InSyncHandedBackSuccess | [Details](#305308aa94a7650df8b44710025620906714421b294)
  [InTuneDocs\EndUser\enroll-your-device-in-intune-mac-os-x.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/enroll-your-device-in-intune-mac-os-x.md) | InSyncHandedBackSuccess | [Details](#b85d2ac62ca313f0740c68ff6d85918ff7bcd55a295)
  [InTuneDocs\EndUser\enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/enroll-your-device-in-intune-windows.md) | InSyncHandedBackSuccess | [Details](#e343905f7359e310bc5b171feb3311adf8b4012f296)
@@ -874,11 +858,13 @@
  [InTuneDocs\EndUser\remote-lock-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/remote-lock-your-device-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc420)
  [InTuneDocs\EndUser\remove-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/remove-your-device-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#9f63869b6c4f3a082da7587921870004c6ffc5e1421)
  [InTuneDocs\EndUser\rename-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/rename-your-device-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#301fdc58dbe827fa21ba7a76457ff5584bd2ff69422)
+ [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md) | InSyncHandedBackSuccess | [Details](#63799f8242db4618ea7b71af9608e30b98a8a27a423)
  [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md) | InSyncHandedBackSuccess | [Details](#7c6e3e0f008f084a63288eec66f7161a1edb9ffe424)
  [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-windows.md) | InSyncHandedBackSuccess | [Details](#2b2790826e46e6af43f3bdeeede6dc834845a83b425)
  [InTuneDocs\EndUser\reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-your-device-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#dcde651a95a7f1affaf5489c2664d96a7f5e9e8f426)
  [InTuneDocs\EndUser\reset-your-passcode-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-your-passcode-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#31023a2d51d4dd4cb854c1fa077f5a9910232bb4427)
  [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md) | InSyncHandedBackSuccess | [Details](#7ad4f4b726f093a14663fc5c4dbadf5603965075428)
+ [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md) | InSyncHandedBackSuccess | [Details](#57646f103fb0520295729a89a30692c657896e55429)
  [InTuneDocs\EndUser\send-enrollment-errors-to-your-it-administrator-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/send-enrollment-errors-to-your-it-administrator-android.md) | InSyncHandedBackSuccess | [Details](#e336289290cd79a2599ccfb7eccbc5df4230555b430)
  [InTuneDocs\EndUser\send-errors-to-your-it-admin-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/send-errors-to-your-it-admin-ios.md) | InSyncHandedBackSuccess | [Details](#dd8452cee145f3ecd885c4fb91698a3683252318431)
  [InTuneDocs\EndUser\set-or-change-your-passcode-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/set-or-change-your-passcode-ios.md) | InSyncHandedBackSuccess | [Details](#ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a432)
@@ -896,20 +882,33 @@
  [InTuneDocs\EndUser\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md) | InSyncHandedBackSuccess | [Details](#abcb7dbe4f3423fcba108a7ea0c4b2efa295c970444)
  [InTuneDocs\EndUser\unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/unenroll-your-device-from-intune-ios.md) | InSyncHandedBackSuccess | [Details](#4dbb4d5d7151a6a579e00c2c4034a811f2357774445)
  [InTuneDocs\EndUser\unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/unenroll-your-device-from-intune-windows.md) | InSyncHandedBackSuccess | [Details](#c323aed2b4fbac831ae4919c8145b7253eb97ace446)
+ [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md) | InSyncHandedBackSuccess | [Details](#5a25d845113ef6a3cb402923ef451fab63138979447)
  [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39e810466d3a98789f0f1338f68d2be80d757d39/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md) | InSyncHandedBackSuccess | [Details](#8feb4b293a021efd1f4cd26c43be76355d947143448)
  [InTuneDocs\EndUser\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) | InSyncHandedBackSuccess | [Details](#9089943b8e86b298e0182483a5f98cf4d74efd63449)
  [InTuneDocs\EndUser\using-the-intune-company-portal-website.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/using-the-intune-company-portal-website.md) | InSyncHandedBackSuccess | [Details](#79e8d7da83997dc9c89b95097ca50493af1f9f6b450)
  [InTuneDocs\EndUser\using-your-ios-or-mac-os-x-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/using-your-ios-or-mac-os-x-device-with-intune.md) | InSyncHandedBackSuccess | [Details](#2273b5a9782a4e9e69f525555a10242a38c6efda452)
  [InTuneDocs\EndUser\using-your-windows-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/using-your-windows-device-with-intune.md) | InSyncHandedBackSuccess | [Details](#214bef6c6b04d6b92db71e28928ea62ae843c16a453)
  [InTuneDocs\EndUser\Wait-while-your-device-is-being-evaluated.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/Wait-while-your-device-is-being-evaluated.md) | InSyncHandedBackSuccess | [Details](#90891c2d0e5e8ae75e888dc4c26a056493bf594c454)
+ [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) | InSyncHandedBackSuccess | [Details](#04131fc569c904cf948683089933c38786a9b847455)
+ [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) | InSyncHandedBackSuccess | [Details](#e2f5849a63dceabb42b910b50f0257bc823a251a456)
+ [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) | InSyncHandedBackSuccess | [Details](#a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4457)
+ [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) | InSyncHandedBackSuccess | [Details](#e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01458)
  [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-cpwebsite.md) | InSyncHandedBackSuccess | [Details](#3bbc8ebd8484f7a99f0a7996fccf03547a53f1cb460)
+ [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md) | InSyncHandedBackSuccess | [Details](#565ada54c6267d38764f3e1049b5569da1f796cd461)
+ [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) | InSyncHandedBackSuccess | [Details](#a9512738cd48438d85c7a98b0d533fbe6e6b8ba2462)
+ [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39e810466d3a98789f0f1338f68d2be80d757d39/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) | InSyncHandedBackSuccess | [Details](#9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd463)
+ [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-android.md) | InSyncHandedBackSuccess | [Details](#f0465d4302bda3df82c994043df52c27761a8345464)
+ [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md) | InSyncHandedBackSuccess | [Details](#073c94e51f61e091f0055c96e8ad183e57fafabd465)
+ [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md) | InSyncHandedBackSuccess | [Details](#f0108b884439aac9661c9f36f85b47d80209d155466)
  [InTuneDocs\EndUser\you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md) | InSyncHandedBackSuccess | [Details](#e5ea21d877c2828545436b211d4e62adc4de402c467)
  [InTuneDocs\EndUser\you-are-prompted-to-install-lookout-for-work-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/you-are-prompted-to-install-lookout-for-work-android.md) | InSyncHandedBackSuccess | [Details](#1d47c043092eef7fcad56926bfdd44e259460053471)
  [InTuneDocs\EndUser\you-get-an-error-while-using-the-company-portal-app-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/you-get-an-error-while-using-the-company-portal-app-ios.md) | InSyncHandedBackSuccess | [Details](#9f377cf9293c9697a59c736b07a82bca09728e14472)
+ [InTuneDocs\EndUser\your-computer-is-already-enrolled.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/your-computer-is-already-enrolled.md) | InSyncHandedBackSuccess | [Details](#7333babab0453de1158d02027870b03f6e740e16475)
  [InTuneDocs\EndUser\your-device-is-missing-a-required-certificate-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/your-device-is-missing-a-required-certificate-android.md) | InSyncHandedBackSuccess | [Details](#6e887d226228d073dc136b50ba9320ada996a6cd477)
  [InTuneDocs\EndUser\your-device-is-rooted-and-you-cant-connect-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/your-device-is-rooted-and-you-cant-connect-android.md) | InSyncHandedBackSuccess | [Details](#c94414ee28e8fa808ba08a5c97624d3d9b95fecb478)
  [InTuneDocs\GetStarted\administrative-accounts-websites-perms.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/administrative-accounts-websites-perms.md) | InSyncHandedBackSuccess | [Details](#a8d9cf5d36107c54b97d2b5a5250645dc735a8da493)
  [InTuneDocs\GetStarted\application-rollout.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e42318b83b51dcab329a951a53a022f9c8833c40/InTuneDocs/GetStarted/application-rollout.md) | InSyncHandedBackSuccess | [Details](#c38169a6ef14ae7b52d2d9bdd3b2c8c8198c0116494)
+ [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md) | InSyncHandedBackSuccess | [Details](#00767d06fe0d7a10cba10d0dd428f99be0390866495)
  [InTuneDocs\GetStarted\choose-how-to-manage-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bb44d53c87bec1b6892bf49a65f3df684199ed08/InTuneDocs/GetStarted/choose-how-to-manage-devices.md) | InSyncHandedBackSuccess | [Details](#527506ce7b14cdbfeb413b0b52a521f7a411a710496)
  [InTuneDocs\GetStarted\enterprise-rollout.md](https://github.com/Microsoft/IntuneDocs-pr/blob/749f44d716491483783dbc1413ba4d439342a76d/InTuneDocs/GetStarted/enterprise-rollout.md) | InSyncHandedBackSuccess | [Details](#baec26939027810af3bd21c6fb49919af229ef40499)
  [InTuneDocs\GetStarted\integration-with-cloud-services.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/integration-with-cloud-services.md) | InSyncHandedBackSuccess | [Details](#e58b295bf89e200c7c986902c9b4408d23e67c64500)
@@ -1053,6 +1052,7 @@
  [InTuneDocs\Troubleshoot\general-troubleshooting-tips-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2bc53046fde0686ce13511c308d0167df708d2ac/InTuneDocs/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#ffbdb421cfcc251e830b07253c50785b9396bf6c1150)
  [InTuneDocs\Troubleshoot\troubleshoot-client-setup-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#5fa12aebbddb0129cba57c40cf0c21346a75de631158)
  [InTuneDocs\Troubleshoot\troubleshoot-company-resource-access-problems-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#ed14e92d48a2604d16ceee8b844ae5cc0c45f0511159)
+ [InTuneDocs\Troubleshoot\troubleshoot-device-enrollment-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/502fb25c0dc050fb3f08fbba4d02148add3faf8e/InTuneDocs/Troubleshoot/troubleshoot-device-enrollment-in-intune.md) | InSyncHandedBackSuccess | [Details](#ae2b35321b0664c5b54708d7389e9eb0262bb2d61160)
  [InTuneDocs\Troubleshoot\troubleshoot-email-profiles-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#766c5d5f8e512ea1c36c73936b0ffb95977395ae1161)
  [InTuneDocs\Troubleshoot\troubleshoot-endpoint-protection-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a01162)
  [InTuneDocs\Troubleshoot\troubleshoot-software-updates-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-software-updates-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#81bd50adf4911b71fd0ca9c02cd25b385eed7f321164)
@@ -1410,18 +1410,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='505e446125c938a9a978eb2908cfa0873ed66fcc9'></a> Source: [InTuneDocs\DeployUse\account-portal-merged-with-Office-365.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/account-portal-merged-with-Office-365.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\account-portal-merged-with-Office-365.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/account-portal-merged-with-Office-365.md)
 * Handoff File: [account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/b594e3aac03fa91b5bf389f2e81ebd813dc5b564/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf)
 * Handoff Datetime: 2016-06-13 22:38:31
 * Handoff Reason: Include
 * Archive File: [account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\account-portal-merged-with-Office-365.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/account-portal-merged-with-Office-365.md)
-* Current Handback File: [account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/account-portal-merged-with-Office-365.cd38aaebd0bb1b682363b3f6fa9dd42bf2a96592.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='119a795697feb0cdbc2b93293cd66df7e77147cf12'></a> Source: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f85e91b985d9d30c71dff9e0d910293354fc40b7/InTuneDocs/DeployUse/add-apps.md)
@@ -1434,9 +1431,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/add-apps.md)
-* Current Handback File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/add-apps.md)
+* Current Handback File: [add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/add-apps.adb93928651b2f01c7d38a4b8d96ec12d43848e9.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='eb735cdbaf574104ad090c770fcc9f1f18a54d3010'></a> Source: [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6a232475ebd6fb301ba04c00d2c12b7111fa8976/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md)
@@ -1452,18 +1449,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7da75576bf5296da6fbf35fb3c35c5d0d45c511d11'></a> Source: [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/024ba0e2c63a42c121bd27302e8926bddac5566b/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md)
 * Handoff File: [add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/c1fd051ea08db248af902e8203c2496bb6d297b3/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf)
 * Handoff Datetime: 2016-06-13 20:52:36
 * Handoff Reason: Include
 * Archive File: [add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md)
-* Current Handback File: [add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/add-apps-for-windows-pcs-in-microsoft-intune.84ad95a8e9b4c852e7b655dc39ed08767dc14139.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='c081f6a7db1f99ae54617d39ca76d45e29a08b6113'></a> Source: [InTuneDocs\DeployUse\android-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/android-compliance-policy-settings-in-microsoft-intune.md)
@@ -1566,9 +1560,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
-* Current Handback File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+* Current Handback File: [configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.9cd7a4452d1085b98eff742705d6f0dc2db5c8c9.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='89e8e82a3a61e4cb40c1e1f9bfccd4d79a624fa123'></a> Source: [InTuneDocs\DeployUse\Configure-certificate-infrastructure.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2023d7bc1d35b423a216ece195cdca9a6a542446/InTuneDocs/DeployUse/Configure-certificate-infrastructure.md)
@@ -1728,9 +1722,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\deploy-apps.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/deploy-apps.md)
-* Current Handback File: [deploy-apps.6f4ed44a5bf51a5f9d10c2ffdef2dca650afc4bf.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/deploy-apps.6f4ed44a5bf51a5f9d10c2ffdef2dca650afc4bf.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\deploy-apps.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/deploy-apps.md)
+* Current Handback File: [deploy-apps.6f4ed44a5bf51a5f9d10c2ffdef2dca650afc4bf.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/deploy-apps.6f4ed44a5bf51a5f9d10c2ffdef2dca650afc4bf.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='46562ed3463c4a23a511eb5c7f28a0b11e84f42133'></a> Source: [InTuneDocs\DeployUse\deploy-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c95a776e79cf3e1c7009d6e27f8f50482434d298/InTuneDocs/DeployUse/deploy-apps-in-microsoft-intune.md)
@@ -1893,9 +1887,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-* Current Handback File: [get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.abb74faf32b6dd2d2675e1f99340c75ae3e36e19.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.abb74faf32b6dd2d2675e1f99340c75ae3e36e19.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+* Current Handback File: [get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.abb74faf32b6dd2d2675e1f99340c75ae3e36e19.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.abb74faf32b6dd2d2675e1f99340c75ae3e36e19.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='86d3b7894eca70454fa82393c4d06eab5a99246f47'></a> Source: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
@@ -2043,18 +2037,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='c0016056e2176290d75e91c1cab827ce2e6b340c59'></a> Source: [InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/DeployUse/ios-device-enrollment-program-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/ios-device-enrollment-program-in-microsoft-intune.md)
 * Handoff File: [ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/b594e3aac03fa91b5bf389f2e81ebd813dc5b564/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf)
 * Handoff Datetime: 2016-06-13 22:38:31
 * Handoff Reason: Include
 * Archive File: [ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\ios-device-enrollment-program-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/ios-device-enrollment-program-in-microsoft-intune.md)
-* Current Handback File: [ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/ios-device-enrollment-program-in-microsoft-intune.139c3cbefcdda9b083661c2a90b2c1e8860ee874.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='5848a8767751a21fe7e2b0a14a4f5c2d16779e5960'></a> Source: [InTuneDocs\DeployUse\ios-direct-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eea94723bb64e751acf155f9db66e7b31ff8c0bd/InTuneDocs/DeployUse/ios-direct-enrollment-in-microsoft-intune.md)
@@ -2196,18 +2187,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='65ceaa5a8f6604463463820545a9d108839c00c171'></a> Source: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ccb494f64426e6c2f21a59d8f52b84afe534d721/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 * Handoff File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/ce2a92defb35cd0c5a6f3fd4966f36b2a94d96af/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf)
 * Handoff Datetime: 2016-06-10 02:43:48
 * Handoff Reason: Include
 * Archive File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-* Current Handback File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='575b8525b8b99d06358a911b8deb24ee5de48fe172'></a> Source: [InTuneDocs\DeployUse\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
@@ -4119,18 +4107,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='3b80551ccb68248a5d80fc2465be8c83542b8df6222'></a> Source: [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e05303a6f0a083eaa91209405e9c66422d859cc8/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 * Handoff File: [protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/c1fd051ea08db248af902e8203c2496bb6d297b3/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf)
 * Handoff Datetime: 2016-06-13 20:52:36
 * Handoff Reason: Include
 * Archive File: [protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
-* Current Handback File: [protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.1de1a841d3af03d92ef382106932496f9dd63b43.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='15e546b93c2a3aff551efa36ac80ff212ada5812223'></a> Source: [InTuneDocs\DeployUse\protect-windows-devices-with-multi-factor-authentication.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2023d7bc1d35b423a216ece195cdca9a6a542446/InTuneDocs/DeployUse/protect-windows-devices-with-multi-factor-authentication.md)
@@ -4386,18 +4371,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='02f9b7c7abe2daf942299015bfdfb052755ec2de243'></a> Source: [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eed5855f3e27460146703ddf40fd935229a974e5/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 * Handoff File: [set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/5af7a46cdbc19cd43d90d3a0caf10b7b55e7ee9d/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 22:44:14
 * Handoff Reason: Include
 * Archive File: [set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\set-up-windows-phone-8.0-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/set-up-windows-phone-8.0-management-with-microsoft-intune.md)
-* Current Handback File: [set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/set-up-windows-phone-8.0-management-with-microsoft-intune.324c8507d294725146363f7652a9cee8bee15c41.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='e67a5be851b68d87a4cdda871824cf0ecb14579e244'></a> Source: [InTuneDocs\DeployUse\set-up-windows-phone-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c5d1b53f09ce2f475cd934e36ddb19d019737431/InTuneDocs/DeployUse/set-up-windows-phone-management-with-microsoft-intune.md)
@@ -4662,9 +4644,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\windows-10-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/DeployUse/windows-10-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/windows-10-policy-settings-in-microsoft-intune.a372f15f78d93e1eecd8879c8fe8e3d30fdaf03f.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='a836057cf6c226c8330b0b916c18cd609f791344264'></a> Source: [InTuneDocs\DeployUse\windows-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -5016,18 +4998,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='76cc1a43e09039285be76858155ef22f7b41cf9b293'></a> Source: [InTuneDocs\EndUser\enroll-your-device-in-Intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/enroll-your-device-in-Intune-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\enroll-your-device-in-Intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/enroll-your-device-in-Intune-android.md)
 * Handoff File: [enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\enroll-your-device-in-Intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/enroll-your-device-in-Intune-android.md)
-* Current Handback File: [enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/enroll-your-device-in-Intune-android.872d3051e290d3da5da8865100706bd6fb00d4ac.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='305308aa94a7650df8b44710025620906714421b294'></a> Source: [InTuneDocs\EndUser\enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/enroll-your-device-in-intune-ios.md)
@@ -6660,18 +6639,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='63799f8242db4618ea7b71af9608e30b98a8a27a423'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
 * Handoff File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
-* Current Handback File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/reset-erase-your-lost-or-stolen-device-android.8d17aacf82133f75e561a015a10a1d281bd152f9.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='7c6e3e0f008f084a63288eec66f7161a1edb9ffe424'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
@@ -6735,18 +6711,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='57646f103fb0520295729a89a30692c657896e55429'></a> Source: [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 * Handoff File: [send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-* Current Handback File: [send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/send-diagnostic-data-logs-to-your-it-administrator-using-email-android.facd80080a29c81748b351e04fd01c9c263644f8.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='e336289290cd79a2599ccfb7eccbc5df4230555b430'></a> Source: [InTuneDocs\EndUser\send-enrollment-errors-to-your-it-administrator-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/send-enrollment-errors-to-your-it-administrator-android.md)
@@ -6954,18 +6927,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5a25d845113ef6a3cb402923ef451fab63138979447'></a> Source: [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md)
 * Handoff File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/use-managed-apps-on-your-device-android.md)
-* Current Handback File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/use-managed-apps-on-your-device-android.2ce8e75cac43cc39de68398d3141ff7f251fec54.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='8feb4b293a021efd1f4cd26c43be76355d947143448'></a> Source: [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39e810466d3a98789f0f1338f68d2be80d757d39/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md)
@@ -7056,63 +7026,51 @@
 * [Back to Top](#report-top)
 
 ##### <a name='04131fc569c904cf948683089933c38786a9b847455'></a> Source: [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 * Handoff File: [what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
-* Current Handback File: [what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.854bb007dfd5457e6c08aae09d2a825b1a6c6a95.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='e2f5849a63dceabb42b910b50f0257bc823a251a456'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 * Handoff File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
-* Current Handback File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.718d95d78f5e1133b999ba60f973b04db39e8c5f.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4457'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 * Handoff File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
-* Current Handback File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01458'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 * Handoff File: [what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-* Current Handback File: [what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.4c5fe13582880ec5e917598e5687500b0247d82b.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='c5b045809c8cc171dcbc22e82b8136fec6965bac459'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -7140,93 +7098,75 @@
 * [Back to Top](#report-top)
 
 ##### <a name='565ada54c6267d38764f3e1049b5569da1f796cd461'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 * Handoff File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='a9512738cd48438d85c7a98b0d533fbe6e6b8ba2462'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 * Handoff File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd463'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39e810466d3a98789f0f1338f68d2be80d757d39/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 * Handoff File: [what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/72b3dae28b1f27eeb158409ec9b48f1d947ee583/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 22:52:58
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-reset-your-device-using-the-company-portal-windows.f5c0f38ff19edc0ccea187c30575d147a938de8a.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='f0465d4302bda3df82c994043df52c27761a8345464'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-android.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-android.md)
 * Handoff File: [what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-android.md)
-* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-android.9743196a1c2486043d260dd731d20214024d34be.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='073c94e51f61e091f0055c96e8ad183e57fafabd465'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 * Handoff File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f5d90f2d1e4dc0a2680c795688525285baffa576/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf)
 * Handoff Datetime: 2016-06-09 16:48:38
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-ios.md)
-* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-ios.cb907ed8ec11cd964744b12674d2ba0fc5684b38.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='f0108b884439aac9661c9f36f85b47d80209d155466'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 * Handoff File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/f8f6dc0ab4be0dcf32617c84a4bd589e4ada79f8/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf)
 * Handoff Datetime: 2016-06-10 22:36:25
 * Handoff Reason: Include
 * Archive File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='e5ea21d877c2828545436b211d4e62adc4de402c467'></a> Source: [InTuneDocs\EndUser\you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -7314,18 +7254,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7333babab0453de1158d02027870b03f6e740e16475'></a> Source: [InTuneDocs\EndUser\your-computer-is-already-enrolled.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0bb435b87c937ea118a0794c8332b9a8f268d36e/InTuneDocs/EndUser/your-computer-is-already-enrolled.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\your-computer-is-already-enrolled.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/your-computer-is-already-enrolled.md)
 * Handoff File: [your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf)
 * Handoff Datetime: 2016-06-14 16:59:13
 * Handoff Reason: Include
 * Archive File: [your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\your-computer-is-already-enrolled.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/your-computer-is-already-enrolled.md)
-* Current Handback File: [your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/your-computer-is-already-enrolled.617436e2d2e8c4332891a7e035cbe5316a94ec06.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='a4788340b36c7d04ff1a62844aea7dba06079a2b476'></a> Source: [InTuneDocs\EndUser\your-device-does-not-meet-the-minimum-security-patch-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b76c04545b9b26a0e2470b95a3f5ac0a81b07817/InTuneDocs/EndUser/your-device-does-not-meet-the-minimum-security-patch-android.md)
@@ -7374,9 +7311,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
-* Current Handback File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+* Current Handback File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='fcc8f1a96757c03bbe731f8624a4441e7ac6b360479'></a> Source: [InTuneDocs\EULA\acceptable-use-policy-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a6a752709928e3adc8ec73e809710b830f1f581f/InTuneDocs/EULA/acceptable-use-policy-for-microsoft-intune.md)
@@ -7572,18 +7509,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='00767d06fe0d7a10cba10d0dd428f99be0390866495'></a> Source: [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/928b79530ac278f78356f8d1ef9f267077634b5b/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md)
 * Handoff File: [choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/b594e3aac03fa91b5bf389f2e81ebd813dc5b564/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf)
 * Handoff Datetime: 2016-06-13 22:38:31
 * Handoff Reason: Include
 * Archive File: [choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md)
-* Current Handback File: [choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='527506ce7b14cdbfeb413b0b52a521f7a411a710496'></a> Source: [InTuneDocs\GetStarted\choose-how-to-manage-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/bb44d53c87bec1b6892bf49a65f3df684199ed08/InTuneDocs/GetStarted/choose-how-to-manage-devices.md)
@@ -15946,18 +15880,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ae2b35321b0664c5b54708d7389e9eb0262bb2d61160'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-device-enrollment-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/502fb25c0dc050fb3f08fbba4d02148add3faf8e/InTuneDocs/Troubleshoot/troubleshoot-device-enrollment-in-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\Troubleshoot\troubleshoot-device-enrollment-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c1c96e6cae0ee4d712d1d295d1b3a0df61ebe5f/InTuneDocs/Troubleshoot/troubleshoot-device-enrollment-in-intune.md)
 * Handoff File: [troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/ce2a92defb35cd0c5a6f3fd4966f36b2a94d96af/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf)
 * Handoff Datetime: 2016-06-10 02:43:48
 * Handoff Reason: Include
 * Archive File: [troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf)
 * Archive Datetime: 2016-06-16 01:39:18
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\Troubleshoot\troubleshoot-device-enrollment-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/Troubleshoot/troubleshoot-device-enrollment-in-intune.md)
-* Current Handback File: [troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Handback File: [troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/be6c4b9814a9357d0a74cf4bbd84692fc3fc603a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/troubleshoot-device-enrollment-in-intune.c0e4168b7349c261afccdc2a1f32f87d98e44395.hu-hu.xlf)
+* Handback Datetime: 2016-06-23 18:35:19
 * [Back to Top](#report-top)
 
 ##### <a name='766c5d5f8e512ea1c36c73936b0ffb95977395ae1161'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-email-profiles-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune.md)
