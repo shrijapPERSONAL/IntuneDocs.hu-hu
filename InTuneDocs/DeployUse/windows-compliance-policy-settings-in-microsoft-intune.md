@@ -18,7 +18,7 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,24 +39,16 @@ A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 é
 
 ## A rendszer biztonsági beállításai
 ### Jelszó
-- **A mobileszközök zárolásának feloldásához jelszó szükséges:** Ha szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassz az **Igen**
-  lehetőséget.
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:**    Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget.
 
-- **Egyszerű jelszavak engedélyezése:** Állítsa
-   **Igen** értékre ezt a beállítást, ha szeretné engedélyezni, hogy a felhasználók egyszerű jelszavakat hozhassanak létre
-   (például **1234** vagy **1111**).
+- **Egyszerű jelszavak engedélyezése:**    Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza az **Igen** lehetőséget.
 
--  **Jelszó minimális hossza:**
-  meghatározza a felhasználók jelszavában szereplő
-  számjegyek vagy karakterek minimális számát.
-- **Kötelező jelszótípus:** meghatározza, hogy a felhasználók kötelesek-e
-**Alfanumerikus** vagy **Numerikus** jelszót beállítani.
+-  **Jelszó minimális hossza:** meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
+- **Megkövetelt jelszótípus:** Meghatározza, hogy a felhasználóknak **alfanumerikus** vagy **numerikus** jelszót kell-e létrehozniuk.
 
   A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
 
-- **Karakterkészletek minimális száma:** Ha a **Kötelező jelszótípus** beállítást
-**Alfanumerikus** értékre állítja, akkor ez a beállítás határozza meg, hogy legalább
-hány karakterkészletet kell tartalmaznia a jelszónak. A négy karakterkészlet a következő:
+- **Karakterkészletek minimális száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
   -   Kisbetűk
   -   Nagybetűk
   -   Szimbólumok
@@ -65,20 +57,16 @@ hány karakterkészletet kell tartalmaznia a jelszónak. A négy karakterkészle
   Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszavakat kell létrehozniuk. A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
 - **Jelszó kérése ennyi perc inaktivitás után:** arra a tétlenségi időre vonatkozik, amin belül a felhasználónak újra meg kell adnia a jelszavát.
 
-- **Jelszó érvényessége (napokban):** Adja meg, hogy a felhasználó jelszava hány nap elteltével járjon le.
-  A megadott időtartam elteltével a felhasználónak új jelszót kell létrehoznia.
+- **Jelszó érvényessége (napokban):** Válassza ki, hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
 
-- **Korábbi jelszavak tárolása:** ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással együtt használva korlátozhatja,
-  hogy a felhasználó korábban már használt jelszavakat hozzon létre.
+- **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
 
-- **Korábbi jelszavak újbóli használatának tiltása:** ha bekapcsolta a **Korábbi jelszavak tárolása** funkciót, adja meg
-  a korábban már használt, újból nem használható jelszavak számát.
+- **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer megkéri a végfelhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
   **Ez a beállítás csak Windows 10 Mobile-eszközökre vonatkozik.**
 ### Titkosítás
-- **Titkosítás megkövetelése mobileszközön:** állítsa **Igen** értékre ezt a beállítást, ha szeretné előírni, hogy az
-  eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz.
+- **Titkosítás megkövetelése mobileszközön:** Állítsa ezt a beállítást **Igen** értékre, ha szeretné előírni, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz.
 
 ## Eszközállapot-beállítások
 - **Eszközök kifogástalanként való jelentésének megkövetelése:** Megadhat egy szabályt, amely szerint a **Windows 10 Mobile**-eszközöket kifogástalan állapotúként kell jelenteni az új vagy meglévő megfelelőségi házirendekben.  Ha ez a beállítás engedélyezett, a Windows 10-es eszközöket a rendszer az eszközállapot-igazolási szolgáltatáson (HAS) keresztül értékeli ki a következő adatpontokhoz:
@@ -86,14 +74,12 @@ hány karakterkészletet kell tartalmaznia a jelszónak. A négy karakterkészle
   -  **Kódintegritás engedélyezve:** A kódintegritás olyan szolgáltatás, amely ellenőrzi az illesztők vagy rendszerfájlok integritását, amikor azokat betölti a memóriába. A kódintegritás észleli, ha aláíratlan illesztőt vagy rendszerfájlt töltenek be a kernelbe, vagy ha egy rendszerfájlt rendszergazdai jogosultságokkal rendelkező felhasználói fiók által futtatott rosszindulatú szoftver módosított.
   - **Biztonságos rendszerindítás engedélyezve:** Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ezt a gép elindításának engedélyezése előtt ellenőrzi. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
 
-  A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx)..
+  A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ##  Eszköztulajdonság-beállítások
-- **Az operációs rendszer szükséges minimális verziója:** ha egy eszköz nem teljesíti a minimális operációsrendszer-verzióra
-    vonatkozó követelményeket, a rendszer nem megfelelőként fogja értékelni.
+- **Az operációs rendszer szükséges minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
     Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
-- **Maximálisan engedélyezett operációsrendszer-verzió:** ha egy eszközön
-    a szabályban megadottnál újabb operációs rendszer fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
 ## Megfelelőségi szabályzat beállításai windowsos számítógépekhez
@@ -140,7 +126,7 @@ Megadhat egy szabályt, amely szerint a Windows 10-es eszközöket kifogástalan
   - **Biztonságos rendszerindítás engedélyezve:** Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ezt a gép elindításának engedélyezése előtt ellenőrzi. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
   - **Korai indítású kártevőirtó:** A korai indítású kártevőirtó (ELAM) védelmet nyújt a hálózaton lévő számítógépek számára az indításkor és a külső illesztők inicializálása előtt.
 
-  A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx)..
+  A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
 ## Eszköztulajdonság-beállítások
 - **Az operációs rendszer szükséges minimális verziója:** – Windows 8.1 és Windows 10 rendszeren támogatott.
@@ -159,6 +145,6 @@ Megadhat egy szabályt, amely szerint a Windows 10-es eszközöket kifogástalan
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

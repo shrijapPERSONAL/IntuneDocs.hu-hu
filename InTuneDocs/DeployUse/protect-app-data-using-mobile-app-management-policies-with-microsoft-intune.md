@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ A MAM-szabályzatok a következőkön futó alkalmazásokat támogatják:
 
 -   **Harmadik fél mobileszköz-kezelő megoldása által felügyelt és regisztrált eszközök**.   Ebbe a kategóriába jellemzően a vállalat által birtokolt eszközök tartoznak.
 
-  > [!NOTE]
-  > A mobilalkalmazás-felügyeleti szabályzatokat nem ajánlott harmadik fél mobileszköz-kezelőjével vagy biztonságos tároló-megoldásokkal együtt használni.
+  > [!NOTE] A mobilalkalmazás-felügyeleti szabályzatokat nem ajánlott harmadik fél mobileszköz-kezelőjével vagy biztonságostároló-megoldásokkal együtt használni.
 
 -   **Nem felügyelt eszközök**.  Ebbe a kategóriába jellemzően az alkalmazottak által birtokolt eszközök tartoznak, amelyeket nem az Intune vagy más MDM-megoldás segítségével felügyelnek és regisztrálnak.
 
@@ -52,7 +51,7 @@ A MAM-szabályzatok a következőkön futó alkalmazásokat támogatják:
 
 -   A végfelhasználói termelékenység nem változik, és a szabályzatok sem lépnek érvénybe, ha személyes környezetben használják az alkalmazásokat.  Ha a szabályzatokat kizárólag munkahelyi környezetben alkalmazza, a személyes adatok érintése nélkül biztosíthatja a vállalati adatok védelmét.
 
-Az MDM-megoldásoknak a MAM-szabályzatokkal együttes használata további előnyökkel is jár, a vállalatoknál a MAM-szabályzatok MDM-megoldásokkal és azok nélkül is használhatók. Egy alkalmazott például egyaránt használhat munkahelyi telefont és saját tabletet.  Ebben az esetben a munkahelyi telefon MDM-ben regisztrált és MAM-szabályzatok által védett, míg a személyes eszközt csak a MAM-szabályzatok védik.
+Az MDM-megoldásoknak a MAM-szabályzatokkal együttes használata további előnyökkel is jár, a vállalatoknál a MAM-szabályzatok MDM-megoldásokkal és azok nélkül is használhatók. Egy alkalmazott például egyaránt használhat munkahelyi telefont és saját táblagépet.  Ebben az esetben a munkahelyi telefon MDM-ben regisztrált és MAM-szabályzatok által védett, míg a személyes eszközt csak a MAM-szabályzatok védik.
 
 - **Az MDM biztosítja az eszköz védettségét**.  Segítségével például PIN-kódot kérhet az eszköz eléréséhez, vagy felügyelt alkalmazásokat telepíthet az eszközre. Az MDM-megoldáson keresztül is telepíthet alkalmazásokat, így jobban szabályozhatja az alkalmazáskezelést.
 
@@ -64,6 +63,7 @@ Az MDM-megoldásoknak a MAM-szabályzatokkal együttes használata további elő
 
 -   Android 4 vagy újabb verzió
 
+A Windows-eszközök jelenleg nem támogatottak.
 ##  A MAM-szabályzatok és az alkalmazásadatok védelme
 
 ####  MAM-szabályzatok nélküli alkalmazások:
@@ -77,8 +77,7 @@ A korlátozások nélkül használt alkalmazások miatt összekeveredhetnek a v�
 ![A vállalati adatoknak MAM-szabályzatok alkalmazása esetén megvalósuló védelmét ismertető kép ](../media/Apps_with_mobile_app_policies.png)
 
 A MAM-szabályzatok használatával megakadályozható a vállalati adatoknak az eszköz helyi tárolójára történő mentése, illetve korlátozható a más, MAM-szabályzatok által nem védett alkalmazásokba irányuló adatmozgás. A MAM-szabályzatok beállításai a következőket tartalmazzák:
-- Adatáttelepítési szabályzatok, például:
- **Mentés másként** művelet megakadályozása, **Kivágás, másolás és beillesztés korlátozása**.
+- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**, ** A kivágás, másolás és beillesztés korlátozása**.
 - Hozzáférési szabályzati beállítások, például **A hozzáféréshez egyszerű PIN-kód szükséges**, **Felügyelt alkalmazások függetlenített vagy feltört eszközökön való futtatásának letiltása**.
 
 ### Adatvédelem MAM-szabályzatokkal az MDM-megoldások által felügyelt eszközökön:
@@ -138,6 +137,6 @@ Minden Office-mobilalkalmazás támogatja a többszörös identitást.
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

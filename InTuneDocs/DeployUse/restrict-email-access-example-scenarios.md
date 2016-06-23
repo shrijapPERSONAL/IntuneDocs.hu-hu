@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot az Exchange Online rendszerre vonatkozóan a következő beállításokkal:
 
--   Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget..
+-   Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
 
 - Válassza ki a platformot, amelyhez hozzáférést szeretne biztosítani a modern hitelesítést használó alkalmazásokból.
 - Az Exchange ActiveSync alkalmazások esetében jelölje be a következőket: **A nem megfelelő eszközök letiltása a Microsoft Intune által támogatott platformokon** és **Minden egyéb eszköz letiltása a Microsoft Intune által nem támogatott platformokon.**
@@ -70,7 +70,7 @@ A következő folyamattal határozható meg, mely eszközök férhetnek hozzá a
 ## Az Android-eszközök nem férnek hozzá a helyi Exchange-hez.
 ### Forgatókönyv követelményei
 - Android-eszközök ne férhessenek hozzá az Exchange-hez.
-- Az összes többi támogatott eszköz hozzáfér az Exchange-hez, ha a következő kezeli őket: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Az összes többi támogatott eszköz hozzáfér az Exchange-hez, ha a(z) [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kezeli őket.
 
 Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot a helyi Exchange rendszerre vonatkozóan a következő beállításokkal:
 
@@ -86,6 +86,6 @@ A következő folyamattal határozható meg, mely eszközök férhetnek hozzá a
 ![Az eszközök általi elérés folyamata](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

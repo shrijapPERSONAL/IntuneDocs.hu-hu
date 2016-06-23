@@ -18,7 +18,7 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,8 +37,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 ## A rendszer biztonsági beállításai
 ### Jelszó
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:** ha szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen**
-  lehetőséget.
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:** Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget.
 
 -  **Jelszó minimális hossza:** meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
 
@@ -50,41 +49,30 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
   -   **Legalább alfanumerikus karakterek**
   -   **Alfanumerikus karakterek és szimbólumok**
 
-- **Jelszó kérése ennyi perc inaktivitás után**: arra a tétlenségi időre vonatkozik, amelyen belül a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó kérése ennyi perc inaktivitás után:** arra a tétlenségi időre vonatkozik, amin belül a felhasználónak újra meg kell adnia a jelszavát.
 
-- **Jelszó érvényessége (napokban):** adja meg, hogy a felhasználó jelszava hány nap elteltével járjon le.
-  A megadott időtartam elteltével a felhasználónak új jelszót kell létrehoznia.
+- **Jelszó érvényessége (napokban):** Válassza ki, hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
 
-- **Korábbi jelszavak tárolása:** ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással együtt használva korlátozhatja,
-  hogy a felhasználó korábban már használt jelszavakat hozzon létre.
+- **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
 
-- **Korábbi jelszavak újbóli használatának tiltása:** ha bekapcsolta a **Korábbi jelszavak tárolása** funkciót, adja meg,
-  hány jelszóra visszamenőleg nem használható egy már korábban használt jelszó.
+- **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
 
-- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:**
-  Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer megkéri a végfelhasználót a jelszó megadására, amennyiben a kérdéses eszköz a
-  **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott időtartamon át inaktív volt.
+- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer jelszó beírását kéri a végfelhasználótól a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
 ### Titkosítás
-- **Titkosítás megkövetelése mobileszközökön:** állítsa **Igen** értékre ezt a beállítást, ha szeretné megkövetelni, hogy az
-  eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz. A rendszer titkosítja az eszközöket,
-  amennyiben a felhasználó elvégzi a **Jelszó megkövetelése
-  a mobileszköz-zárolás feloldásához** beállítás konfigurálását.
+- **Titkosítás megkövetelése mobileszközön:** Állítsa ezt a beállítást **Igen** értékre, ha szeretné előírni, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás konfigurálásával titkosíthatók.
 
 ## Eszközállapot-beállítások
 
-- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** ha bekapcsolja ezt a beállítást,
-  a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
+- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
 
 ## Eszköztulajdonság-beállítások
-- **Az operációs rendszer szükséges minimális verziója:** ha egy eszköz nem teljesíti a minimális operációsrendszer-verzióra
-  vonatkozó követelményeket, a rendszer nem megfelelőnek fogja minősíteni.
-  Megjelenik egy, a verziófrissítésre vonatkozó információkra mutató hivatkozás. A végfelhasználó frissítheti az eszközt, ezt követően pedig hozzáférhet a vállalati erőforrásokhoz.
+- **Az operációs rendszer szükséges minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
+  Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ezt követően pedig hozzáférhet a vállalati erőforrásokhoz.
 
-- **Maximum OS version allowed** (Maximálisan engedélyezett operációsrendszer-verzió): ha a rendszer az itt meghatározottnál
-  újabb operációsrendszer-verziót használ, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

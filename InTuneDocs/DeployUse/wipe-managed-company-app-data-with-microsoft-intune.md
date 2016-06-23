@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
     ![Képernyőfelvétel: Intune mobilalkalmazás-kezelés panel, Összefoglalás csempe](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Kattintson az **Új törlési kérés** lehetőségre..
+2.  Kattintson az **Új törlési kérés** lehetőségre.
 
     ![Képernyőfelvétel: Az Új törlési kérés panel](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,14 +58,14 @@ Az **Intune mobilalkalmazás-felügyelet** panel összefoglaló jelentést jelen
 
 1.  Az **Intune mobilalkalmazás-kezelés** panelen kattintson a **Törlési kérések** csempére a **Törlési kérés** panel megnyitásához.
 
-2.  A **Törlési kérés** panelen a kérelmek felhasználók szerint csoportosított listája látható.  Mivel a rendszer az eszközön futó minden védett alkalmazáshoz törlési kérést hoz létre, egy felhasználóhoz több kérés jelenhet meg.  Az állapot mutatja, hogy a törlési kérés továbbra is **függőben van**, **sikertelen**, vagy **sikeres**-e..
+2.  A **Törlési kérés** panelen a kérelmek felhasználók szerint csoportosított listája látható.  Mivel a rendszer az eszközön futó minden védett alkalmazáshoz törlési kérést hoz létre, egy felhasználóhoz több kérés jelenhet meg.  Az állapot mutatja, hogy a törlési kérés továbbra is **függőben van**, **sikertelen**, vagy **sikeres**-e.
 
-### További információ
+### Lásd még:
 [Alkalmazásadatok védelme mobilalkalmazás-felügyeleti házirendekkel ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Az Azure-portál használata](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

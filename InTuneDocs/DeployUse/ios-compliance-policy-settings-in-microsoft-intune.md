@@ -18,7 +18,7 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,22 +37,14 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 ## A rendszer biztonsági beállításai
 ### Jelszó
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:** ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen**
-  lehetőséget. A jelszót használó iOS-eszközöket titkosítja a rendszer.
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:**    Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget. A jelszót használó iOS-eszközöket titkosítja a rendszer.
 
-- **Egyszerű jelszavak engedélyezése:** állítsa
-   **Igen** értékre ezt a beállítást, ha engedélyezni szeretné, hogy a felhasználók
-   egyszerű jelszavakat (például **1234** vagy **1111**) hozzanak létre.
+- **Egyszerű jelszavak engedélyezése:**    Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza az **Igen** lehetőséget.
 
--  **Jelszó minimális hossza:**
-  meghatározza a felhasználók jelszavában szereplő
-  számjegyek vagy karakterek minimális számát.
-- **Kötelező jelszótípus:** meghatározza, hogy a felhasználók kötelesek-e
-**Alfanumerikus** vagy **Numerikus** jelszót beállítani.
+-  **Jelszó minimális hossza:** meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
+- **Megkövetelt jelszótípus:** Meghatározza, hogy a felhasználóknak **alfanumerikus** vagy **numerikus** jelszót kell-e létrehozniuk.
 
-- **Karakterkészletek minimális száma:** Ha a **Kötelező jelszótípus** beállítást
-**Alfanumerikus** értékre állítja, ezzel a beállítással határozhatja meg, hogy legalább
-hány karakterkészletet kell tartalmaznia a jelszónak. A négy karakterkészlet a következő:
+- **Karakterkészletek minimális száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
   -   Kisbetűk
   -   Nagybetűk
   -   Szimbólumok
@@ -60,52 +52,39 @@ hány karakterkészletet kell tartalmaznia a jelszónak. A négy karakterkészle
 
   Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszavakat kell létrehozniuk.
 
-  Az iOS-eszközök esetében ez a beállítás a jelszóban szereplő speciális karakterek (például: **!**, **#**, **&amp;**) minimális számára utal.
+  Az iOS-eszközök esetében ez a beállítás a jelszóban használandó különleges karakterek (például: **!**, **#**, **&amp;**) minimális számára utal.
 - **Jelszó kérése ennyi perc inaktivitás után**: arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
 
-- **Jelszó érvényessége (napokban):** adja meg, hogy a felhasználó jelszava hány nap elteltével járjon le.
-A megadott időtartam elteltével a felhasználónak új jelszót kell létrehoznia.
+- **Jelszó érvényessége (napokban):** Válassza ki, hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
 
-- **Korábbi jelszavak tárolása:** ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással együtt használva korlátozhatja,
-hogy a felhasználó korábban már használt jelszavakat hozzon létre.
+- **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
 
-- **Korábbi jelszavak újbóli használatának tiltása:** ha bekapcsolta a **Korábbi jelszavak tárolása** funkciót, adja meg
-hány jelszóra visszamenőleg nem használható egy már korábban használt jelszó.
+- **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
 
-- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:**
-Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer megkéri a végfelhasználót a jelszó megadására, amennyiben a kérdéses eszköz a
-**Jelszó kérése ennyi perc inaktivitás után** beállításban megadott időtartamon át inaktív volt.
+- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer megkéri a végfelhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
 ### E-mail profil
 - **Csak az Intune által felügyelt e-mail fiók használható:** ha **Igen** értékre állítja a beállítást, az eszköznek az eszközre telepített megfelelő e-mail-fiókot kell használnia. Az eszköz a következő esetekben számít nem megfelelőnek:
   - Az e-mail-profilt ugyanarra a felhasználói csoportra kell telepíteni, amelyet a megfelelőségi szabályzat is céloz, ellenkező esetben a felhasználó eszköze nem megfelelőnek fog számítani.
-  - Ha a felhasználó olyan e-mail-fiókot állított be az eszközön, amely egyezik az eszközre telepített Intune-e-mail-fiókkal, a rendszer nem megfelelőként jelenti az eszközt. Az Intune nem írhatja felül a felhasználó által kiépített profilt, így
-  nem is képes annak kezelésére. A megfelelőség biztosítása érdekében a felhasználónak törölnie kell
-  a meglévő e-mail-beállításokat. Ezt követően az Intune képes lesz
-  az e-mail-profil kezelésére.
+  - Ha a felhasználó olyan e-mail-fiókot állított be az eszközön, amely egyezik az eszközre telepített Intune-e-mail-fiókkal, a rendszer nem megfelelőként jelenti az eszközt. Az Intune nem írhatja felül a felhasználó által létesített profilt, így nem kezelheti. A megfelelőség biztosítása érdekében a felhasználónak el kell távolítania a meglévő e-mail beállításokat, hogy az Intune telepíthesse a felügyelt levelezési profilt.
 
 
-- **Az Intune-ban felügyelni kívánt e-mail-profil kiválasztása:**
-     Ha bekapcsolta a **Csak az Intune által felügyelt e-mail fiók használható** beállítást,
-     az Intune e-mail-profil megadásához válassza a **Kiválasztás** lehetőséget. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
+- **Az Intune-ban felügyelni kívánt levelezési profil:**
+     Ha a **Csak az Intune által felügyelt e-mail fiók használható** beállítás be van jelölve, kattintson a **Kiválasztás** elemre az Intune levelezési profil kiválasztásához. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
 
-     Az e-mail-profilokkal kapcsolatos további információért lásd: [Vállalati levelezéshez
-     való hozzáférés engedélyezése a Microsoft Intune e-mail profiljaival](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
+     A levelezési profilokról a [Hozzáférés engedélyezése a vállalati e-mailekhez a Microsoft Intune e-mail profiljaival](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) című témakörben talál további információt.
 
 ## Eszközállapot-beállítások
 
-- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** ha bekapcsolja ezt a beállítást,
-a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
+- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
 
 ##  Eszköztulajdonságok
-- **Minimum OS required** (Az operációs rendszer szükséges minimális verziója): ha egy eszköz nem teljesíti a minimális operációsrendszer-verzióra
-vonatkozó követelményeket, a rendszer nem megfelelőként fogja értékelni.
-Megjelenik egy, a verziófrissítésre vonatkozó információkra mutató hivatkozás. A végfelhasználó frissítheti az eszközt, ezt követően pedig hozzáférhet a vállalati erőforrásokhoz.
+- **Az operációs rendszer szükséges minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
+Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ezt követően pedig hozzáférhet a vállalati erőforrásokhoz.
 
-- **Maximum OS version allowed:** (Maximálisan engedélyezett operációsrendszer-verzió) ha a rendszer az itt meghatározottnál
-újabb operációsrendszer-verziót használ, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

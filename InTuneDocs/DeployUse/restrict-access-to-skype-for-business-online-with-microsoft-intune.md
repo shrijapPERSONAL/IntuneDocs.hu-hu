@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Amikor egy célzott felhasználó a Skype Vállalati online verziót szeretné h
 
 **Mielőtt** beállítaná a Skype Vállalati online verzióra vonatkozó feltételes hozzáférési szabályzatot, a következőknek kell teljesülniük:
 - Rendelkeznie kell **Skype Vállalati online verzió-előfizetéssel**, valamint ki kell osztania a Skype Vállalati online verzió licenceit a felhasználóknak.
-- Rendelkeznie kell előfizetéssel a következő csomagok valamelyikére: **Enterprise Mobility Suite** vagy **Azure Active Directory Premium**..
+- Rendelkeznie kell előfizetéssel a következő csomagok valamelyikére: **Nagyvállalati mobilitási csomag** vagy **Prémium szintű Azure Active Directory**.
 -   **Engedélyeznie kell a modern hitelesítést** a Skype Vállalati online verzióhoz. A modern hitelesítési programba való regisztrációhoz jelentkezzen be a Microsoft Connectbe, és töltse ki [ezt az űrlapot](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715).
 -  Minden végfelhasználónak a **Skype Vállalati online verziót** kell használnia. Amennyiben a telepítésben Skype Vállalati online verzió és helyi Skype Vállalati verzió is szerepel, a rendszer nem alkalmazza a feltételes hozzáférési szabályzatot a végfelhasználókra.
 
@@ -75,24 +75,22 @@ Ha egy felhasználó mindkét csoportban szerepel, mentesül a házirend alól.
 ### 2. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
 [Hozzon létre](create-a-device-compliance-policy-in-microsoft-intune.md) és [telepítsen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szabályzat hatálya alá eső összes eszközre. Ez minden olyan eszközre értendő, amelyet a **Megcélzott csoportok** csoporthoz tartozó felhasználók használnak.
 
-> [!NOTE]
-> A megfelelőségi szabályzatok az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Direct orybiztonsági csoportokat célozzák meg.
+> [!NOTE] A megfelelőségi szabályzatok a(z) [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportokat célozzák meg.
 
 
-> [!IMPORTANT]
-> Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
+> [!IMPORTANT] Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
 
-Ha készen áll, folytassa a **3. lépéssel**..
+Ha készen áll, folytassa a **3. lépéssel**.
 
 ### 3. lépés: A Skype Vállalati online verzióra vonatkozó szabályzat beállítása
 Ezután állítsa be úgy a szabályzatot, hogy csak a felügyelt és a feltételeknek megfelelő eszközök érhessék el a Skype Vállalati online verziót. A szabályzat ezek után az Azure Active Directoryban tárolódik.
 
 ####
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** > **Feltételes hozzáférés** > **A Skype Vállalati online verzió szabályzata** lehetőségre..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** > **Feltételes hozzáférés** > **A Skype Vállalati online verzió szabályzata** lehetőségre.
 
 ![A Skype Vállalati online verzió feltétes hozzáférési szabályzatának oldaláról készült képernyőkép](./media/conditional_access_SFBPolicy.png)
 
-2.  Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget..
+2.  Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
 
 3.  Az **Alkalmazás-hozzáférés** szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
 
@@ -104,7 +102,7 @@ Ezután állítsa be úgy a szabályzatot, hogy csak a felügyelt és a feltéte
 
 5.  A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
 
-6.  Amikor elkészült, kattintson a **Mentés** gombra..
+6.  Amikor elkészült, kattintson a **Mentés**gombra.
 
 Ezzel elvégezte a Skype Vállalati online verzió feltételes elérésének beállítását. Nem kell telepítenie a feltételes hozzáférési házirendet, azonnal érvénybe lép.
 
@@ -121,6 +119,6 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 * **Az AAD-ben regisztrált és megfelelő eszközök** – Ezek az eszközök hozzáférhetnek a Skype Vállalati online verzióhoz.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

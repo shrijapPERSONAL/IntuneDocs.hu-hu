@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 Ez a témakör egy olyan eszközmegfelelőségi szabályzat létrehozásának lépéseit írja le, amelyet az eszközöknek be kell tartaniuk ahhoz, hogy megfelelőnek lehessen tekinteni őket.
 
 ##  1. lépés: Az új szabályzat hozzáadása
-  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Házirend** &gt; **Megfelelőségi szabályzatok** &gt; **Hozzáadás** elemet..
+  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Házirend** &gt; **Megfelelőségi házirendek** &gt; **Hozzáadás** lehetőséget.
 
   ![A megfelelőségi szabályzat oldalának tetején található menü Hozzáadás pontját megjelenítő képernyőkép az Intune felügyeleti konzolon](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -41,7 +41,7 @@ A **Házirend létrehozása** lapon engedélyezze a kívánt beállításokat:
 ![A Házirend létrehozása oldal Általános lapjának képernyőképe ](./media/intune-sa-3b-create-policy.png)
 
 ##  3. lépés: A szabályzat mentése
-Ha elkészült, válassza a **Házirend mentése** elemet..
+Ha elkészült, válassza a **Házirend mentése** elemet.
 
 Lehetősége van közvetlenül a mentés után telepíteni a szabályzatot, vagy telepítheti később is. Az új szabályzat a **Házirend** munkaterület **Megfelelőségi házirendek** csomópontjában jelenik meg.
 
@@ -84,6 +84,6 @@ Az egyes platformokon támogatott megfelelőségi beállításokkal kapcsolatos 
 [Bevezetés az eszközmegfelelőségi szabályzatokba](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

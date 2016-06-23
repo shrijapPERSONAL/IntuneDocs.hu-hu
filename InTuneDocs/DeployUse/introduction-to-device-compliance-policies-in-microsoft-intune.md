@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 A vállalati adatok védelme érdekében gondoskodnia kell arról, hogy a vállalati alkalmazások és adatok elérésére használt eszközök megfeleljenek bizonyos szabályoknak, például használjanak PIN-kódot az eszközhöz való hozzáféréshez, illetve titkosítsák az eszközön tárolt adatokat. Az ilyen szabályok összességét megfelelőségi szabályzatnak nevezzük.
 
 ## Hogyan kell használni a megfelelőségi szabályzatokat?
-Feltételes hozzáféréssel kiegészített megfelelőségi szabályzatokkal olyan eszközök számára korlátozhatja a hozzáférést, amelyek eleget tesznek a megfelelőségi szabályzatnak. A két szabályzat együttes alkalmazásának megértéséhez olvassa el [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című témakört.
+Feltételes hozzáféréssel kiegészített megfelelőségi szabályzatokkal engedélyezheti, hogy kizárólag olyan eszközök férhessenek hozzá az e-mailekhez és egyéb szolgáltatásokhoz, amelyek eleget tesznek a megfelelőségi szabályzatnak . A két szabályzat együttes alkalmazásának megértéséhez olvassa el [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című témakört.
 
 Megfelelőségi szabályzatokat feltételes hozzáféréstől függetlenül is használhat. Ilyen esetben a célzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Előfordulhat például, hogy arról szeretne jelentést, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak függetlenítve vagy feltörve. Feltételes hozzáféréstől független alkalmazás esetén azonban nem korlátozza a rendszer a vállalati erőforrásokhoz való hozzáférést.
 
@@ -67,6 +67,6 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
