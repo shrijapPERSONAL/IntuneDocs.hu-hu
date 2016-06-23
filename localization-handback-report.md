@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\accessibility-features-of-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/accessibility-features-of-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#d34e754e3815b43f4b5b74d24711cf55aacfc7575)
 
 ## Item Details
-##### <a name='d34e754e3815b43f4b5b74d24711cf55aacfc7575'></a> Source: [InTuneDocs\accessibility-features-of-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/accessibility-features-of-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\accessibility-features-of-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/d239e76125ffec4679bf88e1a8e0d28a6008d2e5/InTuneDocs/accessibility-features-of-microsoft-intune.md)
-* Handoff File: [accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d591ecca4c452945f7f3f73d3c5ee26a27db1582/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf)
-* Handoff Datetime: 2016-06-14 16:59:13
-* Handoff Reason: Include
-* Archive File: [accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/d1dc61a85bf9b6093c152284411dd181bdfbd750/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf)
-* Archive Datetime: 2016-06-16 01:39:18
-* Handback File: [accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/197f668f388f991450fb5329a2f0d404321e4401/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/accessibility-features-of-microsoft-intune.84d97e8e160e84d0a4eff68dd662a34a398566a7.hu-hu.xlf)
-* Handback Datetime: 2016-06-23 12:47:45
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
