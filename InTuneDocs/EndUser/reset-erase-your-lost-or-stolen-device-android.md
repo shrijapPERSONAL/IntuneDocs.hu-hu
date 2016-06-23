@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,21 +32,21 @@ Ha androidos telefonja elveszett vagy ellopták, a Vállalati portál alkalmazá
 
 Ha szeretné megtudni, hogy mi történik az eszköz alaphelyzetbe állításakor, olvassa el a következő cikket: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] A gyári beállítások visszaállítása törli a telefonról a személyes és munkahelyi adatokat.
+> [!WARNING] A gyári beállítások visszaállítása törli a telefonról a személyes és a munkahelyi vagy iskolai adatokat.
 
-1.  A böngészőben nyissa meg a [Vállalati portál webhelyét](http://portal.manage.microsoft.com), és jelentkezzen be munkahelyi fiókjába.
+1.  A böngészőben nyissa meg a [Vállalati portál webhelyét](http://portal.manage.microsoft.com), és jelentkezzen be a munkahelyi vagy az iskolai fiókjába.
 
 2.  Koppintson a **Saját eszközök** elemre, és válassza ki az elveszett vagy ellopott eszköz nevét.
 
 3.  Kattintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 
-Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -44,11 +44,11 @@ Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli 
 
 A regisztráció törlésének utasításaiért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
 
-Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

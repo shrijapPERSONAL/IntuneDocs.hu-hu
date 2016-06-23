@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ Miután telepítette a Vállalati portál alkalmazást, és regisztrálta androi
 
 -   Ha elveszíti a telefonját, visszaállíthatja a gyári beállításait
 
-Androidos eszköz hozzáadásakor jogosultságot ad az IT rendszergazdának az eszköz elérésére. A következőkre nyílik lehetőség:
+Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának az eszköz elérésére. A következőkre nyílik lehetőség:
 
 -   Az eszköz visszaállítása a gyári beállításokra. Az eszköz elvesztésekor vagy ellopásakor bizonyulhat hasznosnak.
 
@@ -60,11 +60,11 @@ Androidos eszköz hozzáadásakor jogosultságot ad az IT rendszergazdának az e
 
     -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése (a változásokban nem szerepelnek személyes adatok).
 
-Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

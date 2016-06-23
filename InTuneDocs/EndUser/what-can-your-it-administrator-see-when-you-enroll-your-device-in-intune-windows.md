@@ -63,11 +63,11 @@ A windowsos eszköz Intune-beli regisztrálásával engedélyezi a rendszergazd�
 -   Gyártó
 
 
-Ha kérdése van, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

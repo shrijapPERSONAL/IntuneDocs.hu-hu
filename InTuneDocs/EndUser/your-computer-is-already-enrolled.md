@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Számítógépe már be van léptetve
 
-Ha arra vonatkozó hibaüzenetet kap, hogy a számítógépét már regisztrálták, az azt jelenti, hogy a számítógépét már hozzáadták a Vállalati portálhoz, de még nem kapcsolták össze a felhasználói fiókjával. Az alábbi eljárás segítségével kapcsolja össze számítógépét a felhasználói fiókjával, és fejezze be a folyamatot.
+Ha arra vonatkozó hibaüzenetet kap, hogy a számítógépét már regisztrálták, az azt jelenti, hogy a számítógépét már hozzáadták a Vállalati portálhoz, de még nem kapcsolták össze a felhasználói fiókjával. Az alábbi eljárás segítségével kapcsolja össze számítógépét a felhasználói fiókjával, és fejezze be a folyamatot.  
 
 A számítógép összekapcsolása:
 
@@ -38,8 +38,10 @@ A számítógép összekapcsolása:
 
 3.  A képernyőn megjelenő utasításokat követve kapcsolja össze számítógépét a felhasználói fiókjával.
 
-Ha segítségre van szüksége, de nem találja a rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha szeretné törölni az eszköze regisztrációját, kövesse az eszköz típusára vonatkozó utasításokat: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) vagy [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

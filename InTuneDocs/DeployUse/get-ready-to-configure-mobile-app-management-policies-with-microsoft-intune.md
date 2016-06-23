@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,12 +46,13 @@ Ha jelenleg az **Intune felügyeleti konzolt** használja az eszközeinek kezel�
 
 - Android 4 vagy újabb verzió
 
+A Windows-eszközök jelenleg nem támogatottak.
 ##  Támogatott alkalmazások
-* **Microsoft-alkalmazások:** Ezek az alkalmazások beépítve tartalmazzák az Intune App SDK-t, és a MAM-szabályzatok alkalmazása előtt nincs szükség további feldolgozásra.
+* **Microsoft-alkalmazások:** Ezek az alkalmazások beépítve tartalmazzák az Intune App SDK-t, ezért a MAM-szabályzatok alkalmazása előtt nincs szükség további feldolgozásukra.
 A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez keresse fel a [Microsoft Intune mobilalkalmazás-galériát](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) a Microsoft Intune alkalmazáspartnerek oldalán. Ha szeretné megtekinteni a támogatott forgatókönyveket, platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, kattintson az adott alkalmazásra.
-* Belső fejlesztésű **Üzletági alkalmazások:** Ezeket az alkalmazásokat a MAM-szabályzatok alkalmazása előtt elő kell készíteni az Intune App SDK telepítésére.
+* Belső fejlesztésű **üzletági alkalmazások:** Ezeket az alkalmazásokat a MAM-szabályzatok alkalmazása előtt elő kell készíteni az Intune App SDK telepítésére.
 
-  * Az Intune által kezelt eszközök esetén lásd: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * Az Intune által felügyelt eszközök esetében lásd: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
   * A nem felügyelt eszközök, például az alkalmazottak saját tulajdonú eszközei vagy egy külső mobileszköz-felügyeleti megoldás által kezelt eszközök esetén lásd: [Üzletági alkalmazások és adatok védelme az Intune-ban nem regisztrált eszközökön](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 MAM-szabályzatok **konfigurálásához** a következőkre lesz szüksége:
@@ -66,7 +67,7 @@ MAM-szabályzatok **konfigurálásához** a következőkre lesz szüksége:
 
 - **Microsoft Azure Active Directory (Azure AD)** a felhasználók létrehozásához. Az Azure AD akkor hitelesíti a felhasználót, amikor az végfelhasználóként elindítja az alkalmazást, és megadja a munkahelyi hitelesítő adatokat.
 
-    > [!NOTE]Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-konzolon végzi a felhasználók beállítását, vegye figyelembe, hogy a rendszer az Azure-portálra továbbítja a MAM-szabályzat konfigurációját, e portál használatához pedig Azure AD felhasználói csoportokat kell létrehoznia az Office 365-portál használatával.
+    > [!NOTE] Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-konzolon végzi a felhasználók beállítását, vegye figyelembe, hogy a rendszer az Azure-portálra továbbítja a MAM-szabályzat konfigurációját, e portál használatához pedig Azure AD felhasználói csoportokat kell létrehoznia az Office 365-portál használatával.
 
 
 ## Felhasználók létrehozása és Microsoft Intune-licencek kiosztása
@@ -117,12 +118,12 @@ A **globális rendszergazdák** hozzáférhetnek az [Azure-portálhoz](https://p
 
     ![Az Azure-portál Felhasználók hozzáadása paneljét bemutató képernyőkép](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
 
-    > [!IMPORTANT]Ha [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel nem rendelkező felhasználót választ ki, a felhasználó nem fogja tudni elérni a portált.
+    > [!IMPORTANT] Ha [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel nem rendelkező felhasználót választ ki, a felhasználó nem fogja tudni elérni a portált.
 
 ## További lépések
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

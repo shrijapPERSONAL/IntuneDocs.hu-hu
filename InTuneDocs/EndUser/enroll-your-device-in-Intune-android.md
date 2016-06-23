@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/24/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Android-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi az informatikai osztály számára ezeknek a munkahelyi vagy iskolai erőforrásoknak a kezelését és védelmét, miközben Ön a kívánt eszközön végezheti a feladatait. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz regisztrálásakor?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-Ezek a regisztrálási útmutatók a Samsung Knox Android-eszközökre és a „natív” (nem Samsung Knox) Android-eszközökre vonatkoznak. A **Beállítások** &gt; **A telefon névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „Knox” szó, akkor natív Android-eszközzel rendelkezik.
+Ezek a regisztrálási útmutatók a Samsung Knox Android-eszközökre és a „natív” (nem Samsung Knox) Android-eszközökre vonatkoznak. A **Beállítások** &gt; **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „KNOX verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
 
 A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki egy olyan kategóriát, amely a leginkább illik az Ön eszközhasználatára. A rendszergazda a kategória alapján dönti el, hogy milyen alkalmazásokhoz kaphat hozzáférést.
 
@@ -57,7 +57,7 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem indít telefonhívásokat, és nem is kezeli az Ön hívásait.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Amikor engedélyezi a hozzáférést, csak azt engedélyezi, hogy az eszköz adatnaplókat írjon az eszköz SD-kártyájára, miáltal USB-kábelen keresztül áthelyezhetők lesznek a naplók. Erre a képességre szüksége lehet, hogy elküldhesse a naplókat a rendszergazdának, ha a vállalati portál alkalmazás használata során problémába ütközik. Ismertető: [Regisztrálási hibák elküldése a rendszergazdának](send-enrollment-errors-to-your-it-administrator-android.md).
+    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem indít telefonhívásokat, és nem is kezeli az Ön hívásait.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Amikor engedélyezi a hozzáférést, csak azt engedélyezi, hogy az eszköz adatnaplókat írjon az eszköz SD-kártyájára, miáltal USB-kábelen keresztül áthelyezhetők lesznek a naplók.
 
     Ha megtagadja a hozzáférést, az üzenet ismét megjelenik, amikor legközelebb bejelentkezik a Vállalati portálba, de a **Never ask again** (Ne kérdezzen rá ismét) jelölőnégyzetre koppintva kikapcsolhatja a további üzeneteket.  Amennyiben később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** &gt; ** **Alkalmazások&gt; **Vállalati portál** &gt; **Engedélyek** &gt; **Telefon** lapon teheti ezt meg.
 
@@ -65,7 +65,7 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem éri el a névjegyeket.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Ha engedélyezi a hozzáférést, az a Vállalati Portál számára csak az adatnaplók elérését teszi lehetővé, ami segíthet az eszközzel kapcsolatos problémák elhárításában.
+    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem éri el a névjegyeket.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Ha engedélyezi a hozzáférést, lehetővé teszi a vállalati portál alkalmazásnak munkahelyi fiók létrehozását, használatát és kezelését.
 
     Ha megtagadja a hozzáférést, az üzenet ismét megjelenik, amikor legközelebb az **Adatok küldése** elemre koppint, de a **Ne kérdezzen rá ismét** jelölőnégyzetre koppintva kikapcsolhatja a további üzeneteket. Amennyiben később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** &gt; **Alkalmazások** &gt; **Vállalati portál** &gt; **Engedélyek** &gt; **Tárterület** lapon teheti ezt meg.
 
@@ -97,7 +97,7 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![Adjon meg PIN-kódot vagy jelszót](./media/and-enroll-6-PIN-native.png)
 
-13.  Kövesse az alábbiakban azokat az utasításokat, amelyek megfelelnek az Ön által használt eszköznek (natív Android vagy Samsung Knox). A **Beállítások** &gt; **A telefon névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „Knox” szó, akkor natív Android-eszközzel rendelkezik.
+13.  Kövesse az alábbiakban azokat az utasításokat, amelyek megfelelnek az Ön által használt eszköznek (natív Android vagy Samsung Knox). A **Beállítások** &gt; **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „KNOX verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
 
     -   Natív (nem Samsung Knox típusú) eszköz: Az alapértelmezett tanúsítvány elfogadásához **A tanúsítvány elnevezése** képernyőn koppintson az **OK** gombra.
 
@@ -119,9 +119,9 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![„A vállalati hozzáférés beállítása befejeződött” képernyő](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállítások** &gt; **Biztonság** területen kapcsolja be az **Ismeretlen források** beállítást. Ha az alkalmazások telepítésének megkísérlése előtt nem kapcsolja be ezt a beállítást, a következő üzenet jelenik meg: „A telepítés letiltva”. Biztonsági okokból a telefon blokkolja az ismeretlen forrásból származó alkalmazások telepítését.” A hiba-párbeszédpanelen található **Beállítások** elemre koppintva könnyen az **Ismeretlen források** beállításhoz ugorhat.
+Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállítások** &gt; **Biztonság** területen kapcsolja be az **Ismeretlen források** beállítást. Ha az alkalmazások telepítésének megkísérlése előtt nem kapcsolja be ezt a beállítást, a következő üzenet jelenik meg: „A telepítés letiltva”. Biztonsági okokból az eszköz blokkolja az ismeretlen forrásból származó alkalmazások telepítését.” A hiba-párbeszédpanelen található **Beállítások** elemre koppintva könnyen az **Ismeretlen források** beállításhoz ugorhat.
 
-További segítségre van szüksége? Forduljon az IT-rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)

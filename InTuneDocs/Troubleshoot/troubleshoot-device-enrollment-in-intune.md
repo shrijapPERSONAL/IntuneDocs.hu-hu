@@ -144,29 +144,6 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 **Megoldás:** Az olyan Microsoft Office 365-ügyfelek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a szervezetükben több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében.  Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a **SupportMultipleDomain** kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
 
-### A gép már regisztrálva van – hibakód: hr 0x8007064c
-**Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
-  
-Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
-
-
-
-**Megoldás:** 
-
-1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot. 
-1. Válassza a **Fájl** -> **Beépülő modulok hozzáadása/eltávolítása** parancsot.
-1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
-1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget. 
-1. Keresse meg az Sc_Online_Issuing által kiadott Intune-tanúsítványt, és ha létezik, törölje.
-1. Ha létezik, törölje a következő beállításkulcsot és az összes alkulcsát: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Próbálja meg újból elvégezni a regisztrálást. 
-1. Ha a gépet továbbra sem lehet regisztrálni, keresse meg a következő beállításkulcsot, és ha létezik, törölje: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Próbálja meg újból elvégezni a regisztrálást. 
-
-    > [!IMPORTANT]
-    > Ez a szakasz, módszer vagy feladat olyan lépéseket tartalmaz, amelyekkel módosítja a beállításjegyzéket. A beállításjegyzék nem megfelelő módosítása azonban súlyos hibákat okozhat. Ezért ügyeljen arra, hogy pontosan kövesse a leírtakat. További biztonsági intézkedésként a módosítások végrehajtása előtt készítsen biztonsági másolatot a beállításjegyzékről. Így probléma esetén helyreállíthatja a beállításjegyzéket.
-    > Ha további tájékoztatásra van szüksége a beállításjegyzék biztonsági mentéséről és visszaállításáról, olvassa el a [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756) (A beállításjegyzék biztonsági mentése és visszaállítása a Windows rendszerben) című témakört.
-
 
 ## Android-problémák
 ### Profiltelepítési hiba
@@ -204,7 +181,7 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 **Megoldás:** Hajtsa végre a következő lépéseket:
 
 1. Tiltsa le az iOS rendszert a Windows Intune-összekötőben. 
-    1. Kattintson az egér jobb gombjával az Intune-előfizetésre, és válassza a **Tulajdonságok** lehetőséget.
+    1. Kattintson a jobb gombbal az Intune-előfizetésre, és válassza a **Tulajdonságok** lehetőséget.
     1. Az „iOS” lapon törölje a jelet az „iOS-eszközök regisztrációjának engedélyezése” jelölőnégyzetből.
 
 
@@ -248,6 +225,31 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 
 ### Egyéb iOS-beléptetési hibák
 Az iOS-eszközök regisztrálási hibáinak listáját az eszközfelhasználói dokumentáció [Hibába ütközik, amikor megpróbálja regisztrálni az eszközt az Intune-ban](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) című szakaszában találhatja.
+
+## PC-kkel kapcsolatos problémák
+
+### A gép már regisztrálva van – hibakód: hr 0x8007064c
+**Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
+  
+Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
+
+
+
+**Megoldás:** 
+
+1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot. 
+1. Válassza a **Fájl** -> **Beépülő modulok hozzáadása/eltávolítása** parancsot.
+1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
+1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget. 
+1. Keresse meg az Sc_Online_Issuing által kiadott Intune-tanúsítványt, és ha létezik, törölje.
+1. Ha létezik, törölje a következő beállításkulcsot és az összes alkulcsát: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
+1. Próbálja meg újból elvégezni a regisztrálást. 
+1. Ha a gépet továbbra sem lehet regisztrálni, keresse meg a következő beállításkulcsot, és ha létezik, törölje: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Próbálja meg újból elvégezni a regisztrálást. 
+
+    > [!IMPORTANT]
+    > Ez a szakasz, módszer vagy feladat olyan lépéseket tartalmaz, amelyekkel módosítja a beállításjegyzéket. A beállításjegyzék nem megfelelő módosítása azonban súlyos hibákat okozhat. Ezért ügyeljen arra, hogy pontosan kövesse a leírtakat. További biztonsági intézkedésként a módosítások végrehajtása előtt készítsen biztonsági másolatot a beállításjegyzékről. Így probléma esetén helyreállíthatja a beállításjegyzéket.
+    > Ha további tájékoztatásra van szüksége a beállításjegyzék biztonsági mentéséről és visszaállításáról, olvassa el a [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756) (A beállításjegyzék biztonsági mentése és visszaállítása a Windows rendszerben) című témakört.
 
 ## Általános beléptetési hibakódok
 

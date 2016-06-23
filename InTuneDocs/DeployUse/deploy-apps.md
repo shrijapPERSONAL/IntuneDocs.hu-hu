@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ A további felhőalapú Intune-tárhely vásárlására az alábbi szabályok vo
 
 -   További tárterületet csak akkor vásárolhat, ha a szolgáltatás fizetős verzióját használja, és aktív az előfizetése.
 
--   Csak a Microsoft Online Service számlázási vagy globális rendszergazdái vásárolhatnak további tárterületet az Intune fiókportálján. Ilyen rendszergazdák hozzáadásához, törléséhez vagy kezeléséhez globális rendszergazdának kell lennie, és be kell jelentkeznie az Intune fiókportáljára.
+-   Csak a Microsoft Online Service számlázási vagy globális rendszergazdái vásárolhatnak további tárterületet az Office 365 felügyeleti portálján. Ilyen rendszergazdák hozzáadásához, törléséhez vagy kezeléséhez globális rendszergazdának kell lennie, és be kell jelentkeznie az Office 365 felügyeleti portáljára.
 
 -   Ha Ön mennyiségi licenccel rendelkező ügyfelünk, és a Nagyvállalati Szerződés keretében fizetett elő az Intune-ra vagy a Microsoft Intune-bővítményre, az árakról és a tárterület-vásárlási lehetőségekről a Microsoft helyi ügyfélmenedzserénél érdeklődhet.
 
@@ -92,7 +92,7 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 ## A telepítés során fellépő ütközések
 Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik egy eszközre, az alábbi szabályok vonatkoznak:
 
--   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoport számára, és ugyanazt az alkalmazást egy eszközcsoport számára is telepíti a **Nem alkalmazható**telepítési művelettel, a a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik.
+-   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoport számára, és ugyanazt az alkalmazást egy eszközcsoport számára is telepíti a **Nem alkalmazható**telepítési művelettel, a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik.
 
 -   A rendszergazda szándéka elsőbbséget élvez a felhasználó szándékával szemben.
 
@@ -105,6 +105,6 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 
 Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

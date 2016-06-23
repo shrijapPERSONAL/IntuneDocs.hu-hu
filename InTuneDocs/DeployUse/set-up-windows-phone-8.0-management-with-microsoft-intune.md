@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Windows Phone 8.0 rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása | Microsoft Intune
+title: Windows Phone 8.0 rendszerű telefonok kezelésének beállítása | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Eszközfelügyelet beállítása Windows Phone 8.0 rendszeren
 
 A Windows Phone 8.0 rendszerű eszközökön az Intune Vállalati portál alkalmazás telepítéséhez, valamint az eszközfelügyelet lehetővé tételéhez Symantec-tanúsítvány szükséges. Ugyancsak tanúsítvány szükséges az üzletági alkalmazások aláírásához. Ez a témakör kizárólag a Windows Phone 8.0 rendszerre vonatkozik. A Windows Phone 8.1 és újabb rendszerű eszközök (ideértve a Windows 10 Mobile rendszert is) felügyeletével kapcsolatban olvassa el a [Windows Phone rendszerű eszközök regisztrálásának beállítása](set-up-windows-phone-management-with-microsoft-intune.md) című témakört.
+
+> [!IMPORTANT] 2016 szeptemberétől a Vállalati portál alkalmazást nem lehet letölteni a Windows 8.0-s és a Windows Phone 8.0-s eszközökre.
 
 -   **Windows Phone 8** – Tanúsítvány szükséges
 -   A **Windows Phone 8.1 és a Windows 10 Mobile** kizárólag a következő esetekben igényel tanúsítványt:
@@ -134,7 +136,7 @@ Az Intune-t tartalmazó Windows Phone 8.1-es telefonokra a Windows Phone Áruhá
 
     -   WinPhoneCompanyPortal.ps1 – egy PowerShell-parancsprogram, amellyel aláírhatja a Vállalati portál alkalmazás fájlját, hogy az telepíthető legyen Windows Phone 8.1-es telefonokra
 
-2.  **A Windows Phone SDK letöltése** Töltse le a [Windows Phone SDK 8.0-s verzióját](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439), és telepítse azt a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
+2.  **A Windows Phone SDK letöltése** Töltse le a [Windows Phone SDK 8.0-s verzióját](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439), és telepítse a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
 
 3.  **AETX-fájl létrehozása** Hozza létre az alkalmazásregisztrációs adatblokk .aetx kiterjesztésű fájlját a Symantec PFX-fájlból a Windows Phone SDK 8.0 részét képező AETGenerator.exe eszközzel. Az AETX-fájlok létrehozásával kapcsolatos útmutatást itt találja: [Alkalmazásregisztrációs adatblokk létrehozása a Windows Phone rendszerhez](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
@@ -184,6 +186,6 @@ Az Intune-t tartalmazó Windows Phone 8.1-es telefonokra a Windows Phone Áruhá
     > -   Ha szükség van közvetlenül telepített alkalmazások telepítésére, valamint Windows Phone 8.0 rendszerű eszközöket is regisztrálni kell, és azoknak fogadnia kell az ssp.xap fájlt, hozzon létre egy új szoftvertelepítést az ssp.xap fájlhoz, és terjessze azt az **Eltávolítás** művelettel. A Windows Phone 8.0 rendszerű eszközök nem támogatják az alkalmazások kényszerített telepítését és eltávolítását, így azok figyelmen kívül fogják hagyni a telepítést. A Windows Phone 8.1 rendszerű eszközök támogatják az eltávolítási műveletet, és el fogják távolítani az ssp.xap alkalmazást.
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

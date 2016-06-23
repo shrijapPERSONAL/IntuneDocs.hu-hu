@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,11 +40,15 @@ A mobilalkalmazás-kezelési házirendek a következőket támogatják:
 
 Az Intune más szabályzataitól eltérően a mobilalkalmazás-kezelési szabályzatok alkalmazása nem közvetlenül történik, hanem úgy, hogy a házirendet társítja a korlátozni kívánt alkalmazással. Az alkalmazás központi és az eszközökön való telepítése után az Ön által megadott beállítások lépnek életbe.
 
-Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmazásnak tartalmaznia kell a Microsoft alkalmazás-szoftverfejlesztői készletét (SDK). Ilyen típusú alkalmazást az alábbi két módszerrel lehet beszerezni:
+Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmazásnak tartalmaznia kell a Microsoft Intune App SDK-t. Ilyen típusú alkalmazást az alábbi három módszerrel lehet beszerezni:
 
 -   **Házirend által kezelt alkalmazás használata** – Beépített App SDK-val rendelkezik. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. Itt megtekintheti [a Microsoft Intune mobilalkalmazás-kezelési szabályzatokkal használható alkalmazásokat](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 -   **Becsomagolt alkalmazás használata** – Alkalmazások, amelyek abból a célból lettek újracsomagolva a **Microsoft Intune alkalmazásburkoló eszközzel**, hogy tartalmazzák az App SDK-t. Ez az eszköz általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használatos. Nem használható az alkalmazás-áruházból letöltött alkalmazások feldolgozásához. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+
+- **Saját alkalmazás írása, amely tartalmazza az Intune App SDK-t** – Az Intune App SDK lehetővé teszi alkalmazáskezelési funkciók beépítését a készített alkalmazásokba. További információ: [Az Intune App SDK áttekintése](/develop/intune-app-sdk)
+
+Ha segítségre van szüksége az alkalmazásburkoló eszköz és az Intune App SDK közötti választáshoz, olvassa el a következőt: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 
 Néhány kezelt alkalmazás, például az iOS és az Android rendszer Outlook alkalmazása támogatja a **többszörös identitást**. Ez azt jelenti, hogy az Intune csak az alkalmazásban lévő vállalati fiókokra vagy adatokra alkalmazza a felügyeleti beállításokat.
 
@@ -60,7 +64,7 @@ Az Outlook alkalmazás használata esetén például:
 
 ## Alkalmazás létrehozása és telepítése mobilalkalmazás-kezelési házirenddel
 
--   **1. lépés:** Egy házirend által kezelt alkalmazás hivatkozásának beszerzése, illetve egy becsomagolt alkalmazás létrehozása.
+-   **1. lépés:** Hivatkozás beszerzése egy házirend által kezelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához.
 
 -   **2. lépés:** Az alkalmazás közzététele a felhőalapú tárhelyén.
 
@@ -70,15 +74,12 @@ Az Outlook alkalmazás használata esetén például:
 
 -   **5. lépés:** Az alkalmazás telepítésének figyelése.
 
-## **1. lépés:** Házirend által kezelt alkalmazás hivatkozásának beszerzése, illetve becsomagolt alkalmazás létrehozása.
+## **1. lépés:** Hivatkozás beszerzése egy házirend által kezelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához.
 
--   **Házirend által kezelt alkalmazásra mutató hivatkozás beszerzése** – Az alkalmazás-áruházban keresse meg és jegyezze fel annak a házirend által kezelt alkalmazásnak az URL-címét, amelyet telepíteni kíván.
+-   **Egy házirend által kezelt alkalmazás hivatkozásának beszerzése az alkalmazásáruházban** – Az App Store-ban keresse meg és jegyezze fel a telepíteni kívánt, házirend által kezelt alkalmazás URL-címét.
 
     Az iPad Microsoft Word alkalmazás URL-címe például a következő: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **Becsomagolt alkalmazás létrehozása** – Az [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és az [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) című témakörben szereplő utasítások alapján hozzon létre egy becsomagolt alkalmazást.
-
-    Az eszköz létrehoz egy feldolgozott alkalmazást, amelyet Ön az alkalmazás saját felhőbeli tárhelyen való közzétételekor fog használni.
 
 ## **2. lépés:** Az alkalmazás közzététele a felhőalapú tárhelyén
 Amikor közzétesz egy kezelt alkalmazást, az eljárások különböznek attól függően, hogy a közzétenni kívánt alkalmazás házirend által kezelt-e, vagy olyan alkalmazás, amelynek a feldolgozása a Microsoft Intune App Wrapping Tool for iOS eszközzel történt.
@@ -111,7 +112,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
 
 ## **3. lépés:** Mobilalkalmazás-kezelési házirend létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemre.
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemet.
 
 2.  Konfigurálja és alkalmazza az alábbi **szoftverházirendek** egyikét attól függően, hogy milyen típusú eszközhöz szeretne alkalmazásokat konfigurálni:
 
@@ -142,7 +143,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**Alkalmazásadatok titkosítása**|Megadhatja, hogy titkosítva legyenek az alkalmazással társított alkalmazások, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-kezelési házirendjével társított alkalmazások esetén az adatok titkosítása az iOS által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-házirendjén keresztül engedélyezhető, amelyet be kell állítania a rendszergazdának. Ha szükség van PIN-kódra, az adattitkosítás a mobilalkalmazás-kezelési házirendben megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS 7 által használt modulokra érvényes a FIPS 140-2 tanúsítvány](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-kezelési házirendjével társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.|
     |**Képernyőrögzítés letiltása** (csak Android-eszközök esetén)|Megadhatja, hogy az eszköz képernyő-rögzítési lehetőségei le legyenek tiltva az alkalmazás használatakor.|
 
-4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
+4.  Ha elkészült, válassza a **Házirend mentése** elemet.
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
@@ -173,11 +174,11 @@ Miután létrehozott és telepített egy mobilalkalmazás-kezelési házirenddel
 
 2.  Hajtsa végre az alábbi lépések egyikét:
 
-    -   Kattintson a **Minden felhasználó** elemre, majd kattintson duplán arra a felhasználóra, akinek az eszközét meg szeretné vizsgálni. A **Felhasználó tulajdonságai** lapon kattintson az **Eszközök** elemre, majd kattintson duplán arra az eszközre, amelyet meg szeretne vizsgálni.
+    -   Válassza a **Minden felhasználó** elemet, majd kattintson duplán arra a felhasználóra, akinek az eszközét meg szeretné vizsgálni. A **Felhasználó tulajdonságai** lapon válassza az **Eszközök** elemet, majd kattintson duplán arra az eszközre, amelyet meg szeretne vizsgálni.
 
-    -   Kattintson a **Minden eszköz** &gt; **Minden mobileszköz** elemre. Az **Eszközcsoport tulajdonságai** lapon kattintson az **Eszközök** elemre, majd kattintson duplán arra az eszközre, amelyet meg szeretne vizsgálni.
+    -   Válassza a **Minden eszköz** &gt; **Minden mobileszköz** elemet. Az **Eszközcsoport tulajdonságai** lapon válassza az **Eszközök** elemet, majd kattintson duplán arra az eszközre, amelyet meg szeretne vizsgálni.
 
-3.  A **Mobileszköz tulajdonságai** lapon kattintson a **Házirend** elemre az eszközre alkalmazott mobilalkalmazás-kezelési házirendek megtekintéséhez.
+3.  A **Mobileszköz tulajdonságai** lapon válassza a **Házirend** elemet az eszközre alkalmazott mobilalkalmazás-kezelési házirendek megtekintéséhez.
 
 4.  Jelölje ki azt a mobilalkalmazás-kezelési házirendet, amelynek meg szeretné tekinteni az állapotát. A házirend adatait az alsó ablaktáblában, a beállításait pedig a hozzá tartozó csomópont kibontásával tekintheti meg.
 
@@ -197,6 +198,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 -   Ha még nem lett alkalmazva házirend az eszközre, és két ütköző beállítás van használatban, az eszközbe épített alapértelmezett beállítás használatos.
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a rendszergazdának
 
-Ha hiba lép fel Android-eszközén az iskolai vagy a munkahelyi alkalmazások használata közben, netán a Vállalati portál alkalmazás használata közben, elküldheti a rendszergazdának a diagnosztikai adatokról készült naplófájlokat, hogy ő azonosíthassa, majd elháríthassa a hibát. Amennyiben az összes részletet rögzíteni szeretné a naplófájlokban, hogy a rendszergazda könnyebben kideríthesse, mi is a probléma, kapcsolja be a Részletes naplózás beállítást.
+Ha hiba lép fel Android-eszközén az iskolai vagy a munkahelyi alkalmazások használata közben, netán a Vállalati portál alkalmazás használata közben, elküldheti a rendszergazdának a diagnosztikai adatokról készült naplófájlokat, hogy ő azonosíthassa, majd elháríthassa a hibát. Amennyiben az összes részletet rögzíteni szeretné a naplófájlokban, hogy a rendszergazda könnyebben kideríthesse, mi is a probléma, kapcsolja be a Részletes naplózás beállítást. További tudnivalók: [Részletes naplózás](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 A részletes naplózás bekapcsolása:
 
@@ -54,6 +54,6 @@ A részletes naplózás bekapcsolása:
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

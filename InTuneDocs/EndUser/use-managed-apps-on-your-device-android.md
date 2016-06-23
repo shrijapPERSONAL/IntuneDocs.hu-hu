@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ Itt talál néhány példát arra, hogy melyek lehetnek azok a rendszergazda ál
 
 A következők olyan általános alkalmazások, amelyeket az informatikai részlege felügyelhet:
 
--   Felügyelt webböngésző
+-   Intune Managed Browser
 
--   Felügyelt képmegtekintő
+-   Intune Image Viewer
 
--   Felügyelt PDF-megtekintő
+-   Intune PDF Viewer
 
--   Felügyelt AV-lejátszó
+-   Intune AV Viewer
 
 -   Microsoft Word, Excel, PowerPoint
 
-Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba az informatikai rendszergazdájával. Ha nem találja az IT-rendszergazda elérhetőségeit, próbálja meg megkeresni a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba az informatikai rendszergazdájával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

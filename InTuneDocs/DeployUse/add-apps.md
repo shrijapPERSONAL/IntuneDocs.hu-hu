@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét 
 > [!TIP] A mobileszközökre vonatkozó beállítások csak azt követően válnak elérhetővé, hogy a [Mobileszköz-kezelő szolgáltató megadása beállítást](get-ready-to-enroll-devices-in-microsoft-intune.md) az Intune-ra állította.
 
 ## Az univerzális Windows-platformra épülő alkalmazások támogatása
-A Windows 10-es eszközökre közvetlen telepítésre szolgáló kulcs nélkül is telepíthetők az üzletági alkalmazások. A közvetlen telepítés azonban csak akkor lehetséges, ha a **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** beállításkulcs értéke **1**.
+A Windows 10-es számítógépekre közvetlen telepítésre szolgáló kulcs nélkül is telepíthetők az üzletági alkalmazások. A közvetlen telepítés azonban csak akkor lehetséges, ha a **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** beállításkulcs értéke **1**.
 
 Ha nincs konfigurálva ez a beállításkulcs, az Intune automatikusan **1** értékre állítja, amikor először telepítenek egy alkalmazást a szóban forgó eszközre. Amennyiben **0** értékre állította ezt az értéket, az Intune nem tudja azt automatikusan módosítani, ezért sikertelen lesz az üzletági alkalmazások telepítése.
 
@@ -96,6 +96,6 @@ A Windows 10 Mobile rendszerű eszközökön nem a Symantec által kiállított 
 
 Ezután az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
