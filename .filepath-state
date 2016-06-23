@@ -227,9 +227,6 @@
   "0dc04c1bba266fdba3fd6326f7cb6908a41e8c2d": [
     "InTuneDocs\\GetStarted\\TOC.md"
   ],
-  "455d9a1ee2666dcfaf7a8c7c4662f29bddb027de": [
-    "InTuneDocs\\GetStarted\\TOC.md"
-  ],
   "f4d5c5fef97041f56707e5ef5b29d189f28c283a": [
     "InTuneDocs\\media\\Microsoft-Connect.png"
   ],
@@ -1378,19 +1375,10 @@
   "0a503fb4ffac0366b46c74a61943678b159e5712": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-android.md"
   ],
-  "e51fc05d03a7a8e49af122b77f54b561c75723b8": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-android.md"
-  ],
   "99e60934ecd280b5dd38ebe65f5a60fee576f77f": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-ios.md"
   ],
-  "98aca9fc7dc1a8ddd2c687b2705b513c2550e187": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-ios.md"
-  ],
   "2c0f538ab85de4b76feb52bde71b9f325eacf17f": [
-    "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-windows.md"
-  ],
-  "6a5ed408016dce3dd9dca408710179fd938c9a95": [
     "InTuneDocs\\EndUser\\turn-off-microsoft-usage-data-collection-windows.md"
   ],
   "db9755013320f11bd58fa94275274ad6ba2b5e9a": [
@@ -1418,12 +1406,6 @@
     "InTuneDocs\\EndUser\\use-managed-apps-on-your-device-ios.md"
   ],
   "9089943b8e86b298e0182483a5f98cf4d74efd63": [
-    "InTuneDocs\\EndUser\\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md"
-  ],
-  "f63902f86f6e9ac70b4ae9d8852ce4343b0e1d7e": [
-    "InTuneDocs\\EndUser\\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md"
-  ],
-  "e5af90c3cb5bef496d28e94763798bea0feadb08": [
     "InTuneDocs\\EndUser\\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md"
   ],
   "04131fc569c904cf948683089933c38786a9b847": [
