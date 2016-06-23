@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Miután regisztrálta Android-alapú eszközét az Intune-ban, a **Részletes na
 
 A **Részletes naplózás** beállítás be- vagy kikapcsolásához jelentkezzen be a Vállalati portál alkalmazásba a munkahelyi vagy az iskolai fiókjával, koppintson a **Beállítások** elemre, és kapcsolja be vagy ki a **Részletes naplózás** beállítást.
 
-### További információ
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
+### Lásd még:
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -29,9 +29,11 @@ ms.suite: ems
 # A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műveletekkel gyűjti a Vállalati portál alkalmazás megbízhatóságát, teljesítményét és használatának módját jelző névtelen adatokat. Ezen adatok gyűjtése kikapcsolható Android-eszközökön a Vállalati portál alkalmazás **Használati adatok** beállításával. A rendszergazdák nem tudják befolyásolni ezen adatok gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
 
-### További információ
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
+### Lásd még:
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -32,9 +32,11 @@ Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műv
 
 Ezen adatok gyűjtése kikapcsolható Windows-eszközökön a Vállalati portál alkalmazás **Használati adatok** beállításával. A rendszergazdák nem tudják befolyásolni ezen adatok gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
 
-### További információ
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
+### Lásd még:
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

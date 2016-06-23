@@ -2,6 +2,7 @@
 
 # [Első lépések](what-to-know-before-you-start-microsoft-intune.md)
 ## [Előzetes tudnivalók](what-to-know-before-you-start-microsoft-intune.md)
+### [Támogatott mobileszközök és számítógépek](supported-mobile-devices-and-computers.md)
 ### [Támogatott webböngészők](supported-web-browsers.md)
 ### [Hálózati infrastruktúrával kapcsolatos követelmények](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Rendszergazdai fiókok, webhelyek és engedélyek](administrative-accounts-websites-perms.md)
@@ -38,6 +39,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

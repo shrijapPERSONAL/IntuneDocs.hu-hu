@@ -32,9 +32,11 @@ Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műv
 
 Ezen adatok gyűjtése kikapcsolható iOS-eszközökön a Vállalati portál alkalmazás **Használati adatok** beállításával. A rendszergazdák nem tudják befolyásolni ezen adatok gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
 
-### További információ
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+### Lásd még:
+[iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO2-->
 
 
