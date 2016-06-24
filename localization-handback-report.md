@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2847c9af38ae0ddddc8d76d548ae7abddc63e4c1/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) | InSyncHandedBackSuccess | [Details](#e764dc73492db984fcbb118597ad1d08491d3427533)
 
 ## Item Details
-##### <a name='e764dc73492db984fcbb118597ad1d08491d3427533'></a> Source: [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2847c9af38ae0ddddc8d76d548ae7abddc63e4c1/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\GetStarted\start-with-a-paid-subscription-to-microsoft-intune-step-4.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/dc52d83851aeea801c290285f281f73855246f72/InTuneDocs/GetStarted/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-* Handoff File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/148dcd6048de3b57d56de9893091e899ee6ce903/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf)
-* Handoff Datetime: 2016-06-16 21:03:04
-* Handoff Reason: Include
-* Archive File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/b1c0cdeb112c7f42cb4213b35a6cf7bf6497158a/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf)
-* Archive Datetime: 2016-06-17 00:30:08
-* Handback File: [start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/3bb0a003f74a1a0ee831f8a145d1bd4152cd4ac1/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/start-with-a-paid-subscription-to-microsoft-intune-step-4.78910944c8d80959439df1c9a4c91e117cb929c2.hu-hu.xlf)
-* Handback Datetime: 2016-06-24 19:04:44
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
