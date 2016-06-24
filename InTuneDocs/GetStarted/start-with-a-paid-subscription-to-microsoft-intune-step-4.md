@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # Intune licencek kezelése
-Mielőtt a felhasználó bejelentkezhetne az Intune szolgáltatásba, vagy regisztrálhatná az eszközeit a felügyeletbe, egy licencet kell hozzárendelnie az Intune-előfizetéséhez az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) belül. A licenc hozzárendelése után a felhasználó neve megjelenik az Intune felügyeleti konzolján. A felhasználók ezt követően maximum öt eszközt regisztrálhatnak.
+Mielőtt a felhasználók bejelentkezhetnek az Intune szolgáltatásba, vagy regisztrálhatnák az eszközeiket a felügyeletbe, Önnek egy, az Intune-előfizetéséhez tartozó licencet kell hozzárendelnie minden felhasználóhoz az [Office 365 portállal](http://go.microsoft.com/fwlink/p/?LinkId=698854). A licenc hozzárendelése után a felhasználó neve megjelenik az Intune felügyeleti konzolján. A felhasználók ezt követően maximum öt eszközt regisztrálhatnak.
+
+Előfordulhat, hogy a Microsoft Nagyvállalati mobilitási csomag (EMS) megoldást használó szervezeteknek vannak felhasználói, akik csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatást igénylik. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető. További információ: [Intune-licencek kezelése a PowerShell használatával](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## Az Intune-licencek hozzárendelésének módja
 Ha a felhasználói fiókok szinkronizálása a helyszíni Active Directoryból történik, vagy az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) segítségével manuálisan veszi fel azokat a felhőalapú szolgáltatások előfizetésébe, akkor a rendszer nem rendel hozzájuk automatikusan Intune-licencet. Ehelyett egy későbbi időpontban egy Intune bérlői rendszergazdának az Office 365 portálról kell egy licencet a felhasználóhoz rendelnie a felhasználói fiók szerkesztésével.
@@ -42,7 +44,7 @@ Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) haszná
 
 1.  Jelentkezzen be az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) bérlői rendszergazdai hitelesítő adataival, majd válassza a **Személyek** > **Minden felhasználó** lehetőséget.
 
-2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, és a felhasználói fiók tulajdonságainál válassza a **Microsoft Intune** lehetőséget.
+2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, majd válassza vagy a **Microsoft Intune** (önálló), vagy az **Enterprise Mobility Suite** lehetőséget.
 
 3.  A felhasználói fiókot most már rendelkezik a szolgáltatás használatához és az eszközöknek a felügyelet alá való regisztrálásához szükséges engedélyekkel.
 
@@ -87,12 +89,12 @@ Ellenőrizze a következővel:
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### További lépések
-Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutató* 4. lépését.
+Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lépését.
 >[!div class="step-by-step"]
 
 >[&larr; **Felhasználók szinkronizálása az Intune-nal**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Felhasználók és eszközök rendszerezése** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
