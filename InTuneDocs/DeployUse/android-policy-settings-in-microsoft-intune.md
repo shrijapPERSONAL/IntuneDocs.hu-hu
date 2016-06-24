@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -138,8 +138,8 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyek telepítése és futtatása nem engedélyezett a felhasználóknak.|
-|**Meg nem felelés jelentésének mellőzése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat az alkalmazásokat tartalmazza, amelyeket a felhasználók telepíthetnek. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeket a felhasználók nem telepíthetnek és futtathatnak. Ha a felhasználók ezen alkalmazások egyikét telepítik, szerepelni fog a szabályzatoknak nem megfelelő alkalmazásokról készült jelentésben.|
+|**Meg nem felelés jelentésének mellőzése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat az alkalmazásokat tartalmazza, amelyek használatát engedélyezi a vállalatnál. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
 |**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét.<br /><br />További segítségért olvassa el az ebben a témakörben alább található Alkalmazás-áruházak URL-címének megadása című részt.|
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
@@ -150,7 +150,7 @@ Adja meg a következő értékeket a **Samsung KNOX**-eszközök beállításhoz
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Kattintson a **Tallózás** gombra, majd válassza ki a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz kioszk módban is futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem élveznek támogatást). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.|
+|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Válassza a **Tallózás** elemet, majd válassza ki a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz kioszkmódban is futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem támogatottak). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.|
 |**Hangerőszabályzó gombok engedélyezése**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|
 |**Képernyő ébresztőgombjának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|
 
@@ -161,9 +161,9 @@ A **Nem kompatibilis alkalmazások jelentése** beállítás használatával meg
 
 ###### A nem kompatibilis alkalmazások jelentésének futtatása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Nem kompatibilis alkalmazások jelentése** elemre.
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemet.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd válassza a **Jelentés megtekintése**elemet.
 
 #### Alkalmazás-áruházak URL-címének megadása
 Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, használja a következő formátumot:
@@ -177,10 +177,9 @@ Nyissa meg az alkalmazás telepítési lapját, és másolja az URL-címet a vá
 ## Egyéni szabályzatbeállítások
 A Microsoft Intune **Android egyéni konfigurációs házirenddel** OMA-URI-beállításokat telepíthet, melyekkel vezérelhetők az Android-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az ezen házirendekkel konfigurálható beállításokkal kapcsolatos további információt [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) című témakörben találhat.
+Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
 
-> [!NOTE]
-> Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják. További információkért olvassa el a témakörben alább található Egyéni Wi-Fi-profil konfigurálása előmegosztott kulccsal című részt.
+> [!NOTE] Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják.
 
 ### Általános beállítások
 
@@ -258,6 +257,6 @@ Bár az Intune támogatja az Android-eszközök Wi-Fi-profiljait, ez a szolgált
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

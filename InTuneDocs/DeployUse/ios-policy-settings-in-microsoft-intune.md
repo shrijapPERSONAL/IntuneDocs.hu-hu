@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -97,9 +97,9 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |Beállítás neve|Részletek|iOS|
 |----------------|-------|
 |**Alkalmazástároló használatának engedélyezése**|Az alkalmazás-áruház elérésének engedélyezése az eszköz számára.|Igen|
-|**Jelszó megkövetelése az alkalmazástórolóhoz való hozzáféréshez**|Igen|
+|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|Igen|
 |**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|Igen|
-|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.|OS 7.1-es és újabb verziók|
+|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), nem engedélyezi többé a mentést.|iOS 7.1-es és újabb verziók|
 |**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|iOS 7.1-es és újabb verziók|
 |**Videokonferenciák engedélyezése**|Videokonferencia-alkalmazások, például a Facetime engedélyezése az eszközön.|Igen|
 |**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|Igen|
@@ -153,7 +153,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Kattintson a **Tallózás**gombra, majd adja meg azt a kezelt alkalmazást, illetve áruházbeli alkalmazást, amelynek engedélyezni szeretné a futtatását, amikor az eszköz Kioszk módban van. Más alkalmazás nem lesz futtatható az eszközön. További segítségért olvassa el az ebben a témakörben alább található **Alkalmazás-áruházak URL-címének megadása** című részt.|
+|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Válassza a **Tallózás** elemet, majd adja meg azt a kezelt alkalmazást, illetve áruházbeli alkalmazást, amelynek engedélyezni szeretné a futtatását, amikor az eszköz kioszkmódban van. Más alkalmazás nem lesz futtatható az eszközön. További segítségért olvassa el az ebben a témakörben alább található **Alkalmazás-áruházak URL-címének megadása** című részt.|
 |**Érintés engedélyezése**|Engedélyezheti vagy letilthatja az érintőképernyőt az eszközön.|
 |**Képernyő elforgatásának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő tájolásának módosítását az eszköz elforgatásakor.|
 |**Hangerőszabályzó gombok engedélyezése**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|
@@ -182,9 +182,9 @@ A **Nem kompatibilis alkalmazások jelentése** beállítás használatával meg
 
 ##### A nem kompatibilis alkalmazások jelentésének futtatása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemre.
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemet.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd válassza a **Jelentés megtekintése**elemet.
 
 #### Alkalmazás-áruházak URL-címének megadása
 Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, illetve **Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása** beállításban (csak iOS rendszerben), használja a következő formátumot:
@@ -222,7 +222,7 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |Beállítás neve|Részletek|
     |----------------|--------------------|
 |**Egyéni konfigurációs profil neve (megjelenik a felhasználók számára)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
-|**Konfigurációs profilfájl**|Kattintson az **Importálás**lehetőségre, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatóban talál.|
+|**Konfigurációs profilfájl**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatóban talál.|
     |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil xml-kódját.|
 
 ### További információ
@@ -230,6 +230,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
