@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Microsoft Intune-dokumentáció</h1>
       <h2>Útmutató a Microsoft Intune mobileszköz- és alkalmazásfelügyeleti szolgáltatás telepítéséhez és kezeléséhez.</h2>
-      <h3>Érdemes az Intune-t és a Configuration Manager 2012-vel felügyelni? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Nézze át a Configuration Manager dokumentációját. &rarr;</a></h3>
+      <h3>Érdemes az Intune-t és a Configuration Manager 2012-vel felügyelni? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Nézze át a Configuration Manager dokumentációját. &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Kiemelt tartalom</h2>
@@ -280,6 +280,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
