@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/96bc6299b07b0d7036c4e1ab61b481ec02d20227/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#288560dc07d7ae93fa017917b45c71a88d089d31261)
+ [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/62beaec31a0cdc3c28fd3eed820a6771e42ef3e7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad15)
 
 ## Item Details
-##### <a name='288560dc07d7ae93fa017917b45c71a88d089d31261'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/96bc6299b07b0d7036c4e1ab61b481ec02d20227/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
+##### <a name='f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad15'></a> Source: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/62beaec31a0cdc3c28fd3eed820a6771e42ef3e7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/5623e3ed2222b815d54e8b5f5f99d02c5eb1eab3/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.hu-hu.xlf)
-* Handoff Datetime: 2016-06-28 21:52:00
+* Handoff File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/418dfe65a722ed1a546250479d36f782d03c64c2/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.hu-hu.xlf)
+* Handoff Datetime: 2016-06-28 23:51:44
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
-* Current Handback File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/175c4371c84c01307b0e72f190c21eb5c2ad59f4/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/76d9cda88e05e9dcd1c6ff5d1bab0ee615329f48/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-24 07:33:02
 * [Back to Top](#report-top)
 
 
