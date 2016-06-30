@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Várható újdonságok | Microsoft Intune
-description:
-keywords:
+title: "Várható újdonságok | Microsoft Intune"
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 06/10/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: bdd6726590d6f13d1ec0d6e2ad030667d5bab414
+ms.openlocfilehash: 4c95a6cd426e4bc15c0a130293a859af9c8b0eb1
+
 
 ---
 
@@ -97,6 +91,7 @@ Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos R
 
 ### További információ
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new-in-microsoft-intune.md).
+
 
 
 <!--HONumber=Jun16_HO3-->

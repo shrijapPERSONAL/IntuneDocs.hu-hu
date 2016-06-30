@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: A felhasználói és eszközcsoportok megtervezése | Microsoft Intune
-description:
-keywords:
+title: "A felhasználói és eszközcsoportok megtervezése | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,6 +151,7 @@ Tekintse át ezt, majd kattintson a **Befejezés** gombra a csoport létrehozás
 
 A példánkban egy Middle East and Asia (MEA) csoportot is létrehoztunk.
 
+> [!NOTE]
 > [!NOTE] Ha a csoporttagság nem a biztonsági csoport tagsága alapján van feltöltve, ellenőrizze, hogy Intune-licenceket rendelt-e ezekhez a tagokhoz.
 
 ### Csoportok adott hardverekhez
@@ -174,6 +168,7 @@ Ha a szervezetének olyan házirendekre van szüksége, amelyek meghatározott o
 
 Az előző példákban bemutatott módszerrel létrehozhatunk olyan csoportokat,<!--devices?--> amelyek az egyes operációs rendszereket használó felhasználókat tartalmazzák.
 
+> [!NOTE]
 > [!NOTE] Ha a felhasználói többféle mobilplatformot/operációs rendszert használnak, és nincs automatikus módszere a felhasználók kategorizálására Android-felhasználóként, iOS-felhasználóként vagy Windows-felhasználóként, érdemes lehet eszközszinten alkalmazni házirendeket, mivel ez nagyobb rugalmasságot nyújt az operációs rendszerre jellemző házirendek alkalmazásában.
 >
 > Nem létesíthet csoportokat dinamikusan az eszköz operációs rendszere alapján. Ezt AD vagy AAD biztonsági csoportokkal tegye.
@@ -218,6 +213,7 @@ A házirendek ilyen módon történő elnevezésével gyorsan azonosíthatja a h
 [Csoportok létrehozása](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
