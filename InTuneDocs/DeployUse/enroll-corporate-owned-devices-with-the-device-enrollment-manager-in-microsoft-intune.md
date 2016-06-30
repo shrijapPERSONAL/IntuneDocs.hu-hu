@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel a Microsoft Intune-ban | Microsoft Intune
-description:
-keywords:
+title: "Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel a Microsoft Intune-ban | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3e0a2ca4632551663b316e7c89f3f65dc57c3670
+ms.openlocfilehash: bdc2ba21ddeaedcbb0cf847f2491be118c275057
+
 
 ---
 
@@ -94,6 +87,7 @@ Az eszközregisztráció-kezelő törlése nincs hatással a regisztrált eszkö
 -   A törölt eszközregisztráció-kezelői fiók hitelesítő adatai nem törölhetik vagy vonhatják vissza az eszközöket
 
 -   A törölt eszközregisztráció-kezelői fiók kapcsolata megmarad a regisztrált fiókokkal, de további eszközöket nem lehet regisztrálni
+
 
 
 <!--HONumber=Jun16_HO1-->
