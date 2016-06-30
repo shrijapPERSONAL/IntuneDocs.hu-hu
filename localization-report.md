@@ -1798,9 +1798,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a645bdd1c64adab08b84ce182bcc61843f03e73a/InTuneDocs/DeployUse/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
-* Current Handback File: [enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.bc138acce493ced94b89b1b06a6ec7379adbd529.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/6396fd5c203ca7c58277957b0dacccc6b716b4d4/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.bc138acce493ced94b89b1b06a6ec7379adbd529.hu-hu.xlf)
-* Current Handback Datetime: 2016-06-16 18:16:24
+* Current Target File: [InTuneDocs\DeployUse\enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/8c8328660e9d179320b5ece400258efb4a9ac5ba/InTuneDocs/DeployUse/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+* Current Handback File: [enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.bc138acce493ced94b89b1b06a6ec7379adbd529.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/9974032fb9e5e425e843712b2f6ef6785093d14a/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.bc138acce493ced94b89b1b06a6ec7379adbd529.hu-hu.xlf)
+* Current Handback Datetime: 2016-06-30 23:00:16
 * [Back to Top](#report-top)
 
 ##### <a name='48359b44bec9ac3e1c9510debc01d2cf8abf6d2b38'></a> Source: [InTuneDocs\DeployUse\enroll-corporate-owned-ios-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
