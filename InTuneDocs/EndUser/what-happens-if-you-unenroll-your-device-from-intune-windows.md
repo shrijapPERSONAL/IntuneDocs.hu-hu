@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mi történik, ha törli az eszköz regisztrációját az Intune-ból? | Microsoft Intune
-description:
-keywords:
+title: "Mi történik, ha törli az eszköz regisztrációját az Intune-ból? | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,6 +36,7 @@ Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő
 
 -   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is van telepítve, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően újra engedélyezni lehet ezt az alkalmazást. Javasoljuk, hogy a Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
 
+    > [!IMPORTANT]
     > [!IMPORTANT] Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása) hatályukat veszítik.
@@ -97,6 +91,7 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 ### További információ
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

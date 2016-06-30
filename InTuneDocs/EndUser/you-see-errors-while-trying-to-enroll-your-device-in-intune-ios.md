@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Hibába ütközik, amikor megpróbálja regisztrálni az iOS-es eszközt az Intune-ban | Microsoft Intune
-description:
-keywords:
+title: "Hibába ütközik, amikor megpróbálja regisztrálni az iOS-es eszközt az Intune-ban | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
-
-# optional metadata
-
 ROBOTS: noindex
-#audience:
-#ms.devlang:
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
+ms.openlocfilehash: 21305aa10caecdcc6f2d22f305d47f74a5b3f3ba
+
 
 ---
 
@@ -41,6 +35,7 @@ A következő táblázat azon hibákat tartalmazza, amelyeket az iOS-es eszköz�
 
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
 
 <!--HONumber=Jun16_HO2-->
 

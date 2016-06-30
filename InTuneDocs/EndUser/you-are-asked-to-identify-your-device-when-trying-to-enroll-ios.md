@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A regisztráláskor a rendszer felkéri az eszköz azonosítására | Microsoft Intune
-description:
-keywords:
+title: "A regisztráláskor a rendszer felkéri az eszköz azonosítására | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: e5ea21d877c2828545436b211d4e62adc4de402c
+
 
 ---
 
@@ -39,6 +33,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 ### További információ
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

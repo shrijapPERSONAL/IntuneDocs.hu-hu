@@ -1,29 +1,22 @@
 ---
-# required metadata
-
 experiment_id: lindavr-abtest-20160527
 experimental: true
-title: Újdonságok | Microsoft Intune
-description:
-keywords:
+title: "Újdonságok | Microsoft Intune"
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a6fc9d29c5a3588a7d81658b6ee02232c346ba74
+ms.openlocfilehash: 7ba8e046cfcb9ff988fdaaaaa8a87a78c27a8669
+
 
 ---
 
@@ -123,6 +116,7 @@ Az Intune-ban az elmúlt hat hónapban bevezetett újdonságok listája [Az Intu
 ### További információ
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A Cloud Platform ütemterve](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+
 
 
 <!--HONumber=Jun16_HO2-->

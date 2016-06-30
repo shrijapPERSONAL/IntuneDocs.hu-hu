@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal | Microsoft Intune
-description:
-keywords:
+title: "iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
+ms.openlocfilehash: 2273b5a9782a4e9e69f525555a10242a38c6efda
+
 
 ---
 
@@ -66,6 +60,7 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

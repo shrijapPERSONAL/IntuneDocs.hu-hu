@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mit kell tudniuk a végfelhasználóknak az Intune használatáról? | Microsoft Intune
-description:
-keywords:
+title: "Mit kell tudniuk a végfelhasználóknak az Intune használatáról? | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -57,15 +50,16 @@ Az alábbi súgóhivatkozásokkal tájékoztatja a végfelhasználókat arról, 
 Ha szeretné megtudni, hogy a végfelhasználók hogyan tölthetnek le alkalmazásokat, válasszon az alábbi eszközplatformok közül:
 
 > [!div class="op_single_selector"]
-- [Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)
-- [iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
-- [Windows-felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
+- [[!div class="op_single_selector"]](how-your-android-users-get-their-apps.md)
+- [Android-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
+- [iOS-felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
 
-## A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
+## Windows-felhasználói alkalmazások letöltése
 
-Ha segíteni szeretne felhasználóinak megoldani a Vállalati portál használata során felmerülő esetleges problémákat, tekintse meg, hogy [milyen üzenetekkel találkozhatnak a Vállalati portálon](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
+A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

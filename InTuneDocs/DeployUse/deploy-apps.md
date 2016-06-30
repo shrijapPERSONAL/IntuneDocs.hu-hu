@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Alkalmazások telepítése | Microsoft Intune
-description:
-keywords:
+title: "Alkalmazások telepítése | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e382583f3fcb5377b68abea959424c4b4bbcac82
+ms.openlocfilehash: 261264d9c586505af8673d2b74d00cf8ee286214
+
 
 ---
 
@@ -104,6 +97,7 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 ## További lépések
 
 Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
+
 
 <!--HONumber=Jun16_HO2-->
 

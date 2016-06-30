@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Alkalmazások hozzáadása mobileszközökhöz | Microsoft Intune
-description:
-keywords:
+title: "Alkalmazások hozzáadása mobileszközökhöz | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a232475ebd6fb301ba04c00d2c12b7111fa8976
+ms.openlocfilehash: eb735cdbaf574104ad090c770fcc9f1f18a54d30
+
 
 ---
 
@@ -101,6 +94,7 @@ Ebből a négy perces videóból megtanulhatja, hogyan telepítsen Microsoft Ins
 ## További lépések
 
 Ha létrehozta az alkalmazást, a következő lépés a telepítése. További információért lásd: [Alkalmazások központi telepítése a Microsoft Intune-ban](deploy-apps.md)
+
 
 
 

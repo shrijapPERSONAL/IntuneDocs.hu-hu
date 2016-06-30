@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Eszközök kategorizálása eszközcsoport-leképezéssel | Microsoft Intune
-description:
-keywords:
+title: "Eszközök kategorizálása eszközcsoport-leképezéssel | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: fcc2e417766a4a7b6fcbe3a7831d0d15c765ca81
+
 
 ---
 
@@ -57,6 +50,7 @@ Ezt követően amikor a felhasználók regisztrálják eszközüket, meg fog jel
 
 ### További információ
 [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+
 
 <!--HONumber=Jun16_HO1-->
 

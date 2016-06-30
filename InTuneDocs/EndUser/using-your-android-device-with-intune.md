@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Android-eszköz használata az Intune-nal | Microsoft Intune
-description:
-keywords:
+title: "Android-eszköz használata az Intune-nal | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 537cb3277a9a334e6e7bfcbfb6606e934c70e705
+
 
 ---
 
@@ -65,6 +58,7 @@ Az itt olvasható információk az Android-eszköz Intune-ban történő regiszt
 - [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Az eszközhöz hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-android.md)
+
 
 
 

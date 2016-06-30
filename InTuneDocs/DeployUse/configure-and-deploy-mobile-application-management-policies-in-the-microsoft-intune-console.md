@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Adatok védelme mobilalkalmazás-kezelési házirendekkel a Microsoft Intune segítségével | Microsoft Intune
-description:
-keywords:
+title: "Adatok védelme mobilalkalmazás-kezelési házirendekkel a Microsoft Intune segítségével | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 211543b75e2bcda85cd74ab34c254d70f036eebd
+ms.openlocfilehash: e449467467394e530b56209bad3c1264d66ca7bd
+
 
 ---
 
@@ -196,6 +189,7 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 -   Ha egy házirend már alkalmazva lett az eszközre, a meglévő házirend-beállítások nem íródnak felül.
 
 -   Ha még nem lett alkalmazva házirend az eszközre, és két ütköző beállítás van használatban, az eszközbe épített alapértelmezett beállítás használatos.
+
 
 
 <!--HONumber=Jun16_HO2-->

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése | Microsoft Intune
-description:
-keywords:
+title: "Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 434cddd5595d19298ba0c7642680ccd24d5f9df3
+
 
 ---
 
@@ -165,6 +158,7 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 
 ### További információ
 [Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 
 
 <!--HONumber=Jun16_HO2-->

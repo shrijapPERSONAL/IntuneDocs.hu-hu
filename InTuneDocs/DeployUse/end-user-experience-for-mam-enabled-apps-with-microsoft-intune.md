@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében | Microsoft Intune
-description:
-keywords:
+title: "Végfelhasználói élmény a MAM használatát támogató alkalmazások esetében | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 7a42482dd56b25d867e2bb80dcd7ad4c3474b5e9
+
 
 ---
 
@@ -160,6 +153,7 @@ Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekints
 
 ### További információ
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+
 
 
 <!--HONumber=Jun16_HO2-->

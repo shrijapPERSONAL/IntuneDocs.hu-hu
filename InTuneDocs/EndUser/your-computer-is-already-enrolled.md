@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: A számítógépe már be van léptetve | Microsoft Intune
-description:
-keywords:
+title: "A számítógépe már be van léptetve | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 7333babab0453de1158d02027870b03f6e740e16
+
 
 ---
 
@@ -42,6 +35,7 @@ Ha szeretné törölni az eszköze regisztrációját, kövesse az eszköz típu
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

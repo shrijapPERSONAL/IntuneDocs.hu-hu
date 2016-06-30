@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: A Windows Team konfigurációs házirendjének beállításai | Microsoft Intune
-description:
-keywords:
+title: "A Windows Team konfigurációs házirendjének beállításai | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: b08d52289b94429b1328a7470469a7efdf4d46a7
+
 
 ---
 
@@ -44,6 +37,7 @@ Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beál
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

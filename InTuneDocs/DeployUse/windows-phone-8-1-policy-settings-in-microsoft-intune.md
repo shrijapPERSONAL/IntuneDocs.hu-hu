@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Windows Phone 8.1-es házirend-beállítások | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.1-es házirend-beállítások | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,6 +120,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
+> [!IMPORTANT]
 > [!IMPORTANT] Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1-eszközökhöz, hozzá kell adnia a Vállalati portál alkalmazást is a listához, ellenkező esetben azt a rendszer letiltja.
 
 
@@ -174,6 +168,7 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

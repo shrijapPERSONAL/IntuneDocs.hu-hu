@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Alkalmazások hozzáadása | Microsoft Intune
-description:
-keywords:
+title: "Alkalmazások hozzáadása | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: a3af42343f1ec2c5af3dda4828f8840bb76c4d5f
+ms.openlocfilehash: 2a76daee73f0dd3c6219a4cf42f9bb00fd83f257
+
 
 ---
 
@@ -95,6 +88,7 @@ A Windows 10 Mobile rendszerű eszközökön nem a Symantec által kiállított 
 ## További lépések 
 
 Ezután az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
+
 
 <!--HONumber=Jun16_HO2-->
 

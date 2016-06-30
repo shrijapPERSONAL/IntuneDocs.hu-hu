@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban | Microsoft Intune
-description:
-keywords:
+title: "Eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+
 
 ---
 
@@ -72,18 +65,19 @@ Az alábbi táblázat felsorolja a megfelelőségi szabályzatok egyes beállít
 
 Az egyes platformokon támogatott megfelelőségi beállításokkal kapcsolatos bővebb információkért válasszon az alábbi lehetőségek közül:
 > [!div class="op_single_selector"]
-- [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai Windows- és Windows Phone-eszközökhöz ](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [[!div class="op_single_selector"]](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Megfelelőségi szabályzat beállításai Android-eszközökhöz ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## További lépések
-[Megfelelőségi házirend üzembe helyezése és figyelése](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+## Megfelelőségi szabályzat beállításai Windows- és Windows Phone-eszközökhöz
+[További lépések](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### További információ
-[Bevezetés az eszközmegfelelőségi szabályzatokba](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+### Megfelelőségi házirend üzembe helyezése és figyelése
+[További információ](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

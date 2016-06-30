@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Az eszközéletciklus áttekintése | Microsoft Intune
-description:
-keywords:
+title: "Az eszközéletciklus áttekintése | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
+ms.openlocfilehash: 908c052484dc1532ade9576ab09070b18a85d71e
+
 
 ---
 
@@ -49,6 +42,7 @@ A modern informatikai világban az eszközök jogosulatlan hozzáférés elleni 
 
 ## Kivonás
 Az eszközök elvesztése, ellopása vagy szükségessé váló cseréje esetén, vagy ha a felhasználók más helyre vagy beosztásba kerülnek, az adott eszközt [ki kell vonni vagy törölni kell a tartalmát](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Ezt többféleképpen is megteheti, például alaphelyzetbe állíthatja az eszközt, megszüntetheti a felügyeletét vagy törölheti az eszközön található vállalati adatokat.
+
 
 
 <!--HONumber=Jun16_HO1-->

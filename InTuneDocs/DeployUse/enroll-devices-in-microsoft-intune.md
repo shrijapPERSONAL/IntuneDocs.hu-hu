@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Eszközök regisztrálása | Microsoft Intune
-description:
-keywords:
+title: "Eszközök regisztrálása | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 928b79530ac278f78356f8d1ef9f267077634b5b
+ms.openlocfilehash: e68e93fbf8bccceaf95e183a33049fdb35a9aae5
+
 
 ---
 
@@ -64,6 +57,7 @@ Az Intune ügyfélszoftverével felügyelt számítógépeken nem lehet szelekt�
 [Windows rendszerű számítógépek felügyelete az Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
