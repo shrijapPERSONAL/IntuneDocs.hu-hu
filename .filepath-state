@@ -883,9 +883,6 @@
   "bf298bace896a666d1f2992f2921ebf5a15f05f7": [
     "InTuneDocs\\EndUser\\using-your-ios-or-mac-os-x-device-with-intune.md"
   ],
-  "2273b5a9782a4e9e69f525555a10242a38c6efda": [
-    "InTuneDocs\\EndUser\\using-your-ios-or-mac-os-x-device-with-intune.md"
-  ],
   "f5170f9230812e4c4606dac5258cde1da6b99089": [
     "InTuneDocs\\EndUser\\using-your-windows-device-with-intune.md"
   ],
@@ -959,9 +956,6 @@
     "InTuneDocs\\GetStarted\\project-scope.md"
   ],
   "4c01b7cec6474153fcea465fc050ac419ca2eec5": [
-    "InTuneDocs\\GetStarted\\proof-of-concept.md"
-  ],
-  "3389175fc0cefb59c71686e5739caa4d315694ba": [
     "InTuneDocs\\GetStarted\\proof-of-concept.md"
   ],
   "9f3fcead3c41506734508d588ad180d17cc901ee": [
@@ -1544,9 +1538,6 @@
     "InTuneDocs\\DeployUse\\media\\intune-sa-3b-create-policy.PNG"
   ],
   "dd3369cf59ea972f1ecc4953881ddbbede9a99c8": [
-    "InTuneDocs\\DeployUse\\android-compliance-policy-settings-in-microsoft-intune.md"
-  ],
-  "c081f6a7db1f99ae54617d39ca76d45e29a08b61": [
     "InTuneDocs\\DeployUse\\android-compliance-policy-settings-in-microsoft-intune.md"
   ],
   "591023ea08b669ca69e8cac45e37b5fb2689ddcd": [
