@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a rendszergazdának | Microsoft Intune
-description:
-keywords:
+title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a rendszergazdának | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -42,7 +36,7 @@ A részletes naplózás bekapcsolása:
 3.  A **Diagnosztikai adatok** csoportban koppintson az **Adatok elküldése** gombra.
 
     > [!NOTE]
-    > **Csak Android 6.0 vagy újabb rendszerű eszközök esetében:** Amikor a **Send Data** (Adatok küldése) elemre koppint, a következő üzenetet látja: **Allow Company Portal to access photos, media, and files on your device?** (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?). 
+    > **Ha csak Android 6.0-s vagy újabb eszközöket használ:** Amikor az **Adatok küldése** elemre koppint, a következő üzenetet látja: **Engedélyezi a Vállalati portál számára az eszköz fényképeinek, médiafájljainak és fájljainak elérését?**. 
 
     Ez az üzenet félrevezető, mert a **Microsoft soha nem kéri le az eszközén lévő fényképeket, médiafájlokat vagy fájlokat.** A Google szabályozza az üzenet szövegét, így a Microsoft még akkor sem módosíthatja azt, ha az nem felel meg a valóságnak.  Amikor engedélyezi a hozzáférést, csak azt engedélyezi, hogy az eszköz adatnaplókat írjon az eszköz SD-kártyájára, így USB-kábelen keresztül áthelyezhetők lesznek a naplók.
 
@@ -54,6 +48,7 @@ A részletes naplózás bekapcsolása:
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

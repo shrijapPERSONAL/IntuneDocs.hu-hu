@@ -19,9 +19,9 @@
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
-# [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
