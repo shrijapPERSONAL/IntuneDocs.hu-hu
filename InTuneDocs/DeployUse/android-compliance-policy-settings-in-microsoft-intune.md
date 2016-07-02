@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Megfelelőségi szabályzat beállításai Android-eszközökhöz | Microsoft Intune
-description:
-keywords:
+title: "Megfelelőségi szabályzat beállításai Android-eszközökhöz | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+
 
 ---
 
@@ -73,6 +66,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 - **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
