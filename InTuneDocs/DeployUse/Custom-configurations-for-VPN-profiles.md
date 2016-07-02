@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Egyéni konfigurációk VPN-profilokhoz | Microsoft Intune
-description:
-keywords:
+title: "Egyéni konfigurációk VPN-profilokhoz | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
+ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+
 
 ---
 
@@ -44,7 +38,7 @@ VPN-profilok egyéni konfigurációk használatával hozhatók létre az Intune-
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A szabályzat telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
@@ -89,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-A beállítások használatával kapcsolatos bármilyen kérdés esetén, illetve az ezen beállítások működésével kapcsolatos további információkért olvassa el a titkosítási szolgáltató dokumentációját: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+A beállítások használatával kapcsolatos bármilyen kérdés esetén, illetve az ezen beállítások működésével kapcsolatos további információkért olvassa el a titkosítási szolgáltató dokumentációját: https://msdn.microsoft.com/hu-hu/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## URI-beállítások Android rendszerű alkalmazásonkénti VPN-hez a PulseSecure-ban
 ### EGYÉNI URI CSOMAGLISTÁHOZ 
@@ -117,6 +111,7 @@ Példák:
 (VPN-kapcsolatok a Microsoft Intune-ban) [vpn-connections-in-microsoft-intune.md]
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
