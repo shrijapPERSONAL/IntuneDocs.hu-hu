@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Riasztások által biztosított értesítések | Microsoft Intune
-description:
-keywords:
+title: "Riasztások által biztosított értesítések | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Az Intune riasztásainak aktív állapota a következők esetén szűnik meg:
 
 -   Ha 45 nap eltelt a riasztás generálása óta.
 
-> [!TIP] Ha ugyanazt a riasztást különböző operációs rendszerű eszközök is kiváltják, elképzelhető, hogy több verzió jelenik meg ugyanabból a riasztásból a riasztáslistában.
+> [!TIP]
+> Ha ugyanazt a riasztást különböző operációs rendszerű eszközök is kiváltják, elképzelhető, hogy több verzió jelenik meg ugyanabból a riasztásból a riasztáslistában.
 
 ### További információ
 [Figyelés és jelentéskészítés a Microsoft Intune-ban](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

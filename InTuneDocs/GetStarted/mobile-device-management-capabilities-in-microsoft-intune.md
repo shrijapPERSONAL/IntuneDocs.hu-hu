@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mobileszköz-kezelési képességek | Microsoft Intune
-description:
-keywords:
+title: "Mobileszköz-kezelési képességek | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # A Microsoft Intune mobileszköz-kezelési képességei
@@ -66,13 +60,14 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 
 |Képesség|Részletek|További információ|
 |--------------|-----------|--------------------|
-|Leltár és jelentéskészítés|Információkat kereshet a kezelt eszközökről és az azok által használt szoftverekről.|[A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|Leltár és jelentéskészítés|Információkat kereshet a kezelt eszközökről és az azok által használt szoftverekről.|[A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### További információ
-[A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei](./windows-pc-management-capabilities-in-microsoft-intune.md)
+[A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

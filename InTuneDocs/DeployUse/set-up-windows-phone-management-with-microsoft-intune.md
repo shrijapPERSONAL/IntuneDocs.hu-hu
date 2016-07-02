@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows 10 Mobile és Windows Phone rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása | Microsoft Intune
-description:
-keywords:
+title: "Windows 10 Mobile és Windows Phone rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
+ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+
 
 ---
 
@@ -61,6 +55,7 @@ A legtöbb esetben a felhasználók a Windows Áruházból telepíthetik a Váll
 Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati portált.  A felügyeleti konzol 2. és 3. lépése biztonsággal figyelmen kívül hagyható.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windowsos eszközök védelme többtényezős hitelesítéssel | Microsoft Intune
-description:
-keywords:
+title: "Windowsos eszközök védelme többtényezős hitelesítéssel | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ A fent felsorolt kiszolgálók mindegyikének meg kell felelnie a [Rendszerköve
 #### Többtényezős hitelesítés az Intune-ban
 Ha vállalata helyszíni informatikai infrastruktúrát használ, amelynek az Active Directory-tartományában be van állítva az Active Directory összevonási szolgáltatások (ADFS), beállíthatja a Multi-Factor Authentication szolgáltatást az összevonási kiszolgálón, majd engedélyezheti azt az Intune-ban történő regisztráláshoz. Az MFA szolgáltatásnak az Intune-beli konfigurálásával engedélyezi, hogy a felhasználók egyszer, a regisztráció során hitelesítsék magukat, majd ezt követően úgy férhessenek hozzá a vállalati erőforrásokhoz, hogy az MFA hitelesítési folyamatot nem kell minden alkalommal megismételniük.
 
->[!NOTE] A többtényezős hitelesítés felhasználói vagy csoportszinten követelhető meg az ADFS-kiszolgálón.  
+>[!NOTE]
+>Az MFA hitelesítés felhasználói vagy csoportszinten követelhető meg az ADFS-kiszolgálón.  
 
 #### Többtényezős hitelesítés az Intune nélkül
 Ha beállítja az MFA használatát az összevonási kiszolgálón, de nem engedélyezi az MFA használatát az Intune-beléptetéshez, a felhasználóknak minden olyan alkalommal használniuk kell a többtényezős hitelesítést, amikor vállalati erőforrásokhoz férnek hozzá (nem csak a regisztrációnál).
@@ -60,6 +55,7 @@ A Multi-Factor Authentication engedélyezéséről az ADFS-ben a [Kockázatkezel
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

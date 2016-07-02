@@ -6,6 +6,6 @@
 >Új dinamikus eszközcsoportok hozzárendelése az Azure Active Directoryban végezhető el a vállalati beléptetési profil neve alapján. Ez a folyamat biztosítja, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen úgy, hogy alkalmazva legyen rájuk a szabályzat, és telepítve az alkalmazások. További részletek a közeljövőben lesznek közzétéve.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
