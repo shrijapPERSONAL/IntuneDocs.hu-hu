@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: E-mail profilok hibaelhárítása | Microsoft Intune
-description:
-keywords:
+title: "E-mail profilok hibaelhárítása | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: 766c5d5f8e512ea1c36c73936b0ffb95977395ae
+
 
 ---
 
@@ -47,7 +41,7 @@ Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett 
 
 1.  Nyissa meg a Configuration Manager-konzol &gt; **Eszközök és megfelelőség** elemét.
 
-2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállításo** -&gt; **kHozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget.
+2.  Bontsa ki az **Áttekintés** -&gt; **Megfelelőségi beállítások** -&gt; **Hozzáférés a vállalati erőforrásokhoz** elemeket, és válassza az **E-mail profilok** lehetőséget.
 
 3.  Kattintson a jobb gombbal az e-mail-profilra, és nyissa meg a **Tulajdonságok** menüt.
 
@@ -57,6 +51,7 @@ Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett 
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

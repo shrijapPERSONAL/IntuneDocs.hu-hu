@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows-felhasználói alkalmazások letöltése | Microsoft Intune
-description:
-keywords:
+title: "Windows-felhasználói alkalmazások letöltése | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
+ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+
 
 ---
 
@@ -43,6 +37,7 @@ Ez a témakör ismerteti, hogy végfelhasználói hol és hogyan juthatnak hozz�
 [iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
