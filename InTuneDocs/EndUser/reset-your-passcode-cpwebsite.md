@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyéről | Microsoft Intune
-description:
-keywords:
+title: "Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyéről | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+
 
 ---
 
@@ -30,7 +24,8 @@ ms.suite: ems
 
 Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, az eszköz alaphelyzetbe állításához a [Vállalati portál webhelyét](http://portal.manage.microsoft.com) használhatja. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
-> [!NOTE] Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
+> [!NOTE] 
+> Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
 
 A jelszó alaphelyzetbe állítása:
 
@@ -67,6 +62,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 ### További információ
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Intune
-description:
-keywords:
+title: "A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -139,7 +133,8 @@ A számítógép eltávolításakor:
 
 -   Konfigurációjuktól függően az eltávolított számítógépek a Windows Server Update Services, a Windows Update vagy a Microsoft Update használatával továbbra is kaphatnak frissítéseket.
 
-    > [!IMPORTANT] Ha az ügyfélszoftver egy csoportházirend-objektummal (GPO) lett telepítve, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy megakadályozza a szoftver újratelepítését.
+    > [!IMPORTANT]
+    > Ha az ügyfélszoftver egy csoportházirend-objektummal (GPO) lett telepítve, akkor az ügyfélszoftver eltávolítása előtt el kell távolítania a csoportházirend-objektumot (GPO), hogy megakadályozza a szoftver újratelepítését.
 
     Ha az ügyfél eltávolítása nem sikerült, további segítséget itt találhat: [Az Endpoint Protection hibáinak elhárítása](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
@@ -158,11 +153,12 @@ Mielőtt szoftvereket telepítene egy felhasználónak, a felhasználót egy sz�
 
     -   Ha azt szeretné, hogy a számítógép továbbra is az aktuális felhasználóhoz legyen kapcsolva (ha van ilyen), válassza a **Mégse** lehetőséget.
 
-    -   Ha el szeretné távolítani az aktuális felhasználóhoz való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt; **OK** lehetőséget.
+    -   Ha el szeretné távolítani az aktuális felhasználóval való kapcsolatot (ha van ilyen), válassza a **Kapcsolat eltávolítása**&gt; **OK** lehetőséget.
 
     -   Ha a számítógépet egy új felhasználóhoz szeretné kapcsolni, válasszon ki egy felhasználót a **Minden felhasználó** listában. Erősítse meg, hogy a felhasználói adatok helyesek, majd kattintson az **OK** gombra.
 
-> [!TIP] Ha korlátozni szeretné a végfelhasználókat abban, hogy önmagukat számítógépekhez csatolhassák, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást A **Microsoft Intune-ügynök beállításai** házirendben.
+> [!TIP]
+> Ha korlátozni szeretné végfelhasználókat abban, hogy önmagukat számítógépekkel kössék össze, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást A **Microsoft Intune-ügynök beállításai** házirendben.
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -217,6 +213,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

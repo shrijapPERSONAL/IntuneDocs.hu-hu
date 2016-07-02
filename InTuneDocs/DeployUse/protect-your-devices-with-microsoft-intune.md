@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Eszközök védelme | Microsoft Intune
-description:
-keywords:
+title: "Eszközök védelme | Microsoft Intune"
+description: 
+keywords: 
 author: Robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c52448ab454a764be922319fb930a85a86c3996e
+ms.openlocfilehash: c8f833593e6a4606b0dd56373d4dc016c7ea0924
+
 
 ---
 
@@ -47,6 +41,7 @@ Az aktiválási zár funkcióval senki nem törölheti vagy aktiválhatja újra 
 Az Intune továbbra is támogatja az olyan Windows rendszerű számítógépek védelmét, amelyek nincsenek regisztrálva, de felügyeletüket az Intune ügyfélszoftvere biztosítja. Ha szeretné tudni, hogyan segítik ezek a szabályzatok a Windows rendszerű számítógépek védelmét, a [Szabályzatok használata az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md) című témakörből tájékozódhat.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
