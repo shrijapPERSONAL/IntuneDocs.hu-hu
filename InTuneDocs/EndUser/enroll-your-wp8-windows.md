@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8-eszköz regisztrálása az Intune-ban | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8-eszköz regisztrálása az Intune-ban | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ac887f3-52e1-41f0-97fe-21985e0573ab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 21e904766d1621b2182de8adde8142f5f7ad8e26
+
 
 ---
 
@@ -41,7 +35,7 @@ Windows Phone 8-eszköz regisztrálása
 
 Telepítése után a vállalati portál megjelenik az alkalmazáslistában.
 
-További segítségre van szüksége? Forduljon az IT-rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 ### További információ
 [Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md)</br>
@@ -49,6 +43,7 @@ További segítségre van szüksége? Forduljon az IT-rendszergazdához. Az elé
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
