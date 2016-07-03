@@ -1,26 +1,21 @@
 ---
-title: SCEP-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune
-description:
-keywords:
+title: "SCEP-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
+ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+
 ---
 # SCEP-tanúsítványinfrastruktúra konfigurálása
 Ez a témakör a tanúsítványprofilok létrehozáshoz és telepítéséhez szükséges infrastruktúrával kapcsolatos tudnivalókat ismerteti.
@@ -32,7 +27,7 @@ Ez a témakör a tanúsítványprofilok létrehozáshoz és telepítéséhez sz�
 -  **Hitelesítésszolgáltató** (CA): Olyan vállalati hitelesítésszolgáltató (CA), amely a Windows Server 2008 R2 vagy újabb rendszer vállalati verzióján fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx).
     Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
 I
--  **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkben tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására. Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására. Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: Az Intune felügyeleti konzollal töltse le a **Certificate Connector** (Tanúsítvány-összekötő) telepítőjét (**ndesconnectorssetup.exe**). Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt.
 -  **Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) használhat olyan kiszolgálót, amelyen a Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
@@ -42,11 +37,11 @@ I
  > [!NOTE]           
 > -    A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 >-  Ezenkívül a WAP-ot futtató kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
-A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. WAP-kiszolgálókkal kapcsolatos általános információ: [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx).|
+    A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. WAP-kiszolgálókkal kapcsolatos általános információ: [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### A hálózatra vonatkozó követelmények
 
-Az internet és a peremhálózat között engedélyezze a 443-as port használatát az összes gazdagépről/IP-címről az internetről az NDES-kiszolgálóra irányuló forgalomhoz.
+Az internet és a szegélyhálózat között engedélyezze a 443-as port használatát az összes internetes állomásról/IP-címről az NDES-kiszolgálóra irányuló forgalom számára.
 
 A peremhálózat és a megbízható hálózat között engedélyezze a tartomány eléréséhez szükséges összes portot és protokollt a tartományhoz csatlakozó NDES-kiszolgálón. Az NDES-kiszolgálónak el kell tudnia érnie a tanúsítványkiszolgálót, a DNS-kiszolgálókat, a Configuration Manager-kiszolgálókat és a tartományvezérlőket.
 
@@ -81,7 +76,7 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 
 ### 1. feladat – NDES szolgáltatásfiók létrehozása
 
-Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Ellenőrizze, hogy a felhasználó rendelkezik-e az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
+Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon róla, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
 
 
 
@@ -107,15 +102,18 @@ A feladat tartalma:
 
     -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
 
-        > [!IMPORTANT] iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és ellenőrizze, hogy **Az aláírás az eredet igazolása** lehetőség nincs-e kiválasztva.
+        > [!IMPORTANT]
+        > iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és győződjön meg arról, hogy **Az aláírás az eredet igazolása** lehetőség nincs kiválasztva.
 
     -   A **Biztonság** lapon adja hozzá az NDES szolgáltatásfiókot, és adjon meg hozzá **Regisztrálás** engedélyt a sablonhoz. Az SCEP-profilokat létrehozó Intune-rendszergazdáknak **olvasási** jogokkal kell rendelkezniük, hogy az SCEP-profilok létrehozása során megnyithassák a sablont.
     
-    > [!NOTE] A tanúsítványok visszavonásához az NDES szolgáltatásfiók a *Tanúsítványok kiállítása és kezelése* nevű jogot igényli a tanúsítványprofilok által használt összes tanúsítványprofilhoz.
+    > [!NOTE]
+    > A tanúsítványok visszavonásához az NDES szolgáltatásfiók a *Tanúsítványok kiállítása és kezelése* nevű jogosultságot igényli a tanúsítványprofilok által használt összes tanúsítványprofilhoz.
 
 3.  Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. Lehetősége van azonban arra is, hogy a hitelesítésszolgáltató konfigurálásával engedélyezze a kérelmezőnek egy másik érték megadását, amelyet aztán az Intune felügyeleti konzoljából tud megadni. Ha azt szeretné, hogy mindig a sablonban lévő érték legyen használva, hagyja ki ennek a lépésnek a hátralévő részét.
 
-    > [!IMPORTANT] Az iOS és a Mac OS X platform mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
+    > [!IMPORTANT]
+    > Az iOS és a Mac OS X platform mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
 
 Az alábbiakban egy meglévő konfigurációt példaként bemutató képernyőképeket láthat.
 
@@ -181,7 +179,7 @@ A feladat tartalma:
 
   2.  Vegye fel a kiszolgálón az NDES szolgáltatásfiókot az **IIS_IUSR** csoport tagjaként.
 
-   3.  Futtassa az alábbi parancsot az NDES szolgáltatásfiók egyszerű szolgáltatásnevének beállításához egy emelt jogosultságszintű parancssorból:
+   3.  Futtassa egy emelt jogosultságszintű parancssorból az alábbi parancsot az NDES szolgáltatásfiók egyszerű szolgáltatásnevének beállításához:
 
 `**setspn -s http/&lt;DNS name of NDES Server&gt; &lt;Domain name&gt;\&lt;NDES Service account name&gt;**`
 
@@ -236,11 +234,11 @@ A feladat tartalma:
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (decimális)|
 
 
-4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** -> **Kérésszűrés** -> **Szolgáltatás beállításainak szerkesztése** lehetőséget, majd módosítsa az **URL-cím maximális hossza** és a **Lekérdezés-karakterlánc maximális hossza** beállítások értéket a következőre: *65534*, ahogy az a képen is látható.
+4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** -> **Kérésszűrés** -> **Szolgáltatás beállításainak szerkesztése** lehetőséget, majd módosítsa az **URL-cím maximális hossza** és a **Lekérdezés-karakterlánc maximális hossza** beállítás értéket a következőre: *65534*, ahogy az a képen is látható.
 
     ![Maximális URL-hossz és lekérdezéshossz az IIS-ben](..\media\SCEP_IIS_max_URL.png) 
 
-5.  Indítsa újra a kiszolgálót. A módosítások véglegesítéséhez nem elég, ha a kiszolgálón lefuttatja az **iisreset** parancsot.
+5.  Indítsa újra a kiszolgálót. A módosítások véglegesítéséhez nem elég, ha a kiszolgálón futtatja az **iisreset** parancsot.
 6. Keresse meg a következőt: http://*FQDN*/certsrv/mscep/mscep.dll. Az alábbihoz hasonló NDES-oldalnak kell megjelennie:
 
     ![NDES teszt](..\media\SCEP_NDES_URL.png) 
@@ -260,7 +258,8 @@ A feladat tartalma:
 
     3.  Az **SSL-tanúsítvány**beállításnál adja meg a kiszolgálóhitelesítő tanúsítványt.
 
-        > [!NOTE] Ha az NDES-kiszolgáló külső és belső nevet is használ egyetlen hálózati címhez, akkor a kiszolgálóhitelesítő tanúsítvány **Tulajdonos neve** beállításának egy külső nyilvános kiszolgálónevet, a **Tulajdonos alternatív neve** beállításának pedig egy belső kiszolgálónevet kell tartalmaznia.
+        > [!NOTE]
+        > Ha az NDES-kiszolgáló külső és belső nevet is használ egyetlen hálózati címhez, akkor a kiszolgálóhitelesítő tanúsítvány **Tulajdonos neve** beállításának egy külső nyilvános kiszolgálónevet, a **Tulajdonos alternatív neve** beállításának pedig egy belső kiszolgálónevet kell tartalmaznia.
 
 2.  Kérelmezzen a belső vagy a nyilvános hitelesítésszolgáltatótól egy **ügyfél-hitelesítő** tanúsítványt, és telepítse az NDES-kiszolgálón. Ez lehet ugyanaz, mint a kiszolgálóhitelesítő tanúsítvány, ha a tanúsítvány mindkét használati módra fel van készítve.
 
@@ -311,7 +310,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Tanúsítvány-összekötő** &gt; **Tanúsítvány-összekötő letöltése** lehetőségre.
 
-2.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**) egy Windows Server 2012 R2-kiszolgálón. A telepítés során az NDES házirendmodulja és a KSZT (kapcsolatkérelem-házirendek) webszolgáltatás is települ. (A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.)
+2.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**) egy Windows Server 2012 R2-kiszolgálón. A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. (A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.)
 
     > [!NOTE]
     > Ha önálló Intune-hoz telepíti az NDES-t, akkor a CRP szolgáltatás automatikusan települ a tanúsítvány-összekötővel együtt. Az Intune szolgáltatásnak a Configuration Managerrel való használatakor a tanúsítványregisztrációs pontot különálló helyrendszerszerepkörként telepíti.
@@ -322,7 +321,8 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 
 4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
-    > [!TIP] Ha bezárta a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, az alábbi parancs futtatásával újra megnyithatja:
+    > [!TIP]
+    > Ha bezárná a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, akkor az alábbi parancs futtatásával nyithatja meg:
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -346,6 +346,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 Ezzel készen áll a tanúsítványprofilok konfigurálására, amelyről a következő témakörben olvashat: [Tanúsítványprofilok konfigurálása](Configure-Intune-certificate-profiles.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

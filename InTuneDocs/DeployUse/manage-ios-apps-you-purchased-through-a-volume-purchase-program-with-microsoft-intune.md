@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése| Microsoft Intune
-description:
-keywords:
+title: "Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése| Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ A licencek visszanyeréséhez módosítania kell a központi telepítési művel
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Ezt a lépést az alkalmazás telepítésének folytatása előtt kell megtennie.
 
-> [!TIP] A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazást telepítve van.
+> [!TIP]
+> A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazás telepítve lett.
 
 Ha nincsenek további elérhető licencek, a telepítés meghiúsul.
 
 ## Apple VPP-alkalmazások figyelése
 Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítették, és hány licencet használtak fel.
 
-> [!TIP] Az alkalmazás **szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
+> [!TIP]
+> Az alkalmazás **Szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
 
 ### További információ
 [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
