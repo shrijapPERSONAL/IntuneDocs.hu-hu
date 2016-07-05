@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Az iOS MAM-szabályzat beállításai | Microsoft Intune
-description:
-keywords:
+title: "Az iOS MAM-szabályzat beállításai | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 066d7931904ec3c0a618c79a84dba7f11e58c550
+
 
 ---
 
@@ -117,6 +110,7 @@ Az iOS-eszközökön engedélyezheti a felhasználóknak, hogy számjegyes PIN-k
   **Alapértelmezett érték = 90 nap**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
