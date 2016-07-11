@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az eszközkezelés módjának kiválasztása | Microsoft Intune
-description:
-keywords:
+title: "Az eszközkezelés módjának kiválasztása | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+
 
 ---
 
@@ -75,16 +69,17 @@ Akkor fontolja meg az Intune-számítógépügyfél használatát, ha a követke
 ## Felügyelet az Exchange ActiveSync segítségével
 Az Exchange ActiveSync segítségével is felügyelheti az eszközöket. Ehhez telepítenie kell az intézményi összekötőt, vagy a beépített Service to Service összekötővel kell kapcsolódnia az Exchange Serverhez.
 
-A helyszíni összekötő telepítésére vonatkozó hardver- és a szoftverkövetelményekről [A helyszíni összekötőre vonatkozó követelmények](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) című témakörben olvashat.
+A helyszíni összekötő telepítésére vonatkozó hardver- és a szoftverkövetelményekről [A helyszíni összekötőre vonatkozó követelmények](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect) című témakörben olvashat.
 
-További információt a helyszíni összekötő vagy a szolgáltatások közötti összekötőnek az Exchange-dzsel történő használatáról a [Mobileszközök felügyeletének beállítása az Exchange ActiveSynckel a Microsoft Intune-ban](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) című témakörben találhat.
+További információk az On-Premises Connector vagy a Service to Service Connector összekötőnek az Exchange-dzsel történő használatáról: [Mobileszköz-kezelés az Exchange ActiveSync és a Microsoft Intune használatával](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## További lépések
-Az előzőekben megismert néhány funkciót, amelyeket akkor használhat, ha regisztrálja eszközét a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal. Következő lépésként [regisztrálja eszközeit](../deploy-use/enroll-devices-in-microsoft-intune). Az eszközök regisztrálását követően élhet az előnyökkel, amelyeket az ebben a témakörben tárgyalt funkciók biztosítanak. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Az előzőekben megismert néhány funkciót, amelyeket akkor használhat, ha regisztrálja eszközét a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal. Következő lépésként [regisztrálja eszközeit](/intune/deploy-use/enroll-devices-in-microsoft-intune). Az eszközök regisztrálását követően élhet az előnyökkel, amelyeket az ebben a témakörben tárgyalt funkciók biztosítanak. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

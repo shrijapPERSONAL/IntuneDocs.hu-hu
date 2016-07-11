@@ -1,6 +1,6 @@
 ---
-title: "Az eszközéletciklus áttekintése | Microsoft Intune"
-description: 
+title: "A mobileszköz-kezelési életciklus áttekintése | Microsoft Intune"
+description: "Ismerje meg, hogyan segíti az Intune az eszközök kezelését a teljes életciklusuk alatt a regisztrációtól a beállításon át a végső kivonásig."
 keywords: 
 author: robstackmsft
 manager: jeffgilb
@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
-ms.openlocfilehash: 908c052484dc1532ade9576ab09070b18a85d71e
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
 
 
 ---
 
 # A mobileszköz-kezelés (MDM) életciklusának áttekintése
 
-Az Intune-eszköz életciklusa az eszköz regisztrálásával kezdődik, majd számos lépésen áthaladva addig tart, amikor már nincs szükség az eszközre.
+Minden Ön által kezelt eszköz rendelkezik úgynevezett *életciklussal*. Az Intune segíthet ennek az életciklusnak a kezelésében a regisztrációtól az eszköz kivonásáig, amikor már nincs rá szükség:
 
 ![Az eszközök életciklusa](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -45,6 +45,6 @@ Az eszközök elvesztése, ellopása vagy szükségessé váló cseréje esetén
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

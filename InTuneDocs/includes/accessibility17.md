@@ -1,5 +1,5 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">Ha további információt szeretne arról, hogy miként segítik a számítógépes kisegítő technológiák a fogyatékkal élők életét, keresse fel a <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><linkText>Microsoft Accessibility webhelyet</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=8431</linkUri></externalLink>.</Token>
+<Token xmlns:xlink="http://www.w3.org/1999/xlink">Ha további információkat szeretne arról, hogyan támogatják a számítógépes kisegítő lehetőségek a fogyatékkal élők életminőségének javítását, látogasson el a <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><linkText>Microsoft Accessibility</linkText><linkUri>http://go.microsoft.com/fwlink/?LinkId=8431</linkUri></externalLink> (Kisegítő lehetőségek) webhelyre.</Token>
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

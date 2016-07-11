@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 211543b75e2bcda85cd74ab34c254d70f036eebd
-ms.openlocfilehash: e449467467394e530b56209bad3c1264d66ca7bd
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
 
 
 ---
@@ -27,7 +28,8 @@ A mobilalkalmazás-kezelési házirendek a következőket támogatják:
 
 -   Az iOS 7-es vagy újabb verzióját futtató eszközök
 
-> [!TIP] A mobilalkalmazás-kezelési szabályzatok az Intune-ban regisztrált eszközökre alkalmazhatók.
+> [!TIP]
+> A mobilalkalmazás-kezelési szabályzatok az Intune-ban regisztrált eszközökre alkalmazhatók.
 >
 > Ha olyan eszközökre vonatkozóan szeretne alkalmazáskezelési szabályzatokat létrehozni, amelyeket nem az Intune felügyel, olvassa el a következő cikket: [Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal a Microsoft Intune segítségével](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -39,9 +41,9 @@ Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmaz�
 
 -   **Becsomagolt alkalmazás használata** – Alkalmazások, amelyek abból a célból lettek újracsomagolva a **Microsoft Intune alkalmazásburkoló eszközzel**, hogy tartalmazzák az App SDK-t. Ez az eszköz általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használatos. Nem használható az alkalmazás-áruházból letöltött alkalmazások feldolgozásához. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Saját alkalmazás írása, amely tartalmazza az Intune App SDK-t** – Az Intune App SDK lehetővé teszi alkalmazáskezelési funkciók beépítését a készített alkalmazásokba. További információ: [Az Intune App SDK áttekintése](/develop/intune-app-sdk)
+- **Saját alkalmazás írása, amely tartalmazza az Intune App SDK-t** – Az Intune App SDK lehetővé teszi alkalmazáskezelési funkciók beépítését a készített alkalmazásokba. További információ: [Az Intune App SDK áttekintése](/intune/develop/intune-app-sdk)
 
-Ha segítségre van szüksége az alkalmazásburkoló eszköz és az Intune App SDK közötti választáshoz, olvassa el a következőt: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+Ha segítségre van szüksége az alkalmazásburkoló eszköz és az Intune App SDK közötti választáshoz, olvassa el a következőt: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 Néhány kezelt alkalmazás, például az iOS és az Android rendszer Outlook alkalmazása támogatja a **többszörös identitást**. Ez azt jelenti, hogy az Intune csak az alkalmazásban lévő vállalati fiókokra vagy adatokra alkalmazza a felügyeleti beállításokat.
 
@@ -53,7 +55,8 @@ Az Outlook alkalmazás használata esetén például:
 
 -   A használt vállalati fióknak egyeznie kell azzal a fiókkal, amelyet az eszköz az Intune-nal végzett regisztrációhoz használt.
 
-> [!TIP] Ha a Configuration Managerrel használja az Intune-t, olvassa el az [Alkalmazások vezérlése mobilalkalmazás-felügyeleti szabályzatokkal a Configuration Managerben](https://technet.microsoft.com/library/mt131414.aspx) című témakört.
+> [!TIP]
+> Ha a Configuration Managerrel használja az Intune-t, olvassa el az [Alkalmazások vezérlése mobilalkalmazás-felügyeleti szabályzatokkal a Configuration Managerben](https://technet.microsoft.com/library/mt131414.aspx) című témakört.
 
 ## Alkalmazás létrehozása és telepítése mobilalkalmazás-kezelési házirenddel
 
@@ -145,7 +148,8 @@ Az alkalmazás telepítésekor gondoskodjon arról, hogy a **Mobilalkalmazás-ke
 
 További információt az [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md) című témakörben találhat.
 
-> [!IMPORTANT] Az iOS 7.1-es verziójánál korábbi operációs rendszereket futtató eszközök esetében a társított házirendeket a rendszer nem távolítja el, amikor az alkalmazást eltávolítják.
+> [!IMPORTANT]
+> Az iOS 7.1-es verziójánál korábbi operációs rendszereket futtató eszközök esetén a társított házirendek nem lesznek eltávolítva az alkalmazás eltávolításakor.
 >
 > Ha az eszközt kiléptetik az Intune-ból, a rendszer nem távolítja el a házirendeket az alkalmazásokból; az alkalmazások, amelyekre házirendeket alkalmaztak, eltávolítás és újratelepítés után is megőrzik a házirend-beállításokat.
 
@@ -156,7 +160,8 @@ Ilyenkor meg kell kérnie a felhasználót, hogy manuálisan távolítsa el a ne
 
 Az iOS 9-es vagy újabb verziójával futó eszközök esetében az Intune automatikusan engedélyt kér a felhasználótól a meglévő alkalmazás felügyeletének átvételére. Ha az engedélyt megadják, az alkalmazás az Intune felügyelete alá kerül, és az összes Ön által hozzárendelt mobilalkalmazás-felügyeleti házirend érvényes lesz rá.
 
-> [!TIP] Ha az eszköz felügyelt módban van, az Intune a felhasználó engedélyének kikérése nélkül átveszi a meglévő alkalmazás felügyeletét.
+> [!TIP]
+> Ha az eszköz felügyelt módban van, az Intune a felhasználó engedélyének kikérése nélkül átveszi a meglévő alkalmazás felügyeletét.
 
 ## **5. lépés:** Az alkalmazás telepítésének figyelése.
 Miután létrehozott és telepített egy mobilalkalmazás-kezelési házirenddel társított alkalmazást, a következő eljárásokkal figyelheti az alkalmazást, és feloldhatja az esetleges házirendütközéseket.
@@ -192,6 +197,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

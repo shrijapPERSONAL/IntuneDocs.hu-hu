@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Alkalmazás bevezetése | Microsoft Intune
-description:
-keywords:
+title: "Alkalmazás bevezetése | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
 # Alkalmazás bevezetése
-Ez a témakör konkrét javaslatokkal szolgál az alkalmazásoknak a Microsoft Intune-ban, fázisokra bontva történő bevezetéséhez. A bevezetési fázisokkal kapcsolatos általános információkért olvassa el [A Microsoft Intune üzembe helyezésének bevezetési fázisai](rollout-phases-for-microsoft-intune-deployment.md) című cikket..
+Ez a témakör konkrét javaslatokkal szolgál az alkalmazásoknak a Microsoft Intune-ban, fázisokra bontva történő bevezetéséhez. A bevezetési fázisokkal kapcsolatos általános információkért olvassa el [A Microsoft Intune üzembe helyezésének bevezetési fázisai](rollout-phases-for-microsoft-intune-deployment.md) című cikket.
 
 ### Az alkalmazás telepítésének fázisai
 Az alkalmazás telepítésének fázisai a következők:
@@ -48,13 +42,16 @@ Az alkalmazás telepítésének fázisai a következők:
 
 -   Az alkalmazás megfelelősége a felhasználók és az eszközeik számára (minden várhatóan használt operációs rendszer esetén).
 
--   Ellenőrizze, hogy a kiválasztott alkalmazás telepítőjét támogatja-e az Intune alkalmazásterjesztés, az [Alkalmazások hozzáadása Microsoft Intune-nal](/intune/deploy-use/add-apps) című cikkben leírtak szerint.
+-   Ellenőrizze, hogy a kiválasztott alkalmazás telepítőjét támogatja-e az Intune-alkalmazásterjesztés, az [Alkalmazások hozzáadása Microsoft Intune-nal](/intune/deploy-use/add-apps) című cikkben leírtak szerint.
 
 -   Győződjön meg arról, hogy telepítve vannak-e az alkalmazásterjesztési előfeltételek. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
 
 -   Állapítsa meg, hogy az alkalmazástípust támogatja-e az Intune.
 
 -   Ellenőrizze, hogy van-e elegendő szabad terület a felhőalapú tárhelyen az alkalmazás feltöltéséhez. A további tárterület megvásárlásával kapcsolatos útmutató az [Alkalmazások hozzáadása Microsoft Intune-nal](/intune/deploy-use/add-apps) című cikkben található.
+
+> [!NOTE]           
+> A bevezetési folyamathoz segítségképpen letöltheti ezt a [mobilalkalmazásokhoz készült tervezősablont](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59).
 
 ## A koncepció igazolása
 A koncepció igazolására szolgáló fázisban az alkalmazás telepítésének tesztelését tesztkörnyezetben, szigorúan csak tesztelési célokra beállított eszközökön és felhasználókon szabad végezni.
@@ -97,6 +94,7 @@ A próbaüzem során tesztfelhasználók és -eszközök kis csoportja számára
 [Alkalmazástelepítéssel kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

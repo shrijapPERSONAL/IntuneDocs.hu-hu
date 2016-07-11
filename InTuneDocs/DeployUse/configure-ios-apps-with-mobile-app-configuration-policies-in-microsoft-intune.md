@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével | Microsoft Intune
-description:
-keywords:
+title: "iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ A mobilalkalmazás-konfigurációs házirendek segítséget nyújthatnak ezeknek
 
 Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és eszközök számára. Ehelyett a házirendet társítani kell egy alkalmazáshoz, majd telepíteni kell az alkalmazást. A házirend-beállítások akkor lesznek felhasználva, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
-> [!TIP] Ez a szabályzattípus jelenleg csak az iOS 7.1-es és újabb verzióit futtató eszközökön érhető el, és a következő alkalmazástelepítés-típusokat támogatja:
+> [!TIP]
+> Ez a házirendtípus jelenleg csak az iOS 7.1-es és újabb verzióit futtató eszközökön érhető el, és a következő alkalmazástelepítés-típusokat támogatja:
 > 
 > -   **Felügyelt iOS-alkalmazás az App Store-ból**
 > -   **Alkalmazáscsomag az iOS számára**
@@ -62,7 +57,8 @@ Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és 
 
 4.  Az oldal **Mobilalkalmazás-konfigurációs házirend** részében írja vagy illessze be a mezőbe a kívánt alkalmazáskonfigurációs beállításokat tartalmazó XML-tulajdonságlistát.
 
-    > [!TIP] Az XML-tulajdonságlistákkal kapcsolatos további információkért tekintse meg az iOS Developer Library [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)  (Az XML-tulajdonságlisták ismertetése) című témakörét.
+    > [!TIP]
+    > Az XML-tulajdonságlistákkal kapcsolatos további információért tekintse meg az iOS Developer Library [Understanding XML Property Lists ](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Az XML-tulajdonságlisták ismertetése) című témakörét.
     > 
     > Az XML-tulajdonságlista formátuma a konfigurálni kívánt alkalmazás függvényében eltérő. A használandó formátummal kapcsolatban forduljon az alkalmazás szállítójához.
     > 
@@ -104,7 +100,8 @@ Ezután a megszokott módon haladjon tovább az alkalmazás telepítésével és
 
 Amikor a telepített alkalmazást futtatják egy eszközön, akkor az a mobilalkalmazás-konfigurációs házirendben megadott beállításokkal fog futni.
 
-> [!TIP] Ha egy vagy több mobilalkalmazás-konfigurációs szabályzatnál ütközés lép fel, a rendszer egyik szabályzatot sem tartatja be, az ütközésről pedig jelentés készül az Intune felügyeleti konzoljának **Irányítópult** területén.
+> [!TIP]
+> Ha egy vagy több mobilalkalmazás-konfigurációs szabályzatnál ütközés lép fel, a rendszer egyik szabályzatot sem tartatja be, az ütközésről pedig jelentés készül az Intune felügyeleti konzoljának **Irányítópult** területén.
 
 ## Mobilalkalmazás-konfigurációs XML-fájl példaformátuma
 
@@ -139,6 +136,7 @@ Mobilalkalmazás-konfigurációs fájl létrehozásakor a következő értékek 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

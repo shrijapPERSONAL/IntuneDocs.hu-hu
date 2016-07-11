@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az Android MAM-szabályzat beállításai | Microsoft Intune
-description:
-keywords:
+title: "Az Android MAM-szabályzat beállításai | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 
     **Alapértelmezett érték = Igen**
 - **Alkalmazásadatok titkosítása:** Válassza az **Igen** lehetőséget a titkosítás engedélyezéséhez. Amikor engedélyezve van ez a beállítás, a mobilalkalmazás-felügyeleti szabályzattal társított alkalmazások esetén a titkosításról a Microsoft gondoskodik. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során. Az eszköz tárhelyén található tartalom mindig titkosított marad.
-  >[!NOTE] A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány
+  >[!NOTE]
+  >A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány
 
   **Alapértelmezett érték = Igen**
 
-- **ContactSyncDisabled** (Névjegy-szinkronizálás letiltása): Ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával, válassza az **Igen** lehetőséget. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.<br/>Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
+- **Névjegy-szinkronizálás letiltása:** Válassza az **Igen** lehetőséget, ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.<br/>Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
 
   **Alapértelmezett érték = Igen**
 
@@ -100,6 +95,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 - **Képernyőfelvétel és az Android Assistant alkalmazás tiltása (Android 6 Marshmallow vagy újabb):** Válassza az **Igen** lehetőséget a képernyőfelvétel-készítés és az eszköz **Android Assistant**-funkcióinak letiltásához az alkalmazás használatakor.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

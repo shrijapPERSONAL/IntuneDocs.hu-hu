@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal | Microsoft Intune
-description:
-keywords:
+title: "Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**Szinkronizálás ütemezése** (Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange Server kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
     |**SSL használata**|Biztonságos szoftvercsatornás (SSL) kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange Server kiszolgálóval való kommunikációhoz. <br /><br />A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange Serverre.|
     |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.| 
-    |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|Az e-mailek natív e-mail alkalmazásban történő megnyitásának engedélyezése külső alkalmazások számára, például fájlok e-mailhez való csatolásához.|
+    |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|A felhasználók kiválaszthatják ezt a profilt alapértelmezett e-mail-küldési fiókként, és engedélyezett a külső alkalmazások számára az e-mailek natív e-mail alkalmazásban történő megnyitása, például fájlok e-mailhez való csatolásához.|
 
-    > [!IMPORTANT] Ha már telepített egy e-mail-profilt, de szeretné megváltoztatni az **állomás** vagy az **E-mail cím** beállítás értékét, akkor törölje a meglévő e-mail-profilt, majd hozzon létre egy újat a kívánt értékekkel.
+    > [!IMPORTANT]
+    > Ha már telepített egy e-mail-profilt, de szeretné megváltoztatni az **állomás** vagy az **E-mail cím** beállítás értékét, akkor törölje a meglévő e-mail-profilt, majd hozzon létre egy újat a kívánt értékekkel.
 
 4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
 
@@ -103,17 +98,19 @@ Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A szabályzat telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
 
-> [!NOTE] Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz.
+> [!NOTE]
+> Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

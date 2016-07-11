@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: a3af42343f1ec2c5af3dda4828f8840bb76c4d5f
-ms.openlocfilehash: 2a76daee73f0dd3c6219a4cf42f9bb00fd83f257
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
 
 
 ---
@@ -76,6 +76,32 @@ A külső hivatkozásokon alapuló alkalmazásokat nem tárolja a rendszer az In
 Az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését teszi lehetővé. [Mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is társíthat [kompatibilis alkalmazásokhoz](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
 > [!TIP] A mobileszközökre vonatkozó beállítások csak azt követően válnak elérhetővé, hogy a [Mobileszköz-kezelő szolgáltató megadása beállítást](get-ready-to-enroll-devices-in-microsoft-intune.md) az Intune-ra állította.
 
+## Az Intune Software Publisher
+Ha alkalmazásokat vesz fel vagy módosít a Microsoft Intune felügyeleti konzol használatával, elindul a **Microsoft Intune Software Publisher**. Ebben a közzétételi eszközben meg kell adnia és konfigurálnia kell egy szoftvertelepítő-típust, amely feltölti az Intune felhőtárhelyén tárolni kívánt számítógép- vagy mobileszköz-alkalmazásokat, illetve kapcsolódik egy online áruházhoz vagy webalkalmazáshoz.
+
+### Követelmények
+Mielőtt megkezdené a Microsoft Intune Software Publisher használatát, telepítenie kell a [Microsoft .NET-keretrendszer 4.0](https://www.microsoft.com/download/details.aspx?id=17851) teljes verzióját. Előfordulhat, hogy a Software Publisher csak akkor nyílik meg megfelelően, ha a telepítést követően újraindítja a számítógépet.
+
+## Felhőtárhely
+A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazás (például az üzletági alkalmazások) be vannak csomagolva, és fel vannak töltve a Microsoft Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A fizetett előfizetés 20 gigabájtot (GB) biztosít, illetve lehetőséget kínál további tárhely vásárlására.
+
+A **Felügyelet** munkaterület **Tárhely kihasználtsága** csomópontjában megtekintheti, hogy mennyi helyet használ jelenleg, illetve további tárhelyet is vásárolhat.
+
+A további felhőalapú Intune-tárhely vásárlására az alábbi szabályok vonatkoznak:
+
+-   További tárterületet csak akkor vásárolhat, ha a szolgáltatás fizetős verzióját használja, és aktív az előfizetése.
+
+-   Csak a Microsoft Online Service számlázási vagy globális rendszergazdái vásárolhatnak további tárterületet az Office 365 felügyeleti portálján. Ilyen rendszergazdák hozzáadásához, törléséhez vagy kezeléséhez globális rendszergazdának kell lennie, és be kell jelentkeznie az Office 365 felügyeleti portáljára.
+
+-   Ha Ön mennyiségi licenccel rendelkező ügyfelünk, és a Nagyvállalati Szerződés keretében fizetett elő az Intune-ra vagy a Microsoft Intune-bővítményre, az árakról és a tárterület-vásárlási lehetőségekről a Microsoft helyi ügyfélmenedzserénél érdeklődhet.
+
+#### A felhőtárhelyre vonatkozó követelmények
+
+-   Győződjön meg róla, hogy az összes alkalmazás telepítési fájljai ugyanabban a mappában vannak-e.
+
+-   A feltöltött fájlok legfeljebb 2 GB méretűek lehetnek.
+
+
 ## Az univerzális Windows-platformra épülő alkalmazások támogatása
 A Windows 10-es számítógépekre közvetlen telepítésre szolgáló kulcs nélkül is telepíthetők az üzletági alkalmazások. A közvetlen telepítés azonban csak akkor lehetséges, ha a **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** beállításkulcs értéke **1**.
 
@@ -90,6 +116,7 @@ A Windows 10 Mobile rendszerű eszközökön nem a Symantec által kiállított 
 Ezután az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

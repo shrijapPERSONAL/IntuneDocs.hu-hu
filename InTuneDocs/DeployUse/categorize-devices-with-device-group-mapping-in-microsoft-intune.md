@@ -10,10 +10,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: fcc2e417766a4a7b6fcbe3a7831d0d15c765ca81
+ms.sourcegitcommit: bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a
+ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
 
 
 ---
@@ -39,12 +39,12 @@ A kategóriákat tetszőlegesen választhatja meg.
 
 ## Az eszközcsoport-leképezések konfigurálása
 1. Minden használni kívánt eszközcsoporthoz hozzon létre egy Intune-eszközcsoportot. A csoportok létrehozásával kapcsolatban további információt a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) című témakörben találhat.
-2. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** elemre.
-3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** elemet, majd kattintson az **Eszközcsoport-leképezés** elemre.
+2. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
+3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** csomópontot, majd válassza az **Eszközcsoport-leképezés** elemet.
 4. Az **Eszközcsoport-leképezés** oldalon engedélyezze az eszközcsoport-leképezés funkciót.
-5. Új leképezési szabály felvételéhez kattintson a **Hozzáadás** elemre.
-6. Az **Eszközcsoport-leképezési szabály hozzáadása** párbeszédpanelen adja meg a létrehozni kívánt kategória nevét, majd a legördülő listából válassza ki azt az eszközgyűjteményt, amelyhez párosítani szeretné ezt a kategóriát. Ha elkészült, kattintson a **Hozzáadás** gombra.
-7. Ha befejezte a kategóriák és a csoportok hozzáadását, kattintson a **Mentés** gombra.
+5. Új leképezési szabály felvételéhez válassza a **Hozzáadás** elemet.
+6. Az **Eszközcsoport-leképezési szabály hozzáadása** párbeszédpanelen adja meg a létrehozni kívánt kategória nevét, majd a legördülő listából válassza ki azt az eszközgyűjteményt, amelyhez párosítani szeretné ezt a kategóriát. Ha elkészült, válassza a **Hozzáadás** gombot.
+7. Ha befejezte a kategóriák és a csoportok hozzáadását, válassza a **Mentés** gombot.
 
 Ezt követően amikor a felhasználók regisztrálják eszközüket, meg fog jelenni számukra az Ön által beállított kategóriák listája. A kategória kiválasztását és a regisztráció befejezését követően a rendszer a kiválasztott kategóriának megfelelő eszközcsoporthoz adja az eszközüket.
 
@@ -52,6 +52,6 @@ Ezt követően amikor a felhasználók regisztrálják eszközüket, meg fog jel
 [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

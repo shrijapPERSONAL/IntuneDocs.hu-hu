@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Szabályzat bevezetése | Microsoft Intune
-description:
-keywords:
+title: "Szabályzat bevezetése | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # Szabályzat bevezetése
 Ez a témakör konkrét javaslatokkal szolgál a Microsoft Intune szabályzatainak fázisokra bontott bevezetéséhez. Ugyanez a módszer alkalmazható az Intune új központi telepítésében használt első szabályzatokra és a meglévő telepítéshez hozzáadott szabályzatokra is.
 
-A bevezetés fázisokkal kapcsolatos általános információkért olvassa el [A Microsoft Intune üzembe helyezésének bevezetési fázisai](rollout-phases-for-microsoft-intune-deployment.md) című cikket..
+A bevezetési fázisokkal kapcsolatos általános információkért olvassa el [A Microsoft Intune üzembe helyezésének bevezetési fázisai](rollout-phases-for-microsoft-intune-deployment.md) című cikket.
 
 ### A szabályzat bevezetésének fázisai
 A szabályzat bevezetésének fázisai a következők:
@@ -61,7 +55,7 @@ Az Intune-szabályzat telepítési hatókörének meghatározása:
 ## A koncepció igazolása
 A koncepció igazolásának fázisában a szabályzat telepítésének tesztelését tesztkörnyezetben, szigorúan csak tesztelési célokra beállított eszközökön és felhasználókon szabad végezni.
 
--   Célszerű, ha a segélyszolgálat is részt vesz ebben a fázisban, hogy megismerje a próbaüzem és az éles telepítés során esetleg felmerülő problémákat. Hibaelhárítási információk a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) című cikkben találhatók..
+-   Célszerű, ha a segélyszolgálat is részt vesz ebben a fázisban, hogy megismerje a próbaüzem és az éles telepítés során esetleg felmerülő problémákat. Hibaelhárítási információk a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) című cikkben találhatók.
 
 -   A folyamatnak ezen a pontján kommunikációs terveket kell kidolgozni a próbaüzem és az éles üzem felhasználóinak számára. A tervnek mindenképp tartalmaznia kell, hogy eszközök milyen működésmódjának és mikor kell megváltoznia, a módosítás üzleti célját, a teendőket arra az esetre, ha a felhasználók vagy az informatikai munkatársak problémákat tapasztalnak, továbbá az önsegítő információkat és a segélyszolgálattal való kapcsolatfelvétel módját.
 
@@ -102,6 +96,7 @@ A próbaüzem során tesztfelhasználók és -eszközök kis csoportja számára
 [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Alkalmazások hozzáadása mobileszközökhöz | Microsoft Intune"
-description: 
+title: "Alkalmazások hozzáadása beléptetett eszközökhöz | Microsoft Intune"
+description: "Az alkalmazást a telepítése előtt hozzá kell adnia az Intune-hoz. Ezt követően érhető el az Intune-konzolon, ahol telepítheti és kezelheti."
 keywords: 
 author: robstackmsft
 manager: jeffgilb
@@ -10,17 +10,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 6a232475ebd6fb301ba04c00d2c12b7111fa8976
-ms.openlocfilehash: eb735cdbaf574104ad090c770fcc9f1f18a54d30
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
 
 
 ---
 
-# Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban
+# Alkalmazások hozzáadása beléptetett eszközökhöz az Intune-ban
 
-Ebből a témakörből megtudhatja, hogyan adhatja hozzá a kívánt alkalmazásokat az Intune-hoz a központi telepítésük előtt.
+Mielőtt központilag telepíthetne vagy kezelhetne egy alkalmazást, hozzá kell adnia azt a Microsoft Intune-hoz. Ez a témakör bemutatja, hogyan vehet fel alkalmazásokat a beléptetett eszközökhöz.
 
 
 > [!IMPORTANT]
@@ -29,14 +29,15 @@ Ebből a témakörből megtudhatja, hogyan adhatja hozzá a kívánt alkalmazás
 ## Az alkalmazás hozzáadása
 Az Intune Software Publisherrel konfigurálhatók az alkalmazás tulajdonságai, és (ha lehetséges) az alkalmazás feltölthető a felhőbeli tárhelyre, a következő eljárással:
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások felvétele** elemre az Intune Software Publisher elindításához.
+1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet az Intune Software Publisher elindításához.
 
-    > [!TIP] Előfordulhat, hogy a Software Publisher elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
+    > [!TIP]
+    > Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
 
 2.  A Software Publisher **Szoftvertelepítés** lapján, a **Válassza ki, hogyan legyen elérhető a szoftver az eszközök számára** beállításnál válasszon a következő lehetőségek közül:
     - **Szoftvertelepítő**, az **.msi** vagy **.exe** kiterjesztésű alkalmazásokhoz, adja meg a következőt:
         - **Válassza ki a szoftver telepítőjének fájltípusát** – Ez adja meg a telepítendő szoftver típusát. Ha például iOS-alkalmazást szeretne telepíteni, válassza a **Csomag hozzáadása iOS-hez (&#42;.ipa-fájl)** lehetőséget.
-        - **Adja meg a szoftver telepítőfájljainak helyét** – Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
+        - **Adja meg a szoftver telepítőfájljainak helyét** – Adja meg a telepítőfájlok helyét, vagy válassza a **Tallózás** elemet a kívánt hely listából való kiválasztásához.
         - **A mappában található további fájlokkal és almappákkal együtt** – Csak **Windows Installer** fájltípus esetén.<br>A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.<br>Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
 
   -   **Külső hivatkozás**, olyan alkalmazások esetén, amelyeket alkalmazás-áruházra mutató hivatkozás megadásával kíván létrehozni, adja meg a következőt:
@@ -57,7 +58,8 @@ Az Intune Software Publisherrel konfigurálhatók az alkalmazás tulajdonságai,
 
 3.  A **Szoftver leírása** lapon konfigurálja a következő beállításokat:
 
-    > [!TIP] A telepítő típusától függően előfordulhat, hogy az alábbi értékek némelyikét a rendszer automatikusan megadja.
+    > [!TIP]
+    > A telepítő típusától függően előfordulhat, hogy az alábbi értékek némelyikét a rendszer automatikusan megadja.
 
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
     - **Név** – Itt adhatja meg az alkalmazásnak a vállalati portálon megjelenő nevét.<br>Ellenőrizze, hogy a megadott alkalmazásnevek egyediek-e. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
@@ -74,13 +76,14 @@ Az Intune Software Publisherrel konfigurálhatók az alkalmazás tulajdonságai,
 
 4.  A **Követelmények** lapon adja meg az alkalmazás telepítéséhez szükséges követelményeket, amelyeknek az eszköznek meg kell felelnie. Egy iOS alkalmazáscsomag esetében például kiválaszthatja az iOS minimálisan szükséges verzióját, valamint azt, hogy az eszköznek milyen típusúnak (például iPhone vagy iPad) kell lennie.
 
-    > [!TIP] A **Követelmények** lap nem minden alkalmazástípus esetében jelenik meg.
+    > [!TIP]
+    > A **Követelmények** lap nem minden alkalmazástípus esetében jelenik meg.
 
 5.  További varázslólapok jelennek meg, ha a **Windows Installer** fájltípust választja. Ez a fájltípus akkor használatos, ha az Intune-ban regisztrált, Windows 10 vagy újabb rendszert futtató számítógépekre telepít szoftvert.
 
-6.  Az **Összefoglalás** lapon ellenőrizze a megadott adatokat. Ha ezzel elkészült, kattintson a **Feltöltés** gombra.
+6.  Az **Összefoglalás** lapon ellenőrizze a megadott adatokat. Ha ezzel elkészült, válassza a **Feltöltés** elemet.
 
-7.  A befejezéshez kattintson a **Bezárás** gombra.
+7.  A befejezéshez válassza a **Bezárás** elemet.
 
 Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** csomópontjában.
 
@@ -100,6 +103,6 @@ Ha létrehozta az alkalmazást, a következő lépés a telepítése. További i
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 
