@@ -1,37 +1,33 @@
 ---
-# required metadata
-
-title: Az iOS szabályzatbeállításai | Microsoft Intune
-description:
-keywords:
+title: "Az iOS szabályzatbeállításai | Microsoft Intune"
+description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # iOS-szabályzatbeállítások a Microsoft Intune-ban
 
+Az Intune számos olyan beépített általános beállítást tartalmaz, amelyekkel konfigurálhatja iOS-eszközeit. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
+
 ## Az általános konfigurációs szabályzat beállításai
 
 A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatát** a következő beállítások konfigurálásához használhatja:
 
--   **Mobileszköz-biztonsági beállítások** – előre meghatározott beállítások egy listájából választva számos szolgáltatást és funkciót szabályozhat az eszközökön.
+-   **Általános eszköz- és biztonsági beállítások** – előre meghatározott beállítások egy listájából választva számos szolgáltatást és funkciót szabályozhat az eszközön.
 
 -   **Teljes képernyős mód** – zárolhatja az eszközöket, hogy csak bizonyos szolgáltatások működjenek rajtuk. Megadhatja például, hogy az eszköz csak egy meghatározott felügyelt alkalmazás futtatását engedélyezze, vagy letilthatja a hangerő-szabályozó gombok használatát az eszközön. Ezek a beállítások egy eszköz demonstrációs modelljéhez, illetve egy olyan eszközhöz használhatók, amely csak egyetlen funkció végrehajtására van kijelölve (például egy pénztári eszköz).
 
@@ -47,8 +43,8 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |Beállítás neve|Részletek|iOS|
 |----------------|-------|
 |**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|Igen|
-|**Kötelező jelszótípus**|Ez a beállítás a megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|
-|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. Ez a beállítás azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban). iOS-eszközök esetén azonban azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban)|Igen|
+|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|
+|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hogy hány szimbólumnak (például **#** vagy **@**) kell szerepelnie a jelszóban.|Igen|
 |**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|Igen|
 |**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például „0000” vagy „1234” engedélyezése.|Igen|
 |**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|A megadott számú sikertelen bejelentkezési kísérlet után törli az eszközt.|Igen|
@@ -77,7 +73,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |Beállítás neve|Részletek|iOS|
 |----------------|-------|
 |**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi a felhasználó számára, hogy biztonsági mentést készítsen az iCloudba az eszközről.|Igen|
-|**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.Igen|
+|**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.|Igen|
 |**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Engedélyezi az eszközön lévő fényképek szinkronizálását az iCloudba.|Igen|
 |**Biztonsági másolat titkosításának engedélyezése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|Igen|
 
@@ -97,7 +93,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |Beállítás neve|Részletek|iOS|
 |----------------|-------|
 |**Alkalmazástároló használatának engedélyezése**|Az alkalmazás-áruház elérésének engedélyezése az eszköz számára.|Igen|
-|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|Igen|
+|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználókat jelszó beírására kötelezi az alkalmazás-áruházhoz való hozzáféréshez.|Igen|
 |**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|Igen|
 |**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), nem engedélyezi többé a mentést.|iOS 7.1-es és újabb verziók|
 |**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|iOS 7.1-es és újabb verziók|
@@ -170,7 +166,8 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Kisegítő érintés engedélyezése**|Engedélyezheti vagy letilthatja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
 |**Kisegítő érintés módosításának engedélyezése**|Engedélyezheti vagy letilthatja a Kisegítő érintés funkció módosítását.|
 |**Beszéd kiválasztásának engedélyezése**|Engedélyezheti vagy letilthatja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható az Ön által kijelölt szöveg.|
-> [!NOTE] Az alábbi megjegyzések az iOS-eszközök kioszkmódjának beállításaira vonatkoznak:
+> [!NOTE]
+> Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
 > 
 > -   Az iOS-eszközök a teljes képernyős módra való konfigurálása előtt felügyelt módra kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 > -   Ha a megadott iOS-alkalmazás a konfigurációs házirend alkalmazása után települ, az eszköz mindaddig nem lép Kioszk módba, amíg újra nem indítják.
@@ -195,7 +192,8 @@ Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a kom
 
 **Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Ebben az esetben a következő URL-t használja: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával hozzájuthat az alkalmazás URL-címéhez.
+> [!NOTE]
+> Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
 
 ## Egyéni szabályzatbeállítások
@@ -230,6 +228,7 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

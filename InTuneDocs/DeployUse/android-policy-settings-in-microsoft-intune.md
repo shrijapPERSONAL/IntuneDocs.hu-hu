@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android- és Samsung KNOX-eszközök konfigurációs házirendjének beállításai | Microsoft Intune
-description:
-keywords:
+title: "Android- és Samsung KNOX-eszközök konfigurációs házirendjének beállításai | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 |**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Megakadályozza a korábban használt jelszavak használatát.|Igen|Igen|
 |**Jelszó minősége**|Válassza ki a jelszó erősségének szintjét, valamint hogy használható-e biometrikus eszköz.|Igen|Igen|
 |**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszköz ujjlenyomattal történő feloldásának engedélyezése.|Nem|Igen|
+|**Intelligens zárolás és más megbízhatósági ügynökök engedélyezése**<br>(Android 5 és újabb verziók)|A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót. Ez a „megbízhatósági ügynökök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van, például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címkéhez van közel. Ezzel a beállítással megakadályozhatja a végfelhasználók számára az intelligens zárolás konfigurálását.|Igen|Nem|
 
 ### Titkosítási beállítások
 
@@ -73,7 +68,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 
 ### Felhőbeállítások – dokumentumok és adatok
 
-|Beállítás neve|Részletek|Android és Samsung KNOX|Android 4.0+|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Google biztonsági mentés engedélyezése**|Google-biztonsági mentés engedélyezése.|Nem|Igen|
 
@@ -95,7 +90,7 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 
 ### Alkalmazásbeállítások – alkalmazások
 
-|Beállítás neve|Android 4.0+|Samsung KNOX|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Google Play áruház engedélyezése**|A Google Play Áruház használatának engedélyezése az eszközön.|Nem|Igen|
 
@@ -179,7 +174,8 @@ A Microsoft Intune **Android egyéni konfigurációs házirenddel** OMA-URI-beá
 
 Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
 
-> [!NOTE] Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják.
+> [!NOTE]
+> Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják.
 
 ### Általános beállítások
 
@@ -257,6 +253,7 @@ Bár az Intune támogatja az Android-eszközök Wi-Fi-profiljait, ez a szolgált
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
