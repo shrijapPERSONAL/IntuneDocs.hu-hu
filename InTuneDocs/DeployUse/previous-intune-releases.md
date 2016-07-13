@@ -420,10 +420,10 @@ A következő módosításokat végeztük el a vállalati portál alkalmazások 
 
 >[!div class="step-by-step"]
 
->[&larr; **Az Intune újdonságai**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
