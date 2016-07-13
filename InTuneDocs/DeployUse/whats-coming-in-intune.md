@@ -94,6 +94,6 @@ A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
