@@ -34,6 +34,7 @@ Ha saját maga szeretné megtalálni a választ az Intune használatával kapcso
 
     -   Az Intune-nal kapcsolatos bármely más probléma esetén válassza a **Mobileszköz-kezelés** elemet. Ez a lehetőség az Office 365 mobileszköz-kezelési összetevőjét és az Intune-nal bővített System Center Configuration Managert is magában foglalja.
 
+    > [!NOTE]
     > [!NOTE] Előfordulhat, hogy az összes kategória csak a lista alján lévő **Továbbiak** elemre kattintva jelenik meg.
 
 3.  A **Hiba azonosítása** oldalon válassza ki azt a **Funkciót** és **Jelenséget**, amelyhez segítségre van szüksége. Ezután ki kell töltenie **A probléma összefoglalása** és **A probléma részletei** mezőt.
@@ -51,7 +52,8 @@ A [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](contact-assi
 Szolgáltatáskérései nyomon követéséhez nyissa meg az [Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A **Szolgáltatási kérelem létrehozása** lista alján kattintson az **Összes támogatási jegy megjelenítése** elemre. Alapértelmezés szerint az összes lezáratlan szolgáltatáskérése megjelenik. Ha módosítani szeretné, hogy mely szolgáltatáskérései jelenjenek meg (például csak a lezártak), kattintson a felső navigációs sáv megfelelő szűrőikonjára, és válasszon nézetet.
 
 > [!NOTE]
-> **A Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection használata esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration Manager és a System Center Endpoint Protection megoldásközpontját](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), ahol számos anyagot találhat az önsegítő technikai támogatáshoz, emellett online vagy telefonos támogatási kérést is beadhat.
+> [!NOTE]
+**A Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection használata esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration Manager és a System Center Endpoint Protection megoldásközpontját](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), ahol számos anyagot találhat az önsegítő technikai támogatáshoz, emellett online vagy telefonos támogatási kérést is beadhat.
 >
 > A System Center Configuration Manager vagy a System Center Endpoint Protection technikai támogatása vagy fizetésköteles, vagy levonásra kerül a meglévő licencelésből vagy Premier támogatási szerződésből.
 
@@ -138,6 +140,6 @@ Feladataink:
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
