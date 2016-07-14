@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Általános hibaelhárítási tippek | Microsoft Intune
-description:
-keywords:
+title: "Általános hibaelhárítási tippek | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
 
 -   Tapasztal-e a felhasználó hitelesítési problémát? Ha lehetséges, ellenőrizze, hogy a felhasználó be tud-e jelentkezni az Azure Active Directoryt használó egyéb szolgáltatásokba. Azt is ellenőrizze, hogy a felhasználó be tud-e jelentkezni egy másik eszközről.
 
--   Ellenőrizte a szolgáltatás állapotát? Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét. 
+-   Ellenőrizte a szolgáltatás állapotát? Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét.
 
 ## Rendelkezésre álló adatok összegyűjtése
 
@@ -54,9 +48,9 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
   - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése USB-kábelen keresztül a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése e-mailben a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Az Android regisztrálási hibáinak elküldése a rendszergazdának](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [Az iOS regisztrálási hibáinak elküldése a rendszergazdának](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [Az iOS regisztrálási hibáinak elküldése a rendszergazdának](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   A felügyeleti konzol adatai. A szabályzatok megvalósítási problémái esetén például meg kell vizsgálni az érintett szabályzatot, illetve annak állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
+-   A felügyeleti konzol adatai. A szabályzatok megvalósítási problémái esetén például meg kell vizsgálni az érintett szabályzatot, illetve annak állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
 
 ## Megoldás keresése
 
@@ -97,6 +91,7 @@ Az alább felsorolt témakörök konkrét problémák elhárításához nyújtan
 [A Microsoft Intune szoftverfrissítéseinek hibaelhárítása](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 
