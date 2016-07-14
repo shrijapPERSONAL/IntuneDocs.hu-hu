@@ -52,6 +52,6 @@ Ezt követően amikor a felhasználók regisztrálják eszközüket, meg fog jel
 [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

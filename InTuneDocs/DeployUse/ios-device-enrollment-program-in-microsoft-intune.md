@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal | Microsoft Intune
-description:
-keywords:
+title: "Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+
 
 ---
 
@@ -59,6 +53,12 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
       - **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez.  **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak. Az ilyen eszközöknek a Vállalati portált kell használniuk (például alkalmazások telepítéséhez).
       - **Nincs megadva a felhasználói affinitás** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Vállalati portál alkalmazást is beleértve, nem fognak működni.
 
+    Ezen kívül **Eszközöket rendelhet hozzá a következő csoporthoz** is. A csoport kijelöléséhez kattintson a **Kijelölés...** elemre.
+
+    >[!Important]
+    >A csoport-hozzárendelések az Intune-ból az Azure Active Directory-ba lesznek áthelyezve. [További információ](#changes-to-intune-group-assignments)
+
+
     Következő lépésként engedélyezze **A szabályzat DEP-beállításainak konfigurálása** beállítást a DEP támogatásához.
 
       ![A Beállítási asszisztens ablaktábla](../media/pol-sa-corp-enroll.png)
@@ -78,8 +78,16 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
         - **Helyalapú szolgáltatások** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja a szolgáltatást.
         - **Visszaállítás** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során iCloud-alapú biztonsági mentést fog kérni.
         - **Apple ID** – Az App Store-beli iOS-alkalmazások letöltéséhez Apple ID azonosító szükséges, az Intune által telepített alkalmazásokat is beleértve. Ha engedélyezte, az iOS kérni fogja a felhasználótól az Apple ID azonosítót, ha az azonosító megadása nélkül próbál alkalmazást telepíteni az Intune-ban.
-        - **Feltételek és kikötések** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során arra fogja kérni a felhasználót, hogy fogadja el az Apple használati feltételeit. - **Touch ID** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során rákérdez a szolgáltatás használatára. - **Apple Pay** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során rákérdez a szolgáltatás használatára. - **Nagyítás** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során rákérdez a szolgáltatás használatára. - **Siri** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során rákérdez a szolgáltatás használatára. - **Diagnosztikai adatok küldése az Apple-nek** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során rákérdez a szolgáltatás használatára. -  **Az Apple Configurator további felügyeleti funkcióinak engedélyezése** – Állítsa a beállítást **Letiltás** értékre a fájlok iTunes-szal vagy az Apple Configurator felügyeleti funkcióival történő szinkronizálásának megakadályozásához. A Microsoft javasolja, hogy állítsa a beállítást a **Letiltás** értékre, a további konfigurációkat exportálja az Apple Configuratorból, majd az Intune-on keresztül telepítse ezeket egyéni iOS-konfigurációs profilként ahelyett, hogy ezzel a beállítással engedélyezné a tanúsítvánnyal vagy anélkül történő manuális telepítést.
-        - **Letiltás** – Megakadályozza az eszköz USB-alapú kommunikációját (letiltja a párosítást) - **Engedélyezés** – Engedélyezi az eszköz PC vagy Mac számítógéppel folytatott kommunikációját USB-kapcsolaton keresztül - **Tanúsítvány megkövetelése** – Engedélyezi az eszköz Mac számítógéppel való párosítását a regisztrációs profilba importált tanúsítvánnyal
+        - **Feltételek és kikötések** – Ha engedélyezte, a Beállítási asszisztens az aktiválás során arra fogja kérni a felhasználót, hogy fogadja el az Apple használati feltételeit.
+        - **Touch ID** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Apple Pay** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Nagyítás** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Siri** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+        - **Diagnosztikai adatok küldése az Apple-nek** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja ezt a szolgáltatást.
+     -  **Az Apple Configurator további felügyeleti funkcióinak engedélyezése** – Állítsa a **Letiltás** beállításra, hogy megakadályozza a fájloknak az iTunesszal való szinkronizálását, illetve az Apple Configuratoron keresztüli felügyeletet. A Microsoft javasolja, hogy állítsa a beállítást a **Letiltás** értékre, a további konfigurációkat exportálja az Apple Configuratorból, majd az Intune-on keresztül telepítse ezeket egyéni iOS-konfigurációs profilként ahelyett, hogy ezzel a beállítással engedélyezné a tanúsítvánnyal vagy anélkül történő manuális telepítést.
+        - **Letiltás** – Megakadályozza, hogy az eszköz USB-kapcsolaton keresztül kommunikáljon (párosítás letiltása).
+        - **Engedélyezés** – Engedélyezi az eszköz és bármely PC vagy Mac számítógép közötti, USB-kapcsolaton keresztüli kommunikációt.
+        - **Tanúsítvány megkövetelése** – Engedélyezi a regisztrációs profilba importált tanúsítvánnyal rendelkező Mac számítógépekkel való párosítást.
 
 6.  **DEP-eszközök hozzárendelése kezelés céljából** – Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-vel. Válassza a **Deployment Program** (Telepítési program) &gt; **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Devices** (Eszközök kezelése) lehetőséget. Adja meg, hogy miként fogja kiválasztani az eszközöket ( **Choose Devices**), adja meg az eszközinformációkat, és adja meg a részleteket az eszköz sorozatszáma ( **Serial Number**) vagy rendelésszáma ( **Order Number**) alapján, illetve CSV-fájl feltöltésével ( **Upload CSV File**). Ezután válassza az **Assign to Server** (Hozzárendelés kiszolgálóhoz) lehetőséget, válassza ki a Microsoft Intune-hoz megadott &lt;Kiszolgálónevet&gt;, majd kattintson az **OK** gombra.
 
@@ -91,12 +99,15 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
 8.  **Eszközök terjesztése a felhasználóknak** – Megkezdheti a vállalat által birtokolt eszközök terjesztését a felhasználóknak. Az iOS-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára.
 
+## Változások az Intune csoport-hozzárendelésekben
 
+Szeptembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. További részletek a közeljövőben lesznek közzétéve.
 
 ### További információ
 [Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

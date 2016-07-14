@@ -47,6 +47,7 @@
 #### [VPN-kapcsolatok az Intune-ban](vpn-connections-in-microsoft-intune.md)
 #### [E-mail-profilok az Intune-ban](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Csoportok használata felhasználók és eszközök kezeléséhez](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Eszközök hozzárendelése csoportokhoz](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [A regisztrált eszközök áttekintése leltár használatával](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Számítógépek általános felügyeleti feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
@@ -86,14 +87,19 @@
 #### [Windows és Windows Phone rendszerhez](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Eszközmegfelelőségi szabályzat telepítése](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+
 #### [Az Exchange Online és az új dedikált Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [A helyszíni Exchange és régi dedikált Exchange Online](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Vállalati online verzió](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mail hozzáférés korlátozása: példák](restrict-email-access-example-scenarios.md)
 
-### [Alkalmazásadatok védelme](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### [Hálózati hozzáférés korlátozása (Cisco ISE)](restrict-access-to-networks.md)
+
+### [Alkalmazásadatok védelme MAM használatával](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portál a mobilalkalmazás-felügyeleti szabályzatok kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM-szabályzatok létrehozása és telepítése](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -102,6 +108,7 @@
 #### [Szabályzatoknak való megfelelés figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS-alkalmazások közti adatátvitel kezelése](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [A végfelhasználói folyamat](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+#### [Intune felügyeleti konzol MAM-házirendekhez](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Üzletági alkalmazások előkészítése mobilalkalmazás-felügyelethez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [iOS-alkalmazások burkolása](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -123,9 +130,9 @@
 
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
-# [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO5-->
 
 

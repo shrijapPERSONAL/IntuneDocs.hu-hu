@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Az üzleti alkalmazások és az adatok védelme a nem regisztrált eszközökön | Microsoft Intune
-description:
-keywords:
+title: "Az üzleti alkalmazások és az adatok védelme a nem regisztrált eszközökön | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Az alkalmazásokat az alábbi módszerekkel telepítheti a végfelhasználók sz
 * A nem MDM-megoldásokkal felügyelt eszközökhöz egyéni megoldásra van szükség. A végfelhasználóknak maguknak kell letölteniük és telepíteniük az alkalmazást az eszközükre.
 
 ## A metaadatok módosítása
-Ha módosítani szeretné az alkalmazás adatait, például az alkalmazás nevét vagy a csomagazonosítót, először [el kell távolítania az alkalmazást](#remove-apps), majd [hozzá kell adnia](#add-the-app) az új metaadatokkal.
+Ha módosítani szeretné az alkalmazás adatait, például az alkalmazás nevét vagy a csomagazonosítót, először [el kell távolítania az alkalmazást](#remove-apps), majd [hozzá kell adnia](#step-2-add-the-app) az új metaadatokkal.
 
 ##  Alkalmazások eltávolítása
 Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el.  Ezzel eltávolítja az alkalmazást a listából és megszünteti a MAM-szabályzatokhoz való hozzárendelést, de nem törli az alkalmazást a végfelhasználó eszközéről.  
@@ -80,6 +73,7 @@ Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el.  Ezzel
   Ez eltávolítja az alkalmazást az üzletági alkalmazások listájából és a MAM-szabályzat Célzott alkalmazáslistájából.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

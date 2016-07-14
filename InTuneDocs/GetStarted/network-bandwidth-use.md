@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Az Intune hálózatisávszélesség-felhasználása | A Microsoft Intune
-description:
-keywords:
+title: "Az Intune hálózatisávszélesség-felhasználása | A Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
 # Az Intune hálózatisávszélesség-felhasználása
 
-A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt című](what-to-know-before-you-start-microsoft-intune.md) témakört..
+A [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] beállítása előtt olvassa el ezt a témakört, valamint ismerkedjen meg a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben leírt követelményekkel.
 
 Az alábbiakban megadott információk segítségével tervezhető a [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-ügyfelek hálózati forgalma.
 
@@ -83,7 +77,7 @@ A BITS Windows rendszerű számítógépeken való használatáról a TechNet k�
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-A BranchCache használatához az ügyfélszámítógépen engedélyezni kell a BranchCache-t, majd az **elosztott gyorsítótáras módot** kell beállítani rajta..
+A BranchCache használatához az ügyfélszámítógépen engedélyezni kell a BranchCache-t, majd az **elosztott gyorsítótáras módot** kell beállítani rajta.
 
 A BranchCache és az elosztott gyorsítótáras mód alapértelmezés szerint engedélyezve van azokon a számítógépeken, melyeken telepítve van az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ügyfél. Ha azonban az ügyfél már rendelkezik egy, a BranchCache szolgáltatást letiltó csoportházirenddel, az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nem bírálja felül ezt a házirendet, és a BranchCache ezen a számítógépen letiltva marad.
 
@@ -92,6 +86,7 @@ A BranchCache használatakor lépjen kapcsolatba a szervezet más, a Csoportház
 ### További információ
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

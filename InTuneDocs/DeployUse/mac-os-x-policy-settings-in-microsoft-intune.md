@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Szabályzatok beállításai Mac OS X rendszeren | Microsoft Intune
-description:
-keywords:
+title: "A Mac OS X-házirendek beállításai | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ A **Szabályzatnak megfelelő &amp; nem megfelelő alkalmazások Mac OS X-es esz
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és alkalmazáscsomag-azonosítót.|
 |**Szerkesztés**|A kiválasztott alkalmazás nevének, kiadójának és alkalmazáscsomag-azonosítójának szerkesztése.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
-> [!TIP] Az Intune-jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Az Intune-jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Ha egy Mac OS X-eszköz készenléti állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg, amíg az eszköz fel nem ébred a készenléti üzemmódból.
@@ -105,7 +99,7 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |Beállítás neve|Részletek|
     |----------------|--------------------|
     |**Egyéni konfigurációs profil neve (megjelenik a felhasználók számára)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
-    |**Konfigurációs profilfájl**|Kattintson az **Importálás**lehetőségre, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A [Konfigurációs profilfájl létrehozása](#BKMK_Prof) című témakörben talál segítséget a konfigurációs profil létrehozásához.|
+    |**Konfigurációs profilfájl**|Kattintson az **Importálás**lehetőségre, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A **Konfigurációs profilfájl létrehozása** című témakörben talál segítséget a konfigurációs profil létrehozásához.|
     |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil xml-kódját.|
 
 
@@ -126,6 +120,7 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

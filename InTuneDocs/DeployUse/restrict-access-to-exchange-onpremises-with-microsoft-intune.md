@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
 ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
 
@@ -69,7 +70,7 @@ A következő diagram azt a folyamatot mutatja be, amelyet a helyszíni Exchange
 
 -   Natív e-mail alkalmazás Android 4 vagy újabb rendszerű eszközökön
 > [!NOTE]
-> [!NOTE] A Microsoft Outlook alkalmazás Android- és iOS-verziója nem élvez támogatást.
+> A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
 
 ## Számítógépek támogatása
 
@@ -99,7 +100,7 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
 
   - **Felhasználó értesítése:** Az Exchange által küldött értesítő e-mail mellett az Intune e-mailt küld, amely tartalmazza az eszköz feloldásának lépéseit. Az alapértelmezett üzenetet az igényeinek megfelelően módosíthatja. Mivel a javítással kapcsolatos utasításokat tartalmazó Intune értesítő e-mail a felhasználó Exchange-postaládájába kerül, ha a felhasználó eszköze le van tiltva az e-mail üzenet megérkezése előtt, egy le nem tiltott eszközzel vagy más módon érheti el az Exchange-fiókot és tekintheti meg az üzenetet. Ez különösen igaz olyankor, ha az **Alapértelmezett szabály** az eszközök blokkolására vagy karanténba helyezésére van beállítva.  Ilyen esetben a végfelhasználónak meg kell nyitnia az alkalmazás-áruházat, le kell töltenie a Microsoft Vállalati portál alkalmazást, és regisztrálnia kell az eszközét. Ez egyaránt vonatkozik az iOS, a Windows és a Samsung KNOX rendszerű eszközökre.  A nem Samsung KNOX-alapú androidos eszközök esetében egy másodlagos e-mail fiókba kell küldenie a karanténba helyezésről értesítő e-mailt, amelyet a regisztrálási és megfelelőség-ellenőrzési folyamat elvégzéséhez a végfelhasználónak a blokkolt eszközére kell másolnia.
   > [!NOTE]
-  > [!NOTE] Meg kell adnia az értesítő e-mail elküldéséhez használt fiókot, hogy az Exchange elküldhesse az értesítő e-mailt.
+  > Meg kell adnia az értesítő e-mail elküldéséhez használt fiókot, hogy az Exchange elküldhesse az értesítő e-mailt.
   >
   > További információk: [A helyszíni Exchange-összekötő konfigurálása helyszíni vagy üzemeltetett Exchange használatához](intune-on-premises-exchange-connector.md).
 

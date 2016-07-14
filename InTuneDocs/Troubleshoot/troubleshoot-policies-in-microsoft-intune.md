@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune
-description:
-keywords:
+title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ Az alábbi képernyőképen két világos példa látható:
 ## Házirendfrissítés és frissítési időközök
 Vegye figyelembe, hogy a házirendek rendszeres időközönként frissülnek. Általában a házirendeknek a módosítások elvégzése után legfeljebb 15 perccel érvénybe kell lépniük az eszközökön. Az alábbiakban további részleteket talál a házirendek frissítésének rendszeres időközeiről:
 
--   **Mobileszköz-felügyelethez regisztrált Windows-eszköz:** Ezt egy ütemezett feladat indítja helyi idő szerint hajnali 3:00-kor az eszközön, és minden nap elindul.
+-   **MDM-mel regisztrált Windows-eszköz**: A házirend Windows 8.1-es és Windows 10-es eszközökön 8 óránként, míg Windows RT-eszközökön 24 óránkét frissül.
 
 -   **Windows Phone-telefon:** A házirend 8 óránként frissül. Ez a vállalati portálról történő frissítéssel kényszeríthető, a **Beállítások** területen.
 
@@ -116,6 +109,7 @@ Az Android MDM a többi platformtól eltérően nem teszi lehetővé a szolgált
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

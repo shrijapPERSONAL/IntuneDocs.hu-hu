@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microsoft Intune
-description:
-keywords:
+title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
+ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+
 
 ---
 
@@ -104,11 +97,13 @@ A következő táblázat az Intune-alkalmazástelepítés közben gyakran előfo
 |0x80073CF0|A csomag nem nyitható meg.|Lehetséges okok:<br /><br />-   A csomag nincs aláírva.<br />-   A közzétevő neve nem egyezik meg az aláíró tanúsítvány tulajdonosával.<br /><br />További információt az AppxPackagingOM eseménynaplóban talál.|
 |0x80073CF3|Nem sikerült ellenőrizni a csomag frissítéseit, függőségeit vagy ütközéseit|Lehetséges okok:<br /><br />-   A bejövő csomag ütközik egy telepített csomaggal.<br />-   Nem található a megadott csomagfüggőség.<br />-   A csomag nem támogatja a megfelelő processzorarchitektúrát.<br /><br />További információt az AppXDeployment-Server eseménynaplóban talál.|
 |0x80073CFB|A megadott csomag már telepítve van, és a csomag újratelepítése le van tiltva.|Ez a hiba akkor fordulhat elő, ha olyan csomagot telepít, amely nem azonos a már telepített csomaggal. Ellenőrizze, hogy a csomag tartalmaz-e digitális aláírást. Ha újraépít vagy újra aláír egy csomagot, a csomag nem lesz bitenként azonos az előzőleg telepített csomaggal. Ez a hiba kétféleképpen javítható ki:<br /><br />-   Növelje az alkalmazás verziószámát, majd építse és írja alá újra a csomagot.<br />-   Az új csomag telepítése előtt távolítsa el a régi csomagot a rendszer minden felhasználója esetében.|
+|0x87D1041C|Az alkalmazás telepítése sikeres volt, de a rendszer nem ismeri fel az alkalmazást.|– A felhasználó a vállalati portálról telepítette az alkalmazást, majd közvetlenül az eszközről távolította el. Telepítse újra az alkalmazást a vállalati portálról.<br /><br />– Előfordulhat, hogy az üzletági alkalmazásnak az Intune által észlelt verziószáma nem egyezik az eszközre telepített verzióval. Győződjön meg arról, hogy az Intune a helyes verzióval rendelkezik, majd telepítse újra az alkalmazást.|
 
 ### További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

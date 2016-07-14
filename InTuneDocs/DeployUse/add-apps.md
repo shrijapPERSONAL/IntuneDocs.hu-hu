@@ -74,6 +74,7 @@ A következők esetében használatos:
 A külső hivatkozásokon alapuló alkalmazásokat nem tárolja a rendszer az Intune felhőbeli tárhelyén.
 ### **Felügyelt iOS-alkalmazás az App Store-ból**
 Az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését teszi lehetővé. [Mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is társíthat [kompatibilis alkalmazásokhoz](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
+> [!TIP]
 > [!TIP] A mobileszközökre vonatkozó beállítások csak azt követően válnak elérhetővé, hogy a [Mobileszköz-kezelő szolgáltató megadása beállítást](get-ready-to-enroll-devices-in-microsoft-intune.md) az Intune-ra állította.
 
 ## Az Intune Software Publisher
@@ -117,6 +118,6 @@ Ezután az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepít
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

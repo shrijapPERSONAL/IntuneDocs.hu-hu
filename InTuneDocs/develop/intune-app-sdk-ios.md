@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: iOS-hoz készült Microsoft Intune App SDK – fejlesztői útmutató | Microsoft Intune
-description:
-keywords:
+title: "iOS-hoz készült Microsoft Intune App SDK – fejlesztői útmutató | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # iOS-hoz készült Microsoft Intune App SDK – fejlesztői útmutató
 
-> [!NOTE] Először célszerű elolvasnia az [Intune App SDK használatának első lépéseihez útmutatást nyújtó dokumentumot](intune-app-sdk-get-started.md), amely bemutatja az integráció előkészítését a támogatott platformokon.* 
+> [!NOTE]
+> Először célszerű elolvasnia az [Intune App SDK használatának első lépései](intune-app-sdk-get-started.md) útmutatót, amely bemutatja az integráció előkészítését a támogatott platformokon.* 
 
 Az iOS-hoz készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune mobilalkalmazás-felügyeleti (MAM) funkcióját beépítse iOS-alkalmazásába. Az Intune App SDK-ba integrált MAM-kompatibilis alkalmazások lehetővé teszik a rendszergazdák számára a szabályzatok érvénybe léptetését az aktívan felügyelt alkalmazásokban.
 
@@ -232,7 +227,8 @@ A MAM-kompatibilis alkalmazások Microsoft Intune-beli tesztelése előtt haszn�
 
 * Indítsa el az alkalmazást (az Xcode-on kívül vagy belül). Ellenőrizze, hogy a PIN-kód megfelelően működik-e.
 
-> [!NOTE] Most már használhatja a „Settings -> Saját-alkalmazás-neve -> Enable Test Policies” lehetőséget a beállítások ki- és bekapcsolására.
+> [!NOTE]
+> Most már használhatja a „Settings -> Saját-alkalmazás-neve -> Enable Test Policies” lehetőséget a beállítások ki- és bekapcsolására.
 
 # Ajánlott gyakorlati tanácsok iOS-ban
 
@@ -244,6 +240,7 @@ Ha az Xcode nem találja a `libIntuneMAM.a`könyvtárat, a problémát megoldhat
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

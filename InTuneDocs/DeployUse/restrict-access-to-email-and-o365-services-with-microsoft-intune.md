@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: Az e-mailek és az O365-szolgáltatások elérésének korlátozása | Microsoft Intune
-description:
-keywords:
+title: "Az e-mailek és az O365-szolgáltatások elérésének korlátozása | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban
+# Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása
 Az Intune feltételes hozzáférés funkciójával korlátozhatja a hozzáférést a vállalati e-mail- és O365-szolgáltatásokhoz. Az Intune feltételes hozzáférési funkciói révén elérheti, hogy a vállalati e-mail- és O365-szolgáltatásokhoz csak olyan eszközök férhessenek hozzá, amelyek megfelelnek az Ön által beállított szabályoknak.
 ## Hogyan működik a feltételes hozzáférés?
 A rendszer a megfelelőségi szabályok beállításai alapján ellenőrzi az eszköz megfelelőségét. A feltételes hozzáférési szabályzat ennek az ellenőrzésnek az eredménye alapján engedélyezi vagy korlátozza a hozzáférést az adott szolgáltatásokhoz. A feltételes hozzáférési szabályzat és a megfelelőségi szabályok együttes alkalmazásával elérheti, hogy a szolgáltatáshoz csak megfelelő eszközök férjenek hozzá.
@@ -37,7 +30,7 @@ Ha az eszközök nem felelnek meg a szabályzatokban megadott feltételeknek, a 
 
 A feltételes hozzáférés jellemzően a következő folyamatot követi:
 
-![Azokat a döntési pontokat megjelenítő diagram, amelyek segítségével a rendszer meghatározza, hogy kapjon-e hozzáférést az adott eszköz a szolgáltatáshoz](./media/ConditionalAccess4.png)
+![Azokat a döntési pontokat megjelenítő diagram, amelyek segítségével a rendszer meghatározza, hogy kapjon-e hozzáférést az adott eszköz a szolgáltatáshoz](../media/ConditionalAccess4.png)
 
 ## A feltételes hozzáférés konfigurálásának módja
 Feltételes hozzáféréssel a következő Microsoft-szolgáltatásokhoz való hozzáférést kezelheti: **Helyszíni Exchange**, **Exchange Online**, **Dedikált Exchange Online**, **SharePoint Online** és **Skype vállalati online verzió**.
@@ -67,8 +60,10 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
   - [Feltételes hozzáférési szabályzat létrehozása a régi Dedikált Exchange Online-hoz](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása a SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása a Skype vállalati online verziójához](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Feltételes hozzáférési szabályzat létrehozása a Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

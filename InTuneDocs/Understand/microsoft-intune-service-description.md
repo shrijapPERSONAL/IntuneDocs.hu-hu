@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A szolgáltatás leírása | Microsoft Intune
-description:
-keywords:
+title: "A szolgáltatás leírása | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
+ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+
 
 ---
 
@@ -38,7 +32,7 @@ Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, ame
 
 A mobileszközökön konfigurálható beállítások listáját itt találja:
 
--   [A Microsoft Intune mobileszköz-kezelési képességei](mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [Mobileszközök megfelelőségi beállításai a Configuration Managerben](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
@@ -62,7 +56,7 @@ A Microsoft Intune szolgáltatással kapcsolatos figyelmeztetéseinek típusai a
 * Új vagy módosult API-k (értesítés arról, hogy tesztelni kell az egyéni alkalmazások visszamenőleges kompatibilitását)
 * A rendszerkövetelmények változásai, például a minimálisan szükséges böngészőverzió
 * Minden olyan frissítés, amely felhasználói beavatkozást igényel a funkció engedélyezéséhez vagy a funkció működésének zavartalanságához
--   A Microsoft a havonta esedékes szolgáltatásfrissítés részeként az új szolgáltatásokkal, új funkciókkal és a meglévő funkciók fejlesztéseivel kapcsolatos információkat is biztosít. A Microsoft rendszerint minden hónap 15-e körül adja ki a szolgáltatásfrissítéseket. A frissítések leírását az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune.md) című témakörben találja.
+-   A Microsoft a havonta esedékes szolgáltatásfrissítés részeként az új szolgáltatásokkal, új funkciókkal és a meglévő funkciók fejlesztéseivel kapcsolatos információkat is biztosít. A Microsoft rendszerint minden hónap 15-e körül adja ki a szolgáltatásfrissítéseket. A frissítések leírását az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune) című témakörben találja.
 -   Az Intune szolgáltatás kivonása esetén 12 hónappal korábban értesítjük.
 
 ## Válassza ki az Ön számára megfelelő felügyeleti megoldást
@@ -70,24 +64,24 @@ Az Intune többféleképpen is konfigurálható annak érdekében, hogy biztosí
 
 -   **Az Intune önálló konfigurációja.** A szervezetben lévő mobileszközök felügyelete az Intune webalapú felügyeleti konzoljával végezhető. Az Intune bármilyen helyszíni informatikai infrastruktúra nélkül használható, azonban ha az Intune-t Active Directory tartományi szolgáltatásokkal együtt használja, a tartományi szolgáltatásokkal kezelt tartományi felhasználói fiókokat az Intune-nal is használhatja.
 
--   **Intune és System Center Configuration Manager.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. A konfiguráció segítségével a szervezet összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolon felügyelheti. A Configuration Manager nagy mennyiségű mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. További információkért lásd: [Mobileszközök felügyelete a Configuration Manager és a Microsoft Intune használatával](http://go.microsoft.com/fwlink/?LinkID=271118) a [System Center 2012 Configuration Manager dokumentumkönyvtárában](https://technet.microsoft.com/library/gg682041.aspx).  Az Ön számára legmegfelelőbb módszer kiválasztásához itt talál további segítséget: [A vállalati mobilitás lehetőségei](/intune/plan-design/ways-to-do-enterprise-mobility.md).
+-   **Intune és System Center Configuration Manager.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. A konfiguráció segítségével a szervezet összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolon felügyelheti. A Configuration Manager nagy mennyiségű mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. További információkért lásd: [Mobileszközök felügyelete a Configuration Manager és a Microsoft Intune használatával](http://go.microsoft.com/fwlink/?LinkID=271118) a [System Center 2012 Configuration Manager dokumentumkönyvtárában](https://technet.microsoft.com/library/gg682041.aspx).  Az Ön számára leginkább megfelelő módszer kiválasztásához további segítséget talál a [Választás a Microsoft Intune önálló és hibrid mobileszköz-kezelése között a Configuration Manager segítségével](https://technet.microsoft.com/en-us/library/mt706478.aspx).
 
--   Az Office 365 által nyújtott mobileszköz-felügyelet, [A vállalati mobilitás lehetőségei](/intune/plan-design/ways-to-do-enterprise-mobility.md) című témakörben leírtaknak megfelelően.
 
 ## További tudnivalók az Intune-ról
 Az alábbi forrásokból többet is megtudhat az Intune-ról:
 
 -   A [Microsoft Intune Adatvédelmi központja](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) információkkal szolgál az Intune biztonsági, adatvédelmi és megfelelőségi vonatkozásairól, ezenkívül az Intune minősítései közül is bemutat néhányat.
 
--   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### További információ
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [A System Center 2012 Configuration Manager dokumentumkönyvtára](https://technet.microsoft.com/library/gg682041.aspx)
 
-[Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune.md)
+[Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 
