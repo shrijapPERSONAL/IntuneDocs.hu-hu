@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: iOS-alkalmazások közti adatátvitel felügyelete | Microsoft Intune
-description:
-keywords:
+title: "iOS-alkalmazások közti adatátvitel felügyelete | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Annak biztosításához, hogy a harmadik féltől származó MDM megoldás segí
 Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök esetén van szükség. Az alább leírt eljárás egy általános módszer az UPN-beállítás és az eredményül kapott végfelhasználói élmény megvalósításához:
 
 
-1.  Konfiguráljon mobilalkalmazás-felügyeleti szabályzatot iOS platformra. A vállalati igényeknek megfelelően konfigurálja a szabályzat beállításait, majd válassza ki az alkalmazásokat, amelyeknek ezzel a szabályzattal kell rendelkezniük.
+1.  Az Azure-portálon [konfiguráljon mobilalkalmazás-felügyeleti szabályzatot](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) iOS platformra. A vállalati igényeknek megfelelően konfigurálja a szabályzat beállításait, majd válassza ki az alkalmazásokat, amelyeknek ezzel a szabályzattal kell rendelkezniük.
 
-2.  A felügyelni kívánt alkalmazásokat és az e-mail profilt telepítse saját külső MDM-megoldásával, a 3. és 4. lépésekben leírt beállítások használatával.
+2.  A felügyelni kívánt alkalmazásokat és az e-mail profilt telepítse **saját külső MDM-megoldásával** a 3. és 4. lépésekben leírt beállítások használatával.
 
 3.  Az alkalmazást a következő alkalmazáskonfigurációs beállításokkal telepítse: key=IntuneMAMUPN, Value=<felhasznalo@vallalat.com> [példa: ‘IntuneMAMUPN’, ‘janos@microsoft.com’]
 
@@ -80,6 +73,7 @@ Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök eset�
 [Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal a Microsoft Intune segítségével](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

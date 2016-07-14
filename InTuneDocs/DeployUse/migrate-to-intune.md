@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Áttérés az Intune-ra | Microsoft Intune
-description:
-keywords:
+title: "Áttérés az Intune-ra | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ A meglévő nagyvállalati mobilitási megoldásról az Intune-ra való áttér�
 
 ## A felhasználók értesítése
 
-Amikor úgy véli, hogy az Intune próbaüzemi alkalmazása megfelelt a követelményeknek, tájékoztassa a felhasználókat arról, hogy hamarosan át kell telepíteni az eszközeiket az Intune-ba. E-mailek, [utasítások](http://www.microsoft.com/en-us/download/details.aspx?id=46398) és [poszterek](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) segítségével közölheti az elvárásokat, és bemutathatja a felhasználóknak a regisztrálás lépéseit, amelyeket végre kell hajtaniuk, hogy megőrizzék a vállalati erőforrásokhoz és alkalmazásokhoz való folyamatos kapcsolódás lehetőségét. Győződjön meg arról, hogy a támogatási csapat felkészült a segítségnyújtásra, ha a felhasználók igénylik ezt az áttelepítési folyamat során.
+Amikor úgy véli, hogy az Intune próbaüzemi alkalmazása megfelelt a követelményeknek, tájékoztassa a felhasználókat arról, hogy hamarosan át kell telepíteni az eszközeiket az Intune-ba. E-mailek, használati utasítások és [poszterek](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) segítségével ismertetheti az elvárásokat, és bemutathatja a felhasználóknak a regisztrálás lépéseit, amelyeket végre kell hajtaniuk ahhoz, hogy továbbra is folyamatosan hozzáférjenek a vállalati erőforrásokhoz és alkalmazásokhoz. Győződjön meg arról, hogy a támogatási csapat felkészült a segítségnyújtásra, ha a felhasználók igénylik ezt az áttelepítési folyamat során.
 
 ## A meglévő nagyvállalati mobilitási felügyeleti megoldás módosítása
 
@@ -75,9 +68,10 @@ További segítségre van szüksége az Intune-ra való áttéréshez? Szakért�
 
 ## A jelen útmutató letölthető példánya
 
-A teljes útmutató letölthető példányának megszerzéséhez látogassa meg a [TechNet Gallery](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387) webhelyet..
+A teljes útmutató letölthető a [TechNet Gallery](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387) webhelyről.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

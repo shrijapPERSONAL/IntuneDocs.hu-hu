@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez | Microsoft Intune
-description:
-keywords:
+title: "Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+
 
 ---
 
@@ -34,35 +28,36 @@ Az**értesítések** arra szolgálnak, hogy e-mailben tájékoztassák a rendsze
 
 A**jelentések** számos kérdés megválaszolására szolgálnak, például hogy hány számítógépen van telepítve egy adott alkalmazás vagy frissítés, hogy milyen kártevő szoftvereket tiltott le a rendszer, vagy hogy mely felhasználók igényeltek Távsegítséget az elmúlt hónapban.
 
-A riasztásokkal, értesítésekkel és jelentésekkel kapcsolatos további tudnivalókért lásd a [Figyelés és jelentéskészítés a Microsoft Intune-ban](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune) című témakört..
+A riasztásokkal, értesítésekkel és jelentésekkel kapcsolatos további tudnivalókért lásd a [Figyelés és jelentéskészítés a Microsoft Intune-ban](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune) című témakört.
 
 ## Az Intune képességei
 Az Intune az ebben a rövid útmutatóban ismertetettek mellett számos további funkciót kínál. Ilyen funkciók többek között például a következők:
 
--   **Az Office 365 és az Exchange szolgáltatáshoz való hozzáférés szabályozása.** További információkért lásd: [E-mail hozzáférés kezelése a Microsoft Intune-nal](https://technet.microsoft.com/library/dn705841.aspx) és [Az e-mailek és az O365-szolgáltatások hozzáférésének kezelése az Intune használatával](https://technet.microsoft.com/library/dn818907.aspx)..
+-   **Az Office 365 és az Exchange szolgáltatáshoz való hozzáférés szabályozása.** További információkért lásd: [Alkalmazások Exchange Online-hoz való hozzáférésének kezelése](https://technet.microsoft.com/library/dn705841.aspx) és [Alkalmazások Office 365-szolgáltatásokhoz való hozzáférésének kezelése](https://technet.microsoft.com/library/dn818907.aspx).
 
--   **Vállalati tulajdonú iOS rendszerű eszközök kezelése.** Lásd: [A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune)..
+-   **Vállalati tulajdonú iOS rendszerű eszközök kezelése.** Lásd: [A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
--   **Mobilalkalmazások kezelése.** A felügyelt mobilalkalmazások együttműködnek a mobilalkalmazás-kezelési házirendekkel bizonyos alkalmazásműveletek, például a másolás és beillesztés, illetve a képernyőfelvétel-készítés korlátozása érdekében. Lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) és [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies)..
+-   **Mobilalkalmazások kezelése.** A felügyelt mobilalkalmazások együttműködnek a mobilalkalmazás-kezelési házirendekkel bizonyos alkalmazásműveletek, például a másolás és beillesztés, illetve a képernyőfelvétel-készítés korlátozása érdekében. Lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) és [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies).
 
--   **A vállalati erőforrásokhoz való hozzáférés szabályozása.** Tanúsítványokat, e-mail profilokat, VPN-profilokat és Wi-Fi profilokat telepíthet mobileszközökre, ezzel megkönnyítve és gyorsabbá téve a mobileszközök beállítását. A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune)..
+-   **A vállalati erőforrásokhoz való hozzáférés szabályozása.** Tanúsítványokat, e-mail profilokat, VPN-profilokat és Wi-Fi profilokat telepíthet mobileszközökre, ezzel megkönnyítve és gyorsabbá téve a mobileszközök beállítását. A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-ban](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
 Az Intune szolgáltatás összes funkciójáról bővebben lásd:
-- [A Microsoft Intune mobileszköz-kezelési képességei](mobile-device-management-capabilities-in-microsoft-intune.md)
-- [A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei](windows-pc-management-capabilities-in-microsoft-intune.md)
+- [A Microsoft Intune mobileszköz-kezelési képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+- [A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)
 
-További információ az Intune új funkcióiról: [Újdonságok a Microsoft Intune-ban](/Intune/Deploy-Use/whats-new-in-microsoft-intune)..
+További információ az Intune új funkcióiról: [Újdonságok a Microsoft Intune-ban](/Intune/Deploy-Use/whats-new-in-microsoft-intune).
 
-A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben olvashat bővebben, illetve hozzászólhat az Intune szolgáltatással kapcsolatos témákhoz a [Microsoft Intune-fórumokon](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)..
+A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben olvashat bővebben, illetve hozzászólhat az Intune szolgáltatással kapcsolatos témákhoz a [Microsoft Intune-fórumokon](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
 ### További lépések
 Gratulálunk! A *Microsoft Intune próbaverzió* útmutatójának végére ért.
 
 >[!div class="step-by-step"]
 
->[&larr; **Eszközök regisztrálása**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)     [**További lépések** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)  
+>[&larr; **Eszközök regisztrálása**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)     [**Következő lépések** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

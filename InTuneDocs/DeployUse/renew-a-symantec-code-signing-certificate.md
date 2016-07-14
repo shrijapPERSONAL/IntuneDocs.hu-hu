@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Symantec vállalati kódaláíró tanúsítvány megújítása a Microsoft Intune-nal való használatra | Microsoft Intune
-description:
-keywords:
+title: "Symantec vállalati kódaláíró tanúsítvány megújítása a Microsoft Intune-nal való használatra | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ Az egyes Windows és Windows Phone rendszerű mobileszközök kezelésére szolg
 
 ## A Windows Phone 8.0 rendszerhez készült frissített tanúsítvány telepítése
 
-1.  Töltse le innen, majd írja alá legújabb Windows Phone-os Vállalati portál alkalmazást: [http://www.microsoft.com/hu-hu/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  A legújabb Windows Phone-os Vállalati portál alkalmazást innen töltheti le, majd írhatja alá: [http://www.microsoft.com/hu-hu/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Nyissa meg az Intune felügyeleti konzolját ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), majd a **Felügyelet**, **Mobileszköz-kezelés** &gt; **Windows Phone** lapot, és kattintson az **Aláírt alkalmazás feltöltése** elemre..
+2.  Nyissa meg az Intune felügyeleti konzolját ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), majd a **Felügyelet**, **Mobileszköz-kezelés** &gt; **Windows Phone** lapot, és kattintson az **Aláírt alkalmazás feltöltése** elemre.
 
 3.  Töltse fel az imént aláírt Vállalati portál alkalmazást. Az újonnan aláírt SSP.xap fájlra és a Symantectől kapott új .PFX-fájlra, vagy az ezzel az új .PFX-fájllal létrehozott alkalmazásregisztrációs adatblokkra lesz szüksége.
 
@@ -55,9 +49,9 @@ Jelenleg kizárólag az aláírt SSP.xap fájl biztosításával adható meg a f
 
 ## A frissített tanúsítvány telepítése Windows Phone 8.1 és újabb rendszerű eszközökre
 
-1.  A legújabb Windows Phone-os Vállalati portál alkalmazást a letöltőközpontból töltheti le, majd írhatja alá: [http://www.microsoft.com/hu-hu/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  A legújabb Windows Phone-os Vállalati portál alkalmazást a letöltőközpontból töltheti le, majd írhatja alá: [http://www.microsoft.com/hu-hu/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Nyissa meg az Intune felügyeleti konzolját ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), majd a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** lapot, és kattintson az **Aláírt alkalmazás feltöltése** elemre..
+2.  Nyissa meg az [Intune felügyeleti konzolját](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com), majd a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** lapot, és kattintson az **Aláírt alkalmazás feltöltése** elemre.
 
 3.  Töltse fel az imént aláírt Vállalati portál alkalmazást. Az újonnan aláírt SSP.xap fájlra és a Symantectől kapott új .PFX-fájlra, vagy az ezzel az új .PFX-fájllal létrehozott alkalmazásregisztrációs adatblokkra lesz szüksége.
 
@@ -67,10 +61,11 @@ Jelenleg kizárólag az aláírt SSP.xap fájl biztosításával adható meg a f
 
 
 ### További információ
-[Windows Phone 8.0 rendszerű telefonok kezelésének beállítása](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
-[Windows Phone-telefonok kezelésének beállítása](set-up-windows-phone-management-with-microsoft-intune.md)
+[Windows Phone 8.0 kezelésének beállítása](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Windows Phone kezelésének beállítása](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal | Microsoft Intune
-description:
-keywords:
+title: "A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,7 +40,7 @@ Ezután az alábbi módszerek közül egy vagy több alkalmazásával telepíthe
 
 -   [A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való kezelésére, kivonhatja a számítógépet. Ezzel egyben az ügyfélszoftvert is eltávolítja a számítógépről. További információ: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való kezelésére, kivonhatja a számítógépet. Ezzel egyben az ügyfélszoftvert is eltávolítja a számítógépről. További információ: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ### Az ügyfélszoftver letöltése
 
@@ -102,13 +96,13 @@ A felhasználók saját maguk is regisztrálhatják számítógépeiket a munkah
 
 1.  Jelentkezzen be a vállalati portálra a regisztrálni kívánt számítógépről.
 
-2.  Kattintson az **Eszköz hozzáadása** lehetőségre..
+2.  Kattintson az **Eszköz hozzáadása**lehetőségre.
 
-3.  Kattintson a **Szoftver letöltése**, majd a **Futtatás** lehetőségre..
+3.  Kattintson a **Szoftver letöltése** , majd a **Futtatás**lehetőségre.
 
 4.  A **Tovább** gombra kattintva indítsa el a Microsoft Intune telepítővarázslóját.
 
-5.  A telepítővarázsló befejeződésekor kattintson a **Befejezés** gombra..
+5.  A telepítő varázsló befejeződésekor kattintson a **Befejezés**gombra.
 
 ### A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként
 Az Intune ügyfélszoftverét az alábbi példaeljárás alapján egy operációsrendszer-kép részeként is telepítheti a számítógépekre:
@@ -145,7 +139,7 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 
 ### A kliensszoftver telepítésének ellenőrzése a Microsoft Intune felügyeleti konzolon
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden eszköz** &gt; **Minden számítógép** lehetőségre..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden eszköz** &gt; **Minden számítógép** lehetőségre.
 
 2.  A számítógépek listáját görgetve keresheti meg az Intune szolgáltatással kommunikáló kezelt számítógépeket, vagy a **Keresés az eszközök között** mezőben megadva a számítógép nevét (vagy annak bármely részét) kereshet meg egy adott kezelt számítógépet.
 
@@ -153,9 +147,9 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 
 ### Az összes regisztrált számítógépet megjelenítő számítógépkészlet-jelentés létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Jelentések** &gt; **Számítógépleltár-jelentések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Jelentések** &gt; **Számítógépleltár-jelentések** elemre.
 
-2.  Az **Új jelentés létrehozása** lapon az összes mezőben hagyja meg az alapértelmezett értéket (kivéve ha szűrőket kíván alkalmazni), majd kattintson a **Jelentés megjelenítése** lehetőségre..
+2.  Az **Új jelentés létrehozása** lapon az összes mezőben hagyja meg az alapértelmezett értéket (kivéve ha szűrőket kíván alkalmazni), majd kattintson a **Jelentés megtekintése**lehetőségre.
 
 3.  Ekkor egy új ablakban megjelenik a **Számítógépleltár-jelentés** lap, melyen az összes, az Intune szolgáltatásban sikeresen regisztrált számítógép látható.
 
@@ -167,6 +161,7 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

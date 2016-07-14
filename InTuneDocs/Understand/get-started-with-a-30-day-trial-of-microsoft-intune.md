@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Útmutató az Intune próbaverziójához | Microsoft Intune
-description:
-keywords:
+title: "Útmutató az Intune próbaverziójához | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 4af13629986e7cef814104f3d1f298eb2be240ac
+ms.openlocfilehash: 26ecc3dfe8816da9f30829901d929af53b1bedc0
+
 
 ---
 
@@ -30,16 +23,16 @@ A Microsoft Intune 30 napos ingyenes próbaidőszakának a mobileszközök és s
 
 Ebben a témakörben megismerkedhet az Intune-próbaidőszak használatának első lépéseivel, és a szolgáltatás áttekintése révén kiértékelheti az Intune szolgáltatásait és funkcióit.
 
-Nézze meg ezt az ötperces bemutatóvideót, amelyből megtudhatja, milyen egyszerűen megkezdheti a Microsoft Intune ingyenes próbaverziójának használatát, és ezzel eszközei felügyeletét:
+Nézze meg ezt az ötperces bemutatóvideót, amelyből megtudhatja, milyen egyszerűen megkezdheti a Microsoft Intune ingyenes próbaverziójának használatát, és ezzel eszközei felügyeletét. A videó első része egy olyan portált említ, amely már nem aktuális. Noha egy másik portált fog használni, a lépések lényegileg ugyanazok lesznek. A portálról további információkat [itt](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365) talál.
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## Előkészületek
 Az Intune használatának megkezdéséhez a következőkre lesz szüksége:
 
--   Silverlight-kompatibilis webböngészőt tartalmazó eszköz, amellyel meg tudja nyitni a webhelyeket, amelyeken Intune-felhasználói fiókokat kíván létrehozni (az **Office 365 felügyeleti központját**), és azokat, amelyeken kezelheti az eszközöket, csoportokat és házirendeket (az **Intune felügyeleti konzolját**).).
+-   Silverlight-kompatibilis webböngészőt tartalmazó eszköz, amellyel meg tudja nyitni a webhelyeket, amelyeken Intune-felhasználói fiókokat kíván létrehozni (az **Office 365 felügyeleti központját**), és azokat, amelyeken kezelheti az eszközöket, csoportokat és házirendeket (az **Intune felügyeleti konzolját**).
 
--   Webböngészőt tartalmazó második eszköz, amellyel tesztelheti, hogy az Intune-felhasználók hogyan fogják regisztrálni és kezelni eszközekeit a Vállalati portál használatával. Azt is tesztelni fogja, hogy a felhasználók miként telepítik az alkalmazásokat, és kérnek segítséget a rendszergazdáktól. Ha nem rendelkezik második eszközzel, használja az Intune-felügyelethez is használt böngésző adatvédelmi üzemmóddal kapcsolatos beállítását (az Internet Explorerben például válassza az **Eszközök** &gt; **InPrivate-böngészés** lehetőséget).).
+-   Webböngészőt tartalmazó második eszköz, amellyel tesztelheti, hogy az Intune-felhasználók hogyan fogják regisztrálni és kezelni eszközekeit a Vállalati portál használatával. Azt is tesztelni fogja, hogy a felhasználók miként telepítik az alkalmazásokat, és kérnek segítséget a rendszergazdáktól. Ha nem rendelkezik második eszközzel, használja az Intune-felügyelethez használt böngésző „privát böngészés” funkcióját (az Internet Explorerben például válassza az **Eszközök** &gt; **InPrivate-böngészés** lehetőséget).
 
 -   Ha van Microsoft Online Services-fiókja, szüksége lesz a fiók rendszergazdájának hitelesítő adataira. Ha nincs ilyen fiókja, vagy ha az adott Intune-bérlőt csak kiértékelési célokra szeretné használni, nincs szükség a bérlői rendszergazda hitelesítésére.
 
@@ -47,9 +40,9 @@ Az Intune használatának megkezdéséhez a következőkre lesz szüksége:
 
     |Platfésm|Tanúsítványokkal kapcsolatos követelmények|További információ|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 és Windows Phone 8 |A Windows Phone 8.1 azon felhasználói számára, akik az Áruházból telepítik a Vállalati portál alkalmazást, nem szükséges tanúsítvány. Windows Phone 8.0 használata esetén, illetve abban az esetben, ha a Vállalati portál alkalmazást az Intune-szolgáltatással kívánja Windows Phone 8.1-eszközre telepíteni, Symantec-tanúsítvány szükséges.|Ez az útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. A Windows Phone 8.0 támogatásával kapcsolatos információkat lásd: [Windows Phone rendszerű telefonok kezelésének beállítása a Microsoft Intune-nal](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune)..|
-    |Windows 10, Windows RT 8.1, Windows RT vagy Windows 8.1 rendszerű eszközök|A Windows RT és Windows rendszerű eszközök regisztrálásának nincsenek tanúsítványokkal kapcsolatos követelményei.|[A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](/Intune/DeployUse/install-the-windows-pc-client-with-microsoft-intune).|
-    |iOS 7.1 vagy újabb|Szerezzen be egy tanúsítványt az Apple leküldéses értesítési szolgáltatáshoz.|Igényeljen Apple Push Notification szolgáltatásbeli tanúsítványt az Apple-től a következő helyen leírtak szerint: [Az iOS kezelésének beállítása a Microsoft Intune-nal](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune)..|
+    |Windows Phone 8.1 és Windows Phone 8 |A Windows Phone 8.1 azon felhasználói számára, akik az Áruházból telepítik a Vállalati portál alkalmazást, nem szükséges tanúsítvány. Windows Phone 8.0 használata esetén, illetve abban az esetben, ha a Vállalati portál alkalmazást az Intune-szolgáltatással kívánja Windows Phone 8.1-eszközre telepíteni, Symantec-tanúsítvány szükséges.|Ez az útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. A Windows Phone 8.0 támogatásával kapcsolatos információkat lásd: [Windows Phone rendszerű telefonok kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
+    |Windows 10, Windows RT 8.1, Windows RT vagy Windows 8.1 rendszerű eszközök|A Windows RT és Windows rendszerű eszközök regisztrálásának nincsenek tanúsítványokkal kapcsolatos követelményei.|[Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |iOS 7.1 vagy újabb|Szerezzen be egy tanúsítványt az Apple leküldéses értesítési szolgáltatáshoz.|Igényeljen Apple Push Notification szolgáltatásbeli tanúsítványt az Apple-től a következő helyen leírtak szerint: [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Az Intune 30 napos kipróbálásához szükséges lépések
 - [1. lépés: Bejelentkezés, vagy regisztráció a 30 napos próbaverzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md). Mielőtt regisztrál vagy bejelentkezik az Intune-ba, fontolja meg, hogy egy meglévő fiókot szeretne-e használni, vagy inkább létrehoz egy ideiglenes fiókot, amelyet kizárólag a Microsoft Intune 30 napos kipróbálásához használ.
@@ -71,6 +64,7 @@ Itt az ideje, hogy megkezdje a 30 napos próba-előfizetés használatát!
 [Az Intune bemutatása](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

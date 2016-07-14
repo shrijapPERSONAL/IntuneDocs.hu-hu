@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal | Microsoft Intune
-description:
-keywords:
+title: "Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ Az alkalmazottak mobileszközöket használnak a személyes és munkahelyi felad
 A vállalati adatok védelme érdekében használhat Intune mobilalkalmazás-felügyeleti (MAM) szabályzatokat. Mivel az Intune MAM-szabályzatok függetlenek a mobileszköz-kezelési (MDM) megoldásoktól, a vállalati adatok védelmét az eszközök regisztrációja nélkül is biztosíthatja, így eszközkezelő megoldásra sincs feltétlenül szüksége. Az **alkalmazásszintű házirendek** érvénybe léptetésével korlátozhatja a vállalati erőforrásokhoz való hozzáférést, és az informatikai részleg adatainak is nagyobb védelmet nyújthat.
 
 A MAM-szabályzatok a következőkön futó alkalmazásokat támogatják:
+> [!IMPORTANT]
+> Mobilalkalmazás-kezelési házirendeket hozhat létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. A MAM-szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó alkalmazások esetében nem támogatottak.
 
--   **Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban felügyelt és regisztrált eszközök**. Ebbe a kategóriába jellemzően a vállalat által birtokolt eszközök tartoznak.
 
-  > [!IMPORTANT]
-  > Az iOS- és Android-eszközök Intune-ban való felügyelete esetén mobilalkalmazás-felügyeleti szabályzatok hozhatók létre az Office 365-szolgáltatásokhoz kapcsolódó Office-mobilalkalmazások számára. A MAM-szabályzatok a helyszíni Exchange-hez vagy a SharePoint-szolgáltatásokhoz kapcsolódó alkalmazások esetében nem támogatottak.
+- **A Microsoft Intune-ban felügyelt és regisztrált eszközök**. Ebbe a kategóriába jellemzően a vállalat által birtokolt eszközök tartoznak.
 
 -   **Harmadik fél mobileszköz-kezelő megoldása által felügyelt és regisztrált eszközök**.   Ebbe a kategóriába jellemzően a vállalat által birtokolt eszközök tartoznak.
 
-  > [!NOTE] A mobilalkalmazás-felügyeleti szabályzatokat nem ajánlott harmadik fél mobileszköz-kezelőjével vagy biztonságostároló-megoldásokkal együtt használni.
+  > [!NOTE]
+  > A mobilalkalmazás-felügyeleti szabályzatokat nem ajánlott harmadik fél mobileszköz-kezelőjével vagy biztonságos tároló-megoldásokkal együtt használni.
 
 -   **Nem felügyelt eszközök**.  Ebbe a kategóriába jellemzően az alkalmazottak által birtokolt eszközök tartoznak, amelyeket nem az Intune vagy más MDM-megoldás segítségével felügyelnek és regisztrálnak.
 
@@ -137,6 +132,7 @@ Minden Office-mobilalkalmazás támogatja a többszörös identitást.
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

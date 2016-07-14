@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e382583f3fcb5377b68abea959424c4b4bbcac82
-ms.openlocfilehash: 261264d9c586505af8673d2b74d00cf8ee286214
+ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
+ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
 
 
 ---
@@ -22,32 +22,6 @@ ms.openlocfilehash: 261264d9c586505af8673d2b74d00cf8ee286214
 
 Ez a témakör megmagyarázza azokat a fogalmakat, amelyeknek a megértésére feltétlenül szüksége lesz ahhoz, hogy alkalmazásokat telepítsen a Microsoft Intune-ban.
 
-## Az Intune Software Publisher
-Ha alkalmazásokat vesz fel vagy módosít a Microsoft Intune felügyeleti konzol használatával, elindul a **Microsoft Intune Software Publisher**. Ebben a közzétételi eszközben meg kell adnia és konfigurálnia kell egy szoftvertelepítő-típust, amely feltölti az Intune felhőtárhelyén tárolni kívánt számítógép- vagy mobileszköz-alkalmazásokat, illetve kapcsolódik egy online áruházhoz vagy webalkalmazáshoz.
-
-### Követelmények
-Mielőtt megkezdené a Microsoft Intune Software Publisher használatát, telepítenie kell a [Microsoft .NET-keretrendszer 4.0](https://www.microsoft.com/download/details.aspx?id=17851) teljes verzióját. Előfordulhat, hogy a Software Publisher csak akkor nyílik meg megfelelően, ha a telepítést követően újraindítja a számítógépet.
-
-## Felhőtárhely
-A szoftvertelepítő típusú telepítéssel telepített alkalmazásokat be kell csomagolni, és fel kell tölteni a Microsoft Intune felhőtárhelyébe. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A fizetett előfizetés 20 gigabájtot (GB) biztosít, illetve lehetőséget kínál további tárhely vásárlására.
-
-A **Felügyelet** munkaterület **Tárhely kihasználtsága** csomópontjában megtekintheti, hogy mennyi helyet használ jelenleg, illetve további tárhelyet is vásárolhat.
-
-A további felhőalapú Intune-tárhely vásárlására az alábbi szabályok vonatkoznak:
-
--   További tárterületet csak akkor vásárolhat, ha a szolgáltatás fizetős verzióját használja, és aktív az előfizetése.
-
--   Csak a Microsoft Online Service számlázási vagy globális rendszergazdái vásárolhatnak további tárterületet az Office 365 felügyeleti portálján. Ilyen rendszergazdák hozzáadásához, törléséhez vagy kezeléséhez globális rendszergazdának kell lennie, és be kell jelentkeznie az Office 365 felügyeleti portáljára.
-
--   Ha Ön mennyiségi licenccel rendelkező ügyfelünk, és a Nagyvállalati Szerződés keretében fizetett elő az Intune-ra vagy a Microsoft Intune-bővítményre, az árakról és a tárterület-vásárlási lehetőségekről a Microsoft helyi ügyfélmenedzserénél érdeklődhet.
-
-#### A felhőtárhelyre vonatkozó követelmények
-
--   Az azonos alkalmazáshoz tartozó fájloknak azonos helyen kell lenniük, és az Intune-nak el kell tudnia érni ezeket a fájlokat.
-
--   A feltöltött fájlok legfeljebb 2 GB méretűek lehetnek.
-
--   A fájlok feltöltéséhez legalább 768 kB/s sebességű internet-hozzáféréssel kell rendelkeznie.
 
 ## Alkalmazástelepítési műveletek
 Az alkalmazások telepítésekor a következő telepítési műveletek közül választhat:
@@ -55,8 +29,6 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 -   **Szükséges telepítés** – az alkalmazás végfelhasználói beavatkozás nélkül települ az eszközön.
 
     > [!TIP] Nem felügyelt üzemmódban működő iOS-eszközök és az összes Android-eszköz esetében az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
-    >
-    > Az iOS 7.1-es verziójánál régebbi rendszerű iOS-eszközökhöz már nem készíthetők új alkalmazáspéldányok. Az iOS 7.1-es verziójánál korábbi rendszerű eszközökhöz készült meglévő alkalmazáspéldányok azonban továbbra is működnek az Intune-ban, és az Intune felügyeli őket.
     > 
     >  Ha egy végfelhasználó törl egy Ön által kötelezőnek jelölt alkalmazást, az Intune a következő leltározási ciklus során (amely általában 7 naponta következik be) automatikusan újratelepíti az alkalmazást.
 
@@ -87,11 +59,9 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 
 -   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoport számára, és ugyanazt az alkalmazást egy eszközcsoport számára is telepíti a **Nem alkalmazható**telepítési művelettel, a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik.
 
--   A rendszergazda szándéka elsőbbséget élvez a felhasználó szándékával szemben.
-
 -   A telepítési műveletek elsőbbséget élveznek az eltávolítási műveletekkel szemben.
 
--   Ha egy eszköz egyszerre kap szükséges és elérhető telepítést, a rendszer kombinálja a műveleteket (az alkalmazás telepítése egyaránt lesz szükséges és elérhető).
+-   Ha egy eszköz számára egy kötelező és egy elérhető telepítés is rendelkezésre áll, a műveletek közösen hajthatók végre (az alkalmazás egyszerre kötelező és elérhető – a végfelhasználó tehát a vállalati portálról is telepítheti a kötelező telepítés megkezdése előtt).
 
 
 ## További lépések
@@ -99,6 +69,7 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 
