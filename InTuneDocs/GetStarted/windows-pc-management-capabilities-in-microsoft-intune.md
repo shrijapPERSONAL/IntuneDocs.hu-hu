@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows-számítógépek felügyeletére szolgáló funkciók | Microsoft Intune
-description:
-keywords:
+title: "Windows-számítógépek felügyeletére szolgáló funkciók | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
 -   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
 
+
+Az Intune a PC-s ügyfélprogram akár 7000 Windows-eszközre való telepítését is támogatja.
 
 ## Rendszerkövetelmények
 Az Intune a Windows következő verzióival rendelkező számítógépek felügyeletére alkalmas (az x86-os és az x64-es verziók felügyeletére egyaránt):
@@ -77,6 +73,7 @@ A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelmén
 [A Microsoft Intune mobileszköz-kezelési képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
