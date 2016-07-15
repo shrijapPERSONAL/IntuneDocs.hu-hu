@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-eszközök Beállítási asszisztenssel végzett regisztrációja a Microsoft Intune-nal | Microsoft Intune
-description:
-keywords:
+title: "iOS-eszközök Beállítási asszisztenssel végzett regisztrációja a Microsoft Intune-nal | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
             -   **Nincs megadva a felhasználói affinitás** – Az eszköz nem kapcsolódik felhasználóhoz. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások le vannak tiltva, vagy nem fognak működni.
 
         -   **Előzetes eszközcsoport-hozzárendelés** – Minden, ezzel a profillal telepített eszköz kezdetben ehhez a csoporthoz fog tartozni. A regisztrálás után új csoportba sorolhatja az eszközöket.
+
+        >[!Important]
+        >A csoport-hozzárendelések az Intune-ból az Azure Active Directory-ba lesznek áthelyezve. [További információ](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **Device Enrollment Program** – Az Apple Device Enrollment Program (DEP) nem használható a Beállítási asszisztenssel végzett regisztrációhoz. Ellenőrizze, hogy a váltógomb **ki** értékre van-e állítva.
 
@@ -155,6 +152,7 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 [Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

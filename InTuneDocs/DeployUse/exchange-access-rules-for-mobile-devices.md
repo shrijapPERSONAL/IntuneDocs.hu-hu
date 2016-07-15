@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A Microsoft Intune által felügyelt mobileszközökre vonatkozó Exchange-hozzáférési szabályok | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune által felügyelt mobileszközökre vonatkozó Exchange-hozzáférési szabályok | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatá
 
 ## Alapértelmezett hozzáférési szabály létrehozása
 
-1.  Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) &gt; **Házirend** &gt; **Az eszközök hozzáférhetnek az Exchange-hez** elemére..
+1.  Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) &gt; **Házirend** &gt; **Az eszközök hozzáférhetnek az Exchange-hez** elemére.
 
-2.  Az **Alapértelmezett szabály** listában válassza ki azt az alapértelmezett szabályt, amelyet minden olyan mobileszközre alkalmazni kíván, amelyre nem vonatkozik szabály vagy személyes kivétel. Válassza a **Mentés** elemet..
+2.  Az **Alapértelmezett szabály** listában válassza ki azt az alapértelmezett szabályt, amelyet minden olyan mobileszközre alkalmazni kíván, amelyre nem vonatkozik szabály vagy személyes kivétel. Válassza a **Mentés** elemet.
 
 Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatát.
 
 ## Egyéni hozzáférési szabály létrehozása
 
-1. Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) &gt; **Házirend** &gt; **Az eszközök hozzáférhetnek az Exchange-hez** elemére..
+1. Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) &gt; **Házirend** &gt; **Az eszközök hozzáférhetnek az Exchange-hez** elemére.
 
-2.  Kattintson az **Egyéni szabályok** lista **Szabály hozzáadása** elemére, majd hozzon létre egy egyéni szabályt. Válassza a **Mentés** elemet..
+2.  Kattintson az **Egyéni szabályok** lista **Szabály hozzáadása** elemére, majd hozzon létre egy egyéni szabályt. Válassza a **Mentés** elemet.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
