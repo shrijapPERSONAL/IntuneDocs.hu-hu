@@ -45,6 +45,6 @@ Az eszközök elvesztése, ellopása vagy szükségessé váló cseréje esetén
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

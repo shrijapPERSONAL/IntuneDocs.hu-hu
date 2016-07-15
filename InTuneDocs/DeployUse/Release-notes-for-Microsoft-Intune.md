@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A Microsoft Intune kibocsátási megjegyzései | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune kibocsátási megjegyzései | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -63,9 +57,9 @@ Az erőforrás-hozzáférési profilt (az e-mail-profilt) a rendszer egyik esetb
 
 **Megkerülő megoldás:** Ha az a hálózat, amelyen regisztrálni kíván egy Windows 8.1 rendszerű eszközt, hitelesített proxykiszolgáló használatát igényli, akkor a proxykiszolgáló hitelesítő adatait az eszköz regisztrálása előtt be kell állítani, és menteni kell. Hitelesítő adatok konfigurálása és mentése a Windows 8.1 rendszerű eszközökön:
 
-1.  A Windows 8.1 rendszerű eszközön nyissa meg az **Internet Explorert**..
+1.  A Windows 8.1 rendszerű eszközön nyissa meg az **Internet Explorert**.
 
-2.  Ha a rendszer kéri, adja meg a proxykiszolgáló hitelesítő adatait, majd válassza a **Jegyezze meg a hitelesítő adataimat** lehetőséget.
+2.  Ha a rendszer kéri, adja meg a proxykiszolgáló hitelesítő adatait, majd válassza a **Jegyezze meg a hitelesítő adataimat**lehetőséget.
 
 3.  Regisztrálja az eszközt.
 
@@ -78,7 +72,7 @@ Az erőforrás-hozzáférési profilt (az e-mail-profilt) a rendszer egyik esetb
 ## A Microsoft Intune App Wrapping Tool for Android nem rendelkezik beépített eltávolítási funkcióval
 **Probléma:** A **Microsoft Andorid rendszerhez készült alkalmazásburkoló eszköze** nem tartalmaz olyan beépített funkciót, amellyel eltávolítható.
 
-**Megkerülő megoldás:** Keresse meg az eszköz telepítési helyét, és törölje a könyvtárat. Az alapértelmezett telepítési hely a következő: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. További információk az alkalmazásburkoló eszközről: [Android-alkalmazások előkészítése az alkalmazásburkoló eszközzel való kezeléshez](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)..
+**Megkerülő megoldás:** Keresse meg az eszköz telepítési helyét, és törölje a könyvtárat. Az alapértelmezett telepítési hely a következő: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. További információk az alkalmazásburkoló eszközről: [Android-alkalmazások előkészítése az alkalmazásburkoló eszközzel való kezeléshez](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## A Távsegítség nem érhető el a Windows 8 vagy Windows 8.1 rendszerű számítógépeken
 **Probléma:** Ebben a kiadásban a Távsegítség funkció nem érhető el a Windows 8 vagy Windows 8.1 rendszert futtató számítógépeken.
@@ -96,6 +90,7 @@ Az Azure Betekintő portál új platformra épül, és a következő nyelveket t
 Az Intune felügyeleti konzol és a végfelhasználói mobilélmények az Azure Betekintő portál által támogatott nyelveken kívül a következő nyelveket támogatják: dán, finn, görög, norvég és román.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Tűzfalházirendek Windows rendszerű számítógépekhez | Microsoft Intune
-description:
-keywords:
+title: "Tűzfalházirendek Windows rendszerű számítógépekhez | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával a Microsoft Intune-ban
 A Microsoft Intune szolgáltatással számos módon teheti biztonságossá az Intune ügyfélprogrammal kezelt Windows rendszerű számítógépeket, beleértve a Windows tűzfal beállításainak konfigurálását lehetővé tevő házirendek használatát.
 
-Ha még nem telepítette a Windows rendszerhez készült Intune ügyfélprogramot a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről..
+Ha még nem telepítette a Windows rendszerhez készült Intune ügyfélprogramot a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
 
 Az alábbi szakaszokban található információk segítségével konfigurálhatja, telepítheti és figyelheti a Windows tűzfalházirendeket a Windows rendszerű számítógépeken.
 
@@ -48,9 +42,9 @@ A Windows tűzfalházirenddel a kezelt számítógépeken lévő Windows tűzfal
 
 ## Windows tűzfalházirend konfigurálása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 
-2.  Konfigurálja és alkalmazza a **Windows tűzfal beállításai** házirendet. Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. Ha a házirendek létrehozásával és alkalmazásával kapcsolatban további tájékoztatásra van szüksége, [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) című témakörben olvashat erről bővebben..
+2.  Konfigurálja és alkalmazza a **Windows tűzfal beállításai** házirendet. Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. Ha a házirendek létrehozásával és alkalmazásával kapcsolatban további tájékoztatásra van szüksége, [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) című témakörben olvashat erről bővebben.
 
     A következő szakaszban azok az értékek található, amelyek beállíthatók a házirendben, továbbá az alapértelmezett értékek, amelyek alkalmazva lesznek, ha nem szabja testre a házirendet.
 
@@ -73,7 +67,7 @@ Ezek a házirend-beállítások a bejövő forgalom blokkolására konfigurálj�
 
 ### A felhasználó értesítése, ha a Windows tűzfal új programot blokkol
 
-Ezek a házirend-beállítások arra konfigurálják a Windows tűzfalat, hogy értesítse-e a felhasználót, amikor bejövő forgalmat blokkol a tartományokhoz (például a munkahelyen), a megbízható magánhálózatokhoz (például otthoni hálózathoz) vagy a nem megbízható, nyilvános hálózatokhoz (például egy kávézóban) csatlakoztatott felügyelt számítógépeken. Az egyes beállítások alapértelmezett értéke az **Igen** érték..
+Ezek a házirend-beállítások arra konfigurálják a Windows tűzfalat, hogy értesítse-e a felhasználót, amikor bejövő forgalmat blokkol a tartományokhoz (például a munkahelyen), a megbízható magánhálózatokhoz (például otthoni hálózathoz) vagy a nem megbízható, nyilvános hálózatokhoz (például egy kávézóban) csatlakoztatott felügyelt számítógépeken. Az egyes beállítások alapértelmezett értéke az **Igen** érték.
 
 
 ### Előre megadott kivételek
@@ -121,9 +115,10 @@ Miután konfigurálta a fenti alapértékeket, megadhat kivételeket, amelyek á
 |**Vezeték nélküli hordozható eszközök**|Lehetővé teszi a hálózatra csatlakoztatható kamerákról vagy egyéb médiaeszközökről a kezelt számítógépek felé irányuló, Media Transfer Protocol (MTP) alapú médiaátvitelt. A beállítás SSDP és UPnP technológiát használ.|
 
 ### További információ
-[Házirendek a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
+[Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
