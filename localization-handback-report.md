@@ -1,45 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\exchange-access-rules-for-mobile-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5f336cf52cbecd93cb7b2850560327e6024302e0/InTuneDocs/DeployUse/exchange-access-rules-for-mobile-devices.md) | OutofSyncHandedBackSuccess | [Details](#308a942e22c2f7ba3ee1e29a4aff638589ce1d9440)
- [InTuneDocs\DeployUse\ios-setup-assistant-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5f336cf52cbecd93cb7b2850560327e6024302e0/InTuneDocs/DeployUse/ios-setup-assistant-enrollment-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#4a8a3d5da9ae990a29f60074d93720c1ad818a8261)
 
 ## Item Details
-##### <a name='308a942e22c2f7ba3ee1e29a4aff638589ce1d9440'></a> Source: [InTuneDocs\DeployUse\exchange-access-rules-for-mobile-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5f336cf52cbecd93cb7b2850560327e6024302e0/InTuneDocs/DeployUse/exchange-access-rules-for-mobile-devices.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [exchange-access-rules-for-mobile-devices.9bf93c310be4e8cff17ae939b75b0ac540891b24.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/0bfeb57ce21c613dcca5900972426394f77248ab/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/exchange-access-rules-for-mobile-devices.9bf93c310be4e8cff17ae939b75b0ac540891b24.hu-hu.xlf)
-* Handoff Datetime: 2016-07-12 21:35:46
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\exchange-access-rules-for-mobile-devices.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7d891749878a7b94d02744c44060570da6d8b73b/InTuneDocs/DeployUse/exchange-access-rules-for-mobile-devices.md)
-* Current Handback File: [exchange-access-rules-for-mobile-devices.9bf93c310be4e8cff17ae939b75b0ac540891b24.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d2c3fefa7535d663bce82a1fb05225483ecf0ee7/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/exchange-access-rules-for-mobile-devices.9bf93c310be4e8cff17ae939b75b0ac540891b24.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-15 02:14:10
-* [Back to Top](#report-top)
-
-##### <a name='4a8a3d5da9ae990a29f60074d93720c1ad818a8261'></a> Source: [InTuneDocs\DeployUse\ios-setup-assistant-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5f336cf52cbecd93cb7b2850560327e6024302e0/InTuneDocs/DeployUse/ios-setup-assistant-enrollment-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [ios-setup-assistant-enrollment-in-microsoft-intune.24ae84be573364d48194baa877d8a03e01c550c2.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/0bfeb57ce21c613dcca5900972426394f77248ab/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/ios-setup-assistant-enrollment-in-microsoft-intune.24ae84be573364d48194baa877d8a03e01c550c2.hu-hu.xlf)
-* Handoff Datetime: 2016-07-12 21:35:46
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\ios-setup-assistant-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7d891749878a7b94d02744c44060570da6d8b73b/InTuneDocs/DeployUse/ios-setup-assistant-enrollment-in-microsoft-intune.md)
-* Current Handback File: [ios-setup-assistant-enrollment-in-microsoft-intune.24ae84be573364d48194baa877d8a03e01c550c2.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d2c3fefa7535d663bce82a1fb05225483ecf0ee7/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/ios-setup-assistant-enrollment-in-microsoft-intune.24ae84be573364d48194baa877d8a03e01c550c2.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-15 02:14:10
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
