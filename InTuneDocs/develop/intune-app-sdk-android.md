@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
-> [!NOTE] Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](intune-app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit, és az integrációval kapcsolatos előkészületeket a támogatott platformokon. 
+> [!NOTE]
+> Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](intune-app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit és az integrációval kapcsolatos előkészületeket a támogatott platformokon. 
 
 # Az SDK tartalma 
 
@@ -369,6 +364,7 @@ Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a
 * Kerülje az API-k nem egyértelmű módon való használatát. Így például az `Activity.startActivityForResult/onActivityResult` használata a requestCode ellenőrzése nélkül működésbeli furcsaságokat idézhet elő.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

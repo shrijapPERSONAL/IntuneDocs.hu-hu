@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 7a42482dd56b25d867e2bb80dcd7ad4c3474b5e9
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
 
 
 ---
@@ -34,6 +34,7 @@ A mobilalkalmazás-kezelési (MAM-) szabályzatok csak akkor lépnek érvénybe,
     ![Képernyőfelvétel az O365 bejelentkezési oldaláról](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Miután az Azure AD-ban sikeresen megtörtént a hitelesítő adatok hitelesítése, érvénybe lépnek az MAM-szabályzatok, és a rendszer arra kéri, hogy indítsa újra a **OneDrive** alkalmazást.
+  >[MEGJEGYZÉS!] Az Újraindítás szükséges párbeszédpanel csak az Intune-ban nem regisztrált eszközökön jelenik meg.
 
     ![Képernyőfelvétel az Újraindítás szükséges párbeszédpanelről](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -142,6 +143,18 @@ A vállalati AV-, PDF- és képfájlok Android-eszközökön való megtekintés�
 
 Ezt az alkalmazást a Google Play áruházból töltheti le.  Miután telepítette az eszközre az alkalmazást, indítsa el az alkalmazást, és jelentkezzen be a vállalati hitelesítő adataival. Ekkor meg tudja tekinteni a szabályzattal felügyelt más alkalmazásokból származó nem védett és védett fájlokat is.
 
+A rendszer a következő fájltípusokat támogatja:
+
+* **Hang:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (kibővített AAC+), AAC ELD (kibővített, alacsony késleltetésű AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Videó:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Kép:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF PPDF
+
+------------
+|**pfile**|**szöveg**|
+|----|----|
+|A pfile egy olyan általános „burkoló” formátum a védett fájloknak, amely magában foglalja a titkosított tartalmakat és az RMS-licenceket, és bármilyen fájltípus védelmére használható.|A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Az Intune-ban nem regisztrált Android-eszközök**
 
 Ahhoz, hogy az Intune által felügyelt más alkalmazásokból származó fájlokat tekinthessen meg az RMS-megosztóalkalmazás segítségével, indítsa el az RMS alkalmazást, és hitelesítse munkahelyi fiókját.  A következő üzenet csak akkor jelenik meg bejelentkezéskor, ha **nem rendelkezik RMS-licenccel**:
@@ -156,6 +169,6 @@ Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekints
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

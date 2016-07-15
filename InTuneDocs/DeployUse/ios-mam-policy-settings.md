@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 066d7931904ec3c0a618c79a84dba7f11e58c550
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
 
 
 ---
@@ -76,7 +77,7 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
   Ha engedélyezi ezt a beállítást, a végfelhasználónak PIN-kódot kell beállítania és használnia az eszköz eléréséhez.  Ha nincs beállítva PIN-kód, nem indulnak el az alkalmazások. A végfelhasználó üzenetben értesül arról, hogy a vállalat követelményei szerint PIN-kód beállítása szükséges az adott alkalmazás eléréséhez.
 
   **Alapértelmezett érték = A titkosítási beállítás nincs megadva**
-- **ContactSyncDisabled:** (Névjegy-szinkronizálás letiltása) ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával, válassza az **Igen** lehetőséget. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.
+- **Névjegy-szinkronizálás letiltása:** Válassza az **Igen** lehetőséget, ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.
 
   Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
 

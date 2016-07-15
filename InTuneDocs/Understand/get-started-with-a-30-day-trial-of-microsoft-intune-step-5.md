@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A próbaidőszak alatt használt mobileszközök regisztrálása | Microsoft Intune
-description:
-keywords:
+title: "A próbaidőszak alatt használt mobileszközök regisztrálása | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -38,11 +32,11 @@ Az Intune szolgáltatással történő mobileszköz-kezelés beállításához e
 
     A mobileszköz-kezelés engedélyezése a kezelni kívánt eszközplatform esetén. A követelmények a platformtól függően eltérőek:
 
-    -   **iOS és Mac OS X** esetén lásd: [iOS- és Mac-eszközök kezelésének beállítása a Microsoft Intune-ban](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune) című témakört..
+    -   **iOS és Mac OS X**: lásd az [iOS- és Mac-eszközök kezelésének beállítása a Microsoft Intune-ban](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune) című témakört.
 
     -   **Android**: Az Android rendszerű mobileszközök lehetővé teszik, hogy a felhasználók a Google Play áruházban elérhető Vállalati portál alkalmazással regisztráljanak. Így nincs szükség további Intune konfigurációra.
 
-    -   **Windows Phone** rendszer esetén lásd: [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)..
+    -   **Windows Phone**: lásd a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune) című témakört.
 
 ## Teszteszközök regisztrálása
 
@@ -62,9 +56,9 @@ Ha a program a **kiszolgáló címét**kéri, írja be a manage.microsoft.com c�
 
 
 ## A korábban telepített alkalmazások telepítése
-Nyissa meg a Vállalati portált a mobileszközön, majd válassza az **Alkalmazások** lehetőséget, és telepítse a **Microsoft Skype** alkalmazást..
+Nyissa meg a Vállalati portált a mobileszközön, majd válassza az **Alkalmazások** lehetőséget, és telepítse a **Microsoft Skype** alkalmazást.
 
-A mobileszközök Intune használatával történő kezelésével kapcsolatosan bővebb információk a [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) című témakörben olvashatók..
+A mobileszközök Intune használatával történő kezelésével kapcsolatosan bővebb információk a [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) című témakörben olvashatók.
 
 ### További lépések
 Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 5. lépését.
@@ -74,6 +68,7 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 5. l
 >[&larr; **Házirendek létrehozása**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Beállítások és kiegészítő funkciók** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
