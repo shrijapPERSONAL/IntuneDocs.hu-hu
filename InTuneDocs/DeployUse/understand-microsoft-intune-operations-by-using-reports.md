@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: A Microsoft Intune-műveletek értelmezése jelentések segítségével | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune-műveletek értelmezése jelentések segítségével | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -45,6 +38,7 @@ Az Intune-jelentések információkat nyújtanak a szervezetében lévő szoftve
 |**Meg nem felelő alkalmazások jelentés**|Információkat jelenít meg azokról a felhasználókról, akiknek olyan telepített alkalmazásaik vannak, amelyek szerepelnek az Ön megfelelő és meg nem felelő alkalmazásokat tartalmazó listáján. Ezzel a jelentéssel megtalálhatja azokat a felhasználókat és eszközöket, akik és amelyek nem felelnek meg a szervezete alkalmazás-házirendjeinek.|
 |**Tanúsítványmegfelelőségi jelentés**|Megjeleníti, hogy mely tanúsítványok lettek kibocsátva a felhasználóknak és az eszközöknek az SCEP vagy PKCS #12 (.PFX) formátumban. Ezzel a jelentéssel megtalálhatja a kibocsátott, lejárt és visszavont tanúsítványokat.|
 |**Eszközelőzmények jelentés**|Megjeleníti a korábbi kivonási, tartalomtörlési és egyéb törlési műveletek naplóját. Ezzel a jelentéssel megállapíthatja, hogy korábban ki indított műveleteket az egyes eszközökön.|
+|**Állapotigazolási jelentések**|Megjeleníti a mobileszközök állapotát.|
 |**Mac OS X hardverjelentés**|A kijelölt csoportokban megjeleníti az összes regisztrált Mac OS X-alapú eszköz hardveres jellemzőit. Az eszközökről gyűjtött hardverleltárakkal kapcsolatos további információkért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X szoftverjelentés**|A kijelölt csoportokban megjeleníti az összes regisztrált Mac OS X-alapú eszközön telepített szoftvereket. A jelentés a szoftver nevét (csomagazonosítóként), a rövid (vagy valódi) nevet, a verziót és a szoftverrel telepített eszközök számát tünteti fel.|
 
@@ -74,6 +68,7 @@ A fentiek mellett a jelentések az alábbi műveleteket támogatják:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

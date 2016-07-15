@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Szabályzatok létrehozása és alkalmazások közzététele a próbaidőszak felhasználói számára | Microsoft Intune
-description:
-keywords:
+title: "Szabályzatok létrehozása és alkalmazások közzététele a próbaidőszak felhasználói számára | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
 # Szabályzatok létrehozása és alkalmazások közzététele a próbaidőszak felhasználói számára
-Az Intune-szabályzatok beállításokat biztosítanak a mobileszközök biztonsági beállításainak kezeléséhez, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartásához, illetve alkalmazások telepítéséhez. Ha azt tervezi, hogy az Intune szolgáltatást olyan eszközökön használja majd, amelyeket a próbaidőszakot követő üzemi használatra konfigurált, elengedhetetlen fontosságú, hogy kövesse [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), illetve a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) című témakörben szereplő utasításokat..
+Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. Ha azt tervezi, hogy az Intune szolgáltatást olyan eszközökön használja majd, amelyeket a próbaidőszakot követő üzemi használatra konfigurált, elengedhetetlen fontosságú, hogy kövesse [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), illetve a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) című témakörben szereplő utasításokat.
 
 Az Intune használatával az alkalmazásokat kétféle módon telepítheti. Az első egy **kötelező telepítés**, mely az adott alkalmazást automatikusan telepíti a felügyelt számítógépekre. A másik egy **elérhető telepítés**, mely telepíti az adott alkalmazást, vagy létrehoz egy hozzá kapcsolódó hivatkozást az Intune Vállalati portálon, így a felhasználók maguk dönthetik el, hogy a számítógépükre vagy a mobilkészülékükre telepítik az alkalmazást.
 
@@ -37,15 +31,15 @@ E lépések során egy mobileszköz-konfigurációs házirendet és egy Windows 
 
 ## Mobileszköz-konfigurációs házirend létrehozása és alkalmazása
 
-1.  Nyissa meg az [Intune felügyeleti konzolt](https://manage.microsoft.com/)..
+1.  Nyissa meg az [Intune felügyeleti konzolt](https://manage.microsoft.com/).
 
 2.  A bal oldali ablaktáblában kattintson a **Házirend** ikonra.
 
-3.  A **Házirendek – áttekintés** lap **Feladatok** listájában válassza a **Házirend hozzáadása**lehetőséget..
+3.  A **Házirendek – áttekintés** lap **Feladatok** listájában válassza a **Házirend hozzáadása** lehetőséget.
 
-4.  A házirendlistában bontsa ki azt a platformot, amelyhez létre szeretné hozni a házirendet, válassza az **Általános konfiguráció**, majd az **Egyéni házirend létrehozása és telepítése az ajánlott beállításokkal** lehetőséget, és végül kattintson a **Házirend létrehozása** gombra..
+4.  A házirendlistában bontsa ki azt a platformot, amelyhez létre szeretné hozni a házirendet, válassza az **Általános konfiguráció**, majd az **Egyéni házirend létrehozása és telepítése az ajánlott beállításokkal** lehetőséget, és végül kattintson a **Házirend létrehozása** gombra.
 
-5.  Amikor a program kéri, hogy **válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet**, válassza a **My Trial Users** (Próbafelhasználók) csoportot a listából, és kattintson a **Hozzáadás** &gt; **OK** elemre..
+5.  Amikor a program kéri, hogy **válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet**, válassza a **Próbafelhasználók** csoportot a listából, és kattintson a **Hozzáadás** &gt; **OK** elemre.
 
 A házirend ekkor megjelenik a konfigurációs házirendek listájában, és már alkalmazva van a **Próbafelhasználók** csoportra. A beállítások megtekintéséhez kattintson duplán a házirendre.
 
@@ -56,13 +50,13 @@ A házirend ekkor megjelenik a konfigurációs házirendek listájában, és má
     > [!NOTE]
     > Az **Intune Software Publisher** első elindításakor egy kis ideig várakozni kell, amíg az alkalmazás települ.
 
-2.  Olvassa el a biztonsági figyelmeztetést, majd kattintson a **Futtatás** gombra..
+2.  Olvassa el a biztonsági figyelmeztetést, majd válassza a **Futtatás** lehetőséget.
 
-3.  Az **Előkészületek** lapon kattintson a **Tovább** gombra..
+3.  Az **Előkészületek** lapon válassza a **Tovább** elemet.
 
-4.  A **Szoftver telepítése** lap **Válassza ki, hogyan szeretné elérhetővé tenni ezt a szoftvert az eszközök számára** beállításánál válassza a **Külső hivatkozás** lehetőséget..
+4.  A **Szoftvertelepítés** lap **Válassza ki, hogyan legyen elérhető a szoftver az eszközök számára**beállításánál válassza a **Külső hivatkozás**lehetőséget.
 
-5.  Az **Adja meg az URL-címet**mezőben adja meg a szoftver külső hivatkozását, majd válassza a **Tovább** elemet. Ügyeljen arra, hogy az URL-cím elé kiírja a **https://** előtagot. A Skype alkalmazás esetén az alábbi hivatkozások közül válassza az Ön által használt mobileszköz platformjának megfelelőt:
+5.  Az **Adja meg az URL-címet** mezőben adja meg a szoftver külső hivatkozását, majd válassza a **Tovább** elemet. Ügyeljen arra, hogy az URL-cím elé kiírja a **https://** előtagot. A Skype alkalmazás esetén az alábbi hivatkozások közül válassza az Ön által használt mobileszköz platformjának megfelelőt:
 
     -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -86,13 +80,13 @@ A házirend ekkor megjelenik a konfigurációs házirendek listájában, és má
 
 7.  Az **Összefoglalás** lapon ellenőrizze a szoftver adatait, majd válassza a **Feltöltés** lehetőséget. Kattintson a **Bezárás** gombra a varázslóból való kilépéshez.
 
-8.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza az **Alkalmazások** &gt; **Alkalmazások** &gt; **Skype** &gt; **Üzembe helyezés kezelése** lehetőséget..
+8.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson az **Alkalmazások** &gt; **Alkalmazások** &gt; **Skype** &gt; **Üzembe helyezés kezelése** elemre.
 
-9. A **Csoportok kiválasztása** lapon válassza a **My Trial Users** (Próbafelhasználók) csoportot, hogy a szoftver telepítése ebben a felhasználói csoportban történjen, majd kattintson a **Hozzáadás** &gt; **Tovább** elemre..
+9. A **Csoportok kiválasztása** lapon válassza a **Próbafelhasználók** csoportot, hogy a szoftver telepítése ebben a felhasználói csoportban történjen, majd kattintson a **Hozzáadás** &gt; **Tovább** elemre.
 
 10. A **Telepítési művelet** lapon válassza a **Telepíthető** lehetőséget a csoport **Jóváhagyás** oszlopában.
 
-11. Válassza a **Befejezés** lehetőséget..
+11. Válassza a **Befejezés** lehetőséget.
 
 Most már a Vállalati portálon keresztül telepítheti a Skype alkalmazást a mobileszközökre, ehhez azonban először a számítógépekre és a mobileszközökre kell telepítenie az Intune alkalmazást.
 
@@ -101,9 +95,10 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 4. l
 
 >[!div class="step-by-step"]
 
->[&larr; **Csoportok létrehozása**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Eszközök regisztrálása** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[&larr; **Eszközcsoportok létrehozása**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Eszközök regisztrálása** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: A Microsoft Intune próbaverziójának elindítása és az iOS PIN-kódokra vonatkozó szabályzatának alkalmazása | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune próbaverziójának elindítása és az iOS PIN-kódokra vonatkozó szabályzatának alkalmazása | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # A Microsoft Intune próbaverziójának elindítása és az iOS PIN-kódokra vonatkozó szabályzatának alkalmazása
-Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállításában és PIN-házirend konfigurálásában az iOS-eszközökhöz. Az Intune értékelésével kapcsolatos további kipróbálható általános feladatok listájáért lásd: [A Microsoft Intune értékelésével kapcsolatos általános feladatok](common-microsoft-intune-evaluation-tasks.md)..
+Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállításában és PIN-házirend konfigurálásában az iOS-eszközökhöz. Az Intune értékelésével kapcsolatos további kipróbálható általános feladatok listáját a [Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md) (A Microsoft Intune értékelésével kapcsolatos általános feladatok) című témakörben tekintheti meg.
 
 
 
@@ -42,11 +36,11 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 > [!NOTE]
 > Ha már rendelkezik Intune-előfizetéssel, hagyja ki ezt a szakaszt, és folytassa a következő szakasszal.
 
-1.  Egy Windows-számítógépen kattintson a jobb gombbal az **Internet Explorer** (IE) elemre, és válassza az **InPrivate-böngészés** lehetőséget..
+1.  Windows rendszerű számítógépen kattintson a jobb gombbal az **Internet Explorer** (IE) elemre, és válassza az **InPrivate-böngészés** lehetőséget.
 
     ![InPrivate-böngészés indítása](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  Nyissa meg az [Intune regisztrációs portálját](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), adja meg a kért információkat, majd kattintson a **Tovább** gombra..
+2.  Lépjen az [Intune feliratkozási portálra](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), adja meg a kért információkat, és kattintson a **Tovább** gombra.
 
     ![Fiók regisztrálása](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -58,7 +52,7 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
     ![Adatok ellenőrzése](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Mentse a képernyőn megjelenő információkat, majd kattintson a **Készen áll** elemre..
+5.  Mentse el a képernyőn megjelenő információkat, majd kattintson a **Készen áll...** gombra.
 
     ![Készen áll](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -80,11 +74,11 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
     3.  Törölje az **Ennek a személynek a következő bejelentkezéskor módosítania kell a jelszavát** jelölőnégyzet bejelölését.
 
-    4.  Kattintson a **Létrehozás** gombra..
+    4.  Kattintson a **Létrehozás** gombra.
 
     ![Új felhasználói fiók létrehozása](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  A felhasználó létrehozásának megerősítési oldalán kattintson a **Bezárás** gombra..
+4.  A felhasználó létrehozásának megerősítési oldalán kattintson a **Bezárás** gombra.
 
     ![A felhasználó létrehozásának megerősítési oldala](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -106,11 +100,11 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
 2.  Engedélyezze az iOS-eszközök regisztrációját. Ez a folyamat megbízható tanúsítványt állít be az Apple Push Notification szolgáltatás (APNs) és az Intune-előfizetés között.
 
-    1.  Kattintson **Az iOS és a Mac OS X platform engedélyezése** elemre..
+    1.  Kattintson **Az iOS és a Mac OS X platform engedélyezése** gombra.
 
         ![iOS- és Mac OS X-regisztráció engedélyezése](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  Kattintson **Az APNs-tanúsítványkérelem letöltése** elemre..
+    2.  Kattintson **Az APNs-tanúsítványkérelem letöltése** gombra.
 
         ![Az APNs-tanúsítvány letöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -126,19 +120,19 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
         ![Jelentkezzen be az Apple Push Certificates Portal webhelyre.](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  Kattintson a **Create a Certificate** (Tanúsítvány létrehozása) elemre..
+    6.  Kattintson a **Create a Certificate** (Tanúsítvány létrehozása) gombra.
 
         ![APNs-tanúsítvány létrehozása](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Olvassa el az Apple felhasználási feltételeit, jelölje be a jelölőnégyzetet, és kattintson az **Accept** (Elfogadás) gombra..
+    7.  Olvassa el az Apple felhasználási feltételeit, jelölje be a jelölőnégyzetet, és kattintson az **Accept** (Elfogadás) gombra.
 
         ![A feltételek elfogadása](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Kattintson a **Browse** (Tallózás) gombra..
+    8.  Kattintson a **Tallózás** gombra.
 
         ![Nyissa meg a mappát, ahová menteni szeretné a tanúsítványt.](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. Válassza ki a korábban mentett CSR-fájlt, majd kattintson az **Open** (Megnyitás) gombra..
+    9. Válassza ki a korábban mentett CSR-fájlt, és kattintson az **Open** (Megnyitás) gombra.
 
         ![A tanúsítvány megnyitása](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -146,43 +140,43 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
         ![A tanúsítvány feltöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. Ha a rendszer felszólítja a JSON-fájl letöltésére, kattintson a **Save as** (Mentés másként) gombra..
+    11. Ha a rendszer rákérdez a JSON-fájl letöltésére, kattintson a **Save as** (Mentés másként) gombra.
 
         ![A JSON-fájl mentése](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. Adja meg a JSON-fájl letöltési helyét, majd kattintson a **Save** (Mentés) parancsra..
+    12. Adjon meg egy helyet a JSON-fájl számára, majd kattintson a **Save** (Mentés) parancsra.
 
         ![A JSON-fájl mentési helyének megadása](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Ha az oldal nem irányítja át automatikusan néhány másodpercen belül, kattintson a **Cancel** (Mégse) gombra..
+        Ha az oldala nem irányítja át automatikusan néhány másodpercen belül, kattintson a **Cancel** (Mégse) gombra.
 
         ![Vonja vissza a Mégse gombbal, ha az oldal nem irányítja át](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Az újonnan létrehozott tanúsítványfájl lekéréséhez kattintson a **Download** (Letöltés) gombra..
+    13. Az újonnan létrehozott tanúsítványfájl lekéréséhez kattintson a **Download** (Letöltés) gombra.
 
         ![A tanúsítvány letöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. Ha a rendszer rákérdez a PEM-fájl letöltésére, kattintson a **Save as** (Mentés másként) gombra..
+    14. Ha a rendszer rákérdez a PEM-fájl letöltésére, kattintson a **Save as** (Mentés másként) gombra.
 
         ![A PEM-fájl letöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. Adja meg a PEM-fájl letöltési helyét, majd kattintson a **Save** (Mentés) parancsra..
+    15. Adjon meg egy helyet a PEM-fájl számára, majd kattintson a **Save** (Mentés) parancsra.
 
         ![A PEM-fájl mentése](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Térjen vissza az Intune felügyeleti konzoljára, és kattintson **Az APNs-tanúsítvány feltöltése** gombra..
+    16. Térjen vissza az Intune felügyeleti konzoljára, és kattintson **Az APNs-tanúsítvány feltöltése** gombra.
 
         ![Az APNs-tanúsítvány feltöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. Adja meg az Apple ID azonosítót, majd kattintson a **Tallózás** gombra..
+    17. Adja meg az Apple ID-t, és kattintson a **Tallózás** gombra.
 
         ![Az Apple ID megadása](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. Válassza ki a nemrég mentett PEM-fájlt, majd kattintson a **Megnyitás** gombra..
+    18. Válassza ki a nemrég mentett PEM-fájlt, és kattintson a **Megnyitás** gombra.
 
         ![A PEM-fájl megnyitása](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. Kattintson a **Feltöltés** elemre..
+    19. A befejezéshez kattintson a **Feltöltés**.
 
         ![A PEM-fájl feltöltése](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -192,37 +186,37 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
 3.  Tesztfelhasználói csoport létrehozása a házirendek célzásához:
 
-    1.  A bal oldali panelen kattintson a **Csoportok** elemre..
+    1.  A bal oldali panelen kattintson a **Csoportok** elemre.
 
         ![A Csoportok menü megnyitása](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  A jobb szélen kattintson a **Csoport létrehozása** elemre..
+    2.  A jobb szélen kattintson a **Csoport létrehozása** elemre.
 
         ![Csoport létrehozása](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  Adjon meg egy csoportnevet, válassza a **Minden felhasználó** elemet szülőcsoportként, majd kattintson a **Tovább** gombra..
+    3.  Adjon meg egy csoportnevet, válassza a **Minden felhasználó** elemet szülőcsoportként, és kattintson a **Tovább** gombra.
 
         ![A Minden felhasználó szülőcsoportnak való kiválasztása](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
-    4.  A **Csoporttagság kezdése a következővel** mezőben válassza **A szülőcsoport összes felhasználója** elemet, és kattintson a **Befejezés** gombra..
+    4.  A **Csoporttagság kezdése a következővel:** mezőben válassza **A szülőcsoport összes felhasználója** elemet, és kattintson a **Befejezés** gombra.
 
         ![Csoporttagság kezdése a szülőcsoporttal](../media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  Hozzon létre egy iOS PIN-kódokra vonatkozó házirendet és célozza meg azzal a tesztfelhasználói csoportot:
 
-    1.  A bal oldali panelen kattintson a **Házirend** elemre..
+    1.  A bal oldali panelen kattintson a **Házirend** elemre.
 
         ![Házirend munkaterület megnyitása](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  A jobb szélen kattintson a **Házirend hozzáadása** elemre..
+    2.  A jobb szélen kattintson a **Házirend hozzáadása** elemre.
 
         ![Házirend hozzáadása](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
-    3.  Bontsa ki az iOS csomópontot, válassza az **Általános konfiguráció** sort, és kattintson a **Házirend létrehozása** elemre..
+    3.  Bontsa ki az iOS csomópontot, válassza az **Általános konfiguráció** sort, és kattintson a **Házirend létrehozása** elemre.
 
         ![Általános konfigurációs házirend létrehozása iOS-eszközökhöz](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  Adjon nevet a házirendnek, kapcsolja be **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítást, és állítsa a **Jelszó minimális hossza** beállítást **4** értékre..
+    4.  Adjon meg egy nevet a házirend számára, kapcsolja be **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítást, és állítsa a **Jelszó minimális hossza** beállítást **4** értékre.
 
         ![Jelszóbeállítások megadása](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -230,7 +224,7 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
         ![Házirend telepítése](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Kattintson a korábban létrehozott felhasználói csoportra, kattintson a **Hozzáadás** gombra, és kattintson az **OK** gombra..
+    6.  Kattintson a korábban létrehozott felhasználói csoportra, kattintson a **Hozzáadás** gombra, és kattintson az **OK** gombra.
 
         ![Házirend csoportjának kiválasztása](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -242,9 +236,9 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
 1.  Egy iPad készüléken indítsa el az iOS App Store áruházat, telepítse az ingyenes **Microsoft Intune Munkahelyi portál** alkalmazást, majd nyissa meg azt.
 
-    ![Vállalati portál telepítése](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
+    ![A Vállalati portál telepítése](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Adja meg a tesztfelhasználói fiók nevét és jelszavát, majd koppintson a **Bejelentkezés** gombra..
+2.  Adja meg a tesztfelhasználói fiók nevét és jelszavát, és koppintson a **Bejelentkezés** gombra.
 
     ![Hitelesítő adatok megadása](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -252,19 +246,19 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
     ![Regisztráció megkezdése](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  A **Profil telepítése** képernyőn koppintson a **Telepítés** gombra..
+4.  A **Profil telepítése** képernyőn koppintson a **Telepítés** gombra.
 
     ![Profil telepítése](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  A **Profil telepítése** párbeszédpanelen koppintson a **Telepítés** gombra..
+5.  A **Profil telepítése** párbeszédpanelen koppintson a **Telepítés** gombra.
 
     ![Profil telepítésének folytatása](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  A **Figyelmeztetés** képernyőn koppintson a **Telepítés** gombra..
+6.  A **Figyelmeztetés** képernyőn koppintson a **Telepítés** gombra.
 
     ![Figyelmeztető üzenet elfogadása](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  A **Távoli felügyelet** párbeszédpanelen koppintson a **Megbízhatóság** gombra..
+7.  A **Távoli felügyelet** párbeszédpanelen koppintson a **Megbízhatóság** gombra.
 
     ![Távfelügyelet megbízhatóságának beállítása](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -276,11 +270,11 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 
     ![Az OK gomb megérintése a Vállalati portál alkalmazás bezárásához](../media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
 
-10. Amikor a rendszer PIN-kód konfigurálását kéri, koppintson a **Folytatás** gombra..
+10. Amikor a rendszer PIN-kód konfigurálását kéri be, koppintson a **Folytatás** gombra.
 
     ![PIN-kód beállítására felszólító kérés elfogadása](../media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png)
 
-11. Írja be a kívánt PIN-kódot, koppintson a **Folytatás** gombra, írja be ismét a PIN-kódot, végül koppintson a **Mentés** gombra..
+11. Írja be a PIN-kódját, koppintson a **Folytatás** gombra, írja be ismét a PIN-kódját, és koppintson a **Mentés** gombra.
 
     ![PIN-kód beállítása](../media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
@@ -290,6 +284,7 @@ Ezek a részletes útmutatók segítenek az Intune próbaverziójának beállít
 [Útmutató az Intune próbaverziójához](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

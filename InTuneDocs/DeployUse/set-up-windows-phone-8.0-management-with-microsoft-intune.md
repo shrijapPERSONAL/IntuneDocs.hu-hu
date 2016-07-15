@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8.0 rendszerű telefonok kezelésének beállítása | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.0 rendszerű telefonok kezelésének beállítása | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 A Windows Phone 8.0 rendszerű eszközökön az Intune Vállalati portál alkalmazás telepítéséhez, valamint az eszközfelügyelet lehetővé tételéhez Symantec-tanúsítvány szükséges. Ugyancsak tanúsítvány szükséges az üzletági alkalmazások aláírásához. Ez a témakör kizárólag a Windows Phone 8.0 rendszerre vonatkozik. A Windows Phone 8.1 és újabb rendszerű eszközök (ideértve a Windows 10 Mobile rendszert is) felügyeletével kapcsolatban olvassa el a [Windows Phone rendszerű eszközök regisztrálásának beállítása](set-up-windows-phone-management-with-microsoft-intune.md) című témakört.
 
-> [!IMPORTANT] 2016 szeptemberétől a Vállalati portál alkalmazást nem lehet letölteni a Windows 8.0-s és a Windows Phone 8.0-s eszközökre.
+> [!IMPORTANT]
+> 2016 szeptemberétől a Vállalati portál alkalmazást nem lehet letölteni a Windows 8.0-s és a Windows Phone 8.0-s eszközökre.
 
 -   **Windows Phone 8** – Tanúsítvány szükséges
 -   A **Windows Phone 8.1 és a Windows 10 Mobile** kizárólag a következő esetekben igényel tanúsítványt:
@@ -41,7 +36,8 @@ A Windows Phone 8.0 rendszerű eszközökön az Intune Vállalati portál alkalm
 
 ![Tanúsítványokkal kapcsolatos követelmények diagramja](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Az egyes Windows és Windows Phone rendszerű mobileszközök kezelésére szolgáló Symantec-tanúsítványt [rendszeres időközönként meg kell újítani](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Az egyes Windows és Windows Phone rendszerű mobileszközök kezelésére szolgáló Symantec-tanúsítványt [rendszeres időközönként meg kell újítani](renew-a-symantec-code-signing-certificate.md).
 
 A Windows Phone-telefonok kezelésével kapcsolatos beállítási követelmények a kezelés módjától függenek.  Ha a munkahely DNS-regisztrációs beállításai között két CNAME rekord is meg van adva, a felhasználók egyszerűbben regisztrálhatják az eszközeiket. Ha a felhasználók letöltik az Áruházból a Vállalati portál alkalmazást, akkor a DNS-beállítások konfigurálása után csupán be kell állítani a portált, majd értesíteni kell a felhasználókat az eszközregisztrálás mikéntjéről.  A Windows Phone 8.0-s és a Windows Phone 8.1-es telefonokon a vállalati portál üzembe helyezésekor a Symantec megfelelő tanúsítványát is telepíteni kell, mert csak így lehet aláírni az alkalmazás kódját.
 
@@ -186,6 +182,7 @@ Az Intune-t tartalmazó Windows Phone 8.1-es telefonokra a Windows Phone Áruhá
     > -   Ha szükség van közvetlenül telepített alkalmazások telepítésére, valamint Windows Phone 8.0 rendszerű eszközöket is regisztrálni kell, és azoknak fogadnia kell az ssp.xap fájlt, hozzon létre egy új szoftvertelepítést az ssp.xap fájlhoz, és terjessze azt az **Eltávolítás** művelettel. A Windows Phone 8.0 rendszerű eszközök nem támogatják az alkalmazások kényszerített telepítését és eltávolítását, így azok figyelmen kívül fogják hagyni a telepítést. A Windows Phone 8.1 rendszerű eszközök támogatják az eltávolítási műveletet, és el fogják távolítani az ssp.xap alkalmazást.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,27 @@
 ---
-# required metadata
-
-title: Szoftverfrissítések Windows rendszerű számítógépekhez | Microsoft Intune
-description:
-keywords:
+title: "Szoftverfrissítések Windows rendszerű számítógépekhez | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+
 
 ---
 
 # Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
 A Microsoft Intune többféle módszerrel könnyíti meg a felügyelt számítógépek védelmét, például a számítógépeket naprakészen tartó szoftverfrissítések kezelésével, amelyek segítenek a legújabb javítások és szoftverfrissítések gyors telepítésében.
 
-Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről..
+Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
 
 Ha új frissítések érhetők el a Microsoft Update-ben, vagy egy külső gyártótól származó frissítést hozott létre, és azok alkalmazhatók a kezelt számítógépekre, megjelenik egy értesítés a **Frissítések** munkaterület **Áttekintés** lapján. Miután ezt az értesítési hivatkozást választotta, különféle műveleteket végezhet el, például megtekintheti a frissítés további adatait, jóváhagyhatja vagy elutasíthatja a frissítést, és megtekintheti, hogy mely számítógépeken lesz telepítve a frissítés, ha jóváhagyja.
 
@@ -44,9 +37,9 @@ A szoftverfrissítések létrehozásának és jóváhagyásának megkezdése el�
 
 ### Frissítési házirend-beállítások konfigurálása
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** lehetőséget.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemet.
 
-2.  Konfiguráljon és alkalmazzon egy **Microsoft Intune-ügynökbeállítási** házirendet a frissítési beállításokhoz. Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. Ha a házirendek létrehozásával és alkalmazásával kapcsolatban további tájékoztatásra van szüksége, [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) című témakörben olvashat erről bővebben..
+2.  Konfiguráljon és alkalmazzon egy **Microsoft Intune-ügynökbeállítási** házirendet a frissítési beállításokhoz. Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. Ha a házirendek létrehozásával és alkalmazásával kapcsolatban további tájékoztatásra van szüksége, [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) című témakörben olvashat erről bővebben.
 
 A következő táblázatban azok az értékek láthatók, melyek beállíthatók a házirendben, továbbá az ajánlott értékek, amelyek alkalmazva lesznek, ha nem szabja testre a házirendet. Ezek a beállítások a **Frissítések** részben találhatók meg.
 
@@ -73,7 +66,7 @@ Az alábbi két eljárással készülhet fel a szoftverfrissítések alkalmazás
 
 ### A kezelt számítógépek számára elérhetővé tenni kívánt termékkategóriák és frissítési besorolások beállítása
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Rendszergazda** &gt; **Frissítések** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
 2.  A **Szolgáltatás beállításai: Frissítések** oldal **Termékkategória** listájából válassza ki a számítógépek számára elérhetővé tenni kívánt frissítési kategóriákat. Fontos megjegyezni, hogy a leggyakoribb frissítések alapértelmezés szerint be vannak jelölve.
 
@@ -86,9 +79,9 @@ Az alábbi két eljárással készülhet fel a szoftverfrissítések alkalmazás
 
 ### A szoftverfrissítések automatikus jóváhagyási szabályainak konfigurálása
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Rendszergazda** &gt; **Frissítések** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
-2.  Az **Automatikus jóváhagyási szabályok** részben, a **Kiszolgálóbeállítások: Frissítések** oldalon válassza az **Új** lehetőséget..
+2.  Az **Automatikus jóváhagyási szabályok** részben, a **Kiszolgálóbeállítások: Frissítések** oldalon válassza az **Új** lehetőséget.
 
 3.  Az Automatikus jóváhagyási szabály létrehozása varázsló **Általános** lapján adjon meg egy nevet, illetve megadhat egy leírást a szabályhoz.
 
@@ -98,16 +91,16 @@ Az alábbi két eljárással készülhet fel a szoftverfrissítések alkalmazás
 
 6.  Az **Alkalmazás** lapon tegye a következőket:
 
-    -   Válassza ki a számítógépcsoportokat, melyekre alkalmazni kívánja az új szabályt, majd válassza a **Hozzáadás** lehetőséget..
+    -   Válassza ki a számítógépcsoportokat, melyekre alkalmazni kívánja az új szabályt, majd válassza a **Hozzáadás** lehetőséget.
 
     -   A frissítésekhez a **Telepítési határidő érvényesítése ezekre a frissítésekre** jelölőnégyzet bejelölésével, majd a **Telepítési határidő** listából a telepítési határidő kiválasztásával megadhat egy telepítési határidőt.
 
         > [!NOTE]
         > Ha megad egy telepítési határidőt, előfordulhat, hogy a kezelt számítógépeken a határidő lejárta után egy vagy több újraindításra lesz szükség.
 
-    -   Ha elkészült, válassza a **Tovább** elemet..
+    -   Ha elkészült, válassza a **Tovább** elemet.
 
-7.  Az **Összesítés** lapon tekintse át az új szabály beállításait, majd válassza a **Befejezés** lehetőséget..
+7.  Az **Összesítés** lapon tekintse át az új szabály beállításait, majd válassza a **Befejezés** lehetőséget.
 
 Az új szabály az **Automatikus jóváhagyási szabályok** részben jelenik meg, a következő helyen: **Kiszolgálóbeállítások: Frissítések** oldal.
 
@@ -117,15 +110,15 @@ Az új szabály az **Automatikus jóváhagyási szabályok** részben jelenik me
 
 ### Automatikusan jóváhagyott frissítésekre vonatkozó szabályok szerkesztése, futtatása vagy törlése
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Rendszergazda** &gt; **Frissítések** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
 2.  Az **Automatikus jóváhagyási szabályok** részben jelöljön ki egy szabályt, majd hajtsa végre a következők egyikét:
 
-    -   A szabály szerkesztéséhez válassza a **Szerkesztés** lehetőséget, majd az **Automatikus jóváhagyási szabály frissítése varázslóban** módosítsa a szabály paramétereit..
+    -   A szabály szerkesztéséhez válassza a **Szerkesztés** lehetőséget, majd az **Automatikus jóváhagyási szabály frissítése varázslóban** módosítsa a szabály paramétereit.
 
-    -   A szabály futtatásához válassza **A kijelölt futtatása** lehetőséget..
+    -   A szabály futtatásához válassza **A kijelölt futtatása** lehetőséget.
 
-    -   A szabály törléséhez válassza a **Törlés** lehetőséget..
+    -   A szabály törléséhez válassza a **Törlés** lehetőséget.
 
         > [!NOTE]
         > Egy szabály törlése nem befolyásolja a törölt szabály által jóváhagyott korábbi frissítéseket.
@@ -135,7 +128,7 @@ Telepítheti nem a Microsoft által készített szoftverek frissítéseit is. Ez
 
 ### Külső gyártótól származó frissítés feltöltése és konfigurálása
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Frissítések** &gt; **Áttekintés** &gt; **Feltöltés** elemet..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Frissítések** &gt; **Áttekintés** &gt; **Feltöltés** elemre.
 
 2.  A **Frissítésfájlok** lapon a **Tallózás** lehetőséget választva jelölje ki a telepítési fájlokat, amelyek szükségesek a frissítés telepítéséhez. A fájl lehet Windows Installer (.msi) fájl, Windows Installer javítófájl (.msp) vagy .exe programfájl. Emellett a telepítési fájllal megegyező mappában lévő tetszőleges további fájlokat vagy mappákat is hozzáadhat.
 
@@ -158,7 +151,7 @@ Telepítheti nem a Microsoft által készített szoftverek frissítéseit is. Ez
 
     -   **A beállításkulcs létezik**
 
-6.  Adja meg az észlelési szabály beállításához esetleg szükséges további információkat, például egy fájl elérési útját és nevét, egy Windows Installer-termékkódot vagy egy beállításkulcsot, majd válassza a **Tovább** lehetőséget..
+6.  Adja meg az észlelési szabály beállításához esetleg szükséges további információkat, például egy fájl elérési útját és nevét, egy Windows Installer-termékkódot vagy egy beállításkulcsot, majd válassza a **Tovább** lehetőséget.
 
 7.  A varázsló **Előfeltételek** lapján olyan szoftvereket adhat meg, melyeknek már telepítve kell lennie ahhoz, hogy telepíteni lehessen a frissítést. Itt megadhatja a **Nincs** értéket, kiválaszthat egy az Intune-ba már felvett és azzal kezelt szoftvercsomagot, vagy az alábbi szabályok egyikének megadásával írhatja le a szoftvereket:
 
@@ -168,9 +161,9 @@ Telepítheti nem a Microsoft által készített szoftverek frissítéseit is. Ez
 
     -   **A beállításkulcs létezik**
 
-8.  Adja meg az észlelési szabály beállításához esetleg szükséges további információkat, például egy fájl elérési útját és nevét, egy Windows Installer-termékkódot vagy egy beállításkulcsot, majd válassza a **Tovább** lehetőséget..
+8.  Adja meg az észlelési szabály beállításához esetleg szükséges további információkat, például egy fájl elérési útját és nevét, egy Windows Installer-termékkódot vagy egy beállításkulcsot, majd válassza a **Tovább** lehetőséget.
 
-9. A varázsló **Parancssori argumentumok** lapján a telepítési parancssorhoz a telepítőfájl működésének módosítása céljából esetlegesen szükséges telepítési tulajdonságokat adhat hozzá. Egyes szoftverek például támogatják a **/q** tulajdonság használatát a csendes telepítés engedélyezéséhez. Az adott szoftvercsomag dokumentációját áttekintve tájékozódhat az esetlegesen támogatott parancssori argumentumokról. Adja meg a szükséges parancssori argumentumokat, ha vannak ilyenek, majd válassza a **Tovább** lehetőséget..
+9. A varázsló **Parancssori argumentumok** lapján a telepítési parancssorhoz a telepítőfájl működésének módosítása céljából esetlegesen szükséges telepítési tulajdonságokat adhat hozzá. Egyes szoftverek például támogatják a **/q** tulajdonság használatát a csendes telepítés engedélyezéséhez. Az adott szoftvercsomag dokumentációját áttekintve tájékozódhat az esetlegesen támogatott parancssori argumentumokról. Adja meg a szükséges parancssori argumentumokat, ha vannak ilyenek, majd válassza a **Tovább** lehetőséget.
 
     > [!NOTE]
     > Ha a frissítés nem támogatja a csendes telepítést, a frissítés nem telepíthető az Intune használatával.
@@ -185,7 +178,7 @@ Telepítheti nem a Microsoft által készített szoftverek frissítéseit is. Ez
 11. Bármely itt nem szereplő visszatérési kód sikertelennek van tekintve.
 Néhány frissítés a visszatérési kódok nem szabványos értelmezéseit alkalmazza. Ebben az esetben megadhat saját értelmezéseket a visszatérési kódokhoz.
 
-12. Adja meg vagy szerkessze a szükséges visszatérési kódokat, majd válassza a **Tovább** lehetőséget..
+12. Adja meg vagy szerkessze a szükséges visszatérési kódokat, majd válassza a **Tovább** lehetőséget.
 
 13. A varázsló **Összegzés** lapján tekintse át a végrehajtandó műveleteket, majd válassza a **Feltöltés** lehetőséget a varázsló befejezéséhez.
 
@@ -204,23 +197,23 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 |--------|--------------------|
 |**Tulajdonságok megtekintése**|A frissítés részletes adatainak megtekintése, beleértve azon számítógépek darabszámát, melyeken alkalmazható.|
 |**Szerkesztés**|Csak a nem a Microsoft által készített frissítésekhez használható. A frissítések tulajdonságainak szerkesztését teszi lehetővé.|
-|**Jóváhagyás**|A kijelölt frissítés jóváhagyása, mely lehetővé teszi a csoportok beállítását, amelyekre telepítve lesz. További tudnivalókat a jelen témakör [Frissítések jóváhagyása](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) című eljárásában találhat.|
+|**Jóváhagyás**|A kijelölt frissítés jóváhagyása, mely lehetővé teszi a csoportok beállítását, amelyekre telepítve lesz. További tudnivalókat a jelen témakör **Frissítések jóváhagyása** című eljárásában találhat.|
 |**Elutasítás**|Eltávolítja a frissítés esetleges korábbi jóváhagyásait, és az alapértelmezett nézetekből elrejti a frissítést. A rendszer emellett a frissítésre vonatkozó esetleges jelentésadatokat is eltávolítja.<br /><br />Ha később meg szeretne keresni egy elutasított frissítést, a **Minden frissítés** lap szűrőjét állítsa be az **Elutasítva**értékre. Ezután szükség szerint jóváhagyhatja a frissítést.<br /><br />Ha egy frissítés azért lett elutasítva, mert elévült a Microsoft Update szolgáltatásban, ez a frissítés nem hagyható jóvá a Intune felügyeleti konzolon.<br /><br />Ha töröl bármely, a számítógépekre alkalmazott frissítési házirendet, ezen frissítési házirendek beállításai a számítógépeken telepített operációs rendszernek megfelelő alapértelmezett állapotra állnak vissza.|
 |**Törlés**|Csak a nem a Microsoft által készített frissítésekhez használható. A kijelölt frissítés törlése.|
 |**Feltöltés**|A **Frissítés feltöltése** varázsló elindítása, amellyel feltölthetők a telepíteni kívánt, nem a Microsoft által készített frissítések.|
 
 ### Frissítések jóváhagyása
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Frissítések** &gt; **Áttekintés** &gt; **Jóváhagyásra váró új frissítések** lehetőséget..
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Frissítések** &gt; **Áttekintés** &gt; **Jóváhagyásra váró új frissítések** elemre.
 
-    A **Frissítések** munkaterületen válassza az **Áttekintés** &gt; **Jóváhagyásra váró új frissítések** lehetőséget..
+    A **Frissítések** munkaterületen válassza az **Áttekintés** &gt; **Jóváhagyásra váró új frissítések** lehetőséget.
 
     > [!NOTE]
     > Az **Új jóváhagyandó frissítések** hivatkozás csak akkor jelenik meg a **Frissítések állapota** területen, ha legalább egy kezelt számítógép számára jóvá kell hagyni egy frissítést.
 
 2.  Válasszon ki egy frissítést, a lap alján áttekintve a frissítés tulajdonságait győződjön meg arról, hogy jóvá kívánja-e azt hagyni, majd válassza a **Jóváhagyás** lehetőséget. Ha az egyes elemek kijelölésekor lenyomva tartja a **CTRL** billentyűt, egyszerre több frissítést is kijelölhet.
 
-3.  A **Csoportok kiválasztása** lapon válasszon ki egy csoportot, melyben telepíteni szeretné a frissítéseket, majd válassza a **Hozzáadás** lehetőséget. A csoportok megadása után válassza a **Tovább** lehetőséget..
+3.  A **Csoportok kiválasztása** lapon válasszon ki egy csoportot, melyben telepíteni szeretné a frissítéseket, majd válassza a **Hozzáadás** lehetőséget. A csoportok megadása után válassza a **Tovább** lehetőséget.
 
 4.  A **Telepítési művelet** lapon a listán szereplő valamennyi csoport esetén tegye a következőket:
 
@@ -259,6 +252,7 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
