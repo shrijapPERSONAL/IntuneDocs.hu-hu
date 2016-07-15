@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: A Microsoft Intune Exchange Connector telepítése helyszíni Exchange-hez | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune Exchange Connector telepítése helyszíni Exchange-hez | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+
 
 ---
 
@@ -43,7 +36,7 @@ A következő táblázatban találja a helyszíni Exchange Connector telepítés
 |További szoftverek|A Microsoft .NET-keretrendszer 4-es és a Windows PowerShell 2.0-s verziójának teljes mértékben telepítve kell lennie az összekötőt futtató számítógépen.|
 |Hálózat|Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Servert üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com.|
 |Legyen konfigurálva és fusson a szolgáltatott Exchange|További információk: [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be|[Mobileszköz-szolgáltatóként a Microsoft Intune-t állítsa be](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
+|Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be|[Mobileszköz-szolgáltatóként a Microsoft Intune-t állítsa be](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange-parancsmagokkal kapcsolatos követelmények
 
@@ -68,11 +61,11 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 1. Egy a helyszíni Exchange Connector használatához támogatott operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com) (http://manage.microsoft.com) egy olyan felhasználói fiókkal, amely az Exchange Server használatához licenccel rendelkező rendszergazda az Exchange-bérlőben.
 ![Nyissa meg az Exchange-kapcsolat beállítását](../media/ExchangeConnector.gif)
 
-2.  A munkaterület parancsikon-ablaktábláján válassza a **FELÜGYELET** elemet.
+2.  A munkaterület parancsikon-ablaktábláján válassza az **ADMINISZTRÁCIÓ** elemet.
 
-3.  A navigációs ablaktábla **Mobileszköz-kezelés** területén bontsa ki a **Microsoft Exchange** elemet, majd kattintson az **Exchange-kapcsolat beállítása** parancsra..
+3.  A navigációs ablaktábla **Mobileszköz-kezelés** területén bontsa ki a **Microsoft Exchange** elemet, majd kattintson az **Exchange-kapcsolat beállítása** parancsra.
 
-4.  Az **Exchange-kapcsolat** beállítása lapon válassza a **Helyszíni összekötő letöltése** lehetőséget.
+4.  Az **Exchange-kapcsolat** beállítása lapon kattintson a **On-Premises Connector letöltése** parancsra.
 
 5.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza. Ezt megnyithatja vagy mentheti. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
 
@@ -99,12 +92,12 @@ A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi
 
       1.  Nyissa meg az Office 365 Outlook Web Appjét.
 
-      2.  Kattintson a „?” ikonra a bal felső sarokban, majd válassza a **Névjegy** elemet.
+      2.  Kattintson a „?” ikonra a bal felső sarokban, majd válassza a **Névjegy**elemet.
 
       3.  Keresse meg a **POP külső kiszolgáló** értéket.
 
       4.  Kattintson a **Proxykiszolgáló** elemre az üzemeltetett Exchange proxykiszolgáló-beállításainak megadásához.
-        1.  Válassza a **Proxykiszolgáló használata mobileszköz-információk szinkronizálásakor** lehetőséget.
+        1.  Válassza a **Proxykiszolgáló használata mobileszköz-információk szinkronizálásakor**lehetőséget.
 
         2.  Adja meg a **proxykiszolgáló nevét** és **portszámát** a kiszolgálóhoz való hozzáféréshez.
 
@@ -133,12 +126,13 @@ Miután az Exchange Connector létrehozta a kapcsolatot, az Exchange Connectorba
 
 ## Az Exchange-kapcsolat ellenőrzése
 
-Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. A [Microsoft Intune felügyeleti konzolban](http://manage.microsoft.com)válassza a **FELÜGYELET** munkaterületet, majd a **Mobileszköz-kezelés** területen válassza a **Microsoft Exchange** elemet, és ellenőrizze, hogy a megadott adatok megjelennek-e **Az Exchange-kapcsolat információi területen**.
+Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) válassza a **FELÜGYELET** munkaterületet, majd a **Mobileszköz-kezelés** területen válassza a **Microsoft Exchange** elemet, és ellenőrizze, hogy a megadott adatok megjelennek-e **Az Exchange-kapcsolat információi** területen.
 
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
