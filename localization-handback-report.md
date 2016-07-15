@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\includes\sccmshortname.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sccmshortname.md) | InSyncHandedBackSuccess | [Details](#cad3187986387bfe5f86110f478472b563645089612)
 
 ## Item Details
+##### <a name='cad3187986387bfe5f86110f478472b563645089612'></a> Source: [InTuneDocs\includes\sccmshortname.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sccmshortname.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\sccmshortname.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/5d9692f0ada288d8d170a7e8e245d26aa035d6d7/InTuneDocs/includes/sccmshortname.md)
+* Handoff File: [sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/aa2d1649f9d9d24f459e7ae98a8801d1f12b2357/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf)
+* Handoff Datetime: 2016-06-27 10:54:46
+* Handoff Reason: Include
+* Archive File: [sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf](https://github.com/Microsoft/EM.handoff/blob/8652a2816aa65349d394dde12791693f99763706/ol-handoff/Microsoft/IntuneDocs-pr.hu-hu/master/archive/sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf)
+* Archive Datetime: 2016-07-02 01:09:06
+* Handback File: [sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/8f9e917ff422120549258552be5ec9481c5c9d6b/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/sccmshortname.e2c299d134eed8e2fd1631c4bdf1855f8db3513b.hu-hu.xlf)
+* Handback Datetime: 2016-07-15 05:02:38
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
