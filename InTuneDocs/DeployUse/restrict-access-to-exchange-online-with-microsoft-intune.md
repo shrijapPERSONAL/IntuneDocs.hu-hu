@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az Exchange Online-hoz és az új dedikált Exchange Online-hoz való e-mail hozzáférés korlátozása | Microsoft Intune
-description:
-keywords:
+title: "Az Exchange Online-hoz és az új dedikált Exchange Online-hoz való e-mail hozzáférés korlátozása | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 87663f2677a006e5db525f8897fea4bf05cb5912
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 Ha dedikált Exchange Online-környezettel rendelkezik, és szeretné tudni, hogy az új vagy az örökölt konfiguráció tartozik-e hozzá, lépjen kapcsolatba a fiókkezelővel.
 
 Az Exchange Online-hoz vagy az új dedikált Exchange Online-környezethez való e-mail-hozzáférés konfigurálásához az Intune-ban konfiguráljon feltételes hozzáférést az Exchange Online-hoz.
-Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
+Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el a [Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
 >[!IMPORTANT]
 >A modern hitelesítést használó alkalmazásokat működtető számítógépek és Windows 10 Mobile rendszerű eszközök esetében a feltételes hozzáférés jelenleg nem érhető el az összes Intune-ügyfél számára. Ha már használja ezeket a funkciókat, nincs teendője. Továbbra is használhatja őket.
@@ -43,7 +37,8 @@ Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvass
 
 -  Fontolja meg a választható **Microsoft Intune szolgáltatások közötti összekötő** beállítását, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t a Microsoft Exchange Online-hoz csatlakoztatja, és segít Önnek az eszközinformációk kezelésében az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján keresztül. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
 
-   > [!NOTE] Ne konfigurálja a szolgáltatások közötti összekötőt, ha feltételes hozzáférést szeretne használni az Exchange Online-hoz és a helyszíni Exchange-hez is.
+   > [!NOTE]
+   > Ne konfigurálja a szolgáltatások közötti összekötőt, ha feltételes hozzáférést szeretne használni az Exchange Online-hoz és a helyszíni Exchange-hez.
 
    Az összekötő konfigurálásának ismertetését lásd: [Intune szolgáltatások közötti összekötő](intune-service-to-service-exchange-connector.md).
 
@@ -75,9 +70,23 @@ Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból é
 - iOS 7.1-es és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
- A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
+A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
 
-> -   Az ADAL-alapú hitelesítéssel az Office-ügyfelek végezhetnek böngészőalapú hitelesítést (más néven passzív hitelesítést).  A hitelesítéshez a felhasználó egy bejelentkezési weblapra van átirányítva. Ez az új bejelentkezési módszer nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítéssel** és a **tanúsítványalapú hitelesítéssel**. A korszerű hitelesítés működéséről ebben a [cikkben](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) olvashat további információkat.
+-   Az ADAL-alapú hitelesítéssel az Office-ügyfelek végezhetnek böngészőalapú hitelesítést (más néven passzív hitelesítést).  A hitelesítéshez a felhasználó egy bejelentkezési weblapra van átirányítva. Ez az új bejelentkezési módszer nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítés** és a **tanúsítványalapú hitelesítés** funkcióit.
+Ebben a [cikkben](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) olvashatók további információk a modern hitelesítés működéséről.
+Állítsa be az ADFS-jogcímszabályokat a nem modern hitelesítési protokollok blokkolására. Lépésenkénti útmutatás: 3. forgatókönyv – [Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx).
+
+Az Exchange Online-on letilthatja az **Outlook Web Access-hez (OWA)** az **iOS-** és **Android-** eszközök böngészőin keresztül történő hozzáférést.  A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
+
+* Safari (iOS)
+* Chrome (Android)
+* Managed Browser (iOS és Android)
+
+**A nem támogatott böngészők le lesznek tiltva**.
+
+Az OWA-alkalmazások nem támogatottak az iOS és Android rendszerű eszközök számára.  Ezeket az ADFS jogcímszabályai között le kell tiltani.
+
+
 
 
 A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését a beépített **Exchange ActiveSync levelezési ügyfélről**:
@@ -104,14 +113,15 @@ Az asztali Office-alkalmazásokat futtató számítógépekhez beállíthatja az
 
     A modern hitelesítéssel Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható az Office 2013 Windows-ügyfelein, és jobb biztonságot kínál, többek között a **többtényezős hitelesítéssel** és a **tanúsítványalapú hitelesítéssel**.
 
--   Állítsa be az ADFS-jogcímszabályokat a nem modern hitelesítési protokollok blokkolására. Lépésenkénti útmutatás: 3. forgatókönyv – [Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx).
+-   Állítsa be az ADFS-jogcímszabályokat a nem modern hitelesítési protokollok letiltására. Lépésenkénti útmutatás: 3. forgatókönyv – [Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx).
 
 ## Feltételes hozzáférés konfigurálása
 ### 1. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
 [Hozza létre](create-a-device-compliance-policy-in-microsoft-intune.md) és [telepítse](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) a megfelelőségi szabályzatot azon felhasználói csoportok számára, amelyekre érvényes lesz a feltételes hozzáférési szabályzat is.
 
 
-> [!IMPORTANT] Ha nem állított be megfelelőségi szabályzatot, akkor az eszközök megfelelőnek minősülnek, és engedélyezve lesz az Exchange-hez való hozzáférésük.
+> [!IMPORTANT]
+> Ha nem telepített megfelelőségi szabályzatot, akkor az eszközök megfelelőnek minősülnek, és az Exchange-hez való hozzáférésük engedélyezett lesz.
 
 ### 2. lépés: A feltételes hozzáférési szabályzat hatásának értékelése
 A feltételes hozzáférési szabályzat konfigurálása után a **Mobileszközkészlet-jelentések** használatával azonosíthatja azokat az eszközöket, amelyek Exchange-hozzáférése le van tiltva.
@@ -135,7 +145,8 @@ A jelentés futtatása után vizsgálja meg a következő négy oszlopot annak m
 
 -   **Exchange ActiveSync-azonosító** – Az iOS- és Android-eszközök Exchange ActiveSync-azonosítójának társítva kell lennie az Azure Active Directoryban található eszközregisztrációs rekorddal. Ez akkor történik meg, amikor a felhasználó a **Levelezés aktiválása** hivatkozásra kattint a karanténba helyezett e-mailben.
 
-    > [!NOTE] Windows Phone-telefonok esetén ebben az oszlopban mindig szerepel valamilyen érték.
+    > [!NOTE]
+    > Windows Phone-telefonok esetén ebben az oszlopban mindig szerepel érték.
 
 A célcsoporthoz tartozó eszközök Exchange-hozzáférése le lesz tiltva, ha az oszlop értékei nem egyeznek a következő táblázatban lévő értékekkel:
 
@@ -165,11 +176,12 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 ### 4. lépés: A feltételes hozzáférési szabályzat konfigurálása
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** > **Feltételes hozzáférés** > **Exchange Online-szabályzat** elemet.
-![Képernyőfelvétel az Exchange Online feltétes hozzáférési szabályzatának oldaláról](../media/IntuneSA5dExchangeOnlinePolicy.png)
+![Képernyőfelvétel az Exchange Online feltétes hozzáférési szabályzatának oldaláról](../media/mdm-ca-exo-policy-configuration.png)
 
 2.  Az **Exchange Online-szabályzat** lapon válassza a **Feltételes hozzáférési házirend engedélyezése Exchange Online-hoz**lehetőséget.
 
-    > [!NOTE] Amennyiben nem állított be megfelelőségi szabályzatot, a rendszer megfelelőnek tekinti az eszközöket.
+    > [!NOTE]
+    > Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőnek tekinti az eszközöket.
     >
     > A megfelelőségi állapottól függetlenül a szabályzat által megcélzott összes felhasználónak regisztrálnia kell az eszközét a következővel: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
@@ -178,19 +190,42 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
     -   **Összes platform**
 
         Ha ezt a beállítást szeretné használni, az **Exchange Online** elérésére használt összes eszköznek regisztrálva kell lennie az Intune-ban, és meg kell felelnie a szabályzatoknak.  Bármely, **modern hitelesítést** használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik, ha pedig az adott platformot az Intune jelenleg nem támogatja, az **Exchange Online** elérése le lesz tiltva.
+
+        A **Minden platform** beállítás kiválasztásával az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül.  Az alábbiakat kivéve minden platform köteles regisztrálni és megfelelni:
+        *   A Windows-eszközöknek kötelező regisztrálni és megfelelni, a tartományt csatlakoztatni a helyszíni Active Directoryhoz, vagy mindkettő
+        * Nem támogatott platformok, például a Mac OS.  Azonban az ezekről a platformokról származó, modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
+
         >[!TIP]
-           Lehet, hogy nem látja ezt a beállítást, ha még nem használ feltételes hozzáférést a számítógépekhez.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   A [Microsoft Connect webhelyen](http://go.microsoft.com/fwlink/?LinkId=761472) részletes tájékoztatást talál az ismert problémákról, valamint a funkció elérésének módjáról.
+           Ha még nem használ feltételes hozzáférést a számítógépekhez, akkor előfordulhat, hogy ezt a beállítás nem jelenik meg.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   A [Microsoft Connect webhelyen](http://go.microsoft.com/fwlink/?LinkId=761472) részletes tájékoztatást talál az ismert problémákról, valamint a funkció elérésének módjáról.
 
     -   **Megadott platformok**
 
          Minden, a **modern hitelesítést** használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik a kiválasztott eszközplatformokon.
 
-4.  Az **Exchange ActiveSync-alkalmazások** beállításnál megadhatja a nem megfelelő eszközök Exchange Online-hozzáférésének letiltását. Azt is kiválaszthatja, hogy engedélyezi vagy letiltja az e-mailek elérését, amikor az eszköz nem támogatott platformmal működik. A támogatott platformok a következők: Android, iOS, Windows és Windows Phone.
+4. Az **Outlook web access (OWA)** alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: Safari (iOS) és Chrome (Android). A más böngészőkkel történő hozzáférés le lesz tiltva. Az Outlook megadott alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek.
 
+  Az **Android** eszközök felhasználóinak engedélyezni kell a böngészőalapú hozzáférést.  A végfelhasználónak ehhez a regisztrált eszközön be kell kapcsolnia a „Böngészőalapú hozzáférés engedélyezése” opciót az alábbi módon:
+  1.    Nyissa meg a **Vállalati portál alkalmazást**.
+  2.    Nyissa meg a **Beállítások** lapot a három pontra (...) vagy a hardver menü gombjára kattintva.
+  3.    Kattintson a **Böngészőalapú hozzáférés engedélyezése** gombra.
+  4.    A Chrome böngészőben jelentkezzen ki az Office 365-ből, majd indítsa újra a Chrome-ot.
 
-5.  A **Megcélzott csoportok**területen válassza ki azon felhasználók Active Directory biztonsági csoportjait, akikre érvényes a házirend. Az összes felhasználót vagy a felhasználói csoportok egy kiválasztott listáját is megadhatja.
+  **iOS és Android** platformokon a szolgáltatás eléréséhez használt eszköz azonosításához az Azure Active Directory egy Transport Layer Security (TLS-) tanúsítványt rendel az eszközhöz.  Az eszköz az alábbi képernyőfelvételnek megfelelően megjeleníti a tanúsítványt, és a végfelhasználótól annak kiválasztását kéri. A végfelhasználónak a böngésző további használatához ki kell választania ezt a tanúsítványt.
+
+  **iOS**
+
+  ![képernyőfelvétel a tanúsítvány kiválasztásának kéréséről egy ipad készüléken](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![képernyőfelvétel a tanúsítvány kiválasztásának kéréséről egy Android készüléken](../media/mdm-browser-ca-android-cert-prompt.png)
+
+5.  Az **Exchange ActiveSync-alkalmazások** beállításnál megadhatja a nem megfelelő eszközök Exchange Online-hozzáférésének letiltását. Azt is kiválaszthatja, hogy engedélyezi vagy letiltja az e-mailek elérését, amikor az eszköz nem támogatott platformmal működik. A támogatott platformok a következők: Android, iOS, Windows és Windows Phone.
+
+6.  A **Megcélzott csoportok**területen válassza ki azon felhasználók Active Directory biztonsági csoportjait, akikre érvényes a házirend. Az összes felhasználót vagy a felhasználói csoportok egy kiválasztott listáját is megadhatja.
 ![Képernyőfelvétel az Exchange Online feltételes hozzáférési szabályzatának oldaláról, valamint a megcélzott és a kivétel alá eső csoportok beállításairól](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE] A **Megcélzott csoportok** listán lévő felhasználók esetében az Intune-szabályzatok leváltják az Exchange-szabályokat és -szabályzatokat.
+    > [!NOTE]
+    > A **Megcélzott csoportok** listán lévő felhasználók esetében az Intune-szabályzatok leváltják az Exchange-szabályokat és -szabályzatokat.
     >
     > Az Exchange csak a következő esetekben érvényesíti az engedélyezési, blokkolási és karanténba helyezési Exchange-szabályokat és az Exchange-szabályzatokat:
     >
@@ -224,6 +259,7 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 [A Skype Vállalati online verzióhoz való hozzáférés korlátozása](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

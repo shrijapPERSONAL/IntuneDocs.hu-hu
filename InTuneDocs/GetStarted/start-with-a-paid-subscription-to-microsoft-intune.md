@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az Intune rövid kezdési útmutatója | Microsoft Intune
-description:
-keywords:
+title: "Az Intune rövid kezdési útmutatója | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -41,7 +35,7 @@ A jelen rövid kezdési útmutatóban található lépések nagy része megegyez
 -   Az Intune-funkciók testreszabása üzemi használatra
 
 >[!TIP]
->Ha legalább 150 licencet vásárolt a Microsoft Intune-hoz egy erre jogosult csomagban, használhatja a FastTrack Center juttatást, azt a szolgáltatást, amelyben a Microsoft szakértőivel együtt készítheti fel környezetét az Intune használatára. Lásd: [A Microsoft Intune szolgáltatási juttatás leírása](https://technet.microsoft.com/library/mt228265.aspx)..
+>Ha legalább 150 licencet vásárolt a Microsoft Intune-hoz egy erre jogosult csomagban, használhatja a FastTrack Center juttatást, azt a szolgáltatást, amelyben a Microsoft szakértőivel együtt készítheti fel környezetét az Intune használatára. Lásd: [A Microsoft Intune szolgáltatási juttatás leírása](https://technet.microsoft.com/library/mt228265.aspx).
 
 
 ## Előkészületek
@@ -55,7 +49,7 @@ Ezt az útmutatót akkor használhatja, ha a szolgáltatás fizetős verziójár
 Készen áll a kezdésre? Ahhoz, hogy megkezdhesse az Intune fizetős verziójának használatát, a következőkre lesz szüksége:
 
 ### Egy Silverlight-kompatibilis webböngészővel rendelkező eszköz
-Erre az Intune felügyeleti konzoljának elérésére lesz szüksége, ahol kezelheti az eszközöket, az alkalmazásokat és a szabályzatokat. A webböngészőt kell használnia a webes vállalati portál elérésére is, ha nem mobileszközről éri el a Vállalati portál alkalmazást. A művelet egyszerűsítéséhez használja az Intune-felügyelethez használt ugyanazon böngésző adatvédelmi üzemmóddal kapcsolatos beállítását (az Internet Explorerben például válassza az **Eszközök** &gt; **InPrivate-böngészés** lehetőséget).).
+Erre az Intune felügyeleti konzoljának elérésére lesz szüksége, ahol kezelheti az eszközöket, az alkalmazásokat és a szabályzatokat. A webböngészőt kell használnia a webes vállalati portál elérésére is, ha nem mobileszközről éri el a Vállalati portál alkalmazást. A művelet egyszerűsítéséhez használja az Intune-felügyelethez használt böngésző adatvédelmi üzemmóddal kapcsolatos beállítását (az Internet Explorerben például válassza az **Eszközök** &gt; **InPrivate-böngészés** lehetőséget).
 
 >[!TIP]
 >Ezen követelmény miatt a Microsoft Edge böngésző nem támogatott az Intune felügyeleti konzoljának eléréséhez.
@@ -67,11 +61,11 @@ Ha az iOS- vagy a Windows Phone-eszközöket az Intune-szolgáltatással fogja f
 - A **Windows Phone 8.1** azon felhasználói számára, akik az Áruházból telepítik a Vállalati portál alkalmazást, nem szükséges tanúsítvány. [Symantec kódaláíró tanúsítvány](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) szükséges azonban a **Windows Phone 8.0** esetén, vagy ha a Vállalati portál alkalmazást az Intune szolgáltatással kívánja Windows Phone 8.1-eszközre telepíteni.
 
 >[!NOTE]
->Ez a rövid útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. A Windows Phone 8.0 támogatásával kapcsolatos információkat lásd: [Windows Phone 8.0 rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)..
+>Ez a rövid útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. A Windows Phone 8.0 támogatásával kapcsolatos információk: [Set up Windows Phone 8.0 management with Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune) (Windows Phone 8.0 rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása).
 
-- A **Windows rendszerű számítógép** vagy a **Windows RT rendszerű eszközök** esetében nincs tanúsítványra vonatkozó követelmény, amikor eszközként regisztrálja a Windows rendszerű számítógépeket vagy a [Microsoft Intune Windows rendszerű számítógépügyfelét telepíti](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune)..
+- A **Windows rendszerű számítógép** vagy a **Windows RT rendszerű eszközök** esetében nincs tanúsítványra vonatkozó követelmény, amikor eszközként regisztrálja a Windows rendszerű számítógépeket vagy a [Microsoft Intune Windows rendszerű számítógépügyfelét telepíti](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
-- Az **iOS** vagy a **Mac OS X** rendszerű eszközökhöz Apple Push Notification szolgáltatásbeli tanúsítványt kell igényelnie az Apple-től [Az iOS kezelésének beállítása a Microsoft Intune-nal](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) témakör 3. lépésében leírtak szerint..
+- Az **iOS** vagy a **Mac OS X** rendszerű eszközökhöz Apple Push Notification szolgáltatásbeli tanúsítványt kell igényelnie az Apple-től [Az iOS kezelésének beállítása a Microsoft Intune-nal](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) témakör 3. lépésében leírtak szerint.
 
 ### További lépések
 Itt az ideje, hogy megismerkedjen az Intune rövid kezdési útmutatójával!
@@ -80,6 +74,7 @@ Itt az ideje, hogy megismerkedjen az Intune rövid kezdési útmutatójával!
 [**Bejelentkezés az Intune-ba** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

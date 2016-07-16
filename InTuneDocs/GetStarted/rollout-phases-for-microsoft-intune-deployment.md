@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: A Microsoft Intune üzembe helyezésének bevezetési fázisai | Microsoft Intune
-description:
-keywords:
+title: "A Microsoft Intune üzembe helyezésének bevezetési fázisai | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+
 
 ---
 
@@ -29,17 +23,28 @@ ms.suite: ems
 # A Microsoft Intune üzembe helyezésének bevezetési fázisai
 A műszaki üzembe helyezési folyamatok rendszerint a következő fázisokból állnak: a projekt hatóköre, a koncepció igazolása, próbaüzem, vállalati bevezetés és működtetés. Ezeket az alábbiakban röviden meghatározzuk, és az egyes fázisok elvégzésével kapcsolatos további információkra és ajánlásokra mutató hivatkozásokat közlünk.
 
-<!--these phase descriptions below are way too short -->
+-   [A projekt hatóköre](project-scope.md): A célok, az ütemterv és a sikerkritériumok felvázolása, a kulcsfontosságú szervezeti készültségi tényezők meghatározása, a projektcsapat összeállítása, és az előkészületek elkezdése a Microsoft Intune sikeres bevezetésében szerepet játszó összes fázisban.
+     > [!NOTE]           
+       Az alábbi sablonok segíthetnek a projekt hatókörének kialakításában:
+        
+    >- [Intune vagy Intune-nal bővített Configuration Manager döntési sablon](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+    >- [Tervezősablon mobilalkalmazásokhoz](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+    >- [Tervezősablon általános eszközkezeléshez](https://gallery.technet.microsoft.com/General-device-management-334c3792)
+    
 
--   [A projekt hatóköre](project-scope.md): A célok, az üzembe helyezés és a bevezetési stratégia végiggondolása.
+-   [A koncepció igazolása](proof-of-concept.md): A hálózati architektúra műszaki telepítésének tesztelése, és az üzembe helyezés a vállalati előírásoknak való megfelelésének megállapítása. Ez a fázis egy egyszerű topológiát tartalmaz, amely meghatározott műszaki helyzetek ellenőrzésére készült.  
 
--   [A koncepció igazolása](proof-of-concept.md): A műszaki üzembe helyezés és a hálózati architektúra tesztelése.
-
--   [Próbaüzem](pilot.md): A különféle helyzetek, erőforrások és bevezetési tervének ellenőrzése a regisztrált eszközök egy mintájával és néhány felhasználóval, a teljes körű bevezetésre való felkészülés részeként.
-
--   [Vállalati bevezetés](enterprise-rollout.md): Minden osztályra és felhasználócsoportra kiterjedő üzembe helyezés.
+-   [Próbaüzem](pilot.md): A különféle helyzetek, erőforrások és bevezetési tervének ellenőrzése a regisztrált eszközök egy mintájával és néhány felhasználóval, a teljes körű bevezetésre való felkészülés részeként.  Ebben a fázisban kell tesztelni a műszaki megvalósítást, a kommunikációs tervet és a képzési, valamint a támogatási terveket is.
+-   [Vállalati bevezetés](enterprise-rollout.md) A széles körű bevezetési stratégiának megtervezése és végrehajtása, beleértve a kommunikációs, a képzési és a támogatási tevékenységeket.
 
 -   [Működtetés és karbantartás](operations-and-maintenance.md): Működtetési terv minden fontos fázisra/fókuszterületre vonatkozóan, a rendszert használó felhasználók számának folyamatos növekedése mellett.
+
+### További információ
+
+[Bevezetési házirendek](policy-rollout.md)
+
+[Bevezetési alkalmazások](application-rollout.md)
+
 
 <!--
 These should be linked to topics in the plan & design section once it is back in the TOC
@@ -56,6 +61,7 @@ These topics will help you plan for the rollout of new policies and apps:
 >[**A projekt hatóköre** &rarr;](project-scope.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
