@@ -4066,9 +4066,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\monitor-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a777b865b79c8487392357013b1659a92a91620b/InTuneDocs/DeployUse/monitor-mobile-app-management-policies-with-microsoft-intune.md)
-* Current Handback File: [monitor-mobile-app-management-policies-with-microsoft-intune.c66af86c5d28374930c6e9c7e761080155045d75.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/2d2d21983b2b99bdc714baf424207257359a2bfb/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/monitor-mobile-app-management-policies-with-microsoft-intune.c66af86c5d28374930c6e9c7e761080155045d75.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-13 18:16:53
+* Current Target File: [InTuneDocs\DeployUse\monitor-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/DeployUse/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+* Current Handback File: [monitor-mobile-app-management-policies-with-microsoft-intune.c66af86c5d28374930c6e9c7e761080155045d75.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/monitor-mobile-app-management-policies-with-microsoft-intune.c66af86c5d28374930c6e9c7e761080155045d75.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='dd076e005347cf1d0261cc0a681495e573ba0447206'></a> Source: [InTuneDocs\DeployUse\overview-of-app-lifecycle-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ce78bc0e8ab341cda03cd9077c5541cbb7362bca/InTuneDocs/DeployUse/overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -5476,9 +5476,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/9f6d14d4c2c20b6c47480bab732c9896032b443f/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
-* Current Handback File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/c3c92e84eff6996478b22641d8632e2ca8d3148b/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-02 14:16:56
+* Current Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
+* Current Handback File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='cad9bff364d83749e43ff1f4f7bc61a79e96e1a1303'></a> Source: [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md)
@@ -5521,9 +5521,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\install-a-new-version-of-the-company-portal-app.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/1711544139197acc4afa9c57a51805b34f5f631b/InTuneDocs/EndUser/install-a-new-version-of-the-company-portal-app.md)
-* Current Handback File: [install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d2e82b29486889fb708a84d7379d757efc215c34/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-15 16:37:14
+* Current Target File: [InTuneDocs\EndUser\install-a-new-version-of-the-company-portal-app.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/install-a-new-version-of-the-company-portal-app.md)
+* Current Handback File: [install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='52fc5a102710d1905e3710a92532fea882613e33306'></a> Source: [InTuneDocs\EndUser\install-the-microsoft-intune-company-portal-app-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/install-the-microsoft-intune-company-portal-app-android.md)
@@ -6970,9 +6970,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\password-does-not-meet-it-administrator-requirements.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/aff5dc96b960ebf7ee2160a6e1ef4343acdde8c1/InTuneDocs/EndUser/password-does-not-meet-it-administrator-requirements.md)
-* Current Handback File: [password-does-not-meet-it-administrator-requirements.02c9ca97ffe1759953549b28fa49accc84c26580.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d7065f094fce5812edd63e533376258fbd58a61f/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/password-does-not-meet-it-administrator-requirements.02c9ca97ffe1759953549b28fa49accc84c26580.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-02 14:46:33
+* Current Target File: [InTuneDocs\EndUser\password-does-not-meet-it-administrator-requirements.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/password-does-not-meet-it-administrator-requirements.md)
+* Current Handback File: [password-does-not-meet-it-administrator-requirements.02c9ca97ffe1759953549b28fa49accc84c26580.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/password-does-not-meet-it-administrator-requirements.02c9ca97ffe1759953549b28fa49accc84c26580.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='2ff3cde77e4249369b7299af73e75c29ec855a4c419'></a> Source: [InTuneDocs\EndUser\remote-lock-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/remote-lock-your-device-cpwebsite.md)
@@ -6985,9 +6985,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\remote-lock-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/2ce3a509a55d564fd276e68ba496668c89993d9b/InTuneDocs/EndUser/remote-lock-your-device-cpwebsite.md)
-* Current Handback File: [remote-lock-your-device-cpwebsite.0dc3a00d0fe2fdf962be22e0a99db42db5b286dd.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/081797cd44db2c898712fe75f5ed2af9de5454dc/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/remote-lock-your-device-cpwebsite.0dc3a00d0fe2fdf962be22e0a99db42db5b286dd.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-02 12:20:42
+* Current Target File: [InTuneDocs\EndUser\remote-lock-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/remote-lock-your-device-cpwebsite.md)
+* Current Handback File: [remote-lock-your-device-cpwebsite.0dc3a00d0fe2fdf962be22e0a99db42db5b286dd.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/remote-lock-your-device-cpwebsite.0dc3a00d0fe2fdf962be22e0a99db42db5b286dd.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='a4ea95ccc99a18eb8290227cc2644c783c14d680420'></a> Source: [InTuneDocs\EndUser\remove-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/remove-your-device-cpwebsite.md)
@@ -7015,9 +7015,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\rename-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/f89ef91c3d51a11a44f88eff78dbc635a0537c6a/InTuneDocs/EndUser/rename-your-device-cpwebsite.md)
-* Current Handback File: [rename-your-device-cpwebsite.1b4648a1b7de93cfa9f7e2535eeb6cace744f7d6.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/315425975850ed6a3bf39817aabc8c2e00576dcc/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/rename-your-device-cpwebsite.1b4648a1b7de93cfa9f7e2535eeb6cace744f7d6.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-14 23:35:32
+* Current Target File: [InTuneDocs\EndUser\rename-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/rename-your-device-cpwebsite.md)
+* Current Handback File: [rename-your-device-cpwebsite.1b4648a1b7de93cfa9f7e2535eeb6cace744f7d6.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/rename-your-device-cpwebsite.1b4648a1b7de93cfa9f7e2535eeb6cace744f7d6.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='135e28b5467f302f3cad25587bf0bf992a5ffb7e422'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d3ec3ed2c7d5e412044196be47c4c030bd39ecbd/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-android.md)
@@ -7045,9 +7045,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/aff5dc96b960ebf7ee2160a6e1ef4343acdde8c1/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
-* Current Handback File: [reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/d7065f094fce5812edd63e533376258fbd58a61f/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-02 14:46:33
+* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
+* Current Handback File: [reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='a6746fe98c0249427160d7dc873dd425a359c716424'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4bd9ee2a6478884358815a8d1a1bd114c73def61/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-windows.md)
@@ -7195,9 +7195,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\set-the-amount-of-time-before-your-device-is-locked-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/a394c5bff2e7b8ef320228ac6492c4b366f5287a/InTuneDocs/EndUser/set-the-amount-of-time-before-your-device-is-locked-android.md)
-* Current Handback File: [set-the-amount-of-time-before-your-device-is-locked-android.316b58a38b3c7f4393eb4d03f39dc263da0eda33.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/ed24a57275a4bf848b8d72d29637cccae847c819/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/set-the-amount-of-time-before-your-device-is-locked-android.316b58a38b3c7f4393eb4d03f39dc263da0eda33.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-13 15:33:16
+* Current Target File: [InTuneDocs\EndUser\set-the-amount-of-time-before-your-device-is-locked-android.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/set-the-amount-of-time-before-your-device-is-locked-android.md)
+* Current Handback File: [set-the-amount-of-time-before-your-device-is-locked-android.316b58a38b3c7f4393eb4d03f39dc263da0eda33.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/set-the-amount-of-time-before-your-device-is-locked-android.316b58a38b3c7f4393eb4d03f39dc263da0eda33.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='e6e157e5c1621b4052b6c6cbbe5aa252162364a8434'></a> Source: [InTuneDocs\EndUser\set-your-pin-or-password-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/set-your-pin-or-password-android.md)
@@ -7402,9 +7402,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/24b28639149f38681eb9389cd016e6d2d83d480d/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md)
-* Current Handback File: [use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/c08084be9cf4f21d3a48735911c4022f85bffa88/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.hu-hu.xlf)
-* Current Handback Datetime: 2016-07-14 21:33:21
+* Current Target File: [InTuneDocs\EndUser\use-managed-apps-on-your-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.hu-hu/blob/7b25527318f2d29ab1525517a377503c469ee045/InTuneDocs/EndUser/use-managed-apps-on-your-device-ios.md)
+* Current Handback File: [use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.hu-hu.xlf](https://github.com/Microsoft/EM.handback/blob/7f8efa8d6a12b3389553286e802ccea2245672d2/ol-handback/Microsoft/IntuneDocs-pr.hu-hu/master/use-managed-apps-on-your-device-ios.3553c8430e8520ef84ac4ed83673f88b6026b0e9.hu-hu.xlf)
+* Current Handback Datetime: 2016-07-19 21:03:07
 * [Back to Top](#report-top)
 
 ##### <a name='95b71833faadaf1af22e690dc6cf8cdd684ec6d3448'></a> Source: [InTuneDocs\EndUser\use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
