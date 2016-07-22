@@ -5,6 +5,6 @@
 ## [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

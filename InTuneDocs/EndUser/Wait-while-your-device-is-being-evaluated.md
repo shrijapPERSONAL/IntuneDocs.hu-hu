@@ -3,17 +3,19 @@ title: "Várjon, amíg az eszköz kiértékelése megtörténik | Microsoft Intu
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 90891c2d0e5e8ae75e888dc4c26a056493bf594c
+translationtype: Human Translation
+ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
+ms.openlocfilehash: 08e0104ef1a7979cef332848b791026ecc55ef6a
 
 
 ---
@@ -26,6 +28,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

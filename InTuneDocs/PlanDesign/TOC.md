@@ -1,6 +1,5 @@
 # [Ismertetés és felfedezés](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [Tervezés és kialakítás](ways-to-do-enterprise-mobility.md)
 <!--- ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -21,6 +20,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

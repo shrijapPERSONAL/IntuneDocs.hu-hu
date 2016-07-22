@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Használati feltételek házirend-beállításai a Microsoft Intune-ban | Microsoft Intune
-description:
-keywords:
+title: "Használati feltételek házirend-beállításai a Microsoft Intune-ban | Microsoft Intune"
+description: "A felhasználói csoportok számára megjelenítheti az Intune használati feltételeit. Ezek elmagyarázzák, hogyan érinti az eszközöket és a felhasználókat a regisztráció, a munkahelyi erőforrásokhoz való hozzáférés és a Vállalati portál alkalmazás használata."
+keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac41e0e65a4687262d76b01ee4e1b7356c76650c
+ms.openlocfilehash: c805d664fe85b206fc1019114ee17514ef49df0f
+
 
 ---
 
@@ -32,7 +26,7 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
 
 ## Használati feltételekre vonatkozó szabályzat létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; ** Feltételek és kikötések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
     ![Képernyőfelvétel a Feltételek és kikötések szabályzatról](./media/pol-sa-terms-conditions.png)
 
@@ -54,17 +48,17 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
 
 ## A használati feltételekre vonatkozó szabályzat telepítése
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; ** Feltételek és kikötések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
-2.  A **Használati feltételekkel kapcsolatos házirendek** listáról válassza ki a bevezetni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése** elemre..
+2.  A **Használati feltételekkel kapcsolatos házirendek** listáról válassza ki a bevezetni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 
-3.  A **Központi telepítés kezelése** párbeszédpanelen válassza ki azt a felhasználói csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson az **OK** gombra..
+3.  A **Központi telepítés kezelése** párbeszédpanelen válassza ki azt a felhasználói csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson az **OK** gombra.
 
     Amikor a megcélzott felhasználók hozzáférnek a vállalati portálhoz, az Intune megjeleníti a telepített feltételeket és kikötéseket. Ahhoz, hogy hozzáférhessenek a vállalati erőforrásokhoz, a felhasználóknak el kell fogadniuk ezeket a feltételeket.
 
 ## A használati feltételekre vonatkozó szabályzat figyelése
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; ** Feltételek és kikötések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
 2.  Kattintson a **Jelentés megtekintése** lehetőségre az **Új jelentés létrehozása** ablakban. Ekkor megnyílik a jelentés, és részletesen leírja, hogy mely felhasználók fogadták el a telepített használati feltételeket.
 
@@ -73,9 +67,9 @@ Egy meglévő használati feltételekre vonatkozó házirend szerkesztésekor be
 
 ## A használati feltételek több változatának használata
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; ** Feltételek és kikötések** elemre..
+1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
-2.  Jelölje ki a szerkeszteni kívánt használati feltételekre vonatkozó szabályzatot, majd kattintson a **Szerkesztés** elemre..
+2.  Jelölje ki a szerkeszteni kívánt használati feltételekre vonatkozó házirendet, majd kattintson a **Szerkesztés** elemre.
 
 3.  A **Használati feltételek szerkesztése** lapon végezze el a szükséges módosításokat, majd adja meg, hogy az új verzió minden felhasználótól megkövetelje-e a használati feltételek elfogadását, vagy az új verzió csak az új felhasználók számára jelenjen meg.
 
@@ -85,6 +79,7 @@ Egy meglévő használati feltételekre vonatkozó házirend szerkesztésekor be
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -30,6 +30,6 @@ A fizetős Intune előfizetés kezdeti konfigurációs lépéseinek elvégzésé
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

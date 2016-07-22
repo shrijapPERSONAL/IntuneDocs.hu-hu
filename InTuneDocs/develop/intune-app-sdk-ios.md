@@ -241,6 +241,6 @@ Ha az Xcode nem találja a `libIntuneMAM.a`könyvtárat, a problémát megoldhat
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

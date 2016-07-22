@@ -72,6 +72,6 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

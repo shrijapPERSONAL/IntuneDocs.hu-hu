@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Megfelelőségi szabályzat beállításai iOS-eszközökhöz | Microsoft Intune
-description:
-keywords:
+title: "Megfelelőségi szabályzat beállításai iOS-eszközökhöz | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+
 
 ---
 
@@ -72,7 +66,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 - **Az Intune-ban felügyelni kívánt levelezési profil:**
      Ha a **Csak az Intune által felügyelt e-mail fiók használható** beállítás be van jelölve, kattintson a **Kiválasztás** elemre az Intune levelezési profil kiválasztásához. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
 
-     A levelezési profilokról a [Hozzáférés engedélyezése a vállalati e-mailekhez a Microsoft Intune e-mail profiljaival](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) című témakörben talál további információt.
+     A levelezési profilokról a [Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) című témakörben talál további információt.
 
 ## Eszközállapot-beállítások
 
@@ -85,6 +79,7 @@ Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó informáci
 - **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

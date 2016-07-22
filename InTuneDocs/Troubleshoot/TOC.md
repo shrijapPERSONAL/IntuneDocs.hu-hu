@@ -16,6 +16,6 @@
 ## [Az e-mail-profilok hibaelhárítása](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [A feltételes hozzáférés hibaelhárítása](troubleshoot-conditional-access.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

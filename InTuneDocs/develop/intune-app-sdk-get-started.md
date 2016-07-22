@@ -79,6 +79,6 @@ Miután végrehajtotta a szükséges lépéseket az iOS vagy Android rendszerhez
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

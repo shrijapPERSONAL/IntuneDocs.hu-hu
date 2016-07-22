@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mobileszköz-kezelés az Exchange ActiveSync és a Microsoft Intune használatával | Microsoft Intune
-description:
-keywords:
+title: "Mobileszköz-kezelés az Exchange ActiveSync és a Microsoft Intune használatával | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Az Exchange Connector lehetővé teszi az Exchange-telepítésnek az Intune-konz
 -   [Szolgáltatások közötti Intune-összekötő konfigurálása szolgáltatott Exchange-hez](intune-service-to-service-exchange-connector.md)
 
 ## Exchange-felügyelet alatt álló mobileszközök szabályzatának alkalmazása
-A szabályzatbeállítások az Intune konzolon alkalmazhatók, lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Az Exchange ActiveSync-szabályzat beállításainak és az egyes mobileszközök által támogatott funkciók listáját [az Exchange ActiveSync-ügyfelek összehasonlító táblázatában](http://go.microsoft.com/fwlink/?LinkId=247270) találja..
+A szabályzatbeállítások az Intune konzolon alkalmazhatók, lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Az Exchange ActiveSync-szabályzat beállításainak és az egyes mobileszközök által támogatott funkciók listáját [az Exchange ActiveSync-ügyfelek összehasonlító táblázatában](http://go.microsoft.com/fwlink/?LinkId=247270) találja.
 
 > [!NOTE]
 > Az Intune Microsoft Exchange-környezethez való csatlakozását követően minden Intune-nal felügyelt felhasználó EAS-házirendje visszaáll a Microsoft Exchange-kiszolgáló aktuális alapértelmezett házirendjére, kivéve, ha az Intune-ban specifikusabb házirend lett meghatározva.
@@ -50,6 +44,7 @@ A szabályzatbeállítások az Intune konzolon alkalmazhatók, lásd: [Az eszkö
 Végül [az EAS által felügyelt mobileszközökön tárolt vállalati adatokat törölheti](wipe-for-exchange-managed-mobile-devices.md), ha már nincsenek használatban, illetve ha elvesztették vagy ellopták az eszközt.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -66,6 +66,6 @@ Jelenleg kizárólag az aláírt SSP.xap fájl biztosításával adható meg a f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
