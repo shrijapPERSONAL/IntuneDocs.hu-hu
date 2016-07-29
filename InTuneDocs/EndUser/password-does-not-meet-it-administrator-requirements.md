@@ -3,7 +3,7 @@ title: "A jelszó nem felel meg a rendszergazda követelményeinek | Microsoft I
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: ac4515df3acae5e73a9682c189ef22a38cd84789
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
 
 
 ---
@@ -39,6 +39,7 @@ A PIN-kód és a jelszó beállításával, illetve az eszközzel elvégezhető 
 Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

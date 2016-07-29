@@ -3,8 +3,8 @@ title: "A Microsoft Intune üzembe helyezésének bevezetési fázisai | Microso
 description: "A műszaki üzembe helyezési folyamatok rendszerint a következő fázisokból állnak: a projekt hatóköre, a koncepció igazolása, próbaüzem, vállalati bevezetés és működtetés."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c20f96481916d5e9468eade65d8aa0c1133646ef
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
 
 
 ---
@@ -26,11 +26,11 @@ A műszaki üzembe helyezési folyamatok rendszerint a következő fázisokból 
 -   [A projekt hatóköre](project-scope.md): A célok, az ütemterv és a sikerkritériumok felvázolása, a kulcsfontosságú szervezeti készültségi tényezők meghatározása, a projektcsapat összeállítása, és az előkészületek elkezdése a Microsoft Intune sikeres bevezetésében szerepet játszó összes fázisban.
      > [!NOTE]           
        Az alábbi sablonok segíthetnek a projekt hatókörének kialakításában:
-        
+
     >- [Intune vagy Intune-nal bővített Configuration Manager döntési sablon](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
     >- [Tervezősablon mobilalkalmazásokhoz](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
     >- [Tervezősablon általános eszközkezeléshez](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-    
+
 
 -   [A koncepció igazolása](proof-of-concept.md): A hálózati architektúra műszaki telepítésének tesztelése, és az üzembe helyezés a vállalati előírásoknak való megfelelésének megállapítása. Ez a fázis egy egyszerű topológiát tartalmaz, amely meghatározott műszaki helyzetek ellenőrzésére készült.  
 
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

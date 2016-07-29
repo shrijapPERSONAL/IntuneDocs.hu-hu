@@ -3,7 +3,7 @@ title: "PIN-kód beállítása vagy módosítása | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 25c1da243f5d0ccde54a9b1c70c300e64f76ea34
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 94c2282688e73a8ab95599b1f7beb05e98eb103a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 25c1da243f5d0ccde54a9b1c70c300e64f76ea34
 
 Ha az iOS-eszköz nem felel meg a rendszergazda PIN-kód-szabályzatának, megjelenik egy üzenet, amely röviden ismerteti a problémát, és elmagyarázza, mit kell tennie, hogy a PIN-kódja megfeleljen a követelményeknek.
 
-A rendszergazda több követelményt is beállíthat a PIN-kódhoz. Például megadhatja, hogy a PIN-kód bizonyos számú karakterből álljon, és hogy számok és betűk is szerepeljenek benne, stb. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogyan állítsa be vagy változtassa meg a PIN-kódját. A követelmények összes lehetséges kombinációjára vonatkozóan nem áll módunkban utasításokat biztosítani. 
+A rendszergazda több követelményt is beállíthat a PIN-kódhoz. Például megadhatja, hogy a PIN-kód bizonyos számú karakterből álljon, és hogy számok és betűk is szerepeljenek benne, stb. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogyan állítsa be vagy változtassa meg a PIN-kódját. A követelmények összes lehetséges kombinációjára vonatkozóan nem áll módunkban utasításokat biztosítani.
 
 Ha gondja van az összes PIN-kóddal kapcsolatos követelménynek megfelelő PIN-kód beállításával, segítségért forduljon a rendszergazdához.
 
@@ -45,6 +45,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

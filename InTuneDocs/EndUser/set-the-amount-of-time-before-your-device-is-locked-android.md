@@ -3,7 +3,7 @@ title: "Annak az időtartamnak a beállítása, amely után az eszköz zárolva 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: df24ef5c0562d04c1f9aaf08c5905e4928b6c4fa
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
 # Annak az időtartamnak a beállítása, amely után az eszköz zárolva lesz
 
 Az Android-eszközön tárolt adatok védelmének növelése érdekében a rendszergazda aktiválhat egy olyan szabályzatot, amely megköveteli, hogy Ön megadja, mennyi ideig tartó tétlenség után zárolódjon az eszköz automatikusan. Az alábbi lépésekkel adhatja meg, hogy mennyi idő elteltével zárolódjon az eszköz.
- 
+
 1.  Eszköze **beállításai** között kattintson a **Biztonság** &gt; **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) elemre.
 
 2.  Adja meg a jelszó lejárati értékét.
@@ -36,6 +36,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

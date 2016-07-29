@@ -3,7 +3,7 @@ title: "A Vállalati portál ismertetése| Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
 A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
 - Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája más módszerekkel is telepítheti Önnek az alkalmazást.
-- Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com). 
+- Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com).
 
 A Vállalati portál alkalmazás és webhely között van néhány apróbb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány példa:
 
@@ -100,10 +100,6 @@ Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elé
 
 
 
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

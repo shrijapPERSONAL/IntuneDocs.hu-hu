@@ -3,7 +3,7 @@ title: "Alkalmazásonkénti VPN Android-eszközökhöz a Pulse Secure használat
 description: "Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e3dd7c0c176cacadc7e041bbda5fade11215c27
-ms.openlocfilehash: 8f8dad237a6b8de51acd869913faa487a5faeda1
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 
 
 ---
 
 # Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához
 
-Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először egy Pulse Secure kapcsolattípust használó VPN-profilt, majd az adott alkalmazásokat használó profilhoz társított egyéni konfigurációs szabályzatot kell létrehoznia. Miután telepítette ezeket a szabályzatokat Android-eszközén vagy a felhasználói csoport számára, a megadott alkalmazások valamelyikének megnyitása elindít az eszközön egy VPN-kapcsolatot az adott alkalmazáshoz. 
+Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először egy Pulse Secure kapcsolattípust használó VPN-profilt, majd az adott alkalmazásokat használó profilhoz társított egyéni konfigurációs szabályzatot kell létrehoznia. Miután telepítette ezeket a szabályzatokat Android-eszközén vagy a felhasználói csoport számára, a megadott alkalmazások valamelyikének megnyitása elindít az eszközön egy VPN-kapcsolatot az adott alkalmazáshoz.
 
 ### 1. lépés: VPN-profil létrehozása
 
@@ -33,9 +33,9 @@ Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profi
 
 > [!NOTE]
 Jegyezze fel a VPN-profil nevét a következő lépéshez. Például: **AlkVpnProfil**.
-   
+
 ### 2. lépés: Egyéni konfigurációs szabályzat létrehozása
-    
+
    1. Az Intune felügyeleti konzolon válassza a **Házirend** -> **Házirend hozzáadása** -> **Android** -> **Egyéni konfiguráció** -> **Házirend létrehozása** lehetőséget.
    2. Adja meg a szabályzat nevét.
    3. Az **OMA-URI beállítások** területen kattintson a **Hozzáadás** elemre.
@@ -43,23 +43,23 @@ Jegyezze fel a VPN-profil nevét a következő lépéshez. Például: **AlkVpnPr
    5. Az **Adattípus** mezőben válassza a **Karakterlánc** lehetőséget.
    6. Az **OMA-URI** mezőbe írja be a következő karakterláncot: **./Vendor/MSFT/VPN/Profile/*Név*/PackageList**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A fenti példában a karakterlánc a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/PackageList**.
    7.   Az **Érték** területen adja meg azoknak a csomagoknak a pontosvesszővel tagolt listáját, amelyeket a profilhoz társít.  Ha például azt szeretné, hogy az Excel és a Google Chrome böngésző VPN-kapcsolatot használjon, írja be a következőt: **com.microsoft.office.excel;com.android.chrome**.
-  
 
-   ![Példa Android rendszerű, alkalmazásonkénti VPN-hez létrehozott egyéni szabályzatra](..\media\android_per_app_vpn_oma_uri.png) 
+
+   ![Példa Android rendszerű, alkalmazásonkénti VPN-hez létrehozott egyéni szabályzatra](..\media\android_per_app_vpn_oma_uri.png)
 #### Az alkalmazáslista Blacklist (Letiltott) vagy Whitelist (Engedélyezett) értékre állítása (nem kötelező)
 A **BLACKLIST** (LETILTOTT) érték kiválasztásával megadhatja, hogy az alkalmazáslista *ne* használhasson VPN-kapcsolatot.  Minden más alkalmazás VPN-kapcsolaton keresztül fog csatlakozni az internethez.
 
 Másik megoldásként megadhatja, hogy *csak* adott alkalmazások használhassanak VPN-kapcsolatot. Ehhez a **WHITELIST** (ENGEDÉLYEZETT) értéket kell beállítania.
- 
+
 
 1.  Az OMA-URI beállítások területén kattintson a **Hozzáadás** elemre.
 2.  Adja meg a beállítás nevét.
 3.  Az **Adattípus** mezőben válassza a **Karakterlánc** lehetőséget.
 4.  Az** OMA-URI** mezőbe írja be a következő karakterláncot: **./Vendor/MSFT/VPN/Profile/*Név*/Mode**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A fenti példában a karakterlánc a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/Mode**.
-5.  Az **Érték** mezőbe írja be a **BLACKLIST** (LETILTOTT) vagy a **WHITELIST** (ENGEDÉLYEZETT) értéket. 
+5.  Az **Érték** mezőbe írja be a **BLACKLIST** (LETILTOTT) vagy a **WHITELIST** (ENGEDÉLYEZETT) értéket.
 
 
-   
+
 ### 3. lépés: Mindkét szabályzat telepítése
 
 *Mindkét* szabályzatot *azonos* Intune-csoport számára kell telepítenie.
@@ -76,7 +76,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

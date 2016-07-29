@@ -3,7 +3,7 @@ title: "A rendszer az USB-hibakeresés kikapcsolását kéri | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,17 +12,17 @@ ms.technology:
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: eb3c46be463a355c920b4a5b5960464d2ab11f91
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfbeed3c09bdc93dfd3a8151d8107bdc6636e981
 
 
 ---
 
 # A rendszer az USB-hibakeresés kikapcsolását kéri
 
-Ha „Az USB-hibakeresést le kell tiltani” üzenettel találkozik, a **Beállítások** > **Fejlesztői beállítások** menüben kapcsolja ki a **USB-hibakeresést**. 
+Ha „Az USB-hibakeresést le kell tiltani” üzenettel találkozik, a **Beállítások** > **Fejlesztői beállítások** menüben kapcsolja ki a **USB-hibakeresést**.
 
-A rendszergazdának fontos, hogy ez a beállítás ki legyen kapcsolva az Android eszközökön a vállalati adatok védelme érdekében. 
+A rendszergazdának fontos, hogy ez a beállítás ki legyen kapcsolva az Android eszközökön a vállalati adatok védelme érdekében.
 
 Ha az **USB-hibakeresés** be van kapcsolva, az adatok kevésbé vannak biztonságban egy USB-eszköz csatlakoztatásakor.
 
@@ -35,6 +35,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

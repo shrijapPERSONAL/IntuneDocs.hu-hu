@@ -3,7 +3,7 @@ title: "Windows-eszköz titkosítása | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 6/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1b066aaa3e2860f7e6afb54493af1b6bb6d72cd4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
 
 Előfordulhat, hogy a rendszergazda a munkahelyi vagy iskolai adatok védelme érdekében megköveteli a Windows-eszköz titkosítását. Ha Windows Phone rendszerű eszközzel rendelkezik, és az regisztrálva van, kötelező titkosítás esetén a rendszer automatikusan titkosítja az eszközt.
 
-Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz. 
+Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz.
 
 1.  Keresse meg, majd indítsa el a **BitLocker kezelése** alkalmazást.
 
@@ -34,7 +34,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

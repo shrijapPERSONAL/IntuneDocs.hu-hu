@@ -3,7 +3,7 @@ title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microso
 description: "Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástelepítéssel kapcsolatos problémák megoldásához nyújt segítséget."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -81,7 +81,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 ### Hiba: A gyártó nem létezik
 A 3. fél licencszerződések hozzáadásához az **Egyéb szoftverlicenc-szerződések hozzáadása** beállítást használja. Megpróbálja felvenni a gyártót az **Egyéb szoftverlicenc-szerződések** lapon. A lap tartalmazza a létező gyártók betűrendbe szedett listáját.
-Megadja a hiányzó gyártót, de **A gyártó nem létezik** hibaüzenet kap. 
+Megadja a hiányzó gyártót, de **A gyártó nem létezik** hibaüzenet kap.
 
 Ez a rendszer kialakításából fakad. Az Intune csak a népszerű szoftvercímek licenceit követi nyomon. Legalább 4 külön fióktól származó jelentés szükséges ahhoz, hogy az Intune választási lehetőségként elérhetővé tegyen egy adott szoftvert a licencelési feladatok között.
 
@@ -105,6 +105,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

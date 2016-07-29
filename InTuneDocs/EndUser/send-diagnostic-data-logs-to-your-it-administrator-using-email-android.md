@@ -3,7 +3,7 @@ title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -31,13 +31,13 @@ A részletes naplózás bekapcsolása:
 
 2.  Koppintson a **Menü** &gt; **Beállítások** elemre.
 
-    > [!NOTE] 
+    > [!NOTE]
     > A felhasználó androidos eszközének típusától függően a **Menü** elem szoftveres vagy hardveres gomb is lehet.
 
 3.  A **Diagnosztikai adatok** csoportban koppintson az **Adatok elküldése** gombra.
 
     > [!NOTE]
-    > **Ha csak Android 6.0-s vagy újabb eszközöket használ:** Amikor az **Adatok küldése** elemre koppint, a következő üzenetet látja: **Engedélyezi a Vállalati portál számára az eszköz fényképeinek, médiafájljainak és fájljainak elérését?**. 
+    > **Ha csak Android 6.0-s vagy újabb eszközöket használ:** Amikor az **Adatok küldése** elemre koppint, a következő üzenetet látja: **Engedélyezi a Vállalati portál számára az eszköz fényképeinek, médiafájljainak és fájljainak elérését?**.
 
     Ez az üzenet félrevezető, mert a **Microsoft soha nem kéri le az eszközén lévő fényképeket, médiafájlokat vagy fájlokat.** A Google szabályozza az üzenet szövegét, így a Microsoft még akkor sem módosíthatja azt, ha az nem felel meg a valóságnak.  Amikor engedélyezi a hozzáférést, csak azt engedélyezi, hogy az eszköz adatnaplókat írjon az eszköz SD-kártyájára, így USB-kábelen keresztül áthelyezhetők lesznek a naplók.
 
@@ -50,6 +50,7 @@ A részletes naplózás bekapcsolása:
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

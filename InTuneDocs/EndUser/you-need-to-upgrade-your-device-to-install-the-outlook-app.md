@@ -3,7 +3,7 @@ title: "Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez | 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -14,15 +14,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: vadona
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1ce280d39f3b2faa0c4aa69dbb582c338bcf1a5b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9df5e5b61fc19a255421c7a573f9d04af7004c58
 
 
 ---
 
 # Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez
 
-Ha az Outlook levelezőalkalmazás letöltésekor az az üzenet jelenik meg, hogy az Android- vagy iOS-eszköz operációs rendszerének verziója régebbi a minimálisan szükségesnél, akkor a letöltés előtt frissítenie kell az eszközt. 
+Ha az Outlook levelezőalkalmazás letöltésekor az az üzenet jelenik meg, hogy az Android- vagy iOS-eszköz operációs rendszerének verziója régebbi a minimálisan szükségesnél, akkor a letöltés előtt frissítenie kell az eszközt.
 
 A frissítést a használt eszköz típusának megfelelő utasításokat követve végezheti el:
 
@@ -34,7 +34,6 @@ Koppintson a **Beállítások** &gt; **Általános** &gt; **Szoftverfrissítés*
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
