@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Wi-Fi használata előmegosztott kulccsal | Microsoft Intune
-description: 
-keywords:
+title: "Wi-Fi használata előmegosztott kulccsal | Microsoft Intune"
+description: "Wi-Fi-profil létrehozása előmegosztott kulccsal az Egyéni konfiguráció funkció segítségével."
+keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+
 
 
 ---
@@ -182,19 +176,19 @@ MEGJEGYZÉS: ez a szabályzat kizárólag felhasználói csoportokra telepíthet
 Amikor az egyes eszközök legközelebb bejelentkeznek, a rendszer telepíti a szabályzatot, és létrehozza a Wi-Fi profilt az eszközökön. Az eszköz így képes lesz automatikusan kapcsolódni a hálózathoz.
 ## XML-fájl létrehozása meglévő Wi-Fi kapcsolat alapján
 Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
-1.     Nyissa meg a következő mappát egy számítógépen, amely kapcsolódik a kívánt vezeték nélküli hálózathoz, illetve a közelmúltban kapcsolódott hozzá: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. Érdemes olyan számítógépet választani, amely még nem kapcsolódott túl sok vezeték nélküli hálózathoz, mivel az összes profilt át kell néznie, hogy megtalálja a megfelelőt.
+1.     Nyissa meg a következő mappát egy olyan számítógépen, amely kapcsolódik a kívánt vezeték nélküli hálózathoz, vagy a közelmúltban kapcsolódott hozzá: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. Érdemes olyan számítógépet választani, amely még nem kapcsolódott túl sok vezeték nélküli hálózathoz, mivel az összes profilt át kell néznie, hogy megtalálja a megfelelőt.
 3.     Keresse meg a kívánt nevű XML-fájlt.
 4.     Ha megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal Adat mezőjébe.
 
 ## A szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése** elemre..
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra..
+    -   **A szabályzat telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
-    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra..
+    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
@@ -202,6 +196,7 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

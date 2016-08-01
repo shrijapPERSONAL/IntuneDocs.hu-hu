@@ -1,10 +1,10 @@
 ---
 title: "iOS-eszközök közvetlen regisztrációja | Microsoft Intune"
-description: 
+description: "Az Apple Configurator eszközzel közvetlenül regisztrálhatja a vállalati tulajdonú iOS-eszközöket egy előre meghatározott szabályzattal. Ehhez csatlakoztassa azokat USB-kapcsolattal egy Mac géphez."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2d2db078bbbce5945bf536a845cd8e4fa8f62c7e
 
 
 ---
 
 # iOS-eszközök közvetlen regisztrálása az Apple Configurator használatával
-Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítógépen futó [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) eszköz segítségével történő regisztrálását. Ez a folyamat nem állítja gyári alaphelyzetbe az eszközt, és az eszközt előre definiált szabályzattal regisztrálja. Ez a módszer azokon az eszközökön használható, amelyeken **Nincs megadva felhasználói affinitás**. A módszer használatához az iOS-eszközt USB-kapcsolaton egy Mac géphez kell csatlakoztatni a vállalati regisztráció beállítása érdekében. A vállalati portál alkalmazás nem támogatott a közvetlen módon regisztrált eszközökön. Ez az útmutató feltételezi, hogy az Apple Configurator 2.0 verzióját használja egy Mac-gépen.
+Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítógépen futó [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) eszköz segítségével történő regisztrálását. Ez a folyamat nem állítja gyári alaphelyzetbe az eszközt, és az eszközt előre definiált szabályzattal regisztrálja. Ez a módszer azokon az eszközökön használható, amelyeken **Nincs megadva felhasználói affinitás**. A módszer használatához az iOS-eszközt USB-kapcsolaton egy Mac géphez kell csatlakoztatni a vállalati regisztráció beállítása érdekében. Amikor közvetlenül regisztrál iOS-eszközöket, regisztrálhat egy eszközt anélkül, hogy lekérné egy eszköz sorozatszámát. Az eszközt el is nevezheti azonosítási célból, mielőtt az Intune rögzítené az eszköz nevét a regisztráció alatt. A vállalati portál alkalmazás nem támogatott a közvetlen módon regisztrált eszközökön. Ez az útmutató feltételezi, hogy az Apple Configurator 2.0 verzióját használja egy Mac-gépen.
 
 1.  **Profil létrehozása az eszközökhöz** Az eszközökre alkalmazott beállításokat egy eszközregisztrációs profil határozza meg. Ha még nem tette meg, az Apple Configurator eszközzel regisztrált iOS-eszközökhöz hozzon létre egy eszközregisztrációs profilt.
-
-    #### Profil létrehozása
 
     1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) ugorjon a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** elemre, majd válassza a **Hozzáadás...** lehetőséget.
 
@@ -40,8 +38,8 @@ Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítóg
 
         -   **Előzetes eszközcsoport-hozzárendelés** – Minden, ezzel a profillal telepített eszköz kezdetben ehhez a csoporthoz fog tartozni. A regisztrálás után új csoportba sorolhatja az eszközöket.
 
-        >[!Important]
-        >A csoport-hozzárendelések az Intune-ból az Azure Active Directory-ba kerülnek át. [További információ](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Profil hozzáadásához válassza a **Profil mentése** lehetőséget.
 
 5.  **A profil exportálása .mobileconfig fájlként, iOS-eszközökre telepítéshez** Válassza ki a létrehozott eszközprofilt. Kattintson az **Exportálás...** lehetőségre a tálcán. Válassza a **Profil letöltése** elemet, és mentse a letöltött .mobileconfig fájlt.
@@ -61,8 +59,6 @@ Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítóg
 
 8.  **A profil telepítése** Most már készen áll a profil iOS-eszközre telepítésére. Az eszköz elvileg elvégezte a Beállítási asszisztens lépéseit, és készen áll a használatra.  Ha a regisztrációba alkalmazástelepítések tartoznak, az eszközhöz be kell állítani egy Apple ID-t, mert az alkalmazástelepítésekhez Apple ID-vel kell bejelentkezni az Apple Store áruházba.
 
-    ###### Profilelfogadás felügyeletlen iOS-eszközök esetében
-
     1.  Oldja fel az iOS-eszköz zárolását.
 
     2.  A **Felügyeleti profil** **Profil telepítése** párbeszédpanelén koppintson a **Telepítés** gombra.
@@ -81,11 +77,7 @@ Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítóg
 10. **Eszközök terjesztése** Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-ban.
 
 
-### Lásd még:
-[Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,20 @@
 ---
-title: "Az iOS-eszközök védelme az aktiválásizár-megkerüléssel | Microsoft Intune"
-description: 
+title: "iOS aktiválási zár kezelése az eszközökön | Microsoft Intune"
+description: "A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
 
 
 ---
@@ -82,12 +82,16 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 
     Ha a **Minden céges eszköz** csomópontban jelöl ki egy eszközt, és az aktiválási zár engedélyezve van az eszközön, megtekintheti az áthidaló kódot is. Ezzel a kóddal manuálisan végezhető el az aktiválási zár megkerülése.
 
+    > [!IMPORTANT]
+    >Az Intune 7 naponta leltárt készít az aktiválási zárral rendelkező eszközökről. Emiatt előfordulhat, hogy egy eszköz nem azonnal az aktiválásizár-állapotával együtt jelenik meg az Intune konzolján.
+
+
 ### További információ
 [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md)
 [Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

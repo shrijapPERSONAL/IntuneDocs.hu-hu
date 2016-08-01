@@ -1,6 +1,6 @@
 ---
 title: "A Dynamics CRM Online-hoz való e-mail-hozzáférés korlátozása| Microsoft Intune"
-description: 
+description: "Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: cbcf2c8d923524b8a1993140fbec0234740075ae
 
 
 ---
@@ -54,9 +55,11 @@ Ha egy felhasználó mindkét csoportban szerepel, mentesül a házirend alól.
 ### 2. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
 [Hozzon létre](create-a-device-compliance-policy-in-microsoft-intune.md) és [telepítsen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szabályzat hatálya alá eső összes eszközre. Ez minden olyan eszközre értendő, amelyet a Megcélzott csoportok csoporthoz tartozó felhasználók használnak.
 
-> [!NOTE] A megfelelőségi szabályzatok a Microsoft Intune csoportjaira vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportokat célozzák meg.
+> [!NOTE]
+> A megfelelőségi szabályzatok a Microsoft Intune csoportjaira vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportokat célozzák meg.
 
-> [!IMPORTANT] Amennyiben nem állított be megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
+> [!IMPORTANT]
+> Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
 
 Ha készen áll, folytassa a 3. lépéssel.
 ### 3. lépés: A Dynamics CRM házirendjének konfigurálása
@@ -94,6 +97,6 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

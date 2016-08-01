@@ -1,10 +1,10 @@
 ---
 title: "Az iOS MAM-szabályzat beállításai | Microsoft Intune"
-description: 
+description: "Ez a témakör bemutatja a mobilalkalmazás-felügyeleti szabályzat beállításait iOS-eszközökhöz."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -38,7 +38,9 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 
   A **Házirend által felügyelt alkalmazások** vagy a **Nincs** beállítás alkalmazása esetén le lesz tiltva az iOS 9 rendszernek az a funkciója, amely lehetővé teszi, hogy a Spotlight-keresés adatokat keressen az alkalmazásokon belül.
 
-  **Alapértelmezett érték = Házirend által felügyelt alkalmazások**
+  **Ez a beállítás nem szabályozza a mobileszközök Megnyitás a következőben funkciójának használatát. A Megnyitás a következőben funkció kezelésével kapcsolatos információkért kattintson [ide](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
+
+  **Alapértelmezett érték = Szabályzattal felügyelt alkalmazások**
 
 - **Az alkalmazás fogadhat adatokat más alkalmazásokból:** azon alkalmazások körét határozza meg, amelyek adatokat adhatnak át a szabályzat által felügyelt alkalmazásoknak:
   -  **Házirend által felügyelt alkalmazások**: az adatátvitel csak más szabályzat által felügyelt alkalmazásokból engedélyezett.
@@ -112,6 +114,6 @@ Az iOS-eszközökön engedélyezheti a felhasználóknak, hogy számjegyes PIN-k
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

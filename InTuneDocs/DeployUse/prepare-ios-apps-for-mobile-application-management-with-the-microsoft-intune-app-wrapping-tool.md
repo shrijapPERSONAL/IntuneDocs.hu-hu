@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS-alkalmazások felügyeletre való előkészítése az alkalmazásburkoló eszközzel | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "iOS-alkalmazások burkolása az Alkalmazásburkoló eszközzel | Microsoft Intune"
+description: "Ebből a témakörből megtudhatja, hogyan burkolhatja az iOS-alkalmazásait anélkül, hogy módosítaná az alkalmazás programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -30,14 +24,14 @@ A **Microsoft Intune App Wrapping Tool for iOS** nevű alkalmazásburkoló eszk�
 
 Az eszköz egy Mac OS parancssori alkalmazás, amely „burkolót” hoz létre az alkalmazások körül. Az alkalmazások feldolgozását követően az Ön által beállított [mobilalkalmazás-kezelési szabályzat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) használatával módosíthatja az alkalmazások működését.
 
-Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218) weblapot..
+Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218) weblapot.
 
 ## 1. lépés: Az alkalmazásburkoló eszköz használatára vonatkozó előfeltételek teljesítése
 
 |Követelmény|További információ|
 |---------------|--------------------------------|
 |Támogatott operációs rendszer és eszközkészlet|Az alkalmazásburkoló eszközt OS X 10.8.5 vagy újabb rendszerű Mac számítógépen kell futtatni, amelyen telepítve van az XCode eszközkészlet 5-ös vagy újabb verziója.|
-|Aláíró tanúsítvány és létesítési profil|Rendelkeznie kell egy Apple aláíró tanúsítvánnyal és létesítési profillal. Lásd az [Apple fejlesztői dokumentációját](https://developer.apple.com/)..|
+|Aláíró tanúsítvány és létesítési profil|Rendelkeznie kell egy Apple aláíró tanúsítvánnyal és létesítési profillal. Lásd az [Apple fejlesztői dokumentációját](https://developer.apple.com/).|
 |Alkalmazás feldolgozása az alkalmazásburkoló eszközzel|Az alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia. Az eszköz nem használható az Apple Store áruházból származó alkalmazások feldolgozásához. Az alkalmazásoknak az iOS 7.0-s vagy újabb verziójához kellett készülnie. Az alkalmazásoknak a Position Independent Executable (PIE) formátumot kell használniuk. A PIE formátumról az Apple fejlesztői dokumentációjában talál további információkat. Végül az alkalmazásoknak **.app** vagy **.ipa** kiterjesztésűeknek kell lenniük.|
 |Az alkalmazásburkoló eszköz által nem feldolgozható alkalmazások|Titkosított alkalmazások, aláíratlan alkalmazások, kiterjesztett fájlattribútumokkal rendelkező alkalmazások.|
 |Az Azure Active Directory Authentication Libraryt (ADAL-t) használó alkalmazások|Ha az alkalmazás ADAL-t használ, legalább az ADAL 1.0.2-es verzióját kell tartalmaznia, és a fejlesztőnek hozzáférést kell adnia az alkalmazás számára az Intune mobilalkalmazás-kezelési erőforráshoz.<br /><br />Az ADAL használatával kapcsolatban lásd a jelen cikkben alább található [Az Azure Active Directory Libraryt (ADAL) használó alkalmazásokra vonatkozó tájékoztatás](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) cím részt.|
@@ -47,7 +41,7 @@ Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for
 
 1.  A **Microsoft letöltőközpont** [Microsoft Intune App Wrapping Tool for iOS](https://www.microsoft.com/download/details.aspx?id=45218) lapján töltse le a Mac gépre készült alkalmazásburkoló eszköz teljepítőfájlját.
 
-2.  A Mac számítógépen kattintson duplán a **Microsoft Intune App Wrapping Tool for iOS.dmg** telepítőfájlra..
+2.  A Mac számítógépen kattintson duplán a **Microsoft Intune App Wrapping Tool for iOS.dmg** telepítőfájlra.
 
 3.  Válassza az **Elfogadom** lehetőséget a végfelhasználói licencszerződés elfogadásához. A telepítő csatlakozik és megjelenik a Mac számítógépen.
 
@@ -59,7 +53,7 @@ Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for
 
 1.  A Mac számítógépen nyissa meg a terminálablakot, és keresse meg azt a mappát, ahová mentette a fájlokat. Mivel a végrehajtható fájl a csomagon belül található, a parancsot a következőképpen kell futtatnia:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Az alkalmazásburkoló eszközzel burkolt alkalmazások az iOS-ügyféleszköz k
 
 1.  Az alkalmazást futtatva reprodukálja a hibát.
 
-2.  Gyűjtse össze a konzol kimenetét az Apple [telepített iOS-alkalmazások hibakeresésére](https://developer.apple.com/library/ios/qa/qa1747/_index.html) vonatkozó utasításait követve..
+2.  Gyűjtse össze a konzol kimenetét az Apple [telepített iOS-alkalmazások hibakeresésére](https://developer.apple.com/library/ios/qa/qa1747/_index.html)vonatkozó utasításait követve.
 
 3.  A következő szkriptet a konzolon megadva szűrje a mentett naplókat az alkalmazáskorlátozások kimenetre:
 
@@ -149,7 +143,7 @@ Az ADAL tárat használó alkalmazások esetében az alábbiaknak kell teljesül
 
 -   Az alkalmazásnak tartalmaznia kell egy ADAL verziót, amely az 1.0.2-esnél újabb
 
--   A fejlesztőnek hozzáférést kell adnia az alkalmazás számára az Intune Mobilalkalmazás-kezelés erőforráshoz az alábbiak szerint: [Az ADAL-t használó alkalmazások által követendő lépések](#steps-to-follow-for-apps-that-use-adal)..
+-   A fejlesztőnek hozzáférést kell adnia az alkalmazás számára az Intune Mobilalkalmazás-kezelés erőforráshoz az alábbiak szerint: [Az ADAL-t használó alkalmazások által követendő lépések](#steps-to-follow-for-apps-that-use-adal).
 
 ### A beszerzendő azonosítók áttekintése
 Az ADAL tárat használó alkalmazásoknak az Azure felügyeleti portálján keresztül regisztrálniuk kell ahhoz, hogy alkalmazásukhoz beszerezzenek két egyedi azonosítót:
@@ -170,9 +164,9 @@ Az ADAL tárat használó alkalmazásoknak az Azure felügyeleti portálján ker
 
     2.  Kattintson a **meglévő LOB-alkalmazás regisztrációja** elemre az Azure Active Directoryban.
 
-    3.  A konfigurálási résznél válassza a **Configure Access to Web APIs in other applications** (Webes API-k más alkalmazásokban való elérésének konfigurálása) lehetőséget..
+    3.  A konfigurálási csoportban válassza a **Webes API-k más alkalmazásokban való elérésének konfigurálása**lehetőséget.
 
-    4.  A **Permission to other applications** (Engedélyek más alkalmazásoknak) rész első legördülő listájából válassza az **Intune Mobile Application Management** (Intune Mobilalkalmazás-kezelés) lehetőséget..
+    4.  A **Permission to other applications** (Engedélyek más alkalmazásoknak) rész első legördülő listájából válassza az **Intune Mobile Application Management** (Intune Mobilalkalmazás-kezelés) lehetőséget.
 
         Ezután már használhatja az alkalmazás ügyfél-azonosítóját az alkalmazásburkoló eszközben. Az alkalmazás ügyfél-azonosítója az Azure Active Directory felügyeleti portálon található, ahogy az [A beszerzendő azonosítók áttekintése](#overview-of-identifiers-you-need-to-get) című részben is olvasható.
 
@@ -199,7 +193,7 @@ Az ADAL tárat használó alkalmazásoknak az Azure felügyeleti portálján ker
 -   Megelőzhetők az ismétlődő bejelentkezési utasítások, ha megadja az alkalmazás ügyfél-azonosítóját és átirányítási URI-ját. Ezt az ügyfél-azonosítót regisztrálni kell a közzétett [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM erőforrás-azonosító eléréséhez az AAD irányítópultján. Ennek elmaradása esetén bejelentkezési hiba lép fel, amikor az alkalmazás fut.
 
 ## Alkalmazásjogosultságok beállítása
-Az alkalmazást a burkolása előtt **jogosultságok** megadásával további engedélyekkel és képességekkel láthatja el. Ezek segítségével tovább bővítheti az alkalmazás által elvégezhető tevékenységek körét.  A kódaláírás során a rendszer **jogosultságot tartalmazó fájlt** használ a speciális engedélyek (például megosztott kulcslánchoz való hozzáférés) megadásához az alkalmazáson belül. Az alkalmazás **képességek** néven ismert specifikus szolgáltatások az alkalmazásfejlesztés során az Xcode-on belül engedélyezhetők. Miután engedélyezte őket, a képességek megjelennek a jogosultságokat tartalmazó fájlban. A jogosultságokról és képességekről az iOS Developer Library [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Képességek hozzáadása) című témakörében olvashat bővebben. A támogatott képességek teljes listáját a [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Támogatott képességek) című témakörben találja..
+Az alkalmazást a burkolása előtt **jogosultságok** megadásával további engedélyekkel és képességekkel láthatja el. Ezek segítségével tovább bővítheti az alkalmazás által elvégezhető tevékenységek körét.  A kódaláírás során a rendszer **jogosultságot tartalmazó fájlt** használ a speciális engedélyek (például megosztott kulcslánchoz való hozzáférés) megadásához az alkalmazáson belül. Az alkalmazás **képességek** néven ismert specifikus szolgáltatások az alkalmazásfejlesztés során az Xcode-on belül engedélyezhetők. Miután engedélyezte őket, a képességek megjelennek a jogosultságokat tartalmazó fájlban. A jogosultságokról és képességekről az iOS Developer Library [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Képességek hozzáadása) című témakörében olvashat bővebben. A támogatott képességek teljes listáját a [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Támogatott képességek) című témakörben találja.
 
 ### Az iOS rendszerhez készült alkalmazásburkoló eszköz támogatott képességei
 
@@ -211,7 +205,7 @@ Az alkalmazást a burkolása előtt **jogosultságok** megadásával további en
 |Alkalmazáson belüli vásárlás|Az alkalmazáson belüli vásárlás közvetlenül az alkalmazásba beépít egy áruházat azáltal, hogy engedélyezi az áruházhoz csatlakozást és a felhasználó fizetéseinek biztonságos feldolgozását. Az alkalmazáson belüli vásárlás segítségével szedheti be a továbbfejlesztett funkciókért vagy az alkalmazása által használható további tartalomért járó díjakat.||
 |Kulcslánc megosztása|A kulcslánc megosztása lehetővé teszi, hogy az alkalmazása jelszavakat osszon meg a kulcsláncban a csapata által fejlesztett egyéb alkalmazásokkal.|Kulcslánc megosztásakor használjon címfeloldási DNS-t:<br /><br />*com.cégnév.Kulcslánccsoport*|
 |Személyes VPN|A személyes VPN engedélyezésével lehetővé teszi az alkalmazásnak, hogy egyéni VPN-rendszerkonfigurációt hozzon létre és szabályozzon a Hálózati bővítmény keretrendszer használatával.||
-|Leküldéses értesítések|Az Apple Push Notification szolgáltatás (APNs) lehetővé teszi, hogy a nem az előtérben futó alkalmazások értesítsék a felhasználót arról, hogy információi vannak a számára.|A leküldéses értesítések működéséhez alkalmazásspecifikus létesítési profilt kell használnia.<br /><br />Kövesse az [Apple fejlesztői dokumentációjában](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) megadott lépéseket..|
+|Leküldéses értesítések|Az Apple Push Notification szolgáltatás (APNs) lehetővé teszi, hogy a nem az előtérben futó alkalmazások értesítsék a felhasználót arról, hogy információi vannak a számára.|A leküldéses értesítések működéséhez alkalmazásspecifikus létesítési profilt kell használnia.<br /><br />Kövesse az [Apple fejlesztői dokumentációjában](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) megadott lépéseket.|
 |Vezeték nélküli tartozék konfigurációja|A vezeték nélküli tartozék konfigurációja felveszi a külsőtartozék-támogatási keretrendszert a projektjébe, és lehetővé teszi az alkalmazásnak az MFi Wi-Fi tartozékok konfigurálását.||
 
 ### A jogosultságok engedélyezésének lépései
@@ -230,7 +224,7 @@ Az alkalmazást a burkolása előtt **jogosultságok** megadásával további en
 
     1.  Jelentkezzen be az Apple Developer Member Center webhelyre.
 
-    2.  Hozzon létre egy létesítési profilt az alkalmazásához. Utasításokért lásd: [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx) (Az Intune App Wrapping Tool for iOS előfeltételeinek megteremtése)..
+    2.  Hozzon létre egy létesítési profilt az alkalmazásához. Utasításokért lásd: [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Az Intune App Wrapping Tool for iOS előfeltételeinek megteremtése).
 
     3.  A létesítési profiljában engedélyezze ugyanazokat a jogosultságokat, amelyekkel az alkalmazásában rendelkezik. Adja meg ugyanazokat az azonosítókat, amelyeket az alkalmazása fejlesztése során adott meg.
 
@@ -271,7 +265,7 @@ Aláírt alkalmazás és létesítési profil meglévő jogosultságainak ellen�
 Ezzel a paranccsal eltávolítja az alkalmazásból azon engedélyezett képességeket, amelyek nem szerepelnek a jogosultságokat tartalmazó fájlban. Ha olyan képességeket távolít el, amelyeket az alkalmazás használ, az az alkalmazás meghibásodásához vezethet. Hiányzó képességeket például abban az esetben érdemes eltávolítani, ha egy partner által fejlesztett alkalmazás alapértelmezés szerint rendelkezik az összes képességgel.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Biztonság és adatvédelem az alkalmazásburkoló eszköz esetén
@@ -297,6 +291,7 @@ Az alkalmazásburkoló eszköz használatakor kövesse az alábbi biztonsági é
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

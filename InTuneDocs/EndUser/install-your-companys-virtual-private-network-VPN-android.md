@@ -3,18 +3,19 @@ title: "A vállalat virtuális magánhálózatának (VPN-jének) telepítése | 
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 73fee953e10336fe659e271b49d96a518b2730aa
 
 
 ---
@@ -28,7 +29,9 @@ Ha a rendszergazda VPN-alkalmazást konfigurált, hogy a felhasználók hozzá t
 
 2.  A **Play áruházban** kattintson a **TELEPÍTÉS** gombra, és kövesse a megjelenő utasításokat az alkalmazás telepítéséhez.
 
-3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és a lépéseket követve fogadja el a feltételeket, majd aktiválja az alkalmazást.
+3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és kövesse az utasításokat. Előfordulhat, hogy a telepítési lépések némileg eltérnek – attól függően, hogy melyik VPN-szolgáltatót használja a vállalata.
+
+
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
@@ -36,6 +39,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

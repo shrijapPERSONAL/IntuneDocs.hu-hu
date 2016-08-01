@@ -1,32 +1,32 @@
 ---
 title: "Felkészülés az eszközök regisztrálására | Microsoft Intune"
-description: 
+description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
-ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
 
 
 ---
 
 # Felkészülés az eszközök regisztrálására a Microsoft Intune-ban
-Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
+Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő (MDM) szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
 
 ## A mobileszköz-kezelő szolgáltató beállítása
-A mobileszköz-felügyeleti szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például az Intune önmagában, illetve az Intune-nal bővített Configuration Manager. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
+Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
-> Alaposan fontolja meg, hogy a mobileszközöket csak az Intune használatával (online szolgáltatás), vagy a System Center Configuration Managerbe integrált Intune-nal szeretné-e kezelni (helyszíni szoftveres megoldás online szolgáltatással együtt). A mobileszköz-kezelő szolgáltató beállítása után a szolgáltató nem módosítható.
+> Alaposan fontolja meg, hogy a mobileszközöket csak az Intune használatával (online szolgáltatás), vagy a System Center Configuration Managerbe integrált Intune-nal szeretné-e kezelni (helyszíni szoftveres megoldás online szolgáltatással együtt). Miután beállította az MDM-szolgáltatót, ez már nem módosítható.
 
 
 
@@ -36,7 +36,7 @@ A mobileszköz-felügyeleti szolgáltató határozza meg azt a felügyeleti szol
 
     ![Az MDM-szolgáltató megadása párbeszédpanel](../media/intune-mdm-authority.png)
 
-3.  Az Intune annak megerősítését kéri, hogy be szeretné állítani MDM-szolgáltatóként. Ha az Intune-t szeretné használni a mobileszközök kezeléséhez, jelölje be a jelölőnégyzetet, majd kattintson az **Igen** lehetőségre.
+3.  Az Intune annak megerősítését kéri, hogy be szeretné állítani MDM-szolgáltatóként. Jelölje be a jelölőnégyzetet, majd válassza az **Igen** lehetőséget a Microsoft Intune mobileszközök kezelésére történő használatához.
 
 ## Az Intune Vállalati portál konfigurálása
 
@@ -45,11 +45,11 @@ A felhasználók az Intune Vállalati portálon érhetik el a vállalati adatoka
 > [!TIP]
 > A vállalati portál testreszabása a vállalati portál webhelyére és a vállalati portál alkalmazásaira egyaránt hatással van.
 
-A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Ehhez jelentkezzen be a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) bérlői vagy szolgáltatás-rendszergazdaként, válassza a **Felügyelet** &gt; **Vállalati portál** lehetőséget, és konfigurálja a Vállalati portál beállításait.
+A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Ehhez regisztráljon a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) bérlői vagy szolgáltatás-rendszergazdaként, válassza a **Felügyelet** &gt; **Vállalati portál** lehetőséget, és konfigurálja a Vállalati portál beállításait.
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
-#### Vállalat kapcsolattartási adatai és adatvédelmi nyilatkozata
+### Vállalat kapcsolattartási adatai és adatvédelmi nyilatkozata
 
 A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartási adatokat és részleteket a felhasználók a Vállalati portál IT-csoport elérhetősége képernyőjén tekinthetik meg. Az adatvédelmi nyilatkozat az Adatvédelem hivatkozásra kattintva jeleníthető meg.
 
@@ -59,10 +59,10 @@ A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartás
     |IT-részleg kapcsolattartójának a neve|40|Ez a név az **IT-csoport elérhetősége** lapon jelenik meg.|
     |IT-részleg telefonszáma|20|Ez a telefonszám az **IT-csoport elérhetősége** lapon jelenik meg.|
     |IT-részleg e-mail címe|40|Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail-címet az **alias@tartománynév.com** formátumban.|
-    |További információ|120|Az **IT-csoport elérhetősége** lapon jelenik meg.|
+    |További információ|120|Ez az információ az **IT-csoport elérhetősége** lapon jelenik meg.|
     |Vállalat adatvédelmi nyilatkozatának URL-címe:|79|Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: https://www.contoso.com.|
 
-#### Támogatási kapcsolattartók
+### Támogatási kapcsolattartók
 A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi a felhasználók számára az online támogatás elérését.
 
 |Mező neve|Maximális hossz|További információ|
@@ -71,7 +71,7 @@ A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi 
     |Webhely neve|40|Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de egyszerű nevet nem, akkor **Az IT-csoport weboldalának megnyitása** felirat jelenik meg a Vállalati portál **IT-csoport elérhetősége** lapján.|
 
 
-#### Vállalati arculat szerinti testreszabás
+### Vállalati arculat szerinti testreszabás
 
 A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával.
 
@@ -86,16 +86,16 @@ A módosítások mentése után a felügyeleti konzol **Vállalati portál** lap
 
 ## Intune felhasználói licenc hozzárendelése
 
-Az **Office 365 felügyeleti portáljának** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
+Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is.
 
 1.  Jelentkezzen be az [Office 365 felügyeleti portálján](https://portal.office.com/Admin/Default.aspx) bérlői rendszergazdai hitelesítő adataival.
 
-2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, és a felhasználói fiók tulajdonságainál jelölje be a **Microsoft Intune** jelölőnégyzetet.
+2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, majd jelölje be a **Microsoft Intune** jelölőnégyzetet a felhasználói fiók tulajdonságai között.
 
 3.  A felhasználói fiók ezzel bekerül a Microsoft Intune felhasználói csoportba, amely engedélyt ad a felhasználónak a szolgáltatás használatára és eszközeinek felügyeletre való regisztrálására.
 
 ## Eszközkezelés beállítása
-A mobileszköz-kezelő szolgáltató beállítása után meg kell adnia az eszközkezelési beállításokat a szervezet által támogatni kívánt operációs rendszerekhez. Az eszközkezelés beállításához szükséges lépések az operációs rendszertől függően változhatnak. Android operációs rendszer esetén például semmit sem kell megadnia az Intune felügyeleti konzolon. Windows- és iOS-eszközökön azonban a felügyelet engedélyezéséhez megbízhatósági kapcsolatot kell beállítani az eszközök és az Intune között.
+A mobileszköz-kezelő szolgáltató beállítása után meg kell adnia az eszközkezelési beállításokat a szervezet által támogatni kívánt operációs rendszerekhez. Az eszközkezelés beállításához szükséges lépések operációs rendszertől függően eltérhetnek. Android operációs rendszer esetén például semmit sem kell megadnia az Intune felügyeleti konzolon. Windows- és iOS-eszközökön azonban a felügyelet engedélyezéséhez megbízhatósági kapcsolatot kell beállítani az eszközök és az Intune között.
 
 > [!div class="op_single_selector"]
 - [Androidos eszközök Microsoft Intune-beli kezelésének beállítása](set-up-android-management-with-microsoft-intune.md)
@@ -109,6 +109,6 @@ További lehetőségek:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

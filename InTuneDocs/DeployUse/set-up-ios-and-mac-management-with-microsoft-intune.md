@@ -1,28 +1,26 @@
 ---
 title: "iOS- és Mac-eszközök kezelésének beállítása | Microsoft Intune"
-description: 
+description: "Mobileszközök felügyeletének (MDM) engedélyezése a Microsoft Intune-nal iOS-eszközök (iPadek és iPhone-ok), illetve Mac OS X-eszközök esetén."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb44d53c87bec1b6892bf49a65f3df684199ed08
-ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
 
 
 ---
 
 # iOS- és Mac-eszközök kezelésének beállítása
-A Microsoft Intune-nal megteremthetők a saját eszközök használatának (BYOD) feltételei iPhone-, iPad- és Mac-felhasználók számára az iOS- és Mac OS X-eszközök regisztrálásával, ezáltal a vállalati levelezés és erőforrások elérésének biztosításával. Az engedélyezést követően a felhasználók telepíthetik az Intune Vállalati portál alkalmazást, és ezzel eszközeik szabályzatokkal megcélozhatóvá válnak az Intune felügyeleti konzoljában.
-
-Az iOS-eszközöknek az Intune-beli kezeléséhez az eszközöknek képesnek kell lenniük az Intune-nal való kommunikációra. Az Apple által igényelt, Intune szolgáltatással való megbízhatósági kapcsolat az Apple Push Notification (APN) szolgáltatásból importált tanúsítvánnyal biztosítható.
+Az iPadek, iPhone-ok és Mac OS X-eszközök Intune-alapú mobileszköz-felügyeletével hozzáférést biztosíthat a vállalati levelezéshez és alkalmazásokhoz. Az iOS- és Mac-eszközök Intune-felügyeletéhez szüksége lesz egy Apple Push Notification- (APN-) tanúsítványra. Amint hozzáadta a tanúsítványt az Intune-hoz, a felhasználók telepíthetik a Vállalati portál alkalmazást az eszközeik regisztrálásához, vagy a rendszergazda beállíthatja [a vállalati tulajdonú iOS-eszközök felügyeletét](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Az Intune beállítása**<br>
     Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
@@ -50,6 +48,6 @@ Ha az iOS-eszközöket vállalata vagy szervezete vásárolja meg a felhasznál�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,19 +1,20 @@
 ---
-title: "A Microsoft Intune Exchange Connector telepítése helyszíni Exchange-hez | Microsoft Intune"
-description: 
+title: "Helyszíni EAS Exchange-összekötője | Microsoft Intune"
+description: "Az Összekötő eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és a helyszíni Exchange Server között az Exchange ActiveSync MDM-hez."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ A következő táblázatban találja a helyszíni Exchange Connector telepítés
 |További szoftverek|A Microsoft .NET-keretrendszer 4-es és a Windows PowerShell 2.0-s verziójának teljes mértékben telepítve kell lennie az összekötőt futtató számítógépen.|
 |Hálózat|Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Servert üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com.|
 |Legyen konfigurálva és fusson a szolgáltatott Exchange|További információk: [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be|[Mobileszköz-szolgáltatóként a Microsoft Intune-t állítsa be](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange-parancsmagokkal kapcsolatos követelmények
 
@@ -58,16 +58,14 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 
 ## Töltse le a helyszíni Exchange Connector szoftver telepítőcsomagját
 
-1. Egy a helyszíni Exchange Connector használatához támogatott operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com) (http://manage.microsoft.com) egy olyan felhasználói fiókkal, amely az Exchange Server használatához licenccel rendelkező rendszergazda az Exchange-bérlőben.
+1. Egy a helyszíni Exchange Connector használatához egy támogatott Windows Server operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com) (http://manage.microsoft.com) egy olyan felhasználói fiókkal, amely az Exchange Server használatához licenccel rendelkező rendszergazda az Exchange-bérlőben.
 ![Nyissa meg az Exchange-kapcsolat beállítását](../media/ExchangeConnector.gif)
 
-2.  A munkaterület parancsikon-ablaktábláján válassza az **ADMINISZTRÁCIÓ** elemet.
+2.  A munkaterület parancsikon-ablaktábláján válassza a **Felügyelet** lehetőséget, válassza a **Mobileszköz-kezelés** > **Microsoft Exchange**, majd az **Exchange-kapcsolat beállítása** pontot.
 
-3.  A navigációs ablaktábla **Mobileszköz-kezelés** területén bontsa ki a **Microsoft Exchange** elemet, majd kattintson az **Exchange-kapcsolat beállítása** parancsra.
+3.  Az **Exchange-kapcsolat** beállítása lapon kattintson a **On-Premises Connector letöltése** parancsra.
 
-4.  Az **Exchange-kapcsolat** beállítása lapon kattintson a **On-Premises Connector letöltése** parancsra.
-
-5.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza. Ezt megnyithatja vagy mentheti. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
+4.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza. Ezt megnyithatja vagy mentheti. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
 
 > [!IMPORTANT]
 > Ne nevezze át és ne helyezze át a helyszíni Exchange Connector mappájában levő fájlokat. A mappa tartalmának áthelyezése vagy átnevezése megszakítja a telepítést.
@@ -133,6 +131,6 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

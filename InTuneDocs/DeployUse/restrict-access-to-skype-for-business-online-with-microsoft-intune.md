@@ -1,10 +1,10 @@
 ---
 title: "A Skype Vállalati online verzió elérésének korlátozása | Microsoft Intune"
-description: 
+description: "Feltételes hozzáféréssel védheti és vezérelheti a Skype Vállalati online verzióhoz való hozzáférést."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 693feee133a594032c0edc69f03f65681bacfb81
 
 
 ---
@@ -32,7 +33,7 @@ Amikor egy célzott felhasználó a Skype Vállalati online verziót szeretné h
 **Mielőtt** beállítaná a Skype Vállalati online verzióra vonatkozó feltételes hozzáférési szabályzatot, a következőknek kell teljesülniük:
 - Rendelkeznie kell **Skype Vállalati online verzió-előfizetéssel**, valamint ki kell osztania a Skype Vállalati online verzió licenceit a felhasználóknak.
 - Rendelkeznie kell előfizetéssel a következő csomagok valamelyikére: **Nagyvállalati mobilitási csomag** vagy **Prémium szintű Azure Active Directory**.
--   [Engedélyeznie kell a modern hitelesítést](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) a Skype Vállalati online verzióhoz. 
+-   [Engedélyeznie kell a modern hitelesítést](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) a Skype Vállalati online verzióhoz.
 -  Minden végfelhasználónak a **Skype Vállalati online verziót** kell használnia. Amennyiben a telepítésben Skype Vállalati online verzió és helyi Skype Vállalati verzió is szerepel, a rendszer nem alkalmazza a feltételes hozzáférési szabályzatot a végfelhasználókra.
 
     A Skype Vállalati online verzióhoz hozzáférést igénylő eszközre vonatkozóan a következőknek kell teljesülniük:
@@ -68,10 +69,12 @@ Ha egy felhasználó mindkét csoportban szerepel, mentesül a házirend alól.
 ### 2. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
 [Hozzon létre](create-a-device-compliance-policy-in-microsoft-intune.md) és [telepítsen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szabályzat hatálya alá eső összes eszközre. Ez minden olyan eszközre értendő, amelyet a **Megcélzott csoportok** csoporthoz tartozó felhasználók használnak.
 
-> [!NOTE] A megfelelőségi szabályzatok a(z) [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportokat célozzák meg.
+> [!NOTE]
+> A megfelelőségi szabályzatok az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Direct orybiztonsági csoportokat célozzák meg.
 
 
-> [!IMPORTANT] Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
+> [!IMPORTANT]
+> Amennyiben nem telepített megfelelőségi szabályzatot, a rendszer megfelelőként fogja értékelni az eszközöket.
 
 Ha készen áll, folytassa a **3. lépéssel**.
 
@@ -113,6 +116,6 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

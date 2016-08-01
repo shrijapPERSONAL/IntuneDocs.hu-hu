@@ -3,26 +3,27 @@ title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése USB-kábele
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 
 ---
 
 
-# Diagnosztikai adatokat tartalmazó naplófájlok elküldése USB-kábelen keresztül a rendszergazdának
+# Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának
 
-Ha nem mobileszközt, hanem számítógépet használva szeretné elküldeni a naplófájlokat a mobileszközéről a rendszergazdának, hogy ő azonosíthassa, majd megoldhassa a problémát, tegye a következőket:
+Ha adatnaplót szeretne küldeni az informatikai rendszergazdának, hogy segítséget kapjon egy problémához, a naplókat elküldheti egy számítógép és egy USB-kábel segítségével, és nem kell a mobileszközéről küldeni a naplókat. Ezt a következőképpen teheti meg:
 
 1.  Mielőtt nekikezdene, győződjön meg arról, hogy ismeri a rendszergazda e-mail címét. A vállalati portál webhelyén vagy a Vállalati portál alkalmazásban általában megtalálható a rendszergazda e-mail címe.
 
@@ -38,6 +39,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

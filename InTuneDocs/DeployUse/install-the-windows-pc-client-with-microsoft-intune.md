@@ -1,20 +1,20 @@
 ---
-title: "A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal | Microsoft Intune"
-description: 
+title: "A Windows rendszerű számítógépügyfél telepítése | Microsoft Intune"
+description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ Ezután az alábbi módszerek közül egy vagy több alkalmazásával telepíthe
 -   [Az ügyfélszoftver manuális telepítése](#to-manually-deploy-the-client-software)
 
 -   [Az ügyfélszoftver automatikus telepítése a Csoportházirenddel](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Számítógépek önálló regisztrálása a felhasználók által](#how-users-can-self-enroll-their-computers)
 
 -   [A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -82,28 +80,6 @@ Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való
 
     A Csoportházirend szoftverek automatikus telepítésére való használatával kapcsolatban a Windows Server dokumentációjában találhat további információkat.
 
-### Számítógépek önálló regisztrálása a felhasználók által
-A felhasználók saját maguk is regisztrálhatják számítógépeiket a munkahelyi Intune-portálon. Minden regisztrált számítógép ahhoz a felhasználói fiókhoz lesz kapcsolva, amellyel telepítették az ügyfélszoftvert.
-
-> [!NOTE]
-> -   Az ügyfélszoftver telepítéséhez a felhasználónak rendszergazdának kell lennie a számítógépen.
-> -   Az önálló regisztráláshoz az Internet Explorer böngészőnek telepítve kell lennie az ügyfélszámítógépen.
-> -   Minden alkalommal, amikor a felhasználó önállóan regisztrál egy számítógépet, felhasznál egy Intune-licencet.
-> -   A számítógépek önálló regisztrálásához egy munkahelyi vagy iskolai fiókot kell használni. Microsoft-fiókkal nem lehet önállóan regisztrálni számítógépeket.
-> -   Ha az ügyfélszoftver már telepítve van a számítógépen, a végfelhasználó egy hibaüzenetet fog kapni.
-
-### Számítógépek önálló regisztrálása (tájékoztatás végfelhasználók számára)
-
-1.  Jelentkezzen be a vállalati portálra a regisztrálni kívánt számítógépről.
-
-2.  Kattintson az **Eszköz hozzáadása**lehetőségre.
-
-3.  Kattintson a **Szoftver letöltése** , majd a **Futtatás**lehetőségre.
-
-4.  A **Tovább** gombra kattintva indítsa el a Microsoft Intune telepítővarázslóját.
-
-5.  A telepítő varázsló befejeződésekor kattintson a **Befejezés**gombra.
-
 ### A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként
 Az Intune ügyfélszoftverét az alábbi példaeljárás alapján egy operációsrendszer-kép részeként is telepítheti a számítógépekre:
 
@@ -134,7 +110,7 @@ Amikor a következő ütemezett időpontban lefut az automatikus regisztrálási
 
 Ha a regisztráció sikeres, vagy ha letelik az egy hónap, törlődik a célszámítógépről az automatikus Intune-regisztrálási feladat, a **WindowsIntuneEnrollPending** beállításkulcs és a fióktanúsítvány.
 
-## A sikeres ügyféltelepítés figyelése és ellenőrzése 
+## A sikeres ügyféltelepítés figyelése és ellenőrzése
 A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél sikeres telepítését.
 
 ### A kliensszoftver telepítésének ellenőrzése a Microsoft Intune felügyeleti konzolon
@@ -159,9 +135,10 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 
 ### Lásd még:
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
+[Az ügyfél beállításának hibaelhárítása](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

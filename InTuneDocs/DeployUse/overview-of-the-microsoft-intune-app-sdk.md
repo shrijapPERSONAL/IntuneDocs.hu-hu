@@ -13,8 +13,8 @@ ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+ms.sourcegitcommit: 206f7c927cce0b66cf554f60342f3f0b1ca43105
+ms.openlocfilehash: d40687127841754f3994b8ad55e839e08bb8dd33
 
 
 ---
@@ -47,7 +47,7 @@ A rendszergazdák felügyelt böngésző használatát kényszeríthetik az Intu
 A rendszergazdák PIN-kód használatára vonatkozó szabályzat alkalmazását kényszeríthetik az Intune által felügyelt alkalmazások indításakor. Ezzel a szabályzattal meggyőződhetnek arról, hogy az alkalmazásokat indító felhasználók ugyanazok a végfelhasználók, akik a Microsoft Intune-ban regisztrálták eszközeiket. Amikor a végfelhasználók a PIN-kódjukat konfigurálják, az Intune App SDK az Azure Active Directory segítségével összehasonlítja a végfelhasználók hitelesítő adatait az eszközregisztrációs hitelesítő adatokkal. 
 
 ## Hitelesítő adatok kérése a felhasználóktól az alkalmazások indításához
-A rendszergazdák megkövetelhetik, hogy a felhasználók az Intune által felügyelt alkalmazások indítása előtt adják meg hitelesítő adataikat. Az Intune App SDK az Azure Active Directory segítségével teszi lehetővé az egyszeri bejelentkezést, ami azt jelenti, hogy a hitelesítő adatokat elég egyszer megadni, és a későbbi bejelentkezések során a rendszer ismét azokat használja. A rendszer az [Azure Active Directoryval összevont](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) identitáskezelési megoldások hitelesítését is támogatja. 
+A rendszergazdák megkövetelhetik, hogy a felhasználók az Intune által felügyelt alkalmazások indítása előtt adják meg hitelesítő adataikat. Az Intune App SDK az Azure Active Directory segítségével teszi lehetővé az egyszeri bejelentkezést, ami azt jelenti, hogy a hitelesítő adatokat elég egyszer megadni, és a későbbi bejelentkezések során a rendszer ismét azokat használja. A rendszer az [Azure Active Directoryval összevont](/active-directory/active-directory-aadconnect-federation-compatibility) identitáskezelési megoldások hitelesítését is támogatja. 
 
 ## Eszközök állapotának és megfelelőségének ellenőrzése
 A rendszergazdák ellenőrizhetik az eszközök állapotát és vállalati szabályzatoknak való megfelelőségét, mielőtt a végfelhasználók hozzáférhetnének az Intune által felügyelt alkalmazásokhoz. Az iOS platformon a szabályzat ellenőrzi, hogy az eszköz jailbreakelve lett-e. Az Android platformon a szabályzat ellenőrzi, hogy az eszköz rootolt-e.  
@@ -56,6 +56,6 @@ A rendszergazdák ellenőrizhetik az eszközök állapotát és vállalati szab�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

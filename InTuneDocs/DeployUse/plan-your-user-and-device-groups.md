@@ -1,19 +1,20 @@
 ---
 title: "A felhasználói és eszközcsoportok megtervezése | Microsoft Intune"
-description: 
+description: "Tervezhet a szervezeti igényeinek megfelelő csoportokat."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-ms.reviewer: jeffgilb
+ms.reviewer: lpatha
 ms.suite: ems
-ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
-ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 73909ebf2226b4fa50ad39b095a7cc1d73460c65
 
 
 ---
@@ -152,7 +153,7 @@ Tekintse át ezt, majd kattintson a **Befejezés** gombra a csoport létrehozás
 A példánkban egy Middle East and Asia (MEA) csoportot is létrehoztunk.
 
 > [!NOTE]
-> [!NOTE] Ha a csoporttagság nem a biztonsági csoport tagsága alapján van feltöltve, ellenőrizze, hogy Intune-licenceket rendelt-e ezekhez a tagokhoz.
+> Ha a csoporttagság nem a biztonsági csoport tagsága alapján van feltöltve, ellenőrizze, hogy Intune-licenceket rendelt-e ezekhez a tagokhoz.
 
 ### Csoportok adott hardverekhez
 Ha a szervezetének olyan házirendekre van szüksége, amelyek adott hardvertípusokra vonatkoznak, ezen követelmény alapján hozhatja létre a csoportokat. Ezeket a csoportokat létrehozhatja a helyszíni AD-ben már létrehozott csoportok alapján, és szinkronizálhatja azokat Azure AD-be. Másik megoldásként közvetlenül az Azure AD-ben is létrehozhatja a csoportokat. Ebben a példában a **US Users Group** csoportot használjuk a **Laptop Users** csoport szülőjeként.
@@ -169,7 +170,7 @@ Ha a szervezetének olyan házirendekre van szüksége, amelyek meghatározott o
 Az előző példákban bemutatott módszerrel létrehozhatunk olyan csoportokat,<!--devices?--> amelyek az egyes operációs rendszereket használó felhasználókat tartalmazzák.
 
 > [!NOTE]
-> [!NOTE] Ha a felhasználói többféle mobilplatformot/operációs rendszert használnak, és nincs automatikus módszere a felhasználók kategorizálására Android-felhasználóként, iOS-felhasználóként vagy Windows-felhasználóként, érdemes lehet eszközszinten alkalmazni házirendeket, mivel ez nagyobb rugalmasságot nyújt az operációs rendszerre jellemző házirendek alkalmazásában.
+> Ha a felhasználói többféle mobilplatformot/operációs rendszert használnak, és nincs automatikus módszere a felhasználók kategorizálására Android-felhasználóként, iOS-felhasználóként vagy Windows-felhasználóként, érdemes lehet eszközszinten alkalmazni házirendeket, mivel ez nagyobb rugalmasságot nyújt az operációs rendszerre jellemző házirendek alkalmazásában.
 >
 > Nem létesíthet csoportokat dinamikusan az eszköz operációs rendszere alapján. Ezt AD vagy AAD biztonsági csoportokkal tegye.
 
@@ -214,6 +215,6 @@ A házirendek ilyen módon történő elnevezésével gyorsan azonosíthatja a h
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

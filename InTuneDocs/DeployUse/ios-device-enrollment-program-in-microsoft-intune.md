@@ -1,10 +1,10 @@
 ---
-title: "Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal | Microsoft Intune"
-description: 
+title: "Apple DEP-kezelés iOS-eszközökön | Microsoft Intune"
+description: "Telepíthet egy olyan regisztrációs profilt, amely az iOS készülékregisztrációs programon (DEP) keresztül megvásárolt iOS-készülékeket vezeték nélkül regisztrálja az Apple-eszközök kezelésére."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
@@ -55,9 +55,7 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
     Ezen kívül **Eszközöket rendelhet hozzá a következő csoporthoz** is. A csoport kijelöléséhez kattintson a **Kijelölés...** elemre.
 
-    >[!Important]
-    >A csoport-hozzárendelések az Intune-ból az Azure Active Directory-ba lesznek áthelyezve. [További információ](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Következő lépésként engedélyezze **A szabályzat DEP-beállításainak konfigurálása** beállítást a DEP támogatásához.
 
@@ -101,13 +99,13 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
 ## Változások az Intune csoport-hozzárendelésekben
 
-Szeptembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. További részletek a közeljövőben lesznek közzétéve.
+Szeptembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Új dinamikus eszközcsoportok hozzárendelése az Azure Active Directoryban végezhető el a vállalati beléptetési profil neve alapján. Ez a folyamat biztosítja, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen úgy, hogy alkalmazva legyen rájuk a szabályzat, és telepítve az alkalmazások. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### További információ
 [Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

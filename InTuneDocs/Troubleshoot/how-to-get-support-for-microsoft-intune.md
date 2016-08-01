@@ -1,10 +1,10 @@
 ---
 title: "Hogyan kérhet támogatást | Microsoft Intune"
-description: 
+description: "A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez."
 keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 
 
 ---
@@ -26,34 +27,33 @@ Ez a témakör azt ismerteti, hogyan nyithat meg egy szolgáltatáskérést, ill
 Ha saját maga szeretné megtalálni a választ az Intune használatával kapcsolatos kérdésekre, az [Általános hibaelhárítási tippek a Microsoft Intune rendszerhez](general-troubleshooting-tips-for-microsoft-intune.md) című témakörből, illetve az ebben a témakörben a **Lásd még** részben felsorolt, konkrét problémák hibaelhárításával foglalkozó témakörökből tájékozódhat.
 ## Online szolgáltatáskérés létrehozása
 
-1.  Jelentkezzen be az Intune-ba, és keresse fel az [Office 365 felügyeleti központot](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) az Intune-beli hitelesítő adataival.
 
-2.  A **Szolgáltatáskérés létrehozása** csoportban válassza ki, hogy milyen típusú problémához szeretné létrehozni a hibajegyet:
+2.  A **Szolgáltatáskérés létrehozása** területen válassza ki, hogy milyen típusú problémához szeretné létrehozni a hibajegyet:
 
-    -   Számlázási és licencproblémák esetén válassza a **Számlázási és termékinformáció** lehetőséget.
+    -   Számlázási, licencelési és fiókproblémák esetén válassza a **Számlázási és termékinformáció** lehetőséget.
 
-    -   Az Intune-nal kapcsolatos bármely más probléma esetén válassza a **Mobileszköz-kezelés** elemet. Ez a lehetőség az Office 365 mobileszköz-kezelési összetevőjét és az Intune-nal bővített System Center Configuration Managert is magában foglalja.
+    -   Az Intune-nal kapcsolatos bármely más probléma esetén válassza a **Mobileszköz-kezelés** elemet.
 
     > [!NOTE]
-    > [!NOTE] Előfordulhat, hogy az összes kategória csak a lista alján lévő **Továbbiak** elemre kattintva jelenik meg.
+    > Lehet, hogy az összes kategória csak a lista alján lévő **továbbiak** elemet választva jelenik meg.
 
 3.  A **Hiba azonosítása** oldalon válassza ki azt a **Funkciót** és **Jelenséget**, amelyhez segítségre van szüksége. Ezután ki kell töltenie **A probléma összefoglalása** és **A probléma részletei** mezőt.
 
-4.  A **Javaslatok áttekintése** oldalon lévő hivatkozások olyan témakörökre mutatnak, amelyek alapján saját maga is megoldhatja az adott problémát.  Ha mégsem sikerül megoldani a problémát, kattintson az oldal alján lévő **Igen, folytatom** gombra, és küldje el a szolgáltatáskérést.
+4.  A **Javaslatok áttekintése** oldalon lévő hivatkozások olyan témakörökre mutatnak, amelyek alapján saját maga is megoldhatja az adott problémát.  Ha mégsem sikerül megoldani a problémát, válassza az oldal alján lévő **Igen, folytatom** gombot, és küldje el a szolgáltatáskérést.
 
-5.  A **Részletek megadása** oldalon adja meg a kért információkat. A **Fájl csatolása** gombra kattintva képernyőképeket és egyéb dokumentumokat csatolhat a szolgáltatáskéréshez.
+5.  A **Részletek megadása** oldalon adja meg a kért információkat. A **fájl csatolása** elemet választva képernyőképeket és egyéb dokumentumokat csatolhat a szolgáltatáskéréshez.
 
-6.  A **Jóváhagyás és küldés** oldalon adja meg a kapcsolattartási adatait, tekintse át a kérést, és kattintson a **Kérés elküldése** gombra. A küldés után megjelenik az eddigi szolgáltatáskéréseit tartalmazó lista.
+6.  A **Jóváhagyás és küldés** oldalon adja meg a kapcsolattartási adatait, tekintse át a kérést, és válassza a **Kérés elküldése** gombot. A küldés után megjelenik az eddigi szolgáltatáskéréseit tartalmazó lista.
 
 ## Telefonos ügyfélszolgálat
 A [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](contact-assisted-phone-support-for-microsoft-intune.md) témakörben megtalálja az ország és régió szerinti támogatási telefonszámokat, a támogatási órákat és a támogatott nyelveket mindegyik régióhoz.
 
 ## Szolgáltatáskérések nyomon követése
-Szolgáltatáskérései nyomon követéséhez nyissa meg az [Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A **Szolgáltatási kérelem létrehozása** lista alján kattintson az **Összes támogatási jegy megjelenítése** elemre. Alapértelmezés szerint az összes lezáratlan szolgáltatáskérése megjelenik. Ha módosítani szeretné, hogy mely szolgáltatáskérései jelenjenek meg (például csak a lezártak), kattintson a felső navigációs sáv megfelelő szűrőikonjára, és válasszon nézetet.
+Szolgáltatáskérései nyomon követéséhez nyissa meg az [Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A **Szolgáltatási kérelem létrehozása** lista alján válassza az **Összes támogatási jegy megjelenítése** elemet. Alapértelmezés szerint az összes lezáratlan szolgáltatáskérése megjelenik. Ha módosítani szeretné, hogy mely szolgáltatáskérései jelenjenek meg (például csak a lezártak), válassza a felső navigációs sáv megfelelő szűrőikonját, és válasszon nézetet.
 
 > [!NOTE]
-> [!NOTE]
-**A Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection használata esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration Manager és a System Center Endpoint Protection megoldásközpontját](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), ahol számos anyagot találhat az önsegítő technikai támogatáshoz, emellett online vagy telefonos támogatási kérést is beadhat.
+> A **Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration Manager és a System Center Endpoint Protection megoldásközpontját](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), ahol számos anyagot találhat az önsegítő technikai támogatáshoz, emellett online vagy telefonos támogatási kérést adhat be.
 >
 > A System Center Configuration Manager vagy a System Center Endpoint Protection technikai támogatása vagy fizetésköteles, vagy levonásra kerül a meglévő licencelésből vagy Premier támogatási szerződésből.
 
@@ -140,6 +140,6 @@ Feladataink:
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

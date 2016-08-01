@@ -1,10 +1,10 @@
 ---
 title: "Alkalmazások és adatok védelme | Microsoft Intune"
 description: 
-keywords: 
+keywords: "Ez a témakör ismerteti azokat a különböző Intune-funkciókat és képességeket, amelyek a rendelkezésére állnak a vállalati alkalmazások és adatok védelme érdekében."
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ A vállalati erőforrásokhoz való hozzáférés biztosítása csak első lép�
 - Az alkalmazások elérésének védelme PIN-kód/jelszó vagy vállalati hitelesítő adatok kérésével
 - Webes hivatkozások megnyitása kizárólag az Intune Managed Browser böngészőben
 
-A szabályzatoknak ezt a csoportját [mobilalkalmazás-felügyeleti (MAM) szabályzatoknak](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) nevezzük.  A MAM-szabályzatok alkalmazhatók a felügyelt és a nem felügyelt eszközökön futó alkalmazásokra is.  A vállalati adatok védelme érdekében a MAM-szabályzatok alkalmazhatók az Intune-ban regisztrált eszközökön, a más külső féltől származó MDM által regisztrált és felügyelt eszközökön, illetve olyan eszközökön, amelyeket esetleg nem Ön felügyel, például az alkalmazotti tulajdonú eszközökön.
+A szabályzatoknak ezt a csoportját [mobilalkalmazás-felügyeleti (MAM) szabályzatoknak](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) nevezzük.  A MAM-szabályzatok alkalmazhatók a felügyelt és a nem felügyelt eszközökön futó alkalmazásokra is.  
+
+A vállalati adatait védheti MAM-szabályzatokkal olyan eszközökön, amelyek **regisztrálva vannak az Intune-ban**, **harmadik fél MDM-e által regisztrált és felügyelt** eszközökön, illetve olyan eszközökön, amelyek **egy MDM-megoldásban sincsenek regisztrálva** (például alkalmazottak tulajdonában lévő eszközök).
 
 Ahhoz, hogy egy alkalmazáshoz MAM-szabályzat legyen társítható, az alkalmazásnak tartalmaznia kell a Microsoft Intune szoftverfejlesztői készletet (SDK), vagy használnia kell az alkalmazásburkoló eszközt.
 
@@ -51,6 +53,6 @@ Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a felhasználó már nem do
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

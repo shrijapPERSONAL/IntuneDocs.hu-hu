@@ -1,10 +1,10 @@
 ---
-title: "A helyszíni Exchange-hez és az örökölt dedikált Exchange Online-hoz való e-mail-hozzáférés korlátozása | Microsoft Intune"
-description: 
+title: "A helyszíni Exchange-hez való e-mailes hozzáférés korlátozása | Microsoft Intune"
+description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e-mailhez való hozzáférést a helyszíni Exchange-en."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 490a1aa091547de1d2bccb0fe8ea72e40753a0a7
 
 
 ---
@@ -123,6 +123,6 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

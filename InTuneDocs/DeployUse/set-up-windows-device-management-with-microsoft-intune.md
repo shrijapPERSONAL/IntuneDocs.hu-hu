@@ -1,6 +1,6 @@
 ---
 title: "Windowsos eszközök kezelésének beállítása a Microsoft Intune-ban | Microsoft Intune"
-description: 
+description: "Mobileszközök felügyeletének (MDM) engedélyezése a Microsoft Intune-nal windowsos számítógépek esetén, beleértve a Windows 10-eszközöket is."
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
 
 
 ---
@@ -26,18 +26,20 @@ DNS CNAME rekord létrehozásával a felhasználók kiszolgálónév beírása n
 
 ### Windowsos eszközök kezelésének beállítása
 
-  1.  Hozza létre a megfelelő **CNAME** DNS erőforrásrekordokat a munkahelyi tartományhoz. Ha a munkahelyi webhely címe például contoso.com, akkor olyan CNAME rekordot kell létrehoznia a DNS-ben, amely az EnterpriseEnrollment.contoso.com webhelyről átirányítja a felhasználókat az EnterpriseEnrollment-s.manage.microsoft.com webhelyre. Több ellenőrzött tartomány esetén minden tartományhoz külön CNAME rekordot kell létrehozni. A CNAME erőforrásrekordoknak a következő adatokat kell tartalmazniuk:
+  1.  Hozza létre a megfelelő **CNAME** DNS erőforrásrekordokat a munkahelyi tartományhoz. Ha a munkahelyi webhely címe például contoso.com, akkor olyan CNAME rekordot kell létrehoznia a DNS-ben, amely az EnterpriseEnrollment.contoso.com webhelyről átirányítja a felhasználókat az EnterpriseEnrollment-s.manage.microsoft.com webhelyre. Bár a CNAME DNS rekord választható a Windows-eszközök regisztrálásakor, azt javasoljuk, hogy szükség esetén hozzon létre egy vagy több rekordot a Windows-eszköz regisztrációs folyamatának egyszerűbbé tételéhez. Ha nem található CNAME rekord, az MDM-kiszolgáló nevének manuális megadása szükséges.
+
+  Több ellenőrzött tartomány esetén minden tartományhoz külön CNAME rekordot kell létrehozni. A CNAME erőforrásrekordoknak a következő adatokat kell tartalmazniuk:
 
   |TÍPUS|Gazdagép neve|A következő helyre mutat|Élettartam|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 óra|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 óra|
 
-    A DNS-rekord módosításának terjesztése akár 72 órát is igénybe vehet. Az Intune-ban nem ellenőrizhető a DNS-módosítás, amíg a DNS-rekord propagálása zajlik.
+  A DNS-rekord módosításának terjesztése akár 72 órát is igénybe vehet. Az Intune-ban nem ellenőrizhető a DNS-módosítás, amíg a DNS-rekord propagálása zajlik.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – A levelezési tartomány nevéből felismert tartománynév használatával irányítja át a felhasználókat az Intune-ba.
+  **EnterpriseEnrollment-s.manage.microsoft.com** – A levelezési tartomány nevéből felismert tartománynév használatával irányítja át a felhasználókat az Intune-ba.
 
-    **EnterpriseRegistration.windows.net** – Azokat a Windows 8.1 és Windows 10 Mobile- eszközöket támogatja, amelyeket a munkahelyi vagy iskolai fiókkal az Azure Active Directoryban fognak regisztrálni.
+  **EnterpriseRegistration.windows.net** – Azokat a Windows 8.1 és Windows 10 Mobile- eszközöket támogatja, amelyeket a munkahelyi vagy iskolai fiókkal az Azure Active Directoryban fognak regisztrálni.
 
   2.  Az [Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows** lehetőségre.
   ![Windowsos eszközök kezelése párbeszédpanel](../media/enroll-intune-winenr.png)
@@ -48,6 +50,6 @@ DNS CNAME rekord létrehozásával a felhasználók kiszolgálónév beírása n
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
