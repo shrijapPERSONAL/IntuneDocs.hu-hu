@@ -1,24 +1,27 @@
 ---
 title: "Windows Phone 8.1-es házirend-beállítások | Microsoft Intune"
-description: 
+description: "Az Intune a Windows Phone 8.1-eszközökön beállítható, beépített általános beállítások széles választékát kínálja. Ezenkívül megadhatja az OMA-URI-értékeket is olyan egyéni beállítások létrehozásához, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: e11ca62eb242d7c530e8de2ad1e885315d220233
 
 
 ---
 
 # Windows Phone 8.1-es házirend-beállítások a Microsoft Intune-ban
+
+Az Intune a Windows Phone 8.1-eszközökön beállítható, beépített általános beállítások széles választékát kínálja. Ezenkívül megadhatja az OMA-URI-értékeket is olyan egyéni beállítások létrehozásához, amelyek nem érhetők el az Intune-ban.
 
 ## Általános konfigurációs beállítások
 
@@ -121,7 +124,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
 > [!IMPORTANT]
-> [!IMPORTANT] Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1-eszközökhöz, hozzá kell adnia a Vállalati portál alkalmazást is a listához, ellenkező esetben azt a rendszer letiltja.
+> Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1 rendszerű eszközökhöz, fel kell vennie a Vállalati portál alkalmazást, mert ellenkező esetben az le lesz tiltva.
 
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
@@ -169,6 +172,6 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
