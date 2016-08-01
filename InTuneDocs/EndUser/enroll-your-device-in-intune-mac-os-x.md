@@ -3,7 +3,7 @@ title: "Mac OS X-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Mac OS X-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ A Mac OS X-eszköz regisztrálása:
 
 2.  Koppintson **Az eszköz nincs regisztrálva, vagy a Vállalati portál nem képes azonosítani** elemre.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Koppintson a **Telepítés** gombra az eszköz regisztrálásának megkezdéséhez.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  A **Felügyeleti profil telepítése** párbeszédpanelen koppintson a **Telepítés** gombra. Ha megjelenik a hitelesítő adatai megadását kérő párbeszédpanel, írja be a felhasználónevét és jelszavát, majd koppintson a **Folytatás** &gt; **Telepítés** elemre.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Amikor végzett a regisztrálással, megjelenik a felügyeleti profil oldala, amely jelzi, hogy a profil jóvá lett hagyva.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
@@ -54,6 +54,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Az androidos eszközt feltörték, és nem lehet csatlakoztatni | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 2f59f8675cc80e1f455347dc877b6678f1f9e470
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 # Az androidos eszközt feltörték, és nem lehet csatlakoztatni
 
-Ha az androidos eszköz rootolva van, az egyben azt is jelenti, hogy az eszközön olyan képességek is engedélyezve lettek, amelyek veszélyeztethetik a vállalati erőforrásokat és a biztonságot. Ha ezt az üzenetet látja, akkor a vállalati erőforrásokat nem éri el a probléma megoldásáig. 
+Ha az androidos eszköz rootolva van, az egyben azt is jelenti, hogy az eszközön olyan képességek is engedélyezve lettek, amelyek veszélyeztethetik a vállalati erőforrásokat és a biztonságot. Ha ezt az üzenetet látja, akkor a vállalati erőforrásokat nem éri el a probléma megoldásáig.
 
 Ha úgy gondolja, hogy nem végzett olyan műveletet, amelynek következtében rootolta volna az eszközt, tekintse meg az alábbi okokat, amelyek miatt az eszköz rootolt állapotban lehet:
 
@@ -36,6 +36,7 @@ Ha úgy gondolja, hogy nem végzett olyan műveletet, amelynek következtében r
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

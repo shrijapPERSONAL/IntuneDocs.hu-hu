@@ -3,19 +3,19 @@ title: "Riasztások kezelése | Microsoft Intune"
 description: "A Riasztások munkaterülettel felmérheti a szervezetben lévő eszközök általános állapotát."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Az Intune felügyeleti konzol **Riasztások** munkaterületével felmérheti a s
 
         > [!NOTE]
         > Bizonyos esetekben egy riasztási típus egynél többször is megjelenhet a **Riasztások típus szerint** listában.
-        > 
+        >
         > Például a Logikai lemez – Szabad terület riasztási típusból a következő példányok jelenhetnek meg a listában egyszerre:
-        > 
+        >
         > -   3 Logikai lemez – Szabad terület
         > -   2 Logikai lemez – Szabad terület
-        > 
+        >
         > Ez akkor fordul elő, ha különböző operációs rendszert futtató eszközökhöz generál a rendszer ugyanolyan típusú riasztást. A példában a Logikai lemez – Szabad terület riasztási típus első példányát („3 Logikai lemez – Szabad terület”) lehet, hogy Windows® 7 rendszert futtató számítógépek generálták. A Logikai lemez – Szabad terület riasztási típus második példánya pedig lehet, hogy Windows Vista® rendszert futtató számítógépek generálták.
 
     -   **Az összes aktív riasztás megjelenítéséhez** kattintson a **Riasztások &gt; Minden riasztás** lehetőségre. A **Riasztások** lap a következő oszlopokkal jeleníti meg az összes aktív riasztás listáját:
@@ -107,7 +107,6 @@ A lezártnak jelölt riasztásokat a rendszer 90 nap után véglegesen törli.
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Vállalati e-mailek elérése e-mail-profilokkal | Microsoft Intune"
 description: "Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -82,7 +82,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**E-mailek szinkronizálása ennyi napra visszamenőleg**|Ennyi napra visszamenőleg kívánja szinkronizálni az e-maileket; az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.|
     |**Szinkronizálás ütemezése** (Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange Server kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
     |**SSL használata**|Biztonságos szoftvercsatornás (SSL) kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange Server kiszolgálóval való kommunikációhoz.<br /><br />A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange Serverre.|
-    |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.| 
+    |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.|
     |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|A felhasználók kiválaszthatják ezt a profilt alapértelmezett e-mail-küldési fiókként, és engedélyezett a külső alkalmazások számára az e-mailek natív e-mail alkalmazásban történő megnyitása, például fájlok e-mailhez való csatolásához.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

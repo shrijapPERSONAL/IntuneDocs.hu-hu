@@ -3,8 +3,8 @@ title: "Vállalati bevezetés | Microsoft Intune"
 description: "Javaslatok az Intune üzembe helyezésének bevezetési fázisához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 65506ec3b4d903672e2259be567c07402ee29f31
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Az alábbi lista tartalmazza a **Vállalati bevezetés** fázissal való munka e
 
 -   Határozza meg azokat a csoportokat, amelyek esetében célzott kommunikációra és képzésre lehet szükség.
 
--   Tervezze meg a testreszabott e-mail kommunikációt, és frissítse az intranetes webhelyet. Jelölje ki a kommunikáció és az erőforrások frissítésének felelősét.
+-   Tervezze meg a testreszabott e-mail kommunikációt, és frissítse az intranetes webhelyet.
+
+-   Jelölje ki a kommunikáció és az erőforrások frissítésének felelősét.
 
 -   Vázolja fel a használandó képzési módszereket.
 
@@ -108,6 +110,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet a **Válla
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Az eszköz titkosítása | Microsoft Intune"
 description: "Egy Android-eszköz titkosítását ismerteti"
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 ---
@@ -24,9 +24,9 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 Ha a vállalata vagy szervezete megköveteli Android-eszközének titkosítását a vállalati fájlokhoz, levelekhez vagy adatokhoz való hozzáféréshez, az eszközt az alábbi lépésekkel titkosíthatja. Ha a rendszergazda ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
 
-Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad. 
+Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
-1.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön. 
+1.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön.
 
 2.  A **Beállítások** alatt kattintson a **Biztonság** &gt; **Telefon titkosítása** lehetőségre.
     (Egyes telefonokon a **Tárolás** &gt; **Tárolás titkosítása** vagy a **Tárolás** &gt; **Zárolási képernyő és biztonság** &gt; **További biztonsági beállítások** alatt található a „Titkosítás” opció).
@@ -47,7 +47,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolat
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

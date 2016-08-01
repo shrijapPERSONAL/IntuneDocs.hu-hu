@@ -3,7 +3,7 @@ title: "Szabályzatok a Windows rendszerű számítógépek védelméhez| Micros
 description: "Ezek a szabályzatok az Intune ügyfélszoftver által felügyelt Windows rendszerű számítógépek biztonságának megőrzését segítik elő."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
 
 
 ---
@@ -44,6 +44,6 @@ Rendszergazdaként egyik legfontosabb feladata a [kezelt Windows rendszerű szá
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

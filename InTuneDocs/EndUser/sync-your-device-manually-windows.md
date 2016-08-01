@@ -3,7 +3,7 @@ title: "Windows-eszköz manuális szinkronizálása | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 17b0583403c3e23c62a5bd60b9c8217b0621fa80
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7ec8496317f354b5a2f0c3a214f457612c3105de
 
 
 ---
@@ -35,19 +35,19 @@ Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalm
 1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** menüpontra.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
-    
+
 2. Koppintson a **Munkahelyi hozzáférés** elemre.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
-    
+
 3. A **Regisztrálás eszközfelügyeletre** részen koppintson a vállalat nevére, az alábbi ábrán látható területen.
 
     ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
-    
+
 4. Koppintson a **Szinkronizálás** ikonra.
 
     ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
-    
+
     A képernyő tetején megjelenik a „Fiók szinkronizálása” üzenet. Amíg az eszköz szinkronizálása be nem fejeződik, a Szinkronizálás gomb inaktív marad.
 
 ## Windows 10 asztali verzió
@@ -56,23 +56,23 @@ Windows 10 asztali eszköz manuális szinkronizálása a lassú alkalmazástelep
 1. Lépjen az alább látható **Start** gombra, és válassza a **Beállítások** lehetőséget.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
-    
+
 2. A **Beállítások** lapon válassza **Fiókok** lehetőséget.
- 
+
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
-    
+
 3. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** lehetőséget.
-    
+
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
-    
+
 4. A **Regisztrálás eszközfelügyeletre** részen kattintson a vállalata nevére, ahol azt az alábbi ábrán kék kiemeléssel jelöltük.
-    
+
     ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
-   
+
 5. Kattintson a **Szinkronizálás** gombra.
-    
+
     ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
-   
+
    Amíg a szinkronizálás be nem fejeződik, a gomb szürke marad.
 
 ## Windows Phone 8.1
@@ -81,15 +81,15 @@ Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalm
 1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Munkahely** menüpontra.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
-    
+
 2. Koppintson a vállalata nevére, ahol azt az alábbi ábrán kék kiemeléssel jelöltük.
 
     ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
-   
+
 3. Koppintson a **Szinkronizálás** ikonra.
 
     ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
-    
+
    A képernyő tetején a „Fiók szinkronizálása” üzenet lesz látható egészen addig, amíg az eszköz szinkronizálása be nem fejeződik.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
@@ -99,6 +99,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

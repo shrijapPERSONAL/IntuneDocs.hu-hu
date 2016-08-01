@@ -3,7 +3,7 @@ title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | M
 description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 ---
@@ -144,7 +144,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 **Megoldás:** Az [Office 365 felügyeleti központban](https://portal.office.com/) törölje a speciális karaktereket a vállalat nevéből, és mentse a vállalati adatokat.
 
 ### Nem lehet bejelentkezni vagy eszközöket regisztrálni több ellenőrzött tartomány esetén.
-**Hiba:** Amikor a második ellenőrzött tartományt adja hozzá az AD FS-hez, a második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni. 
+**Hiba:** Amikor a második ellenőrzött tartományt adja hozzá az AD FS-hez, a második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.
 
 
 **Megoldás:** Az olyan Microsoft Office 365-ügyfelek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a szervezetükben több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében.  Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a **SupportMultipleDomain** kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
@@ -166,14 +166,14 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 **Probléma:** A felhasználó eszköze a következő üzenetet mutatja: *A bejelentkezés nem lehetséges, mert az eszközhöz hiányzik egy szükséges tanúsítvány.*
 
-**Megoldás**: 
+**Megoldás**:
 
 - A felhasználó beszerezheti a hiányzó tanúsítványt, ha követi [ezeket az utasításokat](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Ha a felhasználó nem tudja beszerezni a tanúsítványt, lehetséges, hogy az ADFS-kiszolgálóról hiányoznak köztes tanúsítványok. A köztes tanúsítványokra az Androidnak van szüksége ahhoz, hogy megbízzon a kiszolgálóban. 
+- Ha a felhasználó nem tudja beszerezni a tanúsítványt, lehetséges, hogy az ADFS-kiszolgálóról hiányoznak köztes tanúsítványok. A köztes tanúsítványokra az Androidnak van szüksége ahhoz, hogy megbízzon a kiszolgálóban.
 
 A tanúsítványokat az alábbi módon lehet importálni az ADFS-kiszolgáló köztes tárolójába vagy proxykba:
 
-1.  Az ADFS-kiszolgálón indítsa el a **Microsoft Management Console**-t, és adja hozzá a **Számítógép fiókhoz** a Tanúsítványok beépülő modult. 
+1.  Az ADFS-kiszolgálón indítsa el a **Microsoft Management Console**-t, és adja hozzá a **Számítógép fiókhoz** a Tanúsítványok beépülő modult.
 5.  Keresse meg az ADFS-szolgáltatás által használt tanúsítványt, és nézze meg a szülőtanúsítványát.
 6.  Másolja ki a szülőtanúsítványt, és illessze be a **Számítógép\Köztes hitelesítésszolgáltatók\Tanúsítványok** közé.
 7.  Másolja ki az ADFS-, ADFS-dekódoló és ADFS-aláíró tanúsítványokat, és illessze be őket az ADFS-szolgáltatás személyes tárolójába.
@@ -200,34 +200,34 @@ A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati port�
 ### A regisztrált iOS-eszköz nem jelenik meg a konzolon a System Center Configuration Managerbe integrált Intune használata esetén
 **Hiba:** A felhasználó regisztrálja az iOS-eszközt, de az nem jelenik meg a Configuration Manager felügyeleti konzolon. Az eszköz nem jelzi, hogy már regisztrálva van. Lehetséges okok:
 
-- Előfordulhat, hogy az Intune-összekötőt az egyik fiókba regisztrálta, majd egy másik fiókba is regisztrálta. 
+- Előfordulhat, hogy az Intune-összekötőt az egyik fiókba regisztrálta, majd egy másik fiókba is regisztrálta.
 - Előfordulhat, hogy az MDM-tanúsítványt az egyik fiókból töltötte le, és egy másik fiókban használta.
 
 
 **Megoldás:** Hajtsa végre a következő lépéseket:
 
-1. Tiltsa le az iOS rendszert a Windows Intune-összekötőben. 
+1. Tiltsa le az iOS rendszert a Windows Intune-összekötőben.
     1. Kattintson a jobb gombbal az Intune-előfizetésre, és válassza a **Tulajdonságok** lehetőséget.
     1. Az „iOS” lapon törölje a jelet az „iOS-eszközök regisztrációjának engedélyezése” jelölőnégyzetből.
 
 
 
 1. Az SQL-ben futtassa a következő lépéseket a CAS-adatbázison:
-  
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 7 
+
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 7
     1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 11 
-    1. delete from MDMPolicyAssignment where PolicyType = 11 
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 11
+    1. delete from MDMPolicyAssignment where PolicyType = 11
     1. DELETE Drs_Signals
-1. Indítsa újra az SMS Executive szolgáltatást vagy a CM-kiszolgálót. 
+1. Indítsa újra az SMS Executive szolgáltatást vagy a CM-kiszolgálót.
 
 
 
 1. Szerezzen be egy APN-tanúsítványt és töltse fel: az egér jobb gombjával kattintson az Intune-előfizetésre a Configuration Manager bal oldali ablaktáblájában. Válassza az **APN szolgáltatás tanúsítványkérésének létrehozása** parancsot, és kövesse az utasításokat.
 ## Problémák a System Center Configuration Managerbe integrált Intune használatakor
-### Mobileszközök tűnnek el 
+### Mobileszközök tűnnek el
 **Hiba:** Miután sikeresen regisztrált egy mobileszközt a Configuration Managerbe, eltűnik a mobileszköz-gyűjteményből, de továbbra is rendelkezik felügyeleti profillal, és szerepel a CSS-átjáróban.
 
 **Megoldás:** Ez azért fordulhat elő, mert egyedi eljárással rendelkezik a tartományhoz nem csatlakozó eszközök eltávolításához, vagy a felhasználó kivonta az eszközt az előfizetésből. Ha meg szeretné állapítani, hogy melyik eljárás vagy felhasználói fiók távolította el az eszközt a Configuration Manager konzolból, hajtsa végre az alábbi lépéseket.
@@ -256,22 +256,22 @@ Az iOS-eszközök regisztrálási hibáinak listáját az eszközfelhasználói 
 
 ### A gép már regisztrálva van – hibakód: hr 0x8007064c
 **Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
-  
+
 Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
 
 
 
-**Megoldás:** 
+**Megoldás:**
 
-1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot. 
+1. A **Start** menüben válassza a **Futtatás** -> **MMC** parancsot.
 1. Válassza a **Fájl** -> **Beépülő modulok hozzáadása/eltávolítása** parancsot.
 1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
-1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget. 
+1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget.
 1. Keresse meg az Sc_Online_Issuing által kiadott Intune-tanúsítványt, és ha létezik, törölje.
 1. Ha létezik, törölje a következő beállításkulcsot és az összes alkulcsát: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Próbálja meg újból elvégezni a regisztrálást. 
-1. Ha a gépet továbbra sem lehet regisztrálni, keresse meg a következő beállításkulcsot, és ha létezik, törölje: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Próbálja meg újból elvégezni a regisztrálást. 
+1. Próbálja meg újból elvégezni a regisztrálást.
+1. Ha a gépet továbbra sem lehet regisztrálni, keresse meg a következő beállításkulcsot, és ha létezik, törölje: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Próbálja meg újból elvégezni a regisztrálást.
 
     > [!IMPORTANT]
     > Ez a szakasz, módszer vagy feladat olyan lépéseket tartalmaz, amelyekkel módosítja a beállításjegyzéket. A beállításjegyzék nem megfelelő módosítása azonban súlyos hibákat okozhat. Ezért ügyeljen arra, hogy pontosan kövesse a leírtakat. További biztonsági intézkedésként a módosítások végrehajtása előtt készítsen biztonsági másolatot a beállításjegyzékről. Így probléma esetén helyreállíthatja a beállításjegyzéket.
@@ -306,6 +306,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

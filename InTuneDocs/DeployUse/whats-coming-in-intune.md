@@ -3,7 +3,7 @@ title: "Várható újdonságok | Microsoft Intune"
 description: 
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/07/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35ee5d0c8898c95898c0527a623cf13c454387f2
-ms.openlocfilehash: 831cec6cd0e02a94c1a3f67d4adf5a5dcbb01449
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 9b536372623632b609433c49991a8bdc70e6da49
 
 
 ---
@@ -79,7 +79,7 @@ Leegyszerűsödtek a feltételes hozzáféréses regisztráció lépései a Wind
 A jobb teljesítmény és méretezés érdekében az Intune a jövőben nem fogja megjeleníteni az összes készülékregisztráció-kezelő (DEM-) eszközt az iOS rendszerhez készült Vállalati portál alkalmazás Saját eszközök panelén. Csak az alkalmazást futtató helyi eszköz jelenik meg, és az is csak abban az esetben, ha korábban már regisztrálták a Vállalati portálon. A DEM-felhasználó a helyi eszközön elvégezheti a kapcsolódó műveleteket, de a további regisztrált eszközök távoli felügyeleti teendői csak az Intune felügyeleti konzolon lesznek majd végrehajthatók.  Emellett az Intune-ból kivezettük a DEM-fiókoknak az Apple Device Enrollment Programmal és az Apple Configurator eszközzel való használatát. Ezek a regisztrálási módszerek alapértelmezés szerint támogatják a megosztott iOS-eszközök felhasználó nélküli regisztrálását. Csak akkor használjon DEM-fiókot, ha a megosztott eszközök felhasználó nélküli regisztrálása nem lehetséges.
 <!---TFS 1233681--->
 ### Az alkalmazások közvetlen telepíthetőségének korlátozása regisztrált Android-eszközökön
-Az Android rendszerű eszközökre mostantól nem lehet a Vállalati portál webhelyen keresztül alkalmazásokat telepíteni, ha az eszközök nincsenek regisztrálva az Intune-ban az Intune Vállalati portál alkalmazás Android-verziójával. 
+Az Android rendszerű eszközökre mostantól nem lehet a Vállalati portál webhelyen keresztül alkalmazásokat telepíteni, ha az eszközök nincsenek regisztrálva az Intune-ban az Intune Vállalati portál alkalmazás Android-verziójával.
 <!---TFS 1299082--->
 
 ## Szolgáltatások érvénytelenítése
@@ -113,6 +113,6 @@ A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

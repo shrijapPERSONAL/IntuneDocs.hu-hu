@@ -3,7 +3,7 @@ title: "Az Intune Vállalati portál használata | Microsoft Intune"
 description: "A cikk ismerteti a Vállalati portál webhelyet, valamint hivatkozásokat biztosít a webhelyen keresztül elvégezhető feladatok lépéseivel kapcsolatban"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
 
 
 ---
@@ -24,19 +24,19 @@ A [Vállalati portál webhelye](http://portal.manage.microsoft.com) egy weblap, 
 
 A következőkre használhatja a Vállalati portál webhelyét:
 
--   [Eszközjelszó alaphelyzetbe állítása](reset-your-passcode-cpwebsite.md)
-
 -   [Átnevezheti az eszközét](rename-your-device-cpwebsite.md)
 
 -   [Eszköz eltávolítása](remove-your-device-cpwebsite.md)
 
 -   [Eszköz alaphelyzetbe állítása](reset-your-device-cpwebsite.md)
 
+-   [Eszközjelszó alaphelyzetbe állítása](reset-your-passcode-cpwebsite.md)
+
 -   [Eszköz távoli zárolása](remote-lock-your-device-cpwebsite.md)
 
 -   [Eszköz manuális szinkronizálása a lassú alkalmazástelepítések felgyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
--   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította. 
+-   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította.
 
 -   Az eszköz adatainak megtekintése, beleértve, hogy megfelel-e a munkahelye vagy iskolája házirendjeinek
 
@@ -50,6 +50,6 @@ A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat v�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

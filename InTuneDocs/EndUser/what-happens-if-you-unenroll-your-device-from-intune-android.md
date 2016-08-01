@@ -3,7 +3,7 @@ title: "Mi történik, ha törli egy Android-eszköz regisztrációját az Intun
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3bb5d0dd3fbb48a2645922b550b2ffff295bec59
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
--   Ön törli eszköze regisztrációját az Intune-ból, ami azt jelenti, hogy a rendszergazda a továbbiakban nem fogja felügyelni az eszközt. 
+-   Ön törli eszköze regisztrációját az Intune-ból, ami azt jelenti, hogy a rendszergazda a továbbiakban nem fogja felügyelni az eszközt.
 
 -   A továbbiakban nem fogja tudni elérni a vállalati adatokat és erőforrásokat.
 
@@ -35,7 +35,7 @@ Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
 
-Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli az eszköz regisztrációját, az eszköz többé nem jelenik meg a Vállalati portálon. 
+Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli az eszköz regisztrációját, az eszköz többé nem jelenik meg a Vállalati portálon.
 
 A regisztráció törlésének utasításaiért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
 
@@ -46,6 +46,7 @@ Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási 
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

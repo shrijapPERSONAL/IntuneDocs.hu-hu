@@ -3,8 +3,8 @@ title: "Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepíté
 description: "Az ebben a témakörben található részletes útmutatóval MAM-szabályzatokat hozhat létre és telepíthet."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9e1c8f3c125633f1224005b7f80d3578fd4b729d
 
 
 ---
@@ -50,24 +50,20 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
     > [!TIP]
     > Ha első alkalommal használja az Azure-portált, az [Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakörben ismerkedhet meg a portállal.
 
-2.  A **Beállítások** panelen válassza az **Alkalmazásszabályzat** elemet.  Ekkor megnyílik a **Alkalmazás-szabályzat** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévő szabályzatokat.
-
-    ![Képernyőfelvétel a meglévő szabályzatok listáját tartalmazó Alkalmazásszabályzat panelről](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Válassza a **Szabályzat hozzáadása** elemet.
+2.  A **Beállítások** panelen válassza az **Alkalmazásszabályzat** elemet.  Ekkor megnyílik a **Alkalmazás-szabályzat** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévő szabályzatokat. Válassza a **Szabályzat hozzáadása** elemet.
 
     ![A kijelölt Szabályzat hozzáadása menüpont az Alkalmazásszabályzat panelen – képernyőfelvétel ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Írja be a szabályzat nevét, adjon meg egy rövid leírást, és válassza ki platform típusát az iOS- vagy Android-alapú szabályzat létrehozásához.  Az egyes platformokon egynél több szabályzatot is beállíthat.
+3.  Írja be a szabályzat nevét, adjon meg egy rövid leírást, és válassza ki platform típusát az iOS- vagy Android-alapú szabályzat létrehozásához.  Az egyes platformokon egynél több szabályzatot is beállíthat.
 
     ![Képernyőfelvétel a Szabályzat hozzáadása panelről](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzat társításához. Ha kiválasztotta az alkalmazásokat, válassza az **Alkalmazások** panel alján található **Kiválasztás** gombot a mentéshez.
+4.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzat társításához. Ha kiválasztotta az alkalmazásokat, válassza az **Alkalmazások** panel alján található **Kiválasztás** gombot a mentéshez.
 
     > [!IMPORTANT]
     > Legalább egy alkalmazást ki kell jelölnie a szabályzat létrehozásához.
 
-6.  A **Szabályzat hozzáadása** panelen kattintson a **Kötelező beállítások konfigurálása** elemre a szabályzatbeállítási panel megnyitásához.
+5.  A **Szabályzat hozzáadása** panelen kattintson a **Kötelező beállítások konfigurálása** elemre a szabályzatbeállítási panel megnyitásához.
 
     A szabályzatbeállításoknak két kategóriájuk van, az **Adatáthelyezés** és a **Hozzáférés**.  Az adatáthelyezési szabályzatok az alkalmazások mindkét irányú adatátvitelére vonatkoznak. A hozzáférési szabályzatok meghatározzák, hogyan érheti el a végfelhasználó az alkalmazásokat munkahelyi környezetben.
     Használatuk megkönnyítése érdekében a szabályzatok alapértelmezett értékek szerint vannak beállítva.  Nem szükséges változtatnia, ha az alapértelmezett értékek megfelelnek az elvárásainak.
@@ -77,11 +73,11 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
 
     ![Képernyőfelvétel a Beállítások panelről és a Szabályzat hozzáadása panelről](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  A konfiguráció mentéséhez válassza az **OK** gombot.  Ekkor visszakerül a **Szabályzat hozzáadása** panelbe. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
+6.  A konfiguráció mentéséhez válassza az **OK** gombot.  Ekkor visszakerül a **Szabályzat hozzáadása** panelbe. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
 
     ![A megadott alkalmazások és a beállítások a Szabályzat hozzáadása panelen – képernyőfelvétel](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![A szabályzat hozzáadásának értesítése az Alkalmazásszabályzat panelen – képernyőfelvétel ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, a felhasználók számára ekkor még nincs telepítve.  A szabályzat telepítéshez kövesse az alábbi lépéseket.
 
@@ -169,6 +165,6 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

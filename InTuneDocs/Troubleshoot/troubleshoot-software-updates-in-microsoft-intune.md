@@ -3,7 +3,7 @@ title: "Szoftverfrissítésekkel kapcsolatos hibák elhárítása | Microsoft In
 description: "A Microsoft Intune szoftverfrissítéseivel kapcsolatban felmerülő problémák megoldása."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
 
 
 ---
@@ -244,7 +244,7 @@ A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. H
 **Probléma**: Olyan helyzet állhat elő, amelyben a Microsoft Intune-ügyfelek az alábbi jelenségek közül egyet vagy többet tapasztalnak:
 - Az ügyfelek váratlanul leállítják a jelentésküldést a Microsoft felügyeleti konzolnak.  
 - Az ügyfeleken magas fokú processzorhasználatot tapasztalható.
-- Az Intune portálon keresztül telepített alkalmazások telepítése lassan megy végbe. 
+- Az Intune portálon keresztül telepített alkalmazások telepítése lassan megy végbe.
 - A Microsoft Intune Center a következő hibát váltja ki: *Hiba történt a számítógép frissítése közben. Észlelt hiba kódja: 0x800705b4*.
 - Az Intune felügyeleti konzol > Csoportok > Minden eszköz menüpont alatti állapotmezőben a következő látható: *A számítógépen telepített ügynökök legalább egyike hibát jelzett. Lehetséges, hogy a számítógépről rendelkezésre álló információk pontatlanok vagy elavultak*.
 
@@ -254,7 +254,7 @@ Ezt a problémát az okozhatja, ha a felülírt frissítéseket (vagyis azokat a
 1. Jelentkezzen be az [Intune felügyeleti konzolba](https://manage.microsoft.com).
 2. Válassza a **Frissítések** > **Minden frissítés** lehetőséget.
 3. A felső eszköztár szűrője segítségével szűrje meg a találatokat a felülírt frissítésekre.
-4. Utasítsa el a Windows 7 rendszerre vagy az alkalmazásokra (például a Microsoft Office-ra) vonatkozó, az érintett ügyfeleken telepített összes felülírt frissítést. 
+4. Utasítsa el a Windows 7 rendszerre vagy az alkalmazásokra (például a Microsoft Office-ra) vonatkozó, az érintett ügyfeleken telepített összes felülírt frissítést.
 5. Indítsa újra az érintett ügyfeleket.
 
 Ha Windows 7 rendszert használ, ezenfelül ellenőrizze, hogy telepítette-e a következő frissítést:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
@@ -264,7 +264,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
