@@ -1,27 +1,27 @@
 ---
-title: "A Microsoft Intune szabályzatainak ismertetése | Microsoft Intune"
-description: 
+title: "A konfigurációs szabályzatok ismertetése | Microsoft Intune"
+description: "Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik szabályzatát használja eszközeinek felügyeletére."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # A Microsoft Intune szabályzatainak ismertetése
 
-Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik szabályzatát használja eszközeinek felügyeletére.
+Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik konfigurációs szabályzatát használja eszközeinek felügyeletére.
 
 > [!TIP]
 > Részletesebb információ a szabályzatok használatáról: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -47,11 +47,14 @@ Az ebben a témakörben található információk segítségével eldöntheti, h
 |**Egyéni konfiguráció (iOS 7.1-es és újabb verziók)**|Olyan konfigurációs profilokat telepíthet iOS-eszközökre, amelyeket az Apple Configurator eszközzel hozott létre. Ez akkor hasznos, ha a szükséges beállítás nem érhető el egy konfigurációs házirendben.<br /><br />Részletekért lásd: [iOS-szabályzatbeállítások a Microsoft Intune-ban](ios-policy-settings-in-microsoft-intune.md).|
 |**E-mail profil (iOS 7.1 és újabb)**|A felügyelt eszközökön létrehozhatja, telepítheti és figyelheti az Exchange Active Sync e-mail beállításait. A felhasználók így külön beállítások elvégzése nélkül férhetnek hozzá vállalati levelezésükhöz saját eszközeiken.<br /><br />Részletekért lásd: [Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Általános konfiguráció (iOS 7.1-es és újabb verziók)**|Mobileszközök biztonsági és működési beállításainak konfigurálása.<br />-   A szabályozásoknak megfelelő vagy nem megfelelő alkalmazások megadása, és jelentéskészítés a használatukról.<br />Teljes képernyős üzemmód beállítása, amely csak az eszköz bizonyos szolgáltatásainak használatát engedélyezi. Beállíthatja például csak egyetlen alkalmazás használatát vagy a hangerő-szabályozó gombok letiltását.<br /><br />Részletekért lásd: [iOS-szabályzatbeállítások a Microsoft Intune-ban](ios-policy-settings-in-microsoft-intune.md).|
+|**Mobilalkalmazás-konfigurációs szabályzat (iOS 7.1 és újabb verziók)**|A mobilalkalmazás-konfigurációs házirendekkel automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy iOS-alkalmazást futtat.<br /><br />Részletes leírás: [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Mobil létesítésiprofil-házirend (iOS 7.1-es és újabb verziók)**|Az Apple iOS üzletági mobilalkalmazásoknak része egy létesítési profil és a tanúsítvánnyal aláírt kód. Ha az alkalmazás egy iOS-eszközön fut, az iOS ellenőrzi az iOS-alkalmazás integritását, és kikényszeríti a létesítési profil által meghatározott szabályzatokat.<br><br>Az alkalmazások aláírásához használt vállalati aláíró tanúsítvány általában 3 évig érvényes. A létesítési profil viszont 1 év után lejár. A házirenddel proaktív módon, még a tanúsítvány érvényességi ideje alatt telepíthet új létesítési profilt olyan eszközökre, amelyeken lejáró alkalmazások vannak.<br><br>További részletek: [Az iOS-mobileszközös létesítésiprofil-szabályzatok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak](ios-mobile-app-provisioning-profiles.md).|
+|**PKCS #12 (.PFX) tanúsítványprofil (iOS 7.1 és újabb verziók)**|Ezzel a profillal hozhatja létre és telepítheti az eszköztanúsítvány-igénylések PFX-beállításait.<br /><br />Részletekért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP-tanúsítványprofil (iOS 7.1 és újabb)**|Olyan egyszerű tanúsítványigénylési protokollt (SCEP) konfigurálhat, amely egy megbízható mobileszköz-tanúsítvánnyal együtt feljogosíthatja a mobileszközöket arra, hogy hozzáférjenek például Wi-Fi és VPN-profilokkal konfigurált hálózati erőforrásokhoz.<br /><br />Részletekért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).|
 |**Megbízható tanúsítványprofil (iOS 7.1 és újabb)**|Olyan megbízható mobileszköz-tanúsítványt konfigurálhat, amely feljogosíthatja a mobileszközöket arra, hogy hozzáférjenek például Wi-Fi és VPN-profilokkal konfigurált hálózati erőforrásokhoz.<br /><br />Részletekért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).|
 |**VPN-profil (iOS 7.1 és újabb)**|Olyan beállításokat konfigurálhat és telepíthet, amelyek biztosítják, hogy a felhasználók biztonságosan hozzáférhessenek a vállalati hálózathoz a mobileszközükről. A beállítások telepítésével lecsökkentheti a vállalati munkák hozzáféréséhez szükséges végfelhasználói beavatkozást.<br /><br />Részletekért lásd: [VPN-kapcsolatok a Microsoft Intune-ban](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi profil (iOS 7.1 és újabb)**|Konfigurálhatja és telepítheti a szervezethez tartozó felhasználók vezeték nélküli hálózati beállításait. A beállítások telepítésével lecsökkentheti a vezeték nélküli hálózat hozzáféréséhez szükséges végfelhasználói beavatkozást.<br /><br />Részletekért lásd: [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md).|
-|**Mobilalkalmazás-konfigurációs szabályzat (iOS 7.1 és újabb verziók)**|A mobilalkalmazás-konfigurációs házirendekkel automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy iOS-alkalmazást futtat.<br /><br />Részletes leírás: [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+
 
 ## Mac OS X-t futtató eszközökhöz készült konfigurációs szabályzatok
 
@@ -82,6 +85,8 @@ Csak a Windows Phone-ra és a regisztrált Windows eszközökre vonatkozik.
 |**Megbízható tanúsítványprofil (Windows 8.1 és újabb)**<br /><br />**Megbízhatótanúsítvány-profil (Windows Phone 8.1 és újabb)**|Olyan megbízható mobileszköz-tanúsítványt konfigurálhat, amely feljogosíthatja a mobileszközöket arra, hogy hozzáférjenek például Wi-Fi és VPN-profilokkal konfigurált hálózati erőforrásokhoz.<br /><br />Részletekért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).|
 |**VPN-profil (Windows 10 és újabb asztali és mobil verzió)**<br /><br />**VPN-profil (Windows 8.1 és újabb verziók)**<br /><br />**VPN-profil (Windows Phone 8.1 és újabb)**|Olyan beállításokat konfigurálhat és telepíthet, amelyek biztosítják, hogy a felhasználók biztonságosan hozzáférhessenek a vállalati hálózathoz a mobileszközükről. A beállítások telepítésével lecsökkentheti a vállalati munkák hozzáféréséhez szükséges végfelhasználói beavatkozást.<br /><br />Részletekért lásd: [VPN-kapcsolatok a Microsoft Intune-ban](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi importálás**|Olyan Windows Wi-Fi beállításokat importálhat és telepíthet, amelyeket korábban egy fájlba exportált.<br /><br />Részletekért lásd: [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Információvédelem**<br>(korábbi nevén vállalati adatvédelem)|Ahogy a vállalaton belül egyre nő az alkalmazottak tulajdonában álló eszközök száma, úgy nő az adatok véletlen kiszivárgásának kockázata is az olyan alkalmazásokon és szolgáltatásokon keresztül, mint az e-mail, a közösségi média és a nyilvános felhő, amelyek fölött a vállalatnak nincs irányítási lehetősége. Olyan esetekről van szó, mint például amikor egy alkalmazott a személyes e-mail-fiókjából küldi el a legújabb tervrajzokat, termékadatokat másol be egy tweetbe, vagy a nyilvános felhőben található tárhelyére ment egy aktuális értékesítési jelentést.<br><br>A Windows Információvédelem úgy segít védekezni az ezekhez hasonló esetleges adatszivárgások ellen, hogy mindeközben más módon nem avatkozik bele az alkalmazott munkavégzésébe. Emellett segít megelőzni azt, hogy a vállalati alkalmazások és adatok akár vállalati eszközökön, akár az alkalmazottak által munkába hozott személyes eszközökön véletlenül kiszivárogjanak, ehhez pedig nem igényel változtatásokat a környezetben vagy az egyéb alkalmazásokban.<br><br>Ez az Intune-szabályzat látja el a Windows információvédelem által védett alkalmazások, a vállalati hálózati helyek, a védelmi szintek és a titkosítási beállítások kezelését.<br><br>További információk: [Vállalati adatok védelme a Windows információvédelemmel](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp).|
+
 
 ## Szoftverszabályzatok
 
@@ -129,7 +134,6 @@ Csak a Windows Phone-ra és a regisztrált Windows eszközökre vonatkozik.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

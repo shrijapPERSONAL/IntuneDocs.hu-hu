@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
-ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 
 
 ---
@@ -220,7 +220,7 @@ Bizonyos esetekben az androidos osztályban rendelkezésre álló metódus végs
 
 # Biztonságimásolat-adatok védelme 
 
-Az Android Marshmallow (API 23) esetében az Android két módszert kínál az alkalmazásoknak az adataik biztonsági mentésére. Ezek a lehetőségek alkalmazása rendelkezésére állnak, és különböző lépéseket igényelnek a MAM-adatvédelem megfelelő alkalmazásának biztosításához. Az alábbi táblázatban a megfelelő adatvédelmi működéshez szükséges megfelelő műveletek gyors áttekintését tekintheti meg.  További információ: [Útmutató androidos fejlesztőknek az adatok biztonsági mentéséhez](http://developer.android.com/guide/topics/data/backup.html.). 
+Az Android Marshmallow (API 23) esetében az Android két módszert kínál az alkalmazásoknak az adataik biztonsági mentésére. Ezek a lehetőségek alkalmazása rendelkezésére állnak, és különböző lépéseket igényelnek a MAM-adatvédelem megfelelő alkalmazásának biztosításához. Az alábbi táblázatban a megfelelő adatvédelmi működéshez szükséges megfelelő műveletek gyors áttekintését tekintheti meg.  További információ: [Útmutató androidos fejlesztőknek az adatok biztonsági mentéséhez](http://developer.android.com/guide/topics/data/backup.html). 
 
 ## Automatikus, teljes biztonsági mentés
 
@@ -365,6 +365,6 @@ Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

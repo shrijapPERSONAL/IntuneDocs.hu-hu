@@ -1,10 +1,10 @@
 ---
 title: "Windows 10-es házirend-beállítások | Microsoft Intune"
-description: 
+description: "Az ebben a témakörben ismertetett szabályzatbeállítások segítségével konfigurálhatja a regisztrált asztali Windows 10- és Windows 10 Mobile-eszközök beépített és egyéni beállításait."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Windows 10-es házirend-beállítások a Microsoft Intune-ban
 
-A jelen témakörben felsorolt házirend-beállításokkal konfigurálhatja a Windows 10 asztali verziót vagy Windows 10 Mobile-t használó regisztrált eszközökön.
+Az ebben a témakörben ismertetett szabályzatbeállítások segítségével konfigurálhatja a regisztrált asztali Windows 10- és Windows 10 Mobile-eszközök beépített és egyéni beállításait.
+
+> [!IMPORTANT]
+> Windows 10-számítógépeket kétféle módon kezelhet: ha regisztrálja azokat, vagy ha telepíti az Intune számítógépes ügyfélszoftverét. Mindkét módszer különböző képességeket biztosít (további információt [Az eszközkezelés módjának kiválasztása](/intune/get-started/choose-how-to-manage-devices) című témakörben talál).
+> Ha Windows 10 rendszerű számítógépét az Intune számítógépes ügyfélszoftverrel kezeli, az ebben a témakörben ismertetett szabályzatok és beállítások nem használhatók. Ezen beállítások alkalmazásához Windows 10 rendszerű eszközét regisztrálnia kell az Intune-ban.
 
 ## Az általános konfigurációs szabályzat beállításai
 
-A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurációs szabályzatát** regisztrált asztali Windows 10- és Windows 10 Mobile-eszközökhöz használhatja. Ez a szabályzat nem használható, ha a Windows 10 rendszerű számítógépek kezelése Intune ügyfélszoftverrel történik.
+A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurációs szabályzatát** regisztrált asztali Windows 10- és Windows 10 Mobile-eszközökhöz használhatja. 
 
 
 ### Jelszó
@@ -161,7 +166,7 @@ Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 |**Aláírás-frissítési időköz**|Meghatározza, hogy a Defender milyen időközönként keressen új aláírásfájlokat.|
 |**Felhővédelem engedélyezése**|Engedélyezi vagy letiltja, hogy a rendszer adatokat küldjön a Microsoft Active Protection Service számára a felügyelt eszközökön észlelt kártevőkről. Ezek az adatok a szolgáltatás további fejlesztésére szolgálnak.|
 |**Minták küldésének kérése a felhasználóktól**|Azt szabályozza, hogy a rendszer automatikusan elküldje a Microsoftnak azokat a fájlokat, amelyeken további vizsgálat szükséges annak megállapításához, hogy kártékonyak-e.|
-|**Vélhetően nem kívánatos alkalmazások észlelése**|Ezzel a beállítással biztosíthatja a regisztrált Windows rendszerű asztali számítógépek védelmét a Windows Defender által a vélhetően nemkívánatos osztályba sorolt szoftverek futtatása ellen. Biztosíthatja a védelmet ezen alkalmazások futtatása ellen, vagy a vizsgálati üzemmóddal jelentést készíthet a vélhetően nemkívánatos alkalmazások telepítéséről.|
+|**Vélhetően nem kívánatos alkalmazások észlelése**|Ezzel a beállítással biztosíthatja a regisztrált Windows rendszerű asztali eszközök védelmét a Windows Defender által a vélhetően nemkívánatos osztályba sorolt szoftverek futtatása ellen. Biztosíthatja a védelmet ezen alkalmazások futtatása ellen, vagy a vizsgálati üzemmóddal jelentést készíthet a vélhetően nemkívánatos alkalmazások telepítéséről.|
 |**A vizsgálatok futtatásakor vagy a valós idejű védelem használatakor kizárandó fájlok és mappák**|Vegye fel a kívánt fájlokat és mappákat – például **C:\Elérési_út** vagy **%ProgramFiles%\Elérési_út\fájlnév.exe** – a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a fájlokat és mappákat.|
 |**A vizsgálatok futtatásakor vagy a valós idejű védelem használatakor kizárandó fájlkiterjesztések**|Vegye fel a kívánt fájlkiterjesztéseket – például **jpg** vagy **txt** – a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja az ilyen kiterjesztésű fájlokat.|
 |**A vizsgálatok futtatásakor vagy a valós idejű védelem használatakor kizárandó folyamatok**|Vegye fel a kívánt típusú folyamatokat – **.exe**, **.com** vagy **.scr** – a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a folyamatokat.| 
@@ -327,6 +332,6 @@ Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kí
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

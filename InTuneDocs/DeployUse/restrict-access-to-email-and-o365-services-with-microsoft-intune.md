@@ -1,6 +1,6 @@
 ---
 title: "Az e-mailek és az O365-szolgáltatások elérésének korlátozása | Microsoft Intune"
-description: 
+description: "Ez a témakör azt ismerteti, hogyan használható a feltételes hozzáférés arra, hogy csak a megfelelő eszközök férhessenek hozzá a vállalati e-mailekhez, valamint a SharePoint Online-on és más szolgáltatásokban tárolt vállalati adatokhoz."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: df430a31e13027c7a342beb90b78d48c74bce9e6
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása
 Az Intune feltételes hozzáférés funkciójával korlátozhatja a hozzáférést a vállalati e-mail- és O365-szolgáltatásokhoz. Az Intune feltételes hozzáférési funkciói révén elérheti, hogy a vállalati e-mail- és O365-szolgáltatásokhoz csak olyan eszközök férhessenek hozzá, amelyek megfelelnek az Ön által beállított szabályoknak.
 ## Hogyan működik a feltételes hozzáférés?
-A rendszer a megfelelőségi szabályok beállításai alapján ellenőrzi az eszköz megfelelőségét. A feltételes hozzáférési szabályzat ennek az ellenőrzésnek az eredménye alapján engedélyezi vagy korlátozza a hozzáférést az adott szolgáltatásokhoz. A feltételes hozzáférési szabályzat és a megfelelőségi szabályok együttes alkalmazásával elérheti, hogy a szolgáltatáshoz csak megfelelő eszközök férjenek hozzá.
+A rendszer a megfelelőségi szabályok beállításai alapján ellenőrzi az eszköz megfelelőségét. A feltételes hozzáférési szabályzat ennek az ellenőrzésnek az eredménye alapján engedélyezi vagy korlátozza a hozzáférést az adott szolgáltatásokhoz. A feltételes hozzáférési szabályzat és a megfelelőségi szabályok együttes alkalmazásával elérheti, hogy a szolgáltatáshoz csak megfelelő eszközök férjenek hozzá. A megfelelőségi szabályzat és a feltételes hozzáférési szabályzat telepítve van a felhasználónál. A rendszer minden olyan eszköz megfelelőségét ellenőrzi, amelyről a felhasználó használja a szolgáltatásokat.
 
 Ne feledje, hogy ahhoz, hogy a rendszer képes legyen az eszköz megfelelőségének ellenőrzésére, az eszközt használó felhasználóra vonatkozóan megfelelőségi szabályzatot kell alkalmazni.
 Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
@@ -64,6 +65,6 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

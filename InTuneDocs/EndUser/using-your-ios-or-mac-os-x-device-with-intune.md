@@ -1,9 +1,9 @@
 ---
 title: "iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal | Microsoft Intune"
-description: 
+description: "Hivatkozáslista az Intune-ban regisztrált iOS- és Mac OS X-eszközökön elvégezhető feladatokhoz"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálását kö
 
 Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor előforduló hibák elhárításában nyújtanak segítséget.
 
-- [Sérült biztonságú iOS-készülék újracsatlakoztatása](how-to-reconnect-a-compromised-ios-device)
+- [Sérült biztonságú iOS-készülék újracsatlakoztatása](how-to-reconnect-a-compromised-ios-device.md)
 - [Hibák elküldése a rendszergazdának](send-errors-to-your-it-admin-ios.md)
 - [Hibaüzenetet kap a Vállalati portál alkalmazás használatakor](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Hibába ütközik, amikor megpróbálja regisztrálni az eszközt az Intune-ban](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,20 +1,20 @@
 ---
-title: "A Microsoft Intune Exchange-összekötő konfigurálása szolgáltatott Exchange-hez | Microsoft Intune"
-description: 
+title: "Exchange-összekötő üzemeltetett Exchange-hez | Microsoft Intune"
+description: "Csatlakoztathatja az Intune-t az Office 365 Exchange szolgáltatáshoz az Exchange ActiveSync-alapú mobileszköz-felügyelet (MDM) támogatása érdekében."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
 
 
 ---
@@ -58,12 +58,12 @@ A Service-to-Service Connector konfigurációja és szinkronizálása az üzemel
 
 ## Az Exchange-kapcsolat ellenőrzése
 
-Az Exchange Connector sikeres beállítása után kattintson az Intune felügyeleti konzol **FELÜGYELET** munkaterületére, majd a **Mobileszköz-kezelés** > **Microsoft Exchange** elemre, és ellenőrizze, hogy a megadott adatok megjelennek-e az **Exchange-kapcsolat adatai** területen.
+Miután sikeresen konfigurálta az Exchange-összekötőt, a [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) válassza a **Felügyelet** munkaterületet, majd a **Mobileszköz-kezelés** > ** területen válassza a Microsoft Exchange** elemet, és ellenőrizze, hogy a megadott adatok megjelennek-e **Az Exchange-kapcsolat információi** területen.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: VPN-kapcsolatok | Microsoft Intune
-description: 
+description: "A VPN-profilok beállításával a szervezetében lévő felhasználókra és eszközökre alkalmazhatja a VPN-beállításokat."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
-ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
-ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 8d83e576c0c3e85c435e6738e3236f6cd4c43ccd
 
 
 ---
@@ -58,7 +59,7 @@ L2TP|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
 
 > [!IMPORTANT] Az eszközökre alkalmazott VPN-profilok használatához telepítenie kell a megfelelő VPN-alkalmazást a profilhoz. A megfelelő alkalmazás Intune-nal történő telepítéséhez a következő dokumentumban talál segítséget: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).  
 
- Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszban tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
+ Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) szakaszból tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
 
 ## A VPN-profilok védelmének biztosítása
 
@@ -70,7 +71,7 @@ A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy .PFX-tanúsítv
 
 Ez identitástanúsítványként is ismert, és segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy főtanúsítvánnyal), amelyet Ön annak érdekében hozott létre, hogy engedélyezze a felhasználó eszközének a csatlakozást. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
 
-A tanúsítványprofilok Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
+A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
 
 ### Felhasználónév és jelszó
 
@@ -128,7 +129,7 @@ Beállítás neve  |További információ
 **Társított alkalmazások**     | Megadhatja a VPN-kapcsolatot automatikusan használó alkalmazások listáját. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén – adja meg a Csomagcsalád nevét, valamint asztali alkalmazások esetén – adja meg az alkalmazás fájlútvonalát.          
 
 
-> [!IMPORTANT] Javasoljuk, hogy az alkalmazásonkénti VPN-konfigurációban való használat céljából összeállított alkalmazáslistákat mindig helyezze biztonságba. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést biztosíthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták biztonságba helyezésének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
+> [!IMPORTANT] Javasoljuk, hogy az alkalmazásonkénti VPN-konfigurációban való használat céljából összeállított alkalmazáslistákat mindig lássa el védelemmel. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
 
 Többek között a következő esetben lehet érdemes vállalati határbeállításokat használni. Ha a VPN-t csak távoli asztalokhoz szeretné engedélyezni, akkor létre kell hoznia például egy olyan hálózati forgalmi szabályt, amely engedélyezi a 27-es számú protokollhoz tartozó forgalmat a 3996-os külső porton. A VPN-t csak ez a típusú forgalom fogja használni.
 
@@ -144,7 +145,7 @@ Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amely számára telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A házirend telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
@@ -159,6 +160,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

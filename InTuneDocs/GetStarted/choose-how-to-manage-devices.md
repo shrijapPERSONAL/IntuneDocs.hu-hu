@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
+ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
 
 
 ---
@@ -69,7 +69,7 @@ Akkor fontolja meg az Intune-számítógépügyfél használatát, ha a követke
 ## Felügyelet az Exchange ActiveSync segítségével
 Az Exchange ActiveSync segítségével is felügyelheti az eszközöket. Ehhez telepítenie kell az intézményi összekötőt, vagy a beépített Service to Service összekötővel kell kapcsolódnia az Exchange Serverhez.
 
-A helyszíni összekötő telepítésére vonatkozó hardver- és a szoftverkövetelményekről [A helyszíni összekötőre vonatkozó követelmények](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect) című témakörben olvashat.
+A helyszíni összekötő telepítésére vonatkozó hardver- és a szoftverkövetelményekről [A helyszíni összekötőre vonatkozó követelmények](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) című témakörben olvashat.
 
 További információk az On-Premises Connector vagy a Service to Service Connector összekötőnek az Exchange-dzsel történő használatáról: [Mobileszköz-kezelés az Exchange ActiveSync és a Microsoft Intune használatával](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
@@ -80,6 +80,6 @@ Az előzőekben megismert néhány funkciót, amelyeket akkor használhat, ha re
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

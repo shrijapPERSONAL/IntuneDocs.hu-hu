@@ -1,10 +1,10 @@
 ---
-title: "Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal | Microsoft Intune"
-description: 
+title: "Vállalati e-mailek elérése e-mail-profilokkal | Microsoft Intune"
+description: "Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ Sok mobilplatform *natív* e-mail-ügyfélprogramot tartalmaz, amely az operáci
 
 Ha még erősebb adatveszteség-megelőzési intézkedéseket szeretne foganatosítani, válassza a [feltételes hozzáférést](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), amely a felhasználó postaládájához szabályozza a hozzáférést, bármilyen levelezőprogramot is használjon (beleértve a natív levelezőprogramokat).
 
-Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára.   A legtöbb mobilplatform *natív* e-mail-ügyfélprogramot tartalmaz, amely az operációs rendszer részét képezi.  A támogatott platformokon a natív e-mail-ügyfélprogramok úgy konfigurálhatók a Microsoft Intune segítségével, hogy a felhasználók saját eszközeiken telepítés nélkül hozzáférhessenek a vállalati e-mailjeikhez.  
+Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára. A legtöbb mobilplatform *natív* e-mail-ügyfélprogramot tartalmaz, amely az operációs rendszer részét képezi.  A támogatott platformokon a natív e-mail-ügyfélprogramok úgy konfigurálhatók a Microsoft Intune segítségével, hogy a felhasználók saját eszközeiken telepítés nélkül hozzáférhessenek a vállalati e-mailjeikhez.  
 
 A rendszergazdák vagy a felhasználók alternatív e-mail-ügyfélprogramokat is telepíthetnek, például a Microsoft Outlook alkalmazás Android vagy iOS rendszerhez készült változatát.  Előfordulhat, hogy ezek az e-mail-ügyfélprogramok nem támogatják az e-mail-profilokat, és nem konfigurálhatók a Microsoft Intune e-mail-profilok használatával.  
 
@@ -81,7 +81,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**Aláíró tanúsítvány** (Samsung KNOX és iOS)|Válassza ki a kimenő e-mailek aláírására használt aláíró tanúsítványt.<br /><br />Ez a lehetőség csak akkor jelenik meg, ha az **S/MIME használata** lehetőséget választotta.|
     |**E-mailek szinkronizálása ennyi napra visszamenőleg**|Ennyi napra visszamenőleg kívánja szinkronizálni az e-maileket; az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.|
     |**Szinkronizálás ütemezése** (Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange Server kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
-    |**SSL használata**|Biztonságos szoftvercsatornás (SSL) kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange Server kiszolgálóval való kommunikációhoz. <br /><br />A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange Serverre.|
+    |**SSL használata**|Biztonságos szoftvercsatornás (SSL) kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange Server kiszolgálóval való kommunikációhoz.<br /><br />A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange Serverre.|
     |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.| 
     |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|A felhasználók kiválaszthatják ezt a profilt alapértelmezett e-mail-küldési fiókként, és engedélyezett a külső alkalmazások számára az e-mailek natív e-mail alkalmazásban történő megnyitása, például fájlok e-mailhez való csatolásához.|
 
@@ -111,6 +111,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

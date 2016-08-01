@@ -1,10 +1,10 @@
 ---
-title: "Eszközmegfelelőségi szabályzat üzembe helyezése és figyelése a Microsoft Intune-ban | Microsoft Intune"
-description: 
+title: "Megfelelőségi szabályzat üzembe helyezése és figyelése | Microsoft Intune"
+description: "Használja az ebben a témakörben található részletes útmutatót az eszközmegfelelőségi szabályzat üzembe helyezéséhez és figyeléséhez."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
@@ -30,7 +31,8 @@ A [létrehozott](create-a-device-compliance-policy-in-microsoft-intune.md) megfe
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások használatával azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az **Irányítópult** munkaterületen is.
 
-> [!IMPORTANT]Ha nem telepített megfelelőségi házirendet, és engedélyez egy Exchange feltételes hozzáférési házirendet, az összes megcélzott eszköz hozzáférése engedélyezett lesz.
+> [!IMPORTANT]
+> Ha nem telepített megfelelőségi házirendet, és engedélyez egy Exchange feltételes hozzáférési házirendet, az összes megcélzott eszköz hozzáférése engedélyezett lesz.
 
 ## Házirendütközések feloldása az Intune-ban
 Szabályzatütközések akkor következhetnek be, ha egy eszközhöz több Intune-szabályzatot telepítettek. Ha a szabályzatbeállítások közt átfedés van, az Intune a következő szabályok alkalmazásával oldja fel az ütközéseket:
@@ -70,6 +72,6 @@ Most a megfelelőségi házirendet feltételes hozzáférési házirendekkel has
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

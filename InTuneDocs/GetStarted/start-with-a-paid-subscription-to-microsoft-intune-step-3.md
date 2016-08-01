@@ -1,9 +1,9 @@
 ---
 title: "Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz | Microsoft Intune"
-description: 
+description: "Ez a cikk ismerteti, hogyan szinkronizálhatók a helyi felhasználók az Azure AD-vel, és hogyan adhatók egy Intune-előfizetéshez rendszergazdai jogosultságok"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: 70a2d32de67f0a69bbc29ca68a1c831c9cf38796
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8aeb23b709b50ccb8ad29868b4bc5ab96faf950f
 
 
 ---
@@ -48,6 +48,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 3. lép
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

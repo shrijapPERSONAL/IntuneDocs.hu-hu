@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az ügyfél beállításának hibaelhárítása | Microsoft Intune
-description:
-keywords:
+title: "Az ügyfél beállításának hibaelhárítása | Microsoft Intune"
+description: "Az ügyfelek beállításával kapcsolatban gyakran előforduló problémák elhárítása."
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: a1f9432e8789a40ec65c64cb958414b97c548f06
+
 
 ---
 
@@ -32,7 +26,7 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
 -   Ha a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) felületén nem jelennek meg az ügyfélszoftverek telepítési riasztásai, ellenőrizze a számítógép internetkapcsolatát és a proxy konfigurációját, továbbá ellenőrizze, hogy a számítógép tud-e kommunikálni a szolgáltatás URL-címével, amely a következő: [https://manage.microsoft.com](https://manage.microsoft.com/). Ezután próbálja meg újból az ügyfélszoftver telepítését.
 
--   Ügyfélszoftver-telepítési hibával kapcsolatos riasztás esetén e-mailt küldhet a kiválasztott címzetteknek, ha konfigurál egy értesítési szabályt a **Felügyelet** munkaterületen. További információért lásd: [Értesítések a Microsoft Intune riasztásaival](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-   Ügyfélszoftver-telepítési hibával kapcsolatos riasztás esetén e-mailt küldhet a kiválasztott címzetteknek, ha konfigurál egy értesítési szabályt a **Felügyelet** munkaterületen. További információ: [Értesítések a Microsoft Intune riasztásaival](/intune/deploy-use/get-notified-by-alerts).
 
 -   Az Intune az **Ügyfélszoftver telepítése sikertelen** kritikus riasztást jeleníti meg, ha az ügyfélszoftver telepítése nem sikerült. Ez az üzenet a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) **Rendszer áttekintése** és **Riasztások** lapjain jelenik meg. Így ellenőrizheti, hogy vannak-e riasztások:
 
@@ -44,7 +38,7 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
     -   Az aktív riasztások teljes számát
 
-3.  Válassza az **Összes riasztás** lehetőséget a következő információk **Riasztások** lapon való megjelenítéséhez. Először a kritikus riasztások jelennek meg:
+3.  Válassza az **Összes riasztás** lehetőséget a következő információknak a **Riasztások** lapon való megjelenítéséhez. Először a kritikus riasztások jelennek meg:
 
     -   **Név** – Annak a riasztástípusnak a neve, amely a riasztást előidézte.
 
@@ -56,23 +50,23 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
 ## Nem sikerül letölteni a számítógép-regisztrációs csomagot
 **Probléma:** számítógép regisztrálása során a következőt tapasztalja:
--  Nem sikerül letölteni a regisztrációs csomagot 
+-  Nem sikerül letölteni a regisztrációs csomagot
 -  Megjelenik a letöltési párbeszédablak, de időtúllépés tapasztalható
 
 **Megoldás:** ellenőrizze, hogy a letöltéshez használt böngészőben a letöltés ideje alatt engedélyezve vannak-e a letöltések, valamint, hogy a rendszer engedélyezi-e a titkosított fájlok helyi lemezre mentését.
 
 ## Az ügyfél telepítése a következő hibakóddal lefagy: 0x80040154
 **A probléma leírása:**
- 
+
 -  A regisztráció során lefagy az ügyfél telepítése
 
--  Nem sikerül regisztrálni az eszközt 
+-  Nem sikerül regisztrálni az eszközt
 
 -  A WindowsUpdate.log a következő hibaszámot tartalmazza: 0x80040154
 
 Ezt a problémát az okozhatja, hogy a számítógépről kritikus szoftverfrissítések hiányoznak.
 
-**Megoldás:** gondoskodjon róla, hogy a szoftverfrissítési szabályzat engedélyezze a kritikus frissítések telepítését, ennek menetéért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+**Megoldás:** gondoskodjon róla, hogy a szoftverfrissítési szabályzat engedélyezze a kritikus frissítések telepítését, ennek menetéért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
@@ -84,7 +78,8 @@ Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policypl
 
 2.  Várjon 20 percet az ügyfélszoftver eltávolításáig.
 
-    > [!NOTE] Ne próbálja meg eltávolítani az ügyfelet a Programok és szolgáltatások területről.
+    > [!NOTE]
+    > Ne próbálja meg eltávolítani az ügyfelet a Programok és szolgáltatások területről.
 
 3.  A Start menüben írja be az **UAC** kifejezést a Felhasználói fiókok felügyelete beállításainak megnyitásához.
 
@@ -130,6 +125,7 @@ Ha a telepítéssel kapcsolatos problémák továbbra is fennállnak, forduljon 
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

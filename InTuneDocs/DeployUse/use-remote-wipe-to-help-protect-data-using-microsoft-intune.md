@@ -13,8 +13,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
+ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
 
 
 ---
@@ -29,6 +29,9 @@ Az eszközökhöz hasonlóan a számítógépekre és mobileszközökre telepít
 
 
 A **Teljes törlés** visszaállítja az eszközt a gyári beállításokra, és eltávolít minden vállalati is felhasználói adatot és beállítást. Az eszközt a rendszer eltávolítja az Intune-ból. A teljes törlés akkor hasznos, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták.  **A teljes törlést óvatosan használja – az eszközről eltávolított adatok nem állíthatók vissza**.
+
+> [!Warning]
+> A 4 GB-nál kevesebb RAM-mal rendelkező, Windows 10 RTM rendszerű eszközök (azaz a Windows 10 rendszer 1511-es verziójánál korábbi eszközök) a törlés után használhatatlanná válhatnak. Ha egy Windows 10 rendszerű eszköz nem válaszol, az eszközt egy USB-meghajtóval vagy valamilyen hasonló megoldással lehet elindítani.
 
 ## Szelektív törlés
 
@@ -55,7 +58,7 @@ A **szelektív törlés** a vállalati adatokat, többek között a mobilalkalma
 |Nem felügyelt Google Play-alkalmazások|Az alkalmazások és az adatok telepítve maradnak.|Az alkalmazások és az adatok telepítve maradnak.|
 |Nem felügyelt üzletági alkalmazások|Az alkalmazások és az adatok telepítve maradnak.|Az alkalmazások el lesznek távolítva, és emiatt az alkalmazás helyi adatai is törlődnek. Az alkalmazáson kívüli (SD-kártyán tárolt stb.) adatokat a rendszer nem távolítja el.|
 |Felügyelt Google Play-alkalmazások|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM-titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de a rendszer nem távolítja el azokat.|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM titkosítás által védett adatok titkosítva maradnak, de a rendszer nem távolítja el azokat.|
-|Felügyelt üzletági alkalmazások|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM-titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de a rendszer nem távolítja el azokat.|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM titkosítás által védett adatok titkosítva maradnak, de a rendszer nem távolítja el azokat.|
+|Felügyelt üzletági alkalmazások|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM-titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de a rendszer nem távolítja el azokat.|Az alkalmazásadatok törlődnek. Az alkalmazás nem lesz eltávolítva. Az alkalmazáson kívül (pl. SD-kártyán stb.) a MAM-titkosítás által védett adatok titkosítva és használhatatlan állapotban maradnak, de a rendszer nem távolítja el azokat.|
 |Beállítások|Az Intune-házirend által beállított konfigurációk érvényüket vesztik, és a felhasználók megváltoztathatják a beállításokat.|Az Intune-házirend által beállított konfigurációk érvényüket vesztik, és a felhasználók megváltoztathatják a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva|Eltávolítva|
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
@@ -139,6 +142,6 @@ A kivont és törölt eszközök, valamint a műveletet végző felhasználók l
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

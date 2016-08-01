@@ -1,25 +1,27 @@
 ---
-title: "Mi történik, ha törli az eszköz regisztrációját az Intune-ból? | Microsoft Intune"
+title: "Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# Mi történik, ha törli az eszköz regisztrációját az Intune-ból?
+# Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból?
 
 Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő eszközhöz tartozó hivatkozásra a fenti „A cikk tartalma” részben.
 
@@ -37,7 +39,7 @@ Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő
 -   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is van telepítve, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően újra engedélyezni lehet ezt az alkalmazást. Javasoljuk, hogy a Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
 
     > [!IMPORTANT]
-    > [!IMPORTANT] Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
+    > Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, akkor a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
 
 -   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása) hatályukat veszítik.
 
@@ -92,6 +94,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

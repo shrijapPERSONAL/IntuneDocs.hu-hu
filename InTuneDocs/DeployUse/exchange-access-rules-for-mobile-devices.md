@@ -1,26 +1,26 @@
 ---
-title: "A Microsoft Intune által felügyelt mobileszközökre vonatkozó Exchange-hozzáférési szabályok | Microsoft Intune"
-description: 
+title: "Mobileszközökre vonatkozó Exchange-hozzáférési szabályok | Microsoft Intune"
+description: "A mobileszköz-kezelésre (MDM) vonatkozó Exchange ActiveSync-hozzáférési szabályok határozzák meg az eszközök az Exchange-hez való hozzáférésnek szintjét."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # Mobileszközökre vonatkozó Exchange-hozzáférési szabályok
-A mobileszközökre vonatkozó Exchange-hozzáférési szabályok határozzák meg a mobileszközök Exchange-hez való hozzáférésének szintjét. Ezek a beállítások minden mobileszközre hatással vannak, a Microsoft Intune-ban nem regisztrált eszközöket is beleértve. Kiindulásképpen meghatározhat egy **alapértelmezett szabályt** , amely minden olyan mobileszközre érvényes lesz, amelyre nem alkalmaztak egyéni szabályt. Az alábbi táblázat az Exchange ActiveSync által felügyelt hozzáférési szinteket tartalmazza:
+A mobileszközökre vonatkozó Exchange-hozzáférési szabályok határozzák meg az eszközök az Exchange ActiveSync-hez való hozzáférésnek szintjét. Ezek a beállítások minden mobileszközre hatással vannak, a Microsoft Intune-ban nem regisztrált eszközöket is beleértve. Kiindulásképpen meghatározhat egy **alapértelmezett szabályt** , amely minden olyan mobileszközre érvényes lesz, amelyre nem alkalmaztak egyéni szabályt. Az alábbi táblázat az Exchange ActiveSync által felügyelt hozzáférési szinteket tartalmazza:
 
 |Hozzáférési szint|Leírás|
 |----------------|---------------|
@@ -53,6 +53,6 @@ Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatá
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

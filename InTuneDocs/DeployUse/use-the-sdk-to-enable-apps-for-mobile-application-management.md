@@ -1,8 +1,8 @@
 ---
-title: "Alkalmazások előkészítése mobilalkalmazás-felügyeletre az SDK segítségével | Microsoft Intune"
+title: "Alkalmazások előkészítése a MAM használatára az SDK segítségével | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -12,13 +12,14 @@ ms.technology:
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 6d435c2c9773040d6870aea274d3879c00461457
-ms.openlocfilehash: 2bb9ac819b63ea47ebc890d23cf83ee127c8e994
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: addf6791cbd72f9fe9806fd799d36ac198f6df74
 
 
 ---
 
-# Alkalmazások előkészítése mobilalkalmazás-felügyeletre az SDK segítségével
+# Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével
 A Microsoft Intune App SDK-val lehetővé teheti az Intune számára az iOS- vagy Android-mobilalkalmazások egyes funkcióinak felügyeletét. Az alkalmazás előkészítését követően házirendeket léptethet érvénybe az alkalmazásra vonatkozóan. Ezek a házirendek a felügyelt funkciók használatával védik a vállalati adatokat. Az SDK-val többek között a következő típusú védelmi módszerek valósíthatók meg:
 
 -   A vállalati dokumentumok felhőbe másolásának letiltása a felhasználók számára
@@ -38,7 +39,6 @@ Az SDK-ról az [Áttekintés](/intune/develop/intune-app-sdk) lapon olvashat tov
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

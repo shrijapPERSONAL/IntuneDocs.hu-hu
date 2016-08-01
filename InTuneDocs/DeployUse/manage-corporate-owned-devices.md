@@ -1,10 +1,10 @@
 ---
 title: "A vállalat által birtokolt eszközök felügyelete | Microsoft Intune"
-description: 
+description: "A vállalat által birtokolt eszközök (COD) az adott eszköztől, a vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetne
 
 [Vállalati tulajdonban lévő eszközök regisztrálása az eszközregisztráció-kezelővel](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## Nemzetközi mobilkészülék-azonosító (IMEI)
-Az egyedi nemzetközi mobileszköz-azonosító, az úgynevezett az IMEI-szám, egy olyan eszköztulajdonság, amelyet számos mobileszköz-gyártó általánosan alkalmaz. Az Intune-rendszergazdák importálni tudják a vállalat tulajdonában lévő eszközök IMEI-számát. Amikor az Intune-nal megkezdődik egy eszköz felügyelete, az eszköz megjelölhető vállalati tulajdonként, illetve a megfelelő szabályzattal megcélozható.
+## Vállalati tulajdonú Windows 10-asztalok
+
+Ha a szervezete rendelkezik Prémium szintű Azure Active Directory (AADP) vagy Nagyvállalati felügyeleti csomag (EMS) előfizetéssel, [regisztrálhatja a Windows 10 vállalati verzióját](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview), és az automatikusan „vállalati tulajdonúként” lesz megjelölve, amikor a felhasználók hozzáadják a munkahelyi vagy az iskolai fiókjaikat.
+
+## Eszközök azonosítása vállalati tulajdonúként
+
+A vállalati tulajdonú eszközökhöz az eszközök listáján a **Vállalati** megjelölés van beállítva a **Tulajdonjog** elemnél. Az eszközök az alábbi módokon azonosíthatók vállalati tulajdonúként:
+
+ - [Készülékregisztráció-kezelővel (DEM) regisztrált eszközök](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - Az Apple [készülékregisztrációs programjával (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) vagy az [Apple Configuratorral](ios-setup-assistant-enrollment-in-microsoft-intune.md) regisztrált eszközök
+ - [Eszközök előzetes deklarálása IMEI-számokkal](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [A Windows 10-eszközök Azure Active Directoryval/Nagyvállalati felügyeleti csomaggal történő regisztrációja](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### Nemzetközi mobilkészülék-azonosító (IMEI)
+
+Az egyedi nemzetközi mobileszköz-azonosító, az úgynevezett az IMEI-szám, egy olyan eszköztulajdonság, amelyet számos mobileszköz-gyártó általánosan alkalmaz. Az Intune-rendszergazdák importálni tudják a vállalat tulajdonában lévő eszközök IMEI-számát. Amikor az eszközt elkezdi az Intune felügyelni, vállalati tulajdonú eszközként lesz megjelölve.
 
 [Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

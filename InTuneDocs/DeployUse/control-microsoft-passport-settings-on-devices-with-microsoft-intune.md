@@ -1,10 +1,10 @@
 ---
 title: "A Microsoft Passport beállításainak szabályozása az eszközökön | Microsoft Intune"
-description: 
+description: "Tudja meg, hogyan integrálható az Intune a **Microsoft Passport for Work** nevű alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+translationtype: Human Translation
+ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
+ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
 
 
 ---
@@ -22,6 +23,9 @@ ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
 A Microsoft Intune lehetővé teszi az integrációt a **Microsoft Passport for Work** nevű alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett.
 
 A Passport lehetővé teszi jelszó helyett **felhasználói kézmozdulatok** használatát a bejelentkezéshez. A felhasználói hitelesítési mód lehet egy egyszerű PIN-kód, biometrikus hitelesítés, mint például a Windows Hello, vagy egy külső eszköz, például egy ujjlenyomat-olvasó.
+
+>[!TIP]
+>A Microsoft Passport for Work mostantól Windows Hello for Business néven érhető el. Ez a változtatás az Intune konzolján egy későbbi frissítés után jelenik majd meg.
 
 Az Intune két módon integrálható a Passport for Workkel:
 
@@ -51,7 +55,7 @@ Az Intune két módon integrálható a Passport for Workkel:
     - **Kötelező** – A felhasználóknak a karaktertípusból legalább egyet használniuk kell a PIN-kódjukban. Például általános gyakorlat legalább egy nagybetű és egy speciális karakter megkövetelése.
     - **Nem engedélyezett** (alapértelmezett) – A felhasználók ezeket a karaktertípusokat nem használhatják a PIN-kódjukban (ez történik akkor is, ha a beállítás nincs konfigurálva).
     > [!TIP]
-    > [!TIP] A speciális karakterek a következők: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > A speciális karakterek a következők: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN-kód lejárata (nap)** – A PIN-kódhoz célszerű lejárati időt megadni, amelynek eltelte után a végfelhasználóknak módosítaniuk kell a PIN-kódot. Az alapértelmezett érték 41 nap. 
 - **PIN-előzmények megjegyzése** – Ezzel a beállítással korlátozható a korábban használt PIN-kódok ismételt használata. Alapértelmezés szerint az 5 legutóbb használt PIN-kód nem használható újra.
 
@@ -74,6 +78,6 @@ A Microsoft Passporttal kapcsolatos további információkért olvassa el a Wind
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

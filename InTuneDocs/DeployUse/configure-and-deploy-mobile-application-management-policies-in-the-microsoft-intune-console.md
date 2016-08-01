@@ -1,10 +1,10 @@
 ---
-title: "Adatok védelme mobilalkalmazás-kezelési házirendekkel a Microsoft Intune segítségével | Microsoft Intune"
-description: 
+title: "MAM-szabályzatok konfigurálása az Intune-konzolban | Microsoft Intune"
+description: "A Microsoft Intune mobilalkalmazás-kezelési szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: df75c3512091dff55ace65ef6106dc2cbc503bd2
 
 
 ---
@@ -126,7 +126,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**Leírás**|Ha szeretne, adjon meg egy leírást a házirendhez.|
     |**A vállalat által kezelt böngészőben megjelenő webtartalom korlátozása**|Ha engedélyezve van ez a beállítás, az alkalmazásban szereplő esetleges hivatkozások a kezelt böngészőben fognak megnyílni. Ahhoz, hogy működjön ez a beállítás, az alkalmazásnak telepítve kell lennie az eszközökön.|
     |**Android-biztonsági mentések tiltása** vagy **iTunes- és iCloud-biztonsági mentések tiltása**|Információk biztonsági mentésének letiltása az alkalmazásból.|
-    |**Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak**|Megadhatja azokat az alkalmazásokat, amelyekbe ez az alkalmazás adatokat küldhet. Választhat, hogy letiltja, illetve csak más kezelt alkalmazásokba vagy bármely alkalmazásba engedélyezi az adatátvitelt. Ez a beállítás nem szabályozza a mobileszközök **Megnyitás a következőben** funkciójának használatát.<br /><br />Például ha nem engedélyezi az adatátvitelt, azzal megakadályozza az olyan szolgáltatásoknak való adatátvitelt, mint az SMS-üzenetkezelés, képek hozzárendelése a kapcsolatokhoz és a közzététel a Facebook-on vagy a Twitteren.<br /><br />iOS-eszközök esetén a kezelt és nem kezelt alkalmazások közötti dokumentumátvitel letiltásához egy olyan mobileszköz-biztonsági házirendet is konfigurálnia és alkalmaznia kell, amely letiltja a **Kezelt dokumentumok engedélyezése más nem kezelt alkalmazásokban** beállítást. Ha csak más kezelt alkalmazásokba engedélyezi az átvitelt, az Intune PDF- és képmegtekintői (ha telepítve vannak) lesznek használva a megfelelő típusú tartalmak megnyitásához.<br /><br />A **Házirend által felügyelt alkalmazások** vagy a **Nincs** beállítás alkalmazása esetén le lesz tiltva az iOS 9 rendszernek az a funkciója, amely lehetővé teszi, hogy a Spotlight-keresés adatokat keressen az alkalmazásokon belül.|
+    |**Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak**|Megadhatja azokat az alkalmazásokat, amelyekbe ez az alkalmazás adatokat küldhet. Választhat, hogy letiltja, illetve csak más kezelt alkalmazásokba vagy bármely alkalmazásba engedélyezi az adatátvitelt. Ez a beállítás nem szabályozza a mobileszközök **Megnyitás a következőben** funkciójának használatát.<br /><br />Például ha nem engedélyezi az adatátvitelt, azzal megakadályozza az olyan szolgáltatásoknak való adatátvitelt, mint az SMS-üzenetkezelés, képek hozzárendelése a kapcsolatokhoz és a közzététel a Facebook-on vagy a Twitteren.<br /><br />iOS-eszközök esetén a kezelt és nem kezelt alkalmazások közötti dokumentumátvitel letiltásához egy olyan mobileszköz-biztonsági házirendet is konfigurálnia és alkalmaznia kell, amely letiltja a **Kezelt dokumentumok engedélyezése más nem kezelt alkalmazásokban** beállítást. Ha csak más kezelt alkalmazásokba engedélyezi az átvitelt, az Intune PDF- és képmegtekintői (ha telepítve vannak) lesznek használva a megfelelő típusú tartalmak megnyitásához.<br /><br />A **Házirend által felügyelt alkalmazások** vagy a **Nincs** beállítás alkalmazása esetén le lesz tiltva az iOS 9 rendszernek az a funkciója, amely lehetővé teszi, hogy a Spotlight-keresés adatokat keressen az alkalmazásokon belül.<br><br>**Ez a beállítás nem szabályozza a mobileszközök Megnyitás a következőben funkciójának használatát. A Megnyitás a következőben funkció kezelésével kapcsolatos információkért kattintson [ide](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.|
     |**Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak**|Megadhatja azokat az alkalmazásokat, amelyekből ez az alkalmazás adatokat fogadhat. Választhat, hogy teljesen letiltja, vagy csak más kezelt alkalmazásokból, illetve bármely alkalmazásból engedélyezi az adatátvitelt.<br /><br />A többszörös identitást támogató iOS-alkalmazások esetében (ahol az Intune csak vállalati fiókokra vagy adatokra alkalmazza a felügyeleti beállításokat az alkalmazásban), amikor a felhasználók mobilalkalmazás-kezelési házirenddel ellátott regisztrált eszközükről mobilalkalmazás-kezelési házirend által nem felügyelt alkalmazásból érnek el adatokat, azokat a rendszer a házirend által védett vállalati adatokként kezeli.|
     |**A „Mentés másként” művelet letiltása**|Bármely ezt a házirendet alkalmazó alkalmazásban letiltja a **Mentés másként** művelet használatát adatok személyes felhőbeli tárolókba (mint például a személyes OneDrive vagy a Dropbox) való mentéséhez.|
     |**Kivágási, másolási és beillesztési műveletek korlátozása más alkalmazásokkal**|Megadhatja, hogy miként legyen használható a kivágási, a másolási és a beillesztési művelet az alkalmazással. A következő lehetőségek közül választhat:<br /><br />**Letiltva** – A kivágási, másolási és beillesztési műveletek letiltása az alkalmazás és más alkalmazások között.<br /><br />**Házirend által felügyelt alkalmazások** – A kivágási, másolási és beillesztési műveletek engedélyezése csak az alkalmazás és más kezelt alkalmazások között.<br /><br />**Házirend által felügyelt alkalmazások beillesztési lehetőséggel** – Az alkalmazásból kivágott vagy másolt adatok beillesztésének engedélyezése más kezelt alkalmazásokba. Egy tetszőleges alkalmazásból kivágott vagy másolt adatok beillesztésének engedélyezése ebbe az alkalmazásba.<br /><br />**Bármely alkalmazás** – Nincs korlátozás az alkalmazásba vagy alkalmazásból történő kivágási, másolási és beillesztési műveletekre vonatkozóan.<br /><br />Ahhoz, hogy adatokat lehessen másolni és beilleszteni kezelt alkalmazások között, mindkét alkalmazásban a **Házirend által felügyelt alkalmazások** vagy a **Házirend által felügyelt alkalmazások beillesztési lehetőséggel** beállításnak kell konfigurálva lennie.|
@@ -197,6 +197,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

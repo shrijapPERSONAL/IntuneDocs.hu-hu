@@ -9,9 +9,9 @@
 ### [Vállalati portál](microsoft-intune-company-portal.md)
 ### [Integráció a Microsoft más felhőszolgáltatásaival és termékeivel](integration-with-cloud-services.md)
 ### [Hálózatisávszélesség-felhasználás](network-bandwidth-use.md)
-### [Tartománynevek](domain-names-for-microsoft-intune.md)
+### [Egyéni tartománynevek](domain-names-for-microsoft-intune.md)
 
-## [Az Intune rövid kezdési útmutatója](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Az Intune bemutatása](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Bejelentkezés az Intune-ba](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Állítson be egy egyéni tartománynevet](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Az AD szinkronizálása és felhasználók felvétele](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -39,6 +39,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

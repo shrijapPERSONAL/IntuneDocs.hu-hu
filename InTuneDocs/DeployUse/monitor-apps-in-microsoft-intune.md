@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Az alkalmazások telepítésének figyelése| Microsoft Intune
-description:
-keywords:
+title: "Az alkalmazások telepítésének figyelése| Microsoft Intune"
+description: "Tudja meg, hogyan figyelhetők meg az Intune segítségével telepített alkalmazások."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: d2af901a322a7e4a35b4708cb60c70010314b0bb
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 Az Intune felügyeleti konzolon láthatja a kezelt alkalmazásokat, illetve a telepítések állapotát.
 
 ### A kezelt alkalmazások és azok állapotának megtekintése
-Az **Alkalmazások** munkaterületen kattintson az **Alkalmazások** csomópontra, majd az **Alkalmazások** elemre..
+Az **Alkalmazások** munkaterületen kattintson az **Alkalmazások** csomópontra, majd az **Alkalmazások** elemre.
 
 Megjelenik a kezelt alkalmazások listája. A kívánt alkalmazásra kattintva megtekintheti annak telepítési állapotát a konzol alsó ablaktáblájában. Kattintson az állapotadatokra, ha további részleteket kíván megjeleníteni. Ha például az **1 felhasználó rendelkezik ezzel a szoftverrel** állapotüzenet látható, kattintson az üzenetre a felhasználó nevének megtekintéséhez.
 
@@ -44,7 +38,7 @@ Megjelenik a kezelt alkalmazások listája. A kívánt alkalmazásra kattintva m
 Emellett az **Irányítópult** munkaterületen is áttekintheti az alkalmazások állapotát. Az áttekintésre kattintva megjelenítheti az alkalmazások listáját.
 
 ## Részletes információk megjelenítése az alkalmazásról
-Az alkalmazások listájában jelölje ki a kívánt alkalmazást, majd kattintson a **Tulajdonságok megjelenítése** elemre..
+Az alkalmazások listájában jelölje ki a kívánt alkalmazást, majd kattintson a **Tulajdonságok megjelenítése** elemre.
 
 Kattintson valamelyik lapfülre az alkalmazás **Szoftver tulajdonságai** oldalán: **Általános** – Általános információk az alkalmazásról és a telepítési állapotáról, **Eszközök** – Az alkalmazás célzott telepítését sikeresen telepítő eszközök, **Users** – Az alkalmazás célzott telepítését sikeresen telepítő felhasználók.
 
@@ -54,6 +48,7 @@ A korábbiakhoz hasonlóan, a **Szűrők** legördülő listával konfigurálhat
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

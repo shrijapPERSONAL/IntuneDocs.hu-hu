@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Riasztások kezelése | Microsoft Intune
-description:
-keywords:
+title: "Riasztások kezelése | Microsoft Intune"
+description: "A Riasztások munkaterülettel felmérheti a szervezetben lévő eszközök általános állapotát."
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 47667501cf8235ed59e3915ec8f745381a37ab35
+
 
 ---
 
@@ -61,7 +56,7 @@ A hirdetőtábla-riasztások fontos szolgáltatási közleményeket nyújtanak, 
 
 #### Hirdetőtábla-riasztások megtekintése és kezelése
 
-1.  Az Intune felügyeleti konzolon kattintson a **Rendszer – áttekintés** lehetőségre..
+1.  Az Intune felügyeleti konzolon kattintson a **Rendszer – áttekintés** lehetőségre.
 
 2.  Ha vannak fontos szolgáltatási közlemények, akkor azok az **Üzenőfal** területen láthatók.
 
@@ -72,7 +67,7 @@ A **Rendszer – áttekintés** munkaterületen áttekintheti az Endpoint Protec
 
 #### Az előfizetés állapotának megtekintése
 
-1.  Az Intune felügyeleti konzolon kattintson a **Rendszer – áttekintés** lehetőségre..
+1.  Az Intune felügyeleti konzolon kattintson a **Rendszer – áttekintés** lehetőségre.
 
 2.  A **Rendszer állapota** területen láthatja a Microsoft Intune különféle összetevőinek állapotát. Sok elem hivatkozásokat is tartalmaz, melyekre kattintva további információkat kaphat. Például az **Endpoint Protection** alatt a példányok számára kattintva megjelenítheti az **Endpoint Protection** munkaterületet, rajta az észlelt kártevők listájával. Az eszközök számára kattintva pedig megjelenítheti a **Csoportok** munkaterületet, rajta azoknak az eszközöknek a listájával, amelyeken kártevőt észlelt a rendszer.
 
@@ -91,27 +86,28 @@ A lezártnak jelölt riasztásokat a rendszer 90 nap után véglegesen törli.
 
 1.  Az Intune felügyeleti konzolon tegye a következők valamelyikét:
 
-    1.  **Egy riasztásnak a Riasztások listából való lezárásához** kattintson a **Riasztások &gt; Minden riasztás** elemre. Jelölje ki a kívánt riasztást, és kattintson a **Riasztás bezárása** lehetőségre..
+    1.  **Egy riasztásnak a Riasztások listából való lezárásához** kattintson a **Riasztások &gt; Minden riasztás** elemre. Jelölje ki a kívánt riasztást, és kattintson a **Riasztás bezárása** lehetőségre.
 
-    2.  **Egy adott eszközhöz tartozó riasztás lezárásához** kattintson a **Csoportok &gt; Minden eszköz** lehetőségre. Jelöljön ki egy eszközt, és kattintson a **Tulajdonságok megjelenítése** lehetőségre. Ezután a **Riasztások** lapon jelölje ki a kívánt riasztást, és kattintson a **Riasztás bezárása** lehetőségre..
+    2.  **Egy adott eszközhöz tartozó riasztás lezárásához** kattintson a **Csoportok &gt; Minden eszköz** lehetőségre. Jelöljön ki egy eszközt, és kattintson a **Tulajdonságok megjelenítése** lehetőségre. Ezután a **Riasztások** lapon jelölje ki a kívánt riasztást, és kattintson a **Riasztás bezárása** lehetőségre.
 
     3.  **Üzenőfal-riasztás lezárásához** kattintson a **Rendszer – áttekintés** lehetőségre. Kattintson az üzenőfal-riasztás melletti **X** gombra.
 
 #### Lezárt riasztások megtekintése és újraaktiválása
 
-1.  Az Intune felügyeleti konzolon kattintson a **Riasztások &gt; Minden riasztás** lehetőségre..
+1.  Az Intune felügyeleti konzolon kattintson a **Riasztások &gt; Minden riasztás** lehetőségre.
 
-2.  A **Szűrők** listában válassza a **Lezárva** lehetőséget..
+2.  A **Szűrők** listában válassza a **Lezárva** lehetőséget.
 
     Ekkor megjelennek a riasztások adatai a felügyeleti lista ablaktábláján. A kijelölt riasztás részletes adatait az előnézeti ablaktáblában láthatja.
 
-3.  A kijelölt riasztás újraaktiválásához kattintson a **Riasztás újraaktiválása** lehetőségre..
+3.  A kijelölt riasztás újraaktiválásához kattintson a **Riasztás újraaktiválása** lehetőségre.
 
 ### További információ
-[Értesítések a Microsoft Intune riasztásaival](get-notified-by-microsoft-intune-alerts.md)
+[Értesítések a Microsoft Intune riasztásaival](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

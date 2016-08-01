@@ -1,9 +1,9 @@
 ---
-title: "Az eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
-description: 
+title: "IOS-eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
+description: "Egy iOS-eszköz regisztrációjának törlését mutatja be az Intune-ból"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,18 +14,21 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 4dbb4d5d7151a6a579e00c2c4034a811f2357774
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e8572d873ca83f4fad7a1e1e01f60ece3f1319a6
 
 
 ---
 
 
-# Az eszköz regisztrációjának törlése az Intune-ból
+# IOS-eszköz regisztrációjának törlése az Intune-ból
 
 Amikor törli az iOS-alapú eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz, és kikerül az Intune felügyelete alól.
 
-Ha az eszköz regisztrációját törölni szeretné az Intune-ból, kövesse az alábbi lépéseket, vagy tekintse meg ezt a [videót](http://aka.ms/kfz8j1):
+Ha az eszköz regisztrációját törölni szeretné az Intune-ból, kövesse az alábbi lépéseket, vagy tekintse meg ezt a videót:
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+
 
 1.  A Vállalati portál alkalmazás **Eszközök**csoportjában válassza ki azt az eszközt, amelynek a regisztrációját törölni szeretné.
 
@@ -55,6 +58,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

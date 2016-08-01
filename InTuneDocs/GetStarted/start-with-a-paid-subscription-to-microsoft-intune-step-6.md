@@ -1,9 +1,9 @@
 ---
 title: "Szabályzatok létrehozása és alkalmazások közzététele | Microsoft Intune"
-description: 
+description: "Ismerteti a szabályzatok létrehozásának és a példaalkalmazások közzétételének módját az Intune-előfizetésére vonatkozóan"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. További információkért olvassa el [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), illetve a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) című témaköröket.
 
 Az Intune használatával az alkalmazásokat kétféle módon telepítheti. Az első egy **kötelező telepítés**, mely az adott alkalmazást automatikusan telepíti a felügyelt számítógépekre. A másik egy **elérhető telepítés**, mely telepíti az adott alkalmazást, vagy létrehoz egy hozzá kapcsolódó hivatkozást az Intune Vállalati portálon, így a felhasználók maguk dönthetik el, hogy a számítógépükre vagy a mobilkészülékükre telepítik az alkalmazást.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 Az alábbi lépések segítségével egy mobileszköz-konfigurációs szabályzatot és egy Windows-alapú számítógépes tűzfalházirendet állíthat be, valamint a Skype alkalmazást elérhető telepítésként konfigurálhatja az előzetesen regisztrált mobileszközökhöz.
 
@@ -46,6 +41,10 @@ Az alábbi lépések segítségével egy mobileszköz-konfigurációs szabályza
 3.  A **Házirendek – áttekintés** lap **Feladatok** listájában válassza a **Házirend hozzáadása** lehetőséget.
 
 4.  A szabályzatok listájában bontsa ki azt a platformot, amelyre a létrehozandó szabályzat vonatkozni fog, ezt követően válassza az **Általános konfiguráció** > **Egyéni házirend létrehozása és telepítése az ajánlott beállításokkal** > **Házirend létrehozása** lehetőséget.
+
+> [!NOTE]
+> Nincsenek ajánlott beállítások az eszközkonfigurációs szabályzatokra vonatkozóan, mivel számos lehetősége választható. Egyéni eszközkonfigurációs szabályzatot kell létrehoznia.
+
 
 5.  Ha a rendszer a **Válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet** üzenetben felszólítja erre, a rendelkezésre álló csoportok listájából válasszon ki egy csoportot, majd kattintson a **Hozzáadás** > **OK** gombra.
 
@@ -110,6 +109,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutató* 6. lép
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

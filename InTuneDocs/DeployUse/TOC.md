@@ -24,6 +24,7 @@
 #### [Exchange-hozzáférési szabályok](exchange-access-rules-for-mobile-devices.md)
 ### [Számítógépek kezelése](manage-windows-pcs-with-microsoft-intune.md)
 #### [Számítógépügyfél telepítése](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Számítógépek általános felügyeleti feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Számítógépek házirendütközéseinek feloldása](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Eszközök konfigurálása](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +50,7 @@
 ### [Csoportok használata felhasználók és eszközök kezeléséhez](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [Eszközök hozzárendelése csoportokhoz](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [A regisztrált eszközök áttekintése leltár használatával](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Számítógépek általános felügyeleti feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Eszközök védelme](protect-your-devices-with-microsoft-intune.md)
 ### [Zárolás és jelszó alaphelyzetbe állítása távolról](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -76,6 +77,7 @@
 ## [Alkalmazások konfigurálása](update-apps-using-microsoft-intune.md)
 ### [Alkalmazások frissítése ](update-apps-using-microsoft-intune.md)
 ### [iOS-alkalmazáskonfigurációs szabályzatok](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [iOS-mobilalkalmazás létesítési profiljai](ios-mobile-app-provisioning-profiles.md)
 ### [Internet-hozzáférés kezelése](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -133,6 +135,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

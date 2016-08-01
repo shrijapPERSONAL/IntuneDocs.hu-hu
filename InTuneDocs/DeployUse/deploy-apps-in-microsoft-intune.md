@@ -1,10 +1,10 @@
 ---
 title: "Alkalmazások telepítése | Microsoft Intune"
-description: 
+description: "A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,17 +12,18 @@ ms.technology:
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+translationtype: Human Translation
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # Alkalmazások telepítése a Microsoft Intune-ban
 
-A témakörben található információk a Microsoft Intune-alkalmazások telepítéséhez nyújtanak segítséget.
+A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében.
 
 
 ## Alkalmazások telepítése
-Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre a kiválasztott eszközök vagy felhasználók számára.
+Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre az eszközök vagy felhasználók kiválasztott csoportja számára.
 
 ### Alkalmazás telepítése
 
@@ -51,11 +52,11 @@ Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre a kiv
 ## Példa
 
 Ebben a példában az alkalmazást iOS-eszközök számára **elérhetőként** telepítette.
-Az alkalmazást a felhasználók a vállalati portálról telepíthetik eszközeiken. Az ezen a képernyőfelvételen látható Bing iOS-alkalmazást például a **Külső hivatkozás** telepítési típus, egy egyéni ikon és a **Megjelenítés kiemelt alkalmazásként és kiemelés a vállalati portálon** beállítás megadásával tették elérhetővé telepítésre.
-    ![iOS-eszközön elérhető alkalmazás](./media/available-install-on-iOS.png)
+Az alkalmazást a felhasználók a vállalati portálról telepíthetik eszközeiken. Az ezen a képernyőfelvételen látható Bing iOS-alkalmazást például a **Külső hivatkozás** telepítési típus, egy egyéni ikon és a **Megjelenítés kiemelt alkalmazásként és kiemelés a vállalati portálon** beállítás megadásával tették elérhetővé telepítésre.  
+![iOS-eszközön elérhető alkalmazás](./media/available-install-on-iOS.png)
 
-Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a felhasználó értesítést kap arról, hogy egy alkalmazás készen áll a telepítésre. Az ezen a képernyőfelvételen látható Work Folders iOS-alkalmazást például a **Felügyelt iOS-alkalmazás az App Store-ból** telepítési típus használatával tették elérhetővé telepítésre.
-    ![iOS-eszközök számára kötelező alkalmazás](./media/iOS-Required-install.PNG)
+Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a felhasználó értesítést kap arról, hogy egy alkalmazás készen áll a telepítésre. Az ezen a képernyőfelvételen látható Work Folders iOS-alkalmazást például a **Felügyelt iOS-alkalmazás az App Store-ból** telepítési típus használatával tették elérhetővé telepítésre.  
+![iOS-eszközök számára kötelező alkalmazás](./media/iOS-Required-install.PNG)
 
 ## További lépések
 
@@ -63,6 +64,6 @@ Miután telepített egy alkalmazást, érdemes figyelnie az előrehaladását. T
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

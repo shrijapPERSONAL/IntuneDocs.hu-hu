@@ -1,9 +1,9 @@
 ---
 title: "Kisegítő lehetőségek | Microsoft Intune"
-description: 
+description: "Ismerje meg az Intune szolgáltatásait, amelyek könnyebb használatot biztosítanak a fogyatékkal élők számára."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 3356ed7337814df1003905dba031b7d65959fc0f
 
 
 ---
@@ -42,12 +43,11 @@ A Microsoft Windows kisegítő lehetőségei mellett a [!INCLUDE[wit_firstref](.
 |Ugrás a következő alkalmazáscsoportra|Fel nyílbillentyű|
 |A kijelölt eszközhöz elérhető műveletek megjelenítése|Jobb nyílbillentyű|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] A [!NOTE]
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-portálokon való navigáláshoz használhatja az Internet Explorer megszokott billentyűparancsait.
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portálok: a navigáláshoz használhatja az Internet Explorer megszokott billentyűparancsait.
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

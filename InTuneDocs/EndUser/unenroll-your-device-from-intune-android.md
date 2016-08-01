@@ -1,9 +1,9 @@
 ---
-title: "Az eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
-description: 
+title: "Android-eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
+description: "Egy Android-eszköz regisztrációjának törlését mutatja be az Intune-ból"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -12,18 +12,21 @@ ms.technology:
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: db9755013320f11bd58fa94275274ad6ba2b5e9a
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 18b34de09cc24730cca6eacb0d5d2c5f99c24d1e
 
 
 ---
 
 
-# Az eszköz regisztrációjának törlése az Intune-ból
+# Android-eszköz regisztrációjának törlése az Intune-ból
 
 Amikor törli az androidos eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz.  A törlés további következményeiről további információért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
-Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szeretné távolítani a Vállalati portál alkalmazást, kövesse ezeket a lépéseket, vagy tekintse meg ezt a [videót](http://aka.ms/gyq2du):
+Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szeretné távolítani a Vállalati portál alkalmazást, kövesse ezeket a lépéseket, vagy tekintse meg ezt a videót:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
 
 1.  Bejelentkezés a Vállalati portál alkalmazásba.
 
@@ -39,12 +42,13 @@ Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szer
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
+
 
 ### További információ
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,21 +1,20 @@
 ---
-title: "A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban | Microsoft Intune"
-description: 
+title: "A vállalat által birtokolt iOS-eszközök regisztrálása | Microsoft Intune"
+description: "A vállalat által birtokolt iOS-eszközök regisztrálása az Apple eszközregisztrációs program (DEP) vagy az Apple Configurator eszköz segítségével"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 48359b44bec9ac3e1c9510debc01d2cf8abf6d2b
+ms.sourcegitcommit: 8a124eb41789053451e0c709188430b1e043d435
+ms.openlocfilehash: 872be93241c84a8334e4415f00b1383da7b15a61
 
 
 ---
@@ -25,12 +24,42 @@ A Microsoft Intune támogatja a vállalat által birtokolt iOS-eszközök regisz
 
 A vállalat által birtokolt iOS-eszközöket háromféleképpen regisztrálhatja:
 
--   **Regisztráció a telepítő segéddel** – A gyár állítja alaphelyzetbe az eszközt, és felkészíti a beállításhoz az új felhasználó számára. Ennél a módszernél a rendszergazdának a regisztráció előkonfigurálásához az iOS-eszközt USB kapcsolaton keresztül egy Apple Configuratort futtató Mac számítógéphez kell csatlakoztatnia. Az eszközök ezután a felhasználóikhoz kerülnek, akik a Beállítási asszisztens folyamatának futtatása során munkahelyi vagy iskolai hitelesítő adataikkal konfigurálják az eszközt, és befejezik a regisztrációs folyamatot. [Apple Configuratort és Beállítási asszisztenst futtató iOS-eszközök regisztrálása](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+-   **Apple Configurator** – Az iOS-eszközök regisztrálhatók egy Vállalati regisztrációs profil exportálásával, majd a mobileszközök csatlakoztatásával egy Apple Configurator eszközt futtató Mac számítógéphez. Az Apple Configurator a regisztráció két formáját támogatja:
 
--   **Közvetlen regisztrálás** – Létrejön egy Apple Configurator-kompatibilis fájl, amely az eszköz előkészítésez szükséges. A regisztrált eszköz nincs gyári alaphelyzetbe állítva, de egyetlen felhasználóhoz sem kapcsolódik. Ennél a módszernél a rendszergazdának az iOS-eszköz regisztrálásához az eszközt USB kapcsolaton keresztül egy Apple Configuratort futtató Mac számítógéphez kell csatlakoznia. [Az Apple Configurator közvetlen regisztrációját használó iOS-eszközök regisztrálása](ios-direct-enrollment-in-microsoft-intune.md)
+    - **Regisztráció a telepítő segéddel** – A gyár állítja alaphelyzetbe az eszközt, és felkészíti a beállításhoz az új felhasználó számára. Ennél a módszernél a rendszergazdának a regisztráció előkonfigurálásához az iOS-eszközt USB kapcsolaton keresztül egy Apple Configuratort futtató Mac számítógéphez kell csatlakoztatnia. Az eszközök ezután a felhasználóikhoz kerülnek, akik a Beállítási asszisztens folyamatának futtatása során munkahelyi vagy iskolai hitelesítő adataikkal konfigurálják az eszközt, és befejezik a regisztrációs folyamatot. [Apple Configuratort és Beállítási asszisztenst futtató iOS-eszközök regisztrálása](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+
+    - **Közvetlen regisztrálás** – Létrejön egy Apple Configurator-kompatibilis fájl, amely az eszköz előkészítésez szükséges. A regisztrált eszköz nincs gyári alaphelyzetbe állítva, de egyetlen felhasználóhoz sem kapcsolódik. Ennél a módszernél a rendszergazdának az iOS-eszköz regisztrálásához az eszközt USB kapcsolaton keresztül egy Apple Configuratort futtató Mac számítógéphez kell csatlakoznia. [Az Apple Configurator közvetlen regisztrációját használó iOS-eszközök regisztrálása](ios-direct-enrollment-in-microsoft-intune.md)
 
 -   **Készülékregisztrációs program (DEP)** – Vezeték nélkül telepít egy regisztrációs profilt az Apple készülékregisztrációs programjában megvásárolt készülékekre. Amikor a felhasználó a Beállítási asszisztenst futtatja az eszközön, az eszköz regisztrálódik az Intune-ban.  A DEP programon keresztül regisztrált eszközök regisztrációját a felhasználók nem törölhetik. [A készülékregisztrációs programban (DEP) részt vevő iOS-eszközök regisztrálása](ios-device-enrollment-program-in-microsoft-intune.md)
 
+## Felhasználói affinitás beállítása az iOS-rendszerű, vállalat által birtokolt eszközökhöz a Vállalati portál használatával
+
+A felhasználói affinitással konfigurált eszközökön telepítheti és futtathatja a Vállalati portál alkalmazást az alkalmazások letöltéséhez és az eszközök kezeléséhez. Miután a felhasználók megkapják az eszközeiket, több további lépést kell végrehajtaniuk a telepítősegéd befejezéséhez és a Vállalati portál alkalmazás telepítéséhez.
+
+A vállalat által birtokolt iOS-eszközök regisztrálása felhasználói affinitás használatával
+1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a telepítősegéd befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi felhasználónevüket vagy az egyszerű felhasználónevüket) kell megadniuk.
+
+2. A telepítés során a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Vállalati portál alkalmazást. Az Apple ID azonosító a telepítés befejezése után is megadható az iOS-beállítások menüjében.
+
+3. A telepítés befejezése után az iOS-eszközön telepíteni kell a vállalati portál alkalmazását az App Store áruházból, például a Vállalati portál alkalmazást.
+
+4. A felhasználó ekkor bejelentkezhet a Vállalati portál alkalmazásba az eszköz beállításakor megadott egyszerű felhasználónév használatával.
+
+5. A bejelentkezés után a rendszer kéri a felhasználótól az eszköz regisztrálását. Ennek első lépése az eszköz azonosítása. Az alkalmazás megjeleníti azon iOS-eszközök listáját, amelyek már a vállalat tulajdonában vannak, és amelyek hozzá vannak rendelve a végfelhasználók Intune-fiókjához. Válassza ki a megfelelő eszközt.
+
+  Ha az eszköz még nincs regisztrálva a vállalatnál, a normál regisztrálási művelet folytatásához válassza az „új eszköz” lehetőséget.
+
+6. A következő képernyőn a felhasználónak meg kell erősítenie az új eszköz sorozatszámát. A felhasználó a „sorozatszám megerősítése” hivatkozásra koppintva indíthatja el a beállítási alkalmazást a sorozatszám ellenőrzéséhez. A felhasználónak ezután meg kell adnia a sorozatszám utolsó 4 számjegyét a Vállalati portál alkalmazásban.
+
+  Ez a lépés azt ellenőrzi, hogy az eszköz az Intune-ban regisztrált vállalati eszköz-e. Ha az eszközön található sorozatszám nem egyezik, nem a megfelelő eszköz választotta ki. Lépjen vissza az előző képernyőre, és válasszon ki másik eszközt.
+
+7. A sorozatszám ellenőrzése után a Vállalati portál alkalmazás átirányítja a felhasználót a Vállalati portál webhelyre a regisztrálás véglegesítéséhez, majd felszólítja a felhasználót az alkalmazáshoz való visszatérésre.
+
+8. Ezzel befejeződött a regisztráció. Ezután az összes funkciójával együtt használhatja az eszközt.
+
+### A felhasználói affinitás nélküli vállalati tulajdonú eszközök áttekintése
+
+A felhasználói affinitás nélkül konfigurált eszközök nem támogatják a Vállalati portált, ezért ezekre az eszközökre ne telepítse az alkalmazást. A Vállalati portál az olyan felhasználók számára készült, akik rendelkeznek vállalati hitelesítő adatokkal, és hozzá kell férniük a személyre szabott vállalati erőforrásokhoz (pl. az e-mailhez). A felhasználói affinitás nélkül regisztrált eszközökhöz nem tartozhat dedikált felhasználói bejelentkezés. A felhasználói affinitás nélkül regisztrált eszközök jellemző példái közé tartoznak a kioszkok, a pénztári eszközök (POS) és a megosztott segédeszközök. Ha szükség van a felhasználói affinitásra, az eszköz regisztrálása előtt adja meg a Felhasználói affinitás beállítást az eszközregisztrációs profilban. Ha egy eszközön módosítani kell az affinitási állapotot, ki kell vonnia az eszközt, majd újból regisztrálnia kell.
 
 
 
@@ -39,6 +68,6 @@ A vállalat által birtokolt iOS-eszközöket háromféleképpen regisztrálhatj
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "A szolgáltatás leírása | Microsoft Intune"
-description: 
+description: "Az Intune egy felhőalapú szolgáltatás, amellyel Windows és Mac OS X rendszerű számítógépek, illetve iOS, Android és Windows rendszerű mobileszközök is felügyelhetők."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
 
 
 ---
@@ -34,7 +34,7 @@ A mobileszközökön konfigurálható beállítások listáját itt találja:
 
 -   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Mobileszközök megfelelőségi beállításai a Configuration Managerben](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Mobileszközök megfelelőségi beállításai a Configuration Managerben](https://technet.microsoft.com/library/dn376523.aspx)
 
 A System Center 2012 R2 Configuration Managerrel kapcsolatos információkért lásd: [A System Center 2012 Configuration Manager dokumentumkönyvtára](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -45,9 +45,10 @@ Ebből a témakörből megtudhatja, hogy milyen gyakran jelennek meg ezek a szol
 
 Az Intune szolgáltatás változásainak megismeréséhez lásd az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/Whats-new-in-microsoft-intune.md) című témakört. A [Microsoft Intune blog](http://blogs.technet.com/b/microsoftintune/) ugyancsak ismerteti a szolgáltatást érintő változásokat, ezenkívül hasznos tippekkel szolgál az Intune minél hatékonyabb használatához.
 
-Az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) üzenetközpontja ezenfelül a fontos szolgáltatásfrissítésekről is tájékoztatást nyújt. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket.
+Az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) üzenetközpontja ezenfelül a fontos szolgáltatásfrissítésekről is tájékoztatást nyújt. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket.
 
-> [!NOTE] Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét.  
+> [!NOTE]
+> Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét.  
 
 A Microsoft Intune szolgáltatással kapcsolatos figyelmeztetéseinek típusai a következők:
 -   Hogy fel tudjon készülni a szolgáltatás változásaira, a szolgáltatásfrissítést megelőzően legalább 30–90 nappal értesítjük, annak függvényében, hogy milyen hatású a változtatás. Erre a terméken belüli kommunikációs csatornákon (például a hirdetőtáblán közzétett értesítéseken) keresztül kerül majd sor. Ezek a változások a következők lehetnek:
@@ -82,6 +83,6 @@ Az alábbi forrásokból többet is megtudhat az Intune-ról:
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Az eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
-description: 
+title: "Windows-eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
+description: "Egy Windows-eszköz regisztrációjának törlését mutatja be az Intune-ból"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 
 ---
 
 
-# Az eszköz regisztrációjának törlése az Intune-ból
+# Windows-eszköz regisztrációjának törlése az Intune-ból
 
 Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt. Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információkért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
@@ -66,6 +66,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

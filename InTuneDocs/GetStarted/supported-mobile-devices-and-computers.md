@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Támogatott mobileszközök és számítógépek | Microsoft Intune
-description:
-keywords:
+title: "Támogatott mobileszközök és számítógépek | Microsoft Intune"
+description: "Az Intune által támogatott mobileszközök és számítógépek"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/08/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 506d8be071d94ac8cdcf536010acd322fc77fea2
+
 
 ---
 
@@ -33,12 +27,13 @@ A következő rendszerű mobileszközök és számítógépek felügyeletére va
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)] 
 
-Az ilyen eszközöket és számítógépeket akkor is felügyelheti, ha nem kapcsolódnak tartományhoz, illetve nincsenek a helyszínen. Az eszközök felügyeletével kapcsolatos további információkért lásd: [Az eszközkezelés módjának kiválasztása](/Intune/Deploy-use/choose-how-to-manage-devices).
+Az ilyen eszközöket és számítógépeket akkor is felügyelheti, ha nem kapcsolódnak tartományhoz, illetve nincsenek a helyszínen. Az eszközök felügyeletével kapcsolatos további információt a [Choose how to manage devices](/Intune/get-started/choose-how-to-manage-devices) (Az eszközkezelés módjának kiválasztása) című témakörben találhat.
 
 
 ### További információ
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android-alkalmazások előkészítése az App Wrapping Tool eszközzel való kezeléshez| Microsoft Intune | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "Android-alkalmazások burkolása az Alkalmazásburkoló eszközzel | Microsoft Intune"
+description: "Ebből a témakörből megtudhatja, hogyan burkolhatja az Android-alkalmazásait anélkül, hogy módosítaná az alkalmazás programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+
 
 ---
 
@@ -32,7 +26,7 @@ Ez az eszköz egy Windows-os parancssori alkalmazás, amely PowerShell ablakban 
 
 Ha az alkalmazás az Azure Active Directory Authentication Library (ADAL) hitelesítési tárat használja, az alkalmazás burkolása előtt végre kell hajtania az itt leírt lépéseket: [Az Azure Active Directory Authentication Libraryt használó alkalmazások burkolása](#how-to-wrap-apps-that-use-the-azure-active-directory-library). Ha nem biztos abban, hogy alkalmazása használja-e ezt a tárat, lépjen kapcsolatba az alkalmazás fejlesztőjével.
 
-Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásburkoló eszköz futtatásához kapcsolódó biztonsági szempontok](#security-considerations-for-running-the-app-wrapping-tool). Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267) weboldalt..
+Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásburkoló eszköz futtatásához kapcsolódó biztonsági szempontok](#security-considerations-for-running-the-app-wrapping-tool). Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267) weboldalt.
 
 ## 1. lépés: Az alkalmazásburkoló eszköz használatára vonatkozó előfeltételek teljesítése
 
@@ -48,7 +42,7 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
 
 -   Vállalata által kifejlesztett vagy annak számára készült alkalmazás. Az eszköz nem használható a Google Play áruházból letöltött alkalmazások feldolgozásához.
 
--   Az alkalmazásburkoló eszköz futtatásához telepítenie kell a [Java Runtime Environment](http://java.com/download/) legújabb verzióját, majd meg kell bizonyosodnia arról, hogy a Windows környezeti változók között a Java elérési útvonalának a következő van megadva: **C:\ProgramData\Oracle\Java\javapath**. További segítségért tekintse meg a következőt: [Java dokumentáció](http://java.com/download/help/)..
+-   Az alkalmazásburkoló eszköz futtatásához telepítenie kell a [Java Runtime Environment](http://java.com/download/) legújabb verzióját, majd meg kell bizonyosodnia arról, hogy a Windows környezeti változók között a Java elérési útvonalának a következő van megadva: **C:\ProgramData\Oracle\Java\javapath**. További segítségért tekintse meg a következőt: [Java dokumentáció](http://java.com/download/help/).
 
     > [!NOTE]
     > Egyes esetekben a Java 32 bites verziója memóriaproblémákat okozhat. Javasoljuk, hogy telepítse a 64 bites verziót.
@@ -59,11 +53,11 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
 
 2.  Fogadja el a licencszerződést, majd fejezze be a telepítést.
 
-Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezett hely a következő: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**..
+Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezett hely a következő: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**.
 
 ## 3. lépés: Az alkalmazásburkoló eszköz futtatása
 
-1.  Azon a Windows-számítógépen, amelyre az alkalmazásburkoló eszközt telepítette, egy PowerShell-ablak nyílik meg.
+1.  Azon a Windows-számítógépen, amelyre az alkalmazásburkoló eszközt telepítette, nyisson meg egy rendszergazdai jogú PowerShell-ablakot.
 
 2.  Az eszköz telepítési mappájából importálja az alkalmazásburkoló eszköz PowerShell-modulját:
 
@@ -71,14 +65,14 @@ Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezet
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Futtassa az eszközt az **invoke-AppWrappingTool** paranccsal, amelyhez az alábbi paraméterek használhatók. Az opcionálisként megjelölt paraméterek az Azure Active Directory Authentication Library (ADAL) tárral működő alkalmazásokhoz használandók. További információ: [Az Azure Active Directory Authentication Libraryt használó alkalmazások burkolása](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+3.  Futtassa az eszközt az **invoke-AppWrappingTool** paranccsal, amelyhez az alábbi paraméterek használhatók. Az opcionálisként megjelölt paraméterek az Azure Active Directory Authentication Library (ADAL) tárral működő alkalmazásokhoz használandók. További információ: [Az Azure Active Directory Authentication Libraryt használó alkalmazások burkolása](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 |Paraméter|További információ|Példák|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Az Android-forrásalkalmazás (.apk) elérési útja.| |
 |**-OutputPath**&lt;String&gt;|A „kimeneti” Android-alkalmazás elérési útja. Ha ez megegyezik az InputPath értékével, a burkolás sikertelen lesz.| |
 |**-KeyStorePath**&lt;karaktersor&gt;|Az aláíráshoz használt nyilvános és titkos kulcsból álló kulcspárt tartalmazó kulcstárfájl elérési útja.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|A kulcstár visszafejtésére szolgáló jelszó.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|A kulcstár visszafejtésére szolgáló jelszó. Az Android elvárja, hogy minden alkalmazáscsomag (.apk) alá legyen írva. A Java Key Tool segítségével hozza létre a KeyStorePassword kulcsot a példában látható módon. További információk a [kulcstárról](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Az aláíráshoz használt kulcs neve.| |
 |**-KeyPassword**&lt;SecureString&gt;|Az aláíráshoz használt titkos kulcs visszafejtésére szolgáló jelszó.| |
 |**-SigAlg**&lt;SecureString&gt;|Az aláíráshoz használandó aláírási algoritmus neve. Az algoritmusnak kompatibilisnek kell lennie a titkos kulccsal.|Példák: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -89,24 +83,24 @@ Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezet
 
 
 **&lt;CommonParameters&gt;**
-    (opcionális – olyan gyakori PowerShell-paramétereket támogat, mint például a verbose, a debug stb.)
+    (opcionális – olyan gyakori PowerShell-paraméterek használatát támogatja, mint például a verbose, a debug stb.)
 
-- A gyakori paraméterek listáját lásd itt: [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx)..
+- A gyakori paraméterek listáját lásd itt: [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx).
 
 - Az eszközhöz tartozó súgó megtekintéséhez írja be az alábbi parancsot:
 
     ```
     Help Invoke-AppWrappingTool
     ```
-- Ha többet szeretne tudni az Azure Active Directory (AAD) integrációjáról, olvassa el a következő részt: [Az Azure Active Directory Libraryt használó alkalmazások burkolása](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+- Ha többet szeretne tudni az Azure Active Directory (AAD) integrációjáról, olvassa el a következő részt: [Az Azure Active Directory Libraryt használó alkalmazások burkolása](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 **Például:**
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
-A rendszer a következő információkat fogja kérni: **KeyStorePassword** és **KeyPassword**..
+A rendszer a következő információkat fogja kérni: **KeyStorePassword** és **KeyPassword**.
 
 A beburkolt alkalmazás létrehozása és mentése egy naplófájllal együtt, a megadott kimeneti elérési úton történik.
 
@@ -115,9 +109,9 @@ A lehetséges hamisítási, információfelfedési és a jogok kiterjesztéséb�
 
 -   Győződjön meg róla, hogy a bemeneti üzletági alkalmazás, a kimeneti alkalmazás és a Java KeyStore ugyanazon számítógépen található, ahol az alkalmazásburkoló eszköz fut.
 
--   Importálja a kimeneti alkalmazást az Intune-konzolra ugyanazon a számítógépen, ahol az eszköz fut.
+-   Importálja a kimeneti alkalmazást az Intune-konzolra ugyanazon a számítógépen, ahol az eszköz fut. További információk a Java kulcseszközről: [kulcseszköz](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html).
 
--   Ha a kimeneti alkalmazás és az eszköz univerzális elnevezési konvenció (UNC) szerinti elérési útvonalon található, és az eszközt és a bemeneti fájlokat nem ugyanazon a számítógépen futtatja, a környezet biztonságos beállításait az [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) vagy a [Server Message Block (SMB) aláírás](https://support.microsoft.com/en-us/kb/887429) használatával adhatja meg..
+-   Ha a kimeneti alkalmazás és az eszköz univerzális elnevezési konvenció (UNC) szerinti elérési útvonalon található, és az eszközt és a bemeneti fájlokat nem ugyanazon a számítógépen futtatja, a környezet biztonságos beállításait az [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) vagy a [Server Message Block (SMB) aláírás](https://support.microsoft.com/en-us/kb/887429)használatával adhatja meg.
 
 -   Győződjön meg arról, hogy az alkalmazás megbízható forrásból származik, különösen akkor, ha az Azure Active Directory (AAD) szolgáltatást használja, amely a futtatás ideje alatt hozzáférést biztosíthat az alkalmazás számára az ADD-jogkivonatokhoz.
 
@@ -131,7 +125,7 @@ Az ADAL tárat használó alkalmazások esetében az alábbiaknak kell teljesül
 
 -   Az alkalmazásnak 1.0.2-es vagy újabb ADAL-verziót kell tartalmaznia.
 
--   A fejlesztőnek hozzáférést kell biztosítania az alkalmazásnak az Intune mobilalkalmazás-kezelés erőforráshoz a [3. lépés: A mobilalkalmazás-felügyelet elérésének konfigurálása az AAD-ben](#step-3-configure-access-to-mobile-app-management-in-aad) részben leírtak szerint..
+-   A fejlesztőnek hozzáférést kell biztosítania az alkalmazásnak az Intune mobilalkalmazás-kezelés erőforráshoz a [3. lépés: A mobilalkalmazás-felügyelet elérésének konfigurálása az AAD-ben](#step-3-configure-access-to-mobile-app-management-in-aad) részben leírtak szerint.
 
 ### 2. lépés: Az alkalmazás regisztrálásakor kapott azonosítók ellenőrzése
 A következő lépésben az Azure felügyeleti portálon kell regisztrálnia az ADAL-t és az Azure Active Directoryt (AAD) használó alkalmazásokat ahhoz, hogy megkapja a következő táblázatban felsorolt egyedi azonosítókat. Az azonosítókat ezután az ADAL és az alkalmazás integrációjához át kell adnia a fejlesztőnek.
@@ -149,13 +143,13 @@ Mielőtt használhatná egy alkalmazás AAD-beli regisztrációs értékeit az a
 
 1.  Jelentkezzen be egy meglévő AAD-fiókba az Azure felügyeleti portálján.
 
-2.  Válassza az **existing LOB application registration**(meglévő LOB-alkalmazás regisztrációja) elemet..
+2.  Válassza az **existing LOB application registration**(meglévő LOB-alkalmazás regisztrációja) elemet.
 
-3.  A **configure** (konfigurálás) csoportban válassza a **Configure Access to Web APIs in other applications** (Webes API-k más alkalmazásokban való elérésének konfigurálása) lehetőséget..
+3.  A **configure** (konfigurálás) csoportban válassza a **Configure Access to Web APIs in other applications**(Webes API-k más alkalmazásokban való elérésének konfigurálása) lehetőséget.
 
-4.  A **Permission to other applications** (Engedélyek más alkalmazásoknak) csoport első legördülő listájából válassza az **Intune Mobile Application Management** (Intune mobilalkalmazás-kezelés) lehetőséget..
+4.  A **Permission to other applications** (Engedélyek más alkalmazásoknak) csoport első legördülő listájából válassza az **Intune Mobile Application Management** (Intune mobilalkalmazás-kezelés) lehetőséget.
 
-Ezután már használhatja az alkalmazás ügyfél-azonosítóját az alkalmazásburkoló eszközben. Az ügyfél-azonosító az Azure Active Directory felügyeleti portálon található – lásd a táblázatot itt: [2. lépés: Az alkalmazás regisztrálásakor kapott azonosítók ellenőrzése](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app)..
+Ezután már használhatja az alkalmazás ügyfél-azonosítóját az alkalmazásburkoló eszközben. Az ügyfél-azonosító az Azure Active Directory felügyeleti portálon található – lásd a táblázatot itt: [2. lépés: Az alkalmazás regisztrálásakor kapott azonosítók ellenőrzése](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
 ### 4. lépés: Az AAD-azonosítóértékek használata az alkalmazásburkoló eszközben
 A regisztrációs folyamat során kapott azonosítóértékeket adja meg parancssori tulajdonságként az alkalmazásburkoló eszközben. A táblázatban szereplő összes értéket meg kell adnia ahhoz, hogy a felhasználók sikeresen hitelesítsék az alkalmazást. Ha nem adja meg valamelyiket, a rendszer az alapértelmezett értéket fogja használni.
@@ -169,12 +163,7 @@ A regisztrációs folyamat során kapott azonosítóértékeket adja meg parancs
 |Erőforrás-azonosító|ResourceID|
 Az alkalmazás burkolásakor tartsa szem előtt a következőket:
 
--   Az alkalmazásburkoló eszköz nem keres ADAL bináris fájlokat (ha vannak) az alkalmazásban. Ha az alkalmazás a bináris fájlok elavult verziójára hivatkozik, és hitelesítési házirendek vannak engedélyezve, a bejelentkezés során futásidejű hibák jelentkezhetnek.
-
--   A hitelesítés sikerességének ellenőrzéséhez az
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lekéri a MAM-erőforrás-azonosítóhoz társított AAD-tokent. A rendszer ugyanakkor nem használja a tokent semmilyen hívásban, amely a token érvényességének ellenőrzésére szolgálna. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] csak a bejelentkezett felhasználó egyszerű felhasználónevét olvassa be az alkalmazás általi hozzáférés megállapításához. Az AAD token nem használatos a további szolgáltatáshívásokhoz.
-
--   A hitelesítési tokenek az egy kiadótól származó alkalmazások esetén azonosak, tárolások ugyanis közös kulcsláncban történik. Ha el szeretne különíteni egy adott alkalmazást, másik aláíró tanúsítványt, létesítésiprofil-kulcstárat és -kulcsaliast kell használnia hozzá.
+-   A hitelesítés sikerességének ellenőrzéséhez az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lekéri a MAM-erőforrás-azonosítóhoz társított AAD-tokent. A rendszer ugyanakkor nem használja a tokent semmilyen hívásban, amely a token érvényességének ellenőrzésére szolgálna. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] csak a bejelentkezett felhasználó egyszerű felhasználónevét olvassa be az alkalmazás általi hozzáférés megállapításához. Az AAD token nem használatos a további szolgáltatáshívásokhoz.
 
 -   Az alkalmazás ügyfél-azonosítójának és hitelesítésszolgáltatói URI-jének megadásával megelőzhetők az ismétlődő bejelentkezéskérések. Az AAD-irányítópulton a közzétett [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM-erőforrás-azonosítóhoz való hozzáféréshez regisztrálnia kell az ügyfél-azonosítót. Ha nem regisztrálja az ügyfél-azonosítót, az alkalmazás futtatásakor a felhasználónál bejelentkezési hiba fog történni.
 
@@ -185,6 +174,7 @@ Az alkalmazás burkolásakor tartsa szem előtt a következőket:
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

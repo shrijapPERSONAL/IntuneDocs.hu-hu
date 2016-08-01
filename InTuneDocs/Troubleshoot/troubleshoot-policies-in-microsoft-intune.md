@@ -1,6 +1,6 @@
 ---
 title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune"
-description: 
+description: "Elháríthat szabályzatok konfigurációjával kapcsolatos problémákat."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -46,7 +47,8 @@ Az alábbi képernyőképen két világos példa látható:
 
 ![Az Intune eszközszabályzat](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Ne felejtse el, hogy ha két különböző korlátozási szintű házirend vonatkozik egy eszközre vagy felhasználóra, akkor a gyakorlatban a szigorúbb házirend lesz érvényes.
+> [!NOTE]
+> Ne felejtse el, hogy ha két különböző korlátozási szintű házirend vonatkozik egy eszközre vagy felhasználóra, akkor gyakorlatban a szigorúbb házirend lesz érvényes.
 
 ## Házirendfrissítés és frissítési időközök
 Vegye figyelembe, hogy a házirendek rendszeres időközönként frissülnek. Általában a házirendeknek a módosítások elvégzése után legfeljebb 15 perccel érvénybe kell lépniük az eszközökön. Az alábbiakban további részleteket talál a házirendek frissítésének rendszeres időközeiről:
@@ -68,7 +70,8 @@ Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policypl
 
 2.  Várjon 20 percet az ügyfélszoftver eltávolításáig.
 
-    > [!NOTE] Ne próbálja meg eltávolítani az ügyfelet a Programok és szolgáltatások területről.
+    > [!NOTE]
+    > Ne próbálja meg eltávolítani az ügyfelet a Programok és szolgáltatások területről.
 
 3.  A Start menüben írja be az **UAC** kifejezést a Felhasználói fiókok felügyelete beállításainak megnyitásához.
 
@@ -110,6 +113,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

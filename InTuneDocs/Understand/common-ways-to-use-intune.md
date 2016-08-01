@@ -1,9 +1,9 @@
 ---
 title: "Az Intune használatának gyakori módjai | Microsoft Intune"
-description: 
+description: "A hat leggyakoribb feladat, amelyek elvégzését az Intune-tól várják a felhasználók"
 keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
-ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
 
 
 ---
@@ -23,7 +23,8 @@ ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
 
 Mielőtt belevágna a megvalósítási feladatok végrehajtásába, fontos, hogy egyeztesse az üzleti célokat azokkal, akiket a szervezetnél érint a nagyvállalati mobilitás.  Ez akkor is fontos, ha újonnan vezeti be a nagyvállalati mobilitást, és akkor is, ha egy másik termékről tér át.  A nagyvállalati mobilitáshoz kapcsolódó igények dinamikusan fejlődnek, és a Microsoft néha a piacon elérhető más megoldásoktól különböző módon ad megoldást ezekre a igényekre.  Az üzleti céloknak megfelelő tervezés legjobb módja az, hogy meghatározza, mit szeretne elérni, és ezt úgy teszi, hogy kidolgozza azokat a forgatókönyveket, amelyeket meg szeretne valósítani a dolgozók és a partnerek számára, valamint az informatikai környezetben.  Az alábbiakban röviden bemutatjuk az Intune-ra épülő 6 leggyakoribb forgatókönyvet, és feltüntetjük az egyes forgatókönyvek tervezésével és megvalósításával kapcsolatos további tudnivalókra mutató hivatkozásokat.
 
->[!NOTE] Tudni szeretné, hogy a Microsoft informatikai részlege hogyan használja az Intune-t annak biztosításához,hogy a Microsoft dolgozói hozzáférjenek a vállalati erőforrásokhoz a mobileszközeikről, és eközben hogyan biztosítja a vállalati adatok védelmét? [Olvassa el ezt az angol nyelvű technikai esettanulmányt](https://www.microsoft.com/itshowcase/Article/Content/588), amely részletesen leírja, hogyan használja a Microsoft informatikai részlege az Intune-t és az egyéb szolgáltatásokat az identitás, az eszközök, az alkalmazások és az adatok kezeléséhez.  
+>[!NOTE]
+>Tudni szeretné, hogy a Microsoft informatikai részlege hogyan használja az Intune-t annak biztosításához,hogy a Microsoft dolgozói hozzáférjenek a vállalati erőforrásokhoz a mobileszközeikről, és eközben hogyan biztosítja a vállalati adatok védelmét? [Olvassa el ezt az angol nyelvű technikai esettanulmányt](https://www.microsoft.com/itshowcase/Article/Content/588), amely részletesen leírja, hogyan használja a Microsoft informatikai részlege az Intune-t és az egyéb szolgáltatásokat az identitás, az eszközök, az alkalmazások és az adatok kezeléséhez.  
 
 ## A helyszíni e-mailek és adatok védelme a mobileszközökről történő biztonságos hozzáférés lehetővé tételéhez
 A legtöbb nagyvállalati mobilitási stratégia annak megtervezésével kezdődik, hogy a dolgozók hogyan tudják biztonságosan elérni az e-maileket a mobileszközeikkel az interneten. Számos szervezet továbbra is a vállalati hálózatában tárolja és üzemelteti a helyszíni adatokat és az alkalmazáskiszolgálókat, például a Microsoft Exchange-et. Az Intune és a nagyvállalati mobilitási csomag (EMS) olyan egyedi, integrált feltételes hozzáférési megoldást kínál az Exchange Serverhez, amely garantálja, hogy egyetlen mobilalkalmazásnak sem lesz hozzáférése az e-mailekhez, amíg az eszköz nincs regisztrálva az Intune-ban, és mindezt úgy, hogy nem kell egy további átjárót üzembe helyezni a vállalati hálózat peremén.
@@ -67,6 +68,6 @@ A dolgozóknak néha olyan eszközöket, alkalmazásokat vagy böngészőket kel
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

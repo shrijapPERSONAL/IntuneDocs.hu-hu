@@ -1,6 +1,6 @@
 ---
 title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Intune"
-description: 
+description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
@@ -160,8 +160,29 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 2.  Győződjön meg arról, hogy az eszköz még nincs egy másik MDM szolgáltatóhoz regisztrálva, vagy még nincs hozzá felügyeleti profil telepítve.
 
-
 4.  Ellenőrizze, hogy az Androidhoz készült Chrome az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
+
+### Android-tanúsítványokkal kapcsolatos problémák
+
+**Probléma:** A felhasználó eszköze a következő üzenetet mutatja: *A bejelentkezés nem lehetséges, mert az eszközhöz hiányzik egy szükséges tanúsítvány.*
+
+**Megoldás**: 
+
+- A felhasználó beszerezheti a hiányzó tanúsítványt, ha követi [ezeket az utasításokat](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
+- Ha a felhasználó nem tudja beszerezni a tanúsítványt, lehetséges, hogy az ADFS-kiszolgálóról hiányoznak köztes tanúsítványok. A köztes tanúsítványokra az Androidnak van szüksége ahhoz, hogy megbízzon a kiszolgálóban. 
+
+A tanúsítványokat az alábbi módon lehet importálni az ADFS-kiszolgáló köztes tárolójába vagy proxykba:
+
+1.  Az ADFS-kiszolgálón indítsa el a **Microsoft Management Console**-t, és adja hozzá a **Számítógép fiókhoz** a Tanúsítványok beépülő modult. 
+5.  Keresse meg az ADFS-szolgáltatás által használt tanúsítványt, és nézze meg a szülőtanúsítványát.
+6.  Másolja ki a szülőtanúsítványt, és illessze be a **Számítógép\Köztes hitelesítésszolgáltatók\Tanúsítványok** közé.
+7.  Másolja ki az ADFS-, ADFS-dekódoló és ADFS-aláíró tanúsítványokat, és illessze be őket az ADFS-szolgáltatás személyes tárolójába.
+8.  Indítsa újra az ADFS-kiszolgálókat.
+
+A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
+
+
+
 ## iOS-problémák
 ### Profiltelepítési hiba
 **Hiba:** **Profiltelepítési hiba** üzenet jelenik meg egy iOS-eszközön.
@@ -285,6 +306,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

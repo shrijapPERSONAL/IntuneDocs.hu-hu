@@ -1,10 +1,10 @@
 ---
-title: "Mobilalkalmazás-felügyeleti szabályzatok figyelése a Microsoft Intune-nal | Microsoft Intune"
-description: 
+title: "MAM-szabályzatok figyelése a Microsoft Intune-nal | Microsoft Intune"
+description: "Megtudhatja, hány felhasználó használja a szabályzatot, és lefúrhat a részletekért."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ Itt megkeresheti az adott felhasználókat, és megtekintheti a rájuk vonatkoz�
 
   **Nincs beadva:** ez az állapot azt jelzi, hogy a házirend települt a felhasználónál, de az alkalmazást még egyszer sem használták a munkahelyi környezetben.
 
+>[!NOTE]
+> Ha a keresett felhasználó nem rendelkezik telepített MAM-szabályzattal, egy üzenetet fog látni, amely szerint a felhasználóra nem vonatkozik egyetlen alkalmazásszabályzat sem.
+
 A felhasználóhoz tartozó jelentések megtekintéséhez kövesse az alábbi lépéseket:
 
 **1. lépés:**  Felhasználó kiválasztásához kattintson az Összefoglalás csempére, vagy válassza a **FELHASZNÁLÓI ALKALMAZÁSJELENTÉSEK** elemet a **Beállítások** panelen az alább látható módon:
@@ -72,6 +75,6 @@ A részletes nézetben megtekinthető a hibaüzenet, az alkalmazás neve, amelyn
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

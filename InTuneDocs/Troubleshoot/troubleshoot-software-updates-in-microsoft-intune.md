@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Szoftverfrissítésekkel kapcsolatos hibák elhárítása | Microsoft Intune
-description:
-keywords:
+title: "Szoftverfrissítésekkel kapcsolatos hibák elhárítása | Microsoft Intune"
+description: "A Microsoft Intune szoftverfrissítéseivel kapcsolatban felmerülő problémák megoldása."
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+
 
 ---
 
@@ -29,6 +23,8 @@ ms.suite: ems
 Az ebben a részben ismertetett információk segítséget nyújtanak a Microsoft Intune szoftverfrissítéseivel kapcsolatban felmerülő problémák megoldásához.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
+
+## A frissítési ügynök hibakódjai
 
 A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. Ha nem talál meg egy adott hibakódot a táblázatban, lásd: [A Windows Update ügynök eredménykódjai](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -268,6 +264,7 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

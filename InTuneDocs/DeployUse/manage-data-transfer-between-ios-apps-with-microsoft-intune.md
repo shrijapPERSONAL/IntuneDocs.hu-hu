@@ -1,10 +1,10 @@
 ---
 title: "iOS-alkalmazások közti adatátvitel felügyelete | Microsoft Intune"
-description: 
+description: "Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
-ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
 
 
 ---
@@ -74,6 +75,6 @@ Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök eset�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

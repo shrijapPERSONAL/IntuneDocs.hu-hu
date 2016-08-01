@@ -1,10 +1,10 @@
 ---
 title: "Alkalmazások hozzáadása Windows-számítógépekhez | Microsoft Intune"
-description: 
+description: "Ebből a témakörből megtudhatja, hogyan adhat hozzá Windows rendszerű számítógépes alkalmazásokat az Intune-hoz a központi telepítésük előtt."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
-ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
-ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 0c70a40b9ec1ba53a6a3d6a1c3f197bf0252b8a3
 
 
 ---
@@ -32,7 +33,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet az Intune Software Publisher elindításához.
 
     > [!TIP]
-    > [!TIP] Előfordulhat, hogy a Software Publisher elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
+    > Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és -jelszavát.
 
 
 
@@ -89,6 +90,6 @@ Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** c
 Ha létrehozta az alkalmazást, a következő lépés a telepítése. További információért lásd: [Alkalmazások központi telepítése a Microsoft Intune-ban](deploy-apps.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -3,22 +3,24 @@ title: "A rendszer az Ismeretlen források kikapcsolását kéri | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 7ea8494dacb3f9ccf3077c654801979bab9b096b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
+ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
 
 
 ---
 
 # A rendszer az Ismeretlen források kikapcsolását kéri
 
-Ha „Az ismeretlen forrásból történő telepítést le kell tiltani” üzenettel találkozik, a **Beállítások** > **Biztonság** menüben kapcsolja ki az **Ismeretlen forrásokat**. 
+Ha „Az ismeretlen forrásból történő telepítést le kell tiltani” üzenetet látja, akkor a **Beállítások** > **Biztonság** (néhány eszközön **Zárolási képernyő és biztonság**) menüjében kapcsolja ki az **Ismeretlen források** beállítást. 
 
 A rendszergazdának fontos, hogy ez a beállítás ki legyen kapcsolva az Android eszközökön a vállalati adatok védelme érdekében. Ha az **Ismeretlen források** engedélyezve van, az lehetővé teszi az ismeretlen forrásokból származó alkalmazások telepítését, ami biztonsági kockázatot jelenthet.
 
@@ -31,6 +33,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 
