@@ -4,22 +4,68 @@ description:
 keywords: 
 author: Lindavr
 manager: jeffgilb
-ms.date: 06/16/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
-ms.reviewer: mamoriss
 ms.suite: ems
-ms.sourcegitcommit: 3080d23f464e96315ed9e5fd59774ba9f1b2dd86
-ms.openlocfilehash: 65d582958d77150091880cce72e079b87308209f
+translationtype: Human Translation
+ms.sourcegitcommit: b812a3124c330a9b45378c99ee77959c8d7bc537
+ms.openlocfilehash: b30ab535ac7d8b10e3feef52ab01a68ba8572dba
 
 
 ---
 
 # Az Intune korábbi kiadásai
+## 2016. június
+### Az Intune szolgáltatás állapota
+Az Intune-ra vonatkozó szolgáltatásállapot-adatok átkerültek a központi, a többi Microsoft-szolgáltatásról is információt nyújtó helyre. Ezt az információt mostantól az Office 365 felügyeleti portál Szolgáltatás állapota menüjében találja meg. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/) talál.
+
+### Alkalmazáskezelés
+- **Továbbfejlesztett konfigurációs felület a Windows 10 vállalati adatkezelési házirendjéhez.** Továbbfejlesztettük a Windows 10 vállalati adatkezelési házirendjének konfigurációs felületét az alkalmazásszabályok létrehozása, a hálózathatár-definíciók megadása és más vállalati adatvédelmi beállítások tekintetében. További tudnivalók: [Create an enterprise data protection (EDP) policy using Microsoft Intune](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) (Enterprise Data Protection-házirend létrehozása a Microsoft Intune-nal).
+
+
+### Eszközkezelés
+- **Windows Defender-házirendbeállítása a vélhetően nemkívánatos alkalmazások elleni védelem biztosításához.** A Windows Defender egy új, **Potentially Unwanted Application Detection** (Vélhetően nemkívánatos alkalmazás észlelése) nevű beállításával bővült a Windows 10 asztali és mobil verziójának általános konfigurációs házirendje. Ezzel a beállítással biztosíthatja a regisztrált Windows rendszerű asztali számítógépek védelmét a Windows Defender által a vélhetően nemkívánatos osztályba sorolt szoftverek futtatása ellen. Biztosíthatja a védelmet ezen alkalmazások futtatása ellen, vagy a vizsgálati üzemmóddal jelentést készíthet a vélhetően nemkívánatos alkalmazások telepítéséről. További információ: [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune) (A Windows 10 házirendbeállításai a Microsoft Intune-ban).
+<!---TFS 1244478--->
+
+### Feltételes hozzáférés
+- **Cisco ISE-hálózati hozzáférés-vezérlési szabályzat az Intune-hoz.**  Azok az ügyfelek, akik a Cisco Identity Service Engine (ISE) 2.1 szolgáltatást, illetve a Microsoft Intune-t is használják, a hálózati hozzáférés-vezérlési szabályzatot beállíthatják az ISE szolgáltatásban.
+
+    Ezen szabályzat használatakor azoknak az eszközöknek, melyeknek Wi-Fi vagy VPN használatával kell kapcsolódniuk a hálózathoz, meg kell felelniük a következő feltételeknek a hozzáférésük engedélyezéséhez:
+
+    * Az Intune által felügyeltnek kell lenniük
+    * Meg kell felelniük az Intune összes telepített megfelelőségi szabályzatának
+
+ A nem megfelelő eszközökkel rendelkező végfelhasználókat kérni fogja a rendszer, hogy regisztráljanak, és hárítsák el a megfelelőségi problémákat, hogy hozzáférést kapjanak.
+- **Feltételes hozzáférés böngészőhöz.** Feltételes hozzáférési házirendet állíthat be az [Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md) és a [SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md), így azok csak a felügyelt és a szabályozásoknak megfelelő iOS- és Android-eszközök támogatott webböngészőiről érhetők majd el. Az Outlook Web Accessbe (OWA) és a SharePoint-webhelyekre iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a rendszer a bejelentkezés előtt kérni fogja az eszköz Intune-beli regisztrálását, valamint az esetleges szabályozási hiányosságok elhárítását.
+<!---TFS 1175844--->
+
+- **A Dynamics CRM Online támogatja a feltételes hozzáférést.** Feltételes hozzáférési házirendet állíthat be a [Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md), hogy csak a felügyelt és a szabályozásnak megfelelő iOS- és Android-eszközök érhessék el. A Dynamics CRM mobilalkalmazásba iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a bejelentkezés végrehajtása előtt a rendszer kérni fogja a regisztrálást az Intune-ba, valamint a meg nem felelést okozó problémák megszüntetését.
+<!---TFS1295358--->
+
+##A Vállalati portál újdonságai
+
+#### Androidos Munkahelyi portál alkalmazás
+
+- Ha a rendszergazdák az új „Az eszközök tiltsák le az ismeretlen forrásból származó alkalmazások telepítését (Android 4.0+)” házirendet alkalmazzák, az Android 4.0-val és későbbi verziókkal rendelkező végfelhasználók számára „Az ismeretlen forrásokból származó alkalmazások telepítését le kell tiltani” üzenet jelenik meg. A felhasználóknak ekkor a **Beállítások** > **Biztonság** menüben ki kell kapcsolniuk az **Ismeretlen források** lehetőséget. A megfelelőségi üzenet tartalmaz egy hivatkozást, amely további [tájékoztatást](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android) ad a felhasználóknak az üzenetről és a beállítás kikapcsolásának okáról.
+
+- Ha a rendszergazdák az új „A Biztonsági fenyegetések keresése az eszközön beállítás engedélyezésének megkövetelése az eszközökön (Android 4.0+)” házirendet alkalmazzák, az Android 4.0-val és későbbi verziókkal rendelkező végfelhasználók számára „Futtasson biztonsági fenyegetés elleni keresést az eszközön” üzenet jelenik meg. A felhasználóknak ekkor a **Beállítások** > **Google** > **Biztonság** menüben be kell kapcsolniuk a **Biztonsági fenyegetések keresése az eszközön** beállítást. A megfelelőségi üzenet tartalmaz egy hivatkozást, amely további [tájékoztatást](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) ad a felhasználóknak az üzenetről és a beállítás bekapcsolásának okáról.
+
+- Ha a rendszergazdák az új „Az USB-hibakeresés letiltásának megkövetelése (Android 4.2+)” házirendet alkalmazzák, az Android 4.2-vel és későbbi verziókkal rendelkező végfelhasználók számára „Az USB-hibakeresést le kell tiltani” üzenet jelenik meg. A felhasználóknak ekkor a **Beállítások** > **Fejlesztői beállítások** menüben ki kell kapcsolniuk az **USB-hibakeresést**. A megfelelőségi üzenet tartalmaz egy hivatkozást, amely további [tájékoztatást](/Intune/EndUser/you-are-asked-to-turn-off-usb-debugging-android) ad a felhasználóknak az üzenetről és a beállítás kikapcsolásának okáról.
+
+- Ha a rendszergazdák az új „Az Android minimálisan előírt biztonsági javítási szintje (Android 6.0+)” házirendet alkalmazzák, az Android 6.0-val és későbbi verziókkal rendelkező végfelhasználók számára „Az eszköz nem éri el a minimális Android biztonsági javítási szintet” üzenet jelenik meg. A felhasználóknak ekkor telepíteniük kell a szükséges biztonsági javítási szintet. A megfelelőségi üzenet tartalmaz egy hivatkozást, amely további [tájékoztatást](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) ad a felhasználóknak a biztonsági javítás telepítéséről és arról, hogy jelenleg melyik biztonsági javítási verzióval rendelkeznek.
+
+#### iOS rendszerű Vállalati portál alkalmazás
+
+- A végfelhasználó számára az üzleti alkalmazások telepítésekor egy továbbfejlesztett környezet jelenik meg. Ha az alkalmazás telepítése hosszú ideig tart, a felhasználók manuálisan szinkronizálhatják az eszközt a szinkronizálási folyamat kényszerített folytatásához. A végfelhasználói lépéseket [Sync your iOS device manually](/Intune/EndUser/sync-your-device-manually-ios) (Az iOS-eszköz manuális szinkronizálása) című szakaszban tekintheti meg.
+
+- Az iOS rendszerhez készült Microsoft Intune Vállalati portál alkalmazás frissült, így már támogatja az iOS 8.0-s és újabb verzióit. A frissítés eredményeként a végfelhasználók csak akkor tudják telepíteni a Vállalati portál alkalmazást, és regisztrálni új eszközöket az Intune-ban, ha az eszközön az iOS 8.0-s vagy újabb verziója fut. Az iOS nem támogatott verzióját futtató eszközöket korábban regisztrált felhasználók továbbra is használhatják az eszközükön lévő Vállalati portál alkalmazást.
+
+
 ## 2016. május
 
 Mindezek a funkciók hibrid telepítések esetén is támogatottak (Intune-nal integrált Configuration Manager). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok](https://technet.microsoft.com/en-us/library/mt718155.aspx) oldalát.
@@ -258,172 +304,13 @@ Mostantól a Microsoft partnereinek további alkalmazásai kompatibilisek az Int
 ### Az IE9 támogatása januárban megszűnik
 2016 februárjától többé nem támogatjuk az Internet Explorer 9-et mint a Microsoft Intune Vállalati portál webhelyének, az Intune-fiókportálnak és az Intune felügyeleti konzoljának eléréséhez használható hivatalos böngészőt. Ezért át kell térnie az Internet Explorer 10 vagy a böngésző újabb verziójának használatára.
 
-## 2015. december
-### A Microsoft Munkahelyi portál szolgáltatásának módosításai és frissítései
-Ebben a kiadásban a következő módosításokat vezettük be a Munkahelyi portál szolgáltatásban.
-
-**Androidos Munkahelyi portál alkalmazás**
-
-A Google új követelményeinek való megfelelés végett elvégeztük a következőkben ismertetett változtatásokat. Az Android 6.0-s és újabb verziójú eszközökön két új üzenet jelenik meg a felhasználók számára:
-* Allow Company Portal to make and manage phone calls? (Engedélyezi, hogy a Munkahelyi portál alkalmazás telefonhívásokat indítson és kezeljen?)
-* Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)
-
-További információt e két üzenetről az alábbi táblázatban talál.
-
-
-
-Szöveges üzenet  |Allow Company Portal to make and manage phone calls? (Engedélyezi, hogy a Munkahelyi portál alkalmazás telefonhívásokat indítson és kezeljen?)  
----------|---------
-Üzenet jelentése     |  Engedélyezi a felhasználó eszközéhez tartozó telefonszám és IMEI-szám Intune szolgáltatásnak való elküldését, valamint a Hardver lap felügyeleti konzolján való megjelenítésüket.   </br></br>**MEGJEGYZÉS: A Vállalati portál alkalmazás soha nem indít és kezel telefonhívásokat.** Az üzenet szövegét a Google szabja meg, és nem módosítható. </br></br>A **Hardver** lap megnyitásához válassza a **Csoportok** > **Minden mobileszköz** > **Eszközök** lehetőséget. Jelölje ki a felhasználó eszközét, és válassza a **Tulajdonságok megjelenítése** > **Hardver** lehetőséget.    
-Hol és mikor jelenik meg az üzenet  | Akkor jelenik meg az üzenet, amikor a felhasználók első alkalommal jelentkeznek be a Munkahelyi portál alkalmazásba, hogy regisztrálják az eszközüket.|         
-Mi történik, ha a felhasználók engedélyezik a hozzáférést  |  Az eszköz telefonszáma és IMEI-száma megjelenik a Hardver lap felügyeleti konzolján. |         
-Mi történik, ha a felhasználók nem engedélyezik a hozzáférést     | Tovább használhatják a Munkahelyi portál alkalmazást, regisztrálhatják az eszközeiket, de azok telefonszámai és IMEI-számai nem jelennek meg a Hardver lap felügyeleti konzolján.       </br></br> Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentkeznek a Vállalati portál alkalmazásba, az üzenetben látható egy **Ne jelenjen meg többé** feliratú jelölőnégyzet, amelynek bejelölésével végleg kikapcsolhatják az üzenet megjelenítését.</br></br>Ha a felhasználók engedélyezik a hozzáférést, de később megtagadják azt, az üzenet újból megjelenik majd, amikor a felhasználók a legközelebb bejelentkeznek a Munkahelyi portál alkalmazásba a regisztrálást követően.</br></br>Amennyiben a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Telefon** lapon tehetik ezt meg.
-További információ     |  Felhasználóknak: [Bejelentkezés a Munkahelyi portál alkalmazásba](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_signin_cp)  </br></br>Rendszergazdáknak: Az ebben a táblázatban szereplő információk megtalálhatók a [Munkahelyi portál alkalmazás üzeneteinek leírásában](https://technet.microsoft.com/library/dn948527.aspx#BKMK_help_users_understd_msgs) is.   
-
-Szöveges üzenet  |Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)  
----------|---------
-Üzenet jelentése     |  Engedélyezi az eszköznek, hogy adatnaplókat írjon az eszköz SD-kártyájára, így USB-kábelen keresztül áthelyezhetővé válnak a naplók.   </br></br>**MEGJEGYZÉS: A Vállalati portál alkalmazás sohasem próbál hozzáférni a felhasználó fényképeihez, médiatartalmaihoz és fájljaihoz.** Az üzenet szövegét a Google szabja meg, és nem módosítható.     
-Hol és mikor jelenik meg az üzenet  | Akkor jelenik meg az üzenet, amikor a felhasználók az **Adatküldés** elemre koppintva elküldik az adatnaplókat a rendszergazdának.|         
-Mi történik, ha a felhasználók engedélyezik a hozzáférést  |  A naplók másolással az SD-kártyára kerülnek. |         
-Mi történik, ha a felhasználók nem engedélyezik a hozzáférést     | Az adatnaplók elküldése ettől függetlenül továbbra is lehetséges, ám a naplók nem másolhatók az SD-kártyára.       </br></br> Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentkeznek a Vállalati portál alkalmazásba, az üzenetben látható egy **Ne jelenjen meg többé** feliratú jelölőnégyzet, amelynek bejelölésével végleg kikapcsolhatják az üzenet megjelenítését.</br></br>Ha a felhasználók engedélyezik a hozzáférést, de később megtagadják azt, az üzenet újból megjelenik majd, amikor a felhasználók a legközelebb megpróbálják elküldeni a naplókat.</br></br>Amennyiben a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Tárterület** lapon tehetik ezt meg.
-További információ     |  Felhasználóknak: [Diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_send_diag_logs)  </br></br>Rendszergazdáknak: Az ebben a táblázatban szereplő információk megtalálhatók a [Munkahelyi portál alkalmazás üzeneteinek leírásában](https://technet.microsoft.com/library/dn948527.aspx#BKMK_help_users_understd_msgs) is.   
-
-
-**iOS rendszerű Vállalati portál alkalmazás**
-* A felhasználók már a Microsoft Outlookkal vagy más levelezőalkalmazásokkal is elküldhetik a rendszergazdának a diagnosztikai naplókat. Korábban ez csak a natív alkalmazással volt lehetséges.
-* Javítottuk az Apple készülékregisztrációs programjához (DEP) és a vállalatok által regisztrált eszközökhöz nyújtott támogatást. A részletekért lásd: [A regisztráláskor a rendszer felkéri az eszköz azonosítására](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_id_your_device).
-* A regisztrált eszközök felhasználói listájában ezentúl zöld pipa jelzi a felhasználó által éppen használt eszközt. A pipa hiányában korábban nem lehetett megállapítani, hogy a regisztrált eszközök melyikét használta éppen a felhasználó.
-
-**Windowsos Munkahelyi portál alkalmazás**
-
-A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a munkahelyi portál teljesítményéről és használatáról. A végfelhasználók bármikor kikapcsolhatják az adatok gyűjtését eszközük használati adatokra vonatkozó beállításával, rendszergazdák azonban nem szabályozhatják az adatgyűjtést, és nem módosíthatják e beállítás végfelhasználói szakaszát.
-
-
-
-## 2015. november
-### Alkalmazáskezelés
-Az Intune támogatja a mobilalkalmazás-kezelési (MAM) házirendeket, amelyek meggátolják, hogy vállalati adatok szivárogjanak ki a fogyasztói alkalmazásokba vagy szolgáltatásokba. Korábban ezek a házirendek csak olyan eszközökön futó mobilalkalmazásokon voltak kikényszerítve, amelyeket mobileszköz-kezelésre regisztráltak az Intune-ba.
-
-Az ehavi frissítéssel az Intune új eszközosztályokra bővíti ki MAM-képességeit. Az Intune-ban regisztrált eszközök mellett most a következőkön kényszeríthet ki MAM-házirendeket:
-* más eszközkezelési megoldások által kezelt eszközök
-* eszközkezelési rendszerekben nem regisztrált eszközök, általában saját eszközök
-
-A következő blogbejegyzésekben talál további információt ezen új MAM-képességekről:
-* [A felügyelt mobiltermelékenység növelése](http://blogs.technet.com/b/microsoftintune/archive/2015/11/17/enhancing-managed-mobile-productivity.aspx)
-* [A Microsoft új nagyvállalati mobilitási képességei](http://blogs.technet.com/b/microsoftintune/archive/2015/11/17/enhancing-managed-mobile-productivity.aspx)
-
-Ezenkívül itt találhat néhány részletet és további információkat az Intune MAM-szolgáltatásairól:
-* A vállalati adatok el vannak különítve az ügyféladatoktól az Intune-hoz felkészített alkalmazásokban, beleértve az Office Mobile alkalmazásokat, az Intune SDK-t alkalmazó külső alkalmazásokat és az Intune által becsomagolt üzletági alkalmazásokat.
-* A vállalati adatok megoszthatók (**kivághatók/másolhatók/beilleszthetők**) a vállalati alkalmazások között, mialatt meggátolható a vállalati adatok személyes alkalmazásokba való megosztása. A részletekért lásd: [A MAM-szabályzatok és az alkalmazásadatok védelme](https://technet.microsoft.com/library/mt627825.aspx). Ebben [A Microsoft Word alkalmazás használata munkahelyi és személyes teendők elvégzésére](https://technet.microsoft.com/library/mt627827.aspx) című példa forgatókönyvben láthatja, hogyan gátolja meg a rendszer a vállalati adatok személyes alkalmazásokba való megosztását.
-* Kulcsfontosságú adatvesztés-megelőzési házirendek, például alkalmazásonkénti PIN-kód, mentés másként vezérlők és felügyelt adatmegosztás az alkalmazások között. Az összes házirend listájáért lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](https://technet.microsoft.com/library/mt627829.aspx).
-* A Word, az Excel, a PowerPoint, az Outlook, a OneNote és a OneDrive Vállalati verzió is rendelkezik ezekkel az új képességekkel és eszközregisztrációval vagy anélkül is felügyelhető. Az adatvesztés-megelőzési képességek natív módon vannak beépítve a szabványos Office-alkalmazásokba az Apple Store vagy a Google Play áruházban, és nem igényelnek alkalmazásburkolást vagy közvetlen telepítést.
-* Az első lépésekért lásd: [Ismerkedés a mobilalkalmazás-felügyeleti szabályzatokkal az Azure-portálon](https://technet.microsoft.com/library/mt627830.aspx). A mobilalkalmazás-felügyeleti házirendek konfigurálásával és telepítésével kapcsolatban lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](https://technet.microsoft.com/library/mt627829.aspx).
-* Amikor a végfelhasználók a vállalati hitelesítő adataikkal hitelesítést végeznek az alkalmazásban, az adatvesztés-megelőzési képességek automatikusan be vannak állítva. A [Microsoft Intune-alapú mobilalkalmazás-kezelési házirendek hatálya alá tartozó alkalmazásokkal kapcsolatos végfelhasználói folyamatok](https://technet.microsoft.com/library/mt627827.aspx) című témakörben talál néhány példa forgatókönyvet a OneDrive iOS- és Androidos-eszközökön való elérésére.
-* iOS- és Android-eszközökön is működik.
-
-[A Microsoft Intune mobilalkalmazás-kezelési házirendekkel használható Microsoft-alkalmazások](https://technet.microsoft.com/library/dn708489.aspx) listája frissült, és megjeleníti a legújabb alkalmazásokat.
-
-### Eszközkezelés
- **Mac OS X eszközkezelés** Az Intune-nal Mac OS X-eszközöket regisztrálhat és kezelhet. A következőket teheti a Mac OS X-eszközökkel:
-* Az eszközök regisztrálása az Intune általi kezeléshez. Lásd: [Az iOS kezelésének beállítása a Microsoft Intune-nal](https://technet.microsoft.com/library/dn408185.aspx).
-* Eszközbeállítások vezérlése általános konfigurációs házirenddel. Lásd: [A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban](https://technet.microsoft.com/library/mt627823.aspx).
-* Az Apple Configuratorral létrehozott Mac OS X-beállítások alkalmazása. Lásd: [Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban](https://technet.microsoft.com/library/mt627820.aspx)-
-* Hardver- és szoftverleltár készítése Mac OS X-eszközökről. Lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](https://technet.microsoft.com/library/jj733634.aspx).
-* Új jelentések futtatása, amelyek részleteket jelenítenek meg a kezelt Mac OS X-eszközökről. Lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](https://technet.microsoft.com/library/dn646977.aspx).
-
-**ÚJ Edge böngészőbeállítások Windows 10-eszközökre** Új beállítások érhetőek el a Windows 10 általános konfigurációs házirendjéhez, amelyekkel kezelheti a Microsoft Edge böngésző beállításait és szolgáltatásait. Lásd: [A Windows 10 konfigurációs házirendjének beállításai a Microsoft Intune-ban](https://technet.microsoft.com/library/mt404697.aspx).
-
-**E-mail-profilok** Új e-mail-profilokra vonatkozó házirend érhető el a Windows 10-es asztali és Windows 10-es mobileszközökön. Lásd: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](https://technet.microsoft.com/library/dn646984.aspx).
-
-**Új megfelelőségiszabályzat-beállítások** Az alábbi új biztonsági és rendszerházirend-beállítások lettek hozzáadva a megfelelőségi szabályzatok listájához:
-* Ahhoz, hogy a vállalati erőforrásokat elérő Windows 8.1-es vagy újabb verziójú eszközökön telepítve legyenek a legújabb frissítések, használja az **Automatikus frissítések megkövetelése** beállítást. Az automatikusan telepíteni kívánt frissítések típusát is meghatározhatja – vagy az összes fontosként megjelölt telepítendő frissítést, vagy az összes fontosként vagy ajánlottként megjelölt telepítést. A megfelelőségiházirend-beállítások teljes listájáért lásd: [A Microsoft Intune eszközmegfelelőségi házirendjeinek kezelése](https://technet.microsoft.com/library/dn705843.aspx).
-* Az új **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból** beállítást a meglévő **Jelszó kérése ennyi perc inaktivitás után** beállítással kombinálva olyan megfelelőségi beállítást hozhat létre, amelyhez a végfelhasználónak jelszót kell beírnia a bizonyos ideig inaktív eszközök használatához.
-
-**Új feltételes hozzáférésiszabályzat-beállítások** **Minden felhasználóra** feltételes hozzáférési szabályzatot alkalmazhat az új vagy meglévő feltételes hozzáférési szabályzatokban. Az Intune és Office 365 programokhoz licenccel rendelkező összes felhasználónak regisztrálnia kell az eszközét, és ha az Intune nem támogatja az eszköz platformját, a hozzáférés le lesz tiltva az [Active Directory-hitelesítésalapú bejelentkezést (modern hitelesítést)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) használó ügyfélalkalmazások esetében.
-
-Azt is megadhatja, hogy a feltételes hozzáférési házirend **minden platformra** érvényes legyen.  Az [Active Directory-hitelesítésalapú bejelentkezést (modern hitelesítést)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) használó összes ügyfélalkalmazásra érvényes a feltételes hozzáférési házirend, és ha a platformot nem támogatja az Intune, akkor le lesz tiltva.
-
-### A Microsoft Munkahelyi portál szolgáltatásának módosításai és frissítései
-Ebben a kiadásban a következő módosítások lettek bevezetve a vállalati portál alkalmazásaival kapcsolatban:
-
-* **Android**: Egy új üdvözlőképernyő érhető el az androidos Munkahelyi portál alkalmazásban, amellyel a felhasználók jobban megérthetik a Munkahelyi portál alkalmazás célját. Ez a képernyő csökkenti az azon felhasználók általi letöltések számát, akiknek a vállalata nem Intune-előfizető.
-
-* **iOS**: Az Intune már a Mac OS X rendszerű eszközök regisztrálását is támogatja a [Vállalati portál webhely](https://portal.manage.microsoft.com) használatával. Ehhez a [Mac OS X-eszköz regisztrálása az Intune-ban](https://technet.microsoft.com/library/mt598622.aspx) című rész ad útmutatást.
-
-* **Vállalati portál webhely**: Azok a felhasználók, akik regisztrálták az eszközeiket az Intune-ban, most már közvetlenül a Munkahelyi portál webhelyen tudnak új PIN-kódot készíteni maguknak az **Új PIN-kód** lehetőséget választva. Korábban ez csak a rendszergazdán keresztül volt lehetséges. Windows 8.1-es és Windows RT rendszerű eszközökön nem működik az Új PIN-kód lehetőség. Más rendszerű eszközökön pedig csak akkor jelenik meg, ha az adott eszköz regisztrálva van a mobileszköz-kezelési szolgáltatásban vagy az Exchange ActiveSync mobileszköz-kezelési moduljában. Az [Új PIN-kód készítése](https://technet.microsoft.com/library/mt590895.aspx) című részben útmutatást talál mindehhez.
-
-### Változások a globális rendszergazdai licencelésben
-Októberben megosztottuk, hogy a globális rendszergazdák (másnéven a bérlő rendszergazdák) folytathatják a mindennapos adminisztrációs feladataikat különálló Intune- vagy Nagyvállalati mobilitási csomag- (EMS-) licenc nélkül. Ha azonban a globális rendszergazdák a szolgáltatást szeretnék használni, például a saját eszközük vagy vállalati eszköz regisztrálásához vagy a munkahelyi Intune portál használatához, Intune- vagy EMS-licencre van szükségük, mint minden más felhasználónak. Az alábbiakban további részleteket olvashat erről.
-* A munkahelyi Intune portálon a végfelhasználók a következőket tehetik:
-    * az eszköz regisztrálása;
-    * Az eszközök állapotának megtekintése
-    * olyan szoftver letöltése, amelyet globális rendszergazda telepített a szervezetbe;
-    * a globális rendszergazda által közzétett hivatkozások megkeresése arról, hogyan léphetnek kapcsolatba az informatikai részleggel.
-
-    [További információk a munkahelyi portálról](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal) és [a munkahelyi portál testreszabásának módjáról](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal).
-* Az Intune vagy az EMS megvásárlásához a szervezet nevében feliratkozó személy automatikusan az első globális rendszergazdává válik a bérlőben. Az ősszel az Intune elkezdett automatikusan hozzárendelni Intune- vagy EMS-licencet az első globális rendszergazdához az [Office 365 portálra](http://portal.office.com/) való átállás és az [Intune fiókportál](http://account.manage.microsoft.com/) megszűnésének részeként. Az összes további hozzáadott globális rendszergazda folytathatja a mindennapos adminisztrációt különálló Intune- vagy EMS-licenc nélkül. Ha végfelhasználói műveleteket végeznek, és regisztrálják a saját (vagy vállalati) eszközüket, vagy szoftvert töltenek le a vállalati portálról, akkor licencre van szükségük, mint bármely más felhasználónak.
-* A változást fokozatosan vezetjük be 2016 januárjától.
-* A Microsoft partnereit ez a változás nem befolyásolja abban, hogy az ügyfeleik nevében biztosítsák a szolgáltatást. A végfelhasználói feladatokhoz a felhasználóknak Intune- vagy EMS-licencre van szükségük az eszköz regisztrálásához és a szoftver a munkahelyi portálról való eléréséhez és letöltéséhez.
-
-Ha kérdései vannak ezzel a változtatással kapcsolatban, vegye fel a kapcsolatot az Intune támogatási csapatával:
-* [A Microsoft Intune támogatási csatornái](https://technet.microsoft.com/library/jj839713.aspx)
-* [Közösségi támogatás](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)
-
-Általános Microsoft Intune-visszajelzés, beleértve a tervátalakítási kérések (DCR-ek) elküldése vagy hibák jelentése érdekében látogasson el az [Intune felhasználói visszajelzési webhelyére](https://microsoftintune.uservoice.com/).
-
-
-### Újdonságok az Intune-ban – 2015. november
-**Új tartalom**
-* [A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban](https://technet.microsoft.com/library/mt627823.aspx): A Mac OS X-eszközök eszközbeállításainak és szolgáltatásainak vezérlése.
-* [Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban](https://technet.microsoft.com/library/mt627820.aspx): Az Apple Configurator eszközzel létrehozott Mac OS X-eszközbeállítások telepítése.
-* [Adatveszteség-megelőzési alkalmazásszabályzatok konfigurálása Microsoft Intune-ban](https://technet.microsoft.com/library/mt627825.aspx): Azon forgatókönyvekről tartalmaz információt, amelyeket a mobilalkalmazás-kezelési házirendek támogatnak, valamint arról, hogyan védi a házirend az adatokat.
-* [Ismerkedés a mobilalkalmazás-felügyeleti szabályzatokkal az Azure-portálon](https://technet.microsoft.com/library/mt627830.aspx): A mobilalkalmazás-kezelési házirendek használatának az Azure Betekintő portálon való elkezdéséhez szükséges információk.
-* [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](https://technet.microsoft.com/library/mt627829.aspx): Részletes útmutató arról, hogyan hozhat létre mobilalkalmazás-kezelési házirendeket az Azure Betekintő portálon.
-* [Mobilalkalmazás-felügyeleti szabályzatok figyelése a Microsoft Intune-nal](https://technet.microsoft.com/library/mt627824.aspx): Információ arról, hogyan figyelheti meg a mobilalkalmazás-kezelési házirendeket az Azure Betekintő portálon.
-* [A Microsoft Intune mobilalkalmazás-kezelési házirendjei és az iOS megnyitási engedélyei](https://technet.microsoft.com/library/mt627821.aspx): Információ arról, hogyan működnek a mobilalkalmazás-kezelési házirendek az iOS megnyitás a következőben szolgáltatásával.
-* [Microsoft Intune-alapú mobilalkalmazás-kezelési szabályzatok hatálya alá tartozó alkalmazásokkal kapcsolatos végfelhasználói folyamatok](https://technet.microsoft.com/library/mt627827.aspx): Milyen a végfelhasználói élmény mobilalkalmazás-kezelési házirenddel társított alkalmazások használatakor.
-* [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](https://technet.microsoft.com/library/mt627826.aspx): A vállalati alkalmazásadatok eltávolításának módja.
-
-**Frissített tartalom**
-* [A Windows 10 konfigurációs házirendjének beállításai a Microsoft Intune-ban](https://technet.microsoft.com/library/mt404697.aspx): Új Edge-böngészőbeállítások.
-* [Az iOS kezelésének beállítása a Microsoft Intune-nal](http://technet.microsoft.com/library/dn408185.aspx): További információk a Mac OS X-eszközök regisztrálásáról.
-* [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](https://technet.microsoft.com/library/jj733634.aspx): További információk a Mac OS X-eszközökről gyűjtött leltárról. Ezenkívül az összes eszközplatformra vonatkozó legújabb információkkal frissült a témakör.
-* [A Microsoft Intune-műveletek értelmezése jelentések segítségével](https://technet.microsoft.com/library/dn646977.aspx): További információk a felügyelt Mac OS X-eszközökkel kapcsolatos információk megjelenítésére használt két új jelentésről.
-* [A Microsoft Intune eszközmegfelelőségi házirendjeinek kezelése](https://technet.microsoft.com/library/dn705843.aspx): További információk az automatikus frissítések és jelszó megkövetelésének új megfelelőségi házirendjeiről, amikor egy eszköz inaktív állapotból tér vissza.
-* [E-mail hozzáférés kezelése a Microsoft Intune-nal](https://technet.microsoft.com/library/dn705841.aspx): További információ arról, hogy a feltételes hozzáférési házirend hogyan alkalmazható az összes platformra és az összes felhasználóra.
-* [A SharePoint Online-hozzáférés kezelése a Microsoft Intune-nal](https://technet.microsoft.com/library/dn705844.aspx): További információ arról, hogy a feltételes hozzáférési házirend hogyan alkalmazható az összes platformra és az összes felhasználóra.
-
-## 2015. október
-
-### Feltételes hozzáférés frissítései helyszíni Exchange esetén
-**Most engedélyezheti az Exchange ActiveSync e-mailek elérését az Intune-nal regisztrált, az előírásoknak megfelelő eszközök számára, amikor a globális Exchange-szabály Letiltás vagy Karantén értékű** Eddig a regisztrált vagy az előírásoknak megfelelő eszközökön az e-mail-elérés engedélyezéséhez **Engedélyezés** értékűre kellett állítani az alapértelmezett globális Exchange-szabályt.
-
-Ezzel a szolgáltatásfrissítéssel többé nincs szükség erre a beállításra a feltételes eléréshez. Ha az Exchange-környezet megköveteli, hogy az alapértelmezett globális szabály értéke **Letiltás/Karantén** legyen, jelölje be az Exchange helyszíni feltételes hozzáférési szabályzat lapján az **Alapértelmezett szabály felülbírálása** jelölőnégyzetet. Az [E-mail hozzáférés kezelése a Microsoft Intune-nal](https://technet.microsoft.com/library/dn705841.aspx) témakör további részleteket tartalmaz a szabályokról és az eredményül kapott végfelhasználói értesítésekről.
-
-**Karantén mostantól egy kattintással** Egyszerűsítettük az e-mailek karanténba helyezését az egykattintásos regisztrálás engedélyezése érdekében. Ezzel a szolgáltatásfrissítéssel a végfelhasználók a karanténba helyezett e-mailben egyetlen hivatkozásra kattintva végezhetik el a regisztrációs folyamatot a munkahelyiportál-alkalmazásban.
-### Mobileszköz- és alkalmazásfelügyeleti frissítések
-**Android** Az Intune összes felügyeleti funkciója mostantól támogatja az Android 6.0 (Marshmallow) rendszert, a következő blogbejegyzésben leírtaknak megfelelően: [Microsoft Intune Provides Day 0 Support for Android Marshmallow](http://blogs.technet.com/b/microsoftintune/archive/2015/10/09/microsoft-intune-to-provide-day-0-support-for-android-marshmallow.aspx)(A Microsoft Intune azonnali támogatást nyújt az Android Marshmallow rendszerhez).
-
-**iOS** Az iOS 7.1-es verziójánál régebbi rendszerű iOS-eszközökhöz már nem készíthetők új alkalmazástelepítések. Az ilyen eszközökhöz készült meglévő alkalmazáspéldányok azonban továbbra is működni fognak az Intune-ban, és a kezelésük is ott történik.
-
-**Windows 10** Az Intune mostantól támogatja az univerzális Windows 10-alkalmazások telepítését a **Windows-alkalmazáscsomag** szoftvertelepítő-típus használatával. A követelményekkel kapcsolatban további információkat [Az alkalmazások telepítésének első lépései a Microsoft Intune-ban](http://technet.microsoft.com/en-US/library/dn646955.aspx) című témakörben talál.
-
-
-### A Microsoft vállalati portál alkalmazásainak módosításai és frissítései
-A következő módosításokat végeztük el a vállalati portál alkalmazások ezen kiadásain: **iOS** Új gombokkal bővült a Vállalati portál alkalmazás, így a felhasználók egyszerűbben tudják elküldeni a diagnosztikai naplókat a rendszergazdáknak:
-
-|Gomb neve|Megjelenési helye|
-|------------|---------------|
-|Jelentés|Riasztási hibaüzenetek|
-|Diagnosztikai jelentés küldése|A Munkahelyi portál alkalmazás Névjegy képernyője|
-
 
 >[!div class="step-by-step"]
 
->[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
+>[&larr; **Az Intune újdonságai**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 
