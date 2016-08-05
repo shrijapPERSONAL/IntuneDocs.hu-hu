@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
 
 
 ---
@@ -26,19 +26,19 @@ A rendszergazda több követelményt is beállíthat a jelszavakhoz. Megadhatja 
 
 Ha gondja támad az összes követelménynek megfelelő jelszó beállításával, kérjen segítséget a rendszergazdától.
 
-## Jelszó beállítása Windows Phone 8 vagy 8.1 rendszerű eszközökön:
-
-1. A **kezdőlap** képernyőn koppintson a **Beállítások** pontra, majd válassza a **zárolási képernyő** lehetőséget.
-2. Görgessen le a **Jelszó** ponthoz, és csúsztassa a **Jelszó** sávot a **Be** állásba.
-3. Adja meg az új jelszót az **Új jelszó** mezőben, majd még egyszer a **Jelszó megerősítése** mezőben.
-4. Koppintson a **kész** gombra.
-
 ## Jelszó módosítása Windows Phone 8 vagy 8.1 rendszerű eszközökön:
 
 1. A **kezdőlap** képernyőn koppintson a **Beállítások** pontra, majd válassza a **zárolási képernyő** lehetőséget.
 2. Görgessen le a **Jelszó** ponthoz, és koppintson a **jelszó módosítása** pontra.
 3. Adja meg jelenlegi jelszavát a **Jelenlegi jelszó** mezőben.
 4. Adja meg az új jelszót az **Új jelszó** mezőben, majd még egyszer a **Jelszó megerősítése** mezőben.
+4. Koppintson a **kész** gombra.
+
+## Jelszó beállítása Windows Phone 8 vagy 8.1 rendszerű eszközökön:
+
+1. A **kezdőlap** képernyőn koppintson a **Beállítások** pontra, majd válassza a **zárolási képernyő** lehetőséget.
+2. Görgessen le a **Jelszó** ponthoz, és csúsztassa a **Jelszó** sávot a **Be** állásba.
+3. Adja meg az új jelszót az **Új jelszó** mezőben, majd még egyszer a **Jelszó megerősítése** mezőben.
 4. Koppintson a **kész** gombra.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
@@ -48,6 +48,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

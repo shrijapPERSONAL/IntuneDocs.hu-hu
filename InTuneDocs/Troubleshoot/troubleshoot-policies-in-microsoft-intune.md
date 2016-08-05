@@ -2,19 +2,19 @@
 title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune"
 description: "Elháríthat szabályzatok konfigurációjával kapcsolatos problémákat."
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policypl
 
 4.  Mozgassa az értesítési csúszkát az alapértelmezett beállításhoz.
 
-## KNOX-eszköz 0x87D1FDE8-as hibája
-**Probléma:** Miután létrehozott és telepített egy Samsung KNOX Exchange Active Sync e-mail-profilt különféle androidos eszközökhöz, azok az eszköz tulajdonságok &gt; szabályzat lapján jelentik a **0x87D1FDE8**-as vagy a **sikertelen szervizelés** hibát.
-
-Ellenőrizze a Samsung KNOX EAS-profil és a forrásszabályzat konfigurációját. A Samsung Note eszközök szinkronizálási lehetősége a továbbiakban nem támogatott, és ez a lehetőség nem választható a profilban. Ellenőrizze, hogy az eszközök rendelkezésére állt-e elegendő idő (akár 24 óra) a szabályzat feldolgozásához.
 
 ## Figyelmeztetés: A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen
 **Probléma:**A felügyeleti konzolban megjelenik **A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen**  figyelmeztetés.
@@ -113,6 +109,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

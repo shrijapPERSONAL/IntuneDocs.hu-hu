@@ -3,7 +3,7 @@ title: "Üzletági (LOB) alkalmazások védelme nem regisztrált eszközökön |
 description: "Ez a témakör ezt ismerteti, hogyan készítheti elő az egyéni üzletági alkalmazásait arra, hogy alkalmazhassa az adatveszteség megakadályozását segítő mobilalkalmazás-kezelési szabályzatokat."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
-ms.openlocfilehash: 1df9d98f45eaf93163116e4f6a4c9d32125043c8
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 
 
 ---
@@ -75,6 +75,6 @@ Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el.  Ezzel
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
