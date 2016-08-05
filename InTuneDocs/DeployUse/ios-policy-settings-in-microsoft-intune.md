@@ -3,8 +3,8 @@ title: "Az iOS szabályzatbeállításai | Microsoft Intune"
 description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 7de118a006bb45e19142459d8e62dd6f1dc5a3dc
+ms.sourcegitcommit: 947328a5c28839d8227a9e5ae0dd8b1fc5ad8e81
+ms.openlocfilehash: 63bc2cedf8d81b050a384a947a0b43827de5c352
 
 
 ---
@@ -39,95 +39,108 @@ A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatá
 Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, mellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért olvassa el a jelen témakörben alább található **Egyéni szabályzatbeállítások** című részt.
 
 ### Biztonsági beállítások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|Igen|
-|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|
-|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hogy hány szimbólumnak (például **#** vagy **@**) kell szerepelnie a jelszóban.|Igen|
-|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|Igen|
-|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például „0000” vagy „1234” engedélyezése.|Igen|
-|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|A megadott számú sikertelen bejelentkezési kísérlet után törli az eszközt.|Igen|
-|**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Ennyi perc elteltével kapcsol ki a kijelző.|Igen|
-|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|
-|**Jelszóelőzmények megjegyzése**|Ez a beállítás azt határozza meg, hogy a felhasználó használhatja-e az általa korábban használt jelszavakat.|Igen|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.|Igen|
-|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**<sup>1</sup>|Ez a beállítás azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra be kell írnia a jelszavát.|Igen|
-|**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.|iOS 7.1-es és újabb verziók|
+|**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|
+|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
+|**Jelszó speciális karaktereinek minimális száma**|Azt határozza meg, hogy hány szimbólumnak (például **#** vagy **@**) kell szerepelnie a jelszóban.|
+|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|
+|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például „0000” vagy „1234” engedélyezése.|
+|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|A megadott számú sikertelen bejelentkezési kísérlet után törli az eszközt.|
+|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**<sup>1</sup>|Ez a beállítás azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra be kell írnia a jelszavát.|
+|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|
+|**Jelszóelőzmények megjegyzése**|Ez a beállítás azt határozza meg, hogy a felhasználó használhatja-e az általa korábban használt jelszavakat.|
+|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.|
+|**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Ennyi perc elteltével kapcsol ki a kijelző.|
+|**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.|
 <sup>1</sup> Ha a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is konfigurálja iOS-eszközökön, azok egymás után lesznek alkalmazva. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 ### Rendszerbeállítások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Képernyőkép-készítés engedélyezése**|Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.|Igen|
-|**Vezérlőközpont engedélyezése a zárolási képernyőn**|Itt adható meg, hogy a Vezérlőközpont alkalmazás elérhető legyen-e, amikor az eszköz zárolva van.|iOS 7.1-es és újabb verziók|
-|**Értesítési nézet engedélyezése a zárolási képernyőn**|Engedélyezi a felhasználó számára, hogy az eszköz zárolásának feloldása nélkül is hozzáférhessen az értesítések nézetéhez.|iOS 7.1-es és újabb verziók|
-|**Ma nézet engedélyezése a zárolási képernyőn**|Itt adható meg, hogy megtekinthetők-e az értesítések, amikor az eszköz zárolva van.|iOS 7.1-es és újabb verziók|
-|**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.|Igen|
-|**Nem megbízható TLS tanúsítványok engedélyezése**|Engedélyezi nem megbízható TLS-tanúsítványok használatát az eszközön.|Igen|
-|**Passbook zárolt állapotban való használatának engedélyezése**|Engedélyezi a felhasználó számára a Passbook alkalmazás eszközzárolás alatti elérését.|Igen|
+|**Képernyőkép-készítés engedélyezése**|Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.|
+|**Vezérlőközpont engedélyezése a zárolási képernyőn**|Itt adható meg, hogy a Vezérlőközpont alkalmazás elérhető legyen-e, amikor az eszköz zárolva van.|
+|**Értesítési nézet engedélyezése a zárolási képernyőn**|Engedélyezi a felhasználó számára, hogy az eszköz zárolásának feloldása nélkül is hozzáférhessen az értesítések nézetéhez.|
+|**Ma nézet engedélyezése a zárolási képernyőn**|Itt adható meg, hogy megtekinthetők-e az értesítések, amikor az eszköz zárolva van.|
+|**Nem megbízható TLS tanúsítványok engedélyezése**|Engedélyezi nem megbízható TLS-tanúsítványok használatát az eszközön.|
+|**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.|
+|**Passbook zárolt állapotban való használatának engedélyezése**|Engedélyezi a felhasználó számára a Passbook alkalmazás eszközzárolás alatti elérését.|
 
 ### Felhőbeállítások – dokumentumok és adatok
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi a felhasználó számára, hogy biztonsági mentést készítsen az iCloudba az eszközről.|Igen|
-|**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.|Igen|
-|**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Engedélyezi az eszközön lévő fényképek szinkronizálását az iCloudba.|Igen|
-|**Biztonsági másolat titkosításának engedélyezése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|Igen|
+|**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi a felhasználó számára, hogy biztonsági mentést készítsen az iCloudba az eszközről.|
+|**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.|
+|**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Engedélyezi az eszközön lévő fényképek szinkronizálását az iCloudba.|
+|**Biztonsági másolat titkosításának engedélyezése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|
+|**Engedélyezi, hogy a felügyelt alkalmazások adatokat szinkronizáljanak az iClouddal**|Engedélyezi, hogy az alkalmazások adatokat szinkronizáljanak a felhasználók iCloud-fiókjával.|
+|**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|A Handoff segítségével folytathatja az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
 
 ### Alkalmazásbeállítások – böngésző
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Safari engedélyezése**|Ez a beállítás azt határozza meg, hogy a Safari böngésző használható-e az eszközön.|Igen|
-|**Automatikus kitöltés engedélyezése**|A felhasználók módosíthatják a böngésző automatikus kiegészítési funkciójának beállításait.|Igen|
-|**Előugróablak-blokkoló engedélyezése**|Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.|Igen|
-|**Cookie-k engedélyezése**|Engedélyezi Cookie-k használatát az eszköz webböngészője számára.|Igen|
-|**JavaScript engedélyezése**|Java-parancsfájlok böngészőben történő futtatásának engedélyezése.|Igen|
-|**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetés engedélyezése az eszköz böngészőjében.|Igen|
+|**Safari engedélyezése**|Ez a beállítás azt határozza meg, hogy a Safari böngésző használható-e az eszközön.|
+|**Automatikus kitöltés engedélyezése**|A felhasználók módosíthatják a böngésző automatikus kiegészítési funkciójának beállításait.|
+|**Előugróablak-blokkoló engedélyezése**|Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.|
+|**Cookie-k engedélyezése**|Engedélyezi Cookie-k használatát az eszköz webböngészője számára.|
+|**JavaScript engedélyezése**|Java-parancsfájlok böngészőben történő futtatásának engedélyezése.|
+|**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetés engedélyezése az eszköz böngészőjében.|
 
 ### Alkalmazásbeállítások – alkalmazások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Alkalmazástároló használatának engedélyezése**|Az alkalmazás-áruház elérésének engedélyezése az eszköz számára.|Igen|
-|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználókat jelszó beírására kötelezi az alkalmazás-áruházhoz való hozzáféréshez.|Igen|
-|**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|Igen|
-|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), nem engedélyezi többé a mentést.|iOS 7.1-es és újabb verziók|
-|**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|iOS 7.1-es és újabb verziók|
-|**Videokonferenciák engedélyezése**|Videokonferencia-alkalmazások, például a Facetime engedélyezése az eszközön.|Igen|
-|**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|Igen|
+|**Alkalmazástároló használatának engedélyezése**|Az alkalmazás-áruház elérésének engedélyezése az eszköz számára.|
+|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználókat jelszó beírására kötelezi az alkalmazás-áruházhoz való hozzáféréshez.|
+|**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|
+|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), nem engedélyezi többé a mentést.|
+|**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|
+|**Videokonferenciák engedélyezése**|Videokonferencia-alkalmazások, például a Facetime engedélyezése az eszközön.|
+|**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|
+|**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az erotikusként kategorizált könyvek letöltésének engedélyezése a felhasználó számára.|
 
 ### Alkalmazásbeállítások – játékok
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Game Centerbeli ismerősök felvételének engedélyezése**|Barátok hozzáadásának engedélyezése a Game Center alkalmazásban a felhasználó számára.|Igen|
-|**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|Igen|
+|**Game Centerbeli ismerősök felvételének engedélyezése**|Barátok hozzáadásának engedélyezése a Game Center alkalmazásban a felhasználó számára.|
+|**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|
 
 ### Eszközképességek beállításai – hardver
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.|Igen|
+|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.|
+|**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Az Airplay segítségével tartalmat streamelhet másik Apple-eszközre. Ezzel a beállítással párosítási jelszót kérhet más eszközökhöz való csatlakozáskor.|
 
 ### Eszközképességek beállításai – mobilhálózat
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Hangroaming használatának engedélyezése**|Hangroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Igen|
-|**Adatroaming használatának engedélyezése**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Igen|
-|**Roamingolás közbeni globális, háttérbeli adatbeolvasás engedélyezése**|Mobilhálózati roaming közben történő adatlehívás, például e-mail engedélyezése az eszköz számára.|Igen|
+|**Hangroaming használatának engedélyezése**|Hangroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|
+|**Adatroaming használatának engedélyezése**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|
+|**Roamingolás közbeni globális, háttérbeli adatbeolvasás engedélyezése**|Mobilhálózati roaming közben történő adatlehívás, például e-mail engedélyezése az eszköz számára.|
 
 ### Eszközképességek beállításai – szolgáltatások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
-|Beállítás neve|Részletek|iOS|
+|Beállítás neve|Részletek|
 |----------------|-------|
-|**Siri engedélyezése**|A Siri beszédfelismerési asszisztens használatának engedélyezése az eszközön.|Igen|
-|**Siri zárolt eszközön való használatának engedélyezése**|A Siri beszédfelismerési asszisztens eszközzárolás alatti használatának engedélyezése az eszközön.|Igen|
-|**Hangtárcsázás engedélyezése**|A hangtárcsázási funkció engedélyezése az eszközön.|Igen|
+|**Siri engedélyezése**|A Siri beszédfelismerési asszisztens használatának engedélyezése az eszközön.|
+|**Siri zárolt eszközön való használatának engedélyezése**|A Siri beszédfelismerési asszisztens eszközzárolás alatti használatának engedélyezése az eszközön.|
+|**Hangtárcsázás engedélyezése**|A hangtárcsázási funkció engedélyezése az eszközön.|
 
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
@@ -139,7 +152,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
 |**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyek telepítése és futtatása nem engedélyezett a felhasználóknak.|
-|**Meg nem felelés jelentésének mellőzése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat az alkalmazásokat tartalmazza, amelyeket a felhasználók telepíthetnek. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azokat az alkalmazásokat tartalmazza, amelyeket a felhasználók telepíthetnek. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
 |**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét. További segítségért olvassa el az ebben a témakörben alább található **Alkalmazás-áruházak URL-címének megadása** című részt.|
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
@@ -195,6 +208,32 @@ Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a kom
 > [!NOTE]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
+### Regisztrációs beállítások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+
+|Beállítás neve|Részletek|
+|----------------|--------------------|
+|**Az aktiválási zár engedélyezése, ha az eszköz felügyelt módban van**|Aktiválási zár engedélyezése felügyelt iOS-eszközökön.|
+
+### Felügyelet
+Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy újabb verzióját futtató eszközökön konfigurálhatja.
+
+|Beállítás neve|Részletek|
+|----------------|--------------------|
+|**Fiók módosításának engedélyezése**|Engedélyezi, hogy a felhasználó megváltoztassa a fiók beállításait, például az e-mail-konfigurációkat.|
+|**AirDrop engedélyezése**|Az AirDrop funkció használatának engedélyezése a közeli eszközökkel való tartalomcseréhez.|
+|**Alkalmazás mobiladatátvitel-használati beállításai módosításának engedélyezése**|Engedélyezi, hogy a felhasználó szabályozza, melyik alkalmazások bonyolíthatnak le mobilhálózati adatforgalmat.|
+|**Felhasználók által létrehozott tartalom lekérésének engedélyezése Siri számára az internetről**|Engedélyezi, hogy a Siri kérdések megválaszolása céljából hozzáférjen webhelyekhez.|
+|**Az iBooks áruház elérésének engedélyezése**|Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.|
+|**A Barátok alkalmazás beállításai módosításának engedélyezése**|Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.|
+|**Az összes tartalom és beállítás törlésére szolgáló funkció használatának engedélyezése az eszközön**|Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.|
+|**A korlátozások bekapcsolásának engedélyezése a felhasználó számára az eszközbeállítások között**|Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) konfiguráljon az eszközön|
+|**Internetes eredmények visszaadásának engedélyezése a Spotlight kereső számára**|Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, hogy további találatokat adjon vissza.|
+|**A Game Center alkalmazás használatának engedélyezése**|A Game Center alkalmazás használatának engedélyezése.|
+|**Az iOS-alapú eszközzel párosítható eszközök szabályozásának engedélyezése a gazdapárosítási (host pairing) funkció számára**|A gazdapárosítási funkcióval a rendszergazda szabályozhatja, hogy az iOS 7-alapú eszköz milyen eszközökkel legyen párosítható.|
+|**Konfigurációs profilok és tanúsítványok telepítésének engedélyezése a felhasználó számára**|Engedélyezi, hogy a felhasználó konfigurációs profilokat és tanúsítványokat telepítsen.|
+|**Az Üzenetek alkalmazás használatának engedélyezése az eszközön**|Engedélyezi az Üzenetek alkalmazást a szöveges üzenetek küldéséhez.|
+
 
 ## Egyéni szabályzatbeállítások
 
@@ -229,6 +268,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
