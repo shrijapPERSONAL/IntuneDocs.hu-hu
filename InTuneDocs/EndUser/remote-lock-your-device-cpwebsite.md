@@ -3,8 +3,8 @@ title: "Az eszköz távoli zárolása a Vállalati portál webhelyéről | Micro
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 48681950f23aaf4ce13418699fd80a5914f13e89
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 17f4b2a88fdd5976be842b22881f08e6e29e5343
 
 
 ---
@@ -43,15 +43,19 @@ A Távoli zárolás funkció használata az eszköz zárolásához:
 
 2.  Koppintson a **Távoli zárolás** elemre.
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  Olvassa el a zárolásról szóló figyelmeztető üzenetet, és koppintson a **Távoli zárolás** lehetőségre, így a Vállalati portál webhelye zárolja az eszközt.
+
     A **Távoli zárolás** elemre való koppintás után megjelenik a „Távoli zárolás függőben” állapot.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
     A Távoli zárolás állapota három helyen jelenik meg:
 
-    * A webhely értesítési területén. 
+    * A webhely értesítési területén.
     * Az eszköz Részletek lapján.
     * Az oldal Eszközeim területén, az eszköz nevét megjelenítő csempén.
 
-    Ha a „Sikertelen volt a távoli zárolás” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot visszavált a „Távoli zárolás függőben” állapotra. 
+    Ha a „Sikertelen volt a távoli zárolás” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot visszavált a „Távoli zárolás függőben” állapotra.
 
     Ha az újbóli próbálkozás is sikertelen, forduljon a rendszergazdához. Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.
 
@@ -61,6 +65,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

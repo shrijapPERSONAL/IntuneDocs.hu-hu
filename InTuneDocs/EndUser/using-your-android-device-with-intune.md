@@ -3,8 +3,8 @@ title: "Android-eszköz használata az Intune-nal | Microsoft Intune"
 description: "Hivatkozáslista az Intune-ban regisztrált Android-mobileszközökön elvégezhető feladatokhoz"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 # Android-eszköz használata az Intune-nal
 
-Ezeket a lépéseket az Android-eszközökön végrehajtandó feladatokhoz használhatja, ha a vállalata a Microsoft Intune-t használja.
+Ezen a lapon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk: regisztrációval kapcsolatos információk, felügyeleti feladatok és megfelelőségi problémák.
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
@@ -67,9 +67,6 @@ Az itt olvasható információk az Android-eszköz Intune-ban történő regiszt
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "A Vállalati portál alkalmazás új verziójának telepítése | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/30/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f15f3efc10936a964a72718daf8219f5b9c1e24a
 
 
 ---
@@ -22,13 +22,13 @@ ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
 
 Ha a Vállalati portál verziója már nem támogatott, vagy elérhető egy újabb Vállalati portál-verzió, frissítenie kell a Vállalati portál alkalmazást egy újabb verzióra. A frissítést az adott eszköz típusának megfelelő lépésekkel végezheti el.
 
-## Vállalati portál alkalmazás frissítése Android-eszközön
+## Az Intune Vállalati portál alkalmazás frissítése Android-eszközön
 
 A Play Áruház riasztást küld, ha elérhető a Vállalati portál új verziója. A Vállalati portál alkalmazás maga nem jelenít meg figyelmeztetést. Az eszköz frissítéséhez kövesse a riasztásban megjelenő utasításokat.
 
-## Vállalati portál alkalmazás frissítése iOS-eszközön
+## Az Intune Vállalati portál alkalmazás frissítése IOS-eszközön
 
-Az App Store értesítést küld, ha elérhető a Vállalati portál alkalmazás egy új verziója. 
+Ha új verzió érhető el, az alkalmazás frissítési lehetősége megjelenik a telepített alkalmazások listájában.  
 
 A Vállalati portál alkalmazás frissítése:
 
@@ -36,7 +36,7 @@ A Vállalati portál alkalmazás frissítése:
 
 2. Ha megtalálja az alkalmazást, koppintson a **Frissítés** gombra az alkalmazás nevétől jobbra.
 
-## Vállalati portál alkalmazás frissítése Windows-eszközön
+## Az Intune Vállalati portál alkalmazás frissítése Windows-eszközön
 
 1.  Nyissa meg a Windows Áruházat, és keressen rá a **vállalati portál** kifejezésre.
 
@@ -56,7 +56,6 @@ Az eszközzel elvégezhető egyéb feladatokkal kapcsolatos további informáci�
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Eszközök regisztrálása | Microsoft Intune"
-description: "A Microsoft Intune mobileszköz-kezelési (MDM) funkciója a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést."
+description: "A mobileszköz-kezelési (MDM) funkció a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést."
 keywords: 
 author: NathBarn
 manager: arob98
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: d128b9c9f0c9eda70abed058afeb665377047f66
+ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
+ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
 
 
 ---
@@ -89,7 +89,7 @@ Meghatározza, hogy a regisztrálási módszer támogatja-e a „Felhasználói 
   - Feltételes hozzáférés az e-mailekhez és a vállalati adatokhoz
   - Vállalati portál alkalmazás
 
-[Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
+[Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
 
 ### Zárolás
 Meghatározza, hogy lehet-e az eszközt zárolni annak megakadályozására, hogy a felhasználó el tudja távolítani az Intune-szabályzatot. Ez a művelet gyakorlatilag kivonja az eszközt a felügyelet alól. Az iOS-eszközök csak akkor zárolhatók, ha Felügyelt módban vannak.
@@ -124,6 +124,6 @@ Az Intune ügyfélszoftverével felügyelt számítógépeken nem lehet szelekt�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

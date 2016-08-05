@@ -3,8 +3,8 @@ title: "Azure-portál a mobilalkalmazás-felügyeleti szabályzatok kezeléséhe
 description: "Hozzon létre mobilalkalmazás-felügyeleti szabályzatokat az Azure portál segítségével. Az itt létrehozott szabályzatok az Intune-ban regisztrált és nem regisztrált eszközökre is alkalmazhatók."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ Az Azure-portálon az alábbiakhoz támogatott a MAM-szabályzatok létrehozása
 
     ![Az Azure-portál bejelentkezési oldalának képernyőképe](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Miután sikeresen bejelentkezett, megjelenik az **Irányítópult**. Az **Irányítópulton** az alapértelmezett csempék láthatók. Ezeket eltávolíthatja, és újak hozzáadásával testre szabhatja a lapot.
+2.  Miután sikeresen bejelentkezett, megjelenik az **Irányítópult**. Az **Irányítópult** oldal testreszabható.
 
     ![Az Azure-portál irányítópultjának képernyőképe](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  A **Tallózás** menüben keresse meg az **Intune** elemet.![A Tallózás menü képernyőképe az Intune kiemelésével](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Kattintson az **Intune > Intune mobilalkalmazás-kezelés > Beállítások** elemre.
+4.  Válassza az **Intune > Intune mobilalkalmazás-kezelés > Beállítások** elemet.
 
     ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ Az Azure-portálon az alábbiakhoz támogatott a MAM-szabályzatok létrehozása
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

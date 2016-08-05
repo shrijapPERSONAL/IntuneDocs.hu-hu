@@ -3,8 +3,8 @@ title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése USB-kábele
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 # Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának
 
-Ha adatnaplót szeretne küldeni az informatikai rendszergazdának, hogy segítséget kapjon egy problémához, a naplókat elküldheti egy számítógép és egy USB-kábel segítségével, és nem kell a mobileszközéről küldeni a naplókat. Ezt a következőképpen teheti meg:
+Ha adatnaplókat szeretne küldeni az informatikai rendszergazdának, hogy segítséget kapjon egy problémához, a naplókat elküldheti egy számítógép és egy USB-kábel segítségével, és nem kell a mobileszközéről küldeni a naplókat. Ezt a következőképpen teheti meg:
 
-1.  Mielőtt nekikezdene, győződjön meg arról, hogy ismeri a rendszergazda e-mail címét. A vállalati portál webhelyén vagy a Vállalati portál alkalmazásban általában megtalálható a rendszergazda e-mail címe.
+1.  A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
+
+2.  Mielőtt nekilátna, ellenőrizze, hogy rendelkezik-e a rendszergazda e-mail címével, amely általában a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) vagy a Vállalati portál alkalmazásában található meg.
 
 2.  USB-kábellel csatlakoztassa az Android-eszközt a számítógéphez.
 
@@ -39,6 +41,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

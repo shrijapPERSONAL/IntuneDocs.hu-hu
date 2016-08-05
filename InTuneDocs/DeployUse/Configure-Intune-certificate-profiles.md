@@ -3,8 +3,8 @@ title: "Tanúsítványprofilok konfigurálása | Microsoft Intune"
 description: "Tudnivalók az Intune-tanúsítványprofilok létrehozásáról."
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 40ae2ce3ea4393d24770c010bf5292ca1829a7f1
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Ahhoz, hogy SCEP- vagy .PFX-tanúsítványprofilt hozhasson létre, először l�
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Konfigurálja a megbízható tanúsítványprofil beállításait az Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1. rendszerhez az alábbi információk megadásával: A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltató tanúsítványát (**.cer-fájl**). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
+3.  Konfigurálja a megbízható tanúsítványprofil beállításait az Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1. rendszerhez az alábbi információk megadásával: 
+
+    - A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltató tanúsítványát (**.cer-fájl**). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
+
+    
+    - A **Tulajdonos nevének formátuma** **Egyéni** beállításának kiválasztásával egyéni nevet adhat meg a tulajdonosnak.  
+
+        Az egyéni formátum jelenleg két változót támogat: **Egyszerű név (CN)** és **E-mail (E)**. A változók és a statikus sztringek együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a CN és az E változó mellett a Szervezeti Egység, Szervezet, Hely, Állam és Ország sztringjét is alkalmazza. A támogatott sztringek listáját az alábbi témakörben tekintheti meg: [CertStrToName-függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
@@ -83,6 +94,15 @@ Ha létrehozott egy megbízható hitelesítésszolgáltatói tanúsítványprofi
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
+    > [!NOTE]
+    > 
+    > A **Tulajdonos nevének formátuma** **Egyéni** beállításának kiválasztásával egyéni nevet adhat meg a tulajdonosnak.
+    > 
+    >  Az egyéni formátum jelenleg két változót támogat: Egyszerű név (CN) és E-mail (E). A változók és a statikus sztringek együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a *CN* és az *E* változó mellett a Szervezeti Egység, Szervezet, Hely, Állam és Ország sztringjét is alkalmazza. A támogatott sztringek listáját az alábbi témakörben tekintheti meg: [CertStrToName-függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
 
@@ -145,6 +165,6 @@ Ezt követően a tanúsítványok segítségével biztonságosabbá teheti az e-
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "Az iOS használatára vonatkozó adatok Microsoft általi gyűjtésének
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 835cab1f6d72d7a8621791f537c7807e2ed35045
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
 
 # A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 
-Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műveletekkel gyűjti a Vállalati portál alkalmazás megbízhatóságát, teljesítményét és használatának módját jelző névtelen adatokat. 
+Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műveletekkel gyűjti a Vállalati portál alkalmazás megbízhatóságát, teljesítményét és használatának módját jelző névtelen adatokat.
 
-Ezen adatok gyűjtése kikapcsolható iOS-eszközökön a Vállalati portál alkalmazás **Használati adatok** beállításával. A rendszergazdák nem tudják befolyásolni ezen adatok gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
+Az adatgyűjtést iOS-eszközökön a **Beállítások** menüben a **Vállalati portál** elemre, majd a **Használati adatok** lehetőségre koppintva kapcsolhatja ki.
+
+A rendszergazdák nem tudják befolyásolni ezen adatok gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
@@ -33,6 +35,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "IOS-eszközök regisztrálása a Beállítási asszisztenssel | Microsof
 description: "Vállalat által birtokolt iOS-eszközök regisztrálása az Apple Configurator eszköz segítségével a gyári alaphelyzetbe történő visszaállításhoz és az eszköz felkészítéséhez a Beállítási asszisztens futtatására."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -38,8 +38,7 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 
 2.  **Profil létrehozása az eszközökhöz** Az eszközökre alkalmazott beállításokat egy eszközregisztrációs profil határozza meg. Ha még nem tette meg, az Apple Configurator eszközzel regisztrált iOS-eszközökhöz hozzon létre egy eszközregisztrációs profilt.
 
-    1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) ugorjon a **Házirend** &gt; **Céges eszközök** elemre, és válassza a **Hozzáadás...** elemet.
-
+    1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) ugorjon a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** elemre, majd válassza a **Hozzáadás...** lehetőséget.
     ![Eszközbeléptetési profil létrehozása](../media/pol-sa-corp-enroll.png)
 
     2.  Adja meg az eszközprofilok részleteit:
@@ -50,14 +49,9 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 
         -   **Regisztráció részletei** – Meghatározza az eszközök regisztrációjának módját.
 
-            -   **Rákérdezés a felhasználói affinitásra** – Az eszköz összekapcsolható egy felhasználóval a kezdeti beállítás során, majd az eszköznek engedélyezhető, hogy a felhasználó nevében hozzáférjen a vállalati adatokhoz és e-mailekhez. A Beállítási asszisztens legtöbb forgatókönyvéhez használja a **Rákérdezés a felhasználói affinitásra** lehetőséget.
-            Ez a mód több forgatókönyvet is támogat:
+            -   **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez. **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak. Az ilyen eszközöknek a Vállalati portált kell használniuk (például alkalmazások telepítéséhez).
 
-                -   **A vállalat által birtokolt személyes eszköz** – A „Saját eszköz kiválasztása” (CYOD) hasonló a privát vagy személyes eszközökhöz, de a rendszergazda rendelkezik néhány jogosultsággal, például engedélyezett számára az eszköz törlése, alaphelyzetbe állítása, felügyelete és regisztrációjának törlése. Az eszköz felhasználója is telepíthet alkalmazásokat, és rendelkezik a legtöbb olyan eszközhasználati jogosultsággal, amelyek nem ütköznek a kezelési házirendbe és a rendszer nem blokkolja őket.
-
-                -   **Eszközregisztráció-kezelő fiók** – Az eszközt egy speciális Intune rendszergazda fiók regisztrálja. A fiók kezelhető privát fiókként, de csak a regisztrációkezelő hitelesítő adataival rendelkező felhasználó telepíthet alkalmazásokat, vagy törölheti, állíthatja alaphelyzetbe, felügyelheti az eszközt, illetve csak ő törölheti a regisztrációját. A közös fiókon keresztül, számos felhasználó által közösen használt eszközök regisztrációjával kapcsolatos információkért lásd: [Vállalati tulajdonban lévő eszközök regisztrálása a Microsoft Intune-ban az Eszközregisztráció-kezelővel](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **Nincs megadva a felhasználói affinitás** – Az eszköz nem kapcsolódik felhasználóhoz. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások le vannak tiltva, vagy nem fognak működni.
+            -   **Nincs megadva a felhasználói affinitás** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Vállalati portál alkalmazást is beleértve, nem fognak működni.
 
         -   **Előzetes eszközcsoport-hozzárendelés** – Minden, ezzel a profillal telepített eszköz kezdetben ehhez a csoporthoz fog tartozni. A regisztrálás után új csoportba sorolhatja az eszközöket.
 
@@ -121,26 +115,24 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 
     3. Töltse ki a **Name** (Név) és az **Enrollment URL** (Regisztrációs URL-cím) mezőket az MDM-kiszolgálóra vonatkozóan a fenti 6. pontnál szereplő adatok alapján. Az Enrollment URL (Regisztrációs URL-cím) mezőnél adja meg az Intune-ból exportált regisztrációs profil URL-címét. Kattintson a **Tovább** gombra.  
 
-       Ha az Apple TV-re vonatkozó megbízhatóságiprofil-követelményekkel kapcsolatos figyelmeztetést kap, nyugodtan hagyja figyelmen kívül a **Trust Profile** (Megbízhatósági profil) beállítást a szürke X gombot választva. Ezenfelül a kapcsolattanúsítványokra (Anchor certificate) vonatkozó figyelmeztetést is figyelmen kívül hagyhatja. Válassza a **Next** (Tovább) gombokat a varázsló befejezéséig.
+       Ha nem ellenőrzött kiszolgálói URL-címmel kapcsolatban kap figyelmeztetést, nyugodtan figyelmen kívül hagyhatja azt. Válassza a **Next** (Tovább) gombokat a varázsló befejezéséig.
 
-    4.  A **Servers** (Kiszolgálók) panelen válassza az új kiszolgálóprofil mellett található „Edit” (Szerkesztés) elemet. Ellenőrizze, hogy az Enrollment URL (Regisztrációs URL-cím) értéke pontosan egyezik-e az Intune-ból exportált URL-címmel. Ha nem, írja be újra az eredeti URL-címet, majd az Intune-ból exportált regisztrációs profil mentéséhez kattintson a **Save** (Mentés) gombra.
-
-    5.  Az iOS-mobileszközöket csatlakoztassa az Apple számítógéphez egy USB-adapterrel.
+    4.  Az iOS-mobileszközöket csatlakoztassa az Apple számítógéphez egy USB-adapterrel.
 
         > [!WARNING]
         > Az eszközökön vissza kell állítani a gyári beállításokat a regisztrációs folyamat során. Ajánlott eljárásként állítsa vissza az eszközt, és kapcsolja be. Jó gyakorlat, ha a Beállítási asszisztens indításakor az eszközön az **üdvözlőképernyő** látható.
 
-    6.  Válassza a **Prepare** (Előkészítés) lehetőséget. A **Prepare iOS Device** (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
+    5.  Válassza a **Prepare** (Előkészítés) lehetőséget. A **Prepare iOS Device** (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
 
-    7. Az **Enroll in MDM Server** (Regisztrálás MDM-kiszolgálón) panelen válassza ki a létrehozott kiszolgáló nevét, majd válassza a **Next** (Tovább) gombot.
+    6. Az **Enroll in MDM Server** (Regisztrálás MDM-kiszolgálón) panelen válassza ki a létrehozott kiszolgáló nevét, majd válassza a **Next** (Tovább) gombot.
 
-    8. A **Supervise Devices** (Eszközök felügyelete) panelen válassza ki a felügyelet szintjét, majd válassza a **Next** (Tovább) gombot.
+    7. A **Supervise Devices** (Eszközök felügyelete) panelen válassza ki a felügyelet szintjét, majd válassza a **Next** (Tovább) gombot.
 
-    9. A **Create an Organization** (Szervezet létrehozása) panelen válassza ki a **szervezetet** vagy hozzon létre új szervezetet, majd válassza a **Next** (Tovább) gombot.
+    8. A **Create an Organization** (Szervezet létrehozása) panelen válassza ki a **szervezetet** vagy hozzon létre új szervezetet, majd válassza a **Next** (Tovább) gombot.
 
-    10. A **Configure iOS Setup Assistant** (iOS-alapú Beállítási asszisztens konfigurálása) panelen válassza ki a felhasználó számára megjelenő lépéseket, majd válassza a **Prepare** (Előkészítés) gombot. Ha a rendszer kéri, végezzen hitelesítést a megbízhatósági beállítások frissítése érdekében.  
+    9. A **Configure iOS Setup Assistant** (iOS-alapú Beállítási asszisztens konfigurálása) panelen válassza ki a felhasználó számára megjelenő lépéseket, majd válassza a **Prepare** (Előkészítés) gombot. Ha a rendszer kéri, végezzen hitelesítést a megbízhatósági beállítások frissítése érdekében.  
 
-    11. Az iOS-eszköz előkészítésének befejezésekor leválaszthatja az USB-kábelt.  
+    10. Az iOS-eszköz előkészítésének befejezésekor leválaszthatja az USB-kábelt.  
 
 8.  **Eszközök terjesztése** Az eszközök most már készen állnak a vállalati regisztrációra. Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Az eszköz bekapcsolásakor elindul a Beállítási asszisztens.
 
@@ -151,6 +143,6 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

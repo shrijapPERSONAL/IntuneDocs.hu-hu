@@ -12,8 +12,11 @@
 ### [A próbaverzió elindítása és iOS PIN-szabályzat bevezetése](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [E-mail hozzáférés beállítása iOS-eszközök számára](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Gyakori helyzetek](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [Rövid útmutatók](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Céges adatszivárgások megelőzése az Office 365 alkalmazásokban](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Mobilalkalmazások közzététele a felhasználók számára](publish-mobile-apps-to-users.md)
+### [Windows rendszerű számítógépek védelme a kártevők ellen](protect-pcs-against-malware-threats.md)
+### [A mobileszközök e-mail-konfigurációjának leegyszerűsítése](simplify-email-configuration-on-mobile-devices.md)
 
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -22,6 +25,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

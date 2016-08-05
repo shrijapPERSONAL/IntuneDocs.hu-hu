@@ -3,7 +3,7 @@ title: "Alkalmazások telepítése | Microsoft Intune"
 description: "Ez a témakör megmagyaráz néhány olyan fogalmat, amelynek a megértésére feltétlenül szüksége lesz ahhoz, hogy alkalmazásokat telepítsen az Intune-ban."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,28 +13,28 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
+ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
+ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
 
 
 ---
 
 # Alkalmazások telepítése a Microsoft Intune-ban
 
-Ez a témakör megmagyarázza azokat a fogalmakat, amelyeknek a megértésére feltétlenül szüksége lesz ahhoz, hogy alkalmazásokat telepítsen a Microsoft Intune-ban.
+Ez a témakör ismerteti azokat a fogalmakat, amelyeknek a megértésére feltétlenül szükség van ahhoz, hogy alkalmazásokat telepítsen a Microsoft Intune-ban.
 
 
 ## Alkalmazástelepítési műveletek
 Az alkalmazások telepítésekor a következő telepítési műveletek közül választhat:
 
--   **Szükséges telepítés** – az alkalmazás végfelhasználói beavatkozás nélkül települ az eszközön.
+-   **Szükséges telepítés** – az alkalmazás felhasználói beavatkozás nélkül települ az eszközön.
 
     > [!TIP]
     > Nem felügyelt üzemmódban működő IOS-eszközök és az összes Android-eszköz esetén az alkalmazás csak akkor települ, ha a felhasználó elfogadja az alkalmazásajánlatot.
-    > 
-    >  Ha egy végfelhasználó törl egy Ön által kötelezőnek jelölt alkalmazást, az Intune a következő leltározási ciklus során (amely általában 7 naponta következik be) automatikusan újratelepíti az alkalmazást.
+    >
+    >  Ha a felhasználó töröl egy kötelezően telepített alkalmazást, az Intune a következő leltározási ciklusban – amely általában 7 naponta következik be – automatikusan újratelepíti az alkalmazást.
 
--   **Elérhető telepítés** – az alkalmazás megjelenik a vállalati portálon, és a végfelhasználók igény szerint telepíthetik.
+-   **Elérhető telepítés** – az alkalmazás megjelenik a vállalati portálon, és a felhasználók igény szerint telepíthetik azt.
 
 -   **Eltávolítás** – a rendszer eltávolítja az alkalmazást az eszközről.
 
@@ -60,11 +60,11 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 ## A telepítés során fellépő ütközések
 Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik egy eszközre, az alábbi szabályok vonatkoznak:
 
--   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoport számára, és ugyanazt az alkalmazást egy eszközcsoport számára is telepíti a **Nem alkalmazható**telepítési művelettel, a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik.
+-   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoportnak, és ugyanazt az alkalmazást egy eszközcsoportnak is telepíti a **Nem alkalmazható** telepítési művelettel, a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik azt.
 
 -   A telepítési műveletek elsőbbséget élveznek az eltávolítási műveletekkel szemben.
 
--   Ha egy eszköz számára egy kötelező és egy elérhető telepítés is rendelkezésre áll, a műveletek közösen hajthatók végre (az alkalmazás egyszerre kötelező és elérhető – a végfelhasználó tehát a vállalati portálról is telepítheti a kötelező telepítés megkezdése előtt).
+-   Ha egy eszköz egyszerre kap szükséges és elérhető telepítést, a rendszer kombinálja a műveleteket. Más szóval a kötelező telepítés megkezdése előtt a felhasználó telepítheti az elérhető alkalmazást a vállalati portálról.
 
 
 ## További lépések
@@ -73,6 +73,6 @@ Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

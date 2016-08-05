@@ -3,7 +3,7 @@ title: "Konzolnézetek testre szabása rendszergazdai szerepkörökhöz | Micros
 description: "Az ebben a témakörben található információk segítenek úgy megszűrni az Intune rendszergazdai konzolnézeteit, hogy a rendszergazdák csak azokat az elemeket lássák, amelyekre a szerepkörük szerint szükségük van."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # Az Intune-konzolnézetek testre szabása a rendszergazdai szerepköröknek megfelelően
-A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége van arra, hogy a rendszergazdáknak csak azokat az elemeket jelenítse meg, amelyeket az adott szerepkör esetén látniuk kell. Engedélyezheti például, hogy kizárólag a felügyeleti konzol operátorai frissíthessék a kártevő szoftverek meghatározásait vagy állíthassák alaphelyzetbe az eszközök jelszavait. Ezt úgy hajthatja végre, ha előre definiált **megjelöléseket** használ, amelyeket az adott felhasználókhoz rendel. A felügyeleti konzol használatakor e felhasználók kizárólag a megjelölésüknek megfelelő elemeket fogják ott látni.
+A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége van arra, hogy a rendszergazdáknak csak azokat az elemeket jelenítse meg, amelyeket az adott szerepkör esetén látniuk kell. Engedélyezheti például, hogy kizárólag a felügyeleti konzol operátorai frissíthessék a kártevő szoftverek meghatározásait vagy állíthassák alaphelyzetbe az eszközök jelszavait. Ezt úgy hajthatja végre, ha előre definiált **megjelöléseket** használ, amelyeket az adott felhasználókhoz rendel. A felügyeleti konzol használatakor e felhasználók kizárólag a megjelölésüknek megfelelő elemeket fogják látni.
 
 ## Egyéni nézet létrehozása
 
@@ -60,14 +60,14 @@ A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége v
 
         -   A leltár frissítése
 
-        -   Egy eszköz távoli zárolása
+        -   Eszköz távoli zárolása
 
-        -   PIN-kód alaphelyzetbe állítása
+        -   Új PIN-kód kérése
 
 Amikor az így beállított rendszergazda legközelebb megnyitja az Intune felügyeleti konzolt, az Ön által megadott hozzáférési szintet kapja meg.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

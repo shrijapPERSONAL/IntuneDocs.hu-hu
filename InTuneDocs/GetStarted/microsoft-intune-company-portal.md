@@ -3,7 +3,7 @@ title: "A Microsoft Intune Vállalati portál | Microsoft Intune"
 description: "Intune Vállalati portál beállítása"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
 
 
 ---
@@ -28,7 +28,7 @@ Az Intune Vállalati portál olyan eszköz, amely a felhasználók számára hoz
 -   **A Vállalati portál alkalmazás**: Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által felügyelt eszközökön elérhető alkalmazás. További információk a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszerekhez.
 
 
-- **A Vállalati portál webhelye**: Olyan webhely, amely egy [támogatott böngésző](supported-web-browsers.md) használatával érhető el. Az URL-cím a következő: [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók.
+- **Vállalati portál webhely**: Egy [támogatott böngészőből](supported-web-browsers.md) elérhető webhely, ahol a végfelhasználók a platform-specifikus Vállalati portál alkalmazáséval egyező műveleteket végezhetnek el. URL-cím: [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók.
 
 Néhány művelet, amelyeket a felhasználók elvégezhetnek a Vállalati portálon:
 
@@ -53,6 +53,6 @@ Ahhoz, hogy a felhasználók hozzáférhessenek a Vállalati portálhoz, a felha
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

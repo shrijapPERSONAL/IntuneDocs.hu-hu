@@ -3,8 +3,8 @@ title: "iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal | Microso
 description: "Hivatkozáslista az Intune-ban regisztrált iOS- és Mac OS X-eszközökön elvégezhető feladatokhoz"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Ezeket a lépéseket az iOS- vagy Mac OS X-alapú eszközökön végrehajtandó feladatokhoz használhatja, ha a vállalata a Microsoft Intune-t használja.
+Ezen a lapon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által kezelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk: beléptetéssel kapcsolatos információk, felügyeleti feladatok és megfelelőségi problémák.
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
@@ -61,8 +61,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

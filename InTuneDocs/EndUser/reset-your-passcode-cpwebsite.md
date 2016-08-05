@@ -3,8 +3,8 @@ title: "Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyéről 
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, az eszköz alaphelyzetbe állításához a [Vállalati portál webhelyét](http://portal.manage.microsoft.com) használhatja. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
-> [!NOTE] 
+> [!NOTE]
 > Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
 
 A jelszó alaphelyzetbe állítása:
@@ -34,7 +34,7 @@ A jelszó alaphelyzetbe állítása:
 
 2.  Koppintson a **Jelszó alaphelyzetbe állítása** gombra.
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Koppintson a **Bejelentkezés** elemre, és jelentkezzen be újra a munkahelyi vagy iskolai hitelesítő adataival. Az újbóli bejelentkezésnek öt percen belül meg kell történnie.
 
@@ -64,6 +64,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "Elveszett vagy ellopott iOS-eszköz alaphelyzetbe állítása (tartalmá
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f6e7e40973428762995feceac109a8367813dadd
 
 
 ---
@@ -30,7 +30,7 @@ Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a 
 
 ## Az eszköz visszaállítása a Vállalati portál alkalmazással
 
-1.  A böngészőben nyissa meg a vállalati portált, és jelentkezzen be munkahelyi fiókjába.
+1.  Egy másik regisztrált eszközről nyissa meg a Vállalati portál alkalmazást, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával.
 
 2.  Az **Eszközök** területen válassza ki az elveszett vagy ellopott eszközt.
 
@@ -40,7 +40,7 @@ Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a 
 
 Kövesse az alábbi lépéseket, vagy tekintse meg a következő videót:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) válassza ki azt az eszközt, amelyet alaphelyzetbe szeretne állítani.
 
@@ -52,6 +52,7 @@ Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

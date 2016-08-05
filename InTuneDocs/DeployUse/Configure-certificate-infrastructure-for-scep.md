@@ -3,8 +3,8 @@ title: "SCEP-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune"
 description: "A SCEP-tanúsítványprofilok létrehozásához és telepítéséhez használt infrastruktúra."
 keywords: 
 author: nbigman
-manager: Arob98
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: e7d6bc1e06217237a79c547c9b449c1fc16aeed4
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # SCEP-tanúsítványinfrastruktúra konfigurálása
@@ -44,6 +44,8 @@ I
 Az internet és a szegélyhálózat között engedélyezze a 443-as port használatát az összes internetes állomásról/IP-címről az NDES-kiszolgálóra irányuló forgalom számára.
 
 A peremhálózat és a megbízható hálózat között engedélyezze a tartomány eléréséhez szükséges összes portot és protokollt a tartományhoz csatlakozó NDES-kiszolgálón. Az NDES-kiszolgálónak el kell tudnia érnie a tanúsítványkiszolgálót, a DNS-kiszolgálókat, a Configuration Manager-kiszolgálókat és a tartományvezérlőket.
+
+Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásproxyn](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), a [webalkalmazás-proxyn](https://technet.microsoft.com/en-us/library/dn584107.aspx) vagy egy külső proxyn érdemes közzétenni.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Tanúsítványok és sablonok
@@ -347,6 +349,6 @@ Ezzel készen áll a tanúsítványprofilok konfigurálására, amelyről a köv
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal | Microsoft Intune"
-description: 
+title: "Az IMEI-számok megadása | Microsoft Intune"
+description: "A Microsoft Intune-nal a rendszergazdák IMEI-számokat importálhatnak a mobileszközplatformokra, így könnyebben azonosíthatják a vállalati tulajdonban lévő mobileszközöket"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 590b8bc5a307e238ba41d32f98f6878daebf1185
-ms.openlocfilehash: 7df281a3e35ac563f7b82e4b13407b413f8a7e4a
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal
-A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilkészülék-azonosító (IMEI-) számokat importáljanak IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsák a vállalati tulajdonban lévő mobileszközöket. Ha regisztrálta őket az Intune-ban, az importált IMEI-számmal rendelkező eszközök a **Csoportok** > **Áttekintés** > **Minden eszköz** > **Előre regisztrált vállalati eszközök** > **IMEI-szám szerint (minden platform)** menüpontban tekinthetők meg.
+A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilkészülék-azonosító (IMEI-) számokat importáljanak IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsák a vállalati tulajdonban lévő mobileszközöket. Ha regisztrálta őket az Intune-ban, az importált IMEI-számmal rendelkező eszközök a **Csoportok** > **Áttekintés** > **Minden eszköz** menüpontban tekinthetők meg. Az **Eszközcsoport** listái az importált IMEI-számmal rendelkező eszközöket **Vállalati** értékkel látják el a **Tulajdonos** oszlopban.
 
 1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **IMEI-szám szerint (minden platform)** területre, majd válassza az **Eszközök felvétele** lehetőséget. Két módon adhat hozzá eszközöket:
 
@@ -49,6 +49,6 @@ Amikor az adott IMEI-számmal rendelkező eszközt regisztrálják – általáb
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

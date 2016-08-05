@@ -3,8 +3,8 @@ title: "Eszköz eltávolítása a Vállalati portálról | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 43ed6e3dc88ddf0668dafe1f728b6e7c5225ca2c
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
 
 Ha úgy dönt, hogy eszköze Intune-beli és a rendszergazda által végzett felügyeletére nincs már szükség a továbbiakban, akkor az eszközt a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) használatával el is távolíthatja a Vállalati portálról. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
-Ha az eszközét eltávolítja, az nem jelenik meg többé a Vállalati portálon, és elveszítheti a vállalati vagy iskolai adatokhoz, alkalmazásokhoz és e-mailekhez való hozzáférését is. 
+Ha az eszközét eltávolítja, az nem jelenik meg többé a Vállalati portálon, és elveszítheti a vállalati vagy iskolai adatokhoz, alkalmazásokhoz és e-mailekhez való hozzáférését is.
 
 Az eszköz eltávolítása:
 
@@ -33,7 +33,9 @@ Az eszköz eltávolítása:
 
 2.  Koppintson az **Eltávolítás** lehetőségre.
 
-    ![remove-device](./media/iwp-1-tap-reset-passcode.png)
+    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3. Olvassa el az eszköz eltávolításáról szóló figyelmeztető üzenetet, és koppintson az **Eltávolítás** lehetőségre az eszköz a Vállalati portálról való eltávolításához.
 
 Az eszköz eltávolítása megtörtént.
 
@@ -43,6 +45,7 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 [Az Intune vállalati portál webhelyének használata](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

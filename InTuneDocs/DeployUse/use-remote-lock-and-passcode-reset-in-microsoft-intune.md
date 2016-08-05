@@ -1,18 +1,19 @@
 ---
 title: "Távoli zárolás és jelszó alaphelyzetbe állítása | Microsoft Intune"
-description: 
+description: "Az Intune egyaránt nyújt távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló funkciókat."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
 
 ---
 # Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
@@ -25,7 +26,7 @@ Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja azt. Az al
 |------------|---------------|
 |iOS|Támogatott|
 |Android|Támogatott|
-|Windows 10 mobil verzió|Támogatott|
+|Windows 10 és Windows 10 Mobile|Támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1 és Windows RT|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 |Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
@@ -72,6 +73,6 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurál
 description: "Ez a témakör ismerteti a mobilalkalmazás-felügyeleti szabályzatok létrehozásához szükséges előfeltételeket és beállításokat."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez kere
 
     ![Aktív felhasználók oldal az Office portálon](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Felhasználói oldal szerkesztése az Office portálon](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  A felhasználók számára a **Globális rendszergazdai szerepkör** hozzárendelésével biztosíthat hozzáférést az Office-, az Azure AD- és az Azure-portálhoz.
 
     ![A felhasználói szerepkörök szerkesztésére szolgáló oldal az Office portálon](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  A MAM-szabályzatok az Azure Active Directorybeli felhasználói csoportokra vonatkoznak. MAM-szabályzatokat használó felhasználói csoportok létrehozásához lépjen a **Csoportok** oldalra az Office-portálon, majd kattintson a **+** ikonra új biztonsági csoport létrehozásához.  Írjon be egy nevet és leírást, majd kattintson a **Létrehozás** parancsra. A csoport létrejöttekor a **Tagok szerkesztése** elemre kattintva hozzáadhat felhasználókat a csoporthoz. A biztonsági csoport az Azure Active Directoryban jön létre.
+5.  A MAM-szabályzatok az Azure Active Directorybeli felhasználói csoportokra vonatkoznak. MAM-szabályzatokat használó felhasználói csoportok létrehozásához lépjen a **Csoportok** oldalra az Office portálon, majd a felső menüben válassza a **Csoport hozzáadása** lehetőséget új biztonsági csoport létrehozásához.  Írjon be egy nevet és leírást, majd kattintson a **Létrehozás** parancsra. A csoport létrejöttekor a **Tagok szerkesztése** elemre kattintva hozzáadhat felhasználókat a csoporthoz. A biztonsági csoport az Azure Active Directoryban jön létre.
 
     ![A biztonsági csoportok oldala az Office portálon](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ A globális rendszergazdák hozzáférhetnek az [Azure-portálhoz](https://porta
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

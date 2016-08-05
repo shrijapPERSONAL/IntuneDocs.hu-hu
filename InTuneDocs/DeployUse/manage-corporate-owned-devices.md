@@ -3,7 +3,7 @@ title: "A vállalat által birtokolt eszközök felügyelete | Microsoft Intune"
 description: "A vállalat által birtokolt eszközök (COD) az adott eszköztől, a vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók."
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 
 ---
 
 # A vállalat által birtokolt eszközök regisztrálása a Microsoft Intune-ban
-A szervezet vagy vállalat által birtokolt eszközök (COD) az adott eszköztől, vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók.
+A szervezet vagy vállalat által birtokolt eszközök (COD) az adott eszköztől, vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók. A vállalati tulajdonban lévő eszközöket a Vállalati portál alkalmazás „Saját eszköz használata” (BYOD) forgatókönyvei szerint is regisztrálhatja és felügyelheti.
 
 ## Vállalat által birtokolt iOS-eszközök
 Ezek a regisztrációs módszerek a „Saját eszköz kiválasztása” (CYOD) típusú esetekben megfelelőek, vagyis amikor a szervezet megvásárolja az eszközöket a felhasználóknak, de szeretné megőrizni az eszközök feletti felügyeletet. Ha a szervezete iOS-eszközöket vásárolt, a regisztrációt előre beállíthatja, így amikor a felhasználó első alkalommal bekapcsolja a készüléket, az eszköz felügyelete is megkezdődik. Az Intune támogatja az [Apple készülékregisztrációs programján (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) keresztüli, illetve a Mac számítógépen futó Apple Configurator eszköz segítségével történő [közvetlen](ios-direct-enrollment-in-microsoft-intune.md) vagy [Beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md) végzett regisztrációt.
@@ -53,6 +53,6 @@ Az egyedi nemzetközi mobileszköz-azonosító, az úgynevezett az IMEI-szám, e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
