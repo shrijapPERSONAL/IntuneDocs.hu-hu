@@ -5,7 +5,7 @@ description: "Szabályzatok létrehozása, amelyek vezérlik a beállításokat 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem ko
     |**OMA-URI (megkülönbözteti a kis- és nagybetűket)**|Adja meg az OMA-URI azonosítót, amelyhez beállítást kíván megadni.|
     |**Érték**|Adja meg a korábban megadott OMA-URI-azonosítóhoz társítandó értéket.|
 
-### Példa: Egyéni Wi-Fi profil konfigurálása előmegosztott kulccsal
-Bár az Intune támogatja az Android-eszközök Wi-Fi-profiljait, ez a szolgáltatás jelenleg nem támogatja az előmegosztott kulcs használatát a konfigurációban. Ebből a példából megtudhatja, hogyan hozhat létre előmegosztott kulcsot használó Wi-Fi profilt létrehozó egyéni Android-házirendet az Android-eszközön.
+### Példák
 
-#### Wi-Fi profil létrehozása előmegosztott kulccsal
-
-1.  Győződjön meg arról, hogy a felhasználók az Android rendszerhez készült [Intune Vállalati portál alkalmazás](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) legújabb verzióját használják.
-
-2.  Hozzon létre egy egyéni Android-házirendet, és vegye fel a következő beállításokat:
-
-|Beállítás neve|Részletek|
-|----------------|--------------------|
-|**Beállítás neve**|Adja meg a beállítás kívánt nevét.|
-|**Beállítás leírása**|Adja meg a jelentés leírását.|
-|**Adattípus**|Válassza a **Karakterlánc (XML)** lehetőséget.|
-|**OMA-URI**|Írja be a következőket: ./Vendor/MSFT/WiFi/Profile/*&lt;az Ön Wi-Fi profilja&gt;*/Settings|
-
-3.  Az **Érték** mezőbe másolja és illessze be a következő XML-kódot:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Amikor végzett, mentse a házirendet, és telepítse azt a szükséges Android-eszközökre. Az új Wi-Fi profil megjelenik a kapcsolatok listájában az eszközön.
+- [Wi-Fi-profil létrehozása előmegosztott kulccsal](pre-shared-key-wi-fi-profile.md)
+- [Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához](per-app-vpn-for-android-pulse-secure.md)
 
 ### További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
