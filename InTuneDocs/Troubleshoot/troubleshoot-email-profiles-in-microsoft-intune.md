@@ -4,17 +4,17 @@ description: "Az e-mail-profilokkal kapcsolatos problémák, valamint az elhár�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 9b699229489be2f09ea4c7a80e1e80f6ec7b106e
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
 
 
 ---
@@ -47,11 +47,29 @@ Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett 
 
 4.  A **Szinkronizációs beállítások** lapon válassza a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** lehetőséget.
 
+
+## Az eszköz már rendelkezik telepített e-mail profillal
+
+Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune létesített volna egyet, akkor az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
+
+-**iOS**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy az e-mail profil telepítése előtt regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
+
+-**Windows**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
+
+-**Samsung KNOX**: Az Intune az e-mail cím alapján azonosítja a duplikált e-mail fiókot és felülírja az Intune-profillal. Ha a felhasználó azt a fiókot állítja be, az Intune-profil ismételten felülírja. Ez összezavarhatja azt a felhasználót, akinek a fiókbeállítása felülíródik.
+
+Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez telepítse őket a különböző gazdagépeken, mivel ezek felülírják egymást.
+
+## KNOX-eszköz 0x87D1FDE8-as hibája
+**Probléma:** Miután létrehozott és telepített egy Samsung KNOX Exchange Active Sync e-mail-profilt különféle androidos eszközökhöz, azok az eszköz tulajdonságok &gt; szabályzat lapján jelentik a **0x87D1FDE8**-as vagy a **sikertelen szervizelés** hibát.
+
+Ellenőrizze a Samsung KNOX EAS-profil és a forrásszabályzat konfigurációját. A Samsung Note eszközök szinkronizálási lehetősége a továbbiakban nem támogatott, és ez a lehetőség nem választható a profilban. Ellenőrizze, hogy az eszközök rendelkezésére állt-e elegendő idő (akár 24 óra) a szabályzat feldolgozásához.
+
 ## További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

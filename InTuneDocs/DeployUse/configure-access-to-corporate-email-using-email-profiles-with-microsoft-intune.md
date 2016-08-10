@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram
 
 
 Azon kívül, hogy beállít egy e-mail-fiókot, a szinkronizálási beállításokat is megadhatja az eszközön, mint például a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
+>[!NOTE]
+>
+>Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune létesített volna egyet, akkor az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
+
+>-**iOS**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy az e-mail profil telepítése előtt regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
+
+>-**Windows**: az Intune az állomásnév és az e-mail cím alapján észleli a meglévő, duplikált e-mail profilt. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
+
+>-**Samsung KNOX**: Az Intune az e-mail cím alapján azonosítja a duplikált e-mail fiókot és felülírja az Intune-profillal. Ha a felhasználó azt a fiókot állítja be, az Intune-profil ismételten felülírja. Ez összezavarhatja a felhasználót, akinek a fiókbeállítása felülíródik.
+
+>Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez telepítse őket a különböző gazdagépeken, mivel ezek felülírják egymást.
+    
 
 ## Az e-mail-profilok biztonságossá tétele
 Az e-mail-profilok az alábbi két módszer egyikével tehetők biztonságossá:
@@ -109,6 +121,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

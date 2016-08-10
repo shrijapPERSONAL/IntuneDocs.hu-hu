@@ -4,7 +4,7 @@ description: "Az Intune segít az Apple-től mennyiségi programban vásárolt a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 2.  Válassza ki a telepíteni kívánt alkalmazást, válassza a **Központi telepítés kezelése** elemet, majd az [Alkalmazások telepítése Microsoft Intune-beli mobileszközökre](deploy-apps-in-microsoft-intune.md) című témakörben található utasítások segítségével végezze el az alkalmazás feltöltését, létrehozását és központi telepítését.
 
+> [!TIP]
+> Válassza a **Szükséges** telepítési műveletet. A rendelkezésre álló telepítések jelenleg nem támogatottak.
+
 Amikor az alkalmazást **Szükséges** telepítésként telepíti, akkor az alkalmazást telepítő összes felhasználó felhasznál egy licencet.
 
 A licencek visszanyeréséhez módosítania kell a központi telepítési műveletet az **Eltávolítás** műveletre. A licenc az alkalmazás eltávolítása után felszabadul.
@@ -87,6 +90,6 @@ Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyisé
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

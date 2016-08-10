@@ -4,7 +4,7 @@ description: "Tudjon meg többet az Intune funkcióiról, amelyek akkor érhető
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 
 -   **Kártevők elleni védelem** – Az Intune Endpoint Protection védelmet használ, amely segít a számítógépek kártevők elleni védelmében.
 
--   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy kapcsolatba lépjenek az informatikai támogatási csapattal, akik ezt követően az Intune távoli asztal funkciójával segítséget nyújthatnak <!--- (requires TeamViewer software)--->.
+-   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune-hoz tartozó távoli asztal szolgáltatás segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
 -   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
@@ -48,7 +48,7 @@ Az Intune a Windows következő verzióival rendelkező számítógépek felügy
 
 -   **Windows 8.1** – Pro és Enterprise verziók.
 
-- **Windows 10** – Home, Pro, Education és Enterprise verziók.
+- **Windows 10** - Pro, Education és Enterprise verziók.
 
 
 ## Minimális hardverkövetelmények
@@ -74,6 +74,6 @@ A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelmén
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

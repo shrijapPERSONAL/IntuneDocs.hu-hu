@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
+ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
+ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
 
 
 ---
 
 # Intune licencek kezelése
-Mielőtt a felhasználók bejelentkezhetnek az Intune szolgáltatásba, vagy regisztrálhatnák az eszközeiket a felügyeletbe, Önnek egy, az Intune-előfizetéséhez tartozó licencet kell hozzárendelnie minden felhasználóhoz az [Office 365 portállal](http://go.microsoft.com/fwlink/p/?LinkId=698854). A licenc hozzárendelése után a felhasználó neve megjelenik az Intune felügyeleti konzolján. A felhasználók ezt követően maximum öt eszközt regisztrálhatnak.
+Mielőtt a felhasználók bejelentkezhetnek az Intune szolgáltatásba, vagy regisztrálhatnák az eszközeiket a felügyeletbe, Önnek egy, az Intune-előfizetéséhez tartozó licencet kell hozzárendelnie minden felhasználóhoz az [Office 365 portállal](http://go.microsoft.com/fwlink/p/?LinkId=698854). A licenc hozzárendelése után a felhasználó neve megjelenik az Intune felügyeleti konzolján. A felhasználók ezt követően maximum 15 eszközt regisztrálhatnak.
 
 Előfordulhat, hogy a Microsoft Nagyvállalati mobilitási csomag (EMS) megoldást használó szervezeteknek vannak felhasználói, akik csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatást igénylik. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető. További információ: [Intune-licencek kezelése a PowerShell használatával](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
@@ -90,6 +90,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

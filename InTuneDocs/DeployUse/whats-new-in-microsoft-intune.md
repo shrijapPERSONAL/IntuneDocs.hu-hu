@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ef0210d7ca2d44608c5baa8f48ef56a2b9b5ce3a
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -24,6 +24,15 @@ Ismerkedjen meg a Microsoft Intune új verziójának újdonságaival. Emellett t
 
 Idővel mindezek a funkciók hibrid ügyféltelepítések esetén is támogatottak lesznek (Intune-nal integrált Configuration Manager). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok oldalát](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## 2016. augusztus
+## A Vállalati portál újdonságai
+
+### Android
+- **Androidos Munkahelyi portál alkalmazás**<br/>
+Az Intune Vállalati portál alkalmazás Android-verziója azonnali támogatást nyújt az Android 7.0 operációs rendszerhez mobileszközökön.  
+
+- **A jelszó távoli alaphelyzetbe állításának Google általi megszüntetése Android 7.0 rendszerű eszközökön**<br/>
+Android 7.0 eszközökön az Intune rendszergazdák és a végfelhasználók nem fogják tudni távolról az eszköz PIN-kódját alaphelyzetbe állítani, mert a Google eltávolította ezt a funkciót az Android 7.0 rendszerű eszközökön. Android 7.0-nál korábbi verziókban a rendszergazdák továbbra is képesek lesznek a felhasználói PIN-kódot távolról alaphelyzetbe állítani, a végfelhasználók pedig továbbra is képesek lesznek a PIN-kódjukat alaphelyzetbe állítani a Vállalati portál webhelyén.
 
 ## 2016. július
 ## Alkalmazáskezelés
@@ -41,7 +50,9 @@ Az Intune App SDK Xamarin összetevőjével engedélyezheti az Intune mobilalkal
 Az Intune a konfigurálható eszközök regisztrációs korlátját felhasználónként 5 eszközről 15-re növelte.
 <!---TFS 1289896 --->
 
-
+### Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek TeamViewer-integrációja
+Az Intune ügyfélszoftvert futtató Windows-számítógépeken érvénybe léptethető [TeamViewer](https://www.teamviewer.com)-integráció segítségével távsegítség-munkameneteket indíthat más Windows-számítógépekkel, ami jelentős előnyt jelent a végfelhasználói ügyfélszolgálat számára. Ez a lehetőség a Windows 7, 8, 8.1 és Windows 10 rendszerekre egyaránt kiterjed. Részletekért lásd: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## A Vállalati portál újdonságai
 ### Munkahelyi portál webhely
@@ -93,7 +104,7 @@ A csoportfelügyelettel kapcsolatos változtatások mellett a következő funkci
 A megszűnő funkciók kiváltásával kapcsolatos bővebb információkat augusztusban hozzuk nyilvánosságra.
 
 ### „Értesítések” bevezetése a Vállalati portál Android-verziójában
-Augusztusban egy frissítést adunk ki a Vállalati portál Android-verziójához, amely bevezet egy új **Értesítések** ikont a kezdőlapon. Az ikonra koppintva megnyílik az **Értesítések** oldal, amely megjeleníti a végfelhasználó számára az összes, figyelmet igénylő elemet, például az eszközök megfelelőségi problémáit, a regisztrációs frissítéseket és a regisztrációk aktiválását. Ha az iOS rendszerű Vállalati portál alkalmazást is használja, akkor már ismerheti az Értesítések nyújtotta felhasználói élményt. Az **Értesítések** lap bevezetésével nem fog a Vállalati portál Android-verziójának minden egyes elindításakor vagy folytatásakor megjelenni a **Vállalati hozzáférés beállítása** képernyő, ha az eszköz már regisztrálva van. Tisztában vagyunk azzal, hogy sokan hoztak létre végfelhasználói útmutatókat, és nagy hasznát veszik az előzetes értesítéseknek, amikor az útmutatók vagy a képernyőképek frissítésére lehet szükség. Kérjük, frissítsék a dokumentációkat, hogy azok tükrözzék a felhasználói élménnyel kapcsolatos közelgő változásokat. A frissített képernyőképek itt találhatók: https://aka.ms/androidcpupdate.  
+Szeptemberben egy frissítést adunk ki a Vállalati portál Android-verziójához, amely bevezet egy új **Értesítések** ikont a kezdőlapon. Az ikonra koppintva megnyílik az **Értesítések** oldal, amely megjeleníti a végfelhasználó számára az összes, figyelmet igénylő elemet, például az eszközök megfelelőségi problémáit, a regisztrációs frissítéseket és a regisztrációk aktiválását. Ha az iOS rendszerű Vállalati portál alkalmazást is használja, akkor már ismerheti az Értesítések nyújtotta felhasználói élményt. Az **Értesítések** lap bevezetésével nem fog a Vállalati portál Android-verziójának minden egyes elindításakor vagy folytatásakor megjelenni a **Vállalati hozzáférés beállítása** képernyő, ha az eszköz már regisztrálva van. Tisztában vagyunk azzal, hogy sokan hoztak létre végfelhasználói útmutatókat, és nagy hasznát veszik az előzetes értesítéseknek, amikor az útmutatók vagy a képernyőképek frissítésére lehet szükség. Kérjük, frissítsék a dokumentációkat, hogy azok tükrözzék a felhasználói élménnyel kapcsolatos közelgő változásokat. A frissített képernyőképek itt találhatók: https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Az Intune-ban az elmúlt hat hónapban bevezetett újdonságok listája [Az Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

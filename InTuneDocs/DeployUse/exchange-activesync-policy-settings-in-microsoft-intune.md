@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 0779fca11a692ce6843ef2ebf1c6a459273fc7cc
+ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
+ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
 
 
 ---
@@ -27,12 +27,12 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 |Beállítás neve|Részletek
 |----------------|
-|**Jelszó szükséges a mobileszközök feloldásához**|Meghatározza, hogy az eszközöket jelszóval kell-e zárolni.<br>(A Windows RT rendszerű eszközökre nem vonatkozik.)|
-|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazzon.|
-|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|
-|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszó például a „0000” és az „1234”.|
-|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|A helyes jelszó megadására tett engedélyezett próbálkozások száma az eszköz törlése előtt.|
-|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.
+|**Jelszó szükséges a mobileszközök feloldásához**|Meghatározza, hogy az eszközöket jelszóval kell-e zárolni.<br>(a Windows RT rendszerű eszközökre nem vonatkozik).|
+|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
+|**Jelszó minimális hossza**|Az eszközhöz használt jelszóban használandó karakterek minimális számát határozza meg.|
+|**Egyszerű jelszavak engedélyezése**|Meghatározza, hogy használható-e egyszerű jelszó, például „0000” vagy „1234”.|
+|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Azt a számot adja meg, ahányszor a felhasználó helytelen jelszót adhat meg, mielőtt a rendszer törölné az eszközt.|
+|**Jelszó lejárta (napokban)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.
 |**Jelszóelőzmények megjegyzése**|Megadja, hogy használhatók-e a korábban már használt jelszavak.|
 |**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Meghatározza, hogy hány jelszóra visszamenőleg nem használható egy már korábban használt jelszó.|
 |**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
@@ -41,37 +41,37 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 |Beállítás neve|Részletek|
 |----------------|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|
+|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br><br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|
 |**Titkosítás megkövetelése tárolókártyákon**|A külső tárhelyen, például egy SD-kártyán tárolt adatok titkosítása szükséges (a támogatott eszközökön).
-<sup>1</sup> További információk a Windows 8.1 rendszerű eszközökhöz
+<sup>1</sup> További információ a Windows 8.1 rendszerű eszközökhöz
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](http://support.microsoft.com/kb/3013816) .
 
 -   Ha engedélyezi ezt a beállítást a Windows 8.1 rendszerű eszközökön, az eszköz valamennyi felhasználójának rendelkeznie kell Microsoft-fiókkal.
 
--   A titkosítás működéséhez az eszköznek teljesítenie kell a Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardvertanúsítvány követelményeit.
+-   Windows 8.1 rendszerű eszközökön a titkosítás működéséhez az eszköznek teljesítenie kell a Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardvertanúsítvány követelményeit.
 
--   Amikor kényszeríti az eszközön a titkosítást, a Microsoft-fiókkal rendelkező felhasználók részéről a helyreállítási kulcs csak a OneDrive-fiókjukból érhető el. Ez a kulcs nem állítható vissza egy felhasználó nevében.
+-   Amikor Windows 8.1 rendszerű eszközön kényszeríti a titkosítást, a helyreállítási kulcs csak a felhasználók Microsoft-fiókjaiból érhető el, amelyet a felhasználó OneDrive-fiókjaiból lehet elérni. Ez a kulcs nem állítható vissza egy felhasználó nevében.
 
 ## E-mail beállítások
 
 |Beállítás neve|Részletek
 |----------------|
 |**Az e-mail mellékletek letöltésének engedélyezése a felhasználók számára**|Megadja, hogy le lehet-e tölteni az e-mail mellékleteket az eszközre.|
-|**E-mail szinkronizálási időszak**|Válassza ki, hogy hány napnyi beérkezett e-mail szinkronizálódjon az eszközzel.
+|**E-mail szinkronizálási időszak**|Meghatározza, hogy hány napnyi beérkezett e-mail szinkronizálódjon az eszközzel.
 |**Engedélyezze az Exchange ActiveSync-beállításokat nem teljes mértékben támogató eszközök szinkronizálását az Exchange kiszolgálóval**|A beállítással megadható, hogy engedélyezi-e az Exchange kiszolgálóhoz a hozzáférést az Exchange ActiveSync-beállításokat csak részben vagy egyáltalán nem támogató eszközök számára.
 
 ## Webböngésző beállításai
 
 |Beállítás neve|Részletek
 |----------------|-
-|**Webböngésző használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a webböngésző.<br>(Windows RT vagy Windows Phone esetén nem érhető el.)
+|**Webböngésző használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a webböngésző.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
 ## Hardverbeállítások
 
 |Beállítás neve|Részletek
 |----------------|
-|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.<br>(Windows RT vagy Windows Phone esetén nem érhető el.)
+|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
 
 
@@ -80,7 +80,6 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

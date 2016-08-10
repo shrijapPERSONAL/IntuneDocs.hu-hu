@@ -15,7 +15,8 @@
 ## [Szoftverfrissítésekkel kapcsolatos hibák elhárítása](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Az e-mail-profilok hibaelhárítása](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [A feltételes hozzáférés hibaelhárítása](troubleshoot-conditional-access.md)
+## [Az Exchange-összekötő hibaelhárítása](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

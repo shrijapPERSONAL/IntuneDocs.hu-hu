@@ -1,6 +1,6 @@
 ---
 title: "A Mac OS X-házirendek beállításai | Microsoft Intune"
-description: "Az Intune Mac OS X-eszközökön a beépített általános beállítások széles választékát kínálja, amelyeket egyenként beállíthat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban."
+description: "Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
 manager: angrobe
@@ -13,75 +13,75 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7765701b51d4b2c258e7e8f0c28d93c5c119102e
+ms.sourcegitcommit: 744fc6ecbabdccbfab38f45745505d635fb7e190
+ms.openlocfilehash: c6b010e49b4e581dad056aa6e8bb17123030f7b0
 
 
 ---
 
 # A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban
 
-Az Intune Mac OS X-eszközökön a beépített általános beállítások széles választékát kínálja, amelyeket egyenként beállíthat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
+Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
 ## Az általános konfigurációs szabályzat beállításai
 
 A Microsoft Intune **Mac OS X-hez készült általános konfigurációs szabályzatát** a következő beállítások konfigurálásához használhatja:
 
--   **Eszközbiztonsági beállítások** – az előre meghatározott beállítások listájából választva számos szolgáltatást és funkciót szabályozhat az eszközökön.
+-   **Az eszköz biztonsági beállításai**. Az előre meghatározott beállítások listájából választva számos szolgáltatást és funkciót szabályozhat az eszközökön.
 
--   **Megfelelő és nem megfelelő alkalmazások** – egy listában megadhatja a vállalatban megfelelőnek vagy nem megfelelőnek ítélt alkalmazásokat. A Jelentés a szabályzatnak nem megfelelő alkalmazásokról beállítással ellenőrizhető, hogy a listában megadott alkalmazás kompatibilis-e a felhasználók által telepített alkalmazásokkal (az alkalmazás telepítése azonban nem tiltható le).
+-   **Megfelelő és nem megfelelő alkalmazások**. Adja meg a vállalatnál megfelelőnek vagy nem megfelelőnek ítélt alkalmazások listáját. A szabályzatoknak nem megfelelő alkalmazásokról készült jelentésben ellenőrizhető, hogy a listában megadott alkalmazás kompatibilis-e a felhasználók által telepített alkalmazásokkal (az alkalmazás telepítése azonban nem tiltható le).
 
-Ha ez a lista nem tartalmazza a keresett beállítást, próbálja meg létrehozni egy egyéni Mac OS X-házirenddel, amely lehetővé teszi az Apple Configurator eszközzel létrehozott beállítások importálását. További információkért olvassa el a jelen témakörben alább található **Egyéni szabályzatbeállítások** című részt.
+Ha ez a lista nem tartalmazza a keresett beállítást, próbálja meg létrehozni egy egyéni Mac OS X-szabályzattal, amely lehetővé teszi az Apple Configurator eszközzel létrehozott beállítások importálását. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
 ### Jelszóbeállítások
 
 |Beállítás neve|Részletek|
 |----------------|---------------|
-|**Jelszó kérése az eszközzárolás feloldásához**|Itt adhatja meg, hogy a felhasználónak kell-e jelszót használnia Mac-számítógépe eléréséhez. **Fontos:** Az IOS-eszközöktől eltérően a Mac OS X-eszközökön a felhasználó nem azonnal kap jelszófrissítési értesítést a beállításnak való megfelelés érdekében.|
-|**Kötelező jelszótípus**|Annak megadása, hogy a jelszó csak numerikus lehet-e, illetve hogy **alfanumerikusnak** kell-e lennie (betűket és számokat is tartalmaznia kell). **Fontos:** Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.|
-|**Jelszó speciális karaktereinek minimális száma**|A jelszóban használandó speciális karakterek minimális számának (**0** - **4**) megadása.<br /><br />A speciális karakterek szimbólumok, mint például a kérdőjel (**?**)|
-|**Jelszó minimális hossza**|A jelszó minimális hosszának ( **4** – **14** karakter) megadása.|
-|**Egyszerű jelszavak engedélyezése**|Az egyszerű jelszavak (például a**0000**vagy az**1234**) használatának engedélyezése.|
-|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Annak megadása, hogy mennyi ideig legyen a számítógép inaktív ahhoz, hogy bekapcsoljon a jelszavas zárolás.|
-|**Jelszó lejárata (nap)**|Itt adhatja meg, hogy mennyi idő telhet el a kötelező jelszómódosításig (**1** - **255** nap).|
-|**Jelszóelőzmények megjegyzése**|Ezzel a beállítással megakadályozhatja, hogy a felhasználó a korábban használt jelszavakat használja. Ha engedélyezi ezt a beállítást, a **Korábbi jelszavak újbóli használatának tiltása** beállítással megadhatja, hogy hány korábban használt jelszó ne legyen újra felhasználható (**1** - **24**).|
-|**Képernyőkímélő bekapcsolása ennyi perc inaktivitás után**|Annak megadása, hogy a számítógépnek mennyi ideig kell inaktívnak lennie a képernyőkímélő aktiválásához.|
+|**Jelszó kérése az eszközzárolás feloldásához**|Adja meg, hogy a felhasználónak kötelező legyen-e jelszót használnia Mac-számítógépe eléréséhez. **Fontos:** Az IOS-eszközöktől eltérően a Mac OS X-eszközökön a felhasználó nem azonnal kap jelszófrissítési értesítést a beállításnak való megfelelés érdekében.|
+|**Kötelező jelszótípus**|Adja meg, hogy a jelszó csak **numerikus** lehet-e, vagy **alfanumerikusnak** kell lennie (azaz betűket és számokat is tartalmaznia kell). **Fontos:** Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.|
+|**Jelszó speciális karaktereinek minimális száma**|Adja meg a jelszóban használandó speciális karakterek minimális számát (**0** - **4**).<br /><br />A speciális karakterek szimbólumok, mint például a kérdőjel (**?**).|
+|**Jelszó minimális hossza**|Adja meg a jelszó minimális hosszát (**4** - **14** karakter).|
+|**Egyszerű jelszavak engedélyezése**|Az egyszerű jelszavak (például a **0000**vagy az**1234**) használatának engedélyezése.|
+|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Adja meg, hogy mennyi ideig legyen a számítógép inaktív ahhoz, hogy bekapcsoljon a jelszavas zárolás.|
+|**Jelszó lejárta (napokban)**|Adja meg, hogy hány nap telhet el a kötelező jelszómódosításig (**1** **255** nap).|
+|**Jelszóelőzmények megjegyzése**|Ez a beállítás megakadályozza, hogy a felhasználó egy korábban már használt jelszót adjon meg újra. A beállítás engedélyezése esetén a **Korábbi jelszavak újbóli használatának tiltása** beállítással megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható (**1** - **24**).|
+|**Képernyőkímélő bekapcsolása ennyi perc inaktivitás után**|Adja meg, hogy a számítógépnek mennyi ideig kell inaktívnak lennie a képernyőkímélő aktiválásához.|
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
-A **Szabályzatnak megfelelő &amp; nem megfelelő alkalmazások Mac OS X-es eszközökhöz** listában engedélyezze az **Eszközök felügyelt beállításai** beállítást, majd adja meg a kompatibilis vagy nem kompatibilis alkalmazások listáját az alábbi információk alapján:
+A **Szabályzatnak megfelelő és nem megfelelő alkalmazások Mac OS X-es eszközökhöz** listában engedélyezze az **Eszközök felügyelt beállításai** beállítást, majd adja meg a megfelelő vagy nem megfelelő alkalmazások listáját az alábbi információk alapján.
 
 > [!NOTE]
-> Egy házirendben csak egy, kompatibilis vagy nem kompatibilis alkalmazásokat tartalmazó lista szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
-> 
+> Egyazon szabályzatban csak a megfelelő vagy a nem megfelelő alkalmazások listája szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
+>
 > Az Intune lehetővé teszi, hogy jelentést készítsen a nem megfelelő alkalmazásokat futtató eszközökről. Ezzel nem tiltja le a nem megfelelő alkalmazások telepítését, és nem is távolítja el azokat.
 
 |Beállítás neve|Részletek|
 |----------------|---------------|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azon alkalmazások felsorolása, amelyek telepítésére a felhasználók nem jogosultak. Ha a felhasználók ezen alkalmazások bármelyikét telepítik, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azon Mac OS X-alkalmazások felsorolása, amelyek telepítésére a felhasználók jogosultak. Ha a felhasználók bármilyen más alkalmazást telepítenek, szerepelni fognak a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
-|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás csomagazonosítóját. **Tipp:** Az alkalmazás csomagazonosítóját az alábbi lépésekkel keresheti meg a telepített alkalmazást futtató Mac számítógépen:<ol><li>Nyissa meg az alkalmazás telepítési mappáját (például **/Applications**)</li><li>Jelölje ki az *&lt;alkalmazásnév&gt;***.app** csomagot, és válassza a **Show Package Contents** (Csomag tartalmának megjelenítése) lehetőséget.</li><li>Nyissa meg az **Info.plist** fájl</li><li>Ellenőrizze a **CFBundleIdentifier**kulcshoz hozzárendelt értéket</li></ol>A csomagazonosító formátuma: **com.contoso.alkalmazásnév**|
-|**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és alkalmazáscsomag-azonosítót.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azon Mac OS X-alkalmazások felsorolása, amelyek telepítésére a felhasználók nem jogosultak. Ha a felhasználók ilyen alkalmazást telepítenek, az megjelenik a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azon Mac OS X-alkalmazások felsorolása, amelyek telepítésére a felhasználók jogosultak. Ha a felhasználók bármilyen más alkalmazást telepítenek, az megjelenik a **szabályzatoknak nem megfelelő alkalmazásokról készült jelentésekben**.|
+|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint opcionálisan megadhatja az alkalmazás kiadóját és csomagazonosítóját. **Tipp:** Az alkalmazás csomagazonosítóját az alábbi lépésekkel keresheti meg a telepített alkalmazást futtató Mac számítógépen:<ol><li>Nyissa meg az alkalmazás telepítési mappáját (például **/Applications**).</li><li>Jelölje ki az *&lt;alkalmazásnév&gt;***.app** csomagot, és válassza a **Show Package Contents** (Csomag tartalmának megjelenítése) lehetőséget.</li><li>Nyissa meg az **Info.plist** fájlt.</li><li>Ellenőrizze a **CFBundleIdentifier** kulcshoz hozzárendelt értéket.</li></ol>A csomagazonosító formátuma: **com.contoso.alkalmazásnév**.|
+|**Alkalmazások importálása**|Importálja a saját maga által egy vesszővel tagolt fájlban megadott alkalmazásokat. A fájlban ezt a formátumot használja: alkalmazásnév, kiadó, alkalmazáscsomag-azonosító.|
 |**Szerkesztés**|A kiválasztott alkalmazás nevének, kiadójának és alkalmazáscsomag-azonosítójának szerkesztése.|
-|**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
+|**Törlés**|A kijelölt alkalmazás törlése a listából.|
 > [!TIP]
 > Az Intune-jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
-> Ha egy Mac OS X-eszköz készenléti állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg, amíg az eszköz fel nem ébred a készenléti üzemmódból.
+> Ha egy Mac OS X-eszköz alvó állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg mindaddig, amíg az eszköz fel nem ébred az alvó üzemmódból.
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazások figyelése
 A **szabályzatnak nem megfelelő alkalmazásokról készült jelentésben** megtekintheti a megadott alkalmazások megfelelőségét.
 
-#### A jelentés futtatása
+#### Jelentés futtatása
 
-1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson a **Jelentések** &gt; **Szabályzatoknak nem megfelelő alkalmazások – jelentések** elemre.
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Szabályzatoknak nem megfelelő alkalmazások – jelentések** elemet.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd kattintson a **Jelentés megtekintése**elemre.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a megfelelő vagy a nem megfelelő alkalmazásokat vagy mindkettőt szeretné-e ellenőrizni, majd válassza a **Jelentés megtekintése**elemet.
 
 ## Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban
-A Microsoft Intune **egyéni Mac OS X-konfigurációs szabályzatával** léptetheti érvénybe az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) létrehozott beállításokat a Mac OS X-eszközökön. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később egy Intune-beli egyéni Mac OS X-szabályzatba importálhatja, és a beállításokat telepítheti a szervezetben lévő felhasználók és eszközök számára.
+A Microsoft Intune **egyéni Mac OS X-konfigurációs szabályzatával** telepítheti az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) létrehozott beállításokat a Mac OS X-eszközökre. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később egy Intune-beli egyéni Mac OS X-szabályzatba importálhatja, és a beállításokat telepítheti a szervezetben lévő felhasználók és eszközök számára.
 
-E funkció révén olyan Mac OS X-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános Mac OS X-konfigurációs szabályzatával.
+E funkció révén olyan Mac OS X-beállításokat telepíthet, amelyek nem konfigurálhatók az Intune általános Mac OS X-konfigurációs szabályzatával.
 
 ### Előfeltételek
 Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létre kell hoznia a felhasználók vagy eszközök számára telepíteni kívánt beállításokat tartalmazó konfigurációs fájlt. Az Apple Configurator eszköz letöltése és az azzal kapcsolatos információk a [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) áruházban érhetők el.
@@ -102,8 +102,8 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |Beállítás neve|Részletek|
     |----------------|--------------------|
     |**Egyéni konfigurációs profil neve (megjelenik a felhasználók számára)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
-    |**Konfigurációs profilfájl**|Kattintson az **Importálás**lehetőségre, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A **Konfigurációs profilfájl létrehozása** című témakörben talál segítséget a konfigurációs profil létrehozásához.|
-    |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil xml-kódját.|
+    |**Konfigurációs profilfájl**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A „Konfigurációs profilfájl létrehozása” című témakörben talál segítséget a konfigurációs profil létrehozásához.|
+    |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil XML-kódját.|
 
 
 
@@ -112,18 +112,14 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 
 -   A fájl Apple Configurator eszközből történő exportálásával ( **.mobileconfig**kiterjesztéssel).
 
--   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html)megfelelő sémáját használja.
+-   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) megfelelő sémáját használja.
 
-
-> [!IMPORTANT]
-> Ha egy Mac OS X-eszköz készenléti állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg, amíg az eszköz fel nem ébred a készenléti üzemmódból.
 
 ### További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,8 +3,8 @@ title: "iOS-alkalmazások burkolása az Alkalmazásburkoló eszközzel | Microso
 description: "Ebből a témakörből megtudhatja, hogyan burkolhatja az iOS-alkalmazásait anélkül, hogy módosítaná az alkalmazás programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 05/11/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ Az eszköz egy Mac OS parancssori alkalmazás, amely „burkolót” hoz létre 
 Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218) weblapot.
 
 ## 1. lépés: Az alkalmazásburkoló eszköz használatára vonatkozó előfeltételek teljesítése
+[Ebben a blogbejegyzésben](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) további információkat talál az előfeltételekről, és hogy hogyan kell őket beállítani.
 
 |Követelmény|További információ|
 |---------------|--------------------------------|
 |Támogatott operációs rendszer és eszközkészlet|Az alkalmazásburkoló eszközt OS X 10.8.5 vagy újabb rendszerű Mac számítógépen kell futtatni, amelyen telepítve van az XCode eszközkészlet 5-ös vagy újabb verziója.|
 |Aláíró tanúsítvány és létesítési profil|Rendelkeznie kell egy Apple aláíró tanúsítvánnyal és létesítési profillal. Lásd az [Apple fejlesztői dokumentációját](https://developer.apple.com/).|
-|Alkalmazás feldolgozása az alkalmazásburkoló eszközzel|Az alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia. Az eszköz nem használható az Apple Store áruházból származó alkalmazások feldolgozásához. Az alkalmazásoknak az iOS 7.0-s vagy újabb verziójához kellett készülnie. Az alkalmazásoknak a Position Independent Executable (PIE) formátumot kell használniuk. A PIE formátumról az Apple fejlesztői dokumentációjában talál további információkat. Végül az alkalmazásoknak **.app** vagy **.ipa** kiterjesztésűeknek kell lenniük.|
+|Alkalmazás feldolgozása az alkalmazásburkoló eszközzel|Az alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia. Az eszköz nem használható az Apple Store áruházból származó alkalmazások feldolgozásához. Az alkalmazásoknak az iOS 7.1-s vagy újabb verziójához kellett készülnie. Az alkalmazásoknak a Position Independent Executable (PIE) formátumot kell használniuk. A PIE formátumról az Apple fejlesztői dokumentációjában talál további információkat. Végül az alkalmazásoknak **.app** vagy **.ipa** kiterjesztésűeknek kell lenniük.|
 |Az alkalmazásburkoló eszköz által nem feldolgozható alkalmazások|Titkosított alkalmazások, aláíratlan alkalmazások, kiterjesztett fájlattribútumokkal rendelkező alkalmazások.|
 |Az Azure Active Directory Authentication Libraryt (ADAL-t) használó alkalmazások|Ha az alkalmazás ADAL-t használ, legalább az ADAL 1.0.2-es verzióját kell tartalmaznia, és a fejlesztőnek hozzáférést kell adnia az alkalmazás számára az Intune mobilalkalmazás-kezelési erőforráshoz.<br /><br />Az ADAL használatával kapcsolatban lásd a jelen cikkben alább található [Az Azure Active Directory Libraryt (ADAL) használó alkalmazásokra vonatkozó tájékoztatás](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) cím részt.|
 |Jogosultságok beállítása az alkalmazáshoz|Az alkalmazás burkolása előtt jogosultságokat kell megadnia, amelyek az általában megadottak mellett további engedélyekkel és képességekkel ruházzák fel az alkalmazást. További utasításokért lásd az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részt.|
@@ -292,6 +293,6 @@ Az alkalmazásburkoló eszköz használatakor kövesse az alábbi biztonsági é
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

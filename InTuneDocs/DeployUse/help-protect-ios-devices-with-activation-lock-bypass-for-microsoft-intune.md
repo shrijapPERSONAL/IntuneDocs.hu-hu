@@ -3,7 +3,7 @@ title: "iOS aktiválási zár kezelése az eszközökön | Microsoft Intune"
 description: "A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
+ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
+ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
 
 
 ---
 
 # Az iOS-eszközök védelme a Microsoft Intune-hoz készült aktiválásizár-megkerüléssel
-A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója. Ha a Find My iPhone alkalmazást használják egy eszközön, az aktiválási zár automatikusan engedélyezve lesz. Az engedélyezése után meg kell adni a felhasználó Apple ID azonosítóját és jelszavát ahhoz, hogy el lehessen végezni a következők bármelyikét:
+A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója. Ha a felhasználó megnyitja a Find My iPhone alkalmazást egy eszközön, az aktiválási zár automatikusan engedélyezve lesz. Az engedélyezése után meg kell adni a felhasználó Apple ID azonosítóját és jelszavát ahhoz, hogy el lehessen végezni a következők bármelyikét: 
 
 -   A Find My iPhone alkalmazás kikapcsolása
 
@@ -29,13 +29,13 @@ A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely
 -   Az eszköz újraaktiválása
 
 ## Az aktiválási zár hatásai
-Az aktiválási zár segít biztosítani az iOS-eszközök biztonságát, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Példa:
+Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Példa:
 
 -   Egy felhasználó beállítja az aktiválási zárat egy eszközön. A felhasználó később elhagyja a céget és visszaszolgáltatja az eszközt. A felhasználó Apple ID azonosítója és jelszava nélkül semmilyen módon nem lehet újraaktiválni az eszközt.
 
 -   Szüksége van egy jelentésre az összes eszközről, amelyen engedélyezve van az aktiválási zár.
 
--   A szervezetben egy eszközfrissítés során néhány eszközt másik részleghez szeretne rendelni. Csak azokat az eszközöket lehet újból hozzárendelni, amelyeken nincs engedélyezve az aktiválási zár.
+-   Néhány eszközt másik részleghez szeretne rendelni a szervezetben egy eszközfrissítés során. Csak azokat az eszközöket lehet újból hozzárendelni, amelyeken nincs engedélyezve az aktiválási zár.
 
 Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megkerülését az iOS 7.1-ben. Ez lehetővé teszi az aktiválási zár a felhasználó Apple ID azonosítója és jelszava nélkül való eltávolítását a felügyelt eszközökről. A felügyelt eszközök létre tudnak hozni egy eszközspecifikus aktiválásizár-áthidaló kódot, mely az Apple aktiválási kiszolgálóján van tárolva.
 
@@ -49,11 +49,11 @@ Az Intune a felügyelt és a felügyeletlen iOS 7.1 vagy újabb rendszerű eszk�
 
 -   A felhasználó élvezheti a Find My iPhone alkalmazás biztonsági előnyeit.
 
--   Lehetővé teheti, hogy a felhasználó annak tudatában végezhesse a munkáját, hogy ha más rendeltetéssel kell felruházni az eszközt, akkor ki lehet vonni, illetve fel lehet oldani a zárolását.
+-   Lehetővé teheti, hogy a felhasználó annak tudatában végezhesse a munkáját, hogy az eszközt ki lehet vonni vagy fel lehet oldani a zárolását, ha a használatának módosítására van szükség.
 
 ## Az aktiválási zár megkerülésének használata az Intune felügyeleti konzolon
 > [!IMPORTANT]
-> Az aktiválási zár megkerülése után az eszköz a Find My iPhone alkalmazás megnyitásakor automatikusan egy újabb aktiválási zárat fog alkalmazni. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
+> Az eszköz aktiválási zárának megkerülése után a Find My iPhone alkalmazás megnyitásakor egy újabb aktiválási zár lép érvénybe. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** elemet.
 
@@ -78,12 +78,12 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 
     Az **Aktiválási zár állapota** mező a nem iOS 7.1 vagy újabb rendszerű eszközök esetén üres.
 
--   Ha egy Csoportok nézetben jelöl ki egy eszközt, az aktiválási zár állapota az eszköz részletező ablaktábláján jelenik meg.
+-   Ha Csoportok nézetben jelöl ki egy eszközt, az aktiválási zár állapota az eszköz részletező ablaktábláján jelenik meg.
 
     Ha a **Minden céges eszköz** csomópontban jelöl ki egy eszközt, és az aktiválási zár engedélyezve van az eszközön, megtekintheti az áthidaló kódot is. Ezzel a kóddal manuálisan végezhető el az aktiválási zár megkerülése.
 
     > [!IMPORTANT]
-    >Az Intune 7 naponta leltárt készít az aktiválási zárral rendelkező eszközökről. Emiatt előfordulhat, hogy egy eszköz nem azonnal az aktiválásizár-állapotával együtt jelenik meg az Intune konzolján.
+    >Az Intune hétnaponta leltárt készít az aktiválási zárral rendelkező eszközökről. Emiatt előfordulhat, hogy egy eszköz nem azonnal az aktiválásizár-állapotával együtt jelenik meg az Intune konzolján.
 
 
 ### További információ
@@ -92,6 +92,6 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

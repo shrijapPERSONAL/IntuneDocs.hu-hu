@@ -3,8 +3,8 @@ title: "Helyszíni EAS Exchange-összekötője | Microsoft Intune"
 description: "Az Összekötő eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és a helyszíni Exchange Server között az Exchange ActiveSync MDM-hez."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 # A helyszíni Intune Exchange Connector telepítése
 
 
-Ha olyan kapcsolatot kíván beállítani, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a mobileszközök postaládáit működtető Exchange-kiszolgálóval, az Intune felügyeleti konzolról le kell töltenie, majd konfigurálnia kell az On-Premises Connector helyszíni összekötő eszközt.
+Ha olyan kapcsolatot kíván beállítani, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a mobileszközök postaládáit működtető Exchange-kiszolgálóval, az Intune felügyeleti konzolról le kell töltenie, majd konfigurálnia kell az On-Premises Connector helyszíni összekötő eszközt. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-összekötő kapcsolatot támogat.
 
 ## Az intézményi összekötőre vonatkozó követelmények
 A következő táblázatban találja a helyszíni Exchange Connector telepítéséhez használt számítógépre vonatkozó követelményeket.
@@ -30,7 +30,7 @@ A következő táblázatban találja a helyszíni Exchange Connector telepítés
 |Követelmény|További információ|
 |---------------|--------------------|
 |Operációs rendszerek|Az Intune a helyszíni Exchange Connectort olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, Windows Server 2008 R2, Windows Server 2012 vagy Windows Server 2012 R2 rendszer valamelyik kiadása fut.<br /><br />Az összekötő nem támogatott a Server Core telepítéseken.|
-|Microsoft Exchange verzió|A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára van szükség.|
+|Microsoft Exchange verzió|A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára, vagy örökölt dedikált Exchange Online-ra van szükség. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** konfigurációval rendelkezik, lépjen kapcsolatba a fiókkezelővel.|
 |Mobileszköz-kezelő szolgáltató| [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardver|A számítógépen, ahol az összekötőt telepíti, 1,6 GHz-es CPU szükséges, valamint 2 GB RAM és legalább 10 GB szabad lemezterület.|
 |Active Directory-szinkronizálás|Mielőtt az Intune-t bármely összekötővel csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory-példányával.|
@@ -131,6 +131,6 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

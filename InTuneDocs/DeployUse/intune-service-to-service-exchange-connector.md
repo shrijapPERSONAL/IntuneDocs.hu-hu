@@ -1,10 +1,10 @@
 ---
-title: "Exchange-összekötő üzemeltetett Exchange-hez | Microsoft Intune"
+title: "Exchange-összekötő Exchange Online-hoz | Microsoft Intune"
 description: "Csatlakoztathatja az Intune-t az Office 365 Exchange szolgáltatáshoz az Exchange ActiveSync-alapú mobileszköz-felügyelet (MDM) támogatása érdekében."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # Intune szolgáltatások közötti összekötő konfigurálása az Exchange Online-hoz
 
-Az alábbi információk segítségével a Microsoft Intune-t az Office 365 által szolgáltatott Exchange Online-hoz csatlakoztathatja.
+Az alábbi információk segítségével a Microsoft Intune-t az Exchange Online-hoz vagy az új dedikált Exchange Online szolgáltatáshoz csatlakoztathatja. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt**, lépjen kapcsolatba a fiókkezelővel. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-összekötő kapcsolatot támogat.
 
 ## A Service to Service Connector alkalmazásra vonatkozó követelmények
-A **Service to Service Connector** csak a szolgáltatott Exchange-et támogatja, így nincsenek a helyszíni infrastruktúrára vonatkozó követelményei.
+A **Service to Service Connector** csak az Exchange Online-t és az új dedikált Exchange Online-t támogatja, és nincsenek a helyszíni infrastruktúrára vonatkozó követelményei.
 
 |Követelmény|További információ|
 |---------------|--------------------|
-|Legyen konfigurálva és fusson a szolgáltatott Exchange|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|Konfigurált és működő Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Mobileszköz-kezelő szolgáltató| [A Microsoft Intune beállítása mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Microsoft Exchange verzió|Olyan Office 365-előfizetéssel kell rendelkeznie, amelyhez tartozik egy Exchange Server 2013 vagy későbbi verziójú bérlő. Mindaddig, amíg a bérlő az Exchange Server 2013 vagy egy későbbi verzió, az összekötő ugyanabban a környezetben támogatja az Exchange Server 2010-et is.|
+|Microsoft Exchange verzió|Exchange Online vagy új dedikált Exchange Online szolgáltatás|
 |Active Directory-szinkronizálás|Mielőtt bármely összekötővel csatlakoztatná az Intune Connectort az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure AD-példányával.|
 
 ### Exchange-parancsmagokkal kapcsolatos követelmények
@@ -54,7 +54,7 @@ Létre kell hoznia egy Exchange Online-felhasználói fiókot is, amelyet az Int
 3.  Az **Exchange-kapcsolat beállítása** lapon kattintson a **Service To Service Connector telepítése** parancsra.
 
 
-A Service-to-Service Connector konfigurációja és szinkronizálása az üzemeltetett Exchange-környezettel automatikusan megtörténik.
+A Service-to-Service Connector konfigurációja és szinkronizálása az Exchange Online- vagy új dedikált Exchange Online-környezettel automatikusan megtörténik.
 
 ## Az Exchange-kapcsolat ellenőrzése
 
@@ -64,6 +64,6 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

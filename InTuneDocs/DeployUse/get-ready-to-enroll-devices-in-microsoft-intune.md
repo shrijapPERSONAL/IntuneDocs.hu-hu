@@ -3,8 +3,8 @@ title: "Felkészülés az eszközök regisztrálására | Microsoft Intune"
 description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
 keywords: 
 author: NathBarn
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: f7fd551ab35408236a58ccd581382a6b11343dda
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Felkészülés az eszközök regisztrálására a Microsoft Intune-ban
-Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő (MDM) szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
+Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák az Intune-ban mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), és hogy lehetővé tegye a vállalati tulajdonú eszközök felügyeletét, engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő (MDM) szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
 
 ## A mobileszköz-kezelő szolgáltató beállítása
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
@@ -109,6 +109,6 @@ További lehetőségek:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Az ebben a témakörben ismertetett szabályzatbeállítások seg�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Jelszó lejárata (nap)**|Meghatározza, hogy mennyi idő elteltével kell módosítani a jelszót.|
 |**Jelszóelőzmények megjegyzése**|Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.|
 |**Korábbi jelszavak megjegyzése** - **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás a eszköz által megjegyzett korábbi jelszavak számát határozza meg.|
-|**Képjelszó és PIN-kód engedélyezése**|Lehetővé teszi egy képen egyszerű kézmozdulatok, vagy egy egyszerű PIN-kód használatát a bejelentkezéshez.<br>(csak a Windows 10 asztali verzió)|
 |**Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**|Engedélyezése esetén a felhasználónak meg kell adnia egy jelszót, ha szeretné feloldani az inaktív állapotú eszköz zárolását.<br>(csak a Windows 10 Mobile)|
 
 ### Titkosítás
@@ -71,14 +70,6 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Microsoft-fiók használatának engedélyezése**|Lehetővé teszi, hogy a felhasználó Microsoft-fiókot társítson az eszközhöz.|
 |**Nem Microsoft-fiókok manuális felvételének engedélyezése**|Lehetővé teszi, hogy a felhasználó olyan e-mail fiókokat vegyen fel az eszközön, amelyek nincsenek Microsoft-fiókhoz társítva.|
 |**Beállítások szinkronizálásának engedélyezése Microsoft-fiók esetén**|Lehetővé teszi a Microsoft-fiókhoz kapcsolódó eszköz- és alkalmazásbeállítások szinkronizálását az eszközök között.|
-
-### E-mail beállítások
-
-|Beállítás neve|Részletek|
-|----------------|----------------------|---------------------|
-|**A Microsoft-fiók opcionálissá tétele a Windows Mail alkalmazásban**|A beállítás engedélyezése esetén nem kötelező Microsoft-fiókot használni a Windows Posta alkalmazásban.<br>Csak a Windows 10 asztali verzió|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Bluetooth használatának engedélyezése**|Engedélyezi a Bluetooth-képességek használatát az eszközön.|
 |**Bluetooth-észlelhetőség engedélyezése**|Észlelhetővé teszi az eszközt más Bluetooth-kompatibilis eszközök által.|
 |**Bluetooth-hirdetés engedélyezése**|Engedélyezi, hogy az eszközök hirdetéseket fogadjanak Bluetooth-on keresztül.|
-|**Bluetooth-csatlakozási üzemmód engedélyezése**|**Fontos:** ez a beállítás a Windows 10 rendszerben már nem támogatott, és a jövőben meg fog szűnni.|
 |**Telefon alaphelyzetbe állításának engedélyezése**|Azt szabályozza, hogy a felhasználó visszaállíthatja-e az eszköz gyári beállításait.|
 |**USB-kapcsolat engedélyezése**|Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.|
 |**Lopásgátló üzemmód engedélyezése**|Annak beállítása, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.|
@@ -177,6 +167,7 @@ Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 |Beállítás neve|Részletek|
 |----------------|---------------|
 |**Automatikus frissítések engedélyezése**|A beállítás engedélyezésével engedélyezheti az automatikus frissítéseket. Ezt követően a következő lehetőségek egyikének beállításával szabályozhatja a frissítések működését:<br /><br />**Értesítést kérek a letöltésről**<br /><br />**Automatikus telepítés karbantartási időpontban**<br /><br />**Automatikus telepítés és újraindítás karbantartási időpontban**<br /><br />**Automatikus telepítés és újraindítás ütemezett időpontban** **Megjegyzés:** Kiválasztása esetén a következő beállítások konfigurálása is lehetővé válik: **Végfelhasználói értesítések letiltása**, illetve **Adja meg az ütemezett frissítések telepítésének napját**.<br>(csak a Windows 10 asztali verzió)|
+|**Előzetes kiadású szolgáltatások engedélyezése**|Lehetővé teszi a Microsoft számára, hogy előzetes verziójú beállításokat és funkciókat telepítsen a Windows 10 rendszerű eszközökre. Meghatározhatja, hogy csak a beállítások telepítését engedélyezi, vagy minden előzetes verziójú beállítás és funkció telepítését is.|
 
 ## Egyéni szabályzatbeállítások
 A Microsoft Intune Windows 10-hez és a Windows 10 Mobile-hoz készült **egyéni konfigurációs házirendjeivel** OMA-URI beállítások telepíthetők, amelyek a Windows 10- és Windows 10 Mobile-eszközökön elérhető szolgáltatások vezérlésére használhatók. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
@@ -332,6 +323,6 @@ Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kí
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

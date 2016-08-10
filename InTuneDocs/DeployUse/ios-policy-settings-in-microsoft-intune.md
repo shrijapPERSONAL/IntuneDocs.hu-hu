@@ -13,46 +13,46 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 947328a5c28839d8227a9e5ae0dd8b1fc5ad8e81
-ms.openlocfilehash: 63bc2cedf8d81b050a384a947a0b43827de5c352
+ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
+ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
 
 
 ---
 
 # iOS-szabályzatbeállítások a Microsoft Intune-ban
 
-Az Intune számos olyan beépített általános beállítást tartalmaz, amelyekkel konfigurálhatja iOS-eszközeit. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
+Az Intune számos beépített beállítási lehetőséget kínál, amelyeket iOS-eszközökön konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
 ## Az általános konfigurációs szabályzat beállításai
 
 A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatát** a következő beállítások konfigurálásához használhatja:
 
--   **Általános eszköz- és biztonsági beállítások** – előre meghatározott beállítások egy listájából választva számos szolgáltatást és funkciót szabályozhat az eszközön.
+-   **Általános eszköz- és biztonsági beállítások**. Az előre meghatározott beállítások listájából választva számos szolgáltatást és funkciót szabályozhat az eszközökön.
 
--   **Teljes képernyős mód** – zárolhatja az eszközöket, hogy csak bizonyos szolgáltatások működjenek rajtuk. Megadhatja például, hogy az eszköz csak egy meghatározott felügyelt alkalmazás futtatását engedélyezze, vagy letilthatja a hangerő-szabályozó gombok használatát az eszközön. Ezek a beállítások egy eszköz demonstrációs modelljéhez, illetve egy olyan eszközhöz használhatók, amely csak egyetlen funkció végrehajtására van kijelölve (például egy pénztári eszköz).
+-   **Kioszkmód**. Zárolhatja az eszközöket, hogy csak bizonyos szolgáltatások működjenek rajtuk. Megadhatja például, hogy az eszköz csak egy meghatározott felügyelt alkalmazás futtatását engedélyezze, vagy letilthatja a hangerő-szabályozó gombok használatát. Ezek a beállítások használhatók például egy eszköz bemutató modelljéhez vagy olyan eszközökhöz, amelyek dedikáltan egyetlen funkciót hajtanak végre (például a pénztári eszközök).
 
--   **Megfelelő és nem megfelelő alkalmazások** – egy listában megadhatja a vállalatban megfelelőnek vagy nem megfelelőnek ítélt alkalmazásokat. Android és iOS rendszerű eszközökön a **Nem kompatibilis alkalmazások jelentése** beállítással ellenőrizhető, hogy a listában megadott alkalmazás kompatibilis-e a felhasználók által telepített alkalmazásokkal (az alkalmazás telepítése azonban ténylegesen nem tiltható le).
+-   **Megfelelő és nem megfelelő alkalmazások**. Adja meg a vállalatnál megfelelőnek vagy nem megfelelőnek ítélt alkalmazások listáját. Android és iOS rendszerű eszközökön a **nem megfelelő alkalmazásokról készült jelentéssel** ellenőrizhető, hogy a listában megadott alkalmazások kompatibilisek-e a felhasználók által telepített alkalmazásokkal (az alkalmazás telepítése azonban ténylegesen nem tiltható le).
 
 > [!TIP]
-> Beállíthat feltételeket a felhasználók számára, amelyekkel gondoskodhat arról, hogy tudomásul vegyék, hogy az eszközükön lévő alkalmazásokat – beleértve a személyes alkalmazásokat – értékelni fogják, a nem kompatibilis alkalmazások pedig le lesznek tiltva, vagy nem kompatibilisként lesznek jelentve. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a vállalati portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információkért lásd: [Használati feltételek szabályzatbeállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Beállíthat feltételeket a felhasználók számára, amelyekkel gondoskodhat arról, hogy tudomásul vegyék, hogy az eszközükön lévő alkalmazásokat (beleértve a személyes alkalmazásokat is) értékelni fogják és a nem megfelelő alkalmazások letiltásra kerülnek, vagy nem megfelelőként lesznek jelentve. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a vállalati portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információkért lásd: [Használati feltételek szabályzatbeállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, mellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért olvassa el a jelen témakörben alább található **Egyéni szabályzatbeállítások** című részt.
+Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, amellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
 ### Biztonsági beállítások
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
-|**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|
-|**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
+|**Jelszó szükséges a mobileszközök feloldásához**|Azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközeikhez való hozzáféréshez.|
+|**Kötelező jelszótípus**|A kötelező jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
 |**Jelszó speciális karaktereinek minimális száma**|Azt határozza meg, hogy hány szimbólumnak (például **#** vagy **@**) kell szerepelnie a jelszóban.|
-|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|
-|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például „0000” vagy „1234” engedélyezése.|
-|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|A megadott számú sikertelen bejelentkezési kísérlet után törli az eszközt.|
-|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**<sup>1</sup>|Ez a beállítás azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra be kell írnia a jelszavát.|
-|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|
-|**Jelszóelőzmények megjegyzése**|Ez a beállítás azt határozza meg, hogy a felhasználó használhatja-e az általa korábban használt jelszavakat.|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás az eszköz által megjegyzett korábbi jelszavak számát határozza meg.|
+|**Jelszó minimális hossza**|Meghatározza, hogy legalább hány karakterből álljon a jelszó.|
+|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például **0000** vagy **1234** engedélyezése.|
+|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Meghatározza, hogy hány sikertelen bejelentkezési kísérlet után kerülnek törlésre az eszköz adatai.|
+|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**<sup>1</sup>|Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.|
+|**Jelszó lejárata (nap)**|Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.|
+|**Jelszóelőzmények megjegyzése**|Meghatározza, hogy a felhasználó használhatja-e az általa korábban már használt jelszavakat.|
+|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.|
 |**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Ennyi perc elteltével kapcsol ki a kijelző.|
 |**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.|
 <sup>1</sup> Ha a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is konfigurálja iOS-eszközökön, azok egymás után lesznek alkalmazva. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
@@ -63,52 +63,52 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |Beállítás neve|Részletek|
 |----------------|-------|
 |**Képernyőkép-készítés engedélyezése**|Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.|
-|**Vezérlőközpont engedélyezése a zárolási képernyőn**|Itt adható meg, hogy a Vezérlőközpont alkalmazás elérhető legyen-e, amikor az eszköz zárolva van.|
+|**Vezérlőközpont engedélyezése a zárolási képernyőn**|Engedélyezi a felhasználó számára a hozzáférést a vezérlőközpont-alkalmazáshoz olyankor is, amikor az eszköz zárolva van.|
 |**Értesítési nézet engedélyezése a zárolási képernyőn**|Engedélyezi a felhasználó számára, hogy az eszköz zárolásának feloldása nélkül is hozzáférhessen az értesítések nézetéhez.|
-|**Ma nézet engedélyezése a zárolási képernyőn**|Itt adható meg, hogy megtekinthetők-e az értesítések, amikor az eszköz zárolva van.|
+|**Ma nézet engedélyezése a zárolási képernyőn**|Engedélyezi a felhasználó számára az értesítések megtekintését olyankor is, amikor az eszköz zárolva van.|
 |**Nem megbízható TLS tanúsítványok engedélyezése**|Engedélyezi nem megbízható TLS-tanúsítványok használatát az eszközön.|
 |**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.|
 |**Passbook zárolt állapotban való használatának engedélyezése**|Engedélyezi a felhasználó számára a Passbook alkalmazás eszközzárolás alatti elérését.|
 
-### Felhőbeállítások – dokumentumok és adatok
+### Felhőbeállítások dokumentumok és adatok számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
-|**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi a felhasználó számára, hogy biztonsági mentést készítsen az iCloudba az eszközről.|
+|**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi, hogy a felhasználó biztonsági mentést készítsen az iCloudba az eszközről.|
 |**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.|
 |**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Engedélyezi az eszközön lévő fényképek szinkronizálását az iCloudba.|
 |**Biztonsági másolat titkosításának engedélyezése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|
-|**Engedélyezi, hogy a felügyelt alkalmazások adatokat szinkronizáljanak az iClouddal**|Engedélyezi, hogy az alkalmazások adatokat szinkronizáljanak a felhasználók iCloud-fiókjával.|
-|**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|A Handoff segítségével folytathatja az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
+|**Engedélyezi, hogy a felügyelt alkalmazások adatokat szinkronizáljanak az iClouddal**|Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.|
+|**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
 
-### Alkalmazásbeállítások – böngésző
+### Alkalmazásbeállítások a böngésző számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
 |**Safari engedélyezése**|Ez a beállítás azt határozza meg, hogy a Safari böngésző használható-e az eszközön.|
-|**Automatikus kitöltés engedélyezése**|A felhasználók módosíthatják a böngésző automatikus kiegészítési funkciójának beállításait.|
+|**Automatikus kitöltés engedélyezése**|Engedélyezi a felhasználó számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását.|
 |**Előugróablak-blokkoló engedélyezése**|Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.|
-|**Cookie-k engedélyezése**|Engedélyezi Cookie-k használatát az eszköz webböngészője számára.|
+|**Cookie-k engedélyezése**|Engedélyezi sütik (cookie-k) használatát a böngésző számára.|
 |**JavaScript engedélyezése**|Java-parancsfájlok böngészőben történő futtatásának engedélyezése.|
-|**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetés engedélyezése az eszköz böngészőjében.|
+|**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetések engedélyezése a böngészőben.|
 
-### Alkalmazásbeállítások – alkalmazások
+### Alkalmazásbeállítások az alkalmazások számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
-|**Alkalmazástároló használatának engedélyezése**|Az alkalmazás-áruház elérésének engedélyezése az eszköz számára.|
-|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználókat jelszó beírására kötelezi az alkalmazás-áruházhoz való hozzáféréshez.|
+|**Alkalmazástároló használatának engedélyezése**|Az alkalmazásáruház elérésének engedélyezése az eszköz számára.|
+|**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználóktól jelszót kér, mielőtt hozzáférhetnének az alkalmazás-áruházhoz.|
 |**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|
-|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), nem engedélyezi többé a mentést.|
+|**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), a továbbiakban nem engedélyezi a mentést.|
 |**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|
 |**Videokonferenciák engedélyezése**|Videokonferencia-alkalmazások, például a Facetime engedélyezése az eszközön.|
 |**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|
-|**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az erotikusként kategorizált könyvek letöltésének engedélyezése a felhasználó számára.|
+|**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az „erotikus tartalom” kategóriába sorolt könyvek letöltésének engedélyezése a felhasználó számára.|
 
-### Alkalmazásbeállítások – játékok
+### Alkalmazásbeállítások a játékok számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
@@ -116,15 +116,15 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Game Centerbeli ismerősök felvételének engedélyezése**|Barátok hozzáadásának engedélyezése a Game Center alkalmazásban a felhasználó számára.|
 |**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|
 
-### Eszközképességek beállításai – hardver
+### Eszközképességek beállításai a hardver számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
-|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.|
-|**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Az Airplay segítségével tartalmat streamelhet másik Apple-eszközre. Ezzel a beállítással párosítási jelszót kérhet más eszközökhöz való csatlakozáskor.|
+|**Kamera használatának engedélyezése**|Meghatározza, hogy használható-e az eszközön a kamera.|
+|**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Párosítási jelszó kérése, ha a felhasználó az AirPlay segítségével tartalmat kíván közvetíteni egyéb Apple-eszközökre.|
 
-### Eszközképességek beállításai – mobilhálózat
+### Eszközképességek beállításai a mobilhálózat számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
@@ -133,7 +133,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Adatroaming használatának engedélyezése**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|
 |**Roamingolás közbeni globális, háttérbeli adatbeolvasás engedélyezése**|Mobilhálózati roaming közben történő adatlehívás, például e-mail engedélyezése az eszköz számára.|
 
-### Eszközképességek beállításai – szolgáltatások
+### Eszközképességek beállításai a mobilhálózat számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
@@ -144,64 +144,63 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
-A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja meg a kompatibilis vagy nem kompatibilis eszközök listáját az alábbi információk alapján:
+A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja meg a megfelelő vagy nem megfelelő alkalmazások listáját az alábbi információk alapján.
 
 > [!NOTE]
-> Egy házirendben csak egy, kompatibilis vagy nem kompatibilis alkalmazásokat tartalmazó lista szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
+> Egy szabályzatban csak a megfelelő vagy a nem megfelelő alkalmazások listája szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyek telepítése és futtatása nem engedélyezett a felhasználóknak.|
-|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azokat az alkalmazásokat tartalmazza, amelyeket a felhasználók telepíthetnek. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
-|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét. További segítségért olvassa el az ebben a témakörben alább található **Alkalmazás-áruházak URL-címének megadása** című részt.|
-|**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
-|**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
-|**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók telepítik a listán szereplő alkalmazások valamelyikét**|Azokat a nem az Intune által kezelt alkalmazásokat listázza, amelyek telepítése és futtatása nem engedélyezett a felhasználók számára.|
+|**Meg nem felelésről szóló jelentés küldése, ha a felhasználók a listán nem szereplő alkalmazásokat telepítenek**|Azokat az alkalmazásokat listázza, amelyek telepítése engedélyezett a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.|
+|**Hozzáadás**|Alkalmazás hozzáadása a kiválasztott listához. Meg kell adnia egy szabadon választott nevet, valamint tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét. További segítségért olvassa el az ebben a témakörben alább található „Alkalmazás-áruházak URL-címének megadása” című részt.|
+|**Alkalmazások importálása**|Importálja az Ön által vesszővel tagolt fájlban megadott alkalmazásokat. A fájlban ezt a formátumot használja: alkalmazásnév, kiadó, alkalmazás URL-címe.|
+|**Szerkesztés**|A kijelölt alkalmazás nevének, kiadójának és URL-címének szerkesztése.|
+|**Törlés**|A kijelölt alkalmazás törlése a listából.|
 
 ### Teljes képernyős mód beállításai
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Válassza a **Tallózás** elemet, majd adja meg azt a kezelt alkalmazást, illetve áruházbeli alkalmazást, amelynek engedélyezni szeretné a futtatását, amikor az eszköz kioszkmódban van. Más alkalmazás nem lesz futtatható az eszközön. További segítségért olvassa el az ebben a témakörben alább található **Alkalmazás-áruházak URL-címének megadása** című részt.|
-|**Érintés engedélyezése**|Engedélyezheti vagy letilthatja az érintőképernyőt az eszközön.|
-|**Képernyő elforgatásának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő tájolásának módosítását az eszköz elforgatásakor.|
-|**Hangerőszabályzó gombok engedélyezése**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|
-|**Csengetőkapcsoló engedélyezése**|Engedélyezheti vagy letilthatja a csengető- (némító-) kapcsolót az eszközön.|
-|**Képernyő ébresztőgombjának engedélyezése**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|
-|**Automatikus zárolás engedélyezése**|Engedélyezheti vagy letilthatja az eszköz automatikus zárolását.|
-|**Monó hang engedélyezése**|Engedélyezheti vagy letilthatja a **Monó hang**kisegítő beállítást.|
-|**Hangalámondás engedélyezése**|Engedélyezheti vagy letilthatja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.|
-|**A hangalámondás módosításának engedélyezése**|Engedélyezheti vagy letilthatja a VoiceOver funkció módosítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).|
-|**Nagyítás engedélyezése**|Engedélyezheti vagy letilthatja a **Nagyítás** kisegítő beállítást, amellyel érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.|
-|**Nagyítás módosításának engedélyezése**|Engedélyezheti vagy letilthatja a nagyítási funkció módosítását.|
-|**Színek invertálásának engedélyezése**|Engedélyezheti vagy letilthatja a **Színek invertálása** kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.|
-|**Színinvertálás módosításának engedélyezése**|Engedélyezheti vagy letilthatja a színinvertálási funkció módosítását.|
-|**Kisegítő érintés engedélyezése**|Engedélyezheti vagy letilthatja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
-|**Kisegítő érintés módosításának engedélyezése**|Engedélyezheti vagy letilthatja a Kisegítő érintés funkció módosítását.|
-|**Beszéd kiválasztásának engedélyezése**|Engedélyezheti vagy letilthatja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható az Ön által kijelölt szöveg.|
+|**Az eszköz Kioszk módjában futtatható kezelt alkalmazás kiválasztása**|Válassza a **Tallózás** elemet, majd adja meg azt a kezelt vagy áruházbeli alkalmazást, amelynek futtatását engedélyezni kívánja, amikor az eszköz kioszkmódban van. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. További segítségért olvassa el a jelen témakörben alább található „Alkalmazásáruházak URL-címének megadása” című részt.|
+|**Érintés engedélyezése**|Engedélyezi vagy letiltja az érintőképernyő használatát az eszközön.|
+|**Képernyő elforgatásának engedélyezése**|Engedélyezi vagy letiltja a képernyő tájolásának módosítását az eszköz elforgatásakor.|
+|**Hangerőszabályzó gombok engedélyezése**|Engedélyezi vagy letiltja a hangerőszabályzó gombok használatát az eszközön.|
+|**Csengetőkapcsoló engedélyezése**|Engedélyezi vagy letiltja a csengető- (némító-) kapcsolót az eszközön.|
+|**Képernyő ébresztőgombjának engedélyezése**|Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.|
+|**Automatikus zárolás engedélyezése**|Engedélyezi vagy letiltja az eszköz automatikus zárolását.|
+|**Monó hang engedélyezése**|Engedélyezi vagy letiltja a **Monó hang** kisegítő beállítást.|
+|**Hangalámondás engedélyezése**|Engedélyezi vagy letiltja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.|
+|**A hangalámondás módosításának engedélyezése**|Engedélyezi vagy letiltja a VoiceOver (hangalámondás) funkció beállítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).|
+|**Nagyítás engedélyezése**|Engedélyezi vagy letiltja a **Nagyítás** kisegítő beállítást, amellyel a felhasználó érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.|
+|**Nagyítás módosításának engedélyezése**|Engedélyezi vagy letiltja a nagyítási funkció működésének felhasználó általi beállítását.|
+|**Színek invertálásának engedélyezése**|Engedélyezi vagy letiltja a **Színek invertálása** kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.|
+|**Színinvertálás módosításának engedélyezése**|Engedélyezi vagy letiltja a színinvertálási funkció beállításainak módosítását.|
+|**Kisegítő érintés engedélyezése**|Engedélyezi vagy letiltja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
+|**Kisegítő érintés módosításának engedélyezése**|Engedélyezi vagy letiltja a Kisegítő érintés funkció beállításának módosítását.|
+|**Beszéd kiválasztásának engedélyezése**|Engedélyezi vagy letiltja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható a felhasználó által kijelölt szöveg.|
 > [!NOTE]
 > Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
-> 
-> -   Az iOS-eszközök a teljes képernyős módra való konfigurálása előtt felügyelt módra kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
-> -   Ha a megadott iOS-alkalmazás a konfigurációs házirend alkalmazása után települ, az eszköz mindaddig nem lép Kioszk módba, amíg újra nem indítják.
+>
+> -   Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
+> -   Ha a megadott iOS-alkalmazás a konfigurációs házirend telepítése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
 
-#### A szabályzatnak megfelelő és nem megfelelő alkalmazások figyelése
 A **Nem kompatibilis alkalmazások jelentése** beállítás használatával megtekintheti az engedélyezett és letiltott alkalmazások kompatibilitását.
 
 ##### A nem kompatibilis alkalmazások jelentésének futtatása
 
 1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemet.
 
-2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a kompatibilis vagy a nem kompatibilis alkalmazásokat szeretné-e ellenőrizni, illetve mindkettőt, majd válassza a **Jelentés megtekintése**elemet.
+2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a megfelelő, a nem megfelelő alkalmazásokat vagy mindkettőt szeretné ellenőrizni, majd válassza a **Jelentés megtekintése**elemet.
 
 #### Alkalmazás-áruházak URL-címének megadása
 Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, illetve **Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása** beállításban (csak iOS rendszerben), használja a következő formátumot:
 
-Egy keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban használni kívánt alkalmazást, és nyissa meg az alkalmazás lapját.
+1. Keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban használni kívánt alkalmazást, és nyissa meg az alkalmazás lapját.
 
-Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a kompatibilis és nem kompatibilis alkalmazások listájának, illetve a Kioszk módban futtatni kívánt alkalmazásnak a konfigurálásához.
+2. Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a megfelelő és nem megfelelő alkalmazások listájának, illetve a kioszkmódban futtatni kívánt alkalmazásnak a konfigurálásához.
 
 **Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Ebben az esetben a következő URL-t használja: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -227,22 +226,22 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy úja
 |**Az iBooks áruház elérésének engedélyezése**|Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.|
 |**A Barátok alkalmazás beállításai módosításának engedélyezése**|Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.|
 |**Az összes tartalom és beállítás törlésére szolgáló funkció használatának engedélyezése az eszközön**|Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.|
-|**A korlátozások bekapcsolásának engedélyezése a felhasználó számára az eszközbeállítások között**|Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) konfiguráljon az eszközön|
+|**A korlátozások bekapcsolásának engedélyezése a felhasználó számára az eszközbeállítások között**|Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) állítson be az eszközön.|
 |**Internetes eredmények visszaadásának engedélyezése a Spotlight kereső számára**|Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, hogy további találatokat adjon vissza.|
 |**A Game Center alkalmazás használatának engedélyezése**|A Game Center alkalmazás használatának engedélyezése.|
-|**Az iOS-alapú eszközzel párosítható eszközök szabályozásának engedélyezése a gazdapárosítási (host pairing) funkció számára**|A gazdapárosítási funkcióval a rendszergazda szabályozhatja, hogy az iOS 7-alapú eszköz milyen eszközökkel legyen párosítható.|
+|**Az iOS-alapú eszközzel párosítható eszközök szabályozásának engedélyezése a gazdapárosítási (host pairing) funkció számára**|A gazdapárosítási (host pairing) funkcióval a rendszergazda szabályozhatja, hogy az iOS 7-alapú eszköz milyen eszközökkel legyen párosítható.|
 |**Konfigurációs profilok és tanúsítványok telepítésének engedélyezése a felhasználó számára**|Engedélyezi, hogy a felhasználó konfigurációs profilokat és tanúsítványokat telepítsen.|
 |**Az Üzenetek alkalmazás használatának engedélyezése az eszközön**|Engedélyezi az Üzenetek alkalmazást a szöveges üzenetek küldéséhez.|
 
 
 ## Egyéni szabályzatbeállítások
 
-A Microsoft Intune **egyéni iOS-szabályzat** használatával az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállítások iOS-alapú eszközökre telepíthetők. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később Intune iOS-szabályzatokba importálhatók, és a beállítások telepíthetők a szervezetben lévő felhasználók és eszközök számára.
+A Microsoft Intune **Egyéni iOS-szabályzat** használatával az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállítások iOS-alapú eszközökre telepíthetők. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később Intune iOS-szabályzatokba importálhatók, és a beállítások telepíthetők a szervezetben lévő felhasználók és eszközök számára.
 
-Ezzel a funkcióval olyan iOS-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános konfigurációs szabályzatával.
+Ezzel a funkcióval olyan iOS-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános konfigurációs szabályzataival.
 
 ### Előfeltételek
-Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létre kell hoznia a felhasználók vagy eszközök számára telepíteni kívánt beállításokat tartalmazó konfigurációs fájlt. Az Apple Configurator eszköz letöltése és az azzal kapcsolatos információk a [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)áruházban érhetők el
+Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létre kell hoznia a felhasználók vagy eszközök számára telepíteni kívánt beállításokat tartalmazó konfigurációs fájlt. Az Apple Configurator eszköz a [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) áruházból tölthető le, ahol további információkat is talál az eszközről.
 
 > [!NOTE]
 > Az Intune nem készít jelentést az egyéni iOS-házirendek egyes beállításainak betartásáról. a teljes házirend betartásáról azonban igen.
@@ -259,15 +258,14 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |Beállítás neve|Részletek|
     |----------------|--------------------|
 |**Egyéni konfigurációs profil neve (megjelenik a felhasználók számára)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
-|**Konfigurációs profilfájl**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatóban talál.|
-    |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil xml-kódját.|
+|**Konfigurációs profilfájl**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatókban talál.|
+    |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil XML-kódját.|
 
 ### További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Az Intune a Windows Phone 8.1-eszközökön beállítható, beép�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 |----------------|-----------------------------------------|
 |**Másolás és beillesztés használatának engedélyezése**|Engedélyezi az eszköznek a másolási és a beillesztési funkció használatát.|Nem|Igen|
 
-### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
-A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja meg a kompatibilis vagy nem kompatibilis eszközök listáját az alábbi információk alapján:
+### Az engedélyezett és letiltott alkalmazások beállításai
+Az **Engedélyezett és letiltott alkalmazások** listában adja meg az engedélyezni vagy letiltani kívánt alkalmazásokat a következő információk alapján:
 
 > [!NOTE]
-> Egy házirendben csak egy, kompatibilis vagy nem kompatibilis alkalmazásokat tartalmazó lista szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
+> Egyetlen szabályzatban csak egy, vagy engedélyezett, vagy letiltott alkalmazásokat tartalmazó lista szerepelhet. Mindkét típusú lista nem adható meg ugyanabban a házirendben.
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 > Ha megadja a kompatibilis alkalmazások listáját a Windows Phone 8.1 rendszerű eszközökhöz, fel kell vennie a Vállalati portál alkalmazást, mert ellenkező esetben az le lesz tiltva.
 
 
-### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
+### Referenciainformációk az engedélyezett és letiltott alkalmazásokhoz
 
 #### Alkalmazás-áruházak URL-címének megadása
-Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, használja a következő formátumot:
+Ha meg szeretné adni egy alkalmazás URL-címét az engedélyezett vagy letiltott alkalmazások listájában, használja a következő formátumot:
 
 A [Windows Phone Alkalmazások+játékok lapon](http://www.windowsphone.com/en-us/store/overview) keressen rá a használni kívánt alkalmazásra.
 
-Nyissa meg az alkalmazás lapját, és másolja az URL-címet a vágólapra. Most ezt a címet felhasználhatja URL-címként a kompatibilis vagy a nem kompatibilis alkalmazások listájában.
+Nyissa meg az alkalmazás lapját, és másolja az URL-címet a vágólapra. Ezt a címet az engedélyezett és a tiltott alkalmazások listájában egyaránt használhatja URL-címként.
 
 **Például:** Keressen rá az áruházban a Skype alkalmazásra. A használt URL-cím a következő: **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

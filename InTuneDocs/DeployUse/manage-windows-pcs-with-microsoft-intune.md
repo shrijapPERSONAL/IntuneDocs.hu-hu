@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Serve
 Habár az Intune-ügyfél támogatja a [számítógépeket védő szabályzatok](policies-to-protect-windows-pcs-in-microsoft-intune.md) használatát, amelyek a szoftverfrissítések, a Windows tűzfal és a végpontvédelem felügyeletével segítenek a védelemben, de az Intune-ügyfél által felügyelt számítógépek nem lehetnek egyéb Intune-házirendek célpontjai.
 
 > [!NOTE]
-> A Windows 8.1 rendszert futtató eszközöket kezelheti az Intune-ügyfélprogrammal, vagy mobileszközként is regisztrálhatja őket. Az alábbi információ az Intune-ügyfélprogramot futtató számítógépekre érvényes. Az Intune-számítógépügyfél telepítésének és a Windows-eszköz mobileszköz-felügyeletbe való regisztrálásának együttes végrehajtása nem támogatott.
+> A Windows 8.1-et vagy annál újabb verziót futtató eszközök kezelhetők az Intune ügyfélprogrammal vagy regisztrálhatók mobileszközként is. Az alábbi információ az Intune-ügyfélprogramot futtató számítógépekre érvényes. Az Intune-számítógépügyfél telepítésének és a Windows-eszköz mobileszköz-felügyeletbe való regisztrálásának együttes végrehajtása nem támogatott.
 
 ## Az Intune-számítógépügyfél általi felügyelet követelményei
 
@@ -86,6 +86,6 @@ Az Intune-ügyfélügynök általában a háttérben fut, és ritkán van csak s
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

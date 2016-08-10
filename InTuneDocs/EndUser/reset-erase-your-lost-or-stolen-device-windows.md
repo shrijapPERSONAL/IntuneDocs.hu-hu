@@ -3,8 +3,8 @@ title: "Elveszett vagy ellopott Windows-eszköz alaphelyzetbe állítása (tarta
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -34,7 +34,7 @@ Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a 
 
 2.  Az **Eszközök** területen válassza ki az elveszett vagy ellopott eszközt.
 
-3.  Koppintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
+3.  Koppintson az **Alaphelyzet** ikonra, majd az **Alaphelyzetbe állít** elemre.
 
 Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje az IT-csoport segítségét az eszköz alaphelyzetbe állításához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
@@ -42,6 +42,7 @@ Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje
 [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 147765f6e8225e8e1d9d8e64473e8b6988256b03
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
 
 
 ---
 
 # Android-eszközök kezelésének beállítása
+Windows-eszköz beállításához [itt](../enduser/using-your-android-device-with-intune.md) talál segítséget.
+
 A Microsoft Intune segítségével lehetővé teheti a saját Android-eszközök használatát (BYOD) anélkül, hogy ehhez Önnek bármit tennie kellene azon a platformon.
 
 További információkért válassza a kívánt eszközplatformot ismertető cikket:
@@ -41,11 +43,15 @@ Az Android rendszerű mobileszközök lehetővé teszik, hogy a felhasználók a
 3.  **A felhasználók tájékoztatása a vállalati erőforrások eléréséről a vállalati portál használatával**<br>
     A felhasználóknak tudniuk kell, hogy miként regisztrálhatják az eszközeiket, és milyen szolgáltatásokat vehetnek majd igénybe a mobileszköz-kezelésbe bevont eszközeiken. [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  A felhasználóknak tudniuk kell, hogy miként regisztrálhatják az eszközeiket, és milyen szolgáltatásokat vehetnek majd igénybe a mobileszköz-kezelésbe bevont eszközeiken.
+        - [Mit kell tudniuk a végfelhasználóknak a Microsoft Intune használatáról?](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Végfelhasználói útmutató Windows-eszközökhöz](../enduser/using-your-android-device-with-intune.md)
+
 ### További információ
 [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
