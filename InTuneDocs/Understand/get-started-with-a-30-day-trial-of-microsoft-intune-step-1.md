@@ -2,9 +2,9 @@
 title: "Regisztráció a Microsoft Intune 30 napos próbaidőszakára | Microsoft Intune"
 description: "Az Intune 30 napos ingyenes próbaidőszakára való feliratkozás, valamint mindaz, amit a feliratkozás előtt figyelembe kell vennie"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1ea97c93f7094572fa5fb6eb34e039369e91334b
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
 
 
 ---
@@ -61,6 +61,6 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 1. l
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

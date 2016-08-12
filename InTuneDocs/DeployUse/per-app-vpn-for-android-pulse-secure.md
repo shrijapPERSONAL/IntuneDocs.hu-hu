@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először egy Pulse Secure kapcsolattípust használó VPN-profilt, majd az adott alkalmazásokat használó profilhoz társított egyéni konfigurációs szabályzatot kell létrehoznia. Miután telepítette ezeket a szabályzatokat Android-eszközén vagy a felhasználói csoport számára, a megadott alkalmazások valamelyikének megnyitása elindít az eszközön egy VPN-kapcsolatot az adott alkalmazáshoz.
 
-> [MEGJEGYZÉS]
+> [!NOTE]
 > 
 > Ez a profil csak a Pulse Secure kapcsolattípust támogatja.
 
@@ -37,7 +37,8 @@ Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profi
 4. Fejezze be a beállítást, és mentse a VPN-profilt. A VPN-profilokkal kapcsolatban bővebben lásd a [VPN-kapcsolatok](vpn-connections-in-microsoft-intune.md) témakört.
 
 > [!NOTE]
-Jegyezze fel a VPN-profil nevét a következő lépéshez. Például: **AlkVpnProfil**.
+> 
+> Jegyezze fel a VPN-profil nevét a következő lépéshez.   Például: **AlkVpnProfil**.
 
 ### 2. lépés: Egyéni konfigurációs szabályzat létrehozása
 
@@ -81,6 +82,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

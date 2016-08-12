@@ -2,9 +2,9 @@
 title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Intune"
 description: "Eszközcsoportok és felhasználói csoportok létrehozása az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8045703bf7eb0f03906f44303509a4b81ae62270
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 6cab173d7ef4a1d7bcea3193265e0729c93a214e
 
 
 ---
@@ -33,7 +33,7 @@ Az eszközcsoportok használatával szoftvereket és frissítéseket telepíthet
 
 4.  A **Közvetlen tagság meghatározása** lapon válassza a **Tovább** gombot. Ha előzőleg olyan csoportot hozott létre, amely nem tartalmazza az összes eszközt, és konkrét eszközöket szeretne hozzáadni az új csoporthoz, azt itt teheti meg.
 
-5.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket, majd válassza a **Befejezés** gombot.
+5.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket, majd kattintson a **Befejezés** gombra.
 
 Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listájának **Minden eszköz**lapján. Itt szerkesztheti és törölheti is a csoportot.
 
@@ -65,6 +65,6 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 3. l
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
