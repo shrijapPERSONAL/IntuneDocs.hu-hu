@@ -4,7 +4,7 @@ description: "Az Intune lehetővé teszi a Microsoft mennyiségi licencszerződ�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,27 +13,27 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 73fcb4c984f57834655d5d1df14425a66afa2cec
+ms.sourcegitcommit: cf7e9b9638c82cba7640c2be54166ef5df581673
+ms.openlocfilehash: ae4ae586c020322f792817b25f8b1b6e2ee02cfd
 
 
 ---
 
 # Windows-számítógépes szoftverek licencszerződéseinek kezelése a Microsoft Intune-ban
-A Microsoft Intune lehetővé teszi a Microsoft mennyiségi licencszerződéseinek keretében beszerzett, valamint a Microsofttól vagy nem a Microsofttól származó, egyéb módon megvásárolt szoftverek licencszerződés-adatainak hozzáadását és kezelését. Ezek az adatok logikai csoportokba is rendezhetők.
+A Microsoft Intune a Microsoft mennyiségi licencszerződéssel vásárolt szoftverek licencszerződés-információinak felvételét és kezelését teszi lehetővé. Ugyanez lehetséges a Microsofttól vagy nem Microsofttól származó, egyéb módon vásárolt szoftverek esetében is. Ezek az információk logikai csoportokba rendezhetők.
 
 > [!IMPORTANT]
-> Ez a funkció csupán kényelmi célokat szolgál, és pontossága nem garantált. Ezek az adatok nem használhatók fel a Microsoft mennyiségi licencszerződéseknek való megfelelés ellenőrzésére. A Microsoft nem használja a gyűjtött adatokat a velünk kötött licencszerződések lehetséges megsértésének vagy betartásának vizsgálatára.
-> 
-> Az Intune-hoz hozzáadott licencek nincsenek hatással a szoftver használatára vonatkozó licencszerződésekre és jogosultságokra.  Ha például töröl egy licencszerződéspárt az Intune-ból, azzal nem törli és nem érvényteleníti az Ön és a Microsoft közötti licencszerződéseket.
+> Ez a funkció kizárólag kényelmi célokat szolgál, és pontossága nem garantált. Ezek az adatok nem használhatók fel a Microsoft mennyiségi licencszerződéseknek való megfelelés ellenőrzésére. A Microsoft nem használja a gyűjtött adatokat a vele kötött licencszerződések lehetséges megsértésének vagy betartásának vizsgálatára.
+>
+> Az Intune-hoz hozzáadott licencek nincsenek hatással a szoftver használatára vonatkozó licencszerződésekre és jogosultságokra. Ha például töröl egy licencszerződéspárt az Intune-ból, azzal nem törli és nem érvényteleníti az Ön és a Microsoft közötti licencszerződéseket.
 
 Az Intune felügyeleti konzoljának **Licencek** munkaterületén a következőkre van lehetősége:
 
--   Microsoft mennyiségi licencszerződések hozzáadása és szerkesztése
+-   Microsoft mennyiségi licencszerződések hozzáadása és szerkesztése.
 
--   Egyéb szoftverek licencszerződéseinek hozzáadása és szerkesztése
+-   Egyéb szoftverlicenc-szerződések hozzáadása és szerkesztése.
 
--   Licencek és csoportok kezelése
+-   Licencek és csoportok kezelése.
 
 -   Az Intune által a Mennyiségi licencelési szolgáltatásközpont (VLSC) webhelyéről lekérdezett jogosultsági információk összehasonlítása azon Microsoft-szoftverekkel, amelyeket az Intune az Ön felügyelt Windows-számítógépein észlel.
 
@@ -45,13 +45,13 @@ Emellett olyan jelentéseket is létrehozhat, amelyek megjelenítik a szoftverek
 ## Microsoft mennyiségi licencszerződések hozzáadása
 Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerződéseken keresztül vásárolt szoftverek licencinformációit tartalmazzák. Ha Microsoft mennyiségi licencszerződéseket szeretne hozzáadni az Intune-hoz, adja meg a szerződésszámok egyeztetett párjait. A szerződés- vagy engedélyezési számokat egyeztetni kell a megfelelő licenc- vagy regisztrációs számokkal. A szerződésszámpárokat akkor kapja meg, amikor licencszerződéseket vásárol a [Mennyiségi Licencelési Szolgáltatásközpontból (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://account.manage.microsoft.com/admin/default.aspx)kattintson az **Licencek**elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://account.manage.microsoft.com/admin/default.aspx) válassza a **Licencek** elemet.
 
 2.  A **Szerződések hozzáadása** lap **Szerződés típusának kiválasztása** területén válassza a **Mennyiségi licencszerződés** lehetőséget.
 
-3.  A **Szerződés adatainak hozzáadása** területen válasszon az alábbi lehetőségek közül:
+3.  A **Szerződés adatainak hozzáadása** szakaszban válasszon a fájlfeltöltés vagy az adatok manuális hozzáadása közül.
 
-    -   **Szerződésadatokat tartalmazó CSV-fájl feltöltése** – Kattintson a Tallózás gombra, és válassza ki a feltölteni kívánt CSV-fájlt.
+    -   **Szerződésadatokat tartalmazó CSV-fájl feltöltése**. Kattintson a **Tallózás** elemre, és válassza ki a feltöltendő CSV-fájlt.
 
         -   A fájl két vagy három oszlopot tartalmazhat: kettőt csak a szerződéspárokhoz, vagy hármat abban az esetben, ha az egyes szerződéspárokhoz rövid nevet is szeretne megadni.
 
@@ -63,17 +63,17 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
         -   A fájl neve nem lehet hosszabb 128 karakternél.
 
-        -   A fájlnak legalább egy szerződéspárt kell tartalmaznia és nem tartalmazhat 5000 szerződéspárnál többet.
+        -   A fájlnak legalább egy szerződéspárt kell tartalmaznia, és nem szerepelhet benne 5000 szerződéspárnál több.
 
         **A fájl formátuma**
 
         A fájl létrehozásához adja meg a szerződéspárokat egy egyszerű szöveges dokumentumban a következő formátumok egyikében, a VLSC webhelyen regisztrált szervezettípustól függően. Soronként egy szerződésszámpár szerepeljen.
 
-        -   **Nyitottértékügyfelek:** *Szerződésszám*, *a szerződésszám ismétlése*, *szerződésnév*
+        -   **Open Value-ügyfelek:** *szerződésszám*, *szerződésszám ismétlése*, *szerződés neve*
 
-        -   **Nyitott ügyfelek:** *Engedély száma*, *kapcsolódó licencszám*, *szerződésnév*
+        -   **Open-ügyfelek:** *engedélyezési szám*, *kapcsolódó licencszám*, *szerződésnév*
 
-        -   **Kiemelt és vállalati ügyfelek:** *Szerződésszám*, *kapcsolódó regisztrációs szám*, *szerződésnév*
+        -   **Select- és nagyvállalati ügyfelek:** *szerződésszám*, *kapcsolódó regisztrációs szám*, *szerződésnév*
 
         A **Szerződések hozzáadása** űrlap új szerződések hozzáadásakor megkéri, hogy keresse meg az adott fájlt.
 
@@ -81,7 +81,7 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
         `01-07001, 01-07001, Office agreements`
 
-    -   **Szerződés adatainak manuális hozzáadása** – Adja meg az alábbi adatokat, majd írja be a szerződésszámpárokat az **Engedély/szerződés száma** és a **Licenc/igyénylés/ügyfél száma** mezőbe. Miután beírta mindkét számot, kattintson a **Pár hozzáadása** ikonra a számok mentéséhez, majd ha szükséges, hozzáadhat további párokat.
+    -   **Szerződés adatainak manuális hozzáadása**. Adja meg az alábbi adatokat, majd írja be a szerződésszámpárokat az **Engedély/szerződés száma** és a **Licenc/igyénylés/ügyfél száma** mezőbe. Miután beírta mindkét számot, válassza a **Pár hozzáadása** ikont a számok mentéséhez, majd ha szükséges, hozzáadhat további párokat.
 
         -   **Szerződés neve** – Adja meg a szerződés egyedi nevét.
 
@@ -94,21 +94,21 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
         > [!NOTE]
         > Ha több szerződésszámpárt ad hozzá, az Intune egy szerződést hoz létre a megadott névvel, és a hozzáadott összes pár ezen szerződés részét fogja képezni.
 
-    A **+** jelre kattintva adhat hozzá másik szerződésszámpárt, a **-** jelre kattintva pedig eltávolíthat egy korábban már megadott szerződésszámpárt.
+    A **+** jel kiválasztásával adhat hozzá másik szerződésszámpárt, a **-** jel kiválasztásával pedig eltávolíthat egy korábban már megadott szerződésszámpárt.
 
 4.  A **Licenccsoport kiválasztása** területen tegye a következők valamelyikét:
 
-    -   **A szerződések hozzáadása a Hozzá nem rendelt szerződések csoporthoz** Válassza ezt a lehetőséget, ha az új szerződéseket nem szeretné licenccsoporthoz adni.
+    -   **A szerződések hozzáadása a Hozzá nem rendelt szerződések csoporthoz**. Válassza ezt a lehetőséget, ha nem szeretne új szerződéseket hozzáadni egy licenccsoporthoz.
 
-    -   **A szerződések hozzáadása új licenccsoporthoz** – Adja meg a használni kívánt új licenccsoport nevét.
+    -   **A szerződések hozzáadása új licenccsoporthoz**. Adja meg az új licenccsoport nevét.
 
-    -   **A szerződések hozzáadása meglévő licenccsoporthoz** – A **Csoport neve** listában válassza ki azt a licenccsoportot, amelyhez a szerződéseket hozzá szeretné adni.
+    -   **A szerződések hozzáadása meglévő licenccsoporthoz**. A **Csoport neve** listában válassza ki azt a licenccsoportot, amelyhez a szerződéseket hozzá szeretné adni.
 
-5.  Kattintson az **OK**gombra.
+5.  Válassza az **OK** gombot.
 
-Megjelenik a **Minden szerződés** nézet, és az Intune a megadott szerződésszámpárok érvényesítése érdekében kapcsolódik a Microsoft mennyiségi licencszolgáltatási központjához.
+Megjelenik a **Minden szerződés** nézet, és az Intune a megadott szerződésszámpárok érvényesítése céljából kapcsolódik a Microsoft VLSC webhelyhez.
 
-Ha a licencszerződéseknek az Intune-hoz való hozzáadását követően szeretné frissíteni a mennyiségi licencekre vonatkozó információkat, kattintson a **Licencek – áttekintés** lap **Frissítés most** elemére. Ez a művelet lekérdezi az aktuális licencinformációkat a [Microsoft Mennyiségi Licencelési Szolgáltatásközpontból (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+Ha a licencszerződéseknek az Intune-hoz való hozzáadását követően szeretné frissíteni a mennyiségi licencekre vonatkozó információkat, válassza a **Licencek – áttekintés** lap **Frissítés most** elemét. Ez a művelet lekérdezi az aktuális licencinformációkat a [Microsoft Mennyiségi Licencelési Szolgáltatásközpontból (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > A mennyiségi licencelési információk frissítéséig más adatokat láthat a szerződéslistában és a **Szerződések áttekintése** lap jogosultsági információinál.
@@ -130,9 +130,9 @@ Az Intune-hoz a Microsoft mennyiségi licencszerződésektől eltérő típusú 
 
 ### Egyéb szoftverszerződések hozzáadása
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://account.manage.microsoft.com/admin/default.aspx)kattintson az **Licencek**elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://account.manage.microsoft.com/admin/default.aspx) válassza a **Licencek** elemet.
 
-2.  Kattintson az **Egyéb szoftverlicenc-szerződések** szakasz **Szerződések hozzáadása** elemére.
+2.  Válassza az **Egyéb szoftverlicenc-szerződések** szakasz **Szerződések hozzáadása** elemét.
 
 3.  Válassza a **Szerződések hozzáadása** lap **Szerződéstípus választása** szakaszának **Egyéb szoftverlicenc-szerződések** elemét.
 
@@ -163,7 +163,7 @@ Az Intune-hoz a Microsoft mennyiségi licencszerződésektől eltérő típusú 
 
     -   Válassza a **Szerződések hozzáadása meglévő licenccsoporthoz** lehetőséget az új szerződések hozzáadásához egy meglévő licenccsoporthoz. A **Csoport neve** listában válassza ki azt a licenccsoportot, amelyhez a szerződéseket hozzá szeretné adni.
 
-6.  Kattintson az **OK**gombra.
+6.  Válassza az **OK** gombot.
 
 Megjelenik a **Minden szerződés** listanézet.
 
@@ -173,16 +173,13 @@ A szoftverlicenc-szerződéseket licenccsoportokhoz lehet hozzáadni. A licenccs
 |||
 |-|-|
 |Feladat|Részletek|
-|Licenccsoport létrehozása|A **Licencek** munkaterület **Áttekintés** lapján kattintson a **Feladatok** menü **Licenccsoport létrehozása** parancsára. **Megjegyzés:** legfeljebb 500 licenccsoportot hozhat létre.|
-|Licenccsoport átnevezése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd kattintson a **Feladatok** menü **Licenccsoport szerkesztése** elemére.|
-|Licenccsoport törlése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd kattintson a **Feladatok** menü **Licenccsoport törlése** parancsára. **Tipp:** a törölt csoportban lévő összes licenc a **Hozzá nem rendelt szerződések** licenccsoportba kerül.|
-|Licencszerződések törlése|A **Licencek** munkaterületen válasszon ki egy szerződést, majd kattintson a **Törlés** elemre. **Tipp:** Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez kattintson a **Licencek áttekintése** lap vagy az adott licenccsoport **Általános** lapjának **Frissítés most** gombjára.|
+|Licenccsoport létrehozása|A **Licencek** munkaterület **Áttekintés** lapján válassza a **Feladatok** menü **Licenccsoport létrehozása** parancsát. **Megjegyzés:** legfeljebb 500 licenccsoportot hozhat létre.|
+|Licenccsoport átnevezése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd válassza a **Feladatok** menü **Licenccsoport szerkesztése** elemét.|
+|Licenccsoport törlése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd válassza a **Feladatok** menü **Licenccsoport törlése** parancsát. **Tipp:** a törölt csoportban lévő összes licenc a **Hozzá nem rendelt szerződések** licenccsoportba kerül.|
+|Licencszerződések törlése|A **Licencek** munkaterületen válasszon egy szerződést, majd válassza a **Törlés** elemet. **Tipp:** Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez válassza a **Licencek áttekintése** lap vagy az adott licenccsoport **Általános** lapjának **Frissítés most** elemét.|
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

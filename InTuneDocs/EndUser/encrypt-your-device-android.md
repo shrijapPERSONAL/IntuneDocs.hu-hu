@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -34,13 +34,29 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 3.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
 
 ### Mi a teendő ha problémába ütközik?
-**Probléma**: Már titkosította az eszközt, és a következők egyikét látja:
+**Probléma:** Már titkosította az eszközt, és a következők egyikét látja:
 
 - A titkosítási gomb le van tiltva.
 - Egy üzenet azt jelzi, hogy titkosítania kell az eszközt.
 - Hibaüzenet jelenik meg a Vállalati portál alkalmazás használatakor.
 
-**Megoldás**: Győződjön meg arról, hogy beállított egy PIN-kódot vagy jelszót az eszközön.
+**Az alábbiakkal próbálkozhat:** 
+
+1. Ellenőrizze, hogy az eszköz fel van-e töltve és csatlakoztatva van-e.
+
+2. Ellenőrizze, hogy beállított-e PIN-kódot vagy jelszót az eszközön.
+
+3. Ha már beállította a PIN-kódot vagy jelszót, próbálkozzon az alábbi lépésekkel, amelyeket a rendszergazda megkövetelhet az eszköz biztonságosabbá tételéhez. A lépésekben szereplő menünevek kissé eltérhetnek az eszközön láthatóktól, attól függően, hogy milyen Android-eszközt használ.
+
+    a. Válassza a **Settings** (Beállítások) > **Security** (Biztonság) > **Screen lock** (Képernyőzár) lehetőséget. Erősítse meg jelenlegi PIN-kódját vagy jelszavát.
+
+    b. A **Choose screen lock** (Képernyőzár kiválasztása) képernyőn válassza ki a használni kívánt képernyőzárat.
+
+    c. A **Secure start-up** (Biztonságos indítás) képernyőn koppintson a **Require PIN to start device** (PIN-kód kérése az eszköz indításához), majd a **Continue** (Folytatás) elemre.
+
+    d. Adjon meg egy PIN-kódot (a korábban megadott PIN-kódot is beírhatja), és koppintson a **Confirm your PIN** (PIN-kód megerősítése) elemre.
+
+    e. Nyissa meg a Vállalati portál alkalmazást, jelölje ki az eszközét, és koppintson a **Megfelelőség ellenőrzése** elemre.
 
 További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
 
@@ -49,6 +65,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolat
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

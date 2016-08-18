@@ -2,7 +2,7 @@
 title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microsoft Intune"
 description: "Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástelepítéssel kapcsolatos problémák megoldásához nyújt segítséget."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,27 +13,22 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Alkalmazástelepítéssel kapcsolatos problémák elhárítása a Microsoft Intune-ban
-Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástelepítéssel kapcsolatos problémák megoldásához nyújt segítséget.
+Ha problémába ütközik az alkalmazások Intune-nal történő telepítése vagy felügyelete során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
-Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
+## Gyakori alkalmazástelepítési problémák
 
+### A felhasználó nem tud bejelentkezni az Intune Vállalati portálra
 
-## Jellemző alkalmazástelepítési problémák
+1.  Ellenőrizze, hogy létezik-e a felhasználói fiók és engedélyezett-e az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Ha nem tud bejelentkezni a Microsoft Intune Vállalati portálra
-
-1.  Ellenőrizze, hogy a fiók létezik-e az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854), vagy hogy nincs-e letiltva.
-
-2.  Győződjön meg róla, hogy regisztrálva van-e ehhez a fiókhoz az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) győződjön meg róla, hogy a helyes felhasználónévvel és jelszóval próbál-e bejelentkezni az Intune-ba, illetve, hogy ezeket a következő formátumban adta-e meg: **joe@tartomány.com**.
+3.  Az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) győződjön meg róla, hogy a felhasználó helyes felhasználónévvel próbál bejelentkezni az Intune-ba és azt a **jozsef@tartomany.com** formátumban adja meg. Ha úgy látszik, hogy a felhasználó helytelen jelszót ad meg, kérje meg, hogy kérjen újat.
 
 ### Ha hiányzik az IT-csoport elérhetőségével kapcsolatos információ a vállalati portálról
 
@@ -105,6 +100,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

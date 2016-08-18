@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
-ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 768dd08ad838b621f18a24747618ef1e37c5c804
 
 
 ---
@@ -55,7 +55,7 @@ A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartás
 
 |Mező neve|Maximális hossz|További információ|
     |----------|------------------------|----------------|
-    |A cég neve|40|Ez a név a Vállalati portál címeként jelenik meg.|
+    |A cég neve|40|Ez a név a Vállalati portál címeként jelenik meg. **Megjegyzés:**: Csak alfanumerikus karaktereket tartalmazhat. Ez a mező nem támogatja a speciális karaktereket.|
     |IT-részleg kapcsolattartójának a neve|40|Ez a név az **IT-csoport elérhetősége** lapon jelenik meg.|
     |IT-részleg telefonszáma|20|Ez a telefonszám az **IT-csoport elérhetősége** lapon jelenik meg.|
     |IT-részleg e-mail címe|40|Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail-címet az **alias@tartománynév.com** formátumban.|
@@ -109,6 +109,6 @@ További lehetőségek:
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

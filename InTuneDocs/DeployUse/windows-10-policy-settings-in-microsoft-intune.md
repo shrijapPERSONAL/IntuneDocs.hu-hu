@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Az ebben a témakörben ismertetett szabályzatbeállítások segítségével ko
 A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurációs szabályzatát** regisztrált asztali Windows 10- és Windows 10 Mobile-eszközökhöz használhatja. 
 
 
-### Jelszó
+## - Jelszó
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Korábbi jelszavak megjegyzése** - **Korábbi jelszavak újbóli használatának tiltása**|Ez a beállítás a eszköz által megjegyzett korábbi jelszavak számát határozza meg.|
 |**Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**|Engedélyezése esetén a felhasználónak meg kell adnia egy jelszót, ha szeretné feloldani az inaktív állapotú eszköz zárolását.<br>(csak a Windows 10 Mobile)|
 
-### Titkosítás
+## - Titkosítás
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|
 |**Mobileszköz titkosításának kötelezővé tétele**|Aktiválja a titkosítást a megcélzott eszközökön.<br>(csak a Windows 10 Mobile)|
 
-### Rendszer
+## - Rendszer
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Diagnosztikai és használati adatok küldésének engedélyezése a Microsoft felé**|Meghatározza, hogy az eszközök mennyi diagnosztikai és használati adatot küldjenek a Microsoftnak.<br><br>**Nem** – Az eszköz nem küld adatokat a Microsoftnak.<br>**Alapszintű** – Az eszköz csak korlátozott mennyiségű információt küld a Microsoftnak.<br>**Bővített** – Az eszköz bővebb diagnosztikai adatokat küld a Microsoftnak.<br>**Teljes (ajánlott)** – A **Bővített** beállítással küldött adatok mellett az eszköz állapotával kapcsolatos információkat is küld.|
 
 
-### Fiók és szinkronizálás
+## - Fiók és szinkronizálás
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Nem Microsoft-fiókok manuális felvételének engedélyezése**|Lehetővé teszi, hogy a felhasználó olyan e-mail fiókokat vegyen fel az eszközön, amelyek nincsenek Microsoft-fiókhoz társítva.|
 |**Beállítások szinkronizálásának engedélyezése Microsoft-fiók esetén**|Lehetővé teszi a Microsoft-fiókhoz kapcsolódó eszköz- és alkalmazásbeállítások szinkronizálását az eszközök között.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**Jelszókezelő engedélyezése**|Az Edge böngésző Jelszókezelő szolgáltatásának engedélyezése vagy letiltása.|
 |**Vállalati üzemmód webhelylistájának helye**|Megadja, hogy hol található a Vállalati üzemmódban megnyitott webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(csak a Windows 10 asztali verzió)|
 
-### Alkalmazások
+## - Alkalmazások
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 
 
 
-### Mobil
+## - Mobil
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**VPN engedélyezése mobilhálózaton**|Azt szabályozza, hogy az eszköz létesíthet-e VPN-kapcsolatot mobilhálózat használata esetén.|
 |**VPN engedélyezése mobilhálózati roaming esetén**|Azt szabályozza, hogy az eszköz létesíthet-e VPN-kapcsolatot mobilhálózati roaming esetén.|
 
-### Hardver
+## - Hardver
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**USB-kapcsolat engedélyezése**|Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.|
 |**Lopásgátló üzemmód engedélyezése**|Annak beállítása, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.|
 
-### Jellemzők
+## - Jellemzők
 
 |Beállítás neve|Részletek|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ A Microsoft Intune Windows 10-eszközökhöz készült **általános konfigurác
 |**A Cortana engedélyezése**|A Cortana beszédfelismerési asszisztens engedélyezése vagy letiltása.|
 |**Műveletközponti értesítések engedélyezése**|Műveletközponti értesítések engedélyezése vagy letiltása az eszköz zárolási képernyőjén.<br>(csak a Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 
@@ -162,7 +162,7 @@ Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 |**A vizsgálatok futtatásakor vagy a valós idejű védelem használatakor kizárandó folyamatok**|Vegye fel a kívánt típusú folyamatokat – **.exe**, **.com** vagy **.scr** – a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a folyamatokat.| 
 
 
-### Frissítések beállításai
+## - Frissítések
 
 |Beállítás neve|Részletek|
 |----------------|---------------|
@@ -176,14 +176,14 @@ E funkció révén olyan Windows 10-beállításokat léptethet érvénybe, amel
 
 
 
-### Egyéni házirendek általános beállításai
+## - Általános
 
 |Beállítás neve|Részletek|
     |----------------|--------------------|
     |**Név**|Adjon meg egy egyedi nevet a házirend számára, hogy azonosítható legyen az Intune konzolján.|
     |**Leírás**|Adjon meg egy olyan leírást, amely áttekintést nyújt a szabályzatról, valamint más olyan releváns információkat tartalmaz, amelyek segítenek megkeresésében.|
 
-### Egyéni házirendek OMA-URI-beállításai
+## - OMA-URI-beállítások
 
 |Beállítás neve|Részletek|
     |--------|--------------------|
@@ -194,12 +194,12 @@ E funkció révén olyan Windows 10-beállításokat léptethet érvénybe, amel
     |**Érték**|Adja meg a korábban megadott OMA-URI azonosítóhoz társítandó értéket.|
 
 
-## Windows 10-eszközök egyéni URI-beállításai
+## Windows 10 URI-beállítások
 Ez a témakör a Microsoft Intune **egyéni Windows 10-házirendjeiben** konfigurálható beállításokat sorolja fel Windows 10- és Windows 10 Mobile-eszközökhöz.
 
 Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kívánja az egyéni Windows URI-házirendet.
 
-### Házirendek URI-beállításai
+## - Házirend
 
 |Házirend neve|Részletek|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kí
 |**Update/DeferUpgradePeriod**<br>(az asztali és mobilos verzióknál egyaránt)|**Leírás:** A funkciófrissítéseket 8 hónappal késleltető házirend.<br /><br />**URI teljes elérési útja:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Adattípus:** Egész szám<br /><br />**Megengedett értékek:**<br>**0**: A frissítések azonnali alkalmazása (alapértelmezett)<br>**1**-**8**: a rendszer ennyi hónappal késlelteti a funkciófrissítéseket.<br /><br />További információkért lásd:<br>[Bevezetés a Windows 10 karbantartásába](https://technet.microsoft.com/library/mt598226.aspx)<br>[Felkészülés a Windows 10 központi telepítésére](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(az asztali és mobilos verzióknál egyaránt)|**Leírás:** Lehetővé teszi a CBB-gépeknek a frissítések letöltésének leállítását 5 hétre. Ezt akkor kell használni, ha probléma van a frissítéssel.<br /><br />**URI teljes elérési útja:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Adattípus:** Egész szám<br /><br />**Megengedett értékek:**<br>**0**: A frissítések azonnali alkalmazása (alapértelmezett)<br>**1**: A frissítések és verziófrissítések szüneteltetése (5 hét után lejár)|
 
-### A Windows Defender URI-beállításai
+## - Windows Defender
 
 |Házirend neve|Részletek|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kí
 |**ExcludedPaths**<br>(csak asztali verziók)|**URI teljes elérési útja:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Adattípus:** Karakterlánc<br /><br />**Megengedett értékek:**<br /><br />*&lt;az elérési utak listája pontosvesszővel elválasztva&gt;*<br /><br />Például: **c:\test;c:\test1.exe**<br /><br />**Alapértelmezett érték:** Nincsenek elérési utak kizárva|
 |**ExcludedProcesses**<br>(csak asztali verziók)|**URI teljes elérési útja:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Adattípus:** Karakterlánc<br /><br />**Megengedett értékek:**<br>*&lt;az elérési utak listája pontosvesszővel elválasztva&gt;*<br>Például: **c:\test.exe;c:\test1.exe**<br>**Alapértelmezett érték:** Nincs kizárt eljárás|
 
-### Edge böngésző URI-beállításai
+## - Edge böngésző
 
 |Házirend neve|Részletek|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Az összes eszköznek regisztrálva kell lennie az Intune-ban, ha használni kí
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

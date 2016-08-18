@@ -2,9 +2,9 @@
 title: "Az Intune kipróbálásának befejezését követő lépések | Microsoft Intune"
 description: "Tudnivalók az előfizetésekről és a licencelésről a 30 napos ingyenes Intune-próbaidőszak beállítása után"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 3edd1821f910f9c2ea9e8324a3ac08e373ec7b0a
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -28,12 +28,12 @@ Az Intune ingyenes próbaverziójáról a következőképpen válthat a fizetős
 
 -   **Nagyvállalati mobilitási csomag** – a következőket biztosítja: Intune, Azure Active Directory Premium, Azure RMS szolgáltatások. További részletekért forduljon vállalata Microsoft-ügyfélreferenséhez vagy a helyi viszonteladóhoz, illetve ismerkedjen meg a [Nagyvállalati mobilitási csomaggal](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) és [annak díjszabásával](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 
--   **Nagyvállalati Szerződés (EA)** (több mint 250 fő esetére) – a legalább 250 felhasználóval rendelkező szervezetek számára ez a licencprogram jelenti a legjobb választást. A Nagyvállalati Szerződés keretein belül a szükségleteinek megfelelő helyi szoftverek és online szolgáltatások közül választhat, így optimalizálhatja a technológiai kiadásokat. További részletekért forduljon a Microsoft ügyfélfelelőshöz vagy a helyi viszonteladóhoz, vagy tekintse meg a [Nagyvállalati mennyiségi licencelés webhelyét](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
+-   **Nagyvállalati Szerződés (EA)** (&gt;több mint 250 fő esetére) – a legalább 250 felhasználóval rendelkező szervezetek számára ez a licencprogram jelenti a legjobb választást. A Nagyvállalati Szerződés keretein belül a szükségleteinek megfelelő helyi szoftverek és online szolgáltatások közül választhat, így optimalizálhatja a technológiai kiadásokat. További részletekért forduljon a Microsoft ügyfélfelelőshöz vagy a helyi viszonteladóhoz, vagy tekintse meg a [Nagyvállalati mennyiségi licencelés webhelyét](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
--   **Online előfizetési program** (kevesebb mint 250 felhasználó esetére) – az [Online Services mennyiségi licencprogram](http://www.microsoft.com/licensing/online-services/default.aspx) kifejezetten 250-nél kevesebb felhasználóval rendelkező szervezeteknek készült. A program segítségével előfizethet az Intune szolgáltatásokra, valamint kezelheti és telepítheti őket.
+-   **Online előfizetési program** (&lt;250 felhasználó esetére) – [Online Services mennyiségi licencprogram](http://www.microsoft.com/licensing/online-services/default.aspx) kifejezetten a kevesebb, mint 250 felhasználóval rendelkező szervezeteknek. A program segítségével előfizethet az Intune szolgáltatásokra, valamint kezelheti és telepítheti őket.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

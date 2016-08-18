@@ -4,7 +4,7 @@ description: "Hivatkozáslista az Intune-ban regisztrált iOS- és Mac OS X-eszk
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Ezen a lapon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által kezelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk: beléptetéssel kapcsolatos információk, felügyeleti feladatok és megfelelőségi problémák.
+Ebben a cikkben minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat különböző kategóriákba csoportosítottuk: 
+- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban 
+- Eszközregisztráció utáni felügyeleti feladatok
+- Megfelelőségi problémák
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
@@ -61,6 +64,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

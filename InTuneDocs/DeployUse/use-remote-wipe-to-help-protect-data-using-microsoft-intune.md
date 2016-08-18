@@ -13,25 +13,55 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával
-Az eszközökhöz hasonlóan a számítógépekre és mobileszközökre telepített, már felesleges alkalmazások [használatból való kivonása](retire-apps-using-microsoft-intune.md) is hasznos vagy szükséges lehet. Az is előfordulhat, hogy célszerű lenne vállalati adatokat eltávolítani az eszközről. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. A mobileszközök bizalmas vállalati adatokat tárolhatnak, és számos vállalati erőforráshoz nyújtanak hozzáférést. Az Intune segítségével az adatok védelme érdekében távoli törlési parancsot adhat ki az elveszett vagy ellopott eszközök törléséhez. Továbbá a felhasználók kiadhatnak egy távoli törlési parancsot az Intune felületéről az Intune-ban regisztrált saját tulajdonú eszközökre.
+Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, például ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. A felhasználók az Intune Vállalati portálon is kiadhatnak egy távoli törlési parancsot az Intune-ban regisztrált saját tulajdonú eszközökre.
 
   > [!NOTE]
-  > Ez a témakör kizárólag az Intune által felügyelt eszközök tartalmának törlését ismerteti Lehetősége van az [Azure Betekintő portál](https://portal.azure.com) használatával is [törölni a vállalati adatokat az alkalmazásokból](wipe-managed-company-app-data-with-microsoft-intune.md).
+  > Ez a témakör kizárólag az Intune mobileszköz-kezelő által felügyelt eszközök tartalmának törlését ismerteti. Lehetősége van az [Azure Betekintő portál](https://portal.azure.com) használatával is [törölni a vállalati adatokat az alkalmazásokból](wipe-managed-company-app-data-with-microsoft-intune.md). Ezenkívül [kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket.](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Teljes törlés
 
-
 A **Teljes törlés** visszaállítja az eszközt a gyári beállításokra, és eltávolít minden vállalati is felhasználói adatot és beállítást. Az eszközt a rendszer eltávolítja az Intune-ból. A teljes törlés akkor hasznos, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták.  **A teljes törlést óvatosan használja – az eszközről eltávolított adatok nem állíthatók vissza**.
+
 
 > [!Warning]
 > A 4 GB-nál kevesebb RAM-mal rendelkező, Windows 10 RTM rendszerű eszközök (azaz a Windows 10 rendszer 1511-es verziójánál korábbi eszközök) a törlés után használhatatlanná válhatnak. Ha egy Windows 10 rendszerű eszköz nem válaszol, az eszközt egy USB-meghajtóval vagy valamilyen hasonló megoldással lehet elindítani.
+
+### Eszköz tartalmának távoli törlése az Intune felügyeleti konzoljáról
+
+1.  Válassza ki a törlendő eszközöket. Az eszközök felhasználónként vagy eszközönként választhatók ki.
+
+    -   **Felhasználó szerint:**
+
+        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden felhasználó** elemre.
+
+        2.  Kattintson annak a felhasználónak a nevére, akinek a mobileszközét törölni szeretné. Kattintson a **Tulajdonságok megtekintése** elemre.
+
+        3.  A felhasználó **Tulajdonságok** lapján kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Ha a kattintás közben a Ctrl billentyűt lenyomva tartja, több eszközt is kijelölhet.
+
+    -   **Eszköz szerint:**
+
+        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden mobileszköz** lehetőséget.
+
+      ![Kivonási vagy törlési művelet indítása](../media/dev-sa-wipe.png)
+
+        2.  Kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Ha a kattintás közben a Ctrl billentyűt lenyomva tartja, több eszközt is kijelölhet.
+
+2.  Válassza a **Kivonás/Összes adat törlése** lehetőséget.
+
+3.  Ekkor a rendszer kérni fogja az eszköz kivonásának megerősítését.
+
+    -   Ha **szelektív törlést** szeretne végrehajtani, amely csak a vállalati alkalmazásokat és adatokat távolítja el, kattintson az **Igen** gombra.
+
+    -   Minden alkalmazást és adatot törlő és az eszközt a gyári alapértelmezett beállításokra visszaállító **Teljes törlés** végrehajtásához válassza az **Adatok törlése az eszközről annak kivonása előtt** lehetőséget. Ez a művelet minden platformra érvényes, kivéve a Windows 8.1-et. **A teljes törlési funkcióval törölt adatok nem állíthatók vissza**.
+
+Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való terjesztése kevesebb, mint 15 percet vesz igénybe.
 
 ## Szelektív törlés
 
@@ -78,36 +108,6 @@ A **szelektív törlés** a vállalati adatokat, többek között a mobilalkalma
 |E-mail|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket.|Nem támogatott|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.|
 |Azure Active Directory (AAD) elhagyása|Nem|Nem|Törlődik az AAD-rekord|Nem alkalmazható. A Windows 10 nem támogatja az Azure Active Directoryhoz csatlakoztatott eszközök szelektív törlését.|
 
-### Eszköz tartalmának távoli törlése az Intune felügyeleti konzoljáról
-
-1.  Válassza ki a törlendő eszközöket. Az eszközök felhasználónként vagy eszközönként választhatók ki.
-
-    -   **Felhasználó szerint:**
-
-        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden felhasználó** elemre.
-
-        2.  Kattintson annak a felhasználónak a nevére, akinek a mobileszközét törölni szeretné. Kattintson a **Tulajdonságok megtekintése** elemre.
-
-        3.  A felhasználó **Tulajdonságok** lapján kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Ha a kattintás közben a Ctrl billentyűt lenyomva tartja, több eszközt is kijelölhet.
-
-    -   **Eszköz szerint:**
-
-        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden mobileszköz** lehetőséget.
-
-      ![Kivonási vagy törlési művelet indítása](../media/dev-sa-wipe.png)
-
-        2.  Kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Ha a kattintás közben a Ctrl billentyűt lenyomva tartja, több eszközt is kijelölhet.
-
-2.  Válassza a **Kivonás/Összes adat törlése** lehetőséget.
-
-3.  Ekkor a rendszer kérni fogja az eszköz kivonásának megerősítését.
-
-    -   Ha **szelektív törlést** szeretne végrehajtani, amely csak a vállalati alkalmazásokat és adatokat távolítja el, kattintson az **Igen** gombra.
-
-    -   Minden alkalmazást és adatot törlő és az eszközt a gyári alapértelmezett beállításokra visszaállító **Teljes törlés** végrehajtásához válassza az **Adatok törlése az eszközről annak kivonása előtt** lehetőséget. Ez a művelet minden platformra érvényes, kivéve a Windows 8.1-et. **A teljes törlési funkcióval törölt adatok nem állíthatók vissza**.
-
-A törlés összes eszköztípusra való terjesztése kevesebb mint 15 percet vesz igénybe.
-
 ## Titkosítási fájlrendszer (EFS) által védett tartalom törlése
 A Windows 8.1 és a Windows RT 8.1 rendszer támogatja az EFS által védett tartalom szelektív törlését. Az EFS által védett tartalom szelektív törlése az alábbiak szerint működik:
 
@@ -142,6 +142,6 @@ A kivont és törölt eszközök, valamint a műveletet végző felhasználók l
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

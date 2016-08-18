@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ A mobileszköz-operációs rendszert (iOS, Android, Windows Phone) használó es
 |**Leírás**|Személyes eszköz regisztrálva a Microsoft Intune segítségével|Vállalat által birtokolt eszköz egyetlen felhasználó számára|Vállalat által birtokolt, kezelői fiókkal kezelt, sok felhasználó között megosztott eszköz|Vállalati által birtokolt, felhasználó nélküli, sok felhasználó által használt eszköz.|
 |**Az eszköz felhasználója**|Tulajdonos|Hozzárendelt felhasználó|Nincs felhasználóspecifikus fiók|Nincs adott felhasználó|
 |**Regisztrációt végzi**|Tulajdonos|Rendszergazda|Eszközkezelő|Bárki|
-|**Regisztráció törlését végzi**|Tulajdonos vagy a rendszergazda|Rendszergazda|Rendszergazda|Rendszergazda|
+|**Regisztráció törlését végzi**|Tulajdonos vagy a rendszergazda|Platform |Rendszergazda vagy felhasználó|Rendszergazda vagy felhasználó|
 |**Alaphelyzetbe állíthatja**|Tulajdonos vagy a rendszergazda|Rendszergazda|Rendszergazda|Rendszergazda|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Az előzőekben megismert néhány funkciót, amelyeket akkor használhat, ha re
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

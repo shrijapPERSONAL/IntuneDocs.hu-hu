@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -28,7 +28,7 @@ Az Intune-szabályzatok két kategóriába sorolhatók: A használt kategória b
 
 
 - **Konfigurációs szabályzatok:** Ezek általában az eszközök biztonsági beállításainak és szolgáltatásainak kezelésére használhatók. A témakörben található információk alapján megismerheti a szabályzatok létrehozását és telepítését, valamint a rendelkezésre álló beállításokat.
-- **Eszközök megfelelőségi szabályzatai:** Ezek határozzák meg az eszközre vonatkozó szabályokat és beállításokat, amelyek ahhoz szükségesek, hogy az eszköz megfeleljen a feltételes hozzáférési szabályzatok előírásainak. A megfelelőségi szabályzatok a feltételes hozzáféréstől függetlenül is megfigyelheti és kijavíthatja az eszközök megfelelőséggel kapcsolatos hibáit.
+- **Eszközök megfelelőségi szabályzatai:** Ezek határozzák meg az eszközre vonatkozó szabályokat és beállításokat, amelyek ahhoz szükségesek, hogy az eszköz megfeleljen a feltételes hozzáférési szabályzatok előírásainak. A megfelelőségi szabályzatokkal a feltételes hozzáféréstől függetlenül is megfigyelheti és kijavíthatja az eszközök megfelelőséggel kapcsolatos hibáit.
 A részleteket lásd: [Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Feltételes hozzáférési szabályzatok:** Ezekkel a szabályzatokkal a megadott feltételek alapján biztosíthatja a levelezés és más szolgáltatások védelmét.
 A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -100,7 +100,7 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 2.  Válasszon a következő lehetőségek közül:
 
-- **Szerkesztés**: Megnyitja a kiválasztott szabályzat tulajdonságait, hogy módosíthassa azokat.
+- **Szerkesztés**: Megnyitja módosításra a kiválasztott szabályzat tulajdonságait.
 - **Törlés**: Törli a kiválasztott szabályzatot.<br>Ha töröl egy házirendet, az minden olyan csoportból törlődik, ahol telepítve volt.
 - **Központi telepítés kezelése**: Válassza ki azt a csoportot, amely számára telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** gombra.
 
@@ -108,7 +108,7 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 ## A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
 
 ### Mennyi időt vesz igénybe, hogy a mobileszközök megkapják a házirendet vagy az alkalmazásokat a telepítés után?
-Egy házirend vagy alkalmazás telepítésekor az Intune megpróbálja értesíteni az eszközt, hogy jelentkezzen be az Intune-ba. Ez általában 5 percnél kevesebb időt vesz igénybe.
+Egy házirend vagy alkalmazás telepítésekor az Intune megpróbálja értesíteni az eszközt, hogy jelentkezzen be az Intune-ba. Ez általában öt percnél kevesebb időt vesz igénybe.
 
 Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a szabályzatot, az Intune három további kísérletet tesz.  Ha az eszköz kapcsolat nélküli állapotban van (például ki van kapcsolva vagy nem kapcsolódik hálózathoz), előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemezett bejelentkezéskor szerzi be a házirendet a következő módon:
 
@@ -128,7 +128,7 @@ Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a kö
 A felhasználók emellett a Vállalati Portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
 
 ### Milyen műveletek hatására küld az Intune azonnal értesítést egy eszközre?
-Az eszközök akkor jelentkeznek be az Intune-ba, amikor értesítést kapnak a bejelentkezésre, vagy a rendszeresen ütemezett alkalmakkor.  Ha a művelet, például a törlés, a zárolás, a jelszó-visszaállítás, az alkalmazástelepítés, a profiltelepítés (Wi-Fi, VPN, e-mail stb.) vagy a szabályzattelepítés kifejezetten egy eszközre vagy felhasználóra vonatkozik, az Intune azonnal megpróbálja értesíteni az eszközt, hogy be kell jelentkeznie az Intune szolgáltatásba a frissítések fogadásához.
+Az eszközök akkor jelentkeznek be az Intune-ba, amikor bejelentkezési értesítést kapnak, vagy amikor a rendszeres ütemezésű bejelentkezés esedékessé válik.  Ha a művelet, például a törlés, a zárolás, a jelszó-visszaállítás, az alkalmazástelepítés, a profiltelepítés (Wi-Fi, VPN, e-mail stb.) vagy a szabályzattelepítés kifejezetten egy eszközre vagy felhasználóra vonatkozik, az Intune azonnal megpróbálja értesíteni az eszközt, hogy be kell jelentkeznie az Intune szolgáltatásba a frissítések fogadásához.
 
 Az egyéb módosítások – például a kapcsolattartási adatok módosítása a vállalati portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
 
@@ -145,14 +145,14 @@ Ha több szabályzatot telepít ugyanazon felhasználó vagy eszköz számára, 
 -   Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Intune-konzolon is megjelenik. Az ilyen ütközéseket manuálisan kell feloldani.
 
 ### Mi történik, ha a mobilalkalmazás-kezelési házirendek ütköznek egymással? Melyik lesz érvényes az alkalmazásra?
-Az ütközési értékek a MAM-szabályzatok legkorlátozóbb beállításai a számbeviteli mezők kivételével (ilyen például a PIN-kód beviteli próbálkozások száma az alaphelyzetbe állítás előtt).  A számbeviteli mezők értéke ugyanaz lesz, mintha a konzolban hozna létre egy MAM-házirendet a javasolt beállításokkal.
+Az ütközési értékek a MAM-szabályzatok legkorlátozóbb beállításai a számbeviteli mezők kivételével (ilyen például a PIN-kód beviteli próbálkozások száma az alaphelyzetbe állítás előtt).  A számbeviteli mezők értékei megegyeznek a – javasolt beállításokkal a konzolban létrehozható – MAM-házirendek értékeivel.
 
 Akkor történik ütközés, ha két azonos házirend-beállítás van.  Például előfordulhat, hogy a másolás/beillesztés beállításra két megegyező MAM-házirendet konfigurált.  Ebben az esetben a másolás/beillesztés beállítás a legszigorúbb értékre lesz állítva, a többi beállítás pedig a konfiguráltak szerint lesz megadva.
 
 Ha az alkalmazáshoz telepít és érvénybe léptet egy házirendet, majd egy másikat is telepít, akkor az első elsőbbséget élvez és érvényben marad, a második pedig ütközést jelez. Ha egyszerre telepíti őket, tehát nincs első szabályzat, akkor mindkettő ütközést jelez. Minden ütközésnél a legszigorúbb beállítás lesz érvényes.
 
 ### Mi történik, ha az egyéni iOS-házirendek ütköznek?
-Az Intune nem értékeli az Apple konfigurációs fájlok vagy az egyéni OMA-URI-szabályzatok tartalmát. Csak kézbesítési mechanizmusként funkcionál.
+Az Intune nem értékeli a konfigurációs Apple-fájlok vagy az Open Mobile Alliance egységes erőforrás-azonosítóra (OMA-URI) vonatkozó egyéni szabályzatainak tartalmát. Csak kézbesítési mechanizmusként funkcionál.
 
 Ha egyéni szabályzatot telepít, győződjön meg arról, hogy a konfigurált beállítások nem ütköznek a megfelelőségi, konfigurációs vagy az egyéb egyéni szabályzatokkal. A beállítási ütközést tartalmazó egyéni házirendekben a beállítások alkalmazásának sorrendje véletlenszerű.
 
@@ -198,7 +198,7 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
 
 #### Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek
 
-- **Endpoint Protection-beállítások**: A beállítások visszaállnak az ajánlott értékekre. Az egyetlen kivétel a **Csatlakozás a Microsoft Active Protection Service szolgáltatáshoz** beállítás, amelynek az alapértelmezett értéke **Nem**. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Endpoint Protection-beállítások**: A beállítások visszaállnak az ajánlott értékekre. Az egyetlen kivétel a **Kapcsolódás a Microsoft Active Protection Service szolgáltatáshoz** beállítás, amelynek az alapértelmezett értéke **Nem**. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Szoftverfrissítések beállításai**: A beállítások az operációs rendszer alapértelmezett állapotára állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **A Microsoft Intune Center beállításai**: Minden olyan támogatási kapcsolattartási adat törlődik a számítógépről, amelyet a szabályzat adott meg.
 - **A Windows tűzfal beállításai**: A beállítások a számítógép operációs rendszerének alapértelmezett értékeire állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
@@ -215,6 +215,6 @@ Lásd a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

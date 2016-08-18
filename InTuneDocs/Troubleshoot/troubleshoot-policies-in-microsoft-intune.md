@@ -2,7 +2,7 @@
 title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune"
 description: "Elháríthat szabályzatok konfigurációjával kapcsolatos problémákat."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban
 
-Az alábbiakban néhány, a Microsoft Intune szabályzatkonfigurációjából eredő problémát, valamint az elhárításukra vonatkozó javaslatot ismertetünk.
-
-Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
-
+Ha problémába ütközik az Intune-szabályzatok érvénybe léptetése vagy kezelése során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
 ## Vonatkozik szabályzat az eszközre?
 **Probléma:** Nem egyértelmű, hogy vonatkozik-e az eszközre adott szabályzat, vagy az eszköz egy szabályzattal ellentétesen viselkedik-e.
@@ -109,6 +106,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

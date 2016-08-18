@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f941fad998c6c0e07437c8f476df55325a4741b
-ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
+ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
+ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
 
 
 ---
@@ -30,7 +30,7 @@ A következő változtatások vannak fejlesztés alatt az Intune-hoz. Idővel mi
 
 ## Alkalmazáskezelés
 ### Rejtett és megjelenített alkalmazások iOS 9.3 alatt
-Az iOS 9.3-at vagy annál újabb verziójú operációs rendszert futtató eszközök esetében az iOS általános konfigurációs szabályzat rejtett és megjelenített alkalmazások listája segítségével:
+Az iOS 9.3-at vagy annál újabb verziójú operációs rendszert futtató felügyelt eszközök esetében az iOS általános konfigurációs szabályzat rejtett és megjelenített alkalmazások listája segítségével:
 - Megadhatja a felhasználók elől elrejtett alkalmazások listáját. Az ilyen alkalmazásokat a felhasználók nem látják és nem tudják elindítani.
 - Megadhatja a felhasználók által látható és elindítható alkalmazások listáját. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
 
@@ -50,7 +50,7 @@ Ezek a beállítások kizárólag a Samsung KNOX-ot futtató eszközökön haszn
 ### A mobilalkalmazás-kezelési (MAM) szabályzatokkal kompatibilis új alkalmazások
 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) és [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) operációs rendszer alatt a Yammer-alkalmazás kompatibilis lesz az [Intune mobilalkalmazás-kezelési (MAM) szabályzatokkal](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), függetlenül attól, hogy az eszköz regisztrált-e vagy sem.
 
-A MAM-kompatibilis alkalmazások teljes listáját lásd a [Microsoft Intune alkalmazáspartnerek](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) weboldalon.
+A MAM-kompatibilis alkalmazások teljes listáját lásd a [Microsoft Intune-alkalmazáspartnerek](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) webhelyén.
 <!--- TFS 1252335 & 1252336--->
 
 ## Eszközkezelés
@@ -114,7 +114,7 @@ Az új RMS-megosztó alkalmazás megjelenésével 2016 augusztusában megszünte
 - Intune PDF Viewer
 - Intune Image Viewer Android-eszközökre a Google Play Áruházból
 
-Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos Rights Management alkalmazás (RMS-megosztó alkalmazás) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. További információk az RMS-megosztó alkalmazásról (a dokumentációra mutató hivatkozással).
+Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos Rights Management alkalmazás (RMS-megosztó alkalmazás) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. Bővebben az [RMS-megosztó alkalmazásról](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
 <!--- goes in 1608 What's New--->
 
 
@@ -123,6 +123,6 @@ A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

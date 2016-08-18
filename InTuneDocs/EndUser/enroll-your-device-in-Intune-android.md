@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![Adjon meg PIN-kódot vagy jelszót](./media/and-enroll-6-PIN-native.png)
 
-13.  Kövesse az alábbiakban azokat az utasításokat, amelyek megfelelnek az Ön által használt eszköznek (natív Android vagy Samsung Knox). A **Beállítások** &gt; **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „KNOX verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
-
-    -   Natív (nem Samsung Knox típusú) eszköz: Az alapértelmezett tanúsítvány elfogadásához **A tanúsítvány elnevezése** képernyőn koppintson az **OK** gombra.
-
-    ![„A tanúsítvány elnevezése” képernyő](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox eszköz: Fogadja el az adatvédelmi szabályzatot, majd koppintson a **JÓVÁHAGYÁS** elemre.
+13.  Ha Samsung Knox-eszközt használ, koppintson a **Megerősítés** elemre. Ekkor megjelenik egy üzenet, hogy az eszköz regisztrálása folyamatban van. Ha natív Android-eszközt használ, akkor csak egy üzenet jelenik meg arról, hogy az eszköz regisztrálása folyamatban van, ahogy az alábbi képernyőképen látható.
 
     ![Samsung KNOX adatvédelmi szabályzat](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Amint az Intune regisztrálja az eszközt, a képernyőn a következő üzenet jelenik meg.
+    Ezen a képernyőképen az látható, hogy az eszköz regisztrálása folyamatban van.
 
     ![„Eszköz regisztrálása” képernyő](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolat
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

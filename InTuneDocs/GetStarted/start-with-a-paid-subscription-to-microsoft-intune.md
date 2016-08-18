@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ Ez a rövid útmutató végigvezeti a fizetős Microsoft Intune-előfizetés be�
 >[!NOTE]
 >Ez a cikk az Intune különálló szolgáltatásként történő beállításával foglalkozik. Alternatív megoldásként, ha jelenleg a Microsoft System Center Configuration Manager használatával felügyeli a számítógépeket és a kiszolgálókat, [kiterjesztheti a Configuration Manager hatáskörét, hogy az a mobileszközöket is felügyelje](https://technet.microsoft.com/library/jj884158.aspx). Ezt úgy teheti meg, ha az Intune-t egy hibrid mobileszköz-felügyeleti (MDM) környezetben összekapcsolja a Configuration Managerrel.
 
-A jelen rövid kezdési útmutatóban található lépések nagy része megegyezik az [Intune próbaverziójára vonatkozó útmutatóban](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) ismertetett lépésekkel. Azonban amikor a próbaverzió lejártával hozzákészül a mobileszközei felügyeletéhez, több további követelménynek is meg kell felelnie:
+A jelen rövid bevezető útmutatóban ismertetett lépések nagy része megegyezik az [Intune próbaverziójának útmutatójában](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) leírt lépésekkel. Azonban amikor a próbaverzió lejártával hozzákészül a mobileszközei felügyeletéhez, több további követelménynek is meg kell felelnie:
 
 -   A helyi Active Directory-fiókok szinkronizálása az Intune szolgáltatással és az Azure Active Directory-val.
 
@@ -75,6 +75,6 @@ Itt az ideje, hogy megismerkedjen az Intune rövid kezdési útmutatójával!
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
