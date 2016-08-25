@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy úja
 |**Konfigurációs profilok és tanúsítványok telepítésének engedélyezése a felhasználó számára**|Engedélyezi, hogy a felhasználó konfigurációs profilokat és tanúsítványokat telepítsen.|
 |**Az Üzenetek alkalmazás használatának engedélyezése az eszközön**|Engedélyezi az Üzenetek alkalmazást a szöveges üzenetek küldéséhez.|
 
+### Alkalmazások megjelenítése vagy elrejtése
+
+A **Rejtett és megjelenített alkalmazások listája** segítségével az alábbiakat szabályozhatja az iOS 9.3-as vagy újabb verzióját futtató felügyelt eszközökön:
+
+- Megadhatja a felhasználók elől elrejtett alkalmazások listáját. Az ilyen alkalmazásokat a felhasználók nem látják és nem tudják elindítani.
+- Megadhatja a felhasználók által látható és elindítható alkalmazások listáját. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
+
+
+#### Rejtett és megjelenített alkalmazások listájának létrehozása
+
+Adja meg a következő beállításokat:
+
+|Beállítás neve|Részletek|
+|-|-|
+|**Rejtett és megjelenített alkalmazások listája**|Engedélyezze ezt a beállítást rejtett és megjelenített alkalmazások listájának létrehozásához.|
+|**A listán szereplő alkalmazások elrejtése a felhasználó elől**|Ha ezt a beállítást választja, létrehozhatja azoknak az alkalmazásoknak a listáját, amelyek rejtve lesznek a felhasználók elől.|
+|**Csak a listán szereplő alkalmazások megjelenítése a felhasználónak**|Ha ezt a beállítást választja, létrehozhatja azoknak az alkalmazásoknak a listáját, amelyek megjelennek a felhasználók számára.<br>Ha ezt a típusú listát választja, az iOS **Beállítások** és **Telefon** (iPhone esetén) alkalmazásokon kívül minden más alkalmazás rejtve lesz.<br>Ezen kívül a listához kell adnia a Vállalati portál alkalmazást és minden más, az Intune-nal telepített és felügyelt alkalmazást.|
+|**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához.<br>Az elrejtett alkalmazások listájában minden elrejteni kívánt alkalmazás esetén meg kell adnia a következőket: **Név**, **Kiadó** és az **Alkalmazás URL-címe vagy csomagazonosítója**.<br>A megjelenített alkalmazások listájában használhatja a **Felügyelt alkalmazás kiválasztása** lehetőséget, így az Intune által felügyelt alkalmazások listájából választhatja ki a megjeleníteni kívánt alkalmazásokat. Használhatja az Áruházbeli alkalmazás kiválasztása lehetőséget is, mely esetben minden megjeleníteni kívánt alkalmazás esetén meg kell adnia a következőket: **Név**, **Kiadó** és az **Alkalmazás URL-címe vagy csomagazonosítója**.|
+|**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
+|**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
+|**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
+
+#### Beépített iOS-alkalmazások adatai
+
+Ebben a listában megtalálhatja a megjeleníteni vagy elrejteni kívánt beépített iOS-alkalmazás nevét, kiadóját és csomagazonosítóját. Ha a listán szereplő összes alkalmazást szeretné megjeleníteni vagy elrejteni, az alábbi adatokat másolja be egy **.csv** kiterjesztésű szövegfájlba, majd használja az **Alkalmazások importálása** lehetőséget az alkalmazások egyidejű importálásához.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Egyéni szabályzatbeállítások
 
@@ -266,6 +337,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
