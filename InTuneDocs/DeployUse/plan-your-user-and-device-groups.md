@@ -1,9 +1,9 @@
 ---
 title: "A felhasználói és eszközcsoportok megtervezése | Microsoft Intune"
-description: "Tervezhet a szervezeti igényeinek megfelelő csoportokat."
+description: "A szervezeti igényeinek megfelelő csoportokat tervezhet."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 73909ebf2226b4fa50ad39b095a7cc1d73460c65
+ms.sourcegitcommit: 55e21f56c3d1b73427e4019054a0f9fab862f26d
+ms.openlocfilehash: 70949301499efedd99eeddb60dd2fa0efc6d2309
 
 
 ---
 
 # A felhasználói és eszközcsoportok megtervezése
-Az Intune csoportjai nagyfokú rugalmasságot biztosítanak az eszközök és felhasználók kezeléséhez. Csoportokat állíthat be a szervezet igényeinek megfelelően a következő szempontok szerint:
+Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas felügyeletét teszik lehetővé. Csoportokat állíthat be a szervezet igényeinek megfelelően a következő szempontok szerint:
 
 - Földrajzi hely
 - Részleg
@@ -32,55 +32,55 @@ Az Intune csoportjai nagyfokú rugalmasságot biztosítanak az eszközök és fe
 ## Az Intune-csoportok működése
 
 
-Az Intune felügyeleti konzoljában a Csoportok csomópont alapértelmezett nézete a következő:
+Az Intune felügyeleti konzoljában a **Csoportok** csomópont alapértelmezett nézete a következő:
 
-![Képernyőfelvétel az Intune felügyeleti konzoljában található Csoportok csomópont alapértelmezett nézetéről](/intune/media/Intune_Planning_Groups_Default_small.png)
+![Képernyőfelvétel az Intune felügyeleti konzoljában található Csoportok csomópont alapértelmezett nézetéről](../media/Intune_Planning_Groups_Default_small.png)
 
-A házirendek csoportokra vannak telepítve, ezért a csoporthierarchia az egyik fő tervezési szempont. Azt is fontos tudni, hogy a csoportok szülőcsoportja nem módosítható a csoport létrehozása után, így a csoportok tervezése kritikus fontosságú az Intune szolgáltatás használatának megkezdésétől. A következőben ajánlott eljárásokat találhat a csoporthierarchia a szervezeti igények szerinti tervezéséhez.
+A szabályzatok érvénybe léptetése csoportok szerint történik, ezért a csoporthierarchia az egyik fő tervezési szempont. Fontos megjegyezni, hogy a csoport létrehozása után nem módosítható a létrehozott csoport szülőcsoportja. A csoportok tervezése az Intune szolgáltatás használatának kezdetétől fogva kritikus fontosságú. A következőben néhány ajánlott eljárást ismertetünk a csoporthierarchia szervezeti igények szerinti tervezéséhez.
 
 ## A csoportok tagsági szabályai
 
-1. Egy csoport vagy felhasználókból, vagy eszközökből állhat, de a kettő keverékéből nem.
+- Egy csoport vagy felhasználókból, vagy eszközökből állhat, de a kettő keverékéből nem.
 
-    * **Eszközcsoportok:** Ide tartoznak a számítógépek és a mobileszközök. A számítógépek csoportokba való felvételéhez be kell léptetnie őket. Mielőtt hozzáadhatna egy mobileszközt egy csoporthoz, a környezetet úgy kell konfigurálni, hogy támogassa a mobileszközöket, és az eszközöket be kell léptetni, vagy az Exchange ActiveSync szolgáltatásnak észlelnie kell az eszközt.
+    * **Eszközcsoportok**. Ide tartoznak a számítógépek és a mobileszközök. A számítógépek csoportokba való felvételéhez be kell léptetnie őket. Mielőtt hozzáadhatna egy mobileszközt egy csoporthoz, a környezetet úgy kell konfigurálni, hogy támogassa a mobileszközöket, és az eszközt regisztrálni kell, vagy az Exchange ActiveSync szolgáltatásnak észlelnie kell azt.
 
-    * **Felhasználói csoportok:** Egy csoport biztonsági csoportokba tartozó felhasználókat is tartalmazhat. Ezek az Active Directoryból szinkronizált csoportok. Ha nem használ Active Directory-szinkronizálást, manuálisan is létrehozhat ilyen csoportokat.
+    * **Felhasználói csoportok**. Az egyes csoportokban biztonsági csoportok felhasználói szerepelhetnek. A biztonsági csoportok az Ön által használt Active Directory-példánnyal szinkronizálódnak. Ha nem használ Active Directory-szinkronizálást, manuálisan is létrehozhat ilyen csoportokat.
 
-2. Egy eszköz vagy felhasználó több csoporthoz is tartozhat.
+- Egy eszköz vagy felhasználó több csoporthoz is tartozhat.
 
-3. Egy csoport a következő tagsági szabályok alapján tartalmazhat vagy zárhat ki tagokat:
+- Egy csoport a következő tagsági szabályok alapján tartalmazhat vagy zárhat ki tagokat:
 
-    * **Feltételalapú tagság:** Ezek olyan dinamikus szabályok, amelyek futtatásával az Intune felveszi vagy kizárja a tagokat. Ezek a feltételek **biztonsági csoportokat** és a helyi Active Directoryból (AD) szinkronizált más információkat használnak. Ha a biztonsági csoport vagy a szinkronizált adatok módosulnak, akkor a csoport tagsága is megváltozhat az Active Directoryval történő szinkronizáláskor.
+    * **Tagság feltételei**. Ezek olyan dinamikus szabályok, amelyeket az Intune a tagok felvételéhez vagy kizárásához futtat. Ezek a feltételek biztonsági csoportokat és az Active Directory helyi példányából szinkronizált egyéb információkat használnak. Ha a biztonsági csoport vagy a szinkronizált adatok változnak, akkor a csoport tagsága is megváltozik az Active Directoryval történő szinkronizáláskor.
 
-    * **Közvetlen tagság:** Ezek olyan statikus szabályok, amelyek kifejezetten hozzáadnak vagy kizárnak bizonyos tagokat. A tagsági lista statikus.
+    * **Közvetlen tagság**. Ezek olyan statikus szabályok, amelyek kifejezetten felveszik vagy kizárják a tagokat. A tagsági lista statikus.
 
-4. Az Active Directory tartományi szolgáltatások (AD DS) használata nem szükséges felhasználói csoportok, illetve felhasználókat vagy számítógépeket tartalmazó eszközcsoportok létrehozásához, azonban mobileszközök eszközcsoportokba való felvételéhez a környezetet konfigurálni kell a mobileszközök támogatására.
+-   Az Active Directory Domain Servicesre (AD DS) nincs szükség a felhasználókat vagy számítógépeket tartalmazó felhasználói vagy eszközcsoportok létrehozásakor. Ahhoz ugyanakkor, hogy az eszközcsoportok mobileszközöket tartalmazhassanak, a környezetet konfigurálni kell a mobileszközök támogatására.
 
     Az eszközöket ezenkívül észlelni kell, és hozzá kell adni az Intune-hoz.
 
 ## A csoportok kapcsolati szabályai
 
-1. Minden létrehozott csoportnak rendelkeznie kell egy szülőcsoporttal, amely a csoport létrehozása után nem módosítható.
+- Minden létrehozott csoportnak rendelkeznie kell szülőcsoporttal. A csoport létrehozása után nem módosítható a létrehozott csoport szülőcsoportja.
 
-2. Amikor felhasználókat vagy eszközöket ad hozzá egy gyermekcsoporthoz, vegye figyelembe a következőket:
+- Amikor felhasználókat vagy eszközöket ad hozzá egy gyermekcsoporthoz, vegye figyelembe a következőket:
 
-    * A gyermekcsoportok mindig a szülőcsoport részhalmazai.
+    * A gyermekcsoport minden esetben a szülőcsoport részhalmaza.
 
     * A gyermekcsoporthoz hozzáadott új tagok automatikusan tagjává válnak az adott szülőcsoportnak is.
 
     * Nem adhat hozzá olyan tagot egy gyermekcsoporthoz, amely ki van zárva a szülőcsoportból.
 
-3. A szülőcsoport tagsága meghatározza a gyermekcsoport rendelkezésre álló tagságát is.
+- A szülőcsoport tagsága meghatározza a gyermekcsoport rendelkezésre álló tagságát is.
 
-4. Ha töröl egy szülőcsoportot, annak minden gyermekcsoportja is törlődik.
+- Ha töröl egy szülőcsoportot, annak minden gyermekcsoportja is törlődik.
 
-5. Tartalmakat és házirendeket a gyermekcsoportok kihagyásával is telepíthet a szülőcsoportok számára.
+- Tartalmakat és szabályzatokat a gyermekcsoportok kihagyásával is telepíthet a szülőcsoportok számára.
 
-6. Egy gyermekcsoporthoz hozzáadhat olyan felhasználót vagy eszközt, amely nem tagja a szülőcsoportnak. Ilyenkor az új tag a szülőcsoport tagjává is válik.
+- A gyermekcsoporthoz olyan felhasználót vagy eszközt is hozzáadhat, amely nem tagja a szülőcsoportnak. Ha ezt teszi, akkor a gyermekcsoport új tagja hozzáadódik a szülőcsoporthoz.
 
-    Nem adhat hozzá azonban olyan tagot egy gyermekcsoporthoz, amely ki van zárva a szülőcsoportból.
+    Ugyanakkor nem adhat hozzá olyan tagot a gyermekcsoporthoz, amely ki van zárva a szülőcsoportból.
 
-7. A csoporttagság rekurzív. Példa:
+- A csoporttagság rekurzív. Példa:
 
     * **Pat** csak egyetlen csoport, a **Laptopfelhasználók** biztonsági csoport tagja.
 
@@ -89,17 +89,17 @@ A házirendek csoportokra vannak telepítve, ezért a csoporthierarchia az egyik
     * Létrehoz egy csoportot az Intune-ban, amely a **Jóváhagyott felhasználók** csoport tagjait magában foglaló dinamikus tagságlekérdezést használ. Ennek eredményeképpen **Pat** az Intune felhasználói csoport tagja lesz.
 
 > [!TIP]
-> A csoportok létrehozásakor gondolja át a házirend alkalmazási módját. Például rendelkezhet az eszköz operációs rendszerére szabott házirendekkel, illetve a szervezeten belüli különböző szerepeknek vagy az Active Directory-ban már megadott szervezeti egységeknek megfelelő házirendekkel. Bizonyos esetekben hasznos lehet az iOS, Android és Windows operációs rendszerekhez rendelt eszközcsoportok, valamint az egyes szervezeti szerepekhez tartozó felhasználói csoportok létrehozása.
+> A csoportok létrehozásakor gondolja át, hogyan szeretné alkalmazni a szabályzatokat. Lehetnek például az eszközök operációs rendszereire szabott, vagy az Active Directoryban már definiált, szervezeten belüli szerepköröknek vagy szervezeti egységeknek megfelelő szabályzatok. Egyes rendszergazdák hasznosnak tartják külön iOS-, Android- és Windows-eszközcsoportok létrehozását. Ez a különböző szervezeti szerepkörök szerinti felhasználói csoportok létrehozása mellett történik.
 
 <!--- should we just link to a policies topic at this point and remove this? Ask Rob
- You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your company. Then create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
+ You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
 
- Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
+ Be careful when you name your policies, so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 
- Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
+ Each time you create a restrictive policy, you'll want to communicate it to your users. After you create the more general groups and policies, pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
 
 ## Beépített csoportok
-Az Intune kilenc olyan beépített csoportot tartalmaz, amelyek nem szerkeszthetők vagy törölhetők: <!--maybe a screen shot would be best?-->
+Az Intune kilenc olyan beépített csoporttal rendelkezik, amely nem módosítható és nem törölhető: <!--maybe a screen shot would be best?-->
 
 -   **Minden felhasználó**
     -   Nem csoportosított felhasználók
@@ -112,109 +112,109 @@ Az Intune kilenc olyan beépített csoportot tartalmaz, amelyek nem szerkeszthet
     -   Nem csoportosított eszközök
 
 > [!NOTE]
-> Mottó: *legyen egyszerű*. Ha a szervezetben nincsenek az alább leírtakhoz hasonló speciális igények, hosszú távon kezelhetőbb lesz a szolgáltatás, ha az egyszerűségre törekszik, és az alapértelmezett csoportszerkezetet és házirendeket használja. A karbantartás egyszerűbb, ha egyformán kezelheti a felhasználókat csoportok szerint, így kevesebb házirendet kell fenntartania.
+> Mottó: *legyen egyszerű*. Ha a szervezetnek nincsenek az alábbi szakaszokban leírtakhoz hasonló speciális igényei, célszerű az egyszerűségre törekedni és az alapértelmezés szerint csoportstruktúrát és szabályzatokat alkalmazni. A szolgáltatás így kezelhetőbb lesz hosszú távon. A karbantartás is egyszerűbb, ha egységesen kezelheti a felhasználókat. Minél kisebb mértékű a csoportok szerinti differenciálódás, annál kevesebb szabályzatot kell fenntartani.
 
 
 ### A szervezetben lévő összes felhasználó és eszköz
-Definiáljon szülőcsoportot a szervezet összes felhasználójához és eszközéhez, mivel valószínűleg lesznek olyan házirendjei, amelyek mindegyikre érvényesek. Erre a célra használhatja az Intune alapértelmezett **Minden felhasználó** és **Minden eszköz** csoportját. A **Minden felhasználó** és a **Minden eszköz** szülőcsoport gyermekei lehetnek azok az alcsoportok, amelyek a jellemzők szerint rendezik az eszközöket, ilyen lehet például a saját tulajdonú eszközök (BYOD) alcsoportja és a vállalati tulajdonú eszközök (CO) alcsoportja.
+Definiáljon egy szülőcsoportot a szervezet összes felhasználója és eszköze számára. Nagy valószínűséggel lesznek olyan szabályzatai, amelyek valamennyire vonatkoznak. Erre a célra használhatja az Intune alapértelmezett **Minden felhasználó** és **Minden eszköz** csoportját. A **Minden felhasználó** és a **Minden eszköz** szülőcsoport gyermekcsoportjai lehetnek azok az alcsoportok, amelyek a jellemzők szerint rendezik az eszközöket, ilyen lehet például a saját tulajdonú eszközök (BYOD) és a vállalati tulajdonú eszközök (CO) alcsoportja.
 
-## A csoportok testreszabása a szervezetnek megfelelően
+## A csoportok testreszabása a szervezet sajátosságainak megfelelően
 
-### BYOD és vállalati tulajdonú eszközök
-Ha a szervezet engedélyezi a dolgozóknak a saját eszközök használatát a munkahelyen (BYOD), vállalati tulajdonú eszközöket (CO) biztosít a dolgozóknak, vagy mindkét módszert használja, azt javasoljuk, hogy a házirendeket e két eszközkategória alapján alkalmazza.
+### BYOD- és vállalati tulajdonú eszközök
+Ha a szervezet engedélyezi a dolgozóknak a saját eszközök használatát a munkahelyen, vállalati tulajdonú eszközöket biztosít a dolgozóknak, vagy a két módszer kombinációját használja, javasoljuk, hogy külön szabályzatokat alkalmazzon e két eszközkategóriára.
 
-BYOD vagy vegyes használat esetében a házirendek tervezésekor ügyeljen arra, hogy ne sértse meg a helyi adatvédelmi előírásokat. Hozzon létre egy szülőcsoportot minden felhasználóhoz, aki a saját eszközét fogja használni. Ezzel a csoporttal azután a kategória összes felhasználójára érvényes házirendeket alkalmazhat.
+BYOD vagy vegyes használat esetében a házirendek tervezésekor ügyeljen arra, hogy ne sértse meg a helyi adatvédelmi előírásokat. Hozzon létre egy szülőcsoportot minden felhasználóhoz, aki a saját eszközét fogja használni. Ezzel a csoporttal azután a kategória összes felhasználójára érvényes szabályzatokat alkalmazhat.
 
-![Képernyőfelvétel a BYOD szülőcsoport létrehozásáról](/intune/media/Intune_Planning_Groups_BYOD_small.png)
+![A BYOD szülőcsoport létrehozása](../media/Intune_Planning_Groups_BYOD_small.png)
 
-Hasonlóképpen létrehozhat egy csoportot a szervezetben lévő CO-felhasználók számára:
+Hasonlóképpen létrehozhat egy csoportot a szervezet vállalati tulajdonú eszközöket használó felhasználói számára:
 
-![Képernyőfelvétel a BYOD és a CO felhasználói testvércsoportról](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![A BYOD- és a CO-eszközök felhasználói testvércsoportjai](../media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Csoportok földrajzi régiókhoz
-Ha a szervezetének adott régiókhoz van szüksége házirendekre, az adott földrajzi régió alapján hozhat létre csoportokat. Ezeket a csoportokat létrehozhatja az Active Directoryban (AD) már létrehozott regionális csoportok alapján, és szinkronizálhatja azokat Azure AD-be. Másik megoldásként közvetlenül az Azure AD-ben is létrehozhatja a csoportokat.
+Ha a szervezetnél földrajzi egységenként külön szabályzatokra van szükség, létrehozhat csoportokat a különböző földrajzi régiók szerint. Ezeket alapozhatja az Active Directory-példányában már létrehozott regionális csoportokra, és szinkronizálhatja őket az Azure Active Directory szolgáltatással. Regionális csoportokat közvetlenül az Azure Active Directoryban is létrehozhat.
 
-Ezek a képernyőfelvételek a helyszíni AD-ről szinkronizált csoportokon alapuló Intune-csoportok létrehozását mutatják be. Ezek a példák feltételezik, hogy egy **US Users Group** nevű AD biztonsági csoporttal rendelkezik.
+A következő képernyőfelvételek bemutatják, hogy hogyan hozhat létre Intune-csoportokat az Active Directory helyi példányával szinkronizált csoportok alapján. Ezekben a példákban feltételezzük, hogy rendelkezik egy **US Users Group** nevű Active Directory-beli biztonsági csoporttal.
 
-1. Először adja meg az általános információkat.
+Először adja meg az általános információkat.
 
-![Képernyőfelvétel a Csoport szerkesztése területről](/intune/media/Intune_Planning_Groups_AD_General_small.png)
+![Képernyőfelvétel a Csoport szerkesztése területről](../media/Intune_Planning_Groups_AD_General_small.png)
 
-A Tagság területen válassza az Active Directoryból szinkronizált **US Users Group** csoportot a tagsági szabályok alatt használni kívánt biztonsági csoportként.
+A **Tagsági feltételek** területen válassza az Active Directoryval szinkronizált **US Users Group** csoportot a tagsági szabályok szerint használni kívánt biztonsági csoportként.
 
-![Csoport szerkesztése párbeszédpanel](/intune/media/Intune_Planning_Groups_AD_Criteria_small.png)
+![Képernyőfelvétel a Csoport szerkesztése párbeszédpanelről](../media/Intune_Planning_Groups_AD_Criteria_small.png)
 
-Tekintse át ezt, majd kattintson a **Befejezés** gombra a csoport létrehozásának befejezéséhez.
+Tekintse át a bejegyzéseket majd válassza a **Befejezés** lehetőséget a csoport létrehozásához.
 
-![Csoport szerkesztése párbeszédpanel](/intune/media/Intune_Planning_Groups_AD_Summary_small.png)
+![Képernyőfelvétel a Csoport szerkesztése párbeszédpanelről](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
-A példánkban egy Middle East and Asia (MEA) csoportot is létrehoztunk.
+A példánkban egy Middle East and Asia (Közel-Kelet és Ázsia) **(MEA)** csoportot is létrehoztunk.
 
 > [!NOTE]
-> Ha a csoporttagság nem a biztonsági csoport tagsága alapján van feltöltve, ellenőrizze, hogy Intune-licenceket rendelt-e ezekhez a tagokhoz.
+> Ha a csoporttagság nem a biztonságicsoport-tagság alapján lett feltöltve, ellenőrizze, hogy rendelt-e Intune-licenceket ezekhez a tagokhoz.
 
 ### Csoportok adott hardverekhez
-Ha a szervezetének olyan házirendekre van szüksége, amelyek adott hardvertípusokra vonatkoznak, ezen követelmény alapján hozhatja létre a csoportokat. Ezeket a csoportokat létrehozhatja a helyszíni AD-ben már létrehozott csoportok alapján, és szinkronizálhatja azokat Azure AD-be. Másik megoldásként közvetlenül az Azure AD-ben is létrehozhatja a csoportokat. Ebben a példában a **US Users Group** csoportot használjuk a **Laptop Users** csoport szülőjeként.
+Ha a szervezetének olyan szabályzatokra van szüksége, amelyek adott hardvertípusokra vonatkoznak, ezen követelmény alapján hozhatja létre a csoportokat. A szabályzatokat alapozhatja a helyi Active Directory-példányában már létrehozott specifikus csoportokra, és szinkronizálhatja őket az Azure Active Directory szolgáltatással. Csoportokat közvetlenül az Azure Active Directoryban is létrehozhat. Ebben a példában a **US Users Group** (USA-felhasználók) csoportot használjuk a **Laptop Users** (Laptopfelhasználók) csoport szülőjeként.
 
-![A Biztonsági csoport kiválasztása párbeszédpanel](/intune/media/Intune_Planning_Groups_Laptop_small.png)
+![A Biztonsági csoport kiválasztása párbeszédpanel](../media/Intune_Planning_Groups_Laptop_small.png)
 
-Ezen a ponton a csoportok hierarchiája az alábbi módon jelenik meg. Ahogyan a képen látható, tagok találhatóak a **Laptop Users** Intune-csoportban. Az erre a csoportra alkalmazott házirendek a US régió BYOD laptopfelhasználóira érvényesek.
+Ezen a ponton a csoport hierarchiájának a következő képernyőfelvételen láthatókhoz hasonlóan kell kinéznie. Látható, hogy most már vannak tagok a **Laptop Users** Intune-csoportban. Az erre a csoportra alkalmazott szabályzatok az USA régió BYOD-laptopfelhasználóira érvényesek.
 
-![A Laptopfelhasználók csoport](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![A Laptopfelhasználók csoport](../media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Csoportok adott operációs rendszerekhez
-Ha a szervezetének olyan házirendekre van szüksége, amelyek meghatározott operációs rendszerre, például Android, iOS vagy Windows rendszerre vonatkoznak, ezen követelmény alapján hozhatja létre a csoportokat. Az előző példához hasonlóan ezeket az operációs rendszerre vonatkozó csoportokat létrehozhatja a helyszíni AD-ben már létrehozott csoportok alapján, és szinkronizálhatja azokat Azure AD-be. Másik megoldásként közvetlenül az Azure AD-ben is létrehozhatja a csoportokat.
+Ha a szervezetének olyan szabályzatokra van szüksége, amelyek meghatározott operációs rendszerre, például Androidra, iOS-re vagy Windowsra vonatkoznak, létrehozhat csoportokat e követelmény alapján. A szabályzatokat alapozhatja a helyi Active Directory-példányában már létrehozott operációsrendszer-specifikus csoportokra, és szinkronizálhatja őket az Azure Active Directory szolgáltatással. Közvetlenül is létrehozhatja őket saját Azure Active Directory-példányában.
 
-Az előző példákban bemutatott módszerrel létrehozhatunk olyan csoportokat,<!--devices?--> amelyek az egyes operációs rendszereket használó felhasználókat tartalmazzák.
+A korábbi példákban látottakkal azonos módszerrel hozhat létre csoportokat a különböző operációs rendszereket használó felhasználók <!--devices?--> alapján.
 
 > [!NOTE]
-> Ha a felhasználói többféle mobilplatformot/operációs rendszert használnak, és nincs automatikus módszere a felhasználók kategorizálására Android-felhasználóként, iOS-felhasználóként vagy Windows-felhasználóként, érdemes lehet eszközszinten alkalmazni házirendeket, mivel ez nagyobb rugalmasságot nyújt az operációs rendszerre jellemző házirendek alkalmazásában.
+> Ha a felhasználók többféle mobilplatformot/operációs rendszert használnak, és nincs automatikus módszer Android-, iOS- vagy Windows-felhasználóként való besorolásukra, akkor érdemes fontolóra venni a szabályzatok eszközszinten történő alkalmazását. Ez rugalmasabb lehetőséget kínál az operációsrendszer-specifikus szabályzatok alkalmazására.
 >
-> Nem létesíthet csoportokat dinamikusan az eszköz operációs rendszere alapján. Ezt AD vagy AAD biztonsági csoportokkal tegye.
+> Az eszköz operációs rendszere alapján nem létesíthetők dinamikusan csoportok. Ehelyett ezt Active Directory- vagy Azure Active Directory-alapú biztonsági csoportok segítségével hajthatja végre.
 
-![A Laptopfelhasználók csoport](/intune/media/Intune_Planning_Groups_OS_Hierachy_small.png)
+![Laptopfelhasználók csoportja](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
-Ha az összes felhasználói csoport fel van töltve ezen szervezeti követelmények alapján, a csoporthierarchiának a következőképpen kell kinéznie:
+Ha az összes felhasználói csoport fel van töltve a szervezeti követelmények alapján, a csoporthierarchiának a következőképpen kell kinéznie:
 
-![A csoportok hierarchikus nézete](/intune/media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
+![Csoporthierarchia-nézet](../media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
 
-Ezzel a hierarchiával megfelelően alkalmazhatja a szervezet házirendjeit.
+Ezt a hierarchiát használhatja a szervezet szabályzatainak alkalmazására.
 
 ### Eszközcsoportok
-Az alábbi módon is létrehozhat hasonló csoportokat az eszközökhöz, egy szélesebb körű csoporttal kezdve, amelybe beletartozik az összes alkalmazotti tulajdonú eszköz a BYOD forgatókönyvhöz:
+A BYOD-forgatókönyvhöz az itt láthatókhoz hasonló csoportokat hozhat létre az eszközök számára is, egy szélesebb körű csoporttal kezdve, amelybe beletartozik az összes alkalmazotti tulajdonú eszköz.
 
-![Csoport létrehozása párbeszédpanel](/intune/media/Intune_Planning_Groups_Device_General_small.png)
+![Csoport létrehozása párbeszédpanel](../media/Intune_Planning_Groups_Device_General_small.png)
 
-Válassza a **Minden eszköz (számítógépek és mobil)** elemet, hogy a csoport tartalmazza az összes BYO eszközt:
+Válassza a **Minden eszköz (számítógépek és mobileszközök)** elemet, hogy a csoport tartalmazza az összes BYOD-eszközt:
 
-![A Tagság feltételeinek meghatározása oldal](/intune/media/Intune_Planning_Groups_Device_Criteria_small.png)
+![A Tagság feltételeinek meghatározása oldal](../media/Intune_Planning_Groups_Device_Criteria_small.png)
 
-Tekintse át ezt, majd kattintson a **Befejezés** gombra a BYOD csoport létrehozásához.
+Tekintse át a bejegyzéseket majd válassza a **Befejezés** lehetőséget a BYOD-csoport létrehozásához.
 
-![Csoport létrehozása párbeszédpanel](/intune/media/Intune_Planning_Groups_Device_Summary_small.png)
+![Csoport létrehozása párbeszédpanel](../media/Intune_Planning_Groups_Device_Summary_small.png)
 
 Folytassa az eszközcsoportok létrehozását, amíg a felhasználóicsoport-hierarchiához hasonló eszközcsoport-hierarchiával nem rendelkezik. Ezután az Intune-konzolon a csoportcsomópontnak ehhez hasonlóan kell kinéznie:
 
-![Az Intune-csoportok hierarchikus nézete](/intune/media/Intune_Groups_Hierarchy_Final_Small.png)
+![Az Intune-csoportok hierarchikus nézete](../media/Intune_Groups_Hierarchy_Final_Small.png)
 
 ## Csoporthierarchiák és elnevezési konvenciók
-A házirendek felügyeletének megkönnyítéséhez az javasoljuk, hogy a cél, a platform és azon hatókör alapján nevezze el az egyes házirendeket, amelyre alkalmazza azokat. Az elnevezési szabványnak érdemes követnie a házirendek alkalmazásának előkészítésekor létrehozott csoportszerkezetet.
+A szabályzatok felügyeletének egyszerűsítése érdekében azt javasoljuk, hogy a cél, a platform és az alkalmazási hatókör alapján nevezze el az egyes szabályzatokat. Használjon olyan elnevezési konvenciót, amely követi a szabályzatok alkalmazásának előkészítése során létrehozott csoportstruktúrát.
 
-A US regionális szinten az összes szervezeti, androidos és mobileszközre alkalmazott Android-házirend esetén például a házirend neve a következő lehet: **CO_US_Mob_Android_General**.
+Az USA regionális szinten az összes szervezeti, androidos mobileszközre alkalmazott Android-szabályzatok esetén a szabályzat neve például a következő lehet: **CO_US_Mob_Android_General**.
 
-![Android-házirend létrehozása](/intune/media/Intune_planning_policy_android_small.png)
+![Android-szabályzat létrehozása](../media/Intune_planning_policy_android_small.png)
 
-A házirendek ilyen módon történő elnevezésével gyorsan azonosíthatja a házirendeket, valamint azok kívánt célját és hatókörét a konzol házirendcsomópontjából, ahogy ezt a következő ábra is szemlélteti:
+Az ilyen elnevezési gyakorlat segítségével gyorsan azonosíthatja a szabályzatokat és azok kívánt célját és hatókörét a **Policies** (Szabályzatok) csomópontban, ahogy ezt a következő ábra is szemlélteti:
 
-![Intune-házirendek listája](/intune/media/Intune_planning_policy_view_small.png)
+![Intune-szabályzatok listája](../media/Intune_planning_policy_view_small.png)
 
 ## További lépések
 [Csoportok létrehozása](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

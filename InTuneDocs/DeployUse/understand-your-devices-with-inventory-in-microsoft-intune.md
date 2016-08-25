@@ -1,10 +1,10 @@
 ---
 title: "A regisztrált eszközök áttekintése a leltárfunkcióval | Microsoft Intune"
-description: "Az Intune használatával információkat kaphat a felügyelt eszközök hardvereire vonatkozóan."
+description: "Az Intune segítségével megtekintheti a felügyelt eszközök hardverinformációit."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -42,10 +42,10 @@ A mobileszközök által összegyűjtött leltáradatok megtekintéséhez futtas
 |**Exchange ActiveSync-azonosító**|All rendszerű eszközök|
 |**Függetlenített vagy feltört**|Csak iOS- és Android-eszközök|
 |**Az eszköz egyedi azonosítója**|Az Exchange ActiveSync kivételével minden eszköz|
-|**Sorozatszám**|iOS-, Mac OS X-, Android-, Windows 8.1-, Windows 10-eszközök|
-|**Teljes tárolóhely**|iOS-, Mac OS X-, Windows 8.1-, Windows 10-eszközök|
-|**Szabad tárolóhely**|iOS-, Mac OS X-, Windows 8.1-, Windows 10-eszközök|
-|**Telefonszám**<br>A vállalati eszközként besorolt telefonokat a teljes telefonszámuk jelöli (például egy mobileszközkészlet-jelentés futtatásakor). A BYOD-eszközök telefonszámai &#42; karakterekkel maszkolva, csak az utolsó 4 számjegyükkel jelennek meg.|iOS, Android és Windows Phone rendszerű eszközök|
+|**Sorozatszám**|iOS-, Mac OS X-, Android-, Windows 8.1- és Windows 10-eszközök|
+|**Teljes tárolóhely**|iOS-, Mac OS X-, Windows 8.1- és Windows 10-eszközök|
+|**Szabad tárolóhely**|iOS-, Mac OS X-, Windows 8.1- és Windows 10-eszközök|
+|**Telefonszám**<br>A vállalati eszközként besorolt telefonokat a teljes telefonszámuk jelöli (például egy mobileszközkészlet-jelentés futtatásakor). A BYOD-eszközök telefonszámai &#42; karakterekkel maszkolva, csak az utolsó négy számjegyükkel jelennek meg.|iOS, Android és Windows Phone rendszerű eszközök|
 |**IMEI**|Exchange ActiveSync-, iOS-, Android- és Windows Phone-eszközök|
 |**MEID**<br>Mobilkészülék-azonosító szám|Csak iOS-eszközök|
 |**Wi-Fi MAC**|Az Exchange ActiveSync kivételével minden eszköz|
@@ -59,7 +59,7 @@ A mobileszközök által összegyűjtött leltáradatok megtekintéséhez futtas
 |**Aktiválási zár engedélyezve**|Csak iOS-eszközök|
 |**Titkosítás engedélyezve**|All rendszerű eszközök|
 
-## Windows rendszerű számítógépekről gyűjtött adatok
+## A Windows rendszerű számítógépekről gyűjtött adatok
 > [!IMPORTANT]
 > Ez a szakasz csak az Intune Windows PC-ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik.
 
@@ -114,6 +114,6 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

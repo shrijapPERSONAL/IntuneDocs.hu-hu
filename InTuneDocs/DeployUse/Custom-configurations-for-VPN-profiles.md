@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## Egyéni konfiguráció létrehozása
 VPN-profilok egyéni konfigurációk használatával hozhatók létre az Intune-ban. Egyéni konfiguráció létrehozásához tegye a következőket:
 
-   1. Az Intune felügyeleti konzoljában válassza a **Házirend** -> **Házirend hozzáadása** -> *<Expand platform>* -> **Egyéni konfiguráció** -> **Házirend létrehozása** lehetőséget.
+   1. Az Intune felügyeleti konzoljában válassza a **Házirend** > **Házirend hozzáadása** > *<Expand platform>* > **Egyéni konfiguráció** > **Házirend létrehozása** lehetőséget.
    2. Adja meg a szabályzat nevét.
-   3. Az egyes URI-beállításoknál kattintson a **Hozzáadás** elemre, és adja meg a szükséges információkat. Például:
+   3. Az egyes URI-beállításoknál válassza a **Hozzáadás** elemet, és adja meg a szükséges információkat. Például:
 
    ![VPN-profil egyéni konfigurációjának párbeszédpanelje](./media/Intune_Add_VPN_URI.png)
 
-   4.  Miután minden URI-beállítást megadott, kattintson a **Házirend mentése** elemre, és telepítse a házirendet.
+   4.  Miután minden URI-beállítást megadott, válassza a **Házirend mentése** elemet, és telepítse a házirendet.
 
 ## Konfigurációs szabályzat telepítése
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése** elemre.
 
 2.  A **Telepítések kezelése** párbeszédpanelen:
 
-    -   **A szabályzat telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+    -   **A házirend telepítése** – Válasszon egy vagy több olyan csoportot, amelynek telepíteni kívánja a házirendet, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
 
     -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
 ##Példa egy egyéni VPN-profil konfigurációjának URI-beállításaira
-Az alábbiakban egy kitalált, Contoso nevű vállalat VPN-profiljához tartozó egyéni konfiguráció létrehozásához szükséges URI-értékek megadására mutatunk példát. További tudnivalókért, például az egyes bejegyzések adattípusaival kapcsolatban olvassa el a [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) című témakört.
+Az alábbiakban egy kitalált, Contoso nevű vállalat VPN-profiljához tartozó egyéni konfiguráció létrehozásához szükséges URI-értékek megadására mutatunk példát. További tudnivalókért – például az egyes bejegyzések adattípusaival kapcsolatban – olvassa el a [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) című témakört.
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-A beállítások használatával kapcsolatos bármilyen kérdés esetén, illetve az ezen beállítások működésével kapcsolatos további információkért olvassa el a titkosítási szolgáltató dokumentációját: https://msdn.microsoft.com/hu-hu/library/windows/hardware/dn914776(v=vs.85).aspx
+Ha bármilyen kérdése van a beállítások használatával kapcsolatban, illetve az ezen beállítások működésével kapcsolatos további információkra van szüksége, olvassa el a konfigurációszolgáltató (CSP) dokumentációját: https://msdn.microsoft.com/hu-hu/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## URI-beállítások Android rendszerű alkalmazásonkénti VPN-hez a PulseSecure-ban
 ### EGYÉNI URI CSOMAGLISTÁHOZ
@@ -112,6 +112,6 @@ Példák:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

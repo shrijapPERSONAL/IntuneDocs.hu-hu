@@ -3,7 +3,7 @@ title: "Riasztások által biztosított értesítések | Microsoft Intune"
 description: "Tudja meg, hogyan követheti nyomon riasztásokkal, mi történik a Microsoft Intune-ban."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: b56854664e90fe74a6a63aa52c645ba0b53476d0
+ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
+ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 
 
 ---
@@ -51,8 +51,8 @@ Más riasztástípusok ettől eltérő konfigurációs elemeket is tartalmazhatn
 
 Emellett az is beállítható, hogy az Intune e-mailben értesítse arról, ha riasztás jön létre.
 
-## Riasztások konfigurálása
-A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **Riasztások és értesítések** elemre, majd válasszon a következő konfigurációs feladatok közül:
+## Riasztások beállítása
+A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) kattintson a **Felügyelet** &gt; **Riasztások és értesítések** elemre, majd válasszon a következő feladatok közül:
 
 |Feladat|Leírás|
 |--------|---------------|
@@ -85,6 +85,6 @@ Az Intune riasztásainak aktív állapota a következők esetén szűnik meg:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

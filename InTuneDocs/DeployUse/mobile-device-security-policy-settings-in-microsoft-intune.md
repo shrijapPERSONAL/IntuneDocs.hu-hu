@@ -13,17 +13,18 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
+ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
+ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+
 
 
 ---
 
 # Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-nal
 > [!IMPORTANT]
-> A Microsoft Intune már külön konfigurációs szabályzatokat tartalmaz minden eszközplatformhoz, és ezek a szabályzatok a legfrissebb használható beállításokat tartalmazzák. Továbbra is használja a mobileszköz-biztonsági házirendet, és a meglévő telepítések továbbra is működni fognak. Mindazonáltal meg kell terveznie a mielőbbi áttérést az új konfigurációs szabályokra, mivel a jövőben eltávolításra kerül a mobileszköz-biztonsági házirend.
+> A Microsoft Intune most már külön konfigurációs szabályzatokat biztosít a különböző eszközplatformokhoz. Ezek a szabályzatok a felhasználható legfrissebb beállításokat tartalmazzák. Továbbra is használhatja a mobileszköz-biztonsági szabályzatot, és a meglévő telepítések továbbra is működni fognak. Mindazonáltal fel kell készülnie az új konfigurációs szabályzatokra való mielőbbi áttérésre, mivel a későbbiekben el lesz távolítva a mobileszköz-biztonsági szabályzat.
 
-Az Intune mobileszköz-biztonsági szabályzatainak használatával konfigurálhatja azokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni. Ezek a beállítások az eszközök működésének és biztonsági funkcióinak szabályozására szolgálnak.
+Az Intune mobileszköz-biztonsági szabályzataival konfigurálhatja mindazokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni. Ezek a beállítások az eszközök működésének és biztonsági funkcióinak szabályozására szolgálnak.
 
 Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében hozhat létre és léptethet érvénybe:
 
@@ -38,17 +39,17 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 -   Android és Samsung KNOX
 
 > [!NOTE]
-> Egyes beállítások csak bizonyos eszközökre alkalmazhatók. A konfigurálható beállítások teljes listáját lásd az alábbi táblázatban.
+> Egyes beállítások csak bizonyos eszközökre alkalmazhatók. A konfigurálható beállítások teljes listáját lásd az alábbi táblázatokban.
 
 ## Biztonsági beállítások
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Jelszó szükséges a mobileszközök feloldásához**|Nem|Nem|Igen|Igen|Igen|
-|**Kötelező jelszótípus**<br /><br />(a megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat)|Igen|Igen|Igen|Igen|Nem|
-|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**<br /><br />A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. Ez a beállítás azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban). iOS-eszközök esetén azonban azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban)|Igen|Igen|Igen|Igen|Nem|
+|**Kötelező jelszótípus**<br /><br />Ez a beállítás határozza meg a kötelező jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|Igen|Igen|Igen|Nem|
+|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**<br /><br />Négyféle karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. Ez a beállítás azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. iOS-eszközök esetén azonban azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|Igen|Igen|Igen|Igen|Nem|
 |**Jelszó minimális hossza**|Igen|Igen|Igen|Igen|Igen|
-|**Egyszerű jelszavak engedélyezése**<br /><br />Egyszerű jelszó például a „0000” és az „1234”|Nem|Nem|Igen|Igen|Nem|
+|**Egyszerű jelszavak engedélyezése**<br /><br />Egyszerű jelszó például a „0000” és az „1234”.|Nem|Nem|Igen|Igen|Nem|
 |**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Igen|Igen|Igen|Igen|Igen|
 |**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Igen|Igen|Igen|Igen|Igen|
 |**Jelszó lejárata (nap)**|Igen|Igen|Igen|Igen|Igen|
@@ -58,17 +59,17 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 |**Képjelszó és PIN-kód engedélyezése**|Igen|Igen|Nem|Nem|Nem|
 |**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Nem|Nem|Nem|Igen|Nem|
 |**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Nem|Nem|Nem|iOS 7 és újabb verziók|Nem|
-Ha a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is konfigurálja iOS-eszközökön, akkor egymás után lesznek alkalmazva. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
+<sup>1</sup>Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, azok egymás után lesznek alkalmazva. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
-Ha Windows RT rendszerű eszközökre beállítja a jelszóhosszúságra vonatkozó házirend alkalmazását, a rendszer a felhasználókat a jelszavuk módosítására kényszeríti, még akkor is, ha az aktuális jelszó megfelel a házirend követelményeinek.
+Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra vonatkozó szabályzatot, a rendszer a felhasználókat a jelszavuk módosítására kényszeríti, még akkor is, ha az aktuális jelszó megfelel a szabályzat követelményeinek.
 
 ## Titkosítási beállítások
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Titkosítás megkövetelése mobileszközön**<sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|Igen|Nem|Igen|Nem|Igen|
-|**Titkosítás megkövetelése tárolókártyákon**<br /><br />Az Exchange ActiveSync által kezelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|n/a (az alkalmazások és a vonatkozó adatok titkosítása automatikusan megtörténik)|nem áll rendelkezésre|Igen|
-További információk a Windows 8.1 rendszerű eszközökhöz
+|**Titkosítás megkövetelése tárolókártyákon**<br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre <br />Az alkalmazások és a kapcsolódó adatok titkosítása automatikusan megtörténik.|nem áll rendelkezésre|Igen|
+<sup>1</sup>További információ a Windows 8.1 rendszerű eszközökkel kapcsolatban:
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](http://support.microsoft.com/kb/3013816) .
 
@@ -76,7 +77,7 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 
 -   A titkosítás működéséhez az eszköznek teljesítenie kell a Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardvertanúsítvány követelményeit.
 
--   Amikor kényszeríti az eszközön a titkosítást, a Microsoft-fiókkal rendelkező felhasználók részéről a helyreállítási kulcs csak a OneDrive-fiókjukból érhető el. Ez a kulcs nem állítható vissza egy felhasználó nevében.
+-   Amikor kényszeríti az eszközön a titkosítást, a helyreállítási kulcs csak a felhasználó OneDrive-fiókon keresztül elérhető Microsoft-fiókjából érhető el. Ez a kulcs nem állítható vissza egy felhasználó nevében.
 
 ## Kártevőkre vonatkozó beállítások
 
@@ -90,7 +91,7 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Automatikus frissítés szükséges**|Igen|Nem|Nem|Nem|Nem|
-|**Automatikus frissítés szükséges – Az automatikusan telepített frissítések legalacsonyabb besorolása**<br /><br />Válassza ki az automatikus telepítésű frissítések besorolását:<br /><br />**Fontos** – Minden fontosként megjelölt frissítést telepít.<br /><br />**Ajánlott** – Minden fontosként vagy ajánlottként megjelölt frissítést telepít.|Igen|Nem|Nem|Nem|Nem|
+|**Automatikus frissítés szükséges – Az automatikusan telepített frissítések legalacsonyabb besorolása**<br /><br />Válassza ki az automatikus telepítésű frissítések besorolását:<br /><br />- **Fontos**. Minden fontosként megjelölt frissítést telepít.<br /><br />- **Ajánlott**. Minden fontosként vagy ajánlottként megjelölt frissítést telepít.|Igen|Nem|Nem|Nem|Nem|
 |**Képernyőfelvétel-készítés használatának engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Igen|Igen (kizárólag Samsung KNOX esetében)|
 |**Vezérlőközpont engedélyezése a zárolási képernyőn**|Nem|Nem|Nem|iOS 7 és újabb verziók|Nem|
 |**Értesítési nézet engedélyezése a zárolási képernyőn**|Nem|Nem|Nem|iOS 7 és újabb verziók|Nem|
@@ -110,7 +111,7 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |**Dokumentum iCloudba szinkronizálásának engedélyezése**|Nem|Nem|Nem|Igen|Nem|
 |**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Nem|Nem|Nem|Igen|Nem|
 |**Biztonsági másolat titkosításának engedélyezése**|Nem|Nem|Nem|Igen|Nem|
-|**Munkahelyi mappák URL-címe**<br /><br />(beállítja a munkahelyi mappa URL-címét, hogy lehetővé tegye a dokumentumok az eszközök közötti szinkronizálását)|Igen|Nem|Nem|Nem|Nem|
+|**Munkahelyi mappák URL-címe**<br /><br />Ez a beállítás adja meg munkahelyi mappa URL-címét, hogy lehetővé tegye a dokumentumok szinkronizálását az eszközök között.|Igen|Nem|Nem|Nem|Nem|
 |**Google biztonsági mentés engedélyezése**|Nem|Nem|Nem|Nem|Igen (kizárólag Samsung KNOX esetében)|
 
 ## Felhőbeállítások – fiókok és szinkronizálás
@@ -125,8 +126,8 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**E-mail mellékletek letöltésének engedélyezése a felhasználók számára**<sup>1</sup>|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
-|**E-mail szinkronizálási időtartam** Az Exchange ActiveSync által kezelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
-|**Engedélyezze a beállításokat nem teljes mértékben támogató eszközök szinkronizálását az Exchange-kiszolgálóval (Exchange ActiveSync)** Az Exchange ActiveSync által kezelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
+|**E-mail szinkronizálási időszak** <br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
+|**Engedélyezi az e beállításokat teljes mértékben nem támogató mobileszközök számára az Exchange felé történő szinkronizálást (Exchange ActiveSync)** <br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
 |**A Microsoft-fiók opcionálissá tétele a Windows Mail alkalmazásban**|Igen|Nem|Nem|Nem|Nem|
 |**Egyéni e-mail fiókok engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Nem|
 
@@ -141,7 +142,7 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |**Beépülő modulok engedélyezése**|Igen|Nem|Nem|Nem|Nem|
 |**Active Scripting engedélyezése**|Igen|Nem|Nem|Igen|Igen (kizárólag Samsung KNOX esetében)|
 |**Csalás elleni figyelmeztetés engedélyezése**|Igen|Nem|Nem|Igen|Nem|
-|**Intranetes hely engedélyezése egyetlen szó beírásakor**<br /><br />(engedélyezi, hogy egyetlen szó, például a „Bing” használatával az Internet Explorert webhelyekre lehessen irányítani)|Igen|Nem|Nem|Nem|Nem|
+|**Intranetes hely engedélyezése egyetlen szó beírásakor**<br /><br />(Ez a beállítás engedélyezi, hogy az Internet Explorer egyetlen szó – például a „Bing” – megadása esetén megnyisson egy webhelyet.)|Igen|Nem|Nem|Nem|Nem|
 |**Intranet hálózat automatikus észlelésének engedélyezése**|Igen|Nem|Nem|Nem|Nem|
 |**Internet zóna biztonsági szintje**|Igen|Nem|Nem|Nem|Nem|
 |**Intranet zóna biztonsági szintje**|Igen|Nem|Nem|Nem|Nem|
@@ -180,9 +181,9 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |**Wi-Fi használatának engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
 |**Wi-Fi alapú internetmegosztás használatának engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
 |**Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Nem|
-|**Wi-Fi elérési pontok jelentéskészítésének engedélyezése**<br /><br />(információt küld a Wi-Fi kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében)|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Nem|
-|**Földrajzi hely meghatározásának engedélyezése**<br /><br />(engedélyezi az eszköz számára a helyadatok használatát)|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
-|**NFC használatának engedélyezése**<br /><br />(engedélyezi a kis hatótávolságú kommunikációt használó műveleteket)|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
+|**Wi-Fi elérési pontok jelentéskészítésének engedélyezése**<br /><br />Ez a beállítás információt küld a Wi-Fi-kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében.|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Nem|
+|**Földrajzi hely meghatározásának engedélyezése**<br /><br />Ez a beállítás engedélyezi az eszköz számára a helyadatok használatát.|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
+|**NFC használatának engedélyezése**<br /><br />Ez a beállítás engedélyezi a kis hatótávolságú kommunikációt használó műveleteket.|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
 |**Bluetooth használatának engedélyezése**|Nem|Nem|Csak Windows Phone 8.1 esetén|Nem|Igen (kizárólag Samsung KNOX esetében)|
 |**Kikapcsolás engedélyezése**<br>Ha ez a beállítás le van tiltva, a **Megengedett sikertelen bejelentkezések száma az eszközön tárolt adatok törléséig** beállítás Samsung KNOX-eszközökön nem működik.|Nem|Nem|Nem|Nem|Igen (kizárólag Samsung KNOX esetében)|
 
@@ -207,11 +208,10 @@ További információk a Windows 8.1 rendszerű eszközökhöz
 |**A YouTube használatának engedélyezése**|Nem|Nem|Nem|Nem|Igen (kizárólag Samsung KNOX esetében)|
 
 ### További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

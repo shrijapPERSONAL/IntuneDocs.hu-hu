@@ -13,22 +13,22 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
-ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
+ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
+ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 
 
 ---
 
 # Windows-számítógépek felügyeletére szolgáló képességek a számítógépes Microsoft Intune ügyfélszoftverben
-A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ugyanis több funkciót biztosít, mint a számítógépes Intune ügyfélszoftver. Az Intune számítógépes ügyfélszoftverrel azonban számítógépeket is felügyelhet, és a következő funkciókat veheti igénybe:
+A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ugyanis több funkciót biztosít, mint a számítógépes Intune ügyfélszoftver. Az Intune-számítógépügyféllel azonban számítógépeket is felügyelhet, és a következő funkciókat veheti igénybe:
 
 -   **Szoftverfrissítések kezelése** – Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
 
--   **Windows tűzfal házirendje** – Ezzel biztosíthatja, hogy a vállalat által használt számítógépeken ne legyen inaktív vagy nem megfelelően beállított Windows tűzfal.
+-   **Windows tűzfalházirend** – Ezzel biztosíthatja, hogy a vállalatnál használt számítógépeken ne legyen inaktív vagy nem megfelelően beállított Windows tűzfal.
 
 -   **Kártevők elleni védelem** – Az Intune Endpoint Protection védelmet használ, amely segít a számítógépek kártevők elleni védelmében.
 
--   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune-hoz tartozó távoli asztal szolgáltatás segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
+-   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune beépített távoli asztali funkciója segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
 -   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
@@ -37,22 +37,22 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 Az Intune a PC-s ügyfélprogram akár 7000 Windows-eszközre való telepítését is támogatja.
 
 ## Rendszerkövetelmények
-Az Intune a Windows következő verzióival rendelkező számítógépek felügyeletére alkalmas (az x86-os és az x64-es verziók felügyeletére egyaránt):
+Az Intune a Windows következő verzióival rendelkező számítógépek felügyeletére alkalmas (32 bites és 64 bites verziók egyaránt):
 
 
--   **Windows Vista** – Business, Enterprise és Ultimate verziók.
+-   **Windows Vista** – Business, Enterprise és Ultimate verziók
 
--   **Windows 7** – Pro, Enterprise és Ultimate verziók (szervizcsomag nélkül vagy SP1-gyel).
+-   **Windows 7** – Pro, Enterprise és Ultimate verziók (szervizcsomag nélkül vagy SP1-gyel)
 
--   **Windows 8** – Pro és Enterprise verziók.
+-   **Windows 8** – Pro és Enterprise verziók
 
--   **Windows 8.1** – Pro és Enterprise verziók.
+-   **Windows 8.1** – Pro és Enterprise verziók
 
-- **Windows 10** - Pro, Education és Enterprise verziók.
+- **Windows 10** - Pro, Education és Enterprise verziók
 
 
 ## Minimális hardverkövetelmények
-A számítógépes Intune ügyfélszoftver a következő minimális hardverkövetelményekkel telepíthető:
+Az Intune-számítógépügyfél a következő minimális hardverkövetelményekkel telepíthető:
 
 |Követelmény|Részletek|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ A számítógépes Intune ügyfélszoftver a következő minimális hardverköve
 |Lemezterület|200 MB szabad lemezterület az ügyfélszoftver telepítése előtt.|
 
 ## További követelmények
-A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelményei a következők:
+Az Intune-számítógépügyfél telepítésének szoftverkövetelményei a következők:
 
 |Követelmény|Részletek|
 |---------------|--------------------|
@@ -74,6 +74,6 @@ A számítógépes Intune ügyfélszoftver telepítésének szoftverkövetelmén
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

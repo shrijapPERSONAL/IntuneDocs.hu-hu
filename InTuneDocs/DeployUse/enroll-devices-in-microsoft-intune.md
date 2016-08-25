@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
 
 
 ---
 
 # Eszközök regisztrálása felügyeletre a Microsoft Intune-ban
 A Microsoft Intune mobileszköz-kezelési (MDM) funkciója a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést. Az eszközök regisztrálásának módja az eszköz típusától, a tulajdonostól, és a felügyeleti szinttől függ. A „saját eszközök használata” (BYOD) és a vállalati tulajdonban lévő eszközök (COD) használata esetén szükség van a regisztrálási folyamatra. A helyi vagy felhőalapú Exchange ActiveSync programot használó vállalatok számára egyszerűbb, regisztráció nélküli felügyelet is megvalósítható. Az Intune ügyfélszoftvere segítségével Windows-számítógépek is felügyelhetők.
+
+Segítséget az [eszközök regisztrálásának módjai](/intune/get-started/choose-how-to-enroll-devices1) című témakörben talál.
 
 ###  Támogatott eszközplatformok
 
@@ -149,6 +151,6 @@ Az Intune ügyfélszoftverével felügyelt számítógépeken nem lehet szelekt�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

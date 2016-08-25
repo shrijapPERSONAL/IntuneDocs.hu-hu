@@ -13,13 +13,68 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
+ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
+ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 ---
+## Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről
+
+A felhasználók jelezték, hogy egységes csoportosítási és célcsoport-kezelési felületet szeretnének a Nagyvállalati mobilitás + biztonság egészéhez, ezért az Intune-csoportokat átalakítjuk Azure Active Directory-alapú biztonsági csoportokká. Ez egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Az új felület jóvoltából a jövőben nem kell csoportokat duplikálni a szolgáltatások között, és támogatott lesz PowerShell- és a Graph-alapú bővíthetőség is. 
+
+### Hogyan érint ez engem jelen pillanatban?
+A változás most még nem érinti Önt, de eláruljuk, mi várható:
+
+-   Szeptembertől a havi szolgáltatásverzió kiadása után létesített új fiókok már az Azure AD-alapú biztonsági csoportokat fogják használni az Intune-os felhasználói csoportok helyett.   
+-   Októbertől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és eszközalapú csoportokat is az Azure AD portálján kezelik majd. A meglévő ügyfeleket nem érinti
+-   Novemberben az Intune-termékcsapat elkezdi a meglévő ügyfelek migrálását az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyike migrálva lesz az Azure AD-alapú biztonsági csoportokba. A migrálás novemberben kezdődik, és kötegekben történik. Mindaddig nem kezdjük meg a migrálást, amíg nem sikerül minimalizálni annak hatását a napi munkára, és nem biztosított, hogy a végfelhasználók semmiféle hatást ne érzékeljenek. A fiókjuk áttelepítését megelőzően is küldünk értesítést.
+
+
+### Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
+A meglévő ügyfelek migrálása nem azonnal, hanem folyamatosan történik. A migrálás ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. A migrálás előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az [intunegrps@microsoft.com](intunegrps@microsoft.com) címen.
+
+### Mi történik a meglévő felhasználó- és eszközcsoportjaimmal?
+ Az Ön által létrehozott felhasználó- és eszközcsoportok átkerülnek az Azure AD-alapú biztonsági csoportokba. Az olyan alapértelmezett Intune-csoportok, mint a Minden felhasználó, csak akkor lesznek migrálva, ha a migrálás időpontjában üzemelő példányokban használják őket. Bizonyos csoportok esetében a migrálás összetettebb feladatot képezhet; értesítjük, ha további lépések szükségesek.
+
+### Milyen új funkciókat érhetek el?
+A bevezetésre kerülő új funkciók:
+
+-    Az Intune minden telepítéstípus esetében támogatni fogja az Azure AD-alapú biztonsági csoportokat.
+-    Az Azure AD-alapú biztonsági csoportok támogatni fogják az eszközök csoportosítását a felhasználók csoportosításával együtt.
+-    Az Azure AD-alapú biztonsági csoportok támogatni fogják az Intune-eszközattribútumokkal rendelkező dinamikus csoportokat. Lehetséges lesz többek között platform (például iOS) alapján dinamikusan csoportosítani az eszközöket. Így amikor új iOS-eszközt regisztrálnak a szervezetnél, az automatikusan hozzáadódik az iOS dinamikus eszközcsoporthoz.
+-    Egységes csoportfelügyelet az Azure AD-ben és az Intune-ban.
+- Az Azure AD-be bekerül az *Intune-szolgáltatásadminisztrátor* szerepkör, így az Intune szolgáltatásadminisztrátorai az Azure AD-ben is végrehajthatnak csoportfelügyeleti feladatokat.
+
+
+
+
+### Mely Intune-funkciók nem lesznek elérhetők?
+Jóllehet a csoportfelügyelet minősége javulni fog, vannak olyan Intune-funkciók, amelyek a migrálás után elérhetetlenné válnak.
+
+#### Csoportfelügyeleti funkciók
+
+-   Új csoport létrehozásakor nem lesz lehetséges tagok vagy csoportok kizárása. Az Azure AD-alapú dinamikus csoportok ugyanakkor lehetővé teszik, hogy attribútumok alkalmazásával összetett szabályokat alakítson ki bizonyos tagok feltételalapú kizárására.
+-   A **Nem csoportosított felhasználók** és a **Nem csoportosított eszközök** csoportjai nem támogatottak. Ezek csoportok nem kerülnek migrálásra.
+
+
+#### Csoportfüggő funkciók
+
+-   A Szolgáltatásadminisztrátor szerepkör nem rendelkezik majd **Csoportok kezelése** engedéllyel.
+-   Az Exchange ActiveSync-eszközök nem lesznek csoportosíthatók.  A **Minden EAS által kezelt eszköz** csoport csoportnézetből jelentésnézetté alakul.
+-  A jelentésekben nem lesz elérhető a csoportok alapján történő kimutatás.
+-  Az értesítési szabályok egyedi csoportcélzási lehetősége megszűnik.
+
+### Hogyan készüljek fel a változásra?
+ A következőket ajánljuk a zökkenőmentes átállás érdekében:
+
+- A migrálás előtt töröljön minden olyan Intune-csoportot, amelyre nincs szüksége.
+- Vizsgálja felül a csoportokból való kizárás eddigi használatát, és próbálja meg úgy átalakítani a csoportokat, hogy a jövőben ne legyen szüksége erre a funkcióra.
+-  Ha vannak olyan rendszergazdák, akik számára nem engedélyezett csoportok létrehozása az Azure AD-ben, kérje meg Azure AD-rendszergazdáját, hogy adja hozzá őket az **Intune-szolgáltatásadminisztrátor** Azure AD-szerepkörhöz.
+
 
 # Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal
+
+Ez a szakasz azt ismerteti, hogy hogyan hozhat létre Intune-csoportokat az Intune felügyeleti konzolján.
 
 Csoportok létrehozásához és kezeléséhez lépjen a **Csoportok** munkaterületre a Microsoft Intune felügyeleti konzolon. A **Csoportok áttekintése** oldal olyan állapotösszegzéseket tartalmaz, amelyek segítenek az alábbiakkal kapcsolatos problémák kezelésében és rangsorolásában:
 
@@ -153,6 +208,6 @@ Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -3,18 +3,18 @@ title: "Hogyan kérhet támogatást | Microsoft Intune"
 description: "A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: c464f0ff5d36e2bc4fb03ae8cfa6ac38580f9213
 Ez a témakör azt ismerteti, hogyan nyithat meg egy szolgáltatáskérést, illetve hogyan hívhatja fel a különböző nyelvű telefonos ügyfélszolgálatokat.
 
 Ha saját maga szeretné megtalálni a választ az Intune használatával kapcsolatos kérdésekre, az [Általános hibaelhárítási tippek a Microsoft Intune rendszerhez](general-troubleshooting-tips-for-microsoft-intune.md) című témakörből, illetve az ebben a témakörben a **Lásd még** részben felsorolt, konkrét problémák hibaelhárításával foglalkozó témakörökből tájékozódhat.
+
+>[!NOTE]
+>
+>Premier szintű ügyfelek a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) nyithatnak meg Intune támogatási jegyet.
+
 ## Online szolgáltatáskérés létrehozása
 
 1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) az Intune-beli hitelesítő adataival.
@@ -140,6 +145,6 @@ Feladataink:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

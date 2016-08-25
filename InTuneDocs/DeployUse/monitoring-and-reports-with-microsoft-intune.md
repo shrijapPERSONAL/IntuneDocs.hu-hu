@@ -1,6 +1,6 @@
 ---
 title: "Figyelés és jelentéskészítés | Microsoft Intune"
-description: "A megfigyelés és a jelentések segítségével megfigyelheti az eszközök állapotát a szervezetben."
+description: "Az Intune figyelési és jelentéskészítési funkciójával megfigyelheti az eszközök állapotát a szervezetben."
 keywords: 
 author: Nbigman
 manager: angrobe
@@ -13,24 +13,24 @@ ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ebb1139cdd8c2bb57f7275bd79be3a69288b96f6
+ms.sourcegitcommit: 79e7113b2b4d5f0d049f22b05db0a8f24e4de570
+ms.openlocfilehash: c1a810bd8c6df05ccc35efbbfd4d9cfdc8fcd614
 
 
 ---
 
 # Figyelés és jelentéskészítés a Microsoft Intune-ban
-Informatikai rendszergazdaként szeretné megfigyelni az eszközök állapotát a szervezetben. A Microsoft Intune kétféle módszert biztosít ezen eszközök, valamint a szoftverlicenc-állapot és az eszközöket befolyásoló műveletek (például az eszközök adatai törlésének) megfigyeléséhez.
+Az Intune-nal a rendszergazdák kétféle módon is figyelhetik a szervezet eszközeit. A figyelés kiterjed a szoftverlicencek állapotára és az eszközöket befolyásoló tevékenységekre, például az eszköz adatainak törlésére.
 
--   A **[Jelentések](understand-microsoft-intune-operations-by-using-reports.md)** segítségével figyelheti az Intune-nal kezelt eszközök állapotát (beleértve a szoftverfrissítések állapotát, a telepített szoftvereket és a tanúsítványok megfelelőségét).
-     Ezek a jelentések a különféle eszközök és számítógépek által összegyűjtött hardver- és szoftverleltárak vizsgálatára is alkalmasak.
+-   **[Jelentések](../deploy-use/understand-microsoft-intune-operations-by-using-reports.md)** segítségével hatékonyabban figyelheti az Intune által kezelt eszközök állapotát. Ilyen lehet például a szoftverfrissítések állapota, a telepített szoftverek leltára vagy a tanúsítványok megfelelősége.
+     Az Intune-jelentések az összes eszköz és számítógép hardverleltárát is tartalmazzák.
 
--   A **[Riasztások](get-notified-by-alerts.md)** segítségével figyelheti az Intune-nal kezelt eszközök állapotát (beleértve az Endpoint Protection állapotát és figyelmeztetéseit; a kártevő szoftverekkel kapcsolatos riasztásokat; illetve a lemezterület szűkösségére vagy a hálózati kapcsolat hiányára vonatkozó figyelmeztetéseket).
+-   **[Riasztások](../deploy-use/get-notified-by-alerts.md)** segítségével hatékonyabban figyelheti az Intune által kezelt eszközök üzemállapotát. Ilyen lehet például az Endpoint Protection állapota és a kártevő szoftverekkel kapcsolatos riasztások, vagy a lemezterület szűkösségére vagy a hálózati kapcsolat hiányára vonatkozó figyelmeztetések.
 
--   Az Intune által kezelt eszközök és számítógépek részletes információkat adnak a tulajdonságaikról és a telepített szoftvereikről.  Az Intune eszközeivel és jelentéseivel megvizsgálhatók és ábrázolhatók ezek az adatok. Részletekért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](understand-your-devices-with-inventory-in-microsoft-intune.md).
+Az Intune által kezelt eszközök és számítógépek részletes információkat adnak a tulajdonságaikról és a telepített szoftvereikről. Az Intune eszközei és jelentései lehetővé teszik ezen adatok vizsgálatát és az információk megjelenítését. Részletekért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](../deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

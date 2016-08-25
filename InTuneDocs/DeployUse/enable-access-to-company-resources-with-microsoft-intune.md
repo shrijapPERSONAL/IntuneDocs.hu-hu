@@ -13,33 +13,33 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ae9b3be57e4008d25f5222025c057fc4211f1119
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal
-A Microsoft Intune Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a munkájuk sikeres elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is. A hozzáférés védelmét tanúsítványprofilok segítik.
+A Microsoft Intune-alapú Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a munkájuk elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is. A hozzáférés védelmét tanúsítványprofilok segítik.
 
 ## A [Wi-Fi-profilok](wi-fi-connections-in-microsoft-intune.md) és a támogatott platformok
 
-Vezeték nélküli hálózati beállításokat telepíthet a felhasználók számára. Ezen beállítások telepítésével lecsökkentheti a vállalati hálózat hozzáféréséhez szükséges végfelhasználói beavatkozást.
+Vezeték nélküli hálózati beállításokat telepíthet a felhasználók számára. Ezek a beállítások megkönnyítik a felhasználók számára a vállalati hálózathoz való csatlakozást.
 #### Támogatott platformok
 
 |Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Igen (importálhat Windows Wi-Fi profilt)|Igen (konfigurálhat OMA-URI-beállítást) |Igen|Igen|Igen|
+|Igen (Importálhat Windows-alapú Wi-Fi-profilt)|Igen (Konfigurálhat OMA-URI-beállítást) |Igen|Igen|Igen|
 
 ## A [VPN-profilok](vpn-connections-in-microsoft-intune.md) és a támogatott platformok
-Alkalmazzon virtuális magánhálózati (VPN) beállításokat a felhasználókra. Ezen beállítások telepítésével lecsökkentheti a vállalati hálózaton lévő erőforrások eléréséhez szükséges végfelhasználói beavatkozást.
+Virtuális magánhálózati (VPN-) beállításokat alkalmazhat a felhasználókra. Ezek a beállítások megkönnyítik a felhasználók számára a vállalati hálózathoz való csatlakozást.
 
 |Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
 |Igen|Igen|Igen|Igen|Igen|
 
 ## Az [e-mail-profilok](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) és a támogatott platformok
-Segítségükkel létrehozhatja, telepítheti és megfigyelheti a natív e-mail-ügyfélprogram beállításait a szervezetben lévő eszközökön.
+Segítségükkel létrehozhatja, érvénybe léptetheti és nyomon követheti a natív e-mail-ügyfélprogram beállításait a szervezetnél található eszközökön.
 
 |Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Segít a vállalati erőforrások elérésének biztonságossá tételében, bel
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

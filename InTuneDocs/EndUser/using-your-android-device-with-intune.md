@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 # Android-eszköz használata az Intune-nal
 
-Ezen a lapon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk: regisztrációval kapcsolatos információk, felügyeleti feladatok és megfelelőségi problémák.
+A jelen cikk minden, a végfelhasználók által az Intune által felügyelt eszközökön elvégezhető feladat hivatkozását tartalmazza. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat különböző kategóriákba csoportosítottuk: 
+
+- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban 
+- Eszközregisztráció utáni felügyeleti feladatok
+- Megfelelőségi problémák
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
@@ -67,6 +71,6 @@ Az itt olvasható információk az Android-eszköz Intune-ban történő regiszt
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

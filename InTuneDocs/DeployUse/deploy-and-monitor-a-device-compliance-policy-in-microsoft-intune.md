@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Eszközmegfelelőségi szabályzat üzembe helyezése és figyelése a Microsoft Intune-ban
 ## Megfelelőségi házirend telepítése
-A [létrehozott](create-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szervezetében megtalálható felhasználók vagy eszközök egy vagy több csoportja számára is telepítheti.
+A [létrehozott](create-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szervezetében megtalálható felhasználók egy vagy több csoportja számára is telepítheti. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi.
 
 1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 ![A megfelelőségi szabályzat lapjának felső részén található Központi telepítés kezelése menüt megjelenítő képernyőkép](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  A **Központi telepítés kezelése** párbeszédpanelen válasszon ki egy vagy több csoportot, amelyhez a szabályzatot telepíteni szeretné, majd válassza a **Hozzáadás > OK** elemet.
-![A Központi telepítés kezelése párbeszédpanel képernyőképe](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) A felhasználók vagy eszközök részére beállíthat megfelelőségi szabályzatot. Használja a már létrehozott és az Intune-nal szinkronizált Active Directory-csoportokat, vagy hozza létre ezeket a csoportokat manuálisan az Intune-konzolon. A szabályzatok beállításával kapcsolatos további tudnivalókért lásd a [konfigurációs szabályzat beállításáról](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) szóló részt.
+![A Központi telepítés kezelése párbeszédpanel képernyőképe](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) A felhasználók részére beállíthat megfelelőségi szabályzatot. Használja a már létrehozott és az Intune-nal szinkronizált Active Directory-csoportokat, vagy hozza létre ezeket a csoportokat manuálisan az Intune-konzolon. A szabályzatok beállításával kapcsolatos további tudnivalókért lásd a [konfigurációs szabályzat beállításáról](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) szóló részt.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások használatával azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az **Irányítópult** munkaterületen is.
 
@@ -72,6 +72,6 @@ Most a megfelelőségi házirendet feltételes hozzáférési házirendekkel has
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -10,32 +10,30 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
-ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
 
 
 ---
 
 # Az eszközkezelés módjának kiválasztása
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] segítségével számos különböző eszközt kezelhet úgy, hogy *regisztrálja* őket a szolgáltatásban. A felhasználók ezt követően számos különböző műveletet végezhetnek el a *vállalati portál* segítségével: regisztrálhatják az alkalmazásokat, válogathatnak az alkalmazások közül, telepíthetik őket, ellenőrizhetik, hogy megfelel-e az eszközük a vállalat szabályzatainak, és az informatikai támogatási munkatársakhoz fordulhatnak.
+Az Intune segítségével számos különböző eszközt kezelhet a szolgáltatásban való *regisztrálásukat* követően. A felhasználók ezt követően számos különböző műveletet végezhetnek el a *vállalati portál* segítségével: regisztrálhatják az alkalmazásokat, válogathatnak az alkalmazások közül, telepíthetik őket, ellenőrizhetik, hogy megfelel-e az eszközük a vállalat szabályzatainak, és az informatikai támogatási munkatársakhoz fordulhatnak.
 
 ## A mobileszközök kezelésének módjai
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a következő eszközplatformokat képes kezelni:
+Az Intune a következő eszközplatformokat képes kezelni:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>Ha korábban regisztrált olyan eszközöket, amelyeken az iOS-nak a támogatottnál korábbi verziója fut, azok regisztrálva maradnak. Azonban minden [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-verzió dokumentációjában ellenőrizze, hogy az adott iOS-verziót támogatja-e a funkció.</p>
-</div>
+> [!NOTE]
+> Ha korábban regisztrált olyan eszközöket, amelyeken az iOS-nak a támogatottnál korábbi verziója fut, azok regisztrálva maradnak. Ellenőrizze a dokumentációban, hogy mely szolgáltatás támogatja az iOS adott verzióját.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] képes a felhasználók eszközeinek (közkeletű nevén a „saját behozott eszközök” (BYOD)) kezelésére. A vállalat tulajdonában lévő eszközök kezelésére is alkalmas, beleértve az olyan helyzeteket is, amikor a vállalat a választható eszközök listáját bocsátja a felhasználók rendelkezésére (közkeletű nevén „saját eszköz kiválasztása” vagy CYOD).
+Az Intune képes a felhasználók saját eszközeinek (amelyekre általában „hozott eszközök” (BYOD) néven hivatkoznak) kezelésére. A vállalat tulajdonában lévő eszközök kezelésére is alkalmas, beleértve az olyan helyzeteket is, amikor a vállalat a választható eszközök listáját bocsátja a felhasználók rendelkezésére (közkeletű nevén „saját eszköz kiválasztása” vagy CYOD).
 
 ### Az eszközök regisztrálása felügyeletre
-A mobileszköz-operációs rendszert (iOS, Android, Windows Phone) használó eszközöket mindig regisztrálni kell. Az eszközök regisztrálásának módja azonban függ a vállalat igényeitől:
+A mobileszköz-operációs rendszert (iOS, Android, Windows Phone) használó eszközöket mindig regisztrálni kell. Az eszközök regisztrálásának módja a vállalat igényeitől függ:
 
 |Beléptetés típusa|BYOD|CYOD|Megosztott eszköz kezelő fiókkal|Megosztott eszköz felhasználói fiók nélkül|
 |-------------------|--------|--------|--------------------------------------|----------------------------------------|
@@ -45,26 +43,21 @@ A mobileszköz-operációs rendszert (iOS, Android, Windows Phone) használó es
 |**Regisztráció törlését végzi**|Tulajdonos vagy a rendszergazda|Platform |Rendszergazda vagy felhasználó|Rendszergazda vagy felhasználó|
 |**Alaphelyzetbe állíthatja**|Tulajdonos vagy a rendszergazda|Rendszergazda|Rendszergazda|Rendszergazda|
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>Az eszközök regisztrálásával elérhető lehetőségek teljes listájáért lásd: [Mobileszköz-kezelési képességek](mobile-device-management-capabilities-in-microsoft-intune.md).</p>
-</div>
+További információkért lásd: [a mobileszközök regisztrálásának módjai](/intune/get-started/choose-how-to-enroll-devices1).
 
-
+> [!NOTE]
+> Az eszközök regisztrálásával elérhető lehetőségek teljes listájáért lásd: [Mobileszköz-kezelési képességek](mobile-device-management-capabilities-in-microsoft-intune.md).
 
 ## A Windows rendszerű számítógépek kezelésének módjai
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] képes Windows Vista és újabb rendszerű Windows-számítógépek kezelésére az Intune-számítógépügyféllel. A Windows-számítógépek esetében eldöntheti azonban, hogy regisztrálja őket, vagy telepíti az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-számítógépügyfelet. Az utóbbi olyan lehetőségeket is kínál, amelyek az eszközök regisztrálása esetén nem érhetők el. A legtöbb esetben azonban célszerű regisztrálni a Windows-eszközöket az Intune-ban, ez ugyanis több funkciót biztosít, mint a számítógépes ügyfél.
+Az Intune képes a Windows Vista vagy újabb Windows rendszerű számítógépek kezelésére az Intune-számítógépügyféllel. A Windows rendszerű számítógépek esetében azonban választhat, hogy regisztrálja őket, vagy telepíti az Intune-számítógépügyfelet. Az utóbbi olyan lehetőségeket is kínál, amelyek az eszközök regisztrálása esetén nem érhetők el. A legtöbb esetben azonban célszerű regisztrálni a Windows-eszközöket az Intune-ban, ez ugyanis több funkciót biztosít, mint a számítógépes ügyfél.
 
 Akkor fontolja meg az Intune-számítógépügyfél használatát, ha a következők a céljai:
-<ul>
-<li>A Microsoft Intune-számítógépügyfél által nyújtott funkciók használata a Windows-számítógépek felügyelete céljából.</li>
-<li>Olyan Windows-számítógép kezelése, amelyen a regisztrációt nem támogató operációs rendszer fut.</li>
-</ul>
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Tipp</h5>
-  <p>A támogatott Windows-számítógépeken futó Intune-számítógépügyfél által nyújtott funkciók teljes listáját lásd: [A Windows-számítógépek felügyeletére szolgáló képességek](windows-pc-management-capabilities-in-microsoft-intune.md).</p>
-</div>
+- A Microsoft Intune-számítógépügyfél által nyújtott funkciók használata a Windows rendszerű számítógépek felügyelete céljából
+- Olyan Windows rendszerű számítógépek kezelése, amelyeken a regisztrációt nem támogató operációs rendszer fut
+
+> [!NOTE]
+> A támogatott Windows-számítógépeken futó Intune-számítógépügyfél által nyújtott funkciók teljes listáját lásd: [A Windows-számítógépek felügyeletére szolgáló képességek](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ## Felügyelet az Exchange ActiveSync segítségével
 Az Exchange ActiveSync segítségével is felügyelheti az eszközöket. Ehhez telepítenie kell az intézményi összekötőt, vagy a beépített Service to Service összekötővel kell kapcsolódnia az Exchange Serverhez.
@@ -80,6 +73,6 @@ Az előzőekben megismert néhány funkciót, amelyeket akkor használhat, ha re
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

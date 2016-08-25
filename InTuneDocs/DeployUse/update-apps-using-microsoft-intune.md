@@ -1,6 +1,6 @@
 ---
 title: "Alkalmazások frissítése | Microsoft Intune"
-description: "Ez a témakör azt ismerteti, hogy miként frissítheti az alkalmazásokat, ha új verzióra van szükség."
+description: "Ebből a témakörből megtudhatja, hogyan frissítheti az alkalmazásokat, ha új verzióra van szükség."
 keywords: 
 author: robstackmsft
 manager: angrobe
@@ -13,20 +13,20 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
+ms.sourcegitcommit: ffc9a753f2f5ff2aa98a589b752936d67a0888b5
+ms.openlocfilehash: cefe90cdb0cda5ada259576af7cf477642860446
 
 
 ---
 
 # Alkalmazások frissítése a Microsoft Intune-nal
-A Microsoft Intune lehetővé teszi az alkalmazásfrissítések kezelését. Ez a témakör azt ismerteti, hogy miként frissítheti az alkalmazásokat, ha új verzióra van szükség.
+A Microsoft Intune lehetővé teszi az alkalmazásfrissítések kezelését. Ebből a témakörből megtudhatja, hogyan frissítheti az alkalmazásokat, ha új verzióra van szükség.
 
 ## Alkalmazások frissítése
-Amikor megjelenik egy telepített alkalmazás egy új verziója, az Intune lehetővé teszi, hogy frissítse és telepítse az alkalmazás újabb verzióját. Egy központi telepítést csak ugyanazon alkalmazás egy újabb verziójára cserélhet le (ugyanazzal az azonosítóval). Az alkalmazásfrissítéseket nem használhatja egy központi telepítés egy másik alkalmazáscsomaggal való frissítésére.
+Amikor megjelenik egy telepített alkalmazás egy új verziója, az Intune lehetővé teszi, hogy frissítse és telepítse az alkalmazás újabb verzióját. Egy telepítést csak ugyanazon alkalmazás egy újabb verziójára cserélhet le (amely ugyanazzal az azonosítóval rendelkezik). Az alkalmazásfrissítéseket nem használhatja egy központi telepítés egy másik alkalmazáscsomaggal való frissítésére.
 
 ### Alkalmazásazonosítók
-Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítja az alkalmazást. Nem telepíthet több alkalmazáspéldányt azonos azonosítóval. Példa:
+Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítja az alkalmazást. Nem telepíthet több alkalmazáspéldányt azonos azonosítóval. Az alábbiakban bemutatunk néhány példát az alkalmazásazonosítókra:
 
 - **iOS** – Csomagazonosító (példa: com.microsoft.excel)
 - **Android** – Csomagazonosító (példa: com.microsoft.excel)
@@ -37,13 +37,13 @@ Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítj
 
 > [!IMPORTANT]
 > Ha egy alkalmazást a **Szükséges telepítés** központi telepítési művelettel telepít, majd később a központi telepítési műveletet az **Elérhető telepítés**lehetőségre módosítja, az alkalmazás frissítései nem lesznek automatikusan telepítve azokon az eszközökön, melyeken a központi telepítési módosítás előtt települt az alkalmazás. A probléma megoldásához tegye a következőket:
-> 
+>
 > -   Kérje meg az eszköz felhasználóját, hogy nyissa meg a vállalati portált, válassza ki a telepített alkalmazást, majd kattintson a **Telepítés** lehetőségre.
 > -   Módosítsa a központi telepítési műveletet az **Eltávolítás**lehetőségre, és az alkalmazás eltávolítása után telepítse újra az alkalmazást az **Elérhető telepítés**központi telepítési művelettel.
 
 ### Alkalmazás frissítésére
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások** elemet.
+1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások** elemet.
 
 2.  Válassza ki a frissíteni kívánt alkalmazást az **Alkalmazások** listáról, majd kattintson a **Szerkesztés** lehetőségre.
 
@@ -52,14 +52,12 @@ Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítj
 4.  Ha elkészült, válassza a **Frissítés** elemet.
 
 Amikor az eszközök legközelebb keresnek elérhető alkalmazásokat, az alkalmazás automatikusan a legújabb verzióra fog frissülni.
-Az alkalmazáscsomagokból telepített alkalmazások (üzletági alkalmazások) esetében az alkalmazás mind a szükséges, mind az elérhető üzembe helyezésekhez frissül addig, amíg változatlan azonosítóval rendelkezik.
+Az alkalmazáscsomagokból telepített alkalmazások (üzletági alkalmazások) esetében az alkalmazás mind a szükséges, mind az elérhető telepítésekhez frissül mindaddig, amíg változatlan azonosítóval rendelkezik.
+
 Az áruházi hivatkozásként üzembe helyezett alkalmazások frissítéseit az alkalmazás eredeti áruháza kezeli.
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

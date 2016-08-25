@@ -13,15 +13,18 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 ---
 
 # Windows-eszköz használata az Intune-nal
 
-Ezen a lapon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által kezelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk: beléptetéssel kapcsolatos információk, felügyeleti feladatok és megfelelőségi problémák.
+A jelen cikk minden, a végfelhasználók által az Intune által felügyelt eszközökön elvégezhető feladat hivatkozását tartalmazza. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat különböző kategóriákba csoportosítottuk: 
+- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban 
+- Eszközregisztráció utáni felügyeleti feladatok
+- Megfelelőségi problémák
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
@@ -57,6 +60,6 @@ Az itt olvasható információk a Windows-eszköz Intune-beli regisztrálásakor
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
