@@ -8,9 +8,6 @@
 ### [Mobileszközök regisztrálása és alkalmazások telepítése](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Egyéb beállítások és kiegészítő funkciók](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [További lépések](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Az Intune értékelésével kapcsolatos általános feladatok](common-microsoft-intune-evaluation-tasks.md)
-### [A próbaverzió elindítása és iOS PIN-szabályzat bevezetése](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [E-mail hozzáférés beállítása iOS-eszközök számára](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Gyakori helyzetek](common-ways-to-use-intune.md)
 ## [Rövid útmutatók](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Céges adatszivárgások megelőzése az Office 365 alkalmazásokban](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "Elháríthat szabályzatok konfigurációjával kapcsolatos probl�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ Az alábbi képernyőképen két világos példa látható:
 
 > [!NOTE]
 > Ne felejtse el, hogy ha két különböző korlátozási szintű házirend vonatkozik egy eszközre vagy felhasználóra, akkor gyakorlatban a szigorúbb házirend lesz érvényes.
-
-## Házirendfrissítés és frissítési időközök
-Vegye figyelembe, hogy a házirendek rendszeres időközönként frissülnek. Általában a házirendeknek a módosítások elvégzése után legfeljebb 15 perccel érvénybe kell lépniük az eszközökön. Az alábbiakban további részleteket talál a házirendek frissítésének rendszeres időközeiről:
-
--   **MDM-mel regisztrált Windows-eszköz**: A házirend Windows 8.1-es és Windows 10-es eszközökön 8 óránként, míg Windows RT-eszközökön 24 óránkét frissül.
-
--   **Windows Phone-telefon:** A házirend 8 óránként frissül. Ez a vállalati portálról történő frissítéssel kényszeríthető, a **Beállítások** területen.
-
--   **iOS:** A házirend naponta egyszer frissül, véletlenszerű időközönként. Ez is kényszeríthető a Vállalati portál megnyitásával, majd az eszköz kiválasztásával, és a **Szinkronizálás** lehetőség kiválasztásával.
-
--   **Android:** A házirend naponta egyszer frissül, véletlenszerű időközönként. Ez is kényszeríthető a Vállalati portál megnyitásával, majd az eszköz kiválasztásával, és a **Szinkronizálás** lehetőség kiválasztásával.
 
 ## Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
 Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policyplatform.log fájlban lévő házirendhibák az eszközön lévő Windows Felhasználói fiókok felügyelete (UAC) nem alapértelmezett beállításainak eredményei lehetnek. Néhány nem alapértelmezett UAC-beállítás hatással lehet a Microsoft Intune ügyféltelepítéseire és a házirendek érvénybe léptetésére.
@@ -93,9 +82,6 @@ Windows RT rendszerben például pöccintsen jobbról a **Gombok** sáv megnyit�
 A bal oldali navigációs menü alján található egy **Biztonsági házirendek mellőzése** hivatkozás. Válassza ki, majd kattintson a **Házirendek mellőzése** gombra.
 Előfordulhat, hogy egyéb MDM-eszközöket (például Android, Windows Phone 8.1 és újabb, valamint iOS) ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó szabályzat alkalmazásához.
 
-## Az androidos eszközök nem kényszerítik ki a biztonságiszabályzat-változásokat a végfelhasználó jóváhagyása nélkül
-Az Android MDM a többi platformtól eltérően nem teszi lehetővé a szolgáltatásnak a kezdeti szabályzatváltozások kényszerítését az eszközökön. Ez az Android működése miatt van így, és nem az Intune szolgáltatással kapcsolatos. Az androidos eszközök az értesítési ablakban figyelmeztetik a végfelhasználókat a kapcsolódó szabályzatváltozásokra (vagyis a jelszó, titkosítás stb. változására).  A végfelhasználónak válaszolnia kell a figyelmeztetésre, és az elfogadását követően alkalmaznia kell a szabályzatot.
-
 ## Nem lehet szabályzatot létrehozni vagy ügyfeleket regisztrálni, ha a vállalat neve speciális karaktereket tartalmaz.
 **Hiba:** nem lehet szabályzatot létrehozni vagy ügyfeleket regisztrálni.
 
@@ -106,6 +92,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
