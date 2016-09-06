@@ -1,5 +1,5 @@
 ---
-title: "Windows rendszerű számítógépek felügyelete az Intune ügyfélprogrammal | Microsoft Intune"
+title: "Számítógépek felügyelete az ügyfélszoftverrel | Microsoft Intune"
 description: "Windows rendszerű számítógépek felügyelete az Intune ügyfélszoftverrel."
 keywords: 
 author: nathbarn
@@ -13,18 +13,18 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
-ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 
 ---
 
 # Windows rendszerű számítógépek felügyelete az Intune számítógépügyféllel
-Ahelyett, hogy [a Windows rendszerű számítógépeket mobileszközökként regisztrálná](set-up-windows-device-management-with-microsoft-intune.md), a számítógépeket az Intune ügyfélszoftver telepítésével is felügyelheti.
+Ahelyett, hogy [a Windows rendszerű számítógépeket mobileszközökként regisztrálná](set-up-windows-device-management-with-microsoft-intune.md), a számítógépeket az Intune ügyfélszoftver telepítésével is regisztrálhatja és felügyelheti.
 
 Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Server Active Directory tartományi szolgáltatások (AD DS) és csoportházirend-objektumok (GPO-k) által alkalmazottakhoz hasonló szabályzatokat használ. Ha Active Directory-tartományhoz csatlakoztatott számítógépeket felügyel az Intune segítségével, akkor [győződjön meg róla, hogy az Intune-szabályzatok nem ütköznek a szervezet csoportházirend-objektumaival](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 
-Habár az Intune-ügyfél támogatja a [számítógépeket védő szabályzatok](policies-to-protect-windows-pcs-in-microsoft-intune.md) használatát, amelyek a szoftverfrissítések, a Windows tűzfal és a végpontvédelem felügyeletével segítenek a védelemben, de az Intune-ügyfél által felügyelt számítógépek nem lehetnek egyéb Intune-házirendek célpontjai.
+Jóllehet az Intune ügyfélszoftver a szoftverfrissítések, a Windows tűzfal és az Endpoint Protection végpontvédelmi megoldás kezelésével támogatja a [számítógépek védelmét szolgáló felügyeleti funkciókat](policies-to-protect-windows-pcs-in-microsoft-intune.md), az Intune ügyfélszoftver által felügyelt számítógépek nem lehetnek egyéb Intune-szabályzatok, így a mobileszköz-felügyeletet szolgáló **Windows**-szabályzatok célpontjai.
 
 > [!NOTE]
 > A Windows 8.1-et vagy annál újabb verziót futtató eszközök kezelhetők az Intune ügyfélprogrammal vagy regisztrálhatók mobileszközként is. Az alábbi információ az Intune-ügyfélprogramot futtató számítógépekre érvényes. Az Intune-számítógépügyfél telepítésének és a Windows-eszköz mobileszköz-felügyeletbe való regisztrálásának együttes végrehajtása nem támogatott.
@@ -51,16 +51,18 @@ Habár az Intune-ügyfél támogatja a [számítógépeket védő szabályzatok]
 ## Az Intune-számítógépügyfél telepítése
 Az Intune-ügyfélszoftver a következő módokon telepíthető:
 
--   [A Microsoft Intune-ügyfélszoftver manuális telepítése](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Ennél a telepítési típusnál a rendszergazda letölti az Intune-ügyfélszoftvert, és manuálisan telepíti minden egyes számítógépen.
+-  [A Microsoft Intune-ügyfélszoftver manuális telepítése](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Ennél a telepítési típusnál a rendszergazda letölti az Intune-ügyfélszoftvert, és manuálisan telepíti minden egyes számítógépen.
 
   Az Intune-ügyfélszoftver letöltéséhez nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és válassza a **Rendszergazda** > **Ügyfélszoftver letöltése** területen az **Ügyfélszoftver letöltése** parancsot.
 
--   A letöltött fájlokkal manuálisan is telepíti az Intune-ügyfelet a [tartományhoz csatlakoztatott számítógépekre az Active Directory csoportházirend-objektumaival](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
+-  A letöltött fájlokkal telepítse manuálisan az Intune ügyfélszoftvert a [tartományhoz csatlakoztatott számítógépeken az Active Directory csoportházirend-objektumaival](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
--   Végül egy [operációsrendszer-telepítés](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image) részeként is telepítheti az Intune-ügyfélszoftvert.
+-  Az Intune ügyfélszoftvert az [operációsrendszer-telepítés](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image) részeként telepítse a számítógépeken.
+
+-  Küldjön utasításokat a felhasználóknak az Intune vállalati portál URL-címével: [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). A vállalati portál megnyitásakor a rendszer felkéri a felhasználókat, hogy az Intune ügyfélszoftver letöltésével és futtatásával regisztrálják számítógépeiket.
 
 ## Számítógép-felügyelet az Intune-számítógépügyféllel
-Miután telepítette az Intune-ügyfelet, az ügyfélszoftver különböző számítógép-felügyeleti képességeket telepít, például [alkalmazásfelügyeletet](deploy-apps-in-microsoft-intune.md), Endpoint Protection védelmet, hardver- és szoftverleltárt, (távsegítségre vonatkozó kéréseken keresztüli) távvezérlést, szoftverfrissítéseket és a megfelelőségi beállítások jelentéseit.
+Miután telepítette az Intune ügyfélszoftvert, az különböző számítógép-felügyeleti képességeket telepít, például [alkalmazásfelügyeletet](deploy-apps-in-microsoft-intune.md), Endpoint Protection-védelmet, hardver- és szoftverleltárt, (távsegítségre vonatkozó kéréseken keresztüli) távvezérlést, szoftverfrissítéseket és a megfelelőségi beállítások jelentéseit.
 
 A számítógépügyfél által engedélyezett számítógép-felügyeleti feladatok némelyikét Intune-házirendekkel lehet elvégezni, például a következőket:
 
@@ -69,6 +71,8 @@ A számítógépügyfél által engedélyezett számítógép-felügyeleti felad
 -   [Szoftverfrissítési beállítások](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) konfigurálása felügyelt számítógépeken a szükséges szoftverfrissítések ellenőrzéséhez és letöltéséhez.
 
 -   Felügyelt számítógépek védelmének elősegítése lehetséges fenyegetésekkel és rosszindulatú szoftverekkel szemben [valós idejű megfigyeléssel és az Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) kezelésével.
+
+![Szabályzatsablon Windows rendszerű számítógépekhez](../media/pc_policy_template.png)
 
 Az Intune-ügyfélügynök által különálló számítógépeken helyileg elvégzett műveleteken túl az Intune felügyeleti konzolján egyéb [általános számítógép-felügyeleti feladatokat](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) is elvégezhet azokon a Windows rendszerű számítógépeken, amelyekre az ügyfél telepítve van. Például:
 
@@ -86,6 +90,6 @@ Az Intune-ügyfélügynök általában a háttérben fut, és ritkán van csak s
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

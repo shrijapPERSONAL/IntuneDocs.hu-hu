@@ -10,17 +10,17 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
+ms.sourcegitcommit: 96e8db7415e48a77f3e789aecddebe407e9a4b00
+ms.openlocfilehash: 37c5809e86d466717268f6fdec0c22f6bad2ac61
 
 
 ---
 
 # A jelszó nem felel meg a rendszergazda követelményeinek
 
-A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem felel meg egy vagy több, a rendszergazda által az eszközre vonatkozóan beállított követelményeknek. A rendszergazda által létrehozott szabályzattól függően az alábbi problémák egyike, illetve ezek kombinációja állhat fenn:
+A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem felel meg egy vagy több, a rendszergazda által az eszközre vonatkozóan beállított követelményeknek. A rendszergazda által létrehozott szabályzatoktól függően az alábbi problémák egyike, illetve ezek kombinációja állhat fenn:
 
 - Nincsenek számok, nagybetűk, speciális karakterek a jelszóban.
 - A jelszó túl egyszerű, így nem elég biztonságos.
@@ -30,7 +30,7 @@ A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem fele
 - A jelszót a közelmúltban használták.
 - A jelszó nem elég bonyolult.
 
-A PIN-kód és a jelszó beállításával, illetve az eszközzel elvégezhető egyéb feladatokkal kapcsolatos további információkért kövesse az Ön által használt eszköz típusának megfelelő hivatkozást:
+A PIN-kód és a jelszó beállításával, illetve az eszközzel elvégezhető egyéb feladatokkal kapcsolatos információkért kövesse az Ön által használt eszköz típusának megfelelő hivatkozást:
 
 - [Android-eszköz PIN-kódjának vagy jelszavának beállítása](set-your-pin-or-password-android.md)
 - [iOS-eszköz PIN-kódjának beállítása és módosítása](set-or-change-your-passcode-ios.md)
@@ -40,6 +40,6 @@ Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, for
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

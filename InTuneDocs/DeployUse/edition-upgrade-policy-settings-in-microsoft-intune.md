@@ -4,7 +4,7 @@ description: "Ismerje meg, hogyan frissítheti automatikusan Windows 10-eszköz�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a08ace43fb61f57a9d29b119c59698bc50e7af8
-ms.openlocfilehash: 49bc54f36b281d85c9667c51fb6ddbe0d454b4d1
+ms.sourcegitcommit: 4bed62ebe07d5470414183626b34e68dd91f2d01
+ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
 
 
 ---
@@ -26,9 +26,9 @@ A Microsoft Intune **kiadásfrissítési házirendje** lehetővé teszi az aláb
 
 ## Előkészületek
 Az eszközök legújabb verzióra történő frissítésének megkezdése előtt szüksége lesz a következők valamelyikére:
-* Termékkulcsra, amely érvényes a Windows új verziójának – a házirend céljaként meghatározott összes eszközre történő – telepítéséhez (a Windows 10 asztali verziója esetén).
-* A Microsoft által kiadott licencfájlra, amely tartalmazza azokat a licencelési adatokat, amelyek szükségesek a Windows új verziójának – a házirend céljaként meghatározott összes eszközre történő – telepítéséhez (a Windows 10 Mobile és a Windows 10 Holographic verzió esetén).
-* A célként meghatározott Windows 10 rendszerű eszközöket regisztrálni kell a Microsoft Intune-ban.
+* Termékkulcsra, amely érvényes a Windows új verziójának – a házirend céljaként meghatározott összes eszközre történő – telepítéséhez (a Windows 10 asztali verziója esetén). Többször használható aktiválási kulcsokat (MAK) vagy kulcskezelő kiszolgálói (KMS) kulcsokat használhat.
+**vagy** A Microsoft által kiadott licencfájlra, amely a Windows új verziójának – a szabályzat céljaként meghatározott összes eszközön történő – telepítéséhez szükséges licencelési adatokat tartalmazza (a Windows 10 Mobile és a Windows 10 Holographic verzió esetén).
+* A célként meghatározott Windows 10 rendszerű eszközöket regisztrálni kell a Microsoft Intune-ban. A kiadásfrissítési szabályzat nem használható az Intune PC-ügyfélszoftvert futtató számítógépekkel.
 
 ## Kiadásfrissítési házirend beállításai
 
@@ -45,6 +45,6 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

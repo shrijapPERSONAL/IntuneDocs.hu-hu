@@ -23,8 +23,8 @@
 ### [Konfiguráció utáni feladatok](post-configuration-tasks.md)
 
 ## [Az eszközkezelés módjának kiválasztása](choose-how-to-manage-devices.md)
-### [Mobileszköz-kezelési képességek](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [A Windows-számítógépek felügyeletére szolgáló képességek](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [Regisztrált eszközök felügyeletét szolgáló képességek](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Az Intune PC-szoftverügyfél képességei](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Az Intune üzembe helyezésének bevezetési szakaszai](rollout-phases-for-microsoft-intune-deployment.md)
 ### [A projekt hatóköre](project-scope.md)
@@ -39,6 +39,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
