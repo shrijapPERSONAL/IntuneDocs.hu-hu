@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 0d1b9b16df643004aca7fd620f738d226a6ebb07
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 7fe6918a3dae009e68f19e1fb005414704aee7f7
 
 
 ---
@@ -29,14 +29,12 @@ Automatikusan létrejön a rendszergazdának címzett e-mail, benne azok a napl�
 
 Többféleképpen küldheti el az eszköz adatainak naplóit a rendszergazdának ahhoz, hogy segítséget igényeljen a hibákkal kapcsolatban:
 
-[A naplók elküldése USB-kábellel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-[A naplók elküldése e-mailben](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-
-### További információ
-[Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
+- [A naplók elküldése USB-kábellel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [A naplók elküldése e-mailben](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

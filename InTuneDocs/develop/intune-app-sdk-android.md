@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
-ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 090b295ee8bf4aadb17bc58bf0282e87daf67a40
 
 
 ---
@@ -24,13 +24,13 @@ ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 > [!NOTE]
 > Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](intune-app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit és az integrációval kapcsolatos előkészületeket a támogatott platformokon. 
 
-# Az SDK tartalma 
+## Az SDK tartalma 
 
 Az Intune App SDK for Android egy szabványos androidos függvénytár, amely nem rendelkezik külső függőségekkel. Az SDK összetevői:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: Azok a felületek, amelyek ahhoz szükségesek, hogy az alkalmazásokban a MAM engedélyezve legyen, és a Microsoft Intune Munkahelyi portál alkalmazásával lehetséges legyen az együttműködés. Az alkalmazásoknak androidos függvénytárhivatkozásként kell megadniuk.
 
-*  **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: Azok a felületek, amelyek az androidos v4 támogatási könyvtárat használó alkalmazásokban a MAM engedélyezéséhez szükségesek.  Az ezen támogatást igénylő alkalmazásoknak közvetlenül kell hivatkozniuk a jar-fájlra. 
+* **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: Azok a felületek, amelyek az androidos v4 támogatási könyvtárat használó alkalmazásokban a MAM engedélyezéséhez szükségesek.  Az ezen támogatást igénylő alkalmazásoknak közvetlenül kell hivatkozniuk a jar-fájlra. 
 
 * **`Microsoft.Intune.MAM.SDK.Support.v7.jar`**: Azok a felületek, amelyek az androidos v7 támogatási könyvtárat használó alkalmazásokban a MAM engedélyezéséhez szükségesek.   Az ezen támogatást igénylő alkalmazásoknak közvetlenül kell hivatkozniuk a jar-fájlra
 
@@ -42,11 +42,11 @@ Az Intune App SDK for Android egy szabványos androidos függvénytár, amely ne
 
 * **`THIRDPARTYNOTICES.TXT`**: Attribútumértesítés, amely elismeri az alkalmazásba összeállítani kívánt külső és/vagy OSS-kódot. 
 
-# Követelmények 
+## Követelmények 
 
 Az Intune App SDK egy lefordított androidos projekt. Ennek eredményeként nagymértékben független az alkalmazás által a minimális vagy a cél API-verzióhoz használt Android-verziótól. Az SDK az Android API 14 (Android 4.0 +) – Android 24 közötti verziókat támogatja. 
 
-# Az Intune App SDK működése 
+## Az Intune App SDK működése 
 
 Az Intune App SDK az alkalmazás forráskódjának módosítását igényli az alkalmazás-felügyeleti szabályzatok engedélyezéséhez. Ez az androidos alaposztályok egyenértékű felügyelt osztályokra való cseréjén keresztül történik, amelyekre a dokumentum a `MAM`. Az SDK-osztályok az androidos alaposztály és az alkalmazás saját származtatott verziója között helyezkednek el.  Egy tevékenység esetén ez például egy hasonló öröklési hierarchiát eredményez: `Activity ->MAMActivity->AppSpecificActivity`.
 
@@ -54,11 +54,11 @@ Amikor a `AppSpecificActivity` kommunikálni szeretne a szülőjével, pl. a `su
 
 Az androidos Intune App SDK a Vállalati portál alkalmazásnak az eszközön való jelenlétére támaszkodik a MAM-szabályzatok engedélyezéséhez. Amikor a Vállalati portál alkalmazás nincs jelen, a MAM-engedélyezett alkalmazás viselkedése nem módosul, és úgy fog működni, mint bármely más mobilalkalmazás. Ha a Vállalati portál telepítve van, és a felhasználóra vonatkozó szabályzattal rendelkezik, az SDK belépési pontjai aszinkron módon inicializálódnak. Az inicializálás csak akkor szükséges, amikor az Android először hozza létre a folyamatot. Az inicializálás során létrejön a kapcsolat a Vállalati portál alkalmazással, és letöltődik az alkalmazáskorlátozási szabályzat.  
 
-# Az Intune App SDK integrálása
+## Az Intune App SDK integrálása
  
 A korábban ismertetetteknek megfelelően az SDK az alkalmazás forráskódjának módosítását igényli az alkalmazás-felügyeleti szabályzatok engedélyezéséhez. A következő lépések szükségesek a MAM engedélyezéséhez az alkalmazásban: 
 
-## Az osztályok, a metódusok és a tevékenységek lecserélése a MAM-kompatibilis megfelelőkre (kötelező) 
+### Az osztályok, a metódusok és a tevékenységek lecserélése a MAM-kompatibilis megfelelőkre (kötelező) 
 
 * Az androidos alaposztályokat MAM-megfelelőjükkel kell helyettesíteni. Ehhez az alábbi táblázatban felsorolt osztályok összes példányát le kell cserélni az Intune App SDK-beli megfelelőjükre.  
 
@@ -112,7 +112,7 @@ A korábban ismertetetteknek megfelelően az SDK az alkalmazás forráskódjána
 
     Így például a `MAMActivity`, származtatásakor az `onCreate` felülírása helyett, és a `super.onCreate`metódus hívásakor a tevékenységnek felül kell írnia az `onMAMCreate` metódust, és a`uper.onMAMCreate`. Ez lehetővé teszi (többek között) tevékenységek indításának korlátozását bizonyos esetekben. 
 
-# Alkalmazás részvételét igénylő szolgáltatások engedélyezése 
+### Alkalmazás részvételét igénylő szolgáltatások engedélyezése 
 
 Egyes szabályzatokat az SDK önállóan nem tud megvalósítani. Ahhoz, hogy az alkalmazás szabályozhassa e funkciók működését, elérhetővé kell tenni több, az alábbi `AppPolicy` felületen található API-t.  
 
@@ -152,7 +152,7 @@ Egyes szabályzatokat az SDK önállóan nem tud megvalósítani. Ahhoz, hogy az
         boolean getIsManagedBrowserRequired();
     }
 
-## Az alkalmazásbeli mentési viselkedés vállalati rendszergazda általi szabályozásának engedélyezése
+### Az alkalmazásbeli mentési viselkedés vállalati rendszergazda általi szabályozásának engedélyezése
 
 Számos alkalmazás valósít meg olyan funkciókat, amelyek lehetővé teszik a végfelhasználó számára fájlok mentését a helyi háttértárra vagy egy másik szolgáltatásba. Az Intune App SDK lehetővé teszi a vállalati rendszergazdáknak az adatszivárgás elleni, a szervezetek igényei szerinti házirendmegkötések alkalmazásával.  A rendszergazda által szabályozható házirendek egyike, hogy a felhasználók menthetnek-e személyes adattárba. Ide tartoznak a helyi mentési helyek, az SD-kártyák és a biztonsági mentési szolgáltatások. A funkció engedélyezéséhez alkalmazás részvételére van szükség. Ha az alkalmazás lehetővé teszi a személyes vagy felhőbeli helyekre való mentést közvetlenül az alkalmazásból, a funkciót meg kell valósítani annak biztosításához, hogy a vállalati rendszergazda szabályozhassa, hogy engedélyezett-e a mentés az adott helyre, vagy sem. Az alábbi API lehetővé teszi, hogy az alkalmazás megállapítsa, hogy a személyes tárolóba való mentés engedélyezett-e az aktuális felügyeleti házirend szerint. Az alkalmazás ekkor érvényesítheti a házirendet, mivel meg tudja állapítani, hogy elérhető-e személyes adattár a felhasználó számára az alkalmazáson keresztül.  
 
@@ -162,7 +162,7 @@ Az alkalmazás a következő hívással megállapíthatja, hogy a házirend érv
 
 **Megjegyzés**: A MAMComponents.get(AppPolicy.class) mindig nem null értékű alkalmazás-szabályzatot ad vissza, akkor is, ha az eszköz vagy az alkalmazás nem áll felügyelet alatt. 
 
-## Annak lehetővé tétele, hogy az alkalmazás észlelhesse, hogy szükség van-e a PIN-kódokra vonatkozó szabályzatra
+### Annak lehetővé tétele, hogy az alkalmazás észlelhesse, hogy szükség van-e a PIN-kódokra vonatkozó szabályzatra
  
  Bizonyos további szabályzatok esetében az alkalmazás esetleg letilthat egyes funkciókat, hogy azok ne ismétlődjenek az Intune App SDK-ban. Például ha az alkalmazás saját PIN-kódot kérő felhasználói felülettel rendelkezik, akkor előfordulhat, hogy le kívánja tiltani, ha az SDK úgy van beállítva, hogy a felhasználónak PIN-kódot kell megadnia. 
 
@@ -170,7 +170,7 @@ Annak megállapításához, hogy PIN-kódokra vonatkozó szabályzat a PIN-kód 
 
     MAMComponents.get(AppPolicy.class).getIsPinRequired();
 
-## Regisztráció az SDK értesítéseihez  
+### Regisztráció az SDK értesítéseihez  
 
 Az Intune App SDK lehetővé teszi, hogy az alkalmazások szabályozhassák a viselkedést bizonyos szabályzatok, például egy távoli törlési szabályzat a vállalati rendszergazda általi használata esetén. Ehhez regisztrálnia kell az SDK által küldött értesítésekhez egy `MAMNotificationReceiver` osztály létrehozásával és annak regisztrálásával a következővel: `MAMNotificationReceiverRegistry`. Ez a fogadó és a fogadó által az  `App.onCreate`metódusban fogadni kívánt értesítés típusának megadásával történik, az alábbi példában látható módon:
  
@@ -212,17 +212,17 @@ A következő értesítéseket küldi a program az alkalmazásnak, és némelyik
 
 * **`REFRESH_POLICY` értesítés**: Ezt az értesítést a MAMNotification további adatok nélkül küldi. Az értesítés fogadásakor a gyorsítótárazott házirendet többé már nem kell érvénytelenítettnek tekinteni, ezért ellenőrizni kell, hogy mi a házirend. Ezt általában az SDK kezeli, azonban az alkalmazás kell kezelje, ha a házirend valamilyen állandó módon használt. 
 
-## Függőben lévő leképezések és metódusok 
+### Függőben lévő leképezések és metódusok 
 
 A MAM belépési pontok egyikéből való származtatás után a szokásos módon használhatja a környezetet tevékenységek indításához, a hozzá tartozó `PackageManager`használatához és így tovább.  A  `PendingIntents` kivételt képez ezen szabály alól. Az ilyen osztályok hívásakor módosítani kell az osztály nevét. A `PendingIntent.get*` használata helyett például a `MAMPendingIntents.get*` használandó. 
 
 Bizonyos esetekben az androidos osztályban rendelkezésre álló metódus végsőként van megjelölve a helyettesítő MAM-osztályban. Ebben az esetben a helyettesítő MAM-osztály egy hasonlóan elnevezett metódust biztosít (általában a „MAM” utótaggal) amelyet felül kell írni. Így például a `ContentProvider.query`felülírása helyett a `MAMContentProvider.queryMAM`. A Java-fordítónak érvényesítenie kell a végső korlátozásokat az eredeti metódus véletlen felülbírálásának elkerülése érdekében az egyenértékű MAM-metódus helyett. 
 
-# Biztonságimásolat-adatok védelme 
+## Biztonságimásolat-adatok védelme 
 
 Az Android Marshmallow (API 23) esetében az Android két módszert kínál az alkalmazásoknak az adataik biztonsági mentésére. Ezek a lehetőségek alkalmazása rendelkezésére állnak, és különböző lépéseket igényelnek a MAM-adatvédelem megfelelő alkalmazásának biztosításához. Az alábbi táblázatban a megfelelő adatvédelmi működéshez szükséges megfelelő műveletek gyors áttekintését tekintheti meg.  További információ: [Útmutató androidos fejlesztőknek az adatok biztonsági mentéséhez](http://developer.android.com/guide/topics/data/backup.html). 
 
-## Automatikus, teljes biztonsági mentés
+### Automatikus, teljes biztonsági mentés
 
 Az Android M-től kezdődően az Android a cél API-tól független teljes biztonsági mentési funkciókat kínál az alkalmazásoknak Android M-alapú eszközökön. Amennyiben az `android:allowBackup` attribútum értéke nem hamis, az alkalmazások teljes, szűretlen biztonsági mentéseket kapnak alkalmazásaikról. Ez adatszivárgási kockázatot jelenthet, ezért az SDK az alábbi táblázatban leírt módosításokat követeli meg az adatvédelem alkalmazásának biztosítása érdekében.  Fontos, hogy az ügyfél adatainak védelméhez megfelelően kövesse az alábbi útmutatást.  Ha az `android:allowBackup=false` beállítást adja meg, alkalmazását az operációs rendszer soha nem helyezi várólistára a biztonsági mentésekhez, és nincs több teendő a MAM-hoz, mivel nem készül biztonsági mentés.
  
@@ -230,44 +230,44 @@ Az Android M-től kezdődően az Android a cél API-tól független teljes bizto
 
 Ez a beállítás minden API esetén elérhető, és a `BackupAgent` , illetve a `BackupAgentHelper`. 
 
-### A BackupAgentHelper használata
+#### A BackupAgentHelper használata
 
 `BackupAgentHelper` megvalósítása jóval egyszerűbb, mint a `BackupAgent` osztályé, mind a natív androidos funkciókat, mind a MAM-integrációt tekintve. `BackupAgentHelper` lehetővé teszi, hogy a fejlesztő teljes fájlokat és közös beállításokat regisztráljon egy `FileBackupHelper` vagy egy `SharedPreferencesBackupHelper` osztályban, amelyeket a rendszer ezt követően létrehozáskor hozzáad a `BackupAgentHelper` osztályhoz. 
 
-### A BackupAgent használata
+#### A BackupAgent használata
 
 `BackupAgent` segítségével jóval egyértelműbben adható meg, hogy mely adatokról készüljön biztonsági mentés. Azonban ezen beállítások használata esetén nem lehet kihasználni a biztonsági mentési Android-keretrendszer lehetőségeit.  Mivel a megvalósítás nagyrészt a fejlesztő felelőssége, több lépésre van szükség a megfelelő adatvédelem biztosításához a MAM-ból. Azáltal, hogy a munka nagyobb része a fejlesztőre hárul, itt a MAM-integráció nagyobb jelentőséggel bír. 
 
-#### Az alkalmazás nem rendelkezik biztonságimásolat-készítő ügynökkel
+##### Az alkalmazás nem rendelkezik biztonságimásolat-készítő ügynökkel
   
 A fejlesztő lehetőségei az `Android:allowbBackup =true`:
 
-##### Teljes biztonságimásolat-készítés konfigurációs fájl alapján: 
+###### Teljes biztonságimásolat-készítés konfigurációs fájl alapján: 
 
 Adjon meg egy erőforrást a `com.microsoft.intune.mam.FullBackupContent` metaadat-kódcímke alatt a jegyzékfájlban. példa:
     `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`
 
 Adja hozzá a következő attribútumot az `<application>` címkében: `android:fullBackupContent="@xml/my_scheme"`, ahol a `my_scheme` az alkalmazásbeli XML-erőforrás. 
 
-##### Teljes biztonságimásolat-készítés kizárások nélkül 
+###### Teljes biztonságimásolat-készítés kizárások nélkül 
 
 Adjon meg egy címkét a jegyzékfájlban, például: `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />` 
  
 Adja hozzá a következő attribútumot az `<application>` címkében: `android:fullBackupContent="true"`.
 
-#### Az alkalmazás rendelkezik biztonságimásolat-készítő ügynökkel
+##### Az alkalmazás rendelkezik biztonságimásolat-készítő ügynökkel
 
 Kövesse a fenti `BackupAgent` , illetve a `BackupAgentHelper` szakaszok ajánlásait 
 
 Fontolja meg az áttérést a `MAMDefaultFullBackupAgent`használatára, amely az Android M esetében egyszerű biztonsági mentést tesz lehetővé. 
 
-### A biztonsági mentés előtti teendők
+#### A biztonsági mentés előtti teendők
 
 Mielőtt megkezdené a biztonsági mentést, ellenőrizze, hogy a menteni tervezett fájlokról vagy adatpufferekről valóban engedélyezett-e biztonsági mentést készíteni. Ennek meghatározásához a mellékelt `isBackupAllowed` függvényt használhatja a `MAMFileProtectionManager` , illetve a `MAMDataProtectionManager` esetében. Ha a fájlok vagy a puffer biztonsági mentése nem engedélyezett, ne próbálja továbbra is azt a biztonsági mentésben alkalmazni.
 
 Ha a biztonsági mentés során egy ponton biztonsági mentést szeretne készíteni az 1. lépésben ellenőrzött fájlok identitásáról, a `backupMAMFileIdentity(BackupDataOutput data, File … files)` eszközt azon fájlokkal kell meghívnia, amelyekből adatokat szeretne kinyerni. Ez a művelet automatikusan új biztonsági mentési entitásokat hoz létre, és a `BackupDataOutput` kimenetre írja azokat. Ezeket az entitásokat automatikusan felhasználja a program a visszaállítás során. 
 
-## Az Azure Directory Authentication (ADAL) konfigurálása (nem kötelező)  
+### Az Azure Directory Authentication (ADAL) konfigurálása (nem kötelező)  
 
 Az SDK a hitelesítési és feltételes indítási forgatókönyvekhez az ADAL-ra támaszkodik, amely megköveteli, hogy az alkalmazások bizonyos Azure Active Directory-beállításokkal rendelkezzenek. A konfigurációs értékeket az SDK az `AndroidManifest` metaadatain keresztül közli. Az alkalmazás konfigurálásához és a megfelelő hitelesítés engedélyezéséhez adja hozzá a következőket az `AndroidManifest`. Ezen konfigurációk némelyike csak akkor szükséges, ha az alkalmazás az ADAL-t hitelesítéshez használja. Ebben az esetben szüksége lesz az adott értékekre, amelyek segítségével az alkalmazás az AAD-ben regisztrálja magát. Ez annak biztosítása érdekében történik, hogy rendszer nem fogja kétszer kérni a felhasználó hitelesítését, ugyanis az AAD két különböző regisztrációs értéket ismer fel: egyet az alkalmazásból, egyet pedig az SDK-ból. 
 
@@ -286,17 +286,17 @@ Az SDK a hitelesítési és feltételes indítási forgatókönyvekhez az ADAL-r
 
 A GUID-azonosítóknak nem kell kezdő vagy záró kapcsos zárójelet tartalmazniuk.
 
-### Általános ADAL-konfigurációk 
+#### Általános ADAL-konfigurációk 
 
 Az alábbiak a fenti értékek általános beállításai. 
 
-#### Az alkalmazás nem integrálja az ADAL-t
+##### Az alkalmazás nem integrálja az ADAL-t
 
 * A szolgáltatót arra a kívánt környezetre kell beállítani, ahol AAD-fiókok vannak konfigurálva.
 
 * A SkipBroker igaz értékű kell, hogy legyen.
 
-#### Az alkalmazás integrálja az ADAL-t
+##### Az alkalmazás integrálja az ADAL-t
 
 * A szolgáltatót arra a kívánt környezetre kell beállítani, ahol AAD-fiókok vannak konfigurálva.
 
@@ -309,7 +309,7 @@ Az alábbiak a fenti értékek általános beállításai.
 
 * Az AAD-t a közvetítő átirányítási URI-jának elfogadására kell konfigurálni.
 
-#### Az alkalmazás integrálja az ADAL-t, de nem támogatja az AAD-hitelesítő alkalmazást.
+##### Az alkalmazás integrálja az ADAL-t, de nem támogatja az AAD-hitelesítő alkalmazást.
 
 * A szolgáltatót arra a kívánt környezetre kell beállítani, ahol AAD-fiókok vannak konfigurálva.
 
@@ -319,13 +319,13 @@ Az alábbiak a fenti értékek általános beállításai.
 
     * Or `urn:ietf:wg:oauth:2.0:oob` értéket kell beállítani érvényes AAD átirányítási URI-ként.
 
-## Az SDK naplózásának engedélyezése 
+### Az SDK naplózásának engedélyezése 
 
 A naplózás a `java.util.logging` keretrendszeren keresztül zajlik. A naplók fogadásához állítsa be a globális naplózást a [Java technikai útmutató](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). Az alkalmazástól függően általában az `App.onCreate` a legjobb hely a naplózás indításához. Vegye figyelembe, hogy naplóüzenetek osztálynév szerinti kulccsal vannak ellátva, amely rejtjelzett lehet.
 
-# Ismert platformkorlátozások 
+## Ismert platformkorlátozások 
 
-## Fájlok méretkorlátai 
+### Fájlok méretkorlátai 
 
 Az Android rendszerben a Dalvik végrehajtható fájlformátumra vonatkozó korlátozások problémává válhatnak ProGuard nélkül futó nagyméretű kódbázis esetében. Konkrétan a következő korlátozások fordulhatnak elő: 
 
@@ -341,7 +341,7 @@ Nagyszámú projekt belefoglalásakor minden android:package megkapja az R egy p
 
 * Távolítsa el a felesleges és használaton kívüli kódtárakat (pl. `android.support.v4`)
 
-## Házirend-kényszerítési korlátozások
+### Házirend-kényszerítési korlátozások
 
 **Képernyőfelvétel**: Az SDK nem tud új képernyőfelvétel-beállítási értéket kikényszeríteni azon tevékenységeknél, amelyeknél már lefutott az Activity.onCreate. Ez olyan időszakot eredményezhet, amikor az alkalmazás a képernyőfelvételek letiltására lett konfigurálva, de továbbra is lehet képernyőfelvételt készíteni.
 
@@ -351,7 +351,7 @@ Nagyszámú projekt belefoglalásakor minden android:package megkapja az R egy p
 
 **Exportált szolgáltatások**: Az Intune App SDK által tartalmazott `AndroidManifest.xml` fájl tartalmazza a `MAMNotificationReceiverService`szolgáltatást, amelynek exportált szolgáltatásnak kell lennie, hogy lehetővé tegye a vállalati portálnak az értesítések küldését egy felkészített alkalmazásnak. A szolgáltatás ellenőrzi a hívót annak ellenőrzéséhez, hogy csak a vállalati portál számára engedélyezett-e az értesítések küldése. 
 
-# Ajánlott gyakorlati tanácsok Androidban 
+## Ajánlott gyakorlati tanácsok Androidban 
 
 Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a házirendi beállítások miatt gyakrabban léphetnek fel hibaállapotok. Az alábbi androidos gyakorlati tanácsok csökkentik a hibák valószínűségét: 
 
@@ -365,6 +365,6 @@ Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

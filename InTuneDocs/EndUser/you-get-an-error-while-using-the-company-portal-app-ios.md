@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 481f9570f4c1cf30bfb7be9beef2681fa5fc84f7
 
 
 ---
@@ -29,14 +29,13 @@ Ha iOS-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazá
 
 -   A Vállalati portál alkalmazás **Névjegy** képernyőjén a **Diagnosztikai jelentés küldése** elemre koppintva.
 
--   Miközben nyitva van a Vállalati portál alkalmazás, az eszköz megrázása, majd a diagnosztikai riasztás megjelenése után az **E-mail** elemre koppintva. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** &gt; **Vállalati portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
-
-
-### További információ
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+-   Miközben nyitva van a Vállalati portál alkalmazás, az eszköz megrázása, majd a diagnosztikai riasztás megjelenése után az **E-mail** elemre koppintva. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+
+<!--HONumber=Aug16_HO5-->
 
 

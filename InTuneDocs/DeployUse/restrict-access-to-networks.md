@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ Az integráció engedélyezéséhez nincs szükség telepítésre az Intune-bér
 ### 1. lépés: A tanúsítványok kezelése
 1. Az Azure Active Directory (Azure AD) konzolján exportálja a tanúsítványt.
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Futtassa rendszergazdaként az Internet Explorert, majd jelentkezzen be az Azure AD konzoljába.
+   a. Futtassa rendszergazdaként az Internet Explorert, majd jelentkezzen be az Azure AD konzoljába.
 
-    b. A címsorban kattintson a lakat ikonra, majd a **Tanúsítványok megtekintése** elemre.
+   b. A címsorban kattintson a lakat ikonra, majd a **Tanúsítványok megtekintése** elemre.
 
-    c. A tanúsítvány tulajdonságai **Részletek** lapján válassza a **Másolás fájlba** lehetőséget.
+   c. A tanúsítvány tulajdonságai **Részletek** lapján válassza a **Másolás fájlba** lehetőséget.
 
-    d. A **Tanúsítványexportáló varázsló** kezdőlapján kattintson a **Tovább** gombra.
+   d. A **Tanúsítványexportáló varázsló** kezdőlapján kattintson a **Tovább** gombra.
 
-    e. Az **Exportfájlformátum** lapon hagyja meg az alapértelmezett **DER kódolású bináris x.509 (. CER)** lehetőséget, majd kattintson a **Tovább** gombra.  
+   e. Az **Exportfájlformátum** lapon hagyja meg az alapértelmezett **DER kódolású bináris x.509 (. CER)** lehetőséget, majd kattintson a **Tovább** gombra.  
 
-    f. Az **Exportálandó fájl** lapon kattintson a **Tallózás** gombra, majd jelölje ki a helyet, ahova mentené szeretné a fájlt, és adjon meg egy fájlnevet. Bár úgy tűnik, mintha exportálná a fájlt, valójában elnevezi azt a fájlt, amelybe az exportált tanúsítványt menteni fogja. Kattintson a **Tovább** &gt; **Befejezés** gombra.
+   f. Az **Exportálandó fájl** lapon kattintson a **Tallózás** gombra, majd jelölje ki a helyet, ahova mentené szeretné a fájlt, és adjon meg egy fájlnevet. Bár úgy tűnik, mintha exportálná a fájlt, valójában elnevezi azt a fájlt, amelybe az exportált tanúsítványt menteni fogja. Kattintson a **Tovább** &gt; **Befejezés** gombra.
 
-    #### Safari
+#### Safari
 
-    a. Jelentkezzen be az Azure AD konzoljába.
+ a. Jelentkezzen be az Azure AD konzoljába.
 
-    b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
+b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 
-    c. Válassza a **Tanúsítvány megtekintése** &gt; **Részletek** lehetőséget.
+   c. Válassza a **Tanúsítvány megtekintése** &gt; **Részletek** lehetőséget.
 
-    d. Válassza ki a tanúsítványt, majd kattintson az **Exportálás** elemre.  
+   d. Válassza ki a tanúsítványt, majd kattintson az **Exportálás** elemre.  
 
-    > [!IMPORTANT]
-    > Ellenőrizze a tanúsítvány lejárati dátumát, mert a lejárta után újat kell exportálnia és importálnia.
+> [!IMPORTANT]
+>
+> Ellenőrizze a tanúsítvány lejárati dátumát, mert a lejárta után újat kell exportálnia és importálnia.
 
 
 2. Az ISE konzolról importálja az Intune-tanúsítványt (az exportált fájlt) a **Megbízható tanúsítványok** tárolójába.
@@ -146,6 +147,6 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

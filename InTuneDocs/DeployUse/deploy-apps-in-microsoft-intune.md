@@ -4,7 +4,7 @@ description: "A témakörben található információk segítséget nyújtanak a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 
 ---
 # Alkalmazások telepítése a Microsoft Intune-ban
@@ -57,7 +57,7 @@ Az alkalmazás megjelenik a felhasználók eszközein a vállalati portálon, é
 Az ezen a képernyőfelvételen látható Bing iOS-alkalmazást például a **Külső hivatkozás** telepítési típussal tették elérhetővé telepítésre egyéni ikonnal. A **Megjelenítés kiemelt alkalmazásként és kiemelés a vállalati portálon** beállítás lett kiválasztva.  
 ![iOS-eszközön elérhető alkalmazás](./media/available-install-on-iOS.png)
 
-Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a felhasználó értesítést kap arról, hogy egy alkalmazás készen áll a telepítésre. Az ezen a képernyőfelvételen látható Work Folders iOS-alkalmazást például a **Felügyelt iOS-alkalmazás az App Store-ból** telepítési típus használatával tették elérhetővé telepítésre.
+Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a felhasználó értesítést kap arról, hogy egy alkalmazás készen áll a telepítésre. Az ezen a képernyőfelvételen látható Work Folders iOS-alkalmazást például a **Felügyelt iOS-alkalmazás az App Store-ból** telepítési típus használatával tették elérhetővé telepítésre.  
 ![iOS-eszközök számára kötelező alkalmazás](./media/iOS-Required-install.PNG)
 
 ## További lépések
@@ -66,6 +66,6 @@ Miután telepít egy alkalmazást, érdemes figyelnie a telepítés előrehalad�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO5-->
 
 

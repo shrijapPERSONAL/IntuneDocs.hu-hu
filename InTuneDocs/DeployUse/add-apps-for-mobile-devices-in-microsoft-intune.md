@@ -4,7 +4,7 @@ description: "Az alkalmazást a telepítése előtt hozzá kell adnia az Intune-
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 72d2974b5aa9ca334b59d8a1d28a175b190ba533
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: 0951a8c8ae635fed089e7bbf87018282a73daf74
 
 
 ---
@@ -63,7 +63,7 @@ Az Intune Software Publisherrel konfigurálhatja az alkalmazás tulajdonságait,
     > A telepítő típusától függően előfordulhat, hogy az alábbi értékek némelyikét a rendszer automatikusan megadja.
 
     - **Kiadó**. Itt adhatja meg az alkalmazás kiadójának nevét.
-    - **Név**. Itt adhatja meg az alkalmazás vállalati portálon megjelenő nevét.<br>Ellenőrizze, hogy a megadott alkalmazásnevek egyediek-e. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Név**. Itt adhatja meg az alkalmazás vállalati portálon megjelenő nevét.<br>Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
     - **Leírás**. Adja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
     - **Szoftveradatok URL-címe**. Csak akkor érhető el, ha a **Szoftver telepítője** lehetőséget választotta. Nem kötelező: megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Adatvédelmi nyilatkozat URL-címe**. Csak akkor érhető el, ha a **Szoftver telepítője** lehetőséget választotta. Nem kötelező: megadhatja az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
@@ -95,10 +95,10 @@ Ebből a négy perces videóból megtanulhatja, hogyan telepíthet Windows Insta
 
 ## További lépések
 
-Ha létrehozta az alkalmazást, a következő lépés a telepítés. További információ: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md).
+Ha létrehozta az alkalmazást, a következő lépés a telepítés. További információért lásd: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
