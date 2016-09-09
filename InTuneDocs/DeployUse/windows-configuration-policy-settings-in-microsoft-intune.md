@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 ## Biztonsági beállítások
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Kötelező jelszótípus**|Meghatározza a megkövetelt jelszótípust, például hogy a jelszó számokat és betűket is, vagy csak számokat tartalmazhat.|Igen|Igen|
 |**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. iOS-eszközök esetén azonban ez a beállítás azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|Igen|Igen|
 |**Jelszó minimális hossza**<sup>1</sup>|Konfigurálja a jelszó minimális hosszát (karakterszámát).|Igen|Igen|
@@ -46,7 +46,7 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 ## Titkosítási beállítások
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Az eszközön található összes fájlnak titkosítva kell lennie.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.|Igen|Nem|
 <sup>1</sup> További információ a Windows 8.1 rendszerű eszközökhöz
 
@@ -56,19 +56,19 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 
 -   A titkosítás működéséhez az eszköznek teljesítenie kell a Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardvertanúsítvány követelményeit.
 
--   Amikor kényszeríti az eszközön a titkosítást, a Microsoft-fiókkal rendelkező felhasználók részéről a helyreállítási kulcs csak a OneDrive-fiókjukból érhető el. Ez a kulcs nem állítható vissza egy felhasználó nevében.
+-   Amikor kényszeríti az eszközön a titkosítást, a helyreállítási kulcs csak a felhasználó OneDrive-fiókon keresztül elérhető Microsoft-fiókjából érhető el. Ez a kulcs nem állítható vissza egy felhasználó nevében.
 
 ## Kártevőkre vonatkozó beállítások
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Hálózati tűzfal megléte szükséges**|Előírja a Windows tűzfal bekapcsolását.|Igen|Nem|
 |**SmartScreen engedélyezése**|Kötelezővé teszi a Windows SmartScreen használatát.|Igen|Nem|
 
 ## Rendszerbeállítások
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Automatikus frissítés szükséges**|Aktiválja az automatikus frissítési beállítást az eszközökön.|Igen|Nem|
 |**Automatikus frissítés szükséges – Az automatikusan telepített frissítések legalacsonyabb besorolása**|Kiválasztja az automatikusan telepített frissítések besorolását:<br /><br />-   **Fontos** – Minden fontosként megjelölt frissítést telepít.<br />-   **Ajánlott** – Minden fontosként vagy ajánlottként megjelölt frissítést telepít.|Igen|Nem|
 |**Felhasználói fiókok felügyelete**|Kötelezővé teszi a felhasználói fiókok felügyeletének használatát az eszközökön.|Igen|Nem|
@@ -78,19 +78,19 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 ## Felhőbeállítások – dokumentumok és adatok
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Munkahelyi mappák URL-címe**|Beállítja a munkahelyi mappa URL-címét, hogy lehetővé tegye a dokumentumok az eszközök közötti szinkronizálását.|Igen|Nem|
 
 ## E-mail beállítások
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**A Microsoft-fiók opcionálissá tétele a Windows Mail alkalmazásban**|Microsoft-fiók nélkül is hozzáférhetővé teszi a Windows Posta alkalmazást.|Igen|Nem|
 
 ## Alkalmazásbeállítások – böngésző
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Automatikus kitöltés engedélyezése**|Engedélyezi a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását.|Igen|Nem|
 |**Előugróablak-blokkoló engedélyezése**|A böngésző előugróablak-blokkolójának engedélyezése vagy letiltása.|Igen|Nem|
 |**Beépülő modulok engedélyezése**|Engedélyezi a felhasználók számára, hogy beépülő modulokat adjanak hozzá az Internet Explorerhez.|Igen|Nem|
@@ -109,7 +109,7 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 ## Eszközképességek beállításai – mobilhálózat
 
 |Beállítás neve|Részletek|Windows 8.1 és Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Adatroaming használatának engedélyezése**|Adatroaming használatát engedélyezi, ha az eszköz mobilhálózathoz csatlakozik.|Igen|Nem|
 
 
@@ -119,6 +119,6 @@ A Microsoft Intune **Windows-eszközökhöz készült általános konfiguráció
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 --------------
 
 |Házirend-beállítás| Windows 8.1 és újabb| Windows Phone 8.1 és újabb verziók| iOS 6.0 és újabb verziók|Android 4.0 és újabb verziók<br/>Samsung KNOX szabvány 4.0 és újabb|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**PIN-kód vagy jelszó konfigurálása** |Kijavítva|Kijavítva|Kijavítva|Karanténba helyezve|
 |**Eszköztitkosítás**|–|Kijavítva|Kijavítva (PIN-kód beállításával)|Karanténba helyezve|
 |**Feltört eszköz**|–|–|Karanténba helyezve (nem beállítás)|Karanténba helyezve (nem beállítás)|
@@ -62,6 +62,6 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

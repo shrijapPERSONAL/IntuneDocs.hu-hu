@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 
 
 2. Az ISE konzolról importálja az Intune-tanúsítványt (az exportált fájlt) a **Megbízható tanúsítványok** tárolójába.
+
+
 ### Önaláírt tanúsítvány létrehozása az ISE alkalmazásban 
+
 1.  A ISE-konzolon válassza az **Administration** (Felügyelet) > **Certificates** (Tanúsítványok) > **System Certificates** (Rendszertanúsítványok) > **Generate Self Signed Certificate** (Önaláírt tanúsítvány létrehozása) elemet.  
 2.       Exportálja az önaláírt tanúsítványt.
 3. Egy szövegszerkesztőben szerkessze az exportált tanúsítványt [megjegyzés]: <> Inkább nem tennék pontot e két állítás végére; szerintem összezavarhatja az olvasót.
@@ -147,6 +150,6 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
