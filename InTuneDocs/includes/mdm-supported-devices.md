@@ -10,6 +10,6 @@
 Az [Intune szoftverügyfél](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) Windows 7 vagy újabb Windows-rendszerű számítógépeket képes felügyelni. A Nagyvállalati felügyeleti csomaggal (EMS) rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 
