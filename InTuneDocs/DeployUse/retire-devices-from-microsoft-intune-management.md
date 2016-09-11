@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Eszközök kivonása az Intune felügyelete alól
 
-Akár vállalati, akár saját eszközökről van szó, eljön a pillanat, amikor egy felügyelt eszközt ki kell vonni az Intune-felügyelet alól. Az eszközök kivonása viszonylag egyszerű feladat. A mobileszközként felügyelt eszközökön szelektív vagy teljes törlést hajthat végre. Ezen kívül kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket is.
+Akár vállalati, akár saját eszközökről van szó, eljön a pillanat, amikor egy felügyelt eszközt ki kell vonni az Intune-felügyelet alól. Az eszközök kivonására többféle okból lehet szükség:
+
+-   A felhasználó előre eltervezett módon elhagyja a vállalatot („irányított” távozás)
+-   A felhasználó váratlanul hagyja el a vállalatot (elbocsátják, felmond stb.).
+-   Az eszköz elvész
+-   Az eszközt átcsoportosítják (egy másik felhasználó kapja meg vagy más célra használják stb.)
+
+A mobileszközként felügyelt eszközökön szelektív vagy teljes törlést hajthat végre, vagy zárolhatja az eszközt és megváltoztathatja a jelszavát. Az eszköz törlésével felszabadul az felhasználó előfizetése egy másik eszköz hozzáadásához. Ezenkívül kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket is.
 
 ## Adatok és alkalmazások törlése az eszközökről
 Mind a szelektív, mind a teljes törlés eltávolítja az eszközt az Intune-ból a szabályzat és a Vállalati portál törlésével, vagyis az eszköz a továbbiakban nem fog rendelkezni a vállalati erőforrásokba, például a Microsoft SharePoint vagy az Office 365 szolgáltatásba, illetve a levelezőrendszerbe való bejelentkezéshez szükséges hitelesítő adatokkal.
@@ -62,6 +69,6 @@ Egyes esetekben maga az eszköz éri el életciklusának végét. Ilyen esetekbe
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

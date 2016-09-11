@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: acb8d018b23753ad0a414d0222468caad3284325
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
 
 
 ---
@@ -35,11 +35,10 @@ A következő táblázat azon hibákat tartalmazza, amelyeket az iOS-es eszköz�
 |UserLicenseTypeInvalid|Nem tudja regisztrálni a mobileszközt, mert a felhasználói fiók még nem tagja egy szükséges felhasználói csoportnak.<br /><br />Lépjen kapcsolatba az informatikai rendszergazdákkal, és mondja el nekik, hogy a **UserLicenseTypeInvalid** üzenetet kapta a mobileszköz regisztrálása során, és kérje meg őket, hogy nézzék meg a jelen táblázatban lévő megoldást.|Mielőtt a felhasználók regisztrálhatnák az eszközeiket, a megfelelő felhasználói csoport tagjának kell lenniük. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br /><br />Tekintse meg az alábbiakat a további információkért:<br /><br />Olvassa el [Az iOS kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) című szakaszt, illetve a felhasználók konfigurálásával („Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz”)(/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3), valamint a [felhasználók és eszközök rendszerezésével](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) kapcsolatos tudnivalókat.|
 |MdmAuthorityNotDefined|Az informatikai rendszergazdának konfigurálnia kell a vállalatban lévő mobileszközök felügyeletének módját.<br /><br />Lépjen kapcsolatba az informatikai rendszergazdákkal, és mondja el nekik, hogy az **MdmAuthorityNotDefined** üzenetet kapta a mobileszköz regisztrálása során, és kérje meg őket, hogy nézzék meg a jelen táblázatban lévő megoldást.|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban.<br /><br />Tekintse meg az 1. elemet [Az első lépések a Microsoft Intune 30 napos próbaverziójában](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) „6. lépés: Mobileszközök regisztrálása és alkalmazások telepítése” szakaszában.|
 
-### További információ
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

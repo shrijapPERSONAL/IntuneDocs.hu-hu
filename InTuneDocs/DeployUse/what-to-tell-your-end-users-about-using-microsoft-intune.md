@@ -4,7 +4,7 @@ description: "Hivatkozások és információk, amelyeket érdemes megosztani a v
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: e904f7e7e91d86359a0fd818032833caa382edcc
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Ne felejtse el megadni a rendszergazda kapcsolattartási adatait a [Vállalati p
 
 ## Hol találnak a végfelhasználók információt a gyakori feladatokról?
 
-Az alábbi súgóhivatkozásokkal tájékoztatja a végfelhasználókat arról, hogyan használhatják az Intune-t a különböző eszközökön. A hivatkozásokkal elérhető oldalakon többek között a Vállalati portál alkalmazás telepítéséről, az eszközök regisztrálásáról, a felügyelt alkalmazások letöltéséről és a hibaelhárításról olvashatnak.
+Amikor a regisztrált felhasználók segítséget keresnek az Intune használatához, rendszerint egy olyan hivatkozást találnak a Vállalati portál webhelyen vagy alkalmazásban, amely a probléma megoldásához vagy a feladat végrehajtásához szükséges lépéseket ismertető cikkre mutat. Ha például egy Android-felhasználó egy olyan üzenetet lát, amely arról tájékoztatja, hogy nem rendelkezik egy szükséges tanúsítvánnyal, akkor az „Útmutató a probléma megoldásához” hivatkozásra kattintva megnyithat egy cikket, amely ismerteti a tanúsítvány beszerzésének módját. 
+
+Az alábbi hivatkozások a rendszergazdáknak szólnak. Ezek az oldalak hivatkozásokat tartalmaznak az összes olyan cikkre, amelyhez a Vállalati portál a felhasználókat irányítja. A hivatkozások különböző szakaszokra oszlanak: a Vállalati portál alkalmazás telepítése és az Intune-regisztráció; a felhasználók által az eszközökön végrehajtható feladatok, például a felügyelt alkalmazások használata és az eszközök manuális szinkronizálása, valamint a hibaelhárítás.
 
 - [Android-eszköz használata az Intune-nal](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Ha szeretné megtudni, hogy a végfelhasználók hogyan tölthetnek le alkalmaz�
 
 Ha segíteni szeretne felhasználóinak megoldani a Vállalati portál használata során felmerülő esetleges problémákat, tekintse meg, hogy [milyen üzenetekkel találkozhatnak a Vállalati portálon](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
+Ha szeretné, hogy a jelen cikk más információkra is kitérjen, kérjük, javaslatát a témakör végén található Megjegyzés mezőben adja meg. Köszönjük!
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

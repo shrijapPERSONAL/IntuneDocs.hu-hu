@@ -2,9 +2,9 @@
 title: "Intune-integráció a Microsoft felhőszolgáltatásaival | Microsoft Intune"
 description: "Intune-integráció a Microsoft felhőszolgáltatásaival és termékeivel, valamint más Microsoft-termékekkel"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
 
 
 ---
@@ -42,6 +42,7 @@ További információk a [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 do
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 
