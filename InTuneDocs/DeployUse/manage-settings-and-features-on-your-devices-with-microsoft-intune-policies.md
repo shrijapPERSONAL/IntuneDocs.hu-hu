@@ -4,7 +4,7 @@ description: "Az Intune segítségével szabályzatokat hozhat létre és telep�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Az eszközök akkor jelentkeznek be az Intune-ba, amikor bejelentkezési értes�
 
 Az egyéb módosítások – például a kapcsolattartási adatok módosítása a vállalati portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
 
-> [!TIP]
-> Amikor beállításokat tartalmazó szabályzatot telepít egy Android-eszközre, a rendszer megkéri a felhasználót, hogy intézkedjen a szabályzatnak való megfelelés biztosítása érdekében. Amíg a felhasználó nem intézkedik, illetve az eszköz újraindításáig az új szabályzatbeállítások nem lépnek érvénybe.
-
 ### Ha ugyanazon felhasználó vagy eszköz számára több házirend is települ, honnan tudható, hogy melyik beállítások lesznek érvényben?
 Ha több szabályzatot telepít ugyanazon felhasználó vagy eszköz számára, az alkalmazni kívánt beállítás értékelése az egyes beállítások szintjén történik:
 
@@ -215,6 +212,6 @@ Lásd a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

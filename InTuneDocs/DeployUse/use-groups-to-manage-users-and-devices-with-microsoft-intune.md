@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-ban
+
+Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ban. Azt is megtudhatja belőle, hogy hogyan változik majd a csoportok kezelése az elkövetkező hónapok során. A csoportok kezelésének *jelenlegi* módszeréről l. a jelen témakör [Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) című részét.
+
 ## Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről
 
 A felhasználók jelezték, hogy egységes csoportosítási és célcsoport-kezelési felületet szeretnének a Nagyvállalati mobilitás + biztonság egészéhez, ezért az Intune-csoportokat átalakítjuk Azure Active Directory-alapú biztonsági csoportokká. Ez egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Az új felület jóvoltából a jövőben nem kell csoportokat duplikálni a szolgáltatások között, és támogatott lesz PowerShell- és a Graph-alapú bővíthetőség is. 
@@ -72,7 +76,7 @@ Jóllehet a csoportfelügyelet minősége javulni fog, vannak olyan Intune-funkc
 -  Ha vannak olyan rendszergazdák, akik számára nem engedélyezett csoportok létrehozása az Azure AD-ben, kérje meg Azure AD-rendszergazdáját, hogy adja hozzá őket az **Intune-szolgáltatásadminisztrátor** Azure AD-szerepkörhöz.
 
 
-# Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal
+## Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal
 
 Ez a szakasz azt ismerteti, hogy hogyan hozhat létre Intune-csoportokat az Intune felügyeleti konzolján.
 
@@ -208,6 +212,6 @@ Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

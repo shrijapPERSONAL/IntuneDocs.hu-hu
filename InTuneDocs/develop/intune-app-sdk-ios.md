@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 Az iOS-hoz készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune mobilalkalmazás-felügyeleti (MAM) funkcióját beépítse iOS-alkalmazásába. Az Intune App SDK-ba integrált MAM-kompatibilis alkalmazások lehetővé teszik a rendszergazdák számára a szabályzatok érvénybe léptetését az aktívan felügyelt alkalmazásokban.
 
-# Az SDK tartalma
+## Az SDK tartalma
 
 Az iOS-hoz készült Intune App SDK magában foglalja a statikus könyvtárat, az erőforrásfájlokat, az API-fejléceket, a hibakeresési beállításokat tartalmazó plist-fájlt és a konfiguráló eszközt. A mobilalkalmazások tartalmazhatják az erőforrásfájlokat, és általában statikus módon csatolhatók a könyvárakhoz a szabályzatok érvénybe léptetéséhez. A speciális Intune MAM-funkciók használata API-k segítségével kényszeríthető ki.
 Ez az útmutató az iOS-hoz készült Intune App SDK integrációja során használt alábbi összetevőket ismerteti:
@@ -37,13 +37,13 @@ Ez az útmutató az iOS-hoz készült Intune App SDK integrációja során haszn
 
 * **Headers**: az Intune App SDK API-jainak elérhetővé tétele. Ha API-t használ, meg kell adnia az API-t tartalmazó fejlécfájlt. 
 
-# Az Intune App SDK működése
+## Az Intune App SDK működése
 
 Az iOS-hoz készült Intune App SDK révén minimális kódmódosítással adhat hozzá felügyeleti funkciókat az iOS-alkalmazásokhoz. A kódmódosítás mértékének csökkentésével gyorsabban dobhatja piacra, és stabilabbá teheti a mobilalkalmazást. 
 
 Az alkalmazást a statikus könyvtárhoz kell csatolni, és az alkalmazásnak tartalmaznia kell az erőforrás-csomagot is. A MAMDebugSettings.plist fájl használata nem kötelező, segítségével a MAM-szabályzatok által felügyelt alkalmazások működését szimulálhatja anélkül, hogy Microsoft Intune-on keresztül telepítené az alkalmazást. A hibakeresési buildekben a MAMDebugSettings.plist fájlban lévő szabályzatok érvénybe léptetéséhez a fájlt az alkalmazás Dokumentumok könyvtárába kell másolni az iTunes-fájlmegosztás segítségével .
 
-# Az alkalmazás elkészítése az Intune App SDK-val 
+## Az alkalmazás elkészítése az Intune App SDK-val 
 
 Kövesse az alábbi lépéseket az Intune App SDK engedélyezéséhez:
 
@@ -133,7 +133,7 @@ Kövesse az alábbi lépéseket az Intune App SDK engedélyezéséhez:
 
 Ha a mobilalkalmazás ADAL-t használ a saját hitelesítéshez, tekintse át az Azure Directory hitelesítési könyvtárának beállításaival foglalkozó szakaszt, amely itt található.
 
-## Telemetria 
+### Telemetria 
 
 Az iOS-hoz készült Intune App SDK alapértelmezés szerint naplózza a használati eseményekkel kapcsolatos telemetrikus adatokat, amelyeket a rendszer elküld a Microsoft Intune-nak.
 
@@ -155,15 +155,15 @@ Ha az alkalmazás maga használja az ADAL-t a hitelesítéshez, az alábbi lép�
 
 2. A projekt `Info.plist`fájljában az `IntuneMAMSettings` szótár alatt található `ADALRedirectUri`nevű kulcsban adja meg az ADAL-hívásokhoz használható átirányítási URI-t. Az alkalmazás átirányítási URI-formátumától függően előfordulhat, hogy az `ADALRedirectScheme` beállításait is meg kell adnia.
 
-## A bővítmények összeállítása (nem kötelező) 
+### A bővítmények összeállítása (nem kötelező) 
 
 Ha bővítményeket állít össze, kövesse a mobilalkalmazások összeállítására vonatkozó útmutatást, amelyet „Az alkalmazás összeállítása Intune App SDK-val” című szakaszban találhat itt. Emellett frissítse az összes bővítmény info.plist fájlját, hogy felvehesse az IntuneMAMSettings szótár alatt található ContainingAppBundleId kulcsot az azt tartalmazó alkalmazás csomagazonosítójával.
 
-## A keretrendszer összeállítása (nem kötelező)
+### A keretrendszer összeállítása (nem kötelező)
 
 Az Intune App SDK legújabb módosításainak köszönhetően nem kell lefordítania a mobilalkalmazást az adott csatoló jelzőkkel, ha a mobilalkalmazás beágyazott alkalmazás-keretrendszert tartalmaz. 
 
-## Képfájlok indításkor (nem kötelező)
+### Képfájlok indításkor (nem kötelező)
 
 Ha a Microsoft Intune aktívan felügyeli a MAM-kompatibilis alkalmazásokat, az Intune App SDK az alkalmazás indításakor kezdőképernyő megjelenítésével jelzi a felhasználóknak, hogy az alkalmazás felügyelet alatt áll. A megjelenítendő képfájl(ok) felvételére „A munkahely kezeli” indítási oldalon van lehetősége. A képek esetében kövesse az alábbi iránymutatásokat:
 
@@ -179,7 +179,7 @@ Ha a Microsoft Intune aktívan felügyeli a MAM-kompatibilis alkalmazásokat, az
 
 **Megjegyzés**: ez a képernyő minden indításkor megjelenik, de a felhasználó véglegesen eltávolíthatja.
 
-# Az Intune App SDK-beállítások konfigurálása
+## Az Intune App SDK-beállítások konfigurálása
 
 Az alkalmazás `IntuneMAMSettings` fájljában található `info.plist` könyvtár az Intune App SDK konfigurálására szolgál. A támogatott beállítások listája a következő: 
 
@@ -197,7 +197,7 @@ SplashIconFile <br>SplashIconFile ~ ipad  | Karakterlánc  | Megadja az Intune-k
 SplashDuration | Szám | Az Intune kezdőképernyő megjelenésének minimális időtartama (másodpercben) az alkalmazás indításakor. Az alapértelmezett érték 1.5. | Nem kötelező.
 ADALLogOverrideDisabled | Logikai  | Megadásával az SDK átirányítja az összes ADAL naplófájlt (beleértve az esetleges ADAL-hívásokat az alkalmazásból) a saját naplófájljába. Az alapértelmezett érték a Nem. Állítsa be az Igen értéket, ha az alkalmazás visszahívná a saját ADAL-naplóját. | Nem kötelező.
 
-# Fejlécek az Intune App SDK-ban 
+## Fejlécek az Intune App SDK-ban 
 
 A következő fejlécek az API-függvényhívásokat is tartalmazzák, amelyek az Intune App SDK funkcióinak engedélyezéséhez szükségesek. 
 
@@ -209,7 +209,7 @@ A következő fejlécek az API-függvényhívásokat is tartalmazzák, amelyek a
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Intune App SDK-hibakeresés Xcode-ban
+## Intune App SDK-hibakeresés Xcode-ban
 
 A MAM-kompatibilis alkalmazások Microsoft Intune-beli tesztelése előtt használhatja az Xcode-ban a `Settings.bundle` csomagot. Ez lehetővé teszi a tesztszabályzatok beállítását az Intune elérése nélkül. Az engedélyezéshez tegye a következőket:
 
@@ -230,7 +230,7 @@ A MAM-kompatibilis alkalmazások Microsoft Intune-beli tesztelése előtt haszn�
 > [!NOTE]
 > Most már használhatja a „Settings -> Saját-alkalmazás-neve -> Enable Test Policies” lehetőséget a beállítások ki- és bekapcsolására.
 
-# Ajánlott gyakorlati tanácsok iOS-ban
+## Ajánlott gyakorlati tanácsok iOS-ban
 
 Az alábbiakban néhány gyakorlati tanácsot ajánlunk az iOS-alapú fejlesztéshez:
 
@@ -241,6 +241,6 @@ Ha az Xcode nem találja a `libIntuneMAM.a`könyvtárat, a problémát megoldhat
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

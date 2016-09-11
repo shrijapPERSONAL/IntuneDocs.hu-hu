@@ -13,8 +13,8 @@ ms.assetid: 4ac887f3-52e1-41f0-97fe-21985e0573ab
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 3e62cff85df4b17b4a952899157f118c2e5530fb
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 8900f6d22545588263936be868e0d6d8fb9db485
 
 
 ---
@@ -37,12 +37,10 @@ Telepítése után a vállalati portál megjelenik az alkalmazáslistában.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-### További információ
-[Windows-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-windows.md)</br>
-[Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 ### Jelszóbeállítások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|Igen|Igen|
 |**Kötelező jelszótípus**|Meghatározza a megkövetelt jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|Igen|
 |**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. iOS-eszközök esetén azonban ez azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|Igen|Igen|
@@ -55,44 +55,44 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 ### Titkosítási beállítások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Mobileszköz titkosításának kötelezővé tétele**|Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.|Igen|Igen|
 
 ### Rendszerbeállítások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Képernyőfelvétel-készítés használatának engedélyezése**|A képernyőtartalom képfájlban történő rögzítésének engedélyezése a felhasználó számára.|Nem|Igen|
 |**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.|Nem|Igen|
 
 ### Felhőbeállítások – fiókok és szinkronizálás
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Microsoft-fiók használatának engedélyezése**|Engedélyezi Microsoft-fiók társítását az eszközzel.|Nem|Igen|
 
 ### E-mail beállítások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Egyéni e-mail fiókok engedélyezése**|Nem Microsoft e-mail fiókokhoz való kapcsolódás engedélyezése az eszköz számára.|Nem|Igen|
 
 ### Alkalmazásbeállítások – böngésző
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Webböngésző használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.|Nem|Igen|
 
 ### Alkalmazásbeállítások – alkalmazások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Alkalmazástároló használatának engedélyezése**|Lehetővé teszi a felhasználók számára az alkalmazás-áruház elérését az eszközről.|Nem|Igen|
 
 ### Eszközképességek beállításai – hardver
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Kamera használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz kamerájának használatát.|Nem|Igen|
 |**Cserélhető tároló használatának engedélyezése**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|Igen|Igen|
 |**Wi-Fi használatának engedélyezése**|Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.|Nem|Igen|
@@ -106,7 +106,7 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 ### Eszközképességek beállításai – szolgáltatások
 
 |Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Másolás és beillesztés használatának engedélyezése**|Engedélyezi az eszköznek a másolási és a beillesztési funkció használatát.|Nem|Igen|
 
 ### Az engedélyezett és letiltott alkalmazások beállításai
@@ -171,6 +171,6 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

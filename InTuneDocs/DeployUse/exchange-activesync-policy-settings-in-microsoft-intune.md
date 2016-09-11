@@ -4,7 +4,7 @@ description: "Az Intune Exchange ActiveSync-szabályzatának használatával meg
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
-ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 ## Jelszóbeállítások
 
 |Beállítás neve|Részletek
-|----------------|
+|----------------|---|
 |**Jelszó szükséges a mobileszközök feloldásához**|Meghatározza, hogy az eszközöket jelszóval kell-e zárolni.<br>(a Windows RT rendszerű eszközökre nem vonatkozik).|
 |**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
 |**Jelszó minimális hossza**|Az eszközhöz használt jelszóban használandó karakterek minimális számát határozza meg.|
@@ -40,7 +40,7 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 ## Titkosítási beállítások
 
 |Beállítás neve|Részletek|
-|----------------|
+|----------------|---|
 |**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br><br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|
 |**Titkosítás megkövetelése tárolókártyákon**|A külső tárhelyen, például egy SD-kártyán tárolt adatok titkosítása szükséges (a támogatott eszközökön).
 <sup>1</sup> További információ a Windows 8.1 rendszerű eszközökhöz
@@ -56,7 +56,7 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 ## E-mail beállítások
 
 |Beállítás neve|Részletek
-|----------------|
+|----------------|---|
 |**Az e-mail mellékletek letöltésének engedélyezése a felhasználók számára**|Megadja, hogy le lehet-e tölteni az e-mail mellékleteket az eszközre.|
 |**E-mail szinkronizálási időszak**|Meghatározza, hogy hány napnyi beérkezett e-mail szinkronizálódjon az eszközzel.
 |**Engedélyezze az Exchange ActiveSync-beállításokat nem teljes mértékben támogató eszközök szinkronizálását az Exchange kiszolgálóval**|A beállítással megadható, hogy engedélyezi-e az Exchange kiszolgálóhoz a hozzáférést az Exchange ActiveSync-beállításokat csak részben vagy egyáltalán nem támogató eszközök számára.
@@ -64,13 +64,13 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 ## Webböngésző beállításai
 
 |Beállítás neve|Részletek
-|----------------|-
+|----------------|---|
 |**Webböngésző használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a webböngésző.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
 ## Hardverbeállítások
 
 |Beállítás neve|Részletek
-|----------------|
+|----------------|---|
 |**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
 
@@ -80,6 +80,6 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

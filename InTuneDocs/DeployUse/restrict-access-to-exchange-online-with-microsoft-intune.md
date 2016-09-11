@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvass
 >[!IMPORTANT]
 >A modern hitelesítést használó alkalmazásokat működtető számítógépek és Windows 10 Mobile rendszerű eszközök esetében a feltételes hozzáférés jelenleg nem érhető el az összes Intune-ügyfél számára. Ha már használja ezeket a funkciókat, nincs teendője. Továbbra is használhatja őket.
 
->Ha nem hozott létre feltételes hozzáférési szabályzatokat a modern hitelesítést használó alkalmazásokat működtető számítógépekhez vagy Windows 10 Mobile rendszerű eszközökhöz, kérelmet kell küldenie.  A [Microsoft Connect webhelyen](http://go.microsoft.com/fwlink/?LinkId=761472) részletes tájékoztatást talál az ismert problémákról, valamint a funkció elérésének módjáról.
+>Ha még nem hozott létre feltételes hozzáférési szabályzatokat a számítógépeken és a Windows 10 Mobile rendszeren futó, modern hitelesítést használó alkalmazások számára, és most szeretné ezt megtenni, regisztráljon az Azure Active Directory nyilvános előzetes verziójára, amely eszközalapú feltételes hozzáférési szabályzatokat tartalmaz az Intune által felügyelt eszközök és a tartományhoz csatlakoztatott Windows rendszerű számítógépek számára. További információért olvassa el [ezt a blogbejegyzést](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).  
 
 **Mielőtt** konfigurálja a feltételes hozzáférést, meg kell felelnie a következő előfeltételeknek:
 
@@ -196,7 +196,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
         * Nem támogatott platformok, például a Mac OS.  Azonban az ezekről a platformokról származó, modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
 
         >[!TIP]
-           Ha még nem használ feltételes hozzáférést a számítógépekhez, akkor előfordulhat, hogy ezt a beállítás nem jelenik meg.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   A [Microsoft Connect webhelyen](http://go.microsoft.com/fwlink/?LinkId=761472) részletes tájékoztatást talál az ismert problémákról, valamint a funkció elérésének módjáról.
+           Ha még nem használ feltételes hozzáférést a számítógépekhez, akkor előfordulhat, hogy ezt a beállítás nem jelenik meg.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   [Ebben a blogbejegyzésben](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) talál további információt arról, hogyan érheti el a szolgáltatást.
 
     -   **Megadott platformok**
 
@@ -260,6 +260,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

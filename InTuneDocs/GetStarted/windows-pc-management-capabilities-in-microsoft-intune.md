@@ -1,10 +1,10 @@
 ---
-title: "Windows-számítógépek felügyeletére szolgáló funkciók | Microsoft Intune"
-description: "Tudjon meg többet az Intune funkcióiról, amelyek akkor érhetők el, ha a Windows-számítógépeit az Intune-ügyfélszoftver használatával felügyeli."
+title: "Az Intune PC-szoftverügyfél képességei | Microsoft Intune"
+description: "Ismerje meg az Intune funkcióit, amelyek akkor érhetők el, ha a Windows-számítógépeit az Intune-szoftverügyfél használatával felügyeli."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Windows-számítógépek felügyeletére szolgáló képességek a számítógépes Microsoft Intune ügyfélszoftverben
-A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ugyanis több funkciót biztosít, mint a számítógépes Intune ügyfélszoftver. Az Intune-számítógépügyféllel azonban számítógépeket is felügyelhet, és a következő funkciókat veheti igénybe:
+# A Windows-számítógépek felügyeletét szolgáló képességek az Intune szoftverügyfél használata esetén
+A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, mivel ez több funkciót biztosít. Ugyanakkor az Intune-szoftverügyféllel is felügyelheti a számítógépeket. Ekkor a következő funkciókat érheti el:
 
 -   **Szoftverfrissítések kezelése** – Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
 
@@ -31,10 +31,10 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, ez ug
 -   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune beépített távoli asztali funkciója segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
 -   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
--   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. A számítógépek ügyfélszoftverrel történő felügyelete esetén egyes alkalmazásfelügyeleti funkciók nem érhetők el.
+-   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. Ha a szoftverügyféllel felügyeli a számítógépeket, akkor bizonyos alkalmazásfelügyeleti funkciók nem érhetők el.
 
 
-Az Intune a PC-s ügyfélprogram akár 7000 Windows-eszközre való telepítését is támogatja.
+Az Intune a szoftverügyfél akár 7000 Windows-eszközön való telepítését is támogatja.
 
 ## Rendszerkövetelmények
 Az Intune a Windows következő verzióival rendelkező számítógépek felügyeletére alkalmas (32 bites és 64 bites verziók egyaránt):
@@ -52,7 +52,7 @@ Az Intune a Windows következő verzióival rendelkező számítógépek felügy
 
 
 ## Minimális hardverkövetelmények
-Az Intune-számítógépügyfél a következő minimális hardverkövetelményekkel telepíthető:
+Az Intune-szoftverügyfél telepítésére vonatkozó minimális hardverkövetelmények a következők:
 
 |Követelmény|Részletek|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Az Intune-számítógépügyfél a következő minimális hardverkövetelmények
 |Lemezterület|200 MB szabad lemezterület az ügyfélszoftver telepítése előtt.|
 
 ## További követelmények
-Az Intune-számítógépügyfél telepítésének szoftverkövetelményei a következők:
+Az Intune-szoftverügyfél telepítésére vonatkozó szoftverkövetelmények a következők:
 
 |Követelmény|Részletek|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Az Intune-számítógépügyfél telepítésének szoftverkövetelményei a köv
 |Nem kompatibilis ügyfélszoftver eltávolítása|A számítógépes Intune ügyfélszoftver telepítése előtt távolítsa el a következő ügyfélszoftvereket a számítógépről:<br /><br />- A Configuration Manager bármely verziója<br />- A Microsoft Systems Management Server (SMS) bármely verziója|
 
 ### További információ
-[A Microsoft Intune mobileszköz-kezelési képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

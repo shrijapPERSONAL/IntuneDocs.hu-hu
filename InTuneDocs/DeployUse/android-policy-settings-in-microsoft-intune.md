@@ -5,7 +5,7 @@ description: "Szabályzatok létrehozása, amelyek vezérlik a beállításokat 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 ### Titkosítási beállítások
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Mobileszköz titkosításának kötelezővé tétele**|A mobileszközön található összes fájlnak titkosítva kell lennie.|Igen|Igen|
 |**Titkosítás megkövetelése tárolókártyákon**|Ez a beállítás határozza meg, hogy kötelező legyen-e az eszköz tárolókártyájának titkosítása.|Nem|Igen|
 
 ### Rendszerbeállítások
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Képernyőfelvétel-készítés használatának engedélyezése**|Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.|Nem|Igen|
 |**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Google-nak.|Nem|Igen|
 |**Gyári beállítások visszaállításának engedélyezése**|Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.|Nem|Igen|
@@ -72,19 +72,19 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 ### Felhőbeállítások – dokumentumok és adatok
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**A Google-fiók biztonsági mentésének engedélyezése**|A Google-fiók biztonsági mentésének engedélyezése.|Nem|Igen|
 
 ### Felhőbeállítások – fiókok és szinkronizálás
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Google-fiók automatikus szinkronizálásának engedélyezése**|Google-fiókbeállítások automatikus szinkronizálásának engedélyezése.|Nem|Igen|
 
 ### Alkalmazásbeállítások – böngésző
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Webböngésző használatának engedélyezése**|Ezzel a beállítással adható meg, hogy engedélyezett-e az eszköz alapértelmezett webböngészőjének használata.|Nem|Igen|
 |**Automatikus kitöltés engedélyezése**|A böngésző automatikus kitöltési funkciójának engedélyezése.|Nem|Igen|
 |**Előugróablak-blokkoló engedélyezése**|A böngésző előugróablak-blokkoló funkciójának engedélyezése.|Nem|Igen|
@@ -94,13 +94,13 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 ### Alkalmazásbeállítások – alkalmazások
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Google Play áruház engedélyezése**|A Google Play Áruház használatának engedélyezése az eszközön.|Nem|Igen|
 
 ### Eszközképességek beállításai – hardver
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Kamera használatának engedélyezése**|Engedélyezi az eszköz kamerájának használatát.|Igen|Igen|
 |**Cserélhető tároló használatának engedélyezése**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|Nem|Igen|
 |**Wi-Fi használatának engedélyezése**|Az eszköz Wi-Fi-funkciójának engedélyezése.|Nem|Igen|
@@ -113,7 +113,7 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 ### Eszközképességek beállításai – mobilhálózat
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Hangroaming engedélyezése**|Hangroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Nem|Igen|
 |**Adatroaming engedélyezése**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Nem|Igen|
 |**SMS-/MMS-üzenetküldés engedélyezése**|SMS- és MMS-üzenetek engedélyezése az eszközön.|Nem|Igen|
@@ -121,7 +121,7 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 ### Eszközképességek beállításai – szolgáltatások
 
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Hangsegéd engedélyezése**|Hangsegéd szoftverek használatának engedélyezése az eszközön.|Nem|Igen|
 |**Hangtárcsázás engedélyezése**|A hangtárcsázási funkció engedélyezése vagy letiltása az eszközön.|Nem|Igen|
 |**Másolás és beillesztés használatának engedélyezése**|Az eszköz másolási és beillesztési funkcióinak engedélyezése.|Nem|Igen|
@@ -208,6 +208,6 @@ Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem ko
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

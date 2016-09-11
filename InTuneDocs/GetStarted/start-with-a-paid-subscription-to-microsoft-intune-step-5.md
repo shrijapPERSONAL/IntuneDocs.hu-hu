@@ -2,9 +2,9 @@
 title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Intune"
 description: "Ismerteti a felhasználók és csoportok létrehozásának módját az Intune-előfizetéséhez"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
 
 
 ---
@@ -60,7 +60,7 @@ A felhasználói csoportokat szoftverek és eszköz- házirendek telepítésére
 
 5.  A **Közvetlen tagság meghatározása** lapon válassza a **Tovább** gombot. Itt semmit nem kell tennie, mivel a vállalati rendszergazdán kívül minden felhasználónak bele kell tartoznia az Intune-felhasználók csoportba.
 
-6.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket, majd kattintson a **Befejezés** gombra.
+6.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket, majd válassza a **Befejezés** gombot.
 
 Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listájának **Minden felhasználó** lapján. Itt szerkesztheti és törölheti is a csoportot.
 
@@ -75,6 +75,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 5. lép
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
