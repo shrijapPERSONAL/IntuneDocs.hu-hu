@@ -4,7 +4,7 @@ description: "A hat leggyakoribb feladat, amelyek elvégzésében az Intune seg�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: 2ebb8fcf348cfdc7600c37b40824f5bba37a7f36
+ms.openlocfilehash: 4614c13d98c4b05882bbeabfbbd7de83d9bea2da
 
 
 ---
@@ -26,10 +26,14 @@ Mielőtt belevágna a megvalósítási feladatok végrehajtásába, fontos, hogy
 >[!NOTE]
 >Tudni szeretné, hogy a Microsoft informatikai részlege hogyan használja az Intune-t annak biztosításához,hogy a Microsoft dolgozói hozzáférjenek a vállalati erőforrásokhoz a mobileszközeikről, és eközben hogyan biztosítja a vállalati adatok védelmét? [Olvassa el ezt az angol nyelvű technikai esettanulmányt](https://www.microsoft.com/itshowcase/Article/Content/588), amely részletesen leírja, hogyan használja a Microsoft informatikai részlege az Intune-t és az egyéb szolgáltatásokat az identitás, az eszközök, az alkalmazások és az adatok kezeléséhez.  
 
+>[!IMPORTANT]
+>A mobileszközök naprakészségének biztosítása<br>
+>A nemrégiben a „Trident” kártevő által az iOS eszközök ellen indított támadások nyomán közzétettünk egy új blogbejegyzést ‒ [Hogyan biztosíthatja a mobileszközök naprakészségét a Microsoft Intune segítségével?](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) ‒, amely megismerteti az Intune által kínált különböző lehetőségeket a mobileszközök biztonságának és naprakészségének fenntartására.
+
 ## A helyszíni e-mailek és adatok védelme a mobileszközökről történő biztonságos hozzáférés lehetővé tételéhez
 A legtöbb nagyvállalati mobilitási stratégia annak megtervezésével kezdődik, hogy a dolgozók hogyan tudják biztonságosan elérni az e-maileket a mobileszközeikkel az interneten. Számos szervezet továbbra is a vállalati hálózatában tárolja és üzemelteti a helyszíni adatokat és az alkalmazáskiszolgálókat, például a Microsoft Exchange-et. Az Intune és a nagyvállalati mobilitási csomag (EMS) olyan egyedi, integrált [feltételes hozzáférési megoldást](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) kínál az Exchange Serverhez, amely garantálja, hogy egyetlen mobilalkalmazásnak sem lesz hozzáférése az e-mailekhez, amíg az eszköz nincs regisztrálva az Intune-ban, és mindezt úgy, hogy nem kell egy további átjárót üzembe helyezni a vállalati hálózat peremén.
 
-Az e-mailek mellett az Intune támogatja az olyan mobilalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói.  Ez általában az [Intune által kezelt, hozzáférés-vezérlésre használt tanúsítványokkal](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles), valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Microsoft Azure AD-alkalmazásproxyval oldható meg.  Ezekben az esetekben a vállalati adatok kizárólag az eszköznek a felügyelet hatálya alá való regisztrálásával érhetők el.  A regisztrálás után a felügyeleti rendszer gondoskodik arról, hogy a vállalati adatokhoz hozzáférő eszközök megfeleljenek a szabályzatoknak.  Ezenkívül az Intune [alkalmazásburkoló eszközével és az App SDK-val](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) megoldható, hogy az elért adatok az üzleti alkalmazáson belül maradjanak, így az alkalmazás nem tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy a szolgáltatásoknak.
+Az e-mailek mellett az Intune támogatja az olyan mobilalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói.  Ez általában az [Intune által kezelt, hozzáférés-vezérlésre használt tanúsítványokkal](/intune/deploy-use/secure-resource-access-with-certificate-profiles), valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Microsoft Azure AD-alkalmazásproxyval oldható meg.  Ezekben az esetekben a vállalati adatok kizárólag az eszköznek a felügyelet hatálya alá való regisztrálásával érhetők el.  A regisztrálás után a felügyeleti rendszer gondoskodik arról, hogy a vállalati adatokhoz hozzáférő eszközök megfeleljenek a szabályzatoknak.  Ezenkívül az Intune [alkalmazásburkoló eszközével és az App SDK-val](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) megoldható, hogy az elért adatok az üzleti alkalmazáson belül maradjanak, így az alkalmazás nem tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy a szolgáltatásoknak.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,6 +72,6 @@ A dolgozóknak néha olyan eszközöket, alkalmazásokat vagy böngészőket kel
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
