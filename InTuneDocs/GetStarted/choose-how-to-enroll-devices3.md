@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
 
 
 ---
@@ -25,7 +25,7 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 ## **A vállalati tulajdonban lévő eszközök megosztott eszközök, vagy dedikált felhasználókkal rendelkeznek?**
 
 > [!div class="button"]
-[Megosztott >](choose-how-to-enroll-devices4.md)   [Dedikált >](choose-how-to-enroll-devices6.md)
+[Megosztott >](choose-how-to-enroll-devices4.md)<br>[Dedikált >](choose-how-to-enroll-devices6.md)
 
 - **Megosztott vállalati eszközök** – Ezekhez az eszközökhöz több felhasználó is hozzáfér, és általában nem használhatók levelezésre. Ilyen eszköz például az interaktív terminál, vagy a feladatközpontú, egy helyen tárolt, közös használatú eszközök. Az ajánlott regisztrációs módszer az eszköz platformjától függ.
 
@@ -36,6 +36,6 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

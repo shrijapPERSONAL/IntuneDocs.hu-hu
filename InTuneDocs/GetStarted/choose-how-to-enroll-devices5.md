@@ -13,8 +13,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 825392d060229a6b3f3bd3e84ad4be127118aa21
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
 
 
 ---
@@ -26,7 +26,7 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 ## **Hogyan kezelheti a megosztott iOS-eszközeit?**
 
   > [!div class="button"]
-  [iOS-eszközök regisztrálása a DEP segítségével >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS-eszközök közvetlen regisztrálása >>  ](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)[DEM-regisztráció >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  [iOS-eszközök regisztrálása DEP keretében >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)<br>[iOS-eszközök közvetlen regisztrálása >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)<br>[DEM-regisztráció >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Az Apple Készülékregisztrációs programja (Device Enrollment Program – DEP)** – A DEP-pel vásárolt vagy kezelt iOS-eszközökre regisztrációs profil telepíthető. Amikor a felhasználók első alkalommal kapcsolják be az eszközt, az letölti a DEP-profilt és azzal regisztrálja az magát.
 
@@ -39,6 +39,6 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

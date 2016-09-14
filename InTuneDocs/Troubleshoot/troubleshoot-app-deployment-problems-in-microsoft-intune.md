@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
-ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
@@ -23,12 +23,6 @@ ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 Ha problémába ütközik az alkalmazások Intune-nal történő telepítése vagy felügyelete során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
 ## Gyakori alkalmazástelepítési problémák
-
-### A felhasználó nem tud bejelentkezni az Intune Vállalati portálra
-
-1.  Ellenőrizze, hogy létezik-e a felhasználói fiók és engedélyezett-e az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) győződjön meg róla, hogy a felhasználó helyes felhasználónévvel próbál bejelentkezni az Intune-ba és azt a **jozsef@tartomany.com** formátumban adja meg. Ha úgy látszik, hogy a felhasználó helytelen jelszót ad meg, kérje meg, hogy kérjen újat.
 
 ### Ha hiányzik az IT-csoport elérhetőségével kapcsolatos információ a vállalati portálról
 
@@ -52,15 +46,6 @@ Ha problémába ütközik az alkalmazások Intune-nal történő telepítése va
 
 4.  Ha az iOS-alkalmazás letöltése befejeződött, de az alkalmazástelepítés sikertelen, lehetséges, hogy gond van a megadott alkalmazásfájlokkal.
 
-### Ha egy iOS-alkalmazásra mutató hivatkozás az iTunes alkalmazásáruház egy korábban felkeresett oldalára viszi
-
-1.  Az aktuális iTunes alkalmazásáruházbeli munkamenet a korábbi alkalmazáslapon nyílik meg.
-
-2.  Zárja be az iTunes alkalmazásáruházat az eszközön, és próbálkozzon újra a hivatkozással.
-
-### Ha hibaüzenet jelenik meg az iOS-alkalmazás indítása közben
-
-1.  Lehetséges, hogy az alkalmazás lejárati dátuma nem érvényes.
 
 ### Ha az alkalmazás feltöltése nem fejeződik be
 
@@ -73,12 +58,6 @@ Ha problémába ütközik az alkalmazások Intune-nal történő telepítése va
 1.  Győződjön meg arról, hogy a szervezet tűzfala lehetővé teszi a hozzáférést az Apple üzembe helyezési és hitelesítő webhelyeihez.
 
 2.  További információt az Apple fejlesztői dokumentációjában talál.
-
-### Hiba: A gyártó nem létezik
-A 3. fél licencszerződések hozzáadásához az **Egyéb szoftverlicenc-szerződések hozzáadása** beállítást használja. Megpróbálja felvenni a gyártót az **Egyéb szoftverlicenc-szerződések** lapon. A lap tartalmazza a létező gyártók betűrendbe szedett listáját.
-Megadja a hiányzó gyártót, de **A gyártó nem létezik** hibaüzenet kap.
-
-Ez a rendszer kialakításából fakad. Az Intune csak a népszerű szoftvercímek licenceit követi nyomon. Legalább 4 külön fióktól származó jelentés szükséges ahhoz, hogy az Intune választási lehetőségként elérhetővé tegyen egy adott szoftvert a licencelési feladatok között.
 
 ### Ha a felügyelt alkalmazások nem jelentik a telepítési állapotot
 
@@ -93,13 +72,13 @@ A következő táblázat az Intune-alkalmazástelepítés közben gyakran előfo
 |0x80073CF0|A csomag nem nyitható meg.|Lehetséges okok:<br /><br />-   A csomag nincs aláírva.<br />-   A közzétevő neve nem egyezik meg az aláíró tanúsítvány tulajdonosával.<br /><br />További információt az AppxPackagingOM eseménynaplóban talál.|
 |0x80073CF3|Nem sikerült ellenőrizni a csomag frissítéseit, függőségeit vagy ütközéseit|Lehetséges okok:<br /><br />-   A bejövő csomag ütközik egy telepített csomaggal.<br />-   Nem található a megadott csomagfüggőség.<br />-   A csomag nem támogatja a megfelelő processzorarchitektúrát.<br /><br />További információt az AppXDeployment-Server eseménynaplóban talál.|
 |0x80073CFB|A megadott csomag már telepítve van, és a csomag újratelepítése le van tiltva.|Ez a hiba akkor fordulhat elő, ha olyan csomagot telepít, amely nem azonos a már telepített csomaggal. Ellenőrizze, hogy a csomag tartalmaz-e digitális aláírást. Ha újraépít vagy újra aláír egy csomagot, a csomag nem lesz bitenként azonos az előzőleg telepített csomaggal. Ez a hiba kétféleképpen javítható ki:<br /><br />-   Növelje az alkalmazás verziószámát, majd építse és írja alá újra a csomagot.<br />-   Az új csomag telepítése előtt távolítsa el a régi csomagot a rendszer minden felhasználója esetében.|
-|0x87D1041C|Az alkalmazás telepítése sikeres volt, de a rendszer nem ismeri fel az alkalmazást.|– A felhasználó a vállalati portálról telepítette az alkalmazást, majd közvetlenül az eszközről távolította el. Telepítse újra az alkalmazást a vállalati portálról.<br /><br />– Előfordulhat, hogy az üzletági alkalmazásnak az Intune által észlelt verziószáma nem egyezik az eszközre telepített verzióval. Győződjön meg arról, hogy az Intune a helyes verzióval rendelkezik, majd telepítse újra az alkalmazást.|
+|0x87D1041C|Az alkalmazás telepítése sikeres volt, de a rendszer nem ismeri fel az alkalmazást.|- Az alkalmazást az Intune sikeresen telepítette, azonban a későbbiekben valaki (valószínűleg a végfelhasználó) eltávolította. Kérje meg a felhasználót, hogy telepítse újra az alkalmazást a vállalati portálról. A kötelező alkalmazások újratelepítése automatikusan megtörténik az eszköz következő bejelentkezésekor.|
 
 ### További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
