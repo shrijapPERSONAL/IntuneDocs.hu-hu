@@ -13,151 +13,122 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
-ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
+ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
+ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
 
 
 ---
 
 # Intune-tanúsítványprofilok konfigurálása
-Ha az [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md) vagy a [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md) részben leírtak szerint konfigurálta az infrastruktúrát és a tanúsítványokat, nekiláthat a tanúsítványprofilok konfigurálásának:
+Miután a [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md) vagy a [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md) részben leírtaknak megfelelően konfigurálta az infrastruktúrát és a tanúsítványokat, hozzáfoghat a tanúsítványprofilok létrehozásához. Ennek folyamata a következő:
 
-**1. feladat** – Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása **2. feladat** – Megbízható hitelesítésszolgáltatói tanúsítványprofilok létrehozása **3. feladat** – Két lehetősége van:
+- **1. feladat**: Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
+- **2. feladat**: Megbízható tanúsítványprofilok létrehozása
+- **3. feladat**: A két tanúsítványtípus egyikének létrehozása:
+  - SCEP-tanúsítványprofilok
+  - .PFX-tanúsítványprofilok
 
-SCEP-tanúsítványprofilok létrehozása
+## **1. feladat**: Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
+Exportálja a megbízható legfelső szintű hitelesítésszolgáltató (CA) tanúsítványát **.cer** kiterjesztésű fájlként a kibocsátó hitelesítésszolgáltatóról vagy a vállalati hitelesítésszolgáltatóban megbízó bármelyik eszközről. A titkos kulcsot ne exportálja.
 
-.PFX-tanúsítványprofilok létrehozása
+Ezt a tanúsítványt a megbízható tanúsítványprofil konfigurálásakor kell importálnia.
 
-### 1. feladat – Megbízható főtanúsítvány exportálása
-Exportálja a megbízható legfelső szintű hitelesítésszolgáltató tanúsítványát **.cer** fájlként a vállalati hitelesítésszolgáltatóról vagy az abban megbízó bármelyik eszközről. A titkos kulcsot nem exportálja.
+## **2. feladat**: Megbízható tanúsítványprofilok létrehozása
+Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványprofilt, mielőtt Egyszerű tanúsítványigénylési protokoll (SCEP) vagy PKCS #12 (.PFX) szerinti tanúsítványprofilt hozna létre. Minden mobileszközplatformhoz külön megbízható tanúsítványprofillal és SCEP- vagy .PFX-profillal kell rendelkeznie.
 
-Ezt a tanúsítványt a főtanúsítvány-profil konfigurálásakor kell importálnia.
+### Megbízható tanúsítványprofil létrehozása
 
-### 2. feladat – Megbízható tanúsítványprofilok létrehozása
-Ahhoz, hogy SCEP- vagy .PFX-tanúsítványprofilt hozhasson létre, először létre kell hoznia egy **megbízható tanúsítványprofilt**. Minden mobileszközplatformhoz külön megbízható tanúsítványprofillal és SCEP. vagy .PFS-profillal kell rendelkeznie.
-
-##### Megbízható tanúsítványprofil létrehozásához
-
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Házirend** &gt; **Házirend hozzáadása** elemre.
-
-2.  Konfigurálja a következő házirendtípusok egyikét:
-
-    **Android &gt; Megbízható tanúsítványprofil (Android 4 és újabb)**
-
-    **iOS &gt; Megbízható tanúsítványprofil (iOS 7.1 és újabb)**
-
-    **Mac OS X &gt; Megbízható tanúsítványprofil (Mac OS X 10.9 és újabb)**
-
-    **Windows &gt; Megbízható tanúsítványprofil (Windows 8.1 és újabb)**
-
-    **Windows &gt; Megbízható tanúsítványprofil (Windows Phone 8.1 és újabb)**
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
+2.  Adja hozzá a következő házirend-típusok valamelyikét:
+    - **Android &gt; Megbízható tanúsítványprofil (Android 4 és újabb)**
+    - **iOS &gt; Megbízható tanúsítványprofil (iOS 7.1 és újabb)**
+    - **Mac OS X &gt; Megbízható tanúsítványprofil (Mac OS X 10.9 és újabb)**
+    - **Windows &gt; Megbízható tanúsítványprofil (Windows 8.1 és újabb)**
+    - **Windows &gt; Megbízható tanúsítványprofil (Windows Phone 8.1 és újabb)**
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Konfigurálja a megbízható tanúsítványprofil beállításait az Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1. rendszerhez az alábbi információk megadásával: 
+3.  Konfigurálja a megbízható tanúsítványprofil beállításait Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1 rendszerhez a rendszer által kért információk megadásával.
 
-    - A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltató tanúsítványát (**.cer-fájl**). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
-
-    
-    - A **Tulajdonos nevének formátuma** **Egyéni** beállításának kiválasztásával egyéni nevet adhat meg a tulajdonosnak.  
-
-        Az egyéni formátum jelenleg két változót támogat: **Egyszerű név (CN)** és **E-mail (E)**. A változók és a statikus sztringek együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre:  
+    - A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt (.cer fájl). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
+    -  Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.  
+        Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:  
 
         `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
 
-        A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a CN és az E változó mellett a Szervezeti Egység, Szervezet, Hely, Állam és Ország sztringjét is alkalmazza. A támogatott sztringek listáját az alábbi témakörben tekintheti meg: [CertStrToName-függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
+        A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.  
+4.  Válassza a **Házirend mentése** elemet.
 
+Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 
-4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
+## **3. feladat**: SCEP- vagy .PFX-tanúsítványprofilok létrehozása
+Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, létre kell hoznia a használni kívánt platformok SCEP- vagy .PFX-tanúsítványprofilját is. Egy SCEP-tanúsítványprofil létrehozásakor meg kell adnia egy ugyanarra a platformra vonatkozó megbízható tanúsítványprofilt. Ez a művelet összeköti a két tanúsítványprofilt, de az egyes profilok központi telepítését külön-külön kell elvégeznie.
 
-Ekkor megjelenik az új házirend a **Házirend** munkaterületen, és készen áll a központi telepítésre.
+### SCEP-tanúsítványprofil létrehozása
 
-### 3. feladat – SCEP- vagy .PFX-tanúsítványprofilok létrehozása
-Ha létrehozott egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, akkor létre kell hoznia a használni kívánt egyes platformok SCEP- vagy .PFX-tanúsítványprofilját is. Az SCEP-tanúsítványprofil létrehozásakor meg kell adnia egy ugyanarra a platformra vonatkozó megbízható tanúsítványprofilt. Ez a művelet összeköti a két tanúsítványprofilt, de a profilok központi telepítését külön-külön kell elvégeznie.
-
-##### SCEP-tanúsítványprofil létrehozásához
-
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Házirend** &gt; **Házirend hozzáadása** elemre.
-
-2.  Konfigurálja a következő házirendtípusok egyikét:
-
-    **Android &gt; SCEP-tanúsítványprofil (Android 4 és újabb)**
-
-    **iOS &gt; SCEP-tanúsítványprofil (iOS 7.1 és újabb)**
-
-    **Mac OS X &gt; SCEP-tanúsítványprofil (Mac OS X 10.9 és újabb)**
-
-    **Windows &gt; SCEP-tanúsítványprofil (Windows 8.1 és újabb)**
-
-    **Windows &gt; SCEP-tanúsítványprofil (Windows Phone 8.1 és újabb)**
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
+2.  Adja hozzá a következő házirend-típusok valamelyikét:
+    - **Android &gt; SCEP-tanúsítványprofil (Android 4 és újabb)**
+    - **iOS &gt; SCEP-tanúsítványprofil (iOS 7.1 és újabb)**
+    - **Mac OS X &gt; SCEP-tanúsítványprofil (Mac OS X 10.9 és újabb)**
+    - **Windows &gt; SCEP-tanúsítványprofil (Windows 8.1 és újabb)**
+    - **Windows &gt; SCEP-tanúsítványprofil (Windows Phone 8.1 és újabb)**
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
     > [!NOTE]
-    > 
-    > A **Tulajdonos nevének formátuma** **Egyéni** beállításának kiválasztásával egyéni nevet adhat meg a tulajdonosnak.
-    > 
-    >  Az egyéni formátum jelenleg két változót támogat: Egyszerű név (CN) és E-mail (E). A változók és a statikus sztringek együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre:
-    
+    >
+    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.
+    >
+    > Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:
+
     >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-    
-    >    A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a *CN* és az *E* változó mellett a Szervezeti Egység, Szervezet, Hely, Állam és Ország sztringjét is alkalmazza. A támogatott sztringek listáját az alábbi témakörben tekintheti meg: [CertStrToName-függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
-4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
+    > A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.
 
-Ekkor megjelenik az új házirend a **Házirend** munkaterületen, és készen áll a központi telepítésre.
+4.  Válassza a **Házirend mentése** elemet.
 
-##### .PFX-tanúsítványprofil létrehozásához
+Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 
-1.  Nyissa meg az [Intune felügyeleti konzolját](https://manage.microsoft.com), és kattintson a **Házirend** &gt; **Házirend hozzáadása** elemre.
+### .PFX-tanúsítványprofil létrehozásához
 
-2.  Konfigurálja a következő házirendtípusok egyikét:
-
-
-
--   **Android &gt; .PFX-tanúsítványprofil (Android 4 és újabb)**
-
-    -   **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows 10 és újabb)**
-
-    -   **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows Phone 10 és újabb)**
-
-    -    **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 7.1 és újabb)**    
-
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
+2.  Adja hozzá a következő házirend-típusok valamelyikét:
+  - **Android &gt; .PFX-tanúsítványprofil (Android 4 és újabb verziók)**
+  - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows 10 és újabb verziók)**
+  - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows Phone 10 és újabb verziók)**
+  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 7.1 és újabb)**    
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3.  Adja meg a házirendűrlapon kért adatokat.
+4.  Válassza a **Házirend mentése** elemet.
 
-3.  Adja meg a tanúsítványűrlapon kért adatokat.
-
-4.  Ha elkészült, kattintson a **Házirend mentése**gombra.
-
-Ekkor megjelenik az új házirend a **Házirend** munkaterületen, és készen áll a központi telepítésre.
+Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 
 ## Tanúsítványprofilok központi telepítése
-A tanúsítványprofilok telepítésekor a rendszer telepíti a megbízható hitelesítésszolgáltatói tanúsítványprofilból származó tanúsítványfájlt az eszközökre, és az eszközök létrehoznak egy tanúsítványkérelmet az SCEP- vagy a .PFX-tanúsítványprofil segítségével.
+A tanúsítványprofilok központi telepítésekor a megbízható hitelesítésszolgáltatói tanúsítványprofilból származó tanúsítványprofil települ az eszközön. Az eszköz az SCEP- vagy a .PFX-tanúsítványprofilt használja tanúsítványkérelem létrehozására.
 
-A tanúsítványprofilok csak a megfelelő eszközökre települnek, a profil létrehozásakor használt platformtípus alapján.
+A tanúsítványprofilok csak a profil létrehozásakor használt platformot futtató eszközökön települnek.
 
--   A tanúsítványprofilokat telepítheti felhasználócsoportokra és eszközcsoportokra is.
+-   Tanúsítványprofilokat telepíthet felhasználógyűjteményekre és eszközgyűjteményekre is.
 
     > [!TIP]
-    > Ahhoz, hogy a tanúsítványok gyorsan meg tudjanak jelenni az eszközökön az eszközök regisztrálása után, ajánlott felhasználócsoporthoz való telepítést választani a tanúsítványprofilhoz (az eszközcsoporthoz való telepítés helyett). Ha eszközcsoportra telepít, akkor teljes eszközregisztráció szükséges, mielőtt az eszköz megkaphatná a házirendet.
+    > Ahhoz, hogy a tanúsítványok gyorsan megjelenjenek az eszközökön azok regisztrálását követően, a tanúsítványprofilt felhasználócsoportra és ne eszközcsoportra telepítse. Ha eszközcsoportra telepít, akkor teljes eszközregisztráció szükséges, mielőtt az eszköz megkaphatná a házirendeket.
 
--   Az egyes profilok telepítése ugyan külön történik, de a megbízható főtanúsítvány-profilt és az SCEP/.PFX-profilt egyaránt telepítenie kell, különben az SCEP/.PFX-tanúsítási házirend alkalmazása sikertelen lesz.
+-   Jóllehet az egyes profilokat külön-külön telepíti, a legfelső szintű hitelesítésszolgáltató és az SCEP- vagy .PFX-profil telepítésére is szükség van. Ellenkező esetben az SCEP- vagy .PFX-tanúsítványházirend hibát fog jelezni.
 
-A tanúsítványprofilok központi telepítése ugyanúgy zajlik, mint az Intune más házirendjeinek telepítése.
+A tanúsítványprofilok központi telepítése ugyanúgy zajlik, mint az Intune egyéb házirendjeinek telepítése:
 
-1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése**lehetőségre.
-
+1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 2.  A **Telepítések kezelése** párbeszédpanelen:
+    -   **A szabályzat telepítéséhez** válasszon ki egy vagy több olyan csoportot, amelyhez telepíteni szeretné a szabályzatot, majd válassza a **Hozzáadás**&gt;**OK** lehetőséget.
+    -   **A párbeszédpanel telepítés nélkül történő bezárásához** kattintson a **Mégse** gombra.
 
-    -   **A szabályzat telepítése** – Válasszon ki egy vagy több olyan csoportot, amelynek telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** &gt; **OK** gombra.
+Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat a telepítésről.
 
-    -   **A párbeszédpanel bezárása telepítés nélkül** – Kattintson a **Mégse** gombra.
+### További lépések
 
-Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
-###  További lépések
-
-Ezt követően a tanúsítványok segítségével biztonságosabbá teheti az e-mail-, Wi-Fi- és VPN-profilok használatát:
+Ezt követően megtudhatja, hogy a tanúsítványok segítségével hogyan teheti biztonságossá az e-mail, Wi-Fi és VPN-profilokat.
 
 -  [Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md)
@@ -165,6 +136,6 @@ Ezt követően a tanúsítványok segítségével biztonságosabbá teheti az e-
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

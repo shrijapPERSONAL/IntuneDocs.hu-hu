@@ -4,7 +4,7 @@ description: "Az ebben a témakörben található információk segítségével 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# A Microsoft Intune szabályzatainak ismertetése
+# A Microsoft Intune konfigurációs szabályzatainak ismertetése
 
 Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik konfigurációs szabályzatát használja eszközeinek felügyeletére.
 
@@ -74,7 +74,7 @@ Csak a Windows Phone-ra és a regisztrált Windows-eszközökre vonatkozik.
 |---------------|------------------------|
 |**Egyéni konfiguráció (Windows 10 és újabb asztali és mobil rendszerek)**|Az eszközfunkciók szabályzásához használható OMA-URI beállítások megadása. Ez akkor hasznos, ha a szükséges beállítás nem érhető el egy konfigurációs szabályzatban.<br />    Részletekért lásd: [A Windows 10 szabályzatbeállításai a Microsoft Intune-ban](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Egyéni konfiguráció (Windows Phone 8.1 és újabb rendszerek)**|Az eszközfunkciók szabályzásához használható OMA-URI beállítások megadása. Ez akkor hasznos, ha a szükséges beállítás nem érhető el egy konfigurációs szabályzatban.<br /><br />Részletekért lásd: [A Windows Phone 8.1 beállításai a Microsoft Intune-ban](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Kiadásfrissítési házirend (Windows 10-es és újabb asztali verziók)**<br><br>**Kiadásfrissítési házirend (Windows 10 Holographic és újabb verziók)**|Konfigurálhatja és telepítheti a licenc- vagy termékkulcsadatokat tartalmazó szabályzatokat, amelyekkel újabb verzióra frissítheti a Windows 10-eszközöket.<br><br>Részletekért lásd: [A kiadásfrissítési házirend beállításai a Microsoft Intune-ban](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Kiadásfrissítési házirend (Windows 10-es és újabb asztali verziók)**<br><br>**Kiadásfrissítési házirend (Windows 10 Holographic és újabb verziók)**<br><br>**Kiadásfrissítési házirend (Windows 10 Mobile és újabb verziók)**|Konfigurálhatja és telepítheti a licenc- vagy termékkulcsadatokat tartalmazó szabályzatokat, amelyekkel újabb verzióra frissítheti a Windows 10-eszközöket.<br><br>Részletekért lásd: [A kiadásfrissítési házirend beállításai a Microsoft Intune-ban](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**E-mail profil (Windows Phone 8 és újabb)**<br /><br />**E-mail profil (Windows 10 és újabb asztali és mobil rendszerek)**|A felügyelt eszközökön létrehozhatja, telepítheti és figyelheti az Exchange Active Sync e-mail-beállításait. A felhasználók így külön beállítások elvégzése nélkül férhetnek hozzá vállalati levelezésükhöz saját eszközeiken.<br /><br />Részletekért lásd: [Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Általános konfiguráció (Windows 10 és újabb asztali és mobil rendszerek)**|Regisztrált Windows 10-alapú asztali és mobileszközök biztonsági és működési beállításainak konfigurálása.<br /><br />Részletekért lásd: [A Windows 10 szabályzatbeállításai a Microsoft Intune-ban](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Általános konfiguráció (Windows 10 és újabb rendszerek)**|Eszközvédelmi és funkcionális beállításokat konfigurálhat a regisztrált Windows 10 Team rendszerű eszközökhöz (például Surface Hub eszközhöz).<br /><br />Részletekért lásd: [A Windows Team konfigurációs házirendjének beállításai a Microsoft Intune-ban](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ Csak a Windows Phone-ra és a regisztrált Windows-eszközökre vonatkozik.
 > [!IMPORTANT]
 A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz minden eszközplatformhoz, és ezek a szabályzatok a legfrissebb használható beállításokat tartalmazzák. Továbbra is használhatja a mobileszközök biztonsági házirendjét, és minden meglévő telepítés továbbra is működni fog, de meg kell terveznie az új konfigurációs házirendekre való mielőbbi áttérést.<br />Részletekért lásd: [Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-ban](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
-## Feltételes hozzáférés és megfelelőségi házirendek
-
-### Feltételes hozzáférés
-
-|Házirend neve|Alkalmazási helyzet|
-|---------------|------------------------|
-|**Exchange Online-házirend**<br /><br />**Helyszíni Exchange-házirend**|A Microsoft Exchange e-mail-elérésének kezelése olyan eszközökön, amelyeket nem az Intune felügyel, vagy amelyek nem felelnek meg a létrehozott megfelelőségi szabályzatnak.<br /><br />Részletekért lásd: [Az Exchange Online-hoz és az új dedikált Exchange Online-hoz való e-mail hozzáférés korlátozása a Microsoft Intune-nal](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**SharePoint Online-házirend**|A SharePoint Online hozzáférésének kezelése olyan eszközökön, amelyeket nem az Intune felügyel, vagy amelyek nem felelnek meg a létrehozott megfelelőségi szabályzatnak.<br /><br />Részletekért lásd: [A SharePoint Online-hoz való hozzáférés korlátozása a Microsoft Intune-nal](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype Vállalati verzió**|A Skype Vállalati verzió elérésének kezelése olyan eszközökön, amelyeket nem az Intune felügyel, vagy amelyek nem felelnek meg a létrehozott megfelelőségi szabályzatnak.<br /><br />Részletekért lásd: [A Skype Vállalati verzió elérésének korlátozása a Microsoft Intune-nal](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> Nem kell feltételes hozzáférési házirendeket telepítenie a felhasználók és eszközök számára. Elegendő a kívánt szabályzatot konfigurálnia, amely a szabályzatban meghatározott összes csoportra vonatkozik.
-
-### Megfelelőségi házirendek
-
-|Házirend neve|Alkalmazási helyzet|
-|---------------|------------------------|
-|**Megfelelőségi házirendek**|Lehetővé teszi egy eszköz megfelelőségi szintjének meghatározását, és jelentést készít a nem megfelelő eszközökről. Ezek a házirendek a feltételeken alapuló hozzáféréssel mérik fel azokat az eszközöket, amelyek esetében nem engedélyezhető a szolgáltatások hozzáférése.<br /><br />A részleteket lásd: [Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
-
-## Windows-számítógépek felügyelete
+## Házirendek az Intune-szoftverügyféllel felügyelt Windows rendszerű számítógépekhez
 
 |Házirend neve|Alkalmazási helyzet|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz mi
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

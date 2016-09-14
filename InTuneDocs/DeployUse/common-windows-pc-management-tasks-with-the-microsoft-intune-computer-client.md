@@ -1,6 +1,6 @@
 ---
 title: "A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Intune"
-description: "Az ebben a témakörben található feladatok áttekintésével megismerheti, hogyan felügyelheti az Intune-számítógépügyfelet futtató számítógépeket."
+description: "Az ebben a témakörben található feladatok áttekintésével megismerheti, hogyan felügyelheti az Intune-szoftverügyfelet futtató Windows rendszerű számítógépeket."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai
-Az ebben a témakörben található feladatok áttekintésével megismerheti, hogyan felügyelheti az Intune-számítógépügyfelet futtató számítógépeket. Ha még nem telepítette az ügyfelet a számítógépeken, olvassa el [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című cikket.
+# A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai
+Az ebben a témakörben található feladatok áttekintésével megismerheti, hogyan felügyelheti az Intune-szoftverügyfelet futtató számítógépeket. Ha még nem telepítette az ügyfelet a számítógépeken, olvassa el [Az Intune-szoftverügyfél telepítése](install-the-windows-pc-client-with-microsoft-intune.md) című cikket.
 
 
 ## A számítógépek felügyelete szabályzatok használatával egyszerűsíthető
-### A Windows tűzfal felügyelete
-A házirendek egyszerűbbé teszik a Windows tűzfal beállításainak adminisztrációját a felügyelt számítógépeken. Részletekért olvassa el [A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával a Microsoft Intune-ban](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) című cikket.
+
+Az Intune-szoftverügyfelet futtató Windows rendszerű számítógépek az Intune **Számítógép-kezelési** szabályzatai segítségével felügyelhetők.
+
+![Szabályzatsablon Windows rendszerű számítógépekhez](../media/pc_policy_template.png)
 
 ### A Microsoft Intune Center felügyelete
-A Microsoft Intune Center a következőket teszi lehetővé a felhasználók számára:
+A felhasználók számára az Intune-szoftverügyfél az **Microsoft Intune Center** formájában jelenik meg. A Microsoft Intune Center a következőket teszi lehetővé a felhasználók számára:
 
 -   alkalmazások beszerzése a vállalati portálról;
 
@@ -49,11 +51,14 @@ A Microsoft Intune Center minden felügyelt számítógépre telepítve van. Az 
 |**Webhely URL-címe**|A támogatási webhely URL-címe.<br /><br />Maximális hossz: 150 karakter|
 |**Megjegyzések**|A felhasználóknak megjelenített megjegyzés.<br /><br />Maximális hossz: 120 karakter|
 
-### Szoftverfrissítések beállításainak kezelése
-Házirendek használata azon beállítások konfigurálásához, amelyeket a felügyelt számítógépek a Microsofttól és külső gyártóktól származó frissítések kereséséhez és letöltéséhez használnak. További információt a [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) című cikkben találhat.
+## Szoftverfrissítések beállításai
+Házirendek használata azon beállítások konfigurálásához, amelyeket a felügyelt számítógépek a Microsofttól és külső gyártóktól származó frissítések kereséséhez és letöltéséhez használnak. Ezek a frissítések nem tartalmazzák az operációs rendszer frissítéseit (pl. frissítés Windows 7-ről Windows 10-re vagy a Windows 10 frissítése egy újabb verzióra). További információt a [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) című cikkben találhat.
 
-### Endpoint Protection-beállítások felügyelete
+### Endpoint Protection-beállítások
 Szabályzatok használata az Endpoint Protection beállításainak konfigurálásához, amelyek később a felügyelt számítógépekre lesznek telepítve. Ez tartalmazza a vizsgálatütemezéseket, a kártevők észlelésekor végrehajtott műveleteket stb. További információt a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) című cikkben találhat.
+
+## A Windows tűzfal beállításai
+A házirendek egyszerűbbé teszik a Windows tűzfal beállításainak adminisztrációját a felügyelt számítógépeken. Részletekért olvassa el [A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával a Microsoft Intune-ban](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) című cikket.
 
 ## Hardver- és szoftverleltár megtekintése
 Az Intune részletes információkat gyűjt a felügyelt számítógépek hardvereiről és szoftvereiről. Az alábbi eljárásokban lévő információkból megtudhatja:
@@ -113,17 +118,17 @@ Az Intune részletes információkat gyűjt a felügyelt számítógépek hardve
 
 2.  Jelölje ki a kivonni kívánt eszközöket, majd válassza a **Kivonás/Összes adat törlése** elemet.
 
-Ha a számítógépet újból regisztrálni szeretné az Intune-ban, telepítse újra az ügyfélszoftvert a számítógépen [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben található információk segítségével.
+Ha a számítógépet újból regisztrálni szeretné az Intune-ban, telepítse újra az szoftverügyfelet a számítógépen [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben található információk segítségével.
 
 Ha a számítógép nem tud csatlakozni az Intune-hoz, egy üzenet jelenik meg az **Irányítópult** munkaterületen.
 
 A számítógép eltávolításakor:
 
--   A rendszer eltávolítja az Intune-felügyeletből és -leltárból, és a számítógéphez társított licenc ismét felhasználhatóvá válik. A Kivonás/Összes adat törlése elemre kattintva a rendszer eltávolítja az Intune ügyfélszoftvert, de az alkalmazások és az adatok megmaradnak a számítógépen.
+-   A rendszer eltávolítja az Intune-felügyeletből és -leltárból, és a számítógéphez társított licenc ismét felhasználhatóvá válik. A Kivonás/Összes adat törlése elemre kattintva a rendszer eltávolítja az Intune ügyfélszoftvert, de az alkalmazások és az adatok megmaradnak a számítógépen. A kivonás nem hajt végre teljes törlést a számítógépen.
 
 -   Az állapota már nem jelenik meg az Intune-konzolon.
 
--   Az Intune eltávolítja az ügyfélszoftvert a számítógépről. Ha a számítógép nincs csatlakoztatva az Intune-hoz, a rendszer a számítógép következő csatlakozásakor távolítja el az ügyfélszoftvert.
+-   Az Intune eltávolítja az szoftverügyfelet a számítógépről. Ha a számítógép nincs csatlakoztatva az Intune szolgáltatáshoz, a rendszer a számítógép következő csatlakozásakor távolítja el a szoftverügyfelet.
 
 -   Megtörténik a Microsoft Intune Endpoint Protection eltávolítása a számítógépről. Ha a számítógépre telepítve van egy másik végponti alkalmazás, és le van tiltva, akkor az alkalmazás a Microsoft Intune Endpoint Protection eltávolítása után újból engedélyezhető a számítógépek védelmének biztosításához.
 
@@ -160,9 +165,9 @@ Mielőtt szoftvereket telepítene egy felhasználónak, a felhasználót egy sz�
 > [!TIP]
 > Ha korlátozni szeretné végfelhasználókat abban, hogy önmagukat számítógépekkel kössék össze, engedélyezze **A felhasználók korlátozása abban, hogy önmagukat számítógépekhez csatolhassák** beállítást A **Microsoft Intune-ügynök beállításai** házirendben.
 
-## Távsegítség kérése és biztosítása az Intune ügyfélszoftverét használó Windows-számítógépeken
+## Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
 
-A Microsoft Intune a [TeamViewer](https://www.teamviewer.com) szoftver segítségével távsegítséget biztosíthat azon felhasználók számára, akiknek a számítógépén fut az Intune ügyfélszoftvere. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást.
+A Microsoft Intune a külön megvásárolható [TeamViewer](https://www.teamviewer.com) szoftver segítségével képes lehetővé tenni, hogy az Intune-szoftverügyfelet futtató számítógépek felhasználói távsegítséget kapjanak Öntől. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást.
 Ez a funkció az Intune jelenlegi Windows Távsegítség szolgáltatását cseréli le.
 
 
@@ -211,6 +216,6 @@ A **TeamViewer** ablakának **Műveletek** menüjében válassza a **Munkamenet 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 
