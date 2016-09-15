@@ -4,17 +4,17 @@ description: "Ebből a témakörből megtudhatja, hogyan segíthet az Intune kez
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 |iOS-mobilalkalmazás konfigurálása|A mobilalkalmazás-konfigurációs szabályzatokkal automatikusan megadhatja azokat a beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy iOS-alkalmazást futtat. Előfordulhat például, hogy az alkalmazás portszám vagy bejelentkezési beállítások megadását kéri a felhasználótól. Ezzel leegyszerűsíthető az alkalmazások konfigurálása, és csökkenthető a segélyszolgálatra beérkező hívások száma.|[iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS-mobilalkalmazás létesítési profiljai|Segít létesítési profilokat telepíteni a lejárathoz közelítő iOS-alkalmazásokhoz. |[Az iOS-mobileszközös létesítésiprofil-szabályzatok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Felügyelt böngésző|Konfigurálja a felügyeltböngésző-szabályzatokat, amelyekkel szabályozható, hogy az eszköz felhasználói mely webhelyeket látogathatják meg. Emellett mobilalkalmazás-kezelési házirendeket is alkalmazhat a felügyelt böngészőre.|[Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Lehetővé teszi az integrációt a Microsoft Passport for Work nevű, a Windows 10-ben használható alternatív bejelentkezési módszerrel. Ez a helyi Active Directoryt vagy az Azure Active Directoryt használja jelszó, intelligens kártya vagy virtuális intelligens kártya helyett.|[A Microsoft Passport beállításainak szabályozása az eszközökön a Microsoft Intune-nal](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Vállalati Windows Hello|Lehetővé teszi az integrációt a Vállalati Windows Hello nevű, a Windows 10-ben használható alternatív bejelentkezési módszerrel. Ez a helyi Active Directoryt vagy az Azure Active Directoryt használja jelszavak, intelligens kártyák vagy virtuális intelligens kártyák helyett.|[A Vállalati Windows Hello beállításainak szabályozása az eszközökön a Microsoft Intune-nal](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Mennyiségi licencszerződés keretében vásárolt alkalmazások|Segít a mennyiségi licencszerződés keretében vásárolt alkalmazások felügyeletében. Ehhez importálja a licencadatokat az App Store áruházból, figyelemmel kíséri, hogy hány licencet használt fel, és meggátolja, hogy több alkalmazáspéldányt telepítsen, mint amennyit vásárolt.|[Mennyiségi programban vásárolt alkalmazások felügyelete a Microsoft Intune-nal](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Vállalati erőforrások elérése
 
@@ -70,6 +71,6 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

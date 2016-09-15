@@ -9,8 +9,9 @@
 ## [Eszközök regisztrálása](enroll-devices-in-microsoft-intune.md)
 ### [Felkészülés az eszközök Intune-beli regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS- és Mac-eszközök kezelése](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile és Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android-kezelés](set-up-android-management-with-microsoft-intune.md)
 #### [Windowsos eszközök kezelése ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile és Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Vállalati tulajdonú eszközök kezelése](manage-corporate-owned-devices.md)
 #### [A vállalat által birtokolt iOS-eszközök regisztrálása](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Regisztrálás az iOS-alapú Beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [MAM-szabályzatok létrehozása és telepítése](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM-szabályzatok Android rendszerhez](android-mam-policy-settings.md)
 #### [MAM-szabályzatok iOS rendszerhez](ios-mam-policy-settings.md)
+#### [MAM-szabályzatok ellenőrzése](validate-mobile-application-management.md)
 #### [Szabályzatoknak való megfelelés figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS-alkalmazások közti adatátvitel kezelése](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [A végfelhasználói folyamat](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

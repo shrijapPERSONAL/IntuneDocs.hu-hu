@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal
-Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését.
+# Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
+A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítésével regisztrálhatók. Az Intune-ügyfélszoftver a következő módokon telepíthető:
 
-## Előkészületek
-Az Intune-ügyfélszoftver telepítésének megkezdése előtt olvassa el [A GPO- és Microsoft Intune-házirendek ütközéseinek feloldása](resolve-gpo-and-microsoft-intune-policy-conflicts.md) című témakört, melyből megtudhatja, milyen körülményeket kell biztosítani az ügyfél megfelelő telepítéséhez, majd térjen vissza ehhez az útmutatóhoz.
+- Manuális telepítéssel
+- Csoportházirendet használó telepítéssel
+- Lemezkép részeként történő telepítéssel
+- Felhasználók általi telepítéssel
 
-## Az ügyfél telepítése
-Az alábbi lépésekkel telepítheti be az ügyfelet:
+## Az Intune-ügyfélszoftver letöltése
 
--   [Az ügyfélszoftver letöltése](#to-download-the-client-software)
-
-Ezután az alábbi módszerek közül egy vagy több alkalmazásával telepítheti az ügyfelet:
-
--   [Az ügyfélszoftver manuális telepítése](#to-manually-deploy-the-client-software)
-
--   [Az ügyfélszoftver automatikus telepítése a Csoportházirenddel](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való kezelésére, kivonhatja a számítógépet. Ezzel egyben az ügyfélszoftvert is eltávolítja a számítógépről. További információ: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### Az ügyfélszoftver letöltése
+A maguk a felhasználók által végzett telepítés esetét kivéve valamennyi módszerhez le kell tölteni a szoftvert ahhoz, hogy központilag lehessen telepíteni.
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Felügyelet** &gt; **Ügyfélszoftver letöltése** lehetőségre.
 
-  ![Az Intune-számítógépügyfél letöltése](./media/pc-SA-client-download.png)
+  ![Az Intune-számítógépügyfél letöltése](../media/pc-sa-client-download.png)
 
 2.  Az **Ügyfélszoftver letöltése** lapon kattintson az **Ügyfélszoftver letöltése** lehetőségre, majd mentse a szoftvert tartalmazó **Microsoft_Intune_Setup.zip** csomagot egy biztonságos helyre a hálózaton.
 
@@ -56,14 +45,14 @@ Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való
     > [!IMPORTANT]
     > Ne nevezze át vagy távolítsa el a kibontott **ACCOUNTCERT** fájlt, különben az ügyfélszoftver telepítése sikertelen lesz.
 
-### Az ügyfélszoftver manuális telepítése
+## Központi telepítés manuálisan
 
 1.  Az adott számítógépen keresse meg az ügyfélszoftver telepítési fájljait tartalmazó mappát, és futtassa a **Microsoft_Intune_Setup.exe** fájlt az ügyfélszoftver telepítéséhez.
 
     > [!NOTE]
     > A telepítés állapota akkor jelenik meg, ha az ügyfélszámítógép tálcáján megjelenő ikonra mutat.
 
-### Az ügyfélszoftver automatikus telepítése a Csoportházirenddel
+## Telepítés csoportházirend használatával
 
 1.  A **Microsoft_Intune_Setup.exe** és a **MicrosoftIntune.accountcert** fájlt tartalmazó mappában futtassa a következő parancsot a 32 bites és 64 bites számítógépekhez készült Windows Installer-alapú telepítőprogramok kibontásához:
 
@@ -80,7 +69,7 @@ Ha már nincs szüksége egy számítógépnek az Intune szolgáltatással való
 
     A Csoportházirend szoftverek automatikus telepítésére való használatával kapcsolatban a Windows Server dokumentációjában találhat további információkat.
 
-### A Microsoft Intune-ügyfélszoftver telepítése rendszerkép részeként
+## Lemezkép részeként való telepítés
 Az Intune ügyfélszoftverét az alábbi példaeljárás alapján egy operációsrendszer-kép részeként is telepítheti a számítógépekre:
 
 1.  Az ügyfél telepítési fájljait, a **Microsoft_Intune_Setup.exe** és a **MicrosoftIntune.accountcert** fájlt másolja a **%Systemdrive%\Temp\Microsoft_Intune_Setup** mappába a referencia-számítógépen.
@@ -109,6 +98,12 @@ Amikor a célszámítógép a Windows telepítő befejezése után újraindul, l
 Amikor a következő ütemezett időpontban lefut az automatikus regisztrálási feladat, ellenőrzi, hogy létezik-e a **MicrosoftIntuneEnrollPending** beállításkulcs, és megkísérli regisztrálni a célszámítógépet az Intune szolgáltatásban. Ha a regisztráció bármilyen okból nem sikerül, a rendszer ismét megkísérli a regisztrációt a feladat következő futtatásakor. A próbálkozások egy hónapon keresztül ismétlődnek.
 
 Ha a regisztráció sikeres, vagy ha letelik az egy hónap, törlődik a célszámítógépről az automatikus Intune-regisztrálási feladat, a **WindowsIntuneEnrollPending** beállításkulcs és a fióktanúsítvány.
+
+## A felhasználó felkérése önálló regisztrálásra
+
+A felhasználók az Intune ügyfélszoftvert úgy tudják telepíteni, hogy megnyitják a [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) oldalt. Ha a portál észleli, hogy az eszköz egy Windows rendszerű számítógép, a rendszer megkéri a felhasználót, hogy regisztrálja a számítógépet az Intune-szoftverügyfél letöltésével. A letöltést követően a felhasználók a szoftver telepítésével vonhatják be a felügyelet alá a számítógépet.
+
+![Az Intune-portál kéri a felhasználót, hogy töltse le az Intune-szoftverügyfelet](../media/software-client-download.png)
 
 ## A sikeres ügyféltelepítés figyelése és ellenőrzése
 A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél sikeres telepítését.
@@ -139,6 +134,6 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

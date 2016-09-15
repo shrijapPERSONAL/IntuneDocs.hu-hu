@@ -4,7 +4,7 @@ description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök b
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Biztonsági másolat titkosításának engedélyezése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|
 |**Engedélyezi, hogy a felügyelt alkalmazások adatokat szinkronizáljanak az iClouddal**|Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.|
 |**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
+|**Fényképek iCloudban való megosztásának engedélyezése**|Az iOS megosztott fényképadatfolyam funkciója használatának engedélyezése.|
+|**iCloud-fotókönyvtár engedélyezése**|A fényképek iCloudban való tárolásának engedélyezése a felhasználó számára. Ha le van tiltva, akkor a már korábban az iCloudban tárolt fényképek is eltávolításra kerülnek.|
 
 ### Alkalmazásbeállítások a böngésző számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
@@ -99,14 +101,14 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
-|**Alkalmazástároló használatának engedélyezése**|Az alkalmazásáruház elérésének engedélyezése az eszköz számára.|
+|**Alkalmazások telepítésének engedélyezése**|Az alkalmazásáruház elérésének és alkalmazások telepítésének engedélyezése az eszköz számára.|
 |**Jelszó megkövetelése az alkalmazástárolóhoz való hozzáféréshez**|A felhasználóktól jelszót kér, mielőtt hozzáférhetnének az alkalmazás-áruházhoz.|
 |**Alkalmazáson belüli vásárlás engedélyezése**|A futó alkalmazásokból történő áruházi vásárlások engedélyezése.|
 |**Felügyelt dokumentumok engedélyezése egyéb, nem felügyelt alkalmazásokban**|A vállalati dokumentumok bármely alkalmazásban való megtekintésének engedélyezése.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), a továbbiakban nem engedélyezi a mentést.|
 |**Nem felügyelt dokumentumok engedélyezése egyéb, felügyelt alkalmazásokban**|Bármely dokumentum felügyelt vállalati alkalmazásokban való megtekintésének engedélyezése.|
 |**Videokonferenciák engedélyezése**|Videokonferencia-alkalmazások, például a Facetime engedélyezése az eszközön.|
-|**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|
-|**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az „erotikus tartalom” kategóriába sorolt könyvek letöltésének engedélyezése a felhasználó számára.|
+|**Új vállalati alkalmazások szerzői megbízhatóként való kezelésének engedélyezése**|Nem az alkalmazásáruházból letöltött alkalmazásokban való megbízás lehetőségének engedélyezése a felhasználó számára.|
+
 
 ### Alkalmazásbeállítások a játékok számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
@@ -116,12 +118,23 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Game Centerbeli ismerősök felvételének engedélyezése**|Barátok hozzáadásának engedélyezése a Game Center alkalmazásban a felhasználó számára.|
 |**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|
 
+### Médiatartalmakra vonatkozó alkalmazásbeállítások
+Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+
+|Beállítás neve|Részletek|
+|----------------|-------|
+|**Minősítési régió**|Válasszon régiót, majd válassza ki azt a maximális korhatár-besorolást, amellyel **filmeket**, **tévéműsorokat** és **alkalmazásokat** tölthetnek le a felhasználók.|
+|**Felnőtt tartalom engedélyezése a médiatárban**|Felnőttnek minősített áruházi tartalom elérésének engedélyezése az eszköz számára.|
+|**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az „erotikus tartalom” kategóriába sorolt könyvek letöltésének engedélyezése a felhasználó számára.|
+
+
 ### Eszközképességek beállításai a hardver számára
 Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
 |**Kamera használatának engedélyezése**|Meghatározza, hogy használható-e az eszközön a kamera.|
+|**A párosított Apple Watch órák kényszerítése csuklóérzékelés használatára**|Ha ez a beállítás engedélyezve van, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik.|
 |**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Párosítási jelszó kérése, ha a felhasználó az AirPlay segítségével tartalmat kíván közvetíteni egyéb Apple-eszközökre.|
 
 ### Eszközképességek beállításai a mobilhálózat számára
@@ -141,6 +154,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Siri engedélyezése**|A Siri beszédfelismerési asszisztens használatának engedélyezése az eszközön.|
 |**Siri zárolt eszközön való használatának engedélyezése**|A Siri beszédfelismerési asszisztens eszközzárolás alatti használatának engedélyezése az eszközön.|
 |**Hangtárcsázás engedélyezése**|A hangtárcsázási funkció engedélyezése az eszközön.|
+|**Az Airdrop szolgáltatás a felügyelt alkalmazásokból való használatának tiltása**|A felügyelt alkalmazásokból az Airdrop szolgáltatással való adatküldés lehetőségének letiltása.|
 
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
@@ -214,24 +228,55 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |----------------|--------------------|
 |**Az aktiválási zár engedélyezése, ha az eszköz felügyelt módban van**|Aktiválási zár engedélyezése felügyelt iOS-eszközökön.|
 
-### Felügyelet
+### A felügyelt mód beállításai
 Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy újabb verzióját futtató eszközökön konfigurálhatja.
+
+### A felügyelt mód eszközkorlátozásokra vonatkozó beállításai
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
 |**Fiók módosításának engedélyezése**|Engedélyezi, hogy a felhasználó megváltoztassa a fiók beállításait, például az e-mail-konfigurációkat.|
-|**AirDrop engedélyezése**|Az AirDrop funkció használatának engedélyezése a közeli eszközökkel való tartalomcseréhez.|
 |**Alkalmazás mobiladatátvitel-használati beállításai módosításának engedélyezése**|Engedélyezi, hogy a felhasználó szabályozza, melyik alkalmazások bonyolíthatnak le mobilhálózati adatforgalmat.|
-|**Felhasználók által létrehozott tartalom lekérésének engedélyezése Siri számára az internetről**|Engedélyezi, hogy a Siri kérdések megválaszolása céljából hozzáférjen webhelyekhez.|
-|**Az iBooks áruház elérésének engedélyezése**|Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.|
-|**A Barátok alkalmazás beállításai módosításának engedélyezése**|Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.|
 |**Az összes tartalom és beállítás törlésére szolgáló funkció használatának engedélyezése az eszközön**|Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.|
 |**A korlátozások bekapcsolásának engedélyezése a felhasználó számára az eszközbeállítások között**|Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) állítson be az eszközön.|
-|**Internetes eredmények visszaadásának engedélyezése a Spotlight kereső számára**|Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, hogy további találatokat adjon vissza.|
-|**A Game Center alkalmazás használatának engedélyezése**|A Game Center alkalmazás használatának engedélyezése.|
-|**Az iOS-alapú eszközzel párosítható eszközök szabályozásának engedélyezése a gazdapárosítási (host pairing) funkció számára**|A gazdapárosítási (host pairing) funkcióval a rendszergazda szabályozhatja, hogy az iOS 7-alapú eszköz milyen eszközökkel legyen párosítható.|
+|**Az iOS-alapú eszközzel párosítható eszközök szabályozásának engedélyezése a gazdapárosítási (host pairing) funkció számára**|Annak engedélyezése a gazdapárosítási (host pairing) funkció számára, hogy lehetővé tegye az iOS-alapú eszközzel párosítható eszközök szabályozását a rendszergazda számára.|
 |**Konfigurációs profilok és tanúsítványok telepítésének engedélyezése a felhasználó számára**|Engedélyezi, hogy a felhasználó konfigurációs profilokat és tanúsítványokat telepítsen.|
+|**Eszköznév módosításának engedélyezése**|Engedélyezi a felhasználó számára, hogy módosítsa az eszköz nevét.|
+|**PIN kód módosításának engedélyezése**|Az eszközjelszó hozzáadásának, módosításának vagy eltávolításának engedélyezése.|
+|**Apple Watch óra párosításának engedélyezése**|Az eszköz Apple Watch órával való párosításának engedélyezése.|
+|**Értesítési beállítások módosításának engedélyezése**|Engedélyezi a felhasználó számára, hogy módosítsa az eszköz értesítési beállításait.|
+|**Háttérkép módosításának engedélyezése**|Engedélyezi a felhasználó számára, hogy megváltoztassa az eszköz háttérképét.|
+
+### A felügyelt mód szolgáltatáskorlátozásokra vonatkozó beállításai
+
+|Beállítás neve|Részletek|
+|----------------|--------------------|
+|**AirDrop engedélyezése**|Az AirDrop funkció használatának engedélyezése a közeli eszközökkel való tartalomcseréhez.|
+|**Felhasználók által létrehozott tartalom lekérésének engedélyezése Siri számára az internetről**|Engedélyezi, hogy a Siri kérdések megválaszolása céljából hozzáférjen webhelyekhez.|
+|**Siri profanitásszűrőjének használata**|Megakadályozza, hogy a Siri durva kifejezéseket mondjon ki vagy elfogadja ilyenek diktálását.|
+|**Internetes eredmények visszaadásának engedélyezése a Spotlight kereső számára**|Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, hogy további találatokat adjon vissza.|
+|**Szómeghatározások keresésének engedélyezése**|Engedélyezi az iOS-funkciót, amellyel kijelölhet egy szót és megkeresheti annak meghatározását.|
+|**Prediktív billentyűzetek engedélyezése**|Engedélyezi a prediktív billentyűzetek használatát, amelyek javaslatokat tesznek a felhasználó által leírni kívánt szavakra.|
+|**Automatikus javítás engedélyezése**|Engedélyezi, hogy az eszköz automatikusan kijavítsa a hibásan leírt szavakat.|
+|**Billentyűzet helyesírás-ellenőrzésének engedélyezése**|Engedélyezi az eszköz helyesírás-ellenőrzőjének használatát.|
+|**Billentyűparancsok engedélyezése**|Engedélyezi a billentyűparancsok használatát.|
+
+### A felügyelt mód alkalmazáskorlátozásokra vonatkozó beállításai
+
+|Beállítás neve|Részletek|
+|----------------|--------------------|
+|**Vállalati alkalmazások megbízhatósági beállításai módosításának engedélyezése**||
+|**Alkalmazások telepítésének engedélyezése csak az Apple Configurator és az iTunes használatával**||
+|**Alkalmazások automatikus letöltésének engedélyezése**||
+|**A Barátok alkalmazás beállításai módosításának engedélyezése**|Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.|
+|**Az iBooks áruház elérésének engedélyezése**|Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.|
 |**Az Üzenetek alkalmazás használatának engedélyezése az eszközön**|Engedélyezi az Üzenetek alkalmazást a szöveges üzenetek küldéséhez.|
+|**Podcastok használatának engedélyezése**|A Podcastok alkalmazás használatának engedélyezése.|
+|**Music szolgáltatás használatának engedélyezése**|Az Apple Music alkalmazás használatának engedélyezése.|
+|**iTunes Radio szolgáltatás engedélyezése**|Az iTunes Radio alkalmazás használatának engedélyezése.|
+|**Apple News engedélyezése**|Az Apple News alkalmazás használatának engedélyezése.|
+|**Game Center engedélyezése**|A Game Center alkalmazás használatának engedélyezése.|
+
 
 ### Alkalmazások megjelenítése vagy elrejtése
 
@@ -337,6 +382,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

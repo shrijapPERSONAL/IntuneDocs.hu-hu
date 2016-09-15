@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Az eszköz manuális szinkronizálása a Vállalati portál webhelyének használatával
 
-Ha túl sokáig tart az alkalmazási telepítése, megpróbálkozhat az eszköz manuális szinkronizálásával, ez segíthet a telepítés felgyorsításában. Az alábbi utasítások közül azt kövesse, amely megfelel az Ön által használt eszköztípusnak vagy Windows-verziónak. Az eszköz szinkronizálása az alkalmazások telepítésének felgyorsításához csak az alább felsorolt verzióknál működik.
+Ha túl sokáig tart az alkalmazás telepítése vagy egy másik feladat, megpróbálkozhat az eszköz manuális szinkronizálásával; ez segíthet a telepítés vagy feladat felgyorsításában. Kövesse az Ön által használt eszköz típusának megfelelő utasításokat. 
+
+A szinkronizálási funkció csak az alábbi verziójú eszközök esetében működik:
 
 * [Windows 10 mobil verzió](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 asztali verzió](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ Ha túl sokáig tart az alkalmazási telepítése, megpróbálkozhat az eszköz 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

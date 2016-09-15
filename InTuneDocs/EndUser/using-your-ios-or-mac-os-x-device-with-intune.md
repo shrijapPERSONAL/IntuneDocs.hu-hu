@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Ebben a cikkben minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat különböző kategóriákba csoportosítottuk: 
-- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban 
+Ebben a cikkben minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. Ezeket a következő kategóriákba csoportosítottuk:
+- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 - Eszközregisztráció utáni felügyeleti feladatok
 - Megfelelőségi problémák
 
@@ -38,7 +38,7 @@ Az itt olvasható információk az Intune Vállalati portál telepítésében é
 
 ## Az Intune-ban regisztrált eszközökön végezhető műveletek
 
-Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálását követően elvégezhető műveletekhez nyújtanak segítséget.
+A jelen szakaszban található információk az iOS-eszköz Intune-beli regisztrálását követően elvégezhető műveletekhez nyújtanak segítséget.
 
 - [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 - [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
@@ -64,6 +64,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 02287eb01598c28906045fd8def9e8b4660e3da5
-ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
+ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
+ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
 
 
 ---
@@ -29,70 +29,72 @@ Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása:
 
 1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
 
-    ![settings-accounts](./media/w10-enroll-rs1-settings-accounts.png)
+    ![Windows Gépház](./media/w10-enroll-rs1-settings-accounts.png)
 
 2.  A következő két képernyő közül válassza ki azt, amelyen ugyanaz látszik, mint az eszközön. Hajtsa végre a kiválasztott képernyőhöz tartozó lépéseket.
 
-    Ha ezt a képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](#steps-to-follow-if-you-see-access-work-or-school) részben leírt lépéseket.
+    Ha ezt a képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](#steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
 
-    ![connect-to-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Csatlakozás munkahelyi vagy iskolai rendszerhez](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
     Ha ezt a képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Saját fiók](#steps-to-follow-if-you-see-your-account) részben leírt lépéseket.
 
-    ![your-account](./media/w10-enroll-2-accounts-your-account.png)
+    ![Saját fiók](./media/w10-enroll-2-accounts-your-account.png)
 
 ## Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
 1.  Koppintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** elemre.
 
-    ![tap-access-work-school-account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Koppintson a Hozzáférés munkahelyi vagy iskolai fiókhoz lehetőségre](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2.  Írja be a munkahelyi vagy iskolai e-mail címét és koppintson a **Tovább** elemre.
+2.  Adja meg a munkahelyi vagy iskolai e-mail címét és koppintson a **Tovább** elemre.
 
-    ![enter-your-work-or-school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+    ![Adja meg a munkahelyi vagy iskolai fiókját](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
 3. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával.
 
-    ![add-work-school-account](./media/w10-enroll-rs1-enter-your-credentials.png)
+    ![Munkahelyi vagy iskolai fiók beállítása](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Ekkor megjelenik egy üzenet arról, hogy a munkahely vagy iskola regisztrálja az eszközt.
 
-4. Amikor megjelenik a **Készen vagyunk!** oldal, koppintson a **Bezárás** elemre. Ezzel készen is van.
+4. Amikor megjelenik a **Készen vagyunk!** képernyő, koppintson a **Bezárás** elemre. Ezzel készen is van.
 
-  ![tap-close-on-you-are-all-set-screen](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Koppintson a bezárás elemre a „Készen vagyunk!” képernyőn](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. Ha szeretné még egyszer ellenőrizni, hogy a kapcsolat megfelelően működik, lépjen vissza a **Gépház** részbe és ellenőrizze, hogy munkahelyi vagy iskolai fiókja szerepel-e a listán.
+5. Ha szeretné még egyszer ellenőrizni, hogy a kapcsolat megfelelően működik-e, lépjen vissza a **Gépház** területre, ahol most már meg kell jelennie a listán a munkahelyi vagy iskolai fiókjának.
 
-    ![validate-that-connection-was-set-up-correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+    ![A kapcsolat megfelelő beállításának ellenőrzése](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mailjeihez és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
+Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail fiókjához és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
 
 
 ## Teendők, ha ezt látja: Saját fiók
 
 1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
 
-    ![go-to-settings-accounts](./media/W10-enroll-1-settings-accounts.png)
+    ![Lépjen be a Beállítások és fiókok munkaterületre](./media/W10-enroll-1-settings-accounts.png)
 
 2.  Koppintson a **Saját fiók** elemre.
 
-    ![tap-your-account](./media/W10-enroll-2-accounts-your-account.png)
+    ![Koppintson a Saját fiók elemre](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  Koppintson a **Munkahelyi vagy iskolai fiók beállítása** pontra.
 
-    ![add-work-or-school-account](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Koppintson a Munkahelyi vagy iskolai fiók beállítása pontra](./media/w10-enroll-3-add-work-school-acct.png)
 
 4.  Jelentkezzen be a munkahelyi vagy iskolai fiókjával.
 
     ![sign-in](./media/W10-enroll-4-sign-in.png)
 
-Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mailjeihez, fájljaihoz és egyéb adataihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Saját fiók](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) című részben leírt lépéseket.
+Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail címéhez, fájljaihoz és egyéb adataihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Saját fiók](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) című részben leírt utasításokat.
 
-Azt javasoljuk, hogy telepítse a Vállalati portál alkalmazást, mert azzal egyszerűen megismerheti és letöltheti az Ön és munkaköre szempontjából fontos vállalati alkalmazásokat. Attól függően, hogy vállalata hogyan konfigurálta az Intune-t, előfordulhat,  hogy a Vállalati portál alkalmazás már a regisztrációs folyamat részeként települt. Ha az alkalmazáslistában szerepel a **Vállalati portál**, akkor már megvan Önnek az alkalmazás. Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következő lépésekkel telepítheti.
+Azt javasoljuk, hogy telepítse a Vállalati portál alkalmazást, mert azzal egyszerűen megismerheti és letöltheti az Ön és munkaköre szempontjából fontos vállalati alkalmazásokat. Attól függően, hogy a vállalat hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál alkalmazás már a regisztrációs folyamat részeként települt.
+
+Ha az alkalmazáslistában szerepel a **Vállalati portál**, akkor már rendelkezik az alkalmazással. Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következő lépésekkel telepítheti.
 
 1.  Koppintson a **Start** &gt; **Áruház** parancsra.
 
-2.  Koppintson a **Keresés** elemre, és írja be a **vállalati portál** kifejezést.
+2.  Koppintson a **Keresés** elemre, majd írja be a **vállalati portál** kifejezést.
 
 3.  Az eredmények listájában koppintson a **Vállalati portál** &gt; **Telepítés** lehetőségre.
 
@@ -100,11 +102,10 @@ Azt javasoljuk, hogy telepítse a Vállalati portál alkalmazást, mert azzal eg
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-### További információ
-[Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 
