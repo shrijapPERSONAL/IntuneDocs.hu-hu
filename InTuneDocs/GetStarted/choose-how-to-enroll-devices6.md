@@ -13,8 +13,8 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 6fc98df3df19e8858e60427f3b0bfd44c4f4b17d
-ms.openlocfilehash: dbdd2649ed565efffe50916c1dd661aac2ed38d8
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: ecc6834b18d7906633bf1a029f5d63a4432c4989
 
 
 ---
@@ -25,7 +25,7 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 ## **Hogyan kezelheti a dedikált, vállalati tulajdonú eszközöket?**
 
   > [!div class="button"]
-[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)   [iOS-alapú Beállítási asszisztens >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag with IMEI (Címkézés IMEI azonosítóval) >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)<br>[iOS beállítási asszisztens >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)<br>[Megjelölés IMEI-számokkal >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   A vállalati eszközök az alábbi módokon regisztrálhatók dedikált felhasználókkal:
 
@@ -40,6 +40,6 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

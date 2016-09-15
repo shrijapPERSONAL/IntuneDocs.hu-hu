@@ -4,7 +4,7 @@ description: "Az Intune segítségével megtekintheti a felügyelt eszközök ha
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával
 A Microsoft Intune leltárfunkcióját használva leltár készíthető a regisztrált eszközökről, illetve az Intune ügyfélszoftvert futtató Windows-számítógépekről.
+Az Intune általában 7 naponta készít leltárt a felügyelt eszközökről. Emiatt előfordulhat, hogy a jelentésekben késve jelenik meg az eszközök nemrégiben történt módosítása, pl. egy eszköz átnevezése vagy a szabad tárhelye mennyiségének változása.
 
 ## Milyen adatok gyűjthetők be a regisztrált eszközökről?
 A mobileszközök által összegyűjtött leltáradatok megtekintéséhez futtassa a [Mobileszközkészlet-jelentések](understand-microsoft-intune-operations-by-using-reports.md) funkciót. Az Intune az alábbi táblázatban szereplő leltáradatokat gyűjti össze a regisztrált eszközökről:
@@ -114,6 +115,6 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

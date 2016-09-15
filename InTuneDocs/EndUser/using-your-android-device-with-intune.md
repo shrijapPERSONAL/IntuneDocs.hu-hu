@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Android-eszköz használata az Intune-nal
 
-A jelen cikk minden, a végfelhasználók által az Intune által felügyelt eszközökön elvégezhető feladat hivatkozását tartalmazza. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat különböző kategóriákba csoportosítottuk: 
+A jelen cikk minden, a végfelhasználók által az Intune által felügyelt eszközökön elvégezhető feladat hivatkozását tartalmazza. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. A témákat a következő kategóriákba csoportosítottuk:
 
-- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban 
+- A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 - Eszközregisztráció utáni felügyeleti feladatok
 - Megfelelőségi problémák
 
 ## A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
 
-Az itt olvasható információk az Intune Vállalati portál telepítésében és az eszközök regisztrálásában nyújtanak segítséget Android-eszközök használata esetén.
+Az itt olvasható információk az Intune Vállalati portál telepítéséhez és az eszközök regisztrálásához nyújtanak segítséget Android-eszközök használata esetén.
 
 - [Eszköz regisztrálása az Intune-ban](enroll-your-device-in-Intune-android.md)
 - [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Az Intune-ban regisztrált eszközökön végezhető műveletek
 
-Az itt olvasható információk az Android-eszköz Intune-ban történő regisztrálását követően elvégezhető műveletekhez nyújtanak segítséget.
+Az itt olvasható információk az Android-eszközök Intune-beli regisztrálását követően elérhető műveletekhez nyújtanak segítséget.
 
 - [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-android.md)
 - [Az eszköz titkosítása](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ Az itt olvasható információk az Android-eszköz Intune-ban történő regiszt
 
 ## Az eszközzel kapcsolatos problémák megoldása
 
-Az itt olvasható információk az Android-eszköz Intune-ban történő regisztrálásakor előforduló hibák elhárításában nyújtanak segítséget.
+Az itt olvasható információk az Android-eszköz Intune-beli regisztrálásakor esetlegesen előforduló hibák elhárításában nyújtanak segítséget.
 
 - [Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ Az itt olvasható információk az Android-eszköz Intune-ban történő regiszt
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

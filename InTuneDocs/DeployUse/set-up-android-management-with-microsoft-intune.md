@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Android-eszközök kezelésének beállítása
-Android-eszköz beállításához [itt](../enduser/using-your-android-device-with-intune.md) talál segítséget.
-
-A Microsoft Intune segítségével lehetővé teheti a saját Android-eszközök használatát (BYOD) anélkül, hogy ehhez Önnek bármit tennie kellene azon a platformon.
-
-További információkért válassza a kívánt eszközplatformot ismertető cikket:
-
-> [!div class="op_single_selector"]
-- [Androidos eszközök Microsoft Intune-beli kezelésének beállítása](set-up-android-management-with-microsoft-intune.md)
-- [Az iOS kezelésének beállítása a Microsoft Intune-nal](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Windowsos eszközök Microsoft Intune-beli kezelésének beállítása](set-up-windows-device-management-with-microsoft-intune.md)
-
-Az Android rendszerű mobileszközök lehetővé teszik, hogy a felhasználók a Google Play áruházban elérhető Vállalati portál alkalmazással regisztráljanak. Az alábbi lépések elvégzésével engedélyezheti a felhasználóknak, hogy regisztrálják az eszközeiket az Intune-ban.
+Intune-rendszergazdaként a Vállalati portálról engedélyezheti az Android-eszközök kezelését. A felhasználók így a Google Play áruházban elérhető Vállalati portál alkalmazással regisztrálhatják eszközeiket.
 
 1.  **Az Intune beállítása**<br>
     Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
@@ -52,6 +40,6 @@ Az Android rendszerű mobileszközök lehetővé teszik, hogy a felhasználók a
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
