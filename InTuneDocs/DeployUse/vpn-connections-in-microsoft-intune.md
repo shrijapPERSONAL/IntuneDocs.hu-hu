@@ -4,7 +4,7 @@ description: "A VPN-profilok beállításával a szervezetében lévő felhaszn�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a 
 VPN-profilokkal a következő típusú eszközök konfigurálhatók:
 
 * Android 4 vagy újabb rendszerű eszközök
-* Az iOS 7.1-es vagy újabb rendszerű eszközök
+* iOS 8.0 vagy újabb rendszerű eszközök
 * A Mac OS X 10.9-es vagy újabb rendszerű eszközök
 * A Windows 8.1-es vagy újabb verzióját futtató regisztrált eszközök
 * A Windows Phone 8.1-es vagy újabb verzióját futtató eszközök
@@ -45,6 +45,8 @@ Az Intune a következő kapcsolattípusokat használó VPN-profilok létrehozás
 Kapcsolat típusa |iOS és Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|A Windows 10 asztali és mobilverziója |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Igen |Igen   |Nem    |     Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
+Cisco (IPsec)|Igen |Nem   |Nem  |  Nem|Nem  |Nem | Nem|
+Citrix|Igen |Nem   |Nem  |  Nem|Nem  |Nem | Nem|
 Pulse Secure|Igen  |Igen |Igen   |Nem  |Igen  |Igen| Igen|        
 F5 Edge Client|Igen |Igen |Igen |Nem  |Igen  |   Igen |  Igen|   
 Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Nem  |Igen |Igen |Igen|         
@@ -83,7 +85,7 @@ A felhasználó a VPN-kiszolgálón felhasználónév és jelszó megadásával 
 1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** > **Házirend hozzáadása** lehetőséget.
 2. Válasszon sablont az új szabályzathoz a megfelelő eszköztípus kibontásával, majd válasszon VPN-profilt az eszköznek:
     * **VPN-profil (Android 4 és újabb)**
-    * **VPN-profil (iOS 7.1 és újabb)**
+    * **VPN-profil (iOS 8.0 és újabb)**
     * **VPN-profil (Mac OS X 10.9 és újabb verziók)**
     * **VPN-profil (Windows 8.1 és újabb verziók)**
     * **VPN-profil (Windows Phone 8.1 és újabb)**
@@ -111,6 +113,7 @@ Beállítás neve  |További információ
 **Bejelentkezési csoport vagy tartomány**|Adja meg annak a bejelentkezési csoportnak vagy tartománynak a nevét, amelyhez csatlakozni szeretne. Ez a beállítás csak akkor látható, ha a kapcsolat típusa **Dell SonicWALL Mobile Connect**.
 **Ujjlenyomat**|Adjon meg egy sztringet (például „Contoso ujjlenyomatkód”), amelyet a rendszer a VPN-kiszolgáló megbízhatóságának ellenőrzésére fog használni. Az ujjlenyomatok elküldhetők az ügyfélprogramnak, így az tudni fogja, hogy megbízhat-e az azonos ujjlenyomattal rendelkező kiszolgálókban a csatlakozáskor. Ha az eszköz még nem rendelkezik ujjlenyomattal, akkor arra fogja kérni a felhasználót, hogy bízzon meg a VPN-kiszolgálóban, amelyhez csatlakozik, miközben megjeleníti az ujjlenyomatot. (A felhasználó manuálisan ellenőrizheti az ujjlenyomatot, majd a **Megbízom benne** lehetőségre kattintva csatlakozhat.) Ez a beállítás csak akkor látható, ha a kapcsolat típusa **CheckPoint Mobile VPN**.
 **Alkalmazásonkénti VPN**|Ha a VPN-kapcsolatot egy iOS- vagy Mac OS X-alkalmazással társítaná, válassza ezt a lehetőséget. A rendszer ezt a kapcsolatot fogja megnyitni az alkalmazás futtatásakor. A VPN-profilt a szoftver telepítésekor társíthatja egy alkalmazással. További információk: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
+**Igény szerinti VPN**|Igény szerinti VPN-t iOS 8.0 vagy újabb rendszerű eszközökhöz állíthat be. A beállításra vonatkozó utasításokat az [Igény szerinti VPN iOS-eszközökhöz](#on-demand-vpn-for-ios-devices) című szakaszban találja.
 **Proxybeállítások automatikus észlelése** (csak iOS, Mac OS X, Windows 8.1 és Windows Phone 8.1 esetén)|Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e, ha az eszközök automatikusan észlelnék a kapcsolatbeállításokat. További információt a Windows Server dokumentációjában talál.
 **Automatikus konfigurációs szkript használata** (csak iOS, Mac OS X, Windows 8.1 és Windows Phone 8.1 esetén)|Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e egy automatikus konfigurációs szkripttel definiálni a beállításokat, majd adja meg a beállításokat tartalmazó fájl URL-címét. További információt a Windows Server dokumentációjában talál.
 **Proxykiszolgáló használata** (csak iOS, Mac OS X, Windows 8.1 és Windows Phone 8.1 esetén)|Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, válassza ezt a beállítást, majd adja meg a proxykiszolgáló címét és portszámát. További információt a Windows Server dokumentációjában talál.
@@ -141,6 +144,32 @@ Egy egyéni OMA-URI-beállítás létrehozásával a Windows 10-es eszközök VP
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
+### Igény szerinti VPN iOS-eszközökhöz
+Igény szerinti VPN-t iOS 8.0 vagy újabb rendszerű eszközökhöz konfigurálhat.
+
+> [!NOTE]
+>  
+> Alkalmazásonkénti VPN és igény szerinti VPN nem használható egyszerre ugyanabban a szabályzatban.
+ 
+1. A szabályzatkonfigurációs lapon keresse ki az **A VPN-kapcsolatra vonatkozó igény szerinti szabályok** elemet. Az oszlopok címkézése: **Egyezés** – a szabályok által figyelt feltétel, és **Művelet** – a feltétel teljesülése esetén a szabályzat által elindítandó művelet. 
+2. Új szabály létrehozásához válassza a **Hozzáadás** lehetőséget. A szabályban kétféle egyezéstípust állíthat be. Ugyanabban a szabályban csak egyféle típust konfigurálhat.
+  - Az **SSID-k** vezeték nélküli hálózatokra vonatkoznak. 
+  - A **DNS-keresési tartományok** .....  Használhatók teljesen minősített tartománynevek, amilyen például a *team. corp.contoso.com*, vagy használhat a *contoso.com*-hoz hasonló tartományneveket, amely megegyezik a * *.contoso.com használatával*.
+3. Nem kötelező: megadhat egy URL-sztringmintát is (a szabály által tesztként használt URL-t). Ha az eszköz, amelyen ez a profil telepítve van, átirányítás nélkül el tudja érni ezt az URL-címet, akkor létrejön a VPN-kapcsolat a célként megadott URL-címmel. A felhasználó nem látja a teszthez használt URL-célhelyet. URL-sztringmintaként meg lehet adni például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azlőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
+4. Válassza az alábbi műveletek egyikét:
+  - **Kapcsolódás**
+  - **Kapcsolat kiértékelése** - ennek háromféle beállítása van; a. **Tartományi művelet** – választhatja a **Szükség esetén kapcsolódás** vagy a **Soha ne legyen kapcsolódás** lehetőségeket
+    ; b. **Tartományok vesszővel elválasztott listája** – ezt csak akkor kell konfigurálnia, ha a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőséget választotta 
+    ; c. **Kötelező URL-sztringminta** – egy HTTP vagy HTTPS (javasolt) URL-cím, például *https://vpntestprobe.contoso.com*. Ez a szabály ellenőrzi, hogy érkezett-e válasz erről a címről. Ha nem érkezett, és a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőség lett kiválasztva, a VPN aktiválódik.
+     > [!TIP]
+     >
+     >Ez a művelet használható például akkor, ha a vállalati hálózat bizonyos helyei megkövetelik a közvetlen kapcsolatot vagy a vállalati VPN-kapcsolatot, mások azonban nem. Ha a **DNS-keresési tartományok vesszővel elválasztott listájában** megadta a *corp.contoso.com* címet, választhatja a **Csatlakozás szükség esetén** lehetőséget, majd megadhatja a hálózat azon helyeinek listáját, amelyek VPN-kapcsolatot követelnek meg, például *sharepoint.corp.contoso.com*. A szabály ellenőrzi, hogy a *vpntestprobe.contoso.com* elérhető-e. Ha nem érhető el, a VPN a Sharepoint-helyre vonatkozóan aktiválódik.
+  - **Figyelmen kívül hagy** – nem eredményez változást a VPN-kapcsolatokban. Ha van VPN-kapcsolat, az megmarad, ha nincs, akkor nem aktiválódik. Például létrehozhat egy olyan szabályt, amely VPN-kapcsolatot létesít minden belső vállalati webhelyre vonatkozóan, miközben egy meghatározott belső webhelyet csak akkor szeretne elérhetővé tenni, ha az illető eszköz ténylegesen csatlakozott a hálózathoz. Ebben az esetben létrehozhat egy „figyelmen kívül hagy” szabályt erre a webhelyre vonatkozóan.
+  - **Kapcsolat bontása** – a feltételek teljesülése esetén bontja az eszközök VPN-kapcsolatát. Például megadhatja a vállalati vezeték nélküli hálózatok listáját az **SSID-k** mezőben, majd létrehozhat egy szabályt, amely bontja az eszközök VPN-kapcsolatát, ha azok ezekhez a hálózatokhoz kapcsolódnak.
+
+A tartományspecifikus szabályok kiértékelése a minden tartományra vonatkozó szabályok kiértékelése előtt történik. 
+
+
 ## A szabályzat telepítése
 
 1.  A **Szabályzat** munkaterületen válassza ki a telepíteni kívánt szabályzatot, és kattintson a **Központi telepítés kezelése** elemre.
@@ -163,6 +192,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
