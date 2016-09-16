@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
 A Microsoft Intune egyaránt biztosít távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló képességeket.
 
 ## Eszköz távoli zárolása
-Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja azt. Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolás az egyes mobilplatformokon.
+Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja azt. Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolás az egyes mobilplatformokon. A távoli zárolás nem támogatott
 
 |Platform|Távoli zárolás|
 |------------|---------------|
@@ -31,6 +31,7 @@ Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja azt. Az al
 |Windows RT 8.1 és Windows RT|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 |Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 
+Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a távoli zárolást.
 
 ### Mobileszköz zárolása távolról az Intune-konzollal
 
@@ -55,6 +56,8 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 |Windows RT 8.1 és Windows RT|Nem támogatott|
 |Windows 8.1|Nem támogatott|
 
+Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a jelszó alaphelyzetbe állítását.
+
 ### Jelszó alaphelyzetbe állítása
 
 1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden eszköz** &gt; **Minden mobileszköz** elemre.
@@ -73,6 +76,6 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
