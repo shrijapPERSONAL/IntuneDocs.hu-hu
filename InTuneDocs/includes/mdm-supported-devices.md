@@ -7,9 +7,9 @@
   - Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
   - Mac OS X 10.9 és újabb verziók
 
-Az [Intune szoftverügyfél](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) Windows 7 vagy újabb Windows-rendszerű számítógépeket képes felügyelni. A Nagyvállalati felügyeleti csomaggal (EMS) rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+Az [Intune-szoftverügyfél](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) Windows Vista vagy újabb Windows-rendszerű számítógépeket képes felügyelni, kivéve az összes Home Edition változatot, amelyeket nem támogat.  Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment).
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
