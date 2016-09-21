@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 
 ---
@@ -62,7 +62,7 @@ Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek e
 >[!NOTE]
 >Ha engedélyezi a SharePoint Online-on a feltételes hozzáférést, javasoljuk, hogy tiltsa le a tartományt a listán a [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) témakörben ismertetett módon.  
 ## A mobileszközök támogatása
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s vagy újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
@@ -192,6 +192,6 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
