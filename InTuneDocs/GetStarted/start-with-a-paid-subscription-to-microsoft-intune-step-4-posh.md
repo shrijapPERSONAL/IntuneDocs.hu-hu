@@ -67,6 +67,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
