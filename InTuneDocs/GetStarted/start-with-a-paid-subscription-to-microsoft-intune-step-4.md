@@ -13,8 +13,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
+ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
+ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 ---
@@ -30,7 +30,7 @@ Ha a felhasználói fiókok szinkronizálása a helyszíni Active Directoryból 
 Ha az előfizetése a hozzá társított más felhőalapú szolgáltatásokkal közösen használja az Azure AD-t, Ön hozzáférhet az ezekbe a szolgáltatásokba felvett felhasználókhoz. Ezek a felhasználók mindaddig nem jogosultak a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatára, amíg hozzájuk nem rendel egy licencet.
 
 > [!TIP]
-> Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatára jogosító licenc hozzárendelésére vagy visszavonására szolgáló beállítás nem érhető el, előfordulhat, hogy az előfizetés olyan mennyiségi licencelési lehetőségeket tartalmaz, mint amilyenek például a [Nagyvállalati mobilitási csomag](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) használatakor érhetők el. A licencek hozzárendeléséről vagy visszavonásáról a licencelési lehetőségek dokumentációjában tájékozódhat.
+> Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatára jogosító licenc hozzárendelésére vagy visszavonására szolgáló beállítás nem érhető el, előfordulhat, hogy az előfizetés mennyiségi licencelési lehetőségeket tartalmaz, például a [Nagyvállalati mobilitási csomag + Biztonság](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) használatakor elérhetőeket. A licencek hozzárendeléséről vagy visszavonásáról a licencelési lehetőségek dokumentációjában tájékozódhat.
 
 ## Intune felhasználói licenc hozzárendelése
 
@@ -92,6 +92,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -29,6 +29,21 @@ Idővel mindezek a funkciók hibrid ügyféltelepítések esetén is támogatott
 >Blogbejegyzés ‒ Ensuring mobile devices are up to date using Microsoft Intune (A mobileszközök naprakészségének biztosítása a Microsoft Intune segítségével)<br>
 >A nemrégiben a Trident nevű kártevő által az iOS eszközök ellen indított támadások nyomán közzétettünk egy új blogbejegyzést [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (A mobileszközök naprakészségének biztosítása a Microsoft Intune segítségével) címen, amely ismerteti az Intune által kínált különböző lehetőségeket a mobileszközök biztonságának és naprakészségének fenntartására.
 
+## 2016. szeptember
+
+## A Vállalati portál újdonságai
+### Android
+
+**„Értesítések” bevezetése a Munkahelyi portál androidos verziójában**
+
+A Munkahelyi portál androidos verziójában a kezdőlapon az „Értesítéseknek” új ikonja van. Az ikonra koppintva megnyílik az Értesítések lap, amely megjeleníti a végfelhasználók számára az összes figyelmet igénylő elemet, például az eszközök megfelelőségi problémáit, a regisztrációs frissítéseket és a regisztrációk aktiválását. Az iOS-alapú Munkahelyi portál alkalmazásban már elérhető ez az értesítési funkció. Az új Értesítések lap eredményeképpen, ha az eszköz már regisztrálva van, a Munkahelyi hozzáférés beállítása képernyő nem jelenik meg a Munkahelyi portál androidos verziójának minden egyes elindításakor vagy használatának folytatásakor. Ha létrehozza saját végfelhasználói útmutatóját, frissítse dokumentációját ezen változásnak megfelelően. A frissített képernyőképeket [itt](https://aka.ms/androidcpupdate) találja.  
+<!---TFS 1095560--->
+
+### Windows
+**A Windows Phone 8.1-es Munkahelyi portál alkalmazás visszajelzési gombbal egészült ki**
+
+A Windows Phone 8.1-es Munkahelyi portál alkalmazás lehetővé teszi, hogy a végfelhasználók az új „visszajelzés küldése” gombbal visszajelzést küldjenek az alkalmazásról. A gomb megtalálásához koppintson a Munkahelyi portál alkalmazás képernyőjén alul jobbra látható „három pont” menüre, majd koppintson a **visszajelzés küldése** lehetőségre. Az anonimizált formában összegyűjtött visszajelzéseket a Microsoft a Munkahelyi portál alkalmazás nyújtotta felhasználói élmény tökéletesítésére használja fel.
+<!---TFS 1317806--->
 
 ## 2016. augusztus
 ## Alkalmazáskezelés
@@ -87,6 +102,10 @@ A Microsoft Intune Managed Browser alkalmazás iOS-verziója frissítve lett, é
 <!---TFS 1313253 checked--->
 
 ## Mi várható?
+
+### iOS 10-támogatás
+Az Intune teljes mértékben támogatja az iOS 10-et. További információ az iOS 10 nyilvános bemutatását követően lesz elérhető.
+
 ### Az Intune-csoportok 2016 szeptemberétől Azure Active Directory-csoportokká alakulnak
 Az Intune egy új csoportkezelési megoldást vezet be, amely Azure Active Directory- (AAD-) biztonsági csoportokat használ felhasználói és eszközcsoportokként az Intune-ban. **Az új, Azure-alapú Intune felügyeleti portál bemutatása után** e csoportok használatával történik majd minden csoportfelügyeleti, valamint szabályzat- és profillétesítési művelet.
 
@@ -158,6 +177,6 @@ Az Intune-ban az elmúlt hat hónapban bevezetett újdonságok listája [Az Intu
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

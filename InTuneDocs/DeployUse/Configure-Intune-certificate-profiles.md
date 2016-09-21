@@ -4,7 +4,7 @@ description: "Tudnivalók az Intune-tanúsítványprofilok létrehozásáról."
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Konfigurálja a megbízható tanúsítványprofil beállításait Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1 rendszerhez a rendszer által kért információk megadásával.
-
-    - A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt (.cer fájl). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
-    -  Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.  
-        Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.  
+3.  Konfigurálja a megbízható tanúsítványprofil beállításait Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1 rendszerhez a rendszer által kért információk megadásával. 
+4.  A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt (.cer fájl). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
+    
 4.  Válassza a **Házirend mentése** elemet.
 
 Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
@@ -79,7 +73,7 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
     > [!NOTE]
     >
-    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.
+    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** legördülő listából válassza az **Egyéni** lehetőséget (csak iOS-profilok esetén érhető el).
     >
     > Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:
 
@@ -136,6 +130,6 @@ Ezt követően megtudhatja, hogy a tanúsítványok segítségével hogyan tehet
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
