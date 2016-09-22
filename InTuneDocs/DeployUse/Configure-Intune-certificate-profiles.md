@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 2.  Adja hozzá a következő házirend-típusok valamelyikét:
     - **Android &gt; Megbízható tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; Megbízható tanúsítványprofil (iOS 7.1 és újabb)**
+    - **iOS &gt; Megbízható tanúsítványprofil (iOS 8.0 és újabb)**
     - **Mac OS X &gt; Megbízható tanúsítványprofil (Mac OS X 10.9 és újabb)**
     - **Windows &gt; Megbízható tanúsítványprofil (Windows 8.1 és újabb)**
     - **Windows &gt; Megbízható tanúsítványprofil (Windows Phone 8.1 és újabb)**
@@ -63,7 +63,7 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 2.  Adja hozzá a következő házirend-típusok valamelyikét:
     - **Android &gt; SCEP-tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; SCEP-tanúsítványprofil (iOS 7.1 és újabb)**
+    - **iOS &gt; SCEP-tanúsítványprofil (iOS 8.0 és újabb)**
     - **Mac OS X &gt; SCEP-tanúsítványprofil (Mac OS X 10.9 és újabb)**
     - **Windows &gt; SCEP-tanúsítványprofil (Windows 8.1 és újabb)**
     - **Windows &gt; SCEP-tanúsítványprofil (Windows Phone 8.1 és újabb)**
@@ -92,7 +92,7 @@ Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti
   - **Android &gt; .PFX-tanúsítványprofil (Android 4 és újabb verziók)**
   - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows 10 és újabb verziók)**
   - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows Phone 10 és újabb verziók)**
-  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 7.1 és újabb)**    
+  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 8.0 és újabb)**    
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Adja meg a házirendűrlapon kért adatokat.
 4.  Válassza a **Házirend mentése** elemet.
@@ -130,6 +130,6 @@ Ezt követően megtudhatja, hogy a tanúsítványok segítségével hogyan tehet
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
