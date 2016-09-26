@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti
 ##  1. lépés: Az alkalmazás előkészítése
 Mielőtt MAM-szabályzatot rendelne egy alkalmazáshoz, először burkolnia kell az alkalmazást a Microsoft Intune alkalmazásburkolóval.  Az alkalmazásburkoló letöltési és használati útmutatója a letöltés részét képezi.  
 >[!IMPORTANT]  
->Az alkalmazásburkoló ezen verziója, amely az Intune-ban nem regisztrált alkalmazásokat támogatja, a közeljövőben elérhető lesz Private preview verzióban. Ha részt szeretne venni a programban, küldjön egy levelet a msintuneappsdk@microsoft.com címre részletesebb tájékoztatásért.
+>Az alkalmazásburkoló ezen verziója, amely az Intune-ban nem regisztrált alkalmazásokat támogatja, elérhető nyilvános előzetes verzióban. Ha szeretne részt venni a nyilvános előzetes verzió tesztelésében, akkor iOS-re [erről a github-lapról](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview), Androidra pedig [erről a github-webhelyről](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) töltse le az eszközt.
 
 ## 2. lépés: Az alkalmazás hozzáadása
 
@@ -75,6 +75,6 @@ Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el.  Ezzel
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

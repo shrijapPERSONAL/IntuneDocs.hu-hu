@@ -4,7 +4,7 @@ description: "Egy Android-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem indít telefonhívásokat, és nem is kezeli az Ön hívásait.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Amikor engedélyezi a hozzáférést, csak azt engedélyezi, hogy az eszköz adatnaplókat írjon az eszköz SD-kártyájára, miáltal USB-kábelen keresztül áthelyezhetők lesznek a naplók.
+    Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem indít telefonhívásokat, és nem is kezeli az Ön hívásait.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Ha engedélyezi a hozzáférést, az csupán annyit jelent, hogy engedélyezi az eszköz számára, hogy elküldje IMEI számát az Intune-nak. A sorozatszámhoz hasonló IMEI szám a mobileszköz egyedi azonosítója.
 
     Ha megtagadja a hozzáférést, az üzenet ismét megjelenik, amikor legközelebb bejelentkezik a Vállalati portálba, de a **Never ask again** (Ne kérdezzen rá ismét) jelölőnégyzetre koppintva kikapcsolhatja a további üzeneteket.  Amennyiben később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** &gt; ** **Alkalmazások&gt; **Vállalati portál** &gt; **Engedélyek** &gt; **Telefon** lapon teheti ezt meg.
 
@@ -81,7 +81,7 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     Ha ez az üzenet jelenik meg, koppintson az **ENGEDÉLYEZÉS** elemre. Nyugodtan rákoppinthat az ENGEDÉLYEZÉS elemre, mert a **Microsoft soha nem éri el a névjegyeket.** A Google szabályozza az üzenet szövegét, és a Microsoft nem módosíthatja azt. Ha engedélyezi a hozzáférést, lehetővé teszi a vállalati portál alkalmazásnak munkahelyi fiók létrehozását, használatát és kezelését.
 
-    Ha megtagadja a hozzáférést, az üzenet ismét megjelenik, amikor legközelebb az **Adatok küldése** elemre koppint, de a **Ne kérdezzen rá ismét** jelölőnégyzetre koppintva kikapcsolhatja a további üzeneteket. Amennyiben később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** &gt; **Alkalmazások** &gt; **Vállalati portál** &gt; **Engedélyek** &gt; **Tárterület** lapon teheti ezt meg.
+    Ha megtagadja a hozzáférést, az üzenet ismét megjelenik, amikor legközelebb bejelentkezik a Vállalati portálba, de a **Never ask again** (Ne kérdezzen rá ismét) jelölőnégyzetre koppintva kikapcsolhatja a további üzeneteket.  Amennyiben később ismét engedélyezni szeretné a hozzáférést, a **Beállítások** &gt; ** **Alkalmazások&gt; **Vállalati portál** &gt; **Engedélyek** &gt; **Telefon** lapon teheti ezt meg.
 
 11.  Az **Activate device administrator** (Eszközadminisztrátor aktiválása) képernyőn koppintson az **Aktiválás** elemre.
 
@@ -116,6 +116,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolat
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

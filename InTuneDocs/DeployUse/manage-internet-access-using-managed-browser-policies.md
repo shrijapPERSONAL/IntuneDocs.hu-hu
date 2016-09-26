@@ -4,7 +4,7 @@ description: "Telepítheti a felügyelt böngésző alkalmazást, amellyel korl�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Felügyeltböngésző-szabályzatokat a következő eszköztípusok esetében ho
 
 -   Android 4 vagy újabb rendszerű eszközök
 
--   Az iOS 7.1-es vagy újabb rendszerű eszközök
+-   iOS 8.0 vagy újabb rendszerű eszközök
 
 Az Intune által felügyelt böngésző támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
 
@@ -44,9 +44,9 @@ Az Intune által felügyelt böngésző támogatja a [Microsoft Intune alkalmaz�
 
 2.  Konfigurálja a **Szoftverek** kategória alábbi házirend-típusainak egyikét:
 
-    -   **Felügyelt böngésző házirendje (Android 4 és újabb)**
+    -   **Felügyelt böngésző (Android 4 és újabb verziók)**
 
-    -   **Managed Browser-szabályzat (iOS 7.1 és újabb verziók)**
+    -   **Managed Browser (iOS 8.0 és újabb verziók)**
 
     Részletesebb tájékoztatás a szabályzatok használatáról és telepítéséről: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -154,6 +154,6 @@ Ha egy eszközön több felügyeltböngésző-szabályzatot léptet érvénybe, 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

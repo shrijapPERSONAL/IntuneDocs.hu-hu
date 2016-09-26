@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Ez a témakör ismerteti, hogy végfelhasználói hol és hogyan juthatnak hozz�
 
 **Nem felügyelt alkalmazások** – Azok az alkalmazások, amelyeket nem az Intune csomagolt be, illetve amelyek nem foglalják magukban az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
-Az Apple korlátozásai tiltják üzletági és felügyelt App Store-alkalmazások listázását a Vállalati portál alkalmazásban, ami annyit jelent, hogy ahhoz, hogy valamennyi alkalmazásukat megtalálják, a felhasználóknak több különböző nézetet kell használniuk. A Vállalati portál alkalmazás Alkalmazások lapján megjelenő csempékhez tartozó alkalmazások a következők szerint érhetők el:
+Az Apple korlátozásai tiltják az üzletági és a felügyelt App Store-alkalmazások listázását a Vállalati portál alkalmazásban. Ezt megkerülendő, az iOS-es Vállalati portál alkalmazás alkalmazáscsempéi a felhasználókat valamennyi alkalmazásuk eléréséhez egyetlen hely (a Vállalati portál webhely) különböző nézeteihez irányítják a következők szerint:
 
-- A **Vállalati alkalmazások** csempe a [Vállalati portál webhely](http://portal.manage.microsoft.com) **ÖSSZES** lapjára mutat.
+- A **Vállalati alkalmazások** csempe korábban az összes alkalmazás listájára mutatott a [Vállalati portál webhely](http://portal.manage.microsoft.com) ÖSSZES lapján, és ez a jövőben is így marad. A csempe neve **Minden alkalmazás**-ra változott.
 
-- Az **Egyéb alkalmazások** csempe jelenleg a Vállalati portál alkalmazás azokat az alkalmazásokat listázó nézetére mutat, amelyek megjelenítését az Apple engedélyezi a Vállalati portál alkalmazás számára. Az üzletági és a felügyelt App Store-alkalmazásokon kívül valamennyi alkalmazás ide tartozik.
+- Az **Egyéb alkalmazások** csempe korábban a Vállalati portál alkalmazás azon alkalmazásokat listázó nézetére mutatott, amelyek megjelenítését az Apple engedélyezi a Vállalati portál alkalmazás számára. A csempe új neve **Kiemelt alkalmazások**-ra változott, és rákoppintás esetén a felhasználót a Vállalati portál webhely KIEMELT lapjára irányítja.
 
-- A **Kategóriák** csempe jelenleg egy olyan nézetre mutat a Vállalati portál alkalmazásban, amely az alkalmazások kategóriáit listázza.
+-  A **Kategóriák** csempe korábban egy olyan nézetre mutatott a Vállalati portál alkalmazásban, amely az alkalmazások kategóriáit listázza. A csempe neve nem változott, most azonban a Vállalati portál webhely KATEGÓRIÁK nézetére mutat.
+[Itt](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) talál frissített képernyőképeket.
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###További információ
@@ -49,6 +49,6 @@ Az Apple korlátozásai tiltják üzletági és felügyelt App Store-alkalmazás
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

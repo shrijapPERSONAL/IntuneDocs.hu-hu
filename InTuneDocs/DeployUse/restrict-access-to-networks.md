@@ -4,7 +4,7 @@ description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosí
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ A Cisco Identity Services Engine (ISE) Intune-integrációja lehetővé teszi, h
 Az integráció engedélyezéséhez nincs szükség telepítésre az Intune-bérlőben. A Cisco ISE-kiszolgáló számára engedélyezni kell a hozzáférést az Intune-bérlőhöz. Ezt követően a telepítés hátralévő része a Cisco ISE-kiszolgálón történik. A jelen cikk ismerteti, hogy hogyan adhat engedélyt az ISE-kiszolgálónak az Intune-bérlőhöz való hozzáféréshez.
 
 ### 1. lépés: A tanúsítványok kezelése
-1. Az Azure Active Directory (Azure AD) konzolján exportálja a tanúsítványt.
+Exportálja a tanúsítványt az Azure Active Directory (Azure AD) konzoljáról, majd importálja az ISE-konzol Megbízható tanúsítványok tárolójába:
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Az integráció engedélyezéséhez nincs szükség telepítésre az Intune-bér
 
    f. Az **Exportálandó fájl** lapon kattintson a **Tallózás** gombra, majd jelölje ki a helyet, ahova mentené szeretné a fájlt, és adjon meg egy fájlnevet. Bár úgy tűnik, mintha exportálná a fájlt, valójában elnevezi azt a fájlt, amelybe az exportált tanúsítványt menteni fogja. Kattintson a **Tovább** &gt; **Befejezés** gombra.
 
+   g. Az ISE konzolról importálja az Intune-tanúsítványt (az exportált fájlt) a **Megbízható tanúsítványok** tárolójába.
+
 #### Safari
 
  a. Jelentkezzen be az Azure AD konzoljába.
@@ -52,14 +54,13 @@ b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 
    c. Válassza a **Tanúsítvány megtekintése** &gt; **Részletek** lehetőséget.
 
-   d. Válassza ki a tanúsítványt, majd kattintson az **Exportálás** elemre.  
+   d. Válassza ki a tanúsítványt, majd kattintson az **Exportálás** elemre. 
+
+   e. Az ISE konzolról importálja az Intune-tanúsítványt (az exportált fájlt) a **Megbízható tanúsítványok** tárolójába.
 
 > [!IMPORTANT]
 >
 > Ellenőrizze a tanúsítvány lejárati dátumát, mert a lejárta után újat kell exportálnia és importálnia.
-
-
-2. Az ISE konzolról importálja az Intune-tanúsítványt (az exportált fájlt) a **Megbízható tanúsítványok** tárolójába.
 
 
 ### Önaláírt tanúsítvány létrehozása az ISE alkalmazásban 
@@ -97,8 +98,57 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 |Oauth 2.0 Token-végpont|Jogkivonatot kibocsátó URL-cím|
 |Frissítse a kódot az ügyfél-azonosítóval|Ügyfél-azonosító|
 
+### 4. lépés: Töltse fel az önaláírt tanúsítványt az ISE-ből az Azure AD-ben létrehozott ISE-alkalmazásba
+1.     A .cer X509 nyilvános tanúsítványfájlból szerezze be a base64-kódolású tanúsítvány-értéket és ujjlenyomatot. Ez a példa PowerShellt használ:
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    Tárolja el az értékeket a $base64Thumbprint, a $base64Value és a $keyid változókhoz, amelyeket a következő lépésben használ majd.
+2.       Töltse fel a tanúsítványt a jegyzékfájlon keresztül. Jelentkezzen be az [Azure felügyeleti portálra](https://manage.windowsazure.com)
+2.      Az Azure AD beépülő modulban keresse meg az X.509-es tanúsítvánnyal konfigurálni kívánt alkalmazást.
+3.      Töltse le az alkalmazás jegyzékfájlját. 
+5.      Az üres “KeyCredentials”: [], tulajdonságot cserélje le a következő JSON-kódra.  A KeyCredentials összetett típus; leírása az [Entitások és összetett típusok segédletben](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) található.
 
-### 3. lépés: Az ISE-beállítások konfigurálása
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+Példa:
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Mentse az alkalmazás jegyzékfájlján végrehajtott módosítást.
+7.      Töltse fel a módosított alkalmazásjegyzék-fájlt az Azure felügyeleti központon keresztül.
+8.      Nem kötelező: Töltse le újra a jegyzékfájlt, hogy ellenőrizze, hogy a X-509-es tanúsítvány telepítve lett az alkalmazáson.
+
+>[!NOTE]
+>
+> A KeyCredentials gyűjtemény, így több X.509-es tanúsítványt is feltölthet kulcsváltások esetére vagy biztonsági sérülés esetén törölhet tanúsítványokat.
+
+
+### 4. lépés: Az ISE-beállítások konfigurálása
 A ISE felügyeleti konzolján adja meg ezeket az értékeket:
   - **Kiszolgáló típusa**: Mobile Device Manager
   - **Hitelesítés típusa**: OAuth – ügyfél hitelesítő adatai
@@ -150,6 +200,6 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

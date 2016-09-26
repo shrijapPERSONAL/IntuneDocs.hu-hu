@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ Az alábbi ábra az Exchange Online feltételes hozzáférési szabályzatai ál
 Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését:
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
 A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
@@ -93,7 +93,7 @@ A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
 
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 
 - Windows Phone 8.1 és újabb verziók
 
@@ -262,6 +262,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

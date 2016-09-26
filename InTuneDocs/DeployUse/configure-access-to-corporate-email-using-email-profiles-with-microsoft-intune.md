@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ A rendszergazdák vagy a felhasználók alternatív e-mail-ügyfélprogramokat i
 A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram e-mail-profilok segítségével:
 -   Windows Phone 8 és újabb verziók
 -   Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
--   iOS 7.1-es és újabb verziók
+-   iOS 8.0 és újabb verziók
 -   Samsung KNOX Standard (4.0-s és újabb verzió)
 
 Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
@@ -71,7 +71,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
 
     -   **A Samsung KNOX szabvány (4.0 és újabb) e-mail profilja**
 
-    -   **E-mail profil (iOS 7.1 és újabb)**
+    -   **E-mail profil (iOS 8.0 és újabb)**
 
     -   **E-mail profil (Windows Phone 8 és újabb)**
 
@@ -122,6 +122,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

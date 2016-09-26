@@ -4,7 +4,7 @@ description: "Az Intune többtényezős hitelesítés (MFA) alkalmazásával seg
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4993982adcfbc960ad71022268cc44d216d1c585
-ms.openlocfilehash: fb4ae43ffcbec24147e2e3ce3c96ec795289c925
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: 00d63fa55cd29c938dd082e2eff240f08319e01a
 
 
 ---
@@ -25,11 +25,15 @@ A Microsoft Intune többtényezős hitelesítés (MFA) alkalmazásával segíti 
 ## Az ADFS Multi-Factor Authentication helyszíni infrastruktúra-követelményei
 A többtényezős hitelesítés beállításához az alábbiakra van szükség:
 
+-   Automatikus regisztráció a [Windows eszközkezelésének beállítása](set-up-windows-device-management-with-microsoft-intune.md) című részben leírtak szerint.
 -   **Egy Active Directory-tartomány, amelyhez az ADFS-kiszolgáló csatlakozik.**
 
 -   **A Multi-Factor Authentication szolgáltatáshoz beállított ADFS-kiszolgáló.** ADFS-kiszolgálóként beállított, Windows Server 2012 R2 rendszerű kiszolgáló. További információkért lásd: [Secure cloud and on-premises resources using Azure Multi-Factor Authentication Server with Windows Server 2012 R2 AD FS](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/) (A felhőalapú és helyszíni erőforrások védelme a Windows Server 2012 R2 Active Directory összevonási szolgáltatásokkal használt Azure Multi-Factor Authentication alkalmazásával)
 
-A fent felsorolt kiszolgálók mindegyikének meg kell felelnie a [Rendszerkövetelmények és telepítési információk a Windows Server 2012 R2-höz](http://technet.microsoft.com/library/dn303418.aspx) című témakörben megadott rendszerkövetelményeknek.
+A kiszolgálóknak meg kell felelniük a [Rendszerkövetelmények és telepítési információk a Windows Server 2012 R2-höz](http://technet.microsoft.com/library/dn303418.aspx) című cikkben megadott rendszerkövetelményeknek.
+
+ 
+
 
 #### Többtényezős hitelesítés az Intune-ban
 Ha vállalata helyszíni informatikai infrastruktúrát használ, amelynek az Active Directory-tartományában be van állítva az Active Directory összevonási szolgáltatások (ADFS), beállíthatja a Multi-Factor Authentication szolgáltatást az összevonási kiszolgálón, majd engedélyezheti azt az Intune-ban történő regisztráláshoz. Az MFA szolgáltatásnak az Intune-beli konfigurálásával engedélyezi, hogy a felhasználók egyszer, a regisztráció során hitelesítsék magukat, majd ezt követően úgy használhassák a vállalati erőforrásokat, hogy az MFA hitelesítési folyamatot nem kell minden alkalommal megismételniük.
@@ -55,6 +59,6 @@ A Multi-Factor Authentication engedélyezéséről az ADFS-ben a [Kockázatkezel
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

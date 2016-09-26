@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
-ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: 84d1e337a8328b2b133f5e3c71c6101380cfa3ce
 
 
 ---
@@ -68,9 +68,11 @@ Az itt olvasható információk az Android-eszköz Intune-beli regisztrálásako
 - [A rendszer az USB-hibakeresés kikapcsolását kéri](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [A rendszer a Biztonsági fenyegetések keresése az eszközön beállítás bekapcsolását kéri](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Az eszköz nem felel meg a minimális biztonsági javítási szintnek](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](you-are-prompted-to-install-lookout-for-work-android.md)
+- [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
