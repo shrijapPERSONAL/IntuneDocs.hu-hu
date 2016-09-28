@@ -4,7 +4,7 @@ description: "Tudja meg, hogyan integrálható az Intune a Vállalati Windows He
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Az Intune kétféleképpen integrálható a Vállalati Hello szolgáltatással:
 -   Intune-szabályzatokkal szabályozható, hogy a felhasználók mely hitelesítési módokkal jelentkezhetnek be, és melyekkel nem.
 
 -   A hitelesítési tanúsítványokat tárolhatja a Vállalati Windows Hello kulcstároló-szolgáltatójában. További információkért lásd: [Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](secure-resource-access-with-certificate-profiles.md).
+
+> [!IMPORTANT]
+> Az évfordulós frissítés előtti Windows 10 asztali és mobil verziók esetében két különböző, az erőforrás hitelesítéséhez használható PIN-kódot is beállíthatott:
+- Az **eszköz PIN-kód** segítségével feloldhatta az eszköz zárolását és felhőalapú erőforrásokhoz kapcsolódhatott.
+- A **munkahelyi PIN-kód** segítségével a felhasználó személyes eszközén (BYOD) férhetett hozzá az Azure AD-erőforrásokhoz.
+
+>Az évfordulós frissítés ezt a két különböző PIN-kódot egyetlen eszköz PIN-kódban egyesítette.
+A korábban beállított, az eszköz PIN-kódját felügyelő, bármely Intune-konfigurációs szabályzat, valamint emellett bármely Vállalati Windows Hello-házirend immár kiváltható egyetlen PIN-kóddal.
+Ha mindkét fajta házirendet beállította a PIN-kód szabályozására, a Vállalati Windows Hello-házirend a Windows 10 rendszerű asztali és mobileszközökön egyaránt alkalmazásra kerül.
+A házirendek között felmerülő esetleges ütközések feloldásához és a PIN-házirend megfelelő alkalmazásához frissítse a Vállalati Windows Hellót, hogy megfeleljen a konfigurációs szabályzat beállításainak, és kérje meg felhasználóit, szinkronizálják eszközeiket a Vállalati portál alkalmazásban.
+
+
 
 ## Vállalati Windows Hello-házirend létrehozása
 
@@ -67,6 +79,6 @@ A Microsoft Passporttal kapcsolatos további információkért olvassa el a Wind
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

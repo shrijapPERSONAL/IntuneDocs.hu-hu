@@ -13,8 +13,8 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: e14a56fce0aa57b3744946d7dbf6641b8d98773b
+ms.sourcegitcommit: 5f8a145fa2c0355eaffc403084872c1f9524b6e5
+ms.openlocfilehash: 2cb4920663019f8a1ff66a7c52e12b1313f33871
 
 
 ---
@@ -29,7 +29,7 @@ Az alábbi eszköztípusok regisztrálására és kezelésére nyílik mód:
 
 Az eszközök regisztrálása [ezen funkciókat](/Intune/get-started/choose-how-to-manage-devices) biztosítja.
 
-A Windows rendszerű számítógépeket másik lehetőségként az Intune PC ügyfélszoftver segítségével is kezelheti. Az Intune PC ügyfélszoftver a Windows 7 és újabb rendszereket támogatja, a Windows 10 Home kivételével. A számítógépeknek az ügyfélszoftverrel történő kezelése [ezen funkciókat](/Intune/) biztosítja.
+A Windows rendszerű számítógépeket másik lehetőségként az Intune PC ügyfélszoftver segítségével is kezelheti. Az Intune-számítógépügyfél a Windows 7 és újabb rendszerekkel használható, kivéve a Windows 10 Home rendszert. A számítógépek ügyfélszoftverrel történő felügyelete az [alábbi funkciókat](set-up-windows-device-management-with-microsoft-intune.md) biztosítja.
 
 A Nagyvállalati felügyeleti csomaggal rendelkező ügyfelek az Azure Active Directory (Azure AD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket.
 
@@ -38,6 +38,6 @@ A Nagyvállalati felügyeleti csomaggal rendelkező ügyfelek az Azure Active Di
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

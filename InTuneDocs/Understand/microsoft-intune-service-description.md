@@ -4,7 +4,7 @@ description: "Az Intune egy felhőalapú szolgáltatás, amellyel Windows és Ma
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: c13366ea7f42272e6fc3d606cb8dbe0ed1c45fe4
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # A Microsoft Intune szolgáltatás leírása
 
-A Microsoft Intune egy felhőalapú szolgáltatás, amellyel Windows és Mac OS X rendszerű számítógépek, illetve iOS, Android és Windows rendszerű mobileszközök is felügyelhetők. Az Intune ezenkívül a vállalati alkalmazások és adatok védelmét is biztosítja. Használható önállóan, vagy a kezelési lehetőségek bővítése céljából a System Center 2012 R2 Configuration Managerrel integrálva.
+A Microsoft Intune egy felhőalapú szolgáltatás, amellyel Windows és Mac OS X rendszerű számítógépek, illetve iOS, Android és Windows rendszerű mobileszközök is felügyelhetők. Az Intune ezenkívül a vállalati alkalmazások és adatok védelmét is biztosítja. Használható önállóan, vagy a kezelési lehetőségek bővítése céljából a System Center Configuration Managerrel integrálva. 
 
 A Microsoft az Intune bevezetési juttatást a jogosult csomagokban foglalt jogosult szolgáltatások esetében kínálja. Ez lehetővé teszi, hogy távoli segítséget kérjen a Microsoft szakértőitől az Intune-környezet üzembe helyezéséhez. További információ: [A Microsoft Intune szolgáltatási juttatás leírása](http://go.microsoft.com/fwlink/?LinkId=619281).
 
@@ -32,18 +32,18 @@ Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, ame
 
 A mobileszközökön konfigurálható beállítások listáját itt találja:
 
--   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Mobileszközök megfelelőségi beállításai a Configuration Managerben](https://technet.microsoft.com/library/dn376523.aspx)
+-   [Hibrid mobileszköz-felügyelet a System Center Configuration Managerrel és a Microsoft Intune-nal](https://technet.microsoft.com/library/mt627883.aspx) 
 
-A System Center 2012 R2 Configuration Managerrel kapcsolatos információkért lásd: [A System Center 2012 Configuration Manager dokumentumkönyvtára](https://technet.microsoft.com/library/gg682041.aspx).
+A System Center Configuration Managerrel kapcsolatos információkért lásd: [A System Center  Configuration Manager dokumentációja](https://technet.microsoft.com/library/mt346023.aspx).
 
 ## Az Intune szolgáltatásfrissítéseinek hatása a felhasználókra
 Mivel az Intune online szolgáltatásként működik, a Microsoft rendszeresen frissítéseket ad ki hozzá.
 
 Ebből a témakörből megtudhatja, hogy milyen gyakran jelennek meg ezek a szolgáltatásfrissítések, és megismerkedhet azzal az előzetes értesítéssel, amelyben tudatjuk a felhasználókkal, hogy egy adott frissítés hatással lehet a szolgáltatás működésére.
 
-Az Intune szolgáltatás változásainak megismeréséhez lásd az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/Whats-new-in-microsoft-intune.md) című témakört. A [Microsoft Intune blog](http://blogs.technet.com/b/microsoftintune/) ugyancsak ismerteti a szolgáltatást érintő változásokat, ezenkívül hasznos tippekkel szolgál az Intune minél hatékonyabb használatához.
+Az Intune szolgáltatás változásainak megismeréséhez lásd az [Újdonságok a Microsoft Intune-ban](/intune/deploy-use/whats-new-in-microsoft-intune) című témakört. A [Microsoft Intune blog](http://blogs.technet.com/b/microsoftintune/) ugyancsak ismerteti a szolgáltatást érintő változásokat, ezenkívül hasznos tippekkel szolgál az Intune minél hatékonyabb használatához. 
 
 Az [Office 365 felügyeleti portál](https://portal.office.com/Admin/Default.aspx) üzenetközpontja ezenfelül a fontos szolgáltatásfrissítésekről is tájékoztatást nyújt. Az [Office 365 felügyeleti társalkalmazás](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) telepítésével mobileszközén is fogadhatja az értesítéseket.
 
@@ -65,7 +65,7 @@ Az Intune többféleképpen is konfigurálható annak érdekében, hogy biztosí
 
 -   **Az Intune önálló konfigurációja.** A szervezetben lévő mobileszközök felügyelete az Intune webalapú felügyeleti konzoljával végezhető. Az Intune bármilyen helyszíni informatikai infrastruktúra nélkül használható, azonban ha az Intune-t Active Directory tartományi szolgáltatásokkal együtt használja, a tartományi szolgáltatásokkal kezelt tartományi felhasználói fiókokat az Intune-nal is használhatja.
 
--   **Intune és System Center Configuration Manager.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. A konfiguráció segítségével a szervezet összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolon felügyelheti. A Configuration Manager nagy mennyiségű mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. További információkért lásd: [Mobileszközök felügyelete a Configuration Manager és a Microsoft Intune használatával](http://go.microsoft.com/fwlink/?LinkID=271118) a [System Center 2012 Configuration Manager dokumentumkönyvtárában](https://technet.microsoft.com/library/gg682041.aspx).  Az Ön számára leginkább megfelelő módszer kiválasztásához további segítséget talál a [Választás a Microsoft Intune önálló és hibrid mobileszköz-kezelése között a Configuration Manager segítségével](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-   **Intune és System Center Configuration Manager.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. A konfiguráció segítségével a szervezet összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolon felügyelheti. A Configuration Manager nagy mennyiségű mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. További információ: [Hibrid mobileszköz-felügyelet a System Center Configuration Managerrel és a Microsoft Intune-nal](https://technet.microsoft.com/library/mt627883.aspx).  Az Ön számára leginkább megfelelő módszer kiválasztásához további segítséget talál a [Választás a Microsoft Intune önálló és hibrid mobileszköz-kezelése között a Configuration Manager segítségével](https://technet.microsoft.com/en-us/library/mt706478.aspx). 
 
 
 ## További tudnivalók az Intune-ról
@@ -73,7 +73,7 @@ Az alábbi forrásokból többet is megtudhat az Intune-ról:
 
 -   A [Microsoft Intune Adatvédelmi központja](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) információkkal szolgál az Intune biztonsági, adatvédelmi és megfelelőségi vonatkozásairól, ezenkívül az Intune minősítései közül is bemutat néhányat.
 
--   [A Microsoft Intune mobileszköz-kezelési képességei](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### További információ
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Az alábbi forrásokból többet is megtudhat az Intune-ról:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
