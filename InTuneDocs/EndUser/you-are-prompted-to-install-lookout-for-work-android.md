@@ -1,5 +1,5 @@
 ---
-title: "A rendszer felszólítja a Lookout for Work telepítésére | Microsoft Intune"
+title: "A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
@@ -12,19 +12,18 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
-ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 ---
 
 # A rendszer felszólítja a Lookout for Work telepítésére
 
-Ha az alábbi, „A Lookout for Work alkalmazás nincs telepítve és aktiválva” üzenetet látja, akkor a rendszergazda előírja a Lookout for Work alkalmazás telepítését, amely az esetleges biztonsági fenyegetések felderítésével védi eszközét.
+A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához, amely az esetleges fenyegetések felderítésével segít az eszköz védelmében.
 
-![megfelelőségi problémát kell megoldania](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**A probléma megoldásához az alábbiakat kell végrehajtania:**
+**A következőket kell tennie:**
 
 1.  Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Lookout for Work telepítése a Play Áruházból** gombra.
 
@@ -40,7 +39,7 @@ Ha az alábbi, „A Lookout for Work alkalmazás nincs telepítve és aktiválva
 
     ![nyissa meg a Lookout for Worköt és koppintson az Aktiválás gombra](./media/lookout-activate-button-android.png)
 
-4. Koppintson a **Bejelentkezés munkahelyi fiókkal** gombra, majd lépjen be abba a fiókba, amelyet a munkahelyi vagy iskolai e-mailekhez, fájlokhoz és más adathoz való hozzáféréshez használ.
+4. Koppintson a **Bejelentkezés munkahelyi fiókkal** gombra, majd lépjen be abba a fiókba, amelyet a munkahelyi vagy iskolai e-mailekhez és fájlokhoz való hozzáféréshez használ.
 
     ![bejelentkezés a munkahelyi vagy iskolai fiókba](./media/lookout-sign-in-android.png)
 

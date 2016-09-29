@@ -66,8 +66,9 @@
 ## [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md)
 
 ## [Alkalmazások hozzáadása](add-apps.md)
-### [Alkalmazások hozzáadása mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Alkalmazások hozzáadása Windows rendszerű számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Alkalmazások hozzáadása regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Alkalmazások hozzáadása Intune ügyfélgépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Intune ügyfélgép-szoftverek licencszerződések kezelése](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Alkalmazások telepítése](deploy-apps.md)
 ### [Alkalmazások telepítése eszközökre és számítógépekre](deploy-apps-in-microsoft-intune.md)
 ### [Alkalmazások figyelése](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [E-mail hozzáférés korlátozása: példák](restrict-email-access-example-scenarios.md)
 
 ### [Hálózati hozzáférés korlátozása (Cisco ISE)](restrict-access-to-networks.md)
+### [Hozzáférés korlátozása eszközök, hálózat és alkalmazáskockázat alapján](restrict-access-based-on-device-network-app-risk.md)
+#### [A Lookout MTP beállítása](set-up-your-subscription-with-lookout-mtp.md)
+#### [A Lookout engedélyezése az Intune-ban](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work-alkalmazások telepítése](configure-and-deploy-lookout-for-work-apps.md)
+#### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Alkalmazásadatok védelme MAM használatával](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portál a mobilalkalmazás-felügyeleti szabályzatok kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
