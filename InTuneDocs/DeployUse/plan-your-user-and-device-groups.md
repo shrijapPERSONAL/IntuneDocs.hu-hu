@@ -76,7 +76,7 @@ A szabályzatok érvénybe léptetése csoportok szerint történik, ezért a cs
 
 - Tartalmakat és szabályzatokat a gyermekcsoportok kihagyásával is telepíthet a szülőcsoportok számára.
 
-- A gyermekcsoporthoz olyan felhasználót vagy eszközt is hozzáadhat, amely nem tagja a szülőcsoportnak. Ha ezt teszi, akkor a gyermekcsoport új tagja hozzáadódik a szülőcsoporthoz.
+- A gyermekcsoporthoz olyan felhasználót vagy eszközt is hozzáadhat, amely nem tagja a szülőcsoportnak. Ilyenkor a gyermekcsoport új tagja hozzáadódik a szülőcsoporthoz.
 
     Ugyanakkor nem adhat hozzá olyan tagot a gyermekcsoporthoz, amely ki van zárva a szülőcsoportból.
 
@@ -112,7 +112,7 @@ Az Intune kilenc olyan beépített csoporttal rendelkezik, amely nem módosítha
     -   Nem csoportosított eszközök
 
 > [!NOTE]
-> Mottó: *legyen egyszerű*. Ha a szervezetnek nincsenek az alábbi szakaszokban leírtakhoz hasonló speciális igényei, célszerű az egyszerűségre törekedni és az alapértelmezés szerint csoportstruktúrát és szabályzatokat alkalmazni. A szolgáltatás így kezelhetőbb lesz hosszú távon. A karbantartás is egyszerűbb, ha egységesen kezelheti a felhasználókat. Minél kisebb mértékű a csoportok szerinti differenciálódás, annál kevesebb szabályzatot kell fenntartani.
+> Mottó: *legyen egyszerű*. Ha a szervezetnek nincsenek az alábbi szakaszokban leírtakhoz hasonló speciális igényei, célszerű az egyszerűségre törekedni és az alapértelmezés szerinti csoportstruktúrát és szabályzatokat alkalmazni. A szolgáltatás így kezelhetőbb lesz hosszú távon. A karbantartás is egyszerűbb, ha egységesen kezelheti a felhasználókat. Minél kisebb mértékű a csoportok szerinti differenciálódás, annál kevesebb szabályzatot kell fenntartani.
 
 
 ### A szervezetben lévő összes felhasználó és eszköz
@@ -146,7 +146,7 @@ A **Tagsági feltételek** területen válassza az Active Directoryval szinkroni
 
 ![Képernyőfelvétel a Csoport szerkesztése párbeszédpanelről](../media/Intune_Planning_Groups_AD_Criteria_small.png)
 
-Tekintse át a bejegyzéseket majd válassza a **Befejezés** lehetőséget a csoport létrehozásához.
+Tekintse át a bejegyzéseket, majd válassza a **Befejezés** lehetőséget a csoport létrehozásához.
 
 ![Képernyőfelvétel a Csoport szerkesztése párbeszédpanelről](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
@@ -191,7 +191,7 @@ Válassza a **Minden eszköz (számítógépek és mobileszközök)** elemet, ho
 
 ![A Tagság feltételeinek meghatározása oldal](../media/Intune_Planning_Groups_Device_Criteria_small.png)
 
-Tekintse át a bejegyzéseket majd válassza a **Befejezés** lehetőséget a BYOD-csoport létrehozásához.
+Tekintse át a bejegyzéseket, majd válassza a **Befejezés** lehetőséget a BYOD-csoport létrehozásához.
 
 ![Csoport létrehozása párbeszédpanel](../media/Intune_Planning_Groups_Device_Summary_small.png)
 
