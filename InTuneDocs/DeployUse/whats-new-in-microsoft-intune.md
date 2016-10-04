@@ -2,9 +2,9 @@
 title: "Újdonságok | Microsoft Intune"
 description: "Ismerkedjen meg a Microsoft Intune e havi és korábbi verzióinak újdonságaival"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ A nem megfelelő eszközök végfelhasználóit az eszköz regisztrálására fo
 A Munkahelyi portál androidos verziójában a kezdőlapon az „Értesítéseknek” új ikonja van. Az ikonra koppintva megnyílik az Értesítések lap, amely megjeleníti a végfelhasználók számára az összes figyelmet igénylő elemet, például az eszközök megfelelőségi problémáit, a regisztrációs frissítéseket és a regisztrációk aktiválását. Az iOS-alapú Munkahelyi portál alkalmazásban már elérhető ez az értesítési funkció. Az új Értesítések lap eredményeképpen, ha az eszköz már regisztrálva van, a Munkahelyi hozzáférés beállítása képernyő nem jelenik meg a Munkahelyi portál androidos verziójának minden egyes elindításakor vagy használatának folytatásakor. Ha létrehozza saját végfelhasználói útmutatóját, frissítse dokumentációját ezen változásnak megfelelően. A frissített képernyőképeket [itt](https://aka.ms/androidcpupdate) találja.  
 <!---TFS 1095560--->
 
+**Visszajelzés küldése az Android rendszerhez készült Munkahelyi portálon**</br>
+Az Android rendszerhez készült Munkahelyi portál menüjében egy új elem jelent meg. Ha a **Help & Feedback** (Súgó és visszajelzés) elemre koppint, az alábbi három művelet közül választhat:
+* Válassza a **Get Help** (Segítség kérése) lehetőséget, ha egy Vállalati portállal kapcsolatos problémát szeretne jelenteni az informatikai részlegnek. Az informatikai részleg az Ön e-mail ügyfélprogramját használva elkészít egy e-mail üzenetet, amelyhez csatolja a Vállalati portál naplóadatait. A **Get Help** (Segítség kérése) a **Send Data** (Adatküldés) elemet váltja fel a **Settings** (Beállítások) lapon.
+* A **Give Feedback** (Visszajelzés küldése) használatával visszajelzést küldhet a Vállalati portál csapatának.
+* Az **Rate our App** (Alkalmazás értékelése) arra ad lehetőséget, hogy értékelje a Vállalati portál alkalmazást a Google Play áruházban.
 
 ### iOS
 **Az iOS-es Vállalati portál alkalmazás támogatására vonatkozó módosítások**<br/>
@@ -88,7 +93,7 @@ A következő változásokra került sor az iOS-es Vállalati portál alkalmazá
 <!---TFS 1317133--->
 
 **Felszólítás az iOS-es Managed Browser alkalmazás telepítésére, ha az informatikai részleg beállította ezt a követelményt az alkalmazás számára**<br/>
-Ha egy webklipet úgy konfigurált, hogy csak a felügyelt böngészőben nyíljon meg, de a felügyelt böngésző nincs telepítve az eszközön, akkor az eszközön futó Vállalati portál alkalmazás felszólítja a felhasználót, hogy a webklip telepítése előtt telepítse a felügyelt böngészőt. 
+Ha egy webklipet úgy konfigurált, hogy csak a felügyelt böngészőben nyíljon meg, de a felügyelt böngésző nincs telepítve az eszközön, akkor az eszközön futó Vállalati portál alkalmazás felszólítja a felhasználót, hogy a webklip telepítése előtt telepítse a felügyelt böngészőt.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Az Intune-ban az elmúlt hat hónapban bevezetett újdonságok listája [Az Intu
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
