@@ -31,7 +31,7 @@ Ha adatnaplókat szeretne küldeni az informatikai rendszergazdának, hogy segí
 
 2.  USB-kábellel csatlakoztassa az Android-eszközt a számítógéphez.
 
-3.  A számítógépen keresse meg a telefon nevével megegyező nevű könyvtárat. Ebben a könyvtárban keresse meg az &lt;Android-eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files mappát.\.
+3.  A számítógépen keresse meg a telefon nevével megegyező nevű könyvtárat. Ebben a könyvtárban keresse meg az &lt;Android-eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files mappát\.
 
 4.  Csatolja az összes fájlt egy e-mailhez, és küldje el azt a rendszergazdának.
 
