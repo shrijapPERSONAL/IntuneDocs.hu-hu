@@ -2,7 +2,7 @@
 title: "Korábbi kiadások | Microsoft Intune"
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3206634884807743576f2d9dc1ca17b6bbbc9cc6
-ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
+ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
+ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
 
 
 ---
@@ -30,7 +30,7 @@ Az iOS 9.3-at vagy annál újabb verziójú operációs rendszert futtató eszk�
 - Megadhatja a felhasználók elől elrejtett alkalmazások listáját. Az ilyen alkalmazásokat a felhasználók nem látják és nem tudják elindítani.
 - Megadhatja a felhasználók által látható és elindítható alkalmazások listáját. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
 
-Az így megadott alkalmazások egyaránt lehetnek Ön által telepített, illetve olyan beépített iOS-alkalmazások, mint az Üzenetek és a Megjegyzések. Részletekért lásd: [iOS-szabályzatbeállítások a Microsoft Intune-ban]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+Az így megadott alkalmazások egyaránt lehetnek Ön által telepített, illetve olyan beépített iOS-alkalmazások, mint az Üzenetek és a Megjegyzések. Részletekért lásd: [iOS-szabályzatbeállítások a Microsoft Intune-ban]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 <!---TFS 1279009 checked--->
 ### Engedélyezett és letiltott alkalmazások házirendje Samsung KNOX-eszközökhöz
 Mostantól egyedi szabályzatot konfigurálhat Samsung KNOX-eszközökhöz, amely lehetővé teszi az alábbiak egyikének létrehozását:
@@ -38,7 +38,7 @@ Mostantól egyedi szabályzatot konfigurálhat Samsung KNOX-eszközökhöz, amel
 - Azon alkalmazások listája, amelyek telepítése engedélyezett az eszköz felhasználói számára a Google Play áruházból. Az áruházból más alkalmazások nem telepíthetők.
 
 Ezek a beállítások kizárólag a Samsung KNOX-ot futtató eszközökön használhatók.
-Részletekért lásd: [Egyéni szabályzat használata alkalmazások engedélyezéséhez és tiltásához Samsung KNOX-eszközökön]( custom-policy-to-allow-and-block-samsung-knox-apps.md).
+Részletekért lásd: [Egyéni szabályzat használata alkalmazások engedélyezéséhez és tiltásához Samsung KNOX-eszközökön](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps).
 <!---TFS 1311629 checked --->
 ### A mobilalkalmazás-kezelési (MAM) szabályzatokkal kompatibilis új alkalmazások
 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) és [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) operációs rendszer alatt a Yammer-alkalmazás már kompatibilis az [Intune mobilalkalmazás-kezelési (MAM) szabályzatokkal](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), függetlenül attól, hogy az eszköz regisztrált-e vagy sem.
@@ -55,7 +55,7 @@ Az új RMS-megosztó alkalmazás megjelenésével 2016 augusztusától kezdve me
 - Intune PDF Viewer
 - Intune Image Viewer Android-eszközökre a Google Play Áruházból
 
-Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos [Rights Management alkalmazás (RMS-megosztó alkalmazás)](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. Onnantól kezdve, hogy az Intune Viewer alkalmazás már nem lesz támogatott, eltávolítjuk a Google Store áruházból, és nem lesz elérhető további használatra.
+Az Intune Viewer-alkalmazások használata helyett javasoljuk az új androidos [Rights Management alkalmazás (RMS-megosztó alkalmazás)](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) használatát, amelynek segítségével három különálló alkalmazás helyett elég egyetlen alkalmazást telepítenie a vállalati fájlok Android-eszközökön való biztonságos megtekintéséhez. Onnantól kezdve, hogy az Intune Viewer alkalmazás már nem lesz támogatott, eltávolítjuk a Google Store áruházból, és nem lesz elérhető további használatra.
 
 ## Eszközkezelés
 ### Android 7.0-támogatás
@@ -80,7 +80,7 @@ A Microsoft Intune Managed Browser alkalmazás iOS-verziója frissítve lett, é
 ## Mi várható?
 
 ### iOS 10-támogatás
-Az Intune teljes körűen támogatja az iOS 10-et. További információ az iOS 10 nyilvános bemutatásakor lesz elérhető.
+Az Intune teljes körűen támogatja az iOS 10-et. További információ az iOS 10 nyilvános bemutatását követően lesz elérhető.
 
 ### Az Intune-csoportok 2016 szeptemberétől Azure Active Directory-csoportokká alakulnak
 Az Intune egy új csoportkezelési megoldást vezet be, amely Azure Active Directory- (AAD-) biztonsági csoportokat használ felhasználói és eszközcsoportokként az Intune-ban. **Az új, Azure-alapú Intune felügyeleti portál bemutatása után** e csoportok használatával történik majd minden csoportfelügyeleti, valamint szabályzat- és profillétesítési művelet.
@@ -159,7 +159,7 @@ Az Intune a konfigurálható eszközök regisztrációs korlátját felhasznál�
 <!---TFS 1289896 --->
 
 #### Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek TeamViewer-integrációja
-Az Intune ügyfélszoftvert futtató Windows-számítógépeken érvénybe léptethető [TeamViewer](https://www.teamviewer.com)-integráció segítségével távsegítség-munkameneteket indíthat más Windows-számítógépekkel, ami jelentős előnyt jelent a végfelhasználói ügyfélszolgálat számára. Ez a lehetőség a Windows 7, 8, 8.1 és Windows 10 rendszerekre egyaránt kiterjed. Részletekért lásd: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+Az Intune ügyfélszoftvert futtató Windows-számítógépeken érvénybe léptethető [TeamViewer](https://www.teamviewer.com)-integráció segítségével távsegítség-munkameneteket indíthat más Windows-számítógépekkel, ami jelentős előnyt jelent a végfelhasználói ügyfélszolgálat számára. Ez a lehetőség a Windows 7, 8, 8.1 és Windows 10 rendszerekre egyaránt kiterjed. Részletekért lásd: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### A Vállalati portál újdonságai
@@ -185,7 +185,7 @@ Csak akkor használjon DEM-fiókot, ha a megosztott eszközök felhasználó né
 <!---TFS 1233681--->
 
 ### Windows-szolgáltatások névváltozásai
-- A [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) mostantól **Windows Hello for Business** néven érhető el.
+- A [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) mostantól **Windows Hello for Business** néven érhető el.
 - A [Vállalati adatvédelem](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) mostantól **Windows információvédelem** ismert.
 
 ## 2016. június
@@ -209,10 +209,10 @@ Az Intune-ra vonatkozó szolgáltatásállapot-adatok átkerültek a központi, 
     * Meg kell felelniük az Intune összes telepített megfelelőségi szabályzatának
 
  A nem megfelelő eszközökkel rendelkező végfelhasználókat kérni fogja a rendszer, hogy regisztráljanak, és hárítsák el a megfelelőségi problémákat, hogy hozzáférést kapjanak.
-- **Feltételes hozzáférés böngészőhöz.** Feltételes hozzáférési házirendet állíthat be az [Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md) és a [SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md), így azok csak a felügyelt és a szabályozásoknak megfelelő iOS- és Android-eszközök támogatott webböngészőiről érhetők majd el. Az Outlook Web Accessbe (OWA) és a SharePoint-webhelyekre iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a rendszer a bejelentkezés előtt kérni fogja az eszköz Intune-beli regisztrálását, valamint az esetleges szabályozási hiányosságok elhárítását.
+- **Feltételes hozzáférés böngészőhöz.** Feltételes hozzáférési házirendet állíthat be az [Exchange Online-hoz](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) és a [SharePoint Online-hoz](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune), így azok csak a felügyelt és a szabályozásoknak megfelelő iOS- és Android-eszközök támogatott webböngészőiről érhetők majd el. Az Outlook Web Accessbe (OWA) és a SharePoint-webhelyekre iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a rendszer a bejelentkezés előtt kérni fogja az eszköz Intune-beli regisztrálását, valamint az esetleges szabályozási hiányosságok elhárítását.
 <!---TFS 1175844--->
 
-- **A Dynamics CRM Online támogatja a feltételes hozzáférést.** Feltételes hozzáférési házirendet állíthat be a [Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md), hogy csak a felügyelt és a szabályozásnak megfelelő iOS- és Android-eszközök érhessék el. A Dynamics CRM mobilalkalmazásba iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a bejelentkezés végrehajtása előtt a rendszer kérni fogja a regisztrálást az Intune-ba, valamint a meg nem felelést okozó problémák megszüntetését.
+- **A Dynamics CRM Online támogatja a feltételes hozzáférést.** Feltételes hozzáférési házirendet állíthat be a [Dynamics CRM Online-hoz](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune), hogy csak a felügyelt és a szabályozásnak megfelelő iOS- és Android-eszközök érhessék el. A Dynamics CRM mobilalkalmazásba iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a bejelentkezés végrehajtása előtt a rendszer kérni fogja a regisztrálást az Intune-ba, valamint a meg nem felelést okozó problémák megszüntetését.
 <!---TFS1295358--->
 
 ##A Vállalati portál újdonságai
@@ -249,9 +249,9 @@ További információkat [ebben a blogban](https://blogs.technet.microsoft.com/m
 
 
 ### Alkalmazáskezelés
-- **MAM SDK: PIN-kód hosszának konfigurálása.** A mobilalkalmazás-felügyeleti (MAM-) alkalmazásoknál az eszközök PIN-kódjához hasonlóan meghatározható lesz a PIN-kód hossza. Ebben az esetben a végfelhasználóknak meg kell felelniük a beállított új korlátozásoknak. A felhasználók számára kissé más képernyő jelenik meg a hosszabb PIN-kód beviteléhez. Részletekért lásd: [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban](android-mam-policy-settings.md) és [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása](ios-mam-policy-settings.md).
+- **MAM SDK: PIN-kód hosszának konfigurálása.** A mobilalkalmazás-felügyeleti (MAM-) alkalmazásoknál az eszközök PIN-kódjához hasonlóan meghatározható lesz a PIN-kód hossza. Ebben az esetben a végfelhasználóknak meg kell felelniük a beállított új korlátozásoknak. A felhasználók számára kissé más képernyő jelenik meg a hosszabb PIN-kód beviteléhez. Részletekért lásd: [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban](/intune/deploy-use/android-mam-policy-settings) és [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása](/intune/deploy-use/ios-mam-policy-settings).
 
-- **Skype Vállalati verzió Androidra és iOS-re.** Mostantól a Skype Vállalati verziót is beállíthatja [mobilalkalmazás-felügyeleti (MAM-) célként, regisztrálási szabályzatok nélkül](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). A felhasználók bejelentkezését követően a rendszer érvénybe lépteti a MAM-szabályzatokat.
+- **Skype Vállalati verzió Androidra és iOS-re.** Mostantól a Skype Vállalati verziót is beállíthatja [mobilalkalmazás-felügyeleti (MAM-) célként, regisztrálási szabályzatok nélkül](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). A felhasználók bejelentkezését követően a rendszer érvénybe lépteti a MAM-szabályzatokat.
 
 - **MAM-szabályzatokkal való felügyeletre alkalmas új alkalmazások.** Az androidos Microsoft Word, Excel és PowerPoint alkalmazáshoz mostantól az Intune-ban nem regisztrált eszközökön is MAM-szabályzatok társíthatók. A támogatott alkalmazások teljes listájának megtekintéséhez keresse fel a Microsoft Intune mobilalkalmazás-galériát a [Microsoft Intune alkalmazáspartnerek](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) oldalán.
 
@@ -305,7 +305,7 @@ Az Intune értesítési szabályai határozzák meg, hogy kinek küld értesít�
 Mindezeket a funkciókat a hibrid ügyfelek is támogatják (tehát az Intune-nal integrált Configuration Manager is).
 ### Alkalmazáskezelés
 - **A felhasználók mobilalkalmazás-felügyeleti megfelelősége.**
-Már az Azure Active Directory- (AAD-) bérlőben szereplő bármely felhasználónál megtekintheti az alkalmazásfelügyeleti házirendek [állapotát](monitor-mobile-app-management-policies-with-Microsoft-Intune.md). Ez a következő teendőket foglalja magában:
+Már az Azure Active Directory- (AAD-) bérlőben szereplő bármely felhasználónál megtekintheti az alkalmazásfelügyeleti házirendek [állapotát](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune). Ez a következő teendőket foglalja magában:
    - Eszközök
    - Alkalmazások az eszközön
 
@@ -317,7 +317,7 @@ Már az Azure Active Directory- (AAD-) bérlőben szereplő bármely felhasznál
 
 
 - **Az Outlook-névjegyek szinkronizálásának megakadályozása mobilalkalmazás-felügyelettel (Android).**
-Új beállítás érhető el a [mobilalkalmazások eszközregisztráció nélküli felügyeletéhez](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md). Ezzel a beállítással megakadályozhatja, hogy az alkalmazás szinkronizálja a névjegyeket a natív címjegyzékbe az Android-eszközökön. Ha a beállítás engedélyezve van, a megcélzott alkalmazások nem menthetnek névjegyeket a natív címjegyzékbe. Ha a beállítás nincs engedélyezve, a megcélzott alkalmazások menthetik a névjegyeket a natív címjegyzékbe. Amikor [távolról törli egy eszköz vagy alkalmazás tartalmát](wipe-managed-company-app-data-with-Microsoft-Intune.md), a natív címjegyzék mentett összes névjegy törlődni fog. Ezt az új beállítást már az Android-eszközökön elérhető Outlook alkalmazás is támogatja.
+Új beállítás érhető el a [mobilalkalmazások eszközregisztráció nélküli felügyeletéhez](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune). Ezzel a beállítással megakadályozhatja, hogy az alkalmazás szinkronizálja a névjegyeket a natív címjegyzékbe az Android-eszközökön. Ha a beállítás engedélyezve van, a megcélzott alkalmazások nem menthetnek névjegyeket a natív címjegyzékbe. Ha a beállítás nincs engedélyezve, a megcélzott alkalmazások menthetik a névjegyeket a natív címjegyzékbe. Amikor [távolról törli egy eszköz vagy alkalmazás tartalmát](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), a natív címjegyzék mentett összes névjegy törlődni fog. Ezt az új beállítást már az Android-eszközökön elérhető Outlook alkalmazás is támogatja.
 
 ### Eszközkezelés
 - **A céges eszközök telefonszámos azonosítása.** A „Céges” eszközként besorolt telefonokat a rendszer már a teljes telefonszámukkal azonosítja, például amikor jelentést készít a mobileszközkészletről. A BYOD-eszközök telefonszámai továbbra is **** karakterekkel maszkolva, csak az utolsó 4 számjegyükkel jelennek meg.
@@ -377,7 +377,7 @@ A Windows 10-hez tartozó általános konfigurációs házirend frissítésének
 
 ### Alkalmazáskezelés
 
-- **Éljen az iOS harmadik fél által nyújtott, MDM-megoldásokban regisztrált eszközök „Megnyitás ezzel” típusú kezelésének előnyével** A harmadik felek által nyújtott mobileszköz-kezelési forgalmazójával kihasználhatja az iOS „Megnyitás ezzel” típusú kezelését. Korlátozásokat állíthat be a konfigurációs profil beállításaiban, és az [iOS-alkalmazások közti adatátvitel kezelésével](manage-data-transfer-between-ios-apps-with-microsoft-intune.md) telepítheti az alkalmazást.
+- **Éljen az iOS harmadik fél által nyújtott, MDM-megoldásokban regisztrált eszközök „Megnyitás ezzel” típusú kezelésének előnyével** A harmadik felek által nyújtott mobileszköz-kezelési forgalmazójával kihasználhatja az iOS „Megnyitás ezzel” típusú kezelését. Korlátozásokat állíthat be a konfigurációs profil beállításaiban, és az [iOS-alkalmazások közti adatátvitel kezelésével](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune) telepítheti az alkalmazást.
 
      Ez a módszer két fő előnnyel jár:
 
@@ -388,22 +388,22 @@ A Windows 10-hez tartozó általános konfigurációs házirend frissítésének
 - **A Microsoft Outlook alkalmazás kezelése MAM-szabályzatokkal az Intune-ban nem regisztrált eszközökön** Mostantól az Intune mobilalkalmazás-kezelési szabályzatával kezelheti a Microsoft Outlook alkalmazást az Intune-ban nem regisztrált eszközökön. A frissített Microsoft Outlook alkalmazás a MAM-képességekkel az [iOS-](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) és [Android-](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook)eszközökhöz is elérhető. A [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése](https://technet.microsoft.com/library/mt627829.aspx) témakörben található utasításokkal hozzon létre egy MAM-házirendet.  
 
 
-- **A mobilalkalmazások konfigurációs szabályzataival rugalmasabban szabhatja meg az iOS-alkalmazások felhasználói adatait** Megadhat olyan felhasználói beállításokat, amelyekre az iOS-alkalmazásoknak szükségük lehet a megnyitásukkor. Megadhat például egy hálózati portot vagy egy felhasználónevet. Részletes leírás: [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
+- **A mobilalkalmazások konfigurációs szabályzataival rugalmasabban szabhatja meg az iOS-alkalmazások felhasználói adatait** Megadhat olyan felhasználói beállításokat, amelyekre az iOS-alkalmazásoknak szükségük lehet a megnyitásukkor. Megadhat például egy hálózati portot vagy egy felhasználónevet. Részletes leírás: [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 
 - **Az Adobe Reader for Microsoft Intune telepítése a vállalata Intune-ban kezelt iOS-eszközeire ** Az Adobe Reader iOS-alkalmazás már regisztrált eszközökön is kezelhető az Intune mobilealkalmazás-kezelési házirendjével.
 
-- **A telepített webklipeknek a felügyelt böngészőben való megnyitása** Célzott webklipeket telepíthet, amelyek csak a felügyelt böngészővel nyithatók meg az iOS- és Android-eszközökön. Vállalati erőforrásokra mutató hivatkozásokat telepíthet például a Vállalati portálon keresztül, és amikor a felhasználók megnyitják a hivatkozásokat, azok közvetlenül a felügyelt böngészőben nyílnak meg, ahol a MAM-házirend védi őket. Részletes leírás: [Alkalmazások telepítése](deploy-apps.md).
+- **A telepített webklipeknek a felügyelt böngészőben való megnyitása** Célzott webklipeket telepíthet, amelyek csak a felügyelt böngészővel nyithatók meg az iOS- és Android-eszközökön. Vállalati erőforrásokra mutató hivatkozásokat telepíthet például a Vállalati portálon keresztül, és amikor a felhasználók megnyitják a hivatkozásokat, azok közvetlenül a felügyelt böngészőben nyílnak meg, ahol a MAM-házirend védi őket. Részletes leírás: [Alkalmazások telepítése](/intune/deploy-use/deploy-apps).
 
 
-- **Windows 10-eszközökre készült Vállalati Windows Áruház alkalmazásainak keresése, kezelése és elosztása az Intune rendszergazdai konzolból** Az Intune támogatást nyújt a Vállalati Windows Áruházhoz, így könnyebben kereshet, kezelhet és oszthat el alkalmazásokat a kezelt Windows 10-eszközei között. A Vállalati Windows Áruházzal kezelheti ezen alkalmazások telepítését és megfigyelését az Intune felügyeleti konzoljáról – ugyanarról a konzolról, amellyel a többi alkalmazást is kezeli. A Vállalati Windows Áruház az „online licencelt alkalmazások” tartalmát és licencelését felügyeli. Részletes leírás: [A Vállalati Windows Áruházban vásárolt alkalmazások kezelése](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
+- **Windows 10-eszközökre készült Vállalati Windows Áruház alkalmazásainak keresése, kezelése és elosztása az Intune rendszergazdai konzolból** Az Intune támogatást nyújt a Vállalati Windows Áruházhoz, így könnyebben kereshet, kezelhet és oszthat el alkalmazásokat a kezelt Windows 10-eszközei között. A Vállalati Windows Áruházzal kezelheti ezen alkalmazások telepítését és megfigyelését az Intune felügyeleti konzoljáról – ugyanarról a konzolról, amellyel a többi alkalmazást is kezeli. A Vállalati Windows Áruház az „online licencelt alkalmazások” tartalmát és licencelését felügyeli. Részletes leírás: [A Vállalati Windows Áruházban vásárolt alkalmazások kezelése](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 
 ### Eszközkezelés
-- **PFX-tanúsítványok elosztása iOS-eszközökön** Az Intune-rendszergazdák iOS PFX-tanúsítványokat hozhatnak létre és telepíthetnek a Wi-Fi-, e-mail- és VPN-hitelesítéshez az iOS-eszközökön. Ez a funkció már elérhető az Android- és Windows 10-es eszközökhöz. Részletes leírás: [Vállalati erőforrások elérésének lehetővé tétele tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
+- **PFX-tanúsítványok elosztása iOS-eszközökön** Az Intune-rendszergazdák iOS PFX-tanúsítványokat hozhatnak létre és telepíthetnek a Wi-Fi-, e-mail- és VPN-hitelesítéshez az iOS-eszközökön. Ez a funkció már elérhető az Android- és Windows 10-es eszközökhöz. Részletes leírás: [Vállalati erőforrások elérésének lehetővé tétele tanúsítványprofilokkal](/intune/deploy-use/secure-resource-access-with-certificate-profiles).
 
 
-- **Alkalmazások és házirendek alkalmazása különböző eszközcsoportokra a felhasználói kategóriák alapján** Az Intune-rendszergazdák mostantól egyéni eszközkategóriákat határozhatnak meg, amelyekből a felhasználók válogathatnak a regisztrálás során. A rendszergazdák például azt kívánhatják, hogy a felhasználóik adják meg, hogy a „Pénztárhoz”, „Szállítójárműhöz” vagy „Leltárhoz” használt eszközt regisztrálnak-e. A kiválasztott kategória miatt az eszköz egy Intune-eszközcsoport tagjává válik, amely különböző alkalmazások és házirendek a regisztrált eszközre való telepítéséhez használható. Részletes leírás: [Eszközök kategorizálása eszközcsoport-leképezéssel](categorize-devices-with-device-group-mapping-in-microsoft-intune.md).
+- **Alkalmazások és házirendek alkalmazása különböző eszközcsoportokra a felhasználói kategóriák alapján** Az Intune-rendszergazdák mostantól egyéni eszközkategóriákat határozhatnak meg, amelyekből a felhasználók válogathatnak a regisztrálás során. A rendszergazdák például azt kívánhatják, hogy a felhasználóik adják meg, hogy a „Pénztárhoz”, „Szállítójárműhöz” vagy „Leltárhoz” használt eszközt regisztrálnak-e. A kiválasztott kategória miatt az eszköz egy Intune-eszközcsoport tagjává válik, amely különböző alkalmazások és házirendek a regisztrált eszközre való telepítéséhez használható. Részletes leírás: [Eszközök kategorizálása eszközcsoport-leképezéssel](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
 
 ### A Microsoft Munkahelyi portál szolgáltatásának módosításai és frissítései
 Ebben a kiadásban a következő módosításokat vezettük be a Munkahelyi portál szolgáltatásban.
@@ -447,9 +447,9 @@ Ebben a kiadásban a következő módosításokat vezettük be a Munkahelyi port
     * Biztonságos rendszerindítás
     * Kódintegritás
 
-    Az eszközállapot beállításával, az összegyűjtött adatpontokkal és az eszközállapot-jelentéssel kapcsolatos részleteket lásd: [Bevezetés a Microsoft Intune eszközmegfelelőségi házirendjeinek kezelésébe](introduction-to-device-compliance-policies-in-microsoft-intune.md). A [HAS szolgáltatás részletei](https://msdn.microsoft.com/en-us/library/dn934876.aspx) című témakör részletesen leírja a szolgáltatást.
+    Az eszközállapot beállításával, az összegyűjtött adatpontokkal és az eszközállapot-jelentéssel kapcsolatos részleteket lásd: [Bevezetés a Microsoft Intune eszközmegfelelőségi házirendjeinek kezelésébe](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune). A [HAS szolgáltatás részletei](https://msdn.microsoft.com/en-us/library/dn934876.aspx) című témakör részletesen leírja a szolgáltatást.
 
-* **Windows 10 Passport for Work házirend- és tanúsítványkezelés** Az Intune lehetővé teszi az [integrációt a Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) nevű Windows 10-es alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett. A Passport lehetővé teszi jelszó helyett felhasználói kézmozdulatok használatát a bejelentkezéshez. A felhasználói hitelesítési mód lehet egy egyszerű PIN-kód, biometrikus hitelesítés, mint például a Windows Hello, vagy egy külső eszköz, például egy ujjlenyomat-olvasó.
+* **Windows 10 Passport for Work házirend- és tanúsítványkezelés** Az Intune lehetővé teszi az [integrációt a Microsoft Passport for Work](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) nevű Windows 10-es alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett. A Passport lehetővé teszi jelszó helyett felhasználói kézmozdulatok használatát a bejelentkezéshez. A felhasználói hitelesítési mód lehet egy egyszerű PIN-kód, biometrikus hitelesítés, mint például a Windows Hello, vagy egy külső eszköz, például egy ujjlenyomat-olvasó.
 
 * **VPN-csatlakozás választott alkalmazásokban** Kiválaszthat olyan alkalmazásokat, amelyek automatikusan csatlakoznak a vállalati hálózathoz VPN-kapcsolaton keresztül. A VPN-profil beállításakor létrehozhatja az alkalmazások listáját a Segítség a felhasználóknak a munkájukhoz való csatlakozásban VPN-profilok használatával a Microsoft Intune-nal című részben leírtak alapján.
 
@@ -457,10 +457,10 @@ Ebben a kiadásban a következő módosításokat vezettük be a Munkahelyi port
 
 
 ### Az Apple Volume Purchase program (VPP) frissítése
-Az Intune most segít [az Apple Volume Purchase Program (VPP) for Business programon keresztül vásárolt alkalmazások felügyeletében](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). Ebbe beletartozik a licencinformációk az Apple és az Intune közötti szinkronizálása és annak nyomon követése, hogy az egyes alkalmazások hány példánya van telepítve.
+Az Intune most segít [az Apple Volume Purchase Program (VPP) for Business programon keresztül vásárolt alkalmazások felügyeletében](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune). Ebbe beletartozik a licencinformációk az Apple és az Intune közötti szinkronizálása és annak nyomon követése, hogy az egyes alkalmazások hány példánya van telepítve.
 
 ### Vállalati tulajdonú eszközök azonosítása IMEI számokkal
-[Nemzetközi mobilkészülék-azonosító (IMEI) számokat importálhat](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsa a vállalati tulajdonban lévő mobileszközöket. Az Intune-ban történő regisztráció után az importált IMEI-számokkal rendelkező eszközök Vállalati címkével rendelkeznek, amellyel a személyes eszközökre alkalmazott házirendektől eltérő házirendek alkalmazhatók.
+[Nemzetközi mobilkészülék-azonosító (IMEI) számokat importálhat](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsa a vállalati tulajdonban lévő mobileszközöket. Az Intune-ban történő regisztráció után az importált IMEI-számokkal rendelkező eszközök Vállalati címkével rendelkeznek, amellyel a személyes eszközökre alkalmazott házirendektől eltérő házirendek alkalmazhatók.
 
 ### Mostantól több alkalmazás kompatibilis az Intune MAM-házirendekkel
 Mostantól a Microsoft partnereinek további alkalmazásai kompatibilisek az Intune mobilalkalmazás-kezelési (MAM-) házirendjeivel (az Intune által felügyelt eszközökhöz):
@@ -479,6 +479,6 @@ Mostantól a Microsoft partnereinek további alkalmazásai kompatibilisek az Int
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
