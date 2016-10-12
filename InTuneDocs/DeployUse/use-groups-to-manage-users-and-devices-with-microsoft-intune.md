@@ -4,7 +4,7 @@ description: "Csoportok létrehozása és kezelése a Csoportok munkaterület ha
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ba
 
 >[!IMPORTANT]
 >
->Ha az Intune-portál Csoportok munkaterületét megnyitva megjelenik egy hivatkozás, amely az Azure Active Directory (Azure AD) portálra mutat, akkor ön már az Intune *új* Azure AD biztonságicsoport-alapú csoportkezelését használja, amelynek ismertetése az [Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) című részben található. Kattintson az Azure AD-portálra mutató hivatkozásra. Az Azure Ad biztonsági csoportok használatáról lásd: [Az erőforrásokhoz való hozzáférés felügyelete Azure Active Directory-csoportokkal](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Ha az Intune-portál Csoportok munkaterületét megnyitva megjelenik egy hivatkozás, amely az Azure Active Directory (Azure AD) portálra mutat, akkor ön már az Intune *új* Azure AD biztonságicsoport-alapú csoportkezelését használja, amelynek ismertetése az [Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) című részben található. Kattintson az Azure AD-portálra mutató hivatkozásra.
+>
+>![Képernyőkép az Azure csoportfelügyeletre mutató hivatkozásról](../media/groups-link-azure.png) 
 >
 >Ha nem látja az Azure AD-portálra mutató hivatkozást, akkor Ön még a *jelenlegi* csoportkezelési módszert használja, amelynek leírása a jelen témakör [Csoportok létrehozása a felhasználók és eszközök kezeléséhez a Microsoft Intune-nal](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) című részében található.
 
@@ -42,7 +44,7 @@ A változás jelen pillanatban nem érinti Önt. A jövőben azonban:
 
 
 ### Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
-Az aktuális Intune-ügyfelek áttelepítését fokozatosan végezzük. Az áttelepítés ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. Az áttelepítés előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az <intunegrps@microsoft.com> címen.
+Az aktuális Intune-ügyfelek áttelepítését fokozatosan végezzük. Az áttelepítés ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. Az áttelepítés előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) címen. A csoportok áttelepítéséről a [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) (Csoportok áttelepítése az Azure Active Directoryba) című cikk nyújt tájékoztatást.
 
 ### Mi történik a meglévő felhasználó- és eszközcsoportjaimmal?
  Az Intune-ban létrehozott felhasználói csoportokat és eszközcsoportokat Azure AD biztonsági csoportokba telepítjük át. Az olyan alapértelmezett Intune-csoportokat, mint a Minden felhasználó, csak akkor telepítjük át, ha az áttelepítés időpontjában üzemelő példányokban használják őket. Bizonyos csoportok esetében az áttelepítés összetettebb művelet lehet. Értesíteni fogjuk, ha szervezetében az áttelepítéshez további lépésekre van szükség.
@@ -123,7 +125,7 @@ A csoporthierarchia is megjelenít állapotösszegzéseket, amelyek segítenek a
 
 5.  Az **Összegzés** lapon ellenőrizze a beállításokat, majd kattintson a **Befejezés** gombra.
 
-Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Ugyanitt szerkesztheti és törölheti is a csoportot.
+Az újonnan létrehozott csoport megjelenik a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Ugyanitt szerkesztheti és törölheti is a csoportot.
 
 ### Felhasználói csoport létrehozása
 
@@ -202,6 +204,6 @@ Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
