@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ Feltételes hozzáféréssel kiegészített megfelelőségi szabályzatokkal eng
 Megfelelőségi szabályzatokat feltételes hozzáféréstől függetlenül is használhat. Ilyen esetben a célzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Előfordulhat például, hogy arról szeretne jelentést, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak függetlenítve vagy feltörve. Feltételes hozzáféréstől független alkalmazás esetén azonban nem korlátozza a rendszer a vállalati erőforrásokhoz való hozzáférést.
 
 A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi.
+Arról, hogy üzembe helyezésük után mennyi idővel kapják meg a szabályzatot a mobileszközök, a [Az eszközök beállításainak és funkcióinak kezelése](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies) című cikk nyújt tájékoztatást.
 
 A következő táblázatban a megfelelőségi házirendek által támogatott eszköztípusok és a nem megfelelő beállítások kezelésének módja szerepel, amikor a házirendet feltételes hozzáférési házirenddel használják.
 
@@ -64,6 +65,6 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

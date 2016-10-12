@@ -13,16 +13,30 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 91385bdbe4aa4252311db106c04de7d04df5109c
-ms.openlocfilehash: 5e94e4efa5a3ecb055ce416c3ee8dd21e56bad65
+ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
+ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 
 
 ---
 
 # Mobileszköz-kezelés előfeltételei az Intune-ban
-Ha szeretné lehetővé tenni, hogy alkalmazottai regisztrálhassák az Intune-ban mobileszközeiket (például [Android](set-up-android-management-with-microsoft-intune.md), [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md) rendszerű eszközeiket, [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) rendszerű eszközeiket és [Windows rendszerű számítógépeiket](set-up-windows-device-management-with-microsoft-intune.md)), és hogy lehetővé tegye a vállalati tulajdonú eszközök felügyeletét, engedélyeznie kell az eszközregisztrációt. A regisztráció engedélyezéséhez először be kell állítania egy mobileszköz-kezelő (MDM) szolgáltatót, konfigurálnia kell az Intune Vállalati portált, ki kell osztania licenceket, és engedélyeznie kell a regisztrációt az adott eszközplatform számára.
+A következő lépésekkel teheti lehetővé az alkalmazottak számára, hogy regisztrálják a mobileszközüket az Intune-ban. Ugyanezek a lépések szükségesek a vállalat tulajdonában lévő eszközök esetében is.
 
-## A mobileszköz-kezelő szolgáltató beállítása
+|Lépések|Részletek|  
+|-----------|-------------|  
+|**1. lépés:** [Az eszközök regisztrációjának függőségei](#step-1-device-enrollment-dependencies)|Gondoskodjon róla, hogy az egyéni tartománynév konfigurálva legyen, és a hálózati kommunikáció készen álljon.|  
+|**2. lépés:** [Mobileszköz-kezelő szolgáltató megadása](#step-2-set-mobile-device-management-authority)|A mobileszköz-kezelő szolgáltató határozza meg az eszközökhöz hozzárendelt szolgáltatást.|
+|**3. lépés:** [Az Intune Vállalati portál konfigurálása](#step-3-configure-the-intune-company-portal)|Konfigurálja a Vállalati portál alkalmazás felhasználókat érintő beállításait.|  
+|**4. lépés:** [Intune felhasználói licencek hozzárendelése](#step-4-assign-intune-user-licenses)|Rendeljen Intune-licencet a felhasználókhoz, hogy regisztrálhassák az eszközöket.|
+|**5. lépés:** [Az eszközkezelés beállítása](#step-5-set-up-device-management)|Engedélyezze az iOS- és Windows-felügyelet platformspecifikus beállításait. Az Android-eszközökhöz nincs szükség további konfigurálásra.|
+
+## 1. lépés: Az eszközök regisztrációjának függőségei
+
+A mobileszközök regisztrációjának engedélyezése előtt feltétlenül végezze el a következőket:
+- [Ellenőrizze a szükséges hálózati URL-címeket és -portokat.](../get-started/network-infrastructure-requirements-for-microsoft-intune)
+- [Vegye fel és ellenőrizze a tartományevet.](../get-started/domain-names-for-microsoft-intune)
+
+## 2. lépés: Mobileszköz-kezelő szolgáltató megadása
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
@@ -38,7 +52,7 @@ Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az
 
 3.  Az Intune annak megerősítését kéri, hogy be szeretné állítani MDM-szolgáltatóként. Jelölje be a jelölőnégyzetet, majd válassza az **Igen** lehetőséget a Microsoft Intune mobileszközök kezelésére történő használatához.
 
-## Az Intune Vállalati portál konfigurálása
+## 3. lépés: Az Intune Vállalati portál konfigurálása
 
 A felhasználók az Intune Vállalati portálon érhetik el a vállalati adatokat, és olyan gyakori feladatokat hajthatnak végre, mint például az eszközök regisztrálása, az alkalmazások telepítése és az informatikai támogatási információk megtekintése.
 
@@ -79,14 +93,14 @@ A Vállalati portál testre szabható a vállalat emblémájának és nevének, 
     |----------|----------------|
     |Téma színe|A Vállalati portálra alkalmazni kívánt témaszín kiválasztása.|
     |Cég emblémájának megjelenítése|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. Mindkét emblémának egy .png vagy .jpg formátumú fájlnak kell lennie, melyek felbontása legfeljebb 400 x 100 képpont, mérete pedig legfeljebb 750 KB lehet.|
-    |Háttér választása a [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Vállalati portál alkalmazás számára|Ez a beállítás csak a [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Vállalati portál alkalmazás hátterére van hatással.|
+    |Háttér választása a Vállalati portál alkalmazás számára|Ez a beállítás csak a Vállalati portál alkalmazás hátterére van hatással.|
 
 
 A módosítások mentése után a felügyeleti konzol **Vállalati portál** lapjának alján található hivatkozásokra kattintva megtekintheti a Vállalati portál webhelyét. Ezek a hivatkozások nem módosíthatók. A felhasználók bejelentkezésekor ezek a hivatkozások a Vállalati portálon megjelenítik az Ön előfizetéseit.
 
-## Intune felhasználói licenc hozzárendelése
+## 4. lépés: Intune felhasználói licencek hozzárendelése
 
-Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is.
+Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is. [Szinkronizálhatja a helyszíni felhasználókat az Azure AD-be](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
 1.  Jelentkezzen be az [Office 365 felügyeleti portálján](https://portal.office.com/Admin/Default.aspx) bérlői rendszergazdai hitelesítő adataival.
 
@@ -94,7 +108,14 @@ Az **Office 365 felügyeleti portál** használatával a felhőalapú felhaszná
 
 3.  A felhasználói fiók ezzel bekerül a Microsoft Intune felhasználói csoportba, amely engedélyt ad a felhasználónak a szolgáltatás használatára és eszközeinek felügyeletre való regisztrálására.
 
-## Eszközkezelés beállítása
+### Helyszíni felhasználók szinkronizálása az Azure AD szolgáltatással
+
+1. [Adja hozzá az egyszerű felhasználónévi utótagot](https://technet.microsoft.com/en-us/library/cc772007.aspx) az egyéni tartományhoz a helyszíni Active Directoryban.
+2. Állítsa be az egyszerű felhasználónévi utótagot az importálni kívánt helyszíni felhasználóknak.
+3. Futtassa [az Azure AD Connect szinkronizálási szolgáltatást](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) a helyszíni felhasználók az Azure AD-val való integrálásához.
+4. Miután a felhasználói fiókok adatait sikeresen szinkronizálta, az [Office 365 felügyeleti portállal](https://portal.office.com/Admin/Default.aspx) hozzájuk rendelheti a Microsoft Intune-licenceket.
+
+## 5. lépés: Az eszközkezelés beállítása
 A mobileszköz-kezelő szolgáltató beállítása után meg kell adnia az eszközkezelési beállításokat a szervezet által támogatni kívánt operációs rendszerekhez. Az eszközkezelés beállításához szükséges lépések operációs rendszertől függően eltérhetnek. Android operációs rendszer esetén például semmit sem kell megadnia az Intune felügyeleti konzolon. Windows- és iOS-eszközökön azonban a felügyelet engedélyezéséhez megbízhatósági kapcsolatot kell beállítani az eszközök és az Intune között.
 
 Az eszközkezelés beállítása a következő platformokhoz:
@@ -109,6 +130,6 @@ További lehetőségek:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

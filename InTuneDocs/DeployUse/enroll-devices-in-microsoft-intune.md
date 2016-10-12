@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6b182ebab1691c62e69cabaf4689ac7395ab31a
-ms.openlocfilehash: 0995d3ced978f5213fdb0e9905f508b64a1e5c09
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 145d373edd65d7ba01c696c3b851692a13831dad
 
 
 ---
@@ -35,17 +35,24 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit és az ál
 
 | **Módszer** |  **Törlés** |  **Affinitás**    |   **Zárolás** | **Részletek** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | [Részletesen...](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [Részletesen...](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Nem |Nem |Nem  | [Részletesen...](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[Részletesen...](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**| Igen |   Nem kötelező megadni |  Nem| [Részletesen...](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[Részletesen...](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Windows- és Android-eszközök regisztrálási módszerei**
+**Windows-eszközök regisztrálási módszerei**
 
 | **Módszer** |  **Törlés** |  **Affinitás**    |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | [Részletesen...](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | Igen|   Igen |   Nem | [Részletesen...](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  |[Részletesen...](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android-eszközök regisztrálási módszerei**
+
+| **Módszer** |  **Törlés** |  **Affinitás**    |   **Zárolás** | **Részletek**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [Részletesen...](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Nem |Nem |Nem  |[Részletesen...](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 A megfelelő módszer kiválasztásában segít az [Eszközök regisztrálási módjának kiválasztása](/intune/get-started/choose-how-to-enroll-devices1) című témakörben található kérdéssor.
@@ -111,6 +118,6 @@ Az Intune a következő eszközplatformokat képes kezelni:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

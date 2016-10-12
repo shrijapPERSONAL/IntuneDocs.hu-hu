@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ A rendszergazda csak a Lookout for Work alkalmazás telepítését követően te
 
     ![nyissa meg a Lookout for Worköt és koppintson az Aktiválás gombra](./media/lookout-activate-button-android.png)
 
-4. Koppintson a **Bejelentkezés munkahelyi fiókkal** gombra, majd lépjen be abba a fiókba, amelyet a munkahelyi vagy iskolai e-mailekhez és fájlokhoz való hozzáféréshez használ.
+4. Koppintson a **Bejelentkezés a következővel: Azure Active Directory** gombra, majd lépjen be abba a fiókba, amelyet a munkahelyi vagy iskolai e-mailek és fájlok elérésére használ.
 
-    ![bejelentkezés a munkahelyi vagy iskolai fiókba](./media/lookout-sign-in-android.png)
+    ![bejelentkezés a munkahelyi vagy iskolai fiókba](./media/lookout-sign-in-azure-android.png)
 
 5. Válassza ki azt a fiókot, amit munkahelyi vagy iskolai e-mailekhez és fájlokhoz való hozzáféréshez használ, majd koppintson a **FIÓK HOZZÁADÁSA** gombra.
 
@@ -78,6 +78,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

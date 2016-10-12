@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
+ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 
 
 ---
@@ -68,7 +68,7 @@ A következő diagram azt a folyamatot mutatja be, amelyet a helyszíni Exchange
 
 -   Natív e-mail alkalmazás iOS rendszerű eszközökön.
 
--   Natív e-mail alkalmazás Android 4 vagy újabb rendszerű eszközökön
+-   EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban
 > [!NOTE]
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
 
@@ -123,6 +123,6 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

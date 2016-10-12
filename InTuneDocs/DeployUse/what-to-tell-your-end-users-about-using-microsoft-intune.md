@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 40a641d807c3ad73079a5d2e130b00c2065da6cb
 
 
 ---
@@ -23,19 +23,16 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 # Mit kell tudniuk a végfelhasználóknak az Intune használatáról?
 
-Az itt szereplő hivatkozások és információk a következőkben segítenek:
-
-- Megismerni, hogy a felhasználóknak milyen lépéseket kell tenniük az Intune-ban különböző feladatok végrehajtásához.
-- Az információk átadásával segíthet a felhasználóknak elvégezni a megfelelő lépéseket és megoldani az esetleges problémákat az Intune használata során.
+Az itt közölt hivatkozások azokat a lépéseket mutatják be, amelyekkel a felhasználók különféle műveleteket végezhetnek az Intune-ban.
 
 Ne felejtse el megadni a rendszergazda kapcsolattartási adatait a [Vállalati portál testreszabásakor](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7), hogy a felhasználók szükség esetén tudjanak segítséget kérni.
 
 
-## Hol találnak a végfelhasználók információt a gyakori feladatokról?
+## A végfelhasználói útmutatók és hibaelhárítási információk megkeresése
 
-Amikor a regisztrált felhasználók segítséget keresnek az Intune használatához, rendszerint egy olyan hivatkozást találnak a Vállalati portál webhelyen vagy alkalmazásban, amely a probléma megoldásához vagy a feladat végrehajtásához szükséges lépéseket ismertető cikkre mutat. Ha például egy Android-felhasználó egy olyan üzenetet lát, amely arról tájékoztatja, hogy nem rendelkezik egy szükséges tanúsítvánnyal, akkor az „Útmutató a probléma megoldásához” hivatkozásra kattintva megnyithat egy cikket, amely ismerteti a tanúsítvány beszerzésének módját. 
+A Vállalati portál webhely és a Vállalati portál alkalmazás a regisztrált felhasználók számára megjeleníti a „További információ” vagy az „Útmutató a probléma megoldásához” hivatkozást, amely a probléma megoldásához vagy a feladat végrehajtásához szükséges lépéseket ismertető cikkre mutat. Ha például egy Android-felhasználó egy olyan üzenetet lát az androidos Vállalati portál alkalmazásban, amely arról tájékoztatja, hogy nem rendelkezik egy szükséges tanúsítvánnyal, akkor a hivatkozásra koppintva megnyithat egy cikket, amely ismerteti a tanúsítvány beszerzésének módját. 
 
-Az alábbi hivatkozások a rendszergazdáknak szólnak. Ezek az oldalak hivatkozásokat tartalmaznak az összes olyan cikkre, amelyhez a Vállalati portál a felhasználókat irányítja. A hivatkozások különböző szakaszokra oszlanak: a Vállalati portál alkalmazás telepítése és az Intune-regisztráció; a felhasználók által az eszközökön végrehajtható feladatok, például a felügyelt alkalmazások használata és az eszközök manuális szinkronizálása, valamint a hibaelhárítás.
+A következő hivatkozások között minden olyan cikk szerepel, amelyre a felhasználók eljuthatnak a Vállalati portálról. A hivatkozások különböző szakaszokra oszlanak: a Vállalati portál alkalmazás telepítése és az Intune-regisztráció; a felhasználók által az eszközökön végrehajtható általános műveletek, valamint a hibaelhárítás.
 
 - [Android-eszköz használata az Intune-nal](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -43,12 +40,11 @@ Az alábbi hivatkozások a rendszergazdáknak szólnak. Ezek az oldalak hivatkoz
 - [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## A felhasználók számára testreszabható regisztrálási útmutatók és sablonok
+## A felhasználók számára testreszabható regisztrálási útmutatók
 
-- [Testreszabható végfelhasználói Intune-regisztrálási sablon rendszergazdák számára](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) – Testreszabható Word-dokumentum, amely részletesen, képernyőfelvételekkel mutatja be a felhasználó általi regisztrálás lépéseit iOS-, Mac OS X- és Android-eszközökön. A dokumentumot módosítás nélkül is használhatja, vagy igény szerint személyre szabhatja az útmutatást, mielőtt elérhetővé tenné végfelhasználói számára.</br></br>
-- [Kétoldalas testreszabható dokumentum a regisztráláshoz, a regisztrálás törléséhez, az alkalmazások letöltéséhez és más feladatok elvégzéséhez szükséges lépésekről, beágyazott videókkal](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content) – A dokumentum igény szerint módosítható és terjeszthető a végfelhasználók körében. A dokumentum különböző szakaszai ismertetik az Android-, iOS- és Windows-alapú eszközök regisztrálását, az alkalmazások letöltését, a regisztrálás törlését, a teendőket az eszköz elvesztése esetén, valamint azt, hogy az informatikusok mit láthatnak és mit nem láthatnak a felhasználó eszközén.
+Ezzel a [rendszergazdáknak készült, testreszabható, végfelhasználói Intune-regisztrációs sablonnal](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) elkészítheti saját regisztrációs útmutatóját a végfelhasználóknak. Ez a Word-dokumentum részletesen, képernyőfelvételekkel mutatja be a végfelhasználó általi regisztrálás lépéseit iOS-, Mac OS X- és Android-eszközökön. 
 
-##A végfelhasználói alkalmazások letöltése
+## A végfelhasználói alkalmazások letöltése
 
 Ha szeretné megtudni, hogy a végfelhasználók hogyan tölthetnek le alkalmazásokat, válasszon az alábbi eszközplatformok közül:
 
@@ -63,6 +59,6 @@ Ha szeretné, hogy a jelen cikk más információkra is kitérjen, kérjük, jav
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -2,12 +2,13 @@
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Üzembe helyezés és használat](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Az eszközök és alkalmazások életciklusának áttekintése](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Eszközök életciklusa](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Alkalmazások életciklusa](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Eszközök regisztrálása](enroll-devices-in-microsoft-intune.md)
-### [Felkészülés az eszközök Intune-beli regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Az MDM előfeltételei](prerequisites-for-enrollment.md)
 #### [iOS- és Mac-eszközök kezelése](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android-kezelés](set-up-android-management-with-microsoft-intune.md)
 #### [Windowsos eszközök kezelése ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [Hálózati hozzáférés korlátozása (Cisco ISE)](restrict-access-to-networks.md)
 ### [Hozzáférés korlátozása eszközök, hálózat és alkalmazáskockázat alapján](restrict-access-based-on-device-network-app-risk.md)
-#### [A Lookout MTP beállítása](set-up-your-subscription-with-lookout-mtp.md)
+#### [A Lookout veszélyforrások elleni védelem konfigurálása](set-up-your-subscription-with-lookout-mtp.md)
 #### [A Lookout engedélyezése az Intune-ban](enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work-alkalmazások telepítése](configure-and-deploy-lookout-for-work-apps.md)
 #### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -134,15 +135,11 @@
 
 ## [Mit kell tudniuk a végfelhasználóknak](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [Áttérés az Intune-ra](migrate-to-intune.md)
-
-## [Újdonságok](whats-new-in-microsoft-intune.md)
-
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -13,21 +13,27 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
-ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
+ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
+ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
 
 
 ---
 
 # Az üzleti alkalmazások és az adatok védelme a nem regisztrált eszközökön a Microsoft Intune-ban
 
-A mobilalkalmazás-kezelési (MAM) házirendek korlátozzák az adatáthelyezést (például a másolást és a beillesztést), valamint megakadályozzák, hogy a felhasználók vállalati dokumentumokat mentsenek a személyes helyekre, így védik a vállalati adatait.   A MAM-szabályzatok iOS vagy Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást.  Az alkalmazásburkolás az a folyamat, amely során kezelési réteggel lát el egy mobilalkalmazást anélkül, hogy a mögöttes alkalmazást bárhogyan módosítaná.  Az alkalmazást a burkolása után MAM-szabályzattal láthatja el, és kioszthatja végfelhasználói között.  
+A mobilalkalmazás-felügyeleti (Mobile app management, MAM) szabályzatok azzal segítenek megvédeni a vállalati adatokat, hogy korlátozzák a vállalati adatok kiszivárgását kockáztató műveleteket, és betartatják az adatelérési követelményeket, például megkövetelik az alkalmazás PIN-kódját. A MAM-szabályzatok iOS vagy Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást.  Az alkalmazásburkolás az a folyamat, amely során kezelési réteggel lát el egy mobilalkalmazást anélkül, hogy a mögöttes alkalmazást bárhogyan módosítaná.  Az alkalmazást a burkolása után MAM-szabályzattal láthatja el, és kioszthatja végfelhasználói között.  
 
-Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti eszközökön** és a **harmadik fél által nyújtott mobileszköz-kezelési (MDM) megoldások** által felügyelt eszközökön futó alkalmazásokhoz való hozzárendelését.  Az **Intune-ban regisztrált eszközökön futó üzleti alkalmazások** előkészítéséhez tekintse meg az [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) című cikket.
+Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti eszközökön** és a **harmadik fél által nyújtott mobileszköz-kezelési (MDM) megoldások** által felügyelt eszközökön futó alkalmazásokhoz való hozzárendelését.  Az **Intune MDM-ben regisztrált eszközökön futó üzleti alkalmazások** előkészítéséhez tekintse meg az [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) című cikket.
+
+
 ##  1. lépés: Az alkalmazás előkészítése
-Mielőtt MAM-szabályzatot rendelne egy alkalmazáshoz, először burkolnia kell az alkalmazást a Microsoft Intune alkalmazásburkolóval.  Az alkalmazásburkoló letöltési és használati útmutatója a letöltés részét képezi.  
+Mielőtt MAM-szabályzatot rendelne egy alkalmazáshoz, először burkolnia kell az alkalmazást a Microsoft Intune alkalmazásburkolóval.  Az alkalmazásburkoló eszköz letöltéséről és használatáról a következő lapokon olvashat útmutatást:
+
+- [iOS-alkalmazások mobilalkalmazás-felügyeletre való előkészítése az alkalmazásburkoló eszközzel](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez az Intune App Wrapping Tool eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->Az alkalmazásburkoló ezen verziója, amely az Intune-ban nem regisztrált alkalmazásokat támogatja, elérhető nyilvános előzetes verzióban. Ha szeretne részt venni a nyilvános előzetes verzió tesztelésében, akkor iOS-re [erről a github-lapról](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview), Androidra pedig [erről a github-webhelyről](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) töltse le az eszközt.
+>Az alkalmazásburkolónak ez a verziója, amely támogatja az Intune-ban nem regisztrált alkalmazásokat, iOS-re támogatott, Androidra pedig nyilvános előzetes verzióban érhető el. iOS-re [ebből a GitHub-adattárból](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), Androidra pedig [ebből a GitHub-adattárból](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) töltheti le az eszközt.
 
 ## 2. lépés: Az alkalmazás hozzáadása
 
@@ -75,6 +81,6 @@ Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el.  Ezzel
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

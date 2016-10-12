@@ -1,5 +1,5 @@
 ---
-title: "A hozzáférés korlátozása mobil veszélyforrások elleni védelemmel | Microsoft Intune"
+title: "A hozzáférés korlátozása mobil veszélyforrások elleni eszközvédelemmel | Microsoft Intune"
 description: "A vállalati erőforrásokhoz való hozzáférés korlátozása az eszköz-, a hálózati és az alkalmazáskockázat alapján."
 keywords: 
 author: karthikaraman
@@ -13,24 +13,24 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
 
 
 ---
 
 # A vállalati erőforrásokhoz való hozzáférés korlátozása az eszköz-, a hálózati és az alkalmazáskockázat alapján
-A Lookout, a Microsoft Intune-nal integrált mobil veszélyforrások elleni védelmi megoldás (MTP) kockázatértékelése alapján korlátozható a vállalati erőforrások elérése mobileszközökről. A kockázatértékelés a Lookout MTP szolgáltatás által gyűjtött, az operációs rendszer biztonsági réseivel, a telepített rosszindulatú alkalmazásokkal és a hálózati profilokkal kapcsolatos telemetrikus adatokon alapul. A kockázatértékelés alapján feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban, és engedélyezhetők vagy letilthatók azok az eszközök, amelyek az észlelt veszélyforrások alapján nem megfelelőnek minősülnek.  Jelenleg ez kizárólag a Microsoft Intune-ban regisztrált, **4.1-es vagy annál újabb** verziójú **Android** rendszert futtató eszközökön támogatott.  
+A Microsoft Intune tartalmazza a Lookout nevű, beépített veszélyforrások elleni eszközvédelmi megoldást. Az ez által elvégzett kockázatfelmérés alapján korlátozható a vállalati erőforrások mobileszközökről történő elérése. A kockázatfelmérés a Lookout szolgáltatás által gyűjtött, az operációs rendszer biztonsági réseivel, a telepített kártékony alkalmazásokkal és a hálózati profilokkal kapcsolatos telemetriai adatokon alapul. A kockázatértékelés alapján feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban, és engedélyezhetők vagy letilthatók azok az eszközök, amelyek az észlelt veszélyforrások alapján nem megfelelőnek minősülnek.  Jelenleg ez kizárólag a Microsoft Intune-ban regisztrált, **4.1-es vagy annál újabb** verziójú **Android** rendszert futtató eszközökön támogatott.  A Lookout által támogatott platformokról és nyelvekről [ez a cikk](https://personal.support.lookout.com/hc/en-us/articles/114094140253) nyújt tájékoztatást.
 ## Milyen problémára nyújt ez megoldást?
 A vállalatoknak és a szervezeteknek meg kell védeniük érzékeny adataikat a folyamatosan keletkező különböző veszélyforrásoktól, így a fizikai, az alkalmazás- és a hálózat alapú fenyegetésektől, valamint az operációs rendszer biztonsági réseitől.
 
 A vállalatok hagyományosan a számítógépeiket védték a rosszindulatú támadásoktól. A mobileszközök olyan új, feltörekvő területet jelentenek, ahol gyakran elégtelen a védelem. Jóllehet a mobilplatformok operációs rendszerei rendelkeznek olyan beépített védelmi technikákkal, mint az alkalmazások elkülönítése és az ellenőrzött alkalmazásáruházak, e platformok továbbra is sebezhetők az egyre kifinomultabb támadásokkal szemben. Ahogy az alkalmazottak egyre nagyobb mértékben használják mobileszközeiket munkára, és érzékeny és értékes információkhoz férnek hozzá ezekkel az eszközökkel, az eszközöket meg kell védeni a kifinomult támadások sokaságától.
 
-Az olyan MTP-megoldások, mint a Lookout által biztosított kockázatértékelés alapján az Intune lehetővé teszi a vállalati erőforrásokhoz és adatokhoz való hozzáférés ellenőrzését.
+Az Intune lehetővé teszi a vállalati erőforrásokhoz és adatokhoz való hozzáférésnek a Lookouthoz hasonló, veszélyforrások elleni védelmi megoldások által biztosított kockázatfelmérés alapján történő korlátozását.
 
-## Hogyan segít az Intune és a Lookout a vállalati erőforrások mobil veszélyforrások elleni védelmében?
-A Lookout mobileszközökön futó alkalmazása (Lookout for Work) rögzíti a fájlrendszer, a hálózati verem és az eszközök és alkalmazások telemetrikus adatait (ha ezek elérhetők), és továbbítja azokat a Lookout mobil veszélyforrások elleni védelmi (MTP) felhőszolgáltatás felé, amely kiszámítja az eszköz összesített kockázatát a mobil veszélyforrások tekintetében. Az MTP-konzolon a fenyegetések kockázatiszint-besorolása igény szerint módosítható.  
-Az Intune megfelelőségi szabályzata már tartalmaz egy új szabályt a Lookout mobil fenyegetések elleni védelemhez, amely a Lookout MTP kockázatértékelésén alapul. Ha ez a szabály engedélyezve van, akkor a Microsoft Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
+## Hogyan segít az Intune és a Lookout veszélyforrások elleni eszközvédelme a vállalati erőforrások védelmében?
+A Lookout mobileszközökön futó alkalmazása (Lookout for Work) rögzíti a fájlrendszer, a hálózati protokollkészlet valamint az eszközök és az alkalmazások telemetriai adatait (ha elérhetők), és továbbítja őket a Lookout veszélyforrások elleni eszközvédelmi felhőszolgáltatásnak, az pedig kiszámítja az eszköz összesített kockázatát a mobil veszélyforrások tekintetében. A Lookout konzolon igény szerint módosítható a fenyegetések kockázatiszint-besorolása.  
+Az Intune megfelelőségi szabályzata már tartalmaz egy új szabályt a Lookout fenyegetések elleni eszközvédelemhez, amely a Lookout kockázatfelmérésén alapul. Ha ez a szabály engedélyezve van, akkor a Microsoft Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
 
 Amennyiben az eszköz az értékelés alapján nem felel meg a megfelelőségi szabályzatnak, akkor feltételes hozzáférési szabályzatok segítségével letiltható a hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A hozzáférés letiltása esetén a rendszer biztosít egy forgatókönyvet a végfelhasználók részére, amelynek segítségével megoldhatják a problémát, és helyreállíthatják hozzáférésüket a vállalati erőforrásokhoz. Ez a forgatókönyv a Lookout for Work alkalmazásból indítható.
 
@@ -80,6 +80,6 @@ A legfontosabb lépések a megoldás megvalósítása érdekében:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
