@@ -151,7 +151,7 @@ A következő műveletekkel különböző kezelési feladatokat hajthat végre a
 Az Intune-konzol jobb alsó sarkában található **Távoli feladatok** hivatkozásra kattintva megtekintheti a távoli feladatok állapotát. A **Távoli feladat állapota** párbeszédpanelen áttekintheti az aktuális távoli feladatokat, a feladatok állapotát, az eszköz nevét és a jelentett hibákat. Ugyanitt talál a hibaelhárítási információkra mutató hivatkozást, ha vannak ilyenek.
 
 ## Az Endpoint Protection figyelése
-A **Microsoft Intune felügyeleti konzol** [Védelem](https://manage.microsoft.com/)munkaterületén figyelheti a számítógépeken lévő kártevő szoftverek állapotát. A munkaterület két lapból áll:
+A [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) **Védelem**munkaterületén figyelheti a számítógépeken lévő kártevő szoftverek állapotát. A munkaterület két lapból áll:
  - **Védelem áttekintése** – A fontos problémákat jeleníti meg hivatkozások formájában, amelyekre rákattintva további információkat érhet el. Többek között az alábbi problémák jelenhetnek meg:
   - **Követő műveletet igénylő kártevőszoftver-példányok** – a hivatkozásra kattintva megtekintheti a kártevőkkel kapcsolatos problémák listáját, beleértve a problémák elhárítása érdekében végrehajtandó utólagos műveleteket. A lista tovább részletezhető annak megtekintéséhez, hogy mely számítógépek érintettek.
   - **Számítógépek követő műveletet igénylő kártevő szoftverrel** – a hivatkozásra kattintva megtekintheti az összes, megoldatlan kártevőproblémával rendelkező számítógépet és a problémák elhárításához szükséges utólagos műveleteket.
