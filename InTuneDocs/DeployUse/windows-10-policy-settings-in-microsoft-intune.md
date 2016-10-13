@@ -4,7 +4,7 @@ description: "Az ebben a témakörben ismertetett szabályzatbeállítások seg�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ Minden egyes hozzáadni kívánt OMA-URI-beállításhoz adja meg a következő 
 - **Érték** – Adja meg a megadott OMA-URI azonosítóhoz társítandó értéket.
 
 ### Példa
-Az alábbi képernyőképen a **Conectivity/AllowVPNOverCellular** beállítást engedélyezték. Ez lehetővé teszi, hogy a Windows 10-es eszköz VPN-kapcsolatot nyisson meg mobilhálózaton keresztül.
+Az alábbi képernyőképen a **Connectivity/AllowVPNOverCellular** beállítást engedélyezték. Ez lehetővé teszi, hogy a Windows 10-es eszköz VPN-kapcsolatot nyisson meg mobilhálózaton keresztül.
 
 > ![VPN-beállításokat tartalmazó egyéni szabályzat – példa](./media/custom-policy-example.png)
 
@@ -326,6 +326,6 @@ Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

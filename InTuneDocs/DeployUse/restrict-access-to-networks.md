@@ -4,7 +4,7 @@ description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosí
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
-ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
 
 ---
@@ -102,13 +102,7 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 1.     A .cer X509 nyilvános tanúsítványfájlból szerezze be a base64-kódolású tanúsítvány-értéket és ujjlenyomatot. Ez a példa PowerShellt használ:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
  
     Tárolja el az értékeket a $base64Thumbprint, a $base64Value és a $keyid változókhoz, amelyeket a következő lépésben használ majd.
 2.       Töltse fel a tanúsítványt a jegyzékfájlon keresztül. Jelentkezzen be az [Azure felügyeleti portálra](https://manage.windowsazure.com)
@@ -117,27 +111,20 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 5.      Az üres “KeyCredentials”: [], tulajdonságot cserélje le a következő JSON-kódra.  A KeyCredentials összetett típus; leírása az [Entitások és összetett típusok segédletben](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) található.
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
+     ], 
  
 Példa:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Mentse az alkalmazás jegyzékfájlján végrehajtott módosítást.
 7.      Töltse fel a módosított alkalmazásjegyzék-fájlt az Azure felügyeleti központon keresztül.
@@ -200,6 +187,6 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
