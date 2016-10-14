@@ -4,7 +4,7 @@ description: "Az Intune a Windows Phone 8.1-eszközökön beállítható, beép�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ A Microsoft Intune **Windows Phone-eszközökhöz készült általános konfigur
 
 ### Jelszóbeállítások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|Igen|Igen|
-|**Kötelező jelszótípus**|Meghatározza a megkövetelt jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|Igen|
-|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. iOS-eszközök esetén azonban ez azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|Igen|Igen|
-|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|Igen|Igen|
-|**Egyszerű jelszavak engedélyezése**|Engedélyezi az egyszerű jelszavak (például a „0000”vagy az”1234”) használatát.|Igen|Igen|
-|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Meghatározza, hogy a felhasználó hányszor adhat meg helytelen jelszót, mielőtt a rendszer törölné az eszközt.|Igen|Igen|
-|**Képernyő kikapcsolása ennyi perc inaktivitás után**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő automatikus zárolása előtt.|Igen|Igen|
+|Beállítás neve|Részletek|
+|----------------|------|
+|**Jelszó szükséges a mobileszközök feloldásához**|Ez a beállítás azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközükhöz való hozzáféréshez.|
+|**Kötelező jelszótípus**|Meghatározza a megkövetelt jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
+|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**|Azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. iOS-eszközök esetén azonban ez azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|
+|**Jelszó minimális hossza**|A jelszóban használandó karakterek minimális számát határozza meg.|
+|**Egyszerű jelszavak engedélyezése**|Engedélyezi az egyszerű jelszavak (például a „0000”vagy az”1234”) használatát.|
+|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Meghatározza, hogy a felhasználó hányszor adhat meg helytelen jelszót, mielőtt a rendszer törölné az eszközt.|
+|**Képernyő kikapcsolása ennyi perc inaktivitás után**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő automatikus zárolása előtt.|
 |**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
-|**Jelszóelőzmények megjegyzése**|Meghatározza, hogy a korábban használt jelszavak rendszer megjegyezze annak megakadályozásához, hogy a felhasználó újra használni.|Igen|Igen|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Meghatározza, hogy a rendszer hány korábban használt jelszót jegyezzen meg.|Igen|Igen|
+|**Jelszóelőzmények megjegyzése**|Meghatározza, hogy a korábban használt jelszavak rendszer megjegyezze annak megakadályozásához, hogy a felhasználó újra használni.|
+|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Meghatározza, hogy a rendszer hány korábban használt jelszót jegyezzen meg.|
 
 ### Titkosítási beállítások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Mobileszköz titkosításának kötelezővé tétele**|Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.<br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.|Igen|Igen|
+|Beállítás neve|Részletek|
+|----------------|------|
+|**Mobileszköz titkosításának kötelezővé tétele**|Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.|
 
 ### Rendszerbeállítások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Képernyőfelvétel-készítés használatának engedélyezése**|A képernyőtartalom képfájlban történő rögzítésének engedélyezése a felhasználó számára.|Nem|Igen|
-|**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|-----|
+|**Képernyőfelvétel-készítés használatának engedélyezése**|A képernyőtartalom képfájlban történő rögzítésének engedélyezése a felhasználó számára.|
+|**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.|
 
 ### Felhőbeállítások – fiókok és szinkronizálás
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Microsoft-fiók használatának engedélyezése**|Engedélyezi Microsoft-fiók társítását az eszközzel.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|------|
+|**Microsoft-fiók használatának engedélyezése**|Engedélyezi Microsoft-fiók társítását az eszközzel.|
 
 ### E-mail beállítások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Egyéni e-mail fiókok engedélyezése**|Nem Microsoft e-mail fiókokhoz való kapcsolódás engedélyezése az eszköz számára.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|-----|
+|**Egyéni e-mail fiókok engedélyezése**|Nem Microsoft e-mail fiókokhoz való kapcsolódás engedélyezése az eszköz számára.|
 
 ### Alkalmazásbeállítások – böngésző
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Webböngésző használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|-----|
+|**Webböngésző használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.|
 
 ### Alkalmazásbeállítások – alkalmazások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Alkalmazástároló használatának engedélyezése**|Lehetővé teszi a felhasználók számára az alkalmazás-áruház elérését az eszközről.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|-----|
+|**Alkalmazástároló használatának engedélyezése**|Lehetővé teszi a felhasználók számára az alkalmazás-áruház elérését az eszközről.|
 
 ### Eszközképességek beállításai – hardver
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Kamera használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz kamerájának használatát.|Nem|Igen|
-|**Cserélhető tároló használatának engedélyezése**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|Igen|Igen|
-|**Wi-Fi használatának engedélyezése**|Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.|Nem|Igen|
-|**Wi-Fi alapú internetmegosztás használatának engedélyezése**|Engedélyezi az eszköz Wi-Fi-alapú internetmegosztási funkciójának használatát.|Nem|Igen
-|**Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése**|Engedélyezi az eszközön az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozást és a vonatkozó használati feltételek automatikus elfogadását.|Nem|Igen|
-|**Wi-Fi elérési pontok jelentéskészítésének engedélyezése**|Információt küld a Wi-Fi kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében.|Nem|Igen|
-|**Földrajzi hely meghatározásának engedélyezése**|Engedélyezi az eszköz számára a helyadatok használatát.|Nem|Igen|
-|**NFC használatának engedélyezése**|Engedélyezi a kis hatótávolságú kommunikációt használó műveleteket.|Nem|Igen|
-|**Bluetooth használatának engedélyezése**|Az eszköz Bluetooth funkciójának engedélyezése vagy letiltása.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|-----|
+|**Kamera használatának engedélyezése**|Engedélyezi vagy letiltja az eszköz kamerájának használatát.|
+|**Cserélhető tároló használatának engedélyezése**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|
+|**Wi-Fi használatának engedélyezése**|Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.|
+|**Wi-Fi alapú internetmegosztás használatának engedélyezése**|Engedélyezi az eszköz Wi-Fi-alapú internetmegosztási funkciójának használatát.|
+|**Wi-Fi elérési pontokhoz való automatikus csatlakozás engedélyezése**|Engedélyezi az eszközön az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozást és a vonatkozó használati feltételek automatikus elfogadását.|
+|**Wi-Fi elérési pontok jelentéskészítésének engedélyezése**|Információt küld a Wi-Fi kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében.|
+|**Földrajzi hely meghatározásának engedélyezése**|Engedélyezi az eszköz számára a helyadatok használatát.|
+|**NFC használatának engedélyezése**|Engedélyezi a kis hatótávolságú kommunikációt használó műveleteket.|
+|**Bluetooth használatának engedélyezése**|Az eszköz Bluetooth funkciójának engedélyezése vagy letiltása.|
 
 ### Eszközképességek beállításai – szolgáltatások
 
-|Beállítás neve|Részletek|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Másolás és beillesztés használatának engedélyezése**|Engedélyezi az eszköznek a másolási és a beillesztési funkció használatát.|Nem|Igen|
+|Beállítás neve|Részletek|
+|----------------|----|
+|**Másolás és beillesztés használatának engedélyezése**|Engedélyezi az eszköznek a másolási és a beillesztési funkció használatát.|
 
 ### Az engedélyezett és letiltott alkalmazások beállításai
 Az **Engedélyezett és letiltott alkalmazások** listában adja meg az engedélyezni vagy letiltani kívánt alkalmazásokat a következő információk alapján:
@@ -171,6 +171,6 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
