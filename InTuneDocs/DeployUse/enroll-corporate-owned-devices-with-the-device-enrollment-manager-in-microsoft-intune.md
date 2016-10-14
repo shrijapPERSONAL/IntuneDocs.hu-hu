@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
   - Az eszközöket nem lehet alaphelyzetbe állítani a Vállalati portálról.
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.
   - Az eszközökön nem lehet az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat futtatni, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
-  - Az eszközöket nem lehet az Apple Configuratorral vagy az Apple készülékregisztrációs programjában is regisztrálni (ez az iOS-eszközökre vonatkozik).
+  - (csak iOS) Az eszközök nem regisztrálhatóak az Apple Configurator vagy az Apple készülékregisztrációs programja (DEP) segítségével, de a DEP vagy az Apple Configurator által felügyelt eszközök regisztrálása is lehetséges felhasználói kapcsolat nélkül.
 
 > [!NOTE]
 > A vállalati alkalmazások eszközregisztráció-kezelővel felügyelt eszközökre történő telepítéséhez telepítse a Vállalati portál alkalmazást **Szükséges telepítésként** az eszközregisztráció-kezelő felhasználói fiókjára.
@@ -95,6 +95,6 @@ Az eszközregisztráció-kezelő törlése nincs hatással a regisztrált eszkö
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának a
 
 -   Az összes céges adat eltávolítása. A saját adatok és beállítások nem törlődnek.
 
--   Jelszó vagy PIN-kód megadásának kényszerítése az eszközön, így túl sok helytelen jelszó megadásakor a rendszer kizárhatja az eszközről, vagy visszaállíthatja az eszközön a gyári alapbeállításokat, amely az adatok törlését is magával vonhatja.
+-   Követelmények állíthatóak be az eszközön, például jelszó vagy PIN-kód használata a vállalati adatok védelme érdekében. Az IT-rendszergazda korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót az eszközről, ha túl sokszor próbálkozott.
 
 -   Ehhez el kell fogadnia a használati feltételeket.
 
--   Az eszköz kamerájának engedélyezése vagy letiltása.
+-   Letilthatja a fényképezőgépet (csak Samsung Knox-eszközöknél, Nexus eszközök esetében nem), ezáltal megakadályozva, hogy felvételt készíthessenek bizalmas munkahelyi adatokról.
 
--   Az eszközön található összes adat titkosításának kikényszerítése, ideértve a vállalati és a személyes adatokat egyaránt. Hozzájárul az adatok védelméhez az eszköz elvesztésekor és ellopásakor.
+-   Kényszerítheti az eszközön tárolt adatok titkosítását azok védelme érdekében arra az esetre, ha az eszközt elvesztik vagy ellopják.
 
 -   Miután felvette az eszközt a vállalati portálra, nagyjából nyolcóránként ezekre a műveletekre kerül sor az eszközön:
 
@@ -58,11 +58,8 @@ Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának a
 Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
 
 
-### További információ
-[Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
