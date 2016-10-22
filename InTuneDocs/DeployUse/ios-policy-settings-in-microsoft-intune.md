@@ -382,6 +382,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
