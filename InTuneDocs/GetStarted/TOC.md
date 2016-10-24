@@ -11,6 +11,12 @@
 ### [Hálózatisávszélesség-felhasználás](network-bandwidth-use.md)
 ### [Egyéni tartománynevek](domain-names-for-microsoft-intune.md)
 
+## [Az eszközkezelés módjának kiválasztása](choose-how-to-manage-devices.md)
+### [Regisztrált eszközök felügyeletét szolgáló képességek](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Az Intune PC-szoftverügyfél képességei](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Áttérés az Intune-ra](migrate-to-intune.md)
+
 ## [Az Intune bemutatása](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Bejelentkezés az Intune-ba](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Állítson be egy egyéni tartománynevet](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [Mobileszközök regisztrálása és alkalmazások telepítése](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfiguráció utáni feladatok](post-configuration-tasks.md)
 
-## [Az eszközkezelés módjának kiválasztása](choose-how-to-manage-devices.md)
-### [Regisztrált eszközök felügyeletét szolgáló képességek](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Az Intune PC-szoftverügyfél képességei](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Az Intune üzembe helyezésének bevezetési szakaszai](rollout-phases-for-microsoft-intune-deployment.md)
 ### [A projekt hatóköre](project-scope.md)
 ### [A koncepció igazolása](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [Üzemeltetés és karbantartás](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

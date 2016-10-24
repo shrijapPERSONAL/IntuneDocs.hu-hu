@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 4c72b39296c9c2f0fe435d57f1e829ba3114fc61
 
 
 ---
@@ -52,7 +52,7 @@ Az első lépéseket ismertető jelen útmutató [6. lépésében](start-with-a-
 
 Nyissa meg a Vállalati portált a regisztrált mobileszközön, majd válassza az **Alkalmazások** lehetőséget, és telepítse a **Microsoft Skype** alkalmazást.
 
-A mobileszközök [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal történő kezelésével kapcsolatban további információk a [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) című témakörben olvashatók.
+A mobileszközök [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal történő kezelésével kapcsolatban [A Microsoft Intune-beli eszközregisztráció előfeltételei](/intune/deploy-use/prerequisites-for-enrollment.md) című témakörben olvasható további tájékoztatás.
 
 
 ### További lépések
@@ -64,6 +64,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* u
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

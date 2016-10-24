@@ -4,7 +4,7 @@ description: "Egy Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regi
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
-ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
+ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
+ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
 
 ---
@@ -43,7 +43,7 @@ Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása:
 
 ## Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
-1.  Koppintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** elemre.
+1.  Koppintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** lehetőségre, majd a **Kapcsolódás** elemre.
 
     ![Koppintson a Hozzáférés munkahelyi vagy iskolai fiókhoz lehetőségre](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
@@ -106,6 +106,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

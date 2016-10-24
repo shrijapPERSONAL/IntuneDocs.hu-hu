@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -32,14 +32,11 @@ Amikor egy felhasználó támogatott alkalmazással (mint például a OneDrive) 
 
 ![Azon döntési pontokat megjelenítő diagram, amelyek meghatározzák, hogy kapjon-e hozzáférést az adott eszköz a SharePoint Online-hoz ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->A modern hitelesítést használó alkalmazásokat működtető számítógépek és Windows 10 Mobile rendszerű eszközök esetében a feltételes hozzáférés jelenleg nem érhető el az összes Intune-ügyfél számára. Ha már használja ezeket a funkciókat, nincs teendője. Továbbra is használhatja őket.
-
->Ha még nem hozott létre feltételes hozzáférési szabályzatokat a számítógépeken és a Windows 10 Mobile rendszeren futó, modern hitelesítést használó alkalmazások számára, és most szeretné ezt megtenni, regisztráljon az Azure Active Directory nyilvános előzetes verziójára, amely eszközalapú feltételes hozzáférési szabályzatokat tartalmaz az Intune által felügyelt eszközök és a tartományhoz csatlakoztatott Windows rendszerű számítógépek számára. További információért olvassa el [ezt a blogbejegyzést](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
 **Mielőtt** beállítaná a SharePoint Online-ra vonatkozó feltételes hozzáférési szabályzatot, a következőknek kell teljesülniük:
 - Rendelkeznie kell **SharePoint Online-előfizetéssel**, a felhasználóknak pedig licenccel kell rendelkezniük a SharePoint Online-hoz.
-- Rendelkeznie kell előfizetéssel a következő csomagok valamelyikére: **Nagyvállalati mobilitási csomag** vagy **Prémium szintű Azure Active Directory**.
+- Rendelkeznie kell **Enterprise Mobility + Security vagy Azure Active Directory Premium szintű előfizetéssel**, és a felhasználóknak licenccel kell rendelkezniük az EMS-hez vagy az AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
+
 
   Ha csatlakozni szeretne a kívánt fájlokhoz, az eszköznek az alábbi feltételeknek kell megfelelniük:
 -   Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal **regisztrálva** kell lennie, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
@@ -61,8 +58,9 @@ Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek e
 
 >[!NOTE]
 >Ha engedélyezi a SharePoint Online-on a feltételes hozzáférést, javasoljuk, hogy tiltsa le a tartományt a listán a [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) témakörben ismertetett módon.  
+
 ## A mobileszközök támogatása
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s vagy újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
@@ -75,7 +73,9 @@ Letilthatja a SharePoint Online-hoz való **iOS** és **Android** böngészőkke
 
 ## Számítógépek támogatása
 - Windows 8.1 és újabb (az Intune-nal történt regisztráció esetén)
-- Windows 7.0 vagy Windows 8.1 (ha tartományhoz csatlakozik)
+- Windows 7.0, Windows 8.1 vagy Windows 10 (ha tartományhoz csatlakozik)
+> [!NOTE]
+>Ahhoz, hogy feltételes hozzáférést használhasson Windows 10-es számítógépeken, frissítenie kell a gépeket a Windows 10 évfordulós frissítéssel.
 
   - Tartományhoz csatlakozó számítógépek esetén be kell állítani az Azure Active Directoryban való [automatikus regisztrációt](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/).
 Az AAD DRS szolgáltatás automatikusan aktiválódik az Intune-t és az Office 365-öt használó ügyfelek számára. Azok az ügyfelek, akik már telepítették az ADFS eszközregisztrációs szolgáltatását, nem fogják látni a regisztrált eszközöket a helyszíni Active Directoryban.
@@ -122,6 +122,10 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> Az Azure AD felügyeleti konzolján is létrehozhat feltételes hozzáférési szabályzatot. Az Azure AD felügyeleti konzolon a többtényezős hitelesítéshez hasonló egyéb feltételes hozzáférési szabályzatokon kívül létrehozhatja az Intune-eszközök feltételes hozzáférési szabályzatát is (ennek neve az Azure AD-ben **eszközalapú hozzáférési szabályzat**).  Külső gyártók vállalati alkalmazásaihoz is beállíthat hozzáférési szabályzatokat, ha az Azure AD támogatja őket (például a Salesforce-hoz és a Boxhoz). További részleteket a [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Hogyan állítható be eszközalapú feltételes hozzáférési szabályzat az Azure Active Directoryban az Azure Active Directoryhoz csatlakozó eszközök hozzáférés-vezérlésére) című cikkben olvashat.
+
+
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Szabályzat** > **Feltételes hozzáférés** > **SharePoint Online-szabályzat** lehetőségre.
 ![A SharePoint Online-szabályzat oldalát bemutató képernyőkép](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +140,6 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
         A **Minden platform** beállítás kiválasztásával az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül.  Az alábbiakat kivéve minden platform köteles regisztrálni és megfelelni:
         *   A Windows-eszközöknek kötelező regisztrálni és megfelelni, a tartományt csatlakoztatni a helyszíni Active Directoryhoz, vagy mindkettő
         * Nem támogatott platformok, például a Mac.  Azonban az ezekről a platformokról származó, modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
-        >[!TIP]
-        >Ha még nem használ feltételes hozzáférést a számítógépekhez, akkor előfordulhat, hogy ezt a beállítás nem jelenik meg.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   [Ebben a blogbejegyzésben](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) talál további információt arról, hogyan érheti el a szolgáltatást.
 
     -   **Megadott platformok**
 
@@ -192,6 +194,6 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

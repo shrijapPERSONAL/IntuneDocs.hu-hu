@@ -3,8 +3,8 @@ title: "Windows Phone 8.0 rendszerű telefonok kezelésének beállítása | Mic
 description: "Mobileszközök felügyeletének (MDM) engedélyezése a Microsoft Intune-nal Windows Phone 8.0-telefonok esetén."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/09/2016
+manager: angrobe
+ms.date: 07/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ A Windows Phone 8.0 rendszerű eszközökön az Intune Vállalati portál alkalm
 A Windows Phone-telefonok kezelésével kapcsolatos beállítási követelmények a kezelés módjától függenek.  Ha a munkahely DNS-regisztrációs beállításai között két CNAME rekord is meg van adva, a felhasználók egyszerűbben regisztrálhatják az eszközeiket. Ha a felhasználók letöltik az Áruházból a Vállalati portál alkalmazást, akkor a DNS-beállítások konfigurálása után csupán be kell állítani a portált, majd értesíteni kell a felhasználókat az eszközregisztrálás mikéntjéről.  A Windows Phone 8.0-s és a Windows Phone 8.1-es telefonokon a vállalati portál üzembe helyezésekor a Symantec megfelelő tanúsítványát is telepíteni kell, mert csak így lehet aláírni az alkalmazás kódját.
 
 ## Telepítési követelmények konfigurálása a Windows Phone rendszerű eszközök felügyeletének engedélyezése érdekében
-1.  **Az Intune beállítása** – Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be a [mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
+1.  **Az Intune beállítása** – Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be a [mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
 
 2.  **A regisztrációs kiszolgáló címéhez tartozó DNS-alias beállítása** (nem kötelező)
 
@@ -183,6 +183,6 @@ Az Intune-t tartalmazó Windows Phone 8.1-es telefonokra a Windows Phone Áruhá
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

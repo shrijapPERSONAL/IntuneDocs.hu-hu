@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: c422d612e4d4447799d242fae91c963c922b99ce
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
 
 
 ---
@@ -32,7 +32,6 @@ iOS | Támogatott
 Windows 10 mobil verzió | Csak beállított jelszóval rendelkező telefonok esetén támogatott     
 Windows 10 asztali verzió | Nem támogatott  
 Windows Phone 8.1 | Csak beállított jelszóval rendelkező telefonok esetén támogatott
-Windows Phone 8.0 | Nem támogatott
 PC (Windows 8.0 és korábbi verziók) | Nem támogatott       
 PC (Windows 8.1) | Nem támogatott
 
@@ -64,6 +63,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

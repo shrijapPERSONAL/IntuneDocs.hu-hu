@@ -4,7 +4,7 @@ description: "Létrehozhat egy megfelelőségi szabályzatot a vállalati adatok
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ Az alábbi táblázat felsorolja a megfelelőségi szabályzatok egyes beállít
 -------------
 |Beállítás|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Jelszó szükséges a mobileszközök feloldásához|iOS 6 és újabb verziók|Android 4.0 és újabb verziók <br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók|
-|Egyszerű jelszavak engedélyezése|iOS 6 és újabb verziók|Nem támogatott|Windows Phone 8 és újabb verziók|
-|Jelszó minimális hossza|iOS 6 és újabb verziók| Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb| Windows Phone 8 és újabb verziók<br>Windows 8.1|
-|Kötelező jelszótípus|iOS 6 és újabb verziók|Nem érhető el|Windows Phone 8 és újabb verziók <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Karakterkészletek minimális száma:|iOS 6 és újabb verziók|Nem érhető el|Windows Phone 8 és újabb verziók <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Jelszó szükséges a mobileszközök feloldásához|iOS 6 és újabb verziók|Android 4.0 és újabb verziók <br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók|
+|Egyszerű jelszavak engedélyezése|iOS 6 és újabb verziók|Nem támogatott|Windows Phone 8.1 és újabb verziók|
+|Jelszó minimális hossza|iOS 6 és újabb verziók| Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb| Windows Phone 8.1 és újabb verziók<br>Windows 8.1|
+|Kötelező jelszótípus|iOS 6 és újabb verziók|Nem érhető el|Windows Phone 8.1 és újabb verziók <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Karakterkészletek minimális száma:|iOS 6 és újabb verziók|Nem érhető el|Windows Phone 8.1 és újabb verziók <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Jelszó minősége|Nem érhető el|Android 4.0 és újabb verziók <br>Samsung KNOX szabvány 4.0 és újabb|Nem érhető el|
-|Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
-|Jelszó lejárata (nap)|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
-|Jelszóelőzmények megjegyzése|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
-|Korábbi jelszavak újbóli használatának tiltása|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
+|Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
+|Jelszó lejárata (nap)|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
+|Jelszóelőzmények megjegyzése|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
+|Korábbi jelszavak újbóli használatának tiltása|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br>Windows RT és Windows RT 8.1<br>Windows 8.1|
 |Jelszó kérése, amikor az eszköz visszatér inaktív állapotból| Nem érhető el| Nem érhető el|Windows 10 mobil verzió|
-|Mobileszköz titkosításának kötelezővé tétele|Nem alkalmazható|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br> Windows 8.1|
+|Mobileszköz titkosításának kötelezővé tétele|Nem alkalmazható|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br> Windows 8.1|
 |Annak megkövetelése, hogy a jelentett eszközök kifogástalan állapotúak legyenek| Nem érhető el| Nem érhető el|Windows <br>Windows 10 mobil verzió|
 |Az eszköz nem lehet függetlenített vagy feltört eszköz|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Nem érhető el|
 |Csak az Intune által felügyelt e-mail fiók használható|iOS 6 és újabb verziók|Nem érhető el| Nem érhető el|
 |Az Intune-ban felügyelni kívánt levelezési profil kiválasztása|iOS 6 és újabb verziók|Nem érhető el| Nem érhető el|
-|Az operációs rendszer szükséges minimális verziója|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb| Windows Phone 8 és újabb verziók<br>Windows 8.1|
-|Az operációs rendszer szükséges maximális verziója|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8 és újabb verziók<br>Windows 8.1|
+|Az operációs rendszer szükséges minimális verziója|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb| Windows Phone 8.1 és újabb verziók<br>Windows 8.1|
+|Az operációs rendszer szükséges maximális verziója|iOS 6 és újabb verziók|Android 4.0 és újabb verziók<br>Samsung KNOX szabvány 4.0 és újabb|Windows Phone 8.1 és újabb verziók<br>Windows 8.1|
 
 Az egyes platformokon támogatott megfelelőségi beállításokkal kapcsolatos bővebb információkért válasszon az alábbi lehetőségek közül:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Az egyes platformokon támogatott megfelelőségi beállításokkal kapcsolatos 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

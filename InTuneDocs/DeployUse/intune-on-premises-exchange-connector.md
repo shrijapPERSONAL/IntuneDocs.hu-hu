@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 
 ---
@@ -31,7 +31,7 @@ A következő táblázatban találja a helyszíni Exchange Connector telepítés
 |---------------|--------------------|
 |Operációs rendszerek|Az Intune a helyszíni Exchange Connectort olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, Windows Server 2008 R2, Windows Server 2012 vagy Windows Server 2012 R2 rendszer valamelyik kiadása fut.<br /><br />Az összekötő nem támogatott a Server Core telepítéseken.|
 |Microsoft Exchange verzió|A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára, vagy örökölt dedikált Exchange Online-ra van szükség. Annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **örökölt** konfigurációval rendelkezik, lépjen kapcsolatba a fiókkezelővel.|
-|Mobileszköz-kezelő szolgáltató| [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Mobileszköz-kezelő szolgáltató| [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
 |Hardver|A számítógépen, ahol az összekötőt telepíti, 1,6 GHz-es CPU szükséges, valamint 2 GB RAM és legalább 10 GB szabad lemezterület.|
 |Active Directory-szinkronizálás|Mielőtt az Intune-t bármely összekötővel csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory-példányával.|
 |További szoftverek|A Microsoft .NET-keretrendszer 4-es és a Windows PowerShell 2.0-s verziójának teljes mértékben telepítve kell lennie az összekötőt futtató számítógépen.|
@@ -131,6 +131,6 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

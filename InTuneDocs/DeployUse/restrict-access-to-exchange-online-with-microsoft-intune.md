@@ -4,7 +4,7 @@ description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ Ha dedikált Exchange Online-környezettel rendelkezik, és szeretné tudni, hog
 Az Exchange Online-hoz vagy az új dedikált Exchange Online-környezethez való e-mail-hozzáférés konfigurálásához az Intune-ban konfiguráljon feltételes hozzáférést az Exchange Online-hoz.
 Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el a [Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
->[!IMPORTANT]
->A modern hitelesítést használó alkalmazásokat működtető számítógépek és Windows 10 Mobile rendszerű eszközök esetében a feltételes hozzáférés jelenleg nem érhető el az összes Intune-ügyfél számára. Ha már használja ezeket a funkciókat, nincs teendője. Továbbra is használhatja őket.
-
->Ha még nem hozott létre feltételes hozzáférési szabályzatokat a számítógépeken és a Windows 10 Mobile rendszeren futó, modern hitelesítést használó alkalmazások számára, és most szeretné ezt megtenni, regisztráljon az Azure Active Directory nyilvános előzetes verziójára, amely eszközalapú feltételes hozzáférési szabályzatokat tartalmaz az Intune által felügyelt eszközök és a tartományhoz csatlakoztatott Windows rendszerű számítógépek számára. További információért olvassa el [ezt a blogbejegyzést](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).  
 
 **Mielőtt** konfigurálja a feltételes hozzáférést, meg kell felelnie a következő előfeltételeknek:
 
 -   Rendelkeznie kell egy olyan **Office 365-előfizetéssel, amely tartalmazza az Exchange Online-t (például E3)**, és a felhasználóknak licenccel kell rendelkezniük az Exchange Online-hoz.
+
+- Rendelkeznie kell **Enterprise Mobility + Security vagy Azure Active Directory Premium szintű előfizetéssel**, és a felhasználóknak licenccel kell rendelkezniük az EMS-hez vagy az AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
 
 -  Fontolja meg a választható **Microsoft Intune szolgáltatások közötti összekötő** beállítását, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t a Microsoft Exchange Online-hoz csatlakoztatja, és segít Önnek az eszközinformációk kezelésében az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján keresztül. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
 
@@ -67,7 +65,7 @@ Az alábbi ábra az Exchange Online feltételes hozzáférési szabályzatai ál
 Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését:
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
 A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
@@ -84,16 +82,14 @@ Az Exchange Online-on letilthatja az **Outlook Web Access-hez (OWA)** az **iOS-*
 
 **A nem támogatott böngészők le lesznek tiltva**.
 
-Az OWA-alkalmazások nem támogatottak az iOS és Android rendszerű eszközök számára.  Ezeket az ADFS jogcímszabályai között le kell tiltani.
-
-
+**Az iOS-re és az Androidra készült OWA alkalmazás módosítható úgy, hogy ne a modern hitelesítést használja, és nem támogatott.  Az OWA alkalmazásból való elérést le kell tiltani az ADFS jogcímszabályai között.**
 
 
 A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését a beépített **Exchange ActiveSync levelezési ügyfélről**:
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
 
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 
 - Windows Phone 8.1 és újabb verziók
 
@@ -101,14 +97,18 @@ A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését
 
 Az asztali Office-alkalmazásokat futtató számítógépekhez beállíthatja az **Exchange Online** és a **SharePoint Online** feltételes hozzáférését, ha a számítógépek megfelelnek az alábbi követelményeknek:
 
--   A számítógépen Windows 7.0 vagy Windows 8.1 operációs rendszernek kell futnia.
+-   A számítógépen Windows 7.0, Windows 8.1 vagy Windows 10 operációs rendszernek kell futnia.
 
--   A számítógépnek tartományhoz kell csatlakoznia, vagy meg kell felelnie a megfelelőségi szabályzat előírásainak.
+  >[!NOTE]
+  > Ahhoz, hogy feltételes hozzáférést használhasson Windows 10-es számítógépeken, frissítenie kell a gépeket a Windows 10 évfordulós frissítéssel.
 
-    A megfelelőség biztosításához a számítógépet regisztrálni kell az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, és meg kell felelnie a szabályzatoknak.
+  A számítógépnek tartományhoz kell csatlakoznia, vagy meg kell felelnie a megfelelőségi szabályzat előírásainak.
 
-    Tartományhoz csatlakozó számítógépek esetén be kell állítani az [eszköz automatikus regisztrációját](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) az Azure Active Directoryban.
-    >[!NOTE]
+  A megfelelőség biztosításához a számítógépet regisztrálni kell az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, és meg kell felelnie a szabályzatoknak.
+
+  Tartományhoz csatlakozó számítógépek esetén be kell állítani az [eszköz automatikus regisztrációját](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) az Azure Active Directoryban.
+
+  >[!NOTE]
     >A feltételes hozzáférés nem támogatott az Intune-számítógépügyfelet futtató számítógépeken.
 
 -   Az [Office 365 modern hitelesítésének engedélyezve kell lennie](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), és a számítógépre telepíteni kell az Office legújabb frissítéseit.
@@ -177,6 +177,10 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 ### 4. lépés: A feltételes hozzáférési szabályzat konfigurálása
 
+>[!NOTE]
+> Az Azure AD felügyeleti konzolján is létrehozhat feltételes hozzáférési szabályzatot. Az Azure AD felügyeleti konzolon a többtényezős hitelesítéshez hasonló egyéb feltételes hozzáférési szabályzatokon kívül létrehozhatja az Intune-eszközök feltételes hozzáférési szabályzatát is (ennek neve az Azure AD-ben **eszközalapú hozzáférési szabályzat**).  Külső gyártók vállalati alkalmazásaihoz is beállíthat hozzáférési szabályzatokat, ha az Azure AD támogatja őket (például a Salesforce-hoz és a Boxhoz). További részleteket a [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Hogyan állítható be eszközalapú feltételes hozzáférési szabályzat az Azure Active Directoryban az Azure Active Directoryhoz csatlakozó eszközök hozzáférés-vezérlésére) című cikkben olvashat.
+
+
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** > **Feltételes hozzáférés** > **Exchange Online-szabályzat** elemet.
 ![Képernyőfelvétel az Exchange Online feltétes hozzáférési szabályzatának oldaláról](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -196,9 +200,6 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
         A **Minden platform** beállítás kiválasztásával az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül.  Az alábbiakat kivéve minden platform köteles regisztrálni és megfelelni:
         *   A Windows-eszközöknek kötelező regisztrálni és megfelelni, a tartományt csatlakoztatni a helyszíni Active Directoryhoz, vagy mindkettő
         * Nem támogatott platformok, például a Mac OS.  Azonban az ezekről a platformokról származó, modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
-
-        >[!TIP]
-           Ha még nem használ feltételes hozzáférést a számítógépekhez, akkor előfordulhat, hogy ezt a beállítás nem jelenik meg.  Használja helyette az **Adott platformok** beállítást. A feltételes hozzáférés a számítógépek esetében jelenleg nem áll rendelkezésre az összes Intune-ügyfél számára.   [Ebben a blogbejegyzésben](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) talál további információt arról, hogyan érheti el a szolgáltatást.
 
     -   **Megadott platformok**
 
@@ -262,6 +263,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
