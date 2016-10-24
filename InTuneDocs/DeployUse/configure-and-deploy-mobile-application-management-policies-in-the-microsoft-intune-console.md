@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +37,7 @@ Az Intune más szabályzataitól eltérően a mobilalkalmazás-kezelési szabál
 
 Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmazásnak tartalmaznia kell a Microsoft Intune App SDK-t. Ilyen típusú alkalmazást az alábbi három módszerrel lehet beszerezni:
 
--   **Szabályzat által felügyelt alkalmazás használata**. Ezek az alkalmazások beépített App SDK-val rendelkeznek. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. További információt [a Microsoft Intune mobilalkalmazás-felügyeleti szabályzataival használható alkalmazások listájában](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) találhat.
+-   **Szabályzat által felügyelt alkalmazás használata**. Ezek az alkalmazások beépített App SDK-val rendelkeznek. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. További információt [a Microsoft Intune mobilalkalmazás-felügyeleti szabályzataival használható alkalmazások listájában](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) találhat.
 
 -   **Becsomagolt alkalmazás használata**. A becsomagolt alkalmazások abból a célból lettek újracsomagolva a Microsoft Intune alkalmazásburkoló eszközével, hogy tartalmazzák az App SDK-t. Ezt az eszközt általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használják, az alkalmazásáruházból letöltött alkalmazások feldolgozásához nem használható. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +136,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**Offline türelmi időszak**|Ha az eszköz offline állapotban van, itt megadhatja azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése.|
     |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.|
     |**Képernyőrögzítés letiltása** (csak Android-eszközök esetén)|Ezzel a beállítással megadhatja, hogy az eszköz képernyőfelvétel-funkciói le legyenek tiltva az alkalmazás használatakor.|
-    
+
 4. Ha elkészült, válassza a **Házirend mentése** elemet.
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
@@ -193,6 +193,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
