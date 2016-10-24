@@ -3,6 +3,7 @@ title: "A Vállalati portál alkalmazás nem támogatott | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez | 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

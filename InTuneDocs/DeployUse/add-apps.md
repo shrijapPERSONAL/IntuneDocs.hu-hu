@@ -3,6 +3,7 @@ title: "Alkalmazások hozzáadása | Microsoft Intune"
 description: "Mielőtt elkezdi az alkalmazások telepítését az Intune-nal, fordítson egy kis időt az ebben a témakörben bemutatott fogalmakkal való ismerkedésre."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Windows Phone 8.1-es házirend-beállítások | Microsoft Intune"
 description: "Az Intune a Windows Phone 8.1-eszközökön beállítható, beépített általános beállítások széles választékát kínálja. Ezenkívül megadhatja az OMA-URI-értékeket is olyan egyéni beállítások létrehozásához, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

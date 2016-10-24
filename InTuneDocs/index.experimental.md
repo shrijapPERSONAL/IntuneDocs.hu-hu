@@ -6,6 +6,7 @@ title: "Intune-dokumentáció – MDM-dokumentáció | Microsoft Docs"
 description: "Technikai dokumentáció a Microsoft Intune-hoz – Mobileszköz- és alkalmazásfelügyelet"
 keywords: "intune-dokumentáció, MDM-dokumentáció, mobileszköz-felügyelet dokumentációja, mobileszköz- és alkalmazásfelügyelet dokumentációja"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

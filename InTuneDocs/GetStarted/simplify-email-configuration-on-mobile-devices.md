@@ -3,6 +3,7 @@ title: "A mobileszközök e-mail-konfigurációjának leegyszerűsítése | Micr
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

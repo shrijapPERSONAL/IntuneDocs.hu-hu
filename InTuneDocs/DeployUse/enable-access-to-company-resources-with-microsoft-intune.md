@@ -3,6 +3,7 @@ title: "A vállalati erőforrások hozzáférésének engedélyezése a Microsof
 description: "A Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a szükséges fájlokhoz és erőforrásokhoz."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

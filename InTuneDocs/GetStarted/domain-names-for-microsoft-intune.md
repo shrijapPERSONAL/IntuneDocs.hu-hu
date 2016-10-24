@@ -3,6 +3,7 @@ title: "A Microsoft Intune szolgáltatásban használt tartománynevek | Microso
 description: "Intune-tartománynév hozzáadása"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Alkalmazások előkészítése mobilalkalmazás-kezeléshez | Microsoft 
 description: "Az ebben a témakörben leírtak segítenek eldönteni, mikor használja az Alkalmazásburkoló eszközt és az App SDK-t arra, hogy engedélyezze az egyéni, üzletági alkalmazások számára a mobilalkalmazás-kezelési szabályzatok használatát."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

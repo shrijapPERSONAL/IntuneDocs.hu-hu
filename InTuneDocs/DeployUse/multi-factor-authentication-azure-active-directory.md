@@ -3,6 +3,7 @@ title: "Többtényezős hitelesítés az Azure AD-vel | Microsoft Intune"
 description: "Többtényezős hitelesítés kötelezővé tétele az Azure AD-ben az eszközök regisztrálásához."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

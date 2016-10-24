@@ -3,6 +3,7 @@ title: "Eszközmegfelelőségi szabályzatok | Microsoft Intune"
 description: "Ez a témakör ismerteti azokat az elveket, amelyek segítségével megértheti, mik azok az eszközmegfelelőségi szabályzatok, és hogyan működnek."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

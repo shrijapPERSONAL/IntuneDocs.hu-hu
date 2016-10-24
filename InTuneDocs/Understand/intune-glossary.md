@@ -3,6 +3,7 @@ title: "Intune-szószedet | Microsoft Intune"
 description: "A Microsoft Intune-ban használt szakkifejezések egy részének bemutatása"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

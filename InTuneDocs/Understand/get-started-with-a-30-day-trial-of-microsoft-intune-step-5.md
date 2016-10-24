@@ -3,6 +3,7 @@ title: "A próbaidőszak alatt használt mobileszközök regisztrálása | Micro
 description: "A mobileszközök regisztrálásának és az alkalmazások telepítésének módja az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

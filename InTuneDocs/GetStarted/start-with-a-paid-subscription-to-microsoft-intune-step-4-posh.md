@@ -3,6 +3,7 @@ title: "Intune-licencek kezelése a PowerShell használatával | Microsoft Intun
 description: "Intune-licencek kezelése a PowerShell használatával"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

@@ -3,6 +3,7 @@ title: "Androidos eszközök kezelésének beállítása | Microsoft Intune"
 description: "Engedélyezheti a mobileszközök felügyeletét (MDM) a Microsoft Intune-nal az androidos vagy KNOX-eszközök esetén."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

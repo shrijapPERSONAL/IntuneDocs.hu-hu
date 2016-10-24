@@ -3,6 +3,7 @@ title: "Intune-licencek kezelése | Microsoft Intune"
 description: "Ez a cikk ismerteti az Intune-előfizetéshez tartozó licencek és felhasználók hozzárendelésének módját"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

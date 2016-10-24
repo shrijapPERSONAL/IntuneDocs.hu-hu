@@ -3,6 +3,7 @@ title: "A Dynamics CRM Online-hoz való e-mail-hozzáférés korlátozása| Micr
 description: "Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

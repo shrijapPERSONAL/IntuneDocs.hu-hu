@@ -3,6 +3,7 @@ title: "Windows 10-es házirend-beállítások | Microsoft Intune"
 description: "Az ebben a témakörben ismertetett szabályzatbeállítások segítségével konfigurálhatja a regisztrált asztali Windows 10- és Windows 10 Mobile-eszközök beépített és egyéni beállításait."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

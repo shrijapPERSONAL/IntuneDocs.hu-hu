@@ -3,6 +3,7 @@ title: "Windows-eszköz használata az Intune-nal | Microsoft Intune"
 description: "Hivatkozáslista az Intune-ban regisztrált Windows-eszközökön elvégezhető feladatokhoz"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

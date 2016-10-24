@@ -3,6 +3,7 @@ title: "A Vállalati Windows Hello beállításainak szabályozása az eszközö
 description: "Tudja meg, hogyan integrálható az Intune a Vállalati Windows Hello nevű alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

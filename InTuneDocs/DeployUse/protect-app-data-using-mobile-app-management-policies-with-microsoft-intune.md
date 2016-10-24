@@ -3,6 +3,7 @@ title: "Alkalmazásadatok védelme MAM-szabályzatokkal | Microsoft Intune"
 description: "Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-felügyeleti eszközök a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

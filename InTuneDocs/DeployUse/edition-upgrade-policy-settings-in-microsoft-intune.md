@@ -3,6 +3,7 @@ title: "A Windows kiadásfrissítési házirendjének beállításai | Microsoft
 description: "Ismerje meg, hogyan frissítheti automatikusan Windows 10-eszközét az Intune legújabb verziójának segítségével."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "A PC-ügyfélszoftver telepítése | Microsoft Intune"
 description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

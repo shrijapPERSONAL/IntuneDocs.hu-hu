@@ -3,6 +3,7 @@ title: "Mobileszközök regisztrálása és alkalmazások telepítése| Microsof
 description: "A cikk ismerteti a mobileszközök regisztrálásának menetét, valamint az alkalmazások telepítését egy Intune-ba regisztrált eszközre"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

@@ -3,6 +3,7 @@ title: "Hálózati hozzáférés korlátozása a Cisco ISE használatával | Mic
 description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article

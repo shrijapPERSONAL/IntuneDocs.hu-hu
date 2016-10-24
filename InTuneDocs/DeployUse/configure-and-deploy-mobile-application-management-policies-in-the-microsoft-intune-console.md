@@ -3,6 +3,7 @@ title: "MAM-szabályzatok konfigurálása az Intune-konzolban | Microsoft Intune
 description: "A Microsoft Intune mobilalkalmazás-felügyeleti szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

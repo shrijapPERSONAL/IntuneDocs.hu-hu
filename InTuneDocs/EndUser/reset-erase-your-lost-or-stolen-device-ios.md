@@ -3,6 +3,7 @@ title: "Elveszett vagy ellopott iOS-eszköz alaphelyzetbe állítása (tartalmá
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

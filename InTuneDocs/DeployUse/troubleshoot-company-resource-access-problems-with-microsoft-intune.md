@@ -3,6 +3,7 @@ title: "Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft
 description: "A témakörben található hiba- és állapotkódok segítenek az erőforrás-hozzáférési problémák megoldásában."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article

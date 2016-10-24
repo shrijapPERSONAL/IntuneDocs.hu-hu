@@ -3,6 +3,7 @@ title: "A vállalat által birtokolt iOS-eszközök regisztrálása | Microsoft 
 description: "A vállalat által birtokolt iOS-eszközök regisztrálása az Apple Device Enrollment program (DEP) vagy az Apple Configurator eszköz segítségével"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
