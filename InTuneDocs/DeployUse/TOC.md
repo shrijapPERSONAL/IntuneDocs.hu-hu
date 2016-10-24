@@ -2,12 +2,13 @@
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Üzembe helyezés és használat](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Az eszközök és alkalmazások életciklusának áttekintése](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Eszközök életciklusa](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Alkalmazások életciklusa](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Eszközök regisztrálása](enroll-devices-in-microsoft-intune.md)
-### [Felkészülés az eszközök Intune-beli regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Az MDM előfeltételei](prerequisites-for-enrollment.md)
 #### [iOS- és Mac-eszközök kezelése](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android-kezelés](set-up-android-management-with-microsoft-intune.md)
 #### [Windowsos eszközök kezelése ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -56,7 +57,7 @@
 ## [Eszközök védelme](protect-your-devices-with-microsoft-intune.md)
 ### [Zárolás és jelszó alaphelyzetbe állítása távolról](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [Windows-eszközök védelme MFA hitelesítéssel](protect-windows-devices-with-multi-factor-authentication.md)
-### [A Microsoft Passport beállításainak szabályozása az eszközökön](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [A Vállalati Windows Hello beállításainak szabályozása](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Az aktiválási zár megkerülése iOS-eszközökön](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Szoftverfrissítések](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -66,8 +67,9 @@
 ## [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md)
 
 ## [Alkalmazások hozzáadása](add-apps.md)
-### [Alkalmazások hozzáadása mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Alkalmazások hozzáadása Windows rendszerű számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Alkalmazások hozzáadása regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Alkalmazások hozzáadása Intune ügyfélgépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Intune ügyfélgép-szoftverek licencszerződések kezelése](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Alkalmazások telepítése](deploy-apps.md)
 ### [Alkalmazások telepítése eszközökre és számítógépekre](deploy-apps-in-microsoft-intune.md)
 ### [Alkalmazások figyelése](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +103,11 @@
 #### [E-mail hozzáférés korlátozása: példák](restrict-email-access-example-scenarios.md)
 
 ### [Hálózati hozzáférés korlátozása (Cisco ISE)](restrict-access-to-networks.md)
+### [Hozzáférés korlátozása eszközök, hálózat és alkalmazáskockázat alapján](restrict-access-based-on-device-network-app-risk.md)
+#### [A Lookout veszélyforrások elleni védelem konfigurálása](set-up-your-subscription-with-lookout-mtp.md)
+#### [A Lookout engedélyezése az Intune-ban](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work-alkalmazások telepítése](configure-and-deploy-lookout-for-work-apps.md)
+#### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Alkalmazásadatok védelme MAM használatával](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure-portál a mobilalkalmazás-felügyeleti szabályzatok kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -128,15 +135,11 @@
 
 ## [Mit kell tudniuk a végfelhasználóknak](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [Áttérés az Intune-ra](migrate-to-intune.md)
-
-## [Újdonságok](whats-new-in-microsoft-intune.md)
-
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -1,5 +1,6 @@
 # [Ismertetés és felfedezés](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Alkalmazások fejlesztése és testreszabása](intune-app-sdk.md)
 ## [A Microsoft Intune App SDK áttekintése](intune-app-sdk.md)
@@ -9,6 +10,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

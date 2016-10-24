@@ -1,4 +1,6 @@
 ---
+experimental: true
+experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 title: "Intune-dokumentáció – MDM-dokumentáció | Microsoft Docs"
@@ -12,8 +14,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: c200c191168a8c5ae9382d62b3a25e9cfd1db3ac
-ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
+ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
+ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 ---
@@ -30,7 +32,7 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
         <ul class="column column-half">
           <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">A Microsoft Intune bemutatása</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Az Intune-ra épülő gyakori eljárások</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Az Intune rövid kezdési útmutatója</a></li>
+          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Az Intune bemutatása</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Az eszközök és alkalmazások életciklusának áttekintése</a></li>
@@ -48,7 +50,7 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
               <a href="/intune/understand-explore/introduction-to-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Megismerés és felfedezés</p>
+                  <p>Megismerés &amp; felfedezés</p>
                 </div>
                 <p class="description column-two-thirds">Ismerje meg a Microsoft Intune alapvető fogalmait és funkcióit.
                 </p>
@@ -282,6 +284,6 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

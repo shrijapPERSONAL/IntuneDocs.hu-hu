@@ -13,8 +13,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 263fb9add8d30c0f98af46e46b566f15513db109
 
 
 ---
@@ -22,10 +22,10 @@ ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 # iOS- és Mac-eszközök kezelésének beállítása
 iOS vagy Mac rendszerű eszközök beállításához [itt](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md) talál segítséget.
 
-Az iPadek, iPhone-ok és Mac OS X-eszközök Intune-alapú mobileszköz-felügyeletével hozzáférést biztosíthat a vállalati levelezéshez és alkalmazásokhoz. Az iOS- és Mac-eszközök Intune-felügyeletéhez szüksége lesz egy Apple Push Notification- (APN-) tanúsítványra. Amint hozzáadta a tanúsítványt az Intune-hoz, a felhasználók telepíthetik a Vállalati portál alkalmazást az eszközeik regisztrálásához, vagy a rendszergazda beállíthatja [a vállalati tulajdonú iOS-eszközök felügyeletét](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac OS X-eszközök mobileszköz-felügyeletére, és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az iOS- és Mac-eszközök Intune-felügyeletéhez szüksége lesz egy Apple Push Notification- (APN-) tanúsítványra. Amint hozzáadta a tanúsítványt az Intune-hoz, a felhasználók telepíthetik a Vállalati portál alkalmazást az eszközeik regisztrálásához, vagy a rendszergazda beállíthatja [a vállalati tulajdonú iOS-eszközök felügyeletét](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Az Intune beállítása**<br>
-    Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
+    Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#set-mobile-device-management-authority), valamint beállítja a mobileszköz-kezelést.
 
 2.  **Tanúsítvány-aláírási kérelem beszerzése**<br>
     Rendszergazda felhasználóként nyissa meg a [Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS és Mac OS X** &gt; **APNs-tanúsítvány feltöltése** menüpontra, majd kattintson **Az APNs-tanúsítvány feltöltése** elemre. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját. A .csr fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.
@@ -48,10 +48,10 @@ Az iPadek, iPhone-ok és Mac OS X-eszközök Intune-alapú mobileszköz-felügye
 Ha az iOS-eszközöket vállalata vagy szervezete vásárolja meg a felhasználóknak, az eszközöket [vállalat által birtokolt iOS-eszközökként](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) is regisztrálhatja a felügyelethez.
 
 ### Lásd még:
-[Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[A Microsoft Intune-beli regisztráció előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

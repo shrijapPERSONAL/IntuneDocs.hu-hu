@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: e42c2e5db17943562ccd88ab8fe838056c67553a
 
 
 ---
@@ -24,7 +24,7 @@ Az Intune támogatja a vállalat által birtokolt iOS-eszközök Mac számítóg
 
 
 ## iOS-eszközök Beállítási asszisztenssel végzett regisztrációja a Microsoft Intune-nal
-Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, és felkészítheti őket a beállításhoz az új felhasználó számára.  Ehhez a módszerhez az iOS-eszközt USB-kapcsolaton keresztül egy Mac számítógéphez kell csatlakoztatni a vállalati regisztráció beállítása érdekében. A módszer emellett feltételezi, hogy Ön az Apple Configurator 2.0 verziót használja. Az iOS-eszközre alkalmazott szabályzatnak általában *felhasználói affinitást* kell tartalmaznia az Intune Vállalati portál alkalmazás használatának engedélyezése érdekében.
+Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, és felkészítheti őket a beállításhoz az új felhasználó számára.  Ehhez a módszerhez az iOS-eszközt USB-kapcsolaton keresztül egy Mac számítógéphez kell csatlakoztatni a vállalati regisztráció beállítása érdekében. A módszer emellett feltételezi, hogy Ön az Apple Configurator 2.0 verziót használja. Az iOS-eszközre alkalmazott szabályzatnak általában **felhasználói affinitást** kell tartalmaznia az Intune Vállalati portál alkalmazás használatának engedélyezése érdekében.
 
 **Előfeltételek**
 * [iOS-regisztráció engedélyezése](set-up-ios-and-mac-management-with-microsoft-intune.md) APNs tanúsítvány telepítésével
@@ -139,10 +139,10 @@ Az Apple Configuratorrel gyári alaphelyzetbe állíthatja az iOS-eszközöket, 
 
 
 ### További információ
-[Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

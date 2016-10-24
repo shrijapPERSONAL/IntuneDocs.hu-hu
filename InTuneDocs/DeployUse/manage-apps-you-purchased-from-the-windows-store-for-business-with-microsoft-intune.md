@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ A [Vállalati Windows Áruház](https://www.microsoft.com/business-store) az a h
 
 ## Előkészületek
 Mielőtt elkezdi a Vállalati Windows Áruházból származó alkalmazások szinkronizálását és telepítését, tekintse át a következő információkat:
-* Az Intune-t kell beállítania mobileszköz-kezelő szolgáltatóként a szervezetben. További információkért l.: [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](get-ready-to-enroll-devices-in-microsoft-intune.md).
+* Az Intune-t kell beállítania mobileszköz-kezelő szolgáltatóként a szervezetben. További tájékoztatást [A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md) című cikk tartalmaz.
 * Rendelkeznie kell fiókkal a Vállalati Windows Áruházban.
 * Miután összekapcsolta a Vállalati Windows Áruház-fiókját az Intune-nal, később nem választhat hozzá másik fiókot.
 * Az áruházban vásárolt alkalmazások manuálisan nem vehetők fel és nem törölhetők az Intune-ban. Az alkalmazások csak a Vállalati Windows Áruházzal szinkronizálhatók.
@@ -77,6 +77,6 @@ A Vállalati Windows Áruházból származó alkalmazások központi telepítés
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

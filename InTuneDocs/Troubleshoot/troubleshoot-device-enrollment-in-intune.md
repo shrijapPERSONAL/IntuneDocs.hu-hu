@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megold�
 
 A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően van-e konfigurálva a regisztráláshoz. Ezekről a konfigurációs követelményekről itt olvashat:
 
--   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [iOS- és Mac-eszközök kezelésének beállítása](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Windows Phone és Windows 10 Mobile rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windowsos eszközök kezelésének beállítása](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

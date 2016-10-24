@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 Ez a témakör azokkal a problémákkal kapcsolatban nyújt tájékoztatást, amelyek a mobilalkalmazás-kezelés (MAM) beállítását követően merülhetnek fel. Az útmutató az Azure-portálon található MAM-szabályzatokra vonatkozik.
 
 ### Hibajelenségek keresése
-Mivel a MAM egy adatvédelmi eszköz, nem valószínű, hogy a felhasználók jeleznek problémákat. MAM-konfigurációs probléma esetén a felhasználó ugyanolyan korlátlan hozzáféréssel rendelkezik, mint a MAM nélkül, így nem veszi észre a problémát. Éppen ezért azt javasoljuk, hogy MAM-konfigurációját úgy ellenőrizze, hogy a MAM-szabályzatokat olyan felhasználók kis csoportján teszteli, akik képesek szándékosan tesztelni a MAM-korlátozásokat. 
+Mivel a MAM egy adatvédelmi eszköz, nem valószínű, hogy a felhasználók jeleznek problémákat. MAM-konfigurációs probléma esetén a felhasználó ugyanolyan korlátlan hozzáféréssel rendelkezik, mint a MAM nélkül, így nem veszi észre a problémát. Éppen ezért azt javasoljuk, hogy MAM-konfigurációját úgy ellenőrizze, hogy a MAM-szabályzatokat olyan felhasználók kis csoportján teszteli, akik képesek szándékosan tesztelni a MAM-korlátozásokat.
 
 
-### Mit kell ellenőrizni? 
+### Mit kell ellenőrizni?
 
 Ha a tesztelés azt mutatja, hogy a MAM-szabályzat nem az elvárt módon működik, akkor javasoljuk, hogy ellenőrizze az alábbiakat:
 
@@ -40,7 +40,7 @@ Ha a tesztelés azt mutatja, hogy a MAM-szabályzat nem az elvárt módon műkö
 
 2. A listából válasszon ki egy felhasználót, vagy keressen rá valamelyik felhasználóra, majd válassza a **Felhasználó kiválasztása** lehetőséget. Az **Alkalmazásjelentések** oszlop tetején fog megjelenni, hogy a felhasználó rendelkezik-e MAM-licenccel. Ez alatt látható, hogy a felhasználó rendelkezik-e O365-licenccel, és itt jelenik meg az alkalmazás állapota a felhasználó összes eszközére vonatkozóan.
 
-![Alkalmazás állapota a MAM-ban](..\media\ts-mam-use-apps.png) 
+![Alkalmazás állapota a MAM-ban](..\media\ts-mam-user-apps.png) 
 
 ### Mi a teendő
 A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja végre:
@@ -57,6 +57,6 @@ A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja vég
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

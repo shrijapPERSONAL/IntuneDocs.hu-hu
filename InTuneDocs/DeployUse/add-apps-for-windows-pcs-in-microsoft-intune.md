@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazások hozzáadása Windows-számítógépekhez | Microsoft Intune"
+title: "Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása | Microsoft Intune"
 description: "Ebből a témakörből megtudhatja, hogyan adhat hozzá Windows rendszerű számítógépes alkalmazásokat az Intune-hoz a központi telepítésük előtt."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Alkalmazások hozzáadása Windows-számítógépekhez a Microsoft Intune-ban
+# Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása
 
 Ebből a témakörből megtudhatja, hogyan adhatja hozzá a kívánt alkalmazásokat az Intune-hoz a központi telepítésük előtt.
 
 > [!IMPORTANT]
-> Az ebben a témakörben található információk segítik az alkalmazások hozzáadását azokon a Windows-számítógépeken, amelyeket az Intune számítógépes ügyfélszoftverrel felügyel. Ha regisztrált Windows-számítógépekhez vagy más mobileszközökhöz szeretne alkalmazásokat adni, olvassa el az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](add-apps-for-mobile-devices-in-microsoft-intune.md) című cikket.
+> A jelen témakörben ismertetett információk segítik az alkalmazások hozzáadását azokon a Windows-számítógépeken, amelyeket az Intune szoftverügyfél segítségével felügyel. Ha regisztrált Windows-számítógépekhez vagy más mobileszközökhöz szeretne alkalmazásokat adni, olvassa el az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](add-apps-for-mobile-devices-in-microsoft-intune.md) című cikket.
 
 
 ## Az alkalmazás hozzáadása
@@ -90,6 +90,6 @@ Ha létrehozta az alkalmazást, a következő lépés a telepítés. További in
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

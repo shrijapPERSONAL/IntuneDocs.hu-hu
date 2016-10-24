@@ -9,19 +9,16 @@
 ### [Egyéb beállítások és kiegészítő funkciók](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [További lépések](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Gyakori helyzetek](common-ways-to-use-intune.md)
-## [Rövid útmutatók](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Céges adatszivárgások megelőzése az Office 365 alkalmazásokban](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Mobilalkalmazások közzététele a felhasználók számára](publish-mobile-apps-to-users.md)
-### [Windows rendszerű számítógépek védelme a kártevők ellen](protect-pcs-against-malware-threats.md)
-### [A mobileszközök e-mail-konfigurációjának leegyszerűsítése](simplify-email-configuration-on-mobile-devices.md)
+## [Szószedet](intune-glossary.md)
 
 # [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -1,5 +1,5 @@
 Ügyfélszolgálat hallássérültek számára
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

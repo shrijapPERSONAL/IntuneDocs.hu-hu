@@ -13,14 +13,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
 
 
 ---
 
 # Exchange ActiveSync mobileszköz-felügyelet a Microsoft Intune-nal
-Ahhoz, hogy a Microsoft Intune közvetlenül tudja felügyelni a mobileszközöket, [regisztrálni kell az eszközöket az Intune-ban](get-ready-to-enroll-devices-in-microsoft-intune.md). A másik lehetőség, hogy a rendszergazdák engedélyeznek egy korlátozottabb felügyeleti megoldást, amely az Exchange ActiveSync (EAS) felügyeletet egy Exchange-összekötővel valósítja meg. Az eszközök helyszíni Exchange-kiszolgálókkal és az Office 365 segítségével az Exchange Online megoldással is felügyelhetők. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-összekötő kapcsolatot támogat.
+Ahhoz, hogy a Microsoft Intune közvetlenül tudja felügyelni a mobileszközöket, [regisztrálni kell az eszközöket az Intune-ban](prerequisites-for-enrollment.md). A másik lehetőség, hogy a rendszergazdák engedélyeznek egy korlátozottabb felügyeleti megoldást, amely az Exchange ActiveSync (EAS) felügyeletet egy Exchange-összekötővel valósítja meg. Az eszközök helyszíni Exchange-kiszolgálókkal és az Office 365 segítségével az Exchange Online megoldással is felügyelhetők. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-összekötő kapcsolatot támogat.
 
 ## Mobileszközökre vonatkozó Exchange-hozzáférési szabályok ##
 
@@ -46,6 +46,6 @@ Végül [az EAS által felügyelt mobileszközökön tárolt vállalati adatokat
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

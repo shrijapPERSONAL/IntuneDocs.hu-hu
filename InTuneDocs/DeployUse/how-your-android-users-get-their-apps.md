@@ -3,7 +3,7 @@ title: "Android-felhasználói alkalmazások letöltése | Microsoft Intune"
 description: "Módszerek az Android-alkalmazások elérhetővé tételére végfelhasználók számára"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 43b7eb3378d9977b9d19196c91a812d9411752b9
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 
 ---
@@ -44,12 +44,14 @@ Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az
 **Nem felügyelt alkalmazások** – Azok az alkalmazások, amelyeket nem az Intune csomagolt be, illetve amelyek nem foglalják magukban az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
 ### További információ
-[Alkalmazások hozzáadása Microsoft Intune-ban](/intune/deploy-use/add-apps)
-[iOS felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
-[Windows felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
+[Alkalmazások hozzáadása a Microsoft Intune-nal](/intune/deploy-use/add-apps)
+
+[iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
+
+[Windows-felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -4,7 +4,7 @@ description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök b
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatá
 Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, amellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
 ### Biztonsági beállítások
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -58,7 +58,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 <sup>1</sup> Ha a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is konfigurálja iOS-eszközökön, azok egymás után lesznek alkalmazva. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 ### Rendszerbeállítások
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -71,7 +71,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Passbook zárolt állapotban való használatának engedélyezése**|Engedélyezi a felhasználó számára a Passbook alkalmazás eszközzárolás alatti elérését.|
 
 ### Felhőbeállítások dokumentumok és adatok számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -85,7 +85,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**iCloud-fotókönyvtár engedélyezése**|A fényképek iCloudban való tárolásának engedélyezése a felhasználó számára. Ha le van tiltva, akkor a már korábban az iCloudban tárolt fényképek is eltávolításra kerülnek.|
 
 ### Alkalmazásbeállítások a böngésző számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -97,7 +97,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetések engedélyezése a böngészőben.|
 
 ### Alkalmazásbeállítások az alkalmazások számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -111,7 +111,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 
 ### Alkalmazásbeállítások a játékok számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -119,7 +119,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|
 
 ### Médiatartalmakra vonatkozó alkalmazásbeállítások
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -129,7 +129,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 
 
 ### Eszközképességek beállításai a hardver számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -138,7 +138,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Párosítási jelszó kérése, ha a felhasználó az AirPlay segítségével tartalmat kíván közvetíteni egyéb Apple-eszközökre.|
 
 ### Eszközképességek beállításai a mobilhálózat számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -147,7 +147,7 @@ Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
 |**Roamingolás közbeni globális, háttérbeli adatbeolvasás engedélyezése**|Mobilhálózati roaming közben történő adatlehívás, például e-mail engedélyezése az eszköz számára.|
 
 ### Eszközképességek beállításai a mobilhálózat számára
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|-------|
@@ -196,7 +196,7 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 > [!NOTE]
 > Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
 >
-> -   Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
+> -   Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune) eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 > -   Ha a megadott iOS-alkalmazás a konfigurációs házirend telepítése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
 ### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
@@ -222,14 +222,14 @@ Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő é
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
 ### Regisztrációs beállítások
-Az összes beállítás az iOS 7.1-es és újabb verzióira érvényes.
+Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
 |**Az aktiválási zár engedélyezése, ha az eszköz felügyelt módban van**|Aktiválási zár engedélyezése felügyelt iOS-eszközökön.|
 
 ### A felügyelt mód beállításai
-Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy újabb verzióját futtató eszközökön konfigurálhatja.
+Az alábbi beállításokat a felügyelt módban lévő, az iOS 8.0-ás vagy újabb verzióját futtató eszközökön konfigurálhatja.
 
 ### A felügyelt mód eszközkorlátozásokra vonatkozó beállításai
 
@@ -265,9 +265,9 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 7.1-es vagy úja
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
-|**Vállalati alkalmazások megbízhatósági beállításai módosításának engedélyezése**||
-|**Alkalmazások telepítésének engedélyezése csak az Apple Configurator és az iTunes használatával**||
-|**Alkalmazások automatikus letöltésének engedélyezése**||
+|**Vállalati alkalmazások megbízhatósági beállításai módosításának engedélyezése**|Lehetővé teszi a felhasználók számára a vállalati alkalmazások megbízhatósági beállításainak módosítását.|
+|**Alkalmazások telepítésének engedélyezése csak az Apple Configurator és az iTunes használatával**|Az App Store áruház az eszköz kezdőképernyőjén engedélyezhető vagy tiltható le. A felhasználók továbbra is használhatják az iTunest vagy az Apple Configurator eszközt alkalmazások telepítésére vagy frissítésére.|
+|**Alkalmazások automatikus letöltésének engedélyezése**|Más eszközökkel vásárolt alkalmazások automatikus letöltésének engedélyezése erre az eszközre. Ez a beállítás nem befolyásolja az alkalmazások frissítéseit.|
 |**A Barátok alkalmazás beállításai módosításának engedélyezése**|Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.|
 |**Az iBooks áruház elérésének engedélyezése**|Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.|
 |**Az Üzenetek alkalmazás használatának engedélyezése az eszközön**|Engedélyezi az Üzenetek alkalmazást a szöveges üzenetek küldéséhez.|
@@ -382,6 +382,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

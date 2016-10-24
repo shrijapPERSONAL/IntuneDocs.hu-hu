@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ A külső hivatkozásokon alapuló alkalmazásokat nem tárolja a rendszer az In
 A felügyelt iOS-alkalmazásokkal az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését végezheti el. A felügyelt iOS-alkalmazásokkal [mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is hozzárendelhet a [kompatibilis alkalmazásokhoz](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
 
 > [!TIP]
-> A mobileszközökre vonatkozó beállítások csak azután lesznek elérhetők, ha a [Mobileszköz-kezelő szolgáltató megadása](get-ready-to-enroll-devices-in-microsoft-intune.md) beállítást az Intune-ra állította.
+> A mobileszközökre vonatkozó beállítások csak azután lesznek elérhetők, ha a [Mobileszköz-kezelő szolgáltató megadása](prerequisites-for-enrollment.md) beállítást az Intune-ra állította.
 
 ## Intune Software Publisher
 Ha alkalmazásokat vesz fel vagy módosít az Intune felügyeleti konzol használatával, elindul a Microsoft Intune Software Publisher. A Publisher alkalmazásban elvégezheti az alábbi szoftvertelepítő-típusok kijelölését és konfigurálását:
@@ -82,6 +82,6 @@ Az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné �
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

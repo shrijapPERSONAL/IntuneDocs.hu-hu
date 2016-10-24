@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Android-eszközön blokkoló üzenet jelenhet meg, amely ismerteti a meglévő f
 
 ![Képernyőfelvétel a hibaüzenetről és a fiók eltávolítására vonatkozó utasításokról](../media/AppManagement/Android_SwitchUser.png)
 
-##  Médiafájlok megtekintése a Rights Management megosztóalkalmazással
-A vállalati AV-, PDF- és képfájlok Android-eszközökön való megtekintéséhez használja a [Microsoft Rights Management (RMS) megosztóalkalmazást](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Médiafájlok megtekintése az Azure Information Protection alkalmazással (korábbi nevén Rights Management megosztóalkalmazással)
+A vállalati AV-, PDF- és képfájlok Android-eszközökön való megtekintéséhez használja az [Azure Information Protection alkalmazást](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Ezt az alkalmazást a Google Play áruházból töltheti le.  Miután telepítette az eszközre az alkalmazást, indítsa el az alkalmazást, és jelentkezzen be a vállalati hitelesítő adataival. Ekkor meg tudja tekinteni a szabályzattal felügyelt más alkalmazásokból származó nem védett és védett fájlokat is.
+Ezt az alkalmazást a Google Play áruházból töltheti le.  
 
 A rendszer a következő fájltípusokat támogatja:
 
 * **Hang:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (kibővített AAC+), AAC ELD (kibővített, alacsony késleltetésű AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Videó:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Kép:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF PPDF
+* **PDF PPDF**
 
 ------------
 |**pfile**|**szöveg**|
 |----|----|
-|A pfile egy olyan általános „burkoló” formátum a védett fájloknak, amely magában foglalja a titkosított tartalmakat és az RMS-licenceket, és bármilyen fájltípus védelmére használható.|A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt ptxt, csv, pcsv, log, plog, xml, pxml.|
+|A pfile egy olyan általános „burkoló” formátum a védett fájloknak, amely magában foglalja a titkosított tartalmakat és az Azure Information Protection-licenceket, és bármilyen fájltípus védelmére használható.|A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Az Intune-ban nem regisztrált Android-eszközök**
 
-Ahhoz, hogy az Intune által felügyelt más alkalmazásokból származó fájlokat tekinthessen meg az RMS-megosztóalkalmazás segítségével, indítsa el az RMS alkalmazást, és hitelesítse munkahelyi fiókját.  A következő üzenet csak akkor jelenik meg bejelentkezéskor, ha **nem rendelkezik RMS-licenccel**:
-
-**A hitelesítés sikerült – Mostantól megtekintheti a vállalati fájlokat, de szervezete nem áll készen a fájlok védelmére. További részletekért kérje a rendszergazda segítségét.**
-
-Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekintse a vállalati fájlokat. Továbbra is megnyithatja és megtekintheti az Intune által felügyelt más alkalmazásokból származó fájlokat, és a MAM-szabályzatok is érvényben maradnak.  Az üzenet arról tájékoztatja Önt, hogy nem lesz lehetősége használni az RMS-megosztóalkalmazás által biztosított további védelmi funkciókat.  Ahhoz, hogy védelemmel lássa el fájljait, RMS-licencre van szükség. Az RMS által biztosított fájlvédelmi funkciókról további információt az [Eszközön lévő fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) és az [E-mailben megosztott fájl védelme](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) című cikkben találhat.
 
 
 ### További információ
@@ -171,6 +165,6 @@ Ez nem gátolja meg, hogy az RMS-megosztóalkalmazás segítségével megtekints
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

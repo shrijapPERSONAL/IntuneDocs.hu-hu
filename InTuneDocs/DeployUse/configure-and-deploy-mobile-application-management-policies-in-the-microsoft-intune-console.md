@@ -4,7 +4,7 @@ description: "A Microsoft Intune mobilalkalmazás-felügyeleti szabályzatai leh
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ A mobilalkalmazás-kezelési házirendek a következőket támogatják:
 
 -   Az Android 4-es vagy újabb verzióját futtató eszközök
 
--   Az iOS 7-es vagy újabb verzióját futtató eszközök
+-   Az iOS 8.0-s vagy újabb verzióját futtató eszközök
 
 > [!TIP]
 > A mobilalkalmazás-kezelési szabályzatok az Intune-ban regisztrált eszközökre alkalmazhatók.
@@ -112,7 +112,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
 
     -   **Mobilalkalmazás-kezelési házirend (Android 4 és újabb)**
 
-    -   **Mobilalkalmazás-kezelési házirend (iOS 7 és újabb)**
+    -   **Mobilalkalmazás-kezelési szabályzat (iOS 8.0 és újabb verziók)**
 
     Használhatja az ajánlott beállításokat, vagy testre is szabhatja a beállításokat. További információt [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) című témakörben találhat.
 
@@ -134,7 +134,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**A vállalati házirenddel való eszközkompatibilitás szükséges a hozzáféréshez**|Ezzel a beállítással az alkalmazás használata csak akkor engedélyezett, ha az eszköz nem jailbreakelt vagy rootolt.|
     |**A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)**|Az **Időtúllépés** mezőben adja meg azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése az alkalmazás elindítása után.|
     |**Offline türelmi időszak**|Ha az eszköz offline állapotban van, itt megadhatja azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése.|
-    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS 7 által használt modulok a FIPS 140-2 szerint tanúsítottak](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.|
+    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.|
     |**Képernyőrögzítés letiltása** (csak Android-eszközök esetén)|Ezzel a beállítással megadhatja, hogy az eszköz képernyőfelvétel-funkciói le legyenek tiltva az alkalmazás használatakor.|
     
 4. Ha elkészült, válassza a **Házirend mentése** elemet.
@@ -147,8 +147,6 @@ Gondoskodjon arról, hogy az **Üzembe helyezés kezelése** párbeszédpanel **
 További információt az [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md) című témakörben találhat.
 
 > [!IMPORTANT]
-> Az iOS 7.1-es verziójánál korábbi operációs rendszereket futtató eszközök esetén a társított házirendek nem lesznek eltávolítva az alkalmazás eltávolításakor.
->
 > Ha az eszköz Intune-regisztrációját megszüntetik, a szabályzatok alkalmazásokból való eltávolítása nem történik meg. A szabályzatokkal felügyelt alkalmazások megőrzik a szabályzat beállításait még azt követően is, hogy az alkalmazást eltávolították és újratelepítették.
 
 ### Teendők, ha egy alkalmazás már üzembe van helyezve az eszközökön
@@ -195,6 +193,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

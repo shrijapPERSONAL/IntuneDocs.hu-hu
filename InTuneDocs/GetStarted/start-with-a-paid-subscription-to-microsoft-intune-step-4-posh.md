@@ -13,14 +13,14 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: a2dbb6dadb2b68ace349e8b9b0567c132ac55482
+ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
+ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
 
 
 ---
 
 # Intune-licencek kezelése a PowerShell használatával
-Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, minden felhasználó számára egy licencet kell hozzárendelnie az Intune-előfizetéséhez, a [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Intune-licencek kezelése) című témakörnek megfelelően. Ugyanakkor előfordulhat, hogy a Microsoft Nagyvállalati mobilitási csomag (EMS) megoldást használó szervezeteknek vannak felhasználói, akik csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatást igénylik. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.
+Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, minden felhasználó számára egy licencet kell hozzárendelnie az Intune-előfizetéséhez, a [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Intune-licencek kezelése) című témakörnek megfelelően. Előfordulhat azonban, hogy a Microsoft Enterprise Mobility + Security megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.
 
 A felhasználói licencek EMS-szolgáltatásokhoz való szelektív hozzárendeléséhez nyissa meg a PowerShellt rendszergazdaként egy olyan számítógépen, amelyre telepítve van a [Windows PowerShellhez készült Microsoft Azure Active Directory-modul ](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) megoldással rendelkező számítógépen. A PowerShell helyi számítógépre vagy ADFS-kiszolgálóra telepíthető.
 
@@ -67,6 +67,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
