@@ -2,8 +2,8 @@
 title: "Windows 10 rendszerű eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
