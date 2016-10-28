@@ -2,8 +2,8 @@
 title: "Windows 10 rendszerű eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban
 
 Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
 
@@ -42,7 +42,7 @@ Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása:
 
     ![Saját fiók](./media/w10-enroll-2-accounts-your-account.png)
 
-## Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
 1.  Koppintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** lehetőségre, majd a **Kapcsolódás** elemre.
 
@@ -69,7 +69,7 @@ Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása:
 Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail fiókjához és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
 
 
-## Teendők, ha ezt látja: Saját fiók
+## <a name="steps-to-follow-if-you-see-your-account"></a>Teendők, ha ezt látja: Saját fiók
 
 1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
 
