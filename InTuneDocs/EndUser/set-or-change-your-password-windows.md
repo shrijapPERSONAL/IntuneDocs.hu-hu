@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ A rendszergazda több követelményt is beállíthat a jelszavakhoz. Megadhatja 
 
 Ha gondja támad az összes követelménynek megfelelő jelszó beállításával, kérjen segítséget a rendszergazdától.
 
-## Jelszó módosítása Windows Phone 8 vagy 8.1 rendszerű eszközökön:
+## Jelszó módosítása Windows Phone 8.1-es telefonon:
 
 1. A **kezdőlap** képernyőn koppintson a **Beállítások** pontra, majd válassza a **zárolási képernyő** lehetőséget.
 2. Görgessen le a **Jelszó** ponthoz, és koppintson a **jelszó módosítása** pontra.
@@ -34,7 +34,7 @@ Ha gondja támad az összes követelménynek megfelelő jelszó beállításáva
 4. Adja meg az új jelszót az **Új jelszó** mezőben, majd még egyszer a **Jelszó megerősítése** mezőben.
 4. Koppintson a **kész** gombra.
 
-## Jelszó beállítása Windows Phone 8 vagy 8.1 rendszerű eszközökön:
+## Jelszó beállítása Windows Phone 8.1-es telefonon:
 
 1. A **kezdőlap** képernyőn koppintson a **Beállítások** pontra, majd válassza a **zárolási képernyő** lehetőséget.
 2. Görgessen le a **Jelszó** ponthoz, és csúsztassa a **Jelszó** sávot a **Be** állásba.
@@ -47,6 +47,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

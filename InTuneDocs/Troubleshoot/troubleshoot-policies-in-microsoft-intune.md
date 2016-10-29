@@ -3,6 +3,7 @@ title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intun
 description: "Elháríthat szabályzatok konfigurációjával kapcsolatos problémákat."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 8b2f725dd71a9d5da5387c543261df8607be6d6f
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
 
 
 ---
@@ -56,10 +57,10 @@ Az alábbi képernyőképen két világos példa látható:
 Ha a felügyeleti konzol Helyszíni Exchange-szabályzat munkaterületén szabályzatot hozott létre, de O365-öt használ, az Intune nem kényszeríti ki a konfigurált szabályzatbeállítások használatát. Jegyezze fel a figyelmeztetésben szereplő szabályzatforrást.  A Helyszíni Exchange-szabályzat munkaterületen törölje az örökölt szabályokat, mivel azok a helyszíni Exchange-hez készült Intune-on belüli globális Exchange-szabályok, és nem vonatkoznak az O365-re. Ezután hozzon létre új szabályzatot az O365-höz.
 
 ### Nem módosítható a különféle regisztrált eszközök biztonsági házirendje
-A Windows Phone-telefonok és a Windows RT-eszközök nem teszik lehetővé, hogy a beállításukat követően csökkentse az MDM-en vagy az EAS-on keresztül megadott biztonsági szabályzatok biztonságát. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb szabályzat tartozik.
+A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követően a felhasználó alacsonyabb biztonsági értékeket konfiguráljon az MDM-en vagy az EAS-en keresztül megadott biztonsági szabályzatokhoz. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb szabályzat tartozik.
 
 Az eszköz platformjától függően előfordulhat, hogy ha módosítani szeretné a szabályzatot egy kevésbé biztonságos értékre, alaphelyzetbe kell állítania a biztonsági szabályzatokat.
-Windows RT rendszerben például pöccintsen jobbról a **Gombok** sáv megnyitásához, majd válassza a **Beállítások** &gt; **Vezérlőpult** lehetőséget.  Válassza a **Felhasználói fiókok** kisalkalmazást.
+A Windowsban például jobbról befelé pöccintve nyissa meg az asztalon a **Gombok** sávot, és válassza a **Gépház** &gt; **Vezérlőpult** lehetőséget.  Válassza a **Felhasználói fiókok** kisalkalmazást.
 A bal oldali navigációs menü alján található egy **Biztonsági házirendek mellőzése** hivatkozás. Válassza ki, majd kattintson a **Házirendek mellőzése** gombra.
 Előfordulhat, hogy egyéb MDM-eszközöket (például Android, Windows Phone 8.1 és újabb, valamint iOS) ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó házirend alkalmazásához.
 
@@ -98,6 +99,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: Wi-Fi-kapcsolatok | Microsoft Intune
 description: "A Wi-Fi profilok használatával segítséget nyújthat a felhasználóknak a Wi-Fi hálózatokhoz való csatlakozáshoz."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +30,7 @@ Tegyük fel például, hogy egy új, **Contoso Wi-Fi** nevű vezeték nélküli 
 
 1.   Hozza létre a **Contoso Wi-Fi** vezeték nélküli hálózathoz való csatlakozás beállításait tartalmazó Wi-Fi profilt.
 
-2. Telepítse a profilt az iOS-eszközzel rendelkező felhasználók csoportjában.
+2.   Telepítse a profilt az iOS-eszközzel rendelkező felhasználók csoportjában.
 
 3.   A felhasználók megtalálják az új **Contoso Wi-Fi** hálózatot a vezeték nélküli hálózatok között, és könnyedén csatlakoznak hozzá.
 
@@ -39,6 +40,8 @@ Tegyük fel például, hogy egy új, **Contoso Wi-Fi** nevű vezeték nélküli 
 A Wi-Fi-profilok a következő platformokon telepíthetők:
 
 -   Android 4.0 és újabb verziók
+
+-   Android for Work   
 
 -   iOS 8.0 és újabb verziók
 
@@ -52,10 +55,13 @@ A Windows 8.1, vagy a Windows 10 asztali vagy mobilverzióját futtató eszköz�
 
     -   Wi-Fi profil (Android 4 és újabb)
 
-    -   Wi-Fi profil (iOS 8.0 és újabb)
+    -   Wi-Fi profil (Android for Work)
+
+    -   Wi-Fi profil (iOS 8.0 és újabb verziók)
 
     -   Wi-Fi-profil (Mac OS X 10.9 és újabb verziók)
-
+    
+    
     Ehhez a házirendtípushoz nincsenek ajánlott beállítások, Egyéni házirendet kell létrehoznia.
 
 3.  Adja meg a profil nevét és leírását.
@@ -173,6 +179,6 @@ Ismerje meg, hogyan hozhat létre Wi-Fi-profilt egy előmegosztott kulccsal: [Wi
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

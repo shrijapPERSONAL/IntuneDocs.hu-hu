@@ -4,7 +4,7 @@ description: "Az e-mail-profil beállításainak segítségével konfigurálhat�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
+ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
+ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
 
 
 ---
@@ -33,13 +33,16 @@ A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram
 -   Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
 -   iOS 8.0 és újabb verziók
 -   Samsung KNOX Standard (4.0-s és újabb verzió)
+-   Android for Work
+
+>[!NOTE]
+>Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el és támogatják a kapcsolatot az Exchange-dzsel. Az e-mail kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt 
 
 Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
+
 >[!NOTE]
 >
 >Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune beállított volna egyet, akkor az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
-
-[comment]: <> Passive construction in next three paragraphs is necessary until the process of duplicate detection is made clear by PM.
 
 >**iOS**: A rendszer az állomásnév és az e-mail cím alapján egy meglévő, duplikált e-mail profilt észlelt. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil nem megfelelő, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy az e-mail profil telepítése előtt regisztrálják eszközeiket, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
 
@@ -48,6 +51,8 @@ Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szin
 >**Samsung KNOX**: A rendszer az e-mail cím alapján egy meglévő, duplikált e-mail profilt észlelt, és felülírja azt az Intune-profillal. Ha a felhasználó ezt az észlelt fiókot állítja be, az Intune-profil ismételten felülírja. Ez megzavarhatja a felhasználót.
 
 >Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez használja őket a különböző gazdagépeken, mivel ezek felülírják egymást.
+
+>**Android for Work**: Az Intune-profil csak az eszköz munkahelyi profiljára vonatkozik és nem befolyásolja az email-profilokat az eszköz felhasználói profilján.
 
 
 ## Az e-mail-profilok biztonságossá tétele
@@ -76,6 +81,10 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     -   **E-mail profil (Windows Phone 8 és újabb)**
 
     -   **E-mail profil (Windows 10 és újabb asztali és mobil rendszerek)**
+    
+    -   **E-mail profil (Android for Work - Gmail)**
+
+    -   **E-mail profil (Android for Work - Nine Work)**
 
     Csak egyéni e-mail profilházirendet hozhat létre és telepíthet. Ajánlott beállítások nem állnak rendelkezésre.
 
@@ -89,14 +98,14 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**Fióknév**|Az e-mail-fiók megjelenítendő neve. Ez fog megjelenni a felhasználók eszközein.|
     |**Felhasználónév**|Az e-mail-fiókhoz tartozó felhasználónév megszerzésének módja. Helyszíni Exchange-kiszolgáló esetén válassza a **Felhasználónév**, Office 365 esetén pedig az **Egyszerű felhasználónév** lehetőséget.|
     |**E-mail cím**|A felhasználóhoz tartozó e-mail-cím előállításának módja az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.|
-    |**Hitelesítési módszer** (Samsung KNOX és iOS)|Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget.|
-    |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. További információt a tanúsítványprofilok Intune-ban történő használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat. Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.|
+    |**Hitelesítési módszer** (Android for Work, Samsung KNOX és iOS)|Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget.|
+    |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Android for Work, Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. További információt a tanúsítványprofilok Intune-ban történő használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat. Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.|
     |**S/MIME használata** (Samsung KNOX és iOS)|Kimenő e-mailek küldése S/MIME titkosítással.|
     |**Aláíró tanúsítvány** (Samsung KNOX és iOS)|Válassza ki a kimenő e-mailek aláírására használt aláíró tanúsítványt. Ez a lehetőség csak akkor jelenik meg, ha az **S/MIME használata** lehetőséget választotta.|
     |**E-mailek szinkronizálása ennyi napra visszamenőleg**|Azt adja meg, hogy hány napra visszamenőleg kívánja szinkronizálni az e-maileket; az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.|
-    |**Szinkronizálás ütemezése** (Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange-kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
+    |**Szinkronizálás ütemezése** (Android for Work, Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange-kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
     |**SSL használata**|SSL-kommunikáció használata az e-mailek küldésekor és fogadásakor, valamint az Exchange-kiszolgálóval való kommunikációhoz. A Samsung KNOX 4.0-s vagy újabb verzióját futtató eszközök számára exportálja az Exchange Server SSL-tanúsítványát, és telepítse az Intune-ban androidos megbízható tanúsítványprofilként. Az Intune nem támogatja a hozzáférést ehhez a tanúsítványhoz, ha ez más módon telepítve van az Exchange-kiszolgálón.|
-    |**Szinkronizálni kívánt tartalom típusa**|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.|
+    |**Szinkronizálandó tartalomtípus** (minden platform az Android for Work Gmail kivételével)|Válassza ki az eszközökre szinkronizálni kívánt tartalomtípusokat.|
     |**Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** (csak iOS esetén)|A felhasználók alapértelmezett e-mail-küldési fiókként választhatják ki ezt a profilt, és engedélyezhetik a külső alkalmazások számára az e-maileknek a natív e-mail alkalmazásban történő megnyitását, például fájlok e-mailhez való csatolásához.|
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
@@ -122,6 +131,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

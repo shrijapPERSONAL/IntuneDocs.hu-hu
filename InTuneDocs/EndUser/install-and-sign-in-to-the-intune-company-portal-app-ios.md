@@ -3,6 +3,7 @@ title: "Az Intune Vállalati portál alkalmazásának telepítése, majd bejelen
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,7 +30,7 @@ Az iOS-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést 
 
 2.  Töltse le a **Microsoft Intune Vállalati portál** alkalmazást.
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![Töltse le a Intune Vállalati portál alkalmazást](./media/ios-cpinstall-1-cpinstore.png)
 
 3.  Nyissa meg a Vállalati portál alkalmazást, és írja be a munkahelyi vagy az iskolai e-mail címét és jelszavát, majd koppintson a **Bejelentkezés** elemre.
 
@@ -39,7 +40,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

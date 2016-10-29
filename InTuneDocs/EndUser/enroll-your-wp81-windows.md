@@ -2,7 +2,8 @@
 title: "Windows Phone 8.1-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Windows Phone 8.1-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 # Windows Phone 8.1-eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
 
 
 Az Phone 8.1 rendszerű eszköznek az Intune-ban való regisztrálásához kövesse a vállalatára vagy iskolájára érvényes utasításokat:
@@ -36,7 +37,7 @@ Telepítse az eszközre a Vállalati portál alkalmazást:
 
 1.  Koppintson a **Start** &gt; **Áruház** parancsra.
 
-2.  Koppintson a **Keresés** elemre, és írja be a **vállalati portál** kifejezést.
+2.  Koppintson a **Keresés** elemre, majd írja be a **vállalati portál** kifejezést.
 
 3.  Az eredmények listájában koppintson a **Vállalati portál** elemre.
 
@@ -80,13 +81,12 @@ Regisztrálja az eszközt:
 
 4.  Ha a rendszer kéri a vállalati alkalmazás vagy központ telepítését, jelölje be a megfelelő jelölőnégyzetet, majd koppintson a **kész** gombra.
 
-Ha a rendszergazda úgy konfigurálta a Vállalati portál alkalmazást, hogy az a regisztráció során települjön, a Vállalati portál megjelenik az alkalmazáslistában.
+Ha a rendszergazda úgy állította be a Vállalati portál alkalmazást, hogy az a regisztráció során települjön, a Vállalati portál megjelenik az alkalmazáslistában.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

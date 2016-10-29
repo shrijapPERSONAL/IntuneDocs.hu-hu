@@ -3,6 +3,7 @@ title: "Az IOS-eszköz nem kompatibilis az operációs rendszer maximális verzi
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,21 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e9ffe9caddf6c0f6bf93f19b49672f197dc64708
+ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
+ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
 
 
 ---
 
 
-# Az IOS-eszköz nem kompatibilis az operációs rendszer maximális verziójával
+# Az iOS-eszköz nem kompatibilis a legújabb operációs rendszer beállításával
 
-Az iOS-eszköze nem felel meg az informatikai rendszergazda által beállított, az operációs rendszer maximális verziójára vonatkozó házirendnek. Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
+Az iOS-eszköze nem felel meg az informatikai rendszergazda által beállított, az operációs rendszer legújabb használható verziójára vonatkozó szabályzatnak. Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

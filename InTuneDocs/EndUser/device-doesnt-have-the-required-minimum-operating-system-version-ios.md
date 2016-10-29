@@ -3,6 +3,7 @@ title: "Az IOS-eszköz nem rendelkezik az operációs rendszer minimálisan szü
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
+ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
+ms.openlocfilehash: da1c2da0970d38b410ba67a03f1c302c2b352f27
 
 
 ---
@@ -23,14 +24,12 @@ ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
 
 # Az IOS-eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával
 
-Az iOS-eszköze nem rendelkezik az IT-részleg által megkövetelt minimális operációsrendszer-verzióval.  Az eszköz frissítése előtt ellenőrizze az operációs rendszer aktuális verzióját. Ehhez koppintson a **Beállítások** &gt; **Névjegy** elemre. Az eszköz legújabb verzióra való frissítéséhez koppintson a **Beállítások** &gt; **Általános** &gt; **Szoftverfrissítés** lehetőségre.
+A IOS-eszköze nem rendelkezik az IT-részleg által megkövetelt minimális operációsrendszer-verzióval. Az eszköz frissítése előtt ellenőrizze az operációs rendszer aktuális verzióját. Ehhez válassza a **Beállítások** &gt; **Névjegy** elemet. Az eszköz legújabb verzióra való frissítéséhez válassza a **Beállítások** &gt; **Általános** &gt; **Szoftverfrissítés** lehetőséget.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

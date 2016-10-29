@@ -3,6 +3,7 @@ title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microso
 description: "Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástelepítéssel kapcsolatos problémák megoldásához nyújt segítséget."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
-ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
 
 
 ---
@@ -26,7 +27,7 @@ Ha problémába ütközik az alkalmazások Intune-nal történő telepítése va
 
 |Hibakód|Lehetséges probléma|Javasolt megoldás|
 |--------------|--------------------|------------------------|
-|0x80073CFF<br /><br />0x80CF201C (ügyfélhiba)|Az alkalmazás telepítéséhez közvetlen telepítést lehetővé tevő rendszerrel kell rendelkeznie.|Győződjön meg arról, hogy az alkalmazáscsomag megbízható aláírással rendelkezik, és olyan tartományhoz csatlakoztatott eszközön van telepítve, amelyen engedélyezve van az AllowAllTrustedApps házirend, vagy olyan Windows-alapú közvetlen telepítést lehetővé tevő licenccel rendelkező eszközön van telepítve, amelyen engedélyezve van az AllowAllTrustedApps házirend (ezt a Windows RT rendszerű eszközök regisztrációjakor alkalmazza a szolgáltatás).|
+|0x80073CFF<br /><br />0x80CF201C (ügyfélhiba)|Az alkalmazás telepítéséhez közvetlen telepítést lehetővé tevő rendszerrel kell rendelkeznie.|Győződjön meg arról, hogy megbízható az alkalmazáscsomag aláírása, és olyan tartományi eszközre van telepítve a csomag, amelyen engedélyezett az AllowAllTrustedApps házirend. Megfelelő az is, ha közvetlen telepítést biztosító licenccel rendelkező olyan windowsos eszközre van telepítve a csomag, amelyen engedélyezve van az AllowAllTrustedApps házirend.|
 |0x80073CF0|A csomag nem nyitható meg.|Lehetséges okok:<br /><br />-   A csomag nincs aláírva.<br />-   A közzétevő neve nem egyezik meg az aláíró tanúsítvány tulajdonosával.<br /><br />További információt az AppxPackagingOM eseménynaplóban talál.|
 |0x80073CF3|Nem sikerült ellenőrizni a csomag frissítéseit, függőségeit vagy ütközéseit|Lehetséges okok:<br /><br />-   A bejövő csomag ütközik egy telepített csomaggal.<br />-   Nem található a megadott csomagfüggőség.<br />-   A csomag nem támogatja a megfelelő processzorarchitektúrát.<br /><br />További információt az AppXDeployment-Server eseménynaplóban talál.|
 |0x80073CFB|A megadott csomag már telepítve van, és a csomag újratelepítése le van tiltva.|Ez a hiba akkor fordulhat elő, ha olyan csomagot telepít, amely nem azonos a már telepített csomaggal. Ellenőrizze, hogy a csomag tartalmaz-e digitális aláírást. Ha újraépít vagy újra aláír egy csomagot, a csomag nem lesz bitenként azonos az előzőleg telepített csomaggal. Ez a hiba kétféleképpen javítható ki:<br /><br />-   Növelje az alkalmazás verziószámát, majd építse és írja alá újra a csomagot.<br />-   Az új csomag telepítése előtt távolítsa el a régi csomagot a rendszer minden felhasználója esetében.|
@@ -49,6 +50,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: "Mobileszközök biztonsági házirendjének beállításai | Microsoft I
 description: "Az Intune használatával konfigurálhatja azokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +41,7 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 
 > [!NOTE]
 > Egyes beállítások csak bizonyos eszközökre alkalmazhatók. A konfigurálható beállítások teljes listáját lásd az alábbi táblázatokban.
+> 2016 októberétől kivezetjük a Windows 8 Vállalati portál alkalmazásainak támogatását a Microsoft Intune-ban. Egyúttal a Windows Phone 8 és WinRT platform Microsoft Intune-beli támogatását is kivezetjük. Ennek következményeképpen nem fog tudni Windows Phone 8 vagy WinRT rendszerű eszközöket regisztrálni vagy frissíteni. A már regisztrált Windows Phone 8, WinRT és Windows 8 rendszerű eszközöket továbbra is felügyelheti. Frissítse a Windows Phone 8 és Windows 8 rendszerű eszközöket Windows 8.1-es és a Windows Phone 8.1-es verzióra, és használja a megfelelő Windows 8.1-es és Windows Phone 8.1-es Vállalati portál alkalmazásokat az alkalmazások további zökkenőmentes terjesztéséhez ezekre az eszközökre.
 
 ## Biztonsági beállítások
 
@@ -212,6 +214,6 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

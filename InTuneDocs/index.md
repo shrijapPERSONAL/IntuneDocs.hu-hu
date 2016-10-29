@@ -3,19 +3,20 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Intune-dokumentáció – MDM-dokumentáció | Microsoft Docs"
+title: "Intune-dokumentáció | Microsoft Docs"
 description: "Technikai dokumentáció a Microsoft Intune-hoz – Mobileszköz- és alkalmazásfelügyelet"
-keywords: "intune-dokumentáció, MDM-dokumentáció, mobileszköz-felügyelet dokumentációja, mobileszköz- és alkalmazásfelügyelet dokumentációja"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "intune-dokumentáció, alkalmazásfelügyelet, eszközkezelés, MDM-dokumentáció, MAM-dokumentáció"
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -24,20 +25,20 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
     <section id="hero-content">
       <h1>Intune-dokumentáció</h1>
       <h2>Útmutató a Microsoft Intune mobileszköz- és alkalmazásfelügyeleti szolgáltatás telepítéséhez és kezeléséhez.</h2>
-      <h3>Érdemes az Intune-t és a Configuration Manager 2012-vel felügyelni? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Nézze át a Configuration Manager dokumentációját. &rarr;</a></h3>
+      <h3>Az Intune-t a Configuration Managerrel kívánja felügyelni? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Tudnivalók a hibrid mobileszköz-felügyeletről &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Kiemelt tartalom</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">A Microsoft Intune bemutatása</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Az Intune-ra épülő gyakori eljárások</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Az Intune bemutatása</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Újdonságok</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Az Intune használatának gyakori módjai</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Alkalmazásadatok védelme</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Az eszközök és alkalmazások életciklusának áttekintése</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Alkalmazásadatok védelme</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Mit kell tudniuk a végfelhasználóknak az Intune-ról?</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">A vállalati erőforrások hozzáférésének védelme</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">iOS-hoz készült Microsoft Intune App SDK – fejlesztői útmutató</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek</a></li>
         </ul>
       </div>
     </section>
@@ -284,6 +285,6 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

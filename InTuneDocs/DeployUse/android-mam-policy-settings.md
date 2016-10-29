@@ -4,7 +4,7 @@ description: "Ez a témakör bemutatja a mobilalkalmazás-felügyeleti szabályz
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 - **Névjegy-szinkronizálás letiltása:** Válassza az **Igen** lehetőséget, ha nem szeretné, hogy a rendszer szinkronizálja a névjegyadatokat az eszköz natív címjegyzék-alkalmazásával. Ha a **Nem** lehetőséget választja, az alkalmazás az eszköz natív címjegyzék-alkalmazásába menti a névjegyadatokat.<br/>Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
 
   **Alapértelmezett érték = Igen**
+- **Nyomtatás letiltása:** Válassza az **Igen** lehetőséget, hogy megakadályozza a vállalati adatok nyomtatását a MAM-szabályzatban foglalt alkalmazásokban.
+
+  **Alapértelmezett érték - Igen**
 
 ##  A hozzáférési szabályzatok beállításai Android rendszeren
 A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra utal, amelyekhez MAM-szabályzatot állítottak be.
@@ -96,6 +99,6 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

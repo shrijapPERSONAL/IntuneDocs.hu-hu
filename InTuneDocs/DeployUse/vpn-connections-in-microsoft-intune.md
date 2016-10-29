@@ -4,7 +4,7 @@ description: "A VPN-profilok beállításával a szervezetében lévő felhaszn�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # VPN-kapcsolatok a Microsoft Intune-ban
- A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. A távoli felhasználók úgy dolgozhatnak, mintha eszközeik fizikailag kapcsolódnának a hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. A Microsoft Intune *VPN-profiljainak* beállításával a szervezet felhasználóira és eszközeire alkalmazhatja a VPN-beállításokat. Ezen beállítások telepítésével lecsökkentheti a vállalati hálózaton lévő erőforrások eléréséhez szükséges végfelhasználói beavatkozást.
+
+A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy *VPN-csatlakozási profil* használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. A Microsoft Intune *VPN-profiljainak* beállításával a szervezet felhasználóira és eszközeire alkalmazhatja a VPN-beállításokat, így könnyedén és biztonságosan kapcsolódhatnak a hálózathoz. 
 
 Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a beállításokat, amelyek a vállalati hálózaton lévő egyik fájlmegosztáshoz való csatlakozáshoz szükségesek. Ehhez létre kell hoznia egy, a vállalati hálózathoz való csatlakozáshoz szükséges beállításokat tartalmazó VPN-profilt, majd ezt a profilt minden iOS-eszközt használó felhasználóra alkalmaznia kell. A felhasználók látni fogják a VPN-kapcsolatot a rendelkezésre álló hálózatok listájában, és könnyen csatlakozhatnak.
 
 VPN-profilokkal a következő típusú eszközök konfigurálhatók:
 
 * Android 4 vagy újabb rendszerű eszközök
+* Android for Work-eszközök
 * iOS 8.0 vagy újabb rendszerű eszközök
 * A Mac OS X 10.9-es vagy újabb rendszerű eszközök
 * A Windows 8.1-es vagy újabb verzióját futtató regisztrált eszközök
@@ -70,9 +72,7 @@ A VPN-profilok számos különböző kapcsolattípust és különféle gyártók
 
 ### Tanúsítványok
 
-A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy .PFX-tanúsítványprofilt, amelyet korábban az Intune-ban hozott létre.
-
-Ez identitástanúsítványként is ismert, és ennek segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy főtanúsítvánnyal), amelyet Ön a felhasználó eszközének a csatlakoztatásához hozott létre. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
+A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy .PFX-tanúsítványprofilt, amelyet korábban az Intune-ban hozott létre. Ez identitástanúsítványként is ismert, és ennek segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy *főtanúsítvánnyal*), amelyet Ön a felhasználó eszközének a csatlakoztatásához hozott létre. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
 
 A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md).
 
@@ -85,13 +85,17 @@ A felhasználó a VPN-kiszolgálón felhasználónév és jelszó megadásával 
 1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** > **Házirend hozzáadása** lehetőséget.
 2. Válasszon sablont az új szabályzathoz a megfelelő eszköztípus kibontásával, majd válasszon VPN-profilt az eszköznek:
     * **VPN-profil (Android 4 és újabb)**
-    * **VPN-profil (iOS 8.0 és újabb)**
+    * **VPN-profil (Android for Work)**
+    * **VPN-profil (iOS 8.0 és újabb verziók)**
     * **VPN-profil (Mac OS X 10.9 és újabb verziók)**
     * **VPN-profil (Windows 8.1 és újabb verziók)**
     * **VPN-profil (Windows Phone 8.1 és újabb)**
     * **VPN-profil (Windows 10 és újabb asztali és mobil verzió)**
 
  A VPN-profilhoz csak egyéni szabályzatot hozhat létre és alkalmazhat. Ajánlott beállítások nem állnak rendelkezésre.
+
+> [!Note]
+> Az Android for Work-eszközök VPN-profilja csak az eszköz munkahelyi profilján telepített alkalmazások számára fogja engedélyezni a VPN-kapcsolatot.
 
 3. Az alábbi táblázat segítséget nyújt a VPN-profil beállításainak konfigurálásában:
 
@@ -192,6 +196,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

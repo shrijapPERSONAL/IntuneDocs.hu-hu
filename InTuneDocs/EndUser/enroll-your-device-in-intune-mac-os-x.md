@@ -3,6 +3,7 @@ title: "Mac OS X-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Mac OS X-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
 
 # Mac OS X-eszköz regisztrálása az Intune-ban
 
-Ha regisztrálja Mac OS X-eszközét az Intune-ban, hozzáférhet munkahelye hálózatához, a munkahelyi levelezéséhez, a munkája során használt fájlokhoz és a munkahelyi alkalmazásokhoz. A [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című rész bővebben ismerteti, hogy mi történik az eszköz regisztrálásakor.
+Ha regisztrálja Mac OS X-eszközét az Intune-ban, hozzáférhet a munkahely hálózatához, a munkahelyi levelezéséhez és a munkafájljaihoz. Munkahelyi alkalmazásokat is beszerezhet. A [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című rész bővebben ismerteti, hogy mi történik az eszköz regisztrálásakor.
 
 Ha iOS rendszerű eszközt szeretne regisztrálni, lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md).
 
@@ -44,7 +45,7 @@ A Mac OS X-eszköz regisztrálása:
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-    Amikor végzett a regisztrálással, megjelenik a felügyeleti profil oldala, amely jelzi, hogy a profil jóvá lett hagyva.
+    Amikor végzett a regisztrálással, megjelenik a **Felügyeleti profil** oldal, amely jelzi, hogy a profil jóvá lett hagyva.
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +53,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

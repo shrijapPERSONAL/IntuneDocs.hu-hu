@@ -11,6 +11,7 @@
 ### [Az MDM előfeltételei](prerequisites-for-enrollment.md)
 #### [iOS- és Mac-eszközök kezelése](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android-kezelés](set-up-android-management-with-microsoft-intune.md)
+#### [Eszközök kezelése az Android for Work alkalmazással](set-up-android-for-work.md)
 #### [Windowsos eszközök kezelése ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile és Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Vállalati tulajdonú eszközök kezelése](manage-corporate-owned-devices.md)
@@ -34,6 +35,7 @@
 ### [Az eszközök beállításainak és funkcióinak kezelése szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-beállítások](ios-policy-settings-in-microsoft-intune.md)
 #### [Android- és Samsung KNOX-beállítások](android-policy-settings-in-microsoft-intune.md)
+#### [Az Android for Work beállításai](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8- és Windows 8.1-beállítások](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1-beállítások](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [A Windows 10 asztali és mobil verziójának beállításai](windows-10-policy-settings-in-microsoft-intune.md)
@@ -72,6 +74,7 @@
 #### [Intune ügyfélgép-szoftverek licencszerződések kezelése](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Alkalmazások telepítése](deploy-apps.md)
 ### [Alkalmazások telepítése eszközökre és számítógépekre](deploy-apps-in-microsoft-intune.md)
+### [Alkalmazások telepítése Android for Work-alapú eszközökre](android-for-work-apps.md)
 ### [Alkalmazások figyelése](monitor-apps-in-microsoft-intune.md)
 ### [Mennyiségi programban vásárolt alkalmazások felügyelete](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -80,6 +83,7 @@
 ## [Alkalmazások konfigurálása](update-apps-using-microsoft-intune.md)
 ### [Alkalmazások frissítése ](update-apps-using-microsoft-intune.md)
 ### [iOS-alkalmazáskonfigurációs szabályzatok](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Konfigurációs szabályzatok az Android for Workhöz](afw-app-configuration-policy.md)
 ### [iOS-mobilalkalmazás létesítési profiljai](ios-mobile-app-provisioning-profiles.md)
 ### [Internet-hozzáférés kezelése](manage-internet-access-using-managed-browser-policies.md)
 
@@ -87,12 +91,13 @@
 ## [Alkalmazások és adatok védelme](protect-apps-and-data-with-microsoft-intune.md)
 ### [Eszközmegfelelőségi szabályzatok](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Eszközmegfelelőségi szabályzat létrehozása](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Android rendszerhez](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [iOS rendszerhez](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [Windows és Windows Phone rendszerhez](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows és Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Eszközmegfelelőségi szabályzat telepítése](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Hozzáférés korlátozása eszközmegfelelőség alapján](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Az Exchange Online és az új dedikált Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -101,7 +106,9 @@
 #### [Skype Vállalati online verzió](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mail hozzáférés korlátozása: példák](restrict-email-access-example-scenarios.md)
-
+### [Office 365-szolgáltatásokhoz való hozzáférés engedélyezése kizárólag a szabályzattal felügyelt alkalmazásoknak](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [ADAL nélküli alkalmazások blokkolása](block-apps-with-no-modern-authentication.md)
 ### [Hálózati hozzáférés korlátozása (Cisco ISE)](restrict-access-to-networks.md)
 ### [Hozzáférés korlátozása eszközök, hálózat és alkalmazáskockázat alapján](restrict-access-based-on-device-network-app-risk.md)
 #### [A Lookout veszélyforrások elleni védelem konfigurálása](set-up-your-subscription-with-lookout-mtp.md)
@@ -133,13 +140,13 @@
 ### [Alkalmazások kivonása ](retire-apps-using-microsoft-intune.md)
 ### [Felügyelt vállalati alkalmazás adatainak törlése](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Mit kell tudniuk a végfelhasználóknak](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [Végfelhasználói funkciókkal kapcsolatos források](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

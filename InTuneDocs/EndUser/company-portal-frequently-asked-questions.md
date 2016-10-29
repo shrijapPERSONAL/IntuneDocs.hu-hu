@@ -3,6 +3,7 @@ title: "A Vállalati portál ismertetése| Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -25,10 +26,10 @@ ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 ## Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
 A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
-- Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája más módszerekkel is telepítheti Önnek az alkalmazást.
+- Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája is telepítheti Önnek az alkalmazást.
 - Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com).
 
-A Vállalati portál alkalmazás és webhely között van néhány apróbb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány példa:
+A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Az alábbiakban talál néhány olyan feladatot, amelyet elvégezhet:
 
 - Eszközök regisztrálása
 - Az eszközök állapotának megtekintése
@@ -55,25 +56,23 @@ Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén
 - [iOS és Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Milyen számítógépeket és eszközöket adhatok hozzá a Vállalati portálhoz?
+## Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
 
--   iPhone és iPad készülékek, illetve Mac OS X-eszközök
+-   iPhone és iPad készülékeket, illetve Mac OS X-eszközöket
 
 -   Android rendszerű mobileszközök
 
 -   Windows-eszközök
-    -   10 Mobile
+    -   Windows 10 mobil verzió
     -   Windows 10 asztali verzió
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   Windows RT-alapú eszközök
-    -   Windows Phone 8
     -   iPhone és iPad készülékek, illetve Mac OS X-eszközök
     -   Android rendszerű mobileszközök
 
 
 ## Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
-Igen, a Vállalati portálról eltávolíthat, vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban vannak különbségek:
+Igen, a Vállalati portálról eltávolíthat vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban van különbség.
 
 Számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról információt az alábbi hivatkozások egyikén találhat:
 
@@ -92,14 +91,14 @@ Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén t
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről](reset-your-device-cpwebsite.md)
 
-## Nem látom minden eszközömet a vállalati portálon
-Az eszközök csak akkor láthatók, ha hozzáadja őket a Vállalati portálhoz. A rendszergazda útmutatása alapján tallózzon a Vállalati portálon, és kövesse az eszközéhez vezető lépéseket. A vállalat által birtokolt vagy kezelt eszközöket sem fogja látni.
+## Nem látja minden eszközét a Vállalati portálon
+Az eszközök csak akkor láthatók, ha hozzáadja őket a Vállalati portálhoz. A rendszergazda útmutatása alapján látogasson el a Vállalati portálra, és kövesse az eszközére vonatkozó lépéseket. A vállalat által birtokolt vagy kezelt eszközöket sem fogja látni.
 
 ## Ha kérdése van, lépjen kapcsolatba a rendszergazdával
 Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

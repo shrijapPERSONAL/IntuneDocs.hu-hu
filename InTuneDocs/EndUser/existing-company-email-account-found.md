@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Meglévő vállalati fiók található
-Már van a vállalati e-mail fiókja. A vállalati e-mailjeihez való csatlakozáshoz a következőket kell tennie, hogy a rendszergazda megfelelően beállíthassa és kezelhesse a fiókját:
+Már van a vállalati e-mail fiókja. A vállalati e-mailjeihez való hozzáféréshez a következőket kell tennie, hogy a rendszergazda megfelelően beállíthassa és kezelhesse a fiókját:
 
 1.  Az eszköz **Beállítások** funkciójában törölje a vállalati e-maillel korábban létesített kapcsolatot.
 
@@ -35,6 +35,6 @@ Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

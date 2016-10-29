@@ -3,8 +3,9 @@ title: "Az eszközbeállítások kezelése szabályzatokkal | Microsoft Intune"
 description: "Az Intune segítségével szabályzatokat hozhat létre és telepíthet, amelyek vezérlik a beállításokat és a szolgáltatásokat a felügyelt regisztrált eszközökön."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzat
 
     - [iOS-eszközbeállítások](ios-policy-settings-in-microsoft-intune.md)
     - [Android-eszközbeállítások](android-policy-settings-in-microsoft-intune.md)
+    - [Beállítások Android for Work eszközökhöz](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Windows 8 és Windows 8.1 rendszerű eszközök beállításai](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows Phone 8.1 rendszerű eszközök beállításai](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Windows 10 rendszerű asztali és mobileszközök beállításai](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a 
 - iOS és Mac OS X: 6 óránként.
 - Android: 8 óránként.
 - Windows Phone: 8 óránként.
-- Regisztrált Windows RT-eszközök: 24 óránként.
 - Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek: 8 óránként.
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
@@ -212,6 +213,6 @@ Lásd a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intu
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

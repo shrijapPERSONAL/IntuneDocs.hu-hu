@@ -1,10 +1,11 @@
 ---
-title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése USB-kábelen keresztül a rendszergazdának | Microsoft Intune"
-description: 
+title: "Diagnosztikai adatokat tartalmazó naplók elküldése a rendszergazdának USB-kábelen keresztül | Microsoft Intune"
+description: "Adatnaplók elküldése USB-kábelen keresztül"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,33 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
+ms.sourcegitcommit: 42720b0e0613be10e83cb0e8aae7170a85f473e5
+ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 
 
 ---
 
 
-# Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának
 
-Ha adatnaplókat szeretne küldeni az informatikai rendszergazdának, hogy segítséget kapjon egy problémához, a naplókat elküldheti egy számítógép és egy USB-kábel segítségével, és nem kell a mobileszközéről küldeni a naplókat. Ezt a következőképpen teheti meg:
+Ha adatnaplókat szeretne küldeni a rendszergazdának, elküldheti azokat egy számítógép és egy USB-kábel használatával, így nem kell a mobileszközéről elküldenie őket.
+
+ Mielőtt nekikezdene, ellenőrizze, hogy ismeri-e a rendszergazda e-mail-címét, amely általában a [Vállalati portál webhelyen](http://portal.manage.microsoft.com) vagy a Vállalati portál alkalmazásban található meg.
 
 1.  A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
 
-2.  Mielőtt nekilátna, ellenőrizze, hogy rendelkezik-e a rendszergazda e-mail címével, amely általában a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) vagy a Vállalati portál alkalmazásában található meg.
-
 2.  USB-kábellel csatlakoztassa az Android-eszközt a számítógéphez.
 
-3.  A számítógépen keresse meg a telefon nevével megegyező nevű könyvtárat. Ebben a könyvtárban keresse meg az &lt;Android-eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files mappát\.
+3.  A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az &lt;Androidos eszköz neve&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ mappát.
 
-4.  Csatolja az összes fájlt egy e-mailhez, és küldje el azt a rendszergazdának.
+4.  Csatolja a fájlokat egy e-mailhez, és küldje el azt a rendszergazdának.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

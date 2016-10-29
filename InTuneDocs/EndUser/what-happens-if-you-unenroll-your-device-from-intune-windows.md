@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból?
 
-Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő eszközhöz tartozó hivatkozásra a fenti „A cikk tartalma” részben.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 vagy Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows 8.1 vagy Windows RT rendszert futtató Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Használja az oldal jobb oldalán, az „ebben a cikkben” cím alatt található hivatkozásokat, hogy megkeresse az Ön által használt eszköz típusára vonatkozó információkat.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Ezenkívül Windows 8.1 esetén:
 
 -   Előfordulhat, hogy az eszközről többé nem lehet elérni egyes vállalati erőforrásokat, például fájlmegosztásokat és belső webhelyeket.
 
-## Windows 10 Mobile, Windows Phone 8.1 vagy Windows Phone 8
+## Windows 10 Mobile és Windows Phone 8.1
 
 -   A Vállalati portál alkalmazást eltávolítja az eszközről, vagyis az eszköz nem jelenik meg többé a Vállalati portálon, és nem tud telepíteni alkalmazásokat a Vállalati portál alkalmazásból vagy webhelyről.
 
@@ -66,7 +62,7 @@ Ezenkívül Windows 8.1 esetén:
     > [!IMPORTANT]
     > Az egyetlen kivételt a titkosítási házirendek jelentik, amelyek továbbra is érvényben maradnak. Ha a vállalati házirend értelmében titkosítani kellett a Windows Phone rendszerű eszközt, akkor a telefon titkosításának feloldására az egyetlen lehetőség a telefon alaphelyzetbe állítása, amely a Windows Phone **Beállítások** menüjéből végezhető el.
 
-## Windows 8.1 vagy Windows RT rendszert futtató Windows RT
+## Windows 8.1 rendszert futtató Windows RT
 
 -   A Vállalati portál alkalmazást eltávolítja az eszközről, vagyis az eszköz nem jelenik meg többé a Vállalati portálon, és nem tud telepíteni alkalmazásokat a Vállalati portálról.
 
@@ -93,6 +89,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

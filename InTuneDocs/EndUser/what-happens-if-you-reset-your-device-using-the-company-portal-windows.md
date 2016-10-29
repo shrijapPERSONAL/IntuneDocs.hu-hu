@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 
 ---
@@ -27,8 +27,8 @@ Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset
 
 |Eszközök konfigurálása és felügyelete|Eszköz típusa|
 |---------------------------------------|---------------|
-|A rendszergazda felügyeli a mobileszközt|**Windows 10, Windows Phone 8.1 és Windows Phone 8**</br>Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati portál megpróbálja visszaállítani az eszközt a gyári alapértékekre. Eltávolításra kerülnek a személyes adatok, alkalmazások és beállítások. <br /><br />**Windows 10 Mobile**: Az eszköz regisztrációjának törlése kizárólag alaphelyzetbe állítással lehetséges.<br /><br />**Windows RT**<br />Windows RT-alapú eszköz nem állítható alaphelyzetbe, kivéve, ha kizárólag az e-mailek elérésére használják.|
-|Az eszköz csak a vállalati e-mailekhez férhet hozzá.|**Windows Phone 8.1 és Windows Phone 8**<br />Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.<br /><br />**Windows RT**<br />Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.<br /><br />**Windows 7 vagy Windows Vista rendszerű számítógépek**<br />Kizárólag az e-mailek elérésére használt, Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.<br /><br />**Windows 8.1 és Windows 8 rendszerű számítógépek**<br />Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.|
+|A rendszergazda felügyeli a mobileszközt|**Windows 10 és Windows Phone 8.1**</br>Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati portál megpróbálja visszaállítani az eszközt a gyári alapértékekre. Eltávolításra kerülnek a személyes adatok, alkalmazások és beállítások. <br /><br />**Windows 10 Mobile**: Az eszköz regisztrációjának törlése kizárólag alaphelyzetbe állítással lehetséges.|
+|Az eszköz csak a vállalati e-mailekhez férhet hozzá.|**Windows Phone 8.1**<br />Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.<br /><br />**Windows 7 vagy Windows Vista rendszerű számítógépek**<br />Kizárólag az e-mailek elérésére használt, Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.<br /><br />**Windows 8.1 és Windows 8 rendszerű számítógépek**<br />Az eszköz nem jelenik meg többé a vállalati portálon, és a vállalati e-mail-fiókja és a nem mentett e-mailek törlődnek.|
 |Számítógépek és laptopok|**Windows 8.1 és Windows 8 rendszerű számítógépek**<br />Windows 8 vagy Windows 8.1 rendszert futtató számítógép nem állítható alaphelyzetbe, kivéve, ha kizárólag az e-mailek elérésére használják.<br /><br />**Windows 7 vagy Windows Vista rendszerű számítógépek**<br />Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.|
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
@@ -37,6 +37,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

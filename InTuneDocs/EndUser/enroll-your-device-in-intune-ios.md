@@ -3,6 +3,7 @@ title: "iOS-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy iOS-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
 
 
 ---
@@ -27,6 +28,11 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 
 Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következőt: [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md).
 
+**Előkészületek:**
+
+- Miután elkezdte, ne hagyja félbe a regisztrációt. Ha elkezdi, de nem fejezi be, előfordulhat, hogy nem tud majd regisztrálni, ha később újra próbálkozik.
+- Győződjön meg róla, hogy működik a Wi-Fi. Ellenkező esetben a regisztráció sikertelen lesz.
+- Ha az eszközön letiltotta a Safari böngészőt, oldja fel a tiltást. A regisztrációhoz mindenképpen a Safarit kell használnia.
 
 
 **iOS-eszköz regisztrálása:**
@@ -41,7 +47,7 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-4. Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet hozzá a regisztrált eszközön, majd koppintson a **Folytatás** elemre.
+4. Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet/nem férhet hozzá a regisztrált eszközén, majd koppintson a **Folytatás** gombra.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -71,7 +77,7 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
     A képernyőn megjelenik az „Eszköz regisztrálása” üzenet.
 
-11.  Amikor megjelenik egy üzenet, amely arra kéri, hogy nyissa meg az oldalt a Vállalati portálon, koppintson a **Megnyitás** elemre.
+11.  Amikor egy üzenet arra kéri, hogy nyissa meg az oldalt a Vállalati portálon, koppintson a **Megnyitás** elemre.
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
@@ -85,12 +91,11 @@ Ha Mac OS X rendszerű eszközt szeretne regisztrálni, olvassa el a következő
 
 Ezzel megtörtént az eszköz Intune-beli regisztrálása, és a rendszer visszalépteti a Vállalati portál alkalmazásba.
 
+
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

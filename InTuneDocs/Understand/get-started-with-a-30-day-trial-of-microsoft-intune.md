@@ -3,6 +3,7 @@ title: "Útmutató az Intune próbaverziójához | Microsoft Intune"
 description: "Bevezetés és előfeltételek az Intune 30 napos ingyenes próbaidőszakának beállításához"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +38,12 @@ Az Intune használatának megkezdéséhez a következőkre lesz szüksége:
 
 -   Ha van Microsoft Online Services-fiókja, szüksége lesz a fiók rendszergazdájának hitelesítő adataira. Ha nincs ilyen fiókja, vagy ha az adott Intune-bérlőt csak kiértékelési célokra szeretné használni, nincs szükség a bérlői rendszergazda hitelesítésére.
 
--   Ha iOS- vagy Windows Phone-eszközöket fog kezelni az Intune próbaverziójával, a tanúsítványok lekéréséhez tanúsítványokra (vagy kulcsokra) és fiókokra lesz szüksége (lásd az alábbi táblázatot). Android-eszközök esetén nincs szükség külön tanúsítványokra.
+-   Ha iOS vagy Windows Phone 8.1 rendszerű eszközöket fog kezelni az Intune próbaverziójával, a tanúsítványok lekéréséhez tanúsítványokra (vagy kulcsokra) és fiókokra lesz szüksége (lásd az alábbi táblázatot). Android-eszközök esetén nincs szükség külön tanúsítványokra.
 
     |Platfésm|Tanúsítványokkal kapcsolatos követelmények|További információ|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 és Windows Phone 8 |A Windows Phone 8.1 azon felhasználói számára, akik az Áruházból telepítik a Vállalati portál alkalmazást, nem szükséges tanúsítvány. Windows Phone 8.0 használata esetén, illetve abban az esetben, ha a Vállalati portál alkalmazást az Intune-szolgáltatással kívánja Windows Phone 8.1-eszközre telepíteni, Symantec-tanúsítvány szükséges.|Ez az útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. A Windows Phone 8.0 támogatásával kapcsolatos információkat lásd: [Windows Phone rendszerű telefonok kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Windows 10, Windows RT 8.1, Windows RT vagy Windows 8.1 rendszerű eszközök|A Windows RT és Windows rendszerű eszközök regisztrálásának nincsenek tanúsítványokkal kapcsolatos követelményei.|[Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |A Windows Phone 8.1 azon felhasználói számára, akik az Áruházból telepítik a Vállalati portál alkalmazást, nem szükséges tanúsítvány. |Ez az útmutató azt feltételezi, hogy az Ön felhasználói az Áruházból származó Vállalati portál alkalmazást Windows Phone 8.1 vagy újabb rendszerű eszközön telepítik. |
+    |Windows 10, Windows RT 8.1 vagy Windows 8.1 rendszerű eszközök|A Windows RT és Windows rendszerű eszközök regisztrálásának nincsenek tanúsítványokkal kapcsolatos követelményei.|[Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 vagy újabb|Szerezzen be egy tanúsítványt az Apple leküldéses értesítési szolgáltatáshoz.|Igényeljen Apple Push Notification szolgáltatásbeli tanúsítványt az Apple-től a következő helyen leírtak szerint: [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Az Intune 30 napos kipróbálásához szükséges lépések
@@ -66,6 +67,6 @@ Itt az ideje, hogy megkezdje a 30 napos próba-előfizetés használatát!
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

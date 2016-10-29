@@ -1,8 +1,9 @@
 ---
 title: "Regisztrálási hibák elküldése a rendszergazdának | Microsoft Intune"
-description: 
+description: "Regisztrálási hibák elküldése a rendszergazdának"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
+ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
+ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
 
 
 ---
@@ -23,18 +24,17 @@ ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 # Regisztrálási hibák elküldése a rendszergazdának
 
-Ha hibaüzenet jelenik meg az Android-eszköznek az Intune-ban való regisztrálása közben, az újbóli próbálkozáshoz koppintson az **Újra** elemre, vagy az **Adatok elküldése** gombra koppintva küldje el a hibaüzenetet a rendszergazdának e-mailben.
+Ha hibaüzenet jelenik meg androidos eszköze Intune-beli regisztrálása közben, az **Újra** elemre koppintva újból megpróbálkozhat a regisztrálással. Az **Adatok küldése** elemre koppintva ezenkívül elküldheti a hiba adatait a rendszergazdának e-mailben.
 
-Automatikusan létrejön a rendszergazdának címzett e-mail, benne azok a naplófájlok, amelyekkel a rendszergazda megoldhatja az eszközön észlelt problémát.
+Az **Adatok küldése** elemre koppintáskor automatikusan létrejön a rendszergazdának címzett e-mail, benne az eszközzel kapcsolatos hibák elhárításához szükséges naplókkal.
 
-Többféleképpen küldheti el az eszköz adatainak naplóit a rendszergazdának ahhoz, hogy segítséget igényeljen a hibákkal kapcsolatban:
+Az eszköz adatnaplói többféleképpen is elküldhetők a rendszergazdának a hibák kijavítása végett:
 
 - [A naplók elküldése USB-kábellel](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [A naplók elküldése e-mailben](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

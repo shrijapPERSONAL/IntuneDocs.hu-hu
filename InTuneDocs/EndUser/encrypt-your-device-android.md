@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 # Az eszköz titkosítása
 
-Ha a vállalata vagy szervezete megköveteli Android-eszközének titkosítását a vállalati fájlokhoz, levelekhez vagy adatokhoz való hozzáféréshez, az eszközt az alábbi lépésekkel titkosíthatja. Ha a rendszergazda ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
+Ha a vállalata vagy szervezete előírja Android-eszközének titkosítását a vállalati fájlokhoz, levelekhez vagy adatokhoz való hozzáféréshez, az eszközt az alábbi lépésekkel titkosíthatja. Ha a rendszergazda ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
 
 Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
@@ -64,6 +64,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolat
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

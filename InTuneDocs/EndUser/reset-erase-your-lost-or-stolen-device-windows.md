@@ -1,8 +1,9 @@
 ---
 title: "Elveszett vagy ellopott Windows-eszköz alaphelyzetbe állítása (tartalmának végleges törlése) | Microsoft Intune"
-description: 
+description: "Elveszett vagy ellopott Windows rendszerű eszközök alaphelyzetbe állítása"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)
 
-Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a készüléken visszaállíthatja az alapértelmezett gyári beállításokat a [Vállalati portál webhelyéről](http://portal.manage.microsoft.com).
+Ha egy Intune-regisztrációval rendelkező eszköz elvész vagy ellopják, a készüléken visszaállíthatja az alapértelmezett gyári beállításokat a [Vállalati portál webhelyről](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
-> A gyári beállítások visszaállítása törli a telefonról mind a személyes, mind a munkahelyi adatait. Az eszköz alaphelyzetbe állításakor történtekről további információt a [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md) című témakörben találhat.
+> A gyári beállítások visszaállítása törli a telefonról mind a személyes, mind a munkahelyi adatait. Az eszköz alaphelyzetbe állításakor történtekkel kapcsolatos további információkért lásd: [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
 
 
 1.  A böngészőben nyissa meg a [Vállalati portál webhelyét](http://portal.manage.microsoft.com), és jelentkezzen be munkahelyi fiókjába.
@@ -40,8 +41,6 @@ Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

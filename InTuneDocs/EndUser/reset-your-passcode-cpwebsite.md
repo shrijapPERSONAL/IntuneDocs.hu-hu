@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
 Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, az eszköz alaphelyzetbe állításához a [Vállalati portál webhelyét](http://portal.manage.microsoft.com) használhatja. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
 > [!NOTE]
-> Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 és Windows RT rendszerű eszközökön.
+> Attól függően, hogy a rendszergazda hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál webhelyén nem jelenik meg a Jelszó alaphelyzetbe állítása gomb. A jelszó alaphelyzetbe állítása nem támogatott a Windows 8.1 rendszerű eszközökön.
 
 A jelszó alaphelyzetbe állítása:
 
@@ -64,6 +64,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

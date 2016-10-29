@@ -3,6 +3,7 @@ title: "Az előfizetés beállítása a Lookout használatára | Microsoft Intun
 description: "Ez a cikk a Lookout veszélyforrások elleni eszközvédelem konfigurálásának lépéseit ismerteti."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c334b96134040fd124c348c6f2a4b2e5c85886a
-ms.openlocfilehash: d56d9b62a7df3a17b38b7ac01881245c079dc6d4
+ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
+ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
 
 
 ---
@@ -61,9 +62,9 @@ Bejelentkezési problémák esetén olvassa el a [hibaelhárításról szóló c
 
 A következőkben azokat a lépéseket mutatjuk be, amelyeket a Lookout beállításához el kell végezni a [Lookout konzolon](https://aad.lookout.com).
 
-### 2. lépés: az Intune-összekötő konfigurálása
+### 2. lépés: Az Intune-összekötő konfigurálása
 
-1.  A Lookout konzolon lépjen a **System** (Rendszer) modulba, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
+1.  Nyissa meg a Lookout konzolon a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
 
   ![képernyőkép a Lookout konzolról, amelyen az összekötők lap meg van nyitva, az Intune lehetőség pedig ki van emelve](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -71,12 +72,13 @@ A következőkben azokat a lépéseket mutatjuk be, amelyeket a Lookout beállí
 
   ![képernyőkép a kapcsolat beállítása lapról, amin a szívverés gyakorisága már konfigurálva van](../media/mtp/lookout-mtp-connection-settings.png)
 
-### 3. lépés: regisztrációs csoportok konfigurálása
+### 3. lépés: Regisztrációs csoportok konfigurálása
 A **Regisztrációkezelés** lehetőséget választva adja meg azoknak a felhasználóknak a csoportját, akiknek az eszközei regisztrálva lesznek a Lookout-ban. Tesztelési célok miatt ajánlatos először egy kisebb csoportot definiálni, így könnyebben megismerkedhet az integráció működésével.  Ha a tesztelés után mindent rendben talál, a regisztrációt kiterjesztheti újabb felhasználói csoportokra is.
 
 A regisztrációs csoportok kezeléséhez első lépésként adjon meg egy olyan Azure AD biztonsági csoportot, amely jó lesz a Lookout veszélyforrások elleni eszközvédelemben regisztráló első csoportnak. Miután létrehozta a csoportot az Azure AD-ben, a Lookout konzolon válassza az **Enrollment Management** (Regisztrációkezelés) lehetőséget, és adja meg az Azure AD biztonsági csoport megjelenített nevét a **Display Name** mezőben a regisztrációhoz.
 
 Ha egy felhasználó tagja egy regisztrációs csoportnak, akkor az Azure AD által támogatott és azonosított minden eszköze regisztrálható és aktiválható a Lookout veszélyforrások elleni eszközvédelemben.  Az eszköz akkor aktiválódik a Lookoutban, amikor a felhasználó először nyitja meg a Lookout for Work alkalmazást a támogatott eszközön.
+
 ![képernyőkép az Intune-összekötő regisztrálási oldaláról](../media/mtp/lookout-mtp-enrollment.png)
 
 Az új eszközök keresésének gyakorisága értéknél javasolt megtartani az alapértelmezett (5 perces) beállítást.
@@ -90,18 +92,23 @@ A jelenlegi verzió az alábbi korlátozásokat tartalmazza:
 * Csoporton belüli csoport létrehozása jelenleg nem támogatott.  A megadott Azure AD biztonsági csoportok csak felhasználókat tartalmazhatnak, beágyazott csoportokat nem.
 
 
-### 4. lépés: az állapotszinkronizálás konfigurálása
+### 4. lépés: Az állapotszinkronizálás konfigurálása
 Az **Állapotszinkronizálás** lehetőségnél adja meg az Intune-ba küldendő adattípusokat.  A Lookout és az Intune integrációjának megfelelő működéséhez jelenleg az eszközállapotot és a fenyegetések állapotát egyaránt engedélyeznie kell.  Alapértelmezés szerint ezek engedélyezve vannak.
-### 5. lépés: e-mail-címzettek adatainak konfigurálása hibajelentésekhez
+### 5. lépés: E-mail-címzettek adatainak konfigurálása hibajelentésekhez
 A **Hibakezelés** lehetőségnél írja be azt az e-mail címet, amelyre a hibajelentéseket szeretné irányítani.
 
 ![képernyőkép az Intune-összekötő hibakezelési oldaláról](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### 6. lépés: e-mail értesítések konfigurálása
-Ha e-mail-értesítéseket szeretne kapni a veszélyforrásokról, jelentkezzen be a [Lookout konzolra](https://aad.lookout.com) azzal a felhasználói fiókkal, amelyre az értesítéseket szeretné kapni. A **Rendszer** modulban, a **Beállítások** lapon a kívánt értesítések melletti kapcsolót állítsa **BE** értékre. Mentse a változtatásokat.
+### 6. lépés Regisztrációs beállítások konfigurálása
+A **System** modul **Connectors** lapján adja meg, hogy hány nap múltán tekintse a program leválasztottnak az adott eszközt.  A leválasztott eszközöket nem megfelelőnek tekinti a program, és az Intune-beli feltételes hozzáférésre vonatkozó szabályzatok alapján törli a munkahelyi alkalmazásokhoz való hozzáférésüket. 1 és 90 nap közötti időtartam adható meg.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### 7. lépés: E-mailben történő értesítések konfigurálása
+Ha e-mailben szeretne értesítéseket kapni a veszélyforrásokról, jelentkezzen be a [Lookout konzolra](https://aad.lookout.com) azzal a felhasználói fiókkal, amelybe az értesítéseket szeretné kapni. A **Rendszer** modulban, a **Beállítások** lapon a kívánt értesítések melletti kapcsolót állítsa **BE** értékre. Mentse a változtatásokat.
 
 ![képernyőkép a beállítások lapról a felhasználói fiókkal](../media/mtp/lookout-mtp-email-notifications.png) Ha már nem szeretne email értesítéseket kapni, állítsa az értesítés típusa melletti kapcsolót **KI** értékre.
-### 7. lépés: a fenyegetések besorolásának konfigurálása
+### 8. lépés: A veszélyforrások besorolásának konfigurálása
 A Lookout osztályokba sorolja a különféle fenyegetési típusokat. A [Lookout veszélyforrás-besorolásaiban](http://personal.support.lookout.com/hc/en-us/articles/114094130693) alapértelmezett kockázati szintek tartoznak a fenyegetésekhez. Ezek bármikor módosíthatók a vállalat igényeinek megfelelően.
 
 ![képernyőkép a szabályzat oldaláról a fenyegetések besorolásával](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,6 +123,6 @@ A telepítés befejezése után a Lookout veszélyforrások elleni eszközvédel
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "A Vállalati portál alkalmazás új verziójának telepítése | Micros
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 15a685f4839cd1c4d60c1f99a6bd6d954352a60c
+ms.sourcegitcommit: 849632d4b07b2e4417fd955d945fed21461edc6a
+ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
 
 
 ---
 
 # A Vállalati portál alkalmazás új verziójának telepítése
 
-Ha a Vállalati portál verziója már nem támogatott, vagy elérhető egy újabb Vállalati portál-verzió, frissítenie kell a Vállalati portál alkalmazást egy újabb verzióra. A frissítést az adott eszköz típusának megfelelő lépésekkel végezheti el.
+Ha a Vállalati portál alkalmazás verziója már nem támogatott, vagy elérhető egy újabb Vállalati portál-verzió, akkor az alkalmazást frissítenie kell az újabb verzióra. Kövesse az eszköze típusának megfelelő lépéseket.
 
 ## Az Intune Vállalati portál alkalmazás frissítése Android-eszközön
 
@@ -50,8 +51,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

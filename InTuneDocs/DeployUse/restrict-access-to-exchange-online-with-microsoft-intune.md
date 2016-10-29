@@ -3,6 +3,7 @@ title: "Az Exchange Online-hoz való e-mailes hozzáférés korlátozása | Micr
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e-mailhez való hozzáférést az Exchange Online-on."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +65,7 @@ Az alábbi ábra az Exchange Online feltételes hozzáférési szabályzatai ál
 ## A mobileszközök támogatása
 Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését:
 
-- Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
+- Android 4.0-ás és újabb verziók, Samsung Knox Standard 4.0-ás és újabb verziók és Android for Work
 - iOS 8.0 és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
@@ -225,6 +226,9 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 5.  Az **Exchange ActiveSync-alkalmazások** beállításnál megadhatja a nem megfelelő eszközök Exchange Online-hozzáférésének letiltását. Azt is kiválaszthatja, hogy engedélyezi vagy letiltja az e-mailek elérését, amikor az eszköz nem támogatott platformmal működik. A támogatott platformok a következők: Android, iOS, Windows és Windows Phone.
 
+ Exchange Active Sync alkalmazások **Android for Work** rendszerű eszközökhöz:
+ -  Az Android for Work eszközökön a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, **kötelező** telepítésként telepíteni kell egy email-profit a Gmail vagy a Nine Work alkalmazáshoz. 
+
 6.  A **Megcélzott csoportok**területen válassza ki azon felhasználók Active Directory biztonsági csoportjait, akikre érvényes a házirend. Az összes felhasználót vagy a felhasználói csoportok egy kiválasztott listáját is megadhatja.
 ![Képernyőfelvétel az Exchange Online feltételes hozzáférési szabályzatának oldaláról, valamint a megcélzott és a kivétel alá eső csoportok beállításairól](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +267,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

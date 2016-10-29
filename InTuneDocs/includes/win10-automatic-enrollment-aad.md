@@ -21,7 +21,7 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 
 5. Adja meg az URL-címeket az Intune-hoz:
 
-  - **MDM-regisztrációs URL-cím** – MDM-regisztrációs URL-címként adja meg a következőt: `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc`.
+  - **MDM-regisztrációs URL-cím** – Használja az alapértelmezett értéket.
   - **MDM használati feltételeinek URL-címe** – Használja az alapértelmezett értéket. Ez az URL-cím az eszközök beléptetésekor megjeleníti a használati feltételeket a felhasználók számára.
   - **MDM-megfelelőségi URL-cím** – Használja az alapértelmezett értéket. Amennyiben egy eszköz nem megfelelő, ezen az URL-címen jelenik meg a **Hozzáférés megtagadva** üzenet. Az URL-cím egy olyan oldalra mutat, amely ismerteti a felhasználóval, hogy miért nem megfelelő az eszköz és mit tehet a megfelelőség helyreállítása érdekében.
 
@@ -34,6 +34,6 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 7. Válassza a **Mentés** elemet.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

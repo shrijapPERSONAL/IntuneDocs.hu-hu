@@ -3,8 +3,9 @@ title: "Az iOS MAM-szabályzat beállításai | Microsoft Intune"
 description: "Ez a témakör bemutatja a mobilalkalmazás-felügyeleti szabályzat beállításait iOS-eszközökhöz."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +85,11 @@ A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra ut
   Ha szelektív törléssel távolítja el a vállalati adatokat, a rendszer törli az alkalmazásból közvetlenül a natív címjegyzékbe szinkronizált névjegyeket. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a **Microsoft Outlook** alkalmazásra érvényes.
 
   **Alapértelmezett érték = Igen**
+  
+- **Nyomtatás letiltása:** Válassza az **Igen** lehetőséget, hogy megakadályozza a vállalati adatok nyomtatását a MAM-szabályzatban foglalt alkalmazásokban.
+
+    **Alapértelmezett érték - Igen**
+
 ##  A hozzáférési szabályzatok beállításai iOS rendszeren
 A **szabályzattal felügyelt alkalmazások** kifejezés azon alkalmazásokra utal, amelyekhez MAM-szabályzatot állítottak be.
 - **PIN-kód megkövetelése a hozzáféréshez:** Ha azt szeretné, hogy a szabályzattal felügyelt alkalmazások használatához PIN-kód megadása legyen szükséges, válassza az **Igen** lehetőséget. Ha a felhasználó első alkalommal futtatja az alkalmazást munkahelyi környezetben, a rendszer a kód beállítására kéri.
@@ -114,6 +120,6 @@ Az iOS-eszközökön engedélyezheti a felhasználóknak, hogy számjegyes PIN-k
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

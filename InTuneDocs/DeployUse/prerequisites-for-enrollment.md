@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
-ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
+ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
+ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 
 ---
@@ -29,6 +29,10 @@ A következő lépésekkel teheti lehetővé az alkalmazottak számára, hogy re
 |**3. lépés:** [Az Intune Vállalati portál konfigurálása](#step-3-configure-the-intune-company-portal)|Konfigurálja a Vállalati portál alkalmazás felhasználókat érintő beállításait.|  
 |**4. lépés:** [Intune felhasználói licencek hozzárendelése](#step-4-assign-intune-user-licenses)|Rendeljen Intune-licencet a felhasználókhoz, hogy regisztrálhassák az eszközöket.|
 |**5. lépés:** [Az eszközkezelés beállítása](#step-5-set-up-device-management)|Engedélyezze az iOS- és Windows-felügyelet platformspecifikus beállításait. Az Android-eszközökhöz nincs szükség további konfigurálásra.|
+
+A Microsoft Intune-nal bővített Configuration Manager-t keresi?
+> [!div class="button"]
+[SCCM-dokumentumok megtekintése >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## 1. lépés: Az eszközök regisztrációjának függőségei
 
@@ -130,6 +134,6 @@ További lehetőségek:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
