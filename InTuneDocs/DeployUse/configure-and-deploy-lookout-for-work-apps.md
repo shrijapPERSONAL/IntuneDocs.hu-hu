@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazá
 
 ## iOS (A Lookout alkalmazás vállalat által aláírt verziója)
 
-* **1. lépés:** Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](Set up iOS and Mac device management.md).
+* **1. lépés:** Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 * **2. lépés:** **Írja alá újra** a Lookout for work iOS alkalmazást. A Lookout az iOS App Store-on kívül terjeszti a Lookout for Work alkalmazását. **Az alkalmazás terjesztése előtt** újra alá kell írnia az alkalmazást az iOS vállalati fejlesztői tanúsítványával. A részletes leírást a Lookout for Work iOS alkalmazás újbóli aláírásáról lásd: [Lookout for Work iOS alkalmazás újbóli aláírásának folyamata](https://personal.support.lookout.com/hc/en-us/articles/114094038714) a Lookout oldalán.
 
@@ -49,7 +49,7 @@ Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazá
   1.  Jelentkezzen be az [Azure Active Directory felügyeleti portálon](https://manage.windowsazure.com), és keresse meg az alkalmazáslapot.
   2.  Adja hozzá a **Lookout for Work iOS alkalmazást** **natív ügyfélalkalmazásként**.
   ![a natív ügyfélalkalmazás lehetőséget mutató képernyőkép az alkalmazás hozzáadása párbeszédpanelről](../media/mtp/aad-add-app.png)
-  
+
   3. Cserélje le a **com.lookout.enterprise.yourcompanyname** sort az IPA aláírásakor választott ügyfélcsomag-azonosítóval.
   4.  Adjon hozzá további átirányítási URI-t: **&lt;companyportal://code/>**, valamint az eredeti átirányítási URI-ja URLencoded verzióját.
   5.  Adjon hozzá **Delegált engedélyeket** az alkalmazásához.
