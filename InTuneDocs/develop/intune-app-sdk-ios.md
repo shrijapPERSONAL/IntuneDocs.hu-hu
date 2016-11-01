@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 975708b5204ab83108a9174083bb87dfeb04a063
-ms.openlocfilehash: 52ad28686fa279a7ec251d073283c3554d1c81fc
+ms.sourcegitcommit: 6b998728b3db60d10cadbcd34b5412fa76cb586f
+ms.openlocfilehash: ddc47ef5846bf448cf0de1e57b527e8ec4c562cc
 
 
 ---
@@ -415,6 +415,32 @@ A metódus visszatérési értéke közli az SDK-val, hogy az alkalmazás fogja-
  - Ha a visszatérési érték true, akkor az alkalmazás lesz felelős az újraindítás kezeléséért.   
  - Ha a visszatérési érték false, akkor az SDK fogja újraindítani az alkalmazást a metódus visszatérése után.  Az SDK azonnal megjelenít egy párbeszédpanelt, amely közli a felhasználóval, hogy újra kell indítani az alkalmazást. 
 
+#A Mentés másként vezérlőinek implementálása
+
+Az Intune lehetővé teszi, hogy a rendszergazdák meghatározzák a felügyelt alkalmazások adatmentéshez használt lehetséges tárolási helyeit. Az alkalmazások lekérhetik az engedélyezett tárolási helyek listáját az Intune APP SDK-tól az **isSaveToAllowedForLocation** API használatával.
+
+A felügyelt adatok felhőbeli tárhelyre vagy helyi adattárolókba való mentése előtt az alkalmazásoknak az **isSaveToAllowedForLocation** API használatával ellenőrizniük kell, hogy a rendszergazda engedélyezte-e az adatmentést az adott helyre.
+
+Az **isSaveToAllowedForLocation** használatakor az alkalmazásoknak át kell adniuk a tárolási hely UPN-jét, amennyiben az elérhető.
+
+##Támogatott helyek
+
+Az **isSaveToAllowedForLocation** API állandóival az alábbi helyek ellenőrizhetők:
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+Az alkalmazásoknak az **isSaveToAllowedForLocation** API állandóival kell ellenőrizniük, hogy az adatok menthetők-e a „felügyeltnek” tekintett, például a OneDrive Vállalati verziója, vagy a „személyes” helyekre. Emellett akkor is szükséges az API használata, ha az alkalmazás nem tudja meghatározni egy adott helyről, hogy az „felügyelt” vagy „személyes”. 
+
+A „személyes” helyeken az alkalmazásnak az **IntuneMAMSaveLocationOther** értéket kell használnia. 
+
+Az **IntuneMAMSaveLocationLocalDrive** állandót akkor kell használni, amikor az alkalmazás a helyi eszközre ment adatot.
+
 
 
 # Az Intune App SDK-beállítások konfigurálása
@@ -497,7 +523,7 @@ Felhívjuk, hogy az identitás egyszerűen egy karakterláncként van definiálv
 Az identitás egyszerűen egy fiók felhasználóneve (például user@contoso.com). A felhasználók a következő szinteken állíthatják be az alkalmazás identitását: 
 
 * **Folyamat identitása**: a folyamat identitása a folyamat szintjén állítja be az identitást, és főképpen egyidentitású alkalmazások esetében használatos. Ez az identitás hatással van minden műveletre, a fájlműveletekre és a felhasználói felületi műveletekre is.
-* **Felhasználói felület identitása**: azt határozza meg, hogy milyen szabályzatok alkalmazandók a főszálban végzett felhasználói felületi műveletekre, például a kivágásra, a másolásra, a beillesztésre, a PIN-kód megadására, a hitelesítésre, az adatmegosztásra stb. A felhasználói felület identitása nincs hatással a fájlműveletekre (titkosítás, biztonsági mentés stb.). 
+* **Felhasználói felület identitása**: azt határozza meg, hogy milyen szabályzatok alkalmazandók a főszálban végzett felhasználói felületi műveletekre, például a kivágásra, a másolásra, a beillesztésre, a PIN-kód megadására, a hitelesítésre, az adatmegosztásra stb. A felhasználói felület identitása nincs hatással a fájlműveletekre (titkosítás, biztonsági mentés stb.).
 * **Szál identitása**: a szál identitása azt határozza meg, hogy milyen szabályzatok alkalmazandók az aktuális szálra. Hatással van minden műveletre, a fájlműveletekre és a felhasználói felületi műveletekre is.
 
 Az identitás helyes beállítása az alkalmazás feladata, függetlenül attól, hogy felügyelt felhasználóról van-e szó vagy sem.
@@ -523,9 +549,12 @@ Ha az alkalmazás olyan fájlokat hoz létre, amelyek felügyelt és nem felügy
  
 Ha az alkalmazás megosztási bővítményt tartalmaz, a megosztás alatt álló elem tulajdonosa az `IntuneMAMDataProtectionManager` `protectionInfoForItemProvider` metódusával kérhető be. Ha a megosztott elem fájl, az SDK kezeli a fájl tulajdonosának beállítását. Ha a megosztott elem adat, az alkalmazás feladata, hogy beállítsa a fájl tulajdonosát (ha az adatot fájlba menti az alkalmazás), és meghívja az (alább ismertetett) `setUIPolicyIdentity` API-t, mielőtt megjeleníti ezt az adatot a felhasználói felületen.
  
-#A többszörös identitás engedélyezése
+##A többszörös identitás bekapcsolása
  
-Az alkalmazások alapértelmezés szerint egyetlen identitásnak minősülnek, és a folyamat identitását az SDK által regisztrált felhasználóra állítja a rendszer. A többszörös identitás támogatás engedélyezéséhez a „MultiIdentity” nevű és „YES” értékű beállítást kell felvenni az alkalmazás Info.plist fájljába, az IntuneMAMSettings szótárba. Ha engedélyezve van a többszörös identitás, a folyamat identitása, a felhasználói felület identitása és a szálak identitása nil lesz, és az alkalmazás feladata, hogy megfelelően beállítsa őket.
+Az alkalmazások alapértelmezés szerint egyetlen identitásnak minősülnek, és a folyamat identitását az SDK által regisztrált felhasználóra állítja a rendszer. A többszörös identitás támogatás engedélyezéséhez a `MultiIdentity` nevű és „YES” értékű beállítást kell felvenni az alkalmazás Info.plist fájljába, az **IntuneMAMSettings** szótárba. 
+
+> [!NOTE]
+> Ha engedélyezve van a többszörös identitás, a folyamat identitása, a felhasználói felület identitása és a szálak identitása nil lesz. Ezek helyes beállítása az alkalmazás feladata.
 
  
 ##Identitásváltás
@@ -628,6 +657,6 @@ Ha az alkalmazás az Intune App SDK **keretrendszer buildjét** használja, manu
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
