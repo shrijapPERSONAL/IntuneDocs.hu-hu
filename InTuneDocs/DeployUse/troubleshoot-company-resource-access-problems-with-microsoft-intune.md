@@ -2,8 +2,8 @@
 title: "Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft Intune"
 description: "A témakörben található hiba- és állapotkódok segítenek az erőforrás-hozzáférési problémák megoldásában."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
 A témakörben található információkkal háríthatja el a problémákat, amikor egy Microsoft Intune-művelet hibakódot ad vissza.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
-## Az MDM által felügyelt Windows-eszközök állapotkódjai
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Az MDM által felügyelt Windows-eszközök állapotkódjai
 
 |Állapotkód|Hibaüzenet|Mi a teendő|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |130 (APP_CI_ENFORCEMENT_ERROR)|Az MSADP licenc telepítése meghiúsult||
 |Nincs állapot (APP_CI_ENFORCEMENT_UNKNOWN)|nem áll rendelkezésre|Az állapot jelenleg ismeretlen.|
 
-## Vállalati erőforrások elérése (gyakori hibák)
+## <a name="company-resource-access-common-errors"></a>Vállalati erőforrások elérése (gyakori hibák)
 
 |Állapotkód|Hexadecimális hibakód|Hibaüzenet|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016341111|0x87D11389|Az iOS-eszköz váratlan üresjárati állapotot adott vissza|
 |-2016341112|0x87D11388|Az iOS-eszköz jelenleg elfoglalt|
 
-## iOS-eszközök által visszaadott hibák
+## <a name="errors-returned-by-ios-devices"></a>iOS-eszközök által visszaadott hibák
 
 |Állapotkód|Hexadecimális hibakód|Hibaüzenet|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016335111|0x87D12AF9|1001:Nem támogatott profilverzió|
 |-2016335112|0x87D12AF8|1000:Hibás formátumú profil|
 
-## OMA-válaszkódok
+## <a name="oma-response-codes"></a>OMA-válaszkódok
 
 |Állapotkód|Hexadecimális hibakód|Hibaüzenet|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016345912|0x87D100C8|A SyncML-parancs sikeresen végrehajtva.|
 |-2016346011|0x87D10065|A megadott SyncML-parancs végrehajtása folyamatban van, de még nem fejeződött be.|
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 

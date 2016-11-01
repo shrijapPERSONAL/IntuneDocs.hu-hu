@@ -2,8 +2,8 @@
 title: "Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft Intune"
 description: "A témakörben található hiba- és állapotkódok segítenek az erőforrás-hozzáférési problémák megoldásában."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |130 (APP_CI_ENFORCEMENT_ERROR)|Az MSADP licenc telepítése meghiúsult||
 |Nincs állapot (APP_CI_ENFORCEMENT_UNKNOWN)|nem áll rendelkezésre|Az állapot jelenleg ismeretlen.|
 
-## <a name="company-resource-access-(common-errors)"></a>Vállalati erőforrások elérése (gyakori hibák)
+## <a name="company-resource-access-common-errors"></a>Vállalati erőforrások elérése (gyakori hibák)
 
 |Állapotkód|Hexadecimális hibakód|Hibaüzenet|
 |---------------|--------------------------|-----------------|

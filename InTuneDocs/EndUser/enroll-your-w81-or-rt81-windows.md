@@ -3,7 +3,7 @@ title: "Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása | Microsoft Int
 description: "Egy Windows 8.1-eszköz vagy Windows RT 8.1-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 ---
 
 
-# <a name="enroll-your-windows-8.1-or-windows-rt-8.1-device-in-intune"></a>Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása az Intune-ban
+# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása az Intune-ban
 
 Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközöket, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
 

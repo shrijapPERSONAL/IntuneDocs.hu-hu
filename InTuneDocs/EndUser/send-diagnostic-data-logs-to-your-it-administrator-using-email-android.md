@@ -3,7 +3,7 @@ title: "Diagnosztikai adatokat tartalmazó naplók elküldése a rendszergazdán
 description: "Adatnaplók elküldése e-mailben androidos eszközön"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
