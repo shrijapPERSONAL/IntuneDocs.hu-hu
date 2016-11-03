@@ -4,7 +4,7 @@ description: "A témakörben található hiba- és állapotkódok segítenek az 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Tartalom lekérése|Valószínű ok: A 30-as feladatállapot azt jelzi, hogy egy alkalmazás felhasználói letöltése meghiúsult.<br /><br />Ennek valószínű okai a következők lehetnek:<br /><br />Az eszköz internetkapcsolata megszakadt a letöltési folyamat során.<br /><br />Lehet, hogy a regisztráció során az eszköz számára kiadott tanúsítvány lejárt.<br /><br />Kezelés:<br /><br />Indítsa el a Vállalati alkalmazások alkalmazást a Vezérlőpultról az eszközön annak ellenőrzéséhez, hogy az eszköz tanúsítványa nem járt-e le. Ha lejárt, akkor újra regisztrálnia kell az eszközt.<br /><br />Ellenőrizze, hogy az eszköz csatlakozik-e az internethez, és próbálja meg ismét igényelni az alkalmazást.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|A tartalom letöltése befejeződött||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Telepítés folyamatban||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Telepítés ​Hiba történt|Az alkalmazás telepítése sikertelen a letöltés után.<br /><br />Az alkalmazás aláírásához használt kódaláírási tanúsítvány nincs jelen az eszközön.<br /><br />Nincs az eszközre telepítve egy keretrendszerbeli függőség, amely szükséges az alkalmazás működéséhez.<br /><br />Ellenőrizze, hogy az alkalmazás aláírásához használt kódaláírási tanúsítvány megtalálható-e az eszközön, és kérjen megerősítést a rendszergazdától, hogy ez a tanúsítvány érvényes az összes regisztrált vállalati Windows RT-eszközre.<br /><br />Ha a telepítési hibát hiányzó keretrendszerbeli függőség okozta, a rendszergazdának újra közzé kell tennie az alkalmazást, a keretrendszert az alkalmazáscsomagba foglalva.<br /><br />A letöltött alkalmazáscsomag nem érvényes csomag. Lehet, hogy sérült, vagy nem kompatibilis az eszközön lévő operációs rendszer verziójával.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Telepítési hiba|Az alkalmazás telepítése sikertelen a letöltés után.<br /><br />Az alkalmazás aláírásához használt kódaláírási tanúsítvány nincs jelen az eszközön.<br /><br />Nincs az eszközre telepítve egy keretrendszerbeli függőség, amely szükséges az alkalmazás működéséhez.<br /><br />Ellenőrizze, hogy az alkalmazás aláírásához használt kódaláírási tanúsítvány megtalálható-e az eszközön, és kérjen megerősítést a rendszergazdától, hogy ez a tanúsítvány érvényes az összes regisztrált vállalati Windows RT-eszközre.<br /><br />Ha a telepítési hibát hiányzó keretrendszerbeli függőség okozta, a rendszergazdának újra közzé kell tennie az alkalmazást, a keretrendszert az alkalmazáscsomagba foglalva.<br /><br />A letöltött alkalmazáscsomag nem érvényes csomag. Lehet, hogy sérült, vagy nem kompatibilis az eszközön lévő operációs rendszer verziójával.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|A telepítés sikeres||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Eltávolítás folyamatban||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Eltávolítási hiba történt||
@@ -127,7 +127,7 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 |-2016314112|0x87D17D00|22000: Érvénytelen kulcshasználat|
 |-2016315105|0x87D1791F|21007:A fiók nem ellenőrizhető|
 |-2016315106|0x87D1791E|21006:Nem fejthető vissza a tanúsítvány|
-|-2016315107|0x87D1791D|21005:A fiók nem egyedi|
+|-2016315107|0x87D1791D|21005: Nem egyedi a fiók (az eszközön már létezik ez az e-mail profil)|
 |-2016315108|0x87D1791C|21004:A fiók nem hozható létre|
 |-2016315109|0x87D1791B|21003:Nincs állomásnév|
 |-2016315110|0x87D1791A|21002:Nem tartható be a kiszolgáló titkosítási házirendje|
@@ -372,6 +372,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

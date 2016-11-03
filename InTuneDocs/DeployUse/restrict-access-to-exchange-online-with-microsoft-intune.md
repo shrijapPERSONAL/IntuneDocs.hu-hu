@@ -4,7 +4,7 @@ description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
+ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 
 ---
@@ -67,7 +67,7 @@ Az alábbi ábra az Exchange Online feltételes hozzáférési szabályzatai ál
 Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését:
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
 A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
@@ -93,7 +93,7 @@ A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
 
-- iOS 7.1-es és újabb verziók
+- iOS 8.0 és újabb verziók
 
 - Windows Phone 8.1 és újabb verziók
 
@@ -262,6 +262,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

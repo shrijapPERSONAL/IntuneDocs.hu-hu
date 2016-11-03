@@ -4,7 +4,7 @@ description: "Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástele
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Alkalmazástelepítéssel kapcsolatos problémák elhárítása a Microsoft Intune-ban
 Ha problémába ütközik az alkalmazások Intune-nal történő telepítése vagy felügyelete során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
-## Gyakori alkalmazástelepítési problémák
-
-### Ha hiányzik az IT-csoport elérhetőségével kapcsolatos információ a vállalati portálról
-
-1.  Az Intune felügyeleti konzoljában válassza a **Felügyelet** &gt; **Vállalati portál** lehetőséget.
-
-2.  Adja meg az **IT-csoport elérhetőségi** adatait.
-
-### Ha bizonyos alkalmazások nem jelennek meg a listában
-
-1.  Győződjön meg arról, hogy olyan felhasználó vagy eszköz esetében ellenőrzi az alkalmazáslistát, aki vagy amely számára telepítette az alkalmazást.
-
-2.  Győződjön meg arról, hogy az eszköz megfelel az alkalmazás követelményeinek.
-
-### Ha hibaüzenetet kap egy alkalmazás letöltése közben
-
-1.  Ellenőrizze, hogy nincs-e felhasználónként egyszerre több letöltés folyamatban. Minden felhasználó egyszerre csak egy alkalmazást tölthet le.
-
-2.  Győződjön meg arról, hogy fiókonként nincs-e folyamatban túl sok egyidejű letöltés. Várjon néhány percet, és próbálkozzon újra.
-
-3.  Ha olyan natív iOS-üzenetet kap, amely szerint a telepítés nem lehetséges, a telepítés megszakadt, vagy újra kell próbálkoznia, lehetséges, hogy megnőtt az adatforgalom. Várjon néhány percet, és próbálkozzon újra.
-
-4.  Ha az iOS-alkalmazás letöltése befejeződött, de az alkalmazástelepítés sikertelen, lehetséges, hogy gond van a megadott alkalmazásfájlokkal.
-
-
-### Ha az alkalmazás feltöltése nem fejeződik be
-
-1.  Az alkalmazás feltöltésekor a rendszer először a metaadatokat, majd az alkalmazáscsomagot tölti fel. A metaadatok feltöltése után az alkalmazás feltöltése „folyamatban lévőként” jelenik meg. Ha azt látja, hogy az alkalmazás szokatlanul hosszú ideig marad folyamatban lévő feltöltési állapotban, törölje az alkalmazást, majd töltse fel újra.
-
-2.  Amíg az alkalmazás folyamatban lévő feltöltési állapotban van, ne avatkozzon be az alkalmazás telepítésébe.
-
-### Ha hibát tapasztal egy iOS-alkalmazás telepítésekor
-
-1.  Győződjön meg arról, hogy a szervezet tűzfala lehetővé teszi a hozzáférést az Apple üzembe helyezési és hitelesítő webhelyeihez.
-
-2.  További információt az Apple fejlesztői dokumentációjában talál.
-
-### Ha a felügyelt alkalmazások nem jelentik a telepítési állapotot
-
-A rendszer nem gyűjtötte be a felügyelt alkalmazások telepítési állapotát a Microsoft Intune 2014 novemberi szolgáltatásfrissítése előtt. Olyan eszközöknél, amelyeken e szolgáltatásfrissítés előtt telepített felügyelt alkalmazásokat, frissítse az egyes alkalmazástelepítéseket a megfelelő telepítési művelettel (például: **Elérhető telepítés**). Minden eszköz frissíteni fogja az alkalmazást az elérhető alkalmazások automatikus ellenőrzésekor. További információ: [Alkalmazások frissítése a Microsoft Intune-nal](/intune/deploy-use/update-apps-using-microsoft-intune).
-
-## <a name="BKMK_SoftDistErrorCodes"></a>Alkalmazástelepítési hibakódok
-A következő táblázat az Intune-alkalmazástelepítés közben gyakran előforduló hibákat, a valószínű okokat és a hibakereséshez szükséges lehetséges megoldásokat tartalmazza.
+## Gyakori alkalmazástelepítési hibakódok
 
 |Hibakód|Lehetséges probléma|Javasolt megoldás|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

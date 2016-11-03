@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- 
 1. Győződjön meg arról, hogy már működik a megfelelő tanúsítványinfrastruktúra a [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md) és a [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md) című témakörben foglaltak szerint.
 
 2. Telepítsen egy főtanúsítványt vagy köztes hitelesítésszolgáltatói tanúsítványt minden eszközön, hogy az eszköz felismerje a hitelesítésszolgáltató (CA) érvényességét. Ehhez hozzon létre és telepítsen egy **megbízható tanúsítványprofilt**. A profil telepítésekor az Intune-nal felügyelt eszközök lekérik és megkapják a főtanúsítványt. Mindegyik platformhoz különálló profilt kell létrehoznia. A **megbízható tanúsítványprofil** a következő platformokhoz érhető el:
- -  iOS 7.1-es és újabb verziók
+ -  iOS 8.0 és újabb verziók
  -  Mac OS X 10.9 és újabb verziók
  -  Android 4.0 és újabb verziók
  -  Windows 8.1 és újabb
@@ -33,7 +33,7 @@ Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- 
 
 3. Az [Intune-tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) című részben leírtak szerint hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat. A következő platformokon működő eszközökre **PKCS #12 (.PFX) formátumú tanúsítványprofilt** *vagy* **SCEP-tanúsítványprofilt** telepíthet:
 
-  -  iOS 7.1-es és újabb verziók
+  -  iOS 8.0 és újabb verziók
   -  Android 4.0 és újabb verziók
   -  Windows 10 (asztali és mobilverzió), illetve újabb
 
@@ -56,6 +56,6 @@ Mindegyik platformhoz különálló profilt kell létrehoznia. A profil létreho
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

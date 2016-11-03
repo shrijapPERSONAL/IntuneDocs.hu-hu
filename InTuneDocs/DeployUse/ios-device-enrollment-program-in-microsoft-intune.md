@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
 
 
 ---
@@ -50,7 +50,7 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 5.  **A vállalati eszközregisztrációs szabályzat felvétele** – A [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Házirend** &gt; **Munkahelyi eszközök regisztrációja** területén kattintson a **Hozzáadás** elemre.
 
     A DEP támogatásához adja meg az **Általános** adatokat, például a **Nevet** és a **Leírást**, és adja meg, hogy a profilhoz rendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e.
-      - **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez.  **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak. Az ilyen eszközöknek a Vállalati portált kell használniuk (például alkalmazások telepítéséhez).
+      - **Rákérdezés a felhasználói affinitásra** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd az eszköz ezen a felhasználón keresztül hozzáférhet a vállalati adatokhoz és e-mailekhez.  **Felhasználói affinitást** a DEP programmal kezelt olyan eszközökhöz kell beállítani, amelyek a felhasználókhoz tartoznak. Az ilyen eszközöknek a Vállalati portált kell használniuk (például alkalmazások telepítéséhez). **Megjegyzés:** A felhasználói affinitással rendelkező DEP-eszközök nem támogatják a többtényezős hitelesítést.
       - **Nincs megadva a felhasználói affinitás** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Vállalati portál alkalmazást is beleértve, nem fognak működni.
 
     Ezen kívül **Eszközöket rendelhet hozzá a következő csoporthoz** is. A csoport kijelöléséhez kattintson a **Kijelölés...** elemre.
@@ -89,7 +89,7 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
 6.  **DEP-eszközök hozzárendelése kezelés céljából** – Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-vel. Válassza a **Deployment Program** (Telepítési program) &gt; **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Devices** (Eszközök kezelése) lehetőséget. Adja meg, hogy miként fogja kiválasztani az eszközöket ( **Choose Devices**), adja meg az eszközinformációkat, és adja meg a részleteket az eszköz sorozatszáma ( **Serial Number**) vagy rendelésszáma ( **Order Number**) alapján, illetve CSV-fájl feltöltésével ( **Upload CSV File**). Ezután válassza az **Assign to Server** (Hozzárendelés kiszolgálóhoz) lehetőséget, válassza ki a Microsoft Intune-hoz megadott &lt;Kiszolgálónevet&gt;, majd kattintson az **OK** gombra.
 
-7.  **DEP által felügyelt eszközök szinkronizálása** – Rendszergazda felhasználóként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen kattintson a **Szinkronizálás** elemre. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek. Ha meg szeretné tekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Csoportok** &gt; **Minden céges eszköz** területét. A **Céges eszközök** munkaterületen, a felügyelt eszközök **Állapot** területén mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
+7.  **DEP által felügyelt eszközök szinkronizálása** – Rendszergazda felhasználóként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen kattintson a **Szinkronizálás** elemre. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek. Ha szeretné megtekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **iOS-sorozatszám szerint** területét. Az **iOS-sorozatszám szerint** munkaterületen, a felügyelt eszközök **Állapot** mezőjében mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
 
     Az Apple elfogadható DEP-forgalomra vonatkozó feltételeinek teljesítése érdekében az Intune a következő korlátozásokat írja elő:
      -  Teljes DEP-szinkronizálás legfeljebb 7 naponként futtatható. Teljes szinkronizálás során az Intune minden Apple által hozzárendelt Intune-sorozatszámot frissít, függetlenül attól, hogy azt már korábban szinkronizálták-e, vagy sem. Ha az előző teljes szinkronizálástól számított 7 napon belül egy újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.
@@ -99,13 +99,13 @@ A vállalat által birtokolt iOS-eszközöket csak egy Apple-től származó DEP
 
 ## Változások az Intune csoport-hozzárendelésekben
 
-Októbertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. Ez a folyamat biztosítja, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen úgy, hogy alkalmazva legyen rájuk a szabályzat, és telepítve az alkalmazások. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Novembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. Ez a folyamat biztosítja, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen úgy, hogy alkalmazva legyen rájuk a szabályzat, és telepítve az alkalmazások. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### További információ
 [Felkészülés az eszközök regisztrálására](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

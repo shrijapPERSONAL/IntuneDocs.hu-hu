@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
+ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
+ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
 
 
 ---
@@ -43,7 +43,7 @@ Jóllehet az Intune-szoftverügyfél a szoftverfrissítések, a Windows tűzfal 
 
 |Követelmény|További információ|
 |---------------|--------------------|
-|Operációs rendszer | Windows 7 vagy újabb rendszert futtató eszköz. |
+|Operációs rendszer | Windows Vista vagy újabb rendszert futtató eszköz. A Home Edition verziók nem támogatottak.|
 |Rendszergazdai engedélyek|Az ügyfélszoftvert telepítő fióknak helyi rendszergazdai engedélyekkel kell rendelkeznie az eszközön.|
 |Windows Installer 3.1|A számítógépnek legalább a Windows Installer 3.1-es verziójával kell rendelkeznie.<br /><br />A Windows Installer verziójának megtekintése egy számítógépen:<br /><br />– A számítógépen kattintson a jobb gombbal a **%windir%\System32\msiexec.exe** fájlra, majd a **Tulajdonságok** menüpontra.<br /><br />A Windows Installer legújabb verzióját letöltheti a Microsoft Developer Network webhelyen található [Windows Installer újraterjeszthető csomagok](http://go.microsoft.com/fwlink/?LinkID=234258) oldalról.|
 |Nem kompatibilis ügyfélszoftver eltávolítása|Az Intune-ügyfélszoftver telepítése előtt el kell távolítania minden Configuration Manager-, illetve System Management Server-ügyfélszoftvert az adott számítógépről.|
@@ -75,6 +75,6 @@ Az Intune-ügyfélügynök általában a háttérben fut, és ritkán van csak s
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

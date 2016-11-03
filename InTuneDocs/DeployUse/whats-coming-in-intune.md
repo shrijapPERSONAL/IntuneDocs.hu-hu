@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
-ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,25 +78,6 @@ A csoportfelügyelettel kapcsolatos változtatások mellett **a következő funk
 - Pivotálás csoportokkal a jelentésekben
 <!--- TFS 1295329--->
 
-## Vállalati portál
-
-### Visszajelzési hivatkozás a Vállalati portálról a Microsofthoz
-A Vállalati portál webhelyen az oldal alján található új „Visszajelzés” hivatkozásra koppintva visszajelzést küldhetnek a Microsoftnak a webhelyen szerzett tapasztalataikról. A névtelenített formában összegyűjtött visszajelzéseket a Microsoft a Vállalati portál nyújtotta felhasználói élmény tökéletesítésére használja fel.
-<!--- TFS 1313657--->
-
-### Fejlesztések azzal kapcsolatban, hogy az iOS-végfelhasználók hogyan kapják meg az alkalmazásaikat
-Szeptemberben a következő változásokra kerül sor az iOS-es Vállalati portál alkalmazás alkalmazáscsempéivel kapcsolatban annak érdekében, hogy a felhasználók valamennyi alkalmazásukat egyetlen helyen, a Vállalati portál webhelyen láthassák különböző nézetekben. Jelenleg az Apple korlátozásai tiltják az üzletági és felügyelt App Store-alkalmazások listázását a Vállalati portál alkalmazásban; ahhoz, hogy valamennyi alkalmazásukat megtalálják, a felhasználóknak több különböző nézetet kell használniuk.
-
-- A **Vállalati alkalmazások** csempe jelenleg az összes alkalmazás listájára mutat a Vállalati portál webhely ÖSSZES lapján, és ez a jövőben is így marad. A csempe új neve **Minden alkalmazás**.
-- Az **Egyéb alkalmazások** csempe jelenleg a Vállalati portál alkalmazás azokat az alkalmazásokat listázó nézetére mutat, amelyek megjelenítését az Apple engedélyezi a Vállalati portál alkalmazás számára. A csempe új neve **Kiemelt alkalmazások** lesz, és rákoppintás esetén a felhasználót a Vállalati portál webhely KIEMELT lapjára irányítja.
--  A **Kategóriák** csempe jelenleg egy olyan nézetre mutat a Vállalati portál alkalmazásban, amely az alkalmazások kategóriáit listázza. A csempe neve nem változik, azonban ezentúl a Vállalati portál webhely KATEGÓRIÁK nézetére mutat majd.
-[Itt](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) talál frissített képernyőképeket.
-<!---TFS 1317133--->
-
-### Felszólítás az iOS-es Managed Browser alkalmazás telepítésére, ha az informatikai részleg beállította ezt a követelményt az alkalmazás számára
-Ha az iOS-es Vállalati portál alkalmazás szeptemberi kiadásában egy webklipet úgy konfigurált, hogy csak a felügyelt böngészőben nyíljon meg, de a felügyelt böngésző nincs telepítve az eszközön, akkor az eszközön futó Vállalati portál alkalmazás felszólítja a felhasználót, hogy a webklip telepítése előtt telepítse a felügyelt böngészőt. 
-<!---TFS 1228570--->
-
 ## Szolgáltatások érvénytelenítése
 ### A vállalati portál Windows 8 és a Windows Phone 8 rendszerhez készült alkalmazásai 2016 szeptemberétől elavulttá válnak
 2016 októberétől a Microsoft Intune kivezeti a Windows 8 és Windows Phone 8 Vállalati portál alkalmazások támogatását. A Microsoft Intune egyúttal a Windows Phone 8 platform támogatását is kivezeti. Ennek következményeképpen ekkortól nem tud majd Windows Phone 8 rendszerű eszközöket regisztrálni vagy frissíteni. A már regisztrált Windows Phone 8 és Windows 8 rendszerű eszközöket továbbra is felügyelheti. Frissítse a Windows Phone 8 és Windows 8 rendszerű eszközöket Windows 8.1-es és a Windows Phone 8.1-es verzióra, és használja a megfelelő Windows 8.1-es és Windows Phone 8.1-es Vállalati portál alkalmazásokat az alkalmazások további zökkenőmentes terjesztéséhez ezekre az eszközökre.
@@ -132,6 +113,6 @@ A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

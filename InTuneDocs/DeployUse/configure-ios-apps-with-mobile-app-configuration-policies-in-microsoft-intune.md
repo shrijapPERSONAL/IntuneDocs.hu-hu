@@ -4,7 +4,7 @@ description: "Az Intune mobilalkalmazás-konfigurációs szabályzataival automa
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ A mobilalkalmazás-konfigurációs házirendek segítséget nyújthatnak ezeknek
 Nem kell telepítenie ezeket a házirendeket közvetlenül a felhasználók és eszközök számára. Ehelyett a szabályzatot társítani kell egy alkalmazáshoz, majd telepíteni kell az alkalmazást. A házirend-beállítások akkor lesznek felhasználva, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
 > [!TIP]
-> Ez a szabályzattípus jelenleg csak az iOS 7.1-es vagy újabb verzióit futtató eszközökön érhető el. A szabályzat az alábbi alkalmazástelepítési módszereket támogatja:
+> Ez a szabályzattípus jelenleg csak az iOS 8.0-ás vagy újabb verzióit futtató eszközökön érhető el. A szabályzat az alábbi alkalmazástelepítési módszereket támogatja:
 >
 > -   **Felügyelt iOS-alkalmazás az App Store-ból**
 > -   **Alkalmazáscsomag az iOS számára**
@@ -139,6 +139,6 @@ Mobilalkalmazás-konfigurációs fájl létrehozásakor a következő értékek 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

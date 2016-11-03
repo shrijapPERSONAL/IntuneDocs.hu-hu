@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felh
 
 A következő táblázatban a megfelelőségi házirendek által támogatott eszköztípusok és a nem megfelelő beállítások kezelésének módja szerepel, amikor a házirendet feltételes hozzáférési házirenddel használják.
 
---------------
+-----------------------------
 
-|Házirend-beállítás| Windows 8.1 és újabb| Windows Phone 8.1 és újabb verziók| iOS 6.0 és újabb verziók|Android 4.0 és újabb verziók<br/>Samsung KNOX szabvány 4.0 és újabb|
+|Házirend-beállítás| Windows 8.1 és újabb| Windows Phone 8.1 és újabb verziók| iOS 8.0 és újabb verziók|Android 4.0 és újabb verziók<br/>Samsung KNOX szabvány 4.0 és újabb|
 |-----|----|----|----|----|
 |**PIN-kód vagy jelszó konfigurálása** |Kijavítva|Kijavítva|Kijavítva|Karanténba helyezve|
 |**Eszköztitkosítás**|–|Kijavítva|Kijavítva (PIN-kód beállításával)|Karanténba helyezve|
@@ -43,7 +43,9 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 |**Operációs rendszer minimális verziója**|Karanténba helyezve|Karanténba helyezve|Karanténba helyezve|Karanténba helyezve|
 |**Operációs rendszer maximális verziója**|Karanténba helyezve| Karanténba helyezve| Karanténba helyezve| Karanténba helyezve|
 |**Windows-állapotigazolás**|A Windows 10 és a Windows 10 Mobile karanténban van.<br /><br />A beállítás nem alkalmazható a Windows 8.1 rendszerre|–|–|–|
---------------
+
+------------------------------
+
 **Kijavítva** = Az eszköz operációs rendszere kikényszeríti a megfelelőséget (a felhasználót például PIN-kód beállítására kényszeríti).  A beállítás mindig megfelelő lesz.
 
 **Karanténba helyezve** = Az eszköz operációs rendszere nem kényszeríti ki a megfelelőséget (az Android-eszközök például nem kényszerítik a felhasználót az eszköz titkosítására). Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
@@ -62,6 +64,6 @@ A következő táblázatban a megfelelőségi házirendek által támogatott esz
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -56,7 +56,7 @@
 ## [Eszközök védelme](protect-your-devices-with-microsoft-intune.md)
 ### [Zárolás és jelszó alaphelyzetbe állítása távolról](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [Windows-eszközök védelme MFA hitelesítéssel](protect-windows-devices-with-multi-factor-authentication.md)
-### [A Microsoft Passport beállításainak szabályozása az eszközökön](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [A Vállalati Windows Hello beállításainak szabályozása](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Az aktiválási zár megkerülése iOS-eszközökön](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Szoftverfrissítések](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)

@@ -1,10 +1,10 @@
 ---
 title: "Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal | Microsoft Intune"
-description: "Csoportokat hozhat létre és kezelhet a Csoportok munkaterületről."
+description: "Csoportok létrehozása és kezelése a Csoportok munkaterület használatával."
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 06/20/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,58 +13,62 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
+ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
+ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 
 ---
 # Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-ban
 
-Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ban. Azt is megtudhatja belőle, hogy hogyan változik majd a csoportok kezelése az elkövetkező hónapok során. A csoportok kezelésének *jelenlegi* módszeréről l. a jelen témakör [Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) című részét.
+Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ban. Azt is megtudhatja belőle, hogy hogyan változik majd a csoportok kezelése az elkövetkező hónapok során. 
+
+>[!IMPORTANT]
+>
+>Ha az Intune-portál Csoportok munkaterületét megnyitva megjelenik egy hivatkozás, amely az Azure Active Directory (Azure AD) portálra mutat, akkor ön már az Intune *új* Azure AD biztonságicsoport-alapú csoportkezelését használja, amelynek ismertetése az [Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) című részben található. Kattintson az Azure AD-portálra mutató hivatkozásra. Az Azure Ad biztonsági csoportok használatáról lásd: [Az erőforrásokhoz való hozzáférés felügyelete Azure Active Directory-csoportokkal](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>
+>Ha nem látja az Azure AD-portálra mutató hivatkozást, akkor Ön még a *jelenlegi* csoportkezelési módszert használja, amelynek leírása a jelen témakör [Csoportok létrehozása a felhasználók és eszközök kezeléséhez a Microsoft Intune-nal](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) című részében található.
+
 
 ## Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről
 
-A felhasználók jelezték, hogy egységes csoportosítási és célcsoport-kezelési felületet szeretnének a Nagyvállalati mobilitás + biztonság egészéhez, ezért az Intune-csoportokat átalakítjuk Azure Active Directory-alapú biztonsági csoportokká. Ez egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Az új felület jóvoltából a jövőben nem kell csoportokat duplikálni a szolgáltatások között, és támogatott lesz PowerShell- és a Graph-alapú bővíthetőség is. 
+Önök a tudomásunkra hozták, hogy a nagyvállalati mobilitás és biztonság területe egészén egységes csoportosítást és célcsoport-kezelést szeretnének. Mi pedig hallgattunk Önökre. Visszajelzéseik alapján hamarosan Azure Active Directory-alapú biztonsági csoportokká alakítjuk át az Intune-csoportokat. Ez a változás egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Ez annyit jelent, hogy a jövőben nem kell csoportokat duplikálniuk a különböző szolgáltatásokhoz. A Windows PowerShell és a Microsoft Graph alkalmazásának lehetősége egyúttal bővíthetőséget biztosít.
 
 ### Hogyan érint ez engem jelen pillanatban?
-A változás most még nem érinti Önt, de eláruljuk, mi várható:
+A változás jelen pillanatban nem érinti Önt. A jövőben azonban:
 
--   Szeptembertől a havi szolgáltatásverzió kiadása után létesített új fiókok már az Azure AD-alapú biztonsági csoportokat fogják használni az Intune-os felhasználói csoportok helyett.   
--   Októbertől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és eszközalapú csoportokat is az Azure AD portálján kezelik majd. A meglévő ügyfeleket nem érinti
--   Novemberben az Intune-termékcsapat elkezdi a meglévő ügyfelek migrálását az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyike migrálva lesz az Azure AD-alapú biztonsági csoportokba. A migrálás novemberben kezdődik, és kötegekben történik. Mindaddig nem kezdjük meg a migrálást, amíg nem sikerül minimalizálni annak hatását a napi munkára, és nem biztosított, hogy a végfelhasználók semmiféle hatást ne érzékeljenek. A fiókjuk áttelepítését megelőzően is küldünk értesítést.
+-   2016 szeptemberétől a havi szolgáltatásverzió kiadása után létesített új fiókok már az Azure AD-alapú biztonsági csoportokat fogják használni az Intune-os felhasználói csoportok helyett.   
+-   2016 októberétől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és az eszközalapú csoportokat is az Azure AD-portálon kezelik majd. A meglévő ügyfelekre ez nem lesz hatással.
+-   2016 novemberében az Intune-termékcsapat elkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyikét Azure AD-alapú biztonsági csoportokba telepítjük át. Az áttelepítés 2016. novemberben kezdődik, és kötegekben történik. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
 
 
 ### Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
-A meglévő ügyfelek migrálása nem azonnal, hanem folyamatosan történik. A migrálás ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. A migrálás előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az [intunegrps@microsoft.com](intunegrps@microsoft.com) címen.
+Az aktuális Intune-ügyfelek áttelepítését fokozatosan végezzük. Az áttelepítés ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. Az áttelepítés előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az <intunegrps@microsoft.com> címen.
 
 ### Mi történik a meglévő felhasználó- és eszközcsoportjaimmal?
- Az Ön által létrehozott felhasználó- és eszközcsoportok átkerülnek az Azure AD-alapú biztonsági csoportokba. Az olyan alapértelmezett Intune-csoportok, mint a Minden felhasználó, csak akkor lesznek migrálva, ha a migrálás időpontjában üzemelő példányokban használják őket. Bizonyos csoportok esetében a migrálás összetettebb feladatot képezhet; értesítjük, ha további lépések szükségesek.
+ Az Intune-ban létrehozott felhasználói csoportokat és eszközcsoportokat Azure AD biztonsági csoportokba telepítjük át. Az olyan alapértelmezett Intune-csoportokat, mint a Minden felhasználó, csak akkor telepítjük át, ha az áttelepítés időpontjában üzemelő példányokban használják őket. Bizonyos csoportok esetében az áttelepítés összetettebb művelet lehet. Értesíteni fogjuk, ha szervezetében az áttelepítéshez további lépésekre van szükség.
 
 ### Milyen új funkciókat érhetek el?
-A bevezetésre kerülő új funkciók:
+Az Intune-ról Azure Active Directoryra való áttérés nyomán a következő új funkciók válnak elérhetővé:
 
 -    Az Intune minden telepítéstípus esetében támogatni fogja az Azure AD-alapú biztonsági csoportokat.
--    Az Azure AD-alapú biztonsági csoportok támogatni fogják az eszközök csoportosítását a felhasználók csoportosításával együtt.
--    Az Azure AD-alapú biztonsági csoportok támogatni fogják az Intune-eszközattribútumokkal rendelkező dinamikus csoportokat. Lehetséges lesz többek között platform (például iOS) alapján dinamikusan csoportosítani az eszközöket. Így amikor új iOS-eszközt regisztrálnak a szervezetnél, az automatikusan hozzáadódik az iOS dinamikus eszközcsoporthoz.
--    Egységes csoportfelügyelet az Azure AD-ben és az Intune-ban.
-- Az Azure AD-be bekerül az *Intune-szolgáltatásadminisztrátor* szerepkör, így az Intune szolgáltatásadminisztrátorai az Azure AD-ben is végrehajthatnak csoportfelügyeleti feladatokat.
-
-
-
+-    Az Azure AD-alapú biztonsági csoportok támogatni fogják az eszközök és a felhasználók csoportosítását.
+-    Az Azure AD-alapú biztonsági csoportok támogatni fogják az Intune-eszközattribútumokkal rendelkező dinamikus csoportokat. Például lehetséges lesz platform (például iOS) alapján dinamikusan csoportosítani az eszközöket. Amikor új iOS-eszközt regisztrálnak a szervezetnél, az automatikusan hozzáadódik az iOS dinamikus eszközcsoporthoz.
+-    A csoportfelügyelet egységes lesz az Azure AD-ben és az Intune-ban.
+- Az Azure AD-be bekerül az Intune-szolgáltatásadminisztrátor szerepkör, így az Intune szolgáltatásadminisztrátorai az Azure AD-ben is végrehajthatnak csoportfelügyeleti feladatokat.
 
 ### Mely Intune-funkciók nem lesznek elérhetők?
-Jóllehet a csoportfelügyelet minősége javulni fog, vannak olyan Intune-funkciók, amelyek a migrálás után elérhetetlenné válnak.
+Jóllehet a csoportokkal kapcsolatos felhasználói élmény javulni fog, vannak bizonyos olyan Intune-funkciók, amelyek a szervezet Intune-csoportokról Azure AD biztonsági csoportokra történő áttérését követően nem lesznek elérhetők.
 
 #### Csoportfelügyeleti funkciók
 
--   Új csoport létrehozásakor nem lesz lehetséges tagok vagy csoportok kizárása. Az Azure AD-alapú dinamikus csoportok ugyanakkor lehetővé teszik, hogy attribútumok alkalmazásával összetett szabályokat alakítson ki bizonyos tagok feltételalapú kizárására.
--   A **Nem csoportosított felhasználók** és a **Nem csoportosított eszközök** csoportjai nem támogatottak. Ezek csoportok nem kerülnek migrálásra.
+-   Az áttelepítés után új csoport létrehozásakor nem lesz lehetséges tagok vagy csoportok kizárása. Ugyanakkor az Azure AD dinamikus csoportok esetében attribútumok segítségével létrehozhatók olyan speciális szabályok, amellyel lehetséges tagok kizárása valamely csoportból meghatározott feltételek alapján.
+-   A Nem csoportosított felhasználók és a Nem csoportosított eszközök csoportjainak támogatása megszűnik. Ezeket a csoportokat nem fogjuk áttelepíteni az Intune-ból az Azure AD-be.
 
 
 #### Csoportfüggő funkciók
 
 -   A Szolgáltatásadminisztrátor szerepkör nem rendelkezik majd **Csoportok kezelése** engedéllyel.
--   Az Exchange ActiveSync-eszközök nem lesznek csoportosíthatók.  A **Minden EAS által kezelt eszköz** csoport csoportnézetből jelentésnézetté alakul.
+-   Az Exchange ActiveSync-eszközök nem lesznek csoportosíthatók. A Minden EAS által kezelt eszköz csoport csoportnézetből jelentésnézetté alakul.
 -  A jelentésekben nem lesz elérhető a csoportok alapján történő kimutatás.
 -  Az értesítési szabályok egyedi csoportcélzási lehetősége megszűnik.
 
@@ -73,14 +77,14 @@ Jóllehet a csoportfelügyelet minősége javulni fog, vannak olyan Intune-funkc
 
 - A migrálás előtt töröljön minden olyan Intune-csoportot, amelyre nincs szüksége.
 - Vizsgálja felül a csoportokból való kizárás eddigi használatát, és próbálja meg úgy átalakítani a csoportokat, hogy a jövőben ne legyen szüksége erre a funkcióra.
--  Ha vannak olyan rendszergazdák, akik számára nem engedélyezett csoportok létrehozása az Azure AD-ben, kérje meg Azure AD-rendszergazdáját, hogy adja hozzá őket az **Intune-szolgáltatásadminisztrátor** Azure AD-szerepkörhöz.
+-  Ha vannak olyan rendszergazdák, akik számára nem engedélyezett csoportok létrehozása az Azure AD-ben, kérje meg Azure AD-rendszergazdáját, hogy adja hozzá őket az Intune-szolgáltatásadminisztrátor Azure AD-szerepkörhöz.
 
 
 ## Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal
 
 Ez a szakasz azt ismerteti, hogy hogyan hozhat létre Intune-csoportokat az Intune felügyeleti konzolján.
 
-Csoportok létrehozásához és kezeléséhez lépjen a **Csoportok** munkaterületre a Microsoft Intune felügyeleti konzolon. A **Csoportok áttekintése** oldal olyan állapotösszegzéseket tartalmaz, amelyek segítenek az alábbiakkal kapcsolatos problémák kezelésében és rangsorolásában:
+Csoportok létrehozásához és kezeléséhez lépjen a **Csoportok** munkaterületre a Microsoft Intune felügyeleti konzolon. A **Csoportok áttekintése** oldalon olyan állapotösszegzések láthatók, amelyek segíthetnek az intézkedést igénylő problémák azonosításában és rangsorolásában. Az állapotösszegzések a következő területeket fedik le:
 
 -   Riasztások
 -   Szoftverfrissítések
@@ -88,130 +92,116 @@ Csoportok létrehozásához és kezeléséhez lépjen a **Csoportok** munkaterü
 -   Házirend
 -   Szoftverkezelés
 
-Emellett a csoporthierarchia is megjelenik összesítő állapotinformációkkal, amelyek segítenek azonosítani és megoldani a kiválasztott csoport adott tagjaival kapcsolatos problémákat.
+A csoporthierarchia is megjelenít állapotösszegzéseket, amelyek segítenek azonosítani és megoldani a kiválasztott csoport tagjaival kapcsolatos problémákat.
 
+## Csoportok létrehozása
 
 > [!TIP]
-> A csoportok létrehozásakor fontolja meg a házirend alkalmazási módját. Például rendelkezhet az eszköz operációs rendszerére szabott házirendekkel, illetve a szervezeten belüli különböző szerepeknek vagy az Active Directory-ban már megadott szervezeti egységeknek megfelelő házirendekkel. Bizonyos esetekben hasznos lehet az iOS, Android és Windows operációs rendszerekhez rendelt eszközcsoportok, valamint az egyes szervezeti szerepekhez tartozó felhasználói csoportok létrehozása.
+> A csoportok létrehozásakor gondolja át, hogyan szeretné alkalmazni a szabályzatokat. Lehetnek például az eszközök operációs rendszereire szabott, vagy a szervezet különböző szerepköreinek, illetve az Active Directoryban már definiált szervezeti egységeknek megfelelő szabályzatok. Hasznos lehet külön eszközcsoportokat létrehozni az iOS, Android és Windows operációs rendszerekhez rendelt eszközcsoportok számára, valamint külön felhasználói csoportokat az egyes szerepekörök számára a szervezeten belül.
 >
-> Érdemes létrehozni egy valamennyi csoportra és eszközre vonatkozó alapértelmezett házirendet a vállalatára érvényes alapszintű megfelelőségi követelmények meghatározásához. Ezután hozzon létre a felhasználók és az eszközök legszélesebb kategóriáira szabott házirendeket, például az eszközök különféle operációs rendszereire vonatkozó levelezési házirendeket.
+> Érdemes létrehozni egy valamennyi csoportra és eszközre vonatkozó alapértelmezett szabályzatot a szervezetre vonatkozó alapvető megfelelőségi követelmények meghatározásához. Ezt követően létrehozhatók részletesebb szabályzatok a felhasználók és eszközök legszélesebb kategóriáira. Létrehozhat például levelezési szabályzatokat az eszközök különböző operációs rendszerei számára.
 >
-> A későbbi könnyű azonosíthatóság érdekében figyelmesen járjon el a házirend elnevezésekor. Egy megfelelő, leíró házirendnév például a következő lehet: **WP e-mail házirend a teljes vállalat számára**.
+> A későbbi könnyű azonosíthatóság érdekében érdemes odafigyelni a szabályzatok elnevezésére. Ilyen könnyen érthető, leíró szabályzatnév lehet például a következő: **WP e-mail szabályzat a teljes vállalat számára**.
 >
-> Szigorú házirendek létrehozásakor minden esetben érdemes tájékoztatni a felhasználókat, így a szükségtelen kommunikáció csökkentése érdekében az általánosabb csoportok és házirendek létrehozása után különös figyelemmel hozza létre a kisebb csoportokat.
+> Valahányszor korlátozó szabályzatot hoz létre, arról értesíteni kell a felhasználókat. A felesleges kommunikáció csökkentése érdekében az általánosabb csoportok és szabályzatok létrehozása után különösen ügyeljen a kisebb csoportok létrehozására.
 
-
-## Eszközcsoport létrehozása
+### Eszközcsoport létrehozása
 
 1.  Az Intune felügyeleti konzolján kattintson a **Csoportok** &gt; **Áttekintés** &gt; **Csoport létrehozása** elemre.
 
 2.  Adja meg a csoport nevét és leírását (az utóbbi nem kötelező), majd válasszon egy eszközcsoportot szülőcsoportként. Kattintson a **Tovább** gombra.
 
-3.  A **Tagság feltételeinek meghatározása** oldalon válassza ki, hogy a csoport milyen típusú eszközökből álljon. A csoport konfigurálásának további lehetőségei a kiválasztott eszköztípustól függnek:
+3.  A **Tagság feltételeinek meghatározása** oldalon válassza ki, hogy a csoport milyen típusú eszközökből álljon. A kiválasztott eszközök típusán alapuló további konfigurációs lehetőségek között szerepelnek a következők:
 
-    -   **Számítógép:** Megadhatja, hogy a szülőcsoport minden tagját be kívánja-e vonni a csoportba, illetve meghatározhatja a bevonni és kizárni kívánt szervezeti egységeket és tartományokat. Egy számítógép szervezeti egységekre és tartományokra vonatkozó adatait a leltár tartalmazza.
+    -   **Számítógép**. Megadhatja, hogy a szülőcsoport minden tagját fel kívánja-e venni a csoportba, illetve meghatározhatja a felvenni és kizárni kívánt szervezeti egységeket és tartományokat. A számítógép szervezeti egységére és tartományára vonatkozó információk a leltárból érhetők el.
 
-    -   **Mobileszközök:** Megadhatja, hogy csak az Intune, csak az Exchange ActiveSync vagy mindkettő által felügyelt eszközök tartozzanak egy csoportba.
+    -   **Mobil**. Megadhatja, hogy csak az Intune, csak az Exchange ActiveSync vagy mindkettő által felügyelt eszközök tartozzanak a csoportba.
 
-    -   **Minden eszköz:** Ez a beállítás minden eszközt magában foglal, feltételeken alapuló kivételek nélkül.
+    -   **Minden eszköz**. Ez a beállítás minden eszközt magában foglal, feltételeken alapuló kivételek nélkül.
 
-4.  A **Közvetlen tagság meghatározása** oldalon bevonhat vagy kizárhat egyes eszközöket, ha a **Tallózás**gombra kattint. Ha olyan eszközöket választ ki, amelyek nem tagjai a megadott szülőcsoportnak, akkor ezeket a rendszer automatikusan hozzáadja a szülőcsoporthoz.
+4.  A **Közvetlen tagság meghatározása** oldalon a **Tallózás** lehetőséget választva vonhat be vagy zárhat ki egyedi eszközöket. Ha olyan eszközöket választ ki, amelyek nem tagjai a megadott szülőcsoportnak, akkor az Intune ezeket automatikusan hozzáadja a szülőcsoporthoz.
 
+5.  Az **Összegzés** lapon ellenőrizze a beállításokat, majd kattintson a **Befejezés** gombra.
 
-5.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket. Válassza a **Befejezés** lehetőséget.
+Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Ugyanitt szerkesztheti és törölheti is a csoportot.
 
-Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Itt szerkesztheti és törölheti is a csoportot.
-
-## Felhasználói csoport létrehozása
+### Felhasználói csoport létrehozása
 
 1.  Az Intune felügyeleti konzolján kattintson a **Csoportok** &gt; **Áttekintés** &gt; **Csoport létrehozása** elemre.
 
-2.  Adja meg a csoport nevét és leírását (az utóbbi nem kötelező), majd válasszon egy felhasználócsoportot szülőcsoportként. Kattintson a **Tovább** gombra.
+2.  Adja meg a csoport nevét és leírását (az utóbbi nem kötelező), majd válasszon egy felhasználói csoportot szülőcsoportként. Kattintson a **Tovább** gombra.
 
-3.  A **Tagság feltételeinek meghatározása** oldalon adja meg, hogy a szülőcsoport minden tagját be kívánja-e vonni vagy inkább üres csoportot használ első lépésként.  Ezután bevonhat vagy kizárhat tagokat felhasználók olyan **biztonsági csoportjai** alapján, amelyeket manuálisan konfigurál az [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkId=698854), vagy a helyi Active Directoryból szinkronizál. Ha egy biztonsági csoport tagsága megváltozik, akkor az azon a csoporton alapuló felhasználói csoportok tagsága is módosulhat.
+3.  A **Tagság feltételeinek meghatározása** oldalon válassza ki, hogy a szülőcsoport minden tagját be kívánja-e vonni vagy inkább üres csoportot használ első lépésként. Ezután bevonhat vagy kizárhat tagokat a felhasználók olyan biztonsági csoportjai alapján, amelyeket vagy manuálisan konfigurál az [Office 365 felügyeleti központjában](http://go.microsoft.com/fwlink/?LinkId=698854), vagy az Active Directoryból szinkronizál. Ha egy biztonsági csoport tagsága megváltozik, akkor az azon a csoporton alapuló felhasználói csoportok tagsága is módosulhat.
 
     > [!IMPORTANT]
-    > Jelenleg ha a csoportba meghatározott biztonsági, illetve menedzseri csoportokból vannak bevonva a tagok, és emellett kizárja meghatározott csoportok tagjait, a rendszer először bevonja, majd eltávolítja a tagokat. Egy bevont tagokkal és kizárt tagokkal is rendelkező csoport létrehozásához javasoljuk, hogy először hozzon létre egy szülőcsoportot a bevont tagokkal, majd hozzon létre egy gyermeket ehhez a csoporthoz, melyben felsorolja a kizárt tagokat. Ezt a gyermekcsoportot az Intune házirendjeinek, profiljainak és terjesztésének megfelelő módon használhatja.
+    > Jelenleg ha a csoport meghatározott biztonsági, illetve menedzseri csoportokból tartalmaz tagokat, és kizárja meghatározott csoportok tagjait, a rendszer eltávolítja a korábban bevont tagokat. Az javasoljuk, hogy olyan csoport létrehozásához, amely egyaránt tartalmaz bevont és kizárt tagokat, mindenekelőtt hozzon létre egy szülőcsoportot, amely a bevont tagokat tartalmazza. Ezután hozzon létre ehhez a szülőcsoporthoz egy gyermekcsoportot. Az új gyermekcsoportban adja meg a kizárt tagok listáját. Ezt a gyermekcsoportot használja az Intune szabályzatainak, profiljainak és alkalmazás-terjesztésének kezelésére.
 
     > [!NOTE]
-    > Az Azure felügyeleti portálon létrehozhat egy csoportot a menedzser alapján, akinek a felhasználók jelentést készítenek. A csoport dinamikus lesz, és változni fog, ahogy alkalmazottakat ad hozzá az adott menedzser csapatából, vagy távolít el abból az Azure Active Directoryban. Az Azure-csoportok menedzser alapján való létrehozásának eljárása a [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) (Speciális szabályok létrehozása attribútumokkal) című témakör **To configure a group as a “Manager” group** (Csoport konfigurálása „kezelő” csoportként) című szakaszában található.
+    > Az Azure-portálon létrehozhat csoportokat a felhasználók felettesei alapján. Az ilyen csoport dinamikus és aszerint változik, ahogy az Azure Active Directoryban alkalmazottakat adnak hozzá az adott menedzser csapatához vagy távolítanak el onnan. Az Azure-csoportok menedzser alapján történő létrehozását a [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) (Speciális szabályok létrehozása attribútumokkal) című témakör **To configure a group as a “Manager” group** (Csoport konfigurálása „Menedzser” csoportként) című szakasza ismerteti.
 
+4.  A **Közvetlen tagság meghatározása** oldalon a **Tallózás** lehetőséget választva vonhat be vagy zárhat ki egyedi felhasználókat. Ha olyan felhasználókat választ ki, akik nem tagjai a megadott szülőcsoportnak, akkor ezeket a rendszer automatikusan hozzáadja a szülőcsoporthoz. A **Tagok kiválasztása** párbeszédpanel alsó részén található a felhasználó manuális felvételére szolgáló beállítás. Ez akkor hasznos, ha olyan felhasználót szeretne felvenni a csoportba, aki még nem rendelkezik regisztrált eszközzel.
 
-4.  A **Közvetlen tagság meghatározása** oldalon bevonhat vagy kizárhat egyes felhasználókat, ha a **Tallózás**gombra kattint. Ha olyan felhasználókat választ ki, amelyek nem tagjai a megadott szülőcsoportnak, akkor ezeket a rendszer automatikusan hozzáadja a szülőcsoporthoz. A **Tagok kiválasztása** párbeszédpanel alsó részén található a felhasználó manuális felvételére szolgáló beállítás. Ez akkor hasznos, ha olyan felhasználót szeretne felvenni a csoportba, aki még nem rendelkezik regisztrált eszközzel.
+5.  Az **Összegzés** lapon ellenőrizze a beállításokat, majd kattintson a **Befejezés** gombra.
 
-
-5.  Az **Összefoglalás** lapon tekintse át a végrehajtandó műveleteket. Válassza a **Befejezés** lehetőséget.
-
-Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Itt szerkesztheti és törölheti is a csoportot.
+Az újonnan létrehozott csoport megjelenik a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Ugyanitt szerkesztheti és törölheti is a csoportot.
 
 > [!TIP]
-> A biztonsági csoportok kiváló forrást biztosítanak a felhasználói csoportok feltöltéséhez. Mivel a biztonsági csoportok esetében meg van adva, hogy mely erőforrásokhoz kinek van hozzáférése, azok könnyedén átfordíthatók Intune felhasználói csoportokra. Azok a biztonsági csoportok, amelyeket az Active Directoryból szinkronizált az Azure Active Directoryba, illetve amelyeket közvetlenül az Azure Active Directoryban hozott létre az Office 365 Felügyeleti központban vagy az Azure felügyeleti portálján, mind elérhetők a felhasználói csoportok létrehozásához az Intune-ban.
+> A biztonsági csoportok jól használhatók a felhasználói csoportok feltöltésekor. Mivel a biztonsági csoportok határozzák meg, hogy mely erőforrásokhoz kinek van hozzáférése, azok egyszerűen leképezhetők Intune felhasználói csoportokra. Azok a biztonsági csoportok, amelyeket az Active Directoryból szinkronizált az Azure Active Directoryba, illetve amelyeket közvetlenül az Azure Active Directoryban hoz létre az Office 365 Felügyeleti központban vagy az Azure felügyeleti portálján, mind elérhetők a felhasználói csoportok létrehozásához az Intune-ban.
 
-## Nézetek testreszabása a rendszergazdai szerepköröknek megfelelően
-A szűrt csoportnézetekkel szerepkör alapján testreszabhatja a rendszergazdák számára látható nézeteket, és korlátozhatja az egyes rendszergazdák által felügyelhető csoportokat. Ez a következő esetekben lehet hasznos:
+## Felügyeleti nézetek szűrése szerepkör alapján
+A szűrt csoportnézetekben szabható meg, hogy szerepköre alapján mit láthat a rendszergazda. A szűrt csoportnézetek révén az egyes rendszergazdák által kezelhető csoportok köre is korlátozható. Ez a következő esetekben lehet hasznos:
 
--   Azt szeretné, hogy a rendszergazdák csak bizonyos felhasználókra és eszközökre vonatkozóan végezhessenek telepítéseket.
-
--   Csak az egyes rendszergazdák számára fontos csoportokat kívánja megjeleníteni.
+-   Azt szeretné, hogy a rendszergazdák csak bizonyos felhasználókra és eszközökre vonatkozóan végezhessenek központi telepítéseket
+-   Azt szeretné, hogy a rendszergazdák csak a számukra releváns csoportokat láthassák
 
 A szolgáltatás-rendszergazdák számára az Intune felügyeleti konzolján állíthat be szűrt csoportnézeteket. Részletekért lásd: [Tudnivalók a Microsoft Intune elindítása előtt](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
-Ha szűrt csoportnézeteket konfigurált egy szolgáltatás-rendszergazda számára:
+Miután beállította a szűrt csoportnézeteket valamelyik szolgáltatás-rendszergazda számára, akkor, amikor az illető rendszergazda szoftverek vagy szabályzatok központi telepítését végzi vagy jelentéseket futtat, csak a meghatározott csoportokat láthatja és választhatja ki. Emellett a rendszergazda számára a felügyeleti konzol alábbi oldalain nem jelennek meg állapotinformációk:
 
--   Csak a megadott csoportokat láthatja és választhatja ki, amikor szoftvereket vagy házirendeket telepít vagy jelentéseket használ
-
--   Nem kap állapotinformációkat a felügyeleti konzol következő oldalain:
-
-    -   **Rendszer áttekintése**
-
-    -   **Csoportok áttekintése**
-
-    -   **Az Endpoint Protection áttekintése**
-
-    -   **Riasztások áttekintése**
-
-    -   **Szoftverek áttekintése**
-
-    -   **Házirendek áttekintése**
+-   **Rendszer áttekintése**
+-   **Csoportok áttekintése**
+-   **Az Endpoint Protection áttekintése**
+-   **Riasztások áttekintése**
+-   **Szoftverek áttekintése**
+-   **Házirendek áttekintése**
 
 ### Szűrt csoportnézetek konfigurálása
 
-1.  Az Intune felügyeleti konzolon kattintson a **Felügyelet** &gt; **Rendszergazdák kezelése** &gt; **Szolgáltatás-rendszergazdák** elemre.
+1.  Az Intune felügyeleti konzolon válassza a **Felügyelet** &gt; **Rendszergazdák kezelése** &gt; **Szolgáltatás-rendszergazdák** lehetőséget.
 
-2.  Válassza ki azt a szolgáltatás-rendszergazdát, amely számára szűrni kívánja a csoportokat, és kattintson a **Csoportok kezelése**elemre.
+2.  Válassza ki a szolgáltatás-rendszergazdát, akihez szűrt csoportnézetet kíván létrehozni, majd válassza a **Csoportok kezelése** lehetőséget.
 
-3.  A **Szolgáltatás-rendszergazda számára megjelenített csoportok kiválasztása** párbeszédpanelen adja hozzá azokat a csoportokat, amelyekhez a rendszergazda hozzáférhet, majd kattintson az **OK**gombra.
+3.  A **Szolgáltatás-rendszergazda számára látható csoportok kiválasztása** párbeszédpanelen adja hozzá azokat a csoportokat, amelyekhez a rendszergazda hozzáférhet, majd kattintson az **OK**gombra.
 
 Miután konfigurálta a szűrt csoportnézeteket, a rendszergazda csak a kiválasztott csoportokat tudja megnézni és kijelölni.
 
 ## Csoportok kezelése
-A csoportok létrehozása után azokat a szervezet igényeinek megfelelően kezelheti.
+Létrehozásuk után a csoportokat a szervezet igényeinek megfelelően kezelheti.
 
-A csoport szerkesztése során megváltoztathatja annak nevét, leírását és a csoporthoz tartozó felhasználókat.
+Szerkesztheti a csoportot, hogy módosítsa a nevét, leírását és a hozzá tartozó felhasználókat.
 
 Ha úgy látja, hogy egy csoport már nem szükséges a szervezet számára, törölheti az Intune-ból. A csoport törlése nem érinti a csoporthoz tartozó felhasználókat.
 
 ## További lépések
+A csoportok és szabályzatok beállítását követően a **Kívánt érték** és az **Állapot** alapján ellenőrizheti a felügyelet gyakorlati megvalósítását.
 
 ### A megvalósítás ellenőrzése
-A csoportok és házirendek előkészítését követően a **Kívánt érték** és az **Állapot** alapján ellenőrizheti a felügyelet gyakorlati megvalósítását.
 
-1. Válassza ki bármelyik eszközt az eszközcsoportból, és tallózzon a képernyő tetején található információs kategóriák között.
-2. Válassza a **Házirend** lehetőséget. Az Androidos eszközök házirend-beállításaihoz tartozó alábbi képernyőfelvételéhez hasonlót fog látni.
+1. Válassza ki bármelyik eszközt valamelyik eszközcsoportból, és tallózzon a képernyő tetején található információs kategóriák között.
+2. Válassza a **Szabályzat** lehetőséget. Az Androidos eszközök házirend-beállításaihoz tartozó alábbi képernyőfelvételéhez hasonlót fog látni.
 
-![Példa: iOS-es házirend-beállítások](../media/Intune-Device-Policy-v.2.jpg)
+![Android szabályzat-beállítás – példa](../media/Intune-Device-Policy-v.2.jpg)
 
-Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**jellemzővel. A kívánt érték az az érték, amelyet a házirend hozzárendelésekor el kívánt érni. Az állapot az eszközre érvényes összes házirend alkalmazása, valamint a hardver és az operációs rendszer által szabott korlátozások és rendszerkövetelmények együttese alapján elért érték.  Ezen a képernyőfelvételen két egyszerű példát látható:
+Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**jellemzővel. A kívánt érték az az érték, amelyet a szabályzat hozzárendelésekor el kívánt érni. Az állapot az eszközre érvényes valamennyi szabályzat alkalmazása, valamint a hardver és az operációs rendszer által szabott korlátozások és rendszerkövetelmények együttese alapján elért érték. Ezen a képernyőfelvételen két egyszerű példa látható:
 
 -   Az **Egyszerű jelszavak engedélyezése** beállított értéke **Igen**, ahogy az a **Kívánt érték** oszlopban látható, az **Állapot** értéke azonban **Nem alkalmazható**. Ez azért van, mert az egyszerű jelszavak az Android-eszközökön nem támogatottak.
-
--   Ehhez hasonlóan az **iOS-eszközök e-mail beállításai** kiterjesztett házirend erre az eszközre nem alkalmazható, mivel ez egy Android-eszköz.
+-   Ehhez hasonlóan az **iOS-eszközök e-mail beállításai** kiterjesztett szabályzat erre az eszközre nem alkalmazható, mivel ez egy Android-eszköz.
 
 > [!NOTE]
-> Ne felejtse el, hogy ha két különböző korlátozási szintű házirend vonatkozik egy eszközre vagy felhasználóra, akkor gyakorlatban a szigorúbb házirend lesz érvényes.
+> Ne feledje, hogy ha két különböző korlátozási szintű szabályzat vonatkozik egy eszközre vagy felhasználóra, akkor a gyakorlatban a szigorúbb szabályzat lesz érvényes.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

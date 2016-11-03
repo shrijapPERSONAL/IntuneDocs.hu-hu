@@ -4,7 +4,7 @@ description: "Tudnivalók az Intune-tanúsítványprofilok létrehozásáról."
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,22 +41,16 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 2.  Adja hozzá a következő házirend-típusok valamelyikét:
     - **Android &gt; Megbízható tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; Megbízható tanúsítványprofil (iOS 7.1 és újabb)**
+    - **iOS &gt; Megbízható tanúsítványprofil (iOS 8.0 és újabb)**
     - **Mac OS X &gt; Megbízható tanúsítványprofil (Mac OS X 10.9 és újabb)**
     - **Windows &gt; Megbízható tanúsítványprofil (Windows 8.1 és újabb)**
     - **Windows &gt; Megbízható tanúsítványprofil (Windows Phone 8.1 és újabb)**
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Konfigurálja a megbízható tanúsítványprofil beállításait Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1 rendszerhez a rendszer által kért információk megadásával.
-
-    - A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt (.cer fájl). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
-    -  Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.  
-        Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.  
+3.  Konfigurálja a megbízható tanúsítványprofil beállításait Android, iOS, Mac OS X, Windows 8.1 vagy Windows Phone 8.1 rendszerhez a rendszer által kért információk megadásával. 
+4.  A **Tanúsítványfájl** beállításnál importálja a kiállító hitelesítésszolgáltatótól exportált megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt (.cer fájl). A **Céltár** beállítás kizárólag olyan Windows 8.1-es vagy újabb rendszerrel futó eszközökre vonatkozik, amelyeken egynél több tanúsítványtár érhető el.
+    
 4.  Válassza a **Házirend mentése** elemet.
 
 Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
@@ -69,7 +63,7 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 2.  Adja hozzá a következő házirend-típusok valamelyikét:
     - **Android &gt; SCEP-tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; SCEP-tanúsítványprofil (iOS 7.1 és újabb)**
+    - **iOS &gt; SCEP-tanúsítványprofil (iOS 8.0 és újabb)**
     - **Mac OS X &gt; SCEP-tanúsítványprofil (Mac OS X 10.9 és újabb)**
     - **Windows &gt; SCEP-tanúsítványprofil (Windows 8.1 és újabb)**
     - **Windows &gt; SCEP-tanúsítványprofil (Windows Phone 8.1 és újabb)**
@@ -79,7 +73,7 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
     > [!NOTE]
     >
-    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** lehetőségnél válassza az **Egyéni** opciót.
+    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** legördülő listából válassza az **Egyéni** lehetőséget (csak iOS-profilok esetén érhető el).
     >
     > Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:
 
@@ -98,7 +92,7 @@ Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti
   - **Android &gt; .PFX-tanúsítványprofil (Android 4 és újabb verziók)**
   - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows 10 és újabb verziók)**
   - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows Phone 10 és újabb verziók)**
-  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 7.1 és újabb)**    
+  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 8.0 és újabb)**    
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Adja meg a házirendűrlapon kért adatokat.
 4.  Válassza a **Házirend mentése** elemet.
@@ -136,6 +130,6 @@ Ezt követően megtudhatja, hogy a tanúsítványok segítségével hogyan tehet
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

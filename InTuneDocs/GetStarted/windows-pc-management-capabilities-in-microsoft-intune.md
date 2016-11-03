@@ -4,7 +4,7 @@ description: "Ismerje meg az Intune funkcióit, amelyek akkor érhetők el, ha a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# A Windows-számítógépek felügyeletét szolgáló képességek az Intune szoftverügyfél használata esetén
+# Az Intune szoftverügyfél által biztosított felügyeleti funkciók Windows rendszerű számítógépekhez
 A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, mivel ez több funkciót biztosít. Ugyanakkor az Intune-szoftverügyféllel is felügyelheti a számítógépeket. Ekkor a következő funkciókat érheti el:
 
--   **Szoftverfrissítések kezelése** – Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
+-   **[Szoftverfrissítések kezelése](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
 
--   **Windows tűzfalházirend** – Ezzel biztosíthatja, hogy a vállalatnál használt számítógépeken ne legyen inaktív vagy nem megfelelően beállított Windows tűzfal.
+-   **[Windows tűzfalházirend](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - Ezzel biztosíthatja, hogy a vállalatnál használt számítógépeken ne legyen inaktív vagy nem megfelelően beállított Windows tűzfal.
 
--   **Kártevők elleni védelem** – Az Intune Endpoint Protection védelmet használ, amely segít a számítógépek kártevők elleni védelmében.
+-   **[Kártevők elleni védelem](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Az Intune Endpoint Protection védelmet használja, amely segít a számítógépes kártevők elleni védelmében.
 
--   **Távsegítség** – Az Intune lehetővé teszi a felhasználóknak, hogy az Intune beépített távoli asztali funkciója segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
+-   **[Távsegítség](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Az Intune lehetővé teszi a felhasználóknak, hogy az Intune beépített távoli asztali funkciója segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
--   **Szoftverlicenc-gazdálkodás** – Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
--   **Alkalmazások központi telepítése** – Szoftvereket telepíthet a felügyelt számítógépekre. Ha a szoftverügyféllel felügyeli a számítógépeket, akkor bizonyos alkalmazásfelügyeleti funkciók nem érhetők el.
+-   **[Szoftverlicenc-gazdálkodás](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
+-   **[Alkalmazások központi telepítése](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - Szoftvereket telepíthet a felügyelt számítógépekre. Ha a szoftverügyféllel felügyeli a számítógépeket, akkor bizonyos alkalmazásfelügyeleti funkciók nem érhetők el.
 
 
 Az Intune a szoftverügyfél akár 7000 Windows-eszközön való telepítését is támogatja.
@@ -74,6 +74,6 @@ Az Intune-szoftverügyfél telepítésére vonatkozó szoftverkövetelmények a 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

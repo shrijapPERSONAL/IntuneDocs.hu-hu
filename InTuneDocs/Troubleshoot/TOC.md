@@ -17,6 +17,11 @@
 ## [A feltételes hozzáférés hibaelhárítása](troubleshoot-conditional-access.md)
 ## [Az Exchange-összekötő hibaelhárítása](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Aug16_HO1-->
+## [Mobilalkalmazás-kezelési hibaelhárítás](troubleshoot-mam.md)
+
+## [A Lookout-integráció hibaelhárítása](troubleshooting-lookout-integration.md)
+
+
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # Az iOS-eszközök védelme a Microsoft Intune-hoz készült aktiválásizár-megkerüléssel
-A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója. Ha a felhasználó megnyitja a Find My iPhone alkalmazást egy eszközön, az aktiválási zár automatikusan engedélyezve lesz. Az engedélyezése után meg kell adni a felhasználó Apple ID azonosítóját és jelszavát ahhoz, hogy el lehessen végezni a következők bármelyikét: 
+A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 8.0 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója. Ha a felhasználó megnyitja a Find My iPhone alkalmazást egy eszközön, az aktiválási zár automatikusan engedélyezve lesz. Az engedélyezése után meg kell adni a felhasználó Apple ID azonosítóját és jelszavát ahhoz, hogy el lehessen végezni a következők bármelyikét: 
 
 -   A Find My iPhone alkalmazás kikapcsolása
 
@@ -43,7 +43,7 @@ Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megk
 > Az iOS-eszközök felügyelt módja lehetővé teszi az eszközök az Apple Configurator eszközzel való zárolását, így meghatározott üzleti célokra korlátozva annak funkcióit. A felügyelt mód általánosságban csak céges eszközökhöz használható.
 
 ## Az aktiválási zár kezelése az Intune-nal
-Az Intune a felügyelt és a felügyeletlen iOS 7.1 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. Kizárólag a felügyelt eszközök esetében az Intune képes lekérdezni az aktiválásizár-áthidaló kódot, és közvetlenül kiadni azt az eszköznek. Ha törölték az eszköz adatait, a kódot felhasználónévként használva és üres jelszóval közvetlenül hozzáférhet az eszközhöz.
+Az Intune a felügyelt és a felügyeletlen iOS 8.0 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. Kizárólag a felügyelt eszközök esetében az Intune képes lekérdezni az aktiválásizár-áthidaló kódot, és közvetlenül kiadni azt az eszköznek. Ha törölték az eszköz adatait, a kódot felhasználónévként használva és üres jelszóval közvetlenül hozzáférhet az eszközhöz.
 
 **Ennek a következők az üzleti előnyei**:
 
@@ -76,7 +76,7 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 
     -   Nincs engedélyezve
 
-    Az **Aktiválási zár állapota** mező a nem iOS 7.1 vagy újabb rendszerű eszközök esetén üres.
+    Az **Aktiválási zár állapota** mező a nem iOS 8.0 vagy újabb rendszerű eszközök esetén üres.
 
 -   Ha Csoportok nézetben jelöl ki egy eszközt, az aktiválási zár állapota az eszköz részletező ablaktábláján jelenik meg.
 
@@ -92,6 +92,6 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
