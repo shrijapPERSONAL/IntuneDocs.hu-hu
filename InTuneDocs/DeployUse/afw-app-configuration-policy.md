@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Android for Work-alkalmazások konfigurálása a mobilalkalmazások konfigurációs szabályzataival Microsoft Intune-ban
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Android for Work-alkalmazások konfigurálása a mobilalkalmazások konfigurációs szabályzataival Microsoft Intune-ban
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 A Microsoft Intune mobilalkalmazás-konfigurációs szabályzataival automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor a felhasználók iOS-alkalmazásokat futtatnak. Egy alkalmazás kérheti a felhasználótól például a következők megadását:
 
 -   Egyéni portszám.
@@ -37,7 +40,7 @@ Az alkalmazás-konfigurációs szabályzatok akkor használhatók, ha az alkalma
 
 Az alkalmazás-konfigurációs szabályzatot ugyanazon felhasználók részére telepíti központilag, akikhez a konfigurálni kívánt alkalmazást telepítette. A szabályzat-beállítások használatára az alkalmazás minden egyes futtatásakor sor kerül.
 
-## Mobilalkalmazás-konfigurációs házirend konfigurálása
+## <a name="configure-a-mobile-app-configuration-policy"></a>Mobilalkalmazás-konfigurációs házirend konfigurálása
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemet.
 
@@ -61,7 +64,7 @@ Az alkalmazás-konfigurációs szabályzatot ugyanazon felhasználók részére 
 Az új szabályzat megjelenik a **Konfigurációs szabályzatok** csomópontban.
 
 
-## Az alkalmazás-konfigurációs szabályzat telepítése
+## <a name="deploy-the-app-configuration-policy"></a>Az alkalmazás-konfigurációs szabályzat telepítése
 Miután létrehozta a mobilalkalmazás konfigurációs szabályzatát, azt telepítenie kell ugyanazokhoz a felhasználókhoz, akikhez azt az alkalmazást telepítette, amelyre a beállítások vonatkoznak.
 
 A szabályzatok telepítésével kapcsolatos tudnivalókért lásd a [konfigurációs szabályzat telepítéséről](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) szóló részt.
@@ -72,10 +75,6 @@ Amikor a telepített alkalmazást futtatják egy eszközön, akkor az a mobilalk
 
 > [!TIP]
 > Csak egy alkalmazás-konfigurációs szabályzatot telepítsen minden egyes alkalmazáshoz a felhasználók számára.
-
-
-
-
 
 
 
