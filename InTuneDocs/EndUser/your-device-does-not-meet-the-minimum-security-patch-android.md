@@ -2,9 +2,10 @@
 title: "Az eszköz nem felel meg a minimális biztonsági javítási szintnek | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: ee858ef820cb78e05078b24fff023f29134b1dcf
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: ee858ef820cb78e05078b24fff023f29134b1dcf
 
 Ha megjelenik „A minimális Android biztonsági javítási szint nincs konfigurálva” üzenet, akkor telepítenie kell a minimális biztonsági javítást, vagy annak egy későbbi verzióját. A rendszergazdának fontos, hogy ez telepítve legyen az Android-eszközökön a vállalati adatok védelme érdekében.
 
-A jelenlegi biztonsági javítási szint helye eltérő lehet attól függően, hogy milyen típusú Android-eszközt használ. Állapítsa meg, hogy Samsung Knox-eszközzel, vagy más típusú Android-eszközzel rendelkezik. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „Knox” szó, akkor nem Samsung Knox-eszközzel rendelkezik.
+A jelenlegi biztonsági javítási szint helye eltérő lehet attól függően, hogy milyen típusú Android-eszközt használ. Ellenőrizze, hogy Samsung Knox-eszközzel vagy más típusú Android-eszközzel rendelkezik-e. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „Knox” szó, akkor nem Samsung Knox-eszközzel rendelkezik.
 
 **A szoftververzió megállapítása:**
 
@@ -40,8 +41,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

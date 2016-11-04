@@ -3,6 +3,7 @@ title: "Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a V�
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
+ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
+ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
 
 
 ---
@@ -23,20 +24,18 @@ ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
 
 # Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a Vállalati portál használatával?
 
-Ha a Vállalati portál alkalmazás segítségével állítja alaphelyzetbe androidos eszközét, az azt jelenti, hogy az eszközön található összes alkalmazás, beállítás és személyes adat törlődik, és az eszközön visszaállnak a gyári alapértelmezett beállítások.
+Ha a Vállalati portál alkalmazás segítségével állítja alaphelyzetbe androidos eszközét, az eszközön található összes alkalmazás, beállítás és személyes adat törlődik,  és az eszközön visszaállnak a gyári alapértelmezett beállítások.
 
-A Samsung KNOX-eszközökön „szelektív törlés” is végezhető. Ehhez használja a Vállalati portál **eszközeltávolítás** funkcióját. A szelektív törlés funkció csak a következőket távolítja el:
+A Samsung KNOX-eszközökön „szelektív törlés” is végezhető. Ehhez használja a Vállalati portál **eszközeltávolítás** funkcióját. A szelektív törlés csak a következőket távolítja el:
 
-- A rendszergazda által elérhetővé tett vállalati alkalmazások
-- E-mailek, VPN és Wi-Fi
-- A rendszergazda azon képessége, hogy megköveteljen bizonyos beállításokat
+- A rendszergazda által elérhetővé tett vállalati alkalmazások.
+- E-mailek, VPN és Wi-Fi.
+- A rendszergazda azon képessége, hogy megköveteljen bizonyos beállításokat.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

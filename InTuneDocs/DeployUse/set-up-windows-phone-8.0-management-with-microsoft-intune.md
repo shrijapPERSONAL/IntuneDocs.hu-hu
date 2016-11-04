@@ -3,6 +3,7 @@ title: "Windows Phone 8.0 rendszerű telefonok kezelésének beállítása | Mic
 description: "Mobileszközök felügyeletének (MDM) engedélyezése a Microsoft Intune-nal Windows Phone 8.0-telefonok esetén."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 A Windows Phone 8.0 rendszerű eszközökön az Intune Vállalati portál alkalmazás telepítéséhez, valamint az eszközfelügyelet lehetővé tételéhez Symantec-tanúsítvány szükséges. Ugyancsak tanúsítvány szükséges az üzletági alkalmazások aláírásához. Ez a témakör kizárólag a Windows Phone 8.0 rendszerre vonatkozik. A Windows Phone 8.1 és újabb rendszerű eszközök (ideértve a Windows 10 Mobile rendszert is) felügyeletével kapcsolatban olvassa el a [Windows Phone rendszerű eszközök regisztrálásának beállítása](set-up-windows-phone-management-with-microsoft-intune.md) című témakört.
 
 > [!IMPORTANT]
-> 2016 szeptemberétől a Vállalati portál alkalmazást nem lehet letölteni a Windows 8.0-s és a Windows Phone 8.0-s eszközökre.
+> 2016 szeptemberétől a Windows Phone 8-ra és a Windows 8-ra készült Munkahelyi portál alkalmazás nem érhető el.
 
 -   **Windows Phone 8** – Tanúsítvány szükséges
 -   A **Windows Phone 8.1 és a Windows 10 Mobile** kizárólag a következő esetekben igényel tanúsítványt:
@@ -183,6 +184,6 @@ Az Intune-t tartalmazó Windows Phone 8.1-es telefonokra a Windows Phone Áruhá
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

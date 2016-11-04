@@ -3,6 +3,7 @@ title: "Mi történik a Vállalati portál alkalmazás telepítésekor és az An
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 Miután telepítette a Vállalati portál alkalmazást, és regisztrálta androidos eszközét az Intune-ban, a következőkre használhatja a Vállalati portál alkalmazást:
 
--   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat
+-   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
--   Letöltheti a vállalati alkalmazásokat a vállalati portálról
+-   Letöltheti a vállalati alkalmazásokat a vállalati portálról.
 
--   Automatikusan konfigurálhatja vállalati e-mail fiókját
+-   Automatikusan konfigurálhatja vállalati e-mail-fiókját.
 
--   Ha elveszíti a telefonját, visszaállíthatja a gyári beállításait
+-   Ha elveszíti vagy ellopják a telefonját, visszaállíthatja a gyári beállításait.
 
 Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának az eszköz elérésére. A következőkre nyílik lehetőség:
 
@@ -39,7 +40,7 @@ Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának a
 
 -   Az összes céges adat eltávolítása. A saját adatok és beállítások nem törlődnek.
 
--   Követelmények állíthatóak be az eszközön, például jelszó vagy PIN-kód használata a vállalati adatok védelme érdekében. Az IT-rendszergazda korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót az eszközről, ha túl sokszor próbálkozott.
+-   Követelményeket határozhat meg az eszközön, például a jelszó vagy PIN-kód használatát a vállalati adatok védelme érdekében. Az IT-rendszergazda azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót az eszközről, ha túl sokszor próbálkozott.
 
 -   Ehhez el kell fogadnia a használati feltételeket.
 
@@ -47,19 +48,18 @@ Androidos eszköz regisztrálásakor jogosultságot ad az IT rendszergazdának a
 
 -   Kényszerítheti az eszközön tárolt adatok titkosítását azok védelme érdekében arra az esetre, ha az eszközt elvesztik vagy ellopják.
 
--   Miután felvette az eszközt a vállalati portálra, nagyjából nyolcóránként ezekre a műveletekre kerül sor az eszközön:
+Miután felvette az eszközt a vállalati portálra, nagyjából nyolcóránként ezekre a műveletekre kerül sor az eszközön:
 
-    -   Az IT rendszergazda által elérhetővé tett házirendek és alkalmazásfrissítések letöltése.
+-   Az IT rendszergazda által elérhetővé tett szabályzatok és alkalmazásfrissítések letöltése.
 
-    -   A hardverleltár változásainak elküldése (a változásokban nem szerepelnek személyes adatok).
+-   A hardverleltár változásainak elküldése. (Ezek a frissítések nem tartalmaznak személyes adatokat.)
 
-    -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése (a változásokban nem szerepelnek személyes adatok).
+-   A vállalati alkalmazások leltárában bekövetkezett változások elküldése. (Ezek a frissítések nem tartalmaznak személyes adatokat.)
 
 Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

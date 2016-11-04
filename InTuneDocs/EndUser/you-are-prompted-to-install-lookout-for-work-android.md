@@ -3,8 +3,9 @@ title: "A rendszer felszólítja a Lookout for Work telepítésére az Android-e
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # A rendszer felszólítja a Lookout for Work telepítésére
 
-A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához, amely az esetleges fenyegetések felderítésével segít az eszköz védelmében.
+A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
+
+Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasható hibaelhárítási lépéseket.
 
 
 **A következőket kell tennie:**
@@ -35,7 +38,7 @@ A rendszergazda csak a Lookout for Work alkalmazás telepítését követően te
 
     ![koppintson az Elfogadás gombra, hogy a Lookout for Work hozzáférhessen eszközéhez](./media/lookout-accept-store-permissions-android.png)
 
-3. Nyissa meg a Lookout for Worköt és koppintson az **Aktiválás** gombra.
+3. Nyissa meg a Lookout for Worköt, és koppintson az **AKTIVÁLÁS** gombra.
 
     ![nyissa meg a Lookout for Worköt és koppintson az Aktiválás gombra](./media/lookout-activate-button-android.png)
 
@@ -51,17 +54,17 @@ A rendszergazda csak a Lookout for Work alkalmazás telepítését követően te
 
     ![koppintson az Elfogadás gombra, hogy engedélyezze a Lookout for Wordnek, hogy beolvassa a profilját](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    A megjelenő képernyőn látható, hogy a Lookout for Work éppen csatlakozik a Lookout Security Cloudhoz.
+    A képernyőn látható, hogy a Lookout for Work éppen csatlakozik a Lookout Security Cloudhoz.
 
 7. Ellenőrizze azon elemeket, amelyek arról tájékoztatnak, hogy a Lookout miként védi eszközét, majd koppintson az **OK** gombra.
 
     ![tekintse át, hogy a Lookout for Work miként védi eszközét](./media/lookout-how-it-protects-your-device-android.png)
 
-    Ha az alábbi képernyőt látja, akkor a Lookout telepítve van és létrejött a kapcsolat.
+    Ha az alábbi képernyőt látja, akkor a Lookout telepítése befejeződött, és létrejött a kapcsolat.
 
     ![sikeresen létrejött a kapcsolat a Lookout for Workhöz](./media/lookout-you-are-now-connected-android.png)
 
-    A Lookout for Work rögtön elkezdi felderíteni az eszközén található biztonsági fenyegetéseket. Ha nem talál egyet sem, az alábbi képernyő jelenik meg.
+    A Lookout for Work azonnal elkezd biztonsági fenyegetéseket keresni az eszközén. Ha nem talál egyet sem, az alábbi képernyő jelenik meg.
 
     ![A Lookout for Work nem talált biztonsági fenyegetést](./media/lookout-scan-no-threats-found-android.png)
 
@@ -71,13 +74,14 @@ A rendszergazda csak a Lookout for Work alkalmazás telepítését követően te
 
     Ha a Lookout for Work biztonsági fenyegetést talál eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
 
+**Ha sikertelen a telepítés**
+
+Előfordul, hogy a telepítés Öntől független technikai okok miatt nem sikerül. Ha ez történik, próbálja meg a Play Áruházból telepíteni a Lookout for Worköt: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

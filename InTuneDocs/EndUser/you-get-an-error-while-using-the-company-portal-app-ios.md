@@ -3,6 +3,7 @@ title: "Hibaüzenetet kap a Vállalati portál alkalmazás használatakor | Micr
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
 
 
 ---
@@ -25,17 +26,14 @@ ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
 
 Ha iOS-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazás használata során, a probléma megoldásához elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ez többféleképpen is lehetséges:
 
--   A hibáról értesítő üzenetek **Jelentés** gombjára koppintva.
+-   A hibáról értesítő üzenetben koppintson a **Jelentés** gombra.
 
--   A Vállalati portál alkalmazás **Névjegy** képernyőjén a **Diagnosztikai jelentés küldése** elemre koppintva.
+-   A Munkahelyi portál alkalmazás **Névjegy** képernyőjén koppintson a **Diagnosztikai jelentés küldése** elemre.
 
--   Miközben nyitva van a Vállalati portál alkalmazás, az eszköz megrázása, majd a diagnosztikai riasztás megjelenése után az **E-mail** elemre koppintva. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
-
-
+-   A Munkahelyi portál alkalmazásba belépve rázza meg az eszközt, majd a diagnosztikai riasztás megjelenésekor koppintson az **E-mail küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

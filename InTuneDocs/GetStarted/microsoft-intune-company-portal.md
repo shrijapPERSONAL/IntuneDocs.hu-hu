@@ -3,18 +3,19 @@ title: "A Microsoft Intune Vállalati portál | Microsoft Intune"
 description: "Intune Vállalati portál beállítása"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Néhány művelet, amelyeket a felhasználók elvégezhetnek a Vállalati portá
 
 Ahhoz, hogy a felhasználók hozzáférhessenek a Vállalati portálhoz, a felhasználók fiókjának az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatához szükséges licenccel, illetve **Engedélyezett** bejelentkezési állapottal kell rendelkezniük. További információ a [felhasználók hozzáadásával](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) és az [előfizetési licencek hozzárendelésével](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) kapcsolatban. A [Vállalati portál webhelyét](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) a vállalati emblémával, a használati feltételekkel és más elemekkel testre is szabhatja. A felhasználók a Vállalati portált úgy érhetik el, hogy felkeresik a webhelyet, és bejelentkeznek a munkahelyi vagy iskolai fiókjukkal.
 
+> [!NOTE]
+> A Munkahelyi portál alkalmazás nem érhető el minden országban.
+
+> __iOS__: az iOS rendszerre készült Munkahelyi portál alkalmazást az Apple iOS App Store áruházban [elérhető összes régióban](https://go.microsoft.com/fwlink/?linkid=831284) megtalálható.
+
+> __Android__: a Munkahelyi portál alkalmazás androidos verziója nem érhető el a következő országokban: Antigua és Barbuda, Aruba, Benin, Burkina Faso, Kambodzsa, Kína, Kuba, Gabon, Bissau-Guinea, Haiti, Irán, Laosz, Mali, Mozambik, Myanmar (Burma), Holland Antillák, Niger, Pápua Új-Guinea, Szudán, Togo. Ezekben az országokban alternatív megoldásként [közvetlenül is telepíthető a Munkahelyi portál alkalmazás androidos verziója](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### További információ
 [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

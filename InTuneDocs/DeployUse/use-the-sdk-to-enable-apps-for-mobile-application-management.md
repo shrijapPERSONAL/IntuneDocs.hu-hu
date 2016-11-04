@@ -1,8 +1,9 @@
 ---
 title: "Alkalmazások előkészítése a MAM használatára az SDK segítségével | Microsoft Intune"
-description: 
+description: "Ez a témakör egy rövid áttekintést nyújt arról, hogy miért érdemes az Intune SDK-t használnia."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
@@ -39,6 +40,6 @@ Az SDK-ról az [Áttekintés](/intune/develop/intune-app-sdk) lapon olvashat tov
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

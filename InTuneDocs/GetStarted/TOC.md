@@ -17,7 +17,7 @@
 
 ## [Áttérés az Intune-ra](migrate-to-intune.md)
 
-## [Az Intune bemutatása](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Rövid útmutató](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Bejelentkezés az Intune-ba](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Állítson be egy egyéni tartománynevet](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Az AD szinkronizálása és felhasználók felvétele](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [A vállalati portál testreszabása](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Mobileszközök regisztrálása és alkalmazások telepítése](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfiguráció utáni feladatok](post-configuration-tasks.md)
+
+## [Rövid útmutatók](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Rövid útmutató: Céges adatszivárgások megelőzése az Office 365 mobilalkalmazásaiban](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Rövid útmutató: Céges adatok védelme adattitkosítással](protect-data-encryption.md)
+### [Rövid útmutató: Mobilalkalmazások közzététele a felhasználók számára](publish-mobile-apps-to-users.md)
+### [Rövid útmutató: A mobileszközök e-mail-konfigurációjának leegyszerűsítése](simplify-email-configuration-on-mobile-devices.md)
+### [Rövid útmutató: Windows rendszerű számítógépek védelme a kártevők ellen](protect-pcs-against-malware-threats.md)
 
 ## [Az Intune üzembe helyezésének bevezetési szakaszai](rollout-phases-for-microsoft-intune-deployment.md)
 ### [A projekt hatóköre](project-scope.md)
@@ -42,6 +49,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

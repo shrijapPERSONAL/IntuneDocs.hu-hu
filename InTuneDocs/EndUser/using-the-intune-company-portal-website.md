@@ -3,6 +3,7 @@ title: "Az Intune Vállalati portál használata | Microsoft Intune"
 description: "A cikk ismerteti a Vállalati portál webhelyet, valamint hivatkozásokat biztosít a webhelyen keresztül elvégezhető feladatok lépéseivel kapcsolatban"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
+ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
+ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 ---
@@ -36,7 +37,7 @@ A következőkre használhatja a Vállalati portál webhelyét:
 
 -   [Eszköz manuális szinkronizálása a lassú alkalmazástelepítések felgyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
--   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította.
+-   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította
 
 -   Az eszköz adatainak megtekintése, beleértve, hogy megfelel-e a munkahelye vagy iskolája házirendjeinek
 
@@ -50,6 +51,6 @@ A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat v�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
