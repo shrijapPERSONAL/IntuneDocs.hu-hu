@@ -3,6 +3,7 @@ title: "Regisztráció a Microsoft Intune 30 napos próbaidőszakára | Microsof
 description: "Az Intune 30 napos ingyenes próbaidőszakára való feliratkozás, valamint mindaz, amit a feliratkozás előtt figyelembe kell vennie"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,17 +14,17 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
 
 ---
 
-# Regisztráció a Microsoft Intune 30 napos próbaidőszakára
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Regisztráció a Microsoft Intune 30 napos próbaidőszakára
 
 A Microsoft Intune 30 napos ingyenes próbaidőszakának a mobileszközök és számítógépek kezelése céljából történő beállítása gyorsan és könnyen elvégezhető. Néhány egyszerű lépésben felvehet akár 100 felhasználót vagy eszközt is, beállíthatja a csoportokat, konfigurálhatja a megfelelőségi szabályzatokat, valamint regisztrálhatja az eszközöket és a számítógépeket, és megkezdheti a felügyeletüket. Ebben a témakörben megismerkedhet az Intune-próbaidőszak használatának első lépéseivel, és a szolgáltatás áttekintése révén kiértékelheti az Intune szolgáltatásait és funkcióit.
 
-## Mire kell figyelni a regisztráció előtt?
+## <a name="what-to-consider-before-you-sign-up"></a>Mire kell figyelni a regisztráció előtt?
 
 Mielőtt regisztrálna, vagy bejelentkezne az Intune szolgáltatásba, gondolja át az alábbiakat:
 
@@ -35,9 +36,9 @@ Mielőtt regisztrálna, vagy bejelentkezne az Intune szolgáltatásba, gondolja 
 
 |ÚJ fiókot regisztráljon, ha az alábbi feltételek bármelyike fennáll:|Jentkezzen be MUNKAHELYI vagy ISKOLAI fiókjával az alábbi esetben:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Ön nem rendelkezik munkahelyi vagy iskolai fiókkal.** A mennyiségi licencszerződés Microsofttal történő megkötésekor vagy az Office 365 szolgáltatásra való előfizetéskor munkahelyi vagy iskolai fiókot biztosítunk az Ön számára. Ha a szervezet nem áll Nagyvállalati szerződésben vagy ezzel egyenértékű mennyiségi licencszerződésben a Microsofttal (vagy rendelkezik Office 365-fiókkal), akkor nem rendelkezik olyan Microsoft Online Services-fiókkal, mellyel be tud jelentkezni a Microsoft Online Services szolgáltatásba.<br /><br />**A 30 napos próbaidőszakot követően töröljük Intune-bérlői jogosultságát.** Akkor hozzon létre új fiókot, ha az Intune ingyenes próba-előfizetését csak tesztelési célra használja, és azt tervezi, hogy a próbaidőszak után újra elvégzi az Intune szolgáltatás beállítását és az eszközök kiépítését. Ez a lehetőség ajánlott, ha a System Center 2012 Configuration Manager alkalmazással tervezi használni az Intune szolgáltatást.<br /><br />Ha létrehoz egy új fiókot, később ezen fiók kezeléséhez vagy meglévő mennyiségi licencszerződésekkel való összevonásához nem használhat meglévő munkahelyi vagy iskolai fiókot.|**Rendelkezik egy mennyiségi licencszerződéshez vagy Office 365-előfizetéshez biztosított munkahelyi vagy iskolai fiókkal, az Intune kiértékeléséhez pedig ezt a próbaidőszakot használja.**<br /><br />Ha egy meglévő fiókkal állítja be az Intune szolgáltatást, a lépések elvégzése előtt ajánlott elolvasni a [Az eszközkezelés módjának kiválasztása](/intune/get-started/choose-how-to-manage-devices) című témakört.|
+|**Ön nem rendelkezik munkahelyi vagy iskolai fiókkal.** A mennyiségi licencszerződés Microsofttal történő megkötésekor vagy az Office 365 szolgáltatásra való előfizetéskor munkahelyi vagy iskolai fiókot biztosítunk az Ön számára. Ha a szervezet nem áll Nagyvállalati szerződésben vagy ezzel egyenértékű mennyiségi licencszerződésben a Microsofttal (vagy rendelkezik Office 365-fiókkal), akkor nem rendelkezik olyan Microsoft Online Services-fiókkal, mellyel be tud jelentkezni a Microsoft Online Services szolgáltatásba.<br /><br />**A 30 napos próbaidőszakot követően törölni kívánja az Intune-bérlőt.** Akkor hozzon létre új fiókot, ha az Intune ingyenes próba-előfizetését csak tesztelési célra használja, és azt tervezi, hogy a próbaidőszak után újra elvégzi az Intune szolgáltatás beállítását és az eszközök kiépítését. Ez a lehetőség ajánlott, ha a System Center 2012 Configuration Manager alkalmazással tervezi használni az Intune szolgáltatást.<br /><br />Ha létrehoz egy új fiókot, később ezen fiók kezeléséhez vagy meglévő mennyiségi licencszerződésekkel való összevonásához nem használhat meglévő munkahelyi vagy iskolai fiókot.|**Rendelkezik egy mennyiségi licencszerződéshez vagy Office 365-előfizetéshez biztosított munkahelyi vagy iskolai fiókkal, az Intune kiértékeléséhez pedig ezt a próbaidőszakot használja.**<br /><br />Ha egy meglévő fiókkal állítja be az Intune szolgáltatást, a lépések elvégzése előtt ajánlott elolvasni a [Az eszközkezelés módjának kiválasztása](/intune/get-started/choose-how-to-manage-devices) című témakört.|
 
-## Regisztráljon az Intune-ra, vagy jelentkezzen be a szolgáltatásba
+## <a name="sign-up-or-sign-in-to-intune"></a>Regisztráljon az Intune-ra, vagy jelentkezzen be a szolgáltatásba
 
 1.  Először [ide kattintva látogasson el az Intune regisztrációs oldalára](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -52,7 +53,7 @@ Mielőtt regisztrálna, vagy bejelentkezne az Intune szolgáltatásba, gondolja 
 
 A bejelentkezési űrlap kitöltése és a Microsoft Online Előfizetői Szerződés feltételeinek elfogadása után a bérlői rendszergazda fiókjával automatikusan bejelentkeztetjük az Office 365 felügyeleti központba. Emellett egy fiókadatait tartalmazó e-mailt is küldünk a regisztráció során megadott e-mail címre. Az e-mail megerősíti, hogy az előfizetése aktív.
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 1. lépését.
 
 >[!div class="step-by-step"]
@@ -61,6 +62,6 @@ Gratulálunk! Befejezte a *Microsoft Intune próbaverzió* útmutatójának 1. l
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Configure and deploy mobile application management policies in the Microsoft Intune console
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 A Microsoft Intune mobilalkalmazás-felügyeleti (MAM) szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival. Például korlátozhatja a felügyelt alkalmazások kivágási, másolási és beillesztési műveleteit, vagy konfigurálhat egy alkalmazást arra, hogy az összes webes hivatkozás egy felügyelt böngészőben nyíljon meg.
 
 A mobilalkalmazás-kezelési házirendek a következőket támogatják:
@@ -59,7 +59,7 @@ Az Outlook alkalmazás használata esetén például:
 > [!TIP]
 > Ha a Configuration Managerrel használja az Intune-t, olvassa el az [Alkalmazások vezérlése mobilalkalmazás-felügyeleti szabályzatokkal a Configuration Managerben](https://technet.microsoft.com/library/mt131414.aspx) című témakört.
 
-## Alkalmazás létrehozása és telepítése mobilalkalmazás-kezelési házirenddel
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Alkalmazás létrehozása és telepítése mobilalkalmazás-kezelési házirenddel
 
 -   **1. lépés:** Hivatkozás beszerzése egy házirend által kezelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához.
 
@@ -71,15 +71,15 @@ Az Outlook alkalmazás használata esetén például:
 
 -   **5. lépés:** Az alkalmazás telepítésének figyelése.
 
-## 1. lépés: Hivatkozás beszerzése egy szabályzat által felügyelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>1. lépés: Hivatkozás beszerzése egy szabályzat által felügyelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához
 
 Az alkalmazásáruházban keresse meg és jegyezze fel a telepíteni kívánt, szabályzat által felügyelt alkalmazásnak az URL-címét. Az iPadhez készült Microsoft Word alkalmazás URL-címe például a következő: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## 2. lépés: Az alkalmazás közzététele a felhőalapú tárhelyen
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>2. lépés: Az alkalmazás közzététele a felhőalapú tárhelyen
 Amikor közzétesz egy felügyelt alkalmazást, az eljárások különbözhetnek attól függően, hogy az alkalmazás szabályzat által felügyelt-e, vagy olyan alkalmazás, amelynek a feldolgozása a Microsoft Intune iOS rendszerhez készült alkalmazásburkoló eszközével történt.
 
-#### Házirend által kezelt alkalmazás közzététele
+#### <a name="to-publish-a-policy-managed-app"></a>Házirend által kezelt alkalmazás közzététele
 
 1.  Ha készen áll rá, hogy feltöltse az alkalmazást a felhőtárhelyre, járjon el a következő cikk utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -93,7 +93,7 @@ Ha befejeződött a feltöltés, a feltöltött alkalmazás **Szoftver tulajdons
 
 Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folytassa a 3. lépéssel.
 
-#### A Microsoft Intune alkalmazásburkoló eszközével feldolgozott alkalmazások közzététele
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>A Microsoft Intune alkalmazásburkoló eszközével feldolgozott alkalmazások közzététele
 
 1.  Ha készen áll rá, hogy feltöltse az alkalmazást a felhőtárhelyre, járjon el a következő cikk utasításai szerint: [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -105,13 +105,13 @@ Ha befejeződött a feltöltés, a feltöltött alkalmazás **Szoftver tulajdons
 
 Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folytassa a 3. lépéssel.
 
-## 3. lépés: Mobilalkalmazás-kezelési házirend létrehozása
+## <a name="step-3-create-a-mobile-application-management-policy"></a>3. lépés: Mobilalkalmazás-kezelési házirend létrehozása
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemet.
 
 2.  Konfigurálja és alkalmazza az alábbi **szoftverszabályzatok** egyikét attól függően, hogy milyen típusú eszközhöz szeretne alkalmazásokat konfigurálni:
 
-    -   **Mobilalkalmazás-kezelési házirend (Android 4 és újabb)**
+    -   **Mobilalkalmazás-felügyeleti szabályzat (Android 4 és újabb verziók)**
 
     -   **Mobilalkalmazás-kezelési szabályzat (iOS 8.0 és újabb verziók)**
 
@@ -142,7 +142,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
-## 4. lépés: Az alkalmazás társítása egy mobilalkalmazás-felügyeleti szabályzattal, majd az alkalmazás telepítése
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>4. lépés: Az alkalmazás társítása egy mobilalkalmazás-felügyeleti szabályzattal, majd az alkalmazás telepítése
 Gondoskodjon arról, hogy az **Üzembe helyezés kezelése** párbeszédpanel **Mobilalkalmazás-kezelés** lapján a mobilalkalmazás-felügyeleti szabályzat kiválasztásával társítja a szabályzatot az alkalmazással.
 
 További információt az [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md) című témakörben találhat.
@@ -150,7 +150,7 @@ További információt az [Alkalmazások telepítése a Microsoft Intune-ban](de
 > [!IMPORTANT]
 > Ha az eszköz Intune-regisztrációját megszüntetik, a szabályzatok alkalmazásokból való eltávolítása nem történik meg. A szabályzatokkal felügyelt alkalmazások megőrzik a szabályzat beállításait még azt követően is, hogy az alkalmazást eltávolították és újratelepítették.
 
-### Teendők, ha egy alkalmazás már üzembe van helyezve az eszközökön
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Teendők, ha egy alkalmazás már üzembe van helyezve az eszközökön
 Előfordulhat, hogy egy alkalmazás telepítésekor a célcsoportba tartozó felhasználók vagy eszközök egyike már rendelkezik a telepített alkalmazás nem felügyelt verziójával, például telepítette a Microsoft Wordöt az alkalmazásáruházból.
 
 Ilyenkor meg kell kérnie a felhasználót, hogy manuálisan távolítsa el a nem felügyelt verziót, hogy telepíthető legyen az Ön által konfigurált felügyelt verzió.
@@ -160,10 +160,10 @@ Az iOS 9-es vagy újabb verziójával futó eszközök esetében az Intune autom
 > [!TIP]
 > Ha az eszköz felügyelt módban van, az Intune a felhasználó engedélyének kikérése nélkül átveszi a meglévő alkalmazás felügyeletét.
 
-## 5. lépés: Az alkalmazás telepítésének figyelése
+## <a name="step-5-monitor-the-app-deployment"></a>5. lépés: Az alkalmazás telepítésének figyelése
 Miután létrehozott és telepített egy mobilalkalmazás-felügyeleti szabályzattal társított alkalmazást, a következő eljárásokkal figyelheti az alkalmazást, és feloldhatja az esetleges szabályzatütközéseket.
 
-#### A telepítés állapotának megtekintése
+#### <a name="to-view-the-status-of-the-deployment"></a>A telepítés állapotának megtekintése
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Csoportok** &gt; **Áttekintés** lehetőséget.
 
@@ -181,7 +181,7 @@ Miután létrehozott és telepített egy mobilalkalmazás-felügyeleti szabályz
 
 6.  Ha azonosított egy ütközést, felülvizsgálhatja az ütköző szabályzatbeállításokat, vagy alkalmazhat csupán egy szabályzatot az alkalmazásra és a felhasználóra.
 
-### Házirend-ütközések feloldása
+### <a name="how-policy-conflicts-are-resolved"></a>Házirend-ütközések feloldása
 Ha a felhasználó vagy eszköz első telepített példányán ütközik egy mobilalkalmazás-felügyeleti szabályzat, az ütközésben lévő beállításérték el lesz távolítva az alkalmazásra alkalmazott szabályzatból, és az alkalmazás egy beépített ütközési értéket fog használni.
 
 Ha az alkalmazás vagy felhasználó későbbi telepített példányain ütközik egy mobilalkalmazás-felügyeleti szabályzat, az ütközésben lévő beállításérték nem fog frissülni az alkalmazásra alkalmazott mobilalkalmazás-felügyeleti szabályzaton, az alkalmazás pedig a beállítás meglévő értékét fogja használni.
@@ -194,6 +194,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

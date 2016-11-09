@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# Bevezetés a Microsoft Intune App SDK használatába
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
 Ez az első lépéseket bemutató útmutató segítséget nyújt a mobilalkalmazás gyors engedélyezéséhez a Microsoft Intune-beli mobilalkalmazás-felügyelet használatával. Javasoljuk, hogy először tájékozódjon az Intune App SDK előnyeiről, amelyekről [Az Intune App SDK áttekintése](intune-app-sdk.md) című témakörben olvashat bővebben.
 
 Ez az útmutató végigvezeti azokon a fő lépéseken, amelyekkel engedélyezheti az alkalmazás Microsoft Intune mobilalkalmazás-felügyeleten keresztüli felügyeletét. Az Intune App SDK a különböző platformokon hasonló lehetőségeket támogat, és célja, hogy egységes, platformfüggetlen felhasználói élményt teremtsen a rendszergazdáknak. A platformok korlátozásai miatt azonban bizonyos funkciók támogatásában kisebb különbségek vannak.
 
-# Első lépések
+# <a name="getting-started"></a>Első lépések
 
-## Áruházbeli alkalmazás regisztrálása a Microsoftnál
+## <a name="register-your-store-app-with-microsoft"></a>Áruházbeli alkalmazás regisztrálása a Microsoftnál
 
 **Ha az alkalmazás a cég belső alkalmazása, és nem fog megjelenni nyilvános alkalmazás-áruházban**:
 
@@ -55,7 +55,7 @@ Ha a jövőben változik az áruházbeli alkalmazás mélyhivatkozása, újra ke
 
 
 
-## Az SDK-fájlok letöltése
+## <a name="download-the-sdk-files"></a>Az SDK-fájlok letöltése
 
 A natív iOS-hez, illetve Androidhoz készült Intune App SDK-k egy Microsoft GitHub-fiókban találhatók. Az alábbi két nyilvános adattár tartalmazza az iOS-hez, illetve az Androidhoz készült SDK-fájlokat:
 
@@ -73,7 +73,7 @@ Javasoljuk, hogy regisztráljon GitHub-fiókot, hogy leágazhasson az adattárak
 
 
 
-## iOS vagy Android rendszerhez készült mobilalkalmazás engedélyezése a MAM-hoz az SDK használatával
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>iOS vagy Android rendszerhez készült mobilalkalmazás engedélyezése a MAM-hoz az SDK használatával
 
 Az alábbiakra lesz szüksége az Intune App SDK-nak egy natív iOS-alkalmazásba történő integrálásához: 
 
@@ -87,7 +87,7 @@ Az alábbiakra lesz szüksége az Intune App SDK-nak egy natív Android-alkalmaz
 Az Intune App SDK Xamarin összetevő és az Intune App SDK Cordova beépülő modul dokumentációját a vonatkozó GitHub-tárakban találja. 
 
 
-## Telemetria konfigurálása az alkalmazásra vonatkozóan
+## <a name="configuring-telemetry-for-your-app"></a>Telemetria konfigurálása az alkalmazásra vonatkozóan
 
 A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
@@ -97,7 +97,7 @@ A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
 * **Androidhoz készült Intune App SDK**: A telemetriai adatokat a program nem naplózza az SDK használatával.
 
-## A MAM használatát támogató alkalmazás tesztelése a Microsoft Intune-nal
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>A MAM használatát támogató alkalmazás tesztelése a Microsoft Intune-nal
 
 Miután végrehajtotta az iOS vagy Android alkalmazásnak az Intune App SDK-való integrálásához szükséges lépéseket, meg kell győződnie arról, hogy a végfelhasználóknál és a rendszergazdánál engedélyezve vannak és működnek az alkalmazásfelügyeleti szabályzatok. Az integrált alkalmazás teszteléséhez a következőkre lesz szüksége:
 
@@ -112,6 +112,6 @@ Miután végrehajtotta az iOS vagy Android alkalmazásnak az Intune App SDK-val�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

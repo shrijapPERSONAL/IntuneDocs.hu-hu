@@ -3,6 +3,7 @@ title: "Egyéb beállítások és kiegészítő funkciók az Intune-próbaidősz
 description: "Ismerteti azon riasztásokat, értesítéseket, jelentéseket, valamint általános Intune-képességeket, amelyeket érdemes ismerni az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
 
 
 ---
 
-# Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez
 
-## Riasztások, értesítések és jelentések
+## <a name="alerts-notifications-and-reports"></a>Riasztások, értesítések és jelentések
 Az Intune felügyeleti konzolon **riasztások** segítségével mérheti fel gyorsan a szervezetben kezelt eszközök általános állapotát. A riasztásokat konfigurálja és testreszabhatja úgy, hogy csak a szüskéges adatokat jelenítsék meg a szervezetről, és csak ezekről adjanak jelentést. Beállíthatja, hogy az egyes riasztások engedélyezve legyenek-e vagy letiltva, beállíthatja a súlyosságukat, a megjelenítési küszöbértékkel meghatározhatja, hogy milyen gyakran kell kiváltódnia egy riasztási eseménynek ahhoz, hogy megjelenjen egy riasztás, és konfigurálhat bizonyos riasztástípusokra jellemző beállításokat is.
 
 Az**értesítések** arra szolgálnak, hogy e-mailben tájékoztassák a rendszergazdákat (és más felhasználókat) meghatározott típusú riasztások esetén.
@@ -30,14 +31,14 @@ A**jelentések** számos kérdés megválaszolására szolgálnak, például hog
 
 A riasztásokkal, értesítésekkel és jelentésekkel kapcsolatos további tudnivalókért lásd a [Figyelés és jelentéskészítés a Microsoft Intune-ban](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune) című témakört.
 
-## Az Intune képességei
+## <a name="intune-capabilities"></a>Az Intune képességei
 Az Intune az ebben a rövid útmutatóban ismertetettek mellett számos további funkciót kínál. Ilyen funkciók többek között például a következők:
 
 -   **Az Office 365 és az Exchange szolgáltatáshoz való hozzáférés szabályozása.** További információkért lásd: [Alkalmazások Exchange Online-hoz való hozzáférésének kezelése](https://technet.microsoft.com/library/dn705841.aspx) és [Alkalmazások Office 365-szolgáltatásokhoz való hozzáférésének kezelése](https://technet.microsoft.com/library/dn818907.aspx).
 
 -   **Vállalati tulajdonú iOS rendszerű eszközök kezelése.** Lásd: [A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
--   **Mobilalkalmazások kezelése.** A felügyelt mobilalkalmazások együttműködnek a mobilalkalmazás-kezelési házirendekkel bizonyos alkalmazásműveletek, például a másolás és beillesztés, illetve a képernyőfelvétel-készítés korlátozása érdekében. Lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) és [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies).
+-   **Mobilalkalmazás-kezelés** A felügyelt mobilalkalmazások együttműködnek a mobilalkalmazás-kezelési házirendekkel bizonyos alkalmazásműveletek, például a másolás és beillesztés, illetve a képernyőfelvétel-készítés korlátozása érdekében. Lásd: [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) és [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies).
 
 -   **A vállalati erőforrásokhoz való hozzáférés szabályozása.** Tanúsítványokat, e-mail profilokat, VPN-profilokat és Wi-Fi profilokat telepíthet mobileszközökre, ezzel megkönnyítve és gyorsabbá téve a mobileszközök beállítását. A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-ban](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
@@ -49,7 +50,7 @@ További információ az Intune új funkcióiról: [Újdonságok a Microsoft Int
 
 A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben olvashat bővebben, illetve hozzászólhat az Intune szolgáltatással kapcsolatos témákhoz a [Microsoft Intune-fórumokon](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! A *Microsoft Intune próbaverzió* útmutatójának végére ért.
 
 >[!div class="step-by-step"]
@@ -58,6 +59,6 @@ Gratulálunk! A *Microsoft Intune próbaverzió* útmutatójának végére ért.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

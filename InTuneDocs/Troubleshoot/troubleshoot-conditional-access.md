@@ -4,7 +4,7 @@ description: "A teendők abban az esetben, ha a felhasználók nem tudnak hozzá
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# A feltételes hozzáférés hibaelhárítása
+# <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
 
 Az e-mailek vagy a SharePoint megnyitásakor a felhasználóknak a rendszer általában egy regisztrálási kérelmet jelenít meg. A kérés a vállalati portálra irányítja a felhasználót.
 
 Ez a témakör ismerteti a teendőket abban az esetben, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével.
 
 
-## A sikeres feltételes hozzáférés alapjai
+## <a name="the-basics-for-success-in-conditional-access"></a>A sikeres feltételes hozzáférés alapjai
 
 A feltételes hozzáférés megfelelő működéséhez az alábbi feltételeknek kell teljesülnie:
 
 -   Az eszközt az Intune-nak kell felügyelnie
 -   Az eszköznek regisztrálva kell lennie az Azure Active Directoryban (AAD). A regisztrációra általában automatikusan kerül sor az Intune-ban történő regisztrálás során
 -   Az eszköznek meg kell felelnie az Intune megfelelőségi szabályzatának mind az eszköz, mind a felhasználó tekintetében.  Ha nincsenek megfelelőségi szabályzatok, az Intune-regisztráció is elegendő.
--   Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX-eszközök esetében ez automatikusan történik.
+-   Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX Standard-eszközök esetében ez automatikusan történik.
 -   Az Intune Exchange Connectort megfelelően konfigurálni kell. További információkért lásd az [Az Exchange Connector hibaelhárítása a Microsoft Intune-ban](troubleshoot-exchange-connector.md) című ismertetőt.
 
 Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyeleti portálon, valamint az eszköz könyvtárjelentésében.
 
-## Regisztrációs problémák
+## <a name="enrollment-issues"></a>Regisztrációs problémák
 
  -  Az eszköz nincs regisztrálva, így a regisztrálás megoldja a problémát.
  -  A felhasználó regisztrálta az eszközt, de a munkahelyi csatlakoztatás sikertelen volt. A felhasználónak frissítenie kell a regisztrációt a vállalati portálról.
 
-## Megfelelőségi problémák
+## <a name="compliance-issues"></a>Megfelelőségi problémák
 
  -  Az eszköz nem felel meg az Intune házirendjeinek. A leggyakoribb probléma ebben az esetben a titkosítás és a jelszókövetelmények. A rendszer átirányítja a felhasználót a vállalati portálra, ahol konfigurálhatja az eszköz megfelelőségét.
  -  A megfelelőségi adatok regisztrálása az eszközön időbe telhet. Várjon néhány percet, és próbálkozzon újra.
@@ -53,23 +53,23 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
 
         Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
 
-## Szabályzattal kapcsolatos problémák
+## <a name="policy-issues"></a>Szabályzattal kapcsolatos problémák
 
 Ha a megfelelőségi házirend létrehozásakor hozzákapcsolja azt egy e-mail-házirendhez, mindkét házirendet ugyanannál a felhasználónál kell üzembe helyezni, így érdemes jól megfontolni, hogy melyik házirendet melyik csoport számára helyezi üzembe. A csak az egyik házirenddel rendelkező felhasználók eszközei valószínűleg nem fognak megfelelni.
 
 
-## Exchange ActiveSync-problémák
+## <a name="exchange-activesync-issues"></a>Exchange ActiveSync-problémák
 
-### Egy megfelelő Android-eszköz karanténba helyezésről szóló értesítést kap
+### <a name="compliant-android-device-gets-quarantine-notice"></a>Egy megfelelő Android-eszköz karanténba helyezésről szóló értesítést kap
 - A regisztrált és megfelelő Android-eszközök is kaphatnak karanténba helyezésről szóló értesítést a vállalati erőforrásokhoz való hozzáféréskor. A **Kezdés** nevű hivatkozásra kattintás előtt a felhasználónak meg kell győződnie arról, hogy a vállalati portál nem volt megnyitva az erőforrásokhoz való hozzáféréskor. A felhasználónak be kell zárnia a vállalati portált, újra meg kell próbálnia hozzáférni a vállalati erőforrásokhoz, majd ez után kell a **Kezdés** nevű hivatkozásra kattintania.
 
-### Egy kivont eszköz továbbra is rendelkezik hozzáféréssel.
+### <a name="retired-device-continues-to-have-access"></a>Egy kivont eszköz továbbra is rendelkezik hozzáféréssel.
 - Az Exchange Online használata esetén a kivont eszközök a kivonást követően még több órán át rendelkezhetnek hozzáféréssel. Ennek az az oka, hogy az Exchange hat órán át gyorsítótárazza a hozzáférési jogosultságokat. Ebben az esetben érdemes más adatvédelmi megoldást keresnie a kivont eszközökre.
 
-### Az eszköz megfelelő és regisztrálva van az AAD-ben, de továbbra is letiltott
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>Az eszköz megfelelő és regisztrálva van az AAD-ben, de továbbra is letiltott
 - Előfordul, hogy késik az Exchange ActiveSync-azonosító (EASID) átadása az AAD felé. Ennek a problémának az oka leggyakrabban a szabályozás. Várjon néhány percet, és próbálkozzon újra.
 
-### Eszköz zárolva
+### <a name="device-blocked"></a>Eszköz zárolva
 
 Előfordulhat, hogy egy eszköz feltételes hozzáférését a rendszer anélkül zárolja, hogy az eszköz aktiválási e-mailt kapna.
 
@@ -79,7 +79,7 @@ Előfordulhat, hogy egy eszköz feltételes hozzáférését a rendszer anélkü
 - Ellenőrizze az Exchange Connector naplófájljaiban a SendEmail műveletekkel kapcsolatos hibákat. A keresendő parancs lehet például egy SendEmail művelet az értesítési fiókból a felhasználói fiók felé.
 - Mielőtt az Exchange Connector zárolná az eszközt, aktiválási e-mailt küld. Ha az eszköz offline állapotban van, előfordulhat, hogy nem kapja meg az aktiválási e-mailt. Ellenőrizze, hogy az eszköz e-mail-ügyfele ügyfélleküldéses módszerrel és nem lekérdezéssel fér hozzá az e-mailekhez, mert ez is okozhatja azt, hogy nem érkeznek meg. Váltson lekérdezési módra, és ellenőrizze, hogy az eszköz megkapja-e az e-mailt.
 
-## Nem megfelelő eszköz nincs letiltva
+## <a name="noncompliant-device-not-blocked"></a>Nem megfelelő eszköz nincs letiltva
 
 Ha olyan eszközzel találkozik, amely nem megfelelő, mégis rendelkezik hozzáféréssel, hajtsa végre a következőket.
 
@@ -89,10 +89,10 @@ Ha olyan eszközzel találkozik, amely nem megfelelő, mégis rendelkezik hozzá
     - A következő PowerShell-parancsmag segítségével kérheti le az adott postaládához tartozó valamennyi mobileszköz listáját: „Get-ActiveSyncDeviceStatistics -mailbox mbx”. Ha az eszköz nem szerepel a listán, akkor nem fér hozzá az Exchange-hez.
     - Ha az eszköz szerepel a listán, használja a Get-CASmailbox-identity:’upn’ | fl parancsmagot az eszköz hozzáférési állapota részletes információinak lekérdezéséhez, majd az információkat adja meg a Microsoft támogatási szolgálatának.
 
-## Támogatási jegy megnyitása előtt
+## <a name="before-you-open-a-support-ticket"></a>Támogatási jegy megnyitása előtt
 Ha ezekkel a hibaelhárítási eljárásokkal nem sikerül megoldani a problémát, előfordulhat, hogy további információt kell megadnia a Microsoft támogatási szolgálata számára, például az OWA-postaláda vagy az Exchange Connector naplófájljait.
 
-### Az OWA-postaláda naplófájljainak gyűjtése
+### <a name="collecting-owa-mailbox-logs"></a>Az OWA-postaláda naplófájljainak gyűjtése
 
 1. Jelentkezzen be az OWA-n keresztül, és kattintson a jobb felső sarokban, a neve mellett található beállítások (fogaskerék) ikonra.
 2. Kattintson a **Beállítások** lehetőségre
@@ -104,15 +104,15 @@ Ha ezekkel a hibaelhárítási eljárásokkal nem sikerül megoldani a problém�
 8. Várjon 1-2 percet, majd lépjen vissza a telefonlistához az OWA-ban. Győződjön meg arról, hogy a listában a telefonja ki van jelölve, majd a felső menüben válassza a **Napló beolvasása** lehetőséget.
 9. Ekkor egy mellékletet tartalmazó e-mailt kell kapnia a saját címéről. A támogatási jegy megnyitásakor küldje el az e-mail tartalmát a Microsoft támogatásnak.
 
-### Az Exchange Connector naplófájljai
+### <a name="exchange-connector-logs"></a>Az Exchange Connector naplófájljai
 
-#### Általános naplófájl-információk
+#### <a name="general-log-information"></a>Általános naplófájl-információk
 Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Trace Viewer eszközt (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx). Ennek az eszköznek a használatához le kell töltenie a Windows Server SDK-t.
 
 >[!NOTE]
 >A naplófájlok a C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs mappában találhatók. A naplók a *Connector0.log* fájltól a *Connector29.log* fájlig tartó 30 naplófájlban találhatók. Miután egy naplófájlban összegyűlt 10 MB adat, a rendszer megnyitja a következőt. Amikor betelik a Connector29 naplófájl, a folyamat a Connector0 naplófájllal újraindul, felülírva a korábbi naplófájlokat.
 
-#### A szinkronizálási naplók keresése
+#### <a name="locating-sync-logs"></a>A szinkronizálási naplók keresése
 
 -    A naplófájlokban a **full sync** keresőkifejezéssel kereshet teljes szinkronizálásra. A teljes szinkronizálás kezdetét a következő szöveg jelzi:
 
@@ -124,10 +124,10 @@ Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Tr
 
 -   A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
 
-##### A Get next parancs kivételei
+##### <a name="exceptions-in-get-next-command"></a>A Get next parancs kivételei
 Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** kapcsolatos kivételeket, és adja meg azokat a Microsoft támogatási szolgálata számára.
 
-#### Részletes naplózás
+#### <a name="verbose-logging"></a>Részletes naplózás
 
 Részletes naplózás engedélyezése:
 
@@ -153,11 +153,11 @@ Részletes naplózás engedélyezése:
 
 
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

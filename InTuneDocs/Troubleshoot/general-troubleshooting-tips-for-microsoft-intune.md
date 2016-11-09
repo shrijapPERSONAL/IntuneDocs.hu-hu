@@ -2,9 +2,10 @@
 title: "Általános hibaelhárítási tippek | Microsoft Intune"
 description: "Általános forrásanyagok az Intune-nal kapcsolatos problémák megoldásához."
 keywords: 
-author: nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +14,19 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
-ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
+ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
+ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
 
 
 ---
 
-# Általános hibaelhárítási tippek a Microsoft Intune-hoz
+# <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Általános hibaelhárítási tippek a Microsoft Intune-hoz
 Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek fel a konfigurációval vagy az ügyfelekkel kapcsolatban. Az alábbi források megkönnyíthetik a probléma okának kiderítését.
 
 > [!NOTE]
 > Ha támogatási kérelmet szeretne létrehozni, vagy egy meglévő kérelmet kíván megtekinteni, [nyissa meg az Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben találhat további információkat.
 
-## A probléma meghatározása
+## <a name="define-the-problem"></a>A probléma meghatározása
 
 -   Milyen viselkedés tapasztalható?
 
@@ -43,7 +44,7 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
 
 -   Ellenőrizte a szolgáltatás állapotát? Az [Office 365 felügyeleti portálon](https://portal.office.com/Admin/Default.aspx) az Intune szolgáltatás állapota is figyelemmel követhető. Válassza a bal oldali panel **Szolgáltatás állapota** elemét.
 
-## Rendelkezésre álló adatok összegyűjtése
+## <a name="collect-available-data"></a>Rendelkezésre álló adatok összegyűjtése
 
 -   Eszköznaplók. Az eszköznaplók begyűjtésére vonatkozóan az alábbi témakörökből tájékozódhat:
   - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése USB-kábelen keresztül a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
@@ -53,7 +54,7 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
 
 -   A felügyeleti konzol adatai. A szabályzatok megvalósítási problémái esetén például meg kell vizsgálni az érintett szabályzatot, illetve annak állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
 
-## Megoldás keresése
+## <a name="research-the-solution"></a>Megoldás keresése
 
 -   Keressen megoldást az interneten. Ha például a 0x80073CF0 hibakódot kapja, rákereshet az interneten a **technet intune 0x80073cf0** kifejezésre, és elolvashatja az [Alkalmazástelepítéssel kapcsolatos problémák elhárítása a Microsoft Intune-ban](troubleshoot-app-deployment-problems-in-microsoft-intune.md) című témakört, amely javaslatokat kínál a probléma megoldásához.
 
@@ -63,7 +64,7 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
 
     Ha támogatási kérelmet szeretne létrehozni, nyissa meg az [Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben találhat további információkat.
 
-## Közösségi erőforrások
+## <a name="community-resources"></a>Közösségi erőforrások
 A következő közösségi erőforrásokban találhat további hasznos információkat:
 
 -   A [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) (A Microsoft Intune túlélési útmutatója) számos olyan forrás hivatkozását tartalmazza, melyek segíthetnek az Intune konfigurálásában, karbantartásában és hibáinak elhárításában.
@@ -74,10 +75,10 @@ A következő közösségi erőforrásokban találhat további hasznos informác
 
 -   [Az Intune fórumai](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Az alább felsorolt témakörök konkrét problémák elhárításához nyújtanak segítséget. Ha ezek az információk nem segítettek megoldani a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
-[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+[A Microsoft Intune Endpoint Protection hibaelhárítása](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
 [Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 
@@ -93,6 +94,6 @@ Az alább felsorolt témakörök konkrét problémák elhárításához nyújtan
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
