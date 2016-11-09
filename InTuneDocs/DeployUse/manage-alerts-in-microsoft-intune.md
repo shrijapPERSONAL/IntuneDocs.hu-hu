@@ -2,9 +2,10 @@
 title: "Riasztások kezelése | Microsoft Intune"
 description: "Az Intune Riasztások munkaterületével felmérheti a szervezetben lévő eszközök általános állapotát."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Riasztások kezelése a Microsoft Intune-ban
+# <a name="manage-alerts-in-microsoft-intune"></a>Riasztások kezelése a Microsoft Intune-ban
 Az Intune felügyeleti konzol **Riasztások** munkaterületével felmérheti a szervezetben lévő eszközök általános állapotát, és azonosíthatja a problémákat.
 
-## Aktív riasztások megtekintése
+## <a name="view-active-alerts"></a>Aktív riasztások megtekintése
 
 Lásd az aktív riasztásokkal kapcsolatos információkat és összefoglaló adatokat.
 
-#### Aktív riasztások megtekintése
+#### <a name="to-view-active-alerts"></a>Aktív riasztások megtekintése
 
 Az Intune felügyeleti konzolján kövesse az alábbi lépéssorozatok valamelyikét:
 
@@ -55,10 +56,10 @@ Az Intune felügyeleti konzolján kövesse az alábbi lépéssorozatok valamelyi
 
     -   **Súlyosság**. Ebben az oszlopban a riasztás súlyossága jelenik meg.
 
-## Üzenőfali riasztások megtekintése
+## <a name="view-notice-board-alerts"></a>Üzenőfali riasztások megtekintése
 Az üzenőfali riasztások fontos szolgáltatási közleményeket nyújtanak. Ilyenek lehetnek például hamarosan lezajló szolgáltatásfrissítések, tervezett karbantartások vagy szolgáltatáskimaradások.
 
-#### Üzenőfali riasztások megtekintése és kezelése
+#### <a name="to-view-and-manage-notice-board-alerts"></a>Üzenőfali riasztások megtekintése és kezelése
 
 1.  Az Intune felügyeleti konzolján válassza a **Rendszer – áttekintés** lehetőséget.
 
@@ -66,10 +67,10 @@ Az üzenőfali riasztások fontos szolgáltatási közleményeket nyújtanak. Il
 
 3.  Ha egy üzenőfali riasztást szeretne CSV- vagy HTML-fájlba exportálni, az Intune felügyeleti konzolon válassza a **Riasztások** > **Minden riasztás** >    **Megjegyzések** lehetőséget. Jelöljön ki egy értesítést, válassza a **Lista exportálása** ikont, majd kövesse a megjelenő utasításokat.
 
-## Az Intune rendszerállapotának áttekintése
+## <a name="review-intune-system-status"></a>Az Intune rendszerállapotának áttekintése
 A **Rendszer – áttekintés** munkaterületen áttekintheti az Endpoint Protection, a frissítések, az ügynökök, a házirendek és a szoftverkategóriák **rendszerállapotának** adatait. Ezekkel az információkkal felmérheti a problémákat, és kiválaszthatja azokat, amelyek azonnali figyelmet igényelnek. A rendszer üzemkimaradása esetén generált hibaüzenetek hivatkozásai a **Szolgáltatás állapota** összesítőlapra mutatnak. A **Szolgáltatás állapota** összesítés részletesebb információt nyújt az egyes helyeken fellépő problémákról, és megjeleníti az állapotösszesítés utolsó frissítésének időpontját is.
 
-#### Az előfizetés állapotának megtekintése
+#### <a name="to-view-the-status-of-your-subscription"></a>Az előfizetés állapotának megtekintése
 
 1.  Az Intune felügyeleti konzolján válassza a **Rendszer – áttekintés** lehetőséget.
 
@@ -77,7 +78,7 @@ A **Rendszer – áttekintés** munkaterületen áttekintheti az Endpoint Protec
 
   A megjelenített elemek többsége hivatkozással is rendelkezik, így további kapcsolódó információkat is elérhet. Például az **Endpoint Protection** alatt a példányok számát kiválasztva megjelenítheti az **Endpoint Protection** munkaterületet, rajta az észlelt kártevők listájával. Az eszközök számát kiválasztva megjelenítheti a **Csoportok** munkaterületet, rajta azoknak az eszközöknek a listájával, amelyeken kártevőt észlelt a rendszer.
 
-## Riasztások lezárása és újraaktiválása
+## <a name="close-and-reactivate-alerts"></a>Riasztások lezárása és újraaktiválása
 Az Intune-riasztások addig maradnak aktívak, amíg az alábbiak egyike meg nem történik:
 
 -   A riasztást generáló probléma megoldódik.
@@ -88,7 +89,7 @@ Az Intune-riasztások addig maradnak aktívak, amíg az alábbiak egyike meg nem
 
 A lezártnak jelölt riasztásokat a rendszer 90 nap után véglegesen törli.
 
-#### Riasztás lezárása manuálisan
+#### <a name="to-manually-close-an-alert"></a>Riasztás lezárása manuálisan
 
 Az Intune felügyeleti konzolján kövesse az alábbi lépéssorozatok valamelyikét:
 
@@ -98,7 +99,7 @@ Az Intune felügyeleti konzolján kövesse az alábbi lépéssorozatok valamelyi
 
 - **Üzenőfali riasztás lezárásához** válassza a **Rendszer – áttekintés** lehetőséget. Válassza ki az üzenőfali riasztás melletti **X** gombot.
 
-#### Lezárt riasztások megtekintése és újraaktiválása
+#### <a name="to-view-and-reactivate-closed-alerts"></a>Lezárt riasztások megtekintése és újraaktiválása
 
 1.  Az Intune felügyeleti konzolján válassza a **Riasztások** > **Minden riasztás** lehetőséget.
 
@@ -108,11 +109,11 @@ Az Intune felügyeleti konzolján kövesse az alábbi lépéssorozatok valamelyi
 
 3.  A kijelölt riasztás újraaktiválásához válassza a **Riasztás újraaktiválása** lehetőséget.
 
-### További információ
+### <a name="see-also"></a>További információ
 [Értesítések a Microsoft Intune riasztásaival](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

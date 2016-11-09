@@ -2,8 +2,8 @@
 title: "Apple DEP-kezelés iOS-eszközökön | Microsoft Intune"
 description: "Olyan regisztrációs profil telepítése, amely az iOS készülékregisztrációs program (DEP) keretében vásárolt Apple-eszközök felügyelet céljából történő vezeték nélküli regisztrálására szolgál."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,21 +14,21 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 021c02c9a148746a76309efc819b9e28a2748c4f
-ms.openlocfilehash: b608d6353db2f37eed03d34c9216726fa7cd1cb2
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
 
 
 ---
 
-# A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása
+# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása
 A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes vezeték nélkül regisztrálni a készülékregisztrációs programon (DEP) keresztül vásárolt iOS-eszközöket. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz. A DEP programon keresztül regisztrált eszközök regisztrációját a felhasználók nem törölhetik.
 
-## Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal
+## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal
 Ahhoz, hogy a vállalat által birtokolt eszközöket az Apple készülékregisztrációs programjával (DEP) lehessen kezelni, a szervezetnek csatlakoznia kell az Apple DEP-hez, és a programon keresztül kell beszereznie az eszközöket. A folyamat részletei a következő webhelyen érhetők el:  [https://deploy.apple.com](https://deploy.apple.com). A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
 
 A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó DEP-jogkivonat birtokában regisztrálhatja a DEP programba. Ez a jogkivonat lehetővé teszi, hogy az Intune szinkronizálja a DEP-ben résztvevő, vállalat által birtokolt eszközök adatait. A token ezen felül lehetővé teszi, hogy az Intune Regisztrációs profilokat töltsön fel az Apple-nek, és a feltöltött profilokhoz eszközöket rendeljen hozzá.
 
-1.  **iOS-eszközök kezelése a Microsoft Intune-ban – első lépések**</br>
+1.  **iOS-eszközök kezelésének megkezdése a Microsoft Intune-nal**</br>
     Az iOS DEP-eszközök regisztrálása előtt engedélyeznie kell az iOS-eszközök Intune-beli felügyeletét.
 
 2.  **Titkosítási kulcs beszerzése**</br>
@@ -52,7 +52,7 @@ A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó 
 4.  **A DEP-token hozzáadása az Intune-hoz**</br>
     A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** lapra, majd válassza a **DEP-token feltöltése** lehetőséget. **Keresse meg** a tanúsítványfájlt (.p7m), adja meg **Apple ID azonosítóját**, majd válassza a **Feltöltés** lehetőséget.
 
-5.  **A vállalati eszközregisztrációs házirend felvétele**</br>
+5.  **A vállalati eszközregisztrációs szabályzat felvétele**</br>
     A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
 
     Adja meg az **Általános** lapon található adatokat, például töltse ki a **Név** és a **Leírás** mezőt, valamint adja meg, hogy a profilhoz rendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e.
@@ -107,15 +107,15 @@ A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó 
 
 8.  **Eszközök terjesztése a felhasználóknak** – Megkezdheti a vállalat által birtokolt eszközök terjesztését a felhasználóknak. Az iOS-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára.
 
-## Változások az Intune csoport-hozzárendelésekben
+## <a name="changes-to-intune-group-assignments"></a>Változások az Intune csoport-hozzárendelésekben
 
 Novembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
-### További információ
+### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
