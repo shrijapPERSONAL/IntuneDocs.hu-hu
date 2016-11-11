@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
@@ -68,7 +68,8 @@ b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 
 1.  A ISE-konzolon válassza az **Administration** (Felügyelet) > **Certificates** (Tanúsítványok) > **System Certificates** (Rendszertanúsítványok) > **Generate Self Signed Certificate** (Önaláírt tanúsítvány létrehozása) elemet.  
 2.       Exportálja az önaláírt tanúsítványt.
-3. Egy szövegszerkesztőben szerkessze az exportált tanúsítványt [megjegyzés]: <> Inkább nem tennék pontot e két állítás végére; szerintem összezavarhatja az olvasót.
+3. Egy szövegszerkesztőben szerkessze az alábbiak szerint az exportált tanúsítványt:
+
  - Törölje a ** -----BEGIN CERTIFICATE-----** sort
  - Törölje az ** -----END CERTIFICATE-----** sort
  
