@@ -2,8 +2,8 @@
 title: "Exchange-felügyelet alatt álló mobileszközök törlése | Microsoft Intune"
 description: "A Microsoft Intune lehetővé teszi az Exchange ActiveSync (EAS) által felügyelt mobileszközök tartalmának törlését vagy alaphelyzetbe állítását az Intune Exchange Connector segítségével"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 94d304a872f5890f2cf83a06aa222353cd7f61f6
 ---
 
 
-# Wipe for Exchange-managed mobile devices
+# <a name="wipe-for-exchangemanaged-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 A Microsoft Intune lehetővé teszi az Exchange ActiveSync (EAS) által felügyelt mobileszközök tartalmának törlését vagy alaphelyzetbe állítását az Intune Exchange Connector segítségével. A következő táblázat az Exchange ActiveSync törlési képességeit ismerteti:
 
 |Törlés típusa|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8|iOS|Android|
