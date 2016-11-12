@@ -74,6 +74,6 @@ A teljes útmutató letölthető a [TechNet Gallery](https://gallery.technet.mic
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

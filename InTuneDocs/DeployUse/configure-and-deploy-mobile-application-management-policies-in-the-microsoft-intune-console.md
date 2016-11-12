@@ -194,6 +194,6 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

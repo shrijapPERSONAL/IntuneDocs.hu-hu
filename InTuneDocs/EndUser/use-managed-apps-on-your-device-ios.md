@@ -65,6 +65,6 @@ Az eszközén lévő felügyelt alkalmazásokról további információért lép
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

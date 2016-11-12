@@ -116,6 +116,6 @@ Novembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -54,6 +54,6 @@ Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a felhasználó már nem do
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
