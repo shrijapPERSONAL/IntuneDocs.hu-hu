@@ -3,8 +3,9 @@ title: "Windows-eszköz manuális szinkronizálása | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalm
     A képernyő tetején megjelenik a „Fiók szinkronizálása” üzenet. Amíg az eszköz szinkronizálása be nem fejeződik, a **Szinkronizálás** gomb inaktív marad.
 
 ## Windows 10 asztali verzió
-Windows 10 asztali eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
+A Windows 10 rendszernek egynél több verziója van, így a lépések két részre oszthatók. Annak megállapításához, hogy mely lépések szükségesek, tekintse meg a képernyőképeket, és kövesse azokat a lépéseket, amelyek a leginkább hasonlítanak az eszközön látható állapotra. 
 
 1. Kattintson a **Start** gombra, majd a **Beállítások** elemre.
 
@@ -63,15 +64,46 @@ Windows 10 asztali eszköz manuális szinkronizálása a lassú alkalmazástelep
 
     ![A Fiókok lehetőség kiválasztása a Beállítások lapon](./media/win10pc-sync-2-settings-accounts.png)
 
-3. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** elemet.
+3. A következő két képernyő közül válassza ki azt, amelyen ugyanaz látszik, mint az eszközön. Hajtsa végre a kiválasztott képernyőhöz tartozó lépéseket.
+
+    Ha a „Hozzáférés munkahelyi vagy iskolai rendszerhez” feliratú képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](#steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
+
+    ![Szinkronizálási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Ha a „Hozzáférés munkahelyi rendszerhez” feliratú képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi rendszerhez](#steps-to-follow-if-you-see-your-account) című részben leírt lépéseket.
+
+    ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png) 
+
+### Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
+
+1. A **Fiókok** lapon válassza ki a **Munkahelyi vagy iskolai hozzáférés** elemet.
+
+    ![A Hozzáférés munkahelyi vagy iskolai rendszerhez elem kiválasztása](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a rendszergazda hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája. 
+
+    - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot. 
+    - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
+
+    ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-info-button.png)
+
+3. Kattintson az **Információ** gombra. Az alábbi példához hasonlóan megnyílik egy párbeszédpanel.
+
+    ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-button.png)
+
+4. Kattintson a **Szinkronizálás** gombra. Az eszköz Intune-nal való szinkronizálása megtörténik.
+
+### Teendők, ha ezt látja: Munkahelyi hozzáférés
+    
+1. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** elemet.
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
 
-4. A **Regisztrálás eszközfelügyeletre** részen válassza ki a cég nevét.
+2. A **Regisztrálás eszközfelügyeletre** részen válassza ki a cég nevét.
 
     ![A cég nevének kiválasztása az eszközfelügyelethez](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Kattintson a **Szinkronizálás** gombra.
+3. Kattintson a **Szinkronizálás** gombra.
 
     ![Kattintás a Szinkronizálás gombra](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

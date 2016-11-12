@@ -125,7 +125,7 @@
 #### [MAM-szabályzatok ellenőrzése](validate-mobile-application-management.md)
 #### [Szabályzatoknak való megfelelés figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS-alkalmazások közti adatátvitel kezelése](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [A végfelhasználói folyamat](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [Intune felügyeleti konzol MAM-házirendekhez](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Üzletági alkalmazások előkészítése mobilalkalmazás-felügyelethez](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [Felügyelt vállalati alkalmazás adatainak törlése](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Végfelhasználói funkciókkal kapcsolatos források](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [Felügyelt iOS-eszközök visszaállítása](restore-managed-ios-devices-from-backup.md)
+### [Android-alkalmazások MAM-szabályzatokkal](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [iOS-alkalmazások MAM-szabályzatokkal](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [Alkalmazások fejlesztése és testreszabása](/intune/develop/intune-app-sdk)
 
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

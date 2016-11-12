@@ -2,7 +2,8 @@
 title: "Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Android-eszköz titkosítását ismerteti"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
 
-A munkahelyi profil beállításával az eszközön hozzáférhet a munkahelyi vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz. Többet megtudhat arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
+Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailjeihez, az alkalmazásaihoz és az egyéb munkahelyi adataihoz. A regisztráció részeként egy munkahelyi profilt állít be, amely elkülöníti az eszközön lévő személyes adatokat a munkahelyi adatoktól. A rendszergazdák csak a munkahelyi adatokat tartalmazó munkahelyi profilt kezelhetik. Az eszközön lévő személyes adatokhoz nem férhetnek hozzá. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
 
 Munkahelyi profil létrehozása:
 
@@ -56,11 +57,11 @@ Munkahelyi profil létrehozása:
 
     A következő üzeneteket fogja látni: „Munkahelyi profil beállítása” és „Eszköz regisztrálása.”
 
-8. A **Már félig kész!** képernyőn koppintson a Vállalati portál alkalmazás ikonjára, amelyen a jelvény van.
+8. A **Már félig kész!** képernyőn várjon néhány másodpercet, amíg megjelenik a Vállalati portál alkalmazás.
 
     ![Koppintson a jelvénnyel rendelkező Vállalati Portál alkalmazásra](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Az Android Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával.
+9. Az Android Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, majd jelentkezzen be ugyanazzal a munkahelyi vagy iskolai fiókkal, amelyet korábban használt a bejelentkezéshez.
 
 10. A **Vállalati hozzáférés beállítása** képernyőn, a munkahelyi profil beállításának befejeződése után koppintson a **FOLYTATÁS** elemre.
 
@@ -72,11 +73,11 @@ Munkahelyi profil létrehozása:
 
     ![A Vállalati hozzáférés beállítása jelzi, hogy a munkahelyi profil beállítása és regisztrálása befejeződött](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. A **Vállalati hozzáférés beállítása befejeződött** képernyőn koppintson a **KÉSZ** elemre.
+12. A **Vállalati hozzáférés beállítása befejeződött** képernyőn koppintson a **KÉSZ** elemre. Előfordulhat, hogy további lépések végrehajtása szükséges, ha a rendszergazda egyéb követelményeket szabott meg.
 
     ![A Vállalati hozzáférés beállítása befejeződött](./media/andr-afw-company-access-setup-complete.png)
 
-    Megnyílik a Play Store for Work, ahol most már beszerezheti a vállalati alkalmazásokat.
+    Most már beszerezheti a vállalati alkalmazásokat a Play Store for Work áruházból.
 
     ![Play Store for Work alkalmazások lap](./media/andr-afw-tap-work-play-store-icon.png)
 

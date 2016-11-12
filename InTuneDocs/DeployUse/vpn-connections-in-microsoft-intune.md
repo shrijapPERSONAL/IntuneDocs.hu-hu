@@ -3,8 +3,9 @@ title: VPN-kapcsolatok | Microsoft Intune
 description: "A VPN-profilok beállításával a szervezetében lévő felhasználókra és eszközökre alkalmazhatja a VPN-beállításokat."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Az Intune a következő kapcsolattípusokat használó VPN-profilok létrehozás
 
 
 
-Kapcsolat típusa |iOS és Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|A Windows 10 asztali és mobilverziója |
+Kapcsolat típusa |iOS és Mac OS X  |Android és Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|A Windows 10 asztali és mobilverziója |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Igen |Igen   |Nem    |     Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
-Cisco (IPsec)|Igen |Nem   |Nem  |  Nem|Nem  |Nem | Nem|
-Citrix|Igen |Nem   |Nem  |  Nem|Nem  |Nem | Nem|
-Pulse Secure|Igen  |Igen |Igen   |Nem  |Igen  |Igen| Igen|        
-F5 Edge Client|Igen |Igen |Igen |Nem  |Igen  |   Igen |  Igen|   
-Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Nem  |Igen |Igen |Igen|         
-CheckPoint Mobile VPN|Igen |Igen |Igen |Igen |Igen|Igen|Igen|
-Microsoft SSL (SSTP)|Nem |Nem |Nem |Nem |Nem|Nem|VPNv1 OMA-URI *|
-Microsoft Automatic|Nem |Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
-IKEv2|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
-PPTP|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Nem|Igen|
-L2TP|iOS-eszközök egyéni profilja|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
+Cisco AnyConnect|Igen |Igen   |Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
+Cisco (IPsec)|Igen |Nem   |Nem  |Nem  |Nem | Nem|
+Citrix|Igen |Nem   |Nem  |Nem  |Nem | Nem|
+Pulse Secure|Igen  |Igen |Igen   |Igen  |Igen| Igen|        
+F5 Edge Client|Igen |Igen |Igen |Igen  |   Igen |  Igen|   
+Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Igen |Igen |Igen|         
+CheckPoint Mobile VPN|Igen |Igen |Igen |Igen|Igen|Igen|
+Microsoft SSL (SSTP)|Nem |Nem |Nem |Nem|Nem|VPNv1 OMA-URI *|
+Microsoft Automatic|Nem |Nem |Nem |Nem|Igen (OMA-URI)|Igen|
+IKEv2|iOS-eszközök egyéni profilja|Nem |Nem |Nem|Igen (OMA-URI)|Igen|
+PPTP|iOS-eszközök egyéni profilja|Nem |Nem |Nem|Nem|Igen|
+L2TP|iOS-eszközök egyéni profilja|Nem |Nem |Nem|Igen (OMA-URI)|Igen|
 
 \* A Windows 10-hez egyébként rendelkezésre álló további beállítások nélkül.
 
@@ -96,6 +97,8 @@ A felhasználó a VPN-kiszolgálón felhasználónév és jelszó megadásával 
 
 > [!Note]
 > Az Android for Work-eszközök VPN-profilja csak az eszköz munkahelyi profilján telepített alkalmazások számára fogja engedélyezni a VPN-kapcsolatot.
+>
+> A VPN-kapcsolat egyes típusai támogatják az alkalmazásonkénti VPN-t az Android for Work-eszközökön, illetve az alkalmazásonkénti VPN engedélyezését az Intune-ban elosztott alkalmazásokban.  
 
 3. Az alábbi táblázat segítséget nyújt a VPN-profil beállításainak konfigurálásában:
 

@@ -2,7 +2,8 @@
 title: "Mi történik munkahelyi profil létrehozásakor | Microsoft Intune"
 description: "Egy Android-eszköz titkosítását ismerteti"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# Mi történik munkahelyi profil létrehozásakor
+# <a name="what-happens-when-you-create-a-work-profile"></a>Mi történik munkahelyi profil létrehozásakor
 
-A munkahelyi profil beállításával az eszközön hozzáférhet a munkahelyi vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz.
+A munkahelyi profil beállításával az eszközön elkülönítheti a munkahelyi vagy iskolai e-mailjeit, alkalmazásait és adatait a személyes adatoktól.
 
 Ha munkahelyi profilt hoz létre:
 
-- Eszközén a rendszergazda csak a munkával kapcsolatos alkalmazásokat, beállításokat és konfigurációkat kezelheti, személyes alkalmazásait és adatait nem.
+- Az eszközön a rendszergazda csak a munkával kapcsolatos e-maileket, alkalmazásokat, beállításokat és adatokat kezelheti, a személyes alkalmazásokat és adatokat nem.
 
 - A munkahelyi alkalmazásokat a Play Store for Work áruházból kapja. Személyes alkalmazásait a szokott módon a Google Play áruházból szerezheti be. Személyes alkalmazásait a rendszergazda nem látja és nem kezelheti.
 
