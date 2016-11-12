@@ -2,10 +2,10 @@
 title: "PIN-kód beállítása vagy módosítása | Microsoft Intune"
 description: "PIN-kód beállítása vagy módosítása"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 596534a5ca50d274472451014db4404b4a5bf2d5
-ms.openlocfilehash: 7273fb674123647e977a25bf9745aa05de7286e7
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
 
 
 ---
 
-# PIN-kód beállítása vagy módosítása
+# <a name="set-or-change-your-passcode"></a>PIN-kód beállítása vagy módosítása
 
 Ha az iOS-eszköz nem felel meg a rendszergazda PIN-kód-szabályzatának, megjelenik egy üzenet, amely röviden ismerteti a problémát, és elmagyarázza, mit kell tennie, hogy a PIN-kódja megfeleljen a követelményeknek.
 
@@ -27,13 +27,13 @@ A rendszergazda több követelményt is beállíthat a PIN-kódhoz. Például me
 
 Ha gondja van a PIN-kóddal kapcsolatos követelménynek megfelelő PIN-kód beállításával, segítségért forduljon a rendszergazdához.
 
-## A PIN-kód beállítása##
+## <a name="set-your-passcode"></a>A PIN-kód beállítása##
 
 1. Koppintson a **Settings (Beállítások)** > **Touch ID & Passcode** (Touch ID és PIN-kód) pontra.
 2. A **Touch ID & Passcode** (Touch ID és PIN-kód) menüben koppintson a **Turn Passcode On** (PIN-kód bekapcsolása) pontra.
 3. Adjon meg egy új PIN-kódot, amely megfelel a rendszergazda által meghatározott követelményeknek, majd a megerősítéshez írja be még egyszer.
 
-## PIN-kód módosítása##
+## <a name="change-your-passcode"></a>PIN-kód módosítása##
 
 1. Koppintson a **Settings (Beállítások)** > **Touch ID & Passcode** (Touch ID és PIN-kód) pontra.
 2. Adja meg a jelenlegi PIN-kódot. Megnyílik a **Touch ID & Passcode** (Touch ID és PIN-kód) menü.
@@ -44,6 +44,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

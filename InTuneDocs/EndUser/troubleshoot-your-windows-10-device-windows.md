@@ -2,9 +2,10 @@
 title: "Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
 
 
 ---
 
-# Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása
 Ha végrehajtotta a [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md) című témakörben leírt lépéseket, de mégsem tudja elérni munkahelyi vagy iskolai levelezését vagy fájljait, próbálkozzon a következő hibaelhárítási lépésekkel.
 
 1.  A következő két képernyő közül válassza ki azt, amelyen ugyanaz látszik, mint az eszközön. Hajtsa végre a kiválasztott képernyőhöz tartozó lépéseket.
@@ -33,7 +34,7 @@ Ha végrehajtotta a [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz r
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Hibaelhárítási lépések, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Hibaelhárítási lépések, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
 1.  Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mailjeihez és fájljaihoz, lépjen vissza a **Hozzáférés munkahelyi vagy iskolai rendszerhez** lapra.
 
@@ -45,7 +46,7 @@ Ha végrehajtotta a [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz r
 
     - Ha nem látja a fenti csatlakozási információkat, vagy az opciók egy része nem jelenik meg, kattintson a **Csatlakozás** elemre, majd jelentkezzen be munkahelyi vagy iskolai hitelesítő adataival. Ezzel létrejön a kapcsolat.
 
-## Hibaelhárítási lépések, ha ezt látja: Saját fiók
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Hibaelhárítási lépések, ha ezt látja: Saját fiók
 
 Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mailjeihez vagy fájljaihoz, lépjen vissza a **Fiókok** lapra, és koppintson a **Munkahelyi hozzáférés** elemre.
 
@@ -57,6 +58,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

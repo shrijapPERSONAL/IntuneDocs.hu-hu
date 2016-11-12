@@ -2,9 +2,10 @@
 title: "Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-ekhez | Microsoft Intune"
 description: "PFN megkeresése egy alkalmazásonkénti VPN konfigurálásához."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
-ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
 
 
 ---
 
-# Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-konfigurációkhoz
+# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-konfigurációkhoz
 
 Ahhoz, hogy egy alkalmazásonkénti VPN-t be tudjon állítani, két lehetősége is van a PFN megkeresésére.
 
-## Egy Windows 10 rendszerű számítógépre telepített alkalmazás PFN-jének megkeresése
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>Egy Windows 10 rendszerű számítógépre telepített alkalmazás PFN-jének megkeresése
 
 Ha a használt alkalmazás már telepítve van egy Windows 10 rendszerű számítógépre, a [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell-parancsmag használatával is beolvashatja a PFN-t.
 
@@ -66,7 +67,7 @@ A OneNote-ra vonatkozóan lekért adatok a következők:
 
 
 
-## A PFN megkeresése, ha az alkalmazás nincs telepítve a számítógépre
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>A PFN megkeresése, ha az alkalmazás nincs telepítve a számítógépre
 
 1.  Nyissa meg a https://www.microsoft.com/hu-hu/store/apps webhelyet.
 2.  Írja be az alkalmazás nevét a keresősávba. A jelen példában keressen rá a OneNote-ra.
@@ -85,6 +86,6 @@ A Microsoft Edge böngészőben megjelennek a kívánt adatok; az Internet Explo
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

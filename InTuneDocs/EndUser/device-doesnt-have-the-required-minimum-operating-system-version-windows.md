@@ -2,10 +2,10 @@
 title: "Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: a14f347ae65118852ba914085548cd17c8ec31aa
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 376866a4d2a96594413d8edd92f2a20cc37339cb
 
 
 ---
 
 
-# Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával
+# <a name="device-doesnt-have-the-required-minimum-operating-system-version"></a>Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával
 
 A Windows-eszköze nem tartalmazza az IT-részleg által megkövetelt minimális operációsrendszer-verziót. A mobileszköz frissítése előtt ellenőrizze az operációs rendszer aktuális verzióját. Ehhez válassza a **Beállítások** &gt; **Névjegy** elemet. Az eszköz frissítéséhez válassza a **Beállítások** &gt; **Telefonfrissítés** &gt; **Frissítések keresése** elemet.
 
@@ -37,6 +37,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

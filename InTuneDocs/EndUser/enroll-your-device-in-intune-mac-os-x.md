@@ -2,8 +2,8 @@
 title: "Mac OS X-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Mac OS X-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ab8292843c540842a93e97377db21109a7e9fa33
 
 
 ---
 
 
-# Mac OS X-eszköz regisztrálása az Intune-ban
+# <a name="enroll-your-mac-os-x-device-in-intune"></a>Mac OS X-eszköz regisztrálása az Intune-ban
 
 Ha regisztrálja Mac OS X-eszközét az Intune-ban, hozzáférhet a munkahely hálózatához, a munkahelyi levelezéséhez és a munkafájljaihoz. Munkahelyi alkalmazásokat is beszerezhet. A [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című rész bővebben ismerteti, hogy mi történik az eszköz regisztrálásakor.
 
@@ -53,6 +53,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

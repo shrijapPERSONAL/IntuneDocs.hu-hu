@@ -2,8 +2,8 @@
 title: "Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,26 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vadona
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 28c0cb63e1d14efb4e80d7d1f3608a354ee1b090
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 9219829cf73cbd141a165f88b30f564f857e2b5d
 
 
 ---
 
-# Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez
+# <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez
 
 Ha az Outlook levelezőalkalmazás letöltésekor az az üzenet jelenik meg, hogy az Android- vagy iOS-eszköz operációs rendszerének verziója régebbi a minimálisan szükségesnél, akkor a letöltés előtt frissítenie kell az eszközt.
 
 A frissítést a használt eszköz típusának megfelelő utasításokat követve végezheti el:
 
-## Android-eszköz frissítése
+## <a name="to-upgrade-your-android-device"></a>Android-eszköz frissítése
 Koppintson a **Beállítások** menüre, majd a **Frissítés** vagy a **Rendszerfrissítés** lehetőségre.
 
-## iOS-eszköz frissítése
+## <a name="to-upgrade-your-ios-device"></a>iOS-eszköz frissítése
 Koppintson a **Beállítások** &gt; **Általános** &gt; **Szoftverfrissítés** lehetőségre.
 
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO3-->
+
+<!--HONumber=Nov16_HO1-->
 
 

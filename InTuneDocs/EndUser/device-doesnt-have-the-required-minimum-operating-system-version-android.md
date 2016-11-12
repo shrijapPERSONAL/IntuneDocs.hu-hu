@@ -2,9 +2,10 @@
 title: "Az Android-eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 195f9cf3276becf17b0ffc68d3237e5460d87d3e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: be48af4a0bfdc13706f6e24da6e2e2fe334a334d
 
 
 ---
 
 
-# Az Android-eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával
+# <a name="android-device-doesnt-have-the-required-minimum-operating-system-version"></a>Az Android-eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával
 
 Az Android-eszköze nem tartalmazza az IT-részleg által megkövetelt minimális operációsrendszer-verziót. Az eszköz frissítése előtt ellenőrizze az operációs rendszer aktuális verzióját. Ehhez koppintson a **Beállítások** &gt; **Az eszköz névjegye** elemre, majd koppintson a **Beállítások** lehetőségre, és keresse meg a frissítési lehetőséget. Így ellenőrizheti, hogy van-e elérhető frissítés az eszközhöz.
 
@@ -30,6 +31,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

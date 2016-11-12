@@ -2,10 +2,10 @@
 title: "Az eszközön nincs engedélyezve a kódintegritás | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
-ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a42bd680167b41fc7a77227e2d1f7c2e6860fc9d
 
 
 ---
 
 
-# Az eszközön nincs engedélyezve a kódintegritás
+# <a name="device-doesnt-have-code-integrity-enabled"></a>Az eszközön nincs engedélyezve a kódintegritás
 
 A szervezet előírja a Windows kódintegritás engedélyezését. Ez a szolgáltatás ellenőrzi az eszközén az illesztőprogramokat és a rendszerfájlokat, így gondoskodva azok biztonságáról.
 
@@ -36,6 +36,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

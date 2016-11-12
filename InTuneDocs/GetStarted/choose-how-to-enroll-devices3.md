@@ -3,6 +3,7 @@ title: "A mobileszközök regisztrálásának módjai | Microsoft Intune"
 description: "Néhány egyszerű kérdés megválaszolásával eldöntheti, hogyan végzi el a mobileszközök beléptetését az Intune-ban"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 679a9c5a008bd94796b8aefe71c7da04174fc6e5
 
 
 ---
@@ -38,6 +39,6 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

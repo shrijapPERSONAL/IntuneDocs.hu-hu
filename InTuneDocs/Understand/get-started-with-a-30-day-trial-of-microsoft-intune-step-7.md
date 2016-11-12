@@ -3,6 +3,7 @@ title: "Az Intune kipróbálásának befejezését követő lépések | Microsof
 description: "Tudnivalók az előfizetésekről és a licencelésről a 30 napos ingyenes Intune-próbaidőszak beállítása után"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: da42d3dc00ebeb145f668200dcc8b17b808c5e70
 
 
 ---
@@ -34,6 +35,6 @@ Az Intune ingyenes próbaverziójáról a következőképpen válthat a fizetős
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

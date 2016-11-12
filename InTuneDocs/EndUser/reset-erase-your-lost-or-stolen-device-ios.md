@@ -2,10 +2,10 @@
 title: "Elveszett vagy ellopott iOS-eszköz alaphelyzetbe állítása (tartalmának végleges törlése) | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
 
 
 ---
 
 
-# Elveszett vagy ellopott iOS-eszköz alaphelyzetbe állítása (tartalmának végleges törlése)
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Elveszett vagy ellopott iOS-eszköz alaphelyzetbe állítása (tartalmának végleges törlése)
 
 Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a készüléken visszaállíthatja az alapértelmezett gyári beállításokat egy másik eszköz Vállalati portál alkalmazásából vagy a [vállalati portál webhelyéről](http://portal.manage.microsoft.com).
 
 > [!WARNING]
 > A gyári beállítások visszaállításával az eszközről törlődnek mind a személyes, mind a munkahelyi adatai. Arról, hogy mi történik, ha alaphelyzetbe állítja az eszközt, további információt a [Mi történik, ha alaphelyzetbe állít egy eszközt a vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) című témakörben találhat.
 
-## Az eszköz visszaállítása a Vállalati portál alkalmazással
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>Az eszköz visszaállítása a Vállalati portál alkalmazással
 
 1.  Egy másik regisztrált eszközről nyissa meg a Vállalati portál alkalmazást, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával.
 
@@ -37,7 +37,7 @@ Ha egy Intune-regisztrációval rendelkező telefon elveszett vagy ellopták, a 
 
 3.  Koppintson az **Alaphelyzetbe állítás** &gt; **Alaphelyzetbe állítás** lehetőségre.
 
-## Az eszköz visszaállítása a Vállalati portál webhellyel
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>Az eszköz visszaállítása a Vállalati portál webhellyel
 
 Kövesse az alábbi lépéseket, vagy tekintse meg a következő videót:
 
@@ -51,8 +51,6 @@ Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

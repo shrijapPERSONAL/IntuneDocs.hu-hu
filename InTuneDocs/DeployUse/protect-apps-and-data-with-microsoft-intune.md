@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Alkalmazások és adatok védelme a Microsoft Intune-nal
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Alkalmazások és adatok védelme a Microsoft Intune-nal
 
 
 Az Intune a vállalati adatokat több technológiai réteg segítségével védi.  Az identitáskezelő rétegben a feltételes hozzáférés gondoskodik a védelemről: a szolgáltatásokhoz csak felügyelt, illetve a szabályoknak megfelelő eszközökkel lehet hozzáférni.  Az ügyfél-alkalmazási rétegben a mobilalkalmazás-kezelés (MAM) gondoskodik az adatvesztés elleni védelemről. Ennek részeként megakadályozza az adatok nem védett alkalmazásokba vagy tárhelyekre történő áthelyezését, illetve az eszköz elvesztése vagy ellopása esetén törli az adatokat.  Az adatvédelem megvalósítása mellett a mobil munkaerő termelékenységének megőrzése érdekében e két védelmi réteget együttesen kell használni.
@@ -46,7 +46,7 @@ A vállalati adatait védheti MAM-szabályzatokkal olyan eszközökön, amelyek 
 
 Ahhoz, hogy egy alkalmazáshoz MAM-szabályzat legyen társítható, az alkalmazásnak tartalmaznia kell a Microsoft Intune szoftverfejlesztői készletet (SDK), vagy használnia kell az alkalmazásburkoló eszközt.
 
-Egyes alkalmazások, mint például a Microsoft Office beépítve tartalmazzák az alkalmazásfejlesztő készletet (SDK-t). A támogatott alkalmazások teljes listája a Microsoft Intune alkalmazáspartnerek oldalán, a [Microsoft Intune mobilalkalmazás-galériában](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) található. Ha szeretné megtekinteni a támogatott forgatókönyveket, platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, válassza ki az adott alkalmazást.
+Egyes alkalmazások, mint például a Microsoft Office beépítve tartalmazzák az alkalmazásfejlesztő készletet (SDK-t). A támogatott alkalmazások teljes listája a Microsoft Intune alkalmazáspartnerek oldalán, a [Microsoft Intune mobilalkalmazás-galériában](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) található. Ha szeretné megtekinteni a támogatott forgatókönyveket, platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, válassza ki az adott alkalmazást.
 
 [Egyéni kialakítású üzleti alkalmazásait](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) is alkalmassá teheti a MAM-szabályzatokkal való használatra.
 
@@ -54,6 +54,6 @@ Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a felhasználó már nem do
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,8 +2,8 @@
 title: "A számítógépe már be van léptetve | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
 
 
 ---
 
 
-# Számítógépe már be van léptetve
+# <a name="your-computer-is-already-enrolled"></a>Számítógépe már be van léptetve
 
 Ha arra vonatkozó hibaüzenetet kap, hogy a számítógépét már regisztrálták, az azt jelenti, hogy a számítógépét már hozzáadták a Vállalati portálhoz, de még nem kapcsolták össze a felhasználói fiókjával. Az alábbi eljárás segítségével kapcsolja össze számítógépét a felhasználói fiókjával, és fejezze be a folyamatot.  
 
@@ -40,6 +40,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

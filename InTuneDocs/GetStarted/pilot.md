@@ -3,8 +3,9 @@ title: "Próbaüzem | Microsoft Intune"
 description: "Javaslatok az Intune üzembe helyezésének próbaüzem fázisához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: cdaa159ba46036e966a3a4585192599908d7cec9
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 813b03f5d172749076723f60d4cfe0b6c50a261c
 
 
 ---
@@ -27,7 +28,7 @@ A próbaüzem során felderítheti azokat a technikai problémákat, amelyekkel 
 A bevezetés próbaüzemi fázisa hatókörének meghatározásához kezdje az alábbi feltáró kérdések áttekintésével.
 
 ## Feltáró kérdések
-Vitassa meg ezeket a kérdéseket a projektcsapattal, hogy felvázolhassa a projekt részleteit, felderíthesse az esetleges kockázatokat, és a meghatározhassa a végrehajtandó feladatokat.
+Vitassa meg ezeket a kérdéseket a projektcsapattal, hogy felvázolhassa a projekt részleteit, felderíthesse az esetleges kockázatokat és meghatározhassa a végrehajtandó feladatokat.
 
 -   A technikai megvalósításon kívül mit kell még tesztelnie a próbaüzem fázisában?
 
@@ -53,7 +54,7 @@ A sikeres próbaüzem kulcsa a jó tervezés, beleértve a sikerességi feltéte
 
 -   Készültségi jelentés a telepítéshez
 
-### Segélyszolgálat
+### Ügyfélszolgálat
 A proaktív segítségnyújtást tartalmazó támogatási terv számottevően növelheti a felhasználói magabiztosságot, ami elégedett felhasználókat és fokozott mértékű átállást eredményez. A segélyszolgálatnak ismernie kell az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] megvalósításához kapcsolódó változásokat, valamint az esetleg felmerülő problémákat, hogy gyors megoldást tudjon találni az egyes problémákra. A segélyszolgálat visszajelzést küldhet a tervezési csapatnak, ha a tervezési megközelítés problémákat okoz a felhasználóknál.
 
 ### Tájékoztatás
@@ -108,6 +109,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet a **Próba
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

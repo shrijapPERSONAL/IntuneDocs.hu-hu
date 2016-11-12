@@ -2,10 +2,10 @@
 title: "Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással | Microsoft Intune"
 description: "Részletes naplózás használata az eszközproblémák rendszergazdai megoldásának támogatásához"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 828e3d65659e3a75a3a798e614504cba5d3a28cc
-ms.openlocfilehash: 203c1170f8072d64447125b3e6cf5c3b238bccee
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1771b5a67f0f8580068c750a818d6b7a45c23796
 
 
 ---
 
 
-# Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással
+# <a name="use-verbose-logging-to-help-your-it-admin-fix-device-issues"></a>Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással
 
 Miután regisztrálta androidos eszközét az Intune-ban, a *Részletes naplózás* beállítással megadhatja, hogy a Vállalati portál alkalmazás és az Intune által kezelt alkalmazások részletes naplókban rögzítsék az eszközön zajló műveleteket. Ezekkel a naplókkal a rendszergazdák meg tudják oldani a vállalati portál vagy az Intune által kezelt alkalmazások használatakor fellépő esetleges problémákat. A Részletes naplózás beállítás alapértelmezés szerint engedélyezve van az eszközön, a rendszergazdának elküldött naplókban pedig szerepel a felhasználó e-mail-címe.
 
@@ -32,6 +32,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

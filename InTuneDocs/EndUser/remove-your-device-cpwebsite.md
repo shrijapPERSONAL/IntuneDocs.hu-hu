@@ -2,8 +2,8 @@
 title: "Eszköz eltávolítása a Vállalati portálról | Microsoft Intune"
 description: "Eszköz eltávolítása a Vállalati portálról"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
-ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 
 ---
 
 
-# Eltávolíthatja az eszközét a vállalati portálról
+# <a name="remove-your-device-from-the-company-portal"></a>Eltávolíthatja az eszközét a vállalati portálról
 
 Ha úgy dönt, hogy eszköze Intune-beli és a rendszergazda által végzett felügyeletére nincs már szükség a továbbiakban, akkor az eszközt a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) használatával el is távolíthatja a Vállalati portálról. A Vállalati portál webhelye egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti. A Vállalati portál webhelyen végre tudja hajtani a legtöbb, Vállalati portál-alkalmazáson elérhető feladatot.
 
@@ -40,10 +40,10 @@ Az eszköz eltávolítása:
 
 Az eszköz eltávolítása megtörtént.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. A rendszergazda elérhetőségét a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja.
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

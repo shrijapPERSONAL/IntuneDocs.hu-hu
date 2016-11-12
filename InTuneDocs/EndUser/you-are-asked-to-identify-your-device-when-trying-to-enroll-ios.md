@@ -2,10 +2,10 @@
 title: "A regisztráláskor a rendszer felkéri az eszköz azonosítására | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 
 ---
 
 
-# A regisztráláskor a rendszer felkéri az eszköz azonosítására
+# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>A regisztráláskor a rendszer felkéri az eszköz azonosítására
 
 Ha az Intune-ban próbálja meg regisztrálni iOS vagy Mac OS X rendszerű eszközét, és megjelenik egy képernyő, amely felszólítja az eszköz azonosítására, az azt jelenti, hogy legalább az egyik eszközét már regisztrálták, és a fiókjához rendelték a Munkahelyi portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Munkahelyi portál alkalmazás megfelelően működjön, meg kell állapítania, hogy a használt eszközt regisztrálták-e már az Intune-ban.
 
@@ -34,6 +34,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

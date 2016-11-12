@@ -2,8 +2,8 @@
 title: "Hibaüzenetet kap a Vállalati portál alkalmazás használatakor | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# Hibaüzenetet kap a Vállalati portál alkalmazás használatakor
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Hibaüzenetet kap a Vállalati portál alkalmazás használatakor
 
 Ha iOS-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazás használata során, a probléma megoldásához elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ez többféleképpen is lehetséges:
 
@@ -32,8 +32,10 @@ Ha iOS-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazá
 
 -   A Munkahelyi portál alkalmazásba belépve rázza meg az eszközt, majd a diagnosztikai riasztás megjelenésekor koppintson az **E-mail küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
 
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

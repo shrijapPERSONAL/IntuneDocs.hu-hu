@@ -3,8 +3,9 @@ title: "A koncepció igazolása | Microsoft Intune"
 description: "Javaslatok az Intune üzembe helyezésének koncepcióigazolási fázisához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 57f6d51a3f1e05a7edd260b0923d099510114a9f
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 5b19835e7f726e23d402bbab408796cad9028bd0
 
 
 ---
@@ -27,7 +28,7 @@ A koncepció igazolása azért fontos, hogy a telepítés megvalósíthatóság�
 A koncepció igazolása meghatározásához és hatókörének felméréséhez kezdje a munkát a feltáró kérdések áttekintésével.
 
 ## Feltáró kérdések
-Vitassa meg ezeket a kérdéseket a projektcsapattal, hogy felvázolhassa a projekt részleteit, felderíthesse az esetleges kockázatokat, és a meghatározhassa a végrehajtandó feladatokat.
+Vitassa meg ezeket a kérdéseket a projektcsapattal, hogy felvázolhassa a projekt részleteit, felderíthesse az esetleges kockázatokat és meghatározhassa a végrehajtandó feladatokat.
 
 -   Melyek azok a fő helyzetek, amelyekre az Intune-nak megoldást kell adnia, hogy megfeleljen a szervezet eszközfelügyeleti igényeinek?
 
@@ -41,7 +42,7 @@ Ebben a szakaszban áttekintés kap a bevezetés adott fázisához tartozó fók
 ### Tervezés
 Már a koncepció igazolására szolgáló infrastruktúra telepítése előtt ismernie kell az ellenőrzendő helyzeteket és az ellenőrzés elvégzéséhez szükséges elemeket.
 
-### Segélyszolgálat
+### Ügyfélszolgálat
 A segélyszolgálatnak erre a fázisra nem kell felkészülnie, mert ez nem érint éles felhasználókat vagy eszközöket. Mindazonáltal ez lehetőséget nyújt a segélyszolgálat számára, hogy megismerkedjen az Intune telepítésével és üzemeltetésével.
 
 ### Tájékoztatás
@@ -78,6 +79,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet **A koncep
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 
