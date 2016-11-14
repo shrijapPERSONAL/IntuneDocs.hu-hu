@@ -3,8 +3,9 @@ title: "A projekt hatóköre | Microsoft Intune"
 description: "Javaslatok az Intune üzembe helyezésének projekthatókör-fázisához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 8bd547eb70f1b933a9dee578a9f843b4cbdd7b57
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 500d97e79471ce78434729457bc4c6b82e23aa1e
 
 
 ---
@@ -60,7 +61,7 @@ A hatókör fázisában elsősorban a tervezéssel és az előkészítéssel kel
 
 
  > [!NOTE]
- > 
+ >
  > Az alábbi sablonok segíthetnek a projekt hatókörének kialakításában:
  > > - [Intune vagy Intune-nal bővített Configuration Manager döntési sablon](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
  > - [Tervezősablon mobilalkalmazásokhoz](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
@@ -113,6 +114,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet **A projek
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

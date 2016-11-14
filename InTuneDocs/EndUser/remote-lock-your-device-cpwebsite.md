@@ -2,7 +2,8 @@
 title: "Az eszköz távoli zárolása a Vállalati portál webhelyéről | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
 
 
 ---
 
 
-# Az eszköz távoli zárolása a Vállalati portál webhelyéről
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
 
 Ha elvesztette vagy ellopták az eszközét, a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) Távoli zárolás funkciójával zárolhatja. A távoli zárolás a következő típusú eszközök esetén alkalmazható:
 
@@ -63,6 +64,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

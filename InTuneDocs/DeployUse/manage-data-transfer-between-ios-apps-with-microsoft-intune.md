@@ -3,6 +3,7 @@ title: "iOS-alkalmazások közti adatátvitel felügyelete | Microsoft Intune"
 description: "Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal
-## IOS-alkalmazások felügyelete
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal
+## <a name="manage-ios-apps"></a>IOS-alkalmazások felügyelete
 A vállalati adatok védelmébe tartozik annak biztosítása, hogy csak a vállalat által felügyelt alkalmazásokkal lehessen fájlokat átvinni.  Az iOS-alkalmazásokat az alábbi módokon felügyelheti:
 
 -   Vállalati adatvesztés megakadályozása MAM-szabályzatok konfigurálásával az alkalmazások számára. Az ilyen alkalmazásokat **szabályzattal felügyelt** alkalmazásoknak nevezzük.
@@ -28,7 +29,7 @@ A vállalati adatok védelmébe tartozik annak biztosítása, hogy csak a válla
 -   Az **MDM-csatornán** keresztül is telepíthet és felügyelhet alkalmazásokat.  Ehhez az eszközöket az MDM-megoldásba kell regisztrálni. Ezek **házirenddel felügyelt** alkalmazások vagy más felügyelt alkalmazások is lehetnek.
 
 Az iOS-eszközök **Megnyitási engedélyek felügyelete** szolgáltatásával a fájlátvitel az **MDM-csatornával** telepített alkalmazásokra korlátozható. A Megnyitási engedélyek felügyeletének korlátozásai a konfiguráció beállításaiban adhatók meg, és a mobileszköz-kezelési megoldás használatával telepíthetők.  Amikor a felhasználó telepíti a központilag telepített alkalmazást, a rendszer alkalmazza a beállított korlátozásokat.
-##  MAM használata iOS-alkalmazásokban
+##  <a name="using-mam-with-ios-apps"></a>MAM használata iOS-alkalmazásokban
 A mobilalkalmazás-felügyeleti (MAM-) szabályzatok az iOS **Megnyitási engedélyek felügyelete** szolgáltatásával együtt használhatók a vállalati adatok védelméhez, a következő módokon:
 
 -   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** a mobilalkalmazás-kezelési megoldás szabályzati beállításait beállíthatja a következőre: **Az alkalmazás átadhat adatokat házirend által felügyelt alkalmazásoknak**. Ha a végfelhasználó nem házirenddel felügyelt alkalmazásban nyit meg egy védett fájlt, a fájl nem olvasható.
@@ -41,7 +42,7 @@ Annak biztosításához, hogy a harmadik féltől származó MDM megoldás segí
 > [!IMPORTANT]
 > A felhasználói UPN-beállításra csak a külső MDM által felügyelt eszközökre telepített alkalmazások esetén van szükség.  Az Intune-nal felügyelt eszközök esetén erre a beállításra nincs szükség.
 
-## A felhasználói UPN-beállítás konfigurálása
+## <a name="configure-user-upn-setting"></a>A felhasználói UPN-beállítás konfigurálása
 Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök esetén van szükség. Az alább leírt eljárás egy általános módszer az UPN-beállítás és az eredményül kapott végfelhasználói élmény megvalósításához:
 
 
@@ -49,11 +50,11 @@ Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök eset�
 
 2.  A felügyelni kívánt alkalmazásokat és az e-mail profilt telepítse **saját külső MDM-megoldásával** a 3. és 4. lépésekben leírt beállítások használatával.
 
-3.  Az alkalmazást a következő alkalmazáskonfigurációs beállításokkal telepítse: key=IntuneMAMUPN, Value=<felhasznalo@vallalat.com> [példa: ‘IntuneMAMUPN’, ‘janos@microsoft.com’]
+3.  Az alkalmazást a következő alkalmazáskonfigurációs beállításokkal telepítse: key=IntuneMAMUPN, Value=<username@company.com> [például: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  Telepítse a Megnyitási engedélyek felügyelete házirendet a regisztrált eszközökre.
 
-### Végfelhasználói élmény példája
+### <a name="example-end-user-experience"></a>Végfelhasználói élmény példája
 
 1.  A végfelhasználó telepíti a Microsoft Word alkalmazást az eszközre.
 
@@ -70,11 +71,11 @@ Erre a konfigurációra külső MDM-megoldás által felügyelt eszközök eset�
 
 6.  Mostantól az adatátvitel sikeres lesz, és a dokumentum vállalati identitásként van megjelölve az alkalmazásban. Ezenkívül a rendszer munkahelyi környezetben kezeli az adatokat, és ennek megfelelően alkalmazza a szabályzatbeállításokat.
 
-### További információ
+### <a name="see-also"></a>További információ
 [Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal a Microsoft Intune segítségével](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

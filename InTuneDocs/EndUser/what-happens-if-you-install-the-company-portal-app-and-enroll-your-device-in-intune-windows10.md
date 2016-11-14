@@ -2,9 +2,10 @@
 title: "Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows 10-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/01/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c25598de9fb97df287f372484fe052fd36dadf88
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 ---
 
 
-# Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows 10-eszköz Intune-beli regisztrálásakor?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows 10-eszköz Intune-beli regisztrálásakor?
 
-Miután telepítette a Vállalati portál alkalmazást, és annak használatával regisztrálta a Windows 10 Enterprise vagy Windows 10 Professional rendszerű eszközét az Intune-ban, lehetősége nyílik a következőkre:
+Miután telepítette a Vállalati portál alkalmazást, és annak használatával regisztrálta a Windows 10 Enterprise vagy Windows 10 Professional rendszerű eszközét az Intune-ban, a Vállalati portál alkalmazásban lehetősége nyílik a következőkre:
 
--   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat
+-   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
--   Letöltheti a vállalati alkalmazásokat a vállalati portálról
+-   Letöltheti a vállalati alkalmazásokat a Vállalati portálról.
 
--   Automatikusan konfigurálhatja vállalati e-mail fiókját
+-   Automatikusan beállíthatja a vállalati e-mail-fiókját.
 
--   Ha elveszíti a telefonját, visszaállíthatja a gyári beállításait
+-   Ha elveszíti a telefonját, visszaállíthatja a gyári beállításait.
 
 A regisztrálás lépéseiért lásd: [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md). A [Milyen adatokhoz jut hozzá a rendszergazda, ha regisztrálom az eszközömet az Intune-ban?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) című szakaszból megtudhatja, hogy a rendszergazda mit láthat az eszközén.
 
@@ -41,23 +42,20 @@ Számítógép hozzáadásakor:
 
 -   Lehetséges, hogy az Intune Endpoint Protection is települ a számítógépre. Ez egy vírusok és kártevő szoftverek elleni védelmi alkalmazás.
 
--   Az IT rendszergazda leltárt készíthet a számítógépre telepített szoftverekről, ideértve az Ön által személyes használatra telepített szoftvereket is.
+-   A rendszergazda leltárt készíthet a számítógépre telepített szoftverekről, ideértve az Ön által személyes használatra telepített szoftvereket is.
 
 -   Elképzelhető, hogy el kell fogadnia a vonatkozó használati feltételeket.
 
--   A IT rendszergazda adatokat gyűjthet a számítógép merevlemezéről, illetve adatokat törölhet róla. Az IT rendszergazda akár a merevlemez teljes tartalmát is törölheti.
+-   A rendszergazda adatokat gyűjthet a számítógép merevlemezéről, illetve adatokat törölhet róla. A rendszergazda akár a merevlemez teljes tartalmát is törölheti.
 
--   Az IT rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
+-   A rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
 
--   Az IT rendszergazda házirendeket léptethet életbe a számítógépen. Lehetséges például, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen; ebből fakadóan kizárhatja magát a számítógépről, vagy letörölheti az összes adatot a számítógép merevlemezéről, ha túlságosan sokszor adja meg hibásan a jelszót.
+-   A rendszergazda szabályzatokat léptethet életbe a számítógépen. Például előfordulhat, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen. A rendszergazda azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót a számítógépről, vagy letörölheti a számítógép merevlemezén lévő összes adatot, ha túl sokszor próbálkozott.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
-### További információ
-[Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

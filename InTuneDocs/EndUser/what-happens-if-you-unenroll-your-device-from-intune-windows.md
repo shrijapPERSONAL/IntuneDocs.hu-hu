@@ -2,9 +2,10 @@
 title: "Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,34 +15,30 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
 
 
 ---
 
 
-# Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból?
+# <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Mi történik, ha törli a Windows-eszköz regisztrációját az Intune-ból?
 
-Ha többet szeretne megtudni arról, hogy mi történik, kattintson a megfelelő eszközhöz tartozó hivatkozásra a fenti „A cikk tartalma” részben.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 vagy Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows 8.1 vagy Windows RT rendszert futtató Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Használja a lap jobb oldalán a **Cikk tartalma** szakaszban lévő hivatkozásokat, és keresse meg a használt eszköz típusára vonatkozó információkat.
 
 
-## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
+## <a name="windows-10-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
 -   Az eszköz többé nem jelenik meg a Vállalati portálon, és nem telepíthet alkalmazásokat a Vállalati portálról.
 
 -   Ha telepítette az Intune ügyfélszoftvert, a rendszer eltávolítja a számítógépről.
 
--   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is van telepítve, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően újra engedélyezni lehet ezt az alkalmazást. Javasoljuk, hogy a Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
+-   Megtörténik az Intune Endpoint Protection szoftver eltávolítása a számítógépről. Ha a számítógépre másik vírusvédelmi alkalmazás is telepítve van, és az le van tiltva, az Intune Endpoint Protection eltávolítását követően lehet újra engedélyezni ezt az alkalmazást. A Vállalati portálról való eltávolítása után ellenőrizze a számítógépet.
 
     > [!IMPORTANT]
     > Ha nem történik meg a másik vírusvédelmi szoftver újraengedélyezése, és egyéb vírusvédelmi szoftver sincs telepítve, akkor a számítógép védtelen maradhat a vírusokkal és az egyéb kártevő szoftverekkel szemben.
 
--   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása) hatályukat veszítik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása) hatályukat veszítik.
 
 -   A számítógép többé nem kapja meg automatikusan a szoftverfrissítéseket és a vírusdefiníciós frissítéseket az Intune szolgáltatástól. Azonban a számítógép a beállításaitól függően továbbra is kaphat frissítéseket a Windows Server Update Services, a Windows Update vagy a Microsoft Update használatával.
 
@@ -55,24 +52,24 @@ Ezenkívül Windows 8.1 esetén:
 
 -   Előfordulhat, hogy az eszközről többé nem lehet elérni egyes vállalati erőforrásokat, például fájlmegosztásokat és belső webhelyeket.
 
-## Windows 10 Mobile, Windows Phone 8.1 vagy Windows Phone 8
+## <a name="windows-10-mobile-and-windows-phone-81"></a>Windows 10 Mobile és Windows Phone 8.1
 
--   A Vállalati portál alkalmazást eltávolítja az eszközről, vagyis az eszköz nem jelenik meg többé a Vállalati portálon, és nem tud telepíteni alkalmazásokat a Vállalati portál alkalmazásból vagy webhelyről.
+-   A rendszer eltávolítja a Vállalati portál alkalmazást az eszközről. Ez azt jelenti, hogy az eszköz többé nem jelenik meg a Vállalati portálon, és nem telepíthet alkalmazásokat a Vállalati portál alkalmazásból vagy a Vállalati portál webhelyről.
 
 -   Az eszközön többé nem használhatók a vállalati alkalmazások és adatok.
 
--   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.
 
     > [!IMPORTANT]
-    > Az egyetlen kivételt a titkosítási házirendek jelentik, amelyek továbbra is érvényben maradnak. Ha a vállalati házirend értelmében titkosítani kellett a Windows Phone rendszerű eszközt, akkor a telefon titkosításának feloldására az egyetlen lehetőség a telefon alaphelyzetbe állítása, amely a Windows Phone **Beállítások** menüjéből végezhető el.
+    > Az egyetlen kivételt a titkosítási házirendek jelentik, amelyek továbbra is érvényben maradnak. Ha a vállalati házirend értelmében titkosítani kellett a Windows Phone rendszerű eszközt, akkor a telefon titkosításának feloldására az egyetlen lehetőség a telefon alaphelyzetbe állítása, amely a **Beállítások** menüben végezhető el.
 
-## Windows 8.1 vagy Windows RT rendszert futtató Windows RT
+## <a name="windows-rt-running-windows-81"></a>Windows 8.1 rendszert futtató Windows RT
 
--   A Vállalati portál alkalmazást eltávolítja az eszközről, vagyis az eszköz nem jelenik meg többé a Vállalati portálon, és nem tud telepíteni alkalmazásokat a Vállalati portálról.
+-   A rendszer eltávolítja a Vállalati portál alkalmazást az eszközről. Ez azt jelenti, hogy az eszköz többé nem jelenik meg a Vállalati portálon, és nem telepíthet alkalmazásokat a Vállalati portálról.
 
 -   Az eszközön többé nem használhatók a vállalati alkalmazások és adatok.
 
--   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.
 
 -   Előfordulhat, hogy az eszközről többé nem tud csatlakozni a vállalati hálózatra Wi-Fi- vagy virtuális magánhálózati (VPN) kapcsolaton keresztül.
 
@@ -82,17 +79,16 @@ Ezenkívül Windows 8.1 esetén:
 
 Windows RT-alapú eszköz eltávolításakor a következők történnek:
 
--   A Vállalati portál alkalmazást eltávolítja az eszközről, vagyis az eszköz nem jelenik meg többé a Vállalati portálon, és nem tud telepíteni alkalmazásokat a Vállalati portálról.
+-   A rendszer eltávolítja a Vállalati portál alkalmazást az eszközről. Ez azt jelenti, hogy az eszköz többé nem jelenik meg a Vállalati portálon, és nem telepíthet alkalmazásokat a Vállalati portálról.
 
 -   Az eszközön többé nem használhatók a vállalati alkalmazások és adatok.
 
--   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: "Csoportok használata felhasználók és eszközök kezelésére a Micro
 description: "Csoportok létrehozása és kezelése a Csoportok munkaterület használatával."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +37,11 @@ Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ba
 Önök a tudomásunkra hozták, hogy a nagyvállalati mobilitás és biztonság területe egészén egységes csoportosítást és célcsoport-kezelést szeretnének. Mi pedig hallgattunk Önökre. Visszajelzéseik alapján hamarosan Azure Active Directory-alapú biztonsági csoportokká alakítjuk át az Intune-csoportokat. Ez a változás egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Ez annyit jelent, hogy a jövőben nem kell csoportokat duplikálniuk a különböző szolgáltatásokhoz. A Windows PowerShell és a Microsoft Graph alkalmazásának lehetősége egyúttal bővíthetőséget biztosít.
 
 ### Hogyan érint ez engem jelen pillanatban?
-A változás jelen pillanatban nem érinti Önt. A jövőben azonban:
+Az Intune-ügyfeleket most nem érinti a változás. A jövőben azonban:
 
--   2016 szeptemberétől a havi szolgáltatásverzió kiadása után létesített új fiókok már az Azure AD-alapú biztonsági csoportokat fogják használni az Intune-os felhasználói csoportok helyett.   
--   2016 októberétől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és az eszközalapú csoportokat is az Azure AD-portálon kezelik majd. A meglévő ügyfelekre ez nem lesz hatással.
--   2016 novemberében az Intune-termékcsapat elkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyikét Azure AD-alapú biztonsági csoportokba telepítjük át. Az áttelepítés 2016. novemberben kezdődik, és kötegekben történik. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
+-   Az új fiókok az Azure AD biztonsági csoportjait fogják használni az Intune *felhasználói* csoportjai helyett.   
+-   2016 novemberétől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és az eszközalapú csoportokat is az Azure AD-portálon kezelik majd. A meglévő ügyfelekre ez nem lesz hatással.
+-   2016 decemberében az Intune-termékcsapat megkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyikét Azure AD-alapú biztonsági csoportokba telepítjük át. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
 
 
 ### Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
@@ -204,6 +205,6 @@ Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

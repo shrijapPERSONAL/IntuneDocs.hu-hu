@@ -2,9 +2,10 @@
 title: "IOS-eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
 description: "Egy iOS-eszköz regisztrációjának törlését mutatja be az Intune-ból"
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
 
 
 ---
 
 
-# IOS-eszköz regisztrációjának törlése az Intune-ból
+# <a name="unenroll-your-ios-device-from-intune"></a>IOS-eszköz regisztrációjának törlése az Intune-ból
 
 Amikor törli az iOS-alapú eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz, és kikerül az Intune felügyelete alól.
 
@@ -56,7 +57,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Üzletági (LOB) alkalmazások védelme nem regisztrált eszközökön |
 description: "Ez a témakör ezt ismerteti, hogyan készítheti elő az egyéni üzletági alkalmazásait arra, hogy alkalmazhassa az adatveszteség megakadályozását segítő mobilalkalmazás-kezelési szabályzatokat."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

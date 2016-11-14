@@ -1,10 +1,11 @@
 ---
-title: "A Windows-eszköz nem kompatibilis az operációs rendszer maximális verziójával | Microsoft Intune"
+title: "A Windows-eszköz nem kompatibilis az operációs rendszer maximális verziójára vonatkozó beállítással | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 14fb7b612b62a4fa809b3f6df37f4c3ce98d3e33
 
 
 ---
 
 
-# A Windows-eszköz nem kompatibilis az operációs rendszer maximális verziójával
+# <a name="windows-device-doesnt-comply-with-the-setting-for-the-latest-operating-system-version"></a>A Windows-eszköz nem kompatibilis a legújabb operációs rendszerre vonatkozó beállítással
 
-A rendszergazda beállította az operációs rendszernek azt a maximális verzióját, amelyet Ön használhat a Windows-eszközén, de az eszköz nem felel meg ennek a beállításnak. A rendszergazdától kell megérdeklődnie, hogy melyik az a maximális operációsrendszer-verzió, amelyet használhat az eszközén. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
+A rendszergazda meghatározta az operációs rendszernek azt a legújabb verzióját, amelyet Ön használhat a Windows-eszközén, de az eszköz nem felel meg ennek a beállításnak. A rendszergazdától kell megérdeklődnie, hogy melyik az a legújabb operációsrendszer-verzió, amelyet használhat az eszközén. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

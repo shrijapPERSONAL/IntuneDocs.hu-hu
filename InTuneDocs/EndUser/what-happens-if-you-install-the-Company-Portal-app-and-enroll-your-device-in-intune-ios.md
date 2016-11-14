@@ -2,9 +2,10 @@
 title: "Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 A Vállalati portál alkalmazás telepítése és az iOS- vagy Mac OS X-eszköz Intune-ban való regisztrálása után a Vállalati portál alkalmazásban a következőkre nyílik lehetősége:
 
--   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat
+-   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
--   Letöltheti a vállalati alkalmazásokat a vállalati portálról
+-   Letöltheti a vállalati alkalmazásokat a vállalati portálról.
 
--   Ha a telefonját elveszíti vagy ellopják, távolról visszaállíthatja a gyári beállításait
+-   Ha a telefonját elveszíti vagy ellopják, távolról visszaállíthatja a gyári beállításait.
 
--   Automatikusan konfigurálhatja vállalati e-mail fiókját
+-   Automatikusan konfigurálhatja vállalati e-mail-fiókját.
 
 Az eszköz Intune-beli regisztrálásával engedélyezi a rendszergazdának az eszköz kezelését, így biztosítható az eszközön tárolt munkahelyi adatok védelme.
 
@@ -95,6 +96,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

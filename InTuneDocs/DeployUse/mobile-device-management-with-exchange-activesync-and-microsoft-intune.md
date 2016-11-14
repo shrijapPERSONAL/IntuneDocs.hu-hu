@@ -3,6 +3,7 @@ title: "Exchange ActiveSync-alapú eszközfelügyelet | Microsoft Intune"
 description: "Mobileszközök kezelése Exchange ActiveSync (EAS) felügyelettel az Exchange-összekötő segítségével"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
@@ -29,7 +30,7 @@ Az Exchange használatához olyan szabálykészletre van szükség, amely meghat
 [Mobileszközökre vonatkozó Exchange-hozzáférési szabályok](exchange-access-rules-for-mobile-devices.md)
 
 ## Az Exchange Connector telepítése
-Az Exchange Connector lehetővé teszi az Exchange-telepítésnek az Intune-konzolon történő kezelését. Először telepítenie és konfigurálnia kell a megfelelő Intune-Exchange összekötőt. Válassza ki a megfelelő lehetőséget annak alapján, hogy helyszíni vagy felhőalapú szolgáltatásként üzemeltetett Exchange-kiszolgálót használ:
+Az Exchange Connector lehetővé teszi az Exchange-telepítésnek az Intune-konzolon történő kezelését. Először el kell végeznie a megfelelő Intune-Exchange összekötő telepítését és beállítását. Válassza ki a megfelelő lehetőséget annak alapján, hogy helyszíni vagy felhőalapú szolgáltatásként üzemeltetett Exchange-kiszolgálót használ-e:
 
 -   [Az Intune beállítása az Exchange Online vagy az új, dedikált Exchange Online környezetekhez](intune-service-to-service-exchange-connector.md)
 -   [Az Intune-összekötő telepítése helyszíni Exchange-kiszolgálókhoz vagy a régebbi dedikált Exchange Online környezetekhez](intune-on-premises-exchange-connector.md)
@@ -46,6 +47,6 @@ Végül [az EAS által felügyelt mobileszközökön tárolt vállalati adatokat
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,9 +2,10 @@
 title: "A regisztráláskor a rendszer felkéri az eszköz azonosítására | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 5db6e8e4b27a00ce159fb700139db45a45e48b02
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 
 ---
 
 
-# A regisztráláskor a rendszer felkéri az eszköz azonosítására
+# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>A regisztráláskor a rendszer felkéri az eszköz azonosítására
 
-Ha az Intune-ban próbálja meg regisztrálni iOS vagy Mac OS X rendszerű eszközét, és egy olyan képernyőt lát, amely az eszköz azonosítására kéri fel, akkor legalább az egyik eszköze már regisztrálva van, és a fiókjához lett rendelve a Vállalati portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Vállalati portál alkalmazás megfelelően működjön, azonosítania kell, hogy a használt eszköz regisztrálva lett-e az Intune-nal.
+Ha az Intune-ban próbálja meg regisztrálni iOS vagy Mac OS X rendszerű eszközét, és megjelenik egy képernyő, amely felszólítja az eszköz azonosítására, az azt jelenti, hogy legalább az egyik eszközét már regisztrálták, és a fiókjához rendelték a Munkahelyi portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Munkahelyi portál alkalmazás megfelelően működjön, meg kell állapítania, hogy a használt eszközt regisztrálták-e már az Intune-ban.
 
 1. Ha látja az eszközt ebben a listában, koppintson rá. Ha nem látja, koppintson az **új eszköz** elemre.
 2. Koppintson a **folytatás** gombra.
@@ -33,8 +34,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

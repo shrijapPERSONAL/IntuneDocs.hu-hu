@@ -2,9 +2,10 @@
 title: "PIN-kód vagy jelszó beállítása | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b6fe892098e382079a6259c4fe192baee501f74a
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
 
 
 ---
 
-# PIN kód vagy jelszó beállítása
+# <a name="set-your-pin-or-password"></a>PIN kód vagy jelszó beállítása
 
-A rendszergazda megkövetelheti, hogy Ön PIN-kódot vagy jelszót állítson be Android-eszközén, ha az Intune segítségével éri el a munkahelyi vagy az iskolai adatokat. Ha a PIN-kód vagy jelszó megadását kérő üzenet jelenik meg, kövesse az alábbi lépéseket.
+Ha az Intune-t használva fér hozzá munkahelyi vagy iskolai adataihoz, a rendszergazda megkövetelheti, hogy állítson be PIN-kódot vagy jelszót az androidos eszközén. Elképzelhető, hogy olyan üzenetek jelennek meg, amelyek hosszabb vagy összetettebb PIN-kód vagy jelszó megadását kérik a fokozott biztonság érdekében.  
+
+Az alábbi lépéseket követve állíthatja be a PIN-kódot vagy a jelszót.
 
 1.  Koppintson a **Settings** (Beállítások) &gt; **Security** (Biztonság) &gt; **Screen Lock** (Képernyőzárolás) &gt; **Password** (Jelszó) elemre.
 
@@ -33,7 +36,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

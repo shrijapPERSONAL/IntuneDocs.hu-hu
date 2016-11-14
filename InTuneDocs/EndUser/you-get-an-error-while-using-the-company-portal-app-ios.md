@@ -2,7 +2,8 @@
 title: "Hibaüzenetet kap a Vállalati portál alkalmazás használatakor | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,28 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# Hibaüzenetet kap a Vállalati portál alkalmazás használatakor
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Hibaüzenetet kap a Vállalati portál alkalmazás használatakor
 
 Ha iOS-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazás használata során, a probléma megoldásához elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ez többféleképpen is lehetséges:
 
--   A hibáról értesítő üzenetek **Jelentés** gombjára koppintva.
+-   A hibáról értesítő üzenetben koppintson a **Jelentés** gombra.
 
--   A Vállalati portál alkalmazás **Névjegy** képernyőjén a **Diagnosztikai jelentés küldése** elemre koppintva.
+-   A Munkahelyi portál alkalmazás **Névjegy** képernyőjén koppintson a **Diagnosztikai jelentés küldése** elemre.
 
--   Miközben nyitva van a Vállalati portál alkalmazás, az eszköz megrázása, majd a diagnosztikai riasztás megjelenése után az **E-mail** elemre koppintva. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
+-   A Munkahelyi portál alkalmazásba belépve rázza meg az eszközt, majd a diagnosztikai riasztás megjelenésekor koppintson az **E-mail küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings** (Beállítások) &gt; **Company Portal** (Vállalati portál) beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture** (Rázó kézmozdulat) beállítás.
 
-
-
-
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO3-->
+
+<!--HONumber=Nov16_HO2-->
 
 

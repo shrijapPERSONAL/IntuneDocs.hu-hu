@@ -3,6 +3,7 @@ title: "A SharePoint Online-hoz való hozzáférés korlátozása | Microsoft In
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati adatokhoz való hozzáférést a SharePoint Online-on."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

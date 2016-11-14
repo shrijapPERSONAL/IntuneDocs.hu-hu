@@ -2,9 +2,10 @@
 title: "Hogyan találhatom meg az eszköz sorozatszámát? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 3831b4897596c7b49caaee76cb7063bab4399216
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b045a49eb7994e686717f69e118265a4331ec4f7
 
 
 ---
 
 
-# Hogyan találhatom meg az eszköz sorozatszámát?
+# <a name="how-do-i-find-the-serial-number-on-my-device"></a>Hogyan találhatom meg az eszköz sorozatszámát?
 
 Az iOS 8.0-ás és újabb verziójú operációs rendszert futtató eszközökön koppintson a **Beállítások** ikonra, koppintson az **Általános** > **Névjegy** elemre, majd görgessen lefelé, amíg meg nem látja a **Sorozatszám** elemet.
 
@@ -31,6 +32,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

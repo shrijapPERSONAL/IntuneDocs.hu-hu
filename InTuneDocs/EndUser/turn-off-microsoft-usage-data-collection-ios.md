@@ -2,7 +2,8 @@
 title: "Az iOS használatára vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -21,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
+# <a name="turn-off-microsoft-usage-data-collection"></a>A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 
 Termékei és szolgáltatásai fejlesztése végett a Microsoft automatikus műveletekkel gyűjti a Vállalati portál alkalmazás megbízhatóságát, teljesítményét és használatának módját jelző névtelen adatokat.
 

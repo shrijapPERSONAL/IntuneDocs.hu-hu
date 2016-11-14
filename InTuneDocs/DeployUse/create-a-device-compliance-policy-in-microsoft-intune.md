@@ -3,6 +3,7 @@ title: "Eszközmegfelelőségi szabályzat létrehozása | Microsoft Intune"
 description: "Létrehozhat egy megfelelőségi szabályzatot a vállalati adatokhoz hozzáférő mobileszközök és számítógépek biztonságossá tételéhez."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

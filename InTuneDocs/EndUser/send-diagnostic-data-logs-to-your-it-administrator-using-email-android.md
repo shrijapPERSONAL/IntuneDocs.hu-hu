@@ -1,8 +1,9 @@
 ---
-title: "Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a rendszergazdának | Microsoft Intune"
-description: 
+title: "Diagnosztikai adatokat tartalmazó naplók elküldése a rendszergazdának e-mailben | Microsoft Intune"
+description: "Adatnaplók elküldése e-mailben androidos eszközön"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
+ms.sourcegitcommit: 6be7193a5f04768a59b5c73fb9c2f51241156ada
+ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 
 
 ---
 
 
-# Diagnosztikai adatokat tartalmazó naplófájlok elküldése e-mailben a rendszergazdának
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának
 
-Ha hiba lép fel Android-eszközén az iskolai vagy a munkahelyi alkalmazások használata közben, netán a Vállalati portál alkalmazás használata közben, elküldheti a rendszergazdának a diagnosztikai adatokról készült naplófájlokat, hogy ő azonosíthassa, majd elháríthassa a hibát. Amennyiben az összes részletet rögzíteni szeretné a naplófájlokban, hogy a rendszergazda könnyebben kideríthesse, mi is a probléma, kapcsolja be a Részletes naplózás beállítást. További tudnivalók: [Részletes naplózás](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+Ha hiba lép fel androidos eszközén az iskolai vagy a munkahelyi alkalmazások használata közben, netán a Vállalati portál alkalmazás használata során, elküldheti a rendszergazdának a diagnosztikai adatokat tartalmazó naplókat, hogy ő diagnosztizálhassa, majd elháríthassa a hibát. Amennyiben az összes részletet rögzíteni szeretné a naplókban, hogy a rendszergazda könnyebben kideríthesse, mi is a probléma, kapcsolja be a részletes naplózást. A részletes naplózásról [Az androidos eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) című témakörben olvashat bővebben.
 
-Naplófájljainak elküldése e-mailben a rendszergazdának:
+Naplók elküldése a rendszergazdának e-mailben:
 
 1.  Nyissa meg a Vállalati portál alkalmazást.
 
@@ -39,6 +40,7 @@ Naplófájljainak elküldése e-mailben a rendszergazdának:
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

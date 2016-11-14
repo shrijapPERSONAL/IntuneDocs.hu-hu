@@ -4,6 +4,7 @@ title:
 description: "Ez a témakör ismerteti, hogyan tesztelheti és ellenőrizheti, hogy a MAM-szabályzat beállítása és működése megfelelő-e."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

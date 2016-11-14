@@ -3,6 +3,7 @@ title: "Vállalati Windows Áruházbeli alkalmazások felügyelete | Microsoft I
 description: "Csatlakoztassa a Microsoft Intune-t a Vállalati Windows Áruházhoz, ha szeretné az Intune-konzolról felügyelni a mennyiségi programban vásárolt alkalmazásokat"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Tűzfalházirendek Windows rendszerű számítógépekhez | Microsoft In
 description: "Az Intune-nal számos módon teheti biztonságossá az Intune ügyfélprogrammal kezelt számítógépeket, beleértve a Windows tűzfal beállításainak konfigurálását is."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 157592f7eb5a12654186652d8440926ff40c3374
-ms.openlocfilehash: f672cf58cb92035c52d2e6b68e91f39d0054cb89
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 3faede4b60ac989e688b87ddb8112aebcf4c56ef
 
 
 ---
@@ -134,6 +135,6 @@ Konfigurálhatja azokat a kivételeket, amelyek bizonyos típusú hálózati for
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -3,6 +3,7 @@ title: "Kisegítő lehetőségek fogyatékkal élők számára | Microsoft Intun
 description: "Ismerje meg a Microsoft-termékek kisegítő lehetőségeiről szóló információkat."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 3a503548-434c-410a-a419-7eadd7e7fb99
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55bdbaf5e521caa05d44bc45d4ec226dc05bf64b
-ms.openlocfilehash: b6f3dd8dbca8059c399b4c4d22876200c00aa259
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: cbf0b0d9d47fd16724895bc42ad7112954bd59de
 
 
 ---
@@ -30,6 +31,6 @@ A Microsoft elkötelezett az iránt, hogy termékeit és szolgáltatásait minde
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -3,8 +3,9 @@ title: "Üzemeltetés és karbantartás | Microsoft Intune"
 description: "Javaslatok az Intune üzembe helyezésének üzemeltetési és karbantartási fázisához."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: bb56739542eaeb8b86c174f3081da3086c0f4717
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 43b085bd3d799c8ca9343de61508cb24d8ec5466
 
 
 ---
@@ -44,7 +45,7 @@ Ebben a szakaszban áttekintés kap a bevezetés adott fázisához tartozó fók
 ### Tervezés
 A bevezetést a hosszú távú sikert és a tartós széles körű használat szempontjaira ügyelve kell előkészíteni.
 
-### Segélyszolgálat
+### Ügyfélszolgálat
 Az üzemeltetési és karbantartási fázisban tájékoztassa a segélyszolgálatot a szolgáltatás frissítéseiről és az esetleg felmerülő problémákról, hogy felkészülten fogadhassák a felhasználóktól érkező kérdéseket. Ismerje meg a Microsoft anyagait és közösségi információforrásait, hogy meg tudja oldani az esetleg felmerülő problémákat.
 
 ### Tájékoztatás
@@ -80,6 +81,6 @@ Az alábbiakban áttekinthet néhány problémát, amely felmerülhet a **Üzeme
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

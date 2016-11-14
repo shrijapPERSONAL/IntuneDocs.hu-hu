@@ -3,6 +3,7 @@ title: "A Lookout MTP engedélyezése az Intune-ban | Microsoft Intune"
 description: "A Lookout mobil veszélyforrások elleni védelem engedélyezése az Intune felügyeleti konzolon."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

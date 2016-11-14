@@ -2,9 +2,10 @@
 title: "Az eszközhöz hiányzik egy szükséges tanúsítvány | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,30 +15,30 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 9a763e13818ec5c1708d121125cadd37e25e3193
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 27b3e3d4aefade368d900df95454c3d02e37bed4
 
 
 ---
 
 
-# Az eszközhöz hiányzik egy szükséges tanúsítvány
+# <a name="your-device-is-missing-a-required-certificate"></a>Az eszközhöz hiányzik egy szükséges tanúsítvány
 
 
-## Az eszközhöz hiányzik egy rendszerint a telefonon előre telepített tanúsítvány
+## <a name="your-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Az eszközhöz hiányzik egy rendszerint a telefonon előre telepített tanúsítvány
 Ha az androidos eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, rendszerint a telefonon előre telepített tanúsítvány, nem fog tudni bejelentkezni az androidos Vállalati portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
 
 ![képernyőfelvétel-hibaüzenet-hiányzó-tanúsítványról](./media/andr-cert_install-1-cert_missing.png)
 
 A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajtsa végre a következő lépéseket:
 
-1.  Böngészőben nyissa meg a [Digicert tanúsítványlapját](https://www.digicert.com/digicert-root-certificates.htm).
+1.  A böngészőben nyissa meg a [Digicert tanúsítványlapját](https://www.digicert.com/digicert-root-certificates.htm).
 
 2.  Keresse meg és töltse le a Baltimore CyberTrust legfelső szintű tanúsítványát (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
 
 3.  Húzza le az értesítéseket fentről, és koppintson a **BaltimoreCyberTrustRoot.crt** elemre az értesítések listájában.
 
-4.  A **Name the Certificate** (A tanúsítvány elnevezése) képernyőn fogadja el az alapértelmezett tanúsítványnevet.
+4.  A **Name the Certificate** (A tanúsítvány elnevezése) párbeszédpanelen fogadja el az alapértelmezett tanúsítványnevet.
 
 5. Győződjön meg arról, hogy **Credential Use** (Hitelesítő adatok használata) beállítás értéke **Used for VPN and apps** (VPN-hez és az alkalmazásokhoz használt), és koppintson az **OK** gombra.
 
@@ -47,7 +48,7 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 7. Nyissa ismét meg a Vállalati portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával.
 
-## Az eszközhöz hiányzik egy, a rendszergazda által kért tanúsítvány
+## <a name="your-device-is-missing-a-certificate-required-by-your-it-admin"></a>Az eszközhöz hiányzik egy, a rendszergazda által kért tanúsítvány
 Ha az androidos eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, a rendszergazda által kért tanúsítvány, nem fog tudni bejelentkezni az androidos Vállalati portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
 
 ![képernyőfelvétel-hibaüzenet-hiányzó-tanúsítványról](./media/andr-cert_install-1-cert_missing.png)
@@ -60,23 +61,25 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 - Azonosítsa a hiányzó tanúsítványt azáltal, hogy megtekinti egy vállalati vagy iskolai számítógépen.
 - Használja az eszközt a hiányzó tanúsítvány letöltéséhez az internetről.
 
-### Azonosítsa a hiányzó tanúsítványt azáltal, hogy megtekinti egy vállalati vagy iskolai számítógépen
+### <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Azonosítsa a hiányzó tanúsítványt azáltal, hogy megtekinti egy vállalati vagy iskolai számítógépen
 
 1. Nyissa meg egy számítógépen az Internet Explorert. Ha nincs erre a célra használható számítógépe, forduljon a rendszergazdához. A rendszergazda elérhetőségét a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja.
 
 2. Lépjen a [Vállalati portál webhelyére](http://portal.manage.microsoft.com), és jelentkezzen be a munkahelyi vagy iskolai fiókjával.
 
-3. A böngésző címsorának jobb szélén kattintson a lent látható, lakat alakú szimbólumra. Ha nem látja a lakat alakú szimbólumot, ne lépjen tovább, hanem forduljon a rendszergazdához. A lakat azt jelenti, hogy biztonságosan jelentkezett be, ezért ha nem látja a szimbólumot, nem javasolt a továbblépés.
+3. A böngésző címsorának jobb szélén válassza az alábbi képernyőképen látható, lakat alakú szimbólumot.
 
     ![képernyőfelvétel-internet-explorer-címsor-lakat-szimbólum](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-4. Kattintson a **Tanúsítványok megtekintése** elemre.
+    Ha nem látja a lakat alakú szimbólumot, ne lépjen tovább, hanem forduljon a rendszergazdához. A lakat azt jelenti, hogy biztonságosan jelentkezett be, ezért ha nem látja a szimbólumot, nem javasolt a továbblépés.
+
+4. Válassza a **Tanúsítványok megtekintése** elemet.
 
     ![képernyőfelvétel-internet-explorer-tanúsítvány-megtekeintése-gomb-webhely-azonosítási-párbeszédpanelén](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. A **Tanúsítvány** párbeszédpanelen kattintson a **Tanúsítványlánc** elemre, majd azonosítsa a tanúsítványt, amelyet le kell töltenie az internetről. A szükséges tanúsítvány neve ugyanazon a helyen lesz, mint a fenti képernyőfelvételen kiemelt tanúsítványé.
+5. A **Tanúsítvány** párbeszédpanelen válassza a **Tanúsítványlánc** elemet, majd azonosítsa a tanúsítványt, amelyet le kell töltenie az internetről. A szükséges tanúsítvány neve ugyanazon a helyen lesz, mint az előbbi képernyőfelvételen kiemelt tanúsítványé.
 
-### Töltse le és telepítse a hiányzó tanúsítványt Android-mobileszközére
+### <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Töltse le és telepítse a hiányzó tanúsítványt Android-mobileszközére
 
 1. Ha keresőmotort, például Binget vagy Google-t használ, keressen rá az előző szakaszban azonosított hiányzó tanúsítvány nevére. A tanúsítvány különböző „kiterjesztésekkel” rendelkezhet, például „.crt”, „.pem” stb.
 
@@ -84,7 +87,7 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 3. Miután a tanúsítvány letöltése befejeződött, húzza le az értesítéseket fentről, és koppintson a tanúsítvány nevére az értesítések listájában.
 
-4. A lent látható**Name the Certificate** (A tanúsítvány elnevezése) képernyőn fogadja el az alapértelmezett tanúsítványnevet.
+4. Az alábbi képernyőképen látható **Name the Certificate** (A tanúsítvány elnevezése) párbeszédpanelben fogadja el az alapértelmezett tanúsítványnevet.
 
 5. Győződjön meg arról, hogy **Credential Use** (Hitelesítő adatok használata) beállítás értéke **Used for VPN and apps** (VPN-hez és az alkalmazásokhoz használt), és koppintson az **OK** gombra.
 
@@ -94,12 +97,10 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 7. Nyissa ismét meg a Vállalati portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával.
 
-Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a rendszergazda segítségével telepíteni kell. Forduljon a rendszergazdához, és továbbítsa neki ezt a [hivatkozást](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), amely tartalmazza a probléma megoldásához szükséges lépéseket.
+Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a rendszergazda segítségével telepíteni kell. Lépjen kapcsolatba a rendszergazdával, és mutassa meg neki ezt a hivatkozást: [Android-tanúsítványokkal kapcsolatos problémák](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues). Itt problémamegoldó lépéseket talál.
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

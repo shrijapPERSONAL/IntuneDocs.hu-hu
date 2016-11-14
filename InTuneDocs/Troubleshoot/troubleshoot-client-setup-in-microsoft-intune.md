@@ -2,7 +2,8 @@
 title: "Az ügyfél beállításának hibaelhárítása | Microsoft Intune"
 description: "Az ügyfelek beállításával kapcsolatban gyakran előforduló problémák elhárítása."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 
 ---
 
-# Az ügyfél a Microsoft Intune-ban való beállításának hibaelhárítása
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Az ügyfél a Microsoft Intune-ban való beállításának hibaelhárítása
 A következő szakaszokban található információk segítséget nyújtanak az ügyfelek beállításával kapcsolatban gyakran előforduló problémák elhárításában. Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
-## Nem sikerül az ügyfél telepítése
+## <a name="client-installation-fails"></a>Nem sikerül az ügyfél telepítése
 
 -   Ha a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) felületén nem jelennek meg az ügyfélszoftverek telepítési riasztásai, ellenőrizze a számítógép internetkapcsolatát és a proxy konfigurációját, továbbá ellenőrizze, hogy a számítógép tud-e kommunikálni a szolgáltatás URL-címével, amely a következő: [https://manage.microsoft.com](https://manage.microsoft.com/). Ezután próbálja meg újból az ügyfélszoftver telepítését.
 
@@ -48,15 +49,15 @@ A következő szakaszokban található információk segítséget nyújtanak az 
 
     -   **Súlyosság** – A riasztás súlyossága
 
-## Nem sikerül letölteni a számítógép-regisztrációs csomagot
+## <a name="computer-enrollment-package-doesnt-download"></a>Nem sikerül letölteni a számítógép-regisztrációs csomagot
 **Probléma:** számítógép regisztrálása során a következőt tapasztalja:
 -  Nem sikerül letölteni a regisztrációs csomagot
 -  Megjelenik a letöltési párbeszédablak, de időtúllépés tapasztalható
 
 **Megoldás:** ellenőrizze, hogy a letöltéshez használt böngészőben a letöltés ideje alatt engedélyezve vannak-e a letöltések, valamint, hogy a rendszer engedélyezi-e a titkosított fájlok helyi lemezre mentését.
 
-## Az ügyfél telepítése a következő hibakóddal lefagy: 0x80040154
-**A probléma leírása:**
+## <a name="client-installation-hangs-with-error-code-0x80040154"></a>Az ügyfél telepítése a következő hibakóddal lefagy: 0x80040154
+**Probléma:**
 
 -  A regisztráció során lefagy az ügyfél telepítése
 
@@ -69,10 +70,10 @@ Ezt a problémát az okozhatja, hogy a számítógépről kritikus szoftverfriss
 **Megoldás:** gondoskodjon róla, hogy a szoftverfrissítési szabályzat engedélyezze a kritikus frissítések telepítését, ennek menetéért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
-## Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
+## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
 Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policyplatform.log fájlban lévő házirendhibák az eszközön lévő Windows Felhasználói fiókok felügyelete (UAC) nem alapértelmezett beállításainak eredményei lehetnek. Néhány nem alapértelmezett UAC-beállítás hatással lehet a Microsoft Intune ügyféltelepítéseire és a házirendek érvénybe léptetésére.
 
-### Az UAC-problémák megoldása
+### <a name="to-resolve-uac-issues"></a>Az UAC-problémák megoldása
 
 1.  Vonja ki a számítógépet az [Adatok és eszközök kivonása a Microsoft Intune-nal való felügyelet alól](/intune/deploy-use/retire-devices-from-microsoft-intune-management) szakaszban leírtak szerint.
 
@@ -85,9 +86,9 @@ Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policypl
 
 4.  Mozgassa az értesítési csúszkát az alapértelmezett beállításhoz.
 
-## Mi a teendő, ha az ügyfelet nem lehet eltávolítani a Microsoft Intune felügyeleti konzolról?
+## <a name="what-to-do-if-the-client-will-not-uninstall-from-the-microsoft-intune-administrator-console"></a>Mi a teendő, ha az ügyfelet nem lehet eltávolítani a Microsoft Intune felügyeleti konzolról?
 
-### Az ügyfélszoftver eltávolítása a Microsoft Intune parancssori eszközzel
+### <a name="to-remove-the-client-software-by-using-the-microsoft-intune-command-line-tool"></a>Az ügyfélszoftver eltávolítása a Microsoft Intune parancssori eszközzel
 
 1.  Nyisson meg egy parancssort rendszergazdai módban.
 
@@ -95,7 +96,7 @@ Nem mobileszköz-felügyelet alá tartozó Windows-eszközök esetén a policypl
 
 3.  Futtassa a következő parancsot: ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-## Ügyfél-telepítési hibakódok
+## <a name="client-installation-error-codes"></a>Ügyfél-telepítési hibakódok
 A következő táblázat azokat a hibakódokat ismerteti, amelyek megjelenhetnek a **Riasztások** között, ha az ügyfélszoftver telepítése sikertelen. Továbbá javaslatokat is tartalmaz a hibakódok által jelölt problémák megoldására.
 
 |Hibakód|Lehetséges probléma|Javasolt megoldás|
@@ -116,16 +117,16 @@ A következő táblázat azokat a hibakódokat ismerteti, amelyek megjelenhetnek
 |**0x80043008**|A Microsoft Online Management Updates szolgáltatás nem indítható el.|Lépjen kapcsolatba a Terméktámogatással a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című szakaszban leírtak szerint.|
 |**0x80043009**|Az ügyfélszámítógép már be van léptetve a szolgáltatásba.|Az ügyfélszámítógépet el kell távolítania, mielőtt újból beléptetheti a szolgáltatásba. Útmutatásért lásd az [Eszközök kivonása a Microsoft Intune-nal való felügyelet alól](/intune/deploy-use/retire-devices-from-microsoft-intune-management) című témakört.|
 |**0x8004300B**|Az ügyfélszoftver telepítési csomagja nem futtatható, mert az ügyfélen futó Windows-verzió nem támogatott.|Az Intune nem támogatja az ügyfélszámítógépen futó Windows-verziót. A támogatott operációs rendszerek listájáért lásd: [A Microsoft Intune hálózati infrastruktúrával kapcsolatos követelményei](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0xAB2**|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibaelhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255).|
+|**0xAB2**|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibáinak elhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255) (Hasznos eszközök csomag- és telepítési problémák esetére).|
 |**0x8004300f**|A szoftver nem telepíthető, mert a System Center Configuration Manager-ügyfél már telepítve van.|Távolítsa el a Configuration Manager-ügyfelet, majd próbálja meg újból az ügyfélszoftver telepítését.|
 |**0x80043010**|A szoftver nem telepíthető, mert az Open Mobile Alliance Device Management- (OMADM-) ügyfél már telepítve van.|Léptesse ki az OMADM-ügyfelet, majd próbálja meg újból az ügyfélszoftver telepítését.|
 Ha a telepítéssel kapcsolatos problémák továbbra is fennállnak, forduljon az támogatási szolgálathoz a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című szakaszban leírtak szerint. Tegye elérhetővé az ügyfélszámítógép beléptetési naplóját (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log és %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) és a Windows Update naplóját (%*windir*%\windowsupdate.log) a támogatási szakemberek számára.
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

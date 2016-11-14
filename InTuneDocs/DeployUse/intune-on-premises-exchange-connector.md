@@ -3,6 +3,7 @@ title: "Helyszíni EAS Exchange-összekötője | Microsoft Intune"
 description: "Az Összekötő eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és a helyszíni Exchange Server között az Exchange ActiveSync MDM-hez."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

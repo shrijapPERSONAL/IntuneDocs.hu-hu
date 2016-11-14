@@ -3,6 +3,7 @@ title: "Mi történik, ha törli egy Android-eszköz regisztrációját az Intun
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
--   Ön törli eszköze regisztrációját az Intune-ból, ami azt jelenti, hogy a rendszergazda a továbbiakban nem fogja felügyelni az eszközt.
+-   A rendszergazda többé nem felügyeli az eszközt.
 
 -   A továbbiakban nem fogja tudni elérni a vállalati adatokat és erőforrásokat.
 
@@ -33,7 +34,7 @@ Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
 -   Többé nem telepíthet alkalmazásokat a vállalati portálról.
 
--   Az eszközön a hozzáadásakor életbe léptetett beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat veszítik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.
 
 Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli az eszköz regisztrációját, az eszköz többé nem jelenik meg a Vállalati portálon.
 
@@ -43,7 +44,6 @@ Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási 
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

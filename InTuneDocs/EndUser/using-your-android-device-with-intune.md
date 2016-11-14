@@ -3,6 +3,7 @@ title: "Android-eszköz használata az Intune-nal | Microsoft Intune"
 description: "Hivatkozáslista az Intune-ban regisztrált Android-mobileszközökön elvégezhető feladatokhoz"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +34,7 @@ A jelen cikk minden, a végfelhasználók által az Intune által felügyelt esz
 Az itt olvasható információk az Intune Vállalati portál telepítéséhez és az eszközök regisztrálásához nyújtanak segítséget Android-eszközök használata esetén.
 
 - [Eszköz regisztrálása az Intune-ban](enroll-your-device-in-Intune-android.md)
+- [Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Az Intune-ban regisztrált eszközökön végezhető műveletek
@@ -73,6 +75,6 @@ Az itt olvasható információk az Android-eszköz Intune-beli regisztrálásako
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

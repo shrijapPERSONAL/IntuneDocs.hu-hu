@@ -3,6 +3,7 @@ title: "Az iOS-mobilalkalmazások konfigurációs szabályzatainak használata |
 description: "Az Intune mobilalkalmazás-konfigurációs szabályzataival automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor a felhasználók iOS-alkalmazásokat futtatnak."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

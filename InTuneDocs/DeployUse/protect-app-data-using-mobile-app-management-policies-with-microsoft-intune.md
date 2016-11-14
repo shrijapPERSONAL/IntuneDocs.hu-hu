@@ -3,6 +3,7 @@ title: "Alkalmazásadatok védelme MAM-szabályzatokkal | Microsoft Intune"
 description: "Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-felügyeleti eszközök a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +123,6 @@ A többszörös identitást támogató alkalmazások révén ugyanazok az alkalm
 
 Ha például a végfelhasználó a munkahelyi fiókjával nyitja meg a OneDrive alkalmazást, akkor nem tudja áthelyezni a fájlokat egy személyes tárhelyre. Ugyanakkor, ha a végfelhasználó a OneDrive alkalmazást a személyes fiókjával használja, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.  
 
-A MAM-szabályzatokhoz társított alkalmazások használati élményéről, illetve arról. hogy a többszörös identitást támogató alkalmazások hogyan teszik lehetővé a MAM-szabályzatok csak munkahelyi környezetben történő alkalmazását, részletes ismertető olvasható [A többszörös identitást támogató alkalmazások használata](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support) című cikkben
-
 Minden Office-mobilalkalmazás támogatja a többszörös identitást.
 
 ##  További lépések
@@ -133,6 +132,6 @@ Minden Office-mobilalkalmazás támogatja a többszörös identitást.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,8 +3,9 @@ title: "Az eszközbeállítások kezelése szabályzatokkal | Microsoft Intune"
 description: "Az Intune segítségével szabályzatokat hozhat létre és telepíthet, amelyek vezérlik a beállításokat és a szolgáltatásokat a felügyelt regisztrált eszközökön."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
 
 ---
 
-# Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával
 A Microsoft Intune*-szabályzatok* a mobileszközök és a számítógépek funkcióit szabályozó beállítások csoportjai. A szabályzatokat ajánlott vagy testreszabott beállításokat tartalmazó sablonok segítségével hozhatja létre, majd telepítheti őket az eszköz- vagy felhasználói csoportok számára.
 
-## Szabályzatok típusai
+## <a name="types-of-policies"></a>Szabályzatok típusai
 
 Az Intune-szabályzatok két kategóriába sorolhatók: A használt kategória befolyásolja a szabályzat létrehozását és telepítését.
 
@@ -36,13 +37,11 @@ A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének ko
 - **Erőforrás-hozzáférési szabályzatok**: Ezekkel a szabályzatokkal hozzáférést biztosíthat a felhasználóknak a munkájuk sikeres elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is.
 A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md).
 
-
-
-
-## Konfigurációs házirend létrehozása
+## <a name="create-a-configuration-policy"></a>Konfigurációs házirend létrehozása
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Konfigurációs szabályzatok** &gt; **Hozzáadás** lehetőséget.
 
@@ -61,6 +60,7 @@ Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzat
 
     - [iOS-eszközbeállítások](ios-policy-settings-in-microsoft-intune.md)
     - [Android-eszközbeállítások](android-policy-settings-in-microsoft-intune.md)
+    - [Beállítások Android for Work eszközökhöz](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Windows 8 és Windows 8.1 rendszerű eszközök beállításai](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows Phone 8.1 rendszerű eszközök beállításai](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Windows 10 rendszerű asztali és mobileszközök beállításai](windows-10-policy-settings-in-microsoft-intune.md)
@@ -82,7 +82,7 @@ A létrehozott szabályzatot általában telepíteni kell egy vagy több felhasz
 > [!TIP]
 > Nem minden házirendtípust kell telepíteni. A mobilalkalmazás-kezelési (MAM-) szabályzat például nem igényel telepítést. Ezt a házirendtípus egy alkalmazáshoz kell társítani, és ezután az alkalmazást kell telepíteni.
 
-## Konfigurációs szabályzat telepítése
+## <a name="deploy-a-configuration-policy"></a>Konfigurációs szabályzat telepítése
 
 1.  A **Szabályzat** munkaterületen válassza ki a telepíteni kívánt szabályzatot, és kattintson a **Központi telepítés kezelése** elemre.
 
@@ -94,7 +94,7 @@ A létrehozott szabályzatot általában telepíteni kell egy vagy több felhasz
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
-## A szabályzatok kezelése
+## <a name="manage-policies"></a>A szabályzatok kezelése
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Szabályzat**elemet, majd keresse meg és válassza ki a kezelni kívánt szabályzatot.
 
@@ -105,9 +105,9 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 - **Központi telepítés kezelése**: Válassza ki azt a csoportot, amely számára telepíteni kívánja a szabályzatot, majd kattintson a **Hozzáadás** gombra.
 
 
-## A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
+## <a name="frequently-asked-questions-about-intune-policies"></a>A Microsoft Intune szabályzataival kapcsolatban gyakran felmerülő kérdések
 
-### Mennyi időt vesz igénybe, hogy a mobileszközök megkapják a házirendet vagy az alkalmazásokat a telepítés után?
+### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Mennyi időt vesz igénybe, hogy a mobileszközök megkapják a házirendet vagy az alkalmazásokat a telepítés után?
 Egy házirend vagy alkalmazás telepítésekor az Intune megpróbálja értesíteni az eszközt, hogy jelentkezzen be az Intune-ba. Ez általában öt percnél kevesebb időt vesz igénybe.
 
 Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a szabályzatot, az Intune három további kísérletet tesz.  Ha az eszköz kapcsolat nélküli állapotban van (például ki van kapcsolva vagy nem kapcsolódik hálózathoz), előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemezett bejelentkezéskor szerzi be a házirendet a következő módon:
@@ -115,7 +115,6 @@ Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a 
 - iOS és Mac OS X: 6 óránként.
 - Android: 8 óránként.
 - Windows Phone: 8 óránként.
-- Regisztrált Windows RT-eszközök: 24 óránként.
 - Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek: 8 óránként.
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
@@ -127,12 +126,12 @@ Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a kö
 
 A felhasználók emellett a Vállalati Portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
 
-### Milyen műveletek hatására küld az Intune azonnal értesítést egy eszközre?
+### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Milyen műveletek hatására küld az Intune azonnal értesítést egy eszközre?
 Az eszközök akkor jelentkeznek be az Intune-ba, amikor bejelentkezési értesítést kapnak, vagy amikor a rendszeres ütemezésű bejelentkezés esedékessé válik.  Ha a művelet, például a törlés, a zárolás, a jelszó-visszaállítás, az alkalmazástelepítés, a profiltelepítés (Wi-Fi, VPN, e-mail stb.) vagy a szabályzattelepítés kifejezetten egy eszközre vagy felhasználóra vonatkozik, az Intune azonnal megpróbálja értesíteni az eszközt, hogy be kell jelentkeznie az Intune szolgáltatásba a frissítések fogadásához.
 
 Az egyéb módosítások – például a kapcsolattartási adatok módosítása a vállalati portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
 
-### Ha ugyanazon felhasználó vagy eszköz számára több házirend is települ, honnan tudható, hogy melyik beállítások lesznek érvényben?
+### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Ha ugyanazon felhasználó vagy eszköz számára több házirend is települ, honnan tudható, hogy melyik beállítások lesznek érvényben?
 Ha több szabályzatot telepít ugyanazon felhasználó vagy eszköz számára, az alkalmazni kívánt beállítás értékelése az egyes beállítások szintjén történik:
 
 -   A megfelelőségi házirend-beállítások mindig prioritást élveznek a konfigurációs házirend-beállításokkal szemben.
@@ -141,22 +140,22 @@ Ha több szabályzatot telepít ugyanazon felhasználó vagy eszköz számára, 
 
 -   Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Intune-konzolon is megjelenik. Az ilyen ütközéseket manuálisan kell feloldani.
 
-### Mi történik, ha a mobilalkalmazás-kezelési házirendek ütköznek egymással? Melyik lesz érvényes az alkalmazásra?
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Mi történik, ha a mobilalkalmazás-kezelési házirendek ütköznek egymással? Melyik lesz érvényes az alkalmazásra?
 Az ütközési értékek a MAM-szabályzatok legkorlátozóbb beállításai a számbeviteli mezők kivételével (ilyen például a PIN-kód beviteli próbálkozások száma az alaphelyzetbe állítás előtt).  A számbeviteli mezők értékei megegyeznek a – javasolt beállításokkal a konzolban létrehozható – MAM-házirendek értékeivel.
 
 Akkor történik ütközés, ha két azonos házirend-beállítás van.  Például előfordulhat, hogy a másolás/beillesztés beállításra két megegyező MAM-házirendet konfigurált.  Ebben az esetben a másolás/beillesztés beállítás a legszigorúbb értékre lesz állítva, a többi beállítás pedig a konfiguráltak szerint lesz megadva.
 
 Ha az alkalmazáshoz telepít és érvénybe léptet egy házirendet, majd egy másikat is telepít, akkor az első elsőbbséget élvez és érvényben marad, a második pedig ütközést jelez. Ha egyszerre telepíti őket, tehát nincs első szabályzat, akkor mindkettő ütközést jelez. Minden ütközésnél a legszigorúbb beállítás lesz érvényes.
 
-### Mi történik, ha az egyéni iOS-házirendek ütköznek?
+### <a name="what-happens-when-ios-custom-policies-conflict"></a>Mi történik, ha az egyéni iOS-házirendek ütköznek?
 Az Intune nem értékeli a konfigurációs Apple-fájlok vagy az Open Mobile Alliance egységes erőforrás-azonosítóra (OMA-URI) vonatkozó egyéni szabályzatainak tartalmát. Csak kézbesítési mechanizmusként funkcionál.
 
 Ha egyéni szabályzatot telepít, győződjön meg arról, hogy a konfigurált beállítások nem ütköznek a megfelelőségi, konfigurációs vagy az egyéb egyéni szabályzatokkal. A beállítási ütközést tartalmazó egyéni házirendekben a beállítások alkalmazásának sorrendje véletlenszerű.
 
-### Mi történik, ha egy szabályzatot törölnek, vagy a szabályzat alkalmazhatatlanná válik?
+### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>Mi történik, ha egy szabályzatot törölnek, vagy a szabályzat alkalmazhatatlanná válik?
 Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportból, amelyen a házirend telepítve volt, akkor a házirend és a beállítások a következő listákban összefoglaltak szerint törlődnek az adott eszközről.
 
-#### Regisztrált eszközök
+#### <a name="enrolled-devices"></a>Regisztrált eszközök
 
 - Wi-Fi, VPN, tanúsítvány és e-mail profilok: Ezek a profilok az összes támogatott regisztrált eszközről el lesznek távolítva.
 - Minden egyéb házirendtípus:
@@ -193,7 +192,7 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
         - Adatroaming használatának engedélyezése
         - Automatikus szinkronizálás engedélyezése roaming közben
 
-#### Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek
+#### <a name="windows-pcs-running-the-intune-client-software"></a>Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek
 
 - **Endpoint Protection-beállítások**: A beállítások visszaállnak az ajánlott értékekre. Az egyetlen kivétel a **Kapcsolódás a Microsoft Active Protection Service szolgáltatáshoz** beállítás, amelynek az alapértelmezett értéke **Nem**. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Szoftverfrissítések beállításai**: A beállítások az operációs rendszer alapértelmezett állapotára állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
@@ -201,17 +200,17 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
 - **A Windows tűzfal beállításai**: A beállítások a számítógép operációs rendszerének alapértelmezett értékeire állnak vissza. A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
-### Hogyan frissíthetők a szabályzatok az eszközökön a naprakész állapot biztosításához (csak az Intune ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik)?
+### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Hogyan frissíthetők a szabályzatok az eszközökön a naprakész állapot biztosításához (csak az Intune ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik)?
 
 1.  Bármely eszközcsoportban válassza ki azokat az eszközöket, amelyeknek a házirendjeit frissíteni kívánja, majd válassza a **Távoli feladatok** &gt; **Házirendek frissítése** lehetőségre.
 2.  A feladat állapotának megtekintéséhez kattintson az Intune felügyeleti konzol jobb alsó sarkában lévő **Távoli feladatok** elemre.
 
-### Hol találhatok segítséget a szabályzatokkal kapcsolatos problémák elhárításához?
+### <a name="where-can-i-find-help-troubleshooting-policies"></a>Hol találhatok segítséget a szabályzatokkal kapcsolatos problémák elhárításához?
 
 Lásd a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) témakört.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

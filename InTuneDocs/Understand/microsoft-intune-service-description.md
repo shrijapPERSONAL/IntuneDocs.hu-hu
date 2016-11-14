@@ -3,6 +3,7 @@ title: "A szolgáltatás leírása | Microsoft Intune"
 description: "Az Intune egy felhőalapú szolgáltatás, amellyel Windows és Mac OS X rendszerű számítógépek, illetve iOS, Android és Windows rendszerű mobileszközök is felügyelhetők."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

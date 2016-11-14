@@ -2,7 +2,8 @@
 title: "A Microsoft Intune Vállalati portál alkalmazásának telepítése | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 734e58a590b6d6eab97379c10b7999d5560be225
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1d0116a9ac57078cb5c546619ac8f3df7594d26d
 
 
 ---
 
 
-# A Microsoft Intune Vállalati portál alkalmazásának telepítése
+# <a name="install-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Vállalati portál alkalmazásának telepítése
 
 Az Android-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, levelezéshez és hálózathoz.  Ehhez előbb telepíteni kell a Vállalati portál alkalmazást, majd azt használva regisztrálni kell az adott eszközt a Microsoft Intune-ban. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
@@ -48,6 +49,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

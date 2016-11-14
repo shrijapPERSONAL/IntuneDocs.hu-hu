@@ -3,6 +3,7 @@ title: "Az e-mailek és az O365-szolgáltatások elérésének korlátozása | M
 description: "Ez a témakör azt ismerteti, hogyan használható a feltételes hozzáférés arra, hogy csak a megfelelő eszközök férhessenek hozzá a vállalati e-mailekhez, valamint a SharePoint Online-on és más szolgáltatásokban tárolt vállalati adatokhoz."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

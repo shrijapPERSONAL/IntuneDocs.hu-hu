@@ -3,16 +3,17 @@ title: "Migrálás Azure Active Directory-csoportokba| Microsoft Intune"
 description: "A csoportok migrálása az Intune-ból az Azure AD-be"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 translationtype: Human Translation
-ms.sourcegitcommit: d7a1da3b9e1e6ce3e2034cc5e8e1926a671276b8
-ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 08bcc258f64e6385ae6fa648ddb8f2b5fe68942e
 
 
 ---
@@ -21,10 +22,8 @@ ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
     
 A felhasználók jelezték, hogy egységes csoportosítási és célcsoport-kezelési felületet szeretnének az Enterprise Mobility & Security egészéhez, ezért az Intune-csoportokat átalakítjuk Azure Active Directory-alapú biztonsági csoportokká. Ez egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Az új felület jóvoltából a jövőben nem kell csoportokat duplikálni a szolgáltatások között, és támogatott lesz PowerShell- és a Graph-alapú bővíthetőség is. 
 
-Novemberben az elkezdődik a meglévő Intune-ügyfelek migrálása az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A felhasználó- és eszközcsoportok mindegyikét át fogjuk telepíteni az Azure AD-alapú biztonsági csoportokba. Mindaddig nem kezdjük meg a migrálást, amíg nem sikerül minimalizálni annak hatását a napi munkára, és nem biztosított, hogy a végfelhasználók semmiféle hatást ne érzékeljenek. A fiókjuk áttelepítését megelőzően is küldünk értesítést.
-
 ### Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
-A meglévő ügyfelek migrálása nem azonnal, hanem folyamatosan történik. A migrálás ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. A migrálás előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) címen.
+A meglévő ügyfelek migrálása nem azonnal, hanem folyamatosan történik, legkorábban 2016 decemberétől. A csoportjai migrálása előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz az [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) címen.
 
 ### Milyen új funkciókat érhetek el?
 A bevezetésre kerülő új funkciók: 
@@ -116,6 +115,6 @@ Amikor befejeződik az Intune minden funkciójának az Azure felügyeleti portá
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

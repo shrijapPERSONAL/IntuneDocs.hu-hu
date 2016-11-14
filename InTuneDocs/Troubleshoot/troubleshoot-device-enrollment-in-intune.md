@@ -3,6 +3,7 @@ title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | M
 description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

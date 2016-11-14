@@ -1,8 +1,9 @@
 ---
-title: "Az eszköz manuális szinkronizálása a Vállalati portál webhelyének használatával | Microsoft Intune"
+title: "Eszköz manuális szinkronizálása a Vállalati portál webhely használatával | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
 
 
-# Az eszköz manuális szinkronizálása a Vállalati portál webhelyének használatával
+# Eszköz manuális szinkronizálása a Vállalati portál webhely használatával
 
-Ha túl sokáig tart az alkalmazás telepítése vagy egy másik feladat, megpróbálkozhat az eszköz manuális szinkronizálásával; ez segíthet a telepítés vagy feladat felgyorsításában. Kövesse az Ön által használt eszköz típusának megfelelő utasításokat. 
+Ha túl sokáig tart az alkalmazás telepítése vagy egy másik feladat, megpróbálkozhat az eszköz manuális szinkronizálásával. Manuális szinkronizálással esetleg gyorsítható a telepítés vagy a feladat elvégzése.
 
-A szinkronizálási funkció csak az alábbi verziójú eszközök esetében működik:
+A szinkronizálási funkció csak az alábbi verziókkal működik. Kövesse az Ön által használt eszköz típusának megfelelő utasításokat.
 
 * [Windows 10 mobil verzió](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 asztali verzió](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +35,6 @@ A szinkronizálási funkció csak az alábbi verziójú eszközök esetében mű
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

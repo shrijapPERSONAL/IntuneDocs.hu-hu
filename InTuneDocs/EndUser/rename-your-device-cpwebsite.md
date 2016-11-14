@@ -2,7 +2,8 @@
 title: "Az eszköz átnevezése a Vállalati portál webhelyről | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
 
 
 ---
 
 
-# Az eszköz átnevezése a Vállalati portál webhelyről
+# <a name="rename-your-device-from-the-company-portal-website"></a>Az eszköz átnevezése a Vállalati portál webhelyről
 
 Ha úgy dönt, hogy átnevezi az eszközét, akkor azt távolról, a [Vállalati portál webhelyen](http://portal.manage.microsoft.com) is megteheti. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
 
@@ -39,6 +40,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

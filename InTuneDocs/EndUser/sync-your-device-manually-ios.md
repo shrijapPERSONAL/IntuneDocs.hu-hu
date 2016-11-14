@@ -3,6 +3,7 @@ title: "iOS-eszköz manuális szinkronizálása | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,17 +24,17 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 # Az iOS-eszköz manuális szinkronizálása
 
-Ha az alkalmazás telepítése túl sokáig tart, az alábbi utasításokat követve manuálisan is szinkronizálhatja iOS-eszközét, ezzel felgyorsíthatja a telepítést. A szinkronizálási funkció csak az iOS rendszerre érvényes, a Mac OS X-re nem.
+Ha túl sokáig tart az alkalmazás telepítése, az alábbi utasításokat követve manuálisan is szinkronizálhatja iOS-eszközét. Manuális szinkronizálással esetleg gyorsítható a telepítés. A szinkronizálási funkció csak az iOS rendszerre érvényes, a Mac OS X-re nem.
 
 1. Nyissa meg az iOS Vállalati portál alkalmazást.
 
-2. Koppintson az éppen használt eszközre az **Eszközök** területen. Ez a bal szélső eszközcsempe, amelyen pipajel látható.
+2. Válassza az éppen használt eszközt az **Eszközeim** szakaszban. A bal szélső eszközcsempét keresse, amelyen pipajel látható.
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![Az Eszközeim szakasz egy eszköz képernyőjén](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Koppintson a képernyő alján, jobb oldalt látható **Szinkronizálás** gombra.
+3.  Válassza a képernyő alján, jobb oldalt látható **Szinkronizálás** gombot.
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![Eszközadatok a Szinkronizálás gombbal](./media/ios-sync-2-sync-button.png)
 
 A képernyőn egy forgó kör látható, amíg a szinkronizálás be nem fejeződik.
 
@@ -41,7 +42,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

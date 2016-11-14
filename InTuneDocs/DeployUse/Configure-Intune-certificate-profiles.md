@@ -3,8 +3,9 @@ title: "Tanúsítványprofilok konfigurálása | Microsoft Intune"
 description: "Tudnivalók az Intune-tanúsítványprofilok létrehozásáról."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -38,13 +39,22 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 
 ### Megbízható tanúsítványprofil létrehozása
 
-1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
-2.  Adja hozzá a következő házirend-típusok valamelyikét:
-    - **Android &gt; Megbízható tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; Megbízható tanúsítványprofil (iOS 8.0 és újabb)**
-    - **Mac OS X &gt; Megbízható tanúsítványprofil (Mac OS X 10.9 és újabb)**
-    - **Windows &gt; Megbízható tanúsítványprofil (Windows 8.1 és újabb)**
-    - **Windows &gt; Megbízható tanúsítványprofil (Windows Phone 8.1 és újabb)**
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet, majd válasszon ki egy eszközplatformot. Megbízható tanúsítványprofilt hozhat létre az alábbi eszközökhöz:
+
+-  Android 4 és újabb verziók
+
+-  Android for Work
+
+-  iOS 7.1-es és újabb verziók
+
+-  Mac OS X 10.9 és újabb verziók
+
+-  Windows 8.1 és újabb
+
+-  Windows Phone 8.1 és újabb verziók
+
+
+2.  **Megbízható tanúsítványprofil**-házirend hozzáadása.
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -55,19 +65,32 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 
 Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 
+> [!NOTE]
+>
+> Az Android- és Android for Work-eszközök megjelenítenek egy üzenetet arról, hogy harmadik fél megbízható tanúsítványt telepített.
+    
+
 ## **3. feladat**: SCEP- vagy .PFX-tanúsítványprofilok létrehozása
 Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítványprofilt, létre kell hoznia a használni kívánt platformok SCEP- vagy .PFX-tanúsítványprofilját is. Egy SCEP-tanúsítványprofil létrehozásakor meg kell adnia egy ugyanarra a platformra vonatkozó megbízható tanúsítványprofilt. Ez a művelet összeköti a két tanúsítványprofilt, de az egyes profilok központi telepítését külön-külön kell elvégeznie.
 
 ### SCEP-tanúsítványprofil létrehozása
 
-1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
-2.  Adja hozzá a következő házirend-típusok valamelyikét:
-    - **Android &gt; SCEP-tanúsítványprofil (Android 4 és újabb)**
-    - **iOS &gt; SCEP-tanúsítványprofil (iOS 8.0 és újabb)**
-    - **Mac OS X &gt; SCEP-tanúsítványprofil (Mac OS X 10.9 és újabb)**
-    - **Windows &gt; SCEP-tanúsítványprofil (Windows 8.1 és újabb)**
-    - **Windows &gt; SCEP-tanúsítványprofil (Windows Phone 8.1 és újabb)**
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet, majd válasszon ki egy eszközplatformot.  SCEP-tanúsítványprofilt hozhat létre az alábbi eszközökhöz:
 
+-  Android 4 és újabb verziók
+
+-  Android for Work
+
+-  iOS 7.1-es és újabb verziók
+
+-  Mac OS X 10.9 és újabb verziók
+
+-  Windows 8.1 és újabb
+
+-  Windows Phone 8.1 és újabb verziók
+
+2.  **SCEP-tanúsítványprofil** házirend hozzáadása
+    
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
@@ -87,13 +110,16 @@ Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti
 
 ### .PFX-tanúsítványprofil létrehozásához
 
-1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
-2.  Adja hozzá a következő házirend-típusok valamelyikét:
-  - **Android &gt; .PFX-tanúsítványprofil (Android 4 és újabb verziók)**
-  - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows 10 és újabb verziók)**
-  - **Windows &gt; PKCS #12 (.PFX) tanúsítványprofil (Windows Phone 10 és újabb verziók)**
-  - **iOS > PKCS #12 (.PFX) tanúsítványprofil (iOS 8.0 és újabb)**    
-    További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet, majd válasszon ki egy eszközplatformot. A .PFX-tanúsítványokat támogatják:
+  - Android 4 és újabb verziók
+  - Android for Work
+  - Windows 10 és újabb
+  - Windows Phone 10 és újabb verziók
+  - iOS 8.0 és újabb verziók    
+
+    
+2.  **.PFX-tanúsítványprofil** házirend hozzáadása. 
+      További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Adja meg a házirendűrlapon kért adatokat.
 4.  Válassza a **Házirend mentése** elemet.
 
@@ -130,6 +156,6 @@ Ezt követően megtudhatja, hogy a tanúsítványok segítségével hogyan tehet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

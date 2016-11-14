@@ -5,6 +5,7 @@ title: "A Microsoft Intune bemutatása | Microsoft Intune"
 description: "Ismerkedjen meg az Intune-nal, a nagyvállalati mobilitási és biztonsági megoldás mobileszköz-kezelési összetevőjével."
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article
@@ -15,20 +16,20 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Az Intune bemutatása
-A Microsoft Intune a Microsoft nagyvállalati mobilitási és biztonsági megoldásának (EMS, korábban Nagyvállalati mobilitási csomag) „felügyeleti oldala”. A nagyvállalati mobilitás lényege, hogy az alkalmazottak minden eszközükön hatékonyan dolgozhatnak, miközben a szervezeti adatok védelmet élveznek.  
+A Microsoft Intune a Microsoft Enterprise Mobility + Security (EMS, korábban Nagyvállalati mobilitási csomag) felügyeleti ága. A nagyvállalati mobilitás lényege, hogy az alkalmazottak minden eszközükön hatékonyan dolgozhatnak, miközben a szervezeti adatok védelme is biztosított.  
 
-Az EMS egy teljes körű, integrált nagyvállalati mobilitási csomag, amely irodai alkalmazásokat, valamint identitáskezelési, hozzáférés-vezérlési, felügyeleti és adatvédelmi megoldásokat egyaránt tartalmaz. Hatékony módot biztosít egy mobilitási megoldás üzembe helyezéséhez és üzemeltetéséhez a szervezetében.  
+Az EMS a nagyvállalati mobilitás teljes, integrált csomagja, amelynek részét alkotják az irodai alkalmazások, az identitáskezelés, a hozzáférés-vezérlés, a felügyelet és az adatvédelem. Hatékony módot biztosít egy mobilitási megoldás üzembe helyezéséhez és üzemeltetéséhez a szervezetében.  
 
 ![A nagyvállalati mobilitást átfogóan bemutató kép](..\media\em-vision.png)
 
-Az Intune segítségével felügyelheti a mobileszközeit és a mobilalkalmazásait. Az Intune-t szorosan integráltuk az Azure Active Directoryval (Azure AD) az identitáskezelés és a hozzáférés-vezérlés tekintetében, valamint az Azure Rights Managementtel (Azure RMS) is az adatvédelem szempontjából.  
+Az Intune segítségével felügyelheti a mobileszközeit és a mobilalkalmazásait. Az identitáskezelés és a hozzáférés-vezérlés tekintetében az Intune szorosan együttműködik az Azure Active Directoryval (Azure AD), valamint adatvédelmi téren az Azure Rights Managementtel.  
 
 Néhány, az Intune segítségével megoldható általános üzleti probléma:
 
@@ -46,7 +47,7 @@ Néhány Intune által ajánlott elsődleges eszköz:
 
 Ezek az eszközök különböző kombinációkban használhatók az elterjedt üzleti forgatókönyvek megvalósításához. Például a megosztott eszközzel kapcsolatos helyzetek erősen támaszkodnak az MDM használatára. A BYOD-helyzetek általában a MAM használatára támaszkodnak. A vállalati telefonos helyzetek pedig mindkettőre építenek. Szinte minden helyzet támaszkodik a mobilalkalmazás-biztonságra.
 
-Ebben a dokumentációban elmagyarázzuk, hogy az Intune által biztosított eszközök hogyan használhatók az üzleti helyzetek feltételeinek megteremtésére.  Azt is ismertetjük, hogy ezek az eszközök hogyan használhatók az Office 365-tel, az Azure AD-vel, az Azure RMS-sel és a Microsoft mobilitási csomag többi részével. Segítségére leszünk a technológia gyakori használati módszerei és a környezet számára előnyös hatásai, valamint az alkalmazásukhoz szükséges eljárások átfogó megismerésében. Maga a technológia rugalmas, és alkalmazható az itt leírtakon kívüli bármilyen típusú forgatókönyvben is.
+Ebben a dokumentációban elmagyarázzuk, hogy az Intune által biztosított eszközök hogyan használhatók az üzleti helyzetek feltételeinek megteremtésére.  Azt is ismertetjük, hogy ezek az eszközök hogyan használhatók az Office 365-tel, az Azure AD-vel, az Azure RMS-sel és a Microsoft mobilitási csomag többi részével. Általános áttekintést nyújtunk a technológia legelterjedtebb alkalmazásairól és lehetséges kedvező hatásairól az Ön környezetében, valamint a megvalósításához szükséges eljárásokról. Maga a technológia rugalmas, és alkalmazható az itt leírtakon kívüli bármilyen típusú forgatókönyvben is.
 
 ### További lépések
 * Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md).
@@ -55,6 +56,6 @@ Ebben a dokumentációban elmagyarázzuk, hogy az Intune által biztosított esz
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: "A Dynamics CRM Online-hoz való e-mail-hozzáférés korlátozása| Micr
 description: "Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ A Microsoft Dynamics CRM Online-hoz való hozzáférést a Microsoft Intune felt
 
 Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el a [Restrict access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása) című cikket.
 
-[!IMPORTANT] A feltételes hozzáférés üzembe helyezéséhez az Intune és az Azure Active Directory Premium előfizetése is szükséges, a felhasználóknak pedig mindkét termékhez licenccel kell rendelkezniük. Az **Enterprise Mobility + Security (EMS) előfizetés** az Intune és az Azure Active Directory Premium előfizetését is tartalmazza. További részleteket az [Enterprise Mobility díjszabását ismertető lapon](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) talál. Ha nem rendelkezik EMS-előfizetéssel, előfizethet a Premium szintű Azure Active Directoryra. Lásd az [Azure Active Directory díjszabását ismertető lapot](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+[!IMPORTANT] A feltételes hozzáférés üzembe helyezéséhez az Intune és az Azure Active Directory Premium előfizetése is szükséges, a felhasználóknak pedig mindkét termékhez licenccel kell rendelkezniük. Az **Enterprise Mobility + Security (EMS) előfizetés** az Intune és az Azure Active Directory Premium előfizetését is tartalmazza. További részleteket az [Enterprise Mobility díjszabását ismertető lapon](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) talál. Ha nem rendelkezik EMS-előfizetéssel, előfizethet a Premium szintű Azure Active Directoryra. Lásd az [Azure Active Directory díjszabását ismertető lapot](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 Amikor egy célzott felhasználó a Dynamics CRM alkalmazást szeretné használni az eszközén, a következő ellenőrzés megy végbe:
 

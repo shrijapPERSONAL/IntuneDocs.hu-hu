@@ -3,8 +3,9 @@ title: "A helyszíni Exchange-hez való e-mailes hozzáférés korlátozása | M
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e-mailhez való hozzáférést a helyszíni Exchange-en."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +65,19 @@ A következő diagram azt a folyamatot mutatja be, amelyet a helyszíni Exchange
 -   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] vállalati portál webhelyére vagy a Vállalati portál alkalmazásba irányítja, ahol a felhasználó további információt talál a problémáról és annak megoldásáról.
 
 ## A mobileszközök támogatása
--   Windows Phone 8 és újabb verziók
+-   Windows Phone 8.1 és újabb verziók
 
 -   Natív e-mail alkalmazás iOS rendszerű eszközökön.
 
--   EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban
+-   EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
+- EAS levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak Android for Work eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy email-profit a Gmail vagy a Nine Work alkalmazáshoz és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepítenie. 
+
 > [!NOTE]
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
 
 ## Számítógépek támogatása
 
-A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban regisztrálva)
+A **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban regisztrálva)
 
 ##  Feltételes hozzáférési házirend konfigurálása
 
@@ -123,6 +126,6 @@ A **Posta** alkalmazás a Windows 8-as és újabb verzióiban (az [!INCLUDE[wit_
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
