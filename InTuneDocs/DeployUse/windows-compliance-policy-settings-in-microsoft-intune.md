@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Megfelelőségi szabályzat beállításai Windows-eszközökhöz a Microsoft Intune-ban
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Windows-eszközökhöz a Microsoft Intune-ban
 
 A jelen témakörben leírt házirend-beállítások a Windows operációs rendszerrel működő eszközökre vonatkoznak. A támogatott Windows-verziót feltüntettük az alábbi szakaszokban.
 
@@ -28,12 +28,13 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 > [!div class="op_single_selector"]
 - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Megfelelőségi szabályzat beállításai Windows Phone-eszközökhöz
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Megfelelőségi szabályzat beállításai Windows Phone-eszközökhöz
 A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 és újabb verziók.
 
-## A rendszer biztonsági beállításai
-### Jelszó
+## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
+### <a name="password"></a>Jelszó
 - **Jelszó megkövetelése a mobileszköz-zárolás feloldásához:**    Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget.
 
 - **Egyszerű jelszavak engedélyezése:**    Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza az **Igen** lehetőséget.
@@ -60,27 +61,27 @@ A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 é
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer megkéri a végfelhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
   **Ez a beállítás csak Windows 10 Mobile-eszközökre vonatkozik.**
-### Titkosítás
+### <a name="encryption"></a>Titkosítás
 - **Titkosítás megkövetelése mobileszközön:** Állítsa ezt a beállítást **Igen** értékre, ha szeretné előírni, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz.
 
-## Eszközállapot-beállítások
+## <a name="device-health-settings"></a>Eszközállapot-beállítások
 - **Eszközök kifogástalanként való jelentésének megkövetelése:** Megadhat egy szabályt, amely szerint a **Windows 10 Mobile**-eszközöket kifogástalan állapotúként kell jelenteni az új vagy meglévő megfelelőségi házirendekben.  Ha ez a beállítás engedélyezett, a Windows 10-es eszközöket a rendszer az eszközállapot-igazolási szolgáltatáson (HAS) keresztül értékeli ki a következő adatpontokhoz:
   -  **BitLocker engedélyezve:** Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni az eszközön tárolt adatokat a jogosulatlan hozzáféréstől, amikor a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker-meghajtótitkosítás titkosítja a Windows operációs rendszer kötetén tárolt összes adatot. A BitLocker a TPM-mel segít megvédeni a Windows operációs rendszer és a felhasználó adatait és segít biztosítani, hogy a számítógéphez ne férjenek hozzá jogosulatlanul akkor sem, ha felügyelet nélkül hagyják, elveszik vagy ellopják. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM-mel zárolja az adatokat védő titkosítási kulcsokat. Ennek eredményeképpen a kulcsok nem érhetők el, amíg a TPM nem ellenőrizte a számítógép állapotát.
   -  **Kódintegritás engedélyezve:** A kódintegritás olyan szolgáltatás, amely ellenőrzi az illesztők vagy rendszerfájlok integritását, amikor azokat betölti a memóriába. A kódintegritás észleli, ha aláíratlan illesztőt vagy rendszerfájlt töltenek be a kernelbe, vagy ha egy rendszerfájlt rendszergazdai jogosultságokkal rendelkező felhasználói fiók által futtatott rosszindulatú szoftver módosított.
   - **Biztonságos rendszerindítás engedélyezve:** Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ezt a gép elindításának engedélyezése előtt ellenőrzi. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
 
   A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-##  Eszköztulajdonság-beállítások
+##  <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 - **Az operációs rendszer szükséges minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
     Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
 - **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
-## Megfelelőségi szabályzat beállításai windowsos számítógépekhez
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Megfelelőségi szabályzat beállításai windowsos számítógépekhez
 A jelen szakaszban felsorolt beállítások Windows rendszerű számítógépek támogatottak.
-## A rendszer biztonsági beállításai
-### Jelszó
+## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
+### <a name="password"></a>Jelszó
 - **Jelszó minimális hossza:** – Windows 8.1 rendszeren támogatott.
 
   Meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
@@ -113,7 +114,7 @@ A jelen szakaszban felsorolt beállítások Windows rendszerű számítógépek 
 
   Ha a **Korábbi jelszavak megjegyzése** be van jelölve, adja meg azon korábban használt jelszavak számát, amelyeket nem lehet ismét használni.
 
-## Eszközállapot-beállítások
+## <a name="device-health-settings"></a>Eszközállapot-beállítások
 - **Eszközök kifogástalanként való jelentésének megkövetelése:** – Windows 10-es eszközökön támogatott.
 Megadhat egy szabályt, amely szerint a Windows 10-es eszközöket kifogástalan állapotúként kell jelenteni az új vagy meglévő megfelelőségi házirendekben.  Ha ez a beállítás engedélyezett, a Windows 10-es eszközöket a rendszer az eszközállapot-igazolási szolgáltatáson (HAS) keresztül értékeli ki a következő adatpontokhoz:
   -  **BitLocker engedélyezve:** Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni az eszközön tárolt adatokat a jogosulatlan hozzáféréstől, amikor a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker-meghajtótitkosítás titkosítja a Windows operációs rendszer kötetén tárolt összes adatot. A BitLocker a TPM-mel segít megvédeni a Windows operációs rendszer és a felhasználó adatait és segít biztosítani, hogy a számítógéphez ne férjenek hozzá jogosulatlanul akkor sem, ha felügyelet nélkül hagyják, elveszik vagy ellopják. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM-mel zárolja az adatokat védő titkosítási kulcsokat. Ennek eredményeképpen a kulcsok nem érhetők el, amíg a TPM nem ellenőrizte a számítógép állapotát.
@@ -123,7 +124,7 @@ Megadhat egy szabályt, amely szerint a Windows 10-es eszközöket kifogástalan
 
   A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Eszköztulajdonság-beállítások
+## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 - **Az operációs rendszer szükséges minimális verziója:** – Windows 8.1 és Windows 10 rendszeren támogatott.
 
   Az értéket „főverzió.alverzió.build” formában adja meg. A verziószámnak meg kell egyeznie a winver parancs által visszaadott verzióval.
@@ -141,6 +142,6 @@ Megadhat egy szabályt, amely szerint a Windows 10-es eszközöket kifogástalan
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
