@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,10 +20,10 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ---
 
-# Az e-mailek elérésének korlátozása a Microsoft Intune használatával: Példaforgatókönyvek
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Az e-mailek elérésének korlátozása a Microsoft Intune használatával: Példaforgatókönyvek
 
-## Felhasználók megakadályozása az Exchange Online nem megfelelő eszközökkel való elérésében.
-### Forgatókönyv követelményei
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Felhasználók megakadályozása az Exchange Online nem megfelelő eszközökkel való elérésében.
+### <a name="scenario-requirements"></a>Forgatókönyv követelményei
 - A **Könyvelés** Active Directory biztonsági csoportban lévő összes felhasználó számára le kell tiltani az Exchange Online elérését, ha az eszközük nem felel meg egy telepített megfelelőségi szabályzatnak.
 - Ha tartozik a csoportba olyan felhasználó, akinek az eszközeit az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nem támogatja, számára le kell tiltani az Exchange Online elérését a kérdéses eszközökön.
 - A **Pénzügy** Active Directory biztonsági csoportba tartozó egyik felhasználóra sem lehet érvényes a szabályzat, még akkor sem, ha az adott felhasználó a **Könyvelés** biztonsági csoportban is szerepel.
@@ -43,8 +43,8 @@ A következő folyamattal határozható meg, hogy mely eszközök érhessék el 
 
 ![Az eszközök általi elérés folyamata](./media/ConditionalAccess8-5.png)
 
-## A helyi Exchange-et elérő összes iOS-eszközt az Intune-nak kell kezelnie
-### Forgatókönyv követelményei
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>A helyi Exchange-et elérő összes iOS-eszközt az Intune-nak kell kezelnie
+### <a name="scenario-requirements"></a>Forgatókönyv követelményei
 - A helyi Exchange-hez kizárólag iOS-rendszerrel működő eszközöknek lehessen hozzáférése.
 - Ahhoz, hogy az eszközöket használni lehessen az Exchange elérésére, regisztrálni kell őket az Intune-ban, illetve meg kell felelniük a megfelelőségi szabályzat előírásainak.
 
@@ -62,8 +62,8 @@ A következő folyamattal határozható meg, mely eszközök férhetnek hozzá a
 
 ![Az eszközök általi elérés folyamata](./media/ConditionalAccess8-3.png)
 
-## Az Android-eszközök nem férnek hozzá a helyi Exchange-hez.
-### Forgatókönyv követelményei
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Az Android-eszközök nem férnek hozzá a helyi Exchange-hez.
+### <a name="scenario-requirements"></a>Forgatókönyv követelményei
 - Android-eszközök ne férhessenek hozzá az Exchange-hez.
 - Az összes többi támogatott eszköz hozzáfér az Exchange-hez, ha a(z) [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kezeli őket.
 

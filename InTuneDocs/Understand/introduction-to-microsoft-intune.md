@@ -16,13 +16,13 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Az Intune bemutatása
+# <a name="introduction-to-intune"></a>Az Intune bemutatása
 A Microsoft Intune a Microsoft Enterprise Mobility + Security (EMS, korábban Nagyvállalati mobilitási csomag) felügyeleti ága. A nagyvállalati mobilitás lényege, hogy az alkalmazottak minden eszközükön hatékonyan dolgozhatnak, miközben a szervezeti adatok védelme is biztosított.  
 
 Az EMS a nagyvállalati mobilitás teljes, integrált csomagja, amelynek részét alkotják az irodai alkalmazások, az identitáskezelés, a hozzáférés-vezérlés, a felügyelet és az adatvédelem. Hatékony módot biztosít egy mobilitási megoldás üzembe helyezéséhez és üzemeltetéséhez a szervezetében.  
@@ -49,13 +49,13 @@ Ezek az eszközök különböző kombinációkban használhatók az elterjedt ü
 
 Ebben a dokumentációban elmagyarázzuk, hogy az Intune által biztosított eszközök hogyan használhatók az üzleti helyzetek feltételeinek megteremtésére.  Azt is ismertetjük, hogy ezek az eszközök hogyan használhatók az Office 365-tel, az Azure AD-vel, az Azure RMS-sel és a Microsoft mobilitási csomag többi részével. Általános áttekintést nyújtunk a technológia legelterjedtebb alkalmazásairól és lehetséges kedvező hatásairól az Ön környezetében, valamint a megvalósításához szükséges eljárásokról. Maga a technológia rugalmas, és alkalmazható az itt leírtakon kívüli bármilyen típusú forgatókönyvben is.
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 * Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md).
 * Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](get-started-with-a-30-day-trial-of-microsoft-intune.md) révén.
 * Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
