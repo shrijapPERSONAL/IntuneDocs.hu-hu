@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
-ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
 
 
 ---
@@ -36,11 +36,12 @@ Az Intune támogatása és a Configuration Managerrel használt Intune támogat�
 2.  Válassza a Rendszergazda csempét.
 3.  A jegy megnyitásához a bal oldalon a **Támogatás** elem alatt válassza a **Támogatás** lehetőséget. Valószínűleg ezt fogja látni:
 
-    ![Nyisson egy új Intune támogatási jegyet](../media/suport-open-ticket.png)
+    ![Nyisson egy új Intune támogatási jegyet](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  Azok az ügyfelek, akik 100 vagy kevesebb licenccel rendelkező O365-fiókkal rendelkeznek vagy rendelkeztek, ezt látják majd, ezért tekintsék meg [A támogatási jegy megnyitásának alternatív módja](#alternate-method-to-open-a-support-ticket) lehetőséget.
+    >  
     > ![Alternatív Intune-támogatás](../media/alternate-support-ui.png)
 
     -   Számlázási, licencelési és fiókproblémák esetén válassza a **Számlázási és termékinformáció** lehetőséget.
@@ -114,6 +115,6 @@ Ha már vásárolt a Microsofttól licenceket a mennyiségi licencprogram keret�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
