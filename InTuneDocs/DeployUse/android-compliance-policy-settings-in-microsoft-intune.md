@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Megfelelőségi szabályzat beállításai Android-eszközökhöz a Microsoft Intune-ban
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Android-eszközökhöz a Microsoft Intune-ban
 
-A jelen témakörben leírt szabályzati beállítások az Android 4.0-s és újabb verzióival, illetve a Samsung KNOX 4.0-s és újabb verzióival futó eszközökre vonatkoznak.
+A jelen témakörben leírt szabályzati beállítások az Android 4.0-s és újabb verzióival, illetve a Samsung KNOX Standard 4.0-s és újabb verzióival futó eszközökre vonatkoznak.
 
 Ha más platformokra vonatkozó információkat keres, válassza az alábbiak egyikét:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai Windows-eszközökhöz](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## A rendszer biztonsági beállításai
-### Jelszó
+## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
+### <a name="password"></a>Jelszó
 - **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget.
 
 -  **Jelszó minimális hossza**: Meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
@@ -55,10 +56,10 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**: Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt használhatja. A rendszer megkéri a felhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz elérésekor.
 
-### Titkosítás
+### <a name="encryption"></a>Titkosítás
 - **Titkosítás megkövetelése mobileszközön**: Állítsa ezt a beállítást **Igen** értékre, ha szeretné megkövetelni, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás használatával titkosíthatók.
 
-## Eszközállapot és biztonsági beállítások
+## <a name="device-health-and-security-settings"></a>Eszközállapot és biztonsági beállítások
 
 - **Az eszköz nem lehet függetlenített vagy feltört eszköz**: Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
 - **Annak megkövetelése, hogy az ismeretlen forrásból származó alkalmazások telepítését a rendszer megakadályozza az eszközökön (Android 4.0 vagy újabb)**: A beállítás engedélyezésével és az **Igen** lehetőség beállításával letilthatja azokat az eszközöket, amelyeken engedélyezve van a **Biztonság** > **Ismeretlen források** beállítás.  
@@ -77,7 +78,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
   További információ: [az eszközök fenyegetések elleni védelmét szolgáló szabály engedélyezése a megfelelőségi szabályzatban](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Eszköztulajdonság-beállítások
+## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 - **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
   Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
@@ -85,6 +86,6 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

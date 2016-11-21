@@ -2,9 +2,10 @@
 title: "Távoli zárolás és jelszó alaphelyzetbe állítása | Microsoft Intune"
 description: "Az Intune egyaránt nyújt távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló funkciókat."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,53 +13,53 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
 A Microsoft Intune egyaránt biztosít távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló képességeket.
 
-## Eszköz távoli zárolása
-Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja azt. Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolás az egyes mobilplatformokon. A távoli zárolás nem támogatott
+## <a name="lock-a-device-remotely"></a>Eszköz távoli zárolása
+Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja az eszközt. Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolás az egyes mobilplatformokon.
 
-|Platform|Távoli zárolás|
+|Platfésm|Távoli zárolás|
 |------------|---------------|
 |iOS|Támogatott|
 |Android|Támogatott|
 |Windows 10 és Windows 10 Mobile|Támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1 és Windows RT|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
-|Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
+|Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 
 Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a távoli zárolást.
 
-### Mobileszköz zárolása távolról az Intune-konzollal
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Mobileszköz zárolása távolról az Intune-konzollal
 
 1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden eszköz** &gt; **Minden mobileszköz** elemre.
 
 2.  Kattintson a **Minden közvetlenül felügyelt eszköz** elemre az Intune-ban regisztrált eszközök megjelenítéséhez, vagy kattintson a **Minden Exchange ActiveSync által kezelt eszköz** elemre.
 
     > [!TIP]
-    > Az eszközt akár a felhasználó alapján is megtalálhatja. Válassza a **Minden felhasználó** lehetőséget. A felhasználó Tulajdonságok lapján kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére.
+    > Az eszközt akár a felhasználó alapján is megtalálhatja. Válassza a **Minden felhasználó** lehetőséget. A felhasználó Tulajdonságok lapján kattintson az **Eszközök** elemre, majd a zárolni kívánt mobileszköz nevére.
 
 3.  A listában kattintson a zárolni kívánt eszközre vagy eszközökre. A tálcán kattintson a **Távoli feladatok** elemre, és válassza a **Távoli zárolás** lehetőséget.
 
-## Eszköz PIN-kódjának alaphelyzetbe állítása
-Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja a PIN-kódot az eszközről, vagy új ideiglenes PIN-kódot kényszeríthet az eszközre. Az alábbi táblázatban áttekintheti, hogy hogyan működik a PIN-kód cseréje az egyes mobilplatformokon.
+## <a name="reset-the-passcode-on-a-device"></a>Eszköz PIN-kódjának alaphelyzetbe állítása
+Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja a PIN-kódot az eszközről, vagy új ideiglenes PIN-kódot kényszeríthet az eszközre. A következő táblázatban áttekintheti, hogy hogyan működik a PIN-kód cseréje az egyes mobilplatformokon.
 
-|Platform|PIN-kód alaphelyzetbe állítása|
+|Platfésm|PIN-kód alaphelyzetbe állítása|
 |------------|------------------|
 |iOS|Csak a PIN-kód eszközről való törlése támogatott. Nem lehet új ideiglenes PIN-kódot létrehozni.|
-|Android|Támogatott, és ideiglenes PIN-kód jön létre.|
+|Android|Az Android 7.0-nál régebbi verziói támogatottak. Létrehoz egy ideiglenes jelszót.|
 |Windows 10 mobil verzió|Támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1 és Windows RT|Nem támogatott|
-|Windows 8.1|Nem támogatott|
+|Windows 8.1|Nem támogatott|
 
 Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a jelszó alaphelyzetbe állítását.
 
-### Jelszó alaphelyzetbe állítása
+### <a name="reset-a-passcode"></a>Új PIN-kód kérése
 
 1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden eszköz** &gt; **Minden mobileszköz** elemre.
 
@@ -70,12 +71,11 @@ Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogat
 3.  A listában kattintson a zárolni kívánt eszközre vagy eszközökre. A tálcán kattintson a **Távoli feladatok** elemre, és válassza a **Jelszó alaphelyzetbe állítása** lehetőséget.
 
 
-### További információ
-[Eszköz kivonása](retire-devices-from-microsoft-intune-management.md)
-[Windows szelektív törlés az eszközadatok felügyeletéhez](http://technet.microsoft.com/library/dn486874.aspx)
+### <a name="see-also"></a>További információ
+[Eszköz kivonása](retire-devices-from-microsoft-intune-management.md), illetve [a Windowsban elérhető, az eszközadatok felügyeletére szolgáló szelektív törlési funkció ismertetése](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

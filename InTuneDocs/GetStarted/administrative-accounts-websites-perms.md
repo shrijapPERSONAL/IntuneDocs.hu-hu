@@ -2,7 +2,8 @@
 title: "Rendszergazdai fiókok, webhelyek és engedélyek | Microsoft Intune"
 description: "rendszergazdai fiókok, engedélyek, webhelyek"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: e5282defb4560fee028e16d6526037c848678d1a
 
 
 ---
 
-# Rendszergazdai fiókok, weboldalak és engedélyek a Microsoft Intune-ban
+# <a name="administrative-accounts-websites-and-permissions-in-microsoft-intune"></a>Rendszergazdai fiókok, weboldalak és engedélyek a Microsoft Intune-ban
 
 A Microsoft Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben felsorolt követelmények listáját.
 
@@ -30,36 +31,36 @@ Az Intune felügyeletéhez a következőket fogja használni:
 
 Az alábbiakban ezen fiókokról és portálokról esik szó.
 
-## Az Intune rendszergazdai fiókjai és speciális engedélyekkel rendelkező felhasználói fiókjai
+## <a name="administrator-accounts-and-user-accounts-with-special-permissions"></a>Az Intune rendszergazdai fiókjai és speciális engedélyekkel rendelkező felhasználói fiókjai
 
-Az alábbiakban találja az Intune által használt fiókokat és engedélyeket.
+A következő fiókokat és engedélyeket kell használnia az Intune-ban.
 
-### Bérlői rendszergazda
+### <a name="tenant-administrator"></a>Bérlői rendszergazda
 |Jogosultsági szintek|További információ|
 |--------------------------|-------------------------|
 |A bérlői rendszergazdák egy rendszergazdai szerepkörrel rendelkeznek, amely meghatározza az adott felhasználó felügyeleti hatókörét és az általa kezelhető feladatokat.<br /><br />A Microsoft különböző felhőszolgáltatásai ugyanazokat a rendszergazdai szerepköröket használják, azonban előfordulhat, hogy egyes szolgáltatások nem támogatnak bizonyos szerepköröket.<br /><br /> A Microsoft Intune a következő szerepköröket használja:<br /><br />- Globális rendszergazda<br />- Számlázási rendszergazda<br />- Jelszókezelő<br />- Szolgáltatás-rendszergazda<br />- Felhasználókezelő rendszergazda|A Microsoft Intune-előfizetés létrehozásához használt fiók alapértelmezés szerint egy bérlői rendszergazda, aki megkapja a globális rendszergazdai szerepkört.<br /></br>  Bérlői rendszergazdaként a [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] segítségével kezelheti [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetését, valamint kijelölheti a bérlő rendszergazdákat a(z) [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] felületén.<br /><br />A globális rendszergazdai szerepkörrel rendelkező bérlői rendszergazdákkal hozzáférhet a [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]hoz, és kijelölheti az első szolgáltatás-rendszergazdát. A napi felügyeleti feladatok elvégzéséhez nem ajánlott bérlői rendszergazdát alkalmazni. A bérlői rendszergazdának nincs szüksége [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licencre a [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]hoz való hozzáféréshez.<br /><br />A bérlői rendszergazda a Microsoft felhőszolgáltatásaiban általánosan használt fogalom. Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ra való előfizetéskor a szolgáltatás a Microsoft Azure AD bérlője lesz. Lásd az Azure AD-bérlőről szóló részt a következő cikkben: [Mi az az Azure AD címtár?](http://technet.microsoft.com/library/jj573650.aspx)|
 
 
-### Szolgáltatás-rendszergazda
+### <a name="service-administrator"></a>Szolgáltatás-rendszergazda
 |Jogosultsági szintek|További információ|
 |--------------------------|-------------------------|
 |A szolgáltatás-rendszergazdák a következő jogosultságok egyikével rendelkeznek:<br /><br />**Teljes hozzáférés**: A [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] minden területéhez korlátlan hozzáférést biztosít. Más szolgáltatás-rendszergazdákat is hozzáadhat és kezelhet.<br /><br />**Olvasási hozzáférés**: A [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] minden területéhez olvasási engedélyt biztosít. A csak olvasási hozzáféréssel rendelkező szolgáltatás-rendszergazdák nem módosíthatják az adatokat, de futtathatnak jelentéseket.<br /><br />**Segélyszolgálat – Csoportok csomópont**: csak a segélyszolgálati forgatókönyvekhez gyakran kapcsolódó feladatokhoz biztosít engedélyeket a szolgáltatás rendszergazdája számára. Az engedélyeknek ezzel a halmazával kapcsolatos további információkért lásd: [Az Intune-konzolnézetek testreszabása a rendszergazdai szerepköröknek megfelelően](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console).|Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] szolgáltatás alapértelmezés szerint nem jelöl ki szolgáltatás-rendszergazdát. Ehelyett egy globális rendszergazdai szerepkörrel rendelkező bérlői rendszergazda használatával kell kijelölnie az első szolgáltatás-rendszergazdát az előfizetéshez. </br></br> Szolgáltatás-rendszergazdaként az [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]on végezheti el a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] napi feladatait.<br /><br />A szolgáltatás-rendszergazdákat a felügyeleti konzolon lehet kijelölni. A szolgáltatás-rendszergazdáknak rendelkezniük kell [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel ahhoz, hogy a fiók hozzáférhessen a felügyeleti konzolhoz.|
 
 
 
-### Eszközregisztráció-kezelők
+### <a name="device-enrollment-managers"></a>Eszközregisztráció-kezelők
 |Jogosultsági szintek|További információ|
 |--------------------------|-------------------------|
-|Az eszközregisztráció-kezelők normál felhasználói fiókok, melyek rendelkeznek az ötnél több eszköz regisztrálásához szükséges további engedélyekkel.|Alapértelmezés szerint minden [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-felhasználó legfeljebb öt eszközt regisztrálhat. Megadhatja azonban az eszközregisztráció-kezelői engedélyt egy felhasználói fióknak, majd ezzel a fiókkal regisztrálhat nagy mennyiségű vállalati eszközt. Ez akkor hasznos, ha előfordulhat, hogy az eszközöket csak ideiglenesen rendelik hozzá a felhasználókhoz, vagy kioszkmódban működnek, amelyben a felhasználók eszközökhöz való társítása nem szükséges.|
+|Az eszközregisztráció-kezelők normál felhasználói fiókok, melyek rendelkeznek a tizenötnél több eszköz regisztrálásához szükséges további engedélyekkel.|Alapértelmezés szerint minden [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]-felhasználó legfeljebb tizenöt eszközt regisztrálhat. Megadhatja azonban az eszközregisztráció-kezelői engedélyt egy felhasználói fióknak, majd ezzel a fiókkal regisztrálhat nagy mennyiségű vállalati eszközt. Ez akkor hasznos, ha előfordulhat, hogy az eszközöket csak ideiglenesen rendelik hozzá a felhasználókhoz, vagy kioszkmódban működnek, amelyben a felhasználók eszközökhöz való társítása nem szükséges.|
 
 
-## Az Intune felügyeleti webhelyei
+## <a name="administrative-websites-for-intune"></a>Az Intune felügyeleti webhelyei
  A különböző rendszergazdai feladatok elvégzéséhez a következő felügyeleti webhelyek szükségesek. Ezeket a [támogatott böngészőkkel](supported-web-browsers.md) érheti el.
 
 - [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Microsoft Intune felügyeleti konzol](https://admin.manage.microsoft.com/)
 
-### [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+### <a name="office-365-portalhttpgomicrosoftcomfwlinkplinkid698854"></a>[Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 
 **Bérlői rendszergazdaként ezen a portálon kezelheti előfizetését**, beleértve a következő feladatokat, ha a rendszergazdai szerepköre lehetővé teszi őket:
 
@@ -74,7 +75,7 @@ Az alábbiakban találja az Intune által használt fiókokat és engedélyeket.
 - Az Office 365 portál eléréséhez a fióknak **Engedélyezett** bejelentkezési állapotúnak kell lennie. Ez az állapot nem ugyanaz, mint amikor a fióknak licence van az előfizetéshez. Alapértelmezés szerint az összes felhasználói fiók **Engedélyezett** állapotú.
 
 
-### [Microsoft Intune felügyeleti konzol](https://admin.manage.microsoft.com/)
+### <a name="microsoft-intune-administrator-consolehttpsadminmanagemicrosoftcom"></a>[Microsoft Intune felügyeleti konzol](https://admin.manage.microsoft.com/)
 
 **Szolgáltatás-rendszergazdaként ezen a portálon kezelhetők a napi tevékenységek**, beleértve az alábbiakat:
 
@@ -89,11 +90,11 @@ A portálra szolgáltatás-rendszergazdák, valamint globális rendszergazda sze
 
 További információ a [felhasználók előfizetéshez való hozzáadásával](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) és az [előfizetési licencek hozzárendelésével kapcsolatban](start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
- ### További információ
+ ### <a name="see-also"></a>További információ
  [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Az IMEI-számok megadása | Microsoft Intune"
 description: "A Microsoft Intune-nal a rendszergazdák IMEI-számokat importálhatnak a mobileszközplatformokra, így könnyebben azonosíthatják a vállalati tulajdonban lévő mobileszközöket"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b01a5efc0f60622b95623fd91f192c267ff766
-ms.openlocfilehash: 9bd2b4bb676e23712c0a668161b81c4e352bce87
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
 
 
 ---
 
-# Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal
+# <a name="specify-corporateowned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal
 A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilkészülék-azonosító (IMEI-) számokat importáljanak IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsák a vállalati tulajdonban lévő mobileszközöket. Az eszközök Intune-ban való regisztrációja után az IMEI-számokat importáló eszközöket itt találja: **Csoportok** > **Áttekintés** > **Összes eszköz**. Az **Eszközcsoport** felsorolja az importált IMEI-számmal rendelkező eszközöket **Vállalati** értékkel látják el a **Tulajdonos** oszlopban.
 
 1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **IMEI-szám szerint (minden platform)** területre, majd válassza az **Eszközök felvétele** lehetőséget. Két módon adhat hozzá eszközöket:
@@ -38,7 +38,7 @@ A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilké
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **Eszközadatok kézi megadása** – Adja meg legfeljebb öt eszköz sorozatszámát és adatait.
+    -   **Eszközadatok kézi megadása** – Adja meg legfeljebb tizenöt eszköz sorozatszámát és adatait.
 
    A *Részletek* adminisztrációs célokat szolgál, az eszközökkel társított IMEI-számok beazonosítása érdekében. Ezek az információk nem kerülnek át az eszközre, csak az Intune konzoljában jelennek meg.
 
@@ -50,6 +50,6 @@ Amikor az adott IMEI-számmal rendelkező eszközt regisztrálják az Intune-ban
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
