@@ -4,6 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8bc2f6e8dcf9d0ac3e7fccec792c86ff1fd4131c
-ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
+ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
+ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 
 ---
@@ -82,10 +83,18 @@ Az alábbiakra lesz szüksége az Intune App SDK-nak egy natív Android-alkalmaz
 
 * **[Androidhoz készült Microsoft Intune App SDK – fejlesztői útmutató](intune-app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti az androidos mobilalkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit.
 
-Az Intune App SDK Xamarin összetevő és az Intune App SDK Cordova beépülő modul dokumentációját a vonatkozó GitHub-tárakban találja.
+Cordova-alkalmazások készítéséhez az Intune App SDK Cordova beépülő modullal a következőkre lesz szüksége:
+
+* **[Az Intune App SDK Cordova beépülő modul útmutatója](intune-app-sdk-cordova)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
+
+Xamarin-alkalmazások készítéséhez az Intune App SDK Xamarin összetevővel a következőkre lesz szüksége:
+
+* **[Az Intune App SDK Xamarin összetevő útmutatója](intune-app-sdk-xamarin)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
 
 
-## <a name="set-up-telemetry-for-your-app"></a>Telemetria beállítása az alkalmazáshoz
+
+
+## <a name="configure-telemetry-for-your-app"></a>Telemetria konfigurálása az alkalmazásra vonatkozóan
 
 A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
@@ -95,7 +104,7 @@ A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
 * **Androidhoz készült Intune App SDK**: A telemetriai adatokat a program nem naplózza az SDK használatával.
 
-## <a name="test-your-mamenabled-app-with-microsoft-intune"></a>A MAM használatát támogató alkalmazás tesztelése a Microsoft Intune-nal
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>A MAM használatát támogató alkalmazás tesztelése a Microsoft Intune-nal
 
 Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való integrálásához szükséges lépéseket, meg kell győződnie arról, hogy a felhasználóknál és a rendszergazdánál engedélyezve vannak és működnek az alkalmazásfelügyeleti szabályzatok. Az integrált alkalmazás teszteléséhez a következőkre lesz szüksége:
 
