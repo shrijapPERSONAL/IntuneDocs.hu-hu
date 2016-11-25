@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ A **Teljes törlés** visszaállítja az eszközt a gyári beállításokra, és
 
 Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
+
+1.  Nyissa meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget a [https://portal.office.com](https://portal.office.com) portálon.
+
+2.  A lap bal oldalán található hivatkozást használva jelentkezzen be a szervezeti azonosítójával.
+
+3.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (kattintson a **Register your free Azure Active Directory** előfizetési hivatkozásra).
+
+4.  Válassza az **Active Directory** lehetőséget, és jelölje ki a szervezetét.
+
+5.  Válassza a **Felhasználók** fület.
+
+6.  Jelölje ki azokat a felhasználókat, akiknek az eszközeit törölni szeretné.
+
+7.  Válassza az **Eszközök** lehetőséget.
+
+8.  Szükség szerint távolítson el eszközöket, többek között azokat, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
+
+
 ## <a name="selective-wipe"></a>Szelektív törlés
 
 A **szelektív törlés** a vállalati adatokat, többek között a beállításokat és az e-mail-profilokat, valamint adott esetben a mobilalkalmazás-felügyeleti (MAM-) adatokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak. Az eszközt a rendszer eltávolítja az Intune-ból. Az alábbi táblázatok ismertetik, hogy milyen adatokat töröl a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a szelektív törlés. (A táblázatok az egyes platformok szerint vannak rendezve)
@@ -95,7 +114,7 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
-|E-mail|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek. Helyszíni környezetben üzemelő Microsoft Exchange esetén az e-mail-profilok és a gyorsítótárazott e-mailek nem törlődnek.|
+|E-mail|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
 |Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
@@ -111,7 +130,7 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |E-mail|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is.|Nem támogatott.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.</br>**Kivétel**: Helyszíni környezetben üzemelő Exchange esetén az e-mail-fiókok nem törlődnek.|
 |Azure Active Directory (AAD) elhagyása|Nem.|Nem.|Törlődik az AAD-rekord.|Nem alkalmazható. A Windows 10 nem támogatja az Azure Active Directoryhoz csatlakoztatott eszközök szelektív törlését.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Titkosítási fájlrendszer (EFS) által védett tartalom törlése
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Titkosítási fájlrendszer (EFS) által védett tartalom törlése
 A Windows 8.1 és a Windows RT 8.1 rendszer támogatja az EFS által védett tartalom szelektív törlését. Az EFS által védett tartalom szelektív törlése az alábbiak szerint működik:
 
 -   A szelektív törlés során csak azok az EFS által védett alkalmazások és adatok törlődnek, amelyek az Intune-fiókkal megegyező internetes tartományba tartoznak. További információ: [Eszközadatok törlése a Windows szelektív törlési funkciójával](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ A jelentésben az is szerepel, hogy ki végezte az adott műveletet.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

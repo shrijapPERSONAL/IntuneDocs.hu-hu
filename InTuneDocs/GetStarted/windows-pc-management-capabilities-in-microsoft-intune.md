@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Az Intune szoftverügyfél által biztosított felügyeleti funkciók Windows rendszerű számítógépekhez
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Az Intune szoftverügyfél által biztosított felügyeleti funkciók Windows rendszerű számítógépekhez
 A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, mivel ez több funkciót biztosít. Ugyanakkor az Intune-szoftverügyféllel is felügyelheti a számítógépeket. Ekkor a következő funkciókat érheti el:
 
 -   **[Szoftverfrissítések kezelése](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
@@ -37,7 +37,7 @@ A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, mivel
 
 Az Intune a szoftverügyfél akár 7000 Windows-eszközön való telepítését is támogatja.
 
-## Rendszerkövetelmények
+## <a name="operating-system-requirements"></a>Rendszerkövetelmények
 Az Intune a Windows következő verzióival rendelkező számítógépek felügyeletére alkalmas (32 bites és 64 bites verziók egyaránt):
 
 
@@ -52,7 +52,7 @@ Az Intune a Windows következő verzióival rendelkező számítógépek felügy
 - **Windows 10** - Pro, Education és Enterprise verziók
 
 
-## Minimális hardverkövetelmények
+## <a name="minimum-hardware-requirements"></a>Minimális hardverkövetelmények
 Az Intune-szoftverügyfél telepítésére vonatkozó minimális hardverkövetelmények a következők:
 
 |Követelmény|Részletek|
@@ -61,7 +61,7 @@ Az Intune-szoftverügyfél telepítésére vonatkozó minimális hardverkövetel
 |Processzor és memória|A processzorra és a RAM-ra vonatkozó követelményeket a számítógép operációs rendszere határozza meg.|
 |Lemezterület|200 MB szabad lemezterület az ügyfélszoftver telepítése előtt.|
 
-## További követelmények
+## <a name="further-requirements"></a>További követelmények
 Az Intune-szoftverügyfél telepítésére vonatkozó szoftverkövetelmények a következők:
 
 |Követelmény|Részletek|
@@ -70,11 +70,11 @@ Az Intune-szoftverügyfél telepítésére vonatkozó szoftverkövetelmények a 
 |Windows Installer 3.1|A számítógépnek legalább a Windows Installer 3.1-es verziójával kell rendelkeznie.|
 |Nem kompatibilis ügyfélszoftver eltávolítása|A számítógépes Intune ügyfélszoftver telepítése előtt távolítsa el a következő ügyfélszoftvereket a számítógépről:<br /><br />- A Configuration Manager bármely verziója<br />- A Microsoft Systems Management Server (SMS) bármely verziója|
 
-### További információ
+### <a name="see-also"></a>További információ
 [A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

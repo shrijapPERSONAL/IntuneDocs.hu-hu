@@ -2,10 +2,10 @@
 title: "Intune-licencek kezelése a PowerShell használatával | Microsoft Intune"
 description: "Intune-licencek kezelése a PowerShell használatával"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# Intune-licencek kezelése a PowerShell használatával
+# <a name="manage-intune-licenses-using-powershell"></a>Intune-licencek kezelése a PowerShell használatával
 Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, minden felhasználó számára egy licencet kell hozzárendelnie az Intune-előfizetéséhez, a [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Intune-licencek kezelése) című témakörnek megfelelően. Előfordulhat azonban, hogy a Microsoft Enterprise Mobility + Security megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.
 
 A felhasználói licencek EMS-szolgáltatásokhoz való szelektív hozzárendeléséhez nyissa meg a PowerShellt rendszergazdaként egy olyan számítógépen, amelyre telepítve van a [Windows PowerShellhez készült Microsoft Azure Active Directory-modul ](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) megoldással rendelkező számítógépen. A PowerShell helyi számítógépre vagy ADFS-kiszolgálóra telepíthető.
@@ -60,7 +60,7 @@ Ellenőrizze a következővel:
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lépését.
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
