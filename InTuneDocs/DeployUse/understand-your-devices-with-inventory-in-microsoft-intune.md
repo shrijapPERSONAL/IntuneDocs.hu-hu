@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,54 +14,54 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával
 A Microsoft Intune leltárfunkcióját használva leltár készíthető a regisztrált eszközökről, illetve az Intune ügyfélszoftvert futtató Windows-számítógépekről.
 Az Intune általában 7 naponta készít leltárt a felügyelt eszközökről. Emiatt előfordulhat, hogy a jelentésekben késve jelenik meg az eszközök nemrégiben történt módosítása, pl. egy eszköz átnevezése vagy a szabad tárhelye mennyiségének változása.
 
-## Milyen adatok gyűjthetők be a regisztrált eszközökről?
+## <a name="whats-collected-from-enrolled-devices"></a>Milyen adatok gyűjthetők be a regisztrált eszközökről?
 A mobileszközök által összegyűjtött leltáradatok megtekintéséhez futtassa a [Mobileszközkészlet-jelentések](understand-microsoft-intune-operations-by-using-reports.md) funkciót. Az Intune az alábbi táblázatban szereplő leltáradatokat gyűjti össze a regisztrált eszközökről:
 
 |Tulajdonság|Gyűjtő eszköz|
 |------------|-----------------------|
-|**Név**|All rendszerű eszközök|
-|**Operációs rendszer**|All rendszerű eszközök|
-|**Gyártó**|All rendszerű eszközök|
-|**Modell**|All rendszerű eszközök|
-|**Kezelési csatorna**|All rendszerű eszközök|
+|**Név**|Az összes eszköz|
+|**Operációs rendszer**|Az összes eszköz|
+|**Gyártó**|Az összes eszköz|
+|**Modell**|Az összes eszköz|
+|**Felügyeleti csatorna**|Az összes eszköz|
 |**Az AAD-ben regisztrált**|Mac OS X kivételével minden eszköz|
-|**Compliant (Megfelelő)**|All rendszerű eszközök|
+|**Megfelelő:**|Az összes eszköz|
 |**EAS engedélyezve**|Mac OS X kivételével minden eszköz|
 |**EAS-aktiválási azonosító**|Mac OS X kivételével minden eszköz|
 |**EAS-aktiválás ideje**|Mac OS X kivételével minden eszköz|
-|**Kezelés állapota**|All rendszerű eszközök|
-|**E-mail cím**|All rendszerű eszközök|
-|**Exchange ActiveSync-azonosító**|All rendszerű eszközök|
-|**Függetlenített vagy feltört**|Csak iOS- és Android-eszközök|
-|**Az eszköz egyedi azonosítója**|Az Exchange ActiveSync kivételével minden eszköz|
-|**Sorozatszám**|iOS-, Mac OS X-, Android-, Windows 8.1- és Windows 10-eszközök|
-|**Teljes tárolóhely**|iOS-, Mac OS X-, Windows 8.1- és Windows 10-eszközök|
-|**Szabad tárolóhely**|iOS-, Mac OS X-, Windows 8.1- és Windows 10-eszközök|
+|**Kezelés állapota**|Az összes eszköz|
+|**E-mail-cím**|Az összes eszköz|
+|**Exchange ActiveSync-azonosító**|Az összes eszköz|
+|**Jailbreakelt vagy rootolt**|Csak iOS- és Android-eszközök|
+|**Egyedi eszközazonosító**|Az Exchange ActiveSync kivételével minden eszköz|
+|**Sorozatszám**|iOS-, Mac OS X-, Android-, Windows 8.1- és asztali Windows 10-eszközök|
+|**Teljes tárterület**|iOS-, Mac OS X-, Windows 8.1-, asztali és mobil Windows 10-eszközök|
+|**Szabad tárterület**|iOS-, Mac OS X-, Windows 8.1- és asztali Windows 10-eszközök|
 |**Telefonszám**<br>A vállalati eszközként besorolt telefonokat a teljes telefonszámuk jelöli (például egy mobileszközkészlet-jelentés futtatásakor). A BYOD-eszközök telefonszámai &#42; karakterekkel maszkolva, csak az utolsó négy számjegyükkel jelennek meg.|iOS, Android és Windows Phone rendszerű eszközök|
 |**IMEI**|Exchange ActiveSync-, iOS-, Android- és Windows Phone-eszközök|
 |**MEID**<br>Mobilkészülék-azonosító szám|Csak iOS-eszközök|
-|**Wi-Fi MAC**|Az Exchange ActiveSync kivételével minden eszköz|
+|**Wi-Fi MAC-cím**|Az Exchange ActiveSync kivételével minden eszköz|
 |**Előfizető szolgáltatója**|Csak iOS- és Android-eszközök|
 |**Mobiltechnológia**|Csak iOS- és Android-eszközök|
 |**Felügyelt**|Csak iOS-eszközök|
 |**Aktiválási zár állapota**|Csak iOS-eszközök|
-|**A beléptetés dátuma**|All rendszerű eszközök|
-|**Utolsó frissítés**|All rendszerű eszközök|
+|**Beléptetés dátuma**|Az összes eszköz|
+|**Legutóbbi frissítés**|Az összes eszköz|
 |**Ethernet MAC-cím**|Csak Mac OS X-eszközök|
 |**Aktiválási zár engedélyezve**|Csak iOS-eszközök|
-|**Titkosítás engedélyezve**|All rendszerű eszközök|
+|**Titkosítás engedélyezve**|Az összes eszköz|
 
-## A Windows rendszerű számítógépekről gyűjtött adatok
+## <a name="whats-collected-from-windows-pcs"></a>A Windows rendszerű számítógépekről gyűjtött adatok
 > [!IMPORTANT]
 > Ez a szakasz csak az Intune Windows PC-ügyfélszoftvert futtató Windows rendszerű számítógépekre vonatkozik.
 
@@ -79,7 +79,7 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 -   **TPM-verzió**
 
--   **Összesített lemezterület**
+-   **Teljes lemezterület**
 
 -   **Felhasznált lemezterület**
 
@@ -107,7 +107,7 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 -   **Hozzárendelt felhasználó**
 
--   **Utolsó frissítés**
+-   **Legutóbbi frissítés**
 
 <!-- this section below belongs in the planning journey
 ### See Also
@@ -116,6 +116,6 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

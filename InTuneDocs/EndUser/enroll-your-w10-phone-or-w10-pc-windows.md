@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,99 +14,45 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
-ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
+ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
+ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
 
 
 ---
 
 
-# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban
+# <a name="enroll-your-windows-10-devices-in-intune"></a>Windows 10 rendszerű eszközök regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
+A vállalati eszközök Microsoft Intune-beli regisztrálása lehetővé teszi, hogy a Windows 10 rendszerű eszközök hozzáférjenek a szervezet védett adataihoz, beleértve az e-maileket, a fájlokat és az egyéb erőforrásokat. Ez a Windows 10 rendszerű asztali számítógépekre és a Windows 10 Mobile rendszerű eszközökre egyaránt vonatkozik. Az eszközök regisztrálásával biztonságossá tehető ez a hozzáférés Ön és a szervezet számára, és elkülöníthetők a munkahelyi adatok a személyes adatoktól.
 
+Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows), és mit jelent ez az [eszközön található adatok szempontjából](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása:
+## <a name="windows-10-desktop-devices"></a>Windows 10 rendszerű asztali eszközök
+1.  Lépjen a __Start__ menüre.
 
-1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
+ ![Windows Start menü](../media/windows-start-menu.png).
 
-    ![Windows Gépház](./media/w10-enroll-rs1-settings-accounts.png)
+2. Írja be „a gép névjegye” kifejezést a __keresősávba__, majd válassza __A gép névjegye__ lehetőséget.
 
-2.  A következő két képernyő közül válassza ki azt, amelyen ugyanaz látszik, mint az eszközön. Hajtsa végre a kiválasztott képernyőhöz tartozó lépéseket.
+ ![A gép névjegye – keresés](../media/searching_for_about_your_pc.png)
 
-    Ha ezt a képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](#steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
+2.  A __Beállítások__ képernyőn megjelenik a számítógépre telepített Windows 10 verziójára vonatkozó adatok listája. A listában keresse meg a __Verzió__ bejegyzést.
 
-    ![Csatlakozás munkahelyi vagy iskolai rendszerhez](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+ ![Windows 10 asztali verzió – A gép névjegye](../media/settings_about_pc.png)
 
-    Ha ezt a képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Saját fiók](#steps-to-follow-if-you-see-your-account) részben leírt lépéseket.
+3.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account).
 
-    ![Saját fiók](./media/w10-enroll-2-accounts-your-account.png)
+## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile rendszerű eszközök
 
-## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
-
-1.  Koppintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** lehetőségre, majd a **Kapcsolódás** elemre.
-
-    ![Koppintson a Hozzáférés munkahelyi vagy iskolai fiókhoz lehetőségre](./media/w10-enroll-rs1-connect-to-work-or-school.png)
-
-2.  Adja meg a munkahelyi vagy iskolai e-mail címét és koppintson a **Tovább** elemre.
-
-    ![Adja meg a munkahelyi vagy iskolai fiókját](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
-
-3. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával.
-
-    ![Munkahelyi vagy iskolai fiók beállítása](./media/w10-enroll-rs1-enter-your-credentials.png)
-
-    Ekkor megjelenik egy üzenet arról, hogy a munkahely vagy iskola regisztrálja az eszközt.
-
-4. Amikor megjelenik a **Készen vagyunk!** képernyő, koppintson a **Bezárás** elemre. Ezzel készen is van.
-
-  ![Koppintson a bezárás elemre a „Készen vagyunk!” képernyőn](./media/w10-enroll-rs1-youre-all-set.png)
-
-5. Ha szeretné még egyszer ellenőrizni, hogy a kapcsolat megfelelően működik-e, lépjen vissza a **Gépház** területre, ahol most már meg kell jelennie a listán a munkahelyi vagy iskolai fiókjának.
-
-    ![A kapcsolat megfelelő beállításának ellenőrzése](./media/w10-enroll-rs1-validate-successful-enrollment.png)
-
-Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail fiókjához és fájljaihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
-
-
-## <a name="steps-to-follow-if-you-see-your-account"></a>Teendők, ha ezt látja: Saját fiók
-
-1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
-
-    ![Lépjen be a Beállítások és fiókok munkaterületre](./media/W10-enroll-1-settings-accounts.png)
-
-2.  Koppintson a **Saját fiók** elemre.
-
-    ![Koppintson a Saját fiók elemre](./media/W10-enroll-2-accounts-your-account.png)
-
-3.  Koppintson a **Munkahelyi vagy iskolai fiók beállítása** pontra.
-
-    ![Koppintson a Munkahelyi vagy iskolai fiók beállítása pontra](./media/w10-enroll-3-add-work-school-acct.png)
-
-4.  Jelentkezzen be a munkahelyi vagy iskolai fiókjával.
-
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
-
-Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi vagy iskolai e-mail címéhez, fájljaihoz és egyéb adataihoz, kövesse a [Hibaelhárítási teendők, ha ezt látja: Saját fiók](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) című részben leírt utasításokat.
-
-Azt javasoljuk, hogy telepítse a Vállalati portál alkalmazást, mert azzal egyszerűen megismerheti és letöltheti az Ön és munkaköre szempontjából fontos vállalati alkalmazásokat. Attól függően, hogy a vállalat hogyan konfigurálta az Intune-t, előfordulhat, hogy a Vállalati portál alkalmazás már a regisztrációs folyamat részeként települt.
-
-Ha az alkalmazáslistában szerepel a **Vállalati portál**, akkor már rendelkezik az alkalmazással. Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következő lépésekkel telepítheti.
-
-1.  Koppintson a **Start** &gt; **Áruház** parancsra.
-
-2.  Koppintson a **Keresés** elemre, majd írja be a **vállalati portál** kifejezést.
-
-3.  Az eredmények listájában koppintson a **Vállalati portál** &gt; **Telepítés** lehetőségre.
-
-4.  Koppintson a **Telepítés** vagy az **Ingyenes** lehetőségre. Attól függ, hogy melyik beállítás jelenik meg, hogy a vállalat hogyan konfigurálta az alkalmazást.
+1.  A __Start__ menüben pöccintéssel lépjen a __Minden alkalmazás__ listához, és válassza ki a __Beállítások__ alkalmazást.
+2.  Koppintson a __Rendszer__, majd a __Névjegy__ elemre.
+3.  Az __Eszközadatok__ bejegyzésnél koppintson a __További információ__ elemre. Megjelenik az eszköz adatait tartalmazó lista. A listában keresse meg a __Verzió__ bejegyzést.
+4.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

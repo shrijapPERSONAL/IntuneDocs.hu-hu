@@ -4,7 +4,7 @@
 ### [Bejelentkezés, vagy regisztráció a 30 napos próbaverzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Felhasználók hozzáadása](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
 ### [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Házirendek létrehozása és alkalmazások közzététele](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
+### [zabályzatok létrehozása és alkalmazások közzététele](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Mobileszközök regisztrálása és alkalmazások telepítése](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Egyéb beállítások és kiegészítő funkciók](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [További lépések](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
@@ -19,6 +19,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

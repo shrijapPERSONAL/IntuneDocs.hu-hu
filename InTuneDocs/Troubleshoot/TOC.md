@@ -23,6 +23,6 @@
 ## [A Lookout-integráció hibaelhárítása](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

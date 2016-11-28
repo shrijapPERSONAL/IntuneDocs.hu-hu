@@ -2,8 +2,8 @@
 title: "Az Endpoint Protection szolgáltatás használata Windows rendszerű számítógépeken"
 description: "Biztonságossá teheti felügyelt számítógépeit az Endpoint Protection használatával, amely valós idejű védelmet biztosít a kártevők ellen."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 00409205a78d6f8fca353bf70d4f8d3f91e1e8d2
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással
 A Microsoft Intune Endpoint Protection valós idejű védelmet biztosít a kártevőkkel szemben, naprakészen tartja a kártevő-definíciókat, és automatikusan átvizsgálja a számítógépeket. Segítségével biztonságossá teheti felügyelt számítógépeit. Az Endpoint Protection olyan eszközöket is biztosít, amelyek segítenek kezelni és megfigyelni a kártékony programok támadásait.
 
 Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
 
 Az alábbi szakaszokban található információk segítségével konfigurálhatja, telepítheti és figyelheti az Endpoint Protection szolgáltatást.
 
-## Mikor ajánlott az Endpoint Protection használata?
+## <a name="choose-when-to-use-endpoint-protection"></a>Mikor ajánlott az Endpoint Protection használata?
 Rendszergazdaként egyik legfontosabb feladata, hogy biztosítsa, hogy az Ön által felügyelt számítógépek vírusoktól és rosszindulatú szoftverektől mentesek legyenek. Mielőtt telepíti az Intune-t a szervezet Windows rendszerű számítógépeire, az alábbi lehetőségek egyikének kiválasztásával és az ahhoz tartozó házirend-beállítások konfigurálásával meg kell határoznia, hogyan védi meg a számítógépeket:
 
 |Válasszon:|Endpoint Protection házirend-beállításai|További információ|
@@ -50,7 +50,7 @@ Az aktuálisan használt végpontvédelmi alkalmazásról a Microsoft Intune End
 > [!NOTE]
 > Az Intune nem végzi el automatikusan a külső gyártótól származó végpontvédelmi alkalmazások eltávolítását.
 
-## A Microsoft Intune Endpoint Protection konfigurálása
+## <a name="configure-microsoft-intune-endpoint-protection"></a>A Microsoft Intune Endpoint Protection konfigurálása
 A Microsoft Intune Endpoint Protection konfigurálásához hajtsa végre a következő lépéseket.
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Házirend** > **Házirend hozzáadása** lehetőséget.
@@ -63,84 +63,84 @@ Használhatja az ajánlott beállításokat, vagy testre is szabhatja azokat. Ha
 
 Az alkalmazott Endpoint Protection-házirendet a **Házirend** munkaterület **Minden házirend** lapján tekintheti meg.
 
-## Az Endpoint Protection szolgáltatás beállításainak megadása
+## <a name="specify-endpoint-protection-service-settings"></a>Az Endpoint Protection szolgáltatás beállításainak megadása
 
 |Házirend-beállítás|Részletek|
 |------------------|--------------------|
-|**Endpoint Protection telepítése**|Állítsa az **Igen** értékre, ha telepíteni szeretné az Endpoint Protectiont a kezelt számítógépekre. Ha a telepítés során a rendszer egy külső gyártótól származó végpontvédelmi alkalmazást észlel, az Endpoint Protection nem települ, kivéve, ha **Az Endpoint Protection telepítése akkor is, ha már van telepítve más gyártótól származó végpontvédelmi alkalmazás** beállítás értéke **Igen**. **Megjegyzés:** A rendszer alapértelmezés szerint telepíti az Intune Endpoint Protection szolgáltatást a felügyelt számítógépekre. Ha nem szeretné a felügyelt számítógépeken telepíteni az Endpoint Protection szolgáltatást, akkor ezt a házirend-beállítást mindenképpen **Nem** értékre kell állítania. Ha az Endpoint Protection korábban telepítve lett, és a házirendet a **Nem** értékre módosítja, akkor a rendszer eltávolítja az Endpoint Protection szolgáltatást.<br />Javasolt érték: **Igen**|
-|**Az Endpoint Protection telepítése akkor is, ha már van telepítve más gyártótól származó végpontvédelmi alkalmazás**|Válassza az **Igen** értéket, ha a Microsoft Intune Endpoint Protection szolgáltatást akkor is telepíteni szeretné, ha a rendszer külső gyártó végpontvédelmi alkalmazását észleli.<br /><br />Javasolt érték: **Igen**|
-|**Endpoint Protection engedélyezése**|Állítsa **Igen** értékre a Microsoft Intune Endpoint Protection engedélyezéséhez az Endpoint Protection-ügyféllel rendelkező számítógépeken.<br /><br />Ha a **Nem** értékre van állítva, és a Microsoft Intune Endpoint Protection telepítve van, az Endpoint Protection-ügyfél felhasználói felülete nem jelenik meg a felhasználók számára, és az összes védelmi szolgáltatás inaktív lesz.<br /><br />Javasolt érték: **Igen**|
+|**Az Endpoint Protection telepítése**|Állítsa az **Igen** értékre, ha telepíteni szeretné az Endpoint Protectiont a kezelt számítógépekre. Ha a telepítés során a rendszer egy külső gyártótól származó végpontvédelmi alkalmazást észlel, az Endpoint Protection nem települ, kivéve, ha **Az Endpoint Protection telepítése akkor is, ha már van telepítve más gyártótól származó végpontvédelmi alkalmazás** beállítás értéke **Igen**. **Megjegyzés:** A rendszer alapértelmezés szerint telepíti az Intune Endpoint Protection szolgáltatást a felügyelt számítógépekre. Ha nem szeretné a felügyelt számítógépeken telepíteni az Endpoint Protection szolgáltatást, akkor ezt a házirend-beállítást mindenképpen **Nem** értékre kell állítania. Ha az Endpoint Protection korábban telepítve lett, és a házirendet a **Nem** értékre módosítja, akkor a rendszer eltávolítja az Endpoint Protection szolgáltatást.<br />Javasolt érték: **Igen**|
+|**Az Endpoint Protection telepítése akkor is, ha egy külső gyártó végpontvédelmi alkalmazása telepítve van**|Válassza az **Igen** értéket, ha a Microsoft Intune Endpoint Protection szolgáltatást akkor is telepíteni szeretné, ha a rendszer külső gyártó végpontvédelmi alkalmazását észleli.<br /><br />Javasolt érték: **Igen**|
+|**Az Endpoint Protection engedélyezése**|Állítsa **Igen** értékre a Microsoft Intune Endpoint Protection engedélyezéséhez az Endpoint Protection-ügyféllel rendelkező számítógépeken.<br /><br />Ha a **Nem** értékre van állítva, és a Microsoft Intune Endpoint Protection telepítve van, az Endpoint Protection-ügyfél felhasználói felülete nem jelenik meg a felhasználók számára, és az összes védelmi szolgáltatás inaktív lesz.<br /><br />Javasolt érték: **Igen**|
 |**Ügyfél felhasználói felületének letiltása**|Állítsa az **Igen** értékre a Microsoft Intune Endpoint Protection-ügyfél felhasználói felületének a felhasználók elől való elrejtéséhez (az érvénybe lépéséhez az ügyfélszámítógép újraindítása szükséges).<br /><br />Javasolt érték: **Nem**|
-|**Az Endpoint Protection telepítése akkor is, ha már van telepítve más gyártótól származó végpontvédelmi alkalmazás**|Válassza az **Igen** értéket, ha kényszeríteni szeretné a Microsoft Intune Endpoint Protection szolgáltatás telepítését akkor is, ha a rendszer külső gyártó végpontvédelmi alkalmazását észleli.<br /><br />Javasolt érték: **Nem**|
-|**Rendszer-visszaállítási pont létrehozása a kártevők eltávolítása előtt**|Állítsa az **Igen** értékre, ha bármely kártevő szoftver eltávolításának megkezdése előtt létre szeretne hozni egy Windows rendszer-visszaállítási pontot.<br /><br />Javasolt érték: **Igen**|
-|**Ártalmatlanított kártevők nyomon követése (nap)**|A beállítás lehetővé teszi, hogy az Endpoint Protection meghatározott ideig nyomon kövesse az ártalmatlanított kártevő szoftvereket, és így manuálisan lehessen ellenőrizni a korábban fertőzött számítógépeket.<br /><br />0 érték 30 nap közötti értéket adhat meg.<br /><br />Javasolt érték: **7 nap**|
+|**Az Endpoint Protection telepítése akkor is, ha egy külső gyártó végpontvédelmi alkalmazása telepítve van**|Válassza az **Igen** értéket, ha kényszeríteni szeretné a Microsoft Intune Endpoint Protection szolgáltatás telepítését akkor is, ha a rendszer külső gyártó végpontvédelmi alkalmazását észleli.<br /><br />Javasolt érték: **Nem**|
+|**Rendszer-visszaállítási pont létrehozása a kártevő szoftverek eltávolítása előtt**|Állítsa az **Igen** értékre, ha bármely kártevő szoftver eltávolításának megkezdése előtt létre szeretne hozni egy Windows rendszer-visszaállítási pontot.<br /><br />Javasolt érték: **Igen**|
+|**Ártalmatlanított kártevő szoftverek követése (nap)**|A beállítás lehetővé teszi, hogy az Endpoint Protection meghatározott ideig nyomon kövesse az ártalmatlanított kártevő szoftvereket, és így manuálisan lehessen ellenőrizni a korábban fertőzött számítógépeket.<br /><br />0 érték 30 nap közötti értéket adhat meg.<br /><br />Javasolt érték: **7 nap**|
 Ha az **Endpoint Protection telepítése** és az **Endpoint Protection engedélyezése** házirendértékeket **Igen**értékre állította, és **Az Endpoint Protection telepítése, akkor is, ha már van telepítve más gyártótól származó végpontvédelmi alkalmazás** házirendérték beállítása **Nem**, akkor a Microsoft Intune Endpoint Protection észleli a telepített végpontvédelmi alkalmazást. Ebben az esetben az Endpoint Protection nem települ, illetve a rendszer eltávolítja, ha már telepítették. Ugyanakkor a Microsoft Intune Endpoint Protection jelenti a másik végpontvédelmi alkalmazás állapotát az Intune-ban.
 
   A valós idejű védelem jóvoltából a Microsoft Security Essentials riasztást küld, ha potenciális fenyegetések, például vírusok és kémprogramok kísérlik meg telepíteni vagy futtatni magukat. Mihelyst ilyen esemény történik, megjelenik egy üzenet az értesítési területen, a tálca jobb szélén.
 
-### Valós idejű védelem beállításainak megadása
+### <a name="specify-real-time-protection-settings"></a>Valós idejű védelem beállításainak megadása
 
 |Házirend-beállítás|Részletek|
 |------------------|--------------------|
 |**Valós idejű védelem engedélyezése**|Engedélyezi az összes olyan fájl és alkalmazás figyelését és vizsgálatát, melyekhez hozzáférnek. Emellett minden rosszindulatú fájlt és alkalmazást is blokkol, mielőtt azok lefutnának a számítógépeken.<br /><br />Javasolt érték: **Igen**|
-|**Minden letöltött fájl vizsgálata**|Engedélyezi az összes az internetről a számítógépekre letöltött fájl és melléklet vizsgálatát.<br /><br />Javasolt érték: **Igen**|
-|**Fájl- és programtevékenység figyelése a számítógépen**|Engedélyezi a bejövő és a kimenő fájlok és a programok tevékenységének figyelését a számítógépeken. Ezzel a beállítással az Endpoint Protection szolgáltatás figyeli az egyes fájlok és programok futásának elindulását, és értesítést küld az általuk vagy rajtuk elvégzett műveletekről.<br /><br />Javasolt érték: **Igen**|
-|**Figyelt fájlok**|Kiválaszthatja, hogy a szolgáltatás csak a bejövő, csak a kimenő fájlokat, vagy az összes fájlt figyelje.<br /><br />Javasolt érték: **Minden fájl figyelése**|
+|**Minden letöltés ellenőrzése**|Engedélyezi az összes az internetről a számítógépekre letöltött fájl és melléklet vizsgálatát.<br /><br />Javasolt érték: **Igen**|
+|**A fájl- és programtevékenység figyelése a számítógépen**|Engedélyezi a bejövő és a kimenő fájlok és a programok tevékenységének figyelését a számítógépeken. Ezzel a beállítással az Endpoint Protection szolgáltatás figyeli az egyes fájlok és programok futásának elindulását, és értesítést küld az általuk vagy rajtuk elvégzett műveletekről.<br /><br />Javasolt érték: **Igen**|
+|**Megfigyelt fájlok**|Kiválaszthatja, hogy a szolgáltatás csak a bejövő, csak a kimenő fájlokat, vagy az összes fájlt figyelje.<br /><br />Javasolt érték: **Minden fájl figyelése**|
 |**Viselkedésfigyelés engedélyezése**|Engedélyezi, hogy a Microsoft Intune Endpoint Protection gyanús tevékenységekre utaló mintákat keressen az ügyfélszámítógépeken.<br /><br />Javasolt érték: **Igen**|
-|**Hálózatfelügyeleti rendszer engedélyezése**|A Hálózatfelügyeleti rendszer (NIS) engedélyezése az ügyfélszámítógépeken. A NIS a [Microsoft kártevőkezelési központban](http://go.microsoft.com/fwlink/?LinkId=234249) található ismert sebezhető pontok mintázatai alapján észleli és blokkolja a rosszindulatú hálózati forgalmat.<br /><br />Javasolt érték: **Igen**|
+|**Hálózatvizsgáló rendszer engedélyezése**|A Hálózatfelügyeleti rendszer (NIS) engedélyezése az ügyfélszámítógépeken. A NIS a [Microsoft kártevőkezelési központban](http://go.microsoft.com/fwlink/?LinkId=234249) található ismert sebezhető pontok mintázatai alapján észleli és blokkolja a rosszindulatú hálózati forgalmat.<br /><br />Javasolt érték: **Igen**|
 
   ![Az Endpoint Protection szolgáltatás valós idejű beállításai](./media/pol-sa-pc-policy-realtime.png)
 
-### A vizsgálatütemezési beállítások megadása
+### <a name="specify-scan-schedule-settings"></a>A vizsgálatütemezési beállítások megadása
 
 |Házirend-beállítás|További információ|
 |------------------|--------------------|
-|**Napi gyors vizsgálat ütemezése**|Egy, a számítógépeken lévő gyakran használt fájlokra, illetve fontos rendszerfájlokra vonatkozó napi gyors vizsgálat ütemezése. Ez a gyors vizsgálat minimális hatással van a teljesítményre.<br /><br />Javasolt érték: **Igen**|
-|**Gyors vizsgálat futtatása két egymást követő vizsgálat elmulasztása esetén**|Az Endpoint Protection szolgáltatás konfigurálása úgy, hogy automatikusan gyors vizsgálatot futtasson azokon a számítógépeken, amelyeken elmaradt két egymást követő gyors vizsgálat.<br /><br />Javasolt érték: **Igen**|
-|**Teljes vizsgálat ütemezése**|A helyi számítógépek merevlemezein található összes fájlra és erőforrásra vonatkozó teljes vizsgálat beállítása. Ez a vizsgálat hosszabb ideig is eltarthat, és hatással lehet a számítógépek teljesítményére (a vizsgálat időtartama a vizsgált fájlok és erőforrások számától függ).<br /><br />Javasolt érték: **Nem**|
-|**Teljes vizsgálat futtatása két egymást követő teljes vizsgálat elmulasztása esetén**|Az Endpoint Protection szolgáltatás beállítása úgy, hogy automatikusan gyors vizsgálatot futtasson azokon a számítógépeken, amelyeken elmaradt két egymást követő, gyors vizsgálat.<br /><br />Javasolt érték: Nincs konfigurálva|
+|**Napi gyorsvizsgálat ütemezése**|Egy, a számítógépeken lévő gyakran használt fájlokra, illetve fontos rendszerfájlokra vonatkozó napi gyors vizsgálat ütemezése. Ez a gyors vizsgálat minimális hatással van a teljesítményre.<br /><br />Javasolt érték: **Igen**|
+|**Gyorsellenőrzés végrehajtása, ha egymást követően két gyorsellenőrzés is kimaradt**|Az Endpoint Protection szolgáltatás konfigurálása úgy, hogy automatikusan gyors vizsgálatot futtasson azokon a számítógépeken, amelyeken elmaradt két egymást követő gyors vizsgálat.<br /><br />Javasolt érték: **Igen**|
+|**Teljes ellenőrzés ütemezése**|A helyi számítógépek merevlemezein található összes fájlra és erőforrásra vonatkozó teljes vizsgálat beállítása. Ez a vizsgálat hosszabb ideig is eltarthat, és hatással lehet a számítógépek teljesítményére (a vizsgálat időtartama a vizsgált fájlok és erőforrások számától függ).<br /><br />Javasolt érték: **Nem**|
+|**Teljes ellenőrzés végrehajtása, ha egymást követően két teljes ellenőrzés is kimaradt**|Az Endpoint Protection szolgáltatás beállítása úgy, hogy automatikusan gyors vizsgálatot futtasson azokon a számítógépeken, amelyeken elmaradt két egymást követő, gyors vizsgálat.<br /><br />Javasolt érték: Nincs konfigurálva|
 
-### Vizsgálati beállítások megadása
+### <a name="specify-scan-options-settings"></a>Vizsgálati beállítások megadása
 
 |Házirend-beállítás|Részletek|
 |------------------|--------------------|
-|**Teljes vizsgálat futtatása az Endpoint Protection telepítése után**|**Igen** érték esetén az Endpoint Protection szolgáltatás automatikusan teljes rendszervizsgálatot futtat miután telepítették a számítógépeken. A felhasználók termelékenységére gyakorolt hatás minimalizálása érdekében ez a vizsgálat csak akkor fut, amikor a számítógépek üresjáratban vannak.<br /><br />Javasolt érték: **Igen**|
-|**Teljes vizsgálat automatikus futtatása, ha a kártevők eltávolításának nyomon követéséhez szükséges**|Ha az **Igen** értékre állítja, az Endpoint Protection automatikusan teljes rendszervizsgálatot fog futtatni a számítógépeken a kártevő szoftverek eltávolítása után annak megerősítésére, hogy más fájlok nem érintettek.<br /><br />Javasolt érték: **Igen**|
+|**Teljes ellenőrzés végrehajtása az Endpoint Protection telepítése után**|**Igen** érték esetén az Endpoint Protection szolgáltatás automatikusan teljes rendszervizsgálatot futtat miután telepítették a számítógépeken. A felhasználók termelékenységére gyakorolt hatás minimalizálása érdekében ez a vizsgálat csak akkor fut, amikor a számítógépek üresjáratban vannak.<br /><br />Javasolt érték: **Igen**|
+|**Kártevő szoftver eltávolítása után teljes ellenőrzés automatikus végrehajtása, amennyiben szükséges**|Ha az **Igen** értékre állítja, az Endpoint Protection automatikusan teljes rendszervizsgálatot fog futtatni a számítógépeken a kártevő szoftverek eltávolítása után annak megerősítésére, hogy más fájlok nem érintettek.<br /><br />Javasolt érték: **Igen**|
 |**Ütemezett vizsgálat indítása csak akkor, ha a számítógép üresjáratban van**|A beállítást **Igen** értékre állítva akadályozhatja meg, hogy az ütemezett vizsgálatok elinduljanak, amikor a számítógépek használatban vannak, így megelőzve a felhasználói termelékenység csökkenését.<br /><br />Javasolt érték: **Igen**|
-|**A legújabb kártevő-definíciók keresése vizsgálatok elindítása előtt**|Ha a beállítást az **Igen** értékre állítja, az Endpoint Protection automatikusan megkeresi a legújabb kártevő-definíciókat a számítógépek vizsgálatának megkezdése előtt.<br /><br />Javasolt érték: **Igen**|
-|**Archív fájlok vizsgálata**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást arra, hogy archív fájlokban (például .zip- vagy .cab-fájlokban) is keressen kártevő szoftvereket a számítógépeken.<br /><br />Javasolt érték: **Nem**|
-|**E-mail üzenetek vizsgálata**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a bejövő e-mailek vizsgálatára a számítógépekre való érkezésükkor.<br /><br />Javasolt érték: **Igen**|
-|**Hálózati megosztott mappákból megnyitott fájlok vizsgálata**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a hálózaton található megosztott mappákból megnyitott fájlok vizsgálatára. Ezek jellemzően olyan fájlok, amelyek UNC (univerzális elnevezési konvenció) elérési úttal érhetők el. A funkció engedélyezése a csak olvasási hozzáféréssel rendelkező felhasználók számára problémákat okozhat, mert ők nem tudják eltávolítani a kártevő szoftvereket.<br /><br />Javasolt érték: **Nem**|
-|**Csatlakoztatott hálózati meghajtók vizsgálata**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a csatlakoztatott hálózati meghajtókon lévő fájlok vizsgálatára. A funkció engedélyezése a csak olvasási hozzáféréssel rendelkező felhasználók számára problémákat okozhat, mert ők nem tudják eltávolítani a kártevő szoftvereket.<br /><br />Javasolt érték: **Nem**|
-|**Cserélhető adathordozók vizsgálata**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a kártevő szoftverek és nemkívánatos szoftverek keresésére a cserélhető adathordozókon, például az USB flash meghajtókon a számítógépek teljes vizsgálatának futtatásakor.<br /><br />Javasolt érték: **Igen**|
-|**CPU-használatát korlátozása a vizsgálatok alatt**|A számítógépek ütemezett vizsgálatai során engedélyezett maximális CPU-használat százalékértékének beállítása. Ez az érték 1 és 100 százalék között állítható be.<br /><br />Javasolt érték: **50%**|
+|**A legújabb kártevőszoftver-definíciók lekérdezése az ellenőrzések megkezdése előtt**|Ha a beállítást az **Igen** értékre állítja, az Endpoint Protection automatikusan megkeresi a legújabb kártevő-definíciókat a számítógépek vizsgálatának megkezdése előtt.<br /><br />Javasolt érték: **Igen**|
+|**Archív fájlok ellenőrzése**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást arra, hogy archív fájlokban (például .zip- vagy .cab-fájlokban) is keressen kártevő szoftvereket a számítógépeken.<br /><br />Javasolt érték: **Nem**|
+|**E-mailek ellenőrzése**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a bejövő e-mailek vizsgálatára a számítógépekre való érkezésükkor.<br /><br />Javasolt érték: **Igen**|
+|**A megosztott hálózati mappákból megnyitott fájlok ellenőrzése**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a hálózaton található megosztott mappákból megnyitott fájlok vizsgálatára. Ezek jellemzően olyan fájlok, amelyek UNC (univerzális elnevezési konvenció) elérési úttal érhetők el. A funkció engedélyezése a csak olvasási hozzáféréssel rendelkező felhasználók számára problémákat okozhat, mert ők nem tudják eltávolítani a kártevő szoftvereket.<br /><br />Javasolt érték: **Nem**|
+|**Csatlakoztatott hálózati meghajtók ellenőrzése**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a csatlakoztatott hálózati meghajtókon lévő fájlok vizsgálatára. A funkció engedélyezése a csak olvasási hozzáféréssel rendelkező felhasználók számára problémákat okozhat, mert ők nem tudják eltávolítani a kártevő szoftvereket.<br /><br />Javasolt érték: **Nem**|
+|**Cserélhető adathordozók ellenőrzése**|Az **Igen** értékre állítva konfigurálhatja az Endpoint Protection szolgáltatást a kártevő szoftverek és nemkívánatos szoftverek keresésére a cserélhető adathordozókon, például az USB flash meghajtókon a számítógépek teljes vizsgálatának futtatásakor.<br /><br />Javasolt érték: **Igen**|
+|**Processzorhasználat korlátozása az ellenőrzések során**|A számítógépek ütemezett vizsgálatai során engedélyezett maximális CPU-használat százalékértékének beállítása. Ez az érték 1 és 100 százalék között állítható be.<br /><br />Javasolt érték: **50%**|
 
-### Az alapértelmezett műveleti beállítások kiválasztása
+### <a name="choose-default-actions-settings"></a>Az alapértelmezett műveleti beállítások kiválasztása
 
 Az **Adja meg, hogy az Endpoint Protection hogyan kezelje az alábbi riasztási szintekhez tartozó kártevő szoftvereket** beállítás határozza meg az alapértelmezett műveletet, amelyet az Endpoint Protection végrehajt a különböző riasztási szintű kártevő szoftverek észlelése esetén. Minden riasztási szinten eltávolíthatja a kártevő szoftvereket, karanténba zárhatja azokat, vagy végrehajthatja a Microsoft által javasolt műveletet.
 
 Javasolt érték: **Javasolt művelet**, amely lehetővé teszi, hogy az Endpoint Protection tegyen javaslatot a műveletre.   
 
-### Döntse el, hogy kiválasztja-e a kizárt fájlok és kizárt mappák beállításait
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Döntse el, hogy kiválasztja-e a kizárt fájlok és kizárt mappák beállításait
 
 **A valós idejű védelem által és a teljes ellenőrzések végrehajtásakor figyelmen kívül hagyott fájlok és mappák** beállítással kizárhat meghatározott fájlokat és mappákat, amikor vizsgálatot futtat vagy valós idejű védelmet használ a számítógépeken.
 
-### Döntse el, hogy kiválasztja-e a kizárt folyamatok beállításait
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Döntse el, hogy kiválasztja-e a kizárt folyamatok beállításait
 
 **A valós idejű védelem által és a teljes ellenőrzések végrehajtásakor figyelmen kívül hagyott folyamatok** beállítással kizárhat meghatározott folyamatokat, amikor vizsgálatot futtat vagy valós idejű védelmet használ a számítógépeken. Csak a következő kiterjesztésű fájlokat lehet kizárni: **.exe**, **.com** vagy **.scr**.
 
-### Döntse el, hogy kiválasztja-e a kizárt fájltípusok beállításait
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Döntse el, hogy kiválasztja-e a kizárt fájltípusok beállításait
 
 **A valós idejű védelem által és a teljes ellenőrzések végrehajtásakor figyelmen kívül hagyott fájltípusok** beállítással kizárhat meghatározott fájlnév-kiterjesztéseket, amikor vizsgálatot futtat vagy valós idejű védelmet használ a számítógépeken.
 
-### A Microsoft Active Protection Service beállításainak megadása
+### <a name="specify-microsoft-active-protection-service-settings"></a>A Microsoft Active Protection Service beállításainak megadása
 A Microsoft Active Protection Service egy online közösség, amely segít eldönteni, hogyan reagáljon a lehetséges veszélyforrásokra. A Közösség emellett az új kártevőszoftver-fertőzések terjedésének megállítását is segíti. A **Kapcsolódás a Microsoft Active Protection Service szolgáltatáshoz** beállítást **Igen** értékűre állíthatja, majd megadhatja a **Tagsági szint** értékét:
   - **Alapszintű** – alapvető adatok küldése a Microsoftnak az észlelt kártevőkkel kapcsolatban. Ez magában foglalja a szoftver származási helyét, az alkalmazott, illetve az Endpoint Protection által automatikusan alkalmazott műveleteket, valamint azt, hogy sikeresek voltak-e a műveletek.
   - **Speciális** – több adat küldése a Microsoftnak a kártevőkkel, kémprogramokkal és vélhetően nemkívánatos szoftverekkel kapcsolatban. Ebbe beletartoznak a szoftverek helyével, a fájlnevekkel, és az azzal kapcsolatos információk, hogy a szoftverek hogyan működnek és milyen hatással voltak a számítógépre.
 
 Ezenkívül bekapcsolhatja a **Microsoft Active Protection Service-jelentéseken alapuló dinamikus definíciók fogadása** beállítást is.
 
-## Az Endpoint Protection szolgáltatás felügyeleti feladatainak kiválasztása
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Az Endpoint Protection szolgáltatás felügyeleti feladatainak kiválasztása
 A következő műveletekkel különböző kezelési feladatokat hajthat végre az Endpoint Protection szolgáltatást futtató kezelt számítógépeken.
  - Kártevő-definíciók frissítése
   - Intune konzol – A **Csoportok** munkaterületen jelölje ki a frissíteni kívánt számítógépeket. Válassza a **Távoli feladatok** &gt; **Kártevőszoftver-leírások frissítése** elemet.
@@ -151,7 +151,7 @@ A következő műveletekkel különböző kezelési feladatokat hajthat végre a
 
 Az Intune-konzol jobb alsó sarkában található **Távoli feladatok** hivatkozásra kattintva megtekintheti a távoli feladatok állapotát. A **Távoli feladat állapota** párbeszédpanelen áttekintheti az aktuális távoli feladatokat, a feladatok állapotát, az eszköz nevét és a jelentett hibákat. Ugyanitt talál a hibaelhárítási információkra mutató hivatkozást, ha vannak ilyenek.
 
-## Az Endpoint Protection figyelése
+## <a name="monitor-endpoint-protection"></a>Az Endpoint Protection figyelése
 A [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) **Védelem**munkaterületén figyelheti a számítógépeken lévő kártevő szoftverek állapotát. A munkaterület két lapból áll:
  - **Védelem áttekintése** – A fontos problémákat jeleníti meg hivatkozások formájában, amelyekre rákattintva további információkat érhet el. Többek között az alábbi problémák jelenhetnek meg:
   - **Követő műveletet igénylő kártevőszoftver-példányok** – a hivatkozásra kattintva megtekintheti a kártevőkkel kapcsolatos problémák listáját, beleértve a problémák elhárítása érdekében végrehajtandó utólagos műveleteket. A lista tovább részletezhető annak megtekintéséhez, hogy mely számítógépek érintettek.
@@ -167,7 +167,7 @@ A [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) **Védel
 
   ![Az Endpoint Protection figyelése](./media/pol-sa-ep-monitor.png)
 
-### A kártevők legutóbbi észlelési útvonalainak megtekintése számítógépen
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>A kártevők legutóbbi észlelési útvonalainak megtekintése számítógépen
 Az Intune az eszközökön észlelt 10 legutóbbi kártevőpéldány elérési útvonalát tudja megjeleníteni. A **Legutóbbi észlelési útvonal** alapértelmezés szerint le van tiltva. A nézet engedélyezése:
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** > **Minden eszköz** > **Kártevők** elemet.
@@ -176,7 +176,7 @@ Az Intune az eszközökön észlelt 10 legutóbbi kártevőpéldány elérési �
 
 3.  Jelölje be a lista **Legutóbbi észlelési útvonalak** jelölőnégyzetét. Megjelenik a **Legutóbbi észlelési útvonalak** oszlop és megjeleníti az eszközön észlelt legfeljebb 10 legutóbbi kártevőpéldányt.
 
-## Kártevő-ellenőrzés futtatása vagy a számítógép kártevőszoftver-leírásainak frissítése
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Kártevő-ellenőrzés futtatása vagy a számítógép kártevőszoftver-leírásainak frissítése
 Az Intune az Endpoint Protection vagy a Windows Defender használatával teljes vagy gyors kártevő-ellenőrzést is képes futtatni azokon a távoli felügyelt számítógépeken, amelyeken az Intune-ügyfél telepítve van.
 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) lépjen a **Csoportok** > **Áttekintés** > **Minden eszköz** > **Minden számítógép** elemre, és jelölje ki a célozni kívánt számítógépet.
@@ -186,14 +186,14 @@ Az Intune az Endpoint Protection vagy a Windows Defender használatával teljes 
 
 
 
-## További segítségre van szüksége?
+## <a name="need-more-help"></a>További segítségre van szüksége?
 További segítség és támogatás: [Az Endpoint Protection hibáinak elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
-### Lásd még:
+### <a name="see-also"></a>Lásd még:
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

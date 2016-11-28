@@ -14,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6ae7bd35157da261d0627f70933fe2a808f9e677
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# Alkalmazások telepítése a Microsoft Intune-ban
+# <a name="deploy-apps-in-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
 
 A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében.
 
 
-## Alkalmazások telepítése
+## <a name="deploy-an-app"></a>Alkalmazások telepítése
 Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre az eszközök vagy felhasználók kiválasztott csoportja számára.
 
-### Alkalmazás telepítése
+### <a name="to-deploy-an-app"></a>Alkalmazás telepítése
 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) kattintson az **Alkalmazások** &gt; **Alkalmazások** elemre az Ön által kezelt alkalmazások listájának megtekintéséhez.
 
@@ -45,12 +45,17 @@ Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre az es
 
 5. Ha a telepítésre elérhetővé tett alkalmazás konfigurálható mobilalkalmazás-felügyeleti szabályzattal, a **Mobilalkalmazás-kezelés** lap is megjelenik. Ezen a lapon választhatja ki az alkalmazáshoz hozzárendelni kívánt mobilalkalmazás-felügyeleti szabályzatot.
 
-    [Itt megtekintheti a mobilalkalmazás-felügyeleti házirendekkel kompatibilis Microsoft-alkalmazásokat.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Itt megtekintheti a mobilalkalmazás-felügyeleti szabályzatokkal kompatibilis Microsoft-alkalmazásokat.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Ha a telepítésre elérhetővé tett alkalmazás kompatibilis az Intune VPN-profiljaival, a **VPN-profil** lap is megjelenik. Ezen a lapon hozzárendelheti az iOS-alkalmazásokat egy Ön által telepített VPN-profilhoz. A VPN-kapcsolat az alkalmazás indításakor automatikusan meg fog nyílni. Csak azok a VPN-profilok tehetők elérhetővé, amelyek **Alkalmazásonkénti VPN** profilbeállítása engedélyezve van.
  További információ a VPN-profilok konfigurálásáról, beleértve a profilok alkalmazásokhoz való társítását is: [ VPN-kapcsolatok a Microsoft Intune-ban](vpn-connections-in-microsoft-intune.md).
 
-## Példa
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>Példa
 
 Ebben a példában az alkalmazást iOS-eszközök számára **elérhetőként** telepítette.
 Az alkalmazás megjelenik a felhasználók eszközein a vállalati portálon, és a felhasználók onnan telepíthetik azt.
@@ -61,12 +66,12 @@ Az ezen a képernyőfelvételen látható Bing iOS-alkalmazást például a **K�
 Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a felhasználó értesítést kap arról, hogy egy alkalmazás készen áll a telepítésre. Az ezen a képernyőfelvételen látható Work Folders iOS-alkalmazást például a **Felügyelt iOS-alkalmazás az App Store-ból** telepítési típus használatával tették elérhetővé telepítésre.  
 ![iOS-eszközök számára kötelező alkalmazás](./media/iOS-Required-install.PNG)
 
-## További lépések
+## <a name="next-steps"></a>További lépések
 
 Miután telepít egy alkalmazást, érdemes figyelnie a telepítés előrehaladását. További információ: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

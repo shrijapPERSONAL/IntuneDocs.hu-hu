@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# A SharePoint Online-hoz való hozzáférés korlátozása a Microsoft Intune-nal
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>A SharePoint Online-hoz való hozzáférés korlátozása a Microsoft Intune-nal
 Használja az [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] feltételes hozzáférés funkcióját a SharePoint Online-on lévő fájlok elérésének szabályozására.
 A feltételes hozzáférés két összetevőből áll:
 - Egy eszközmegfelelőségi szabályzat, amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
@@ -55,12 +55,12 @@ Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek e
 
 -   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Vállalati portál webhelyre irányítja, ahol további információt talál a problémáról és megoldásáról.
 
-**A feltételes hozzáférés minden SharePoint-helyen kényszerítve van, és blokkolva van a külső megosztás**
+**A feltételes hozzáférés a külső megosztásra nem vonatkozik**. Arról, hogy miképpen akadályozhatja meg a külső megosztást a bérlőjén vagy a webhelycsoportján belül, a [Külső megosztás kezelése SharePoint Online-környezetben](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US) című cikk nyújt tájékoztatást.
 
 >[!NOTE]
 >Ha engedélyezi a SharePoint Online-on a feltételes hozzáférést, javasoljuk, hogy tiltsa le a tartományt a listán a [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) témakörben ismertetett módon.  
 
-## A mobileszközök támogatása
+## <a name="support-for-mobile-devices"></a>A mobileszközök támogatása
 - iOS 8.0 és újabb verziók
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s vagy újabb verziók
 - Windows Phone 8.1 és újabb verziók
@@ -68,11 +68,11 @@ Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek e
 Letilthatja a SharePoint Online-hoz való **iOS** és **Android** böngészőkkel történő hozzáférést.  A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS és Android)
+* Managed Browser (iOS és Android 5.0 és újabb)
 
 **A nem támogatott böngészők le lesznek tiltva**.
 
-## Számítógépek támogatása
+## <a name="support-for-pcs"></a>Számítógépek támogatása
 - Windows 8.1 és újabb (az Intune-nal történt regisztráció esetén)
 - Windows 7.0, Windows 8.1 vagy Windows 10 (ha tartományhoz csatlakozik)
 > [!NOTE]
@@ -92,10 +92,10 @@ Az AAD DRS szolgáltatás automatikusan aktiválódik az Intune-t és az Office 
     A modern hitelesítéssel Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható az Office 2013 Windows-ügyfelein, és jobb biztonságot kínál, többek között a **többtényezős hitelesítéssel** és a **tanúsítványalapú hitelesítéssel**.
 
 
-## A SharePoint Online feltételes hozzáférésének beállítása
+## <a name="configure-conditional-access-for-sharepoint-online"></a>A SharePoint Online feltételes hozzáférésének beállítása
 
-### 1. lépés: Az Active Directory-alapú biztonsági csoportok beállítása
-Kezdés előtt állítsa be az Azure Active Directory-alapú biztonsági csoportokat a feltételes hozzáférési szabályzathoz. Ezeket a csoportokat az **Office 365 Felügyeleti központban**vagy az **Intune-fiókportálon**konfigurálhatja. A rendszer ezen csoportok alapján célozza meg a felhasználókat, illetve helyezi őket kivétel alá. Amikor egy felhasználóra házirend vonatkozik, az erőforrások eléréséhez az általa használt összes eszköznek meg kell felelnie a házirendnek.
+### <a name="step-1-configure-active-directory-security-groups"></a>1. lépés: Az Active Directory-alapú biztonsági csoportok beállítása
+Kezdés előtt állítsa be az Azure Active Directory-alapú biztonsági csoportokat a feltételes hozzáférési házirendhez. Ezeket a csoportokat az **Office 365 Felügyeleti központban**vagy az **Intune-fiókportálon**konfigurálhatja. A rendszer ezen csoportok alapján célozza meg a felhasználókat, illetve helyezi őket kivétel alá. Amikor egy felhasználóra házirend vonatkozik, az erőforrások eléréséhez az általa használt összes eszköznek meg kell felelnie a házirendnek.
 
 Egy SharePoint Online-szabályzatban két csoporttípust adhat meg:
 
@@ -105,7 +105,7 @@ Egy SharePoint Online-szabályzatban két csoporttípust adhat meg:
 
 Ha egy felhasználó mindkét csoportban szerepel, mentesül a házirend alól.
 
-### 2. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2. lépés: Megfelelőségi szabályzat konfigurálása és telepítése
 Ha eddig még nem tette meg, hozza létre és regisztrálja a megfelelőségi szabályzatot azoknak a felhasználóknak, akikre a SharePoint Online-szabályzat vonatkozni fog.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ A megfelelőségi szabályzat konfigurálásának részletei a [Megfelelőségi 
 
 Ha készen áll, folytassa a **3. lépéssel**.
 
-### 3. lépés: A SharePoint Online-szabályzat beállítása
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>3. lépés: A SharePoint Online-szabályzat beállítása
 Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltételeknek megfelelő eszközök érhessék el a SharePoint Online-t. A szabályzat ezek után az Azure Active Directoryban tárolódik.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -132,7 +132,7 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
 2.  Válassza a **Feltételes hozzáférési szabályzat engedélyezése SharePoint Online-hoz** lehetőséget.
 
-3.  Az **Alkalmazás-hozzáférés** szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
+3.  Az **Alkalmazás hozzáférése**szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
 
     -   **Összes platform**
 
@@ -148,27 +148,27 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
      A Windows rendszerű számítógépek esetében a számítógépnek vagy tartományhoz kell csatlakoznia, vagy regisztrálva kell lennie az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal, és meg kell felelnie a szabályzatnak. A következő követelményeket állíthatja be:
 
-     -   **Az eszközöknek tartományhoz kell csatlakozniuk vagy meg kell felelniük a szabályzatnak.** Válassza ezt a lehetőséget, ha a számítógépeknek  tartományhoz kell csatlakozniuk, vagy meg kell felelniük az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban beállított szabályzatoknak. Ha a számítógép egyik követelménynek sem felel meg, a rendszer kérni fogja a felhasználótól, hogy regisztrálja az eszközt a következővel: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Az eszközöknek tartományhoz kell csatlakozniuk vagy meg kell felelniük a szabályzatnak.** Válassza ezt a lehetőséget, ha a számítógépeknek  tartományhoz kell csatlakozniuk, vagy meg kell felelniük az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban beállított szabályzatoknak. Ha a számítógép egyik követelménynek sem felel meg, a rendszer kérni fogja a felhasználótól, hogy regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban.
 
      -   **Az eszközöknek tartományhoz kell csatlakozniuk.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépeknek tartományhoz kell csatlakozniuk az Exchange Online-hoz való hozzáféréshez. Ha a számítógép nem csatlakozik tartományhoz, a rendszer blokkolja a levelezéshez való hozzáférést és kéri a felhasználót, hogy lépjen kapcsolatba a rendszergazdával.
 
-     -   **Az eszközöknek meg kell felelniük a szabályzatnak.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépek regisztrálva legyenek az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal és megfeleljenek a szabályzatnak. Ha a számítógép nincs regisztrálva, megjelenik egy utasításokat tartalmazó üzenet, amely leírja, hogyan regisztrálja az eszközt.
+     -   **Az eszközöknek meg kell felelniük a házirendnek.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépek regisztrálva legyenek az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal és megfeleljenek a szabályzatnak. Ha a számítógép nincs regisztrálva, megjelenik egy utasításokat tartalmazó üzenet, amely leírja, hogyan regisztrálja az eszközt.
 
-4.   A **Böngészőalapú hozzáférés** SharePoint online-hoz és a OneDrive-hoz beállítás alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: Safari (iOS), és Chrome (Android). A más böngészőkkel történő hozzáférés le lesz tiltva.  A OneDrive megadott alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek.
+4.   A **Böngészőalapú hozzáférés** SharePoint online-hoz és a OneDrive Vállalati verzióhoz beállítás alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: Safari (iOS) és Chrome (Android). A más böngészőkkel történő hozzáférés le lesz tiltva.  A OneDrive megadott alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek.
 
-  Az **Android** eszközök felhasználóinak engedélyezni kell a böngészőalapú hozzáférést.  A végfelhasználónak ehhez a regisztrált eszközön be kell kapcsolnia a „Böngészőalapú hozzáférés engedélyezése” opciót az alábbi módon:
+  Az **Android** eszközök felhasználóinak engedélyezni kell a böngészőalapú hozzáférést.  A végfelhasználónak ehhez a regisztrált eszközön be kell kapcsolnia a „Böngészőalapú hozzáférés engedélyezése” lehetőséget az alábbi módon:
   1.    Nyissa meg a **Vállalati portál alkalmazást**.
-  2.    Nyissa meg a **Beállítások** lapot a három pontra (...) vagy a hardver menü gombjára kattintva.
+  2.    Nyissa meg a **Beállítások** lapot a három pontra (...) vagy a hardveres menü gombra kattintva.
   3.    Kattintson a **Böngészőalapú hozzáférés engedélyezése** gombra.
   4.  A Chrome böngészőben jelentkezzen ki az Office 365-ből, majd indítsa újra a Chrome-ot.
 
-  **iOS és Android** platformokon a szolgáltatás eléréséhez használt eszköz azonosításához az Azure Active Directory egy Transport Layer Security (TLS-) tanúsítványt rendel az eszközhöz.  Az eszköz az alábbi képernyőfelvételnek megfelelően megjeleníti a tanúsítványt, és a végfelhasználótól annak kiválasztását kéri. A végfelhasználónak a böngésző további használatához ki kell választania ezt a tanúsítványt.
+  **iOS és Android** platformokon a szolgáltatás eléréséhez használt eszköz azonosításához az Azure Active Directory egy TLS-tanúsítványt (Transport Layer Security) rendel az eszközhöz.  Az eszköz az alábbi képernyőfelvételnek megfelelően megjeleníti a tanúsítványt, és a végfelhasználótól annak kiválasztását kéri. A végfelhasználónak a böngésző további használatához ki kell választania ezt a tanúsítványt.
 
-  **iOS**
+  **iOS--**
 
   ![képernyőfelvétel a tanúsítvány kiválasztásának kéréséről egy ipad készüléken](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+  **Android--**
 
   ![képernyőfelvétel a tanúsítvány kiválasztásának kéréséről egy Android készüléken](../media/mdm-browser-ca-android-cert-prompt.png)
 5.  A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
@@ -179,7 +179,7 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
 Nem kell telepítenie a feltételes hozzáférési szabályzatot, az azonnal érvénybe lép.
 
-### 4. lépés: A megfelelőség és a feltételes hozzáférési szabályzatok figyelése
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>4. lépés: A megfelelőség és a feltételes hozzáférési szabályzatok figyelése
 A **Csoportok** munkaterületen megtekintheti eszközei állapotát.
 
 Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon válasszon az alábbi **Szűrők**közül:
@@ -190,11 +190,11 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 
 -   **Az AAD-ben regisztrált és megfelelő eszközök** – Ezek az eszközök hozzáférhetnek a SharePoint Online-hoz.
 
-### További információ
+### <a name="see-also"></a>További információ
 [Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
