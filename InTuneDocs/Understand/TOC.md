@@ -1,4 +1,4 @@
-# [Ismertetés és felfedezés](introduction-to-microsoft-intune.md)
+# Ismertetés és felfedezés
 ## [Az Intune bemutatása](introduction-to-microsoft-intune.md)
 ## [Útmutató az Intune próbaverziójához](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Bejelentkezés, vagy regisztráció a 30 napos próbaverzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
@@ -11,7 +11,7 @@
 ## [Gyakori helyzetek](common-ways-to-use-intune.md)
 ## [Szószedet](intune-glossary.md)
 
-# [Első lépések](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Első lépések](/intune/get-started/get-started)
 # [Újdonságok](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Üzembe helyezés és használat](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -19,6 +19,6 @@
 # [Hibaelhárítás](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
