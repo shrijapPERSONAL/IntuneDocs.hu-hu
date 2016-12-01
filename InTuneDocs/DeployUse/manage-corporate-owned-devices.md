@@ -1,8 +1,9 @@
 ---
 title: "A vállalat által birtokolt eszközök felügyelete | Microsoft Intune"
-description: "A vállalat által birtokolt eszközök (COD) az adott eszköztől, a vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók."
+description: "A vállalat által birtokolt eszközöket többféleképpen regisztrálhatja az eszköz típusa, megvásárlásának módja és a szervezet igényei alapján."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,46 +14,55 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
 
 
 ---
 
-# A vállalat által birtokolt eszközök regisztrálása a Microsoft Intune-ban
-A szervezet vagy vállalat által birtokolt eszközök (COD) az adott eszköztől, vásárlásának módjától, illetve a szervezet igényeitől függően több különböző módon is felügyelet alá vonhatók. A vállalati tulajdonban lévő eszközöket a Vállalati portál alkalmazás „Saját eszköz használata” (BYOD) forgatókönyvei szerint is regisztrálhatja és felügyelheti.
+# <a name="enroll-corporate-owned-devices-by-using-intune"></a>A vállalati tulajdonú eszközök regisztrálása az Intune-nal
 
-## Vállalat által birtokolt iOS-eszközök
-Ezek a regisztrációs módszerek a „Saját eszköz kiválasztása” (CYOD) típusú esetekben megfelelőek, vagyis amikor a szervezet megvásárolja az eszközöket a felhasználóknak, de szeretné megőrizni az eszközök feletti felügyeletet. Ha a szervezete iOS-eszközöket vásárolt, a regisztrációt előre beállíthatja, így amikor a felhasználó első alkalommal bekapcsolja a készüléket, az eszköz felügyelete is megkezdődik. Az Intune támogatja az [Apple készülékregisztrációs programján (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) keresztüli, illetve a Mac számítógépen futó Apple Configurator eszköz segítségével történő [közvetlen](ios-direct-enrollment-in-microsoft-intune.md) vagy [Beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md) végzett regisztrációt.
+Az Intune-nal felügyelendő szervezeti vagy vállalati tulajdonú eszközöket többféleképpen regisztrálhatja, az eszköz típusától, megvásárlásának módjától, illetve a szervezet igényeitől függően. Telepítheti a Munkahelyi portál alkalmazást is a vállalati tulajdonban lévő eszközök regisztrálásához és felügyeletéhez, például a „saját eszköz használata” (BYOD) forgatókönyvek esetében.
 
-[A vállalat által birtokolt iOS-eszközök regisztrálása](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## <a name="enroll-corporate-owned-ios-devices"></a>A vállalat által birtokolt iOS-eszközök regisztrálása
 
-## Eszközregisztráció-kezelő
-A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói, úgynevezett készülékregisztráció-kezelői fiókkal. A készülékregisztráció-kezelői fiók létrehozását követően a fiókot használó kezelő a normál felhasználók számára alapértelmezés szerint engedélyezett szokásos öt eszköznél többet is regisztrálhat. A készülékregisztráció-kezelő által végzett regisztráció csak konkrét felhasználóval nem rendelkező eszközök esetén lehetséges. Ezek az eszközök például POS- vagy segédprogram-alkalmazásokhoz megfelelőek, de nem alkalmasak olyan felhasználók számára, akik hozzá szeretnének férni a levelezésükhöz vagy a vállalati erőforrásokhoz.
+A vállalat által birtokolt eszközök regisztrálási módszerei a „saját eszköz választása” (CYOD) forgatókönyvekhez alkalmasak. A CYOD környezetben a szervezet fizeti ki a felhasználó által választott eszközt, és a szervezet felügyeli az eszközt.
 
-[Vállalati tulajdonban lévő eszközök regisztrálása az eszközregisztráció-kezelővel](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+Ha iOS-eszközöket kínál a felhasználóknak, a regisztrációt konfigurálhatja előzetesen úgy, hogy az eszközöket az Intune felügyelje az első bekapcsolásuktól kezdve. Az Intune támogatja az [Apple készülékregisztrációs programján (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) keresztüli, illetve a Mac számítógépen futó Apple Configurator eszköz segítségével történő [közvetlen](ios-direct-enrollment-in-microsoft-intune.md) vagy [Beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md) végzett regisztrációt.
 
-## Vállalati tulajdonú Windows 10-asztalok
+Ismerje meg, hogyan [regisztrálhatja a vállalati tulajdonban lévő iOS-eszközöket](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
-Ha a szervezete rendelkezik Prémium szintű Azure Active Directory (AADP) vagy Nagyvállalati felügyeleti csomag (EMS) előfizetéssel, [regisztrálhatja a Windows 10 vállalati verzióját](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview), és az automatikusan „vállalati tulajdonúként” lesz megjelölve, amikor a felhasználók hozzáadják a munkahelyi vagy az iskolai fiókjaikat.
+## <a name="create-a-device-enrollment-manager-account"></a>Eszközregisztráció-kezelői fiók létrehozása
 
-## Eszközök azonosítása vállalati tulajdonúként
+Létrehozhat egy egyfelhasználós eszközregisztráció-kezelői (DEM) fiókot az Intune-ban a szervezet nagy számú mobileszközének felügyeletéhez. A DEM-fiók létrehozását követően a kijelölt fiókkezelők az általános jogú felhasználók által regisztrálható tizenöt eszköznél többet regisztrálhatnak.
 
-A vállalati tulajdonú eszközökhöz az eszközök listáján a **Vállalati** megjelölés van beállítva a **Tulajdonjog** elemnél. Az eszközök az alábbi módokon azonosíthatók vállalati tulajdonúként:
+A DEM-fiók használatával csak olyan eszközök regisztrálhatók, amelyeket nem egy meghatározott felhasználó használ. Az ilyen típusú eszközök például POS- vagy segédprogram-alkalmazásokhoz megfelelőek, de nem alkalmasak olyan felhasználók számára, akik hozzá szeretnének férni a levelezésükhöz vagy a vállalati erőforrásokhoz.
 
- - [Készülékregisztráció-kezelővel (DEM) regisztrált eszközök](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Az Apple [készülékregisztrációs programjával (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) vagy az [Apple Configuratorral](ios-setup-assistant-enrollment-in-microsoft-intune.md) regisztrált eszközök
- - [Eszközök előzetes deklarálása IMEI-számokkal](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [A Windows 10-eszközök Azure Active Directoryval/Nagyvállalati felügyeleti csomaggal történő regisztrációja](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+Tekintse át, hogyan [regisztrálhatja a vállalat által birtokolt eszközöket DEM-fiók használatával](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-### Nemzetközi mobilkészülék-azonosító (IMEI)
+## <a name="enroll-corporate-owned-windows-10-enterprise-devices"></a>Vállalati tulajdonú Windows 10 Enterprise-eszközök regisztrálása
 
-Az egyedi nemzetközi mobileszköz-azonosító, az úgynevezett az IMEI-szám, egy olyan eszköztulajdonság, amelyet számos mobileszköz-gyártó általánosan alkalmaz. Az Intune-rendszergazdák importálni tudják a vállalat tulajdonában lévő eszközök IMEI-számát. Amikor az eszközt elkezdi az Intune felügyelni, vállalati tulajdonú eszközként lesz megjelölve.
+Ha az Azure Active Directory Premiumot vagy a Microsoft Nagyvállalati mobilitási csomagot használja a szervezetében, akkor [regisztrálhatja a Windows 10 Enterprise-eszközöket](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Amikor egy felhasználó felvesz egy munkahelyi vagy iskolai fiókot egy eszközön, az eszköz automatikusan megkapja a „Céges eszköz” címkét.
 
-[Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## <a name="import-imei-numbers"></a>IMEI-számok importálása
+
+Számos mobileszközgyártó alkalmaz egy egyedi számot az eszközein, az úgynevezett nemzetközi mobileszköz-azonosítót (IMEI). Lehetősége van a szervezet tulajdonában lévő eszközök IMEI-számának importálására. Amikor az eszköz az Intune felügyelete alá kerül, céges eszközként lesz megjelölve.
+
+Tekintse át, hogyan [jelölheti meg a vállalat által birtokolt eszközöket az IMEI-számok használatával](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+
+## <a name="identify-a-device-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
+
+Az Intune az alábbi feltételek bármelyikének teljesülése esetén „céges” eszközként ismeri fel az eszközt:
+
+ - Az eszköz [regisztrálása DEM-fiókkal](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) történt (bármely platformon).
+ - Az eszköz regisztrálása az [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) vagy az [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) használatával történt (csak iOS esetén).
+ - Az eszköz gyártója [előzetesen deklarálta az eszközt IMEI-szám használatával](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) (bármely, IMEI számokat használó platformon).
+ - Az eszköz regisztrálva van az [Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (csak Windows 10 esetén).
+
+Ha egy eszköz vállalati tulajdonúként lett megjelölve, az eszköz bejegyzésénél a **Céges** szöveg jelenik meg a **ulajdonos** oszlopban a felügyeleti konzolon. 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

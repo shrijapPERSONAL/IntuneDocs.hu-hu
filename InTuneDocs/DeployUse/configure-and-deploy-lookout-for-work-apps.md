@@ -2,43 +2,52 @@
 title: "A Lookout for Work alkalmazás telepítése | Microsoft Intune"
 description: "Lookout for Work alkalmazások konfigurálása és telepítése Android operációs rendszeren."
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
-ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Lookout for Work alkalmazások konfigurálása és telepítése
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work alkalmazások konfigurálása és telepítése
 Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja és telepítheti a Lookout for Work alkalmazást Android és iOS eszközökre.
 
-## Android (Google Play Áruház alkalmazás)
+## <a name="android-google-play-store-app"></a>Android (Google Play Áruház alkalmazás)
 
-* **1. lépés:**   Töltse fel a Lookout for Work Android alkalmazást a [Microsoft Intune felügyeleti konzoljába](https://manage.microsoft.com) az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) témakörben leírtaknak megfelelően.
+* **1. lépés:** A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza az **Alkalmazások**, majd az **Alkalmazások felvétele** lehetőséget.   
+* **2. lépés:** A közzétevő **Szoftver telepítése** lapján válassza a **Külső hivatkozás** elemet, és adja meg a következő URL-címet: https://play.google.com/store/apps/details?id=com.lookout.enterprise
 >[!NOTE]
-> Ne jelölje ki a kezelt böngészőt előíró jelölőnégyzetet.
+>Ne jelölje ki a kezelt böngészőt előíró jelölőnégyzetet.
 
-![a listában lévő Lookout for work alkalmazásokat mutató képernyőkép az Intune felügyeleti konzol alkalmazások oldaláról](../media/mtp/lookout-app-listed-intune-console.png)
+* **3. lépés:** A **Szoftver leírása** lapon adja meg a következő információkat:
+  * **Közzétevő:** Lookout Mobile Security
+  * **Név:** Lookout for Work
+  * **Leírás:** A Lookout a leghatékonyabb védelmet kínálja a mobil fenyegetésekkel szemben az eszköz biztonsága érdekében. Ha telepíti a Lookout alkalmazást az eszközön, az védelmet nyújt a fenyegetésekkel szemben és riasztja a felhasználót és a vállalati rendszergazdát, ha ilyet talál.
+  * **Kategória:** Számítógép-felügyelet
+* **4. lépés:** A sikeres telepítést követően a következő üzenet jelenik meg: **Sikeresen befejeződött az adatok feltöltése a Microsoft Intune-ba**.
 
-* **2. lépés:** Az alkalmazás telepítése a felhasználók számára. Jelölje ki a fenti képernyőképen látható Lookout for Work alkalmazást, és válassza a **Központi telepítés kezelése** lehetőséget.
+Ha az Intune-konzolon az **Alkalmazások** elemre kattint, a listában megjelenik a Lookout for Work alkalmazás ![az Intune felügyeleti konzol alkalmazások lapjának képernyőképe, amelyen a listában látható a Lookout for Work alkalmazás](../media/mtp/lookout-app-listed-intune-console.png)
 
-  Ugyanazokat a felhasználókat kell kiválasztania, akiket a Lookout-konzolon az Enrollment Management (Regisztráció kezelése) beállítás alatt felvett.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout veszélyforrások elleni eszközvédelmének használatához](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) című szakasz 3. lépését.
->[!IMPORTANT]
-> Az Intune alkalmazástelepítési varázslója nem érzékeli az Azure AD-beli felhasználói csoportokat; ezek helyett az Intune-alapú felhasználói csoportokat használja, így azon az Azure AD-beli felhasználói csoporton alapuló Intune-os felhasználói csoportot kell létrehoznia, amely [ennek](plan-your-user-and-device-groups.md) a témakörnek megfelelően lett regisztrálva a Lookout-konzolon.
+* **5.lépés:** Telepítse az alkalmazást a felhasználók részére úgy, hogy kiválasztja a Lookout for Work alkalmazást, és a **Központi telepítés kezelése** lehetőséget választja.
 
-Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
+  Ugyanazokat a felhasználókat kell kiválasztania, akiket hozzáadott a Beléptetés kezelése opcióhoz a Lookout MTP-konzolon.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout MTP használatához](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) című szakasz 3. lépését.
+  >[!IMPORTANT]
+  > Az Intune alkalmazástelepítési varázslója nem érzékeli az Azure AD felhasználói csoportokat; ezek helyett az Intune felhasználói csoportokat használja. Ennek megfelelően a Lookout MTP-konzolon az [ebben a témakörben](plan-your-user-and-device-groups.md) leírtak szerint beléptetett Azure AD felhasználói csoport alapján létre kell hoznia egy Intune felhasználói csoportot.
+
+* **6. lépés:** Válassza a **Kötelező telepítés** lehetőséget, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
 
 
-## iOS (A Lookout alkalmazás vállalat által aláírt verziója)
+## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (A Lookout alkalmazás vállalat által aláírt verziója)
 
 * **1. lépés:** Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -73,7 +82,7 @@ Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazá
 
 Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
 
-## Mi történik ha telepített alkalmazást megnyitja az eszközön
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Mi történik ha telepített alkalmazást megnyitja az eszközön
 
 
 
@@ -84,11 +93,11 @@ Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, 
 
 * [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## További lépések
+## <a name="next-steps"></a>További lépések
 * [Az eszközök fenyegetések elleni védelmét szolgáló szabály engedélyezése a megfelelőségi szabályzatban](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

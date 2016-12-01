@@ -2,9 +2,9 @@
 
 > Az Android for Work a következő néhány hónap során lesz biztosítva az Intune-bérlők számára.
 
-> Az Android for Work támogatási helyzetével kapcsolatban olvassa el a [Újdonságok a Microsoft Intune-ban](/intune/whats-new/whats-new-in-microsoft-intune) témakör Android for Workről szóló részét.
+> Az Android for Work támogatási helyzetével kapcsolatban olvassa el az [Újdonságok a Microsoft Intune-ban](/intune/whats-new/whats-new-archive#october-2016) című cikk 2016 októberi kiadásában az Android for Workről szóló bejelentést.
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

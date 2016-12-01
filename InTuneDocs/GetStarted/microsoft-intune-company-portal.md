@@ -1,66 +1,13 @@
 ---
-title: "A Microsoft Intune Vállalati portál | Microsoft Intune"
-description: "Intune Vállalati portál beállítása"
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 10/14/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
-ms.suite: ems
+redirect_url: https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
-
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 50c514fa4c91077bd70bd5ce9c6f88dcc96348ab
 
 ---
 
-# Munkahelyi Microsoft Intune-portál
-
-Az Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakört.
-
-Az Intune Vállalati portál olyan eszköz, amely a felhasználók számára hozzáférést biztosít a vállalati adatokhoz és alkalmazásokhoz. A Vállalati portál két formában érhető el:
-
--   **A Vállalati portál alkalmazás**: Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által felügyelt eszközökön elérhető alkalmazás. További információk a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszerekhez.
 
 
-- **Vállalati portál webhely**: Egy [támogatott böngészőből](supported-web-browsers.md) elérhető webhely, ahol a végfelhasználók a platform-specifikus Vállalati portál alkalmazáséval egyező műveleteket végezhetnek el. URL-cím: [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók.
-
-Néhány művelet, amelyeket a felhasználók elvégezhetnek a Vállalati portálon:
-
--   Eszközök regisztrálása
-
--   Az eszközök állapotának megtekintése
-
--   Eszköz alaphelyzetbe állítása
-
--   Jelszó visszaállítása
-
--   Az eszköz távoli zárolása
-
--   A szervezet által telepített szoftverek letöltése
-
--   Támogatás kérése az informatikai részlegtől
-
-Ahhoz, hogy a felhasználók hozzáférhessenek a Vállalati portálhoz, a felhasználók fiókjának az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatához szükséges licenccel, illetve **Engedélyezett** bejelentkezési állapottal kell rendelkezniük. További információ a [felhasználók hozzáadásával](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) és az [előfizetési licencek hozzárendelésével](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) kapcsolatban. A [Vállalati portál webhelyét](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) a vállalati emblémával, a használati feltételekkel és más elemekkel testre is szabhatja. A felhasználók a Vállalati portált úgy érhetik el, hogy felkeresik a webhelyet, és bejelentkeznek a munkahelyi vagy iskolai fiókjukkal.
-
-> [!NOTE]
-> A Munkahelyi portál alkalmazás nem érhető el minden országban.
-
-> __iOS__: az iOS rendszerre készült Munkahelyi portál alkalmazást az Apple iOS App Store áruházban [elérhető összes régióban](https://go.microsoft.com/fwlink/?linkid=831284) megtalálható.
-
-> __Android__: a Munkahelyi portál alkalmazás androidos verziója nem érhető el a következő országokban: Antigua és Barbuda, Aruba, Benin, Burkina Faso, Kambodzsa, Kína, Kuba, Gabon, Bissau-Guinea, Haiti, Irán, Laosz, Mali, Mozambik, Myanmar (Burma), Holland Antillák, Niger, Pápua Új-Guinea, Szudán, Togo. Ezekben az országokban alternatív megoldásként [közvetlenül is telepíthető a Munkahelyi portál alkalmazás androidos verziója](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
-
-### További információ
-[Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

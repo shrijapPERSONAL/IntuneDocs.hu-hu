@@ -14,18 +14,18 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
-ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
+ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
+ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése
-Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a dolgozó elhagyja a vállalatot, fontos eltávolítani a vállalati alkalmazásadatokat az eszközről. Előfordul azonban, hogy a személyes adatokat meg kell őrizni, különösen, ha az eszköz a dolgozó saját tulajdona.
+Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a dolgozó elhagyja a vállalatot, fontos eltávolítani a vállalati alkalmazásadatokat az eszközről. Előfordul, hogy a személyes adatokat meg kell őrizni, különösen, ha az eszköz a dolgozó saját tulajdona.
 
-A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési kérést a jelen témakör **Törlési kérés** szakaszában leírt lépésekkel.  A kérelem teljesítése után az alkalmazás a következő futtatásakor az eszközön a vállalati adatok el lesznek távolítva az alkalmazásból.
+A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési kérést az ebben a témakörben leírt lépésekkel. A kérelem teljesítése után az alkalmazás a következő futtatásakor az eszközön a vállalati adatok törlődnek az alkalmazásból.
 >[!NOTE]
-> Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Jelenleg ez csak a Microsoft Outlook alkalmazásra érvényes.
+> Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a Microsoft Outlook alkalmazásra érvényes.
 
 
 
@@ -33,13 +33,13 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 1.  Az **Intune mobilalkalmazás-kezelés** panelen kattintson a **Törlési kérések** csempére.
 
-    ![Képernyőfelvétel: Intune mobilalkalmazás-kezelés panel, Összefoglalás csempe](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![Képernyőfelvétel: Intune mobilalkalmazás-kezelés panel, Összefoglalás csempék](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Kattintson az **Új törlési kérés** lehetőségre.
+2.  Kattintson az **Új törlési kérés** lehetőségre. Ennek hatására megnyílik az **Új törlési kérés** panel.
 
     ![Képernyőfelvétel: Az Új törlési kérés panel](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  Az **Új törlési kérés** panelen kattintson a **Felhasználó** elemre a **Felhasználó** panel megnyitásához, és válassza ki azt a felhasználót, akinek az alkalmazásadatait törölni kívánja.
+3.  Válassza a **Felhasználó** elemet a **Felhasználó** panel megnyitásához, és válassza ki azt a felhasználót, akinek az alkalmazásadatait törölni kívánja.
 
 4.  Válassza az **Eszköz** lehetőséget.  Ekkor megnyílik a **Eszköz** panel, amelyen látható a kijelölt felhasználóhoz társított összes eszköz listája.  Válassza ki a törölni kívánt eszközt.
 
@@ -49,11 +49,11 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 ![Képernyőfelvétel: A Törlési kérések csempe ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>A törlési kérelmek figyelése
-Az **Intune mobilalkalmazás-felügyelet** panel összefoglaló jelentést jelenít meg a **Törlési kérés** csempén.  Ez megjeleníti a törlés összesített állapotát és a függőben lévő kérések és hibák számát. További részletek megjelenítéséhez kövesse a következő lépéseket:
+Az **Intune mobilalkalmazás-felügyelet** panel összefoglaló jelentést jelenít meg a **Törlési kérés** csempén.  Ez megjeleníti a törlés összesített állapotát és a függőben lévő kérések és hibák számát. A következő lépésekkel további részleteket is megjeleníthet:
 
 1.  Az **Intune mobilalkalmazás-kezelés** panelen kattintson a **Törlési kérések** csempére a **Törlési kérés** panel megnyitásához.
 
-2.  A **Törlési kérés** panelen a kérelmek felhasználók szerint csoportosított listája látható.  Mivel a rendszer az eszközön futó minden védett alkalmazáshoz törlési kérést hoz létre, egy felhasználóhoz több kérés jelenhet meg.  Az állapot mutatja, hogy a törlési kérés továbbra is **függőben van**, **sikertelen**, vagy **sikeres**-e.
+2.  A **Törlési kérés** panelen a kérelmek felhasználók szerint csoportosított listája látható. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
 
 A törléshez a felhasználónak meg kell nyitnia az alkalmazást, ami a kéréstől számítva akár 30 percig is eltarthat. 
 
@@ -66,6 +66,6 @@ A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

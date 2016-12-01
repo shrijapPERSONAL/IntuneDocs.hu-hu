@@ -2,9 +2,10 @@
 title: "Egyéni konfigurációk VPN-profilokhoz | Microsoft Intune"
 description: "Egyéni konfigurációkat használhat VPN-profilok létrehozásához Intune-ban."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,26 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
 
-# Egyéni konfigurációk VPN-profilokhoz
+# <a name="custom-configurations-for-vpn-profiles"></a>Egyéni konfigurációk VPN-profilokhoz
 
-## Egyéni konfiguráció létrehozása
-VPN-profilok egyéni konfigurációk használatával hozhatók létre az Intune-ban. Egyéni konfiguráció létrehozásához tegye a következőket:
+## <a name="create-a-custom-configuration"></a>Egyéni konfiguráció létrehozása
+Egyéni konfigurációk használatával VPN-profilok hozhatók létre az Intune-ban a következőkhöz:
 
-   1. Az Intune felügyeleti konzoljában válassza a **Házirend** > **Házirend hozzáadása** > *<Expand platform>* > **Egyéni konfiguráció** > **Házirend létrehozása** lehetőséget.
+* Android 4 vagy újabb rendszerű eszközök
+* Android for Work-eszközök
+* A Windows 8.1-es vagy újabb verzióját futtató regisztrált eszközök
+* A Windows Phone 8.1-es vagy újabb verzióját futtató eszközök
+* A Windows 10 asztali és mobilverzióját futtató eszközök
+
+Egyéni konfiguráció létrehozásához tegye a következőket:
+
+   1. Az Intune felügyeleti konzoljában válassza a **Házirend** > **Házirend hozzáadása** > *Bontsa ki a platformot* > **Egyéni konfiguráció** > **Házirend létrehozása** lehetőséget.
    2. Adja meg a szabályzat nevét.
    3. Az egyes URI-beállításoknál válassza a **Hozzáadás** elemet, és adja meg a szükséges információkat. Például:
 
@@ -32,7 +41,7 @@ VPN-profilok egyéni konfigurációk használatával hozhatók létre az Intune-
 
    4.  Miután minden URI-beállítást megadott, válassza a **Házirend mentése** elemet, és telepítse a házirendet.
 
-## Konfigurációs szabályzat telepítése
+## <a name="deploy-a-configuration-policy"></a>Konfigurációs szabályzat telepítése
 
 1.  A **Házirend** munkaterületen válassza ki a telepíteni kívánt szabályzatot, majd kattintson a **Központi telepítés kezelése** elemre.
 
@@ -44,7 +53,7 @@ VPN-profilok egyéni konfigurációk használatával hozhatók létre az Intune-
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
-##Példa egy egyéni VPN-profil konfigurációjának URI-beállításaira
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Példa egy egyéni VPN-profil konfigurációjának URI-beállításaira
 Az alábbiakban egy kitalált, Contoso nevű vállalat VPN-profiljához tartozó egyéni konfiguráció létrehozásához szükséges URI-értékek megadására mutatunk példát. További tudnivalókért – például az egyes bejegyzések adattípusaival kapcsolatban – olvassa el a [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) című témakört.
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +94,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Ha bármilyen kérdése van a beállítások használatával kapcsolatban, illetve az ezen beállítások működésével kapcsolatos további információkra van szüksége, olvassa el a konfigurációszolgáltató (CSP) dokumentációját: https://msdn.microsoft.com/hu-hu/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## URI-beállítások Android rendszerű alkalmazásonkénti VPN-hez a PulseSecure-ban
-### EGYÉNI URI CSOMAGLISTÁHOZ
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>URI-beállítások Android rendszerű alkalmazásonkénti VPN-hez a PulseSecure-ban
+### <a name="custom-uri-for-package-list"></a>EGYÉNI URI CSOMAGLISTÁHOZ
 -  Adattípus = Karakterlánc
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Érték = Elválasztott csomaglista.
    - Elválasztó karakter: pontosvessző (;), kettőspont (:), vessző (,), vonal (|)
 
@@ -96,7 +105,7 @@ Példák:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### EGYÉNI URI MÓDHOZ (NEM KÖTELEZŐ)
+### <a name="custom-uri-for-mode-optional"></a>EGYÉNI URI MÓDHOZ (NEM KÖTELEZŐ)
 - Adattípus = Karakterlánc
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +116,11 @@ Példák:
 > - Alapértelmezett a *WHITELIST* (ENGEDÉLYEZETT), ha rendelkezésre áll PackageList (csomaglista).
 
 
-### További információ
+### <a name="see-also"></a>További információ
 (VPN-kapcsolatok a Microsoft Intune-ban) [vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
