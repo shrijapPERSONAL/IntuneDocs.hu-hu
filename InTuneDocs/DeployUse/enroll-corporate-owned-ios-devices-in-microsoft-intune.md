@@ -2,8 +2,8 @@
 title: "A vállalat által birtokolt iOS-eszközök regisztrálása | Microsoft Intune"
 description: "A vállalat által birtokolt iOS-eszközök regisztrálása az Apple Device Enrollment program (DEP) vagy az Apple Configurator eszköz segítségével"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: c28b51146deb6a0a28070f72449972fd60076231
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban[1502]
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban[1502]
 A Microsoft Intune támogatja a vállalat által birtokolt iOS-eszközök regisztrálását az Apple Device Enrollment Program (DEP) vagy a Mac számítógépeken futó [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) eszköz segítségével.
 
 **Előfeltétel:** [Egy Apple Push Notification szolgáltatásbeli tanúsítvány](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 A vállalati iOS-eszközök háromféleképpen regisztrálhatók: az Apple Configurator, a DEP vagy a Vállalati portál használatával.
 
-## Az Apple Configurator használata
+## <a name="use-apple-configurator"></a>Az Apple Configurator használata
 
 Az iOS-eszközök egy Vállalati regisztrációs profil exportálásával, majd a mobileszközök egy Apple Configurator eszközt futtató Mac számítógéphez való csatlakoztatásával regisztrálhatók. Az Apple Configurator a regisztráció két formáját támogatja:
 
@@ -35,10 +35,10 @@ Az iOS-eszközök egy Vállalati regisztrációs profil exportálásával, majd 
 
 - **Közvetlen regisztrálás**: Létrejön egy Apple Configurator-kompatibilis fájl, amely az eszköz előkészítésez szükséges. A regisztrált eszköz nincs gyári alaphelyzetbe állítva, de egyetlen felhasználóhoz sem kapcsolódik. Ennél a módszernél a rendszergazdának az iOS-eszköz regisztrálásához az eszközt USB kapcsolaton keresztül egy [Apple Configuratort](http://go.microsoft.com/fwlink/?LinkId=518017) futtató Mac számítógéphez kell csatlakoznia. További információt az [iOS-eszközök közvetlen regisztrálása az Apple Configurator használatával](ios-direct-enrollment-in-microsoft-intune.md) című témakörben találhat.
 
-## A Device Enrollment Program (DEP) használata
+## <a name="use-the-device-enrollment-program-dep"></a>A Device Enrollment Program (DEP) használata
 A DEP a DEP-en keresztül megvásárolt eszközökre egy regisztrációs profilt telepít. Amikor a felhasználó a Beállítási asszisztenst futtatja az eszközön, az eszköz regisztrációja az Intune-ban rögzül.  A DEP programon keresztül regisztrált eszközök regisztrációját a felhasználók nem törölhetik. További információt az [A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása](ios-device-enrollment-program-in-microsoft-intune.md) című témakörben találhat.
 
-## A Vállalati portál használata a DEP vagy az Apple Configurator által regisztrált eszközökkel
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>A Vállalati portál használata a DEP vagy az Apple Configurator által regisztrált eszközökkel
 
 A felhasználói affinitással konfigurált eszközökön telepítheti és futtathatja a Vállalati portál alkalmazást az alkalmazások letöltéséhez és az eszközök kezeléséhez. Miután a felhasználók megkapják az eszközeiket, több további lépést kell végrehajtaniuk a Beállítási asszisztens befejezéséhez és a Vállalati portál alkalmazás telepítéséhez.
 
@@ -68,7 +68,7 @@ Felhasználói affinitás szükséges az alábbiak támogatásához:
 
 8. Ezzel befejeződött a regisztráció. Ezután a felhasználó az összes funkciójával együtt használhatja az eszközt.
 
-### A felhasználói affinitás nélküli vállalati tulajdonú eszközök áttekintése
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>A felhasználói affinitás nélküli vállalati tulajdonú eszközök áttekintése
 
 A felhasználói affinitás nélkül konfigurált eszközök nem támogatják a Vállalati portált, ezért ezekre az eszközökre ne telepítse az alkalmazást. A Vállalati portál az olyan felhasználók számára készült, akik rendelkeznek vállalati hitelesítő adatokkal, és hozzá kell férniük a személyre szabott vállalati erőforrásokhoz (pl. az e-mailhez). A felhasználói affinitás nélkül regisztrált eszközökhöz nem tartozhat dedikált felhasználói bejelentkezés. A felhasználói affinitás nélkül regisztrált eszközök jellemző példái közé tartoznak a kioszkok, a pénztári eszközök (POS) és a megosztott segédeszközök.
 
@@ -76,11 +76,11 @@ Ha szükség van a felhasználói affinitásra, az eszköz regisztrálása előt
 
 
 
-### További információ
-[A Microsoft Intune-beli eszközregisztráció előfeltételei](gprerequisites-for-enrollment.md)
+### <a name="see-also"></a>További információ
+[A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

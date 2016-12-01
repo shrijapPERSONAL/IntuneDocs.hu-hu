@@ -5,21 +5,21 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# A mobileszközök regisztrálásának módjai
+# <a name="choose-how-to-enroll-mobile-devices"></a>A mobileszközök regisztrálásának módjai
 
 A mobileszköz regisztrálása az a folyamat, amely az okostelefonokat, a táblagépeket és a számítógépeket a menedzsment részévi teszi a Microsoft Intune segítségével. Rendszergazdaként el kell döntenie, hogy hogyan érdemes regisztrálni az eszközeit az alábbi szempontok alapján:
 
@@ -29,7 +29,7 @@ A mobileszköz regisztrálása az a folyamat, amely az okostelefonokat, a tábla
 
 Az alábbi kérdésekre adott válaszaiból megtudhatja, hogy melyik regisztrációs módszer felel meg a legjobban az Ön által kezelt eszközöknek.
 
-## **Az alkalmazottak saját eszközeiket használják, vagy a szervezet biztosítja nekik ezeket az eszközöket?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**Az alkalmazottak saját eszközeiket használják, vagy a szervezet biztosítja nekik ezeket az eszközöket?**
 
   - **Felhasználók saját eszközei** – „BYOD-regisztráció” (Bring your own device – hozd a saját eszközöd) – A felhasználók telepítik az eszközeikre az Intune Vállalati portál alkalmazást, majd regisztrálják az eszközöket, így hozzáférhetnek az olyan vállalati erőforrásokhoz, mint a levelezés, a vállalati alkalmazások és adatok, valamint az ügyfélszolgálat.  
 
@@ -38,12 +38,12 @@ Az alábbi kérdésekre adott válaszaiból megtudhatja, hogy melyik regisztrác
 > [!div class="button"]
 [BYOD-regisztráció >](#what-byod-devices-can-your-users-enroll)   [COD-regisztráció >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Milyen BYOD-eszközöket regisztrálhatnak a felhasználói?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Milyen BYOD-eszközöket regisztrálhatnak a felhasználói?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS és Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile & Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows rendszerű számítógépek](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **A vállalati tulajdonban lévő eszközök megosztott eszközök, vagy dedikált felhasználókkal rendelkeznek?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**A vállalati tulajdonban lévő eszközök megosztott eszközök, vagy dedikált felhasználóik vannak?**
 
 - **Megosztott vállalati eszközök** – Ezekhez az eszközökhöz több felhasználó is hozzáfér, és általában nem használhatók levelezésre. Ilyen eszköz például az interaktív terminál, vagy a feladatközpontú, egy helyen tárolt, közös használatú eszközök. Az ajánlott regisztrációs módszer az eszköz platformjától függ.
 
@@ -53,12 +53,12 @@ Az alábbi kérdésekre adott válaszaiból megtudhatja, hogy melyik regisztrác
 [Megosztott >](#what-operating-system-are-your-shared-devices-running)   [Dedikált >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Milyen operációs rendszert futtatnak megosztott eszközei?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Milyen operációs rendszert futtatnak megosztott eszközei?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Hogyan kezelheti a megosztott iOS-eszközeit?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Hogyan kezelheti a megosztott iOS-eszközeit?**
 
 - **Az Apple Készülékregisztrációs programja (Device Enrollment Program – DEP)** – A DEP-pel vásárolt vagy kezelt iOS-eszközökre regisztrációs profil telepíthető. Amikor a felhasználók először kapcsolják be az eszközt, az letölti a DEP-profilt és regisztrálja az eszközt
 
@@ -69,7 +69,7 @@ Az alábbi kérdésekre adott válaszaiból megtudhatja, hogy melyik regisztrác
   > [!div class="button"]
   [iOS-eszközök regisztrálása a DEP segítségével >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS-eszközök közvetlen regisztrálása >>  ](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)[DEM-regisztráció >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **Hogyan kezelheti a dedikált iOS-eszközeit?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Hogyan kezelheti a dedikált iOS-eszközeit?**
 
 A vállalati eszközök az alábbi módokon regisztrálhatók dedikált felhasználókkal:
 
@@ -84,6 +84,6 @@ A vállalati eszközök az alábbi módokon regisztrálhatók dedikált felhaszn
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

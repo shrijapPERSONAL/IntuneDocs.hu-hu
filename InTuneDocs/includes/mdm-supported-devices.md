@@ -1,15 +1,21 @@
 
   - Apple iOS 8.0 és újabb verziók
-  - Google Android 4.0 és újabb verziók (beleértve a Samsung KNOX SDK 4.0-s és újabb verzióit is)
+  - Google Android 4.0 és újabb verziók (beleértve a Samsung KNOX Standard 4.0-s és újabb verzióit is)*
+  - Google Android for Work ([követelmények](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
   - Windows Phone 8.1 és újabb verziók
   - Windows 8.1 RT
   - Windows 8.1 operációs rendszerű számítógépek
   - Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
+  - Windows 10 IoT Enterprise rendszerű eszközök (x86, x64)
+  - Windows 10 IoT Enterprise Mobile rendszerű eszközök
+  - Windows Holographic és Windows Holographic Enterprise
   - Mac OS X 10.9 és újabb verziók
 
-Az [Intune-szoftverügyfél](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) Windows Vista vagy újabb Windows-rendszerű számítógépeket képes felügyelni, kivéve az összes Home Edition változatot, amelyeket nem támogat.  Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment).
+A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX Standard-eszközként kezelni: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY és SM-G313U. Ha regisztrálja ezeket az eszközöket Intune-ban, csak szabványos Android-eszközként kezelhetők. További tájékoztatást a [Samsung KNOX](https://www.samsungknox.com/en) webhelyén talál.
+
+Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment). Az [Intune-szoftverügyfél](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) Windows Vista vagy újabb Windows-rendszerű számítógépeket képes felügyelni, kivéve az összes Home Edition változatot, amelyeket nem támogat.  
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

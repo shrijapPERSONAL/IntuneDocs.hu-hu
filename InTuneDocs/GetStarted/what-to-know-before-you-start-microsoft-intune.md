@@ -1,10 +1,11 @@
 ---
 title: "Tudnivalók a Microsoft Intune elindítása előtt | Microsoft Intune"
-description: "Az Intune előfeltételeire és követelményeire vonatkozó hivatkozásokat tartalmazó oldal"
+description: "Az Intune előfeltételeire és követelményeire vonatkozó hivatkozások"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: d236a084caa3f82cb22d1f47583f1a0417e86d81
+ms.sourcegitcommit: 1ed86339103f165092776ec94b50c5a02d054236
+ms.openlocfilehash: 7a5ff0f021b487f4586ca3199c6db2cb0ada3930
 
 
 ---
 
-# Tudnivalók a Microsoft Intune elindítása előtt
+# <a name="what-to-know-before-you-start-microsoft-intune"></a>Tudnivalók a Microsoft Intune elindítása előtt
 
 A Microsoft Intune beállítása előtt tekintse át az alábbi követelményeket:
 
@@ -27,7 +28,7 @@ A Microsoft Intune beállítása előtt tekintse át az alábbi követelményeke
 - [Az Intune által támogatott webböngészők](supported-web-browsers.md)
 - [A Microsoft Intune hálózati infrastruktúrával kapcsolatos követelményei](network-infrastructure-requirements-for-microsoft-intune.md)
 - [Rendszergazdai fiókok, weboldalak és engedélyek a Microsoft Intune-ban](administrative-accounts-websites-perms.md)
-- [Munkahelyi Microsoft Intune-portál](microsoft-intune-company-portal.md)
+- [Microsoft Intune vállalati portál](microsoft-intune-company-portal.md)
 - [Intune-integráció a Microsoft más felhőszolgáltatásaival és termékeivel](integration-with-cloud-services.md)
 - [Az Intune hálózatisávszélesség-felhasználása](network-bandwidth-use.md)
 - [Egyéni Microsoft Intune-tartománynevek](domain-names-for-microsoft-intune.md)
@@ -37,6 +38,6 @@ Az Intune használatba vétele előtt hasznos lehet [Az Intune mobileszköz-keze
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

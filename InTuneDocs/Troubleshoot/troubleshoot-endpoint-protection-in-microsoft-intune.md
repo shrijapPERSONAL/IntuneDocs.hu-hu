@@ -2,8 +2,8 @@
 title: "Az Endpoint Protection hibáinak elhárítása | Microsoft Intune"
 description: "Megoldhatja a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémákat."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 95c9b857665bdb97ea035fd4cee18ca4508c4cbb
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 Az ebben a részben ismertetett információk segítséget nyújtanak a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémák megoldásához.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
 
-### Az Endpoint Protection hibaüzenetei
+### <a name="endpoint-protection-error-messages"></a>Az Endpoint Protection hibaüzenetei
 Ez a szakasz az [Intune felügyeleti konzoljának](https://manage.microsoft.com) **Endpoint Protection állapota** ablaktáblájában megjelenő következő hibák és figyelmeztetések lehetséges okait és megoldásait ismerteti.
 
 |Állapotelem|Lehetséges okok|Lehetséges megoldások|
@@ -45,11 +45,11 @@ Ez a szakasz az [Intune felügyeleti konzoljának](https://manage.microsoft.com)
 |**Gyorsvizsgálat késésben**|14 napja nem végzett gyorsvizsgálatot. Ezt az okozhatja, ha egy számítógép újraindul a gyorsvizsgálat közben.|Ha a gyorsvizsgálat késésben van, futtathat egy egyszeri gyorsvizsgálatot, vagy ismétlődő gyorsvizsgálatokat is ütemezhet az [Intune felügyeleti konzol](https://manage.microsoft.com) használatával a következő témakörben található információk alapján: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).|
 |**Egy másik végpontvédelmi alkalmazás fut**|Egy másik végpontvédelmi alkalmazás fut, és a számítógép megfelelő állapotban van.|Ha egy másik végpontvédelmi alkalmazás is telepítve van, és az Intune érzékeli azt, akkor a végpontvédelmi funkció alapértelmezés szerint automatikusan letiltja magát. Ha az Intune nem észlel másik végponti alkalmazást, a végpontvédelmi funkció továbbra is engedélyezett lesz. További információkért lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

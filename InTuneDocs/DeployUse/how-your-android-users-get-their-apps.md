@@ -2,10 +2,10 @@
 title: "Android-felhasználói alkalmazások letöltése | Microsoft Intune"
 description: "Módszerek az Android-alkalmazások elérhetővé tételére végfelhasználók számára"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,24 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
-ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
+ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
+ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
 
 
 ---
 
 
-# Android-felhasználói alkalmazások letöltése
-Ez a témakör ismerteti, hogy az androidos végfelhasználók hol és hogyan juthatnak hozzá a Microsoft Intune-ban elérhetővé tett alkalmazásokhoz. Az ebben foglalt információk a különböző típusú eszközök (androidos natív vagy Samsung Knox-eszközök) esetén eltérők lehetnek.
+# <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
+Ez a témakör ismerteti, hogy az androidos végfelhasználók hol és hogyan juthatnak hozzá a Microsoft Intune-ban elérhetővé tett alkalmazásokhoz. Az ebben foglalt információk a különböző típusú eszközök (androidos natív vagy Samsung Knox Standard-eszközök) esetén eltérőek lehetnek.
 
-## Androidos natív (nem Samsung Knox-) eszközök
+## <a name="native-non-samsung-knox-standard-android-devices"></a>Natív (Samsung Knox Standard) androidos eszközök
 
 | Alkalmazás típusa | Üzletági (LOB) alkalmazások | Play Áruház-alkalmazások  |
 | ------------- |-------------| -----|
 | Nem kötelező alkalmazások      | A felhasználók a **telepítés** elemre koppintanak a Vállalati portálon. Megjelenik egy értesítés, amelyre koppintva a felhasználók elindítják a telepítést. A telepítés befejezését követően megjelenik az értesítés. | A felhasználók az alkalmazásra koppintanak a Vállalati portálon, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést.|
 | Required apps      | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintva elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés.    | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintanak, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés. |
 
-## Androidos Samsung Knox-eszközök
+## <a name="samsung-knox-standard-android-devices"></a>Androidos Samsung Knox Standard-eszközök
 
 | Alkalmazás típusa | Üzletági (LOB) alkalmazások | Play Áruház-alkalmazások  |
 | ------------- |-------------| -----|
@@ -44,7 +44,7 @@ Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az
 
 **Nem felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal nem felügyelhetők. Ezeket az alkalmazásokat nem az Intune csomagolta be, vagy nem tartalmazzák az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
-### További információ
+### <a name="see-also"></a>További információ
 [Alkalmazások hozzáadása a Microsoft Intune-nal](/intune/deploy-use/add-apps)
 
 [iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
@@ -53,6 +53,6 @@ Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

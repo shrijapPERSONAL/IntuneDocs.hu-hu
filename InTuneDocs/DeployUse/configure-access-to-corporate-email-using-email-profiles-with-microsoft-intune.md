@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,8 +100,8 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**Leírás**|A profil azonosítását megkönnyítő leírás.|
     |**Gazdagép**|Annak a vállalati kiszolgálónak az állomásneve, amelyen a natív e-mail-szolgáltatás fut.|
     |**Fióknév**|Az e-mail-fiók megjelenítendő neve. Ez fog megjelenni a felhasználók eszközein.|
-    |**Felhasználónév**|Az e-mail-fiókhoz tartozó felhasználónév megszerzésének módja. Helyszíni Exchange-kiszolgáló esetén válassza a **Felhasználónév**, Office 365 esetén pedig az **Egyszerű felhasználónév** lehetőséget.|
-    |**E-mail-cím**|A felhasználóhoz tartozó e-mail-cím előállításának módja az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.|
+    |**Felhasználónév**|Ez az Active Directory (AD) vagy az Azure AD egy attribútuma, ennek alapján fogja generálni a rendszer ennek az e-mail-profilnak a felhasználónevét. Válassza az elsődleges SMTP-címet (például *user1@contoso.com*) vagy az egyszerű felhasználónevet (például *user1* vagy *user1@contoso.com*).|
+    |**E-mail cím**|A felhasználóhoz tartozó e-mail-cím előállításának módja az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.|
     |**Hitelesítési módszer** (Android for Work, Samsung KNOX és iOS)|Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget.|
     |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Android for Work, Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. További információt a tanúsítványprofilok Intune-ban történő használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat. Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.|
     |**S/MIME használata** (Samsung KNOX és iOS)|Kimenő e-mailek küldése S/MIME titkosítással.|
@@ -138,6 +138,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

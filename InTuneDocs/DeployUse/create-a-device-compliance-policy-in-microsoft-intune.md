@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# Eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban
 Ez a témakör egy olyan eszközmegfelelőségi szabályzat létrehozásának lépéseit írja le, amelyet az eszközöknek be kell tartaniuk ahhoz, hogy megfelelőnek lehessen tekinteni őket.
 
-##  1. lépés: Az új szabályzat hozzáadása
+##  <a name="step-1-add-a-new-policy"></a>1. lépés: Az új szabályzat hozzáadása
   A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Házirend** &gt; **Megfelelőségi házirendek** &gt; **Hozzáadás** lehetőséget.
 
   ![A megfelelőségi szabályzat oldalának tetején található menü Hozzáadás pontját megjelenítő képernyőkép az Intune felügyeleti konzolon](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  2 lépés: Beállítások konfigurálása
+##  <a name="step-2-configure-settings"></a>2 lépés: Beállítások konfigurálása
 A **Házirend létrehozása** lapon engedélyezze a kívánt beállításokat:
-  -   Rendszerbiztonsági beállítások, például jelszó és titkosítás
+  -   Rendszerbiztonsági beállítások, például jelszó és titkosítás.
   -   Eszközállapot-beállítások, például az, hogy az eszköz függetlenítve van-e vagy fel van-e törve, illetve hogy az eszközt megfelelő állapotúként jelentette-e a Windows eszközállapot-igazolási szolgáltatása.
   -   Eszköztulajdonság-beállítások, mint például az operációs rendszer szükséges minimális, illetve engedélyezett maximális verziója.
-![A Házirend létrehozása lap Általános lapja ](./media/intune-sa-3b-create-policy.png)
+![A Szabályzat létrehozása lap Általános lapja](./media/intune-sa-3b-create-policy.png)
 
 
-##  3. lépés: A szabályzat mentése
+##  <a name="step-3-save-the-policy"></a>3. lépés: A szabályzat mentése
 Ha elkészült, válassza a **Házirend mentése** elemet.
 
 Lehetősége van közvetlenül a mentés után telepíteni a szabályzatot, vagy telepítheti később is. Az új szabályzat a **Házirend** munkaterület **Megfelelőségi házirendek** csomópontjában jelenik meg.
 
-##  4. lépés: A szabályzat érvényességi idejének beállítása
-Azon időpont megadásához, amely előtt az eszköznek be kell jelentkeznie, hogy ne váljon nem megfelelővé, lépjen a megfelelőségi házirend beállításaiba, és frissítse a beállítását.  Az alapértelmezett érték 30 nap.
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>4. lépés: A szabályzat érvényességi idejének beállítása
+Azon időpont megadásához, amely előtt az eszköznek be kell jelentkeznie, hogy ne váljon nem megfelelővé, lépjen a megfelelőségi szabályzat beállításaiba, és frissítse a beállítását. Az alapértelmezett érték 30 nap.
 
-![megfelelőségi házirendek beállításának lehetősége a házirend menüsoron](../media/mdm-compliance-policy-settings.png)
+![Megfelelőségi szabályzat beállításának lehetősége a szabályzat menüsoron](../media/mdm-compliance-policy-settings.png)
 
-![megfelelőségi házirend párbeszédpanel](../media/mdm-ca-compliance-status-validity-period.png)
+![Megfelelőségi szabályzat párbeszédpanel](../media/mdm-ca-compliance-status-validity-period.png)
 
-## Támogatott szabályzatbeállítások
+## <a name="supported-policy-settings"></a>Támogatott szabályzatbeállítások
 Az alábbi táblázat felsorolja a megfelelőségi szabályzatok egyes beállításait, illetve azt, hogy ezek a beállítások mely platformokon támogatottak.
 
 -------------
@@ -77,17 +77,17 @@ Az egyes platformokon támogatott megfelelőségi beállításokkal kapcsolatos 
 > [!div class="op_single_selector"]
 - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai Windows- és Windows Phone-eszközökhöz ](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Megfelelőségi szabályzat beállításai Windows- és Windows Phone-eszközökhöz](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## További lépések
-[Megfelelőségi házirend üzembe helyezése és figyelése](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+## <a name="next-steps"></a>További lépések
+[Megfelelőségi szabályzat érvénybe léptetése és figyelése](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### További információ
+### <a name="see-also"></a>További információ
 [Bevezetés az eszközmegfelelőségi szabályzatokba](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
