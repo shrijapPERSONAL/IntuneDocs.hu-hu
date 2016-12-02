@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Ha helyi vagy felhőalapú [Exchange ActiveSync](#mobile-device-management-with-
 Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az egyes módszerekhez kapcsolódó lehetőségeket és követelményeket. A lehetőségeket és a követelményeket alább ismertetjük.
 
 - **Törlés** – Azt jelzi, hogy törölni kell-e mindent az eszközről ahhoz, hogy a felhasználók regisztrálni tudják. A „törlés” itt az eszköz gyári alaphelyzetének visszaállítását, vagyis az összes adat törlését jelenti. További információk: [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md).
-- **Affinitás** - Az eszközök felhasználókkal való társítása. Erre a mobilalkalmazás-kezeléshez (MAM) és a vállalati adatokhoz való feltételes hozzáféréshez van szükség. További információk: [Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
+- **Affinitás** - Az eszközök felhasználókkal való társítása. Erre a mobilalkalmazás-kezeléshez (MAM) és a vállalati adatokhoz való feltételes hozzáféréshez van szükség. További információk: [Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
 - **Zárolás** – Megakadályozza, hogy a felhasználók kivonják az eszközöket a felügyelet alól. iOS eszközök zárolásához felügyelt üzemmódra van szükség. További információk: [Távoli zárolás](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **iOS-eszközök regisztrálási módszerei**
@@ -120,6 +120,6 @@ Az Intune a következő eszközplatformokat képes kezelni:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
