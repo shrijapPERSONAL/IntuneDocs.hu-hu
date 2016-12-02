@@ -1,10 +1,11 @@
 ---
 title: "Egyéni tartománynév beállítása | Microsoft Intune"
-description: "Ismerteti egy egyéni tartománynév az Intune-előfizetéshez való hozzáadásának lépéseit"
+description: "Egyéni tartománynév felvétele az Intune-előfizetésbe"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +14,58 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf2122afc7f86d81b9d072147b19f75be2a55b51
-ms.openlocfilehash: 63c0b3340a6f69e20c85abf7947c25ce88f5d826
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 9fe78bca15ffee1e5e0e7e3758ff70b6bc92b619
 
 
 ---
 
 
-# Állítson be egy egyéni tartománynevet
+# <a name="configure-a-custom-domain-name"></a>Állítson be egy egyéni tartománynevet
 
-Az Intune alapértelmezés szerint azt az **<domain>.onmicrosoft.com** tartománynevet használja, amely akkor jött létre, amikor Ön először előfizetett a szolgáltatásra. Ha a szervezete egyéni tartománnyal rendelkezik, saját Intune-példányát beállíthatja arra, hogy ezt a tartományt használja az előfizetéskor megadott tartománynév helyett.
+Amikor egy szervezet előfizet a Microsoft egy felhőszolgáltatására, például az Intune-ra, egy, a következőhöz hasonló, az Azure Active Directoryban (AD) tárolt kezdeti tartománynevet kap: **tartomanynev.onmicrosoft.com**. Ebben a példában a **tartomanynev** a regisztrációkor választott tartománynév, az **onmicrosoft.com** pedig az előfizetéshez hozzáadott fiókokhoz rendelt utótag. Ha a szervezete egyéni tartománnyal rendelkezik, saját Intune-példányát beállíthatja arra, hogy ezt a tartományt használja az előfizetéskor megadott tartománynév helyett.
 
-Mielőtt új felhasználói fiókokat hozna létre, vagy szinkronizálná a helyi Active Directory-beli fiókokat, célszerű eldöntenie, hogy az .onmicrosoft.com tartományt fogja-e használni, vagy egyéni tartományneve(ke)t kíván-e hozzáadni. Az egyéni tartománynév beállítása a felhasználók hozzáadása előtt megkönnyítheti az előfizetéshez tartozó felhasználói azonosítók kezelését, mivel így a felhasználók azokkal a hitelesítő adatokkal jelentkezhetnek be, amelyeket a tartomány egyéb erőforrásainak elérésére is használnak.
+Mielőtt felhasználói fiókokat hozna létre, vagy szinkronizálná a helyi Active Directoryt, célszerű eldöntenie, hogy az .onmicrosoft.com tartományt fogja-e használni, vagy egyéni tartományneve(ke)t kíván-e hozzáadni. Az egyéni tartománynév beállítása a felhasználók hozzáadása előtt megkönnyítheti az előfizetéshez tartozó felhasználói azonosítók kezelését, mivel így a felhasználók azokkal a hitelesítő adatokkal jelentkezhetnek be, amelyeket a tartomány egyéb erőforrásainak elérésére is használnak.
 
 Amikor előfizet egy felhőalapú Microsoft-szolgáltatásra, az adott szolgáltatáspéldány az identitás- és címtárszolgáltatásokat biztosító [Microsoft AD-bérlőjévé](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant) válik. És mivel az Intune-t ugyanúgy lehet beállítani arra, hogy az Ön szervezetének egyéni tartománynevét használja, mint bármely más Azure AD-bérlőt, az [Add your domain](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) (Egyéni tartomány felvétele) című témakör útmutatását követheti.
 
 > [!TIP]
 > További információt az egyéni tartománynak egy felhőalapú Microsoft-szolgáltatással való használatáról az [Conceptual overview of custom domain names in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/) (Az Azure Active Directoryban használt egyéni tartománynevek elméleti áttekintése) című témakör tartalmaz.
 
-### További lépések
+A kezdeti tartománynév nem nevezhető át és nem távolítható el. Az Intune-nal azonban hozzáadhat, hitelesíthet és eltávolíthat egyéni tartományneveket, ami segít az üzleti identitás megtartásában.
+
+## <a name="to-add-and-verify-your-custom-domain"></a>Egyéni tartomány hozzáadása és hitelesítése
+
+1. Nyissa meg az [Office 365 felügyeleti portálját](https://portal.office.com/Admin/Default.aspx), és jelentkezzen be a rendszergazdai fiókjával.
+
+2. A navigációs ablakban kattintson a **Beállítások** &gt; **Tartományok** elemre.
+
+3. Kattintson a **Tartomány felvétele** gombra, és írja be az egyéni tartománynevet.
+
+4. A megnyíló **Tartomány hitelesítése** párbeszédpanelen megtalálhatja a DNS-szolgáltatón létrehozandó TXT-rekord értékeit.
+    - **GoDaddy-felhasználók:** Az Office 365 felügyeleti portálja a GoDaddy bejelentkezési oldalára irányít át. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **Register.com-felhasználók:** Kövesse a TXT típusú rekord létrehozására vonatkozó [részletes utasításokat](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify).
+
+    > [!TIP]
+    > A DNS-szolgáltató módosításakor hozzon létre egy DNS-aliast (CNAME) a [Windows-eszközök regisztrációjához](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+
+Az egyéni tartományok hozzáadásának és hitelesítésének lépései [az Azure Active Directoryban is végrehajthatók](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+
+Hibrid felhő használata estén az egyéni tartománynév megadása, valamint az után, hogy hitelesítettük, hogy a tartomány az Ön szervezetéhez tartozik, továbbra is a helyszíni Active Directoryban felügyelheti a felhasználói fiókokat, majd szinkronizálhatja a tartományt az Azure AD szolgáltatással.
+
+## <a name="to-synchronize-on-premises-users-with-azure-ad"></a>Helyszíni felhasználók szinkronizálása az Azure AD szolgáltatással##
+
+1. [Adja hozzá az egyszerű felhasználónévi utótagot](https://technet.microsoft.com/en-us/library/cc772007.aspx) az egyéni tartományhoz a helyszíni Active Directoryban.
+2. Állítsa be az egyszerű felhasználónévi utótagot az importálni kívánt helyszíni felhasználóknak.
+3. Futtassa [az Azure AD Connect szinkronizálási szolgáltatást](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) a helyszíni felhasználók az Azure AD-val való integrálásához.
+4. Miután a felhasználói fiókok adatait sikeresen szinkronizálta, az [Office 365 felügyeleti portállal](https://portal.office.com/Admin/Default.aspx) hozzájuk rendelheti a Microsoft Intune-licenceket.
+
+### <a name="see-also"></a>További információ
+
+[A kezdeti onmicrosoft.com tartománnyal kapcsolatos információk (Office 365)](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+
+[Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md)
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 2. lépését.
 
 >[!div class="step-by-step"]
@@ -40,6 +74,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 2. lép
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

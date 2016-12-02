@@ -1,10 +1,11 @@
 ---
 title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Intune"
-description: "Ismerteti a felhasználók és csoportok létrehozásának módját az Intune-előfizetéséhez"
+description: "A felhasználók és csoportok létrehozása az Intune-előfizetéséhez"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,28 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
+ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
+ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
 
 
 ---
 
 
-# Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez
+# <a name="create-groups-to-organize-users-and-devices"></a>Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez
 Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas kezelését teszik lehetővé. Különböző, a szervezet igényeinek megfelelő csoportokat állíthat be (például földrajzi hely, részleg vagy hardverjellemzők alapján), melyekkel számos felügyeleti feladatot elvégezhet, a házirendek felhasználók csoportjai számára történő telepítésétől az alkalmazások eszközök csoportjaira való telepítéséig.
+
+## <a name="group-management-moving-to-azure-ad"></a>A csoportfelügyelet áthelyezése az Azure AD-be
+
+**2016 novemberétől kezdve** az új ügyfelek az Azure Acitve Directory (AD) portálon kezelik a felhasználócsoportokat és az eszközcsoportokat. 2016 decemberében az Intune-termékcsapat megkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A felhasználó- és eszközcsoportok mindegyikét át fogjuk telepíteni az Azure AD-alapú biztonsági csoportokba. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
+
+
+>[!IMPORTANT]
+>
+>Ha az Intune-portál Csoportok munkaterületének megnyitásakor megjelenik **Az Intune-beli felhasználócsoportok most már Azure Active Directory-beli csoportokként vannak kezelve** hivatkozás, amely az Azure Active Directory portálra mutat, akkor Ön már az *új*, az Azure AD biztonsági csoportjain alapuló csoportkezelést használja az Intune-ban. A csoportok létrehozásáról és kezeléséről a [Csoportkezelés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups) című cikk nyújt tájékoztatást.
+>
+>Ha nem látja az Azure AD portálra mutató hivatkozást, akkor még mindig Intune-t használja a csoportok kezelésére.
+
+## <a name="group-management-in-the-intune-portal"></a>Csoportkezelés az Intune-portálon
 
 Az eszközcsoportok és felhasználói csoportok létrehozása egyaránt az Intune felügyeleti konzol CSOPORTOK munkaterületén történik.
 
@@ -32,7 +46,7 @@ Az eszközcsoportok és felhasználói csoportok létrehozása egyaránt az Intu
 > A csoportok használatáról további tájékoztatást a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben olvashat.
 
 
-## Eszközcsoport létrehozása
+## <a name="create-a-device-group"></a>Eszközcsoport létrehozása
 Az eszközcsoportokat alkalmazások és frissítések telepítésére, valamint egyéb funkciók konfigurálására használhatja. Például állítsa be az „Eszközök” csoportot a következő lépések alapján:
 
 1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** > **Áttekintés** > **Csoport létrehozása** elemet.
@@ -47,7 +61,7 @@ Az eszközcsoportokat alkalmazások és frissítések telepítésére, valamint 
 
 Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület **Csoportok** listájának **Minden eszköz** lapján. Itt szerkesztheti és törölheti is a csoportot.
 
-## Felhasználói csoport létrehozása
+## <a name="create-a-user-group"></a>Felhasználói csoport létrehozása
 A felhasználói csoportokat szoftverek és eszköz- házirendek telepítésére használhatja. Például állítsa be az „Intune-felhasználók” csoportot a következő lépések alapján:
 
 1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** > **Áttekintés** > **Csoport létrehozása** elemet.
@@ -66,7 +80,7 @@ Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület 
 
 
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 5. lépését.
 
 >[!div class="step-by-step"]
@@ -75,6 +89,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 5. lép
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megold�
 
 A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően van-e konfigurálva a regisztráláshoz. Ezekről a konfigurációs követelményekről itt olvashat:
 
--   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [iOS- és Mac-eszközök kezelésének beállítása](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Windows Phone és Windows 10 Mobile rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windowsos eszközök kezelésének beállítása](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ Ezek a problémák az összes eszközplatformon előfordulhatnak.
 ### <a name="device-cap-reached"></a>Eszközök maximális száma elérve
 **Probléma:** A regisztráció során hibaüzenet (például **A Vállalati portál átmenetileg nem érhető el**) jelenik meg egy iOS-eszközön, és a Configuration Managerben a DMPdownloader.log a **DeviceCapReached** hibát tartalmazza.
 
-**Megoldás:** A felhasználók legfeljebb 5 eszközt regisztrálhatnak.
+**Megoldás:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>A regisztrált és engedélyezett eszközök számának ellenőrzése
 
-1.  Ellenőrizze az Intune felügyeleti portálon, hogy nincs-e 5 eszköznél több hozzárendelve a felhasználóhoz.
+1.  Ellenőrizze az Intune felügyeleti portálon, hogy nincs-e a maximálisan megengedett 15 eszköznél több hozzárendelve a felhasználóhoz.
 
-2.  Az Intune felügyeleti portál Felügyelet\Mobileszköz-kezelés\Regisztráció szabályai részén ellenőrizze, hogy a regisztrált eszközök maximális száma 5-re van-e állítva.
+2.  Az Intune felügyeleti konzol Felügyelet\Mobileszköz-kezelés\Regisztráció szabályai területén ellenőrizze, hogy a regisztrált eszközök maximális száma 15-re van-e állítva.
 
 A mobileszköz-felhasználók a következő URL-címen törölhetnek eszközöket: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -89,7 +89,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 ### <a name="company-portal-temporarily-unavailable"></a>A Vállalati portál átmenetileg nem érhető el
 **Probléma:** Az eszközön **A Vállalati portál átmenetileg nem érhető el** hibaüzenet jelenik meg.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>A Vállalati portál átmenetileg nem érhető el hiba elhárítása
+**Megoldás:**
 
 1.  Távolítsa el az eszközről az Intune Vállalati portál alkalmazást.
 
@@ -104,7 +104,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 ### <a name="mdm-authority-not-defined"></a>Nincs megadva mobileszköz-kezelési szolgáltató
 **Hiba:** Megjelenik egy **Nincs megadva mobileszköz-kezelési szolgáltató** hibaüzenet.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>A Nincs megadva mobileszköz-kezelési szolgáltató hiba elhárítása
+**Megoldás:**
 
 1.  Ellenőrizze, hogy a mobileszköz-kezelési szolgáltató megfelelően be van-e állítva a használt Intune szolgáltatáshoz, az O365 Mobileszköz-kezeléshez vagy a System Center Configuration Managerbe integrált Intune-hoz. Az Intune esetében a mobileszköz-kezelési szolgáltató a **Felügyelet** &gt; **Mobileszköz-kezelés** részen állítható be. Az Intune-ba integrált Configuration Manager esetében az Intune-összekötő konfigurálásakor adhatja meg, míg az O365 esetén ez a **Mobileszközök** beállításai közé tartozik.
 
@@ -152,16 +152,65 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 
 ## <a name="android-issues"></a>Android-problémák
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Az eszközök nem tudnak lejelentkezni az Intune szolgáltatásnál, és az Intune felügyeleti konzolján „Nem megfelelő” állapotúként jelennek meg
+**Probléma:** Egyes, az Android 4.4.x és 5.x verzióját futtató Samsung-eszközök esetében előfordulhat, hogy egy idő után nem jelentkeznek le újra az Intune szolgáltatásnál. Ha nem jelentkeznek le az eszközök:
+
+- Nem kaphatják meg a szabályzatot, az alkalmazásokat és a távoli parancsokat az Intune szolgáltatástól.
+- A felügyeleti konzolon **Nem megfelelő** felügyeleti állapotúnak látszanak.
+- A feltételes hozzáférési szabályzattal védett felhasználók elveszíthetik a vállalati erőforrásokhoz való hozzáférésüket.
+
+A Samsung megerősítette, hogy az egyes Samsung-eszközökre előtelepített Samsung Smart Manager szoftver inaktiválhatja az Intune Munkahelyi portált és összetevőit. Ha a Munkahelyi portál inaktív állapotú, nem futhat a háttérben, ezért nem tud kapcsolatot létesíteni az Intune szolgáltatással.
+
+**1. megoldás:**
+
+Kérje meg a felhasználókat, hogy manuálisan indítsák el a Munkahelyi portál alkalmazást. Az alkalmazás az újraindítása után lejelentkezik az Intune szolgáltatásnál.
+
+> [!IMPORTANT]
+> A Munkahelyi portál manuális megnyitása átmeneti megoldás, mert a Samsung Smart Manager ismét inaktiválhatja a Munkahelyi portál alkalmazást.
+
+**2. megoldás:**
+
+Kérje meg a felhasználókat, hogy próbáljanak meg frissíteni az Android 6.0-s verziójára. Az Android 6.0 rendszerű eszközökön nem jelentkezik az inaktiválás problémája. A felhasználók a **Beállítások** > **Eszköz névjegye** > **Download updates manually** (Frissítések manuális letöltése) területen ellenőrizhetik, hogy elérhető-e frissítés. A frissítést az eszközön megjelenő útmutatás szerint végezhetik el.
+
+**3. megoldás:**
+
+Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépések elvégzésére, hogy a Smart Manager ne felügyelje a Munkahelyi portál alkalmazást:
+
+1. Indítsa el az eszközön a Smart Manager alkalmazást.
+
+  ![A Smart Manager ikon kiválasztása az eszközön](./media/smart-manager-app-icon.png)
+
+2. Válassza a **Battery** (Akkumulátor) csempét.
+
+  ![A Battery (Akkumulátor) csempe kiválasztása](./media/smart-manager-battery-tile.png)
+
+3. Válassza az **App power saving** (Alkalmazás energiatakarékossága) vagy **App optimization** (Alkalmazás optimalizálása) terület **Detail** (Részletek) elemét.
+
+  ![Az App power saving (Alkalmazás energiatakarékossága) vagy App optimization (Alkalmazás optimalizálása) terület Detail (Részletek) elemének kiválasztása](./media/smart-manager-app-power-saving-detail.png)
+
+4. Koppintson a **Munkahelyi portál** elemre az alkalmazáslistában.
+
+  ![A Munkahelyi portál kiválasztása az alkalmazáslistából](./media/smart-manager-company-portal.png)
+
+5. Válassza a **Turned off** (Kikapcsolva) beállítást.
+
+  ![A Turned off (Kikapcsolva) beállítás kiválasztása az App optimization (Alkalmazás optimalizálása) párbeszédpanelen](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Győződjön meg róla az **App power saving** (Alkalmazás energiatakarékossága) vagy az **App optimization** (Alkalmazás optimalizálása) területen, hogy a Munkahelyi portál ki van kapcsolva.
+
+  ![Annak ellenőrzése, hogy a Munkahelyi portál ki van-e kapcsolva](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>Profiltelepítési hiba
 **Hiba:** **Profiltelepítési hiba** üzenet jelenik meg egy Android-eszközön.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Sikertelen profiltelepítés hibaelhárításának lépései
+**Megoldás:**
 
 1.  Ellenőrizze, hogy az Ön által használt Intune szolgáltatás verziójának megfelelő licenc van-e hozzárendelve a felhasználóhoz.
 
 2.  Győződjön meg arról, hogy az eszköz még nincs egy másik MDM szolgáltatóhoz regisztrálva, vagy még nincs hozzá felügyeleti profil telepítve.
 
-4.  Ellenőrizze, hogy az Androidhoz készült Chrome az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
+3.  Ellenőrizze, hogy az Androidhoz készült Chrome az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
 
 ### <a name="android-certificate-issues"></a>Android-tanúsítványokkal kapcsolatos problémák
 
@@ -255,7 +304,7 @@ Az iOS-eszközök regisztrálási hibáinak listáját az eszközfelhasználói 
 
 ## <a name="pc-issues"></a>PC-kkel kapcsolatos problémák
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>A gép már regisztrálva van – hibakód: hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>A gép már regisztrálva van – hibakód: hr 0x8007064c
 **Hiba:** A regisztrálás sikertelen **A gép már regisztrálva van** hibaüzenettel. A regisztrálási napló a **hr 0x8007064c** hibakódot tartalmazza.
 
 Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy olyan számítógép klónozott lemezképét tartalmazza, amely már regisztrálva volt. Az előző fiók fióktanúsítványa továbbra is megtalálható a számítógépen.
@@ -307,6 +356,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

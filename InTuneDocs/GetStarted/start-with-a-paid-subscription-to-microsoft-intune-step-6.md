@@ -1,10 +1,11 @@
 ---
-title: "Szabályzatok létrehozása és alkalmazások közzététele | Microsoft Intune"
-description: "Ismerteti a szabályzatok létrehozásának és a példaalkalmazások közzétételének módját az Intune-előfizetésére vonatkozóan"
+title: "Szabályzatok érvénybe léptetése és alkalmazások telepítése | Microsoft Intune"
+description: "Engedélyezheti a szabályzatok beállításait, és telepíthet olyan alkalmazásokat, amelyek azonnal rákerülnek az eszközökre, amint regisztrálják őket felügyeletre."
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,94 +14,57 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# Házirendek létrehozása és alkalmazások közzététele
-Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. További információkért olvassa el [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), illetve a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) című témaköröket.
+# <a name="create-policies-and-publish-apps"></a>Szabályzatok létrehozása és alkalmazások közzététele
+Mielőtt elkezd alkalmazásokat regisztrálni az Intune-ban, engedélyezhet szabályzatbeállításokat és alkalmazásokat. Ezek azonnal érvénybe lépnek és települnek, amint az eszközök felügyelet alá kerülnek. Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. Konfigurálhat szabályzatokat, felvehet alkalmazásokat, és telepítheti őket, hogy az eszközök azonnal megkapják ezeket a beállításokat és alkalmazásokat, amint regisztrálnak az Intune-ban.
 
-Az Intune használatával az alkalmazásokat kétféle módon telepítheti. Az első egy **kötelező telepítés**, mely az adott alkalmazást automatikusan telepíti a felügyelt számítógépekre. A másik egy **elérhető telepítés**, mely telepíti az adott alkalmazást, vagy létrehoz egy hozzá kapcsolódó hivatkozást az Intune Vállalati portálon, így a felhasználók maguk dönthetik el, hogy a számítógépükre vagy a mobilkészülékükre telepítik az alkalmazást.
+A szabályzatok és az alkalmazások platformfüggőek.
 
-Az alábbi lépések segítségével egy mobileszköz-konfigurációs szabályzatot és egy Windows-alapú számítógépes tűzfalházirendet állíthat be, valamint a Skype alkalmazást elérhető telepítésként konfigurálhatja az előzetesen regisztrált mobileszközökhöz.
+## <a name="manage-device-settings"></a>Az eszközbeállítások kezelése
 
-> [!TIP]
-> Az új házirend hozzáadását és telepítését követően a csoportot alkotó valamennyi – a házirend telepítésével érintett – felhasználó és eszköz számára e beállítások jelentik majd az alapvető házirendet. A házirendek részletes adatainak megtekintése és szerkesztése később a Házirend munkaterületen bármikor elérhető.
+ Az eszközszabályzatok beállításainak konfigurálása és kezelése platformonként történik. A következő platformokra vonatkozó házirendeket lehet konfigurálni:
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android és Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (asztali és mobilverzió)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Team](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [Az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## Mobileszköz-konfigurációs házirend létrehozása és alkalmazása
+A következő cikk további tájékoztatást nyújt: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
-1.  Nyissa meg az [Intune felügyeleti konzolt](https://manage.microsoft.com/).
+## <a name="add-and-deploy-apps"></a>Alkalmazások felvétele és telepítése
 
-2.  A bal oldali ablaktáblában kattintson a **Házirend** ikonra.
+Kétféleképpen vehet fel alkalmazásokat az Intune-ba, illetve telepítheti őket a felügyelt eszközökre:
+- **Kötelező telepítés** – Az alkalmazás automatikusan települ a felügyelt eszközökre.
+- **Elérhető telepítés** – Az alkalmazások megjelennek az Intune Munkahelyi portáljában, hogy a felhasználók eldönthessék, telepítik-e őket az eszközükre.
 
-    ![admin-console-policy-workspace](./media/policy.png)
+### <a name="add-apps"></a>Alkalmazások hozzáadása
 
-3.  A **Házirendek – áttekintés** lap **Feladatok** listájában válassza a **Házirend hozzáadása** lehetőséget.
+Először elérhetővé kell tennie az alkalmazásokat az Intune-ban a következő módszerek valamelyikével:
+- [Alkalmazások hozzáadása regisztrált eszközökhöz](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Alkalmazások hozzáadása az Intune ügyfélszoftvert tartalmazó gépekhez](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  A szabályzatok listájában bontsa ki azt a platformot, amelyre a létrehozandó szabályzat vonatkozni fog, ezt követően válassza az **Általános konfiguráció** > **Egyéni házirend létrehozása és telepítése az ajánlott beállításokkal** > **Házirend létrehozása** lehetőséget.
+### <a name="deploy-apps"></a>Alkalmazások telepítése
 
-> [!NOTE]
-> Nincsenek ajánlott beállítások az eszközkonfigurációs szabályzatokra vonatkozóan, mivel számos lehetősége választható. Egyéni eszközkonfigurációs szabályzatot kell létrehoznia.
+Az alkalmazás ekkor elérhetővé válik az Intune-ban, tehát telepíthető a felügyelt eszközökre:
+- [Alkalmazások telepítése eszközökre](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- Mennyiségi programban vásárolt alkalmazások telepítése:
+    - [iOS – Volume Purchase Program](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [Vállalati Windows Áruház](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  Ha a rendszer a **Válassza ki, hogy mely csoportokra vonatkozóan szeretné bevezetni ezt a házirendet** üzenetben felszólítja erre, a rendelkezésre álló csoportok listájából válasszon ki egy csoportot, majd kattintson a **Hozzáadás** > **OK** gombra.
-
-A szabályzat ekkor megjelenik a konfigurációs szabályzatok listájában, és már alkalmazva van az **Intune-felhasználók** csoportra. A beállítások megtekintéséhez kattintson duplán a házirendre.
-
-## A Skype alkalmazás mobileszközökre történő közzététele
-
-1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson az **Alkalmazások** ikonra, majd az **Alkalmazások** > **Alkalmazás hozzáadása** elemre. Ha a rendszer kéri, adja meg az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] szolgáltatásban használt hitelesítő adatait.
-
-    ![admin-console-apps-workspace](./media/apps.png)
-
-    > [!NOTE]
-    > Az **Intune Software Publisher** első elindításakor egy kis ideig várakozni kell, amíg az alkalmazás települ.
-
-2.  Olvassa el a biztonsági figyelmeztetést, majd válassza a **Futtatás** lehetőséget.
-
-3.  Az **Előkészületek** lapon válassza a **Tovább** elemet.
-
-4.  A **Szoftver telepítése** lap **Válassza ki, hogyan szeretné elérhetővé tenni ezt a szoftvert az eszközök számára** beállításánál válassza a **Külső hivatkozás** lehetőséget.
-
-5.  Az **Adja meg az URL-címet** mezőben adja meg a szoftver külső hivatkozását, majd válassza a **Tovább** elemet. Ügyeljen arra, hogy az URL-cím elé kiírja a **http://** előtagot. A Skype alkalmazás esetén az alábbi hivatkozások közül válassza az Ön által használt mobileszköz platformjának megfelelőt:
-
-    -   **iOS:**   [https://itunes.apple.com/hu/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android:**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 vagy Windows Phone 8.1:**  [http://www.windowsphone.com/hu-hu/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  A **Szoftver leírása** lapon adja meg a felhasználók számára a szoftverrel kapcsolatban a Vállalati portálon megjeleníteni kívánt adatokat, majd válassza a **Tovább** elemet. A következő beállítások érhetők el (ez a példa a Skype alkalmazásra vonatkozik):
-
-    -   **Kiadó:** Adja meg a kiadó nevét: „Microsoft”
-
-    -   **Név:** Írja be a **Skype**
-
-    -   **Leírás:** Adja meg a szoftver leírását, például: **Skype kommunikációs alkalmazás**
-
-    -   **Kategória:** Válassza ki a szoftverre legjobban illő kategóriát, például: **Együttműködés**
-
-    -   **Megjelenítés kiemelt alkalmazásként és kiemelés a vállalati portálon:** Ezzel a lehetőséggel hangsúlyosan jelenítheti meg az alkalmazást a Vállalati portálon a mobileszközökön.
-
-    -   **Ikon:** Adja meg, hogy kíván-e ikont hozzárendelni a szoftverhez. A választható ikon maximális mérete 250 x 250 képpont, az ajánlott mérete 32 x 32 képpont.
-
-7.  Az **Összefoglalás** lapon ellenőrizze a szoftver adatait, majd válassza a **Feltöltés** lehetőséget. Kattintson a **Bezárás** gombra a varázslóból való kilépéshez.
-
-8.  Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza az **Alkalmazások** > **Alkalmazások** > **Skype** > **Központi telepítés kezelése** lehetőséget.
-
-9. A **Csoportok kiválasztása** lapon válassza az **Intune-felhasználók** csoportot, hogy a szoftver telepítése ebben a felhasználói csoportban történjen, majd válassza a **Hozzáadás** > **Tovább** elemet.
-
-10. A **Telepítési művelet** lapon válassza a **Telepíthető** lehetőséget a csoport **Jóváhagyás** oszlopában.
-
-11. Válassza a **Befejezés** lehetőséget.
-
-A továbbiakban a Vállalati portálon keresztül telepítheti a Skype alkalmazást a mobileszközökre, ehhez azonban először a számítógépekre és a mobileszközökre telepítenie kell az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] alkalmazást.
+    Azt követően, hogy konfigurálta az alkalmazásokat telepítésre, [konfigurálhatja az alkalmazásokat](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune), és [figyelheti az alkalmazásokat](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutató* 6. lépését.
 
 >[!div class="step-by-step"]
@@ -109,6 +73,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutató* 6. lép
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

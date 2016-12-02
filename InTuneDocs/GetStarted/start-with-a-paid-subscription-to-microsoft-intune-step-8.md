@@ -1,11 +1,11 @@
 ---
-title: "Mobileszközök regisztrálása és alkalmazások telepítése| Microsoft Intune"
-description: "A cikk ismerteti a mobileszközök regisztrálásának menetét, valamint az alkalmazások telepítését egy Intune-ba regisztrált eszközre"
+title: "Az eszközök regisztrálásának lehetővé tétele | Microsoft Intune"
+description: "A mobileszköz-kezelő szolgáltató (MDM-szolgáltató) beállítása és az iOS-, Windows-, Android- és Mac-eszközök regisztrálásának engedélyezése"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,49 +14,50 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
-ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
 
 
 ---
 
-# Mobileszközök regisztrálása és alkalmazások telepítése
-Az Intune szolgáltatással történő mobileszköz-kezelés beállításához először meg kell adnia a mobileszközt kezelő szolgáltatót, engedélyeznie kell a mobileszköz-kezelést az eszközplatformhoz, majd regisztrálnia kell az eszközöket a Vállalati portál alkalmazásban. Ezután telepítheti a 6. lépésben közzétett Microsoft Skype alkalmazást.
+# <a name="enroll-mobile-devices-and-install-an-app"></a>Mobileszközök regisztrálása és alkalmazások telepítése
+Az Intune-nal történő mobileszköz-felügyelet beállításához először meg kell adnia a *mobileszköz-kezelő szolgáltatót* (ez azonosítja azt a szolgáltatást, amely felügyelheti a fiókjához tartozó eszközöket). Ez az útmutató abból indul ki, hogy Ön az Intune szolgáltatást fogja használni a System Center Configuration Manager helyett. A mobileszköz-kezelő szolgáltató beállítása után engedélyezheti a különféle eszközplatformok felügyeletét, majd regisztrálhatja az eszközöket a Munkahelyi portál alkalmazásban.
 
-## Eszközkezelés engedélyezése és eszközök regisztrálása
+## <a name="enable-device-enrollment"></a>Eszközök regisztrálásának lehetővé tétele
 
-1.  **Az Intune beállítása mobileszköz-kezelő szolgáltatóként** Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Felügyelet** > **Mobileszköz-kezelés** elemet, majd kattintson a **Feladatok** csoport **Mobileszköz-kezelő szolgáltató megadása** elemére.  Kattintson a Mobileszköz-kezelő szolgáltató párbeszédpanel **Igen** gombjára.
+1. **Az Intune beállítása mobileszköz-kezelő szolgáltatóként**
+    Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Felügyelet** > **Mobileszköz-kezelés** elemet, majd kattintson a **Feladatok** csoport **Mobileszköz-kezelő szolgáltató megadása** elemére.  
+
+2. Kattintson a Mobileszköz-kezelő szolgáltató párbeszédpanel **Igen** gombjára.
+
     ![Felügyeleti konzol. Mobileszköz-kezelés beállítása az Intune-hoz](./media/mdmAuthority.png)
 
-2.  **Mobileszköz-kezelés engedélyezése az eszközplatformhoz** A mobileszköz-kezelés engedélyezése a kezelni kívánt eszközplatform esetében. A követelmények a platformtól függően eltérőek:
+## <a name="choose-how-to-enroll-devices"></a>Az eszközök regisztrálási módjának kiválasztása
 
-    -   **iOS és Mac OS X**: lásd az [iOS- és Mac-eszközök kezelésének beállítása a Microsoft Intune-ban](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) című témakört.
+Az Intune többféleképpen tudja kezelni az eszközöket, annak megfelelően, amire a cégnek szüksége van. A saját eszközök használata (BYOD), a céges eszközök, a saját eszköz kiválasztása (CYOD) és a teljes képernyős módú eszközök csak néhány példa a rendelkezésre álló különféle regisztrációs forgatókönyvekre.
 
-    -   **Windows Phone**: lásd a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) című témakört.
+[Az ebben a cikkben ismertetett lépésekkel válassza ki az eszközök regisztrálásának módját](choose-how-to-enroll-devices1.md).
 
-    -   **Android**: A felhasználók a [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider) Áruházból letölthető Vállalati portál alkalmazással regisztrálhatják androidos mobileszközeiket. Így nincs szükség további Intune konfigurációra.
+## <a name="enable-mdm-for-your-device-platform"></a>Mobileszköz-kezelés engedélyezése az eszközplatformhoz
+A regisztrációt engedélyezni kell az iOS-, a Mac- és az Android for Work-eszközökre vonatkozóan, hogy kapcsolat jöjjön létre a platformszolgáltató és az Ön Intune-bérlője között. A Windows és az Android rendszerű eszközök esetében nincs szükség további lépésekre, de a Windows-eszközök regisztrálását még tovább egyszerűsítheti felhasználói számára azzal, hogy létrehoz egy speciális DNS-bejegyzést a beállításjegyzékben.
 
-3.  **Eszközök regisztrálása**:
+Engedélyezze mobileszköz-kezelést a felügyelni kívánt eszközplatformra vonatkozóan. A követelmények a platformtól függően eltérőek:
 
-    -   **Android** – Telepítse a Microsoft Corporation által kiadott **Intune Vállalati portál** alkalmazást, melyet a [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) áruházban érhet el, és jelentkezzen be az Intune szolgáltatás fent megadott hitelesítő adataival.
+-  [iOS és macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Window 10 Mobile és Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS és Mac OS X** – Telepítse a Microsoft Corporation által kiadott **Microsoft Intune Vállalati portál** alkalmazást, melyet az App Store áruházban érhet el, és jelentkezzen be az Intune fent megadott hitelesítő adataival. Az eszköz felvételéhez tekintse át a **Regisztrált eszközök** listát.
+A regisztráció engedélyezését követően a felhasználók letölthetik az eszközükre a Munkahelyi portál alkalmazást, és elvégezhetik az eszköz regisztrálását.
 
-    -   **Windows Phone 8.1** – Telepítse a Microsoft Corporation által kiadott **Vállalati portál** alkalmazást, melyet a Windows Phone Áruházban érhet el, és jelentkezzen be az Intune szolgáltatás fent megadott hitelesítő adataival.  Az eszköz felvételéhez tekintse át a **Regisztrált eszközök** listát.
+### <a name="enable-company-owned-device-enrollment"></a>A céges eszközök regisztrálásának engedélyezése
+A [céges eszközök regisztrálásának](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) különféle módozatait is engedélyezheti:
+- [Apple Device Enrollment Program (Apple Készülékregisztrációs program)](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Regisztrálás az Apple Configurator és a Beállítási asszisztens segítségével](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Regisztrálás az Apple Configurator és a Beállítási asszisztens segítségével](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Eszközregisztráció-kezelő](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0** – A felhasználóknak a **Rendszerbeállítások** &gt; **Vállalati alkalmazások** lehetőségre kell kattintaniuk, és be kell jelentkezniük az Intune-hoz fent megadott felhasználói hitelesítő adatokkal. A Vállalati portál alkalmazás telepítve van a telefonjára.
-
-    Ha a program a **kiszolgáló címét**kéri, írja be a manage.microsoft.com címet.
-
-## Alkalmazás telepítése egy regisztrált eszközre
-Az első lépéseket ismertető jelen útmutató [6. lépésében](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) közzétette a Skype alkalmazást a saját Intune-felhasználók csoportja számára. Most ezt az alkalmazást egy újonnan regisztrált eszközre fogja telepíteni.
-
-Nyissa meg a Vállalati portált a regisztrált mobileszközön, majd válassza az **Alkalmazások** lehetőséget, és telepítse a **Microsoft Skype** alkalmazást.
-
-A mobileszközök [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal történő kezelésével kapcsolatban [A Microsoft Intune-beli eszközregisztráció előfeltételei](/intune/deploy-use/prerequisites-for-enrollment) című témakörben olvasható további tájékoztatás.
-
-
-### További lépések
+### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* utolsó lépését. Most, hogy a kezdeti konfigurálást befejezte, további MDM-funkciók engedélyezését is fontolóra veheti.
 
 >[!div class="step-by-step"]
@@ -65,6 +66,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* u
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

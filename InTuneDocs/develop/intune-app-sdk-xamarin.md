@@ -14,31 +14,40 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 ---
 
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin összetevő
 
+> [!NOTE]
+> Először célszerű elolvasnia az [Intune App SDK használatának első lépései](intune-app-sdk-get-started.md) című cikket, amely bemutatja az integráció előkészítését a támogatott platformokon.
+
+
+
 ## <a name="overview"></a>Áttekintés
-Az [Intune App SDK Xamarin összetevő](https://components.xamarin.com/view/microsoft.intune.mam) lehetővé teszi az [Intune mobilalkalmazás-felügyeleti funkcióinak](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) igénybevételét a Xamarin használatával létrehozott iOS- és Android-alkalmazásokban. Az összetevő lehetővé teszi a fejlesztők számára, hogy alkalmazáskorlátozási és adatvédelmi funkciókat építsenek be a Xamarin-alapú alkalmazásaikba.
+Az [Intune App SDK Xamarin összetevő](https://components.xamarin.com/view/microsoft.intune.mam) lehetővé teszi az [Intune mobilalkalmazás-felügyeleti funkcióinak](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) igénybevételét a Xamarin használatával létrehozott iOS- és Android-alkalmazásokban. Az összetevő lehetővé teszi a fejlesztők számára, hogy Intune alkalmazásvédelmi funkciókat építsenek be a Xamarin-alapú alkalmazásaikba.
 
-Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a összetevőt az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a rendszergazda olyan szabályzatot tud érvénybe léptetni a Microsoft Intune-nal, amely számos adatvédelmi funkciót támogat.
+Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a modult az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a rendszergazda olyan szabályzatot tud érvénybe léptetni a Microsoft Intune-nal, amely számos adatvédelmi funkciót támogat.
 
-## <a name="supported-scenarios"></a>Támogatott helyzetek
+## <a name="whats-supported"></a>Támogatott források és műveletek
 
-### <a name="platforms"></a>Platformok
+### <a name="developer-machines"></a>Fejlesztői gépek
+* Windows
+
+
+### <a name="mobile-app-platforms"></a>Mobilalkalmazás-platformok
 * Android
 * iOS
 
 
-### <a name="emm-scenarios"></a>EMM-forgatókönyvek
+### <a name="intune-mobile-application-management-scenarios"></a>Intune mobilalkalmazás-kezelési helyzetek
 
-* Az Intune MAM az Intune MDM-ben regisztrált eszközökön
-* Az Intune MAM a külső féltől származó EMM-ben regisztrált eszközökön
-* Az Intune MAM a nem regisztrált és nem felügyelt eszközökön
+* Intune MDM által regisztrált eszközök
+* Külső EMM által regisztrált eszközök
+* Nem felügyelt (semmilyen MDM által nem regisztrált) eszközök
 
 Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazások mostantól fogadni tudják az Intune mobilalkalmazás-felügyeleti (MAM-) szabályzatait az Intune mobileszköz-felügyeletben (MDM) regisztrált eszközökön és a nem regisztrált eszközökön is.
 
@@ -116,6 +125,6 @@ Elvégezte az összetevő alkalmazásba történő beépítésének alapvető l�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

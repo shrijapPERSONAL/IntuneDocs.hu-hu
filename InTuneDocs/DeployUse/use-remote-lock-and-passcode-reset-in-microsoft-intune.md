@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
@@ -25,6 +25,7 @@ Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja az eszköz
 
 |Platfésm|Távoli zárolás|
 |------------|---------------|
+|macOS|Nem támogatott|
 |iOS|Támogatott|
 |Android|Támogatott|
 |Windows 10 és Windows 10 Mobile|Támogatott|
@@ -50,12 +51,14 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 
 |Platfésm|PIN-kód alaphelyzetbe állítása|
 |------------|------------------|
+|macOS|Nem támogatott|
 |iOS|Csak a PIN-kód eszközről való törlése támogatott. Nem lehet új ideiglenes PIN-kódot létrehozni.|
 |Android|Az Android 7.0-nál régebbi verziói támogatottak. Létrehoz egy ideiglenes jelszót.|
 |Windows 10 mobil verzió|Támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
-|Windows RT 8.1 és Windows RT|Nem támogatott|
+|Windows RT 8.1|Nem támogatott|
 |Windows 8.1|Nem támogatott|
+|Windows 10 asztali verzió|Nem támogatott|
 
 Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a jelszó alaphelyzetbe állítását.
 
@@ -76,6 +79,6 @@ Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogat
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
