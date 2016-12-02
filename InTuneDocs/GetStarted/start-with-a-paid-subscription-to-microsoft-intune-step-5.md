@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas kezel
 
 >[!IMPORTANT]
 >
->Ha az Intune-portál Csoportok munkaterületének megnyitásakor megjelenik **Az Intune-beli felhasználócsoportok most már Azure Active Directory-beli csoportokként vannak kezelve** hivatkozás, amely az Azure Active Directory portálra mutat, akkor Ön már az *új*, az Azure AD biztonsági csoportjain alapuló csoportkezelést használja az Intune-ban. A csoportok létrehozásáról és kezeléséről a [Csoportkezelés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups) című cikk nyújt tájékoztatást.
+>Ha az Intune-portál Csoportok munkaterületének megnyitásakor megjelenik **Az Intune-beli felhasználócsoportok most már Azure Active Directory-beli csoportokként vannak kezelve** hivatkozás, amely az Azure Active Directory portálra mutat, akkor Ön már az *új*, az Azure AD biztonsági csoportjain alapuló csoportkezelést használja az Intune-ban. A csoportok létrehozásáról és kezeléséről a [Csoportkezelés az Azure Active Directoryban](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) című cikk nyújt tájékoztatást.
 >
 >Ha nem látja az Azure AD portálra mutató hivatkozást, akkor még mindig Intune-t használja a csoportok kezelésére.
 
@@ -89,6 +89,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 5. lép
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
