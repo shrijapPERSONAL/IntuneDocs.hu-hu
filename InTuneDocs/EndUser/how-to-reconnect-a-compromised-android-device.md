@@ -2,9 +2,10 @@
 title: "Sérült biztonságú Android-készülék újracsatlakoztatása | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: eff3eee3d655e27c62b9083a98813cf24c10cba4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0d2b62eb8e487e555d568a1ad968081a1929f019
 
 
 ---
 
-# Sérült biztonságú Android-eszköz ismételt csatlakoztatása
+# <a name="how-to-reconnect-a-compromised-android-device"></a>Sérült biztonságú Android-eszköz ismételt csatlakoztatása
 A rendszergazda azt észlelte, hogy feltört eszközt használ. A „feltört” állapot azt jelenti, hogy az eszközt az operációs rendszerhez való hozzáférés érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve. Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a vállalati erőforrásokhoz.
 
-Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
+Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a [Microsoft Android-csapatának](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

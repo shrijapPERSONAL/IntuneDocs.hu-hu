@@ -2,7 +2,7 @@
 title: "Windows Phone 8.1-eszköz regisztrálása az Intune-ban | Microsoft Intune"
 description: "Egy Windows Phone 8.1-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,14 +14,14 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# Windows Phone 8.1-eszköz regisztrálása az Intune-ban
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1-eszköz regisztrálása az Intune-ban
 
 Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
 
@@ -32,7 +32,7 @@ Az Phone 8.1 rendszerű eszköznek az Intune-ban való regisztrálásához köve
 
 -   [Ha nincs engedélye arra, hogy elérje a Windows Áruházat a Windows Phone-telefonjáról, vagy ha nincs Microsoft-fiókja](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## Ha vállalata engedélyezi, hogy használja a Windows Áruházból elérhető Vállalati portál alkalmazást
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Ha vállalata engedélyezi, hogy használja a Windows Áruházból elérhető Vállalati portál alkalmazást
 Telepítse az eszközre a Vállalati portál alkalmazást:
 
 1.  Koppintson a **Start** &gt; **Áruház** parancsra.
@@ -71,7 +71,7 @@ Regisztrálja az eszközt:
 
     ![A Fiók hozzáadva képernyő](./media/WP81-enroll-4-account-added.png)
 
-## Ha nincs engedélye arra, hogy elérje a Windows Áruházat a Windows Phone-telefonjáról, vagy ha nincs Microsoft-fiókja
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Ha nincs engedélye arra, hogy elérje a Windows Áruházat a Windows Phone-telefonjáról, vagy ha nincs Microsoft-fiókja
 
 1.  Koppintson a  **Beállítások** &gt; **Munkahely** elemre.
 
@@ -87,6 +87,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
