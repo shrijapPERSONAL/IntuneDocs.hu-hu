@@ -2,7 +2,7 @@
 title: "Az eszköz nem felel meg a minimális biztonsági javítási szintnek | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
 
 
 ---
 
-# Az eszköz nem felel meg a minimális biztonsági javítási szintnek
+# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>Az eszköz nem felel meg a minimális biztonsági javítási szintnek
 
 Ha megjelenik „A minimális Android biztonsági javítási szint nincs konfigurálva” üzenet, akkor telepítenie kell a minimális biztonsági javítást, vagy annak egy későbbi verzióját. A rendszergazdának fontos, hogy ez telepítve legyen az Android-eszközökön a vállalati adatok védelme érdekében.
 
@@ -41,6 +41,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
