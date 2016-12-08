@@ -2,10 +2,10 @@
 title: "Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows-eszköz Intune-beli regisztrálásakor?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows-eszköz Intune-beli regisztrálásakor?
 
 Amikor a Munkahelyi portál alkalmazást telepíti, majd egy Windows- vagy Windows Phone-eszközt regisztrál vele, azzal lehetővé teszi, hogy a rendszergazda felügyelje az eszközt, és így biztonságban tartsa a cég vagy az intézmény adatait. Ebben a témakörben a Windows 10-nél korábbi rendszerű eszközökről esik szó. A Windows 10-eszközök esetében lásd[kapcsolódó témakör](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## Mi történik minden Windows-eszközzel a regisztrálás után?
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Mi történik minden Windows-eszközzel a regisztrálás után?
 Ha Windows- vagy Windows Phone-eszközét regisztrálja az Intune-ban, a következőkre nyílik lehetősége:
 
 -   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
@@ -41,7 +41,7 @@ Egy eszköz regisztrálásával jogosultságot ad a rendszergazdának a követke
 
 -   Az eszköz visszaállítása az alapértelmezett gyári beállításokra. Az eszköz elvesztésekor vagy ellopásakor bizonyulhat hasznosnak.
 
--   Csak a munkahelyi fájlok és munkahelyi alkalmazások eltávolítása. *A saját adatok és beállítások nem törlődnek.*
+-   Csak a munkahelyi fájlok és munkahelyi alkalmazások eltávolítása. *A személyes adatai és beállításai nem törlődnek.*
 
 -   Az IT-rendszergazda leltárt készíthet az eszközre telepített szoftverekről, ideértve az Ön által telepített szoftvereket is.
 
@@ -53,7 +53,7 @@ Egy eszköz regisztrálásával jogosultságot ad a rendszergazdának a követke
 
 -   Megakadályozhatja, hogy felvételt készíthessen a vállalattal kapcsolatos adatokról.
 
-## Mi történik minden Windows rendszerű számítógéppel a regisztrálás után?
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Mi történik minden Windows rendszerű számítógéppel a regisztrálás után?
 
 -  Olyan szoftverek települnek a számítógépre, amelyek lehetővé teszik a rendszergazda számára a számítógép felügyeletét, Önnek pedig a különböző vállalati erőforrásokhoz, például alkalmazásokhoz és támogatási információkhoz való hozzáférést. A rendszergazda automatikusan frissítheti ezeket a szoftvereket.
 
@@ -63,7 +63,7 @@ Egy eszköz regisztrálásával jogosultságot ad a rendszergazdának a követke
 
 -  Az IT rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
 
-## Mi történik az eszköz regisztrálása után nyolcóránként?
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Mi történik az eszköz regisztrálása után nyolcóránként?
 A regisztrált eszközök megközelítőleg nyolcóránként elvégzik a következőket:
 
 -   Az IT rendszergazda által elérhetővé tett házirendek és alkalmazásfrissítések letöltése.
@@ -76,6 +76,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

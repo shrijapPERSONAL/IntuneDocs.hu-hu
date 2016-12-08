@@ -2,7 +2,7 @@
 title: "Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 ---
 
 
-# Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor?
 
 A Vállalati portál alkalmazás telepítése és az iOS- vagy Mac OS X-eszköz Intune-ban való regisztrálása után a Vállalati portál alkalmazásban a következőkre nyílik lehetősége:
 
@@ -96,6 +96,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön
 
 A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához, amely az esetleges fenyegetések felderítésével segít az eszköz védelmében. Elképzelhető, hogy különböző üzenetek jelennek meg az eszköz kijelzőjén attól függően, hogy a rendszergazda hogyan állította be a Lookout for Work alkalmazást.
 
@@ -55,6 +55,6 @@ Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai o
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

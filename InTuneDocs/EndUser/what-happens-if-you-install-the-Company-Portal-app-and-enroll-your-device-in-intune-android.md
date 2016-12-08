@@ -2,10 +2,10 @@
 title: "Mi történik a Vállalati portál alkalmazás telepítésekor és az Android-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 ---
 
 
-# Mi történik a Vállalati portál alkalmazás telepítésekor és az Android-eszköz Intune-beli regisztrálásakor?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és az Android-eszköz Intune-beli regisztrálásakor?
 
 Miután telepítette a Vállalati portál alkalmazást, és regisztrálta androidos eszközét az Intune-ban, a következőkre használhatja a Vállalati portál alkalmazást:
 
 -   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
--   Letöltheti a vállalati alkalmazásokat a vállalati portálról.
+-   Letöltheti a vállalati alkalmazásokat a Vállalati portálról.
 
--   Automatikusan konfigurálhatja vállalati e-mail-fiókját.
+-   Automatikusan beállíthatja a vállalati e-mail-fiókját.
 
 -   Ha elveszíti vagy ellopják a telefonját, visszaállíthatja a gyári beállításait.
 
@@ -56,10 +56,10 @@ Miután felvette az eszközt a vállalati portálra, nagyjából nyolcóránkén
 
 -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése. (Ezek a frissítések nem tartalmaznak személyes adatokat.)
 
-Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
+Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a [Microsoft Android-csapatának](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
