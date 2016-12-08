@@ -2,8 +2,8 @@
 title: "Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
+# <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
-Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](http://portal.manage.microsoft.com) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
+Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](http://portal.manage.microsoft.com) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti. Ezen a webhelyen elvégezheti ugyanazoknak a műveleteknek a többségét, mint amelyeket a Munkahelyi portálon szokott elvégezni.
 
 Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati portálon, és visszaállnak rajta a gyári alapbeállítások.
 
@@ -46,6 +46,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

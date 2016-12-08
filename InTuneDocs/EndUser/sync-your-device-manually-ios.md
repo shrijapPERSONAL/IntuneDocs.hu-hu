@@ -2,10 +2,10 @@
 title: "iOS-eszköz manuális szinkronizálása | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
-ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 ---
 
 
-# Az iOS-eszköz manuális szinkronizálása
+# <a name="sync-your-ios-device-manually"></a>Az iOS-eszköz manuális szinkronizálása
 
-Ha túl sokáig tart az alkalmazás telepítése, az alábbi utasításokat követve manuálisan is szinkronizálhatja iOS-eszközét. Manuális szinkronizálással esetleg gyorsítható a telepítés. A szinkronizálási funkció csak az iOS rendszerre érvényes, a Mac OS X-re nem.
+Ha az alkalmazás telepítése túl sokáig tart, megpróbálkozhat az eszköz manuális szinkronizálásával. Manuális szinkronizálással esetleg gyorsítható a telepítés. A szinkronizálási funkció csak az iOS rendszerre érvényes, a Mac OS X-re nem.
 
 1. Nyissa meg az iOS Vállalati portál alkalmazást.
 
@@ -42,6 +42,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

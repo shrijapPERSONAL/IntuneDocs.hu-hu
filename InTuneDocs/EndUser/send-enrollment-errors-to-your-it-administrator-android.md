@@ -2,10 +2,10 @@
 title: "Regisztrálási hibák elküldése a rendszergazdának | Microsoft Intune"
 description: "Regisztrálási hibák elküldése a rendszergazdának"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
-ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 57e5707ab651dd18f1d83730b03ae0267de25e34
 
 
 ---
 
 
-# Regisztrálási hibák elküldése a rendszergazdának
+# <a name="send-enrollment-errors-to-your-it-admin"></a>Regisztrálási hibák elküldése a rendszergazdának
 
 Ha hibaüzenet jelenik meg androidos eszköze Intune-beli regisztrálása közben, az **Újra** elemre koppintva újból megpróbálkozhat a regisztrálással. Az **Adatok küldése** elemre koppintva ezenkívül elküldheti a hiba adatait a rendszergazdának e-mailben.
 
-Az **Adatok küldése** elemre koppintáskor automatikusan létrejön a rendszergazdának címzett e-mail, benne az eszközzel kapcsolatos hibák elhárításához szükséges naplókkal.
+Ha rákoppint az **Adatok küldése** elemre, automatikus létrejön egy e-mail. Az e-mail a rendszergazdának van megcímezve, és azokat a naplófájlokat tartalmazza, amelyekkel a rendszergazda megoldhatja az eszközön észlelt problémát.
 
 Az eszköz adatnaplói többféleképpen is elküldhetők a rendszergazdának a hibák kijavítása végett:
 
@@ -35,6 +35,6 @@ Az eszköz adatnaplói többféleképpen is elküldhetők a rendszergazdának a 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

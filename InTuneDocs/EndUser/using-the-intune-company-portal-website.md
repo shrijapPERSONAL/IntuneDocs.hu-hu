@@ -1,11 +1,11 @@
 ---
 title: "Az Intune Vállalati portál használata | Microsoft Intune"
-description: "A cikk ismerteti a Vállalati portál webhelyet, valamint hivatkozásokat biztosít a webhelyen keresztül elvégezhető feladatok lépéseivel kapcsolatban"
+description: "A cikk ismerteti a Munkahelyi portál webhelyet, valamint hivatkozásokat biztosít a webhelyen keresztül elvégezhető feladatok lépéseivel kapcsolatban"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,43 +14,43 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# Az Intune vállalati portál webhelyének használata
-A [Vállalati portál webhelye](http://portal.manage.microsoft.com) egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti.
+# <a name="using-the-intune-company-portal-website"></a>Az Intune vállalati portál webhelyének használata
+A [Munkahelyi portál webhelye](http://portal.manage.microsoft.com) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
 
-A következőkre használhatja a Vállalati portál webhelyét:
+A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
 -   [Átnevezheti az eszközét](rename-your-device-cpwebsite.md)
 
--   [Eszköz eltávolítása](remove-your-device-cpwebsite.md)
+-   [Eltávolíthatja az eszközét](remove-your-device-cpwebsite.md)
 
--   [Eszköz alaphelyzetbe állítása](reset-your-device-cpwebsite.md)
+-   [Alaphelyzetbe állíthatja az eszközét](reset-your-device-cpwebsite.md)
 
--   [Eszközjelszó alaphelyzetbe állítása](reset-your-passcode-cpwebsite.md)
+-   [Kezdeményezheti az eszköz PIN-kódjának alaphelyzetbe állítását](reset-your-passcode-cpwebsite.md)
 
--   [Eszköz távoli zárolása](remote-lock-your-device-cpwebsite.md)
+-   [Távolról zárolhatja az eszközét](remote-lock-your-device-cpwebsite.md)
 
--   [Eszköz manuális szinkronizálása a lassú alkalmazástelepítések felgyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
+-   [Manuálisan szinkronizálhatja az eszközt a lassú alkalmazástelepítések gyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
--   A rendszergazda elérhetőségének megkeresése, ha a rendszergazda azt beállította
+-   Megkeresheti a rendszergazda elérhetőségét, ha be vannak állítva ezek az adatok
 
--   Az eszköz adatainak megtekintése, beleértve, hogy megfelel-e a munkahelye vagy iskolája házirendjeinek
+-   Megtekintheti az eszköz adatait, beleértve azt is, hogy az eszköz megfelel-e a munkahelye vagy iskolája házirendjeinek
 
--   A számítógép távoli kezelése (csak számítógépekkel működik)
+-   Távoli kapcsolat segítségével kezelheti a számítógépét (a lehetőség csak személyi számítógépek esetében működik)
 
-A **Vállalati portál webhelyén** tulajdonképpen ugyanazokat a feladatokat végezheti el, mint amelyeket a saját eszközére telepített **Vállalati portál alkalmazásban** . A Vállalati portál alkalmazással, az Intune-ban eszközök regisztrálásával kapcsolatos és további tudnivalókért koppintson az eszköze típusának megfelelő hivatkozásra:
+A **Munkahelyi portál webhelyén** tulajdonképpen ugyanazokat a feladatokat végezheti el, mint a saját eszközére telepített **Munkahelyi portál alkalmazásban**. A következő oldalakon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az eszközeiken elvégezhetnek.
 
 - [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

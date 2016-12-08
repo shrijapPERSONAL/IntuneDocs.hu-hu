@@ -2,8 +2,8 @@
 title: "Windows-eszköz manuális szinkronizálása | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# Windows-eszköz manuális szinkronizálása
+# <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 Ha az alkalmazás telepítése túl sokáig tart, megpróbálkozhat a Windows-eszköz manuális szinkronizálásával. Manuális szinkronizálással esetleg gyorsítható a telepítés.
 
-Csak az alábbi verziók támogatottak. A használt eszköz típusának megfelelő utasításokat kövesse.
+Csak az alábbi verziók támogatottak. Ha az eszköz nem szerepel a listán, a szinkronizálás nem támogatott. A használt eszköz típusának megfelelő utasításokat kövesse.
 
-* [Windows 10 mobil verzió](#windows-10-mobile)
+* [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 asztali verzió](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 mobil verzió
+## <a name="windows-10-mobile"></a>Windows 10 mobil verzió
 Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
 1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** menüpontra.
@@ -53,7 +53,7 @@ Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalm
 
     A képernyő tetején megjelenik a „Fiók szinkronizálása” üzenet. Amíg az eszköz szinkronizálása be nem fejeződik, a **Szinkronizálás** gomb inaktív marad.
 
-## Windows 10 asztali verzió
+## <a name="windows-10-desktop"></a>Windows 10 asztali verzió
 A Windows 10 rendszernek egynél több verziója van, így a lépések két részre oszthatók. Annak megállapításához, hogy mely lépések szükségesek, tekintse meg a képernyőképeket, és kövesse azokat a lépéseket, amelyek a leginkább hasonlítanak az eszközön látható állapotra. 
 
 1. Kattintson a **Start** gombra, majd a **Beállítások** elemre.
@@ -74,7 +74,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png) 
 
-### Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
 1. A **Fiókok** lapon válassza ki a **Munkahelyi vagy iskolai hozzáférés** elemet.
 
@@ -93,7 +93,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
 4. Kattintson a **Szinkronizálás** gombra. Az eszköz Intune-nal való szinkronizálása megtörténik.
 
-### Teendők, ha ezt látja: Munkahelyi hozzáférés
+### <a name="steps-to-follow-if-you-see-work-access"></a>Teendők, ha ezt látja: Munkahelyi hozzáférés
     
 1. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** elemet.
 
@@ -109,7 +109,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
    A gomb a szinkronizálás befejezéséig szürke marad.
 
-## Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
 1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Munkahely** menüpontra.
@@ -130,6 +130,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
