@@ -2,10 +2,10 @@
 title: "A Vállalati portál ismertetése| Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
-ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
 
 
 ---
 
-# A Vállalati portál ismertetése
+# <a name="about-the-company-portal"></a>A Vállalati portál ismertetése
 
-## Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
+## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
 A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
 - Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája is telepítheti Önnek az alkalmazást.
@@ -46,7 +46,7 @@ A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladato
 - [Windows](using-your-windows-device-with-intune.md)
 - [Munkahelyi portál webhely](using-the-intune-company-portal-website.md)
 
-## Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
+## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
 Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően).  Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi az IT rendszergazdának az eszköz felügyeletét.
 
 Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén, kövesse az Ön által használt eszköznek megfelelő hivatkozást:
@@ -56,7 +56,7 @@ Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén
 - [iOS és Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
+## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
 
 -   iPhone és iPad készülékeket, illetve Mac OS X-eszközöket
 
@@ -67,11 +67,8 @@ Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén
     -   Windows 10 asztali verzió
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   iPhone és iPad készülékek, illetve Mac OS X-eszközök
-    -   Android rendszerű mobileszközök
 
-
-## Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
+## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Eltávolítható egy számítógép vagy eszköz a Vállalati portálról?
 Igen, a Vállalati portálról eltávolíthat vagy alaphelyzetbe állíthat egy számítógépet vagy eszközt. Az **eltávolítás** és az **alaphelyzetbe állítás** között azonban van különbség.
 
 Számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról információt az alábbi hivatkozások egyikén találhat:
@@ -89,16 +86,16 @@ Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén t
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
 - [iOS és Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
-- [Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről](reset-your-device-cpwebsite.md)
+- [Az eszköz alaphelyzetbe állítása a Munkahelyi portál webhelyről](reset-your-device-cpwebsite.md)
 
-## Nem látja minden eszközét a Vállalati portálon
+## <a name="you-do-not-see-all-of-your-devices-in-the-company-portal"></a>Nem látja minden eszközét a Vállalati portálon
 Az eszközök csak akkor láthatók, ha hozzáadja őket a Vállalati portálhoz. A rendszergazda útmutatása alapján látogasson el a Vállalati portálra, és kövesse az eszközére vonatkozó lépéseket. A vállalat által birtokolt vagy kezelt eszközöket sem fogja látni.
 
-## Ha kérdése van, lépjen kapcsolatba a rendszergazdával
+## <a name="if-you-have-questions-contact-your-it-administrator"></a>Ha kérdése van, lépjen kapcsolatba a rendszergazdával
 Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
