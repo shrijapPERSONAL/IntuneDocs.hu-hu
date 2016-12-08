@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Mostantól többtényezős hitelesítést (MFA) írhat elő a felhasználók egy
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>Feltételes hozzáférés a SharePort Online-hoz a mobilalkalmazás-felügyelet (MAM) segítségével <!--VSO 679339-->
 Megakadályozhatja, hogy olyan alkalmazások érjék el a SharePoint Online-t, amelyeket nem támogatnak az Intune mobilalkalmazás-felügyeleti (MAM) szabályzatai.  Az Intune mobilalkalmazás-felügyelettel az Azure Portalon ismerkedhet meg. Ehhez keresse a __Beállítások__ panelen a __Feltételes hozzáférés__ területet. Ezen megtalálja a SharePoint Online-ra vonatkozó beállítást is. Ezt a funkciót a szolgáltatás mostani kiadásától külön fogjuk biztosítani.
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>Az Intune-beli mobileszköz-regisztrálás korlátozásának képessége
+Az Intune új regisztrációs korlátozásokat léptet életbe, amelyek azt szabályozzák, hogy mely mobileszközplatformok számára engedélyezett a regisztráció. Az Intune az alábbi mobileszközplatformokat különbözteti meg: iOS, macOS, Android, Windows és Windows Mobile. 
+* A macOS, illetve a Windows 8.1-es és újabb verziói esetében mobileszközplatformonként korlátozható a regisztráció. 
+* A mobileszköz-regisztráció korlátozása nem terjed ki a számítógépügynökök regisztrációjára. 
+* Az iOS esetében fennáll egy további lehetőség a személyes tulajdonban lévő eszközök regisztrációjának letiltására. Az Intune mindaddig személyes tulajdonúként jelöli meg az összes új eszközt, amíg az [alábbi cikkben](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices) ismertetett módon a rendszergazda meg nem jelöli azokat céges eszközökként.
+
+
 ## <a name="notices"></a>Értesítések
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>A regisztrációra vonatkozó többtényezős hitelesítés átkerül az Azure Portalra <!--VSO 750545-->
@@ -82,6 +89,6 @@ A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
