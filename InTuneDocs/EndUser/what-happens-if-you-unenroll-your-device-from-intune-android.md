@@ -2,10 +2,10 @@
 title: "Mi történik, ha törli egy Android-eszköz regisztrációját az Intune-ból? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# Mi történik, ha törli egy Android-eszköz regisztrációját az Intune-ból?
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Mi történik, ha törli egy Android-eszköz regisztrációját az Intune-ból?
 
 Miután törli az androidos eszköz regisztrációját az Intune-ból:
 
@@ -40,10 +40,10 @@ Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli 
 
 A regisztráció törlésének utasításaiért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
 
-Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a Microsoft Android-csapatának a wintunedroidfbk@microsoft.com címre.
+Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a [Microsoft Android-csapatának](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
