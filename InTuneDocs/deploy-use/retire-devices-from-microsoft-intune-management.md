@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Az olyan eszközök esetében, amelyek újrafelhasználásra kerülnek, [teljes 
 8.  Igény szerint jelölje ki az eszközöket, majd válassza az **Eszköz törlése** lehetőséget. Az eszköz az Active Directoryval való következő szinkronizáláskor törlődik. Erre általában négy óránként kerül sor. A szinkronizálás után a rendszer eltávolítja azt a felügyelt eszközök közül. Ezzel eggyel csökken a felhasználó eszközeinek száma a felhasználó eszközeinek maximális számához képest.
 
 ## <a name="retire-managed-computers"></a>Felügyelt számítógépek kivonása
-Az Intune ügyfélszoftverrel felügyelt számítógépek az Intune felügyeleti konzolján távolíthatók el a felügyelet alól. Ez a művelet egyúttal eltávolítja az ügyfélszoftvert, és az Intune-szabályzatot is törli a számítógépről. Olvassa el az [Intune ügyfélszoftver által felügyelt számítógépek kivonásáról](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md) szóló információkat.
+Az Intune ügyfélszoftverrel felügyelt számítógépek az Intune felügyeleti konzolján távolíthatók el a felügyelet alól. Ez a művelet egyúttal eltávolítja az ügyfélszoftvert, és az Intune-szabályzatot is törli a számítógépről. Olvassa el az [Intune ügyfélszoftver által felügyelt számítógépek kivonásáról](retire-a-windows-pc-with-microsoft-intune.md) szóló információkat.
 
 ## <a name="block-access-a-device"></a>Hozzáférés letiltása az eszközhöz
 Elveszett eszköz esetén, illetve, ha azért kell az eszközt kivonni, mert egy alkalmazott a vállalati tulajdonban álló hardver visszaszolgáltatása nélkül távozott a vállalattól, [alaphelyzetbe állíthatja az eszköz PIN-kódját, és távolról zárolhatja](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) az eszközt. Ezzel a vállalati információkkal és a vállalati hardverrel való visszaélés is elkerülhető, bár előfordulhat, hogy az eszközt le kell írni veszteségként.
@@ -70,6 +70,6 @@ Egyes esetekben maga az eszköz éri el életciklusának végét. Ilyen esetekbe
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

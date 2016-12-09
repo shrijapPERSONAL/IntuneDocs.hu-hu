@@ -2,8 +2,8 @@
 title: "Megfelelőségi szabályzat beállításai Windows-eszközökhöz | Microsoft Intune"
 description: "Ez a témakör a Windows-eszközök megfelelőségi szabályzatában konfigurálható szabályokat és beállításokat ismerteti."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ Ha más platformokra vonatkozó információkat keres, válasszon a következők
 > [!div class="op_single_selector"]
 - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune)
+- [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Megfelelőségi szabályzat beállításai Windows Phone-eszközökhöz
 A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 és újabb verziók.
@@ -151,6 +151,6 @@ Beállíthat olyan szabályt, amely előírja, hogy a Windows 10-eszközöknek k
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

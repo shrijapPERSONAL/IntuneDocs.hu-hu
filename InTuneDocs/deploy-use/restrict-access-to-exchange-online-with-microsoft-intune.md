@@ -2,8 +2,8 @@
 title: "Az Exchange Online-hoz való e-mailes hozzáférés korlátozása | Microsoft Intune"
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e-mailhez való hozzáférést az Exchange Online-on."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
-ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 7ef78fb253ca88d63a550d5c54448103e6790574
 
 
 ---
@@ -210,13 +210,13 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 4. Az **Outlook web access (OWA)** alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: Safari (iOS) és Chrome (Android). A más böngészőkkel történő hozzáférés le lesz tiltva. Az Outlook megadott alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek.
 
-  Az **Android** eszközök felhasználóinak engedélyezni kell a böngészőalapú hozzáférést.  A végfelhasználónak ehhez a regisztrált eszközön be kell kapcsolnia a „Böngészőalapú hozzáférés engedélyezése” opciót az alábbi módon:
+  Az **Android** eszközök felhasználóinak engedélyezni kell a böngészőalapú hozzáférést.  A végfelhasználónak ehhez a regisztrált eszközön be kell kapcsolnia a „Böngészőalapú hozzáférés engedélyezése” lehetőséget az alábbi módon:
   1.    Nyissa meg a **Vállalati portál alkalmazást**.
-  2.    Nyissa meg a **Beállítások** lapot a három pontra (...) vagy a hardver menü gombjára kattintva.
+  2.    Nyissa meg a **Beállítások** lapot a három pontra (...) vagy a hardveres menü gombra kattintva.
   3.    Kattintson a **Böngészőalapú hozzáférés engedélyezése** gombra.
   4.    A Chrome böngészőben jelentkezzen ki az Office 365-ből, majd indítsa újra a Chrome-ot.
 
-  **iOS és Android** platformokon a szolgáltatás eléréséhez használt eszköz azonosításához az Azure Active Directory egy Transport Layer Security (TLS-) tanúsítványt rendel az eszközhöz.  Az eszköz az alábbi képernyőfelvételnek megfelelően megjeleníti a tanúsítványt, és a végfelhasználótól annak kiválasztását kéri. A végfelhasználónak a böngésző további használatához ki kell választania ezt a tanúsítványt.
+  **iOS és Android** platformokon a szolgáltatás eléréséhez használt eszköz azonosításához az Azure Active Directory egy TLS-tanúsítványt (Transport Layer Security) rendel az eszközhöz.  Az eszköz az alábbi képernyőfelvételnek megfelelően megjeleníti a tanúsítványt, és a végfelhasználótól annak kiválasztását kéri. A végfelhasználónak a böngésző további használatához ki kell választania ezt a tanúsítványt.
 
   **iOS--**
 
@@ -269,6 +269,6 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ Munkájának elvégzéséhez hozzá kell férnie munkahelyének alkalmazásaihoz
  ![Az eszköz regisztrálása macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Az Intune-nak hozzá kell férnie a számítógépéhez, enélkül nem tud meggyőződni arról, hogy elég biztonságos-e az eszköz a vállalat erőforrásainak eléréséhez. Ebből a cikkből megtudhatja, [mi történik, ha regisztrálja az eszközt az Intune-ban](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Az Intune-nak hozzá kell férnie a számítógépéhez, enélkül nem tud meggyőződni arról, hogy elég biztonságos-e az eszköz a vállalat erőforrásainak eléréséhez. Ebből a cikkből megtudhatja, [mi történik, ha regisztrálja az eszközt az Intune-ban](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. Megnyílik a __System Preferences__ (Rendszerbeállítások) terület. A rendszer rákérdez, hogy __telepíteni szeretné-e a felügyeleti profilt?__ A továbblépéshez kattintson az __Install__ (Telepítés) gombra. Ha további részleteket szeretne, kattintson a __Show Profile__ (Profil megjelenítése) gombra.
 
@@ -64,6 +64,6 @@ További segítségre van szüksége? Érdeklődjön munkahelye rendszergazdáj�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Az e-mailek és az Office 365-szolgáltatások elérésének korlátozása | Microsoft Intune"
 description: "Ez a témakör azt ismerteti, hogyan használható a feltételes hozzáférés arra, hogy csak a megfelelő eszközök férhessenek hozzá a vállalati e-mailekhez, valamint a SharePoint Online-on és más szolgáltatásokban tárolt vállalati adatokhoz."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3a58e075813fac6a37ec8f82a39e44a856ef1cce
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 5665ca431eb186d4378953b7047228e07ae9dc60
 
 
 ---
@@ -66,6 +66,6 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Felügyelt vállalati alkalmazás adatainak törlése | Microsoft Intune"
 description: "Ismerje meg a csak vállalati adatok eszközökről történő távoli eltávolításának módját."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ Az **Intune mobilalkalmazás-felügyelet** panel összefoglaló jelentést jelen
 
 2.  A **Törlési kérés** panelen a kérelmek felhasználók szerint csoportosított listája látható. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
 
-A törléshez a felhasználónak meg kell nyitnia az alkalmazást, ami a kéréstől számítva akár 30 percig is eltarthat. 
+A törléshez a felhasználónak meg kell nyitnia az alkalmazást, ami a kéréstől számítva akár 30 percig is eltarthat.
 
 A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan nem törli.  A törlési kérés manuális törléséhez kattintson a jobb egérgombbal, és válassza a törlés lehetőséget.
 
@@ -66,6 +66,6 @@ A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

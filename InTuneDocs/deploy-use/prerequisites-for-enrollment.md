@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ A Microsoft Intune-nal bővített Configuration Manager-t keresi?
 ## <a name="step-1-enable-connections"></a>1. lépés: Kapcsolatok engedélyezése
 
 A mobileszközök regisztrációjának engedélyezése előtt feltétlenül végezze el a következőket:
-- [Ellenőrizze a szükséges hálózati URL-címeket és -portokat.](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Vegye fel és ellenőrizze a tartományevet.](../get-started/domain-names-for-microsoft-intune)
+- [Ellenőrizze a szükséges hálózati URL-címeket és -portokat.](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Vegye fel és ellenőrizze a tartományevet.](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>2. lépés: MDM-szolgáltató beállítása
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
@@ -111,7 +111,7 @@ A módosítások mentése után a felügyeleti konzol **Vállalati portál** lap
 
 ## <a name="step-5-assign-user-licenses"></a>5. lépés: Felhasználói licencek hozzárendelése
 
-Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is. [Szinkronizálhatja a helyszíni felhasználókat az Azure AD-be](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is. [Szinkronizálhatja a helyszíni felhasználókat az Azure AD-be](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Jelentkezzen be az [Office 365 felügyeleti portálján](https://portal.office.com/Admin/Default.aspx) bérlői rendszergazdai hitelesítő adataival.
 
@@ -136,7 +136,7 @@ Az eszközkezelés beállítása a következő platformokhoz:
 - [Windows rendszerű számítógépek és laptopok](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile és Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-A [vállalati tulajdonban lévő eszközök is regisztrálását](manage-corporate-owned-devices) is engedélyezheti.
+A [vállalati tulajdonban lévő eszközök is regisztrálását](manage-corporate-owned-devices.md) is engedélyezheti.
 
 ## <a name="step-7-next-steps"></a>7. lépés: További lépések
 
@@ -149,6 +149,6 @@ A regisztráció engedélyezését követően hozzáláthat ahhoz, hogy a kialak
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

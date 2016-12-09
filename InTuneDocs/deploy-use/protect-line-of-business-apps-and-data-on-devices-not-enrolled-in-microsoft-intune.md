@@ -2,8 +2,8 @@
 title: "Üzletági (LOB) alkalmazások védelme nem regisztrált eszközökön | Microsoft Intune"
 description: "Ez a témakör azt ismerteti, hogyan készítheti elő az egyéni üzletági alkalmazásait arra, hogy alkalmazhassa az adatveszteség megakadályozását segítő mobilalkalmazás-kezelési szabályzatokat."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti
 
 ##  <a name="step-1-prepare-the-app"></a>1. lépés: Az alkalmazás előkészítése
 
-Mielőtt alkalmazná a MAM-szabályzatokat egy alkalmazásra, be kell burkolnia az [iOS-hez](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) és [Androidhoz](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) készült Microsoft Intune alkalmazásburkolóval, vagy a [Intune App SDK](/../develop/intune-app-sdk) segítségével manuálisan integrálnia kell az Intune alkalmazásvédelmi funkcióit.
+Mielőtt alkalmazná a MAM-szabályzatokat egy alkalmazásra, be kell burkolnia az [iOS-hez](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Androidhoz](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) készült Microsoft Intune alkalmazásburkolóval, vagy a [Intune App SDK](../develop/intune-app-sdk.md) segítségével manuálisan integrálnia kell az Intune alkalmazásvédelmi funkcióit.
 
-További információ az alkalmazásburkoló eszközről és az SDK-ról: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+További információ az alkalmazásburkoló eszközről és az SDK-ról: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## <a name="step-2-add-the-app"></a>2. lépés: Az alkalmazás hozzáadása
 
@@ -81,6 +81,6 @@ Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el. Ezzel 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

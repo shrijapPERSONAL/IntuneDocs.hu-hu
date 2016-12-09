@@ -14,8 +14,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
-ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
 
 A vállalati eszközök Microsoft Intune-beli regisztrálása lehetővé teszi, hogy a Windows 10 rendszerű eszközök hozzáférjenek a szervezet védett adataihoz, beleértve az e-maileket, a fájlokat és az egyéb erőforrásokat. Ez a Windows 10 rendszerű asztali számítógépekre és a Windows 10 Mobile rendszerű eszközökre egyaránt vonatkozik. Az eszközök regisztrálásával biztonságossá tehető ez a hozzáférés Ön és a szervezet számára, és elkülöníthetők a munkahelyi adatok a személyes adatoktól.
 
-Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows), és mit jelent ez az [eszközön található adatok szempontjából](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), és mit jelent ez az [eszközön található adatok szempontjából](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 ## <a name="windows-10-desktop-devices"></a>Windows 10 rendszerű asztali eszközök
 1.  Lépjen a __Start__ menüre.
@@ -40,19 +40,19 @@ Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisz
 
  ![Windows 10 asztali verzió – A gép névjegye](../media/settings_about_pc.png)
 
-3.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account).
+3.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile rendszerű eszközök
 
 1.  A __Start__ menüben pöccintéssel lépjen a __Minden alkalmazás__ listához, és válassza ki a __Beállítások__ alkalmazást.
 2.  Koppintson a __Rendszer__, majd a __Névjegy__ elemre.
 3.  Az __Eszközadatok__ bejegyzésnél koppintson a __További információ__ elemre. Megjelenik az eszköz adatait tartalmazó lista. A listában keresse meg a __Verzió__ bejegyzést.
-4.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account).
+4.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

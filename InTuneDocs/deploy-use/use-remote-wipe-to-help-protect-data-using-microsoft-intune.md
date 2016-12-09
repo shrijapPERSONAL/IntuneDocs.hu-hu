@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. Egy távoli törlési parancs kiadásával a felhasználók az Intune Munkahelyi portál segítségével törölhetik az Intune-ban regisztrált saját tulajdonú eszközeik tartalmát.
 
   > [!NOTE]
-  > Ez a témakör kizárólag az Intune mobileszköz-kezelő által felügyelt eszközök tartalmának törlését ismerteti. Az [Azure-portál](https://portal.azure.com) használatával is [törölheti a vállalati adatokat az alkalmazásokból](wipe-managed-company-app-data-with-microsoft-intune.md). Ezenkívül [kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket.](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > Ez a témakör kizárólag az Intune mobileszköz-kezelő által felügyelt eszközök tartalmának törlését ismerteti. Az [Azure-portál](https://portal.azure.com) használatával is [törölheti a vállalati adatokat az alkalmazásokból](wipe-managed-company-app-data-with-microsoft-intune.md). Ezenkívül [kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket.](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Teljes törlés
 
@@ -165,6 +165,6 @@ A jelentésben az is szerepel, hogy ki végezte az adott műveletet.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

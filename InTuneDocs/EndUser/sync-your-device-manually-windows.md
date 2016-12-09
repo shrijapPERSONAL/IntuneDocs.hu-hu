@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Csak az alábbi verziók támogatottak. Ha az eszköz nem szerepel a listán, a 
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 asztali verzió](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 mobil verzió
@@ -54,7 +54,7 @@ Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalm
     A képernyő tetején megjelenik a „Fiók szinkronizálása” üzenet. Amíg az eszköz szinkronizálása be nem fejeződik, a **Szinkronizálás** gomb inaktív marad.
 
 ## <a name="windows-10-desktop"></a>Windows 10 asztali verzió
-A Windows 10 rendszernek egynél több verziója van, így a lépések két részre oszthatók. Annak megállapításához, hogy mely lépések szükségesek, tekintse meg a képernyőképeket, és kövesse azokat a lépéseket, amelyek a leginkább hasonlítanak az eszközön látható állapotra. 
+A Windows 10 rendszernek egynél több verziója van, így a lépések két részre oszthatók. Annak megállapításához, hogy mely lépések szükségesek, tekintse meg a képernyőképeket, és kövesse azokat a lépéseket, amelyek a leginkább hasonlítanak az eszközön látható állapotra.
 
 1. Kattintson a **Start** gombra, majd a **Beállítások** elemre.
 
@@ -72,7 +72,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
     Ha a „Hozzáférés munkahelyi rendszerhez” feliratú képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi rendszerhez](#steps-to-follow-if-you-see-your-account) című részben leírt lépéseket.
 
-    ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png) 
+    ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
 
@@ -80,9 +80,9 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
     ![A Hozzáférés munkahelyi vagy iskolai rendszerhez elem kiválasztása](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a rendszergazda hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája. 
+2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a rendszergazda hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája.
 
-    - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot. 
+    - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
     - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
 
     ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 4. Kattintson a **Szinkronizálás** gombra. Az eszköz Intune-nal való szinkronizálása megtörténik.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Teendők, ha ezt látja: Munkahelyi hozzáférés
-    
+
 1. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** elemet.
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

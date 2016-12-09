@@ -2,7 +2,8 @@
 title: "A feltételes hozzáférés hibaelhárítása| Microsoft Intune"
 description: "A teendők abban az esetben, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Előfordulhat, hogy egy eszköz feltételes hozzáférését a rendszer anélkü
 - Ellenőrizze az Exchange Connector naplófájljaiban a SendEmail műveletekkel kapcsolatos hibákat. A keresendő parancs lehet például egy SendEmail művelet az értesítési fiókból a felhasználói fiók felé.
 - Mielőtt az Exchange Connector zárolná az eszközt, aktiválási e-mailt küld. Ha az eszköz offline állapotban van, előfordulhat, hogy nem kapja meg az aktiválási e-mailt. Ellenőrizze, hogy az eszköz e-mail-ügyfele ügyfélleküldéses módszerrel és nem lekérdezéssel fér hozzá az e-mailekhez, mert ez is okozhatja azt, hogy nem érkeznek meg. Váltson lekérdezési módra, és ellenőrizze, hogy az eszköz megkapja-e az e-mailt.
 
-## <a name="noncompliant-device-not-blocked"></a>Nem megfelelő eszköz nincs letiltva
+## <a name="non-compliant-device-not-blocked"></a>Nem megfelelő eszköz nincs letiltva
 
 Ha olyan eszközzel találkozik, amely nem megfelelő, mégis rendelkezik hozzáféréssel, hajtsa végre a következőket.
 
@@ -158,6 +159,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

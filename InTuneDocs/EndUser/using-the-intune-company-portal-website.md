@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 
 ---
@@ -46,11 +46,11 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 A **Munkahelyi portál webhelyén** tulajdonképpen ugyanazokat a feladatokat végezheti el, mint a saját eszközére telepített **Munkahelyi portál alkalmazásban**. A következő oldalakon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az eszközeiken elvégezhetnek.
 
 - [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
-- [iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

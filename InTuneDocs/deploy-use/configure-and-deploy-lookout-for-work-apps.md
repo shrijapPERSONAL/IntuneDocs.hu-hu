@@ -1,8 +1,8 @@
 ---
 title: "A Lookout for Work alkalmazás telepítése | Microsoft Intune"
 description: "Lookout for Work alkalmazások konfigurálása és telepítése Android operációs rendszeren."
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 
 ---
@@ -40,14 +40,15 @@ Ha az Intune-konzolon az **Alkalmazások** elemre kattint, a listában megjeleni
 
 * **5.lépés:** Telepítse az alkalmazást a felhasználók részére úgy, hogy kiválasztja a Lookout for Work alkalmazást, és a **Központi telepítés kezelése** lehetőséget választja.
 
-  Ugyanazokat a felhasználókat kell kiválasztania, akiket hozzáadott a Beléptetés kezelése opcióhoz a Lookout MTP-konzolon.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout MTP használatához](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) című szakasz 3. lépését.
+  Ugyanazokat a felhasználókat kell kiválasztania, akiket hozzáadott a Beléptetés kezelése opcióhoz a Lookout MTP-konzolon.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout MTP használatához](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) című szakasz 3. lépését.
+
   >[!IMPORTANT]
   > Az Intune alkalmazástelepítési varázslója nem érzékeli az Azure AD felhasználói csoportokat; ezek helyett az Intune felhasználói csoportokat használja. Ennek megfelelően a Lookout MTP-konzolon az [ebben a témakörben](plan-your-user-and-device-groups.md) leírtak szerint beléptetett Azure AD felhasználói csoport alapján létre kell hoznia egy Intune felhasználói csoportot.
 
 * **6. lépés:** Válassza a **Kötelező telepítés** lehetőséget, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
 
 
-## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (A Lookout alkalmazás vállalat által aláírt verziója)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (A Lookout alkalmazás vállalat által aláírt verziója)
 
 * **1. lépés:** Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -76,7 +77,8 @@ Ha az Intune-konzolon az **Alkalmazások** elemre kattint, a listában megjeleni
 
 * **6.lépés:** **Telepítse az alkalmazást a felhasználók részére** úgy, hogy kiválasztja a Lookout for Work alkalmazást, és a **Központi telepítés kezelése** lehetőséget választja.
 
-  Ugyanazokat a felhasználókat kell kiválasztania, akiket a Lookout-konzolon az Enrollment Management (Regisztráció kezelése) beállítás alatt felvett.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout veszélyforrások elleni eszközvédelmének használatához](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) című szakasz 3. lépését.
+  Ugyanazokat a felhasználókat kell kiválasztania, akiket a Lookout-konzolon az Enrollment Management (Regisztráció kezelése) beállítás alatt felvett.  A felhasználói csoportok Lookout MTP-hez történő hozzáadásáról bővebben lásd [Az előfizetés konfigurálása a Lookout veszélyforrások elleni eszközvédelmének használatához](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) című szakasz 3. lépését.
+
 >[!IMPORTANT]
 > Az Intune alkalmazástelepítési varázslója nem érzékeli az Azure AD-beli felhasználói csoportokat; ezek helyett az Intune-alapú felhasználói csoportokat használja, így azon az Azure AD-beli felhasználói csoporton alapuló Intune-os felhasználói csoportot kell létrehoznia, amely [ennek](plan-your-user-and-device-groups.md) a témakörnek megfelelően lett regisztrálva a Lookout-konzolon.
 
@@ -98,6 +100,6 @@ Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
