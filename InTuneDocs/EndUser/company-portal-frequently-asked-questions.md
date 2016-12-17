@@ -1,11 +1,11 @@
 ---
-title: "A Vállalati portál ismertetése| Microsoft Intune"
+title: "Mi a Vállalati portál? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -41,8 +41,8 @@ A Vállalati portál alkalmazás és webhely között van néhány kisebb eltér
 A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS és Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Android--](using-your-android-device-with-intune.md)
+- [iOS és macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Munkahelyi portál webhely](using-the-intune-company-portal-website.md)
 
@@ -52,13 +52,13 @@ Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, elő
 Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén, kövesse az Ön által használt eszköznek megfelelő hivatkozást:
 
 > [!div class="op_single_selector"]
-- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS és Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Android--](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS és macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
 
--   iPhone és iPad készülékeket, illetve Mac OS X-eszközöket
+-   iPhone és iPad készülékeket, illetve macOS-eszközöket
 
 -   Android rendszerű mobileszközök
 
@@ -74,8 +74,8 @@ Igen, a Vállalati portálról eltávolíthat vagy alaphelyzetbe állíthat egy 
 Számítógép vagy eszköz *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról információt az alábbi hivatkozások egyikén találhat:
 
 > [!div class="op_single_selector"]
-- [Android](unenroll-your-device-from-intune-android.md)
-- [iOS és Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Android--](unenroll-your-device-from-intune-android.md)
+- [iOS és macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 Számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerinti helyzetbe állítani a számítógépet vagy eszközt. Az eszköz alaphelyzetbe állításával töröl minden vállalati és személyes adatot az eszközről! Ha elvesztette az eszközét, akkor távolról, a Vállalati portál webhelyéről is alaphelyzetbe állíthatja.
@@ -83,8 +83,8 @@ Számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál 
 Az eszközök alaphelyzetbe állításáról az alábbi hivatkozások egyikén találhat további információkat:
 
 > [!div class="op_single_selector"]
-- [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS és Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Android--](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS és macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Az eszköz alaphelyzetbe állítása a Munkahelyi portál webhelyről](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elé
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

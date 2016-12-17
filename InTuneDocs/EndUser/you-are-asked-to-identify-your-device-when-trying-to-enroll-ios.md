@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 # <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>A regisztráláskor a rendszer felkéri az eszköz azonosítására
 
-Ha az Intune-ban próbálja meg regisztrálni iOS vagy Mac OS X rendszerű eszközét, és megjelenik egy képernyő, amely felszólítja az eszköz azonosítására, az azt jelenti, hogy legalább az egyik eszközét már regisztrálták, és a fiókjához rendelték a Munkahelyi portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Munkahelyi portál alkalmazás megfelelően működjön, meg kell állapítania, hogy a használt eszközt regisztrálták-e már az Intune-ban.
+Ha az Intune-ban próbálja meg regisztrálni iOS vagy macOS rendszerű eszközét, és megjelenik egy képernyő, amely felszólítja az eszköz azonosítására, az azt jelenti, hogy legalább az egyik eszközét már regisztrálták, és a fiókjához rendelték a Munkahelyi portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Munkahelyi portál alkalmazás megfelelően működjön, meg kell állapítania, hogy a használt eszközt regisztrálták-e már az Intune-ban.
 
 1. Ha látja az eszközt ebben a listában, koppintson rá. Ha nem látja, koppintson az **új eszköz** elemre.
 2. Koppintson a **folytatás** gombra.
@@ -34,6 +34,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

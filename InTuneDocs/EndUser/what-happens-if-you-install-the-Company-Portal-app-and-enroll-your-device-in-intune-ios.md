@@ -1,5 +1,5 @@
 ---
-title: "Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
+title: "Mi történik a Munkahelyi portál alkalmazás telepítésekor és egy iOS- vagy macOS-eszköz Intune-beli regisztrálásakor? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és egy iOS- vagy Mac OS X-eszköz Intune-beli regisztrálásakor?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Mi történik a Munkahelyi portál alkalmazás telepítésekor és egy iOS- vagy macOS-eszköz Intune-beli regisztrálásakor?
 
-A Vállalati portál alkalmazás telepítése és az iOS- vagy Mac OS X-eszköz Intune-ban való regisztrálása után a Vállalati portál alkalmazásban a következőkre nyílik lehetősége:
+A Munkahelyi portál alkalmazás telepítése és az iOS- vagy macOS-eszköznek az Intune-ban való regisztrálása után a Munkahelyi portál alkalmazásban a következőkre nyílik lehetősége:
 
 -   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
@@ -52,7 +52,7 @@ Az eszköz Intune-beli regisztrálásával engedélyezi a rendszergazdának az e
 
 -   Filmtekercs mappa
 
-**Amit a rendszergazda lát**
+**Amit a rendszergazda láthat**
 
 -   Modell
 
@@ -96,6 +96,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

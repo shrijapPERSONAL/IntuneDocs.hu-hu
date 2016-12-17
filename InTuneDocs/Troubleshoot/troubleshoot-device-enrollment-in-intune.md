@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 >
 > A Készülékregisztráció-kezelők csoportba felvett felhasználói fiók nem tud regisztrálást végrehajtani, ha az adott felhasználói bejelentkezéshez a Feltételes hozzáférés szabályzat érvényes.
 
-### <a name="company-portal-temporarily-unavailable"></a>A Vállalati portál átmenetileg nem érhető el
+### <a name="company-portal-emporarily-unavailable"></a>A Munkahelyi portál átmenetileg nem érhető el
 **Probléma:** Az eszközön **A Vállalati portál átmenetileg nem érhető el** hibaüzenet jelenik meg.
 
 **Megoldás:**
@@ -214,23 +214,40 @@ Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépés
 
 ### <a name="android-certificate-issues"></a>Android-tanúsítványokkal kapcsolatos problémák
 
-**Probléma:** A felhasználó eszköze a következő üzenetet mutatja: *A bejelentkezés nem lehetséges, mert az eszközhöz hiányzik egy szükséges tanúsítvány.*
+**Probléma:** A felhasználó eszköze a következő üzenetet mutatja: *Nem tud bejelentkezni, mert az eszközön hiányzik egy szükséges tanúsítvány.*
 
-**Megoldás**:
+**1. megoldás**:
 
-- A felhasználó beszerezheti a hiányzó tanúsítványt, ha követi [ezeket az utasításokat](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Ha a felhasználó nem tudja beszerezni a tanúsítványt, lehetséges, hogy az ADFS-kiszolgálóról hiányoznak köztes tanúsítványok. A köztes tanúsítványokra az Androidnak van szüksége ahhoz, hogy megbízzon a kiszolgálóban.
+Kérje meg a felhasználót, hogy kövesse az [eszközről hiányzó tanúsítvány problémájának kezelését ismertető cikk](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) útmutatását. Ha a hiba ezt követően sem szűnik meg, kérje meg a felhasználókat, hogy próbálkozzanak a 2. megoldással.
 
-A tanúsítványokat az alábbi módon lehet importálni az ADFS-kiszolgáló köztes tárolójába vagy proxykba:
+**2. megoldás**:
 
-1.  Az ADFS-kiszolgálón indítsa el a **Microsoft Management Console**-t, és adja hozzá a **Számítógép fiókhoz** a Tanúsítványok beépülő modult.
-5.  Keresse meg az ADFS-szolgáltatás által használt tanúsítványt, és nézze meg a szülőtanúsítványát.
-6.  Másolja ki a szülőtanúsítványt, és illessze be a **Számítógép\Köztes hitelesítésszolgáltatók\Tanúsítványok** közé.
-7.  Másolja ki az ADFS-, ADFS-dekódoló és ADFS-aláíró tanúsítványokat, és illessze be őket az ADFS-szolgáltatás személyes tárolójába.
-8.  Indítsa újra az ADFS-kiszolgálókat.
+Ha a felhasználók a vállalati hitelesítő adatok megadását, illetve az összevont bejelentkezési oldalra való átirányítást követően is a hiányzó tanúsítványra utaló hibát látják, elképzelhető, hogy az Active Directory összevonási szolgáltatások (AD FS) kiszolgálójáról hiányzik egy közbenső tanúsítvány.
 
+A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél szükség van rá, hogy az [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx) tartalmazzon egy közbenső tanúsítványt, de jelenleg az alapértelmezett AD FS-kiszolgálók és AD FS-proxykiszolgálók csak az AD FS szolgáltatás SSL-tanúsítványát küldik el az SSL-ügyfél hello üzenetére adott SSL-kiszolgálói hello válasz részeként.
+
+A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
+
+1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
+3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
+4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
+6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
+7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
+8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
+9.  Indítsa újra az AD FS-kiszolgálókat.
+10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
 A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
 
+**A tanúsítványok megfelelő telepítésének ellenőrzése**:
+
+A következő lépésekben csupán a tanúsítvány megfelelő telepítésének ellenőrzésére rendelkezésre álló számos módszer és eszköz egyikét mutatjuk be.
+
+1. Nyissa meg az [ingyenes Digicert eszközt](ttps://www.digicert.com/help/).
+2. Adja meg az AD FS-kiszolgáló teljes tartománynevét (például sts.contoso.com), majd válassza a **CHECK SERVER** (Kiszolgáló ellenőrzése) lehetőséget.
+
+Ha a kiszolgálótanúsítványt megfelelően telepítette, az eredményeknél csak pipák jelennek meg. Ha a fenti probléma továbbra sem szűnt meg, piros X jelenik meg a jelentés „Certificate Name Matches” (Tanúsítványnév-egyezések) és „SSL Certificate is correctly Installed” (Az SSL-tanúsítvány megfelelő telepítése) részében.
 
 
 ## <a name="ios-issues"></a>iOS-problémák
@@ -356,6 +373,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

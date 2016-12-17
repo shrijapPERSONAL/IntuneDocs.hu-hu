@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Az androidos eszközt rootolták, ezért a felhasználó nem tud csatlakozni
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Az androidos eszközt feltörték, és nem lehet csatlakoztatni
+A rendszer azért irányította ide, mivel megjelent Önnek egy üzenet, amely tájékoztatta, hogy eszköze _rootolva_ van.
 
-Ha az androidos eszköz rootolva van, akkor az eszközön olyan képességek is engedélyezve lettek, amelyek veszélyeztethetik a vállalati erőforrásokat és a biztonságot. Ha ezt az üzenetet látja, akkor a vállalati erőforrásokat nem éri el a probléma megoldásáig.
+Az Android rendszerű eszközöknél a rootolás (feltörés) azt jelenti, hogy az eszköz szoftverének bizonyos részét módosították, hogy olyan funkciókat is biztosítson, amelyek egyébként nem lennének elérhetőek. Ezek a módosítások gyakran csökkentik a szervezeti erőforrások (például e-mailek és dokumentumok) elérésének biztonságosságát. A rootolt eszközök ezért a rootolás megszüntetéséig nem férhetnek hozzá ezekhez az erőforrásokhoz.  
 
-Ha úgy gondolja, hogy nem végzett olyan műveletet, amelynek következtében rootolta volna az eszközt, tekintse meg az alábbi okokat, amelyek miatt az eszköz rootolt állapotban lehet:
+Számos gyakori módszer létezik, amely eszköze rootolásához vezet:
 
-- Előfordulhat, hogy telepített egy alkalmazást az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ha az üzenet egy alkalmazás telepítése után jelenik meg, a probléma elhárítása érdekében megpróbálhatja eltávolítani az alkalmazást.
+- Előfordulhat, hogy telepített egy alkalmazást az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ha közvetlenül az alkalmazás telepítését követően jelent meg az üzenet, próbálja meg eltávolítani az alkalmazást.
 
-- Az eszköz gyártója telepített egy olyan szoftvert az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. További segítségért forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+- Az eszköz gyártója telepített egy olyan szoftvert az eszközön, amelyet a rootolást észlelő szoftver biztonsági kockázatnak tekint. Ebben az esetben további segítségért forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com).
+
+Ha Ön rootolta az eszközt, fordítsa vissza a folyamatot, és állítsa vissza az eszköz eredeti állapotát.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

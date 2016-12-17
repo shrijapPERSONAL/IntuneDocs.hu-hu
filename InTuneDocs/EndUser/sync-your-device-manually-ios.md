@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>Az iOS-eszköz manuális szinkronizálása
 
-Ha az alkalmazás telepítése túl sokáig tart, megpróbálkozhat az eszköz manuális szinkronizálásával. Manuális szinkronizálással esetleg gyorsítható a telepítés. A szinkronizálási funkció csak az iOS rendszerre érvényes, a Mac OS X-re nem.
+Ha az alkalmazás telepítése túl sokáig tart, megpróbálkozhat az eszköz manuális szinkronizálásával. Manuális szinkronizálással esetleg gyorsítható a telepítés. A szinkronizálási funkció csak az iOS-re érvényes, a macOS-re nem.
 
 1. Nyissa meg az iOS Vállalati portál alkalmazást.
 
@@ -42,6 +42,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

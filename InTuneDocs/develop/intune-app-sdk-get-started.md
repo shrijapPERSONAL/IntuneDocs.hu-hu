@@ -1,21 +1,21 @@
 ---
-title: "Bevezetés a Microsoft Intune App SDK használatába | Microsoft Intune"
+title: "Bevezetés a Microsoft Intune App SDK használatába | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ Az alábbiakra lesz szüksége az Intune App SDK-nak egy natív Android-alkalmaz
 
 Cordova-alkalmazások készítéséhez az Intune App SDK Cordova beépülő modullal a következőkre lesz szüksége:
 
-* **[Az Intune App SDK Cordova beépülő modul útmutatója](intune-app-sdk-cordova)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
+* **[Az Intune App SDK Cordova beépülő modul útmutatója](intune-app-sdk-cordova.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
 
 Xamarin-alkalmazások készítéséhez az Intune App SDK Xamarin összetevővel a következőkre lesz szüksége:
 
-* **[Az Intune App SDK Xamarin összetevő útmutatója](intune-app-sdk-xamarin)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
+* **[Az Intune App SDK Xamarin összetevő útmutatója](intune-app-sdk-xamarin.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások készítésében Cordova használatával az Intune mobilalkalmazás-kezeléshez.
 
 
 
@@ -118,6 +118,6 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

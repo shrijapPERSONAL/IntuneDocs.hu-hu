@@ -1,6 +1,6 @@
 ---
-title: "iOS vagy Mac OS X rendszerű eszköz használata az Intune-nal | Microsoft Intune"
-description: "Hivatkozáslista az Intune-ban regisztrált iOS- és Mac OS X-eszközökön elvégezhető feladatokhoz"
+title: "iOS vagy macOS rendszerű eszköz használata az Intune-nal | Microsoft Intune"
+description: "Hivatkozáslista az Intune-ban regisztrált iOS- és macOS-eszközökön elvégezhető feladatokhoz"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>iOS vagy macOS rendszerű eszköz használata az Intune-nal
 
 Ebben a cikkben minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az Intune által felügyelt eszközökön elvégezhetnek. A rendszergazdák az itt található információkból tájékozódhatnak a különböző feladatok elvégzéséhez szükséges felhasználói lépésekről. Ezeket a következő kategóriákba csoportosítottuk:
 - A Vállalati portál alkalmazás telepítése és eszközök regisztrálása az Intune-ban
@@ -34,7 +34,7 @@ Az ebben a szakaszban olvasható információk az Intune Munkahelyi portál tele
 
 - [Az Intune Munkahelyi portál alkalmazásának telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md)
-- [Mac OS X-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-mac-os-x.md)
+- [macOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-macos.md)
 - [Mi történik a Munkahelyi portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>A felhasználók által az Intune-ban regisztrált eszközökön végezhető műveletek
@@ -67,6 +67,6 @@ Az itt olvasható információk az iOS-eszköz Intune-beli regisztrálásakor el
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

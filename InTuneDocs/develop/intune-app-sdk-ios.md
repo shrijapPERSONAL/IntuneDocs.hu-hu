@@ -1,21 +1,21 @@
 ---
-title: "A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató | Microsoft Intune"
+title: "A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune m
 * Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode eszközkészlet 5-ös vagy újabb verziója.
 
 * Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Nyomtassa ki és őrizze meg a licencfeltételeket. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
+
+* Töltse le az iOS-re készült Intune App SDK fájljait a [GitHubról](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
 ## <a name="whats-in-the-sdk"></a>Az SDK tartalma
 
@@ -322,9 +324,9 @@ Ha a regisztráció sikertelen, az alkalmazásnak valamikor a jövőben újra me
 
 Az API meghívása után az alkalmazás a szokásos módon működhet tovább. Ha a regisztráció sikeres, az SDK értesíti a felhasználót, hogy újra kell indítani az alkalmazást.
 
-## <a name="debug-information"></a>Hibakeresési információk
+## <a name="status-result-and-debug-notifications"></a>Állapot-, eredmény- és hibakeresési értesítések
 
-Az alkalmazás az Intune MAM-szolgáltatásokhoz intézett kérések közül a következők esetében tudja fogadni a hibakeresési értesítéseket:
+Az alkalmazás az Intune MAM-szolgáltatásokhoz intézett kérések közül a következők esetében tudja fogadni az állapot-, eredmény- és hibakeresési értesítéseket:
 
  - Regisztrációs kérések
  - Szabályzatfrissítési kérések
@@ -365,7 +367,7 @@ Ezek a delegáltmetódusok egy `IntuneMAMEnrollmentStatus` objektumot adnak viss
 
 Ezt az objektumot a „Headers/IntuneMAMEnrollmentStatus.h” fájl definiálja, a visszaadható konkrét állapotkódokkal együtt.
 
-Fontos megjegyezni, hogy ezek az értesítések nem alkalmasak arra, hogy bármilyen alkalmazás üzleti logikája rájuk alapuljon. Emögött az az elgondolás áll, hogy az alkalmazás elküldheti ezeket az információkat egy telemetriai szolgáltatásnak, hibakeresés vagy figyelés céljára,.
+
 
 
 ## <a name="sample-code"></a>Mintakód
@@ -637,7 +639,7 @@ Igen, a rendszergazda szelektív törlési parancsot is küldhet az alkalmazásn
 
 ## <a name="submit-your-app-to-the-app-store"></a>Az alkalmazás beküldése az App Store-ba
 
-Az Intune App SDK statikus könyvtára és keretrendszere egyaránt univerzális bináris build. Ez azt jelenti, hogy az összes eszköz- és szimulátorarchitektúrához biztosítanak kódot. Az Apple elutasítja az App Store-ba beküldött alkalmazásokat, ha szimulátorkódot tartalmaznak. Ha a statikus erőforrástáron alapuló fordítást végez csak eszközön használható build elkészítésére, akkor a csatoló automatikusan törli a szimulátorkódot.
+Az Intune App SDK statikus könyvtára és keretrendszere egyaránt univerzális bináris build. Ez azt jelenti, hogy az összes eszköz- és szimulátorarchitektúrához biztosítanak kódot. Az Apple elutasítja az App Store-ba beküldött alkalmazásokat, ha szimulátorkódot tartalmaznak. Ha a statikus erőforrástáron alapuló fordítást végez csak eszközön használható build elkészítésére, akkor a csatoló automatikusan törli a szimulátorkódot. Végezze el az alábbi lépéseket, amelyek segítségével garantáltan nem marad szimulátorkód az alkalmazásban, amikor feltölti azt az App Store-ba.
 
 1. Ügyeljen rá, hogy az `IntuneMAM.framework` az asztalon legyen.
 
@@ -654,6 +656,6 @@ Az Intune App SDK statikus könyvtára és keretrendszere egyaránt univerzális
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

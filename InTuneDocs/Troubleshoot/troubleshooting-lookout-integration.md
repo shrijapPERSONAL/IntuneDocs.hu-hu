@@ -1,9 +1,9 @@
 ---
-title: "A Lookout-integráció hibaelhárítása | Microsoft Intune"
+title: "A Lookout-integráció hibaelhárítása | Microsoft Docs"
 description: "Ez a témakör a Lookout-integráció leggyakoribb problémáinak hibaelhárítását ismerteti"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Előfordulhat, hogy az alábbi hibát látja, ha az Azure AD globális rendszerg
 
 ![képernyőfelvétel, amelyen a Lookout bejelentkezési képernyője bejelentkezési hibát mutat](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-A probléma megoldásához jelentkezzen be a https://aad.lookout.com/les?action=consent oldalon és fogadja el a telepítés indításáról szóló kérést. Ezzel kapcsolatban bővebb információt a [Lookout MTP-előfizetés beállítása](set-up-your-subscription-with-lookout-mtp.md) című témakörben talál
+A probléma megoldásához jelentkezzen be a https://aad.lookout.com/les?action=consent oldalon és fogadja el a telepítés indításáról szóló kérést. Ezzel kapcsolatban bővebb információt a [Lookout MTP-előfizetés beállítása](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) című témakörben talál
 
 ## <a name="troubleshoot-device-status-issues"></a>Az eszköz állapotával kapcsolatos problémák elhárítása
 
@@ -90,6 +90,6 @@ Amennyiben az új felhasználó tagja valamelyik, a Lookout MTP-konzolon megadot
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
