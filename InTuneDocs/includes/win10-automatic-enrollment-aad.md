@@ -1,4 +1,4 @@
-## Azure Active Directory-regisztráció
+## <a name="azure-active-directory-enrollment"></a>Azure Active Directory-regisztráció
 
 Az automatikus regisztrációval a felhasználók úgy regisztrálhatják vállalati tulajdonú vagy személyes Windows 10 rendszerű számítógépeiket és Windows 10 Mobile-eszközeiket az Intune-ban, hogy megadnak egy munkahelyi vagy iskolai fiókot és elfogadják, hogy felügyelet alá kerülnek. Ilyen egyszerű az egész! A háttérben a felhasználó eszköze regisztrálja magát és csatlakozik az Azure Active Directory-hoz. A regisztrációt követően az eszközt az Intune felügyeli.
 
@@ -7,7 +7,7 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 - Microsoft Intune-előfizetés
 
 
-### Az automatikus MDM-regisztráció konfigurálása
+### <a name="configure-automatic-mdm-enrollment"></a>Az automatikus MDM-regisztráció konfigurálása
 
 1. Az [Azure felügyeleti portálján](https://manage.windowsazure.com) (https://manage.windowsazure.com) nyissa meg az **Active Directory** csomópontot és válassza ki a saját címtárát.
 
@@ -28,12 +28,12 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 6.  Adja meg, hogy mely felhasználók eszközeit felügyelje a Microsoft Intune. E felhasználók Windows 10 rendszerű eszközeit a rendszer automatikusan belépteti a Microsoft Intune-felügyeletbe.
 
   - **Összes**
-  - **Csoportok**
+  - **CSOPORTOK**
   - **Nincsenek**
 
 7. Válassza a **Mentés** elemet.
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

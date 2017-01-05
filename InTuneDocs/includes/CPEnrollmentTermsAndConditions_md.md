@@ -16,6 +16,6 @@ Megtekintheti a [feltételeket és kikötéseket](https://technet.microsoft.com/
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
