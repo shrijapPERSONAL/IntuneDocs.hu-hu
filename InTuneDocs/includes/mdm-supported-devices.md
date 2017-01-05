@@ -23,6 +23,6 @@ A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX St
  
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
