@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>Mi az az Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune egy felhőalapú nagyvállalati mobileszköz-felügyeleti (EMM) szolgáltatás, amely segítséget nyújt a munkatársak hatékonyságának fenntartásához a vállalati adatok védelmének megőrzése mellett. Az Intune-nal a következőkre nyílik lehetősége:
 * Felügyelheti a munkatársak által a vállalati adatok elérésére használt mobileszközöket.
 * Felügyelheti a munkatársak által használt alkalmazásokat.

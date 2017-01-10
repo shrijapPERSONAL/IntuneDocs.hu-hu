@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>A mobilalkalmazás-kezelés beállításának ellenőrzése
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör azokkal a problémákkal kapcsolatban nyújt tájékoztatást, amelyek a mobilalkalmazás-kezelés (MAM) beállítását követően merülhetnek fel. Az útmutató az Azure-portálon található MAM-szabályzatokra vonatkozik.
 
 ### <a name="checking-for-symptoms"></a>Hibajelenségek keresése

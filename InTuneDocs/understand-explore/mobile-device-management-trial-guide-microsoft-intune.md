@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez az útmutató a próbaverzióhoz bemutatja a mobileszköz-kezelés működését az Intune-ban. A következőket kell tennie:
 - Az eszközök regisztrálása az Intune általi kezeléshez.
 - Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez.
