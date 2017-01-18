@@ -14,75 +14,75 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: ed4d828b19620f421461228e04bda7b7be799444
 
 
 ---
 
 # <a name="troubleshoot-lookout-integration-with-intune"></a>A Lookout Intune-nal való integrációjának hibaelhárítása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör ismertet néhány gyakori problémát, amely a Lookout mobilfenyegetések elleni védelem (MTP) beállításával kapcsolatban merülhet fel.
-## <a name="troubleshoot-login-errors"></a>Bejelentkezési hibák elhárítása
-### <a name="403-errors"></a>403-as hibák
-A [Lookout MTP-konzolra](https://aad.lookout.com) való bejelentkezéskor a következő 403-as hibaüzenet jelenhet meg: **Ön nem jogosult hozzáférni a szolgáltatáshoz** Erre abban az esetben kerülhet sor, ha az Ön által megadott felhasználónév nem tagja a Lookout MTP eléréséhez konfigurált Azure Active Directory (Azure AD) csoportnak.
 
-A Lookout MTP beállításai csak konfigurált Azure AD-csoport felhasználói számára engedélyezik a hozzáférést. Ha nem biztos benne, hogy melyik csoporthoz állítottak be Lookout MTP-hozzáférést, forduljon a Lookout támogatási csapatához.
+**Bejelentkezési hibák**
 
-A Lookout támogatási csapatát a következőképpen érheti el:
+## <a name="403-errors"></a>403-as hibák
+A [Lookout MTP-konzolra](https://aad.lookout.com) való bejelentkezéskor a következő 403-as hibaüzenet jelenik meg: **Ön nem jogosult hozzáférni a szolgáltatáshoz** Erre abban az esetben kerülhet sor, ha az Ön által megadott felhasználónév nem tagja a Lookout MTP eléréséhez konfigurált Azure Active Directory (AD) csoportnak.
+
+A Lookout MTP csak konfigurált Azure AD-csoportból engedélyezi a felhasználóknak a szolgáltatás elérését. Ha szeretné megtudni, hogy melyik csoporthoz állítottak be Lookout MTP-hozzáférést, forduljon a Lookout támogatási csapatához.
 
 * E-mail: enterprisesupport@lookout.com
 * Jelentkezzen be az [MTP-konzolon](http://aad.lookout.com) és keresse meg a **Támogatás** modult.
 * A https://enterprise.support.lookout.com/hc/en-us/requests webhelyen nyújtson be támogatási kérést.
 
-### <a name="unable-to-sign-in"></a>Ha nem tud bejelentkezni
-Előfordulhat, hogy az alábbi hibát látja, ha az Azure AD globális rendszergazdája nem fogadta el a kezdeti Lookout-telepítést.
+## <a name="unable-to-sign-in"></a>Ha nem tud bejelentkezni
+Az alábbi hibát látja, ha az Azure AD globális rendszergazdája nem fogadta el a kezdeti Lookout-telepítést.
 
 ![képernyőfelvétel, amelyen a Lookout bejelentkezési képernyője bejelentkezési hibát mutat](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
 A probléma megoldásához jelentkezzen be a https://aad.lookout.com/les?action=consent oldalon és fogadja el a telepítés indításáról szóló kérést. Ezzel kapcsolatban bővebb információt a [Lookout MTP-előfizetés beállítása](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) című témakörben talál
 
-## <a name="troubleshoot-device-status-issues"></a>Az eszköz állapotával kapcsolatos problémák elhárítása
+**Eszközállapottal kapcsolatos problémák**
 
-### <a name="device-not-showing-up-in-the-lookout-mtp-console-device-list"></a>Az eszköz nem jelenik meg a Lookout MTP-konzol eszközlistáján
+## <a name="device-missing-from-lookout-device-list"></a>Hiányzik egy eszköz a Lookout eszközlistájáról
 
 Ez az alábbi esetek valamelyikében fordulhat elő:
-* Ha az adott eszköz tulajdonosa nem tagja a **Lookout MTP-konzolon** megadott **Beléptetési csoportnak**.  A **Rendszer** modulból nyissa meg az  **Intune-összekötő** lapot, és nézze meg a **Beléptetési felügyelet** beállításait.  Ekkor egy vagy több beléptetésre konfigurált Azure AD-csoportnak kell megjelennie.  Ellenőrizze, hogy az a felhasználó, aki a hiányzó eszköz tulajdonosa, tagja-e a megadott Azure AD-csoportok valamelyikének.  Új felhasználó beléptetési csoporthoz való hozzáadását követően a beállított lekérdezési időköz elteltéig tarthat, amíg a felhasználó megjelenik a Lookout MTP-konzol **Eszközök** moduljában (az alapértelmezett érték 5 perc).
-
+* Az eszköz tulajdonosa nem tagja a **Lookout MTP-konzolon** megadott **Regisztrációs csoportnak**.  A [Lookout-konzolon](http://aad.lookout.com) lépjen a **System** (Rendszer)  > **Intune Connector** (Intune-összekötő) > **Enrollment Management** (Regisztráció kezelése) pontra.  Tekintse át a regisztrációhoz konfigurált Azure AD-csoportokat, és ellenőrizze, hogy a felhasználó tagja-e az egyik Azure AD-csoportnak.  Miután hozzáadta a felhasználót a regisztrációs csoporthoz, a beállított lekérdezési időköz elteltéig tarthat (ami alapértelmezés szerint 5 perc), amíg az eszköz megjelenik a Lookout MTP-konzol **Devices** (Eszközök) moduljában.
 * Ha az eszközt nem támogatja a Lookout MTP.  A nem támogatott eszközök a Lookout MTP-konzolon az összekötő beállításainak **Kezelt eszközök** részében jelennek meg.
 
-### <a name="device-continues-to-be-reported-as-pending"></a>Az eszközt a rendszer továbbra is **függőben lévőként** jelenti
+### <a name="device-reported-as-pending"></a>**Függőben lévő** állapotúként jelentett eszköz
 
-Ha egy eszköz **függőben lévőként** jelenik meg, az azt jelenti, hogy a végfelhasználó még nem nyitotta meg a Lookout for Work alkalmazást, és nem koppintott az **Aktiválás** gombra. Az eszközök Lookout for Work alkalmazással történő aktiválásáról bővebben a következő témakörben talál információt:
+Az eszköz **függőben lévőként** jelenik meg, ha végfelhasználó még nem nyitotta meg a Lookout for Work alkalmazást, és nem koppintott az **Aktiválás** gombra. Ha továbbiakat szeretne megtudni az eszköz Lookout for Work alkalmazással való aktiválásáról, olvassa el [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) vagy [A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios) című szakaszt
 
-[A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+## <a name="device-whos-active-but-has-no-device-id"></a>Aktív, de eszközazonosító nélküli eszköz
+Ha a Lookout MTP-konzolon egy aktív eszköz nem rendelkezik eszközazonosítóval, akkor az eszköz felhasználója nem tartozik a regisztrációs csoporthoz. Az eszköz abban az esetben kerülhet ebbe az állapotba, ha az eszköz tulajdonosát eltávolították a regisztrációs csoportból, vagy ha eltávolították a regisztrációs csoportot.
 
-### <a name="in-the-lookout-mtp-console-a-device-is-showing-as-active-but-does-not-have-a-device-id"></a>A Lookout MTP-konzolon az eszköz aktívként jelenik meg, de nem rendelkezik eszköz-azonosítóval.  
-Ez azt jelenti, hogy az eszköz tulajdonosa nem tagja a Lookout MTP-konzolon megadott beléptetési csoportnak.   Az eszköz abban az esetben kerülhet ebbe az állapotba, ha az eszköz tulajdonosát eltávolították a beléptetési csoportból vagy eltávolították az eszköz tulajdonosának beléptetési csoportját.
-
-A Lookout MTP-konzol **Rendszer** moduljából nyissa meg az  **Intune-összekötő** lapot, és nézze meg a **Beléptetés** beállításait.  Ekkor egy vagy több beléptetésre konfigurált Azure AD-csoportnak kell megjelennie.  Ellenőrizze, hogy az a felhasználó, aki az adott eszköz tulajdonosa, tagja-e a megadott Azure AD-csoportok valamelyikének.  
+A [Lookout-konzolon](http://aad.lookout.com) lépjen a **System** (Rendszer)  > **Intune Connector** (Intune-összekötő) > **Enrollment** (Regisztráció) pontra.  Tekintse át az Azure AD-csoportokat, és ellenőrizze, hogy a felhasználó tagja-e az egyik Azure AD-csoportnak.
 
 Amíg az eszköz ebben az állapotban van, a Lookout továbbra is értesíti a felhasználót az észlelt fenyegetésekről, de nem küld fenyegetés-információkat az Intune-hoz.
 
-### <a name="device-shows-disconnected-state"></a>Az eszköz leválasztott állapotúként jelenik meg
+## <a name="device-reported-as-disconnected"></a>**Leválasztott** állapotúként jelentett eszköz
 
-A leválasztott állapot annyit jelent, hogy az eszköz meghatározott ideje nem kommunikált a Lookout MTP-vel (az időtartam alapértelmezés szerint 30 nap, a minimális megengedett időtartam 7 nap). Ez annyit jelent, hogy a Vállalati portál vagy a Lookout for Work alkalmazást nem telepítették az eszközön, vagy eltávolították róla. A probléma megoldásához újra kell telepíteni ezeket az alkalmazásokat. Amikor a felhasználó megnyitja és aktiválja a Lookout for Work alkalmazást, az eszköz újraszinkronizálja magát a Lookout MTP-vel és az Intune-nal.    
+A **Leválasztott** állapot azt jelenti, hogy a beállított időközön belül, ami alapértelmezés szerint legalább 7 nap, de legfeljebb 30 nap, az eszköz nem volt szinkronizálva a Lookout MTP-vel. A Céges portál vagy a Lookout for Work alkalmazás hiányzik az eszközről. A probléma megoldásához újra kell telepíteni ezeket az alkalmazásokat. Amikor a felhasználó megnyitja és aktiválja a Lookout for Work alkalmazást, az eszköz újraszinkronizálja magát a Lookout MTP-vel és az Intune-nal.    
 
-### <a name="forcing-a-resync-on-the-device"></a>Újraszinkronizálás kikényszerítése az eszközön
+### <a name="forcing-a-device-sync"></a>Eszköz szinkronizálásának kényszerítése
 A Lookout MTP-konzol **Eszközök** moduljából a rendszergazda kiválaszthatja és törölheti az eszközt.   Amikor a felhasználó legközelebb megnyitja a Lookout for Work alkalmazást és az **Aktiválás** elemre koppint, az eszköz teljes újraszinkronizálást hajt végre.
 
-### <a name="the-owner-of-the-device-is-no-longer-using-this-device"></a>Az eszköz tulajdonosa már nem használja az eszközt
-Az eszköz adatain teljes törlést kell végrehajtani, és fel kell szólítani az új felhasználót, hogy regisztráljon.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza ki az eszközt, kattintson a jobb egérgombbal, majd válassza a **Kivonás/Teljes törlés** lehetőséget az eszköz felügyelet alól való kivonásához. Kivonása után törölheti az eszközt.
+## <a name="device-has-a-new-user"></a>Az eszköznek új felhasználója van
+Végre kell hajtani az eszköz adatainak teljes törlést, és meg kell kérni az új felhasználót, hogy regisztráljon.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza ki az eszközt, kattintson a jobb egérgombbal, majd válassza a **Kivonás/Teljes törlés** lehetőséget az eszköz felügyelet alól való kivonásához. Kivonása után törölheti az eszközt.
 
 ![képernyőfelvétel az Intune felügyeleti konzolon megjelenő kivonás/teljes törlés lehetőségről](../media/mtp/mtp-retire-device-intune-console.png)
 
-A Lookout MTP-konzol **Eszközök** moduljában is választhatja a **Törlés** lehetőséget.  
+Megnyithatja a **Devices** (Eszközök) modult a [Lookout-konzolon](http://aad.lookout.com) is, és választhatja a **Delete** (Törlés) lehetőséget.  
 
-Amennyiben az új felhasználó tagja valamelyik, a Lookout MTP-konzolon megadott beléptetési csoportnak, az eszköz megjelenik, miután az Azure AD társítja azt az új felhasználóval.
+Amennyiben az új felhasználó tagja valamelyik Lookout MTP-hez tartozó regisztrációs csoportnak, az eszköz megjelenik, miután az Azure AD társítja azt az új felhasználóval.
 
 ## <a name="compliance-remediation-workflows"></a>Megfelelőség-helyreállítási munkafolyamatok
-[A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-[El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+- [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az iOS-eszközön](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>További információ
@@ -90,6 +90,6 @@ Amennyiben az új felhasználó tagja valamelyik, a Lookout MTP-konzolon megadot
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

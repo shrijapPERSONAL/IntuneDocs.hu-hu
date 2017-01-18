@@ -1,5 +1,5 @@
 ---
-title: "Android-eszköz használata az Intune-nal | Microsoft Intune"
+title: "Android-eszköz használata az Intune-nal | Microsoft Docs"
 description: "Ez a témakör felsorolja az Intune-ban regisztrált androidos mobileszközökön a végfelhasználók által elvégezhető műveletekre mutató hivatkozásokat"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,13 +59,13 @@ Az ebben a szakaszban található információk az androidos eszközük Intune-b
 Az itt olvasható információk az androidos eszközük Intune-beli regisztrálásakor előforduló hibák elhárításában nyújtanak segítséget a felhasználóknak.
 
 - [Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Regisztrálási hibák elküldése a rendszergazdának](send-enrollment-errors-to-your-it-administrator-android.md)
-- [Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Naplók elküldése a rendszergazdának e-mailben](send-logs-to-your-it-admin-by-email-android.md)
+- [Naplók elküldése a rendszergazdának USB-kábelen keresztül](send-logs-to-your-it-admin-using-cable-android.md)
+- [Regisztrálási hibák elküldése a rendszergazdának](send-enrollment-errors-to-your-it-admin-android.md)
+- [Az eszköz nem rendelkezik az operációs rendszer minimálisan szükséges verziójával](you-need-to-update-your-android-device.md)
+- [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](your-android-version-isnt-yet-supported.md)
 - [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Az eszközhöz hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-android.md)
+- [Az eszközhöz hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-landing-android.md)
 - [A rendszer az Ismeretlen források kikapcsolását kéri](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [A rendszer az USB-hibakeresés kikapcsolását kéri](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [A rendszer a Biztonsági fenyegetések keresése az eszközön beállítás bekapcsolását kéri](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
@@ -75,6 +75,6 @@ Az itt olvasható információk az androidos eszközük Intune-beli regisztrál�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
