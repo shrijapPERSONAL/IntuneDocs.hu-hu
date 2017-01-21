@@ -86,15 +86,17 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
   2. **Mi kerül titkosításra?** Csak a rendszergazda alkalmazásvédelmi szabályzatának értelmében „cégesként” megjelölt adatok. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal). Az Intune alkalmazásburkoló által előkészített üzletági alkalmazások esetében minden alkalmazásadat „cégesnek” minősül.
 
-**Hogyan törli távolról az adatokat az Intune?** Az Intune kétféleképpen törölheti az adatokat: teljes törléssel vagy szelektív törléssel. A teljes törléssel kapcsolatos információért lásd: [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md).
+**Hogyan törli távolról az adatokat az Intune?** Az Intune három különböző módon törölhet adatokat: teljes törlés az eszközről, MDM szelektív törlés és MAM szelektív törlés. A távoli MDM törléssel kapcsolatos további információkat talál az [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) című cikkben. Az MAM szelektív törléssel kapcsolatos további információkat talál az [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](wipe-managed-company-app-data-with-microsoft-intune.md) című cikkben.
 
   1. **Mi a teljes törlés?** A [teljes törlés](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) törli **az eszközről** az összes adatot és beállítást, visszaállítva az alapértelmezett gyári beállításokat. Az eszközt a rendszer eltávolítja az Intune-ból.
   >[!NOTE]
   > Teljes törlés csak az Intune mobileszköz-kezelésben regisztrált eszközökön hajtható végre.
 
-  2. **Mi a szelektív törlés?** A szelektív törlésről lásd: [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
+  2. **Mi az MDM szelektív törlés?** A szelektív törlésről lásd: [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
 
-  3. **Milyen gyorsan megy végbe a szelektív törlés?** Ha a felhasználó a szelektív törlés elindítását követően is használja az alkalmazást, az Intune App SDK 30 percenként ellenőrzi, hogy érkezett-e az Intune MAM szolgáltatásból kérés a szelektív törlésre. Akkor is ellenőrzi a szelektív törlést, amikor a felhasználó először indítja el az alkalmazást és lép be a munkahelyi vagy iskolai fiókjába.
+  3. **Mi az MAM szelektív törlés?** A MAM szelektív törlés egyszerűen eltávolítja a vállalati alkalmazásadatokat egy alkalmazásból. A kérelem az Intune Azure-portál használatával küldhető be. A törlési kérelem beküldéséről az [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](wipe-managed-company-app-data-with-microsoft-intune.md) című cikk nyújt tájékoztatást.
+
+  4. **Milyen gyorsan megy végbe az MAM szelektív törlés?** Ha a felhasználó a szelektív törlés elindítását követően is használja az alkalmazást, az Intune App SDK 30 percenként ellenőrzi, hogy érkezett-e az Intune MAM szolgáltatásból kérés a szelektív törlésre. Akkor is ellenőrzi a szelektív törlést, amikor a felhasználó először indítja el az alkalmazást és lép be a munkahelyi vagy iskolai fiókjába.
 
 **Miért nem működnek a helyszíni szolgáltatások az Intune-nal védett alkalmazásokkal?** Az Intune alkalmazásvédelem megköveteli a felhasználói identitás konzisztenciáját az alkalmazás és az Intune App SDK között. Ez kizárólag modern hitelesítés révén garantálható. Előfordulnak olyan helyzetek, amelyekben az alkalmazások működnek a helyszíni konfigurációval, ám ezek a forgatókönyvek se nem konzisztensek, se nem garantáltak.
 
@@ -110,6 +112,6 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 **Az iOS megosztási bővítménnyel megnyithatom a munkahelyi vagy az iskolai adatokat a nem felügyelt alkalmazásokban, még akkor is, ha az adatátviteli szabályzat beállítása „csak felügyelt alkalmazások” vagy „nincs alkalmazás”. Nem jár ez adatszivárgással?** Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási bővítményt az eszköz felügyelete nélkül. Ezért az _**Intune titkosítja a „céges” adatokat, mielőtt az alkalmazáson kívül megosztaná**_. Ezt úgy ellenőrizheti, hogy megpróbálja megnyitni a „céges” fájlt a felügyelt alkalmazáson kívül. A fájlnak titkosítottnak kell lennie, így a felügyelt alkalmazáson kívül mással nem nyitható meg.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

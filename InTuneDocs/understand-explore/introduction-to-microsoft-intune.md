@@ -14,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
@@ -95,7 +95,7 @@ A legtöbb nagyvállalati mobilitási felügyeleti megoldás támogatja az alapv
 
 A szervezetek különböző mértékben alkalmazzák a „regisztráció nélküli” forgatókönyveket. Egyes szervezetek egységesen ezeket alkalmazzák. Más szervezetek a kiegészítő eszközökhöz, például a személyes táblagépekhez használják. Megint más szervezetek egyáltalán nem támogatják. Ebben az utolsó esetben is előfordul azonban „regisztráció nélküli” forgatókönyv, főleg az olyan szervezeteknél, amelyek előírják minden munkatárs számára az eszközöknek a mobileszköz-felügyeleti megoldásban történő regisztrálását. Ezek a szervezetek jellemzően az alvállalkozók, a szállítók és a meghatározott mentességgel rendelkező egyéb eszközök esetében alkalmaznak ilyen forgatókönyvet.
 
-Az Intune „regisztráció nélküli” technológiáját akár még a regisztrált eszközökhöz is használhatja. Az MDM-ben regisztrált eszközöknek például lehet a mobil operációs rendszer által biztosított „megnyitás a következővel” típusú védelmük. Ezenkívül az informatikai részleg előírhatja az alkalmazásvédelmi szabályzat használatát az EMS által felügyelt mobilalkalmazásokhoz azért, hogy szabályozza a „mentés másként” funkciót, vagy kötelezővé tegye a többtényezős hitelesítést.
+Az Intune „regisztráció nélküli” technológiáját akár még a regisztrált eszközökhöz is használhatja. Az MDM-ben regisztrált eszközöknek például lehet a mobil operációs rendszer által biztosított „megnyitás a következővel” típusú védelmük. (A megnyitás-védelem az iOS szolgáltatása, amely biztosítja, hogy egy alkalmazásból, például az Outlookból származó dokumentumot csak akkor lehessen másik alkalmazással, például Worddel megnyitni, ha mindkét alkalmazást az MDM-szolgáltató felügyeli.) Ezenkívül az informatikai részleg előírhatja az alkalmazásvédelmi szabályzat használatát az EMS által felügyelt mobilalkalmazásokhoz azért, hogy szabályozza a „mentés másként” funkciót, vagy kötelezővé tegye a többtényezős hitelesítést.
 
 Függetlenül attól, hogy a szervezet milyen helyzetben van a regisztrált és a nem regisztrált mobileszközök és -alkalmazások terén, az Intune az EMS részeként rendelkezik azokkal az eszközökkel, amelyekkel növelhető a munkatársak hatékonysága a vállalati adatok védelmének fenntartásával párhuzamosan.
 
@@ -116,6 +116,6 @@ Az alábbi listában szereplő üzleti problémák hivatkozására kattintva kap
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

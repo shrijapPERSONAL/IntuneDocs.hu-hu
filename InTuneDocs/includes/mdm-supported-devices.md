@@ -5,7 +5,7 @@
   - Mac OS X 10.9 és újabb verziók
 
 ### <a name="windows"></a>Windows
-  - Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
+  - Windows 10 (Pro, Education és Enterprise) operációs rendszerű számítógépek
   - Windows Phone 8.1 és újabb verziók
   - Windows 8.1 RT
   - Windows 8.1 operációs rendszerű számítógépek
@@ -23,6 +23,6 @@ A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX St
  
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
