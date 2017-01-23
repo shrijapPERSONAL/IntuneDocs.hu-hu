@@ -1,43 +1,43 @@
 ---
-title: "Az eszköz távoli zárolása a Vállalati portál webhelyéről | Microsoft Intune"
+title: "Az eszköz távoli zárolása a Vállalati portál webhelyéről | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 
 ---
 
+# <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
 
-# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
+Történhetnek balesetek, és néha előfordulhat, hogy eltűnnek eszközök. Ha az eszköz elveszett vagy ellopták, leginkább amiatt aggódhat, hogy bárki hozzáférhet a rajta lévő adatokhoz, akárhol is legyen az eszköz.
 
-Ha elvesztette vagy ellopták az eszközét, a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) Távoli zárolás funkciójával zárolhatja. A távoli zárolás a következő típusú eszközök esetén alkalmazható:
+[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-Platform  |Támogatás részletei  
----------|---------
-Android | Támogatott       
-iOS | Támogatott
-Windows 10 mobil verzió | Csak beállított jelszóval rendelkező telefonok esetén támogatott     
-Windows 10 asztali verzió | Nem támogatott  
-Windows Phone 8.1 | Csak beállított jelszóval rendelkező telefonok esetén támogatott
-PC (Windows 8.0 és korábbi verziók) | Nem támogatott       
-PC (Windows 8.1) | Nem támogatott
+A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [Vállalati portál webhelyén](http://portal.manage.microsoft.com). A Távoli zárolás a következő rendszereken használható:
 
-</br>
-A Távoli zárolás funkció használata az eszköz zárolásához:
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (ha az eszközön már volt beállítva jelszó)
+* Windows Phone 8.1 (ha az eszközön már volt beállítva jelszó)
+
+## <a name="to-use-remote-lock-to-lock-your-device"></a>A Távoli zárolás funkció használata az eszköz zárolásához
 
 1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) koppintson annak az eszköznek a nevére, amelyet zárolni szeretne.
 
@@ -45,25 +45,25 @@ A Távoli zárolás funkció használata az eszköz zárolásához:
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Olvassa el a zárolásról szóló figyelmeztető üzenetet, és koppintson a **Távoli zárolás** lehetőségre, így a Vállalati portál webhelye zárolja az eszközt.
+3.  Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
 
-    A **Távoli zárolás** elemre való koppintás után megjelenik a „Távoli zárolás függőben” állapot.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
+    Miután a **Távoli zárolás** lehetőségre koppintott, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
     A Távoli zárolás állapota három helyen jelenik meg:
 
     * A webhely értesítési területén.
-    * Az eszköz Részletek lapján.
-    * Az oldal Eszközeim területén, az eszköz nevét megjelenítő csempén.
+    * Az eszköz **Részletek** lapján.
+    * Az oldal **Eszközeim** területén, az eszköz nevét megjelenítő csempén.
 
-    Ha a „Sikertelen volt a távoli zárolás” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot visszavált a „Távoli zárolás függőben” állapotra.
+> [!Note]
+> Ha „A távoli zárolás nem sikerült” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot ismét „Távoli zárolás függőben” lesz. Ha az újrapróbálkozás sem sikerül, forduljon a rendszergazdához.
 
-    Ha az újbóli próbálkozás is sikertelen, forduljon a rendszergazdához. Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.
+Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

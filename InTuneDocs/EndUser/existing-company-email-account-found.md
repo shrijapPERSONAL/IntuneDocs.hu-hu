@@ -1,42 +1,44 @@
 ---
-title: "Meglévő vállalati fiók található | Microsoft Intune"
+title: "Meglévő vállalati e-mail-fiók található | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
-ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: 27bb2c0834d07225756ea9133e557a930290dcf5
 
 
 ---
 
-# <a name="existing-company-email-account-found"></a>Meglévő vállalati fiók található
+# <a name="an-existing-company-email-account-was-found"></a>Meglévő vállalati e-mail-fiók található
 
-Már van a vállalati e-mail fiókja. A vállalati e-mail-fiókjához való hozzáféréshez az alábbiakat kell tennie, így a rendszergazda megfelelően beállíthatja és kezelheti azt:
+Már rendelkezik szervezeti vagy vállalati e-mail-fiókkal, és most szeretne hozzáférni ehhez a fiókhoz a mobileszközön. A rendszergazdának szüksége van a segítségére ahhoz, hogy biztosítsa az e-mail-hozzáférése biztonságát a feladótól az eszközéig vezető úton. Lehetséges, hogy a jelenlegi e-mail-címe bevált, de ezekkel a lépésekkel nagyobb biztonságot biztosíthat az adatai számára.
 
-1.  Az eszköz **Beállítások** funkciójában törölje a vállalati e-maillel korábban létesített kapcsolatot.
+1.  Keresse meg a **Beállítások** lehetőséget az eszközön, és törölje a vállalati e-mail-címmel korábban létesített kapcsolatot.
 
-    iOS-eszközön például koppintson a **Settings** &gt; **Mail, Contacts, Calendar** (Beállítások, Levelezés, Névjegyek, Naptár) parancsra. Jelölje ki a munkahelyi e-mail-fiókját, majd kattintson a **Delete** (Törlés) gombra.
+    iOS-eszközön például koppintson a **Settings** > **Mail** > **Accounts** (Beállítások, Levelezés, Fiókok) parancsra. Jelölje ki a munkahelyi e-mail-fiókját, majd koppintson a **Delete** (Törlés) gombra.
 
-2.  Nyissa meg eszközén a Vállalati portál alkalmazást, és koppintson a **Megfelelőség ellenőrzése** elemre.
+2.  Lépjen ki a **Beállításokból**, majd nyissa meg eszközén a Vállalati portál alkalmazást, és koppintson a **Megfelelőség ellenőrzése** elemre.
 
 3.  Ekkor egy keveset várnia kell, amíg a rendszer automatikusan alkalmazza az új e-mail-beállításokat.
 
-Ha nem jelennek meg rövid időn belül az új e-mail-beállítások, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

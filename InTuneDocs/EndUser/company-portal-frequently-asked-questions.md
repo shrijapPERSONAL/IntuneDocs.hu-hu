@@ -1,22 +1,24 @@
 ---
-title: "Mi a Vállalati portál? | Microsoft Intune"
+title: "Mi a Vállalati portál? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 # <a name="about-the-company-portal"></a>A Vállalati portál ismertetése
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Mire szolgál a Vállalati portál, és milyen feladatokat lehet elvégezni a segítségével?
-A Microsoft Intune Vállalati portállal hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
+A Vállalati portálon hozzáférhet cége vagy iskolája adataihoz és alkalmazásaihoz. A Vállalati portált kétféleképpen szerezheti be:
 
 - Telepítheti az eszközére a Vállalati portál alkalmazást. A Vállalati portál általában az eszköz alkalmazásáruházából telepíthető, de a rendszergazdája is telepítheti Önnek az alkalmazást.
 - Megnyithatja a rendszergazdája által beállított [Vállalati portál webhelyét](http://portal.manage.microsoft.com).
@@ -41,10 +43,10 @@ A Vállalati portál alkalmazás és webhely között van néhány kisebb eltér
 A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
 
 > [!div class="op_single_selector"]
-- [Android--](using-your-android-device-with-intune.md)
-- [iOS és macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Munkahelyi portál webhely](using-the-intune-company-portal-website.md)
+- [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
+- [iOS és macOS rendszerű eszközök használata az Intune-nal](using-your-ios-or-macOS-device-with-intune.md)
+- [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
+- [A Munkahelyi portál webhely használata](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
 Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően).  Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi az IT rendszergazdának az eszköz felügyeletét.
@@ -58,9 +60,9 @@ Ha szeretné megtudni, hogy rendszergazdája mit tekinthet meg az Ön eszközén
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
 
--   iPhone és iPad készülékeket, illetve macOS-eszközöket
+-   iOS-es (iPhone, iPad) és macOS-es (iMac, MacBook) Apple-eszközök használata
 
--   Android rendszerű mobileszközök
+-   Androidos eszközök
 
 -   Windows-eszközök
     -   Windows 10 mobil verzió
@@ -96,6 +98,6 @@ Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával. Az elé
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

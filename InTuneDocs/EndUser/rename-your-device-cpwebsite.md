@@ -1,30 +1,31 @@
 ---
-title: "Az eszköz átnevezése a Vállalati portál webhelyről | Microsoft Intune"
+title: "Az eszköz átnevezése a Vállalati portál webhelyről | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
 
 
 ---
 
-
 # <a name="rename-your-device-from-the-company-portal-website"></a>Az eszköz átnevezése a Vállalati portál webhelyről
 
-Ha úgy dönt, hogy átnevezi az eszközét, akkor azt távolról, a [Vállalati portál webhelyen](http://portal.manage.microsoft.com) is megteheti. A Vállalati portál webhelye egy olyan weboldal, amelyet az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a legtöbb, a Vállalati portál alkalmazásban elvégezhető feladat végrehajtására is használhat.
+Dönthet úgy, hogy átnevezi az eszközt, hogy azt könnyebb legyen azonosítani. Ezt a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) teheti meg. A Vállalati portál webhelye egy weblap, amelyen az informatikai részleg általi felügyeletre regisztrált számítógépeket és eszközöket kezelheti.
 
 Az eszköz átnevezése:
 
@@ -34,12 +35,12 @@ Az eszköz átnevezése:
 
     ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Írja be az eszköz új nevét a régi név helyére, majd koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.
+3.  Írja be az új nevet az eszköz nevének helyére, majd koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

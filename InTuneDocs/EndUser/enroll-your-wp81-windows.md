@@ -1,21 +1,23 @@
 ---
-title: "Windows Phone 8.1-eszköz regisztrálása az Intune-ban | Microsoft Intune"
+title: "Windows Phone 8.1-eszköz regisztrálása az Intune-ban | Microsoft Docs"
 description: "Egy Windows Phone 8.1-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: fe6a3e323828b28b303f7f8ca012fa1cc00db507
 
 
 ---
@@ -87,6 +89,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
