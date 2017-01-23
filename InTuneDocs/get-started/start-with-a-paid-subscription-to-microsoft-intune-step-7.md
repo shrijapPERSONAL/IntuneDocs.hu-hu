@@ -1,11 +1,11 @@
 ---
-title: "A vállalati portál testreszabása | Microsoft Intune"
+title: "A vállalati portál testreszabása | Microsoft Docs"
 description: "Az Intune Munkahelyi portál a gyakori feladatok elvégzését teszi lehetővé a felhasználók számára (például az eszközök regisztrálását, az alkalmazások telepítését és az informatikai osztály adatainak megkeresését)."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>A vállalati portál testreszabása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A felhasználók az Intune Vállalati portálon érhetik el a vállalati adatokat, és olyan gyakori feladatokat hajthatnak végre, mint például az eszközök regisztrálása, az alkalmazások telepítése és az informatikai támogatási információk megtekintése.
 
 Az Intune Munkahelyi portál a felhasználók számára hozzáférést biztosít a vállalati adatokhoz és alkalmazásokhoz. A Vállalati portál két formában érhető el:
 
--   **A Munkahelyi portál alkalmazás**: Az Intune által felügyelt eszközökön elérhető alkalmazás. További információk a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszerekhez.
+-   **A Munkahelyi portál alkalmazás**: Az Intune által felügyelt eszközökön elérhető alkalmazás. További információk a Vállalati portál alkalmazásokról [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) és [Windows](/Intune/EndUser/using-your-windows-device-with-intune) rendszerekhez.
 
 
 - **A Munkahelyi portál webhelye**: Webhely, amellyel többségükben elvégezhetők azok a műveletek, amelyek a Munkahelyi portál alkalmazásban. Az Intune Munkahelyi portál URL-címe: [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). A webhellyel kapcsolatos további információk [Az Intune vállalati portál webhelyének használata](/Intune/EndUser/using-the-intune-company-portal-website) című témakörben olvashatók.
@@ -42,11 +45,6 @@ Néhány művelet, amelyeket a felhasználók elvégezhetnek a Vállalati portá
 -   Az eszköz távoli zárolása
 -   A szervezet által telepített szoftverek letöltése
 -   Támogatás kérése az informatikai részlegtől
-
-> [!NOTE]
-> A Munkahelyi portál alkalmazás nem érhető el minden országban.
-> __iOS__: az iOS rendszerre készült Munkahelyi portál alkalmazást az Apple iOS App Store áruházban [elérhető összes régióban](https://go.microsoft.com/fwlink/?linkid=831284) megtalálható.
-> __Android__: A Munkahelyi portál alkalmazás androidos változata Kínában jelenleg nem érhető el. Ezekben az országokban alternatív megoldásként [közvetlenül is telepíthető a Munkahelyi portál alkalmazás androidos verziója](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>A Munkahelyi portál beállításainak testreszabása
 A vállalati portál testreszabásával ismerős és könnyen használható környezetet teremthet felhasználóinak. Jelentkezzen be a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) bérlői vagy szolgáltatás-rendszergazdaként, válassza a **Felügyelet** &gt; **Munkahelyi portál** lehetőséget, és konfigurálja a Munkahelyi portál beállításait.
@@ -91,6 +89,6 @@ A módosítások mentése után a felügyeleti konzol **Vállalati portál** lap
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

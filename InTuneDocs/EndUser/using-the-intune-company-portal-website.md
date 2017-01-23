@@ -1,5 +1,5 @@
 ---
-title: "Az Intune Vállalati portál használata | Microsoft Intune"
+title: "Az Intune Céges portál használata | Microsoft Docs"
 description: "A cikk ismerteti a Munkahelyi portál webhelyet, valamint hivatkozásokat biztosít a webhelyen keresztül elvégezhető feladatok lépéseivel kapcsolatban"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -46,11 +48,11 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 A **Munkahelyi portál webhelyén** tulajdonképpen ugyanazokat a feladatokat végezheti el, mint a saját eszközére telepített **Munkahelyi portál alkalmazásban**. A következő oldalakon minden olyan feladat hivatkozása megtalálható, amelyeket a végfelhasználók az eszközeiken elvégezhetnek.
 
 - [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
-- [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-ios-or-macOS-device-with-intune.md)
 - [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
