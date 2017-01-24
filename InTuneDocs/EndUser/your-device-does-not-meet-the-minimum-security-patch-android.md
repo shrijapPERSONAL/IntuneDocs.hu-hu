@@ -1,46 +1,13 @@
 ---
-title: "Az eszköz nem felel meg a minimális biztonsági javítási szintnek | Microsoft Intune"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 09/25/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ROBOTS: NOINDEX,NOFOLLOW
+redirect_url: https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-os-security-patch-android
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
-
+ms.sourcegitcommit: 5311b186af1e17994eaf67c53541ccac19482a92
+ms.openlocfilehash: 4568cc1525da20930ada172310ed43f319825fb6
 
 ---
 
-# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>Az eszköz nem felel meg a minimális biztonsági javítási szintnek
-
-Ha megjelenik „A minimális Android biztonsági javítási szint nincs konfigurálva” üzenet, akkor telepítenie kell a minimális biztonsági javítást, vagy annak egy későbbi verzióját. A rendszergazdának fontos, hogy ez telepítve legyen az Android-eszközökön a vállalati adatok védelme érdekében.
-
-A jelenlegi biztonsági javítási szint helye eltérő lehet attól függően, hogy milyen típusú Android-eszközt használ. Ellenőrizze, hogy Samsung Knox-eszközzel vagy más típusú Android-eszközzel rendelkezik-e. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox eszközzel rendelkezik-e. Ha nem jelenik meg a „Knox” szó, akkor nem Samsung Knox-eszközzel rendelkezik.
-
-**A szoftververzió megállapítása:**
-
-- Nem Samsung Knox-eszközön: Nyissa meg a **Beállítások** > **A telefonról** > **Szoftver adatok** > **Egyebek** menüt, majd az **Android biztonsági javítási szintje** lehetőséget. A menük nevei és helyei eltérhetnek a különböző Android-eszközökön.
-
-- Samsung Knox-eszközön: Koppintson a **Beállítások** > **A telefonról** > **A biztonsági szoftver verziója** elemre.
-
-**A kötelező biztonsági javítás telepítése:**
-
-- Nem Samsung Knox-eszközön: Koppintson a **Beállítások** > **A telefonról** > **Szoftverfrissítés** lehetőségre.
-
-- Samsung Knox-eszközön: Koppintson a **Beállítások** > **Rendszerfrissítések** > **Rendszerfrissítés keresése** lehetőségre.
-
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
