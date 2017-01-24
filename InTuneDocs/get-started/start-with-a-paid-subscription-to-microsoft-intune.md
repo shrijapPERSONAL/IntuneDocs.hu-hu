@@ -1,5 +1,5 @@
 ---
-title: "Ismerkedés | Microsoft Intune"
+title: "Ismerkedés | Microsoft Docs"
 description: "Az Intune-előfizetés használatának megkezdéséhez szükséges követelmények és előfeltételek"
 keywords: 
 author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Az Intune bemutatása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez az útmutató azt ismerteti, hogy miként veheti használatba a Microsoft Intune tényleges előfizetését. Az alábbi lépések segítségével felügyelheti a mobileszközöket és a windowsos gépeket, valamint a munkahelyén használt alkalmazásokat. A lépéseket követheti sorrendben, vagy kihagyhatja azokat, amelyek nem érvényesek a környezetére vagy nem kapcsolódnak az üzleti igényeihez. Ha kipróbálni szeretné az Intune-t, olvassa el az [Útmutató az Intune próbaverziójához](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) című cikket.  
 
 Ha jelenleg a Microsoft System Center Configuration Managerrel felügyeli a számítógépeket és a kiszolgálókat, [kiterjesztheti a Configuration Manager hatáskörét, hogy a mobileszközöket is felügyelje](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
@@ -50,6 +53,6 @@ Ha jelenleg a Microsoft System Center Configuration Managerrel felügyeli a szá
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazások hozzáadása beléptetett eszközökhöz | Microsoft Intune"
+title: "Alkalmazások hozzáadása beléptetett eszközökhöz | Microsoft Docs"
 description: "Az alkalmazást a telepítése előtt hozzá kell adnia az Intune-hoz. Ezt követően érhető el az Intune-konzolon, ahol telepítheti és kezelheti."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Alkalmazások hozzáadása beléptetett eszközökhöz az Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Mielőtt központilag telepíthetne vagy kezelhetne egy alkalmazást, hozzá kell adnia azt a Microsoft Intune-hoz. Ez a témakör bemutatja, hogyan vehet fel alkalmazásokat a beléptetett eszközökhöz.
 
@@ -57,6 +59,9 @@ Az Intune Software Publisherrel konfigurálhatja az alkalmazás tulajdonságait,
         Ha például Microsoft Word alkalmazást kívánja az iTunes áruházból eszközökre telepíteni, az oldal így jelenne meg:
 
         ![Intune Software Publisher](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> Amikor egy áruházból ad hozzá és telepít egy alkalmazást, a végfelhasználóknak rendelkezniük kell egy fiókkal az adott áruházban, hogy telepíteni tudják az alkalmazást.
 
 3.  A **Szoftver leírása** lapon konfigurálja a következő beállításokat:
 
@@ -100,6 +105,6 @@ Ha létrehozta az alkalmazást, a következő lépés a telepítés. További in
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

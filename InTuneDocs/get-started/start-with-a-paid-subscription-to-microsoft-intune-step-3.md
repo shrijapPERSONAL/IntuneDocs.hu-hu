@@ -1,6 +1,6 @@
 ---
-title: "Felhasználók hozzáadása és engedélyek megadása | Microsoft Intune"
-description: "A helyszíni felhasználók szinkronizálása az Azure AD-vel és rendszergazdai jogosultság megadása az Intune-előfizetésnek"
+title: "Felhasználók hozzáadása és engedélyek megadása | Microsoft Docs"
+description: "A helyszíni felhasználók szinkronizálása az Azure AD-vel és rendszergazdai jogosultság megadása az Intune-előfizetéshez"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A rendszergazdák jogosultak közvetlenül felvenni az új felhasználókat, vagy szinkronizálni a felhasználókat a helyszíni Active Directoryból. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. A felhasználóknak további engedélyeket is biztosíthat, például a következőket: *bérlői rendszergazda*, *szolgáltatásadminisztrátor* vagy *készülékregisztráció-kezelő*.
 
@@ -101,6 +103,6 @@ A készülékregisztráció-kezelők normál felhasználói fiókok, amelyeknek 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

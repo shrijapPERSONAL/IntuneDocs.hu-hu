@@ -1,6 +1,6 @@
 ---
-title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Intune"
-description: "A felhasználók és csoportok létrehozása az Intune-előfizetéséhez"
+title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Docs"
+description: "A felhasználók és csoportok létrehozása az Intune-előfizetéshez"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas kezelését teszik lehetővé. Különböző, a szervezet igényeinek megfelelő csoportokat állíthat be (például földrajzi hely, részleg vagy hardverjellemzők alapján), melyekkel számos felügyeleti feladatot elvégezhet, a házirendek felhasználók csoportjai számára történő telepítésétől az alkalmazások eszközök csoportjaira való telepítéséig.
 
 ## <a name="group-management-moving-to-azure-ad"></a>A csoportfelügyelet áthelyezése az Azure AD-be
@@ -84,6 +87,6 @@ Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

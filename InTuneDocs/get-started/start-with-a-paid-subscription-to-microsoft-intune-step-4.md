@@ -1,6 +1,6 @@
 ---
-title: "Intune-licencek kezelése | Microsoft Intune"
-description: "Licencek és eszközök hozzárendelése az Intune-előfizetéshez"
+title: "Intune-licencek kezelése | Microsoft Docs"
+description: "Az Intune-előfizetés licenceinek hozzárendelése a felhasználókhoz"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f0f9d60a27afa580aaba8a3c24fff6325ae53f08
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Intune licencek kezelése
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, egy, az Intune-előfizetéséhez tartozó licencet kell hozzárendelnie minden felhasználóhoz az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
 Előfordulhat, hogy a Microsoft Enterprise Mobility + Security (EMS) megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető. További információ: [Intune-licencek kezelése a PowerShell használatával](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
@@ -94,6 +97,6 @@ Ellenőrizze a következővel:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

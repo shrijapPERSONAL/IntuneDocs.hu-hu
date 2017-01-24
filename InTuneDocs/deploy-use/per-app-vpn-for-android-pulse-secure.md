@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazásonkénti VPN Android-eszközökhöz a Pulse Secure használatával | Microsoft Intune"
+title: "Alkalmazásonkénti VPN Android-eszközökhöz a Pulse Secure használatával | Microsoft Docs"
 description: "Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune által felügyelt Android 5.0-s és újabb rendszerű eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először hozzon létre egy olyan VPN-profit, amely a Pulse Secure vagy a Citrix kapcsolattípust használja. Ezután hozzon létre egy olyan egyéni szabályzatot, amely a VPN-profilt meghatározott alkalmazásokkal társítja. 
 
@@ -28,7 +30,7 @@ Miután érvénybe lépteti a szabályzatot az Android rendszerű eszközre vagy
 
 > [!NOTE]
 >
-> Ez a profil csak a Pulse Secure kapcsolattípust támogatja.
+> Ez a profil csak a Pulse Secure és a Citrix kapcsolattípust támogatja.
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>1. lépés: VPN-profil létrehozása
@@ -78,6 +80,6 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

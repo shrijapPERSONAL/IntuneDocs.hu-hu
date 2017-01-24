@@ -7,21 +7,20 @@
 ### [Egyéb beállítások és kiegészítő funkciók](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Átállás a fizetős verzióra](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Gyakori helyzetek](understand-explore/common-ways-to-use-intune.md)
-## [Szószedet](understand-explore/intune-glossary.md)
+
 
 # [Első lépések](get-started/get-started.md)
-## [Bevezető](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Az Intune telepítése](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Előfeltételek](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [Támogatott eszközök és böngészők](get-started/supported-mobile-devices-and-computers.md)
-#### [Hálózatisávszélesség-felhasználás](get-started/network-bandwidth-use.md)
+#### [Hálózati forgalom](get-started/network-bandwidth-use.md)
 ### [Bejelentkezés az Intune-ba](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Tartománynév konfigurálása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Tartományok beállítása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Felhasználók hozzáadása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Intune-licencek kezelése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Licencek kezelése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Felhasználók és eszközök rendszerezése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Szabályzatok érvénybe léptetése és alkalmazások telepítése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [A Munkahelyi portál testreszabása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobileszközök regisztrálása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Eszközök regisztrálása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfigurálás utáni feladatok](get-started/post-configuration-tasks.md)
 ## [Áttérés az Intune-ra](get-started/migrate-to-intune.md)
 ## További lépések
@@ -30,14 +29,23 @@
 ### [Mobilalkalmazások közzététele a felhasználók számára](get-started/publish-mobile-apps-to-users.md)
 ### [A mobileszközök e-mail-konfigurációjának leegyszerűsítése](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Windows rendszerű számítógépek védelme a kártevők ellen](get-started/protect-pcs-against-malware-threats.md)
-## [Az Intune bevezetésének fázisai](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [A projekt hatóköre](get-started/project-scope.md)
-### [A koncepció igazolása](get-started/proof-of-concept.md)
-### [Próbaüzem](get-started/pilot.md)
-### [Vállalati bevezetés](get-started/enterprise-rollout.md)
-### [Üzemeltetés és karbantartás](get-started/operations-and-maintenance.md)
+
+# [Tervezés és kialakítás](plan-design/introduction.md)
+## [1. szakasz: Telepítési célok, célkitűzések és kihívások meghatározása](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [2. szakasz: Tipikus használatieset-forgatókönyvek](plan-design/section-2-identify-use-case-scenarios.md)
+## [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](plan-design/section-3-determine-use-case-requirements.md)
+## [4. szakasz: Bevezetési terv kidolgozása](plan-design/section-4-develop-a-rollout-plan.md)
+## [5. szakasz: Kommunikációs terv kidolgozása](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [6. szakasz: Támogatási terv kidolgozása](plan-design/section-6-develop-a-support-plan.md)
+## [7. szakasz: Intune-terv létrehozása](plan-design/section-7-create-an-intune-design.md)
+## [8. szakasz: Intune-implementálás](plan-design/section-8-onboarding-process.md)
+## [9. szakasz: Tesztelés és ellenőrzés](plan-design/section-9-test-and-validation.md)
+## [További háttéranyagok](plan-design/additional-resources.md)
 
 # [Újdonságok](whats-new/whats-new-in-microsoft-intune.md)
+## [Újdonságok](whats-new/whats-new-in-microsoft-intune.md)
+## [Az Azure előzetes verziójának újdonságai](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [Újdonságok – Archívum](whats-new/whats-new-archive.md)
 
 # Üzembe helyezés és használat
 ## [Az eszközök és alkalmazások életciklusának áttekintése](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -135,20 +143,20 @@
 #### [Windows és Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Eszközmegfelelőségi szabályzat telepítése](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Hozzáférés korlátozása eszközmegfelelőség alapján](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Hozzáférés védelme eszközmegfelelőség alapján](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Az Exchange Online és az új dedikált Exchange Online](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [A helyszíni Exchange és régi dedikált Exchange Online](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Vállalati online verzió](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [E-mail hozzáférés korlátozása: példák](deploy-use/restrict-email-access-example-scenarios.md)
+#### [E-mail-hozzáférés védelme: példák](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Office 365-szolgáltatásokhoz való hozzáférés engedélyezése kizárólag a szabályzattal felügyelt alkalmazásoknak](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [iOS-alkalmazások MAM-szabályzatokkal](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL nélküli alkalmazások blokkolása](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Hálózati hozzáférés korlátozása (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Hozzáférés korlátozása eszközök, hálózat és alkalmazáskockázat alapján](deploy-use/restrict-access-based-on-device-network-app-risk.md)
+### [Hálózati hozzáférés védelme (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján](deploy-use/restrict-access-based-on-device-network-app-risk.md)
 #### [A Lookout veszélyforrások elleni védelem konfigurálása](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 #### [A Lookout engedélyezése az Intune-ban](deploy-use/enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work-alkalmazások telepítése](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
@@ -172,6 +180,7 @@
 #### [Üzletviteli (LOB) alkalmazások a nem az Intune által felügyelt eszközökön](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [SDK használata alkalmazás írásakor](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [Mobilalkalmazás-kezelési és alkalmazásvédelmi gyakori kérdések](deploy-use/mam-faq.md)
 
 ## Alkalmazások és adatok kivonása
 ### [Teljes vagy szelektív törlés alkalmazása](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -208,7 +217,9 @@
 
 ## [A Lookout-integráció hibaelhárítása](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Szószedet](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO2-->
 
 

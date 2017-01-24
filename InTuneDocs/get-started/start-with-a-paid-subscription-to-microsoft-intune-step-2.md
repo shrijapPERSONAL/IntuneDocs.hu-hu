@@ -1,6 +1,6 @@
 ---
-title: "Egyéni tartománynév beállítása | Microsoft Intune"
-description: "Egyéni tartománynév felvétele az Intune-előfizetésbe"
+title: "Egyéni tartománynév beállítása | Microsoft Docs"
+description: "Egyéni tartománynév felvétele az Intune-előfizetéshez"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 26b019b2b4c079daa89d15c783be0abf2b61dfee
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 
 ---
 
 
 # <a name="configure-a-custom-domain-name"></a>Állítson be egy egyéni tartománynevet
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 Amikor egy szervezet előfizet a Microsoft egy felhőszolgáltatására, például az Intune-ra, egy, a következőhöz hasonló, az Azure Active Directoryban (AD) tárolt kezdeti tartománynevet kap: **tartomanynev.onmicrosoft.com**. Ebben a példában a **tartomanynev** a regisztrációkor választott tartománynév, az **onmicrosoft.com** pedig az előfizetéshez hozzáadott fiókokhoz rendelt utótag. Ha a szervezete egyéni tartománnyal rendelkezik, saját Intune-példányát beállíthatja arra, hogy ezt a tartományt használja az előfizetéskor megadott tartománynév helyett.
 
@@ -59,6 +62,6 @@ Tudjon meg többet [a kezdeti onmicrosoft.com tartománnyal kapcsolatban (Office
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
