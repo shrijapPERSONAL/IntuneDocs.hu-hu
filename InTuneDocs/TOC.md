@@ -43,7 +43,7 @@
 ## [További háttéranyagok](plan-design/additional-resources.md)
 
 # [Újdonságok](whats-new/whats-new-in-microsoft-intune.md)
-## [Újdonságok](whats-new/whats-new-in-microsoft-intune.md)
+## [Az Intune alkalmazásfelhasználói felületének újdonságai](whats-new/whats-new-in-intune-app-ui.md)
 ## [Az Azure előzetes verziójának újdonságai](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Újdonságok – Archívum](whats-new/whats-new-archive.md)
 
@@ -73,6 +73,7 @@
 #### [Számítógépügyfél telepítése](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Számítógépek általános felügyeleti feladatai](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Számítógépek szabályzatütközéseinek feloldása](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Az Android for Work kezelése](deploy-use/android-for-work.md)
 
 ## Eszközök konfigurálása
 ### [Az eszközök beállításainak és funkcióinak kezelése szabályzatok használatával](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -98,6 +99,7 @@
 #### [VPN-kapcsolatok az Intune-ban](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [E-mail-profilok az Intune-ban](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Csoportok használata felhasználók és eszközök kezeléséhez](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Csoportok áttelepítése Azure-ba](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Eszközök hozzárendelése csoportokhoz](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [A regisztrált eszközök áttekintése leltár használatával](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -151,16 +153,16 @@
 #### [Skype Vállalati online verzió](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mail-hozzáférés védelme: példák](deploy-use/restrict-email-access-example-scenarios.md)
-### [Office 365-szolgáltatásokhoz való hozzáférés engedélyezése kizárólag a szabályzattal felügyelt alkalmazásoknak](deploy-use/allow-policy-managed-apps-access-to-o365.md)
+### [Office&365;-szolgáltatásokhoz való hozzáférés engedélyezése kizárólag a szabályzattal felügyelt alkalmazásoknak](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [iOS-alkalmazások MAM-szabályzatokkal](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL nélküli alkalmazások blokkolása](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Hálózati hozzáférés védelme (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [A Lookout veszélyforrások elleni védelem konfigurálása](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [A Lookout engedélyezése az Intune-ban](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Lookout for Work-alkalmazások telepítése](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján](deploy-use/device-threat-protection.md)
+#### [A Lookout veszélyforrások elleni védelem konfigurálása](deploy-use/device-threat-protection-subscription-setup.md)
+#### [A Lookout engedélyezése az Intune-ban](deploy-use/device-threat-protection-enable.md)
+#### [Lookout for Work-alkalmazások telepítése](deploy-use/device-threat-protection-apps.md)
+#### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](deploy-use/device-threat-protection-policy.md)
 
 ### [Alkalmazásadatok védelme MAM használatával](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure Portal a mobilalkalmazás-felügyeleti szabályzatok kezeléséhez](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -220,6 +222,6 @@
 # [Szószedet](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Hogyan kérhet támogatást | Microsoft Intune"
+title: "Hogyan kérhet támogatást | Microsoft Docs"
 description: "A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez."
 keywords: 
 author: staciebarker
@@ -14,17 +14,35 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Hogyan kérhet rendszergazdai támogatást az Intune-hoz
+# <a name="how-admins-get-support-for-microsoft-intune"></a>Hogyan kérhetnek a rendszergazdák Microsoft Intune-támogatást?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune-hoz a Microsoft globális műszaki, értékesítés előtti, számlázási és előfizetési támogatást nyújt. A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez. Az online műszaki támogatás angolul és japánul érhető el. Telefonos támogatás és online számlázási támogatás más nyelveken is elérhető.
 
 Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier támogatással rendelkező ügyfeleknél eljárási kérdés esetén (például hogyan kell konfigurálni egy Intune funkciót) költségek lépnek fel.
+
+## <a name="find-help-without-opening-a-support-ticket"></a>Segítség keresése támogatási jegy megnyitása nélkül
+
+Mielőtt támogatási jegyet hozna létre, keressen válaszokat a következő helyeken:
+
+### <a name="microsoft-intune-technet-forums"></a>A Microsoft Intune TechNet fórumai
+
+Tegyen fel kérdést a Microsoft technikai szakembereinek, vagy kezdeményezzen velük beszélgetést! [A Microsoft Intune TechNet fórumán](https://social.technet.microsoft.com/Forums/home) válaszokat és összefüggéseket kereshet.
+
+    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>A Microsoft Intune UserVoice termék-visszajelzési webhelye
+
+Visszajelzést küldene a Microsoftnak arról, hogy miként lehetne még jobbá tenni az Intune-t? Tudassa velünk ötleteit a Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) visszajelzési webhelyen. Másoknak a UserVoice-on felvetett ötleteire is szavazhat. 
+
+    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## <a name="create-an-online-service-ticket"></a>Online szolgáltatásjegy létrehozása
 
@@ -114,6 +132,6 @@ Ha már vásárolt a Microsofttól licenceket a mennyiségi licencprogram keret�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fdf4086ccf4b4f256596b7d0f7192b70a4efd2a
-ms.openlocfilehash: a2f3eab11f208c0260dc4dbc245801416dc36633
+ms.sourcegitcommit: 3ab53e40f4b7ea67733127f445005ecb77a404f7
+ms.openlocfilehash: 37031eed6efa48ff52ec37a942fa77af414f78fe
 
 
 ---
@@ -39,8 +39,7 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 ### <a name="android-711-support---694397--"></a>Android 7.1.1-támogatás <!--694397-->
 Az Intune mostantól teljes mértékben támogatja és képes felügyelni az Android 7.1.1-es verzióját.
 
-### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>A következő probléma elhárítása: Az iOS-eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük
-
+### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>A következő probléma elhárítása: Az iOS-eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük <!--unknown-->
 Ha a felhasználói eszközök elveszítik a kapcsolatot az Intune-nal, új hibaelhárítási lépések átadásával segítheti a felhasználókat a vállalati erőforrásokhoz való hozzáférés visszaszerzésében. Lásd: [Az eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## <a name="notices"></a>Értesítések
@@ -55,6 +54,9 @@ Links inside of the Company Portal app for iOS, including those to documentation
 
 ### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Jobb MAM-támogatás a szelektív törléshez <!--581242-->
 A végfelhasználók részletes útmutatást kapnak, amely alapján visszaszerezhetik hozzáférésüket az „Offline időszak az alkalmazásadatok törlése előtt” szabályzat által automatikusan törölt munkahelyi vagy iskolai adataikhoz.<!--, or the removal of the Intune Company Portal on Android.-->
+
+### <a name="modernizing-the-company-portal-website---753980--"></a>A Céges portál webhely modernizálása <!--753980-->
+A Céges portál webhely februártól kezdve támogatni fogja a felügyelt eszközökkel nem rendelkező felhasználóknak szánt alkalmazásokat. A webhely egy új kontrasztos színsémát, dinamikus ábrákat és egy, a segélyszolgálat kapcsolattartási adatait és a meglévő felügyelt eszközökre vonatkozó adatokat tartalmazó „hamburger” menüt ![Céges portál webhely „hamburger” menüje](../media/CP_hamburger_menu.png) fog használni, igazodva más Microsoft-termékekhez és szolgáltatásokhoz. A kezdőlapot át fogjuk rendezni, felhívva a figyelmet a felhasználók számára elérhető alkalmazásokra a kiemelt és a legutóbb frissített alkalmazásokat mutató körhintanézetekkel. A korábbi és az új kinézetet mutató képernyőképeket [A Céges portál felhasználói felületének újdonságai lapon](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017) találja.
 
 ### <a name="new-documentation-for-app-protection-policies---583398--"></a>Új dokumentáció az alkalmazásvédelmi szabályzatokhoz <!--583398-->
 Frissítettük a dokumentációnkat azon rendszergazdákra és alkalmazásfejlesztőkre gondolva, akik az Intune App Wrapping Tool eszközzel vagy az Intune App SDK-val szeretnék iOS-es és androidos alkalmazásaikban elérhetővé tenni az alkalmazásvédelmi szabályzatokat (más néven MAM-szabályzatokat).
@@ -90,10 +92,11 @@ Az Intune Azure-beli előzetes verziójának újdonságait [Ide kattintva](https
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A felhőplatform ütemterve](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Az Azure előzetes verziójának újdonságai](https://docs.microsoft.com/intune-azure/introduction/whats-new)
+* [A Céges portál felhasználói felületének újdonságai](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [Újdonságok – Archívum](whats-new-archive.md)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
