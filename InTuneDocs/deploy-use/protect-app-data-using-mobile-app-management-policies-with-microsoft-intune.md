@@ -1,9 +1,9 @@
 ---
-title: "Alkalmazásadatok védelme MAM-szabályzatokkal | Microsoft Intune"
+title: "Alkalmazásadatok védelme MAM-szabályzatokkal | Microsoft Docs"
 description: "Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-kezelési szabályzatok a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 40298ae2de5f3bc8090e19882e039c5ec6471820
+ms.openlocfilehash: 3d3c3e0b5fa68f838b8cf1d72346d7abb140073a
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal a Microsoft Intune segítségével
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Az alkalmazásadatok védelme
 Az alkalmazottak mobileszközöket használnak a személyes és munkahelyi feladatokhoz. A produktív munkavégzést elősegítő környezet megteremtése mellett a véletlen vagy szándékos adatveszteség megelőzése is fontos szempont egy vállalatban.  Továbbá fontos szempont az is, hogy azon vállalati adatok védelmét is tudja biztosítani, melyekhez az alkalmazottak nem felügyelt eszközök használatával férnek hozzá.
@@ -58,7 +60,10 @@ A MAM-szabályzatok jelenleg a következő rendszereken támogatottak:
 -   iOS 8.1-es vagy újabb verzió
 -   Android 4 vagy újabb verzió
 
-A Windows-eszközök jelenleg nem támogatottak.
+>[!NOTE]
+>A Windows-eszközök az MAM-ben regisztrációs forgatókönyv hiányában nem támogatottak. A Windows 10-eszközöket azonban >regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem >használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>A MAM-szabályzatok és az alkalmazásadatok védelme
 
 ###  <a name="apps-without-mam-policies"></a>MAM-szabályzatok nélküli alkalmazások
@@ -130,6 +135,6 @@ A többszörös identitásos hozzáférést minden Office-mobilalkalmazás támo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

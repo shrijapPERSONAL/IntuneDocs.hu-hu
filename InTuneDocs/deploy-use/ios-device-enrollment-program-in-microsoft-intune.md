@@ -1,11 +1,11 @@
 ---
-title: "Apple DEP-kezelés iOS-eszközökön | Microsoft Intune"
+title: "Apple DEP-felügyelet iOS-eszközökön | Microsoft Docs"
 description: "Olyan regisztrációs profil telepítése, amely az iOS készülékregisztrációs program (DEP) keretében vásárolt Apple-eszközök felügyelet céljából történő vezeték nélküli regisztrálására szolgál."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 05b714e1aef180a65b7b203d5a04c0eeaf288257
 
 
 ---
 
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása
-A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes vezeték nélkül regisztrálni a készülékregisztrációs programon (DEP) keresztül vásárolt iOS-eszközöket. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz. A DEP programon keresztül regisztrált eszközök regisztrációját a felhasználók nem törölhetik.
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes vezeték nélkül regisztrálni a készülékregisztrációs programon (DEP) keresztül vásárolt iOS-eszközöket. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Apple DEP-kezelés iOS-eszközökön a Microsoft Intune-nal
 Ahhoz, hogy a vállalat által birtokolt eszközöket az Apple készülékregisztrációs programjával (DEP) lehessen kezelni, a szervezetnek csatlakoznia kell az Apple DEP-hez, és a programon keresztül kell beszereznie az eszközöket. A folyamat részletei a következő webhelyen érhetők el:  [https://deploy.apple.com](https://deploy.apple.com). A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
@@ -80,9 +83,9 @@ A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó 
         - **Felügyelt** – Több felügyeleti funkciót engedélyez, és alapértelmezés szerint letiltja az Aktiválási zár funkciót
      - **A regisztrálási profil rögzítése a következő eszközhöz** – Ezt aktiválás közben lehet beállítani, és a gyári beállítások visszaállítása nélkül nem módosítható.
         - **Letiltás** – Lehetővé teszi a felügyeleti profil eltávolítását a **Beállítások** menüből.
-        - **Engedélyezés** – (Az **Előkészítés módja** = **Felügyelt** beállítás szükséges hozzá.) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását.
+        - **Engedélyezés** – (Az **Előkészítés módja** = **Felügyelt** beállítás szükséges hozzá.) Letiltja a felügyeleti profil eltávolítására szolgáló menüpontot az iOS-beállításokban
      - **Beállítási asszisztens – Beállítások** – Ezeknek a beállításoknak a megadása nem kötelező, és az iOS **Beállítások** menüjében később is konfigurálhatók.
-        - **PIN-kód** – PIN-kód kérése aktiváláskor. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonságát, illetve elérésének szabályozását valamilyen más módszer biztosítja (például teljes képernyős mód, amely egyetlen alkalmazás futtatására korlátozza az eszközt).
+        - **PIN-kód** – PIN-kód kérése aktiváláskor. PIN-kód megadására mindig szükség van, kivéve, ha az eszköz biztonságát, illetve elérésének szabályozását valamilyen más módszer biztosítja (például teljes képernyős mód, amely egyetlen alkalmazás futtatására korlátozza az eszközt)
         - **Helyalapú szolgáltatások** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során kérni fogja a szolgáltatást.
         - **Visszaállítás** – Ha bekapcsolja ezt a funkciót, a Beállítási asszisztens az aktiválás során iCloud-alapú biztonsági mentést fog kérni.
         - **Apple ID** – Ha engedélyezte, az iOS kérni fogja a felhasználótól az Apple ID azonosítót, ha az azonosító megadása nélkül próbál alkalmazást telepíteni az Intune-ban. Az App Store-beli iOS-alkalmazások letöltéséhez Apple ID azonosító szükséges, az Intune által telepített alkalmazásokat is beleértve.
@@ -109,13 +112,13 @@ A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó 
 
 ## <a name="changes-to-intune-group-assignments"></a>Változások az Intune csoport-hozzárendelésekben
 
-Novembertől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+2016 decemberétől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a **Vállalati regisztrációs profil** beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

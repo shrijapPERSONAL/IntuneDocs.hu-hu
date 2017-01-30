@@ -1,11 +1,11 @@
 ---
-title: "Eszközök regisztrálása | Microsoft Intune"
+title: "Eszközök regisztrálása | Microsoft Docs"
 description: "A mobileszköz-kezelési (MDM) funkció a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>Eszközök regisztrálása felügyeletre a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Különböző eszközöket, így Windows rendszerű számítógépeket is regisztrálhat, hogy engedélyezze a mobileszköz-kezelést (MDM) a Microsoft Intune-nal. Ez a témakör ismerteti az eszközök Intune-felügyeletbe való regisztrálásának különböző módszereit. Az eszközök regisztrálásának módja az eszköz típusától, a tulajdonostól, valamint a felügyeleti szinttől függ. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. A vállalati tulajdonú eszközök (COD) regisztrálása olyan felügyeleti lehetőségeket nyújt, mint a távoli törlés, a megosztott eszközök vagy a felhasználó-eszköz kapcsolat.
 
 Ha helyi vagy felhőalapú [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) programot használ, akkor regisztrálás nélkül is engedélyezhet egyszerű Intune-felügyeletet. A Windows rendszerű számítógépek az [Intune-ügyfélszoftver](#manage-windows-pcs-with-intune) segítségével is felügyelhetők.
@@ -31,7 +34,7 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 - **Törlés** – Azt jelzi, hogy törölni kell-e mindent az eszközről ahhoz, hogy a felhasználók regisztrálni tudják. A „törlés” itt az eszköz gyári alaphelyzetének visszaállítását, vagyis az összes adat törlését jelenti. További információk: [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md).
 - **Affinitás** - Az eszközök felhasználókkal való társítása. Erre a mobilalkalmazás-kezeléshez (MAM) és a vállalati adatokhoz való feltételes hozzáféréshez van szükség. További információk: [Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Zárolás** – Megakadályozza, hogy a felhasználók kivonják az eszközöket a felügyelet alól. iOS eszközök zárolásához felügyelt üzemmódra van szükség. További információk: [Távoli zárolás](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Zárolás** – Jelzi, hogy a rendszer megakadályozza a felhasználókat abban, hogy töröljék eszközeik regisztrációját, és ezzel kivonják azokat a felügyelet alól. A felhasználók a Céges portál alkalmazás használatával bármelyik platformon törölhetik eszközeik regisztrációját. A natív operációs rendszer menüit nem használhatják a regisztráció törlésére. 
 
 **iOS-eszközök regisztrálási módszerei**
 
@@ -120,6 +123,6 @@ Az Intune a következő eszközplatformokat képes kezelni:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
