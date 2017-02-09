@@ -1,4 +1,3 @@
-
 ---
 title: "Kapcsolatfelvétel a telefonos tanácsadással | Microsoft Docs"
 description: "A Microsoft Intune ügyfélszolgálatának telefonszámai."

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
@@ -30,7 +31,7 @@ A vállalati eszközök Microsoft Intune-beli regisztrálása lehetővé teszi, 
 Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisztrálja az eszközét az Intune-ban](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), és mit jelent ez az [eszközön található adatok szempontjából](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 ## <a name="windows-10-desktop-devices"></a>Windows 10 rendszerű asztali eszközök
-1.  Lépjen a __Start__ menüre.
+1.    Lépjen a __Start__ menüre.
 
  ![Windows Start menü](../media/windows-start-menu.png).
 
@@ -38,18 +39,18 @@ Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisz
 
  ![A gép névjegye – keresés](../media/searching_for_about_your_pc.png)
 
-2.  A __Beállítások__ képernyőn megjelenik a számítógépre telepített Windows 10 verziójára vonatkozó adatok listája. A listában keresse meg a __Verzió__ bejegyzést.
+2.    A __Beállítások__ képernyőn megjelenik a számítógépre telepített Windows 10 verziójára vonatkozó adatok listája. A listában keresse meg a __Verzió__ bejegyzést.
 
  ![Windows 10 asztali verzió – A gép névjegye](../media/settings_about_pc.png)
 
-3.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
+3.    Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile rendszerű eszközök
 
-1.  A __Start__ menüben pöccintéssel lépjen a __Minden alkalmazás__ listához, és válassza ki a __Beállítások__ alkalmazást.
-2.  Koppintson a __Rendszer__, majd a __Névjegy__ elemre.
-3.  Az __Eszközadatok__ bejegyzésnél koppintson a __További információ__ elemre. Megjelenik az eszköz adatait tartalmazó lista. A listában keresse meg a __Verzió__ bejegyzést.
-4.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
+1.    A __Start__ menüben pöccintéssel lépjen a __Minden alkalmazás__ listához, és válassza ki a __Beállítások__ alkalmazást.
+2.    Koppintson a __Rendszer__, majd a __Névjegy__ elemre.
+3.    Az __Eszközadatok__ bejegyzésnél koppintson a __További információ__ elemre. Megjelenik az eszköz adatait tartalmazó lista. A listában keresse meg a __Verzió__ bejegyzést.
+4.    Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 

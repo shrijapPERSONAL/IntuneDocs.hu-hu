@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
@@ -37,7 +38,7 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
 -   [Távolról zárolhatja az eszközét](remote-lock-your-device-cpwebsite.md)
 
--   [Manuálisan szinkronizálhatja az eszközt a lassú alkalmazástelepítések gyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
+-    [Manuálisan szinkronizálhatja az eszközt a lassú alkalmazástelepítések gyorsítása érdekében](sync-your-device-manually-cpwebsite.md)
 
 -   Megkeresheti a rendszergazda elérhetőségét, ha be vannak állítva ezek az adatok
 
