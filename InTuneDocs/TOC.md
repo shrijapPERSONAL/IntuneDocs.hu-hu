@@ -6,12 +6,14 @@
 ### [zabályzatok létrehozása és alkalmazások közzététele](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Egyéb beállítások és kiegészítő funkciók](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Átállás a fizetős verzióra](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Mobilalkalmazás-kezelési és alkalmazásvédelmi gyakori kérdések](understand-explore/mam-faq.md)
 ## [Gyakori helyzetek](understand-explore/common-ways-to-use-intune.md)
 
 
 # [Első lépések](get-started/get-started.md)
 ## [Az Intune telepítése](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Előfeltételek](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Előfeltételek]
+#### [Támogatott eszközök](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Hálózati forgalom](get-started/network-bandwidth-use.md)
 ### [Bejelentkezés az Intune-ba](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Tartományok beállítása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -43,7 +45,7 @@
 ## [További háttéranyagok](plan-design/additional-resources.md)
 
 # [Újdonságok](whats-new/whats-new-in-microsoft-intune.md)
-## [Az Intune alkalmazásfelhasználói felületének újdonságai](whats-new/whats-new-in-intune-app-ui.md)
+## [Az alkalmazásfelhasználói felület újdonságai](whats-new/whats-new-in-intune-app-ui.md)
 ## [Az Azure előzetes verziójának újdonságai](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Újdonságok – Archívum](whats-new/whats-new-archive.md)
 
@@ -57,7 +59,6 @@
 #### [Android-kezelés](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Eszközök kezelése az Android for Work alkalmazással](deploy-use/set-up-android-for-work.md)
 #### [Windowsos eszközök kezelése](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile és Windows Phone 8.1](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Vállalati tulajdonú eszközök kezelése](deploy-use/manage-corporate-owned-devices.md)
 #### [A vállalat által birtokolt iOS-eszközök regisztrálása](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Regisztrálás az iOS-alapú Beállítási asszisztenssel](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -106,7 +107,7 @@
 
 ## [Eszközök védelme](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Zárolás és jelszó alaphelyzetbe állítása távolról](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Windows-eszközök védelme MFA hitelesítéssel](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Windows-eszközök védelme MFA hitelesítéssel](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [A Vállalati Windows Hello beállításainak szabályozása](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Az aktiválási zár megkerülése iOS-eszközökön](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Szabályzatok a Windows rendszerű számítógépek védelméhez](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -159,19 +160,19 @@
 #### [ADAL nélküli alkalmazások blokkolása](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Hálózati hozzáférés védelme (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján](deploy-use/device-threat-protection.md)
-#### [A Lookout veszélyforrások elleni védelem konfigurálása](deploy-use/device-threat-protection-subscription-setup.md)
-#### [A Lookout engedélyezése az Intune-ban](deploy-use/device-threat-protection-enable.md)
-#### [Lookout for Work-alkalmazások telepítése](deploy-use/device-threat-protection-apps.md)
+#### [A veszélyforrások elleni eszközvédelem beállítása](deploy-use/device-threat-protection-subscription-setup.md)
+#### [A veszélyforrások elleni eszközvédelem engedélyezése](deploy-use/device-threat-protection-enable.md)
+#### [A veszélyforrások elleni eszközvédelemre szolgáló alkalmazások telepítése](deploy-use/device-threat-protection-apps.md)
 #### [Eszközök fenyegetések elleni védelmét szolgáló megfelelőségi szabály engedélyezése](deploy-use/device-threat-protection-policy.md)
 
 ### [Alkalmazásadatok védelme MAM használatával](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure Portal a mobilalkalmazás-felügyeleti szabályzatok kezeléséhez](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM-szabályzatok létrehozása és telepítése](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM-szabályzatok Android rendszerhez](deploy-use/android-mam-policy-settings.md)
-#### [MAM-szabályzatok iOS rendszerhez](deploy-use/ios-mam-policy-settings.md)
-#### [MAM-szabályzatok ellenőrzése](deploy-use/validate-mobile-application-management.md)
-#### [Szabályzatoknak való megfelelés figyelése](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Alkalmazásvédelmi szabályzatok az Azure Portalon](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Alkalmazásvédelmi szabályzatok létrehozása és telepítése](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Alkalmazásvédelmi szabályzatok Androidhoz](deploy-use/android-mam-policy-settings.md)
+#### [Alkalmazásvédelmi szabályzatok iOS-hez](deploy-use/ios-mam-policy-settings.md)
+#### [Az alkalmazásvédelmi szabályzatok ellenőrzése](deploy-use/validate-mobile-application-management.md)
+#### [Az alkalmazásvédelmi szabályzatoknak való megfelelőség figyelése](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS-alkalmazások közti adatátvitel kezelése](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune felügyeleti konzol MAM-szabályzatokhoz](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,7 +183,6 @@
 #### [Üzletviteli (LOB) alkalmazások a nem az Intune által felügyelt eszközökön](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [SDK használata alkalmazás írásakor](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [Mobilalkalmazás-kezelési és alkalmazásvédelmi gyakori kérdések](deploy-use/mam-faq.md)
 
 ## Alkalmazások és adatok kivonása
 ### [Teljes vagy szelektív törlés alkalmazása](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -217,11 +217,11 @@
 
 ## [Mobilalkalmazás-kezelési hibaelhárítás](troubleshoot/troubleshoot-mam.md)
 
-## [A Lookout-integráció hibaelhárítása](troubleshoot/troubleshooting-lookout-integration.md)
+## [A veszélyforrások elleni eszközvédelem hibaelhárítása](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Szószedet](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
