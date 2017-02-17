@@ -26,10 +26,10 @@ ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
 
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Naplók elküldése a rendszergazdának USB-kábelen keresztül
 
-Ha androidos eszközén hibaüzenet jelenik meg a Munkahelyi portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ezek egy speciális dokumentumban, egy úgynevezett _diagnosztikai naplófájlban_ találhatók az eszközön.
+Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ezek egy speciális dokumentumban, egy úgynevezett _diagnosztikai naplófájlban_ találhatók az eszközön.
 
 > [!Note]
-> A kezdés előtt győződjön meg arról, hogy kéznél van-e a rendszergazda e-mail-címe. Ez a [vállalati portál webhelyén](http://portal.manage.microsoft.com) vagy a Munkahelyi portál alkalmazásban található meg.
+> A kezdés előtt győződjön meg arról, hogy kéznél van-e a rendszergazda e-mail-címe. Ez a [Céges portál webhelyén](http://portal.manage.microsoft.com) vagy a Céges portál alkalmazásban található meg.
 
 1.  A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
 
@@ -39,7 +39,7 @@ Ha androidos eszközén hibaüzenet jelenik meg a Munkahelyi portál alkalmazás
 
 4.  Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a rendszergazdának.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Céges portál webhelyén](http://portal.manage.microsoft.com).
 
 
 

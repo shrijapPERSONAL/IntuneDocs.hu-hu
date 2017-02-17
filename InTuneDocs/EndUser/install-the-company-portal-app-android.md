@@ -1,5 +1,5 @@
 ---
-title: "A Munkahelyi portál alkalmazás telepítése | Microsoft Docs"
+title: "A Céges portál alkalmazás telepítése | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -22,15 +22,15 @@ ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
 
 
 ---
-# <a name="install-the-company-portal-app-for-android"></a>A Munkahelyi portál alkalmazás telepítése Androidhoz
+# <a name="install-the-company-portal-app-for-android"></a>A Céges portál alkalmazás telepítése Androidhoz
 
-A Munkahelyi portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, valamint a levelezéshez és az internetkapcsolatokhoz. Ez az alkalmazás az ön eszköze biztonságának garantálásával munkahelye információinak is védelmet nyújt − például naprakészen tarja a vállalati alkalmazásait vagy gondoskodik róla, hogy az eszköze egy bizonyos idő elteltével lezárja magát. A Munkahelyi portál alkalmazás úgy képes erre, hogy segítségére van az [eszközének Microsoft Intune-ban történő regisztrálásában](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+A Céges portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, valamint a levelezéshez és az internetkapcsolatokhoz. Ez az alkalmazás az ön eszköze biztonságának garantálásával munkahelye információinak is védelmet nyújt − például naprakészen tarja a vállalati alkalmazásait vagy gondoskodik róla, hogy az eszköze egy bizonyos idő elteltével lezárja magát. A Céges portál alkalmazás úgy képes erre, hogy segítségére van az [eszközének Microsoft Intune-ban történő regisztrálásában](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Kattintson a **Home** (Kezdőképernyő) > **Play Store** (Play Áruház) elemre.
 
-2.  A **Search** (Keresés) mezőbe írja be a **company portal**(vállalati portál) kifejezést.
+2.  A **Search** (Keresés) mezőbe írja be a **company portal**(céges portál) kifejezést.
 
-3.  Koppintson az **Intune Vállalati portál** elemre.
+3.  Koppintson az **Intune Céges portál** elemre.
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
@@ -42,9 +42,9 @@ A Munkahelyi portál alkalmazás hozzáférést biztosít a munkahelyi és az is
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Miután letöltötte a Munkahelyi portál alkalmazást, a munkahelyi információkhoz való teljes hozzáférés érdekében minden bizonnyal [regisztrálni szeretné eszközét Intune-ban](enroll-your-device-in-Intune-android.md).
+Miután letöltötte a Céges portál alkalmazást, a munkahelyi információkhoz való teljes hozzáférés érdekében minden bizonnyal [regisztrálni szeretné eszközét Intune-ban](enroll-your-device-in-Intune-android.md).
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Céges portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
