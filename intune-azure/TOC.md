@@ -42,7 +42,7 @@
 ### Az eszközregisztráció felügyelete
 #### [Használati feltételek létrehozása](enroll-devices/create-terms-and-conditions.md)
 #### [Regisztrációs korlátozások beállítása](enroll-devices/set-enrollment-restrictions.md)
-#### [Eszközcsoportok leképezése](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Eszközök hozzárendelése csoportokhoz](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Vállalati azonosítók hozzáadása](enroll-devices/add-corporate-identifiers.md)
 #### [A Vállalati Windows Hello használata](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
