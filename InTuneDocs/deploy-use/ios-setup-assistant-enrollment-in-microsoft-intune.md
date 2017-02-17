@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 7db1a8ec10d0c214264bba7608ae8bdc09a27420
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
 
 
 ---
@@ -105,7 +105,10 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
   -  **Eszközadatok kézi hozzáadása** – Adja meg legfeljebb 15 eszköz sorozatszámát, adatait és az esetleges megjegyzéseket.
 
-  A sorozatszámok listájának utólagos módosításához az [iOS-es sorozatszámok felvétele vagy módosítása](#add-or-update-ios-serial-numbers) című szakaszban talál útmutatást.
+  Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket. 
+
+> [!NOTE] 
+> Az Intune korábbi felügyeleti konzolján a rendszergazdák egy feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes sorozatszámok korábbi részleteit. Az új Azure Portalon csak az összes sorozatszám adatainak felülírására vagy az új részletek figyelmen kívül hagyására lesz lehetőség.
 
   > [!NOTE]
   > Ha később el szeretne távolítani vállalati tulajdonú eszközöket az Intune kezeléséből, akkor előfordulhat, hogy az eszköz regisztrációjának letiltásához az **Előre regisztrált vállalati eszközök** elemcsoportban található **iOS-sorozatszám szerint** eszközcsoportban el kell távolítania az eszköz gyári számát az Intune-ból. Ha az Intune vészhelyreállítási eljárást hajt végre a sorozatszámok eltávolítása közben vagy ahhoz közeli időpontban, győződjön meg arról, hogy a csoportban csak az aktív eszközök sorozatszámai szerepelnek.
@@ -179,29 +182,12 @@ Az eszközök most már készen állnak a vállalati regisztrációra.
 
 Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Amikor a felhasználók bekapcsolják az eszközüket, elindul a Beállítási asszisztens.
 
-## <a name="add-or-update-ios-serial-numbers"></a>iOS-es sorozatszámok felvétele vagy módosítása
-
-A fenti lépések alapján akár azonnal is tudja regisztrálni az eszközöket (beleértve az iOS-es sorozatszámok feltöltését is), de valószínű, hogy időről időre bővíteni vagy módosítani kell majd a sorozatszámok adatait. Ezt az alábbi lépések alapján teheti meg. 
-
-1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **iOS-sorozatszám szerint** területre, majd válassza az **Eszközök felvétele** lehetőséget. Ha nem módosítani, hanem eltávolítani szeretne egy sorozatszámot, akkor jelölje ki, és az **Eszközök felvétele** helyett válassza az **Eltávolítás** lehetőséget.
-
-2. Ha további sorozatszámokat szeretne felvenni vagy módosítani, a témakörben korábban leírt módon hajtsa végre a következők valamelyikét, majd válassza a **Tovább** lehetőséget:
-
-   -  **Sorozatszámokat tartalmazó .csv-fájl feltöltése** 
-   -  **Eszközadatok kézi megadása** 
-
-3.  Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket. 
-
-4.  A sorozatszámokat a **Befejezés** lehetőséget választva importálhatja.  Az importált sorozatszámok és adatok az **iOS-sorozatszám szerint** listába kerülnek.
-
-> [!NOTE] 
-> Ha a szervezet a közeljövőben az új Azure Portalra lesz migrálva, akkor ennek a funkciónak a működésében változást fognak tapasztalni. Az Intune korábbi felügyeleti konzolján a rendszergazdák egy feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes sorozatszámok korábbi részleteit. Az új Azure Portalon csak az összes sorozatszám adatainak felülírására vagy az új részletek figyelmen kívül hagyására lesz lehetőség.
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
