@@ -1,11 +1,11 @@
 ---
-title: "Megfelelőségi szabályzat beállításai Android-eszközökhöz | Microsoft Intune"
+title: "Megfelelőségi szabályzat beállításai Androidhoz | Microsoft Docs"
 description: "Ez a témakör bemutatja az eszközmegfelelőségi szabályzat beállításait Android-eszközökhöz."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -23,12 +24,15 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Android-eszközökhöz a Microsoft Intune-ban
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A jelen témakörben leírt szabályzati beállítások az Android 4.0-s és újabb verzióival, illetve a Samsung KNOX 4.0-s és újabb verzióival működő eszközökre vonatkoznak.
 
 Ha más platformokra vonatkozó információkat keres, válassza az alábbiak egyikét:
 > [!div class="op_single_selector"]
 - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Megfelelőségi szabályzat beállításai Windows-eszközökhöz](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Az Android for Work-eszközök megfelelőségi szabályzatainak beállításai](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 ### <a name="password"></a>Jelszó
@@ -87,6 +91,6 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

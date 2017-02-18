@@ -1,12 +1,12 @@
 ---
 
-title: "Az Android for Work szabályzatbeállításai | Microsoft Intune"
+title: "Az Android for Work szabályzatbeállításai | Microsoft Docs"
 description: "Szabályzatok létrehozása, amelyek vezérlik a beállításokat és a szolgáltatásokat az Intune-nal felügyelt Android for Work-eszközökön."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,19 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Az Android for Work szabályzatbeállításai a Microsoft Intune-ban
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Az Intune az Android for Work-eszközökön konfigurálható, beépített általános beállítások széles választékát kínálja.
+Az Intune az [Android for Work-eszközökön](android-for-work.md) konfigurálható, beépített általános beállítások széles választékát kínálja.
 
 ## <a name="general-configuration-policy"></a>Általános konfigurációs szabályzat
 
@@ -60,15 +61,11 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 |**Alapértelmezett alkalmazásengedélyezési szabályzat beállítása**<br>(Android 6 és újabb verziók)|Meghatározza a munkahelyi profilban található összes alkalmazásra vonatkozó alapértelmezett szabályzatot.|
 
 
-
-
 ## <a name="custom-policy-settings"></a>Egyéni szabályzatbeállítások
 A Microsoft Intune **Android for Work egyéni konfigurációs szabályzatával** OMA-URI-beállításokat léptethet érvénybe, amelyekkel vezérelhetők az Android for Work-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
 Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
-
-> [!NOTE]
-> Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják.
+Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E témakör példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
 
 ### <a name="general-settings"></a>Általános beállítások
 
@@ -97,6 +94,6 @@ Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem ko
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

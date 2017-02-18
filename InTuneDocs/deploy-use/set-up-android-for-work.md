@@ -1,26 +1,27 @@
 ---
-title: "Android for Work-eszközök felügyeletének beállítása | Microsoft Intune"
+title: "Az Android for Work beállítása | Microsoft Docs"
 description: "Mobileszközök felügyeletének engedélyezése Android for Work-eszközökhöz a Microsoft Intune-nal."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
 
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work-eszközök regisztrálásának engedélyezése
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Android for Work-eszközök felügyeletének engedélyezéséhez létre kell hoznia egy Android for Work-kötést az Intune-ban. Az Android for Worköt támogató, de korábban normál Andriod-eszközként regisztrált eszközök regisztrációját törölni kell, majd újra kell regisztrálni őket.
 
@@ -52,7 +53,7 @@ Az Android for Work-kötés és -beállítások konfigurálása után a követke
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Az Android for Work rendszergazdai fiókja kötésének megszüntetése
 
-Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. A **Leválasztás** gombra kattintva megszünteti a regisztrált Android for Work eszközök regisztrációját és felbontja az Android for Work fiók és az Intune közötti kapcsolatot.
+Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Ha az Intune felügyeleti konzolon a **Leválasztás** gombra kattint, azzal megszünteti a regisztrált Android for Work eszközök regisztrációját, és felbontja az Android for Work-fiók és az Intune közötti kapcsolatot.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work fiók leválasztása
 
@@ -64,6 +65,6 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. A **L
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

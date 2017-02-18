@@ -1,11 +1,11 @@
 ---
-title: "Az Android for Work megfelelőségi szabályzatainak beállításai | Microsoft Intune"
+title: "Az Android for Work megfelelőségi beállításai | Microsoft Docs"
 description: "Ez a témakör az Android for Workkel kompatibilis Android-eszközök eszközmegfelelőségi szabályzatainak beállításait mutatja be."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
 
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Az Android for Work-eszközök megfelelőségi szabályzatainak beállításai a Microsoft Intune-ban
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A jelen témakörben leírt szabályzati beállítások Android for Work-eszközökre vonatkoznak.
 
@@ -68,7 +69,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 - **Az USB-hibakeresés letiltásának megkövetelése:** Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközökön már le van tiltva az USB-hibakeresés.
 
 - **Az Android minimálisan előírt biztonsági javítási szintje:** Ezzel a beállítással adható meg az Android minimálisan előírt biztonsági javítási szintje.  Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot a következő formátumban kell megadni: ÉÉÉÉ-HH-NN.
-- **Veszélyforrások elleni eszközvédelem engedélyezése**: ezzel a beállítással megfelelési feltételként kiveszi a kockázatelemzést Lookout MTP-megoldásból. Válassza ki a maximális megengedett kockázati szintet, ami az alábbiak egyike lehet:
+- **A Veszélyforrások elleni eszközvédelem alkalmazás engedélyezésének megkövetelése:** Ezzel a beállítással felveszi megfelelési feltételként a Veszélyforrások elleni eszközvédelem megoldás általi kockázatelemzést. Válassza ki a maximális megengedett kockázati szintet, ami az alábbiak egyike lehet:
 
   - **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelése esetén az eszköz értékelése nem megfelelő lesz.
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
@@ -81,10 +82,10 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 - **Az operációs rendszer szükséges minimális verziója:** Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
   Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ezt követően pedig hozzáférhet a vállalati erőforrásokhoz.
 
-- **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
