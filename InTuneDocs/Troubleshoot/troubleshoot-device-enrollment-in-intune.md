@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -31,10 +32,10 @@ Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megold�
 
 A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően van-e konfigurálva a regisztráláshoz. Ezekről a konfigurációs követelményekről itt olvashat:
 
--   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/prerequisites-for-enrollment)
--   [iOS- és Mac-eszközök kezelésének beállítása](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Windows Phone és Windows 10 Mobile rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Windowsos eszközök kezelésének beállítása](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/prerequisites-for-enrollment)
+-    [iOS- és Mac-eszközök kezelésének beállítása](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Windows Phone és Windows 10 Mobile rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Windowsos eszközök kezelésének beállítása](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 A felügyelt eszközök felhasználói össze tudják gyűjteni a regisztrációs és diagnosztikai naplókat, hogy átnézhesse őket. A naplók felhasználók általi gyűjtésére vonatkozó utasítások itt találhatók:
@@ -227,16 +228,16 @@ A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél
 
 A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
 
-1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
-2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
-3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
-4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
-5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
-6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
-7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
-8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
-9.  Indítsa újra az AD FS-kiszolgálókat.
-10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
+1.    Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+2.    Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
+3.    Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
+4.    Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+5.    Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
+6.    Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
+7.    A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
+8.    Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
+9.    Indítsa újra az AD FS-kiszolgálókat.
+10.    Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
 A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
 
 **A tanúsítványok megfelelő telepítésének ellenőrzése**:
@@ -294,32 +295,20 @@ Regisztráció után az eszközök ismét kifogástalan állapotba kerülnek, é
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>A regisztrált iOS-eszköz nem jelenik meg a konzolon a System Center Configuration Managerbe integrált Intune használata esetén
 **Hiba:** A felhasználó regisztrálja az iOS-eszközt, de az nem jelenik meg a Configuration Manager felügyeleti konzolon. Az eszköz nem jelzi, hogy már regisztrálva van. Lehetséges okok:
 
-- Előfordulhat, hogy az Intune-összekötőt az egyik fiókba regisztrálta, majd egy másik fiókba is regisztrálta.
+- Az Ön Configuration Manager-helyén található Microsoft Intune-összekötő nem kommunikál az Intune szolgáltatással.
+- Az állapotkezelő (statmgr) vagy az adatfelderítés-kezelő (ddm) összetevő nem dolgozza fel az Intune szolgáltatás üzeneteit.
 - Előfordulhat, hogy az MDM-tanúsítványt az egyik fiókból töltötte le, és egy másik fiókban használta.
 
 
-**Megoldás:** Hajtsa végre a következő lépéseket:
+**Megoldás:** tekintse át a következő naplófájlokat a lehetséges hibák azonosítása érdekében:
 
-1. Tiltsa le az iOS rendszert a Windows Intune-összekötőben.
-    1. Kattintson a jobb gombbal az Intune-előfizetésre, és válassza a **Tulajdonságok** lehetőséget.
-    1. Az „iOS” lapon törölje a jelet az „iOS-eszközök regisztrációjának engedélyezése” jelölőnégyzetből.
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. Az SQL-ben futtassa a következő lépéseket a CAS-adatbázison:
-
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 7
-    1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 11
-    1. delete from MDMPolicyAssignment where PolicyType = 11
-    1. DELETE Drs_Signals
-1. Indítsa újra az SMS Executive szolgáltatást vagy a CM-kiszolgálót.
+Hamarosan közzétesszük az arra vonatkozó példákat, hogy mit kell keresni ezekben a naplófájlokban.
 
 
-
-1. Szerezzen be egy APN-tanúsítványt és töltse fel: az egér jobb gombjával kattintson az Intune-előfizetésre a Configuration Manager bal oldali ablaktáblájában. Válassza az **APN szolgáltatás tanúsítványkérésének létrehozása** parancsot, és kövesse az utasításokat.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problémák a System Center Configuration Managerbe integrált Intune használatakor
 ### <a name="mobile-devices-disappear"></a>Mobileszközök tűnnek el
 **Hiba:** Miután sikeresen regisztrált egy mobileszközt a Configuration Managerbe, eltűnik a mobileszköz-gyűjteményből, de továbbra is rendelkezik felügyeleti profillal, és szerepel a CSS-átjáróban.
@@ -400,6 +389,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

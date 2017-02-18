@@ -1,11 +1,11 @@
 ---
-title: "Eszköznaplók gyűjtése | Microsoft Intune"
+title: "Eszköznaplók gyűjtése | Microsoft Docs"
 description: "Ismerje meg, hogyan gyűjthet naplókat felügyelt eszközeiről."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0c05b4e16f7b0a87215a0cd20f7d559cd8497296
-ms.openlocfilehash: 0f175b1eb2d80a68c8b7864d21f5a9e585de458b
+ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
+ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
 
 
 ---
 
 # <a name="device-logs"></a>Eszköznaplók
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A hibaelhárítás támogatása érdekében érdemes lehet eszköznaplókat gyűjteni a felhasználók által használt eszközökről. A naplók gyűjtésére vonatkozó utasítások ebben a témakörben találhatók. A naplók gyűjtéséhez általában szükség van az eszköz elérésére, vagy megkérheti a felhasználót, hogy gyűjtse össze ő a naplókat, majd küldje el azokat Önnek.
 
@@ -33,7 +36,7 @@ Az alábbi cikkben további információt talál arról, felhasználói hogyan k
 
 - [Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) – Ebben részletes információt talál a részletes naplózás bekapcsolásáról, amely a felhasználók összes adatnaplóját automatikusan elküldi önnek. Alapértelmezés szerint a részletes naplózás be van kapcsolva.
 
-- [Android diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Android diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -57,6 +60,6 @@ A windowsos Vállalati portál alkalmazásban a naplók helye a következő: *%l
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

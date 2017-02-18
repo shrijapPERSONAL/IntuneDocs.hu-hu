@@ -1,30 +1,33 @@
 ---
-title: "Az Intune használatának gyakori módjai | Microsoft Intune"
+title: "Az Intune használatának gyakori módjai | Microsoft Docs"
 description: "A hat leggyakoribb feladat, amelyek elvégzésében az Intune segít"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39e68e467c3295f4751bf3466957a8a377a8e7d6
-ms.openlocfilehash: 095be86be3658a294d3f0aab525f5e0dd29b4cfe
+ms.sourcegitcommit: f8a47bef930e5e194f4543b0532b4585c0ebd5e9
+ms.openlocfilehash: 514c1cee1137f6f658b0e887dd4f4a02f1cd0f21
 
 
 ---
 
 # <a name="common-ways-to-use-intune"></a>Az Intune használatának gyakori módjai
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Mielőtt belevágna a megvalósítási feladatok végrehajtásába, fontos, hogy egyeztesse az üzleti célokat azokkal, akiket a szervezetnél érint a nagyvállalati mobilitás.  Ez akkor is fontos, ha újonnan vezeti be a nagyvállalati mobilitást, és akkor is, ha egy másik termékről tér át.  
 
-A nagyvállalati mobilitáshoz kapcsolódó igények dinamikusan fejlődnek, és a Microsoft néha a piacon elérhető más megoldásoktól különböző módon ad megoldást ezekre a igényekre.  Az üzleti céloknak megfelelő tervezés legjobb módja az, hogy meghatározza a célokat azon forgatókönyvek kidolgozásával, amelyeket meg szeretne valósítani a dolgozók és a partnerek számára, valamint az informatikai részlegben.  
+A nagyvállalati mobilitáshoz kapcsolódó igények dinamikusan fejlődnek, és a Microsoft néha a piacon elérhető más megoldásoktól különböző módon ad megoldást ezekre a igényekre. Az üzleti céloknak megfelelő tervezés legjobb módja az, hogy meghatározza a célokat azon forgatókönyvek kidolgozásával, amelyeket meg szeretne valósítani a dolgozók és a partnerek számára, valamint az informatikai részlegben.  
 
 Az alábbiakban röviden bemutatjuk az Intune-ra épülő hat leggyakoribb forgatókönyvet, és feltüntetjük az egyes forgatókönyvek tervezésével és megvalósításával kapcsolatos további tudnivalókra mutató hivatkozásokat.
 
@@ -49,14 +52,13 @@ Ezekben az esetekben a vállalati adatok kizárólag az eszköznek a felügyelet
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Az Office 365 e-mailjeinek és adatainak védelme a mobileszközökről történő biztonságos hozzáférés lehetővé tételéhez
 Az Office 365-ben a vállalati adatok (e-mail, dokumentumok, azonnali üzenetek, névjegyek) védelme nem is lehetne egyszerűbb az Ön számára és zökkenőmentesebb a felhasználók számára.
 
-Az Intune és a Microsoft Enterprise Mobility + Security csomag egyedi, integrált feltételes hozzáférési megoldást kínál, amely gondoskodik arról, hogy a felhasználók, az alkalmazások és az eszközök csak akkor érhessék el az Office 365-adatokat, ha teljesítik a vállalat megfelelőségi követelményeit ([többtényezős hitelesítés](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) elvégzése, regisztrálás az Intune-ba, felügyelt alkalmazás használata, operációs rendszer támogatott verziója, eszköz PIN-kódja, alacsony kockázatú profil stb.). A megfelelő alkalmazás-áruházakban elérhető Office-mobilalkalmazások fel vannak készítve az Intune-nal konfigurálható adattárolási szabályzatokra, ami lehetővé teszi, hogy megakadályozza az adatok megosztását azokkal az alkalmazásokkal (például a natív e-mail alkalmazással) és tárolóhelyekkel (például a Dropboxszal), amelyeket az informatikai részleg nem felügyel.  Az Office 365 és az EMS beépítve tartalmazza mindezeket a szolgáltatásokat.  A használatukhoz nem kell telepítenie további elemeket az infrastruktúrába.
+Az Intune és a Microsoft Enterprise Mobility + Security csomag egyedi, integrált feltételes hozzáférési megoldást kínál, amely gondoskodik arról, hogy a felhasználók, az alkalmazások és az eszközök csak akkor érhessék el az Office 365-adatokat, ha teljesítik a vállalat megfelelőségi követelményeit ([többtényezős hitelesítés](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) elvégzése, regisztrálás az Intune-ba, felügyelt alkalmazás használata, operációs rendszer támogatott verziója, eszköz PIN-kódja, alacsony kockázatú profil stb.).
 
-A megfelelő alkalmazás-áruházakban elérhető Office-mobilalkalmazások fel vannak készítve az Intune-nal konfigurálható adattárolási szabályzatokra. Ez lehetővé teszi, hogy megakadályozza az adatok megosztását azokkal az alkalmazásokkal (például a natív e-mail alkalmazással) és tárolóhelyekkel (például a Dropboxszal), amelyeket az informatikai részleg nem felügyel.  Az Office 365 és az EMS beépítve tartalmazza mindezeket a szolgáltatásokat.  A használatukhoz nem kell telepítenie további elemeket az infrastruktúrába.
+A megfelelő alkalmazás-áruházakban elérhető Office-mobilalkalmazások fel vannak készítve az Intune-nal konfigurálható adattárolási szabályzatokra. Ez lehetővé teszi, hogy megakadályozza az adatok megosztását azokkal az alkalmazásokkal (például a natív e-mail alkalmazással) és tárolóhelyekkel (például a Dropboxszal), amelyeket az informatikai részleg nem felügyel. Az Office 365 és az EMS beépítve tartalmazza mindezeket a szolgáltatásokat. A használatukhoz nem kell telepítenie további elemeket az infrastruktúrába.
 
+Az Office 365 gyakran alkalmazott telepítési módszere, hogy ha mindent, a vállalati alkalmazásokat és tanúsítványokat, valamint a Wi-Fi és a VPN konfigurációját is telepíteni kell az eszközökre, akkor kötelező regisztrálni őket felügyeletre. Ez gyakorta előfordul a vállalati tulajdonú eszközök esetében.  
 
-Az Office 365 gyakran alkalmazott telepítési módszere, hogy ha mindent, a vállalati alkalmazásokat és tanúsítványokat, valamint a Wi-Fi és a VPN konfigurációját is telepíteni kell az eszközökre, akkor kötelező regisztrálni őket felügyeletre. Ez általában a vállalati tulajdonú eszközök esetében fordul elő.  
-
-Ha azonban a felhasználónak egyszerűen csak a vállalati e-mailekhez és dokumentumokhoz való hozzáférésre van szüksége, ami általában a személyes tulajdonú eszközök esetében fordul elő, akkor a felhasználónak az Office-mobilalkalmazásokat kell használnia (amelyekre [érvényesítette az adattárolási szabályzatokat](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)), és kihagyhatja az eszköz regisztrálását.  
+Ha azonban a felhasználónak egyszerűen csak a vállalati e-mailekhez és dokumentumokhoz való hozzáférésre van szüksége, ami általában a személyes tulajdonú eszközök esetében fordul elő, akkor meg lehet követelni, hogy a felhasználó az Office-mobilalkalmazásokat használja (amelyekre [érvényesítette az adattárolási szabályzatokat](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)), és egyáltalán ne regisztrálja az eszközt.  
 
 Mindkét esetben a definiált szabályzatok biztosítják az Office 365-adatok megfelelő védelmét.
 
@@ -68,14 +70,14 @@ A saját eszközök használata (BYOD) egyre népszerűbb a szervezetekben, mive
 
 Ha az eszközök regisztrálása nem kivitelezhető lehetőség, arra az esetre az Intune kínál egy másik BYOD-módszert is, amely egyszerűen csak [felügyeli a vállalati adatokat tartalmazó alkalmazásokat](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune).  Az Intune védelmet nyújt a vállalati adatok számára akkor is, ha a szóban forgó alkalmazás vállalati és személyes adatokhoz is hozzáfér, mint az Office-mobilalkalmazások esetében.  
 
-Rendszergazdaként előírhatja a felhasználóknak, hogy az Office-mobilalkalmazásokkal érjék el az Office 365-öt, és az alkalmazásokat olyan szabályzatokkal konfigurálhatja, amelyek fenntartják az adatok védelmét (például titkosítással, PIN-kódos védelemmel stb.).  Ezek a szabályzatok megakadályozzák az adatvesztést a nem felügyelt alkalmazásoknál és tárolóhelyeknél, az ilyen alkalmazásokon belül és kívül is.  Például a szabályzatok megakadályozzák, hogy a felhasználó szöveget másoljon a vállalati e-mail-profilból egy fogyasztói e-mail-profilba még akkor is, ha mindkét profil az Outlook Mobile-ban van konfigurálva.  Hasonló konfigurációkat adhat meg a BYOD-felhasználók által használt más szolgáltatásokhoz és alkalmazásokhoz is.
+Rendszergazdaként előírhatja a felhasználóknak, hogy az Office-mobilalkalmazásokkal érjék el az Office 365-öt, és az alkalmazásokat olyan szabályzatokkal konfigurálhatja, amelyek fenntartják az adatok védelmét (például titkosítással, PIN-kódos védelemmel stb.). Ezek a szabályzatok megakadályozzák az adatvesztést a nem felügyelt alkalmazásoknál és tárolóhelyeknél, az ilyen alkalmazásokon belül és kívül is. Például a szabályzatok megakadályozzák, hogy a felhasználó szöveget másoljon a vállalati e-mail-profilból egy fogyasztói e-mail-profilba még akkor is, ha mindkét profil az Outlook Mobile-ban van konfigurálva. Hasonló konfigurációkat adhat meg a BYOD-felhasználók által használt más szolgáltatásokhoz és alkalmazásokhoz is.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
 ## <a name="issue-corporate-owned-phones-to-your-information-workers"></a>Vállalati tulajdonú telefonok kiadása az informatikai dolgozóknak
-Napjainkban a legtöbb infomunkás mobileszközökkel dolgozik a versenyképesség fenntartása érdekében.  Ezeknek a dolgozóknak zavartalan hozzáférésre van szükségük az összes vállalati alkalmazáshoz és adathoz, tetszőleges időpontban, függetlenül a tartózkodási helyüktől.  Gondoskodnia kell arról, hogy a vállalati adatok védettek, a felügyeleti költségek pedig alacsonyak legyenek.  
+Napjainkban a legtöbb infomunkás mobileszközökkel dolgozik a versenyképesség fenntartása érdekében. Ezeknek a dolgozóknak zavartalan hozzáférésre van szükségük az összes vállalati alkalmazáshoz és adathoz, tetszőleges időpontban, függetlenül a tartózkodási helyüktől. Gondoskodnia kell arról, hogy a vállalati adatok védettek, a felügyeleti költségek pedig alacsonyak legyenek.  
 
-Az Intune [tömeges kiépítési és felügyeleti megoldásokat](/intune/deploy-use/manage-corporate-owned-devices) kínál, amelyek integrálhatók a piacon jelen lévő fő vállalati eszközfelügyeleti platformokkal, beleértve az Apple készülékregisztrációs programját és a Samsung KNOX mobilbiztonsági platformot.  Az eszközkonfigurációknak az Intune-nal történő központi létrehozása elősegíti a vállalati eszközök kiépítésének magas szintű automatizálását.  
+Az Intune [tömeges kiépítési és felügyeleti megoldásokat](/intune/deploy-use/manage-corporate-owned-devices) kínál, amelyek integrálhatók a piacon jelen lévő fő vállalati eszközfelügyeleti platformokkal, beleértve az Apple készülékregisztrációs programját és a Samsung KNOX mobilbiztonsági platformot. Az eszközkonfigurációknak az Intune-nal történő központi létrehozása elősegíti a vállalati eszközök kiépítésének magas szintű automatizálását.  
 
 Képzelje el a következő helyzetet: az imént adott át egy iPhone-t bontatlan dobozban az egyik dolgozónak. A dolgozó bekapcsolja a telefont, és a telefonon lefut a vállalati beállítási folyamat, amelynek során az eszköznek hitelesítenie kell magát. Zökkenőmentesen végbemegy az iPhone konfigurálása a [biztonsági szabályzatokkal](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (például a merevlemez titkosításával, az eszköz PIN-kódjának beállításával), az [e-mail-/Wi-Fi-/VPN-/tanúsítványprofilokkal](/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune), valamint az [alkalmazások](/intune/deploy-use/add-apps) alapkészletével.
 
@@ -84,9 +86,9 @@ Ezt követően a dolgozó elindítja az Intune Munkahelyi portál alkalmazást, 
 <!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
 ## <a name="issue-limited-use-shared-tablets-to-your-task-workers"></a>Korlátozott használatú megosztott táblagépek kiadása adott feladattal foglalkozó dolgozóknak
-Az adott feladattal foglalkozó dolgozók körében egyre jobban terjed a mobil technológiák használata.  Például a közösen használt táblagépek már hétköznapi eszköznek tekinthetők a kiskereskedelmi üzletek dolgozói esetében.  Akár egy eladást kell feldolgozni, akár a készletet kell azonnal ellenőrizni, a táblagépek nagyban megkönnyítik a kommunikációt az ügyfelekkel.
+Az adott feladattal foglalkozó dolgozók körében egyre jobban terjed a mobil technológiák használata. Például a közösen használt táblagépek már hétköznapi eszköznek tekinthetők a kiskereskedelmi üzletek dolgozói esetében.  Akár egy eladást kell feldolgozni, akár a készletet kell azonnal ellenőrizni, a táblagépek nagyban megkönnyítik a kommunikációt az ügyfelekkel.
 
-Ebben az esetben a felhasználói élmény nagyon fontos jellemzője az egyszerűség.  Emiatt a dolgozók táblagépei általában korlátozott használatú módban működnek, például úgy, hogy a dolgozó csak egyetlen üzleti alkalmazást tud használni a táblagépen.  Az Intune lehetővé teszi az ilyen korlátozott használatú módban működő, megosztott [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) és [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) rendszerű táblagépek tömeges kiépítését, védelmét és központi felügyeletét.
+Ebben az esetben a felhasználói élmény nagyon fontos jellemzője az egyszerűség. Emiatt a dolgozók táblagépei általában korlátozott használatú módban működnek, például úgy, hogy a dolgozó csak egyetlen üzleti alkalmazást tud használni a táblagépen. Az Intune lehetővé teszi az ilyen korlátozott használatú módban működő, megosztott [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) és [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) rendszerű táblagépek tömeges kiépítését, védelmét és központi felügyeletét.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
@@ -99,6 +101,6 @@ Engedélyezheti a dolgozóknak a vállalati e-mailek elérését ilyen számít�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

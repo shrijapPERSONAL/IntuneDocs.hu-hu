@@ -1,5 +1,5 @@
 ---
-title: "iOS-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel | Microsoft Intune"
+title: "iOS-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel | Microsoft Docs"
 description: "Ebből a témakörből megtudhatja, hogyan burkolhatja az iOS-alkalmazásait anélkül, hogy módosítaná magának az alkalmazásnak a programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
 keywords: 
 author: mtillman
@@ -13,35 +13,160 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások mobilalkalmazás-felügyeletre való előkészítése az alkalmazásburkoló eszközzel
 
-A Microsoft Intune App Wrapping Tool for iOS nevű alkalmazásburkoló eszközzel megváltoztathatja a saját fejlesztésű IOS-alkalmazások viselkedését a kódjuk módosítása nélkül, azáltal, hogy lehetővé teszi az Intune alkalmazásvédelmi funkcióinak működését.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Az eszköz egy macOS parancssori alkalmazás, amely „burkolót” hoz létre az alkalmazások körül. Az alkalmazások feldolgozását követően a rendszergazda által beállított Intune [mobilalkalmazás-kezelési szabályzattal](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) módosíthatja a működésüket.
+A Microsoft Intune App Wrapping Tool for iOS nevű alkalmazásburkoló eszközzel engedélyezheti az Intune alkalmazásvédelmi szabályzatait a saját fejlesztésű IOS-alkalmazásokra az alkalmazás kódjának módosítása nélkül.
+
+Az eszköz egy macOS parancssori alkalmazás, amely „burkolót” hoz létre az alkalmazások körül. Az alkalmazások feldolgozását követően a [mobilalkalmazás-kezelési szabályzat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) érvénybe léptetésével módosíthatja az alkalmazások működését.
 
 Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) weblapot a GitHubon.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz előfeltételeinek teljesítése
-[Ebből a blogcikkből részletesebben tájékozódhat arról, hogy miképpen teremtheti meg az Intune alkalmazásburkoló eszköz működésének előfeltételeit](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz általános előfeltételei
 
-|Követelmény|További információ|
-|---------------|--------------------------------|
-|Támogatott operációs rendszer és eszközkészlet | Az alkalmazásburkoló eszközt olyan OS X 10.8.5 vagy újabb rendszerű macOS-számítógépen kell futtatni, amelyre telepítve van az XCode eszközkészlet 5-ös vagy újabb verziója.|
-|Aláíró tanúsítvány és létesítési profil | Rendelkeznie kell egy Apple aláíró tanúsítvánnyal és létesítési profillal. Lásd az [Apple fejlesztői dokumentációját](https://developer.apple.com/).|
-|Alkalmazás feldolgozása az alkalmazásburkoló eszközzel  |Az alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia. Az eszköz nem használható az Apple Store áruházból származó alkalmazások feldolgozásához. Az alkalmazásoknak az iOS 8.0-s vagy újabb verziójához kellett készülnie. Az alkalmazásoknak a Position Independent Executable (PIE) formátumot kell használniuk. A PIE formátumról az Apple fejlesztői dokumentációjában talál további tájékoztatást. Végül az alkalmazásoknak **.app** vagy **.ipa** kiterjesztésűeknek kell lenniük.|
-|Az eszközzel fel nem dolgozható alkalmazások | Titkosított alkalmazások, aláíratlan alkalmazások, kiterjesztett fájlattribútumokkal rendelkező alkalmazások.|
-|Jogosultságok beállítása az alkalmazáshoz|Az alkalmazás burkolása előtt jogosultságokat kell megadnia, amelyek az általában megadottak mellett további engedélyekkel és képességekkel ruházzák fel az alkalmazást. További utasításokért lásd az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részt.|
+Az alkalmazásburkoló eszköz futtatása előtt bizonyos általános előfeltételeknek kell teljesülnie:
 
-## <a name="install-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz telepítése
+* Töltse le a [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) eszközt a GitHubról.
+
+* Egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógép, amelyen telepítve van az Xcode eszközkészlet 5-ös vagy újabb verziója.
+
+* A bemeneti iOS-alkalmazást vállalatának vagy egy független szoftverszállítónak kell létrehoznia és aláírnia.
+
+  * A bemeneti alkalmazásfájlnak **.ipa** vagy **.app** kiterjesztésűnek kell lennie.
+
+  * A bemeneti alkalmazást iOS 8.0-s vagy későbbi verzióra kell fordítani.
+
+  * A bemeneti alkalmazás nem lehet titkosított.
+
+  * A bemeneti alkalmazás nem rendelkezhet kiterjesztett fájlattribútumokkal.
+
+  * A bementi alkalmazás jogosultságait az Intune alkalmazásburkoló eszköz használata előtt be kell állítani. A [jogosultságok](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) a meglévők mellett további engedélyekkel és képességekkel ruházzák fel az alkalmazást. További utasításokért lásd az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részt.
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Az App Wrapping Tool Apple Developerre vonatkozó előfeltételei
+
+
+Ha burkolt alkalmazásokat kizárólag a szervezete felhasználói számára szeretne terjeszteni, szüksége lesz egy fiókra az [Apple Developer Enterprise Programban](https://developer.apple.com/programs/enterprise/), valamint az Apple Developerhez csatolt, az alkalmazás-aláíráshoz használt néhány entitásra.
+
+Az iOS-alkalmazások szervezeten belüli felhasználók számára való terjesztésével kapcsolatban további információkat talál a hivatalos útmutatóban: [Az Apple Developer Enterprise Program alkalmazásainak terjesztése](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1).
+
+Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szükség:
+
+* Fejlesztői fiók az Apple Developer Enterprise Programban.
+
+* Aláíró tanúsítvány belső és alkalmi terjesztéshez érvényes csoportazonosítóval.
+
+  * Az Intune App Wrapping Tool paramétereként az aláíró tanúsítvány SHA1 kivonatát kell megadni.
+
+
+* Belső terjesztési létesítési profil.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Az Apple Developer Enterprise-fiók létrehozásának lépései
+1. Keresse fel az [Apple Developer Enterprise Program webhelyét](https://developer.apple.com/programs/enterprise/).
+
+2. Kattintson a lap jobb felső részén látható **Enroll** (Regisztráció) lehetőségre.
+
+3. Tekintse át a regisztrációhoz szükséges feltételeket. Kattintson a lap alján látható **Start Your Enrollment** (Regisztráció indítása) lehetőségre.
+
+4. **Jelentkezzen be** a szervezet Apple ID-jával. Ha még nem rendelkezik azonosítóval, kattintson a **Create Apple ID** (Apple ID létrehozása) gombra.
+
+5. Válassza ki az **Entitástípust**, és kattintson a **Folytatás** gombra.
+
+6. Töltse ki az űrlapot a szervezet adataival. Kattintson a **Folytatás**gombra. Ekkor az Apple felveszi Önnel a kapcsolatot, hogy ellenőrizze jogosultságát a szervezet regisztrálására.
+
+8. Az ellenőrzés után kattintson az **Agree to License** (Elfogadom a licencfeltételeket) gombra.
+
+9. A licencfeltételek elfogadása után a befejező lépés **a program megvásárlása és aktiválása**.
+
+10. Ha Ön csoportügynök (a szervezet nevében az Apple Developer Enterprise Programba belépő személy), kezdje a csoport kiépítésével: vonjon be csoporttagokat, és rendeljen hozzájuk szerepköröket. A csoport szervezésével kapcsolatban az Apple-dokumentáció [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (Fejlesztői fiók csapatának szervezése) című fejezete nyújt útmutatást.
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Az Apple aláíró tanúsítvány létrehozásának lépései
+
+1. Keresse fel az [Apple fejlesztői portált](https://developer.apple.com/).
+
+2. Kattintson a lap jobb felső részén látható **Account** (Fiók) lehetőségre.
+
+3. **Jelentkezzen be** a szervezet Apple ID-jával.
+
+4. Kattintson a **Certificates, IDs & Profiles** (Tanúsítványok, azonosítók és profilok) lehetőségre.
+
+  ![Apple fejlesztői portál](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Kattintson az ![Apple fejlesztői portál plusz jel](../media/app-wrapper/iOS-signing-cert-2.png) jelre a jobb felső sarokban iOS-tanúsítvány hozzáadásához.
+
+6. A **Production** (Éles üzem) alatt létrehozhat **Belső és Ad Hoc** tanúsítványokat.
+
+  ![Belső és Ad Hoc tanúsítvány kiválasztása](../media/app-wrapper/iOS-signing-cert-3.png)
+
+>[!NOTE]
+>Ha az alkalmazást nem tervezi terjeszteni, csak belső tesztelésre szánja, akkor iOS App Development (iOS-alkalmazásfejlesztési) tanúsítványt is használhat a Production típusú helyett. Fejlesztői tanúsítvány használata esetén bizonyosodjon meg róla, hogy a mobil kiépítési profil megadja, hogy mely eszközökre fog települni az alkalmazás.
+
+7. Kattintson a **Next** (Folytatás) gombra a lap alján.
+
+8. Olvassa el az útmutatót a **Certificate Signing Request (CSR)** (tanúsítvány-aláírási kérelem) Keychain Access alkalmazással való létrehozásáról macOS rendszerű számítógépen.
+
+  ![CSR létrehozásának útmutatója](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. A fenti útmutatót használva hozzon létre tanúsítvány-aláírási kérelmet. Indítsa el a macOS-számítógépen a **Keychain Access** alkalmazást.
+
+10. A képernyő felső részén a macOS menüsorában válassza a **Keychain Access > Certificate Assistant (Tanúsítványsegéd) >  Request a Certificate From a Certificate Authority (Tanúsítvány kérése hitelesítésszolgáltatótól)** elemet.  
+
+  ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. CSR-fájl létrehozásához kövesse az Apple fejlesztői webhely fenti útmutatóját. A CSR-fájlt mentse el a macOS-számítógépre.
+
+  ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Térjen vissza az Apple fejlesztői webhelyre. Kattintson a **Folytatás**gombra. Töltse fel a CSR-fájlt.
+
+13. Az Apple létrehozza az aláíró tanúsítványt. Töltse le, majd mentse el egy könnyen megtalálható helyre a macOS-számítógépen.
+
+  ![Aláíró tanúsítvány letöltése](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. A tanúsítvány kulcslánchoz való hozzáadásához kattintson duplán a letöltött tanúsítványfájlra.
+
+15. Nyissa meg újra a **Keychain Access** alkalmazást. Az ablak jobb felső részében található keresősávval keresse meg a tanúsítványt. Kattintson jobb egérgombbal a megtalált elemre a menü megjelenítéséhez, majd kattintson a **Get Info** (Információk) lehetőségre. A példaképernyőkön fejlesztési tanúsítványt használunk éles üzemi tanúsítvány helyett.
+
+
+  ![Tanúsítvány hozzáadása a kulcslánchoz](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Ekkor megjelenik egy információs ablak. Görgessen az ablak aljára, és keresse meg a **Fingerprints** (Ujjlenyomatok) címkét. Másolja ki az (itt homályosan látható) **SHA1** karakterláncot, és használja ezt az App Wrapping Tool -c paraméterének argumentumaként.
+
+  ![Tanúsítvány hozzáadása a kulcslánchoz](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Belső terjesztési létesítési profil létrehozásának lépései
+
+1. Látogasson vissza az [Apple fejlesztői portálra](https://developer.apple.com/account/), és **jelentkezzen be** a szervezeti Apple ID-jával.
+
+2. Kattintson a **Certificates, IDs & Profiles** (Tanúsítványok, azonosítók és profilok) lehetőségre.
+
+3. Kattintson az ![Apple fejlesztői portál plusz jel](../media/app-wrapper/iOS-signing-cert-2.png) jelre a jobb felső sarokban iOS-beli létesítési profil hozzáadásához.
+
+4. A **Distribution** (Terjesztés) alatt létrehozhat **In House** (Belső) létesítési profilt.
+
+  ![Belső létesítési profil kiválasztása](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Kattintson a **Folytatás**gombra. Fontos, hogy az előzőekben létrehozott aláíró-tanúsítványt összekapcsolja a létesítési profillal.
+
+6. Az útmutató alapján töltse le a profilt (.mobileprovision kiterjesztéssel) a macOS-számítógépre.
+
+7. Mentse a fájlt egy könnyen megtalálható helyre. Ezt a fájlt kell majd használni az App Wrapping Tool -p paraméteréhez.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Az App Wrapping Tool letöltése
 
 1.  Töltse le az alkalmazásburkoló eszköz fájljait a [GitHubról](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) egy macOS-számítógépre.
 
@@ -277,6 +402,6 @@ Az alkalmazásburkoló eszköz használata során kövesse az alábbi biztonság
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
