@@ -1,26 +1,30 @@
 ---
-title: "Vállalati Windows Áruházbeli alkalmazások felügyelete | Microsoft Intune"
+title: "Vállalati Windows Áruházbeli alkalmazások felügyelete | Microsoft Docs"
 description: "Csatlakoztassa a Microsoft Intune-t a Vállalati Windows Áruházhoz, ha szeretné az Intune-konzolról felügyelni a mennyiségi programban vásárolt alkalmazásokat"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
+ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>A Vállalati Windows Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A [Vállalati Windows Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy nagyobb mennyiségben. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Intune-konzolról kezelheti. Példa:
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
 * A szinkronizált alkalmazások megjelennek az Intune felügyeleti konzolján, és a többi alkalmazáshoz hasonlóan telepítheti őket.
@@ -43,6 +47,9 @@ Mielőtt engedélyezné a szinkronizálást az Intune-konzolon, konfigurálnia k
 2. A Vállalati Áruházban válassza a **Beállítások** > **Felügyeleti eszközök** lehetőséget.
 3. A Felügyeleti eszközök lapon válassza a **Felügyeleti eszköz hozzáadása**, majd a **Microsoft Intune** lehetőséget.
 
+> [!NOTE]
+> Ha több felügyeleti eszközt is használ a Vállalati Windows Áruházbeli alkalmazások üzembe helyezésére, akkor korábban ezek közül csak egyet társíthatott a Vállalati Windows Áruházhoz. Mostantól több felügyeleti eszközzel is megteheti ezt (például az Intune-nal és a Configuration Managerrel).
+
 Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az Intune-konzolon.
 
 ## <a name="configure-synchronization"></a>A szinkronizálás konfigurálása
@@ -60,7 +67,7 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 
 1. Az áruházban vásárolt alkalmazásoknak az Intune-nal való szinkronizálásához a **Vállalati Windows Áruház** lapon válassza a **Szinkronizálás** elemet.
 2. Az **Alkalmazások** munkaterületen válassza az **Alkalmazások** > **Mennyiségi licencszerződés keretében vásárolt alkalmazások** elemet. Ekkor láthatja a telepíthető alkalmazásokat, és ellenőrizheti, hogy a megvásárolt alkalmazások importálása hibátlanul megtörtént-e. Az ebben a csomópontban található alkalmazásoknál megjelenik az Ön összes licencének és az Ön által elérhető licenceknek a száma.
-Megvásárolhatja például a Vállalati portál alkalmazást (online licenccel) a Vállalati Windows Áruházban, szinkronizálhatja az Intune-konzollal, és szükséges alkalmazásként telepítheti a kívánt Windows 10 rendszerű eszközökre. 
+Megvásárolhatja például a Céges portál alkalmazást (online licenccel) a Vállalati Windows Áruházban, szinkronizálhatja az Intune-konzollal, és szükséges alkalmazásként telepítheti a kívánt Windows 10 rendszerű eszközökre. 
 
 
 ## <a name="deploy-apps"></a>Alkalmazások telepítése
@@ -80,6 +87,6 @@ A Vállalati Windows Áruházból származó alkalmazások központi telepítés
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

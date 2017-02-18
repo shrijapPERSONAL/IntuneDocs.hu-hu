@@ -1,11 +1,11 @@
 ---
-title: VPN-kapcsolatok | Microsoft Intune
+title: VPN-kapcsolatok | Microsoft Docs
 description: "A VPN-profilok beállításával a szervezetében lévő felhasználókra és eszközökre alkalmazhatja a VPN-beállításokat."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
+ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-kapcsolatok a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy *VPN-csatlakozási profil* használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. A Microsoft Intune *VPN-profiljainak* beállításával a szervezet felhasználóira és eszközeire alkalmazhatja a VPN-beállításokat, így könnyedén és biztonságosan kapcsolódhatnak a hálózathoz.
 
@@ -38,20 +41,16 @@ VPN-profilokkal a következő típusú eszközök konfigurálhatók:
 
 A VPN-profil konfigurációs beállításai a kiválasztott eszköztípustól függően eltérhetnek.
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## <a name="vpn-connection-types"></a>VPN-kapcsolat típusai
 
 Az Intune a következő kapcsolattípusokat használó VPN-profilok létrehozását támogatja:
-
-
 
 
 Kapcsolat típusa |iOS és Mac OS X  |Android és Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|A Windows 10 asztali és mobilverziója |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Igen |Igen   |Nem    |Nem  |Nem    | Igen (OMA-URI, csak mobil)|     
 Cisco (IPsec)|Igen |Igen   |Nem  |Nem  |Nem | Nem|
-Citrix|Igen |Nem   |Nem  |Nem  |Nem | Nem|
+Citrix|Igen |Igen (csak Android esetén)   |Nem  |Nem  |Nem | Nem|
 Pulse Secure|Igen  |Igen |Igen   |Igen  |Igen| Igen|        
 F5 Edge Client|Igen |Igen |Igen |Igen  |   Igen |  Igen|   
 Dell SonicWALL Mobile Connect|Igen |Igen |Igen |Igen |Igen |Igen|         
@@ -67,7 +66,7 @@ L2TP|iOS-eszközök egyéni profilja|Nem |Nem |Nem|Igen (OMA-URI)|Igen|
 > [!IMPORTANT]
 > Az eszközökre alkalmazott VPN-profilok használatához telepítenie kell a megfelelő VPN-alkalmazást a profilhoz. A megfelelő alkalmazás Intune-nal történő telepítéséhez a következő dokumentumban talál segítséget: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).  
 
- Az [Egyéni konfigurációk VPN-profilokhoz](custom-configurations-for-vpn-profiles.md) című szakaszból tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
+ Az [Egyéni konfigurációk VPN-profilokhoz](create-custom-vpn-profiles.md) című szakaszból tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>A VPN-profilok védelmének biztosítása
 
@@ -194,13 +193,8 @@ A sikeres alkalmazást követően a felhasználók látni fogják az eszközük�
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
 
-### <a name="see-also"></a>További információ
-[Egyéni konfigurációk VPN-profilokhoz](Custom-configurations-for-VPN-profiles.md)
-
-[Alkalmazásonkénti VPN az Android Pulse Secure használatával](per-app-vpn-for-android-pulse-secure.md)
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

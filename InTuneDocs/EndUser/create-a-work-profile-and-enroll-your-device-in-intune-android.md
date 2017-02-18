@@ -1,21 +1,25 @@
 ---
-title: "Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban | Microsoft Intune"
-description: "Egy Android-eszköz titkosítását ismerteti"
+title: "Eszközök regisztrálása munkahelyi profillal | Microsoft Docs"
+description: "Androidos eszközök biztonságának fokozása munkahelyi profilokkal"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -69,7 +73,7 @@ Munkahelyi profil létrehozása:
 
     Rövid időre megjelenik a következő üzenet: "Eszköz regisztrálása folyamatban."
 
-11. Amikor a **Vállalati hozzáférés beállítása** képernyőn látja, hogy minden megfelelően be lett állítva, koppintson a **FOLYTATÁS** elemre. 
+11. Amikor a **Vállalati hozzáférés beállítása** képernyőn látja, hogy minden megfelelően be lett állítva, koppintson a **FOLYTATÁS** elemre.
 
     ![A Vállalati hozzáférés beállítása jelzi, hogy a munkahelyi profil beállítása és regisztrálása befejeződött](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -85,8 +89,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

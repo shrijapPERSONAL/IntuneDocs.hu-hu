@@ -1,11 +1,11 @@
 ---
-title: "A vállalat által birtokolt eszközök felügyelete | Microsoft Intune"
+title: "Vállalati tulajdonú eszközök felügyelete | Microsoft Docs"
 description: "A vállalat által birtokolt eszközöket többféleképpen regisztrálhatja az eszköz típusa, megvásárlásának módja és a szervezet igényei alapján."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,21 @@ ms.technology:
 ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
+ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>A vállalati tulajdonú eszközök regisztrálása az Intune-nal
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune-nal felügyelendő szervezeti vagy vállalati tulajdonú eszközöket többféleképpen regisztrálhatja, az eszköz típusától, megvásárlásának módjától, illetve a szervezet igényeitől függően. Telepítheti a Munkahelyi portál alkalmazást is a vállalati tulajdonban lévő eszközök regisztrálásához és felügyeletéhez, például a „saját eszköz használata” (BYOD) forgatókönyvek esetében.
+
+Alapértelmezés szerint platformtól függetlenül minden eszköz regisztrációja engedélyezett az Intune-ban. Az eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](http://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, és törölje a letiltandó platformokhoz tartozó megfelelő jelölőnégyzeteket.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>A vállalat által birtokolt iOS-eszközök regisztrálása
 
@@ -59,10 +64,10 @@ Az Intune az alábbi feltételek bármelyikének teljesülése esetén „céges
  - Az eszköz gyártója [előzetesen deklarálta az eszközt IMEI-szám használatával](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) (bármely, IMEI számokat használó platformon).
  - Az eszköz regisztrálva van az [Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (csak Windows 10 esetén).
 
-Ha egy eszköz vállalati tulajdonúként lett megjelölve, az eszköz bejegyzésénél a **Céges** szöveg jelenik meg a **ulajdonos** oszlopban a felügyeleti konzolon. 
+Ha egy eszköz vállalati tulajdonúként lett megjelölve, az eszköz bejegyzésénél a **Céges** szöveg jelenik meg a **Tulajdonos** oszlopban a felügyeleti konzolon. 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

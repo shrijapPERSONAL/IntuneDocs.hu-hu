@@ -1,5 +1,5 @@
 ---
-title: "Az IMEI-számok megadása | Microsoft Intune"
+title: "Az IMEI-számok megadása | Microsoft Docs"
 description: "A Microsoft Intune-nal a rendszergazdák IMEI-számokat importálhatnak a mobileszközplatformokra, így könnyebben azonosíthatják a vállalati tulajdonban lévő mobileszközöket"
 keywords: 
 author: staciebarker
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
-ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
+ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
+ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 
 ---
 
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilkészülék-azonosító (IMEI-) számokat importáljanak IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsák a vállalati tulajdonban lévő mobileszközöket. Az eszközök Intune-ban való regisztrációja után az IMEI-számokat importáló eszközöket itt találja: **Csoportok** > **Áttekintés** > **Összes eszköz**. Az **Eszközcsoport** felsorolja az importált IMEI-számmal rendelkező eszközöket **Vállalati** értékkel látják el a **Tulajdonos** oszlopban.
 
 1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **IMEI-szám szerint (minden platform)** területre, majd válassza az **Eszközök felvétele** lehetőséget. Két módon adhat hozzá eszközöket:
@@ -48,8 +52,11 @@ A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilké
 
 Amikor az adott IMEI-számmal rendelkező eszközt regisztrálják az Intune-ban – általában akkor, amikor egy felhasználó telepíti a Vállalati portál alkalmazást, és elvégzi a regisztrációs folyamatot –, az eszköz Vállalati címkével fog rendelkezni, és regisztráltként jelenik meg az **IMEI-eszközök** csoportban.
 
+>[!NOTE] 
+> Ha a szervezet a közeljövőben az új Azure Portalra lesz migrálva, akkor ennek a funkciónak a működésében változást fognak tapasztalni. Az Intune korábbi felügyeleti konzolján a rendszergazdák feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes hardverazonosítók korábbi részleteit. Az új Azure Portalon automatikusan felül lehet írni az összes hardverazonosító részleteit, vagy figyelmen kívül hagyni a korábbi azonosítók újabb adatait.
 
 
-<!--HONumber=Nov16_HO3-->
+
+<!--HONumber=Feb17_HO1-->
 
 
