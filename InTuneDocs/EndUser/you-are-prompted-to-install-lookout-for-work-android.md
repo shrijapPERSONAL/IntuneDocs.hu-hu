@@ -1,25 +1,28 @@
 ---
-title: "A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön | Microsoft Intune"
+title: "Telepítenie kell a Lookout for Work alkalmazást a Windows-eszközön | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>A rendszer felszólítja a Lookout for Work telepítésére
+# <a name="you-need-to-install-lookout-for-work"></a>Telepítenie kell a Lookout for Work alkalmazást
 
 A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
 
@@ -28,13 +31,13 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 **A következőket kell tennie:**
 
-1.  Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Lookout for Work telepítése a Play Áruházból** gombra.
+1.    Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Lookout for Work telepítése a Play Áruházból** gombra.
 
     ![a rendszer felszólítja a Lookout for Work telepítésére](./media/lookout-required-app-install-android.png)
 
     Ekkor megnyílik a Lookout for Work telepítési lapja a Play Áruházban.
 
-2.  Telepítse a Lookout for Worköt, majd koppintson az **ELFOGADÁS** gombra, hogy a Lookout for Work hozzáférjen eszközéhez.
+2.    Telepítse a Lookout for Worköt, majd koppintson az **ELFOGADÁS** gombra, hogy a Lookout for Work hozzáférjen eszközéhez.
 
     ![koppintson az Elfogadás gombra, hogy a Lookout for Work hozzáférhessen eszközéhez](./media/lookout-accept-store-permissions-android.png)
 
@@ -76,12 +79,12 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 **Ha sikertelen a telepítés**
 
-Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, próbálja meg a Play Áruházból telepíteni a Lookout for Worköt: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, próbálja meg a Play Áruházból telepíteni a Lookout for Worköt: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

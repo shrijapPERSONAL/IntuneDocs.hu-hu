@@ -1,12 +1,12 @@
 ---
 
-title: "Android- és Samsung KNOX Standard-eszközök konfigurációs szabályzatának beállításai | Microsoft Intune"
+title: "Android- és Samsung KNOX-eszközök konfigurációs szabályzatának beállításai | Microsoft Docs"
 description: "Szabályzatok létrehozása, amelyek vezérlik a beállításokat és a szolgáltatásokat az Intune-nal felügyelt Android-eszközökön."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök konfigurációs szabályzatának beállításai a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune egy sor Android-eszközökön konfigurálható általános beállítást biztosít. Ezek mellett megadhat Open Mobile Alliance Uniform Resource Identifier (OMA-URI) értékeket is olyan egyéni beállítások létrehozásához, amelyek nem érhetők el az Intune-ban.
 
@@ -144,6 +147,8 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
 
+A megfelelő és nem megfelelő alkalmazás-beállításokat is tartalmazó szabályzatokat telepíteni kell a felhasználói csoportok számára.
+
 ### <a name="kiosk-mode-settings"></a>Teljes képernyős mód beállításai
 Adja meg a következő értékeket a **Samsung KNOX Standard**-eszközök beállításhoz:
 
@@ -177,9 +182,7 @@ Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre
 A Microsoft Intune **Androidos egyéni konfigurációs szabályzatával** OMA-URI-beállításokat léptethet érvénybe, amelyekkel vezérelhetők az Android-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
 Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
-
-> [!NOTE]
-> Jelenleg az egyéni Android-házirendek csak az előmegosztott kulcsot tartalmazó Android-eszközök Wi-Fi beállításainak konfigurálását támogatják.
+Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E témakör példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
 
 ### <a name="general-settings"></a>Általános beállítások
 
@@ -209,6 +212,6 @@ Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem ko
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

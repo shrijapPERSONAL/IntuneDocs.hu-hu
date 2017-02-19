@@ -1,28 +1,31 @@
 ---
-title: "Eszköz manuális szinkronizálása a Vállalati portál webhely használatával | Microsoft Intune"
+title: "Eszközök szinkronizálása a Céges portál webhelyről | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 1dded693cb60bacb9c0a445bb26c818dde778a7a
 
 
 ---
 
 
-# <a name="use-the-company-portal-website-to-sync-your-device"></a>Eszközök szinkronizálása a Munkahelyi portál webhelyről
+# <a name="sync-your-device-with-the-company-portal-website"></a>Eszközök szinkronizálása a Céges portál webhelyről
 
 Előfordulhat, hogy egy alkalmazás telepítése vagy más művelet az átlagosnál hosszabb időt vesz igénybe. Ha a művelet túl sokáig tart, manuálisan is szinkronizálhatja eszközét, hogy felgyorsítsa az eljárást.
 
@@ -36,6 +39,6 @@ Előfordulhat, hogy egy alkalmazás telepítése vagy más művelet az átlagosn
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

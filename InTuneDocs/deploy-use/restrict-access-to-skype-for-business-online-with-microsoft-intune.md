@@ -1,11 +1,11 @@
 ---
-title: "A Skype Vállalati online verzió elérésének korlátozása | Microsoft Intune"
+title: "A Skype Vállalati online verzió védelme | Microsoft Docs"
 description: "A feltételes hozzáférés funkció segítségével védheti és felügyelheti a Skype Vállalati online verzióhoz való hozzáférést."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>A Skype Vállalati online verzió elérésének korlátozása a Microsoft Intune-nal
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>A Skype Vállalati online verzió elérésének védelme a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Skype Vállalati online verzióhoz való hozzáférés korlátozásához állítson be a **Skype Vállalati online verzióra** vonatkozó feltételes hozzáférési szabályzatot.
 A feltételes hozzáférés két összetevőből áll:
 - Egy eszközmegfelelőségi szabályzatból, amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
 - Egy feltételes hozzáférési szabályzatból, amelyben meghatározhatja azokat a feltételeket, amelyeknek az eszköznek meg kell felelnie ahhoz, hogy hozzáférhessen a szolgáltatáshoz.
-Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
+Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek és az O365-szolgáltatások elérésének védelme](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
 Amikor egy célzott felhasználó a Skype Vállalati online verziót szeretné használni eszközén, a következő ellenőrzés megy végbe:
 
@@ -117,6 +121,6 @@ Válassza ki a kívánt mobileszközök csoportját. Majd az **Eszközök** lapo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

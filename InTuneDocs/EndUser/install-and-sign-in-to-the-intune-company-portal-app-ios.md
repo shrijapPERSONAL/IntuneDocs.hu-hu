@@ -1,28 +1,31 @@
 ---
-title: "Az Intune Vállalati portál alkalmazásának telepítése, majd bejelentkezés a portálra | Microsoft Intune"
+title: "A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Az Intune Vállalati portál alkalmazásának telepítése, majd bejelentkezés a portálra
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra
 
 Az iOS-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, levelezéshez és hálózathoz.  Ehhez előbb telepíteni kell a Vállalati portál alkalmazást, majd azt használva regisztrálni kell az adott eszközt a Microsoft Intune-ban. További információkat a [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című részben talál.
 
@@ -40,6 +43,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

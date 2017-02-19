@@ -1,31 +1,34 @@
 ---
-title: "A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön | Microsoft Intune"
+title: "Telepítenie kell a Lookout for Work alkalmazást az iOS-eszközön | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>A rendszer felszólítja a Lookout for Work telepítésére az iOS-eszközön
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>Telepítenie kell a Lookout for Work alkalmazást az iOS-eszközön
 
 A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához, amely az esetleges fenyegetések felderítésével segít az eszköz védelmében. Elképzelhető, hogy különböző üzenetek jelennek meg az eszköz kijelzőjén attól függően, hogy a rendszergazda hogyan állította be a Lookout for Work alkalmazást.
 
 **A következőket kell tennie:**
 
-1.  Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Lookout for Work telepítését az eszközön.
+1.    Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Lookout for Work telepítését az eszközön.
 
     ![A Telepítés gombra koppintással telepítheti a Lookout for Work alkalmazást](./media/ios-lfw-install-app-request.png)
 
@@ -41,7 +44,7 @@ A rendszergazda csak a Lookout for Work alkalmazás telepítését követően te
 
     ![Koppintson a Beállítások, majd a Helyalapú szolgáltatások gombra](./media/ios-lfw-allow-notifications.png)
 
-    
+
 A Lookout for Work telepítése befejeződik, és a következő képernyő jelenik meg, ha a rendszer nem talál biztonsági fenyegetést az eszközön.
 
 ![A Lookout for Work nem talált biztonsági fenyegetést](./media/ios-lfw-no-threats-found.png)
@@ -54,7 +57,6 @@ Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai o
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

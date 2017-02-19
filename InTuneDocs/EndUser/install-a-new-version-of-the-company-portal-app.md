@@ -1,25 +1,28 @@
 ---
-title: "A Vállalati portál alkalmazás új verziójának telepítése | Microsoft Intune"
+title: "A Céges portál alkalmazás frissítése | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e831586172ef700b869a392d9938821b004f1e04
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
 
 
 ---
 
-# <a name="install-a-new-version-of-the-company-portal-app"></a>A Vállalati portál alkalmazás új verziójának telepítése
+# <a name="how-to-update-the-company-portal-app"></a>A Céges portál alkalmazás frissítése
 
 Ha a Vállalati portál alkalmazás verziója már nem támogatott, vagy elérhető egy újabb Vállalati portál-verzió, akkor az alkalmazást frissítenie kell az újabb verzióra. Kövesse az eszköze típusának megfelelő lépéseket.
 
@@ -51,6 +54,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

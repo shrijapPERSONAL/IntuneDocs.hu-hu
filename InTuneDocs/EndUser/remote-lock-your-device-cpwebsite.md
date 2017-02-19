@@ -1,5 +1,5 @@
 ---
-title: "Az eszköz távoli zárolása a Vállalati portál webhelyéről | Microsoft Docs"
+title: "Eszköz zárolása a Céges portálról | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -39,13 +40,13 @@ A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [V�
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>A Távoli zárolás funkció használata az eszköz zárolásához
 
-1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) koppintson annak az eszköznek a nevére, amelyet zárolni szeretne.
+1.    A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) koppintson annak az eszköznek a nevére, amelyet zárolni szeretne.
 
-2.  Koppintson a **Távoli zárolás** elemre.
+2.    Koppintson a **Távoli zárolás** elemre.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
+3.    Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
 
     Miután a **Távoli zárolás** lehetőségre koppintott, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
@@ -64,6 +65,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

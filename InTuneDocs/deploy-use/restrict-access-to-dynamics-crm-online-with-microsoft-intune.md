@@ -1,11 +1,11 @@
 ---
-title: "A Dynamics CRM Online-hoz való hozzáférés korlátozása| Microsoft Intune"
+title: "A Dynamics CRM Online védelme| Microsoft Docs"
 description: "Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>A Dynamics CRM Online-hoz való hozzáférés korlátozása az Intune-nal
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>A Dynamics CRM Online-hoz való hozzáférés védelme az Intune használatával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Dynamics CRM Online-hoz való hozzáférést iOS- és Android-eszközökről a Microsoft Intune feltételes hozzáférési funkciójával szabályozhatja.  Az Intune feltételes hozzáférése két összetevőből áll:
 * Egy [eszközmegfelelőségi szabályzatból](introduction-to-device-compliance-policies-in-microsoft-intune.md), amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
 * Egy [feltételes hozzáférési szabályzatból](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), amelyben meghatározhatja azokat a feltételeket, amelyeknek az eszköznek meg kell felelnie ahhoz, hogy hozzáférhessen a szolgáltatáshoz.
 
-Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el a [Restrict access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása) című cikket.
+Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az Office 365- és egyéb szolgáltatások elérésének védelme](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
 > [!IMPORTANT]
 > A feltételes hozzáférés üzembe helyezéséhez az Intune és az Azure Active Directory Premium előfizetése is szükséges, a felhasználóknak pedig mindkét termékhez licenccel kell rendelkezniük. Az **Enterprise Mobility + Security (EMS) előfizetés** az Intune és az Azure Active Directory Premium előfizetését is tartalmazza. További részleteket az [Enterprise Mobility díjszabását ismertető lapon](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) talál. Ha nem rendelkezik EMS-előfizetéssel, előfizethet a Premium szintű Azure Active Directoryra. Lásd az [Azure Active Directory díjszabását ismertető lapot](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -78,8 +82,8 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
   * **iOS**
   * **Android--**
 4.  A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directorybeli biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
-5.  A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
-6.  Ha elkészült, válassza a **Mentés** elemet.
+5.    A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
+6.    Ha elkészült, válassza a **Mentés** elemet.
 
 Ezzel elvégezte a Dynamics CRM feltételes elérésének beállítását. A feltételes hozzáférési szabályzatot nem kell telepítenie, az azonnal érvénybe lép.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>A megfelelőség és a feltételes hozzáférési házirendek megfigyelése
@@ -92,15 +96,15 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 * **Az AAD-ben regisztrált és megfelelő eszközök**. Ezek az eszközök hozzáférhetnek a Dynamics CRM-hez.
 
 ##  <a name="next-steps"></a>További lépések
-* [A Exchange Online-hoz való hozzáférés korlátozása](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [A Exchange Online-hoz való hozzáférés védelme](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [A helyszíni Exchange-hez való hozzáférés korlátozása](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [A SharePoint Online-hoz való hozzáférés korlátozása](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [A helyszíni Exchange-hez való hozzáférés védelme](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [A SharePoint Online-hoz való hozzáférés védelme](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [A Skype Vállalati online verzióhoz való hozzáférés korlátozása](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [A Skype Vállalati online verzióhoz való hozzáférés védelme](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

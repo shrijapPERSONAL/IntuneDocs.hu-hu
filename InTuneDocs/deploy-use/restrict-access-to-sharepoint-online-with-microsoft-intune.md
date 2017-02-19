@@ -1,11 +1,11 @@
 ---
-title: "A SharePoint Online-hoz való hozzáférés korlátozása | Microsoft Intune"
+title: "A SharePoint Online védelme | Microsoft Docs"
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati adatokhoz való hozzáférést a SharePoint Online-on."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>A SharePoint Online-hoz való hozzáférés korlátozása a Microsoft Intune-nal
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>A SharePoint Online-hoz való hozzáférés védelme a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Használja az [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] feltételes hozzáférés funkcióját a SharePoint Online-on lévő fájlok elérésének szabályozására.
 A feltételes hozzáférés két összetevőből áll:
 - Egy eszközmegfelelőségi szabályzatból, amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
 - Egy feltételes hozzáférési szabályzatból, amelyben meghatározhatja azokat a feltételeket, amelyeknek az eszköznek meg kell felelnie ahhoz, hogy hozzáférhessen a szolgáltatáshoz.
-Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az Office 365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című témakört.
+Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az O365- és egyéb szolgáltatások elérésének védelme](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című témakört.
 
 A megfelelőségi és a feltételes hozzáférési szabályzatokat a felhasználók számára lépteti életbe. A rendszer minden olyan eszköz megfelelőségét ellenőrzi, amelyről a felhasználó használja a szolgáltatásokat.
 
@@ -66,7 +70,7 @@ A következők támogatottak:
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s vagy újabb verziók
 - Windows Phone 8.1 és újabb verziók
 
-Letilthatja, hogy az **iOS-** és **Android-**eszközökön futó böngészők elérhessék a SharePoint Online-t. A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
+Védheti a SharePoint Online-hoz való hozzáférést, ha a SharePoint Online-t **iOS-** és **Android-**eszközökön futó böngészővel érik el. A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS és Android 5.0 és újabb)
@@ -140,7 +144,7 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
         Ha ezt a beállítást szeretné használni, a **SharePoint Online** elérésére használt összes eszközt regisztrálni kell az Intune-ban, és ezeknek meg kell felelniük a szabályzatoknak. Minden **modern hitelesítést** használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik. Ha a platformot az Intune jelenleg nem támogatja, akkor a **SharePoint Online**-hoz sem lehet róla hozzáférni.
 
         A **Minden platform** beállítás kiválasztása esetén az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül. Az alábbiakat kivéve minden platform köteles regisztrálni, illetve megfelelni a szabályzatoknak:
-        *   Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
+        *    Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
         * Nem támogatott platformok, például a Mac. Azonban az ezekről a platformokról származó, de modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
 
     -   **Megadott platformok**
@@ -192,10 +196,10 @@ Válassza ki a kívánt mobileszközök csoportját. Ezután az **Eszközök** l
 -   **Az AAD-ben regisztrált és megfelelő eszközök**. Ezeknek az eszközöknek engedélyezett a SharePoint Online elérése.
 
 ### <a name="see-also"></a>További információ
-[Az e-mailek és az O365-szolgáltatások elérésének korlátozása a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Az e-mailek és az O365-szolgáltatások elérésének védelme a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

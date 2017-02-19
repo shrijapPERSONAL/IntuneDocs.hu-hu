@@ -1,30 +1,34 @@
 ---
-title: "Az Android-eszköz zárolása előtti időtartam megadása | Microsoft Intune"
+title: "A képernyő zárolása előtt eltelő idő beállítása | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
 
 
 ---
 
-# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Az Android-eszköz zárolása előtti időtartam megadása
+# <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Az Android-eszköz képernyőjének zárolása előtt eltelő idő beállítása
+
 Ha újra csatlakozni szeretne a munkájához, meg kell adnia a jelszó időkorlátját az eszközén az eszköztípusnak megfelelő lépéseket követve.
 
-## <a name="native-nonsamsung-knox-device"></a>Natív (nem Samsung KNOX-) eszköz
+## <a name="native-non-samsung-knox-device"></a>Natív (nem Samsung KNOX-) eszköz
 
 1.  Eszköze **beállításai** között koppintson a **Biztonság** &gt; **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) elemre.
 
@@ -44,6 +48,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

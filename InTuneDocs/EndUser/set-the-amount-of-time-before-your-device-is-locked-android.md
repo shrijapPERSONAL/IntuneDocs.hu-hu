@@ -1,28 +1,31 @@
 ---
-title: "Annak az időtartamnak a beállítása, amely után az eszköz zárolva lesz | Microsoft Intune"
+title: "Eszköz zárolása előtti időtartam megadása | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 471c30b4849c77cd73d0e3189cb640586e35c34a
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Annak az időtartamnak a beállítása, amely után az eszköz zárolva lesz
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Annak az időtartamnak a beállítása, amely után az eszköz zárolva lesz
 
 Az Android-eszközön tárolt adatok védelmének növelése érdekében a rendszergazda aktiválhat egy olyan szabályzatot, amely megköveteli, hogy Ön megadja, mennyi ideig tartó tétlenség után zárolódjon az eszköz automatikusan. Az alábbi lépésekkel adhatja meg, hogy mennyi idő elteltével zárolódjon az eszköz.
 
@@ -34,8 +37,6 @@ További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhet
 
 
 
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "E-mailekhez való hozzáférés korlátozása – Példaforgatókönyvek | Microsoft Intune"
+title: "Példák az e-mail-védelem használatára | Microsoft Docs"
 description: "Az alábbiakban néhány példaforgatókönyvet és a feltételes hozzáféréssel történő megvalósításuk módját találhatja."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 0f3c1816591007108fed19682d19ad4b87bd5559
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
 
-# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Az e-mailek elérésének korlátozása a Microsoft Intune használatával: Példaforgatókönyvek
+# <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Az e-mailekhez való hozzáférés védelme a Microsoft Intune használatával – Példaforgatókönyvek
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>1. forgatókönyv: Felhasználók megakadályozása az Exchange Online nem megfelelő eszközökkel való elérésében
 ### <a name="scenario-requirements"></a>Forgatókönyv követelményei
@@ -82,6 +85,6 @@ A következő folyamattal határozható meg, hogy mely eszközök férhetnek hoz
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
