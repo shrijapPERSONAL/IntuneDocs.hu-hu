@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
@@ -30,21 +31,33 @@ Az Intune támogatása és a Configuration Managerrel használt Intune támogat�
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Segítség keresése támogatási jegy megnyitása nélkül
 
-Mielőtt támogatási jegyet hozna létre, keressen válaszokat a következő helyeken:
+Mielőtt támogatási jegyet hozna létre, keressen válaszokat és információkat az alábbi helyeken. Ajánlott megtekinteni [az általános hibaelhárítási tippeket is a Microsoft Intune-hoz](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
 
 ### <a name="microsoft-intune-technet-forums"></a>A Microsoft Intune TechNet fórumai
 
 Tegyen fel kérdést a Microsoft technikai szakembereinek, vagy kezdeményezzen velük beszélgetést! [A Microsoft Intune TechNet fórumán](https://social.technet.microsoft.com/Forums/home) válaszokat és összefüggéseket kereshet.
 
-    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+![A Microsoft Intune TechNet fóruma](./media/technet-forum-for-support.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>A Microsoft Intune UserVoice termék-visszajelzési webhelye
 
 Visszajelzést küldene a Microsoftnak arról, hogy miként lehetne még jobbá tenni az Intune-t? Tudassa velünk ötleteit a Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) visszajelzési webhelyen. Másoknak a UserVoice-on felvetett ötleteire is szavazhat. 
 
-    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
+![A Microsoft Intune UserVoice visszajelzésküldő oldala](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-service-ticket"></a>Online szolgáltatásjegy létrehozása
+## <a name="create-an-online-support-ticket"></a>Online támogatási jegy létrehozása
+
+Ha nem találja a választ az önsegítő erőforrások segítségével, létrehozhat egy online támogatási jegyet.
+
+Annak érdekében, hogy jobban kiszolgálhassuk, **korlátozza az egyes támogatási jegyeket egyetlen problémára**. Ezt a következők miatt kérjük:
+
+- A segítséget nyújtó támogatási szakértők valószínűleg adott területekre specializáltak, és így könnyebben azonosíthatjuk a megfelelő témakörben járatos szakértőket a szóban forgó probléma megoldásához.
+- A mérnöki munkacsoportok fontossági sorrendbe állíthatják munkájukat azon termékterületeken, ahol a legtöbb incidens következik be.
+- Célszerűbb a legtöbb kihívást jelentő problémákat a megfelelő szakértőhöz továbbítani.
+
+Támogatási jegy létrehozása előtt tekintse át [a támogatási incidensek definícióját](#definition-of-a-support-incident).
+
+**Online támogatási jegy létrehozásához:**
 
 1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli hitelesítő adataival.
     >[!NOTE]
@@ -87,12 +100,12 @@ Ha támogatási lapja így néz ki, hajtsa végre az alábbi utasítást:
 ## <a name="get-phone-support"></a>Telefonos segítség
 A [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](contact-assisted-phone-support-for-microsoft-intune.md) témakörben megtalálja az ország és régió szerinti támogatási telefonszámokat, a támogatási órákat és a támogatott nyelveket mindegyik régióhoz.
 
-## <a name="track-your-service-requests"></a>Szolgáltatáskérések nyomon követése
+## <a name="track-your-support-requests"></a>A támogatási kérelmek nyomon követése
 1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli hitelesítő adataival.
 2.  Válassza a **Rendszergazda** csempét.
 3.  A bal oldalon a **Támogatás** elem alatt válassza a **Szolgáltatáskérések** lehetőséget. Ezután megtekintheti a kéréseit.
 
-A szolgáltatáskérésekre adott válasz ideje függ a probléma súlyosságától. A legsúlyosabb problémák esetén a Professional ügyfeleknek két órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Léteznek esetek, mikor:
+A támogatáskérésekre adott válasz ideje függ a probléma súlyosságától. A legsúlyosabb problémák esetén a Professional ügyfeleknek két órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Léteznek esetek, mikor:
 
 - Egy vagy több szolgáltatás nem érhető el, vagy nem használható.
 - A probléma súlyosan érinti a termelést, a műveleteket vagy a központi telepítési határidőket, vagy súlyos következményekkel fog járni a termelésre vagy a nyereségességre nézve.
@@ -115,12 +128,6 @@ A többi probléma esetén a Professional ügyfeleknek nyolc órán belül adunk
 >
 > A System Center Configuration Manager vagy a System Center Endpoint Protection technikai támogatása vagy fizetésköteles, vagy levonásra kerül a meglévő licencelésből vagy Premier támogatási szerződésből.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Problémák megoldása támogatási jegy megnyitása nélkül
-
-Előfordulhat, hogy a probléma megoldásához nem szükséges támogatási jegy megnyitása.
-
-Ha saját maga szeretné megtalálni a választ az Intune használatával kapcsolatos kérdésekre, az [Általános hibaelhárítási tippek a Microsoft Intune rendszerhez](general-troubleshooting-tips-for-microsoft-intune.md) című témakörből, illetve a vonatkozó hibaelhárítási cikkekből tájékozódhat. Emellett az [Intune fórumban](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) is kereshet megoldást vagy kérdést tehet fel.
-
 ## <a name="find-support-for-volume-licensing"></a>A mennyiségi licenc támogatása
 Ha már vásárolt a Microsofttól licenceket a mennyiségi licencprogram keretében, a támogatáshoz használja a következő erőforrásokat:
 
@@ -129,6 +136,16 @@ Ha már vásárolt a Microsofttól licenceket a mennyiségi licencprogram keret�
 -   A számlázási kérdésekhez lásd: [Számlázási és előfizetés-kezelési támogatás](http://support.microsoft.com/oas/default.aspx?prid=15371).
 
 -   A mennyiségi licenceléssel kapcsolatos általános információkhoz lásd: [Mennyiségi licencelés](http://go.microsoft.com/fwlink/p/?LinkID=282015).
+
+## <a name="definition-of-a-support-incident"></a>A támogatási incidensek definíciója
+
+Egy támogatási incidens alatt egyetlen támogatási problémát és a megoldásához szükséges munkát értünk. Egyetlen támogatási probléma alatt olyan problémát értünk, amelyet nem lehet részproblémákra bontani. Amennyiben azonosítani lehet részproblémákat, az egyes részproblémák külön incidenseknek tekintendők. Egy adott probléma megoldása többszöri kapcsolatfelvételt és offline vizsgálatot igényelhet. A megoldások nyújtásával töltött idő független az Önnek felszámított összegtől.
+
+A „javítás/csere” támogatás a Microsoft Intune és az Office 365 rendszerrel kapcsolatos mobileszköz-kezelési előfizetések részét képezi, ezért további támogatási incidensek megnyitásával soha nem keletkeznek többletköltségek.
+
+Kérjük, értse meg, hogy ha a támogatási szakember azt kéri, hogy nyisson meg további támogatási incidenseket a további problémákhoz, akkor mindenki érdekei szempontjából így a legjobb. Köszönjük a megértését és együttműködését abban, hogy világszínvonalú támogatást nyújthassunk!
+
+Az incidensenkénti árakat és a súlyossági szinteket lásd a következő oldalon: [Szakértői támogatási lehetőségek](https://support.microsoft.com/gp/offerprophone).
 
 
 
