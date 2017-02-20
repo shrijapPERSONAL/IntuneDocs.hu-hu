@@ -1,11 +1,11 @@
 ---
-title: "Az Endpoint Protection hibáinak elhárítása | Microsoft Intune"
+title: "Az Endpoint Protection hibáinak elhárítása | Microsoft Docs"
 description: "Megoldhatja a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémákat."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,21 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
 
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
-Az ebben a részben ismertetett információk segítséget nyújtanak a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémák megoldásához.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Az ebben a részben ismertetett információk segítséget nyújtanak a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémák megoldásához. [A Windows Defender hibáinak elhárításával](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10) kapcsolatos információkat is érdemes lehet áttekintenie.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Az Endpoint Protection hibaüzenetei
 Ez a szakasz az [Intune felügyeleti konzoljának](https://manage.microsoft.com) **Endpoint Protection állapota** ablaktáblájában megjelenő következő hibák és figyelmeztetések lehetséges okait és megoldásait ismerteti.
@@ -50,6 +52,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

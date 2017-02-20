@@ -1,11 +1,11 @@
 ---
-title: "Vállalati e-mailek elérése e-mail-profilokkal | Microsoft Intune"
+title: "Vállalati e-mailek elérése e-mail-profilokkal | Microsoft Docs"
 description: "Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Sok mobilplatform az operációs rendszer részét képező natív e-mail-ügyfélprogramot tartalmaz. Egyes ügyfelek a jelen témakörben ismertetett módon e-mail-profilok használatával állíthatók be.
 
@@ -33,11 +34,11 @@ Ha további adatveszteség-megelőzési intézkedéseket szeretne foganatosítan
 A rendszergazdák vagy a felhasználók alternatív e-mail-ügyfélprogramokat is telepíthetnek (például a Microsoft Outlook Android vagy iOS rendszerhez készült változatát). Előfordulhat, hogy ezek az e-mail-ügyfélprogramok nem támogatják az e-mail-profilokat, és nem állíthatók be a Microsoft Intune e-mail-profilok használatával.  
 
 A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram e-mail-profilok segítségével:
--   Windows Phone 8.1 és újabb verziók
--   Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
--   iOS 8.0 és újabb verziók
--   Samsung KNOX Standard (4.0-s és újabb verzió)
--   Android for Work
+-    Windows Phone 8.1 és újabb verziók
+-    Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
+-    iOS 8.0 és újabb verziók
+-    Samsung KNOX Standard (4.0-s és újabb verzió)
+-    Android for Work
 
 >[!NOTE]
 >Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el és támogatják a kapcsolatot az Exchange-dzsel. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt.
@@ -88,7 +89,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
 
     -   **E-mail-profil (Android for Work - Gmail)**
 
-    -   **E-mail-profil (Android for Work - Nine Work)**
+    -    **E-mail-profil (Android for Work - Nine Work)**
 
     Csak egyéni e-mail profilházirendet hozhat létre és telepíthet. Ajánlott beállítások nem állnak rendelkezésre.
 
@@ -134,10 +135,10 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 
 > [!NOTE]
 > - Android for Work használatakor az adott e-mail-profilon kívül telepítse a Gmail vagy a Nine Work alkalmazást is.
-> - Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz.
+> - Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz. Megjegyzendő, hogy ha ez az egy e-mail-profil van az eszközön, nem lehet ezzel a módszerrel eltávolítani.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

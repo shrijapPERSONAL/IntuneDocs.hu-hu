@@ -1,11 +1,11 @@
 ---
-title: "Az adatok védelme távoli törléssel | Microsoft Intune"
+title: "Az adatok védelme távoli törléssel | Microsoft Docs"
 description: "Az Intune a szelektív és a teljes törlési funkcióval is eltávolíthatja a bizalmas vállalati adatokat, valamint a vállalati erőforrásokhoz való hozzáférést."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. Egy távoli törlési parancs kiadásával a felhasználók az Intune Munkahelyi portál segítségével törölhetik az Intune-ban regisztrált saját tulajdonú eszközeik tartalmát.
 
   > [!NOTE]
@@ -114,10 +118,14 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
-|E-mail|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
+|E-mail|Nem alkalmazható. Lásd az Outlook elemet.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
+|Outlook|Az androidos Microsoft Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook adatai nem törlődnek a regisztráció törlésekor.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Az androidos Microsoft Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook adatai nem törlődnek a regisztráció törlésekor.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
+
+**Android for Work**
+
+Az androidos eszközökről a szelektív törlés eltávolítja a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást. Az eszköz így kikerül az Intune felügyelete alól. Az Android for Work esetében a teljes törlés nem támogatott.
 
 **Windows**
 
@@ -165,6 +173,6 @@ A jelentésben az is szerepel, hogy ki végezte az adott műveletet.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

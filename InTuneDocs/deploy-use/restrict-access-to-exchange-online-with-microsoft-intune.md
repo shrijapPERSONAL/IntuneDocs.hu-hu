@@ -1,11 +1,11 @@
 ---
-title: "Az Exchange Online-hoz való e-mailes hozzáférés korlátozása | Microsoft Docs"
+title: "Az Exchange Online-beli e-mailek védelme | Microsoft Docs"
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati e-mailhez való hozzáférést az Exchange Online-on."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,34 +13,39 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Az Exchange Online-hoz és az új dedikált Exchange Online-hoz való e-mail hozzáférés korlátozása
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Az Exchange Online-hoz és az új dedikált Exchange Online-hoz való e-mailes hozzáférés védelme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Az Exchange Online vagy a dedikált Exchange Online szolgáltatásokhoz való feltételes hozzáférést a Microsoft Intune-ban konfigurálhatja. Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az O365- és egyéb szolgáltatások elérésének védelme](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
 > [!NOTE]
 >Ha dedikált Exchange Online-környezettel rendelkezik, és szeretné tudni, hogy az új vagy az örökölt konfiguráció tartozik-e hozzá, lépjen kapcsolatba a fiókkezelővel.
 
-Az Exchange Online-hoz vagy az új dedikált Exchange Online-környezethez való e-mail-hozzáférés vezérléséhez feltételes hozzáférést konfigurálhat a Microsoft Intune-ban az Exchange Online-hoz. Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az O365- és egyéb szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
+## <a name="before-you-begin"></a>Előkészületek
 
-
-**Mielőtt** konfigurálja a feltételes hozzáférést, meg kell felelnie a következő előfeltételeknek:
+A feltételes hozzáférés konfigurálásához az alábbiakra van szükség:
 
 -   Rendelkeznie kell egy olyan **Office 365-előfizetéssel, amely tartalmazza az Exchange Online-t (például E3)**, és a felhasználóknak licenccel kell rendelkezniük az Exchange Online-hoz.
 
 - Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
 
 -  Fontolja meg a választható **Intune szolgáltatások közötti összekötő** beállítását, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t az Exchange Online-hoz csatlakoztatja, és segít Önnek az eszközinformációknak az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján történő kezelésében. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
+    -  További információ az [Intune szolgáltatások közötti összekötőjéről](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Ne konfigurálja a szolgáltatások közötti összekötőt, ha feltételes hozzáférést szeretne használni az Exchange Online-hoz és a helyszíni Exchange-hez.
+   > Ne konfigurálja az Intune szolgáltatások közötti összekötőjét, ha feltételes hozzáférést szeretne használni az Exchange Online-hoz és a helyszíni Exchange-hez.
 
-   Az összekötő konfigurálásának ismertetését lásd: [Intune szolgáltatások közötti összekötő](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Eszközmegfelelőségi követelmények
 
 Ha feltételes hozzáférési szabályzatokat konfigurál és rendel hozzá felhasználókhoz, a felhasználók csak akkor csatlakozhatnak az e-mail-fiókjukhoz, ha a használt **eszköz** megfelel az alábbi feltételeknek:
 
@@ -52,23 +57,25 @@ Ha feltételes hozzáférési szabályzatokat konfigurál és rendel hozzá felh
 
 -   **Megfelel** az eszközre telepített minden [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] megfelelőségi szabályzatnak, vagy tartományhoz van csatlakoztatva egy helyszíni tartományban.
 
-Ha egy feltételes hozzáférési szabályzat nem teljesül, a felhasználó számára az alábbi üzenetek egyike jelenik meg a bejelentkezéskor:
+### <a name="when-the-device-is-not-compliant"></a>Ha az eszköz nem megfelelő
+
+Ha a feltételes hozzáférési szabályzat nem teljesül, az eszköz azonnal karanténba kerül és a felhasználó egy e-mailt kap, és bejelentkezéskor a következő karantén-értesítések jelennek meg számára:
 
 - Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepíteni a Vállalati portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő rekordhoz.
 
 -   Ha az eszköz nem felel meg a megfelelőségi szabályzat előírásainak, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] vállalati portál webhelyére vagy a Vállalati portál alkalmazásba irányítja, ahol a felhasználó további információt talál a problémáról és annak megoldásáról.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Az Exchange Online-beli feltételes hozzáférés működése
 
 A következő ábra az Exchange Online feltételes hozzáférési szabályzatai által használt folyamatot szemlélteti.
 
 ![Az eszközök hozzáférésének engedélyezését vagy letiltását meghatározó döntési pontokat bemutató ábra](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>A mobileszközök támogatása
-Korlátozhatja az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését. A következők támogatottak:
+Védheti az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **modern hitelesítést használó más alkalmazásokból** történő elérését. A következők támogatottak:
 
 - Android 4.0-ás és újabb verziók, Samsung Knox Standard 4.0-ás és újabb verziók és Android for Work
 - iOS 8.0 és újabb verziók
-- Windows Phone 8.1 és újabb verziók
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -77,18 +84,19 @@ A **modern hitelesítéssel** Active Directory Authentication Library-alapú (AD
 -   Az ADAL-alapú hitelesítéssel az Office-ügyfelek végezhetnek böngészőalapú hitelesítést (más néven passzív hitelesítést). A hitelesítéshez a felhasználó egy bejelentkezési weblapra van átirányítva.
 -   Ez az új bejelentkezési módszer nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítés** és a **tanúsítványalapú hitelesítés** funkcióit. Részletesebb információt a [How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) (A modern hitelesítés használata) című cikkben olvashat. ADFS-jogcímszabályokat állíthat be a nem modern hitelesítési protokollok letiltására. Részletes útmutatót a [3. forgatókönyv: Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx) című cikk tartalmaz.
 
-Az Exchange Online-on korlátozhatja az **Outlook Web Access-hez (OWA)** az **iOS-** és **Android-** eszközök böngészőin keresztül történő hozzáférést. A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
+Az Exchange Online-on védheti az **Outlook Web Access-hez (OWA)** az **iOS-** és **Android-** eszközök böngészőin keresztül történő hozzáférést. A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
 
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS és Android 5.0 és újabb)
 
-**A nem támogatott böngészőkből nem lehetséges hozzáférni a szolgáltatáshoz**.
+   > [!IMPORTANT]
+   > **A nem támogatott böngészőkből nem lehetséges hozzáférni a szolgáltatáshoz**.
 
 **Az iOS-re és az Androidra készült OWA alkalmazás módosítható úgy, hogy ne a modern hitelesítést használja, és nem támogatott. Az OWA alkalmazásból való elérést le kell tiltani az ADFS jogcímszabályai között.**
 
 
-A következő platformokon korlátozhatja az Exchange e-mail fiókok elérését a beépített **Exchange ActiveSync levelezési ügyfélről**:
+A következő platformokon védheti az Exchange e-mailjeinek elérését a beépített **Exchange ActiveSync levelezési ügyfélről**:
 
 - Android 4.0-s és újabb verziók, Samsung KNOX szabvány 4.0-s és újabb verziók
 
@@ -202,7 +210,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
         Ha ezt a beállítást szeretné használni, az **Exchange Online** elérésére használt összes eszköznek regisztrálva kell lennie az Intune-ban, és meg kell felelnie a szabályzatoknak. Minden **modern hitelesítést** használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik. Ha a platformot az Intune jelenleg nem támogatja, akkor az **Exchange Online**-hoz való hozzáférés le van tiltva.
 
         A **Minden platform** beállítás kiválasztása esetén az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül. Az alábbiakat kivéve minden platformot kötelező regisztrálni, illetve meg kell felelniük a szabályzatoknak:
-        *   Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
+        *    Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
         * Nem támogatott platformok, például a Mac OS. Azonban az ezekről a platformokról származó, modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
 
     -   **Megadott platformok**
@@ -254,7 +262,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 -   Ha a felhasználó megszünteti az eszköz regisztrációját, a rendszer körülbelül hat óra múlva letiltja az e-maileket.
 
-**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének korlátozásához, olvassa el az **e-mail-hozzáférés korlátozását bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
+**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az **e-mail-hozzáférés védelmét bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>A megfelelőség és a feltételes hozzáférési házirendek megfigyelése
 
@@ -264,12 +272,12 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 ![Képernyőfelvétel az Intune irányítópultjáról és azokról az eszközökről, amelyek Exchange-hozzáférése le van tiltva](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>További lépések
-- [A SharePoint Online-hoz való hozzáférés korlátozása](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [A SharePoint Online-hoz való hozzáférés védelme](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [A Skype Vállalati online verzióhoz való hozzáférés korlátozása](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [A Skype Vállalati online verzióhoz való hozzáférés védelme](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,4 +1,4 @@
-## <a name="azure-active-directory-enrollment"></a>Azure Active Directory-regisztráció
+## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>A Windows 10 és a Windows 10 Mobile Azure Active Directory Premium szolgáltatásra való automatikus regisztrációjának beállítása
 
 Az automatikus regisztrációval a felhasználók úgy regisztrálhatják vállalati tulajdonú vagy személyes Windows 10 rendszerű számítógépeiket és Windows 10 Mobile-eszközeiket az Intune-ban, hogy megadnak egy munkahelyi vagy iskolai fiókot és elfogadják, hogy felügyelet alá kerülnek. Ilyen egyszerű az egész! A háttérben a felhasználó eszköze regisztrálja magát és csatlakozik az Azure Active Directory-hoz. A regisztrációt követően az eszközt az Intune felügyeli.
 
@@ -11,13 +11,13 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 
 1. Az [Azure felügyeleti portálján](https://manage.windowsazure.com) (https://manage.windowsazure.com) nyissa meg az **Active Directory** csomópontot és válassza ki a saját címtárát.
 
-2. Kattintson az **Alkalmazások** lapra; a **Microsoft Intune** megjelenik az alkalmazások listájában.
+2. Kattintson az **Alkalmazások** fülre. A **Microsoft Intune** megjelenik az alkalmazások listáján.
 
     ![Azure AD-alkalmazások a Microsoft Intune-nal](../media/aad-intune-app.png)
 
-3. Kattintson a **Microsoft Intune** melletti nyílra, ezzel megnyitja azt a lapot, amelyen konfigurálhatja az Intune-t.
+3. Válassza a **Microsoft Intune**-hoz tartozó nyilat. A megjelenő lapon konfigurálhatja a Microsoft Intune-t.
 
-4. A Microsoft Intune-nal való automatikus MDM-regisztráció konfigurálásának megkezdéséhez kattintson a **Konfigurálás** elemre.
+4. A Microsoft Intune-ban való automatikus MDM-regisztráció konfigurálásának megkezdéséhez kattintson a **Konfigurálás** elemre.
 
 5. Adja meg az URL-címeket az Intune-hoz:
 
@@ -34,6 +34,6 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 7. Válassza a **Mentés** elemet.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

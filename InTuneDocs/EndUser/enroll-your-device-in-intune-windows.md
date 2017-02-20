@@ -1,5 +1,5 @@
 ---
-title: "Windows-eszköz regisztrálása az Intune-ban | Microsoft Intune"
+title: "Windows-eszköz regisztrálása az Intune-ban | Microsoft Docs"
 description: "Egy Windows-eszköz regisztrálását mutatja be az Intune-ban"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1515eef929d08f8639921313d1cfcb0ea6964fa9
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 
 ---
@@ -23,7 +26,7 @@ ms.openlocfilehash: 1515eef929d08f8639921313d1cfcb0ea6964fa9
 
 # <a name="enroll-your-windows-device-in-intune"></a>Windows-eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Windows-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Ha regisztrálja az eszközöket, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) témakörben.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Windows-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Ha regisztrálja az eszközeit, azzal a szervezet megóvhatja a vállalati adatokat. További információ a regisztrációval kapcsolatban: [Mi történik a Céges portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközön, és mit nem?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 A regisztrációhoz használja az eszközének megfelelő hivatkozást:
 
@@ -33,6 +36,6 @@ A regisztrációhoz használja az eszközének megfelelő hivatkozást:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,26 +1,30 @@
 ---
-title: "Eszköz regisztrálása az Intune-ban | Microsoft Intune"
+title: "Eszköz regisztrálása az Intune-ban | Microsoft Docs"
 description: "A különböző eszközök Intune-ban történő regisztrációjával kapcsolatos információkra mutató hivatkozásokat biztosít"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: da065b7ea92d9372b9dd8bbbcdf21b0f789cc241
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: d51bef2220ebf199df6f54e307e2f021faa83d33
 
 
 ---
 
 # <a name="enroll-your-device-in-intune"></a>Eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Windows-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. Ha szeretne többet megtudni a regisztrációról, valamint arról, hogy mi az, amit a rendszergazda megtekinthet eszközén, kövesse a témakör alján található hivatkozásokat.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Az eszközök regisztrálása lehetővé teszi munkahelye számára, hogy megóvhassa a vállalati adatokat. Ha szeretne többet megtudni a regisztrációról, valamint arról, hogy mi az, amit a rendszergazda megtekinthet eszközén, kövesse a témakör alján található hivatkozásokat.
 
 A regisztrációval kapcsolatos utasítások eléréséhez használja az Ön által használt eszköznek megfelelő hivatkozást:
 
@@ -31,6 +35,6 @@ A regisztrációval kapcsolatos utasítások eléréséhez használja az Ön ál
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
