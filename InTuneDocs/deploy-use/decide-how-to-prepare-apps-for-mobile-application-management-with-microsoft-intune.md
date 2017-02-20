@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ A MAM alkalmazásburkoló eszköznek az Intune-ban nem regisztrált eszközökö
 ## <a name="intune-app-sdk"></a>Intune App SDK
 Az App SDK főleg olyan ügyfeleknek készült, akiknek vannak az Apple App Store vagy a Google Play Store áruházban alkalmazásai, és az Intune-nal szeretnék kezelni az alkalmazásokat. De bármilyen alkalmazás kihasználhatja az SDK integrálásának előnyeit, még üzletági alkalmazások esetében is.
 
-További információk az SDK-ról: [Áttekintés](/intune/develop/intune-app-sdk). Az SDK használatának megkezdéséhez olvassa el a [Bevezetés a Microsoft Intune App SDK használatába](/intune/develop/intune-app-sdk-get-started) című szakaszt.
+További információk az SDK-ról: [Áttekintés](../develop/intune-app-sdk.md). Az SDK használatának megkezdéséhez olvassa el a [Bevezetés a Microsoft Intune App SDK használatába](../develop/intune-app-sdk-get-started.md) című szakaszt.
 
 ### <a name="reasons-to-use-the-sdk"></a>Az SDK használatának előnyei
 * Az alkalmazásban nincsenek beépített adatvédelmi funkciók.
@@ -69,8 +70,8 @@ További információk az SDK-ról: [Áttekintés](/intune/develop/intune-app-sd
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Igen – használja az [Intune App SDK Xamarin összetevőt](/../develop/intune-app-sdk-xamarin).|Igen – használja az [Intune App SDK Cordova beépülő modult](/../develop/intune-app-sdk-cordova).|
-|**Android--**| Igen – használja az [Intune App SDK Xamarin összetevőt](/../develop/intune-app-sdk-xamarin).|Igen – használja az [Intune App SDK Cordova beépülő modult](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Igen – használja az [Intune App SDK Xamarin összetevőt](../develop/intune-app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](../develop/intune-app-sdk-cordova.md).|
+|**Android--**| Igen – használja az [Intune App SDK Xamarin összetevőt](../develop/intune-app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Szolgáltatások összehasonlítása
 Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használható beállításokat sorolja fel.

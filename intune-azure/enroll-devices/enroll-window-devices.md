@@ -4,7 +4,7 @@ description: "Intune az Azure-on – előzetes: az Intune mobileszköz-felügyel
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/17
+ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
+ms.sourcegitcommit: a4103a4cef393df585b9b9daa92ab63dd7805e9e
+ms.openlocfilehash: a55118e60750616f8b058846148364cbeccb5784
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
 
 A windowsos eszközök regisztrációját az alábbi módszerek egyikével állíthatja be:
 
-- **[A Windows 10 és a Windows 10 Mobile automatikus regisztrációja az Azure Active Directory Premium szolgáltatással](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
- -  Ez a módszer Windows 10-es és Windows 10 Mobile rendszerű eszközök esetén alkalmazható.
- -  A módszer alkalmazásához Prémium szintű Azure Active Directory szolgáltatás szükséges. Ha nincs ilyen szolgáltatása, használja a Windows 8.1-es és Windows Phone 8.1-es eszközökhöz való eljárást.
- -  Ha nem engedélyezi az automatikus regisztrációt, használja a Windows 8.1-es és Windows Phone 8.1-es eszközökhöz való eljárást.
+- [**A Windows 10-es és a Windows 10 Mobile rendszerű eszközök automatikus regisztrációja az Azure Active Directory Premium szolgáltatással**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
+ -  Ez a módszer Windows 10-es és Windows 10 Mobile-eszközök esetén alkalmazható.
+ -  A módszer alkalmazásához Azure Active Directory Premium szolgáltatás szükséges. A szolgáltatás híján a Windows 8.1-es és a Windows Phone 8.1-es eszközökhöz használatos regisztrációs eljárást kell alkalmaznia.
+ -  Ha nem szeretné engedélyezni az automatikus regisztrációt, a Windows 8.1-es és a Windows Phone 8.1-es eszközök regisztrációs módszerét kell alkalmaznia.
 
-
-- **[Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációja a CNAME konfigurálásával](#set-up-windows-8.1-and-windows-phone-8.1-enrollment-by-configuring-cname)** 
+- [**Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációja a CNAME konfigurálásával**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációjához ezt a módszert kell alkalmazni.
 
 
@@ -54,8 +53,6 @@ Engedélyezheti a felhasználók számára, hogy telepítsék és regisztráljá
  Hozza létre a megfelelő **CNAME** DNS-erőforrásrekordokat a munkahelyi tartományhoz. Ha a munkahelyi webhely címe például contoso.com, akkor olyan CNAME rekordot kell létrehoznia a DNS-ben, amely az EnterpriseEnrollment.contoso.com webhelyről átirányítja a felhasználókat az enterpriseenrollment-s.manage.microsoft.com webhelyre.
 
     A CNAME DNS-bejegyzések létrehozása nem kötelező, viszont a CNAME rekordok létrehozása egyszerűbbé teszi a regisztrációt a felhasználók számára. Ha nem található CNAME rekord, akkor a rendszer kéri a felhasználókat, hogy írják be az MDM-kiszolgáló nevét: enrollment.manage.microsoft.com.
-
-    Amennyiben jelenleg a DNS rendszerben található olyan CNAME rekord, amelyik átirányítja az EnterpriseEnrollment.contoso.com címet a manage.microsoft.com címre, javasolt azt lecserélni egy olyan CNAME rekordra, amelyik az enterpriseenrollment-s.manage.microsoft.com címre irányítja át az EnterpriseEnrollment.contoso.com címet. Ez a módosítás azért ajánlott, mert a regisztrációkhoz használt manage.microsoft.com végpontot egy későbbi kiadásban kivezetjük.
 
     Több ellenőrzött tartomány esetén minden tartományhoz külön CNAME rekordot kell létrehozni. A CNAME erőforrásrekordoknak a következő adatokat kell tartalmazniuk:
 
@@ -88,6 +85,6 @@ Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati port
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

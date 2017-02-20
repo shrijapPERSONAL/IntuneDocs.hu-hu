@@ -4,7 +4,7 @@ description: "A mobileszközök Microsoft Intune-nal való felügyeletének (MDM
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
+ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
+ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 A Windows-eszközök regisztrációját az alábbi módszerek egyikével állíthatja be:
 
-- **[A Windows 10-es és a Windows 10 Mobile rendszerű eszközök automatikus regisztrációja az Azure Active Directory Premium szolgáltatással](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**A Windows 10-es és a Windows 10 Mobile rendszerű eszközök automatikus regisztrációja az Azure Active Directory Premium szolgáltatással**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
  -  Ez a módszer Windows 10-es és Windows 10 Mobile-eszközök esetén alkalmazható.
  -  A módszer alkalmazásához Azure Active Directory Premium szolgáltatás szükséges. A szolgáltatás híján a Windows 8.1-es és a Windows Phone 8.1-es eszközökhöz használatos regisztrációs eljárást kell alkalmaznia.
  -  Ha nem szeretné engedélyezni az automatikus regisztrációt, a Windows 8.1-es és a Windows Phone 8.1-es eszközök regisztrációs módszerét kell alkalmaznia.
 
 
-- **[Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációja a CNAME konfigurálásával](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+- [**Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációja a CNAME konfigurálásával**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
  - Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációjához ezt a módszert kell alkalmaznia.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -46,8 +46,6 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
 Hozza létre a megfelelő **CNAME** DNS-erőforrásrekordokat a munkahelyi tartományhoz. Ha a munkahelyi webhely címe például contoso.com, akkor olyan CNAME rekordot kell létrehoznia a DNS-ben, amely az EnterpriseEnrollment.contoso.com webhelyről átirányítja a felhasználókat az enterpriseenrollment-s.manage.microsoft.com webhelyre.
 
     A CNAME DNS-bejegyzések létrehozása nem kötelező, viszont a CNAME rekordok létrehozása egyszerűbbé teszi a regisztrációt a felhasználók számára. Ha nem található CNAME rekord, akkor a rendszer kéri a felhasználókat, hogy írják be az MDM-kiszolgáló nevét: enrollment.manage.microsoft.com.    
-
-    Amennyiben jelenleg a DNS rendszerben található olyan CNAME rekord, amelyik átirányítja az EnterpriseEnrollment.contoso.com címet a manage.microsoft.com címre, javasolt azt lecserélni egy olyan CNAME rekordra, amelyik az enterpriseenrollment-s.manage.microsoft.com címre irányítja át az EnterpriseEnrollment.contoso.com címet. Ez a módosítás azért ajánlott, mert a regisztrációkhoz használt manage.microsoft.com végpontot egy későbbi kiadásban kivezetjük.
 
     A CNAME erőforrásrekordoknak a következő adatokat kell tartalmazniuk:
 
@@ -78,6 +76,6 @@ Hozza létre a megfelelő **CNAME** DNS-erőforrásrekordokat a munkahelyi tarto
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
