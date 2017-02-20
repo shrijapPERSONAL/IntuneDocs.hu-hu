@@ -9,14 +9,14 @@ keywords: "intune-dokumentáció, alkalmazásfelügyelet, eszközkezelés, MDM-d
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -28,17 +28,17 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
       <h3>Az Intune-t a Configuration Managerrel kívánja felügyelni? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Tudnivalók a hibrid mobileszköz-felügyeletről&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Kiemelt tartalom</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span>Kiemelt tartalom</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">150-nél több licence van? Éljen a FastTrack előnyeivel</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Több mint&150; licence van? Éljen a FastTrack előnyeivel!</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Az Intune használatának gyakori módjai</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune az Azure Portalon – Előzetes verzió</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune az Azure-portálon – Előzetes verzió</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">A vállalati erőforrások hozzáférésének védelme</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">iOS-hoz készült Microsoft Intune App SDK – fejlesztői útmutató</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Az Intune használata a Microsoft Graph-fal</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Információk végfelhasználóknak a Microsoft Intune használatáról</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Az Intune bemutatása</h3>
+                    <h3>Mi az az Intune?</h3>
                     <p>Ismerje meg, hogyan nyújt az Intune eszköz-, alkalmazás- és adatfelügyeleti funkciókat a mobileszközökhöz (iOS- és Android-eszközök, Windows-telefonok) és Windows-számítógépekhez.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Útmutató az Intune próbaverziójához</h3>
+                    <h3>Megfelelő választás az Intune?</h3>
                     <p>A próbaútmutató segítségével hajtsa végre az akár 100 felhasználó és eszköz beállításával végzett kipróbáláshoz szükséges lépéseket.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>Előzetes tudnivalók</h3>
-                    <p>Ismerje meg gyorsan az Intune központi telepítésének alapkövetelményeit.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Az Intune rövid kezdési útmutatója</h3>
-                    <p>A 30 napos próbaútmutatóra építve a témakör végigvezeti Azure Active Directory-szinkronizálással, a tartományokkal és a DNS-sel kapcsolatos szempontokon és az Intune egyéb testreszabható beállításain.</p>
+                    <h3>Útmutató az első lépésekhez</h3>
+            <p>A 30 napos próbaútmutatóra építve a témakör végigvezeti Azure Active Directory-szinkronizálással, a tartományokkal és a DNS-sel kapcsolatos szempontokon és az Intune egyéb testreszabható beállításain.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Bevezetési fázisok</h3>
-                    <p>Adja meg az Intune-nal kapcsolatos célokat, az architektúrát, a próbaüzemmel és éles használattal kapcsolatos bevezetési terveket.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Céges adatszivárgások megelőzése az Office 365 alkalmazásokban</h3>
+                    <p>A vállalat adatainak védelmére a céges adatszivárgások megelőzését segítő alkalmazásvédelmi szabályzatokat is használhat.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>A mobileszközök e-mail-konfigurációjának leegyszerűsítése</h3>
+                    <p>Az Intune szolgáltatással kezelt iOS- Android- és Windows-mobileszközökre email-, VPN- és Wi-Fi-profilokat telepíthet, így időt és erőforrásokat takaríthat meg cégének.</p>
                   </a>
                 </li>
               </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>Mit kell tudniuk a végfelhasználóknak</h3>
                     <p>Ismerje meg azokat a lépéseket, amelyeket a végfelhasználóknak végre kell hajtaniuk ahhoz, hogy az Intune szolgáltatással használhassák az eszközeiket, és ossza meg ezeket a tudnivalókat a végfelhasználókkal, így segítve őket, hogy saját maguk hajthassák végre ezeket a feladatokat.</p>
                   </a>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Az e-mailek és az O365-szolgáltatások elérésének korlátozása</h3>
-                    <p>Az Intune feltételes hozzáférési funkciójával korlátozhatja a hozzáférést a vállalati e-mail- és Office 365-szolgáltatásokhoz.</p>
+                    <h3>Az e-mailek és az O365-szolgáltatások elérésének védelme</h3>
+                    <p>Az Intune feltételes hozzáférési funkciójával védheti a hozzáférést a vállalati e-mail- és Office 365-szolgáltatásokhoz.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -278,13 +278,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
       <p>Maradjon naprakész az Intune-t illetően</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune csapatblog</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune a Twitteren</a></li>
+        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntunea Twitteren</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

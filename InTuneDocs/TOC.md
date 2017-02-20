@@ -79,6 +79,7 @@
 ## Eszközök konfigurálása
 ### [Az eszközök beállításainak és funkcióinak kezelése szabályzatok használatával](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-beállítások](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Felügyelt iOS-eszközök visszaállítása](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android- és Samsung KNOX-beállítások](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Előmegosztott kulcsú Wi-Fi-profil létrehozása egyéni szabályzattal](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -107,7 +108,7 @@
 
 ## [Eszközök védelme](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Zárolás és jelszó alaphelyzetbe állítása távolról](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Windows-eszközök védelme MFA hitelesítéssel](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [Eszközök védelme többtényezős hitelesítéssel](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [A Vállalati Windows Hello beállításainak szabályozása](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Az aktiválási zár megkerülése iOS-eszközökön](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Szabályzatok a Windows rendszerű számítógépek védelméhez](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -140,7 +141,7 @@
 ## [Alkalmazások és adatok védelme](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Eszközmegfelelőségi szabályzatok](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Eszközmegfelelőségi szabályzat létrehozása](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows és Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -173,6 +174,7 @@
 #### [Alkalmazásvédelmi szabályzatok iOS-hez](deploy-use/ios-mam-policy-settings.md)
 #### [Az alkalmazásvédelmi szabályzatok ellenőrzése](deploy-use/validate-mobile-application-management.md)
 #### [Az alkalmazásvédelmi szabályzatoknak való megfelelőség figyelése](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [iOS-alkalmazások közti adatátvitel kezelése](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune felügyeleti konzol MAM-szabályzatokhoz](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -189,10 +191,10 @@
 ### [Alkalmazások kivonása ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Felügyelt vállalati alkalmazás adatainak törlése](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Végfelhasználói funkciókkal kapcsolatos források](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [Felügyelt iOS-eszközök visszaállítása](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Android-alkalmazások MAM-szabályzatokkal](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [iOS-alkalmazások MAM-szabályzatokkal](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [A végfelhasználók felkészítése az Intune használatára](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Android-felhasználói alkalmazások letöltése](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS-felhasználói alkalmazások letöltése](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows-felhasználói alkalmazások letöltése](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Alkalmazások fejlesztése és testreszabása
 ## [A Microsoft Intune App SDK áttekintése](develop/intune-app-sdk.md)
