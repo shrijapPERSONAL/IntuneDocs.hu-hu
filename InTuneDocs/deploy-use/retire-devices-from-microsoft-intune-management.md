@@ -1,11 +1,11 @@
 ---
-title: "Eszközök kivonása | Microsoft Intune"
+title: "Eszközök kivonása | Microsoft Docs"
 description: "Az Intune a házirend és a vállalati portál szelektív és teljes törlését is támogatja az eszközök az Intune-kezelésből való eltávolításához."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,28 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Eszközök kivonása az Intune felügyelete alól
 
-Akár vállalati, akár saját eszközökről van szó, eljön a pillanat, amikor egy felügyelt eszközt ki kell vonni az Intune-felügyelet alól. Az eszközök kivonására többféle okból lehet szükség:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   A felhasználó előre eltervezett módon elhagyja a vállalatot („irányított” távozás)
--   A felhasználó váratlanul hagyja el a vállalatot (elbocsátják, felmond stb.).
--   Az eszköz elvész
--   Az eszközt átcsoportosítják (egy másik felhasználó kapja meg, vagy más célra használják és így tovább)
+Akár vállalati, akár saját eszközökről van szó, eljön a pillanat, amikor egy felügyelt eszközt ki kell vonni az Intune-felügyelet alól.
+
+Eszközök az Ön beavatkozása nélkül sohasem lesznek eltávolítva az Intune-ból, még akkor sem, ha az eszközök egy ideje már nem csatlakoztak az Intune szolgáltatáshoz.
+
+Az eszközök kivonására többféle okból lehet szükség:
+
+-    A felhasználó előre eltervezett módon elhagyja a vállalatot („irányított” távozás)
+-    A felhasználó váratlanul hagyja el a vállalatot (elbocsátják, felmond stb.).
+-    Az eszköz elvész
+-    Az eszközt átcsoportosítják (egy másik felhasználó kapja meg, vagy más célra használják és így tovább)
 
 A mobileszközként felügyelt eszközökön szelektív vagy teljes törlést hajthat végre, vagy zárolhatja az eszközt, és megváltoztathatja a jelszavát. Az eszköz törlésével felszabadul a felhasználó előfizetése, így ahhoz egy másik eszközt társíthat. Ezenfelül kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket is.
 
@@ -37,6 +44,9 @@ Mind a szelektív, mind a teljes törléssel kivonja az eszközt az Intune felü
 A [szelektív törlés](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) művelet olyan alkalmazottak esetében ajánlott, akik a saját eszközüket regisztrálták az Intune-ban, mert az eszközön lévő személyes adatokra nincs hatással. Csak a vállalati adatok törlődnek.
 
 Az olyan eszközök esetében, amelyek újrafelhasználásra kerülnek, [teljes törlést](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) is alkalmazhat, amely visszaállítja az eszköz gyári beállításait.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>A felhasználói licencek és a felügyelt eszközök eltávolítása
+Ha eltávolítja egy felhasználó licencét, akkor megszűnik a felhasználó regisztrált eszközeinek regisztrációja. Ajánlott eljárás: mielőtt visszavonja egy felhasználó Intune-licencét, szelektív törléssel távolítsa el a vállalati adatokat a felügyelt eszközökről. A felhasználói licenc visszavonása után az eszköz nem adható meg távoli műveletek céljaként.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
 
@@ -70,6 +80,6 @@ Egyes esetekben maga az eszköz éri el életciklusának végét. Ilyen esetekbe
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

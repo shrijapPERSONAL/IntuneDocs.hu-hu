@@ -1,11 +1,11 @@
 ---
-title: "Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása | Microsoft Intune"
+title: "Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása | Microsoft Docs"
 description: "Ebből a témakörből megtudhatja, hogyan adhat hozzá Windows rendszerű számítógépes alkalmazásokat az Intune-hoz a központi telepítésük előtt."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,25 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
 
-# Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Az Intune szoftverügyfelet futtató Windows rendszerű számítógépes alkalmazások hozzáadása
 
 Ebből a témakörből megtudhatja, hogyan adhatja hozzá a kívánt alkalmazásokat az Intune-hoz a központi telepítésük előtt.
 
 > [!IMPORTANT]
 > A jelen témakörben ismertetett információk segítik az alkalmazások hozzáadását azokon a Windows-számítógépeken, amelyeket az Intune szoftverügyfél segítségével felügyel. Ha regisztrált Windows-számítógépekhez vagy más mobileszközökhöz szeretne alkalmazásokat adni, olvassa el az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](add-apps-for-mobile-devices-in-microsoft-intune.md) című cikket.
 
+Csak olyan alkalmazásokat lehet telepíteni a számítógépekre, amelyek csendesen, felhasználói beavatkozás nélkül telepíthetők. Más esetben a telepítés sikertelen lesz.
 
-## Az alkalmazás hozzáadása
+
+## <a name="add-the-app"></a>Az alkalmazás hozzáadása
 Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdonságait az Intune Software Publisherrel, és feltöltheti az alkalmazást a felhőtárhelyre.
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet az Intune Software Publisher elindításához.
@@ -40,7 +43,7 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
     - **Válassza ki a szoftver telepítőjének fájltípusát**. Itt adhatja meg a telepíteni kívánt szoftver típusát. Windows-számítógép esetén válassza a **Windows Installer** lehetőséget.
     - **Adja meg a szoftver telepítőfájljainak helyét**. Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
-    - **Adja meg a mappában található további fájlokat és almappákat is**. A Windows Installert használó szoftverek némelyikéhez támogató fájlokra is szükség van. Ezek általában a telepítési fájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.
+    - **Adja meg a mappában található további fájlokat és almappákat is**. A Windows Installert használó szoftverek némelyikéhez támogató fájlokra is szükség van. Ezeknek a telepítőfájllal azonos mappában kell lenniük. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.
 
     Ha például egy Application.msi nevű alkalmazást szeretne közzétenni az Intune-ban, ilyen lesz a lap: ![a kiadó szoftvertelepítési lapja](./media/publisher-for-pc.png)
 
@@ -73,7 +76,11 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
     Ha az alkalmazás megfelel a konfigurált szabályok valamelyikének, nem lesz telepítve.
 
-6.  Csak a **Windows Installer** fájltípusai (.msi és .exe) esetében: a **Parancssori argumentumok** lapon adja meg, hogy szeretne-e opcionális parancssori argumentumokat megadni a telepítőhöz. Előfordulhat például, hogy egyes telepítők támogatják a felhasználói beavatkozás nélküli, csendes telepítésre szolgáló **/q** argumentumot.
+6.  Csak a **Windows Installer** fájltípusai (.msi és .exe) esetében: a **Parancssori argumentumok** lapon adja meg, hogy szeretne-e opcionális parancssori argumentumokat megadni a telepítőhöz.
+    Az Intune automatikusan megadja a következő paramétereket:
+    - Az .exe fájlokhoz az **/install** paramétert fűzi.
+    - Az .msi fájlokhoz a **/quiet** paramétert fűzi.
+    Ne feledje, hogy ezek a paraméterek csak akkor működnek, ha az alkalmazáscsomag készítője engedélyezte a nekik megfelelő funkciókat.
 
 7.  Csak a **Windows Installer** fájltípus (.exe) esetében: a **Visszatérési kódok** lapon olyan új hibakódokat vehet fel, amelyeket az Intune az alkalmazás felügyelt Windows-számítógépre való telepítésekor értelmez.
 
@@ -85,12 +92,14 @@ Az alábbiakban ismertetett eljárással konfigurálhatja az alkalmazás tulajdo
 
 Az alkalmazás megjelenik az **Alkalmazások** munkaterület **Alkalmazások** csomópontjában.
 
-## További lépések
+## <a name="next-steps"></a>További lépések
 
 Ha létrehozta az alkalmazást, a következő lépés a telepítés. További információért lásd: [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps.md).
 
+Ha a szoftverek Windows-számítógépekre való telepítésével kapcsolatos tippekről és trükkökről szeretne tájékozódni, [ebből a blogbejegyzésből megismerkedhet a számítógépekre az Intune-nal történő szoftverterjesztés ajánlott eljárásaival](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
 
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Feb17_HO3-->
 
 

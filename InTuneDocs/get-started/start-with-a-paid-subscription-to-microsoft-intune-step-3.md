@@ -1,11 +1,11 @@
 ---
 title: "Felhasználók hozzáadása és engedélyek megadása | Microsoft Docs"
-description: "A helyszíni felhasználók szinkronizálása az Azure AD-vel és rendszergazdai jogosultság megadása az Intune-előfizetéshez"
+description: "A helyszíni felhasználók szinkronizálása az Azure AD-vel és rendszergazdai jogosultság megadása az Intune-előfizetésnek"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakör arról tájékoztatja a rendszergazdákat, hogy miképpen vehetnek fel felhasználókat az Intune-ba, és milyen felügyeleti engedélyek érhetők el az Intune szolgáltatásban.
 
 A rendszergazdák jogosultak közvetlenül felvenni az új felhasználókat, vagy szinkronizálni a felhasználókat a helyszíni Active Directoryból. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. A felhasználóknak további engedélyeket is biztosíthat, például a következőket: *bérlői rendszergazda*, *szolgáltatásadminisztrátor* vagy *készülékregisztráció-kezelő*.
 
@@ -35,7 +38,7 @@ Ez a témakör a következőkben nyújt segítséget:
   - [Készülékregisztráció-kezelő](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Felhasználók hozzáadása az Intune-hoz
-Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office 365-portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) segítségével. Ezeket a felhasználókat a rendszer nem látja el automatikusan Intune-licenccel. Ehelyett egy későbbi időpontban egy Intune bérlői rendszergazdának az Office 365 portálról kell egy licencet a felhasználóhoz rendelnie a felhasználói fiók szerkesztésével. További tájékoztatást a [Felhasználók felvétele egyenként és tömegesen az Office 365-be](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) című cikkben olvashat.
+Manuálisan is hozzáadhat felhasználókat az Intune-előfizetéshez az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854), de ezeket a felhasználókat a rendszer nem látja el automatikusan Intune-licenccel. Ehelyett egy későbbi időpontban egy Intune bérlői rendszergazdának az Office 365 portálról kell egy licencet a felhasználóhoz rendelnie a felhasználói fiók szerkesztésével. További tájékoztatást a [Felhasználók felvétele egyenként és tömegesen az Office 365-be](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) című cikkben olvashat.
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz
 A címtár-szinkronizálás konfigurálásával importálhatja a helyi Active Directoryban lévő felhasználói fiókokat a Microsoft Azure Active Directory (Azure AD) szolgáltatásba (ide tartoznak az Intune-felhasználók is). A helyi Active Directory szolgáltatás Azure Active Directory-alapú szolgáltatásokkal való összekapcsolásával jóval egyszerűbbé válik az identitásfelügyelet. Az egyszeri bejelentkezési funkciók konfigurálásával ismerőssé és könnyebbé teheti a felhasználók számára a hitelesítést. Ha egy [Azure AD-bérlőt](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) egyszerre több szolgáltatáshoz is társít, a korábban már szinkronizált felhasználói fiókok is elérhetővé válnak az összes felhőalapú szolgáltatásban.
@@ -103,6 +106,6 @@ A készülékregisztráció-kezelők normál felhasználói fiókok, amelyeknek 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Regisztráció vagy bejelentkezés az Intune szolgáltatásba | Microsoft Docs"
-description: "Regisztrálás Intune-előfizetésre, illetve bejelentkezés az előfizetés használatának megkezdéséhez"
+description: "Regisztrálás Intune-előfizetésre, illetve bejelentkezés az előfizetés használatbavételéhez"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 # <a name="sign-up-or-sign-in-to-intune"></a>Regisztráljon az Intune-ra, vagy jelentkezzen be a szolgáltatásba
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakör arról tájékoztatja a rendszergazdákat, hogy miképpen regisztrálhatnak Intune-fiókra.
 
 Az Intune-ba való bejelentkezés vagy regisztráció előtt állapítsa meg, hogy szervezete rendelkezik-e munkahelyi vagy iskolai Microsoft Online Services-fiókkal, illetve, hogy szervezete rendelkezik-e Nagyvállalati (Enterprise) szerződéssel vagy azzal egyenértékű mennyiségi licencszerződéssel a Microsofttal. A mennyiségi licencszerződésnek a Microsofttal történő megkötésekor vagy az Office 365 szolgáltatásra vagy más Microsoft által biztosított felhőszolgáltatásra való előfizetéskor munkahelyi vagy iskolai fiókot biztosítunk az Ön számára.
 
@@ -53,6 +56,6 @@ A regisztrációs folyamat befejezését követően átirányítjuk egy oldalra,
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -13,18 +13,19 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok az Azure Portalon
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Az Azure Portal webhelyen a következőkre vonatkozó mobilalkalmazás-felügyeleti (MAM) szabályzatokat hozhat létre és kezelhet:
+Az Azure Portalon a következőkre vonatkozó alkalmazásvédelmi szabályzatokat hozhat létre és kezelhet:
 
 - Az **Intune-ban regisztrált és általa kezelt** eszközökön futó alkalmazások.
 
@@ -32,9 +33,9 @@ Az Azure Portal webhelyen a következőkre vonatkozó mobilalkalmazás-felügyel
 - **Harmadik féltől származó MDM-megoldásban regisztrált** eszközökön futó alkalmazások.
 
 >[!IMPORTANT]
-> Az Azure Portal az új felügyeleti konzol a MAM-szabályzatok létrehozásához, de az Intune-ban regisztrált eszközök alkalmazásait támogató MAM-szabályzatokat is létrehozhat, ha az [Intune felügyeleti konzolt](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) használja a mobileszköz-kezelési forgatókönyvekhez.
+> Az Azure Portal az új felügyeleti konzol az alkalmazásvédelmi szabályzatok létrehozására. Az Intune-ban regisztrált eszközök alkalmazásait támogató alkalmazásvédelmi szabályzatokat is létrehozhat azonban, ha az [Intune felügyeleti konzolt](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) használja a mobileszközök kezelésének bizonyos eseteire.
 
-> Előfordulhat, hogy az Intune felügyeleti konzolon nem jelenik meg minden elérhető MAM-szabályzatbeállítás. Emellett ha az Intune felügyeleti konzolon és az Azure Portal webhelyen is hoz létre MAM-szabályzatokat, az Azure Portal webhelyen létrehozott szabályzatok felülbírálják az Intune felügyeleti konzolon létrehozottakat. Ebben az esetben a rendszer az Azure Portal MAM-szabályzatait alkalmazza az alkalmazásokra és telepíti a felhasználók számára.
+> Előfordulhat, hogy az Intune felügyeleti konzolon nem jelenik az alkalmazásvédelmi szabályzatok minden beállítása. Emellett ha az Intune felügyeleti konzolon és az Azure Portalon is hoz létre alkalmazásvédelmi szabályzatokat, az Azure Portalon létrehozott szabályzatok felülbírálják az Intune felügyeleti konzolon létrehozottakat. Ebben az esetben a rendszer az Azure Portal alkalmazásvédelmi szabályzatait érvényesíti az alkalmazásokra, illetve telepíti a felhasználók számára.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Bejelentkezés az Azure-portálra és a kezdőlap testreszabása
@@ -47,11 +48,11 @@ Az Azure Portal webhelyen a következőkre vonatkozó mobilalkalmazás-felügyel
 
     ![Az Azure-portál irányítópultjának képernyőképe](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Válassza a **Tallózás** menü **Intune** elemét.
+3.  Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
     ![A Tallózás menü képernyőképe az Intune kiemelésével](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-4.  Válassza az **Intune** > **Intune mobilalkalmazás-kezelés** > **Beállítások** elemet.
+4.  Válassza az **Intune App Protection** > **Intune mobilalkalmazás-kezelés** > **Minden beállítás** elemet.
 
     ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/MAM-Azure-Portal-2.png)
 
@@ -62,10 +63,10 @@ Az Azure Portal webhelyen a következőkre vonatkozó mobilalkalmazás-felügyel
     ![Az irányítópult és a rögzített Intune csempe képernyőképe](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
 ## <a name="next-steps"></a>További lépések
-[Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Intune-licencek kezelése a PowerShell használatával | Microsoft Intune"
+title: "Intune-licencek kezelése a PowerShell használatával | Microsoft Docs"
 description: "Intune-licencek kezelése a PowerShell használatával"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
 
 
 ---
 
 # <a name="manage-intune-licenses-using-powershell"></a>Intune-licencek kezelése a PowerShell használatával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakör ismerteti, hogyan kezelhetik a rendszergazdák az Intune felhasználói licenceit a PowerShell-lel.
+
 Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, minden felhasználó számára egy licencet kell hozzárendelnie az Intune-előfizetéséhez, a [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) (Intune-licencek kezelése) című témakörnek megfelelően. Előfordulhat azonban, hogy a Microsoft Enterprise Mobility + Security megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.
 
 A felhasználói licencek EMS-szolgáltatásokhoz való szelektív hozzárendeléséhez nyissa meg a PowerShellt rendszergazdaként egy olyan számítógépen, amelyre telepítve van a [Windows PowerShellhez készült Microsoft Azure Active Directory-modul ](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) megoldással rendelkező számítógépen. A PowerShell helyi számítógépre vagy ADFS-kiszolgálóra telepíthető.
@@ -68,6 +74,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések* útmutató 4. lép
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

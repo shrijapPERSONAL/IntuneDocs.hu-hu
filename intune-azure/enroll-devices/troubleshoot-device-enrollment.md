@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
 
 
 ---
@@ -46,7 +46,7 @@ Ezek a problémák az összes eszközplatformon előfordulhatnak.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>A regisztrált és engedélyezett eszközök számának ellenőrzése
 
-Az Azure Portal Intune paneljén keresse meg az **Eszközök regisztrálása** > **Regisztrációs korlátozások** részt, és ellenőrizze, hogy az adott felhasználóhoz nincs-e a maximálisan megengedett 15 eszköznél több hozzárendelve.
+Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Az Azure Portal Intune paneljén keresse meg az **Eszközök regisztrálása** > **Regisztrációs korlátozások** részt, és ellenőrizze, hogy az adott felhasználóhoz nincs-e a maximálisan megengedett 15 eszköznél több hozzárendelve.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -72,9 +72,9 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 > [!NOTE]
 
-> Készülékregisztráció-kezelők használatával elkerülheti a maximális szám elérését az eszközregisztráció során. Erről a [Eszközök regisztrációja készülékregisztráció-kezelő használatával](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) című cikk nyújt további tájékoztatást.
+> Készülékregisztráció-kezelők használatával elkerülheti a maximális szám elérését az eszközregisztráció során. Erről az [Eszközök regisztrációja készülékregisztráció-kezelő használatával](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md) című cikk nyújt további tájékoztatást.
 >
-> A Készülékregisztráció-kezelők csoportba felvett felhasználói fiók nem tud eszközt regisztrálni, ha az adott felhasználói fiókra a Feltételes hozzáférés szabályzat érvényes.
+> A Készülékregisztráció-kezelők csoportba felvett felhasználói fiók nem tud eszközt regisztrálni, ha az adott felhasználói fiókra feltételes hozzáférési szabályzat érvényes.
 
 ### <a name="company-portal-temporarily-unavailable"></a>A Vállalati portál átmenetileg nem érhető el
 **Probléma:** Az eszközön **A Vállalati portál átmenetileg nem érhető el** hibaüzenet jelenik meg.
@@ -218,16 +218,16 @@ A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél
 
 A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
 
-1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
-2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
-3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
-4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
-5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
-6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
-7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
-8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
-9.  Indítsa újra az AD FS-kiszolgálókat.
-10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
+1.    Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+2.    Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
+3.    Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
+4.    Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+5.    Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
+6.    Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
+7.    A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
+8.    Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
+9.    Indítsa újra az AD FS-kiszolgálókat.
+10.    Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
 A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
 
 **A tanúsítványok megfelelő telepítésének ellenőrzése**:
@@ -346,7 +346,7 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 
 **Megoldás:**
 
-1. A **Start** menüben használja a **Futtatás** -> **MMC** parancsot.
+1.. A **Start** menüben használja a **Futtatás** -> **MMC** parancsot.
 1. Válassza a **Fájl** > **Beépülő modulok hozzáadása/eltávolítása** parancsot.
 1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** >  lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
 1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget.
@@ -389,6 +389,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

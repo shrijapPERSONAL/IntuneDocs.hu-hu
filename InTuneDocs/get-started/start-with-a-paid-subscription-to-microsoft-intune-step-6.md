@@ -1,11 +1,11 @@
 ---
-title: "Szabályzatok érvénybe léptetése és alkalmazások telepítése | Microsoft Intune"
+title: "Szabályzatok érvénybe léptetése és alkalmazások telepítése | Microsoft Docs"
 description: "Engedélyezheti a szabályzatok beállításait, és telepíthet olyan alkalmazásokat, amelyek azonnal rákerülnek az eszközökre, amint regisztrálják őket felügyeletre."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,27 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Szabályzatok létrehozása és alkalmazások közzététele
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakör azt ismerteti az Intune-rendszergazdák számára, hogy miképpen hozhatnak létre szabályzatokat, illetve tehetnek közzé alkalmazásokat, amelyeket telepíthetnek a felügyelt eszközökre.
+
 Mielőtt elkezd alkalmazásokat regisztrálni az Intune-ban, engedélyezhet szabályzatbeállításokat és alkalmazásokat. Ezek azonnal érvénybe lépnek és települnek, amint az eszközök felügyelet alá kerülnek. Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. Konfigurálhat szabályzatokat, felvehet alkalmazásokat, és telepítheti őket, hogy az eszközök azonnal megkapják ezeket a beállításokat és alkalmazásokat, amint regisztrálnak az Intune-ban.
 
 A szabályzatok és az alkalmazások platformfüggőek.
 
 ## <a name="manage-device-settings"></a>Az eszközbeállítások kezelése
 
- Az eszközszabályzatok beállításainak konfigurálása és kezelése platformonként történik. A következő platformokra vonatkozó házirendeket lehet konfigurálni:
+ Az eszközszabályzatok beállításainak konfigurálása és kezelése platformonként történik. A következő hivatkozásokkal elérhetők a különféle platformokban használható beállítások:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android és Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -69,6 +75,6 @@ Az alkalmazás ekkor elérhetővé válik az Intune-ban, tehát telepíthető a 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

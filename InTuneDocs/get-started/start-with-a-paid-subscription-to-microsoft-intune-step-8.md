@@ -1,11 +1,11 @@
 ---
-title: "Az eszközök regisztrálásának lehetővé tétele | Microsoft Intune"
+title: "Az eszközök regisztrálásának lehetővé tétele | Microsoft Docs"
 description: "A mobileszköz-kezelő szolgáltató (MDM-szolgáltató) beállítása és az iOS-, Windows-, Android- és Mac-eszközök regisztrálásának engedélyezése"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>Mobileszközök regisztrálása és alkalmazások telepítése
+# <a name="enable-enrollment-for-mobile-devices"></a>Mobileszközök regisztrálásának lehetővé tétele
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakor azt mutatja be, hogy miképpen tehetik lehetővé az Intune-rendszergazdák a mobileszközök regisztrálását. Az Intune-nak a telefonján való használatáról a [Munkavégzés felügyelt eszközökkel](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) című cikk nyújt tájékoztatást. 
+
 Az Intune-nal történő mobileszköz-felügyelet beállításához először meg kell adnia a *mobileszköz-kezelő szolgáltatót* (ez azonosítja azt a szolgáltatást, amely felügyelheti a fiókjához tartozó eszközöket). Ez az útmutató abból indul ki, hogy Ön az Intune szolgáltatást fogja használni a System Center Configuration Manager helyett. A mobileszköz-kezelő szolgáltató beállítása után engedélyezheti a különféle eszközplatformok felügyeletét, majd regisztrálhatja az eszközöket a Munkahelyi portál alkalmazásban.
 
 ## <a name="enable-device-enrollment"></a>Eszközök regisztrálásának lehetővé tétele
@@ -43,7 +49,7 @@ A regisztrációt engedélyezni kell az iOS-, a Mac- és az Android for Work-esz
 
 Engedélyezze mobileszköz-kezelést a felügyelni kívánt eszközplatformra vonatkozóan. A követelmények a platformtól függően eltérőek:
 
--  [iOS és macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS és macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile és Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +72,6 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* u
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -2,19 +2,20 @@
 title: "Távoli zárolás és jelszó alaphelyzetbe állítása | Microsoft Docs"
 description: "Az Intune egyaránt nyújt távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló funkciókat."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
@@ -24,16 +25,17 @@ ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 A Microsoft Intune egyaránt biztosít távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló képességeket.
 
 ## <a name="lock-a-device-remotely"></a>Eszköz távoli zárolása
-Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja az eszközt. A távoli zárolás használata előtt már rendelkeznie kell az eszközön egy beállított PIN-kóddal vagy hitelesítő kóddal. 
+Ha egy felhasználó elveszíti az eszközét, távolról zárolhatja az eszközt. A távoli zárolás használata előtt már rendelkeznie kell az eszközön egy beállított PIN-kóddal vagy hitelesítő kóddal.
 
 Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolás az egyes mobilplatformokon.
 
-|Platfésm|Távoli zárolás|
+|Platform|Távoli zárolás|
 |------------|---------------|
 |macOS|Nem támogatott|
 |iOS|Támogatott|
 |Android|Támogatott|
-|Windows 10 és Windows 10 Mobile|Támogatott|
+|Windows 10 (mobilverzió)|Támogatott|
+|Windows 10 (asztali verzió)|Nem támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1 és Windows RT|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 |Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
@@ -84,6 +86,6 @@ Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogat
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

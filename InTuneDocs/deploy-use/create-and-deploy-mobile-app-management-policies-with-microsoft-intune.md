@@ -1,9 +1,9 @@
 ---
-title: "Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése | Microsoft Intune"
+title: "Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése | Microsoft Docs"
 description: "Az ebben a témakörben található részletes útmutatóval MAM-szabályzatokat hozhat létre és telepíthet."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -13,17 +13,20 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban
-A mobilalkalmazás-felügyeleti (MAM) szabályzatok alkalmazhatók az Intune által felügyelt vagy nem felügyelt eszközökön futó alkalmazásokra. A MAM-szabályzatok működésének részletes leírását és az Intune MAM-szabályzatai által támogatott forgatókönyveket az [alkalmazásadatok mobilalkalmazás-felügyeleti szabályzatokkal való védelmét](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) ismertető témakör tartalmazza.
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban
 
-Ez a témakör a MAM-szabályzat **Azure-portálon** történő létrehozásának folyamatát mutatja be. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure Portal. Azt javasoljuk, hogy a továbbiakban ezen a portálon hozza létre a MAM-szabályzatokat. Az Azure-portál a következő MAM-forgatókönyveket teszi lehetővé:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Ez a témakör azt a folyamatot ismerteti, amellyel az **Azure Portalon** hozható létre alkalmazásvédelmi szabályzat. Az alkalmazásvédelmi szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure Portal. Azt javasoljuk, hogy a továbbiakban ezen a portálon hozza létre az alkalmazásvédelmi szabályzatokat. Az Azure-portál a következő MAM-forgatókönyveket teszi lehetővé:
+
 - Az Intune-ban regisztrált eszközök
 - Külső MDM-megoldás által kezelt eszközök
 - MDM-megoldással (BYOD) nem kezelt eszközök
@@ -31,14 +34,14 @@ Ez a témakör a MAM-szabályzat **Azure-portálon** történő létrehozásána
 >[!IMPORTANT]
 Ha jelenleg az **Intune felügyeleti konzolt** használja eszközei kezeléséhez, vegye figyelembe az alábbiakat:
 
-> * Az [Intune felügyeleti konzol](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) segítségével létrehozhat egy olyan MAM-szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja.
-> * Az Intune felügyeleti konzolon létrehozott MAM-szabályzatokat nem lehet az Azure-portálon importálni.  A MAM-szabályzatokat az Azure portálon kell újból létrehozni.
+> * Az [Intune felügyeleti konzollal](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) létrehozhat olyan alkalmazásvédelmi szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja.
+> * Az Intune felügyeleti konzolon létrehozott alkalmazásvédelmi szabályzatokat nem lehet importálni az Azure Portalra.  Újra létre kell hozni az alkalmazásvédelmi szabályzatokat az Azure Portalon.
 
-> * Előfordulhat, hogy az Intune felügyeleti konzolon nem lát minden MAM-szabályzatbeállítást. A mobilalkalmazás-felügyeleti szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure-portál.
+> * Előfordulhat, hogy az Intune felügyeleti konzolon nem látja az alkalmazásvédelmi szabályzatok minden beállítását. Az Azure Portal az alkalmazásvédelmi szabályzatok létrehozására szolgáló új felügyeleti konzol.
 
-> * Felügyelt alkalmazások telepítéséhez létre kell hoznia egy MAM-szabályzatot az Intune felügyeleti konzolon. Ebben az esetben érdemes lehet mind az Intune felügyeleti konzolon, mind az Azure Portalon létrehozni MAM-szabályzatokat. Az Intune felügyeleti konzol esetén meggyőződhet arról, hogy tudja telepíteni a felügyelt alkalmazást, az Azure Portal pedig az új felügyeleti konzol, ahol a MAM-szabályzatok minden beállítását elvégezheti.
+> * Felügyelt alkalmazások telepítéséhez létre kell hoznia egy alkalmazásvédelmi szabályzatot az Intune felügyeleti konzolon. Ebben az esetben érdemes lehet mind az Intune felügyeleti konzolon, mind az Azure Portalon létrehozni alkalmazásvédelmi szabályzatokat. Az Intune felügyeleti konzol szabályzataival gondoskodhat róla, hogy tudja telepíteni a felügyelt alkalmazást, az Azure Portal pedig az új felügyeleti konzol, ahol az alkalmazásvédelmi szabályzatok minden beállítását megadhatja.
 
-> * Ha mind az Intune felügyeleti konzolon, mind az Azure-portálon létrehoz MAM-szabályzatokat, a rendszer az Azure-portálon érvényes szabályzatot alkalmazza az alkalmazásokra.
+> * Ha az Intune felügyeleti konzolon és az Azure Portalon is létrehoz alkalmazásvédelmi szabályzatokat, a rendszer az Azure Portalon létrehozott szabályzatot érvényesíti az alkalmazásokra.
 
 Az Android és az iOS platformokon támogatott szabályzatbeállítások listájának megtekintéséhez válasszon a következő lehetőségek közül:
 
@@ -46,14 +49,22 @@ Az Android és az iOS platformokon támogatott szabályzatbeállítások listáj
 - [iOS-szabályzatok](ios-mam-policy-settings.md)
 - [Android-szabályzatok](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>A MAM-szabályzat létrehozása
-MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a támogatásra](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) vonatkozó információkat.
-1.  Válassza az **Intune mobilalkalmazás-felügyelet &gt; Beállítások** elemet a **Beállítás** panel megnyitásához.
+- Az alkalmazásvédelmi szabályzatok működését és az Intune alkalmazásvédelmi szabályzataival kezelhető típushelyzeteket [az alkalmazások adatainak az alkalmazásvédelmi szabályzatokkal való védelmét ismertető cikk](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) mutatja be részletesen.
 
-    ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
+Alkalmazásvédelmi szabályzatokat az Azure Portalon lehet létrehozni. Ha első alkalommal használja az Azure Portalt, az [Azure Portal a Microsoft Intune alkalmazásvédelmi szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakörből ismerkedhet meg vele. Alkalmazásvédelmi szabályzat létrehozása előtt olvassa el [az előfeltételekre és a támogatásra](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) vonatkozó információkat.
 
-    > [!TIP]
-    > Ha első alkalommal használja az Azure-portált, az [Azure-portál a Microsoft Intune mobilalkalmazás-felügyeleti szabályzatainak kezeléséhez](azure-portal-for-microsoft-intune-mam-policies.md) című témakörben ismerkedhet meg a portállal.
+Az alábbi lépésekkel hozhat létre alkalmazásvédelmi szabályzatokat:
+
+1. Nyissa meg az [Azure Portal](http://portal.azure.com) webhelyet, és adja meg hitelesítő adatait.
+
+2. Válassza a **További szolgáltatások** lehetőséget, majd írja be az Intune kifejezést.
+
+3. Válassza az **Intune alkalmazásvédelem** lehetőséget.
+
+4. Válassza az **Intune mobilalkalmazás-felügyelet &gt; Beállítások** elemet a **Minden beállítás** panel megnyitásához.
+
+    ![Az Intune mobilalkalmazás-felügyelet panel képernyőfelvétele](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
 
 2.  A **Beállítások** panelen válassza az **Alkalmazásszabályzat** elemet. Ekkor megnyílik a **Alkalmazásszabályzat** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévő szabályzatokat. Válassza a **Szabályzat hozzáadása** elemet.
 
@@ -87,10 +98,10 @@ MAM-szabályzat létrehozása előtt tekintse át [az előfeltételekre és a t�
 Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a felhasználók számára ekkor még nincs telepítve. A szabályzatok életbe léptetéséről a következő, „Szabályzat telepítése a felhasználók számára” című szakasz nyújt tájékoztatást.
 
 > [!IMPORTANT]
-> Ha egy alkalmazáshoz létrehoz egy MAM-szabályzatot az Intune felügyeleti konzoljával, és az Azure-portál használatával is létrehoz egy MAM-szabályzatot hozzá, akkor az Azure-portálon létrehozott szabályzat lesz az elsődleges. Az Intune vagy a Configuration Manager-konzol jelentéseiben azonban az Intune felügyeleti konzoljában létrehozott szabályzatbeállítások szerepelnek. Példa:
+> Ha egy alkalmazáshoz létrehoz egy alkalmazásszabályzatot az Intune felügyeleti konzoljával, és az Azure Portalon is létrehoz egy alkalmazásszabályzatot hozzá, akkor az Azure Portalon létrehozott szabályzat élvez elsőbbséget. Az Intune vagy a Configuration Manager-konzol jelentéseiben azonban az Intune felügyeleti konzoljában létrehozott szabályzatbeállítások szerepelnek. Példa:
 >
-> -   Az Intune felügyeleti konzolján létrehozott egy MAM-szabályzatot, amely tiltja az alkalmazásokból való másolást.
-> -   Az Azure konzolján létrehozott egy MAM-szabályzatot, amely engedélyezi az alkalmazásokból való másolást.
+> -   Az Intune felügyeleti konzolján létrehozott egy alkalmazásszabályzatot, amely tiltja az alkalmazásból való másolást.
+> -   Az Azure konzolján létrehozott egy alkalmazásszabályzatot, amely engedélyezi az alkalmazásból való másolást.
 > -   Mindkét szabályzatot ugyanahhoz az alkalmazáshoz rendeli.
 > -   Ennek eredményeképp az Azure-konzolon létrehozott szabályzat elsőbbséget kap, így a másolás engedélyezve lesz.
 > -   Azonban az Intune-konzolon megjelenő állapot és jelentések szerint a másolás tiltott, ami nem felel meg a valóságnak.
@@ -113,8 +124,8 @@ A szabályzat csak az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-lic
 > Ha az Intune-ban és a Configuration Managerben kezeli az iOS- és Android-eszközöket, a szabályzatok csak a közvetlenül kijelölt csoport felhasználói esetében lépnek érvénybe. A csoportba ágyazott alárendelt csoportok tagjaira nem vonatkozik a szabályzat.
 
 A végfelhasználók az App Store-ból vagy a Google Play áruházból tölthetik le az alkalmazásokat. További információkért lásd:
-* [Mi várható az Android-alkalmazás MAM-szabályzatok általi kezelésekor](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Mi várható az iOS-alkalmazás MAM-szabályzatok általi kezelésekor](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>A meglévő szabályzatok módosítása
 A meglévő szabályzatokat szerkesztheti, és alkalmazhatja azokat a megcélzott felhasználókra. Ha azonban a meglévő szabályzatok módosításakor a felhasználók már be voltak jelentkezve az alkalmazásokba, csak egy 8 órás időszak elteltével láthatják a változtatásokat.
@@ -168,11 +179,11 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 [A megfelelőség és a felhasználói állapot figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>További információ
-* [Mi várható az Android-alkalmazás MAM-szabályzatok általi kezelésekor](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Mi várható az iOS-alkalmazás MAM-szabályzatok általi kezelésekor](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
