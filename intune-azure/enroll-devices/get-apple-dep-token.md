@@ -14,8 +14,8 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
 
 ---
 
@@ -31,7 +31,7 @@ Ahhoz, hogy a vállalat által birtokolt eszközöket az Apple készülékregisz
 > Csak akkor olvassa el ezt a megjegyzést, ha Ön olyan ügyfelünk, akit áttelepítettünk az Intune felügyeleti konzoljáról az Azure Portalra. Ha az áttelepítés során törölte az Apple DEP-tokent az Intune felügyeleti konzolból, akkor előfordulhat, hogy a DEP-token vissza lett állítva az Intune-fiókjába. Ilyen esetben egyszerűen törölje a DEP-tokent az Azure Portalról. 
 
 **Az Apple DEP-tanúsítvány beszerzése**</br>
-Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet. Válassza az Intune panelen az **Eszközök regisztrálása** > **Apple DEP-token** elemet, majd kövesse az Azure Portal számozott lépéseit (alább láthatók).
+Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Válassza az Intune panelen az **Eszközök regisztrálása** > **Apple DEP-token** elemet, majd kövesse az Azure Portal számozott lépéseit (alább láthatók).
 
 **1. lépés Töltsön le egy nyilvános kulcsú Intune-tanúsítványt (ez szükséges az Apple DEP-token létrehozásához).**<br>
 Válassza a **Nyilvános kulcsú tanúsítvány letöltése** elemet, és mentse helyben a letöltött titkosításikulcs-fájlt (.pem). A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
@@ -56,6 +56,6 @@ Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gomb
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
 
 
 ---
@@ -37,7 +37,7 @@ Az iOS-eszközök regisztrálásának további módjairól [Az iOS-eszközök re
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-iOS-eszközök regisztrációjának indítása előtt végezze el az alábbiakat:
+Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az alábbi előfeltételeket:
 
 - [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
@@ -50,7 +50,7 @@ iOS-eszközök regisztrációjának indítása előtt végezze el az alábbiakat
 
 Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmazott beállításokat. A következő lépésekkel hozhat létre eszközregisztrációs profilt a DEP eszközzel regisztrált iOS-eszközök számára.
 
-1. Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
 
@@ -110,17 +110,19 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP által felügyelt eszközök szinkronizálása
 
-1. Az Azure Portalon válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. Az **Apple Device Enrollment Program (DEP) beállításainak kezelése** területen válassza a **DEP-sorozatszámok** lehetőséget.
+2. Az Azure Portalon válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
+
+3. Az **Apple Device Enrollment Program (DEP) beállításainak kezelése** területen válassza a **DEP-sorozatszámok** lehetőséget.
 
 4. Az **Apple DEP-sorozatszámok** panelen válassza a **Szinkronizálás** lehetőséget.
 
 5. A **Szinkronizálás** panelen válassza a **Szinkronizálási kérelem** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
     Az Apple elfogadható DEP-forgalomra vonatkozó feltételeinek teljesítése érdekében az Intune a következő korlátozásokat írja elő:
-     -  Teljes DEP-szinkronizálás legfeljebb hét naponként futtatható. A teljes szinkronizálás során az Intune frissíti az Apple által hozzárendelt összes Intune-sorozatszámot, függetlenül attól, hogy azokat korábban szinkronizálták-e. Ha az előző teljes szinkronizálástól számított hét napon belül újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.
-     -  A szinkronizálási kérelmek elbírálása 10 percet vesz igénybe. Ez idő alatt, vagy amíg a kérelem ellenőrzése nem fejeződött be, a **Szinkronizálás** gomb inaktív.
+     -    Teljes DEP-szinkronizálás legfeljebb hét naponként futtatható. A teljes szinkronizálás során az Intune frissíti az Apple által hozzárendelt összes Intune-sorozatszámot, függetlenül attól, hogy azokat korábban szinkronizálták-e. Ha az előző teljes szinkronizálástól számított hét napon belül újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.
+     -    A szinkronizálási kérelmek elbírálása 10 percet vesz igénybe. Ez idő alatt, vagy amíg a kérelem ellenőrzése nem fejeződött be, a **Szinkronizálás** gomb inaktív.
 
 >[!NOTE]
 >DEP-sorozatszámokat az **Apple DEP-sorozatszámok** panelen is hozzá tud rendelni profilokhoz.
@@ -136,7 +138,7 @@ A felhasználói affinitással konfigurált eszközökön telepítheti és futta
 
 ### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>A vállalat által birtokolt iOS-eszközök regisztrálása felhasználói affinitás használatával 
 
-1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi felhasználónevüket vagy az egyszerű felhasználónevüket) kell megadniuk.
+1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi vagy egyszerű felhasználónevüket) kell megadniuk.
 
 2. A telepítés során a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Vállalati portál alkalmazást. Az azonosítót a telepítés után, az iOS-beállítások menüben is megadhatják.
 
@@ -156,6 +158,6 @@ A regisztrálás ezzel befejeződött. Ezután a felhasználó az összes funkci
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

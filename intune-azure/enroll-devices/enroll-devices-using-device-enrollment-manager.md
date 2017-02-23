@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
 
 ---
 
@@ -66,9 +66,9 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
 
 ## <a name="add-a-device-enrollment-manager"></a>Eszközregisztráció-kezelő hozzáadása
 
-1.  Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet.
+1.  Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2.  Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Készülékregisztráció-kezelők** elemet.
+2.  Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
 
 3.  Válassza a **Hozzáadás** elemet.
 
@@ -88,18 +88,22 @@ A készülékregisztráció-kezelő eltávolítása nincs hatással a regisztrá
 
 **Készülékregisztráció-kezelő eltávolítása**
 
-1. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. A **Készülékregisztráció-kezelő** panelen kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra, és válassza az **Eltávolítás** parancsot.
+2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
+
+3. A **Készülékregisztráció-kezelő** panelen kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra, és válassza az **Eltávolítás** parancsot.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>A készülékregisztráció-kezelő tulajdonságainak megtekintése
 
-1. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** parancsot.
+2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
+
+3. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** parancsot.
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

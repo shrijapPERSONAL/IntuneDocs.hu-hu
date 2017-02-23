@@ -14,8 +14,8 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
 
 ---
 
@@ -36,7 +36,7 @@ A mobileszköz-felügyeleti szolgáltató beállítás szabja meg, hogy miként 
 
 **A mobileszköz-felügyeleti szolgáltató beállítása:**
 
-1. Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Áttekintés** elemet.
 
@@ -44,6 +44,6 @@ A mobileszköz-felügyeleti szolgáltató beállítás szabja meg, hogy miként 
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

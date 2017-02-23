@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
 
 
 ---
@@ -35,7 +35,7 @@ Az iOS-eszközök regisztrálásának további lehetőségeiről [Az iOS-eszköz
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-iOS-eszközök regisztrációjának indítása előtt végezze el az alábbiakat:
+Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az alábbi előfeltételeket:
 
 - [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
@@ -43,8 +43,8 @@ iOS-eszközök regisztrációjának indítása előtt végezze el az alábbiakat
 - [A Céges portál konfigurálása](/intune-azure/manage-apps/company-portal-app.md)
 - Felhasználói licencek hozzárendelése az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Apple MDM push-tanúsítvány beszerzése](get-an-apple-mdm-push-certificate.md)
-- Gondoskodjon arról, hogy fizikai hozzáférése legyen az iOS-eszközökhöz
-- Eszközök sorozatszámának beszerzése – erről [Az iOS-eszközök sorozatszámának megkeresését](https://support.apple.com//HT204308) ismertető cikk nyújt tájékoztatást.
+- Az iOS-eszközökhöz való fizikai hozzáférés biztosítása
+- Az eszközök sorozatszámának rendelkezésre állása – erről [az iOS-eszközök sorozatszámának megkeresését](https://support.apple.com//HT204308) ismertető cikk nyújt tájékoztatást.
 - USB csatlakozókábelek előkészítése
 - Gondoskodjon arról, hogy a Mac PC-n telepítve legyen az [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Configurator-sorozatszámok hozzáadása](add-apple-configurator-serial-numbers.md)
@@ -54,13 +54,13 @@ iOS-eszközök regisztrációjának indítása előtt végezze el az alábbiakat
 
 Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmazott beállításokat. A következő lépésekkel hozhat létre eszközregisztrációs profilt az Apple Configurator eszközzel regisztrált iOS-eszközök számára.
 
-1. Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
 
-3. Az **Apple Configurator regisztrációs beállításainak kezelése** alatt válassza az **AC-profilok** elemet.
+3. **Az Apple Configurator regisztrációs beállításainak kezelése** területen válassza az **AC-profilok** elemet.
 
-4. Az **Apple Configurator-regisztrációs profilok** panelen válassza a **Létrehozás** elemet.
+4. **Az Apple Configurator-regisztrációs profilok** panelen válassza a **Létrehozás** elemet.
 
 5. A **Regisztrációs profil létrehozása** panelen adja meg a profil nevét és leírását.
 
@@ -78,11 +78,13 @@ A létrehozott Apple Configurator-profilokhoz hozzárendelheti az eszközök sor
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>Sorozatszámok hozzárendelése Apple Configurator-profilokhoz
 
-1. Az **Apple Configurator-regisztrációs profilok** panelen válassza ki azt a profilt, amelyikhez hozzá szeretné rendelni a sorozatszámokat.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. A profil nevét viselő panelen válassza a **Sorozatszámok** > **Hozzárendelés** lehetőséget.
+2. Az **Apple Configurator-regisztrációs profilok** panelen válassza ki azt a profilt, amelyikhez hozzá szeretné rendelni a sorozatszámokat.
 
-3. Jelölje ki a profilhoz rendelni kívánt sorozatszámokat, majd kattintson a **Hozzárendelés** gombra.
+3. A profil nevét viselő panelen válassza a **Sorozatszámok** > **Hozzárendelés** lehetőséget.
+
+4. Jelölje ki a profilhoz rendelni kívánt sorozatszámokat, majd kattintson a **Hozzárendelés** gombra.
 
 ## <a name="export-the-profile-to-ios-devices"></a>Profil exportálása iOS-es eszközökre
 
@@ -90,11 +92,13 @@ Miután létrehozta a profilt, és hozzárendelte a sorozatszámokat, ki kell ex
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>Profil exportálása Setup Assistant-regisztrációval
 
-1. Az **Apple Configurator-regisztrációs profilok** panelen válassza ki az exportálandó profilt.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. A profil panelén válassza a **Profil exportálása** lehetőséget.
+2. Az **Apple Configurator-regisztrációs profilok** panelen válassza ki az exportálandó profilt.
 
-3. Csatlakoztassa az iOS-eszközt, és másolja a profil URL-címét az [Apple Configuratorba](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12). A címet később fel kell töltenie az Apple Configurator eszközbe az iOS-eszközök által használt Intune profil meghatározásához.
+3. A profil panelén válassza a **Profil exportálása** lehetőséget.
+
+4. Csatlakoztassa az iOS-eszközt, és másolja a profil URL-címét az [Apple Configuratorba](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12). A címet később fel kell töltenie az Apple Configurator eszközbe az iOS-eszközök által használt Intune profil meghatározásához.
 
   Az Apple Configurator 2 támogatásához módosítania kell a 2.0-s profil URL-címét. Ehhez a írja be a következő kód helyére:
     ```
@@ -108,7 +112,7 @@ Miután létrehozta a profilt, és hozzárendelte a sorozatszámokat, ki kell ex
 
    Az itt következő eljárás keretében az Apple Configurator segítségével feltölti a profil URL-címét az Apple DEP szolgáltatásába, ezzel meghatározza az iOS-eszközök által használandó Intune-profilt.
 
-4. Az Apple Configuratorral töltse fel a profil URL-címét az Apple DEP szolgáltatásba, ezzel meghatározza az iOS-eszközök által használandó Intune-profilt.
+5. Az Apple Configuratorral töltse fel a profil URL-címét az Apple DEP szolgáltatásba, ezzel meghatározza az iOS-eszközök által használandó Intune-profilt.
 
 
     1.  A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
@@ -139,7 +143,7 @@ Miután létrehozta a profilt, és hozzárendelte a sorozatszámokat, ki kell ex
 
     10. Az iOS-eszköz előkészítésének befejezésekor válassza le az USB-kábelt.  
 
-8.  **Eszközök terjesztése**:
+6.  **Eszközök terjesztése**:
     Az eszközök most már készen állnak a vállalati regisztrációra. Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Amikor a felhasználók bekapcsolják az eszközüket, elindul a Beállítási asszisztens.
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>A Céges portál telepítése és használata a felhasználók által
@@ -168,6 +172,6 @@ A regisztrálás ezzel befejeződött. Ezután a felhasználó az összes funkci
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
