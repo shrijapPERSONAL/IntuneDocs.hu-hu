@@ -5,7 +5,7 @@ description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számí
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
 
 
 ---
@@ -23,14 +24,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
 A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítésével regisztrálhatók. Az Intune-ügyfélszoftver a következő módszerekkel telepíthető:
 
-- A rendszergazda által:
-  - Manuális telepítés
-  - Csoportházirenddel történő telepítés
-  - Lemezkép részeként történő telepítés
+- A rendszergazda által az alábbi három módszer egyikével: manuális telepítés, Csoportházirenddel vagy lemezkép részeként történő telepítéssel
 
-- Telepítés a szoftverügyfelet manuálisan telepítő végfelhasználók által
+- A végfelhasználók által, az ügyfélszoftver manuális telepítésével
 
-A rendszergazda által központilag telepített vagy a felhasználó által letöltött Intune-szoftverügyfél tartalmazza a számítógép az Intune felügyeleti szoftverben való regisztrálásához minimálisan szükséges szoftvert. A számítógép regisztrálása után az Intune-szoftverügyfél letölti a számítógép felügyeletéhez szükséges teljes ügyfélszoftvert.
+Az Intune-ügyfélszoftver tartalmazza azt a szoftvert, amely ahhoz szükséges, hogy a számítógépet regisztrálja az Intune-felügyeletben. A számítógép regisztrálása után az Intune-ügyfélszoftver letölti a számítógép felügyeletéhez szükséges teljes ügyfélszoftvert.
 
 Az egymást követő letöltések csökkentik a hálózati sávszélességre gyakorolt hatást és minimálisra csökkentik a számítógép Intune-ban való kezdeti regisztrálásához szükséges időt. Emellett azt is biztosítja, hogy a második letöltést követően az ügyfél a legfrissebb szoftverrel rendelkezzen.
 
@@ -44,17 +42,16 @@ Az összes módszer, kivéve azokat, amelyekben maguk a felhasználók telepíti
 
 2.  Az **Ügyfélszoftver letöltése** oldalon kattintson az **Ügyfélszoftver letöltése** elemre. Ezt követően mentse a szoftvert tartalmazó **Microsoft_Intune_Setup.zip** csomagot a hálózat egy biztonságos helyére.
 
-    > [!NOTE]
-    > Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
+Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
 
 3.  Bontsa ki a telepítőcsomag tartalmát a biztonságos helyre a hálózaton.
 
     > [!IMPORTANT]
-    > Ne nevezze át vagy távolítsa el a kibontott **ACCOUNTCERT** fájlt, különben az ügyfélszoftver telepítése sikertelen lesz.
+    > Ne nevezze át és ne távolítsa el a kibontott **ACCOUNTCERT** fájlt, különben az ügyfélszoftver telepítése sikertelen lesz.
 
 ## <a name="deploy-the-client-software-manually"></a>Ügyfélszoftver manuális telepítése
 
-Ugorjon az ügyfélszoftver telepítési fájljait tartalmazó mappára azon számítógép(ek)en, amely(ek)re a szoftverügyfelet telepíteni fogja. Futtassa a **Microsoft_Intune_Setup.exe** fájlt az ügyfélszoftver telepítéséhez.
+Ugorjon az ügyfélszoftver telepítési fájljait tartalmazó mappára azon számítógép(ek)en, amely(ek)re az ügyfélszoftvert telepíteni fogja. Futtassa a **Microsoft_Intune_Setup.exe** fájlt az ügyfélszoftver telepítéséhez.
 
 > [!NOTE]
 > A telepítés állapota akkor jelenik meg, ha az ügyfélszámítógép tálcáján megjelenő ikonra mutat.
@@ -108,11 +105,56 @@ Az Intune ügyfélszoftverét az alábbi eljárás alapján egy operációsrends
 
 ## <a name="instruct-users-to-self-enroll"></a>A felhasználók felkérése önálló regisztrálásra
 
-Az Intune-ügyfélszoftver a [Munkahelyi portál webhelyen](http://portal.manage.microsoft.com) telepíthető. Ha a portál észleli, hogy az eszköz egy Windows rendszerű számítógép, a rendszer megkéri a felhasználót, hogy regisztrálja a számítógépet az Intune-szoftverügyfél letöltésével. A letöltést követően a felhasználók a szoftver telepítésével vonhatják be a felügyelet alá a számítógépet.
+Az Intune-ügyfélszoftver a [Céges portál webhelyen](http://portal.manage.microsoft.com) telepíthető. A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének operációsrendszer-platformjától és verziójától függően változik. 
 
-A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének platformjától és verziójától függően változhat.
+Ha a felhasználókhoz még nem rendeltek Intune-licencet, vagy ha a szervezet MDM-szolgáltatóját még nem állították be az Intune-ra, a felhasználóknak nem jelenik meg regisztrálási lehetőség.
 
-![Az Intune-portál kéri a felhasználót, hogy töltse le az Intune-szoftverügyfelet](../media/software-client-download.png)
+Ha a felhasználókhoz hozzárendeltek Intune-licencet, és a szervezet MDM-szolgáltatóját beállították az Intune-ra:
+
+- A Windows 7 és Windows 8 rendszereket használó felhasználóknak CSAK az a regisztrációs lehetőség jelenik meg, amelyben szervezetükre szabott egyedi ügyfélszoftvert kell letölteniük és telepíteniük.
+
+- A Windows 10 és Windows 8.1 rendszereken két regisztrálási lehetőség jelenik meg:
+
+  -  **A számítógép regisztrálása mobileszközként**: A felhasználó a **Regisztráció menetének ismertetése** gombra kattintás után útmutatót olvashat a számítógép mobileszközként való regisztrálásáról. Ez a gomb kiemelt módon jelenik meg, mert az MDM-regisztráció az alapbeállítás és a javasolt regisztrációs módszer. Az MDM-regisztráció azonban nem része ennek a témakörnek, mert itt csak az ügyfélszoftver telepítését ismertetjük.
+  - **Számítógép regisztrálása az Intune-ügyfélszoftver használatával**: Javasolt a felhasználókat tájékoztatni, hogy kattintsanak a **Letöltés ide kattintva** hivatkozásra, amely végigvezeti őket az ügyfélszoftver telepítésén.
+
+Az alábbi táblázat a különböző lehetőségeket foglalja össze.
+
+  ![Alapértelmezés szerinti regisztrálási lehetőségek platform szerint](../media/default-enrollment-options-table.png)
+
+Az alábbi képernyőkép azt mutatja, amit a felhasználók láthatnak az ügyfélszoftver használatával történő eszközregisztrálás során.
+
+A rendszer először felkéri a felhasználót, hogy azonosítsa vagy regisztrálja az eszközt.
+
+  ![eszköz azonosítása vagy regisztrálása](../media/identify-device-or-enroll.png)
+
+A PC-s ügyfélszoftver telepítésének érdekében érdemes a felhasználókat felkérni, hogy válasszák a **Letöltés ide kattintva** hivatkozást, amely lehetővé teszi a PC-s ügyfélszoftver letöltését, és végigvezeti a felhasználót a telepítési folyamaton. A **Regisztráció menetének ismertetése** gomb az MDM-regisztráció folyamatát ismertető dokumentációhoz vezet, amely azonban nem releváns az ügyfélszoftverrel kapcsolatos útmutatóhoz.
+
+  ![válassza a Letöltés ide kattintva hivatkozást](../media/enroll-your-windows-device.png)
+
+A hivatkozásra kattintva egy **Szoftver letöltése** gomb jelenik meg, amelynek kiválasztásával elindítható a PC-s ügyfélszoftver telepítése.
+
+  ![válassza a Szoftver letöltése gombot](../media/download-pc-client-software.png)
+
+Ezt követően a felhasználóknak be kell jelentkezniük a vállalati hitelesítő adataikkal.
+
+  ![Bejelentkezés hitelesítő adatokkal](../media/sign-in-to-intune.png)
+
+A felhasználó a telepítési folyamat Üdvözlő oldalára kerül.
+
+  ![A PC-s ügyfél telepítésének Üdvözlő oldala](../media/welcome-to-pc-agent-install-wizard.png)
+
+A **Következő** gomb kiválasztásával elindul a telepítés.
+
+  ![A PC-s ügyfél telepítésének Üdvözlő oldala](../media/welcome-to-pc-agent-install-wizard.png)
+
+A telepítés befejeztével a felhasználó a **Befejezés** gombot választja.
+
+  ![A PC-s ügyfél telepítésének befejezése](../media/completed-the-setup-wizard.png)
+
+Ha a felhasználó úgy próbálja mobileszközként regisztrálni a számítógépet, hogy az már korábban regisztrálva lett a PC-s Intune-ügyfélszoftverrel, akkor az alább látható hibaüzenetet kapja.
+
+  ![A megjelenő képernyő, ha a számítógép már regisztrálva van](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>A sikeres ügyféltelepítés figyelése és ellenőrzése
 A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél sikeres telepítését.
@@ -143,6 +185,6 @@ A következő eljárások egyikével figyelheti és ellenőrizheti az ügyfél s
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
