@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ A Lookout MTP-kapcsolat engedélyezéséhez az Intune-ban a [Microsoft Intune fe
 >[!IMPORTANT]
 > A Lookout for Work alkalmazás konfigurálását **kötelező** a megfelelőségi szabályok létrehozása és a feltételes hozzáférés konfigurálása előtt elvégezni. Ez biztosítja, hogy az alkalmazás elérhető és készen áll a végfelhasználók általi telepítésre még azelőtt, hogy hozzáférhetnének a levelezéshez és más vállalati erőforrásokhoz.
 
-Ez végrehajtja a Lookout és az Intune közötti integráció beállítását az Intune felügyeleti konzolon.  A megoldás megvalósításának következő néhány lépésében kerül sor a [Lookout for Work](configure-and-deploy-lookout-for-work-apps.md) alkalmazások központi telepítésére és a [megfelelőségi](enable-device-threat-protection-rule-in-compliance-policy.md) szabályzat beállítására.
+Ez végrehajtja a Lookout és az Intune közötti integráció beállítását az Intune felügyeleti konzolon.  A megoldás megvalósításának következő néhány lépésében kerül sor a [Lookout for Work](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) alkalmazások központi telepítésére és a [megfelelőségi](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy) szabályzat beállítására.
 
 
 ## <a name="next-steps"></a>További lépések
-[A Lookout for Work alkalmazás konfigurálása](configure-and-deploy-lookout-for-work-apps.md)
+[A Lookout for Work alkalmazás konfigurálása](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

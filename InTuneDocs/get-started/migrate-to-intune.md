@@ -1,11 +1,11 @@
 ---
-title: "Áttérés az Intune-ra | Microsoft Intune"
-description: 
+title: "Áttérés az Intune-ra | Microsoft Docs"
+description: "A meglévő nagyvállalati mobilitási megoldásról az Intune-ra való áttérés a következő általános lépésekkel hajtható végre."
 keywords: 
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
 
 # <a name="migrate-to-intune"></a>Áttérés az Intune-ra
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A meglévő nagyvállalati mobilitási megoldásról az Intune-ra való áttérés a következő általános lépésekkel hajtható végre:
 
@@ -45,7 +47,7 @@ Az Intune-ba való regisztrálás előtt törölni kell az eszközök regisztrá
 
 ## <a name="enrolling-devices-in-intune"></a>Az eszközök regisztrálása az Intune-ban
 
-Az áttéréshez beütemezett felhasználóknak késlekedés nélkül regisztrálniuk kell az eszközeiket az Intune-ban, hogy visszakapják a hozzáférésüket a vállalati erőforrásokhoz, e-mailekhez és alkalmazásokhoz, illetve hogy megakadályozzák a hozzáférés megszűnését. Ha feltételes hozzáférést konfigurált, és a felhasználók azt megelőzően próbálnak kapcsolódni a levelezéshez, hogy regisztrálták volna az eszközeiket az Intune-ban, akkor a hozzáférésük le lesz tiltva, és a regisztrálásra figyelmeztető e-mailt fognak kapni. Ez az e-mail segítséget nyújt számukra az eszköznek az Intune-ban történő regisztrálásához.  Másik lehetőségként a felhasználók az Intune Vállalati portál alkalmazását használhatják az eszköz regisztrálásához, vagy elvégezhetik ezt natív módon az operációs rendszerben (a Windows 8.1 és a Windows 10 Mobile esetében). A [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) című témakörben talál további útmutatást a regisztráláshoz az egyes platformok esetében.
+Az áttéréshez beütemezett felhasználóknak késlekedés nélkül regisztrálniuk kell az eszközeiket az Intune-ban, hogy visszakapják a hozzáférésüket a vállalati erőforrásokhoz, e-mailekhez és alkalmazásokhoz, illetve hogy megakadályozzák a hozzáférés megszűnését. Ha feltételes hozzáférést konfigurált, és a felhasználók azt megelőzően próbálnak kapcsolódni a levelezéshez, hogy regisztrálták volna az eszközeiket az Intune-ban, akkor a hozzáférésük le lesz tiltva, és a regisztrálásra figyelmeztető e-mailt fognak kapni. Ez az e-mail segítséget nyújt számukra az eszköznek az Intune-ban történő regisztrálásához.  Másik lehetőségként a felhasználók az Intune Céges portál alkalmazását használhatják az eszköz regisztrálásához, vagy elvégezhetik ezt natív módon az operációs rendszerben (a Windows 8.1 és a Windows 10 Mobile esetében). A [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) című témakörben talál további útmutatást a regisztráláshoz az egyes platformok esetében.
 
 ## <a name="configure-intune-conditional-access-optional"></a>Az Intune feltételes hozzáférésének konfigurálása (választható)
 
@@ -74,6 +76,6 @@ A teljes útmutató letölthető a [TechNet Gallery](https://gallery.technet.mic
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

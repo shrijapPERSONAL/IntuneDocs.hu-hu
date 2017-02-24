@@ -1,5 +1,6 @@
 ---
-title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Az eszközök regisztrálásával kapcsolatos problémák elhárítása."
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
 
 
 ---
@@ -346,7 +348,7 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 
 **Megoldás:**
 
-1.. A **Start** menüben használja a **Futtatás** -> **MMC** parancsot.
+1. A **Start** menüben használja a **Futtatás** -> **MMC** parancsot.
 1. Válassza a **Fájl** > **Beépülő modulok hozzáadása/eltávolítása** parancsot.
 1. Kattintson duplán a **Tanúsítványok** elemre, válassza a **Számítógépfiók** >  lehetőséget, kattintson a **Tovább** gombra, végül válassza a **Helyi számítógép** lehetőséget.
 1. Kattintson duplán a **Tanúsítványok (Helyi számítógép)** elemre, majd válassza a **Személyes/Tanúsítványok** lehetőséget.

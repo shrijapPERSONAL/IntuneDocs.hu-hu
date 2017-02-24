@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Windows-eszközt a Vállalati portálon?
 
-Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset-your-device-cpwebsite.md) használja a Windows-eszköz alaphelyzetbe állításához, a művelet visszaállítja az eszközt annak gyári állapotába, és törli az összes alkalmazást, beállítást és adatot, a személyes adatokat is beleértve. Az, hogy az adott eszközön mi történik, az eszköz típusától és használati módjától függ (erről részletes információk az alábbi táblázatban láthatók). Az elveszett vagy ellopott eszköz alaphelyzetbe állításával kapcsolatos útmutatásokért lásd: [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-lost-or-stolen-device-windows.md).
+Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset-erase-your-device-cpwebsite.md) használja a Windows-eszköz alaphelyzetbe állításához, a művelet visszaállítja az eszközt annak gyári állapotába, és törli az összes alkalmazást, beállítást és adatot, a személyes adatokat is beleértve. Az, hogy az adott eszközön mi történik, az eszköz típusától és használati módjától függ (erről részletes információk az alábbi táblázatban láthatók). Az elveszett vagy ellopott eszköz alaphelyzetbe állításával kapcsolatos útmutatásokért lásd: [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md).
 
 |Eszközök konfigurálása és felügyelete|Eszköz típusa|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

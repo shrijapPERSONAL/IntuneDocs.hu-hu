@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
      -   **Az eszközöknek tartományhoz kell csatlakozniuk vagy meg kell felelniük a házirendnek.** Válassza ezt a lehetőséget, ha a számítógépeknek tartományhoz kell csatlakozniuk, vagy meg kell felelniük az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban beállított szabályzatoknak. Ha a számítógép egyik követelménynek sem felel meg, a rendszer kéri a felhasználótól, hogy regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban.
 
-     -   **Az eszközöknek tartományhoz kell csatlakozniuk.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépeknek tartományhoz kell csatlakozniuk ahhoz, hogy hozzáférhessenek az Exchange Online-hoz. Ha a számítógép nem csatlakozik tartományhoz, a rendszer blokkolja a levelezéshez való hozzáférést, és kéri a felhasználót, hogy lépjen kapcsolatba a rendszergazdával.
-
      -   **Az eszközöknek meg kell felelniük a házirendnek.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépek regisztrálva legyenek az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal, és megfeleljenek a szabályzatnak. Ha a számítógép nincs regisztrálva, megjelenik egy, a regisztráció lépéseit bemutató üzenet.
 
 4.   A **Böngészőalapú hozzáférés** SharePoint Online-hoz és a OneDrive Vállalati verzióhoz beállítás alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: ezek a Safari (iOS) és a Chrome (Android). Más böngészőkkel nem lehetséges a hozzáférés. A OneDrive beállított alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek lesznek.
@@ -200,6 +198,6 @@ Válassza ki a kívánt mobileszközök csoportját. Ezután az **Eszközök** l
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

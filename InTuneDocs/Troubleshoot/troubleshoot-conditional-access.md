@@ -1,5 +1,5 @@
 ---
-title: "A feltételes hozzáférés hibaelhárítása| Microsoft Intune"
+title: "A feltételes hozzáférés hibaelhárítása|Microsoft Docs"
 description: "A teendők abban az esetben, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével."
 keywords: 
 author: andredm7
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
-ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az e-mailek vagy a SharePoint megnyitásakor a felhasználóknak a rendszer általában egy regisztrálási kérelmet jelenít meg. A kérés a vállalati portálra irányítja a felhasználót.
 
@@ -31,11 +34,11 @@ Ez a témakör ismerteti a teendőket abban az esetben, ha a felhasználók nem 
 
 A feltételes hozzáférés megfelelő működéséhez az alábbi feltételeknek kell teljesülnie:
 
--   Az eszközt az Intune-nak kell felügyelnie
--   Az eszköznek regisztrálva kell lennie az Azure Active Directoryban (AAD). A regisztrációra általában automatikusan kerül sor az Intune-ban történő regisztrálás során
--   Az eszköznek meg kell felelnie az Intune megfelelőségi szabályzatának mind az eszköz, mind a felhasználó tekintetében.  Ha nincsenek megfelelőségi szabályzatok, az Intune-regisztráció is elegendő.
--   Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX Standard-eszközök esetében ez automatikusan történik.
--   Az Intune Exchange Connectort megfelelően konfigurálni kell. További információkért lásd az [Az Exchange Connector hibaelhárítása a Microsoft Intune-ban](troubleshoot-exchange-connector.md) című ismertetőt.
+-    Az eszközt az Intune-nak kell felügyelnie
+-    Az eszköznek regisztrálva kell lennie az Azure Active Directoryban (AAD). A regisztrációra általában automatikusan kerül sor az Intune-ban történő regisztrálás során
+-    Az eszköznek meg kell felelnie az Intune megfelelőségi szabályzatának mind az eszköz, mind a felhasználó tekintetében.  Ha nincsenek megfelelőségi szabályzatok, az Intune-regisztráció is elegendő.
+-    Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX Standard-eszközök esetében ez automatikusan történik.
+-    Az Intune Exchange Connectort megfelelően konfigurálni kell. További információkért lásd az [Az Exchange Connector hibaelhárítása a Microsoft Intune-ban](troubleshoot-exchange-connector.md) című ismertetőt.
 
 Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyeleti portálon, valamint az eszköz könyvtárjelentésében.
 
@@ -50,7 +53,7 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
  -  A megfelelőségi adatok regisztrálása az eszközön időbe telhet. Várjon néhány percet, és próbálkozzon újra.
  -  iOS eszközök esetén:
      -   Ha már van a felhasználó által létrehozott e-mail-profil, ez meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy e-mail-profil telepítése nélkül regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
-     -   Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
+     -     Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
 
         Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
 
@@ -123,7 +126,7 @@ Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Tr
 
     „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','”
 
--   A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
+-    A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
 
 ##### <a name="exceptions-in-get-next-command"></a>A Get next parancs kivételei
 Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** kapcsolatos kivételeket, és adja meg azokat a Microsoft támogatási szolgálata számára.
@@ -132,9 +135,9 @@ Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** ka
 
 Részletes naplózás engedélyezése:
 
-1.  Nyissa meg az Exchange Connector nyomkövetés-konfigurációs fájlját. A fájl helye: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Keresse meg a TraceSourceLine-t a következő kulccsal: OnPremisesExchangeConnectorService
-3.  Az alábbiak szerint módosítsa a **SourceLevel** csomópont értékét az alapértelmezett **Warning ActivityTracing**-ről **Verbose ActivityTracing**-re.
+1.    Nyissa meg az Exchange Connector nyomkövetés-konfigurációs fájlját. A fájl helye: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Keresse meg a TraceSourceLine-t a következő kulccsal: OnPremisesExchangeConnectorService
+3.    Az alábbiak szerint módosítsa a **SourceLevel** csomópont értékét az alapértelmezett **Warning ActivityTracing**-ről **Verbose ActivityTracing**-re.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -159,6 +162,6 @@ Ha ezek a hibaelhárítási információk nem oldották meg a problémát, fordu
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ A Munkahelyi portál alkalmazás telepítése és az iOS- vagy macOS-eszköznek 
 -   Automatikusan konfigurálhatja vállalati e-mail-fiókját.
 
 Az eszköz Intune-beli regisztrálásával engedélyezi a rendszergazdának az eszköz kezelését, így biztosítható az eszközön tárolt munkahelyi adatok védelme.
-
-**Amit a rendszergazda nem lát**
-
--   Hívás- és webes előzmények
-
--    Tartózkodási hely
-
--   E-mailek és SMS-ek
-
--   Névjegyek
-
--    Jelszavak
-
--   Naptár
-
--   Filmtekercs mappa
-
-**Amit a rendszergazda láthat**
-
--   Modell
-
--   Sorozatszám
-
--   Operációs rendszer
-
--   Alkalmazásnevek
-
--   Tulajdonos
-
--   Eszköz neve
 
 A regisztrált eszközökön a következőkre van lehetősége a rendszergazdának:
 
@@ -99,6 +69,6 @@ Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
