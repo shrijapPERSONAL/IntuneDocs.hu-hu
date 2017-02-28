@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-mail-hozzáférés védelme: példák](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Office&365;-szolgáltatásokhoz való hozzáférés engedélyezése kizárólag a szabályzattal felügyelt alkalmazásoknak](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [iOS-alkalmazások MAM-szabályzatokkal](deploy-use/use-apps-with-mam-ca.md)
+#### [Alkalmazások használata alkalmazásalapú feltételes hozzáféréssel](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL nélküli alkalmazások blokkolása](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Hálózati hozzáférés védelme (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -222,8 +222,3 @@
 ## [A veszélyforrások elleni eszközvédelem hibaelhárítása](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Szószedet](understand-explore/intune-glossary.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
