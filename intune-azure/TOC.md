@@ -5,7 +5,9 @@
 ### [Regisztráljon az ingyenes próbaverzióhoz](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Újdonságok](introduction/whats-new.md)
 ## [Ismert problémák](introduction/known-issues-in-the-intune-preview.md)
-<!--- ## [Get support](introduction/get-support.md)
+## [Támogatás kérése](introduction/how-to-get-support-for-microsoft-intune.md)
+<!--- 
+
 ## [Related resources](introduction/related-resources.md)
 
 ## [Get started](plan-and-design/get-started.md) --->
@@ -38,6 +40,7 @@
 #### [Apple Configurator-sorozatszámok hozzáadása](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [iOS-eszközök regisztrálása a készülékregisztrációs program segítségével](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Eszközök regisztrálása az eszközregisztráció-kezelővel](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [macOS-eszközök regisztrálása](enroll-devices/enroll-macos-devices.md)
 ### [Windows-eszközök regisztrálása](enroll-devices/enroll-window-devices.md)
 ### Az eszközregisztráció felügyelete
 #### [Használati feltételek létrehozása](enroll-devices/create-terms-and-conditions.md)
@@ -184,8 +187,3 @@
 ### [Alkalmazásburkoló eszköz Android rendszerhez](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
 ## [Intune App SDK](/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
-
-<!--HONumber=Feb17_HO2-->
-
-

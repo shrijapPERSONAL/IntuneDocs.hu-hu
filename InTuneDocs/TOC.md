@@ -206,6 +206,7 @@
 
 # [Hibaelhárítás](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Támogatás igénylése](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Az Intune figyelése jelentésekkel](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Az Endpoint Protection hibáinak elhárítása](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Vállalati erőforrás-hozzáférési problémák elhárítása](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Alkalmazástelepítéssel kapcsolatos problémák elhárítása](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
