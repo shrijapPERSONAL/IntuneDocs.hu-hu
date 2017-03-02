@@ -2,8 +2,8 @@
 title: "Ismerkedés a csoportokkal az Intune Azure Portal előzetesében | Microsoft Docs"
 description: "További információk az Intune Azure Portal előzetes csoportokkal kapcsolatos újdonságaival"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angerobe
 ms.date: 01/18/2017
 ms.topic: article
@@ -12,8 +12,9 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 27a9c9d8269b302fa9735972056d38e7919f42b5
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: 9386002cf5ab8bc9dac66646a7de3b00b54b1b72
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -25,18 +26,19 @@ ms.openlocfilehash: 27a9c9d8269b302fa9735972056d38e7919f42b5
 A visszajelzések alapján módosításokat vezetünk be a Microsoft Intune-beli csoportok használatában.
 Az Azure Portalról használt Intune esetén az Intune-csoportok migrálva lettek az Azure Active Directory biztonsági csoportjaiba.
 
-Az ügyfeleknek ez azért hasznos, mert így ugyanazt a csoportkezelési élményt kapják a teljes Enterprise Mobility + Security, valamint az Azure AD-alkalmazások esetén is. Ezen kívül az új funkció kiterjesztéséhez és testre szabásához a PowerShell és a Graph API is használható.
+Ez azért hasznos, mert így a csoportfelügyeleti környezet egységes a teljes Enterprise Mobility + Security csomagban, valamint az Azure AD-alkalmazásokban. Ezen kívül az új funkció kiterjesztéséhez és testre szabásához a PowerShell és a Graph API is használható.
 
-Az Azure AD-alapú biztonsági csoportok az Intune minden telepítéstípusát támogatják mind a felhasználókat, mind az eszközöket tekintve. Használhatók továbbá az Azure AD-alapú dinamikus csoportok, amelyek az Ön által megadott attribútumok alapján automatikusan frissülnek. Például létrehozhat egy csoportot, amely az összes iOS 9 rendszerű eszközt tartalmazza. Amikor egy új iOS 9 rendszerű eszközt regisztrálnak, az automatikusan hozzáadódik a dinamikus csoporthoz.
+Az Azure AD-alapú biztonsági csoportok az Intune minden telepítéstípusát támogatják mind a felhasználókat, mind az eszközöket tekintve. Használhatók továbbá az Azure AD-alapú dinamikus csoportok, amelyek az Ön által megadott attribútumok alapján automatikusan frissülnek. Például létrehozhat egy csoportot, amely az összes iOS 9 rendszerű eszközt tartalmazza. Az iOS 9-es eszközök regisztrálás után automatikusan megjelennek a dinamikus csoportban.
 
 ## <a name="what-is-not-available"></a>Mi az, ami nem érhető el?
 
 Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érhető el az Azure AD-ben:
 
 - A **Nem csoportosított felhasználók** és a **Nem csoportosított eszközök** Intune-csoportjai már nem érhetők el.
-- A **Meghatározott tagok kizárása** a csoportból funkció az Azure Portalon nem elérhető. Ennek megoldására azonban használhatja az Azure AD-alapú biztonsági csoportok speciális szabályait. Létrehozhat például egy olyan speciális szabályt, amely egyetlen biztonsági csoportba foglalja a Sales osztály minden munkatársát, kivéve azokat, akiknek a beosztásában szerepel az „Assistant” szó. Ezt a következő szabállyal érheti el: `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- Az Intune-konzolon elérhető **Minden, az Exchange ActiveSync által felügyelt eszköz** csoport nem lett migrálva az Azure AD-be. Az EAS által kezelt eszközök információit azonban továbbra is elérheti az Azure Portalról.
+- A **Meghatározott tagok kizárása** a csoportból funkció az Azure Portalon nem érhető el, megoldható azonban az Azure AD-alapú biztonsági csoportok speciális szabályaival. Létrehozhat például egy olyan speciális szabályt, amely egyetlen biztonsági csoportba foglalja a Sales nevű részleg minden munkatársát, kivéve azokat, akiknek a beosztásában szerepel az „Assistant” szó. Ezt a következő szabállyal érheti el:
 
+  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
+- Az Intune-konzolon elérhető **Minden Exchange ActiveSync által kezelt eszköz** csoport nem lett migrálva az Azure AD-be, az EAS által kezelt eszközök információit azonban továbbra is elérheti az Azure Portalról.
 
 ## <a name="how-to-get-started"></a>Első lépések
 
@@ -44,13 +46,14 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
     -  [Az erőforrásokhoz való hozzáférés kezelése Azure Active Directory-csoportokkal](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
     -  [Csoportkezelés az Azure Active Directoryban](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
     -  [Attribútumok használata speciális szabályok létrehozására](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
--  Fontos, hogy azok a rendszergazdák, akik csoportokat fognak létrehozni, hozzá legyenek adva az **Intune szolgáltatásadminisztrátor** Azure AD-szerepkörhöz. Vegye figyelembe, hogy az Azure AD szolgáltatásadminisztrátori szerepkör nem rendelkezik **Csoportok kezelése** engedéllyel.
--  Ha **Meghatározott tagok kizárása** funkcióval használ csoportokat, vizsgálja meg, hogy átalakíthatók-e ezek a csoportok úgy, hogy ne legyen szükség kizárásokra, illetve hogy elérhető-e ugyanaz az eredmény az Azure AD-lekérdezésekben használt speciális szabályokkal.
+-  Fontos, hogy azok a rendszergazdák, akik csoportokat fognak létrehozni, hozzá legyenek adva az **Intune-szolgáltatásadminisztrátor** Azure AD-szerepkörhöz. Az Azure AD szolgáltatásadminisztrátori szerepkörének nincs **Csoportok kezelése** engedélye.
+-  Ha Intune-csoportjai használták a **Meghatározott tagok kizárása** beállítást, akkor el kell döntenie, hogy át tudja-e alakítani ezeket a csoportokat úgy, hogy ne legyen bennük kizárás, vagy speciális szabályokra van szüksége a céges igények miatt.
 
 
 ## <a name="what-happened-to-intune-groups"></a>Mi történt az Intune-csoportokkal?
+A csoportok klasszikus Intune-portálról az Azure Portalon lévő Intune-ba való migrálásakor a következő szabályok érvényesek:
 
-| Csoportok az Intune-ban|Azure AD csoport|
+| Intune-os csoportok|Azure AD-csoport|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statikus felhasználói csoport|Statikus Azure AD biztonsági csoport|
 |Dinamikus felhasználói csoport|Statikus Azure AD biztonsági csoportok Azure AD biztonságicsoport-hierarchiával|
@@ -58,10 +61,13 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
 |Dinamikus eszközcsoport|Dinamikus Azure AD biztonsági csoport|
 |Belefoglalási feltételt tartalmazó csoport|Statikus Azure AD biztonsági csoport, amely tartalmazza az Intune-beli belefoglalási feltétel által érintett statikus/dinamikus tagokat|
 |Kizárási feltételt tartalmazó csoport|Nem lesz áttelepítve|
-|Beépített csoportok: **Minden felhasználó**, **Nem csoportosított felhasználók**, **Minden eszköz**, **Nem csoportosított eszközök**, **Minden számítógép**, **Minden mobileszköz**, **MDM által felügyelt eszközök** és **EAS által felügyelt eszközök**|Azure AD biztonsági csoportok|
+|Beépített csoportok:<br>- **Minden felhasználó**<br>- **Nem csoportosított felhasználók**<br>- **Minden eszköz**<br>- **Nem csoportosított eszközök**<br>- **Minden számítógép**<br>- **Minden mobileszköz**<br>- **Minden MDM-mel felügyelt eszköz**<br>- **Minden EAS-sal felügyelt eszköz**|Azure AD biztonsági csoportok|
 
-Az Intune-ban minden létrehozott csoportnak rendelkeznie kell szülőcsoporttal. A csoportok csak a szülőcsoport tagjait tartalmazhatják. Az Azure AD-ben a gyermekcsoportok olyan tagokat is tartalmazhatnak, amelyek nem részei a szülőcsoportnak.
+## <a name="group-hierarchy"></a>Csoporthierarchia
 
+A klasszikus Intune-konzolon minden csoportnak volt szülőcsoportja, és a csoportok csak a szülőcsoport tagjait tartalmazhatták. Az Azure AD-ben a gyermekcsoportok a szülőcsoportjukon kívüli tagokat is tartalmazhatnak.
+
+## <a name="group-attributes"></a>Csoportattribútumok
 Az attribútumok a csoportok definiálása során felhasználható eszköztulajdonságok. Ez a táblázat bemutatja, hogyan fog történni ezeknek a feltételeknek az Azure AD-alapú biztonsági csoportokba való migrálása.
 
 | Attribútum az Intune-ban|Attribútum az Azure AD-ben|
@@ -79,9 +85,4 @@ Az attribútumok a csoportok definiálása során felhasználható eszköztulajd
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Mi történik a korábban telepített szabályzatokkal és alkalmazásokkal?
 
 A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban a klasszikus Intune-konzol helyett az Azure portálon lehet kezelni.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

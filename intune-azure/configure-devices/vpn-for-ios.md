@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: 23322313bfedb089f2665f53795996a26efe40e0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 61bb77b24314aca234e20df42c2eaa975dfcee8d
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-ios-devices-in-intune-azure-preview"></a>Az iOS-eszközökre vonatkozó VPN-beállítások a következőben: Intune az Azure-on – előzetes
+# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>iOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -32,9 +33,9 @@ A megadott beállításoktól függően az alábbi listában található érték
 **Kapcsolat neve** – Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
 - **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakozni fognak. Példák: **192.168.1.1**, **vpn.contoso.com**.
 - **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
-    - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban válasszon ki egy, a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilt. A tanúsítványprofilokról további információt a [How to configure certificates](how-to-configure-certificates.md) (Tanúsítványok konfigurálása) című cikkben találhat.
+    - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban adja meg a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilok valamelyikét. A tanúsítványprofilokról [a tanúsítványok konfigurálását](how-to-configure-certificates.md) ismertető cikkben talál részletesebb tájékoztatást.
     - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az szállítók alábbi listájából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
@@ -43,7 +44,7 @@ A megadott beállításoktól függően az alábbi listában található érték
     - **Cisco (IPsec)**
     - **Citrix**
     - **Egyéni VPN**
-- **Bújtatás megosztása**  -  Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
+- **Bújtatás megosztása** - Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
 
 
 ## <a name="custom-vpn-settings"></a>Egyéni VPN-beállítások
@@ -77,9 +78,4 @@ Ha a kapcsolat típusaként az **Egyéni VPN** lehetőséget állította be, kon
 - **Automatikus konfigurációs szkript** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például **http://proxy.contoso.com**).
 - **Cím** – Adja meg a proxykiszolgáló címét (IP-címként).
 - **Portszám** – Adja meg a proxykiszolgálóhoz társított portszámot.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

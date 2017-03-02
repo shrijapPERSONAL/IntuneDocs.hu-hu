@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: f27eacc8a8282c9216f8983db32dc5e4e8bc7006
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 142b57f48c2950f6eecc228decfa06ce44c76319
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-configure-the-company-portal-app"></a>A Céges portál alkalmazás konfigurálása
+# <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -64,9 +65,4 @@ A Vállalati portál testre szabható a vállalat emblémájának és nevének, 
 |**Cég emblémájának megjelenítése**|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. Mindkét emblémának egy .png vagy .jpg formátumú fájlnak kell lennie, melyek felbontása legfeljebb 400 x 100 képpont, mérete pedig legfeljebb 750 KB lehet.<br>A megadott vállalatnevet a feltöltött embléma mellett is megjelenítheti.|
 
 A módosítások mentése után **Preview your settings in the Intune Web Portal** (A beállítások előnézetének megtekintése az Intune webportálon) lehetőséget választva tekintheti meg, hogyan fognak megjelenni a konfigurációk.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

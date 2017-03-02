@@ -1,11 +1,11 @@
 ---
 title: "A Microsoft Intune előzetesének újdonságai | Azure-beli Intune – előzetes | Microsoft Docs"
-description: "Azure-beli Intune – előzetes: Ismerkedjen meg az Azure-beli Intune előzetesének újdonságaival"
+description: "Ismerkedjen meg az Azure-beli Intune előzetesének újdonságaival"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
 # <a name="whats-new-in-the-microsoft-intune-preview"></a>A Microsoft Intune előzetesének újdonságai
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 A nyilvános előzetes fejlődése során egyre több funkcióval bővül, mi pedig értesítjük Önt ezekről.
 
-<!--## February 2017-->
+## <a name="february-2017"></a>2017. február
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>A mobileszköz-regisztrálás korlátozásának képessége <!--747600, 795782-->
+Az Intune új regisztrációs korlátozásokat léptet életbe, amelyek azt szabályozzák, hogy mely mobileszközplatformok számára engedélyezett a regisztráció. Az Intune az alábbi mobileszközplatformokat különbözteti meg: iOS, macOS, Android, Windows és Windows Mobile.
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* A mobileszköz-regisztráció korlátozása nem terjed ki a számítógépes ügyfelek regisztrációjára.  
+* Csak az iOS és az Android esetében van még egy lehetőség a személyes tulajdonban lévő eszközök regisztrációjának letiltására.
+
+Az Intune mindaddig személyes tulajdonúként jelöli meg az összes új eszközt, amíg az [alábbi cikkben](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices) ismertetett módon a rendszergazda meg nem jelöli azokat céges eszközökként.
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>Az összes művelet megtekintése a felügyelt eszközökön<!--677150-->
+Az új __Eszközműveletek__ jelentés megmutatja, hogy mely felhasználó hajtott végre távoli műveleteket az eszközön (például gyári alaphelyzetbe állítás), valamint megjeleníti az adott művelet állapotát is. Lásd: [Mi az eszközfelügyelet?](https://docs.microsoft.com/intune-azure/manage-devices/what-is)
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>A nem felügyelt eszközök hozzáférhetnek a hozzárendelt alkalmazásokhoz <!--664691-->
+A Céges portál webhely átalakításának részeként az iOS-es és az Androidos felhasználók olyan alkalmazásokat telepíthetnek, amelyek hozzárendelés esetén a nem felügyelt eszközökön regisztráció nélkül érhetők el. Miután a felhasználók az Intune-beli hitelesítő adataikkal bejelentkeztek a Céges portál webhelyre, megtekinthetik a hozzájuk rendelt alkalmazások listáját. A regisztráció nélkül elérhető alkalmazások csomagjait a Céges portál webhelyről lehet letölteni. A telepítéskor regisztrációt kérő alkalmazásokat ez a változás nem érinti, mivel a rendszer az ilyen alkalmazások telepítésekor felszólítja a felhasználókat az eszközök regisztrációjára.
+
+### <a name="custom-app-categories---748805--"></a>Egyéni alkalmazáskategóriák <!--748805-->
+Mostantól kategóriákat hozhat létre, szerkeszthet és rendelhet hozzá az Intune-ba felvett alkalmazásokhoz. Jelenleg csak angol nyelven lehet kategóriákat megadni.
+Lásd: [Alkalmazás hozzáadása az Intune-hoz](/intune-azure/manage-apps/add-apps).
+
+### <a name="display-device-categories---814654--"></a>Eszközkategóriák megjelenítése <!--814654-->
+Mostantól az eszközkategória külön oszlopként jelenik meg az eszközlistában. A kategória módosítására szintén van lehetőség az Eszköztulajdonságok panel Tulajdonságok szakaszában. Lásd: [Alkalmazás hozzáadása az Intune-hoz](/intune-azure/manage-apps/add-apps). 
 
 ## <a name="january-2017"></a>2017. január
 
@@ -83,9 +95,4 @@ Az Azure Portalon nem fog tudni az összes Apple-eszközhöz alapértelmezett pr
 
 #### <a name="how-to-get-ready-for-this-change"></a>Felkészülés a változásra
 Ezt az információt azért bocsátjuk közre előzetesen, hogy amennyiben Önt is érinti, értesíteni tudja róla az illetékes adminisztrátorokat. A változás az Azure Portalra való költözéssel egy időben, várhatólag 2017 első felében lép életbe.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

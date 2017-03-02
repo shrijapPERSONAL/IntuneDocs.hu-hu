@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c2b49fb985290b2806e172543f95db21727c113e
-ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-intune-azure-preview"></a>Egyéni szabályzat használata alkalmazások engedélyezéséhez és letiltásához Samsung KNOX Standard-eszközökön az Azure-os Intune előzetes verziójában
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Alkalmazások engedélyezése és letiltása egyéni szabályzattal Samsung KNOX Standard-eszközökön a Microsoft Intune-ban
 [!INCLUDE[azure_preview](../includes/azure_preview.md)] Ennek a témakörnek az eljárásaival elkészíthet egy egyéni Microsoft Intune-szabályzatot, amellyel az alábbiak egyikét hozhatja létre:
 
 - Az eszközön nem futtatható alkalmazások listája. A listában szereplő alkalmazások le lesznek tiltva, és nem futtathatóak még akkor sem, ha a szabályzat létrehozása előtt lettek telepítve.
@@ -32,7 +33,7 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
 2. A profilok listáját mutató panelen válassza a **Profil létrehozása** lehetőséget.
 3. A **Profil létrehozása** panelen írja be az eszközprofilra vonatkozó **Név** és **Leírás** (nem kötelező) szövegét.
@@ -45,9 +46,9 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
 
 - **Név** – Írja be a következőt: **PreventStartPackages**.
 - **Leírás** – Igény esetén beírhat egy leírást. Például: „Nem futtatható alkalmazások listája”.
--   **Adattípus** – A legördülő listából válassza a **Karakterlánc** elemet.
--   **OMA-URI** – Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--   **Érték** – Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
+-     **Adattípus** – A legördülő listából válassza a **Karakterlánc** elemet.
+-     **OMA-URI** – Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-     **Érték** – Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Azon alkalmazások listájához, amelyek telepítése engedélyezett a felhasználók számára a Google Play áruházból, miközben minden más alkalmazás le van tiltva:
 - **Név** – Írja be a következőt: **AllowInstallPackages**.
@@ -65,9 +66,4 @@ Amikor az egyes megcélzott eszközök legközelebb bejelentkeznek, az alkalmaz�
 
 
 <!---## Assign the custom profile--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,37 +14,38 @@ ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac907e4cb63e4175dafc4c50239d3e0cbe581ad9
-ms.openlocfilehash: 46c567dbcbfb84d4e0f8e3c3e8567cc6498befcf
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: c4be15ee4dce4fcc5a2dc5bdce6d6d4638b96a60
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-wi-fi-settings-for-macos-devices-in-intune-azure-preview"></a>Az Intune Wi-Fi-beállításai macOS-eszközökhöz az Intune az Azure-on – előzetesben
+# <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó Wi-Fi-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Wi-Fi-beállítások alapszintű és vállalati profilok esetén
+## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Alapszintű és vállalati profilokban használható Wi-Fi-beállítások
 
-- **Hálózat neve** – Nevezze el a Wi-Fi-kapcsolatot. Ez az a név, amelyet a felhasználók látni fognak, amikor a rendelkezésre álló kapcsolatok listáját böngészik az eszközeiken.
-- **SSID** – Szolgáltatáskészlet-azonosító rövidítése. Ez a valódi neve annak a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakozni fognak. A felhasználók azonban csak a fentebb létrehozott hálózatnevet látják, amikor kiválasztják a kapcsolatot.
+- **Hálózatnév** – Adja meg a Wi-Fi-kapcsolat nevét. Ez az a név fog megjelenni a felhasználók számára, amikor a rendelkezésre álló kapcsolatok listáját böngészik az eszközeiken.
+- **SSID** – A szolgáltatáskészlet-azonosító rövidítése. Ez a valódi neve a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakozni fognak. A felhasználók azonban csak a fentebb létrehozott hálózatnevet látják, amikor kiválasztják a kapcsolatot.
 - **Automatikus csatlakozás** – Az eszköz automatikusan csatlakozik, ha a hálózat hatókörében van.
 - **Rejtett hálózat** – A hálózat nem jelenik meg a rendelkezésre álló hálózatok listájában az eszközön.
 - **Proxybeállítások** – A következő lehetőségek közül választhat:
     - **Nincs** – Semmilyen proxybeállítás nem lesz konfigurálva.
-    - **Manuális** – Adja meg a **proxykiszolgáló címét** (IP-címként) és a hozzá tartozó **portszámot**.
+    - **Manuális** – Adja meg a **Proxykiszolgáló címét** (IP-címként), és a hozzá társított **Portszámot**.
     - **Automatikus** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például **http://proxy.contoso.com**).
 
-## <a name="wi-fi-settings-for-basic-profiles-only"></a>Wi-Fi-beállítások csak alapszintű profilok esetén
+## <a name="wi-fi-settings-for-basic-profiles-only"></a>Csak alapszintű profilokban használható Wi-Fi-beállítások
 
-- **Biztonság típusa** – Válassza ki a Wi-Fi-hálózat hitelesítéséhez használt biztonsági protokollt:
-    - **Nyitott (nincs hitelesítés)** – Csak akkor használja ezt a lehetőséget, ha a hálózat nem védett.
+- **Biztonság típusa** – Válassza ki a Wi-Fi-hálózat hitelesítéséhez használt biztonsági protokollt a következő lehetőségek közül:
+    - **Nyitott (nincs hitelesítés)** – Csak akkor válassza ezt a lehetőséget, ha a hálózat nem védett.
     - **WPA/WPA2 – személyes**
     - **Adattitkosítás**
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Wi-Fi-beállítások csak vállalati profilok esetén
+## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Csak vállalati profilokban használható Wi-Fi-beállítások
 
-- **EAP típusa** – Válassza ki az EAP protokoll biztonságos vezeték nélküli kapcsolatok hitelesítéséhez használni kívánt típusát:
+- **EAP típusa** – Válassza ki az EAP protokoll biztonságos vezeték nélküli kapcsolatok hitelesítéséhez használni kívánt típusát a következő lehetőségek közül:
     - **EAP-FAST**
     - **EAP-SIM**
     - **EAP-TLS**
@@ -57,7 +58,7 @@ ms.openlocfilehash: 46c567dbcbfb84d4e0f8e3c3e8567cc6498befcf
 
 |Beállítás neve|További információ|A következő esetekben használja|
 |--------------|-------------|----------|
-|**Védett hozzáférési hitelesítő adatok (PAC) beállításai**|Akkor válassza ezt a lehetőséget, ha az ügyfél és a hitelesítési kiszolgáló között a védett hozzáférési hitelesítő adatok használatával hitelesített csatornát szeretne létrehozni. Az alábbiak közül válasszon egyet:<br>- **PAC használata** – Ha van, akkor a rendszer egy már létező PAC-fájlt használ.<br>- **PAC használata és kiosztása** – A PAC-fájl kiosztása az eszközöknek.<br>- **PAC kiosztása és használata névtelenül** – A PAC-fájl kiosztása az eszközöknek a kiszolgáló hitelesítése nélkül.|Ha az EAP-típus **EAP-FAST**|
+|**Védett hozzáférési hitelesítő adatok (PAC) beállításai**|Akkor válassza ezt a lehetőséget, ha az ügyfél és a hitelesítési kiszolgáló között a védett hozzáférési hitelesítő adatok használatával hitelesített csatornát szeretne létrehozni. Válassza ki az alábbi lehetőségek egyikét:<br>- **PAC használata** – Ha van, akkor a rendszer egy már létező PAC-fájlt használ.<br>- **PAC használata és kiépítése** – A PAC-fájl kiépítése az eszközökön.<br>- **PAC használata és kiépítése névtelenül** – A PAC-fájl kiépítése az eszközökön és a PAC-fájl kiépítésének ellenőrzése a kiszolgáló hitelesítése nélkül.|Ha az EAP-típus **EAP-FAST**|
 
 #### <a name="server-trust"></a>Kiszolgáló megbízhatósága
 
@@ -65,7 +66,7 @@ ms.openlocfilehash: 46c567dbcbfb84d4e0f8e3c3e8567cc6498befcf
 |Beállítás neve|További információ|A következő esetekben használja|
 |--------------|-------------|----------|
 |**Tanúsítványkiszolgálók neve**|Adjon meg egy vagy több, a megbízható hitelesítésszolgáltató (CA) által kiállított tanúsítványban használt köznapi nevet. Ha megadja ezt az információt, elkerülheti a dinamikus megbízhatósági párbeszédpanelt, amely megjelenik a végfelhasználók eszközein, amikor ehhez a Wi-Fi-hálózathoz csatlakoznak.|Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**.|
-|**Főtanúsítvány kiszolgálóhitelesítéshez**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt megbízható főtanúsítvány-profilt. |Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**|
+|**Kiszolgálói érvényesítéshez használandó főtanúsítvány**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt megbízható főtanúsítvány-profilt. |Ha az EAP-típus **EAP-TLS**, **EAP-TTLS**, vagy **PEAP**|
 |**Identitásadatok védelme (külső identitás)**|Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **PEAP**|
 
 
@@ -74,11 +75,6 @@ ms.openlocfilehash: 46c567dbcbfb84d4e0f8e3c3e8567cc6498befcf
 
 |Beállítás neve|További információ|A következő esetekben használja|
 |--------------|-------------|----------|
-|**Ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítvány)**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP- vagy PKCS-tanúsítványprofilt.|Ha az EAP-típus **EAP-TLS**|
-|**Hitelesítési módszer**|Válassza ki a kapcsolat hitelesítési módszerét:<br>- **Tanúsítványok** ha az SCEP-t vagy PKCS-t szeretné kiválasztani ügyféltanúsítványként, amely a kiszolgálónak benyújtott identitástanúsítvány.<br><br>- **Felhasználónév és jelszó**, ha más hitelesítési módszert szeretne megadni. <br><br>Ha kiválasztotta a **Felhasználónevet és jelszót**, konfigurálja:<br><br>-  **Nem EAP-módszer (belső identitás)**, majd válassza ki, hogyan fogja hitelesíteni a kapcsolatot:<br>- **Nincs**<br>- **Titkosítatlan jelszó (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 2-es verzió (MS-CHAP v2)**<br>Az elérhető lehetőségek a választott EAP-típustól függnek.<br><br>**és**<br><br>- **Identitásadatok védelme (külső identitás)** – Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **EAP-TTLS** vagy **PEAP**|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+|**Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP- vagy PKCS-tanúsítványprofilt.|Ha az EAP-típus **EAP-TLS**|
+|**Hitelesítési módszer**|Válassza ki a kapcsolat hitelesítési módszerét:<br>- **Tanúsítványok**, ha a kiszolgálónak az identitás tanúsítványaként benyújtott SCEP- vagy PKCS-ügyféltanúsítványt szeretné kiválasztani.<br><br>- **Felhasználónév és jelszó** – ha más hitelesítési módszert szeretne megadni. <br><br>Ha a **Felhasználónév és jelszó** lehetőséget választotta, konfigurálja a következőket:<br><br>-  **Nem EAP-módszer (belső identitás)**, majd válassza ki, hogyan fogja hitelesíteni a kapcsolatot:<br>- **Nincs**<br>- **Titkosítatlan jelszó (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 2-es verzió (MS-CHAP v2)**<br>Az elérhető lehetőségek a választott EAP-típustól függnek.<br><br>**és**<br><br>- **Identitásadatok védelme (külső identitás)** – Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **EAP-TTLS** vagy **PEAP**|
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 02b1acca12cfd78afa932319fc389b78bea58e64
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a69df096dd3ff1012eadba01213a6f2192bad3a9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-windows-10-devices-in-intune-azure-preview"></a>E-mail-profilbeállítások Windows 10 rendszerű eszközökhöz az Intune az Azure-on előzetes verziójában
+# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Windows 10-es eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -28,8 +29,8 @@ ms.openlocfilehash: 02b1acca12cfd78afa932319fc389b78bea58e64
 
 - **E-mail-kiszolgáló** – Itt adja meg az Exchange-kiszolgáló állomásnevét.
 - **Fióknév** – Adja meg az e-mail-fiók megjelenítendő nevét (ez lesz látható a felhasználók eszközén).
-- **Felhasználónév attribútum az AAD-ből** – Ez az Active Directory (AD) vagy az Azure AD egy attribútuma, ennek alapján fogja generálni a rendszer ennek az e-mail-profilnak a felhasználónevét. Válassza az **Elsődleges SMTP-cím** lehetőséget (például **user1@contoso.com**) lehetőséget, vagy az **Egyszerű felhasználónév** (például **user1** vagy **user1@contoso.com**) lehetőséget.
-- **E-mail-cím attribútuma az AAD-ből** – Válassza ki, hogyan jöjjön létre a felhasználói e-mail cím az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.
+- **Felhasználónév attribútum az AAD-ből** – Ez az Active Directory (AD) vagy az Azure AD egy attribútuma, ennek alapján fogja generálni a rendszer ennek az e-mail-profilnak a felhasználónevét. Válassza az **Elsődleges SMTP-cím** (például **user1@contoso.com**) lehetőséget, vagy az **Egyszerű felhasználónév** (például **user1** vagy **user1@contoso.com**) lehetőséget.
+- **E-mail-cím attribútuma az AAD-ből** – Válassza ki, hogyan jöjjön létre a felhasználói e-mail-cím az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.
 
 
 ## <a name="security-settings"></a>Biztonsági beállítások
@@ -49,9 +50,4 @@ ms.openlocfilehash: 02b1acca12cfd78afa932319fc389b78bea58e64
     - **Névjegyek**
     - **Naptár**
     - **Feladatok**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Egyéni eszközbeállítások Windows 10-es eszközökhöz az Azure-beli Intune előzetesében
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Egyéni eszközbeállítások Windows 10-es eszközökhöz a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ Az alábbi képernyőképen a **Connectivity/AllowVPNOverCellular** beállítás
 |**Jelszó mentésének engedélyezése**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Asztali és mobil verziók<br />**Adattípus:** Egész szám<br />**Értékek:**<br>**0** – Jelszókezelő letiltva <br>**1** – Jelszókezelő engedélyezve (alapértelmezés)|
 |**Automatikus kitöltés engedélyezése**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Csak asztali verziók<br />**Adattípus:** Egész szám<br />**Értékek:** **0** – Tiltott (alapértelmezett), **1** – Engedélyezett|
 |**Vállalati webhelylista konfigurálása**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Csak asztali verziók<br />**Adattípus:** Karakterlánc<br />**Értékek:<br> **0** – Nincs beállítva<br> **1** – IE vállalati üzemmód webhelylistájának használata, ha be van állítva (alapértelmezett)<br>**2** – A vállalati webhelylista helyének meghatározása|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

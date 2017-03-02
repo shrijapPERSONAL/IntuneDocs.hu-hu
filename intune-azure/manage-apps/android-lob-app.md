@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: ef43194daa5cbdf058b4fe0ed94e775fe2e7340e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: dbeaabe0f119a0e819857ef7181bbf6de2b1dbd8
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-android-line-of-business-lob-apps-to-intune"></a>Üzletági (LOB) Android-alkalmazások hozzáadása az Intune-hoz
+# <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Androidos üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -29,7 +30,7 @@ ms.openlocfilehash: ef43194daa5cbdf058b4fe0ed94e775fe2e7340e
 1. Jelentkezzen be az Azure Portal webhelyre.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Felügyelet** > **Alkalmazások** elemet.
+4. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 5. Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
 6. Az **Alkalmazás hozzáadása** panelen válassza a **Szoftvertelepítő fájl** elemet.
 A **Telepítőfájl kiválasztása** panelen kattintson a Tallózás gombra, és keresse meg az (.apk kiterjesztésű) androidos alkalmazástelepítő fájlt, majd kattintson az **OK** gombra.
@@ -38,12 +39,12 @@ A **Telepítőfájl kiválasztása** panelen kattintson a Tallózás gombra, és
 
 1. Az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazás adatai** elemet.
 2. Az **Alkalmazás szerkesztése** panelen konfigurálja az alábbi adatokat. Amikor elkészült, kattintson a **Hozzáadás** lehetőségre. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
-    - **Alkalmazásnév** – Itt adhatja meg az alkalmazásnak a vállalati portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak a Céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
     - **Alkalmazás leírása** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
     - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legrégebbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerű eszközhöz rendeli hozzá, nem fog települni.
     - **Kategória (nem kötelező)** – Választhat egyet vagy többet a beépített alkalmazáskategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ezzel megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
-    - **Megjelenítés kiemelt alkalmazásként a Munkahelyi portálon** – Ezzel a beállítással kiemelten jelenítheti meg az alkalmazást a céges portál főoldalán alkalmazásokat kereső felhasználók számára.
+    - **Megjelenítés kiemelt alkalmazásként a Céges portálon** – Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
     - **Információs URL-cím** – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Adatvédelmi nyilatkozat URL-címe** – Igény esetén itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Fejlesztő** – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
@@ -52,10 +53,5 @@ A **Telepítőfájl kiválasztása** panelen kattintson a Tallózás gombra, és
     - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
 3. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
 
-A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps) (Alkalmazások hozzárendelése csoportokhoz).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
 

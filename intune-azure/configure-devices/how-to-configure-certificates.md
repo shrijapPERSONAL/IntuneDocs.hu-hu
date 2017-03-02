@@ -1,11 +1,12 @@
 ---
-title: "Tanúsítványok konfigurálása az Intune-nal | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Tanúsítványok konfigurálása az Intune-nal"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan lehet az Intune segítségével olyan tanúsítványokat létrehozni és kiosztani, amelyek segítenek a Wi-Fi-, VPN- és egyéb kapcsolatok védelmében."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Tanúsítványok konfigurálása az Azure-os Intune előzetes verziójával
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Tanúsítványok konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- 
 
     A következő platformok esetében csak SCEP-tanúsítványprofil használható:
 
--   macOS 10.9 és újabb verziók
--   Windows Phone 8.1 és újabb verziók
+-     macOS 10.9 és újabb verziók
+-     Windows Phone 8.1 és újabb verziók
 
 Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor társítsa a profilt a már létrehozott megbízható főtanúsítvány-profilhoz.
 
@@ -76,8 +79,8 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az megbízható tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. Válassza ki a megbízható tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet eszközkorlátozási beállításokat megadni:
@@ -196,9 +199,4 @@ Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a kö
 
 ## <a name="next-steps"></a>További lépések
 Az eszközprofilok hozzárendeléséről az [eszközprofilok hozzárendelését](how-to-assign-device-profiles.md) ismertető cikk nyújt általános tájékoztatást.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

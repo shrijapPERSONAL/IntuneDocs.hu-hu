@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 9ce16ea61da87aa5087fafeb5c1eaf743fef4a14
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-windows-10-edition-upgrades"></a>A Windows 10 kiadásfrissítéseinek konfigurálása 
+# <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>A Windows 10 kiadásfrissítéseinek konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,8 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 
 1. Jelentkezzen be az Azure Portal webhelyre.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen írja be a kiadásfrissítési profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
@@ -62,10 +63,5 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](how-to-assign-device-profiles.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-custom-device-settings"></a>Az egyéni eszközbeállítások konfigurálása
+# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -35,8 +36,8 @@ A témakörben található információk alapján megismerheti az egyéni beáll
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen írja be az egyéni profilra vonatkozó **Név** és **Leírás** szövegét.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre egyéni beállításokat szeretne alkalmazni. Jelenleg az alábbi platformokra vonatkozóan lehet egyéni eszközbeállításokat megadni:
@@ -55,11 +56,6 @@ A témakörben található információk alapján megismerheti az egyéni beáll
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-Ha a profilt csoportokhoz szeretné hozzárendelni, erről az [eszközprofilok hozzárendelését](how-to-assign-device-profiles.md) ismertető cikk nyújt tájékoztatást.
-
-
-
-
-<!--HONumber=Feb17_HO1-->
+Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](how-to-assign-device-profiles.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
 
 

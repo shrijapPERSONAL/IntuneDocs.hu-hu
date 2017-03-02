@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-ios-devices-in-intune-azure-preview"></a>E-mail-profil beállításai iOS-eszközökhöz az Azure-os Intune előzetes verziójában
+# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>iOS-eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
 - **Üzenetek más e-mail fiókba való áthelyezésének engedélyezése** – Lehetővé teszi a felhasználóknak az e-mailek áthelyezését az eszközön konfigurált más fiókokba.
 - **E-mailek küldésének engedélyezése külső gyártótól származó alkalmazásokból** – A felhasználók kiválaszthatják alapértelmezett e-mail-küldési fiókként ezt a profilt, és engedélyezhetik a külső alkalmazások számára az e-maileknek a natív e-mail alkalmazásban történő megnyitását, például fájlok e-mailhez való csatolásához.
 - **Utoljára használt e-mail címek szinkronizálása** – Ezzel a funkcióval a felhasználók szinkronizálni tudják az eszközön utoljára használt e-mail címek listáját a kiszolgálóval.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

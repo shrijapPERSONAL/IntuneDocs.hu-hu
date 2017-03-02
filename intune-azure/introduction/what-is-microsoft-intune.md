@@ -1,21 +1,23 @@
 ---
-title: "Bevezetés – Intune az Azure Portalon – Előzetes verzió | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Az Azure-beli Intune előzetes verziójának bemutatása"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Ismerje meg az Azure Portal előzetes verziójának alapjait, és hogy miként lehet segítségére az eszközök felügyeletében."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
+ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
+ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 A Microsoft Intune az Azure Portalra kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók változnak.
-Az új portál az új és frissített Azure Portal-funkciók előzetes verzióját kínálja, amelyben felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
+Az új portál betekintést nyújt az új és frissített Azure Portal-funkciókba, amelyekkel felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
 Minden Intune-funkció végül az Azure-ba kerül majd át, de bizonyos Intune-feladatokat már most elvégezhet az Azure Portalon. Mivel az új felület előnézet, bizonyos funkciók még nem szerepelnek a portálon. A részletekért lásd [az előzetes újdonságainak](#what's-new-in-the-preview) ismertetését.
 
 > [!IMPORTANT]
@@ -44,14 +46,14 @@ Az új felhasználói felület főbb újdonságai a következők:
 - Integrált konzol az Enterprise Mobility + Security (EMS) összes biztonsági összetevőjéhez
 - Webes szabványokra épülő HTML-alapú konzol
 - Microsoft Graph API-támogatás számos művelet automatizálásához
-- Azure AD-csoportok az Azure-os alkalmazások közötti kompatibilitás érdekében
+- Azure Active Directory- (AD-)csoportok az Azure-os alkalmazások közötti kompatibilitás érdekében
 - A legtöbb modern böngésző támogatása
 
 A klasszikus Intune-konzolhoz az [Intune dokumentációs könyvtárában](https://docs.microsoft.com/en-us/intune/) találhat dokumentációt.
 
 ## <a name="before-you-start"></a>Előkészületek
 
-Az Azure Portalon az Intune használatához Intune-os rendszergazdai és bérlői fiókkal kell rendelkeznie. [Itt](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) igényelhet fiókot.
+Az Azure Portalon az Intune használatához Intune-os rendszergazdai és bérlői fiókkal kell rendelkeznie. Ha még nincs fiókja, [regisztráljon](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 ## <a name="supported-web-browsers-for-the-azure-portal"></a>Támogatott webböngészők az Azure portálon
 
@@ -64,7 +66,7 @@ Jelenleg a következő böngészők támogatottak:
 - Chrome (legújabb verzió)
 - Firefox (legújabb verzió)
 
-A támogatott böngészőkről a legfrissebb információt [itt](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) találja.
+A támogatott böngészőkről az [Azure Portalon](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) találja a legfrissebb információt.
 
 ## <a name="whats-in-this-library"></a>Mit tartalmaz ez a könyvtár?
 
@@ -76,35 +78,25 @@ A dokumentáció a szükséges információk könnyebb megtalálhatósága érde
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### <a name="enroll-devices"></a>Eszközök regisztrálása
-Útmutató az eszközök Intune általi felügyeletéhez.
-[További információ](/intune-azure/enroll-devices/what-is)
+[Útmutató az eszközök Intune általi felügyeletéhez.](/intune-azure/enroll-devices/what-is)
 ### <a name="devices--groups"></a>Eszközök és csoportok
-A leltár és a jelentések segítségével megismerkedhet a felügyelt eszközökkel.
-[További információ](/intune-azure/manage-devices/what-is)
+[A leltár és a jelentések segítségével megismerkedhet a felügyelt eszközökkel.](/intune-azure/manage-devices/what-is)
 ### <a name="manage-users"></a>Felhasználók kezelése
-Áttekintheti a felügyelt eszközök felhasználóit.
-[További információ](/intune-azure/manage-users/what-is)
+[Tájékozódhat a felügyelt eszközök felhasználóiról.](/intune-azure/manage-users/what-is)
 ### <a name="manage-apps"></a>Alkalmazások kezelése
-Az alkalmazások közzétételével, felügyeletével, konfigurálásával és védelmével kapcsolatos információt tartalmazza.
-[További információ](/intune-azure/manage-apps/what-is-app-management)
+[Útmutató az alkalmazások közzétételéhez, felügyeletéhez, konfigurálásához és védelméhez.](/intune-azure/manage-apps/what-is-app-management)
 ### <a name="configure-devices"></a>Eszközök konfigurálása
-Azon profilokkal kapcsolatos információt tartalmazza, amelyek segítségével konfigurálhatja a beállításokat és a szolgáltatásokat a felügyelt eszközökön.
-[További információ](/intune-azure/configure-devices/what-are-device-profiles)
+[A felügyelt eszközök beállításainak és szolgáltatásainak konfigurálására szolgáló profilok ismertetése.](/intune-azure/configure-devices/what-are-device-profiles)
 ### <a name="set-device-compliance"></a>Eszközmegfelelőség beállítása
-Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről [További információ](/intune-azure/set-device-compliance/what-is-device-compliance)
+[Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről.](/intune-azure/set-device-compliance/what-is-device-compliance)
 ### <a name="conditional-access"></a>Feltételes hozzáférés
-Korlátozhatja az Exchange-szolgáltatásokhoz való hozzáférést az Ön által megadott feltételektől függően.
-[További információ](/intune-azure/conditional-access/what-is-conditional-access)
+[A megadott feltételek alapján korlátozhatja az Exchange-szolgáltatásokhoz való hozzáférést.](/intune-azure/conditional-access/what-is-conditional-access)
 ### <a name="access-control"></a>Hozzáférés-vezérlés
-Szabályozhatja, hogy kik hajthatnak végre különböző műveleteket az Intune-ban, és kikre vonatkozzanak ezen műveletek. A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat.
-[További információ](/intune-azure/access-control/role-based-access-control)
+[Szabályozhatja, hogy kik hajthatnak végre különböző műveleteket az Intune-ban, és kikre vonatkozzanak ezen műveletek.](/intune-azure/access-control/role-based-access-control) A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat.
+
 
 
 ## <a name="whats-new"></a>Újdonságok
 
 [Az előzetes kiadás újdonságainak ismertetése](/intune-azure/introduction/whats-new).
-
-
-<!--HONumber=Feb17_HO1-->
-
 

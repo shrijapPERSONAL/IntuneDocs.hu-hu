@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -23,11 +24,15 @@ ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-A regisztrálható eszközök típusát a regisztrációra jogosult platformok megadásával korlátozhatja az Intune-ban. Ezenkívül azt is megadhatja, hogy egy felhasználó legfeljebb hány eszközt regisztrálhat.
+Megadhatja a regisztrálni engedett eszközök típusát és maximális számát. A Regisztrációs korlátozások panelen a következőket adhatja meg:
+
+- A regisztrálni engedett platformokat, illetve hogy letiltja-e a személyes tulajdonban lévő iOS-es és androidos eszközök regisztrálását.
+
+- Az egy felhasználó által regisztrálható eszközök maximális számát.
 
 ## <a name="set-device-type-restrictions"></a>Típus szerinti korlátozás beállítása
 
-1. Válassza az Azure Portalon a **További szolgáltatások** elemet, írja be az **Intune** nevet a szövegmezőbe, majd válassza az **Egyéb** > **Intune** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Az Intune panelen válassza az **Eszközök regisztrálása** lehetőséget, majd válassza a **Regisztrációs korlátozások** elemet.
 
@@ -35,28 +40,28 @@ A regisztrálható eszközök típusát a regisztrációra jogosult platformok m
 
 4. A **Minden felhasználó** panelen válassza a **Platformok** elemet.
 
-5. A regisztrációra engedélyezett platformoknál válassza az **Engedélyezés** lehetőséget. A blokkolni kívánt platformoknál pedig válassza a **Tiltás** lehetőséget.
+5. A regisztrációra engedélyezett platformoknál válassza az **Engedélyezés** lehetőséget. A blokkolni kívánt platformoknál pedig válassza a **Tiltás** lehetőséget. Alapértelmezés szerint az összes platform **Engedélyezés** értékre van állítva. 
+
+    >[!NOTE]
+    >Ezek a beállítások nincsenek hatással az Intune-szoftverügyféllel végzett windowsos regisztrációkra, csak a mobileszköz-felügyelettel végzettekre. 
 
 6. Válassza a **Mentés** lehetőséget.
 
 7. Válassza a **Platformkonfigurációk** elemet.
 
-8. Válassza ki, hogy engedélyezni vagy tiltani kívánja a személyes tulajdonban lévő iOS-eszközök regisztrációját.
+8. Válassza ki, hogy **engedélyezni** vagy **tiltani** kívánja a személyes tulajdonban lévő iOS-es és androidos eszközök regisztrálását.
 
 9. Válassza a **Mentés** lehetőséget.
 
 ## <a name="set-device-limit-restrictions"></a>Regisztrált eszközök maximális számának beállítása
 
-1. Az Intune panelen válassza az **Eszközök regisztrálása** lehetőséget, majd válassza a **Regisztrációs korlátozások** elemet.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2. Az **Eszközszámkorlátok** elemnél válassza az **Alapértelmezett** beállítást.
+2. Az Intune panelen válassza az **Eszközök regisztrálása** lehetőséget, majd válassza a **Regisztrációs korlátozások** elemet.
 
-3. A **Minden felhasználó** panelen válassza az **Eszközszámkorlát** elemet.
+3. Az **Eszközszámkorlátok** elemnél válassza az **Alapértelmezett** beállítást.
 
-4. Válassza ki a felhasználó által regisztrálható eszközök maximális számát, majd válassza a **Mentés** lehetőséget.
+4. A **Minden felhasználó** panelen válassza az **Eszközszámkorlát** elemet.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+5. Válassza ki a felhasználó által regisztrálható eszközök maximális számát, majd válassza a **Mentés** lehetőséget.
 

@@ -1,11 +1,12 @@
 ---
-title: "Egyéni beállítások iOS-eszközökhöz az Intune-ban | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Egyéni Intune-beállítások iOS-eszközökhöz"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune-előzetes: egyéni iOS-profil beállításainak ismertetése."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d8e6d0d641dd55c79442f68e7e97d21efcdad7fa
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-custom-settings-for-ios-devices-in-intune-azure-preview"></a>Egyéni beállítások iOS-eszközökhöz az Azure-beli Intune előzetesében
+# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Egyéni Microsoft Intune-beállítások iOS-eszközökhöz
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +40,4 @@ Ezzel a funkcióval olyan iOS-beállításokat léptethet érvénybe, amelyek ne
 Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatókban talál.
 
 Az importált fájl a panel **Fájl tartalma** területén jelenik meg.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

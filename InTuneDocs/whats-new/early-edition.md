@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 ## <a name="new-capabilities"></a>Új képességek
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>A Céges portál webhely modernizálása <!--753980-->
-A Céges portál webhely támogatni fogja a felügyelt eszközökkel nem rendelkező felhasználóknak szánt alkalmazásokat. A webhely egy új kontrasztos színsémát, dinamikus ábrákat és egy, a segélyszolgálat kapcsolattartási adatait és a meglévő felügyelt eszközökre vonatkozó adatokat tartalmazó „hamburger” menüt ![A hamburger menü kis képe, amely mostantól a Céges portál webhely bal felső sarkában található](./media/CP_hamburger_menu.png) fog használni, igazodva más Microsoft-termékekhez és -szolgáltatásokhoz. A kezdőlapot át fogjuk rendezni, felhívva a figyelmet a felhasználók számára elérhető alkalmazásokra a kiemelt és a legutóbb frissített alkalmazásokat mutató körhintanézetekkel. A frissítés előtti és utáni képek a [felhasználói felület frissítéseit tartalmazó lapon](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) érhetők el.
+Februártól kezdve a Céges portál webhely egy új kontrasztos színsémát, dinamikus ábrákat és egy, a segélyszolgálat elérhetőségeit és a felügyelt eszközökre vonatkozó adatokat tartalmazó „hamburger” menüt ![A mostantól a Céges portál webhely bal felső sarkában található hamburger menü képe](./media/CP_hamburger_menu.png) fog használni, igazodva más Microsoft-termékekhez és -szolgáltatásokhoz. A kezdőlapot át fogjuk rendezni, felhívva a figyelmet a felhasználók számára elérhető alkalmazásokra a kiemelt és a legutóbb frissített alkalmazásokat mutató körhintanézetekkel. A frissítés előtti és utáni képek a [felhasználói felület frissítéseit tartalmazó lapon](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) érhetők el.
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Új interaktív felület a Windows 10-es Céges portálhoz<!--713927-->
 Márciustól a Windows 10-es Céges portál tartalmazni fog egy olyan eszközökhöz készült interaktív Intune-útmutató felületet, amelyek nincsenek azonosítva vagy regisztrálva. Az új útmutató felület olyan, az adott felhasználó Windows 10-buildjére szabott részletes utasításokat tartalmaz, amely végigvezeti a felhasználókat az AAD-regisztráció (mely a feltételes hozzáférési funkciók azonosításához szükséges) és az MDM-regisztráció (mely az eszközkezelési funkciókhoz szükséges) lépésein. Az interaktív felület a Céges portál kezdőlapjáról lesz elérhető és nem lesz kötelező; a felhasználók folytathatják az alkalmazás használatát a regisztráció befejezése nélkül, de ekkor a funkciók korlátozottak lehetnek.
@@ -114,9 +116,4 @@ Elkezdtünk külső távközlési szolgáltatók költségeinek kezelésére (te
 
 ### <a name="see-also"></a>További információ
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

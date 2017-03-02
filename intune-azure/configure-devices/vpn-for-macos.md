@@ -14,13 +14,14 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: 6f7bcfaec34c4916f7c916210b00440062b83694
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 758573964627b1d5e4f98ea3729df696bf96bf1c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-macos-devices-in-intune-azure-preview"></a>macOS-eszközökre vonatkozó VPN-beállítások az Azure-beli Intune előzetesében
+# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -57,9 +58,4 @@ Ha az **Egyéni VPN** lehetőséget választotta, konfigurálja ezeket a beáll�
 - **Automatikus konfigurációs szkript** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét** (például **http://proxy.contoso.com**).
 - **Cím** – Adja meg a proxykiszolgáló címét (IP-címként).
 - **Portszám** – Adja meg a proxykiszolgálóhoz társított portszámot.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 79faa771a9af0761703ca3e72b937fab1a83a81f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-email-settings"></a>Az e-mail-beállítások konfigurálása 
+# <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Az e-mail-beállítások konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,8 +42,8 @@ A témakörben található információk alapján megismerheti az e-mail-profilo
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné az e-mail-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet e-mail-eszközbeállításokat megadni:
@@ -85,9 +86,4 @@ Ha a felhasználó már konfigurálta az e-mail-fiókot, az eszközplatformtól 
 - **Windows**: A rendszer az állomásnév és az e-mail-cím alapján egy már meglévő e-mail profilt észlel. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
 - **Android**: A rendszer az e-mail-cím alapján egy már meglévő e-mail-profilt észlel, és felülírja az Intune-profillal.
 Mivel az Android nem használja az állomásnevet a profil azonosításához, ezért azt javasoljuk, hogy ne hozzon létre több e-mail-profilt azért, hogy ugyanahhoz az e-mail-címhez használja őket a különböző gazdagépeken, ezek ugyanis felülírják egymást.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

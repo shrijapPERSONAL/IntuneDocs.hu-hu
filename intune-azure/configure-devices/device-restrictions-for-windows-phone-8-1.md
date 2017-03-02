@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,46 +14,47 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8640f60ddafd41826edaf781fbdb1fa76fe5c7e6
-ms.openlocfilehash: a24e4a58d0938778efc89fa473864100e698bea8
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 32bc9adb88803385c26894e8a70513a4adc55b27
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="windows-phone-81-device-restriction-settings-in-intune-azure-preview"></a>A Windows Phone 8.1 rendszerű eszközök korlátozására vonatkozó beállítások az Azure-beli Intune előzetesében
+# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>A Windows Phone 8.1 eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Általános
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
--   **Másolás és beillesztés** – Engedélyezi vagy letiltja az eszközök másolási és beillesztési funkciójának használatát.
--   **Cserélhető tároló** – Cserélhető tárolók (például SD-kártyák) használatának engedélyezése az eszközön.
--   **Földrajzi hely** – Engedélyezi az eszköz számára a helyadatok használatát.
--   **Microsoft-fiók** – Engedélyezi vagy letiltja a felhasználó számára egy Microsoft-fiók összekapcsolását az eszközzel.
--   **Képernyőfelvétel** – A képernyőtartalom képfájlban történő rögzítésének engedélyezése a felhasználó számára.
--   **Diagnosztikai adatok beküldése** – Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.
--   **Egyéni e-mail fiókok szinkronizálása** – Nem Microsoft e-mail-fiókokhoz való kapcsolódás engedélyezése az eszköz számára.
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
+-     **Másolás és beillesztés** – Engedélyezi vagy letiltja az eszközök másolási és beillesztési funkciójának használatát.
+-     **Cserélhető tároló** – Cserélhető tárolók (például SD-kártyák) használatának engedélyezése az eszközön.
+-     **Földrajzi hely** – Engedélyezi az eszköz számára a helyadatok használatát.
+-     **Microsoft-fiók** – Engedélyezi vagy letiltja a felhasználó számára egy Microsoft-fiók összekapcsolását az eszközzel.
+-     **Képernyőfelvétel** – A képernyőtartalom képfájlban történő rögzítésének engedélyezése a felhasználó számára.
+-     **Diagnosztikai adatok beküldése** – Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.
+-     **Egyéni e-mail fiókok szinkronizálása** – Nem Microsoft e-mail-fiókokhoz való kapcsolódás engedélyezése az eszköz számára.
 
 ## <a name="password"></a>Jelszó
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
-    -   **Megkövetelt jelszótípus** – Meghatározza a megkövetelt jelszótípust, például hogy a jelszó számokat és betűket, vagy csak számokat tartalmazhat.
-    -   **Jelszó minimális hossza** – A jelszóban használandó karakterek minimális számát határozza meg.
-    -   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (mint például a „0000” vagy az „1234”) használatát.
-    -   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Meghatározza, hogy a felhasználó hányszor adhat meg helytelen jelszót, mielőtt a rendszer törölné az eszközt.
-    -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő automatikus zárolása előtt.
-    -   **Jelszó érvényessége (napokban)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
-    -   **Korábbi jelszavak újbóli használatának tiltása** – Meghatározza, hogy a rendszer hány korábban használt jelszót jegyezzen meg.
--   **Titkosítás** – Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
+    -     **Megkövetelt jelszótípus** – Meghatározza a megkövetelt jelszótípust, például hogy a jelszó számokat és betűket, vagy csak számokat tartalmazhat.
+    -     **Jelszó minimális hossza** – A jelszóban használandó karakterek minimális számát határozza meg.
+    -     **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (mint például a „0000” vagy az „1234”) használatát.
+    -     **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Meghatározza, hogy a felhasználó hányszor adhat meg helytelen jelszót, mielőtt a rendszer törölné az eszközt.
+    -     **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő automatikus zárolása előtt.
+    -     **Jelszó érvényessége (napokban)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
+    -     **Korábbi jelszavak újbóli használatának tiltása** – Meghatározza, hogy a rendszer hány korábban használt jelszót jegyezzen meg.
+-     **Titkosítás** – Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.
 
 ## <a name="app-store"></a>Alkalmazásáruház
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Alkalmazásáruház** – Lehetővé teszi a felhasználók számára az alkalmazásáruház elérését az eszközről.
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Alkalmazásáruház** – Lehetővé teszi a felhasználók számára az alkalmazásáruház elérését az eszközről.
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
 
 A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
 
@@ -80,20 +81,15 @@ Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, m
 
 
 ## <a name="browser"></a>Böngésző
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Webböngésző** – Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Webböngésző** – Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.
 
 ## <a name="cellular-and-connectivity"></a>Mobilhálózati és egyéb kapcsolatok
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Wi-Fi** – Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.
--   **Wi-Fi-alapú internetmegosztás** – Engedélyezi az eszköz Wi-Fi-alapú internetmegosztási funkciójának használatát.
--   **Automatikus csatlakozás Wi-Fi elérési pontokhoz** – Engedélyezi az eszközön az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozást és a vonatkozó használati feltételek automatikus elfogadását.
--   **Wi-Fi elérési pont jelentése** – Információt küld a Wi-Fi kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében.
--   **NFC** – Engedélyezi vagy letiltja azokat a műveleteket, amelyek kis hatótávolságú kommunikációt használnak az azt támogató eszközökön.
--   **Bluetooth** – Az eszköz Bluetooth funkciójának engedélyezése vagy letiltása.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+-     **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+-     **Wi-Fi** – Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.
+-     **Wi-Fi-alapú internetmegosztás** – Engedélyezi az eszköz Wi-Fi-alapú internetmegosztási funkciójának használatát.
+-     **Automatikus csatlakozás Wi-Fi elérési pontokhoz** – Engedélyezi az eszközön az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozást és a vonatkozó használati feltételek automatikus elfogadását.
+-     **Wi-Fi elérési pont jelentése** – Információt küld a Wi-Fi kapcsolatokról a közeli kapcsolatok felderítésének elősegítése érdekében.
+-     **NFC** – Engedélyezi vagy letiltja azokat a műveleteket, amelyek kis hatótávolságú kommunikációt használnak az azt támogató eszközökön.
+-     **Bluetooth** – Az eszköz Bluetooth funkciójának engedélyezése vagy letiltása.
 

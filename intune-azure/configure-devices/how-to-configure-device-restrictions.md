@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67e3481f9cf01bd1b298cfb26f25d1a3205e0f29
-ms.openlocfilehash: 0c22d8a85d90139b3ac17c54668890d5b4c0afe6
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-device-restriction-settings-in-intune-azure-preview"></a>Az eszközkorlátozási beállítások konfigurálása a következőben: Intune az Azure-on – előzetes
+# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Az eszközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -32,8 +33,8 @@ A témakörben található információk alapján megismerheti az eszközkorlát
 
 1. Jelentkezzen be az Azure Portal webhelyre.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az eszközkorlátozási profil **Nevét** és **Leírását**.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre egyéni beállításokat szeretne alkalmazni. Jelenleg az alábbi platformok egyikét választhatja ki az eszközkorlátozási beállításokhoz:
@@ -62,10 +63,5 @@ Ha szeretné a profilt csoportokhoz való hozzárendelésével folytatni, erről
 Ebben a magas szintű példában egy olyan eszközkorlátozási szabályzatot hozhat létre, amely letiltja a beépített kameraalkalmazás használatát az androidos eszközökön.
 
 ![A kamera letiltása androidos eszközökön](./media/disable-android-camera.png)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

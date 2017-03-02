@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>Előmegosztott kulccsal ellátott Wi-Fi profil létrehozása egyéni Intune-eszközprofillal az Azure-beli Intune előzetesében
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni Microsoft Intune-eszközprofillal
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Ebből a cikkből megtudhatja, hogyan hozhat létre előmegosztott kulccsal ellátott Wi-Fi profilt az Intune **Egyéni konfiguráció** funkciójával. A témakörben szereplő példa pedig elmagyarázza, hogyan hozzon létre EAP-alapú Wi-Fi-profilt.
 
 > [!NOTE]
--   Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
+-    Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
 - Android-rendszerek esetén használhatja a Johnathon Biersack által biztosított [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) programot is.
--   További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
+-    További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
 -  iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Alternatív megoldásként használja a Johnathon Biersack által biztosított [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) programot.
 
 
-1.  Ha androidos vagy windowsos rendszerhez hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor az eszközprofil létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni** lehetőséget.
+1.    Ha androidos vagy windowsos rendszerhez hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor az eszközprofil létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni** lehetőséget.
 
-2.  Adjon meg egy nevet és egy leírást.
-3.  Adjon hozzá egy OMA-URI beállítást:
+2.    Adjon meg egy nevet és egy leírást.
+3.    Adjon hozzá egy OMA-URI beállítást:
 
-   a.   Adjon nevet a Wi-Fi-hálózat ezen beállításának.
+   a.    Adjon nevet a Wi-Fi-hálózat ezen beállításának.
 
-   b.   Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
+   b.    Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
 
-   c.   **Adattípus**: állítsa be a **Karakterlánc** értéket.
+   c.    **Adattípus**: állítsa be a **Karakterlánc** értéket.
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
     Érdemes olyan számítógépet választani, amely még nem kapcsolódott túl sok vezeték nélküli hálózathoz, mivel az összes profilt át kell néznie, hogy megtalálja a megfelelőt.
 3.     Keresse meg a kívánt nevű XML-fájlt.
 4.     Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal Adat mezőjébe.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

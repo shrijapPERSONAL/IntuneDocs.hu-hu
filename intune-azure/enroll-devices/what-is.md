@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 **iOS-eszközök regisztrálási módszerei**
 
-| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek** |
+| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | Hamarosan további információ válik elérhetővé|
-|**[DEM](#dem)**|   Nem |Nem |Nem  | [További információ](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| Igen |   Nem kötelező megadni |  Nem| [További információ](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[További információ](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | Nem|    Igen |    Nem | Hamarosan további információ válik elérhetővé|
+|**[DEM](#dem)**|    Nem |Nem |Nem    | [További információ](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    Igen |    Nem kötelező megadni |    Nem kötelező megadni|[További információ](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    Igen |    Nem kötelező megadni |    Nem| [További információ](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    Nem |    Nem    | Nem|[További információ](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows-eszközök regisztrálási módszerei**
 
-| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
+| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Igen|   Igen |   Nem | Hamarosan további információ válik elérhetővé|
-|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | Igen|    Igen |    Nem | Hamarosan további információ válik elérhetővé|
+|**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android-eszközök regisztrálási módszerei**
 
-| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
+| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | Hamarosan további információ válik elérhetővé|
-|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | Nem|    Igen |    Nem | Hamarosan további információ válik elérhetővé|
+|**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-A saját eszközeiket használó („BYOD”) felhasználók telepítik a Vállalati portál alkalmazást, és ők regisztrálják az eszközt. Ez lehetővé teszi a felhasználók számára a vállalati hálózathoz való kapcsolódást, így csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz. A legtöbb platformon és COD-forgatókönyv esetében engedélyeznie kell a BYOD-regisztrálást.
+A saját eszközeiket használó („BYOD”) felhasználók telepítik a Vállalati portál alkalmazást, és ők regisztrálják az eszközt. Ez lehetővé teszi a felhasználók számára a vállalati hálózathoz való kapcsolódást, így csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz. A legtöbb platformon és COD-forgatókönyv esetében engedélyeznie kell a BYOD-regisztrálást. Letilthatja a személyes tulajdonban lévő iOS-es és androidos eszközök regisztrálását. Útmutatót a [Típus szerinti korlátozás beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) című cikkben talál.
 
 ## <a name="corporate-owned-devices"></a>Vállalati tulajdonú eszközök
 A vállalati tulajdonú eszközök (COD) az Azure Portal segítségével kezelhetők. Az iOS-eszközök az Apple által biztosított megoldások segítségével közvetlenül is regisztrálhatók. A rendszergazdák vagy menedzserek bármilyen típusú eszközt regisztrálhatnak az eszközregisztráció-kezelő segítségével. Az IMEI-számmal rendelkező eszközöket azonosítani lehet, és meg lehet jelölni vállalati tulajdonúként, ami lehetőséget nyújt a vállalati tulajdonú eszközök kezelésére.
@@ -80,8 +81,8 @@ A készülékregisztráció-kezelő egy speciális felhasználói fiók, amely t
 ### <a name="dep"></a>DEP
 Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódot, amely lehetővé teszi a következő funkciókat:
 
-  - Zárolt regisztráció
-  - Teljes képernyős mód és más speciális konfigurációk és korlátozások
+  -    Zárolt regisztráció
+  -    Teljes képernyős mód és más speciális konfigurációk és korlátozások
 
 További információ az iOS-eszközök regisztrációjáról:
 
@@ -91,8 +92,8 @@ További információ az iOS-eszközök regisztrációjáról:
 
 ### <a name="usb-sa"></a>USB-SA
 Az Apple Configurator segítségével a rendszergazdák a beállítási asszisztens használatával USB-kapcsolaton keresztül manuálisan előkészíthetnek minden vállalat által birtokolt eszközt. A rendszergazda létrehoz egy regisztrációs profilt, és exportálja azt az Apple Configuratorba. Amikor a felhasználók megkapják az eszközeiket, választhatják a beállítási asszisztens futtatását az eszköz regisztrálásához. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódot, amely lehetővé teszi a következő funkciókat:
-  - Zárolt regisztráció
-  - Teljes képernyős mód és más speciális konfigurációk és korlátozások
+  -    Zárolt regisztráció
+  -    Teljes képernyős mód és más speciális konfigurációk és korlátozások
 
 További információ az iOS-eszközök regisztrációjáról:
 
@@ -127,9 +128,4 @@ Lásd: [Az Intune által támogatott eszközök és böngészők](https://docs.m
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobileszköz karbantartása az MDM-tanúsítvány lejárta után
 
 Az MDM-tanúsítvány automatikusan megújul, amikor a mobileszköz kommunikál az Intune szolgáltatással. Ha egy mobileszköznek (nem számítógépnek) törlik a tartalmát, vagy az eszköz egy bizonyos időn át nem kommunikál az Intune szolgáltatással, akkor az MDM-tanúsítvány nem újul meg. Az eszköz az MDM-tanúsítvány lejárta után 180 nappal törlődik az Azure Portalról.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

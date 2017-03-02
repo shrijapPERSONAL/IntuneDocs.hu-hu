@@ -1,4 +1,4 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>A Windows 10 és a Windows 10 Mobile Azure Active Directory Premium szolgáltatásra való automatikus regisztrációjának beállítása
+## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>A Windows 10 és a Windows 10 Mobile beállítása automatikus regisztrációra az Azure Active Directory Premium szolgáltatással
 
 Az automatikus regisztrációval a felhasználók úgy regisztrálhatják vállalati tulajdonú vagy személyes Windows 10 rendszerű számítógépeiket és Windows 10 Mobile-eszközeiket az Intune-ban, hogy megadnak egy munkahelyi vagy iskolai fiókot és elfogadják, hogy felügyelet alá kerülnek. Ilyen egyszerű az egész! A háttérben a felhasználó eszköze regisztrálja magát és csatlakozik az Azure Active Directory-hoz. A regisztrációt követően az eszközt az Intune felügyeli.
 
@@ -17,13 +17,13 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
 
 3. Válassza a **Microsoft Intune**-hoz tartozó nyilat. A megjelenő lapon konfigurálhatja a Microsoft Intune-t.
 
-4. A Microsoft Intune-ban való automatikus MDM-regisztráció konfigurálásának megkezdéséhez kattintson a **Konfigurálás** elemre.
+4. A Microsoft Intune-ban való automatikus MDM-regisztráció konfigurálását a **Konfigurálás** elemre kattintva kezdheti meg.
 
-5. Adja meg az URL-címeket az Intune-hoz:
+5. A következő URL-címekhez használja az alapértelmezett értékeket:
 
-  - **MDM-regisztrációs URL-cím** – Használja az alapértelmezett értéket.
-  - **MDM használati feltételeinek URL-címe** – Használja az alapértelmezett értéket. Ez az URL-cím az eszközök beléptetésekor megjeleníti a használati feltételeket a felhasználók számára.
-  - **MDM-megfelelőségi URL-cím** – Használja az alapértelmezett értéket. Amennyiben egy eszköz nem megfelelő, ezen az URL-címen jelenik meg a **Hozzáférés megtagadva** üzenet. Az URL-cím egy olyan oldalra mutat, amely ismerteti a felhasználóval, hogy miért nem megfelelő az eszköz és mit tehet a megfelelőség helyreállítása érdekében.
+  - **MDM-regisztráció**
+  - **MDM-használati feltételek** 
+  - **MDM-megfelelőség**
 
 6.  Adja meg, hogy mely felhasználók eszközeit felügyelje a Microsoft Intune. E felhasználók Windows 10 rendszerű eszközeit a rendszer automatikusan belépteti a Microsoft Intune-felügyeletbe.
 
@@ -32,8 +32,3 @@ Az automatikus regisztrációval a felhasználók úgy regisztrálhatják válla
   - **Nincsenek**
 
 7. Válassza a **Mentés** elemet.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

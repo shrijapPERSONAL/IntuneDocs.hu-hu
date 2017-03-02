@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6d41adabfab178daa7f6fce3d86bc8216bf4ab29
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-intune"></a>Üzletági (LOB) iOS-alkalmazások hozzáadása az Intune-hoz
+# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,13 +38,13 @@ ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
 ## <a name="step-2---configure-app-information"></a>2. lépés – Az alkalmazás adatainak konfigurálása
 
 1. Az **Alkalmazás szerkesztése** panelen konfigurálja az alábbi adatokat. Amikor elkészült, kattintson a **Hozzáadás** lehetőségre. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
-    - **Alkalmazásnév** – Itt adhatja meg az alkalmazásnak a céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak a Céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
     - **Alkalmazás leírása** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
     - **Alkalmazható eszköztípus** – Válassza ki, hogy az alkalmazás iPad-re, iPhone-ra vagy kompatibilis iPod-ra legyen telepíthető.
     - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legrégebbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerű eszközhöz rendeli hozzá, nem fog települni.
     - **Kategória (nem kötelező)** – Választhat egyet vagy többet a beépített alkalmazáskategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ezzel megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
-    - **Megjelenítés kiemelt alkalmazásként a Munkahelyi portálon** – Ezzel a beállítással kiemelten jelenítheti meg az alkalmazást a céges portál főoldalán alkalmazásokat kereső felhasználók számára.
+    - **Megjelenítés kiemelt alkalmazásként a Céges portálon** – Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
     - **Információs URL-cím** – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Adatvédelmi nyilatkozat URL-címe** – Igény esetén itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
     - **Fejlesztő** – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
@@ -52,9 +53,4 @@ ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
     - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
 2. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
 
-A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps) (Alkalmazások hozzárendelése csoportokhoz).
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).

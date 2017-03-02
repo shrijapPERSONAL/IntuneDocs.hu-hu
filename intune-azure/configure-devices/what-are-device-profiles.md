@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>Mik azok az eszközprofilok?
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>Mik azok a Microsoft Intune-eszközprofilok?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-A Microsoft Intune **Eszközök konfigurálása** munkafolyamatával kezelheti az összes felügyelt eszköz beállításait és funkcióit.
+A Microsoft Intune **Eszközök konfigurálása** munkafolyamatával kezelheti az összes felügyelt eszköz beállításait és funkcióit. Ezt a munkafolyamatot leginkább a felügyelt eszközökön számtalan különféle funkció és szolgáltatás kezelését és szabályozását lehetővé tevő eszközprofilok létrehozására fogja használni.
 
 A munkafolyamat megnyitásakor a következő lehetőségek jelennek meg:
 
@@ -60,10 +60,6 @@ Támogatott rendszerek: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 és 
 Ez a profiltípus olyan, az eszközökhöz hozzárendelhető megbízható SCEP- és PKCS- tanúsítványok konfigurálását teszi lehetővé, amelyek a Wi-Fi-, VPN- és e-mail-profilok hitelesítésére használhatók.
 További információt a [Tanúsítványok konfigurálása](how-to-configure-certificates.md) című témakörben talál. Támogatott rendszerek: Android, iOS, Windows Phone 8.1 Windows 8.1 és Windows 10.
 
-## <a name="education"></a>Oktatás
-Segít abban, hogy oktatási környezetben megadja az iOS-eszközökön használandó megfelelő tanúsítványokat.
-További információt [Az Intune oktatási beállításainak konfigurálása iOS-eszközökhöz](education-settings-for-ios.md) című témakörben talál. Támogatott rendszer: csak iOS.
-
 ## <a name="edition-upgrade"></a>Kiadásfrissítés
 Ez a profiltípus lehetővé teszi a Windows 10 valamelyik verzióját futtató eszközök automatikus frissítését egy újabb kiadásra. További információt [A Windows 10 kiadásfrissítéseinek konfigurálása](how-to-configure-windows-10-edition-upgrade.md) című témakörben talál. Támogatott rendszer: csak Windows 10.
 
@@ -74,9 +70,4 @@ További információt a [Windows Információvédelem konfigurálása](how-to-c
 ## <a name="custom"></a>Egyéni
 Egyéni beállítások segítségével az Intune-ba be nem épített eszközbeállítások alkalmazhatók. Megadhatók például az eszközt konfiguráló OMA-URI értékek Android-eszközökhöz. iOS-eszközökön importálható egy, az Apple Configuratorban létrehozott konfigurációs fájl.
 További információt az [Egyéni beállítások konfigurálása](how-to-configure-custom-settings.md) című témakörben talál. Támogatott rendszerek: Android, iOS, macOS és Windows Phone 8.1.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

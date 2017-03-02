@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/16/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 99b790e33843efcf83a4687490b186a6e174bd81
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune-rendszergazdaként a Munkahelyi portálról engedélyezheti az Android-eszközök (köztük a Samsung Knox Standard eszközök) kezelését. A felhasználók így a Google Play áruházban elérhető Munkahelyi portál alkalmazással regisztrálhatják az eszközeiket.
+Az Intune-nal felügyelhet androidos eszközöket, többek között Samsung Knox Standard típusúakat is. Az eszközfelügyelethez a felhasználóknak le kell tölteniük a Google Play-ből az Intune Céges portál alkalmazást, majd azt megnyitva az útmutatás alapján regisztrálniuk kell az eszközt. Ha az androidos eszközök bekerültek a felügyelet alá, Ön számos más művelet mellett [megfelelőségi szabályzatokat hozhat létre](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android) vagy [felügyelheti az alkalmazásokat](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management).
 
 ## <a name="prerequisite"></a>Előfeltétel
 
@@ -32,20 +33,19 @@ A mobileszközök kezelésének előkészítéseként a **Microsoft Intune**-t k
 
 ## <a name="set-up-android-enrollment"></a>Az androidos eszközök regisztrálásának beállítása
 
-Alapértelmezés szerint az Intune az Android és a Samsung Knox Standard rendszerű eszközök regisztrálásának engedélyezésére van beállítva. 
+Alapértelmezés szerint az Intune engedélyezi az Android és a Samsung Knox Standard rendszerű eszközök regisztrálását. 
 
-Az androidos eszközök regisztrációját engedélyező vagy letiltó beállítást az Azure Portal Intune paneljéről, a **Beléptetés** > **Regisztrációs korlátozások** elem kiválasztásával jelenítheti meg. 
+Az androidos eszközök (vagy csak a személyes tulajdonban levők) regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) című témakörben olvashat. 
+
+Az egy felhasználó által regisztrálható eszközök számának korlátozásáról a [Regisztrált eszközök maximális számának beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) című témakörben olvashat.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez
 
-A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
+A felhasználókat meg kell kérnie, hogy a Google Play-ből töltsék le az Intune Céges portál alkalmazást, és annak útmutatása alapján regisztrálják eszközeiket. Az alkalmazás végigvezeti a felhasználókat a beléptetési folyamaton, tájékoztatja őket arról, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
+
+Hivatkozást is küldhet nekik az online regisztrációhoz: [Androidos eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android) 
 
 Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
 
 - [Információk végfelhasználóknak a Microsoft Intune használatáról](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Android-eszköz használata az Intune-nal](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-
