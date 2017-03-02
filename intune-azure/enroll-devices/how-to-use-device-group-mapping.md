@@ -1,5 +1,6 @@
 ---
-title: "Eszközkategóriák használata az Intune-ban | Azure-beli Intune – előzetes | Microsoft Docs"
+title: "Útmutató az eszközkategóriák használatához az Intune-ban"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: az a témakör azon eszközkategóriák használatát ismerteti, amelyek közül a felhasználók választhatnak eszközük Intune-os regisztrálásakor."
 keywords: 
 author: robstackmsft
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c635ced382074f7f45254fb219b58f54b56abb8e
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -88,10 +91,5 @@ Ha a **Kategória** oszlop nem látható, kattintson az **Oszlopok** elemre, a l
 
 - Ha törli valamelyik kategóriát, az ahhoz rendelt eszközöknél a **Nincs hozzárendelve** kategórianév jelenik meg.
 
-
-
-
-
-<!--HONumber=Feb17_HO3-->
 
 

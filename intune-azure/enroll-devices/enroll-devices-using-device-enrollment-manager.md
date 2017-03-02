@@ -1,5 +1,6 @@
 ---
-title: "Eszközök regisztrálása – készülékregisztráció-kezelő | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Eszközök regisztrálása – készülékregisztráció-kezelő"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk ismerteti, hogyan lehet regisztrálni az eszközöket az Intune-ban a készülékregisztráció-kezelővel. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b4629d98f935ab2fac95144940e2a58a1b1e7c5c
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -101,9 +104,4 @@ A készülékregisztráció-kezelő eltávolítása nincs hatással a regisztrá
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
 
 3. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** parancsot.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

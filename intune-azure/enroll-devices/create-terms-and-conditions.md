@@ -1,5 +1,6 @@
 ---
-title: "Feltételek és kikötések beállítása a Microsoft Intune-ban | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "A használati feltételek beállítása a Microsoft Intune-ban"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk ismerteti, hogyan lehet beállítani azokat a feltételeket és kikötéseket, amelyeket a felhasználók az Intune munkahelyi portálján látnak. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: f7d6ebc9d71a077492ab615a3bc5397e092b1deb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 07a42cf8fa10d3223129fbb2932217ff90ac365b
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -50,9 +53,4 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
    - **Feltételek és kikötések**: Ez az a jogi nyelven megfogalmazott felirat, amelyet a felhasználók látnak, és el kell fogadniuk vagy el kell utasítaniuk (például: „Elfogadom a feltételeket”).
 
 6. Válassza az **OK** gombot.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

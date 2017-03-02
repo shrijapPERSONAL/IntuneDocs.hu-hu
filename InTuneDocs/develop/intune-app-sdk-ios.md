@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
-ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
+ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
+ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 > [!NOTE]
 > Először célszerű elolvasnia az [Intune App SDK használatának első lépései](intune-app-sdk-get-started.md) című cikket, amely útmutatást ad az integráció előkészítéséhez a támogatott platformokon.
 
-Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune mobilalkalmazás-felügyeleti (MAM) funkcióinak formájában Intune alkalmazásvédelmi szabályzatokat építsen be iOS-alkalmazásába. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdák számára, hogy szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
+Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven MAM-szabályzatokat) építsen be iOS-alkalmazásába. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -63,7 +64,6 @@ Ez az útmutató az iOS-hez készült Intune App SDK következő összetevőit i
 
 Az iOS-hoz készült Intune App SDK révén minimális kódmódosítással adhat hozzá felügyeleti funkciókat az iOS-alkalmazásokhoz. Minél kevesebb kódmódosítás szükséges, annál gyorsabban dobhatja piacra a mobilalkalmazást – az egységesség és a stabilitás terén kötött kompromisszumok nélkül.
 
-Az alkalmazást a statikus erőforrástárhoz kell csatolni, és az alkalmazásnak tartalmaznia kell az erőforrás-csomagot is. A MAMDebugSettings.plist fájl nem kötelező. Segítségével a MAM-szabályzatok által felügyelt alkalmazások működését szimulálhatja anélkül, hogy Microsoft Intune-on keresztül kellene telepítenie az alkalmazást. Hibakeresési buildekben ezenkívül a MAMDebugSettings.plist fájlban lévő szabályzatok érvénybe léptetéséhez ezt a fájlt az alkalmazás Dokumentumok könyvtárába kell másolni az iTunes-fájlmegosztás segítségével.
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Az SDK beépítése a mobilalkalmazásba
 
@@ -165,6 +165,8 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
     Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre a kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét.
 
+
+
 ## <a name="set-up-azure-directory-authentication-library"></a>Az Azure Directory Authentication Library (ADAL) beállítása
 
 Az Intune App SDK az ADAL-t hitelesítésre és a feltételes indítási forgatókönyvek készítésére használja. Az ADAL-t használja ezenkívül arra, hogy regisztrálja a felhasználó identitását a MAM-szolgáltatásnál az eszközök regisztrációja nélkül történő felügyelet esetére.
@@ -195,22 +197,14 @@ Ha explicit módon beállítja az ADAL megosztott gyorsítótárának kulcslánc
 
 **Hogyan kényszeríthetem az Intune App SDK-t arra, hogy az alkalmazásom által már használt ADAL-beállításokat használja?**
 
-Ha az alkalmazás már használja az ADAL-t, az IntuneMAMSettings beállításait ismertető szakaszban talál tájékoztatást a következő beállítások értékének kitöltéséről:  
+Ha az alkalmazás már használja az ADAL-t, [Az Intune App SDK-beállítások konfigurálása](#configure-settings-for-the-intune-app-sdk) című témakörben talál tájékoztatást a következő beállítások értékének kitöltéséről:  
 
 * ADALClientId
+* ADALAuthority
 * ADALRedirectUri
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
-**Hogyan válthatok az Azure AD éles és belső tesztkörnyezete között?**
-
-A MAMPolicies.plist fájl `AadAuthorityURI` beállításával határozhatja meg az ADAL-hívások kezeléséhez használt Azure AD-környezetet. Jelenleg az Azure AD üzem előtti környezete (PPE) van megadva alapértelmezésként, ezt azonban felül lehet bírálni.
-
-A PPE környezetben való teszteléshez használhat fordításkor vagy futtatáskor történő váltást.
-
-A MAM-szolgáltatás URL-címeinek és az Azure AD fordítás közben történő környezetváltásához állítsa a `UsePPE` logikai jelzőt true értékre a MAMEnvironment.plist fájlban. (Vegye figyelembe, hogy ennek az Info.plist fájllal történő elvégzése nem támogatott.)
-
-Ha futtatáskor szeretne környezetet váltani, az általános jogú felhasználó alapértelmezései között kell átállítania a `com.microsoft.intune.mam.useppe` beállítást az „1” értékre a PPE használatához. Ez felváltja a meglévő `com.microsoft.intune.mam.AADAuthorityEnvironment` beállítást.
 
 **Hogyan bírálhatom felül az Azure AD-szolgáltató URL-címét egy bérlőspecifikus, futtatás közben megadott URL-címmel?**
 
@@ -225,9 +219,11 @@ Az SDK továbbra is ezt a szolgáltatói URL-címet használja a szabályzatok f
 
 Ha az alkalmazás maga az ADAL-t használja hitelesítésre, a következő műveleteket kell elvégeznie:
 
-* Adja meg az ADAL-hívásokhoz használandó ClientID-t a projekt Info.plist fájljában, az IntuneMAMSettings szótár alatt található `ADALClientId` nevű kulcsban.
+1. Adja meg az ADAL-hívásokhoz használandó ClientID-t a projekt Info.plist fájljában, az IntuneMAMSettings szótár alatt található `ADALClientId` nevű kulcsban.
 
-* Adja meg az ADAL-hívásokhoz használandó redirect URI-t (átirányítási URI) a projekt Info.plist fájljában, az IntuneMAMSettings szótár alatt található `ADALRedirectUri` nevű kulcsban. Az alkalmazás átirányítási URI-formátumától függően előfordulhat, hogy az `ADALRedirectScheme` beállításait is meg kell adnia.
+2. A szintén az IntuneMAMSettings szótár alatt található `ADALAuthority` nevű kulcsban adja meg az Azure AD-szolgáltatót.
+
+3. A szintén az IntuneMAMSettings szótár alatt található `ADALRedirectUri` nevű kulcsban adja meg az ADAL-hívásokhoz használandó átirányítási URI-t. Az alkalmazás átirányítási URI-formátumától függően előfordulhat, hogy az `ADALRedirectScheme` beállításait is meg kell adnia.
 
 **Mi a teendő, ha az alkalmazás még nem ADAL-t használ a hitelesítéshez?**
 
@@ -236,22 +232,15 @@ Ha az alkalmazás nem ADAL-t használ, az Intune App SDK alapértelmezett érté
 ## <a name="register-your-app-with-the-intune-mam-service"></a>Az alkalmazás regisztrálása az Intune MAM-szolgáltatásában
 
 ### <a name="use-the-apis"></a>Az API-k használata
-Az Intune App SDK mostantól lehetőséget nyújt arra, hogy az iOS-alkalmazások anélkül fogadják az Intune-tól a MAM-szabályzatokat, hogy az Intune-ban regisztrálva kellene lenniük a mobileszköz-felügyeletre (MDM). Az SDK az új funkciót olyan új API-k segítségével biztosítja, amelyek lehetővé teszik az alkalmazás számára a MAM-szabályzatok fogadását. Az új API-k használatához kövesse az alábbi lépéseket:
+Az Intune App SDK mostantól lehetőséget nyújt arra, hogy az iOS-alkalmazások anélkül fogadják az Intune-tól az alkalmazásvédelmi szabályzatokat, hogy az Intune-ban regisztrálva kellene lenniük a mobileszköz-felügyeletre (MDM). Az SDK az új funkciót olyan új API-k segítségével biztosítja, amelyek lehetővé teszik az alkalmazás számára az alkalmazásvédelmi szabályzatok fogadását. Az új API-k használatához kövesse az alábbi lépéseket:
 
-1. Használja az Intune App SDK legújabb kiadását, amely az eszközregisztrációval és nélküle is lehetőséget nyújt az alkalmazások felügyeletére. Ha az alkalmazás az SDK egy régebbi, ezt a funkciót nem nyújtó változatát használja, frissítenie kell az Intune MAM-erőforrástárát és a Headers mappát a legújabb SDK fejléceivel.
+1. Használja az Intune App SDK legújabb kiadását, amely az eszközregisztrációval és nélküle is lehetőséget nyújt az alkalmazások felügyeletére. .
 
 2. Vegye fel a IntuneMAMEnrollment.h-t minden olyan fájlba, amely hívni fogja az API-kat.
 
-3. A PPE környezetben való teszteléshez használhat fordításkor vagy futtatáskor történő váltást.
-
-    A MAM-szolgáltatás URL-címeinek és az Azure AD fordítás közben történő környezetváltásához állítsa a `UsePPE` logikai jelzőt true értékre a MAMEnvironment.plist fájlban. (Vegye figyelembe, hogy ennek az Info.plist fájllal történő elvégzése nem támogatott.)
-
-    Ha futtatáskor szeretne környezetet váltani, az általános jogú felhasználó alapértelmezései között kell átállítania a `com.microsoft.intune.mam.useppe` beállítást az „1” értékre a PPE használatához. Ez felváltja a meglévő `com.microsoft.intune.mam.AADAuthorityEnvironment` beállítást.
-
-
 ### <a name="register-accounts"></a>Fiókok regisztrálása
 
-Egy alkalmazás akkor fogadhatja a MAM-szabályzatokat az Intune szolgáltatástól, ha az alkalmazás regisztrálva van egy megadott felhasználói fiók nevében. Az alkalmazás felelős azért, hogy regisztráljon minden újonnan bejelentkezett felhasználót az Intune App SDK-val. Az új felhasználói fiók hitelesítését követően az alkalmazásnak meg kell hívnia a `registerAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
+Egy alkalmazás akkor fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, ha az alkalmazás regisztrálva van egy megadott felhasználói fiók nevében. Az alkalmazás felelős azért, hogy regisztráljon minden újonnan bejelentkezett felhasználót az Intune App SDK-val. Az új felhasználói fiók hitelesítését követően az alkalmazásnak meg kell hívnia a `registerAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
 
 ```objc
 /**
@@ -275,7 +264,7 @@ Mielőtt egy felhasználó kijelentkezik az alkalmazásból, az alkalmazásnak m
 
 1. Nem lesznek további próbálkozások a felhasználói fiók regisztrálására.
 
-2. Ha a felhasználó sikeresen regisztrálta az alkalmazást, a felhasználó és az alkalmazás regisztrációja is megszűnik az Intune MAM-szolgáltatásban, és törlődnek a MAM-szabályzatok.
+2. Ha a felhasználó sikeresen regisztrálta az alkalmazást, a felhasználó és az alkalmazás regisztrációja megszűnik az Intune MAM-szolgáltatásban, és a rendszer törli az alkalmazásvédelmi szabályzatot.
 
 3. Ha az alkalmazás szelektív törlést kezdeményez (igény szerint), akkor a munkahellyel vagy az iskolával kapcsolatos összes adat törlődik.
 
@@ -305,9 +294,9 @@ Ha az alkalmazás saját maga végzi a felhasználó munkahelyi vagy iskolai ada
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-## <a name="enroll-without-prior-sign-in"></a>Regisztráció előzetes bejelentkezés nélkül
+### <a name="enroll-without-prior-sign-in"></a>Regisztráció előzetes bejelentkezés nélkül
 
-Olyan alkalmazás is fogadhatja a MAM-szabályzatokat az Intune szolgáltatástól, amely nem jelentkezteti be a felhasználót az Azure Active Directoryval. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Az alkalmazásoknak ezt a módszert kell használniuk abban az esetben, ha nem hitelesítették a felhasználót az Azure AD-vel, ugyanakkor szükségük van a MAM-szabályzatok lekérésére az adatok védelméhez. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak meg kell hívnia a `loginAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
+Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, amely nem jelentkezteti be a felhasználót az Azure Active Directoryval. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Az alkalmazásoknak ezt a módszert kell használniuk abban az esetben, ha nem hitelesítették a felhasználót az Azure AD-vel, ugyanakkor szükség van az alkalmazásvédelmi szabályzat lekérésére az adatok védelméhez. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak meg kell hívnia a `loginAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
 
 ```objc
 /**
@@ -367,66 +356,40 @@ Ezek a delegáltmetódusok egy `IntuneMAMEnrollmentStatus` objektumot adnak viss
 - Az állapotkód leírását tartalmazó hibaüzenet-karakterláncot
 - Egy `NSError` objektumot
 
-Ezt az objektumot a „Headers/IntuneMAMEnrollmentStatus.h” fájl definiálja, a visszaadható konkrét állapotkódokkal együtt.
+Ezt az objektumot az IntuneMAMEnrollmentStatus.h nevű fájl definiálja a visszaadható konkrét állapotkódokkal együtt.
 
 
 
 
-## <a name="sample-code"></a>Mintakód
+### <a name="sample-code"></a>Mintakód
 
 A következők a delegáltmetódusok megvalósítására szolgálnak példákkal:
 
 ```objc
 - (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 
 - (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
-
 - (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 ```
 
 ## <a name="app-restart"></a>Az alkalmazás újraindítása
 
-Amikor egy alkalmazás először kap MAM-szabályzatokat, újra kell indulnia a szükséges beavatkozási pontok alkalmazása érdekében. Az SDK biztosít egy delegáltmetódust a „Headers/IntuneMAMPolicyDelegate.h” fájlban, amellyel értesíteni lehet az alkalmazást az újraindítás szükségességéről.
+Amikor egy alkalmazás először kap alkalmazásvédelmi szabályzatokat, újra kell indulnia a szükséges beavatkozási pontok alkalmazásához. Az SDK biztosít egy delegáltmetódust a „Headers/IntuneMAMPolicyDelegate.h” fájlban, amellyel értesíteni lehet az alkalmazást az újraindítás szükségességéről.
 
 ```objc
  - (BOOL) restartApplication
@@ -434,19 +397,34 @@ Amikor egy alkalmazás először kap MAM-szabályzatokat, újra kell indulnia a 
 A metódus visszatérési értéke közli az SDK-val, hogy az alkalmazás fogja-e kezelni a szükséges újraindítást:   
 
  - Ha a visszatérési érték true (igaz), akkor az alkalmazás fogja kezelni az újraindítást.   
+
  - Ha a visszatérési érték false, akkor az SDK fogja újraindítani az alkalmazást a metódus visszatérése után. Az SDK azonnal megjelenít egy párbeszédpanelt, amely arra kéri a felhasználót, hogy indítsa újra az alkalmazást.
 
-## <a name="implement-save-as-controls"></a>A Mentés másként vezérlőinek implementálása
+## <a name="customize-your-apps-behavior"></a>Az alkalmazás viselkedésének testreszabása
 
-Az Intune lehetővé teszi a rendszergazdák számára a felügyelt alkalmazások adatmentéshez használható tárolási helyeinek meghatározását. Az alkalmazások lekérhetik az engedélyezett tárolási helyek listáját az Intune App SDK-tól az **isSaveToAllowedForLocation** API használatával.
+Az Intune App SDK több olyan API-val rendelkezik, amelyeket meg lehet hívni az alkalmazáshoz telepített Intune-beli alkalmazásvédelmi szabályzat információinak beolvasásához. Ezekkel az adatokkal testre lehet szabni az alkalmazás viselkedését. A legtöbb alkalmazásvédelmi szabályzatbeállítás automatikus kényszerítését az alkalmazás helyett az SDK végzi. Az alkalmazás által implementálandó egyetlen beállítás a Mentés másként vezérlő.
+
+### <a name="get-the-app-protection-policy-settings"></a>Az alkalmazásvédelmi szabályzatbeállítások beolvasása
+
+#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
+Az IntuneMAMPolicyManager osztály tartalmazza az alkalmazáshoz telepített Intune alkalmazásvédelmi szabályzatot. Olyan API-kat tesz közzé, amelyek hasznosak lehetnek [több identitás engedélyezésekor](#-enable-multi-identity-optional).
+
+#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
+Az IntuneMAMPolicy osztály tartalmazza az alkalmazáshoz telepített Intune alkalmazásvédelmi szabályzatot. Az osztályban található legtöbb szabályzatbeállítás kényszerítését az SDK végzi, de bármikor testre szabhatja az alkalmazás viselkedését a szabályzatbeállítások kényszerítése alapján.
+
+Ez az osztály tartalmazza azokat az API-kat, amelyek a Mentés másként vezérlők implementálásához szükségesek. Ennek részleteit a következő szakaszban találja.
+
+### <a name="implement-save-as-controls"></a>A Mentés másként vezérlőinek implementálása
+
+Az Intune lehetővé teszi a rendszergazdák számára a felügyelt alkalmazások adatmentéshez használható tárolási helyeinek meghatározását. Az alkalmazások lekérhetik az engedélyezett tárolási helyek listáját az Intune App SDK-tól az **isSaveToAllowedForLocation** API használatával, ahogyan az az **IntuneMAMPolicy.h** nevű fájlban szerepel.
 
 Mielőtt az alkalmazás felügyelt adatokat menthetne felhőbeli tárhelyre vagy helyi adattárolókba, az **isSaveToAllowedForLocation** API használatával ellenőriznie kell, hogy a rendszergazda engedélyezte-e az adatmentést az adott helyre.
 
 Az alkalmazásoknak az **isSaveToAllowedForLocation** használatakor át kell adniuk a tárolási hely UPN-jét, amennyiben az elérhető.
 
-### <a name="supported-save-locations"></a>Támogatott mentési helyek
+#### <a name="supported-save-locations"></a>Támogatott mentési helyek
 
-Az **isSaveToAllowedForLocation** API által biztosított állandókkal ellenőrzihető, hogy a rendszergazda engedélyezi-e az adatok mentését a következő helyekre:
+Az **isSaveToAllowedForLocation** API által biztosított állandókkal lehet ellenőrizni, hogy a rendszergazda engedélyezi-e az adatok mentését az IntuneMAMPolicy.h nevű fájlban meghatározott alábbi helyekre:
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
@@ -458,45 +436,49 @@ Az **isSaveToAllowedForLocation** API által biztosított állandókkal ellenőr
 
 Az alkalmazásoknak az **isSaveToAllowedForLocation** API állandóival kell ellenőrizniük, hogy az adatok menthetők-e a „felügyeltnek” tekintett, például a OneDrive Vállalati verziójába, vagy „személyes” helyekre. Emellett akkor is szükséges az API használata, ha az alkalmazás nem képes megállapítani egy adott helyről, hogy az „felügyelt” vagy „személyes”.
 
-A „személyes” helyeken az alkalmazásnak az **IntuneMAMSaveLocationOther** értéket kell használnia.
+A „személyes” helyeket az `IntuneMAMSaveLocationOther` állandó képviseli.
 
-Az **IntuneMAMSaveLocationLocalDrive** állandót akkor kell használni, amikor az alkalmazás a helyi eszközre ment adatot.
+Az `IntuneMAMSaveLocationLocalDrive` állandót akkor érdemes használni, amikor az alkalmazás a helyi eszközre ment adatot.
 
-## <a name="set-up-the-intune-app-sdk"></a>Az Intune App SDK beállítása
+## <a name="configure-settings-for-the-intune-app-sdk"></a>Az Intune App SDK-beállítások konfigurálása
 
-Az Intune App SDK az alkalmazás Info.plist fájljában található IntuneMAMSettings szótár segítségével állítható be. A következő táblázatban az összes támogatott beállítás látható.
+Az Intune App SDK beállítását és konfigurálását az alkalmazás Info.plist fájljában található **IntuneMAMSettings** szótárral végezheti el. A következő táblázatban az összes támogatott beállítás látható.
 
 Egy részükről már volt szó korábbi szakaszokban, más részük pedig nem vonatkozik minden alkalmazásra.
 
 Beállítás  | Típus  | Meghatározás | Kötelező?
 --       |  --   |   --       |  --
-ADALClientId  | Karakterlánc  | Az alkalmazás Azure AD ügyfél-azonosítója. | Kötelező, ha az alkalmazás használja az ADAL-t.
-ADALRedirectUri  | Karakterlánc  | Az alkalmazás Azure AD átirányítási URI-ja. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.
-ADALRedirectScheme  | Karakterlánc  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.
-ADALLogOverrideDisabled | Logikai  | Megadásával az SDK átirányítja az összes ADAL-naplófájlt (beleértve az esetleges ADAL-hívásokat az alkalmazásból) a saját naplófájljába. Az alapértelmezett érték a Nem. Állítsa be a YES értéket, ha az alkalmazás visszahívja a saját ADAL-naplóját. | Nem kötelező.
-ADALCacheKeychainGroupOverride | Karakterlánc  | Az ADAL-gyorsítótárhoz a „com.microsoft.adalcache” helyett használandó kulcslánccsoportot adja meg. Vegye figyelembe, hogy ez nem tartalmazza az app-id előtagot. Ezt az előtagot futás közben fogja megkapni a karakterlánc. | Nem kötelező.
-AppGroupIdentifiers | A karakterlánc tömbje  | Az alkalmazáscsoportok tömbje az alkalmazás jogosultságainak com.apple.security.application-groups szakaszában. | Szükséges, ha az alkalmazás alkalmazáscsoportokat használ.
-ContainingAppBundleId | Karakterlánc | Megadja a bővítményt tartalmazó alkalmazás csomagazonosítóját. | IOS-bővítményekhez szükséges.
-DebugSettingsEnabled| Logikai | Ha YES értékű, használhatók a Settings csomagban található tesztszabályzatok. Az alkalmazásokat *tilos* úgy szállítani, hogy engedélyezve van bennük ez a beállítás. | Nem kötelező.
-MainNibFile<br>MainNibFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő Nib-fájljának nevét.  | Kötelező, ha az alkalmazás a MainNibFile-t az Info.plist fájlban definiálja.
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő storyboard-fájljának nevét. | Kötelező, ha az alkalmazás a UIMainStoryboardFile-t az Info.plist fájlban definiálja.
-MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune MAM-szabályzata. Az alapértelmezett érték a Nem. | Nem kötelező.
-MAMPolicyWarnAbsent | Logikai| Azt adja meg, hogy figyelmeztesse-e az alkalmazás a felhasználót az indítás közben, ha az alkalmazásnak nincs Intune MAM-szabályzata. Megjegyzés: nem lehet olyan alkalmazásokat benyújtani az áruházba, amelyeknek YES értékű ez a beállítása. | Nem kötelező.
-MultiIdentity | Logikai| Azt adja meg, hogy az alkalmazás képes-e kezelni a többszörös identitást. | Nem kötelező.
-SplashIconFile <br>SplashIconFile ~ ipad | Karakterlánc  | Az Intune-kezdőképet (indítóképernyőt) tartalmazó ikonfájlt határozza meg. | Nem kötelező.
-SplashDuration | Szám | Az Intune-kezdőképernyő megjelenésének minimális időtartama (másodpercben) az alkalmazás indításakor. Az alapértelmezett érték 1.5. | Nem kötelező.
-BackgroundColor| Karakterlánc| A kezdő- és a PIN-kód bevitelére szolgáló képernyő háttérszínét adja meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.   | Nem kötelező. Alapértelmezése a világosszürke szín.
-ForegroundColor| Karakterlánc| A kezdőképernyő és a PIN-kód bevitelére szolgáló képernyő előtérszínét, például a szöveg színét határozza meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.  | Nem kötelező. Alapértelmezett értéke a fekete.
-AccentColor | Karakterlánc| A PIN-kód megadására szolgáló képernyő kiemelőszínét (például a gombszöveg színét és a mezők kijelölésének színét) határozza meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.| Nem kötelező. Alapértéke a rendszer kék színe.
-MAMTelemetryDisabled| Logikai| Az határozható meg vele, hogy az SDK ne küldjön telemetriai adatokat a háttérrendszerének.| Nem kötelező.
-MAMTelemetryUsePPE | Logikai | Az határozható meg vele, hogy az SDK adatokat küldjön vissza a PPE háttérrendszerének. Akkor használja ezt a beállítást, ha teszteli az alkalmazásokat az Intune szabályzatával. Megakadályozhatja vele, hogy a teszt telemetriai adatai keveredjenek az ügyfelek adataival. | Nem kötelező.
+ADALClientId  | Karakterlánc  | Az alkalmazás Azure AD ügyfél-azonosítója. | Kötelező, ha az alkalmazás használja az ADAL-t. |
+ADALAuthority | Karakterlánc | Az alkalmazás használatban lévő Azure AD-szolgáltatója. Használja azt a saját környezetet, ahol az AAD-fiókok konfigurálása megtörtént. | Kötelező, ha az alkalmazás használja az ADAL-t. Ha ez az érték hiányzik, a rendszer egy Intune-beli alapértelmezett értéket használ.|
+ADALRedirectUri  | Karakterlánc  | Az alkalmazás Azure AD átirányítási URI-ja. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t.  |
+ADALRedirectScheme  | Karakterlánc  | Az alkalmazás Azure AD átirányítási sémája. Használható az ADALRedirectUri helyett, ha az alkalmazás átirányítási URI-ja `scheme://bundle_id` formátumú. | Az ADALRedirectUri vagy az ADALRedirectScheme kötelező, ha az alkalmazás használja az ADAL-t. |
+ADALLogOverrideDisabled | Logikai  | Megadásával az SDK átirányítja az összes ADAL-naplófájlt (beleértve az esetleges ADAL-hívásokat az alkalmazásból) a saját naplófájljába. Az alapértelmezett érték a Nem. Állítsa be a YES értéket, ha az alkalmazás visszahívja a saját ADAL-naplóját. | Nem kötelező. |
+ADALCacheKeychainGroupOverride | Karakterlánc  | Az ADAL-gyorsítótárhoz a „com.microsoft.adalcache” helyett használandó kulcslánccsoportot adja meg. Vegye figyelembe, hogy ez nem tartalmazza az app-id előtagot. Ezt az előtagot futás közben fogja megkapni a karakterlánc. | Nem kötelező. |
+AppGroupIdentifiers | A karakterlánc tömbje  | Az alkalmazáscsoportok tömbje az alkalmazás jogosultságainak com.apple.security.application-groups szakaszában. | Szükséges, ha az alkalmazás alkalmazáscsoportokat használ. |
+ContainingAppBundleId | Karakterlánc | Megadja a bővítményt tartalmazó alkalmazás csomagazonosítóját. | IOS-bővítményekhez szükséges. |
+DebugSettingsEnabled| Logikai | Ha YES értékű, használhatók a Settings csomagban található tesztszabályzatok. Az alkalmazásokat *tilos* úgy szállítani, hogy engedélyezve van bennük ez a beállítás. | Nem kötelező. |
+MainNibFile<br>MainNibFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő Nib-fájljának nevét.  | Kötelező, ha az alkalmazás a MainNibFile-t az Info.plist fájlban definiálja. |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | Karakterlánc  | Ennek a beállításnak tartalmaznia kell az alkalmazás fő storyboard-fájljának nevét. | Kötelező, ha az alkalmazás a UIMainStoryboardFile-t az Info.plist fájlban definiálja. |
+MAMPolicyRequired| Logikai| Azt adja meg, hogy megakadályozza-e a rendszer az alkalmazás elindítását, ha az alkalmazásnak nincs Intune alkalmazásvédelmi szabályzata. Az alapértelmezett érték a Nem. <br><br> Megjegyzés: nem lehet olyan alkalmazásokat benyújtani az App Store-ba, amelyeknél a MAMPolicyRequired beállítása IGEN értékű. | Nem kötelező. |
+MAMPolicyWarnAbsent | Logikai| Azt adja meg, hogy figyelmeztesse-e az alkalmazás a felhasználót az indítás közben, ha az alkalmazásnak nincs Intune alkalmazásvédelmi szabályzata. Megjegyzés: nem lehet olyan alkalmazásokat benyújtani az áruházba, amelyeknek YES értékű ez a beállítása. | Nem kötelező. |
+MultiIdentity | Logikai| Azt adja meg, hogy az alkalmazás képes-e kezelni a többszörös identitást. | Nem kötelező. |
+SplashIconFile <br>SplashIconFile ~ ipad | Karakterlánc  | Az Intune-kezdőképet (indítóképernyőt) tartalmazó ikonfájlt határozza meg. | Nem kötelező. |
+SplashDuration | Szám | Az Intune-kezdőképernyő megjelenésének minimális időtartama (másodpercben) az alkalmazás indításakor. Az alapértelmezett érték 1.5. | Nem kötelező. |
+BackgroundColor| Karakterlánc| A kezdő- és a PIN-kód bevitelére szolgáló képernyő háttérszínét adja meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.   | Nem kötelező. Alapértelmezése a világosszürke szín. |
+ForegroundColor| Karakterlánc| A kezdőképernyő és a PIN-kód bevitelére szolgáló képernyő előtérszínét, például a szöveg színét határozza meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.  | Nem kötelező. Alapértelmezett értéke a fekete. |
+AccentColor | Karakterlánc| A PIN-kód megadására szolgáló képernyő kiemelőszínét (például a gombszöveg színét és a mezők kijelölésének színét) határozza meg. Hexadecimális RGB-karakterláncot fogad el „#XXXXXX” alakban, amelyben az X-ek helyén számjegy (0–9), illetve és A és F közötti nagybetű állhat. A kettőskereszt jel kihagyható.| Nem kötelező. Alapértéke a rendszer kék színe. |
+MAMTelemetryDisabled| Logikai| Az határozható meg vele, hogy az SDK ne küldjön telemetriai adatokat a háttérrendszerének.| Nem kötelező. |
+
+> [!NOTE]
+> Ha az alkalmazás elérhető lesz az App Store-ban, a `MAMPolicyRequired` értékét NEM értékre kell beállítani az App Store irányelvei alapján.
 
 ## <a name="telemetry"></a>Telemetria
 
 Az iOS-hez készült Intune App SDK alapértelmezés szerint a következő használati eseményekkel kapcsolatos telemetriai adatokat naplózza. Az adatokat az SDK a Microsoft Intune-nak küldi el.
 
 * **Az alkalmazások indítása:** a Microsoft Intune tájékozódhat a különböző felügyeleti típusú MAM-kompatibilis alkalmazások használatáról (MAM az MDM-mel, MAM MDM-regisztráció nélkül stb.).
-* **EnrollApplication API-hívás:** a Microsoft Intune a sikerességi arányról és az ügyféloldali `enrollApplication` hívások egyéb teljesítménymutatóiról is gyűjt információkat.
+
+* **Regisztrációs hívások**: a Microsoft Intune a sikerességi arányról és az ügyféloldalról kezdeményezett regisztrációs hívások egyéb teljesítménymutatóiról is gyűjt információkat.
 
 > [!NOTE]
 > Ha nem kíván az Intune App SDK-ból származó telemetriai adatokat küldeni a Microsoft Intune-nak a mobilalkalmazásból, le kell tiltania az Intune App SDK-ban a telemetriai adatok rögzítését. Ehhez állítsa a `MAMTelemetryDisabled` tulajdonságot YES értékre az IntuneMAMSettings szótárban.
@@ -514,12 +496,16 @@ Felhívjuk, hogy az identitás egyszerűen egy karakterláncként van definiálv
 Az identitás egyszerűen egy fiók felhasználóneve (például user@contoso.com). A fejlesztők a következő szinteken állíthatják be az alkalmazás identitását:
 
 * **Folyamat identitása**: a folyamat szintjén állítja be az identitást, és elsősorban egyidentitású alkalmazások esetében használatos. Ez az identitás hatással van minden műveletre, fájlra és a kezelőfelületre is.
+
 * **Kezelőfelület identitása**: azt határozza meg, hogy milyen szabályzatok alkalmazandók a főszálban végzett kezelőfelületi műveletekre, például a kivágásra, a másolásra, a beillesztésre, a PIN-kód megadására, a hitelesítésre vagy az adatmegosztásra. A kezelőfelület identitása nincs hatással a fájlműveletekre, például a titkosításra vagy a biztonsági mentésre.
+
 * **Szál identitása**: azt határozza meg, hogy milyen szabályzatok alkalmazandók az aktuális szálra. Ez az identitás hatással van minden műveletre, fájlra és a kezelőfelületre is.
 
 Az identitás helyes beállítása az alkalmazás feladata, függetlenül attól, hogy felügyelt felhasználóról van-e szó vagy sem.
 
-Minden szálnak minden pillanatban van egy effektív identitása mind a kezelőfelületi műveletekre, mind a fájlműveletekre vonatkozóan. A rendszer ennek az identitásnak az alapján határozza meg, hogy kell-e alkalmazni szabályzatokat, és ha igen, milyeneket. Ha az identitás „no identity”, vagy ha nem felügyelt felhasználóról van szó, a rendszer nem alkalmaz szabályzatokat.
+Minden szálnak minden pillanatban van egy effektív identitása mind a kezelőfelületi műveletekre, mind a fájlműveletekre vonatkozóan. A rendszer ennek az identitásnak az alapján határozza meg, hogy kell-e alkalmazni szabályzatokat, és ha igen, milyeneket. Ha az identitás „no identity”, vagy ha nem felügyelt felhasználóról van szó, a rendszer nem alkalmaz szabályzatokat. Az alábbi ábrán látható, hogy a rendszer miként határozza meg a tényleges identitásokat.
+
+  ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](../media/intune-app-sdk/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Szálak várólistái
 
@@ -633,7 +619,7 @@ Az SDK felhagy az újrapróbálkozással, ha azt észleli, hogy a felhasználó 
 Az SDK a következő műveleteket végzi el a háttérben, rendszeres időközönként:
 
  - Ha az alkalmazás még nincs regisztrálva, 24 óránként megpróbál regisztrálni minden regisztrált fiókot.
- - Ha az alkalmazás regisztrálva van, az SDK 8 óránként keresi meg a MAM-szabályzat esetleges frissítéseit.
+ - Ha az alkalmazás regisztrálva van, az SDK 8 óránként keresi az alkalmazásvédelmi szabályzat esetleges frissítéseit.
 
 A felhasználó regisztrációjának megszüntetése esetén értesíti az SDK-t arról, hogy a felhasználó nem használja tovább az alkalmazást, és hogy az SDK leállíthatja az adott felhasználói fiók esetében a rendszeres műveleteket. Az alkalmazás regisztrációjának visszavonását, és ha szükséges, az adatok szelektív törlését is kezdeményezi.
 
@@ -663,9 +649,4 @@ Az Intune App SDK statikus könyvtára és keretrendszere egyaránt univerzális
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     Az első parancs törli a szimulátorarchitektúrákat a keretrendszer DYLIB-fájljából. A második parancs visszamásolja a csak eszközökhöz kapcsolódó DYLIB-fájlt a keretrendszer könyvtárába.
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "Az alkalmazásvédelmi szabályzatok létrehozása és telepítése | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Alkalmazásvédelmi szabályzatok létrehozása és telepítése"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: A felügyelt alkalmazások által használt céges adatok védelme Intune-os alkalmazásvédelmi szabályzatok segítségével."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -122,9 +125,4 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 ### <a name="see-also"></a>További információ
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-android-apps.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

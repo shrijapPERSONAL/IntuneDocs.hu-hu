@@ -1,5 +1,6 @@
 ---
-title: "A Microsoft Intune előzetesének ismert problémái | Azure-beli Intune – előzetes | Microsoft Docs"
+title: "A Microsoft Intune előzetesének ismert problémái"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: További információ az előzetes ismert problémáiról"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Ha új szolgáltatás hozzáadását szeretné igényelni az Intune-hoz, vegye f
 ## <a name="administration-and-accounts"></a>Felügyelet és fiókok
 
 - A globális rendszergazdák (másnéven a bérlő rendszergazdák) folytathatják a mindennapos adminisztrációs feladataikat különálló Intune- vagy Nagyvállalati mobilitási csomag- (EMS-) licenc nélkül. Ha azonban a globális rendszergazdák a szolgáltatást szeretnék használni, például a saját eszközük vagy vállalati eszköz regisztrálásához vagy a munkahelyi Intune portál használatához, Intune- vagy EMS-licencre van szükségük, mint minden más felhasználónak.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

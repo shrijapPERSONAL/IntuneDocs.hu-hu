@@ -1,5 +1,6 @@
 ---
-title: "Távközlésiköltség-kezelő szolgáltatás beállítása | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Távközlésiköltség-kezelő szolgáltatások beállítása"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A Saaswedo távközlésiköltség-kezelő szolgáltatás konfigurálása az Intune-nal való integráláshoz."
 keywords: Saaswedo
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
-ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -164,9 +167,4 @@ Ha letiltja a Datalert szolgáltatást az Azure Portalon:
 Az adathasználati jelentések jelenleg csak a Saaswedo Datalert kezelőkonzolján érhetők el.
 
 Rövidesen közzétesszük a Datalert alkalmazás telepítését ismertető végfelhasználói útmutatót is.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

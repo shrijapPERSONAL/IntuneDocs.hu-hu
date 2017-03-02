@@ -1,5 +1,6 @@
 ---
-title: "Eszközök teljes vagy szelektív törlése az Intune segítségével | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Az eszközök teljes vagy szelektív törlése Intune használatával"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Megtudhatja, hogyan kezdeményezhet szelektív törlést a vállalati adatok eltávolítása érdekében, illetve teljes törlést az eszköz gyári beállításainak visszaállításához."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 3.  Az eszköz nevét tartalmazó panelen válassza a **Céges adatok eltávolítása** lehetőséget, majd kattintson az **Igen** gombra a törlés megerősítéséhez.
 
 Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

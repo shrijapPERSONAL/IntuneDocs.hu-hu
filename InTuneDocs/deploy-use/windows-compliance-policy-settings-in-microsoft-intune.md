@@ -1,11 +1,11 @@
 ---
-title: "Megfelelőségi szabályzat beállításai Windows-eszközökhöz | Microsoft Intune"
+title: "Megfelelőségi szabályzat beállításai Windows-eszközökhöz | Microsoft Docs"
 description: "Ez a témakör a Windows-eszközök megfelelőségi szabályzatában konfigurálható szabályokat és beállításokat ismerteti."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Windows-eszközökhöz a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az ebben a témakörben leírt szabályzatbeállítások a Windows operációs rendszerrel működő eszközökre vonatkoznak. A következő szakaszok a támogatott Windows-verziókat ismertetik.
 
@@ -64,7 +68,7 @@ A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 é
   > [!NOTE]
   > Ez a beállítás csak Windows 10 Mobile-eszközökre vonatkozik.
 
-#### <a name="encryption"></a>Titkosítás
+#### <a name="encryption"></a>Encryption
 - **Titkosítás megkövetelése mobileszközön:** Állítsa ezt a beállítást **Igen** értékre, ha elő szeretné írni, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz.
 
 ### <a name="device-health-settings"></a>Eszközállapot-beállítások
@@ -72,6 +76,9 @@ A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 é
   -  **BitLocker engedélyezve:** Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni az eszközön tárolt adatokat a jogosulatlan hozzáféréstől, amikor a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker meghajtótitkosítás a Windows operációs rendszer kötetén tárolt összes adatot titkosítja. A BitLocker a TPM-mel segíti elő a Windows operációs rendszer és a felhasználói adatok védelmét. A BitLocker segít továbbá abban, hogy ne lehessen illetéktelenül hozzáférni a számítógéphez akkor sem, ha az felügyelet nélkül van, elveszett vagy ellopták. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM használatával zárolja az adatok védelmét segítő a titkosítási kulcsokat. Ezért a kulcsok nem érhetők el addig, amíg a TPM nem ellenőrizte a számítógép állapotát.
   -  **Kódintegritás engedélyezve:** A kódintegritás olyan szolgáltatás, amely ellenőrzi az illesztőprogramok és a rendszerfájlok integritását, amikor betölti őket a memóriába. A kódintegritás észleli, ha aláíratlan illesztőprogramot vagy rendszerfájlt töltenek be a kernelbe. Azt is észleli, ha egy rendszerfájlt módosít egy olyan kártevő szoftver, amelyet rendszergazdai jogosultságokkal rendelkező felhasználói fiókkal futtatnak.
   - **Biztonságos rendszerindítás engedélyezve:** Ha a biztonságos rendszerindítás engedélyezve van, a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül a biztonságos rendszerindítás engedélyezése esetén a számítógép elindításához használt alapvető összetevőknek olyan megfelelő titkosítási aláírásokkal kell rendelkezniük, amelyeket az eszközt gyártó szervezet megbízhatónak tekint. Az UEFI belső vezérlőprogram ellenőrzi ezt, mielőtt engedélyezi a számítógép elindítását. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
+
+  > [!IMPORTANT]
+  > A Windows-eszközök nem támogatják az eszközállapot-igazolás részeként telepített külső **korai indítású kártevőirtó illesztőprogramokat** (ELAM).
 
   A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
@@ -89,7 +96,7 @@ A jelen szakaszban felsorolt beállítások Windows rendszerű számítógépek 
 
   Meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
 
-  A Microsoft-fiókkal elért eszközök esetében a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
+  A Microsoft-fiókkal elért eszközök esetében a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint&8; karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
 
 - **Jelszó kötelező típusa:** Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott.
 
@@ -103,7 +110,7 @@ A jelen szakaszban felsorolt beállítások Windows rendszerű számítógépek 
   -   Szimbólumok
   -   Számok     
 
-  Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszót kell létrehozniuk. A Microsoft-fiókkal elért eszközök esetében a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
+  Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszót kell létrehozniuk. A Microsoft-fiókkal elért eszközök esetében a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint&8; karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
 
 - **Jelszó kérése ennyi perc inaktivitás után:** Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott.
 
@@ -148,9 +155,4 @@ Beállíthat olyan szabályt, amely előírja, hogy a Windows 10-eszközöknek k
 
 - Windows 10-es számítógépeken a verziót a következőképpen kell beállítani: **10.0** + az operációs rendszernek a **winver** parancs által visszaadott buildszáma. Például: 10.0.10586.
 > ![Az operációs verzió buildszáma kiemelve „A Windows névjegye” párbeszédpanelen](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

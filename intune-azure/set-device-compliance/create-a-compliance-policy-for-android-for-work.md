@@ -1,5 +1,6 @@
 ---
-title: "Az Android for Work megfelelőségi szabályzatainak létrehozása | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Megfelelőségi szabályzat létrehozása Android for Work rendszerhez"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató Android for Work-eszközök megfelelőségi szabályzatának létrehozásához."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 48eaa3cbe1ff4e3fb18bfa762a341dbe74a7adce
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -41,16 +44,16 @@ Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelel
 | **Operációs rendszer maximális verziója** | Karanténba helyezve |
 | **Windows-állapotigazolás** |Nem alkalmazható |
 
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező lesz PIN-kódot beállítani.)+
+**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező PIN-kódot beállítani.)+
 
 **Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
 
 - A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portalon
+## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portal webhelyen
 
-1. Az **Intune** panelen válassza a **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehoz** lehetőséget.
+1. Az **Intune** panelen válassza az **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehozás** lehetőséget.
 2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
 3. A **Megfelelőségi követelmények** területen megadhatja a **Biztonság**, az **Eszközállapot** és az **Eszköztulajdonság** beállításait. Ha elkészült, válassza az **OK** lehetőséget.
 
@@ -65,10 +68,10 @@ Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelel
 
 Ha a megfelelőségi szabályzatot felhasználókhoz szeretné hozzárendelni, válasszon egy már konfigurált szabályzatot. A már létező szabályzatok a **Megfelelőségi szabályzatok** panelen találhatóak.
 
-1. Válassza ki a felhasználókhoz hozzárendelni kívánt szabályzatot, és válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik az a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-csoportokat**, és hozzárendelheti őket a szabályzathoz.
-2. Az Azure AD biztonság csoportokat megjelenítő panel megnyitásához válassza a **Csoportok kiválasztása** lehetőséget.  A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
+1. Válassza ki a felhasználókhoz hozzárendelni kívánt szabályzatot, és válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-beli biztonsági csoportokat**, és hozzárendelheti őket a szabályzathoz.
+2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához.  A **Kiválasztás** elemre kattintva telepítheti a szabályzatot a felhasználók számára.
 
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal érintett felhasználók által használt eszközök megfelelőségét ellenőrizni fogja a rendszer.
+Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
 
 <!--- ##  Compliance policy settings--->
 
@@ -86,7 +89,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
   - **Legalább alfanumerikus karakterek**
   - **Alfanumerikus karakterek és szimbólumok**
 - **Jelszó kérése ennyi perc inaktivitás után:** arra a tétlenségi időre vonatkozik, amelyen túl a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
+- **Jelszó érvényessége (napokban)**: Válassza ki, hogy hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
 - **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
 - **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer jelszó beírását kéri a végfelhasználótól a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
@@ -119,9 +122,4 @@ További információ: [az eszközök fenyegetések elleni védelmét szolgáló
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Ha Windows- vagy Windows Phone-eszközét regisztrálja az Intune-ban, a követk
 
 -   Elérheti a vállalat hálózatát, a saját levelezését és a munkájához szükséges fájlokat.
 
--   Letöltheti a vállalati alkalmazásokat a Vállalati portálról weboldaláról. (Windows 7 és Windows Vista esetében kizárólag a Vállalati portál weboldaláról tölthet le vállalati alkalmazásokat.)
+-   Letöltheti a vállalati alkalmazásokat a Vállalati portálról weboldaláról. (__Megjegyzés__: Windows 7 és Windows Vista esetében kizárólag a Céges portál webhelyről tölthet le vállalati alkalmazásokat.)
 
 -   Automatikusan konfigurálhatja vállalati vagy iskolai e-mail-fiókját.
 
@@ -67,6 +68,7 @@ Egy eszköz regisztrálásával jogosultságot ad a rendszergazdának a követke
 -  Az IT rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Mi történik az eszköz regisztrálása után nyolcóránként?
+
 A regisztrált eszközök megközelítőleg nyolcóránként elvégzik a következőket:
 
 -   Az IT rendszergazda által elérhetővé tett házirendek és alkalmazásfrissítések letöltése.
@@ -76,9 +78,4 @@ A regisztrált eszközök megközelítőleg nyolcóránként elvégzik a követk
 -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

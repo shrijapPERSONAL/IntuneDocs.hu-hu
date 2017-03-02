@@ -1,5 +1,6 @@
 ---
-title: "A helyszíni Exchange feltételes hozzáférési szabályzata | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Feltételes hozzáférési szabályzat helyszíni Exchange esetén"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan lehet feltételes hozzáférési szabályzatot konfigurálni a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz az Intune-nal."
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ A **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intune-ban r
   - Ha ezt a beállítást a hozzáférés letiltására állítja be, akkor a rendszer kezdetben azonnal megakadályoz minden eszközt a helyszíni Exchange elérésében.  A **Tartalmazott csoportokban** foglalt eszközök felhasználói viszont hozzáférést kapnak, ha az eszközük regisztrálva van az Intune-ban, és a kiértékeléskor megfelel a feltételeknek. A nem Samsung KNOX Standard rendszerű androidos eszközöket mindig letiltja, mert az ilyen eszközök nem támogatják ezt a beállítást.
 10. Válassza az **Eszközplatform-kivételek** terület **Hozzáadás** gombját a platformok megadásához. Ha a **Nem felügyelt eszközhozzáférés** beállítása **Letiltva**, a regisztrált és a feltételeknek megfelelő eszközök akkor is hozzáférést kapnak, ha a platformkivétel letiltja őket. Mentse a beállításokat az **OK** gombra kattintva.
 11. Mentse a feltételes hozzáférési szabályzatot a **Helyszíni** panel **Mentés** gombjára kattintva.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

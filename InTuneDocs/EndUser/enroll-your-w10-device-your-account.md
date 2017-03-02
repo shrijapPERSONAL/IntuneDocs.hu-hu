@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,30 +16,34 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 rendszerű eszköz regisztrálása az Intune-ban
 
-1.  Válassza a Windows **Gépház** területét, majd koppintson a **Fiókok** elemre.
+1.  Nyissa meg a Windows **Gépház** alkalmazást a **Start menü** **Gépház** gombját kiválasztva. Kereshet a „Gépház” kifejezésre is a keresősávban.
+
+2. Válassza a **Fiókok** elemet.
 
     ![Lépjen be a Beállítások és fiókok munkaterületre](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Koppintson a **Saját fiók** elemre.
+3. Válassza a **Saját fiók** elemet.
 
-    ![Koppintson a Saját fiók elemre](./media/W10-enroll-2-accounts-your-account.png)
+    ![Válassza a Saját fiók elemet](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Koppintson a **Munkahelyi vagy iskolai fiók beállítása** pontra.
+4. Válassza a **Munkahelyi vagy iskolai fiók beállítása** lehetőséget.
 
-    ![Koppintson a Munkahelyi vagy iskolai fiók beállítása pontra](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Válassza a Munkahelyi vagy iskolai fiók beállítása lehetőséget](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  Jelentkezzen be a munkahelyi vagy iskolai fiókjával.
+5. Jelentkezzen be a munkahelyi vagy iskolai fiókjával.
 
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
+    ![Jelentkezzen be](./media/W10-enroll-4-sign-in.png)
 
 Még mindig nem fér hozzá a munkahelyi vagy iskolai e-mailjeihez, fájljaihoz vagy egyéb adataihoz? Próbálja meg helyrehozni a hozzáférést a [fiókjával kapcsolatos hibák elhárításával](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Ha még mindig nem működik a hozzáférés, forduljon a rendszergazdához további segítségért.
 
@@ -47,16 +51,11 @@ A Céges portál alkalmazásban elérhető kapcsolattartási adatokon keresztül
 
 Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következő lépésekkel telepítheti.
 
-1.  Koppintson a **Start** &gt; **Áruház** parancsra.
+1. Válassza a **Start** > **Áruház** elemet.
 
-2.  Koppintson a **Keresés** elemre, majd írja be a **vállalati portál** kifejezést.
+2. Válassza a **Keresés** elemet, majd írja be a **céges portál** kifejezést.
 
-3.  Az eredmények listájában koppintson a **Vállalati portál** &gt; **Telepítés** lehetőségre.
+3. Az eredménylistában válassza a **Céges portál** > **Telepítés** elemet.
 
-4.  Koppintson a **Telepítés** vagy az **Ingyenes** lehetőségre. Ön számára nincs különbség a két lehetőség között, a választás attól függ, hogy a munkahelye hogyan állította be a Céges portál alkalmazást.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+4. Válassza a **Telepítés** vagy az **Ingyenes** lehetőséget. Ön számára nincs különbség a két lehetőség között, a választás attól függ, hogy a munkahelye hogyan állította be a Céges portál alkalmazást.
 

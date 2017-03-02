@@ -1,5 +1,6 @@
 ---
-title: "Mik azok az alkalmazásvédelmi szabályzatok? | Azure-beli Intune – előzetes | Microsoft Docs"
+title: "Mik azok az alkalmazásvédelmi szabályzatok?"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: ez a témakör azt ismerteti, hogyan védhetők a céges adatok a Microsoft Intune alkalmazásvédelmi szabályzataival."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -134,9 +137,4 @@ Minden Office-mobilalkalmazás támogatja a többszörös identitást.
 ##  <a name="next-steps"></a>További lépések
 
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése Microsoft Intune-ban](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

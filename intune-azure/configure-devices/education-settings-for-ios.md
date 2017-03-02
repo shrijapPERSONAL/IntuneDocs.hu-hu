@@ -1,5 +1,6 @@
 ---
-title: "Az Intune oktatási beállításainak konfigurálása iOS-eszközökhöz | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Az Intune oktatási beállításainak konfigurálása iOS rendszer esetén"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató az iOS-eszközök oktatási beállításainak kezeléséhez használható beállításokról."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 8d801c0b264e95348f55b1d4046c00e43ead5d10
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -43,9 +46,4 @@ ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
