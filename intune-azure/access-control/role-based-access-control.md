@@ -1,11 +1,12 @@
 ---
-title: "Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-hoz | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-hoz"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: megtudhatja, hogyan teszi lehetővé a szerepköralapú hozzáférés-vezérlés annak szabályozását, hogy ki hajthat végre műveletet és végezhet módosításokat."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -171,8 +174,3 @@ Amikor létrehoz egy egyéni biztonsági szerepkört, konfigurálhat egyet vagy 
 |**Törlés**|Törli a használati feltételek beállításait.|
 |**Olvasás**|A használati feltételek beállításainak elolvasása az Intune-portálon.|
 |**Frissítés**|A meglévő használati feltételek beállításainak frissítése.|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -1,5 +1,6 @@
 ---
-title: "IMEI-azonosítók felvétele az Intune-ba | Azure-beli Intune –előzetes | Microsoft Docs"
+title: "IMEI azonosítók hozzáadása az Intune-hoz"
+titleSuffix: Intune Azure preview
 description: "Azure-beli Intune –előzetes: Ez a témakör azt ismerteti, hogyan lehet céges azonosítókat (IMEI-számokat) felvenni a Microsoft Intune-ba. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -49,9 +52,4 @@ Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Céges készülékazonosítók** elemet.
 
 3. Válassza a **Törlés** elemet.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "Mobileszközök regisztrálásának előfeltételei | Microsoft Intune"
+title: "Mobileszközök regisztrálásának előfeltételei | Microsoft Docs"
 description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Mobileszköz-kezelés előfeltételei az Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A következő lépésekkel teheti lehetővé az alkalmazottak számára, hogy regisztrálják a mobileszközüket az Intune-ban. Ugyanezek a lépések szükségesek a vállalat tulajdonában lévő eszközök esetében is.
 
 |Lépések|Részletek|  
@@ -47,8 +52,7 @@ A mobileszközök regisztrációjának engedélyezése előtt feltétlenül vég
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
-> Alaposan fontolja meg, hogy a mobileszközöket csak az Intune használatával (online szolgáltatás), vagy a System Center Configuration Managerbe integrált Intune-nal szeretné-e kezelni (helyszíni szoftveres megoldás online szolgáltatással együtt). Miután beállította az MDM-szolgáltatót, ez már nem módosítható.
-
+> Alaposan fontolja meg, hogy a mobileszközöket csak az Intune használatával (online szolgáltatás), vagy a System Center Configuration Managerbe integrált Intune-nal szeretné-e kezelni (helyszíni szoftveres megoldás online szolgáltatással együtt). Miután a mobileszköz-kezelő szolgáltatót beállította, azt a Microsoft-ügyfélszolgálat segítsége nélkül már nem tudja módosítani. További utasításokért tekintse meg a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című részt.
 
 
 1.  A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) válassza a **Felügyelet** &gt; **Mobileszköz-kezelés** lehetőséget.
@@ -147,8 +151,63 @@ A regisztráció engedélyezését követően hozzáláthat ahhoz, hogy a kialak
 - [Alkalmazások felvétele](add-apps.md) és [alkalmazás telepítése](deploy-apps.md) a felügyelt eszközökre
 - [Eszközmegfelelőségi szabályzatok létrehozása](introduction-to-device-compliance-policies-in-microsoft-intune.md) és a [hozzáférés korlátozása a megfelelőség alapján](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?
 
+Ha nem a megfelelő MDM-szolgáltatót állította be, és szeretné azt megváltoztatni, kapcsolatba kell lépnie a Microsoft ügyfélszolgálatával. A beállítást egyedül nem fogja tudni megváltoztatni. Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, kérjük, tekintse át a következő információkat, amelyekből megtudhatja, hogy a Microsoft ügyfélszolgálatának milyen adatokra lesz szüksége a beállítás megváltoztatásához.
 
-<!--HONumber=Dec16_HO2-->
+Az MDM-szolgáltató beállítását&3; módon lehet alaphelyzetbe állítani. Ezek közül a támogatási kérelmében azt a módot kell kiválasztania, amelyik a helyzetére vonatkozik. Ha az adott körülményt nem találja a felsorolásban, tájékoztassa a Microsoft ügyfélszolgálatát.
 
+A Microsoft ügyfélszolgálata a következő információk megerősítésére fogja megkérni:
+
+- Bérlőazonosító: a szolgáltatásba való belépéshez használt tartomány (például intune.onmicrosoft.com)
+- Az MDM-szolgáltató neve, amelyre a beállítást változtatni szeretné
+- Továbbá meg kell erősítenie, hogy az alábbi előfeltételek közül melyeket teljesítette már
+
+Ha az Intune-t és az Office 365-öt szinkronizált módban használja, mind a két szolgáltatás ellenőrzőlistáját figyelembe kell vennie.
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Intune-ról a Configuration Managerre
+
+Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lépéseket használva állítsa alaphelyzetbe az MDM-szolgáltatót.
+
+- Vonja ki az összes eszközt az Intune felügyeleti konzolja segítségével. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. 
+- Törölje a szolgáltatások közötti összekötőt (a **Felügyelet** > **Mobileszköz-kezelés** > **Microsoft Exchange** oldalon), vagy állítsa le az Exchange-összekötőt, ha korábban azt állította be. 
+- Távolítsa el a Készülékregisztráció-kezelő szerepkört a **Felügyelet** > **Készülékregisztráció-kezelő** oldalon.
+- Kapcsolja ki az Eszközcsoport-leképezést a **Felügyelet** > **Mobileszköz-kezelés** > **Eszközcsoport-leképezés** oldalon.
+- Törölje a tesztcélú telepítési kulcsokat a **Felügyelet** > **Mobileszköz-kezelés** > **Windows** > **Tesztcélú telepítés kulcsai** oldalon.
+- Törölje az iOS APNs-tanúsítványt a **Felügyelet** > **Mobileszköz-kezelés** > **iOS** oldalon.
+- Törölje az iOS DEP-tokent a **Felügyelet** > **Mobileszköz-kezelés** > **iOS** oldalon.
+- Törölje az összes MDM-eszközre vonatkozó szabályzatot a **Szabályzat** > **Konfigurációs szabályzatok** oldalon.
+- Törölje az összes MDM-eszköz számára közzétett alkalmazást az **Alkalmazások** > **Felügyelt szoftver** oldalon.
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Mobileszköz-felügyeleti szolgáltató módosítása a Configuration Managerről az Intune-ra
+
+Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lépéseket használva állítsa alaphelyzetbe az MDM-szolgáltatót.
+
+- Vonja ki az összes mobileszközként felügyelt eszközt a Configuration Manager konzoljáról. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. 
+- Távolítsa el az összes felhasználót az Intune felhasználói csoportból. Jelöljön ki egy üres felhasználógyűjteményt az Intune-előfizetés számára, vagy távolítsa el az összes felhasználót a jelenleg megadott felhasználógyűjteményből.  Ellenőrizze a Cloudusersync.log naplófájlban, hogy az összes felhasználó el lett távolítva. 
+- Törölje a jelölést az iOS platform mellől az APNs-tanúsítvány eltávolításához.
+- Törölje az összes MDM-eszköz számára közzétett alkalmazást.
+- Törölje az összes MDM-eszközre vonatkozó szabályzatot. 
+- Távolítsa el a Windows Intune-összekötőt a Configuration Manager konzoljáról (csak az R2 SP1 és korábbi verziók esetén érvényes).
+Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre kattint, majd a **Törlést** választja.
+- Indítsa újra az SMS Executive szolgáltatást.
+- Biztosítson számunkra néhány fiktív felhasználói fiókot, amelyek segítségével a folyamat vége után ellenőrizhetjük, hogy a Configuration Manager-licencek eltávolítása megtörtént.
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Office 365-ről a Configuration Managerre
+
+1. Lépjen a [https://protection.office.com](https://protection.office.com) oldalra.
+2. Válassza a **Biztonsági házirendek** fület, majd az **Eszközkezelés** lehetőséget. 
+3. A **Szelektív törlés** segítségével vonja ki az összes eszközt. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. Ha a szelektív törlés nincsen engedélyezve, nincs szükség további műveletre.
+4. Válassza a **Biztonsági házirendek** fület, majd az **Eszközbiztonsági házirendek** lehetőséget. 
+5. Válassza a **Törlést** mindegyik házirend esetében. Ha a házirendek függő állapotban vannak nincs szükség további műveletre.
+
+>[!NOTE]
+>Az iOS APNs-tanúsítványt nem lehet törölni, így az továbbra is a fiókhoz rendelve marad. 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>Az MDM-szolgáltató alaphelyzetbe állításának további lépései
+
+Miután a Microsoft ügyfélszolgálata ellenőrizte a vonatkozó ellenőrzőlista állapotát, az MDM-szolgáltató alaphelyzetbe állítása legfeljebb három munkanapot vehet igénybe, de általában egy napon belül megtörténik. 
+
+>[!IMPORTANT]
+>Előfizetését ne próbálja meg módosítani addig, amíg a Microsoft ügyfélszolgálata meg nem erősíti, hogy az alaphelyzetbe állítás sikeresen megtörtént! Az idő előtti konfigurációs változtatások adatsérülést okozhatnak és azt eredményezhetik, hogy nem fogja tudni használni az Intune szolgáltatást. 
 

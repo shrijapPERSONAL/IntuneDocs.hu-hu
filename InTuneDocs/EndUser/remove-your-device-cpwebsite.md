@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: f557aab61a61bde8937d72c99ccf652787170002
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,19 @@ Ha úgy dönt, hogy az eszköz a vállalat vagy szervezet által végzett felüg
 
 Az eszköz eltávolítása:
 
-1.  A [Vállalati portál webhelyen](http://portal.manage.microsoft.com) koppintson annak az eszköznek a nevére, amelyet el szeretne távolítani.
+1.    A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
-2.  Koppintson az **Eltávolítás** lehetőségre.
+  ![Képernyőkép a Céges portál webhelyéről, amelyen bal oldalt egy kibontott menü látható Kezdőlap, Minden Alkalmazás, Saját eszközök, Segélyszolgálat és Kijelentkezés gombokkal.](/media/iwp-expanded-sidebar.png)
 
-    ![Eszköz eltávolítása a Vállalati portál webhelyén](./media/iwp-screen-with-all-options.png)
+2. A __Saját eszközök__ oldalon válassza ki az eltávolítani kívánt eszköz nevét.
 
-3. Olvassa el a figyelmeztető üzenetet, és koppintson az **Eltávolítás** lehetőségre az eszköz Vállalati portálról való eltávolításához.
+    ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.    Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Eltávolítás** gombra.
+
+      ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+
+4. Olvassa el a figyelmeztető üzenetet, és koppintson az **Eltávolítás** lehetőségre az eszköz Vállalati portálról való eltávolításához.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

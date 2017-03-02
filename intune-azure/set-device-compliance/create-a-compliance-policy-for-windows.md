@@ -1,5 +1,6 @@
 ---
-title: "Windowsos megfelelőségi szabályzatok létrehozása | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Megfelelőségi szabályzat létrehozása Windows rendszerhez"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató a windowsos eszközök megfelelőségi szabályzatainak létrehozásához."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 58ed00fe7070d81d9d64c70ff7ffe9854c05eac9
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a50f4abea58a39b18347d03bb1553856d592c93
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -191,9 +194,4 @@ Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb 
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "Megfelelőségi szabályzat létrehozása Android esetén | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Megfelelőségi szabályzat létrehozása Android rendszerhez"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató Android-eszközök megfelelőségi szabályzatának létrehozásához."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 16308e61986a4354181b8b0eeace012d65769c66
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -25,7 +28,7 @@ ms.openlocfilehash: 16308e61986a4354181b8b0eeace012d65769c66
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Megfelelőségi szabályzat minden platformhoz külön készül.  Megfelelőségi szabályzat az Azure Portalon hozható létre. A megfelelőségi szabályzatokról további információt talál a [Mi az eszközmegfelelőség?](what-is-device-compliance.md) című témakörben. Az [Első lépések az eszközmegfelelőséghez](get-started-with-device-compliance.md) című témakörből megtudhatja, milyen előfeltételeket kell teljesíteni a megfelelőségi szabályzatok létrehozása előtt.
+Megfelelőségi szabályzat minden platformhoz külön készül.  Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](what-is-device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről a [Get started with device compliance](get-started-with-device-compliance.md) (Az eszközmegfelelőség használatának első lépései) című témakörben találhat további információt.
 
 Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -44,14 +47,14 @@ Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelel
 --------------------------
 
 
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező lesz PIN-kódot beállítani.)+
+**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező PIN-kódot beállítani.)+
 
-**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:+
+**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) A rendszer a következő műveleteket hajtja végre, ha az eszköz nem megfelelő:+
 
 - A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portalon
+## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portal webhelyen
 
 1. Az **Intune** panelen válassza a **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehozás** lehetőséget.
 2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
@@ -66,12 +69,12 @@ Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelel
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
-Ha a megfelelőségi szabályzatot felhasználókhoz szeretné hozzárendelni, válasszon egy már konfigurált szabályzatot. A meglévő szabályzatok a **Megfelelőségi szabályzatok** panelen találhatók.
+A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatok a **Megfelelőségi szabályzatok** panelen találhatók.
 
 1. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik az a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-csoportokat**, és hozzárendelheti őket a szabályzathoz.
 2. Az Azure AD biztonság csoportokat megjelenítő panel megnyitásához válassza a **Csoportok kiválasztása** lehetőséget. Itt találhatóak az Azure Active Directory biztonsági csoportjai.  Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
 
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal érintett felhasználók által használt eszközök megfelelőségét ellenőrizni fogja a rendszer.
+Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
 
 <!---##  Compliance policy settings--->
 
@@ -126,9 +129,4 @@ További információ: [az eszközök fenyegetések elleni védelmét szolgáló
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
