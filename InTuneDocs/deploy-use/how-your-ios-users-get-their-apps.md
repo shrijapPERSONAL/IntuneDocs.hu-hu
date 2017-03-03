@@ -1,5 +1,5 @@
 ---
-title: "iOS-felhasználói alkalmazások letöltése | Microsoft Intune"
+title: "iOS-felhasználói alkalmazások letöltése | Microsoft Docs"
 description: "Módszerek az iOS-alkalmazások elérhetővé tételére végfelhasználók számára"
 keywords: 
 author: barlanmsft
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
 # <a name="how-your-ios-users-get-their-apps"></a>iOS-felhasználói alkalmazások letöltése
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör ismerteti, hogy végfelhasználói hol és hogyan juthatnak hozzá a Microsoft Intune-ban elérhetővé tett alkalmazásokhoz.
 
@@ -52,9 +56,4 @@ Az alkalmazások felvételéről és ezeken a csempéken való megjelenítésér
 [Android-felhasználói alkalmazások letöltése](how-your-android-users-get-their-apps.md)
 
 [Windows-felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

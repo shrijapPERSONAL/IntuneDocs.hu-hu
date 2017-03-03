@@ -1,5 +1,5 @@
 ---
-title: "A regisztrált eszközök áttekintése a leltárfunkcióval | Microsoft Intune"
+title: "A regisztrált eszközök áttekintése a leltárfunkcióval | Microsoft Docs"
 description: "Az Intune segítségével megtekintheti a felügyelt eszközök hardverinformációit."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune leltárfunkcióját használva leltár készíthető a regisztrált eszközökről, illetve az Intune ügyfélszoftvert futtató Windows-számítógépekről.
 Az Intune általában 7 naponta készít leltárt a felügyelt eszközökről. Emiatt előfordulhat, hogy a jelentésekben késve jelenik meg az eszközök nemrégiben történt módosítása, pl. egy eszköz átnevezése vagy a szabad tárhelye mennyiségének változása.
 
@@ -113,9 +118,4 @@ A windowsos számítógépek által összegyűjtött leltáradatok megtekintés�
 ### See Also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 -->
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

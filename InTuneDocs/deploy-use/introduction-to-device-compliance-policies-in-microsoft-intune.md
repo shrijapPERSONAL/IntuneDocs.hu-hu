@@ -1,5 +1,5 @@
 ---
-title: "Eszközmegfelelőségi szabályzatok | Microsoft Intune"
+title: "Eszközmegfelelőségi szabályzatok | Microsoft Docs"
 description: "Ez a témakör az eszközmegfelelőségi szabályzatokat és működésüket ismerteti."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Eszközmegfelelőségi szabályzatok a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>Mi a megfelelőségi szabályzat?
 A vállalati adatok védelme érdekében gondoskodnia kell arról, hogy a vállalati alkalmazások és adatok elérésére használt eszközök megfeleljenek bizonyos szabályoknak. Ilyen szabály lehet például, hogy PIN-kódot kell használni az eszközök eléréséhez, és titkosítani kell az eszközökön tárolt adatokat. Az ilyen szabályok összességét megfelelőségi szabályzatnak nevezzük.
 
@@ -63,9 +68,4 @@ A következő táblázat felsorolja, hogy milyen típusú eszközökre lehet meg
 
 ### <a name="see-also"></a>További információ
 [Az e-mailek és az O365-szolgáltatások elérésének korlátozása](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

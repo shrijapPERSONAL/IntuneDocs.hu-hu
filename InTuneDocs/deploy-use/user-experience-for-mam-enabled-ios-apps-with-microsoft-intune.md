@@ -1,11 +1,11 @@
 ---
-title: "iOS-alkalmazások felügyelete MAM-szabályzatokkal | Microsoft Intune"
+title: "iOS-alkalmazások felügyelete MAM-szabályzatokkal | Microsoft Docs"
 description: "Ez a témakör bemutatja, mire számítson, ha iOS-alkalmazását mobilalkalmazás-felügyeleti szabályzatok felügyelik."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,29 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>Mi várható az iOS-alkalmazás MAM-szabályzatok általi kezelésekor
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Ez a témakör a mobilalkalmazás-felügyeleti szabályzatokat használó alkalmazásokkal kapcsolatos felhasználói élményt ismerteti. A MAM-szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkahelyi környezetben használják: például amikor egy munkahelyi fiókkal fér hozzá az alkalmazásokhoz, vagy a vállalata OneDrive vállalati helyén tárolt fájlokhoz fér hozzá.
 
 ##  <a name="access-apps"></a>Alkalmazások elérése
 
-Ha az eszköz **nincs regisztrálva az Intune-ban**, a rendszer az alkalmazás első használatakor felkéri a felhasználót, hogy indítsa újra az alkalmazást.  Az újraindítás azért szükséges, hogy a rendszer alkalmazni tudja a MAM-szabályzatokat. Az alábbi képernyőképen azt láthatja, hogy a Skype alkalmazás újraindítást kér:
+Ha az eszköz **nincs regisztrálva az Intune-ban**, a rendszer az alkalmazás első használatakor felkéri a felhasználót, hogy indítsa újra az alkalmazást.  Az újraindítás azért szükséges, hogy a rendszer alkalmazni tudja a MAM-szabályzatokat. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Az iOS-eszköz a PIN-kódot kérő felületét bemutató képernyőkép](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Az **Intune-felügyeletre regisztrált** eszközöknél üzenet jelenik meg, amely tájékoztatja a felhasználót, hogy az alkalmazás mostantól felügyelet alatt áll:
 
@@ -36,7 +43,7 @@ Az **Intune-felügyeletre regisztrált** eszközöknél üzenet jelenik meg, ame
 
 ##  <a name="use-apps-with-multi-identity-support"></a>A többszörös identitást támogató alkalmazások használata
 
-A MAM-szabályzatokat a rendszer csak a munkahelyi használat esetén alkalmazza. Ez azt jelenti, hogy az alkalmazás eltérő módon működik, attól függően, hogy munkahelyi vagy személyes célokra használják.
+A MAM-szabályzatokat a rendszer csak a munkahelyi használat esetén alkalmazza. Ez azt jelenti, hogy az alkalmazás eltérő módon működhet, attól függően, hogy munkahelyi vagy személyes célokra használják.
 
  Például a munkahelyi adatok elérésekor a felhasználónak PIN-kódot kell megadnia. Az **Outlook alkalmazás** esetében a felhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazás** esetében a felhasználónak a munkahelyi fiók beírásakor kell megadnia a PIN-kódot.  A Microsoft **Word**, a **PowerPoint** és az **Excel** esetében a felhasználónak akkor kell megadnia a PIN-kódot, ha a vállalat OneDrive vállalati helyén tárolt dokumentumhoz szeretne hozzáférni.
 
@@ -65,9 +72,4 @@ Ha iOS-eszközt használ, és egy második munkahelyi fiókot szeretne felvenni 
 [Mi várható az Android-alkalmazás MAM-szabályzatok általi kezelésekor](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### <a name="see-also"></a>További információ
 [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

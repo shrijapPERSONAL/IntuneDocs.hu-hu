@@ -1,5 +1,5 @@
 ---
-title: "Android-felhasználói alkalmazások letöltése | Microsoft Intune"
+title: "Android-felhasználói alkalmazások letöltése | Microsoft Docs"
 description: "Módszerek az Android-alkalmazások elérhetővé tételére végfelhasználók számára"
 keywords: 
 author: barlanmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör ismerteti, hogy az androidos végfelhasználók hol és hogyan juthatnak hozzá a Microsoft Intune-ban elérhetővé tett alkalmazásokhoz. Az ebben foglalt információk a különböző típusú eszközök (androidos natív vagy Samsung Knox Standard-eszközök) esetén eltérőek lehetnek.
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Natív (Samsung Knox Standard) androidos eszközök
@@ -50,9 +55,4 @@ Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az
 [iOS-felhasználói alkalmazások letöltése](how-your-ios-users-get-their-apps.md)
 
 [Windows-felhasználói alkalmazások letöltése](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

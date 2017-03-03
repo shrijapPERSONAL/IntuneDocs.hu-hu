@@ -1,11 +1,11 @@
 ---
-title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez | Microsoft Intune"
-description: "Végfelhasználói és rendszergazdai lépések a Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához."
+title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez | Microsoft Docs"
+description: "Végfelhasználói és rendszergazdai lépések a PC-ként felügyelt Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,20 @@ ms.technology:
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
 
-A Microsoft Intune a külön megvásárolható [TeamViewer](https://www.teamviewer.com) szoftver segítségével képes lehetővé tenni, hogy távsegítséget nyújtson az Intune-szoftverügyfelet futtató felhasználóinak. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást. Ez a funkció az Intune jelenlegi Windows Távsegítség szolgáltatását cseréli le.
+A jelen témakörben ismertetett információk csak azokra a PC-ként felügyelt Windows-számítógépekre vonatkoznak, amelyeket az Intune szoftverügyfél segítségével felügyel.
+
+Az Intune a külön megvásárolható [TeamViewer](https://www.teamviewer.com) szoftver segítségével képes lehetővé tenni, hogy távsegítséget nyújtson az Intune-szoftverügyfelet futtató felhasználóinak. Önt riasztás értesíti róla, ha egy felhasználó segítséget kér a Microsoft Intune Centeren keresztül. Ekkor elfogadhatja a kérést, és biztosíthatja a szükséges támogatást. Ez a funkció az Intune jelenlegi Windows Távsegítség szolgáltatását cseréli le.
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -30,7 +34,7 @@ A Microsoft Intune a külön megvásárolható [TeamViewer](https://www.teamview
 Ahhoz, hogy a távsegítség funkcióval támogatást biztosíthasson az azt kérő felhasználóknak, teljesítenie kell a következő előfeltételeket:
 
 - [Regisztrálnia kell egy TeamViewer-fiókot](https://login.teamviewer.com/LogOn#register), hogy be tudjon jelentkezni a TeamViewer weboldalára.
-- A kezelni kívánt Windows-számítógépeket [a Windows rendszerű számítógépügyfélnek kell felügyelnie](manage-windows-pcs-with-microsoft-intune.md).
+- A kezelni kívánt Windows-számítógépeket [a Windows rendszerű szoftverügyfélnek kell felügyelnie](manage-windows-pcs-with-microsoft-intune.md)
 - Az Intune által támogatott bármely számítógépes Windows operációs rendszer támogatható.
 
 ## <a name="configure-the-teamviewer-connector"></a>A TeamViewer-összekötő konfigurálása
@@ -82,8 +86,3 @@ Amikor hibák megoldásán dolgozik, elképzelhető, hogy időről időre távol
 ### <a name="see-also"></a>További információ
 
 [A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Nov16_HO4-->
-
-

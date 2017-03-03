@@ -1,11 +1,11 @@
 ---
-title: "A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával | Microsoft Intune"
+title: "A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával | Microsoft Docs"
 description: "Ismerteti a Windows rendszerű számítógép-kezelési szabályzatokat és a Microsoft Intune Center beállításait."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,18 @@ ms.technology:
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával
 
-Az Intune-szoftverügyfelet futtató Windows rendszerű számítógépek az Intune **Számítógép-kezelési** szabályzatai segítségével felügyelhetők. Az Intune **Számítógép-kezelési** szabályzatai használatával konfigurálhatja a Microsoft Intune Center beállításait, irányíthatja a számítógépek frissítését, és konfigurálhatja a számítógépek Windows tűzfalát.
+Ha a Windows rendszerű számítógépeket a rájuk telepített Intune szoftverügyféllel szeretné kezelni, akkor az Intune felügyeleti konzolján csak a **Számítógép-kezelés** területen lévő szabályzatokat használhatja. A felügyeleti konzolon felsorolt összes többi szabályzat csak mobileszközökön léptethető érvénybe. A **Számítógép-kezelés** szabályzatainak használatával konfigurálhatja a Microsoft Intune Center beállításait, irányíthatja a számítógépek frissítését, és konfigurálhatja a számítógépek Windows tűzfalát.
 
 ![Szabályzatsablon Windows rendszerű számítógépekhez](../media/pc_policy_template.png)
 
@@ -60,9 +62,4 @@ A Windows rendszerű számítógépekre vonatkozóan konfigurált szabályzatokr
 ### <a name="see-also"></a>További információ
 
 [A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

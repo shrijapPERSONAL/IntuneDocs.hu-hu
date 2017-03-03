@@ -1,5 +1,5 @@
 ---
-title: "Windows-eszköz titkosítása | Microsoft Intune"
+title: "Windows-eszköz titkosítása | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: a3cf36eae0342d2047910d1a7ca0da2acb7d2ae6
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -32,9 +36,4 @@ Asztali eszköz esetén kövesse az alábbi utasításokat a titkosításhoz.
 2.  Kattintson a **BitLocker szolgáltatás bekapcsolása** hivatkozásra, és kövesse az utasításokat az összes meghajtó titkosításához.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

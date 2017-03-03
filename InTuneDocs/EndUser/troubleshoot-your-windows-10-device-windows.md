@@ -1,5 +1,5 @@
 ---
-title: "Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Intune"
+title: "Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -55,9 +59,4 @@ Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi va
 - Ha nem látja saját munkahelyi vagy iskolai fiókját, koppintson a **Csatlakozás** elemre, majd jelentkezzen be munkahelyi vagy iskolai hitelesítő adataival.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

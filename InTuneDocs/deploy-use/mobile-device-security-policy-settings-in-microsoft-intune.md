@@ -1,5 +1,5 @@
 ---
-title: "Mobileszközök biztonsági házirendjének beállításai | Microsoft Intune"
+title: "Mobileszközök biztonsági házirendjének beállításai | Microsoft Docs"
 description: "Az Intune használatával konfigurálhatja azokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni."
 keywords: 
 author: robstackmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > A Microsoft Intune most már külön konfigurációs szabályzatokat biztosít a különböző eszközplatformokhoz. Ezek a szabályzatok a felhasználható legfrissebb beállításokat tartalmazzák. Továbbra is használhatja a mobileszköz-biztonsági szabályzatot, és a meglévő telepítések továbbra is működni fognak. Mindazonáltal fel kell készülnie az új konfigurációs szabályzatokra való mielőbbi áttérésre, mivel a későbbiekben el lesz távolítva a mobileszköz-biztonsági szabályzat.
 
@@ -53,7 +58,7 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 |**Jelszó minimális hossza**|Igen|Igen|Igen|Igen|Igen|
 |**Egyszerű jelszavak engedélyezése**<br /><br />Egyszerű jelszó például a „0000” és az „1234”.|Nem|Nem|Igen|Igen|Nem|
 |**Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről**|Igen|Igen|Igen|Igen|Igen|
-|**Képernyő kikapcsolása ennyi perc inaktivitás után**1|Igen|Igen|Igen|Igen|Igen|
+|**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Igen|Igen|Igen|Igen|Igen|
 |**Jelszó érvényessége (nap)**|Igen|Igen|Igen|Igen|Igen|
 |**Korábbi jelszavak megjegyzése**|Igen|Igen|Igen|Igen|Igen|
 |**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Igen|Igen|Igen|Igen|Igen|
@@ -61,7 +66,7 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 |**Képjelszó és PIN-kód engedélyezése**|Igen|Igen|Nem|Nem|Nem|
 |**Jelszó kérése ennyi perc inaktivitás után**|Nem|Nem|Nem|Igen|Nem|
 |**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Nem|Nem|Nem|iOS 7 és újabb verziók|Nem|
-1 Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, egymás után alkalmazza őket a rendszer. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
+<sup>1</sup>Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, egymás után alkalmazza őket a rendszer. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra vonatkozó szabályzatot, a rendszer a felhasználókat a jelszavuk módosítására kényszeríti, még akkor is, ha az aktuális jelszó megfelel a szabályzat követelményeinek.
 
@@ -69,9 +74,9 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Titkosítás megkövetelése mobileszközön**1<br /><br />A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|Igen|Nem|Igen|Nem|Igen|
+|**Titkosítás megkövetelése mobileszközön**<sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|Igen|Nem|Igen|Nem|Igen|
 |**Titkosítás megkövetelése tárolókártyákon**<br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre <br />Az alkalmazások és a kapcsolódó adatok titkosítása automatikusan megtörténik.|nem áll rendelkezésre|Igen|
-1További információ a Windows 8.1 rendszerű eszközökkel kapcsolatban:
+<sup>1</sup>További információ a Windows 8.1 rendszerű eszközökkel kapcsolatban:
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](http://support.microsoft.com/kb/3013816) .
 
@@ -105,7 +110,7 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 |**Gyári beállítások visszaállításának engedélyezése**|Nem|Nem|Nem|Nem|Igen (csak Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Felhőbeállítások – dokumentumok és adatok
+## <a name="cloud-settings--documents-and-data"></a>Felhőbeállítások – dokumentumok és adatok
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +121,7 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 |**Munkahelyi mappák URL-címe**<br /><br />Ez a beállítás adja meg munkahelyi mappa URL-címét, hogy lehetővé tegye a dokumentumok szinkronizálását az eszközök között.|Igen|Nem|Nem|Nem|Nem|
 |**Google-fiók biztonsági mentésének engedélyezése**|Nem|Nem|Nem|Nem|Igen (csak Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Felhőbeállítások – fiókok és szinkronizálás
+## <a name="cloud-settings--accounts-and-synchronization"></a>Felhőbeállítások – fiókok és szinkronizálás
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +132,7 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 
 |Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**E-mail-mellékletek letöltésének engedélyezése a felhasználók számára**1|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
+|**E-mail-mellékletek letöltésének engedélyezése a felhasználók számára**<sup>1</sup>|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
 |**E-mail-szinkronizálási időszak** <br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
 |**Engedélyezi az e beállításokat teljes mértékben nem támogató mobileszközök számára az Exchange felé történő szinkronizálást (Exchange ActiveSync)** <br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre|
 |**A Microsoft-fiók használata nem kötelező a Windows Mail alkalmazásban**|Igen|Nem|Nem|Nem|Nem|
@@ -211,9 +216,4 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

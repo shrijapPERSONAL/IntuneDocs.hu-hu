@@ -1,11 +1,11 @@
 ---
-title: "Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal | Microsoft Intune"
+title: "Csoportok használata felhasználók és eszközök kezelésére | Microsoft Docs"
 description: "Csoportok létrehozása és kezelése a Csoportok munkaterület használatával."
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,79 +13,29 @@ ms.technology:
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.lasthandoff: 12/15/2016
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-ban
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör ismerteti, hogy hogyan lehet csoportokat létrehozni az Intune-ban. Azt is megtudhatja belőle, hogy hogyan változik majd a csoportok kezelése az elkövetkező hónapok során. 
 
 >[!IMPORTANT]
 >
->Ha az Intune-portál Csoportok munkaterületét megnyitva megjelenik egy hivatkozás, amely az Azure Active Directory (Azure AD) portálra mutat, akkor ön már az Intune *új* Azure AD biztonságicsoport-alapú csoportkezelését használja, amelynek ismertetése az [Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) című részben található. Kattintson az Azure AD-portálra mutató hivatkozásra.
+>Ha az Intune-portál Csoportok munkaterületét megnyitva megjelenik egy hivatkozás, amely az Azure Active Directory (Azure AD) portálra mutat, akkor ön az *új* Azure AD biztonságicsoport-alapú csoportkezelését használja az Intune-ban, amelynek ismertetése a [Csoportok áttelepítése az Azure Active Directoryba](migrating-groups-to-azure-active-directory.md) című részben található. Kattintson az Azure AD-portálra mutató hivatkozásra.
 >
 >![Képernyőkép az Azure csoportfelügyeletre mutató hivatkozásról](../media/groups-link-azure.png) 
 >
 >Ha nem látja az Azure AD-portálra mutató hivatkozást, akkor Ön még a *jelenlegi* csoportkezelési módszert használja, amelynek leírása a jelen témakör [Csoportok létrehozása a felhasználók és eszközök kezeléséhez a Microsoft Intune-nal](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) című részében található.
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>Értesítés a csoportkezeléssel kapcsolatos rendszergazdai feladatok fejlesztéséről
-
-Önök a tudomásunkra hozták, hogy a nagyvállalati mobilitás és biztonság területe egészén egységes csoportosítást és célcsoport-kezelést szeretnének. Mi pedig hallgattunk Önökre. Visszajelzéseik alapján hamarosan Azure Active Directory-alapú biztonsági csoportokká alakítjuk át az Intune-csoportokat. Ez a változás egységesíti a csoportfelügyeletet az Intune és az Azure Active Directory (Azure AD) egészében. Ez annyit jelent, hogy a jövőben nem kell csoportokat duplikálniuk a különböző szolgáltatásokhoz. A Windows PowerShell és a Microsoft Graph alkalmazásának lehetősége egyúttal bővíthetőséget biztosít.
-
-### <a name="how-does-this-affect-me-right-now"></a>Hogyan érint ez engem jelen pillanatban?
-Az Intune-ügyfeleket most nem érinti a változás. A jövőben azonban:
-
--   Az új fiókok az Azure AD biztonsági csoportjait fogják használni az Intune *felhasználói* csoportjai helyett.   
--   2016 novemberétől a havi szolgáltatásverzió kiadása után létesített új fiókok a felhasználó- és az eszközalapú csoportokat is az Azure AD-portálon kezelik majd. A meglévő ügyfelekre ez nem lesz hatással.
--   2016 decemberében az Intune-termékcsapat megkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A jelenleg az Intune-ban lévő felhasználó- és eszközcsoportok mindegyikét Azure AD-alapú biztonsági csoportokba telepítjük át. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Hogyan és mikor kerülök át az új csoportkezelési rendszerbe?
-Az aktuális Intune-ügyfelek áttelepítését fokozatosan végezzük. Az áttelepítés ütemezését jelenleg véglegesítjük, és néhány héten belül további információkkal frissítjük ezt a témakört. Az áttelepítés előtt értesíteni fogjuk. Ha bármilyen kérdése vagy problémája van a migrálással kapcsolatban, kérjük, forduljon a migrálási csapathoz a következő címen: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). A csoportok áttelepítéséről a [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) (Csoportok áttelepítése az Azure Active Directoryba) című cikk nyújt tájékoztatást.
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>Mi történik a meglévő felhasználó- és eszközcsoportjaimmal?
- Az Intune-ban létrehozott felhasználói csoportokat és eszközcsoportokat Azure AD biztonsági csoportokba telepítjük át. Az olyan alapértelmezett Intune-csoportokat, mint a Minden felhasználó, csak akkor telepítjük át, ha az áttelepítés időpontjában üzemelő példányokban használják őket. Bizonyos csoportok esetében az áttelepítés összetettebb művelet lehet. Értesíteni fogjuk, ha szervezetében az áttelepítéshez további lépésekre van szükség.
-
-### <a name="what-new-features-will-be-available-to-me"></a>Milyen új funkciókat érhetek el?
-Az Intune-ról Azure Active Directoryra való áttérés nyomán a következő új funkciók válnak elérhetővé:
-
--    Az Intune minden telepítéstípus esetében támogatni fogja az Azure AD-alapú biztonsági csoportokat.
--    Az Azure AD-alapú biztonsági csoportok támogatni fogják az eszközök és a felhasználók csoportosítását.
--    Az Azure AD-alapú biztonsági csoportok támogatni fogják az Intune-eszközattribútumokkal rendelkező dinamikus csoportokat. Például lehetséges lesz platform (például iOS) alapján dinamikusan csoportosítani az eszközöket. Amikor új iOS-eszközt regisztrálnak a szervezetnél, az automatikusan hozzáadódik az iOS dinamikus eszközcsoporthoz.
--    A csoportfelügyelet egységes lesz az Azure AD-ben és az Intune-ban.
-- Az Azure AD-be bekerül az Intune-szolgáltatásadminisztrátor szerepkör, így az Intune szolgáltatásadminisztrátorai az Azure AD-ben is végrehajthatnak csoportfelügyeleti feladatokat.
-
-### <a name="what-intune-functionality-wont-be-available"></a>Mely Intune-funkciók nem lesznek elérhetők?
-Jóllehet a csoportokkal kapcsolatos felhasználói élmény javulni fog, vannak bizonyos olyan Intune-funkciók, amelyek a szervezet Intune-csoportokról Azure AD biztonsági csoportokra történő áttérését követően nem lesznek elérhetők.
-
-#### <a name="group-management-functionality"></a>Csoportfelügyeleti funkciók
-
--   Az áttelepítés után új csoport létrehozásakor nem lesz lehetséges tagok vagy csoportok kizárása. Ugyanakkor az Azure AD dinamikus csoportok esetében attribútumok segítségével létrehozhatók olyan speciális szabályok, amellyel lehetséges tagok kizárása valamely csoportból meghatározott feltételek alapján.
--   A Nem csoportosított felhasználók és a Nem csoportosított eszközök csoportjainak támogatása megszűnik. Ezeket a csoportokat nem fogjuk áttelepíteni az Intune-ból az Azure AD-be.
-
-
-#### <a name="group-dependent-functionality"></a>Csoportfüggő funkciók
-
--   A Szolgáltatásadminisztrátor szerepkör nem rendelkezik majd **Csoportok kezelése** engedéllyel.
--   Az Exchange ActiveSync-eszközök nem lesznek csoportosíthatók. A Minden EAS által kezelt eszköz csoport csoportnézetből jelentésnézetté alakul.
--  A jelentésekben nem lesz elérhető a csoportok alapján történő kimutatás.
--  Az értesítési szabályok egyedi csoportcélzási lehetősége megszűnik.
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
- A következőket ajánljuk a zökkenőmentes átállás érdekében:
-
-- A migrálás előtt töröljön minden olyan Intune-csoportot, amelyre nincs szüksége.
-- Vizsgálja felül a csoportokból való kizárás eddigi használatát, és próbálja meg úgy átalakítani a csoportokat, hogy a jövőben ne legyen szüksége erre a funkcióra.
--  Ha vannak olyan rendszergazdák, akik számára nem engedélyezett csoportok létrehozása az Azure AD-ben, kérje meg Azure AD-rendszergazdáját, hogy adja hozzá őket az Intune-szolgáltatásadminisztrátor Azure AD-szerepkörhöz.
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>Csoportok létrehozása felhasználók és eszközök kezelésére a Microsoft Intune-nal
-
-Ez a szakasz azt ismerteti, hogy hogyan hozhat létre Intune-csoportokat az Intune felügyeleti konzolján.
+Ez a témakör azt ismerteti, hogy hogyan hozhat létre Intune-csoportokat az Intune felügyeleti konzolján.
 
 Csoportok létrehozásához és kezeléséhez lépjen a **Csoportok** munkaterületre a Microsoft Intune felügyeleti konzolon. A **Csoportok áttekintése** oldalon olyan állapotösszegzések láthatók, amelyek segíthetnek az intézkedést igénylő problémák azonosításában és rangsorolásában. Az állapotösszegzések a következő területeket fedik le:
 
@@ -108,7 +58,7 @@ A csoporthierarchia is megjelenít állapotösszegzéseket, amelyek segítenek a
 >
 > Valahányszor korlátozó szabályzatot hoz létre, arról értesíteni kell a felhasználókat. A felesleges kommunikáció csökkentése érdekében az általánosabb csoportok és szabályzatok létrehozása után különösen ügyeljen a kisebb csoportok létrehozására.
 
-### <a name="to-create-a-device-group"></a>Eszközcsoport létrehozása
+## <a name="to-create-a-device-group"></a>Eszközcsoport létrehozása
 
 1.  Az Intune felügyeleti konzolján kattintson a **Csoportok** &gt; **Áttekintés** &gt; **Csoport létrehozása** elemre.
 
@@ -128,7 +78,7 @@ A csoporthierarchia is megjelenít állapotösszegzéseket, amelyek segítenek a
 
 Az újonnan létrehozott csoport megjelenik a **Csoportok** munkaterület **Csoportok** listáján, a szülőcsoport alatt. Ugyanitt szerkesztheti és törölheti is a csoportot.
 
-### <a name="to-create-a-user-group"></a>Felhasználói csoport létrehozása
+## <a name="to-create-a-user-group"></a>Felhasználói csoport létrehozása
 
 1.  Az Intune felügyeleti konzolján kattintson a **Csoportok** &gt; **Áttekintés** &gt; **Csoport létrehozása** elemre.
 
@@ -202,9 +152,4 @@ Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**
 
 > [!NOTE]
 > Ne feledje, hogy ha két különböző korlátozási szintű szabályzat vonatkozik egy eszközre vagy felhasználóra, akkor a gyakorlatban a szigorúbb szabályzat lesz érvényes.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

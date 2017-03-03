@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi használata előmegosztott kulccsal | Microsoft Intune"
+title: "Wi-Fi használata előmegosztott kulccsal | Microsoft Docs"
 description: "Wi-Fi-profil létrehozása előmegosztott kulccsal az Egyéni konfiguráció funkció segítségével."
 keywords: 
 author: robstackmsft
@@ -13,35 +13,40 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
+ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
+ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
+ms.lasthandoff: 12/15/2016
 
 
 
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulcsú Wi-Fi-profil létrehozása egyéni szabályzattal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ebből a cikkből megtudhatja, hogyan hozhat létre Wi-Fi profilt előmegosztott kulccsal az Intune **Egyéni konfiguráció** funkciója segítségével. A témakörben szereplő példa pedig elmagyarázza, hogyan hozzon létre EAP-alapú Wi-Fi-profilt.
 
 > [!NOTE]
--   Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
+-    Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
 - Android-rendszerek esetén használhatja a Johnathon Biersack által biztosított [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) programot is.
--   További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
+-    További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
 -  iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Alternatív megoldásként használja a Johnathon Biersack által biztosított [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) programot.
 
 
-1.  Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
+1.    Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
 
-2.  Adjon meg egy nevet és egy leírást.
-3.  Adjon hozzá egy OMA-URI beállítást:
+2.    Adjon meg egy nevet és egy leírást.
+3.    Adjon hozzá egy OMA-URI beállítást:
 
-   a.   Adjon nevet a Wi-Fi-hálózat ezen beállításának.
+   a.    Adjon nevet a Wi-Fi-hálózat ezen beállításának.
 
-   b.   Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
+   b.    Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
 
-   c.   **Adattípus**: állítsa be a következőt: „Karakterlánc (XML)”.
+   c.    **Adattípus**: állítsa be a következőt: „Karakterlánc (XML)”.
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -69,24 +74,24 @@ Egy példa az Android vagy Windows rendszerhez készült Wi-Fi-profil esetén al
 >  A `<hex>53534944</hex>` helyére a `<name><SSID of wifi profile></name>` paraméter hexadecimális értékét kell beírni.
 >  Előfordulhat, hogy Windows 10-eszközön a *0x87D1FDE8 Sikertelen szervizelés* hamis hibaüzenet jelenik meg, ám a profil kiépítése sikerül.
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-        <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -108,10 +113,12 @@ Egy példa az Android vagy Windows rendszerhez készült Wi-Fi-profil esetén al
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="eap-based-wi-fi-profile"></a>EAP-alapú Wi-Fi-profil
 Itt láthat egy példát egy EAP-alapú Wi-Fi-profil esetén alkalmazandó XML-kódra:
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -189,6 +196,7 @@ Itt láthat egy példát egy EAP-alapú Wi-Fi-profil esetén alkalmazandó XML-k
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>XML-fájl létrehozása meglévő Wi-Fi kapcsolat alapján
 Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
@@ -212,9 +220,4 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 ### <a name="see-also"></a>További információ
 [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

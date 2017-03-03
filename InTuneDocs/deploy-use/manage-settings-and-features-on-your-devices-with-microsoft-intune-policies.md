@@ -1,5 +1,5 @@
 ---
-title: "Az eszközbeállítások kezelése szabályzatokkal | Microsoft Intune"
+title: "Az eszközbeállítások felügyelete szabályzatokkal | Microsoft Docs"
 description: "Az Intune segítségével szabályzatokat hozhat létre és telepíthet, amelyek vezérlik a beállításokat és a szolgáltatásokat a felügyelt regisztrált eszközökön."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
-# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Az eszközök beállításainak és funkcióinak felügyelete a Microsoft Intune-szabályzatok használatával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune*-szabályzatok* a mobileszközök és a számítógépek funkcióit szabályozó beállítások csoportjai. A szabályzatokat ajánlott vagy testreszabott beállításokat tartalmazó sablonok segítségével hozhatja létre, majd telepítheti őket az eszköz- vagy felhasználói csoportok számára.
 
 ## <a name="types-of-policies"></a>Szabályzatok típusai
@@ -124,12 +129,12 @@ Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a kö
 - Windows Phone: 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként.
 - Eszközként regisztrált Windows-számítógépek: 30 percen át 3 percenként, majd 8 óránként.
 
-A felhasználók emellett a Vállalati Portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
+A felhasználók emellett a Céges portál alkalmazás megnyitásával bármikor jelentkezhetnek a szabályzat beszerzéséhez.
 
 ### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Milyen műveletek hatására küld az Intune azonnal értesítést egy eszközre?
 Az eszközök akkor jelentkeznek be az Intune-ba, amikor bejelentkezési értesítést kapnak, vagy amikor a rendszeres ütemezésű bejelentkezés esedékessé válik.  Ha a művelet, például a törlés, a zárolás, a jelszó-visszaállítás, az alkalmazástelepítés, a profiltelepítés (Wi-Fi, VPN, e-mail stb.) vagy a szabályzattelepítés kifejezetten egy eszközre vagy felhasználóra vonatkozik, az Intune azonnal megpróbálja értesíteni az eszközt, hogy be kell jelentkeznie az Intune szolgáltatásba a frissítések fogadásához.
 
-Az egyéb módosítások – például a kapcsolattartási adatok módosítása a vállalati portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
+Az egyéb módosítások – például a kapcsolattartási adatok módosítása a céges portálon – nem indítják el az azonnali értesítések küldését az eszközök felé.
 
 ### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Ha ugyanazon felhasználó vagy eszköz számára több házirend is települ, honnan tudható, hogy melyik beállítások lesznek érvényben?
 Ha több szabályzatot telepít ugyanazon felhasználó vagy eszköz számára, az alkalmazni kívánt beállítás értékelése az egyes beállítások szintjén történik:
@@ -208,9 +213,4 @@ Amikor töröl egy házirendet, vagy eltávolít egy olyan eszközt a csoportbó
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Hol találhatok segítséget a szabályzatokkal kapcsolatos problémák elhárításához?
 
 Lásd a [Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) témakört.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

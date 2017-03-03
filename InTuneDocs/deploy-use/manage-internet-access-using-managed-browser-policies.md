@@ -1,11 +1,11 @@
 ---
-title: "Webes hozzáférés felügyelete a felügyelt böngészővel | Microsoft Intune"
-description: "Telepítheti a felügyelt böngésző alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét."
+title: "Webes hozzáférés felügyelete a Managed Browser alkalmazással | Microsoft Docs"
+description: "Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A felügyelt böngésző egy webböngésző-alkalmazás, amelyet a Microsoft Intune használatával helyezhet üzembe a szervezetében. A felügyeltböngésző-szabályzatban megadható egy engedélyezési vagy blokklista, amellyel korlátozhatók a felügyelt böngésző felhasználói által felkereshető webhelyek.
 
 Mivel ez egy felügyelt alkalmazás, használhat mobilalkalmazás-felügyeleti szabályzatokat is az alkalmazásra. Ezekkel többek között szabályozhatja a kivágási, másolási és beillesztési műveleteket, és ezzel megakadályozhatja képernyőfelvételek készítését, vagy szabályozhatja azt is, hogy azok a tartalmak, amelyek hivatkozásaira a felhasználók kattintanak, csak felügyelt alkalmazásokban nyílhassanak meg. További részletekért lásd: [Mobilalkalmazás-kezelési házirendek konfigurálása és telepítése a Microsoft Intune-konzolon](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
@@ -39,13 +44,13 @@ Felügyeltböngésző-szabályzatokat a következő eszköztípusok esetében ho
 
 Az Intune által felügyelt böngésző támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
 
-## Felügyeltböngésző-szabályzat létrehozása.
+## <a name="create-a-managed-browser-policy"></a>Felügyeltböngésző-szabályzat létrehozása.
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 
 2.  Konfigurálja a **Szoftverek** kategória alábbi házirend-típusainak egyikét:
 
-    -   **Felügyelt böngésző (Android 4 és újabb verziók)**
+    -   **Managed Browser (Android 4 és újabb verziók)**
 
     -   **Managed Browser (iOS 8.0 és újabb verziók)**
 
@@ -65,7 +70,7 @@ Az URL-címek megadható formátumáról további informácót a jelen témakör
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg.
 
-## A felügyelt böngészőalkalmazás telepítésének létrehozása
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>A felügyelt böngészőalkalmazás telepítésének létrehozása
 Miután létrehozta a felügyeltböngésző-szabályzatot, létrehozhatja a felügyelt böngészőalkalmazás szoftvertelepítését, és hozzárendelheti a létrehozott felügyeltböngésző-szabályzathoz.
 
 > [!IMPORTANT]
@@ -75,7 +80,7 @@ Telepítse az alkalmazást, és ügyeljen arra, hogy a **Mobilalkalmazások keze
 
 Az alkalmazások telepítésével kapcsolatos részletekért lásd: [Alkalmazások telepítése Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
 
-## Felügyelt böngésző – biztonság és adatvédelem
+## <a name="security-and-privacy-for-the-managed-browser"></a>Felügyelt böngésző – biztonság és adatvédelem
 
 -   Az IOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
 
@@ -87,12 +92,12 @@ Az alkalmazások telepítésével kapcsolatos részletekért lásd: [Alkalmazás
 
 -   A hitelesítés lehetővé tétele és az Intune-dokumentáció elérése érdekében a **&#42;.microsoft.com** mentesül az engedélyezési és blokkolási beállítások alól, és mindig engedélyezve van.
 
-### A használatra vonatkozó adatok kikapcsolása
+### <a name="turn-off-usage-data"></a>A használatra vonatkozó adatok kikapcsolása
 A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a felügyelt böngésző teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
 
-## Kapcsolódó információk
+## <a name="reference-information"></a>Kapcsolódó információk
 
-### Az engedélyezett és a blokkolt URL-címek URL-formátuma
+### <a name="url-format-for-allowed-and-blocked-urls"></a>Az engedélyezett és a blokkolt URL-címek URL-formátuma
 Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő karaktereket ismerteti, amelyek az URL-címek engedélyezési és blokklistákban való megadásakor használhatók:
 
 -   A csillag (**&#42;**) helyettesítő karakter és szimbólum a megengedett minták alábbi listájának szabályai szerint használható.
@@ -142,7 +147,7 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
     -   http://www.contoso.com: /&#42;
 
-### Az engedélyezési lista és a blokklista közötti ütközések feloldása
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Az engedélyezési lista és a blokklista közötti ütközések feloldása
 Ha egy eszközön több felügyeltböngésző-szabályzatot léptet érvénybe, és ezek beállításai ütköznek, a rendszer mind a módot (engedélyezés vagy letiltás), mind az URL-listákat kiértékeli. Ütközés esetén a következőképpen viselkedik:
 
 -   Ha a módok mindegyik szabályzatban azonosak, de az URL-listák eltérőek, az URL-címek használatát nem kényszeríti ki az eszközön.
@@ -152,9 +157,4 @@ Ha egy eszközön több felügyeltböngésző-szabályzatot léptet érvénybe, 
 -   Ha az eszközön első alkalommal léptet érvénybe felügyeltböngésző-szabályzatot, és két szabályzat ütközik, a rendszer nem kényszeríti ki az URL-cím használatát az eszközön. A konfliktusokat a **Házirend** munkaterület **Házirendütközések** csomópontjában tekintheti meg.
 
 -   Ha egy eszközön már érvénybe léptetett felügyeltböngésző-szabályzatot, és egy második érvénybe léptetett szabályzat ütköző beállításokat tartalmaz, az eredeti beállítások nem módosulnak az eszközön. A konfliktusokat a **Házirend** munkaterület **Házirendütközések** csomópontjában tekintheti meg.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

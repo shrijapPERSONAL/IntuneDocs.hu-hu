@@ -1,11 +1,11 @@
 ---
-title: "E-mail profilok hibaelhárítása | Microsoft Intune"
+title: "E-mail-profilok hibaelhárítása | Microsoft Docs"
 description: "Az e-mail-profilokkal kapcsolatos problémák, valamint az elhárításuk és megoldásuk ismertetése."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,25 @@ ms.technology:
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>E-mail profilok hibaelhárítása a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az alábbiakban néhány, az e-mail profilokkal kapcsolatos problémát ismertetünk, az elhárításukkal és a megoldásukkal együtt.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
 
-## <a name="unable-to-send-images-from-email-account"></a>Nem sikerül képeket küldeni az e-mail fiókból
+## <a name="unable-to-send-images-from--email-account"></a>Nem sikerül képeket küldeni az e-mail fiókból
 Az automatikusan konfigurált e-mail fiókkal rendelkező felhasználók nem tudnak képeket küldeni az eszközeikről.
 Ez akkor fordul elő, ha a **Harmadik felek alkalmazásaiból is engedélyezett az e-mailek küldése** beállítás nincs engedélyezve.
 
@@ -61,16 +66,11 @@ Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune léte
 
 Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez telepítse őket a különböző gazdagépeken, mivel ezek felülírják egymást.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>KNOX Standard-eszköz 0x87D1FDE8-as hibája
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard-eszköz 0x87D1FDE8-as hibája
 **Probléma:** Miután létrehozott és telepített egy Exchange Active Sync e-mail-profilt különféle Samsung KNOX Standard rendszerű androidos eszközökhöz, az eszköz tulajdonságok &gt; szabályzat lapján a **0x87D1FDE8**-as vagy a **sikertelen szervizelés** hiba jelenik meg.
 
 Ellenőrizze a Samsung KNOX EAS-profil és a forrásszabályzat konfigurációját. A Samsung Note eszközök szinkronizálási lehetősége a továbbiakban nem támogatott, és ez a lehetőség nem választható a profilban. Ellenőrizze, hogy az eszközök rendelkezésére állt-e elegendő idő (akár 24 óra) a szabályzat feldolgozásához.
 
 ## <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

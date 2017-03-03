@@ -1,11 +1,11 @@
 ---
-title: "Szoftverfrissítések Windows rendszerű számítógépekhez | Microsoft Intune"
+title: "Szoftverfrissítések Windows rendszerű számítógépekhez | Microsoft Docs"
 description: "Az Intune segít naprakészen tartani a felügyelt számítógépeket a legújabb javítások és szoftverfrissítések gyors telepítésének biztosításával."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6878d8a4e95280cfd8a919efa4c2f1651ca14024
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 14ef9f901969449ca8b3c60a187da6b6e654bd67
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
 A Microsoft Intune többféle módszerrel könnyíti meg a felügyelt számítógépek védelmét, például a számítógépeket naprakészen tartó szoftverfrissítések kezelésével, amelyek segítenek a legújabb javítások és szoftverfrissítések gyors telepítésében.
 
 Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
@@ -34,10 +36,10 @@ A frissítések jóváhagyása és telepítése során az Intune-konzol **Friss�
 
 A következő szakaszokban leírtakkal naprakészen tarthatja a kezelt számítógépeken lévő szoftvereket.
 
-## Előkészületek
+## <a name="before-you-start"></a>Előkészületek
 A szoftverfrissítések létrehozásának és jóváhagyásának megkezdése előtt konfiguráljon és alkalmazzon a frissítésének telepítésének idejét és mikéntjét szabályozó házirendeket a számítógépekre.
 
-### Frissítési házirend-beállítások konfigurálása
+### <a name="to-configure-update-policy-settings"></a>Frissítési házirend-beállítások konfigurálása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Házirend** &gt; **Áttekintés** &gt; **Házirend hozzáadása** elemet.
 
@@ -47,17 +49,17 @@ A következő táblázatban azok az értékek láthatók, melyek beállíthatók
 
   |Házirend-beállítás|Részletek|
     |------------------|--------------------|
-    |**A frissítések és alkalmazások keresésének gyakorisága (óra)** |Azt adja meg, hogy milyen gyakran (8–22 óra) ellenőrzi az Intune, hogy rendelkezésre állnak-e új frissítések és alkalmazások.<br /><br />Javasolt érték: **8** óra.|
-    |**A frissítések és alkalmazások automatikus vagy rákérdezéses telepítése** |Azt határozza meg, hogy a frissítések telepítése automatikusan történik, vagy a rendszer megkérdezi a felhasználót a telepítés előtt. Emellett ezzel a beállítással ütemezheti a frissítések és alkalmazások telepítését.<br /><br />**A frissítések és alkalmazások ütemezés szerinti automatikus telepítése** beállítással a megadott ütemezésnek megfelelően lesznek telepítve a frissítések és az alkalmazások.<br /><br />Függő házirend-beállításként az **Automatikus karbantartás használata a Windows rendszerű számítógépeken**  beállítás azt adja meg, hogy a frissítések és az alkalmazások a Windows automatikus karbantartási időszakában legyenek telepítve.<br /><br />**A felhasználó felszólítása a telepítésre** beállítás esetén a rendszer rákérdez a frissítések telepítésére, amikor készen állnak.<br /><br />Javasolt értékek:<br /><br />A **Frissítések és alkalmazások ütemezés szerinti automatikus telepítése** érték kijelölve<br /><br />**Ütemezett nap: Naponta**<br /><br />**Ütemezett időpont: 3:00**<br /><br />A **Windows rendszerű számítógépek automatikus karbantartása** érték kijelölve|
+    |**Frissítések és alkalmazások keresésének gyakorisága (óra)** |Azt adja meg, hogy milyen gyakran (8–22 óra) ellenőrzi az Intune, hogy rendelkezésre állnak-e új frissítések és alkalmazások.<br /><br />Javasolt érték: **8** óra.|
+    |**Frissítések és alkalmazások automatikus vagy felszólítás utáni telepítése** |Azt határozza meg, hogy a frissítések telepítése automatikusan történik, vagy a rendszer megkérdezi a felhasználót a telepítés előtt. Emellett ezzel a beállítással ütemezheti a frissítések és alkalmazások telepítését.<br /><br />**A frissítések és alkalmazások ütemezés szerinti automatikus telepítése** beállítással a megadott ütemezésnek megfelelően lesznek telepítve a frissítések és az alkalmazások.<br /><br />Függő házirend-beállításként az **Automatikus karbantartás használata a Windows rendszerű számítógépeken**  beállítás azt adja meg, hogy a frissítések és az alkalmazások a Windows automatikus karbantartási időszakában legyenek telepítve.<br /><br />**A felhasználó felszólítása a telepítésre** beállítás esetén a rendszer rákérdez a frissítések telepítésére, amikor készen állnak.<br /><br />Javasolt értékek:<br /><br />A **Frissítések és alkalmazások ütemezés szerinti automatikus telepítése** érték kijelölve<br /><br />**Ütemezett nap: Naponta**<br /><br />**Ütemezett időpont: 3:00**<br /><br />A **Windows rendszerű számítógépek automatikus karbantartása** érték kijelölve|
     |**A Windows működését nem megszakító frissítések azonnali telepítésének engedélyezése** |Az **Engedélyezés** érték esetén a rendszer letöltésük után azonnal telepíti a frissítéseket, kivéve azokat, amelyek megszakítanák a Windows működését, vagy újraindítanák a rendszert. Ezek a frissítések **A frissítések és alkalmazások automatikus vagy rákérdezéses telepítése** beállítás konfigurációjának megfelelően lesznek telepítve.<br /><br />A **Nem engedélyezett** érték esetén a rendszer a **Frissítések automatikus vagy felszólítás utáni telepítése** beállítás konfigurációjának megfelelően telepíti a frissítéseket.<br /><br />Javasolt érték: **Engedélyezett** |
-    |**Késleltetés a Windows az ütemezett frissítések és alkalmazások telepítését követő újraindítása előtt (perc)** |A Windows az ütemezett frissítések és alkalmazások telepítését követő újraindítása előtti (1-30 perces) várakozási időt határozza meg.<br /><br />Javasolt érték: **15 perc** |
-    |**A kihagyott ütemezett frissítések és alkalmazások a Windows újraindítását követő telepítése megkezdésének késleltetése (perc)** |Azt határozza meg, hogy milyen (1-60 perces) várakozási idő után kezdődjön meg a frissítések és alkalmazások telepítése a Windows újraindítását követően, ha egy ütemezett frissítés kimaradt.<br /><br />Javasolt érték: **5 perc**|
-    |**A Windows ütemezett frissítések és alkalmazások telepítését követő újraindítása szabályozásának engedélyezése a bejelentkezett felhasználó számára** |Azt határozza meg, hogy a bejelentkezett felhasználó késleltetheti-e a Windows újraindítását (ha az **Igen** értékre van állítva), vagy értesítést kap a Windows automatikus újraindításáról (ha a **Nem** értékre van állítva). Ha a frissítések és alkalmazások ütemezett telepítésének befejezésekor nincs bejelentkezve felhasználó, a Windows szükség esetén automatikusan újraindul. Ha alapértelmezés szerint a **Nem**értékre van állítva, a Windows újraindítása előtti idő 5 percre van állítva.<br /><br />Javasolt érték: **Igen**|
-    |**A felhasználó megkérdezése a Windows újraindításáról az Intune-ügyfélügynök kötelező frissítésekor** |Azt határozza meg, hogy, hogy a rendszer kéri-e a bejelentkezett felhasználót a Windows újraindítására, ha az Intune-ügyfélügynök egy kötelező frissítéséhez a Windows újraindítása szükséges.<br /><br />Javasolt érték: **Igen**|
-    |**A Microsoft Intune-ügyfélügynök kötelező frissítései telepítésének ütemezése** |Az ügyfélfrissítések telepítésének ütemezését határozza meg.<br /><br />Javasolt érték: nincs konfigurálva|
-    |**Késleltetés a Windows az ütemezett frissítések és alkalmazások telepítését követő újraindításának kérései között (perc)** |Azt határozza meg, hogy a rendszer milyen (1-1440 perc közötti) gyakorisággal kéri a felhasználót, hogy indítsa újra a Windowst, amikor olyan ütemezett frissítés vagy alkalmazás lett telepítve, amelyhez a Windows újraindítása szükséges, és a felhasználó késlelteti az újraindítást.<br /><br />Javasolt érték: **30 perc** |
+    |**Késleltetés a Windows újraindítása előtt, a frissítések és az alkalmazások ütemezett telepítése után (perc)** |A Windows az ütemezett frissítések és alkalmazások telepítését követő újraindítása előtti (1-30 perces) várakozási időt határozza meg.<br /><br />Javasolt érték: **15 perc** |
+    |**Késleltetés a Windows újraindítása után, az elmulasztott frissítések és alkalmazások telepítésének megkezdése előtt (perc)** |Azt határozza meg, hogy milyen (1-60 perces) várakozási idő után kezdődjön meg a frissítések és alkalmazások telepítése a Windows újraindítását követően, ha egy ütemezett frissítés kimaradt.<br /><br />Javasolt érték: **5 perc**|
+    |**A frissítések és az alkalmazások ütemezett telepítése utáni Windows-újraindítás szabályozásának engedélyezése a bejelentkezett felhasználó számára** |Azt határozza meg, hogy a bejelentkezett felhasználó késleltetheti-e a Windows újraindítását (ha az **Igen** értékre van állítva), vagy értesítést kap a Windows automatikus újraindításáról (ha a **Nem** értékre van állítva). Ha a frissítések és alkalmazások ütemezett telepítésének befejezésekor nincs bejelentkezve felhasználó, a Windows szükség esetén automatikusan újraindul. Ha alapértelmezés szerint a **Nem**értékre van állítva, a Windows újraindítása előtti idő 5 percre van állítva.<br /><br />Javasolt érték: **Igen**|
+    |**A felhasználónak újra kell indítania a Windowst a Microsoft Intune ügyfél ügynökének kötelező frissítései során** |Azt határozza meg, hogy, hogy a rendszer kéri-e a bejelentkezett felhasználót a Windows újraindítására, ha az Intune-ügyfélügynök egy kötelező frissítéséhez a Windows újraindítása szükséges.<br /><br />Javasolt érték: **Igen**|
+    |**A Microsoft Intune ügyfél ügynökéhez elérhető kötelező frissítések telepítésének ütemezése** |Az ügyfélfrissítések telepítésének ütemezését határozza meg.<br /><br />Javasolt érték: nincs konfigurálva|
+    |**A Windows újraindítására vonatkozó felszólítások közötti idő frissítések és alkalmazások ütemezett telepítését követően (perc)** |Azt határozza meg, hogy a rendszer milyen (1-1440 perc közötti) gyakorisággal kéri a felhasználót, hogy indítsa újra a Windowst, amikor olyan ütemezett frissítés vagy alkalmazás lett telepítve, amelyhez a Windows újraindítása szükséges, és a felhasználó késlelteti az újraindítást.<br /><br />Javasolt érték: **30 perc** |
 
-## Microsoft-szoftverek frissítése
+## <a name="update-software-made-by-microsoft"></a>Microsoft-szoftverek frissítése
 A Microsoft-szoftverek frissítése az Ön részéről nagyon kevés munkát igényel. Ennek megkezdése előtt azonban két dolgot be kell állítania:
 
 -   **Termékkategóriák és frissítési besorolások** – a frissítések a számítógépeken elérhetővé tenni kívánt kategóriáit és besorolásait határozza meg. Dönthet például úgy, hogy a Microsoft Office-nak csak a kritikus frissítéseit szeretné telepíteni.
@@ -66,7 +68,7 @@ A Microsoft-szoftverek frissítése az Ön részéről nagyon kevés munkát ig�
 
 Az alábbi két eljárással készülhet fel a szoftverfrissítések alkalmazására:
 
-### A kezelt számítógépek számára elérhetővé tenni kívánt termékkategóriák és frissítési besorolások beállítása
+### <a name="configure-the-product-categories-and-update-classifications-you-want-to-make-available-to-managed-computers"></a>A kezelt számítógépek számára elérhetővé tenni kívánt termékkategóriák és frissítési besorolások beállítása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
@@ -79,7 +81,7 @@ Az alábbi két eljárással készülhet fel a szoftverfrissítések alkalmazás
 
 4.  A beállítások tárolásához válassza a **Mentés** lehetőséget.
 
-### A szoftverfrissítések automatikus jóváhagyási szabályainak konfigurálása
+### <a name="to-configure-automatic-approval-rules-for-software-updates"></a>A szoftverfrissítések automatikus jóváhagyási szabályainak konfigurálása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
@@ -110,7 +112,7 @@ Az új szabály az **Automatikus jóváhagyási szabályok** részben jelenik me
 > A létrehozott automatikus jóváhagyási szabályok csak a jövőbeli frissítéseket hagyják jóvá, az Intune-ban korábban meglévő frissítéseket nem hagyják jóvá automatikusan. Ezen frissítések jóváhagyásához futtatnia kell az automatikus jóváhagyási szabályt.
 
 
-### Automatikusan jóváhagyott frissítésekre vonatkozó szabályok szerkesztése, futtatása vagy törlése
+### <a name="to-edit-run-or-delete-an-automatically-approved-update-rule"></a>Automatikusan jóváhagyott frissítésekre vonatkozó szabályok szerkesztése, futtatása vagy törlése
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Felügyelet** &gt; **Frissítések** elemet.
 
@@ -125,10 +127,10 @@ Az új szabály az **Automatikus jóváhagyási szabályok** részben jelenik me
         > [!NOTE]
         > Egy szabály törlése nem befolyásolja a törölt szabály által jóváhagyott korábbi frissítéseket.
 
-## A nem a Microsoft által készített szoftverek frissítése
+## <a name="update-software-not-made-by-microsoft"></a>A nem a Microsoft által készített szoftverek frissítése
 Telepítheti nem a Microsoft által készített szoftverek frissítéseit is. Ezt úgy teheti meg, hogy a **Frissítés feltöltése** varázslóval feltölti a frissítést a felhőbeli tárolóhelyre, ami után ugyanúgy jóváhagyhatja vagy elutasíthatja a frissítést, mint a Microsoft-szoftverek esetében.
 
-### Külső gyártótól származó frissítés feltöltése és konfigurálása
+### <a name="to-upload-and-configure-a-third-party-update"></a>Külső gyártótól származó frissítés feltöltése és konfigurálása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Frissítések** &gt; **Áttekintés** &gt; **Feltöltés** elemre.
 
@@ -188,7 +190,7 @@ A feltöltött frissítést az Ön Intune felhőalapú tárolóhelyén tárolja 
 
 Az Intune-ba való feltöltésük után a külső gyártótól származó frissítések a **Minden frissítés** ablaktábla **Frissítések** munkaterületén jelennek meg. Ekkor jóváhagyhatja és telepítheti a frissítést. További információért olvassa el a következő „Frissítések jóváhagyása és visszautasítása” című részt.
 
-## Frissítések jóváhagyása és visszautasítása
+## <a name="approve-and-decline-updates"></a>Frissítések jóváhagyása és visszautasítása
 Ha vannak a telepítésre készen álló frissítések, egy üzenet jelenik meg a **Frissítések** munkaterület **Frissítések – áttekintés** lapján, a **Frissítés állapota**részben. Ezt az üzenetet választva megnyithatja a **Minden frissítés** lapot, melyen megtekintheti, hogy mely frissítések állnak készen a jóváhagyásra.
 
 A **Szűrők** lista használatával könnyebben megtalálhatja a frissítéseket. Megjelenítheti például csak a sikertelen vagy csak a felülírt frissítéseket.
@@ -204,7 +206,7 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 |**Törlés**|Csak a nem a Microsoft által készített frissítésekhez használható. A kijelölt frissítés törlése.|
 |**Feltöltés**|A **Frissítés feltöltése** varázsló elindítása, amellyel feltölthetők a telepíteni kívánt, nem a Microsoft által készített frissítések.|
 
-### Frissítések jóváhagyása
+### <a name="to-approve-updates"></a>Frissítések jóváhagyása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Frissítések** &gt; **Áttekintés** &gt; **Jóváhagyásra váró új frissítések** elemre.
 
@@ -225,7 +227,7 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 
         -   **Telepítés mellőzése** – a rendszer csak jelzi, hogy a telepítés alkalmazható, de nem telepíti.
 
-        -   **Telepíthető** – a felhasználó igény szerint telepítheti az alkalmazást a Vállalati portálról.
+        -   **Telepíthető** – a felhasználó igény szerint telepítheti az alkalmazást a Céges portálról.
 
         -   **Eltávolítás** – frissítések eltávolítása a célcsoportban lévő számítógépekről.
 
@@ -250,11 +252,6 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 6.  A **Minden frissítés** lap alján, a részletek ablaktábláján ellenőrizheti, hogy vannak-e a frissítéssel kapcsolatos emlékeztető üzenetek.
 
 
-### További információ
+### <a name="see-also"></a>További információ
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

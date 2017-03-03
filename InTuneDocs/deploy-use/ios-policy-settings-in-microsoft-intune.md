@@ -1,11 +1,11 @@
 ---
-title: "Az iOS szabályzatbeállításai | Microsoft Intune"
+title: "Az iOS szabályzatbeállításai | Microsoft Docs"
 description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-szabályzatbeállítások a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune számos beépített beállítási lehetőséget kínál, amelyeket iOS-eszközökön konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
@@ -35,7 +39,7 @@ A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatá
 -   **Megfelelő és nem megfelelő alkalmazások**. Adja meg a vállalatnál megfelelőnek vagy nem megfelelőnek ítélt alkalmazások listáját. Android és iOS rendszerű eszközökön a **nem megfelelő alkalmazásokról készült jelentéssel** ellenőrizhető, hogy a listában megadott alkalmazások kompatibilisek-e a felhasználók által telepített alkalmazásokkal (az alkalmazás telepítése azonban ténylegesen nem tiltható le).
 
 > [!TIP]
-> Beállíthat feltételeket a felhasználók számára, amelyekkel gondoskodhat arról, hogy tudomásul vegyék, hogy az eszközükön lévő alkalmazásokat (beleértve a személyes alkalmazásokat is) értékelni fogják és a nem megfelelő alkalmazások letiltásra kerülnek, vagy nem megfelelőként lesznek jelentve. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a vállalati portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információkért lásd: [Használati feltételek szabályzatbeállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Beállíthat feltételeket a felhasználók számára, amelyekkel gondoskodhat arról, hogy tudomásul vegyék, hogy az eszközükön lévő alkalmazásokat (beleértve a személyes alkalmazásokat is) értékelni fogják és a nem megfelelő alkalmazások letiltásra kerülnek, vagy nem megfelelőként lesznek jelentve. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a céges portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információkért lásd: [Használati feltételek szabályzatbeállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, amellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
@@ -78,12 +82,12 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |----------------|-------|
 |**iCloudba történő biztonsági mentés engedélyezése**|Engedélyezi, hogy a felhasználó biztonsági mentést készítsen az iCloudba az eszközről.|
 |**Dokumentum iCloudba szinkronizálásának engedélyezése**|Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.|
-|**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|Engedélyezi az eszközön lévő fényképek szinkronizálását az iCloudba.|
+|**Fényképadatfolyamok iCloudba szinkronizálásának engedélyezése**|A felhasználók engedélyezhetik a **Saját fotóstreamet** az eszközeiken, amely lehetővé teszi a fényképek szinkronizálását az iClouddal, így a fényképek elérhetővé válnak a felhasználó összes eszközén.|
 |**Biztonsági másolat titkosításának megkövetelése**|Megköveteli az eszköz minden biztonsági másolatának titkosítását.|
 |**Adatok iCloudba való szinkronizálásának engedélyezése a felügyelt alkalmazások számára**|Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.|
 |**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
-|**Fényképek iCloudban való megosztásának engedélyezése**|Az iOS megosztott fényképadatfolyam funkciója használatának engedélyezése.|
-|**iCloud-fotókönyvtár engedélyezése**|A fényképek iCloudban való tárolásának engedélyezése a felhasználó számára. Ha le van tiltva, akkor a már korábban az iCloudban tárolt fényképek is eltávolításra kerülnek.|
+|**Fényképek iCloudban való megosztásának engedélyezése**|A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.|
+|**iCloud-fotókönyvtár engedélyezése**|A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.    Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.|
 
 ### <a name="application-settings-for-the-browser"></a>Alkalmazásbeállítások a böngésző számára
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
@@ -172,6 +176,8 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 |**Alkalmazások importálása**|Importálja az Ön által vesszővel tagolt fájlban megadott alkalmazásokat. A fájlban ezt a formátumot használja: alkalmazásnév, kiadó, alkalmazás URL-címe.|
 |**Szerkesztés**|A kijelölt alkalmazás nevének, kiadójának és URL-címének szerkesztése.|
 |**Törlés**|A kijelölt alkalmazás törlése a listából.|
+
+A megfelelő és nem megfelelő alkalmazásokkal kapcsolatos beállításokat tartalmazó szabályzatokat felhasználói csoportokra vonatkozóan kell érvénybe léptetni.
 
 ### <a name="kiosk-mode-settings"></a>Teljes képernyős mód beállításai
 
@@ -295,7 +301,7 @@ Adja meg a következő beállításokat:
 |-|-|
 |**Rejtett és megjelenített alkalmazások listája**|Engedélyezze ezt a beállítást rejtett és megjelenített alkalmazások listájának létrehozásához.|
 |**Listázott alkalmazások elrejtése a felhasználók elől**|Ha ezt a beállítást választja, létrehozhatja azoknak az alkalmazásoknak a listáját, amelyek rejtve lesznek a felhasználók elől.<br>Ha az ilyen típusú listát választja, az iOS **Beállítások** és **Telefon** (iPhone esetén) alkalmazásokon kívül minden más alkalmazás rejtve lesz.|
-|**Csak a listán szereplő alkalmazások megjelenítése a felhasználónak**|Ha ezt a beállítást választja, létrehozhatja azoknak az alkalmazásoknak a listáját, amelyek megjelennek a felhasználók számára.<br>Ha ezt a típusú listát választja, az iOS **Beállítások** és **Telefon** (iPhone esetén) alkalmazásokon kívül minden más alkalmazás rejtve lesz.<br>Ezen kívül a listához kell adnia a Vállalati portál alkalmazást és minden más, az Intune-nal telepített és felügyelt alkalmazást.|
+|**Csak a listán szereplő alkalmazások megjelenítése a felhasználónak**|Ha ezt a beállítást választja, létrehozhatja azoknak az alkalmazásoknak a listáját, amelyek megjelennek a felhasználók számára.<br>Ha ezt a típusú listát választja, az iOS **Beállítások** és **Telefon** (iPhone esetén) alkalmazásokon kívül minden más alkalmazás rejtve lesz.<br>Ezen kívül a listához kell adnia a Céges portál alkalmazást és minden más, az Intune-nal telepített és felügyelt alkalmazást.|
 |**Hozzáadás**|Hozzáadhat egy alkalmazást a kijelölt listához.<br>Az elrejtett alkalmazások listájában minden elrejteni kívánt alkalmazás esetén meg kell adnia a következőket: **Név**, **Kiadó** és az **Alkalmazás URL-címe vagy csomagazonosítója**.<br>A megjelenített alkalmazások listájában használhatja a **Felügyelt alkalmazás kiválasztása** lehetőséget, így az Intune által felügyelt alkalmazások listájából választhatja ki a megjeleníteni kívánt alkalmazásokat. Használhatja az Áruházbeli alkalmazás kiválasztása lehetőséget is, mely esetben minden megjeleníteni kívánt alkalmazás esetén meg kell adnia a következőket: **Név**, **Kiadó** és az **Alkalmazás URL-címe vagy csomagazonosítója**.|
 |**Alkalmazások importálása**|Importálhatja azokat az alkalmazásokat, amelyeket egy vesszővel tagolt fájlban megadott. Használja a fájlban megadott formátumot, alkalmazásnevet, kiadót és URL-címet.|
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
@@ -380,9 +386,4 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

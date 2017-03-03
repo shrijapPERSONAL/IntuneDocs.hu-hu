@@ -1,5 +1,5 @@
 ---
-title: "A helyszíni EAS Exchange-összekötője | Microsoft Intune"
+title: "A helyszíni EAS Exchange-összekötője | Microsoft Docs"
 description: "A Connector eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és az Exchange ActiveSync MDM-et futtató helyszíni Exchange-kiszolgáló között."
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>A helyszíni Intune Exchange Connector telepítése
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Olyan kapcsolat beállításához, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a mobileszközök postaládáit működtető Exchange-kiszolgálóval, le kell töltenie a helyszíni Exchange Connector összekötő eszközt, majd az Intune felügyeleti konzolról konfigurálnia kell azt. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-Connector kapcsolatot támogat.
@@ -129,9 +133,4 @@ Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat é
 
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

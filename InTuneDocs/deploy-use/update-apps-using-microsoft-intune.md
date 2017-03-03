@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazások frissítése | Microsoft Intune"
+title: "Alkalmazások frissítése | Microsoft Docs"
 description: "Ebből a témakörből megtudhatja, hogyan frissítheti az alkalmazásokat, ha új verzióra van szükség."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,25 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Alkalmazások frissítése a Microsoft Intune-nal
+# <a name="update-apps-using-microsoft-intune"></a>Alkalmazások frissítése a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune lehetővé teszi az alkalmazásfrissítések kezelését. Ebből a témakörből megtudhatja, hogyan frissítheti az alkalmazásokat, ha új verzióra van szükség.
 
-## Alkalmazások frissítése
+## <a name="how-to-update-apps"></a>Alkalmazások frissítése
 Amikor megjelenik egy telepített alkalmazás egy új verziója, az Intune lehetővé teszi, hogy frissítse és telepítse az alkalmazás újabb verzióját. Egy telepítést csak ugyanazon alkalmazás egy újabb verziójára cserélhet le (amely ugyanazzal az azonosítóval rendelkezik). Az alkalmazásfrissítéseket nem használhatja egy központi telepítés egy másik alkalmazáscsomaggal való frissítésére.
 
-### Alkalmazásazonosítók
+### <a name="app-identifiers"></a>Alkalmazásazonosítók
 Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítja az alkalmazást. Nem telepíthet több alkalmazáspéldányt azonos azonosítóval. Az alábbiakban bemutatunk néhány példát az alkalmazásazonosítókra:
 
 - **iOS** – Csomagazonosító (példa: com.microsoft.excel)
@@ -42,7 +47,7 @@ Az alkalmazásazonosító egy olyan tulajdonság, amely egyedi módon azonosítj
 > -   Kérje meg az eszköz felhasználóját, hogy nyissa meg a vállalati portált, válassza ki a telepített alkalmazást, majd kattintson a **Telepítés** lehetőségre.
 > -   Módosítsa a központi telepítési műveletet az **Eltávolítás**lehetőségre, és az alkalmazás eltávolítása után telepítse újra az alkalmazást az **Elérhető telepítés**központi telepítési művelettel.
 
-### Alkalmazás frissítésére
+### <a name="to-update-an-app"></a>Alkalmazás frissítésére
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások** elemet.
 
@@ -56,9 +61,4 @@ Amikor az eszközök legközelebb keresnek elérhető alkalmazásokat, az alkalm
 Az alkalmazáscsomagokból telepített alkalmazások (üzletági alkalmazások) esetében az alkalmazás mind a szükséges, mind az elérhető telepítésekhez frissül mindaddig, amíg változatlan azonosítóval rendelkezik.
 
 Az áruházi hivatkozásként üzembe helyezett alkalmazások frissítéseit az alkalmazás eredeti áruháza kezeli.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

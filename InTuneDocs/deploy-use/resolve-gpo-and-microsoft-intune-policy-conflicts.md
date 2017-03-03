@@ -1,11 +1,11 @@
 ---
-title: "GPO és Intune-szabályzatütközések feloldása| Microsoft Intune"
+title: "GPO és Intune-szabályzatütközések feloldása| Microsoft Docs"
 description: "Megtudhatja, hogyan szüntetheti meg az ütközéseket a Csoportházirend és az Intune konfigurációs szabályzatai között."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,21 @@ ms.technology:
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Csoportházirend-objektumok (GPO) és Microsoft Intune-szabályzatütközések feloldása
+# <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Csoportházirend-objektumok (GPO) és Microsoft Intune-szabályzatütközések feloldása
 Az Intune szabályzatai megkönnyítik a Windows-számítógépek beállításainak kezelését. Például szabályzat segítségével felügyelheti a Windows tűzfal beállításait a számítógépeken. Az Intune számos beállítása hasonló a Windows csoportházirend-beállításaihoz. Esetenként azonban előfordulhat, hogy a két módszer ütközik egymással.
 
 Ütközések esetén a tartományszintű csoportházirend elsőbbséget élvez az Intune szabályzatával szemben, kivéve, ha a számítógép nem tud bejelentkezni a tartományba. Ebben az esetben a rendszer az Intune szabályzatát alkalmazza az ügyfélszámítógépen.
 
-## Mi a teendő a Csoportházirend használata esetén?
+## <a name="what-to-do-if-you-are-using-group-policy"></a>Mi a teendő a Csoportházirend használata esetén?
 Győződjön meg róla, hogy az Ön által alkalmazott szabályzatok nem állnak-e csoportházirend felügyelete alatt. Az ütközések megelőzése érdekében használjon egyet vagy többet az alábbi módszerek közül:
 
 -   Helyezze át a számítógépeket egy olyan Active Directory-beli szervezeti egységbe (OU-ba), amelyre nem lettek alkalmazva csoportházirend-beállítások az Intune ügyfél telepítése előtt. Letilthatja továbbá a csoportházirend-öröklést azon szervezeti egységek esetében, amelyek olyan Intune-ban regisztrált számítógépeket tartalmaznak, amelyeken nem kívánja alkalmazni a csoportházirend-beállításokat.
@@ -36,7 +38,7 @@ Győződjön meg róla, hogy az Ön által alkalmazott szabályzatok nem állnak
 
 Az Active Directoryról és a Windows csoportházirendjéről további információt a Windows Server dokumentációjában talál.
 
-## Meglévő csoportházirend-objektumok szűrése az Intune szabályzatával való ütközések elkerülése érdekében
+## <a name="how-to-filter-existing-gpos-to-avoid-conflicts-with-intune-policy"></a>Meglévő csoportházirend-objektumok szűrése az Intune szabályzatával való ütközések elkerülése érdekében
 Ha azonosította azokat a csoportházirend-objektumokat, amelyek beállításai ütköznek az Intune szabályzataival, biztonságicsoport-szűrőkkel az Intune által nem kezelt számítógépekre korlátozhatja a csoportházirend-objektumok alkalmazását.
 
 <!--- ### Use WMI filters
@@ -113,11 +115,6 @@ A csoportházirend-objektumok alkalmazását korlátozhatja csak azokra a bizton
 
 Az új biztonsági csoportot regisztrációként kell kezelni az Intune szolgáltatásmódosításaiban.
 
-### További információ
+### <a name="see-also"></a>További információ
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

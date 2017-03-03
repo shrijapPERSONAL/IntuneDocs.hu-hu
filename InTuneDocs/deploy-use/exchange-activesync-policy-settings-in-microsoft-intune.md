@@ -1,11 +1,11 @@
 ---
-title: "Exchange ActiveSync házirend-beállítások | Microsoft Intune"
+title: "Exchange ActiveSync szabályzatbeállításai | Microsoft Docs"
 description: "Az Intune Exchange ActiveSync-szabályzatának használatával megadhatók azok a beállítások, amelyekkel az Exchange ActiveSync által kezelt eszközök szolgáltatásai és funkciói vezérelhetővé válnak."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,23 @@ ms.technology:
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 770871d8cc7a32fb54ef01fb9ac84b1fdee2ec90
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban
+# <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megadhatók azok a beállítások, amelyekkel az Exchange ActiveSync által kezelt eszközök szolgáltatásai és funkciói széles körben vezérelhetővé válnak.
 
 
-## Jelszóbeállítások
+## <a name="password-settings"></a>Jelszóbeállítások
 
 |Beállítás neve|Részletek
 |----------------|---|
@@ -32,13 +37,13 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 |**Kötelező jelszótípus**|A megkövetelt jelszótípust határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
 |**Jelszó minimális hossza**|Az eszközhöz használt jelszóban használandó karakterek minimális számát határozza meg.|
 |**Egyszerű jelszavak engedélyezése**|Meghatározza, hogy használható-e egyszerű jelszó, például „0000” vagy „1234”.|
-|**Sikertelen bejelentkezések engedélyezett száma az eszköz törlése előtt**|Azt a számot adja meg, ahányszor a felhasználó helytelen jelszót adhat meg, mielőtt a rendszer törölné az eszközt.|
-|**Jelszó lejárta (napokban)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.
+|**Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről**|Azt a számot adja meg, ahányszor a felhasználó helytelen jelszót adhat meg, mielőtt a rendszer törölné az eszközt.|
+|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.
 |**Jelszóelőzmények megjegyzése**|Megadja, hogy használhatók-e a korábban már használt jelszavak.|
 |**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Meghatározza, hogy hány jelszóra visszamenőleg nem használható egy már korábban használt jelszó.|
-|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
+|**Jelszó kérése ennyi perc inaktivitás után**|Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
 
-## Titkosítási beállítások
+## <a name="encryption-settings"></a>Titkosítási beállítások
 
 |Beállítás neve|Részletek|
 |----------------|---|
@@ -54,33 +59,28 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 -   Amikor Windows 8.1 rendszerű eszközön kényszeríti a titkosítást, a helyreállítási kulcs csak a felhasználók Microsoft-fiókjaiból érhető el, amelyet a felhasználó OneDrive-fiókjaiból lehet elérni. Ez a kulcs nem állítható vissza egy felhasználó nevében.
 
-## E-mail beállítások
+## <a name="email-settings"></a>E-mail beállítások
 
 |Beállítás neve|Részletek
 |----------------|---|
-|**Az e-mail mellékletek letöltésének engedélyezése a felhasználók számára**|Megadja, hogy le lehet-e tölteni az e-mail mellékleteket az eszközre.|
-|**E-mail szinkronizálási időszak**|Meghatározza, hogy hány napnyi beérkezett e-mail szinkronizálódjon az eszközzel.
+|**Az e-mail-mellékletek letöltésének engedélyezése a felhasználók számára**|Megadja, hogy le lehet-e tölteni az e-mail mellékleteket az eszközre.|
+|**E-mail-szinkronizálási időszak**|Meghatározza, hogy hány napnyi beérkezett e-mail szinkronizálódjon az eszközzel.
 |**Engedélyezze az Exchange ActiveSync-beállításokat nem teljes mértékben támogató eszközök szinkronizálását az Exchange kiszolgálóval**|A beállítással megadható, hogy engedélyezi-e az Exchange kiszolgálóhoz a hozzáférést az Exchange ActiveSync-beállításokat csak részben vagy egyáltalán nem támogató eszközök számára.
 
-## Webböngésző beállításai
+## <a name="browser-settings"></a>Webböngésző beállításai
 
 |Beállítás neve|Részletek
 |----------------|---|
-|**Webböngésző használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a webböngésző.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
+|**Webböngésző engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a webböngésző.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
-## Hardverbeállítások
+## <a name="hardware-settings"></a>Hardverbeállítások
 
 |Beállítás neve|Részletek
 |----------------|---|
-|**Kamera használatának engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
+|**Kamera engedélyezése**|A beállítás meghatározza, hogy használható-e az eszközön a kamera.<br>(Windows RT vagy Windows Phone esetén nem érhető el.).
 
 
 
-### További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
+### <a name="see-also"></a>További információ
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

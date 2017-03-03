@@ -1,11 +1,11 @@
 ---
-title: "A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Intune"
+title: "A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Docs"
 description: "Az Intune-szoftverügyfélt futtató Windows rendszerű számítógépek felügyeletének különböző módozatai."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 94cb6278e0df458ee3696cc0c8e1018822c44cd8
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai
-Tekintse át a feladatlistát, amellyel az Intune-szoftverügyfélt futtató Windows rendszerű számítógépeket felügyelheti. Ha még nem telepítette az ügyfelet a számítógépeken, olvassa el [Az Intune-szoftverügyfél telepítése](install-the-windows-pc-client-with-microsoft-intune.md) című cikket.
+Ez a témakör azt sorolja fel, hogy milyen feladatokat lehet elvégezni a PC-ként felügyelt asztali rendszereken az Intune-ügyfél telepítése után. Ez a témakör nem érinti a mobileszközként felügyelt PC-ket. Ha még nem telepítette az ügyfelet a PC-in, olvassa el [Az Intune-szoftverügyfél telepítése](install-the-windows-pc-client-with-microsoft-intune.md) című cikket.
 
 
 - [A számítógépek felügyelete szabályzatok használatával egyszerűsíthető](use-policies-to-simplify-windows-pc-management.md) – Meghatározza az Intune **Számítógép felügyeleti** szabályzatait, és megadja a Microsoft Intune Center beállításait.
@@ -30,14 +32,9 @@ Tekintse át a feladatlistát, amellyel az Intune-szoftverügyfélt futtató Win
 
 - [Windows rendszerű számítógép kivonása](retire-a-windows-pc-with-microsoft-intune.md) – Felsorolja a Windows rendszerű számítógép kivonásához szükséges lépéseket és leírja, mi történik ilyenkor.
 
-- [Felhasználók és eszközök összekapcsolásának felügyelete Windows rendszerű számítógépekhez](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – Leírja, hogy a szoftver ügyfélnek történő telepítése előtt mikor és hogyan kell összekapcsolni az ügyfelet a számítógéppel.
+- [Felhasználók és eszközök összekapcsolásának felügyelete Windows rendszerű PC-khez](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – Leírja, hogy a szoftver felhasználó részére történő telepítése előtt mikor és hogyan kell összekapcsolni a felhasználót a PC-vel.
 
 - [Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) – Leírja, hogy miként biztosíthat távfelügyeletet az Intune-számítógépfelhasználóknak, valamint megadja a TeamViewer telepítésének előfeltételeit.
 
-
-
-
-
-<!--HONumber=Nov16_HO5-->
 
 

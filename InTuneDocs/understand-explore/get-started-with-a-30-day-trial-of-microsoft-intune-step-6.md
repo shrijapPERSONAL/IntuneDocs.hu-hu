@@ -1,5 +1,5 @@
 ---
-title: "Egyéb beállítások és kiegészítő funkciók az Intune-próbaidőszakokhoz | Microsoft Intune"
+title: "Egyéb beállítások és kiegészítő funkciók az Intune-próbaidőszakokhoz | Microsoft Docs"
 description: "Ismerteti azon riasztásokat, értesítéseket, jelentéseket, valamint általános Intune-képességeket, amelyeket érdemes ismerni az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
 author: lindavr
@@ -12,14 +12,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Riasztások, értesítések és jelentések
 Az Intune felügyeleti konzolon **riasztások** segítségével mérheti fel gyorsan a szervezetben kezelt eszközök általános állapotát. A riasztásokat konfigurálja és testreszabhatja úgy, hogy csak a szüskéges adatokat jelenítsék meg a szervezetről, és csak ezekről adjanak jelentést. Beállíthatja, hogy az egyes riasztások engedélyezve legyenek-e vagy letiltva, beállíthatja a súlyosságukat, a megjelenítési küszöbértékkel meghatározhatja, hogy milyen gyakran kell kiváltódnia egy riasztási eseménynek ahhoz, hogy megjelenjen egy riasztás, és konfigurálhat bizonyos riasztástípusokra jellemző beállításokat is.
@@ -53,9 +57,4 @@ A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](/
 Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md)
 
 Átállás a [fizetős verzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

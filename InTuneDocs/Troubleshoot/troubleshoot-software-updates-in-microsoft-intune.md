@@ -1,11 +1,11 @@
 ---
-title: "Szoftverfrissítésekkel kapcsolatos hibák elhárítása | Microsoft Intune"
+title: "Szoftverfrissítésekkel kapcsolatos hibák elhárítása | Microsoft Docs"
 description: "A Microsoft Intune szoftverfrissítéseivel kapcsolatban felmerülő problémák megoldása."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# A Microsoft Intune szoftverfrissítéseinek hibaelhárítása
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>A Microsoft Intune szoftverfrissítéseinek hibaelhárítása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az ebben a részben ismertetett információk segítséget nyújtanak a Microsoft Intune szoftverfrissítéseivel kapcsolatban felmerülő problémák megoldásához.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
-## A frissítési ügynök hibakódjai
+## <a name="update-agent-error-codes"></a>A frissítési ügynök hibakódjai
 
 A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. Ha nem talál meg egy adott hibakódot a táblázatban, lásd: [A Windows Update ügynök eredménykódjai](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -241,7 +246,7 @@ A következő táblázat a **frissítési ügynök** hibakódjait sorolja fel. H
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|A telepítés nem sikerült, mert függőben van a rendszer kötelező újraindítása.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|A letöltést megszakították.|
 
-## A nagyszámú felülírt frissítéssel rendelkező Windows 7 rendszerű számítógépek nem küldenek jelentéseket a Microsoft Intune konzolnak
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>A nagyszámú felülírt frissítéssel rendelkező Windows 7 rendszerű számítógépek nem küldenek jelentéseket a Microsoft Intune konzolnak
 **Probléma**: Olyan helyzet állhat elő, amelyben a Microsoft Intune-ügyfelek az alábbi jelenségek közül egyet vagy többet tapasztalnak:
 - Az ügyfelek váratlanul leállítják a jelentésküldést a Microsoft felügyeleti konzolnak.  
 - Az ügyfeleken magas fokú processzorhasználatot tapasztalható.
@@ -260,11 +265,6 @@ Ezt a problémát az okozhatja, ha a felülírt frissítéseket (vagyis azokat a
 
 Ha Windows 7 rendszert használ, ezenfelül ellenőrizze, hogy telepítette-e a következő frissítést:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

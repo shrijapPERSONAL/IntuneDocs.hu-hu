@@ -1,11 +1,11 @@
 ---
-title: "A Mac OS X-házirendek beállításai | Microsoft Intune"
+title: "A Mac OS X-szabályzatok beállításai | Microsoft Docs"
 description: "Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,22 @@ ms.technology:
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: ce30ab0e5a4ce709aafa5892789590b42b484db4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 58dc1d872e7e12978652542d80061dd7ed86aeb2
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban
+# <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
-## Az általános konfigurációs szabályzat beállításai
+## <a name="general-configuration-policy-settings"></a>Az általános konfigurációs szabályzat beállításai
 
 A Microsoft Intune **Mac OS X-hez készült általános konfigurációs szabályzatát** a következő beállítások konfigurálásához használhatja:
 
@@ -34,7 +38,7 @@ A Microsoft Intune **Mac OS X-hez készült általános konfigurációs szabály
 
 Ha ez a lista nem tartalmazza a keresett beállítást, próbálja meg létrehozni egy egyéni Mac OS X-szabályzattal, amely lehetővé teszi az Apple Configurator eszközzel létrehozott beállítások importálását. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
-### Jelszóbeállítások
+### <a name="password-settings"></a>Jelszóbeállítások
 
 |Beállítás neve|Részletek|
 |----------------|---------------|
@@ -43,12 +47,12 @@ Ha ez a lista nem tartalmazza a keresett beállítást, próbálja meg létrehoz
 |**Jelszó speciális karaktereinek minimális száma**|Adja meg a jelszóban használandó speciális karakterek minimális számát (**0** - **4**).<br /><br />A speciális karakterek szimbólumok, mint például a kérdőjel (**?**).|
 |**Jelszó minimális hossza**|Adja meg a jelszó minimális hosszát (**4** - **14** karakter).|
 |**Egyszerű jelszavak engedélyezése**|Az egyszerű jelszavak (például a **0000**vagy az**1234**) használatának engedélyezése.|
-|**Tétlen percek száma, mielőtt az eszköz újból kéri a jelszót**|Adja meg, hogy mennyi ideig legyen a számítógép inaktív ahhoz, hogy bekapcsoljon a jelszavas zárolás.|
-|**Jelszó lejárta (napokban)**|Adja meg, hogy hány nap telhet el a kötelező jelszómódosításig (**1** **255** nap).|
+|**Jelszó kérése ennyi perc inaktivitás után**|Adja meg, hogy mennyi ideig legyen a számítógép inaktív ahhoz, hogy bekapcsoljon a jelszavas zárolás.|
+|**Jelszó lejárata (nap)**|Adja meg, hogy hány nap telhet el a kötelező jelszómódosításig (**1** **255** nap).|
 |**Jelszóelőzmények megjegyzése**|Ez a beállítás megakadályozza, hogy a felhasználó egy korábban már használt jelszót adjon meg újra. A beállítás engedélyezése esetén a **Korábbi jelszavak újbóli használatának tiltása** beállítással megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható (**1** - **24**).|
 |**Képernyőkímélő bekapcsolása ennyi perc inaktivitás után**|Adja meg, hogy a számítógépnek mennyi ideig kell inaktívnak lennie a képernyőkímélő aktiválásához.|
 
-### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
 A **Szabályzatnak megfelelő és nem megfelelő alkalmazások Mac OS X-es eszközökhöz** listában engedélyezze az **Eszközök felügyelt beállításai** beállítást, majd adja meg a megfelelő vagy nem megfelelő alkalmazások listáját az alábbi információk alapján.
 
 > [!NOTE]
@@ -70,27 +74,27 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások Mac OS X-es eszk�
 > [!IMPORTANT]
 > Ha egy Mac OS X-eszköz alvó állapotban van, a házirendek és profilok nem kézbesíthetők, és nem naplózhatók. Ennek következtében előfordulhat, hogy az Intune konzolján ideiglenesen a **Hibás házirend-beállítások** állapotüzenet jelenik meg mindaddig, amíg az eszköz fel nem ébred az alvó üzemmódból.
 
-### A szabályzatnak megfelelő és nem megfelelő alkalmazások figyelése
+### <a name="monitor-compliant-and-noncompliant-apps"></a>A szabályzatnak megfelelő és nem megfelelő alkalmazások figyelése
 A **szabályzatnak nem megfelelő alkalmazásokról készült jelentésben** megtekintheti a megadott alkalmazások megfelelőségét.
 
-#### Jelentés futtatása
+#### <a name="to-run-a-report"></a>Jelentés futtatása
 
 1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Szabályzatoknak nem megfelelő alkalmazások – jelentések** elemet.
 
 2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a megfelelő vagy a nem megfelelő alkalmazásokat vagy mindkettőt szeretné-e ellenőrizni, majd válassza a **Jelentés megtekintése**elemet.
 
-## Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban
+## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Egyéni Mac OS X-házirendbeállítások a Microsoft Intune-ban
 A Microsoft Intune **egyéni Mac OS X-konfigurációs szabályzatával** telepítheti az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) létrehozott beállításokat a Mac OS X-eszközökre. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később egy Intune-beli egyéni Mac OS X-szabályzatba importálhatja, és a beállításokat telepítheti a szervezetben lévő felhasználók és eszközök számára.
 
 E funkció révén olyan Mac OS X-beállításokat telepíthet, amelyek nem konfigurálhatók az Intune általános Mac OS X-konfigurációs szabályzatával.
 
-### Előfeltételek
+### <a name="prerequisites"></a>Előfeltételek
 Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létre kell hoznia a felhasználók vagy eszközök számára telepíteni kívánt beállításokat tartalmazó konfigurációs fájlt. Az Apple Configurator eszköz letöltése és az azzal kapcsolatos információk a [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) áruházban érhetők el.
 
 > [!NOTE]
 > Az Intune nem készít jelentést az egyéni Mac OS X-szabályzatok egyes beállításainak betartásáról, a teljes házirend betartásáról azonban igen.
 
-### Általános beállítások
+### <a name="general-settings"></a>Általános beállítások
 
 |Beállítás neve|Részletek|
     |----------------|--------------------|
@@ -98,17 +102,17 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
     |**Leírás**|Adjon meg egy leírást, amely áttekintést nyújt az egyéni Mac OS X-házirendről, és olyan releváns információkat tartalmaz, amelyek megkönnyítik a keresését.|
 
 
-### Egyéni beállítások
+### <a name="custom-settings"></a>Egyéni beállítások
 
 |Beállítás neve|Részletek|
     |----------------|--------------------|
-    |**Egyéni konfigurációs profil neve (megjelenik a felhasználók számára)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
-    |**Konfigurációs profilfájl**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A „Konfigurációs profilfájl létrehozása” című témakörben talál segítséget a konfigurációs profil létrehozásához.|
-    |**Konfigurációs profil részletei**|Megjeleníti az importált konfigurációs profil XML-kódját.|
+    |**Egyéni konfigurációs profil neve (felhasználók láthatják)**|Nevezze el a szabályzatot. Ez a név jelenik majd meg az eszközön és az Intune szabályzatjelentéseiben.|
+    |**Konfigurációs profil fájlja**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Tipp:** A „Konfigurációs profilfájl létrehozása” című témakörben talál segítséget a konfigurációs profil létrehozásához.|
+    |**Konfigurációs profil adatai**|Megjeleníti az importált konfigurációs profil XML-kódját.|
 
 
 
-### Konfigurációs profilfájl létrehozása
+### <a name="how-to-create-a-configuration-profile-file"></a>Konfigurációs profilfájl létrehozása
 Az egyéni házirend által használt konfigurációs profilfájlt kétféleképpen hozhatja létre:
 
 -   A fájl Apple Configurator eszközből történő exportálásával ( **.mobileconfig**kiterjesztéssel).
@@ -116,11 +120,6 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 -   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) megfelelő sémáját használja.
 
 
-### További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
+### <a name="see-also"></a>További információ
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

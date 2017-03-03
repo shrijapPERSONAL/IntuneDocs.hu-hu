@@ -1,9 +1,9 @@
 ---
-title: "Exchange ActiveSync-alapú eszközfelügyelet | Microsoft Intune"
+title: "Exchange ActiveSync-alapú eszközfelügyelet | Microsoft Docs"
 description: "Mobileszközök kezelése Exchange ActiveSync (EAS) felügyelettel az Exchange-összekötő segítségével"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Exchange ActiveSync mobileszköz-felügyelet a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ahhoz, hogy a Microsoft Intune közvetlenül tudja felügyelni a mobileszközöket, [regisztrálni kell az eszközöket az Intune-ban](prerequisites-for-enrollment.md). A másik lehetőség, hogy a rendszergazdák engedélyeznek egy korlátozottabb felügyeleti megoldást, amely az Exchange ActiveSync (EAS) felügyeletet egy Exchange-összekötővel valósítja meg. Az eszközök helyszíni Exchange-kiszolgálókkal és az Office 365 segítségével az Exchange Online megoldással is felügyelhetők. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-összekötő kapcsolatot támogat.
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>Mobileszközökre vonatkozó Exchange-hozzáférési szabályok ##
@@ -44,9 +49,4 @@ Az Intune-konzol használható az [EAS házirend-beállítások](exchange-active
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Vállalati adatok törlése mobileszközökről
 Végül [az EAS által felügyelt mobileszközökön tárolt vállalati adatokat törölheti](wipe-for-exchange-managed-mobile-devices.md), ha már nincsenek használatban, illetve ha elvesztették vagy ellopták az eszközt.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

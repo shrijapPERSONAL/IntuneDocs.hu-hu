@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazások telepítése | Microsoft Intune"
+title: "Alkalmazások telepítése | Microsoft Docs"
 description: "Ez a témakör megmagyaráz néhány olyan fogalmat, amelynek a megértésére feltétlenül szüksége lesz ahhoz, hogy alkalmazásokat telepítsen az Intune-ban."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Alkalmazások telepítése a Microsoft Intune-ban
+# <a name="deploy-apps-with-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör ismerteti azokat a fogalmakat, amelyeknek a megértésére feltétlenül szükség van ahhoz, hogy alkalmazásokat telepítsen a Microsoft Intune-ban.
 
 
-## Alkalmazástelepítési műveletek
+## <a name="app-deployment-actions"></a>Alkalmazástelepítési műveletek
 Az alkalmazások telepítésekor a következő telepítési műveletek közül választhat:
 
 -   **Szükséges telepítés** – az alkalmazás felhasználói beavatkozás nélkül települ az eszközön.
@@ -41,7 +45,7 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 
 -   **Nem alkalmazható** – az alkalmazás nem jelenik meg a vállalati portálon, és nem települ egyik eszközön sem.
 
-#### Az egyes telepítőtípusokhoz elérhető telepítési műveletek
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Az egyes telepítőtípusokhoz elérhető telepítési műveletek
 
 |Telepítő típusa|Szükséges telepítés|Elérhető telepítés|Eltávolítás|Nem alkalmazható|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +62,7 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 > [!TIP]
 > Ha az alkalmazás telepítése során felhasználói és eszközcsoportokat egyaránt megad, az alkalmazást csak **Elérhető telepítés módban** telepítheti.
 
-## A telepítés során fellépő ütközések
+## <a name="deployment-conflicts"></a>A telepítés során fellépő ütközések
 Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik egy eszközre, az alábbi szabályok vonatkoznak:
 
 -   Az eszközcsoport számára végrehajtott telepítések elsőbbséget élveznek a felhasználói csoport számára végrehajtott telepítésekkel szemben. Ha azonban egy alkalmazást az **Elérhető** telepítési művelettel telepít egy felhasználói csoportnak, és ugyanazt az alkalmazást egy eszközcsoportnak is telepíti a **Nem alkalmazható** telepítési művelettel, a felhasználók elérhetik az alkalmazást a vállalati portálon, és telepíthetik azt.
@@ -68,12 +72,7 @@ Arra az esetre, ha ugyanazon telepítési művelettel két telepítés érkezik 
 -   Ha egy eszköz egyszerre kap szükséges és elérhető telepítést, a rendszer kombinálja a műveleteket. Más szóval a kötelező telepítés megkezdése előtt a felhasználó telepítheti az elérhető alkalmazást a vállalati portálról.
 
 
-## További lépések
+## <a name="next-steps"></a>További lépések
 
 Ismerje meg, hogyan [telepíthet alkalmazásokat a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

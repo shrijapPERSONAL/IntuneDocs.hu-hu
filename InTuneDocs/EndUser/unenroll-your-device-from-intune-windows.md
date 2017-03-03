@@ -1,5 +1,5 @@
 ---
-title: "Windows-eszköz regisztrációjának törlése az Intune-ból | Microsoft Intune"
+title: "Windows-eszköz regisztrációjának törlése az Intune-ból | Microsoft Docs"
 description: "Egy Windows-eszköz regisztrációjának törlését mutatja be az Intune-ból"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -27,9 +32,9 @@ Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolá
 
 Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tartalma” résznél látható hivatkozások közül azt, amely megfelel az Ön által használt eszköz típusának:
 
--   [Windows 10-es eszköz regisztrációjának törlése](#unenroll-your-windows-10-device)
--   [Windows 8.1-es számítógép regisztrációjának törlése](#unenroll-your-windows-8-1-computer)
--   [Windows Phone 8.1-es eszköz regisztrációjának törlése](#unenroll-your-windows-phone-8-1-device)
+-    [Windows 10-es eszköz regisztrációjának törlése](#unenroll-your-windows-10-device)
+-    [Windows 8.1-es számítógép regisztrációjának törlése](#unenroll-your-windows-8-1-computer)
+-    [Windows Phone 8.1-es eszköz regisztrációjának törlése](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Windows 10-es eszköz regisztrációjának törlése
 
@@ -62,9 +67,4 @@ Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tarta
 4.  A **Fiók törlése** párbeszédpanelen koppintson a **Törlés** gombra.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
