@@ -1,11 +1,11 @@
 ---
-title: "Hálózati hozzáférés korlátozása a Cisco ISE használatával | Microsoft Intune"
+title: "Hálózati hozzáférés védelme a Cisco ISE használatával | Microsoft Docs"
 description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
+ms.lasthandoff: 01/04/2017
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>A Cisco ISE használata az Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Cisco Identity Services Engine (ISE) Intune-integrációja lehetővé teszi, hogy az Intune eszközregisztrációs és megfelelőségi állapotával hálózati szabályzatokat hozzon létre az ISE-környezetében. Ezekkel a szabályzatokkal biztosíthatja, hogy a céges hálózathoz csak azok az eszközök csatlakozhassanak, amelyeket az Intune felügyel, és amelyek megfelelnek az Intune szabályzatainak.
 
 ## <a name="configuration-steps"></a>Konfigurációs lépés
@@ -64,7 +69,7 @@ b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 > Ellenőrizze a tanúsítvány lejárati dátumát, mert a lejárta után újat kell exportálnia és importálnia.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Önaláírt tanúsítvány létrehozása az ISE alkalmazásban 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Önaláírt tanúsítvány létrehozása az ISE alkalmazásban 
 
 1.  A ISE-konzolon válassza az **Administration** (Felügyelet) > **Certificates** (Tanúsítványok) > **System Certificates** (Rendszertanúsítványok) > **Generate Self Signed Certificate** (Önaláírt tanúsítvány létrehozása) elemet.  
 2.       Exportálja az önaláírt tanúsítványt.
@@ -100,7 +105,7 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 |Oauth 2.0 Token-végpont|Jogkivonatot kibocsátó URL-cím|
 |Frissítse a kódot az ügyfél-azonosítóval|Ügyfél-azonosító|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. lépés: Töltse fel az önaláírt tanúsítványt az ISE-ből az Azure AD-ben létrehozott ISE-alkalmazásba
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. lépés: Töltse fel az önaláírt tanúsítványt az ISE-ből az Azure AD-ben létrehozott ISE-alkalmazásba
 1.     A .cer X509 nyilvános tanúsítványfájlból szerezze be a base64-kódolású tanúsítvány-értéket és ujjlenyomatot. Ez a példa PowerShellt használ:
    
       
@@ -151,7 +156,7 @@ A ISE felügyeleti konzolján adja meg ezeket az értékeket:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Az Intune-bérlő és a Cisco ISE-kiszolgáló által közösen kezelt adatok
 Ez a táblázat felsorolja az Intune-bérlő és a Cisco ISE-kiszolgáló között megosztott adatokat az Intune által felügyelt eszközök esetében.
 
-|Tulajdonság|  Leírás|
+|Tulajdonság|    Leírás|
 |---------------|------------------------------------------------------------|
 |complianceState|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az eszköz megfelelő vagy nem megfelelő.|
 |isManaged|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az ügyfelet az Intune kezeli-e.|
@@ -186,9 +191,4 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 ### <a name="see-also"></a>További információ
 
 [Cisco Identity Services Engine Felügyeleti útmutató, 2.1-es kiadás](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

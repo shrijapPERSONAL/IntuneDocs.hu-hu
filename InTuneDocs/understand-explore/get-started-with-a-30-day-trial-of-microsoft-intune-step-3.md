@@ -1,5 +1,5 @@
 ---
-title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez | Microsoft Intune"
+title: "Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez az ingyenes próbaverzióban | Microsoft Docs"
 description: "Eszközcsoportok és felhasználói csoportok létrehozása a Microsoft Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén."
 keywords: 
 author: lindavr
@@ -12,14 +12,19 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab451a1213923ecd27dfc0b8ca353041e70435ed
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
+ms.lasthandoff: 01/05/2017
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Csoportok létrehozása a próba-előfizetés felhasználóinak és eszközeinek rendszerezésére
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas kezelését teszik lehetővé. A szervezet saját igényeinek megfelelően csoportokat is létrehozhat (például földrajzi hely, részleg vagy hardverjellemzők alapján), amelyekkel számos felügyeleti feladatot elvégezhet, a felhasználói csoportok számára beállított házirendektől az alkalmazások eszközcsoportokra való telepítéséig.
 
 ## <a name="create-a-device-group"></a>Eszközcsoport létrehozása
@@ -58,9 +63,4 @@ A csoportok használatával kapcsolatos további tájékoztatás a [Csoportok ha
 
 ## <a name="next-steps"></a>További lépések
 [Szabályzatok létrehozása](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 
