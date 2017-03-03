@@ -16,8 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
+ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
+ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -43,7 +44,7 @@ Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az aláb
 - [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
 - [Csoportok létrehozása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [A Céges portál konfigurálása](/intune-azure/manage-apps/company-portal-app.md)
+- [A Céges portál konfigurálása](/intune-azure/manage-apps/company-portal-app)
 - Felhasználói licencek hozzárendelése az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Apple MDM push-tanúsítvány beszerzése](get-an-apple-mdm-push-certificate.md)
 - Az iOS-eszközökhöz való fizikai hozzáférés biztosítása
@@ -100,9 +101,4 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 4. Az iOS-eszközön nyissa meg a **Beállítások** alkalmazást, majd válassza az **Általános** > **Eszközkezelés** > **Felügyeleti profil** lehetőséget. Ellenőrizze, hogy a profiltelepítés szerepel-e a listán, valamint ellenőrizze az iOS-házirend korlátozásait és a telepített alkalmazásokat. A házirend-korlátozások és alkalmazások megjelenítése az eszközön akár 10 percet is igénybe vehet.
 
 5. Eszközök terjesztése. Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-nal.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
