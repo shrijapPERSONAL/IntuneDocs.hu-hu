@@ -1,11 +1,11 @@
 ---
-title: "Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft Intune"
+title: "Munkahelyi erőforrás-hozzáférési problémák megoldása | Microsoft Docs"
 description: "A témakörben található hiba- és állapotkódok segítenek az erőforrás-hozzáférési problémák megoldásában."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2640df8eb3f8505320f965ee1f6edbf5d4f8cfe7
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Munkahelyi erőforrás-hozzáférési problémák megoldása a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A témakörben található információkkal háríthatja el a problémákat, amikor egy Microsoft Intune-művelet hibakódot ad vissza.
 
 Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
@@ -370,9 +375,4 @@ Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kér
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-
-
-
-<!--HONumber=Sep16_HO4-->
-
 

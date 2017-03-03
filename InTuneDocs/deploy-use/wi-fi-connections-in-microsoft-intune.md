@@ -1,11 +1,11 @@
 ---
-title: Wi-Fi-kapcsolatok | Microsoft Intune
+title: Wi-Fi-kapcsolatok | Microsoft Docs
 description: "A Wi-Fi profilok használatával segítséget nyújthat a felhasználóknak a Wi-Fi hálózatokhoz való csatlakozáshoz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Az eszközök konfigurálása a vállalati Wi-Fi hálózatokhoz való csatlakozáshoz
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune Wi-Fi profiljaival vezeték nélküli hálózati beállításokat adhat meg a szervezet felhasználói és eszközei számára. Wi-Fi-profil központi telepítése esetén a felhasználók anélkül csatlakozhatnak a vállalati Wi-Fi-hálózathoz, hogy azt maguknak kellene konfigurálniuk.
 
@@ -41,15 +45,13 @@ A Wi-Fi-profilok a következő platformokon telepíthetők:
 
 -   Android 4.0 és újabb verziók
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 és újabb verziók
 
 -   Mac OS X 10.9 és újabb verziók
 
 A Windows 8.1 vagy a Windows 10 operációs rendszer asztali vagy mobil verzióját futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt. További részletek: [Windows rendszerű eszközökhöz készült Wi-Fi konfigurációs profil exportálása és importálása](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet.
 
@@ -178,9 +180,4 @@ Az alábbi táblázatok tartalmazzák az Android-, iOS- és Mac OS X-rendszerek 
 
 ### <a name="see-also"></a>További információ
 A következő cikkből megtudhatja, hogyan hozhat létre Wi-Fi-profilt egy előmegosztott kulccsal: [Wi-Fi-profil létrehozása előmegosztott kulccsal](pre-shared-key-wi-fi-profile.md).
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

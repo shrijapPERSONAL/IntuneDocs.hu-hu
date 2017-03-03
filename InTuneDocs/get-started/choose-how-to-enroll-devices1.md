@@ -1,26 +1,30 @@
 ---
-title: "A mobileszközök regisztrálásának módjai | Microsoft Intune"
+title: "A mobileszközök regisztrálásának módjai | Microsoft Docs"
 description: "Néhány egyszerű kérdés megválaszolásával eldöntheti, hogyan végzi el a mobileszközök beléptetését az Intune-ban"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
-ms.topic: article
+ms.date: 02/16/2017
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 09c2940a99577769df1482314c488acf5823b51f
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="choose-how-to-enroll-mobile-devices"></a>A mobileszközök regisztrálásának módjai
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs módszer a legmegfelelőbb az Ön által felügyelt eszközök számára.
 
@@ -34,9 +38,4 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 - **Felhasználók saját eszközei** – „BYOD-regisztráció” (Bring your own device – hozd a saját eszközöd) – A felhasználók telepítik az eszközeikre az Intune Vállalati portál alkalmazást, majd regisztrálják az eszközöket, így hozzáférhetnek az olyan vállalati erőforrásokhoz, mint a levelezés, a vállalati alkalmazások és adatok, valamint az ügyfélszolgálat.  
 
 - **Vállalati eszközök** A vállalati tulajdonban lévő eszközök többféleképpen is regisztrálhatók a szervezet igényeitől és az eszközök típusától függően.
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

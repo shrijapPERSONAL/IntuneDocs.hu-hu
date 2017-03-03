@@ -1,11 +1,11 @@
 ---
-title: "A Windows Team konfigurációs házirendjének beállításai | Microsoft Intune"
-description: "Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beállításainak konfigurálására használhatja a Windows 10 Team eszközökhöz készült általános konfigurációs házirendjét."
+title: "A Windows Team konfigurációs házirendjének beállításai | Microsoft Docs"
+description: "Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beállításainak konfigurálására használhatja a **Windows 10 Team eszközökhöz készült általános konfigurációs házirendjét**."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 75866e1854211ad42084f3ededaf1e3c0f6d5119
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 136f83a7340424b420e4a487a0758992a802ece3
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# A Windows Team konfigurációs házirendjének beállításai a Microsoft Intune-ban
+# <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>A Windows Team konfigurációs házirendjének beállításai a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beállításainak konfigurálására használhatja a **Windows 10 Team eszközökhöz készült általános konfigurációs házirendjét**.
 
 |Beállítás neve|Részletek|
@@ -34,12 +39,7 @@ Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beál
 |**Zárolási képernyő háttérképének URL-címe**|Engedélyezze ezt a beállítást, ha az Ön által megadott URL-címről egy egyéni hátteret szeretne megjeleníteni a Windows 10 Team-eszközök **Üdvözöljük** képernyőjén.<br /><br />A képnek PNG formátumban kell lennie, és az URL-címnek a **https://** karakterlánccal kell kezdődnie.|
 
 
-### További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-
-<!--HONumber=Oct16_HO4-->
+### <a name="see-also"></a>További információ
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 

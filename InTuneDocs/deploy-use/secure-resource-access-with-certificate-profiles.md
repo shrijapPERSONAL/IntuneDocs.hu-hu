@@ -1,11 +1,11 @@
 ---
-title: "Tanúsítványprofilok az erőforrások eléréséhez | Microsoft Intune"
+title: "Tanúsítványprofilok az erőforrások eléréséhez | Microsoft Docs"
 description: "Biztonságos VPN-, Wi-Fi- és e-mailes hozzáférés az egyes eszközökre telepített tanúsítványok segítségével."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- vagy e-mail-profilokon keresztüli elérését, a hozzáférés biztonságosságáról az egyes felhasználói eszközökön telepített tanúsítványokkal gondoskodhat. Működési elv:
 
 1. Győződjön meg arról, hogy már működik a megfelelő tanúsítványinfrastruktúra a [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md) és a [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md) című témakörben foglaltak szerint.
@@ -44,7 +49,7 @@ Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- 
 
   A következő platformon működő eszközök esetében használjon **SCEP-tanúsítványprofilt**:
     -   Mac OS X 10.9 és újabb verziók
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 Mindegyik platformhoz különálló profilt kell létrehoznia. A profil létrehozásakor társítsa azt a már létrehozott **megbízható főtanúsítvány-profillal**.
 
@@ -58,9 +63,4 @@ Mindegyik platformhoz különálló profilt kell létrehoznia. A profil létreho
 - [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md)
 - [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md)
 - [Intune-tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

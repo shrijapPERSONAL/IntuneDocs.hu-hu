@@ -1,5 +1,5 @@
 ---
-title: "PIN-kód vagy jelszó beállítása | Microsoft Intune"
+title: "PIN-kód vagy jelszó beállítása | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -33,9 +37,4 @@ Az alábbi lépéseket követve állíthatja be a PIN-kódot vagy a jelszót.
 
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

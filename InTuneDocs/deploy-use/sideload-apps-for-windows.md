@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazások közvetlen telepítése Windows és Windows Phone rendszerre | Microsoft Intune"
+title: "Alkalmazások közvetlen telepítése Windows és Windows Phone rendszerre | Microsoft Docs"
 description: "A cikkből megtudhatja, hogyan írhatja alá az üzleti alkalmazásokat, hogy az Intune segítségével telepíthesse őket."
 keywords: 
 author: robstackmsft
@@ -10,13 +10,17 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
+ms.lasthandoff: 12/10/2016
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune-rendszergazdaként telepíthet üzleti alkalmazásokat (köztük a Munkahelyi portál alkalmazást) Windows és Windows 10 Mobile rendszerű eszközökre. Ahhoz, hogy .appx vagy .xap alkalmazásokat telepíthessen Windows 10 vagy a Windows 10 Mobile rendszerű eszközökre, vagy bármilyen üzleti alkalmazást telepíthessen Windows 8.1 vagy Windows Phone 8.1 rendszerű eszközökre, **be kell szereznie a Symantec vállalati mobil-kódaláíró tanúsítványt**. Az ilyen Windows-eszközökön csak a Symantec aláírásával ellátott alkalmazások minősülnek megbízhatónak. A Windows 10-alkalmazások és az „univerzális” alkalmazások esetében használhatja saját hitelesítésszolgáltatóját. Ez a tanúsítvány az alábbiakhoz szükséges:
 
@@ -139,9 +143,4 @@ A Windows és Windows Phone rendszerű mobilalkalmazások telepítésére szolg�
 4.  A feltöltés befejeződése után távolítsa el a vállalati portál régi verzióját a **Szoftverek**  munkaterületről.
 
 5.  Írja alá az összes új és az esetlegesen frissített üzletági alkalmazásokat az új tanúsítvánnyal. A meglévő alkalmazásokat nem kell újra ellátni aláírással és újratelepíteni.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
