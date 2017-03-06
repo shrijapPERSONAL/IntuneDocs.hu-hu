@@ -4,7 +4,7 @@ description: "Az Apple Configurator eszközzel közvetlenül regisztrálhatja a 
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Amikor közvetlenül regisztrál iOS-eszközöket, regisztrálhat egy eszközt a
 9.  Az iOS-eszközön nyissa meg a **Beállítások** alkalmazást, majd válassza az **Általános** &gt; **Eszközkezelés** &gt; **Felügyeleti profil** lehetőséget. Ellenőrizze, hogy a profiltelepítés szerepel-e a listán, valamint ellenőrizze az iOS-házirend korlátozásait és a telepített alkalmazásokat. A házirend-korlátozások és alkalmazások megjelenítése az eszközön akár 10 percet is igénybe vehet.
 
 10.  Eszközök terjesztése. Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-nal.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

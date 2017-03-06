@@ -4,7 +4,7 @@ description: "Biztonságossá teheti felügyelt számítógépeit az Endpoint Pr
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: angrobe
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
