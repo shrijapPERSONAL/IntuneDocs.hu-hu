@@ -193,9 +193,12 @@
 ### [Felügyelt vállalati alkalmazás adatainak törlése](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [A végfelhasználók felkészítése az Intune használatára](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Android-felhasználói alkalmazások letöltése](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS-felhasználói alkalmazások letöltése](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows-felhasználói alkalmazások letöltése](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Android-eszköz használata az Intune-nal](EndUser/using-your-android-device-with-intune.md)
+#### [Android-felhasználói alkalmazások letöltése](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS-eszköz használata az Intune-nal](EndUser/using-your-iOS-or-macos-device-with-intune.md)
+#### [iOS-felhasználói alkalmazások letöltése](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows-eszköz használata az Intune-nal](EndUser/using-your-windows-device-with-intune.md)
+#### [Windows-felhasználói alkalmazások letöltése](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Alkalmazások fejlesztése és testreszabása
 ## [A Microsoft Intune App SDK áttekintése](develop/intune-app-sdk.md)
