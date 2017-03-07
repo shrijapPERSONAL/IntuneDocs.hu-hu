@@ -2,8 +2,8 @@
 title: "Exchange-felügyelet alatt álló mobileszközök törlése | Microsoft Docs"
 description: "A Microsoft Intune lehetővé teszi az Exchange ActiveSync (EAS) által felügyelt mobileszközök tartalmának törlését vagy alaphelyzetbe állítását az Intune Exchange Connector segítségével"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
