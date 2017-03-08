@@ -3,8 +3,8 @@ title: "Apple DEP-tanúsítvány beszerzése az Intune-hoz"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk útmutatással szolgál az Apple-eszközöknek az Intune-ban történő kezeléséhez szükséges leküldéses MDM-tanúsítvány konfigurálásához és feltöltéséhez. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/03/17
 ms.topic: article

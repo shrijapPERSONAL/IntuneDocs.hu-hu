@@ -3,8 +3,8 @@
 title: "A PC-s ügyfélszoftver telepítése | Microsoft Docs"
 description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 

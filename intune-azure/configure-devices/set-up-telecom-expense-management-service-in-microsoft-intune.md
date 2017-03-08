@@ -3,8 +3,8 @@ title: "Távközlésiköltség-kezelő szolgáltatások beállítása"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A Saaswedo távközlésiköltség-kezelő szolgáltatás konfigurálása az Intune-nal való integráláshoz."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

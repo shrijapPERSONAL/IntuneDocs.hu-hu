@@ -3,8 +3,8 @@ title: "Eszközök regisztrálása – készülékregisztráció-kezelő"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk ismerteti, hogyan lehet regisztrálni az eszközöket az Intune-ban a készülékregisztráció-kezelővel. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

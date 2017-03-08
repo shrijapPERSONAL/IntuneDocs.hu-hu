@@ -2,8 +2,8 @@
 title: "Apple DEP-felügyelet iOS-eszközökön | Microsoft Docs"
 description: "Olyan regisztrációs profil telepítése, amely az iOS készülékregisztrációs program (DEP) keretében vásárolt Apple-eszközök felügyelet céljából történő vezeték nélküli regisztrálására szolgál."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

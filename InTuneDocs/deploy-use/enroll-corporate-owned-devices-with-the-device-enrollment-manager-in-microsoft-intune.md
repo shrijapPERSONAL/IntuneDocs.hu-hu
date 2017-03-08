@@ -2,8 +2,8 @@
 title: "Eszközök regisztrálása az eszközregisztráció-kezelővel | Microsoft Docs"
 description: "Az eszközregisztráció-kezelői (DEM-) fiók segítségével nagy számú megosztott, vállalati tulajdonban lévő, egy felhasználói fiókkal rendelkező mobileszköz kezelhető."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ Az eszközregisztráció-kezelő törlése nincs hatással a regisztrált eszkö
 -   A törölt eszközregisztráció-kezelői fiók hitelesítő adatai nem törölhetik vagy vonhatják vissza az eszközöket.
 
 -   A törölt eszközregisztráció-kezelői fiók kapcsolata megmarad a regisztrált fiókokkal, de további eszközöket nem lehet regisztrálni.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

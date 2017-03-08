@@ -2,7 +2,8 @@
 title: "Windows 10 Mobile és Windows Phone rendszerű telefonok felügyeletének beállítása | Microsoft Docs"
 description: "Mobileszközök felügyeletének (MDM) engedélyezése, Microsoft Intune-nal rendelkező Windows 10 Mobile- vagy Windows Phone-eszközökhöz."
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

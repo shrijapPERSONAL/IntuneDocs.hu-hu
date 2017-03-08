@@ -2,8 +2,8 @@
 title: "Az adatok védelme távoli törléssel | Microsoft Docs"
 description: "Az Intune a szelektív és a teljes törlési funkcióval is eltávolíthatja a bizalmas vállalati adatokat, valamint a vállalati erőforrásokhoz való hozzáférést."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
 ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -170,9 +171,4 @@ A jelentésben az is szerepel, hogy ki végezte az adott műveletet.
 [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md)
 
 [Eszközadatok törlése a Windows szelektív törlési funkciójával](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

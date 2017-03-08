@@ -2,8 +2,8 @@
 title: "Hardver- és szoftverleltár megtekintése Windows rendszerű számítógépeken | Microsoft Docs"
 description: "Az Intune szoftverügyfél által kezelt Windows-számítógépek hardver- és szoftverinformációinak megtekintése."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

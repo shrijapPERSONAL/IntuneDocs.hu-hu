@@ -3,8 +3,8 @@ title: "Az eszközök teljes vagy szelektív törlése Intune használatával"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Megtudhatja, hogyan kezdeményezhet szelektív törlést a vállalati adatok eltávolítása érdekében, illetve teljes törlést az eszköz gyári beállításainak visszaállításához."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

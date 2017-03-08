@@ -3,8 +3,8 @@ title: "Windowsos eszközök regisztrálása"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: az Intune mobileszköz-felügyelet (MDM) engedélyezése windowsos eszközökre."
 keywords: 
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -84,9 +85,4 @@ Engedélyezheti a felhasználók számára, hogy telepítsék és regisztráljá
     A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
 Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati portált.  A felügyeleti konzol 2. és 3. lépése biztonsággal figyelmen kívül hagyható.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

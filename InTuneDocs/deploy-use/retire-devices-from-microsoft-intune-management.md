@@ -2,8 +2,8 @@
 title: "Eszközök kivonása | Microsoft Docs"
 description: "Az Intune a házirend és a vállalati portál szelektív és teljes törlését is támogatja az eszközök az Intune-kezelésből való eltávolításához."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
 ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -77,9 +78,4 @@ Egyes esetekben maga az eszköz éri el életciklusának végét. Ilyen esetekbe
 
 ### <a name="see-also"></a>További információ
 [Adatok védelme teljes vagy szelektív törléssel](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

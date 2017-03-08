@@ -2,8 +2,8 @@
 title: "iOS-eszközök közvetlen regisztrációja | Microsoft Docs"
 description: "Az Apple Configurator eszközzel közvetlenül regisztrálhatja a vállalati tulajdonú iOS-eszközöket egy előre meghatározott szabályzattal. Ehhez csatlakoztassa azokat USB-kapcsolattal egy Mac géphez."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

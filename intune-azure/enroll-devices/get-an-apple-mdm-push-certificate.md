@@ -3,8 +3,8 @@ title: "Apple MDM push-tanúsítvány beszerzése"
 titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: Az Apple MDM Push-tanúsítvány beszerzéséhez szükséges lépések ismertetése az iOS-eszközök Intune-os felügyeletéhez."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

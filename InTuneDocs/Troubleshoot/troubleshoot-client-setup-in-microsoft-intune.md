@@ -2,8 +2,8 @@
 title: "Az ügyfél beállításának hibaelhárítása | Microsoft Docs"
 description: "Az ügyfelek beállításával kapcsolatban gyakran előforduló problémák elhárítása."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

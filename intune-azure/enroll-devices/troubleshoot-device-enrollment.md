@@ -3,8 +3,8 @@ title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Az eszközök regisztrálásával kapcsolatos problémák elhárítása."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -388,9 +389,4 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben leírtak szerint.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

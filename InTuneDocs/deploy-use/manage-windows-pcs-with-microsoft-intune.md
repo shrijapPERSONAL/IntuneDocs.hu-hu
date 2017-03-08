@@ -2,8 +2,8 @@
 title: "Számítógépek felügyelete az ügyfélszoftverrel | Microsoft Docs"
 description: "Windows rendszerű számítógépek felügyelete az Intune ügyfélszoftverrel."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Felhasználók és eszközök összekapcsolásának felügyelete Windows rendszerű számítógépekhez | Microsoft Docs"
 description: "Hogyan kapcsoljon össze egy felhasználót egy Intune felügyelte Windows rendszerű számítógéppel."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

@@ -3,8 +3,8 @@ title: "iOS-eszközök regisztrálása az Apple Configurator és közvetlen regi
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató a vállalati tulajdonban lévő iOS-eszközök az Apple Configuratorral való közvetlen regisztrációjához."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

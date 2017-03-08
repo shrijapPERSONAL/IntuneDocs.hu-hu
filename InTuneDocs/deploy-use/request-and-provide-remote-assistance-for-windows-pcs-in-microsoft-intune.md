@@ -2,8 +2,8 @@
 title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez | Microsoft Docs"
 description: "Végfelhasználói és rendszergazdai lépések a PC-ként felügyelt Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

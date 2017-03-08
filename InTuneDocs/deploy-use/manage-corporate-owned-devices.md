@@ -2,8 +2,8 @@
 title: "Vállalati tulajdonú eszközök felügyelete | Microsoft Docs"
 description: "A vállalat által birtokolt eszközöket többféleképpen regisztrálhatja az eszköz típusa, megvásárlásának módja és a szervezet igényei alapján."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ Az Intune az alábbi feltételek bármelyikének teljesülése esetén „céges
  - Az eszköz regisztrálva van az [Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (csak Windows 10 esetén).
 
 Ha egy eszköz vállalati tulajdonúként lett megjelölve, az eszköz bejegyzésénél a **Céges** szöveg jelenik meg a **Tulajdonos** oszlopban a felügyeleti konzolon. 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

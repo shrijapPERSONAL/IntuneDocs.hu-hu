@@ -3,8 +3,8 @@ title: "Mobileszköz-felügyeleti szolgáltató megadása"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A mobileszköz-felügyeleti szolgáltató megadása az Intune-ban. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -43,9 +44,4 @@ A mobileszköz-felügyeleti szolgáltató beállítás szabja meg, hogy miként 
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Áttekintés** elemet.
 
 3. Az **Eszközök kezelésének indítása** panelen válassza **A Microsoft Intune beállítása mobileszköz-kezelő szolgáltatóként** lehetőséget. Egy üzenet jelzi, hogy az Intune-t sikeresen beállította mobileszköz-kezelő szolgáltatónak.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

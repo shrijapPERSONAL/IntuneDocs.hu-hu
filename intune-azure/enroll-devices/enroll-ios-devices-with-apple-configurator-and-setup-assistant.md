@@ -3,8 +3,8 @@ title: "iOS-eszközök regisztrálása – az Apple Configurator és a Beállít
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Ismerje meg, hogyan regisztrálhatja a vállalat által birtokolt iOS-eszközöket az Apple Configurator és a Beállítási asszisztens használatával."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

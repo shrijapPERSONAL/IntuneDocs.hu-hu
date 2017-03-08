@@ -3,8 +3,8 @@ title: "Apple Configurator-sorozatszámok hozzáadása"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk azt ismerteti, hogyan lehet sorozatszámokat hozzáadni a vállalati eszközökhöz az Apple Configurator használatával."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

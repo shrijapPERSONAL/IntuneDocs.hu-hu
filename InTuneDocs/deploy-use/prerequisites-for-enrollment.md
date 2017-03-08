@@ -2,8 +2,8 @@
 title: "Mobileszközök regisztrálásának előfeltételei | Microsoft Docs"
 description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

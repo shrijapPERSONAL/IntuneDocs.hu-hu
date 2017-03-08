@@ -3,8 +3,8 @@ title: "A használati feltételek beállítása a Microsoft Intune-ban"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikk ismerteti, hogyan lehet beállítani azokat a feltételeket és kikötéseket, amelyeket a felhasználók az Intune munkahelyi portálján látnak. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

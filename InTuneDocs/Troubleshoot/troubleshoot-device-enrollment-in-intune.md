@@ -2,8 +2,8 @@
 title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Docs"
 description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "iOS-eszközök regisztrálása a Beállítási asszisztenssel | Microsoft Docs"
 description: "A vállalat tulajdonában lévő iOS-eszközök regisztrálása az Apple Configurator eszköz segítségével a gyári beállítások visszaállításhoz és az eszköznek a Beállítási asszisztens futtatására való felkészítéséhez"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
 ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -186,9 +187,4 @@ Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Amikor a f
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

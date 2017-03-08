@@ -2,8 +2,8 @@
 title: "A Windows rendszerű számítógépek általános felügyeleti feladatai | Microsoft Docs"
 description: "Az Intune-szoftverügyfélt futtató Windows rendszerű számítógépek felügyeletének különböző módozatai."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

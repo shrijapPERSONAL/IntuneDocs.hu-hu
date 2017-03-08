@@ -2,8 +2,8 @@
 title: "Kapcsolatfelvétel a telefonos tanácsadással | Microsoft Docs"
 description: "A Microsoft Intune ügyfélszolgálatának telefonszámai."
 keywords: "munkaidő"
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -118,9 +119,4 @@ ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
 |Uruguay|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Uruguayi nyári idő szerint (UTC -2)|Spanyol&#42; és angol|000-411-002-7131||
 |Venezuela|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Venezuelai téli idő szerint (UTC -4:30)|Spanyol&#42; és angol|0-800-100-8763||
 &#42; Telefonos tolmácsolási szolgáltatással.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

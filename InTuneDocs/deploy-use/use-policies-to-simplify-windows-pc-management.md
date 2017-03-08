@@ -2,8 +2,8 @@
 title: "A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával | Microsoft Docs"
 description: "Ismerteti a Windows rendszerű számítógép-kezelési szabályzatokat és a Microsoft Intune Center beállításait."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
