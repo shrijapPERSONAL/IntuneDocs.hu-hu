@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: jieyan
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -54,9 +55,4 @@ Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisz
 4.    Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

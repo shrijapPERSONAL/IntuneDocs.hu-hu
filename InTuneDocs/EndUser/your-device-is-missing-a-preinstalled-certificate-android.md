@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: e0aaa48e46e547d4853478fdbb80711700a9c22a
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -48,9 +50,4 @@ A probléma megoldásához a megfelelő tanúsítványra lesz szüksége a [Digi
 > Ha a tanúsítvány telepítése nem oldja meg a problémát és egy újabb „hiányzó tanúsítvány” hibaüzenetet kap, további lépések szükségesek a [hiányzó tanúsítvány telepítéséhez](your-device-is-missing-an-IT-required-certificate-android.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Céges portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

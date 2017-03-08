@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ Ha az eszköz csak vállalati e-mailek fogadására van beállítva, és törli 
 A regisztráció törlésének utasításaiért lásd: [Az eszköz Intune-regisztrációjának törlése a Vállalati portál alkalmazással](unenroll-your-device-from-intune-android.md).
 
 Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a [Microsoft Android-csapatának](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

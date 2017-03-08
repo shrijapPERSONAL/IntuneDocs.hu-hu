@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset
 |Számítógépek és laptopok|**Windows 8.1 és Windows 8**<br />Windows 8 vagy Windows 8.1 rendszert futtató számítógép nem állítható alaphelyzetbe, kivéve, ha kizárólag e-mailek elérésére használják.<br /><br />**Windows 7 vagy Windows Vista**<br />Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.|
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 207297601634f390051a6345b96bf09e1d031747
 ms.openlocfilehash: 6b37cede797f965b82c067b274517277d8597939
+ms.lasthandoff: 01/12/2017
 
 ---
 
@@ -41,9 +42,4 @@ Az első lépésként ellenőrizze, hogy eszközén [hiányzik-e egy olyan tanú
 Ha ez nem hoz eredményt, a rendszergazda [a fokozott biztonság érdekében második tanúsítvány telepítésre kötelezheti](your-device-is-missing-an-IT-required-certificate-android.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

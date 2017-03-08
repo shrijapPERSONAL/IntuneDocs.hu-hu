@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -34,9 +35,4 @@ Ha az Intune-ban próbálja meg regisztrálni iOS vagy macOS rendszerű eszköz�
 3. Írja be az eszköz sorozatszámának utolsó négy számjegyét, hogy az Intune ellenőrizhesse az regisztrációs állapotát. A sorozatszám megkereséséhez lásd: [Hogyan találhatom meg az eszköz sorozatszámát?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Ha iOS rendszerű eszközén hibaüzenet jelenik meg a Céges portál alkalmazá
 -   A Céges portál alkalmazásba belépve rázza meg az eszközt, majd a diagnosztikai riasztás megjelenésekor koppintson az **E-mail küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

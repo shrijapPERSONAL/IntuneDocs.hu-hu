@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,9 +33,4 @@ Miután regisztrálta androidos eszközét az Intune-ban, a *Részletes naplóz�
 A részletes naplózás be- vagy kikapcsolásához jelentkezzen be a Vállalati portál alkalmazásba a munkahelyi vagy az iskolai fiókjával, koppintson a **Beállítások** elemre, és kapcsolja be vagy ki a **Részletes naplózás** beállítást.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

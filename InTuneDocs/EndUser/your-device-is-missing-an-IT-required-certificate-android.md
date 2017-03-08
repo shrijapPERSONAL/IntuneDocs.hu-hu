@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: 88770ba06718a767f8229e1b5aa4d543c87bc852
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -70,9 +72,4 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 7. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával.
 
 Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a rendszergazda segítségével telepíteni kell. Kérje a rendszergazda segítségét a [Céges portál webhelyen](http://portal.manage.microsoft.com) található elérhetőségeken.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

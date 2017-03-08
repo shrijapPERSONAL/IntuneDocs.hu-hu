@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
 ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -49,9 +50,4 @@ PIN-kóddal vagy jelszóval kapcsolatos problémák leírása:
 - **A jelszó nem elég bonyolult**. A rendszergazda előírja, hogy még több szám, nagybetű és speciális karakter legyen a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #. Ez az eszközön lévő más fiókokra is igaz lehet, tehát mindenképpen ellenőrizze az egyéb munkahelyi fiókokat, hogy a jelszó megfeleljen az informatikai részleg által az eszköz számára előírt követelményeknek.
 
 Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
