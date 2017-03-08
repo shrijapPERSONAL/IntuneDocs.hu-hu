@@ -1,11 +1,11 @@
 ---
-title: "Konzolnézetek testre szabása rendszergazdai szerepkörökhöz | Microsoft Intune"
+title: "Konzolnézetek testre szabása rendszergazdai szerepkörökhöz | Microsoft Docs"
 description: "Az ebben a témakörben található információk segítenek úgy megszűrni az Intune rendszergazdai konzolnézeteit, hogy a rendszergazdák csak azokat az elemeket lássák, amelyekre a szerepkörük szerint szükségük van."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Az Intune-konzolnézetek testre szabása a rendszergazdai szerepköröknek megfelelően
+# <a name="customize-intune-console-views-according-to-admin-roles"></a>Az Intune-konzolnézetek testre szabása a rendszergazdai szerepköröknek megfelelően
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége van arra, hogy a rendszergazdáknak csak azokat az elemeket jelenítse meg, amelyeket az adott szerepkör esetén látniuk kell. Engedélyezheti például, hogy kizárólag a felügyeleti konzol operátorai frissíthessék a kártevő szoftverek meghatározásait vagy állíthassák alaphelyzetbe az eszközök jelszavait. Ezt úgy hajthatja végre, ha előre definiált **megjelöléseket** használ, amelyeket az adott felhasználókhoz rendel. A felügyeleti konzol használatakor e felhasználók kizárólag a megjelölésüknek megfelelő elemeket fogják látni.
 
-## Egyéni nézet létrehozása
+## <a name="to-create-a-custom-view"></a>Egyéni nézet létrehozása
 
 1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Szolgáltatás-rendszergazdák** elemet.
 
@@ -66,9 +71,4 @@ A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége v
         -   Új PIN-kód kérése
 
 Amikor az így beállított rendszergazda legközelebb megnyitja az Intune felügyeleti konzolt, az Ön által megadott hozzáférési szintet kapja meg.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

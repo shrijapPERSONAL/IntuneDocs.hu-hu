@@ -1,5 +1,5 @@
 ---
-title: "A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal | Microsoft Intune"
+title: "A vállalati erőforrások hozzáférésének engedélyezése | Microsoft Docs"
 description: "A Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a szükséges fájlokhoz és erőforrásokhoz."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune-alapú Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a munkájuk elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is. A hozzáférés védelmét tanúsítványprofilok segítik.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>A [Wi-Fi-profilok](wi-fi-connections-in-microsoft-intune.md) és a támogatott platformok
@@ -54,9 +59,4 @@ Segít a vállalati erőforrások elérésének biztonságossá tételében, bel
 |Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Igen|Igen|Igen|Igen|Igen|
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "MAM-szabályzatok konfigurálása az Intune-konzolban | Microsoft Intune"
+title: "MAM-szabályzatok konfigurálása az Intune-konzolban | Microsoft Docs"
 description: "A Microsoft Intune mobilalkalmazás-felügyeleti szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune mobilalkalmazás-felügyeleti (MAM) szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival. Például korlátozhatja a felügyelt alkalmazások kivágási, másolási és beillesztési műveleteit, vagy konfigurálhat egy alkalmazást arra, hogy az összes webes hivatkozás egy felügyelt böngészőben nyíljon meg.
 
 A mobilalkalmazás-kezelési házirendek a következőket támogatják:
@@ -71,7 +76,7 @@ Az Outlook alkalmazás használata esetén például:
 
 -   **5. lépés:** Az alkalmazás telepítésének figyelése.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>1. lépés: Hivatkozás beszerzése egy szabályzat által felügyelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>1. lépés: Hivatkozás beszerzése egy szabályzat által felügyelt alkalmazáshoz, becsomagolt alkalmazás létrehozása, vagy az Intune App SDK használata MAM-kompatibilis alkalmazások írásához
 
 Az alkalmazásáruházban keresse meg és jegyezze fel a telepíteni kívánt, szabályzat által felügyelt alkalmazásnak az URL-címét. Az iPadhez készült Microsoft Word alkalmazás URL-címe például a következő: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -191,9 +196,4 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 -   Ha egy házirend már alkalmazva lett az eszközre, a meglévő házirend-beállítások nem íródnak felül.
 
 -   Ha még nem lett alkalmazva házirend az eszközre, és két ütköző beállítás van használatban, az eszközbe épített alapértelmezett beállítás használatos.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazások telepítése | Microsoft Intune"
+title: "Alkalmazások telepítése | Microsoft Docs"
 description: "A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,16 @@ ms.technology:
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
-ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.lasthandoff: 12/30/2016
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében.
 
@@ -69,9 +73,4 @@ Ha az alkalmazást iOS-eszközök számára **Kötelező**-ként telepítette, a
 ## <a name="next-steps"></a>További lépések
 
 Miután telepít egy alkalmazást, érdemes figyelnie a telepítés előrehaladását. További információ: [Alkalmazások figyelése a Microsoft Intune-ban](monitor-apps-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

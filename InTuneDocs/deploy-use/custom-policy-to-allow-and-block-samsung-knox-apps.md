@@ -1,5 +1,5 @@
 ---
-title: "Engedélyezett és letiltott alkalmazások KNOX-hoz | Microsoft Intune"
+title: "Engedélyezett és letiltott alkalmazások KNOX-hoz | Microsoft Docs"
 description: "Egyéni profil engedélyezett és letiltott alkalmazások listájának létrehozásához KNOX-eszközökön."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Egyéni szabályzat használata alkalmazások engedélyezéséhez és letiltásához Samsung Knox Standard-eszközökön
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ennek a témakörnek az eljárásait használva elkészíthet egy egyéni Microsoft Intune-szabályzatot, amellyel az alábbiak egyikét hozhatja létre:
 
@@ -38,9 +42,9 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
     
     - **A beállítás neve:** Írja be a következőt: **PreventStartPackages**.
     - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „Nem futtatható alkalmazások listája”.
-    -   **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
-    -   **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Érték:** Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
+    -     **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
+    -     **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -     **Érték:** Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
 
     Azon alkalmazások listájához, amelyek telepítése engedélyezett a felhasználók számára a Google Play áruházból, miközben minden más alkalmazás le van tiltva:
 
@@ -69,9 +73,4 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 ### <a name="see-also"></a>További információ
 [Android- és Samsung KNOX-eszközök konfigurációs szabályzatának beállításai a Microsoft Intune-ban](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

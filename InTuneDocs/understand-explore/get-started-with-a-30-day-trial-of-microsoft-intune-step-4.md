@@ -1,11 +1,11 @@
 ---
-title: "Szabályzatok létrehozása és alkalmazások közzététele a felhasználók számára | Microsoft Intune"
+title: "Szabályzatok létrehozása és alkalmazások közzététele a felhasználók számára | Microsoft Docs"
 description: "Szabályzatok létrehozása és egy alkalmazás közzététele az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
+ms.lasthandoff: 12/14/2016
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Szabályzatok létrehozása és alkalmazások közzététele a próbaidőszak felhasználói számára
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune-szabályzatok lehetőséget biztosítanak a mobileszközök biztonsági beállításainak kezelésére, a Windows tűzfal és az Endpoint Protection szolgáltatás számítógépeken alkalmazott beállításainak karbantartására, illetve alkalmazások telepítésére. Ha azt tervezi, hogy az Intune szolgáltatást olyan eszközökön használja majd, amelyeket a próbaidőszakot követő üzemi használatra konfigurált, elengedhetetlen fontosságú, hogy kövesse [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), illetve a [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) című témakörben szereplő utasításokat.
 
 Az Intune használatával az alkalmazásokat kétféle módon telepítheti. Az első egy **kötelező telepítés**, amely az adott alkalmazást automatikusan telepíti a felügyelt eszközökre. A másik egy **elérhető telepítés**, mely telepíti az adott alkalmazást, vagy létrehoz egy hozzá kapcsolódó hivatkozást az Intune Vállalati portálon, így a felhasználók maguk dönthetik el, hogy a számítógépükre vagy a mobilkészülékükre telepítik az alkalmazást.
@@ -99,9 +104,4 @@ További tudnivalók az [Intune funkcióival](get-started-with-a-30-day-trial-of
 Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md)
 
 Átállás a [fizetős verzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

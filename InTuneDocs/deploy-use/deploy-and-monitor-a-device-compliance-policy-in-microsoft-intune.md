@@ -1,5 +1,5 @@
 ---
-title: "Megfelelőségi szabályzat üzembe helyezése és figyelése | Microsoft Intune"
+title: "Megfelelőségi szabályzat üzembe helyezése és figyelése | Microsoft Docs"
 description: "Használja az ebben a témakörben található részletes útmutatót az eszközmegfelelőségi szabályzat üzembe helyezéséhez és figyeléséhez."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Eszközmegfelelőségi szabályzat üzembe helyezése és figyelése a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Megfelelőségi házirend telepítése
 Léptesse életbe a [létrehozott](create-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot szervezete egy vagy több felhasználócsoportjára vonatkozóan. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi.
 
@@ -67,9 +72,4 @@ Arról, hogy miképpen korlátozhatja a szervezet szolgáltatásaihoz való hozz
 
 ### <a name="see-also"></a>További információ
 [Az Intune eszközmegfelelőségi szabályzatainak bemutatása](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

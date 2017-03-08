@@ -1,5 +1,5 @@
 ---
-title: "PFX-tanúsítványinfrastruktúra konfigurálása | Microsoft Intune"
+title: "PFX-tanúsítványinfrastruktúra konfigurálása | Microsoft Docs"
 description: ".PFX-tanúsítványprofilok létrehozása és telepítése."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Tanúsítványinfrastruktúra konfigurálása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör a PFX-tanúsítványprofilok létrehozásával és telepítésével kapcsolatos tudnivalókat ismerteti.
 
 Ha bármilyen tanúsítványalapú hitelesítést szeretne végrehajtani a szervezetben, szüksége lesz egy vállalati hitelesítésszolgáltatóra.
@@ -31,7 +36,7 @@ A PFX-tanúsítványprofilok használatához a vállalati hitelesítésszolgált
 
 -  A hitelesítésszolgáltatóval kommunikálni képes számítógépen futó Intune Certificate Connector.
 
-## <a name="onpremises-infrastructure-description"></a>A helyszíni infrastruktúra leírása
+## <a name="on-premises-infrastructure-description"></a>A helyszíni infrastruktúra leírása
 
 
 -    **Active Directory-tartomány**: A jelen szakaszban felsorolt összes kiszolgálónak (a webalkalmazás-proxykiszolgáló kivételével) csatlakoznia kell a szervezet Active Directory-tartományához.
@@ -65,7 +70,7 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania a következ
 - **1. feladat** – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál.
 - **2. feladat** – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>1. feladat – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>1. feladat – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 Ebben a feladatban teszi közzé a tanúsítványsablont.
 
 ##### <a name="to-configure-the-certification-authority"></a>A hitelesítésszolgáltató konfigurálásához
@@ -104,7 +109,7 @@ Ebben a feladatban teszi közzé a tanúsítványsablont.
 
 4.  A hitelesítésszolgáltató számítógépen győződjön meg róla, hogy az Intune Certificate Connector gazdagépe rendelkezik regisztrálási engedéllyel, hogy hozzáférhessen a .PFX-profil létrehozásakor használt sablonhoz. Állítsa be az engedélyt a hitelesítésszolgáltató számítógép tulajdonságainak **Biztonság** lapján.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>2. feladat – Az Intune tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>2. feladat – Az Intune tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
 A feladat tartalma:
 
 A tanúsítvány-összekötő letöltése, telepítése és konfigurálása.
@@ -153,9 +158,4 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása.
 
 ### <a name="next-steps"></a>További lépések
 Ezzel készen áll a tanúsítványprofilok létrehozására; erről a következő témakörben olvashat: [Tanúsítványprofilok konfigurálása](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
