@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
@@ -34,6 +35,7 @@ Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolá
 |macOS|Nem támogatott|
 |iOS|Támogatott|
 |Android|Támogatott|
+|Android for Work|Támogatott|
 |Windows 10 (mobilverzió)|Támogatott|
 |Windows 10 (asztali verzió)|Nem támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
@@ -61,6 +63,7 @@ Ha egy felhasználó elfelejti a PIN-kódját, segítségként eltávolíthatja 
 |macOS|Nem támogatott|
 |iOS|Csak a PIN-kód eszközről való törlése támogatott. Nem lehet új ideiglenes PIN-kódot létrehozni.|
 |Android|Az Android 7.0-nál régebbi verziói támogatottak. Létrehoz egy ideiglenes jelszót.|
+|Android for Work|Nem támogatott|
 |Windows 10 mobil verzió|Támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1|Nem támogatott|
@@ -83,9 +86,4 @@ Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogat
 
 ### <a name="see-also"></a>További információ
 [Eszköz kivonása](retire-devices-from-microsoft-intune-management.md), illetve [a Windowsban elérhető, az eszközadatok felügyeletére szolgáló szelektív törlési funkció ismertetése](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

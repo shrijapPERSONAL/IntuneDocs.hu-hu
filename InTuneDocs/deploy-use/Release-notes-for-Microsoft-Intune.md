@@ -2,10 +2,10 @@
 title: "A Microsoft Intune kibocsátási megjegyzései | Microsoft Docs"
 description: "Az Intune kibocsátási megjegyzései"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -28,21 +28,21 @@ ms.lasthandoff: 12/10/2016
 
 A Microsoft Intune egy integrált, felhőalapú ügyfél-felügyeleti megoldás, amely az eszközöket, jelentéseket és a Windows a legújabb verziójára történő frissítést lehetővé tevő licenceket biztosít. Emellett elősegíti a számítógépek naprakészen tartását és védelmét. Ezenkívül az Intune lehetővé teszi a hálózathoz csatlakoztatott mobileszközök kezelését az Exchange ActiveSync szolgáltatással vagy közvetlenül az Intune-ban. Az alábbi kibocsátási megjegyzések a Microsoft Intune-nal kapcsolatos fontos információkat és ismert problémákat ismertetik.
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>Az Android-felhasználók nem tudnak e-mailt küldeni, ha az Exchange Online-hoz feltételes hozzáférést megvalósították
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**Probléma:** Az eszközükön Samsung Android 5.1.1-es vagy újabb rendszert futtató felhasználók nem tudnak e-mailt küldeni, ha az Exchange Online-hoz feltételes hozzáférés van beállítva. A Samsung elismerte, hogy a hiba az Android 5.1.1-es és újabb rendszerek beépített e-mail-ügyfélprogramjában van, és vizsgálja a javítás lehetőségét.
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**1. megkerülő megoldás:** Javasolja a végfelhasználóknak, hogy használják az Androidhoz készült Outlook alkalmazást.
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**2. megkerülő megoldás:** Ahhoz, hogy az érintett felhasználók e-mail-üzeneteket küldhessenek, hajtsa végre a következő lépéseket:
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. Minden egyes érintett felhasználót vegye fel egy olyan biztonsági csoportba, amely az Exchange Online feltételes hozzáférési szabályzatának „kivétel alá eső csoportok” részébe tartozik.
-2. Engedélyezze a felhasználó számára, hogy szinkronizálja az e-mailjeit a beépített e-mail-ügyfélprogrammal.
-3. Távolítsa el az érintett felhasználót a kivétel alá eső csoportból, majd győződjön meg arról, hogy a felhasználó már tud e-mailt küldeni.
-
-A Microsoft továbbra is szorosan együttműködik a Samsunggal a javítás vagy a további megkerülő megoldások kidolgozásában.
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>Az iOS és az Android rendszer esetében előfordulhat, hogy csoportváltás alkalmával sikertelen lesz az erőforrás-hozzáférési profilok módosítása
