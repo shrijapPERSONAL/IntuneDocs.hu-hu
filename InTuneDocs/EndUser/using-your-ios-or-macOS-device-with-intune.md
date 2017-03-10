@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Számos módon könnyítheti meg munkáját az Intune segítségével. Az alább
 
 - [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 - [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md)
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md)

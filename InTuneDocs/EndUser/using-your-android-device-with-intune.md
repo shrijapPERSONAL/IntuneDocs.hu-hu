@@ -43,7 +43,6 @@ Számos módon könnyítheti meg munkáját az Intune segítségével. Az alább
 - [PIN-kód vagy jelszó beállítása](set-your-pin-or-password-android.md)
 - [A vállalat virtuális magánhálózatának (VPN-jének) telepítése](install-your-companys-virtual-private-network-VPN-android.md)
 - [Annak az időtartamnak a beállítása, amely után az eszköz zárolva lesz](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md)
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-android.md)
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-android.md)

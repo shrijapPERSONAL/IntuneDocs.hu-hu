@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,8 +30,9 @@ Az Enterprise Mobility + Security (EMS) feltételes hozzáférés használatáva
 ## <a name="how-does-conditional-access-work"></a>Hogyan működik a feltételes hozzáférés?
 A rendszer a megfelelőségi szabályok beállításai alapján ellenőrizheti az eszköz megfelelőségét. A feltételes hozzáférési szabályzat ennek az ellenőrzésnek az eredménye alapján engedélyezi vagy korlátozza a hozzáférést az adott szolgáltatásokhoz. A feltételes hozzáférési szabályzat és az eszközmegfelelőségi szabályzat együttes alkalmazásával elérheti, hogy a szolgáltatáshoz csak megfelelő eszközök férhessenek hozzá. A megfelelőségi szabályzat és a feltételes hozzáférési szabályzat telepítve van a felhasználónál. A rendszer minden olyan eszköz megfelelőségét ellenőrzi, amelyről a felhasználó használja a szolgáltatásokat.
 
-Ne feledje, hogy ahhoz, hogy a rendszer képes legyen az eszköz megfelelőségének ellenőrzésére, az eszközt használó felhasználóra vonatkozóan megfelelőségi szabályzatot kell alkalmazni.
-Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
+> [!IMPORTANT] 
+> Ne feledje, hogy ahhoz, hogy a rendszer képes legyen az eszköz megfelelőségének ellenőrzésére, az eszközt használó felhasználóra vonatkozóan megfelelőségi szabályzatot kell alkalmazni.
+> Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
 
 Ha az eszközök nem felelnek meg a szabályzatokban megadott feltételeknek, a rendszer végigvezeti a végfelhasználót az eszköz regisztrálásának és az eszköz kompatibilitását megakadályozó problémák megoldásának a folyamatán.
 
@@ -80,9 +82,4 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
   - [Feltételes hozzáférési szabályzat létrehozása a SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása a Skype Vállalati online verziójához](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása a Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
