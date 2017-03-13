@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a 
 
 A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Kapcsolat típusa|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Igen|Igen|Igen|Igen|Igen|Igen|
 |Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
