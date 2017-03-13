@@ -1,5 +1,6 @@
 ---
-title: "Alkalmazások hozzárendelése csoportokhoz | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Alkalmazások hozzárendelése csoportokhoz"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes hozzárendelni felhasználók vagy eszközök csoportjaihoz."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 
 > [!NOTE]
 > Jelenleg (mind üzletági, mind pedig áruházbeli) iOS- és Android-alkalmazásokat rendelhet hozzá azokhoz az eszközökhöz, melyek nincsenek regisztrálva az Intune-ban.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Változások az alkalmazások csoportokhoz való hozzárendelésében az Intune előzetesben
+
+Az Intune az Azure-on előzetesében az alkalmazások hozzárendeléséhez már nem használatosak az Intune-csoportok. Helyettük Azure Active Directory (Azure AD) biztonsági csoportokat kell használni. Ezért érdemes megismerkednie az alkalmazás-hozzárendeléseket érintő bizonyos változásokkal, különösen ha Intune-gyermekcsoportokhoz rendelt hozzá alkalmazásokat.
+A legfontosabb változás, hogy az Azure AD-ben nem alkalmazzuk a gyermekcsoport fogalmát. Ezzel együtt bizonyos csoportok rendelkezhetnek ugyanazokkal a tagokkal. Ilyen esetekben a klasszikus Intune és az Intune az Azure-on viselkedése eltér egymástól. Ez az alábbi táblázatban látható:
+
+||||||
+|-|-|-|-|-|
+|**Klasszikus Intune (a bérlő áttelepítése előtt)**|-|**Intune az Azure-on (a bérlő áttelepítése után)**|-|**További információ**|
+|**Üzembe helyezési szándék a szülőcsoportban**|**Üzembe helyezési szándék a gyermekcsoportban**|**Az előző szülő- és gyermekcsoport tagjai számára érvényesülő hozzárendelési szándék**|**A szülőcsoport tagjai számára érvényesülő hozzárendelési szándék**|-|    
+|Elérhető|Kötelező|Kötelező és elérhető|Elérhető|A „kötelező és elérhető” azt jelenti, hogy a kötelezőként hozzárendelt alkalmazások a Vállalati portál alkalmazásban is megjelennek.
+|Nem alkalmazható|Elérhető|Nem alkalmazható|Nem alkalmazható|Megkerülő megoldás: távolítsa el a „Nem alkalmazható” üzembe helyezési szándékmegjelölést az Intune szülőcsoportból.
+|Kötelező|Elérhető|Kötelező és elérhető|Kötelező|-|
+|Kötelező és elérhető<sup>1</sup>|Elérhető|Kötelező és elérhető|Kötelező és elérhető|-|    
+|Kötelező|Nem alkalmazható|Kötelező|Kötelező|-|    
+|Kötelező és elérhető|Nem alkalmazható|Kötelező és elérhető|Kötelező és elérhető|-|    
+|Kötelező|Eltávolítás|Kötelező|Kötelező|-|    
+|Kötelező és elérhető|Eltávolítás|Kötelező és elérhető|Kötelező és elérhető|-|
+<sup>1</sup> Csak áruházból származó felügyelt iOS-alkalmazás esetén. Ha az alkalmazás kötelezőként lett hozzáadva az Intune-hoz, akkor arra automatikusan mind a Kötelező, mind az Elérhető szándék fog vonatkozni.
+
+Az üzembe helyezési ütközések elkerülése érdekében a következőket teheti:
+
+1.    Ha már üzembe helyezett alkalmazásokat egymáshoz kapcsolódó Intune szülő- és gyermekcsoportokba, ezeket az üzemelő példányokat még a bérlő áttelepítése előtt érdemes eltávolítani.
+2.    Távolítsa el a gyermekcsoportokat a szülőcsoportokból, majd hozzon létre egy új csoportot a korábbi gyermekcsoport tagjaiból. Ezt követően ebben a csoportban létrehozhat egy új alkalmazástelepítést.
+Megjegyzés: Ha a korábbi szülőcsoport „Minden felhasználó” volt, akkor olyan új dinamikus csoportot kell létrehoznia, amely nem tartalmazza a gyermekcsoport tagjait.
+A felhasználókat és eszközcsoportokat érintő csoportmódosításokat az [Azure Portalon](https://portal.azure.com/) kell elvégezni. A [klasszikus Azure-portál](https://manage.windowsazure.com/) csak a felhasználói csoportok módosítását teszi lehetővé.
+
 
 ## <a name="how-to-assign-an-app"></a>Alkalmazás hozzárendelése
 

@@ -1,9 +1,10 @@
 ---
-title: "Mit jelent az eszközregisztráció a Microsoft Intune-ban? | Intune az Azure-on – előzetes | Microsoft Docs"
+title: "Mit jelent az eszközök regisztrálása a Microsoft Intune-ban"
+titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató iOS-, Android- és Windows-eszközök regisztrálásához"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 Ez a témakör az eszközregisztrálást írja le, és felsorolja azokat a különféle módszereket, amelyekkel a mobileszközök regisztrálhatók az Intune-nal való felügyeletre.
 
-Az eszközök, köztük a Windows rendszerű számítógépek Intune-ban való regisztrálásának az a célja, hogy kezelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. A mobileszközként (nem számítógépként) regisztrált eszközök részére a rendszer MDM-tanúsítvány állít ki. Ezt az eszközök az Intune szolgáltatással való kommunikációban használják. 
+Az eszközök, köztük a Windows rendszerű számítógépek Intune-ban való regisztrálásának az a célja, hogy kezelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. A mobileszközként (nem számítógépként) regisztrált eszközök részére a rendszer MDM-tanúsítvány állít ki. Ezt az eszközök az Intune szolgáltatással való kommunikációban használják.
 
 Az eszköz regisztrálásának módja függ az eszköz típusától, tulajdonosától és az elvárt felügyeleti szinttől. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
 
@@ -76,7 +77,7 @@ A saját eszközeiket használó („BYOD”) felhasználók telepítik a Válla
 A vállalati tulajdonú eszközök (COD) az Azure Portal segítségével kezelhetők. Az iOS-eszközök az Apple által biztosított megoldások segítségével közvetlenül is regisztrálhatók. A rendszergazdák vagy menedzserek bármilyen típusú eszközt regisztrálhatnak az eszközregisztráció-kezelő segítségével. Az IMEI-számmal rendelkező eszközöket azonosítani lehet, és meg lehet jelölni vállalati tulajdonúként, ami lehetőséget nyújt a vállalati tulajdonú eszközök kezelésére.
 
 ### <a name="dem"></a>DEM
-A készülékregisztráció-kezelő egy speciális felhasználói fiók, amely több vállalati tulajdonú eszköz regisztrációjára és felügyeletére szolgál. A kezelők tudják telepíteni a Vállalati portált és regisztrálni számos, felhasználó nélküli eszközt. További információ a [DEM](enroll-devices-using-device-enrollment-manager.md) módszerről. ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
+Az eszközregisztráció-kezelő (DEM) egy speciális felhasználói fiók, amely több vállalati tulajdonú eszköz regisztrációjára és felügyeletére szolgál. A kezelők tudják telepíteni a Vállalati portált és regisztrálni számos, felhasználó nélküli eszközt. További információ a [DEM](enroll-devices-using-device-enrollment-manager.md) módszerről. ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódot, amely lehetővé teszi a következő funkciókat:
@@ -87,7 +88,7 @@ Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok
 További információ az iOS-eszközök regisztrációjáról:
 
 - [Az iOS-eszközök regisztrálási módjának kiválasztása](choose-ios-enrollment-method.md)
-- [iOS-eszközök regisztrálása a Készülékregisztrációs program segítségével](enroll-ios-devices-using-device-enrollment-program.md). 
+- [iOS-eszközök regisztrálása a Készülékregisztrációs program segítségével](enroll-ios-devices-using-device-enrollment-program.md)
 - [Vissza a fenti táblázathoz](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ Az Apple Configurator segítségével a rendszergazdák a beállítási assziszt
 További információ az iOS-eszközök regisztrációjáról:
 
 - [Az iOS-eszközök regisztrálási módjának kiválasztása](choose-ios-enrollment-method.md)
-- [iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens használatával](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens használatával](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-A közvetlen regisztrációhoz a rendszergazdának a regisztrációs házirend létrehozásához és az Apple Configuratorba való exportálásához manuálisan kell regisztrálnia minden eszközt. Az USB-csatlakozású, vállalati tulajdonú eszközök regisztrálása közvetlenül történik, a gyári beállítások visszaállítása nem szükséges. Az eszközök kezelése felhasználó nélküli eszközökként történik. Nincsenek zárolva, sem felügyelve, és nem támogathatják a feltételes hozzáférést, a függetlenítés észlelését, illetve a mobilalkalmazás-felügyeletet. 
+A közvetlen regisztrációhoz a rendszergazdának a regisztrációs házirend létrehozásához és az Apple Configuratorba való exportálásához manuálisan kell regisztrálnia minden eszközt. Az USB-csatlakozású, vállalati tulajdonú eszközök regisztrálása közvetlenül történik, a gyári beállítások visszaállítása nem szükséges. Az eszközök kezelése felhasználó nélküli eszközökként történik. Nincsenek zárolva, sem felügyelve, és nem támogathatják a feltételes hozzáférést, a függetlenítés észlelését, illetve a mobilalkalmazás-felügyeletet.
 
 További információ az iOS-eszközök regisztrációjáról:
 
