@@ -3,10 +3,10 @@ title: "IMEI azonosítók hozzáadása az Intune-hoz"
 titleSuffix: Intune Azure preview
 description: "Azure-beli Intune –előzetes: Ez a témakör azt ismerteti, hogyan lehet céges azonosítókat (IMEI-számokat) felvenni a Microsoft Intune-ba. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
+ms.lasthandoff: 02/25/2017
 
 ---
 
@@ -44,6 +44,9 @@ Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 3. Ha olyan fájlt importál, amely a régieket felülíró új adatokat tartalmaz, válassza a **Meglévő azonosítók adatainak felülírása** lehetőséget, így az új adatok felülírják a jelenlegieket.
 
 4. Keresse meg az IMEI-számok CSV-fájlját, és válassza a **Hozzáadás** elemet.
+
+> [!IMPORTANT]
+> Ha Android-eszközökhöz tartozó IMEI-számokat importál, ügyeljen rá, hogy egyes Android-eszközök több IMEI-számmal is rendelkezhetnek. Ha olyan IMEI-számot importál, amely nem egyezik meg az eszköz által az Intune-nak jelentett IMEI-számmal, az eszköz nem vállalati, hanem személyes eszközként lesz besorolva.
 
 **Céges azonosítók .csv-listájának törlése**
 

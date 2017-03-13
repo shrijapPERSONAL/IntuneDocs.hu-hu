@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Az eszközök regisztrációját az Azure AD felügyeleti konzoljával lehet tö
 * **iOS-eszköz**: Nyissa meg a Microsoft Authenticator alkalmazást, pöccintsen balra a fiókon, és válassza a Regisztráció törlése lehetőséget.  
 * **Androidos eszköz**: Távolítsa el a Munkahelyi portál alkalmazást, vagy törölje a fiókot a **Rendszerbeállítások** területről.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Alkalmazásalapú feltételes hozzáférés az eszköz megfelelősége alapján  
+## <a name="app-based-ca-with-device-based-ca"></a>Alkalmazásalapú feltételes hozzáférés eszközalapú feltételes hozzáféréssel  
 
 Az [eszköz megfelelőségén alapuló feltételes hozzáférést](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Eszköz CA**) az [Intune felügyeleti konzolon](https://manage.microsoft.com) vagy az [Azure AD Premium felügyeleti konzolon (https://manage.windowsazure.com) konfigurálhatja. Az eszköz megfelelőségén alapuló feltételes hozzáférés előírja, hogy a felhasználók csak az Intune által felügyelt, az Intune eszközmegfelelőségi szabályzatának megfelelő eszközökkel vagy tartományhoz csatlakozó számítógéppel csatlakozzanak az Exchange Online-hoz.  Ha egy felhasználó egy vagy több olyan biztonsági csoport tagja, amelyre vonatkozik az alkalmazásalapú feltételes hozzáférés vagy eszköz megfelelőségén alapuló feltételes hozzáférési szabályzat, akkor az alábbi két követelmény egyikének teljesülnie kell:
 * A szolgáltatás elérésére használt alkalmazás olyan mobilalkalmazás, amelyet támogat a 
@@ -63,9 +62,4 @@ Az [eszköz megfelelőségén alapuló feltételes hozzáférést](restrict-acce
 ### <a name="see-also"></a>További információ
 
 [Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

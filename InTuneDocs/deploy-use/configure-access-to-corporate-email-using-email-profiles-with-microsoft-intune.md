@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram
 -    Android for Work
 
 >[!NOTE]
->Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el és támogatják a kapcsolatot az Exchange-dzsel. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt.
+>Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el és támogatják a kapcsolatot az Exchange-dzsel. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
 
 Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
 
@@ -105,7 +106,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
     |**E-mail cím**|A felhasználóhoz tartozó e-mail-cím előállításának módja az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.|
     |**Hitelesítési módszer** (Android for Work, Samsung KNOX és iOS)|Az e-mail-profil által használandó hitelesítési módszernek válassza a **Felhasználónév és jelszó** vagy a **Tanúsítványok** lehetőséget.|
     |**Válasszon ki egy, az ügyfél-hitelesítéshez használandó ügyféltanúsítványt (identitástanúsítványt)** (Android for Work, Samsung KNOX és iOS)|Válassza ki az ügyfél korábban létrehozott SCEP tanúsítványát, amelyet az Exchange-kapcsolat hitelesítésére kíván használni. További információt a tanúsítványprofilok Intune-ban történő használatáról [Az erőforrások biztonságos elérése tanúsítványprofilokkal](secure-resource-access-with-certificate-profiles.md) című témakörben találhat. Ez a beállítás csak akkor látható, ha a hitelesítési módszer a **Tanúsítványok**.|
-    |**S/MIME használata** (Samsung KNOX és iOS)|Kimenő e-mailek küldése S/MIME titkosítással.|
+    |**S/MIME használata** (Samsung KNOX és iOS)|Kimenő e-mailek küldése S/MIME aláírással.|
     |**Aláíró tanúsítvány** (Samsung KNOX és iOS)|Válassza ki a kimenő e-mailek aláírására használt aláíró tanúsítványt. Ez a lehetőség csak akkor jelenik meg, ha az **S/MIME használata** lehetőséget választotta.|
     |**E-mailek szinkronizálása ennyi napra visszamenőleg**|Azt adja meg, hogy hány napra visszamenőleg kívánja szinkronizálni az e-maileket; az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.|
     |**Szinkronizálás ütemezése** (Android for Work, Samsung KNOX, Windows Phone 8 és újabb verziók, Windows 10)|Válassza ki, hogy az eszközök milyen ütemezés szerint szinkronizálják az adatokat az Exchange-kiszolgálóról. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.|
@@ -136,9 +137,4 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 > [!NOTE]
 > - Android for Work használatakor az adott e-mail-profilon kívül telepítse a Gmail vagy a Nine Work alkalmazást is.
 > - Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz. Megjegyzendő, hogy ha ez az egy e-mail-profil van az eszközön, nem lehet ezzel a módszerrel eltávolítani.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

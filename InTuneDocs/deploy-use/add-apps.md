@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
+ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -33,7 +34,7 @@ Mielőtt elkezdi az alkalmazások telepítését a Microsoft Intune-nal, fordít
 
 |Alkalmazás típusa|Részletek|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). Az általános parancssori kapcsolók listája a [Microsoft Windows Installer eszköz parancssori kapcsolói](https://support.microsoft.com/en-us/kb/227091) című dokumentumban találhatók.<br><br>Az alkalmazás telepítőprogramja által igényelt minden további fájlnak és mappának elérhetőnek kell lennie az alkalmazás telepítési fájljai számára megadott helyen.<br><br>A legtöbb esetben a Windows Installer-fájlok (.msi) és a Windows Installer-javítófájlok (.msp) fájlok Intune általi telepítése nem igényel parancssori argumentumokat. Tanulmányozza az alkalmazás dokumentációját.<br><br>Ha parancssori argumentumokra van szükség, azokat Név=Érték párként kell megadni (például TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). Az általános parancssori kapcsolók listája a [Microsoft Windows Installer eszköz parancssori kapcsolói](https://support.microsoft.com/en-us/kb/227091) című dokumentumban találhatók.<br><br>Az alkalmazás telepítőprogramja által igényelt minden további fájlnak és mappának elérhetőnek kell lennie az alkalmazás telepítési fájljai számára megadott helyen.<br><br>A legtöbb esetben a Windows Installer-fájlok (.msi) és a Windows Installer-javítófájlok (.msp) fájlok Intune általi telepítése nem igényel parancssori argumentumokat. Tanulmányozza az alkalmazás dokumentációját.<br><br>Ha parancssori argumentumokra van szükség, azokat Név=Érték párként kell megadni (például TRANSFORMS=custom_transform.mst).<br><br>Ez az alkalmazástípus csak az Intune szoftverügyfelet futtató számítógépekre vonatkozik.|
 |**Alkalmazáscsomag az Androidhoz (&#42;.apk)**|Android-alkalmazások telepítéséhez egy érvényes .apk csomaggal kell rendelkeznie.|
 |**Alkalmazáscsomag az iOS-hez (&#42;.ipa)**|iOS-alkalmazások telepítéséhez egy érvényes .ipa csomaggal kell rendelkeznie.<br><br>Az .ipa csomagnak Apple-aláírással kell rendelkeznie, és a kiépítési profilban lévő lejárati dátumnak érvényesnek kell lennie. Az Intune képes terjeszteni a vállalati tanúsítvánnyal rendelkező iOS-alkalmazásokat.<br><br>A szolgáltatás nem minden Apple-fejlesztői tanúsítvánnyal rendelkező alkalmazást támogat.<br><br>A vállalatnak regisztrálnia kell az iOS Developer Enterprise programban.<br><br>Győződjön meg arról, hogy a szervezet tűzfala lehetővé teszi a hozzáférést az iOS üzembe helyezési és hitelesítő webhelyeihez.<br><br>Nem szükséges jegyzékfájlt (.plist) telepítenie az alkalmazással.|
 |**Windows Phone-alkalmazáscsomag (&#42;.xap, .appx, .appxbundle)**|Alkalmazások telepítéséhez vállalati mobil-kódaláíró tanúsítvánnyal kell rendelkeznie. Részletekért olvassa el a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](set-up-windows-phone-management-with-microsoft-intune.md) című cikket.|
@@ -94,9 +95,4 @@ Ebben az esetben, amikor feltölti az alkalmazást az Intune-ba, a rendszer a **
 ## <a name="next-steps"></a>További lépések
 
 Az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
