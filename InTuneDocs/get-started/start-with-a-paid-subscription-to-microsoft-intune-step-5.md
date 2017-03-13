@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -32,7 +33,7 @@ Az Intune csoportjai az eszközök és felhasználók rendkívül rugalmas kezel
 
 ## <a name="group-management-moving-to-azure-ad"></a>A csoportfelügyelet áthelyezése az Azure AD-be
 
-**2016 novemberétől kezdve** az új ügyfelek az Azure Acitve Directory (AD) portálon kezelik a felhasználócsoportokat és az eszközcsoportokat. 2016 decemberében az Intune-termékcsapat megkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A felhasználó- és eszközcsoportok mindegyikét át fogjuk telepíteni az Azure AD-alapú biztonsági csoportokba. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
+**2016 novemberétől kezdve** az új ügyfelek az Azure Active Directory (AD) portálon kezelik a felhasználócsoportokat és az eszközcsoportokat. 2016 decemberében az Intune-termékcsapat megkezdi a meglévő ügyfelek áttelepítését az új, Azure AD-alapú csoportfelügyeleti rendszerbe. A felhasználó- és eszközcsoportok mindegyikét át fogjuk telepíteni az Azure AD-alapú biztonsági csoportokba. Az áttelepítést nem kezdjük mindaddig, amíg nem tudjuk minimálisra csökkenteni a napi munkára gyakorolt hatását és nem látjuk úgy, hogy az várhatóan semmiféle hatással nem lesz a felhasználókra. A fiókja áttelepítését megelőzően értesíteni fogjuk.
 
 
 >[!IMPORTANT]
@@ -87,9 +88,4 @@ Az újonnan létrehozott csoportot megtalálhatja a **Csoportok** munkaterület 
 >[!div class="step-by-step"]
 
 >[&larr; **Az Intune-licencek kezelése**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Szabályzatok és alkalmazások létrehozása** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

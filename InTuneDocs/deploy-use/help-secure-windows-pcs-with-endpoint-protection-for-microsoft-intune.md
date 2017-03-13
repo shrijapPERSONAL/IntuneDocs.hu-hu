@@ -4,8 +4,8 @@ description: "Biztonságossá teheti felügyelt számítógépeit az Endpoint Pr
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ A [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com/) **Védel
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>A kártevők legutóbbi észlelési útvonalainak megtekintése számítógépen
 Az Intune az eszközökön észlelt 10 legutóbbi kártevőpéldány elérési útvonalát tudja megjeleníteni. A **Legutóbbi észlelési útvonal** alapértelmezés szerint le van tiltva. A nézet engedélyezése:
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** > **Minden eszköz** > **Kártevők** elemet.
+1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) válassza a **Csoportok** > **Minden eszköz** > **Minden számítógép** lehetőséget.
+2. Kattintson jobb gombbal arra a számítógépre, amelynek szeretné megnézni a legutóbbi észlelési útvonalát, és válassza a **Tulajdonságok** elemet.
+3. A lap felső részén található lapfülek közül válassza a **Kártevők** elemet.
 
-2.  Kattintson a jobb gombbal egy oszlopfejlécre. Megjelenik az elérhető oszlopok listája.
-
-3.  Jelölje be a lista **Legutóbbi észlelési útvonalak** jelölőnégyzetét. Megjelenik a **Legutóbbi észlelési útvonalak** oszlop és megjeleníti az eszközön észlelt legfeljebb 10 legutóbbi kártevőpéldányt.
+   ![Válassza ki a Kártevők lapfület, majd jelölje be a Legutóbbi észlelési útvonalak jelölőnégyzetet](../media/malware-path-column.png)
+4. Kattintson jobb gombbal az oszlopfejlécre. Megjelenik az elérhető oszlopok listája. Jelölje be a lista **Legutóbbi észlelési útvonalak** jelölőnégyzetét. Megjelenik a **Legutóbbi észlelési útvonalak** oszlop és megjeleníti az eszközön észlelt legfeljebb 10 legutóbbi kártevőpéldányt.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Kártevő-ellenőrzés futtatása vagy a számítógép kártevőszoftver-leírásainak frissítése
 Az Intune az Endpoint Protection vagy a Windows Defender használatával teljes vagy gyors kártevő-ellenőrzést is képes futtatni azokon a távoli felügyelt számítógépeken, amelyeken az Intune-ügyfél telepítve van.
@@ -184,9 +185,6 @@ Az Intune az Endpoint Protection vagy a Windows Defender használatával teljes 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) lépjen a **Csoportok** > **Áttekintés** > **Minden eszköz** > **Minden számítógép** elemre, és jelölje ki a célozni kívánt számítógépet.
 
 2. Kattintson a **Távoli feladatok** legördülő listára, és válassza ki a távoli számítógépen futtatni kívánt feladatot.
-
-
-
 
 ## <a name="need-more-help"></a>További segítségre van szüksége?
 További segítség és támogatás: [Az Endpoint Protection hibáinak elhárítása a Microsoft Intune-ban](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).

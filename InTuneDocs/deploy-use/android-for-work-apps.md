@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ További információt az androidos alkalmazások feltöltéséről és közzét
 
 ## <a name="deploy-an-android-for-work-app"></a>Android for Work-alkalmazások telepítése
 
-Az Intune jellemzően naponta kétszer szinkronizál a Google Play for Work áruházzal. Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja az **Alkalmazások** munkaterület **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti a szinkronizálást:
+Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja az **Alkalmazások** munkaterület **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti a szinkronizálást:
 
 1. Az [Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Felügyelet** > **Mobileszköz-kezelés** > **Android for Work** elemre.
 2. **Az Android for Work mobileszköz-kezelési beállításai** lapon válassza a **Szinkronizálás most** lehetőséget.
 3. A lapon látható az utolsó szinkronizálás időpontja és állapota is.
 
-Ha az alkalmazás megjelenik az **Alkalmazások** munkaterület **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontjában, akkor [ugyanúgy telepítheti, mint bármelyik alkalmazást](deploy-apps-in-microsoft-intune.md). Az alkalmazások úgy is telepíthetők, hogy csak bizonyos felhasználói csoportok érjék el. Egyelőre csak a **Kötelező** és az **Eltávolítás** lehetőségek elérhetők. 2016. októberétől az új bérlők számára az **Elérhető** lehetőséggel bővítjük a fejlesztői műveleteket.
+Ha az alkalmazás megjelenik az **Alkalmazások** munkaterület **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontjában, akkor [ugyanúgy telepítheti, mint bármelyik alkalmazást](deploy-apps-in-microsoft-intune.md). Az alkalmazások úgy is telepíthetők, hogy csak bizonyos felhasználói csoportok érjék el. Egyelőre csak a **Kötelező** és az **Eltávolítás** lehetőségek elérhetők.
+
+Az alkalmazások **Elérhetőként** való telepítésének lehetősége már az új csoportosítási és célzási megoldást használja. Az újonnan létrehozott Intune-szolgáltatásfiókok használhatják ezt a funkciót, amint az megjelenik. A meglévő Intune-ügyfelek azt követően használhatják élesben ezt a funkciót, hogy a bérlőjüket áttelepítették az Intune Azure-portálra. Meglévő ügyfeleinknek azt a lehetőséget kínáljuk, hogy egy próba Intune-fiók segítségével tervezzék meg és teszteljék ezt a funkciót, amíg sor nem kerül a bérlőjük migrálására.
 
 A telepítés után az alkalmazás elérhető lesz a kijelölt eszközökön. Az eszköz használójának a hozzájárulását a rendszer nem kéri.
 
+## <a name="manage-app-permissions"></a>Alkalmazásengedélyek kezelése
+Az Android for Work használatához jóvá kell hagynia az alkalmazásokat a Google által felügyelt Play webkonzolon, mielőtt az Intune-ba szinkronizálná és a felhasználók számára üzembe helyezné azokat.  Mivel az Android for Work lehetővé teszi az alkalmazások automatikus és csendes leküldését a felhasználói eszközökre, az alkalmazások által kért engedélyeket el kell fogadnia az összes felhasználó nevében.  A felhasználók számára a telepítésnél nem jelennek meg alkalmazásengedélyek, ezért fontos, hogy Ön elolvassa és megértse ezeket az engedélyeket.
 
+Ha az alkalmazás fejlesztője megváltozott engedélyekkel rendelkező új alkalmazásverziót tesz közzé, az új engedélyek nem lesznek automatikusan elfogadva akkor sem, ha Ön az előző verzió engedélykéréseit elfogadta. Az alkalmazás régebbi verzióját futtató eszközök továbbra is használhatják az alkalmazást, de frissítésre nem kerül sor, amíg el nem fogadja az új engedélyeket. Az alkalmazással még nem rendelkező eszközökre nem telepíthető az alkalmazás, amíg el nem fogadja az új alkalmazásengedélyeket.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>Alkalmazásengedélyek frissítése
 
+Javasolt rendszeresen ellenőrizni a felügyelt Google Play konzolon, hogy vannak-e új alkalmazásengedélyek. Ha egy alkalmazás központi telepítés után sincs telepítve, az alábbi lépéseket követve ellenőrizze, hogy vannak-e új alkalmazásengedélyek:
+
+1. Keresse fel a http://play.google.com/work webhelyet
+2. Jelentkezzen be azzal a Google-fiókkal, amelyet az alkalmazások közzétételénél és jóváhagyásánál használt.
+3. A **Frissítések** lapon ellenőrizze, hogy szükséges-e alkalmazásokat frissíteni.  A listában szereplő összes alkalmazás új engedélyeket kér, és nem telepíthető, amíg azokat el nem fogadják.  
 

@@ -5,7 +5,7 @@ keywords: Mi az az Intune?
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Az Intune egy felhőalapú nagyvállalati mobileszköz-felügyeleti (EMM) szolg�
 * Megóvhatja vállalati adatokat, szabályozva azt, ahogyan a munkatársak elérik és megosztják őket.
 * Gondoskodhat arról, hogy az eszközök és az alkalmazások megfeleljenek a vállalat biztonsági követelményeinek.
 
-Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-vezérlés terén az Azure Active Directoryval (Azure AD), valamint az adatvédelem terén az Azure Rights Managementtel (Azure RMS). Az Intune a Microsoft Enterprise Mobility + Security (EMS) *„felügyeleti felelőse”*, míg az Office 365 a Microsoft mobilitási megoldásának *„munkavégzési felelőse”*.  
+Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-vezérlés terén az Azure Active Directoryval (Azure AD), valamint az adatvédelem terén az Azure Information Protectionnel. Az Intune a Microsoft Enterprise Mobility + Security (EMS) *„felügyeleti felelőse”*, míg az Office 365 a Microsoft mobilitási megoldásának *„munkavégzési felelőse”*.  
 
 Az Office 365 és az EMS együttesen lehetővé teszi, hogy a dolgozók minden eszközükön hatékonyan dolgozzanak, emellett óvja a szervezet adatait is. Az Office 365 és az EMS a nagyvállalati mobilitás teljes, integrált csomagját kínálja, amelynek részét alkotják az irodai alkalmazások, az identitáskezelés, a hozzáférés-vezérlés, a felügyelet és az adatvédelem. Hatékony módot biztosít egy mobilitási megoldás üzembe helyezéséhez és üzemeltetéséhez a szervezetében.
 
@@ -114,9 +115,4 @@ Az alábbi listában szereplő üzleti problémák hivatkozására kattintva kap
 * Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md).
 * Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](get-started-with-a-30-day-trial-of-microsoft-intune.md) révén.
 * Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

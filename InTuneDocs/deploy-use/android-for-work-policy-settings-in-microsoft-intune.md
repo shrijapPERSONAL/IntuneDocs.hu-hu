@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg l�
 |----------------|-|
 |**A munkahelyi és a személyes profilok közötti adatmegosztás engedélyezése**|Lehetővé teszi a munkahelyi profilban és a felhasználók személyes profiljában található alkalmazások közötti adatmegosztást. A következő lehetőségek közül választhat:<br><br>- **Határokon keresztüli megosztás letiltása**<br>- **A munkahelyi profilban szereplő alkalmazások kezelhetik a személyes profiltól érkező megosztási kérést**<br>- **Nincs megosztási korlátozás**|
 |**Munkahelyi profil értesítéseinek elrejtése, ha az eszköz zárolva van**<br>(Android 6 és újabb verziók)|Szabályozza a munkahelyi profiltól érkező értesítések láthatóságát, ha az eszköz zárolva van.|
-|**Alapértelmezett alkalmazásengedélyezési szabályzat beállítása**<br>(Android 6 és újabb verziók)|Meghatározza a munkahelyi profilban található összes alkalmazásra vonatkozó alapértelmezett szabályzatot.|
+|**Alapértelmezett alkalmazásengedélyezési szabályzat beállítása**<br>(Android 6 és újabb verziók)|Meghatározza a munkahelyi profilban található összes alkalmazásra vonatkozó alapértelmezett szabályzatot. Az Android 6-tal kezdődően egyes alkalmazásengedélyek elfogadását futtatáskor kéri a rendszer a felhasználótól.  Ez a szabályzatbeállítás lehetővé teszi, hogy a rendszergazda döntse el, hogy a munkahelyi profil használatánál a felhasználók adhassák-e meg az alkalmazásengedélyeket, és ha igen, ezt milyen módon kérje tőlük a rendszer. <br/><br/>A rendszergazda például leküldhet egy olyan alkalmazást a munkahelyi profilba, amely helyadatokhoz kér hozzáférést.  Az ilyen alkalmazás szokásosan egy párbeszédablakban kéri a felhasználótól a helyadatokhoz való hozzáférési engedélyt, a felhasználó pedig engedélyezheti vagy letilthatja a hozzáférést.  Ezzel a szabályzattal a rendszergazda határozhatja meg, hogy minden hozzáférés kérdés nélkül automatikusan engedélyezve vagy letiltva legyen, vagy hogy a felhasználó dönthesse el, hogy megadja-e az engedélyt.|
 
 
 ## <a name="custom-policy-settings"></a>Egyéni szabályzatbeállítások
@@ -91,9 +92,4 @@ Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támo
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

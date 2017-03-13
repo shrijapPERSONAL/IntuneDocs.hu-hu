@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 01/28/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Tegyen fel kérdést a Microsoft technikai szakembereinek, vagy kezdeményezzen 
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>A Microsoft Intune UserVoice termék-visszajelzési webhelye
 
-Visszajelzést küldene a Microsoftnak arról, hogy miként lehetne még jobbá tenni az Intune-t? Tudassa velünk ötleteit a Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) visszajelzési webhelyen. Másoknak a UserVoice-on felvetett ötleteire is szavazhat. 
+Visszajelzést küldene a Microsoftnak arról, hogy miként lehetne még jobbá tenni az Intune-t? Tudassa velünk ötleteit a Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) visszajelzési webhelyen. Másoknak a UserVoice-on felvetett ötleteire is szavazhat.
 
 ![A Microsoft Intune UserVoice visszajelzésküldő oldala](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Online támogatási jegy létrehozása
+## <a name="create-a-support-ticket"></a>Támogatási jegy létrehozása
 
-Ha nem találja a választ az önsegítő erőforrások segítségével, létrehozhat egy online támogatási jegyet.
-
-Annak érdekében, hogy jobban kiszolgálhassuk, **korlátozza az egyes támogatási jegyeket egyetlen problémára**. Ezt a következők miatt kérjük:
+Ha nem találja a választ az önsegítő erőforrások segítségével, létrehozhat egy online támogatási jegyet. Annak érdekében, hogy jobban kiszolgálhassuk, **korlátozza az egyes támogatási jegyeket egyetlen problémára**. Ezt a következők miatt kérjük:
 
 - A segítséget nyújtó támogatási szakértők valószínűleg adott területekre specializáltak, és így könnyebben azonosíthatjuk a megfelelő témakörben járatos szakértőket a szóban forgó probléma megoldásához.
 - A mérnöki munkacsoportok fontossági sorrendbe állíthatják munkájukat azon termékterületeken, ahol a legtöbb incidens következik be.
@@ -58,12 +56,15 @@ Annak érdekében, hogy jobban kiszolgálhassuk, **korlátozza az egyes támogat
 
 Támogatási jegy létrehozása előtt tekintse át [a támogatási incidensek definícióját](#definition-of-a-support-incident).
 
-**Online támogatási jegy létrehozásához:**
+### <a name="steps-to-create-an-online-support-ticket"></a>Online támogatási jegy létrehozásának lépései
 
 1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli hitelesítő adataival.
+
+    Premier támogatással rendelkező ügyfelek számára a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) javasolt Intune támogatási jegyet megnyitni.
+
     >[!NOTE]
     >
-    >Premier támogatással rendelkező ügyfelek a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) nyithatnak meg Intune támogatási jegyet.
+    >Premier támogatással rendelkező ügyfeleknek a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) javasolt Intune támogatási jegyet megnyitniuk.
 
 2.  Válassza a **Rendszergazda** csempét.
 3.  A jegy megnyitásához a bal oldalon a **Támogatás** elem alatt válassza a **Támogatás** lehetőséget.
@@ -84,9 +85,9 @@ Támogatási jegy létrehozása előtt tekintse át [a támogatási incidensek d
 
 3.  Kérelme megnyitásához kövesse az utasításokat.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Támogatási jegy létrehozása alternatív módszerekkel
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Támogatási jegy létrehozásának lépései alternatív módszerekkel
 
-Ha támogatási lapja így néz ki, hajtsa végre az alábbi utasítást:
+Ha az Office 365 felügyeleti központjában a támogatási lapja így néz ki, hajtsa végre az alábbi utasítást:
 
 ![Alternatív Intune-támogatás](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Ha támogatási lapja így néz ki, hajtsa végre az alábbi utasítást:
 A [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](contact-assisted-phone-support-for-microsoft-intune.md) témakörben megtalálja az ország és régió szerinti támogatási telefonszámokat, a támogatási órákat és a támogatott nyelveket mindegyik régióhoz.
 
 ## <a name="track-your-support-requests"></a>A támogatási kérelmek nyomon követése
-1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli hitelesítő adataival.
+1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli rendszergazdai hitelesítő adataival.
 2.  Válassza a **Rendszergazda** csempét.
 3.  A bal oldalon a **Támogatás** elem alatt válassza a **Szolgáltatáskérések** lehetőséget. Ezután megtekintheti a kéréseit.
 
-A támogatáskérésekre adott válasz ideje függ a probléma súlyosságától. A legsúlyosabb problémák esetén a Professional ügyfeleknek két órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Léteznek esetek, mikor:
+A támogatáskérésekre adott válasz ideje függ a probléma súlyosságától. A legsúlyosabb problémák esetén a Professional ügyfeleknek két órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Az eset a **legsúlyosabb** a következő esetekben:
 
 - Egy vagy több szolgáltatás nem érhető el, vagy nem használható.
 - A probléma súlyosan érinti a termelést, a műveleteket vagy a központi telepítési határidőket, vagy súlyos következményekkel fog járni a termelésre vagy a nyereségességre nézve.
 - A probléma több felhasználót vagy szolgáltatást érint.
 
-A közepesen súlyos problémák esetén a Professional ügyfeleknek négy órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye.  Léteznek esetek, mikor:
+A közepesen súlyos problémák esetén a Professional ügyfeleknek négy órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Az eset a **közepesen súlyos** a következő esetekben:
 
 - Használható a szolgáltatás, de nem úgy működik, ahogyan általában.
 - A helyzet mérsékelten érinti az üzletmenetet, és a megoldás ráér a munkaidő alatt is.
 - A probléma részlegesen érint egyetlen felhasználót, egy ügyfelet vagy egy szolgáltatást.
 
-A többi probléma esetén a Professional ügyfeleknek nyolc órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye.  Léteznek esetek, mikor:
+A többi probléma esetén a Professional ügyfeleknek nyolc órán belül adunk választ. A Premier támogatással rendelkező ügyfelek esetén a válasz a támogatási szerződés függvénye. Az eset a legkevésbé súlyos a következő esetekben:
 
 - A helyzet csak minimálisan érinti az üzletmenetet.
 - A probléma fontos, de az ügyfél szempontjából nincs azonnali jelentős hatással a szolgáltatásra vagy a hatékonyságra.
 - Csak egyetlen felhasználó tapasztal részleges problémákat, de létezik egy elfogadható megkerülő megoldás.
 
 > [!NOTE]
-> A **Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration Manager és a System Center Endpoint Protection megoldásközpontját](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), ahol számos anyagot találhat az önsegítő technikai támogatáshoz. Emellett online vagy telefonos támogatási kérést adhat be.
+> A **Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) és az [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) dokumentációját, ahol számos anyagot találhat az önsegítő technikai támogatáshoz. Emellett online vagy telefonos támogatási kérést adhat be.
 >
 > A System Center Configuration Manager vagy a System Center Endpoint Protection technikai támogatása vagy fizetésköteles, vagy levonásra kerül a meglévő licencelésből vagy Premier támogatási szerződésből.
 

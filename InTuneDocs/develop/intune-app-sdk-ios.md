@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
-ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -27,11 +27,13 @@ ms.lasthandoff: 02/23/2017
 > [!NOTE]
 > Először célszerű elolvasnia az [Intune App SDK használatának első lépései](intune-app-sdk-get-started.md) című cikket, amely útmutatást ad az integráció előkészítéséhez a támogatott platformokon.
 
-Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven MAM-szabályzatokat) építsen be iOS-alkalmazásába. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
+Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven **alkalmazás-** vagy **MAM-szabályzatokat**) építsen be natív iOS-alkalmazásába. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode eszközkészlet 5-ös vagy újabb verziója.
+* Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode 8-as vagy újabb verziója.
+
+* Az alkalmazásnak iOS 9 vagy újabb verziókkal kell működnie.
 
 * Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Nyomtassa ki és őrizze meg a licencfeltételeket. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
 
@@ -70,56 +72,53 @@ Az iOS-hoz készült Intune App SDK révén minimális kódmódosítással adhat
 Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
 1. **1. lehetőség**: Csatolás a `libIntuneMAM.a` erőforrástárhoz. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
+
     ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     > [!NOTE]
     > Megjegyzés: ha azt tervezi, hogy közzéteszi az alkalmazást az App Store-ban, a `libIntuneMAM.a` végleges verzióját használja, ne a hibakeresési verziót. A végleges verziót a **release** (kiadás) mappában találja. A hibakeresési verzió részletes kimenetet ad, ami megkönnyíti az Intune App SDK problémáinak elhárítását.
 
-    **2. lehetőség**: Az `IntuneMAM.framework` csatolása a projekthez. Húzza az `IntuneMAM.framework` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
+    Írja be a `-force_load {PATH_TO_LIB}/libIntuneMAM.a` utasítást a következő helyek egyikére, kicserélve a `{PATH_TO_LIB}` sort az Intune App SDK elérési útjával:
+      * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
+      * a kezelőfelület **Other Linker Flags** (Más csatoló jelzők) területe
+
+        > [!NOTE]
+        > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
+
+2. **2. lehetőség**: Az `IntuneMAM.framework` csatolása a projekthez. Húzza az `IntuneMAM.framework` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
 
     > [!NOTE]
-    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. Lásd „Az alkalmazás beküldése az App Store-ba” című szakaszt.
+    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. Lásd [Az alkalmazás beküldése az App Store-ba](#Submit-your-app-to-the-App-Store) című témakört.
 
-2. Vegye fel a következő iOS-keretrendszereket a projektbe:
+3. Vegye fel a következő iOS-keretrendszereket a projektbe:
     * MessageUI.framework
     * Security.framework
     * MobileCoreServices.framework
     * SystemConfiguration.framework
-    * libsqlite3.dylib
-    * libc++.dylib
+    * libsqlite3.tbd
+    * libc++.tbd
     * ImageIO.framework
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-    > [!NOTE]
-    > Ha az alkalmazást iOS 7-re fejlesztették, állítsa a `LocalAuthentication.framework` `Status` (Állapot) attribútumát „Optional" (Választható) értékre. Ha a `Status` (Állapot) nincs beállítva, az alkalmazás nem indul el iOS 7-en.
-    >
-    > Emellett az Xcode 7 `.dylib` helyett már `.tbd` kiterjesztést használ.
 
-3. Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
-![Intune App SDK (iOS) – erőforráscsomagok másolása](../media/intune-app-sdk-ios-copy-bundle-resources.png)
+4. Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
 
-4. Írja be a `-force_load {PATH_TO_LIB}/libIntuneMAM.a` utasítást a következő helyek egyikére, kicserélve a `{PATH_TO_LIB}` sort az Intune App SDK elérési útjával:
-    * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
-    * a kezelőfelület **Other Linker Flags** (Más csatoló jelzők) területe<br>
+    ![Intune App SDK (iOS) – erőforráscsomagok másolása](../media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    > [!NOTE]
-    > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
-
-5. Ha a mobilalkalmazás fő Nib vagy a Storyboard fájlt definiál az info.plist fájlban, távolítsa el a **Main Storyboard** vagy a **Main Nib** fájlmezőket. Adja meg a korábban eltávolított Storyboard- vagy Nib-értékeket egy IntuneMAMSettings nevű új szótárban, a következő kulcsnevekkel:
+5. Ha a mobilalkalmazás fő Nib vagy a Storyboard fájlt definiál az info.plist fájlban, kivágás művelettel távolítsa el a **Main Storyboard** vagy a **Main Nib** fájlmezőket. Az Info.plist fájlban illessze be a kivágott mezőket és a hozzájuk tartozó értékeket egy **IntuneMAMSettings** nevű új szótárban, a következő kulcsnevekkel:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
-
     > [!NOTE]
-    > Ha a mobilalkalmazás nem definiálja a fő Nib vagy Storyboard fájlt az Info.plist fájlban, ezek a beállítások nem szükségesek.
+  > Ha a mobilalkalmazás nem definiálja a fő Nib vagy Storyboard fájlt az Info.plist fájlban, ezek a beállítások nem szükségesek.
 
     Az info.plist fájlt nyers formátumban megtekintve láthatja a kulcsneveket. Kattintson jobb gombbal a dokumentum törzsében bárhol, és válassza a **Show Raw Keys/Values** (Nyers kulcsok/értékek megjelenítése) nézetet.
 
 6. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
 
-    > [!NOTE]
+  > [!NOTE]
     > A telepítési profil esetében elengedhetetlen az új kulcsláncmegosztási értékek támogatása. A kulcslánc-hozzáférési csoportoknak támogatniuk kell a helyettesítő karaktert. Ezt a .mobileprovision fájl szövegszerkesztőben való megnyitásával ellenőrizheti, rákeresve a **keychain-access-groups** kifejezésre. Itt meggyőződhet arról, hogy használ-e helyettesítő karaktert. Példa:
     ```xml
     <key>keychain-access-groups</key>
@@ -132,46 +131,46 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
     Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására:
 
-    a. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
+    1. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
 
-    b. Vegye fel a `com.microsoft.intune.mam` megosztott kulcslánc-csoportot. Ez a hozzáférési csoport az Intune App SDK-adatok tárolására szolgál.
+    2. Vegye fel a `com.microsoft.intune.mam` megosztott kulcslánc-csoportot. Ez a hozzáférési csoport az Intune App SDK-adatok tárolására szolgál.
 
-    c. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
+    3. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
 
     ![Intune App SDK (iOS) – kulcsláncok megosztása](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    Ha a jogosultságokat tartalmazó fájlt használja a kulcslánc-hozzáférési csoport létrehozására, az `$(AppIdentifierPrefix)` előtaggal együtt illessze be a kulcslánc-hozzáférési csoportot a jogosultságokat tartalmazó fájlba. Példa:  
+    Ha a jogosultságokat tartalmazó fájlt használja a kulcslánc-hozzáférési csoport létrehozására, az `$(AppIdentifierPrefix)` előtaggal együtt illessze be a kulcslánc-hozzáférési csoportot a jogosultságokat tartalmazó fájlba. Példa:
 
-    * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-    * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > A jogosultságokat tartalmazó fájl egy XML-fájl, amely minden mobilalkalmazásnál egyedi, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban.
 
-8. Ha az alkalmazás az Info.plist fájlban határozza meg az URL-sémákat, mindegyikhez vegyen fel új sémát az `-intunemam` utótaggal együtt.
+7. Ha az alkalmazás az Info.plist fájlban határozza meg az URL-sémákat, mindegyikhez vegyen fel új sémát az `-intunemam` utótaggal együtt.
 
-9. Az iOS 9 és újabb rendszerre fejlesztett mobilalkalmazások esetében az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Emellett minden egyes felsorolt protokollhoz vegyen fel egy új protokollt, és fűzze hozzá a `-intunemam` paramétert. A `http-intunemam`, `https-intunemam` és `ms-outlook-intunemam` elemet is fel kell venni a tömbbe.
+8. Az iOS 9 és újabb rendszerre fejlesztett mobilalkalmazások esetében az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Emellett minden egyes felsorolt protokollhoz vegyen fel egy új protokollt, és fűzze hozzá a `-intunemam` paramétert. A `http-intunemam`, `https-intunemam` és `ms-outlook-intunemam` elemet is fel kell venni a tömbbe.
 
-10. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, vegye fel ezeket a csoportokat az `AppGroupIdentifiers` szótárba, az IntuneMAMSettings kulcs karakterlánctömbjeként.
+9. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, vegye fel ezeket a csoportokat az `AppGroupIdentifiers` szótárba, az IntuneMAMSettings kulcs karakterlánctömbjeként.
 
-11. Csatolja a mobilalkalmazást az Azure Directory Authentication Library (ADAL) erőforrástárhoz (nem kötelező). Az Objective C-hez készült ADAL-könyvtár [elérhető a GitHubon](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+10. Csatolja a mobilalkalmazást az iOS rendszerhez készült Azure Directory Authentication Library (ADAL) erőforrástárhoz. Az Objective-C-hez készült ADAL-könyvtár [elérhető a GitHubon](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
     > [!NOTE]
-    > Az Intune App SDK-t 2015. június 19-től az ADAL broker fiókkóddal tesztelték. Győződjön meg arról, hogy az ADAL-könyvtár legújabb/működő verziójához kapcsolódik-e.
+    > Javasolt az alkalmazásokat az ADAL-könyvtár legújabb/működő verziójához kapcsolni.
 
-12. Húzza az `ADALiOSBundle.bundle` erőforráscsomagot a **Copy Bundle Resources** (Erőforráscsomagok másolása) terület **Build Phases** (Összeállítási fázisok) elemére a projektbe való felvételhez.
+11. Húzza az `ADALiOSBundle.bundle` erőforráscsomagot a **Copy Bundle Resources** (Erőforráscsomagok másolása) terület **Build Phases** (Összeállítási fázisok) elemére a projektbe való felvételhez.
 
-13. Használja a `-force_load PATH_TO_ADAL_LIBRARY` összekötő lehetőséget a könyvtárhoz kapcsolódáshoz.
+12. Használja a `-force_load PATH_TO_ADAL_LIBRARY` összekötő lehetőséget a könyvtárhoz kapcsolódáshoz.
 
     Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre a kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét.
 
 
 
-## <a name="set-up-azure-directory-authentication-library"></a>Az Azure Directory Authentication Library (ADAL) beállítása
+## <a name="configure-azure-directory-authentication-library-adal"></a>Az Azure Directory Authentication (ADAL) konfigurálása (nem kötelező)
 
 Az Intune App SDK az ADAL-t hitelesítésre és a feltételes indítási forgatókönyvek készítésére használja. Az ADAL-t használja ezenkívül arra, hogy regisztrálja a felhasználó identitását a MAM-szolgáltatásnál az eszközök regisztrációja nélkül történő felügyelet esetére.
 
-Az ADAL használata során az alkalmazáshoz tartozó jogkivonatok biztonsága érdekében az alkalmazások használata legtöbbször az Azure Active Directoryban (Azure AD) való regisztrációhoz, valamint egyedi azonosító (más néven ClientID) és egyéb azonosítók lekéréséhez kötött. Az Intune App SDK az alapértelmezett regisztrációs értékeket használja, amikor kapcsolatba lép az Azure AD-val.  
+Az ADAL használata során az alkalmazáshoz tartozó jogkivonatok biztonsága érdekében az alkalmazások használata legtöbbször az Azure Active Directoryban (AAD) való regisztrációhoz, valamint egyedi azonosító (ClientID) és egyéb azonosítók lekéréséhez kötött. Az Intune App SDK az alapértelmezett regisztrációs értékeket használja, amikor kapcsolatba lép az Azure AD-val.  
 
 Ha maga az alkalmazás ADAL-t használ hitelesítésre, abban az esetben a meglévő regisztrációs értékeket kell használnia, és felül kell bírálnia az Intune App SDK alapértékeit. Ez biztosítja azt, hogy a felhasználóknak ne kelljen kétszer hitelesíteniük magukat (egyszer az Intune App SDK felé, egyszer pedig az alkalmazás felé).
 
@@ -187,13 +186,13 @@ Az Intune App SDK jelenleg a [GitHubon elérhető ADAL](https://github.com/Azure
 
 Részletesebb tájékoztatást az [GitHub ADAL rovatában](https://github.com/AzureAD/azure-activedirectory-library-for-objc) talál.
 
-**Hogyan oszthatom meg az ADAL gyorsítótárát más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal?**
+**Hogyan oszthatom meg az ADAL-jogkivonatok gyorsítótárát más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal?**
 
-Ha az alkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, hozza létre az első csoportot az alkalmazás csomagazonosítójának felvételével.
+1. Ha az alkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, hozza létre az első csoportot az alkalmazás csomagazonosítójának felvételével.
 
-Engedélyezze az ADAL egyszeri bejelentkezési funkcióját (SSO): ehhez vegye fel a `com.microsoft.adalcache` és a `com.microsoft.workplacejoin` hozzáférési csoportot a kulcslánc jogosultságai közé.
+2. Engedélyezze az ADAL egyszeri bejelentkezési funkcióját (SSO): ehhez vegye fel a `com.microsoft.adalcache` és a `com.microsoft.workplacejoin` hozzáférési csoportot a kulcslánc jogosultságai közé.
 
-Ha explicit módon beállítja az ADAL megosztott gyorsítótárának kulcslánccsoportját, akkor feltétlenül a következő értékre állítsa: `<app_id_prefix>.com.microsoft.adalcache`. Az ADAL ezt állítja be, hacsak Ön felül nem bírálja. Ha egyéni kulcslánccsoportot szeretne megadni a `com.microsoft.adalcache` helyett az Info.plist fájl „IntuneMAMSettings” szakaszában, azt az `ADALCacheKeychainGroupOverride` kulccsal kell megadnia.
+3. Ha explicit módon beállítja az ADAL megosztott gyorsítótárának kulcslánccsoportját, akkor feltétlenül a következő értékre állítsa: `<app_id_prefix>.com.microsoft.adalcache`. Az ADAL ezt állítja be, hacsak Ön felül nem bírálja. Ha egyéni kulcslánccsoportot szeretne megadni a `com.microsoft.adalcache` helyett az Info.plist fájl „IntuneMAMSettings” szakaszában, azt az `ADALCacheKeychainGroupOverride` kulccsal kell megadnia.
 
 **Hogyan kényszeríthetem az Intune App SDK-t arra, hogy az alkalmazásom által már használt ADAL-beállításokat használja?**
 
@@ -211,7 +210,7 @@ Ha az alkalmazás már használja az ADAL-t, [Az Intune App SDK-beállítások k
 Állítsa be az `aadAuthorityUriOverride` tulajdonságot az IntuneMAMPolicyManager példányon.
 
 > [!NOTE]
-> Ezt akkor kell megtennie, ha az eszközök regisztrálása nélkül használja a MAM szolgáltatást. Így az SDK újra felhasználhatja az alkalmazás által beolvasott ADAL frissítési jogkivonatot.
+> Ezt akkor kell megtennie, ha az eszközök regisztrálása nélkül használja az alkalmazást. Így az SDK újra felhasználhatja az alkalmazás által beolvasott ADAL frissítési jogkivonatot.
 
 Az SDK továbbra is ezt a szolgáltatói URL-címet használja a szabályzatok frissítésére és a későbbi regisztrációs kérelmekhez, hacsak nem törlik vagy módosítják az értéket.  Ezért fontos törölni az értéket, ha egy vállalati felhasználó kijelentkezik az alkalmazásból, és újra beállítani, ha egy új vállalati felhasználó jelentkezik be.
 
@@ -229,18 +228,18 @@ Ha az alkalmazás maga az ADAL-t használja hitelesítésre, a következő műve
 
 Ha az alkalmazás nem ADAL-t használ, az Intune App SDK alapértelmezett értékeket fog megadni az ADAL-paraméterekhez, és az Azure AD-vel fogja kezelni a hitelesítést.
 
-## <a name="register-your-app-with-the-intune-mam-service"></a>Az alkalmazás regisztrálása az Intune MAM-szolgáltatásában
+## <a name="app-protection-policy-without-device-enrollment"></a>Eszközregisztráció nélküli alkalmazásvédelmi szabályzat
 
-### <a name="use-the-apis"></a>Az API-k használata
-Az Intune App SDK mostantól lehetőséget nyújt arra, hogy az iOS-alkalmazások anélkül fogadják az Intune-tól az alkalmazásvédelmi szabályzatokat, hogy az Intune-ban regisztrálva kellene lenniük a mobileszköz-felügyeletre (MDM). Az SDK az új funkciót olyan új API-k segítségével biztosítja, amelyek lehetővé teszik az alkalmazás számára az alkalmazásvédelmi szabályzatok fogadását. Az új API-k használatához kövesse az alábbi lépéseket:
+### <a name="overview"></a>Áttekintés
+Az Intune **APP-WE** vagy MAM-WE néven is ismert eszközregisztráció nélküli alkalmazásvédelmi szabályzata lehetővé teszi, hogy az Intune anélkül is felügyelhesse az alkalmazásokat, hogy az eszközök az Intune mobileszköz-felügyeletre (MDM) regisztrálva lennének. Az új funkció használatához az alkalmazásnak lehetővé kell tennie a felhasználói fiók felügyeleti regisztrációját. Az új API-k használatához kövesse az alábbi lépéseket:
 
-1. Használja az Intune App SDK legújabb kiadását, amely az eszközregisztrációval és nélküle is lehetőséget nyújt az alkalmazások felügyeletére. .
+1. Használja az Intune App SDK legújabb kiadását, amely az eszközregisztrációval és nélküle is lehetőséget nyújt az alkalmazások felügyeletére.
 
 2. Vegye fel a IntuneMAMEnrollment.h-t minden olyan fájlba, amely hívni fogja az API-kat.
 
-### <a name="register-accounts"></a>Fiókok regisztrálása
+### <a name="register-user-accounts"></a>Felhasználói fiókok regisztrálása
 
-Egy alkalmazás akkor fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, ha az alkalmazás regisztrálva van egy megadott felhasználói fiók nevében. Az alkalmazás felelős azért, hogy regisztráljon minden újonnan bejelentkezett felhasználót az Intune App SDK-val. Az új felhasználói fiók hitelesítését követően az alkalmazásnak meg kell hívnia a `registerAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
+Egy alkalmazás akkor fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, ha az alkalmazás regisztrálva van az APP-WE szolgáltatásban egy megadott felhasználói fiók nevében. Az alkalmazás felelős azért, hogy regisztráljon minden újonnan bejelentkezett felhasználót az SDK-val. Az új felhasználói fiók hitelesítését követően az alkalmazásnak meg kell hívnia a `registerAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
 
 ```objc
 /**
@@ -258,17 +257,17 @@ Az SDK a `registerAndEnrollAccount` metódus meghívásával regisztrálja a fel
 
 Az API meghívása után az alkalmazás a szokásos módon működhet tovább. Ha a regisztráció sikeres, az SDK értesíti a felhasználót, hogy újra kell indítani az alkalmazást. Ekkor a felhasználó azonnal újraindíthatja az alkalmazást.
 
-### <a name="deregister-accounts"></a>Fiókok regisztrációjának megszüntetése
+### <a name="deregister-user-accounts"></a>Felhasználói fiókok regisztrációjának megszüntetése
 
 Mielőtt egy felhasználó kijelentkezik az alkalmazásból, az alkalmazásnak meg kell szüntetnie a felhasználó regisztrációját az SDK-ban. Ez a következőket garantálja:
 
 1. Nem lesznek további próbálkozások a felhasználói fiók regisztrálására.
 
-2. Ha a felhasználó sikeresen regisztrálta az alkalmazást, a felhasználó és az alkalmazás regisztrációja megszűnik az Intune MAM-szolgáltatásban, és a rendszer törli az alkalmazásvédelmi szabályzatot.
+2. Az alkalmazásvédelmi szabályzat el lesz távolítva.
 
-3. Ha az alkalmazás szelektív törlést kezdeményez (igény szerint), akkor a munkahellyel vagy az iskolával kapcsolatos összes adat törlődik.
+3. Ha az alkalmazás szelektív törlést kezdeményez (igény szerint), akkor az összes céges adat törlődik.
 
-A felhasználó kijelentkeztetése előtt az alkalmazásnak meg kell hívnia a következő, a „Headers/IntuneMAMEnrollment.h” fájlban található API-t:
+A felhasználó kijelentkeztetése előtt az alkalmazásnak meg kell hívnia a következő API-t, amely itt található `Headers/IntuneMAMEnrollment.h`:
 
 ```objc
 /*
@@ -286,17 +285,17 @@ A felhasználó kijelentkeztetése előtt az alkalmazásnak meg kell hívnia a k
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
 ```
 
-Ezt a metódust még a felhasználó Azure AD-jogkivonatainak törlése előtt kell meghívni. Az SDK-nak azért van szüksége a felhasználó alkalmazás-jogkivonatára, hogy a felhasználó nevében küldhessen el bizonyos kéréseket az Intune MAM-szolgáltatásnak.
+Ezt a metódust még a felhasználó Azure AD-jogkivonatainak törlése előtt kell meghívni. Az SDK-nak azért van szüksége a felhasználói fiók AAD-jogkivonatára, hogy a felhasználó nevében küldhessen el bizonyos kéréseket az APP-WE-szolgáltatásnak.
 
-Ha az alkalmazás saját maga végzi a felhasználó munkahelyi vagy iskolai adatainak törlését, akkor a `doWipe` jelző „false” (hamis) értékre állítható. Ellenkező esetben az alkalmazás az SDK-t utasíthatja a szelektív törlés indítására. Ennek eredményeképpen létrejön egy hívás az alkalmazás szelektív törlési delegáltja felé.
+Ha az alkalmazás saját maga gondoskodik a felhasználó céges adatainak törléséről, akkor a `doWipe` jelző false értékre állítható. Ellenkező esetben az alkalmazás az SDK-t utasíthatja a szelektív törlés indítására. Ennek eredményeképpen létrejön egy hívás az alkalmazás szelektív törlési delegáltja felé.
 
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-### <a name="enroll-without-prior-sign-in"></a>Regisztráció előzetes bejelentkezés nélkül
+### <a name="apps-that-do-not-use-adal"></a>Az ADAL-t nem használó alkalmazások
 
-Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, amely nem jelentkezteti be a felhasználót az Azure Active Directoryval. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Az alkalmazásoknak ezt a módszert kell használniuk abban az esetben, ha nem hitelesítették a felhasználót az Azure AD-vel, ugyanakkor szükség van az alkalmazásvédelmi szabályzat lekérésére az adatok védelméhez. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak meg kell hívnia a `loginAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
+Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, amely nem jelentkezteti be a felhasználót az ADAL használatával. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Az alkalmazásoknak ezt a módszert kell használniuk abban az esetben, ha nem hitelesítették a felhasználót az Azure AD-vel, ugyanakkor szükség van az alkalmazásvédelmi szabályzat lekérésére az adatok védelméhez. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak meg kell hívnia a `loginAndEnrollAccount` metódust, amelyet a „Headers/IntuneMAMEnrollment.h” fájl tartalmaz:
 
 ```objc
 /**
@@ -309,9 +308,9 @@ Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolg�
 
 ```
 
-A metódus meghívása esetén az SDK hitelesítő adatok megadását kéri a felhasználótól, ha nem található meglévő token///jogkivonat. Az SDK eztuán megpróbálja regisztrálni az alkalmazást a fiók nevében. A metódus nil (nulla) identitással is meghívható. Ez esetben az SDK regisztrálja az eszköz meglévő MAM-felhasználóját, vagy ha nem talál meglévő felhasználót, kéri a felhasználótól a felhasználónevet.
+A metódus meghívása esetén az SDK hitelesítő adatok megadását kéri a felhasználótól, ha nem található meglévő token///jogkivonat. Az SDK ezután megpróbálja regisztrálni az alkalmazást az APP-WE szolgáltatásban a megadott felhasználói fiók nevében. A metódus nil (nulla) identitással is meghívható. Ez esetben az SDK regisztrálja az eszköz meglévő felügyelt felhasználóját, vagy ha nem talál meglévő felhasználót, kéri a felhasználótól a felhasználónevet.
 
-Ha a regisztráció sikertelen, az alkalmazásnak valamikor a jövőben újra meg kell vizsgálnia az API meghívásának lehetőségét, függően a sikertelenség részleteitől. Az alkalmazás egy delegálton keresztül fogadhat értesítéseket a regisztrációs kérések eredményéről.
+Ha a regisztráció sikertelen, az alkalmazásnak valamikor a jövőben újra meg kell vizsgálnia az API meghívásának lehetőségét, függően a sikertelenség részleteitől. Az alkalmazás egy delegálton keresztül fogadhat [értesítéseket](#Status-result-and-debug-notifications) a regisztrációs kérések eredményéről.
 
 Az API meghívása után az alkalmazás a szokásos módon működhet tovább. Ha a regisztráció sikeres, az SDK értesíti a felhasználót, hogy újra kell indítani az alkalmazást.
 
@@ -323,7 +322,7 @@ Az alkalmazás az Intune MAM-szolgáltatásokhoz intézett kérések közül a k
  - Szabályzatfrissítési kérések
  - Regisztrációtörlési kérések
 
-Az értesítéseket delegáltmetódusok adják át. Ezeket a „Headers/IntuneMAMEnrollmentDelegate.h” fájl tartalmazza:
+Az értesítéseket delegáltmetódusok adják át. Ezeket a `Headers/IntuneMAMEnrollmentDelegate.h` fájl tartalmazza:
 
 ```objc
 /**
@@ -356,9 +355,7 @@ Ezek a delegáltmetódusok egy `IntuneMAMEnrollmentStatus` objektumot adnak viss
 - Az állapotkód leírását tartalmazó hibaüzenet-karakterláncot
 - Egy `NSError` objektumot
 
-Ezt az objektumot az IntuneMAMEnrollmentStatus.h nevű fájl definiálja a visszaadható konkrét állapotkódokkal együtt.
-
-
+Ezt az objektumot az `IntuneMAMEnrollmentStatus.h` nevű fájl definiálja a visszaadható konkrét állapotkódokkal együtt.
 
 
 ### <a name="sample-code"></a>Mintakód
@@ -394,9 +391,9 @@ Amikor egy alkalmazás először kap alkalmazásvédelmi szabályzatokat, újra 
 ```objc
  - (BOOL) restartApplication
 ```
-A metódus visszatérési értéke közli az SDK-val, hogy az alkalmazás fogja-e kezelni a szükséges újraindítást:   
+A metódus visszatérési értéke közli az SDK-val, hogy az alkalmazásnak kell-e kezelni a szükséges újraindítást:   
 
- - Ha a visszatérési érték true (igaz), akkor az alkalmazás fogja kezelni az újraindítást.   
+ - Ha a visszatérési érték true (igaz), akkor az alkalmazásnak kell kezelnie az újraindítást.   
 
  - Ha a visszatérési érték false, akkor az SDK fogja újraindítani az alkalmazást a metódus visszatérése után. Az SDK azonnal megjelenít egy párbeszédpanelt, amely arra kéri a felhasználót, hogy indítsa újra az alkalmazást.
 
@@ -404,7 +401,7 @@ A metódus visszatérési értéke közli az SDK-val, hogy az alkalmazás fogja-
 
 Az Intune App SDK több olyan API-val rendelkezik, amelyeket meg lehet hívni az alkalmazáshoz telepített Intune-beli alkalmazásvédelmi szabályzat információinak beolvasásához. Ezekkel az adatokkal testre lehet szabni az alkalmazás viselkedését. A legtöbb alkalmazásvédelmi szabályzatbeállítás automatikus kényszerítését az alkalmazás helyett az SDK végzi. Az alkalmazás által implementálandó egyetlen beállítás a Mentés másként vezérlő.
 
-### <a name="get-the-app-protection-policy-settings"></a>Az alkalmazásvédelmi szabályzatbeállítások beolvasása
+### <a name="get-app-protection-policy"></a>Alkalmazásvédelmi szabályzat lekérése
 
 #### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
 Az IntuneMAMPolicyManager osztály tartalmazza az alkalmazáshoz telepített Intune alkalmazásvédelmi szabályzatot. Olyan API-kat tesz közzé, amelyek hasznosak lehetnek [több identitás engedélyezésekor](#-enable-multi-identity-optional).
@@ -442,7 +439,9 @@ Az `IntuneMAMSaveLocationLocalDrive` állandót akkor érdemes használni, amiko
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Az Intune App SDK-beállítások konfigurálása
 
-Az Intune App SDK beállítását és konfigurálását az alkalmazás Info.plist fájljában található **IntuneMAMSettings** szótárral végezheti el. A következő táblázatban az összes támogatott beállítás látható.
+Az Intune App SDK beállítását és konfigurálását az alkalmazás Info.plist fájljában található **IntuneMAMSettings** szótárral végezheti el. Ha az IntuneMAMSettings szótár nem látható az Info.plist fájlban, akkor „IntuneMAMSettings” mezőnévvel létre kell hozni egy szótárt az alkalmazás Info.plist fájljában.
+
+Az IntuneMAMSettings szótárban kulcs-érték sorokkal konfigurációs beállításokat vehet fel az SDK konfigurálásához. Az alábbi táblázatban az összes támogatott beállítás megtalálható.
 
 Egy részükről már volt szó korábbi szakaszokban, más részük pedig nem vonatkozik minden alkalmazásra.
 
@@ -590,15 +589,15 @@ Az alábbiakban néhány gyakorlati tanácsot kínálunk iOS-alapú fejlesztésh
 
 * Ha az Xcode nem találja a `libIntuneMAM.a` könyvtárat, a probléma megoldásához vegye fel a könyvtár elérési útját a keresőútvonalakba.
 
-## <a name="faq"></a>Gyakori kérdések
+## <a name="faqs"></a>GYIK
 
 
 **Az összes API címezhető natív Swift vagy Objective-C+Swift együttes használatával?**
 
-Az Intune App SDK API-k csak Objective-C nyelven érhetők el, és nem támogatják a natív Swiftet.  
+Az Intune App SDK API-k csak Objective-C nyelven érhetők el, és nem támogatják a **natív** Swiftet. A Swift Objective-C-vel való együttműködésére van szükség.
 
 
-**Az alkalmazásom minden felhasználóját regisztrálni kell a MAM-szolgáltatásban?**
+**Az alkalmazásom minden felhasználóját regisztrálni kell az APP-WE-szolgáltatásban?**
 
 Nem. Valójában csak a munkahelyi vagy iskolai fiókokat kell regisztrálni az Intune App SDK-ban. Az alkalmazások feladata azt eldönteni, hogy egy fiók munkahelyi, illetve iskolai környezetben használatos-e.   
 
