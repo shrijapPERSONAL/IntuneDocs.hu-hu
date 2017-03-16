@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-E-mail-profilbeállítások segítségével konfigurálhatók a felügyelt eszközökön azok a beállítások, amelyek a vállalati levelezőrendszerhez való csatlakozáshoz és szinkronizáláshoz szükségesek. Ezáltal garantálható, hogy minden eszközön egységesek legyenek a beállítások, ráadásul kevesebbszer igényelnek segítséget olyan felhasználók, akik nem tudják a helyes e-mail-beállításokat.
+E-mail-profilok segítségével konfigurálhatók a felügyelt eszközökön azok a beállítások, amelyek a vállalati levelezőrendszerhez való csatlakozáshoz és szinkronizáláshoz szükségesek. Ezáltal garantálható, hogy minden eszközön egységesek legyenek a beállítások, ráadásul kevesebbszer igényelnek segítséget olyan felhasználók, akik nem tudják a helyes e-mail-beállításokat.
 
 A beépített levelezési ügyfélprogram a legtöbb platformon támogatott. A legtöbb külső levelezési alkalmazás egyelőre nem támogatott.
 
