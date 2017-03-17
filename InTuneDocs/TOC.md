@@ -3,7 +3,7 @@
 ## [Regisztráljon az ingyenes próbaverzióhoz](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Az Intune MDM kipróbálása](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [zabályzatok létrehozása és alkalmazások közzététele](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
+### [Szabályzatok létrehozása és alkalmazások közzététele](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Egyéb beállítások és kiegészítő funkciók](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Átállás a fizetős verzióra](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Mobilalkalmazás-kezelési és alkalmazásvédelmi gyakori kérdések](understand-explore/mam-faq.md)
@@ -120,6 +120,7 @@
 
 ## [Alkalmazások hozzáadása](deploy-use/add-apps.md)
 ### [Alkalmazások hozzáadása regisztrált eszközökhöz](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Windows-alkalmazások közvetlen telepítése](deploy-use/sideload-apps-for-windows.md)
 ### [Alkalmazások hozzáadása Intune ügyfélgépekhez](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Intune ügyfélgép-szoftverek licencszerződések kezelése](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Alkalmazások telepítése](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Konfigurációs szabályzatok az Android for Workhöz](deploy-use/afw-app-configuration-policy.md)
 ### [iOS-mobilalkalmazás létesítési profiljai](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [Internet-hozzáférés kezelése](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [Üzleti alkalmazások közvetlen telepítése](deploy-use/sideload-apps-for-windows.md)
 
 ## [Alkalmazások és adatok védelme](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Eszközmegfelelőségi szabályzatok](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -193,12 +193,10 @@
 ### [Felügyelt vállalati alkalmazás adatainak törlése](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [A végfelhasználók felkészítése az Intune használatára](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Android-eszköz használata az Intune-nal](EndUser/using-your-android-device-with-intune.md)
-#### [Android-felhasználói alkalmazások letöltése](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS-eszköz használata az Intune-nal](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [iOS-felhasználói alkalmazások letöltése](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows-eszköz használata az Intune-nal](EndUser/using-your-windows-device-with-intune.md)
-#### [Windows-felhasználói alkalmazások letöltése](deploy-use/how-your-windows-users-get-their-apps.md)
+### [A Céges portál végfelhasználói üzenetei](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Android-felhasználói alkalmazások letöltése](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS-felhasználói alkalmazások letöltése](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows-felhasználói alkalmazások letöltése](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Alkalmazások fejlesztése és testreszabása
 ## [A Microsoft Intune App SDK áttekintése](develop/intune-app-sdk.md)

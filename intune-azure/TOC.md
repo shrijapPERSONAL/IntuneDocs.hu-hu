@@ -169,6 +169,8 @@
 ### [Android for Work-alapú megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS rendszerre vonatkozó megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windowsos megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Meg nem felelési műveletek létrehozása](set-device-compliance/actions-for-noncompliance.md)
+### [Az eszközmegfelelőség figyelése](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
