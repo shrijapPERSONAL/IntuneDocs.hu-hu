@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
-ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
-ms.lasthandoff: 12/22/2016
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -61,7 +61,7 @@ Az Azure AD-ben az Intune-csoportok jelenlegi lehetőségei közül néhány nem
 
 ## <a name="what-happens-to-intune-groups"></a>Mi történik az Intune-csoportokkal?
 
-| Csoportok az Intune-ban|Azure AD csoport|
+| Csoportok az Intune-ban|Azure AD-csoport|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statikus felhasználói csoport|Statikus Azure AD biztonsági csoport|
 |Dinamikus felhasználói csoport|Statikus Azure AD biztonsági csoportok Azure AD biztonságicsoport-hierarchiával|
@@ -90,11 +90,5 @@ Az attribútumok a csoportok definiálása során felhasználható eszköztulajd
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>Mi történik a már telepített szabályzatokkal és alkalmazásokkal?
 
 A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban a klasszikus Intune-konzol helyett az Azure portálon lehet kezelni.
-
-
-## <a name="how-to-get-more-information"></a>További információ
-
-Forduljon a migrációs csapathoz a következő címen: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).    
-     
-
+ 
 

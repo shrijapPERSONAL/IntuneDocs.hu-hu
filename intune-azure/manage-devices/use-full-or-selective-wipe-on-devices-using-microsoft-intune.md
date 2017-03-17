@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
-# <a name="use-full-or-selective-wipe"></a>Teljes vagy szelektív törlés alkalmazása 
+# <a name="use-full-or-selective-wipe"></a>Teljes vagy szelektív törlés alkalmazása
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -104,6 +104,10 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
+
+**Android for Work**
+
+Az androidos eszközökről a szelektív törlés eltávolítja a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást. Az eszköz így kikerül az Intune felügyelete alól. Az Android for Work esetében a teljes törlés nem támogatott.
 
 **Windows**
 

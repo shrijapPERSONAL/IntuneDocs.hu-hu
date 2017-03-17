@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 207297601634f390051a6345b96bf09e1d031747
-ms.openlocfilehash: 6b37cede797f965b82c067b274517277d8597939
-ms.lasthandoff: 01/12/2017
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
+ms.lasthandoff: 03/16/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/12/2017
 
 ## <a name="whats-a-certificate"></a>Mi az a tanúsítvány?
 
-A [kriptográfia](https://technet.microsoft.com/en-us/library/cc962030.aspx) az információ biztonságossá tételének tudománya. A kriptográfiát hagyományosan kódolt üzenetek váltására alkalmazták, hogy a [kommunikáció titokban maradjon](https://technet.microsoft.com/en-us/library/cc962019.aspx). A kriptográfia legegyszerűbb formájában betűk helyettesítésével vagy transzponálásával olvashatatlan, titkosított vagy rejtett kódolt üzenetek készítését jelenti. Csak a visszafejtési kulccsal vagy _tanúsítvánnyal_ rendelkezők alakíthatják vissza a kódolt üzenetet az eredeti, olvasható formájukba. Az androidos eszköze tanúsítványokat használ az Intune-nal, hogy az eszköze és a munkahelyi erőforrások közötti kommunikáció, például az üzenetek vagy a dokumentumok az elejétől a végéig biztonságosak legyenek.
+A [kriptográfia](https://technet.microsoft.com/library/cc962030.aspx) az információ biztonságossá tételének tudománya. A kriptográfiát hagyományosan kódolt üzenetek váltására alkalmazták, hogy a [kommunikáció titokban maradjon](https://technet.microsoft.com/library/cc962019.aspx). A kriptográfia legegyszerűbb formájában betűk helyettesítésével vagy transzponálásával olvashatatlan, titkosított vagy rejtett kódolt üzenetek készítését jelenti. Csak a visszafejtési kulccsal vagy _tanúsítvánnyal_ rendelkezők alakíthatják vissza a kódolt üzenetet az eredeti, olvasható formájukba. Az androidos eszköze tanúsítványokat használ az Intune-nal, hogy az eszköze és a munkahelyi erőforrások közötti kommunikáció, például az üzenetek vagy a dokumentumok az elejétől a végéig biztonságosak legyenek.
 
 ## <a name="fixing-certificate-issues"></a>Tanúsítványproblémák elhárítása
 

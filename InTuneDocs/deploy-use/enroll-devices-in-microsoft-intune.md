@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,7 +38,7 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 - **Törlés** – Azt jelzi, hogy törölni kell-e mindent az eszközről ahhoz, hogy a felhasználók regisztrálni tudják. A „törlés” itt az eszköz gyári alaphelyzetének visszaállítását, vagyis az összes adat törlését jelenti. További információk: [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md).
 - **Affinitás** - Az eszközök felhasználókkal való társítása. Erre a mobilalkalmazás-kezeléshez (MAM) és a vállalati adatokhoz való feltételes hozzáféréshez van szükség. További információk: [Felhasználói affinitás](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Zárolás** – Azt jelzi, hogy a rendszer megakadályozza a felhasználókat abban, hogy töröljék eszközeik regisztrációját az operációs rendszer natív menüinek használatával. A felhasználók a Céges portál alkalmazás használatával bármelyik platformon törölhetik eszközeik regisztrációját. 
+- **Zárolás** – Azt jelzi, hogy a rendszer megakadályozza a felhasználókat abban, hogy töröljék eszközeik regisztrációját az operációs rendszer natív menüinek használatával. A felhasználók a Céges portál alkalmazás használatával bármelyik platformon törölhetik eszközeik regisztrációját.
 
 **iOS-eszközök regisztrálási módszerei**
 
@@ -54,7 +54,7 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 | **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Igen|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-eszközök regisztrálási módszerei**
@@ -75,7 +75,7 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 | **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Igen|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
 
 
 A megfelelő módszer kiválasztásában segít az [Eszközök regisztrálási módjának kiválasztása](/intune/get-started/choose-how-to-enroll-devices1) című témakörben található kérdéssor.
