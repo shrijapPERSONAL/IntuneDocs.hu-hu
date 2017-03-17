@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Igény szerinti VPN-t iOS 8.0 vagy újabb rendszerű eszközökhöz konfigurálh
   - **Kapcsolat kiértékelése** - ennek háromféle beállítása van; a. **Tartományi művelet** – választhatja a **Szükség esetén kapcsolódás** vagy a **Soha ne legyen kapcsolódás** lehetőségeket
     ; b. **Tartományok vesszővel elválasztott listája** – ezt csak akkor kell konfigurálnia, ha a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőséget választotta
     ; c. **Kötelező URL-sztringminta** – egy HTTP vagy HTTPS (javasolt) URL-cím, például *https://vpntestprobe.contoso.com*. Ez a szabály ellenőrzi, hogy érkezett-e válasz erről a címről. Ha nem érkezett, és a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőség lett kiválasztva, a VPN aktiválódik.
+      
      > [!TIP]
      >
      >Ez a művelet használható például akkor, ha a vállalati hálózat bizonyos helyei megkövetelik a közvetlen kapcsolatot vagy a vállalati VPN-kapcsolatot, mások azonban nem. Ha a **DNS-keresési tartományok vesszővel elválasztott listájában** megadta a *corp.contoso.com* címet, választhatja a **Csatlakozás szükség esetén** lehetőséget, majd megadhatja a hálózat azon helyeinek listáját, amelyek VPN-kapcsolatot követelnek meg, például *sharepoint.corp.contoso.com*. A szabály ellenőrzi, hogy a *vpntestprobe.contoso.com* elérhető-e. Ha nem érhető el, a VPN a Sharepoint-helyre vonatkozóan aktiválódik.
@@ -192,9 +194,4 @@ A tartományspecifikus szabályok kiértékelése a minden tartományra vonatkoz
 A sikeres alkalmazást követően a felhasználók látni fogják az eszközükön a VPN-kapcsolat Ön által megadott nevét a VPN-kapcsolatok listájában.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
