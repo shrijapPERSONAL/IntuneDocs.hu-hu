@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
+ms.lasthandoff: 03/09/2017
 
 ---
 
@@ -46,7 +46,7 @@ Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 4. Keresse meg az IMEI-számok CSV-fájlját, és válassza a **Hozzáadás** elemet.
 
 > [!IMPORTANT]
-> Ha Android-eszközökhöz tartozó IMEI-számokat importál, ügyeljen rá, hogy egyes Android-eszközök több IMEI-számmal is rendelkezhetnek. Ha olyan IMEI-számot importál, amely nem egyezik meg az eszköz által az Intune-nak jelentett IMEI-számmal, az eszköz nem vállalati, hanem személyes eszközként lesz besorolva.
+> Bizonyos androidos eszközök több IMEI-számmal rendelkeznek. Az Intune eszközönként egy IMEI-számot vesz leltárba. Ha olyan IMEI-számot importál, amely nem egyezik meg az eszköz az Intune által leltározott IMEI-számával, az eszköz nem vállalati, hanem személyes eszközként lesz besorolva. Ha egy eszközhöz több IMEI-számot importál, a nem leltározott számok **Ismeretlen** regisztrációs állapottal jelennek meg.
 
 **Céges azonosítók .csv-listájának törlése**
 

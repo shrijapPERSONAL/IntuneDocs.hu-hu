@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
      -     Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
 
         Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
+
+ - Androidos eszközök esetén:
+     - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel azokat. 
+    
+        -    Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
+    
+        -     Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
 
 ## <a name="policy-issues"></a>Szabályzattal kapcsolatos problémák
 
