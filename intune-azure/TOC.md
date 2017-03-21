@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Cél
 ### [Eszközprofilok konfigurálása](configure-devices/how-to-create-device-profiles.md)
+
+### [Eszközfunkciók konfigurálása](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Eszközkorlátozások beállítása](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
