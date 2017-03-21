@@ -24,8 +24,3 @@
 A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX Standard-eszközként kezelni: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY és SM-G313U. Ezeket az eszközöket a rendszer szabványos Android-eszközökként kezeli. További tájékoztatást a [Samsung KNOX](https://www.samsungknox.com/en) webhelyén talál.
 
 Az eszközök és a felügyeleti metódusok teljes listája [Az Intune által támogatott eszközök](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices) című cikkben található.
-
-
-<!--HONumber=Jan17_HO2-->
-
-
