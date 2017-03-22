@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Az alkalmazásvédelmi szabályzatok olyan eszközökön futó alkalmazásokhoz 
 
 -   **Egy külső mobileszköz-kezelési (MDM) megoldásban vannak regisztrálva:** A kategóriába tartozó eszközök általában vállalati tulajdonú eszközök.
 
-  > [!NOTE]
-  > Az alkalmazásvédelmi szabályzatok használata nem ajánlott harmadik féltől származó mobilalkalmazás-kezelési és biztonságos tárolómegoldások használata esetén.
+      > [!NOTE]
+      > Az alkalmazásvédelmi szabályzatok használata nem ajánlott harmadik féltől származó mobilalkalmazás-kezelési és biztonságos tárolómegoldások használata esetén.
 
 -   **Nincsenek regisztrálva mobileszköz-kezelési (MDM) megoldásban:** A kategóriába tartozó eszközök általában olyan, az alkalmazottak tulajdonában lévő eszközök, amelyek nincsenek az Intune-ban vagy más MDM-megoldásban kezelve vagy regisztrálva.
 
@@ -133,9 +134,4 @@ A többszörös identitásos hozzáférést minden Office-mobilalkalmazás támo
 - [Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
