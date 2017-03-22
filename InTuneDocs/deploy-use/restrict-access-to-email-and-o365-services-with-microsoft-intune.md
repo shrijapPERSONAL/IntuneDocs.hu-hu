@@ -74,7 +74,7 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
 2. [Eszközmegfelelőségi szabályzat létrehozása](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  Feltételes hozzáférési szabályzat létrehozása a következők Microsoft-felhőszolgáltatás/-termék valamelyikéhez:
-> [!div class="op_single_selector"]
+
   - [Feltételes hozzáférési szabályzat létrehozása az Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Feltételes hozzáférési szabályzat létrehozása az új Dedikált Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
