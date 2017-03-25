@@ -15,8 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: bac9e6784ed6814d27bec9ad07b507facc9e8fc2
-ms.openlocfilehash: 48fe5f0a124a6608434f87905c24cda822fe63b7
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 69f7f366e798c1c987a6ddfb93300598b22a7d01
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -25,8 +26,6 @@ A cikkből megismerheti, mit módosítottunk a végfelhasználók számára lát
 
 > [!Note]
 > Vegye figyelembe, hogy az alábbi képek az előzetes verziókra vonatkoznak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
-
-## <a name="whats-coming"></a>Mi várható?
 
 ### <a name="february-2017"></a>2017. február
 
@@ -68,9 +67,4 @@ A Céges portál webhely februártól kezdve támogatni fogja a felügyelt eszk�
 * [A felhőplatform ütemterve](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Az Azure előzetes verziójának újdonságai](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Újdonságok – Archívum](whats-new-archive.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -1,47 +1,9 @@
 ---
-title: "A Lookout MTP engedélyezése az Intune-ban | Microsoft Docs"
-description: "A Lookout mobil veszélyforrások elleni védelem engedélyezése az Intune felügyeleti konzolon."
-keywords: 
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 12/19/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
-ms.reviewer: sandera
-ms.suite: ems
-ms.custom: intune-classic
+redirect_url: https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection
 translationtype: Human Translation
-ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
-ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
-
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: ba01b88971ec72b81c3754cd88be1f5e64a929dc
+ms.lasthandoff: 03/21/2017
 
 ---
-
-# <a name="enable-lookout-mtp-connection-in-the-intune-admin-console"></a>A Lookout MTP-kapcsolat engedélyezése az Intune felügyeleti konzolon
-
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-A Lookout veszélyforrások elleni védelmi funkciójának (MTP) Intune-ra vonatkozó engedélyezéséhez előzőleg konfigurálni kell az Intune-összekötőt a Lookout-konzolon.  Ha ezt még nem tette meg, hajtsa végre a [Lookout mobil veszélyforrások elleni védelem beállítása az előfizetéshez](set-up-your-subscription-with-lookout-mtp.md) című részben leírt lépéseket.
-
-A Lookout MTP-kapcsolat engedélyezéséhez az Intune-ban a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com) **Felügyelet** lapján válassza a **Harmadik fél szolgáltatásának integrációja** lehetőséget. Válassza a **Lookout állapota** lehetőséget és engedélyezze a **Szinkronizálás MTP-vel** funkciót a váltógomb segítségével.
-
-![képernyőkép a Lookout szinkronizálási lapjáról a váltógomb kiemelésével](../media/mtp/lookout-intune-synchronization.png)
-
->[!IMPORTANT]
-> A Lookout for Work alkalmazás konfigurálását **kötelező** a megfelelőségi szabályok létrehozása és a feltételes hozzáférés konfigurálása előtt elvégezni. Ez biztosítja, hogy az alkalmazás elérhető és készen áll a végfelhasználók általi telepítésre még azelőtt, hogy hozzáférhetnének a levelezéshez és más vállalati erőforrásokhoz.
-
-Ez végrehajtja a Lookout és az Intune közötti integráció beállítását az Intune felügyeleti konzolon.  A megoldás megvalósításának következő néhány lépésében kerül sor a [Lookout for Work](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) alkalmazások központi telepítésére és a [megfelelőségi](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy) szabályzat beállítására.
-
-
-## <a name="next-steps"></a>További lépések
-[A Lookout for Work alkalmazás konfigurálása](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
