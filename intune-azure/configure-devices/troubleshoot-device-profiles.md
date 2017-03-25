@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Egy házirend vagy alkalmazás telepítésekor az Intune megpróbálja értesít
 
 Ha az eszköz az első értesítés után nem jelentkezik be, hogy beszerezze a szabályzatot, az Intune három további kísérletet tesz.  Ha az eszköz kapcsolat nélküli állapotban van (például ki van kapcsolva vagy nem kapcsolódik hálózathoz), előfordulhat, hogy nem kapja meg az értesítéseket. Ebben az esetben az eszköz az Intune szolgáltatásba való következő ütemezett bejelentkezéskor szerzi be a házirendet a következő módon:
 
-- iOS és Mac OS X: 6 óránként.
+- iOS és macOS: 6 óránként.
 - Android: 8 óránként.
 - Windows Phone: 8 óránként.
 - Eszközként regisztrált Windows 8.1 és Windows 10-számítógépek: 8 óránként.
 
 Ha az eszköz nemrég lett regisztrálva, a bejelentkezés gyakoribb lesz, a következőképpen:
 
-- iOS és Mac OS X: 6 órán át 15 percenként, majd 6 óránként.
+- iOS és macOS: 6 órán át 15 percenként, majd 6 óránként.
 - Android: 15 percen át 3 percenként, majd 2 órán át 15 percenként, majd 8 óránként.
 - Windows Phone: 15 percen át 5 percenként, majd 2 órán át 15 percenként, majd 8 óránként.
 - Eszközként regisztrált Windows-számítógépek: 30 percen át 3 percenként, majd 8 óránként.
@@ -499,8 +500,3 @@ Előfordulhat, hogy egyéb MDM-eszközöket (például Android, Windows Phone 8.
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben leírtak szerint.
-
-
-<!--HONumber=Feb17_HO3-->
-
-

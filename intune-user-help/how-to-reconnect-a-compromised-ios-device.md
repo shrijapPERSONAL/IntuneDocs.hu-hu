@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 38edb26334cdfdee0ab66465c4bed21d6e8d14c1
-ms.openlocfilehash: 7506063b56231feea1b2f6b22b157171896e25ab
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -29,5 +29,5 @@ ms.lasthandoff: 12/21/2016
 
 A rendszergazda azt észlelte, hogy Ön egy feltört eszközt használ. A „feltört” vagy „jailbreakelt” állapot azt jelenti, hogy az eszközt bizonyos kritikus fontosságú fájlok korlátlan elérése érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve.
 
-Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a vállalati erőforrásokhoz, és a rendszergazdától kell segítséget kérnie. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a céges erőforrásokhoz, és a rendszergazdától kell segítséget kérnie. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 

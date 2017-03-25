@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e6e6ba0aae5da25b3f8b07326a2e323c75268ff5
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -50,3 +50,7 @@ ms.lasthandoff: 02/18/2017
 8. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
+
+## <a name="sign-the-windows-10-company-portal-app"></a>A Windows 10-es Céges portál alkalmazás aláírása
+Olyan ügyfelek esetében, akiknek le kell tölteniük és közvetlenül kell telepíteniük a Windows 10-es Céges portál alkalmazást, mostantól rendelkezésre áll egy parancsfájl, amely egyszerűbbé és hatékonyabbá teszi az alkalmazások aláírását a szervezetnél. A parancsfájl letöltéséhez és használati útmutatójához tekintse meg a Windows 10-es Céges portálhoz készült [Microsoft Intune aláírási parancsfájlt](https://aka.ms/win10cpscript) a TechNet gyűjteményében.
+

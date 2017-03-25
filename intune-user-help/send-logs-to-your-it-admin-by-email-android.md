@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>Naplók elküldése a rendszergazdának e-mailben
 
-Ha Android-alapú eszközén hibaüzenet jelenik meg a Vállalati portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ezek egy speciális dokumentumban, egy úgynevezett _diagnosztikai naplófájlban_ találhatók az eszközön.
+Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ezek egy speciális dokumentumban, egy úgynevezett _diagnosztikai naplófájlban_ találhatók az eszközön.
 
 > [!Note]
 > Annak érdekében, hogy a rendszergazda könnyebben felderíthesse a problémát, kapcsolja be a _részletes naplózást_. Részletes naplózáskor az összes releváns részlet bekerül a jelentésbe. [Útmutató a részletes naplózás bekapcsolásához](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

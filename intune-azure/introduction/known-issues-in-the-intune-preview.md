@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Ha új szolgáltatás hozzáadását szeretné igényelni az Intune-hoz, vegye f
 ## <a name="administration-and-accounts"></a>Felügyelet és fiókok
 
 - A globális rendszergazdák (másnéven a bérlő rendszergazdák) folytathatják a mindennapos adminisztrációs feladataikat különálló Intune- vagy Nagyvállalati mobilitási csomag- (EMS-) licenc nélkül. Ha azonban a globális rendszergazdák a szolgáltatást szeretnék használni, például a saját eszközük vagy vállalati eszköz regisztrálásához vagy a munkahelyi Intune portál használatához, Intune- vagy EMS-licencre van szükségük, mint minden más felhasználónak.
+
+## <a name="apple-enrollment-profile-migration"></a>Az Apple-belépetési profil áttelepítése
+- A következő néhány hónap során az Intune lehetővé teszi, hogy az új Azure Portalon felügyelje az Apple Device Enrollment Programmal és az Apple Configurator eszközzel végzett regisztrálást. Ha törli az Apple Device Enrollment Program tokenjét, és nem tölt fel frissített tokent, akkor az Intune-fiók áttelepítésének részeként az eredeti token vissza lesz állítva az új Azure Portalon. Ha el szeretné távolítani a tokent, és szeretné megakadályozni a DEP-regisztrációt, törölje a tokent az Azure Portalon. 
 

@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 0ba6695b595849f72eb44d8e6f095e8b1aae39eb
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3b355d43d4be05535f256d88a8648c2e67035882
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ Ez az **Előzetes kiadás** a Microsoft Intune következő verzióiban találhat
 A lap tartalmát rendszeresen frissítjük. További hírekért látogasson vissza.
 
 > [!Note]
-> A következő változtatások vannak fejlesztés alatt az Intune-hoz. Idővel mindezek a funkciók hibrid ügyféltelepítések esetén is támogatottak lesznek (Intune-nal integrált Configuration Manager). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok oldalát](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> A következő változtatások vannak fejlesztés alatt az Intune-hoz. Idővel mindezek a funkciók hibrid ügyféltelepítések esetén is támogatottak lesznek (Intune-nal integrált Configuration Manager). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok oldalát](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## <a name="new-capabilities"></a>Új képességek
 
@@ -47,11 +47,15 @@ Az Androidhoz készült Céges portál alkalmazás új, modern megjelenésű és
 
 A változásokról további információt talál az [alkalmazások felhasználói felületének frissítései témakörben](whats-new-in-intune-app-ui.md].
 
+### <a name="signing-script-for-windows-10-company-portal---941642--"></a>A Windows 10-es Céges portálhoz készült aláírási szkript <!--941642-->
+
+Olyan ügyfelek esetében, akiknek le kell tölteniük és közvetlenül kell telepíteniük a Windows 10-es Céges portál alkalmazást, mostantól rendelkezésre áll egy szkript, amely egyszerűbbé és hatékonyabbá teszi az alkalmazások aláírását a munkahelyen.   A szkript letöltéséhez és használati útmutatójához tekintse meg a [Windows 10-es Céges portálhoz készült Microsoft Intune aláírási szkriptet](https://aka.ms/win10cpscript) a TechNet gyűjteményében. A bejelentéssel kapcsolatos további részletekért olvassa el [A Windows 10-es Céges portál alkalmazás frissítése](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) című bejegyzést az Intune ügyfélszolgálati csapat blogján. 
+
 ## <a name="notices"></a>Értesítések
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Megújult támogatás az Android rendszert Kínában használó ügyfelek számára <!--720444-->
 
-Kínában nem érhető el a Google Play Áruház, ezért az androidos eszközöknek kínai áruházakból kell beszerezniük az alkalmazásokat. A Céges portál alkalmazás ezt azzal segíti, hogy az Android rendszert Kínában használó ügyfeleket a Céges portál és az Outlook alkalmazások letöltéséhez helyi alkalmazásáruházakba irányítja át. Ezzel javul a mobileszköz-felügyelet és a mobilalkalmazás-felügyelet felhasználói élményének minősége, ha a feltételes hozzáférési szabályzatok engedélyezve vannak. Az androidos Céges portál és Outlook alkalmazások az alábbi kínai alkalmazásáruházakból tölthetők le: 
+Kínában nem érhető el a Google Play Áruház, ezért az androidos eszközöknek kínai áruházakból kell beszerezniük az alkalmazásokat. A Céges portál alkalmazás ezt azzal segíti, hogy az Android rendszert Kínában használó ügyfeleket a Céges portál és az Outlook alkalmazások letöltéséhez helyi alkalmazásáruházakba irányítja át. Ezzel javul a mobileszköz-felügyelet és a mobilalkalmazás-felügyelet felhasználói élményének minősége, ha a feltételes hozzáférési szabályzatok engedélyezve vannak. Az androidos Céges portál és Outlook alkalmazások az alábbi kínai alkalmazásáruházakból tölthetők le:
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -61,7 +65,7 @@ Kínában nem érhető el a Google Play Áruház, ezért az androidos eszközök
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Az Apple frissítést tesz kötelezővé a Application Transport Security szolgáltatáshoz <!--748318-->
 
-Az Apple bejelentette, hogy 2017 tavaszától bizonyos követelményeket ír elő az Application Transport Security (ATS, alkalmazás átviteli biztonsága) esetében. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás minden olyan ügyfelet érint, aki az iOS vagy macOS rendszerű Céges portál alkalmazást használja. További információt az [Intune-támogatási blogban](https://aka.ms/compportalats) talál.
+Az Apple bejelentette, hogy 2017 tavaszától bizonyos követelményeket ír elő az Application Transport Security (ATS, alkalmazás átviteli biztonsága) esetében. Az ATS szigorúbb biztonsági előírásokat érvényesít az alkalmazások közötti minden olyan kommunikációra, amely HTTPS-protokollon keresztül történik. Ez a változás minden olyan ügyfelet érint, aki az iOS rendszerű Céges portál alkalmazást használja. További információt az [Intune-támogatási blogban](https://aka.ms/compportalats) talál.
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Az Intune új, Azure-beli felügyeleti felületének nyilvános előzetes verziója <!--736542-->
 
@@ -69,9 +73,7 @@ A 2017-es év elején a felügyeleti funkciók teljes körét áthelyezzük az A
 
 Az új próbabérlők ettől a hónaptól kezdve láthatják az Azure Portalon az új felügyeleti felület nyilvános előzetesét. Amíg a funkció előzetes verziójú, a meglévő Intune konzollal való egyenértékűség és a konzol funkciói több lépésben valósulnak meg.
 
-Az Azure Portal felügyeleti felületén elérhető lesz a már bejelentett új csoportkezelési és célzási funkció. Amikor az Ön bérlőjét migráljuk az új csoportkezelési felületre, azzal egyidejűleg a bérlőjét áthelyezzük az új felügyeleti felület előzetes verziójára is. Ha bérlőjének migrálása előtt tesztelni szeretné vagy meg szeretné nézni valamelyik új funkciót, regisztráljon egy új Intune-próbafiókra, vagy pillantson bele az [új dokumentációba](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune).
-
-Ha bármilyen kérdései vannak bérlőjének migrálásáról, forduljon migrációs csapatunkhoz a következő címen: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+Az Azure Portal felügyeleti felületén elérhető lesz a már bejelentett új csoportkezelési és célzási funkció. Amikor az Ön bérlőjét migráljuk az új csoportkezelési felületre, azzal egyidejűleg a bérlőjét áthelyezzük az új felügyeleti felület előzetes verziójára is. Ha bérlőjének migrálása előtt tesztelni szeretné vagy meg szeretné nézni valamelyik új funkciót, regisztráljon egy új Intune-próbafiókra, vagy pillantson bele az [új dokumentációba](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>A nem felügyelt eszközök hozzáférhetnek a hozzárendelt alkalmazásokhoz <!--664691-->
 
@@ -92,7 +94,7 @@ Lásd: [Alkalmazás hozzáadása az Intune-hoz](/intune-azure/manage-apps/add-ap
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Üzletági alkalmazások hozzárendelése nem regisztrált eszközökkel rendelkező felhasználókhoz <!--748823-->
 
-Mostantól attól függetlenül kioszthat üzletági alkalmazásokat a felhasználóknak, hogy az eszközeik regisztrálva vannak-e az Intune-ban. Ha valamely felhasználó eszköze nincs regisztrálva az Intune-ban, a Munkahelyi portál alkalmazás helyett a Munkahelyi portál webhelyen telepíthetik az alkalmazást.
+Mostantól attól függetlenül kioszthat üzletági alkalmazásokat a felhasználóknak, hogy az eszközeik regisztrálva vannak-e az Intune-ban. Ha valamely felhasználó eszköze nincs regisztrálva az Intune-ban, a Céges portál alkalmazás helyett a Céges portál webhelyen telepíthetik az alkalmazást.
 
 ### <a name="new-compliance-reports---846671--"></a>Új megfelelőségi jelentések <!--846671-->
 

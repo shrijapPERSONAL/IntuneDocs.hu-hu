@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,21 +16,21 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 26991bd0c7632d04b75ecbec023d96c1045f337a
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 82585886bb053d5b6b5981f61d0337fc6feffea4
+ms.openlocfilehash: b26d66d557e084b5b328aec2222c50c2db254bf7
+ms.lasthandoff: 03/14/2017
 
 
 ---
 
-# <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése 
+# <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac OS X-eszközök mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az iOS- és Mac-eszközök Intune-felügyeletéhez szüksége lesz egy Apple Push Notification- (APN-) tanúsítványra. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói telepíthetik a Céges portál alkalmazást az eszközeik regisztrálásához, vagy beállíthatja a vállalati tulajdonú iOS-eszközök felügyeletét.
+Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac számítógépek mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az Intune-nak MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS-es és Mac eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói telepíthetik a Céges portál alkalmazást az eszközeik regisztrálásához. Az Apple Device Enrollment Programmal a vállalati tulajdonú iOS-eszközökre is beállíthat eszközfelügyeletet, vagy többek között az Apple Configurator használatával is regisztrálhatja az eszközöket. A regisztrálási lehetőségekről további információt talál a [iOS-eszközök regisztrálásának módjai](https://docs.microsoft.com/intune-azure/enroll-devices/choose-ios-enrollment-method) című témakörben.
 
 ## <a name="steps-to-get-your-certificate"></a>A tanúsítvány beszerzésének lépései
-Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Válassza az Intune panelen az **Eszközök regisztrálása** > **Apple MDM Push-tanúsítvány** elemet, majd kövesse az Azure Portal számozott lépéseit (alább láthatók).
+Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Válassza az Intune panelen az **Eszközök regisztrálása** > **Apple-regisztráció** **Apple MDM Push-tanúsítvány** elemet, majd kövesse az Azure Portal számozott lépéseit (alább láthatók).
 
 **1. lépés Töltse le az Apple MDM push-tanúsítvány létrehozásához szükséges Intune tanúsítvány-aláírási kérelmet.**<br>
 Válassza a **CSR letöltése** lehetőséget a .CSR kiterjesztésű fájl letöltéséhez és helyi mentéséhez. A .csr fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.

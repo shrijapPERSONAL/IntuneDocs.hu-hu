@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 A cikket a 2. szakasz többi témakörével párhuzamosan célszerű feldolgozni, mivel a terv az útmutató korábbi szakaszaiban összegyűjtött információkon és meghozott döntéseken fog alapulni. A tervezési szakaszban az önálló Intune-ra fogunk összpontosítani, amely a Microsoft felhőalapú szolgáltatása.
 
-Ugyan a helyszíni infrastruktúrával kapcsolatban csak minimális mennyiségű követelményt támasztunk, mégis érdemes felkészülni a tervkészítésre, hogy biztosan a megfelelő, a saját céljainak és követelményeinek megfelelő mobileszköz-felügyeleti megoldást legyen a végeredmény.
+Ugyan a helyszíni infrastruktúrával kapcsolatban csak minimális mennyiségű követelményt támasztunk, mégis érdemes felkészülni a tervkészítésre, hogy biztosan a megfelelő, a saját céljainak és követelményeinek megfelelő mobileszköz-felügyeleti megoldás legyen a végeredmény.
 
 Ezenfelül gyakorta előfordul, hogy az implementálási vagy a tesztelési fázisban módosítani kell a terven, és ezeket a módosításokat nagyon fontos az indokaikkal együtt azonnal dokumentálni. A következő területeket fogjuk megvizsgálni:
 
@@ -409,9 +410,4 @@ Az alábbi példa a feltételes hozzáférési szabályzatok dokumentálását s
 ## <a name="next-section"></a>Következő szakasz
 
 A következő szakasz [az Intune implementálási folyamatához](section-8-onboarding-process.md) nyújt útmutatást.
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

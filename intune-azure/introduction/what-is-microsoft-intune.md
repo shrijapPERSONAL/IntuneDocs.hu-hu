@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 A Microsoft Intune az Azure Portalra kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók változnak.
 Az új portál betekintést nyújt az új és frissített Azure Portal-funkciókba, amelyekkel felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
-Minden Intune-funkció végül az Azure-ba kerül majd át, de bizonyos Intune-feladatokat már most elvégezhet az Azure Portalon. Mivel az új felület előnézet, bizonyos funkciók még nem szerepelnek a portálon. A részletekért lásd [az előzetes újdonságainak](#what's-new-in-the-preview) ismertetését.
+Végül minden Intune-funkció átkerül majd az Azure-ba, de számos Intune-feladatot már most is elvégezhet az Azure Portalon. Mivel az új felület előnézet, bizonyos funkciók még nem szerepelnek a portálon. A részletekért lásd az [Újdonságok](#what's-new) ismertetését.
 
 > [!IMPORTANT]
 > **Nem jelenik még meg az új portál?**<br>
-> A Microsoft bizonyos kiválasztott bérlők számára már elkezdte az előzetes bevezetését. A meglévő bérlők migrálása az új felhasználói felületre a 2017-es év elejétől kezdődik. Az Office-üzenetközpontban a bérlő migrálása előtt értesítést fog kapni. Ha bármilyen kérdései vannak bérlőjének migrálásáról, forduljon migrációs csapatunkhoz a következő címen: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> A Microsoft bizonyos kiválasztott bérlők számára már elkezdte az előzetes bevezetését. A meglévő bérlők migrálása az új felhasználói felületre a 2017-es év elejétől kezdődik. Az Office-üzenetközpontban a bérlő migrálása előtt értesítést fog kapni.
 
 
 Ebben a könyvtárban találja az új termék dokumentációját, amely folyamatosan frissül az előzetes során. Ha javaslatai vannak, küldjön visszajelzést a témakör megjegyzéseiben. Szívesen meghallgatnánk a véleményét.
@@ -74,24 +74,25 @@ A dokumentáció a szükséges információk könnyebb megtalálhatósága érde
 
 ![Az Azure Portal munkafolyamatai](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>Eszközök regisztrálása
+### <a name="introduction-and-get-started"></a>Bevezetés és az első lépések
+Ez a szakasz tájékoztatást nyújt az [újdonságokról](/intune-azure/introduction/whats-new), az [ismert problémákról](/intune-azure/introduction/known-issues-in-the-intune-preview), a [támogatás kéréséről](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) és az Intune [ingyenes próbaverziójáról](/intune-azure/introduction/sign-up-free-trial-microsoft-intune).
+### <a name="plan-and-design"></a>Tervezés és kialakítás
+Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](/intune-azure/plan-and-design/get-started).
+### <a name="device-enrollment"></a>Eszközök beléptetése
 [Útmutató az eszközök Intune általi felügyeletéhez.](/intune-azure/enroll-devices/what-is)
-### <a name="devices--groups"></a>Eszközök és csoportok
+### <a name="devices"></a>Eszközök
 [A leltár és a jelentések segítségével megismerkedhet a felügyelt eszközökkel.](/intune-azure/manage-devices/what-is)
-### <a name="manage-users"></a>Felhasználók kezelése
-[Tájékozódhat a felügyelt eszközök felhasználóiról.](/intune-azure/manage-users/what-is)
+### <a name="manage-users-and-groups"></a>Felhasználók és csoportok kezelése
+[Ismerje meg a felügyelt eszközfelhasználókat, és rendezze csoportba az erőforrásokat](/intune-azure/manage-users/what-is).
 ### <a name="manage-apps"></a>Alkalmazások kezelése
 [Útmutató az alkalmazások közzétételéhez, felügyeletéhez, konfigurálásához és védelméhez.](/intune-azure/manage-apps/what-is-app-management)
-### <a name="configure-devices"></a>Eszközök konfigurálása
+### <a name="device-configuration"></a>Eszközök konfigurálása
 [A felügyelt eszközök beállításainak és szolgáltatásainak konfigurálására szolgáló profilok ismertetése.](/intune-azure/configure-devices/what-are-device-profiles)
-### <a name="set-device-compliance"></a>Eszközmegfelelőség beállítása
+### <a name="device-compliance"></a>Eszközmegfelelőség
 [Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről.](/intune-azure/set-device-compliance/what-is-device-compliance)
 ### <a name="conditional-access"></a>Feltételes hozzáférés
 [A megadott feltételek alapján korlátozhatja az Exchange-szolgáltatásokhoz való hozzáférést.](/intune-azure/conditional-access/what-is-conditional-access)
-### <a name="access-control"></a>Hozzáférés-vezérlés
+### <a name="intune-roles"></a>Intune-szerepkörök
 [Szabályozhatja, hogy kik hajthatnak végre különböző műveleteket az Intune-ban, és kikre vonatkozzanak ezen műveletek.](/intune-azure/access-control/role-based-access-control) A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat.
 
 

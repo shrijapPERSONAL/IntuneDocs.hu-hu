@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ Ebben a listában megtalálhatja a megjeleníteni vagy elrejteni kívánt beép�
 -     **iCloud-fotókönyvtár** – A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.    Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.
 -     **Felügyelt alkalmazások szinkronizálása a felhővel** – Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.
 -     **Megosztott fotóstream** – A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.
--     **Tevékenység folytatása** – Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát (átadás).
+-     **Tevékenység folytatása** – Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy egy másik macOS rendszerű gépen elkezdett munkát (átadás).
 
 ## <a name="kiosk"></a>Kioszkmód
 -     **Aktiválási zár** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 
 Az iOS-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést biztosít a munkahelyi és az iskolai alkalmazásokhoz, levelezéshez és hálózathoz.  Ehhez előbb telepíteni kell a Vállalati portál alkalmazást, majd azt használva regisztrálni kell az adott eszközt a Microsoft Intune-ban. További információkat a [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) című részben talál.
 
-1.  Nyissa meg az **App Store-t**, és keressen rá az **intune** szóra.
+1.  Nyissa meg az **App Store-t**, és keressen rá az **intune céges portál** kifejezésre.
 
 2.  Töltse le a **Microsoft Intune Vállalati portál** alkalmazást.
 

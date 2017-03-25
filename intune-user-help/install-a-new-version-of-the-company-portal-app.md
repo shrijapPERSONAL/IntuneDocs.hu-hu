@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ A Vállalati portál alkalmazás frissítése:
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Az Intune Vállalati portál alkalmazás frissítése Windows-eszközön
 
-1.  Nyissa meg a Windows Áruházat, és keressen rá a **vállalati portál** kifejezésre.
+1.  Nyissa meg a Windows Áruházat, és keressen rá az **intune céges portál** kifejezésre.
 
 2.  Hajtsa végre a telepítési lépéseket.
 

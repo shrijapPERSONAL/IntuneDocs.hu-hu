@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -33,7 +33,9 @@ Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás ha
 
 -   A Vállalati portál alkalmazás **Névjegy** képernyőjén koppintson a **Diagnosztikai jelentés küldése** elemre.
 
--   A Vállalati portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson az **E-mail** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Settings (Beállítások)** > **Company Portal (Vállalati portál)** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Shake Gesture (Rázó kézmozdulat)** beállítás.
+-   A Vállalati portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson az **E-mail** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
+
+Ha a naplók elküldésének ez a módja nehézségekbe ütközik, próbálja meg [a naplókat e-mailben elküldeni a rendszergazdának](send-logs-to-your-it-admin-by-email-iOS.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 

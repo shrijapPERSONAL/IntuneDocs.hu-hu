@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -32,9 +32,9 @@ A problémák megelőzése érdekében a céges információk megőrzése külö
 Ha a rendszere aktívan használja a Biztonságos rendszerindítást, a Kódintegritás is automatikusan bekapcsolásra kerül.
 
 > [!Tip]
-> A Biztonságos rendszerindítás engedélyezése tapasztalt felhasználók által elvégzendő feladat. Ha Windows rendszerű mobileszközt használ, kérje az informatikai rendszergazda segítségét. Ha asztali eszközt használ, kérje az informatikai rendszergazda segítségét.
+> A Biztonságos rendszerindítás engedélyezése tapasztalt felhasználók által elvégzendő feladat. Javasoljuk, hogy a feladat megoldásához kérje a rendszergazda segítségét.
 
-<!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
+Folytatás esetén tekintse meg a [Biztonságos rendszerindítás letiltása](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) oldalon a „Biztonságos rendszerindítás ismételt engedélyezése” című szakaszt, és kísérelje meg saját kezűleg engedélyezni a Biztonságos rendszerindítást.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
 

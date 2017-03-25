@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -37,7 +37,7 @@ Ha az eszköz regisztrációját törölni szeretné az Intune-ból, kövesse az
 
 1.  A Vállalati portál alkalmazás **Eszközök**csoportjában válassza ki azt az eszközt, amelynek a regisztrációját törölni szeretné.
 
-2.  Koppintson az **Eltávolítás** &gt; **Eltávolítás** lehetőségre.
+2.  Koppintson az **Eltávolítás** > **Eltávolítás** lehetőségre.
 
 Az eszköz regisztrációjának Intune-ból való törlésekor a következők történnek:
 

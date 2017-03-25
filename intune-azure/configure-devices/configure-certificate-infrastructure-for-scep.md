@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>SCEP-tanúsítványinfrastruktúra konfigurálása a Microsoft Intune-ban
@@ -54,7 +54,7 @@ A peremhálózat és a megbízható hálózat között engedélyezze a tartomán
 Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásproxyn](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), a [webalkalmazás-proxyn](https://technet.microsoft.com/en-us/library/dn584107.aspx) vagy egy külső proxyn érdemes közzétenni.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Tanúsítványok és sablonok
+### <a name="BKMK_CertsAndTemplates"></a>Tanúsítványok és sablonok
 
 |Objektum|Részletek|
 |----------|-----------|
@@ -63,13 +63,13 @@ Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásp
 |**Kiszolgálói hitelesítési tanúsítvány**|A vállalati vagy nyilvános hitelesítésszolgáltatótól lekért tanúsítvány. Ezt az SSL-tanúsítványt az NDES-kiszolgálón futó IIS-be kell telepítenie, majd kötést kell létrehoznia.|
 |**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Ezt a tanúsítványt **.cer** fájlként kell exportálnia a legfelső szintű hitelesítésszolgáltatótól vagy bármely olyan eszközről, amely megbízik a legfelső szintű hitelesítésszolgáltatóban, majd központilag telepítenie kell az eszközökre a megbízható hitelesítésszolgáltatói tanúsítványprofillal.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Fiókok
+### <a name="BKMK_Accounts"></a>Fiókok
 
 |Név|Részletek|
 |--------|-----------|
 |**NDES szolgáltatásfiók**|Meg kell adnia egy tartományfelhasználói fiókot NDES szolgáltatásfiókként.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Az infrastruktúra konfigurálása
+## <a name="BKMK_ConfigureInfrastructure"></a>Az infrastruktúra konfigurálása
 A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi feladatokat, melyekhez a Windows Server 2012 R2 rendszerhez és az Active Directory tanúsítványszolgáltatásokhoz (ADCS) kapcsolódó ismeretek szükségesek:
 
 **1. feladat**: NDES szolgáltatásfiók létrehozása
@@ -108,7 +108,7 @@ A feladat tartalma:
     -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
 
         > [!IMPORTANT]
-        > iOS- és Mac OS X-tanúsítványsablonok esetében a **Kiterjesztések** lapon szerkessze a **Kulcshasználat** beállítást, és győződjön meg arról, hogy **Az aláírás az eredet igazolása** lehetőség nincs kiválasztva.
+        > iOS- és macOS-tanúsítványsablonok esetében a **Kiterjesztések** lapon módosítsa a **Kulcshasználat** beállítást, és ügyeljen rá, hogy **Az aláírás az eredet igazolása** jelölőnégyzet ne legyen bejelölve.
 
     -   A **Biztonság** lapon adja hozzá az NDES szolgáltatásfiókot, és adjon meg hozzá **Regisztrálás** engedélyt a sablonhoz. Az SCEP-profilokat létrehozó Intune-rendszergazdáknak **olvasási** jogokkal kell rendelkezniük, hogy az SCEP-profilok létrehozása során megnyithassák a sablont.
 
@@ -118,7 +118,7 @@ A feladat tartalma:
 3.  Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. Lehetősége van azonban arra is, hogy a hitelesítésszolgáltató konfigurálásával engedélyezze a kérelmezőnek egy másik érték megadását, amelyet aztán az Intune felügyeleti konzoljából tud megadni. Ha azt szeretné, hogy mindig a sablonban lévő érték legyen használva, hagyja ki ennek a lépésnek a hátralévő részét.
 
     > [!IMPORTANT]
-    > Az iOS és a Mac OS X platform mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
+    > Az iOS és a macOS mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
 
 Az alábbiakban egy meglévő konfigurációt példaként bemutató képernyőképeket láthat.
 

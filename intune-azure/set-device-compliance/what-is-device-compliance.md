@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>Eszközmegfelelőség az Azure-beli Intune előzetesében
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-A vállalati adatok védelme érdekében gondoskodnia kell arról, hogy a vállalati alkalmazások és adatok elérésére használt eszközök megfeleljenek bizonyos szabályoknak. Ilyen szabály lehet például, hogy PIN-kódot kell használni az eszközök eléréséhez, és titkosítani kell az eszközökön tárolt adatokat. Az ilyen szabályok összességét **megfelelőségi szabályzatnak** nevezzük.
+Az Intune eszközmegfelelőségi szabályzatai határozzák meg az eszközre vonatkozó szabályokat és beállításokat, amelyek ahhoz szükségesek, hogy az eszköz megfeleljen az Intune és az EMS feltételes hozzáférési szabályzatainak. A megfelelőségi szabályzatokkal figyelheti és javíthatja a megfelelőséggel kapcsolatos hibákat. 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>Hogyan kell használni az eszközmegfelelőségi szabályzatokat?
-A megfelelőségi szabályzatokhoz feltételes hozzáférési szabályzatokat társíthat – ilyenkor kizárólag azok az eszközök férhetnek hozzá az e-mailekhez és egyéb szolgáltatásokhoz, amelyek eleget tesznek a megfelelőségi szabályzatnak.
+Ezek a szabályok a következők:
 
-Megfelelőségi szabályzatokat feltételes hozzáféréstől függetlenül is használhat.
-A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Jelentést kérhet például arról, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak jailbreakelve vagy feltörve. De ha önállóan alkalmazza a megfelelőségi szabályzatokat, akkor nem korlátozza a rendszer a vállalati erőforrásokhoz való hozzáférést.
+- Jelszó megkövetelése az eszköz eléréséhez
+- Titkosítás
+- Az, hogy az eszköz jailbreakelve vagy rootolva van-e
+- Az operációs rendszer minimálisan szükséges verziója
+- Az operációs rendszer szükséges maximális verziója
+- Az eszköz maximálisan megengedett Mobile Threat Defense-szintjének megkövetelése
 
-A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi. Az eszközök beállításainak és funkcióinak kezelése című cikkben olvashat arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>Fogalmak
-Az alábbiakban néhány olyan szakkifejezést és fogalmat sorolunk fel, amelyek hasznosak a megfelelőségi szabályzatok célszerű használatának megértéséhez.
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>Megfelelőségi követelmények
-A megfelelőségi követelmények gyakorlatilag olyan szabályok (például PIN-kódhasználat vagy titkosítás megkövetelése az eszközön), amelyeket kötelezőként vagy nem kötelezőként lehet megjelölni az egyes megfelelőségi szabályzatokban.
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>A klasszikus Intune-felügyeleti konzol és az Azure Portalon lévő Intune közötti különbségek
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>Hogyan kell használni az eszközmegfelelőségi szabályzatokat?
 
+### <a name="using-ems-conditional-access"></a>EMS feltételes hozzáférés használata
+A megfelelőségi szabályzatokhoz EMS feltételes hozzáférési szabályzatokat társíthat. Ilyenkor kizárólag azok az eszközök férhetnek hozzá az e-mailekhez és más vállalati erőforrásokhoz, amelyek eleget tesznek egy vagy több megfelelőségi szabályzatnak.
 
-Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a következő különbségek figyelembe vétele megkönnyíti az átállást az Azure Portal új eszközmegfelelőségi munkafolyamatára:
+### <a name="not-using-ems-conditional-access"></a>EMS feltételes hozzáférés használata nélkül
+Eszközmegfelelőségi szabályzatokat EMS feltételes hozzáféréstől függetlenül is használhat.
+A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Jelentést kérhet például arról, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak jailbreakelve vagy rootolva. De ha önállóan alkalmazza a megfelelőségi szabályzatokat, akkor nem korlátozza a rendszer a vállalati erőforrásokhoz való hozzáférést.
 
+A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi. Az eszközök beállításainak és funkcióinak kezelése című cikkben olvashat arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot.
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Különbségek a klasszikus Intune-felügyeleti konzol és az Intune az Azure-on előzetes portálja között
+
+Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a következő különbségek figyelembe vétele megkönnyíti az átállást az Azure Portal eszközmegfelelőségi szabályzatokkal kapcsolatos új munkafolyamatára:
 
 -   Az Azure Portalon a megfelelőségi szabályzatokat minden támogatott platformhoz külön kell létrehozni. Az Intune felügyeleti konzolján minden támogatott platformra ugyanaz a megfelelőségi szabályzat volt érvényes.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a követk
 
 ##  <a name="next-steps"></a>További lépések
 
-[Bevezetés a megfelelőségi szabályzatokba](get-started-with-device-compliance.md)
+[Bevezetés az eszközmegfelelőségi szabályzatokba](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

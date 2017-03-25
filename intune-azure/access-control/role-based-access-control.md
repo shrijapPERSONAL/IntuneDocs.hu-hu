@@ -1,12 +1,12 @@
 ---
-title: "Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-hoz"
+title: "Intune-os szerepkörök (RBAC) a Microsoft Intune-ban"
 titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: megtudhatja, hogyan teszi lehetővé a szerepköralapú hozzáférés-vezérlés annak szabályozását, hogy ki hajthat végre műveletet és végezhet módosításokat."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-hoz
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Intune-os szerepkörök (RBAC) a Microsoft Intune-ban
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -67,8 +67,8 @@ Egy új rendszergazdát vesz fel, akinek feladata alkalmazások telepítése és
 ### <a name="how-to-create-a-custom-role"></a>Egyéni szerepkör létrehozása
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + Felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza a **Hozzáférés-vezérlés** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza az **Intune-os szerepkörök** lehetőséget.
 ![Hozzáférés-vezérlés munkafolyamat](./media/axxess-control.png)
 1. A **Hozzáférés-vezérlés** munkafolyamatban, a **Szerepkörök** panelen válassza az **Egyéni hozzáadása** elemet.
 2. Az **Egyéni szerepkör hozzáadása** panelen írja be az új szerepkör nevét és leírását, és kattintson az **Engedélyek** elemre.

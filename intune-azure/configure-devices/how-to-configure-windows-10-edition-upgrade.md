@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5edcdf20d07c63a33707c31134af8adf22049929
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 617ca50569885431394ab630f297ba919d119522
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -29,9 +29,10 @@ ms.lasthandoff: 02/18/2017
 
 A témakörből megtudhatja, hogyan konfigurálhat Windows 10-es kiadásfrissítési profilt. Ez a profil lehetővé teszi az alábbi Windows 10-verziók valamelyikét futtató eszközök újabb verzióra történő automatikus frissítését:
 
-- Windows 10 asztali verzió
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 mobil verzió
+
 
 Az alábbi verziófrissítési útvonalak támogatottak:
 
@@ -39,6 +40,7 @@ Az alábbi verziófrissítési útvonalak támogatottak:
 - Windows 10 Home-ról Windows 10 Educationre
 - Windows 10 Mobile-ról Windows 10 Mobile Enterprise-ra
 - Windows 10 Holographic Próról Windows 10 Holographic Enterprise-ra
+
 
 ## <a name="before-you-start"></a>Előkészületek
 Az eszközök legújabb verzióra történő frissítésének megkezdése előtt szüksége lesz a következők valamelyikére:
