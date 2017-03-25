@@ -41,7 +41,7 @@
 #### [iOS-eszközök regisztrálása a készülékregisztrációs program segítségével](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Eszközök regisztrálása az eszközregisztráció-kezelővel](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS-eszközök regisztrálása](enroll-devices/enroll-macos-devices.md)
-### [Windows-eszközök regisztrálása](enroll-devices/enroll-window-devices.md)
+### [Windows-eszközök regisztrálása](enroll-devices/enroll-windows-devices.md)
 ### Az eszközregisztráció felügyelete
 #### [Használati feltételek létrehozása](enroll-devices/create-terms-and-conditions.md)
 #### [Regisztrációs korlátozások beállítása](enroll-devices/set-enrollment-restrictions.md)
