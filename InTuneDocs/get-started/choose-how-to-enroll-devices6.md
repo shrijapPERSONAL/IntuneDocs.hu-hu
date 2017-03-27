@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: 173e95ac2d0039accb3465386bf67fb3dee90723
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -43,11 +44,6 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
 
   - **Megjelölés IMEI-számmal** - A vállalati eszközök nemzetközi mobilkészülék-azonosító számainak (IMEI) importálásával azokat vállalati eszközökként jelölheti meg az Intune-ban. Ez az egyetlen módszer a dedikált („egyfelhasználós”) Windows és Android rendszerű eszközök vállalati tulajdonúként való azonosításához. Azok az iOS rendszerű eszközök, amelyeket nem regisztrálnak az Apple eszközregisztrációs programjában vagy az Apple Configurator eszközben, ugyancsak címkézhetők IMEI számmal. Az eszközök „vállalati tulajdonúként” való előzetes deklarálásukat követően terjeszthetők a felhasználóknak. A felhasználók ezután dedikált eszközként regisztrálhatják az eszközeiket a Vállalati portál telepítésével, így hozzáférhetnek az olyan vállalati erőforrásokhoz, mint a levelezés, a vállalati alkalmazások és az adatok.
 
-  > [!div class="button"]
-  [< Vissza](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< Vissza](choose-how-to-enroll-devices3.md)
 
