@@ -74,7 +74,7 @@ A telepítés célkitűzései olyan műveletek, amelyekkel az adott munkahely el
 <br></br>
 -   **Biztosítsa a céges adatok törlésének képességét az eszközről**
 <br>
-    -   **Végrehajtás: ** Regisztrálja és felügyelje az eszközöket Microsoft Intune-ban, így alkalomadtán távolról is törölheti a vállalati adatokat és erőforrásokat.
+    -   **Végrehajtás:** Regisztrálja és felügyelje az eszközöket Microsoft Intune-ban, így alkalomadtán távolról is törölheti a vállalati adatokat és erőforrásokat.
 
 ## <a name="deployment-challenges"></a>A telepítés kihívásai
 

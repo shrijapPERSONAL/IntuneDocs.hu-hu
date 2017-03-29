@@ -90,7 +90,7 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
             A szerződésnév legfeljebb 256 karakterből állhat, és nem tartalmazhatja a következő karaktereket: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
 
-        -   **Engedély/szerződés száma **– Adja meg a licencpár engedély-/szerződésszámát.
+        -   **Engedély/szerződés száma**– Adja meg a licencpár engedély-/szerződésszámát.
 
         -   **Licenc/igénylés/ügyfél száma** – Adja meg a licencpár licenc-/igénylés-/ügyfélszámát.
 
