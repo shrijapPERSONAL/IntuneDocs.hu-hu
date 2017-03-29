@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/15/2017
 -     **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera.     
 -     **Diagnosztikai adatok küldése** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
 -     **FaceTime** – Engedélyezi a FaceTime alkalmazás használatát az eszközön.
--     **Képernyőfelvétel** – Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát..
+-     **Képernyőfelvétel** – Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.
 -     **Siri** – Engedélyezi az eszközön a Siri beszédfelismerési asszisztens használatát.
     -     **Siri, ha az eszköz zárolva van** – Engedélyezi a Siri beszédfelismerési asszisztens eszközzárolás alatti használatát az eszközön.
     -     **Siri profanitásszűrője (csak felügyelt)** – Megakadályozza, hogy a Siri durva kifejezéseket mondjon ki, vagy elfogadja ilyenek diktálását.
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Billentyűparancsok (csak felügyelt)** – Engedélyezi a billentyűparancsok használatát.
 -     **Párosított Apple Watch órák csuklóérzékelése** – Ha ez a beállítás engedélyezve van, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik.
 - **Párosítási jelszó megkövetelése a kimenő AirPlay-kérelmekhez** – A rendszer kéri a párosítási jelszót, ha a felhasználó az AirPlay segítségével tartalmat kíván streamelni egyéb Apple-eszközökre.
-- **Fiókmódosítás (csak felügyelt)** – Engedélyezi, hogy a felhasználó megváltoztassa a fiók beállításait, például az e-mail-konfigurációkat.
+- **Fiókmódosítás (csak felügyelt)** – Ha a beállítás ki van kapcsolva, a felhasználó nem módosíthat eszközspecifikus beállításokat (például új eszközfiókok létrehozása, felhasználónév vagy jelszó módosítása) az iOS beállításkezelő alkalmazásából.
+Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra (például Mail, Contacts, Calendar, Facebook és Twitter) vonatkozó beállításokat is érinti, nem vonatkozik azonban azokra az alkalmazásokra, amelyeknek nincsenek az iOS beállításkezelő alkalmazásából konfigurálható fiókbeállításaik (például a Microsoft Outlook alkalmazás).
 - **Apple Watch párosítása (csak felügyelt)** – Engedélyezi az eszköz Apple Watch órával való párosítását.
 - **Bluetooth módosítása (csak felügyelt)** – Letiltja, hogy a felhasználó módosítsa az eszközön a Bluetooth-beállításokat.
 - **Távoli képernyőfigyelés az Osztályterem alkalmazással (csak felügyelt)** – Letiltja vagy engedélyezi, hogy az Osztályterem alkalmazás figyelje a távoli eszközök képernyőjét.
