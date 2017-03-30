@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -80,9 +81,8 @@ Mielőtt a felhasználók regisztrálnák az iOS-eszközeiket, be kell állítan
 1. **Tanúsítvány-aláírási kérelem beszerzése**<br/>
 Jelentkezzen be a rendszergazda fiókjával, és navigáljon a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** lapra, és kattintson az **APNs-tanúsítványkérelem letöltése** elemre. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját. A .csr fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál. <!--- screen shot--->
 2.    **Az APNs-tanúsítvány beszerzése**<BR/>
-Keresse fel az [Apple Push Certificates portált](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2), és jelentkezzen be vállalati Apple-azonosítójával az APNs-tanúsítvány létrehozásához a .csr kiterjesztésű fájllal. Az **Apple Push Certificates portál Upload (Feltöltés)** gombjára való kattintás után egy .json kiterjesztésű fájlt fog kapni, amely nem használható az APN szolgáltatáshoz. Fejezze be a letöltést, térjen vissza az Apple Push Certificates portálra a Certificates for Third-Party Servers (Tanúsítványok külső kiszolgálóknak) lapra, majd kattintson a **Download** (Letöltés) elemre.
-
- Töltse le az APNs-tanúsítványt (.pem), és mentse helyileg a fájlt. Később ezzel az Apple-azonosítóval újíthatja meg az APNs-tanúsítványt.
+Keresse fel az [Apple Push Certificates portált](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2), és jelentkezzen be vállalati Apple-azonosítójával az APNs-tanúsítvány létrehozásához a .csr kiterjesztésű fájllal. Az **Apple Push Certificates portál Upload (Feltöltés)** gombjára való kattintás után egy .json kiterjesztésű fájlt fog kapni, amely nem használható az APN szolgáltatáshoz. Fejezze be a letöltést, térjen vissza az Apple Push Certificates portálra a Certificates for Third-Party Servers (Tanúsítványok külső kiszolgálóknak) lapra, majd kattintson a **Download** (Letöltés) elemre.<br/>
+Töltse le az APNs-tanúsítványt (.pem), és mentse helyileg a fájlt. Később ezzel az Apple-azonosítóval újíthatja meg az APNs-tanúsítványt.
 3.    **Az APNs-tanúsítvány hozzáadása az Intune-hoz**<BR/>
 A Microsoft Intune felügyeleti konzolon lépjen a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** menüpontra, majd kattintson **Az APNs-tanúsítvány feltöltése** elemre. Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gombra, és adja meg az Apple ID azonosítóját. Az APNs-tanúsítvány lehetővé teszi, hogy az Intune iOS-eszközöket regisztráljon és kezeljen a szabályzatok regisztrált mobileszközökre való leküldésével.
 4.    **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**<br/>
@@ -118,9 +118,4 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 ## <a name="next-steps"></a>További lépések
 [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
