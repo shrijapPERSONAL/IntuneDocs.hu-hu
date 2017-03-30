@@ -33,6 +33,7 @@
 ### [Apple DEP-token beszerzése](enroll-devices/get-apple-dep-token.md)
 ### [Az iOS-eszközök regisztrálási módjának kiválasztása](enroll-devices/choose-ios-enrollment-method.md)
 ## Cél
+### [Licencek kiosztása a felhasználók számára](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Androidos eszközök regisztrálása](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS rendszerű eszközök regisztrálása
 #### [Beállítási asszisztens használata az iOS-eszközök regisztrálásához](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
