@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram
 -    Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
 -    iOS 8.0 és újabb verziók
 -    Samsung KNOX Standard (4.0-s és újabb verzió)
--    Android for Work
-
->[!NOTE]
->Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el és támogatják a kapcsolatot az Exchange-dzsel. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
+-    Android for Work (külső levelezőprogramokkal, a natív levelezőprogram csak személyes profillal használható)
 
 Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
 
->[!NOTE]
->
->Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune beállított volna egyet, akkor az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
+Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune beállított volna egyet, akkor az Intune e-mail profil telepítésének eredménye az eszköz platformjától függ:
 
->**iOS**: A rendszer az állomásnév és az e-mail cím alapján egy meglévő, duplikált e-mail profilt észlelt. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil nem megfelelő, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy az e-mail profil telepítése előtt regisztrálják eszközeiket, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
+**iOS**<br>A rendszer az állomásnév és az e-mail-cím alapján egy már meglévő e-mail-profilt észlel. A felhasználó által létrehozott, duplikált e-mail profil meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil nem megfelelő, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy az e-mail profil telepítése előtt regisztrálják eszközeiket, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
 
->**Windows**: A rendszer az állomásnév és az e-mail cím alapján egy meglévő, duplikált e-mail profilt észlelt. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
+**Windows**<br>A rendszer az állomásnév és az e-mail-cím alapján egy már meglévő e-mail-profilt észlel. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
 
->**Samsung KNOX**: A rendszer az e-mail cím alapján egy meglévő, duplikált e-mail profilt észlelt, és felülírja azt az Intune-profillal. Ha a felhasználó ezt az észlelt fiókot állítja be, az Intune-profil ismételten felülírja. Ez megzavarhatja a felhasználót.
+**Samsung KNOX**<br>A rendszer az e-mail-cím alapján egy már meglévő e-mail-profilt észlel, és felülírja az Intune-profillal. Ha a felhasználó ezt az észlelt fiókot állítja be, az Intune-profil ismételten felülírja. Ez megzavarhatja a felhasználót.
 
->Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez használja őket a különböző gazdagépeken, mivel ezek felülírják egymást.
+Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez használja őket a különböző gazdagépeken, mivel ezek felülírják egymást.
 
->**Android for Work**: Az Intune-profil csak az eszköz munkahelyi profiljának adott e-mail-alkalmazásaira vonatkozik, és nem befolyásolja az eszköz felhasználói profiljának e-mail-beállításait.
-
+**Android for Work**<br>Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el, telepíthetők az eszköz munkahelyi profiljába és támogatják az Exchange-kapcsolatokat. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
 
 ## <a name="secure-email-profiles"></a>Az e-mail-profilok biztonságossá tétele
 Az e-mail-profilokat tanúsítvánnyal vagy jelszóval lehet biztonságossá tenni.

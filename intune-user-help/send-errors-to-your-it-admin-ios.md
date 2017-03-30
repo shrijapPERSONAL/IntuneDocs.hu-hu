@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -33,7 +33,7 @@ Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás ha
 
 -   A Vállalati portál alkalmazás **Névjegy** képernyőjén koppintson a **Diagnosztikai jelentés küldése** elemre.
 
--   A Vállalati portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson az **E-mail** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
+-   A Céges portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson a **Diagnosztikai jelentés küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
 
 Ha a naplók elküldésének ez a módja nehézségekbe ütközik, próbálja meg [a naplókat e-mailben elküldeni a rendszergazdának](send-logs-to-your-it-admin-by-email-iOS.md).
 

@@ -4,7 +4,7 @@ description: "Az Intune az Android for Work felügyeletével további felügyele
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
-ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,9 +41,9 @@ Az Intune az Android for Work-eszközökön konfigurálható, beépített által
 
 ## <a name="app-publishing-and-distribution"></a>Alkalmazások közzététele és terjesztése
 
-A Google Play for Work szolgáltatása szerves részét képezi az Android for Work alkalmazásterjesztésének és -felügyeletének. Az Android for Work-eszközök munkahelyi profiljának részébe telepített alkalmazások a Play for Work szolgáltatásból származnak. A Play Áruház alkalmazásainak felügyeletéhez és üzembe helyezéséhez jelentkezzen be Intune-rendszergazdaként a Play for Work webhelyre, és hagyja jóvá az alkalmazásokat az Intune-bérlő számára. Ezek az alkalmazások az Intune-konzolon szinkronizálhatók, ahol ezután telepíthetők és felügyelhetők az Intune-nal. A szervezete által fejlesztett üzletági (LOB) alkalmazásokat közzé kell tenni a Play for Work szolgáltatásban a Google androidos alkalmazás-közzétételi konzoljával. Az üzletági alkalmazásokat az androidos alkalmazás-közzétételi konzolon kell konfigurálni a szervezethez való hozzáférés korlátozásához.
+A Google Play for Work szolgáltatása szerves részét képezi az Android for Work alkalmazásterjesztésének és -felügyeletének. Az Android for Work-eszközök munkahelyi profiljának részébe telepített alkalmazások a Play for Work szolgáltatásból származnak. A Play Store-ban található alkalmazások felügyeletéhez és üzembe helyezéséhez a Google-felügyeletre kijelölt céges rendszergazdai hitelesítő adatokkal kell bejelentkezni a Google Play webhelyére. Azok az alkalmazások, amelyeknél jóvá van hagyva az Android for Work rendszerre való telepítés, megjelennek az eszközök munkahelyi profiljában. Ezek az alkalmazások az Intune-konzolra szinkronizálódnak, ahol ezután telepíthetők és felügyelhetők az Intune-nal. A szervezete által fejlesztett üzletági (LOB) alkalmazásokat közzé kell tenni a Play for Work szolgáltatásban a Google androidos alkalmazás-közzétételi konzoljával. Az üzletági alkalmazásokat az androidos alkalmazás-közzétételi konzolon kell konfigurálni a szervezethez való hozzáférés korlátozásához.
 
-Az alkalmazások felhasználói beavatkozás nélkül telepíthetők, és az sem szükséges, hogy a felhasználó engedélyezze az **ismeretlen forrásból történő telepítést**. A választható vagy elérhető alkalmazások tallózásához és telepítéséhez a felhasználók a Play Áruház alkalmazást használhatják az eszközükön. További információk: [Alkalmazások telepítése Android for Work-eszközökre](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
+Az alkalmazások felhasználói beavatkozás nélkül telepíthetők, és az sem szükséges, hogy a felhasználó engedélyezze az **ismeretlen forrásból történő telepítést**. A választható vagy elérhető alkalmazások tallózásához és telepítéséhez a felhasználók a Play for Work áruházat használhatják az eszközükön. További információk: [Alkalmazások telepítése Android for Work-eszközökre](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## <a name="app-configuration"></a>Alkalmazáskonfiguráció
 
@@ -53,13 +53,13 @@ Az Android for Work infrastruktúrát biztosít az olyan alkalmazások alkalmaz�
 
 Az Android for Work nem biztosít alapértelmezett levelezőalkalmazást vagy natív e-mail-profil objektumot úgy, mint az iOS. Ehelyett e-mail-konfigurációk adhatók meg az alkalmazáskonfigurációs beállítások használatával az olyan levelezőalkalmazásokhoz, amelyek támogatják ezt. A Play Áruház két olyan Exchange ActiveSync (EAS) ügyfélalkalmazást tartalmaz, amely támogatja az Android for Work alkalmazáskonfigurációjának használatát, ez a Gmail és a Nine Work.
 
-Az Intune konfigurációsablonokat biztosít a Gmail és a Nine Work alkalmazáshoz. Az alkalmazáskonfigurációs profilokat támogató más levelezőalkalmazások mobilalkalmazás-konfigurációs szabályzatokkal konfigurálhatók.
+Az Intune konfigurációsablonokat biztosít a Gmail és a Nine Work alkalmazáshoz, ha azok munkahelyi alkalmazásként vannak felügyelve. Az alkalmazáskonfigurációs profilokat támogató más levelezőalkalmazások mobilalkalmazás-konfigurációs szabályzatokkal konfigurálhatók.
 
 Ha Exchange ActiveSync feltételes hozzáférést használ az Android for Work-eszközökhöz, a Gmail vagy a Nine Work levelezőalkalmazást kell használnia. Szintén támogatott az Android rendszerhez készült Microsoft Outlook alkalmazás, illetve bármely olyan levelezőalkalmazás, amely modern ADAL-hitelesítést használ. [Ebből a cikkből részletesebben tájékozódhat a vállalati levelezéshez használható e-mail-profilokról](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## <a name="mobile-app-management-policies"></a>Mobilalkalmazás-felügyeleti szabályzatok
+## <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
 
-A munkahelyi profilban és a személyes profilban teljes mértékben támogatottak a mobilalkalmazás-kezelést (MAM) használó alkalmazásokhoz beállított korlátozó szabályzatok. Az üzletági alkalmazásokat a https://play.google.com/apps/publish címen elérhető androidos alkalmazás-közzétételi konzolon teheti közzé. Ez a konzol tartalmaz egy beállítást, amellyel az alkalmazások privátként jelölhetők meg a szervezet számára. Tekintse át az [Android for Work-alapú megfelelőségi szabályzatok beállításait](afw-compliance-policy-settings-in-microsoft-intune.md). A MAM-szabályzatokkal kapcsolatos általános információkért lásd: [Mobilalkalmazás-felügyeleti szabályzatok](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Az érvényben lévő alkalmazásvédelmi szabályzatokat a munkahelyi és a személyes profil egyaránt teljes mértékben támogatja. Az üzletági alkalmazásokat a https://play.google.com/apps/publish címen elérhető androidos alkalmazás-közzétételi konzolon teheti közzé. Ez a konzol tartalmaz egy beállítást, amellyel az alkalmazások privátként jelölhetők meg a szervezet számára. Tekintse át az [Android for Work-alapú megfelelőségi szabályzatok beállításait](afw-compliance-policy-settings-in-microsoft-intune.md). Az alkalmazásvédelmi szabályzatokról az [Alkalmazásszabályzatok](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) című cikkben tájékozódhat.
 
 ## <a name="vpn-profiles"></a>VPN-profilok
 

@@ -5,7 +5,7 @@ description: "Intune az Azure-on – előzetes: az Intune mobileszköz-felügyel
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ A windowsos eszközök regisztrációját az alábbi módszerek egyikével áll�
  -  A módszer alkalmazásához Azure Active Directory Premium szolgáltatás szükséges. A szolgáltatás híján a Windows 8.1-es és a Windows Phone 8.1-es eszközökhöz használatos regisztrációs eljárást kell alkalmaznia.
  -  Ha nem szeretné engedélyezni az automatikus regisztrációt, a Windows 8.1-es és a Windows Phone 8.1-es eszközök regisztrációs módszerét kell alkalmaznia.
 
-- [**Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációja a CNAME konfigurálásával**](#simplify-enrollment-by-configuring-cname)
+- [**Regisztráció az Prémium szintű Azure AD automatikus regisztrációja nélkül**](#enable-windows-enrollment-without-azure-ad-premium)
  - Windows 8.1-es és Windows Phone 8.1-es eszközök regisztrációjához ezt a módszert kell alkalmaznia.
- - Akkor is használhatja ezt a módszert, ha nem rendelkezik az Azure Active Directory (AD) Premium szintű csomaggal.
-
-
-## <a name="prerequisites"></a>Előfeltételek
-
-Ha az alábbi előfeltételek valamelyike még nem érhető el az Azure-beli Intune előzetesében, akkor azt a klasszikus Intune felügyeleti konzolon kell elvégezni.
-
-- [Egyéni tartománynév beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- A **Microsoft Intune** [beállítása mobileszköz-felügyeleti (MDM) szolgáltatóként](set-mdm-authority.md)
-- [A Céges portál alkalmazás konfigurálása](/intune-azure/manage-apps/company-portal-app.md)
-- Licencek kiosztása a felhasználók számára
+ - Windows 8.1-esnél újabb eszközökhöz is használhatja, ha nem szeretne Prémium szintű Azure Active Directory (AD) szolgáltatásra előfizetni.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Windowsos munkaterületű regisztráció engedélyezése
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Windowsos regisztráció engedélyezése Prémium szintű Azure AD nélkül
 
 Lehetővé teszi a felhasználóknak az eszközök telepítését és regisztrációját a Premium szintű Azure AD automatikus regisztrációja nélkül. DNS CNAME erőforrásrekord létrehozásával a felhasználók kiszolgálónév beírása nélkül tudnak csatlakozni az Intune-hoz, és regisztrálni rá.
 
@@ -79,7 +69,7 @@ Lehetővé teszi a felhasználóknak az eszközök telepítését és regisztrá
 
     A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Windows-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). A felhasználók a [Milyen adatokhoz jut hozzá a rendszergazda, ha regisztrálom az eszközömet az Intune-ban?](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) című témakörből is tájékozódhatnak.
 
-    A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Nincs további feladata, kivéve, ha az eszközökre telepíti a Vállalati portált.  A felügyeleti konzol 2. és 3. lépése biztonsággal figyelmen kívül hagyható.
 

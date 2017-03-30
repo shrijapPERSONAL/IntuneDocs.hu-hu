@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6f78150b6c3821f6e9822ccfa905ac367bd359ad
-ms.openlocfilehash: 9e00e60472c8ba9f10a6071c42a53f58dcc00a08
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,17 +26,17 @@ ms.lasthandoff: 03/02/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A Microsoft Intune tartalmazza a Lookout nevű, beépített veszélyforrások elleni eszközvédelmi megoldást. Az ez által elvégzett kockázatfelmérés alapján korlátozható a vállalati erőforrások mobileszközökről történő elérése. A kockázatfelmérés a Lookout által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+A Microsoft Intune-nal integrálható, Lookout nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Lookout által az eszközökről gyűjtött telemetriai adatokon alapul, például:
 - Az operációs rendszer biztonsági rései
 - Telepített kártékony alkalmazások
 - Kártékony hálózati profilok
 
 Az Intune megfelelőségi szabályzatai által engedélyezett, a Lookout által jelentett kockázatértékelés alapján feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban. A beállítások lehetővé teszik a nem megfelelő eszközök engedélyezését vagy letiltását az észlelt fenyegetések alapján.
 
-## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Hogyan segít az Intune és a Lookout veszélyforrások elleni eszközvédelme a vállalati erőforrások védelmében?
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Hogyan segít az Intune és a Lookout Mobile Threat Defense a céges erőforrások védelmében?
 A Lookout mobilalkalmazása, a **Lookout for Work** telepítve van és fut a mobileszközökön. Az alkalmazás rögzíti a fájlrendszer, a hálózati protokollkészlet, valamint az eszközök és az alkalmazások telemetriai adatait, ha elérhetők, és továbbítja őket a Lookout veszélyforrások elleni eszközvédelmi felhőszolgáltatásnak, amely kiszámítja az eszköz kockázatát a mobil veszélyforrások tekintetében. A Lookout konzolon igény szerint módosítható a fenyegetések kockázatiszint-besorolása.  
 
-Az Intune megfelelőségi szabályzata tartalmaz egy szabályt a Lookout mobil fenyegetések elleni védelemhez, amely a Lookout kockázatértékelésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
+Az Intune megfelelőségi szabályzata tartalmaz egy szabályt a Lookout Mobile Threat Defense-hez, amely a Lookout kockázatértékelésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
 
 Amennyiben az eszköz nem megfelelőnek minősül, akkor letiltható a hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A letiltott eszközök felhasználói értesítést kapnak arról, hogyan lehet a problémát elhárítani az újbóli hozzáféréshez. Az útmutatót a Lookout for Work alkalmazás szolgáltatja.
 
@@ -92,9 +92,9 @@ Ha az eszközön rosszindulatú alkalmazásokat, például kártevőket észlel 
 
 ## <a name="next-steps"></a>További lépések
 A legfontosabb lépések a megoldás megvalósítása érdekében:
-1.    [Az előfizetés beállítása a veszélyforrások elleni eszközvédelem használatára](device-threat-protection-subscription-setup.md)
-2.    [Veszélyforrások elleni eszközvédelmi kapcsolat engedélyezése az Intune-ban](device-threat-protection-enable.md)
-3.  [Veszélyforrások elleni eszközvédelmi alkalmazás konfigurálása és üzembe helyezése](device-threat-protection-apps.md)
-4.    [Veszélyforrások elleni eszközvédelem megfelelőségi szabályának konfigurálása](device-threat-protection-policy.md)
-5.    [Veszélyforrások elleni eszközvédelem integrációjának hibaelhárítása](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.    [A Lookout-előfizetés beállítása](device-threat-protection-subscription-setup.md)
+2.    [A Lookout Mobile Threat Defense engedélyezése az Intune-ban](device-threat-protection-enable.md)
+3.  [A Lookout Mobile Threat Defense alkalmazás konfigurálása és üzembe helyezése](device-threat-protection-apps.md)
+4.    [A Lookout eszközmegfelelőségi szabályzatának konfigurálása](device-threat-protection-policy.md)
+5.    [A Lookout Mobile Threat Defense-integráció hibáinak elhárítása](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 

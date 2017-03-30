@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően 
 
 -    [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune/deploy-use/prerequisites-for-enrollment)
 -    [iOS- és Mac-eszközök kezelésének beállítása](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windows Phone és Windows 10 Mobile rendszerű telefonok Microsoft Intune-beli felügyeletének beállítása](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Windowsos eszközök kezelésének beállítása](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Android-eszközök kezelésének beállítása](/intune/deploy-use/set-up-android-management-with-microsoft-intune) – nincs szükség további lépésekre
+-    [Android for Work-eszközök kezelésének beállítása](/intune/deploy-use/set-up-android-for-work)
 
 A felügyelt eszközök felhasználói össze tudják gyűjteni a regisztrációs és diagnosztikai naplókat, hogy átnézhesse őket. A naplók felhasználók általi gyűjtésére vonatkozó utasítások itt találhatók:
 
@@ -149,7 +149,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 **Hiba:** Amikor a második ellenőrzött tartományt adja hozzá az AD FS-hez, a második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.
 
 
-**Megoldás:** Az olyan Microsoft Office 365-ügyfelek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a munkahelyükön több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com)), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében. Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a **SupportMultipleDomain** kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
+**Megoldás:** Az olyan Microsoft Office 365-ügyfeleknek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a munkahelyükön több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében. Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a **SupportMultipleDomain** kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
 
 
 ## <a name="android-issues"></a>Android-problémák
@@ -279,6 +279,18 @@ A probléma elhárításához a felhasználóknak a **Nem lehet szinkronizálni*
   ![A Vállalati hozzáférés beállítása képernyő](./media/ios_cp_app_company_access_setup.png)
 
 Regisztráció után az eszközök ismét kifogástalan állapotba kerülnek, és visszakapják a vállalati erőforrásokhoz való hozzáférési jogosultságukat.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Ellenőrizze, hogy a WS-Trust 1.3 engedélyezve van-e
+**Probléma:** Az eszközregisztrációs programhoz (DEP) tartozó iOS-eszközöket nem lehet regisztrálni
+
+A felhasználói affinitással rendelkező DEP-eszközök regisztrációjához engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot a felhasználói jogkivonat kérelmezése céljából. Az Active Directory alapértelmezés szerint engedélyezi ezt a végpontot. A Get-AdfsEndpoint PowerShell-parancsmagot futtatva, majd a trust/13/UsernameMixed végpontot megkeresve láthatja az engedélyezett végpontok listáját. Példa:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+További információt a [Get-AdfsEndpoint dokumentációjában](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) talál.
+
+További információt az [Ajánlott eljárások az Active Directory összevonási szolgáltatások biztonságossá tételéhez](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs) című cikkben talál. Ha további segítségre van szüksége annak megállapításához, hogy a WS-Trust 1.3 Username/Mixed végpont engedélyezve van-e az ön identitás-összevonási szolgáltatójában, akkor az ADFS használata esetén forduljon a Microsoft ügyfélszolgálatához, külső identitásszolgáltató esetében pedig annak gyártójához.
+
 
 ### <a name="profile-installation-failed"></a>Profiltelepítési hiba
 **Hiba:** **Profiltelepítési hiba** üzenet jelenik meg egy iOS-eszközön.

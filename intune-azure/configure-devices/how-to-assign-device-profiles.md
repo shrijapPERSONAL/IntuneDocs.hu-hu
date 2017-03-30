@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
-1. Az **Eszközök konfigurálása** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+1. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
 2. A Profilok panel listáján válassza ki azt profilt, amelyet kezelni szeretne, majd a *profilnév*> **Jelentések** panelen a **Felügyelet** > **Hozzárendelések** elemet.
 3. A következő panelen kattintson a **Csoportok kiválasztása**, majd a **Csoportok kiválasztása** panelre, és jelölje ki azon Azure AD-csoportokat, amelyekhez hozzá szeretné rendelni a profilt. Több csoport kijelöléséhez tartsa lenyomva a **CTRL** billentyűt.
 4. Ha elkészült, a **Csoportok kiválasztása** panelen válassza a **Kijelölés** elemet.

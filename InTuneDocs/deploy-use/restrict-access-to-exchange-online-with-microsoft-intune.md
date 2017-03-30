@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -59,7 +60,7 @@ Ha feltételes hozzáférési szabályzatokat konfigurál és rendel hozzá felh
 
 ### <a name="when-the-device-is-not-compliant"></a>Ha az eszköz nem megfelelő
 
-Ha a feltételes hozzáférési szabályzat nem teljesül, az eszköz azonnal karanténba kerül és a felhasználó egy e-mailt kap, és bejelentkezéskor a következő karantén-értesítések jelennek meg számára:
+Ha a feltételes hozzáférési szabályzat nem teljesül, az eszköz azonnal karanténba kerül és a felhasználó egy e-mailt kap, és bejelentkezéskor a következő karantén-értesítések valamelyikét fogja látni:
 
 - Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepíteni a Vállalati portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő rekordhoz.
 
@@ -262,7 +263,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 -   Ha a felhasználó megszünteti az eszköz regisztrációját, a rendszer körülbelül hat óra múlva letiltja az e-maileket.
 
-**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az **e-mail-hozzáférés védelmét bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
+**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az**e-mail-hozzáférés védelmét bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>A megfelelőség és a feltételes hozzáférési házirendek megfigyelése
 
@@ -275,9 +276,4 @@ Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján ka
 - [A SharePoint Online-hoz való hozzáférés védelme](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [A Skype Vállalati online verzióhoz való hozzáférés védelme](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

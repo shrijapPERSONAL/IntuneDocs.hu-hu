@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -140,7 +140,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**A vállalati házirenddel való eszközkompatibilitás szükséges a hozzáféréshez**|Ezzel a beállítással az alkalmazás használata csak akkor engedélyezett, ha az eszköz nem jailbreakelt vagy rootolt.|
     |**A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)**|Az **Időtúllépés** mezőben adja meg azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése az alkalmazás elindítása után.|
     |**Offline türelmi időszak**|Ha az eszköz offline állapotban van, itt megadhatja azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése.|
-    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszerre nem érvényes a FIPS 140-2 típusú tanúsítvány.|
+    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszer csak a Samsung KNOX eszközök esetében FIPS 140-2-kompatibilis.|
     |**Képernyőrögzítés letiltása** (csak Android-eszközök esetén)|Ezzel a beállítással megadhatja, hogy az eszköz képernyőfelvétel-funkciói le legyenek tiltva az alkalmazás használatakor.|
 
 4. Ha elkészült, válassza a **Házirend mentése** elemet.

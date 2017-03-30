@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-A Microsoft Intune **Eszközök konfigurálása** munkafolyamatával kezelheti az összes felügyelt eszköz beállításait és funkcióit. Ezt a munkafolyamatot leginkább a felügyelt eszközökön számtalan különféle funkció és szolgáltatás kezelését és szabályozását lehetővé tevő eszközprofilok létrehozására fogja használni.
+A Microsoft Intune **Eszközkonfiguráció** munkafolyamatával kezelheti az összes felügyelt eszköz beállításait és funkcióit. Ezt a munkafolyamatot leginkább a felügyelt eszközökön számtalan különféle funkció és szolgáltatás kezelését és szabályozását lehetővé tevő eszközprofilok létrehozására fogja használni.
 
 A munkafolyamat megnyitásakor a következő lehetőségek jelennek meg:
 
@@ -41,8 +41,13 @@ Az eszközprofilok létrehozásának munkafolyamata a más profilokéhoz hasonl�
 
 Az eszközök következő funkcióit kezelheti:
 
+## <a name="device-features"></a>Eszközfunkciók
+
+Az eszközfunkciókkal lehet szabályozni az iOS- és macOS-eszközök funkcióit, például az AirPrintet, az értesítéseket és a megosztott eszközkonfigurációkat.
+További információ: [Eszközfunkció-beállítások konfigurálása](how-to-configure-device-features.md) Támogatott rendszerek: iOS és macOS.
+
 ## <a name="device-restrictions"></a>Eszközkorlátozások
-Az eszközkorlátozások révén számos, Ön által kezelt kategóriában válik lehetővé a beállítások és funkciók széles körének szabályozása, például a biztonságra, a böngészőre, a hardverre és az adatmegosztásra vonatkozó beállítások esetében. Létrehozhat például egy olyan eszközkorlátozási profilt, amely megakadályozza, hogy az iOS-eszközök felhasználói hozzáférjenek az eszköz kamerájához.
+Az eszközkorlátozások révén számos kategóriában (például biztonsági, böngésző-, hardver- és adatmegosztási beállítások) szabályozhatja a felügyelt eszközökön a beállítások széles körét. Létrehozhat például egy olyan eszközkorlátozási profilt, amely megakadályozza, hogy az iOS-eszközök felhasználói hozzáférjenek az eszköz kamerájához.
 További információt az [Eszközkorlátozási beállítások konfigurálása](how-to-configure-device-restrictions.md) című témakörben talál. Támogatott rendszerek: Android, iOS, macOS, Windows 10 és Windows 10 Team.
 
 ## <a name="email"></a>E-mail
@@ -57,6 +62,10 @@ További információt a [Wi-Fi beállítások konfigurálása](how-to-configure
 A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. VPN-profilok beállításával a szervezet felhasználóira és eszközeire alkalmazhatja a VPN-beállításokat, így könnyen és biztonságosan kapcsolódhatnak a hálózathoz.
 További tudnivalók: [VPN-beállítások konfigurálása](how-to-configure-vpn-settings.md).
 Támogatott rendszerek: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 és Windows 10.
+
+## <a name="education"></a>Oktatás
+Itt lehet konfigurálni a Windows Vizsga alkalmazás beállításait. A beállítások konfigurálásakor az eszközön a vizsga befejezéséig nem futhat másik alkalmazás.
+További tudnivalók: [Oktatási beállítások konfigurálása](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>Tanúsítványok
 Ez a profiltípus olyan, az eszközökhöz hozzárendelhető megbízható SCEP- és PKCS- tanúsítványok konfigurálását teszi lehetővé, amelyek a Wi-Fi-, VPN- és e-mail-profilok hitelesítésére használhatók.
