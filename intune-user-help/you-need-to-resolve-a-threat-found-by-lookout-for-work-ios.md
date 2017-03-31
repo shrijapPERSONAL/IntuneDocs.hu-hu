@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -35,7 +35,7 @@ A probléma elhárításához nyissa meg a Lookout from Work alkalmazást, és k
 
 Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés található, és megpróbálja elérni az iskolai e-maileket vagy fájlokat, ehhez hasonló üzenet jelenik meg:
 
-![A Lookout for Work hibaüzenete és hivatkozás a Vállalati portál webhelyére](./media/lookout-go-to-device-management-portal-android.png)
+![A Lookout for Work hibaüzenete és hivatkozás a Vállalati portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
 
 Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
 

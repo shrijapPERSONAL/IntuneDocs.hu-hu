@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 Elképzelhető, hogy az Ön szervezeténél használnak távközlésiköltség-kezelő szoftvert, hogy biztosítani tudják a hang- és adatcsomagok elfogadható keretek közötti használatát. Az eszköz regisztrálása után felkéri a rendszer, hogy válassza a ki az eszköznek leginkább megfelelő kategóriát.
 
-  ![Képernyőkép az eszköznek leginkább megfelelő kategória kiválasztásáról iOS-eszköz esetén. A választható lehetőségek a céges és a személyes regisztrálási mód.](./media/and-enroll-11-tem-select-best-category.png)
+![Képernyőkép az eszköznek leginkább megfelelő kategória kiválasztásáról iOS-eszköz esetén. A választható lehetőségek a céges és a személyes regisztrálási mód.](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Válassza ki a megfelelő lehetőséget. Ezt követően értesítést kap arról, hogy telepítse a [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) alkalmazást a Google Play Áruházból. A Datalert alkalmazás fogja lehetővé tenni, hogy a szervezet mérni tudja az adathasználatot. A továbblépéshez koppintson a képernyő jobb felső sarkában található __következő__ nyílra.
 
