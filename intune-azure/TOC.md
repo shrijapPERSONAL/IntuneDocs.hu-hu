@@ -1,5 +1,6 @@
 # Bevezetés
 ## [Mi az Azure-portál előzetes verziója?](introduction/what-is-microsoft-intune.md)
+## [Intune-funkciók az Azure-ban](introduction/ui-changes-in-microsoft-intune.md)
 ## Első lépések
 <!---(introduction/get-started.md) --->
 ### [Regisztráljon az ingyenes próbaverzióhoz](introduction/sign-up-free-trial-microsoft-intune.md)
