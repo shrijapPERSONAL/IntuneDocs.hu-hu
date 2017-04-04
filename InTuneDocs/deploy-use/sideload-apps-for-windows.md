@@ -154,7 +154,8 @@ A Windows 10-es Céges portál alkalmazást közvetlenül az Intune-ból telepí
 2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
 3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
 ![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](../media/Win10CP-all-devices.png)
-4. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 9 csomaggal, ahogy az alábbi ábrán látható.  
+4. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 9 csomaggal, ahogy az alábbi ábrán látható.
+
 ![Kép a letöltendő függőségi fájlokról ](../media/Win10CP-dependent-files.png)
 5. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (pl. C:&#92;Céges portál) a következőképpen felépített csomagokkal:
   1. Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
