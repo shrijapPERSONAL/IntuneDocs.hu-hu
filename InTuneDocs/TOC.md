@@ -11,7 +11,7 @@
 
 
 # [Első lépések](get-started/get-started.md)
-## [Az Intune telepítése](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Az Intune beállítása](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Előfeltételek]
 #### [Támogatott eszközök](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Hálózati forgalom](get-started/network-bandwidth-use.md)
