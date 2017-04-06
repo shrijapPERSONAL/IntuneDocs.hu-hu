@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ A következők támogatottak:
 -   Natív e-mail-alkalmazás iOS rendszerű eszközökön.
 
 -   Exchange ActiveSync-alapú levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
-- Exchange ActiveSync-alapú levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazás támogatott Android for Work-eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy e-mail-profit a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell telepíteni. 
+-   Exchange ActiveSync-alapú levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazás támogatott Android for Work-eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy e-mail-profit a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell telepíteni. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
 
 ## <a name="support-for-pcs"></a>Számítógépek támogatása
@@ -110,14 +112,12 @@ A következők támogatottak:
   - **Platformkivételek:** Kattintson a **Szabály hozzáadása** lehetőségre olyan szabály konfigurálásához, amely meghatározza az adott mobileszközcsaládok és -modellek hozzáférési szintjeit. Mivel ezek az eszközök bármilyen típusúak lehetnek, olyan eszköztípusokat is konfigurálhat, amelyeket nem támogat az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Alapértelmezett szabály:** A többi szabály alól mentes eszközökhöz kiválaszthatja, hogy engedélyezi-e az Exchange-hozzáférést, esetleg letiltja vagy karanténba helyezi az eszközt. Ha úgy állítja be a szabályt, hogy engedélyezze a hozzáférést, a megfelelőnek minősülő regisztrált eszközök automatikusan hozzáférést kapnak a levelezéshez (iOS, Windows és Samsung KNOX rendszerű eszközök esetén). A felhasználónak semmilyen teendője sincs az e-mail-fiókjával kapcsolatban.
-
-        A nem Samsung KNOX-alapú androidos eszközök esetén a felhasználók értesítést kapnak e-mailben az eszközeik karanténba helyezéséről. Az e-mailben található egy részletes útmutató arról, hogy a levelezéshez való hozzáférés előtt miként kell ellenőrizni az eszközök regisztrációját és megfelelőségét. Ha úgy állítja be a szabályt, hogy az engedélyezze a hozzáférést vagy karanténba helyezze az eszközt, egyetlen eszköz sem fog hozzáférni az Exchange-hez, függetlenül attól, hogy regisztrálták-e már őket az Intune-ban. Amennyiben nem szeretné, hogy ez a szabály vonatkozzon a megfelelőnek minősülő regisztrált eszközökre, válassza az **Alapértelmezett szabály felülbírálása** lehetőséget.
+      - A nem Samsung KNOX-alapú androidos eszközök esetén a felhasználók értesítést kapnak e-mailben az eszközeik karanténba helyezéséről. Az e-mailben található egy részletes útmutató arról, hogy a levelezéshez való hozzáférés előtt miként kell ellenőrizni az eszközök regisztrációját és megfelelőségét. Ha úgy állítja be a szabályt, hogy az engedélyezze a hozzáférést vagy karanténba helyezze az eszközt, egyetlen eszköz sem fog hozzáférni az Exchange-hez, függetlenül attól, hogy regisztrálták-e már őket az Intune-ban. Amennyiben nem szeretné, hogy ez a szabály vonatkozzon a megfelelőnek minősülő regisztrált eszközökre, válassza az **Alapértelmezett szabály felülbírálása** lehetőséget.
 >[!TIP]
 >Ha a levelezéshez való hozzáférést megelőzően minden eszközt blokkolni szeretne, válassza inkább a hozzáférést blokkoló szabályt vagy a karanténba helyezést kiváltó szabályt. Az alapértelmezett szabály az összes eszköztípusra érvényes, így hatással van a platformkivételként konfigurált és az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által nem támogatott eszköztípusokra is.
 
   - **Felhasználó értesítése:** Az Exchange által küldött értesítő e-mail mellett az Intune e-mailt küld, amely tartalmazza az eszköz feloldásának lépéseit. Az alapértelmezett üzenetet az igényeinek megfelelően módosíthatja. Ha a felhasználó eszköze le van tiltva az Intune által küldött, javítással kapcsolatos utasításokat tartalmazó értesítő e-mail megérkezése előtt (az e-mail a felhasználó Exchange-postaládájába kerül), akkor egy le nem tiltott eszközzel vagy más módon érheti el az Exchange-fiókot és tekintheti meg az üzenetet.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Ez különösen igaz olyankor, ha az **Alapértelmezett szabály** az eszközök blokkolására vagy karanténba helyezésére van beállítva. Ilyen esetben a végfelhasználónak meg kell nyitnia az alkalmazás-áruházat, le kell töltenie a Microsoft Vállalati portál alkalmazást, és regisztrálnia kell az eszközét. Ez egyaránt vonatkozik az iOS, a Windows és a Samsung KNOX rendszerű eszközökre. A nem Samsung KNOX-eszközök esetén a karanténba helyezett e-mailt el kell küldenie egy másodlagos e-mail fiókba. A felhasználónak át kell másolnia az e-mailt letiltott eszközére a regisztrációs és megfelelőségi folyamat befejezéséhez.
   > [!NOTE]
   > Meg kell adnia az értesítő e-mail elküldéséhez használt fiókot, hogy az Exchange elküldhesse az értesítő e-mailt.
   >
@@ -139,9 +139,4 @@ A következők támogatottak:
 -   [A SharePoint Online-hoz való hozzáférés védelme](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [A Skype Vállalati online verzióhoz való hozzáférés védelme](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

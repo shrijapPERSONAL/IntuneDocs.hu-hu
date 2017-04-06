@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
-ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -29,7 +29,8 @@ ms.lasthandoff: 02/22/2017
 A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes vezeték nélkül regisztrálni a készülékregisztrációs programon (DEP) keresztül vásárolt iOS-eszközöket. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz.
 
 >[!NOTE]
->Ezt a regisztrációs módszert nem lehet használni az [eszközregisztráció-kezelői](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) módszerrel.
+>A DEP-regisztrációt nem lehet használni az [eszközregisztráció-kezelői](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) módszerrel.
+>Ha pedig a felhasználók iOS-eszközöket regisztrálnak (a Céges portál alkalmazással), és az eszközök sorozatszámait később importálják és egy DEP-profilhoz rendelik, akkor az eszközök Intune-regisztrációja megszűnik.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>iOS-es eszközök Apple DEP-felügyelettel való regisztrálásának előfeltételei
 
@@ -45,7 +46,7 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 ### <a name="get-an-encryption-key"></a>Titkosítási kulcs beszerzése
 
-1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Titkosítási kulcs letöltése** lehetőséget. 
+1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Titkosítási kulcs letöltése** lehetőséget.
 
 2. Mentse a titkosítási kulcs fájlját (.pem) helyileg. A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
 
@@ -77,7 +78,7 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 2. Adja meg az **Általános** lapon található adatokat, például töltse ki a **Név** és a **Leírás** mezőt, valamint adja meg, hogy a profilhoz rendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e:
 
-   - **Rákérdezés a felhasználói affinitásra** – Az eszközt a kezdeti beállítás során össze kell kapcsolni egy felhasználóval, hogy az eszköz ezen a felhasználón keresztül hozzáférhessen a vállalati adatokhoz és e-mailekhez. A **felhasználói affinitást** a DEP programmal felügyelt olyan eszközöknél kell beállítani, amelyek felhasználók tulajdonában vannak, de munkahelyi portált kell rajtuk használni (azaz alkalmazásokat kell rájuk telepíteni). A többtényezős hitelesítés (MFA) nem működik a regisztráció közben olyan DEP-eszközökön, amelyekre felhasználói affinitás érvényes. A regisztrációt követően az ilyen eszközökön is az elvárásoknak megfelelően működik az MFA. Az első bejelentkezéskor jelszómódosításra kötelezett új felhasználók nem kaphatnak értesítést a DEP-eszközökön történő regisztráció során. Ezen túlmenően a lejárt jelszavú felhasználók nem kapnak értesítést a jelszó visszaállításáról a DEP-regisztráció során, és a jelszó visszaállítását egy másik eszközről kell végrehajtaniuk. 
+   - **Rákérdezés a felhasználói affinitásra** – Az eszközt a kezdeti beállítás során össze kell kapcsolni egy felhasználóval, hogy az eszköz ezen a felhasználón keresztül hozzáférhessen a vállalati adatokhoz és e-mailekhez. A **felhasználói affinitást** a DEP programmal felügyelt olyan eszközöknél kell beállítani, amelyek felhasználók tulajdonában vannak, de munkahelyi portált kell rajtuk használni (azaz alkalmazásokat kell rájuk telepíteni). A többtényezős hitelesítés (MFA) nem működik a regisztráció közben olyan DEP-eszközökön, amelyekre felhasználói affinitás érvényes. A regisztrációt követően az ilyen eszközökön is az elvárásoknak megfelelően működik az MFA. Az első bejelentkezéskor jelszómódosításra kötelezett új felhasználók nem kaphatnak értesítést a DEP-eszközökön történő regisztráció során. Ezen túlmenően a lejárt jelszavú felhasználók nem kapnak értesítést a jelszó visszaállításáról a DEP-regisztráció során, és a jelszó visszaállítását egy másik eszközről kell végrehajtaniuk.
 
    > [!NOTE]
    > A felhasználói affinitással rendelkező DEP funkció esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot.
@@ -154,11 +155,14 @@ Ez a lépés szinkronizálja az eszközöket az Apple DEP szolgáltatással, és
 
 ### <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 
-Megkezdheti a vállalati tulajdonú eszközök terjesztését a felhasználóknak. Az iOS-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára.
+Megkezdheti a vállalati tulajdonú eszközök terjesztését a felhasználóknak. Az iOS-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára. A felhasználói eszközkorlát a DEP-pel kezelt eszközökre érvényes.
+
+>[!NOTE]
+>Ha egy felhasználó DEP-eszközt próbál regisztrálni, miközben már elérte az eszközkorlátját, a regisztráció figyelmeztetés nélkül meghiúsul.
 
 ## <a name="changes-to-intune-group-assignments"></a>Változások az Intune csoport-hozzárendelésekben
 
-2016 decemberétől az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. A vállalati eszközbeléptetési profil által előre hozzárendelt összes Intune-beli eszközcsoport esetében és az Azure Active Directory-eszközcsoportokba történő migrálás során a rendszer egy megfelelő dinamikus eszközcsoportot hoz létre az AAD-ben a vállalati eszközbeléptetési profil neve alapján. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+2017 áprilisától az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. A vállalati eszközbeléptetési profil által előre hozzárendelt összes Intune-beli eszközcsoport esetében és az Azure Active Directory-eszközcsoportokba történő migrálás során a rendszer egy megfelelő dinamikus eszközcsoportot hoz létre az AAD-ben a vállalati eszközbeléptetési profil neve alapján. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)

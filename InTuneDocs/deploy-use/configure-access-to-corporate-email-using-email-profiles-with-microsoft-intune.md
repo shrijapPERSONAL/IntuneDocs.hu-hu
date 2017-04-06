@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
-ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -53,7 +53,7 @@ Ha a felhasználó azelőtt telepített egy e-mail profilt, hogy az Intune beál
 
 Mivel a Samsung KNOX nem használja az állomásnevet a profil azonosításához, azt javasoljuk, hogy ne hozzon létre több e-mail profilt azért, hogy ugyanahhoz az e-mail címhez használja őket a különböző gazdagépeken, mivel ezek felülírják egymást.
 
-**Android for Work**<br>Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el, telepíthetők az eszköz munkahelyi profiljába és támogatják az Exchange-kapcsolatokat. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
+**Android for Work**<br>Az Intune két Android for Work e-mail profilt biztosít, egyet a Gmail és egyet a Nine Work email-alkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el, telepíthetők az eszköz munkahelyi profiljába és így nem eredményeznek ismétlődő profilokat. Mindkét alkalmazás támogatja az Exchange-kapcsolatokat. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő e-mail-profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
 
 ## <a name="secure-email-profiles"></a>Az e-mail-profilok biztonságossá tétele
 Az e-mail-profilokat tanúsítvánnyal vagy jelszóval lehet biztonságossá tenni.

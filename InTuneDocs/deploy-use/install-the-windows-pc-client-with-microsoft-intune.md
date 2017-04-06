@@ -5,7 +5,7 @@ description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számí
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Az Intune ügyfélszoftverét az alábbi eljárás alapján egy operációsrends
 
 ## <a name="instruct-users-to-self-enroll"></a>A felhasználók felkérése önálló regisztrálásra
 
-Az Intune-ügyfélszoftver a [Céges portál webhelyen](http://portal.manage.microsoft.com) telepíthető. A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének operációsrendszer-platformjától és verziójától függően változik. 
+Az Intune-ügyfélszoftver a [Céges portál webhelyen](http://portal.manage.microsoft.com) telepíthető. A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének operációsrendszer-platformjától és verziójától függően változik.
 
 Ha a felhasználókhoz még nem rendeltek Intune-licencet, vagy ha a szervezet MDM-szolgáltatóját még nem állították be az Intune-ra, a felhasználóknak nem jelenik meg regisztrálási lehetőség.
 
@@ -194,13 +194,13 @@ Ha az ügyfélszoftver regisztrációjának törlését az Intune felügyeleti k
 
 Rendszergazdai jogú parancssorból futtassa az alábbi parancsok egyikét.
 
-**1. módszer**:
+**1. módszer:**
 
     ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**2. módszer** – vegye figyelembe, hogy nem minden ilyen ügynök van telepítve a Windows összes termékváltozatán):
+**2. módszer:**<br>Vegye figyelembe, hogy minden alábbi ügynök telepítve van a Windows összes termékváltozatán):
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Ellenőrizze a %ProgramFiles%\Microsoft\OnlineManagement mappát, és győződj�
 - Ügynöktelepítő
 - Naplók
 - Frissítések
-- Közös 
+- Közös
 
 ### <a name="remove-the-onlinemanagement-folder"></a>Az OnlineManagement nevű mappa eltávolítása
 

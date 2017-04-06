@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ Időnként előfordulhatnak problémák az iOS-eszközökkel kapcsolatban, melye
 - [Hogyan találhatom meg az eszköz sorozatszámát?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Frissítenem kell az iOS-eszközömet](you-need-to-update-your-ios-device.md)
 - [Az általam használt iOS-verzió még nem támogatott](your-ios-version-isnt-yet-supported.md)
-- [Telepítenem kell a Lookout for Work alkalmazást az iOS-eszközömre](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [A Lookout for Work által az iOS-eszközön talált fenyegetést kell elhárítanom](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [Mobile Threat Defense-alkalmazást kell telepítenem az iOS-eszközre](you-are-prompted-to-install-mtd-ios.md)
+- [Egy Mobile Threat Defense-alkalmazás által az iOS-eszközömön talált fenyegetést kell elhárítanom](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

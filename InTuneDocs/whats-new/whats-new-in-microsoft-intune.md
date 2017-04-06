@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -28,6 +28,17 @@ Ismerkedjen meg a Microsoft Intune új verziójának újdonságaival. Emellett t
 > Idővel mindezek a funkciók hibrid ügyféltelepítések esetén is támogatottak lesznek (Intune-nal integrált Configuration Manager). Az új hibrid funkciókról további információért tekintse meg a [hibrid újdonságok oldalát](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## <a name="new-capabilities"></a>Új képességek
+
+### <a name="support-for-skycure"></a>A Skycure támogatása
+
+A Microsoft Intune-nal mostantól már integrálható, Skycure nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Skycure által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+
+- Fizikai védelem
+- Hálózatvédelem
+- Alkalmazásvédelem
+- Biztonsági rések elleni védelem
+
+Az Intune eszközmegfelelőségi szabályzatai által engedélyezett, a Skycure által jelentett kockázatértékelés alapján EMS feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban. Ezen szabályzatok használatával engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján. További információ: [Skycure Mobile Threat Defense-összekötő](/intune/deploy-use/skycure-mobile-threat-defense-connector).
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Új felhasználói élmény az Androidhoz készült Céges portál alkalmazásban <!--621622-->
 
@@ -51,6 +62,12 @@ A Windows 10-es Céges portál alkalmazás letöltésekor és közvetlen telepí
 
 
 ## <a name="notices"></a>Értesítések
+
+### <a name="support-for-ios-103"></a>Az iOS 10.3 támogatása
+
+Az iOS 10.3-as kiadása 2017. március 27-től jelent meg az iOS felhasználók számára. Minden meglévő Intune MDM- és MAM-forgatókönyv kompatibilis a legújabb verziójú Apple operációs rendszerrel. Várakozásaink szerint a jelenleg rendelkezésre álló iOS-eszközökhöz elérhető összes meglévő Intune-szolgáltatás továbbra is működni fog, amikor a felhasználók az iOS 10.3-as verzióra frissítik az eszközeiket és az alkalmazásaikat.
+
+Jelenleg nem tudunk ismert problémáról. Ha problémákat tapasztal az iOS 10.3-ban, forduljon [Intune támogatási csapatunkhoz](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Megújult támogatás az Android rendszert Kínában használó ügyfelek számára <!--720444-->
 
@@ -82,10 +99,15 @@ A 2017-es év elején a felügyeleti funkciók teljes körét áthelyezzük az A
 
 Az új próbabérlők ettől a hónaptól kezdve láthatják az Azure Portalon az új felügyeleti felület nyilvános előzetesét. Amíg a funkció előzetes verziójú, a meglévő Intune konzollal való egyenértékűség és a konzol funkciói több lépésben valósulnak meg.
 
-Az Azure Portal felügyeleti felületén elérhető lesz a már bejelentett új csoportkezelési és célzási funkció. Amikor az Ön bérlőjét migráljuk az új csoportkezelési felületre, azzal egyidejűleg a bérlőjét áthelyezzük az új felügyeleti felület előzetes verziójára is. Ha bérlőjének migrálása előtt tesztelni szeretné vagy meg szeretné nézni valamelyik új funkciót, regisztráljon egy új Intune-próbafiókra, vagy pillantson bele az [új dokumentációba](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+Az Azure Portal felügyeleti felületén elérhető lesz a már bejelentett új csoportkezelési és célzási funkció. Amikor az Ön bérlőjét migráljuk az új csoportkezelési felületre, azzal egyidejűleg a bérlőjét áthelyezzük az új felügyeleti felület előzetes verziójára is. Ha bérlőjének migrálása előtt tesztelni szeretné vagy meg szeretné nézni valamelyik új funkciót, regisztráljon egy új Intune-próbafiókra, vagy pillantson bele az [új dokumentációba](/intune-azure/introduction/whats-new).
 
 > [!Note]
 > Az Azure Portal előzetes verziójának frissítései ebben a hónapban jelennek meg. Azonban az Intune szolgáltatás bevezetési módja miatt elképzelhető, hogy a változások nem azonnal érhetők el.  A Portal új funkcióinak megjelenése előtt a szolgáltatás többféle összetevőjének egymás utáni frissítésére van szükség. Az Azure Portal előzetes verziójának változásai fokozatosan jelennek meg ebben a hónapban. A változások teljes listáját a [Microsoft Intune előzetes verziójának újdonságai](/intune-azure/introduction/whats-new) című témakörben találja.
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>Az Azure Portalon felváltott felügyeleti szerepkörök
+
+A klasszikus Intune-portálon (Silverlight) meglévő mobilalkalmazás-kezelési (MAM) felügyeleti szerepköröket (közreműködői, tulajdonosi és csak olvasható) új szerepköralapú felügyeleti vezérlők (RBAC) teljes készlete váltotta fel az Intune Azure Portalon. Amennyiben az Azure Portalra migrált, újból hozzá kell rendelnie a rendszergazdákat ezen új felügyeleti szerepkörökhöz. További információ az RBAC-vel és az új szerepkörökről: [Szerepköralapú hozzáférés-vezérlés a Microsoft Intune-hoz](/intune-azure/access-control/role-based-access-control).
+
 
 ## <a name="whats-coming"></a>Mi várható?
 

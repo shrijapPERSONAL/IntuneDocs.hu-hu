@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-eszközök regisztrálása a Beállítási asszisztenssel
 
-1. A [Microsoft Intune felügyeleti konzolján](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** &gt; **Minden eszköz** területre, majd kattintson az **Eszközök felvétele** gombra. 
+1. A [Microsoft Intune felügyeleti konzolján](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** &gt; **Minden eszköz** területre, majd kattintson az **Eszközök felvétele** gombra.
 
    Két módon adhat hozzá eszközöket:
 
@@ -107,13 +107,13 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
   -  **Eszközadatok kézi hozzáadása** – Adja meg legfeljebb 15 eszköz sorozatszámát, adatait és az esetleges megjegyzéseket.
 
-  Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket. 
+  Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket.
 
-> [!NOTE] 
+> [!NOTE]
 > Az Intune korábbi felügyeleti konzolján a rendszergazdák egy feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes sorozatszámok korábbi részleteit. Az új Azure Portalon csak az összes sorozatszám adatainak felülírására vagy az új részletek figyelmen kívül hagyására lesz lehetőség.
 
-  > [!NOTE]
-  > Ha később el szeretne távolítani vállalati tulajdonú eszközöket az Intune kezeléséből, akkor előfordulhat, hogy az eszköz regisztrációjának letiltásához az **Előre regisztrált vállalati eszközök** elemcsoportban található **iOS-sorozatszám szerint** eszközcsoportban el kell távolítania az eszköz gyári számát az Intune-ból. Ha az Intune vészhelyreállítási eljárást hajt végre a sorozatszámok eltávolítása közben vagy ahhoz közeli időpontban, győződjön meg arról, hogy a csoportban csak az aktív eszközök sorozatszámai szerepelnek.
+> [!NOTE]
+> Ha később el szeretne távolítani vállalati tulajdonú eszközöket az Intune kezeléséből, akkor előfordulhat, hogy az eszköz regisztrációjának letiltásához az **Előre regisztrált vállalati eszközök** elemcsoportban található **iOS-sorozatszám szerint** eszközcsoportban el kell távolítania az eszköz gyári számát az Intune-ból. Ha az Intune vészhelyreállítási eljárást hajt végre a sorozatszámok eltávolítása közben vagy ahhoz közeli időpontban, győződjön meg arról, hogy a csoportban csak az aktív eszközök sorozatszámai szerepelnek.
 
 2. Kattintson a **Tovább** gombra.
 
@@ -128,23 +128,22 @@ Adja meg a hozzáadott eszközökhöz hozzárendelendő profilt az elérhető pr
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Az iOS-eszközökre telepíteni kívánt profil exportálása
 
-1. A [Microsoft Intune felügyeleti konzolban](http://manage.microsoft.com) válassza a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lehetőséget, majd válassza ki a mobileszközökre telepítendő eszközprofilt. 
+1. A [Microsoft Intune felügyeleti konzolban](http://manage.microsoft.com) válassza a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lehetőséget, majd válassza ki a mobileszközökre telepítendő eszközprofilt.
 
 2. A tálcán válassza az **Exportálás** lehetőséget. Másolja ki és mentse el a **Profil URL-címét**. A címet később fel kell töltenie az Apple Configurator eszközbe az iOS-eszközök által használt Intune profil meghatározásához.
 
   Az Apple Configurator 2 támogatásához módosítania kell a 2.0-s profil URL-címét. Ehhez a írja be a következő kód helyére:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    ezt a kódot:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  ezt a kódot:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    Az itt következő eljárás keretében az Apple Configurator segítségével feltölti a profil URL-címét az Apple DEP szolgáltatásába, ezzel meghatározza az iOS-eszközök által használandó Intune-profilt.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Az eszköz előkészítése az Apple Configuratorral
 
@@ -180,9 +179,10 @@ Az iOS-eszközök csatlakoznak a Mac számítógéphez, és regisztrálva vannak
 
 ### <a name="distribute-devices"></a>Eszközök terjesztése
 
-Az eszközök most már készen állnak a vállalati regisztrációra. 
+Az eszközök most már készen állnak a vállalati regisztrációra. Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Amikor a felhasználók bekapcsolják az eszközüket, elindul a Beállítási asszisztens.
 
-Kapcsolja ki az eszközöket, és ossza ki őket a felhasználóknak. Amikor a felhasználók bekapcsolják az eszközüket, elindul a Beállítási asszisztens.
+>[!NOTE]
+>Ha egy felhasználó DEP-eszközt próbál regisztrálni, miközben már elérte az eszközkorlátját, a regisztráció figyelmeztetés nélkül meghiúsul.
 
 
 ### <a name="see-also"></a>További információ

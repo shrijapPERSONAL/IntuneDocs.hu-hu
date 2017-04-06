@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a követk
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migrálás a klasszikus Intune-konzolról az Azure-beli Intune-előzetes portáljára
+
+A [klasszikus Intune-konzolon](https://manage.microsoft.com) létrehozott eszközmegfelelőségi szabályzatok nem jelennek meg az új [Azure-beli Intune-portálon](https://portal.azure.com), de továbbra is érintik a felhasználókat, és kezelhetők a klasszikus Intune-konzolon.
+
+Ha szeretné kihasználni az Azure-beli Intune-portál eszközmegfelelőséggel kapcsolatos új funkcióit, akkor az Azure-beli Intune-portálon kell új eszközmegfelelőségi szabályzatokat létrehoznia. Ha az Azure-beli Intune-portálon új eszközmegfelelőségi szabályzatot rendel egy olyan felhasználóhoz, akihez már a klasszikus Intune-konzolon is hozzá van rendelve egy másik eszközmegfelelőségi szabályzat, akkor az Azure-beli Intune-portál szabályzata elsőbbséggel bír a klasszikus Intune-konzolon létrehozottal szemben.
 
 ##  <a name="next-steps"></a>További lépések
 

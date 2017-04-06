@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -41,6 +41,6 @@ Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban,
 - [Ki kell kapcsolnia az USB-hibakeresést](you-need-to-turn-off-usb-debugging-android.md)
 - [Be kell kapcsolnia a biztonsági fenyegetések keresését](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Az eszköz nem felel meg a minimális biztonsági javítási szintnek](you-need-to-update-your-device-OS-security-patch-android.md)
-- [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](you-are-prompted-to-install-lookout-for-work-android.md)
-- [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [A rendszer arra kéri, hogy telepítsen veszélyforrások elleni eszközvédelmet biztosító alkalmazást androidos eszközére](you-are-prompted-to-install-mtd-android.md)
+- [El kell hárítania egy fenyegetést, amelyet a veszélyforrások elleni eszközvédelmet biztosító alkalmazás talált az androidos eszközön](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

@@ -1,59 +1,49 @@
 ---
-title: "Intune-licencek kezelése | Microsoft Docs"
+title: "Intune-licencek hozzárendelése | Microsoft Docs"
 description: "Licencek és eszközök hozzárendelése az Intune-előfizetéshez"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: lindavr
+ms.author: lindavr
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: jeffgilb
+ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
-# <a name="manage-intune-licenses"></a>Intune licencek kezelése
+# <a name="assign-intune-licenses-to-your-user-accounts"></a>Intune-licencek hozzárendelése a felhasználói fiókokhoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Ez a témakör arról tájékoztatja a rendszergazdákat, hogy miképpen vonhatják felügyelet alá az eszközöket úgy, hogy Intune-licenceket rendelnek a felhasználókhoz.
+Akár manuálisan adja hozzá a felhasználókat, akár a helyszíni Active Directoryból szinkronizál, először Intune-licencet kell hozzárendelnie minden felhasználóhoz, hogy a felhasználók regisztrálhassák eszközeiket az Intune-ban.
 
-Ahhoz, hogy a felhasználók bejelentkezhessenek az Intune szolgáltatásba, illetve regisztrálhassák az eszközeiket felügyeletre, egy, az Intune-előfizetéséhez tartozó licencet kell hozzárendelnie minden felhasználóhoz az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-Előfordulhat, hogy a Microsoft Enterprise Mobility + Security (EMS) megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagokkal](https://msdn.microsoft.com/library/jj151815.aspx) egy-egy szolgáltatás vagy a szolgáltatások egy halmaza is hozzárendelhető. További információ: [Intune-licencek kezelése a PowerShell használatával](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
-
-## <a name="how-intune-licenses-are-assigned"></a>Az Intune-licencek hozzárendelésének módja
-Ha a felhasználói fiókok szinkronizálása a helyszíni Active Directoryból történik, vagy az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) segítségével manuálisan veszi fel azokat a felhőalapú szolgáltatások előfizetésébe, akkor a rendszer nem rendel hozzájuk automatikusan Intune-licencet. Ehelyett egy későbbi időpontban egy Intune bérlői rendszergazdának az Office 365 portálról kell egy licencet a felhasználóhoz rendelnie a felhasználói fiók szerkesztésével.
-
-Ha az előfizetése a hozzá társított más felhőalapú szolgáltatásokkal közösen használja az Azure AD-t, Ön hozzáférhet az ezekbe a szolgáltatásokba felvett felhasználókhoz. Ezek a felhasználók mindaddig nem jogosultak a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatára, amíg hozzájuk nem rendel egy licencet.
-
-> [!TIP]
-> Ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] használatára jogosító licenc hozzárendelésére vagy visszavonására szolgáló beállítás nem érhető el, előfordulhat, hogy az előfizetés mennyiségi licencelési lehetőségeket tartalmaz, például a [Nagyvállalati mobilitási csomag + Biztonság](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) használatakor elérhetőeket. A licencek hozzárendeléséről vagy visszavonásáról a licencelési lehetőségek dokumentációjában tájékozódhat.
-
-## <a name="assign-an-intune-user-license"></a>Intune felhasználói licenc hozzárendelése
+## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Intune-licenc hozzárendelése az Office 365 Felügyeleti központban
 
 Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure AD-be szinkronizált fiókokhoz is.
 
-1.  Jelentkezzen be az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) bérlői rendszergazdai hitelesítő adataival, majd válassza a **Személyek** > **Minden felhasználó** lehetőséget.
+1.  Jelentkezzen be az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854) bérlői rendszergazdai hitelesítő adataival, majd válassza a **Felhasználók** > **Aktív felhasználók** lehetőséget.
 
-2.  Válassza ki azt a felhasználói fiókot, amelyhez Intune felhasználói licencet kíván hozzárendelni, majd válassza vagy a **Microsoft Intune** (önálló), vagy az **Enterprise Mobility Suite** lehetőséget.
+2.  Válassza ki a felhasználói fiókot az Intune felhasználói licencek hozzárendelésére, és válassza a **Terméklicencek** > **Szerkesztés** lehetőséget.
 
-3.  A felhasználói fiókot most már rendelkezik a szolgáltatás használatához és az eszközöknek a felügyelet alá való regisztrálásához szükséges engedélyekkel.
+3.  Kapcsolja az **Intune** vagy az **Enterprise Mobility + Security** beállítást **Be**, és válassza a **Mentés** lehetőséget.
+
+4. A felhasználói fiókot most már rendelkezik a szolgáltatás használatához és az eszközöknek a felügyelet alá való regisztrálásához szükséges engedélyekkel.
 
 > [!NOTE]
-> Miután regisztrálnak egy eszközt, a felhasználók megjelennek a konzolon.
+> Miután regisztrálnak egy eszközt, a felhasználók már megjelennek a felügyeleti konzolon. Emellett kiválaszthat egy felhasználói csoportot az egyszerre való szerkesztéshez, vagy hozzáadva, vagy lecserélve az összes kijelölt felhasználó licencét.
 
-### <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Az EMS felhasználói licencek szelektív kezelése a PowerShell segítségével
+## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Az EMS felhasználói licencek szelektív kezelése a PowerShell segítségével
 Előfordulhat, hogy a Microsoft Enterprise Mobility + Security (korábban: Nagyvállalati mobilitási csomag) megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.
 
 A felhasználói licencek EMS-szolgáltatásokhoz való szelektív hozzárendeléséhez nyissa meg a PowerShellt rendszergazdaként egy olyan számítógépen, amelyre telepítve van a [Windows PowerShellhez készült Microsoft Azure Active Directory-modul ](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) megoldással rendelkező számítógépen. A PowerShell helyi számítógépre vagy ADFS-kiszolgálóra telepíthető.

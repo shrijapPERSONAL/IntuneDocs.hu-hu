@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetne
 A felhasználóknak szerepelniük kell az Azure Portal webhelyen ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság biztosítása érdekében a DEM-felhasználó nem lehet egyben Intune-rendszergazda is.
 
 >[!NOTE]
->A DEM regisztrációs módszer nem használható az [Apple Configurator beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md) végzett, vagy [közvetlen regisztrációhoz](ios-direct-enrollment-in-microsoft-intune.md), illetve a [DEP regisztrációs módszerrel](ios-device-enrollment-program-in-microsoft-intune.md). 
+>A DEM regisztrációs módszer nem használható az [Apple Configurator beállítási asszisztenssel](ios-setup-assistant-enrollment-in-microsoft-intune.md) végzett, vagy [közvetlen regisztrációhoz](ios-direct-enrollment-in-microsoft-intune.md), illetve a [DEP regisztrációs módszerrel](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Eszközregisztráció-kezelői példaforgatókönyv
 
@@ -42,9 +42,9 @@ Csak az Intune-konzolon szereplő felhasználók lehetnek eszközregisztráció-
 
 A DEM-felhasználó a következőket teheti:
 
--   Legfeljebb 1000 eszköz regisztrálása az Intune-ban.
--   Bejelentkezés a Vállalati portálra vállalati alkalmazások beszerzéséhez.
--   A vállalati adatok elérésének konfigurálása szerepkör-specifikus alkalmazások a táblagépekre való telepítésével.
+-   Legfeljebb 1000 eszköz regisztrálása az Intune-ban
+-   Céges alkalmazások beszerzése a Céges portál alkalmazással
+-   Szerepkör-specifikus alkalmazások telepítése a táblagépekre a céges adatok elérésének konfigurálásához
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>A DEM-fiókkal regisztrált eszközökre vonatkozó korlátozások
 
@@ -57,9 +57,9 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
   - A DEM-felhasználó magán az eszközön nem törölheti az eszközregisztráció-kezelésre regisztrált eszközök regisztrációját a Vállalati portálon. Az Intune-rendszergazda rendelkezik ezzel a képességgel, a DEM-felhasználó viszont nem.
 
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.
- 
+
   - A felhasználók nem futtathatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat az eszközökön, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
- 
+
   - (Csak iOS esetén) Ha eszközregisztráció-kezelővel regisztrálja az iOS-eszközöket, nem használhatja az Apple Configuratort vagy az Apple Device Enrollment Programot (DEP) az eszközök regisztrálásához.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
 
 4.  Kattintson a **Hozzáadás...** lehetőségre. Megnyílik az **Eszközregisztráció-kezelő hozzáadása** párbeszédpanel.
 
-5.  Adja meg az Intune-fiók **felhasználói azonosítóját**, és kattintson az **OK** gombra. 
+5.  Adja meg az Intune-fiók **felhasználói azonosítóját**, és kattintson az **OK** gombra.
 
     Az eszközregisztráció-kezelő most már ugyanazzal az eljárással regisztrálhat mobileszközöket, amelyet a végfelhasználók használnak a Vállalati portálon a saját eszközök használata esetén. A kezelő végfelhasználó telepítheti a céges portál alkalmazást és regisztrálhatja az eszközt a saját DEM hitelesítő adataival, legfeljebb 1000 eszközön. A végfelhasználók regisztrálásának az egyes platformokra vonatkozó lépéseit lásd:
 

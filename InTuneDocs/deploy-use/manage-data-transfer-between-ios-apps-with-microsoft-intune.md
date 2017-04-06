@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -76,9 +77,9 @@ A felhasználó UPN beállítását **kötelező** megadni olyan eszközök eset
 
 |Külső MDM-szolgáltató| Konfigurációs kulcs | Érték típusa | Konfigurációs érték|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | Karakterlánc | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | Karakterlánc | ${userUPN} **vagy** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | Karakterlánc | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | Karakterlánc | $EMAIL$ **vagy** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | Karakterlánc | ${userUPN} **vagy** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>2. példa: A végfelhasználó teendői
 
@@ -95,7 +96,7 @@ A felhasználó UPN beállítását **kötelező** megadni olyan eszközök eset
 
 5.  Ha sikeres a bejelentkezés, a rendszer érvényesíti az alkalmazásvédelmi szabályzat beállításait a Word alkalmazásra.
 
-6.  Mostantól az adatátvitel sikeres lesz, és a dokumentum vállalati identitásként van megjelölve az alkalmazásban. Ezenkívül a rendszer munkahelyi környezetben kezeli az adatokat, és ennek megfelelően alkalmazza a szabályzatbeállításokat.
+6.  Most, hogy a fájlátvitel sikerült, a dokumentum vállalati identitásként van megjelölve az alkalmazásban. Ezenkívül a rendszer munkahelyi környezetben kezeli a fájlt, és ennek megfelelően alkalmazza a szabályzatbeállításokat.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Külső EMM-megoldásban megadott UPN-beállítás ellenőrzése
 
@@ -109,9 +110,4 @@ Először [hozzon létre és telepítsen egy alkalmazásvédelmi szabályzatot](
 
 ### <a name="see-also"></a>További információ
 [Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal a Microsoft Intune segítségével](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

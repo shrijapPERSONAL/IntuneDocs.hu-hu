@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: fafc2b14d3060f79b92bb9d18aabda6b08737881
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -28,32 +28,43 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Általános
--     **Kamera** – Engedélyezi az eszköz kamerájának használatát.
--     **Másolás és beillesztés** – Az eszköz másolási és beillesztési funkcióinak engedélyezése.
--     **Vágólap megosztása az alkalmazások között** – Engedélyezi a vágólap használatát az alkalmazások közötti másolásra és beillesztésre (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Diagnosztikai adatok küldése** – Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.    
--     **Gyári beállítások visszaállítása** – Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.
--     **Földrajzi hely** – Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Kikapcsolás** – Engedélyezi az eszköz felhasználó általi kikapcsolását.<br>Ha ez a beállítás le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás Samsung KNOX Standard-eszközökön nem működik.
--     **Képernyőfelvétel** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
--     **Beszédfelismerési asszisztens** – Engedélyezi a Beszédfelismerési asszisztens szoftver használatát az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **YouTube** – Engedélyezi a YouTube alkalmazás használatát az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
+
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Fényképezőgép**|Engedélyezi az eszköz kamerájának használatát.|Igen|Igen|
+|**Másolás és beillesztés**|Az eszköz másolási és beillesztési funkcióinak engedélyezése.|Nem|Igen|
+|**Vágólap megosztása az alkalmazások között**|A vágólap használatának engedélyezése az alkalmazások közötti másoláshoz.|Nem|Igen|
+|**Diagnosztikai adatok beküldése**|Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.|Nem|Igen|
+|**Gyári beállítások visszaállítása**|Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.|Nem|Igen|
+|**Földrajzi hely**|Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat (csak Samsung KNOX Standard-eszközökre vonatkozik).|Nem|Igen|
+|**Kikapcsolás**|Az eszköz felhasználó általi kikapcsolásának engedélyezése.<br>Ha ez a beállítás le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás Samsung KNOX Standard-eszközökön nem működik.|Nem|Igen|
+|**Képernyőfelvétel**|Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.|Nem|Igen|
+|**Hangsegéd**|Hangsegéd szoftverek használatának engedélyezése az eszközön.|Nem|Igen|
+|**YouTube**|A YouTube alkalmazás használatának engedélyezése az eszközön.|Nem|Igen|
 
 ## <a name="password"></a>Jelszó
--     **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
--     **Jelszó minimális hossza** – Megadja a felhasználó által beállítandó jelszó minimális hosszát (4 és 16 karakter között).
--     **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Az eszköz az itt megadott számú perc elteltével automatikusan zárolja magát.
--     **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölődnének.
--     **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
--     **Kötelező jelszó típusa** – Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz.
--     **Korábbi jelszavak újbóli használatának tiltása** – Megakadályozza, hogy a végfelhasználó általa korábban már használt jelszót hozzon létre.
--     **Ujjlenyomattal történő zárolásfeloldás** – Engedélyezi az ujjlenyomattal történő zárolásfeloldást a támogatott eszközökön.
--     **Smart Lock és egyéb megbízhatósági ügynökök** – A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van, például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.
--     **Titkosítás** – Megköveteli, hogy az eszközön minden fájl titkosítva legyen.
+
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Jelszó**|Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.|Igen|Igen|
+|**Jelszó minimális hossza**|Megadja a felhasználó által beállítandó jelszó minimális hosszát (4 és 16 karakter között).|Igen|Igen|
+|**Képernyőzárolás legfeljebb ennyi perc inaktivitás után**|Az eszköz az itt megadott számú másodperc elteltével automatikusan zárolja magát.|Igen|Igen|
+|**Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat**|Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölve lennének.|Igen|Igen|
+|**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
+|**Kötelező jelszótípus**|Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz.|Igen|Igen|
+|**Korábbi jelszavak újbóli használatának tiltása**|Megakadályozza, hogy a végfelhasználó általa korábban már használt jelszót hozzon létre.|Igen|Igen|
+|**Ujjlenyomattal történő zárolásfeloldás**|Engedélyezi az ujjlenyomattal történő zárolásfeloldást a támogatott eszközökön.|Nem|Igen|
+|**Smart Lock és egyéb megbízhatósági ügynökök**|A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van, például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.|Igen (5.0 és újabb verziók)|Nem|
+|**Titkosítás**|Az eszközön található összes fájlnak titkosítva kell lennie.|Igen|Igen|
 
 ## <a name="google-play-store"></a>Google Play Áruház
 
--     **Google Play Áruház** – Engedélyezi a felhasználó számára a Google Play Áruház elérését az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Google Play Áruház**|A Google Play Áruház használatának engedélyezése az eszközön|Nem|Igen|
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
@@ -80,30 +91,42 @@ Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre
 Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, mely a következő formátumú: <*alkalmazás URL-címe*>, <*alkalmazás neve*>, <*alkalmazás kiadója*>. Az **Exportálás** gombra kattintva pedig létrehozhat egy CSV-fájlt, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.        
 
 ## <a name="browser"></a>Böngésző
--     **Webböngésző** – Ezzel a beállítással adható meg, hogy engedélyezve van-e az eszköz alapértelmezett webböngészőjének használata.
--     **Automatikus kitöltés** – A böngésző automatikus kitöltési funkciójának engedélyezése.
--     **Cookie-k** – Engedélyezi, hogy az eszköz webböngészője cookie-kat használjon.
--     **JavaScript** – Engedélyezi, hogy az eszköz webböngészője Java-szkripteket futtasson.
--     **Előugró ablakok** – A böngésző előugróablak-blokkoló funkciójának engedélyezése.
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Webböngésző**|Ezzel a beállítással adható meg, hogy engedélyezett-e az eszköz alapértelmezett webböngészőjének használata.|Nem|Igen|
+|**Automatikus kitöltés**|A böngésző automatikus kitöltési funkciójának engedélyezése.|Nem|Igen|
+|**Cookie-k**|Engedélyezi, hogy az eszköz webböngészője cookie-kat használjon.|Nem|Igen|
+|**Javascript**|Engedélyezi, hogy az eszköz webböngészője Javascript-parancsprogramokat futtasson.|Nem|Igen|
+|**Előugró ablakok**|A böngésző előugróablak-blokkoló funkciójának engedélyezése.|Nem|Igen|
 
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
--     **Google biztonsági mentés** – Engedélyezi a Google-fiók biztonsági mentését.
--     **Google-fiók automatikus szinkronizálása** – Engedélyezi a Google-fiókbeállítások automatikus szinkronizálását.
--     **Cserélhető tárolók** – Engedélyezi az eszköz számára cserélhető tárolók, például SD-kártyák használatát (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Tárolókártyák titkosítása** – Ez a beállítás határozza meg, hogy kötelező legyen-e az eszköz tárolókártyájának titkosítása.
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Google-biztonsági mentés**|A Google-fiók biztonsági mentésének engedélyezése.|Nem|Igen|
+|**Google-fiók automatikus szinkronizálása**|Google-fiókbeállítások automatikus szinkronizálásának engedélyezése.|Nem|Igen|
+|**Cserélhető tároló**|Cserélhető tárolók (például SD-kártya) használatának engedélyezése az eszközön.|Nem|Igen|
+|**Titkosítás tárolókártyákon**|Ez a beállítás határozza meg, hogy kötelező legyen-e az eszköz tárolókártyájának titkosítása.|Nem|Igen|
 
 ## <a name="cellular-and-connectivity"></a>Mobilhálózati és egyéb kapcsolatok
--     **Adatroaming** – Engedélyezi adatroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **SMS- és MMS-funkciók** – Engedélyezi az SMS- és MMS-üzenetküldést az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Hangtárcsázás** – Engedélyezi vagy letiltja a hangtárcsázás funkciót az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Hangroaming** – Engedélyezi hangroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Bluetooth** – Engedélyezi a Bluetooth használatát az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **NFC** – Engedélyezi kis hatótávolságú kommunikációt (NFC) használó műveleteket, ha az eszköz támogatja ezt a funkciót (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Wi-Fi** – Engedélyezi az eszköz Wi-Fi képességeinek használatát (csak Samsung KNOX Standard-eszközökre vonatkozik).
--     **Wi-Fi-alapú internetmegosztás** – Engedélyezi a Wi-Fi-alapú internetmegosztást az eszközön (csak Samsung KNOX Standard-eszközökre vonatkozik).
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Adatroaming**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Nem|Igen|
+|**SMS- és MMS-funkciók**|SMS- és MMS-üzenetek engedélyezése az eszközön.|Nem|Igen|
+|**Hangtárcsázás**|A hangtárcsázási funkció engedélyezése vagy letiltása az eszközön.|Nem|Igen|
+|**Hangroaming**|Hangroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Nem|Igen|
+|**Bluetooth**|Az eszköz Bluetooth-funkciójának engedélyezése.|Nem|Igen|
+|**NFC**|A kis hatótávolságú kommunikációt használó műveletek engedélyezése (ha az eszköz támogatja ezt a funkciót).|Nem|Igen|
+|**Wi-Fi**|Az eszköz Wi-Fi-funkciójának engedélyezése.|Nem|Igen|
+|**Wi-Fi tethering**|Az eszköz Wi-Fi-alapú internetmegosztási funkciójának engedélyezése.|Nem|Igen|
 
 ## <a name="kiosk"></a>Kioszkmód
--     **Felügyelt alkalmazás kiválasztása** – Keresse meg, majd jelölje ki azt a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz teljes képernyős módban futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem támogatottak). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.
--     **Képernyőalvás gombja** – Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.
--     **Hangerőgombok** – Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.
+|||||
+|-|-|-|-|
+|Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
+|**Felügyelt alkalmazás kiválasztása**|Keresse meg, majd jelölje ki azt a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz teljes képernyős módban futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem támogatottak). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.|Nem|Igen|
+|**Alvás gomb megnyomásakor**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|Nem|Igen|
+|**Hangerő gombok**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|Nem|Igen|
 
