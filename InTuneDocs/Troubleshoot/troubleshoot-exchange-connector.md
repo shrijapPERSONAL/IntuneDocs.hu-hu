@@ -1,9 +1,9 @@
 ---
-title: "Az Exchange Connector hibaelhárítása | Microsoft Intune"
+title: "Az Exchange Connector hibaelhárítása | Microsoft Docs"
 description: "Az Intune Exchange Connectorral kapcsolatos problémák elhárítása."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
+ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
+ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="troubleshoot-the-exchange-connector"></a>Az Exchange Connector hibaelhárítása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Ez a témakör az Intune Exchange Connectorral kapcsolatos problémák elhárításáról szól.
 
 ## <a name="steps-for-checking-the-connector-configuration"></a>Lépések a Connector konfigurációjának ellenőrzéséhez 
@@ -48,9 +53,4 @@ Ellenőrizze, hogy az Exchange Connector szinkronizál-e az Exchange-kiszolgál�
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

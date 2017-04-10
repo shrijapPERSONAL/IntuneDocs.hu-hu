@@ -1,11 +1,11 @@
 ---
-title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Intune"
+title: "Szabályzatokkal kapcsolatos problémák elhárítása | Microsoft Docs"
 description: "Elháríthat szabályzatok konfigurációjával kapcsolatos problémákat."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,23 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
 
 ---
 
-# Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ha problémába ütközik az Intune-szabályzatok érvénybe léptetése vagy kezelése során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
-## Általános problémák
+## <a name="general-issues"></a>Általános problémák
 
-### Az eszközre vonatkozott bármilyen telepített házirend?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>Az eszközre vonatkozott bármilyen telepített házirend?
 **A probléma leírása:** Nem biztos benne, hogy helyesen lett alkalmazva a házirend.
 
 Az Intune felügyeleti konzoljában az **Eszköztulajdonságok**csoportban minden eszközhöz tartozik egy szabályzatlap. Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**jellemzővel. A kívánt érték az az érték, amelyet a házirend hozzárendelésekor el kívánt érni. Az állapot az eszközre érvényes összes házirend alkalmazása, valamint a hardver és az operációs rendszer által szabott korlátozások és rendszerkövetelmények együttese alapján elért érték. A lehetséges állapotok az alábbiak:
@@ -49,14 +52,14 @@ Az alábbi képernyőképen két világos példa látható:
 > Ne felejtse el, hogy ha két különböző korlátozási szintű házirend vonatkozik egy eszközre vagy felhasználóra, akkor gyakorlatban a szigorúbb házirend lesz érvényes.
 
 
-## A regisztrált eszközök problémái
+## <a name="issues-with-enrolled-devices"></a>A regisztrált eszközök problémái
 
-### Figyelmeztetés: A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Figyelmeztetés: A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen
 **Probléma:**A felügyeleti konzolban megjelenik **A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen**  figyelmeztetés.
 
 Ha a felügyeleti konzol Helyszíni Exchange-szabályzat munkaterületén szabályzatot hozott létre, de O365-öt használ, az Intune nem kényszeríti ki a konfigurált szabályzatbeállítások használatát. Jegyezze fel a figyelmeztetésben szereplő szabályzatforrást.  A Helyszíni Exchange-szabályzat munkaterületen törölje az örökölt szabályokat, mivel azok a helyszíni Exchange-hez készült Intune-on belüli globális Exchange-szabályok, és nem vonatkoznak az O365-re. Ezután hozzon létre új szabályzatot az O365-höz.
 
-### Nem módosítható a különféle regisztrált eszközök biztonsági házirendje
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>Nem módosítható a különféle regisztrált eszközök biztonsági házirendje
 A Windows Phone-telefonok nem teszik lehetővé, hogy a beállításukat követően a felhasználó alacsonyabb biztonsági értékeket konfiguráljon az MDM-en vagy az EAS-en keresztül megadott biztonsági szabályzatokhoz. Ilyen eset például, ha beállítja a **jelszó minimális karakterszámát** 8-ra, majd megpróbálja 4-re csökkenteni. Az eszközhöz már a szigorúbb szabályzat tartozik.
 
 Az eszköz platformjától függően előfordulhat, hogy ha módosítani szeretné a szabályzatot egy kevésbé biztonságos értékre, alaphelyzetbe kell állítania a biztonsági szabályzatokat.
@@ -64,12 +67,12 @@ A Windowsban például jobbról befelé pöccintve nyissa meg az asztalon a **Go
 A bal oldali navigációs menü alján található egy **Biztonsági házirendek mellőzése** hivatkozás. Válassza ki, majd kattintson a **Házirendek mellőzése** gombra.
 Előfordulhat, hogy egyéb MDM-eszközöket (például Android, Windows Phone 8.1 és újabb, valamint iOS) ki kell vonni, majd újból regisztrálni kell a szolgáltatásba egy kevésbé korlátozó házirend alkalmazásához.
 
-## Az Intune szoftverügyfelet futtató számítógépek problémái
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Az Intune szoftverügyfelet futtató számítógépek problémái
 
-### Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Microsoft Intune-házirendekkel kapcsolatos hibák a policyplatform.log fájlban
 Az Intune szoftverügyféllel kezelt Windows számítógépek esetén a policyplatform.log fájlban lévő házirendhibák az eszközön lévő Windows Felhasználói fiókok felügyelete (UAC) nem alapértelmezett beállításainak eredményei lehetnek. Néhány nem alapértelmezett UAC-beállítás hatással lehet a Microsoft Intune ügyféltelepítéseire és a házirendek érvénybe léptetésére.
 
-#### Az UAC-problémák megoldása
+#### <a name="to-resolve-uac-issues"></a>Az UAC-problémák megoldása
 
 1.  Vonja ki a számítógépet az [Eszközök kivonása a Microsoft Intune-nal való felügyelet alól](/intune/deploy-use/retire-devices-from-microsoft-intune-management) szakaszban leírtak szerint.
 
@@ -82,7 +85,7 @@ Az Intune szoftverügyféllel kezelt Windows számítógépek esetén a policypl
 
 4.  Mozgassa az értesítési csúszkát az alapértelmezett beállításhoz.
 
-### HIBA: Nem szerezhető be érték a számítógépről, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>HIBA: Nem szerezhető be érték a számítógépről, 0x80041013
 Ez akkor fordulhat elő, ha a helyi rendszeren lévő idő legalább öt perccel eltér a szinkronizált értéktől. Ha a helyi számítógépen lévő idő nincs szinkronban, a biztonságos tranzakciók meghiúsulnak, mert az időbélyegek érvénytelenek lesznek.
 
 A hiba megoldásához állítsa a helyi időt a lehető legközelebb az internetes időhöz, vagy a hálózaton lévő tartományvezérlőkben megadott időhöz.
@@ -94,11 +97,11 @@ A hiba megoldásához állítsa a helyi időt a lehető legközelebb az internet
 
 
 
-### További lépések
+### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

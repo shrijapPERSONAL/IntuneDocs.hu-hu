@@ -1,51 +1,56 @@
 ---
-title: "Microsoft Intune App SDK Cordova beépülő modul | Microsoft Intune"
+title: "Microsoft Intune App SDK Cordova beépülő modul | Microsoft Docs"
 description: 
 keywords: SDK, Cordova, Intune
 author: oydang
 manager: angrobe
 ms.author: oydang
-ms.date: 11/15/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 5583c496a10d93d041d3387b7b10931bf87c73d6
+ms.sourcegitcommit: 613e293d9bd853d6de7cdc0d753cc8473afc180b
+ms.openlocfilehash: 9ef09f43e6c878af689a500457bab578149de499
 
 
 ---
-# ﻿<a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova beépülő modul
+# <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova beépülő modul
+
+> [!NOTE]
+> Először célszerű elolvasnia az [Intune App SDK használatának első lépései](intune-app-sdk-get-started.md) című cikket, amely bemutatja az integráció előkészítését a támogatott platformokon.
+
 
 ## <a name="overview"></a>Áttekintés
 
 Az [Intune APP SDK Cordova beépülő modul](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) lehetővé teszi az [Intune mobilalkalmazás-felügyeleti funkcióinak](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) igénybevételét a Cordova használatával létrehozott iOS- és Android-alkalmazásokban. A beépülő modullal a fejlesztők beépíthetik az Intune alkalmazásfelügyeleti és adatvédelmi funkcióit a Cordova-alapú alkalmazásaikba.
 
-Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a beépülő modult az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a rendszergazda a Microsoft Intune-nal telepíteni tud olyan szabályzatot, amely számos adatvédelmi funkciót támogat. A beépülő modult azért készítettük el, hogy a lépések többségét automatikusan lehessen végrehajtani a Cordovában, a build létrehozásakor. Ennek eredményeképpen gyorsan felkészítheti az alkalmazását a felügyeletre. A kezdéshez kövesse az alábbi lépéseket a célplatformnak megfelelően.
+Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a beépülő modult az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a rendszergazda a Microsoft Intune mobilalkalmazás-kezelési szolgáltatásával (MAM) telepíteni tud olyan szabályzatot, amely számos adatvédelmi funkciót támogat. A beépülő modult azért készítettük el, hogy a lépések többségét automatikusan lehessen végrehajtani a Cordovában, a build létrehozásakor. Ennek eredményeképpen gyorsan felkészítheti az alkalmazását a felügyeletre. A kezdéshez kövesse az alábbi lépéseket a célplatformnak megfelelően.
 
-A Microsoft Intune App SDK Cordova beépülő modul telepítése és használata **előtt**:
 
-* Olvassa el az [Intune App SDK Cordova beépülő modul licencfeltételeit](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf).
-* Nyomtassa ki és őrizze meg a licencfeltételeket. Az Intune App SDK Cordova beépülő modul letöltésével és használatával Ön elfogadja a beépülő modul licencfeltételeit.  Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
 
-Az Intune App SDK részletes ismertetését a [hivatalos dokumentációban](/intune/develop/intune-app-sdk) tekintheti át.
 
-## <a name="supported-scenarios"></a>Támogatott helyzetek
+## <a name="whats-supported"></a>Támogatott források és műveletek
 
-### <a name="platforms"></a>Platformok
-* Android
+### <a name="developer-machines"></a>Fejlesztői gépek
+* Windows
+* Mac OS
+
+
+### <a name="mobile-app-platforms"></a>Mobilalkalmazás-platformok
+* Android 4.0+
 * iOS
 
+### <a name="intune-mobile-application-management-scenarios"></a>Intune mobilalkalmazás-kezelési helyzetek
 
-### <a name="emm-scenarios"></a>EMM-forgatókönyvek
-
-* Az Intune MAM az Intune MDM-ben regisztrált eszközökön
-* Az Intune MAM a külső féltől származó EMM-ben regisztrált eszközökön
-* Az Intune MAM a nem regisztrált és nem felügyelt eszközökön
+* Intune MDM által regisztrált eszközök
+* Külső EMM által regisztrált eszközök
+* Nem felügyelt (semmilyen MDM által nem regisztrált) eszközök
 
 Az Intune App SDK Cordova beépülő modullal létrehozott Cordova-alapú alkalmazások mostantól fogadni tudják az Intune mobilalkalmazás-felügyeleti (MAM) szabályzatokat az Intune mobileszköz-felügyeletben (MDM) regisztrált eszközökön és a nem regisztrált eszközökön is.
 
@@ -53,11 +58,21 @@ Az Intune App SDK Cordova beépülő modullal létrehozott Cordova-alapú alkalm
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* **[Csak az Android esetében]** Az eszközre mindig a legújabb Microsoft Intune Munkahelyi portál alkalmazást kell telepíteni.
+### <a name="technical-prerequisites"></a>Technikai előfeltételek
+
+* **[Csak az Android esetében]** Az eszközön mindig a legújabb Microsoft Intune Céges portál alkalmazást kell telepíteni.
 
 
 * Az [Azure Active Directory Authentication Libraries (ADAL) Cordova rendszerhez készült beépülő moduljának](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) 0.8.0+ verziója szükséges.
-  * **Megjegyzés:** Az Apache Cordova [itt](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) ismertetett programhibája miatt a beépülő modultól már függő alkalmazások nem frissítik automatikusan a beépülő modult a szükséges verzióra.
+  * **Fontos:** Az Apache Cordova [itt](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) ismertetett programhibája miatt a beépülő modultól már függő alkalmazások nem frissítik automatikusan a beépülő modult a szükséges verzióra.
+
+
+### <a name="before-you-install-and-use-microsoft-intune-app-sdk-cordova-plugin-you-must"></a>A Microsoft Intune App SDK Cordova beépülő modul telepítése és használata **előtt**:
+
+* Olvassa el az [Intune App SDK Cordova beépülő modul licencfeltételeit](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf).
+
+* Nyomtassa ki és őrizze meg a licencfeltételeket. Az Intune App SDK Cordova beépülő modul letöltésével és használatával Ön elfogadja a beépülő modul licencfeltételeit.  Amennyiben a feltételeket nem fogadja el, ne használja a szoftvert.
+
 
 ## <a name="quick-start"></a>Gyors kezdés
 
@@ -122,11 +137,11 @@ A beburkolt alkalmazáscsomag aláírási információjának hozzáadásához m�
 
 2. **Cordova 6.x.x:** A `[PROJECT_ROOT]/platforms/android/cordova/lib/Adb.js` fájlban módosítsa a 60. sort. Eredeti sor:
 
-    ```
+    ```javascript
     var args = ['-s', target, 'install'];
     ```
     Módosított sor:
-    ```
+    ```javascript
     var args = ['-s', target, 'install', '-t'];
     ```
 
@@ -137,7 +152,7 @@ Az alkalmazás első indítását követően meg kell jelennie egy párbeszédpa
 
 ## <a name="known-limitations"></a>Ismert korlátozások
 ### <a name="android"></a>Android
-* A Multi-Dex támogatása nem teljes.
+* A MultiDex támogatása nem teljes.
 * Az alkalmazásnak az Android 4.0 (Android API 14) vagy újabb verzióval kell működnie.
 
 ### <a name="ios"></a>iOS
@@ -147,6 +162,6 @@ Az alkalmazás első indítását követően meg kell jelennie egy párbeszédpa
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

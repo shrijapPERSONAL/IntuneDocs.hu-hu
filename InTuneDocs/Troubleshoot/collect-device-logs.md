@@ -1,11 +1,11 @@
 ---
-title: "Eszköznaplók gyűjtése | Microsoft Intune"
+title: "Eszköznaplók gyűjtése | Microsoft Docs"
 description: "Ismerje meg, hogyan gyűjthet naplókat felügyelt eszközeiről."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,27 +13,31 @@ ms.technology:
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 19b0b502d2c8c261947c461f27a0e8153df5b186
-ms.openlocfilehash: 1e65c1fa25e273ba03218f79ebeff611138e8013
+ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
+ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
+ms.lasthandoff: 02/08/2017
 
 
 ---
 
 # <a name="device-logs"></a>Eszköznaplók
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A hibaelhárítás támogatása érdekében érdemes lehet eszköznaplókat gyűjteni a felhasználók által használt eszközökről. A naplók gyűjtésére vonatkozó utasítások ebben a témakörben találhatók. A naplók gyűjtéséhez általában szükség van az eszköz elérésére, vagy megkérheti a felhasználót, hogy gyűjtse össze ő a naplókat, majd küldje el azokat Önnek.
 
 ### <a name="android-logs"></a>Naplók Android-eszközökön
-A naplók az Android-eszközökön a következő helyen találhatók: *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. 
+A naplók az Android-eszközökön a következő helyen találhatók: *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*.
 
-A fájlok olykor nem jelennek meg, főként az újabb Android-eszközökön. Ha ez történik, a végfelhasználóknak meg kell nyitniuk a Vállalati portál alkalmazás Android-verziójában a **Beállítások** elemet, majd a **Naplók másolása** lehetőséget választani, és újra kell indítaniuk az eszközt. 
+A fájlok olykor nem jelennek meg, főként az újabb Android-eszközökön. Ha ez történik, a felhasználóinak meg kell nyitnia a Céges portál alkalmazást Androidhoz. Itt válasszák a **Beállítások**>**Naplófájlok másolása** elemet, majd indítsák újra az eszközt.
 
 Az alábbi cikkben további információt talál arról, felhasználói hogyan küldhetnek önnek adatnaplókat:
 
 - [Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) – Ebben részletes információt talál a részletes naplózás bekapcsolásáról, amely a felhasználók összes adatnaplóját automatikusan elküldi önnek. Alapértelmezés szerint a részletes naplózás be van kapcsolva.
 
-- [Android diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) 
+- [Android diagnosztikai adatok naplófájljainak elküldése e-mailben a rendszergazdának](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [Diagnosztikai adatok naplófájljainak elküldése USB-kábelen keresztül a rendszergazdának](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -49,14 +53,9 @@ A felhasználó a regisztrációval kapcsolatos hibákat a következő cikkben l
 
 ### <a name="windows-phone"></a>Windows Phone
 
-A Windows Phone vállalati portál alkalmazásban a felhasználó a **…** választja, hogy A megnyíló menüben válassza a **Naplók küldése** lehetőséget. Ez a funkció a vállalati portál alkalmazásba való bejelentkezés előtt és után egyaránt elérhető.
+Előbb, a menü eléréséhez válassza a Windows Phone céges portál alkalmazásban a három pontot (**...**), majd a **Naplók elküldése** elemet. Ez a funkció a vállalati portál alkalmazásba való bejelentkezés előtt és után egyaránt elérhető.
 
 ### <a name="windows"></a>Windows
 
 A windowsos Vállalati portál alkalmazásban a naplók helye a következő: *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
