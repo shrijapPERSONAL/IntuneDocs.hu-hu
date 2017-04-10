@@ -1,26 +1,28 @@
 ---
-title: "Kisegítő lehetőségek | Microsoft Intune"
+title: "Kisegítő lehetőségek | Microsoft Docs"
 description: "Ismerje meg az Intune szolgáltatásait, amelyek könnyebb használatot biztosítanak a fogyatékkal élők számára."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
-ms.topic: article
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
+ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# A Microsoft Intune kisegítő lehetőségei
+# <a name="accessibility-features-of-microsoft-intune"></a>A Microsoft Intune kisegítő lehetőségei
 A Microsoft Windows kisegítő lehetőségei mellett a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-t az alábbi szolgáltatások teszik könnyebben használhatóvá a fogyatékkal élők számára:
 
 -   Billentyűparancsok használata
@@ -28,7 +30,7 @@ A Microsoft Windows kisegítő lehetőségei mellett a [!INCLUDE[wit_firstref](.
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Billentyűparancsok használata
+## <a name="using-keyboard-shortcuts"></a>Billentyűparancsok használata
 
 |Elvégzendő művelet|Billentyűparancs|
 |--------------|------------------------------|
@@ -44,11 +46,5 @@ A Microsoft Windows kisegítő lehetőségei mellett a [!INCLUDE[wit_firstref](.
 |Ugrás a következő alkalmazáscsoportra|Fel nyílbillentyű|
 |A kijelölt eszközhöz elérhető műveletek megjelenítése|Jobb nyílbillentyű|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portálok: a navigáláshoz használhatja az Internet Explorer megszokott billentyűparancsait.
-
-
-
-
-<!--HONumber=Oct16_HO4-->
-
+> A [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]-portálokon való navigáláshoz használhatja az Internet Explorer megszokott billentyűparancsait.
 
