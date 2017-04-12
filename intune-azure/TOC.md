@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## Alkalmazások kezelése
 ### [Alkalmazások hozzáadása](manage-apps/add-apps.md)
-#### [Androidos üzletági alkalmazások](manage-apps/android-lob-app.md)
 #### [Androidos áruházbeli alkalmazások](manage-apps/android-store-app.md)
-#### [iOS rendszerhez készült üzletági alkalmazások](manage-apps/ios-lob-app.md)
 #### [iOS rendszerhez készült áruházbeli alkalmazások](manage-apps/ios-store-app.md)
 #### [Webalkalmazások](manage-apps/web-app.md)
 #### [Windows Phone 8.1-es áruházbeli alkalmazások](manage-apps/windows-phone-8-1-store-app.md)
