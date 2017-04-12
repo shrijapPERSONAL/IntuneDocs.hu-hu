@@ -31,17 +31,16 @@
 ### [Az MDM-szolgáltató beállítása](enroll-devices/set-mdm-authority.md)
 ## Tervezés és kialakítás
 ### [Apple MDM push-tanúsítvány beszerzése](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Apple DEP-token beszerzése](enroll-devices/get-apple-dep-token.md)
 ### [Az iOS-eszközök regisztrálási módjának kiválasztása](enroll-devices/choose-ios-enrollment-method.md)
 ## Cél
 ### [Licencek kiosztása a felhasználók számára](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Androidos eszközök regisztrálása](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS rendszerű eszközök regisztrálása
-#### [Beállítási asszisztens használata az iOS-eszközök regisztrálásához](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [iOS-eszközök regisztrálása közvetlen regisztrációval](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Az Apple Configurator beállítási asszisztense](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator – közvetlen regisztrálás](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Apple Configurator-sorozatszámok hozzáadása](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [iOS-eszközök regisztrálása a készülékregisztrációs program segítségével](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Eszközök regisztrálása az eszközregisztráció-kezelővel](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Eszközregisztráció-kezelő](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS-eszközök regisztrálása](enroll-devices/enroll-macos-devices.md)
 ### [Windows-eszközök regisztrálása](enroll-devices/enroll-windows-devices.md)
 ### Az eszközregisztráció felügyelete
