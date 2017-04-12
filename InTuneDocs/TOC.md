@@ -24,7 +24,6 @@
 ### [A Munkahelyi portál testreszabása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Eszközök regisztrálása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfigurálás utáni feladatok](get-started/post-configuration-tasks.md)
-## [Áttérés az Intune-ra](get-started/migrate-to-intune.md)
 ## További lépések
 ### [Céges adatszivárgások megelőzése az Office 365 alkalmazásokban](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Céges adatok védelme adattitkosítással](get-started/protect-data-encryption.md)
