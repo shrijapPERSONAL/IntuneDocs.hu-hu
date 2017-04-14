@@ -50,7 +50,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
 
     ![Aláíró tanúsítvány exportálása](./media/wit-walk-cert2.gif)
 
-    A **Tanúsítványexportáló varázslóban**válassza az **Igen, a titkos kulcs exportálását választom** lehetőséget, majd kattintson a **Tovább**gombra. Válassza ki a **Személyes információcsere - PKCS #12 (*.PFX)** lehetőséget, majd jelölje be a **Minden tanúsítvány felvétele a tanúsítványláncba, ha lehetséges** jelölőnégyzetet. Fejezze be a varázslót. További tudnivalókért lásd: [Tanúsítvány exportálása a titkos kulccsal](http://go.microsoft.com/fwlink/?LinkID=203031).
+    A **Tanúsítványexportáló varázslóban**válassza az **Igen, a titkos kulcs exportálását választom** lehetőséget, majd kattintson a **Tovább**gombra. Válassza ki a **Személyes információcsere - PKCS #12 (.PFX)** lehetőséget, majd jelölje be a **Minden tanúsítvány felvétele a tanúsítványláncba, ha lehetséges** jelölőnégyzetet. Fejezze be a varázslót. További tudnivalókért lásd: [Tanúsítvány exportálása a titkos kulccsal](http://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Az alkalmazás feltöltése az Intune-ba**<br>
     Töltse fel az alkalmazás aláírt fájlját és a kódaláíró tanúsítványt, így elérhetővé téve az alkalmazást a végfelhasználók számára.

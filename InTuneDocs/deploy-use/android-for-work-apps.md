@@ -51,7 +51,7 @@ Ha saját üzletági (LOB) alkalmazásokat hozott létre, azokat is telepítheti
 1. Nyissa meg a Google Play Developer Console-t a [play.google.com/apps/publish](https://play.google.com/apps/publish) címen.
 2. Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot. Az első bejelentkezés előtt regisztrálni kell, továbbá megfizetni a Google Developer-program regisztrációs díját.
 3. A konzolon válassza az **Add new application** (Új alkalmazás hozzáadása) elemet.
-4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját szervezet tagjai számára (<szervezet neve>)**) lehetőséget, ahogy alább is látható.<br>
+4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját szervezet tagjai számára (<szervezet neve>)) lehetőséget, ahogy alább is látható.<br>
   ![Az alkalmazás elérhetővé tétele csak a saját szervezet számára beállítás](media/restrict.png)<br>
 Ezzel gondoskodhat róla, hogy az alkalmazás csak az Ön szervezete számára legyen elérhető, a Google Play áruház nyilvános területein ne.
 További információt az androidos alkalmazások feltöltéséről és közzétételéről a [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469) súgóközpontban talál.
