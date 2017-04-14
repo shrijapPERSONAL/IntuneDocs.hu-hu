@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: 1c36ab91a3657cccc51d7db58068a02c73c48cb8
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -27,6 +27,6 @@ Ez a témakör segít azoknak a rendszergazdáknak, akik készen állnak arra, h
 
 Az útmutató tartalma:
 - [Rövid útmutató az Intune-hoz](start-with-a-paid-subscription-to-microsoft-intune.md) – Részletes útmutatás a próba-előfizetés tesztelési szakaszából nagyvállalati felügyeletre való váltásról, illetve az új munkahelyi előfizetés beállításáról
-- [Áttérés az Intune-ra](migrate-to-intune.md) – Ez az útmutató azt ismerteti, hogy miképpen térhet át meglévő vállalati mobileszköz-felügyeleti megoldásáról az Intune-ra
+- [Áttérés az Intune-ra](https://docs.microsoft.com/intune/plan-design/intune-mdm-migration-guide) – Ez az útmutató azt ismerteti, hogy miképpen térhet át meglévő vállalati mobileszköz-felügyeleti megoldásáról az Intune-ra
 - [Következő lépések az Intune-nal](prevent-company-data-leaks-from-Office-365-mobile-apps.md) – Az Intune-ban gyakran használt műveletek áttekintése és következő lépései
 

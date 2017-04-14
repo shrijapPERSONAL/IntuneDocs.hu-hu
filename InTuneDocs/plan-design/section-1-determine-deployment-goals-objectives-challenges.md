@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 A jó telepítési tervhez legelőször is meg kell határozni munkahelye telepítési céljait, célkitűzéseit, valamint a lehetséges kihívásokat. Minden munkahely egyedi, saját célokkal, célkitűzésekkel és kihívásokkal. Az alábbiakban mindegyik kérdést részletesen is megtárgyaljuk.
 
-## <a name="deployment-goals"></a>Telepítési célok
+## <a name="deployment-goals"></a>Üzembe helyezés céljai
 
 Telepítési céloknak a Microsoft Intune vállalaton belüli alkalmazásával megvalósuló hosszú távú eredmények tekintendők. Az alábbiakban egy munkahely Intune-telepítési céljait, valamint azok leírását és üzleti értékét bemutató példák találhatók.
 
@@ -56,7 +56,7 @@ Telepítési céloknak a Microsoft Intune vállalaton belüli alkalmazásával m
 
     -    **Üzleti érték:** Az erőforrások hatékony felhasználásával a vállalkozás más területeken is befektethet, hatékonyabban versenyezhet, valamint jobb szolgáltatásokat nyújthat ügyfeleinek.
 
-## <a name="deployment-objectives"></a>A telepítés célkitűzései
+## <a name="deployment-objectives"></a>Üzembe helyezés feladatai
 
 A telepítés célkitűzései olyan műveletek, amelyekkel az adott munkahely elérheti a Microsoft Intune telepítésének céljait. Az alábbiakban egy munkahely telepítési célkitűzéseire, valamint azok megvalósítására talál példákat.
 
@@ -76,7 +76,7 @@ A telepítés célkitűzései olyan műveletek, amelyekkel az adott munkahely el
 <br>
     -   **Végrehajtás:** Regisztrálja és felügyelje az eszközöket Microsoft Intune-ban, így alkalomadtán távolról is törölheti a vállalati adatokat és erőforrásokat.
 
-## <a name="deployment-challenges"></a>A telepítés kihívásai
+## <a name="deployment-challenges"></a>Üzembe helyezés kihívásai
 
 A telepítés kihívásai kiemelt fontossággal bírnak a cégek életében, és előfordulhat, hogy negatív hatást gyakorolhatnak magára a telepítésre. Olykor ezek régi projekteknél fellépő múltbéli problémákkal kapcsolatosak, most pedig szeretné megelőzni a jelenlegi telepítéskor esetlegesen felmerülő újakat. Az alábbiakban az egyes munkahelyek Microsoft Intune-telepítési kihívásai és azok lehetséges megoldásai találhatók.
 
@@ -92,7 +92,7 @@ A telepítés kihívásai kiemelt fontossággal bírnak a cégek életében, és
 <br>
     -   **Megoldás:** Bár bizonyára izgatottan várja, hogy belevágjon a projektbe, gondoskodjon arról, hogy pontosan meghatározza a céljait és törekvéseit. Ezeket foglalja bele valamennyi tájékoztatási és képzési tevékenységbe, hogy a felhasználók tisztában legyenek azzal, miért választotta a szervezet az Intune-t.
 
-## <a name="next-section"></a>Következő szakasz
+## <a name="next-steps"></a>További lépések
 
 Most, hogy már meghatározta a telepítési célokat, célkitűzéseket és a lehetséges kihívásokat, áttérhet a következő szakaszra: [Tipikus használatieset-forgatókönyvek](section-2-identify-use-case-scenarios.md).
 
