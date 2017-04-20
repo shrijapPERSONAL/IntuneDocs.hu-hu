@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Ez a témakor azt mutatja be, hogy miképpen tehetik lehetővé az Intune-rendszergazdák a mobileszközök regisztrálását. Az Intune-nak a telefonján való használatáról a [Munkavégzés felügyelt eszközökkel](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) című cikk nyújt tájékoztatást. 
+Ez a témakor azt mutatja be, hogy miképpen tehetik lehetővé az Intune-rendszergazdák a mobileszközök regisztrálását. Az Intune-nak a telefonján való használatáról a [Munkavégzés felügyelt eszközökkel](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions) című cikk nyújt tájékoztatást.
 
 Az Intune-nal történő mobileszköz-felügyelet beállításához először meg kell adnia a *mobileszköz-kezelő szolgáltatót* (ez azonosítja azt a szolgáltatást, amely felügyelheti a fiókjához tartozó eszközöket). Ez az útmutató abból indul ki, hogy Ön az Intune szolgáltatást fogja használni a System Center Configuration Manager helyett. A mobileszköz-kezelő szolgáltató beállítása után engedélyezheti a különféle eszközplatformok felügyeletét, majd regisztrálhatja az eszközöket a Munkahelyi portál alkalmazásban.
 
@@ -49,9 +50,9 @@ A regisztrációt engedélyezni kell az iOS-, a Mac- és az Android for Work-esz
 
 Engedélyezze mobileszköz-kezelést a felügyelni kívánt eszközplatformra vonatkozóan. A követelmények a platformtól függően eltérőek:
 
--  [iOS és macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Window 10 Mobile és Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS és macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 és Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Windowsos PC](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune ügyfélszoftver)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 A regisztráció engedélyezését követően a felhasználók letölthetik az eszközükre a Munkahelyi portál alkalmazást, és elvégezhetik az eszköz regisztrálását.
@@ -60,18 +61,12 @@ A regisztráció engedélyezését követően a felhasználók letölthetik az e
 A [céges eszközök regisztrálásának](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) különféle módozatait is engedélyezheti:
 - [Apple Device Enrollment Program (Apple Készülékregisztrációs program)](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Regisztrálás az Apple Configurator és a Beállítási asszisztens segítségével](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Regisztrálás az Apple Configurator és a Beállítási asszisztens segítségével](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator – közvetlen regisztráció](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Eszközregisztráció-kezelő](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>További lépések
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* utolsó lépését. Most, hogy a kezdeti konfigurálást befejezte, további MDM-funkciók engedélyezését is fontolóra veheti.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Eszközök regisztrálása**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Konfigurációt követő feladatok** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

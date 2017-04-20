@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ Az alábbi lépésekkel hozhat létre alkalmazásvédelmi szabályzatokat:
 
     ![A megadott alkalmazások és a beállítások a Szabályzat hozzáadása panelen – képernyőfelvétel](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a felhasználók számára ekkor még nincs telepítve. A szabályzatok életbe léptetéséről a következő, „Szabályzat telepítése a felhasználók számára” című szakasz nyújt tájékoztatást.
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a f
 > -   Mindkét szabályzatot ugyanahhoz az alkalmazáshoz rendeli.
 > -   Ennek eredményeképp az Azure-konzolon létrehozott szabályzat elsőbbséget kap, így a másolás engedélyezve lesz.
 > -   Azonban az Intune-konzolon megjelenő állapot és jelentések szerint a másolás tiltott, ami nem felel meg a valóságnak.
+
+## <a name="line-of-business-lob-apps-optional"></a>Üzletági (LOB) alkalmazások (nem kötelező)
+
+Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok létrehozásakor általánosan fel lehet venni üzletági alkalmazásokat az Intune-ba. Így lehetőség nyílik arra is, hogy a MAM SDK-val alkalmazásvédelmi szabályzatokat definiáljon üzletági alkalmazásokhoz a teljes körű alkalmazástelepítési jogosultságok megkövetelése nélkül.
+
+> [!TIP] 
+> Az [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) munkafolyamatán végighaladva is fel lehet venni üzletági alkalmazásokat az Intune-ba.
+
+> [!IMPORTANT]
+> Ha a felhasználóknak csak MAM-alkalmazások telepítésére van konkrét engedélyük, olyan teljes körű alkalmazástelepítési jogosultságuk viszont nincs, amellyel tetszőleges alkalmazást telepíthetnének az Intune-ba, akkor nem tudják végigkövetni az Intune SDK munkafolyamatát, de a MAM alkalmazásvédelmi szabályzatok létrehozására szolgáló munkafolyamatával felvehetik üzletági alkalmazásaikat.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>Üzletági alkalmazások felvétele (iOS és Android)
+
+1.  A Házirend hozzáadása panelen az **Alkalmazások** konfigurálása elemet választva nyissa meg az Alkalmazások panelt.
+
+    ![A MAM Házirend hozzáadása panele](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Kattintson a **További alkalmazások** elemre, majd írja be a **Csomagazonosító** (iOS-en) vagy a **package ID** (Androidon) értékét, majd a Kiválasztás gombra kattintva adja meg az üzletági alkalmazásokat.
+
+    ![A MAM További alkalmazások panele](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>Üzletági alkalmazások felvétele (Windows)
+
+> [!IMPORTANT] 
+> Új alkalmazásvédelmi szabályzat létrehozásakor válassza a Windows 10 értéket a platformok listájából.
+
+1.  A Házirend hozzáadása panelen az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** lehetőséget választva nyissa meg az Engedélyezett vagy a Mentesített alkalmazások panelt.
+
+    > [!NOTE]
+    > 
+    - **Engedélyezett alkalmazások:** ezeknek be kell tartaniuk az adott szabályzatot.
+    - **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a vállalati adatokhoz.
+<br></br>
+2. Az Engedélyezett vagy a Mentesített alkalmazások panelen válassza az **Alkalmazások felvétele** lehetőséget. Felveheti a Microsoft ajánlott alkalmazásait, áruházbeli és asztali alkalmazásokat.
+
+    a.  **Ajánlott alkalmazások:** a szabályzatba egyszerűen importálható (leginkább Office-) alkalmazásokból előre összeállított lista.
+
+    b.  **Áruházbeli alkalmazások:** a rendszergazda a Windows Áruházból bármilyen alkalmazást felvehet a szabályzatba.
+
+    c.  **Asztali Windows-alkalmazások:** a rendszergazda bármilyen hagyományos asztali Windows-alkalmazást (exe, dll stb.) felvehet a szabályzatba.
 
 ## <a name="deploy-a-policy-to-users"></a>Szabályzat telepítése a felhasználók számára
 
@@ -181,9 +220,4 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 ### <a name="see-also"></a>További információ
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

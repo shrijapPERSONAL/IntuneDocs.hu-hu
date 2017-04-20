@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,50 +27,66 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes vezeték nélkül regisztrálni a készülékregisztrációs programon (DEP) keresztül vásárolt iOS-eszközöket. A profil olyan felügyeleti beállításokat tartalmaz, amelyeket eszközökre alkalmazhat. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz. A DEP programon keresztül regisztrált eszközök regisztrációját a felhasználók nem törölhetik.
+Ez a témakör az [Apple készülékregisztrációs programja (DEP)](https://deploy.apple.com) keretében vásárolt céges tulajdonú iOS-es eszközök regisztrálásában nyújt segítséget a rendszergazdáknak. A Microsoft Intune képes olyan regisztrációs profilt telepíteni, amely a DEP-eszközöket távolról regisztrálja, így a rendszergazdának nem kell az egyes felügyelt eszközökhöz személyesen hozzáférnie. A DEP-profilban a regisztráció során eszközökre alkalmazandó felügyeleti beállítások vannak. A regisztrációs csomag telepítősegéd-beállításokat is tartalmazhat az eszközhöz.
 
 >[!NOTE]
->Ezt a regisztrációs módszert nem lehet használni az [eszközregisztráció-kezelői](enroll-devices-using-device-enrollment-manager.md) módszerrel.
+>A DEP-regisztrációt nem lehet használni az [eszközregisztráció-kezelővel](enroll-devices-using-device-enrollment-manager.md).
+>Ha a felhasználók a Céges portál alkalmazással regisztrálják iOS-es eszközeiket, az eszközök sorozatszámait pedig később importálják és egy DEP-profilhoz rendelik, akkor az eszközök Intune-regisztrációja megszűnik.
 
-Ahhoz, hogy a vállalat által birtokolt eszközöket az Apple készülékregisztrációs programjával (DEP) lehessen kezelni, a szervezetnek csatlakoznia kell az Apple DEP-hez, és a programon keresztül kell beszereznie az eszközöket. A folyamat részletei a következő webhelyen érhetők el:  [https://deploy.apple.com](https://deploy.apple.com). A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
+**A DEP-regisztráció lépései**
+1. [Apple DEP-token beszerzése](#get-the-apple-dep-certificate)
+2. [DEP-profil létrehozása](#create-anapple-dep-profile)
+3. [Apple DEP-sorozatszám hozzárendelése az Intune-kiszolgálóhoz](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [DEP által felügyelt eszközök szinkronizálása](#synchronize-dep-managed-devices)
+5. Eszközök terjesztése a felhasználóknak
 
-A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó [DEP-jogkivonat](get-apple-dep-token.md) birtokában regisztrálhatja a DEP programba. Ez a jogkivonat lehetővé teszi, hogy az Intune szinkronizálja a DEP-ben résztvevő, vállalat által birtokolt eszközök adatait. A token ezen felül lehetővé teszi, hogy az Intune Regisztrációs profilokat töltsön fel az Apple-nek, és a feltöltött profilokhoz eszközöket rendeljen hozzá.
 
-Az iOS-eszközök regisztrálásának további módjairól [Az iOS-eszközök regisztrálási módjának kiválasztása](choose-ios-enrollment-method.md) című témakörben olvashat.
 
-## <a name="prerequisites"></a>Előfeltételek
+## <a name="get-the-apple-dep-certificate"></a>Az Apple DEP-tanúsítvány beszerzése
+A vállalati tulajdonban lévő iOS-eszközöket csak egy, az Apple-től származó DEP-tanúsítványfájl (.p7m-fájl) birtokában regisztrálhatja az Apple készülékregisztrációs programjában. Ez a jogkivonat lehetővé teszi, hogy az Intune szinkronizálja a DEP-ben résztvevő, vállalat által birtokolt eszközök adatait. A jogkivonat ezen felül lehetővé teszi, hogy az Intune regisztrációs profilokat töltsön fel az Apple számára, és a feltöltött profilokhoz eszközöket rendeljen hozzá.
 
-Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az alábbi előfeltételeket:
+Ahhoz, hogy a vállalat által birtokolt iOS-eszközöket a DEP segítségével lehessen kezelni, a szervezetnek csatlakoznia kell az Apple DEP-hez, és a programon keresztül kell beszereznie az eszközöket. A folyamat részletei a következő webhelyen érhetők el: https://deploy.apple.com. A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
 
-- [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
-- [Csoportok létrehozása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Felhasználói licencek hozzárendelése az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Apple MDM push-tanúsítvány beszerzése](get-an-apple-mdm-push-certificate.md)
-- [Apple DEP-token beszerzése](get-apple-dep-token.md)
+> [!NOTE]
+> Ha az Intune-bérlőt a klasszikus Intune-konzolról migrálták az Azure Portalra, és a migráció során Ön törölt egy Apple DEP-jogkivonatot az Intune felügyeleti konzolról, akkor lehet, hogy a DEP-jogkivonat vissza lett állítva az Intune-fiókba. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Apple DEP-profil létrehozása az eszközökhöz
+
+
+
+**1. lépés Töltsön le egy nyilvános kulcsú Intune-tanúsítványt (ez szükséges az Apple DEP-token létrehozásához).**<br>
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Az Intune panelen válassza az **Eszközregisztráció** > **Apple DEP-token** lehetőséget.
+2. Válassza a **Nyilvános kulcsú tanúsítvány letöltése** elemet, és mentse helyben a letöltött titkosításikulcs-fájlt (.pem). A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
+
+**2. lépés Töltsön le egy Apple DEP-tokent a megfelelő Apple-webhelyről.**<br>
+Válassza a [DEP-token létrehozása az Apple-telepítőprogramokkal](https://deploy.apple.com) (https://deploy.apple.com) elemet, és jelentkezzen be vállalata Apple ID-jával. A későbbiekben ezt az Apple ID-t használhatja a DEP-token megújításához.
+
+   1.  Az [Apple Device Enrollment Program](https://deploy.apple.com) portálján válassza a **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Servers** (Kiszolgálók kezelése), majd az **Add MDM Server** (MDM-kiszolgáló felvétele) lehetőséget.
+   2.  Az **MDM Server Name** (MDM-kiszolgáló neve) mezőben adja meg az MDM-kiszolgáló nevét, majd kattintson a **Next** (Tovább) gombra. A kiszolgálónév Önnek segít a mobileszköz-felügyeleti (MDM-) kiszolgáló azonosításában, nem ez a Microsoft Intune-kiszolgáló URL-címe vagy neve.
+   3.  Megnyílik az **Add &lt;Kiszolgálónév&gt;** (<Kiszolgálónév> hozzáadása) párbeszédpanel. Kattintson a **Choose File…** (Fájl kiválasztása…) elemre a .pem-fájl feltöltéséhez, majd válassza a **Next** (Tovább) lehetőséget.
+   4.  Az **Add &lt;Kiszolgálónév&gt;** (<Kiszolgálónév> hozzáadása) párbeszédpanelen megjelenik a **Your Server Token** (Az Ön kiszolgálói jogkivonata) hivatkozás. Töltse le a kiszolgálói jogkivonatfájlt (.p7m) a számítógépre, majd válassza a **Done**(Kész) lehetőséget.
+
+**3. lépés Adja meg az Apple DEP-token létrehozásához használt Apple ID-t. Ez az azonosító használható az Apple DEP-token megújításához.**
+
+**4. lépés Tallózással keresse meg a feltölteni kívánt Apple DEP-tokent. Az Intune automatikusan szinkronizál a DEP-fiókjával.**<br>
+Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gombra, és válassza a **Feltöltés** elemet. A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és felügyelje az iOS-eszközöket a szabályzatoknak a regisztrált mobileszközökre való leküldésével.
+
+## <a name="create-an-apple-dep-profile"></a>Apple DEP-profil létrehozása
 
 Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmazott beállításokat. A következő lépésekkel hozhat létre eszközregisztrációs profilt a DEP eszközzel regisztrált iOS-eszközök számára.
 
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-
 2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
-
 3. Az **Apple Device Enrollment Program (DEP) beállításainak kezelése** területen válassza a **DEP-profilok** lehetőséget.
-
 4. Az **Apple DEP-profilok** panelen válassza a **Létrehozás** lehetőséget.
-
 5. A **Regisztrációs profil létrehozása** panelen adja meg a profil nevét és leírását.
-
 6. A **Felhasználói affinitás** lehetőségnél adja meg, hogy a profilt használó eszközök felhasználói affinitással vagy anélkül lesznek-e regisztrálva.
 
  - **Regisztrálás felhasználói affinitással** – Az eszközt össze kell kapcsolni egy felhasználóval a kezdeti beállítás során, majd engedélyezhető számára a vállalati adatok és e-mailek elérése. A felhasználói affinitást a DEP programmal felügyelt olyan eszközöknél kell választani, amelyek felhasználók tulajdonában vannak, de a Munkahelyi portált kell rajtuk használni például az alkalmazások telepítéséhez. Ügyeljen rá, hogy a többtényezős hitelesítés (MFA) nem működik a regisztráció közben olyan DEP-eszközökön, amelyekre felhasználói affinitás érvényes. A regisztrációt követően az ilyen eszközökön is az elvárásoknak megfelelően működik az MFA. Az első bejelentkezéskor jelszómódosításra kötelezett új felhasználók nem kaphatnak értesítést a DEP-eszközökön történő regisztráció során. Ezen túlmenően a lejárt jelszavú felhasználók nem kapnak értesítést a jelszó visszaállításáról a DEP-regisztráció során, és a jelszó visszaállítását egy másik eszközről kell végrehajtaniuk.
 
     >[!NOTE]
-    >A felhasználói affinitással rendelkező DEP funkció esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot.
+    >A felhasználói affinitással rendelkező DEP funkció esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a [WS-Trust 1.3 Username/Mixed végpontot](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints). [További információ a WS-Trust 1.3-ról](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Regisztrálás felhasználói affinitás nélkül** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Munkahelyi portál alkalmazást is beleértve, nem fognak működni.
+ - **Regisztrálás felhasználói affinitás nélkül** – Az eszköz nem lesz felhasználóhoz társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt Munkahelyi portál alkalmazást is beleértve, nem fognak működni.
 
 7. Válassza az **Eszközfelügyeleti beállítások** lehetőséget, konfigurálja az alábbi beállításokat, majd válassza a **Mentés** elemet:
 
