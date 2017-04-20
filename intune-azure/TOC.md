@@ -43,6 +43,7 @@
 ### [Eszközregisztráció-kezelő](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS-eszközök regisztrálása](enroll-devices/enroll-macos-devices.md)
 ### [Windows-eszközök regisztrálása](enroll-devices/enroll-windows-devices.md)
+### [Windows-eszközök tömeges regisztrálása](enroll-devices/bulk-enroll-windows.md)
 ### Az eszközregisztráció felügyelete
 #### [Használati feltételek létrehozása](enroll-devices/create-terms-and-conditions.md)
 #### [Regisztrációs korlátozások beállítása](enroll-devices/set-enrollment-restrictions.md)
@@ -57,6 +58,7 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Cél
 ### [Teljes vagy szelektív törlés alkalmazása](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [Androidos eszközök távirányítása](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Felhasználók kezelése
@@ -75,7 +77,9 @@
 ## Alkalmazások kezelése
 ### [Alkalmazások hozzáadása](manage-apps/add-apps.md)
 #### [Androidos áruházbeli alkalmazások](manage-apps/android-store-app.md)
+#### [Androidos üzletági alkalmazások](manage-apps/android-lob-app.md)
 #### [iOS rendszerhez készült áruházbeli alkalmazások](manage-apps/ios-store-app.md)
+#### [iOS-es üzletági alkalmazások](manage-apps/ios-lob-app.md)
 #### [Webalkalmazások](manage-apps/web-app.md)
 #### [Windows Phone 8.1-es áruházbeli alkalmazások](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows Áruházbeli alkalmazások](manage-apps/windows-store-app.md)
@@ -109,8 +113,12 @@
 ### [Eszközprofilok konfigurálása](configure-devices/how-to-create-device-profiles.md)
 
 ### [Eszközfunkciók konfigurálása](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [AirPrint iOS és MacOS rendszerekre](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [AirPlay iOS rendszerre](configure-devices/airplay-settings-for-ios-devices.md)
+#### [Kezdőképernyő elrendezése iOS-hez](configure-devices/home-screen-settings-for-ios.md)
+#### [Alkalmazásértesítések iOS-hez](configure-devices/app-notification-settings-for-ios.md)
+#### [Megosztott eszközök iOS-hez](configure-devices/shared-device-settings-for-ios.md)
+#### [Webtartalomszűrő iOS-hez](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Eszközkorlátozások beállítása](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +128,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [-mail-beállítások megadása](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +151,7 @@
 #### [Windows 8.1 és Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [A Windows 10-kiadás frissítési beállításainak konfigurálása](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [A Windows 10 oktatási funkcióinak konfigurálása](configure-devices/how-to-configure-education-settings.md)
 ### [A Vállalati Windows Update beállításainak konfigurálása](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Tanúsítványok konfigurálása](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +169,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [Eszközprofilok hozzárendelése](configure-devices/how-to-assign-device-profiles.md)
 ### [Eszközprofilok figyelése](configure-devices/how-to-monitor-device-profiles.md)
