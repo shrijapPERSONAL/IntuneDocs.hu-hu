@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 145fd465eb837a4f1a2a62358912fb8e824d4913
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
+ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -51,6 +51,59 @@ ms.lasthandoff: 03/15/2017
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
 
-## <a name="sign-the-windows-10-company-portal-app"></a>A Windows 10-es Céges portál alkalmazás aláírása
-Olyan ügyfelek esetében, akiknek le kell tölteniük és közvetlenül kell telepíteniük a Windows 10-es Céges portál alkalmazást, mostantól rendelkezésre áll egy parancsfájl, amely egyszerűbbé és hatékonyabbá teszi az alkalmazások aláírását a szervezetnél. A parancsfájl letöltéséhez és használati útmutatójához tekintse meg a Windows 10-es Céges portálhoz készült [Microsoft Intune aláírási parancsfájlt](https://aka.ms/win10cpscript) a TechNet gyűjteményében.
+## <a name="manually-deploy-windows-10-company-portal-app"></a>A Windows 10-es Céges portál alkalmazás manuális telepítése
+A végfelhasználók a Windows Áruházból telepíthetik a Céges portál alkalmazást eszközkezelés és alkalmazástelepítés céljára. Ha azonban a cég megköveteli a Céges portál alkalmazás központi telepítését, Ön akkor is telepítheti manuálisan, közvetlenül az Intune-ból a Windows 10-es Céges portál alkalmazást, ha az Intune-t nem integrálta a Vállalati Windows Áruházzal.
+
+ > [!NOTE]
+ > Ha ezt a lehetőséget választja, manuális frissítést kell végrehajtania minden alkalommal, amikor új frissítés válik elérhetővé az alkalmazáshoz.
+
+1. Jelentkezzen be [Vállalati Windows Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
+2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
+3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
+![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](../media/Win10CP-all-devices.png)
+4. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 9 csomaggal, ahogy az alábbi ábrán látható.
+
+![Kép a letöltendő függőségi fájlokról ](../media/Win10CP-dependent-files.png)
+5. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (pl. C:&#92;Céges portál) a következőképpen felépített csomagokkal:
+  1. Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
+  ![APPXBUN fájllal mentett Függőségek mappa képe](../media/Win10CP-Dependencies-save.png)
+  2. Helyezze el a kilenc függőségcsomagot a Függőségek mappában.  
+  Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt.  
+  ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és telepítheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](../media/Win10CP-error-message.png)
+6. Lépjen vissza az Intune-ba, és töltse fel a Céges portál alkalmazást új alkalmazásként. Telepítse szükséges alkalmazásként a kívánt felhasználói célcsoport számára.  
+
+Itt talál további információkat arról, hogy az Intune miképpen kezeli az univerzális alkalmazások függőségeit: [appxbundle telepítése függőségekkel a Microsoft Intune MDM-en keresztül](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Hogyan frissítsem a Céges portált olyan felhasználói eszközökön, amelyeken telepítve vannak az áruházból származó régebbi alkalmazások?
+Ha a felhasználók már telepítették az áruházból a Windows 8.1-es vagy a Windows Phone 8.1-es Céges portál alkalmazást, az eszközöknek automatikusan, saját vagy felhasználói beavatkozás nélkül is frissíteniük kell az új verzióra. Ha a frissítés elmarad, kérje meg a felhasználókat, hogy ellenőrizzék, engedélyezték-e az áruház-alkalmazások automatikus frissítését az eszközükön.   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hogyan frissítsem a közvetlen telepítésű, Windows 8.1-es Céges portál alkalmazást Windows 10-es Céges portál alkalmazásra?
+A javasolt áttelepítési út a Windows 8.1-es Céges portál alkalmazás telepítési műveletének átállítása az „Eltávolítás” lehetőségre, ami törli az alkalmazás telepítését. Miután ez megtörtént, a Windows 10-es Céges portál alkalmazás a fenti lehetőségek bármelyikével telepíthető lesz.  
+
+Ha közvetlenül kell telepíteni az alkalmazást, és a Windows 8.1-es Céges portált a Symantec Tanúsítvány aláírása nélkül telepítette, a frissítéshez kövesse az Intune-on keresztül történő közvetlen telepítés fentebb leírt lépéseit.
+
+Ha közvetlenül kell telepíteni az alkalmazást, és a Windows 8.1-es Céges portált a Symantec kódaláíró tanúsítvány aláírásával telepítette, kövesse az alábbi részben olvasható lépéseket.  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Hogyan frissítsem az aláírt és közvetlen telepítésű Windows Phone 8.1-es Céges portál alkalmazást vagy Windows 8.1-es Céges portál alkalmazást a Windows 10-es Céges portál alkalmazásra?
+A javasolt áttelepítési út a Windows Phone 8.1-es Céges portál alkalmazás vagy a Windows 8.1-es Céges portál alkalmazás telepítési műveletének átállítása az „Eltávolítás” lehetőségre, ami törli az alkalmazás telepítését. Miután ez megtörtént, a Windows 10-es Céges portál alkalmazás a szokásos módon telepíthető.  
+
+Ellenkező esetben a frissítési út betartásának biztosításához a Windows 10-es Céges portál alkalmazás frissítésére és aláírására van szükség.  
+
+Az így aláírt és telepített Windows 10-es Céges portál alkalmazás esetében mindig meg kell ismételni ezt a folyamatot, ha az áruházban elérhetővé válik az alkalmazás új frissítése. Az alkalmazás nem frissül automatikusan az áruház frissítésekor.  
+
+Itt ismertetjük az alkalmazás aláírásának és telepítésének ezt a módját:
+
+1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) oldalról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10-hez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) oldalra.
+2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Windows Áruházból a fenti útmutató szerint.  
+3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
+
+|Paraméter | Leírás|
+| ------------- | ------------- |
+|InputWin10AppxBundle |Az appxbundle forrásfájl elérési útja |
+|OutputWin10AppxBundle |Az aláírt appxbundle fájl kimeneti útja.  Win81Appx A Windows 8.1 vagy Windows Phone 8.1 Céges portál (.APPX) fájl elérési útja.|
+|PfxFilePath |A Symantec vállalati mobil-kódaláíró tanúsítvány (.PFX) fájl elérési útja. |
+|PfxPassword| A Symantec vállalati mobil-kódaláíró tanúsítvány jelszava. |
+|PublisherId |A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.|
+|SdkPath | A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10|
+A parancsfájl kimenete a futtatás végeztével a Windows 10-es Céges portál alkalmazás aláírt verziója lesz. Ekkor az Intune-on keresztül telepítheti az alkalmazás aláírt verzióját LOB-alkalmazásként, ami frissíteni fogja a jelenleg telepített verziókat erre a új alkalmazásra.  
 

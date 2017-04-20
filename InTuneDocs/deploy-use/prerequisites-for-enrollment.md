@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Az eszközkezelés beállítása a következő platformokhoz:
 - [iOS és Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows rendszerű számítógépek és laptopok](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile és Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile és Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windowsos PC-k és laptopok](manage-windows-pcs-with-microsoft-intune.md) (Intune ügyfélszoftver)
 
 A [vállalati tulajdonban lévő eszközök is regisztrálását](manage-corporate-owned-devices.md) is engedélyezheti.
 
@@ -155,7 +155,7 @@ A regisztráció engedélyezését követően hozzáláthat ahhoz, hogy a kialak
 
 Ha nem a megfelelő MDM-szolgáltatót állította be, és szeretné azt megváltoztatni, kapcsolatba kell lépnie a Microsoft ügyfélszolgálatával. A beállítást egyedül nem fogja tudni megváltoztatni. Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, kérjük, tekintse át a következő információkat, amelyekből megtudhatja, hogy a Microsoft ügyfélszolgálatának milyen adatokra lesz szüksége a beállítás megváltoztatásához.
 
-Az MDM-szolgáltató beállítását&3; módon lehet alaphelyzetbe állítani. Ezek közül a támogatási kérelmében azt a módot kell kiválasztania, amelyik a helyzetére vonatkozik. Ha az adott körülményt nem találja a felsorolásban, tájékoztassa a Microsoft ügyfélszolgálatát.
+Az MDM-szolgáltató beállítását 3 módon lehet alaphelyzetbe állítani. Ezek közül a támogatási kérelmében azt a módot kell kiválasztania, amelyik a helyzetére vonatkozik. Ha az adott körülményt nem találja a felsorolásban, tájékoztassa a Microsoft ügyfélszolgálatát.
 
 A Microsoft ügyfélszolgálata a következő információk megerősítésére fogja megkérni:
 
@@ -170,7 +170,7 @@ Ha az Intune-t és az Office 365-öt szinkronizált módban használja, mind a k
 Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lépéseket használva állítsa alaphelyzetbe az MDM-szolgáltatót.
 
 - Vonja ki az összes eszközt az Intune felügyeleti konzolja segítségével. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. 
-- Törölje a szolgáltatások közötti összekötőt (a **Felügyelet** > **Mobileszköz-kezelés** > **Microsoft Exchange** oldalon), vagy állítsa le az Exchange-összekötőt, ha korábban azt állította be. 
+- Törölje a szolgáltatások közötti összekötőt (a **Felügyelet** > **Mobileszköz-kezelés** > **Microsoft Exchange** oldalon), vagy állítsa le az Exchange-összekötőt, ha korábban azt állította be.
 - Távolítsa el a Készülékregisztráció-kezelő szerepkört a **Felügyelet** > **Készülékregisztráció-kezelő** oldalon.
 - Kapcsolja ki az Eszközcsoport-leképezést a **Felügyelet** > **Mobileszköz-kezelés** > **Eszközcsoport-leképezés** oldalon.
 - Törölje a tesztcélú telepítési kulcsokat a **Felügyelet** > **Mobileszköz-kezelés** > **Windows** > **Tesztcélú telepítés kulcsai** oldalon.
@@ -187,7 +187,7 @@ Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lép
 - Távolítsa el az összes felhasználót az Intune felhasználói csoportból. Jelöljön ki egy üres felhasználógyűjteményt az Intune-előfizetés számára, vagy távolítsa el az összes felhasználót a jelenleg megadott felhasználógyűjteményből.  Ellenőrizze a Cloudusersync.log naplófájlban, hogy az összes felhasználó el lett távolítva. 
 - Törölje a jelölést az iOS platform mellől az APNs-tanúsítvány eltávolításához.
 - Törölje az összes MDM-eszköz számára közzétett alkalmazást.
-- Törölje az összes MDM-eszközre vonatkozó szabályzatot. 
+- Törölje az összes MDM-eszközre vonatkozó szabályzatot.
 - Távolítsa el a Windows Intune-összekötőt a Configuration Manager konzoljáról (csak az R2 SP1 és korábbi verziók esetén érvényes).
 Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre kattint, majd a **Törlést** választja.
 - Indítsa újra az SMS Executive szolgáltatást.
@@ -196,18 +196,18 @@ Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Office 365-ről a Configuration Managerre
 
 1. Lépjen a [https://protection.office.com](https://protection.office.com) oldalra.
-2. Válassza a **Biztonsági házirendek** fület, majd az **Eszközkezelés** lehetőséget. 
+2. Válassza a **Biztonsági házirendek** fület, majd az **Eszközkezelés** lehetőséget.
 3. A **Szelektív törlés** segítségével vonja ki az összes eszközt. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. Ha a szelektív törlés nincsen engedélyezve, nincs szükség további műveletre.
-4. Válassza a **Biztonsági házirendek** fület, majd az **Eszközbiztonsági házirendek** lehetőséget. 
+4. Válassza a **Biztonsági házirendek** fület, majd az **Eszközbiztonsági házirendek** lehetőséget.
 5. Válassza a **Törlést** mindegyik házirend esetében. Ha a házirendek függő állapotban vannak nincs szükség további műveletre.
 
 >[!NOTE]
->Az iOS APNs-tanúsítványt nem lehet törölni, így az továbbra is a fiókhoz rendelve marad. 
+>Az iOS APNs-tanúsítványt nem lehet törölni, így az továbbra is a fiókhoz rendelve marad.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Az MDM-szolgáltató alaphelyzetbe állításának további lépései
 
-Miután a Microsoft ügyfélszolgálata ellenőrizte a vonatkozó ellenőrzőlista állapotát, az MDM-szolgáltató alaphelyzetbe állítása legfeljebb három munkanapot vehet igénybe, de általában egy napon belül megtörténik. 
+Miután a Microsoft ügyfélszolgálata ellenőrizte a vonatkozó ellenőrzőlista állapotát, az MDM-szolgáltató alaphelyzetbe állítása legfeljebb három munkanapot vehet igénybe, de általában egy napon belül megtörténik.
 
 >[!IMPORTANT]
->Előfizetését ne próbálja meg módosítani addig, amíg a Microsoft ügyfélszolgálata meg nem erősíti, hogy az alaphelyzetbe állítás sikeresen megtörtént! Az idő előtti konfigurációs változtatások adatsérülést okozhatnak és azt eredményezhetik, hogy nem fogja tudni használni az Intune szolgáltatást. 
+>Előfizetését ne próbálja meg módosítani addig, amíg a Microsoft ügyfélszolgálata meg nem erősíti, hogy az alaphelyzetbe állítás sikeresen megtörtént! Az idő előtti konfigurációs változtatások adatsérülést okozhatnak és azt eredményezhetik, hogy nem fogja tudni használni az Intune szolgáltatást.
 

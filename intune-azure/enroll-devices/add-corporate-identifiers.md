@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Rendszergazdaként Ön létrehozhat egy IMEI-számokat felsoroló, vesszővel tagolt (.csv formátumú) fájlt a céges tulajdonban lévő eszközök azonosítása céljából. Az egyes IMEI-számokhoz a listában adminisztrációs célból részleteket is meg lehet adni.
+
+A céges tulajdonú iOS-es eszközök feltöltött sorozatszámait vállalati regisztrációs profillal kell párosítani. Csak az Apple eszközregisztrációs programjával (DEP) vagy az Apple Configurator programmal regisztrált eszközök jelennek meg céges tulajdonúként. 
 
 ## <a name="create-a-csv-file"></a>CSV-fájl létrehozása
 Hozzon létre egy kétoszlopos, fejléc nélküli listát .csv formátumban. A baloldali oszlopban tüntesse fel az IMEI-azonosítót, a jobb oldaliban pedig a további adatokat. A részletek maximális hossza 128 karakter. A .csv-fájlok jelenleg legfeljebb 500 sorosak lehetnek.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Ezzel a megoldással csökkenthetők az alkalmazások különböző megvásárolt példányainak nyilvántartásával járó adminisztratív terhek.
 
 A Microsoft Intune segít az e program keretében vásárolt alkalmazások felügyeletében. Ehhez importálja a licencadatokat az App Store áruházból, figyelemmel kíséri, hogy hány licencet használt fel, és meggátolja, hogy több alkalmazáspéldányt használjon, mint amennyit vásárolt.
-
-> [!Important]
-> Az iOS Volume Purchase Program for Business (VPP) programon keresztül vásárolt alkalmazások licenceit az Intune jelenleg a felhasználókhoz, és nem az eszközökhöz rendeli. Emiatt az alkalmazás telepítéséhez a végfelhasználóknak meg kell adniuk Apple ID azonosítójukhoz tartozó jelszavukat.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Nagy mennyiségben vásárolt alkalmazások felügyelete iOS-eszközökön
 Az [Apple Volume Purchase Program for Business (VPP)](http://www.apple.com/business/vpp/) vagy az [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store) programon keresztül vásárolhat egyszerre több licencet az iOS-alkalmazásokhoz. Ehhez Apple VPP-fiókot kell beállítani az Apple webhelyén, és az Apple VPP-tokent fel kell tölteni az Intune-ba.  Ezután szinkronizálhatja a mennyiségi vásárlás adatait az Intune-nal, és nyomon követheti a mennyiségi programban vásárolt alkalmazás használatát.
@@ -71,8 +68,8 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 1. Az **Alkalmazásfelügyelet** munkafolyamatban válassza a **Felügyelet** > **Licencelt alkalmazások** elemet.
 2. Az alkalmazáslista panelen válassza ki azt az alkalmazást, amelyet szeretne hozzárendelni, és válassza a '**...**' > **Csoportok hozzárendelése**.
 3. Az *Alkalmazás neve*>- **Hozzárendelt csoportok** panelen válassza a **Felügyelet** > **Hozzárendelt csoportok** elemet.
-4. Válassza a **Hozzárendelt csoportok**, majd a **Csoportok kiválasztása** panelt, és jelölje ki azon Azure AD-csoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.
-Válassza a **Szükséges** hozzárendelési műveletet. A rendelkezésre álló telepítések jelenleg nem támogatottak.
+4. Válassza az **Assign Groups** (Csoportok hozzárendelése), majd a **Select groups** (Csoportok kijelölése) panelen jelölje ki azon Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.
+Válassza a **Szükséges** hozzárendelési műveletet. A rendelkezésre álló telepítések jelenleg nem támogatottak, az eszközcsoportokhoz való hozzárendelés pedig csak a 2017 januárja után létrehozott új bérlők esetében érhető el. Ha az Ön bérlője korábban jött létre, és nincs lehetősége a VPP-alkalmazásokat eszközcsoportokhoz rendelni, forduljon az Intune ügyfélszolgálatához.
 5. Ha elkészült, válassza a **Mentés** elemet.
 
 Lásd [az alkalmazások figyelésével](monitor-apps.md) foglalkozó útmutatót, amely az alkalmazás-hozzárendelések figyeléséhez nyújt segítséget.

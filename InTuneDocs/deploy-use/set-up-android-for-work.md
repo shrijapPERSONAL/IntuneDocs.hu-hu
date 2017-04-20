@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Az Android for Work-eszközök felügyeletének engedélyezéséhez létre kell hoznia egy Android for Work-kötést az Intune-ban. Az Android for Worköt támogató, de korábban normál Andriod-eszközként regisztrált eszközök regisztrációját törölni kell, majd újra kell regisztrálni őket.
+Az Android for Work-eszközök felügyeletének engedélyezéséhez létre kell hoznia egy Android for Work-kötést az Intune-ban. Az Android for Worköt támogató, de korábban normál Android-eszközként regisztrált eszközök regisztrációját törölni kell, majd újra kell regisztrálni őket.
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-kötés létrehozása az Intune-ban
 
@@ -34,7 +35,7 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
     Intune-rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd a **Konfigurálás** gombra kattintva nyissa meg a Google Play Android for Work-webhelyét. Ez egy új lapon nyílik meg a böngészőben.
 
 3. **Bejelentkezés a Google-fiókba**<br>
-   A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ez lehet az Intune-t felügyelő rendszergazdák közös Google-fiókja. Ezt a Google-fiókot használja a szervezet az alkalmazások felügyeletére és közzétételére a Play for Work konzolon.
+   A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot használja a szervezet összes rendszergazdája az alkalmazások felügyeletére és közzétételére a Play for Work konzolon.
 
 4. **A szervezet adatainak megadása**<br>
    Az **Organization name** (Szervezet neve) mezőben adja meg a vállalat nevét. Az **Enterprise mobility management (EMM) provider** (Nagyvállalati mobileszköz-felügyeleti (EMM-) szolgáltató) mezőben a *Microsoft Intune* értéknek kell megjelennie. Fogadja el azAndroid for Work-szerződést, majd kattintson a **Confirm** (Jóváhagyás) gombra. Megtörténik a kérelem feldolgozása.
@@ -42,12 +43,12 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work-regisztrációs beállítások megadása
    Az Android for Work csak bizonyos Android-eszközökön támogatott. Az [Android for Workre vonatkozó követelményeket](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window") megtalálja a Google webhelyén.  Az Android for Worköt támogató eszközök mindegyike támogatja a hagyományos Android-alapú felügyeletet is.  Az Intune-ban megadhatja, hogyan történjen az Android for Worköt támogató eszközök felügyelete:
 
-   - **Minden eszköz felügyelete Android-eszközként** – (Letiltva) Minden Android-eszköz, az Android for Worköt támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
-   - **Minden támogatott eszköz felügyelete Android for Work-eszközként** – (Engedélyezve) Az Android for Worköt támogató eszközök mindegyike Android for Work-eszközként lesz regisztrálva. Az Android for Worköt nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
-   - **Csak a megadott csoportokban szereplő felhasználók támogatott eszközeinek felügyelete Android for Work-eszközként** – (Tesztelés) Beállítható az Android for Work-alapú felügyelet a felhasználók egy korlátozott halmaza számára. Csak a kijelölt csoportok tagjai által regisztrált, Android for Worköt támogató eszközök lesznek Android for Work-eszközként lesz regisztrálva. Minden más eszköz Android-eszközként lesz regisztrálva.
+   - **Minden eszköz felügyelete Android-eszközként** – Minden Android-eszköz, az Android for Worköt támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
+   - **Minden támogatott eszköz felügyelete Android for Work-eszközként** – Az Android for Worköt támogató eszközök mindegyike Android for Work-eszközként lesz regisztrálva. Az Android for Worköt nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
+   - **Csak a megadott csoportokban szereplő felhasználók támogatott eszközeinek felügyelete Android for Work-eszközként** – Az Android for Work-alapú felügyeletet beállíthatja a felhasználók egy korlátozott halmaza számára. Csak a kijelölt csoportok tagjai által regisztrált, Android for Worköt támogató eszközök lesznek Android for Work-eszközként lesz regisztrálva. Minden más eszköz Android-eszközként lesz regisztrálva. Ez főleg Android for Workös próbák során hasznos.
 
 ## <a name="next-steps-for-android-for-work"></a>Az Android for Work-alapú felügyelet további lépései
-Az Android for Work-kötés és -beállítások konfigurálása után a következőket tudja felügyelni:
+Az Android for Work-kötés és -beállítások konfigurálása után a következőkre lesz lehetősége:
 - [Android for Work-alkalmazások telepítése](android-for-work-apps.md)
 - [Android for Work konfigurációs szabályzatok létrehozása](android-for-work-policy-settings-in-microsoft-intune.md)
 
@@ -62,9 +63,4 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Ha az
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez kattintson az **Igen** gombra.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
