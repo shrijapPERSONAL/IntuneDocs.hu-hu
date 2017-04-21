@@ -15,9 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
-ms.lasthandoff: 12/15/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -90,7 +90,7 @@ Az újonnan létrehozott csoport megjelenik a **Csoportok** munkaterület **Csop
     > Jelenleg ha a csoport meghatározott biztonsági, illetve menedzseri csoportokból tartalmaz tagokat, és kizárja meghatározott csoportok tagjait, a rendszer eltávolítja a korábban bevont tagokat. Az javasoljuk, hogy olyan csoport létrehozásához, amely egyaránt tartalmaz bevont és kizárt tagokat, mindenekelőtt hozzon létre egy szülőcsoportot, amely a bevont tagokat tartalmazza. Ezután hozzon létre ehhez a szülőcsoporthoz egy gyermekcsoportot. Az új gyermekcsoportban adja meg a kizárt tagok listáját. Ezt a gyermekcsoportot használja az Intune szabályzatainak, profiljainak és alkalmazás-terjesztésének kezelésére.
 
     > [!NOTE]
-    > Az Azure-portálon létrehozhat csoportokat a felhasználók felettesei alapján. Az ilyen csoport dinamikus és aszerint változik, ahogy az Azure Active Directoryban alkalmazottakat adnak hozzá az adott menedzser csapatához vagy távolítanak el onnan. Az Azure-csoportok menedzser alapján történő létrehozását a [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) (Speciális szabályok létrehozása attribútumokkal) című témakör **To configure a group as a “Manager” group** (Csoport konfigurálása „Menedzser” csoportként) című szakasza ismerteti.
+    > Az Azure-portálon létrehozhat csoportokat a felhasználók felettesei alapján. Az ilyen csoport dinamikus és aszerint változik, ahogy az Azure Active Directoryban alkalmazottakat adnak hozzá az adott menedzser csapatához vagy távolítanak el onnan. Az Azure-csoportok menedzser alapján történő létrehozását a [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) (Speciális szabályok létrehozása attribútumokkal) című témakör **To configure a group as a “Manager” group** (Csoport konfigurálása „Menedzser” csoportként) című szakasza ismerteti.
 
 4.  A **Közvetlen tagság meghatározása** oldalon a **Tallózás** lehetőséget választva vonhat be vagy zárhat ki egyedi felhasználókat. Ha olyan felhasználókat választ ki, akik nem tagjai a megadott szülőcsoportnak, akkor ezeket a rendszer automatikusan hozzáadja a szülőcsoporthoz. A **Tagok kiválasztása** párbeszédpanel alsó részén található a felhasználó manuális felvételére szolgáló beállítás. Ez akkor hasznos, ha olyan felhasználót szeretne felvenni a csoportba, aki még nem rendelkezik regisztrált eszközzel.
 

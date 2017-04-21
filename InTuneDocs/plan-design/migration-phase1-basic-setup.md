@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: b01b68b7587cb91f24285cdffafeab43296886e6
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fce3edb43a147491465d8a58d1a9a4f009fba55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Az Intune-hoz az Azure Active Directoryt (AAD) kell használni felhasználóicso
 
 -   További tudnivalók [a felhasználói és eszközcsoportok megtervezéséről](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)
 
--   Útmutató [a felhasználói és eszközcsoportok létrehozásához](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+-   Útmutató [a felhasználói és eszközcsoportok létrehozásához](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
 
 Ha a szervezet már használja az Office 365-öt, akkor fontos, hogy az Intune is ugyanazt az Azure Active Directory-környezetet használja.
 

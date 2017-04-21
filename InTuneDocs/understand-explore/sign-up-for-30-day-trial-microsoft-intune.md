@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 Ez a cikk végigvezeti Önt az Intune próbaverziójára való regisztráció lépésein, és előkészít egy pár felhasználót a próbaverzióhoz, ezáltal továbbléphet majd a kapcsolódó próbaverzióhoz készült útmutatóra, amely ismerteti, hogy hogyan kezel mobileszközöket az Intune. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 2016 decemberétől kezdve a Microsoft Intune az Azure-portálon érhető el, és bizonyos ingyenes próbára való regisztrációkat az Azure-beli Intune-ban, míg másokat a klasszikus Intune-ban lehet elvégezni. Ha az Ön próbaverziója az Azure-portálon érhető el, akkor a jelen cikkben leírtak elvégzése után jobban fogja tudni hasznosítani az [Azure-beli Intune előzetesével kapcsolatos tartalmakat](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune).
+> 2016 decemberétől kezdve a Microsoft Intune az Azure-portálon érhető el, és bizonyos ingyenes próbára való regisztrációkat az Azure-beli Intune-ban, míg másokat a klasszikus Intune-ban lehet elvégezni. Ha az Ön próbaverziója az Azure-portálon érhető el, akkor a jelen cikkben leírtak elvégzése után jobban fogja tudni hasznosítani az [Azure-beli Intune előzetesével kapcsolatos tartalmakat](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 ## <a name="assumptions"></a>Előfeltételek
 Ez a regisztrációs cikk és az útmutató a próbaverzióhoz feltételezi, hogy a próbaverziót kizárólag kipróbálás céljából használja, és előfizetéskor tiszta környezettel szeretne kezdeni.
@@ -39,7 +40,7 @@ Az előfizetéses verzió minden funkciója elérhető a próbaverzióban, az eg
 ## <a name="sign-up-for-your-trial"></a>Regisztráció a próbaverzióra
 Látogasson el az [Intune regisztrációs](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) oldalára, és töltse ki az űrlapot a próbaverzióra való regisztrációhoz.
 
-Ha rendelkezik munkahelyi vagy iskolai fiókkal és azt szeretné használni az Intune próbaverziójához, akkor kövesse [ezeket a regisztrációs utasításokat](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Azonban ez a cikk és az útmutató a próbaverzióhoz feltételezi, hogy nem használ ilyen fiókokat.
+Ha rendelkezik munkahelyi vagy iskolai fiókkal és azt szeretné használni az Intune próbaverziójához, akkor kövesse [ezeket a regisztrációs utasításokat](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Azonban ez a cikk és az útmutató a próbaverzióhoz feltételezi, hogy nem használ ilyen fiókokat.
 
 > [!TIP]
 > Ha az informatikai műveletek és a felhasználók túlnyomó része nem az Ön földrajzi helyén van, akkor érdemes a teljesítmény teszteléséhez az előbbi földrajzi helyét megadni a próbaverzióban.
@@ -54,7 +55,7 @@ Ha próbaverziója az **Azure-portálon** érhető el, a https://portal.azure.co
 ## <a name="add-users"></a>Felhasználók hozzáadása
 Mielőtt az Office 365 felügyeleti központból átlépne az Intune-ba, adjon hozzá egy pár felhasználót a próbafiókjához.
 
-Az Office 365 felügyeleti központban hozzáadhat felhasználókat egyesével vagy tömegesen egy .csv-fájl feltöltésével. A próbaverzió beállításánál mindkettőt elvégezzük. A munkakörnyezetben viszont érdemes kihasználnia az Azure Active Directory felhasználói fiókok előnyeit, amelyekről további információt talál az [Első lépések útmutatónkban](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) és a jelen cikk [További lépések](#Next-steps) szakaszában.
+Az Office 365 felügyeleti központban hozzáadhat felhasználókat egyesével vagy tömegesen egy .csv-fájl feltöltésével. A próbaverzió beállításánál mindkettőt elvégezzük. A munkakörnyezetben viszont érdemes kihasználnia az Azure Active Directory felhasználói fiókok előnyeit, amelyekről további információt talál az [Első lépések útmutatónkban](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) és a jelen cikk [További lépések](#Next-steps) szakaszában.
 
 ### <a name="add-an-individual-user"></a>Egyéni felhasználó hozzáadása
 1. Bármelyik lehetőséget választja a felhasználó hozzáadásához, nyisson meg egy űrlapot, amely lehetővé teszi a felhasználó létrehozását. Csak a csillaggal (\*) jelölt elemek szükségesek.
@@ -137,18 +138,13 @@ Ha az Intune-ból szeretné elérni az Office 365 felügyeleti központot, nyiss
 Kipróbálási forgatókönyv: [Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Azure-beli Intune – előzetes
-További tudnivalók az [Azure-beli Intune előzetes verziójáról](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+További tudnivalók az [Azure-beli Intune előzetes verziójáról](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Integráció más termékekkel
 Az Azure Active Directory felhasználói fiókok Intune-nal való használatával kapcsolatos további információk:
-- [Identitáskövetelmények](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [A címtár-szinkronizálás követelményei](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Többtényezős hitelesítés követelményei](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Identitáskövetelmények](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [A címtár-szinkronizálás követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Többtényezős hitelesítés követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-További információk [Az Intune és a System Center Configuration Manager együttes használatáról](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+További információk [Az Intune és a System Center Configuration Manager együttes használatáról](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 

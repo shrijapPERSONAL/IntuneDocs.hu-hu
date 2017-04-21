@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -136,7 +137,7 @@ Az **Engedélyezett és letiltott alkalmazások** listában adja meg az engedél
 #### <a name="how-to-specify-urls-to-app-stores"></a>Alkalmazás-áruházak URL-címének megadása
 Ha meg szeretné adni egy alkalmazás URL-címét az engedélyezett vagy letiltott alkalmazások listájában, használja a következő formátumot:
 
-A [Windows Phone Alkalmazások+játékok](http://www.windowsphone.com/en-us/store/overview) lapon keressen rá a használni kívánt alkalmazásra.
+A [Windows Phone Alkalmazások+játékok](http://www.windowsphone.com/store/overview) lapon keressen rá a használni kívánt alkalmazásra.
 
 Nyissa meg az alkalmazás lapját, és másolja az URL-címet a vágólapra. Ezt a címet az engedélyezett és a tiltott alkalmazások listájában egyaránt használhatja URL-címként.
 
@@ -172,9 +173,4 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

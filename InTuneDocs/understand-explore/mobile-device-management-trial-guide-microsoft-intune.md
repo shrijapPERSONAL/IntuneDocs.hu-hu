@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ Az előfizetéses verzió minden funkciója elérhető a próbaverzióban, az eg
 ## <a name="whats-not-covered"></a>Miről nem esik szó
 |Ha érdeklik az alábbiak |Olvassa el ezt |
 |------------------------|----------|
-|Mobileszköz-kezelés (MDM) nem tesztelési környezetben | [Első lépések](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|Az MDM Intune-nal és a System Center Configuration Managerrel való együttes használata | [Hibrid mobileszköz-kezelés](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|Mobileszköz-kezelés (MDM) nem tesztelési környezetben | [Első lépések](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Az MDM Intune-nal és a System Center Configuration Managerrel való együttes használata | [Hibrid mobileszköz-kezelés](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 A fenti útmutatók hosszabbak és több döntési ponttal rendelkeznek, mint az útmutató a próbaverzióhoz, mivel azok az Intune munkakörnyezetekben való beállításában segítenek.
 
@@ -61,7 +61,7 @@ A mobileszközök Intune-nal való kezeléséhez elsőként be kell állítania 
 
 Ha egyedül az Intune-t használja, ahogyan a próbaverzió feltételezi, vagy az Intune-t egy Enterprise Mobility + Security (EMS) előfizetés részeként használja, akkor az Intune-t kell beállítania mobileszköz-kezelési szolgáltatóként. Ez azt jelenti, hogy az Intune-t jelöli meg a mobileszközeinek kezelésére használt szolgatátásként a munkahelyén.
 
-Azok az ügyfelek, akik az Intune-t a System Center Configuration Managerrel együtt szeretnék használni a mobileszközök kezelésére, el kell dönteniük, hogy az Intune-t vagy a Configuration Manager-t szeretnék használni mobileszköz-kezelési szolgáltatóként. A munkakörnyezetben ez egy fontos döntés, mivel jelenleg nagyon nehéz megváltoztatni ezt a beállítást, viszont ez a próbaverzióhoz készült útmutató hatókörén kívül esik. Az Intune vagy a Configuration Manager MDM-szolgáltatóként való beállításának vonzataival kapcsolatban további információért, lásd: [Választás az önálló Intune és a hibrid mobileszköz-kezelés között](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Azok az ügyfelek, akik az Intune-t a System Center Configuration Managerrel együtt szeretnék használni a mobileszközök kezelésére, el kell dönteniük, hogy az Intune-t vagy a Configuration Manager-t szeretnék használni mobileszköz-kezelési szolgáltatóként. A munkakörnyezetben ez egy fontos döntés, mivel jelenleg nagyon nehéz megváltoztatni ezt a beállítást, viszont ez a próbaverzióhoz készült útmutató hatókörén kívül esik. Az Intune vagy a Configuration Manager MDM-szolgáltatóként való beállításának vonzataival kapcsolatban további információért, lásd: [Választás az önálló Intune és a hibrid mobileszköz-kezelés között](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 A próbaverzióban az Intune-t állítjuk be MDM-szolgáltatóként; ez nem lesz hatással a munkakörnyezetére, hacsak nem dönt úgy, hogy a próbaverziót használja a munkakörnyezetéhez.
 
@@ -86,7 +86,7 @@ Töltse le az APNs-tanúsítványt (.pem), és mentse helyileg a fájlt. Későb
 3.    **Az APNs-tanúsítvány hozzáadása az Intune-hoz**<BR/>
 A Microsoft Intune felügyeleti konzolon lépjen a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** menüpontra, majd kattintson **Az APNs-tanúsítvány feltöltése** elemre. Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gombra, és adja meg az Apple ID azonosítóját. Az APNs-tanúsítvány lehetővé teszi, hogy az Intune iOS-eszközöket regisztráljon és kezeljen a szabályzatok regisztrált mobileszközökre való leküldésével.
 4.    **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**<br/>
-A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios), illetve [Mac OS X-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
+A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios), illetve [Mac OS X-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>További tudnivalók az eszközregisztrációról

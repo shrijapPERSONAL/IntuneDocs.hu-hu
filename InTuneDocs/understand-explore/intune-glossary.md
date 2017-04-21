@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |E-mail profil|Ezzel a szabályzattal [e-mail-elérési beállításokat](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) adhat meg mobileszközökön futó adott e-mail ügyfelekhez, hogy a végfelhasználónak csak minimális teendője legyen.|
-|EMS|A Microsoft Enterprise Mobility + Security (korábbi nevén Nagyvállalati mobilitási csomag) megvédi céges adatait, és lehetővé teszi a felhasználóknak [a szükséges alkalmazások és tartalom elérését](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|A Microsoft Enterprise Mobility + Security (korábbi nevén Nagyvállalati mobilitási csomag) megvédi céges adatait, és lehetővé teszi a felhasználóknak [a szükséges alkalmazások és tartalom elérését](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Végfelhasználó|[Különböző eszközök (például telefonok és számítógépek) felhasználói](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune), akiknek a felügyelete az Intune használatával történik.|
 |Regisztrálás|A Microsoft Intune [regisztráció](/intune/deploy-use/enroll-devices-in-microsoft-intune) segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Távoli zárolás|Intune-szolgáltatás, amellyel [zárolhatja a támogatott eszközöket](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) még akkor is, ha nincs birtokában az eszköznek.|
 |Reports|Az Intune számos különböző [beépített jelentést](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) biztosít, amelyek információkkal szolgálnak a felügyelt eszközökről.|
 |Szükséges telepítés|Ha ezzel a művelettel telepít alkalmazást, akkor a telepítés [nem igényel felhasználói beavatkozást](/intune/deploy-use/deploy-apps) (habár egyes platformokon a végfelhasználónak bele kell egyeznie a telepítésbe).|
-|Követelmények|[Alkalmazástelepítési művelet](/en-us/intune/deploy-use/add-apps), amellyel kiválaszthatja, hogy az alkalmazás telepítéséhez az eszköznek mely követelményeket kell teljesítenie. Például megadhatja, hogy az alkalmazás az iOS operációs rendszer melyik verziójának meglétét igényli a telepítéshez.|
+|Követelmények|[Alkalmazástelepítési művelet](/intune/deploy-use/add-apps), amellyel kiválaszthatja, hogy az alkalmazás telepítéséhez az eszköznek mely követelményeket kell teljesítenie. Például megadhatja, hogy az alkalmazás az iOS operációs rendszer melyik verziójának meglétét igényli a telepítéshez.|
 
 ## <a name="s"></a>S
 |||

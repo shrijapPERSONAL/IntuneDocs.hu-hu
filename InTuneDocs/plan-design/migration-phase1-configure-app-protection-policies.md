@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ Az alkalmazásvédelmi szabályzatok alkalmazásszinten működnek, így nem ig�
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Alkalmazásvédelmi szabályzatok üzletági alkalmazásokkal
 
-A [Microsoft Intune App SDK-val](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) vagy a Microsoft Intune [iOS-en](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) és [Androidon](https://www.microsoft.com/en-us/download/details.aspx?id=47267) is elérhető alkalmazásburkoló eszközével az üzletági alkalmazásokat is bevonhatja a mobilalkalmazás-védelmi szabályzatok hatókörébe.
+A [Microsoft Intune App SDK-val](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) vagy a Microsoft Intune [iOS-en](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) és [Androidon](https://www.microsoft.com/download/details.aspx?id=47267) is elérhető alkalmazásburkoló eszközével az üzletági alkalmazásokat is bevonhatja a mobilalkalmazás-védelmi szabályzatok hatókörébe.
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Hogyan segítenek a migráció során az alkalmazásvédelmi szabályzatok?
 
@@ -46,9 +46,9 @@ Amikor pedig a régebbi MDM-szolgáltatóban letiltja a feltételes hozzáféré
 
 ## <a name="task-list-for-app-protection-policies"></a>Feladatlista az alkalmazásvédelmi szabályzatokhoz
 
--   1. feladat: Ismerje meg, [hogyan készülhet fel az alkalmazásvédelmi szabályzatok konfigurálására](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+-   1. feladat: Ismerje meg, [hogyan készülhet fel az alkalmazásvédelmi szabályzatok konfigurálására](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
--   2. feladat: Ismerje meg a [mobilalkalmazás-védelmi szabályzatok létrehozását és telepítését](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   2. feladat: Ismerje meg a [mobilalkalmazás-védelmi szabályzatok létrehozását és telepítését](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>További lépések 
 

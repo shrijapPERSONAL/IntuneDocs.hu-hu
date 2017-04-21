@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Az Intune más szabályzataitól eltérően a mobilalkalmazás-kezelési szabál
 
 Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmazásnak tartalmaznia kell a Microsoft Intune App SDK-t. Ilyen típusú alkalmazást az alábbi három módszerrel lehet beszerezni:
 
--   **Szabályzat által felügyelt alkalmazás használata**. Ezek az alkalmazások beépített App SDK-val rendelkeznek. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. További információt [a Microsoft Intune mobilalkalmazás-felügyeleti szabályzataival használható alkalmazások listájában](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) találhat.
+-   **Szabályzat által felügyelt alkalmazás használata**. Ezek az alkalmazások beépített App SDK-val rendelkeznek. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. További információt [a Microsoft Intune mobilalkalmazás-felügyeleti szabályzataival használható alkalmazások listájában](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) találhat.
 
 -   **Becsomagolt alkalmazás használata**. A becsomagolt alkalmazások abból a célból lettek újracsomagolva a Microsoft Intune alkalmazásburkoló eszközével, hogy tartalmazzák az App SDK-t. Ezt az eszközt általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használják, az alkalmazásáruházból letöltött alkalmazások feldolgozásához nem használható. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -140,7 +140,7 @@ Ha meggyőződött arról, hogy az alkalmazás sikeresen feltöltődött, folyta
     |**A vállalati házirenddel való eszközkompatibilitás szükséges a hozzáféréshez**|Ezzel a beállítással az alkalmazás használata csak akkor engedélyezett, ha az eszköz nem jailbreakelt vagy rootolt.|
     |**A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)**|Az **Időtúllépés** mezőben adja meg azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése az alkalmazás elindítása után.|
     |**Offline türelmi időszak**|Ha az eszköz offline állapotban van, itt megadhatja azt az időtartamot, amennyi elteltével szeretné, hogy megtörténjen az alkalmazás hozzáférési követelményeinek ismételt ellenőrzése.|
-    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/en-us/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszer csak a Samsung KNOX eszközök esetében FIPS 140-2-kompatibilis.|
+    |**Alkalmazásadatok titkosítása**|Ezzel a beállítással megadhatja, hogy az alkalmazáshoz kapcsolódó összes adat titkosítva legyen, beleértve a külsőleg (például SD-kártyán) tárolt adatokat is.<br /><br />**Titkosítás iOS rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén az adatok titkosítása az operációs rendszer által biztosított eszközszintű titkosítással történik. Ez az eszköz PIN-szabályzatán keresztül engedélyezhető, amelyet a rendszergazda állít be. PIN-kód megadása esetén az adattitkosítás a mobilalkalmazás-felügyeleti szabályzatban megadott beállítások szerint történik. Az Apple dokumentációjában leírtaknak megfelelően [az iOS által használt modulok FIPS 140-2 hitelesítéssel rendelkeznek](http://support.apple.com/HT202739).<br /><br />**Titkosítás Android rendszerhez**<br /><br />Az Intune valamely mobilalkalmazás-felügyeleti szabályzatával társított alkalmazások esetén a titkosítást a Microsoft biztosítja. A rendszer szinkron módon titkosítja az adatokat a fájlok írási és olvasási műveletei során.  Az eszköz tárhelyén található tartalom mindig titkosított marad. A titkosítási módszer csak a Samsung KNOX eszközök esetében FIPS 140-2-kompatibilis.|
     |**Képernyőrögzítés letiltása** (csak Android-eszközök esetén)|Ezzel a beállítással megadhatja, hogy az eszköz képernyőfelvétel-funkciói le legyenek tiltva az alkalmazás használatakor.|
 
 4. Ha elkészült, válassza a **Házirend mentése** elemet.

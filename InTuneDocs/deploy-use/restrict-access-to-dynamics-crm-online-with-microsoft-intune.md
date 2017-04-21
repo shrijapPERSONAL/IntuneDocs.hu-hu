@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ A Microsoft Dynamics CRM Online-hoz való hozzáférést iOS- és Android-eszkö
 Ha szeretné jobban megismerni a feltételes hozzáférés működését, olvassa el [Az e-mailek, az Office 365- és egyéb szolgáltatások elérésének védelme](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) című cikket.
 
 > [!IMPORTANT]
-> A feltételes hozzáférés üzembe helyezéséhez az Intune és az Azure Active Directory Premium előfizetése is szükséges, a felhasználóknak pedig mindkét termékhez licenccel kell rendelkezniük. Az **Enterprise Mobility + Security (EMS) előfizetés** az Intune és az Azure Active Directory Premium előfizetését is tartalmazza. További részleteket az [Enterprise Mobility díjszabását ismertető lapon](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) talál. Ha nem rendelkezik EMS-előfizetéssel, előfizethet a Premium szintű Azure Active Directoryra. Lásd az [Azure Active Directory díjszabását ismertető lapot](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+> A feltételes hozzáférés üzembe helyezéséhez az Intune és az Azure Active Directory Premium előfizetése is szükséges, a felhasználóknak pedig mindkét termékhez licenccel kell rendelkezniük. Az **Enterprise Mobility + Security (EMS) előfizetés** az Intune és az Azure Active Directory Premium előfizetését is tartalmazza. További részleteket az [Enterprise Mobility díjszabását ismertető lapon](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) talál. Ha nem rendelkezik EMS-előfizetéssel, előfizethet a Premium szintű Azure Active Directoryra. Lásd az [Azure Active Directory díjszabását ismertető lapot](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Amikor egy célzott felhasználó a Dynamics CRM alkalmazást szeretné használni az eszközén, a következő ellenőrzés megy végbe:
 
@@ -102,9 +103,4 @@ Válassza ki bármelyik mobileszköz-csoportot, majd az **Eszközök** lapon vá
 * [A SharePoint Online-hoz való hozzáférés védelme](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [A Skype Vállalati online verzióhoz való hozzáférés védelme](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

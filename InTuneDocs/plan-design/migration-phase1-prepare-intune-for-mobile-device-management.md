@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Mielőtt részletesen rátérnénk az Intune beállítására, tekintsük át a 
 
 -   Jártasak-e a felhasználók a technológia és általában a számítástechnika terén?
 
-### <a name="what-is-your-device-security-policy"></a>Milyen eszközbiztonsági szabályzat van érvényben? 
+### <a name="what-is-your-device-security-policy"></a>Milyen eszközbiztonsági szabályzat van érvényben?
 
 -   Szükséges-e eszközszintű titkosítás?
 
@@ -84,7 +84,7 @@ Mielőtt részletesen rátérnénk az Intune beállítására, tekintsük át a 
 
 ## <a name="additional-information"></a>További információ
 
--   Részletesebb példákat talál ezekben a különféle iparágakból származó [esettanulmányokban](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune), amelyek azt írják le, hogyan mérték fel egyes cégek saját mobileszköz-felügyeleti követelményeiket.
+-   Részletesebb példákat talál ezekben a különféle iparágakból származó [esettanulmányokban](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune), amelyek azt írják le, hogyan mérték fel egyes cégek saját mobileszköz-felügyeleti követelményeiket.
 
 ## <a name="next-steps"></a>További lépések
 

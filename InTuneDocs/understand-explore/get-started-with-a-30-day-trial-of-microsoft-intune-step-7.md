@@ -14,9 +14,9 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 08b5b555ed44275c428c15fe3529bd683dc8c004
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,9 +29,9 @@ Ha legalább 150 licencet vásárolt a Microsoft Intune-hoz egy erre jogosult cs
 
 Az Intune ingyenes próbaverziójáról a következőképpen válthat a fizetős változatra:
 
--   **Intune előfizetés** – felhasználónkénti licencek megvásárlását teszi lehetővé. További információ: [Hogyan vásárolható meg a Microsoft Intune?](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). Miután befejezte a vásárlást, kövesse az [Előfizetés a Microsoft Intune fizetős verziójára](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) útmutatását, és tekintse át az Intune használatának megkezdéséhez szükséges további konfigurációs lépéseket.
+-   **Intune előfizetés** – felhasználónkénti licencek megvásárlását teszi lehetővé. További információ: [Hogyan vásárolható meg a Microsoft Intune?](https://www.microsoft.com/server-cloud/products/microsoft-intune/Purchasing.aspx). Miután befejezte a vásárlást, kövesse az [Előfizetés a Microsoft Intune fizetős verziójára](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) útmutatását, és tekintse át az Intune használatának megkezdéséhez szükséges további konfigurációs lépéseket.
 
--   **Enterprise Mobility + Security** – a következőket biztosítja: Intune, Azure Active Directory Premium, Azure RMS szolgáltatások. További részletekért forduljon a Microsoft ügyfélfelelőshöz vagy a helyi viszonteladóhoz, vagy [ olvasson az EMS képességeiről](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) és az [árazásról](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
+-   **Enterprise Mobility + Security** – a következőket biztosítja: Intune, Azure Active Directory Premium, Azure RMS szolgáltatások. További részletekért forduljon a Microsoft ügyfélfelelőshöz vagy a helyi viszonteladóhoz, vagy [ olvasson az EMS képességeiről](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx) és az [árazásról](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 
 -   **Nagyvállalati Szerződés (EA)** (&gt;több mint 250 fő esetére) – a legalább 250 felhasználóval rendelkező szervezetek számára ez a licencprogram jelenti a legjobb választást. A Nagyvállalati Szerződés keretein belül a szükségleteinek megfelelő helyi szoftverek és online szolgáltatások közül választhat, így optimalizálhatja a technológiai kiadásokat. További részletekért forduljon a Microsoft ügyfélfelelőshöz vagy a helyi viszonteladóhoz, vagy tekintse meg a [Nagyvállalati mennyiségi licencelés webhelyét](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 

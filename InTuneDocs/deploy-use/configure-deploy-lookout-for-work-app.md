@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: ad1133d17f8d64c79c08437b914ae28e00cae638
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,7 +57,7 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
 
 1. Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-2. **Írja alá újra** a Lookout for work iOS alkalmazást. A Lookout az iOS App Store-on kívül terjeszti a Lookout for Work alkalmazását. **Az alkalmazás terjesztése előtt** újra alá kell írnia az alkalmazást az iOS vállalati fejlesztői tanúsítványával. A részletes leírást a Lookout for Work iOS alkalmazás újbóli aláírásáról lásd: [Lookout for Work iOS alkalmazás újbóli aláírásának folyamata](https://personal.support.lookout.com/hc/en-us/articles/114094038714) a Lookout oldalán.
+2. **Írja alá újra** a Lookout for work iOS alkalmazást. A Lookout az iOS App Store-on kívül terjeszti a Lookout for Work alkalmazását. **Az alkalmazás terjesztése előtt** újra alá kell írnia az alkalmazást az iOS vállalati fejlesztői tanúsítványával. A részletes leírást a Lookout for Work iOS alkalmazás újbóli aláírásáról lásd: [Lookout for Work iOS alkalmazás újbóli aláírásának folyamata](https://personal.support.lookout.com/hc/articles/114094038714) a Lookout oldalán.
 
 3. Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók számára az alábbiak szerint:
   1.  Jelentkezzen be az [Azure Active Directory felügyeleti portálon](https://manage.windowsazure.com), és keresse meg az alkalmazáslapot.
@@ -67,13 +67,13 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
   4.  Adjon hozzá további átirányítási URI-t: **&lt;companyportal://code/>**, valamint az eredeti átirányítási URI-ja URLencoded verzióját.
   5.  Adjon hozzá **Delegált engedélyeket** az alkalmazásához.
 
-  További részletek: [Natív ügyfélalkalmazás konfigurálása](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
+  További részletek: [Natív ügyfélalkalmazás konfigurálása](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-4. Töltse fel az újból aláírt .ipa fájlt az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) témakörben leírtaknak megfelelően. Állítsa a minimum OS verziót iOS 8.0-ra vagy újabbra.
+4. Töltse fel az újból aláírt .ipa fájlt az [Alkalmazások hozzáadása mobileszközökhöz a Microsoft Intune-ban](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) témakörben leírtaknak megfelelően. Állítsa a minimum OS verziót iOS 8.0-ra vagy újabbra.
 
   ![képernyőkép az alkalmazások oldalról az Intune felügyeleti konzoljában, amely a Lookout for work alkalmazást mutatja az alkalmazások listáján](../media/mtp/ios-app-uploaded-intune.png)
 
-5. Hozza létre a felügyelt alkalmazás konfigurációs szabályzatát az [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs szabályzatok segítségével a Microsoft Intune-ban](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) témakörben leírtaknak megfelelően.
+5. Hozza létre a felügyelt alkalmazás konfigurációs szabályzatát az [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs szabályzatok segítségével a Microsoft Intune-ban](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) témakörben leírtaknak megfelelően.
 
   ![képernyőkép egy új szabályzat létrehozása varázslóról, kiemelve az iOS 8.0 vagy újabb alkalmazás-konfigurációs szabályzatot](../media/mtp/ios-app-config.png)
 

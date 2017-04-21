@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
@@ -49,7 +49,7 @@ Az alábbi eljárással teheti elérhetővé az alkalmazást telepítésre az es
 
 5. Ha a telepítésre elérhetővé tett alkalmazás konfigurálható mobilalkalmazás-felügyeleti szabályzattal, a **Mobilalkalmazás-kezelés** lap is megjelenik. Ezen a lapon választhatja ki az alkalmazáshoz hozzárendelni kívánt mobilalkalmazás-felügyeleti szabályzatot.
 
-    [Itt megtekintheti a mobilalkalmazás-felügyeleti szabályzatokkal kompatibilis Microsoft-alkalmazásokat.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Itt megtekintheti a mobilalkalmazás-felügyeleti szabályzatokkal kompatibilis Microsoft-alkalmazásokat.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Ha a telepítésre elérhetővé tett alkalmazás kompatibilis az Intune VPN-profiljaival, a **VPN-profil** lap is megjelenik. Ezen a lapon hozzárendelheti az iOS-alkalmazásokat egy Ön által telepített VPN-profilhoz. A VPN-kapcsolat az alkalmazás indításakor automatikusan meg fog nyílni. Csak azok a VPN-profilok tehetők elérhetővé, amelyek **Alkalmazásonkénti VPN** profilbeállítása engedélyezve van.
  További információ a VPN-profilok konfigurálásáról, beleértve a profilok alkalmazásokhoz való társítását is: [ VPN-kapcsolatok a Microsoft Intune-ban](vpn-connections-in-microsoft-intune.md).

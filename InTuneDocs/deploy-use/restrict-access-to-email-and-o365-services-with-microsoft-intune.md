@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Az Enterprise Mobility + Security (EMS) feltételes hozzáférés használatáva
 ## <a name="how-does-conditional-access-work"></a>Hogyan működik a feltételes hozzáférés?
 A rendszer a megfelelőségi szabályok beállításai alapján ellenőrizheti az eszköz megfelelőségét. A feltételes hozzáférési szabályzat ennek az ellenőrzésnek az eredménye alapján engedélyezi vagy korlátozza a hozzáférést az adott szolgáltatásokhoz. A feltételes hozzáférési szabályzat és az eszközmegfelelőségi szabályzat együttes alkalmazásával elérheti, hogy a szolgáltatáshoz csak megfelelő eszközök férhessenek hozzá. A megfelelőségi szabályzat és a feltételes hozzáférési szabályzat telepítve van a felhasználónál. A rendszer minden olyan eszköz megfelelőségét ellenőrzi, amelyről a felhasználó használja a szolgáltatásokat.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Ne feledje, hogy ahhoz, hogy a rendszer képes legyen az eszköz megfelelőségének ellenőrzésére, az eszközt használó felhasználóra vonatkozóan megfelelőségi szabályzatot kell alkalmazni.
 > Amennyiben a felhasználóra nem vonatkozik megfelelőségi szabályzat, a rendszer megfelelőként kezeli az eszközt, és egyáltalán nem korlátozza a hozzáférést.
 
@@ -48,7 +48,7 @@ A Microsoft Intune és az Azure Active Directory (Azure AD) Premium tökéletes 
 
 Az **Azure AD Premium-licencek** megvásárolhatók önálló szolgáltatásként vagy (együtt az Intune-nal) az Enterprise-szerződés részeként. Ha az Intune-nal feltételes hozzáférési házirendeket léptetett érvénybe, akkor győződjön meg róla, hogy beszerezte a megfelelő Azure AD Premium- vagy **EMS-licenceket**.
 
-- Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
+- Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
 
 Továbbá győződjön meg arról, hogy azok a felhasználók, akikhez feltételes hozzáférési szabályzatokat szeretne hozzárendelni, [rendelkeznek Azure AD Premium- vagy EMS-licenccel](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 

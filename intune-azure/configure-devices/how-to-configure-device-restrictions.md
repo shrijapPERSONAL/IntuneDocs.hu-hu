@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: b593b2ddd756bc5bf7700eca4f2544b87008a8ab
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 6bc3d4586d6b734094ccf04d472a7edd229581c1
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -55,7 +55,8 @@ A témakörben található információk alapján megismerheti az eszközkorlát
     - [Windows 8.1](device-restrictions-for-windows-8-1.md)
     - [Windows 10-beállítások](device-restrictions-for-windows-10.md)
     - [Windows 10 Team-beállítások](device-restrictions-for-windows-10-team.md)
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és nyomja meg a **Létrehozás** gombot.
+    - [Az Android for Work beállításai](device-restrictions-for-afw.md)
+8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha szeretné a profilt csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](how-to-assign-device-profiles.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.

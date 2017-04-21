@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ A megfelelőségi szabályzatokhoz feltételes hozzáférési szabályzatokat t�
 Megfelelőségi szabályzatokat feltételes hozzáféréstől függetlenül is használhat. A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Előfordulhat például, hogy arról szeretne jelentést, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak függetlenítve vagy feltörve. De ha önállóan alkalmazza a megfelelőségi szabályzatokat, akkor nem korlátozza a rendszer a vállalati erőforrásokhoz való hozzáférést.
 
 A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi.
-Arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot, [Az eszközök beállításainak és funkcióinak kezelése](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies) című cikk nyújt tájékoztatást.
+Arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot, [Az eszközök beállításainak és funkcióinak kezelése](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies) című cikk nyújt tájékoztatást.
 
 A következő táblázat felsorolja, hogy milyen típusú eszközökre lehet megfelelőségi szabályzatokat alkalmazni. Azt is ismerteti a táblázat, hogy miképpen történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 

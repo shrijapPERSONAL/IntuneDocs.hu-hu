@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ Amikor egy célzott felhasználó a Skype Vállalati online verziót szeretné h
 
 **Mielőtt** beállítaná a Skype Vállalati online verzióra vonatkozó feltételes hozzáférési szabályzatot, a következőknek kell teljesülniük:
 - Rendelkeznie kell **Skype Vállalati online verzió-előfizetéssel**, valamint ki kell osztania a Skype Vállalati online verzió licenceit a felhasználóknak.
-- Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
+- Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
 
--   [Engedélyeznie kell a modern hitelesítést](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) a Skype Vállalati online verzióhoz.
+-   [Engedélyeznie kell a modern hitelesítést](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) a Skype Vállalati online verzióhoz.
 -  Minden végfelhasználónak a **Skype Vállalati online verziót** kell használnia. Amennyiben a telepítésben Skype Vállalati online verzió és helyi Skype Vállalati verzió is szerepel, a rendszer nem alkalmazza a feltételes hozzáférési szabályzatot a felhasználókra.
 
 A Skype Vállalati online verzióhoz hozzáférést igénylő eszközre vonatkozóan a következőknek kell teljesülniük:
@@ -118,9 +119,4 @@ Válassza ki a kívánt mobileszközök csoportját. Majd az **Eszközök** lapo
 * **Nem megfelelő eszközök** – Ezeknek az eszközöknek nincs hozzáférésük a Skype Vállalati online verzióhoz.
 
 * **Az AAD-ben regisztrált és megfelelő eszközök** – Ezek az eszközök hozzáférhetnek a Skype Vállalati online verzióhoz.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

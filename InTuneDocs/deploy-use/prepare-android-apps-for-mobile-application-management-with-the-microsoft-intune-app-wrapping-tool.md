@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a89c2b26daf2b3b4da57e0c190f772e078681bee
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -131,7 +131,7 @@ A lehetséges hamisítási, információfelfedési és a jogok kiterjesztéséb�
 
 -   Importálja a kimeneti alkalmazást az Intune-konzolra ugyanazon a számítógépen, ahol az eszköz fut. A Java keytool eszközről a [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) ismertetőjéből tájékozódhat részletesebben.
 
--   Ha a kimeneti alkalmazás és az eszköz UNC elérési úton található, és az eszközt és a bemeneti fájlokat nem ugyanazon a számítógépen futtatja, a környezetet az [IPsec](http://en.wikipedia.org/wiki/IPsec) vagy [SMB-aláírás](https://support.microsoft.com/en-us/kb/887429) segítségével teheti biztonságossá.
+-   Ha a kimeneti alkalmazás és az eszköz UNC elérési úton található, és az eszközt és a bemeneti fájlokat nem ugyanazon a számítógépen futtatja, a környezetet az [IPsec](http://wikipedia.org/wiki/IPsec) vagy [SMB-aláírás](https://support.microsoft.com/kb/887429) segítségével teheti biztonságossá.
 
 -   Ügyeljen rá, hogy az alkalmazás megbízható forrásból származzon.
 
