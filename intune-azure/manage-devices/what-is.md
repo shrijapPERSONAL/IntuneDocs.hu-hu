@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -80,6 +80,9 @@ Ennek a távoli műveletnek a használatával jelenítheti meg az elveszett vagy
 1.    Az iOS-eszköz tulajdonságainak panelén válassza az **Egyebek** > **Eszköz megkeresése** elemet.
 2.    Miután a rendszer megtalálta az eszközt, megjeleníti annak helyét az **Eszköz megkeresése** panelen. 
     ![Eszköz megkeresése panel](./media/locate-device.png)
+
+>[!NOTE]
+>Adatvédelmi okokból korlátozva van, hogy mennyire nagyíthatja a térképet.
 
 ### <a name="restart"></a>**Újraindítás**
 Kiváltja az eszköz újraindulását. Az eszköz tulajdonosa nem kap automatikus értesítést az újraindításról, ezért a munkája elveszhet.

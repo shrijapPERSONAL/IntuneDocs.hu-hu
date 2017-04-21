@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 6932e75fd002661245baa7754824ec6cfe500a22
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: d70b3bc82b528184b5cfb4d4cad19cb034093e94
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -46,5 +46,5 @@ A beállítás-megfelelőségi jelentés részletesen megjeleníti az egyes megf
 - A beállításnak nem megfelelő eszközök számát.
 - A platformot, amelyre a beállítás vonatkozik.
 
-Az egyes beállítások részletezésével további információkat jeleníthet meg azon profilokról, amelyeken engedélyezve vannak ezek a beállítások, illetve megtekintheti a beállítás konfigurált értékét.
+Az egyes beállítások részletezésével további információkat jeleníthet meg azokról a profilokról, amelyeken engedélyezve vannak ezek a beállítások, illetve megtekintheti a beállítás értékét.
 
