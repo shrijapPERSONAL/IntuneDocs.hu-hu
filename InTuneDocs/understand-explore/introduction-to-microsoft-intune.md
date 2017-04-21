@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ Ez az operációs rendszer adatvédelmi szolgáltatásaival (például az olyan 
 
 Ha az Intune-t használja az EMS más szolgáltatásaival, akkor a mobil operációs rendszer és a mobilalkalmazások saját alkalmazáskonfigurációs lehetőségei által nyújtottnál magasabb szintű mobilalkalmazás-védelmet biztosíthat a szervezet számára. Az EMS használatával felügyelt alkalmazások a mobilalkalmazások és az adatvédelmi funkciók szélesebb köréhez férhetnek hozzá. Ide tartoznak például a következők:
 
-* [Egyszeri bejelentkezés](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [Többtényezős hitelesítés](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [Alkalmazás feltételes hozzáférése (hozzáférés engedélyezése, ha a mobilalkalmazás vállalati adatokat tartalmaz)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [A vállalati adatok és a személyes adatok elkülönítése alkalmazáson belül](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Alkalmazásvédelmi szabályzat (PIN-kód, titkosítás, mentés másként, vágólap stb.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Vállalati adatok törlése a mobilalkalmazásokból](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Tartalomvédelem támogatása](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [Egyszeri bejelentkezés](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [Többtényezős hitelesítés](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [Alkalmazás feltételes hozzáférése (hozzáférés engedélyezése, ha a mobilalkalmazás vállalati adatokat tartalmaz)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [A vállalati adatok és a személyes adatok elkülönítése alkalmazáson belül](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Alkalmazásvédelmi szabályzat (PIN-kód, titkosítás, mentés másként, vágólap stb.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Vállalati adatok törlése a mobilalkalmazásokból](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Tartalomvédelem támogatása](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Az alkalmazásfelügyelet adatvédelmi szintjeit bemutató ábra](./media/managing-mobile-apps.png)
 

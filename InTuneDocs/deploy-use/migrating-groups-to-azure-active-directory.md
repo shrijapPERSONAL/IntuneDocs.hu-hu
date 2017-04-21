@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Az Azure AD-ben az Intune-csoportok jelenlegi lehetőségei közül néhány nem
 ## <a name="how-to-get-ready"></a>Felkészülés
 
 - Az alábbi Azure AD-vel kapcsolatos cikkek segítenek tájékozódni az Azure AD-alapú biztonsági csoportokról és azok működéséről:
-    -  [Az erőforrásokhoz való hozzáférés kezelése Azure Active Directory-csoportokkal](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Csoportkezelés az Azure Active Directoryban](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Attribútumok használata speciális szabályok létrehozására](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Az erőforrásokhoz való hozzáférés kezelése Azure Active Directory-csoportokkal](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Csoportkezelés az Azure Active Directoryban](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Attribútumok használata speciális szabályok létrehozására](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Fontolja meg a már nem használt csoportokat eltávolítását az áttelepítés előtt.
 -  Fontos, hogy azok a rendszergazdák, akik csoportokat fognak létrehozni, hozzá legyenek adva az **Intune szolgáltatásadminisztrátor** Azure AD-szerepkörhöz. Vegye figyelembe, hogy az Azure AD szolgáltatásadminisztrátori szerepkör nem rendelkezik **Csoportok kezelése** engedéllyel.
 -  Ha **Meghatározott tagok kizárása** funkcióval használ csoportokat, vizsgálja meg, hogy átalakíthatók-e ezek a csoportok úgy, hogy ne legyen szükség kizárásokra, illetve hogy elérhető-e ugyanaz az eredmény az Azure AD-lekérdezésekben használt speciális szabályokkal.

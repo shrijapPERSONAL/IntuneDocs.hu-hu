@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ További útmutatás az alkalmazásszabályzatoknak az Intune segítségével t�
 - Windows 10
 
 >[!NOTE]
->A 1703-as verzióval kezdve a MAM-ban regisztráció nélkül is lehet alkalmazásvédelmi szabályzatokat definiálni Windows 10-es eszközökhöz. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>A 1703-as verzióval kezdve a MAM-ban regisztráció nélkül is lehet alkalmazásvédelmi szabályzatokat definiálni Windows 10-es eszközökhöz. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Támogatott alkalmazások
 * **Microsoft-alkalmazások:** Ezeknek az alkalmazásoknak beépített része az Intune App SDK, és nincs szükség további intézkedésre az alkalmazásvédelmi szabályzatok használata előtt.
-A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez keresse fel a [Microsoft Intune mobilalkalmazás-galériát](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) a Microsoft Intune alkalmazáspartnerek oldalán. Ha szeretné megtekinteni a támogatott forgatókönyveket és platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitásokat, válassza ki az adott alkalmazást.
+A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez keresse fel a [Microsoft Intune mobilalkalmazás-galériát](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) a Microsoft Intune alkalmazáspartnerek oldalán. Ha szeretné megtekinteni a támogatott forgatókönyveket és platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitásokat, válassza ki az adott alkalmazást.
 
 * **A szervezete üzletági alkalmazásai:** Az ilyen alkalmazásokat elő kell készíteni (az Intune App SDK hozzáadásával), csak ezt követően lehet rájuk vonatkozó alkalmazásvédelmi szabályzatokat életbe léptetni.
 
@@ -76,7 +76,7 @@ A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez kere
 ## <a name="prerequisites"></a>Előfeltételek
 
 -   **Microsoft Intune-előfizetés**. A felhasználóknak [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licencekre van szükségük ahhoz, hogy megkapják azokat az alkalmazásokat, amelyekre alkalmazásvédelmi szabályzat érvényes.
-Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, ha jelenleg is az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t használja az eszközök kezeléséhez. Akkor is rendelkezik [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-felügyeleti funkciók miatt próbálná ki az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t, érdemes létrehozni egy próbafiókot a [Microsoft Intune webhelyen](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, ha jelenleg is az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t használja az eszközök kezeléséhez. Akkor is rendelkezik [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-felügyeleti funkciók miatt próbálná ki az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t, érdemes létrehozni egy próbafiókot a [Microsoft Intune webhelyen](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
     Az Office portál **Számlázás** oldalán ellenőrizheti, hagy rendelkezik-e [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetéssel.  Ha van előfizetése, az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] állapota az előfizetések alatt **Aktív**.
 
@@ -98,13 +98,13 @@ Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, h
 
 1.  Jelentkezzen be az   [Office portálra](http://portal.office.com) a rendszergazdai hitelesítő adataival.
 
-2.  Vegye fel a felhasználókat az [Útmutató az Intune próbaverziójához](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) című cikk **az Intune 30 napos próbaverziójának használatba vételének lépéseit ismertető részének** megfelelően, majd ossza ki az Intune-licenceket. A felhasználók számára a **Globális rendszergazdai szerepkör** hozzárendelésével biztosíthat hozzáférést az Office-, az Azure AD- és az Azure-portálhoz.
+2.  Vegye fel a felhasználókat az [Útmutató az Intune próbaverziójához](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) című cikk **az Intune 30 napos próbaverziójának használatba vételének lépéseit ismertető részének** megfelelően, majd ossza ki az Intune-licenceket. A felhasználók számára a **Globális rendszergazdai szerepkör** hozzárendelésével biztosíthat hozzáférést az Office-, az Azure AD- és az Azure-portálhoz.
 
-5.  Az alkalmazásvédelmi szabályzatok az Azure Active Directory-beli felhasználói csoportokra vonatkoznak. Az alkalmazásvédelmi szabályzatok felhasználói csoportjait a [Csoportok létrehozása a próba-előfizetés felhasználóinak és eszközeinek rendszerezésére](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) című témakör **Felhasználói csoport létrehozása** című részében leírtak szerint hozhatja létre.
+5.  Az alkalmazásvédelmi szabályzatok az Azure Active Directory-beli felhasználói csoportokra vonatkoznak. Az alkalmazásvédelmi szabályzatok felhasználói csoportjait a [Csoportok létrehozása a próba-előfizetés felhasználóinak és eszközeinek rendszerezésére](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) című témakör **Felhasználói csoport létrehozása** című részében leírtak szerint hozhatja létre.
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Szerepkörök kiosztása a nem globális rendszergazdáknak
 
-A globális rendszergazdák hozzáférhetnek az [Azure-portálhoz](https://portal.azure.com).  Ha a nem globális rendszergazda felhasználók számára is engedélyezni szeretné a szabályzatok konfigurálását, valamint egyéb mobilalkalmazás-felügyeleti műveletek elvégzését, olvassa el [Az Azure-előfizetések erőforrásaihoz való hozzáférés kezelése szerepkör-hozzárendelésekkel](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/) című cikket.
+A globális rendszergazdák hozzáférhetnek az [Azure-portálhoz](https://portal.azure.com).  Ha a nem globális rendszergazda felhasználók számára is engedélyezni szeretné a szabályzatok konfigurálását, valamint egyéb mobilalkalmazás-felügyeleti műveletek elvégzését, olvassa el [Az Azure-előfizetések erőforrásaihoz való hozzáférés kezelése szerepkör-hozzárendelésekkel](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/) című cikket.
 
 ## <a name="next-steps"></a>További lépések
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

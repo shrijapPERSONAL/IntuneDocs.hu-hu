@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ A feltételes hozzáférés konfigurálásához az alábbiakra van szükség:
 
 -   Rendelkeznie kell egy olyan **Office 365-előfizetéssel, amely tartalmazza az Exchange Online-t (például E3)**, és a felhasználóknak licenccel kell rendelkezniük az Exchange Online-hoz.
 
-- Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/en-us/pricing/details/active-directory/) talál.
+- Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
 
 -  Fontolja meg a választható **Intune szolgáltatások közötti összekötő** beállítását, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t az Exchange Online-hoz csatlakoztatja, és segít Önnek az eszközinformációknak az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján történő kezelésében. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
     -  További információ az [Intune szolgáltatások közötti összekötőjéről](intune-service-to-service-exchange-connector.md).
@@ -83,7 +83,7 @@ Védheti az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **
 A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
 
 -   Az ADAL-alapú hitelesítéssel az Office-ügyfelek végezhetnek böngészőalapú hitelesítést (más néven passzív hitelesítést). A hitelesítéshez a felhasználó egy bejelentkezési weblapra van átirányítva.
--   Ez az új bejelentkezési módszer nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítés** és a **tanúsítványalapú hitelesítés** funkcióit. Részletesebb információt a [How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) (A modern hitelesítés használata) című cikkben olvashat. ADFS-jogcímszabályokat állíthat be a nem modern hitelesítési protokollok letiltására. Részletes útmutatót a [3. forgatókönyv: Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx) című cikk tartalmaz.
+-   Ez az új bejelentkezési módszer nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítés** és a **tanúsítványalapú hitelesítés** funkcióit. Részletesebb információt a [How modern authentication works](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) (A modern hitelesítés használata) című cikkben olvashat. ADFS-jogcímszabályokat állíthat be a nem modern hitelesítési protokollok letiltására. Részletes útmutatót a [3. forgatókönyv: Az O365-höz való hozzáférés teljes letiltása a böngészőalapú alkalmazások kivételével](https://technet.microsoft.com/library/dn592182.aspx) című cikk tartalmaz.
 
 Az Exchange Online-on védheti az **Outlook Web Access-hez (OWA)** az **iOS-** és **Android-** eszközök böngészőin keresztül történő hozzáférést. A hozzáférés csak a szabályzatnak megfelelő eszközök támogatott böngészőiről engedélyezett:
 
@@ -123,7 +123,7 @@ Az asztali Office-alkalmazásokat futtató számítógépekhez beállíthatja az
   >[!NOTE]
     >A feltételes hozzáférés nem támogatott az Intune-számítógépügyfelet futtató számítógépeken.
 
--   Az [Office 365 modern hitelesítésének engedélyezve kell lennie](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), és a számítógépre telepíteni kell az Office legújabb frissítéseit.
+-   Az [Office 365 modern hitelesítésének engedélyezve kell lennie](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), és a számítógépre telepíteni kell az Office legújabb frissítéseit.
 
     A modern hitelesítéssel Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható az Office 2013/Windows-ügyfelekhez. Ez nagyobb biztonságot tesz lehetővé, például a **többtényezős hitelesítés** és a **tanúsítványalapú hitelesítés** funkcióit.
 
@@ -192,7 +192,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 >[!NOTE]
 > Az Azure AD felügyeleti konzolján is létrehozhat feltételes hozzáférési szabályzatot. Az Azure AD felügyeleti konzolon a többtényezős hitelesítéshez hasonló egyéb feltételes hozzáférési szabályzatokon kívül létrehozhatja az Intune-eszközök feltételes hozzáférési szabályzatát is (ennek neve az Azure AD-ben **eszközalapú hozzáférési szabályzat**).
 
->Külső gyártók vállalati alkalmazásaihoz is beállíthat feltételes hozzáférési szabályzatokat, ha az Azure AD támogatja őket (ilyen például a Salesforce és a Box). További részleteket a [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Hogyan állítható be eszközalapú feltételes hozzáférési szabályzat az Azure Active Directoryban az Azure Active Directoryhoz csatlakozó eszközök hozzáférés-vezérlésére) című cikkben olvashat.
+>Külső gyártók vállalati alkalmazásaihoz is beállíthat feltételes hozzáférési szabályzatokat, ha az Azure AD támogatja őket (ilyen például a Salesforce és a Box). További részleteket a [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/) (Hogyan állítható be eszközalapú feltételes hozzáférési szabályzat az Azure Active Directoryban az Azure Active Directoryhoz csatlakozó eszközök hozzáférés-vezérlésére) című cikkben olvashat.
 
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Házirend** > **Feltételes hozzáférés** > **Exchange Online-szabályzat** elemet.

@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ Az alábbiakban áttekintjük az Intune implementálásának egyes feladatait.
 
 Ahogy azt az előző szakaszban említettük, szükség van EMS- vagy Intune-előfizetésre. Ha a szervezet még nem rendelkezik EMS- vagy Intune-előfizetéssel, vegye fel a kapcsolatot a Microsofttal vagy a Microsoft-fiók ügyfélszolgálatával az Enterprise Mobility + Security (EMS) vagy az Intune megvásárlásával kapcsolatban.
 
--   További információk a [Microsoft Intune megvásárlásával](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) kapcsolatban.
+-   További információk a [Microsoft Intune megvásárlásával](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) kapcsolatban.
 
 #### <a name="task-2-add-office-365-subscription"></a>2. feladat: Office 365-előfizetés hozzáadása
 
@@ -116,7 +116,7 @@ A Microsoft Intune E-mail-, Wi-Fi- és VPN-profilokat támogat. A profilok hozz�
 
 A Microsoft Intune a webes, üzletági és a nyilvános áruházból származó alkalmazások telepítését támogatja. Ezen kívül támogatott az olyan alkalmazások felügyelete is, amelyekkel MAM-szabályzatok alkalmazásával integrálva van az Intune SDK. Alkalmazások hozzáadása és telepítése az Intune felügyeleti portálon, az Alkalmazások munkaterületen végezhető el. MAM-szabályzatok hozzáadása és telepítése az Intune felügyeleti portálon, a Házirend munkaterületen végezhető el. Az alkalmazásokat szükség szerint adja hozzá, és az Intune üzembe helyezésének használatieset-forgatókönyveit és a követelményeket figyelembe véve telepítse őket a célcsoportoknál.
 
--   További információk: [alkalmazások hozzáadása és telepítése](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   További információk: [alkalmazások hozzáadása és telepítése](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>11. feladat: megfelelőségi szabályzatok hozzáadása és telepítése
 

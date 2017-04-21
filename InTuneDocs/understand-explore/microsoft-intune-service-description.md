@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ A Microsoft Intune egy felhőalapú szolgáltatás, amellyel Windows, Mac OS X, 
 
 A Microsoft az Intune bevezetési értékelemet a jogosult csomagokban foglalt jogosult szolgáltatások esetében kínálja. Ez lehetővé teszi, hogy távoli segítséget kérjen a Microsoft szakértőitől az Intune-környezet üzembe helyezéséhez. A bevezetési értékelemmel kapcsolatos további információkért lásd: [A Microsoft Intune bevezetési értékelemének leírása](http://go.microsoft.com/fwlink/?LinkId=619281).
 
-Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
+Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
 
 > [!NOTE]
 > Ha munkahelyének van munkahelyi vagy iskolai Microsoft Online Services-fiókja, és előfordulhat, hogy a próbaidőszak leteltével élesben folytatja ennek az Intune-előfizetésnek a használatát, akkor az oldalon válassza a **Bejelentkezés** lehetőséget, és a hitelesítéshez használja a munkahelye globális rendszergazdai fiókját. Ez a művelet gondoskodik arról, hogy az Intune próbaverzió a meglévő munkahelyi vagy iskolai fiókhoz kapcsolódjon.
@@ -70,13 +70,13 @@ Az Intune többféleképpen is beállítható annak érdekében, hogy biztosíth
 
 -**Az Intune önálló konfigurációja.** A munkahelye mobileszközeinek felügyelete az Intune webalapú felügyeleti konzoljával végezhető. Az Intune bármilyen helyszíni informatikai infrastruktúra nélkül használható. Ha azonban az Intune-t az Active Directory Domain Services szolgáltatással együtt használja, a Domain Services által felügyelt tartományi felhasználói fiókokat az Intune-nal is használhatja.
 
--**Az Intune és a System Center Configuration Manager együttes használata.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. Ezzel a konfigurációval a munkahelye összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolján felügyelheti. A Configuration Manager nagyszámú mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. A Configuration Managerrel kapcsolatos további információkért lásd: [Hibrid mobileszköz-felügyelet a System Center Configuration Managerrel és a Microsoft Intune-nal](https://technet.microsoft.com/library/mt627883.aspx). Az Ön számára leginkább megfelelő módszer kiválasztásához további segítséget talál a [Választás a Microsoft Intune önálló és hibrid mobileszköz-kezelése között a Configuration Manager segítségével](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-**Az Intune és a System Center Configuration Manager együttes használata.** A Configuration Manager-kezelőkonzollal felügyelheti a vállalat számítógépeit és mobileszközeit. Ezzel a konfigurációval a munkahelye összes eszközét egyetlen konzolon, a Configuration Manager felügyeleti konzolján felügyelheti. A Configuration Manager nagyszámú mobileszköz, kiszolgáló és számítógép felügyeletét támogatja. A Configuration Managerrel kapcsolatos további információkért lásd: [Hibrid mobileszköz-felügyelet a System Center Configuration Managerrel és a Microsoft Intune-nal](https://technet.microsoft.com/library/mt627883.aspx). Az Ön számára leginkább megfelelő módszer kiválasztásához további segítséget talál a [Választás a Microsoft Intune önálló és hibrid mobileszköz-kezelése között a Configuration Manager segítségével](https://technet.microsoft.com/library/mt706478.aspx).
 
 
 ## <a name="learn-more-about-intune"></a>További tudnivalók az Intune-ról
 Az alábbi forrásokból többet is megtudhat az Intune-ról:
 
-- A [Microsoft Intune Adatvédelmi központja](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) információkkal szolgál az Intune biztonsági, adatvédelmi és megfelelőségi vonatkozásairól, ezenkívül az Intune minősítései közül is bemutat néhányat.
+- A [Microsoft Intune Adatvédelmi központja](https://www.microsoft.com/server-cloud/products/intune-trust-center/) információkkal szolgál az Intune biztonsági, adatvédelmi és megfelelőségi vonatkozásairól, ezenkívül az Intune minősítései közül is bemutat néhányat.
 
 - [A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 

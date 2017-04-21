@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
    A munkahelyi fiók megvásárlásához bejelentkezéskor a céges fiókadatok megadásával csatlakozzon a [Windows Phone-fejlesztői központhoz](http://go.microsoft.com/fwlink/?LinkId=268442) . Ezt a kérelmet engedélyeznie kell egy vállalati tisztviselőnek ahhoz, hogy kódaláíró tanúsítványt kaphasson.
 
 2. **Céges Symantec-tanúsítvány beszerzése**<br>
-  Vásároljon tanúsítványt a [Symantec webhelyéről](http://go.microsoft.com/fwlink/?LinkId=268441) Symantec-azonosítója használatával. A tanúsítvány megvásárlása után a Windows Phone-fejlesztői központban regisztrált fiókjában kijelölt munkahelyi jóváhagyó kap egy e-mailt, amely a tanúsítványkérelem jóváhagyását kéri. A Symantec-tanúsítványra vonatkozó követelményekről a [Miért szükséges a Windows Phone-telefonok kezeléséhez Symantec-tanúsítvány?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) című részben talál további információkat. „Gyakori kérdések a Windows Phone rendszerű mobileszközök kezelésével kapcsolatban” szakaszban.
+  Vásároljon tanúsítványt a [Symantec webhelyéről](http://go.microsoft.com/fwlink/?LinkId=268441) Symantec-azonosítója használatával. A tanúsítvány megvásárlása után a Windows Phone-fejlesztői központban regisztrált fiókjában kijelölt munkahelyi jóváhagyó kap egy e-mailt, amely a tanúsítványkérelem jóváhagyását kéri. A Symantec-tanúsítványra vonatkozó követelményekről a [Miért szükséges a Windows Phone-telefonok kezeléséhez Symantec-tanúsítvány?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) című részben talál további információkat. „Gyakori kérdések a Windows Phone rendszerű mobileszközök kezelésével kapcsolatban” szakaszban.
 
 3.  **Tanúsítványok importálása**<br>
     Amint jóváhagyják a kérelmét, kapni fog egy e-mailt, amely a tanúsítványok importálására vonatkozó útmutatást tartalmaz. A tanúsítványok importálásához kövesse az e-mailben szereplő utasításokat.

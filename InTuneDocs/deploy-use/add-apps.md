@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Mielőtt elkezdi az alkalmazások telepítését a Microsoft Intune-nal, fordít
 
 |Alkalmazás típusa|Részletek|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). Az általános parancssori kapcsolók listája a [Microsoft Windows Installer eszköz parancssori kapcsolói](https://support.microsoft.com/en-us/kb/227091) című dokumentumban találhatók.<br><br>Az alkalmazás telepítőprogramja által igényelt minden további fájlnak és mappának elérhetőnek kell lennie az alkalmazás telepítési fájljai számára megadott helyen.<br><br>A legtöbb esetben a Windows Installer-fájlok (.msi) és a Windows Installer-javítófájlok (.msp) fájlok Intune általi telepítése nem igényel parancssori argumentumokat. Tanulmányozza az alkalmazás dokumentációját.<br><br>Ha parancssori argumentumokra van szükség, azokat Név=Érték párként kell megadni (például TRANSFORMS=custom_transform.mst).<br><br>Ez az alkalmazástípus csak az Intune szoftverügyfelet futtató számítógépekre vonatkozik.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Az ilyen típusú alkalmazásnak támogatnia kell a felhasználói beavatkozás nélküli, csendes telepítést. Az alkalmazás dokumentációjának tartalmaznia kell a megfelelő parancssori kapcsolókat az alkalmazás csendes telepítéséhez (például **/q**). Az általános parancssori kapcsolók listája a [Microsoft Windows Installer eszköz parancssori kapcsolói](https://support.microsoft.com/kb/227091) című dokumentumban találhatók.<br><br>Az alkalmazás telepítőprogramja által igényelt minden további fájlnak és mappának elérhetőnek kell lennie az alkalmazás telepítési fájljai számára megadott helyen.<br><br>A legtöbb esetben a Windows Installer-fájlok (.msi) és a Windows Installer-javítófájlok (.msp) fájlok Intune általi telepítése nem igényel parancssori argumentumokat. Tanulmányozza az alkalmazás dokumentációját.<br><br>Ha parancssori argumentumokra van szükség, azokat Név=Érték párként kell megadni (például TRANSFORMS=custom_transform.mst).<br><br>Ez az alkalmazástípus csak az Intune szoftverügyfelet futtató számítógépekre vonatkozik.|
 |**Alkalmazáscsomag az Androidhoz (&#42;.apk)**|Android-alkalmazások telepítéséhez egy érvényes .apk csomaggal kell rendelkeznie.|
 |**Alkalmazáscsomag az iOS-hez (&#42;.ipa)**|iOS-alkalmazások telepítéséhez egy érvényes .ipa csomaggal kell rendelkeznie.<br><br>Az .ipa csomagnak Apple-aláírással kell rendelkeznie, és a kiépítési profilban lévő lejárati dátumnak érvényesnek kell lennie. Az Intune képes terjeszteni a vállalati tanúsítvánnyal rendelkező iOS-alkalmazásokat.<br><br>A szolgáltatás nem minden Apple-fejlesztői tanúsítvánnyal rendelkező alkalmazást támogat.<br><br>A vállalatnak regisztrálnia kell az iOS Developer Enterprise programban.<br><br>Győződjön meg arról, hogy a szervezet tűzfala lehetővé teszi a hozzáférést az iOS üzembe helyezési és hitelesítő webhelyeihez.<br><br>Nem szükséges jegyzékfájlt (.plist) telepítenie az alkalmazással.|
 |**Windows Phone-alkalmazáscsomag (&#42;.xap, .appx, .appxbundle)**|Alkalmazások telepítéséhez vállalati mobil-kódaláíró tanúsítvánnyal kell rendelkeznie. Részletekért olvassa el a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](set-up-windows-device-management-with-microsoft-intune.md) című cikket.|
@@ -49,7 +49,7 @@ Külső hivatkozás használata, ha az alábbiakkal rendelkezik:
 
 A külső hivatkozásokon alapuló alkalmazásokat nem tárolja a rendszer az Intune felhőbeli tárhelyén.
 ### <a name="managed-ios-app-from-the-app-store"></a>**Felügyelt iOS-alkalmazás az App Store-ból**
-A felügyelt iOS-alkalmazásokkal az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését végezheti el. A felügyelt iOS-alkalmazásokkal [mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is hozzárendelhet a [kompatibilis alkalmazásokhoz](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
+A felügyelt iOS-alkalmazásokkal az App Store áruházban ingyenesen elérhető iOS-alkalmazások felügyeletét és telepítését végezheti el. A felügyelt iOS-alkalmazásokkal [mobilalkalmazás-felügyeleti szabályzatokat](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) is hozzárendelhet a [kompatibilis alkalmazásokhoz](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx), és ellenőrizheti az alkalmazások állapotát a felügyeleti konzolon.<br /><br />A felügyelt iOS-alkalmazásokat nem tárolja az Intune felhőbeli tárhelye.
 
 > [!TIP]
 > A mobileszközökre vonatkozó beállítások csak azután lesznek elérhetők, ha a [Mobileszköz-kezelő szolgáltató megadása](prerequisites-for-enrollment.md) beállítást az Intune-ra állította.

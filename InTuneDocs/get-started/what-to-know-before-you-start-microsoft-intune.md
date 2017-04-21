@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ A különféle felügyeleti tevékenységek elvégzésére a következő két fe
 |**Munkahelyi portál webhely**     |**Mobileszközökön:** használja a támogatott platformhoz tartozó alapértelmezett webböngészőt   <br /><br />**Windows rendszerű számítógépeken:** Internet Explorer 10 vagy újabb, illetve Microsoft Edge<br /><br />**Mac OS X 10.9 vagy újabb:** Apple Safari    |
 
 > [!Note]
-> A Microsoft Edge és a mobilböngészők nem támogatottak a felügyeleti konzolon, mivel nem támogatják a [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx) összetevőt. Az Intune-konzol egy idő múlva kikerül a Silverlight-megoldásból, és az Intune összes mobileszköze és alkalmazásfelügyeleti funkciója végül [az új Microsoft Azure portálon válik majd elérhetővé](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> A Microsoft Edge és a mobilböngészők nem támogatottak a felügyeleti konzolon, mivel nem támogatják a [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) összetevőt. Az Intune-konzol egy idő múlva kikerül a Silverlight-megoldásból, és az Intune összes mobileszköze és alkalmazásfelügyeleti funkciója végül [az új Microsoft Azure portálon válik majd elérhetővé](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 A portálra szolgáltatás-rendszergazdák, valamint globális rendszergazda szerepkörrel rendelkező bérlői rendszergazdák jelentkezhetnek be. A felügyeleti konzol eléréséhez a fióknak az Intune használatához szükséges licenccel, illetve **Engedélyezett** bejelentkezési állapottal kell rendelkeznie.

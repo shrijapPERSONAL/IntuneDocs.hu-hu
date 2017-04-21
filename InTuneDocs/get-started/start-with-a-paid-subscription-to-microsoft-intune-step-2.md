@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 86062a73092f6e438de7a315d9ec1c2f395c9c50
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,22 +49,17 @@ A kezdeti tartománynév nem nevezhető át és nem távolítható el. Az Intune
 3. Kattintson a **Tartomány felvétele** gombra, és írja be az egyéni tartománynevet.
 
 4. A megnyíló **Tartomány hitelesítése** párbeszédpanelen megtalálhatja a DNS-szolgáltatón létrehozandó TXT-rekord értékeit.
-    - **GoDaddy-felhasználók:** Az Office 365 felügyeleti portálja a GoDaddy bejelentkezési oldalára irányít át. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
-    - **Register.com-felhasználók:** Kövesse a TXT típusú rekord létrehozására vonatkozó [részletes utasításokat](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify).
+    - **GoDaddy-felhasználók:** Az Office 365 felügyeleti portálja a GoDaddy bejelentkezési oldalára irányít át. A hitelesítő adatok megadása és a tartományváltást engedélyező megállapodás elfogadása után a TXT-rekord automatikusan létrejön. Alternatív módszerként [a TXT-rekord manuálisan is létrehozható](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Register.com-felhasználók:** Kövesse a TXT típusú rekord létrehozására vonatkozó [részletes utasításokat](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify).
 
     > [!TIP]
     > A DNS-szolgáltató módosításakor hozzon létre egy DNS-aliast (CNAME) a [Windows-eszközök regisztrációjához](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
-Az egyéni tartományok hozzáadásának és hitelesítésének lépései [az Azure Active Directoryban is végrehajthatók](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+Az egyéni tartományok hozzáadásának és hitelesítésének lépései [az Azure Active Directoryban is végrehajthatók](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
-Tudjon meg többet [a kezdeti onmicrosoft.com tartománnyal kapcsolatban (Office 365)](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US).
+Tudjon meg többet [a kezdeti onmicrosoft.com tartománnyal kapcsolatban (Office 365)](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A).
 
 >[!div class="step-by-step"]
 
 >[&larr; **Bejelentkezés az Intune-ba**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Felhasználók hozzáadása az Intune-hoz** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

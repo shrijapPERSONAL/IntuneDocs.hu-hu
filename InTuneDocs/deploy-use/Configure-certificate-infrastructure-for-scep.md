@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>SCEP-tanúsítványinfrastruktúra konfigurálása
@@ -33,7 +33,7 @@ Ez a témakör a SCEP-tanúsítványprofilok létrehozáshoz és telepítéséhe
 -  **Hitelesítésszolgáltató** (CA): Olyan vállalati hitelesítésszolgáltató (CA), amely a Windows Server 2008 R2 vagy újabb rendszer vállalati verzióján fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx).
     Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
 I
--  **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására. Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására. Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: Az Intune felügyeleti konzollal töltse le a **Certificate Connector** (Tanúsítvány-összekötő) telepítőjét (**ndesconnectorssetup.exe**). Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt.
 -  **Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) használhat olyan kiszolgálót, amelyen a Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
@@ -51,7 +51,7 @@ Az internet és a szegélyhálózat között engedélyezze a 443-as port haszná
 
 A peremhálózat és a megbízható hálózat között engedélyezze a tartomány eléréséhez szükséges összes portot és protokollt a tartományhoz csatlakozó NDES-kiszolgálón. Az NDES-kiszolgálónak el kell tudnia érnie a tanúsítványkiszolgálót, a DNS-kiszolgálókat, a Configuration Manager-kiszolgálókat és a tartományvezérlőket.
 
-Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásproxyn](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), a [webalkalmazás-proxyn](https://technet.microsoft.com/en-us/library/dn584107.aspx) vagy egy külső proxyn érdemes közzétenni.
+Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásproxyn](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), a [webalkalmazás-proxyn](https://technet.microsoft.com/library/dn584107.aspx) vagy egy külső proxyn érdemes közzétenni.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Tanúsítványok és sablonok

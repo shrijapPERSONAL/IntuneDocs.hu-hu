@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -49,7 +49,7 @@ A vállalati adatait védheti MAM-szabályzatokkal olyan eszközökön, amelyek 
 
 Ahhoz, hogy egy alkalmazáshoz MAM-szabályzat legyen társítható, az alkalmazásnak tartalmaznia kell a Microsoft Intune szoftverfejlesztői készletet (SDK), vagy használhatja az alkalmazásburkoló eszközt.
 
-Egyes alkalmazások, mint például a Microsoft Office beépítve tartalmazzák az Intune alkalmazásfejlesztő készletet (SDK-t). A támogatott alkalmazások teljes listáját a [Microsoft Intune mobilalkalmazás-galériában](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), a Microsoft Intune alkalmazáspartnerek oldalán láthatja. Ha szeretné megtekinteni a támogatott forgatókönyveket és platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, válassza ki az adott alkalmazást.
+Egyes alkalmazások, mint például a Microsoft Office beépítve tartalmazzák az Intune alkalmazásfejlesztő készletet (SDK-t). A támogatott alkalmazások teljes listáját a [Microsoft Intune mobilalkalmazás-galériában](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), a Microsoft Intune alkalmazáspartnerek oldalán láthatja. Ha szeretné megtekinteni a támogatott forgatókönyveket és platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, válassza ki az adott alkalmazást.
 
 [Egyéni kialakítású üzleti alkalmazásait](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) is alkalmassá teheti a MAM-szabályzatokkal való használatra.
 

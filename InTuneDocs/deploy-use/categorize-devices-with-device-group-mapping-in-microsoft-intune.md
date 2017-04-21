@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 57c739444c18d12a6d7ee8ca591f9a1dd72985d7
+ms.lasthandoff: 04/14/2017
 
 ---
 
@@ -78,7 +78,7 @@ Azure Active Directory biztonsági csoportok létrehozásakor az eszközkategór
 
 Ebben a lépésben az eszközkategória és az eszközkategória-név alapján dinamikus csoportokat fog létrehozni az Azure-portálon.
 
-A folytatáshoz tekintse meg a [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) (Speciális szabályok létrehozása attribútumok használatával) című témakört az Azure Active Directory dokumentációjában.
+A folytatáshoz tekintse meg a [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) (Speciális szabályok létrehozása attribútumok használatával) című témakört az Azure Active Directory dokumentációjában.
 Az ebben a témakörben ismertetett információk alapján hozzon létre speciális szabállyal egy eszközcsoportot a **deviceCategory** attribútum segítségével.
 Például (**device.deviceCategory -eq** "<*az Intune felügyeleti konzolján lekért eszközkategória-név*>")
 

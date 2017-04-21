@@ -15,9 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ Ez az útmutató akkor a leghasznosabb, ha eleget tesz a következő előfeltét
 > [!NOTE]
 > A Windows még nem támogatott platform Office mobilalkalmazások esetén. A mobilalkalmazás-kezelés regisztráció nélkül egyelőre nem kompatibilis az Exchange-el vagy a helyszíni SharePointtal. Csak az online verziókban tárolt adatot tudja megvédeni.
 
-Jelen útmutató segítséget nyújt abban hogy, hogyan védheti meg vállalatát adatvesztéssel szemben azáltal, hogy jelszavakat és adattitkosítást kényszerít ki szabályzatokkal olyan mobilalkalmazásokon, amelyeket a beosztottjai bizalmas adat eléréséhez használnak, bármilyen eszközkezelési megoldásba való teljes regisztráció nélkül. A Microsoft Intune lehetővé teszi, hogy mobilalkalmazás-kezelési (MAM) szabályzatokat állítson be az Office mobilalkalmazásokon [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) és [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) rendszereken. Így az O365 adatok védelme érdekében a felhasználóknak nem kell egy mobileszköz-kezelési megoldásban regisztrálni eszközeiket, mégis megmarad a gördülékeny végfelhasználói élményük az Office mobilalkalmazásaival.
+Jelen útmutató segítséget nyújt abban hogy, hogyan védheti meg vállalatát adatvesztéssel szemben azáltal, hogy jelszavakat és adattitkosítást kényszerít ki szabályzatokkal olyan mobilalkalmazásokon, amelyeket a beosztottjai bizalmas adat eléréséhez használnak, bármilyen eszközkezelési megoldásba való teljes regisztráció nélkül. A Microsoft Intune lehetővé teszi, hogy mobilalkalmazás-kezelési (MAM) szabályzatokat állítson be az Office mobilalkalmazásokon [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) és [Android](https://products.office.com/mobile/office-mobile-apps-for-android) rendszereken. Így az O365 adatok védelme érdekében a felhasználóknak nem kell egy mobileszköz-kezelési megoldásban regisztrálni eszközeiket, mégis megmarad a gördülékeny végfelhasználói élményük az Office mobilalkalmazásaival.
 
 ## <a name="how-do-i-do-it"></a>Mit kell ehhez tennem?
 1.    [Az alkalmazásadatok védelmének áttekintése](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -51,5 +51,5 @@ Jelen útmutató segítséget nyújt abban hogy, hogyan védheti meg vállalatá
 ## <a name="additional-information"></a>További információ:
 - [Mit tapasztalnak a végfelhasználók a MAM használatát támogató alkalmazások és a Microsoft Intune használata esetén?](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a Microsoft Intune-nal történő mobilalkalmazás-kezelésre](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [A Microsoft Intune-alkalmazáspartnerek listájának megtekintése](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
+- [A Microsoft Intune-alkalmazáspartnerek listájának megtekintése](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

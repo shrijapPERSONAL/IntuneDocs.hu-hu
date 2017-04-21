@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 
 1. Jelentkezzen be az [Azure AD felügyeleti portálra](https://manage.windowsazure.com) és válassza ki előfizetését. 
   ![képernyőkép Azure AD-oldalról a bérlő nevével](../media/mtp/aad_tenant_name.png)
-2. Az előfizetés nevének kiválasztása után megjelenő URL-cím tartalmazza az előfizetés azonosítóját.  Ha probléma merül fel az előfizetési azonosító lékérdezésekor, további információt talál ebben a [Microsoft-támogatási cikkben](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US). 
+2. Az előfizetés nevének kiválasztása után megjelenő URL-cím tartalmazza az előfizetés azonosítóját.  Ha probléma merül fel az előfizetési azonosító lékérdezésekor, további információt talál ebben a [Microsoft-támogatási cikkben](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b). 
 3. Kérdezze le az Azure AD-csoportazonosítót. A Lookout konzol két hozzáférési szintet támogat:  
   * **Teljes hozzáférés:** Az Azure AD-rendszergazda létrehozhat egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból álló csoportot is.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
   * **Korlátozott hozzáférés:** a csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
 
-  Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/en-us/articles/114094105653).
+  Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/articles/114094105653).
 
   A **Csoportobjektum azonosítója** az **Azure AD felügyeleti konzolján** , a csoport **Tulajdonságok** lapján található.
 
@@ -127,7 +127,7 @@ Ha e-mailben szeretne értesítéseket kapni a veszélyforrásokról, jelentkezz
 ![képernyőkép a beállítások lapról a felhasználói fiókkal](../media/mtp/lookout-mtp-email-notifications.png) Ha már nem szeretne email értesítéseket kapni, állítsa az értesítés típusa melletti kapcsolót **KI** értékre.
 
 ### <a name="configure-threat-classification"></a>A veszélyforrások besorolásának konfigurálása
-A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési típusokat. A [Lookout veszélyforrás-besorolásaiban](http://personal.support.lookout.com/hc/en-us/articles/114094130693) alapértelmezett kockázati szintek tartoznak a fenyegetésekhez. Ezek bármikor módosíthatók a vállalat igényeinek megfelelően.
+A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési típusokat. A [Lookout veszélyforrás-besorolásaiban](http://personal.support.lookout.com/hc/articles/114094130693) alapértelmezett kockázati szintek tartoznak a fenyegetésekhez. Ezek bármikor módosíthatók a vállalat igényeinek megfelelően.
 
 ![képernyőkép a szabályzat oldaláról a fenyegetések besorolásával](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési
 ## <a name="watching-enrollment"></a>A regisztráció figyelése
 A telepítés befejezése után a Lookout Mobile Threat Defense elkezdi lekérdezni az Azure AD-ből azokat az eszközöket, amelyek megfelelnek a megadott regisztrációs csoportoknak.  A regisztrált eszközök adatai az Eszközök modulban találhatók.  Az eszközök kezdeti állapota mindig „folyamatban” lesz.  Az eszközállapot akkor frissül, ha a Lookout for Work alkalmazás az illető eszközön telepítve lett, megnyitották és aktiválták azt.  A Lookout for Work alkalmazás eszközökre való elküldéséről további információt talál a [Lookout for Work alkalmazások konfigurálása és telepítése](configure-and-deploy-lookout-for-work-apps.md) című témakörben.
 ## <a name="next-steps"></a>További lépések
-[Lookout MTP-kapcsolat engedélyezése az Intune-ban](enable-lookout-mtp-connection-in-intune.md)
+[Lookout MTP-kapcsolat engedélyezése az Intune-ban](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

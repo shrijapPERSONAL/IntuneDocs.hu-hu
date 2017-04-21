@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 **Mi az MAM?** Az [Intune mobilalkalmazás-kezelés](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) olyan Intune-beli felügyeleti összetevők csoportja, amelyek lehetővé teszik mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
 
-**Milyen előnyöket kínál az MAM-alkalmazásvédelem?** Az MAM védi munkahelye adatait az alkalmazáson belül. Az MAM-WE segítségével a bizalmas adatokat tartalmazó munkahelyi vagy iskolai alkalmazások szinte bármilyen eszközön felügyelhetők, beleértve a személyes tulajdonú eszközöket is saját eszközök használata (BYOD) esetén. Több irodai alkalmazás felügyelhető az Intune MAM-mel, például a Microsoft Office-alkalmazások. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) hivatalos listáját.
+**Milyen előnyöket kínál az MAM-alkalmazásvédelem?** Az MAM védi munkahelye adatait az alkalmazáson belül. Az MAM-WE segítségével a bizalmas adatokat tartalmazó munkahelyi vagy iskolai alkalmazások szinte bármilyen eszközön felügyelhetők, beleértve a személyes tulajdonú eszközöket is saját eszközök használata (BYOD) esetén. Több irodai alkalmazás felügyelhető az Intune MAM-mel, például a Microsoft Office-alkalmazások. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
 **Milyen eszközkonfigurációkat támogat az MAM?** Az Intune MAM két konfigurációt támogat:
   1. **Intune MDM + MAM**: az MAM első indításakor támogatott első konfiguráció. A rendszergazda csak az Intune mobileszköz-kezelésben (MDM) regisztrált eszközökön felügyelheti az MAM- és alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Az MDM + MAM-et használó alkalmazások felügyeletéhez a http://manage.microsoft.com webhelyen elérhető önálló Intune-konzolra van szükség.
@@ -48,7 +49,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatokkal felügyelhető alkalmazások
 
-**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](../develop/intune-app-sdk.md) által előkészített vagy az [Intune alkalmazásburkoló eszköz](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) hivatalos listáját.
+**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](../develop/intune-app-sdk.md) által előkészített vagy az [Intune alkalmazásburkoló eszköz](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
 **Mik az alkalmazásvédelmi szabályzatok Intune használatára előkészített alkalmazáson való használatának alapkövetelményei?**
   1. A végfelhasználónak rendelkeznie kell egy Azure Active Directory- (AAD-) fiókkal. Az Intune-felhasználók Azure Active Directoryban történő létrehozásáról lásd: [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md).
@@ -59,18 +60,18 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
   4. A végfelhasználónak saját AAD-fiókjával be kell jelentkeznie az alkalmazásba.
 
-**Mik az [Outlook mobilalkalmazás](https://www.microsoft.com/en-us/outlook-com/mobile/) használatának további feltételei?**
+**Mik az [Outlook mobilalkalmazás](https://www.microsoft.com/outlook-com/mobile/) használatának további feltételei?**
 
   1. A végfelhasználónak telepítenie kell az Outlook mobilalkalmazást az eszközére.
 
-  2. A végfelhasználónak [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) postaládával és az AAD-fiókjához kapcsolt licenccel kell rendelkeznie.
+  2. A végfelhasználónak [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) postaládával és az AAD-fiókjához kapcsolt licenccel kell rendelkeznie.
 
   >[!NOTE]
   > Az Outlook mobilalkalmazás jelenleg csupán a Microsoft Exchange Online-t támogatja, a helyszíni Exchange-t vagy az Office 365 dedikált verzióban található Exchange-t nem.
 
 **Mik a [Word, Excel és PowerPoint](https://products.office.com/business/office) alkalmazások használatának további feltételei?**
 
-  1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat és egy felhőalapú társzolgáltatás-fiókot a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
+  1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat és egy felhőalapú társzolgáltatás-fiókot a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
 
   2. A végfelhasználónak rendelkeznie kell az eszközére telepített [OneDrive](https://onedrive.live.com/about/) alkalmazással, és be kell jelentkeznie az AAD-fiókjába.
 
@@ -140,9 +141,4 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 - [A mobilalkalmazás-kezelés beállításának ellenőrzése](../deploy-use/validate-mobile-application-management.md)
 - [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására a Microsoft Intune-ban](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Microsoft Intune-támogatás kérése](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
