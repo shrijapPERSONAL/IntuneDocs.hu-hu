@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>Hogyan kérhetnek a rendszergazdák Microsoft Intune-támogatást?
+# <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune-hoz a Microsoft globális műszaki, értékesítés előtti, számlázási és előfizetési támogatást nyújt. A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez. Az online műszaki támogatás angolul és japánul érhető el. Telefonos támogatás és online számlázási támogatás más nyelveken is elérhető.
 
 Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier támogatással rendelkező ügyfeleknél eljárási kérdés esetén (például hogyan kell konfigurálni egy Intune funkciót) költségek lépnek fel.
+
+>[!IMPORTANT]
+> Az Intune-nal használt nem Microsoft-termékek (például SaaSwedo, Cisco vagy Lookout) technikai támogatásánál először vegye fel a kapcsolatot a termék gyártójával, és ellenőrizze, hogy megfelelően konfigurálta-e azokat, mielőtt az Intune-támogatástól kérne segítséget.
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Segítség keresése támogatási jegy megnyitása nélkül
 
@@ -39,6 +42,13 @@ Mielőtt támogatási jegyet hozna létre, keressen válaszokat és információ
 Tegyen fel kérdést a Microsoft technikai szakembereinek, vagy kezdeményezzen velük beszélgetést! [A Microsoft Intune TechNet fórumán](https://social.technet.microsoft.com/Forums/home) válaszokat és összefüggéseket kereshet.
 
 ![A Microsoft Intune TechNet fóruma](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Ismerkedés a fórummal
+
+1. A fórumok lap Fórumok mezőjébe írja be a Microsoft Intune szöveget, majd válassza ki a listából.<br>
+![Az Intune-fórum kiválasztása vezérlőelem](./media/forum-select-intune.png)
+2. Ezt követően a Microsoft Intune megjelenik a kiválasztott fórumok listájában.<br>
+![Intune kiválasztva a fórumok között](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>A Microsoft Intune UserVoice termék-visszajelzési webhelye
 

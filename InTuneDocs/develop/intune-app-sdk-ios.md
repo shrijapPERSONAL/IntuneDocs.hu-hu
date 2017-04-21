@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 1d2cb0d4b9442262c562e559a675f5a4a28ee572
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -71,7 +71,12 @@ Az iOS-hoz készült Intune App SDK révén minimális kódmódosítással adhat
 
 Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
-1. **1. lehetőség**: Csatolás a `libIntuneMAM.a` erőforrástárhoz. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
+1. **1. lehetőség (ajánlott)**: Az `IntuneMAM.framework` csatolása a projekthez. Húzza az `IntuneMAM.framework` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
+
+    > [!NOTE]
+    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. További információért lásd [Az alkalmazás beküldése az App Store-ba](#Submit-your-app-to-the-App-Store) című témakört.
+
+2. **2. lehetőség**: Csatolás a `libIntuneMAM.a` erőforrástárhoz. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
 
     ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -84,11 +89,6 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
         > [!NOTE]
         > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
-
-2. **2. lehetőség**: Az `IntuneMAM.framework` csatolása a projekthez. Húzza az `IntuneMAM.framework` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
-
-    > [!NOTE]
-    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. Lásd [Az alkalmazás beküldése az App Store-ba](#Submit-your-app-to-the-App-Store) című témakört.
 
 3. Vegye fel a következő iOS-keretrendszereket a projektbe:
     * MessageUI.framework
@@ -127,22 +127,21 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
     </array>
     ```
 
-7. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre.
-
-    Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására:
+7. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
 
     1. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
 
-    2. Vegye fel a `com.microsoft.intune.mam` megosztott kulcslánc-csoportot. Ez a hozzáférési csoport az Intune App SDK-adatok tárolására szolgál.
+    2. Húzza a `com.microsoft.intune.mam` megosztott kulcslánccsoportot a meglévő hozzáférési csoportokhoz. Ez a hozzáférési csoport az Intune App SDK-adatok tárolására szolgál.
 
     3. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
 
-    ![Intune App SDK (iOS) – kulcsláncok megosztása](../media/intune-app-sdk-ios-keychain-sharing.png)
+        4. Vegye fel a `com.microsoft.workplacejoin` csoportot a meglévő hozzáférési csoportokba.
+            ![Intune App SDK (iOS) – kulcsláncok megosztása](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    Ha a jogosultságokat tartalmazó fájlt használja a kulcslánc-hozzáférési csoport létrehozására, az `$(AppIdentifierPrefix)` előtaggal együtt illessze be a kulcslánc-hozzáférési csoportot a jogosultságokat tartalmazó fájlba. Példa:
+      5. Ha a jogosultságokat tartalmazó fájlt használja a kulcslánc-hozzáférési csoport létrehozására, az `$(AppIdentifierPrefix)` előtaggal együtt illessze be a kulcslánc-hozzáférési csoportot a jogosultságokat tartalmazó fájlba. Példa:
 
-          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > A jogosultságokat tartalmazó fájl egy XML-fájl, amely minden mobilalkalmazásnál egyedi, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban.
@@ -151,42 +150,37 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
 8. Az iOS 9 és újabb rendszerre fejlesztett mobilalkalmazások esetében az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Emellett minden egyes felsorolt protokollhoz vegyen fel egy új protokollt, és fűzze hozzá a `-intunemam` paramétert. A `http-intunemam`, `https-intunemam` és `ms-outlook-intunemam` elemet is fel kell venni a tömbbe.
 
-9. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, vegye fel ezeket a csoportokat az `AppGroupIdentifiers` szótárba, az IntuneMAMSettings kulcs karakterlánctömbjeként.
-
-10. Csatolja a mobilalkalmazást az iOS rendszerhez készült Azure Directory Authentication Library (ADAL) erőforrástárhoz. Az Objective-C-hez készült ADAL-könyvtár [elérhető a GitHubon](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
-
-    > [!NOTE]
-    > Javasolt az alkalmazásokat az ADAL-könyvtár legújabb/működő verziójához kapcsolni.
-
-11. Húzza az `ADALiOSBundle.bundle` erőforráscsomagot a **Copy Bundle Resources** (Erőforráscsomagok másolása) terület **Build Phases** (Összeállítási fázisok) elemére a projektbe való felvételhez.
-
-12. Használja a `-force_load PATH_TO_ADAL_LIBRARY` összekötő lehetőséget a könyvtárhoz kapcsolódáshoz.
-
-    Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre a kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét.
+9. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, karakterlánctömbként vegye fel ezeket a csoportokat az **IntuneMAMSettings** szótárba a `AppGroupIdentifiers` kulcs alatt.
 
 
 
-## <a name="configure-azure-directory-authentication-library-adal"></a>Az Azure Directory Authentication (ADAL) konfigurálása (nem kötelező)
+## <a name="configure-azure-active-directory-authentication-library-adal"></a>Az Azure Active Directory Authentication Library (ADAL) konfigurálása (nem kötelező)
 
-Az Intune App SDK az ADAL-t hitelesítésre és a feltételes indítási forgatókönyvek készítésére használja. Az ADAL-t használja ezenkívül arra, hogy regisztrálja a felhasználó identitását a MAM-szolgáltatásnál az eszközök regisztrációja nélkül történő felügyelet esetére.
+Az Intune App SDK az [Azure Active Directory Authentication Libraryt](https://github.com/AzureAD/azure-activedirectory-library-for-objc) hitelesítésre és a feltételes indítási forgatókönyvek készítésére használja. Az ADAL-t használja ezenkívül arra, hogy regisztrálja a felhasználó identitását a MAM-szolgáltatásnál az eszközök regisztrációja nélkül történő felügyelet esetére.
 
-Az ADAL használata során az alkalmazáshoz tartozó jogkivonatok biztonsága érdekében az alkalmazások használata legtöbbször az Azure Active Directoryban (AAD) való regisztrációhoz, valamint egyedi azonosító (ClientID) és egyéb azonosítók lekéréséhez kötött. Az Intune App SDK az alapértelmezett regisztrációs értékeket használja, amikor kapcsolatba lép az Azure AD-val.  
+Az ADAL használata során az alkalmazáshoz tartozó jogkivonatok biztonsága érdekében az alkalmazások használata legtöbbször az Azure Active Directoryban (AAD) való regisztrációhoz, valamint egyedi azonosító (ClientID) és egyéb azonosítók lekéréséhez kötött. Ha másként nincs megadva, az Intune App SDK az alapértelmezett regisztrációs értékeket használja, amikor kapcsolatba lép az Azure AD-val.  
 
-Ha maga az alkalmazás ADAL-t használ hitelesítésre, abban az esetben a meglévő regisztrációs értékeket kell használnia, és felül kell bírálnia az Intune App SDK alapértékeit. Ez biztosítja azt, hogy a felhasználóknak ne kelljen kétszer hitelesíteniük magukat (egyszer az Intune App SDK felé, egyszer pedig az alkalmazás felé).
+Ha az alkalmazás már ADAL-t használ felhasználók hitelesítésére, akkor a meglévő regisztrációs értékeket kell használnia, és felül kell bírálnia az Intune App SDK alapértékeit. Ez biztosítja azt, hogy a felhasználóknak ne kelljen kétszer hitelesíteniük magukat (egyszer az Intune App SDK felé, egyszer pedig az alkalmazás felé).
 
-### <a name="adal-faqs"></a>ADAL – gyakori kérdések
+### <a name="recommendations"></a>Javaslatok
 
-**Melyik bináris ADAL-fájlokat használjam?**
+Javasolt az alkalmazást a főágban az [ADAL legújabb verziójához](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) kapcsolni. Az Intune App SDK jelenleg az ADAL broker ágát használja a feltételes hozzáférést igénylő alkalmazások támogatásához. (Tehát olyan alkalmazásokhoz, amelyek ebből következően függenek a Microsoft Authenticator alkalmazástól.) Az SDK ugyanakkor továbbra is kompatibilis az ADAL fő (master) ágával is. Az alkalmazásának megfelelő ágat használja.
 
-Az Intune App SDK jelenleg a [GitHubon elérhető ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) broker ágát használja a feltételes hozzáférést igénylő alkalmazások támogatásához. (Tehát olyan alkalmazásokhoz, amelyek ebből következően függenek a Microsoft Authenticator alkalmazástól.) Az SDK ugyanakkor továbbra is kompatibilis az ADAL fő (master) ágával is. Az alkalmazásának megfelelő ágat használja.
+### <a name="link-to-adal-binaries"></a>Hivatkozás az ADAL bináris fájljaira
 
-**Hogyan lehet hivatkozni az ADAL bináris fájljaira?**
+Az ADAL bináris fájljaira való hivatkozáshoz kövesse az alábbi lépéseket:
 
-Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre a kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét. Ne felejtse el ezenkívül másolni az ADAL csomagot az alkalmazásba.  
+1. Töltse le az [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) erőforrástárat a GitHubról, majd kövesse az [utasításokat](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) az ADAL Git-almodulok vagy CocoaPods használatával történő letöltéséhez.
 
-Részletesebb tájékoztatást az [GitHub ADAL rovatában](https://github.com/AzureAD/azure-activedirectory-library-for-objc) talál.
+2. Húzza az `ADALiOSBundle.bundle` erőforráscsomagot a **Copy Bundle Resources** (Erőforráscsomagok másolása) terület **Build Phases** (Összeállítási fázisok) elemére a projektbe való felvételhez.
 
-**Hogyan oszthatom meg az ADAL-jogkivonatok gyorsítótárát más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal?**
+3. Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre a kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét.
+
+
+
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>ADAL-jogkivonatok gyorsítótárának megosztása más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal.**
+
+Ha ADAL-jogkivonatokat szeretne megosztani ugyanazzal a kiépítési profillal aláírt alkalmazások között, kövesse az alábbi utasításokat:
 
 1. Ha az alkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, hozza létre az első csoportot az alkalmazás csomagazonosítójának felvételével.
 
@@ -194,9 +188,9 @@ Részletesebb tájékoztatást az [GitHub ADAL rovatában](https://github.com/Az
 
 3. Ha explicit módon beállítja az ADAL megosztott gyorsítótárának kulcslánccsoportját, akkor feltétlenül a következő értékre állítsa: `<app_id_prefix>.com.microsoft.adalcache`. Az ADAL ezt állítja be, hacsak Ön felül nem bírálja. Ha egyéni kulcslánccsoportot szeretne megadni a `com.microsoft.adalcache` helyett az Info.plist fájl „IntuneMAMSettings” szakaszában, azt az `ADALCacheKeychainGroupOverride` kulccsal kell megadnia.
 
-**Hogyan kényszeríthetem az Intune App SDK-t arra, hogy az alkalmazásom által már használt ADAL-beállításokat használja?**
+### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>Az Intune App SDK ADAL-beállításainak konfigurálása
 
-Ha az alkalmazás már használja az ADAL-t, [Az Intune App SDK-beállítások konfigurálása](#configure-settings-for-the-intune-app-sdk) című témakörben talál tájékoztatást a következő beállítások értékének kitöltéséről:  
+Ha az alkalmazás már ADAL-t használ hitelesítéshez, és saját ADAL-beállításokkal rendelkezik, akkor kényszerítheti az Intune App SDK-t, hogy az Azure Active Directory helyett ezeket a beállításokat használja. Ezzel biztosítható, hogy az alkalmazás ne kérje a hitelesítést kétszer is a felhasználótól. Az [Intune App SDK-beállítások konfigurálása](#configure-settings-for-the-intune-app-sdk) című témakörben tájékoztatást talál a következő beállítások értékének kitöltéséről:  
 
 * ADALClientId
 * ADALAuthority
@@ -204,29 +198,25 @@ Ha az alkalmazás már használja az ADAL-t, [Az Intune App SDK-beállítások k
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
+Ha az alkalmazás már ADAL-t használ, az alábbi konfigurációs beállítások kötelezőek:
 
-**Hogyan bírálhatom felül az Azure AD-szolgáltató URL-címét egy bérlőspecifikus, futtatás közben megadott URL-címmel?**
+1. Adja meg az ADAL-hívásokhoz használandó ClientID-t a projekt Info.plist fájljában, az **IntuneMAMSettings** szótár alatt található `ADALClientId` nevű kulcsban.
 
-Állítsa be az `aadAuthorityUriOverride` tulajdonságot az IntuneMAMPolicyManager példányon.
+2. A szintén az **IntuneMAMSettings** szótár alatt található `ADALAuthority` nevű kulcsban adja meg az Azure AD-szolgáltatót.
+
+3. A szintén az **IntuneMAMSettings** szótár alatt található `ADALRedirectUri` nevű kulcsban adja meg az ADAL-hívásokhoz használandó átirányítási URI-t. Az alkalmazás átirányítási URI-formátumától függően előfordulhat, hogy az `ADALRedirectScheme` beállításait is meg kell adnia.
+
+
+Ezen kívül felülbírálhatja az Azure AD-szolgáltató URL-címét egy bérlőspecifikus, futtatás közben megadott URL-címmel. Ehhez egyszerűen állítsa be a `aadAuthorityUriOverride` tulajdonságot az `IntuneMAMPolicyManager` példányon.
 
 > [!NOTE]
-> Ezt akkor kell megtennie, ha az eszközök regisztrálása nélkül használja az alkalmazást. Így az SDK újra felhasználhatja az alkalmazás által beolvasott ADAL frissítési jogkivonatot.
+> Az AAD-szolgáltató URL-címének beállítása akkor szükséges, ha az [eszközök regisztrálása nélkül](#App-protection-policy-without-device-enrollment) használja az alkalmazást. Így az SDK újra felhasználhatja az alkalmazás által beolvasott ADAL frissítési jogkivonatot.
 
-Az SDK továbbra is ezt a szolgáltatói URL-címet használja a szabályzatok frissítésére és a későbbi regisztrációs kérelmekhez, hacsak nem törlik vagy módosítják az értéket.  Ezért fontos törölni az értéket, ha egy vállalati felhasználó kijelentkezik az alkalmazásból, és újra beállítani, ha egy új vállalati felhasználó jelentkezik be.
+Az SDK továbbra is ezt a szolgáltatói URL-címet használja a szabályzatok frissítésére és a későbbi regisztrációs kérelmekhez, hacsak nem törlik vagy módosítják az értéket.  Ezért fontos törölni az értéket, ha egy felügyelt felhasználó kijelentkezik az alkalmazásból, és visszaállítani az értéket, ha egy új felügyelt felhasználó bejelentkezik.
 
-**Mi a teendőm, ha maga az alkalmazás már az ADAL-t használja hitelesítésre?**
+### <a name="if-your-app-does-not-use-adal"></a>Ha az alkalmazás nem használ ADAL-t
 
-Ha az alkalmazás maga az ADAL-t használja hitelesítésre, a következő műveleteket kell elvégeznie:
-
-1. Adja meg az ADAL-hívásokhoz használandó ClientID-t a projekt Info.plist fájljában, az IntuneMAMSettings szótár alatt található `ADALClientId` nevű kulcsban.
-
-2. A szintén az IntuneMAMSettings szótár alatt található `ADALAuthority` nevű kulcsban adja meg az Azure AD-szolgáltatót.
-
-3. A szintén az IntuneMAMSettings szótár alatt található `ADALRedirectUri` nevű kulcsban adja meg az ADAL-hívásokhoz használandó átirányítási URI-t. Az alkalmazás átirányítási URI-formátumától függően előfordulhat, hogy az `ADALRedirectScheme` beállításait is meg kell adnia.
-
-**Mi a teendő, ha az alkalmazás még nem ADAL-t használ a hitelesítéshez?**
-
-Ha az alkalmazás nem ADAL-t használ, az Intune App SDK alapértelmezett értékeket fog megadni az ADAL-paraméterekhez, és az Azure AD-vel fogja kezelni a hitelesítést.
+Ha az alkalmazás nem ADAL-t használ, az Intune App SDK alapértelmezett értékeket fog megadni az ADAL-paraméterekhez, és az Azure AD-vel fogja kezelni a hitelesítést. A fent ismertetett ADAL-beállítások egyikéhez sem szükséges értéket megadnia.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Eszközregisztráció nélküli alkalmazásvédelmi szabályzat
 
@@ -426,9 +416,6 @@ Az **isSaveToAllowedForLocation** API által biztosított állandókkal lehet el
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
-* IntuneMAMSaveLocationBox
-* IntuneMAMSaveLocationDropbox
-* IntuneMAMSaveLocationGoogleDrive
 * IntuneMAMSaveLocationLocalDrive
 
 Az alkalmazásoknak az **isSaveToAllowedForLocation** API állandóival kell ellenőrizniük, hogy az adatok menthetők-e a „felügyeltnek” tekintett, például a OneDrive Vállalati verziójába, vagy „személyes” helyekre. Emellett akkor is szükséges az API használata, ha az alkalmazás nem képes megállapítani egy adott helyről, hogy az „felügyelt” vagy „személyes”.
@@ -560,27 +547,46 @@ Alapértelmezés szerint az alkalmazások egyszeres identitásnak minősülnek. 
 
     Vegye figyelembe, hogy a metódus meghívása egy háttérszálból történik. Az alkalmazás csak akkor adhat vissza értéket, ha a felhasználóhoz tartozó összes adat el lett távolítva (a fájlok kivételével, amennyiben az alkalmazás „FALSE” eredményt ad vissza).
 
-## <a name="debug-the-intune-app-sdk-in-xcode"></a>Intune App SDK-hibakeresés Xcode-ban
+## <a name="test-app-protection-policy-settings-in-xcode"></a>Alkalmazásvédelmi szabályzatbeállítások tesztelése az Xcode-ban
 
-A MAM-kompatibilis alkalmazások Microsoft Intune-beli manuális tesztelése előtt használhatja az Xcode-ban a Settings.bundle fájlt. Ezzel tesztszabályzatokat állíthat be az Intune elérése nélkül. Az engedélyezéshez tegye a következőket:
+Az Intune-ra felkészített alkalmazások éles környezetben való manuális tesztelése előtt használhatja az Xcode-ban a Settings.bundle fájlt. Ezzel alkalmazásvédelmi tesztszabályzatokat állíthat be az Intune elérése nélkül.
 
-1. Vegye fel a Settings.bundle fájlt a projekt legfelső mappájára jobb gombbal kattintva. A menüből válassza az **Add** (Hozzáadás)  >  **New File** (Új fájl) lehetőséget. Válassza a **Resources** (Források) alatt található **Settings Bundle** nevű sablont, és vegye fel.
+### <a name="enable-policy-testing"></a>Szabályzattesztelés engedélyezése
 
-2. Ha hibakeresési buildet használ, másolja a MAMDebugSettings.plist fájlt a Settings.bundle csomagba.
+Ha engedélyezni szeretné a szabályzattesztelést az Xcode-ban, kövesse az alábbi lépéseket:
 
-3. A Settings.bundle csomagban található Root.plist fájlban vegyen fel egy beállítást `Type` = `Child Pane` és `FileName` = `MAMDebugSettings` paraméterekkel.
+1. Ügyeljen rá, hogy hibakeresési buildelési verziót használjon. Vegye fel a Settings.bundle fájlt a projekt legfelső mappájára jobb gombbal kattintva. A menüből válassza az **Add** (Hozzáadás)  >  **New File** (Új fájl) lehetőséget. Válassza a **Resources** (Források) alatt található **Settings Bundle** nevű sablont.
 
-4. A **Settings** (Beállítások)  >  **Saját-alkalmazás-neve** területen kapcsolja be az **Enable Test Policies** (Tesztszabályzatok engedélyezése) beállítást.
+2.  Illessze be az alábbi blokkot a hibakeresési build Settings.bundle/**Root.plist** fájljába:
+    ```xml
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>MDM Debug Settings</string>
+            <key>Key</key>
+            <string>MAMDebugSettings</string>
+            <key>File</key>
+            <string>MAMDebugSettings</string>
+        </dict>
+    </array>
+    ```
 
-5. Indítsa el az alkalmazást (az Xcode-on kívül vagy belül).
+3. Az alkalmazás Info.plist fájljának **IntuneMAMSettings** szótárában vegyen fel egy "DebugSettingsEnabled" nevű logikai érték típusú paramétert. A DebugSettingsEnabled értékét állítsa "YES"-re.
 
-6. A **Settings** (Beállítások) > **Saját-alkalmazás-neve** > **Enable Test Policies** (Tesztszabályzatok engedélyezése) területen kapcsoljon be egy szabályzatot – például a **PIN** nevűt.
 
-7. Indítsa el az alkalmazást (az Xcode-on kívül vagy belül). Ellenőrizze, hogy a PIN-kód megfelelően működik-e.
 
-> [!NOTE]
-> Most már használhatja a **Settings** (Beállítások)  > **Saját-alkalmazás-neve** > **Enable Test Policies** (Tesztszabályzatok engedélyezése) lehetőséget a beállítások ki- és bekapcsolására.
+### <a name="app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatbeállítások
 
+Az alábbi táblázat azokat az alkalmazásvédelmi szabályzatbeállításokat ismerteti, amelyeket a MAMDebugSettings.plist használatával tesztelhet. A bekapcsolni kívánt beállításokat vegye fel a MAMDebugSettings.plist fájlba.
+
+| Szabályzatbeállítás neve | Leírás | Lehetséges értékek |
+| -- | -- | -- |
+| AccessRecheckOfflineTimeout | Percekben megadott idő, amíg az alkalmazás offline lehet, mielőtt az Intune letiltaná az alkalmazás indítását vagy folytatását, ha a hitelesítés engedélyezve van. | Bármilyen, 0-nál nagyobb integer |
+|    AccessRecheckOnlineTimeout | Az alkalmazás percekben megadott futásideje, mielőtt a felhasználónak PIN-kódot kell megadnia vagy hitelesítenie kell magát alkalmazás indításakor vagy folytatásakor (ha a hitelesítés vagy a hozzáférési PIN-kód engedélyezve van). | Bármilyen, 0-nál nagyobb integer |
+| AppSharingFromLevel | Azt adja meg, hogy az alkalmazás mely más alkalmazásoktól fogadhat adatokat. | 0 = |
 ## <a name="ios-best-practices"></a>Gyakorlati tanácsok iOS rendszerhez
 
 Az alábbiakban néhány gyakorlati tanácsot kínálunk iOS-alapú fejlesztéshez:
