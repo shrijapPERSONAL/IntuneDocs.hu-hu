@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Támogatási jegy létrehozása előtt tekintse át [a támogatási incidensek d
 
 1.  Jelentkezzen be az [Office 365 felügyeleti központjába](https://portal.office.com) az Intune-beli hitelesítő adataival.
 
-    Premier támogatással rendelkező ügyfelek számára a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) javasolt Intune támogatási jegyet megnyitni.
+    Premier támogatással rendelkező ügyfelek számára a [Premier támogatási lapon](https://support.microsoft.com/premier/contacts) javasolt Intune támogatási jegyet megnyitni.
 
     >[!NOTE]
     >
-    >Premier támogatással rendelkező ügyfeleknek a [Premier támogatási lapon](https://support.microsoft.com/en-us/premier/contacts) javasolt Intune támogatási jegyet megnyitniuk.
+    >Premier támogatással rendelkező ügyfeleknek a [Premier támogatási lapon](https://support.microsoft.com/premier/contacts) javasolt Intune támogatási jegyet megnyitniuk.
 
 2.  Válassza a **Rendszergazda** csempét.
 3.  A jegy megnyitásához a bal oldalon a **Támogatás** elem alatt válassza a **Támogatás** lehetőséget.
@@ -136,7 +136,7 @@ A többi probléma esetén a Professional ügyfeleknek nyolc órán belül adunk
 - Csak egyetlen felhasználó tapasztal részleges problémákat, de létezik egy elfogadható megkerülő megoldás.
 
 > [!NOTE]
-> A **Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) és az [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) dokumentációját, ahol számos anyagot találhat az önsegítő technikai támogatáshoz. Emellett online vagy telefonos támogatási kérést adhat be.
+> A **Microsoft System Center Configuration Manager** vagy a **Microsoft System Center Endpoint Protection esetén:** Ha technikai támogatást szeretne a Configuration Managerhez vagy az Endpoint Protectionhöz, forduljon a partneréhez, vagy keresse fel a [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) és az [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) dokumentációját, ahol számos anyagot találhat az önsegítő technikai támogatáshoz. Emellett online vagy telefonos támogatási kérést adhat be.
 >
 > A System Center Configuration Manager vagy a System Center Endpoint Protection technikai támogatása vagy fizetésköteles, vagy levonásra kerül a meglévő licencelésből vagy Premier támogatási szerződésből.
 
