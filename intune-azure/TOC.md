@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Cél
 ### [Teljes vagy szelektív törlés alkalmazása](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Androidos eszközök távirányítása](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Felhasználók kezelése
 ## [Mi a felhasználókezelés?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Első lépések](manage-users/get-started-with-groups.md)
+## [Segítség a felhasználóknak](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
