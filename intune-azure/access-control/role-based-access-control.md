@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ Az új szerepkör ekkor megjelenik a **Szerepkörök** panel listájában.
 ## <a name="how-to-assign-a-role"></a>Szerepkör hozzárendelése
 
 1. A **Hozzáférés-vezérlés** munkafolyamatban, a **Szerepkörök** panelen válassza ki a hozzárendelni kívánt beépített vagy egyéni szerepkört.
-2. A *szerepkörnév*>- **Tulajdonságok** panelen válassza a **Felügyelet** > **Hozzárendelések** elemet.
-    >[!TIP]
-    >A panelen szerkesztheti és törölheti is a meglévő szerepköröket.
+2. A *szerepkörnév*>- **Tulajdonságok** panelen válassza a **Felügyelet** > **Hozzárendelések** elemet. A panelen szerkesztheti és törölheti is a meglévő szerepköröket.
 3. Válassza ki a következő panelen a **Hozzárendelés** elemet.
 4. A **Szerepkör-hozzárendelések** panelen adja meg a hozzárendelés **nevét** és választható **leírását**, és válassza ki a következőket:
     - **Tagok** – Válasszon ki egy csoportot, amely tartalmazza azt a felhasználót, akinek meg szeretné adni az engedélyeket.
