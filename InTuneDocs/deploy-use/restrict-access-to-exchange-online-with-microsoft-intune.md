@@ -78,8 +78,6 @@ Védheti az Exchange Online e-mailjeinek az **Outlook** alkalmazásból és a **
 - Android 4.0-ás és újabb verziók, Samsung Knox Standard 4.0-ás és újabb verziók és Android for Work
 - iOS 8.0 és újabb verziók
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 A **modern hitelesítéssel** Active Directory Authentication Library-alapú (ADAL-alapú) bejelentkezés biztosítható a Microsoft Office-ügyfelekhez.
 
 -   Az ADAL-alapú hitelesítéssel az Office-ügyfelek végezhetnek böngészőalapú hitelesítést (más néven passzív hitelesítést). A hitelesítéshez a felhasználó egy bejelentkezési weblapra van átirányítva.

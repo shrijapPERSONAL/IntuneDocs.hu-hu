@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
 ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Android for Work-alkalmazások konfigurálása a mobilalkalmazások konfigurációs szabályzataival Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 A Microsoft Intune mobilalkalmazás-konfigurációs szabályzataival automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor a felhasználók iOS-alkalmazásokat futtatnak. Egy alkalmazás kérheti a felhasználótól például a következők megadását:
 
@@ -76,9 +75,4 @@ Amikor a telepített alkalmazást futtatják egy eszközön, akkor az a mobilalk
 
 > [!TIP]
 > Csak egy alkalmazás-konfigurációs szabályzatot telepítsen minden egyes alkalmazáshoz a felhasználók számára.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
