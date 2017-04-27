@@ -38,8 +38,6 @@ Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- 
  -  Windows 8.1 és újabb
  -  Windows Phone 8.1 és újabb verziók
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 3. Az [Intune-tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md) című részben leírtak szerint hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat. A következő platformokon működő eszközökre **PKCS #12 (.PFX) formátumú tanúsítványprofilt** *vagy* **SCEP-tanúsítványprofilt** telepíthet:
 
   -  iOS 8.0 és újabb verziók

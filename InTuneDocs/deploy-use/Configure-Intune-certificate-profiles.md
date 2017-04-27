@@ -58,8 +58,6 @@ Létre kell hoznia egy Megbízható hitelesítésszolgáltatói tanúsítványpr
 
 -  Windows Phone 8.1 és újabb verziók
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  **Megbízható tanúsítványprofil**-házirend hozzáadása.
 
     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

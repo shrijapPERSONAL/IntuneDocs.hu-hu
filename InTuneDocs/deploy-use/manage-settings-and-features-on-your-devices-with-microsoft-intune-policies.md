@@ -42,7 +42,6 @@ A részleteket lásd: [Az e-mailek és az O365-szolgáltatások elérésének ko
 - **Erőforrás-hozzáférési szabályzatok**: Ezekkel a szabályzatokkal hozzáférést biztosíthat a felhasználóknak a munkájuk sikeres elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is.
 A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Az Intune-szabályzatok teljes listáját lásd: [A Microsoft Intune szabályzatainak ismertetése](microsoft-intune-policy-reference.md).
 

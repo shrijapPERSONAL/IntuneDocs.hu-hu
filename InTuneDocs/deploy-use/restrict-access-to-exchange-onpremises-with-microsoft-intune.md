@@ -83,10 +83,7 @@ A következők támogatottak:
 -   Exchange ActiveSync-alapú levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
 -   Exchange ActiveSync-alapú levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazás támogatott Android for Work-eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy e-mail-profit a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell telepíteni. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott.
 
 ## <a name="support-for-pcs"></a>Számítógépek támogatása
