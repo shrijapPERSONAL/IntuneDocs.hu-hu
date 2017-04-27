@@ -118,7 +118,6 @@
 #### [Kezdőképernyő elrendezése iOS-hez](configure-devices/home-screen-settings-for-ios.md)
 #### [Alkalmazásértesítések iOS-hez](configure-devices/app-notification-settings-for-ios.md)
 #### [Megosztott eszközök iOS-hez](configure-devices/shared-device-settings-for-ios.md)
-#### [Webtartalomszűrő iOS-hez](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Eszközkorlátozások beállítása](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [Mi a feltételes hozzáférés?](conditional-access/what-is-conditional-access.md)
 ## Cél
 ### [A helyszíni Exchange-összekötő telepítése](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Feltételes hozzáférési szabályzat létrehozása](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Hozzon létre, és rendelje hozzá a feltételes hozzáférési házirend](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Feltételes hozzáférési megfelelőségének figyelése](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Hozzáférés-vezérlés
 ## [Mi a szerepköralapú hozzáférés-vezérlés?](access-control/role-based-access-control.md)
