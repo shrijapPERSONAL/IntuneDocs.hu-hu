@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -41,13 +41,13 @@ Az Apple korlátozásai tiltják az üzletági és a felügyelt App Store-alkalm
 
 A regisztrált felhasználók úgy jutnak hozzá az alkalmazásokhoz, hogy a következő csempékre kattintanak a Munkahelyi portál alkalmazás Alkalmazások képernyőjén:
 
-- A **Minden alkalmazás** csempe a [Munkahelyi portál webhely](http://portal.manage.microsoft.com) ÖSSZES lapjára mutat.
+- A **Minden alkalmazás** csempe a [Munkahelyi portál webhely](https://portal.manage.microsoft.com) ÖSSZES lapjára mutat.
 
 - A **Kiemelt alkalmazások** csempe a Munkahelyi portál webhely KIEMELT lapjára vezet.
 
 - A **Kategóriák** csempe a Munkahelyi portál webhely KATEGÓRIÁK lapjára vezet.
 
- 
+
 ![iOS rendszerű Munkahelyi portál alkalmazás](./media/ios-cp-app-main-apps-screen.png)
 
 Az alkalmazások felvételéről és ezeken a csempéken való megjelenítéséről az [Alkalmazások hozzáadása beléptetett eszközökhöz az Intune-ban](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md) című rész nyújt tájékoztatást.

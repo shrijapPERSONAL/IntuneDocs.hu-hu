@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -51,9 +51,9 @@ Létre kell hoznia egy Exchange Online-felhasználói fiókot is, amelyet az Int
 
 ## <a name="set-up-the-service-to-service-connector"></a>A szolgáltatások közötti összekötő beállítása
 
-1. Nyissa meg a [Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com) a [korábban megadott](#exchange-cmdlet-requirements) parancsmagokhoz Exchange-rendszergazdai jogosultságokkal és engedélyekkel rendelkező felhasználói fiókkal. A Microsoft Intune az aktuálisan bejelentkezett felhasználó e-mail címét használja a kapcsolat beállításához.
+1. Nyissa meg a [Microsoft Intune felügyeleti konzolt](https://manage.microsoft.com) a [korábban megadott](#exchange-cmdlet-requirements) parancsmagokhoz Exchange-rendszergazdai jogosultságokkal és engedélyekkel rendelkező felhasználói fiókkal. A Microsoft Intune az aktuálisan bejelentkezett felhasználó e-mail címét használja a kapcsolat beállításához.
 
-2.  A munkaterület parancsikon ablaktábláján válassza a **FELÜGYELET**>** lehetőséget, majd lépjen a Mobileszköz-kezelés** > **Microsoft Exchange** > **Exchange-kapcsolat beállítása** pontra.
+2.  A munkaterület parancsikon ablaktábláján válassza a **FELÜGYELET**> **lehetőséget, majd lépjen a Mobileszköz-kezelés** > **Microsoft Exchange** > **Exchange-kapcsolat beállítása** pontra.
 ![A Service To Service Connector telepítése oldal](../media/intunesa5cservicetoserviceconnector.png)
 
 3.  Az **Exchange-kapcsolat beállítása** lapon kattintson a **Service To Service Connector telepítése** parancsra.
@@ -63,7 +63,7 @@ A Service-to-Service Connector konfigurációja és szinkronizálása az Exchang
 
 ## <a name="validate-your-exchange-connection"></a>Az Exchange-kapcsolat ellenőrzése
 
-Amint sikeresen konfigurálta az Exchange Connectort, látogasson el a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) lapra. Válassza a **Rendszergazda**> **Mobileszköz-kezelés** > **Microsoft Exchange** elemet. Majd ellenőrizze, hogy a megadott adatok láthatók-e az **Exchange-kapcsolat információi** között.
+Amint sikeresen konfigurálta az Exchange Connectort, látogasson el a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com) lapra. Válassza a **Rendszergazda**> **Mobileszköz-kezelés** > **Microsoft Exchange** elemet. Majd ellenőrizze, hogy a megadott adatok láthatók-e az **Exchange-kapcsolat információi** között.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 

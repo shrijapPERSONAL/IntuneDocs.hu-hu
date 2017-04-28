@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Ha vállalatának mobileszköz-csoportokra van szüksége az eszközök kezelés
 
 Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmazott beállításokat.
 
-1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
 
   ![Eszközbeléptetési profil létrehozása](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-eszközök regisztrálása a Beállítási asszisztenssel
 
-1. A [Microsoft Intune felügyeleti konzolján](http://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** &gt; **Minden eszköz** területre, majd kattintson az **Eszközök felvétele** gombra.
+1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Minden céges eszköz** &gt; **Minden eszköz** területre, majd kattintson az **Eszközök felvétele** gombra.
 
    Két módon adhat hozzá eszközöket:
 
@@ -128,7 +128,7 @@ Adja meg a hozzáadott eszközökhöz hozzárendelendő profilt az elérhető pr
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Az iOS-eszközökre telepíteni kívánt profil exportálása
 
-1. A [Microsoft Intune felügyeleti konzolban](http://manage.microsoft.com) válassza a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lehetőséget, majd válassza ki a mobileszközökre telepítendő eszközprofilt.
+1. A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lehetőséget, majd válassza ki a mobileszközökre telepítendő eszközprofilt.
 
 2. A tálcán válassza az **Exportálás** lehetőséget. Másolja ki és mentse el a **Profil URL-címét**. A címet később fel kell töltenie az Apple Configurator eszközbe az iOS-eszközök által használt Intune profil meghatározásához.
 

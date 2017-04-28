@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ Alkalmazásvédelmi szabályzatokat az Azure Portalon lehet létrehozni. Ha els�
 
 Az alábbi lépésekkel hozhat létre alkalmazásvédelmi szabályzatokat:
 
-1. Nyissa meg az [Azure Portal](http://portal.azure.com) webhelyet, és adja meg hitelesítő adatait.
+1. Nyissa meg az [Azure Portal](https://portal.azure.com) webhelyet, és adja meg hitelesítő adatait.
 
 2. Válassza a **További szolgáltatások** lehetőséget, majd írja be az Intune kifejezést.
 
@@ -109,7 +109,7 @@ Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a f
 
 Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok létrehozásakor általánosan fel lehet venni üzletági alkalmazásokat az Intune-ba. Így lehetőség nyílik arra is, hogy a MAM SDK-val alkalmazásvédelmi szabályzatokat definiáljon üzletági alkalmazásokhoz a teljes körű alkalmazástelepítési jogosultságok megkövetelése nélkül.
 
-> [!TIP] 
+> [!TIP]
 > Az [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) munkafolyamatán végighaladva is fel lehet venni üzletági alkalmazásokat az Intune-ba.
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok
 
 ### <a name="to-add-lob-apps-windows"></a>Üzletági alkalmazások felvétele (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Új alkalmazásvédelmi szabályzat létrehozásakor válassza a Windows 10 értéket a platformok listájából.
 
 1.  A Házirend hozzáadása panelen az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** lehetőséget választva nyissa meg az Engedélyezett vagy a Mentesített alkalmazások panelt.
 
     > [!NOTE]
-    > 
+    >
     - **Engedélyezett alkalmazások:** ezeknek be kell tartaniuk az adott szabályzatot.
     - **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a vállalati adatokhoz.
 <br></br>

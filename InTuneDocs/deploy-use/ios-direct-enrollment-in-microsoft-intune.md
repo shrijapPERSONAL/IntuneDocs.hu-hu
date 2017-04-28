@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Amikor közvetlenül regisztrál iOS-eszközöket, regisztrálhat egy eszközt a
 
 1.  Ha még nem tette meg, az Apple Configurator eszközzel regisztrált iOS-eszközökhöz hozzon létre egy eszközregisztrációs profilt. Egy eszközregisztrációs profil meghatározza az eszközökre alkalmazott beállításokat.
 
-    1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) ugorjon a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** elemre, majd válassza a **Hozzáadás** lehetőséget.
+    1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) ugorjon a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** elemre, majd válassza a **Hozzáadás** lehetőséget.
 
         ![Eszközbeléptetési profil létrehozása oldal](../media/pol-sa-corp-enroll.png)
 

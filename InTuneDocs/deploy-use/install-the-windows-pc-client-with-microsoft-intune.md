@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Az Intune ügyfélszoftverét az alábbi eljárás alapján egy operációsrends
 
 ## <a name="instruct-users-to-self-enroll"></a>A felhasználók felkérése önálló regisztrálásra
 
-Az Intune-ügyfélszoftver a [Céges portál webhelyen](http://portal.manage.microsoft.com) telepíthető. A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének operációsrendszer-platformjától és verziójától függően változik.
+Az Intune-ügyfélszoftver a [Céges portál webhelyen](https://portal.manage.microsoft.com) telepíthető. A felhasználók számára a webes portálon megjelenített pontos információ a fiók MDM-szolgáltatójától, illetve a felhasználó számítógépének operációsrendszer-platformjától és verziójától függően változik.
 
 Ha a felhasználókhoz még nem rendeltek Intune-licencet, vagy ha a szervezet MDM-szolgáltatóját még nem állították be az Intune-ra, a felhasználóknak nem jelenik meg regisztrálási lehetőség.
 

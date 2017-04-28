@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ Ha eloszlatja a felhasználók aggodalmait, a rendszer bevezetése simább lehet
 
 * __Legyen személyes.__ A bevezetett rendszer szempontjából nem elég konkrét útmutatók azt éreztethetik a felhasználókkal, hogy Ön nem veszi figyelembe a felhasználók tapasztalatait. Ezzel a [rendszergazdáknak készült, testreszabható, végfelhasználói Intune-regisztrációs sablonnal](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) saját regisztrációs útmutatót készíthet a végfelhasználóknak.
 
-* __Keresse a különböző kommunikációs lehetőségeket.__ A [különböző tanulási stílusokhoz](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) hasonlóan a felhasználók különböző módon fogyasztanak információkat. Azoknak a felhasználóknak, akik a szövegalapú dokumentációk helyett inkább a videókat kedvelik, [különböző eszköztípusok regisztrációjához készült videotartalmakat](https://channel9.msdn.com/Series/IntuneEnrollment) és sok minden mást kínálunk a 9-es csatornán. A videókat közvetlenül be lehet ágyazni saját [SharePoint-webhelyekre](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581), vagy le lehet tölteni őket helyi példányként – akár csak hanggal vagy képpel.
+* __Keresse a különböző kommunikációs lehetőségeket.__ A [különböző tanulási stílusokhoz](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) hasonlóan a felhasználók különböző módon fogyasztanak információkat. Azoknak a felhasználóknak, akik a szövegalapú dokumentációk helyett inkább a videókat kedvelik, [különböző eszköztípusok regisztrációjához készült videotartalmakat](https://channel9.msdn.com/Series/IntuneEnrollment) és sok minden mást kínálunk a 9-es csatornán. A videókat közvetlenül be lehet ágyazni saját [SharePoint-webhelyekre](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581), vagy le lehet tölteni őket helyi példányként – akár csak hanggal vagy képpel.
 
 * __Legyen figyelmes.__ A végfelhasználói tapasztalatok hatással vannak a termelékenységre, ezért ezek megértése egyszerűsíti az aktuálisan felmerülő problémák megoldását. Ha tisztában van azzal, hogy a végfelhasználók miként töltenek le alkalmazásokat, egyszerűbbé teheti a felhasználók által tapasztalt problémák diagnosztizálását, és elősegítheti a problémák gyorsabb megoldását.
 
