@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,7 +47,7 @@ Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatá
 
 ## <a name="create-a-default-access-rule"></a>Alapértelmezett hozzáférési szabály létrehozása
 
-1.  Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) **Házirend** &gt; **Exchange ActiveSync** elemére.
+1.  Kattintson a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com) **Házirend** &gt; **Exchange ActiveSync** elemére.
 
 2.  Az **Alapértelmezett szabály** listában válassza ki azt az alapértelmezett szabályt, amelyet minden olyan mobileszközre alkalmazni kíván, amelyre nem vonatkozik szabály vagy személyes kivétel. Válassza a **Mentés** elemet.
 
@@ -55,7 +55,7 @@ Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatá
 
 ## <a name="create-a-custom-access-rule"></a>Egyéni hozzáférési szabály létrehozása
 
-1. Kattintson a [Microsoft Intune felügyeleti konzol](http://manage.microsoft.com) **Házirend** &gt; **Exchange ActiveSync** elemére.
+1. Kattintson a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com) **Házirend** &gt; **Exchange ActiveSync** elemére.
 
 2.  Kattintson a **Platformkivételek** lista **Szabály hozzáadása** elemére, majd hozzon létre egy egyéni szabályt. Válassza a **Mentés** elemet.
 

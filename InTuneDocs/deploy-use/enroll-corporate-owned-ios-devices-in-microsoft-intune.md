@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A Microsoft Intune támogatja a vállalat által birtokolt iOS-eszközök regisztrálását az Apple Device Enrollment Program (DEP) vagy a Mac számítógépeken futó [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) eszköz segítségével.
+A Microsoft Intune támogatja a vállalat által birtokolt iOS-eszközök regisztrálását az Apple Device Enrollment Program (DEP) vagy a Mac számítógépeken futó [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) eszköz segítségével.
 
 **Előfeltétel:** [Apple Push Notification szolgáltatásbeli tanúsítvány](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
@@ -39,15 +39,15 @@ A vállalat által birtokolt iOS-eszközöket háromféleképpen lehet regisztr�
 >[!NOTE]
 >Az Apple Configurator és az Eszközök beléptetése program regisztrációs módszerei nem használhatók az [eszközregisztráció-kezelői](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) módszerrel.
 
-Alapértelmezés szerint minden iOS-eszköz regisztrációja engedélyezett az Intune-ban. A személyes vagy vállalati tulajdonú eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](http://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, majd törölje a megfelelő beállítások jelölőnégyzeteit.
+Alapértelmezés szerint minden iOS-eszköz regisztrációja engedélyezett az Intune-ban. A személyes vagy vállalati tulajdonú eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](https://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, majd törölje a megfelelő beállítások jelölőnégyzeteit.
 
 ## <a name="use-apple-configurator"></a>Az Apple Configurator használata
 
 Az iOS-eszközök egy Vállalati regisztrációs profil exportálásával, majd a mobileszközök egy Apple Configurator eszközt futtató Mac számítógéphez való csatlakoztatásával regisztrálhatók. Az Apple Configurator a regisztráció két formáját támogatja:
 
-- **Regisztrálás a Beállítási asszisztenssel**: Gyári alaphelyzetbe állítja az eszközt, és felkészíti a beállításhoz az új felhasználó számára. Ennél a módszernél a rendszergazdának a regisztráció előkonfigurálásához az iOS-eszközt USB kapcsolaton keresztül egy [Apple Configuratort](http://go.microsoft.com/fwlink/?LinkId=518017) futtató Mac számítógéphez kell csatlakoztatnia. Az eszközöket ekkor el kell juttatni a felhasználókhoz, akik elindítják a Beállítási asszisztenst. A folyamat a felhasználók munkahelyi vagy iskolai azonosítójával konfigurálja az eszközt, és elvégzi a regisztrációt. További információt az [iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens segítségével](ios-setup-assistant-enrollment-in-microsoft-intune.md) című témakörben találhat.
+- **Regisztrálás a Beállítási asszisztenssel**: Gyári alaphelyzetbe állítja az eszközt, és felkészíti a beállításhoz az új felhasználó számára. Ennél a módszernél a rendszergazdának a regisztráció előkonfigurálásához az iOS-eszközt USB kapcsolaton keresztül egy [Apple Configuratort](https://go.microsoft.com/fwlink/?LinkId=518017) futtató Mac számítógéphez kell csatlakoztatnia. Az eszközöket ekkor el kell juttatni a felhasználókhoz, akik elindítják a Beállítási asszisztenst. A folyamat a felhasználók munkahelyi vagy iskolai azonosítójával konfigurálja az eszközt, és elvégzi a regisztrációt. További információt az [iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens segítségével](ios-setup-assistant-enrollment-in-microsoft-intune.md) című témakörben találhat.
 
-- **Közvetlen regisztrálás**: Létrejön egy Apple Configurator-kompatibilis fájl, amely az eszköz előkészítésez szükséges. A regisztrált eszköz nincs gyári alaphelyzetbe állítva, de egyetlen felhasználóhoz sem kapcsolódik. Ennél a módszernél a rendszergazdának az iOS-eszköz regisztrálásához az eszközt USB kapcsolaton keresztül egy [Apple Configuratort](http://go.microsoft.com/fwlink/?LinkId=518017) futtató Mac számítógéphez kell csatlakoznia. További információt az [iOS-eszközök közvetlen regisztrálása az Apple Configurator használatával](ios-direct-enrollment-in-microsoft-intune.md) című témakörben találhat.
+- **Közvetlen regisztrálás**: Létrejön egy Apple Configurator-kompatibilis fájl, amely az eszköz előkészítésez szükséges. A regisztrált eszköz nincs gyári alaphelyzetbe állítva, de egyetlen felhasználóhoz sem kapcsolódik. Ennél a módszernél a rendszergazdának az iOS-eszköz regisztrálásához az eszközt USB kapcsolaton keresztül egy [Apple Configuratort](https://go.microsoft.com/fwlink/?LinkId=518017) futtató Mac számítógéphez kell csatlakoznia. További információt az [iOS-eszközök közvetlen regisztrálása az Apple Configurator használatával](ios-direct-enrollment-in-microsoft-intune.md) című témakörben találhat.
 
 ## <a name="use-the-device-enrollment-program-dep"></a>A Device Enrollment Program (DEP) használata
 A DEP a DEP-en keresztül megvásárolt eszközökre egy regisztrációs profilt telepít. Amikor a felhasználó a Beállítási asszisztenst futtatja az eszközön, az eszköz regisztrációja az Intune-ban rögzül. További információt az [A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása](ios-device-enrollment-program-in-microsoft-intune.md) című témakörben találhat.

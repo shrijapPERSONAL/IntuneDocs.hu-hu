@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Ha az **Endpoint Protection telepítése** és az **Endpoint Protection engedél
 |**A fájl- és programtevékenység figyelése a számítógépen**|Engedélyezi a bejövő és a kimenő fájlok és a programok tevékenységének figyelését a számítógépeken. Ezzel a beállítással az Endpoint Protection szolgáltatás figyeli az egyes fájlok és programok futásának elindulását, és értesítést küld az általuk vagy rajtuk elvégzett műveletekről.<br /><br />Javasolt érték: **Igen**|
 |**Megfigyelt fájlok**|Kiválaszthatja, hogy a szolgáltatás csak a bejövő, csak a kimenő fájlokat, vagy az összes fájlt figyelje.<br /><br />Javasolt érték: **Minden fájl figyelése**|
 |**Viselkedésfigyelés engedélyezése**|Engedélyezi, hogy a Microsoft Intune Endpoint Protection gyanús tevékenységekre utaló mintákat keressen az ügyfélszámítógépeken.<br /><br />Javasolt érték: **Igen**|
-|**Hálózatvizsgáló rendszer engedélyezése**|A Hálózatfelügyeleti rendszer (NIS) engedélyezése az ügyfélszámítógépeken. A NIS a [Microsoft kártevőkezelési központban](http://go.microsoft.com/fwlink/?LinkId=234249) található ismert sebezhető pontok mintázatai alapján észleli és blokkolja a rosszindulatú hálózati forgalmat.<br /><br />Javasolt érték: **Igen**|
+|**Hálózatvizsgáló rendszer engedélyezése**|A Hálózatfelügyeleti rendszer (NIS) engedélyezése az ügyfélszámítógépeken. A NIS a [Microsoft kártevőkezelési központban](https://go.microsoft.com/fwlink/?LinkId=234249) található ismert sebezhető pontok mintázatai alapján észleli és blokkolja a rosszindulatú hálózati forgalmat.<br /><br />Javasolt érték: **Igen**|
 
   ![Az Endpoint Protection szolgáltatás valós idejű beállításai](./media/pol-sa-pc-policy-realtime.png)
 
