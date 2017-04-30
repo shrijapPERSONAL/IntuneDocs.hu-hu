@@ -15,9 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/21/2017
 
 Intune-rendszergazdaként a Munkahelyi portálról engedélyezheti az Android-eszközök (köztük a Samsung Knox Standard eszközök) kezelését. A felhasználók így a Google Play áruházban elérhető Munkahelyi portál alkalmazással regisztrálhatják az eszközeiket.
 
-Alapértelmezés szerint az Android-eszközök regisztrációja engedélyezett az Intune-ban. Az Android-eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](http://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, majd törölje az **Android-eszközök engedélyezése** jelölőnégyzetet.
+Alapértelmezés szerint az Android-eszközök regisztrációja engedélyezett az Intune-ban. Az Android-eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](https://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, majd törölje az **Android-eszközök engedélyezése** jelölőnégyzetet.
 
 1.  **Az Intune beállítása**<br>
     Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#step-2-set-mdm-authority), valamint beállítja a mobileszköz-kezelést.

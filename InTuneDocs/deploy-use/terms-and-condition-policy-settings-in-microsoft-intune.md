@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Használati feltételekre vonatkozó szabályzat létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
     ![Képernyőfelvétel a Feltételek és kikötések szabályzatról](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>A használati feltételekre vonatkozó szabályzat telepítése
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
 2.  A **Használati feltételekkel kapcsolatos házirendek** listáról válassza ki a bevezetni kívánt házirendet, majd kattintson a **Központi telepítés kezelése** elemre.
 
@@ -64,7 +64,7 @@ Több, különböző használati feltételeket tartalmazó házirendet is létre
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>A használati feltételekre vonatkozó szabályzat figyelése
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
 2.  Kattintson a **Jelentés megtekintése** lehetőségre az **Új jelentés létrehozása** ablakban. Ekkor megnyílik a jelentés, és részletesen leírja, hogy mely felhasználók fogadták el a telepített használati feltételeket.
 
@@ -73,7 +73,7 @@ Egy meglévő használati feltételekre vonatkozó szabályzat szerkesztésekor 
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>A használati feltételek több változatának használata
 
-1.  A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
+1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** &gt; **Feltételek és kikötések** elemre.
 
 2.  Jelölje ki a szerkeszteni kívánt használati feltételekre vonatkozó házirendet, majd kattintson a **Szerkesztés** elemre.
 
