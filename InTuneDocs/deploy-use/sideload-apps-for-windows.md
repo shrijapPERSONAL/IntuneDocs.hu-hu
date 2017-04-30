@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44af7e7805843eeb6a2112afc89057c10c26f835
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
 6.  **Az alkalmazás feltöltése az Intune-ba**<br>
     Töltse fel az alkalmazás aláírt fájlját és a kódaláíró tanúsítványt, így elérhetővé téve az alkalmazást a végfelhasználók számára.
 
-    1.  Az [Intune felügyeleti konzoljában](http://manage.microsoft.com) válassza a **Felügyelet** &gt; **Windows Phone** lehetőséget.
+    1.  Az [Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Windows Phone** lehetőséget.
 
     2.  Kattintson az **Aláírt alkalmazásfájl feltöltése** lehetőségre, és jelentkezzen be az Intune-rendszergazdai azonosítójával.
 

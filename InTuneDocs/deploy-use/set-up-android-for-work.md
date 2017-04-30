@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 660d0c69fc09c6ec8b82185b3808269ef4bb6852
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Az Android for Work-eszközök felügyeletének engedélyezéséhez létre kell 
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment), valamint beállítja a mobileszköz-kezelést.
 
 2. **Android for Work-kötés konfigurálása**<br>
-    Intune-rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd a **Konfigurálás** gombra kattintva nyissa meg a Google Play Android for Work-webhelyét. Ez egy új lapon nyílik meg a böngészőben.
+    Intune-rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd a **Konfigurálás** gombra kattintva nyissa meg a Google Play Android for Work-webhelyét. Ez egy új lapon nyílik meg a böngészőben.
 
 3. **Bejelentkezés a Google-fiókba**<br>
    A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot használja a szervezet összes rendszergazdája az alkalmazások felügyeletére és közzétételére a Play for Work konzolon.
@@ -59,7 +59,7 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Ha az
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work fiók leválasztása
 
 1. **Android for Work-kötés feloldása**<br>
-    Rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd kattintson a **Kötés megszüntetése** gombra.
+    Rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd kattintson a **Kötés megszüntetése** gombra.
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez kattintson az **Igen** gombra.
