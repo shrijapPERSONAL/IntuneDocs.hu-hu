@@ -12,7 +12,7 @@
 
 # [Első lépések](get-started/get-started.md)
 ## [Az Intune beállítása](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Előfeltételek]
+### Előfeltételek
 #### [Támogatott eszközök](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Hálózati forgalom](get-started/network-bandwidth-use.md)
 ### [Bejelentkezés az Intune-ba](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Alkalmazásadatok védelme MAM használatával](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Alkalmazásvédelmi szabályzatok az Azure Portalon](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Alkalmazásvédelmi szabályzatok létrehozása és telepítése](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Felkészülés az alkalmazásvédelmi szabályzatoknak az iOS és Android rendszereken történő konfigurálására](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Alkalmazásvédelmi szabályzatok Androidhoz](deploy-use/android-mam-policy-settings.md)
 #### [Alkalmazásvédelmi szabályzatok iOS-hez](deploy-use/ios-mam-policy-settings.md)
+#### [Alkalmazásvédelmi szabályzatok Windowshoz](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Alkalmazásvédelmi szabályzatok létrehozása és telepítése iOS és Android rendszereken](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és telepítése Windows 10 rendszereken](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Az alkalmazásvédelmi szabályzatok ellenőrzése](deploy-use/validate-mobile-application-management.md)
 #### [Az alkalmazásvédelmi szabályzatoknak való megfelelőség figyelése](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
