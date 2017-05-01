@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Az iOS-es Céges portál alkalmazásba bejelentkezett felhasználóknak már nem
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Bejelentkezési folyamatjelző az androidos Céges portálhoz <!--953374-->
 
-Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelentkezési folyamatjelző jelenik meg, ha a felhasználó elindítja az alkalmazást vagy folytatja a használatát. A folyamatjelző új állapotokon halad végig, ezek időrendben a következők: „Csatlakozás...”, „Bejelentkezés...” és „Biztonsági követelmények keresése...” – a felhasználó ezt követően fér hozzá az alkalmazáshoz. Az Androidhoz készült Céges portál alkalmazás új képernyői az [Újdonságok az Intune-alkalmazás felhasználói felületén](whats-new-in-intune-app-ui.md) oldalon láthatók. 
+Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelentkezési folyamatjelző jelenik meg, ha a felhasználó elindítja az alkalmazást vagy folytatja a használatát. A folyamatjelző új állapotokon halad végig, ezek időrendben a következők: „Csatlakozás...”, „Bejelentkezés...” és „Biztonsági követelmények keresése...” – a felhasználó ezt követően fér hozzá az alkalmazáshoz. Az Androidhoz készült Céges portál alkalmazás új képernyői az [Újdonságok az Intune-alkalmazás felhasználói felületén](whats-new-in-intune-app-ui.md) oldalon láthatók.
 
 
 ## <a name="notices"></a>Értesítések
@@ -186,7 +186,7 @@ További windowsos eszközkorlátozási beállításokat tettünk elérhetővé,
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Többfelhasználós támogatás a Windows 10 alkotói frissítéséhez <!-- 822547 -->
 
-A többfelhasználós felügyelet támogatását kiterjesztettük a Windows 10 alkotói frissítését futtató, Azure Active Directory-tartományhoz csatlakozó eszközökre. Az eszközre minden egyes, AAD-s hitelesítő adataival bejelentkező felhasználó a saját felhasználónevéhez rendelt alkalmazásokat és szabályzatokat kapja meg.
+A többfelhasználós felügyelet támogatását kiterjesztettük a Windows 10 alkotói frissítését futtató, Azure Active Directory-tartományhoz csatlakozó eszközökre. Az eszközre minden egyes, Azure AD-s hitelesítő adataival bejelentkező általános jogú felhasználó a saját felhasználónevéhez rendelt alkalmazásokat és szabályzatokat kapja meg. A felhasználók jelenleg nem használhatják a Céges portált önkiszolgálói forgatókönyvek esetén (például alkalmazások telepítése).
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Újrakezdés művelet Windows 10-es PC-khez<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Mostantól olyan kiadásfrissítési szabályzatok is létrehozhatók, amelyekke
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10-es eszközök tömeges regisztrálása <!-- 747607 -->
 
-IT-automatizálási eszközökkel nagy számú Windows 10-es eszközt lehet az Azure Active Directoryhoz és az Intune-hoz csatlakoztatni. Ha Azure AD-bérlőjéhez be szeretné kapcsolni az automatikus MDM-regisztrációt, a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközt az Azure AD-bérlőhöz. A csomagot alkalmazza a regisztrálni és felügyelni kívánt, vállalati tulajdonú eszközökre.  Ezt követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.
+A Windows Configuration Designer (WCD) használatával Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha az Azure AD-bérlőhöz be szeretné kapcsolni az automatikus MDM-regisztrálást, a Windows Configuration Designerrel hozzon létre egy olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a tömegesen regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. A csomagok alkalmazását követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, és megkapják a hozzájuk rendelt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó forgatókönyvek jelenleg nem támogatottak.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Új MAM-beállítások a PIN-kódhoz és a felügyelt tárolóhelyekhez <!-- 58112, 736644 -->
 

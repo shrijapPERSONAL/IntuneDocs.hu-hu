@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és
 |Csoportok IMEI-szám szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált céges eszközök > IMEI-szám szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)|
 | Céges eszközregisztrációs profil| Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli profilok](#where-did-corporate-pre-enrolled-devices-go) |
 | Céges eszközregisztrációs profil | Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work-regisztráció | | Feltételek és kikötések | Szabályzat > Feltételek és kikötések | Eszközregisztráció > Feltételek és kikötések |
 
 
 ## <a name="where-do-i-manage-groups"></a>Hol lehet a csoportokat kezelni?
