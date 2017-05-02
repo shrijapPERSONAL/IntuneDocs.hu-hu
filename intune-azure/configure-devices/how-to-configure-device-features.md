@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -44,8 +44,11 @@ A témakörben található információk alapján megismerheti az eszközfunkci�
     - **macOS**
 6. A **Profil típusa** legördülő listában válassza az **Eszközfunkciók** lehetőséget. 
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-    - [iOS-beállítások](device-features-for-ios.md)
-    - [macOS-beállítások](device-features-for-macos.md)
+    - [AirPrint-beállítások iOS-re és MacOS-re](air-print-settings-for-ios-and-macos.md)
+     - [AirPlay-beállítások iOS-re](airplay-settings-for-ios-devices.md)
+    - [Kezdőképernyő-elrendezési beállítások iOS-re](home-screen-settings-for-ios.md)
+    - [Alkalmazások értesítési beállításai iOS-re](app-notification-settings-for-ios.md)
+    - [Közös használatú eszközök konfigurációs beállításai iOS-re](shared-device-settings-for-ios.md)
 
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
