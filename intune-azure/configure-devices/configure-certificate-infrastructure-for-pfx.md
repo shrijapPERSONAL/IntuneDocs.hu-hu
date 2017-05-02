@@ -1,12 +1,12 @@
 ---
-title: "Az Intune tanúsítványinfrastruktúrájának konfigurálása a PKCS használatára"
+title: "PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal"
 titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan konfigurálhatja infrastruktúráját arra, hogy PKCS-tanúsítványokat használjon az Intune-nal."
+description: "Azure-beli Intune – előzetes: Útmutató az infrastruktúra konfigurálásához és az SCEP-tanúsítványprofilok ezt követő létrehozásához és eszközökhöz rendeléséhez az Intune-ban."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 11bb2cbcf14abe5966e0b203ba3466adc12bd4dd
+ms.lasthandoff: 04/24/2017
 
 
 
 ---
-# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>A Microsoft Intune tanúsítványinfrastruktúrájának konfigurálása a PKCS használatára
+# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Ez a témakör a PKCS-tanúsítványprofiloknak az Intune-nal való létrehozásával és telepítésével kapcsolatos tudnivalókat ismerteti.
+Ez a témakör az infrastruktúra konfigurálását és az SCEP-tanúsítványprofilok ezt követő, az Intune-nal végzett létrehozását és eszközökhöz rendelését ismerteti.
 
 Ha bármilyen tanúsítványalapú hitelesítést szeretne végrehajtani a szervezetben, szüksége lesz egy vállalati hitelesítésszolgáltatóra.
 
@@ -61,17 +61,16 @@ A PKCS-tanúsítványprofilok használatához a vállalati hitelesítésszolgál
 |Objektum|Részletek|
 |----------|-----------|
 |**Tanúsítványsablon**|Ezt a sablont a vállalati hitelesítésszolgáltatón tudja konfigurálni.|
-|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Ezt a tanúsítványt **.cer** fájlként kell exportálnia a vállalati hitelesítésszolgáltatótól vagy bármely olyan eszközről, amely megbízik a vállalati hitelesítésszolgáltatóban, majd központilag telepítenie kell az eszközökre a megbízható hitelesítésszolgáltatói tanúsítványprofillal.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
+|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Ezt a tanúsítványt **.cer** fájlként kell exportálnia a vállalati hitelesítésszolgáltatótól vagy bármely olyan eszközről, amely megbízik a vállalati hitelesítésszolgáltatóban, majd a megbízható hitelesítésszolgáltatói tanúsítványprofillal ki kell osztania az eszközöknek.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
 
 
 ## <a name="configure-your-infrastructure"></a>Az infrastruktúra konfigurálása
-A tanúsítványprofilok konfigurálása előtt végre kell hajtania a következő feladatokat. E feladatokhoz szükség van a Windows Server 2012 R2 és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
+A tanúsítványprofilok konfigurálása előtt végre kell hajtania a következő lépéseket. Ezekhez szükség van a Windows Server 2012 R2 és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
 
-- **1. feladat** – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál.
-- **2. feladat** – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása.
+- **1. lépés:** tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
+- **2. lépés:** az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>1. feladat – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-Ebben a feladatban teszi közzé a tanúsítványsablont.
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>1. lépés: tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 
 ### <a name="to-configure-the-certification-authority"></a>A hitelesítésszolgáltató konfigurálásához
 
@@ -109,20 +108,21 @@ Ebben a feladatban teszi közzé a tanúsítványsablont.
 
 4.  A hitelesítésszolgáltató számítógépen győződjön meg róla, hogy az Intune Tanúsítvány-összekötőt futtató számítógépnek van regisztrálási engedélye, és így hozzáférhet a PKCS-tanúsítványprofil létrehozásakor használt sablonhoz. Állítsa be az engedélyt a hitelesítésszolgáltató számítógép tulajdonságainak **Biztonság** lapján.
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>2. feladat – Az Intune tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
-A feladat tartalma:
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>2. lépés: az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+Ebben a lépésben:
 
-A tanúsítvány-összekötő letöltése, telepítése és konfigurálása.
+- A tanúsítvány-összekötő támogatásának engedélyezése
+- A tanúsítvány-összekötő letöltése, telepítése és konfigurálása.
 
 ### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezéséhez
 
-1.  Jelentkezzen be az Azure Portal webhelyre.
+1.  Jelentkezzen be az Azure Portalra.
 2.  Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
 3.  Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
 2.  Válassza az **Eszközök konfigurálása** panel **Beállítás** > **Hitelesítésszolgáltató** elemét.
 2.  A **1. lépésnél** válassza az **Engedélyezés** lehetőséget.
 
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálása
+### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálásához
 
 1.  Válassza az **Eszközök konfigurálása** panel **Beállítás** > **Hitelesítésszolgáltató** elemét.
 2.  Válassza **A tanúsítvány-összekötő letöltése** lehetőséget.
@@ -158,6 +158,53 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 
 **http:// &lt;NDES-kiszolgáló_teljes_tartományneve&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>További lépések
-Ezzel készen áll a tanúsítványprofilok létrehozására. Arról a [tanúsítványoknak a Microsoft Intune-nal történő konfigurálását ismertető cikk](how-to-configure-certificates.md) nyújt tájékoztatást.
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>PKCS-tanúsítványprofil létrehozása
+
+Az Azure Portalon válassza az **Eszközök konfigurálása** elemet.
+2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+3. A profilok panelen kattintson a **Profil létrehozása** lehetőségre.
+4. A **Profil létrehozása** panelen adja meg a PKCS-tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
+5. Válassza ki a PKCS-tanúsítvány eszközplatformját a **Platform** legördülő lista következő elemei közül:
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 és újabb**
+6. A **Profil típusa** legördülő listában válassza a **PKCS-tanúsítvány** lehetőséget.
+7. A **PKCS-tanúsítvány** panelen konfigurálja a következő beállításokat:
+    - **Megújítási küszöb (%)** – Adja meg, hogy az eszköz a tanúsítvány élettartamának hány százalékos hátralévő idejénél igényelje a tanúsítvány megújítását.
+    - **Tanúsítvány érvényességi időtartama** – Ha a kiállító hitelesítésszolgáltatón a **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** parancs futtatásával engedélyezte az egyéni érvényességi időtartamot, akkor meghatározhatja a tanúsítvány lejáratáig hátralévő időt.<br>A megadott tanúsítványsablonban meghatározott érvényességi időszaknál rövidebb értéket is beállíthat, hosszabbat azonban nem. Ha például a tanúsítványsablonban két év van meghatározva a tanúsítvány érvényességi idejeként, akkor egy évet beállíthat értékként, öt évet azonban nem. Az értéknek emellett a kiállító hitelesítésszolgáltató tanúsítványának hátralévő érvényességi időszakánál is kevesebbnek kell lennie.
+    - **Kulcstároló-szolgáltató** (Windows 10): Itt adhatja meg, hogy a rendszer hol tárolja a tanúsítvány kulcsát. Az alábbi értékek közül választhat:
+        - **Regisztrálás a platformmegbízhatósági modul kulcstároló-szolgáltatójába (ha van ilyen), máskülönben regisztrálás a szoftverkulcstároló-szolgáltatóba**
+        - **Regisztrálás a platformmegbízhatósági modul kulcstároló-szolgáltatójába, máskülönben a művelet sikertelen**
+        - **Regisztrálás a Passportba, máskülönben a művelet sikertelen (Windows 10 és újabb verzió)**
+        - **Regisztrálás szoftverkulcstároló-szolgáltatóba**
+    - **Hitelesítésszolgáltató:** Olyan vállalati hitelesítésszolgáltató (CA), amelyen a Windows Server 2008 R2 vagy újabb rendszer Enterprise kiadása fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx). Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
+    - **Hitelesítésszolgáltató neve** – Adja meg a hitelesítésszolgáltatója nevét.
+    - **Tanúsítványsablon neve** – Válassza ki annak a tanúsítványsablonnak a nevét, amelynek használatára a Hálózati eszközök tanúsítványigénylési szolgáltatása be van állítva, és amely hozzá van adva egy kiállító hitelesítésszolgáltatóhoz.
+    Ügyeljen rá, hogy a név pontosan azonos legyen a Hálózati eszközök tanúsítványigénylési szolgáltatását futtató kiszolgáló beállításjegyzékében szereplő névvel. A tanúsítványsablon valódi nevét adja meg, ne pedig a tanúsítványsablon megjelenített nevét. 
+    Keresse meg a tanúsítványsablonok nevét. Ehhez nyissa meg a következő kulcsot: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Az **EncryptionTemplate**, a **GeneralPurposeTemplate**és a **SignatureTemplate**beállítások értékei a tanúsítványsablonokat jelölik. Alapértelmezés szerint mindhárom tanúsítványsablon értéke IPSECIntermediateOffline, amely az **IPSec (offline kérelem)** megjelenített sablonnévhez tartozik. 
+    - **Tulajdonos nevének formátuma** – Válassza ki a listáról, hogy az Intune hogyan hozza létre automatikusan a tulajdonos nevét a tanúsítványkérelemben. Ha a tanúsítvány felhasználóhoz tartozik, a felhasználó e-mail címét is feltüntetheti a tulajdonos nevében. A következő lehetőségek közül választhat:
+        - **Nincs konfigurálva**
+        - **Köznapi név**
+        - **Köznapi név (e-mail is)**
+        - **Köznapi név mint e-mail cím**
+    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt fogja hitelesítésre használni egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania.
+    - **Kibővített kulcshasználat** (Android) – Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés** , hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet. 
+    - **Főtanúsítvány** (Android) – Válasszon ki egy olyan legfelső szintű hitelesítésszolgáltatói tanúsítványprofilt, amelyet korábban konfigurált és hozzárendelt a felhasználóhoz vagy az eszközhöz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Ez a korábban létrehozott megbízható tanúsítványprofil.
+8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
+
+Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
+
+## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil eszközökhöz rendelése
+
+Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a következőket:
+
+- Amikor csoportokhoz rendeli a tanúsítványprofilokat, a megbízható hitelesítésszolgáltatói tanúsítványprofilból származó tanúsítványfájl települ az eszközre. Az eszköz a PKCS-tanúsítványprofilt használja tanúsítványkérelem létrehozására.
+- A tanúsítványprofilok csak a profil létrehozásakor használt platformot futtató eszközökre települnek.
+- Tanúsítványprofilokat rendelhet felhasználógyűjteményekhez és eszközgyűjteményekhez is.
+- Ha azt szeretné, hogy a tanúsítványok gyorsan megjelenjenek az eszközökön a regisztráció után, a tanúsítványprofilt felhasználócsoporthoz és ne eszközcsoporthoz rendelje hozzá. Ha eszközcsoporthoz rendeli, akkor teljes eszközregisztráció szükséges, mielőtt az eszköz megkaphatná a szabályzatokat.
+- Jóllehet az egyes profilokat külön-külön rendeli hozzá, a legfelső szintű hitelesítésszolgáltató és a PKCS-profil hozzárendelésére is szükség van. Ellenkező esetben a PKCS-tanúsítványszabályzat hibát fog jelezni.
+
+A profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](how-to-assign-device-profiles.md) című cikk nyújt általános tájékoztatást.
 
