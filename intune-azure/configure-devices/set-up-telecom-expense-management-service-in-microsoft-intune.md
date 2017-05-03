@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Távközlésiköltség-kezelő szolgáltatások beállítása az Azure-os Intune előzetes verziójában
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert olyan valós idejű távközlésiköltség-kezelő szoftver, amely módot ad a távközlési adatok használatának kezelésére, valamint segít elkerülni az adathasználati és a roamingkeret költséges és váratlan túllépését az Intune által felügyelt eszközökön. 
+Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert olyan valós idejű távközlésiköltség-kezelő szoftver, amely módot ad a távközlési adatok használatának kezelésére, valamint segít elkerülni az adathasználati és a roamingkeret költséges és váratlan túllépését az Intune által felügyelt eszközökön.
 
 Az Intune és a Datalert integrációja lehetővé teszi, hogy központilag állítson be, figyeljen és alkalmazzon roaming- és belföldi adathasználati korlátokat automatikus riasztások használatával abban az esetben, ha a korlátok túllépnek meghatározott küszöbértékeket. A szolgáltatás konfigurálásával különféle műveleteket alkalmazhat személyekre vagy végfelhasználói csoportokra, például letilthatja a roamingot, ha a felhasználók túllépik a küszöbértéket. Az adathasználati és figyelési információkat biztosító jelentések a Datalert kezelőkonzolján érhetők el.
 
@@ -85,7 +85,7 @@ A fenti 1. lépés befejeződése után a kapcsolatnak elvben automatikusan enge
 
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 
-4. Az **Eszközkonfiguráció** panelen válassza a **Beállítás** > **Távközlési költségek kezelése** lehetőséget. 
+4. Az **Eszközkonfiguráció** panelen válassza a **Beállítás** > **Távközlési költségek kezelése** lehetőséget.
 
    Keresse meg a lap tetején látható **Aktív** kapcsolati állapotot.
 
@@ -97,7 +97,7 @@ Ahhoz, hogy biztosan csak vállalati tulajdonú előfizetésekre vonatkozó adat
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Az eszközkategóriák és a kategóriákhoz rendelt eszközcsoportok definiálása
 
-A szervezet szükségleteitől függően létre kell hoznia legalább két eszközkategóriát (például Vállalati és Saját tulajdonú), és dinamikus eszközcsoportokat kell meghatároznia mindkét kategóriához. Szükség esetén több kategóriát is létrehozhat a szervezet számára. 
+A szervezet szükségleteitől függően létre kell hoznia legalább két eszközkategóriát (például Vállalati és Saját tulajdonú), és dinamikus eszközcsoportokat kell meghatároznia mindkét kategóriához. Szükség esetén több kategóriát is létrehozhat a szervezet számára.
 
 Amikor a felhasználók regisztrálják az eszközeiket, látják ezeket a kategóriákat. Attól függően, hogy a felhasználó melyik kategóriát választja, a regisztrált eszköz a megfelelő eszközcsoportba kerül. Az eszközkategóriák létrehozásának lépéseit az [Eszközök hozzárendelése csoportokhoz](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) című témakör ismerteti.
 
@@ -109,7 +109,7 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
 1. Válassza az Azure Portal **Intune** paneljének **Alkalmazásfelügyelet** elemét.
 
-2. Az **Alkalmazásfelügyelet** területen válassza a **Kezelés** > **Alkalmazások** elemet. 
+2. Az **Alkalmazásfelügyelet** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 
 3. Vegyen fel egy alkalmazást a **Hozzáadás** gombra kattintva.
 
@@ -129,7 +129,7 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
 1. Válassza ki az előző lépésben létrehozott Datalert iOS-alkalmazást.
 
-2. Az **Alkalmazások** panelen lépjen a **Kezelés** > **Feladatok** területre. 
+2. Az **Alkalmazások** panelen lépjen a **Kezelés** > **Feladatok** területre.
 
 3. Válassza a **Csoportok kiválasztása** elemet, és válassza ki a vállalati tulajdonú eszközök csoportját a lépéseknek megfelelően.
 
@@ -137,9 +137,9 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
   ![Képernyőfelvétel a Szabályzat hozzáadása panelről](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Vállalati telefon-előfizetések felvétele a Datalert konzoljába 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Vállalati telefon-előfizetések felvétele a Datalert konzoljába
 
-Mostanra úgy konfigurálta az Intune és a Datalert szolgáltatást, hogy tudjanak kommunikálni egymással. Most fel kell vennie a vállalati telefon-előfizetéseket a Datalert konzoljába, és meg kell határoznia, hogy milyen küszöbértékek érvényesek a honos hálózaton és a roaming során való használatra, és milyen intézkedés történik a megszegésük esetén. 
+Mostanra úgy konfigurálta az Intune és a Datalert szolgáltatást, hogy tudjanak kommunikálni egymással. Most fel kell vennie a vállalati telefon-előfizetéseket a Datalert konzoljába, és meg kell határoznia, hogy milyen küszöbértékek érvényesek a honos hálózaton és a roaming során való használatra, és milyen intézkedés történik a megszegésük esetén. A vállalati telefon-előfizetéseket manuálisan is felveheti a Datalert konzoljába, vagy megvárhatja, hogy az eszköz Intune-regisztrációja után azok automatikusan fel legyenek véve.
 
 A beállítások megadásához látogasson el a [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (A Datalert beállítása a Microsoft Intune-hoz) weblapra (http://www.datalert.fr/microsoft-intune/intune-setup), és kövesse a beállítási varázsló lépéseit a **Settings** (Beállítások) lapon.
 
@@ -147,6 +147,11 @@ A beállítások megadásához látogasson el a [Datalert setup for Microsoft In
 
 
 A Datalert szolgáltatás most már aktív, és megkezdi az adathasználat figyelését, valamint a mobil és roaming-adatforgalom letiltását azokon az eszközökön, amelyek túllépik a beállított használati korlátokat.
+
+## <a name="client-enrollment-experience"></a>Ügyfél-regisztrációs folyamat
+Az ügyfél-regisztrációs folyamattal kapcsolatosan az alábbi információkat ajánljuk figyelmébe:
+-    [iOS-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [Android-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>A Datalert szolgáltatás kikapcsolása
 

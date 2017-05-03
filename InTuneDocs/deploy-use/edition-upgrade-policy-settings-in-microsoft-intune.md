@@ -1,23 +1,23 @@
 ---
 title: "A Windows kiadásfrissítési házirendjének beállításai | Microsoft Docs"
-description: "Ismerje meg, hogyan frissítheti automatikusan Windows 10-eszközét az Intune legújabb verziójának segítségével."
+description: "Ismerje meg, hogyan frissíthet automatikusan Windows 10-eszközt más verzióra az Intune segítségével."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/10/2016
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A Microsoft Intune **kiadásfrissítési házirendje** lehetővé teszi az alábbi Windows 10-verziók valamelyikét futtató eszközök újabb verzióra történő automatikus frissítését:
+A Microsoft Intune **kiadásfrissítési házirendje** lehetővé teszi az alábbi Windows 10-verziók valamelyikét futtató eszközök más verzióra történő automatikus frissítését:
 * Windows 10 asztali verzió
 * Windows 10 Holographic
 * Windows 10 mobil verzió

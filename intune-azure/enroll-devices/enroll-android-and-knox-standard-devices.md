@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Az Intune-nal felügyelhet androidos eszközöket, többek között Samsung Knox Standard típusúakat is. Az eszközfelügyelethez a felhasználóknak le kell tölteniük a Google Play-ből az Intune Céges portál alkalmazást, majd azt megnyitva az útmutatás alapján regisztrálniuk kell az eszközt. Ha az androidos eszközök bekerültek a felügyelet alá, Ön számos más művelet mellett [megfelelőségi szabályzatokat hozhat létre](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android) vagy [felügyelheti az alkalmazásokat](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management).
+
+A Samsung KNOX Standard rendszerű eszközökön mostantól használható az Intune többfelhasználós felügyelete. Ilyenkor a felhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be és ki az eszközön, de az központi felügyelet alatt marad, akár használatban van, akár nem. A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.
 
 ## <a name="prerequisite"></a>Előfeltétel
 

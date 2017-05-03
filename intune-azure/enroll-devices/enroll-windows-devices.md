@@ -5,7 +5,7 @@ description: "Intune az Azure-on – előzetes: az Intune mobileszköz-felügyel
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 Ez a témakör a felhasználók windowsos eszközeinek regisztrációját segít megkönnyíteni a rendszergazdáknak.  A windowsos eszközök további lépések nélkül is regisztrálhatók, de a folyamatot meg lehet könnyíteni a felhasználók számára.
 
-A windowsos eszközök regisztrálásának módját két tényező határozza meg:
+A többfelhasználós felügyelet támogatását kiterjesztettük a Windows 10 alkotói frissítését futtató, Azure Active Directory-tartományhoz csatlakozó eszközökre. Az eszközre minden egyes, Azure AD-s hitelesítő adataival bejelentkező általános jogú felhasználó a saját felhasználónevéhez rendelt alkalmazásokat és szabályzatokat kapja meg. A felhasználók jelenleg nem használhatják a Céges portált önkiszolgálói forgatókönyvek esetén (például alkalmazások telepítése).
+
+A Windows-eszközök regisztrálásának egyszerűsítését két tényező határozza meg:
+
 - **Prémium szintű Azure Active Directoryt használnak?** <br>Az [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) az Enterprise Mobility + Security és más licencelési csomagok keretében is elérhető.
 - **Milyen Windows-verziókat fognak regisztrálni az ügyfelek?** <br>A Windows 10-es eszközök egy munkahelyi vagy iskolai fiók felvételével automatikusan regisztrálhatók. A korábbi verziók a Céges portál alkalmazással tudnak regisztrálni.
 
@@ -40,7 +43,7 @@ A windowsos eszközök regisztrálásának módját két tényező határozza me
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Windowsos regisztráció engedélyezése Prémium szintű Azure AD nélkül
-A felhasználói eszközregisztrációt a Prémium szintű Azure AD automatikus regisztrációja nélkül is lehetővé teheti. Ha Ön licenceket oszt ki a felhasználói fiókoknak, akkor a felhasználók az adott fiókot felvehetik windowsos eszközükön, és jóváhagyhatják az eszköz felügyeleti regisztrációját. DNS-aliasok (CNAME rekordtípus) létrehozása megkönnyíti a felhasználóknak az eszközeik regisztrálását. DNS CNAME erőforrásrekord létrehozásával a felhasználók Intune-kiszolgálónév beírása nélkül tudnak csatlakozni az Intune-hoz és regisztrálni a szolgáltatásra.
+A felhasználói eszközregisztrációt a Prémium szintű Azure AD automatikus regisztrációja nélkül is lehetővé teheti. A licencek hozzárendelése után a felhasználóknak a regisztrálás előtt hozzá kell adniuk munkahelyi fiókjukat a személyes tulajdonban lévő eszközeiken, vagy a céges tulajdonú eszközeiket csatlakoztatniuk kell az Azure AD-hoz. DNS-aliasok (CNAME rekordtípus) létrehozása megkönnyíti a felhasználóknak az eszközeik regisztrálását. DNS CNAME erőforrásrekord létrehozásával a felhasználók Intune-kiszolgálónév beírása nélkül tudnak csatlakozni az Intune-hoz és regisztrálni a szolgáltatásra.
 
 **1. lépés: CNAME rekordok létrehozása** (nem kötelező)<br>
 Hozza létre a megfelelő CNAME DNS-erőforrásrekordokat a céges tartományhoz. Ha a munkahelyi webhely címe például contoso.com, akkor olyan CNAME rekordot kell létrehoznia a DNS-ben, amely az EnterpriseEnrollment.contoso.com webhelyről átirányítja a felhasználókat az enterpriseenrollment-s.manage.microsoft.com webhelyre.
@@ -64,7 +67,7 @@ Ha több UPN-utótagja is van, akkor mindegyik tartománynévhez külön CNAME-r
 A DNS-rekord módosításának terjesztése akár 72 órát is igénybe vehet. Az Intune-ban nem ellenőrizhető a DNS-módosítás, amíg a DNS-rekord propagálása zajlik.
 
 **2. lépés: a CNAME ellenőrzése** (nem kötelező)<br>
-Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Az Intune-beli panelen válassza az **Eszközök regisztrálása** > **Windows-regisztráció** lehetőséget. Írja be a munkahelyi webhely ellenőrzött tartományának URL-címét az **Adja meg egy ellenőrzött tartomány nevét** mezőbe, majd kattintson az **Automatikus észlelés tesztelése** elemre.
+Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Az Intune-beli panelen válassza az **Eszközök regisztrálása** >  **Windows-regisztráció** lehetőséget. Írja be a munkahelyi webhely ellenőrzött tartományának URL-címét az **Adja meg egy ellenőrzött tartomány nevét** mezőbe, majd kattintson az **Automatikus észlelés tesztelése** elemre.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>A felhasználók tájékoztatása a windowsos eszközök regisztrálásáról
 Tájékoztassa felhasználóit arról, hogy miként regisztrálhatják windowsos eszközeiket, és milyen szolgáltatásokat vehetnek majd igénybe a mobileszköz-felügyelet alá bevont eszközeiken. A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Windows-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). A felhasználók a [Milyen adatokhoz jut hozzá a rendszergazda, ha regisztrálom az eszközömet?](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) című témakörből is tájékozódhatnak.

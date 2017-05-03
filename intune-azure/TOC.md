@@ -94,6 +94,8 @@
 ### [A Céges portál alkalmazás konfigurálása](manage-apps/company-portal-app.md)
 ## Az alkalmazásvédelmi szabályzatok használata
 ### [Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése](manage-apps/app-protection-policies.md)
+### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android-beállítások](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS-beállítások](manage-apps/ios-app-protection-policy-settings.md)
 ### [Az alkalmazásvédelmi szabályzatok ellenőrzése](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [A Windows 10-kiadás frissítési beállításainak konfigurálása](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [A Windows 10 oktatási funkcióinak konfigurálása](configure-devices/how-to-configure-education-settings.md)
+### [Az iOS oktatási funkcióinak konfigurálása](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [A Vállalati Windows Update beállításainak konfigurálása](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Tanúsítványok konfigurálása](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)

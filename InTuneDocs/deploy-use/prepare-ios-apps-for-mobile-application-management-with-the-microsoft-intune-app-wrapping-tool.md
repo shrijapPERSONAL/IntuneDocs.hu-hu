@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -108,8 +109,8 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
   ![Belső és Ad Hoc tanúsítvány kiválasztása](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Ha az alkalmazást nem tervezi terjeszteni, csak belső tesztelésre szánja, akkor iOS App Development (iOS-alkalmazásfejlesztési) tanúsítványt is használhat a Production típusú helyett. Fejlesztői tanúsítvány használata esetén bizonyosodjon meg róla, hogy a mobil kiépítési profil megadja, hogy mely eszközökre fog települni az alkalmazás.
+  >[!NOTE]
+  >Ha az alkalmazást nem tervezi terjeszteni, csak belső tesztelésre szánja, akkor iOS App Development (iOS-alkalmazásfejlesztési) tanúsítványt is használhat a Production típusú helyett. Fejlesztői tanúsítvány használata esetén bizonyosodjon meg róla, hogy a mobil kiépítési profil megadja, hogy mely eszközökre fog települni az alkalmazás.
 
 7. Kattintson a **Next** (Folytatás) gombra a lap alján.
 
@@ -136,7 +137,6 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 14. A tanúsítvány kulcslánchoz való hozzáadásához kattintson duplán a letöltött tanúsítványfájlra.
 
 15. Nyissa meg újra a **Keychain Access** alkalmazást. Az ablak jobb felső részében található keresősávval keresse meg a tanúsítványt. Kattintson jobb egérgombbal a megtalált elemre a menü megjelenítéséhez, majd kattintson a **Get Info** (Információk) lehetőségre. A példaképernyőkön fejlesztési tanúsítványt használunk éles üzemi tanúsítvány helyett.
-
 
   ![Tanúsítvány hozzáadása a kulcslánchoz](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -205,7 +205,7 @@ Az alkalmazásburkoló eszközzel a következő parancssori paraméterek haszná
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Részletes használati információkat jelenít meg az alkalmazásburkoló eszközben elérhető parancssori tulajdonságokról.|
-|**-v**|(Nem kötelező) Részletes üzeneteket jelenít meg a konzolon.|
+|**-v**|(Nem kötelező) Részletes üzeneteket jelenít meg a konzolon. A hibakeresést célszerű ezzel a kapcsolóval végezni.|
 |**-e**| (Nem kötelező) Ezzel a kapcsolóval utasíthatja az alkalmazásburkoló eszközt a hiányzó jogosultságok törlésére alkalmazásfeldolgozás közben. További részletek az Alkalmazásjogosultságok beállítása című részben olvashatók.|
 |**-xe**| (Nem kötelező) Információkat jelenít meg az alkalmazás iOS-bővítményeiről, továbbá arról, hogy ezek milyen jogosultságokkal használhatók. További részletek az Alkalmazásjogosultságok beállítása című részben olvashatók. |
 |**-x**| (Nem kötelező) `<An array of paths to extension provisioning profiles>`. Akkor használja, ha az alkalmazáshoz bővítménylétesítési profil szükséges.|
@@ -399,9 +399,4 @@ Az alkalmazásburkoló eszköz használata során kövesse az alábbi biztonság
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

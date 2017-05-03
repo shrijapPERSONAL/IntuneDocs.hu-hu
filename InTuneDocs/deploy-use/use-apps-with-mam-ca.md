@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazások használata MAM feltételes hozzáférés mellett | Microsoft Docs"
+title: "Alkalmazások használata MAM feltételes hozzáféréssel"
 description: "Ismerje meg, a MAM feltételes hozzáférés miként tud segíteni abban, hogy mely alkalmazások férhessenek hozzá az O365 szolgátasaihoz."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ A következő listán azoknak a tulajdonságoknak a listája látható, amelyek 
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Androidos eszközökön:
+  * A Céges portál alkalmazásnak telepítve kell lennie az eszközön, de a végfelhasználónak nem szükséges bejelentkeznie az alkalmazásba.
+  * Az eszközregisztrációt a OneDrive vagy az Outlook alkalmazáson keresztül kell elvégezni.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Eszköz Azure AD-regisztrációjának törlése.
 Az eszközök regisztrációját az Azure AD felügyeleti konzoljával lehet törölni. Ezt általában a rendszergazda végzi el.  A végfelhasználó is törölheti a regisztrációt, magán az eszközön.

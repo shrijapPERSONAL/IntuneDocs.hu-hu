@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: 9dbb44981c1525e6137dd8a469b1582731ee9719
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -33,7 +33,7 @@ Egyéni Intune-konfigurációs szabályzatokkal VPN-profilok hozhatók létre a 
 * Android for Work-eszközök
 * A Windows 8.1-es vagy újabb verzióját futtató regisztrált eszközök
 * A Windows Phone 8.1-es vagy újabb verzióját futtató eszközök
-* A Windows 10 asztali verzióját futtató regisztrált eszközök 
+* A Windows 10 asztali verzióját futtató regisztrált eszközök
 * Windows 10 Mobile rendszerű eszközök
 
 Az ilyen típusú szabályzat akkor lehet hasznos, ha a szabványos Intune VPN-szabályzatok nem tartalmazzák a használni kívánt beállításokat.
@@ -53,7 +53,7 @@ Ezt követően a megszokott módon [telepítse a szabályzatot](/intune/deploy-u
 ## <a name="example-uri-settings"></a>URI-példabeállítások
 
 Az alábbi beállításokkal egy kitalált, Contoso nevű vállalat VPN-jéhez lehet egyéni konfigurációt létrehozni.
-A használható beállításokról itt talál részletes tudnivalókat: [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+A használható beállításokról itt talál részletes tudnivalókat: [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -91,7 +91,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Ha bármilyen kérdése van a beállítások használatával kapcsolatban, illetve az ezen beállítások működésével kapcsolatos további információkra van szüksége, olvassa el a konfigurációszolgáltató (CSP) dokumentációját: https://msdn.microsoft.com/hu-hu/library/windows/hardware/dn914776(v=vs.85).aspx.
+Ha bármilyen kérdése van a beállítások használatával kapcsolatban, illetve az ezen beállítások működésével kapcsolatos további információkra van szüksége, olvassa el a konfigurációszolgáltató (CSP) dokumentációját: https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>URI-beállítások Android rendszerű alkalmazásonkénti VPN-hez a PulseSecure-ban
 ### <a name="custom-uri-for-package-list"></a>EGYÉNI URI CSOMAGLISTÁHOZ

@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>A Microsoft Intune-eszközfelügyelet ismertetése 
+# <a name="what-is-microsoft-intune-device-management"></a>A Microsoft Intune-eszközfelügyelet ismertetése
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Ezután válassza az alábbiak egyikét:
 - **Áttekintés** – Tájékoztatást nyújt a regisztrált eszközökről és az egyes eszközökön futó operációs rendszerekről.
 - **Kezelés** – A **Minden eszköz** lehetőséget választva megjelenítheti az összes kezelt eszköz listáját.
     Ha kijelöl egy eszközt a listán, megnyílik az <*eszköznév*> **Áttekintés** panel, amelyen az alábbiak közül választhat:
-    - **Áttekintés** – Általános információkat nyújt az eszközről, köztük sok más mellett megadja az eszköz nevét, tulajdonosát, hogy BYOD-eszköz-e, és mikor jelentkezett be legutóbb. 
-                
+    - **Áttekintés** – Általános információkat nyújt az eszközről, köztük sok más mellett megadja az eszköz nevét, tulajdonosát, hogy BYOD-eszköz-e, és mikor jelentkezett be legutóbb.
+
     - **Hardver** – Részletes információkat jelenít meg az eszközről, többek között a szabad tárhelyet, a modell és a gyártó nevét.
     ![Felügyelt eszköz hardverleltára](./media/hardware-inventory.png)
     - **Észlelt alkalmazások** – Felsorolja azokat a telepített alkalmazásokat, amelyeket az Intune az eszközön talált.
@@ -67,6 +67,12 @@ Zárolja az eszközt. Az eszköz zárolását a PIN-kódjával vagy jelszavával
 ### <a name="bypass-activation-lock"></a>**Az aktiválási zár megkerülése**
 A felhasználó Apple ID azonosítója és jelszava nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz ismét bekapcsolja az aktiválási zárat a Find My iPhone alkalmazás elindulásakor. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
 
+### <a name="fresh-start"></a>**Újrakezdés**
+
+Eltávolít minden alkalmazást az alkotói frissítéssel rendelkező Windows 10-es számítógépről, majd automatikusan a Windows legújabb verziójára frissíti az eszközt.
+Így egyszerűbben eltávolíthatók az új gépeken gyakran előtelepítve megtalálható számítógépgyártói (OEM) alkalmazások. A konfigurációval meg lehet adni, hogy a művelet a felhasználói adatokat is eltávolítsa-e. Ebben az esetben az alkalmazások és a beállítások el lesznek távolítva, de a felhasználó kezdőmappájának tartalma megmarad.
+
+
 ### <a name="lost-mode"></a>**Elveszett eszköz mód**
 Ha az iOS-eszköz elveszik vagy ellopják, lehetőség van az Elveszett eszköz mód aktiválására. Ilyenkor megadható egy üzenet és egy telefonszám, amely megjelenik az eszköz zárolási képernyőjén. Tegye a következőt:
 1.    Az iOS-eszköz tulajdonságainak panelén válassza az **Egyebek** > **Elveszett eszköz mód** elemet.
@@ -78,7 +84,7 @@ Az Elveszett mód csak felügyelt módban lévő, DEP-pel regisztrált, céges t
 ### <a name="locate-device"></a>**Eszköz megkeresése**
 Ennek a távoli műveletnek a használatával jelenítheti meg az elveszett vagy ellopott iOS-eszköz helyét a térképen. A funkció csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható. A művelet használata előtt az eszközt Elveszett eszköz módba kell állítani.
 1.    Az iOS-eszköz tulajdonságainak panelén válassza az **Egyebek** > **Eszköz megkeresése** elemet.
-2.    Miután a rendszer megtalálta az eszközt, megjeleníti annak helyét az **Eszköz megkeresése** panelen. 
+2.    Miután a rendszer megtalálta az eszközt, megjeleníti annak helyét az **Eszköz megkeresése** panelen.
     ![Eszköz megkeresése panel](./media/locate-device.png)
 
 >[!NOTE]
