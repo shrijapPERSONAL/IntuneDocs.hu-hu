@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
     
         -    Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
     
-        -     Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
+        -     Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
 
 ## <a name="policy-issues"></a>Szabályzattal kapcsolatos problémák
 
@@ -119,7 +119,7 @@ Ha ezekkel a hibaelhárítási eljárásokkal nem sikerül megoldani a problém�
 ### <a name="exchange-connector-logs"></a>Az Exchange Connector naplófájljai
 
 #### <a name="general-log-information"></a>Általános naplófájl-információk
-Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Trace Viewer eszközt (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx). Ennek az eszköznek a használatához le kell töltenie a Windows Server SDK-t.
+Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Trace Viewer eszközt (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Ennek az eszköznek a használatához le kell töltenie a Windows Server SDK-t.
 
 >[!NOTE]
 >A naplófájlok a C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs mappában találhatók. A naplók a *Connector0.log* fájltól a *Connector29.log* fájlig tartó 30 naplófájlban találhatók. Miután egy naplófájlban összegyűlt 10 MB adat, a rendszer megnyitja a következőt. Amikor betelik a Connector29 naplófájl, a folyamat a Connector0 naplófájllal újraindul, felülírva a korábbi naplófájlokat.

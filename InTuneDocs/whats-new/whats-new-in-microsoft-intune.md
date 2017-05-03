@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: b3cf8d8f60482be2d4d903d1b2c00c1a3a392b73
+ms.lasthandoff: 04/20/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---march-2017"></a>Újdonságok a Microsoft Intune-ban – 2017. március
+# <a name="whats-new-in-microsoft-intune---april-2017"></a>Újdonságok a Microsoft Intune-ban – 2017. április
 Ismerkedjen meg a Microsoft Intune új verziójának újdonságaival. Emellett tájékozódhat a jövőbeni változtatásokról és a korábbi verziókról, és felkészülhet a következő kiadásra.
 
 > [!Note]
@@ -29,68 +29,55 @@ Ismerkedjen meg a Microsoft Intune új verziójának újdonságaival. Emellett t
 
 ## <a name="new-capabilities"></a>Új képességek
 
-### <a name="support-for-skycure"></a>A Skycure támogatása
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
 
-A Microsoft Intune-nal mostantól már integrálható, Skycure nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Skycure által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+Javítottunk a bejelentkezési élményen az Intune Céges portál alkalmazásánál Android, iOS és Windows rendszereken. A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.
 
-- Fizikai védelem
-- Hálózatvédelem
-- Alkalmazásvédelem
-- Biztonsági rések elleni védelem
+Az [Újdonságok az alkalmazás felhasználói felületén](whats-new-in-intune-app-ui.md) lapon képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
 
-Az Intune eszközmegfelelőségi szabályzatai által engedélyezett, a Skycure által jelentett kockázatértékelés alapján EMS feltételes hozzáférési szabályzatok konfigurálhatók az Intune-ban. Ezen szabályzatok használatával engedélyezheti vagy letilthatja a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz az észlelt fenyegetések alapján. További információ: [Skycure Mobile Threat Defense-összekötő](/intune/deploy-use/skycure-mobile-threat-defense-connector).
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>A MyApps elérhető a Felügyelt böngészőhöz is <!--822308, 822303-->
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Új felhasználói élmény az Androidhoz készült Céges portál alkalmazásban <!--621622-->
+A Microsoft MyApps mostantól jobban működik a Felügyelt böngészőben. A Felügyelt böngésző felügyeletre ki nem jelölt felhasználói közvetlenül a MyApps szolgáltatásba kerülnek, ahol elérhetik a rendszergazda által nekik kiosztott SaaS-alkalmazásokat. Az Intune-felügyeletre kijelölt felhasználók továbbra is a Felügyelt böngésző beépített könyvjelzőjével érhetik el a MyApps szolgáltatást.
 
-Az Androidhoz készült Céges portál alkalmazás új, modern megjelenésű és jobb élményt biztosító felhasználói felületet kap. Fontosabb frissítések:
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Új ikonok a Felügyelt böngészőhöz és a Céges portálhoz <!--918433, 918431, 971473-->
 
-- Színek: a Céges portál lapfejléceinek színe meghatározható az informatikai részleg által.
-- Alkalmazások: az **Alkalmazások** lapon frissítettük a **Kiemelt alkalmazások** és a **Minden alkalmazás** gombokat.
-- Keresés: az **Alkalmazások** lapon a **Keresés** gomb lebegő műveletgombként jelenik meg.
-- Navigáció az alkalmazások között: a **Minden alkalmazás** gomb lapnézetben jeleníti meg a **Kiemelt alkalmazásokat**, az **Összes alkalmazást** és a **Kategóriákat**, így a navigálás egyszerűbb.
-- Támogatás: a **Saját eszközök** és az **IT-csoport elérhetősége** lapok olvashatósága javult.
+A Felügyelt böngésző androidos és iOS-es verziója egyaránt megújult ikont kap. Ezen az Intune új jelvénye szerepel, így egységesebb lesz az Enterprise Mobility + Security (EM+S) programcsomag alkalmazásainak arculata. A Managed Browser új ikonját megnézheti az [Újdonságok az Intune-alkalmazás felhasználói felületén](whats-new-in-intune-app-ui.md) oldalon.
 
-A változásokkal kapcsolatos további részletekért lásd: [Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban](whats-new-in-intune-app-ui.md).
+A Céges portál androidos, iOS-es és windowsos verziója is új ikont kap az EM+S többi alkalmazásával való összhang jegyében. Ezek az ikonok fokozatosan jelennek majd meg az egyes platformokon áprilistól május végéig.
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>A nem felügyelt eszközök hozzáférhetnek a hozzárendelt alkalmazásokhoz <!--664691-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Bejelentkezési folyamatjelző az androidos Céges portálhoz <!--953374-->
 
-A Céges portál webhely átalakításának részeként az iOS-es és az Androidos felhasználók olyan alkalmazásokat telepíthetnek, amelyek hozzárendelés esetén a nem felügyelt eszközökön regisztráció nélkül érhetők el. Miután a felhasználók az Intune-beli hitelesítő adataikkal bejelentkeztek a Céges portál webhelyre, megtekinthetik a hozzájuk rendelt alkalmazások listáját. A regisztráció nélkül elérhető alkalmazások csomagjait a Céges portál webhelyről lehet letölteni. A telepítéskor regisztrációt kérő alkalmazásokat ez a változás nem érinti, mivel a rendszer az ilyen alkalmazások telepítésekor felszólítja a felhasználókat az eszközök regisztrációjára.
+Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelentkezési folyamatjelző jelenik meg, ha a felhasználó elindítja az alkalmazást vagy folytatja a használatát. A folyamatjelző új állapotokon halad végig, ezek időrendben a következők: „Csatlakozás...”, „Bejelentkezés...” és „Biztonsági követelmények keresése...” – a felhasználó ezt követően fér hozzá az alkalmazáshoz. Az Androidhoz készült Céges portál alkalmazás új képernyőképei az [Újdonságok az Intune-alkalmazás felhasználói felületén](whats-new-in-intune-app-ui.md) oldalon láthatók.
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>A Windows 10-es Céges portálhoz készült aláírási szkript <!--941642-->
+### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Alkalmazások hozzáférésének letiltása a SharePoint Online-hoz <!-- 679339 -->
 
-A Windows 10-es Céges portál alkalmazás letöltésekor és közvetlen telepítésekor mostantól rendelkezésre áll egy olyan szkript, amely egyszerűbbé és hatékonyabbá teszi az alkalmazások aláírását a munkahelyen.   A szkript letöltéséhez és használati útmutatójához tekintse meg a [Windows 10-es Céges portálhoz készült Microsoft Intune aláírási szkriptet](https://aka.ms/win10cpscript) a TechNet gyűjteményében. A bejelentéssel kapcsolatos további részletekért olvassa el [A Windows 10-es Céges portál alkalmazás frissítése](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) című bejegyzést az Intune ügyfélszolgálati csapat blogján.
+Most már lehetséges a [SharePoint Online-on](/InTune/deploy-use/mam-ca-for-sharepoint-online) keresztül létrehozni olyan alkalmazásalapú feltételes hozzáférési szabályzatokat olyan alkalmazások letiltásához, amelyekre nem vonatkozik alkalmazásvédelmi szabályzat. Az alkalmazásalapú feltételes hozzáférési forgatókönyv esetében az Azure Portal használatával meghatározhatja, hogy mely alkalmazásoknak legyen hozzáférése a SharePoint Online-hoz.
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10-es eszközök tömeges regisztrálása <!-- 747607 -->
+
+Mostantól a Windows Configuration Designer (WCD) használatával a Windows 10 alkotói frissítéssel rendelkező nagy számú eszközt csatlakoztathat az Azure Active Directoryhez és az Intune-hoz. Ha Azure AD-bérlőhöz be szeretné kapcsolni a [csoportos MDM-regisztrálást](/intune/deploy-use/bulk-enroll-windows), a Windows Configuration Designerrel hozzon létre olyan kiépítési csomagot, amely csatlakoztatja az eszközöket az Azure AD-bérlőhöz, majd alkalmazza a csomagot a csoportosan regisztrálni és felügyelni kívánt vállalati tulajdonú eszközökre. A csomagok alkalmazását követően az eszközök csatlakoznak az Azure AD-hez, regisztrálnak az Intune-ban, és készen állnak az Azure AD-felhasználók bejelentkezésére.  Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, akik megkapják majd a kijelölt szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó módszer jelenleg nincs támogatva.
 
 ## <a name="notices"></a>Értesítések
 
-### <a name="support-for-ios-103"></a>Az iOS 10.3 támogatása
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Az Apple regisztrálási forgatókönyvek közvetlen elérése <!--951869-->
 
-Az iOS 10.3-as kiadása 2017. március 27-től jelent meg az iOS felhasználók számára. Minden meglévő Intune MDM- és MAM-forgatókönyv kompatibilis a legújabb verziójú Apple operációs rendszerrel. Várakozásaink szerint a jelenleg rendelkezésre álló iOS-eszközökhöz elérhető összes meglévő Intune-szolgáltatás továbbra is működni fog, amikor a felhasználók az iOS 10.3-as verzióra frissítik az eszközeiket és az alkalmazásaikat.
+A 2017. január után létrehozott Intune-fiókok esetében az Intune lehetővé tette az Apple regisztrálási forgatókönyvek közvetlen elérését az Azure Betekintő portálon elérhető Eszközregisztrációs munkafolyamat használatával. Korábban az Apple-regisztrálási betekintés csak a klasszikus Intune-portálon található hivatkozásokkal volt elérhető. A 2017 januárja előtt létrehozott Intune-fiókok esetében ezek a funkciók egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető, de a lehető legrövidebb időn belül tájékoztatást adunk róla. Ha a jelenlegi fiókkal nem érhető el a betekintés, javasoljuk, hogy hozzon létre egy próbafiókot az új lehetőségek kipróbálásához.
 
-Jelenleg nem tudunk ismert problémáról. Ha problémákat tapasztal az iOS 10.3-ban, forduljon [Intune támogatási csapatunkhoz](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Appx-változások az Azure-beli Intune-ban <!-- 1000270 -->
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Megújult támogatás az Android rendszert Kínában használó ügyfelek számára <!--720444-->
+Az Intune Azure-ra való migrálásának keretében három appx-változást vezetünk be:
 
-Kínában nem érhető el a Google Play Áruház, ezért az androidos eszközöknek kínai áruházakból kell beszerezniük az alkalmazásokat. A Céges portál alkalmazás ezt azzal segíti, hogy az Android rendszert Kínában használó ügyfeleket a Céges portál és az Outlook alkalmazások letöltéséhez helyi alkalmazásáruházakba irányítja át. Ezzel javul a mobileszköz-felügyelet és a mobilalkalmazás-felügyelet felhasználói élményének minősége, ha a feltételes hozzáférési szabályzatok engedélyezve vannak. Az androidos Céges portál és Outlook alkalmazások az alábbi kínai alkalmazásáruházakból tölthetők le:
+1. Új, kizárólag MDM-be regisztrált eszközökre telepíthető appx-alkalmazástípus a klasszikus Intune-konzolon.
+2. A korábbi appx-alkalmazástípussal mostantól csak a PC-s Intune-ügynökkel felügyelt PC-ket lehet célozni.
+3. A migráció során az összes korábbi appx MDM-es appx-re konvertálódik.
 
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
 
-### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>Ajánlott eljárás: Gondoskodjon arról, hogy a Céges portál alkalmazásai naprakészek legyenek <!--879465-->
+A változás nincs hatással a PC-s Intune-ügynökkel felügyelt eszközökön telepített példányokra. A migráció után azonban a migrált appx-eket nem lehet további, a PC-s Intune-ügynökkel felügyelt és korábban nem célzott eszközökre telepíteni.
 
-2016 decemberében kiadtunk egy olyan frissítést, amely lehetővé tette a többtényezős hitelesítés kényszerítését a felhasználók egy adott csoportjában Android, Windows 8.1+ vagy Windows Phone 8.1+ rendszerű eszközök regisztrációjakor. Ez a szolgáltatás nem működik az Androidhoz és az iOS-hez készült Céges portál alkalmazás bizonyos alapverziói nélkül (Android: v5.0.3419.0+ és iOS: v2.1.17+).
+#### <a name="what-action-do-i-need-to-take"></a>Mi a teendőm?
 
-A Microsoft folyamatosan fejleszti az Intune-t, és az összes támogatott platformon új szolgáltatásokat vezet be a konzolhoz és a Céges portál alkalmazásokhoz kapcsolódóan. Ennek eredményeként a Microsoft csak olyan hibák javításait teszi közzé, amelyek a Céges portál alkalmazás jelenlegi verziójában találhatók meg. Javasoljuk, hogy az optimális felhasználói élmény érdekében a Céges portál alkalmazásainak legújabb verzióit használja.
-
->[!Tip]
-> Gondoskodjon arról, hogy a felhasználók beállítsák az eszközeiket az alkalmazások megfelelő áruházból történő automatikus frissítésére. Ha az androidos Céges portál alkalmazást hálózati megosztáson tette elérhetővé, a legújabb verziót a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=49140) töltheti le.
-
-### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>A Microsoft Teams mostantól engedélyezve van az iOS és az Android rendszerű mobilalkalmazás-kezelés esetén
-
-A Microsoft bejelentette a Microsoft Teams szolgáltatás általános rendelkezésre állását. Az iOS és az Android rendszerű frissített Microsoft Teams alkalmazások mostantól támogatják az Intune-beli mobilalkalmazás-kezelési képességeket, így a különböző csoportok mostantól többféle eszközön dolgozhatnak szabadon. A beszélgetések és a vállalati adatok védelme minden egyes ponton garantált. A [Microsoft Teams bejelentésével](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) kapcsolatos részleteket az Enterprise Mobility + Security blogon találja.
+A migrálás után töltse fel újból az appx-et PC-s appx-ként, ha újabb PC-s telepítésekre készül. További tájékoztatást az Intune-ügyfélszolgálat blogján, az [Appx changes in Intune on Azure](https://aka.ms/appxchange) (Appx-változások az Azure-beli Intune-ban) című angol nyelvű bejegyzésben olvashat.  
 
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Az Intune új, Azure-beli felügyeleti felületének nyilvános előzetes verziója – újdonságok<!--736542-->
@@ -117,7 +104,7 @@ Az Apple bejelentette, hogy 2017 tavaszától bizonyos követelményeket ír el�
 
 ### <a name="see-also"></a>További információ
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [A felhőplatform ütemterve](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [A felhőplatform ütemterve](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Az Azure előzetes verziójának újdonságai](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [A Céges portál felhasználói felületének újdonságai](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [Újdonságok – Archívum](whats-new-archive.md)

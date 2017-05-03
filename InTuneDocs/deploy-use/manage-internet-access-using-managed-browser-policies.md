@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Felügyeltböngésző-szabályzatokat a következő eszköztípusok esetében ho
 
 -   iOS 8.0 vagy újabb rendszerű eszközök
 
-Az Intune által felügyelt böngésző támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
+Az Intune által felügyelt böngésző támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
 
 ## <a name="create-a-managed-browser-policy"></a>Felügyeltböngésző-szabályzat létrehozása.
 
@@ -110,7 +110,7 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
     -   HTTPS – 443-as port
 
-    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;**and**http&colon;//www&period;contoso&period;com: /*;** nem támogatott.
+    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;* *és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
 
 -   Az alábbi táblázat az URL-címek megadásakor használható mintákat ismerteti:
 

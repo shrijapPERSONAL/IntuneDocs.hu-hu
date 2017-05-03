@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**Képernyőfelvétel**|Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.|Nem|Igen|
 |**Hangsegéd**|Hangsegéd szoftverek használatának engedélyezése az eszközön.|Nem|Igen|
 |**YouTube**|A YouTube alkalmazás használatának engedélyezése az eszközön.|Nem|Igen|
+|**Megosztott eszközök**|Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a felhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be és ki az eszközön, de az központi felügyelet alatt marad, akár használatban van, akár nem.<br>A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.|Nem|Igen|
 
 ## <a name="password"></a>Jelszó
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Képernyőzárolás legfeljebb ennyi perc inaktivitás után**|Az eszköz az itt megadott számú másodperc elteltével automatikusan zárolja magát.|Igen|Igen|
 |**Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat**|Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölve lennének.|Igen|Igen|
 |**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
-|**Kötelező jelszótípus**|Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz.|Igen|Igen|
+|**Kötelező jelszótípus**|Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz. A következő lehetőségek közül választhat:<br><br>    -     **Eszköz alapértelmezése**<br>-     **Alacsony biztonságú biometrikus**<br>    -     **Legalább számok**<br>    -     **Összetett numerikus** (ismétlődő vagy egymást követő számok, mint a „1111” vagy „1234” nem engedélyezettek)<sup>1</sup><br>    -     **Legalább betűk**<br>    -     **Legalább alfanumerikus karakterek**<br>    -     **Legalább alfanumerikus karakterek és szimbólumok**|Igen|Igen|
 |**Korábbi jelszavak újbóli használatának tiltása**|Megakadályozza, hogy a végfelhasználó általa korábban már használt jelszót hozzon létre.|Igen|Igen|
 |**Ujjlenyomattal történő zárolásfeloldás**|Engedélyezi az ujjlenyomattal történő zárolásfeloldást a támogatott eszközökön.|Nem|Igen|
 |**Smart Lock és egyéb megbízhatósági ügynökök**|A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van, például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.|Igen (5.0 és újabb verziók)|Nem|
 |**Titkosítás**|Az eszközön található összes fájlnak titkosítva kell lennie.|Igen|Igen|
+
+<sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Vállalati portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
+
+Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-nál korábbi verziójú Androidot futtató eszközhöz rendeli, az az alábbi jelenségeket eredményezi.
+- A Vállalati portál alkalmazás 1704-esnél korábbi verziója esetén nem érvényesül PIN-kód-szabályzat az eszközön, és hibaüzenet jelenik meg az Intune-portálon.
+- Amennyiben a Vállalati portál az 1704-es verzióra van frissítve, csupán egyszerű PIN-kód alkalmazható. Az Android 5.0-nál korábbi verziói nem támogatják ezt a beállítást. Hibaüzenet nem jelenik meg az Intune-portálon.
+
 
 ## <a name="google-play-store"></a>Google Play Áruház
 

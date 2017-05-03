@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -162,7 +162,9 @@ Megkezdheti a vállalati tulajdonú eszközök terjesztését a felhasználókna
 
 ## <a name="changes-to-intune-group-assignments"></a>Változások az Intune csoport-hozzárendelésekben
 
-2017 áprilisától az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. A vállalati eszközbeléptetési profil által előre hozzárendelt összes Intune-beli eszközcsoport esetében és az Azure Active Directory-eszközcsoportokba történő migrálás során a rendszer egy megfelelő dinamikus eszközcsoportot hoz létre az AAD-ben a vállalati eszközbeléptetési profil neve alapján. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+2017 áprilisától az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. A vállalati eszközbeléptetési profil által előre hozzárendelt összes Intune-beli eszközcsoport esetében és az Azure Active Directory-eszközcsoportokba történő migrálás során a rendszer egy megfelelő dinamikus eszközcsoportot hoz létre az AAD-ben a vállalati eszközbeléptetési profil neve alapján. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. A [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Az automatikus csoportosítás változásai az előre regisztrált céges iOS-es eszközök esetében) című blogbejegyzésben olvashat részleteket arról, hogy ez milyen hatással van a céges tulajdonú iOS-es eszközök regisztrációjára.
+
+Figyelmébe ajánljuk még a [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/) című témakört.
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)

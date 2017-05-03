@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -27,11 +27,55 @@ A cikkből megismerheti, mit módosítottunk a végfelhasználók számára lát
 > [!Note]
 > Vegye figyelembe, hogy az alábbi képek az előzetes verziókra vonatkoznak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
 
-## <a name="whats-coming-in-intune-app-ui"></a>Várható újdonságok az Intune alkalmazás felhasználói felületén
+## <a name="april-2017"></a>2017. április
 
-### <a name="april-2017"></a>2017. április
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Új ikonok a Managed Browserhez és a Céges portálhoz <!--918433, 918431-->
+Javítottunk a bejelentkezési élményen az Intune Céges portál alkalmazásánál Android, iOS és Windows rendszereken.  A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.  
+
+Alább képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
+
+__Korábbi bejelentkezési folyamat__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![A Bejelentkezés gombra kattintás után a felhasználónak meg kell adnia a hitelesítő adatait az oldalon. A rendszer a felhasználó e-mail-címét és jelszavát kéri, továbbá a jelszóval kapcsolatos hibák elhárításának módját is meg kell határoznia.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![A jelszó megadása utána Céges portál alkalmazás elvégzi a bejelentkezést, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Új bejelentkezési folyamat__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![A felhasználónak ugyanazon az oldalon csak az e-mail-címét kell megadnia, nem pedig mind az e-mail-címét, mind a jelszavát.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![A felhasználótól csak akkor kéri a rendszer a jelszavát ha már helyesen megadta az e-mail-címét.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__Új bejelentkezési folyamat más eszközről való bejelentkezéskor__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
+
+![A felhasználónak ugyanazon az oldalon csak az e-mail-címét kell megadnia, nem pedig mind az e-mail-címét, mind a jelszavát. Az e-mail mező alatti hivatkozás szövege: „Bejelentkezés másik eszközről”.](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Nyisson meg egy böngészőablakot és keresse fel az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
+
+![A felhasználó munkagépén futó böngészőablak képe (nem pedig a Céges portál alkalmazásé). A megjelenített „Eszközbejelentkezés” oldal arra kéri a felhasználót, hogy adja meg a Céges portál alkalmazástól kapott kódot.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Írja be a Céges portál alkalmazás által megadott kódot. A __Folytatás__ elemet kiválasztva elvégezheti a hitelesítést a cége által támogatott bármely módszerrel, például intelligens kártyával.
+
+![A felhasználó beírta a mezőbe az egyedi kódját, az „Eszközbejelentkezés” webhely pedig a felhasználó megerősítését kéri, hogy az Intune Céges portálnak kell-e bejelentkezési engedélyt kapnia.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Jóváhagyást jelző oldal, amely megerősíti, hogy a felhasználó bejelentkezett a Céges portál alkalmazásra az eszközén, és hogy ez az oldal bezárható.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+A Céges portál alkalmazás megkezdi a bejelentkezést.
+
+![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Új ikonok a Managed Browserhez és a Céges portálhoz <!--918433, 918431-->
 
 A Managed Browser androidos és iOS-es verziója egyaránt megújult ikont kap. Ezen az Intune új jelvénye szerepel, így egységesebb lesz az Enterprise Mobility + Security (EM+S) programcsomag alkalmazásainak arculata.
 
@@ -52,7 +96,7 @@ A Managed Browser androidos és iOS-es verziója egyaránt megújult ikont kap. 
 
 A Céges portál androidos, iOS-es és windowsos verziója is új ikont kap az EM+S többi alkalmazásával való összhang jegyében. Ezek az ikonok fokozatosan jelennek majd meg az egyes platformokon áprilistól május végéig.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Bejelentkezési folyamatjelző az androidos Céges portálhoz <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Bejelentkezési folyamatjelző az androidos Céges portálhoz <!--953374-->
 
 Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelentkezési folyamatjelző jelenik meg, ha a felhasználó elindítja az alkalmazást vagy folytatja a használatát. A folyamatjelző új állapotokon halad végig, ezek időrendben a következők: „Csatlakozás...”, „Bejelentkezés...” és „Biztonsági követelmények keresése...” – a felhasználó ezt követően fér hozzá az alkalmazáshoz.
 
@@ -74,9 +118,7 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>Felhasználói felületi frissítések a végfelhasználói alkalmazásokban
-
-### <a name="february-2017"></a>2017. február
+## <a name="february-2017"></a>2017. február
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Új felhasználói élmény az Androidhoz készült Céges portál alkalmazásban <!--621622, announced 1702-->
 Márciustól kezdve az Androidhoz készült Céges portál alkalmazásban a [material design irányelveinek](https://material.io/guidelines/material-design/introduction.html) követésével gondoskodunk a még modernebb megjelenésről és működésről. A jobb felhasználói élményt többek között az alábbiak alkotják:
@@ -113,7 +155,7 @@ A Céges portál webhely februártól kezdve támogatni fogja a felügyelt eszk�
 
 ### <a name="see-also"></a>További információ
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [A felhőplatform ütemterve](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [A felhőplatform ütemterve](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Az Azure előzetes verziójának újdonságai](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Újdonságok – Archívum](whats-new-archive.md)
 
