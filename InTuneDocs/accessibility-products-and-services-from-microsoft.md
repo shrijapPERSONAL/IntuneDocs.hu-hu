@@ -2,10 +2,10 @@
 title: "A Microsoft kisegítő termékei és szolgáltatásai | Microsoft Docs"
 description: "A Microsoft kisegítő termékeinek és szolgáltatásainak ismertetése"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune

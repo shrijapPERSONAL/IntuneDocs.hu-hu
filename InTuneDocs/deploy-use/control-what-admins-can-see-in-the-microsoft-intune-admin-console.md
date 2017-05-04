@@ -40,7 +40,7 @@ A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége v
     -   **Csak olvasási hozzáférés**
     -   **Segélyszolgálat – Csoportok csomópont**
 
-    A teljes hozzáférés és a csak olvasási hozzáférés jelentése magától értetődő. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    A teljes hozzáférés és a csak olvasási hozzáférés jelentése magától értetődő. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     A **Segélyszolgálat – Csoportok csomópont** hozzáférési szint korlátozza, hogy a rendszergazda mit láthat és mit tehet meg az alábbiak közül:
 
