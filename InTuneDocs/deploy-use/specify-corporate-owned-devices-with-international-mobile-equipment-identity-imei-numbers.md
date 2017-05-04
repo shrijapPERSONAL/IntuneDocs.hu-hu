@@ -30,7 +30,7 @@ A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilké
 
 1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **IMEI-szám szerint (minden platform)** területre, majd válassza az **Eszközök felvétele** lehetőséget. Két módon adhat hozzá eszközöket:
 
-    -   **Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot. A részletek mezőjébe legfeljebb 128 karakter írható.
+    -   **Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot. A részletek mezőjébe legfeljebb 128 karakter írható. 
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilké
         Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Eszközadatok kézi megadása** – Adja meg legfeljebb tizenöt eszköz sorozatszámát és adatait.

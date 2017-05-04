@@ -33,7 +33,7 @@ Rendszergazdaként Ön létrehozhat egy IMEI-számokat felsoroló, vesszővel ta
 ## <a name="add-corporate-identifiers"></a>Vállalati azonosítók felvétele
 Hozzon létre egy kétoszlopos, fejléc nélküli listát .csv formátumban. A baloldali oszlopban tüntesse fel az IMEI-azonosítót, a jobb oldaliban pedig a további adatokat. A részletes adatok maximális terjedelme 128 karakter, csak adminisztratív célt szolgálnak, és nem jelennek meg az eszközön. A .csv-fájlok jelenleg legfeljebb 500 sorosak lehetnek.
 
-**Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot.
+**Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Hozzon létre egy kétoszlopos, fejléc nélküli listát .csv formátumban. A b
 Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
