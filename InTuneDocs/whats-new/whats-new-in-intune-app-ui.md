@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -61,7 +61,7 @@ Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
 
 ![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Nyisson meg egy böngészőablakot és keresse fel az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
+Nyissa meg egy böngészőablakban az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
 
 ![A felhasználó munkagépén futó böngészőablak képe (nem pedig a Céges portál alkalmazásé). A megjelenített „Eszközbejelentkezés” oldal arra kéri a felhasználót, hogy adja meg a Céges portál alkalmazástól kapott kódot.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -112,6 +112,24 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
            </td>
            <td>
               <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Jobb telepítésiállapot-megjelenítés a Windows 10-es Céges portál alkalmazásban <!--676495-->
+A Windows 10-es Céges portál alkalmazásban mostantól folyamatjelző sávok jelzik a Céges portálról indított alkalmazástelepítések állapotát.
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
            </td>
       </tr>
    </table>

@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0b5586a06af7658c0c7a328ae1a824f88129039f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,7 +44,7 @@ Az alábbi hibát látja, ha az Azure AD globális rendszergazdája nem fogadta 
 
 ![képernyőfelvétel, amelyen a Lookout bejelentkezési képernyője bejelentkezési hibát mutat](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-A probléma megoldásához jelentkezzen be a https://aad.lookout.com/les?action=consent oldalon és fogadja el a telepítés indításáról szóló kérést. Ezzel kapcsolatban bővebb információt a [Lookout MTP-előfizetés beállítása](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) című témakörben talál
+A probléma megoldásához a globális rendszergazda jelentkezzen be a https://aad.lookout.com/les?action=consent oldalon és fogadja el a telepítés indításáról szóló kérést. Ezzel kapcsolatban bővebb információt a [Lookout MTP-előfizetés beállítása](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) című témakörben talál
 
 **Eszközállapottal kapcsolatos problémák**
 

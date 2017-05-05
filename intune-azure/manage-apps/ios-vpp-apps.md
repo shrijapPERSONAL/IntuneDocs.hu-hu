@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -53,8 +53,8 @@ Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell 
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
-1.  Az **Alkalmazások kezelése** munkafolyamatban válassza a **Telepítés** > **iOS VPP-jogkivonatok** elemet.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
+1.  A **Mobilalkalmazások** munkafolyamatban válassza a **Telepítés** > **iOS VPP-jogkivonatok** elemet.
 2.  A VPP-tokenek panel listájában kattintson a **Hozzáadás** elemre.
 3.  Az Új VPP-token panelen adja meg az alábbi adatokat:
     - **VPP-jogkivonatfájl** – Ha még nem tette meg, iratkozzon fel a Volume Purchase Program vagy a Volume Purchase Program programra. A regisztrációt követően töltse le a fiókjához tartozó Apple VPP-tokent, és itt jelölje ki.
@@ -69,7 +69,7 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás hozzárendelése
 
-1. Az **Alkalmazásfelügyelet** munkafolyamatban válassza a **Felügyelet** > **Licencelt alkalmazások** elemet.
+1. A **Mobilalkalmazások** munkafolyamatban válassza a **Felügyelet** > **Licencelt alkalmazások** elemet.
 2. Az alkalmazáslista panelen válassza ki azt az alkalmazást, amelyet szeretne hozzárendelni, és válassza a '**...**' > **Csoportok hozzárendelése**.
 3. Az *Alkalmazás neve*>- **Hozzárendelt csoportok** panelen válassza a **Felügyelet** > **Hozzárendelt csoportok** elemet.
 4. Válassza az **Assign Groups** (Csoportok hozzárendelése), majd a **Select groups** (Csoportok kijelölése) panelen jelölje ki azon Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.
