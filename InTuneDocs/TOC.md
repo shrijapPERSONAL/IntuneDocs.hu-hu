@@ -1,5 +1,6 @@
 # Ismertetés és felfedezés
 ## [Az Intune bemutatása](understand-explore/introduction-to-microsoft-intune.md)
+## [Oktatási célokra Intune](understand-explore/introduction-to-intune-education.md)
 ## [Regisztráljon az ingyenes próbaverzióhoz](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Az Intune MDM kipróbálása](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
