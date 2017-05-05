@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ A felhasználókat és eszközcsoportokat érintő csoportmódosításokat az [A
 
 1. Jelentkezzen be az Azure Portal webhelyre.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
-1. Az **Alkalmazások kezelése** területen válassza a **Felügyelet** > **Alkalmazások** elemet.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
+1. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 2. Az alkalmazáslista paneljén kattintson arra az alkalmazásra, amelyet szeretne hozzárendelni.
 3. Az <*alkalmazásnév*> – **Áttekintés** panelen válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
 4. Válassza a **Csoportok kiválasztása** lehetőséget, majd a **Csoportok kiválasztása** panelen jelölje ki azon Azure AD-csoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.

@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,10 +63,10 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Töltse le a helyszíni Exchange Connector szoftver telepítőcsomagját
 
-1. Egy a helyszíni Exchange Connector használatához egy támogatott Windows Server operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](http://manage.microsoft.com) (http://manage.microsoft.com) egy olyan felhasználói fiókkal, amely rendszergazda az Exchange-bérlőben és licenccel rendelkezik az Exchange Server használatához.
+1. A helyszíni Exchange Connector használatához egy támogatott Windows Server operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](https://manage.microsoft.com) (https://manage.microsoft.com) egy olyan felhasználói fiókkal, amely rendszergazda az Exchange-bérlőben, és licenccel rendelkezik az Exchange Server használatához.
 ![Nyissa meg az Exchange-kapcsolat beállítását](../media/ExchangeConnector.gif)
 
-2.  A munkaterület parancsikon ablaktábláján válassza a **Felügyelet**>**lehetőséget, majd lépjen a Mobileszköz-kezelés** > **Microsoft Exchange**>**Exchange-kapcsolat beállítása** pontra.
+2.  A munkaterület parancsikon ablaktábláján válassza a **Felügyelet**> **lehetőséget, majd lépjen a Mobileszköz-kezelés** > **Microsoft Exchange**>**Exchange-kapcsolat beállítása** pontra.
 
 3.  Az **Exchange-kapcsolat beállítása** lapon kattintson az **On-Premises Connector letöltése** parancsra.
 
@@ -129,7 +129,7 @@ Miután az Exchange Connector létrehozta a kapcsolatot, azokat a mobileszközö
 
 ## <a name="validate-the-exchange-connection"></a>Az Exchange-kapcsolat ellenőrzése
 
-Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. A [Microsoft Intune felügyeleti konzolon](http://manage.microsoft.com) válassza a **Felügyelet** munkaterületet. A **Mobileszköz-kezelés** területen válassza a **Microsoft Exchange** elemet, és ellenőrizze, hogy a megadott adatok megjelennek-e **Az Exchange-kapcsolat adatai** területen.
+Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Felügyelet** munkaterületet. A **Mobileszköz-kezelés** területen válassza a **Microsoft Exchange** elemet, és ellenőrizze, hogy a megadott adatok megjelennek-e **Az Exchange-kapcsolat adatai** területen.
 
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.

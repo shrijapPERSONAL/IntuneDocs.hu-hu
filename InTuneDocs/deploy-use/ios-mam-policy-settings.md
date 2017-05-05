@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 | **Alkalmazásadatok titkosítása** | A szabályzat által felügyelt alkalmazások esetén a rendszer az iOS által biztosított eszközszintű titkosítási séma használatával titkosítja az inaktív adatokat. Ha PIN-kódra van szükség, az adattitkosítás az alkalmazásvédelmi szabályzatban megadott beállítások szerint történik. <br><br> Nyissa meg a hivatalos Apple-dokumentációt, amelyet [itt](https://support.apple.com/HT202739) talál, és tekintse meg, hogy az iOS mely titkosítási moduljai a FIPS 140-2 szerint tanúsítottak, és mely moduloknak van a FIPS 140-2 szerinti tanúsítása függőben. <br><br> Itt adhatja meg hogy mikor titkosítsa az alkalmazásban lévő munkahelyi vagy iskolai adatokat a rendszer. A következő lehetőségek közül választhat: <ul><li>**Ha az eszköz zárolva van:** A rendszer a szabályzathoz társított összes alkalmazásadatot titkosítja az eszköz zárolt állapotában.</li><li>**Amikor az eszköz zárolva van és vannak rajta megnyitott fájlok**: A rendszer a szabályzathoz társított összes alkalmazásadatot titkosítja az eszköz zárolt állapotában, kivéve az alkalmazásban éppen megnyitott fájlok adatait.</li><li>**Az eszköz újraindítása után**: A rendszer az eszköz újraindításakor a szabályzathoz társított összes alkalmazásadatot titkosítja, amíg fel nem oldják a zárolást az eszközön.</li><li>**Eszközbeállítások használata:** A rendszer az eszköz alapértelmezett beállításai alapján titkosítja az alkalmazásadatokat. Ha engedélyezi ezt a beállítást, a felhasználónak PIN-kódot kell beállítania és használnia az eszköz eléréséhez.  Ha nincs beállítva PIN-kód, nem indulnak el az alkalmazások, és a felhasználót egy üzenet értesíti arról, hogy a munkahely követelményei szerint PIN-kód beállítása szükséges az adott alkalmazás eléréséhez. </li></ul> | Amikor az eszköz zárolva van |
 | **Névjegy-szinkronizálás letiltása** | Ha az **Igen** gombot választja, a rendszer megakadályozza, hogy az alkalmazás a natív névjegykezelő alkalmazásba adatokat mentsen ezen az eszközön. Ha a **Nem** gombot választja, a rendszer engedélyezi, hogy az alkalmazás a natív névjegykezelő alkalmazásba adatokat mentsen ezen az eszközön. <br><br>Ha szelektív törléssel távolítja el a munkahelyi vagy iskolai adatokat az alkalmazásból, akkor a közvetlenül az alkalmazásból a natív névjegykezelő alkalmazásba szinkronizált névjegyek törlődnek. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. Ez jelenleg csak a Microsoft Outlook alkalmazásra érvényes. | Nem |
 | **Nyomtatás letiltása** | Ha az **Igen** gombot választja, a rendszer megakadályozza, hogy az alkalmazás munkahelyi vagy iskolai adatokat nyomtasson. | Nem |
-
+| **A társzolgáltatások kijelölése, melyekbe menthetők a vállalati adatok** | A felhasználók a kijelölt szolgáltatásokba nem tudnak menteni (OneDrive vállalati verzió, SharePoint és Helyi tárhely). Minden más szolgáltatás tiltva lesz. | OneDrive vállalati verzió és SharePoint |
 
 > [!NOTE]
 > Az iOS-eszközökön egyik adatáthelyezési beállítás sem szabályozza az Apple által felügyelt Megnyitás a következőben funkciót. Az Apple-eszközök Megnyitás a következőben funkciójának felügyeletéről az [iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal](manage-data-transfer-between-ios-apps-with-microsoft-intune.md) című cikkben olvashat.
@@ -72,6 +72,7 @@ Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Int
 | **A felügyelt alkalmazások futásának letiltása a jaibreakelt vagy rootolással feltört eszközökön** |  Ha az **Igen** gombot választja, a rendszer megakadályozza az alkalmazás futtatását jailbreakelt vagy rootolt eszközökön. A felhasználó továbbra is használhatja az alkalmazást személyes feladatokra, de az alkalmazásban lévő munkahelyi vagy iskolai adatok eléréséhez másik eszközt kell használnia. | Igen |
 | **A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)** | Adja meg a következő beállításokat: <ul><li>**Időtúllépés**: ennyi perc elteltével ellenőrzi újra a rendszer a (korábban a szabályzatban definiált) hozzáférési követelményeket. Ha például a rendszergazda a szabályzatban bekapcsolja a PIN-kódot, a felhasználóknak a MAM-alkalmazások megnyitásakor PIN-kódot kell megadniuk. Ezen beállítás használata esetén a felhasználónak (alapértelmezés szerint) további **30 percig** nem kell a PIN-kódját beírnia más MAM-alkalmazások eléréséhez.</li><li>**Offline türelmi időszak**: ennyi percig futhatnak offline állapotban a MAM-alkalmazások, itt adható meg (percben), hogy mikor ellenőrizze a rendszer újra az alkalmazás hozzáférési követelményeit. Alapértelmezett érték = **720** perc (12 óra). Az időszak lejárta után az alkalmazás további futásához AAD-s felhasználói hitelesítés szükséges.</li></ul>| Időkorlát: 30 <br><br> Offline: 720 |
 | **Offline időtartam (nap) az alkalmazásadatok törlése előtt** | Ennyi (a rendszergazda által megadott számú) napnyi offline működés után hajt végre az alkalmazás szelektív törlést. Ez ugyanaz a művelet, mint amelyet a rendszergazda kezdeményezhet a MAM törlési munkafolyamatában. <br><br> | 90 nap |
+| **Alkalmazás PIN-kódjának letiltása, ha az eszköz PIN-kódja felügyelt** | Válassza az **Igen** beállítást, ha le szeretné tiltani az alkalmazás PIN-kódját, amikor a regisztrált eszközön eszközzárolást észlelt a rendszer. | Nem |
 
 ##  <a name="add-ins-for-outlook-app"></a>Bővítmények az Outlook alkalmazáshoz
 

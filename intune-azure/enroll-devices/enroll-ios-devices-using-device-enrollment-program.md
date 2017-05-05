@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ Ez a témakör az [Apple készülékregisztrációs programja (DEP)](https://dep
 2. [DEP-profil létrehozása](#create-anapple-dep-profile)
 3. [Apple DEP-sorozatszám hozzárendelése az Intune-kiszolgálóhoz](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [DEP által felügyelt eszközök szinkronizálása](#synchronize-dep-managed-devices)
-5. Eszközök terjesztése a felhasználóknak
-
-
+5. [DEP-profil hozzárendelése eszközökhöz](#assign-a-dep-profile-to-devices)
+6. [Eszközök terjesztése a felhasználóknak](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Az Apple DEP-tanúsítvány beszerzése
 A vállalati tulajdonban lévő iOS-eszközöket csak egy, az Apple-től származó DEP-tanúsítványfájl (.p7m-fájl) birtokában regisztrálhatja az Apple készülékregisztrációs programjában. Ez a jogkivonat lehetővé teszi, hogy az Intune szinkronizálja a DEP-ben résztvevő, vállalat által birtokolt eszközök adatait. A jogkivonat ezen felül lehetővé teszi, hogy az Intune regisztrációs profilokat töltsön fel az Apple számára, és a feltöltött profilokhoz eszközöket rendeljen hozzá.
@@ -49,9 +48,6 @@ Ahhoz, hogy a vállalat által birtokolt iOS-eszközöket a DEP segítségével 
 
 > [!NOTE]
 > Ha az Intune-bérlőt a klasszikus Intune-konzolról migrálták az Azure Portalra, és a migráció során Ön törölt egy Apple DEP-jogkivonatot az Intune felügyeleti konzolról, akkor lehet, hogy a DEP-jogkivonat vissza lett állítva az Intune-fiókba. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról.
-
-
-
 
 **1. lépés Töltsön le egy nyilvános kulcsú Intune-tanúsítványt (ez szükséges az Apple DEP-token létrehozásához).**<br>
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Az Intune panelen válassza az **Eszközregisztráció** > **Apple DEP-token** lehetőséget.
@@ -75,7 +71,7 @@ Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gomb
 Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmazott beállításokat. A következő lépésekkel hozhat létre eszközregisztrációs profilt a DEP eszközzel regisztrált iOS-eszközök számára.
 
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd az **Apple-regisztráció** elemet.
+2. Az Intune panelen válassza az **Eszközregisztrálás**, majd pedig az **Apple-regisztráció** elemet.
 3. Az **Apple Device Enrollment Program (DEP) beállításainak kezelése** területen válassza a **DEP-profilok** lehetőséget.
 4. Az **Apple DEP-profilok** panelen válassza a **Létrehozás** lehetőséget.
 5. A **Regisztrációs profil létrehozása** panelen adja meg a profil nevét és leírását.
@@ -118,6 +114,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 9. A profilbeállítások mentéséhez a **Regisztrációs profil létrehozása** panelen válassza a **Létrehoz** lehetőséget.
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Apple DEP-sorozatszám hozzárendelése MDM-kiszolgálóhoz
+Ahhoz, hogy az Intune felügyelni tudja az eszközöket, az Apple DEP webes portálján az eszközök sorozatszámait az Intune MDM-kiszolgálóhoz kell hozzárendelni.
 
 1. Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-val.
 
@@ -128,6 +125,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 4. Válassza az **Assign to Server** (Hozzárendelés kiszolgálóhoz) lehetőséget, válassza ki a Microsoft Intune-hoz megadott &lt;kiszolgálónevet&gt;, majd kattintson az **OK** gombra.
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP által felügyelt eszközök szinkronizálása
+Miután az Intune engedélyt kapott a DEP-eszközök felügyeletére, szinkronizálhatja az Intune-t a DEP szolgáltatással, így a felügyelt eszközök megjelennek az Intune-portálon.
 
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
@@ -146,12 +144,29 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 >[!NOTE]
 >DEP-sorozatszámokat az **Apple DEP-sorozatszámok** panelen is hozzá tud rendelni profilokhoz.
 
+## <a name="assign-a-dep-profile-to-devices"></a>DEP-profil hozzárendelése eszközökhöz
+Az Intune által felügyelt DEP-eszközöket a regisztrálás előtt DEP-profilhoz kell hozzárendelni.
+
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+
+2. Az Azure Portalon válassza az Intune panel **Eszközök regisztrálása** > **Apple-regisztráció**, majd a **DEP-profilok** elemet.
+
+3. Az **Apple DEP-regisztrációs profilok** listából válassza ki az eszközhöz hozzárendelni kívánt profilt, majd válassza az **Eszköz hozzárendelése** lehetőséget
+
+4. Válassza a **Hozzárendelés** lehetőséget, majd válassza ki a profilhoz hozzárendelni kívánt DEP-eszközöket. A megjelenített elérhető eszközöket az alábbiak szerint szűrheti:
+  - **nem hozzárendelt**
+  - **bármelyik**
+  - **&lt;DEP-profil neve&gt;**
+
+  ![Képernyőkép az Intune-portálról a DEP-profil hozzárendelésére szolgáló gombról](media/dep-profile-assignment.png)
+
+5. Válassza ki a hozzárendelni kívánt eszközöket. Az oszlop fölötti jelölőnégyzettel legfeljebb 1000 eszközt választhat ki, majd kattintson a **Hozzárendel** gombra. Ha több mint 1000 eszközt szeretne hozzárendelni, ismételje meg a lépéseket, amíg az összes eszközt hozzá nem rendelte a DEP-profilhoz.
+
 ## <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 
-Most már megkezdheti a céges eszközök kiosztását a felhasználóknak. Az iOS-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára.
+Most már megkezdheti a céges eszközök kiosztását a felhasználóknak. Az iOS DEP-eszközök bekapcsolásakor a rendszer regisztrálja az eszközöket az Intune-nal való felügyelet számára. Ha az eszközt már aktiválták és használatban van, a profil csak akkor alkalmazható, ha az eszközön visszaállították a gyári beállításokat.
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>A Vállalati portál telepítése és használata a felhasználók által
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>A Vállalati portál telepítése és használata a felhasználók által
 
 A felhasználói affinitással konfigurált eszközökön telepítheti és futtathatja a Vállalati portál alkalmazást az alkalmazások letöltéséhez és az eszközök kezeléséhez. Miután a felhasználók megkapják az eszközeiket, végre kell hajtaniuk az alább ismertetett további lépéseket a Beállítási asszisztens befejezéséhez és a Vállalati portál alkalmazás telepítéséhez.
 
@@ -159,7 +174,7 @@ A felhasználói affinitással konfigurált eszközökön telepítheti és futta
 
 1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi vagy egyszerű felhasználónevüket) kell megadniuk.
 
-2. A telepítés során a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Vállalati portál alkalmazást. Az azonosítót a telepítés után, az iOS-beállítások menüben is megadhatják.
+2. A telepítés során a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Vállalati portál alkalmazást. Az Apple ID azonosítót a telepítés után az iOS-beállítások menüben is megadhatják.
 
 3. A telepítés befejezése után a felhasználóknak telepíteniük kell a Vállalati portál alkalmazását az App Store áruházból.
 

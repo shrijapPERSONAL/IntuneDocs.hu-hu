@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
-ms.lasthandoff: 01/10/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -48,6 +48,8 @@ Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megk
 > [!TIP]
 > Az iOS-eszközök felügyelt módja lehetővé teszi az eszközök az Apple Configurator eszközzel való zárolását, így meghatározott üzleti célokra korlátozva annak funkcióit. A felügyelt mód általánosságban csak céges eszközökhöz használható.
 
+További részleteket az aktiválási zárról [itt](https://support.apple.com/en-us/HT201365) olvashat.
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Az aktiválási zár kezelése az Intune-nal
 Az Intune a felügyelt iOS 8.0 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. Kizárólag a felügyelt eszközök esetében az Intune képes lekérdezni az aktiválásizár-áthidaló kódot, és közvetlenül kiadni azt az eszköznek. Ha törölték az eszköz adatait, üres felhasználónévvel és a kódot jelszóként használva közvetlenül hozzáférhet az eszközhöz.
 
@@ -56,6 +58,14 @@ Az Intune a felügyelt iOS 8.0 vagy újabb rendszerű eszközök aktiválási z�
 -   A felhasználó élvezheti a Find My iPhone alkalmazás biztonsági előnyeit.
 
 -   Lehetővé teheti, hogy a felhasználó annak tudatában végezhesse a munkáját, hogy az eszközt ki lehet vonni vagy fel lehet oldani a zárolását, ha a használatának módosítására van szükség.
+
+## <a name="before-you-start"></a>Előkészületek
+
+Az eszközök aktiválási zárjának megkerülése csak akkor lehetséges, ha előtte aktiválták azt. Tegye a következőt:
+
+1. Az iOS-es [eszközkonfigurációs szabályzat](/intune/deploy-use/ios-policy-settings-in-microsoft-intune) létrehozásához kövesse [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) témakör útmutatásait.
+2. A beállítások lap **Regisztrálás** szakaszában az **Aktiválási zár engedélyezése, ha az eszköz felügyelt módban van** beállítás értékét állítsa **Igen** értékre.
+3. Mentse a szabályzatot, és alkalmazza azokra az eszközökre, amelyeken az aktiválási zár megkerülését felügyelni szeretné.
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Az aktiválási zár megkerülésének használata az Intune felügyeleti konzolon
 > [!IMPORTANT]
