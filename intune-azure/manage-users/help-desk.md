@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.lasthandoff: 04/26/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>A felhasználók segítése a Microsoft Intune hibaelhárítási portáljával
@@ -40,8 +40,9 @@ Az Intune-szerepkörökről az [Intune-os szerepkörök (RBAC)](https://docs.mic
 ## <a name="access-the-troubleshooting-portal"></a>A hibaelhárítási portál elérése
 
 Az ügyfélszolgálati munkatársak és az Intune-rendszergazdák kétféleképpen érhetik el a hibaelhárítási portált:
-- Az [Azure Portalon](https:portal.azure.com) a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet, majd a bal oldali navigációs ablaktáblában a **Hibaelhárítás** lehetőséget választva. A bal oldali navigációs ablaktáblában további feladatok is láthatók, de nem érhetők el.
-![Az Intune Hibaelhárítás feladata a Felhasználó kijelölése hivatkozással](media/help-desk-user.png)
+- Az [Azure Portalon](https://portal.azure.com) a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet, majd a bal oldali navigációs ablaktáblában a **Hibaelhárítás** lehetőséget választva. A bal oldali navigációs ablaktáblában további feladatok is láthatók, de nem érhetők el.
+
+![Képernyőkép: az Intune Hibaelhárítás feladata a Felhasználó kijelölése hivatkozással](media/help-desk-user.png)
 - A [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) címet böngészőben megnyitva. Ilyenkor csak a hibaelhárítási portál látható.
 
 ## <a name="use-the-troubleshooting-portal"></a>A hibaelhárítási portál használata

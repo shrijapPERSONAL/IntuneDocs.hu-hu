@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -46,7 +46,7 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 ### <a name="get-an-encryption-key"></a>Titkosítási kulcs beszerzése
 
-1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Titkosítási kulcs letöltése** lehetőséget.
+1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Titkosítási kulcs letöltése** lehetőséget.
 
 2. Mentse a titkosítási kulcs fájlját (.pem) helyileg. A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
 
@@ -68,13 +68,13 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 ### <a name="add-the-dep-token-to-intune"></a>A DEP-token hozzáadása az Intune-hoz
 
-1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** lapra.
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** lapra.
 
 2. Válassza a **DEP-token feltöltése** lehetőséget. **Keresse meg** a tanúsítványfájlt (.p7m), adja meg **Apple ID azonosítóját**, majd válassza a **Feltöltés** lehetőséget.
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>A vállalati eszközregisztrációs házirend felvétele
 
-1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
 
 2. Adja meg az **Általános** lapon található adatokat, például töltse ki a **Név** és a **Leírás** mezőt, valamint adja meg, hogy a profilhoz rendelt eszközök felhasználóhoz vagy csoporthoz tartozzanak-e:
 
@@ -122,7 +122,7 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 ### <a name="assign-the-profile-to-devices"></a>A profil hozzárendelése eszközökhöz
 
-1. A [Microsoft Intune felügyeleti konzoljában](http://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzárendelés** lehetőséget.
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzárendelés** lehetőséget.
 
 2. Válassza ki, hogy mely eszközökhöz szeretné hozzárendelni a létrehozott profilt. Választhatja a **Minden eszköz** lehetőséget, vagy jelölje ki a kívánt eszközöket, majd válassza a **Hozzáadás** elemet.
 
@@ -143,9 +143,9 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 Ez a lépés szinkronizálja az eszközöket az Apple DEP szolgáltatással, és lehetővé teszi, hogy az eszközök megjelenjenek az Intune-konzolon.
 
-1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](http://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Szinkronizálás** lehetőséget. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek.
+1. Rendszergazda felhasználóként bejelentkezve nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), és a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **iOS** &gt; **Készülékregisztrációs program** területen válassza a **Szinkronizálás** lehetőséget. A szolgáltatás elküld egy szinkronizálási kérelmet az Apple-nek.
 
-2. Ha meg szeretné tekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](http://manage.microsoft.com) **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **iOS-sorozatszám szerint** menüpontját. Az **iOS-sorozatszám szerint** munkaterületen, a felügyelt eszközök **Állapot** mezőjében mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
+2. Ha meg szeretné tekinteni a DEP által felügyelt eszközöket a szinkronizálás után, nyissa meg a [Microsoft Intune felügyeleti konzoljának](https://manage.microsoft.com) **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **iOS-sorozatszám szerint** menüpontját. Az **iOS-sorozatszám szerint** munkaterületen, a felügyelt eszközök **Állapot** mezőjében mindaddig a „Nincs kapcsolat” szöveg látható, amíg be nem kapcsolták az adott eszközt, és nem futtatták a Beállítási asszisztenst az eszköz regisztrálásához.
 
    Az Apple elfogadható DEP-forgalomra vonatkozó feltételeinek teljesítése érdekében az Intune a következő korlátozásokat írja elő:
 
@@ -162,7 +162,11 @@ Megkezdheti a vállalati tulajdonú eszközök terjesztését a felhasználókna
 
 ## <a name="changes-to-intune-group-assignments"></a>Változások az Intune csoport-hozzárendelésekben
 
-2017 áprilisától az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el. A vállalati eszközbeléptetési profil által előre hozzárendelt összes Intune-beli eszközcsoport esetében és az Azure Active Directory-eszközcsoportokba történő migrálás során a rendszer egy megfelelő dinamikus eszközcsoportot hoz létre az AAD-ben a vállalati eszközbeléptetési profil neve alapján. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat. A [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Az automatikus csoportosítás változásai az előre regisztrált céges iOS-es eszközök esetében) című blogbejegyzésben olvashat részleteket arról, hogy ez milyen hatással van a céges tulajdonú iOS-es eszközök regisztrációjára.
+2017 áprilisától az eszközcsoport-kezelés az Azure Active Directoryba kerül át. Az Azure Active Directory-csoportokba költözés után a csoport-hozzárendelés nem jelenik meg a vállalati beléptetési profil beállításai között. Mivel ezek a módosítások több hónapig tartanak, lehet, hogy a változások nem lesznek azonnal láthatók. Az új portálra költözés után a dinamikus eszközcsoportok hozzárendelése a vállalati beléptetési profil neve alapján végezhető el.
+
+A migrálás után a rendszer a vállalati eszközregisztrációs profilok által előre hozzárendelt összes Intune-beli eszközcsoporthoz létrehoz egy megfelelő dinamikus eszközcsoportot az AAD-ben a vállalati eszközregisztrációs profil neve alapján. Az új profilnevek formátuma *EnrollmentProfile:&lt;a társított profil neve&gt;*. Ez a folyamat gondoskodik róla, hogy az eszközcsoportokhoz előzetesen hozzárendelt eszközök regisztrációja automatikusan megtörténjen, azaz a rendszer regisztrálja őket a megfelelő csoportban, és alkalmazza rájuk a szabályzatokat, illetve telepítse rájuk az alkalmazásokat.
+
+Ez az automatikus csoportlétrehozás csak egyszer zajlik le, a csoportok migrálásakor. A migráció után az Intune-rendszergazdáknak kell létrehozniuk a csoportokat az Azure Portalon. A [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/) (Az automatikus csoportosítás változásai az előre regisztrált céges iOS-es eszközök esetében) című blogbejegyzésben olvashat részleteket arról, hogy ez milyen hatással van a céges tulajdonú iOS-es eszközök regisztrációjára.
 
 Figyelmébe ajánljuk még a [További információk az Azure Active Directory-csoportokról](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/) című témakört.
 

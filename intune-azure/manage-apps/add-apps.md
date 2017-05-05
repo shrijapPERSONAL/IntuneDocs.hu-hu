@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92fb84726846c1eb0fb44db1961a225922e9d9aa
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -32,17 +32,18 @@ Az Intune a következő típusú alkalmazások hozzáadását és hozzárendelé
 
 ![Az Intune által támogatott alkalmazástípusok](./media/app-types.png)
 
-A támogatott platformok közé a következők tartoznak. További tájékoztatásért kattintson kívánt alkalmazástípus témakörére.
+A támogatott platformok közé a következők tartoznak.
 
-- [Androidos áruházbeli alkalmazások](/intune-azure/manage-apps/android-store-app)
-- [Androidos üzletági alkalmazások](/intune-azure/manage-apps/android-lob-app)
-- [iOS rendszerhez készült áruházbeli alkalmazások](/intune-azure/manage-apps/ios-store-app)
-- [iOS-es üzletági alkalmazások](/intune-azure/manage-apps/ios-lob-app)
-- [Webalkalmazások (az összes platformra)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1-es áruházbeli alkalmazások](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Áruházbeli alkalmazások](/intune-azure/manage-apps/windows-store-app)
+- Androidos áruházbeli alkalmazások
+- Androidos üzletági (LOB) alkalmazások
+- iOS-es áruházbeli alkalmazások
+- iOS-es üzletági (LOB) alkalmazások
+- Webalkalmazások
+- Windows Phone 8.1-es áruházbeli alkalmazások
+- Windows Áruházbeli alkalmazások
 
-Ezen kívül a bérlő beállításakor néhány Microsoft-alkalmazás is automatikusan hozzá lesz adva. Ezek listáját a jelen témakör későbbi részeiben láthatja.
+>[!TIP]
+> Az üzletági alkalmazásokat nem alkalmazás-áruházból, hanem telepítőfájlból lehet telepíteni. iOS-es üzletági alkalmazás telepítéséhez például az (.ipa kiterjesztésű) alkalmazásarchívum-fájlt kell megadni. Ezek jellemzően házon belül készült alkalmazások.
 
 ## <a name="before-you-start"></a>Előkészületek
 
@@ -52,7 +53,7 @@ Mielőtt elkezdené az alkalmazások hozzáadását és hozzárendelését, vegy
 - Előfordulhat, hogy egyes üzembe helyezendő alkalmazások beépített iOS-alkalmazásoktól függenek. Ha például könyvet telepít az iOS-es áruházból, akkor az eszközön elérhetőnek kell lennie az iBooks alkalmazásnak. Ha eltávolította a beépített iBooks alkalmazást, azt az Intune használatával nem tudja újratelepíteni.
 
 ## <a name="cloud-storage-space"></a>Felhőtárhely
-A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazást (például az üzletági alkalmazásokat) a rendszer becsomagolja és feltölti a Microsoft Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetése 20 GB tárterületet tartalmaz.
+A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazást (például az üzletági alkalmazásokat) a rendszer becsomagolja és feltölti az Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetés 20 GB tárterületet tartalmaz.
 
 Az eredeti vásárlási móddal vásárolhat további tárterületet az Intune számára.  Ha számla ellenében vagy hitelkártyával fizetett, keresse fel az [Előfizetés-kezelési portált](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Más esetben forduljon vállalatának partnercégéhez vagy értékesítési kapcsolattartójához.
 
@@ -106,3 +107,14 @@ Az alábbi Microsoft-alkalmazások beépítve rendelkezésre állnak, és hozzá
 |Outlook Groups|iOS|Felügyelt iOS Store-alkalmazás|
 |PowerPoint|iOS|Felügyelt iOS Store-alkalmazás|
 
+## <a name="next-steps"></a>További lépések
+
+Az alábbi témakörök ismertetik az egyes platformok alkalmazásainak felvételét az Intune-ba:
+
+- [Androidos áruházbeli alkalmazások](/intune-azure/manage-apps/android-store-app)
+- [Androidos üzletági alkalmazások](/intune-azure/manage-apps/android-lob-app)
+- [iOS rendszerhez készült áruházbeli alkalmazások](/intune-azure/manage-apps/ios-store-app)
+- [iOS-es üzletági alkalmazások](/intune-azure/manage-apps/ios-lob-app)
+- [Webalkalmazások (az összes platformra)](/intune-azure/manage-apps/web-app)
+- [Windows Phone 8.1-es áruházbeli alkalmazások](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+- [Windows Áruházbeli alkalmazások](/intune-azure/manage-apps/windows-store-app)
