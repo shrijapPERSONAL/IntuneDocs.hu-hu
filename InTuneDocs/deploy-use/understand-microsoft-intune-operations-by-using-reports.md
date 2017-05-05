@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Ebből a témakörből megtudhatja, hogy miképpen hozhat létre és kezelhet Mi
 ## <a name="using-reports"></a>Using reports (A jelentések használata)
 Az Intune-jelentések információkat nyújtanak a szervezetében lévő szoftverekről, hardverekről és szoftverlicencekről. Segítségükkel áttekintheti a szervezet aktuális szükségleteit, illetve felmérheti a jövőbeli kiadásokat. A jelentések létrehozásának és kezelésének eszközeit a **Jelentések** munkaterületen találhatja meg. 
 
-### <a name="report-types"></a>Jelentéstípusok
+## <a name="report-types"></a>Jelentéstípusok
 
 |Jelentés típusa|Leírás|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Az Intune-jelentések információkat nyújtanak a szervezetében lévő szoftve
 |**Állapotigazolási jelentések**|Megjeleníti a mobileszközök állapotát.|
 |**Mac OS X-hardverjelentés**|Megjeleníti a kiválasztott csoportokban lévő összes regisztrált Mac OS X-alapú eszköz hardveres jellemzőit. Az eszközökről gyűjtött hardverleltárakkal kapcsolatos további információkért lásd: [A regisztrált eszközök áttekintése a Microsoft Intune leltárfunkciójával](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X-szoftverjelentés**|Megjeleníti a kiválasztott csoportokban lévő összes regisztrált Mac OS X-alapú eszközön telepített szoftvereket. A jelentés a szoftver nevét (csomagazonosítóként), a rövid (vagy valódi) nevet, a verziót és a szoftverrel telepített eszközök számát tünteti fel.|
+|**A Windows Információvédelem jelentései**|A Windows információvédelem (WIP) felügyelt eszközökön végrehajtott műveleteiről jelenít meg információkat.|
+|**Állapotigazolási jelentések**|A Windows állapotigazoló szolgáltatás felügyelt eszközökkel kapcsolatos információit jeleníti meg.|
 
-#### <a name="to-create-a-report"></a>Jelentés létrehozása
+## <a name="to-create-a-report"></a>Jelentés létrehozása
 
 1.  Az Intune felügyeleti konzolon válassza a **Jelentések** lehetőséget. Ezután válassza ki a létrehozni kívánt jelentés típusát az előző táblázatban leírt módon.
 

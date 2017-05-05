@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 
 1. Jelentkezzen be az Azure Portal webhelyre.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 1. A **Mobilalkalmazások** panelen válassza a **Beállítás** > **Vállalati Windows Áruház** lehetőséget.
 2. Kattintson az **Engedélyezés** lehetőségre.
 3. Ha még nem tette meg, kattintson a Vállalati Windows Áruházba való regisztráció hivatkozására és társítsa a fiókját a fentebb leírtaknak megfelelően.
@@ -67,8 +67,8 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 
 ## <a name="synchronize-apps"></a>Az alkalmazások szinkronizálása
 
-1. Az **Alkalmazások kezelése** tevékenységprofilon válassza a **Beállítás** > **Vállalati Windows Áruház** elemet.
-2. Kattintson a **Szinkronizálás** lehetőségre a Windows Áruházból megvásárolt alkalmazások Intune-ba való felvételéhez.
+1. A **Mobilalkalmazások** területen válassza a **Beállítás** > **Vállalati Windows Áruház** elemet.
+2. Kattintson a **Szinkronizálás** lehetőségre a Windows Áruházból megvásárolt alkalmazások Intune-ba való felvevéséhez.
 
 ## <a name="assign-apps"></a>Alkalmazások hozzárendelése
 

@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Ez az útmutató a vállalatnál az eszközkezelésért felelős rendszergazdák számára készült. Az Intune mobileszközös használatával kapcsolatban lásd [az Intune-os céges portállal kapcsolatos gyakori kérdéseket](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
-
-A Microsoft Intune beállítása előtt olvassa el ezt a témakört, valamint a [Tudnivalók a Microsoft Intune elindítása előtt](what-to-know-before-you-start-microsoft-intune.md) című témakörben felsorolt követelmények listáját.
-
-Az alábbiakban megadott információk segítségével megtervezhető a Microsoft Intune-ügyfelek hálózati forgalma.
+Ez az útmutató az Intune szolgáltatás hálózati követelményeivel kapcsolatban nyújt segítséget a rendszergazdáknak. Információt talál benne a sávszélességre vonatkozó követelményekről, valamint a proxybeállításokhoz szükséges IP-cím- és portbeállításokról.
 
 ## <a name="average-network-traffic"></a>Átlagos hálózati forgalom
 A táblázat az egyes ügyfelek esetében a hálózaton áthaladó általános tartalmak hozzávetőleges méretét és gyakoriságát tartalmazza.

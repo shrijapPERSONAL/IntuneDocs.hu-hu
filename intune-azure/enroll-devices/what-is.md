@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 Ez a témakör az eszközregisztrálást írja le, és felsorolja azokat a különféle módszereket, amelyekkel a mobileszközök regisztrálhatók az Intune-nal való felügyeletre.
 
-Az eszközök, köztük a Windows rendszerű számítógépek Intune-ban való regisztrálásának az a célja, hogy kezelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. A mobileszközként (nem számítógépként) regisztrált eszközök részére a rendszer MDM-tanúsítvány állít ki. Ezt az eszközök az Intune szolgáltatással való kommunikációban használják.
+Az eszközök Intune-ban való regisztrálásának az a célja, hogy azok felügyelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. Az Intune-ban regisztrált eszközök részére a rendszer MDM-tanúsítványt állít ki, amelyet az eszközök az Intune szolgáltatással való kommunikációban használnak.
 
 Az eszköz regisztrálásának módja függ az eszköz típusától, tulajdonosától és az elvárt felügyeleti szinttől. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
 
-Ha az Exchange ActiveSyncet használja helyben vagy a felhőben, akkor regisztrálás nélkül is engedélyezheti az egyszerű Intune-felügyeletet (hamarosan további információ válik elérhetővé). A Windows rendszerű számítógépek is kezelhetők mobileszközként. Ez az ajánlott módszer, az alábbiakban leírtak szerint. Az [Intune ügyfélszoftverrel](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) számítógépként is kezelhetők.
+Ha az Exchange ActiveSyncet használja helyben vagy a felhőben, akkor regisztrálás nélkül is engedélyezheti az egyszerű Intune-felügyeletet (hamarosan további információ válik elérhetővé). A Windows rendszerű számítógépek is kezelhetők mobileszközként. Ez az ajánlott módszer, az alábbiakban leírtak szerint.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Az eszközök regisztrálási módszereinek áttekintése
@@ -53,21 +53,20 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 |**[USB-SA](#usb-sa)**|    Igen |    Nem kötelező megadni |    Nem| [További információ](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    Nem |    Nem    | Nem|[További információ](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows-eszközök regisztrálási módszerei**
 
 | **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem |    Igen |    Nem | Hamarosan további információ válik elérhetővé|
+|**[BYOD](#byod)** | Nem |    Igen |    Nem | [További információ](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android-eszközök regisztrálási módszerei**
 
 | **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | Hamarosan további információ válik elérhetővé|
+|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| Nem | Igen | Nem| [További információ](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ További információ az iOS-eszközök regisztrációjáról:
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Mobileszköz-kezelés az Exchange ActiveSync és az Intune használatával
 Azok a mobileszközök, amelyek nincsenek regisztrálva, de kapcsolódnak az Exchange ActiveSync (EAS) rendszerhez, EAS MDM-szabályzat segítségével kezelhetők az Intune-ban. Az Intune helyszíni vagy felhőalapú Exchange Connector összekötő segítségével kommunikál az EAS-szel. Hamarosan további információ válik elérhetővé.
 
-
-## <a name="windows-pc-management-with-intune"></a>Windows-számítógépek kezelése az Intune-nal  
-Az Intune ügyfélszoftvere segítségével Windows-számítógépeket is kezelhet a Microsoft Intune-nal. Az Intune ügyfél által felügyelt Windows-számítógépek:
-
- - Képesek szoftver- és hardverleltár jelentésére
- - Képesek asztali alkalmazások telepítésére (például .exe és .msi kiterjesztésű fájlok segítségével)
- - Tűzfal beállításainak felügyeletéhez
-
-Az Intune ügyfélszoftverével felügyelt számítógépeken csak szelektív törlést lehet végezni, teljes törlést nem. Az Intune ügyfélszoftverével felügyelt számítógépeken az Intune számos felügyeleti funkciója (például a feltételes hozzáférés, a VPN- és Wi-Fi-beállítások meghatározása vagy a tanúsítványok és e-mail-konfigurációk telepítése) sem használható. Hamarosan további információ válik elérhetővé.
-
 ## <a name="supported-device-platforms-and-browsers"></a>Támogatott eszközplatformok és böngészők
 
 Lásd: [Az Intune által támogatott eszközök és böngészők](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobileszköz karbantartása az MDM-tanúsítvány lejárta után
 
-Az MDM-tanúsítvány automatikusan megújul, amikor a mobileszköz kommunikál az Intune szolgáltatással. Ha egy mobileszköznek (nem számítógépnek) törlik a tartalmát, vagy az eszköz egy bizonyos időn át nem kommunikál az Intune szolgáltatással, akkor az MDM-tanúsítvány nem újul meg. Az eszköz az MDM-tanúsítvány lejárta után 180 nappal törlődik az Azure Portalról.
+Az MDM-tanúsítvány automatikusan megújul, amikor a mobileszköz kommunikál az Intune szolgáltatással. Ha egy mobileszköznek törlik a tartalmát, vagy az eszköz egy bizonyos időn át nem kommunikál az Intune szolgáltatással, akkor az MDM-tanúsítvány nem újul meg. Az eszköz az MDM-tanúsítvány lejárta után 180 nappal törlődik az Azure Portalról.
 
