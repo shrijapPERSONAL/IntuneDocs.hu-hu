@@ -1,5 +1,6 @@
 # Bevezetés
 ## [Mi az Azure-portál előzetes verziója?](introduction/what-is-microsoft-intune.md)
+## [Mi az az Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Intune-funkciók az Azure-ban](introduction/ui-changes-in-microsoft-intune.md)
 ## Első lépések
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [iOS-es üzletági alkalmazások](manage-apps/ios-lob-app.md)
 #### [Webalkalmazások](manage-apps/web-app.md)
 #### [Windows Phone 8.1-es áruházbeli alkalmazások](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB-alkalmazások](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Áruházbeli alkalmazások](manage-apps/windows-store-app.md)
+#### [Windows LOB-alkalmazások](manage-apps/windows-line-of-business-app.md)
 ### [Alkalmazások hozzárendelése](manage-apps/deploy-apps.md)
 ### [Alkalmazások figyelése](manage-apps/monitor-apps.md)
-### [Alkalmazáskonfigurációs szabályzatok használata](manage-apps/app-configuration-policies.md)
+### [Alkalmazáskonfigurációs profilok használata](manage-apps/app-configuration-policies.md)
+### [iOS-alkalmazáskiépítési profilok használata](manage-apps/ios-app-provisioning-profile.md)
 ### [Alkalmazások szelektív törlése](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Mennyiségi programban vásárolt alkalmazások használata](manage-apps/volume-purchased-apps.md)

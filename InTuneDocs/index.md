@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: "Microsoft Intune-dokumentáció | Microsoft Docs"
 description: "Bevezetés a Microsoft Intune használatába"
 translationtype: Human Translation
-ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
-ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
-ms.lasthandoff: 04/24/2017
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 3d44038d316977ad0dedef2aee844a64ca24b744
+ms.lasthandoff: 05/02/2017
 
 ---
 <div id="main" class="v2">
@@ -40,6 +40,7 @@ ms.lasthandoff: 04/24/2017
                             </div>
                         </li>
                         <li>
+                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -49,14 +50,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune az Azure-portálon – Előzetes verzió</a></h3>
+                                            <h3>Intune az Azure Portalon – Előzetes verzió</h3>
                                             <p>A Microsoft Intune az Azure Portalra költözik – ismerkedjen meg az új portál jelentette változásokkal. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                        <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -66,14 +69,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/plan-design/introduction">Üzembe helyezés megtervezése</a></h3>
+                                            <h3>Üzembe helyezés megtervezése és kialakítás</h3>
                                             <p>Részletesen végigkalauzoljuk Önt a telepítési terv kidolgozásán, a tervkészítésen, az Intune bevezetésén és az éles környezet üzembe helyezésén.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -83,14 +88,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">A végfelhasználók felkészítése a Microsoft Intune használatára</a></h3>
-                                            <p>Hogyan fogadtassa el végfelhasználóival az Intune kínálta biztonságos hozzáférést?</p>
+                                            <h3>Mi az az Intune for Education?</h3>
+                                            <p>Ismerje meg, hogyan végezheti el az oktatási eszközökkel kapcsolatos mindennapi feladatokat.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -100,14 +107,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">Az Intune használata a Microsoft Graph-fal</a></h3>
+                                            <h3>Az Intune használata a Microsoft Graph-fal</h3>
                                             <p>A Microsoft Graph API-kkal konfigurálhatja az Intune vezérlőit és szabályzatait.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -117,14 +126,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">Több mint 150 licence van? Éljen a FastTrack előnyeivel!</a></h3>
+                                            <h3>150-nél több licence van? Éljen a FastTrack előnyeivel</h3>
                                             <p>A Microsoft szakemberei segítségével felmérheti, javíthatja, engedélyezheti és használatra kész állapotba hozhatja a szolgáltatásait.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,12 +145,13 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/mam-faq">Gyakori kérdések a mobilalkalmazás-felügyeletről és az alkalmazásvédelemről</a></h3>
+                                            <h3>A MAM-mel és az alkalmazásvédelemmel kapcsolatos gyakori kérdések</h3>
                                             <p>Válaszok az Intune mobilalkalmazás-felügyelettel (MAM) és az Intune alkalmazásvédelemmel kapcsolatos gyakori kérdésekre.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
 <!--                        <li>
                             <div class="cardSize">
@@ -241,18 +253,18 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
-                            <div class="cardSize">
+                            <a href="/intune-education/what-is-intune-for-education">
+                           <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Mobileszköz-felügyelet a Microsoft Intune-ban</h3>
-                                            <p>Próbálja ki az Intune mobileszköz-felügyeleti funkcióit.</p>
+                                            <h3>Mi az az Intune for Education?</h3>
+                                            <p>Ismerje meg, hogyan végezheti el az oktatási eszközökkel kapcsolatos mindennapi feladatokat.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -470,7 +482,7 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
+                            <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
