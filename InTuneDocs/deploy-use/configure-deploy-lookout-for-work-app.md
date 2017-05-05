@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +55,7 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (A Lookout alkalmazás vállalat által aláírt verziója)
 
-1. Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Utasítások az iOS-eszköz kezelésének beállításához:[ iOS- és Mac-eszközök kezelésének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md).
+1. Győződjön meg róla, hogy az **iOS-kezelés** be van állítva az eszközén. Az iOS-eszköz felügyeletének beállításához az [ iOS- és Mac-eszközök felügyeletének beállítása](set-up-ios-and-mac-management-with-microsoft-intune.md) című témakörben talál útmutatót.
 
 2. **Írja alá újra** a Lookout for work iOS alkalmazást. A Lookout az iOS App Store-on kívül terjeszti a Lookout for Work alkalmazását. **Az alkalmazás terjesztése előtt** újra alá kell írnia az alkalmazást az iOS vállalati fejlesztői tanúsítványával. A részletes leírást a Lookout for Work iOS alkalmazás újbóli aláírásáról lásd: [Lookout for Work iOS alkalmazás újbóli aláírásának folyamata](https://personal.support.lookout.com/hc/articles/114094038714) a Lookout oldalán.
 
@@ -87,12 +87,11 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
   Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Mi történik ha telepített alkalmazást megnyitja az eszközön
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, a rendszer felszólítja a felhasználót, hogy aktiválja az alkalmazást, majd válassza a Bejelentkezés Azure Active Directoryval opciót. A végfelhasználói folyamat részletes áttekintése a következő témakörökben található:
 
-Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, a rendszer felszólítja a felhasználót, hogy aktiválja az alkalmazást, majd válassza a Bejelentkezés Azure Active Directoryval opciót. A végfelhasználói folyamat részletes áttekintése a következő témakörökben található:
+* [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>További lépések
 * [A Lookout eszközmegfelelőségi szabályzatának létrehozása Intune-ban](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

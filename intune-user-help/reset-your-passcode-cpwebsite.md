@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ A jelszó alaphelyzetbe állítása:
 
   ![A jelszó alaphelyzetbe állításának megerősítésére felszólító értesítésszalag az eszköz jelszavának alaphelyzetbe állítására figyelmeztető és a felhasználó kijelentkeztetésével kapcsolatos értesítéssel. A felhasználó a Kijelentkezés és a Mégse gombokat használhatja.](./media/iwp-reset-passcode-popup.png)
 
-5.  Válassza a **Kijelentkezés** lehetőséget. Még egy utolsó értesítést fog látni az eszköz PIN-kódjának eltávolításáról. Ha nincs önnél az eszköz, ne távolítsa el a PIN-kódot, mert akinél az eszköz van, az ezután hozzáférhet a rajta található személyes és céges adatokhoz egyaránt.
+5.  Válassza a **Kijelentkezés** lehetőséget. Még egy utolsó értesítést fog látni az eszköz PIN-kódjának eltávolításáról. Ha nincs önnél az eszköz, ne távolítsa el a PIN-kódot, mert akinél az eszköz van, az ezután hozzáférhet a rajta található személyes és céges adatokhoz egyaránt. 
 
   ![A jelszó alaphelyzetbe állításának megerősítésére felszólító második értesítésszalag az eszköz jelszavának alaphelyzetbe állítására figyelmeztető és a jelszó eszközről történő eltávolításával kapcsolatos értesítéssel. Ezen kívül arról is tájékoztat, hogy miként lehet új jelszót beállítani az eszköz beállításainak segítségével.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ A jelszó alaphelyzetbe állítása:
   **Windows 10 Mobile:** Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. Ha a Windows Hello arcfelismerési funkcióját használja a bejelentkezéshez, az továbbra is támogatott lesz.
     
   **Windows Phone 8.1:** Eltávolítja a meglévő jelszót, és egy számokból álló ideiglenes jelszót hoz létre.
+
+  Androidos és windowsos eszközöknél az ideiglenes jelszó az **Eszköz adatai** területen fog megjelenni. 
 
 6.  Oldja fel az eszköz zárolását, és adjon meg egy új jelszót vagy módosítsa az ideiglenes jelszót az eszköz **Beállítások** menüjében.
 

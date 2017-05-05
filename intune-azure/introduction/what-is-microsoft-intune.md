@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Ez a szakasz tájékoztatást nyújt az [újdonságokról](/intune-azure/introdu
 Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](/intune-azure/plan-and-design/get-started).
 ### <a name="device-enrollment"></a>Eszközök beléptetése
 [Útmutató az eszközök Intune általi felügyeletéhez.](/intune-azure/enroll-devices/what-is)
-### <a name="devices"></a>Eszközök
-[A leltár és a jelentések segítségével megismerkedhet a felügyelt eszközökkel.](/intune-azure/manage-devices/what-is)
-### <a name="manage-users-and-groups"></a>Felhasználók és csoportok kezelése
-[Ismerje meg a felügyelt eszközfelhasználókat, és rendezze csoportba az erőforrásokat](/intune-azure/manage-users/what-is).
-### <a name="manage-apps"></a>Alkalmazások kezelése
-[Útmutató az alkalmazások közzétételéhez, felügyeletéhez, konfigurálásához és védelméhez.](/intune-azure/manage-apps/what-is-app-management)
-### <a name="device-configuration"></a>Eszközök konfigurálása
-[A felügyelt eszközök beállításainak és szolgáltatásainak konfigurálására szolgáló profilok ismertetése.](/intune-azure/configure-devices/what-are-device-profiles)
 ### <a name="device-compliance"></a>Eszközmegfelelőség
 [Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről.](/intune-azure/set-device-compliance/what-is-device-compliance)
+### <a name="device-configuration"></a>Eszközök konfigurálása
+[A felügyelt eszközök beállításainak és szolgáltatásainak konfigurálására szolgáló profilok ismertetése.](/intune-azure/configure-devices/what-are-device-profiles)
+### <a name="devices"></a>Eszközök
+[A leltár és a jelentések segítségével megismerkedhet a felügyelt eszközökkel.](/intune-azure/manage-devices/what-is)
+### <a name="mobile-apps"></a>Mobilalkalmazásokban
+[Útmutató az alkalmazások közzétételéhez, felügyeletéhez, konfigurálásához és védelméhez.](/intune-azure/manage-apps/what-is-app-management)
 ### <a name="conditional-access"></a>Feltételes hozzáférés
 [A megadott feltételek alapján korlátozhatja az Exchange-szolgáltatásokhoz való hozzáférést.](/intune-azure/conditional-access/what-is-conditional-access)
+### <a name="on-premises-access"></a>Helyszíni hozzáférés
+[Az Exchange ActiveSynchez és a helyszíni Exchange-hez való hozzáférés konfigurálása](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Users
+[Ismerje meg a felügyelt eszközfelhasználókat, és rendezze csoportba az erőforrásokat](/intune-azure/manage-users/what-is).
+### <a name="groups"></a>Csoportok
+[Ismerje meg, hogyan használhatja az Azure Active Directory-csoportokat az Intune-nal](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Intune-szerepkörök
 [Szabályozhatja, hogy kik hajthatnak végre különböző műveleteket az Intune-ban, és kikre vonatkozzanak ezen műveletek.](/intune-azure/access-control/role-based-access-control) A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat.
+### <a name="software-updates"></a>Szoftverfrissítések
+[Ismerje meg, hogyan konfigurálhatja a szoftverfrissítéseket Windows 10-es eszközök esetén](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 
 

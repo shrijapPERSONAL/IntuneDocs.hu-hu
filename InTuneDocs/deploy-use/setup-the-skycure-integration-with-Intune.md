@@ -1,6 +1,6 @@
 ---
 title: "A Skycure és az Intune közötti integráció beállítása | Microsoft Docs"
-description: "A Skycure és a Microsoft Intune közötti integráció beállítása."
+description: "Állítsa be a Skycure és a Microsoft Intune közötti integrációt."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>A Skycure és az Intune közötti integráció beállítása
+# <a name="set-up-the-skycure-integration-with-intune"></a>A Skycure és az Intune közötti integráció beállítása
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ A Skycure kétféleképpen integrálható az Intune-nal:
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Írásvédett integráció beállítása az Intune és a Skycure között
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > A Skycure-adminisztrátor hitelesítő adatai egy olyan e-mail-fióknak felelnek meg, amely egy érvényes felhasználóhoz tartozik az Azure Active Directoryban. Ellenkező esetben nem fog tudni bejelentkezni. A Skycure az Azure Active Directoryval hitelesíti egyszeri bejelentkezéshez (SSO) az adminisztrátort.
 
 1.  Nyissa meg a [Skycure Management konzolt](https://aad.skycure.com).
@@ -75,7 +75,7 @@ A Skycure kétféleképpen integrálható az Intune-nal:
 
     ![iOS-es alkalmazás sikeres felvételét jelző képernyő](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Végezze el ugyanezt az eljárást az **Androidra készült Skycure alkalmazással** és a **Felügyeleti alkalmazással** is.
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Azure AD-biztonsági csoport felvétele a Skycure-ba
