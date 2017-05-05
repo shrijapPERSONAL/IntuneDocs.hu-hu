@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás telepítése
 
-1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** elemet. Ebben a listában az összes, az Apple VPP-szolgáltatásából szinkronizált alkalmazás szerepel.
+1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** elemet. Ebben a listában az összes, az Apple VPP-szolgáltatásából szinkronizált alkalmazás szerepel.
 
 2.  Válassza ki a telepíteni kívánt alkalmazást, válassza a **Központi telepítés kezelése** elemet, majd az [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md) című témakörben található utasítások segítségével végezze el az alkalmazás feltöltését, létrehozását és telepítését.
 
@@ -79,22 +80,14 @@ A licencek visszanyeréséhez módosítania kell a központi telepítési művel
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Ezt a lépést az alkalmazás telepítésének folytatása előtt kell megtennie.
 
-> [!TIP]
-> A **VPP-feltételek állapota** oszlopban azon felhasználók elfogadási állapotát tekintheti meg, akiknél az alkalmazás telepítve lett.
-
 Ha nincsenek további elérhető licencek, a telepítés meghiúsul.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Apple VPP-alkalmazások figyelése
-Az **Alkalmazások** munkaterületen, a **Felügyelt szoftver** &gt; **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítették, és hány licencet használtak fel.
+Az **Alkalmazások** munkaterületen a **Mennyiségi licencszerződés keretében vásárolt alkalmazások** csomópontban követheti nyomon, hogy mely VPP-alkalmazásokat telepítették, és hány licencet használtak fel.
 
 > [!TIP]
 > Az alkalmazás **szűrőivel** megvizsgálhatja az egyes alkalmazástelepítések állapotát.
 
 ### <a name="see-also"></a>További információ
 [Alkalmazások telepítése a Microsoft Intune-ban](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

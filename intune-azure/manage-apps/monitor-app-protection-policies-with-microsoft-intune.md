@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
-4. Az **Alkalmazások kezelése** munkafolyamatban válassza a **Figyelés** > **Alkalmazásvédelmi felhasználó állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
+4. A **Mobilalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelmi felhasználó állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](../media/app-protection-user-status-summary.png)
 
@@ -137,9 +138,4 @@ Az alkalmazásvédelmi jelentés létrehozásához kövesse az alábbi lépések
 
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-android-apps.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

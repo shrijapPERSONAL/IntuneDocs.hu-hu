@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, h
 
   - SharePoint Online- és Exchange Online munkahelyi fiókok létrehozása. A helyi Exchange-et és a helyi SharePointot nem támogatjuk.
 
--   **A Skype Vállalati online verzió beállítása modern hitelesítéshez**. További információkért lásd [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (A modern hitelesítés engedélyezése) című cikket.
+-   **A Skype Vállalati online verzió beállítása modern hitelesítéshez**. További információkért lásd [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (A modern hitelesítés engedélyezése) című cikket.
 
 
 - Microsoft Azure Active Directory (Azure AD) a felhasználók létrehozásához. Az Azure AD akkor hitelesíti a felhasználókat, amikor azok végfelhasználóként elindítják az alkalmazást, és megadják a munkahelyi hitelesítő adataikat.
@@ -96,7 +96,7 @@ Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, h
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>Felhasználók létrehozása és Microsoft Intune-licencek kiosztása
 
-1.  Jelentkezzen be az   [Office portálra](http://portal.office.com) a rendszergazdai hitelesítő adataival.
+1.  Jelentkezzen be az [Office portálra](https://portal.office.com) a rendszergazdai hitelesítő adataival.
 
 2.  Vegye fel a felhasználókat az [Útmutató az Intune próbaverziójához](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) című cikk **az Intune 30 napos próbaverziójának használatba vételének lépéseit ismertető részének** megfelelően, majd ossza ki az Intune-licenceket. A felhasználók számára a **Globális rendszergazdai szerepkör** hozzárendelésével biztosíthat hozzáférést az Office-, az Azure AD- és az Azure-portálhoz.
 
