@@ -100,8 +100,8 @@
 ### [Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése](manage-apps/app-protection-policies.md)
 ### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Android-beállítások](manage-apps/android-app-protection-policy-settings.md)
-#### [iOS-beállítások](manage-apps/ios-app-protection-policy-settings.md)
+### [Android-beállítások](manage-apps/android-app-protection-policy-settings.md)
+### [iOS-beállítások](manage-apps/ios-app-protection-policy-settings.md)
 ### [Az alkalmazásvédelmi szabályzatok ellenőrzése](manage-apps/validate-app-protection-policies.md)
 ### [Alkalmazásvédelmi felhasználó állapotának figyelése](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [iOS-alkalmazások közti adatátvitel kezelése](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +190,7 @@
 ### [Android for Work-alapú megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS rendszerre vonatkozó megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windowsos megfelelőségi szabályzat létrehozása](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Meg nem felelési műveletek létrehozása](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Az eszközmegfelelőség figyelése](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
