@@ -17,9 +17,10 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.contentlocale: hu-hu
 ms.lasthandoff: 03/13/2017
 
 
@@ -37,7 +38,7 @@ Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás has
 
 2.  Csatlakoztassa eszközét az USB-kábellel a számítógépéhez. Ez rendszerint ugyanaz a kábel, amellyel az eszközt a fali aljzatból tölti.
 
-3.  A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az *Androidos eszköz neve\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ mappát\**.
+3.  A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az **Androidos eszköz neve\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\mappát\**.
 
 4.  Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a rendszergazdának.
 
