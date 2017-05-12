@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work-eszközök egyéni Intune profilbeállításainak létrehozása
 
-Az Intune Android for Work egyéni konfigurációs szabályzatával OMA-URI-beállításokat léptethet érvénybe, amelyekkel vezérelhetők az Android for Work-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
+Az Intune Android for Work egyéni konfigurációs szabályzatával olyan OMA-URI-beállításokat rendelhet hozzá, amelyekkel vezérelhetők az Android for Work-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E témakör példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
+Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, amelyek nem konfigurálhatók Intune-szabályzatokkal. Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E témakör példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
 
 ## <a name="create-a-custom-profile"></a>Egyéni profil létrehozása
 
-1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása](/intune-azure/configure-devices/how-to-configure-custom-settings) című témakör utasításait.
+1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása](how-to-configure-custom-settings.md) című témakör utasításait.
 2. Az **Egyéni OMA-URI beállítások** panelen a **Hozzáadás** elemet választva adhat meg új beállítást.
 3. A **Sor hozzáadása** panelen adja meg a következőket:
     - **Név** – Adjon meg egyedi nevet az Android for Work egyéni beállításainak, hogy azok azonosíthatók legyenek az Intune-portálon.

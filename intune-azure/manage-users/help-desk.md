@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8cf12e434518c9f06c105a22f3b7aef2613fcdb0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>A felhasználók segítése a Microsoft Intune hibaelhárítási portáljával
@@ -35,7 +36,7 @@ Az Intune-rendszergazdák kioszthatnak ügyfélszolgálati jogosultságot a felh
 4. Töltse ki a **Hozzárendelés neve** (kötelező) és a **Hozzárendelés leírása** (nem kötelező) mezőt, majd adja meg a **Tagok (csoportok)** és a **Hatókör (csoportok)** beállításokat.
 5. Az Ügyfélszolgálati operátor szerepkör tagjai mostantól használhatják a hibaelhárítási portált.
 
-Az Intune-szerepkörökről az [Intune-os szerepkörök (RBAC)](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control) című témakörben olvashat bővebben.
+Az Intune-szerepkörökről az [Intune-os szerepkörök (RBAC)](../access-control/role-based-access-control.md) című témakörben olvashat bővebben.
 
 ## <a name="access-the-troubleshooting-portal"></a>A hibaelhárítási portál elérése
 

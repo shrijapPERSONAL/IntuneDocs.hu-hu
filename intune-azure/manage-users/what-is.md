@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 Ha most ismerkedik az Azure Portalon elérhető Intune-nal, akkor ne feledje, hogy már nem hozhat létre Intune-csoportokat. Az Intune ugyanúgy Azure AD-csoportokat használ, mint sok más Ön által használt alkalmazás.
 
-További információ az Azure AD-csoportok használatáról: [Az erőforrásokhoz való hozzáférés felügyelete Azure Active Directory-csoportokkal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
+További információ az Azure AD-csoportok használatáról: [Az erőforrásokhoz való hozzáférés felügyelete Azure Active Directory-csoportokkal](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).
 
 Ha az [Azure Portalon](https://portal.azure.com) szeretné felügyelni a csoportokat, keressen rá az **Intune** kifejezésre, majd a **Felhasználók felügyelete** lehetőséget választva nyissa meg a **Felhasználók és csoportok** munkafolyamatot, ahol a következő műveleteket hajthatja végre:
 
@@ -43,5 +44,5 @@ Ha az [Azure Portalon](https://portal.azure.com) szeretné felügyelni a csoport
 
 ## <a name="next-step"></a>További lépések
 
-[Csoportok – első lépések](/intune-azure/manage-users/get-started-with-groups)
+[Csoportok – első lépések](../manage-users/get-started-with-groups.md)
 

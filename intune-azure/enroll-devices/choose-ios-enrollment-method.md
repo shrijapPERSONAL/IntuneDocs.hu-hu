@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Az alábbi információk alapján döntheti el, hogy milyen módszerrel regisztr
 
 ## <a name="user-owned-ios-devices-byod"></a>A felhasználó tulajdonában lévő iOS-eszközök (BYOD)
 
-Ha a felhasználók saját eszközeiket szeretnék használni (BYOD), számukra az a regisztrálás egyetlen módja, hogy letöltik az iOS Céges portál alkalmazást az Alkalmazás-áruházból, majd követik az alkalmazástól kapott utasításokat. A regisztrációt követően a felhasználók kapcsolódhatnak a vállalat hálózatához, csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz, és hozzáférnek a vállalati erőforrásokhoz. Letilthatja a személyes tulajdonban lévő iOS-es eszközök regisztrálását. Útmutatót a [Típus szerinti korlátozás beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) című cikkben talál.
+Ha a felhasználók saját eszközeiket szeretnék használni (BYOD), számukra az a regisztrálás egyetlen módja, hogy letöltik az iOS Céges portál alkalmazást az Alkalmazás-áruházból, majd követik az alkalmazástól kapott utasításokat. A regisztrációt követően a felhasználók kapcsolódhatnak a vállalat hálózatához, csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz, és hozzáférnek a vállalati erőforrásokhoz. Letilthatja a személyes tulajdonban lévő iOS-es eszközök regisztrálását. Útmutatót a [Típus szerinti korlátozás beállítása](set-enrollment-restrictions.md#set-device-type-restrictions) című cikkben talál.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

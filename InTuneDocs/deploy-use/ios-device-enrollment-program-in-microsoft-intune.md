@@ -14,10 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90222b10832fd8251ad897348eeebed5b3d1e552
+ms.openlocfilehash: a14f308102d677015dae93eb2c1a36ca95662056
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/11/2017
 
 
 ---
@@ -80,8 +81,8 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
    - **Rákérdezés a felhasználói affinitásra** – Az eszközt a kezdeti beállítás során össze kell kapcsolni egy felhasználóval, hogy az eszköz ezen a felhasználón keresztül hozzáférhessen a vállalati adatokhoz és e-mailekhez. A **felhasználói affinitást** a DEP programmal felügyelt olyan eszközöknél kell beállítani, amelyek felhasználók tulajdonában vannak, de munkahelyi portált kell rajtuk használni (azaz alkalmazásokat kell rájuk telepíteni). A többtényezős hitelesítés (MFA) nem működik a regisztráció közben olyan DEP-eszközökön, amelyekre felhasználói affinitás érvényes. A regisztrációt követően az ilyen eszközökön is az elvárásoknak megfelelően működik az MFA. Az első bejelentkezéskor jelszómódosításra kötelezett új felhasználók nem kaphatnak értesítést a DEP-eszközökön történő regisztráció során. Ezen túlmenően a lejárt jelszavú felhasználók nem kapnak értesítést a jelszó visszaállításáról a DEP-regisztráció során, és a jelszó visszaállítását egy másik eszközről kell végrehajtaniuk.
 
-   > [!NOTE]
-   > A felhasználói affinitással rendelkező DEP funkció esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot.
+       >[!NOTE]
+       >A felhasználói affinitással rendelkező DEP funkció esetében a felhasználói jogkivonat kérelmezéséhez engedélyezni kell a [WS-Trust 1.3 Username/Mixed végpontot](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints). [További információ a WS-Trust 1.3-ról](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Nincs megadva a felhasználói affinitás** – Az eszköz egyetlen felhasználóhoz sincs társítva. Ezt a kapcsolatot olyan eszközök esetén alkalmazza, amelyek a helyi felhasználói adatok nélkül hajtanak végre feladatokat. A felhasználói kapcsolatot igénylő alkalmazások, az üzletági alkalmazások telepítéséhez használt munkahelyi portál alkalmazást is beleértve, nem fognak működni.
 

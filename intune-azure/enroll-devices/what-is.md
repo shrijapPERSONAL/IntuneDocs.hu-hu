@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Ha az Exchange ActiveSyncet használja helyben vagy a felhőben, akkor regisztr�
 
 Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az egyes módszerekhez kapcsolódó lehetőségeket és követelményeket. A lehetőségeket és a követelményeket alább ismertetjük. A táblázatban az alábbi fogalmak szerepelnek:
 
-- **Törlés** – Azt jelzi, hogy törölni kell-e mindent az eszközről ahhoz, hogy a felhasználók regisztrálni tudják. A „törlés” itt az eszköz gyári alaphelyzetének visszaállítását, vagyis az összes adat törlését jelenti. További információ: [Teljes vagy szelektív törlés használata az eszközökön](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Törlés** – Azt jelzi, hogy törölni kell-e mindent az eszközről ahhoz, hogy a felhasználók regisztrálni tudják. A „törlés” itt az eszköz gyári alaphelyzetének visszaállítását, vagyis az összes adat törlését jelenti. További információ: [Teljes vagy szelektív törlés használata az eszközökön](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Affinitás** - Az eszközök felhasználókkal való társítása. Erre a mobilalkalmazás-kezeléshez (MAM) és a vállalati adatokhoz való feltételes hozzáféréshez van szükség. További információk: [Felhasználói affinitás](enroll-ios-devices-using-device-enrollment-program.md).
 - **Zárolás** – Jelzi, hogy a rendszer megakadályozza a felhasználókat abban, hogy töröljék eszközeik regisztrációját, és ezzel kivonják azokat a felügyelet alól. A felhasználók a Céges portál alkalmazás használatával bármelyik platformon törölhetik eszközeik regisztrációját. A natív operációs rendszer menüit nem használhatják a regisztráció törlésére.
 
@@ -70,7 +71,7 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 
 ## <a name="byod"></a>BYOD
-A saját eszközeiket használó („BYOD”) felhasználók telepítik a Vállalati portál alkalmazást, és ők regisztrálják az eszközt. Ez lehetővé teszi a felhasználók számára a vállalati hálózathoz való kapcsolódást, így csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz. A legtöbb platformon és COD-forgatókönyv esetében engedélyeznie kell a BYOD-regisztrálást. Letilthatja a személyes tulajdonban lévő iOS-es és androidos eszközök regisztrálását. Útmutatót a [Típus szerinti korlátozás beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) című cikkben talál.
+A saját eszközeiket használó („BYOD”) felhasználók telepítik a Vállalati portál alkalmazást, és ők regisztrálják az eszközt. Ez lehetővé teszi a felhasználók számára a vállalati hálózathoz való kapcsolódást, így csatlakozhatnak a tartományhoz vagy az Azure Active Directoryhoz. A legtöbb platformon és COD-forgatókönyv esetében engedélyeznie kell a BYOD-regisztrálást. Letilthatja a személyes tulajdonban lévő iOS-es és androidos eszközök regisztrálását. Útmutatót a [Típus szerinti korlátozás beállítása](set-enrollment-restrictions.md#set-device-type-restrictions) című cikkben talál.
 
 ## <a name="corporate-owned-devices"></a>Vállalati tulajdonú eszközök
 A vállalati tulajdonú eszközök (COD) az Azure Portal segítségével kezelhetők. Az iOS-eszközök az Apple által biztosított megoldások segítségével közvetlenül is regisztrálhatók. A rendszergazdák vagy menedzserek bármilyen típusú eszközt regisztrálhatnak az eszközregisztráció-kezelő segítségével. Az IMEI-számmal rendelkező eszközöket azonosítani lehet, és meg lehet jelölni vállalati tulajdonúként, ami lehetőséget nyújt a vállalati tulajdonú eszközök kezelésére.
