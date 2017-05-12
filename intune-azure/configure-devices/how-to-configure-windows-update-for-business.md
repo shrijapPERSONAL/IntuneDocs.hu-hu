@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
     ![A Windows beállítása diagnosztikai és használati adatok küldéséhez](./media/telemetry-basic.png)
 
-    Ezt a beállítást elvégezheti manuálisan, vagy a Windows 10 és újabb verziók esetén használhat egy Intune eszközkorlátozási profilt. Ehhez az **Általános** > **Diagnosztikai adatok küldése** beállításnál legalább az **Alapszintű** értéknek kell szerepelnie. Az eszközprofilokról további információt nyújt az [Eszközkorlátozási beállítások konfigurálása](/intune-azure/configure-devices/how-to-configure-device-restrictions) című témakör.
+    Ezt a beállítást elvégezheti manuálisan, vagy a Windows 10 és újabb verziók esetén használhat egy Intune eszközkorlátozási profilt. Ehhez az **Általános** > **Diagnosztikai adatok küldése** beállításnál legalább az **Alapszintű** értéknek kell szerepelnie. Az eszközprofilokról további információt nyújt az [Eszközkorlátozási beállítások konfigurálása](how-to-configure-device-restrictions.md) című témakör.
 
 - A klasszikus Intune felügyeleti konzolon négy beállítás szabályozza a szoftverfrissítések viselkedését. Ezek a beállítások az általános konfigurációs szabályzat részei a Windows 10 rendszerű számítógépeken és mobileszközökön:
     - **Automatikus frissítések engedélyezése**

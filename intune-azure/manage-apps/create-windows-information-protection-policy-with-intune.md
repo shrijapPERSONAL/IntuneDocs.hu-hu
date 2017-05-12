@@ -15,10 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
-ms.openlocfilehash: 164518c320ba3d82abf101e76d911b7424f2f6cd
-ms.lasthandoff: 04/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45141f90aff08a04340491821fef42529e4ac768
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Az Intune 1704-s kiadásától kezdve a mobilalkalmazás-kezelés (MAM) segíts�
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Az engedélyezett és mentesített alkalmazások listája
 
--   **Engedélyezett alkalmazások:** ezeknek be kell tartaniuk az adott szabályzatot.
+-   **Engedélyezett alkalmazások:** ezeknek meg kell felelniük az adott szabályzatnak.
 
 -   **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a céges adatokhoz.
 
@@ -51,11 +52,11 @@ Az Intune 1704-s kiadásától kezdve a mobilalkalmazás-kezelés (MAM) segíts�
 
 A WIP alkalmazásvédelmi szabályzatainak létrehozása előtt be kell állítania a MAM-szolgáltatót.
 
--   További információk a [MAM-szolgáltató konfigurálásáról az Intune segítségével](https://docs.microsoft.com/intune-azure/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10).
+-   További információk a [MAM-szolgáltató konfigurálásáról az Intune segítségével](https://docs.microsoft.comget-ready-to-configure-app-protection-policies-for-windows-10.md).
 
 Emellett rendelkeznie kell a következőkkel:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) licenc
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) licenc.
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
@@ -67,7 +68,7 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 
 1.  Nyissa meg az **Intune mobilalkalmazás-kezelési irányítópultját**, válassza a **Minden beállítás** lehetőséget, majd válassza ki az **Alkalmazásszabályzat** lehetőséget.
 
-2.  Az **Alkalmazásszabályzat** panelen válassza a **Házirend hozzáadása** lehetőséget, majd adja meg a következő értékeket:
+2.  Az **Alkalmazásszabályzat** panelen válassza a **Szabályzat hozzáadása** lehetőséget, majd adja meg a következő értékeket:
 
     a.  **Név:** Adja meg az új szabályzat nevét (szükséges).
 
@@ -77,15 +78,15 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 
     d.  **Regisztráció állapota:** Válassza a **Regisztráció nélkül** lehetőséget a szabályzat regisztrációs állapotaként.
 
-3.  Válassza a **Létrehozás** lehetőséget. A szabályzat létrejön és megjelenik az **Alkalmazásszabályzat** panelen található táblázatban.
+3.  Válassza a **Létrehozás** lehetőséget. A szabályzat létrejön, és megjelenik az **Alkalmazásszabályzat** panelen található táblázatban.
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Javasolt alkalmazások hozzáadása az engedélyezett alkalmazások listájához
 
-1.  Az **Alkalmazásszabályzat** panelen válassza ki a kívánt szabályzat nevét, majd a **Házirend hozzáadása** panelen válassza az **Engedélyezett alkalmazások** lehetőséget. Megnyílik az **Engedélyezett alkalmazások** panel, ahol azoknak az alkalmazásoknak a listáját láthatja, amelyekre ez a szabályzat vonatkozik.
+1.  Az **Alkalmazásszabályzat** panelen válassza ki a kívánt szabályzat nevét, majd a **Házirend hozzáadása** panelen válassza az **Engedélyezett alkalmazások** lehetőséget. Megnyílik az **Engedélyezett alkalmazások** panel, ahol megjelenik azoknak az alkalmazásoknak a listája, amelyekre ez a szabályzat vonatkozik.
 
 2.  Az **Engedélyezett alkalmazások** panelen válassza az **Alkalmazások hozzáadása** lehetőséget. Megnyílik az **Alkalmazások hozzáadása** panel, amelyen láthatja a listában található összes alkalmazást.
 
-3.  Válassza ki azokat az alkalmazásokat, amelyeknek hozzáférést kíván adni a céges adatokhoz, majd kattintson az **OK** gombra. Az **Engedélyezett alkalmazások** panel frissül és kibővül a kiválasztott alkalmazásokkal.
+3.  Válassza ki azokat az alkalmazásokat, amelyeknek hozzáférést kíván adni a céges adatokhoz, majd kattintson az **OK** gombra. Az **Engedélyezett alkalmazások** panel frissül, és kibővül a kiválasztott alkalmazásokkal.
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Áruházbeli alkalmazások hozzáadása az engedélyezett alkalmazások listájához
 

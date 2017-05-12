@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
-ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 02675b6fe9872cb634d0515172f696cedc7e6463
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -44,7 +45,7 @@ Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az aláb
 - [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
 - [Csoportok létrehozása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [A Céges portál konfigurálása](/intune-azure/manage-apps/company-portal-app)
+- [A Céges portál konfigurálása](../manage-apps/company-portal-app.md)
 - Felhasználói licencek hozzárendelése az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Apple MDM push-tanúsítvány beszerzése](get-an-apple-mdm-push-certificate.md)
 - Az iOS-eszközökhöz való fizikai hozzáférés biztosítása

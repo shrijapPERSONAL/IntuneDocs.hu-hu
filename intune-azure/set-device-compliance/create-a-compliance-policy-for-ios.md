@@ -15,10 +15,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c2ace3061e175a6eefd864bdda176651cc09a5b1
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fb4b81e11ae8c66341922898d9ecc4cce3a002d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 -------------------------------
 
 
-| **Szabályzat-beállítás** | **iOS 8.0 vagy újabb ** |
+| **Szabályzat-beállítás** | **iOS 8.0 vagy újabb** |
 | --- | --- |
 | **PIN-kód vagy jelszó konfigurálása** | Kijavítva |   
 | **Eszköztitkosítás** | Kijavítva (PIN-kód beállításával) |
@@ -94,7 +95,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
 
 Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
 
-Az iOS-eszközök esetében ez a beállítás a speciális karakterek minimális számára utal, például: **!** ** # ** , ** &amp; ** ), amelynek szerepelnie kell a jelszóban.
+Az iOS-eszközök esetében ez a beállítás a speciális karakterek minimális számára utal, például: **!** **#** , **&amp;**), amelynek szerepelnie kell a jelszóban.
 
 - **Jelszó kérése ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
 - **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
@@ -109,7 +110,7 @@ Az iOS-eszközök esetében ez a beállítás a speciális karakterek minimális
   - A felhasználó már beállított egy, az eszközre telepített Intune levelezési profillal egyező e-mail-fiókot az eszközön. Az Intune nem írhatja felül a felhasználó által létesített profilt, így nem kezelheti. A megfelelőség biztosítása érdekében a felhasználónak törölnie kell a meglévő e-mail-beállításokat. Ezt követően az Intune képes lesz a felügyelt e-mail-profil telepítésére.
 - **Az Intune-ban felügyelni kívánt levelezési profil:** Ha a **Csak az Intune által felügyelt e-mail fiók használható** beállítás be van jelölve, kattintson a **Kiválasztás** elemre az Intune levelezési profil kiválasztásához. A levelezési profilnak megtalálhatónak kell lennie az eszközön.
 
-Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal a Microsoft Intune-ban](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) című témakörben talál további információt.
+Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal a Microsoft Intune-ban](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) című témakörben talál további információt.
 
 ## <a name="device-health-settings"></a>Eszközállapot-beállítások
 

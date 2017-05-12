@@ -15,10 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: f9b828c7546b2dafe03177c193a18203e5905e5a
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -82,7 +83,7 @@ A korlátozások nélkül használt alkalmazások miatt összekeveredhetnek a v�
 
 
 Az alkalmazásvédelmi szabályzatok révén megakadályozható a vállalati adatoknak az eszköz helyi tárolójára történő mentése, illetve korlátozható a más, alkalmazásvédelmi szabályzatokkal nem védett alkalmazásokba irányuló adatmozgás. Íme néhány az alkalmazásvédelmi szabályzatok beállításai közül:
-- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**, ** A kivágás, másolás és beillesztés korlátozása**.
+- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**,  **A kivágás, másolás és beillesztés korlátozása**.
 - Hozzáférési szabályzati beállítások, például **A hozzáféréshez egyszerű PIN-kód szükséges**, **Felügyelt alkalmazások függetlenített vagy feltört eszközökön való futtatásának letiltása**.
 
 ### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mdm-solution"></a>Adatvédelem alkalmazásvédelmi szabályzatokkal az MDM-megoldásokkal felügyelt eszközökön
@@ -128,11 +129,11 @@ Mindazonáltal néhány korlátozást érdemes figyelembe vennie, például:
 
 ## <a name="multi-identity"></a>Többszörös identitás
 
-A többszörös identitást támogató alkalmazások révén ugyanazok az alkalmazások különböző (munkahelyi és személyes) fiókok használatával is elérhetők, míg az alkalmazásvédelmi szabályzatokat a rendszer az alkalmazások munkahelyi környezetben való használata esetén alkalmazza.
+A több identitást támogató alkalmazások esetében az alkalmazás különböző (munkahelyi és személyes) fiókokkal is elérhető, ilyenkor az alkalmazásvédelmi szabályzatokat csak az alkalmazások munkahelyi környezetben való használata esetén alkalmazza a rendszer.
 
-Ha például a végfelhasználó a munkahelyi fiókjával nyitja meg a OneDrive alkalmazást, akkor nem tudja áthelyezni a fájlokat egy személyes tárhelyre. Ugyanakkor, ha a végfelhasználó a OneDrive alkalmazást a személyes fiókjával használja, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.
+Például, ha egy felhasználó a munkahelyi fiókjával nyitja meg a OneDrive alkalmazást, akkor nem tudja áthelyezni a fájlokat egy személyes tárolóhelyre. Ha azonban a felhasználó a OneDrive alkalmazást a személyes fiókjával használja, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.
 
-Minden Office-mobilalkalmazás támogatja a többszörös identitást.
+- További információ azon alkalmazásokról, amelyek támogatják az [MAM-et és a többszörös identitást](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) az Intune-nal.
 
 ##  <a name="next-steps"></a>További lépések
 

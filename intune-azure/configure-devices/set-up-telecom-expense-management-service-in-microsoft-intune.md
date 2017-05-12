@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Ahhoz, hogy biztosan csak vállalati tulajdonú előfizetésekre vonatkozó adat
 
 A szervezet szükségleteitől függően létre kell hoznia legalább két eszközkategóriát (például Vállalati és Saját tulajdonú), és dinamikus eszközcsoportokat kell meghatároznia mindkét kategóriához. Szükség esetén több kategóriát is létrehozhat a szervezet számára.
 
-Amikor a felhasználók regisztrálják az eszközeiket, látják ezeket a kategóriákat. Attól függően, hogy a felhasználó melyik kategóriát választja, a regisztrált eszköz a megfelelő eszközcsoportba kerül. Az eszközkategóriák létrehozásának lépéseit az [Eszközök hozzárendelése csoportokhoz](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) című témakör ismerteti.
+Amikor a felhasználók regisztrálják az eszközeiket, látják ezeket a kategóriákat. Attól függően, hogy a felhasználó melyik kategóriát választja, a regisztrált eszköz a megfelelő eszközcsoportba kerül. Az eszközkategóriák létrehozásának lépéseit az [Eszközök hozzárendelése csoportokhoz](../enroll-devices/how-to-use-device-group-mapping.md) című témakör ismerteti.
 
   ![Képernyőfelvétel a Szabályzat hozzáadása panelről](../media/tem-dynamic-membership-rules.png)
 

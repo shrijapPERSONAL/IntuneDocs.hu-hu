@@ -1,12 +1,12 @@
 ---
-title: "Alkalmazások hozzárendelése csoportokhoz"
+title: "Alkalmazások hozzárendelése csoportokhoz | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes hozzárendelni felhasználók vagy eszközök csoportjaihoz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 |Burkolt alkalmazások, vagy azt Intune SDK-t magukba foglaló alkalmazások hozzárendelése (alkalmazásvédelmi szabályzatok esetén)|Igen|Igen|
 |Alkalmazások hozzárendelése elérhetőként|Igen|Igen|
 |Alkalmazások hozzárendelése szükségesként|Igen|Nem|
-|Alkalmazások eltávolítása|Igen|Igen|
+|Alkalmazások eltávolítása|Igen|Nem|
 |A végfelhasználók a Céges portál alkalmazásban telepítik az elérhető alkalmazásokat|Igen|Nem|
 |A végfelhasználók a webalapú Céges portálon telepítik az elérhető alkalmazásokat|Igen|Igen|
 
@@ -53,9 +54,9 @@ A legfontosabb változás, hogy az Azure AD-ben nem alkalmazzuk a gyermekcsoport
 ||||||
 |-|-|-|-|-|
 |**Klasszikus Intune (a bérlő áttelepítése előtt)**|-|**Intune az Azure-on (a bérlő áttelepítése után)**|-|**További információ**|
-|**Üzembe helyezési szándék a szülőcsoportban**|**Üzembe helyezési szándék a gyermekcsoportban**|**Az előző szülő- és gyermekcsoport tagjai számára érvényesülő hozzárendelési szándék**|**A szülőcsoport tagjai számára érvényesülő hozzárendelési szándék**|-|    
+|**Hozzárendelési szándék a szülőcsoportban**|**Hozzárendelési szándék a gyermekcsoportban**|**Az előző szülő- és gyermekcsoport tagjai számára érvényesülő hozzárendelési szándék**|**A szülőcsoport tagjai számára érvényesülő hozzárendelési szándék**|-|    
 |Elérhető|Kötelező|Kötelező és elérhető|Elérhető|A „kötelező és elérhető” azt jelenti, hogy a kötelezőként hozzárendelt alkalmazások a Vállalati portál alkalmazásban is megjelennek.
-|Nem alkalmazható|Elérhető|Nem alkalmazható|Nem alkalmazható|Megkerülő megoldás: távolítsa el a „Nem alkalmazható” üzembe helyezési szándékmegjelölést az Intune szülőcsoportból.
+|Nem alkalmazható|Elérhető|Nem alkalmazható|Nem alkalmazható|Megkerülő megoldás: távolítsa el a „Nem alkalmazható” hozzárendelési szándékmegjelölést az Intune szülőcsoportból.
 |Kötelező|Elérhető|Kötelező és elérhető|Kötelező|-|
 |Kötelező és elérhető<sup>1</sup>|Elérhető|Kötelező és elérhető|Kötelező és elérhető|-|    
 |Kötelező|Nem alkalmazható|Kötelező|Kötelező|-|    
@@ -64,10 +65,10 @@ A legfontosabb változás, hogy az Azure AD-ben nem alkalmazzuk a gyermekcsoport
 |Kötelező és elérhető|Eltávolítás|Kötelező és elérhető|Kötelező és elérhető|-|
 <sup>1</sup> Csak áruházból származó felügyelt iOS-alkalmazás esetén. Ha az alkalmazás kötelezőként lett hozzáadva az Intune-hoz, akkor arra automatikusan mind a Kötelező, mind az Elérhető szándék fog vonatkozni.
 
-Az üzembe helyezési ütközések elkerülése érdekében a következőket teheti:
+A hozzárendelési ütközések elkerülése érdekében a következőket teheti:
 
-1.    Ha már üzembe helyezett alkalmazásokat egymáshoz kapcsolódó Intune szülő- és gyermekcsoportokba, ezeket az üzemelő példányokat még a bérlő áttelepítése előtt érdemes eltávolítani.
-2.    Távolítsa el a gyermekcsoportokat a szülőcsoportokból, majd hozzon létre egy új csoportot a korábbi gyermekcsoport tagjaiból. Ezt követően ebben a csoportban létrehozhat egy új alkalmazástelepítést.
+1.    Ha már hozzárendelt alkalmazásokat egymáshoz kapcsolódó Intune szülő- és gyermekcsoportokhoz, ezeket a hozzárendeléseket még a bérlő áttelepítése előtt érdemes eltávolítani.
+2.    Távolítsa el a gyermekcsoportokat a szülőcsoportokból, majd hozzon létre egy új csoportot a korábbi gyermekcsoport tagjaiból. Ezt követően ebben a csoportban létrehozhat egy új alkalmazás-hozzárendelést.
 Megjegyzés: Ha a korábbi szülőcsoport „Minden felhasználó” volt, akkor olyan új dinamikus csoportot kell létrehoznia, amely nem tartalmazza a gyermekcsoport tagjait.
 A felhasználókat és eszközcsoportokat érintő csoportmódosításokat az [Azure Portalon](https://portal.azure.com/) kell elvégezni. A [klasszikus Azure-portál](https://manage.windowsazure.com/) csak a felhasználói csoportok módosítását teszi lehetővé.
 

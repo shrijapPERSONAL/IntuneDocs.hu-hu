@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ Ebben a témakörben a következőket tekintheti át:
 - Mire lesz szüksége, mielőtt hozzákezdhet az eszközmegfelelőségi szabályzat létrehozásához.
 - Vázlatos összefoglaló arról, hogy mit talál és mit intézhet az Azure-beli Intune előzetes verziójában. 
 
-Ha még nem ismeri az eszközmegfelelőség témakörét, célszerű lesz elolvasnia [ezt a fejezetet](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance), amely elmagyarázza a fogalmat, és azt is, hogy miképpen használható a szervezetnél.
+Ha még nem ismeri az eszközmegfelelőség témakörét, célszerű lesz elolvasnia [ezt a fejezetet](what-is-device-compliance.md), amely elmagyarázza a fogalmat, és azt is, hogy miképpen használható a szervezetnél.
 
 ##  <a name="pre-requisites"></a>Előfeltételek
 

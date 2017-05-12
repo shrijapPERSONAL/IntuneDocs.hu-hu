@@ -1,12 +1,12 @@
 ---
-title: "Alkalmazások hozzáadása a Microsoft Intune-hoz"
+title: "Alkalmazások hozzáadása a Microsoft Intune-hoz | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Ezekkel az eljárásokkal felveheti az alkalmazásokat az Intune-ba, hogy készen álljanak a felhasználókhoz és eszközökhöz való hozzárendelésre. "
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 92fb84726846c1eb0fb44db1961a225922e9d9aa
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -40,7 +41,9 @@ A támogatott platformok közé a következők tartoznak.
 - iOS-es üzletági (LOB) alkalmazások
 - Webalkalmazások
 - Windows Phone 8.1-es áruházbeli alkalmazások
+- Windows Phone rendszerű üzletági alkalmazások (.xap fájlok)
 - Windows Áruházbeli alkalmazások
+- Windows rendszerű üzletági alkalmazások (csak .msi fájlok)
 
 >[!TIP]
 > Az üzletági alkalmazásokat nem alkalmazás-áruházból, hanem telepítőfájlból lehet telepíteni. iOS-es üzletági alkalmazás telepítéséhez például az (.ipa kiterjesztésű) alkalmazásarchívum-fájlt kell megadni. Ezek jellemzően házon belül készült alkalmazások.
@@ -49,8 +52,8 @@ A támogatott platformok közé a következők tartoznak.
 
 Mielőtt elkezdené az alkalmazások hozzáadását és hozzárendelését, vegye figyelembe a következőket.
 
-- Amikor egy áruházból ad hozzá és telepít egy alkalmazást, a végfelhasználóknak rendelkezniük kell egy fiókkal az adott áruházban, hogy telepíteni tudják az alkalmazást.
-- Előfordulhat, hogy egyes üzembe helyezendő alkalmazások beépített iOS-alkalmazásoktól függenek. Ha például könyvet telepít az iOS-es áruházból, akkor az eszközön elérhetőnek kell lennie az iBooks alkalmazásnak. Ha eltávolította a beépített iBooks alkalmazást, azt az Intune használatával nem tudja újratelepíteni.
+- Ha áruházból végzi az alkalmazások felvételét és hozzárendelését, a végfelhasználók csak akkor tudják telepíteni az alkalmazásokat, ha rendelkeznek fiókkal az adott áruházban.
+- Előfordulhat, hogy egyes hozzárendelendő alkalmazások beépített iOS-alkalmazásoktól függenek. Ha például egy könyv iOS-es áruházból való hozzárendelését végzi, az eszközön elérhetőnek kell lennie az iBooks alkalmazásnak. Ha eltávolította a beépített iBooks alkalmazást, azt az Intune használatával nem tudja újratelepíteni.
 
 ## <a name="cloud-storage-space"></a>Felhőtárhely
 A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazást (például az üzletági alkalmazásokat) a rendszer becsomagolja és feltölti az Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetés 20 GB tárterületet tartalmaz.
@@ -69,7 +72,7 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 4. A **Mobilalkalmazások** területen válassza a **Beállítás** > **	Alkalmazáskategóriák** elemet.
 5. Az **Alkalmazáskategóriák** panelen látható az aktuális kategóriák listája. Válasszon a következő lehetőségek közül:
     - **Új kategória létrehozása** – Adja meg az új kategória nevét a **Create category** (Kategória létrehozása) panelen. A neveket csak egy nyelven lehet megadni, és az Intune nem fordítja le őket. Ha végzett, kattintson a **Létrehozás** gombra.
@@ -111,10 +114,13 @@ Az alábbi Microsoft-alkalmazások beépítve rendelkezésre állnak, és hozzá
 
 Az alábbi témakörök ismertetik az egyes platformok alkalmazásainak felvételét az Intune-ba:
 
-- [Androidos áruházbeli alkalmazások](/intune-azure/manage-apps/android-store-app)
-- [Androidos üzletági alkalmazások](/intune-azure/manage-apps/android-lob-app)
-- [iOS rendszerhez készült áruházbeli alkalmazások](/intune-azure/manage-apps/ios-store-app)
-- [iOS-es üzletági alkalmazások](/intune-azure/manage-apps/ios-lob-app)
-- [Webalkalmazások (az összes platformra)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1-es áruházbeli alkalmazások](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Áruházbeli alkalmazások](/intune-azure/manage-apps/windows-store-app)
+- [Androidos áruházbeli alkalmazások](android-store-app.md)
+- [Androidos üzletági alkalmazások](android-lob-app.md)
+- [iOS rendszerhez készült áruházbeli alkalmazások](ios-store-app.md)
+- [iOS-es üzletági alkalmazások](ios-lob-app.md)
+- [Webalkalmazások (az összes platformra)](web-app.md)
+- [Windows Phone 8.1-es áruházbeli alkalmazások](windows-phone-8-1-store-app.md)
+- [Windows Phone LOB-alkalmazások](windows-phone-line-of-business-app.md)
+- [Windows Áruházbeli alkalmazások](windows-store-app.md)
+- [Windows LOB-alkalmazás](windows-line-of-business-app.md)
+

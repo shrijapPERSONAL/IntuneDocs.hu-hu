@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Az Intune-nal macOS-eszközöket is lehet felügyelni. Az eszközfelügyelethez a felhasználóknak a [Céges portál webhely](http://portal.manage.microsoft.com) útmutatása alapján regisztrálniuk kell eszközeiket. Ha bekerültek a felügyelet alá, [egyéni beállításokat hozhat létre a macOS-eszközökhöz](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Hamarosan további képességek lesznek elérhetők.
+Az Intune-nal macOS-eszközöket is lehet felügyelni. Az eszközfelügyelethez a felhasználóknak a [Céges portál webhely](http://portal.manage.microsoft.com) útmutatása alapján regisztrálniuk kell eszközeiket. Ha bekerültek a felügyelet alá, [egyéni beállításokat hozhat létre a macOS-eszközökhöz](../configure-devices/custom-for-macos.md). Hamarosan további képességek lesznek elérhetők.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -36,7 +37,7 @@ macOS-eszközök regisztrációjának indítása előtt végezze el az alábbiak
 - [Tartományok beállítása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Az MDM-szolgáltató beállítása](set-mdm-authority.md)
 - [Csoportok létrehozása](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [A Céges portál konfigurálása](/intune-azure/manage-apps/company-portal-app.md)
+- [A Céges portál konfigurálása](../manage-apps/company-portal-app.md)
 - Felhasználói licencek hozzárendelése az [Office 365 portálon](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Apple MDM push-tanúsítvány beszerzése](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ macOS-eszközök regisztrációjának indítása előtt végezze el az alábbiak
 
 Az Intune alapértelmezés szerint lehetővé teszi macOS-eszközök regisztrálását.
 
-A macOS-eszközök regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) című témakörben olvashat.
+A macOS-eszközök regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](set-enrollment-restrictions.md#set-device-type-restrictions) című témakörben olvashat.
 
-Az egy felhasználó által regisztrálható eszközök számának korlátozásáról a [Regisztrált eszközök maximális számának beállítása](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) című témakörben olvashat.
+Az egy felhasználó által regisztrálható eszközök számának korlátozásáról a [Regisztrált eszközök maximális számának beállítása](set-enrollment-restrictions.md#set-device-limit-restrictions) című témakörben olvashat.
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez
 
