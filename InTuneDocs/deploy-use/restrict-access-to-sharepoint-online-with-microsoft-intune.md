@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Használja az [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] feltételes hozzáférés funkcióját a SharePoint Online-on lévő fájlok elérésének szabályozására.
+A SharePoint Online-on lévő fájlok elérésének szabályozására a Microsoft Intune feltételes hozzáférés funkcióját használhatja.
 A feltételes hozzáférés két összetevőből áll:
 - Egy eszközmegfelelőségi szabályzatból, amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
 - Egy feltételes hozzáférési szabályzatból, amelyben meghatározhatja azokat a feltételeket, amelyeknek az eszköznek meg kell felelnie ahhoz, hogy hozzáférhessen a szolgáltatáshoz.
@@ -45,20 +46,20 @@ Amikor egy felhasználó támogatott alkalmazással (például a OneDrive-val) p
 
 
   Ha csatlakozni szeretne a kívánt fájlokhoz, az eszköznek az alábbi feltételeknek kell megfelelnie:
--   Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal **regisztrálva** kell lennie, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
+-   **Regisztrálva** kell lennie az Intune-ban, vagy tartományhoz csatlakoztatott számítógépnek kell lennie.
 
--   **Az eszközt regisztrálni kell** az Azure Active Directoryban (ez automatikusan megtörténik, amikor az eszközt regisztrálják az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban).
+-   **Regisztrálva** kell lennie az Azure Active Directoryban (ez automatikusan megtörténik, amikor az eszközt regisztrálják az Intune-ban).
 
 
--   **Meg kell felelnie** az életbe léptetett [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-beli megfelelőségi szabályzatoknak.
+-   **Meg kell felelnie** az Intune összes telepített megfelelőségi szabályzatának.
 
 Az eszköz állapotát a rendszer az Azure Active Directoryban tárolja, amely a megadott feltételek alapján engedélyezi vagy tiltja a fájlok elérését.
 
 Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek egyike jelenik meg a bejelentkezéskor:
 
--   Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogy hogyan kell telepíteni a Munkahelyi portál alkalmazást, illetve regisztrálni az eszközt.
+-   Ha az eszköz még nincs regisztrálva az Intune-ban vagy az Azure Active Directoryban, egy üzenet jelenik meg, amely leírja, hogy hogyan kell telepíteni a Céges portál alkalmazást és regisztrálni az eszközt.
 
--   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Munkahelyi portál webhelyre irányítja, ahol további információkat talál a problémáról és megoldásáról.
+-   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely a felhasználót az Intune Céges portál webhelyére irányítja, ahol további információkat talál a problémáról és annak megoldásáról.
 
 **A feltételes hozzáférés a külső megosztásra nem vonatkozik**. Arról, hogy hogyan akadályozhatja meg a külső megosztást a bérlőjén vagy a webhelycsoportján belül, a [Külső megosztás kezelése SharePoint Online-környezetben](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) című cikk nyújt tájékoztatást.
 
@@ -115,7 +116,7 @@ Ha egy felhasználó mindkét csoportban szerepel, mentesül a szabályzat alól
 Ha eddig még nem tette meg, hozza létre és regisztrálja a megfelelőségi szabályzatot azoknak a felhasználóknak, akikre a SharePoint Online-szabályzat vonatkozni fog.
 
 > [!NOTE]
-> A megfelelőségi szabályzatok az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Direct orybiztonsági csoportokat célozzák meg.
+> A megfelelőségi szabályzatok a Microsoft Intune csoportjaira vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportjait célozzák meg.
 
 A megfelelőségi szabályzat konfigurálásának részletei a [Megfelelőségi szabályzat létrehozása](create-a-device-compliance-policy-in-microsoft-intune.md) című részben találhatók.
 
@@ -152,11 +153,11 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
 
          A megadott platformokon minden modern hitelesítést használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik.
 
-     A Windows rendszerű számítógépek esetében a számítógépnek vagy tartományhoz kell csatlakoznia, vagy regisztrálva kell lennie az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal, és meg kell felelnie a szabályzatnak. A következő követelményeket állíthatja be:
+     A Windows rendszerű számítógépek esetében a számítógépnek vagy tartományhoz csatlakoztatott számítógépnek kell lennie, vagy regisztrálva kell lennie az Intune-ban, és meg kell felelnie a szabályzatnak. A következő követelményeket állíthatja be:
 
-     -   **Az eszközöknek tartományhoz kell csatlakozniuk vagy meg kell felelniük a házirendnek.** Válassza ezt a lehetőséget, ha a számítógépeknek tartományhoz kell csatlakozniuk, vagy meg kell felelniük az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban beállított szabályzatoknak. Ha a számítógép egyik követelménynek sem felel meg, a rendszer kéri a felhasználótól, hogy regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban.
+     -   **Az eszközöknek tartományhoz kell csatlakozniuk vagy meg kell felelniük a házirendnek.** Ezzel a lehetőséggel előírhatja, hogy a számítógépeknek tartományhoz kell csatlakozniuk, vagy meg kell felelniük az Intune-ban beállított szabályzatoknak. Ha a számítógép egyik követelménynek sem felel meg, a rendszer kéri a felhasználótól, hogy regisztrálja az eszközt az Intune-ban.
 
-     -   **Az eszközöknek meg kell felelniük a házirendnek.** Válassza ezt a lehetőséget, ha elő kívánja írni, hogy a számítógépek regisztrálva legyenek az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal, és megfeleljenek a szabályzatnak. Ha a számítógép nincs regisztrálva, megjelenik egy, a regisztráció lépéseit bemutató üzenet.
+     -   **Az eszközöknek meg kell felelniük a házirendnek.** Ha ezt a lehetőséget választja, előírhatja, hogy a számítógépeknek regisztrálva kell lenniük az Intune-ban, és meg kell felelniük a szabályzatnak. Ha a számítógép nincs regisztrálva, megjelenik egy, a regisztráció lépéseit bemutató üzenet.
 
 4.   A **Böngészőalapú hozzáférés** SharePoint Online-hoz és a OneDrive Vállalati verzióhoz beállítás alatt engedélyezheti, hogy az Exchange Online-hoz csak a támogatott böngészőkkel lehessen hozzáférni: ezek a Safari (iOS) és a Chrome (Android). Más böngészőkkel nem lehetséges a hozzáférés. A OneDrive beállított alkalmazás-hozzáférési platformkorlátozásai itt is érvényesek lesznek.
 

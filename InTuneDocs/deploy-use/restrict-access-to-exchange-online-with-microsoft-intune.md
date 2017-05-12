@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ A feltételes hozzáférés konfigurálásához az alábbiakra van szükség:
 
 - Rendelkeznie kell **Enterprise Mobility + Security (EMS) előfizetéssel** vagy **Azure Active Directory (Azure AD) Premium előfizetéssel**, és a felhasználóknak is licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
 
--  Fontolja meg a választható **Intune szolgáltatások közötti összekötő** beállítását, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t az Exchange Online-hoz csatlakoztatja, és segít Önnek az eszközinformációknak az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján történő kezelésében. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
+-  Fontolja meg a választható **Intune szolgáltatások közötti összekötő** beállítását, amely az Intune-t az Exchange Online-hoz csatlakoztatja, és segítségével az eszközinformációkat az Intune konzoljával kezelheti. Feltételes házirendek vagy feltételes hozzáférési házirendek használatához nincs szükség az összekötő használatára, szükség van rá azonban az olyan jelentések futtatásához, amelyek segítenek a feltételes hozzáférés hatásának vizsgálatában.
     -  További információ az [Intune szolgáltatások közötti összekötőjéről](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
@@ -50,21 +51,21 @@ A feltételes hozzáférés konfigurálásához az alábbiakra van szükség:
 
 Ha feltételes hozzáférési szabályzatokat konfigurál és rendel hozzá felhasználókhoz, a felhasználók csak akkor csatlakozhatnak az e-mail-fiókjukhoz, ha a használt **eszköz** megfelel az alábbi feltételeknek:
 
--   Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal **regisztrált**, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
+-   **Regisztrálva** kell lennie az Intune-ban, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
 
--  **Regisztrálva van az Azure Active Directoryban**. Ez automatikusan megtörténik, amikor az eszköz regisztrálva van az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal. Ezenkívül az ügyfél Exchange ActiveSync-azonosítójának regisztrálva kell lennie az Azure Active Directoryban.
+-  **Regisztrálva van az Azure Active Directoryban**. Ez automatikusan megtörténik, amikor az eszköz regisztrálva van az Intune-ban. Ezenkívül az ügyfél Exchange ActiveSync-azonosítójának regisztrálva kell lennie az Azure Active Directoryban.
 
   Az Azure Active Directory eszközregisztrációs szolgáltatása automatikusan aktiválódik az Intune-t és az Office 365-öt használó ügyfelek számára. Azok az ügyfelek, akik már telepítették az ADFS eszközregisztrációs szolgáltatását, nem fogják látni a regisztrált eszközöket a helyszíni Active Directoryban.
 
--   **Megfelel** az eszközre telepített minden [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] megfelelőségi szabályzatnak, vagy tartományhoz van csatlakoztatva egy helyszíni tartományban.
+-   **Megfelel** az eszközre telepített összes Intune megfelelőségi szabályzatának, vagy tartományhoz van csatlakoztatva egy helyszíni tartományban.
 
 ### <a name="when-the-device-is-not-compliant"></a>Ha az eszköz nem megfelelő
 
 Ha a feltételes hozzáférési szabályzat nem teljesül, az eszköz azonnal karanténba kerül és a felhasználó egy e-mailt kap, és bejelentkezéskor a következő karantén-értesítések valamelyikét fogja látni:
 
-- Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepíteni a Vállalati portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő rekordhoz.
+- Ha az eszköz nincs regisztrálva az Intune-nal vagy az Azure Active Directoryban, egy üzenet jelenik meg, amely leírja, hogyan kell telepíteni a Céges portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő rekordhoz.
 
--   Ha az eszköz nem felel meg a megfelelőségi szabályzat előírásainak, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] vállalati portál webhelyére vagy a Vállalati portál alkalmazásba irányítja, ahol a felhasználó további információt talál a problémáról és annak megoldásáról.
+-   Ha az eszköz nem felel meg a megfelelőségi szabályzat előírásainak, egy üzenet jelenik meg, amely a felhasználót az Intune Céges portál webhelyére vagy a Céges portál alkalmazásba irányítja, ahol a felhasználó további információt talál a problémáról és annak megoldásáról.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Az Exchange Online-beli feltételes hozzáférés működése
 
@@ -114,7 +115,7 @@ Az asztali Office-alkalmazásokat futtató számítógépekhez beállíthatja az
 
   A számítógépnek tartományhoz kell csatlakoznia, vagy meg kell felelnie a megfelelőségi szabályzat előírásainak.
 
-  A megfelelőség biztosításához a számítógépet regisztrálni kell az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, és meg kell felelnie a szabályzatoknak.
+  A megfelelőség érdekében a számítógépnek regisztrálva kell lennie az Intune-ban, és meg kell felelnie a szabályzatoknak.
 
   Tartományhoz csatlakozó számítógépek esetén feltételes hozzáférést kell beállítania az [eszköz automatikus regisztrációjához](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) az Azure Active Directoryban.
 
@@ -138,11 +139,11 @@ Az asztali Office-alkalmazásokat futtató számítógépekhez beállíthatja az
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>2. lépés: A feltételes hozzáférési szabályzat hatásának értékelése
 A feltételes hozzáférési szabályzat konfigurálása után a **Mobileszközkészlet-jelentések** használatával azonosíthatja azokat az eszközöket, amelyek Exchange-hozzáférése le van tiltva.
 
-Ehhez konfiguráljon kapcsolatot a(z) [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] és az Exchange között a [Microsoft Intune szolgáltatások közötti összekötő](intune-service-to-service-exchange-connector.md) használatával.
+Ehhez a [Microsoft Intune szolgáltatások közötti összekötő](intune-service-to-service-exchange-connector.md) használatával állítsa be a kapcsolatot az Intune és az Exchange között.
 1.  Keresse meg a **Jelentések** > **Mobileszközkészlet-jelentések** területet.
 ![Képernyőfelvétel a Mobileszközkészlet-jelentés oldalról](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  A jelentés paramétereiben válassza ki az értékelni kívánt [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportot és szükség esetén azokat az eszközplatformokat, amelyekre alkalmazza a szabályzatot.
+2.  A jelentés paramétereiben válassza ki az értékelni kívánt Intune-csoportot és szükség esetén azokat az eszközplatformokat, amelyekre alkalmazni szeretné a szabályzatot.
 3.  A szervezet igényeinek megfelelő feltételek kiválasztása után válassza a **Jelentés megtekintése** lehetőséget.
 A Jelentésmegjelenítő egy új ablakban nyílik meg.
 ![Képernyőfelvétel egy mobileszközkészlet-jelentésről](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
     > [!NOTE]
     > Ha nem léptetett életbe megfelelőségi szabályzatot, a rendszer megfelelőnek tekinti az eszközöket.
     >
-    > A megfelelőségi állapottól függetlenül a szabályzat által megcélzott összes felhasználónak regisztrálnia kell az eszközét az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-nal.
+    > A megfelelőségi állapottól függetlenül a szabályzat által megcélzott összes felhasználónak regisztrálnia kell az eszközét az Intune-ban.
 
 3.  Az **Alkalmazás-hozzáférés** beállításnál két módszer közül választhat annak megadásához, hogy a szabályzat mely platformokra lesz érvényes a modern hitelesítést használó alkalmazások esetében. A támogatott platformok a következők: Android, iOS, Windows és Windows Phone.
 
@@ -257,17 +258,17 @@ Csak a feltételes hozzáférési szabályzat által célzott csoportokat érté
 
 -   Miután egy felhasználó e-mail fiókot hoz létre, azonnal letiltja az eszközt.
 
--   Ha egy letiltott felhasználó regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, a rendszer két percen belül feloldja az e-mail elérés letiltását.
+-   Ha egy letiltott felhasználó regisztrálja az eszközt az Intune-ban és kijavítja a megfelelőségi hibákat, a rendszer két percen belül feloldja az e-mail-hozzáférés letiltását.
 
 -   Ha a felhasználó megszünteti az eszköz regisztrációját, a rendszer körülbelül hat óra múlva letiltja az e-maileket.
 
-**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az**e-mail-hozzáférés védelmét bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
+**Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az** e-mail-hozzáférés védelmét bemutató példák[ leírását](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>A megfelelőség és a feltételes hozzáférési házirendek megfigyelése
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Az Exchange szolgáltatásból kitiltott eszközök megtekintése
 
-Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] irányítópultján kattintson **Az Exchange szolgáltatásból kitiltott eszközök** csempére a letiltott eszközök számát és további információkat megjelenítő hivatkozások megtekintéséhez.
+Az Intune irányítópultján kattintson **Az Exchange szolgáltatásból kitiltott eszközök** csempére a letiltott eszközök számának és további információkat megjelenítő hivatkozások megtekintéséhez.
 ![Képernyőfelvétel az Intune irányítópultjáról és azokról az eszközökről, amelyek Exchange-hozzáférése le van tiltva](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>További lépések

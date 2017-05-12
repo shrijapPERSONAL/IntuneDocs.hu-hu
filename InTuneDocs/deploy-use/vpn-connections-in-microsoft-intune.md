@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ Igény szerinti VPN-t iOS 8.0 vagy újabb rendszerű eszközökhöz konfigurálh
 1. A szabályzatkonfigurációs lapon keresse ki az **A VPN-kapcsolatra vonatkozó igény szerinti szabályok** elemet. Az oszlopok címkézése: **Egyezés** – a szabályok által figyelt feltétel, és **Művelet** – a feltétel teljesülése esetén a szabályzat által elindítandó művelet.
 2. Új szabály létrehozásához válassza a **Hozzáadás** lehetőséget. A szabályban kétféle egyezéstípust állíthat be. Ugyanabban a szabályban csak egyféle típust konfigurálhat.
   - Az **SSID-k** vezeték nélküli hálózatokra vonatkoznak.
-  - A **DNS-keresési tartományok** .....  Használhatók teljesen minősített tartománynevek, amilyen például a *team. corp.contoso.com*, vagy használhat a *contoso.com*-hoz hasonló tartományneveket, amely megegyezik a **.contoso.com használatával*.
+  - **DNS-keresési tartományok** esetén használhat teljesen minősített tartományneveket, amilyen például a *team. corp.contoso.com*, illetve használhat a *contoso.com*-hoz hasonló tartományneveket is, amely egyenértékű a * *.contoso.com* használatával.
 3. Nem kötelező: megadhat egy URL-sztringmintát is (a szabály által tesztként használt URL-t). Ha az eszköz, amelyen ez a profil telepítve van, átirányítás nélkül el tudja érni ezt az URL-címet, akkor létrejön a VPN-kapcsolat a célként megadott URL-címmel. A felhasználó nem látja a teszthez használt URL-célhelyet. URL-sztringmintaként meg lehet adni például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azlőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
 4. Válassza az alábbi műveletek egyikét:
   - **Kapcsolódás**
