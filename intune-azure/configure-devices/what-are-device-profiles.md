@@ -1,5 +1,5 @@
 ---
-title: "Mik azok az eszközprofilok a Microsoft Intune-ban?"
+title: "Mik azok az eszközprofilok a Microsoft Intune-ban? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: A cikkből megismerheti az Intune-eszközprofilokat, és azt, hogy miképpen segíthetnek a vállalati eszközök kezelésében és védelmében."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: c7ddc58d15ea260b31adad0bab65428df7e4b9ac
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -51,15 +52,15 @@ Az eszközkorlátozások révén számos kategóriában (például biztonsági, 
 További információt az [Eszközkorlátozási beállítások konfigurálása](how-to-configure-device-restrictions.md) című témakörben talál. Támogatott rendszerek: Android, iOS, macOS, Windows 10 és Windows 10 Team.
 
 ## <a name="email"></a>E-mail
-Az e-mail-profilokkal az Exchange ActiveSync-re vonatkozó e-mail-beállításokat hozhat létre, telepíthet és figyelhet az Ön által kezelt eszközökön. A beállítások létrehozásával gondoskodhat az egységességről, csökken a segélyszolgálatra beérkező hívások száma, és a végfelhasználók úgy érhetik el a vállalati e-maileket a személyes eszközeiken, hogy semmit sem kell beállítaniuk.
+Az e-mail-profilok segítségével az Exchange ActiveSyncre vonatkozó e-mail-beállításokat hozhatja létre, telepítheti és figyelheti a felügyelt eszközökön. A beállítások hozzárendelésével gondoskodhat a konzisztenciáról, csökkentheti a segélyszolgálatra beérkező hívások számát, és lehetővé teheti, hogy a végfelhasználók úgy érhessék el a céges e-maileket a személyes eszközeiken, hogy semmit sem kell beállítaniuk.
 További információt talál az [E-mail beállítások konfigurálása](how-to-configure-email-settings.md) című témakörben. Támogatott rendszerek: Android, iOS, Windows Phone 8.1 és Windows 10.
 
 ## <a name="wi-fi"></a>Wi-Fi
-A Wi-Fi-profilokkal vezeték nélküli hálózati beállításokat adhat meg a szervezet felhasználói és eszközei számára. Wi-Fi profil központi telepítése esetén a felhasználók anélkül csatlakozhatnak a vállalati Wi-Fi hálózathoz, hogy azt maguknak kellene konfigurálniuk.
+A Wi-Fi-profilokkal vezeték nélküli hálózati beállításokat rendelhet a szervezet felhasználóihoz és eszközeihez. Wi-Fi profil hozzárendelésével a felhasználók anélkül csatlakozhatnak a vállalat Wi-Fi hálózatához, hogy azt maguknak kellene konfigurálniuk.
 További információt a [Wi-Fi beállítások konfigurálása](how-to-configure-wi-fi-settings.md) című témakörben talál. Támogatott rendszerek: Android, iOS, macOS és Windows 8.1 (csak importálás).
 
 ## <a name="vpn"></a>VPN
-A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. VPN-profilok beállításával a szervezet felhasználóira és eszközeire alkalmazhatja a VPN-beállításokat, így könnyen és biztonságosan kapcsolódhatnak a hálózathoz.
+A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. VPN-profilok használatával a VPN-beállításokat a szervezet felhasználóihoz és eszközeihez rendelheti hozzá, így könnyen és biztonságosan kapcsolódhatnak a hálózathoz.
 További tudnivalók: [VPN-beállítások konfigurálása](how-to-configure-vpn-settings.md).
 Támogatott rendszerek: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 és Windows 10.
 

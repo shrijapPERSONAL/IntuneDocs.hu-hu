@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -157,7 +158,7 @@ Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok
 
     A szabályzat ezzel létrejött, és telepítve lett a felhasználók számára.
 
-A szabályzat csak az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenccel rendelkező felhasználókra érvényes. A kijelölt biztonsági csoport [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licenc nélküli felhasználóira nem vonatkozik a szabályzat.
+A szabályzat csak az Intune-licenccel rendelkező felhasználókra érvényes. A kijelölt biztonsági csoport Intune-licenccel nem rendelkező felhasználóira nem vonatkozik a szabályzat.
 
 >[!IMPORTANT]
 > Ha az Intune-ban és a Configuration Managerben kezeli az iOS- és Android-eszközöket, a szabályzatok csak a közvetlenül kijelölt csoport felhasználói esetében lépnek érvénybe. A csoportba ágyazott alárendelt csoportok tagjaira nem vonatkozik a szabályzat.

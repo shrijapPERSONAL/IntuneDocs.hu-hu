@@ -1,5 +1,5 @@
 ---
-title: "Az Intune eszközkorlátozási beállításai Android for Work rendszerhez"
+title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Android for Work rendszer esetén | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: A cikk az Intune eszközbeállítások és -funkciók Android for Work rendszerű eszközökön történő korlátozására szolgáló beállításait ismerteti."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 03fec9d22e705ccb27f4eb1f8f82c7ace95e841e
-ms.openlocfilehash: c5cff131e7bcedadbad42fe6ab8bf00017f933ff
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: be6303f2db508c2aca9ba9a40fcd43278f83c045
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -62,9 +63,9 @@ Leküldhet például egy olyan alkalmazást a munkahelyi profilba, amely helyada
 - **Smart Lock és egyéb megbízhatósági ügynökök** – kompatibilis eszközökön ezzel vezérelheti az intelligens zárolási funkciót. Ez a „bizalmi ügynök” néven is ismert telefonos képesség lehetővé teszi az eszköz zárolásiképernyő-jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van – például egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással akadályozhatja meg, hogy a felhasználók konfigurálják az intelligens zárolást.
 
 ## <a name="custom-policy-settings"></a>Egyéni szabályzatbeállítások
-A Microsoft Intune **Android for Work egyéni konfigurációs szabályzatával** OMA-URI-beállításokat léptethet érvénybe, amelyekkel vezérelhetők az Android for Work-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
+A Microsoft Intune **Android for Work egyéni konfigurációs szabályzatával** OMA-URI-beállításokat léptethet érvénybe, amelyekkel felügyelheti az Android for Work-eszközökön elérhető szolgáltatásokat. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a képességgel olyan Android-beállításokat telepíthet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
+Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
 Az Intune jelenleg csak korlátozott számú egyéni Android-szabályzatot támogat. E témakör példái alapján megtudhatja, mely szabályzatokat lehet konfigurálni.
 
 ### <a name="general-settings"></a>Általános beállítások
