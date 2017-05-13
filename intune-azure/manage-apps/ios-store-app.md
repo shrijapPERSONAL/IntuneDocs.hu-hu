@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 9a7d1e6fa032cbc281ced07302d6faaca4ba22e3
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 011f33d1d8569a079f73baaca6ba2a665131691d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/05/2017
 
 ## <a name="before-you-start"></a>Előkészületek
 
-Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások hozzárendelése lehetséges. Ha fizetős alkalmazást szeretne az Intune segítségével hozzárendelni, fontolja meg az [iOS mennyiségi vásárlási program](/intune-azure/manage-apps/ios-vpp-apps) használatát.
+Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások hozzárendelése lehetséges. Ha fizetős alkalmazást szeretne az Intune segítségével hozzárendelni, fontolja meg az [iOS mennyiségi vásárlási program](ios-vpp-apps.md) használatát.
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>1. lépés: Az alkalmazás megkeresése az áruházban
@@ -62,5 +62,5 @@ Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások ho
 - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
 3. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
 
-A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
+A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](deploy-apps.md).
 

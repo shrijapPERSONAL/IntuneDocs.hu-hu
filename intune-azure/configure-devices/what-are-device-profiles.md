@@ -16,10 +16,10 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
-ms.openlocfilehash: c7ddc58d15ea260b31adad0bab65428df7e4b9ac
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +38,7 @@ A munkafolyamat megnyitásakor a következő lehetőségek jelennek meg:
 
 ## <a name="getting-started"></a>Első lépések
 
-Az eszközprofilok létrehozásának munkafolyamata a más profilokéhoz hasonló. A profilok létrehozásának módját megismerheti a [Microsoft Intune-eszközkonfigurációs profilok létrehozását ismertető](/intune-azure/configure-devices/how-to-create-device-profiles) cikkből. Ezután olvassa el az egyes profiltípusok beállításainak létrehozásáról szóló külön cikkeket is.
+Az eszközprofilok létrehozásának munkafolyamata a más profilokéhoz hasonló. A profilok létrehozásának módját megismerheti a [Microsoft Intune-eszközkonfigurációs profilok létrehozását ismertető](how-to-create-device-profiles.md) cikkből. Ezután olvassa el az egyes profiltípusok beállításainak létrehozásáról szóló külön cikkeket is.
 
 Az eszközök következő funkcióit kezelheti:
 

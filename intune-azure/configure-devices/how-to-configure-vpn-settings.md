@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 571d12427a8d5103470837819ab356923a2fcccd
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +54,7 @@ A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
 
 > [!IMPORTANT]
-> Az eszközökre alkalmazott VPN-profilok használatához telepíteni kell a megfelelő VPN-alkalmazást a profilhoz. Az alkalmazás Intune-nal történő hozzárendeléséhez [A Microsoft Intune-alkalmazásfelügyelet ismertetése](/intune-azure/manage-apps/what-is-app-management) című témakörben talál segítséget.  
+> Az eszközökre alkalmazott VPN-profilok használatához telepíteni kell a megfelelő VPN-alkalmazást a profilhoz. Az alkalmazás Intune-nal történő hozzárendeléséhez [A Microsoft Intune-alkalmazásfelügyelet ismertetése](../manage-apps/what-is-app-management.md) című témakörben talál segítséget.  
 
 Az [Egyéni VPN-profilok létrehozása](create-custom-vpn-profiles.md) című témakörből tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
 
