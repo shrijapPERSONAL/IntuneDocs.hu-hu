@@ -5,7 +5,7 @@ keywords: Mi az az Intune?
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +33,7 @@ Az Intune egy felhőalapú nagyvállalati mobileszköz-felügyeleti (EMM) szolg�
 * Megóvhatja vállalati adatokat, szabályozva azt, ahogyan a munkatársak elérik és megosztják őket.
 * Gondoskodhat arról, hogy az eszközök és az alkalmazások megfeleljenek a vállalat biztonsági követelményeinek.
 
-Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-vezérlés terén az Azure Active Directoryval (Azure AD), valamint az adatvédelem terén az Azure Information Protectionnel. Az Intune a Microsoft Enterprise Mobility + Security (EMS) *„felügyeleti felelőse”*, míg az Office 365 a Microsoft mobilitási megoldásának *„munkavégzési felelőse”*.  
+Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-vezérlés terén az Azure Active Directoryval (Azure AD), valamint az adatvédelem terén az Azure Information Protectionnel.
 
 Az Office 365 és az EMS együttesen lehetővé teszi, hogy a dolgozók minden eszközükön hatékonyan dolgozzanak, emellett óvja a szervezet adatait is. Az Office 365 és az EMS a nagyvállalati mobilitás teljes, integrált csomagját kínálja, amelynek részét alkotják az irodai alkalmazások, az identitáskezelés, a hozzáférés-vezérlés, a felügyelet és az adatvédelem. Hatékony módot biztosít egy mobilitási megoldás üzembe helyezéséhez és üzemeltetéséhez a szervezetében.
 
