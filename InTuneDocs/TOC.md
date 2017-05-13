@@ -84,7 +84,7 @@
 #### [Exchange-hozzáférési szabályok](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Az Android for Work kezelése](deploy-use/android-for-work.md)
 
-## [Számítógépek kezelése szoftveres ügynökkel](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Számítógépek kezelése szoftveres ügyfél](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [Számítógépügyfél telepítése](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Számítógépek általános felügyeleti feladatai](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Számítógépes szabályzatok](deploy-use/use-policies-to-simplify-windows-pc-management.md)
