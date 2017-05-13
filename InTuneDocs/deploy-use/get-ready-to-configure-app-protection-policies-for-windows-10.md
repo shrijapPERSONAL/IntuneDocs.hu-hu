@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: hu-hu
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ Mielőtt Windows 10-es alkalmazásvédelmi szabályzatot hozhatna létre, az Azu
 
 3.  A megnyíló **Azure AD** panelen válassza a **Mobilitás (MDM és MAM)** lehetőséget, majd kattintson a **Microsoft Intune** elemre.
 
-    ![Mobilitás: MDM és MAM](../media/AppManagement/mam-provider-sc-1.png)
+    ![Mobilitás: MDM és MAM](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  A megnyíló konfigurációs panelen először válassza a **Alapértelmezett MAM URL-címeinek visszaállítása** elemet, majd végezze el az alábbi beállításokat:
 
