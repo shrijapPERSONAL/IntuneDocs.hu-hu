@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,26 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
-ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
-ms.lasthandoff: 04/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68dbaa2209ad1432279683a291734641e39ff736
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/05/2017
 
 
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
 
-> [!Note]
-> Vegye figyelembe, hogy az alábbi képek az előzetes verziókra vonatkoznak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
+## <a name="coming-soon-in-the-ui"></a>Hamarosan elérhető a felhasználói felületen
+Ezek azok a tervezett megoldások, amelyekkel a felhasználói felület frissítésén keresztül javulni fog a felhasználói élmény.
 
-## <a name="april-2017"></a>2017. április
+> [!Note]
+> Vegye figyelembe, hogy az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
 
-Javítottunk a bejelentkezési élményen az Intune Céges portál alkalmazásánál Android, iOS és Windows rendszereken.  A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.  
+Egy olyan változást jelentünk most be, amely a következő néhány hónapban érkezik, és amellyel javulni fog a bejelentkezési élmény az Intune Céges portál Android, iOS és Windows rendszerű alkalmazásaiban. A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.  
 
 Alább képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
 
@@ -51,13 +53,13 @@ __Új bejelentkezési folyamat__
 
 ![A felhasználótól csak akkor kéri a rendszer a jelszavát ha már helyesen megadta az e-mail-címét.](./media/cp_ios_aad_signin_after_1704_003.png)
 
+![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 __Új bejelentkezési folyamat más eszközről való bejelentkezéskor__
 
 ![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
-
-![A felhasználónak ugyanazon az oldalon csak az e-mail-címét kell megadnia, nem pedig mind az e-mail-címét, mind a jelszavát. Az e-mail mező alatti hivatkozás szövege: „Bejelentkezés másik eszközről”.](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
 
 ![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -74,6 +76,8 @@ Nyissa meg egy böngészőablakban az [http://aka.ms/devicelogin](https://aka.ms
 A Céges portál alkalmazás megkezdi a bejelentkezést.
 
 ![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="april-2017"></a>2017. április
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Új ikonok a Managed Browserhez és a Céges portálhoz <!--918433, 918431-->
 
@@ -105,13 +109,13 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
           </td>
           <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
            </td>
            <td>
-              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
@@ -119,22 +123,13 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
 </html>
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Jobb telepítésiállapot-megjelenítés a Windows 10-es Céges portál alkalmazásban <!--676495-->
-A Windows 10-es Céges portál alkalmazásban mostantól folyamatjelző sávok jelzik a Céges portálról indított alkalmazástelepítések állapotát.
+A Windows 10-es Céges portál alkalmazás mostantól telepítési folyamatjelző sávot tartalmaz az alkalmazás részleteit megjelenítő oldalon. A funkciót a Windows 10 évfordulós frissítését és újabb kiadásait futtató eszközök modern alkalmazásai támogatják.
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
-         <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
-          </td>
-          <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+__Előtte__
+  ![Kép a betöltési képernyő előző verziójáról, amelyen az állapotra csak a „telepítés” kifejezés utal.](./media/cp_win10_install_status_before_1704.png)
+
+__Utána__
+  ![Kép a betöltési képernyő frissített verziójáról, amelyen mostantól látható a telepítési folyamatjelző sávja.](./media/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>2017. február
 
