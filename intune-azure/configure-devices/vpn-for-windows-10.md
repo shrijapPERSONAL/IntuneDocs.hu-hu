@@ -15,9 +15,10 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.contentlocale: hu-hu
 ms.lasthandoff: 02/18/2017
 
 
@@ -99,7 +100,7 @@ Az egyéni XML-parancsok írásával kapcsolatban további információt az egye
 ## <a name="conditional-access"></a>Feltételes hozzáférés
 
 **Feltételes hozzáférés használata e VPN-kapcsolat esetében** -
-** Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal** -
+**Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal** -
 **Kibővített kulcshasználat** -
 **Kibocsátó kivonata** -
 
