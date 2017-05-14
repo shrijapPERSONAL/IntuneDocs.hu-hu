@@ -1,12 +1,12 @@
 ---
-title: "Mennyiségi programban vásárolt iOS-alkalmazások felügyelete"
+title: "Mennyiségi programban vásárolt iOS-alkalmazások felügyelete | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure előzetes verzió: Az iOS áruházból mennyiségi programban vásárolt alkalmazások szinkronizálása az Intune-nal, majd használatuk felügyelete és nyomon követése."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -86,5 +87,5 @@ A licencek visszanyeréséhez módosítania kell a hozzárendelési műveletet a
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Ezt a lépést az alkalmazás telepítésének folytatása előtt kell megtennie.
 
-Ha a mennyiségi vásárlói programhoz (VPP) tartozó alkalmazást helyez üzembe, az alkalmazás tartalma és licence közvetlenül az alkalmazás-áruházból lesz telepítve.
+Ha VPP-alkalmazás elérhetőként való hozzárendelését végzi, az alkalmazás tartalmának és licencének hozzárendelése közvetlenül az alkalmazás-áruházból történik.
 
