@@ -86,6 +86,7 @@
 #### [Windows Phone LOB-alkalmazások](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Áruházbeli alkalmazások](manage-apps/windows-store-app.md)
 #### [Windows LOB-alkalmazások](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work-alkalmazások](/manage-apps/android-for-work-apps.md)
 ### [Alkalmazások hozzárendelése](manage-apps/deploy-apps.md)
 ### [Alkalmazások figyelése](manage-apps/monitor-apps.md)
 ### [Alkalmazáskonfigurációs profilok használata](manage-apps/app-configuration-policies.md)
