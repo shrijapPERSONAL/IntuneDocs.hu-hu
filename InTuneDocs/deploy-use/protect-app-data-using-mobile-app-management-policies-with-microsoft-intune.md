@@ -14,10 +14,11 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -128,7 +129,7 @@ A több identitást támogató alkalmazások esetében az alkalmazás különbö
 
 Például, ha egy felhasználó a munkahelyi fiókjával nyitja meg a OneDrive alkalmazást, akkor nem tudja áthelyezni a fájlokat egy személyes tárolóhelyre. Ha azonban a felhasználó a OneDrive alkalmazást a személyes fiókjával használja, akkor korlátozás nélkül másolhat és helyezhet át adatokat a személyes OneDrive-jából.  
 
-A többszörös identitásos hozzáférést minden Office-mobilalkalmazás támogatja.
+- További információ azon alkalmazásokról, amelyek támogatják az [MAM-et és a többszörös identitást](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) az Intune-nal.
 
 ##  <a name="next-steps"></a>További lépések
 - [Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

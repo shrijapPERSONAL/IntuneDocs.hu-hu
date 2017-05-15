@@ -14,10 +14,11 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9466a2ca94ea556037c2fdd7fee88b87eed88685
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -82,7 +83,7 @@ A Vállalati portál testre szabható a vállalat emblémájának és nevének, 
     |----------|----------------|
     |Téma színe|A Vállalati portálra alkalmazni kívánt témaszín kiválasztása.|
     |Cég emblémájának megjelenítése|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. Mindkét emblémának egy .png vagy .jpg formátumú fájlnak kell lennie, melyek felbontása legfeljebb 400 x 100 képpont, mérete pedig legfeljebb 750 KB lehet.|
-    |Háttér választása a [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Vállalati portál alkalmazás számára|Ez a beállítás csak a [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Vállalati portál alkalmazás hátterére van hatással.|
+    |Háttér választása a Windows 8 Vállalati portál alkalmazás számára|Ez a beállítás csak a Windows 8 Vállalati portál alkalmazás hátterére van hatással.|
 
 
 A módosítások mentése után a felügyeleti konzol **Vállalati portál** lapjának alján található hivatkozásokra kattintva megtekintheti a Vállalati portál webhelyét. Ezek a hivatkozások nem módosíthatók. A felhasználók bejelentkezésekor ezek a hivatkozások a Vállalati portálon megjelenítik az Ön előfizetéseit.

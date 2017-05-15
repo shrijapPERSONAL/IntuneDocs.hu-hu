@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -161,52 +162,6 @@ Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a k�
 
 Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. Ennek a következő formátumúnak kell lennie: <*az alkalmazás URL-címe*>, <*az alkalmazás neve*>, <*az alkalmazás kiadója*>. Az **Exportálás** gombra kattintva egy olyan CSV-fájlt hozhat létre, amely ugyanebben a formátumban tartalmazza a rejtett vagy a megjelenített alkalmazások listáját.
 
-### <a name="app-information-for-built-in-ios-apps"></a>Beépített iOS-alkalmazások adatai
-Ebben a listában megtalálhatja a megjeleníteni vagy elrejteni kívánt beépített iOS-alkalmazás nevét, kiadóját és csomagazonosítóját. Ha a listán szereplő összes alkalmazást szeretné megjeleníteni vagy elrejteni, az alábbi adatokat másolja be egy **.csv** kiterjesztésű szövegfájlba, majd használja az **Importálás** lehetőséget az alkalmazások egyidejű importálásához.
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
-
 
 ## <a name="cellular"></a>Mobil
 -     **Adatroaming** – Engedélyezi adatroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
@@ -252,13 +207,13 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 |Fényképezőgép|com.apple.camera|
 |Óra|com.apple.mobiletimer|
 |Iránytű|com.apple.compass|
-|Kontaktok|com.apple.MobileAddressBook|
+|Névjegyek|com.apple.MobileAddressBook|
 |FaceTime|com.apple.facetime|
 |Barátok keresése|com.apple.mobileme.fmf1|
 |iPhone keresése|com.apple.mobileme.fmip1|
 |Game Center|com.apple.gamecenter|
 |GarageBand|com.apple.mobilegarageband|
-|Egészség|com.apple.Health|
+|Állapot|com.apple.Health|
 |iBooks|com.apple.iBooks|
 |iTunes Store|com.apple.MobileStore|
 |iTunes U|com.apple.itunesu|
@@ -268,8 +223,8 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 |Üzenetek|com.apple.MobileSMS|
 |Zene|com.apple.Music|
 |Hírek|com.apple.news|
-|Jegyzetek|com.apple.mobilenotes|
-|Numbers|com.apple.Numbers|
+|Megjegyzések|com.apple.mobilenotes|
+|Számok|com.apple.Numbers|
 |Pages|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|
 |Fotók|com.apple.mobileslideshow|
@@ -308,7 +263,7 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 
 >[!NOTE]
 > Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az Apple Configurator eszközzel vagy az Apple Device Enrollment Program készülékregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
->Ha a megadott iOS-alkalmazás a konfigurációs házirend telepítése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
+>Ha a megadott iOS-alkalmazás a profil hozzárendelése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
 ## <a name="safari"></a>Safari
 -     **Safari (csak felügyelt eszköz esetén)** – Ez a beállítás azt határozza meg, hogy használható-e a Safari böngésző az eszközön.
