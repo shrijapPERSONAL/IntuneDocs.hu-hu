@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ A Skype Vállalati online verzióhoz hozzáférést igénylő eszközre vonatkoz
 
 -   Az eszköz legyen **Android** vagy **iOS** rendszerű.
 
--   Legyen **regisztrálva** a következővel: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Az Intune-nal **regisztrálva** kell lennie.
 
--   **Feleljen meg** a telepített [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] megfelelőségi szabályzatoknak.
+-   Meg kell felelnie az Intune összes telepített **megfelelőségi** szabályzatának.
 
 
 Az eszköz állapotát a rendszer az Azure Active Directoryban tárolja, amely a megadott feltételek alapján engedélyezi vagy letiltja a hozzáférést.
 
 Ha egy feltétel nem teljesül, a felhasználó számára az alábbi üzenetek egyike jelenik meg a bejelentkezéskor:
 
--   Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogy hogyan kell telepíteni a Munkahelyi portál alkalmazást, illetve regisztrálni az eszközt.
+-   Ha az eszköz nincs regisztrálva az Intune-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepítenie a Vállalati portál alkalmazást és regisztrálnia az eszközt.
 
--   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] munkahelyi portálra vagy a Munkahelyi portál alkalmazásba irányítja a felhasználót, ahol további információt talál a problémáról, és annak megoldásáról.
+-   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely az Intune vállalati portálra vagy a Céges portál alkalmazásba irányítja a felhasználót, ahol további információt talál a problémáról, és annak megoldásáról.
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>A Skype Vállalati online verzió feltételes elérésének beállítása
 
@@ -77,7 +78,7 @@ Ha egy felhasználó mindkét csoportban szerepel, mentesül a házirend alól.
 [Hozzon létre](create-a-device-compliance-policy-in-microsoft-intune.md) és [telepítsen](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) megfelelőségi szabályzatot a szabályzat hatálya alá eső összes eszközre. Ez minden olyan eszközre értendő, amelyet a **Megcélzott csoportok** csoporthoz tartozó felhasználók használnak.
 
 > [!NOTE]
-> A megfelelőségi szabályzatok az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-csoportokra vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Direct orybiztonsági csoportokat célozzák meg.
+> A megfelelőségi szabályzatok a Microsoft Intune csoportjaira vonatkoznak, a feltételes hozzáférési szabályzatok viszont az Azure Active Directory biztonsági csoportjait célozzák meg.
 
 
 > [!IMPORTANT]

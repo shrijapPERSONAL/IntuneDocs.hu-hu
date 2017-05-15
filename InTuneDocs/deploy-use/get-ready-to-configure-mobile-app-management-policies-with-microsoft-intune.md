@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez kere
 
 ## <a name="prerequisites"></a>Előfeltételek
 
--   **Microsoft Intune-előfizetés**. A felhasználóknak [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-licencekre van szükségük ahhoz, hogy megkapják azokat az alkalmazásokat, amelyekre alkalmazásvédelmi szabályzat érvényes.
-Már van [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetése, ha jelenleg is az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t használja az eszközök kezeléséhez. Akkor is rendelkezik [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-felügyeleti funkciók miatt próbálná ki az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t, érdemes létrehozni egy próbafiókot a [Microsoft Intune webhelyen](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+-   **Microsoft Intune-előfizetés**. A felhasználóknak Intune-licencekre van szükségük ahhoz, hogy megkapják azokat az alkalmazásokat, amelyekre alkalmazásvédelmi szabályzat érvényes.
+Már van Intune-előfizetése, ha jelenleg is az Intune-t használja az eszközök kezeléséhez. Akkor is rendelkezik Intune-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-kezelési funkciók miatt próbálná ki az Intune-t, létrehozhat egy próbafiókot a [Microsoft Intune lapon](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Az Office portál **Számlázás** oldalán ellenőrizheti, hagy rendelkezik-e [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-előfizetéssel.  Ha van előfizetése, az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] állapota az előfizetések alatt **Aktív**.
+    Az Office portál **Számlázás** lapján ellenőrizheti, hagy rendelkezik-e Intune-előfizetéssel.  Ha van előfizetése, az Intune állapota az előfizetések alatt **Aktív**.
 
 -   **Office 365-előfizetés**, amely a következőkhöz szükséges:
 

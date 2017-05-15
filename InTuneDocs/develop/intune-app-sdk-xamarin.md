@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazás
 
 2. Olvassa el Microsoft Intune MAM Xamarin összetevő [licencfeltételeit](https://components.xamarin.com/license/microsoft.intune.mam).
 
-3.    Töltse le az Intune App SDK Xamarin Component mappát a [Githubról](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) vagy a [Xamarinról](https://components.xamarin.com/license/microsoft.intune.mam), és csomagolja ki. Az 1. és a 2. lépésben letöltött fájlnak ugyanazon a könyvtárszinten kell lennie.
+3.    Töltse le az Intune App SDK Xamarin Component mappát a [Githubról](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) vagy a [Xamarinról](https://components.xamarin.com/license/microsoft.intune.mam), és csomagolja ki. Az 1. és a 3. lépésben letöltött fájlnak ugyanazon a könyvtárszinten kell lennie.
 
-4.    Futtassa rendszergazdaként a következő parancsot a parancssorban: `Xamain.Component.exe install <.xam> file`.
+4.    Futtassa rendszergazdaként a következő parancsot a parancssorban: `Xamarin.Component.exe install <.xam> file`.
 
 5.    A Visual Studióban kattintson jobb gombbal a korábban létrehozott Xamarin-projektben az **components** (összetevők) elemre.
 
@@ -123,9 +125,4 @@ A Xamarin Formshoz és más felhasználóifelület-keretrendszerekhez biztosítu
 ## <a name="test-your-app"></a>Az alkalmazás tesztelése
 
 Elvégezte az összetevő alkalmazásba történő beépítésének alapvető lépéseit. Következőnek kövesse a Xamarin-alapú Android-mintaalkalmazásban lévő lépéseket. Két mintát biztosítottunk, egyet a Xamarin.Forms-hoz és egyet az Androidhoz.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

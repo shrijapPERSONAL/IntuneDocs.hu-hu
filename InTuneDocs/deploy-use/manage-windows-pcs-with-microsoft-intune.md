@@ -14,40 +14,26 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0060eb9c912c3a770220c16acde9f4705fa27194
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/28/2017
 
 
 ---
 
-# <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Windows rendszerű számítógépek felügyelete az Intune számítógépügyféllel
-A windowsos PC-ket alapértelmezés szerint [mobileszközként érdemes regisztrálni](set-up-windows-device-management-with-microsoft-intune.md) az Intune-ba, de ehelyett Ön, mint rendszergazda, a jelen témakörben ismertetett módon, az Intune-ügyfélszoftver telepítése után is regisztrálhatja és felügyelheti őket. Az Intune-ügyfélszoftverrel nem lehet a gépeket mobileszközként regisztrálni.
+# <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
 
-Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Server Active Directory tartományi szolgáltatások (AD DS) csoportházirend-objektumaihoz (GPO-khoz) hasonló szabályzatokat használ. Ha Active Directory-tartományhoz csatlakoztatott számítógépeket felügyel az Intune segítségével, akkor [győződjön meg róla, hogy az Intune-szabályzatok nem ütköznek a szervezet csoportházirend-objektumaival](resolve-gpo-and-microsoft-intune-policy-conflicts.md). További információ a [csoportszabályzat-objektumokról](https://technet.microsoft.com/library/hh147307.aspx).
+Az Intune átfogó megoldást nyújt a mobileszközök kezelésére a szervezetek számára. Az Intune a Windows 10 operációs rendszer beépített modern eszközfelügyeleti lehetőségeinek használatával képes mobileszközként kezelni a Windows rendszerű számítógépeket. A szervezet felügyeleti igényeinek teljesítése érdekében az Intune számítógépként is képes kezelni a Windows rendszerű számítógépeket az Intune-szoftverügyfélen keresztül. Ez a felügyeleti módszer a korábbi Windows operációs rendszer hagyományos számítógép-felügyeleti képességeit használja.
 
-## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Szabályzatok és alkalmazástelepítések működése az Intune-ügyfélszoftverrel
+Az Intune-szoftverügyfél a korábbi operációs rendszerrel működő, például a Windows 7 rendszerű számítógépekhez a legalkalmasabb, amelyeket nem lehet mobileszközként kezelni. Az Intune-szoftverügyfél a Csoportházirend és hasonló felügyeleti képességek segítségével kezeli a számítógépeket a felhőből.
 
-Jóllehet az Intune-ügyfélszoftver a szoftverfrissítések, a Windows tűzfal és az Endpoint Protection kezelésével támogatja a [PC-k védelmét szolgáló felügyeleti funkciókat](policies-to-protect-windows-pcs-in-microsoft-intune.md), az Intune-szoftverügyfél által felügyelt PC-ket nem lehet egyéb Intune-szabályzatokkal, így a mobileszköz-felügyeletet szolgáló **Windows**-szabályzatokkal célozni.
+Az Intune támogatja a Windows rendszerű számítógépek számítógépként való kezelését a szoftverügyfél használatával – maximum 7000 számítógépig. Ennél is nagyobb méretű környezet esetén mobileszközként kezelheti Windows 10 rendszerű számítógépeit. Az Intune egyes kiadásai és a Windows 10 frissítései a mobileszköz-kezelési architektúrán alapuló felügyeleti funkciókat tartalmaznak. Erősen ajánlott a szervezet áthelyezése a Windows 10 mobileszközként történő kezelésére.
 
-Ha az Intune-ügyfélszoftverrel felügyel windowsos PC-ket, csak a **Számítógép-kezelés** szakaszban látható szabályzatokat használhatja.
-
-  ![Új windowsos PC-szabályzat sablonjának kiválasztása](../media/select-template-for-pc-policy.png)
-
-A beállítható szabályzatok részletes leírásáért lásd:
-
-- [Szabályzatok használata az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek védelméhez](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [A Windows rendszerű számítógépek védelme Windowsos tűzfalszabályzatok használatával a Microsoft Intune-ban](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-Emellett az alkalmazások telepítésekor csak a Windows Installert (.exe, .msi) használhatja.
-
-  ![Platform és hely kiválasztása a PC-s ügyfélszoftver fájljaihoz](../media/select-platform-of-software-files-for-pc-agent.png)
 
 > [!NOTE]
-> A Windows 8.1-es vagy újabb rendszerű eszközöket kezelheti PC-ként az Intune-ügyféllel, vagy mobileszközként a mobileszköz-felügyeleti (MDM) szolgáltatással. A két módszert együttesen nem használhatja, ezért járjon el körültekintően, mielőtt a PC-k Intune-ügyfélszoftver használatával történő felügyelete mellett dönt. Ez a témakör kizárólag az Intune-szoftverügyféllel PC-ként kezelt eszközökre vonatkozik.
+> A Windows 8.1-es vagy újabb rendszerű eszközöket kezelheti számítógépként az Intune-ügyfélszoftverrel, vagy mobileszközként. Mindkét módszert azonban nem használhatja ugyanazon az eszközön. Alaposan mérlegeljen, mielőtt a számítógépeknek az Intune-ügyfélszoftverrel való kezelése mellett döntene. Ez a témakör kizárólag az Intune-szoftverügyféllel PC-ként kezelt eszközökre vonatkozik.
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Az Intune-számítógépügyfél általi felügyelet követelményei
 
@@ -68,31 +54,48 @@ Emellett az alkalmazások telepítésekor csak a Windows Installert (.exe, .msi)
 |Windows Installer 3.1|A számítógépnek legalább a Windows Installer 3.1-es verziójával kell rendelkeznie.<br /><br />A Windows Installer verziójának megtekintése egy számítógépen:<br /><br />  A számítógépen kattintson a jobb gombbal a **%windir%\System32\msiexec.exe** fájlra, majd a **Tulajdonságok** menüpontra.<br /><br />A Windows Installer legújabb verzióját letöltheti a Microsoft Developer Network webhelyen található [Windows Installer újraterjeszthető csomagok](http://go.microsoft.com/fwlink/?LinkID=234258) oldalról.|
 |Nem kompatibilis ügyfélszoftver eltávolítása|Az Intune-ügyfélszoftver telepítése előtt el kell távolítania a számítógépen esetleg megtalálható Configuration Manager-, Operations Manager-, Operations Management Suite- és Service Manager-ügyfélszoftvert.|
 
+## <a name="deploying-the-intune-software-client"></a>Az Intune-szoftverügyfél üzembe helyezése
+Intune-rendszergazdaként több módon is elérhetővé teheti az Intune-szoftverügyfelet a felhasználók számára. Útmutatásért lásd: [Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre](install-the-windows-pc-client-with-microsoft-intune.md).
+
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Számítógép-felügyeleti képességek az Intune-os ügyfélszoftverrel
+A legtöbb esetben célszerű regisztrálni az eszközöket az Intune-ban, mivel ez több funkciót biztosít. Ugyanakkor az Intune-szoftverügyféllel is felügyelheti a számítógépeket. Ekkor a következő funkciókat érheti el:
 
-Az Intune-ügyfélszoftver telepítése után a következő felügyeleti funkciók állnak rendelkezésre:
+-   **[Szoftverfrissítések kezelése](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - Naprakészen tarthatja a számítógépeit, és beállíthatja, hogy a rendszer mikor telepítse a frissítéseket.
 
-- [Alkalmazásfelügyelet](deploy-apps-in-microsoft-intune.md)
+-   **[Windows tűzfalházirend](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - Ezzel biztosíthatja, hogy a vállalatnál használt számítógépeken ne legyen inaktív vagy nem megfelelően beállított Windows tűzfal.
 
-- [Valós idejű figyelés és Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) – Az Endpoint Protection ugyanaz, mint a Windows Defender. Az Endpoint Protection a Windows 7 és Windows 8 rendszerre vonatkozik. A Windows 10-es és újabb verzióiban a termék neve Windows Defenderre változott.
+-   **[Kártevők elleni védelem](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Az Intune Endpoint Protection védelmet használja, amely segít a számítógépes kártevők elleni védelmében.
 
-- [A Windows tűzfal beállításainak felügyelete](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), hardver- és szoftverleltár, távvezérlés (távsegítségre vonatkozó kéréseken keresztül)
+-   **[Távsegítség](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Az Intune lehetővé teszi a felhasználóknak, hogy az Intune beépített távoli asztali funkciója segítségével kapcsolatba lépjenek az informatikai támogatási csapattal (ehhez a TeamViewer szoftver szükséges).
 
-- [Szoftverfrissítési beállítások](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+-   **[Szoftverlicenc-gazdálkodás](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - Nyomon követheti az elérhető és a használatban lévő szoftverlicencek számát.
+-   **[Alkalmazások központi telepítése](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - Szoftvereket telepíthet a felügyelt számítógépekre. Ha a szoftverügyféllel felügyeli a számítógépeket, akkor bizonyos alkalmazásfelügyeleti funkciók nem érhetők el.
 
-- Megfelelőségi beállítások jelentése
+<!-- - **Compliance settings reporting** -->
 
-Az Intune felügyeleti konzoljának bizonyos részei, mint például az „Updates” (Frissítések), a „Protection” (Védelem) és a „Licenses” (Licencek) csak akkor jelennek meg, ha vannak az Intune-ügyfélszoftverrel regisztrált eszközök.
+## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Szabályzatok és alkalmazástelepítések működése az Intune-ügyfélszoftverrel
 
-  ![A felügyeleti konzol csak a számítógépügyfél esetén megjelenített elemei](../media/admin-console-settings-only-for-pc-agent.png)
+Jóllehet az Intune-ügyfélszoftver a szoftverfrissítések, a Windows tűzfal és az Endpoint Protection kezelésével támogatja a [PC-k védelmét szolgáló felügyeleti funkciókat](policies-to-protect-windows-pcs-in-microsoft-intune.md), az Intune-szoftverügyfél által felügyelt PC-ket nem lehet egyéb Intune-szabályzatokkal, így a mobileszköz-felügyeletet szolgáló **Windows**-szabályzatokkal célozni.
+
+Ha az Intune-ügyfélszoftverrel felügyel windowsos PC-ket, csak a **Számítógép-kezelés** szakaszban látható szabályzatokat használhatja.
+
+Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Server Active Directory tartományi szolgáltatások (AD DS) és csoportházirend-objektumok (GPO-k) által alkalmazottakhoz hasonló szabályzatokat használ. Ha Active Directory-tartományhoz csatlakoztatott számítógépeket felügyel az Intune segítségével, akkor [győződjön meg róla, hogy az Intune-szabályzatok nem ütköznek a szervezetben használt más csoportházirend-objektumokkal](https://docs.microsoft.com/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts). További információt a [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx) (Csoportházirend kezdőknek) című angol nyelvű anyagban talál.
+
+  ![Új windowsos PC-szabályzat sablonjának kiválasztása](../media/select-template-for-pc-policy.png)
+
+Az alkalmazások telepítésekor csak a Windows Installert (.exe, .msi) használhatja.
+
+  ![Platform és hely kiválasztása a PC-s ügyfélszoftver fájljaihoz](../media/select-platform-of-software-files-for-pc-agent.png)
+
+## <a name="common-tasks-for-windows-pcs"></a>Gyakori feladatok Windows rendszerű számítógépeken
 
 Az Intune felügyeleti konzolján más általános számítógép-felügyeleti feladatokat is elvégezhet azokon a windowsos PC-ken, amelyeken az ügyfél telepítve van:
+- [A számítógépek felügyelete szabályzatok használatával egyszerűsíthető](use-policies-to-simplify-windows-pc-management.md) – Meghatározza az Intune **Számítógép felügyeleti** szabályzatait, és megadja a Microsoft Intune Center beállításait.
 
--   Felügyelt számítógépek hardver- és szoftverleltárjára vonatkozó információk megtekintése
--   Számítógépek távoli újraindítása
--   Számítógépek kivonása az ügyfélszoftver eltávolításához és kivételükhöz az Intune-felügyelet alól
--   Felhasználók hozzákapcsolása adott felügyelt számítógépekhez
--   Válasz távsegítségre vonatkozó kérésre
+- [Windows rendszerű számítógépek hardver- és szoftverleltára](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md) – Leírja, miként kell létrehozni egy jelentést, amely tartalmazza a számítógépek hardverképességeit, valamint a telepített szoftvereket. Azt is leírja, miként kell frissíteni a leltárt, hogy az naprakész legyen.
+- [Windows rendszerű számítógép kivonása](retire-a-windows-pc-with-microsoft-intune.md) – Felsorolja a Windows rendszerű számítógép kivonásához szükséges lépéseket és leírja, mi történik ilyenkor.
+- [Felhasználók és eszközök összekapcsolásának felügyelete Windows rendszerű PC-khez](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – Leírja, hogy a szoftver felhasználó részére történő telepítése előtt mikor és hogyan kell összekapcsolni a felhasználót a PC-vel.
+- [Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) – Leírja, hogy miként biztosíthat távfelügyeletet az Intune-számítógépfelhasználóknak, valamint megadja a TeamViewer telepítésének előfeltételeit.
 
 A fenti feladatokról az [általános számítógép-felügyeleti feladatokat](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) ismertető témakörben olvashat részletesebben.
 
@@ -101,8 +104,11 @@ A fenti feladatokról az [általános számítógép-felügyeleti feladatokat](c
 Az Intune-ügyfélszoftverrel felügyelt PC-knél nem használhat bizonyos olyan felügyeleti lehetőségeket, amelyek segítségével PC-ként kezelheti a mobileszközöket:
 
 -   Teljes törlés (a szelektív törlés elérhető)
-
 -   Feltételes hozzáférés
+
+Azt is vegye figyelembe, hogy az Intune felügyeleti konzoljának bizonyos részei, mint például az **Updates** (Frissítések), a **Protection** (Védelem) és a **Licenses** (Licencek) csak akkor jelennek meg, ha vannak az Intune-ügyfélszoftverrel regisztrált eszközök.
+
+  ![A felügyeleti konzol csak a számítógépügyfél esetén megjelenített elemei](../media/admin-console-settings-only-for-pc-agent.png)
 
 ## <a name="help-with-troubleshooting"></a>Segítség a hibaelhárításhoz
 

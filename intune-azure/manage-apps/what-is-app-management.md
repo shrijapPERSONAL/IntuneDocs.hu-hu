@@ -1,12 +1,12 @@
 ---
-title: "Mi az alkalmazáskezelés?"
+title: "Az alkalmazáskezelés ismertetése | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Azure-beli Intune – előzetes: Ezen témakör a Microsoft Intune-nal történő alkalmazáskezeléssel kapcsolatos alapismereteket tartalmazza"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kíván
 |Alkalmazások hozzáadása és hozzárendelése eszközökhöz és felhasználókhoz|Igen|Igen|Igen|Igen|
 |Alkalmazások hozzárendelése az Intune-ban nem regisztrált eszközökhöz|Igen|Igen|Nem|Nem|
 |Az alkalmazások indítási viselkedését vezérlő alkalmazáskonfigurációs szabályzatok használata|Nem|Igen|Nem|Nem|
+|A mobilalkalmazás-kiépítési szabályzatok használata a lejárt alkalmazások megújítására|Nem|Igen|Nem|Nem|
 |A céges adatok védelme alkalmazásvédelmi szabályzatokkal az alkalmazásokban|Igen|Igen|Nem|Nem<sup>1</sup>|
 |Csak a céges adatok eltávolítása egy telepített alkalmazásból (alkalmazások szelektív törlése)|Igen|Igen|Igen|Igen|
 |Az alkalmazás-hozzárendelések figyelése|Igen|Igen|Igen|Igen|
@@ -68,7 +70,7 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
     - [Alkalmazások hozzáadása](add-apps.md)
     - [Alkalmazások hozzárendelése](deploy-apps.md)
     - [Alkalmazások figyelése](monitor-apps.md)
-- **Licencelt alkalmazások** – Mennyiségi licencszerződés keretében, az alkalmazás-áruházakból vásárolt alkalmazások megtekintése, telepítése és figyelése.
-    - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](wsfb-apps.md)
 - **Alkalmazáskonfigurációs szabályzatok** – Az alkalmazáskonfigurációs szabályzatokkal automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy alkalmazást futtat. A részletekért lásd:
     - [Alkalmazáskonfigurációs szabályzatok](app-configuration-policies.md)
 - **Alkalmazásvédelmi szabályzatok** – Lehetővé teszik beállítások társítását egy alkalmazáshoz a használt céges adatok védelme érdekében. Például korlátozhatja egy alkalmazás más alkalmazásokkal való kommunikációját, vagy előírhatja PIN-kód megadását a felhasználónak egy céges alkalmazás eléréséhez.
     - [Alkalmazásvédelmi szabályzatok](app-protection-policies.md)
 - **Szelektív alkalmazástörlés** – Csak a céges adatok eltávolítása a kiválasztott felhasználó eszközéről.
     - [Alkalmazások szelektív törlése](app-selective-wipe.md)
+- **iOS-alapú kiépítési profilok** – Az iOS-alkalmazások tartalmaznak egy kiépítési profilt és kódot, tanúsítvánnyal aláírva. Ha a tanúsítvány lejár, az alkalmazás a továbbiakban nem futtatható. Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.
+    - [iOS-alkalmazáskiépítési profilok](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>Figyelő
+- **Licencelt alkalmazások** – Mennyiségi licencszerződés keretében, az alkalmazás-áruházakból vásárolt alkalmazások megtekintése, hozzárendelése és figyelése.
+    - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](wsfb-apps.md)
 - **Felderített alkalmazások** – Az Intune által hozzárendelt, és az eszközön telepített összes alkalmazás megjelenítése.
 - **Alkalmazástelepítési állapot** – Egy Ön által létrehozott alkalmazás-hozzárendelés állapotát jeleníti meg.
-- **Alkalmazásvédelmi felhasználó állapota** – A kiválasztott felhasználó egy alkalmazásvédelmi szabályzatának állapotát jeleníti meg.
+- **Alkalmazásvédelem állapota** – A kiválasztott felhasználó egy alkalmazásvédelmi szabályzatának állapotát jeleníti meg.
 
 További információkért lásd: [Alkalmazások figyelése](monitor-apps.md)
 

@@ -1,12 +1,12 @@
 ---
-title: "A Vállalati Windows Áruházban vásárolt alkalmazások felügyelete"
+title: "A Vállalati Windows Áruházban vásárolt alkalmazások felügyelete | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune az Azure-on – előzetes: Útmutató a Vállalati Windows Áruházból származó alkalmazások Intune-ba való szinkronizálásához, és ezután azok hozzárendeléséhez és nyomon követéséhez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ A [Vállalati Windows Áruház](https://www.microsoft.com/business-store) az a h
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
 * A szinkronizált alkalmazások megjelennek az Intune felügyeleti konzolján, és a többi alkalmazáshoz hasonlóan rendelheti hozzá őket.
 * Az Intune felügyeleti konzolján nyomon követheti a szabad és a használatban lévő licencek számát.
-* Ha nincs elegendő elérhető licenc, az Intune letiltja az alkalmazások központi telepítését.
+* Ha nincs elegendő elérhető licenc, az Intune letiltja az alkalmazások kiosztását és telepítését.
 
 ## <a name="before-you-start"></a>Előkészületek
-Mielőtt elkezdi a Vállalati Windows Áruházból származó alkalmazások szinkronizálását és telepítését, tekintse át a következő információkat:
+Mielőtt elkezdi a Vállalati Windows Áruházból származó alkalmazások szinkronizálását és kiosztását, tekintse át a következő információkat:
 * Az Intune-t kell beállítania mobileszköz-kezelő szolgáltatóként a szervezetben.
 * Rendelkeznie kell fiókkal a Vállalati Windows Áruházban.
 * Miután összekapcsolta a Vállalati Windows Áruház-fiókját az Intune-nal, később nem választhat hozzá másik fiókot.
@@ -50,7 +51,7 @@ Mielőtt engedélyezné a szinkronizálást az Intune-konzolon, konfigurálnia k
 3. A Felügyeleti eszközök lapon válassza a **Felügyeleti eszköz hozzáadása**, majd a **Microsoft Intune** lehetőséget.
 
 > [!NOTE]
-> Ha több felügyeleti eszközt is használ a Vállalati Windows Áruházbeli alkalmazások üzembe helyezésére, akkor korábban ezek közül csak egyet társíthatott a Vállalati Windows Áruházhoz. Mostantól több felügyeleti eszközzel is megteheti ezt (például az Intune-nal és a Configuration Managerrel).
+> Ha több felügyeleti eszközt is használ a Vállalati Windows Áruházbeli alkalmazások kiosztására, akkor korábban ezek közül csak egyet társíthatott a Vállalati Windows Áruházhoz. Mostantól több felügyeleti eszközzel is megteheti ezt (például az Intune-nal és a Configuration Managerrel).
 
 Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az Intune-konzolon.
 
@@ -74,11 +75,11 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 
 Az Áruházból származó alkalmazásokat ugyanúgy rendelheti hozzá, mint a többi Intune-alkalmazást. További információ: [How to assign apps to groups with Microsoft Intune](deploy-apps.md) (Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal). Az **Összes alkalmazás** oldal helyett azonban a **Licencelt alkalmazások** oldalról rendelheti hozzá az alkalmazásokat.
 
-A Vállalati Windows Áruházból származó alkalmazások hozzárendelésekor az alkalmazást telepítő minden felhasználóhoz meg kell adnia egy-egy licencet. Ha felhasználja egy telepített alkalmazás összes elérhető licencét, akkor nem telepíthet több példányt. Végre kell hajtania a következő műveletek valamelyikét:
+A Vállalati Windows Áruházból származó alkalmazások hozzárendelésekor az alkalmazást telepítő minden felhasználóhoz meg kell adnia egy-egy licencet. Ha felhasználja egy kiosztott alkalmazás összes elérhető licencét, akkor nem oszthat ki több példányt. Végre kell hajtania a következő műveletek valamelyikét:
 * Távolítsa el az alkalmazást néhány eszközről.
-* Csökkentse az aktuális telepítés hatókörét annyi felhasználóra, ahány elérhető licenccel rendelkezik.
+* Csökkentse az aktuális hozzárendelés hatókörét annyi felhasználóra, ahány elérhető licenccel rendelkezik.
 * Vásároljon további példányokat az alkalmazásból a Vállalati Windows Áruházban.
 
 > [!Important]
-> A telepített alkalmazásokhoz csak az a felhasználó férhet hozzá, aki eredetileg regisztrálta az eszközt. Más felhasználók nem férhetnek hozzá az alkalmazásokhoz.
+> A kiosztott alkalmazásokhoz csak az a felhasználó férhet hozzá, aki eredetileg regisztrálta az eszközt. Más felhasználók nem férhetnek hozzá az alkalmazásokhoz.
 

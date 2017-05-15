@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>1. forgatókönyv: Felhasználók megakadályozása az Exchange Online nem megfelelő eszközökkel való elérésében
 ### <a name="scenario-requirements"></a>Forgatókönyv követelményei
 - A **Könyvelés** Azure Active Directory biztonsági csoportban lévő összes felhasználó számára le kell tiltani az Exchange Online elérését, ha eszközük nem felel meg egy telepített megfelelőségi szabályzatnak.
-- Ha tartozik a csoportba olyan felhasználó, akinek az eszközeit az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nem támogatja, számára le kell tiltani az Exchange Online elérését a kérdéses eszközökön.
+- Ha tartozik a csoportba olyan felhasználó, akinek az eszközeit az Intune nem támogatja, számára le kell tiltani az Exchange Online elérését a kérdéses eszközökön.
 - A **Pénzügy** Azure Active Directory biztonsági csoportba tartozó egyik felhasználóra sem lehet érvényes a szabályzat, még akkor sem, ha az adott felhasználó a **Könyvelés** biztonsági csoportban is szerepel.
 
 Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot az Exchange Online rendszerre vonatkozóan a következő beállításokkal:
@@ -68,7 +70,7 @@ A következő folyamattal határozható meg, hogy mely eszközök férhetnek hoz
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>3. forgatókönyv: Az Android-eszközök nem férnek hozzá a helyi Exchange-hez
 ### <a name="scenario-requirements"></a>Forgatókönyv követelményei
 - Az Android-eszközök ne férhessenek hozzá az Exchange-hez.
-- Az összes többi támogatott eszköz hozzáférhet az Exchange-hez, ha az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] felügyeli őket.
+- Az összes többi támogatott eszköz hozzáférhet az Exchange-hez, ha az Intune felügyeli őket.
 
 Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot a helyi Exchange rendszerre vonatkozóan a következő beállításokkal:
 
@@ -82,9 +84,4 @@ Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot a
 A következő folyamattal határozható meg, hogy mely eszközök férhetnek hozzá az Exchange-hez:
 
 ![Az eszközök általi elérés folyamata](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

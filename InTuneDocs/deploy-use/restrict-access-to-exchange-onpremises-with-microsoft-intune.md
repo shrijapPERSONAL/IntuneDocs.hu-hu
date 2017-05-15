@@ -14,10 +14,11 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -38,7 +39,7 @@ Mindenképpen ellenőrizze a következőket:
 
 -   Az Exchange esetében **Exchange 2010-es vagy újabb verzió** szükséges. Az Exchange-kiszolgáló ügyfélelérési kiszolgálótömbjei (CAS) támogatottak.
 
--   [Az Intune helyszíni Exchange összekötőjét](intune-on-premises-exchange-connector.md) kell használnia, amely összeköti az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-t és a helyszíni Exchange-et. Ez lehetővé az eszközök kezelését az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konzolján keresztül.
+-   [Az Intune helyszíni Exchange összekötőjét](intune-on-premises-exchange-connector.md) kell használnia, amely összeköti az Intune-t és a helyszíni Exchange-et. Ez lehetővé teszi az eszközök kezelését az Intune-konzolon keresztül.
 
     -   Az Intune-konzolon elérhető helyszíni Exchange-összekötő az adott Intune-bérlőhöz tartozik, és semmilyen más bérlővel nem használható. Gondoskodjon róla, hogy bérlője Exchange-összekötője **csak egy számítógépen** legyen telepítve.
 
@@ -54,13 +55,13 @@ Mindenképpen ellenőrizze a következőket:
 
 Ha feltételes hozzáférési szabályzatokat konfigurál és rendel hozzá felhasználókhoz, a felhasználók csak akkor csatlakozhatnak az e-mail-fiókjukhoz, ha a használt **eszköz** megfelel az alábbi feltételeknek:
 
--  Az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban **regisztrált**, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
+-  Az Intune-ban **regisztrált**, vagy egy tartományhoz csatlakozó számítógépnek kell lennie.
 
 -  **Regisztrálva van az Azure Active Directoryban**. Ezenkívül az ügyfél Exchange ActiveSync-azonosítójának regisztrálva kell lennie az Azure Active Directoryban.
 
   Az Azure Active Directory eszközregisztrációs szolgáltatása automatikusan aktiválódik az Intune-t és az Office 365-öt használó ügyfelek számára. Azok az ügyfelek, akik már telepítették az ADFS eszközregisztrációs szolgáltatását, nem fogják látni a regisztrált eszközöket a helyszíni Active Directoryban. **Ez nem érvényes a Windows rendszerű számítógépekre és a Windows Phone-eszközökre**.
 
--   **Meg kell felelnie** az eszközön telepített összes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] megfelelőségi szabályzatnak.
+-   **Meg kell felelnie** az eszközön telepített összes Intune-os megfelelőségi szabályzatnak.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>A helyszíni Exchange és a feltételes hozzáférés működése
 
@@ -70,9 +71,9 @@ A következő diagram azt a folyamatot mutatja be, amelyet a helyszíni Exchange
 
 Ha egy feltételes hozzáférési szabályzat nem teljesül, egy 10 perces időkeret áll rendelkezésre az eszköz blokkolása és aközött, hogy a felhasználó bejelentkezésekor az alábbi karanténüzenetek egyike jelenik meg:
 
-- Ha az eszköz nincs regisztrálva az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepíteni a Vállalati portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő eszközrekordhoz.
+- Ha az eszköz nincs regisztrálva az Intune-ban vagy az Azure Active Directoryban, megjelenik egy üzenet, amely leírja, hogyan kell telepíteni a Vállalati portál alkalmazást, regisztrálni az eszközt és aktiválni az e-mailt. Ez a folyamat hozzárendeli az eszköz Exchange ActiveSync-azonosítóját is az Azure Active Directoryban lévő eszközrekordhoz.
 
--   Ha az eszköz nem megfelelő, egy üzenet jelenik meg, amely a felhasználót az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Céges portál webhelyére vagy a Céges portál alkalmazásba irányítja, ahol a felhasználó további információt talál a problémáról és annak megoldásáról.
+-   Ha az eszköz nem felel meg a feltételeknek, egy üzenet jelenik meg, amely a felhasználót az Intune Munkahelyi portál webhelyére vagy a Munkahelyi portál alkalmazásba irányítja, ahol további információt talál a problémáról és megoldásáról.
 
 ## <a name="support-for-mobile-devices"></a>A mobileszközök támogatása
 A következők támogatottak:
@@ -88,7 +89,7 @@ A következők támogatottak:
 
 ## <a name="support-for-pcs"></a>Számítógépek támogatása
 A következők támogatottak:
--   A **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (ha számítógép az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban regisztrálva van).
+-   A **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (ha számítógép az Intune-ban regisztrálva van).
 
 ##  <a name="configure-a-conditional-access-policy"></a>Feltételes hozzáférési házirend konfigurálása
 
@@ -97,21 +98,21 @@ A következők támogatottak:
 
 2.  Konfigurálja a szabályzatot a szükséges beállításokkal: ![Képernyőkép a helyszíni Exchange-szabályzatról](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **A helyi Exchange-hez való hozzáférés letiltása a levelezőalkalmazásoknak, ha az eszköz nem kompatibilis vagy nincs regisztrálva a Microsoft Intune-ban:** Ha bejelöli ezt a beállítást, akkor blokkolva lesz a nem az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által felügyelt vagy a megfelelőségi szabályzatoknak nem megfelelő eszközök hozzáférése az Exchange-szolgáltatásokhoz.
+  - **A helyi Exchange-hez való hozzáférés letiltása a levelezőalkalmazásoknak, ha az eszköz nem kompatibilis vagy nincs regisztrálva a Microsoft Intune-ban:** Ha bejelöli ezt a beállítást, akkor blokkolva lesz a nem az Intune által felügyelt vagy a megfelelőségi szabályzatoknak nem megfelelő eszközök hozzáférése az Exchange-szolgáltatásokhoz.
 
   - **Alapértelmezett szabály felülbírálása – A regisztrált és megfelelő eszközök mindig hozzáférhetnek az Exchange-hez**: Ha ezt beállítást választja, az Intune-ban regisztrált azon eszközök, amelyek eleget tesznek a megfelelőségi szabályzatoknak, hozzáférhetnek az Exchange-hez.
   Ez a szabály felülírja az **alapértelmezett szabályt**. Ha tehát az **alapértelmezett szabály** úgy van beállítva, hogy blokkolja a hozzáférést, a megfelelőnek minősülő regisztrált eszközök továbbra is hozzáférhetnek az Exchange-hez.
 
-  - **Megcélzott csoportok:** Válassza ki az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] azon felhasználói csoportjait, amelyeknek regisztrálniuk kell az eszközüket az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban az Exchange eléréséhez.
+  - **Megcélzott csoportok:** Válassza ki az Intune azon felhasználói csoportjait, amelyeknek regisztrálniuk kell az eszközüket az Intune-ban az Exchange eléréséhez.
 
-  - **Kivétel alá eső csoportok:** Válassza ki az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] azon felhasználói csoportjait, amelyek mentesülnek a feltételes hozzáférési szabályzat alól. A listán szereplő felhasználók mentesülnek akkor is, ha szerepelnek a **Megcélzott csoportok** listán.
+  - **Kivétel alá eső csoportok:** Válassza ki az Intune azon felhasználói csoportjait, amelyek mentesülnek a feltételes hozzáférési szabályzat alól. A listán szereplő felhasználók mentesülnek akkor is, ha szerepelnek a **Megcélzott csoportok** listán.
 
-  - **Platformkivételek:** Kattintson a **Szabály hozzáadása** lehetőségre olyan szabály konfigurálásához, amely meghatározza az adott mobileszközcsaládok és -modellek hozzáférési szintjeit. Mivel ezek az eszközök bármilyen típusúak lehetnek, olyan eszköztípusokat is konfigurálhat, amelyeket nem támogat az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+  - **Platformkivételek:** Kattintson a **Szabály hozzáadása** lehetőségre olyan szabály konfigurálásához, amely meghatározza az adott mobileszközcsaládok és -modellek hozzáférési szintjeit. Mivel ezek az eszközök bármilyen típusúak lehetnek, olyan eszköztípusokat is konfigurálhat, amelyeket nem támogat az Intune.
 
   - **Alapértelmezett szabály:** A többi szabály alól mentes eszközökhöz kiválaszthatja, hogy engedélyezi-e az Exchange-hozzáférést, esetleg letiltja vagy karanténba helyezi az eszközt. Ha úgy állítja be a szabályt, hogy engedélyezze a hozzáférést, a megfelelőnek minősülő regisztrált eszközök automatikusan hozzáférést kapnak a levelezéshez (iOS, Windows és Samsung KNOX rendszerű eszközök esetén). A felhasználónak semmilyen teendője sincs az e-mail-fiókjával kapcsolatban.
       - A nem Samsung KNOX-alapú androidos eszközök esetén a felhasználók értesítést kapnak e-mailben az eszközeik karanténba helyezéséről. Az e-mailben található egy részletes útmutató arról, hogy a levelezéshez való hozzáférés előtt miként kell ellenőrizni az eszközök regisztrációját és megfelelőségét. Ha úgy állítja be a szabályt, hogy az engedélyezze a hozzáférést vagy karanténba helyezze az eszközt, egyetlen eszköz sem fog hozzáférni az Exchange-hez, függetlenül attól, hogy regisztrálták-e már őket az Intune-ban. Amennyiben nem szeretné, hogy ez a szabály vonatkozzon a megfelelőnek minősülő regisztrált eszközökre, válassza az **Alapértelmezett szabály felülbírálása** lehetőséget.
 >[!TIP]
->Ha a levelezéshez való hozzáférést megelőzően minden eszközt blokkolni szeretne, válassza inkább a hozzáférést blokkoló szabályt vagy a karanténba helyezést kiváltó szabályt. Az alapértelmezett szabály az összes eszköztípusra érvényes, így hatással van a platformkivételként konfigurált és az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] által nem támogatott eszköztípusokra is.
+>Ha a levelezéshez való hozzáférést megelőzően minden eszközt blokkolni szeretne, válassza inkább a hozzáférést blokkoló szabályt vagy a karanténba helyezést kiváltó szabályt. Az alapértelmezett szabály az összes eszköztípusra érvényes, így hatással van a platformkivételként konfigurált és az Intune által nem támogatott eszköztípusokra is.
 
   - **Felhasználó értesítése:** Az Exchange által küldött értesítő e-mail mellett az Intune e-mailt küld, amely tartalmazza az eszköz feloldásának lépéseit. Az alapértelmezett üzenetet az igényeinek megfelelően módosíthatja. Ha a felhasználó eszköze le van tiltva az Intune által küldött, javítással kapcsolatos utasításokat tartalmazó értesítő e-mail megérkezése előtt (az e-mail a felhasználó Exchange-postaládájába kerül), akkor egy le nem tiltott eszközzel vagy más módon érheti el az Exchange-fiókot és tekintheti meg az üzenetet.
       - Ez különösen igaz olyankor, ha az **Alapértelmezett szabály** az eszközök blokkolására vagy karanténba helyezésére van beállítva. Ilyen esetben a végfelhasználónak meg kell nyitnia az alkalmazás-áruházat, le kell töltenie a Microsoft Vállalati portál alkalmazást, és regisztrálnia kell az eszközét. Ez egyaránt vonatkozik az iOS, a Windows és a Samsung KNOX rendszerű eszközökre. A nem Samsung KNOX-eszközök esetén a karanténba helyezett e-mailt el kell küldenie egy másodlagos e-mail fiókba. A felhasználónak át kell másolnia az e-mailt letiltott eszközére a regisztrációs és megfelelőségi folyamat befejezéséhez.
@@ -124,11 +125,11 @@ A következők támogatottak:
 
 -   Nem kell telepítenie a feltételes hozzáférési szabályzatot, az azonnal érvénybe lép.
 
--   Miután a felhasználó beállította az Exchange ActiveSync-profilt, az eszköz letiltása egytől három óráig tarthat (ha nem az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] felügyeli).
+-   Miután a felhasználó beállította az Exchange ActiveSync-profilt, az eszköz letiltása egytől három óráig tarthat (ha nem az Intune felügyeli).
 
--   Ha egy letiltott felhasználó ezután regisztrálja az eszközt az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, és kijavítja a nem megfelelőséget, a rendszer két percen belül feloldja az e-mailek elérését.
+-   Ha egy letiltott felhasználó ezután regisztrálja az eszközt az Intune-ban, és kijavítja a nem megfelelőséget, a rendszer két percen belül feloldja az e-mailek elérését.
 
--   Ha a felhasználó megszünteti az eszköz regisztrációját az [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]-ban, az eszköz letiltása egytől három óráig tarthat.
+-   Ha a felhasználó megszünteti az eszköz regisztrációját az Intune-ban, az eszköz letiltása egytől három óráig tarthat.
 
 **Ha szeretne arra vonatkozó példákat megtekinteni, hogy hogyan konfigurálhat feltételes hozzáférési szabályzatot az eszközök hozzáférésének védelméhez, olvassa el az [e-mail-hozzáférés védelmét bemutató példák](restrict-email-access-example-scenarios.md) leírását.**
 
