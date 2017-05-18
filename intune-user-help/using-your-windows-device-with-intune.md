@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Windows-eszköz használata az Intune-nal
 
 Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
+
+## <a name="supported-versions"></a>Támogatott verziók
+
+Az Intune jelenleg a Windows alábbi verzióit támogatja.
+
+* Windows 10 (Home, Pro, Education, és Enterprise verziók)
+* Windows Phone 8.1 és újabb verziók
+* Windows 8.1 RT
+* Windows 8.1
+
+Az Intune néhány további Windows-verziót is támogat; ilyen például a [Windows 10 Holographic](https://www.microsoft.com/hololens). Ezek azért nem szerepelnek ebben a listában, mert nagyon speciális célokra szolgálnak.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
 
