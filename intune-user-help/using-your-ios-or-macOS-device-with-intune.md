@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
-ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
-ms.lasthandoff: 03/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,10 @@ ms.lasthandoff: 03/02/2017
 # <a name="using-your-ios-or-macos-device-with-intune"></a>iOS vagy macOS rendszerű eszköz használata az Intune-nal
 
 Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
+
+## <a name="supported-versions"></a>Támogatott verziók
+
+Az Intune jelenleg az iOS 8.0-s és újabb verzióit támogatja. Támogatja továbbá a macOS 10.9 Mavericks és későbbi verzióit. 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Regisztrálás az Intune-ban és a Céges portál telepítése
 
@@ -40,6 +45,7 @@ Számos módon könnyítheti meg munkáját az Intune segítségével. Az alább
 
 - [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 - [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md)
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md)
