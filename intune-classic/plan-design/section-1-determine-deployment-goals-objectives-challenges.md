@@ -14,10 +14,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
-ms.lasthandoff: 04/08/2017
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -74,7 +75,7 @@ A telepítés célkitűzései olyan műveletek, amelyekkel az adott munkahely el
 <br></br>
 -   **Biztosítsa a céges adatok törlésének képességét az eszközről**
 <br>
-    -   **Végrehajtás:** Regisztrálja és felügyelje az eszközöket Microsoft Intune-ban, így alkalomadtán távolról is törölheti a vállalati adatokat és erőforrásokat.
+    -   **Végrehajtás:**  Regisztrálja és felügyelje az eszközöket Microsoft Intune-ban, így alkalomadtán távolról is törölheti a vállalati adatokat és erőforrásokat.
 
 ## <a name="deployment-challenges"></a>Üzembe helyezés kihívásai
 

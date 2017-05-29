@@ -14,10 +14,11 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
-ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -56,7 +57,7 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 ## <a name="configure-synchronization"></a>A szinkronizálás konfigurálása
 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
-2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés**  >  **Windows** elemet, majd válassza a **Vállalati Áruház** elemet.
+2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés**  >   **Windows** elemet, majd válassza a **Vállalati Áruház** elemet.
 3. A **Vállalati Windows Áruház** lapon hajtsa végre a következő műveletet:
  * Ha még nem tette meg, kattintson a Vállalati Windows Áruházba való regisztráció hivatkozására.
  * Miután regisztrálta magát, válassza a **Szinkronizálás konfigurálása** elemet.
