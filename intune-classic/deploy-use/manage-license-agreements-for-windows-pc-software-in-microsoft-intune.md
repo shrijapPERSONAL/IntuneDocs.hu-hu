@@ -14,10 +14,11 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
-ms.lasthandoff: 12/30/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -62,7 +63,7 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
         -   Csak az ASCII-karakterek támogatottak.
 
-        -   A következő karakterek nem engedélyezettek a szerződés nevében: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
+        -   A szerződés nevében nem használhatóak a következő karakterek: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
 
         -   A fájl neve nem lehet hosszabb 128 karakternél.
 
@@ -88,9 +89,9 @@ Az Intune mennyiségi licencelszerződések a Microsoft mennyiségi licencszerz�
 
         -   **Szerződés neve** – Adja meg a szerződés egyedi nevét.
 
-            A szerződésnév legfeljebb 256 karakterből állhat, és nem tartalmazhatja a következő karaktereket: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
+            A szerződés neve legfeljebb 256 karakterből állhat, és nem tartalmazhatja a következő karaktereket: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
 
-        -   **Engedély/szerződés száma**– Adja meg a licencpár engedély-/szerződésszámát.
+        -   **Engedély/szerződés száma** – Adja meg a licencpár engedély-/szerződésszámát.
 
         -   **Licenc/igénylés/ügyfél száma** – Adja meg a licencpár licenc-/igénylés-/ügyfélszámát.
 
@@ -141,7 +142,7 @@ Az Intune-hoz a Microsoft mennyiségi licencszerződésektől eltérő típusú 
 
 4.  A **Szerződésadatok hozzáadása** területen adja meg a következőket:
 
-    -   **Agreement name** (kötelező). A szerződésnév legfeljebb 256 karakterből állhat, és nem tartalmazhatja a következő karaktereket: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
+    -   **Agreement name** (kötelező). A szerződés neve legfeljebb 256 karakterből állhat, és nem tartalmazhatja a következő karaktereket: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. A szóközök engedélyezettek a névben.
 
     -   **Kiadó** (kötelező). Amikor elkezdi beírni a kiadó nevét, a szolgáltatás lekérdezi a beírt betűket tartalmazó összes kiadónevet. Ha például a „soft” karaktereket írja be, a szolgáltatás lekérdezi a „soft” karakterláncot tartalmazó összes kiadónevet, például a „Microsoft” és a „Microsoft Research” kiadókat. A kiadóneveket a rendszer a Szoftverállomány-katalógusból kérdezi le. A terméknév beírása előtt ki kell választania a kiadót.
 
