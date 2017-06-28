@@ -1,5 +1,5 @@
 ---
-title: "A vállalat által birtokolt iOS-eszközök regisztrálása | Microsoft Docs"
+title: "A vállalat által birtokolt iOS-eszközök regisztrálása"
 description: "A vállalat által birtokolt iOS-eszközök regisztrálása az Apple Device Enrollment program (DEP) vagy az Apple Configurator eszköz segítségével"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ A felhasználói affinitással konfigurált eszközökön telepítheti és futta
 
 Felhasználói affinitás szükséges az alábbiak támogatásához:
   - Mobilalkalmazás-felügyeleti (MAM) alkalmazások
-  -    Feltételes hozzáférés az e-mailekhez és a vállalati adatokhoz
-  -    Vállalati portál alkalmazás
+  - Feltételes hozzáférés az e-mailekhez és a vállalati adatokhoz
+  - Vállalati portál alkalmazás
 
 **A vállalat által birtokolt iOS-eszközök regisztrálása felhasználói affinitás használatával**
 1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi felhasználónevüket vagy az egyszerű felhasználónevüket) kell megadniuk.

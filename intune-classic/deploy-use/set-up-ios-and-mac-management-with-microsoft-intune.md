@@ -1,5 +1,5 @@
 ---
-title: "iOS- és Mac-eszközök kezelésének beállítása | Microsoft Docs"
+title: Set up iOS and Mac management
 description: "Mobileszközök felügyeletének (MDM) engedélyezése a Microsoft Intune-nal iOS-eszközök (iPadek és iPhone-ok), illetve Mac OS X-eszközök esetén."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: af300534b3868a829c0b648d4df2587886ef749b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -53,7 +53,7 @@ Az Intune lehetőséget nyújt az iPadek, iPhone-ok és macOS-eszközök mobiles
     A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios), illetve [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
 
     Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
-    - [Információk végfelhasználóknak a Microsoft Intune használatáról](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate)
     - [Végfelhasználói útmutató iOS és Mac rendszerű eszközökhöz](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Ha az iOS-eszközöket vállalata vagy szervezete vásárolja meg a felhasználóknak, az eszközöket [vállalat által birtokolt iOS-eszközökként](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) is regisztrálhatja a felügyelethez.

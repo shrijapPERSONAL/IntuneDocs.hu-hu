@@ -1,5 +1,5 @@
 ---
-title: "Regisztrált eszközök kezelését szolgáló képességek | Microsoft Docs"
+title: "Regisztrált eszközök felügyeletét szolgáló képességek"
 description: "Ebből a témakörből megtudhatja, hogyan segíthet az Intune kezelni az Ön által regisztrált mobileszközöket."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364c7e1fe2bf17b0c804960c3ebaadb1cf4652a8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 
 |Képesség|Részletek|További információ|
 |--------------|-----------|--------------------|
-|Beállítási házirendek<br><br>Egyéni házirendek| Lehetővé teszi számos beállítás és funkció kezelését a szervezethez tartozó mobileszközökön. Például megkövetelheti jelszó használatát, korlátozhatja a sikertelen bejelentkezési kísérletek számát, megadhatja, hogy a képernyő hány perc után zárolódjon, beállíthatja a jelszó lejárati idejét, és letilthatja a korábban használt jelszavak ismételt használatát. Szabályozhatja továbbá a hardveres és szoftveres funkcióknak (például az eszköz kamerájának és a webböngészőnek) a használatát.<br><br>Akkor használjon egyéni szabályzatokat, ha a konfigurációs szabályzatok nem tartalmazzák a kívánt beállítást. iOS-eszközök esetén importálhatja az Apple Configurator eszközből exportált beállításokat. Más eszközök esetén használhatja az Open Mobile Alliance egységes erőforrás-azonosítót /intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)<br />|
+|Beállítási házirendek<br><br>Egyéni házirendek| Lehetővé teszi számos beállítás és funkció kezelését a szervezethez tartozó mobileszközökön. Például megkövetelheti jelszó használatát, korlátozhatja a sikertelen bejelentkezési kísérletek számát, megadhatja, hogy a képernyő hány perc után zárolódjon, beállíthatja a jelszó lejárati idejét, és letilthatja a korábban használt jelszavak ismételt használatát. Szabályozhatja továbbá a hardveres és szoftveres funkcióknak (például az eszköz kamerájának és a webböngészőnek) a használatát.<br><br>Akkor használjon egyéni szabályzatokat, ha a konfigurációs szabályzatok nem tartalmazzák a kívánt beállítást. iOS-eszközök esetén importálhatja az Apple Configurator eszközből exportált beállításokat. Más eszközök esetében az Open Mobile Alliance Uniform Resource Identifier (OMA-URI) beállítások segítségével konfigurálhatja a beállításokat és a szolgáltatásokat az eszközön.|[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)|
 |Távoli törlés, távoli zárolás és PIN-kód alaphelyzetbe állítása|Az eszköz elvesztése vagy eltulajdonítása esetén törli a bizalmas adatokat. Távolról zárolhatja például az eszközt, visszaállíthatja a gyári beállításokat vagy törölheti csak a vállalati adatokat.<br><br>Ha a felhasználók nem tudnak hozzáférni egy eszközhöz, alaphelyzetbe állíthatja a PIN-kódokat, zárolhatja az eltűnt vagy ellopott eszközöket, vagy törölhet róluk minden adatot.|[Eszközök védelme távoli zárolással és a jelszó alaphelyzetbe állításával](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Teljes képernyős mód|Lehetővé teszi a mobileszközök bizonyos funkciói, például a képernyőfelvétel-készítés és a kikapcsolás zárolását. Emellett az eszközt egyetlen meghatározott alkalmazás futtatására korlátozhatja.|[iOS-eszközök konfigurációs házirendjének beállításai a Microsoft Intune-ban](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
@@ -47,8 +47,8 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 |Képesség|Részletek|További információ|
 |--------------|-----------|--------------------|
 |Alkalmazások telepítése és kezelése|Számos eszközt kínál, amelyek segítségével kezelheti a mobilalkalmazásokat teljes életciklusukon keresztül, beleértve a telepítési fájlokból és alkalmazás-áruházakból történő telepítést, az alkalmazás állapotának részletes megfigyelését, valamint az alkalmazás eltávolítását.|[Alkalmazások telepítése a Microsoft Intune-ban](/intune-classic/deploy-use/deploy-apps)|
-|Megfelelő és nem megfelelő alkalmazások|Lehetővé teszi a megfelelő alkalmazások listáinak megadását /intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
-|Mobilalkalmazás-kezelés|A mobilalkalmazás-felügyelet révén korlátozásokat konfigurálhat az alkalmazásokra vonatkozóan az Intune-nal kezelt eszközökre és a nem az Intune-nal kezelt eszközökre egyaránt. Ennek segítségével fokozhatja a vállalati adatok biztonságát bizonyos műveletek, például a másolás és beillesztés, az adatok külső biztonsági mentése, valamint az alkalmazások közötti adatátvitel korlátozásával.|[Mobilalkalmazás-kezelési házirendek konfigurálása és telepítése a Microsoft Intune-konzolon](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
+|Megfelelő és nem megfelelő alkalmazások|Lehetővé teszi a szabályzatnak megfelelő (így a felhasználók által telepíthető) és nem megfelelő (így a felhasználók által nem telepíthető) alkalmazások listájának megadását.|[iOS-szabályzatbeállítások a Microsoft Intune-ban](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
+|Mobilalkalmazás-kezelés|A mobilalkalmazás-felügyelet révén korlátozásokat konfigurálhat az alkalmazásokra vonatkozóan az Intune-nal kezelt eszközökre és a nem az Intune-nal kezelt eszközökre egyaránt. Ennek segítségével fokozhatja a vállalati adatok biztonságát bizonyos műveletek, például a másolás és beillesztés, az adatok külső biztonsági mentése, valamint az alkalmazások közötti adatátvitel korlátozásával.|[Mobilalkalmazás-kezelési házirendek konfigurálása és telepítése a Microsoft Intune-konzolon](/intune/app-wrapper-prepare-android)|
 |iOS-mobilalkalmazás konfigurálása|A mobilalkalmazás-konfigurációs szabályzatokkal automatikusan megadhatja azokat a beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy iOS-alkalmazást futtat. Előfordulhat például, hogy az alkalmazás portszám vagy bejelentkezési beállítások megadását kéri a felhasználótól. Ezzel leegyszerűsíthető az alkalmazások konfigurálása, és csökkenthető a segélyszolgálatra beérkező hívások száma.|[iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS-mobilalkalmazás létesítési profiljai|Segít létesítési profilokat telepíteni a lejárathoz közelítő iOS-alkalmazásokhoz. |[Az iOS-mobileszközös létesítésiprofil-szabályzatok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Felügyelt böngésző|Konfigurálja a felügyeltböngésző-szabályzatokat, amelyekkel szabályozható, hogy az eszköz felhasználói mely webhelyeket látogathatják meg. Emellett mobilalkalmazás-kezelési házirendeket is alkalmazhat a felügyelt böngészőre.|[Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)|
@@ -59,7 +59,7 @@ A felügyeletet, a leltárt, az alkalmazások telepítését, a létesítést é
 
 |Képesség|Részletek|További információ|
 |--------------|-----------|--------------------|
-|Tanúsítványprofilok|Létrehozza és telepíti a megbízhatótanúsítvány-profilokat és az egyszerű tanúsítvány-beiktatási protokollt /intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
+|Tanúsítványprofilok|Létrehozhat és telepíthet megbízhatótanúsítvány-profilokat és egyszerű tanúsítványigénylési protokollon (SCEP) alapuló tanúsítványokat, amelyek segítségével biztonságossá teheti és hitelesítheti a Wi-Fi-, VPN- és e-mail-profilokat.|[Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Wi-Fi profilok|Vezeték nélküli hálózati beállításokat léptethet érvénybe a felhasználók számára. E beállítások érvénybe léptetésével csökkentheti a vállalati hálózat eléréséhez szükséges felhasználói beavatkozást.|[Wi-Fi-kapcsolatok a Microsoft Intune-ban](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |E-mail profilok|E-mail-beállításokat hozhat létre és léptethet érvénybe az eszközökön. A felhasználók így külön beállítások elvégzése nélkül férhetnek hozzá vállalati levelezésükhöz saját eszközeiken.|[Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN-profilok|VPN-beállításokat léptethet érvénybe a szervezethez tartozó felhasználók és eszközök számára. A beállítások központi telepítésével csökkentheti a vállalati hálózatban lévő erőforrások eléréséhez szükséges felhasználói beavatkozást.|[VPN-kapcsolatok a Microsoft Intune-ban](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune)|

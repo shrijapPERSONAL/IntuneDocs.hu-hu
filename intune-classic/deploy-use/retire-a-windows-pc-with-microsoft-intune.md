@@ -1,5 +1,5 @@
 ---
-title: "Windows rendszerű számítógépek kivonása | Microsoft Docs"
+title: "Windows rendszerű számítógépek kivonása"
 description: "Az Intune által felügyelt Windows rendszerű számítógépek kivonása."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Windows rendszerű számítógépek kivonása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A következő lépésekkel kivonhatja az Intune-szoftverügyféllel számítógépként felügyelt számítógépeket. Ha kivonja a számítógépet, a rendszer eltávolítja azt az Intune-alapú felügyeletből. Az Intune-ból nem tudja visszaállítani a számítógép eredeti gyári beállításait.
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden eszköz** elemet (vagy egy másik csoportot, amely tartalmazza a kivonni kívánt a számítógépet).

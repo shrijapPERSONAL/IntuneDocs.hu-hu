@@ -1,5 +1,5 @@
 ---
-title: "Céges adatszivárgások megelőzése az Office 365 mobilalkalmazásaiban  | Microsoft Docs"
+title: "Céges adatszivárgások megelőzése az Office 365 alkalmazásokban"
 description: "Az Intune mobilalkalmazás-kezelési (MAM) szabályzataival megvédheti az Office 365 mobilalkalmazásaiban és egyéb üzletági alkalmazásokban tárolt szervezeti adatait a céges adatszivárgásoktól."
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Szeretné, hogy a végfelhasználók elérhessék az Office 365-ben, illetve az 
 Ha igen, a Microsoft Intune az Ön számára megfelelő alkalmazás. Az Intune-nal MAM-házirendeket állíthat be az Office 365 iOS- és Android-mobilalkalmazásain, így többek között korlátozhatja a másolás és kivágás funkciókat, letilthatja a mentés másként funkciót, PIN-kódos védelmet állíthat be, és távolról törölheti a MAM által védett adatokat.  Így a céges adatok védelme érdekében a felhasználóknak nem kell egy MDM-megoldásban regisztrálni eszközeiket, mégis megmarad a gördülékeny végfelhasználói élményük az Office mobilalkalmazásaival.
 
 ## <a name="how-do-i-do-it"></a>Mit kell ehhez tennem?
-1.    Ismerje meg, hogy alapvetően [hogyan működik az Intune mobilalkalmazás-kezelés /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
-2.    Tájékozódjon a [mobilalkalmazás-kezelési (MAM) házirendek az Azure-portálon történő létrehozásának feltételeiről](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
-3.    [Hozza létre és telepítse a MAM-házirendeket](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) az Intune-nal.
+1.  Ismerkedjen meg az [Intune mobilalkalmazás-kezelés (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) működésével.
+2.  Tájékozódjon a [mobilalkalmazás-kezelési (MAM) házirendek az Azure-portálon történő létrehozásának feltételeiről](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+3.  [Hozza létre és telepítse a MAM-házirendeket](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) az Intune-nal.
 
 ### <a name="additional-information"></a>További információ:
 - [Végfelhasználói élmény](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) a MAM -kompatibilis alkalmazások esetében.
-- [Üzletági alkalmazások előkészítése az Intune mobilalkalmazás-kezeléséhez](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Üzletági alkalmazások előkészítése az Intune mobilalkalmazás-kezeléséhez](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">A Microsoft Intune MAM-kompatibilis alkalmazásokat nyújtó alkalmazáspartnereinek listája&rarr;</a>
 
 ## <a name="what-should-i-do-next"></a>További lépések

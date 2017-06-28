@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1727e8b8fcb248a66842f34e7084c5d461f3eb10
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -67,5 +67,5 @@ A regisztrált eszközökön a következőkre van lehetősége a rendszergazdán
 
 -   Az automatikus fájlszinkronizálás engedélyezése vagy letiltása, amíg az eszköz barangol. Az automatikus fájlszinkronizálás engedélyezése barangolási költségekkel járhat.
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
 

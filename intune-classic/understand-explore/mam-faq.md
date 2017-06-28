@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 ## <a name="mam-basics"></a>Az MAM alapjai
 
 
-**Mi az MAM?** Az [Intune mobilalkalmazás-kezelés](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) olyan Intune-beli felügyeleti összetevők csoportja, amelyek lehetővé teszik mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
+**Mi az MAM?** Az [Intune mobilalkalmazás-kezelés](/intune/app-lifecycle) olyan Intune-beli felügyeleti összetevők csoportja, amelyek lehetővé teszik mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
 
 **Milyen előnyöket kínál az MAM-alkalmazásvédelem?** Az MAM védi munkahelye adatait az alkalmazáson belül. Az MAM-WE segítségével a bizalmas adatokat tartalmazó munkahelyi vagy iskolai alkalmazások szinte bármilyen eszközön felügyelhetők, beleértve a személyes tulajdonú eszközöket is saját eszközök használata (BYOD) esetén. Több irodai alkalmazás felügyelhető az Intune MAM-mel, például a Microsoft Office-alkalmazások. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
@@ -50,12 +50,12 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatokkal felügyelhető alkalmazások
 
-**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](../develop/intune-app-sdk.md) által előkészített vagy az [Intune alkalmazásburkoló eszköz](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
+**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](/intune/app-sdk) által előkészített vagy az [Intune alkalmazásburkoló eszköz](/intune/apps-prepare-mobile-application-management) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
 **Mik az alkalmazásvédelmi szabályzatok Intune használatára előkészített alkalmazáson való használatának alapkövetelményei?**
-  1. A végfelhasználónak rendelkeznie kell egy Azure Active Directory- (AAD-) fiókkal. Az Intune-felhasználók Azure Active Directoryban történő létrehozásáról lásd: [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md).
+  1. A végfelhasználónak rendelkeznie kell egy Azure Active Directory- (AAD-) fiókkal. Az Intune-felhasználók Azure Active Directoryban történő létrehozásáról lásd: [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](/intune/users-permissions-add).
 
-  2. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt Microsoft Intune-licenccel. További információ a végfelhasználókhoz rendelt Intune-licencekről: [Intune-licencek kezelése](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+  2. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt Microsoft Intune-licenccel. További információ a végfelhasználókhoz rendelt Intune-licencekről: [Intune-licencek kezelése](/intune/licenses-assign).
 
   3. A végfelhasználónak egy alkalmazásvédelmi szabályzattal társított biztonsági csoporthoz kell tartoznia. Ugyanezen alkalmazásvédelmi szabályzatnak a használt alkalmazással is társítva kell lennie. Alkalmazásvédelmi csoportokat az [Azure-portálon](http://portal.azure.com) található Intune-konzolban lehet létrehozni és telepíteni. Biztonsági csoportot jelenleg az [Office-portálon](http://portal.office.com) lehet létrehozni.
 

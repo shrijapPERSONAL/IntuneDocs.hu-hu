@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazások és adatok védelme | Microsoft Docs"
+title: "Alkalmazások és adatok védelme"
 description: "Ez a témakör ismerteti azokat a különböző Intune-funkciókat és képességeket, amelyek a rendelkezésére állnak a vállalati alkalmazások és adatok védelme érdekében."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Ahhoz, hogy egy alkalmazáshoz MAM-szabályzat legyen társítható, az alkalmaz
 
 Egyes alkalmazások, mint például a Microsoft Office beépítve tartalmazzák az Intune alkalmazásfejlesztő készletet (SDK-t). A támogatott alkalmazások teljes listáját a [Microsoft Intune mobilalkalmazás-galériában](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), a Microsoft Intune alkalmazáspartnerek oldalán láthatja. Ha szeretné megtekinteni a támogatott forgatókönyveket és platformokat, illetve, hogy az alkalmazás támogatja-e a többszörös identitást, válassza ki az adott alkalmazást.
 
-[Egyéni kialakítású üzleti alkalmazásait](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) is alkalmassá teheti a MAM-szabályzatokkal való használatra.
+[Egyéni kialakítású üzleti alkalmazásait](/intune/apps-prepare-mobile-application-management) is alkalmassá teheti a MAM-szabályzatokkal való használatra.
 
 Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a felhasználó már nem dolgozik a vállalatnál, akkor az adatmozgás korlátozása mellett alkalmazható [a vállalati adatok szelektív törlése](wipe-managed-company-app-data-with-microsoft-intune.md), ami csak a személyes adatokat hagyja meg.
 

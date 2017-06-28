@@ -1,5 +1,5 @@
 ---
-title: "Androidos eszközök kezelésének beállítása | Microsoft Docs"
+title: "Androidos eszközök kezelésének beállítása"
 description: "Lehetővé teheti az androidos vagy KNOX Standard-eszközöknek a Microsoft Intune-nal történő mobileszköz-felügyeletét (MDM)."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Alapértelmezés szerint az Android-eszközök regisztrációja engedélyezett a
     A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
 
     Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
-  - [Információk végfelhasználóknak a Microsoft Intune használatáról](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate)
   - [Végfelhasználói útmutató Android-eszközökhöz](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Kínában nem érhető el a Google Play áruház, ezért az Android-eszközöknek kínai alkalmazásáruházakból kell beszerezniük a Vállalati portált. Az androidos Munkahelyi portál alkalmazás a következő áruházakból is letölthető lesz:

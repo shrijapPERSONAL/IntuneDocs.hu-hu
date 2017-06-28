@@ -1,5 +1,5 @@
 ---
-title: "A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával | Microsoft Docs"
+title: "A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával"
 description: "Ismerteti a Windows rendszerű számítógép-kezelési szabályzatokat és a Microsoft Intune Center beállításait."
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>A Windows rendszerű számítógép kezelésének leegyszerűsítése szabályzatok használatával
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Ha a Windows rendszerű számítógépeket a rájuk telepített Intune szoftverügyféllel szeretné kezelni, akkor az Intune felügyeleti konzolján csak a **Számítógép-kezelés** területen lévő szabályzatokat használhatja. A felügyeleti konzolon felsorolt összes többi szabályzat csak mobileszközökön léptethető érvénybe. A **Számítógép-kezelés** szabályzatainak használatával konfigurálhatja a Microsoft Intune Center beállításait, irányíthatja a számítógépek frissítését, és konfigurálhatja a számítógépek Windows tűzfalát.
 

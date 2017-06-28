@@ -18,10 +18,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
+ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
@@ -33,8 +33,8 @@ ms.lasthandoff: 05/23/2017
 
 1.  Lépjen a **Start** menüre.
 
-  - Ha **Windows 10 rendszerű asztali eszközt**  használ, lépjen a **Start** menüre.
-  - Ha **Windows 10 rendszerű mobileszközt** használ, nyissa meg a **kezdőképernyőt**, és pöccintsen a **Minden alkalmazás** listára.
+  - Ha **Windows 10 rendszerű asztali** eszközt használ, lépjen a **Start** menüre.
+  - Ha **Windows 10 Mobile** rendszerű eszközt használ, nyissa meg a **kezdőképernyőt**, és pöccintsen a **Minden alkalmazás** listára.
 
 2. A keresősávban keressen a „beállítások” kifejezésre, majd nyissa meg a Windows **Beállítások** alkalmazását.
 

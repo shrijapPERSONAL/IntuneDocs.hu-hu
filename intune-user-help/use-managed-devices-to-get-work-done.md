@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,7 +38,7 @@ Munkahelye rendszergazdái láthatják a munkával kapcsolatos adatokat, de a sz
 A Vállalati portált kétféleképpen szerezheti be:
 
 - Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a rendszergazda is telepítheti Önnek azt.
-- Megnyithatja a rendszergazdája által beállított [Céges portál webhelyet](http://portal.manage.microsoft.com).
+- Megnyithatja a rendszergazdája által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com).
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
 A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
@@ -100,5 +100,5 @@ A Microsoft azt javasolja, hogy először próbálja meg saját maga megoldani a
 - [Az iOS-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-ios.md)
 - [A Windows-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 
-Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a rendszergazdához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](http://portal.manage.microsoft.com).
+Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a rendszergazdához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com).
 

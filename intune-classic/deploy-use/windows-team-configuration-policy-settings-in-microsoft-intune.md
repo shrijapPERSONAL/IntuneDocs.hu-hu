@@ -1,6 +1,6 @@
 ---
-title: "A Windows Team konfigurációs házirendjének beállításai | Microsoft Docs"
-description: "Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beállításainak konfigurálására használhatja a **Windows 10 Team eszközökhöz készült általános konfigurációs házirendjét**."
+title: "Konfigurációs szabályzat Windows Team-alapú eszközökhöz – Beállítások"
+description: "Regisztrált Windows 10 Team eszközök, például a Microsoft Surface Hub beállításainak konfigurálására használhatja a Windows 10 Team eszközökhöz készült általános konfigurációs házirendjét."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 24a64db3a3cf97b679ab0fa739eb6f452499ca63
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6e0f0ea969ed78f2daf482438b056c8b4eb1a316
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
