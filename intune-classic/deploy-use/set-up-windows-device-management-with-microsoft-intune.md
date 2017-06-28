@@ -1,5 +1,5 @@
 ---
-title: "Windowsos eszközök kezelésének beállítása a Microsoft Intune-ban | Microsoft Docs"
+title: "Windowsos eszközök Microsoft Intune-beli kezelésének beállítása"
 description: "A mobileszközök Microsoft Intune-nal való felügyeletének (MDM) engedélyezése Windows-eszközök esetén."
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: be2587f8ccb43632d861012416bbbca720698bb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -69,7 +69,7 @@ Az [Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **F
 Tájékoztassa felhasználóit arról, hogy miként regisztrálhatják windowsos eszközeiket, és milyen szolgáltatásokat vehetnek majd igénybe a mobileszköz-felügyelet alá bevont eszközeiken.
 A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Windows-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). A felhasználók a [Milyen adatokhoz jut hozzá a rendszergazda, ha regisztrálom az eszközömet?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) című témakörből is tájékozódhatnak.
 
-A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
+A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate).
 
 ### <a name="see-also"></a>További információ
 [A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md)

@@ -1,95 +1,110 @@
-# Bevezetés
-## [Mi az Azure-portál előzetes verziója?](what-is-intune.md)
-## [Mi az az Intune for Education?](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+# [Bevezetés](introduction-intune.md)
+## [Mi az az Azure Portal?](what-is-intune.md)
+## [Mi az az Intune for Education?](introduction-intune-education.md)
 ## [Intune-funkciók az Azure-ban](ui-changes.md)
-## Első lépések
-<!---(get-started.md) --->
-### [Regisztráljon az ingyenes próbaverzióhoz](free-trial-sign-up.md)
+## [Regisztráljon az ingyenes próbaverzióhoz](free-trial-sign-up.md)
 ## [Újdonságok](whats-new.md)
+### [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)
+### [Újdonságok – Archívum (Azure Portal)](whats-new-archive.md)
+### [Újdonságok – Archívum (klasszikus portál)](whats-new-archive-classic.md)
+
+<!--## High-level architecture-->
+
+## [Eszközök és alkalmazások életciklusa](introduction-device-app-lifecycles.md)
+### [Eszközök életciklusa](device-lifecycle.md)
+### [Alkalmazások életciklusa](app-lifecycle.md)
+## [Gyakori helyzetek](common-scenarios.md)
 ## [Ismert problémák](known-issues.md)
 ## [Támogatás kérése](get-support.md)
-<!---
+## [Az Intune szolgáltatás leírása](microsoft-intune-service-description.md)
 
-## [Related resources](related-resources.md)
-
-## [Get started](plan-and-design/get-started.md) --->
-
-# Tervezés és kialakítás
-
-## [Üzembe helyezés megtervezése, tervezés és megvalósítás](/intune-classic/plan-design/introduction?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [1. szakasz: Telepítési célok, célkitűzések és kihívások meghatározása](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [2. szakasz: Tipikus használatieset-forgatókönyvek](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [4. szakasz: Bevezetési terv kidolgozása](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [5. szakasz: Kommunikációs terv kidolgozása](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [6. szakasz: Támogatási terv kidolgozása](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [7. szakasz: Intune-terv létrehozása](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [8. szakasz: Intune-implementálás](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [9. szakasz: Tesztelés és ellenőrzés](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [További háttéranyagok](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-
-## [Áttelepítés](/intune-classic/plan-design/intune-mdm-migration-guide?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [1. fázis: az Intune előkészítése MDM-hez](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Alapszintű beállítás](/intune-classic/plan-design/migration-phase1-basic-setup?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Eszköz- és alkalmazásszabályzatok konfigurálása](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Alkalmazásvédelmi szabályzatok konfigurálása](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Speciális áttelepítési megfontolások](/intune-classic/plan-design/migration-phase1-special-migration-considerations?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [2. fázis: áttelepítési kampány](/intune-classic/plan-design/migration-phase2-migration-campaign?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Kommunikációs terv](/intune-classic/plan-design/migration-phase2-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [A bevezetés ösztönzése](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [A szokásos áttelepítési ciklus](/intune-classic/plan-design/migration-phase2-typical-migration-cycle?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+<!--# Get started
+## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
+## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
+## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
 
 
-# Eszközök regisztrálása
-## [Mi az eszközregisztrálás?](device-enrollment.md)
-## Első lépések
+# Telepítési terv kidolgozása
+## [Tervezési útmutató](planning-guide.md)
+### [Célok és célkitűzések meghatározása](planning-guide-deployment-goals.md)
+### [Forgatókönyvek azonosítása](planning-guide-scenarios.md)
+### [Követelmények meghatározása](planning-guide-requirements.md)
+### [Bevezetési terv kidolgozása](planning-guide-rollout-plan.md)
+### [Kommunikációs terv kidolgozása](planning-guide-communication-plan.md)
+### [Támogatási terv kidolgozása](planning-guide-support-plan.md)
+### [Kialakítás](planning-guide-design.md)
+### [Megvalósítás](planning-guide-onboarding.md)
+### [Tesztelés és ellenőrzés](planning-guide-test-validation.md)
+### [További háttéranyagok](planning-guide-resources.md)
+<!-- ## Scenario implementation guides
+### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
+### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
+### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
+### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json) -->
+## [Migrálási útmutató](migration-guide.md)
+### [Az Intune előkészítése](migration-guide-prepare.md)
+#### [Alapszintű beállítás](migration-guide-setup.md)
+#### [Eszköz- és alkalmazásszabályzatok konfigurálása](migration-guide-configure-policies.md)
+#### [Alkalmazásvédelmi szabályzatok konfigurálása](migration-guide-app-protection-policies.md)
+#### [Az áttelepítés szempontjai](migration-guide-considerations.md)
+### [Áttelepítési kampány](migration-guide-campaign.md)
+#### [A kommunikáció tervezése](migration-guide-communication-plan.md)
+#### [A bevezetés ösztönzése](migration-guide-drive-adoption.md)
+#### [A szokásos áttelepítési ciklus](migration-guide-cycle.md)
+
+
+# Cél
+
+## [Az Intune beállítása](setup-steps.md)
+### [Előfeltételek](supported-devices-browsers.md)
+#### [Hálózatisávszélesség-felhasználás](network-bandwidth-use.md)
+### [Bejelentkezés az Intune-ba](account-sign-up.md)
+### [Tartományok beállítása](custom-domain-name-configure.md)
+### [Felhasználók hozzáadása](users-permissions-add.md)
+### [Licencek kiosztása](licenses-assign.md)       
+### [A Munkahelyi portál testreszabása](company-portal-customize.md)     
 ### [Az MDM-szolgáltató beállítása](mdm-authority-set.md)
-## Tervezés és kialakítás
-### [Apple MDM push-tanúsítvány beszerzése](apple-mdm-push-certificate-get.md)
-### [Az iOS-eszközök regisztrálási módjának kiválasztása](enrollment-method-choose-ios.md)
-## Cél
-### [Licencek kiosztása a felhasználók számára](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Androidos eszközök regisztrálása](android-enroll.md)
-### iOS rendszerű eszközök regisztrálása
-#### [Az Apple Configurator beállítási asszisztense](apple-configurator-setup-assistant-enroll-ios.md)
-#### [Apple Configurator – közvetlen regisztrálás](apple-configurator-direct-enroll-ios.md)
-#### [Apple Configurator-sorozatszámok hozzáadása](apple-configurator-serial-numbers-add.md)
-#### [DEP](device-enrollment-program-enroll-ios.md)
-### [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md)
-### [macOS-eszközök regisztrálása](macos-enroll.md)
-### [Windows-eszközök regisztrálása](windows-enroll.md)
-### [Windows-eszközök tömeges regisztrálása](windows-bulk-enroll.md)
-### Az eszközregisztráció felügyelete
-#### [Használati feltételek létrehozása](terms-and-conditions-create.md)
-#### [Regisztrációs korlátozások beállítása](enrollment-restrictions-set.md)
-#### [Eszközök hozzárendelése csoportokhoz](device-group-mapping.md)
+
+## [Eszközök regisztrálása](device-enrollment.md)
+### Előfeltételek
+#### [Feltételek és kikötések beállítása](terms-and-conditions-create.md)
+#### [Korlátozások beállítása](enrollment-restrictions-set.md)
+#### [Apple MDM push-tanúsítvány beszerzése](apple-mdm-push-certificate-get.md)
 #### [Vállalati azonosítók hozzáadása](corporate-identifiers-add.md)
-#### [A Vállalati Windows Hello használata](windows-hello.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+#### [Eszközregisztráció-kezelő beállítása](device-enrollment-manager-enroll.md)
+#### [Eszközök hozzárendelése csoportokhoz](device-group-mapping.md)
+### [Windows-regisztráció beállítása](windows-enroll.md)
+#### [Automatikus regisztráció](windows-enroll.md)
+#### [Csoportos regisztráció](windows-bulk-enroll.md)
+### [Az androidos eszközök regisztrálásának beállítása](android-enroll.md)
+### iOS-eszközök regisztrálásának beállítása
+#### [Készülékregisztrációs programmal](device-enrollment-program-enroll-ios.md)
+#### [Az Apple School Managerrel](apple-school-manager-set-up-ios.md)
+#### [Apple Configuratorrel](apple-configurator-setup-assistant-enroll-ios.md)
+### [macOS-regisztráció beállítása](macos-enroll.md)
+### [Felhasználók oktatása](end-user-educate.md)
 
-# Eszközök és csoportok
-## [Mi az eszközkezelés?](device-management.md)
-<!--- ## [Get started](get-started.md) --->
-<!--- ## [Plan and design](plan-and-design.md) --->
-## Cél
-### [Teljes vagy szelektív törlés alkalmazása](devices-wipe.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+## [Eszközök kezelése](device-management.md)
+### [Eszköz törlése](devices-wipe.md)
+### [Az aktiválási zár megkerülése](device-activation-lock-bypass.md)
+### [Az eszköz gyári beállításainak visszaállítása](device-factory-reset.md)
+### [A Windows újrakezdés műveletének kezelése](device-fresh-start.md)
+### [Elveszett iOS-eszköz megkeresése](device-locate.md)
+### [Az iOS-es elveszett mód engedélyezése](device-lost-mode.md)
+### [Eszköz zárolása](device-remote-lock.md)
+### [Céges adatok eltávolítása](device-company-data-remove.md)
+### [Új PIN-kód](device-passcode-reset.md)
+### [Eszköz újraindítása](device-restart.md)
+### [Távirányítás Androidhoz](device-profile-android-teamviewer.md)
+### [Eszközkészlet vizsgálata](device-inventory.md)
 
-# Felhasználók kezelése
-## [Mi a felhasználókezelés?](user-management.md)
-<!--- Was What is users & group management--->
-## [Első lépések](groups-get-started.md)
-## [Segítség a felhasználóknak](help-desk-operators.md)
-<!--- ## [Plan and design](plan-and-design.md) --->
+## [Felhasználók kezelése](user-management.md)
+### [Csoportok – első lépések](groups-get-started.md)
+<!--### Add and delete users -->
 
-<!--- ## [Troubleshoot](troubleshooting.md) --->
-
-# Alkalmazások kezelése
-## [Mi az alkalmazáskezelés?](app-management.md)
-## [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
-<!--- ## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Alkalmazások kezelése
+## [Alkalmazások kezelése](app-management.md)
 ### [Alkalmazások hozzáadása](apps-add.md)
 #### [Androidos áruházbeli alkalmazások](store-apps-android.md)
 #### [Androidos üzletági alkalmazások](lob-apps-android.md)
@@ -103,43 +118,36 @@
 #### [Android for Work-alkalmazások](apps-add-android-for-work.md)
 ### [Alkalmazások hozzárendelése](apps-deploy.md)
 ### [Alkalmazások figyelése](apps-monitor.md)
-### [Alkalmazáskonfigurációs profilok használata](app-configuration-policies.md)
+### [iOS-es alkalmazáskonfigurációs profilok](app-configuration-policies-use-ios.md)
+### [Androidos alkalmazáskonfigurációs profilok](app-configuration-policies-use-android.md)
 ### [iOS-alkalmazáskiépítési profilok használata](app-provisioning-profile-ios.md)
 ### [Alkalmazások szelektív törlése](apps-selective-wipe.md)
-<!---Is this specific to app protection policy or more general app management?--->
-### [Mennyiségi programban vásárolt alkalmazások használata](vpp-apps.md)
+### [Mennyiségi programban vásárolt alkalmazások és könyvek használata](vpp-apps.md)
 #### [iOS VPP-alkalmazások](vpp-apps-ios.md)
 #### [Vállalati Windows Áruházbeli alkalmazások](windows-store-for-business.md)
+#### [iOS-es e-könyvek](vpp-ebooks-ios.md)
 ### [A Céges portál alkalmazás konfigurálása](company-portal-app.md)
-## Az alkalmazásvédelmi szabályzatok használata
-### [Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése](app-protection-policies.md)
+### [A Managed Browser konfigurálása](app-configuration-managed-browser.md)
+## [Alkalmazásvédelmi szabályzatok használata](app-protection-policies.md)
 ### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](app-protection-policies-configure-windows-10.md)
 ### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](windows-information-protection-policy-create.md)
 ### [Android-beállítások](app-protection-policy-settings-android.md)
 ### [iOS-beállítások](app-protection-policy-settings-ios.md)
 ### [Az alkalmazásvédelmi szabályzatok ellenőrzése](app-protection-policies-validate.md)
 ### [Alkalmazásvédelmi felhasználó állapotának figyelése](app-protection-policies-monitor.md)
+### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](app-protection-policies-configure-windows-10.md)
+### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](windows-information-protection-policy-create.md)
 ### [iOS-alkalmazások közti adatátvitel kezelése](data-transfer-between-apps-manage-ios.md)
-### [Android-alkalmazások alkalmazásvédelmi szabályzatokkal](app-protection-enabled-apps-android.md)
-### [iOS-alkalmazások alkalmazásvédelmi szabályzatokkal](app-protection-enabled-apps-ios.md)
 
-
-<!--- ##  [Troubleshoot apps](troubleshooting.md) --->
-
-# Eszközök konfigurálása
-## [Mik azok az eszközprofilok?](device-profiles.md)
-<!---## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Cél
+## [Eszközök konfigurálása](device-profiles.md)
 ### [Eszközprofilok konfigurálása](device-profile-create.md)
-
 ### [Eszközfunkciók konfigurálása](device-features-configure.md)
 #### [AirPrint iOS és MacOS rendszerekre](air-print-settings-ios-macos.md)
 #### [AirPlay iOS rendszerre](airplay-settings-ios.md)
 #### [Kezdőképernyő elrendezése iOS-hez](home-screen-settings-ios.md)
 #### [Alkalmazásértesítések iOS-hez](app-notification-settings-ios.md)
 #### [Megosztott eszközök iOS-hez](shared-device-settings-ios.md)
-
+#### [Webszűrő-beállítások iOS-hez](web-content-filter-settings-ios.md)
 ### [Eszközkorlátozások beállítása](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)
 #### [iOS](device-restrictions-ios.md)
@@ -149,13 +157,11 @@
 #### [Windows 10](device-restrictions-windows-10.md)
 #### [Windows 10 Team](device-restrictions-windows-10-teams.md)
 #### [Android for Work](device-restrictions-android-for-work.md)
-
 ### [-mail-beállítások megadása](email-settings-configure.md)
 #### [Android](email-settings-android.md)
 #### [iOS](email-settings-ios.md)
 #### [Windows Phone 8.1](email-settings-windows-phone-8-1.md)
 #### [Windows 10](email-settings-windows-10.md)
-
 ### [VPN-beállítások konfigurálása](vpn-settings-configure.md)
 #### [Android](vpn-settings-android.md)
 #### [iOS](vpn-settings-ios.md)
@@ -163,13 +169,11 @@
 #### [Windows 8.1](vpn-settings-windows-8-1.md)
 #### [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
 #### [Windows 10](vpn-settings-windows-10.md)
-
 ### [Wi-Fi-beállítások konfigurálása](wi-fi-settings-configure.md)
 #### [Android](wi-fi-settings-android.md)
 #### [iOS](wi-fi-settings-ios.md)
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 és Windows 10](wi-fi-settings-import-windows-8-1.md)
-
 ### [A Windows 10-kiadás frissítési beállításainak konfigurálása](edition-upgrade-configure-windows-10.md)
 ### [A Windows 10 oktatási funkcióinak konfigurálása](education-settings-configure.md)
 ### [Az iOS oktatási funkcióinak konfigurálása](education-settings-configure-ios.md)
@@ -177,53 +181,102 @@
 ### [Tanúsítványok konfigurálása](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
-
 ### [A Windows Információvédelem beállításainak konfigurálása](windows-information-protection-configure.md)
-<!--- ### [Configure iOS education settings](education-settings-for-ios.md) --->
+### [Profilok hozzárendelése](device-profile-assign.md)
+### [Profilok monitorozása](device-profile-monitor.md)
+### [Profilok hibaelhárítása](device-profile-troubleshoot.md)
 
-### [Egyéni beállítások konfigurálása](custom-settings-configure.md)
-#### [Android](custom-settings-android.md)
-##### [Wi-Fi-profil előmegosztott kulccsal](wi-fi-profile-shared-key.md)
-##### [Alkalmazásonkénti VPN-profil](android-pulse-secure-per-app-vpn.md)
-##### [Alkalmazások engedélyezése/letiltása a Samsung KNOX Standard használatával](samsung-knox-apps-allow-block.md)
-#### [iOS](custom-settings-ios.md)
-#### [macOS](custom settings-macos.md)
-#### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
-#### [Windows 10](custom-settings-windows-10.md)
-#### [Android for Work](custom-settings-android-for-work.md)
-
-### [Eszközprofilok hozzárendelése](device-profile-assign.md)
-### [Eszközprofilok figyelése](device-profile-monitor.md)
-### [Távközlésiköltség-kezelő szolgáltatások beállítása](telecom-expenses-monitor.md)
-## [Hibaelhárítás](device-profile-troubleshoot.md)
-
-# Eszközmegfelelőség beállítása
-## [Mi az eszközmegfelelőség?](device-compliance.md)
-## [Első lépések](device-compliance-get-started.md)
-## Cél
-### [Androidos megfelelőségi szabályzat létrehozása](compliance-policy-create-android.md)
-### [Android for Work-alapú megfelelőségi szabályzat létrehozása](compliance-policy-create-android-for-work.md)
-### [iOS rendszerre vonatkozó megfelelőségi szabályzat létrehozása](compliance-policy-create-ios.md)
-### [Windowsos megfelelőségi szabályzat létrehozása](compliance-policy-create-windows.md)
-<!---### [Create Actions for noncompliance](actions-for-noncompliance.md)--->
+## [Eszközmegfelelőség beállítása](device-compliance.md)
+### [Előfeltételek](device-compliance-get-started.md)
+### [Android-szabályzat létrehozása](compliance-policy-create-android.md)
+### [Android for Work-szabályzat létrehozása](compliance-policy-create-android-for-work.md)
+### [iOS-szabályzat létrehozása](compliance-policy-create-ios.md)
+### [Windows-szabályzat létrehozása](compliance-policy-create-windows.md)
+<!--### Create Actions for noncompliance-->
 ### [Az eszközmegfelelőség figyelése](compliance-policy-monitor.md)
-<!--- ### [Monitor device compliance](device-compliance-monitor.md)--->
 
-
-
-# Feltételes hozzáférés
-## [Mi a feltételes hozzáférés?](conditional-access.md)
-## Cél
+## [Feltételes hozzáférés beállítása](conditional-access.md)
+### [A feltételes hozzáférés szokásos használati módjai](conditional-access-intune-common-ways-use.md)
+### [Alkalmazásalapú feltételes hozzáférés](app-based-conditional-access-intune.md)
 ### [A helyszíni Exchange-összekötő telepítése](exchange-connector-install.md)
 ### [Hozzon létre, és rendelje hozzá a feltételes hozzáférési házirend](conditional-access-exchange-create.md)
+### [Alkalmazásalapú feltételes hozzáférés beállítása az Exchange Online-hoz](app-based-conditional-access-intune-exchange-online-create.md)
+### [Alkalmazásalapú feltételes hozzáférés beállítása a SharePoint Online-hoz](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [Az ADAL és az Intune](app-modern-authentication-block.md)
 ### [Feltételes hozzáférési megfelelőségének figyelése](conditional-access-exchange-monitor.md)
 
-# Hozzáférés-vezérlés
-## [Mi a szerepköralapú hozzáférés-vezérlés?](role-based-access-control.md)
+## Az adatok és eszközök védelme
+
+### [Mobile Threat Defense](mobile-threat-defense.md)
+
+#### [A Lookout beállítása](lookout-mobile-threat-defense-connector.md)
+##### [A Lookout és az Intune közötti integráció](lookout-mtd-subscription-setup.md)
+##### [A Lookout engedélyezése az Intune-ban](lookout-mtd-connector-enable.md)
+##### [A Lookouttal használni kívánt alkalmazások telepítése](lookout-for-work-app-configure-deploy.md)
+##### [A Lookout eszközmegfelelőségi szabályzata](lookout-device-compliance-policy-create.md)
+
+#### [A Skycure beállítása](skycure-mobile-threat-defense-connector.md)
+##### [Az Azure AD SSO konfigurálása](skycure-azure-sso-configure.md)
+##### [iOS-es alkalmazáskonfigurációs szabályzat letöltése](skycure-ios-app-configuration-policy-download.md)
+##### [Alkalmazások hozzáadása és konfigurálása](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
+##### [A Skycure-ral használni kívánt alkalmazások telepítése](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+##### [A Skycure és az Intune közötti integráció](skycure-mtd-connector-integration.md)
+##### [A Skycure engedélyezése az Intune-ban](skycure-mtd-connector-enable.md)
+##### [A Skycure eszközmegfelelőségi szabályzata](skycure-device-compliance-policy-create.md)
+
+### [A Windows Hello beállítása](windows-hello.md)        
+<!-- ### Protect devices with remote actions        -->
+
+## [Szerepkörök kezelése](role-based-access-control.md)
+<!-- ### Create a custom role
+### Assign a role -->
+### [Az ügyfélszolgálati operátor szerepkör használata](help-desk-operators.md)
+<!-- ### Custom role settings -->
+
+## [Számítógépek kezelése szoftveres ügynökkel](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Számítógépügyfél telepítése](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
+### [Számítógépek általános felügyeleti feladatai](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
+#### [Számítógépes szabályzatok](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
+#### [Leltár megjelenítése](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Számítógépek kivonása](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json)
+#### [Számítógépek társítása felhasználókkal](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+#### [Távsegítség](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Szabályzatok a Windows rendszerű számítógépek védelméhez](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Szoftverfrissítések](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json)
+#### [Windows tűzfal](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json)
+#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json)
+### [Alkalmazások hozzáadása Intune ügyfélgépekhez](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Licencszerződések kezelése](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
+### [Szabályzatütközések feloldása](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+
+
+# Monitorozás és hibaelhárítás
+## [Távközlési költségek monitorozása](telecom-expenses-monitor.md)
+
 
 # Fejlesztés és testreszabás
-## [Intune alkalmazásburkoló eszköz](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [OS alkalmazásburkoló eszköz](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Alkalmazásburkoló eszköz Android rendszerhez](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-## [Intune App SDK](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Egyéni eszközbeállítások konfigurálása](custom-settings-configure.md)
+### [Android](custom-settings-android.md)
+#### [Wi-Fi-profil előmegosztott kulccsal](wi-fi-profile-shared-key.md)
+#### [Alkalmazásonkénti VPN-profil](android-pulse-secure-per-app-vpn.md)
+#### [Alkalmazások engedélyezése/letiltása a Samsung KNOX Standard használatával](samsung-knox-apps-allow-block.md)
+### [iOS](custom-settings-ios.md)
+### [macOS](custom-settings-macos.md)
+### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+### [Windows 10](custom-settings-windows-10.md)
+### [Android for Work](custom-settings-android-for-work.md)
+## [Üzletági alkalmazások előkészítése mobilalkalmazás-kezeléshez](apps-prepare-mobile-application-management.md)
+### [OS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md)
+### [Alkalmazásburkoló eszköz Android rendszerhez](app-wrapper-prepare-android.md)
+## [Windows-alkalmazások közvetlen telepítése](app-sideload-windows.md)
+## [Intune App SDK](app-sdk.md)
+### [Ismerkedés az Intune App SDK-val](app-sdk-get-started.md)
+### [Intune App SDK iOS rendszerhez](app-sdk-ios.md)
+### [Intune App SDK Android rendszerhez](app-sdk-android.md)
+### [Intune App SDK Cordova beépülő modul](app-sdk-cordova.md)
+### [Intune App SDK Xamarin összetevő](app-sdk-xamarin.md)
+## [Az Intune Graph API-k használata](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [Szószedet](intune-glossary.md)

@@ -1,5 +1,5 @@
 ---
-title: "Eszközök regisztrálása | Microsoft Docs"
+title: "Eszközök regisztrálása"
 description: "A mobileszköz-kezelési (MDM) funkció a regisztráció segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ Az alábbi táblázat bemutatja az Intune regisztrációs módszereit, és az eg
 
 **iOS-eszközök regisztrálási módszerei**
 
-| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek** |
+| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nem |Nem |Nem    | [További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Igen |    Nem kötelező megadni |    Nem kötelező megadni|[További információ](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Igen |    Nem kötelező megadni |    Nem| [További információ](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    Nem |    Nem    | Nem|[További információ](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  | [További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Igen |   Nem kötelező megadni |  Nem| [További információ](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[További információ](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows-eszközök regisztrálási módszerei**
 
-| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
+| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android-eszközök regisztrálási módszerei**
 
-| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
+| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Az Android for Work-eszközök regisztrálási módszerei**
 
-| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
+| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Nem |Nem |Nem    |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS-eszközök regisztrálási módszerei**
 
-| **Módszer** |    **Törölni kell?** |    **Affinitás**    |    **Zárolás** | **Részletek**|
+| **Módszer** |  **Törölni kell?** |    **Affinitás**    |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |    Nem | [További információ](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](prerequisites-for-enrollment.md)|
 
 
 A megfelelő módszer kiválasztásában segít az [Eszközök regisztrálási módjának kiválasztása](/intune-classic/get-started/choose-how-to-enroll-devices1) című témakörben található kérdéssor.
@@ -94,15 +94,15 @@ Az eszközregisztráció-kezelő egy speciális Intune-fiók, amely több válla
 
 ### <a name="dep"></a>DEP
 Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódot, amely lehetővé teszi a következő funkciókat:
-  -    Zárolt regisztráció
-  -    Teljes képernyős mód és más speciális konfigurációk és korlátozások
+  - Zárolt regisztráció
+  - Teljes képernyős mód és más speciális konfigurációk és korlátozások
 
 További információk a [DEP](ios-device-enrollment-program-in-microsoft-intune.md) programról. ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 Az Apple Configurator segítségével a rendszergazdák a beállítási asszisztens használatával USB-kapcsolaton keresztül manuálisan előkészíthetnek minden vállalat által birtokolt eszközt. A rendszergazda létrehoz egy regisztrációs profilt, és exportálja azt az Apple Configuratorba. Amikor a felhasználók megkapják az eszközeiket, választhatják a beállítási asszisztens futtatását az eszköz regisztrálásához. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódot, amely lehetővé teszi a következő funkciókat:
-  -    Zárolt regisztráció
-  -    Teljes képernyős mód és más speciális konfigurációk és korlátozások
+  - Zárolt regisztráció
+  - Teljes képernyős mód és más speciális konfigurációk és korlátozások
 
 További információ [az eszközöknek az Apple Configurator és Beállítási asszisztens segítségével történő regisztrálásáról](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Vissza a táblázathoz](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ Az Intune a következő eszközplatformokat képes kezelni:
 ## <a name="next-steps"></a>További lépések
 - [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
 - [Vállalati tulajdonú eszközök kezelése](manage-corporate-owned-devices.md)
-- [Támogatott mobileszközök és számítógépek](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [Támogatott mobileszközök és számítógépek](/intune/supported-devices-browsers#intune-supported-devices)
 

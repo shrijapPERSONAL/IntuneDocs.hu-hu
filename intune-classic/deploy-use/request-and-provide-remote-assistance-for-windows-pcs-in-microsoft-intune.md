@@ -1,5 +1,5 @@
 ---
-title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez | Microsoft Docs"
+title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez"
 description: "Végfelhasználói és rendszergazdai lépések a PC-ként felügyelt Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 A jelen témakörben ismertetett információk csak azokra a PC-ként felügyelt Windows-számítógépekre vonatkoznak, amelyeket az Intune szoftverügyfél segítségével felügyel.
 

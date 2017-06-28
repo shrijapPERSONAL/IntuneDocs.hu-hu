@@ -1,5 +1,5 @@
 ---
-title: "GPO és Intune-szabályzatütközések feloldása| Microsoft Docs"
+title: "A GPO- és Intune-házirendek ütközéseinek feloldása"
 description: "Megtudhatja, hogyan szüntetheti meg az ütközéseket a Csoportházirend és az Intune konfigurációs szabályzatai között."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Csoportházirend-objektumok (GPO) és Microsoft Intune-szabályzatütközések feloldása
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Az Intune szabályzatai megkönnyítik a Windows-számítógépek beállításainak kezelését. Például szabályzat segítségével felügyelheti a Windows tűzfal beállításait a számítógépeken. Az Intune számos beállítása hasonló a Windows csoportházirend-beállításaihoz. Esetenként azonban előfordulhat, hogy a két módszer ütközik egymással.
 
 Ütközések esetén a tartományszintű csoportházirend elsőbbséget élvez az Intune szabályzatával szemben, kivéve, ha a számítógép nem tud bejelentkezni a tartományba. Ebben az esetben a rendszer az Intune szabályzatát alkalmazza az ügyfélszámítógépen.

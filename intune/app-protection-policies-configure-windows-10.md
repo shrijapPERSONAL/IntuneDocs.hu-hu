@@ -1,12 +1,12 @@
 ---
-title: "Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására"
+titleSuffix: Intune on Azure
 description: "Mobilalkalmazás-kezelési (MAM) szolgáltató beállítása az Azure AD-ban"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e179f72e4cd99a8cd1bdc017e9965f7d1eb608bf
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Mielőtt Windows 10-es alkalmazásvédelmi szabályzatot hozhatna létre, az Azure AD-ben a MAM-szolgáltató beállításával engedélyeznie kell a Windows 10-es mobilalkalmazás-kezelést (MAM). Ezzel a beállítással meghatározhatja a regisztráció állapotát, amikor az Intune-ban új Windows Information Protection- (WIP-) szabályzatot hoz létre.
 
@@ -59,5 +59,5 @@ Mielőtt Windows 10-es alkalmazásvédelmi szabályzatot hozhatna létre, az Azu
 
 ## <a name="next-steps"></a>További lépések
 
-[Alkalmazásvédelmi WIP-szabályzatok létrehozása](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[Alkalmazásvédelmi WIP-szabályzatok létrehozása](windows-information-protection-policy-create.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "A feltételes hozzáférés hibaelhárítása|Microsoft Docs"
+title: "A feltételes hozzáférés hibaelhárítása"
 description: "A teendők abban az esetben, ha a felhasználók nem tudnak hozzáférni az erőforrásokhoz az Intune feltételes hozzáférésével."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ Ez a témakör ismerteti a teendőket abban az esetben, ha a felhasználók nem 
 
 A feltételes hozzáférés megfelelő működéséhez az alábbi feltételeknek kell teljesülnie:
 
--    Az eszközt az Intune-nak kell felügyelnie
--    Az eszköznek regisztrálva kell lennie az Azure Active Directoryban (AAD). A regisztrációra általában automatikusan kerül sor az Intune-ban történő regisztrálás során
--    Az eszköznek meg kell felelnie az Intune megfelelőségi szabályzatának mind az eszköz, mind a felhasználó tekintetében.  Ha nincsenek megfelelőségi szabályzatok, az Intune-regisztráció is elegendő.
--    Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX Standard-eszközök esetében ez automatikusan történik.
--    Az Intune Exchange Connectort megfelelően konfigurálni kell. További információkért lásd az [Az Exchange Connector hibaelhárítása a Microsoft Intune-ban](troubleshoot-exchange-connector.md) című ismertetőt.
+-   Az eszközt az Intune-nak kell felügyelnie
+-   Az eszköznek regisztrálva kell lennie az Azure Active Directoryban (AAD). A regisztrációra általában automatikusan kerül sor az Intune-ban történő regisztrálás során
+-   Az eszköznek meg kell felelnie az Intune megfelelőségi szabályzatának mind az eszköz, mind a felhasználó tekintetében.  Ha nincsenek megfelelőségi szabályzatok, az Intune-regisztráció is elegendő.
+-   Az eszközön aktiválni kell az Exchange ActiveSync protokollt, ha a felhasználó nem az Outlookon, hanem az eszköz natív levelezőprogramján keresztül fér hozzá e-mailjeihez.     iOS-, Windows Phone- és Android/KNOX Standard-eszközök esetében ez automatikusan történik.
+-   Az Intune Exchange Connectort megfelelően konfigurálni kell. További információkért lásd az [Az Exchange Connector hibaelhárítása a Microsoft Intune-ban](troubleshoot-exchange-connector.md) című ismertetőt.
 
 Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyeleti portálon, valamint az eszköz könyvtárjelentésében.
 
@@ -55,16 +55,16 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
  -  A megfelelőségi adatok regisztrálása az eszközön időbe telhet. Várjon néhány percet, és próbálkozzon újra.
  -  iOS eszközök esetén:
      -   Ha már van a felhasználó által létrehozott e-mail-profil, ez meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy e-mail-profil telepítése nélkül regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
-     -     Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
+     -   Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
 
         Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
 
  - Androidos eszközök esetén:
-     - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel azokat. 
+    - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel azokat. 
     
-        -    Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
+        -   Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
     
-        -     Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
+        -   Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
 
 ## <a name="policy-issues"></a>Szabályzattal kapcsolatos problémák
 
@@ -135,7 +135,7 @@ Az Exchange Connector naplófájljainak megtekintéséhez használja a Server Tr
 
     „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','”
 
--    A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
+-   A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
 
 ##### <a name="exceptions-in-get-next-command"></a>A Get next parancs kivételei
 Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** kapcsolatos kivételeket, és adja meg azokat a Microsoft támogatási szolgálata számára.
@@ -144,9 +144,9 @@ Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** ka
 
 Részletes naplózás engedélyezése:
 
-1.    Nyissa meg az Exchange Connector nyomkövetés-konfigurációs fájlját. A fájl helye: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.    Keresse meg a TraceSourceLine-t a következő kulccsal: OnPremisesExchangeConnectorService
-3.    Az alábbiak szerint módosítsa a **SourceLevel** csomópont értékét az alapértelmezett **Warning ActivityTracing**-ről **Verbose ActivityTracing**-re.
+1.  Nyissa meg az Exchange Connector nyomkövetés-konfigurációs fájlját. A fájl helye: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.  Keresse meg a TraceSourceLine-t a következő kulccsal: OnPremisesExchangeConnectorService
+3.  Az alábbiak szerint módosítsa a **SourceLevel** csomópont értékét az alapértelmezett **Warning ActivityTracing**-ről **Verbose ActivityTracing**-re.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>

@@ -29,7 +29,7 @@ ms.lasthandoff: 05/23/2017
 A rendszergazda csak a Mobile Threat Defense-alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez az alkalmazás az esetleges fenyegetések felderítésével segíti az eszköz védelmét. Elképzelhető, hogy különböző üzenetek jelennek meg az eszköz kijelzőjén attól függően, hogy a rendszergazda hogyan állította be a Mobile Threat Defense szolgáltatást.
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
-* [Skycure](you-are-prompted-to-install-skycure-android.md)
+* [A Skycure használatával](you-are-prompted-to-install-skycure-android.md)
 
 **Ha sikertelen a telepítés**
 

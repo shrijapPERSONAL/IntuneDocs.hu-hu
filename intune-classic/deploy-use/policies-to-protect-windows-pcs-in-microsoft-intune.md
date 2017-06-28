@@ -1,5 +1,5 @@
 ---
-title: "Szabályzatok a Windows rendszerű számítógépek védelméhez| Microsoft Docs"
+title: "Szabályzatok a Windows rendszerű számítógépek védelméhez"
 description: "Ezek a szabályzatok az Intune ügyfélszoftver által felügyelt Windows rendszerű számítógépek biztonságának megőrzését segítik elő."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36be534c800a4f053ffaf34efdbb1debec4978f3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6f840cf1b9319cd3a7650f645e6148bb4e56cfa3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Szabályzatok használata az Intune ügyfélszoftvert futtató Windows rendszerű számítógépek védelméhez
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune három olyan szabályzatot kínál, amelyek az [Intune ügyfélszoftver](manage-windows-pcs-with-microsoft-intune.md) által felügyelt Windows rendszerű számítógépek biztonságát segítik elő.
 

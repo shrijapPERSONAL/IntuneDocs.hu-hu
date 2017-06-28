@@ -18,10 +18,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db7c3b4c5722bea449dc7185b179b7a85fa59018
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -56,5 +56,5 @@ Számítógép hozzáadásakor:
 
 -   A rendszergazda szabályzatokat léptethet életbe a számítógépen. Például előfordulhat, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen. A rendszergazda azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót a számítógépről, vagy letörölheti a számítógép merevlemezén lévő összes adatot, ha túl sokszor próbálkozott.
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
 

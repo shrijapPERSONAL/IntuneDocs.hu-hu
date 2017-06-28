@@ -1,5 +1,5 @@
 ---
-title: "Csoportok használata felhasználók és eszközök kezelésére | Microsoft Docs"
+title: "Csoportok használata felhasználók és eszközök kezelésére"
 description: "Csoportok létrehozása és kezelése a Csoportok munkaterület használatával."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ A szűrt csoportnézetekben szabható meg, hogy szerepköre alapján mit láthat
 -   Azt szeretné, hogy a rendszergazdák csak bizonyos felhasználókra és eszközökre vonatkozóan végezhessenek központi telepítéseket
 -   Azt szeretné, hogy a rendszergazdák csak a számukra releváns csoportokat láthassák
 
-A szolgáltatás-rendszergazdák számára az Intune felügyeleti konzolján állíthat be szűrt csoportnézeteket. Részletekért lásd: [Tudnivalók a Microsoft Intune elindítása előtt](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+A szolgáltatás-rendszergazdák számára az Intune felügyeleti konzolján állíthat be szűrt csoportnézeteket. Részletekért lásd: [Tudnivalók a Microsoft Intune elindítása előtt](/intune/supported-devices-browsers).
 
 Miután beállította a szűrt csoportnézeteket valamelyik szolgáltatás-rendszergazda számára, akkor, amikor az illető rendszergazda szoftverek vagy szabályzatok központi telepítését végzi vagy jelentéseket futtat, csak a meghatározott csoportokat láthatja és választhatja ki. Emellett a rendszergazda számára a felügyeleti konzol alábbi oldalain nem jelennek meg állapotinformációk:
 
