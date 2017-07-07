@@ -1,7 +1,7 @@
 ---
-title: "iOS áruházbeli alkalmazások hozzáadása az Intune-hoz | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure előzetes verzió: Útmutató iOS áruházbeli alkalmazások hozzáadásához az Intune-ban."
+title: "iOS áruházbeli alkalmazások hozzáadása az Intune-hoz"
+titleSuffix: Intune on Azure
+description: "Útmutató iOS-es áruházbeli alkalmazások hozzáadásához az Intune-ban.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d6da2bf1ebab609b8e9be4bec998d2f081600b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 84c5b7c2d849fb39a9466d5b92eb4f2a4a411808
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="before-you-start"></a>Előkészületek
 
@@ -63,4 +61,3 @@ Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások ho
 3. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md).
-

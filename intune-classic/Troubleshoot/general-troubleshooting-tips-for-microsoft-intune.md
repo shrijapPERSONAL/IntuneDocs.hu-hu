@@ -1,5 +1,5 @@
 ---
-title: "Általános hibaelhárítási tippek | Microsoft Docs"
+title: "Általános hibaelhárítási tippek"
 description: "Általános forrásanyagok az Intune-nal kapcsolatos problémák megoldásához."
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 63bb7ca097390582d85f3ea7daced42d2a97fbb4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Általános hibaelhárítási tippek a Microsoft Intune-hoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -58,7 +55,7 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
   - [Az Android regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Az iOS regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   A felügyeleti konzol adataival /intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   A felügyeleti konzol adatainak (például a szabályzat megvalósításával kapcsolatos problémának) birtokában vizsgálja meg az érintett szabályzatot, illetve állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
 
 ## <a name="research-the-solution"></a>Megoldás keresése
 
@@ -97,4 +94,3 @@ Az alábbi témakörök konkrét problémák elhárításában nyújtanak segít
 [Az ügyfél a Microsoft Intune-ban való beállításának hibaelhárítása](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [A Microsoft Intune szoftverfrissítéseinek hibaelhárítása](troubleshoot-software-updates-in-microsoft-intune.md)
-

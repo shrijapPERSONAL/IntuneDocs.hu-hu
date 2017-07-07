@@ -1,7 +1,7 @@
 ---
 title: "Megfelelőségi szabályzat létrehozása Android rendszerhez"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató Android-eszközök megfelelőségi szabályzatának létrehozásához."
+titleSuffix: Intune on Azure
+description: "Útmutató az androidos eszközök megfelelőségi szabályzatának létrehozásához.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Android-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Android-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune az Azure-on előzetes portálján
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Megfelelőségi szabályzatok az Intune az Azure-on előzetes portálján hozhatók létre az egyes platformokhoz. 
+Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz. 
 
 - A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt.
 - A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről a [Get started with device compliance](device-compliance-get-started.md) (Az eszközmegfelelőség használatának első lépései) című témakörben találhat további információt.
@@ -134,4 +131,3 @@ Az alábbi táblázat azt ismerteti, hogyan történik a nem megfelelő beállí
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-
