@@ -1,5 +1,5 @@
 ---
-title: "Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése | Microsoft Docs"
+title: "MAM-szabályzatok létrehozása és telepítése"
 description: "Az ebben a témakörben található részletes útmutatóval MAM-szabályzatokat hozhat létre és telepíthet."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a f
 ## <a name="line-of-business-lob-apps-optional"></a>Üzletági (LOB) alkalmazások (nem kötelező)
 
 Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok létrehozásakor általánosan fel lehet venni üzletági alkalmazásokat az Intune-ba. Így lehetőség nyílik arra is, hogy a MAM SDK-val alkalmazásvédelmi szabályzatokat definiáljon üzletági alkalmazásokhoz a teljes körű alkalmazástelepítési jogosultságok megkövetelése nélkül.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> Az [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started) munkafolyamatán végighaladva is fel lehet venni üzletági alkalmazásokat az Intune-ba.
+> Az [Intune App SDK](/intune/app-sdk-get-started) munkafolyamatán végighaladva is fel lehet venni üzletági alkalmazásokat az Intune-ba.
 
 > [!IMPORTANT]
 > Ha a felhasználóknak csak MAM-alkalmazások telepítésére van konkrét engedélyük, olyan teljes körű alkalmazástelepítési jogosultságuk viszont nincs, amellyel tetszőleges alkalmazást telepíthetnének az Intune-ba, akkor nem tudják végigkövetni az Intune SDK munkafolyamatát, de a MAM alkalmazásvédelmi szabályzatok létrehozására szolgáló munkafolyamatával felvehetik üzletági alkalmazásaikat.
@@ -164,8 +161,8 @@ A szabályzat csak az Intune-licenccel rendelkező felhasználókra érvényes. 
 > Ha az Intune-ban és a Configuration Managerben kezeli az iOS- és Android-eszközöket, a szabályzatok csak a közvetlenül kijelölt csoport felhasználói esetében lépnek érvénybe. A csoportba ágyazott alárendelt csoportok tagjaira nem vonatkozik a szabályzat.
 
 A végfelhasználók az App Store-ból vagy a Google Play áruházból tölthetik le az alkalmazásokat. További információkért lásd:
-* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-android)
+* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>A meglévő szabályzatok módosítása
 A meglévő szabályzatokat szerkesztheti, és alkalmazhatja azokat a megcélzott felhasználókra. Ha azonban a meglévő szabályzatok módosításakor a felhasználók már be voltak jelentkezve az alkalmazásokba, csak egy 8 órás időszak elteltével láthatják a változtatásokat.
@@ -219,6 +216,5 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 [A megfelelőség és a felhasználói állapot figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>További információ
-* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-android)
+* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-ios)

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-when-you-create-a-work-profile"></a>Mi történik munkahelyi profil létrehozásakor
 
 A munkahelyi profil beállításával az eszközön elkülönítheti a munkahelyi vagy iskolai e-mailjeit, alkalmazásait és adatait a személyes adatoktól.
@@ -49,4 +44,3 @@ Ha munkahelyi profilt hoz létre:
 A munkahelyi profil létrehozásának lépéseiről itt olvashat: [Munkahelyi profil létrehozása és az eszköz regisztrálása](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

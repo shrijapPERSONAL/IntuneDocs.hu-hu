@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>El kell hárítania egy fenyegetést, amelyet a Mobile Threat Defense-alkalmazás talált
 
 A Mobile Threat Defense potenciális fenyegetést talált az Ön androidos eszközén. Csak akkor férhet ismét hozzá vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, ha elhárította a problémát. Attól függően, hogy a rendszergazda hogyan állította be a Mobile Threat Defense szolgáltatást, Ön a következő alkalmazások valamelyikével fogja megoldani az ilyen problémákat.
@@ -40,4 +36,3 @@ Ha olyan alkalmazást telepített, amely a Mobile Threat Defense szerint fenyege
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

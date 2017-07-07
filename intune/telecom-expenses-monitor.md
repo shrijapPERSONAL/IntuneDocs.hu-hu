@@ -1,7 +1,7 @@
 ---
 title: "Távközlésiköltség-kezelő szolgáltatások beállítása"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A Saaswedo távközlésiköltség-kezelő szolgáltatás konfigurálása az Intune-nal való integráláshoz."
+titleSuffix: Intune on Azure
+description: "A Saaswedo távközlésiköltség-kezelő szolgáltatás konfigurálása az Intune-nal való integráláshoz.”"
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Távközlésiköltség-kezelő szolgáltatások beállítása az Azure-os Intune előzetes verziójában
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Távközlésiköltség-kezelő szolgáltatás beállítása az Intune-ban
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert olyan valós idejű távközlésiköltség-kezelő szoftver, amely módot ad a távközlési adatok használatának kezelésére, valamint segít elkerülni az adathasználati és a roamingkeret költséges és váratlan túllépését az Intune által felügyelt eszközökön.
 
@@ -43,7 +41,7 @@ A Datalert szolgáltatásnak az Intune-nal való használatához beállításoka
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- Microsoft Intune-előfizetés, valamint hozzáférés (a jelenleg nyilvános előzetes verziójú) Azure Portalhoz.
+- Microsoft Intune-előfizetés és az Azure Portalhoz való hozzáférés.
 - Előfizetés a Datalert távközlésiköltség-kezelő szolgáltatásra
 
 ## <a name="list-of-telecom-expense-management-providers"></a>A távközlésiköltség-kezelő szolgáltatók listája
@@ -108,9 +106,9 @@ Amikor a felhasználók regisztrálják az eszközeiket, látják ezeket a kateg
 
 Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a következő lépésekkel. Az ismertetett lépésekben az iOS-t használjuk példaként.
 
-1. Válassza az Azure Portal **Intune** paneljének **Alkalmazásfelügyelet** elemét.
+1. Válassza az Azure Portal **Intune** paneljének **Mobilalkalmazások** elemét.
 
-2. Az **Alkalmazásfelügyelet** területen válassza a **Kezelés** > **Alkalmazások** elemet.
+2. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 
 3. Vegyen fel egy alkalmazást a **Hozzáadás** gombra kattintva.
 
@@ -151,8 +149,8 @@ A Datalert szolgáltatás most már aktív, és megkezdi az adathasználat figye
 
 ## <a name="client-enrollment-experience"></a>Ügyfél-regisztrációs folyamat
 Az ügyfél-regisztrációs folyamattal kapcsolatosan az alábbi információkat ajánljuk figyelmébe:
--    [iOS-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [Android-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [iOS-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [Android-eszköz regisztrálása a távközlésiköltség-kezelőben](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>A Datalert szolgáltatás kikapcsolása
 
@@ -173,4 +171,3 @@ Ha letiltja a Datalert szolgáltatást az Azure Portalon:
 Az adathasználati jelentések jelenleg csak a Saaswedo Datalert kezelőkonzolján érhetők el.
 
 Rövidesen közzétesszük a Datalert alkalmazás telepítését ismertető végfelhasználói útmutatót is.
-

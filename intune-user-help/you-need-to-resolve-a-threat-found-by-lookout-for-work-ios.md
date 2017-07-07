@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>El kell hárítania a Lookout for Work által azonosított fenyegetést
 
 A Lookout for Work potenciális fenyegetést talált az eszközön. Ahhoz, hogy ismét hozzáférhessen vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, el kell hárítania a problémát. A következőhöz hasonló üzenetet fog látni:
@@ -51,4 +47,3 @@ Ha ehhez hasonló üzenet jelenik meg, koppintson az alkalmazás nevére a képe
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

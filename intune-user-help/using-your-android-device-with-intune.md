@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: c3f1d42d5998e70982bc279ef99560c486412daf
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="using-your-android-device-with-intune"></a>Android-eszköz használata az Intune-nal
 
 Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
@@ -56,4 +51,3 @@ Az Intune jelenleg az Android 4.0-s és újabb verzióit támogatja. Ebbe beleé
 - [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a Vállalati portál alkalmazással?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-

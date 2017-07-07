@@ -1,7 +1,7 @@
 ---
 title: "Android-alkalmazások alkalmazásvédelmi szabályzatokkal"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: ez a témakör azt ismerteti, hogy milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok."
+titleSuffix: Intune on Azure
+description: "Ez a témakör azt ismerteti, hogy milyen hatással vannak az Android-alkalmazásokra az alkalmazásvédelmi szabályzatok.”"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok? 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Ez a témakör az alkalmazásvédelmi szabályzatokkal védett alkalmazások felhasználói élményét ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Ez a témakör az alkalmazásvédelmi szabályzatokkal védett alkalmazások felhasználói élményét ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
 ##  <a name="accessing-apps"></a>Alkalmazásokhoz való hozzáférés
 
 Androidos eszközökön minden alkalmazásvédelmi szabályzathoz rendelt alkalmazás esetén szükség van a Céges portál alkalmazásra.
@@ -38,7 +35,7 @@ A Vállalati portál alkalmazás segítségével az Intune biztonságos helyen t
 
 Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják, így az alkalmazásnak a környezettől függően két különböző működése figyelhető meg: munkahelyi vagy személyes.
 
-Az Intune többszörös identitást támogató alkalmazásokra csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, amikor a végfelhasználó a munkahelyi környezetben használja az alkalmazást.  Például a munkaadathoz való hozzáférésekor a végfelhasználónak PIN-kódot kell megadnia.  Az **Outlook alkalmazás** esetén a végfelhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazásnál** ez akkor fordul elő, amikor a végfelhasználó beírja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint* és **Excel** esetén ez akkor fordul elő, amikor a végfelhasználó a cég OneDrive Vállalati helyén tárolt dokumentumhoz fér hozzá.
+Az Intune többszörös identitást támogató alkalmazásokra csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, amikor a végfelhasználó a munkahelyi környezetben használja az alkalmazást.  Például a munkaadathoz való hozzáférésekor a végfelhasználónak PIN-kódot kell megadnia.  Az **Outlook alkalmazás** esetén a végfelhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazásnál** ez akkor fordul elő, amikor a végfelhasználó beírja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint* és **Excel** esetén ez akkor fordul elő, amikor a végfelhasználó a cég OneDrive vállalati helyén tárolt dokumentumhoz fér hozzá.
 ##  <a name="managing-user-accounts-on-the-device"></a>Felhasználói fiókok kezelése az eszközön
 
 Az Intune az alkalmazásvédelmi szabályzatok telepítését eszközönként csak egy felhasználói fiók esetében támogatja.
@@ -84,4 +81,3 @@ A rendszer a következő fájltípusokat támogatja:
 
 ### <a name="see-also"></a>További információ
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](app-protection-policies.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "Szoftverfrissítések Windows rendszerű számítógépekhez | Microsoft Docs"
+title: "Szoftverfrissítések windowsos PC-khez"
 description: "Az Intune segít naprakészen tartani a felügyelt számítógépeket a legújabb javítások és szoftverfrissítések gyors telepítésének biztosításával."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune többféle módszerrel könnyíti meg a felügyelt számítógépek védelmét, például a számítógépeket naprakészen tartó szoftverfrissítések kezelésével, amelyek segítenek a legújabb javítások és szoftverfrissítések gyors telepítésében.
 
 Ha még nem telepítette az Intune-ügyfelet a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
@@ -255,4 +255,3 @@ Amikor kiválaszt egy frissítést a listáról, az alábbi táblázatban szerep
 
 ### <a name="see-also"></a>További információ
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

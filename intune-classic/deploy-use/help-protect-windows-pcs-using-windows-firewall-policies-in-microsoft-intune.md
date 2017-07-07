@@ -1,5 +1,5 @@
 ---
-title: "Tűzfalházirendek Windows rendszerű számítógépekhez | Microsoft Docs"
+title: "Tűzfalszabályok Windows rendszerű számítógépekhez"
 description: "Az Intune-nal számos módon teheti biztonságossá az Intune ügyfélprogrammal kezelt számítógépeket, beleértve a Windows tűzfal beállításainak konfigurálását is."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>A Windows rendszerű számítógépek védelme Windows tűzfalházirendek használatával a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune-nal számos módon teheti biztonságossá az Intune ügyfélprogrammal kezelt Windows rendszerű számítógépeket. Többek között olyan szabályzatokat tesz elérhetővé, amelyekkel konfigurálhatja a Windows tűzfal beállításait a számítógépeken.
 
 Ha még nem telepítette a Windows rendszerhez készült Intune ügyfélprogramot a számítógépeken, [A Windows rendszerű számítógépügyfél telepítése a Microsoft Intune-nal](install-the-windows-pc-client-with-microsoft-intune.md) című témakörben olvashat erről.
@@ -135,4 +135,3 @@ Konfigurálhatja azokat a kivételeket, amelyek bizonyos típusú hálózati for
 
 ### <a name="see-also"></a>További információ
 [Szabályzatok a Windows rendszerű számítógépek védelméhez](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

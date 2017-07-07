@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és az Android-eszköz Intune-beli regisztrálásakor?
 
 Miután telepítette a Vállalati portál alkalmazást, és regisztrálta androidos eszközét az Intune-ban, a következőkre használhatja a Vállalati portál alkalmazást:
@@ -61,4 +57,3 @@ Miután felvette az eszközt a vállalati portálra, nagyjából nyolcóránkén
 -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése. (Ezek a frissítések nem tartalmaznak személyes adatokat.)
 
 Segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
-

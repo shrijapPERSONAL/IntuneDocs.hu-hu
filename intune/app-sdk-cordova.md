@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova beépülő modul
 
@@ -159,4 +157,3 @@ Az alkalmazás első indítását követően meg kell jelennie egy párbeszédpa
 * Amikor módosítja az egységes típusazonosítók (UTI) listáját az **Info.plist** fájl **CFBundleDocumentTypes** csomópontjában, az újbóli létrehozás előtt minden esetben törölnie kell az Intune UTI-kat az adott plist fájl importált UTI-kat tartalmazó szakaszában (**UTImportedTypeDeclarations** csomópont). Minden Intune UTI a `com.microsoft.intune.mam` előtaggal kezdődik.
 
 * Ha el szeretné távolítani az Intune App SDK for Cordova beépülő modult a Cordova-projektjéből, akkor az iOS platformot is el kell távolítania, majd újból fel kell vennie, hogy visszavonja az Intune egyes konfigurációs beállításait az .xcodeproj- és a .plist-fájlokban.
-

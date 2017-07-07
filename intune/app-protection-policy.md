@@ -1,7 +1,7 @@
 ---
 title: "Mik azok az alkalmazásvédelmi szabályzatok?"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: ez a témakör azt ismerteti, hogyan védhetők a céges adatok a Microsoft Intune alkalmazásvédelmi szabályzataival."
+titleSuffix: Intune on Azure
+description: "Ez a témakör azt ismerteti, hogyan védhetők a céges adatok a Microsoft Intune alkalmazásvédelmi szabályzataival.”"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune alkalmazásvédelmi szabályzatai segítik a céges adatok védelmét és az adatvesztés megelőzését.
 
@@ -68,7 +65,7 @@ Az MDM-megoldásoknak az alkalmazásvédelmi szabályzatokkal együttes használ
 
 -   Android 4 vagy újabb verzió
 
-A Windows-eszközök jelenleg nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+A Windows-eszközök jelenleg nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Az alkalmazásvédelmi szabályzatok és az alkalmazásadatok védelme
 
 ####  <a name="apps-without-app-protection-policies"></a>Alkalmazásvédelmi szabályzat nélküli alkalmazások
@@ -138,4 +135,3 @@ Például, ha egy felhasználó a munkahelyi fiókjával nyitja meg a OneDrive a
 ##  <a name="next-steps"></a>További lépések
 
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése Microsoft Intune-ban](app-protection-policies.md)
-

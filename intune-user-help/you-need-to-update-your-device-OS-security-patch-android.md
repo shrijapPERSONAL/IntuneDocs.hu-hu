@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Frissítenie kell androidos eszközének operációs rendszerét
 
 Ha megjelenik a „Minimum Android security patch level is not configured” (Az Android minimálisan előírt biztonsági javítási szintje nincs konfigurálva) üzenet, akkor eszköze biztonságának érdekében frissítést kell letöltenie. Egy kiadott _javítás_ biztosítja, hogy a szoftver továbbra is zökkenőmentesen működjön és naprakész maradjon. A rendszergazda arra kötelezi, hogy telepítse a javítást annak érdekében, hogy az eszközén található munkahelyi adatok a lehető legnagyobb védelmet élvezhessék. A szükséges biztonsági javítás helye attól függően változhat, hogy egy adott típusú Samsung eszközzel rendelkezik-e.
@@ -43,4 +39,3 @@ Koppintson a **Beállítások** > **Rendszerfrissítések** > **Új rendszerfris
 
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

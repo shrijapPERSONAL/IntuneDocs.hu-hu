@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása| Microsoft Docs"
+title: "Alkalmazástelepítéssel kapcsolatos problémák elhárítása"
 description: "Ez a témakör a Microsoft Intune-ban jelentkező, alkalmazástelepítéssel kapcsolatos problémák megoldásához nyújt segítséget."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0277c0baed66a1340373cb607976d03a07ca5282
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Alkalmazástelepítéssel kapcsolatos problémák elhárítása a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -53,4 +50,3 @@ Ha támogatási esetet kell megnyitnia az Intune kapcsán, akkor hasznos, ha el 
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-

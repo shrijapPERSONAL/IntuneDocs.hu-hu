@@ -1,7 +1,7 @@
 ---
-title: "Alkalmazásvédelmi szabályzatok és iOS-alkalmazások | Azure-beli Intune – előzetes"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: ez a témakör azt ismerteti, hogy milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok."
+title: "iOS-alkalmazások alkalmazásvédelmi szabályzatokkal"
+titleSuffix: Intune on Azure
+description: "Ez a témakör azt ismerteti, hogy milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok.”"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok?
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Ez a témakör az alkalmazásvédelmi szabályzatokat használó alkalmazásokkal kapcsolatos felhasználói élményt ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] Ez a témakör az alkalmazásvédelmi szabályzatokat használó alkalmazásokkal kapcsolatos felhasználói élményt ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
 ##  <a name="accessing-apps"></a>Alkalmazásokhoz való hozzáférés
 
 Ha az eszköz **nincs regisztrálva az Intune-ban**, a rendszer az alkalmazás első használatakor felkéri a felhasználót, hogy indítsa újra az alkalmazást.  Az újraindítás azért szükséges, hogy a rendszer alkalmazni tudja az alkalmazásvédelmi szabályzatokat az alkalmazásra. Az alábbi képernyőképen ezt láthatja a Skype alkalmazásban:
@@ -67,4 +64,3 @@ Ha iOS-eszközt használ, és egy második munkahelyi fiókot próbál felvenni 
 [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>További információ
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](app-protection-policies.md)
-

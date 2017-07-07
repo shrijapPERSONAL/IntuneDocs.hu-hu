@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazásadatok védelme MAM-szabályzatokkal | Microsoft Docs"
+title: "Alkalmazásadatok védelme MAM-szabályzatok használatával"
 description: "Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-kezelési szabályzatok a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal a Microsoft Intune segítségével
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ Az alkalmazásvédelmi szabályzatok olyan eszközökön futó alkalmazásokhoz 
 
 -   **Egy külső mobileszköz-kezelési (MDM) megoldásban vannak regisztrálva:** A kategóriába tartozó eszközök általában vállalati tulajdonú eszközök.
 
-      > [!NOTE]
-      > Az alkalmazásvédelmi szabályzatok használata nem ajánlott harmadik féltől származó mobilalkalmazás-kezelési és biztonságos tárolómegoldások használata esetén.
+    > [!NOTE]
+    > Az alkalmazásvédelmi szabályzatok használata nem ajánlott harmadik féltől származó mobilalkalmazás-kezelési és biztonságos tárolómegoldások használata esetén.
 
 -   **Nincsenek regisztrálva mobileszköz-kezelési (MDM) megoldásban:** A kategóriába tartozó eszközök általában olyan, az alkalmazottak tulajdonában lévő eszközök, amelyek nincsenek az Intune-ban vagy más MDM-megoldásban kezelve vagy regisztrálva.
 
@@ -135,4 +132,3 @@ Például, ha egy felhasználó a munkahelyi fiókjával nyitja meg a OneDrive a
 - [Felkészülés az alkalmazásvédelmi szabályzatok konfigurálására](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

@@ -15,15 +15,12 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
 ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -60,4 +57,3 @@ Mielőtt Windows 10-es alkalmazásvédelmi szabályzatot hozhatna létre, az Azu
 ## <a name="next-steps"></a>További lépések
 
 [Alkalmazásvédelmi WIP-szabályzatok létrehozása](windows-information-protection-policy-create.md)
-

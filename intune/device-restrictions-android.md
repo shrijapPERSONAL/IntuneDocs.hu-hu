@@ -1,12 +1,12 @@
 ---
 title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Android esetén"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az Android-eszközökön."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre androidos eszközökön.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3627b28b60908c225ce1797968123ce854a70a8b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Az androidos eszköz korlátozási szabályzatával használva ezen beállításokkal konfigurálhatja az eszközöket a szervezetben.
 
 ## <a name="general"></a>Általános
 
@@ -39,11 +38,11 @@ ms.lasthandoff: 05/23/2017
 |**Diagnosztikai adatok beküldése**|Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.|Nem|Igen|
 |**Gyári beállítások visszaállítása**|Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.|Nem|Igen|
 |**Földrajzi hely**|Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat (csak Samsung KNOX Standard-eszközökre vonatkozik).|Nem|Igen|
-|**Kikapcsolás**|Az eszköz felhasználó általi kikapcsolásának engedélyezése.<br>Ha ez a beállítás le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás Samsung KNOX Standard-eszközökön nem működik.|Nem|Igen|
+|**Kikapcsolás**|Az eszköz felhasználó általi kikapcsolásának engedélyezése.<br>Ha le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás nem adható meg.|Nem|Igen|
 |**Képernyőfelvétel**|Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.|Nem|Igen|
 |**Hangsegéd**|Hangsegéd szoftverek használatának engedélyezése az eszközön.|Nem|Igen|
 |**YouTube**|A YouTube alkalmazás használatának engedélyezése az eszközön.|Nem|Igen|
-|**Megosztott eszközök**|Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a felhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be és ki az eszközön, de az központi felügyelet alatt marad, akár használatban van, akár nem.<br>A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.|Nem|Igen|
+|**Megosztott eszközök**|Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.|Nem|Igen|
 
 ## <a name="password"></a>Jelszó
 
@@ -55,17 +54,17 @@ ms.lasthandoff: 05/23/2017
 |**Képernyőzárolás legfeljebb ennyi perc inaktivitás után**|Az eszköz az itt megadott számú másodperc elteltével automatikusan zárolja magát.|Igen|Igen|
 |**Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat**|Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölve lennének.|Igen|Igen|
 |**Jelszó lejárata (nap)**|Ennyi nap elteltével kell megváltoztatni az eszköz jelszavát.|Igen|Igen|
-|**Kötelező jelszótípus**|Megadja a jelszó erősségének szintjét, valamint azt, hogy használható-e biometrikus eszköz. A következő lehetőségek közül választhat:<br><br>    -     **Eszköz alapértelmezése**<br>-     **Alacsony biztonságú biometrikus**<br>    -     **Legalább számok**<br>    -     **Összetett numerikus** (ismétlődő vagy egymást követő számok, mint a „1111” vagy „1234” nem engedélyezettek)<sup>1</sup><br>    -     **Legalább betűk**<br>    -     **Legalább alfanumerikus karakterek**<br>    -     **Legalább alfanumerikus karakterek és szimbólumok**|Igen|Igen|
+|**Kötelező jelszótípus**|Megadja a jelszó erősségének megkövetelt szintjét, valamint azt, hogy használható-e biometrikus eszköz. A következő lehetőségek közül választhat:<br><br>    -     **Eszköz alapértelmezése**<br>-     **Alacsony biztonságú biometrikus**<br>    -     **Legalább számok**<br>    -     **Összetett numerikus** (ismétlődő vagy egymást követő számok, mint a „1111” vagy „1234” nem engedélyezettek)<sup>1</sup><br>    -     **Legalább betűk**<br>    -     **Legalább alfanumerikus karakterek**<br>    -     **Legalább alfanumerikus karakterek és szimbólumok**|Igen|Igen|
 |**Korábbi jelszavak újbóli használatának tiltása**|Megakadályozza, hogy a végfelhasználó általa korábban már használt jelszót hozzon létre.|Igen|Igen|
 |**Ujjlenyomattal történő zárolásfeloldás**|Engedélyezi az ujjlenyomattal történő zárolásfeloldást a támogatott eszközökön.|Nem|Igen|
-|**Smart Lock és egyéb megbízhatósági ügynökök**|A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van, például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.|Igen (5.0 és újabb verziók)|Igen|
+|**Smart Lock és egyéb megbízhatósági ügynökök**|A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van. Így például abban az esetben, ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.|Igen (5.0 és újabb verziók)|Igen|
 |**Titkosítás**|Az eszközön található összes fájlnak titkosítva kell lennie.|Igen|Igen|
 
-<sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Vállalati portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
+<sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Céges portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
 
 Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-nál korábbi verziójú Androidot futtató eszközhöz rendeli, az az alábbi jelenségeket eredményezi.
-- A Vállalati portál alkalmazás 1704-esnél korábbi verziója esetén nem érvényesül PIN-kód-szabályzat az eszközön, és hibaüzenet jelenik meg az Intune-portálon.
-- Amennyiben a Vállalati portál az 1704-es verzióra van frissítve, csupán egyszerű PIN-kód alkalmazható. Az Android 5.0-nál korábbi verziói nem támogatják ezt a beállítást. Hibaüzenet nem jelenik meg az Intune-portálon.
+- A Céges portál alkalmazás 1704-esnél korábbi verziója esetén nem érvényesül PIN-kód-szabályzat az eszközön, és hibaüzenet jelenik meg az Intune-portálon.
+- Ha a Céges portál alkalmazás 1704-es vagy későbbi verzióját futtatja, csak egyszerű PIN-kód alkalmazható. Az Android 5.0-nál korábbi verziói nem támogatják ezt a beállítást. Hibaüzenet nem jelenik meg az Intune-portálon.
 
 
 ## <a name="google-play-store"></a>Google Play Áruház
@@ -77,10 +76,10 @@ Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-ná
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
-A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
+A korlátozott alkalmazások listájában konfigurálhatja az alábbi listák egyikét mind androidos, mind Samsung KNOX Standard-alapú eszközökhöz:
 
 A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a telepítése és futtatása nincs engedélyezve a felhasználók számára.
-A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalmazza, amelyeknek a telepítése engedélyezve van a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek olyan alkalmazásokat, amelyek nem szerepelnek a listán. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.
+A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalmazza, amelyeknek a telepítése engedélyezve van a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek egyéb alkalmazásokat. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.
 A tiltott alkalmazások beállításait tartalmazó eszközprofilokat hozzá kell rendelni a kívánt felhasználócsoportokhoz.
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kívánt nevet. Tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazásnak az alkalmazás-áruházbeli URL-címét.
@@ -93,11 +92,11 @@ A [Google Play Alkalmazások szakaszában](https://play.google.com/store/apps) k
 
 Nyissa meg az alkalmazás telepítési lapját, és másolja az URL-címet a vágólapra. Most ezt a címet felhasználhatja URL-címként a kompatibilis vagy a nem kompatibilis alkalmazások listájában.
 
-Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre. A használt URL-cím a következő: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre. Használja a következő URL-címet: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ### <a name="additional-options"></a>További beállítások
 
-Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, mely a következő formátumú: <*alkalmazás URL-címe*>, <*alkalmazás neve*>, <*alkalmazás kiadója*>. Az **Exportálás** gombra kattintva pedig létrehozhat egy CSV-fájlt, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.        
+Az **Importálás** elemre is kattinthat a lista csv-fájlból való betöltéséhez. A használandó formátum: <*alkalmazás URL-címe*>, <*alkalmazás neve*>, <*alkalmazás kiadója*>. Az **Exportálás** gombra kattintva pedig létrehozhat egy CSV-fájlt, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.      
 
 ## <a name="browser"></a>Böngésző
 |||||
@@ -127,7 +126,7 @@ Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, m
 |**Hangtárcsázás**|A hangtárcsázási funkció engedélyezése vagy letiltása az eszközön.|Nem|Igen|
 |**Hangroaming**|Hangroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|Nem|Igen|
 |**Bluetooth**|Az eszköz Bluetooth-funkciójának engedélyezése.|Nem|Igen|
-|**NFC**|A kis hatótávolságú kommunikációt használó műveletek engedélyezése (ha az eszköz támogatja ezt a funkciót).|Nem|Igen|
+|**NFC**|A kis hatótávolságú kommunikációt használó műveletek engedélyezése a támogatott eszközökön.|Nem|Igen|
 |**Wi-Fi**|Az eszköz Wi-Fi-funkciójának engedélyezése.|Nem|Igen|
 |**Wi-Fi tethering**|Az eszköz Wi-Fi-alapú internetmegosztási funkciójának engedélyezése.|Nem|Igen|
 
@@ -135,7 +134,6 @@ Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, m
 |||||
 |-|-|-|-|
 |Beállítás neve|Részletek|Android 4.0+|Samsung KNOX Standard|
-|**Felügyelt alkalmazás kiválasztása**|Keresse meg, majd jelölje ki azt a felügyelt alkalmazást, amelynek engedélyezni szeretné, hogy az eszköz teljes képernyős módban futtassa (az áruházra mutató hivatkozásként megadott alkalmazások jelenleg nem támogatottak). Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.|Nem|Igen|
+|**Felügyelt alkalmazás kiválasztása**|Válassza ki a következők egyikét egy vagy több, az eszköz teljes képernyős módjában futtatható alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.<br><br>- **Alkalmazások hozzáadása csomagnév szerint**<br>- **Alkalmazások hozzáadása URL-cím szerint**<br>- **Felügyelt alkalmazások hozzáadása**|Nem|Igen|
 |**Alvás gomb megnyomásakor**|Engedélyezheti vagy letilthatja a képernyő ébresztőgombját az eszközön.|Nem|Igen|
 |**Hangerő gombok**|Engedélyezheti vagy letilthatja a hangerőszabályzó gombok használatát az eszközön.|Nem|Igen|
-

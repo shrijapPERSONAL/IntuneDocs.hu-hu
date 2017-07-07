@@ -1,12 +1,12 @@
 ---
 title: "A Windows 10 kiadásfrissítéseinek konfigurálása az Intune-ban"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató a kezelt Windows 10-es eszközök más verzióra történő frissítéséhez az Intune-naI."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt arról, hogyan frissíthetők a felügyelt Windows 10-es eszközök más verzióra az Intune-naI."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 59a29cee51f228c647a2491a2e452555ac5aba05
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>A Windows 10 kiadásfrissítéseinek konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A témakörből megtudhatja, hogyan konfigurálhat Windows 10-es kiadásfrissítési profilt. Ez a profil lehetővé teszi az alábbi Windows 10-verziók valamelyikét futtató eszközök más verzióra történő automatikus frissítését:
 
@@ -51,8 +48,8 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portal webhelyre.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az Azure Portalra.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
@@ -68,5 +65,4 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
-
 

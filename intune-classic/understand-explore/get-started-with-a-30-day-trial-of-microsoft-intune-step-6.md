@@ -1,5 +1,5 @@
 ---
-title: "Egyéb beállítások és kiegészítő funkciók az Intune-próbaidőszakokhoz | Microsoft Docs"
+title: "Egyéb beállítások és kiegészítő funkciók az Intune-próbaidőszakokhoz"
 description: "Ismerteti azon riasztásokat, értesítéseket, jelentéseket, valamint általános Intune-képességeket, amelyeket érdemes ismerni az Intune 30 napos ingyenes próbaidőszakára való feliratkozás esetén"
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Egyéb beállítások és kiegészítő funkciók az Intune próba-előfizetéséhez
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,16 +43,13 @@ Az Intune az ebben a rövid útmutatóban ismertetettek mellett számos további
 
 -   **A vállalati erőforrásokhoz való hozzáférés szabályozása.** Tanúsítványokat, e-mail profilokat, VPN-profilokat és Wi-Fi profilokat telepíthet mobileszközökre, ezzel megkönnyítve és gyorsabbá téve a mobileszközök beállítását. A részleteket lásd: [A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-ban](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
-Az Intune szolgáltatás összes funkciójáról bővebben lásd:
-- [A Microsoft Intune-ban regisztrált eszközök kezelésével kapcsolatos képességei](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [A Microsoft Intune Windows-számítógépek felügyeletére szolgáló képességei](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+Az Intune összes funkciójáról további információt talál [A Microsoft Intune regisztrált eszközök kezelésével kapcsolatos képességei](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune) című témakörben.
 
-További információ az Intune új funkcióiról: [Újdonságok a Microsoft Intune-ban](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune).
+További információ az Intune új funkcióiról: [Újdonságok a Microsoft Intune-ban](/intune-classic/whats-new/whats-new-in-microsoft-intune).
 
 A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune) című témakörben olvashat bővebben, illetve hozzászólhat az Intune szolgáltatással kapcsolatos témákhoz a [Microsoft Intune-fórumokon](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
 ## <a name="next-steps"></a>További lépések
-Tájékozódjon az [Intune gyakori használati módjairól](common-ways-to-use-intune.md)
+Tájékozódjon az [Intune gyakori használati módjairól](/intune/common-scenarios)
 
 Átállás a [fizetős verzióra](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "Vállalati adatok védelme adattitkosítással | Microsoft Docs"
+title: "Céges adatok védelme adattitkosítással"
 description: "Jelen útmutató segítséget nyújt abban hogy, hogyan védheti meg vállalatát adatvesztéssel szemben azáltal, hogy jelszót és adattitkosítást kényszerít ki egy szabályzattal a mobilalkalmazásokon."
 keywords: "titkosítás, PIN-kód, adat"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Első lépések: Céges adatok védelme adattitkosítással
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Ez az útmutató akkor a leghasznosabb, ha eleget tesz a következő előfeltét
 Jelen útmutató segítséget nyújt abban hogy, hogyan védheti meg vállalatát adatvesztéssel szemben azáltal, hogy jelszavakat és adattitkosítást kényszerít ki szabályzatokkal olyan mobilalkalmazásokon, amelyeket a beosztottjai bizalmas adat eléréséhez használnak, bármilyen eszközkezelési megoldásba való teljes regisztráció nélkül. A Microsoft Intune lehetővé teszi, hogy mobilalkalmazás-kezelési (MAM) szabályzatokat állítson be az Office mobilalkalmazásokon [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) és [Android](https://products.office.com/mobile/office-mobile-apps-for-android) rendszereken. Így az O365 adatok védelme érdekében a felhasználóknak nem kell egy mobileszköz-kezelési megoldásban regisztrálni eszközeiket, mégis megmarad a gördülékeny végfelhasználói élményük az Office mobilalkalmazásaival.
 
 ## <a name="how-do-i-do-it"></a>Mit kell ehhez tennem?
-1.    [Az alkalmazásadatok védelmének áttekintése](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [Az alkalmazásadatok védelmének áttekintése](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [Mobilalkalmazás-felügyeleti szabályzatok létrehozása és telepítése](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>További információ:
-- [Ismerje meg a végfelhasználói élményt a MAM használatát támogató alkalmazások esetében a Microsoft Intune-nal.]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Az alkalmazások előkészítési módjai a mobilalkalmazás-kezeléshez a Microsoft Intune-nal.]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Mit tapasztalnak a végfelhasználók a MAM használatát támogató alkalmazások és a Microsoft Intune használata esetén?](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Annak eldöntése, hogyan készíti elő az alkalmazásokat a Microsoft Intune-nal történő mobilalkalmazás-kezelésre](/intune/apps-prepare-mobile-application-management)
 - [A Microsoft Intune-alkalmazáspartnerek listájának megtekintése](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

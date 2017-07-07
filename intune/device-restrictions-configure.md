@@ -1,7 +1,7 @@
 ---
 title: "Eszközkorlátozásokra vonatkozó beállítások konfigurálása az Intune-ban"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: További információ arról, hogyan használható az Intune a beállítások és funkciók a kezelt eszközökön való konfigurálásához."
+titleSuffix: Intune on Azure
+description: "A cikk azt ismerteti, hogyan használható az Intune a beállítások és funkciók kezelt eszközökön való konfigurálásához.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Az eszközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az eszközkorlátozások révén számos olyan kategóriában szabályozhatja a kezelt beállítások és funkciók széles körét, mint például a biztonsági, a böngésző-, a hardver- és az adatmegosztási beállítások. Létrehozhat például egy olyan eszközkorlátozási profilt, amely megakadályozza, hogy az iOS-eszközök felhasználói hozzáférjenek az eszköz kamerájához.
 
@@ -34,9 +31,9 @@ A témakörben található információk alapján megismerheti az eszközkorlát
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portal webhelyre.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+1. Jelentkezzen be az Azure Portalra.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az eszközkorlátozási profil **Nevét** és **Leírását**.
@@ -67,5 +64,4 @@ Ha szeretné a profilt csoportokhoz való hozzárendelésével folytatni, erről
 Ebben a magas szintű példában egy olyan eszközkorlátozási szabályzatot hozhat létre, amely letiltja a beépített kameraalkalmazás használatát az androidos eszközökön.
 
 ![A kamera letiltása androidos eszközökön](./media/disable-android-camera.png)
-
 

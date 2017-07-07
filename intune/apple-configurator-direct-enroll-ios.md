@@ -1,7 +1,7 @@
 ---
 title: "iOS-eszközök regisztrálása az Apple Configurator és közvetlen regisztráció használatával"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató a vállalati tulajdonban lévő iOS-eszközök az Apple Configuratorral való közvetlen regisztrációjához."
+titleSuffix: Intune on Azure
+description: "Útmutató a vállalati tulajdonban lévő iOS-eszközök az Apple Configuratorral való közvetlen regisztrációjához.”"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>iOS-eszközök regisztrálása az Apple Configurator és közvetlen regisztráció használatával 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune támogatja a vállalat által birtokolt iOS-eszközöknek a Mac számítógépen futó [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) segítségével történő regisztrálását. Ez a folyamat nem állítja vissza az eszköz gyári beállításait, és előre definiált szabályzattal regisztrálja azt. Ez a módszer azokon az eszközökön használható, amelyeken **nincs megadva felhasználói affinitás**. A módszer használatához az iOS-eszközt USB-kapcsolaton egy Mac géphez kell csatlakoztatni a vállalati regisztráció beállítása érdekében.
 
@@ -42,7 +39,7 @@ Az iOS-eszközök regisztrálásának további módjairól [Choose how to enroll
 
 Az iOS-eszközök regisztrációjának beállítása előtt teljesítse az alábbi előfeltételeket:
 
-- [Tartományok beállítása](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Tartományok beállítása](custom-domain-name-configure.md)
 - [Az MDM-szolgáltató beállítása](mdm-authority-set.md)
 - [Csoportok létrehozása](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [A Céges portál konfigurálása](company-portal-app.md)
@@ -102,4 +99,3 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 4. Az iOS-eszközön nyissa meg a **Beállítások** alkalmazást, majd válassza az **Általános** > **Eszközkezelés** > **Felügyeleti profil** lehetőséget. Ellenőrizze, hogy a profiltelepítés szerepel-e a listán, valamint ellenőrizze az iOS-házirend korlátozásait és a telepített alkalmazásokat. A házirend-korlátozások és alkalmazások megjelenítése az eszközön akár 10 percet is igénybe vehet.
 
 5. Eszközök terjesztése. Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-nal.
-

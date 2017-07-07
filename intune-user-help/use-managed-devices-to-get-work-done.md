@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
 
@@ -101,4 +97,3 @@ A Microsoft azt javasolja, hogy először próbálja meg saját maga megoldani a
 - [A Windows-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 
 Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a rendszergazdához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com).
-

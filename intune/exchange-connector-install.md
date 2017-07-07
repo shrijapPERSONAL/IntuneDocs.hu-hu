@@ -1,12 +1,12 @@
 ---
-title: "A helyszíni EAS Exchange-összekötője"
+title: "A helyszíni EAS Exchange Connector beállítása az Intune-ban"
 titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Exchange ActiveSync MDM – Az Intune felügyeleti konzol és a helyszíni Exchange Server közötti kommunikáció engedélyezése a Connector eszközzel"
+description: "Azure-beli Intune – előzetes: Exchange ActiveSync MDM – Az Intune és a helyszíni Exchange Server közötti kommunikáció engedélyezése a Connector eszközzel"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,24 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 317b88e289fce216916dfa4ec3890ba7c9559c16
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Az Intune helyszíni Exchange Connector telepítése az Azure-beli Microsoft Intune előzetesében
 
-# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Az Intune helyszíni Exchange-összekötőjének telepítése az Azure-beli Microsoft Intune előzetesében
+A helyszíni Exchange Server-környezetekben az Intune helyszíni Exchange Connectorral felügyelhető az eszközök helyszíni Exchange-postaládákhoz való hozzáférése az alapján, hogy az eszköz regisztrálva van-e az Intune-ban, és hogy kompatibilis-e az Intune eszközmegfelelőségi szabályzataival. A helyszíni Exchange Connector felelős a helyszíni Exchange Serverekhez kapcsolódó mobileszközök észleléséért is a meglévő Exchange Active Sync (EAS) rekord és az Intune szinkronizálásával.
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+> [!IMPORTANT]
+> Típustól függetlenül az Intune előfizetésenként csak egy helyszíni Exchange Connector kapcsolatot támogat.
 
+Ha engedélyezni szeretne egy kapcsolatot, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a helyszíni Exchange Serverrel, akkor kövesse az alábbi lépéseket:
 
-Olyan kapcsolat beállításához, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a mobileszközök postaládáit működtető Exchange-kiszolgálóval, le kell töltenie a helyszíni Exchange Connector összekötő eszközt, majd az Intune felügyeleti konzolról konfigurálnia kell azt. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-Connector kapcsolatot támogat.
+1.  Töltse le az Intune helyszíni Exchange Connectorát az Intune-portálról.
+2.  Telepítése és konfigurálja a helyszíni Intune Exchange Connectort.
+3.  Az Exchange-kapcsolat ellenőrzése.
 
 ## <a name="on-premises-exchange-connector-requirements"></a>A helyszíni Exchange Connector rendszerkövetelményei
 A következő táblázat a helyszíni Exchange Connector számítógépre vonatkozó követelményeit tartalmazza.
@@ -39,8 +42,8 @@ A következő táblázat a helyszíni Exchange Connector számítógépre vonatk
 |Operációs rendszerek|Az Intune a helyszíni Exchange Connectort olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, a Windows Server 2008 R2, a Windows Server 2012 vagy a Windows Server 2012 R2 rendszer valamelyik kiadása fut.<br /><br />Az összekötő Server Core rendszereken nem támogatott.|
 |Microsoft Exchange|A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára, vagy régi dedikált Exchange Online-ra van szükség. Lépjen kapcsolatba a fiókkezelővel annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **régi** konfigurációval rendelkezik-e.|
 |Mobileszköz-kezelő szolgáltató| [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
-|Hardver|Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie.|
-|Active Directory-szinkronizálás|Mielőtt az Intune-t a Connector segítségével csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával.|
+|Hardver|Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie.|users-permissions-add.md
+|Active Directory-szinkronizálás|Mielőtt az Intune-t a Connector segítségével csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](users-permissions-add.md), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával.|
 |További szoftverek|Az összekötőt futtató számítógépnek a Microsoft .NET-keretrendszer 4.5-ös és a Windows PowerShell 2.0-s verziójának teljes telepítésével kell rendelkeznie.|
 |Hálózat|Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Server-t üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com.|
 
@@ -65,17 +68,18 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Töltse le a helyszíni Exchange Connector szoftver telepítőcsomagját
 
-1. Egy, a helyszíni Exchange Connectort támogató Windows Server rendszerben nyissa meg az [Azure Portalt](http://portal.azure.com) olyan felhasználói fiókkal, amely rendszergazda az Exchange-bérlőben és van licence az Exchange Server használatához.
+1. Egy, a helyszíni Exchange Conectort támogató Windows Server rendszerben nyissa meg az [Azure Portalt](http://portal.azure.com), és jelentkezzen be egy olyan felhasználói fiókkal, amely rendszergazda a helyszíni Exchange Serveren, és van licence az Exchange Server használatához.
 
-2.  Válassza a **Feltételes hozzáférés** számítási feladatot.
-3.  Nyissa meg a **Helyszíni** panelt az Azure Portal **Feltételes hozzáférés** elemére kattintva.
+2. Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
-4. A **Beállítás** szakaszban válassza az **Exchange ActiveSync helyszíni összekötő**, majd az **On-Premises Connector letöltése** elemet.
+3. Az **Intune** kiválasztásával megnyílik az Intune irányítópult. Itt válassza a **Helyszíni hozzáférés** lehetőséget.
 
-4.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza, amelyet megnyithat vagy a számítógépre is menthet. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
+4. A **Helyszíni hozzáférés – Exchange ActiveSync-összekötő** panel **Beállítás** szakaszában válassza az **A helyszíni összekötő letöltése** elemet.
 
-> [!IMPORTANT]
-> Ne nevezze és ne helyezze át a helyszíni Exchange Connector mappájában levő fájlokat. A mappa tartalmának áthelyezése vagy átnevezése sikertelen telepítést eredményez.
+5.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza, amelyet megnyithat vagy a számítógépre is menthet. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
+
+    > [!IMPORTANT]
+    > Ne nevezze és ne helyezze át a helyszíni Exchange Connector mappájában levő fájlokat. A mappa tartalmának áthelyezése vagy átnevezése az Exchange Connector sikertelen telepítését eredményezi.
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>A helyszíni Intune Exchange Connector telepítése és konfigurálása
 A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi lépéseket. A helyszíni Exchange Connector Intune-előfizetésenként csak egyszer és csak egy számítógépre telepíthető. Ha a helyszíni Exchange Connector szoftverből további példányt próbál meg konfigurálni, akkor az új kapcsolat felváltja az eredeti kapcsolatot.
@@ -120,7 +124,8 @@ A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi
 
     8. Válassza a **Csatlakozás** elemet.
 
-A kapcsolat konfigurálása néhány percig is eltarthat.
+    > [!NOTE]
+    > A kapcsolat konfigurálása néhány percig is eltarthat.
 
 A konfiguráció alatt az Exchange Connector tárolja a proxybeállításait, hogy lehetővé tegye a kapcsolódást az internethez. Ha a proxybeállításai megváltoznak, az Exchange Connector ismételt konfigurálásával frissítenie kell az Exchange Connector proxybeállításait.
 
@@ -131,10 +136,11 @@ Miután az Exchange Connector létrehozta a kapcsolatot, azokat a mobileszközö
 
 ## <a name="validate-the-exchange-connection"></a>Az Exchange-kapcsolat ellenőrzése
 
-Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az [Azure Portalon](http://portal.azure.com) válassza az **Intune** > **Feltételes hozzáférés** számítási feladatot. A **Beállítás** szakaszban válassza az **Exchange helyszíni összekötő** elemet, majd ellenőrizze, hogy a kapcsolat aktívként jelenik-e meg.
+Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange Connector kapcsolatának ellenőrzése:
+
+- Az Intune irányítópultján válassza a **Helyszíni hozzáférés** lehetőséget. A kapcsolat állapotának ellenőrzéséhez a **Kezelés** alatt válassza a **Helyszíni Exchange-hozzáférés** lehetőséget.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
 
 ## <a name="next-steps"></a>További lépések
 [Feltételes hozzáférési szabályzat létrehozása helyszíni Exchange-hez](conditional-access-exchange-create.md)
-

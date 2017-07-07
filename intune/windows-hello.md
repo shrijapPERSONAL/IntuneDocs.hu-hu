@@ -1,7 +1,7 @@
 ---
 title: "A Vállalati Windows Hello használata"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató szabályzatok létrehozásához a Vállalati Windows Hello felügyelt eszközön való használatához."
+titleSuffix: Intune on Azure
+description: "Útmutató szabályzatok létrehozásához a Vállalati Windows Hello felügyelt eszközön való használatához.”"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,19 +15,16 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d375a40283a5f3c1e9b7302d659739d4ca3d508
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-windows-hello-for-business"></a>A Vállalati Windows Hello használata
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune integrálható a Vállalati Windows Hello (korábban Microsoft Passport for Work) nevű alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett.
 
@@ -100,4 +97,3 @@ A házirendek között felmerülő esetleges ütközések feloldásához és a P
 
 ## <a name="further-information"></a>További információ
 A Microsoft Passporttal kapcsolatos további információkért olvassa el a Windows 10 dokumentációjában található [útmutatót](https://technet.microsoft.com/library/mt589441.aspx).
-

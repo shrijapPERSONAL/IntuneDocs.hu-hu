@@ -1,5 +1,5 @@
 ---
-title: "Microsoft szoftverlicenc-szerződések Intune-szoftverügyfelet futtató számítógépekhez | Microsoft Docs"
+title: "Intune-ügyfélszoftvert futtató számítógépekhez tartozó szoftverlicenc-szerződések kezelése"
 description: "Az Intune lehetővé teszi a Microsoft mennyiségi licencszerződéseinek keretében beszerzett, vagy egyéb módon megvásárolt szoftverek licencszerződéseinek kezelését."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Windows-számítógépes szoftverek licencszerződéseinek kezelése a Microsoft Intune-ban
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Microsoft Intune a Microsoft mennyiségi licencszerződéssel vásárolt szoftverek licencszerződés-információinak felvételét és kezelését teszi lehetővé. Ugyanez lehetséges a Microsofttól vagy nem Microsofttól származó, egyéb módon vásárolt szoftverek esetében is. Ezek az információk logikai csoportokba rendezhetők.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ A szoftverlicenc-szerződéseket licenccsoportokhoz lehet hozzáadni. A licenccs
 |Licenccsoport átnevezése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd válassza a **Feladatok** menü **Licenccsoport szerkesztése** elemét.|
 |Licenccsoport törlése|Válasszon egy licenccsoportot a **Licencek** munkaterületen, majd válassza a **Feladatok** menü **Licenccsoport törlése** parancsát. **Tipp:** a törölt csoportban lévő összes licenc a **Hozzá nem rendelt szerződések** licenccsoportba kerül.|
 |Licencszerződések törlése|A **Licencek** munkaterületen válasszon egy szerződést, majd válassza a **Törlés** elemet. **Tipp:** Mennyiségi licencszerződések törlése után a licencinformációk frissítéséhez válassza a **Licencek áttekintése** lap vagy az adott licenccsoport **Általános** lapjának **Frissítés most** elemét.|
-

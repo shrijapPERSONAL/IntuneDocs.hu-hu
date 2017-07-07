@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>Konfigurációt követő feladatok
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ A fizetős Intune előfizetés kezdeti konfigurációs lépéseinek elvégzésé
 -   **Intune-jelentések:** A Microsoft Intune olyan riasztásokat és jelentéseket biztosít, amelyek megkönnyítik az eszközök figyelését, valamint a szoftverlicencek állapotának és az eszközöket érintő műveleteknek (például az eszközön lévő adatok törlésének) a monitorozását.  A jelentésekkel kapcsolatos további információkért lásd: [A Microsoft Intune-műveletek értelmezése jelentések segítségével](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
 
 -   **A vállalati erőforrások védelme:** Az Intune konfigurálását és az eszközök regisztrálását követően győződjön meg arról, hogy az eszközök védve vannak az adatvesztéssel és más fenyegetésekkel szemben. Az erőforrások védelméről az [Alkalmazások és adatok védelme a Microsoft Intune-nal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune) című cikk nyújt további tájékoztatást.
-

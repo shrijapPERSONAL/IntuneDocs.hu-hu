@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Windows-eszközt a Vállalati portálon?
 
 Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset-erase-your-device-cpwebsite.md) használja a Windows-eszköz alaphelyzetbe állításához, a művelet visszaállítja az eszközt annak gyári állapotába, és törli az összes alkalmazást, beállítást és adatot, a személyes adatokat is beleértve. Az, hogy az adott eszközön mi történik, az eszköz típusától és használati módjától függ (erről részletes információk az alábbi táblázatban láthatók). Az elveszett vagy ellopott eszköz alaphelyzetbe állításával kapcsolatos útmutatásokért lásd: [Elveszett vagy ellopott eszköz alaphelyzetbe állítása (tartalmának végleges törlése)](reset-erase-your-device-cpwebsite.md).
@@ -38,4 +33,3 @@ Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset
 |Számítógépek és laptopok|**Windows 8.1 és Windows 8**<br />Windows 8 vagy Windows 8.1 rendszert futtató számítógép nem állítható alaphelyzetbe, kivéve, ha kizárólag e-mailek elérésére használják.<br /><br />**Windows 7 vagy Windows Vista**<br />Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.|
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

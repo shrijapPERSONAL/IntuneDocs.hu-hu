@@ -1,5 +1,5 @@
 ---
-title: "A Mac OS X-szabályzatok beállításai | Microsoft Docs"
+title: "Mac OS X-szabályzatbeállítások"
 description: "Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 176f4343030c242d928aaeb486dfad78e1058644
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f4f1660f93724ee57f2d6567c2ac0f04660f49f8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -123,4 +120,3 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

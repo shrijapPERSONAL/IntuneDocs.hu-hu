@@ -1,5 +1,5 @@
 ---
-title: "A SharePoint Online védelme | Microsoft Docs"
+title: "A SharePoint Online védelme"
 description: "Feltételes hozzáféréssel védheti és kezelheti a vállalati adatokhoz való hozzáférést a SharePoint Online-on."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: e22686964df7415ece75361a645103006af43c51
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>A SharePoint Online-hoz való hozzáférés védelme a Microsoft Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -146,7 +143,7 @@ Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltétele
         Ha ezt a beállítást szeretné használni, a **SharePoint Online** elérésére használt összes eszközt regisztrálni kell az Intune-ban, és ezeknek meg kell felelniük a szabályzatoknak. Minden **modern hitelesítést** használó ügyfélalkalmazás a feltételes hozzáférési szabályzat hatálya alá tartozik. Ha a platformot az Intune jelenleg nem támogatja, akkor a **SharePoint Online**-hoz sem lehet róla hozzáférni.
 
         A **Minden platform** beállítás kiválasztása esetén az Azure Active Directory minden hitelesítési kérelemre alkalmazza a szabályzatot, az ügyfélalkalmazás által jelentett platformtól függetlenül. Az alábbiakat kivéve minden platform köteles regisztrálni, illetve megfelelni a szabályzatoknak:
-        *    Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
+        *   Azok a Windows-eszközök, amelyeket regisztrálni kell, illetve amelyeknek meg kell felelniük a szabályzatoknak, akár tartományhoz csatlakoznak, akár helyszíni Active Directoryt használnak, akár mindkettő igaz rájuk.
         * Nem támogatott platformok, például a Mac. Azonban az ezekről a platformokról származó, de modern hitelesítést használó alkalmazások továbbra is le lesznek tiltva.
 
     -   **Megadott platformok**
@@ -197,4 +194,3 @@ Válassza ki a kívánt mobileszközök csoportját. Ezután az **Eszközök** l
 
 ### <a name="see-also"></a>További információ
 [Az e-mailek és az O365-szolgáltatások elérésének védelme a Microsoft Intune-ban](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-

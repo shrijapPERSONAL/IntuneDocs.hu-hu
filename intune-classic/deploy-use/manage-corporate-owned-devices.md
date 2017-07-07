@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>A vállalati tulajdonú eszközök regisztrálása az Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Az Intune az alábbi feltételek bármelyikének teljesülése esetén „céges
  - Az eszköz regisztrálva van az [Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (csak Windows 10 esetén).
 
 Ha egy eszköz vállalati tulajdonúként lett megjelölve, az eszköz bejegyzésénél a **Céges** szöveg jelenik meg a **Tulajdonos** oszlopban a felügyeleti konzolon. 
-

@@ -1,12 +1,12 @@
 ---
 title: "Az Intune eszközfunkció-beállításainak konfigurálása"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: További információ arról, hogyan lehet az Intune-nal konfigurálni a felügyelt eszközök funkcióit."
+titleSuffix: Intune on Azure
+description: "A cikk azt ismerteti, hogyan használható az Intune a funkciók kezelt eszközökön való konfigurálásához.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f584d76a498264f8ab1cf883f5ee95d52d3446d3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f286119019bb26d8851c766a9d88ad818d7e600b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Az eszközfunkció-beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az eszközkorlátozásokkal lehet szabályozni az iOS- és macOS-eszközök funkcióit, például az AirPrintet, az értesítéseket és a megosztott eszközkonfigurációkat.
 
@@ -34,8 +31,8 @@ A témakörben található információk alapján megismerheti az eszközfunkci�
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portal webhelyre.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az Azure Portalra.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
@@ -46,16 +43,16 @@ A témakörben található információk alapján megismerheti az eszközfunkci�
 6. A **Profil típusa** legördülő listában válassza az **Eszközfunkciók** lehetőséget. 
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
     - [AirPrint-beállítások iOS-re és MacOS-re](air-print-settings-ios-macos.md)
-     - [AirPlay-beállítások iOS-re](airplay-settings-ios.md)
+    - [AirPlay-beállítások iOS-re](airplay-settings-ios.md)
     - [Kezdőképernyő-elrendezési beállítások iOS-re](home-screen-settings-ios.md)
     - [Alkalmazások értesítési beállításai iOS-re](app-notification-settings-ios.md)
     - [Közös használatú eszközök konfigurációs beállításai iOS-re](shared-device-settings-ios.md)
+    - [Webtartalomszűrő-beállítások iOS-re](web-content-filter-settings-ios.md)
 
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
-
 
 
 

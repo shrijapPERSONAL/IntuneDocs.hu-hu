@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 rendszerű eszköz regisztrálása az Intune-ban
 
   > [!NOTE]
@@ -67,4 +63,3 @@ Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következ
 3. Az eredménylistában válassza a **Céges portál** > **Telepítés** elemet.
 
 4. Válassza a **Telepítés** vagy az **Ingyenes** lehetőséget. Ön számára nincs különbség a két lehetőség között, a választás attól függ, hogy a munkahelye hogyan állította be a Céges portál alkalmazást.
-

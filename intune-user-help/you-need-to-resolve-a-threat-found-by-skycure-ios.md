@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: c7cdb0106da1d81843f7dd07d0986d597b94a77c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>El kell hárítania a Skycure által azonosított fenyegetést
 
 A Skycure potenciális fenyegetést talált az Ön eszközén. Csak akkor férhet ismét hozzá vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, ha elhárította a problémát. A következőhöz hasonló üzenetet fog látni:
@@ -49,4 +45,3 @@ Koppintson az alkalmazás nevére a képernyő tetején, és az utasítások ala
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

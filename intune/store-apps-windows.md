@@ -1,7 +1,7 @@
 ---
 title: "Windows áruházbeli alkalmazások hozzáadása az Intune-hoz"
-titleSuffix: Intune Azure preview
-description: "Intune Azure előzetes verzió: Útmutató Windows Áruházbeli alkalmazások hozzáadásához az Intune-ban."
+titleSuffix: Intune on Azure
+description: "Útmutató Windows Áruházbeli alkalmazások Intune-ba való felvételéhez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5ae37b805ee2ddb6b6720190cbe4918d5b793818
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Jelentkezzen be az Azure Portalra.
@@ -107,4 +105,3 @@ Itt ismertetjük az alkalmazás aláírásának és hozzárendelésének ezt a m
 |PublisherId |A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.|
 |SdkPath | A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10|
 A parancsfájl kimenete a futtatás végeztével a Windows 10-es Céges portál alkalmazás aláírt verziója lesz. Ekkor az Intune-on keresztül rendelheti hozzá az alkalmazás aláírt verzióját LOB-alkalmazásként, ami frissíteni fogja a jelenleg hozzárendelt verziókat erre az új alkalmazásra.  
-

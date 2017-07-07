@@ -1,12 +1,12 @@
 ---
 title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Az eszközök regisztrálásával kapcsolatos problémák elhárítása."
+titleSuffix: Intune on Azure
+description: "Az eszközök regisztrálásával kapcsolatos problémák elhárítása."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megoldásához nyújt segítséget. Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) című témakörben talál további részleteket a segítségkéréshez.
 
@@ -102,8 +99,8 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 1.  Ellenőrizze, hogy a mobileszköz-kezelési szolgáltató megfelelően be van-e állítva a használt Intune szolgáltatáshoz, az Office 365-höz vagy a System Center Configuration Managerbe integrált Intune-hoz. További útmutatásért tekintse meg a [Mobileszköz-felügyeleti szolgáltató megadása](mdm-authority-set.md) című témakört.
 
-    > [!NOTE]
-    > Ha egyszer már megadta a mobileszköz-kezelési szolgáltatót, azt csak az ügyfélszolgálaton keresztül tudja módosítani a [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) (Hogyan kérhet támogatást a Microsoft Intune-hoz) című cikkben leírtak szerint.
+    > [!NOTE]    
+    > A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a meglévő felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információért tekintse meg a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című részt.
 
 2.  Győződjön meg arról, hogy a rendszer megfelelően szinkronizálta a felhasználói hitelesítő adatokat az Azure Active Directoryval. Ehhez ellenőrizze, hogy az egyszerű felhasználónevük megegyezik-e az Active Directory adataival a fiókportálon.
     Ha a felhasználónév nem egyezik meg az Active Directory adataival:
@@ -222,16 +219,16 @@ A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél
 
 A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
 
-1.    Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
-2.    Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
-3.    Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
-4.    Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
-5.    Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
-6.    Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
-7.    A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
-8.    Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
-9.    Indítsa újra az AD FS-kiszolgálókat.
-10.    Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
+1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
+3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
+4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
+6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
+7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
+8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
+9.  Indítsa újra az AD FS-kiszolgálókat.
+10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
 A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
 
 **A tanúsítványok megfelelő telepítésének ellenőrzése**:
@@ -255,7 +252,7 @@ Ha a kiszolgálótanúsítványt megfelelően telepítette, az eredményeknél c
 
 **Megoldás:** Az alábbi megoldások megosztásával segíthet a végfelhasználóknak visszaszerezni a vállalati erőforrásokhoz való hozzáférési jogosultságukat.
 
-Amikor a felhasználók elindítják a Vállalati portál iOS-alkalmazást, megállapítható, hogy az eszköz kapcsolata megszakadt-e az Intune-nal. Ha az alkalmazás azt észleli, hogy nincs kapcsolat, automatikusan megpróbál szinkronizálni az Intune-nal az újrakapcsolódáshoz, és a felhasználók a következő értesítést fogják látni: **A szinkronizálási kísérlet folyamatban van...** beágyazott értesítés. 
+Amikor a felhasználók elindítják a Vállalati portál iOS-alkalmazást, megállapítható, hogy az eszköz kapcsolata megszakadt-e az Intune-nal. Ha az alkalmazás azt észleli, hogy nincs kapcsolat, automatikusan megpróbál szinkronizálni az Intune-nal az újrakapcsolódáshoz, és a felhasználók a következő értesítést fogják látni: **A szinkronizálási kísérlet folyamatban van...** beágyazott értesítés.
 
   ![A szinkronizálási kísérlet folyamatban van – értesítés](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +260,11 @@ Ha a szinkronizálás sikeres, a **Sikeres szinkronizálás** beágyazott értes
 
   ![Sikeres szinkronizálás – értesítés](./media/ios_cp_app_sync_successful_notification.png)
 
-Ha a szinkronizálás sikertelen, a felhasználók a **Nem lehet szinkronizálni** beágyazott értesítést fogják látni a Vállalati portál iOS-alkalmazásban. 
+Ha a szinkronizálás sikertelen, a felhasználók a **Nem lehet szinkronizálni** beágyazott értesítést fogják látni a Vállalati portál iOS-alkalmazásban.
 
   ![Nem lehet szinkronizálni – értesítés](./media/ios_cp_app_unable_to_sync_notification.png)
 
-A probléma elhárításához a felhasználóknak a **Nem lehet szinkronizálni** értesítés jobb oldalán lévő **Beállítás** gombot kell használniuk. A Beállítás gomb használatával a felhasználók a Vállalati hozzáférés beállítása folyamatképernyőre kerülnek, ahol a képernyőn megjelenő utasítások követésével regisztrálhatják az eszközüket. 
+A probléma elhárításához a felhasználóknak a **Nem lehet szinkronizálni** értesítés jobb oldalán lévő **Beállítás** gombot kell használniuk. A Beállítás gomb használatával a felhasználók a Vállalati hozzáférés beállítása folyamatképernyőre kerülnek, ahol a képernyőn megjelenő utasítások követésével regisztrálhatják az eszközüket.
 
   ![A Vállalati hozzáférés beállítása képernyő](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +310,7 @@ Regisztráció után az eszközök ismét kifogástalan állapotba kerülnek, é
 3. Indítsa újra az SMS Executive szolgáltatást vagy a CM-kiszolgálót.
 
 4. Szerezzen be egy új APN-tanúsítványt, majd töltse fel. Ehhez kattintson a jobb gombbal az Intune-előfizetésre a Configuration Manager bal oldali ablaktáblájában. Válassza az **APN szolgáltatás tanúsítványkérésének létrehozása** parancsot, és kövesse az utasításokat.
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problémák a System Center Configuration Managerbe integrált Intune használatakor
 
 ### <a name="mobile-devices-disappear"></a>Mobileszközök tűnnek el
@@ -362,7 +359,7 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 
     > [!IMPORTANT]
     > Ez a szakasz, módszer vagy feladat olyan lépéseket tartalmaz, amelyekkel módosítja a beállításjegyzéket. A beállításjegyzék nem megfelelő módosítása azonban súlyos hibákat okozhat. Ezért ügyeljen arra, hogy pontosan kövesse a leírtakat. További biztonsági intézkedésként a módosítások végrehajtása előtt készítsen biztonsági másolatot a beállításjegyzékről. Így probléma esetén helyreállíthatja a beállításjegyzéket.
-    > Ha további tájékoztatásra van szüksége a beállításjegyzék biztonsági mentéséről és visszaállításáról, olvassa el [A beállításjegyzék biztonsági mentése és visszaállítása Windows rendszerben](https://support.microsoft.com/en-us/kb/322756) című témakört.
+    > Ha további tájékoztatásra van szüksége a beállításjegyzék biztonsági mentéséről és visszaállításáról, olvassa el [A beállításjegyzék biztonsági mentése és visszaállítása Windows rendszerben](https://support.microsoft.com/kb/322756) című témakört.
 
 ## <a name="general-enrollment-error-codes"></a>Általános beléptetési hibakódok
 
@@ -382,7 +379,7 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 |0x80043008, 0x80CF3008|Nem sikerült elindítani a Microsoft Online Management Updates szolgáltatást.|Lépjen kapcsolatba a Microsoft ügyfélszolgálatával a [Hogyan kérhet támogatást az Intune-hoz](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) című szakaszban leírtak szerint.|
 |0x80043009, 0x80CF3009|Az ügyfélszámítógép már be van léptetve a szolgáltatásba.|Az ügyfélszámítógépet el kell távolítania, mielőtt újból beléptetheti a szolgáltatásba.|
 |0x8004300B, 0x80CF300B|Az ügyfélszoftver telepítési csomagja nem futtatható, mert az ügyfélen futó Windows-verzió nem támogatott.|Az Intune nem támogatja az ügyfélszámítógépen futó Windows-verziót.|
-|0xAB2|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibáinak elhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038) (Hasznos eszközök csomag- és telepítési problémák esetére).|
+|0xAB2|A Windows Installer nem tud hozzáférni a VBScript futtatókörnyezethez egy egyéni művelet végrehajtásához.|A hibát egy egyéni művelet okozza, amely dinamikus kötésű kódtárakon (DLL-eken) alapul. Előfordulhat, hogy a DLL hibáinak elhárításához a következő témakörben ismertetett eszközöket kell használnia: [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038) (Hasznos eszközök csomag- és telepítési problémák esetére).|
 |0x80cf0440|Megszakadt a kapcsolat a szolgáltatásvégponttal.|A próbafiók vagy a díjköteles fiók fel van függesztve. Hozzon létre egy új próbafiókot vagy díjköteles fiókot, és végezze el újból a regisztrálást.|
 
 
@@ -390,4 +387,3 @@ Ennek a hibának az lehet az oka, hogy a számítógép korábban már volt regi
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) című témakörben leírtak szerint.
-

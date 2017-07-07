@@ -5,28 +5,24 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="send-errors-to-your-it-admin"></a>Hibák elküldése a rendszergazdának
+# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Hibák elküldése a rendszergazdának az iOS-eszköz problémái alapján
 
 Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás használata során, a probléma megoldása végett elküldheti a rendszergazdának kapcsolódó információkat. Ez többféleképpen is lehetséges:
 
@@ -36,7 +32,4 @@ Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás ha
 
 -   A Céges portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson a **Diagnosztikai jelentés küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
 
-Ha a naplók elküldésének ez a módja nehézségekbe ütközik, próbálja meg [a naplókat e-mailben elküldeni a rendszergazdának](send-logs-to-your-it-admin-by-email-iOS.md).
-
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

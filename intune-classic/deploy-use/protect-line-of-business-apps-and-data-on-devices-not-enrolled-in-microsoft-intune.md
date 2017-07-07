@@ -1,5 +1,5 @@
 ---
-title: "Üzletági (LOB) alkalmazások védelme nem regisztrált eszközökön | Microsoft Docs"
+title: "Üzletági (LOB) alkalmazások védelme nem regisztrált eszközökön"
 description: "Ez a témakör azt ismerteti, hogyan készítheti elő az egyéni üzletági alkalmazásait arra, hogy alkalmazhassa az adatveszteség megakadályozását segítő mobilalkalmazás-kezelési szabályzatokat."
 keywords: 
 author: mtillman
@@ -14,29 +14,26 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Az üzleti alkalmazások és az adatok védelme a Microsoft Intune-ban nem regisztrált eszközökön
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A mobilalkalmazás-felügyeleti (Mobile app management, MAM) szabályzatok azzal segítenek megvédeni a vállalati adatokat, hogy korlátozzák a vállalati adatok kiszivárgását kockáztató műveleteket, és betartatják az adatelérési követelményeket, például megkövetelik az alkalmazás PIN-kódját. A MAM-szabályzatok iOS és Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást. Az alkalmazásburkolás az a folyamat, amely során kezelési réteggel lát el egy mobilalkalmazást anélkül, hogy a mögöttes alkalmazást bárhogyan módosítaná. Az alkalmazást a burkolása után MAM-szabályzattal láthatja el, és kioszthatja felhasználói között.  
+A mobilalkalmazás-felügyeleti (Mobile app management, MAM) szabályzatok azzal segítenek megvédeni a vállalati adatokat, hogy korlátozzák a vállalati adatok kiszivárgását kockáztató műveleteket, és betartatják az adatelérési követelményeket, például megkövetelik az alkalmazás PIN-kódját. A MAM-szabályzatok iOS és Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást. Az alkalmazásburkolás kezelési réteg alkalmazása a mobilalkalmazásra anélkül, hogy bármilyen chan/intune/apps-prepare-mobile-application-managementes szükséges lenne, és annak elosztása a felhasználók számára.  
 
-Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti eszközökön** és a **harmadik fél által nyújtott mobileszköz-kezelési (MDM) megoldások** által felügyelt eszközökön futó alkalmazásokhoz való hozzárendelését.  Az **Intune MDM-ben regisztrált eszközökön futó üzleti alkalmazások** előkészítéséhez tekintse meg az [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) című cikket.
+Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti eszközökön** és a **harmadik fél által nyújtott mobileszköz-kezelési (MDM) megoldások** által felügyelt eszközökön futó alkalmazásokhoz való hozzárendelését.  Az **Intune MDM-ben regisztrált eszközökön futó üzleti alkalmazások** előkészítéséhez tekintse meg az [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/intune/apps-prepare-mobile-application-management) című cikket.
 
 
 ##  <a name="step-1-prepare-the-app"></a>1. lépés: Az alkalmazás előkészítése
 
-Mielőtt alkalmazná a MAM-szabályzatokat egy alkalmazásra, be kell burkolnia az [iOS-hez](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Androidhoz](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) készült Microsoft Intune alkalmazásburkolóval, vagy a [Intune App SDK](../develop/intune-app-sdk.md) segítségével manuálisan integrálnia kell az Intune alkalmazásvédelmi funkcióit.
+A MAM-szabályzatok alkalmazása előtt be kell csomagolnia az alkalmazást a Microsoft Intune [iOS] rendszerhez készült alkalmazásburkoló eszközéve (prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android), vagy használja az [Intune App SDK](/intune/app-sdk) szoftvert az Intune alkalmazásvédelmi funkciók manuális előkészítéséhez.
 
-További információ az alkalmazásburkoló eszközről és az SDK-ról: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+További információ az alkalmazásburkoló eszközről és az SDK-ról: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/intune/apps-prepare-mobile-application-management).
 
 ## <a name="step-2-add-the-app"></a>2. lépés: Az alkalmazás hozzáadása
 
@@ -49,7 +46,7 @@ Ha üzletági alkalmazását MAM-szabályzattal szeretné ellátni, az alkalmaz�
 2. Az **Üzletági alkalmazások** panelen válassza az **Egyéni alkalmazás hozzáadása** lehetőséget.
 
   ![Képernyőkép az üzletági alkalmazások panelről az Egyéni alkalmazás hozzáadása gombbal](../media/mam-azure-portal-add-lob-app-action.png)
-3.    Adjon nevet az alkalmazásnak, valamint adja meg a csomagazonosítót az Alkalmazásazonosító mezőben, valamint a platformot (iOS vagy Android).
+3.  Adjon nevet az alkalmazásnak, valamint adja meg a csomagazonosítót az Alkalmazásazonosító mezőben, valamint a platformot (iOS vagy Android).
 
   ![Képernyőfelvétel a Egyéni alkalmazás hozzáadása panelről](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,13 +71,12 @@ Ha módosítani szeretné az alkalmazás adatait, például az alkalmazás nevé
 ##  <a name="remove-apps"></a>Alkalmazások eltávolítása
 Az üzletági alkalmazásokat az alkalmazáslistából távolíthatja el. Ezzel eltávolítja az alkalmazást a listából és megszünteti a MAM-szabályzatokhoz való hozzárendelést, de nem törli az alkalmazást a felhasználó eszközéről.  
 
-1.    Az [Azure-portálon](https://portal.azure.com/) válassza az **Intune mobilalkalmazás-kezelés** > **Beállítások** lehetőséget. A **Beállítások** panelen válassza az **Üzletági** lehetőséget a meglévő alkalmazások listájának megnyitásához.  
-2.    Válassza ki az eltávolítani kívánt alkalmazást, és válassza a **(...) helyi** menüt.
+1.  Az [Azure-portálon](https://portal.azure.com/) válassza az **Intune mobilalkalmazás-kezelés** > **Beállítások** lehetőséget. A **Beállítások** panelen válassza az **Üzletági** lehetőséget a meglévő alkalmazások listájának megnyitásához.  
+2.  Válassza ki az eltávolítani kívánt alkalmazást, és válassza a **(...) helyi** menüt.
 
   ![Képernyőkép az üzletági alkalmazások panelről a három ponttal](../media/mam-azure-portal-lob-context-menu.png)
-3.    Válassza az **Alkalmazás törlése** lehetőséget az alkalmazás törléséhez.
+3.  Válassza az **Alkalmazás törlése** lehetőséget az alkalmazás törléséhez.
 
   ![Képernyőkép az üzletági panelről az alkalmazás törlése lehetőséggel](../media/mam-azure-portal-delete-app.png)
 
   Ez eltávolítja az alkalmazást az üzletági alkalmazások listájából és a MAM-szabályzat Célzott alkalmazáslistájából.
-

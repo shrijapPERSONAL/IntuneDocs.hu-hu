@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-ios-device"></a>Telepítenie kell a Skycure alkalmazást iOS-es eszközére
 
 A rendszergazda csak a Skycure alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében. Elképzelhető, hogy különböző üzenetek jelennek meg az eszköz kijelzőjén attól függően, hogy a rendszergazda hogyan állította be a Skycure alkalmazást.
 
 **A következőket kell tennie:**
 
-1.    Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Skycure telepítését az eszközön.
+1.  Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Skycure telepítését az eszközön.
 
   ![A Telepítés gombra koppintva telepítse a Skycure-t](./media/ios-mtd-install-app-request.png)
 
@@ -57,4 +53,3 @@ Ha a Skycure biztonsági fenyegetést talál eszközén, megjeleníti a problém
 **Ha sikertelen a telepítés**
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
 
 Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailjeihez, az alkalmazásaihoz és az egyéb munkahelyi adataihoz. A regisztráció részeként egy munkahelyi profilt állít be, amely elkülöníti az eszközön lévő személyes adatokat a munkahelyi adatoktól. A rendszergazdák csak a munkahelyi adatokat tartalmazó munkahelyi profilt kezelhetik. Az eszközön lévő személyes adatokhoz nem férhetnek hozzá. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
@@ -88,4 +83,3 @@ Munkahelyi profil létrehozása:
     ![Play Store for Work alkalmazások lap](./media/andr-afw-tap-work-play-store-icon.png)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
