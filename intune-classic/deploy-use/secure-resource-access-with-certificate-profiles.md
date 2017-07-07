@@ -1,5 +1,5 @@
 ---
-title: "Tanúsítványprofilok az erőforrások eléréséhez | Microsoft Docs"
+title: "Tanúsítványprofilok az erőforrások eléréséhez"
 description: "Biztonságos VPN-, Wi-Fi- és e-mailes hozzáférés az egyes eszközökre telepített tanúsítványok segítségével."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dd6e5971d084773640c577cace43c2f011dbb69
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5570c13b9ca1782b12ad7ca718d18c98bda7bbfa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Az erőforrások biztonságos elérése a Microsoft Intune tanúsítványprofiljai segítségével
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Mindegyik platformhoz különálló profilt kell létrehoznia. A profil létreho
 - [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md)
 - [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md)
 - [Intune-tanúsítványprofilok konfigurálása](configure-intune-certificate-profiles.md)
-

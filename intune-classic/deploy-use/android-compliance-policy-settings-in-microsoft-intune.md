@@ -1,5 +1,5 @@
 ---
-title: "Megfelelőségi szabályzat beállításai Androidhoz | Microsoft Docs"
+title: "Megfelelőségi szabályzat beállításai Androidhoz"
 description: "Ez a témakör bemutatja az eszközmegfelelőségi szabályzat beállításait Android-eszközökhöz."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 06996ca5d6c330357d6fdee19963d425bc353070
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc698998491fa56769376c013fb76ac75b5627bb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Android-eszközökhöz a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +86,3 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
   Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
 - **Maximálisan engedélyezett operációsrendszer-verzió:** Ha egy eszköz a szabályban megadott legmagasabb operációsrendszer-verziónál újabbat használ, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz nem használható a vállalati erőforrások elérésére, amíg a szabályt nem módosítják úgy, hogy engedélyezze az operációs rendszer verzióját.
-

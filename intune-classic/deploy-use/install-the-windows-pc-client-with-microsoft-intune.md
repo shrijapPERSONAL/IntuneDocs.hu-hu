@@ -1,6 +1,5 @@
 ---
-
-title: "A PC-s ügyfélszoftver telepítése | Microsoft Docs"
+title: "PC-s ügyfélszoftver telepítése"
 description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését."
 keywords: 
 author: nathbarn
@@ -14,16 +13,16 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítésével regisztrálhatók. Az Intune-ügyfélszoftver a következő módszerekkel telepíthető:
 
 - A rendszergazda által az alábbi három módszer egyikével: manuális telepítés, Csoportházirenddel vagy lemezkép részeként történő telepítéssel
@@ -261,4 +260,3 @@ A regisztrációtörlési folyamat nem távolítja el az OnlineManagement nevű 
 ### <a name="see-also"></a>További információ
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 [Az ügyfél beállításának hibaelhárítása](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-

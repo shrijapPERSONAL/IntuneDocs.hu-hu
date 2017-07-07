@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy iOS-eszközt a Vállalati portálon?
 
 Ha a vállalati portál segítségével alaphelyzetbe állítja saját eszközét, az eszközön található beállítások és alkalmazások egy része törlődhet, köztük egyes személyes adatok is. Az, hogy az adott eszközön mi történik, az eszköz használati módjától függ – erről részletes információk az alábbi listákban láthatók.
@@ -44,4 +39,3 @@ Ha a vállalati portál segítségével alaphelyzetbe állítja saját eszközé
 -   Vállalati e-mail fiókja és a nem mentett e-mailek törlődnek.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

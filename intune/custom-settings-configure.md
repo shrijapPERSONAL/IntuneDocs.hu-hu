@@ -1,12 +1,12 @@
 ---
 title: "Egyéni eszközbeállítások konfigurálása az Intune-ban"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: További információ arról, hogyan használható az Intune az egyéni beállítások a felügyelt eszközökön való konfigurálásához."
+titleSuffix: Intune on Azure
+description: "Információ arról, hogyan használható az Intune az Ön által kezelt eszközök egyéni beállításainak konfigurálására."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>Mikor kell egyéni beállításokat használni?
 
@@ -38,7 +35,7 @@ A témakörben található információk alapján megismerheti az egyéni beáll
 ## <a name="create-a-device-profile-containing-custom-settings"></a>Az egyéni beállításokat tartalmazó eszközprofil létrehozása
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
@@ -53,7 +50,7 @@ A témakörben található információk alapján megismerheti az egyéni beáll
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
     - [Android-beállítások](custom-settings-android.md)
     - [iOS-beállítások](custom-settings-ios.md)
-    - [macOS-beállítások](custom settings-macos.md)
+    - [macOS-beállítások](custom-settings-macos.md)
     - [Windows Phone 8.1-beállítások](custom-settings-windows-phone-8-1.md)
     - [Windows 10-beállítások](custom-settings-windows-10.md)
     - [Az Android for Work beállításai](custom-settings-android-for-work.md)
@@ -61,4 +58,3 @@ A témakörben található információk alapján megismerheti az egyéni beáll
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
-

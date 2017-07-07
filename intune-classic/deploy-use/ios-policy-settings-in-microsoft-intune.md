@@ -1,5 +1,5 @@
 ---
-title: "Az iOS szabályzatbeállításai | Microsoft Docs"
+title: "iOS-es szabályzatbeállítások"
 description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-szabályzatbeállítások a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Adatok iCloudba való szinkronizálásának engedélyezése a felügyelt alkalmazások számára**|Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.|
 |**Tevékenységek más eszközön való folytatásának engedélyezése a Handoff számára**|Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy másik Mac OS X rendszerű gépen elkezdett munkát.|
 |**Fényképek iCloudban való megosztásának engedélyezése**|A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.|
-|**iCloud-fotókönyvtár engedélyezése**|A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.    Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.|
+|**iCloud-fotókönyvtár engedélyezése**|A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.   Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.|
 
 ### <a name="application-settings-for-the-browser"></a>Alkalmazásbeállítások a böngésző számára
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
@@ -387,4 +384,3 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

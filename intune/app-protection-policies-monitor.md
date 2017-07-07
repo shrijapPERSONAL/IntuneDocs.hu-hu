@@ -1,7 +1,7 @@
 ---
 title: "Az alkalmazásvédelmi szabályzatok figyelése"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Megtudhatja, hány felhasználóra érvényes a szabályzat, és megjelenítheti a részleteket."
+titleSuffix: Intune on Azure
+description: "Megtudhatja, hány felhasználóra érvényes a szabályzat, és lefúrással megjelenítheti a részleteket.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Ha nem az Azure-beli Intune előzetesét használja**, ez a témakör ismerteti az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) a klasszikus Intune-konzolon.
+**Ha nem az Azure Portal webhelyet használja**, ez a témakör ismerteti az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) a klasszikus Intune-konzolon.
 
 
 Az [Azure Portal](https://portal.azure.com) Intune alkalmazásvédelem paneljén figyelheti a felhasználókra alkalmazott mobilalkalmazás-kezelési (MAM) szabályzatok megfelelőségi állapotát. Itt információkat találhat a MAM-szabályzatok által érintett felhasználókról, azok megfelelőségi állapotáról, valamint a felhasználók által esetlegesen tapasztalt problémákról.
@@ -43,7 +40,7 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 ## <a name="summary-view"></a>Összesített nézet
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 4. A **Mobilalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelmi felhasználó állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
 
@@ -139,4 +136,3 @@ Az alkalmazásvédelmi jelentés létrehozásához kövesse az alábbi lépések
 
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-android.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-ios.md)
-
