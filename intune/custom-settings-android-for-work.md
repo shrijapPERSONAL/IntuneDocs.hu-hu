@@ -1,7 +1,7 @@
 ---
 title: "Egyéni Intune profilbeállítások Android for Work rendszerhez"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató Android for Work-eszközök egyéni Intune profilbeállításainak létrehozásához."
+titleSuffix: Intune on Azure
+description: "Információk az Android for Work-eszközök egyéni Intune-profilbeállításainak létrehozásáról."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: cd81e911dd1ab7c5d166ee14f2e184ebd54a18df
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work-eszközök egyéni Intune profilbeállításainak létrehozása
 
 Az Intune Android for Work egyéni konfigurációs szabályzatával olyan OMA-URI-beállításokat rendelhet hozzá, amelyekkel vezérelhetők az Android for Work-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.

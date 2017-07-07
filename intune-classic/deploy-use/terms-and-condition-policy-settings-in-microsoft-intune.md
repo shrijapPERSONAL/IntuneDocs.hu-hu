@@ -1,5 +1,5 @@
 ---
-title: "Használati feltételek házirend-beállításai | Microsoft Docs"
+title: "Használati feltételek szabályzatbeállításai"
 description: "A felhasználói csoportok számára megjelenítheti az Intune használati feltételeit. Ezek elmagyarázzák, hogyan érinti az eszközöket és a felhasználókat a regisztráció, a munkahelyi erőforrásokhoz való hozzáférés és a Vállalati portál alkalmazás használata."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2e8028abe5f25e4a05d79ae543d3029490c01668
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Használati feltételek házirend-beállításai a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ Egy meglévő használati feltételekre vonatkozó szabályzat szerkesztésekor 
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

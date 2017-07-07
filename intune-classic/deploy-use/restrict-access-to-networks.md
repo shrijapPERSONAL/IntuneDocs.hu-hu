@@ -1,5 +1,5 @@
 ---
-title: "Hálózati hozzáférés védelme a Cisco ISE használatával | Microsoft Docs"
+title: "Hálózati hozzáférés védelme Cisco ISE-vel"
 description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>A Cisco ISE használata az Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ A ISE felügyeleti konzolján adja meg ezeket az értékeket:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Az Intune-bérlő és a Cisco ISE-kiszolgáló által közösen kezelt adatok
 Ez a táblázat felsorolja az Intune-bérlő és a Cisco ISE-kiszolgáló között megosztott adatokat az Intune által felügyelt eszközök esetében.
 
-|Tulajdonság|    Leírás|
+|Tulajdonság|  Leírás|
 |---------------|------------------------------------------------------------|
 |complianceState|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az eszköz megfelelő vagy nem megfelelő.|
 |isManaged|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az ügyfelet az Intune kezeli-e.|
@@ -192,4 +189,3 @@ Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.
 ### <a name="see-also"></a>További információ
 
 [Cisco Identity Services Engine Felügyeleti útmutató, 2.1-es kiadás](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

@@ -1,7 +1,7 @@
 ---
 title: "Hová kerültek az Intune-funkciók az Azure-ban?"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Az Intune-funkciók helye az Azure-konzolon."
+titleSuffix: Intune on Azure
+description: "Az Intune-funkciók helye az Azure-konzolon."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-konzolt, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure-beli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
-|Funkció |Elérés a klasszikus konzolon|Elérés az Azure-beli Intune-ban| |------------||---------------|---------------|
-|Készülékregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > DEP-token](#where-did-apple-dep-go) |
-|Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X >Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-apple-dep-go) |
-|Regisztráció szabályai |Felügyelet > Mobileszköz-kezelés > Regisztráció szabályai|[Eszközregisztráció > Regisztrációs korlátozások](#where-did-enrollment-rules-go) |
-|Csoportok iOS sorozatszám szerint|Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint|[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-corporate-pre-enrolled-devices-go) |
-|Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint| [Eszközregisztráció > Apple-regisztráció > AC-sorozatszámok](#where-did-corporate-pre-enrolled-devices-go)|
-|Csoportok IMEI-szám szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált céges eszközök > IMEI-szám szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)|
-| Céges eszközregisztrációs profil| Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli profilok](#where-did-corporate-pre-enrolled-devices-go) |
-| Céges eszközregisztrációs profil | Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work-regisztráció | | Feltételek és kikötések | Szabályzat > Feltételek és kikötések | Eszközregisztráció > Feltételek és kikötések |
+|Funkció |Elérés a klasszikus konzolon|Elérés az Azure-beli Intune-ban||------------||---------------|---------------| |Eszközregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > DEP-token](#where-did-apple-dep-go) ||Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-apple-dep-go) | |Regisztráció szabályai |Felügyelet > Mobileszköz-kezelés > Regisztráció szabályai|[Eszközregisztráció > Regisztrációs korlátozások](#where-did-enrollment-rules-go) | |Csoportok iOS sorozatszám szerint|Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint|[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-corporate-pre-enrolled-devices-go) | |Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint| [Eszközregisztráció > Apple-regisztráció > AC-sorozatszámok](#where-did-corporate-pre-enrolled-devices-go)| |Csoportok IMEI-szám szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált céges eszközök > IMEI-szám szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)| | Céges eszközregisztrációs profil| Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli profilok](#where-did-corporate-pre-enrolled-devices-go) | | Céges eszközregisztrációs profil | Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go)| | Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work-regisztráció | | Feltételek és kikötések | Szabályzat > Feltételek és kikötések | Eszközregisztráció > Feltételek és kikötések |
 
 
 ## <a name="where-do-i-manage-groups"></a>Hol lehet a csoportokat kezelni?
@@ -117,4 +106,3 @@ A két profiltípus keveredésének és az ebből fakadó téves profilkiosztás
 
 **Apple Configurator-profilok**
 ![Azure-os Apple Configurator-profilok képe](./media/16-azure-ac-profiles.png)
-

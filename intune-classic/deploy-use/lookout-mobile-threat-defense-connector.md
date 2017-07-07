@@ -1,5 +1,5 @@
 ---
-title: "Lookout Mobile Threat Defense-összekötő | Microsoft Docs"
+title: "Lookout Mobile Threat Defense-összekötő"
 description: "A vállalati erőforrásokhoz való hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján a Lookout Mobile Threat Defense-összekötővel."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-összekötő az Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,9 +90,8 @@ Ha az eszközön rosszindulatú alkalmazásokat, például kártevőket észlel 
 
 ## <a name="next-steps"></a>További lépések
 A legfontosabb lépések a megoldás megvalósítása érdekében:
-1.    [A Lookout-előfizetés beállítása](setup-your-lookout-mtd-subscription.md)
-2.    [A Lookout Mobile Threat Defense engedélyezése az Intune-ban](enable-lookout-mtd-connection.md)
+1.  [A Lookout-előfizetés beállítása](setup-your-lookout-mtd-subscription.md)
+2.  [A Lookout Mobile Threat Defense engedélyezése az Intune-ban](enable-lookout-mtd-connection.md)
 3.  [A Lookout Mobile Threat Defense alkalmazás konfigurálása és üzembe helyezése](configure-deploy-lookout-for-work-app.md)
-4.    [A Lookout eszközmegfelelőségi szabályzatának konfigurálása](create-lookout-device-compliance-policy.md)
-5.    [A Lookout Mobile Threat Defense-integráció hibáinak elhárítása](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-
+4.  [A Lookout eszközmegfelelőségi szabályzatának konfigurálása](create-lookout-device-compliance-policy.md)
+5.  [A Lookout Mobile Threat Defense-integráció hibáinak elhárítása](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)

@@ -1,5 +1,5 @@
 ---
-title: "Példák az e-mail-védelem használatára | Microsoft Docs"
+title: "Példák az e-mail-védelem használatára"
 description: "Az alábbiakban néhány példaforgatókönyvet és a feltételes hozzáféréssel történő megvalósításuk módját találhatja."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Az e-mailekhez való hozzáférés védelme a Microsoft Intune használatával – Példaforgatókönyvek
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ Ennek eléréséhez hozzon létre egy feltételes hozzáférési szabályzatot a
 A következő folyamattal határozható meg, hogy mely eszközök férhetnek hozzá az Exchange-hez:
 
 ![Az eszközök általi elérés folyamata](./media/ConditionalAccess8-4.png)
-

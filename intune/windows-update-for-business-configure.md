@@ -1,6 +1,7 @@
 ---
-title: "Windows Update for Business beállításainak konfigurálása – Intune| Azure-beli Intune – előzetes | Microsoft Docs"
-description: "Azure-beli Intune – előzetes: Útmutató a Vállalati Windows Update Intune-beli konfigurálásához a Windows 10-es eszközök frissítéseinek kezeléséhez."
+title: "A Vállalati Windows Update beállításainak konfigurálása – Intune"
+titleSuffix: Intune on Azure
+description: "Útmutató a Vállalati Windows Update Intune-beli konfigurálásához a Windows 10-es eszközök frissítéseinek kezeléséhez.”"
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>A Vállalati Windows Update beállításainak konfigurálása a Microsoft Intune-nal
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Bevezetés
 A Windows 10 frissítéseinek biztosítására a jövőben a Windows szoftverszolgáltatás használatos. A Windows 10-től kezdődően minden új funkció- és minőségi frissítés magában foglalja valamennyi korábbi frissítés tartalmát. Ennek köszönhetően a legújabb frissítés telepítésével biztosítható, hogy a Windows 10 eszközök teljesen naprakészek legyenek. A Windows korábbi verzióitól eltérően a frissítés egy része helyett már a teljes frissítést telepíteni kell.
@@ -87,7 +85,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
     - **Automatikus frissítés módja**: Válassza ki, hogy milyen módon keressen, töltsön le és telepítsen frissítéseket az automatikus frissítés. További információ:  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Minőségi frissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a minőségi frissítéseket. Ezeknek a minőségi frissítéseknek a fogadása a kiadásuktól számítva legfeljebb 30 nappal késleltethető.  
 
-      A minőségi frissítések általában meglévő Windows-funkciók javításai és továbbfejlesztései, és rendszerint minden hónap első keddjén jelennek meg, bár a Microsoft bármikor kibocsáthatja őket. Meghatározhatja, hogy az elérhetővé válásuk után kívánja-e késleltetni a minőségi frissítések fogadását, és ha igen, akkor mennyi ideig.
+    A minőségi frissítések általában meglévő Windows-funkciók javításai és továbbfejlesztései, és rendszerint minden hónap első keddjén jelennek meg, bár a Microsoft bármikor kibocsáthatja őket. Meghatározhatja, hogy az elérhetővé válásuk után kívánja-e késleltetni a minőségi frissítések fogadását, és ha igen, akkor mennyi ideig.
     - **Funkciófrissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a funkciófrissítéseket. Ezeknek a funkciófrissítéseknek a fogadása a kiadásuktól számítva legfeljebb 180 nappal késleltethető.
 
     A funkciófrissítések általában új Windows-funkciók. A **Karbantartási ág** (**CB** vagy **CBB**) beállítása után megadhatja, hogy kívánja-e késleltetni a funkciófrissítések fogadását, és ha igen, akkor mennyi ideig attól számítva, hogy elérhetővé válnak a Microsoftnál vagy a Windows Update szolgáltatásban.
@@ -148,4 +146,3 @@ A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadály
 > [!IMPORTANT]
 > A felfüggesztési parancsot a kiadása után az eszközök akkor kapják meg, amikor legközelebb bejelentkeznek a szolgáltatásba. Megtörténhet, hogy mielőtt bejelentkeznek, még telepítenek egy ütemezett frissítést.
 > Ha az adott eszköz ki van kapcsolva a felfüggesztési parancs kiadásakor, akkor a bekapcsolása után esetleg letölthet és telepíthet ütemezett frissítéseket, mielőtt bejelentkezik az Intune-ba.
-

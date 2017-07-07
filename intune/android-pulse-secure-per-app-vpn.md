@@ -1,12 +1,12 @@
 ---
 title: "Alkalmazásonkénti VPN-profil az Android Pulse Secure használatával"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató az alkalmazásonkénti VPN-profilok létrehozásához az Intune által felügyelt Android-eszközök számára."
+titleSuffix: Intune on Azure
+description: "Ebből a témakörből megtudhatja, hogyan hozhat létre alkalmazásonkénti VPN-profilt az Intune-nal felügyelt Android-eszközökhöz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: babeaa13da863ca3335c3a05dbabb4a9ac7889ce
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune által felügyelt Android 5.0-s és újabb rendszerű eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először hozzon létre egy olyan profit, amely a Pulse Secure kapcsolattípust használja. Ezután hozzon létre egy olyan egyéni szabályzatot, amely a VPN-profilt meghatározott alkalmazásokkal társítja.
 
@@ -41,7 +38,7 @@ Miután érvénybe léptette a szabályzatot Android rendszerű eszközén vagy 
 
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 2. A profilok listáját mutató panelen válassza a **Profil létrehozása** lehetőséget.
@@ -50,12 +47,12 @@ Miután érvénybe léptette a szabályzatot Android rendszerű eszközén vagy 
 5. A **Profil típusa** legördülő listában válassza a **VPN** lehetőséget.
 3. Válassza a **Beállítások** > **Konfigurálás** lehetőséget, majd konfigurálja a VPN-profilt a [VPN-beállítások konfigurálása](vpn-settings-configure.md) és az [Intune VPN-beállítások androidos eszközökhöz](vpn-settings-android.md) részekben ismertetett beállítások alapján.
 
-Jegyezze fel a VPN-profil nevét a következő lépéshez. Például: **AlkVpnProfil**.
+Jegyezze le a VPN-profil létrehozásakor megadott **Kapcsolat neve** értéket. Erre szükség lesz a következő lépésben. Például: **AlkVpnProfil**.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>2. lépés: Egyéni konfigurációs szabályzat létrehozása
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok panelen katttintson a **Profil létrehozása** lehetőségre.
@@ -85,4 +82,3 @@ Másik megoldásként használhatja a **WHITELIST** (ENGEDÉLYEZETT) értéket, 
 ## <a name="step-3-assign-both-policies"></a>3. lépés: Mindkét szabályzat hozzárendelése
 
 Használja a következő témakör utasításait mindkét profil hozzárendelésére a szükséges felhasználókhoz vagy eszközökhöz: [Eszközprofilok hozzárendelése](device-profile-assign.md).
-

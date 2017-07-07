@@ -1,5 +1,5 @@
 ---
-title: "Műveletek értelmezése jelentések segítségével | Microsoft Docs"
+title: "Műveletek értelmezése jelentések segítségével"
 description: "Jelentéseket hozhat létre a szervezetében lévő szoftverekről, hardverekről és szoftverlicencekről, majd kezelheti őket."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>A Microsoft Intune-műveletek értelmezése jelentések segítségével
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ A fentiek mellett a jelentések az alábbi műveleteket támogatják:
 |**Mentés**|Az **Új jelentés létrehozása** lapon minden egyes felhasználó menthet legfeljebb 100 jelentést. Állítsa be a jelentés kívánt paramétereit, majd kattintson a **Mentés** vagy, ha másik nevet szeretne használni, a **Mentés másként** lehetőségre.|
 |**Betöltés**|A korábban elmentett jelentésparaméter-készletek betöltéséhez az **Új jelentés létrehozása** lapon válassza a **Betöltés** lehetőséget.|
 |**Törlés**|A **Jelentések** munkaterületen válassza ki a kívánt jelentéstípust majd kattintson a **Betöltés** lehetőségre. Ezután a jelentések listáján kattintson a törlés (x) ikonra a jelentés mellett.|
-
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Az eszközkezelés módjának kiválasztása | Microsoft Docs"
+title: "Az eszközkezelés módjának kiválasztása"
 description: "Ismerje meg az eszközök regisztrálására és kezelésére szolgáló különböző módszereket."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>Az eszközkezelés módjának kiválasztása
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ A lehető legtöbb funkció eléréséhez regisztrálja a Windows rendszerű sz�
 - Endpoint Protection és a Windows tűzfal használata
 - A TeamViewer szoftver segítségével távsegítséget kíván nyújtani a felhasználóknak
 
-Az egyes módszerekkel elérhető felügyeleti képességek részletes felsorolását a [Mobileszköz-kezelési képességek](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) című cikkben találja.
-Az Intune által támogatott eszközökről és számítógépekről lásd: [Támogatott mobileszközök és számítógépek](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+Az egyes módszerekkel elérhető felügyeleti képességek részletes felsorolását a következő cikkben találja: [Mobile device managem/intune/supported-devices-browserssoft-intune).
+Az Intune által támogatott eszközökről és számítógépekről lásd: [Támogatott mobileszközök és számítógépek](/intune/supported-devices-browsers#intune-supported-devices).
 
 ## <a name="next-steps"></a>További lépések
 
 - [A mobileszközök regisztrálásának módjai](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Windows rendszerű számítógépek felügyelete az Intune számítógépügyféllel](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Exchange ActiveSync mobileszköz-felügyelet a Microsoft Intune-nal](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-

@@ -1,5 +1,5 @@
 ---
-title: "Windows Phone 8.1-es szabályzatbeállítások | Microsoft Docs"
+title: "Windows Phone 8.1-es szabályzatbeállítások"
 description: "Az Intune a Windows Phone 8.1-eszközökön beállítható, beépített általános beállítások széles választékát kínálja. Ezenkívül megadhatja az OMA-URI-értékeket is olyan egyéni beállítások létrehozásához, amelyek nem érhetők el az Intune-ban."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 091c8c3867fffa2ba6857f79ae40ed618aaf0b72
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Windows Phone 8.1-es házirend-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -174,4 +171,3 @@ Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen a
 
 ### <a name="see-also"></a>További információ
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

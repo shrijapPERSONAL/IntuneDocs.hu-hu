@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Windows-eszköz regisztrációjának törlése az Intune-ból
 
 Ha regisztrált az Intune-ban, de már nem szeretné a munkahelyén vagy iskolájában használni windowsos eszközét, és nincs szüksége a munkahelyi vagy iskolai e-mailekhez, alkalmazásokhoz és egyéb erőforrásokhoz való hozzáférésre, törölnie kell az eszközt. Az eszköz regisztrációjának az Intune-ból való törlése után már nem fog tudni hozzáférni ezekhez az erőforrásokhoz. Az eszközregisztráció törlésének további következményeiről további információkért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
 Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tartalma” résznél látható hivatkozások közül azt, amely megfelel az Ön által használt eszköz típusának:
 
--    [Windows 10-es eszköz regisztrációjának törlése](#unenroll-your-windows-10-device)
--    [Windows 8.1-es számítógép regisztrációjának törlése](#unenroll-your-windows-81-computer)
--    [Windows Phone 8.1-es eszköz regisztrációjának törlése](#unenroll-your-windows-phone-81-device)
+-   [Windows 10-es eszköz regisztrációjának törlése](#unenroll-your-windows-10-device)
+-   [Windows 8.1-es számítógép regisztrációjának törlése](#unenroll-your-windows-81-computer)
+-   [Windows Phone 8.1-es eszköz regisztrációjának törlése](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Windows 10-es eszköz regisztrációjának törlése
 
@@ -68,4 +63,3 @@ Az eszköz regisztrációjának törléséhez használja a fenti „A cikk tarta
 4.  A **Fiók törlése** párbeszédpanelen koppintson a **Törlés** gombra.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

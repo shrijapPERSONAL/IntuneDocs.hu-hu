@@ -1,5 +1,5 @@
 ---
-title: "Regisztráció a Microsoft Intune 30 napos próbaverziójára | Microsoft Docs"
+title: "Regisztráció a Microsoft Intune 30 napos próbaverziójára"
 description: "Regisztrálhat és beállíthat egy ingyenes, 30 napos Microsoft Intune próbaverziót."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Regisztráció a Microsoft Intune ingyenes próbaverziójára
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 Ez a cikk végigvezeti Önt az Intune próbaverziójára való regisztráció lépésein, és előkészít egy pár felhasználót a próbaverzióhoz, ezáltal továbbléphet majd a kapcsolódó próbaverzióhoz készült útmutatóra, amely ismerteti, hogy hogyan kezel mobileszközöket az Intune. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 2016 decemberétől kezdve a Microsoft Intune az Azure-portálon érhető el, és bizonyos ingyenes próbára való regisztrációkat az Azure-beli Intune-ban, míg másokat a klasszikus Intune-ban lehet elvégezni. Ha az Ön próbaverziója az Azure-portálon érhető el, akkor a jelen cikkben leírtak elvégzése után jobban fogja tudni hasznosítani az [Azure-beli Intune előzetesével kapcsolatos tartalmakat](/intune/what-is--intune).
+> 2016 decemberétől kezdve a Microsoft Intune az Azure-portálon érhető el, és bizonyos ingyenes próbára való regisztrációkat az Azure-beli Intune-ban, míg másokat a klasszikus Intune-ban lehet elvégezni. Ha az Ön próbaverziója az Azure-portálon érhető el, akkor a jelen cikkben leírtak elvégzése után jobban fogja tudni hasznosítani az [Azure-beli Intune előzetesével kapcsolatos tartalmakat](/intune/what-is-intune).
 
 ## <a name="assumptions"></a>Előfeltételek
 Ez a regisztrációs cikk és az útmutató a próbaverzióhoz feltételezi, hogy a próbaverziót kizárólag kipróbálás céljából használja, és előfizetéskor tiszta környezettel szeretne kezdeni.
@@ -41,7 +38,7 @@ Az előfizetéses verzió minden funkciója elérhető a próbaverzióban, az eg
 ## <a name="sign-up-for-your-trial"></a>Regisztráció a próbaverzióra
 Látogasson el az [Intune regisztrációs](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) oldalára, és töltse ki az űrlapot a próbaverzióra való regisztrációhoz.
 
-Ha rendelkezik munkahelyi vagy iskolai fiókkal és azt szeretné használni az Intune próbaverziójához, akkor kövesse [ezeket a regisztrációs utasításokat](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Azonban ez a cikk és az útmutató a próbaverzióhoz feltételezi, hogy nem használ ilyen fiókokat.
+Ha rendelkezik munkahelyi vagy iskolai fiókkal és azt szeretné használni az Intune próbaverziójához, akkor kövesse [ezeket a regisztrációs utasításokat](/intune/account-sign-up). Azonban ez a cikk és az útmutató a próbaverzióhoz feltételezi, hogy nem használ ilyen fiókokat.
 
 > [!TIP]
 > Ha az informatikai műveletek és a felhasználók túlnyomó része nem az Ön földrajzi helyén van, akkor érdemes a teljesítmény teszteléséhez az előbbi földrajzi helyét megadni a próbaverzióban.
@@ -56,7 +53,7 @@ Ha próbaverziója az **Azure-portálon** érhető el, a https://portal.azure.co
 ## <a name="add-users"></a>Felhasználók hozzáadása
 Mielőtt az Office 365 felügyeleti központból átlépne az Intune-ba, adjon hozzá egy pár felhasználót a próbafiókjához.
 
-Az Office 365 felügyeleti központban hozzáadhat felhasználókat egyesével vagy tömegesen egy .csv-fájl feltöltésével. A próbaverzió beállításánál mindkettőt elvégezzük. A munkakörnyezetben viszont érdemes kihasználnia az Azure Active Directory felhasználói fiókok előnyeit, amelyekről további információt talál az [Első lépések útmutatónkban](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) és a jelen cikk [További lépések](#Next-steps) szakaszában.
+Az Office 365 felügyeleti központban hozzáadhat felhasználókat egyesével vagy tömegesen egy .csv-fájl feltöltésével. A próbaverzió beállításánál mindkettőt elvégezzük. A munkakörnyezetben viszont érdemes kihasználnia az Azure Active Directory felhasználói fiókok előnyeit, amelyekről további információt talál az [Első lépések útmutatónkban](/intune/users-permissions-add) és a jelen cikk [További lépések](#next-steps) szakaszában.
 
 ### <a name="add-an-individual-user"></a>Egyéni felhasználó hozzáadása
 1. Bármelyik lehetőséget választja a felhasználó hozzáadásához, nyisson meg egy űrlapot, amely lehetővé teszi a felhasználó létrehozását. Csak a csillaggal (\*) jelölt elemek szükségesek.
@@ -110,8 +107,8 @@ Az Intune-ból az Office 365 felügyeleti központba való visszajutáshoz vála
 
 ![Az Office 365 felügyeleti központra mutató hivatkozást bemutató kép](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Azure-beli Intune – előzetes
-Az Azure-beli Intune előzeteshez három portált fog használni:
+### <a name="intune-on-azure"></a>Az Azure-on elérhető Intune szolgáltatás
+Az Azure-on az Intune-hoz három portált használhat:
 - Az Office 365 Felügyeleti központot ([portal.office.com](https://portal.office.com))
 - Az Intune-irányítópultot az Azure portálon ([portal.azure.com](https://portal.azure.com))
 - A klasszikus Intune felügyeleti konzolt ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +135,8 @@ Ha az Intune-ból szeretné elérni az Office 365 felügyeleti központot, nyiss
 ### <a name="classic-intune"></a>Klasszikus Intune
 Kipróbálási forgatókönyv: [Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Azure-beli Intune – előzetes
-További tudnivalók az [Azure-beli Intune előzetes verziójáról](/intune/what-is-intune)
+### <a name="intune-on-azure"></a>Az Azure-on elérhető Intune szolgáltatás
+További információk az [Azure-on elérhető Intune szolgáltatásról](/intune/what-is-intune)
 
 ### <a name="integration-with-other-products"></a>Integráció más termékekkel
 Az Azure Active Directory felhasználói fiókok Intune-nal való használatával kapcsolatos további információk:
@@ -148,4 +145,3 @@ Az Azure Active Directory felhasználói fiókok Intune-nal való használatáva
 - [Többtényezős hitelesítés követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 További információk [Az Intune és a System Center Configuration Manager együttes használatáról](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
-

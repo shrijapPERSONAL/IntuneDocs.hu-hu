@@ -1,5 +1,5 @@
 ---
-title: "MAM-szabályzatok figyelése a Microsoft Intune-nal | Microsoft Docs"
+title: "MAM-szabályzatok figyelése a Microsoft Intune-nal"
 description: "Megtudhatja, hány felhasználóra érvényes a szabályzat, és lefúrással megjelenítheti a részleteket."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok figyelése a Microsoft Intune-ban
 Figyelheti a felhasználókra vonatkozó alkalmazásvédelmi szabályzatok megfelelőségi állapotát. Itt információkat találhat az alkalmazásvédelmi szabályzatok által érintett felhasználókról, azok megfelelőségi állapotáról, valamint a felhasználók által esetlegesen tapasztalt problémákról.
 
@@ -134,6 +131,5 @@ Az alkalmazásvédelmi jelentés létrehozásához kövesse az alábbi lépések
 ## <a name="see-also"></a>További információ
 [iOS-alkalmazások közti adatátvitel kezelése](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-android)
+* [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-ios)

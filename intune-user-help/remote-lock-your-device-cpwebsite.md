@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
 
 Történhetnek balesetek, és néha előfordulhat, hogy eltűnnek eszközök. Ha az eszköz elveszett vagy ellopták, leginkább amiatt aggódhat, hogy bárki hozzáférhet a rajta lévő adatokhoz, akárhol is legyen az eszköz.
@@ -42,7 +38,7 @@ A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [V�
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>A Távoli zárolás funkció használata az eszköz zárolásához
 
-1.    A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1.  A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
   ![Képernyőkép a Céges portál webhelyéről, amelyen bal oldalt egy kibontott menü látható Kezdőlap, Minden Alkalmazás, Saját eszközök, Segélyszolgálat és Kijelentkezés gombokkal.](/media/iwp-expanded-sidebar.png)
 
@@ -50,11 +46,11 @@ A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [V�
 
   ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson a **Távoli zárolás** gombra.
+3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson a **Távoli zárolás** gombra.
 
     ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
 
-4.    Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
+4.  Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
 
     Miután kiválasztotta a **Távoli zárolás** lehetőséget, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
@@ -70,4 +66,3 @@ A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [V�
 Ha eszközét megtalálja, és a Távoli zárolás funkció használata után szeretné feloldani a zárolását, egyszerűen adja meg a jelszavát.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

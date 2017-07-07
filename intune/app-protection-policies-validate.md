@@ -1,7 +1,7 @@
 ---
 title: "Az alkalmazásvédelmi szabályzatok ellenőrzése"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Ez a témakör azt ismerteti, hogyan tesztelheti és ellenőrizheti, hogy az alkalmazásvédelmi szabályzat konfigurációja és működése megfelelő-e."
+titleSuffix: Intune on Azure
+description: "Ez a témakör azt ismerteti, hogyan tesztelheti és ellenőrizheti, hogy az alkalmazásvédelmi szabályzat konfigurációja és működése megfelelő-e.”"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Az alkalmazásvédelmi szabályzatok konfigurációjának ellenőrzése
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Ez a témakör azon problémák ellenőrzésével kapcsolatban nyújt tájékoztatást, amelyek az alkalmazásvédelmi szabályzatok konfigurációját követően merülhetnek fel. Az útmutató az Azure-portál **előzetes verziójában** található alkalmazásvédelmi szabályzatokra vonatkozik.
+Ez a témakör azon problémák ellenőrzésével kapcsolatban nyújt tájékoztatást, amelyek az alkalmazásvédelmi szabályzatok konfigurációját követően merülhetnek fel. Az útmutató az Azure Portal webhelyen található alkalmazásvédelmi szabályzatokra vonatkozik.
 
 ### <a name="checking-for-symptoms"></a>Hibajelenségek keresése
 Mivel az alkalmazásvédelem egy adatvédelmi eszköz, nem valószínű, hogy a felhasználók jeleznek problémákat. Alkalmazásvédelmi konfigurációs problémák esetén a felhasználó ugyanolyan korlátlan hozzáféréssel rendelkezik, mint az alkalmazásvédelem nélkül, így nem veszi észre a problémát. Éppen ezért azt javasoljuk, hogy alkalmazásvédelmi konfigurációját úgy ellenőrizze, hogy az alkalmazásvédelmi szabályzatokat olyan felhasználók kis csoportján teszteli, akik képesek szándékosan tesztelni az alkalmazásvédelmi korlátozásokat.
@@ -61,4 +58,3 @@ A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja vég
 ### <a name="see-also"></a>További információ
 
 [Mi az Intune alkalmazásvédelmi szabályzata?](app-protection-policies.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "Alkalmazásvédelmi szabályzatok létrehozása és telepítése"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: A felügyelt alkalmazások által használt céges adatok védelme Intune-os alkalmazásvédelmi szabályzatok segítségével."
+titleSuffix: Intune on Azure
+description: "A felügyelt alkalmazások által használt céges adatok védelme Intune-os alkalmazásvédelmi szabályzatok segítségével.”"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,23 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Ha nem az Azure Portal előzetes programjában szereplő Intune szolgáltatást használja**, ez a témakör ismerteti az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) a klasszikus Intune-konzolon.
+## <a name="before-you-begin"></a>Előkészületek
+
+Ha a klasszikus Intune-konzolon használható utasításokat keres, tekintse meg az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) ismertető cikket.
 
 Az alkalmazásvédelmi szabályzatok alkalmazhatók a felügyelt és az Intune által nem felügyelt eszközökön futó alkalmazásokra is. Az alkalmazásvédelmi szabályzatok működésének és az Intune-os alkalmazásvédelmi szabályzatok által támogatott forgatókönyvek részletes ismertetését lásd: [A Microsoft Intune alkalmazásvédelmi szabályzatai](app-protection-policy.md).
+
+Amennyiben az MAM által támogatott alkalmazások listáját keresi, lásd az [MAM alkalmazáslistáját](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
 1.  A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazásvédelmi szabályzatok** lehetőséget.
@@ -116,7 +118,6 @@ A változtatások hatásának megfigyeléséhez a felhasználónak ki kell jelen
 ## <a name="policy-settings"></a>Szabályzatbeállítások
 Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintéséhez válasszon a következő lehetőségek közül:
 
-> [!div class="op_single_selector"]
 - [iOS-szabályzatok](app-protection-policy-settings-ios.md)
 - [Android-szabályzatok](app-protection-policy-settings-android.md)
 
@@ -126,4 +127,3 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 ### <a name="see-also"></a>További információ
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-android.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-ios.md)
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-ios-device-from-intune"></a>IOS-eszköz regisztrációjának törlése az Intune-ból
 
 Amikor törli az iOS-alapú eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz, és kikerül az Intune felügyelete alól.
@@ -59,4 +54,3 @@ Az eszköz regisztrációjának Intune-ból való törlésekor a következők t�
 -   A csak levelezéshez konfigurált eszközök nem fognak megjelenni a Vállalati portál alkalmazásban és a vállalati portál webhelyén.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

@@ -1,26 +1,24 @@
 ---
-title: "Intune-szószedet | Microsoft Docs"
+title: "Intune-szószedet"
 description: "A Microsoft Intune-ban használt szakkifejezések egy részének bemutatása"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-szószedet
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,10 +27,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|App SDK|A [Microsoft Intune App SDK](/intune-classic/develop/intune-app-sdk) használatával olyan funkciókat adhat a vállalaton belül írt alkalmazásokhoz, amelyek lehetővé teszik az alkalmazásoknak az Intune mobilalkalmazás-felügyeleti szabályzatokkal való felügyeletét.|
-|Alkalmazásburkoló eszköz|[Parancssori alkalmazás](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune), amely egy burkolót hoz létre az üzleti alkalmazás körül. Ez a burkoló lehetővé teszi, hogy az alkalmazást Intune mobilalkalmazás-felügyeleti szabályzattal felügyeljék.|
+|Alkalmazáskonfigurációs profil|Futtatásuk előtt [adott beállításokkal](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) konfigurálja az iOS-es alkalmazást.|
+|Alkalmazástelepítés|Lehetővé teszi a felhasználók számára, hogy [megkeressék, letöltsék és telepítsék](/intune-classic/deploy-use/deploy-apps) a szükséges alkalmazásaikat.|
+|Alkalmazásfigyelés|Lehetővé teszi az alkalmazások üzembe helyezésével kapcsolatos [legutóbbi állapotok és tevékenységek felülvizsgálatát](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).|
+|Alkalmazásvédelem adateltávolítási feladata|[Eltávolítja az alkalmazásadatokat](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) a felhasználó eszközéről.|
+|Alkalmazásvédelmi szabályzat|Biztosítja, hogy a felhasználó alkalmazásai megfeleljenek a [munkahelyén érvényes adatvédelmi szabályzatoknak](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).|
+|Alkalmazásjelentés|Lehetővé teszi az alkalmazások üzembe helyezésével kapcsolatos [előzményadatok felülvizsgálatát](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).|
+|App SDK|A [Microsoft Intune App SDK](/intune/app-sdk) használatával olyan funkciókat adhat a vállalaton belül írt alkalmazásokhoz, amelyek lehetővé teszik az alkalmazásoknak az Intune mobilalkalmazás-felügyeleti szabályzatokkal való felügyeletét.|
+|Alkalmazáseltávolítási művelet|Lehetővé teszi [alkalmazások eltávolítását](/intune-classic/deploy-use/deploy-apps) a felhasználó eszközeiről.|
+|Alkalmazásburkoló eszköz|[Parancssori alkalmazás](/intune/apps-prepare-mobile-application-management), amely egy burkolót hoz létre az üzleti alkalmazás körül. Ez a burkoló lehetővé teszi, hogy az alkalmazást Intune mobilalkalmazás-felügyeleti szabályzattal felügyeljék.|
 |Elérhető telepítés|Ha ezzel a művelettel telepít egy alkalmazást, akkor az megjelenik a céges portálon, és a felhasználók [igény szerint telepíthetik](/intune-classic/deploy-use/deploy-apps).|
-|Azure Portal|Az Intune-hoz hamarosan egy új konzol jelenik meg. Jelenleg az Azure Portalon hozhat létre [Intune MAM-szabályzatokat](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) az eszközökhöz.|
+|Azure Portal|Az Intune-hoz hamarosan egy új konzol jelenik meg. [További információ az új portálról](/intune/what-is-intune)|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +61,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |Környezet|Olyan művelet, amelynek során alkalmazást vagy szabályzatot küld egy Ön által felügyelt eszköznek vagy felhasználónak.|
 |Központi telepítési művelet|Egy [alkalmazás központi telepítésekor](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune) Ön által meghozott döntés. Az alkalmazás telepítését kötelezővé vagy választhatóvá teheti, vagy eltávolíthatja az alkalmazást.|
-|Eszközregisztráció-kezelő|A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. A [készülékregisztráció-kezelői /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) fiók egy olyan speciális Intune-fiók, amely akár 1000 eszköz regisztrálására is képes.|
+|Eszközregisztráció-kezelő|A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az [eszközregisztráció-kezelői](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (DEM-) fiók egy akár ezer eszköz regisztrálására is képes, speciális Intune-fiók.|
 |Eszközcsoport-leképezés|Segítségével [automatikusan adhat hozzá eszközöket a csoportokhoz](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) az eszköz kategóriája (pl. „Személyes” vagy „Értékesítés”) alapján, amelyet Ön vagy a végfelhasználó rendel az eszközhöz.|
 
 ## <a name="e"></a>E
@@ -64,7 +69,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |E-mail profil|Ezzel a szabályzattal [e-mail-elérési beállításokat](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) adhat meg mobileszközökön futó adott e-mail ügyfelekhez, hogy a végfelhasználónak csak minimális teendője legyen.|
 |EMS|A Microsoft Enterprise Mobility + Security (korábbi nevén Nagyvállalati mobilitási csomag) megvédi céges adatait, és lehetővé teszi a felhasználóknak [a szükséges alkalmazások és tartalom elérését](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
-|Végfelhasználó|[Különböző eszközök (például telefonok és számítógépek) felhasználói](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune), akiknek a felügyelete az Intune használatával történik.|
+|Végfelhasználó|[Különböző eszközök (például telefonok és számítógépek) felhasználói](/intune/end-user-educate), akiknek a felügyelete az Intune használatával történik.|
 |Regisztrálás|A Microsoft Intune [regisztráció](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést.|
 
 ## <a name="f"></a>F
@@ -99,8 +104,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Felügyelt böngésző|Egy [webböngésző-alkalmazás](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies), amelyet a Microsoft Intune használatával telepíthet a szervezetében. A felügyeltböngésző-szabályzatban megadható egy engedélyezési vagy blokklista, amellyel korlátozhatók a felügyelt böngésző felhasználói által felkereshető webhelyek.|
-|Mobilalkalmazás-kezelés|A [Mobilalkalmazás-kezelés /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) lehetővé teszi mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
-|Mobil eszközök felügyelete|A [Mobileszközök felügyelete /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lehetővé teszi, hogy az Intune-ban az eszközök regisztrálása után kiépíthesse, konfigurálhassa, figyelhesse az eszközöket, és műveleteket végezhessen rajtuk.
+|Mobilalkalmazás-kezelés|A [mobilalkalmazás-felügyelet (MAM)](/intune/app-lifecycle) lehetővé teszi a felhasználók mobilalkalmazásainak közzétételét, leküldését, konfigurálását, védelmét, figyelését és frissítését.
+|Mobil eszközök felügyelete|A [mobileszköz-felügyelet (MDM)](/intune/device-lifecycle) lehetővé teszi az eszközöknek az Intune-ban történő regisztrálását, így az adott eszközök kiépíthetők, konfigurálhatók, megfigyelhetők, illetve különböző műveletek végezhetők rajtuk.
 |MDM-szolgáltató|Az [MDM-szolgáltató](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune.|
 |Mobilalkalmazás-kiépítési szabályzat|iOS-szabályzat, amelynek segítségével garantálhatja, hogy az iOS-alkalmazásokhoz [létesített profilok](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) ne járjanak le.|
 |Mobilalkalmazás-konfigurációs szabályzat|Az iOS-szabályzatokkal futtatáskor [beállításokat biztosíthat a kompatibilis iOS-alkalmazásokhoz](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) (például cégnevet vagy kiszolgálócímet).|
@@ -148,4 +153,3 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Wi-Fi profil|Szabályzat, amely központilag telepíti a [vezeték nélküli hálózati beállításokat](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) az eszközökre, hogy a felhasználók a beállítások ismerete és konfigurálása nélkül csatlakozhassanak a céges hálózathoz.
-

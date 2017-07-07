@@ -1,5 +1,5 @@
 ---
-title: "iOS-eszközök regisztrálása a Beállítási asszisztenssel | Microsoft Docs"
+title: "iOS-eszközök regisztrálása a Beállítási asszisztenssel"
 description: "A vállalat tulajdonában lévő iOS-eszközök regisztrálása az Apple Configurator eszköz segítségével a gyári beállítások visszaállításhoz és az eszköznek a Beállítási asszisztens futtatására való felkészítéséhez"
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens segítségével
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ Az eszközök most már készen állnak a vállalati regisztrációra. Kapcsolja
 
 ### <a name="see-also"></a>További információ
 [Az eszközök regisztrálásának előfeltételei](prerequisites-for-enrollment.md)
-

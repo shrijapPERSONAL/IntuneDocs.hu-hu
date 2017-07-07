@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 847b08efc2424da7ae9483db355f2804ac1e00c1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>A regisztráláskor azonosítania kell az eszközt
 
 Ha az Intune-ban próbálja meg regisztrálni iOS vagy macOS rendszerű eszközét, és megjelenik egy képernyő, amely felszólítja az eszköz azonosítására, az azt jelenti, hogy legalább az egyik eszközét már regisztrálták, és a fiókjához rendelték a Munkahelyi portál alkalmazástól eltérő módszerrel. Ahhoz, hogy a Munkahelyi portál alkalmazás megfelelően működjön, meg kell állapítania, hogy a használt eszközt regisztrálták-e már az Intune-ban.
@@ -36,4 +31,3 @@ Ha az Intune-ban próbálja meg regisztrálni iOS vagy macOS rendszerű eszköz�
 3. Írja be az eszköz sorozatszámának utolsó négy számjegyét, hogy az Intune ellenőrizhesse az regisztrációs állapotát. A sorozatszám megkereséséhez lásd: [Hogyan találhatom meg az eszköz sorozatszámát?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

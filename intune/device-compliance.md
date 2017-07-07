@@ -1,7 +1,7 @@
 ---
 title: "Eszközmegfelelőség"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Ebből a témakörből megtudhatja, mit jelent az eszközmegfelelőség fogalma a Microsoft Intune-ban"
+titleSuffix: Intune on Azure
+description: "Ebből a témakörből megtudhatja, mit jelent az eszközmegfelelőség fogalma a Microsoft Intune-ban"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Eszközmegfelelőség az Intune-ban
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Eszközmegfelelőség az Azure-beli Intune előzetesében
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune eszközmegfelelőségi szabályzatai határozzák meg az eszközre vonatkozó szabályokat és beállításokat, amelyek ahhoz szükségesek, hogy az eszköz megfeleljen az Intune és az EMS feltételes hozzáférési szabályzatainak. A megfelelőségi szabályzatokkal figyelheti és javíthatja a megfelelőséggel kapcsolatos hibákat. 
 
@@ -79,7 +76,7 @@ A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszk
 
 A megfelelőségi szabályzatokat felhasználókra lehet alkalmazni. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi. Az eszközök beállításainak és funkcióinak kezelése című cikkben olvashat arról, hogy mennyi idővel a szabályzat életbe léptetése után kapják meg a mobileszközök a szabályzatot.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Különbségek a klasszikus Intune-felügyeleti konzol és az Intune az Azure-on előzetes portálja között
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Különbségek a klasszikus Intune-felügyeleti konzol és Intune az Azure Portalon
 
 Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a következő különbségek figyelembe vétele megkönnyíti az átállást az Azure Portal eszközmegfelelőségi szabályzatokkal kapcsolatos új munkafolyamatára:
 
@@ -89,7 +86,7 @@ Ha korábban már használta a klasszikus Intune-felügyeleti konzolt, a követk
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migrálás a klasszikus Intune-konzolról az Azure-beli Intune-előzetes portáljára
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migrálás a klasszikus Intune-konzolról az Azure Portalon lévő Intune-ba
 
 A [klasszikus Intune-konzolon](https://manage.microsoft.com) létrehozott eszközmegfelelőségi szabályzatok nem jelennek meg az új [Azure-beli Intune-portálon](https://portal.azure.com), de továbbra is érintik a felhasználókat, és kezelhetők a klasszikus Intune-konzolon.
 
@@ -103,4 +100,3 @@ Ha szeretné kihasználni az Azure-beli Intune-portál eszközmegfelelőséggel 
 <!---### See also
 
 Conditional access--->
-

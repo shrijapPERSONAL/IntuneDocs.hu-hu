@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-android-device"></a>Telepítenie kell a Skycure alkalmazást androidos eszközére
 
 A rendszergazda csak a Skycure alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
@@ -67,4 +63,3 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a Skycure alkalmazást [manuálisan telepíteni a Play Áruházból](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: "Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban| Microsoft Docs"
+title: "Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban"
 description: "Kipróbálhatja a mobileszköz-kezelést az Intune ingyenes próbaverziójában."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e0eb48c5bb2e0158d7b780af1c16139f10602c4e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: adef9335d8f199e8dec56e92eb1fda8c180ac6ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Mobileszköz-kezelés kipróbálása a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -44,7 +41,7 @@ Az előfizetéses verzió minden funkciója elérhető a próbaverzióban, az eg
 ## <a name="whats-not-covered"></a>Miről nem esik szó
 |Ha érdeklik az alábbiak |Olvassa el ezt |
 |------------------------|----------|
-|Mobileszköz-kezelés (MDM) nem tesztelési környezetben | [Első lépések](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Mobileszköz-kezelés (MDM) nem tesztelési környezetben | [Első lépések](/intune/setup-steps) |
 |Az MDM Intune-nal és a System Center Configuration Managerrel való együttes használata | [Hibrid mobileszköz-kezelés](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 A fenti útmutatók hosszabbak és több döntési ponttal rendelkeznek, mint az útmutató a próbaverzióhoz, mivel azok az Intune munkakörnyezetekben való beállításában segítenek.
@@ -67,7 +64,7 @@ Azok az ügyfelek, akik az Intune-t a System Center Configuration Managerrel egy
 A próbaverzióban az Intune-t állítjuk be MDM-szolgáltatóként; ez nem lesz hatással a munkakörnyezetére, hacsak nem dönt úgy, hogy a próbaverziót használja a munkakörnyezetéhez.
 
 1. Az [Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Felügyelet** &gt; **Mobileszköz-kezelés** elemre.
-2. A **Feladatok** listában válassza az **MDM-szolgáltató beállítása** lehetőséget. Megnyílik az **MDM szolgáltatás beállítása** párbeszédpanel. <!---screen shot--->
+2. A **Feladatok** listában válassza az **MDM-szolgáltató beállítása** lehetőséget. Megnyílik az **MDM szolgáltatás beállítása** párbeszédpanel.
 3. Az Intune annak megerősítését kéri, hogy be szeretné állítani MDM-szolgáltatóként. Jelölje be a jelölőnégyzetet, majd válassza az **Igen** lehetőséget az Intune mobileszközök kezelésére történő használatához.
 
 ## <a name="enroll-your-test-devices-into-intune"></a>Teszteszközök regisztrálása az Intune-ban
@@ -80,14 +77,14 @@ Telepítse a Microsoft Corporation által kiadott **Intune Céges portál** alka
 Mielőtt a felhasználók regisztrálnák az iOS-eszközeiket, be kell állítania, hogy az Intune kezelje ezeket az eszközöket.
 
 1. **Tanúsítvány-aláírási kérelem beszerzése**<br/>
-Jelentkezzen be a rendszergazda fiókjával, és navigáljon a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** lapra, és kattintson az **APNs-tanúsítványkérelem letöltése** elemre. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját. A .csr fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál. <!--- screen shot--->
-2.    **Az APNs-tanúsítvány beszerzése**<BR/>
+Jelentkezzen be a rendszergazda fiókjával, és navigáljon a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** lapra, és kattintson az **APNs-tanúsítványkérelem letöltése** elemre. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját. A .csr fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.
+2.  **Az APNs-tanúsítvány beszerzése**<BR/>
 Keresse fel az [Apple Push Certificates portált](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2), és jelentkezzen be vállalati Apple-azonosítójával az APNs-tanúsítvány létrehozásához a .csr kiterjesztésű fájllal. Az **Apple Push Certificates portál Upload (Feltöltés)** gombjára való kattintás után egy .json kiterjesztésű fájlt fog kapni, amely nem használható az APN szolgáltatáshoz. Fejezze be a letöltést, térjen vissza az Apple Push Certificates portálra a Certificates for Third-Party Servers (Tanúsítványok külső kiszolgálóknak) lapra, majd kattintson a **Download** (Letöltés) elemre.<br/>
 Töltse le az APNs-tanúsítványt (.pem), és mentse helyileg a fájlt. Később ezzel az Apple-azonosítóval újíthatja meg az APNs-tanúsítványt.
-3.    **Az APNs-tanúsítvány hozzáadása az Intune-hoz**<BR/>
+3.  **Az APNs-tanúsítvány hozzáadása az Intune-hoz**<BR/>
 A Microsoft Intune felügyeleti konzolon lépjen a **Felügyelet** > **Mobileszköz-kezelés** > **iOS és Mac OS X** > **APNs-tanúsítvány feltöltése** menüpontra, majd kattintson **Az APNs-tanúsítvány feltöltése** elemre. Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gombra, és adja meg az Apple ID azonosítóját. Az APNs-tanúsítvány lehetővé teszi, hogy az Intune iOS-eszközöket regisztráljon és kezeljen a szabályzatok regisztrált mobileszközökre való leküldésével.
-4.    **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**<br/>
-A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios), illetve [Mac OS X-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-mac-os-x). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
+4.  **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**<br/>
+A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios), illetve [Mac OS X-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>További tudnivalók az eszközregisztrációról
@@ -98,25 +95,14 @@ Az Intune a következő eszközplatformokat támogatja:
 
 Az eszközkezelés engedélyezésének követelményei a kezelni kívánt platformoktól függnek.
 - Az **Android** rendszerű mobileszközök lehetővé teszik, hogy a felhasználók a Google Play áruházban elérhető [Céges portál alkalmazással regisztráljanak](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune). Így nincs szükség további Intune konfigurációra.
-- [**iOS és Mac OS X** rendszerekre vonatkozó telepítési követelmények]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [**Windows Phone-ra** vonatkozó telepítési követelmények]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [Telepítési követelmények **iOS és Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) esetén.
 
-<!--- ## Verify enrollment--->
-<!--- START HERE
-
-### iOS and Mac OS X
-Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+- [Telepítési követelmények **Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune) esetén.
 
 
 
-### Windows Phone 8.1
-Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-## Install the previously deployed app
-Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.--->
 
 
 
 ## <a name="next-steps"></a>További lépések
 [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-

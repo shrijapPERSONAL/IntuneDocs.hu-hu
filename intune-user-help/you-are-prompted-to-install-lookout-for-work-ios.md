@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>Telepítenie kell a Lookout for Work alkalmazást az iOS-eszközön
 
 A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához, amely az esetleges fenyegetések felderítésével segít az eszköz védelmében. Elképzelhető, hogy különböző üzenetek jelennek meg az eszköz kijelzőjén attól függően, hogy a rendszergazda hogyan állította be a Lookout for Work alkalmazást.
 
 **A következőket kell tennie:**
 
-1.    Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Lookout for Work telepítését az eszközön.
+1.  Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Lookout for Work telepítését az eszközön.
 
   ![A Telepítés gombra koppintással telepítheti a Lookout for Work alkalmazást](./media/ios-mtd-install-app-request.png)
 
@@ -55,4 +51,3 @@ Ha a Lookout for Work biztonsági fenyegetést talál eszközén, megjeleníti a
 **Ha sikertelen a telepítés**
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

@@ -1,12 +1,12 @@
 ---
 title: "VPN-beállítások konfigurálása az Intune-ban"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Ez a témakör azt ismerteti, hogyan lehet az Intune-nal VPN-kapcsolatokat konfigurálni a felügyelt eszközökön."
+titleSuffix: Intune on Azure
+description: "Útmutató arról, hogyan konfigurálhatóak a VPN-kapcsolatok felügyelt eszközökön az Intune-nal."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8a8742d0b579fec734dd8335e2a610d126db21fa
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>A VPN-beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. A Microsoft Intune **VPN-profiljainak** használatával a VPN-beállításokat a szervezet felhasználóihoz és eszközeihez rendelheti hozzá, így könnyen és biztonságosan kapcsolódhatnak a hálózathoz.
 
@@ -36,12 +33,11 @@ Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a 
 
 A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
-||||||||
+|Kapcsolat típusa|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Kapcsolat típusa|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Igen|Igen|Igen|Igen|Igen|Igen|
 |Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
-|Citrix|Igen|Igen|Nem|Nem|Nem|Nem|
+|Citrix|Igen (csak Android esetén)|Igen|Nem|Nem|Nem|Nem|
 |F5 Edge Client|Igen|Igen|Igen|Igen|Igen|Igen|
 |Dell SonicWALL Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
@@ -61,13 +57,14 @@ Az [Egyéni VPN-profilok létrehozása](custom-vpn-profiles-create.md) című t�
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>A VPN-beállításokat tartalmazó eszközprofil létrehozása
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen töltse ki az egyéni VPN-profil **Név** és **Leírás** mezőjét.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné a VPN-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet VPN-eszközbeállításokat megadni:
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -75,7 +72,7 @@ Az [Egyéni VPN-profilok létrehozása](custom-vpn-profiles-create.md) című t�
     - **Windows 10 és újabb**
 6. A **Profil típusa** legördülő listában válassza a **VPN** lehetőséget.
 7. A választott platformtól függően a konfigurálható beállítások eltérőek lehetnek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-    - [Android-beállítások](vpn-settings-android.md)
+    - [Az Android és az Android for Work beállításai](vpn-settings-android.md)
     - [iOS-beállítások](vpn-settings-ios.md)
     - [macOS-beállítások](vpn-settings-macos.md)
     - [Windows Phone 8.1-beállítások](vpn-settings-windows-phone-8-1.md)
@@ -100,4 +97,3 @@ A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és hasz
 ### <a name="user-name-and-password"></a>Felhasználónév és jelszó
 
 A felhasználó a VPN-kiszolgálón felhasználónév és jelszó megadásával végzi el a hitelesítést.
-

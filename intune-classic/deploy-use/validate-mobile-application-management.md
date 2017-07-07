@@ -1,5 +1,5 @@
 ---
-title: "A MAM-telepítés ellenőrzése | Microsoft Docs"
+title: "A MAM-telepítés ellenőrzése"
 description: "Ez a témakör ismerteti, hogyan tesztelheti és ellenőrizheti, hogy a MAM-szabályzat beállítása és működése megfelelő-e."
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>A mobilalkalmazás-kezelés beállításának ellenőrzése
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Ha a tesztelés azt mutatja, hogy a MAM-szabályzat nem az elvárt módon műkö
 ### <a name="what-to-do"></a>Mi a teendő
 A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja végre:
 
-- Ha a felhasználó nem rendelkezik MAM-licenccel, rendeljen hozzá egy Intune-licencet az [Intune-licencek kezelése](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md) című részben leírtaknak megfelelően.
+- Ha a felhasználó nem rendelkezik MAM-licenccel, rendeljen hozzá egy Intune-licencet az [Intune-licencek kezelése](/intune/setup-steps) című részben leírtaknak megfelelően.
 - Ha a felhasználó nem rendelkezik O365-licenccel, szerezzen be számára egy licencet.
 - Ha a felhasználó alkalmazása **Nincs bejelentkezve** állapottal jelenik meg a listában, ellenőrizze, hogy megfelelően állította-e be a MAM-szabályzatot az adott alkalmazáshoz.
 - Győződjön meg róla, hogy ezek a feltételek vonatkoznak minden olyan felhasználóra, akit be kíván vonni a MAM-szabályzatok hatálya alá.
@@ -59,4 +56,3 @@ A felhasználói állapotnak megfelelően az alábbi műveleteket hajthatja vég
 [Felkészülés a mobilalkalmazás-felügyeleti szabályzatok konfigurálására a Microsoft Intune-ban](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Alkalmazásadatok védelme mobilalkalmazás-kezelési szabályzatokkal a Microsoft Intune segítségével](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

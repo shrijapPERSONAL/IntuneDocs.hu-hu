@@ -1,5 +1,5 @@
 ---
-title: "A Microsoft Intune kibocsátási megjegyzései | Microsoft Docs"
+title: "A Microsoft Intune kibocsátási megjegyzései"
 description: "Az Intune kibocsátási megjegyzései"
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2c7563ba79819a59740ba81c078c5540d0792ee5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="release-notes-for-microsoft-intune"></a>A Microsoft Intune kibocsátási megjegyzései
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -78,7 +75,7 @@ Az erőforrás-hozzáférési profilt (az e-mail-profilt) a rendszer egyik esetb
 ## <a name="microsoft-intune-app-wrapping-tool-for-android-has-no-built-in-uninstall-capability"></a>A Microsoft Intune App Wrapping Tool for Android nem rendelkezik beépített eltávolítási funkcióval
 **Probléma:** A **Microsoft Andorid rendszerhez készült alkalmazásburkoló eszköze** nem tartalmaz olyan beépített funkciót, amellyel eltávolítható.
 
-**Megkerülő megoldás:** Keresse meg az eszköz telepítési helyét, és törölje a könyvtárat. Az alapértelmezett telepítési hely a következő: **C:\Program Files /intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
+**Megkerülő megoldás:** Keresse meg az eszköz telepítési helyét, és törölje a könyvtárat. Az alapértelmezett telepítési hely a következő: **C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool. További információk az alkalmazásburkoló eszközről: [Android-alkalmazások előkészítése az alkalmazásburkoló eszközzel való kezeléshez](/intune/app-wrapper-prepare-android).
 
 ## <a name="remote-assistance-is-not-available-on-computers-that-run-windows-8-or-windows-81"></a>A Távsegítség nem érhető el a Windows 8 vagy Windows 8.1 rendszerű számítógépeken
 **Probléma:** Ebben a kiadásban a Távsegítség funkció nem érhető el a Windows 8 vagy Windows 8.1 rendszert futtató számítógépeken.
@@ -94,4 +91,3 @@ Az erőforrás-hozzáférési profilt (az e-mail-profilt) a rendszer egyik esetb
 Az Azure-portál a következő nyelveket támogatja: angol, cseh, francia, holland, japán, kínai (egyszerűsített), kínai (hagyományos), koreai, lengyel, magyar, német, olasz, orosz, portugál (brazíliai), portugál (portugáliai), spanyol, svéd, török.
 
 Az Intune felügyeleti konzol és a felhasználói mobilélmények az Azure-portál által támogatott nyelveken kívül a következő nyelveket támogatják: dán, finn, görög, norvég és román.
-

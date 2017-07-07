@@ -1,5 +1,5 @@
 ---
-title: "Az Endpoint Protection hibáinak elhárítása | Microsoft Docs"
+title: "Az Endpoint Protection hibáinak elhárítása"
 description: "Megoldhatja a Microsoft Intune végpontvédelmi szolgáltatásának használata közben felmerülő problémákat."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab9bf96a8ed1cfa857e422661644e82ac097a8fb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3577c18cd888b096dc783813d9e5ace3580173df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,4 +48,3 @@ Ez a szakasz az [Intune felügyeleti konzoljának](https://manage.microsoft.com)
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-

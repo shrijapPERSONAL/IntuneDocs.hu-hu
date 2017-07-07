@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows-eszköz Intune-beli regisztrálásakor?
 
 Amikor a Munkahelyi portál alkalmazást telepíti, majd egy Windows- vagy Windows Phone-eszközt regisztrál vele, azzal lehetővé teszi, hogy a rendszergazda felügyelje az eszközt, és így biztonságban tartsa a cég vagy az intézmény adatait. Ebben a témakörben a Windows 10-nél korábbi rendszerű eszközökről esik szó. A Windows 10-eszközök esetében lásd[kapcsolódó témakör](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
@@ -79,4 +74,3 @@ A regisztrált eszközök megközelítőleg nyolcóránként elvégzik a követk
 -   A vállalati alkalmazások leltárában bekövetkezett változások elküldése.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
-

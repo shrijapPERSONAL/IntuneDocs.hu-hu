@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Meglévő vállalati e-mail-fiók található
 
 Már rendelkezik szervezeti vagy vállalati e-mail-fiókkal, és most szeretne hozzáférni ehhez a fiókhoz a mobileszközön. A rendszergazdának szüksége van a segítségére ahhoz, hogy biztosítsa az e-mail-hozzáférése biztonságát a feladótól az eszközéig vezető úton. Lehetséges, hogy a jelenlegi e-mail-címe bevált, de ezekkel a lépésekkel nagyobb biztonságot biztosíthat az adatai számára.
@@ -39,4 +35,3 @@ Már rendelkezik szervezeti vagy vállalati e-mail-fiókkal, és most szeretne h
 3.  Ekkor egy keveset várnia kell, amíg a rendszer automatikusan alkalmazza az új e-mail-beállításokat.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

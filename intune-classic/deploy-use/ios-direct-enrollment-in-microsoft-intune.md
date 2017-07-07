@@ -1,5 +1,5 @@
 ---
-title: "iOS-eszközök közvetlen regisztrációja | Microsoft Docs"
+title: "iOS-eszközök közvetlen regisztrációja"
 description: "Az Apple Configurator eszközzel közvetlenül regisztrálhatja a vállalati tulajdonú iOS-eszközöket egy előre meghatározott szabályzattal. Ehhez csatlakoztassa azokat USB-kapcsolattal egy Mac géphez."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>iOS-eszközök közvetlen regisztrálása az Apple Configurator használatával
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ Amikor közvetlenül regisztrál iOS-eszközöket, regisztrálhat egy eszközt a
 9.  Az iOS-eszközön nyissa meg a **Beállítások** alkalmazást, majd válassza az **Általános** &gt; **Eszközkezelés** &gt; **Felügyeleti profil** lehetőséget. Ellenőrizze, hogy a profiltelepítés szerepel-e a listán, valamint ellenőrizze az iOS-házirend korlátozásait és a telepített alkalmazásokat. A házirend-korlátozások és alkalmazások megjelenítése az eszközön akár 10 percet is igénybe vehet.
 
 10.  Eszközök terjesztése. Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-nal.
-

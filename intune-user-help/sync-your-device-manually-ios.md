@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-ios-device-manually"></a>Az iOS-eszköz manuális szinkronizálása
 
 Egyes esetekben előfordulhat, hogy egy alkalmazás a Vállalati portálról való letöltése túl sokáig tart. Ilyen esetben megpróbálhatja manuálisan szinkronizálni az eszközt. Ez azt jelenti, hogy arra utasítja az eszközt, hogy próbálja meg újra beolvasni az adatokat, melyek letöltésével problémái vannak.
@@ -44,4 +39,3 @@ Egyes esetekben előfordulhat, hogy egy alkalmazás a Vállalati portálról val
 Egy betöltési sáv jelenik meg a képernyőn, és betöltést jelez, amíg a szinkronizálás be nem fejeződik.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

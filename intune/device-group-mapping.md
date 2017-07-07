@@ -1,12 +1,12 @@
 ---
 title: "Útmutató az eszközkategóriák használatához az Intune-ban"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: az a témakör azon eszközkategóriák használatát ismerteti, amelyek közül a felhasználók választhatnak eszközük Intune-os regisztrálásakor."
+titleSuffix: Intune on Azure
+description: "Ez a témakör azoknak az eszközkategóriáknak a használatát ismerteti, amelyeket a felhasználók eszközeik Intune-regisztrációjakor választhatnak."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,23 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0ac86a48c00c278b4d65dd7aabb096673fb2c00d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="map-device-groups"></a>Eszközcsoportok leképezése
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune eszközkategóriáival az eszközöket a definiált kategóriák alapján automatikusan felveheti csoportokba, így egyszerűsítve az eszközfelügyeletet.
 
 Az eszközkategóriák a következő munkafolyamatot használják:
-1.    Hozzon létre kategóriákat, amelyek közül a felhasználók választani fognak az eszközük regisztrálásakor
-4.    Amikor a végfelhasználók regisztrálják eszközüket, csak az Ön által meghatározott kategórialistából választhatnak. Ha az eszköz már regisztrálva van, a Vállalati portál alkalmazás következő használatakor a végfelhasználónak választani kell egy kategóriát.
-
+1. Hozzon létre kategóriákat, amelyek közül a felhasználók választani fognak az eszközük regisztrálásakor
+3. Az iOS-es és androidos eszközök végfelhasználóinak eszközük regisztrációjakor a konfigurált kategórialistából kell kategóriát választaniuk. A végfelhasználó a kategóriák Windows-eszközhöz való hozzárendelését a Céges portál webhelyen végezheti el (további részletekért lásd **Az eszközcsoportok konfigurálása után** című témakört).
+4. Ezután szabályzatokat és alkalmazásokat telepíthet ezekre a csoportokra.
 
 Bármilyen tetszés szerinti eszközkategóriát létrehozhat, például:
 - Pénztári eszközök
@@ -46,7 +43,6 @@ Bármilyen tetszés szerinti eszközkategóriát létrehozhat, például:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. lépés - Eszközkategóriák létrehozása az Azure Portal Intune panelén
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök regisztrálása** lehetőséget.
 3. A **Beléptetés** panelen válassza az **Eszközkategóriák** elemet.
 4. Az **Eszközkategóriák** lapon a **Létrehozás** elemmel hozhat létre új kategóriát.
@@ -66,31 +62,35 @@ Ha vannak konfigurált eszközcsoportok, amikor a felhasználók regisztrálják
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>A felügyelt eszközök kategóriáinak megtekintése
 
-1.    Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1.  Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Az Azure Portal Intune panelén válassza az **Eszközök és csoportok** lehetőséget.
 
-3.    A **Felügyelet** alatt kattintson a **Minden eszköz** elemre.
+3.  A **Felügyelet** alatt kattintson a **Minden eszköz** elemre.
 
-4.    Az eszközlistában keresse meg a **Kategória** oszlopot.
+4.  Az eszközlistában keresse meg a **Kategória** oszlopot.
 
 Ha a **Kategória** oszlop nem látható, kattintson az **Oszlopok** elemre, a listából válassza a **Kategória** elemet, és kattintson az **Alkalmaz** gombra.
 
 ### <a name="to-change-the-category-of-a-device"></a>Eszköz kategóriájának módosítása
 
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök és csoportok** lehetőséget.
 4. Az **Eszközök és csoportok** panelen válassza a **Felügyelet** > **Minden eszköz** lehetőséget.
 5. Az eszközlistából válassza ki a kívánt eszközt, majd az eszköz tulajdonságainak panelén válassza a **Felügyelet** > **Tulajdonságok** lehetőséget.
 6. A következő panelen a kijelölt eszköz **Eszközkategória** tulajdonságát átállíthatja a korábban konfigurált kategórianevek bármelyikére.
 
+## <a name="after-you-configure-device-groups"></a>Az eszközcsoportok konfigurálása után
 
+Az iOS-es és androidos eszközök végfelhasználóinak eszközük regisztrációjakor a konfigurált kategórialistából kell kategóriát választaniuk. A kategória kiválasztását és a regisztráció befejezését követően a rendszer a kiválasztott kategóriának megfelelő Intune eszközcsoporthoz vagy Active Directory biztonsági csoporthoz adja az eszközüket.
+
+A végfelhasználó a kategóriák Windows-eszközhöz való hozzárendelését a Céges portál webhelyen (portal.manage.microsoft.com) végezheti el az eszköz regisztrálása után. A windowsos eszközön nyissa meg a webhelyet, és válassza a **Menü** > **Saját eszközök** elemet. Válasszon egy regisztrált eszközt a lapon található listából, majd válasszon egy kategóriát. 
+
+A kategória kiválasztása után az eszköz automatikusan bekerül az Ön által létrehozott, a kategóriának megfelelő csoportba. Ha a kategóriák konfigurálása előtt az eszköz már regisztrálva van, a végfelhasználó egy értesítést lát az eszközről a Céges portál webhelyen, és a rendszer egy adott kategória kiválasztását kéri a következő alkalommal, amikor a végfelhasználó belép az iOS-es vagy androidos Céges portál alkalmazásba.
 
 ## <a name="further-information"></a>További információ
 - Az Azure Portalon szerkesztheti az eszközkategóriákat, de ha így tesz, akkor manuálisan kell módosítania az Azure Active Directoryban az adott kategóriára hivatkozó biztonsági csoportokat.
 
 - Ha törli valamelyik kategóriát, az ahhoz rendelt eszközöknél a **Nincs hozzárendelve** kategórianév jelenik meg.
-
 
 

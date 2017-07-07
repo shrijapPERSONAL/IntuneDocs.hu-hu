@@ -1,7 +1,7 @@
 ---
 title: "Megfelelőségi szabályzat létrehozása Android for Work rendszerhez"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató Android for Work-eszközök megfelelőségi szabályzatának létrehozásához."
+titleSuffix: Intune on Azure
+description: "Útmutató Android for Work-eszközök megfelelőségi szabályzatának létrehozásához.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: af5aa4f336df0f47695484b7dce1d7df29bea03d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 518b74703de88a1cded2ad38d33c52b54699dc44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune-azure-preview"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune az Azure-on előzetesben
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Megfelelőségi szabályzat minden platformhoz külön készül.  Megfelelőségi szabályzat az Azure Portalon hozható létre. A megfelelőségi szabályzatokról további információt talál a [Mi az eszközmegfelelőség?](device-compliance.md) című témakörben. Az [Első lépések az eszközmegfelelőséghez](device-compliance-get-started.md) című témakörből megtudhatja, milyen előfeltételeket kell teljesíteni a megfelelőségi szabályzatok létrehozása előtt.
+A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre.  Megfelelőségi szabályzat az Azure Portalon hozható létre. A megfelelőségi szabályzatokról további információt talál a [Mi az eszközmegfelelőség?](device-compliance.md) című témakörben. Az [Első lépések az eszközmegfelelőséghez](device-compliance-get-started.md) című témakörből megtudhatja, milyen előfeltételeket kell teljesíteni a megfelelőségi szabályzatok létrehozása előtt.
 
 Az alábbi táblázat azt is ismerteti, hogy miképpen történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -123,4 +120,3 @@ További információ: [az eszközök fenyegetések elleni védelmét szolgáló
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

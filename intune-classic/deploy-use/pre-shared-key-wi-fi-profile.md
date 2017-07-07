@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi használata előmegosztott kulccsal | Microsoft Docs"
+title: "Előre megosztott kulcsot használó Wi-Fi"
 description: "Wi-Fi-profil létrehozása előmegosztott kulccsal az Egyéni konfiguráció funkció segítségével."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulcsú Wi-Fi-profil létrehozása egyéni szabályzattal
 
@@ -30,24 +27,24 @@ ms.lasthandoff: 05/23/2017
 Ebből a cikkből megtudhatja, hogyan hozhat létre Wi-Fi profilt előmegosztott kulccsal az Intune **Egyéni konfiguráció** funkciója segítségével. A témakörben szereplő példa pedig elmagyarázza, hogyan hozzon létre EAP-alapú Wi-Fi-profilt.
 
 > [!NOTE]
--    Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
+-   Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
 - Android-rendszerek esetén használhatja a Johnathon Biersack által biztosított [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) programot is.
--    További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
+-   További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
 -  iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Alternatív megoldásként használja a Johnathon Biersack által biztosított [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) programot.
 
 
-1.    Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
+1.  Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
 
-2.    Adjon meg egy nevet és egy leírást.
-3.    Adjon hozzá egy OMA-URI beállítást:
+2.  Adjon meg egy nevet és egy leírást.
+3.  Adjon hozzá egy OMA-URI beállítást:
 
-   a.    Adjon nevet a Wi-Fi-hálózat ezen beállításának.
+   a.   Adjon nevet a Wi-Fi-hálózat ezen beállításának.
 
-   b.    Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
+   b.   Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
 
-   c.    **Adattípus**: állítsa be a következőt: „Karakterlánc (XML)”.
+   c.   **Adattípus**: állítsa be a következőt: „Karakterlánc (XML)”.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -221,4 +218,3 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 ### <a name="see-also"></a>További információ
 [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md)
-

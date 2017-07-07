@@ -1,5 +1,5 @@
 ---
-title: "Vállalati e-mailek elérése e-mail-profilokkal | Microsoft Docs"
+title: "Vállalati e-mailek elérése e-mail-profilokkal"
 description: "Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Ha további adatveszteség-megelőzési intézkedéseket szeretne foganatosítan
 A rendszergazdák vagy a felhasználók alternatív e-mail-ügyfélprogramokat is telepíthetnek (például a Microsoft Outlook Android vagy iOS rendszerhez készült változatát). Előfordulhat, hogy ezek az e-mail-ügyfélprogramok nem támogatják az e-mail-profilokat, és nem állíthatók be a Microsoft Intune e-mail-profilok használatával.  
 
 A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram e-mail-profilok segítségével:
--    Windows Phone 8.1 és újabb verziók
--    Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
--    iOS 8.0 és újabb verziók
--    Samsung KNOX Standard (4.0-s és újabb verzió)
--    Android for Work (külső levelezőprogramokkal, a natív levelezőprogram csak személyes profillal használható)
+-   Windows Phone 8.1 és újabb verziók
+-   Windows 10 (asztali verzió), Windows 10 Mobile és újabb verziók
+-   iOS 8.0 és újabb verziók
+-   Samsung KNOX Standard (4.0-s és újabb verzió)
+-   Android for Work (külső levelezőprogramokkal, a natív levelezőprogram csak személyes profillal használható)
 
 Azon kívül, hogy beállít egy e-mail-fiókot az eszközön, megadhatja a szinkronizálni kívánt e-mailek mennyiségét, és eszköztípustól függően a szinkronizálni kívánt tartalmakat is.
 
@@ -85,7 +82,7 @@ A jelszó nem szerepel az e-mail profilban, így a felhasználónak ezt minden a
 
     -   **E-mail-profil (Android for Work - Gmail)**
 
-    -    **E-mail-profil (Android for Work - Nine Work)**
+    -   **E-mail-profil (Android for Work - Nine Work)**
 
     Csak egyéni e-mail profilházirendet hozhat létre és telepíthet. Ajánlott beállítások nem állnak rendelkezésre.
 
@@ -133,4 +130,3 @@ A **Házirend** munkaterület **Áttekintés** lapján található állapotössz
 > - Android for Work használatakor az adott e-mail-profilon kívül telepítse a Gmail vagy a Nine Work alkalmazást is.
 > - Ha egy eszközről ki szeretne törölni egy e-mail profilt, módosítsa a telepítését, és távolítson el minden olyan csoportot, amelyeknek tagja az eszköz. Megjegyzendő, hogy ha ez az egy e-mail-profil van az eszközön, nem lehet ezzel a módszerrel eltávolítani.
 > - Ha egy már üzembe helyezett e-mail-profilt módosít, a végfelhasználókat a rendszer arra kérheti, hogy fogadják el az e-mail-beállítások újrakonfigurálását.
-

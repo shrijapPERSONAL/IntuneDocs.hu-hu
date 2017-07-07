@@ -1,5 +1,5 @@
 ---
-title: "Az előfizetés beállítása a Lookout használatára | Microsoft Docs"
+title: "Az előfizetés konfigurálása a Lookout használatához"
 description: "Ez a cikk a Lookout veszélyforrások elleni eszközvédelem konfigurálásának lépéseit ismerteti."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>A Lookout Mobile Threat Defense-előfizetés beállítása
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 
   ![képernyőkép a Lookout konzolra való első belépésről](../media/mtp/lookout_mtp_initial_login.png) A hozzájárulás és beleegyezés után a rendszer átirányítja a Lookout konzolra.
 
-  Bejelentkezési problémákkal kapcsolatban lásd: [A Lookout-integráció hibaelhárítása](/intune-classic/troubleshoot/troubleshooting-lookout-integration).
+  Bejelentkezési problémákkal kapcsolatban lásd: [A Lookout-integráció hibaelhárítása](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md).
 
 3.  Nyissa meg a [Lookout konzolon](https://aad.lookout.com) a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
 
@@ -139,4 +136,3 @@ A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési
 A telepítés befejezése után a Lookout Mobile Threat Defense elkezdi lekérdezni az Azure AD-ből azokat az eszközöket, amelyek megfelelnek a megadott regisztrációs csoportoknak.  A regisztrált eszközök adatai az Eszközök modulban találhatók.  Az eszközök kezdeti állapota mindig „folyamatban” lesz.  Az eszközállapot akkor frissül, ha a Lookout for Work alkalmazás az illető eszközön telepítve lett, megnyitották és aktiválták azt.  A Lookout for Work alkalmazás eszközökre való elküldéséről további információt talál a [Lookout for Work alkalmazások konfigurálása és telepítése](configure-deploy-lookout-for-work-app.md) című témakörben.
 ## <a name="next-steps"></a>További lépések
 [Lookout MTP-kapcsolat engedélyezése az Intune-ban](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

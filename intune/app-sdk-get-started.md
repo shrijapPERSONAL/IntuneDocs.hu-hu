@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
 Ez az útmutató segítséget nyújt a mobilalkalmazás gyors engedélyezéséhez a Microsoft Intune-beli mobilalkalmazás-felügyelet használatához. Javasoljuk, hogy először tájékozódjon az Intune App SDK előnyeiről, amelyekről [Az Intune App SDK áttekintése](app-sdk.md) című témakörben olvashat bővebben.
@@ -139,4 +136,3 @@ A jelvény egy aktatáska formájú ikon, amely az alábbi mintákon látható:
 * Egy képszerkesztő alkalmazás, amely képes olvasni az **.eps** kiterjesztésű fájlokat, vagy egy Adobe-alkalmazás, amely képes olvasni az **.ai**-fájlokat.
 
 * Az [Intune alkalmazásjelvény erőforrásait és irányelveit](https://github.com/msintuneappsdk/intune-app-partner-badge) a Microsoft Intune GitHubban találja.
-

@@ -1,7 +1,7 @@
 ---
 title: "Üzletági iOS-alkalmazások hozzáadása az Intune-hoz"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató az üzletági iOS-alkalmazások az Intune-hoz való hozzáadásához."
+titleSuffix: Intune on Azure
+description: "Útmutató az üzletági iOS-alkalmazások Intune-ba való felvételéhez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e9dea2b44279c26de2b2ea4141fe010645ba942
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bb26ca341fbef6ae02556b09044f43cec23dae2b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>1. lépés – A szoftvertelepítő fájl megadása
@@ -68,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 2. Az alkalmazást a **Hozzáadás** elem kiválasztásával töltheti fel az Intune-ba.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md).
-

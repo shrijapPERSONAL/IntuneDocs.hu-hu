@@ -1,5 +1,5 @@
 ---
-title: "MAM-szabályzatok konfigurálása az Intune-konzolban | Microsoft Docs"
+title: "MAM-szabályzatok konfigurálása az Intune-konzolban"
 description: "A Microsoft Intune mobilalkalmazás-felügyeleti szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Ahhoz, hogy korlátozásokat lehessen alkalmazni egy alkalmazásra, az alkalmaz�
 
 -   **Szabályzat által felügyelt alkalmazás használata**. Ezek az alkalmazások beépített App SDK-val rendelkeznek. Ilyen típusú alkalmazások hozzáadásához meg kell adnia az alkalmazás hivatkozását egy alkalmazás-áruházból, például az iTunes vagy Google Play áruházból. Az ilyen típusú alkalmazáshoz nincs szükség további feldolgozásra. További információt [a Microsoft Intune mobilalkalmazás-felügyeleti szabályzataival használható alkalmazások listájában](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) találhat.
 
--   **Becsomagolt alkalmazás használata**. A becsomagolt alkalmazások abból a célból lettek újracsomagolva a Microsoft Intune alkalmazásburkoló eszközével, hogy tartalmazzák az App SDK-t. Ezt az eszközt általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használják, az alkalmazásáruházból letöltött alkalmazások feldolgozásához nem használható. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Becsomagolt alkalmazás használata**. A becsomagolt alkalmazások abból a célból lettek újracsomagolva a Microsoft Intune alkalmazásburkoló eszközével, hogy tartalmazzák az App SDK-t. Ezt az eszközt általában a házon belül létrehozott vállalati alkalmazások feldolgozásához használják, az alkalmazásáruházból letöltött alkalmazások feldolgozásához nem használható. További információ: [iOS-alkalmazások mobilalkalmazás-kezeléshez való előkészítése a Microsoft Intune alkalmazásburkoló eszközével](/intune/app-wrapper-prepare-ios) és [Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez a Microsoft Intune alkalmazásburkoló eszközével](/intune/app-wrapper-prepare-android).
 
-- **Saját, az Intune App SDK-t tartalmazó alkalmazás írása**. Az Intune App SDK lehetővé teszi alkalmazásfelügyeleti funkciók beépítését a készülő alkalmazásokba. További információ: [Az Intune App SDK áttekintése](/intune-classic/develop/intune-app-sdk).
-
-Ha segítségre van szüksége az alkalmazásburkoló eszköz és az Intune App SDK közötti választáshoz, olvassa el a következő cikket: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Saját, az Intune App SDK-t tartalmazó alkalmazás írása**. Az Intune App SDK lehetővé teszi alkalmazásfelügyeleti funkciók beépítését a készülő alkalmazásokba. További információ: [Az Intune App SDK áttekintése](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Ha segítségre van szüksége az alkalmazásburkoló eszköz és az Intune App SDK közötti választáshoz, olvassa el a következő cikket: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/intune/apps-prepare-mobile-application-management).
 
 Néhány felügyelt alkalmazás, például az iOS és az Android rendszerhez készült Outlook támogatja a *többszörös identitást*. Ez azt jelenti, hogy az Intune csak az alkalmazásban lévő vállalati fiókokra vagy adatokra alkalmazza a felügyeleti beállításokat.
 
@@ -197,4 +193,3 @@ Azokban az esetekben, amikor az eszköz vagy a felhasználó két ütköző ház
 -   Ha egy házirend már alkalmazva lett az eszközre, a meglévő házirend-beállítások nem íródnak felül.
 
 -   Ha még nem lett alkalmazva házirend az eszközre, és két ütköző beállítás van használatban, az eszközbe épített alapértelmezett beállítás használatos.
-

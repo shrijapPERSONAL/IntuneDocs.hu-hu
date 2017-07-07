@@ -1,11 +1,11 @@
 ---
-title: "Eszközök kategorizálása eszközcsoport-leképezéssel | Microsoft Docs"
+title: "Eszközök kategorizálása eszközcsoport-leképezéssel"
 description: "A Microsoft Intune eszközcsoport-leképezés funkciója segítségével különböző Ön által meghatározott kategóriákba csoportosíthatja az eszközöket, megkönnyítve ezzel a felügyeletüket."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Eszközök kategorizálása eszközcsoport-leképezéssel a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ Az eszközcsoport-leképezés funkció a következő munkafolyamatot használja:
 1. Hozzon létre kategóriákat, amelyek közül a felhasználók választani fognak az eszközük regisztrálásakor
 2. Ön a használni kívánt kategóriákhoz tartozó csoportokat hozza létre (vagy a meglévő csoportokat használja). Az Ön által használt Intune-verziótól függően ezek Intune- vagy Azure Active Directory biztonsági csoportok lesznek.
 2. Beállíthatja a szabályokat, amelyek segítségével a rendszer összepárosítja a kiválasztott kategóriákat a létrehozott eszközcsoportokkal.
-3. Amikor a végfelhasználók regisztrálják eszközüket, csak az Ön által meghatározott kategórialistából választhatnak. A kategória kiválasztását követően a rendszer automatikusan az Ön által létrehozott megfelelő csoporthoz adja a kérdéses eszközt. Ha az eszköz már regisztrálva van, a Vállalati portál alkalmazás következő használatakor a végfelhasználónak választani kell egy kategóriát.
+3. Amikor az iOS- vagy Android-eszközök végfelhasználói regisztrálják eszközüket, csak az Ön által meghatározott kategórialistából választhatnak. A végfelhasználó a kategóriák Windows-eszközhöz való hozzárendelését a Céges portál webhelyen végezheti el (további részletekért lásd **Az eszközcsoportok konfigurálása után** című témakört).
 4. Ezután szabályzatokat és alkalmazásokat telepíthet ezekre a csoportokra.
 
 Bármilyen tetszés szerinti eszközkategóriát létrehozhat, például:
@@ -86,8 +84,13 @@ Például (**device.deviceCategory -eq** "<*az Intune felügyeleti konzolján le
 
 ## <a name="after-you-configure-device-groups"></a>Az eszközcsoportok konfigurálása után
 
-Amikor a felhasználók regisztrálják eszközüket, meg fog jelenni számukra az Ön által beállított kategóriák listája. A kategória kiválasztását és a regisztráció befejezését követően a rendszer a kiválasztott kategóriának megfelelő Intune eszközcsoporthoz vagy Active Directory biztonsági csoporthoz adja az eszközüket.
+Az iOS-es és androidos eszközök végfelhasználóinak eszközük regisztrációjakor a konfigurált kategórialistából kell kategóriát választaniuk. A kategória kiválasztását és a regisztráció befejezését követően a rendszer a kiválasztott kategóriának megfelelő Intune eszközcsoporthoz vagy Active Directory biztonsági csoporthoz adja az eszközüket.
+
+A végfelhasználó a kategóriák Windows-eszközhöz való hozzárendelését a Céges portál webhelyen (portal.manage.microsoft.com) végezheti el az eszköz regisztrálása után. A windowsos eszközön nyissa meg a webhelyet, és válassza a **Menü** > **Saját eszközök** elemet. Válasszon egy regisztrált eszközt a lapon található listából, majd válasszon egy kategóriát. 
+
+A kategória kiválasztása után az eszköz automatikusan bekerül az Ön által létrehozott, a kategóriának megfelelő csoportba. Ha a kategóriák konfigurálása előtt az eszköz már regisztrálva van, a végfelhasználó egy értesítést lát az eszközről a Céges portál webhelyen, és a rendszer egy adott kategória kiválasztását kéri a következő alkalommal, amikor a végfelhasználó belép az iOS-es vagy androidos Céges portál alkalmazásba.
+
+
 
 ### <a name="see-also"></a>További információ
 [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

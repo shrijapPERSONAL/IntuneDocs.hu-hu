@@ -1,7 +1,7 @@
 ---
 title: "Megfelelőségi szabályzat létrehozása Windows rendszerhez"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató a windowsos eszközök megfelelőségi szabályzatainak létrehozásához."
+titleSuffix: Intune on Azure
+description: "A cikk azt ismerteti, hogyan lehet megfelelőségi szabályzatokat létrehozni Windows-eszközökhöz.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,16 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4de81c3dc6f1499c2364d8bf9c3b49b219248684
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune-azure-preview"></a>Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Azure-beli Intune előzetesében
+# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre.  Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről a [Get started with device compliance](device-compliance-get-started.md) (Az eszközmegfelelőség használatának első lépései) című témakörben találhat további információt.
 
@@ -195,4 +193,3 @@ Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb 
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

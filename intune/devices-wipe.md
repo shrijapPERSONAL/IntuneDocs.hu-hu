@@ -1,12 +1,12 @@
 ---
 title: "Az eszközök teljes vagy szelektív törlése Intune használatával"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Megtudhatja, hogyan kezdeményezhet szelektív törlést a vállalati adatok eltávolítása érdekében, illetve teljes törlést az eszköz gyári beállításainak visszaállításához."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt a céges adatok eszközökről történő szelektív törléséről, valamint az összes adat törléséről az eszköz gyári alaphelyzetbe állításakor."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Teljes vagy szelektív törlés alkalmazása
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. Egy távoli törlési parancs kiadásával a felhasználók az Intune Munkahelyi portál segítségével törölhetik az Intune-ban regisztrált saját tulajdonú eszközeik tartalmát.
 
@@ -101,8 +98,8 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
-|E-mail|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
+|E-mail|Nem alkalmazható (az androidos eszközök nem támogatják az e-mail-profilokat)|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
+|Outlook|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
@@ -130,4 +127,3 @@ Az androidos eszközökről a szelektív törlés eltávolítja a munkahelyi pro
 3.  Az eszköz nevét tartalmazó panelen válassza a **Céges adatok eltávolítása** lehetőséget, majd kattintson az **Igen** gombra a törlés megerősítéséhez.
 
 Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
-

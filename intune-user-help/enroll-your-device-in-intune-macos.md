@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>macOS-eszköz regisztrálása az Intune-ban
 
 Munkájának elvégzéséhez hozzá kell férnie munkahelyének alkalmazásaihoz, adataihoz és erőforrásaihoz. Ha macOS-eszközt használ a munkahelyén, akkor ez egy __felügyeleti profil__ telepítését követeli meg. Ez egyszerűen egy olyan fájl, amelyet a cég rendszergazdája állított össze, és betölti a beállításokat és a hozzáférési adatokat a Mac gépre. Szeretne még többet megtudni? Ebben a cikkben elolvashatja, [mi történik a Céges portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -70,4 +66,3 @@ Munkájának elvégzéséhez hozzá kell férnie munkahelyének alkalmazásaihoz
  ![A telepített macOS-profil](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 További segítségre van szüksége? Érdeklődjön munkahelye rendszergazdájától. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com).
-

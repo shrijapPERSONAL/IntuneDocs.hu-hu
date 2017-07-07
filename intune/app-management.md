@@ -1,12 +1,12 @@
 ---
-title: "Az alkalmazáskezelés ismertetése | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Ezen témakör a Microsoft Intune-nal történő alkalmazáskezeléssel kapcsolatos alapismereteket tartalmazza"
+title: "Mi az alkalmazáskezelés?"
+titleSuffix: Intune on Azure
+description: "Ezen témakör a Microsoft Intune-nal történő alkalmazáskezeléssel kapcsolatos alapismereteket tartalmazza"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Rendszergazdaként valószínűleg az Ön feladata annak biztosítása, hogy a végfelhasználók hozzáférhessenek a munkájukhoz szükséges alkalmazásokhoz. Ez kihívást jelenthet, mivel:
+Rendszergazdaként az Ön feladata biztosítani, hogy a végfelhasználók hozzáférhessenek a munkájukhoz szükséges alkalmazásokhoz. Ez kihívást jelenthet, mivel:
 - Sokféle eszközplatformot és alkalmazástípust kell kezelnie.
-- Előfordulhat, hogy a vállalati eszközökön, valamint a felhasználók saját eszközein található alkalmazásokat is kezelnie kell.
-- Mindezek mellett biztosítania kell a hálózat és az adatok biztonságát is. 
+- Előfordulhat, hogy a vállalati eszközökön, valamint a felhasználók saját eszközein található alkalmazásokat is felügyelnie kell.
+- Gondoskodnia kell a céges hálózat és a felhasználói adatok biztonságáról.
 
 Emellett előfordulhat, hogy az Intune-ban nem regisztrált eszközökön található alkalmazásokat is szeretne hozzárendelni és felügyelni.
 
@@ -63,7 +60,6 @@ Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kíván
 
 <sup>2</sup>Csak az Intune által kezelt eszközökre vonatkozik.
 
-
 ## <a name="how-to-get-started"></a>Első lépések
 
 Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatban találja, amely a következőképpen érhető el:
@@ -75,12 +71,13 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
 
 ### <a name="manage"></a>A számítógépeken futó
-- **Alkalmazások** – Itt adhatja hozzá, rendelheti hozzá és figyelheti az alkalmazások többségét. 
+- **Alkalmazások** – Itt veheti fel, oszthatja ki és figyelheti az alkalmazások többségét.
     - [Alkalmazások hozzáadása](apps-add.md)
     - [Alkalmazások hozzárendelése](apps-deploy.md)
     - [Alkalmazások figyelése](apps-monitor.md)
-- **Alkalmazáskonfigurációs szabályzatok** – Az alkalmazáskonfigurációs szabályzatokkal automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy alkalmazást futtat. A részletekért lásd:
-    - [Alkalmazáskonfigurációs szabályzatok](app-configuration-policies.md)
+- **Alkalmazáskonfigurációs szabályzatok** – Az alkalmazáskonfigurációs szabályzatokkal automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy alkalmazást futtat.
+    - [iOS-es alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-ios.md)
+    - [Androidos alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-android.md)
 - **Alkalmazásvédelmi szabályzatok** – Lehetővé teszik beállítások társítását egy alkalmazáshoz a használt céges adatok védelme érdekében. Például korlátozhatja egy alkalmazás más alkalmazásokkal való kommunikációját, vagy előírhatja PIN-kód megadását a felhasználónak egy céges alkalmazás eléréséhez.
     - [Alkalmazásvédelmi szabályzatok](app-protection-policies.md)
 - **Szelektív alkalmazástörlés** – Csak a céges adatok eltávolítása a kiválasztott felhasználó eszközéről.
@@ -100,8 +97,7 @@ További információkért lásd: [Alkalmazások figyelése](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Vállalati Windows Áruház** – A Vállalati Windows Áruházba történő integráció beállítása. Ezt követően a megvásárolt alkalmazásokat az Intune-ban szinkronizálhatja, hozzárendelheti és nyomon követheti licenchasználatát. 
+- **Vállalati Windows Áruház** – A Vállalati Windows Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
     - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
-- **A Céges portál védjegye** – A Céges portál testreszabása saját céges védjegy megadásával. 
+- **A Céges portál védjegye** – A Céges portál testreszabása saját céges védjegy megadásával.
     - [Céges portál konfigurálása](company-portal-app.md)
-

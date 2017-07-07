@@ -1,5 +1,5 @@
 ---
-title: "Skycure Mobile Threat Defense-összekötő | Microsoft Docs"
+title: "Skycure Mobile Threat Defense-összekötő"
 description: "A vállalati erőforrásokhoz való hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján a Skycure Mobile Threat Defense-összekötővel."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-összekötő
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -119,7 +116,7 @@ További tájékoztatást a [Skycure webhelyén](https://www.skycure.com/skycure
 
 Az Intune és a Skycure integrálásához szükséges lépések:
 
-1.  [A Skycure konfigurálása Azure Active Directory-alapú egyszeri bejelentkezés (SSO) használatára /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [A Skycure konfigurálása Azure Active Directory-alapú egyszeri bejelentkezés (SSO) használatára](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [Az iOS-es Skycure alkalmazáshoz tartozó alkalmazáskonfigurációs szabályzat letöltése](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
@@ -132,4 +129,3 @@ Az Intune és a Skycure integrálásához szükséges lépések:
 6.  [A Skycure Mobile Threat Defense engedélyezése az Intune-ban](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 7.  [A Skycure Mobile Threat Defense megfelelőségi szabályzatának létrehozása az Intune-ban](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

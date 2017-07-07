@@ -1,5 +1,5 @@
 ---
-title: "Szabályzatok érvénybe léptetése és alkalmazások telepítése | Microsoft Docs"
+title: "Szabályzatok érvénybe léptetése és alkalmazások telepítése"
 description: "Engedélyezheti a szabályzatok beállításait, és telepíthet olyan alkalmazásokat, amelyek azonnal rákerülnek az eszközökre, amint regisztrálják őket felügyeletre."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 90ca67757367f89a7c1a0eebea70f107eb279378
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-policies-and-publish-apps"></a>Szabályzatok létrehozása és alkalmazások közzététele
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -40,7 +37,7 @@ A szabályzatok és az alkalmazások platformfüggőek.
 - [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android és Samsung KNOX Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
 - [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
-- [Windows 10 /intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 10 (PC-s és mobilverzió)](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 - [Windows 8.1](/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
 - [Windows Phone 8.1](/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
 - [Windows Team](/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
@@ -73,5 +70,4 @@ Az alkalmazás ekkor elérhetővé válik az Intune-ban, tehát telepíthető a 
 
 >[!div class="step-by-step"]
 
->[&larr; **Felhasználók és eszközök rendszerezése**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**A Vállalati portál testreszabása** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
-
+>[&larr; **Felhasználók és eszközök rendszerezése**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**A Vállalati portál testreszabása** &rarr;](/intune/company-portal-customize)  

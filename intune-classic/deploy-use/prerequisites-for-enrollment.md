@@ -1,11 +1,11 @@
 ---
-title: "Mobileszközök regisztrálásának előfeltételei | Microsoft Docs"
+title: "A mobileszközök regisztrációjára vonatkozó előfeltételek"
 description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Mobileszköz-kezelés előfeltételei az Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ A Microsoft Intune-nal bővített Configuration Manager-t keresi?
 ## <a name="step-1-enable-connections"></a>1. lépés: Kapcsolatok engedélyezése
 
 A mobileszközök regisztrációjának engedélyezése előtt feltétlenül végezze el a következőket:
-- [Ellenőrizze a szükséges hálózati URL-címeket és -portokat.](../get-started/network-bandwidth-use.md)
-- [Vegye fel és ellenőrizze a tartományevet.](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [Ellenőrizze a szükséges hálózati URL-címeket és -portokat.](/intune/network-bandwidth-use)
+- [Vegye fel és ellenőrizze a tartományevet.](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>2. lépés: MDM-szolgáltató beállítása
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
-> Alaposan fontolja meg, hogy a mobileszközöket csak az Intune használatával (online szolgáltatás), vagy a System Center Configuration Managerbe integrált Intune-nal szeretné-e kezelni (helyszíni szoftveres megoldás online szolgáltatással együtt). Miután a mobileszköz-kezelő szolgáltatót beállította, azt a Microsoft-ügyfélszolgálat segítsége nélkül már nem tudja módosítani. További utasításokért tekintse meg a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című részt.
-
+> A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a meglévő felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információért tekintse meg a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című részt.
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Mobileszköz-kezelés** lehetőséget.
 
@@ -116,7 +112,7 @@ A módosítások mentése után a felügyeleti konzol **Vállalati portál** lap
 
 ## <a name="step-5-assign-user-licenses"></a>5. lépés: Felhasználói licencek hozzárendelése
 
-Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is. [Szinkronizálhatja a helyszíni felhasználókat az Azure AD-be](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+Az **Office 365 felügyeleti portál** használatával a felhőalapú felhasználók és licencek manuálisan hozzáadhatók, illetve hozzárendelhetők a felhőalapú felhasználói fiókokhoz és a helyszíni Active Directoryból az Azure Active Directoryba (Azure AD) szinkronizált fiókokhoz is. [Szinkronizálhatja a helyszíni felhasználókat az Azure AD-be](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Jelentkezzen be az [Office 365 felügyeleti portálján](https://portal.office.com/Admin/Default.aspx) bérlői rendszergazdai hitelesítő adataival.
 
@@ -154,7 +150,13 @@ A regisztráció engedélyezését követően hozzáláthat ahhoz, hogy a kialak
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?
 
-Ha nem a megfelelő MDM-szolgáltatót állította be, és szeretné azt megváltoztatni, kapcsolatba kell lépnie a Microsoft ügyfélszolgálatával. A beállítást egyedül nem fogja tudni megváltoztatni. Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, kérjük, tekintse át a következő információkat, amelyekből megtudhatja, hogy a Microsoft ügyfélszolgálatának milyen adatokra lesz szüksége a beállítás megváltoztatásához.
+Ha nem a megfelelő MDM-szolgáltatót állította be, és szeretné azt megváltoztatni, a következő lehetőségek állnak rendelkezésére:
+
+### <a name="change-the-mdm-authority-yourself"></a>A mobileszköz-kezelési szolgáltató saját kezű módosítása
+A Configuration Manager 1610-es és a Microsoft Intune 1705-ös verziójával kezdődően anélkül módosíthatja az MDM-szolgáltatót Microsoft Intune-ról Configuration Manager (hibrid) szolgáltatásra vagy vissza, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a meglévő felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. Részletekért lásd az [MDM-szolgáltató módosítása]( /sccm/mdm/deploy-use/change-mdm-authority) szakaszt.
+
+### <a name="contact-microsoft-support"></a>Kapcsolatfelvétel a Microsoft ügyfélszolgálatával
+Ha az 1610-es verziónál régebbi Configuration Managerrel rendelkezik, vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával. A beállítást egyedül nem fogja tudni megváltoztatni. Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, kérjük, tekintse át a következő információkat, amelyekből megtudhatja, hogy a Microsoft ügyfélszolgálatának milyen adatokra lesz szüksége a beállítás megváltoztatásához.
 
 Az MDM-szolgáltató beállítását 3 módon lehet alaphelyzetbe állítani. Ezek közül a támogatási kérelmében azt a módot kell kiválasztania, amelyik a helyzetére vonatkozik. Ha az adott körülményt nem találja a felsorolásban, tájékoztassa a Microsoft ügyfélszolgálatát.
 
@@ -166,7 +168,7 @@ A Microsoft ügyfélszolgálata a következő információk megerősítésére f
 
 Ha az Intune-t és az Office 365-öt szinkronizált módban használja, mind a két szolgáltatás ellenőrzőlistáját figyelembe kell vennie.
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Intune-ról a Configuration Managerre
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Intune-ról a Configuration Managerre
 
 Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lépéseket használva állítsa alaphelyzetbe az MDM-szolgáltatót.
 
@@ -180,7 +182,7 @@ Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lép
 - Törölje az összes MDM-eszközre vonatkozó szabályzatot a **Szabályzat** > **Konfigurációs szabályzatok** oldalon.
 - Törölje az összes MDM-eszköz számára közzétett alkalmazást az **Alkalmazások** > **Felügyelt szoftver** oldalon.
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Mobileszköz-felügyeleti szolgáltató módosítása a Configuration Managerről az Intune-ra
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Mobileszköz-felügyeleti szolgáltató módosítása a Configuration Managerről az Intune-ra
 
 Mielőtt kapcsolatba lépne a Microsoft ügyfélszolgálatával, az alábbi lépéseket használva állítsa alaphelyzetbe az MDM-szolgáltatót.
 
@@ -194,7 +196,7 @@ Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre
 - Indítsa újra az SMS Executive szolgáltatást.
 - Biztosítson számunkra néhány fiktív felhasználói fiókot, amelyek segítségével a folyamat vége után ellenőrizhetjük, hogy a Configuration Manager-licencek eltávolítása megtörtént.
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Office 365-ről a Configuration Managerre
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Office 365-ről a Configuration Managerre
 
 1. Lépjen a [https://protection.office.com](https://protection.office.com) oldalra.
 2. Válassza a **Biztonsági házirendek** fület, majd az **Eszközkezelés** lehetőséget.
@@ -205,10 +207,9 @@ Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre
 >[!NOTE]
 >Az iOS APNs-tanúsítványt nem lehet törölni, így az továbbra is a fiókhoz rendelve marad.
 
-### <a name="next-steps-for-mdm-authority-resets"></a>Az MDM-szolgáltató alaphelyzetbe állításának további lépései
+#### <a name="next-steps-for-mdm-authority-resets"></a>Az MDM-szolgáltató alaphelyzetbe állításának további lépései
 
 Miután a Microsoft ügyfélszolgálata ellenőrizte a vonatkozó ellenőrzőlista állapotát, az MDM-szolgáltató alaphelyzetbe állítása legfeljebb három munkanapot vehet igénybe, de általában egy napon belül megtörténik.
 
 >[!IMPORTANT]
 >Előfizetését ne próbálja meg módosítani addig, amíg a Microsoft ügyfélszolgálata meg nem erősíti, hogy az alaphelyzetbe állítás sikeresen megtörtént! Az idő előtti konfigurációs változtatások adatsérülést okozhatnak és azt eredményezhetik, hogy nem fogja tudni használni az Intune szolgáltatást.
-

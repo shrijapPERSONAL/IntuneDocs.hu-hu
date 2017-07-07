@@ -1,12 +1,12 @@
 ---
 title: "PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató az infrastruktúra konfigurálásához és az SCEP-tanúsítványprofilok ezt követő létrehozásához és eszközökhöz rendeléséhez az Intune-ban."
+titleSuffix: Intune on Azure
+description: "Útmutató az infrastruktúra konfigurálásához, valamint a PKCS-tanúsítványok Intune-nal végzett létrehozásához és eszközökhöz rendeléséhez."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ez a témakör az infrastruktúra konfigurálását és az SCEP-tanúsítványprofilok ezt követő, az Intune-nal végzett létrehozását és eszközökhöz rendelését ismerteti.
 
@@ -118,8 +115,8 @@ Ebben a lépésben:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezéséhez
 
 1.  Jelentkezzen be az Azure Portalra.
-2.  Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3.  Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
+2.  Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3.  Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2.  Válassza az **Eszközök konfigurálása** panel **Beállítás** > **Hitelesítésszolgáltató** elemét.
 2.  A **1. lépésnél** válassza az **Engedélyezés** lehetőséget.
 
@@ -190,14 +187,15 @@ Az Azure Portalon válassza az **Eszközök konfigurálása** elemet.
         - **Köznapi név**
         - **Köznapi név (e-mail is)**
         - **Köznapi név mint e-mail cím**
-    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt fogja hitelesítésre használni egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania.
+    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt egy hálózati házirend-kiszolgáló felé történő hitelesítésre használja, a tulajdonos alternatív neveként az egyszerű felhasználónevet (UPN) állítsa be. 
+    Választhatja az **Egyéni Azure AD-attribútum** lehetőséget is. Ha erre a lehetőségre kattint, egy újabb legördülő mező jelenik meg. Az **Egyéni Azure AD-attribútum** legördülő menüs mezőjében csak a **Részleg** lehetőséget választhatja. Ha ezt választja, és a részleg azonosítása nem történt meg az Azure AD-ben, a rendszer nem állítja ki a tanúsítványt. A probléma megoldásához azonosítsa a részleget, és mentse a módosításokat. A legközelebbi eszközbejelentkezésnél megoldódik a probléma, és a tanúsítvány elkészül. Ehhez a mezőhöz az ASN.1 jelölést kell használni. 
     - **Kibővített kulcshasználat** (Android) – Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés** , hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet. 
     - **Főtanúsítvány** (Android) – Válasszon ki egy olyan legfelső szintű hitelesítésszolgáltatói tanúsítványprofilt, amelyet korábban konfigurált és hozzárendelt a felhasználóhoz vagy az eszközhöz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Ez a korábban létrehozott megbízható tanúsítványprofil.
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
+8. Miután elkészült, lépjen vissza a **Profil létrehozása** panelre, és kattintson a **Létrehozás** elemre.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
+Ekkor a profil létrejön, és megjelenik a profilok listáját tartalmazó panelen.
 
-## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil eszközökhöz rendelése
+## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil hozzárendelése
 
 Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a következőket:
 
@@ -208,4 +206,3 @@ Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a kö
 - Jóllehet az egyes profilokat külön-külön rendeli hozzá, a legfelső szintű hitelesítésszolgáltató és a PKCS-profil hozzárendelésére is szükség van. Ellenkező esetben a PKCS-tanúsítványszabályzat hibát fog jelezni.
 
 A profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikk nyújt általános tájékoztatást.
-

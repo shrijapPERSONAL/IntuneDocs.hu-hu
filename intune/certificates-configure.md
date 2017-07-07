@@ -1,12 +1,12 @@
 ---
-title: "Tanúsítványok konfigurálása az Intune-nal | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan lehet az Intune segítségével olyan tanúsítványokat létrehozni és kiosztani, amelyek segítenek a Wi-Fi-, VPN- és egyéb kapcsolatok védelmében."
+title: "Tanúsítványok konfigurálása az Intune-nal"
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt olyan tanúsítványok Intune-beli létrehozásáról és hozzárendeléséről, amelyek segítenek a Wi-Fi-, VPN- és egyéb kapcsolatok védelmében."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Tanúsítványok konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- vagy e-mail-profilokon keresztüli elérését, ezeket a kapcsolatokat tanúsítványokkal hitelesítheti. A tanúsítványok kiváltják a kapcsolatok felhasználónévvel és jelszóval való hitelesítését.
 
@@ -56,8 +53,8 @@ Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és 
 
     A következő platformok esetében csak SCEP-tanúsítványprofil használható:
 
--     macOS 10.9 és újabb verziók
--     Windows Phone 8.1 és újabb verziók
+-   macOS 10.9 és újabb verziók
+-   Windows Phone 8.1 és újabb verziók
 
 Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor társítsa a profilt a már létrehozott megbízható főtanúsítvány-profilhoz.
 
@@ -88,7 +85,7 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
 ### <a name="to-create-a-trusted-certificate-profile"></a>Megbízható tanúsítványprofil létrehozásához
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
@@ -128,4 +125,3 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 
 ## <a name="next-steps"></a>További lépések
 Az eszközprofilok hozzárendeléséről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt általános tájékoztatást.
-

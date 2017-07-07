@@ -1,5 +1,5 @@
 ---
-title: "Engedélyezett és letiltott alkalmazások KNOX-hoz | Microsoft Docs"
+title: "Engedélyezett és letiltott alkalmazások a KNOX-ban"
 description: "Egyéni profil engedélyezett és letiltott alkalmazások listájának létrehozásához KNOX-eszközökön."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Egyéni szabályzat használata alkalmazások engedélyezéséhez és letiltásához Samsung Knox Standard-eszközökön
 
@@ -43,9 +40,9 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
     
     - **A beállítás neve:** Írja be a következőt: **PreventStartPackages**.
     - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „Nem futtatható alkalmazások listája”.
-    -     **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
-    -     **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Érték:** Adja meg a letiltani kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
+    -   **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
+    -   **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -   **Érték:** Adja meg a letiltani kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
 
     Azon alkalmazások listájához, amelyek telepítése engedélyezett a felhasználók számára a Google Play áruházból, miközben minden más alkalmazás le van tiltva:
 
@@ -74,4 +71,3 @@ Ha egy már telepített házirendet választ ki, a házirendlista alsó részén
 
 ### <a name="see-also"></a>További információ
 [Android- és Samsung KNOX-eszközök konfigurációs szabályzatának beállításai a Microsoft Intune-ban](android-policy-settings-in-microsoft-intune.md)
-

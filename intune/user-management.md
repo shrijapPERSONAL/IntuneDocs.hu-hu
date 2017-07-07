@@ -1,7 +1,7 @@
 ---
 title: "Mi a Felhasználók kezelése munkafolyamat?"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató a felhasználók Microsoft Intune-nal és Azure-ral való megjelenítéséhez és kezeléséhez"
+titleSuffix: Intune on Azure
+description: "Útmutató a felhasználók Microsoft Intune-nal és Azure-ral való megjelenítéséhez és kezeléséhez.”"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>Mi az a felhasználókezelés?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ha most ismerkedik az Azure Portalon elérhető Intune-nal, akkor ne feledje, hogy már nem hozhat létre Intune-csoportokat. Az Intune ugyanúgy Azure AD-csoportokat használ, mint sok más Ön által használt alkalmazás.
 
@@ -45,4 +42,3 @@ Ha az [Azure Portalon](https://portal.azure.com) szeretné felügyelni a csoport
 ## <a name="next-step"></a>További lépések
 
 [Csoportok – első lépések](groups-get-started.md)
-

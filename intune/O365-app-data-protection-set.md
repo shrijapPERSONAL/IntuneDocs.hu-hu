@@ -1,7 +1,7 @@
 ---
-title: "Alapvető adatkezelés beállítása az Office 365-alkalmazásokban – Intune az Azure-on – előzetes"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Az Office 365-alkalmazások kezelése varázsló kapcsolódó dokumentációja."
+title: "Alapvető adatkezelés beállítása az Office 365-alkalmazásokban az Intune-ban"
+titleSuffix: Intune on Azure
+description: "Az Office 365-alkalmazások kezelése varázsló kapcsolódó dokumentációja.”"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a felügyelt Office 365-alkalmazásokban
 
 Az **Office 365-alkalmazások kezelése** varázsló minden eszközplatform esetében létrehoz egy alkalmazásvédelmi szabályzatot.
@@ -129,9 +125,8 @@ Android rendszeren az Intune-os MAM-szabályzattal társított alkalmazások ese
 Minden esetben szerkesztheti ezen szabályzat-beállításokat a munkahelye követelményeinek megfelelően.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Hogyan lehet megtekinteni és szerkeszteni a varázsló által létrehozott szabályzatokat?
-Ezen szabályzatok, vagy az Azure-beli Intune előzetesében létrehozott bármely szabályzat megtekintéséhez vagy frissítéséhez az irányítópulton válassza az **Alkalmazások kezelése** > **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor jobb oldalt megnyílik a szabályzatok listája. Válassza ki azt a szabályzatot, amelyet meg szeretne tekinteni, és szerkessze a beállításokat. <br/>
+Ezen szabályzatok, vagy az Azure-beli Intune-portálon létrehozott bármely szabályzat megtekintéséhez vagy frissítéséhez az irányítópulton válassza az **Alkalmazások kezelése** > **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor jobb oldalt megnyílik a szabályzatok listája. Válassza ki azt a szabályzatot, amelyet meg szeretne tekinteni, és szerkessze a beállításokat. <br/>
 ![Felhasználói felület elérési útja szabályzatok megtekintéséhez – kép](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>További lépések
 További információk az [alkalmazásvédelmi szabályzatokról](https://docs.microsoft.comapp-protection-policy.md).
-

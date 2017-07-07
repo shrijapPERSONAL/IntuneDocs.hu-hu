@@ -1,5 +1,5 @@
 ---
-title: "A Skype Vállalati online verzió védelme | Microsoft Docs"
+title: "A Skype Vállalati online verzió védelme"
 description: "A feltételes hozzáférés funkció segítségével védheti és felügyelheti a Skype Vállalati online verzióhoz való hozzáférést."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 46dc5bc7d7b4107b87a41aa8a454453d591d0ef9
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c2d6a00f99047e4b18821e81da0c36b988e36c2a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>A Skype Vállalati online verzió elérésének védelme a Microsoft Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -120,4 +117,3 @@ Válassza ki a kívánt mobileszközök csoportját. Majd az **Eszközök** lapo
 * **Nem megfelelő eszközök** – Ezeknek az eszközöknek nincs hozzáférésük a Skype Vállalati online verzióhoz.
 
 * **Az AAD-ben regisztrált és megfelelő eszközök** – Ezek az eszközök hozzáférhetnek a Skype Vállalati online verzióhoz.
-

@@ -1,11 +1,11 @@
 ---
-title: "Alkalmazásonkénti VPN Android-eszközökhöz a Pulse Secure használatával | Microsoft Docs"
+title: "Alkalmazásonkénti VPN Androidra Pulse Secure használatával"
 description: "Az Intune által felügyelt Android-eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ Miután érvénybe lépteti a szabályzatot az Android rendszerű eszközre vagy
 
 > [!NOTE]
 >
-> Jegyezze fel a VPN-profil nevét a következő lépéshez. Például: AlkVpnProfil.
+> Jegyezze le a VPN-profil létrehozásakor megadott **VPN-kapcsolat neve (megjelenik a felhasználóknak):** értékét. Erre szükség lesz a következő lépésben. Például: **AlkVpnProfil**.
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>2. lépés: Egyéni konfigurációs szabályzat létrehozása
 
@@ -55,7 +52,7 @@ Miután érvénybe lépteti a szabályzatot az Android rendszerű eszközre vagy
    4. Adja meg a beállítás nevét.
    5. Az **Adattípus** mezőben válassza a **Karakterlánc** lehetőséget.
    6. Az **OMA-URI** mezőbe írja be a következő karakterláncot: **./Vendor/MSFT/VPN/Profile/*Név*/PackageList**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A fenti példában a karakterlánc a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/PackageList**.
-   7.    Az **Érték** területen adja meg azoknak a csomagoknak a pontosvesszővel tagolt listáját, amelyeket a profilhoz társít. Ha például azt szeretné, hogy az Excel és a Google Chrome böngésző VPN-kapcsolatot használjon, írja be a következőt: **com.microsoft.office.excel;com.android.chrome**.
+   7.   Az **Érték** területen adja meg azoknak a csomagoknak a pontosvesszővel tagolt listáját, amelyeket a profilhoz társít. Ha például azt szeretné, hogy az Excel és a Google Chrome böngésző VPN-kapcsolatot használjon, írja be a következőt: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Példa Android rendszerű, alkalmazásonkénti VPN-hez létrehozott egyéni szabályzatra](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ Másik megoldásként használhatja a **WHITELIST** (ENGEDÉLYEZETT) értéket, 
     -   **Ha a szabályzat érvénybe léptetése nélkül kívánja bezárni a párbeszédpanelt**, kattintson a **Mégse** gombra.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Emellett egy állapotösszegzés is megjelenik az **Irányítópult** munkaterületen.
-

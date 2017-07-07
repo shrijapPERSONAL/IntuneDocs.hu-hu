@@ -1,5 +1,5 @@
 ---
-title: "Számítógépek felügyelete az ügyfélszoftverrel | Microsoft Docs"
+title: "Számítógépek felügyelete az ügyfélszoftverrel"
 description: "Windows rendszerű számítógépek felügyelete az Intune ügyfélszoftverrel."
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Windows rendszerű számítógépek kezelése az Intune-szoftverügyfélen keresztül számítógépként
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune átfogó megoldást nyújt a mobileszközök kezelésére a szervezetek számára. Az Intune a Windows 10 operációs rendszer beépített modern eszközfelügyeleti lehetőségeinek használatával képes mobileszközként kezelni a Windows rendszerű számítógépeket. A szervezet felügyeleti igényeinek teljesítése érdekében az Intune számítógépként is képes kezelni a Windows rendszerű számítógépeket az Intune-szoftverügyfélen keresztül. Ez a felügyeleti módszer a korábbi Windows operációs rendszer hagyományos számítógép-felügyeleti képességeit használja.
 
@@ -79,7 +78,7 @@ Jóllehet az Intune-ügyfélszoftver a szoftverfrissítések, a Windows tűzfal 
 
 Ha az Intune-ügyfélszoftverrel felügyel windowsos PC-ket, csak a **Számítógép-kezelés** szakaszban látható szabályzatokat használhatja.
 
-Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Server Active Directory tartományi szolgáltatások által alkalmazottakhoz hasonló szabályzatokat használ, a /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) figyelembe vételével. További információt a [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx) (Csoportházirend kezdőknek) című angol nyelvű anyagban talál.
+Az Intune a Windows rendszerű számítógépek felügyeletéhez a Windows Server Active Directory tartományi szolgáltatások (AD DS) és csoportházirend-objektumok (GPO-k) által alkalmazottakhoz hasonló szabályzatokat használ. Ha Active Directory-tartományhoz csatlakoztatott számítógépeket felügyel az Intune segítségével, akkor [győződjön meg róla, hogy az Intune-szabályzatok nem ütköznek a szervezetben használt más csoportházirend-objektumokkal](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts). További információt a [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx) (Csoportházirend kezdőknek) című angol nyelvű anyagban talál.
 
   ![Új windowsos PC-szabályzat sablonjának kiválasztása](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Azt is vegye figyelembe, hogy az Intune felügyeleti konzoljának bizonyos rész
 Az Intune-ügyfélszoftver általában a háttérben fut, és csak ritkán igényel felhasználói beavatkozást vagy hibaelhárítást. Ha számítógép-felügyelettel kapcsolatos problémák megoldására van szükség, tekintse meg a naplókat. Az Intune-ügyfélszoftver és a hozzá tartozó naplók a %Program Files%\Microsoft\OnlineManagement könyvtárba vannak telepítve.
 
 Emellett áttekintheti [Az ügyfél a Microsoft Intune-ban való beállításának hibaelhárítása](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) témakört az előforduló problémák megkereséséhez és esetleges megoldásához vagy megkerüléséhez.
-

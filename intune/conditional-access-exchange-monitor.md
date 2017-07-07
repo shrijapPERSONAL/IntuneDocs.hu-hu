@@ -1,6 +1,6 @@
 ---
 title: "Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune Azure Portal használatával"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune az Azure-on előzetesben
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune-ban
 
 Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információkat kapnak az Exchange ActiveSync eszközrekordjaival kapcsolatban, amelyek vagy a helyszíni Exchange-összekötő, vagy az Intune szolgáltatások közötti összekötő (Exchange Online-összekötő) révén az Intune-nal vannak szinkronizálva. A feltételes hozzáférési megfelelőség jelentései összefoglaló információt nyújtanak a különböző szinkronizálási állapotban lévő eszközökről:
 
@@ -70,4 +67,3 @@ Az eszközinformációk panelen további információk jelennek meg:
 -   **Eszközkonfiguráció:** Az eszköz konfigurációs adatait jeleníti meg.
 
 -   **Exchange-hozzáférés:** További információkat kínál az eszköz állapotáról a feltételes hozzáférési szabályzatok alkalmazása után.
-
