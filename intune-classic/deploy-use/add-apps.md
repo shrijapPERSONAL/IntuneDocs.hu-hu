@@ -14,15 +14,12 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-with-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -96,4 +93,3 @@ Ebben az esetben, amikor feltölti az alkalmazást az Intune-ba, a rendszer a **
 ## <a name="next-steps"></a>További lépések
 
 Az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
-

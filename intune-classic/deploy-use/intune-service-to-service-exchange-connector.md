@@ -1,5 +1,5 @@
 ---
-title: "Exchange-összekötő az Exchange Online-hoz | Microsoft Docs"
+title: "Exchange-összekötő az Exchange Online-hoz"
 description: "Csatlakoztathatja az Intune-t az Office 365 Exchange szolgáltatáshoz az Exchange ActiveSync-alapú mobileszköz-felügyelet (MDM) támogatása érdekében."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b73767f585cfa6283c7fb0601e7061efe42c606
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Intune szolgáltatások közötti összekötő konfigurálása az Exchange Online-hoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,8 +33,8 @@ A **Service to Service Connector** csak az Exchange Online-t és a dedikált Exc
 |---------------|--------------------|
 |Konfigurált és működő Exchange Online|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Mobileszköz-kezelő szolgáltató| [A Microsoft Intune beállítása mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange verzió|Exchange Online vagy új dedikált Exchange Online szolgáltatás|
-|Active Directory-szinkronizálás|Mielőtt bármely összekötővel csatlakoztatná az Intune Connectort az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure AD-példányával.|
+|Microsoft Exchange verzió|Exchange Online vagy új dedikált Exchange Online szolgáltatás|/intune/users-permissions-add
+|Active Directory-szinkronizálás|Mielőtt bármely összekötővel csatlakoztatná az Intune Connectort az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/users-permissions-add), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure AD-példányával.|
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange-parancsmagokkal kapcsolatos követelmények
 
@@ -67,4 +64,3 @@ A Service-to-Service Connector konfigurációja és szinkronizálása az Exchang
 Amint sikeresen konfigurálta az Exchange Connectort, látogasson el a [Microsoft Intune felügyeleti konzol](https://manage.microsoft.com) lapra. Válassza a **Rendszergazda**> **Mobileszköz-kezelés** > **Microsoft Exchange** elemet. Majd ellenőrizze, hogy a megadott adatok láthatók-e az **Exchange-kapcsolat információi** között.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
-

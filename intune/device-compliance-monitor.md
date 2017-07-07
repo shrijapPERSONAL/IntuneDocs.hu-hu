@@ -1,7 +1,7 @@
 ---
 title: "Az eszközmegfelelőség figyelése"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató az eszközök megfelelőségének figyeléséhez."
+titleSuffix: Intune on Azure
+description: "A cikk az eszközmegfelelőség figyelését ismerteti.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Eszközmegfelelőség figyelése az Azure-beli Intune előzetes verziójában
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Az eszközmegfelelőség figyelése az Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A **megfelelőségi profilok** állapotának összegzését az **Áttekintés** panelen tekintheti meg.
-A diagramokon keresztüli interaktív átkattintással feltárhatja a részleteket. Ha több megfelelőségi profil is van konfigurálva, megtekintheti az egyes szabályzatok állapotát, ha a szabályzat panelen a **Jelentések** elemet választja a **Felügyelet** szakaszban.  Az előzetes verzióban elérhető jelentések részletei az alábbiakban láthatók.
+A diagramokon keresztüli interaktív átkattintással feltárhatja a részleteket. Ha több megfelelőségi profil is van konfigurálva, megtekintheti az egyes szabályzatok állapotát, ha a szabályzat panelen a **Jelentések** elemet választja a **Felügyelet** szakaszban.  Az elérhető jelentések adatai az alábbiakban láthatók.
 
 ##  <a name="device-compliance"></a>Eszközmegfelelőség
 
@@ -48,4 +46,3 @@ A beállítás-megfelelőségi jelentés részletesen megjeleníti az egyes megf
 - A platformot, amelyre a beállítás vonatkozik.
 
 Az egyes beállítások részletezésével további információkat jeleníthet meg azokról a profilokról, amelyeken engedélyezve vannak ezek a beállítások, illetve megtekintheti a beállítás értékét.
-

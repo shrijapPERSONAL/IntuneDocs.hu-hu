@@ -1,5 +1,5 @@
 ---
-title: "Alkalmazáskiépítési profilok| Microsoft Docs"
+title: "Alkalmazáskiépítési profilok"
 description: "Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon telepíthet új kiépítési profilt azokon az eszközökön, amelyeken hamarosan lejárnak az alkalmazások."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: adebcc5a8d8f43bed383b51bb094fa122ebabc0a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6e975aa7ee22f826c7a0a60d637d651fd347bc54
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Az iOS-mobileszközös kiépítésiprofil-szabályzatok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ A tanúsítvány lejárata után újra regisztrálnia kell az alkalmazást egy �
     - **Konfigurációs profilfájl** – Kattintson az **Importálás** lehetőségre, majd válasszon egy Apple Mobile konfigurációs profilfájlt (**.mobileprovision** kiterjesztéssel), amelyet az Apple Developer webhelyről töltött le.
 4. Ha elkészült, válassza a **Házirend mentése** elemet.
 5. Majd telepítse a házirendet a szükséges iOS-eszközökre. További információk: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-

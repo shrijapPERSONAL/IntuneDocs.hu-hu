@@ -1,7 +1,7 @@
 ---
 title: "Bevezetés az eszközmegfelelőségbe"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Ebben a témakörben ismertetjük a Microsoft Intune megfelelőségi szabályzatok létrehozásához szükséges előfeltételeit"
+titleSuffix: Intune on Azure
+description: "Ebben a témakörben ismertetjük a Microsoft Intune megfelelőségi szabályzatok létrehozásához szükséges előfeltételeit."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,24 +15,21 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="get-started-with-device-compliance-in-intune"></a>Bevezetés az eszközmegfelelőségbe az Intune-ban
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Bevezetés az eszközmegfelelőségbe az Azure-beli Intune előzetesében
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ebben a témakörben a következőket tekintheti át: 
 
 - Mire lesz szüksége, mielőtt hozzákezdhet az eszközmegfelelőségi szabályzat létrehozásához.
-- Vázlatos összefoglaló arról, hogy mit talál és mit intézhet az Azure-beli Intune előzetes verziójában. 
+- Vázlatos összefoglaló arról, hogy mit talál és mit intézhet az Intune Azure Portalon. 
 
 Ha még nem ismeri az eszközmegfelelőség témakörét, célszerű lesz elolvasnia [ezt a fejezetet](device-compliance.md), amely elmagyarázza a fogalmat, és azt is, hogy miképpen használható a szervezetnél.
 
@@ -56,7 +53,7 @@ Ha még nem ismeri az eszközmegfelelőség témakörét, célszerű lesz elolva
 
 ##  <a name="azure-portal-workflow"></a>Az Azure Portal munkafolyamata
 
-Áttekintés arról, hogy miképpen hozhatja létre és kezelheti az eszközmegfelelőséget az Azure-beli Intune előzetes verziójában.
+Röviden felvázoljuk, hogyan hozhat létre és kezelhet eszközmegfelelőségi szabályzatokat az Intune Azure Portalon.
 
 <!---### Overview
 
@@ -83,4 +80,3 @@ Megfelelőségi állapot érvényességi időtartama
 [Megfelelőségi szabályzat létrehozása iOS rendszerhez](compliance-policy-create-ios.md)
 
 [Megfelelőségi szabályzat létrehozása Windows rendszerhez](compliance-policy-create-windows.md)
-

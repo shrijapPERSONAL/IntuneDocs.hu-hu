@@ -1,7 +1,7 @@
 ---
 title: "Csak a céges adatok törlése az alkalmazásokból"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató alkalmazások szelektív törléséhez a Microsoft Intune-ban."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt az alkalmazások Microsoft Intune-nal való szelektív törléséről."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a dolgozó elhagyja a vállalatot, fontos eltávolítani a vállalati alkalmazásadatokat az eszközről. Előfordul, hogy a személyes adatokat meg kell őrizni, különösen, ha az eszköz a dolgozó saját tulajdona.
 
@@ -38,7 +36,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 
-2.  Válassza a **További szolgáltatások** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza ki az **Intune** elemet. Amikor megjelenik az Intune-előzetes panelje, válassza az **Alkalmazások kezelése** panelt.
+2.  Válassza a **További szolgáltatások** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza ki az **Intune** elemet. Amikor megjelenik az Intune-panel, válassza az **Alkalmazások kezelése** panelt.
 
     ![Képernyőfelvétel: Az Új törlési kérés panel](./media/intune-azure-preview-blade.png)
 
