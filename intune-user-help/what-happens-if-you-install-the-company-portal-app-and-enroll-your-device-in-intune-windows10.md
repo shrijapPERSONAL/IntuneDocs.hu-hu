@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows 10-eszköz Intune-beli regisztrálásakor?
 
 Miután telepítette a Vállalati portál alkalmazást, és annak használatával regisztrálta a Windows 10 Enterprise vagy Windows 10 Professional rendszerű eszközét az Intune-ban, a Vállalati portál alkalmazásban lehetősége nyílik a következőkre:
@@ -57,4 +53,3 @@ Számítógép hozzáadásakor:
 -   A rendszergazda szabályzatokat léptethet életbe a számítógépen. Például előfordulhat, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen. A rendszergazda azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót a számítógépről, vagy letörölheti a számítógép merevlemezén lévő összes adatot, ha túl sokszor próbálkozott.
 
 Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
-

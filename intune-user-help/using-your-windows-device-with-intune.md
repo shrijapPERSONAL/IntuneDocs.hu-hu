@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-windows-device-with-intune"></a>Windows-eszköz használata az Intune-nal
 
 Számos módon könnyítheti meg munkáját az Intune segítségével. Az alábbi lista azon leggyakoribb teendőket tartalmazza, amelyek elvégzésére munkahelye megkérheti.
@@ -57,4 +53,3 @@ Az Intune néhány további Windows-verziót is támogat; ilyen például a [Win
 - [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
 - [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
-

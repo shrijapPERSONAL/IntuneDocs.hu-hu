@@ -1,11 +1,11 @@
 ---
-title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása | Microsoft Docs"
+title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása"
 description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megold�
 
 A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően van-e konfigurálva a regisztráláshoz. Ezekről a konfigurációs követelményekről itt olvashat:
 
--    [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [iOS- és Mac-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windowsos eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Android-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – nincs szükség további lépésekre
--    [Android for Work-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Felkészülés az eszközök regisztrálására a Microsoft Intune-ban](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [iOS- és Mac-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Windowsos eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Android-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – nincs szükség további lépésekre
+-   [Android for Work-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-for-work)
 
 A felügyelt eszközök felhasználói össze tudják gyűjteni a regisztrációs és diagnosztikai naplókat, hogy átnézhesse őket. A naplók felhasználók általi gyűjtésére vonatkozó utasítások itt találhatók:
 
@@ -110,8 +107,8 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 1.  Ellenőrizze, hogy a mobileszköz-kezelési szolgáltató megfelelően be van-e állítva a használt Intune szolgáltatáshoz, az Office 365-höz vagy a System Center Configuration Managerbe integrált Intune-hoz. Az Intune esetében a mobileszköz-kezelési szolgáltató a **Felügyelet** &gt; **Mobileszköz-kezelés** részen állítható be. Az Intune-ba integrált Configuration Manager esetében az Intune-összekötő konfigurálásakor adhatja meg, míg az Office 365 esetén ez a **Mobileszközök** beállításai közé tartozik.
 
-    > [!NOTE]
-    > Ha egyszer már megadta a mobileszköz-kezelési szolgáltatót, azt csak az ügyfélszolgálaton keresztül tudja módosítani a [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Hogyan kérhet támogatást a Microsoft Intune-hoz) című cikkben leírtak szerint.
+    > [!NOTE]    
+    > A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, vagy hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információt a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című szakaszban talál.
 
 2.  Győződjön meg arról, hogy a rendszer megfelelően szinkronizálta a felhasználói hitelesítő adatokat az Azure Active Directoryval. Ehhez ellenőrizze, hogy az egyszerű felhasználónév megegyezik-e az Active Directory adataival az Office 365 portálon.
     Ha a felhasználónév nem egyezik meg az Active Directory adataival:
@@ -230,16 +227,16 @@ A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél
 
 A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
 
-1.    Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
-2.    Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
-3.    Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
-4.    Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
-5.    Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
-6.    Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
-7.    A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
-8.    Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
-9.    Indítsa újra az AD FS-kiszolgálókat.
-10.    Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
+1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
+3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
+4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
+6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
+7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
+8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
+9.  Indítsa újra az AD FS-kiszolgálókat.
+10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
 A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
 
 **A tanúsítványok megfelelő telepítésének ellenőrzése**:
@@ -261,10 +258,10 @@ A következő táblázat azon hibákat tartalmazza, melyeket iOS-eszközök az I
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Nem található eszközregisztrációs szabályzat|Ellenőrizze, hogy az összes regisztrációs előfeltétel, mint például az Apple Push Notification szolgáltatás (APNs) tanúsítványa konfigurálva van-e, illetve azt, hogy az „iOS mint platform” engedélyezve van-e. Útmutatásért tekintse meg a [Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) (iOS- és Mac-eszközök kezelésének beállítása) című cikket.|
 |DeviceCapReached|A már regisztrált mobileszközök száma túl magas.|A felhasználónak el kell távolítania az aktuálisan regisztrált mobileszközeit a Vállalati portálról, mielőtt másikat regisztrálhatna. Kövesse a megfelelő eszköz típusára vonatkozó utasításokat: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a beléptetett iOS-eszközök. Ha nem lettek végrehajtva az APN-tanúsítvány beszerzésének lépései, vagy ha az APN-tanúsítvány lejárt, a beléptetési kísérletek ezzel az üzenettel hiúsulnak meg.<br /><br />A felhasználók konfigurálásához olvassa el [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) kapcsolatos tudnivalókat.|
+|APNSCertificateNotValid|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a beléptetett iOS-eszközök. Ha nem lettek végrehajtva az APN-tanúsítvány beszerzésének lépései, vagy ha az APN-tanúsítvány lejárt, a beléptetési kísérletek ezzel az üzenettel hiúsulnak meg.<br /><br />A felhasználók konfigurálásához olvassa el [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](/intune/users-permissions-add) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) kapcsolatos tudnivalókat.|
 |AccountNotOnboarded|Probléma merült fel azzal a tanúsítvánnyal kapcsolatban, amely lehetővé teszi a mobileszköz és a céges hálózat közötti kommunikációt.<br /><br />|Az Apple Push Notification Service (APNs) révén elérhetők a beléptetett iOS-eszközök. Ha nem lettek végrehajtva az APN-tanúsítvány beszerzésének lépései, vagy ha az APN-tanúsítvány lejárt, a beléptetési kísérletek ezzel az üzenettel hiúsulnak meg.<br /><br />További információ: [Az iOS kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|Lehet, hogy a felhasználó nem iOS-eszközzel próbált meg regisztrálni. A regisztrálni próbált mobileszköz nem támogatott.<br /><br />Győződjön meg róla, hogy az eszközön az iOS 8.0-ás vagy újabb verziója fut.<br /><br />|Győződjön meg róla, hogy a felhasználó eszközén 8.0-ás vagy újabb iOS-verziót fut.|
-|UserLicenseTypeInvalid|A mobileszköz nem regisztrálható, mert a felhasználói fiók még nem tagja egy szükséges felhasználói csoportnak.<br /><br />|Ahhoz, hogy a felhasználók regisztrálhassák eszközeiket, a megfelelő felhasználói csoport tagjának kell lenniük. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br /><br />Tekintse meg az alábbiakat a további információkért:<br /><br />Olvassa el [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) című szakaszt, illetve a felhasználók konfigurálásával kapcsolatban [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) kapcsolatos tudnivalókat.|
+|UserLicenseTypeInvalid|A mobileszköz nem regisztrálható, mert a felhasználói fiók még nem tagja egy szükséges felhasználói csoportnak.<br /><br />|Ahhoz, hogy a felhasználók regisztrálhassák eszközeiket, a megfelelő felhasználói csoport tagjának kell lenniük. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br /><br />Tekintse meg az alábbiakat a további információkért:<br /><br />Olvassa el [Az iOS és Mac kezelésének beállítása a Microsoft Intune-nal](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) című szakaszt, illetve a felhasználók konfigurálásával kapcsolatban [Az Active Directory szinkronizálása és felhasználók hozzáadása az Intune szolgáltatáshoz](/intune/users-permissions-add) című szakaszt, valamint a [felhasználók és eszközök rendszerezésével](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) kapcsolatos tudnivalókat.|
 |MdmAuthorityNotDefined|A mobileszköz-kezelő szolgáltató még nincs megadva.<br /><br />|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban.<br /><br />Tekintse meg az 1. elemet [Az első lépések a Microsoft Intune 30 napos próbaverziójában](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) „6. lépés: Mobileszközök regisztrálása és alkalmazások telepítése” szakaszában.|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Az eszközök inaktívak, vagy a felügyeleti konzol nem tud kommunikálni velük
@@ -413,4 +410,3 @@ Ennek az lehet az oka, hogy a számítógép korábban regisztrálva volt, vagy 
 
 ### <a name="next-steps"></a>További lépések
 Ha ezek a hibaelhárítási információk nem oldották meg a problémát, forduljon a Microsoft támogatási szolgálatához a [Hogyan kérhet támogatást a Microsoft Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírtak szerint.
-
