@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi-kapcsolatok | Microsoft Docs
+title: Wi-Fi-kapcsolatok
 description: "A Wi-Fi profilok használatával segítséget nyújthat a felhasználóknak a Wi-Fi hálózatokhoz való csatlakozáshoz."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Az eszközök konfigurálása a vállalati Wi-Fi hálózatokhoz való csatlakozáshoz
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ A Wi-Fi-profilok a következő platformokon telepíthetők:
 
 -   Android 4.0 és újabb verziók
 
--    Android for Work   
+-   Android for Work   
 
 -   iOS 8.0 és újabb verziók
 
@@ -181,4 +178,3 @@ Az alábbi táblázatok tartalmazzák az Android-, iOS- és Mac OS X-rendszerek 
 
 ### <a name="see-also"></a>További információ
 A következő cikkből megtudhatja, hogyan hozhat létre Wi-Fi-profilt egy előmegosztott kulccsal: [Wi-Fi-profil létrehozása előmegosztott kulccsal](pre-shared-key-wi-fi-profile.md).
-
