@@ -1,7 +1,7 @@
 ---
 title: "Intune-eszközmegfelelőségi szabályzatok figyelése"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutatók eszközmegfelelőségi szabályzatok figyeléséhez."
+titleSuffix: Intune on Azure
+description: "Útmutatók eszközmegfelelőségi szabályzatok figyeléséhez.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
@@ -123,8 +121,6 @@ Ha a **Szűrő** gombra kattint, egy beúszó lapka jelenik meg az alábbi lehet
 
 Ha a **Frissítés gombra** kattint, a beúszó lapka bezárul, a megjelenített eredmények pedig a bejelölt szűrési feltételeknek megfelelően frissülnek.
 
-![Szűrés frissítése gomb](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Eszközadatok
 
 Az egyes eszközökre kattintással megnyitható a kiválasztott eszközhöz tartozó **Eszköz panel**. Itt további információt talál az adott eszközre alkalmazott eszközmegfelelőségi szabályzat beállításairól.
@@ -154,4 +150,3 @@ Ez a jelentés szabályzatbeállítások szerinti bontásban tartalmaz informác
 A Beállításmegfelelőségi csempére, majd az egyes eszközmegfelelőségi szabályzatbeállításokra kattintva megtekinthető az adott eszközmegfelelőségi szabályzatbeállítás által érintett eszköz **megfelelőségi állapota**, a **felhasználói e-mail-alias**, **az eszközmodell** és az eszköz **tartózkodási helye**.
 
 ![Beállításmegfelelőségi csempe](./media/idc-11.png)
-

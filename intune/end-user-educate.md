@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>A végfelhasználók felkészítése a Microsoft Intune használatára
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, miközben gondoskodik a vállalati adatok védelméről. A rendszer sikeres bevezetését több lépésben végezheti el, beleértve az Intune kipróbálását az [ingyenes próbaverzióval](app-sdk.md).
 
@@ -57,15 +56,15 @@ Ha eloszlatja a felhasználók aggodalmait, a rendszer bevezetése simább lehet
 
 * **Android**
   * [Android-eszköz használata az Intune-nal](/intune-user-help/using-your-android-device-with-intune)
-  * [Android-felhasználói alkalmazások letöltése](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Android-felhasználói alkalmazások letöltése](end-user-apps-android.md)
 
 * **iOS**
   * [iOS-eszköz használata az Intune-nal](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [iOS-felhasználói alkalmazások letöltése](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [iOS-felhasználói alkalmazások letöltése](end-user-apps-ios.md)
 
 * **Windows**
   * [Windows-eszköz használata az Intune-nal](/intune-user-help/using-your-windows-device-with-intune)
-  * [Windows-felhasználói alkalmazások letöltése](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Windows-felhasználói alkalmazások letöltése](end-user-apps-windows.md)
 
 * __Legyen előrelátó.__ Egyértelműen mondja el a felhasználóknak, hogy pontosan milyen adatokat felügyel az eszközeiken. Mondja el nekik, hogy milyen típusú adatokat gyűjt, és miért gyűjti azokat. Tájékoztassa őket arról, hogy miként tervezi az eszközadatok felhasználását. [A Microsoft hisz abban, hogy felhasználóknak joga van a lehető legrészletesebben megismerni az ügyféladatok felhőben történő kezelésének módját](https://www.microsoft.com/trustcenter/about/transparency), és hiszünk abban, hogy ez a filozófia jelentősen növelheti a végfelhasználók Intune-nal való elégedettségét.
 
@@ -73,4 +72,3 @@ Ha eloszlatja a felhasználók aggodalmait, a rendszer bevezetése simább lehet
 > Amikor csak lehetséges, az átláthatóság központi elemét képezi a rendszer sikeres bevezetésének.
 
 A bizalomnak és a gondosan megfogalmazott megfelelőségi szabályzatoknak köszönhetően a végfelhasználók tisztában lehetnek azzal, hogy bár Ön *képes* betekinteni bizonyos személyes adatokba, ez *nincsen szándékában*, és vállalja a felelősséget a felhasználók személyes adatainak megsértéséért. Ha a jogi és a HR-részleggel közösen fogalmaz meg egy nyilatkozatot, a különösen nehezen kezelhető alkalmazottak aggodalmait is eloszlathatja.
-

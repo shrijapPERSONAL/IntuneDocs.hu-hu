@@ -1,12 +1,12 @@
 ---
-title: "iOS-alkalmazások közötti adatátvitel kezelése | Intune az Azure-on – előzetes"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez."
+title: "Az iOS-alkalmazások közötti adatátvitel kezelése"
+titleSuffix: Intune on Azure
+description: "Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS-alkalmazások közti adatátvitel kezelése
 ## <a name="manage-ios-apps"></a>IOS-alkalmazások felügyelete
 A vállalati adatok védelmébe tartozik annak biztosítása, hogy csak a vállalat által felügyelt alkalmazásokkal lehessen fájlokat átvinni.  Az iOS-alkalmazásokat az alábbi módokon felügyelheti:
@@ -36,7 +33,7 @@ Az iOS-eszközök **Megnyitási engedélyek felügyelete** szolgáltatásával a
 ##  <a name="using-app-protection-with-ios-apps"></a>Az alkalmazásvédelem használata iOS-alkalmazásokkal
 Az alkalmazásvédelmi szabályzatok az iOS **Megnyitási engedélyek felügyelete** szolgáltatásával együtt használhatók a vállalati adatok védelméhez, a következő módokon:
 
--   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** az alkalmazásvédelmi szabályzat beállításait beállíthatja a következőre: **Az alkalmazás átadhat adatokat házirend által felügyelt alkalmazásoknak**. Szabályzat által nem felügyelt alkalmazásban a végfelhasználó nem tudja majd megnyitni a védett fájlt.
+-   **Alkalmazottak tulajdonában lévő, mobileszköz-kezelési megoldás által nem kezelt eszközök:** az alkalmazásvédelmi szabályzat beállításait beállíthatja a következőre: **Az alkalmazás csak szabályzat által felügyelt alkalmazásoknak adhat át adatokat**. A szabályzat által felügyelt alkalmazásoknál a Megnyitás a következőben viselkedés megosztási lehetőségként csak más szabályzat által felügyelt alkalmazásokat jelenít meg. Ha egy felhasználó szabályzat által védett fájlt próbál mellékletként küldeni a OneDrive-ról a natív levelező alkalmazásban, az a fájl olvashatatlan lesz.
 
 -   **Az Intune által felügyelt eszközök:** az Intune-ban regisztrált eszközök esetén az alkalmazásvédelmi szabályzatokkal rendelkező és az Intune használatával telepített egyéb felügyelt iOS-alkalmazások közötti adatátvitel automatikusan engedélyezett. Az alkalmazásvédelmi szabályzatokkal rendelkező alkalmazások közötti adatátvitel engedélyezéséhez aktiválja **Az alkalmazás átadhat adatokat szabályzat által felügyelt alkalmazásoknak** beállítást. Az Intune-nal telepített alkalmazások között a **Megnyitási engedélyek felügyelete** funkcióval vezérelhető az adatátvitel.   
 
@@ -108,4 +105,3 @@ Először [hozzon létre és osszon ki egy alkalmazásvédelmi szabályzatot](ap
 
 ### <a name="see-also"></a>További információ
 [Mi az Intune alkalmazásvédelmi szabályzat?](app-protection-policy.md)
-
