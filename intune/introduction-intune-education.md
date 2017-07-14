@@ -14,13 +14,14 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-is-intune-for-education"></a>Mi az az Intune for Education?
+# Mi az az Intune for Education?
+<a id="what-is-intune-for-education" class="xliff"></a>
 
 Az Intune for Education elősegíti a tanárok és tanulók hatékony munkáját az iskolai adatok biztonságának megőrzésével. Az Intune for Education az Intune felhőalapú vállalati mobilitási felügyeleti (EMM-) rendszer alapjaira épül.
 
@@ -30,7 +31,7 @@ Az Intune for Educationben a Windows 10-es eszközök felügyeletéhez az Intune
 
 Az Intune for Educationt önmagában, és az [Intune-ban elérhető összes eszközfelügyeleti lehetőséggel](introduction-intune.md) összhangban is használhatja. Az Intune for Educationt a [Microsoft Education](https://microsoft.com/education) keretében elérhető többi eszköz mellett is használhatja, így könnyebben kihasználhatja a Microsoft oktatási célú eszközeiben rejlő lehetőségeket.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 Mind az Intune és az Intune for Education segítségével:
 * Felügyelheti a munkatársak által adatok elérésére használt mobileszközöket.
@@ -38,7 +39,8 @@ Mind az Intune és az Intune for Education segítségével:
 * Szabályozhatja a felhasználók adatelérését és adatmegosztását, ezáltal védheti a szervezeti adatokat.
 * Gondoskodhat arról, hogy az eszközök és az alkalmazások megfeleljenek a biztonsági követelményeknek.
 
-### <a name="next-steps"></a>További lépések
+### További lépések
+<a id="next-steps" class="xliff"></a>
 * Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune) révén.
 * Tudjon meg többet az [Intune for Education használatbavételének leggyorsabb módjáról](/intune-education/what-is-express-configuration).
 * Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](/intune/supported-devices-browsers).

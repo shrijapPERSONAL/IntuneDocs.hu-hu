@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+# Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>Általános
+## Általános
+<a id="general" class="xliff"></a>
 -   **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera.   
 -   **Diagnosztikai adatok küldése** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
 -   **FaceTime** – Engedélyezi a FaceTime alkalmazás használatát az eszközön.
@@ -73,7 +75,8 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 - **Apple Hírek (csak felügyelt)** – Engedélyezi az Apple Hírek alkalmazás használatát.
 - **Konfigurációs profil módosítása** – Engedélyezi a felhasználó számára a konfigurációs profilok telepítését.
 
-## <a name="password"></a>Jelszó
+## Jelszó
+<a id="password" class="xliff"></a>
 -   **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
 -   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (például a 0000 és az 1234) használatát.
 -   **Kért jelszótípus** – A kért jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.
@@ -88,7 +91,8 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 
 <sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
-## <a name="app-store-doc-viewing-gaming"></a>Alkalmazás-áruház, dokumentumok megtekintése, játékok
+## Alkalmazás-áruház, dokumentumok megtekintése, játékok
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **Alkalmazás-áruház (csak felügyelt eszköz esetén)** – Letiltja az alkalmazás-áruház elérését a felügyelt eszközökön.
@@ -106,7 +110,8 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 -   **Besorolási régió** – Válassza ki, hogy melyik besorolási régióra vonatkozóan kívánja konfigurálni az engedélyezett letöltéseket, majd adja meg, hogy milyen besorolású **Filmek** és **Tévéműsorok** letöltését engedélyezi.
 -   **Alkalmazások** – Válassza ki, hogy milyen korhatár-besorolású alkalmazásokat tölthessenek le a felhasználók (a **Minden alkalmazás engedélyezése** lehetőséget is választhatja).
 
-## <a name="restricted-apps"></a>Korlátozott alkalmazások
+## Korlátozott alkalmazások
+<a id="restricted-apps" class="xliff"></a>
 
 A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
 
@@ -115,7 +120,8 @@ A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalm
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kívánt nevet, igény szerint az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Az alkalmazás áruházbeli URL-címének megadása
+### Az alkalmazás áruházbeli URL-címének megadása
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Ha meg szeretné adni egy alkalmazás URL-címét alkalmazások listájában, használja a következő formátumot:
 
@@ -130,11 +136,13 @@ Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a k�
 
 
 
-### <a name="additional-options"></a>További beállítások
+### További beállítások
+<a id="additional-options" class="xliff"></a>
 
 Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. Ennek a következő formátumúnak kell lennie: <*az alkalmazás URL-címe*>, <*az alkalmazás neve*>, <*az alkalmazás kiadója*>. Az **Exportálás** gombra kattintva egy olyan CSV-fájlt hozhat létre, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.
 
-## <a name="show-or-hide-apps"></a>Alkalmazások megjelenítése vagy elrejtése
+## Alkalmazások megjelenítése vagy elrejtése
+<a id="show-or-hide-apps" class="xliff"></a>
 
 A megjelenített és az elrejtett alkalmazások listáján konfigurálhatja valamelyiket a következő listák közül (ennek feltétele, hogy a felügyelt eszközökön az iOS 9.3-as vagy újabb verziója fusson).
 
@@ -143,7 +151,8 @@ A **Megjelenített alkalmazások** listája – Ebben megadhatja a felhasználó
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, és adja meg a kívánt nevet. Tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazásnak az alkalmazás-áruházbeli URL-címét.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Az alkalmazás áruházbeli URL-címének megadása
+### Az alkalmazás áruházbeli URL-címének megadása
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Ha meg szeretné adni egy alkalmazás URL-címét alkalmazások listájában, használja a következő formátumot:
 
@@ -155,19 +164,22 @@ Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a k�
 > [!Note]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
-### <a name="additional-options"></a>További beállítások
+### További beállítások
+<a id="additional-options" class="xliff"></a>
 
 Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. Ennek a következő formátumúnak kell lennie: <*az alkalmazás URL-címe*>, <*az alkalmazás neve*>, <*az alkalmazás kiadója*>. Az **Exportálás** gombra kattintva egy olyan CSV-fájlt hozhat létre, amely ugyanebben a formátumban tartalmazza a rejtett vagy a megjelenített alkalmazások listáját.
 
 
-## <a name="cellular"></a>Mobil
+## Mobil
+<a id="cellular" class="xliff"></a>
 -   **Adatroaming** – Engedélyezi adatroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
 -   **Barangolás közbeni globális háttérbeli adatbeolvasás** – Engedélyezi az eszköz számára a mobilhálózati roaming közben történő adatlehívást, például az e-mailek lekérését.
 -   **Hangtárcsázás** – Engedélyezi a hangtárcsázási funkciót az eszközön.
 -   **Hangroaming** – Engedélyezi a hangroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
 -   **Alkalmazások mobil adatforgalmi beállításainak módosítása (csak felügyelt)** – Engedélyezi, hogy a felhasználó szabályozza, mely alkalmazások bonyolíthassanak le mobilhálózati adatforgalmat.
 
-## <a name="cloud-and-storage"></a>Felhő és tárolás
+## Felhő és tárolás
+<a id="cloud-and-storage" class="xliff"></a>
 -   **Biztonsági mentés az iCloudba** – Engedélyezi, hogy a felhasználó biztonsági mentést készítsen az iCloudba az eszközről.
 -   **Dokumentumok iCloudba történő szinkronizálása (csak felügyelt eszköz esetén)** – Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.
 -   **Fényképadatfolyamok iCloudba történő szinkronizálása** – A felhasználók engedélyezhetik a **Saját fotóstreamet** az eszközeiken, amely lehetővé teszi a fényképeknek az iClouddal való szinkronizálását, így a fényképek elérhetővé válnak a felhasználó összes eszközén.
@@ -177,11 +189,13 @@ Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. E
 -   **Megosztott fotóstream** – A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.
 -   **Tevékenység folytatása** – Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy egy másik macOS rendszerű gépen elkezdett munkát (átadás).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Autonóm egyalkalmazásos mód (csak felügyelt)
+## Autonóm egyalkalmazásos mód (csak felügyelt)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Ezekkel a beállításokkal konfigurálhatja az iOS-es eszközöket megadott alkalmazások autonóm egyalkalmazásos módban való futtatására. Ha ez a mód konfigurálva van, és az alkalmazást elindítják, az eszközön nem lehet másik alkalmazást futtatni. Célszerű például így konfigurálni az olyan alkalmazásokat, amelyekkel a felhasználók vizsgázhatnak az eszközön. Az alkalmazás használatának befejezésekor vagy a szabályzat eltávolításakor az eszköz visszatér a szokásos állapotába.
 
-### <a name="settings"></a>Beállítások
+### Beállítások
+<a id="settings" class="xliff"></a>
 
 - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak az ezen a lapon található alkalmazáslistában megjelenő nevét.
 - **Alkalmazás csomagazonosítója** – Itt adhatja meg az alkalmazás csomagazonosítóját. Segítséget a jelen témakörben alább található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
@@ -191,54 +205,57 @@ Az alkalmazásnevek és a csomagazonosítók megadása után az alkalmazást a *
 - **Importálás** – Importálhat egy vesszővel tagolt (.csv kiterjesztésű) fájlt, amely az alkalmazások nevét és a hozzájuk tartozó csomagazonosítókat tartalmazza.
 - **Exportálás** – Az alkalmazásneveket és a hozzájuk tartozó csomagazonosítókat egy vesszővel tagolt (.csv kiterjesztésű) fájlba exportálhatja.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
+### Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
 
-|||
-|-|-|
-|Alkalmazás neve|Csomagazonosító|
-|Alkalmazásáruház|com.apple.AppStore|
-|Számológép|com.apple.calculator|
-|Naptár|com.apple.mobilecal|
-|Fényképezőgép|com.apple.camera|
-|Óra|com.apple.mobiletimer|
-|Iránytű|com.apple.compass|
-|Névjegyek|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Barátok keresése|com.apple.mobileme.fmf1|
-|iPhone keresése|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Állapot|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Térképek|com.apple.Maps|
-|Üzenetek|com.apple.MobileSMS|
-|Zene|com.apple.Music|
-|Hírek|com.apple.news|
-|Megjegyzések|com.apple.mobilenotes|
-|Számok|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotók|com.apple.mobileslideshow|
-|Podcastok|com.apple.podcasts|
-|Emlékeztetők|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Beállítások|com.apple.Preferences|
-|Részvények|com.apple.stocks|
-|Tippek|com.apple.tips|
-|Videók|com.apple.videos|
-|Hangjegyzetek|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Időjárás|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Kioszkmód
+```
+
+
+## Kioszkmód
+<a id="kiosk" class="xliff"></a>
 -   **Aktiválási zár** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.
 -   **Kioszkmódban futó alkalmazás** – A **Felügyelt alkalmazás** lehetőséget választva egy az Intune-ba már felvett alkalmazást adhat meg, az **Áruházbeli alkalmazás** lehetőséget választva egy áruházbeli alkalmazás URL-címét. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. További segítségért olvassa el a jelen témakörben alább található „Alkalmazásáruházak URL-címének megadása” című részt.
 -   **AssistiveTouch** – Engedélyezi vagy letiltja az **AssistiveTouch** kisegítő beállítást, amely segít a nehézségekkel küzdő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.
@@ -262,7 +279,8 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 > Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az Apple Configurator eszközzel vagy az Apple Device Enrollment Program készülékregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 >Ha a megadott iOS-alkalmazás a profil hozzárendelése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (csak felügyelt eszköz esetén)** – Ez a beállítás azt határozza meg, hogy használható-e a Safari böngésző az eszközön.
 -   **Automatikus kitöltés** – Engedélyezi a felhasználó számára, hogy módosítsa a böngésző automatikus kiegészítési funkciójának beállításait.
 -   **Cookie-k** – Engedélyezi a cookie-k használatát a böngésző számára.
@@ -271,18 +289,22 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 -   **Előugró ablakok** – Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
+### Jelöletlen e-mail-tartományok
+<a id="unmarked-email-domains" class="xliff"></a>
 
 Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó a listában nem szereplő tartományból kap e-mailt, az iOS-es Mail alkalmazásban az nem megbízhatóként lesz megjelölve.
 
 
-### <a name="managed-web-domains"></a>Felügyelt webtartományok
+### Felügyelt webtartományok
+<a id="managed-web-domains" class="xliff"></a>
 
 A **Webtartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A megadott tartományokból letöltött dokumentumok felügyeltnek minősülnek. Ez a beállítás csak a Safari böngészővel letöltött dokumentumokra vonatkozik.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Jelszavak automatikus kitöltése a Safariban
+### Jelszavak automatikus kitöltése a Safariban
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 A **Tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A felhasználók csak a listában szereplő URL-címekhez tartozó webes jelszavakat menthetnek. Ez a beállítás csak a Safari böngészőre és az iOS 9.3 vagy későbbi verzióit futtató eszközökre vonatkozik felügyelt módban. Ha egyetlen URL-címet sem ad meg, jelszavakat minden webhelyhez lehetséges menteni.

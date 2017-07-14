@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
+# A Microsoft Intune-alkalmazásfelügyelet ismertetése
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Emellett előfordulhat, hogy az Intune-ban nem regisztrált eszközökön talál
 
 Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kívánt eszközökön való használata érdekében.
 
-## <a name="app-management-capabilities-by-platform"></a>Alkalmazás-felügyeleti szolgáltatások platform szerint
+## Alkalmazás-felügyeleti szolgáltatások platform szerint
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kíván
 |Áruházbeli alkalmazások|Igen|Igen|Igen|Igen|
 |Alkalmazások frissítése|Igen|Igen|Igen|Igen|
 
-<sup>1</sup> Fontolja meg a [Windows Information Protection]windows-information-protection-configure.md) használatát a Windows 10 rendszerű eszközökön futó alkalmazások védelmére.
+<sup>1</sup> Vagye fontolóra a [Windows Információvédelem](windows-information-protection-configure.md) használatát a Windows 10 rendszerű eszközökön futó alkalmazások védelmére.
 
 <sup>2</sup>Csak az Intune által kezelt eszközökre vonatkozik.
 
-## <a name="how-to-get-started"></a>Első lépések
+## Első lépések
+<a id="how-to-get-started" class="xliff"></a>
 
 Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatban találja, amely a következőképpen érhető el:
 
@@ -70,7 +73,8 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
 
-### <a name="manage"></a>A számítógépeken futó
+### A számítógépeken futó
+<a id="manage" class="xliff"></a>
 - **Alkalmazások** – Itt veheti fel, oszthatja ki és figyelheti az alkalmazások többségét.
     - [Alkalmazások hozzáadása](apps-add.md)
     - [Alkalmazások hozzárendelése](apps-deploy.md)
@@ -85,7 +89,8 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 - **iOS-alapú kiépítési profilok** – Az iOS-alkalmazások tartalmaznak egy kiépítési profilt és kódot, tanúsítvánnyal aláírva. Ha a tanúsítvány lejár, az alkalmazás a továbbiakban nem futtatható. Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.
     - [iOS-alkalmazáskiépítési profilok](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Figyelő
+### Figyelő
+<a id="monitor" class="xliff"></a>
 - **Licencelt alkalmazások** – Mennyiségi licencszerződés keretében, az alkalmazás-áruházakból vásárolt alkalmazások megtekintése, hozzárendelése és figyelése.
     - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
 - **Felderített alkalmazások** – Az Intune által hozzárendelt, és az eszközön telepített összes alkalmazás megjelenítése.
@@ -94,7 +99,8 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
 További információkért lásd: [Alkalmazások figyelése](apps-monitor.md)
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Vállalati Windows Áruház** – A Vállalati Windows Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
