@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Használatieset-forgatókönyvek követelményeinek meghatározása
+# Használatieset-forgatókönyvek követelményeinek meghatározása
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 Ebben a szakaszban meghatározza az összes használati eset minden egyes munkahelyi csoportjára vonatkozó követelményeket. Ez a folyamat segít abban, hogy jobban felkészülhessen az Intune telepítésével kapcsolatos más területeken, például az architektúra és tervezés, az előkészítés és bevezetés terén. Mindemellett az Intune üzembe helyezési projektjével kapcsolatos lehetséges hiányosságokat és kihívásokat is segít azonosítani.
 
@@ -41,7 +42,8 @@ Itt található néhány példa a munkahelyi használatieset-forgatókönyvek k�
 [Letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), hogy beírja a cég használatieset- és alhasználatieset-követelményeit.
 
 
-## <a name="examples-of-requirements"></a>Példák a követelményekre
+## Példák a követelményekre
+<a id="examples-of-requirements" class="xliff"></a>
 
 Íme néhány további példa, amelyek használhatók a „Követelmények” oszlopban:
 
@@ -62,6 +64,7 @@ Itt található néhány példa a munkahelyi használatieset-forgatókönyvek k�
     - Az Office 365 és az alkalmazás adatvédelmi szabályzatai
     - Üzletági (LOB) alkalmazásvédelmi szabályzatok
 
-## <a name="next-section"></a>Következő szakasz
+## További lépések
+<a id="next-steps" class="xliff"></a>
 
 A következő szakaszban az [Intune bevezetési tervének összeállításáról](planning-guide-rollout-plan.md) található információ.

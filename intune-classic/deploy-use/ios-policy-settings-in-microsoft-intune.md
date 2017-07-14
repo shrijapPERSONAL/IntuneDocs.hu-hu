@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-szabályzatbeállítások a Microsoft Intune-ban
+# iOS-szabályzatbeállítások a Microsoft Intune-ban
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Az Intune számos beépített beállítási lehetőséget kínál, amelyeket iOS-eszközökön konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
-## <a name="general-configuration-policy-settings"></a>Az általános konfigurációs szabályzat beállításai
+## Az általános konfigurációs szabályzat beállításai
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatát** a következő beállítások konfigurálásához használhatja:
 
@@ -41,7 +43,8 @@ A Microsoft Intune **iOS-hoz készült általános konfigurációs szabályzatá
 
 Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg létre tudja hozni egy egyéni iOS-szabályzattal, amellyel az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállításokat importálhatja. További információkért lásd a jelen témakörben alább található „Egyéni szabályzatbeállítások” című részt.
 
-### <a name="security-settings"></a>Biztonsági beállítások
+### Biztonsági beállítások
+<a id="security-settings" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -60,7 +63,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.|
 <sup>1</sup> Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, egymás után alkalmazza őket a rendszer. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
-### <a name="system-settings"></a>Rendszerbeállítások
+### Rendszerbeállítások
+<a id="system-settings" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -73,7 +77,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Diagnosztikai adatok küldésének engedélyezése**|Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.|
 |**Passbook zárolt állapotban való használatának engedélyezése**|Engedélyezi a felhasználó számára a Passbook alkalmazás eszközzárolás alatti elérését.|
 
-### <a name="cloud-settings-for-documents-and-data"></a>Felhőbeállítások dokumentumok és adatok számára
+### Felhőbeállítások dokumentumok és adatok számára
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -87,7 +92,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Fényképek iCloudban való megosztásának engedélyezése**|A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.|
 |**iCloud-fotókönyvtár engedélyezése**|A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.   Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.|
 
-### <a name="application-settings-for-the-browser"></a>Alkalmazásbeállítások a böngésző számára
+### Alkalmazásbeállítások a böngésző számára
+<a id="application-settings-for-the-browser" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -99,7 +105,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**JavaScript engedélyezése**|Java-parancsfájlok böngészőben történő futtatásának engedélyezése.|
 |**Csalás elleni figyelmeztetés engedélyezése**|Csalás elleni figyelmeztetések engedélyezése a böngészőben.|
 
-### <a name="application-settings-for-apps"></a>Alkalmazásbeállítások az alkalmazások számára
+### Alkalmazásbeállítások az alkalmazások számára
+<a id="application-settings-for-apps" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -113,7 +120,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Az új vállalatialkalmazás-készítőkben való megbízás engedélyezése a felhasználó számára**|Nem az alkalmazásáruházból letöltött alkalmazásokban való megbízás lehetőségének engedélyezése a felhasználó számára.|
 
 
-### <a name="application-settings-for-games"></a>Alkalmazásbeállítások a játékok számára
+### Alkalmazásbeállítások a játékok számára
+<a id="application-settings-for-games" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -121,7 +129,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Game Centerbeli ismerősök felvételének engedélyezése**|Barátok hozzáadásának engedélyezése a Game Center alkalmazásban a felhasználó számára.|
 |**Több résztvevős játék engedélyezése**|Engedélyezi a felhasználó számára, hogy többszereplős játékokat játsszon az eszközön.|
 
-### <a name="application-settings-for-media-content"></a>Médiatartalmakra vonatkozó alkalmazásbeállítások
+### Médiatartalmakra vonatkozó alkalmazásbeállítások
+<a id="application-settings-for-media-content" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -131,7 +140,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltésének engedélyezése a felhasználó számára**|Az „erotikus tartalom” kategóriába sorolt könyvek letöltésének engedélyezése a felhasználó számára.|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>Eszközképességek beállításai a hardver számára
+### Eszközképességek beállításai a hardver számára
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -140,7 +150,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**A párosított Apple Watch órák kényszerítése csuklóérzékelés használatára**|Ha ez a beállítás engedélyezve van, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik.|
 |**Párosítási jelszó kérése a kimenő AirPlay-kérésekhez**|Párosítási jelszó kérése, ha a felhasználó az AirPlay segítségével tartalmat kíván közvetíteni egyéb Apple-eszközökre.|
 
-### <a name="device-capabilities-settings-for-cellular"></a>Eszközképességek beállításai a mobilhálózat számára
+### Eszközképességek beállításai a mobilhálózat számára
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -149,7 +160,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Adatroaming engedélyezése**|Adatroaming használatának engedélyezése, ha az eszköz mobilhálózathoz csatlakozik.|
 |**Roamingolás közbeni globális, háttérbeli adatbeolvasás engedélyezése**|Mobilhálózati roaming közben történő adatlehívás, például e-mail engedélyezése az eszköz számára.|
 
-### <a name="device-capabilities-settings-for-features"></a>Eszközképességek beállításai a mobilhálózat számára
+### Eszközképességek beállításai a mobilhálózat számára
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
@@ -160,7 +172,8 @@ Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 |**Az Airdrop szolgáltatás a felügyelt alkalmazásokból való használatának tiltása**|A felügyelt alkalmazásokból az Airdrop szolgáltatással való adatküldés lehetőségének letiltása.|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
+### A szabályzatnak megfelelő és nem megfelelő alkalmazásokra vonatkozó beállítások
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja meg a megfelelő vagy nem megfelelő alkalmazások listáját az alábbi információk alapján.
 
 > [!NOTE]
@@ -177,7 +190,8 @@ A **Szabályzatnak megfelelő és nem megfelelő alkalmazások** listában adja 
 
 A megfelelő és nem megfelelő alkalmazásokkal kapcsolatos beállításokat tartalmazó szabályzatokat felhasználói csoportokra vonatkozóan kell érvénybe léptetni.
 
-### <a name="kiosk-mode-settings"></a>Teljes képernyős mód beállításai
+### Teljes képernyős mód beállításai
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ A megfelelő és nem megfelelő alkalmazásokkal kapcsolatos beállításokat ta
 > -   Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) vagy az [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md) eszközregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 > -   Ha a megadott iOS-alkalmazás a konfigurációs házirend telepítése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
+### A szabályzatnak megfelelő és nem megfelelő alkalmazások referenciaadatai
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 A **Nem kompatibilis alkalmazások jelentése** beállítás használatával megtekintheti az engedélyezett és letiltott alkalmazások kompatibilitását.
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>A nem kompatibilis alkalmazások jelentésének futtatása
+##### A nem kompatibilis alkalmazások jelentésének futtatása
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  A [Microsoft Intune felügyeleti konzolban](https://manage.microsoft.com) válassza a **Jelentések** &gt; **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** elemet.
 
 2.  Jelölje ki az ellenőrizni kívánt eszközcsoportokat, adja meg, hogy a megfelelő, a nem megfelelő alkalmazásokat vagy mindkettőt szeretné ellenőrizni, majd válassza a **Jelentés megtekintése**elemet.
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>Alkalmazás-áruházak URL-címének megadása
+#### Alkalmazás-áruházak URL-címének megadása
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő és nem megfelelő alkalmazások listájában, illetve **Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása** beállításban (csak iOS rendszerben), használja a következő formátumot:
 
 1. Keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban használni kívánt alkalmazást, és nyissa meg az alkalmazás lapját.
@@ -226,17 +243,20 @@ Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő é
 > [!NOTE]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
-### <a name="enrollment-settings"></a>Regisztrációs beállítások
+### Regisztrációs beállítások
+<a id="enrollment-settings" class="xliff"></a>
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
 |**Az aktiválási zár engedélyezése, ha az eszköz felügyelt módban van**|Aktiválási zár engedélyezése felügyelt iOS-eszközökön.|
 
-### <a name="supervised-mode-settings"></a>A felügyelt mód beállításai
+### A felügyelt mód beállításai
+<a id="supervised-mode-settings" class="xliff"></a>
 Az alábbi beállításokat a felügyelt módban lévő, az iOS 8.0-ás vagy újabb verzióját futtató eszközökön konfigurálhatja.
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>A felügyelt mód eszközkorlátozásokra vonatkozó beállításai
+### A felügyelt mód eszközkorlátozásokra vonatkozó beállításai
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 8.0-ás vagy új
 |**Értesítési beállítások módosításának engedélyezése**|Engedélyezi a felhasználó számára, hogy módosítsa az eszköz értesítési beállításait.|
 |**Háttérkép módosításának engedélyezése**|Engedélyezi a felhasználó számára, hogy megváltoztassa az eszköz háttérképét.|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>A felügyelt mód szolgáltatáskorlátozásokra vonatkozó beállításai
+### A felügyelt mód szolgáltatáskorlátozásokra vonatkozó beállításai
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 8.0-ás vagy új
 |**Billentyűzet helyesírás-ellenőrzésének engedélyezése**|Engedélyezi az eszköz helyesírás-ellenőrzőjének használatát.|
 |**Billentyűparancsok engedélyezése**|Engedélyezi a billentyűparancsok használatát.|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>A felügyelt mód alkalmazáskorlátozásokra vonatkozó beállításai
+### A felügyelt mód alkalmazáskorlátozásokra vonatkozó beállításai
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |Beállítás neve|Részletek|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ Az alábbi beállításokat a felügyelt módban lévő, az iOS 8.0-ás vagy új
 |**Game Center engedélyezése**|A Game Center alkalmazás használatának engedélyezése.|
 
 
-### <a name="show-or-hide-apps"></a>Alkalmazások megjelenítése vagy elrejtése
+### Alkalmazások megjelenítése vagy elrejtése
+<a id="show-or-hide-apps" class="xliff"></a>
 
 A **Rejtett és megjelenített alkalmazások listája** segítségével az alábbiakat szabályozhatja az iOS 9.3-as vagy újabb verzióját futtató felügyelt eszközökön:
 
@@ -291,7 +314,8 @@ A **Rejtett és megjelenített alkalmazások listája** segítségével az aláb
 - Megadhatja a felhasználók által látható és elindítható alkalmazások listáját. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Rejtett és megjelenített alkalmazások listájának létrehozása
+#### Rejtett és megjelenített alkalmazások listájának létrehozása
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 Adja meg a következő beállításokat:
 
@@ -305,49 +329,50 @@ Adja meg a következő beállításokat:
 |**Szerkesztés**|Segítségével szerkesztheti a kijelölt alkalmazás nevét, kiadóját és URL-címét.|
 |**Törlés**|Törölheti a kijelölt alkalmazást a listából.|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>Beépített iOS-alkalmazások adatai
+#### Beépített iOS-alkalmazások adatai
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 Ebben a listában megtalálhatja a megjeleníteni vagy elrejteni kívánt beépített iOS-alkalmazás nevét, kiadóját és csomagazonosítóját. Ha a listán szereplő összes alkalmazást szeretné megjeleníteni vagy elrejteni, az alábbi adatokat másolja be egy **.csv** kiterjesztésű szövegfájlba, majd használja az **Alkalmazások importálása** lehetőséget az alkalmazások egyidejű importálásához.
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>Egyéni szabályzatbeállítások
+## Egyéni szabályzatbeállítások
+<a id="custom-policy-settings" class="xliff"></a>
 
 A Microsoft Intune **Egyéni iOS-szabályzat** használatával az [Apple Configurator eszközzel](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) létrehozott beállítások iOS-alapú eszközökre telepíthetők. Ezzel az eszközzel számos olyan beállítást készíthet, amelyek ezen eszközök működését vezérlik, és egy konfigurációs profilba exportálhatja őket. Ezt a konfigurációs profilt később Intune iOS-szabályzatokba importálhatók, és a beállítások telepíthetők a szervezetben lévő felhasználók és eszközök számára.
 
 Ezzel a funkcióval olyan iOS-beállításokat léptethet érvénybe, amelyek nem konfigurálhatók az Intune általános konfigurációs szabályzataival.
 
-### <a name="prerequisites"></a>Előfeltételek
+### Előfeltételek
+<a id="prerequisites" class="xliff"></a>
 Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létre kell hoznia a felhasználók vagy eszközök számára telepíteni kívánt beállításokat tartalmazó konfigurációs fájlt. Az Apple Configurator eszköz a [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) áruházból tölthető le, ahol további információkat is talál az eszközről.
 
 > [!NOTE]
 > Az Intune nem készít jelentést az egyéni iOS-házirendek egyes beállításainak betartásáról. a teljes házirend betartásáról azonban igen.
 
-### <a name="general-settings"></a>Általános beállítások
+### Általános beállítások
+<a id="general-settings" class="xliff"></a>
 
 |Beállítás neve|Részletek|
     |----------------|--------------------|
     |**Név**|Adjon meg egy egyedi nevet az egyéni iOS-házirend számára, hogy az azonosítható legyen az Intune konzolján.|
     |**Leírás**|Adjon meg egy leírást, amely áttekintést nyújt az iOS egyéni szabályzatáról, és olyan releváns információkat tartalmaz, amelyek megkönnyítik a keresését.|
 
-### <a name="custom-settings"></a>Egyéni beállítások
+### Egyéni beállítások
+<a id="custom-settings" class="xliff"></a>
 
 |Beállítás neve|Részletek|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |**Konfigurációs profil fájlja**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatókban talál.|
     |**Konfigurációs profil adatai**|Megjeleníti az importált konfigurációs profil XML-kódját.|
 
-### <a name="see-also"></a>További információ
+### További információ
+<a id="see-also" class="xliff"></a>
 [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
