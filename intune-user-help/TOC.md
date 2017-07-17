@@ -2,6 +2,7 @@
 ## [Felügyelt eszközök használata](use-managed-devices-to-get-work-done.md)
 ## [Milyen információkat tekinthet meg a cégem az Intune-nal? ](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 ## [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Hogyan jelentkezhet be a Céges portálra?](sign-in-to-the-company-portal.md)
 ## [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 ### [Mi történik, ha Android-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)

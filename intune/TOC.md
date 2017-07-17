@@ -2,6 +2,7 @@
 ## [Mi az az Azure Portal?](what-is-intune.md)
 ## [Mi az az Intune for Education?](introduction-intune-education.md)
 ## [Intune-funkciók az Azure-ban](ui-changes.md)
+### [Csoportok módosításai](groups-get-started.md)
 ## [Regisztráljon az ingyenes próbaverzióhoz](free-trial-sign-up.md)
 ## [Újdonságok](whats-new.md)
 ### [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)
@@ -16,12 +17,13 @@
 ## [Gyakori helyzetek](common-scenarios.md)
 ## [Ismert problémák](known-issues.md)
 ## [Támogatás kérése](get-support.md)
-## [Az Intune szolgáltatás leírása](microsoft-intune-service-description.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [Első lépések](get-started-evaluation.md)
+## [Csoport létrehozása](get-started-groups.md)
+## [Felhasználó létrehozása](get-started-users.md)
+## [Eszközök regisztrálása](get-started-enroll.md)
+## [Szabályzatok hozzárendelése](get-started-policies.md)
+## [Alkalmazások hozzárendelése](get-started-apps.md)
 
 
 # Telepítési terv kidolgozása
@@ -63,20 +65,21 @@
 ### [Bejelentkezés az Intune-ba](account-sign-up.md)
 ### [Tartományok beállítása](custom-domain-name-configure.md)
 ### [Felhasználók hozzáadása](users-permissions-add.md)
+### [Csoportok hozzáadása](groups-add.md)
 ### [Licencek kiosztása](licenses-assign.md)       
 ### [A Munkahelyi portál testreszabása](company-portal-customize.md)     
 ### [Az MDM-szolgáltató beállítása](mdm-authority-set.md)
 
 ## [Eszközök regisztrálása](device-enrollment.md)
-### Előfeltételek
-#### [Feltételek és kikötések beállítása](terms-and-conditions-create.md)
-#### [Korlátozások beállítása](enrollment-restrictions-set.md)
-#### [Apple MDM push-tanúsítvány beszerzése](apple-mdm-push-certificate-get.md)
-#### [Vállalati azonosítók hozzáadása](corporate-identifiers-add.md)
-#### [Eszközregisztráció-kezelő beállítása](device-enrollment-manager-enroll.md)
+### Telepítési beállítások
+#### [Feltételek és kikötések](terms-and-conditions-create.md)
+#### [Korlátozások](enrollment-restrictions-set.md)
+#### [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
+#### [Vállalati azonosítók](corporate-identifiers-add.md)
+#### [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md)
 #### [Eszközök hozzárendelése csoportokhoz](device-group-mapping.md)
-### [Windows-regisztráció beállítása](windows-enroll.md)
-#### [Automatikus regisztráció](windows-enroll.md)
+### Windows-regisztráció beállítása
+#### [Windows-regisztráció](windows-enroll.md)
 #### [Csoportos regisztráció](windows-bulk-enroll.md)
 ### [Az androidos eszközök regisztrálásának beállítása](android-enroll.md)
 ### iOS-eszközök regisztrálásának beállítása
@@ -84,7 +87,6 @@
 #### [Az Apple School Managerrel](apple-school-manager-set-up-ios.md)
 #### [Apple Configuratorrel](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS-regisztráció beállítása](macos-enroll.md)
-### [Felhasználók oktatása](end-user-educate.md)
 
 ## [Eszközök kezelése](device-management.md)
 ### [Eszköz törlése](devices-wipe.md)
@@ -97,11 +99,13 @@
 ### [Céges adatok eltávolítása](device-company-data-remove.md)
 ### [Új PIN-kód](device-passcode-reset.md)
 ### [Eszköz újraindítása](device-restart.md)
+### [Aktuális felhasználó kijelentkeztetése](device-logout-user.md)
+### [Felhasználó eltávolítása](device-remove-user.md)
 ### [Távirányítás Androidhoz](device-profile-android-teamviewer.md)
+### [Windows 10-es PIN-kód alaphelyzetbe állítása](device-windows-pin-reset.md)
 ### [Eszközkészlet vizsgálata](device-inventory.md)
 
 ## [Felhasználók kezelése](user-management.md)
-### [Csoportok – első lépések](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [Alkalmazások kezelése](app-management.md)
@@ -128,16 +132,6 @@
 #### [iOS-es e-könyvek](vpp-ebooks-ios.md)
 ### [A Céges portál alkalmazás konfigurálása](company-portal-app.md)
 ### [A Managed Browser konfigurálása](app-configuration-managed-browser.md)
-## [Alkalmazásvédelmi szabályzatok használata](app-protection-policies.md)
-### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](app-protection-policies-configure-windows-10.md)
-### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](windows-information-protection-policy-create.md)
-### [Android-beállítások](app-protection-policy-settings-android.md)
-### [iOS-beállítások](app-protection-policy-settings-ios.md)
-### [Az alkalmazásvédelmi szabályzatok ellenőrzése](app-protection-policies-validate.md)
-### [Alkalmazásvédelmi felhasználó állapotának figyelése](app-protection-policies-monitor.md)
-### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](app-protection-policies-configure-windows-10.md)
-### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](windows-information-protection-policy-create.md)
-### [iOS-alkalmazások közti adatátvitel kezelése](data-transfer-between-apps-manage-ios.md)
 
 ## [Eszközök konfigurálása](device-profiles.md)
 ### [Eszközprofilok konfigurálása](device-profile-create.md)
@@ -175,13 +169,16 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 és Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [A Windows 10-kiadás frissítési beállításainak konfigurálása](edition-upgrade-configure-windows-10.md)
+### [Windows 10-es Endpoint Protection](endpoint-protection-windows-10.md)
 ### [A Windows 10 oktatási funkcióinak konfigurálása](education-settings-configure.md)
 ### [Az iOS oktatási funkcióinak konfigurálása](education-settings-configure-ios.md)
+### [Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása](education-settings-configure-ios-shared.md)
 ### [A Vállalati Windows Update beállításainak konfigurálása](windows-update-for-business-configure.md)
 ### [Tanúsítványok konfigurálása](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [A Windows Információvédelem beállításainak konfigurálása](windows-information-protection-configure.md)
+### [Távközlési költségek monitorozása](telecom-expenses-monitor.md)
 ### [Profilok hozzárendelése](device-profile-assign.md)
 ### [Profilok monitorozása](device-profile-monitor.md)
 ### [Profilok hibaelhárítása](device-profile-troubleshoot.md)
@@ -192,48 +189,65 @@
 ### [Android for Work-szabályzat létrehozása](compliance-policy-create-android-for-work.md)
 ### [iOS-szabályzat létrehozása](compliance-policy-create-ios.md)
 ### [Windows-szabályzat létrehozása](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### Meg nem felelési műveletek létrehozása
 ### [Az eszközmegfelelőség figyelése](compliance-policy-monitor.md)
 
 ## [Feltételes hozzáférés beállítása](conditional-access.md)
 ### [A feltételes hozzáférés szokásos használati módjai](conditional-access-intune-common-ways-use.md)
-### [Alkalmazásalapú feltételes hozzáférés](app-based-conditional-access-intune.md)
 ### [A helyszíni Exchange-összekötő telepítése](exchange-connector-install.md)
 ### [Hozzon létre, és rendelje hozzá a feltételes hozzáférési házirend](conditional-access-exchange-create.md)
-### [Alkalmazásalapú feltételes hozzáférés beállítása az Exchange Online-hoz](app-based-conditional-access-intune-exchange-online-create.md)
-### [Alkalmazásalapú feltételes hozzáférés beállítása a SharePoint Online-hoz](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [Feltételes hozzáférési szabályzatok ismételt hozzárendelése az Intune klasszikus portáljáról](conditional-access-intune-reassign.md)
+### [Alkalmazásalapú feltételes hozzáférés](app-based-conditional-access-intune.md)
+### [Alkalmazásalapú feltételes hozzáférés beállítása](app-based-conditional-access-intune-create.md)
 ### [Az ADAL és az Intune](app-modern-authentication-block.md)
 ### [Feltételes hozzáférési megfelelőségének figyelése](conditional-access-exchange-monitor.md)
 
-## Az adatok és eszközök védelme
+## Alkalmazás- és eszközadatok védelme
+
+### [Alkalmazásvédelmi szabályzatok használata](app-protection-policy.md)
+#### [Alkalmazásvédelmi szabályzatok létrehozása](app-protection-policies.md)
+##### [Android-beállítások](app-protection-policy-settings-android.md)
+##### [iOS-beállítások](app-protection-policy-settings-ios.md)
+#### [Az alkalmazásvédelmi szabályzatok ellenőrzése](app-protection-policies-validate.md)
+#### [Alkalmazásvédelmi felhasználó állapotának figyelése](app-protection-policies-monitor.md)
+#### [Felkészülés az alkalmazásvédelmi WIP-szabályzatokra](app-protection-policies-configure-windows-10.md)
+#### [Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése](windows-information-protection-policy-create.md)
+#### [iOS-alkalmazások közti adatátvitel kezelése](data-transfer-between-apps-manage-ios.md)
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [A Lookout beállítása](lookout-mobile-threat-defense-connector.md)
-##### [A Lookout és az Intune közötti integráció](lookout-mtd-subscription-setup.md)
-##### [A Lookout engedélyezése az Intune-ban](lookout-mtd-connector-enable.md)
-##### [A Lookouttal használni kívánt alkalmazások telepítése](lookout-for-work-app-configure-deploy.md)
-##### [A Lookout eszközmegfelelőségi szabályzata](lookout-device-compliance-policy-create.md)
-
+##### [A Lookout és az Intune közötti integráció](lookout-mtd-connector-integration.md)
 #### [A Skycure beállítása](skycure-mobile-threat-defense-connector.md)
 ##### [Az Azure AD SSO konfigurálása](skycure-azure-sso-configure.md)
-##### [iOS-es alkalmazáskonfigurációs szabályzat letöltése](skycure-ios-app-configuration-policy-download.md)
-##### [Alkalmazások hozzáadása és konfigurálása](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [A Skycure-ral használni kívánt alkalmazások telepítése](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+##### [Az iOS-es alkalmazáskonfigurációs szabályzat letöltése](skycure-ios-app-configuration-policy-download.md)
 ##### [A Skycure és az Intune közötti integráció](skycure-mtd-connector-integration.md)
-##### [A Skycure engedélyezése az Intune-ban](skycure-mtd-connector-enable.md)
-##### [A Skycure eszközmegfelelőségi szabályzata](skycure-device-compliance-policy-create.md)
+#### [MTD-alkalmazások hozzáadása](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [MTD engedélyezése az Intune-ban](mtd-connector-enable.md)
+#### [MTD-eszközmegfelelési szabályzat létrehozása](mtd-device-compliance-policy-create.md)
+
+### [Hálózati hozzáférés-vezérlés](network-access-control-integrate.md)
+
+
+<!-- ### Set up mobile threat protection        
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
 
 ### [A Windows Hello beállítása](windows-hello.md)        
-<!-- ### Protect devices with remote actions        -->
+<!-- ### Protect devices with remote actions -->
 
 ## [Szerepkörök kezelése](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [Az ügyfélszolgálati operátor szerepkör használata](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [Számítógépek kezelése szoftveres ügynökkel](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Számítógépek felügyeletének összehasonlítása](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [Számítógépügyfél telepítése](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Számítógépek általános felügyeleti feladatai](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [Számítógépes szabályzatok](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -249,10 +263,16 @@
 ### [Licencszerződések kezelése](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Szabályzatütközések feloldása](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [Felhasználók oktatása](end-user-educate.md)
+### [Céges portál-üzenetek](end-user-company-portal-messages.md)
+### [MAM-használatot támogató alkalmazások Androidon](end-user-mam-apps-android.md)
+### [MAM-használatot támogató alkalmazások iOS-en](end-user-mam-apps-ios.md)
+### [Android-alkalmazások beszerzése](end-user-apps-android.md)
+### [iOS-alkalmazások beszerzése](end-user-apps-ios.md)
+### [Windows-alkalmazások beszerzése](end-user-apps-windows.md)
 
 # Monitorozás és hibaelhárítás
-## [Távközlési költségek monitorozása](telecom-expenses-monitor.md)
-
+## [Az ügyfélszolgálati operátor szerepkör használata](help-desk-operators.md)
 
 # Fejlesztés és testreszabás
 ## [Egyéni eszközbeállítások konfigurálása](custom-settings-configure.md)
@@ -277,6 +297,5 @@
 ### [Intune App SDK Xamarin összetevő](app-sdk-xamarin.md)
 ## [Az Intune Graph API-k használata](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [Szószedet](intune-glossary.md)
