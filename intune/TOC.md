@@ -38,9 +38,9 @@
 ### [Megvalósítás](planning-guide-onboarding.md)
 ### [Tesztelés és ellenőrzés](planning-guide-test-validation.md)
 ### [További háttéranyagok](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Forgatókönyvek végrehajtási útmutatói
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -64,14 +64,13 @@
 #### [Hálózatisávszélesség-felhasználás](network-bandwidth-use.md)
 ### [Bejelentkezés az Intune-ba](account-sign-up.md)
 ### [Tartományok beállítása](custom-domain-name-configure.md)
-### [Felhasználók hozzáadása](users-permissions-add.md)
+### [Felhasználók hozzáadása](users-add.md)
 ### [Csoportok hozzáadása](groups-add.md)
-### [Licencek kiosztása](licenses-assign.md)       
-### [A Munkahelyi portál testreszabása](company-portal-customize.md)     
+### [Licencek kiosztása](licenses-assign.md)
 ### [Az MDM-szolgáltató beállítása](mdm-authority-set.md)
 
 ## [Eszközök regisztrálása](device-enrollment.md)
-### Telepítési beállítások
+### [Regisztrációs beállítások](enrollment-options.md)
 #### [Feltételek és kikötések](terms-and-conditions-create.md)
 #### [Korlátozások](enrollment-restrictions-set.md)
 #### [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Windows 10-es PIN-kód alaphelyzetbe állítása](device-windows-pin-reset.md)
 ### [Eszközkészlet vizsgálata](device-inventory.md)
 
-## [Felhasználók kezelése](user-management.md)
 <!--### Add and delete users -->
 
 ## [Alkalmazások kezelése](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [A Lookout beállítása](lookout-mobile-threat-defense-connector.md)
 ##### [A Lookout és az Intune közötti integráció](lookout-mtd-connector-integration.md)
+
 #### [A Skycure beállítása](skycure-mobile-threat-defense-connector.md)
-##### [Az Azure AD SSO konfigurálása](skycure-azure-sso-configure.md)
-##### [Az iOS-es alkalmazáskonfigurációs szabályzat letöltése](skycure-ios-app-configuration-policy-download.md)
 ##### [A Skycure és az Intune közötti integráció](skycure-mtd-connector-integration.md)
+
+#### [A Check Point beállítása](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [A Check Point integrációja az Intune-nal](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [MTD-alkalmazások hozzáadása](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [MTD engedélyezése az Intune-ban](mtd-connector-enable.md)
 #### [MTD-eszközmegfelelési szabályzat létrehozása](mtd-device-compliance-policy-create.md)
 
 ### [Hálózati hozzáférés-vezérlés](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [A Windows Hello beállítása](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [Szerepkörök kezelése](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Számítógépek kezelése szoftveres ügynökkel](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Számítógépek felügyeletének összehasonlítása](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
