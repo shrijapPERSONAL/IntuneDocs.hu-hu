@@ -118,6 +118,7 @@
 #### [Windows Áruházbeli alkalmazások](store-apps-windows.md)
 #### [Windows LOB-alkalmazások](lob-apps-windows.md)
 #### [Android for Work-alkalmazások](apps-add-android-for-work.md)
+#### [Windows 10-es Office 365-alkalmazások](apps-add-office365.md)
 ### [Alkalmazások hozzárendelése](apps-deploy.md)
 ### [Alkalmazások figyelése](apps-monitor.md)
 ### [iOS-es alkalmazáskonfigurációs profilok](app-configuration-policies-use-ios.md)
