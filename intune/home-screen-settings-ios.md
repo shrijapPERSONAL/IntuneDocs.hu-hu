@@ -1,12 +1,12 @@
 ---
 title: "Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz."
+titleSuffix: Intune on Azure
+description: "Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,17 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7743573ab893b7d54c11e183133fa02368c00779
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ezekkel a beállításokkal konfigurálható az alkalmazások, mappák és webes videóklipek elrendezése mindazon iOS-eszközök kezdőképernyőjén és Dock sávján, amelyekhez társítja a szabályzatot.
+Használja ezeket a beállításokat az alkalmazások, mappák és webklipek konfigurálására az iOS dokkolási és kezdőképernyőjén.
 
 Az iOS-eszközöknek, amelyekhez a profilt társítja, felügyelt módban kell lenniük, és az iOS legalább 9.3-as verzióját kell futtatniuk.
 
@@ -37,11 +34,11 @@ Az iOS-eszközöknek, amelyekhez a profilt társítja, felügyelt módban kell l
 
 ## <a name="add-items-to-the-dock"></a>Elemek hozzáadása a Dockhoz
 
-A **Dock** panelen legfeljebb 6 elemet vagy mappát adhat hozzá az iOS képernyő alján elhelyezkedő Dockhoz. Sok eszköz ennél kevesebb elemet enged meg, az iPhone-eszközök például csak 4 elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
+A **Dock** panelen legfeljebb 6 elemet vagy mappát adhat hozzá az iOS képernyőn elhelyezkedő Dockhoz. Sok eszköz azonban ennél kevesebb elemet enged meg, az iPhone-eszközök például csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
 
 1. A **Hozzáadás** választásával adhat elemeket a Dockhoz.
 2. A **Sor hozzáadása** panelen válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni.
-3. Konfigurálja a Dockon megjeleníteni kívánt alkalmazásokat és mappákat e témakör **Alkalmazás hozzáadása a listához** és **Mappa hozzáadása a listához** című szakaszai alapján.
+3. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a Dockban.
 4. Folytassa az elemek hozzáadását. Amikor elkészült, kattintson minden panelen az **OK** gombra, míg vissza nem tér a **Profil létrehozása** panelre. Válassza a **Létrehozás** lehetőséget.
 
 >[!TIP]
@@ -53,7 +50,7 @@ Ebben a példában úgy konfiguráltuk a Dockot, hogy csak a Safari, Mail és St
 
 ![Példa iOS Dock beállításokra](http://i.imgur.com/FfFiUcP.png)
 
-Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbihoz hasonló Dock lesz:
+Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbi képernyőképen láthatóhoz hasonló Dock lesz:
 
 ![Példa iOS Dock elrendezésére iPhone-eszközön](http://i.imgur.com/bAgCe8F.png)
 
@@ -63,9 +60,9 @@ Adja meg a kezdőképernyőn megjeleníteni kívánt lapokat és az egyes lapoko
 
 
 1. A **Lapok** panelen válassza a **Hozzáadás** lehetőséget.
-2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS eszközön.
+2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Válassza a **Hozzáadás** lehetőséget, majd válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni a laphoz.
-4. Konfigurálja a lapon megjeleníteni kívánt alkalmazásokat és mappákat e témakör **Alkalmazás hozzáadása a listához** és **Mappa hozzáadása a listához** című szakaszai alapján.
+4. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a lapon.
 
 ### <a name="example"></a>Példa
 
@@ -73,13 +70,13 @@ Ebben a példában egy **Contoso** elnevezésű új lapot konfiguráltunk. A lap
 
 ![Példa iOS-kezdőképernyő beállítására](http://i.imgur.com/Jc2OxyX.png)
 
-Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbihoz hasonló lap lesz:
+Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbi képernyőképen láthatóhoz hasonló lap lesz:
 
 ![iOS-eszköz módosított kezdőképernyővel](http://i.imgur.com/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Alkalmazás hozzáadása a listához
 
-1. Írjon be egy **Alkalmazásnevet**. Ez arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS eszközön.
+1. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. További információt az alább található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
 3. Kattintson az **OK** gombra, majd folytassa az elemek hozzáadását a Dock esetében legfeljebb **6**, lapok esetében legfeljebb **60** elemig.
 4. Amikor végzett, kattintson az **OK**gombra.
@@ -88,10 +85,10 @@ Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alá
 
 Az egyes lapokhoz egy mappában hozzáadott alkalmazások balról jobbra jelennek meg a listában megadott sorrendben. Ha több alkalmazást ad hozzá, mint amennyi a lapon elfér, akkor azok egy következő lapra kerülnek át.
 
-1. Írja be a **Mappanevet**. Ez jelenik meg az eszközön a felhasználók számára.
+1. Írja be a **Mappanevet**. Ez a név jelenik meg az eszközön a felhasználók számára.
 2. A **Hozzáadás** választásával hozzon létre egy lapot a mappában. Legfeljebb 20 lapot adhat hozzá.
-3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS eszközön.
-3. Írjon be egy **Alkalmazásnevet**. Ez arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS eszközön.
+3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+3. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. Útmutatást kaphat az **Alkalmazás hozzáadása a listához** című szakaszban.
 3. Válassza a **Hozzáadás** lehetőséget. Legfeljebb 60 elemet adhat hozzá.
 4. Amikor végzett, kattintson az **OK**gombra.
@@ -144,3 +141,6 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 |Időjárás|com.apple.weather|
 
 
+## <a name="next-steps"></a>További lépések
+
+Most hozzárendelheti az eszközprofilt a kiválasztott csoportokhoz. A részletekért lásd: [Eszközprofilok hozzárendelése](device-profile-assign.md).

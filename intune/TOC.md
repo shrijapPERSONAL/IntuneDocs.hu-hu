@@ -15,6 +15,7 @@
 ### [Eszközök életciklusa](device-lifecycle.md)
 ### [Alkalmazások életciklusa](app-lifecycle.md)
 ## [Gyakori helyzetek](common-scenarios.md)
+## [A szolgáltatás leírása](microsoft-intune-service-description.md)
 ## [Ismert problémák](known-issues.md)
 ## [Támogatás kérése](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows-regisztráció](windows-enroll.md)
 #### [Csoportos regisztráció](windows-bulk-enroll.md)
 ### [Az androidos eszközök regisztrálásának beállítása](android-enroll.md)
-### iOS-eszközök regisztrálásának beállítása
-#### [Készülékregisztrációs programmal](device-enrollment-program-enroll-ios.md)
-#### [Az Apple School Managerrel](apple-school-manager-set-up-ios.md)
-#### [Apple Configuratorrel](apple-configurator-setup-assistant-enroll-ios.md)
+### [iOS-eszközök regisztrálásának beállítása](ios-enroll.md)
+#### [Készülékregisztrációs program](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS-regisztráció beállítása](macos-enroll.md)
 
 ## [Eszközök kezelése](device-management.md)

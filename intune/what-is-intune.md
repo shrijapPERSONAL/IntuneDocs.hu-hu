@@ -1,12 +1,12 @@
 ---
-title: "Az Azure-beli Intune előzetes verziójának bemutatása"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Ismerje meg az Azure Portal előzetes verziójának alapjait, és hogy miként lehet segítségére az eszközök felügyeletében."
+title: "Az Azure Portalbeli Intune bemutatása"
+titleSuffix: Intune on Azure
+description: "Az Azure Portalbeli Intune alapjainak ismertetése, és hogy miként segíthet az eszközök felügyeletében.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/10/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Az Azure Portalbeli Microsoft Intune bemutatása
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>A Microsoft Intune bemutatása az Azure Portal előzetes verziójában
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-A Microsoft Intune az Azure Portalra kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók változnak.
-Az új portál betekintést nyújt az új és frissített Azure Portal-funkciókba, amelyekkel felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
-Végül minden Intune-funkció átkerül majd az Azure-ba, de számos Intune-feladatot már most is elvégezhet az Azure Portalon. Mivel az új felület előnézet, bizonyos funkciók még nem szerepelnek a portálon. A részletekért lásd az [Újdonságok](#whats-new) ismertetését.
+A Microsoft Intune az Azure Portalra kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók megváltoztak.
+Az új portál új és frissített funkciókat kínál az Azure Portalon, ahol felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
 
 > [!IMPORTANT]
 > **Nem jelenik még meg az új portál?**<br>
-> A Microsoft bizonyos kiválasztott bérlők számára már elkezdte az előzetes bevezetését. A meglévő bérlők migrálása az új felhasználói felületre a 2017-es év elejétől kezdődik. Az Office-üzenetközpontban a bérlő migrálása előtt értesítést fog kapni.
+> A meglévő bérlők migrálása az új felhasználói felületre folyamatban van. A bérlő migrálása előtt értesítés jelenik meg az Office-üzenetközpontban.
 >
-> A 2017 januárja előtt létrehozott Intune-fiókok esetében az Apple-regisztrációs munkafolyamatok egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető, de a lehető legrövidebb időn belül tájékoztatást adunk róla. Ha a jelenlegi fiókkal nem érhető el a betekintés, javasoljuk, hogy hozzon létre egy próbafiókot az új lehetőségek kipróbálásához.
+> A 2017 januárja előtt létrehozott Intune-fiókok esetében az Apple-regisztrációs munkafolyamatok egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető. Ha a jelenlegi fiókkal nem érhető el az Azure Portal, javasoljuk, hogy hozzon létre egy próbafiókot.
+>
+> A lehetséges akadályok listájának áttekintése: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-Ebben a könyvtárban találja az új termék dokumentációját, amely folyamatosan frissül az előzetes során. Ha javaslatai vannak, küldjön visszajelzést a témakör megjegyzéseiben. Szívesen meghallgatnánk a véleményét.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+Ebben a könyvtárban találja az új termék folyamatosan frissülő dokumentációját. Ha javaslatai vannak, küldjön visszajelzést a témakör megjegyzéseiben. Szívesen meghallgatnánk a véleményét.
 
 Az új felhasználói felület főbb újdonságai a következők:
 
@@ -78,13 +73,13 @@ A dokumentáció a szükséges információk könnyebb megtalálhatósága érde
 ![Az Azure Portal munkafolyamatai](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Bevezetés és az első lépések
-Ez a szakasz tájékoztatást nyújt az [újdonságokról](whats-new.md), az [ismert problémákról](known-issues.md), a [támogatás kéréséről](get-support.md) és az Intune [ingyenes próbaverziójáról](free-trial-sign-up.md).
+Ez a szakasz [bevezető jellegű információt](introduction-intune.md) tartalmaz, amely az Intune használatának megkezdéséhez nyújt segítséget.
 ### <a name="plan-and-design"></a>Tervezés és kialakítás
-Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](/intune-classic/plan-and-design/introduction).
+Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](/intune-classic/plan-design/introduction).
 ### <a name="device-enrollment"></a>Eszközök beléptetése
 [Útmutató az eszközök Intune általi felügyeletéhez.](device-enrollment.md)
 ### <a name="device-compliance"></a>Eszközmegfelelőség
-[Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről.](device-compliance.md)
+[Definiálhatja az eszközök megfelelőségi szintjét, majd jelentést készíthet a nem megfelelő eszközökről](device-compliance.md).
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 [A felügyelt eszközök beállításainak és szolgáltatásainak konfigurálására szolgáló profilok ismertetése.](device-profiles.md)
 ### <a name="devices"></a>Eszközök
@@ -96,7 +91,7 @@ Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](
 ### <a name="on-premises-access"></a>Helyszíni hozzáférés
 [Az Exchange ActiveSynchez és a helyszíni Exchange-hez való hozzáférés konfigurálása](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[Ismerje meg a felügyelt eszközfelhasználókat, és rendezze csoportba az erőforrásokat](user-management.md).
+[Ismerje meg a felügyelt eszközfelhasználókat, és rendezze csoportba az erőforrásokat](users-add.md).
 ### <a name="groups"></a>Csoportok
 [Ismerje meg, hogyan használhatja az Azure Active Directory-csoportokat az Intune-nal](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune-szerepkörök
@@ -108,5 +103,4 @@ Hasznos tudnivalók az Intune-környezet [tervezéséhez és kialakításához](
 
 ## <a name="whats-new"></a>Újdonságok
 
-[Az előzetes kiadás újdonságainak ismertetése](whats-new.md).
-
+[Ismerje meg az Intune újdonságait](whats-new.md).

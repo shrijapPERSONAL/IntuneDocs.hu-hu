@@ -1,12 +1,12 @@
 ---
 title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban macOS esetén"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Az Intune azon beállításainak ismertetése, melyekkel szabályozhatók az eszközbeállítások és a funkciók a macOS rendszerű eszközökön."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a macOS-eszközökön."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,29 +15,28 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c120c6af93234e153e4fb845942726a51bee98df
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 716ca0a2041bdd2ecfadd180999a09f80373cb2a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>A macOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Ezen beállítások használatával a macOS-eszközöket egy eszközkorlátozási profilban kezelheti.
 
 ## <a name="password"></a>Jelszó
--     **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
-    -     **Megkövetelt jelszótípus** – Megadja, hogy a jelszó csak numerikus lehet-e, vagy alfanumerikusnak kell lennie (azaz betűket és számokat is tartalmaznia kell). Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.
-    -     **Nem alfanumerikus karakterek száma a jelszóban** – Megadja, hogy hány speciális karakternek (**0** - **4**) kell szerepelnie a jelszóban.<br>A speciális karakterek szimbólumok, mint például a kérdőjel (**?**).
-    -     **Jelszó minimális hossza** – Megadja a felhasználó által beállítandó jelszó minimális hosszát (**4** és **16** karakter között).
-    -     **Egyszerű jelszavak** – Az egyszerű jelszavak (például a **0000** vagy az**1234**) használatának engedélyezése.
-    -     **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** – Megadja, hogy a számítógépnek mennyi ideig kell inaktívnak lennie ahhoz, hogy bekapcsoljon a jelszavas zárolás.
-    -     **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Meghatározza, hogy a számítógépnek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
-    -     **Jelszó lejárata (napokban)** – Megadja, hogy hány nap elteltével kötelező a felhasználónak módosítania a jelszót (**1** **255** nap).
-    -     **Korábbi jelszavak újbóli használatának tiltása** – Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható (**1** - **24**).
+-   **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
+    -   **Megkövetelt jelszótípus** – Megadja, hogy a jelszó csak numerikus lehet-e, vagy alfanumerikusnak kell lennie (azaz betűket és számokat is tartalmaznia kell). Ezt a beállítást csak a Mac OS X 10.10.3-as és újabb verziói támogatják.
+    -   **Nem alfanumerikus karakterek száma a jelszóban** – Megadja, hogy hány speciális karakternek (**0** - **4**) kell szerepelnie a jelszóban.<br>A speciális karakterek olyan szimbólumok, mint a **?**
+    -   **Jelszó minimális hossza** – Megadja a felhasználó által beállítandó jelszó minimális hosszát (**4** és **16** karakter között).
+    -   **Egyszerű jelszavak** – Az egyszerű jelszavak (például a **0000** vagy az**1234**) használatának engedélyezése.
+    -   **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** – Megadja, hogy a számítógépnek mennyi ideig kell inaktívnak lennie ahhoz, hogy bekapcsoljon a jelszavas zárolás.
+    -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Meghatározza, hogy a számítógépnek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
+    -   **Jelszó lejárata (napokban)** – Megadja, hogy hány nap elteltével kötelező a felhasználónak módosítania a jelszót (**1** **255** nap).
+    -   **Korábbi jelszavak újbóli használatának tiltása** – Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható (**1** - **24**).
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
@@ -48,5 +47,9 @@ A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalm
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kívánt nevet, igény szerint az alkalmazás kiadóját, valamint az alkalmazás csomagazonosítóját (például *com.apple.calculator*).
 
+## <a name="domains"></a>Domains
 
+### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
+
+Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó nem a konfigurált tartományok egyikéből kap e-mailt, az iOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
 

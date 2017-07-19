@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator-sorozatszámok hozzáadása"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A cikk azt ismerteti, hogyan lehet sorozatszámokat hozzáadni a vállalati eszközökhöz az Apple Configurator használatával."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt arról, hogyan adhatók hozzá sorozatszámok céges tulajdonú iOS-eszközökhöz az Apple Configurator használatával."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator-sorozatszámok hozzáadása
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Kövesse az alábbi lépéseket, ha sorozatszámokat szeretne hozzáadni az Intune-hoz [vállalati iOS-eszközök Apple Configuratorrel és a Beállítási asszisztenssel való regisztrálásakor](apple-configurator-setup-assistant-enroll-ios.md). A sorozatszámokat egyenként is hozzáadhatja, vagy feltölthet egy vesszővel tagolt értékekből álló (CSV-) fájlt, amely a sorozatszámokat tartalmazza. A sorozatszámok feltöltése után profilt rendelhet hozzájuk. A profil olyan felügyeleti beállításokat tartalmaz, amelyeket eszközökre alkalmazhat.
 
@@ -76,4 +73,3 @@ Az eszközök sorozatszáma kétféle állapotúak lehetnek:
 **Sorozatszám állapotának megtekintéséhez**
 
 Az **Apple Configurator-sorozatszámok** panelen válassza ki azt a sorozatszámot, amelynek meg szeretné nézni az állapotát, amit az **Állapot** lehetőségnél tehet meg.
-

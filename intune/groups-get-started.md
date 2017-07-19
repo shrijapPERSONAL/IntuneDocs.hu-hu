@@ -1,7 +1,7 @@
 ---
-title: "Ismerkedés a csoportokkal az Intune Azure Portal előzetesében"
-titleSuffix: Intune Azure preview
-description: "További információk az Intune Azure Portal előzetes csoportokkal kapcsolatos újdonságaival"
+title: Klasszikus Intune-csoportok az Azure Portalon
+titleSuffix: Intune on Azure
+description: "További információk az Intune Azure Portal csoportokkal kapcsolatos újdonságairól"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -13,18 +13,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6e2b75b1c85c0cd0ed98623dcd9d87b15eb082
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3e7cf02ed43507eabdf6038940058f94eb09b0fa
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Klasszikus Intune-csoportok az Azure Portalon
 
-# <a name="get-started-with-groups"></a>Csoportok – első lépések
-
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A visszajelzések alapján módosításokat vezetünk be a Microsoft Intune-beli csoportok használatában.
 Az Azure Portalról használt Intune esetén az Intune-csoportok migrálva lettek az Azure Active Directory biztonsági csoportjaiba.
@@ -46,9 +43,9 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
 ## <a name="how-to-get-started"></a>Első lépések
 
 - Az alábbi Azure AD-vel kapcsolatos cikkek segítenek tájékozódni az Azure AD-alapú biztonsági csoportokról és azok működéséről:
-    -  [Az erőforrásokhoz való hozzáférés kezelése Azure Active Directory-csoportokkal](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Csoportkezelés az Azure Active Directoryban](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Attribútumok használata speciális szabályok létrehozására](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Az erőforrásokhoz való hozzáférés kezelése Azure Active Directory-csoportokkal](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Csoportkezelés az Azure Active Directoryban](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Attribútumok használata speciális szabályok létrehozására](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 -  Fontos, hogy azok a rendszergazdák, akik csoportokat fognak létrehozni, hozzá legyenek adva az **Intune-szolgáltatásadminisztrátor** Azure AD-szerepkörhöz. Az Azure AD szolgáltatásadminisztrátori szerepkörének nincs **Csoportok kezelése** engedélye.
 -  Ha Intune-csoportjai használták a **Meghatározott tagok kizárása** beállítást, akkor el kell döntenie, hogy át tudja-e alakítani ezeket a csoportokat úgy, hogy ne legyen bennük kizárás, vagy speciális szabályokra van szüksége a céges igények miatt.
 
@@ -56,7 +53,7 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
 ## <a name="what-happened-to-intune-groups"></a>Mi történt az Intune-csoportokkal?
 A csoportok klasszikus Intune-portálról az Azure Portalon lévő Intune-ba való migrálásakor a következő szabályok érvényesek:
 
-| Intune-os csoportok|Azure AD-csoport|
+| Csoportok a klasszikus Intune-ban|Csoportok az Azure AD-ben|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statikus felhasználói csoport|Statikus Azure AD biztonsági csoport|
 |Dinamikus felhasználói csoport|Statikus Azure AD biztonsági csoportok Azure AD biztonságicsoport-hierarchiával|
@@ -64,7 +61,7 @@ A csoportok klasszikus Intune-portálról az Azure Portalon lévő Intune-ba val
 |Dinamikus eszközcsoport|Dinamikus Azure AD biztonsági csoport|
 |Belefoglalási feltételt tartalmazó csoport|Statikus Azure AD biztonsági csoport, amely tartalmazza az Intune-beli belefoglalási feltétel által érintett statikus/dinamikus tagokat|
 |Kizárási feltételt tartalmazó csoport|Nem lesz áttelepítve|
-|Beépített csoportok:<br>- **Minden felhasználó**<br>- **Nem csoportosított felhasználók**<br>- **Minden eszköz**<br>- **Nem csoportosított eszközök**<br>- **Minden számítógép**<br>- **Minden mobileszköz**<br>- **Minden MDM-mel felügyelt eszköz**<br>- **Minden EAS-sal felügyelt eszköz**|Azure AD biztonsági csoportok|
+|Beépített csoportok:<br>- **Minden felhasználó**<br>- **Nem csoportosított felhasználók**<br>- **Minden eszköz**<br>- **Nem csoportosított eszközök**<br>- **Minden számítógép**<br>- **Minden mobileszköz**<br>- **Minden MDM-mel felügyelt eszköz**<br>- **Minden EAS által felügyelt eszköz**|Azure AD biztonsági csoportok|
 
 ## <a name="group-hierarchy"></a>Csoporthierarchia
 
@@ -87,5 +84,4 @@ Az attribútumok a csoportok definiálása során felhasználható eszköztulajd
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Mi történik a korábban telepített szabályzatokkal és alkalmazásokkal?
 
-A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban a klasszikus Intune-konzol helyett az Azure portálon lehet kezelni.
-
+A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban a klasszikus Intune-konzol helyett az Azure Portalon lehet kezelni.

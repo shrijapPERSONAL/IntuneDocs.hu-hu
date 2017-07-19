@@ -1,5 +1,5 @@
 ---
-title: VPN-kapcsolatok | Microsoft Docs
+title: VPN-kapcsolatok
 description: "A VPN-profilok beállításával a szervezetében lévő felhasználókra és eszközökre alkalmazhatja a VPN-beállításokat."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN-kapcsolatok a Microsoft Intune-ban
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ Igény szerinti VPN-t iOS 8.0 vagy újabb rendszerű eszközökhöz konfigurálh
 3. Nem kötelező: megadhat egy URL-sztringmintát is (a szabály által tesztként használt URL-t). Ha az eszköz, amelyen ez a profil telepítve van, átirányítás nélkül el tudja érni ezt az URL-címet, akkor létrejön a VPN-kapcsolat a célként megadott URL-címmel. A felhasználó nem látja a teszthez használt URL-célhelyet. URL-sztringmintaként meg lehet adni például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azlőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
 4. Válassza az alábbi műveletek egyikét:
   - **Kapcsolódás**
-  - **Kapcsolat kiértékelése** - ennek háromféle beállítása van; a. **Tartományi művelet** – választhatja a **Szükség esetén kapcsolódás** vagy a **Soha ne legyen kapcsolódás** lehetőségeket
-    ; b. **Tartományok vesszővel elválasztott listája** – ezt csak akkor kell konfigurálnia, ha a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőséget választotta
-    ; c. **Kötelező URL-sztringminta** – egy HTTP vagy HTTPS (javasolt) URL-cím, például *https://vpntestprobe.contoso.com*. Ez a szabály ellenőrzi, hogy érkezett-e válasz erről a címről. Ha nem érkezett, és a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőség lett kiválasztva, a VPN aktiválódik.
+  - **Kapcsolat kiértékelése** - ennek háromféle beállítása van; a. **Tartományi művelet** –  a következő lehetőségeket választhatja: **Szükség esetén kapcsolódás** vagy **Soha ne legyen kapcsolódás** b. **Tartományok vesszővel elválasztott listája** – ezt csak akkor kell konfigurálnia, ha a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőséget választotta c. **Kötelező URL-sztringminta** – egy HTTP vagy HTTPS (javasolt) URL-cím, például *https://vpntestprobe.contoso.com*. Ez a szabály ellenőrzi, hogy érkezett-e válasz erről a címről. Ha nem érkezett, és a **Tartományi műveletek** közül a **Szükség esetén kapcsolódás** lehetőség lett kiválasztva, a VPN aktiválódik.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ A tartományspecifikus szabályok kiértékelése a minden tartományra vonatkoz
 A sikeres alkalmazást követően a felhasználók látni fogják az eszközükön a VPN-kapcsolat Ön által megadott nevét a VPN-kapcsolatok listájában.
 
 A **Házirend** munkaterület **Áttekintés** lapján található állapotösszegzés és riasztások segítségével azonosíthatók a szabályzattal kapcsolatos, figyelmet igénylő problémák. Ezen felül egy állapotösszegzés megjelenik az Irányítópult munkaterületen is.
-

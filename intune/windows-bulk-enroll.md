@@ -1,12 +1,12 @@
 ---
-title: "Windows 10-es eszközök csoportos regisztrációja | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Windows 10-es eszközök csoportos regisztrálása"
+titleSuffix: Intune on Azure
 description: "Csoportos regisztrációs csomag létrehozása a Microsoft Intune-hoz"
 keywords: 
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,15 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f8d1ff7a9a8bd804d4fe40f8aec7e7d0bf998e35
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A rendszergazda nagy számú új windowsos eszközt csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ha az Azure AD-bérlőhöz csoportosan szeretne eszközöket regisztrálni, először a Windows Configuration Designer (WCD) alkalmazással létre kell hoznia egy kiépítési csomagot. Ha a kiépítési csomagokat céges tulajdonban lévő eszközökre alkalmazza, az eszközök az Azure AD-bérlőhöz lesznek csatlakoztatva, és regisztrálódnak az Intune-felügyeletben. A csomag alkalmazása után az Azure AD-felhasználók bejelentkezhetnek az eszközökre.
 
@@ -49,21 +48,21 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
   - **Projektmappa** – A projekt mentési helye
   - **Leírás** – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designer programban](media/bulk-enroll-name.png)
 
-4.    Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Megadhat továbbá termékkulcsot arra az esetre, ha másik Windows-kiadásra vált, konfigurálhatja az eszközt közös használatra, és eltávolíthatja az előre telepített szoftvereket.
+4.  Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Lehetőség van termékkulcs megadására is, ha frissíti a Windows-kiadást, megosztott használatra konfigurálja az eszközt, és eltávolítja az előre telepített szoftvert.
 ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-device.png)
 
-5.    Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha ez nincs megadva, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
+5.  Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha ez nincs megadva, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
 ![Képernyőkép a Wi-Fi engedélyezéséről, a hálózati SSID és a hálózattípus konfigurálásáról a Windows Configuration Designerben](media/bulk-enroll-network.png)
 
-6.    Válassza az **Enroll in Azure AD** (Regisztrálás az Azure AD-ban) lehetőséget, adja meg a **Bulk Token Expiry** (Csoportos jogkivonat lejárati ideje) értékét, majd válassza a **Get Bulk Token** (Csoportos jogkivonat beszerzése) elemet.
+6.  Válassza az **Enroll in Azure AD** (Regisztrálás az Azure AD-ban) lehetőséget, adja meg a **Bulk Token Expiry** (Csoportos jogkivonat lejárati ideje) értékét, majd válassza a **Get Bulk Token** (Csoportos jogkivonat beszerzése) elemet.
 ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-account.png)
 
 7. A csoportos jogkivonat beszerzéséhez meg kell adnia az Azure AD-beli hitelesítő adatait.
 ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-cred.png)
 
-8.    Ha a **Bulk Token** (Csoportos jogkivonat) sikeresen letöltődött, kattintson a **Next** (Tovább) gombra.
+8.  Ha a **Bulk Token** (Csoportos jogkivonat) sikeresen letöltődött, kattintson a **Next** (Tovább) gombra.
 
-9. Az **Add applications** elemmel alkalmazásokat, az **Add certificates** elemmel tanúsítványokat vehet fel az eszközökre. A megadott alkalmazások és tanúsítványok települnek az eszközre.
+9. Az **Add applications** elemmel alkalmazásokat, az **Add certificates** elemmel tanúsítványokat vehet fel az eszközökre. A megadott alkalmazások és tanúsítványok telepítve lesznek az eszközön.
 
 10. Igény esetén a kiépítési csomagot jelszóval is védheti.  Kattintson a **Létrehozás** gombra.
 ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-create.png)
@@ -85,8 +84,14 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windowsos eszközök csoportos regisztrálásával kapcsolatos hibaelhárítás
 
-A kiépítés alapvetően új windowsos eszközök esetében használható. Kiépítési hibák esetén előfordulhat, hogy az eszközt gyári állapotba kell visszaállítani, vagy rendszerindító lemezképből helyreállítani. Az alábbi példák egyes kiépítési hibákhoz adnak magyarázatot:
+### <a name="provisioning-issues"></a>Kiépítéssel kapcsolatos problémák
+A kiépítés alapvetően új windowsos eszközök esetében használható. Kiépítési hibák esetén szükség lehet a gyári beállítások visszaállítására, vagy az eszköz rendszerindító lemezképből való helyreállítására. Az alábbi példák egyes kiépítési hibákhoz adnak magyarázatot:
 
 - Ha egy kiépítési csomaggal olyan Active Directory-tartományhoz vagy Azure Active Directory-bérlőhöz próbál csatlakozni, amely nem hoz létre helyi fiókot, akkor az eszköz elérhetetlenné válhat, ha a tartományhoz való csatlakozás hálózati hiba miatt meghiúsul.
-- A kiépítési csomag szkriptjei rendszerkontextusban futnak, és bármilyen módosítást képesek elvégezni az eszköz fájlrendszerén és konfigurációján. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak rendszerképből helyreállítva vagy gyári állapotba visszaállítva lehet működőképessé tenni.
+- A kiépítési csomag szkriptjei rendszerkörnyezetben futnak, és bármilyen módosítást képesek elvégezni az eszköz fájlrendszerén és konfigurációján. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy a gyári beállítások visszaállításával lehet helyreállítani.
 
+### <a name="problems-with-bulk-enrollment-and-company-portal"></a>A csoportos regisztrációval és a Céges portállal kapcsolatos problémák
+Ha egy felhasználó egy korábban már csoportosan regisztrált eszközt próbál a Céges portál segítségével regisztrálni, a rendszer figyelmezteti, hogy az eszközzel további műveleteket (beállítást vagy regisztrációt) kell végrehajtania. Az eszköz regisztrálva van, de a regisztrációt a Céges portál alkalmazás vagy webhely nem ismeri fel.
+
+### <a name="conditional-access"></a>Feltételes hozzáférés
+A feltételes hozzáférés nem érhető el a csoportos regisztrálással beléptetett Windows-eszközök számára.

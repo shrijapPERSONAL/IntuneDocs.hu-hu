@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>required metadata
-
-title: Android-eszközök regisztrálása az Intune-ban titleSuffix: "Intune az Azure-on – előzetes" description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan lehet regisztrálni az androidos eszközöket az Azure-os Intune előzetes verziójában."
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>optional metadata
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>célközönség:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: "Androidos eszközök regisztrálása az Intune-ban"
+titleSuffix: Intune on Azure
+description: "Információk az Androidos eszközök Intune-ban való regisztrálásáról."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Intune rendszergazdájaként az Intune-nal felügyelhet androidos eszközöket, beleértve a Samsung Knox Standard rendszerűeket is. Ezen túlmenően felügyelheti az [Android for Work-eszközök](#enable-enrollment-of-android-for-work-devices) munkahelyi profiljait is.
 
@@ -25,15 +31,13 @@ A Samsung KNOX Standard rendszerű eszközökön használható az Intune többfe
 
 ## <a name="prerequisite"></a>Előfeltétel
 
-A mobileszközök kezelésének előkészítéseként a **Microsoft Intune**-t kell beállítani MDM-szolgáltatóként. Erről [Az MDM-szolgáltató beállítása](mdm-authority-set.md) című cikk nyújt útmutatást. Ezt a beállítást csak egyszer, az Intune-nak a mobileszközök kezelésére való kezdeti beállítása során kell megadni; előfordulhat tehát, hogy már megadta.
+A mobileszközök kezelésének előkészítéseként a **Microsoft Intune**-t kell beállítani MDM-szolgáltatóként. Erről [Az MDM-szolgáltató beállítása](mdm-authority-set.md) című cikk nyújt útmutatást. Ezt a beállítást csak egyszer, az Intune-nak a mobileszközök kezelésére való kezdeti beállítása során kell megadni.
 
 ## <a name="set-up-android-enrollment"></a>Az androidos eszközök regisztrálásának beállítása
 
 Alapértelmezés szerint az Intune engedélyezi az Android és a Samsung Knox Standard rendszerű eszközök regisztrálását.
 
-Az androidos eszközök (vagy csak a személyes tulajdonban levők) regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](enrollment-restrictions-set.md#set-device-type-restrictions) című témakörben olvashat.
-
-Az egy felhasználó által regisztrálható eszközök számának korlátozásáról a [Regisztrált eszközök maximális számának beállítása](enrollment-restrictions-set.md#set-device-limit-restrictions) című témakörben olvashat.
+Az androidos eszközök (vagy csak a személyes tulajdonban levők) regisztrálásának letiltásáról a [Típus szerinti korlátozás beállítása](enrollment-restrictions-set.md) című témakörben olvashat.
 
 Az eszközfelügyelethez a felhasználóknak le kell tölteniük a Google Play-ből az Intune Céges portál alkalmazást, majd azt megnyitva az útmutatás alapján regisztrálniuk kell az eszközt. Miután az androidos eszközök felügyelet alá kerülnek, számos más művelet mellett [megfelelőségi szabályzatokat rendelhet hozzájuk](compliance-policy-create-android.md), vagy [alkalmazásokat felügyelhet](app-management.md).
 
@@ -47,7 +51,7 @@ Ha engedélyezni szeretné az [Android for Work támogatású](https://support.g
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
 
 2. **Android for Work-kötés konfigurálása**<br>
-   Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.
+    Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.
 
     1. Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd kattintson a **Konfigurálás** elemre a Google Play Android for Work webhelyének megnyitásához. Ez egy új lapon nyílik meg a böngészőben.
   ![Képernyőkép az Android for Work-kötés konfigurálására mutató hivatkozásról](./media/android-work-bind.png)
@@ -78,7 +82,7 @@ Hivatkozást is küldhet nekik az online regisztrációhoz: [Androidos eszköz r
 
 Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
 
-- [Információk végfelhasználóknak a Microsoft Intune használatáról](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Információk végfelhasználóknak a Microsoft Intune használatáról](end-user-educate.md)
 - [Android-eszköz használata az Intune-nal](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Az Android for Work rendszergazdai fiókja kötésének megszüntetése
@@ -88,7 +92,7 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Ha az
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work fiók leválasztása
 
 1. **Android for Work-kötés feloldása**<br>
-   Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.  Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd kattintson a **Leválasztás** elemre.
+    Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.  Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd kattintson a **Leválasztás** elemre.
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez kattintson az **Igen** gombra.

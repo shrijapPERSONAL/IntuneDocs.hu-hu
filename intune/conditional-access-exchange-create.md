@@ -1,7 +1,7 @@
 ---
 title: "Feltételes hozzáférési szabályzat létrehozása és hozzárendelése a helyszíni Exchange-hez"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: A cikk bemutatja, hogyan lehet feltételes hozzáférési szabályzatot konfigurálni a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz az Intune-nal."
+titleSuffix: Intune on Azure
+description: "A cikk bemutatja, hogyan lehet feltételes hozzáférési szabályzatot konfigurálni a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz az Intune-nal.”"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Feltételes hozzáférési szabályzat létrehozása és hozzárendelése a helyszíni Exchange-hez és a régi Dedikált Exchange Online-hoz az Azure-os Microsoft Intune-nal
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Feltételes hozzáférési szabályzat létrehozása és hozzárendelése a helyszíni Exchange-hez és a régi Dedikált Exchange Online-hoz az Azure-os Microsoft Intune előzetes verziójával
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ez a témakör végigvezeti azokon a lépéseken, amelyekkel az eszköz megfelelőségén alapuló feltételes hozzáférés konfigurálható az Exchange-hez.
 
@@ -85,7 +82,7 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 4. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
 
-5.  Válassza a **Feltételes hozzáférés** lehetőséget, majd válassza a
+5. Válassza a **Helyszíni hozzáférés** lehetőséget
 
 6. A **Helyszíni** panelen látható a feltételes hozzáférési szabályzat állapota, és az, hogy mely eszközökre van hatással.
 
@@ -93,8 +90,8 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 8. Engedélyezze a helyszíni Exchange hozzáférés-vezérlését az **Helyszíni Exchange-hozzáférés** panel **Igen** elemét választva.
 
-      > [!NOTE]
-      > Ha nem konfigurálta az Exchange Active Sync helyszíni összekötőt, ez a beállítás nem érhető el.  Először telepítenie és konfigurálnia kell ezt az összekötőt, csak azt követően aktiválhatja a feltételes hozzáférést a helyszíni Exchange-hez. További részletek [A helyszíni Intune Exchange Connector telepítése](exchange-connector-install.md) című cikkben olvashatók.
+    > [!NOTE]
+    > Ha nem konfigurálta az Exchange Active Sync helyszíni összekötőt, ez a beállítás nem érhető el.  Először telepítenie és konfigurálnia kell ezt az összekötőt, csak azt követően aktiválhatja a feltételes hozzáférést a helyszíni Exchange-hez. További részletek [A helyszíni Intune Exchange Connector telepítése](exchange-connector-install.md) című cikkben olvashatók.
 
 9. A **Hozzárendelés** beállításnál válassza a **Tartalmazott csoportok** lehetőséget.  Használja azt a biztonsági felhasználócsoportot, amelynek feltételes hozzáférést szeretne előírni. Ez megköveteli a felhasználóktól, hogy regisztrálják az eszközüket az Intune-ban, és megfeleljenek a megfelelőségi profiloknak.
 
@@ -114,12 +111,12 @@ A natív **Posta** alkalmazás a Windows 8.1-es és újabb verzióiban (az Intun
 
 15. Mentse a feltételes hozzáférési szabályzatot a **Helyszíni** panel **Mentés** gombjára kattintva.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Azure AD feltételes hozzáférési szabályzatok létrehozása az Intune az Azure-on előzetesben
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Azure AD feltételes hozzáférési szabályzatok létrehozása az Intune-ban
 
-Az Intune 1704-es kiadásától kezdve a rendszergazdák Azure AD feltételes hozzáférési szabályzatokat hozhatnak létre az Intune az Azure-on előzetesben, így nem szükséges váltani az Azure és az Intune számítási feladatok között.
+Az Intune 1704-es kiadásától kezdve a rendszergazdák Azure AD feltételes hozzáférési szabályzatokat hozhatnak létre az Intune Azure Portal webhelyen, így nem szükséges váltani az Azure és az Intune számítási feladatok között.
 
 > [!IMPORTANT]
-> Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune az Azure-on előzetesben, Azure AD Premium szintű előfizetésre van szükség.
+> Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune Azure Portal webhelyen, Azure AD Premium szintű előfizetésre van szükség.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Azure AD feltételes hozzáférési szabályzat létrehozása
 

@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Mobileszközök regisztrálásának lehetővé tétele
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Az Intune-nal történő mobileszköz-felügyelet beállításához először me
 
 ## <a name="enable-device-enrollment"></a>Eszközök regisztrálásának lehetővé tétele
 
-1. **Az Intune beállítása mobileszköz-kezelő szolgáltatóként**
-    Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Felügyelet** > **Mobileszköz-kezelés** elemet, majd kattintson a **Feladatok** csoport **Mobileszköz-kezelő szolgáltató megadása** elemére.  
+1. **Az Intune beállítása mobileszköz-kezelő szolgáltatóként** Az [Intune felügyeleti konzoljában](https://manage.microsoft.com/) válassza a **Felügyelet** > **Mobileszköz-kezelés** elemet, majd kattintson a **Feladatok** csoport **Mobileszköz-kezelő szolgáltató megadása** elemére.  
 
 2. Kattintson a Mobileszköz-kezelő szolgáltató párbeszédpanel **Igen** gombjára.
 
@@ -70,4 +66,3 @@ Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* u
 
 >[!div class="step-by-step"]
 >[&larr; **Eszközök regisztrálása**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Konfigurációt követő feladatok** &rarr;](.\post-configuration-tasks.md)  
-

@@ -1,12 +1,12 @@
 ---
 title: "Az Intune AirPlay-beállításai iOS-eszközökhöz"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Ismerje meg, hogyan segítheti az Intune az iOS-es eszközök automatikus csatlakoztatását AirPlay-kompatibilis eszközökhöz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,20 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad2f20603261ec0eac4156facd3fd23b2982f517
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7e44c1d438fc5782d696cba0b39c3c4d65492096
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-airplay-settings-for-ios-devices"></a>Az Intune AirPlay-beállításai iOS-eszközökhöz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ezekkel a beállításokkal segítheti a felügyelt iOS-es eszközök AirPlay-kompatibilis eszközökhöz (például AppleTV-khez) való csatlakoztatását.
+Ezekkel a beállításokkal segítheti a felügyelt iOS-es eszközök a hálózatán lévő AirPlay-kompatibilis eszközökhöz (például AppleTV-khez) való csatlakoztatását.
 A képesség a következőket teszi lehetővé:
 
-- **Eszköz- és jelszólista konfigurálása** – az eszközöket elláthatja az AirPlay-eszközök nevével és jelszavával, így automatikusan csatlakozhatnak hozzájuk a vételkörzetben. Ha a jelszót is megadja, a felhasználóknak nem kell beírniuk a csatlakozáskor.
+- **Eszköz- és jelszólista konfigurálása** – A felhasználók automatikusan kapcsolódhatnak a hatókörön belüli AirPlay-eszközökhöz. Az AirPlay-eszközök nevével és jelszavával hozza létre, hogy kapcsolódáskor ne kelljen megadni.
 - **Engedélyezett célhelyek konfigurálása** – Összeállíthatja az engedélyezett AirPlay-eszközök listáját (az eszközazonosítók alapján). A végfelhasználók (a felügyelt eszközökön) csak a felsorolt eszközöket látják és érik el.
 
 ## <a name="get-started"></a>Első lépések
@@ -48,11 +45,14 @@ A képesség a következőket teszi lehetővé:
 
 ## <a name="configure-allowed-destinations"></a>Engedélyezett célhelyek konfigurálása
 
-1. Az **Allowed destinations (supervised only)* (Engedélyezett célhelyek (csak felügyelt eszközökhöz)) panelen adja meg az AirPlay-eszköz **Device ID** (Eszközazonosító) értékét, például: 52:46:CD:51:83:4C.
-2. Az eszközazonosító megadása után kattintson a **Hozzáadás** elemre. Az azonosító megjelenik az **Eszközazonosító** listában.
+1. Az **Allowed destinations (supervised only)** (Engedélyezett célhelyek (csak felügyelt eszközökhöz)) panelen adja meg az AirPlay-eszköz **Device ID** (Eszközazonosító) értékét, például: 52:46:CD:51:83:4C.
+2. Az eszközazonosító megadása után kattintson a **Hozzáadás** elemre. Az azonosító megjelenik a **Device ID** (Eszközazonosító) listában.
 3. Folytassa az eszközök hozzáadását. Ha elkészült, válassza az **OK** elemet.
 
 Az eszközöket és jelszavakat, illetve az engedélyezett célhelyeket vesszővel tagolt szövegfájlból (csv-ből) is importálhatja.
 
 
+## <a name="next-steps"></a>További lépések
+
+Most hozzárendelheti az eszközprofilt a kiválasztott csoportokhoz. A részletekért lásd: [Eszközprofilok hozzárendelése](device-profile-assign.md).
 

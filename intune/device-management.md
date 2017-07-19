@@ -1,32 +1,29 @@
 ---
 title: "Eszközök kezelése az Intune-nal"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Útmutató az Intune-nal felügyelt eszközök megjelenítéséhez és az eszközökön végrehajtható különféle műveletekhez."
+titleSuffix: Intune on Azure
+description: "Útmutató az Intune-nal felügyelt eszközök megjelenítéséhez és az eszközökön végrehajtható különféle műveletekhez.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 
+ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fdb86184875d7082659d608b445b41b2ad9aa9e
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/06/2017
 ---
-
 # <a name="what-is-microsoft-intune-device-management"></a>A Microsoft Intune-eszközfelügyelet ismertetése
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről, és lehetővé teszi, hogy távolról hajtson végre műveleteket rajtuk. A munkafolyamat elérése:
 
@@ -34,71 +31,46 @@ Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 
-Ezután válassza az alábbiak egyikét:
+Ekkor az alábbi műveletekre van lehetősége:
 
-- **Áttekintés** – Tájékoztatást nyújt a regisztrált eszközökről és az egyes eszközökön futó operációs rendszerekről.
-- **Kezelés** – A **Minden eszköz** lehetőséget választva megjelenítheti az összes kezelt eszköz listáját.
-    Ha kijelöl egy eszközt a listán, megnyílik az <*eszköznév*> **Áttekintés** panel, amelyen az alábbiak közül választhat:
-    - **Áttekintés** – Általános információkat nyújt az eszközről, köztük sok más mellett megadja az eszköz nevét, tulajdonosát, hogy BYOD-eszköz-e, és mikor jelentkezett be legutóbb.
+- [Az eszközleltár megtekintése](device-inventory.md)
+- Távoli eszközműveletek végrehajtása:
+    - [Céges adatok eltávolítása](device-company-data-remove.md) 
+    - [Gyári beállítások visszaállítása](device-factory-reset.md)
+    - [Távoli zárolás](device-remote-lock.md)
+    - [Új PIN-kód](device-passcode-reset.md)
+    - [Az aktiválási zár megkerülése](device-activation-lock-bypass.md)
+    - [Újrakezdés](device-fresh-start.md)
+    - [Elveszett eszköz mód](device-lost-mode.md)
+    - [Eszköz megkeresése](device-locate.md)
+    - [Újraindítás](device-restart.md)
+    - [Windows 10-es PIN-kód alaphelyzetbe állítása](device-windows-pin-reset.md)
+    - [Távirányítás Androidhoz](device-profile-android-teamviewer.md)
 
-    - **Hardver** – Részletes információkat jelenít meg az eszközről, többek között a szabad tárhelyet, a modell és a gyártó nevét.
-    ![Felügyelt eszköz hardverleltára](./media/hardware-inventory.png)
-    - **Észlelt alkalmazások** – Felsorolja azokat a telepített alkalmazásokat, amelyeket az Intune az eszközön talált.
-    ![Észlelt alkalmazások csomópont](./media/detected-applications.png)
-- **Figyelés** – Az **Eszközműveletek** lehetőséget választva megjeleníthetők az eszközön végrehajtott műveletek és jelenlegi állapotuk.
+
+## <a name="support-for-each-device-action"></a>Az egyes eszközműveletek támogatása
+
+Használja a következő táblázatot az egyes műveletek által támogatott eszközplatformok megértéséhez.
+
+|||||||
+|-|-|-|-|-|-|
+|Eszközművelet|Windows|Windows Phone|iOS|macOS|Android|
+|**Céges adatok eltávolítása**|Igen|Igen|Igen|Igen|Igen|
+|**Gyári beállítások visszaállítása**|Windows 8.1 és újabb (nem EAS-ban kezelt eszközök)|Igen|Igen|Nem|Az Android for Work nem támogatott|
+|**Törlés**|Igen|Igen|Igen|Igen|Igen|
+|**Távoli zárolás**|Nem|Windows Phone 8.1 és újabb verziók|Igen|Nem|Igen|
+|**Új PIN-kód**|Nem|A Windows Phone 8.1-es verziótól a Windows 10 alkotói frissítés nem Azure AD-hoz csatlakoztatott verziójáig, Windows 10 alkotói frissítés és újabb – mind|Igen|Nem|Az Android 7-nél régebbi, az Android for Work nem támogatott|
+|**Új jelszó** (Windows 10-es eszközökhöz)|Nem|Windows 10 alkotói frissítés és újabb (Azure AD-hoz csatlakozott)|Nem|Nem|Az Android for Work nem támogatott|
+|**Az aktiválási zár megkerülése**|Nem|Nem|Vállalati tulajdonú eszközök|Nem|Nem|
+|**Elveszett eszköz mód**|Nem|Nem|iOS 9.3 és újabb, felügyelt és vállalati tulajdonú|Nem|Nem|
+|**Eszköz megkeresése**|Nem|Nem|Elveszett módú iOS 9.3 és újabb, felügyelt és vállalati tulajdonú|Nem|Nem|
+|**Aktuális felhasználó kijelentkeztetése**|Nem|Nem|iOS 9.3 és újabb (csak megosztott iPad eszközök)|Nem|Nem|
+|**Újraindítás**|Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|Nem|Nem|Nem|
+|**Újrakezdés**|Windows 10 alkotói frissítés és újabb|Nem|Nem|Nem|Nem|
+|**Új távsegítség-munkamenet**|Nem|Nem|Nem|Nem|Igen|
+|**Felhasználó eltávolítása**|Nem|Nem|iOS 9.3 és újabb (csak megosztott iPad eszközök)|Nem|Nem|
+
+## <a name="next-steps"></a>További lépések
+
+- Válassza az **Eszközműveletek** lehetőséget az Ön által kezelt eszközökön végzett műveletek állapotának megtekintéséhez. 
 ![Eszközműveletek figyelése](./media/monitor-device-actions.png)
-- **Súgó és támogatás** – a hibaelhárítási és a támogatási dokumentációra mutató hivatkozásokat jeleníti meg.
-
-## <a name="available-device-actions"></a>Elérhető eszközműveletek
-
-Ezenkívül a következő műveletek is végrehajthatók távolról az eszközön (nem minden eszközplatform támogatja az összes műveletet):
-
-### <a name="remove-company-data"></a>**Céges adatok eltávolítása**
-Csak az Intune által kezelt céges adatokat távolítja el. Személyes adatokat nem távolít el az eszközről. Az eszköz a továbbiakban nem áll az Intune felügyelete alatt, és nem fér hozzá a vállalati erőforrásokhoz (nem támogatott az Azure Active Directory szolgáltatáshoz csatlakoztatott Windows-eszközökön).
-
-### <a name="factory-reset"></a>**Gyári beállítások visszaállítása**
-Visszaállítja az eszköz alapbeállításait. Az eszközt a továbbiakban nem kezeli az Intune, és a vállalati és személyes adatok is törlődnek róla. Ez a művelet nem vonható vissza.
-
-### <a name="remote-lock"></a>**Távoli zárolás**
-Zárolja az eszközt. Az eszköz zárolását a PIN-kódjával vagy jelszavával kell feloldania a tulajdonosnak. Csak olyan eszköz zárolható távolról, amelyhez PIN-kód vagy jelszó van megadva.
-
-### <a name="reset-passcode"></a>**Új PIN-kód**
-Új PIN-kódot generál az eszközhöz. A kód az <*eszköznév*> **Áttekintés** panelen jelenik meg.
-
-### <a name="bypass-activation-lock"></a>**Az aktiválási zár megkerülése**
-A felhasználó Apple ID azonosítója és jelszava nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz ismét bekapcsolja az aktiválási zárat a Find My iPhone alkalmazás elindulásakor. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
-
-### <a name="fresh-start"></a>**Újrakezdés**
-
-Eltávolít minden alkalmazást az alkotói frissítéssel rendelkező Windows 10-es számítógépről, majd automatikusan a Windows legújabb verziójára frissíti az eszközt.
-Így egyszerűbben eltávolíthatók az új gépeken gyakran előtelepítve megtalálható számítógépgyártói (OEM) alkalmazások. A konfigurációval meg lehet adni, hogy a művelet a felhasználói adatokat is eltávolítsa-e. Ebben az esetben az alkalmazások és a beállítások el lesznek távolítva, de a felhasználó kezdőmappájának tartalma megmarad.
-
-
-### <a name="lost-mode"></a>**Elveszett eszköz mód**
-Ha az iOS-eszköz elveszik vagy ellopják, lehetőség van az Elveszett eszköz mód aktiválására. Ilyenkor megadható egy üzenet és egy telefonszám, amely megjelenik az eszköz zárolási képernyőjén. Tegye a következőt:
-1.    Az iOS-eszköz tulajdonságainak panelén válassza az **Egyebek** > **Elveszett eszköz mód** elemet.
-2.    Az **Elveszett eszköz mód** panelen engedélyezze a módot, majd írja be a megjelenítendő üzenetet, és szükség esetén adjon meg egy kapcsolattartói telefonszámot is.
-3.    Kattintson az **OK**gombra.
-Az Elveszett eszköz mód engedélyezésével teljesen letiltja az eszköz használatát. A végfelhasználó az Elveszett eszköz mód kikapcsolásáig nem tud hozzáférni az eszközhöz. Ha az Elveszett eszköz mód engedélyezve van, az **Eszköz megkeresése** művelet használatával derítheti ki, hogy merre található az eszköz.
-Az Elveszett mód csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható.
-
-### <a name="locate-device"></a>**Eszköz megkeresése**
-Ennek a távoli műveletnek a használatával jelenítheti meg az elveszett vagy ellopott iOS-eszköz helyét a térképen. A funkció csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható. A művelet használata előtt az eszközt Elveszett eszköz módba kell állítani.
-1.    Az iOS-eszköz tulajdonságainak panelén válassza az **Egyebek** > **Eszköz megkeresése** elemet.
-2.    Miután a rendszer megtalálta az eszközt, megjeleníti annak helyét az **Eszköz megkeresése** panelen.
-    ![Eszköz megkeresése panel](./media/locate-device.png)
-
->[!NOTE]
->Adatvédelmi okokból korlátozva van, hogy mennyire nagyíthatja a térképet.
-
-### <a name="restart"></a>**Újraindítás**
-Kiváltja az eszköz újraindulását. Az eszköz tulajdonosa nem kap automatikus értesítést az újraindításról, ezért a munkája elveszhet.
-
-
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Az Elveszett eszköz módhoz és az eszközkeresési műveletekhez tartozó biztonsági és adatvédelmi tudnivalók
-- A művelet elindításáig a rendszer semmilyen információt nem küld az Intune-nak az eszköz helyéről.
-- Az eszközkeresési művelet használatakor a rendszer az eszköz szélességi és hosszúsági koordinátáit küldi el az Intune-nak, és ezeket az adatokat jeleníti meg az Azure Portalon.
-- A rendszer 24 óráig tárolja az adatokat, majd törli azokat. A helyadatokat manuálisan nem lehet eltávolítani.
-- A helyadatok tároláskor és továbbításkor egyaránt titkosítva vannak.
-- Az Elveszett eszköz mód konfigurálásakor ajánlott feltüntetni a zárolási képernyőn megjelenő üzenetben, hogy az eszköz helye meghatározható.
-

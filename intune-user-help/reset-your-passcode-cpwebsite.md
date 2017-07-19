@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Az eszköz jelszavának alaphelyzetbe állítása a Vállalati portál webhelyén
 
 Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, a [Céges portál webhelyen](http://portal.manage.microsoft.com) kérhet újat. A Vállalati portál webhelyét az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a Vállalati portál alkalmazásban elvégezhető legtöbb feladat végrehajtására használhatja.
 
 > [!NOTE]
-> Előfordulhat, hogy a **Jelszó alaphelyzetbe állítása** gomb nem jelenik meg a Vállalati portál webhelyén. Ebben az esetben forduljon a rendszergazdához támogatásért a Vállalati portál webhelyén.
+> Regisztrált céges eszköz használata esetén előfordulhat, hogy a Jelszó alaphelyzetbe állítása gomb nem jelenik meg a Céges portál webhelyén. Ha ezt tapasztalja, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe a jelszót.
 
 A jelszó alaphelyzetbe állítása:
 
-1.    A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1.  A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/intune/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiknek a jelszavát alaphelyzetbe kívánja állítani.
 
   ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Válassza a **Jelszó alaphelyzetbe állítása** lehetőséget.
+3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Válassza a **Jelszó alaphelyzetbe állítása** lehetőséget.
 
     ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,7 +51,10 @@ A jelszó alaphelyzetbe állítása:
 
   A különböző eszközök eltérő hozzáférési kódokat használnak.
 
-  **Android:** Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre.
+  **Android:** Eltávolítja a meglévő jelszót, és egy betűkből és számokból álló ideiglenes jelszót hoz létre. 
+  
+  > [!NOTE]
+  > Android 7.0-s és újabb verziók esetén az eszköz jelszava nem állítható alaphelyzetbe. Ha elfelejti a jelszót, ezeket az eszközöket a gyári beállításokra kell visszaállítani.
 
   **iOS:** Eltávolítja a meglévő jelszót, és nem hoz létre ideiglenes jelszót. Ha a Touch ID ujjlenyomat-olvasót használja az eszköz zárolásának feloldásához vagy vásárláshoz, azt újra be kell állítania.
 
@@ -70,4 +69,3 @@ A jelszó alaphelyzetbe állítása:
 Ha szeretne egy megerősítő értesítést megjeleníteni arról, hogy a jelszó átállítása sikeresen megtörtént, kattintson a Vállalati portál webhelyének felső sarkában található értesítésjelzőre.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-
