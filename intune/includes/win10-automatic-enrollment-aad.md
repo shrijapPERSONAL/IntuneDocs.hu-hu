@@ -34,6 +34,9 @@ Az automatikus regisztrálással a felhasználók úgy is regisztrálhatják Win
     - **MDM-felderítési URL-cím**
     - **MDM megfelelőségi URL-címe**
 
+    > [!IMPORTANT]
+    > Ha egy MDM-regisztrációt és MAM-et egyaránt engedélyező csoport tagja kívánja személyes eszközét a munkahelyhez csatlakoztatni, a rendszer csak a MAM használatát engedélyezi. 
+
 6. Válassza a **Mentés** lehetőséget.
 
 Alapértelmezés szerint a kétfaktoros hitelesítés nincs engedélyezve a szolgáltatáshoz. Ezzel együtt azonban az eszköz regisztrálásához ajánlatos kétfaktoros hitelesítést használni. Mielőtt kötelezővé tenné a kétfaktoros hitelesítést a szolgáltatáshoz, konfigurálnia kell egy kétfaktoros hitelesítési szolgáltatót az Azure Active Directoryban, a felhasználói fiókokat pedig többtényezős hitelesítéshez kell konfigurálnia. További információt az [Azure Multi-Factor Authentication-kiszolgáló – első lépések](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud) című témakörben talál.

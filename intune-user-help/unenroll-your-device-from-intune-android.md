@@ -5,51 +5,37 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Android-eszköz regisztrációjának törlése az Intune-ból
 
 Ha törli androidos eszköze regisztrációját az Intune-ból, az eszköz többé nem fog tudni hozzáférni a munkahelyi erőforrásokhoz.  A törlés további következményeiről további információért lásd: [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
-Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szeretné távolítani a Vállalati portál alkalmazást, kövesse ezeket a lépéseket, vagy tekintse meg ezt a videót:
+Ha az eszköz regisztrációját törölni szeretné az Intune-ból, és el szeretné távolítani a Vállalati portál alkalmazást, kövesse az alábbi lépéseket:
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. A Céges portál alkalmazás jobb felső sarkában található három pontra kattintva nyissa meg a **műveletmenüt**. 
 
-1. Nyissa meg a **Settings** (Beállítások) alkalmazást, nyissa meg a **Device administrators** (Eszközrendszergazdák) lapot, és kapcsolja ki a **Company Portal** (Céges portál) beállítást. Az eszköztől függően előfordulhat, hogy a **Device administrators** beállításnak más a neve vagy a helye a beállításlistában.
+  ![Az androidos Céges portál alkalmazás képe, a jobb felső sarokban a megnyitott műveletmenüvel. A „Saját profil” és a „beállítások” lehetőség alatt harmadikként megjelenik az új „céges portál eltávolítása” lehetőség is, alatta a „használati feltételek”, a „súgó és visszajelzés” és végül a „névjegy”.](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  Bejelentkezés a Vállalati portál alkalmazásba.
+2. Koppintson a **Céges portál eltávolítása** elemre.
 
-3.  Koppintson az **Eszközeim** elemre, és válassza ki azt az eszközt, amelynek a regisztrációját törölni szeretné.
+3. Egy üzenet jelenik meg, amely arra kéri, erősítse meg, hogy valóban el akarja-e távolítani a Céges portált. Az üzenet röviden tájékoztatja arról, mi történik az eszköz regisztrációjának törlése után. Ha elolvasta az üzenetet, az eltávolításhoz koppintson az **OK** gombra. 
 
-    ![Válassza ki azt az eszközt, amelynek regisztrációját törölni szeretné.](./media/andr-1-my-devices-choose.png)
-
-4.  Koppintson a kuka ikonra.
-
-    ![Koppintson a kuka ikonra.](./media/andr-2-tap-trashcan.png)
-
-5.  A figyelmeztetési oldalon koppintson az **OK** gombra az eszköz regisztrációjának törléséhez.
-
-    ![Távolítsa el az eszközt.](./media/andr-3-warning-about-remove.png)
+  ![A megerősítést kérő párbeszédpanel képe, amely az új „céges portál eltávolítása” lehetőség kiválasztása után jelenik meg. A párbeszédpanel tájékoztatja a felhasználót, hogy „a céges portál eltávolítása után az eszközt nem fogja felügyelni a rendszergazda, és megszűnhet a hozzáférés a céges adatokhoz, a céges alkalmazásokhoz és a céges e-mailekhez.” Megkérdezi a felhasználót, biztosan el akarja-e távolítani a Céges portál alkalmazást, mely esetben az „Igen” lehetőséget választhatja.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
-

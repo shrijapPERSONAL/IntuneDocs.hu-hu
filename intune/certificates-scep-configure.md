@@ -1,12 +1,12 @@
 ---
 title: "SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Útmutató az infrastruktúra konfigurálásához és az Intune SCEP-tanúsítványprofiljainak ezt követő létrehozásához és hozzárendeléséhez."
+titleSuffix: Intune on Azure
+description: "A cikk tájékoztatást nyújt az infrastruktúra konfigurálásáról és az Intune SCEP-tanúsítványprofiljainak ezt követő létrehozásáról és hozzárendeléséről."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ez a témakör bemutatja az infrastruktúra konfigurálását, majd az Egyszerű tanúsítványbeiktatási protokoll (SCEP) tanúsítványprofiljainak ezt követő létrehozását és hozzárendelését az Intune-nal.
 
@@ -84,9 +83,13 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 
 **5. lépés**: Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
 
+> [!NOTE]
+> Egy ismert probléma miatt a következő eljárást követve végezze a tanúsítvány-összekötő letöltését, telepítését és konfigurálását: [SCEP-tanúsítványinfrastruktúra konfigurálása -> Az infrastruktúra konfigurálása -> 5. feladat](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>1. lépés – NDES szolgáltatásfiók létrehozása
 
-Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon róla, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
+Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon arról, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2. lépés – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 A feladat tartalma:
@@ -100,6 +103,9 @@ A feladat tartalma:
 1.  Jelentkezzen be vállalati rendszergazdaként.
 
 2.  A vállalati hitelesítésszolgáltatónál a Tanúsítványsablonok beépülő modullal hozzon létre egy új egyéni sablont (vagy másoljon és szerkesszen egy meglévő sablont, például a Felhasználó sablont) az NDES szolgáltatással való használatra.
+
+    >[!NOTE]
+    > Az NDES tanúsítványsablonnak v2 tanúsítványsablonon kell alapulnia (Windows 2003-kompatibilitással).
 
     A sablonnak az alábbi beállításokkal kell rendelkeznie:
 
@@ -246,7 +252,7 @@ A feladat tartalma:
 
     ![NDES teszt](.\media\SCEP_NDES_URL.png)
 
-    Ha **503 Nem érhető el a szolgáltatás** hibát kap, tekintse meg az eseménymegjelenítőt. Valószínű, hogy az alkalmazáskészlet azért állt le, mert az NDES-felhasználó nem rendelkezik valamelyik szükséges joggal. A szükséges jogokat az 1. feladat ismerteti.
+    Ha **503 – A szolgáltatás nem érhető el** hibát kap, tekintse meg az eseménymegjelenítőt. Valószínű, hogy az alkalmazáskészlet azért állt le, mert az NDES-felhasználó nem rendelkezik valamelyik szükséges joggal. A szükséges jogokat az 1. feladat ismerteti.
 
 ##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>A tanúsítványok NDES-kiszolgálón való telepítéséhez és kötéséhez
 
@@ -304,19 +310,19 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezése
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét.
 5.  Válassza az **Tanúsítvány-összekötő engedélyezése** lehetőséget.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
 
 > [!NOTE]
-> Egy ismert probléma miatt a következő eljárást követve végezze a tanúsítvány-összekötő letöltését, telepítését és konfigurálását: [SCEP-tanúsítványinfrastruktúra konfigurálása -> Az infrastruktúra konfigurálása -> 5. feladat](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Egy ismert probléma miatt a következő eljárást követve végezze a tanúsítvány-összekötő letöltését, telepítését és konfigurálását: [SCEP-tanúsítványinfrastruktúra konfigurálása -> Az infrastruktúra konfigurálása -> 5. feladat](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét.
 5. Válassza **A tanúsítvány-összekötő letöltése** lehetőséget.
 6.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**) egy Windows Server 2012 R2-kiszolgálón. A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. (A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.)
@@ -377,6 +383,8 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
         - **Köznapi név**
         - **Köznapi név (e-mail is)**
         - **Köznapi név mint e-mail cím**
+        - **Egyéni** – Ha erre a lehetőségre kattint, egy újabb legördülő mező jelenik meg. Ezt a mezőt egyéni tulajdonosnév-formátumok megadásához használhatja. Az egyéni formátum két változót támogat: **Egyszerű név (CN)** és **E-mail (E)**. Egy vagy több változó és statikus sztring együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Ebben a példában egy olyan egyéni névformátumot hozott létre, amely a CN és az E változón kívül sztringeket használ a szervezeti egység (OU), a szervezet (O), a hely (L), az állam (ST) és az ország (C) értékeként. [Ez a témakör](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) a **CertStrToName** függvényt és annak támogatott sztringjeit ismerteti.
+        
     - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt fogja hitelesítésre használni egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania. 
     - **Kulcshasználat** – Adja meg a tanúsítvány kulcshasználati beállításait. Az alábbi lehetőségek közül választhat: 
         - **Kulcstitkosítás**: Csak akkor engedélyezi a kulcscserét, ha a kulcs titkosítva van. 
@@ -392,11 +400,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 
->[!Note]
-> Csak iOS-eszközök esetében: Ha egyéni névformátumot kíván megadni, válassza a Tulajdonosnév formátuma legördülő lista Egyéni elemét.
-> Az egyéni formátum jelenleg két változót támogat: **Egyszerű név (CN)** és **E-mail (E)**. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Ebben a példában egy olyan egyéni névformátumot hozott létre, amely a CN és az E változón kívül sztringeket használ a szervezeti egység (OU), a szervezet (O), a hely (L), az állam (ST) és az ország (C) értékeként. [Ez a témakör](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) bemutatja a **CertStrToName** függvényt és az általa támogatott sztringeket.
-
-## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil hozzárendelése
+## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil eszközökhöz rendelése
 
 Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a következőket:
 
@@ -407,5 +411,4 @@ Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a kö
 - Jóllehet az egyes profilokat külön-külön rendeli hozzá, a legfelső szintű hitelesítésszolgáltató és az SCEP- vagy PKCS-profil hozzárendelésére is szükség van. Ellenkező esetben az SCEP- vagy PKCS-tanúsítványszabályzat hibát fog jelezni.
 
 Az profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikk nyújt tájékoztatást.
-
 

@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work-eszközök regisztrálásának engedélyezése
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,7 +30,7 @@ Az Android for Work-eszközök felügyeletének engedélyezéséhez létre kell 
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment), valamint beállítja a mobileszköz-kezelést.
 
 2. **Android for Work-kötés konfigurálása**<br>
-    Intune-rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd a **Konfigurálás** gombra kattintva nyissa meg a Google Play Android for Work-webhelyét. Ez egy új lapon nyílik meg a böngészőben.
+    Intune-rendszergazdaként nyissa meg a [Microsoft Intune felügyeleti konzolját](https://manage.microsoft.com), lépjen a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Android for Work** felületre, majd a **Konfigurálás** elemre kattintva nyissa meg a Google Play Android for Work webhelyét. Ez egy új lapon nyílik meg a böngészőben.
 
 3. **Bejelentkezés a Google-fiókba**<br>
    A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot használja a szervezet összes rendszergazdája az alkalmazások felügyeletére és közzétételére a Play for Work konzolon.
@@ -64,4 +61,3 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Ha az
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez kattintson az **Igen** gombra.
-

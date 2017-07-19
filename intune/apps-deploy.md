@@ -1,12 +1,12 @@
 ---
-title: "Alkalmazások hozzárendelése csoportokhoz | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune az Azure-on – előzetes: Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes hozzárendelni felhasználók vagy eszközök csoportjaihoz."
+title: "Alkalmazások hozzárendelése csoportokhoz"
+titleSuffix: Intune on Azure
+description: "Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes hozzárendelni azt felhasználók vagy eszközök csoportjaihoz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes eljuttatni felhasználókhoz és eszközökre. Ezt hozzárendeléssel teheti meg.
+Miután felvett egy alkalmazást az Intune-ba, felhasználókhoz és eszközökhöz rendelheti hozzá.
 
 Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy azokat az Intune kezeli-e vagy sem. Az alábbi táblázat segítségével megismerheti az alkalmazások felhasználókhoz és eszközökhöz való hozzárendelésének különböző lehetőségeit:
 
@@ -46,33 +44,6 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 > [!NOTE]
 > Jelenleg (mind üzletági, mind pedig áruházbeli) iOS- és Android-alkalmazásokat rendelhet hozzá azokhoz az eszközökhöz, melyek nincsenek regisztrálva az Intune-ban.
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Változások az alkalmazások csoportokhoz való hozzárendelésében az Intune előzetesben
-
-Az Intune az Azure-on előzetesében az alkalmazások hozzárendeléséhez már nem használatosak az Intune-csoportok. Helyettük Azure Active Directory (Azure AD) biztonsági csoportokat kell használni. Ezért érdemes megismerkednie az alkalmazás-hozzárendeléseket érintő bizonyos változásokkal, különösen ha Intune-gyermekcsoportokhoz rendelt hozzá alkalmazásokat.
-A legfontosabb változás, hogy az Azure AD-ben nem alkalmazzuk a gyermekcsoport fogalmát. Ezzel együtt bizonyos csoportok rendelkezhetnek ugyanazokkal a tagokkal. Ilyen esetekben a klasszikus Intune és az Intune az Azure-on viselkedése eltér egymástól. Ez az alábbi táblázatban látható:
-
-||||||
-|-|-|-|-|-|
-|**Klasszikus Intune (a bérlő áttelepítése előtt)**|-|**Intune az Azure-on (a bérlő áttelepítése után)**|-|**További információ**|
-|**Hozzárendelési szándék a szülőcsoportban**|**Hozzárendelési szándék a gyermekcsoportban**|**Az előző szülő- és gyermekcsoport tagjai számára érvényesülő hozzárendelési szándék**|**A szülőcsoport tagjai számára érvényesülő hozzárendelési szándék**|-|
-|Elérhető|Kötelező|Kötelező és elérhető|Elérhető|A „kötelező és elérhető” azt jelenti, hogy a kötelezőként hozzárendelt alkalmazások a Vállalati portál alkalmazásban is megjelennek.
-|Nem alkalmazható|Elérhető|Nem alkalmazható|Nem alkalmazható|Megkerülő megoldás: távolítsa el a „Nem alkalmazható” hozzárendelési szándékmegjelölést az Intune szülőcsoportból.
-|Kötelező|Elérhető|Kötelező és elérhető|Kötelező|-|
-|Kötelező és elérhető<sup>1</sup>|Elérhető|Kötelező és elérhető|Kötelező és elérhető|-|
-|Kötelező|Nem alkalmazható|Kötelező|Kötelező|-|
-|Kötelező és elérhető|Nem alkalmazható|Kötelező és elérhető|Kötelező és elérhető|-|
-|Kötelező|Eltávolítás|Kötelező|Kötelező|-|
-|Kötelező és elérhető|Eltávolítás|Kötelező és elérhető|Kötelező és elérhető|-|
-<sup>1</sup> Csak áruházból származó felügyelt iOS-alkalmazás esetén. Ha az alkalmazás kötelezőként lett hozzáadva az Intune-hoz, akkor arra automatikusan mind a Kötelező, mind az Elérhető szándék fog vonatkozni.
-
-A hozzárendelési ütközések elkerülése érdekében a következőket teheti:
-
-1.    Ha már hozzárendelt alkalmazásokat egymáshoz kapcsolódó Intune szülő- és gyermekcsoportokhoz, ezeket a hozzárendeléseket még a bérlő áttelepítése előtt érdemes eltávolítani.
-2.    Távolítsa el a gyermekcsoportokat a szülőcsoportokból, majd hozzon létre egy új csoportot a korábbi gyermekcsoport tagjaiból. Ezt követően ebben a csoportban létrehozhat egy új alkalmazás-hozzárendelést.
-Megjegyzés: Ha a korábbi szülőcsoport „Minden felhasználó” volt, akkor olyan új dinamikus csoportot kell létrehoznia, amely nem tartalmazza a gyermekcsoport tagjait.
-A felhasználókat és eszközcsoportokat érintő csoportmódosításokat az [Azure Portalon](https://portal.azure.com/) kell elvégezni. A [klasszikus Azure-portál](https://manage.windowsazure.com/) csak a felhasználói csoportok módosítását teszi lehetővé.
-
-
 ## <a name="how-to-assign-an-app"></a>Alkalmazás hozzárendelése
 
 1. Jelentkezzen be az Azure Portal webhelyre.
@@ -87,10 +58,53 @@ A felhasználókat és eszközcsoportokat érintő csoportmódosításokat az [A
     - **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon.
     - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
     - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
-    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. A fenti táblázatban találhat segítséget.
+    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban.
 6. Ha elkészült, válassza a **Mentés** elemet.
 
-Az alkalmazás hozzá lett rendelve a kiválasztott csoporthoz.
+Ezzel hozzárendelte az alkalmazást a kiválasztott csoporthoz.
+
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Alkalmazások hozzárendelési ütközéseinek feloldása
+
+Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik hozzá különböző csoportokhoz. Ilyenkor az eredményként kapott hozzárendelési szándék megértéséhez használja az alábbi táblázatot.
+
+||||
+|-|-|-|
+|1. csoport hozzárendelési szándéka|2. csoport hozzárendelési szándéka|Eredmény|
+|A felhasználó kötelező|A felhasználó elérhető|Kötelező és elérhető|
+|A felhasználó kötelező|A felhasználható nem érhető el|Kötelező|
+|A felhasználó kötelező|Felhasználó eltávolítása|Kötelező|
+|A felhasználó elérhető|A felhasználható nem érhető el|Nem érhető el|
+|A felhasználó elérhető|Felhasználó eltávolítása|Eltávolítás|
+|A felhasználható nem érhető el|Felhasználó eltávolítása|Eltávolítás
+|A felhasználó kötelező|Az eszköz kötelező|Mind a két szándék létezik, az átjáró Kötelező szándékként kezeli 
+|A felhasználó kötelező|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel 
+|A felhasználó elérhető|Az eszköz kötelező|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel (Kötelező és Elérhető)
+|A felhasználó elérhető|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró az Elérhető szándékot oldja fel.<br>Az alkalmazás megjelenik a Céges portálon.<br>Korábban (korábbi szándékkal kötelezőként) telepített alkalmazás esetén a rendszer eltávolítja az alkalmazást.<br>Ha viszont a felhasználó a Céges portálról kattint a telepítésre, az alkalmazás telepítve lesz, és a rendszer az eltávolítás szándékát veti el.|
+|A felhasználható nem érhető el|Az eszköz kötelező|Kötelező|
+|A felhasználható nem érhető el|Eszköz eltávolítása|Eltávolítás|
+|Felhasználó eltávolítása|Az eszköz kötelező|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel|
+|Felhasználó eltávolítása|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró az Eltávolítást oldja fel|
+|Az eszköz kötelező|Eszköz eltávolítása|Kötelező|
+|A felhasználó kötelező és elérhető|A felhasználó elérhető|Kötelező és elérhető|
+|A felhasználó kötelező és elérhető|Felhasználó eltávolítása|Kötelező és elérhető|
+|A felhasználó kötelező és elérhető|A felhasználható nem érhető el|Kötelező és elérhető|
+|A felhasználó kötelező és elérhető|Az eszköz kötelező|Mind a két szándék, a Kötelező és az Elérhető egyaránt létezik
+|A felhasználó kötelező és elérhető|Az eszköz nem érhető el|Kötelező és elérhető|
+|A felhasználó kötelező és elérhető|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel. Kötelező + Elérhető
+|A felhasználható nem érhető el|Az eszköz nem érhető el|Nem érhető el|
+|A felhasználó elérhető|Az eszköz nem érhető el|Elérhető|
+|A felhasználó kötelező|Az eszköz nem érhető el|Kötelező|
+|A felhasználó regisztráció nélkül elérhető|A felhasználó kötelező és elérhető|Kötelező és elérhető
+|A felhasználó regisztráció nélkül elérhető|A felhasználó kötelező|Kötelező
+|A felhasználó regisztráció nélkül elérhető|A felhasználó nem érhető el|Nem érhető el
+|A felhasználó regisztráció nélkül elérhető|A felhasználó elérhető|Elérhető|
+|A felhasználó regisztráció nélkül elérhető|Az eszköz kötelező|Kötelező és Regisztráció nélkül elérhető|
+|A felhasználó regisztráció nélkül elérhető|Az eszköz nem érhető el|Regisztráció nélkül elérhető|
+|A felhasználó regisztráció nélkül elérhető|Eszköz eltávolítása|Eltávolítás és Regisztráció nélkül elérhető.<br>Ha a felhasználó nem a Céges portálról telepítette az alkalmazást, akkor a rendszer az eltávolítást veszi figyelembe.<br>Ha a felhasználó a Céges portálról telepítette az alkalmazást, akkor a telepítés szándék felülírja az eltávolítást.|
+
+>[!NOTE]
+>Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat az Intune-ban kötelezőként rendeli hozzá, akkor a Kötelező és az Elérhető szándék automatikusan egyaránt fog vonatkozni rájuk.
+
+## <a name="next-steps"></a>További lépések
 
 Az alkalmazás-hozzárendelések figyeléséhez a [How to monitor apps](apps-monitor.md) (Alkalmazások figyelése) című témakörben találhat segítséget.
-

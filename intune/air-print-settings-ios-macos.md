@@ -1,12 +1,12 @@
 ---
 title: "Az Intune AirPrint-beállításai iOS- és macOS-eszközökhöz"
-titleSuffix: Intune Azure preview
-description: "Azure-beli Intune – előzetes: Ismerje meg, hogyan segítheti az Intune az iOS-es és macOS-es eszközök automatikus csatlakoztatását AirPrint-kompatibilis nyomtatókhoz."
+titleSuffix: Intune on Azure
+description: "Ismerje meg, hogyan segítheti az Intune az iOS-es és macOS-es eszközök automatikus csatlakoztatását AirPrint-kompatibilis nyomtatókhoz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 55486693e2f5678ceeb20dd3a0ef3c52553871d2
-ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 743eb9a71efe1a5ea18b15312fdd4fe684f0ff07
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-beállítások iOS- és macOS-eszközökhöz
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ezekkel a beállításokkal a hálózaton lévő AirPrint-kompatibilis nyomtatókhoz való automatikus csatlakozásra konfigurálhatja az iOS-es és macOS-es eszközöket. Ehhez a nyomtatók IP-címére és erőforrás-elérési útjára is szükség van.
 
@@ -34,7 +31,7 @@ Ezekkel a beállításokkal a hálózaton lévő AirPrint-kompatibilis nyomtató
 
 Ezzel az eljárással vehet fel AirPrint-információkat az AirPrint-adattartalomba, amely alapján az iOS-es eszközök felhasználói nyomtathatnak az ismert AirPrint-nyomtatókra.
 
-1. Egy, az AirPrint-nyomtatókkal azonos helyi hálózatra (alhálózatra) csatlakoztatott Mac gépen nyissa meg a Terminal programot (az **/Applications/Utilities** alatt).
+1. Egy, az AirPrint-nyomtatókkal azonos helyi hálózatra (alhálózatra) csatlakoztatott Mac gépen nyissa meg a Terminal programot (az **/Applications/Utilities** alatt)
 2. A Terminalba írja be az **ippfind** parancsot, majd nyomja le az Entert.
 3. Jegyezze fel a parancs által visszaadott nyomtatóadatokat – például **ipp://myprinter.local.:631/ipp/port1**. Az információ első fele a nyomtató neve, a második az erőforrás elérési útja.
 4. A Terminalba írja be a **ping myprinter.local** parancsot, majd nyomja le az Entert.
@@ -49,3 +46,7 @@ Ezzel az eljárással vehet fel AirPrint-információkat az AirPrint-adattartalo
 
 A nyomtatók listáját vesszővel tagolt formátumú (.csv) fájlból is importálhatja, vagy exportálhatja ilyenbe.
 
+
+## <a name="next-steps"></a>További lépések
+
+Most hozzárendelheti az eszközprofilt a kiválasztott csoportokhoz. A részletekért lásd: [Eszközprofilok hozzárendelése](device-profile-assign.md).
