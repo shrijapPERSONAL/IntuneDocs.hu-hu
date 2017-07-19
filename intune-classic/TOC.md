@@ -1,12 +1,6 @@
 # Ismertetés és felfedezés
 ## [Az Intune bemutatása](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Oktatási célokra Intune](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [Regisztráljon az ingyenes próbaverzióhoz](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Az Intune MDM kipróbálása](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [Csoportok létrehozása a felhasználók és eszközök rendszerezéséhez](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Szabályzatok létrehozása és alkalmazások közzététele](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Egyéb beállítások és kiegészítő funkciók](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Átállás a fizetős verzióra](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Mobilalkalmazás-kezelési és alkalmazásvédelmi gyakori kérdések](understand-explore/mam-faq.md)
 ## [Gyakori helyzetek](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
