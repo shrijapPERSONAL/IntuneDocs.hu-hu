@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>iOS-eszköz regisztrálása az Intune-ban
 
 Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi az informatikai osztály számára ezeknek a munkahelyi vagy iskolai erőforrásoknak a kezelését és védelmét, miközben Ön a kívánt eszközön végezheti a feladatait. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> Ha valójában egy macOS-eszközt (például MacBook Pro-t vagy iMac-et) szeretne regisztrálni, [ezt az útmutatást kövesse](enroll-your-device-in-intune-macos.md).
+> Ha egy macOS-eszközt (például MacBook Prót vagy iMacet) szeretne regisztrálni, [kövesse ezt az útmutatót](enroll-your-device-in-intune-macos.md).
 
 **Előkészületek:**
 
-- Miután elkezdte, ne hagyja félbe a regisztrációt. A több percig tartó szünet leállítja a folyamatot, és ilyenkor elölről kell kezdenie azt.
+- Miután elkezdte, ne hagyja félbe a regisztrációt. A több percig tartó szünet leállítja a folyamatot, amelyet ilyenkor elölről kell kezdenie.
 - Ha a regisztráció bármilyen okból meghiúsul, térjen vissza a Céges portál alkalmazásba, és próbálkozzon újra.
 - Győződjön meg róla, hogy működik a Wi-Fi. Ellenkező esetben a regisztráció sikertelen lesz.
-- Ha az eszközön letiltotta a Safari böngészőt, oldja fel a tiltást. A regisztrációhoz mindenképpen a Safarit kell használnia.
+- Ha az eszközön letiltotta a Safari böngészőt, oldja fel a tiltást. A Safarira szükség van az eszközregisztrációs folyamat során.
 
 
 **iOS-eszköz regisztrálása:**
@@ -51,8 +51,8 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> A sárga háromszögek nem azt jelzik, hogy máris hiba történt. Az ikonok azt mutatják, hogy néhány lépés még hátravan a regisztráció folyamatából.
+  > [!NOTE]
+  > A sárga háromszögek nem azt jelzik, hogy máris hiba történt. Az ikonok azt mutatják, hogy néhány lépés még hátravan a regisztráció folyamatából.
 
 4. Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet/nem férhet hozzá a regisztrált eszközén, majd koppintson a **Folytatás** gombra.
 
@@ -88,7 +88,7 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **Folytatás** elemre. Ha a rendszergazda további biztonsági követelményeket (például a jelszó beállításának szükségességét) állított be, kövesse a képernyőn megjelenő utasításokat, amíg ki nem elégíti az összes megfelelőségi követelményt. Ekkor a rendszer visszalépteti a Vállalati hozzáférés beállítása képernyőre. Itt koppintson a **Folytatás** elemre.
+12. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **Folytatás** elemre. Ezen a képernyőn megtekintheti az eszközmegfelelőség esetleges további követelményeit, például egy jelszó megadását. Kövesse a képernyőn megjelenő utasításokat, amíg nem teljesíti az összes megfelelőségi követelményt. Ha végzett, vissza fog lépni a vállalati hozzáférés beállítási képernyőjére. Koppintson a **Tovább** gombra.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 Ezzel megtörtént az eszköz Intune-beli regisztrálása, és a rendszer visszalépteti a Vállalati portál alkalmazásba.
 
 > [!Note]
-> Ha a szervezete távközlésiköltség-kezelő szoftvert használ, az eszköz teljes regisztrálásához még néhány lépést el kell végezni. További információért [kattintson ide](enroll-your-device-with-telecom-expense-management-ios.md).
+> Az eszköz regisztrációjának befejezéséhez még néhány lépést végre kell hajtania. További információ a [távközlésiköltség-kezelőben való regisztrációról](enroll-your-device-with-telecom-expense-management-ios.md). Ha a cége az Apple Készülékregisztrációs programját használja, további információt [itt](enroll-your-device-dep-ios.md) találhat.
 
 További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).

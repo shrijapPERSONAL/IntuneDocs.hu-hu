@@ -4,7 +4,7 @@ description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számí
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
 
@@ -32,6 +32,8 @@ A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítéséve
 Az Intune-ügyfélszoftver tartalmazza azt a szoftvert, amely ahhoz szükséges, hogy a számítógépet regisztrálja az Intune-felügyeletben. A számítógép regisztrálása után az Intune-ügyfélszoftver letölti a számítógép felügyeletéhez szükséges teljes ügyfélszoftvert.
 
 Az egymást követő letöltések csökkentik a hálózati sávszélességre gyakorolt hatást és minimálisra csökkentik a számítógép Intune-ban való kezdeti regisztrálásához szükséges időt. Emellett azt is biztosítja, hogy a második letöltést követően az ügyfél a legfrissebb szoftverrel rendelkezzen.
+
+Egy Intune-licenc legfeljebb öt számítógépen teszi lehetővé az Intune-ügyfélszoftver telepítését.
 
 ## <a name="download-the-intune-client-software"></a>Az Intune-ügyfélszoftver letöltése
 

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,27 @@ ms.technology:
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: cbe2c794a68ab37722c56448560a3c64f6087969
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c58ce51731b476cfca71851430297aff3edc5cd6
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="configure-app-protection-policies-optional"></a>Alkalmazásvédelmi szabályzatok konfigurálása (nem kötelező)
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Az alkalmazásvédelmi szabályzatokkal titkosíthat alkalmazásokat, PIN-kódot adhat meg az alkalmazás eléréséhez, letilthatja egyes alkalmazások futtatását feltört eszközökön, és számos más védelmi intézkedést tehet. Ha a felhasználó telefonját ellopják vagy elvész, mobilalkalmazás-védelmi szabályzatokkal távolról is törölhetők róla szelektíven a vállalati adatok, miközben a személyes adatok érintetlenül maradnak.
+Az alkalmazásvédelmi szabályzatokkal az alábbi műveleteket végezheti el:
+* Alkalmazások titkosítása
+* A PIN-kód meghatározása az alkalmazás eléréséhez
+* Egyes alkalmazások futtatásának letiltása feltört eszközökön, valamint számos más védelmi intézkedés.
 
-Az alkalmazásvédelmi szabályzatok alkalmazásszinten működnek, így nem igényelnek eszközregisztrációt, egyaránt használhatók az Intune-ba regisztrált és nem regisztrált eszközökkel, sőt akár külső MDM-szolgáltatónál regisztrált eszközökkel is.
+Ha a felhasználó telefonját ellopják vagy elvész, távolról is törölhetők róla szelektíven a vállalati adatok, miközben a személyes adatok érintetlenül maradnak.
+
+Az alkalmazásvédelmi szabályzatok alkalmazásszinten működnek, így nem igényelnek eszközregisztrációt, egyaránt használhatók az Intune-ba regisztrált és nem regisztrált eszközökkel, sőt, akár külső MDM-szolgáltatónál regisztrált eszközökkel is.
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Alkalmazásvédelmi szabályzatok üzletági alkalmazásokkal
 
-A [Microsoft Intune App SDK-val](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) vagy a Microsoft Intune [iOS-en](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) és [Androidon](https://www.microsoft.com/download/details.aspx?id=47267) is elérhető alkalmazásburkoló eszközével az üzletági alkalmazásokat is bevonhatja a mobilalkalmazás-védelmi szabályzatok hatókörébe.
+A [Microsoft Intune App SDK-val](app-sdk-get-started.md) vagy a Microsoft Intune [iOS-en](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) és [Androidon](https://www.microsoft.com/download/details.aspx?id=47267) is elérhető alkalmazásburkoló eszközével az üzletági alkalmazásokat is bevonhatja a mobilalkalmazás-védelmi szabályzatok hatókörébe.
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Hogyan segítenek a migráció során az alkalmazásvédelmi szabályzatok?
 
@@ -44,10 +47,10 @@ Amikor pedig a régebbi MDM-szolgáltatóban letiltja a feltételes hozzáféré
 
 ## <a name="task-list-for-app-protection-policies"></a>Feladatlista az alkalmazásvédelmi szabályzatokhoz
 
-1. [Alkalmazásvédelmi szabályzat létrehozása](/intune/app-protection-policies#create-an-app-protection-policy)
-2. [Szabályzat telepítése](/intune/app-protection-policies#deploy-a-policy-to-users)
+1. [Alkalmazásvédelmi szabályzat létrehozása](app-protection-policies.md#create-an-app-protection-policy)
+2. [Szabályzat telepítése](app-protection-policies.md#deploy-a-policy-to-users)
 
 
-## <a name="next-steps"></a>További lépések 
+## <a name="next-steps"></a>További lépések
 
 [Speciális áttelepítési megfontolások](migration-guide-considerations.md)
