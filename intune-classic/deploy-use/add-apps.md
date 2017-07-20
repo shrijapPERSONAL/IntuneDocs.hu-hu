@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/28/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aae944c86029be6eaa111ce7c274a466095651d1
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-nal
 
@@ -37,7 +37,7 @@ Mielőtt elkezdi az alkalmazások telepítését a Microsoft Intune-nal, fordít
 |**Alkalmazáscsomag az iOS-hez (&#42;.ipa)**|iOS-alkalmazások telepítéséhez egy érvényes .ipa csomaggal kell rendelkeznie.<br><br>Az .ipa csomagnak Apple-aláírással kell rendelkeznie, és a kiépítési profilban lévő lejárati dátumnak érvényesnek kell lennie. Az Intune képes terjeszteni a vállalati tanúsítvánnyal rendelkező iOS-alkalmazásokat.<br><br>A szolgáltatás nem minden Apple-fejlesztői tanúsítvánnyal rendelkező alkalmazást támogat.<br><br>A vállalatnak regisztrálnia kell az iOS Developer Enterprise programban.<br><br>Győződjön meg arról, hogy a szervezet tűzfala lehetővé teszi a hozzáférést az iOS üzembe helyezési és hitelesítő webhelyeihez.<br><br>Nem szükséges jegyzékfájlt (.plist) telepítenie az alkalmazással.|
 |**Windows Phone-alkalmazáscsomag (&#42;.xap, .appx, .appxbundle)**|Alkalmazások telepítéséhez vállalati mobil-kódaláíró tanúsítvánnyal kell rendelkeznie. Részletekért olvassa el a [Windows Phone-telefonok Microsoft Intune-beli kezelésének beállítása](set-up-windows-device-management-with-microsoft-intune.md) című cikket.|
 |**Windows-alkalmazáscsomag (.appx, .appxbundle)**|Alkalmazások telepítéséhez vállalati mobil-kódaláíró tanúsítvánnyal kell rendelkeznie. Részletekért olvassa el a [Windowsos eszközök Microsoft Intune-beli kezelésének beállítása](set-up-windows-device-management-with-microsoft-intune.md) című cikket.|
-|**Windows Installer MDM-en keresztül (&#42;.msi)**|Az alkalmazás lehetővé teszi a Windows Installer-alapú alkalmazások létrehozását és telepítését Windows 10-et futtató, regisztrált számítógépeken. A számítógépek kezelése a mobileszköz-kezelési szolgáltatáson keresztül történik.<br /><br />Csak egyetlen, .msi kiterjesztéssel rendelkező fájlt tölthet fel.<br><br>Az alkalmazások észlelése a fájl termékkódjával és termékverziójával történik.<br><br>A rendszer az alkalmazás alapértelmezett újraindítási viselkedését fogja használni. Az Intune nem szabályozza ezt.<br><br>Felhasználónkénti MSI-csomagok fognak települni egy-egy felhasználóhoz.<br><br>Gépenkénti MSI-csomagok fognak települni az eszköz minden felhasználójához.<br><br>A kettős üzemmódú MSI-csomagok jelenleg csak az eszköz összes felhasználójához telepíthetők.<br><br>Az alkalmazások frissítése akkor támogatott, ha minden verzió MSI-termékkódja ugyanaz.<br>
+|**Windows Installer MDM-en keresztül (&#42;.msi)**|Az alkalmazás lehetővé teszi a Windows Installer-alapú alkalmazások létrehozását és telepítését Windows 10-et futtató, regisztrált számítógépeken. A számítógépek kezelése a mobileszköz-kezelési szolgáltatáson keresztül történik.<br /><br />Csak egyetlen, .msi kiterjesztéssel rendelkező fájlt tölthet fel.<br><br>Az alkalmazások észlelése a fájl termékkódjával és termékverziójával történik.<br><br>A rendszer az alkalmazás alapértelmezett újraindítási viselkedését használja. Az Intune nem szabályozza ezt a viselkedést.<br><br>Felhasználónkénti MSI-csomagok települnek egy-egy felhasználóhoz.<br><br>Gépenkénti MSI-csomagok települnek az eszköz minden felhasználójához.<br><br>A kettős üzemmódú MSI-csomagok jelenleg csak az eszköz összes felhasználójához telepíthetők.<br><br>Az alkalmazások frissítése akkor támogatott, ha minden verzió MSI-termékkódja ugyanaz.<br>
 Minden szoftvertelepítő-alkalmazástípus feltöltése a felhőalapú tárhelybe történik.
 
 ### <a name="external-link"></a>**Külső hivatkozás**
@@ -61,7 +61,7 @@ Ha alkalmazásokat vesz fel vagy módosít az Intune felügyeleti konzol haszná
 Mielőtt megkezdené a Software Publisher használatát, telepítenie kell a [Microsoft .NET-keretrendszer 4.0](https://www.microsoft.com/download/details.aspx?id=17851) teljes verzióját. Előfordulhat, hogy a Software Publisher csak akkor nyílik meg megfelelően, ha a telepítést követően újraindítja a számítógépet.
 
 ## <a name="cloud-storage-space"></a>Felhőtárhely
-A szoftvertelepítő típusú telepítéssel létrehozott összes alkalmazást (például az üzletági alkalmazásokat) a rendszer becsomagolja és feltölti a Microsoft Intune felhőtárhelyére. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetése 20 GB tárterületet tartalmaz.
+A szoftvertelepítő típusú telepítéssel létrehozott alkalmazásokat fel kell tölteni a Microsoft Intune felhőtárhelyébe. Az Intune próba-előfizetése 2 gigabájtnyi (GB) felhőtárhelyet biztosít a felügyelt alkalmazások és frissítések tárolásához. A teljes előfizetése 20 GB tárterületet tartalmaz.
 
 A **Felügyelet** munkaterület **Tárolóhely-használat** csomópontjában tekintheti meg, hogy mekkora területet használ. Az eredeti vásárlási móddal vásárolhat további tárterületet az Intune számára.  Ha számla ellenében vagy hitelkártyával fizetett, keresse fel az [Előfizetés-kezelési portált](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Más esetben forduljon vállalatának partnercégéhez vagy értékesítési kapcsolattartójához.
 
@@ -74,7 +74,7 @@ A felhőtárhelyre vonatkozó követelmények az alábbiak:
 ## <a name="support-for-universal-windows-platform-uwp-apps"></a>Az univerzális Windows-platformra épülő alkalmazások támogatása
 A Windows 10-es számítógépekre közvetlen telepítésre szolgáló kulcs nélkül is telepíthetők az üzletági alkalmazások. A közvetlen telepítés azonban csak akkor lehetséges, ha a **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** beállításkulcs értéke **1**.
 
-Ha nincs konfigurálva ez a beállításkulcs, az Intune automatikusan **1** értékre állítja, amikor először telepítenek egy alkalmazást a szóban forgó eszközre. Amennyiben **0** értékre állította ezt az értéket, az Intune nem tudja azt automatikusan módosítani, ezért sikertelen lesz az üzletági alkalmazások telepítése.
+Ha nincs konfigurálva ez a beállításkulcs, az Intune automatikusan **1** értékre állítja, amikor először telepítenek egy alkalmazást a szóban forgó eszközre. Amennyiben **0** értékre állította ezt az értéket, az Intune nem tudja azt automatikusan módosítani, így nem sikerük az üzletági alkalmazások telepítése.
 
 Az univerzális Windows-platformra épülő üzletági alkalmazásokat olyan kódaláíró tanúsítvánnyal kell aláírni, amely megbízhatónak minősül minden olyan eszközön, amelyre telepítik az alkalmazást. Ehhez használhatók a belső fejlesztésű, nyilvános kulcsokra épülő infrastruktúra tanúsítványai vagy az eszközre telepített, harmadik féltől származó nyilvános főtanúsítvány valamely tanúsítványa.
 
@@ -83,8 +83,8 @@ A Windows 10 Mobile rendszerű eszközökön nem a Symantec által kiállított 
 ### <a name="dependencies-for-uwp-apps"></a>Az UWP-alkalmazások függőségei
 
 Ha Windows 10-es Universal appxbundle csomagot ad hozzá az Intune-hoz, mindig töltse fel egyben az alkalmazás függőségeit is.
-Ehhez helyezze az alkalmazás buildjének elkészítésekor létrehozott **Dependencies** mappa ugyanabban a mappában legyen, mint maga az .appxbundle-fájl.
-Ebben az esetben, amikor feltölti az alkalmazást az Intune-ba, a rendszer a **Dependencies** mappában található fájlokat is feltölti. A következő képernyőkép ezt mutatja be:
+A függőségek feltöltéséhez helyezze az alkalmazás buildjének elkészítésekor létrehozott **Dependencies** mappa ugyanabban a mappában legyen, mint maga az .appxbundle-fájl.
+Ebben az esetben, amikor feltölti az alkalmazást az Intune-ba, a rendszer a **Dependencies** mappában található fájlokat is feltölti. A folyamatot a következő képernyőkép mutatja be:
 
 
 ![A Windows 10 UWP appxbundle függőségeinek kiválasztása](./media/w10-dependencies.png)
@@ -92,4 +92,4 @@ Ebben az esetben, amikor feltölti az alkalmazást az Intune-ba, a rendszer a **
 
 ## <a name="next-steps"></a>További lépések
 
-Az alkalmazásokat fel kell vennie az Intune-konzolon, mielőtt telepíthetné őket. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.
+A telepítés előtt adja hozzá az alkalmazásokat az Intune-konzolon. A [regisztrált eszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md) vagy [az Intune ügyfélszoftverével felügyelt Windows-számítógépekhez](add-apps-for-windows-pcs-in-microsoft-intune.md) is hozzáadhat alkalmazásokat.

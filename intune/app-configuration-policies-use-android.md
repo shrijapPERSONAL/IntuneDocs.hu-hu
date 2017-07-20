@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata az Android for Workhöz
 
@@ -65,7 +65,7 @@ A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz ren
 
 Ekkor létrejön a szabályzat, és megjelenik a szabályzatok listáját tartalmazó panelen.
 
-Ezt követően a szokott módon [oszthatja ki](apps-deploy.md) és [monitorozhatja](apps-monitor.md) az alkalmazást.
+
 
 Amikor a kiosztott alkalmazást futtatják egy eszközön, az alkalmazáskonfigurációs szabályzatban megadott beállításokkal fog futni.
 
@@ -89,3 +89,8 @@ Az alkalmazások az Android-eszköz funkcióinak eléréséhez szükséges enged
 8. Az alkalmazáskonfigurációs szabályzat hozzárendeléséhez jelölje ki a szabályzatot, és válassza a **Hozzárendelés**, majd a **Csoportok kiválasztása** lehetőséget.
 9. Jelölje ki a hozzárendelendő felhasználói csoportokat, majd válassza a **Kijelölés** lehetőséget.
 10. A szabályzat hozzárendeléséhez kattintson a **Mentés** gombra.
+
+## <a name="next-steps"></a>További lépések
+
+Ezt követően a szokott módon [oszthatja ki](apps-deploy.md) és [monitorozhatja](apps-monitor.md) az alkalmazást.
+

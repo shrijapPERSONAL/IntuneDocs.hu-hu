@@ -14,11 +14,11 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 389196cd5c36859589e68ccadd576ceeac1bc279
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ead4f7308679359398383a2821b9c7e015ce59de
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="sign-up-or-sign-in-to-intune"></a>Regisztráljon az Intune-ra, vagy jelentkezzen be a szolgáltatásba
 
@@ -26,23 +26,22 @@ ms.lasthandoff: 07/01/2017
 
 Ez a témakör arról tájékoztatja a rendszergazdákat, hogy miképpen regisztrálhatnak Intune-fiókra.
 
-Az Intune-ba való bejelentkezés vagy regisztráció előtt állapítsa meg, hogy szervezete rendelkezik-e munkahelyi vagy iskolai Microsoft Online Services-fiókkal, illetve, hogy szervezete rendelkezik-e Nagyvállalati (Enterprise) szerződéssel vagy azzal egyenértékű mennyiségi licencszerződéssel a Microsofttal. A mennyiségi licencszerződésnek a Microsofttal történő megkötésekor vagy az Office 365 szolgáltatásra vagy más Microsoft által biztosított felhőszolgáltatásra való előfizetéskor munkahelyi vagy iskolai fiókot biztosítunk az Ön számára.
+Mielőtt regisztrálna az Intune-ra, ellenőrizze, hogy rendelkezik-e már Microsoft Online Services-fiókkal, Nagyvállalati Szerződéssel vagy egyenértékű mennyiségi licencszerződéssel. A Microsoft mennyiségi licencszerződései és az egyéb Microsoft-felhőszolgáltatások előfizetései (például az Office 365) általában magukban foglalnak egy munkahelyi vagy iskolai fiókot.
 
-Ha rendelkezik munkahelyi vagy iskolai fiókkal, egyszerűen **jelentkezzen be** ezzel a fiókkal, és adja hozzá az Intune-t a meglévő előfizetési környezetéhez. Ellenkező esetben **regisztrálnia kell**, és létre kell hoznia egy új fiókot, amellyel kezelni fogja az Intune-t a szervezeténél.
+Ha már rendelkezik munkahelyi vagy iskolai fiókkal, **jelentkezzen be** vele, és adja hozzá az Intune-t az előfizetéshez. Ha még nem, **regisztrálhat** egy új fiókot, amellyel használatba veheti az Intune-t a cégében.
 
 >[!WARNING]
->Ha új fiókot regisztrál, később az előfizetés kezeléséhez vagy meglévő mennyiségi licencszerződéssel való összevonásához nem használhat meglévő munkahelyi vagy iskolai fiókot.
+>Meglévő munkahelyi vagy iskolai fiókok nem vonhatók össze újonnan regisztrált fiókokkal.
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Az Intune szolgáltatásba való regisztráció vagy bejelentkezés módja
 
 1.  Látogasson el az [Intune regisztrációs oldalára](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-2.  Új Intune-előfizetése kezeléséhez lépjen be vagy regisztráljon a **regisztrációs** oldalon.
+  ![Képernyőkép a Microsoft Intune próbaverziójának fiókregisztrációs weboldaláról](./media/account-sign-up-site.png)
+
+2.  Új Intune-előfizetése kezeléséhez lépjen be vagy regisztráljon a regisztrációs oldalon.
 
 ## <a name="post-sign-up-considerations"></a>A regisztrációt követően megfontolandó szempontok
-Ha új előfizetést regisztrál, e-mailben elküldjük a fiókadatait a regisztráció során megadott e-mail címre. Az e-mail megerősíti, hogy az előfizetés aktív.
+Az új előfizetés regisztrálása után e-mailben elküldjük a fiókadatait a regisztráció során megadott e-mail címre. Az e-mail megerősíti, hogy az előfizetés aktív.
 
-A regisztrációs folyamat befejezését követően átirányítjuk egy oldalra, amelyen az Office 365 felügyeleti központja segítségével felhasználókat vehet fel, illetve licenceket rendelhet a felhasználókhoz. Ha kizárólag felhőalapú fiókokkal fog rendelkezni az alapértelmezett onmicrosoft.com tartományon, akkor már ennél a lépésnél felveheti a felhasználókat, és hozzárendelheti a licenceket. Ha azonban a szervezet saját tartományát szeretné használni, illetve szeretné szinkronizálni a felhasználóifiók-adatokat a helyi Active Directoryval, zárja be a böngészőablakot, és lépjen az első lépéseket bemutató útmutató 2. lépésére. Tudjon meg többet [a kezdeti onmicrosoft.com tartománnyal kapcsolatban (Office 365)](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a?ui=en-US&rs=en-US&ad=US&fromAR=1#bkmk_whydoihaveanonmicrosoft.comdomain).
-
->[!TIP]
-> Amikor legközelebb bejelentkezik az Intune-ba, a rendszer automatikusan átirányítja az Intune felügyeleti konzoljára.
+A regisztrációs folyamat befejezését követően átirányítjuk az Office 365 felügyeleti központjába, amely segítségével felhasználókat vehet fel, illetve licenceket rendelhet hozzájuk. Ha kizárólag az alapértelmezett onmicrosoft.com tartományt használó felhőalapú fiókokkal rendelkezik, akkor már ennél a lépésnél felveheti a felhasználókat, és hozzárendelheti a licenceket. Ha azonban a szervezet [egyéni tartománynevét](custom-domain-name-configure.md) szeretné használni, illetve szeretné [szinkronizálni a felhasználóifiók-adatokat](users-add.md#sync-active-directory-and-add-users-to-intune) a helyi Active Directoryval, zárja be a böngészőablakot.
