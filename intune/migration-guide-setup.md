@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Alapszintű beállítás
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 A környezet felmérése után ideje beállítani az Intune-t.
 
@@ -30,25 +27,23 @@ A környezet felmérése után ideje beállítani az Intune-t.
 
 ### <a name="identity"></a>Identitás
 
-Az Intune-hoz az Azure Active Directoryt (AAD) kell használni felhasználóicsoport- és identitásszolgáltatóként.
+Az Intune-hoz az Azure Active Directoryt (AAD) kell használni felhasználóicsoport- és identitásszolgáltatóként. További információk az alábbiakról:
 
--   További tudnivalók [az identitással kapcsolatos követelményekről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+-  [Identitáskövetelmények](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   További tudnivalók [a címtár-szinkronizálás követelményeiről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+-   [A címtár-szinkronizálás követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   További tudnivalók [a többtényezős hitelesítés követelményeiről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+-   [Többtényezős hitelesítés követelményei](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   További tudnivalók [a felhasználói és eszközcsoportok megtervezéséről](/intune/users-permissions-add)
+-   [A felhasználói és eszközcsoportok megtervezése](users-add.md)
 
--   Útmutató [a felhasználói és eszközcsoportok létrehozásához](/intune/groups-get-started)
+-   [A felhasználói és eszközcsoportok létrehozása](groups-get-started.md)
 
-Ha a szervezet már használja az Office 365-öt, akkor fontos, hogy az Intune is ugyanazt az Azure Active Directory-környezetet használja.
+Ha a szervezet már használja az Office 365-öt, az Intune is ugyanazt az Azure Active Directory-környezetet kell, hogy használja.
 
 ### <a name="pki-optional"></a>Nyilvános kulcsú infrastruktúra (nem kötelező)
 
-Ha az Intune VPN-, Wi-Fi- vagy e-mail-profiljaihoz tanúsítványalapú hitelesítést tervez használni, bizonyosodjon meg róla, hogy a szervezetnél már ki van alakítva a tanúsítványprofilok létrehozására és üzembe helyezésére kész, támogatott [PKI-infrastruktúra](/intune/certificates-configure).
-
-Az Intune-ban történő tanúsítványkonfigurálással kapcsolatos további tudnivalókat alább olvashatja.
+Ha az Intune VPN-, Wi-Fi- vagy e-mail-profiljaihoz tanúsítványalapú hitelesítést tervez használni, bizonyosodjon meg róla, hogy a szervezetnél már ki van alakítva a tanúsítványprofilok létrehozására és üzembe helyezésére kész, támogatott [PKI-infrastruktúra](certificates-configure.md). További tudnivalók az Intune-ban történő tanúsítványkonfigurálásról:
 
 -   [SCEP-tanúsítványinfrastruktúra konfigurálása](/intune/certificates-scep-configure)
 
@@ -77,13 +72,13 @@ Az Intune-ra való migráláshoz Intune-előfizetés szükséges.
 
 Az Intune kezelhető az Azure Portalról vagy a Configuration Manager Aktuális ágának konzoljáról. Ha nincs rá szükség, hogy az Intune-t a Configuration Manager Aktuális ágán alapuló környezettel integrálja, ajánlott az Intune-t az [Azure Portalról](https://portal.azure.com) kezelni.
 
-Az Azure-beli Intune-portál aktiválásához állítsa be az **Intune**-t MDM-szolgáltatóként. Ha másik MDM-szolgáltatót használ, akkor az Intune a Microsoft más felügyeleti konzoljainak is átadhatja a mobileszköz-felügyeletet. Ezek a helyzetek elég ritkán fordulnak elő.
+Az Intune Azure-portál aktiválásához állítsa be az **Intune**-t MDM-szolgáltatóként. Ha másik MDM-szolgáltatót használ, akkor az Intune a Microsoft más felügyeleti konzoljainak is átadhatja a mobileszköz-felügyeletet. Ezek a helyzetek elég ritkán fordulnak elő.
 
 > [!IMPORTANT]
 > Ha első alkalommal adja át a mobileszköz-felügyeletet az Intune-nak, akkor mindenképpen az Intune-t adja meg MDM-szolgáltatónak.
 
--   Ismerje meg, [hogyan állíthatja be a mobileszköz-felügyeleti szolgáltatót](/intune/mdm-authority-set).
+Ismerje meg, [hogyan állíthatja be a mobileszköz-felügyeleti szolgáltatót](mdm-authority-set.md).
 
 ## <a name="next-step"></a>Következő lépés
 
-[Eszköz- és alkalmazásszabályzatok konfigurálása](migration-guide-configure-policies.md)
+[Eszköz- és alkalmazásszabályzatok](migration-guide-configure-policies.md) konfigurálása.
