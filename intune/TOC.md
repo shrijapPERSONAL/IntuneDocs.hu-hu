@@ -183,13 +183,12 @@
 ### [Profilok monitorozása](device-profile-monitor.md)
 ### [Profilok hibaelhárítása](device-profile-troubleshoot.md)
 
-## [Eszközmegfelelőség beállítása](device-compliance.md)
-### [Előfeltételek](device-compliance-get-started.md)
+## [Eszközmegfelelőség beállítása](device-compliance-get-started.md)
 ### [Android-szabályzat létrehozása](compliance-policy-create-android.md)
 ### [Android for Work-szabályzat létrehozása](compliance-policy-create-android-for-work.md)
 ### [iOS-szabályzat létrehozása](compliance-policy-create-ios.md)
+### [macOS-szabályzat létrehozása](compliance-policy-create-mac-os.md)
 ### [Windows-szabályzat létrehozása](compliance-policy-create-windows.md)
-### Meg nem felelési műveletek létrehozása
 ### [Az eszközmegfelelőség figyelése](compliance-policy-monitor.md)
 
 ## [Feltételes hozzáférés beállítása](conditional-access.md)
