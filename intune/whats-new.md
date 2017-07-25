@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -55,25 +55,25 @@ Az Intune már támogatja az iOS-, a macOS- és az Android-sorozatszámok feltö
 
 ### <a name="device-management"></a>Eszközkezelés
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>Új távoli műveletek iOS-eszközökhöz <!-- 854689 -->
-Ebben a kiadásban két új távoli művelet jelent meg az iOS-eszközökhöz:
+Ebben a kiadásban két új műveletet tettünk elérhetővé az Apple Osztályterem alkalmazást kezelő megosztott iPad-eszközökkel kapcsolatban:
 
 -   [Aktuális felhasználó kijelentkeztetése](device-logout-user.md) – Kijelentkezteti a kiválasztott iOS-eszköz aktuális felhasználóját.
 -   [Felhasználó eltávolítása](device-remove-user.md) – Eltávolítja a kiválasztott felhasználót egy iOS-eszköz helyi gyorsítótárából.
 
-
-Ezekkel a távoli műveletekkel a rendszergazdák felügyelni tudják egy megosztott iPad gyorsítótárazott felhasználói fiókjait és, ki is jelentkeztethetik az eszközre éppen bejelentkezett felhasználót.
-
-Az eszközön gyorsítótárazható felhasználói fiókok maximális számát a rendszergazda határozza meg a regisztráció során. A „felhasználó eltávolítása” művelettel a rendszergazdák eltávolíthatják a kiválasztott gyorsítótárazott felhasználót.
-
-Az „aktuális felhasználó kijelentkeztetése” művelet kijelentkezteti az eszközre éppen bejelentkezett felhasználót. Ez a művelet az eszköz áttekintő-paneljének felső részén, az eszközműveletek szokásos helyén található meg.
-
-A „felhasználó eltávolítása” művelet eltávolítja a kiválasztott felhasználót az eszköz helyi gyorsítótárából. Ez a művelet az „Figyelés” -> „Felhasználók” listában megjelenő felhasználóra jobb gombbal kattintva elérhető. A felhasználói fiókhoz tartozó szinkronizálatlan adatok elvesznek. Akár 24 óra is eltelhet, mire a felhasználók listája tükrözi a felhasználó eltávolítását.
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>A megosztott iPadek támogatása az iOS-es Osztályterem alkalmazással <!-- 1044681 -->
 Ebben a kiadásban kibővült az iOS-es Osztályterem alkalmazás felügyeletének támogatása, így olyan diákok felügyeletére is van lehetőség, akik a megosztott iPadekre saját felügyelt Apple ID-val jelentkeznek be.
 
 
 ### <a name="app-management"></a>Alkalmazáskezelés  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Beépített Intune-alkalmazásokkal kapcsolatos változások <!-- 1332306 -->
+
+Korábban az Intune számos beépített alkalmazást tartalmazott, melyeket hamar hozzá lehetett rendelni egy kategóriához. A visszajelzések alapján azonban eltávolítottuk ezt a listát, és többé már nem jelennek meg beépített alkalmazások.
+Ugyanakkor ha vannak olyan beépített alkalmazások, melyeket korábban már hozzárendelt valamelyik kategóriához, azok továbbra is meg fognak jelenni az alkalmazások listáján. Ezek az alkalmazások szükség szerint továbbra is hozzárendelhetők.
+Terveink szerint egy későbbi kiadásban elérhetővé teszünk majd egy egyszerűbb módszert a beépített alkalmazások Intune-portálról történő kiválasztására és hozzárendelésére.
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>A Vállalati Windows Áruházból származó offline alkalmazások támogatása <!--- 777044 --->
 A Vállalati Windows Áruházban vásárolt offline alkalmazások mostantól szinkronizálhatók az Intune-portállal. Ezeket az alkalmazásokat eszközcsoportok vagy felhasználói csoportok számára telepítheti. Az offline alkalmazásokat az Intune, és nem az Áruház telepíti.
 
@@ -266,12 +266,16 @@ A klasszikus Intune-portálon (Silverlight) meglévő mobilalkalmazás-kezelési
 
 ## <a name="whats-coming"></a>Mi várható?
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Az Android 4.3-as és korábbi verzióinak támogatása lejár <!---1171127, 1326920 --->
+A felügyelt alkalmazások és az Androidra készült Céges portál alkalmazás esetén az Android 4.4-es vagy újabb verziója követelmény lesz a vállalati erőforrások eléréséhez. Azok az eszközök, amelyeket nem frissítenek még október eleje előtt, többé nem fognak hozzáférni a Céges portálhoz vagy azokhoz az alkalmazásokhoz. Decemberre az összes regisztrált eszköz kiv lesz vonva, így elveszti hozzáférését a vállalati erőforrásokhoz. Ha MDM nélküli alkalmazásvédelmi szabályzatokat használ, akkor az alkalmazások nem jutnak hozzá a frissítésekhez és a használhatóságuk idővel romlani kezd.
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>Platformtámogatási emlékeztető: a Windows Phone 8.1 alapvető technikai támogatása 2017. július 11-én megszűnik
 <!-- 1327781 -->
 
 2017. július 11-én a Windows Phone 8.1 platform alapvető technikai támogatása lejár. A Windows 8.1 PC támogatását ez nem érinti.
 
-Az Intune szolgáltatás által felügyelt Windows Phone 8.1-es eszközökre nézve ennek nincs közvetlen következménye. A regisztrált eszközök tovább használhatók, és minden szabályzat, konfiguráció és alkalmazás is az elvárt módon működik tovább. Fontos, hogy nincsenek az Intune szolgáltatás körébe tartozó Windows Phone 8.1 platformot és a Windows Phone 8.1 Vállalati portál alkalmazást érintő fejlesztések. 
+Az Intune szolgáltatás által felügyelt Windows Phone 8.1-es eszközökre nézve ennek nincs közvetlen következménye. A regisztrált eszközök tovább használhatók, és minden szabályzat, konfiguráció és alkalmazás is az elvárt módon működik tovább. Fontos, hogy nincsenek az Intune szolgáltatás körébe tartozó Windows Phone 8.1 platformot és a Windows Phone 8.1 Vállalati portál alkalmazást érintő fejlesztések.
 
 Javasolt az arra jogosult Windows Phone 8.1 eszközöket a lehető leghamarabb a Windows 10 mobil verziójára frissíteni. 
 

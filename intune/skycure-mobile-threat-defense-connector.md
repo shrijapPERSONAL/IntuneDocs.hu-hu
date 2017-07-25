@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-összekötő
 
@@ -115,14 +115,10 @@ További tájékoztatást a [Skycure webhelyén](https://www.skycure.com/skycure
 
 Az Intune és a Skycure integrálásához szükséges lépések:
 
-1.  [A Skycure konfigurálása Azure Active Directory-alapú egyszeri bejelentkezés (SSO) használatára](skycure-azure-sso-configure.md)
+1.  [A Skycure-alkalmazások, a Microsoft Authenticator és az iOS-es alkalmazáskonfigurációs szabályzat felvétele és hozzárendelése](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Az iOS-es Skycure alkalmazáshoz tartozó alkalmazáskonfigurációs szabályzat letöltése](skycure-ios-app-configuration-policy-download.md)
+2.  [A Skycure és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
 
-3.  [A Skycure-alkalmazások, a Microsoft Authenticator és az iOS-es alkalmazáskonfigurációs szabályzat felvétele és hozzárendelése](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [A Skycure MTD-összekötő engedélyezése az Intune-ban](mtd-connector-enable.md)
 
-4.  [A Skycure és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
-
-5.  [A Skycure Mobile Threat Defense engedélyezése az Intune-ban](mtd-connector-enable.md)
-
-6.  [A Skycure Mobile Threat Defense eszközmegfelelőségi szabályzatának létrehozása az Intune-ban](mtd-device-compliance-policy-create.md)
+4.  [A Skycure eszközmegfelelőségi szabályzatának létrehozása az Intune-ban](mtd-device-compliance-policy-create.md)

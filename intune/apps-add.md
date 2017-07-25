@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Alkalmazás hozzáadása a Microsoft Intune-hoz
 
@@ -79,34 +79,9 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 
 ## <a name="apps-added-automatically-by-intune"></a>Az Intune által automatikusan hozzáadott alkalmazások
 
-Az alábbi Microsoft-alkalmazások beépítve rendelkezésre állnak, és hozzárendelhetők az Intune-ban:
-
-|||
-|-|-|
-|Név|Platform|Alkalmazás típusa|
-|Azure Information Protection|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Dynamics CRM telefonokhoz|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Dynamics CRM táblagépekhez|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Excel|iOS|Felügyelt iOS Store-alkalmazás|
-|Excel|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Felügyelt böngésző|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Felügyelt böngésző|iOS|Felügyelt iOS Store-alkalmazás|
-|Microsoft Dynamics CRM telefonokon|iOS|Felügyelt iOS Store-alkalmazás|
-|Microsoft Dynamics CRM táblagépeken|iOS|Felügyelt iOS Store-alkalmazás|
-|Microsoft Power BI|iOS|Felügyelt iOS Store-alkalmazás|
-|Microsoft Power BI|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Microsoft SharePoint|iOS|Felügyelt iOS Store-alkalmazás|
-|Microsoft SharePoint|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Microsoft Teams|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Microsoft Teams|iOS|Felügyelt iOS Store-alkalmazás|
-|OneDrive|iOS|Felügyelt iOS Store-alkalmazás|
-|OneDrive|Android|Felügyelt Android Áruházbeli alkalmazás|
-|OneNote|iOS|Felügyelt iOS Store-alkalmazás|
-|Outlook|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Outlook|iOS|Felügyelt iOS Store-alkalmazás|
-|Outlook Groups|Android|Felügyelt Android Áruházbeli alkalmazás|
-|Outlook Groups|iOS|Felügyelt iOS Store-alkalmazás|
-|PowerPoint|iOS|Felügyelt iOS Store-alkalmazás|
+Korábban az Intune számos beépített alkalmazást tartalmazott, melyeket hamar hozzá lehetett rendelni egy kategóriához. A visszajelzések alapján azonban eltávolítottuk ezt a listát, és többé már nem jelennek meg beépített alkalmazások.
+Ugyanakkor ha vannak olyan beépített alkalmazások, melyeket korábban már hozzárendelt valamelyik kategóriához, azok továbbra is meg fognak jelenni az alkalmazások listáján. Ezek az alkalmazások szükség szerint továbbra is hozzárendelhetők.
+Terveink szerint egy későbbi kiadásban elérhetővé teszünk majd egy egyszerűbb módszert a beépített alkalmazások Intune-portálról történő kiválasztására és hozzárendelésére.
 
 ## <a name="next-steps"></a>További lépések
 
@@ -121,4 +96,5 @@ Az alábbi témakörök ismertetik az egyes platformok alkalmazásainak felvéte
 - [Windows Phone LOB-alkalmazások](lob-apps-windows-phone.md)
 - [Windows Áruházbeli alkalmazások](store-apps-windows.md)
 - [Windows LOB-alkalmazás](lob-apps-windows.md)
+- [Windows 10-es Office 365-alkalmazások](apps-add-office365.md)
 

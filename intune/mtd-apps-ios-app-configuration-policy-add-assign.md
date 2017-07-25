@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,16 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b3fb86648a86b161eadfc071bdacbfd4ea0222f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
+
+> [!NOTE] 
+> Ez a témakör minden Mobile Threat Defense-partnerre vonatkozik.
 
 Az Intune segítségével MTD-alkalmazásokat vehet fel és helyezhet üzembe annak érdekében, hogy a végfelhasználók értesítést kapjanak a mobileszközeiken észlelt fenyegetésekről, és útmutatást kapjanak azok elhárításához.
 
@@ -46,33 +49,38 @@ iOS-eszközök esetén a [Microsoft Authenticator](https://docs.microsoft.com/az
 
 ## <a name="to-add-apps"></a>Az alkalmazások felvételéhez
 
-### <a name="skycure-app-for-android"></a>Androidra készült Skycure alkalmazás
+### <a name="all-mtd-partners"></a>Minden MTD-partner
 
-- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). A **7. lépésben** használja a [ Skycure alkalmazás-áruházbeli URL-címét](https://play.google.com/store/apps/details?id=com.skycure.skycure).
-
-### <a name="skycure-app-for-ios"></a>iOS-re készült Skycure alkalmazás
-
-- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [Skycure alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/skycure/id695620821?mt=8).
-
-### <a name="microsoft-authenticator-app-for-ios"></a>iOS-hez készült Microsoft Authenticator alkalmazás
+#### <a name="microsoft-authenticator-app-for-ios"></a>iOS-hez készült Microsoft Authenticator alkalmazás
 
 - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [ Microsoft Authenticator alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8).
 
-### <a name="lookout-for-work-android-app"></a>Lookout for Work – Android-alkalmazás
+### <a name="skycure"></a>Skycure
 
+#### <a name="android"></a>Android
+
+- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). A **7. lépésben** használja a [ Skycure alkalmazás-áruházbeli URL-címét](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+
+#### <a name="ios"></a>iOS
+
+- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [Skycure alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/skycure/id695620821?mt=8).
+
+### <a name="lookout"></a>Lookout
+
+#### <a name="android"></a>Android
 - Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). A **7. lépésben** használja a [ Lookout for Work Google alkalmazás-áruházbeli URL-címét](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
-### <a name="lookout-for-work-ios-app"></a>Lookout for Work – iOS-alkalmazás
+#### <a name="ios"></a>iOS
 
 - Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [ Lookout for Work iOS alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8).
 
-### <a name="lookout-for-work-app-outside-the-apple-store"></a>Lookout for Work alkalmazás az Apple áruházon kívül
+#### <a name="lookout-for-work-app-outside-the-apple-store"></a>Lookout for Work alkalmazás az Apple áruházon kívül
 
 A Lookout for Work iOS-alkalmazást újra alá kell írnia. A Lookout az iOS App Store-on kívül terjeszti a Lookout for Work alkalmazását. Az alkalmazás terjesztése előtt újra alá kell írnia az alkalmazást az iOS vállalati fejlesztői tanúsítványával.
 
 A részletes leírást a Lookout for Work iOS-alkalmazás újbóli aláírásáról lásd: [Lookout for Work iOS-alkalmazás újbóli aláírásának folyamata](https://personal.support.lookout.com/hc/articles/114094038714) a Lookout oldalán.
 
-#### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Azure AD-hitelesítés engedélyezése a Lookout for Work iOS-alkalmazáshoz
+##### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Azure AD-hitelesítés engedélyezése a Lookout for Work iOS-alkalmazáshoz
 
 Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók számára az alábbiak szerint:
 
@@ -89,20 +97,36 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
     > [!NOTE] 
     > További részletekért lásd:[Natív ügyfélalkalmazás konfigurálása az Azure AD-val](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-#### <a name="add-the-lookout-for-work-ipa-file"></a>A Lookout for Work .ipa-fájl hozzáadása
+##### <a name="add-the-lookout-for-work-ipa-file"></a>A Lookout for Work .ipa-fájl hozzáadása
 
 - Töltse fel az újból aláírt .ipa-fájlt az[iOS LOB alkalmazások hozzáadása az Intune-nal](lob-apps-ios.md) című témakörben leírtaknak megfelelően. Ezenkívül a minimum OS-verziót iOS 8.0-ra vagy újabbra kell állítania.
+
+### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
+
+#### <a name="android"></a>Android
+
+- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). Adja meg ezt a [Check Point SandBlast Mobile alkalmazás-áruházbeli URL-címet](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) a  **7. lépésben**.
+
+#### <a name="ios"></a>iOS
+
+- Szerezze be az iOS alkalmazást a [Check Point SandBlast Mobile-tól](https://www.checkpoint.com/products/sandblast-mobile/). Tekintse át az [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md) témát, majd az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** adja meg az Apple áruházbeli URL-címet.
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>Az MTD-alkalmazás társításához az iOS-es alkalmazáskonfigurációs szabályzatával
 
 ### <a name="for-skycure"></a>Skycure
 
--   A korábban a Skycure Management konzolon konfigurált Azure AD-fiókot használja, amely elvileg megegyezik a klasszikus Intune-konzolra való bejelentkezéshez használttal.
+-   Ehhez a művelethez a korábban a [Skycure Management konzolon](https://aad.skycure.com) konfigurált Azure AD-fiókot kell használni, amely megegyezik a klasszikus Intune-konzolra való bejelentkezéshez használttal.
 
--   Készítse elő a Skycure-integrációs fájlt, amelyet korábban .zip formátumban letöltött a Skycure Management konzolról, és amelyben megtalálható az iOS-es alkalmazáskonfigurációs szabályzat paramétereit tároló **skycure\_configuration.plist** fájl.
-
-- A Skycure iOS-es alkalmazáskonfigurációs szabályzat felvételéhez lásd a következő útmutatót:[A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
-    - A 8. lépésnél válassza az **XML adatok megadása** lehetőséget, majd másolja be a **skycure_configuration.plist** fájl tartalmát a konfigurációs szabályzat törzsébe.
+-   **Töltse le** az iOS-es alkalmazáskonfigurációs szabályzatot tartalmazó fájlt: 
+    -   Lépjen a [Skycure Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.
+    
+    -   Kattintson a **Settings** (Beállítások) &gt; **Device Management Integrations** (Eszközfelügyelet-integráció) &gt; **EMM Integration Selection** (EMM-integráció kiválasztása) elemre, válassza a **Microsoft Intune** lehetőséget, és mentse a választást.
+    
+    -   Kattintson az **Integration setup files** (Integráció-telepítőfájlok) hivatkozásra, és mentse a létrejövő \*.zip fájlt. A .zip-fájlban található a **skycure\_configuration.plist** fájl, amellyel létrehozható az iOS-es alkalmazáskonfigurációs szabályzat az Intune-ban.
+    
+    -   A Skycure iOS-es alkalmazáskonfigurációs szabályzat felvételéhez lásd a következő útmutatót:[A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
+    
+    - A **8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be a **skycure_configuration.plist** fájl tartalmát a konfigurációs szabályzat törzsébe.
 
 A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
 
@@ -119,11 +143,21 @@ A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
 
 - Hozza létre az iOS-es alkalmazáskonfigurációs szabályzatot az [iOS-es alkalmazáskonfigurációs szabályzat használata](app-configuration-policies-use-ios.md) témakör leírása alapján.
 
-## <a name="to-assign-mtd-apps"></a>Az MTD-alkalmazások hozzárendeléséhez
+### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
-- Lásd a következő útmutatót: [Alkalmazások csoportokhoz rendelése az Intune használatával](apps-deploy.md).
+- A Check Point SandBlast Mobile iOS-es alkalmazáskonfigurációs szabályzat felvételéhez tekintse át a következő útmutatót: [A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
+    - A**8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be az alábbi tartalmat a konfigurációs szabályzat törzsébe.
+
+```
+<dict><key>MDM</key><string>INTUNE</string></dict>
+
+```
+## <a name="to-assign-apps-all-mtd-partners"></a>Alkalmazások hozzárendelése (minden MTD partner)
+
+- Lásd a következő útmutatót: [Alkalmazások csoportokhoz rendelése az Intune-nal](apps-deploy.md).
 
 ## <a name="next-steps"></a>További lépések
 
-[A Skycure és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
-[A Lookout és az Intune közötti integráció beállítása](lookout-mtd-connector-integration.md)
+- [A Lookout és az Intune közötti integráció beállítása](lookout-mtd-connector-integration.md)
+- [A Skycure és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
+- [A Check Point SandBlast és az Intune közötti integráció beállítása](checkpoint-sandblast-mobile-mtd-connector-integration.md)
