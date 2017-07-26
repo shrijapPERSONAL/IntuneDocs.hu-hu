@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Az üzleti alkalmazások és az adatok védelme a Microsoft Intune-ban nem regisztrált eszközökön
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A mobilalkalmazás-felügyeleti (Mobile app management, MAM) szabályzatok azzal segítenek megvédeni a vállalati adatokat, hogy korlátozzák a vállalati adatok kiszivárgását kockáztató műveleteket, és betartatják az adatelérési követelményeket, például megkövetelik az alkalmazás PIN-kódját. A MAM-szabályzatok iOS és Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást. Az alkalmazásburkolás kezelési réteg alkalmazása a mobilalkalmazásra anélkül, hogy bármilyen chan/intune/apps-prepare-mobile-application-managementes szükséges lenne, és annak elosztása a felhasználók számára.  
+A mobilalkalmazás-felügyeleti (Mobile app management, MAM) szabályzatok azzal segítenek megvédeni a vállalati adatokat, hogy korlátozzák a vállalati adatok kiszivárgását kockáztató műveleteket, és betartatják az adatelérési követelményeket, például megkövetelik az alkalmazás PIN-kódját. A MAM-szabályzatok iOS és Android rendszeren futó üzleti alkalmazásokon való használatához először a Microsoft Intune alkalmazásburkolóval burkolnia kell az alkalmazást. Az alkalmazásburkolás az a folyamat, amely során kezelési réteggel lát el egy mobilalkalmazást annak bármilyen módosítása nélkül, és kiossza azt felhasználói között.  
 
 Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti eszközökön** és a **harmadik fél által nyújtott mobileszköz-kezelési (MDM) megoldások** által felügyelt eszközökön futó alkalmazásokhoz való hozzárendelését.  Az **Intune MDM-ben regisztrált eszközökön futó üzleti alkalmazások** előkészítéséhez tekintse meg az [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/intune/apps-prepare-mobile-application-management) című cikket.
 

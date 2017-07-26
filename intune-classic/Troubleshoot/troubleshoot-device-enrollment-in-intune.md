@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 07/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
@@ -151,6 +151,17 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 
 ## <a name="android-issues"></a>Android-problémák
+
+### <a name="android-enrollment-errors"></a>Android-eszközök regisztrálásának hibái
+
+A következő táblázat azon hibákat tartalmazza, melyeket Android-eszközök az Intune-ban való regisztrálásakor tapasztalhatnak a végfelhasználók.
+
+|Hibaüzenet|Probléma|Megoldás|
+|---|---|---|
+|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br><br>További információ [az Intune-licencek a felhasználói fiókokhoz való hozzárendelésével](/intune/licenses-assign.md) kapcsolatban.
+|**A rendszergazdának be kell állítania a mobileszköz-felügyeleti szolgáltatót<br>Úgy tűnik, hogy a rendszergazda még nem állította be a mobileszköz-felügyeleti szolgáltatót. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|A mobileszköz-kezelő szolgáltató még nincs megadva.|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban. További információ [a mobileszköz-felügyeleti szolgáltató beállításáról](/intune/mdm-authority-set.md).|
+
+
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Az eszközök nem tudnak lejelentkezni az Intune szolgáltatásnál, és az Intune felügyeleti konzolján „Nem megfelelő” állapotúként jelennek meg
 **Probléma:** Egyes, az Android 4.4.x és 5.x verzióját futtató Samsung-eszközök esetében előfordulhat, hogy egy idő után nem jelentkeznek le újra az Intune szolgáltatásnál. Ha nem jelentkeznek le az eszközök:
 

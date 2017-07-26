@@ -6,35 +6,32 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Az Azure Portalbeli Microsoft Intune bemutatása
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune az Azure Portalra kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók megváltoztak.
+A Microsoft Intune az Azure Portal webhelyre kerül át, ami azt jelenti, hogy a megszokott munkafolyamatok és funkciók megváltoztak.
 Az új portál új és frissített funkciókat kínál az Azure Portalon, ahol felügyelheti munkahelye mobileszközeit, számítógépeit és alkalmazásait.
 
-> [!IMPORTANT]
-> **Nem jelenik még meg az új portál?**<br>
-> A meglévő bérlők migrálása az új felhasználói felületre folyamatban van. A bérlő migrálása előtt értesítés jelenik meg az Office-üzenetközpontban.
->
-> A 2017 januárja előtt létrehozott Intune-fiókok esetében az Apple-regisztrációs munkafolyamatok egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető. Ha a jelenlegi fiókkal nem érhető el az Azure Portal, javasoljuk, hogy hozzon létre egy próbafiókot.
->
-> A lehetséges akadályok listájának áttekintése: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* A [Hová kerültek a szolgáltatások az Azure-ban?](ui-changes.md) hivatkozással megjelenítheti az adott, az Azure-ra való átálláskor módosított munkafolyamatokat és felhasználóifelület-elemeket.
+* A [Klasszikus Intune-csoportok az Azure Portalon](groups-get-started.md) ismerteti a csoportok kezelésében az Azure Active Directory biztonsági csoportokra való áttérés hatásait.
+
+
 
 
 Ebben a könyvtárban találja az új termék folyamatosan frissülő dokumentációját. Ha javaslatai vannak, küldjön visszajelzést a témakör megjegyzéseiben. Szívesen meghallgatnánk a véleményét.
@@ -47,7 +44,14 @@ Az új felhasználói felület főbb újdonságai a következők:
 - Azure Active Directory- (AD-)csoportok az Azure-os alkalmazások közötti kompatibilitás érdekében
 - A legtöbb modern böngésző támogatása
 
-A klasszikus Intune-konzolhoz az [Intune dokumentációs könyvtárában](https://docs.microsoft.com/intune-classic/) találhat dokumentációt.
+> [!IMPORTANT]
+> **Nem jelenik még meg az új portál?**<br>
+> A meglévő bérlők migrálása az új felhasználói felületre folyamatban van. A bérlő migrálása előtt értesítés jelenik meg az Office-üzenetközpontban.
+>
+> A 2017 januárja előtt létrehozott Intune-fiókok esetében az Apple-regisztrációs munkafolyamatok egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető. Ha a jelenlegi fiókkal nem érhető el az Azure Portal, javasoljuk, hogy hozzon létre egy próbafiókot.
+>
+> A lehetséges akadályok listájának áttekintése: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>Előkészületek
 

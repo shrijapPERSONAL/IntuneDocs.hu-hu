@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -83,7 +83,7 @@ Az Intune App SDK az alkalmazás forráskódjának módosítását igényli az I
 
 Amikor például az `AppSpecificActivity` interakcióba lép a szülőjével (például meghívja a következőt: `super.onCreate()`), a `MAMActivity` lesz a szülőosztály.
 
-Az androidos alkalmazások általában egyszeres módban működnek, és a [**Context**](https://developer.android.com/reference/android/content/Context.html) objektumukon keresztül férhetnek hozza a rendszerhez. Az Intune App SDK-t integráló alkalmazások viszont kettős módban működhetnek. Ezek az alkalmazások a továbbiakban is a `Context` objektumon keresztül érik el a rendszert. Az Android a használt alapszintű `Activity` alapján biztosítja a `Context` objektumot, vagy a rendszer intelligensen multiplexel a rendszer korlátozott nézete, illetve az Android által biztosított `Context` között.
+Az androidos alkalmazások általában egyszeres módban működnek, és a [**Context**](https://developer.android.com/reference/android/content/Context.html) objektumukon keresztül férhetnek hozza a rendszerhez. Az Intune App SDK-t integráló alkalmazások viszont kettős módban működhetnek. Ezek az alkalmazások a továbbiakban is a `Context` objektumon keresztül érik el a rendszert. Az Android a használt alapszintű `Activity` alapján biztosítja a `Context` objektumot, vagy a rendszer intelligensen multiplexel a rendszer korlátozott nézete, illetve az Android által biztosított `Context` között. A MAM egyik belépési pontjából történő származtatást követően a megszokott módon használhatja a `Context` szintet, például elindíthatja az `Activity`-osztályokat, és használhatja a `PackageManager` eszközt is.
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Az osztályok, a metódusok és a tevékenységek lecserélése a MAM-kompatibilis megfelelőkre
@@ -136,7 +136,7 @@ Az androidos alaposztályokat a MAM-megfelelőjükkel kell helyettesíteni. Ehhe
 
 
 ### <a name="renamed-methods"></a>Átnevezett metódusok
-A MAM egyik belépési pontjából történő származtatást követően a megszokott módon használhatja a `Context` szintet, például elindíthatja az `Activity`-osztályokat, és használhatja a `PackageManager` eszközt is.
+
 
 Sok esetben az androidos osztályban rendelkezésre álló metódus végsőként van megjelölve a helyettesítő MAM-osztályban. Ebben az esetben a helyettesítő MAM-osztály egy hasonlóan elnevezett metódust biztosít (általában a `MAM` utótaggal), amelyet felül kell írni. Így például a `MAMActivity` származtatásakor az `onCreate()` felülírása, illetve a `super.onCreate()` metódus hívása helyett az `Activity` tevékenységnek felül kell írnia az `onMAMCreate()` metódust, és meg kell hívnia a `super.onMAMCreate()` metódust. A Java-fordítónak érvényesítenie kell a végső korlátozásokat az eredeti metódus véletlen felülbírálásának elkerülése érdekében az egyenértékű MAM-metódus helyett.
 
@@ -146,7 +146,7 @@ A `PendingIntent.get*` helyett például a `MAMPendingIntent.get*` metódust kel
 ### <a name="manifest-replacements"></a>Cserék a jegyzékben
 Ne feledje, hogy a fenti osztálycserék egy részét a jegyzékfájlban és a Java-kódban is el kell végezni. Különösen fontos:
 * a jegyzékfájlban szereplő `android.support.v4.content.FileProvider`-hivatkozásokat le kell cserélni erre: `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
-
+* Ha alkalmazásának nincs szüksége saját származtatott alkalmazásosztályra, a `com.microsoft.intune.mam.client.app.MAMApplication` beállításban a jegyzékfájlban használt alkalmazásosztály nevét kell beállítani.
 
 ## <a name="sdk-permissions"></a>Az SDK engedélyei
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>Alkalmazás részvételét igénylő szolgáltatások engedélyezése
 
-Az SDK számos alkalmazásvédelmi szabályzatot nem tud önállóan implementálni. Az alkalmazás a saját működésének szabályozásával képes e funkciókat biztosítani. Ehhez több API-t használ, amelyek az alábbi `AppPolicy` felületen találhatók.
+Az SDK számos alkalmazásvédelmi szabályzatot nem tud önállóan implementálni. Az alkalmazás a saját működésének szabályozásával képes e funkciókat biztosítani. Ehhez több API-t használ, amelyek az alábbi `AppPolicy` felületen találhatók. Egy `AppPolicy`-példány beolvasásához használja a `MAMPolicyManager.getPolicy`-t.
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> A `MAMComponents.get(AppPolicy.class)` mindig nem null értékű alkalmazásszabályzatot ad vissza – akkor is, ha az eszközre vagy az alkalmazásra nem vonatkozik Intune-beli felügyeleti szabályzat.
+> A `MAMPolicyManager.getPolicy` mindig nem null értékű alkalmazásszabályzatot ad vissza – akkor is, ha az eszközre vagy az alkalmazásra nem vonatkozik Intune-beli felügyeleti szabályzat.
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>Példa: annak megállapítása, hogy az alkalmazáshoz szükséges-e PIN-kód
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_FOR_BUSINESS
     * SaveLocation.LOCAL
-    * SaveLocation.OTHER
+    * SaveLocation.SHAREPOINT
 
 Korábban ugyanezen **AppPolicy** osztály `getIsSaveToPersonalAllowed()` függvényével lehetett megállapítani, hogy az adott felhasználó szabályzata engedélyezi-e a mentést különféle helyekre. Ez a függvény mostanra **elavult**, és nem szabad használni. Az alábbi kód egyenértékű a `getIsSaveToPersonalAllowed()` függvénnyel:
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -748,13 +748,17 @@ Az adatok biztonsági mentésével kapcsolatos Android-útmutatóban meg van adv
 ### <a name="overview"></a>Áttekintés
 Az Intune App SDK alapértelmezés szerint az alkalmazás egészére alkalmazza a szabályzatot. A többszörös identitás az Intune-alkalmazásvédelem választható funkciója, amelynek engedélyezése esetén a szabályzatok identitásonként alkalmazhatók. Ez a többi alkalmazásvédelmi funkciónál jelentősen nagyobb mértékű közreműködést igényel az alkalmazástól.
 
-Az alkalmazásnak _kötelező_ tájékoztatnia az SDK-t, amikor módosítani készül az aktív identitást, és az SDK is értesíti az alkalmazást, amikor szükség van az identitás megváltoztatására. Ha a felhasználó már beléptette az eszközt vagy az alkalmazást, az SDK regisztrálja ezt az identitást, és ezt tekinti az Intune-ban felügyelt elsődleges identitásnak. Az alkalmazás többi felhasználójával nem felügyeltként bánik, szabályzatbeállításaik korlátlanok.
+Az alkalmazásnak tájékoztatnia *kell* az SDK-t, ha módosítani kívánja az aktív identitást. Egyes esetekben az SDK is értesíti az alkalmazást, ha identitásváltás szükséges. A legtöbb esetben azonban MAM nem ismeri a felhasználói felületen éppen megjelenített, vagy egy adott időben egy szálon használt adatokat, és az alkalmazásra hagyatkozik a helyes identitás beállításához az adatvesztés elkerülése érdekében. A következő szakaszokban néhány, az alkalmazás műveletét igénylő helyzetet tüntetünk fel.
+
+> [!NOTE]
+>  Az alkalmazás megfelelő közreműködésének elmulasztása adatszivárgásokat és egyéb biztonsági problémákat okozhat.
+
+Ha a felhasználó már beléptette az eszközt vagy az alkalmazást, az SDK regisztrálja ezt az identitást, és ezt tekinti az Intune-ban felügyelt elsődleges identitásnak. Az alkalmazás többi felhasználójával nem felügyeltként bánik, szabályzatbeállításaik korlátlanok.
 
 > [!NOTE]
 > Jelenleg eszközönként csak egy Intune által felügyelt identitás támogatott.
 
 Felhívjuk, hogy az identitás egyszerűen egy karakterláncként van definiálva. Az identitásokban **nem számítanak különbözőnek a kis- és a nagybetűk**, és az SDK nem feltétlen olyan kis- és nagybetűkkel adja vissza a tőle kért identitásokat, mint ahogyan az az identitás beállításakor eredetileg meg volt adva.
-
 
 ### <a name="enabling-multi-identity"></a>Több identitás használatának engedélyezése
 
@@ -774,7 +778,9 @@ A fejlesztők (csökkenő prioritási sorrendben) a következő szinteken állí
   2. Környezet (általában tevékenység) szintje
   3. Folyamat szintje
 
-A szál szintjén beállított identitás felülírja a környezet szintjén beállított identitást, mely utóbbi felülírja a folyamat szintjén beállított identitást. Környezet szintjén beállított identitást csak megfelelő társított helyzetekben használnak. A fájl-I/O-műveleteknek például nincs társított környezetük. A `MAMPolicyManager` következő metódusaival lehet beállítani az identitást, illetve beolvasni a korábban beállított identitásértékeket.
+A szál szintjén beállított identitás felülírja a környezet szintjén beállított identitást, mely utóbbi felülírja a folyamat szintjén beállított identitást. A környezet szintjén beállított identitás csak a megfelelő társított esetekben használatos. A fájlok I/O műveleteihez például nem tartozik környezet. A leggyakrabban az alkalmazások állítják be az adott tevékenységre vonatkozó környezeti identitást. Az alkalmazásnak nem *kell* megjelenítenie az adatokat egy felügyelt identitás számára, hacsak a tevékenység identitása nem ugyanazon identitásra van beállítva. A folyamatszintű identitás általában csak akkor hasznos, ha az alkalmazás egyszerre csak egy-egy felhasználóval működik az összes szálon. Számos alkalmazásnak nem feltétlenül kell igénybe vennie.
+
+A `MAMPolicyManager` következő metódusaival lehet beállítani az identitást, illetve beolvasni a korábban beállított identitásértékeket.
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ A szál szintjén beállított identitás felülírja a környezet szintjén be�
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ Az identitást beállító összes metódus a `MAMIdentitySwitchResult` objektum
 | Visszatérési érték | Forgatókönyv |
 |--|--|
 | SUCCEEDED | Az identitásváltás sikeres volt. |
-| NOT_ALLOWED | Az identitásváltás nem engedélyezett. <br><br>Ez akkor fordul elő, amikor valaki egy másik, a beléptetett felhasználóval egyazon szervezethez tartozó felügyelt felhasználóra próbál átváltani; vagy ha valaki a Felhasználói felület (Környezet) identitást próbálja beállítani, amikor egy másik identitás van beállítva az aktuális szálhoz. |
+| NOT_ALLOWED | Az identitásváltás nem engedélyezett. Az identitásváltás nem engedélyezett. Ez akkor fordul elő, ha valaki a Felhasználói felület (Környezet) identitást próbálja beállítani, amikor egy másik identitás van beállítva az aktuális szálhoz. |
 | CANCELLED | A felhasználó megszakította az identitásváltást. Ez általában úgy történik, hogy megnyomja a Vissza gombot egy PIN-kódot kérő vagy hitelesítési üzenetnél. |
 | FAILED | Az identitásváltás ismeretlen okból nem sikerült.|
+
+Az alkalmazásnak a vállalati adatok megjelenítése vagy használata előtt meg *kell* győződnie az identitásváltás sikerességéről. Jelenleg a folyamat- és a szálidentitás-váltások mindig sikeresek lesznek a több identitást támogató alkalmazások esetén, azonban fenntartjuk a jogot hibafeltételek hozzáadására. A felhasználói felület identitásváltása sikertelen lehet érvénytelen argumentumok esetén, ha az ütközne a szálidentitással, vagy ha a felhasználó a feltételes indítási követelményeit megszakítja (pl. a Vissza gombra kattint a PIN-kód képernyőn).
 
 
 Környezet identitás beállítása esetén az eredmény aszinkron módon jelenik meg. Ha a Környezet egy tevékenység, akkor az SDK mindaddig nem tudja, hogy sikeres volt-e az identitásváltás, amíg feltételes indítás történik – itt ugyanis a felhasználónak meg kell adnia a PIN-kódját vagy vállalati hitelesítő adatait. Az alkalmazásnak az elvárások szerint egy `MAMSetUIIdentityCallback` interfészt implementálva kell fogadnia ezt az eredményt, bár ennél a paraméternél a null érték átadása is megengedett.
@@ -927,10 +935,10 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
     }
 
   ```
+#### <a name="app-responsibility"></a>Alkalmazás feladatköre
+A MAM nem következtethet automatikusan kapcsolatra a beolvasott fájlok és egy `Activity` által megjelenített adatok között. Az alkalmazásoknak a vállalati adatok megjelenítése előtt be *kell* állítaniuk a megfelelő felhasználóifelület-identitást. Ez érvényes a fájlokból beolvasott adatokra is. Az alkalmazáson kívüli forrásból (ami lehet egy `ContentProvider` vagy egy nyilvánosan írható hely) származó fájlok esetén az alkalmazásnak meg *kell* kísérelnie a fájl identitásának megállapítását (a `MAMFileProtectionManager.getProtectionInfo` használatával), mielőtt megjelenítené a fájlból beolvasott információt. Ha a `getProtectionInfo` nem null, nem üres identitást jelez, a felhasználói felület identitását azzal egyezőre *kell* beállítani (a `MAMActivity.switchMAMIdentity` vagy a `MAMPolicyManager.setUIPolicyIdentity` használatával). Ha az identitásváltás nem sikerül, a fájl adatait *nem szabad* megjeleníteni.
+
+A folyamat lehet például a következőhöz hasonló:
+  * A felhasználó kiválaszt egy, az alkalmazásban megnyitandó dokumentumot.
+  * A megnyitási folyamat során az adatok a lemezről való beolvasása előtt az alkalmazás ellenőrzi a tartalom megjelenítésére használandó identitást.
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * Az alkalmazás megvárja, amíg a visszahívás egy eredményt jelez.
+    * Ha a jelentett eredmény hiba, az alkalmazás nem jeleníti meg a dokumentumot.
+  * Az alkalmazás megnyílik, és az egész fájlt megjeleníti.
+
+## <a name="offline-scenarios"></a>Kapcsolat nélküli forgatókönyvek
 
 A fájl identitásának címkézésénél az offline mód különbségnek számít. A következő szempontokat kell figyelembe venni:
 
@@ -1093,6 +1128,150 @@ Ha egy alkalmazás regisztrál a `WIPE_USER_DATA` értesítésre, akkor nem vehe
 
 Ha a többidentitásos alkalmazás szeretné végrehajtatni a MAM alapértelmezett szelektív törlését, _**és**_ ezenfelül saját törlési műveleteit is végre szeretné hajtani, akkor célszerű feliratkoznia a `WIPE_USER_AUXILIARY_DATA` értesítésekre. Ezt az értesítést az SDK közvetlenül azelőtt küldi el, hogy végrehajtaná a MAM alapértelmezett szelektív törlési műveletét. Egyazon alkamazásnak nem szabad mind a WIPE_USER_DATA, mind a WIPE_USER_AUXILIARY_DATA értesítésre feliratkoznia.
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Célzott MAM-konfiguráció engedélyezése Android-alkalmazásokhoz (nem kötelező)
+Az alkalmazásspecifikus kulcs-érték párok az Intune-konzolon konfigurálhatók. A kulcs-érték párokat az Intune nem értelmezi, hanem egyszerűen továbbadja az alkalmazásnak. Azon alkalmazások, amelyek ilyen konfigurációt kívánnak kapni, a `MAMAppConfigManager` és `MAMAppConfig` osztályokat használhatják ehhez. Ha több szabályzat ugyanazon alkalmazást célozza, valószínűleg több ütköző érték érhető el ugyanazon kulcshoz.
+
+### <a name="example"></a>Példa
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>MAMAppConfig hivatkozás
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>Értesítés
+Az alkalmazás konfigurációja egy új értesítéstípust ad hozzá:
+* **REFRESH_APP_CONFIG**: ezt az értesítést egy `MAMUserNotification` tartalmazza, és tájékoztatja az alkalmazást, hogy új alkalmazáskonfigurációs adatok érhetők el.
+
+A Graph API célzott MAM-konfigurációs értékekre vonatkozó képességeivel kapcsolatos további információért lásd a [Graph API-referencia – célzott MAM-konfiguráció](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) témájú weblapot. <br>
+
+A célzott MAM-alkalmazáskonfigurációs szabályzat Android rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata Android rendszerben](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
 
 ## <a name="style-customization-optional"></a>Stílus testreszabása (nem kötelező)
 
@@ -1141,18 +1320,22 @@ A [ProGuard](http://proguard.sourceforge.net/) nélkül futó nagyméretű kódb
 1.  A mezőkre vonatkozó 65 KB-os korlát.
 2.  A metódusokra vonatkozó 65 KB-os korlát.
 
-
-
 ### <a name="policy-enforcement-limitations"></a>Szabályzatbetartatási korlátozások
 
 * **Képernyőfelvétel**: Az SDK nem tud új képernyőfelvétel-beállítási értéket kikényszeríteni azon tevékenységeknél, amelyeknél már lefutott az Activity.onCreate. Ez olyan időszakot eredményezhet, amikor az alkalmazás a képernyőfelvételek letiltására lett konfigurálva, de továbbra is lehet képernyőfelvételt készíteni.
 
 * **Tartalomfeloldók használata**: Az „átvitel vagy fogadás” Intune-szabályzat részben vagy teljesen blokkolhatja más alkalmazások tartalomszolgáltatójának tartalomfeloldóval történő elérését. Ennek következtében a ContentResolver metódusok null vagy hibaértéket fognak visszaadni (például az `openOutputStream` a `FileNotFoundException` kivételhibát fogja okozni, ha blokkolva van). Az alkalmazás a következő hívással állapíthatja meg, hogy a tartalomfeloldón keresztüli adatírás sikertelenségét házirend okozta (vagy hogy egy házirend ilyen hibát okozna):
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    vagy ha nincs hozzárendelt tevékenység
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    A második esetben a több identitást használó alkalmazásoknak ügyelniük kell a szálidentitás megfelelő beállítására (vagy explicit identitásértéket kell átadniuk a `getPolicy` metódushívásban).
+    
 ### <a name="exported-services"></a>Exportált szolgáltatások
 
  Az Intune App SDK-ban szereplő AndroidManifest.xml fájlban szerepel a **MAMNotificationReceiverService** szolgáltatás, amelynek exportált szolgáltatásnak kell lennie ahhoz, hogy a Céges portál értesítéseket küldhessen a kompatibilis alkalmazásoknak. A szolgáltatás ellenőrzi a hívót annak ellenőrzéséhez, hogy csak a vállalati portál számára engedélyezett-e az értesítések küldése.

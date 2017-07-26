@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez az Intune App Wrapping Tool eszközével
 
@@ -121,6 +121,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 Az eszköz kérni fogja következő információkat: **KeyStorePassword** és **KeyPassword**. Adja meg a kulcstárfájlok létrehozásánál használt hitelesítő adatokat.
 
 Az eszköz generálja a beburkolt alkalmazást, és menti a naplófájllal együtt a megadott kimeneti elérési útra.
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Az aláíró tanúsítványok és a burkolóalkalmazások újbóli használata
+Az Android minden alkalmazás esetében érvényes tanúsítvánnyal való aláírást követel meg ahhoz, hogy azokat Android-eszközökre lehessen telepíteni.
+
+A beburkolt alkalmazások aláírása elvégezhető a burkolási folyamat részeként, vagy pedig a burkolás *után*, meglévő aláíró eszközökkel (ekkor a rendszer minden, a burkolás előtt az alkalmazásban található aláírási információt elvet).
+ 
+Amennyiben ez lehetséges, az összeállítási folyamatban már felhasznált aláírási információkat kell felhasználni a burkolás során. Egyes szervezetekben elképzelhető, hogy ehhez a kulcstároló tulajdonosával (azaz az alkalmazás-összeállító csapattal) való együttműködés szükséges. 
+
+Ha az előző aláíró tanúsítvány nem használható, vagy ha az alkalmazás korábban még nem lett telepítve, az [Android fejlesztői útmutatójának](https://developer.android.com/studio/publish/app-signing.html#signing-manually) utasításai alapján létrehozhat egy új aláíró tanúsítványt.
+
+Ha az alkalmazás korábban már telepítve lett egy másik aláíró tanúsítvánnyal, az alkalmazást a frissítés után nem lehet feltölteni az Intune-konzolra. Ha az alkalmazás egy másik tanúsítvánnyal van aláírva, mint amellyel az alkalmazás össze lett állítva, az alkalmazásfrissítési forgatókönyvek megszakadnak. Ennek megfelelően minden új aláíró tanúsítványt karban kell tartani az alkalmazásfrissítésekhez. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz futtatásához kapcsolódó biztonsági szempontok
 A lehetséges hamisítási, információfelfedési és a jogok kiterjesztéséből adódó támadások megelőzése érdekében:
