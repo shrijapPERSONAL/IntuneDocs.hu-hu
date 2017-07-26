@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Int
 | **A hozzáférési követelmények ismételt ellenőrzése ennyi idő után (perc)** | Adja meg a következő beállításokat: <ul><li>**Időtúllépés**: ennyi perc elteltével ellenőrzi újra a rendszer a (korábban a szabályzatban definiált) hozzáférési követelményeket. Ha például a rendszergazda a szabályzatban bekapcsolja a PIN-kódot, a felhasználóknak a MAM-alkalmazások megnyitásakor PIN-kódot kell megadniuk. Ezen beállítás használata esetén a felhasználónak (alapértelmezés szerint) további **30 percig** nem kell a PIN-kódját beírnia más MAM-alkalmazások eléréséhez.</li><li>**Offline türelmi időszak**: ennyi percig futhatnak offline állapotban a MAM-alkalmazások, itt adható meg (percben), hogy mikor ellenőrizze a rendszer újra az alkalmazás hozzáférési követelményeit. Alapértelmezett érték = **720** perc (12 óra). Az időszak lejárta után az alkalmazás további futásához AAD-s felhasználói hitelesítés szükséges.</li></ul>| Időkorlát: 30 <br><br> Offline: 720 |
 | **Offline időtartam (nap) az alkalmazásadatok törlése előtt** | Ennyi (a rendszergazda által megadott számú) napnyi offline működés után hajt végre az alkalmazás szelektív törlést. Ez ugyanaz a művelet, mint amelyet a rendszergazda kezdeményezhet a MAM törlési munkafolyamatában. <br><br> | 90 nap |
 | **Alkalmazás PIN-kódjának letiltása, ha az eszköz PIN-kódja felügyelt** | Válassza az **Igen** beállítást, ha le szeretné tiltani az alkalmazás PIN-kódját, amikor a regisztrált eszközön eszközzárolást észlelt a rendszer. | Nem |
-| **Az iOS operációs rendszer minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget, hogy az alkalmazás használatához egy minimális iOS operációs rendszerre legyen szükség. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek. | Nem |
-| **Az iOS operációs rendszer minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget, hogy az alkalmazás használatához egy minimális iOS operációs rendszerre legyen szükség. A felhasználó értesítést fog kapni, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető. | Nem |
+| **Az iOS operációs rendszer minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget, hogy az alkalmazás használatához egy minimális iOS operációs rendszerre legyen szükség. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek. A szabályzat egyetlen tizedespont használatát támogatja. Példa: iOS 10.3. | Nem |
+| **Az iOS operációs rendszer minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget, hogy az alkalmazás használatához egy minimális iOS operációs rendszerre legyen szükség. A felhasználó értesítést fog kapni, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető. A szabályzat egyetlen tizedespont használatát támogatja. Példa: iOS 10.3. | Nem |
 | **Az alkalmazás minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer eszközön lévő verziója nem felel meg a követelménynek.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> | Nem | 
 | **Az alkalmazás minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójára vonatkozó javaslat megjelenítéséhez. A felhasználó értesítést fog kapni, ha az alkalmazásnak az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> | Nem | 
 | **Az Intune alkalmazásvédelmi szabályzat minimális SDK-verziójának megkövetelése** | Válassza az **Igen** lehetőséget az Intune alkalmazásvédelmi szabályzat az alkalmazás által kötelezően használandó minimális SDK-verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az alkalmazásra vonatkozó Intune alkalmazásvédelmi szabályzatának SDK-verziója nem felel meg a követelménynek. <br> <br> Az Intune alkalmazásvédelmi szabályzat SDK-val kapcsolatos további tudnivalókért lásd: [Az Intune App SDK áttekintése](app-sdk.md) <br><br> | Nem |

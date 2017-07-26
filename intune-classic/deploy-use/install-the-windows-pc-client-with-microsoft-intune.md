@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
 
@@ -43,11 +43,11 @@ Az összes módszer, kivéve azokat, amelyekben maguk a felhasználók telepíti
 
   ![Az Intune-számítógépügyfél letöltése](../media/pc-sa-client-download.png)
 
-2.  Az **Ügyfélszoftver letöltése** oldalon kattintson az **Ügyfélszoftver letöltése** elemre. Ezt követően mentse a szoftvert tartalmazó **Microsoft_Intune_Setup.zip** csomagot a hálózat egy biztonságos helyére.
+2. Az **Ügyfélszoftver letöltése** oldalon kattintson az **Ügyfélszoftver letöltése** elemre. Ezt követően mentse a szoftvert tartalmazó **Microsoft_Intune_Setup.zip** csomagot a hálózat egy biztonságos helyére.
 
-Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
+  Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
 
-3.  Bontsa ki a telepítőcsomag tartalmát a biztonságos helyre a hálózaton.
+3. Bontsa ki a telepítőcsomag tartalmát a biztonságos helyre a hálózaton.
 
     > [!IMPORTANT]
     > Ne nevezze át és ne távolítsa el a kibontott **ACCOUNTCERT** fájlt, különben az ügyfélszoftver telepítése sikertelen lesz.
@@ -198,13 +198,10 @@ Rendszergazdai jogú parancssorból futtassa az alábbi parancsok egyikét.
 
 **1. módszer:**
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **2. módszer:**<br>Vegye figyelembe, hogy minden alábbi ügynök telepítve van a Windows összes termékváltozatán):
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Rendszergazdai jogú parancssorból futtassa az alábbi parancsok egyikét.
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > Az ügyfél regisztrációjának törlése elavult kiszolgálóoldali rekordot hagy hátra az érintett ügyfélen. A regisztráció törlése aszinkron folyamat, és kilenc ügynök eltávolítására van szükség, így a művelet befejezése akár 30 percet is igénybe vehet.
@@ -255,10 +251,8 @@ Ellenőrizze a %ProgramFiles%\Microsoft\OnlineManagement mappát, és győződj�
 
 A regisztrációtörlési folyamat nem távolítja el az OnlineManagement nevű mappát. Várjon 30 percet az eltávolítás után, majd futtassa ezt a parancsot. Ha túl hamar futtatja, az eltávolítás ismeretlen állapotú maradhat. A mappa eltávolításához nyisson meg egy rendszergazdai jogú parancssort, majd futtassa a következő parancsot:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>További információ
+### <a name="next-steps"></a>További lépések
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)
 [Az ügyfél beállításának hibaelhárítása](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

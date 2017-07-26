@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Az Intune hálózatisávszélesség-felhasználása
 
@@ -30,7 +30,7 @@ Ez az útmutató az Intune szolgáltatás hálózati követelményeivel kapcsola
 A táblázat az egyes ügyfelek esetében a hálózaton áthaladó általános tartalmak hozzávetőleges méretét és gyakoriságát tartalmazza.
 
 > [!NOTE]
-> Ahhoz, hogy a számítógépek és mobileszközök biztosan megkapják a szükséges frissítéseket és tartalmakat az Intune szolgáltatástól, rendszeresen kapcsolódniuk kell az internethez. A frissítések vagy tartalmak fogadásához szükséges idő változó, de az eszközöket ajánlott minden nap legalább 1 óráig folyamatosan az internethez csatlakoztatva tartani.
+> Annak biztosítása érdekében, hogy az eszközök megkapják a frissítéseket és a tartalmakat az Intune-ból, rendszeresen kapcsolódniuk kell az internethez. A frissítések vagy tartalmak fogadásához szükséges idő változó lehet, de az eszközöket minden nap legalább egy óráig folyamatosan az internethez csatlakoztatva kell tartani.
 
 |Tartalom típusa|Hozzávetőleges méret|Gyakoriság és részletek|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ A táblázat az egyes ügyfelek esetében a hálózaton áthaladó általános t
 Az alábbi eljárások közül egynek vagy többnek az alkalmazásával csökkenthető az Intune-ügyfelek által felhasznált hálózati sávszélesség.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Proxykiszolgáló használata a tartalomkérelmek gyorsítótárazásához
-A tartalmak egy proxykiszolgálóval való gyorsítótárazásával csökkenthető az ismétlődő letöltések mennyisége és az internetről tartalmat igénylő ügyfelek által felhasznált hálózati sávszélesség.
+A proxykiszolgálók képesek gyorsítótárazni a tartalmakat, amivel csökkenthető az ismétlődő letöltések és az internetről származó tartalmakhoz felhasznált hálózati sávszélesség mennyisége.
 
-A gyorsítótárazási proxykiszolgáló fogadja a hálózaton lévő ügyfélszámítógépek tartalomkérelmeit, beszerzi ezeket a tartalmakat az interneten, és ezután a HTTP-válaszokat és a bináris letöltéseket is képes gyorsítótárazni. A kiszolgáló a gyorsítótárban lévő adatokkal válaszolja meg az Intune-ügyfélszámítógépektől érkező későbbi kérelmeket.
+Az ügyfelek tartalomkéréseit fogadó gyorsítótárazási proxykiszolgálók be tudják olvasni a megfelelő tartalmakat, és képesek gyorsítótárazni a webes válaszokat és a letöltéseket is. A kiszolgáló az ügyfelek későbbi kérelmeire a gyorsítótárazott adatok alapján ad választ.
 
 Az alábbiakban az Intune-ügyfelek számára tartalmakat gyorsítótárazó proxykiszolgálókhoz használható tipikus beállítások láthatók.
 
@@ -70,7 +70,7 @@ Az Intune a beállított időszakokban felhasznált hálózati sávszélesség c
 A BITS Windows rendszerű számítógépeken való használatáról a TechNet könyvtár a [Háttérben futó intelligens átviteli szolgáltatással foglalkozó témakörében](http://technet.microsoft.com/library/bb968799.aspx) olvashat bővebben.
 
 ### <a name="use-branchcache-on-computers"></a>A BranchCache használata a számítógépeken
-Az Intune-ügyfeleken a BranchCache szolgáltatással is csökkenthető a nagykiterjedésű hálózati (WAN) forgalom. A következő, ügyfélként is támogatott operációs rendszerek támogatják a BranchCache szolgáltatást is:
+Az Intune-ügyfeleken a BranchCache szolgáltatással is csökkenthető a nagykiterjedésű hálózati (WAN) forgalom. A következő operációs rendszerek támogatják a BranchCache használatát:
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Az Intune-ügyfeleken a BranchCache szolgáltatással is csökkenthető a nagyki
 
 A BranchCache használatához az ügyfélszámítógépen engedélyezni kell a BranchCache-t, majd az **elosztott gyorsítótáras módot** kell beállítani rajta.
 
-A BranchCache és az elosztott gyorsítótáras mód alapértelmezés szerint engedélyezve van azokon a számítógépeken, amelyekre telepítve van az Intune-ügyfél. Ha azonban az ügyfélre már érvényes egy, a BranchCache szolgáltatást letiltó csoportházirend, az Intune ezt nem bírálja felül, és a BranchCache letiltva marad ezen a számítógépen.
+A BranchCache és az elosztott gyorsítótáras mód alapértelmezés szerint engedélyezve van azokon a számítógépeken, amelyekre telepítve van az Intune-ügyfél. Ugyanakkor ha a BranchCache le van tiltva a Csoportházirendben, az Intune nem bírálja felül ezt a szabályzatot, és a BranchCache letiltva marad.
 
-A BranchCache használata eseten lépjen kapcsolatba a szervezet más, a Csoportházirendet és az Intune tűzfalszabályzatát kezelő rendszergazdáival, hogy ne alkalmazzanak a BranchCache szolgáltatást vagy a tűzfalkivételeket letiltó szabályzatokat. A BranchCache-sel kapcsolatban bővebben lásd: [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx) (A BranchCache áttekintése).
+A BranchCache használatakor a szervezet más rendszergazdáival együttműködve kezeljék a Csoportházirendet és az Intune-tűzfalházirendet. Győződjön meg arról, hogy nem alkalmaznak a BranchCache szolgáltatást vagy a tűzfalkivételeket letiltó szabályzatokat. A BranchCache-sel kapcsolatban bővebben lásd: [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx) (A BranchCache áttekintése).
 
 ## <a name="network-communication-requirements"></a>Hálózati kommunikációs követelmények
 
-Engedélyezni kell a hálózati kommunikációt a felügyelt eszközök és az Intune-előfizetés kezelésére használt eszközök között, illetve a felhőalapú szolgáltatásokhoz szükséges webhelyek között.
+Engedélyezze a hálózati kommunikációt a kezelt eszközök és a felhőalapú szolgáltatásokhoz szükséges webhelyek között.
 
 Az Intune nem használja a helyszíni infrastruktúrát (például olyan kiszolgálót, amelyen Intune szoftverek futnak), de a helyi infrastruktúra (így például Exchange és az Active Directory szinkronizálási eszközök) használata is lehetőséges.
 
-A tűzfalak és proxykiszolgálók mögött található számítógépek kezeléséhez olyan tűzfalakat és proxykiszolgálókat kell beállítania, amelyek engedélyezik a kommunikációt az Intune számára. A proxykiszolgáló mögött található számítógépek kezelésével kapcsolatban fontos tudni a következőket:
+A tűzfal mögötti számítógépek és a proxykiszolgálók kezeléséhez engedélyeznie kell az Intune-nal való kommunikációt.
 
 -   A proxykiszolgálónak támogatnia kell mind a **HTTP (80)**, mind a **HTTPS (443)** protokollt, mert az Intune-ügyfelek mindkét protokollt használják
--   Az Intune hitelesített proxykiszolgálói hozzáférést igényel a manage.microsoft.com webcímhez bizonyos műveletekhez, például szoftver és frissítések letöltéséhez
+-   Az Intune bizonyos feladatokhoz, például szoftverek és frissítések letöltéséhez hitelesített proxykiszolgálói hozzáférést igényel a manage.microsoft.com webcímhez
 
 Az egyes ügyfélszámítógépeken módosíthatja a proxykiszolgáló beállításait, vagy csoportházirend-beállítások segítségével módosíthatja egy adott proxykiszolgáló mögött található ügyfélszámítógépek beállításait.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 A felügyelt eszközöket úgy kell beállítani, hogy **Minden felhasználó** hozzáférjen a szolgáltatásokhoz a tűzfalon keresztül.
 

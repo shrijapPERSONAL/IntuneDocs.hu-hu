@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -107,7 +107,11 @@ További információt a [Mi az eszközmegfelelőség](device-compliance.md) cí
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>Adatvédelem
+
+### <a name="ios-app-protection-policies"></a>iOS-es alkalmazásvédelmi szabályzatok
+
+Megadhat olyan [iOS-hez készült alkalmazásvédelmi szabályzatokat](app-protection-policy-settings-ios.md), melyek a mobilakalmazás-kezeléssel, regisztráció nélkül kezelt eszközök felhasználói számára érhetőek el. Egy átmeneti hiba miatt ezeket a szabályzatok csak olyan iOS-verziókhoz adhatók meg, melyekben egyetlen, és nem pedig több tizedespont szerepel. Ahelyett, hogy az iOS 10.3.1-et adná meg minimális verzióként, az iOS 10.3-at kell beállítania. Ezt a problémát az iOS SDK hamarosan megjelenő frissítése meg fogja oldani.
 
 
 ## <a name="administration-and-accounts"></a>Felügyelet és fiókok
