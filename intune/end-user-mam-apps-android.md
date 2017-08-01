@@ -20,14 +20,12 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/13/2017
 ---
-# Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?
-<a id="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies" class="xliff"></a>
+# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Ez a témakör az alkalmazásvédelmi szabályzatokkal védett alkalmazások felhasználói élményét ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkahelyi környezetben használják: például amikor egy munkahelyi fiókkal fér hozzá az alkalmazásokhoz, vagy a vállalata OneDrive vállalati helyén tárolt fájlokhoz fér hozzá.
-##  Alkalmazások elérése
-<a id="access-apps" class="xliff"></a>
+##  <a name="access-apps"></a>Alkalmazások elérése
 
 Androidos eszközökön minden alkalmazásvédelmi szabályzathoz rendelt alkalmazás esetén szükség van a Céges portál alkalmazásra.
 
@@ -36,15 +34,13 @@ Azokon az eszközökön, amelyek nincsenek regisztrálva az Intune-ban, az eszk�
 A Munkahelyi portál alkalmazás biztonságos helyet tesz elérhetővé az Intune számára, ahol a szolgáltatás megoszthatja az adatokat. A Céges portál alkalmazás ezért az összes alkalmazásvédelmi szabályzat alá vont alkalmazás esetében követelmény, még akkor is, ha maga az eszköz nincs regisztrálva az Intune-ban.
 
 
-##  A többszörös identitást támogató alkalmazások használata
-<a id="use-apps-with-multi-identity-support" class="xliff"></a>
+##  <a name="use-apps-with-multi-identity-support"></a>A többszörös identitást támogató alkalmazások használata
 
 Az alkalmazásvédelmi szabályzatokat a rendszer csak a munkahelyi használat esetén alkalmazza. Ez azt jelenti, hogy az alkalmazás eltérő módon működhet, attól függően, hogy munkahelyi vagy személyes célokra használják.
 
 Például a munkahelyi adatok elérésekor a felhasználónak PIN-kódot kell megadnia. Az **Outlook alkalmazás** esetében a felhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazás** esetében a felhasználónak a munkahelyi fiók beírásakor kell megadnia a PIN-kódot. A Microsoft **Word**, a **PowerPoint** és az **Excel** esetében a felhasználónak akkor kell megadnia a PIN-kódot, ha a vállalat OneDrive vállalati helyén tárolt dokumentumhoz szeretne hozzáférni.
 
-##  Felhasználói fiókok kezelése az eszközön
-<a id="manage-user-accounts-on-the-device" class="xliff"></a>
+##  <a name="manage-user-accounts-on-the-device"></a>Felhasználói fiókok kezelése az eszközön
 
 Az Intune az alkalmazásvédelmi szabályzatok telepítését eszközönként csak egy felhasználói fiók esetében támogatja.
 
@@ -61,16 +57,13 @@ Az Intune az alkalmazásvédelmi szabályzatok telepítését eszközönként cs
 A következő példák részletesen bemutatják, hogy a rendszer hogyan kezeli a további felhasználói fiókokat.
 
 Az A felhasználó két vállalatnak dolgozik: az **X vállalatnak** és az **Y vállalatnak**. Az A felhasználó munkahelyi fiókkal rendelkezik mindként vállalatnál, és mindkettő az Intune-t használja alkalmazásvédelmi szabályzatok telepítéséhez. Az **X vállalat** telepít elsőként alkalmazásvédelmi szabályzatokat, **megelőzve** az **Y vállalatot**. Az **X vállalathoz** tartozó fiók megkapja az alkalmazásvédelmi szabályzatot, de az Y vállalat fiókja nem. Ha azt szeretné, hogy az alkalmazásvédelmi szabályzatok az Y vállalathoz tartozó fiókot kezeljék, akkor el kell távolítania az X vállalathoz tartozó fiókot.
-### Második fiók hozzáadása
-<a id="add-a-second-account" class="xliff"></a>
-####  Android
-<a id="android" class="xliff"></a>
+### <a name="add-a-second-account"></a>Második fiók hozzáadása
+####  <a name="android"></a>Android
 Android-eszközön blokkoló üzenet jelenhet meg, amely ismerteti a meglévő fiók eltávolításának és új fiók felvételének lépéseit.  A meglévő fiók eltávolításához válassza a **Beállítások &gt;Általános &gt; Alkalmazáskezelő &gt;Munkahelyi portál** lehetőséget, majd itt az **Adatok törlése** lehetőséget.
 
 ![Képernyőfelvétel a hibaüzenetről és a fiók eltávolítására vonatkozó utasításokról](./media/Android_SwitchUser.png)
 
-##  Médiafájlok megtekintése az Azure Information Protection alkalmazással
-<a id="view-media-files-with-the-azure-information-protection-app" class="xliff"></a>
+##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Médiafájlok megtekintése az Azure Information Protection alkalmazással
 A vállalati AV-, PDF- és képfájlok Android-eszközökön való megtekintéséhez használja az [Azure Information Protection alkalmazást](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (amelyet korábban Rights Management-megosztóalkalmazásnak neveztünk).
 
 Ezt az alkalmazást a Google Play Áruházból töltheti le.  
@@ -87,6 +80,5 @@ A rendszer a következő fájltípusokat támogatja:
 |----|----|
 |A pfile egy általános „burkoló” formátum a védett fájlokhoz, amelyben a titkosított tartalom és az Azure Information Protection-licencek is megtalálhatók. Ez bármilyen fájltípus védelmére használható.|A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 
-## További lépések
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>További lépések
 [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](end-user-mam-apps-ios.md)

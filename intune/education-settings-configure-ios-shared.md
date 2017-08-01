@@ -160,7 +160,7 @@ Az eszközkategória ekkor létrejön a **Regisztráció – Eszközkategóriák
 
 A dinamikus csoport ekkor létrejön a **Felhasználók és csoportok – Minden csoport** panelen. 
 
-## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. lépés – eszközök hozzárendelése egy kategóriához (bevásárlókocsik) 
+## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. lépés – eszközök hozzárendelése egy kategóriához (kocsik) 
 
 1. Jelentkezzen be az Azure Portalra. 
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget. 
@@ -178,26 +178,26 @@ Az eszköz mostantól hozzá van rendelve az eszközkategóriához. Ismételje m
 1. Jelentkezzen be az Azure Portalra. 
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget. 
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget. 
-4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Bevásárlókocsi-profilok** lehetőséget. 
+4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Kocsiprofilok** lehetőséget. 
 5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget. 
 6. A **Hozzárendelés létrehozása** panelen adjon meg egy **Nevet** és egy **Leírást**. 
-7. A csoportok a Bevásárlókocsi-profillal való társításához válassza az **Osztályok kiválasztása** > **Konfigurálás** lehetőséget. 
-8. Válassza ki a Bevásárlókocsi-profilhoz hozzáadni kívánt osztályokat, majd kattintson a **Kijelölés** lehetőségre.  
-9. A csoportok a Bevásárlókocsi-profillal való társításához válassza az **Bevásárlókocsik kiválasztása** > **Konfigurálás** lehetőséget. 
-10. Válassza ki a Bevásárlókocsi-profilban alkalmazni kívánt csoportokat, majd kattintson a **Kijelölés** lehetőségre. 
-11. A Bevásárlókocsi-profil mentéséhez a **Hozzárendelés létrehozása** panelen válassza a **Mentés** lehetőséget. 
+7. A csoportok kocsiprofillal való társításához válassza az **Osztályok kiválasztása** > **Konfigurálás** lehetőséget. 
+8. Válassza ki a kocsiprofilhoz hozzáadni kívánt osztályokat, majd kattintson a **Kijelölés** lehetőségre.  
+9. A csoportok kocsiprofillal való társításához válassza az **Kocsik kiválasztása** > **Konfigurálás** lehetőséget. 
+10. Válassza ki a kocsiprofilban alkalmazni kívánt csoportokat, majd kattintson a **Kijelölés** lehetőségre. 
+11. A kocsiprofil mentéséhez a **Hozzárendelés létrehozása** panelen válassza a **Mentés** lehetőséget. 
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen. 
 
-## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. lépés – a Bevásárlókocsi-profil hozzárendelése az osztályokhoz 
+## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. lépés – a kocsiprofil hozzárendelése az osztályokhoz 
 
 1. Jelentkezzen be az Azure Portalra. 
 2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget. 
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget. 
 4. Az **Eszközkonfiguráció** panelen válassza a **Figyelés** > **Hozzárendelés állapota** lehetőséget. 
-5. A **Hozzárendelés állapota** panelen jelölje ki a létrehozott **Bevásárlókocsi-profilt**. 
-6. A **Bevásárlókocsi-profil** panelen válassza a **Hozzárendelések** lehetőséget, majd a **Belefoglalás** területen a **Válassza ki a befoglalandó csoportokat** lehetőséget. 
-7. Válassza ki bevásárlókocsi-profil célosztályait (ne válasszon ki csoportokat), majd kattintson a **Kijelölés** lehetőségre.  
+5. A **Hozzárendelés állapota** panelen jelölje ki a létrehozott **kocsiprofilt**. 
+6. A **kocsiprofil paneljén** válassza a **Hozzárendelések** lehetőséget, majd a **Belefoglalás** területen a **Válassza ki a befoglalandó csoportokat** lehetőséget. 
+7. Válassza ki a kocsiprofil célosztályait (ne válasszon ki csoportokat), majd kattintson a **Kijelölés** lehetőségre.  
 8. Ha elkészült, válassza a **Mentés** elemet. 
 
 A hozzárendelés ekkor befejeződik, az Intune pedig üzembe helyezi az Osztályterem profilját a céleszközökön az osztályterem-hozzárendelés alapján. 

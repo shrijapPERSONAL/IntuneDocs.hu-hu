@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/12/2017
 ---
-# A Microsoft Intune-alkalmazásfelügyelet ismertetése
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Emellett előfordulhat, hogy az Intune-ban nem regisztrált eszközökön talál
 
 Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kívánt eszközökön való használata érdekében.
 
-## Alkalmazás-felügyeleti szolgáltatások platform szerint
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>Alkalmazás-felügyeleti szolgáltatások platform szerint
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Az Intune számos szolgáltatást kínál az szükséges alkalmazások a kíván
 
 <sup>2</sup>Csak az Intune által kezelt eszközökre vonatkozik.
 
-## Első lépések
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Első lépések
 
 Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatban találja, amely a következőképpen érhető el:
 
@@ -73,8 +70,7 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
 
-### A számítógépeken futó
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>A számítógépeken futó
 - **Alkalmazások** – Itt veheti fel, oszthatja ki és figyelheti az alkalmazások többségét.
     - [Alkalmazások hozzáadása](apps-add.md)
     - [Alkalmazások hozzárendelése](apps-deploy.md)
@@ -89,8 +85,7 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 - **iOS-alapú kiépítési profilok** – Az iOS-alkalmazások tartalmaznak egy kiépítési profilt és kódot, tanúsítvánnyal aláírva. Ha a tanúsítvány lejár, az alkalmazás a továbbiakban nem futtatható. Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.
     - [iOS-alkalmazáskiépítési profilok](app-provisioning-profile-ios.md)
 
-### Figyelő
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Figyelő
 - **Licencelt alkalmazások** – Mennyiségi licencszerződés keretében, az alkalmazás-áruházakból vásárolt alkalmazások megtekintése, hozzárendelése és figyelése.
     - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
 - **Felderített alkalmazások** – Az Intune által hozzárendelt, és az eszközön telepített összes alkalmazás megjelenítése.
@@ -99,8 +94,7 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
 További információkért lásd: [Alkalmazások figyelése](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Vállalati Windows Áruház** – A Vállalati Windows Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
