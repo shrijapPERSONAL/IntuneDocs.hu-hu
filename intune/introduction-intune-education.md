@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/13/2017
 ---
-# Mi az az Intune for Education?
-<a id="what-is-intune-for-education" class="xliff"></a>
+# <a name="what-is-intune-for-education"></a>Mi az az Intune for Education?
 
 Az Intune for Education elősegíti a tanárok és tanulók hatékony munkáját az iskolai adatok biztonságának megőrzésével. Az Intune for Education az Intune felhőalapú vállalati mobilitási felügyeleti (EMM-) rendszer alapjaira épül.
 
@@ -39,8 +38,7 @@ Mind az Intune és az Intune for Education segítségével:
 * Szabályozhatja a felhasználók adatelérését és adatmegosztását, ezáltal védheti a szervezeti adatokat.
 * Gondoskodhat arról, hogy az eszközök és az alkalmazások megfeleljenek a biztonsági követelményeknek.
 
-### További lépések
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>További lépések
 * Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune) révén.
 * Tudjon meg többet az [Intune for Education használatbavételének leggyorsabb módjáról](/intune-education/what-is-express-configuration).
 * Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](/intune/supported-devices-browsers).

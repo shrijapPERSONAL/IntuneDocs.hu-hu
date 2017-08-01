@@ -76,7 +76,7 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
     - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
     - **A helyreállítási beállítások elrejtése a BitLocker beállító varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
     - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
-    - **A BitLocker helyreállítási adatok tárterületének konfigurálása az AD DS-ben** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
+    - **A BitLocker-alapú helyreállítási adatok AD DS-beli tárolásának konfigurálása** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
         - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
         - **Csak a helyreállítási jelszavak biztonsági mentése**
     - **A helyreállítási adatok AD DS-ben való tárolásának megkövetelése a BitLocker engedélyezéséhez** – Ezzel a beállítással szabályozható, hogy a felhasználók ne tudják bekapcsolni a BitLockert addig, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
@@ -97,7 +97,7 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
     - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
     - **A helyreállítási beállítások elrejtése a BitLocker beállító varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
     - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
-    - **A BitLocker helyreállítási adatok tárterületének konfigurálása az AD DS-ben** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
+    - **A BitLocker-alapú helyreállítási adatok AD DS-beli tárolásának konfigurálása** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
         - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
         - **Csak a helyreállítási jelszavak biztonsági mentése**
     - **A helyreállítási adatok AD DS-ben való tárolásának megkövetelése a BitLocker engedélyezéséhez** – Ezzel a beállítással szabályozható, hogy a felhasználók addig ne tudják bekapcsolni a BitLockert, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
