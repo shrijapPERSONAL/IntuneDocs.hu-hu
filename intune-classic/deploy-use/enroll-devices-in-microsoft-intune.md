@@ -14,11 +14,11 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2e08a228c19e934e92ed2db1de407859e20559f7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Eszközök regisztrálása felügyeletre a Microsoft Intune-ban
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 Különböző eszközöket, így Windows rendszerű számítógépeket is regisztrálhat, hogy engedélyezze a mobileszköz-kezelést (MDM) a Microsoft Intune-nal. Ez a témakör ismerteti az eszközök Intune-felügyeletbe való regisztrálásának különböző módszereit. Az eszközök regisztrálásának módja az eszköz típusától, a tulajdonostól, valamint a felügyeleti szinttől függ. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
 
-Ha helyi vagy felhőalapú [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) programot használ, akkor regisztrálás nélkül is engedélyezhet egyszerű Intune-felügyeletet. A Windows rendszerű számítógépek az [Intune-ügyfélszoftver](#manage-windows-pcs-with-intune) segítségével is felügyelhetők.
+Ha helyi vagy felhőalapú [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) programot használ, akkor regisztrálás nélkül is engedélyezhet egyszerű Intune-felügyeletet. A Windows rendszerű számítógépek az [Intune-ügyfélszoftver](#windows-pc-management-with-intune) segítségével is felügyelhetők.
 
 Alapértelmezés szerint platformtól függetlenül minden eszköz regisztrációja engedélyezett az Intune-ban. Az eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](https://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, és törölje a letiltandó platformokhoz tartozó megfelelő jelölőnégyzeteket.
 

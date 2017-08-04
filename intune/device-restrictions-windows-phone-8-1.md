@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>A Windows Phone 8.1 eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Általános
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+
 -   **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
 -   **Másolás és beillesztés** – Engedélyezi vagy letiltja az eszközök másolási és beillesztési funkciójának használatát.
 -   **Cserélhető tároló** – Cserélhető tárolók (például SD-kártyák) használatának engedélyezése az eszközön.
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **Egyéni e-mail fiókok szinkronizálása** – Nem Microsoft e-mail-fiókokhoz való kapcsolódás engedélyezése az eszköz számára.
 
 ## <a name="password"></a>Jelszó
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
--   **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
+
+-   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
     -   **Megkövetelt jelszótípus** – Meghatározza a megkövetelt jelszótípust, például hogy a jelszó számokat és betűket, vagy csak számokat tartalmazhat.
     -   **Jelszó minimális hossza** – A jelszóban használandó karakterek minimális számát határozza meg.
     -   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (mint például a „0000” vagy az „1234”) használatát.
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **Titkosítás** – Kötelezővé teszi az adatok titkosítását a támogatott mobileszközökön.
 
 ## <a name="app-store"></a>Alkalmazásáruház
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+
 -   **Alkalmazásáruház** – Lehetővé teszi a felhasználók számára az alkalmazásáruház elérését az eszközről.
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
-
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
 
 A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
 
@@ -81,11 +79,11 @@ Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, m
 
 
 ## <a name="browser"></a>Böngésző
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+
 -   **Webböngésző** – Engedélyezi vagy letiltja az eszköz beépített webböngészőjét.
 
 ## <a name="cellular-and-connectivity"></a>Mobilhálózati és egyéb kapcsolatok
--   **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
+
 -   **Wi-Fi** – Az eszköz Wi-Fi funkciójának engedélyezése vagy letiltása.
 -   **Wi-Fi-alapú internetmegosztás** – Engedélyezi az eszköz Wi-Fi-alapú internetmegosztási funkciójának használatát.
 -   **Automatikus csatlakozás Wi-Fi elérési pontokhoz** – Engedélyezi az eszközön az ingyenes Wi-Fi elérési pontokhoz történő automatikus csatlakozást és a vonatkozó használati feltételek automatikus elfogadását.

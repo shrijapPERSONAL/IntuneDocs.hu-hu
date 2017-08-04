@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Az eszközök regisztrációjának első lépései
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![A céges portál alkalmazást megjelenítő iOS-eszköz. A regisztrációs folyamatban a felhasználó számára megjelenített első képernyő.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, miközben gondoskodik a vállalati adatok védelméről. Mivel a végfelhasználók a felügyeleti konzol helyett a saját eszközeiken fognak interakcióba lépni az Intune-nal, részletesen meg kell ismernie a regisztrációs folyamatot. Ezzel a módszerrel kombinálhatja a jól kialakított megfelelőségi házirendeket a regisztrációs folyamattal, és empátiát mutathat felhasználói felé. Ez különösen fontos, mivel a felhasználók pontosan tudni fogják, hogy Ön rendszergazdaként milyen adatokat láthat:
 

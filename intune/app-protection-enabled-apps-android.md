@@ -15,14 +15,17 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 97a7a2d2727d823c24e720b61531dce78f6935d1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok? 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]Ez a témakör az alkalmazásvédelmi szabályzatokkal védett alkalmazások felhasználói élményét ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Ez a témakör az alkalmazásvédelmi szabályzatokkal védett alkalmazások felhasználói élményét ismerteti. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják: például amikor a munkahelyi fiókkal fér hozzá alkalmazásokhoz, vagy ha a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
 ##  <a name="accessing-apps"></a>Alkalmazásokhoz való hozzáférés
 
 Androidos eszközökön minden alkalmazásvédelmi szabályzathoz rendelt alkalmazás esetén szükség van a Céges portál alkalmazásra.

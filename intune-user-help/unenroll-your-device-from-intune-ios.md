@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/13/2017
 ---
-# IOS-eszköz regisztrációjának törlése az Intune-ból
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>IOS-eszköz regisztrációjának törlése az Intune-ból
 
 Amikor törli az iOS-alapú eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz, és kikerül az Intune felügyelete alól.
 
