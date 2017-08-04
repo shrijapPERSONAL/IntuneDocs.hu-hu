@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-full-or-selective-wipe"></a>Teljes vagy szelektív törlés alkalmazása
 
@@ -80,8 +80,8 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|
 |Felügyeleti ügynök|Törlődik a felügyeleti profil.|
-|E-mail|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek. Helyszíni környezetben üzemelő Microsoft Exchange esetén az e-mail-profilok és a gyorsítótárazott e-mailek nem törlődnek.|
-|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
+|E-mail|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
+|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
@@ -99,7 +99,7 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
 |E-mail|Nem alkalmazható (az androidos eszközök nem támogatják az e-mail-profilokat)|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.</br>Kivétel: Helyszíni környezetben üzemelő Exchange esetén az e-mailek nem törlődnek.|
+|Outlook|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
@@ -115,7 +115,7 @@ Az androidos eszközökről a szelektív törlés eltávolítja a munkahelyi pro
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|Nem támogatott.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonódnak.|A tanúsítványok törlődnek és visszavonódnak.|Nem támogatott.|A tanúsítványok törlődnek és visszavonódnak.|
-|E-mail|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is.|Nem támogatott.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.</br>**Kivétel**: Helyszíni környezetben üzemelő Exchange esetén az e-mail-fiókok nem törlődnek.|
+|E-mail|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is.|Nem támogatott.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.|
 |Azure Active Directory (AAD) elhagyása|Nem.|Nem.|Törlődik az AAD-rekord.|Nem alkalmazható. A Windows 10 nem támogatja az Azure Active Directoryhoz csatlakoztatott eszközök szelektív törlését.|
 
 **Szelektív törlés**:

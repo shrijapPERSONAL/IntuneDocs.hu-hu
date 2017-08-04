@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 8.1-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Általános
--   **Az összes konfiguráció alkalmazása a Windows 10-re** – Ezzel a beállítással lehetővé teszi, hogy a szabályzatban szereplő beállításokat az a Windows 8.1-eszközökön felül a Windows 10-eszközökre is alkalmazza a rendszer.
+
 -   **Diagnosztikai adatok beküldése** – Engedélyezése esetén az eszköz diagnosztikai adatokat küld a Microsoftnak.
 -   **Tűzfal** – Előírja a Windows tűzfal bekapcsolását.
 -   **Felhasználói fiókok felügyelete** – Kötelezővé teszi a felhasználói fiókok felügyeletének használatát az eszközökön.
+
 ## <a name="password"></a>Jelszó
 -   **Kötelező jelszó típusa** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
 -   **Jelszó minimális hossza** – Konfigurálja a jelszó minimális hosszát (karakterszámát).
@@ -62,8 +63,10 @@ Amikor kényszeríti az eszközön a titkosítást, a helyreállítási kulcs cs
 -   **Vállalati üzemmód menüpont használata** – Engedélyezi a felhasználók számára a Vállalati üzemmód menü használatát.
 Engedélyezése esetén meghatározhatja a **Naplózási jelentés helyét** is, ahol megtalálható annak a jelentésnek az URL-címe, amely megjeleníti azokat a webhelyeket, amelyekhez a felhasználók bekapcsolták a vállalati üzemmódot.
 -   **Vállalati üzemmód webhelylistájának helye** – Megadja azon webhelyek listáját, amelyek használják a vállalati üzemmódot, ha az aktív.
+
 ## <a name="cellular"></a>Mobil
 -   **Adatroaming** – Engedélyezi adatroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
+
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 -   **Munkamappák URL-címe** – Megadja a munkahelyi mappa URL-címét, hogy lehetővé tegye a dokumentumok szinkronizálását az eszközök között.
 -   **Windows Posta alkalmazás elérése Microsoft-fiók nélkül** – Microsoft-fiók nélkül is hozzáférhetővé teszi a Windows Posta alkalmazást.    

@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/11/2017
 ---
-# Használatieset-forgatókönyvek követelményeinek meghatározása
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Használatieset-forgatókönyvek követelményeinek meghatározása
 
 Ebben a szakaszban meghatározza az összes használati eset minden egyes munkahelyi csoportjára vonatkozó követelményeket. Ez a folyamat segít abban, hogy jobban felkészülhessen az Intune telepítésével kapcsolatos más területeken, például az architektúra és tervezés, az előkészítés és bevezetés terén. Mindemellett az Intune üzembe helyezési projektjével kapcsolatos lehetséges hiányosságokat és kihívásokat is segít azonosítani.
 
@@ -42,8 +41,7 @@ Itt található néhány példa a munkahelyi használatieset-forgatókönyvek k�
 [Letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), hogy beírja a cég használatieset- és alhasználatieset-követelményeit.
 
 
-## Példák a követelményekre
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Példák a követelményekre
 
 Íme néhány további példa, amelyek használhatók a „Követelmények” oszlopban:
 
@@ -64,7 +62,6 @@ Itt található néhány példa a munkahelyi használatieset-forgatókönyvek k�
     - Az Office 365 és az alkalmazás adatvédelmi szabályzatai
     - Üzletági (LOB) alkalmazásvédelmi szabályzatok
 
-## További lépések
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>További lépések
 
 A következő szakaszban az [Intune bevezetési tervének összeállításáról](planning-guide-rollout-plan.md) található információ.

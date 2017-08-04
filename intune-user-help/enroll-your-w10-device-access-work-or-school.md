@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/13/2017
 ---
-# Windows 10 rendszerű eszköz regisztrálása az Intune-ban
-<a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
+# <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 rendszerű eszköz regisztrálása az Intune-ban
 
 > [!NOTE]
 > A Windows 10 az összes eszköztípuson működik. Akár asztali gépet, akár telefont vagy táblagépet használ, a lépések ugyanazok lesznek – még ha némileg eltérnek is az itt látható képektől.
