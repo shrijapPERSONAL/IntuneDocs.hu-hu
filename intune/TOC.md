@@ -8,9 +8,7 @@
 ### [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md)
 ### [Újdonságok – Archívum (Azure Portal)](whats-new-archive.md)
 ### [Újdonságok – Archívum (klasszikus portál)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Magas szintű architektúra](high-level-architecture.md)
 ## [Eszközök és alkalmazások életciklusa](introduction-device-app-lifecycles.md)
 ### [Eszközök életciklusa](device-lifecycle.md)
 ### [Alkalmazások életciklusa](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Monitorozás és hibaelhárítás
 ## [Az ügyfélszolgálati operátor szerepkör használata](help-desk-operators.md)
+## [Az Intune-adattárház használata](reports-nav-create-intune-reports.md)
+### [Kapcsolódás az adattárházhoz a Power BI használatával](reports-proc-get-a-link-powerbi.md)
 
 # Fejlesztés és testreszabás
 ## [Egyéni eszközbeállítások konfigurálása](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune App SDK Xamarin összetevő](app-sdk-xamarin.md)
 ## [Az Intune Graph API-k használata](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune-adattárház API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Az adattárház API-végpontja](reports-api-url.md)
+### [Az adattárház adatmodellje](reports-ref-data-model.md)
+#### [Dátum típusú entitás referenciája](reports-ref-date.md)
+#### [Felhasználó típusú entitás referenciája](reports-ref-user.md)
+#### [Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája](reports-ref-mobile-app-management.md)
+#### [Eszközök típusú entitások referenciája](reports-ref-devices.md)
+#### [Alkalmazás típusú entitások referenciája](reports-ref-application.md)
+#### [Szabályzat típusú entitások referenciája](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Szószedet](intune-glossary.md)
