@@ -83,7 +83,7 @@
 ### [iOS-eszközök regisztrálásának beállítása](ios-enroll.md)
 #### [Készülékregisztrációs program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [macOS-regisztráció beállítása](macos-enroll.md)
 
 ## [Eszközök kezelése](device-management.md)
@@ -101,6 +101,7 @@
 ### [Felhasználó eltávolítása](device-remove-user.md)
 ### [Távirányítás Androidhoz](device-profile-android-teamviewer.md)
 ### [Windows 10-es PIN-kód alaphelyzetbe állítása](device-windows-pin-reset.md)
+### [Eszköz szinkronizálása](device-sync.md)
 ### [Eszközkészlet vizsgálata](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [A Windows 10 oktatási funkcióinak konfigurálása](education-settings-configure.md)
 ### [Az iOS oktatási funkcióinak konfigurálása](education-settings-configure-ios.md)
 ### [Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása](education-settings-configure-ios-shared.md)
+### [iOS-es frissítési szabályzatok konfigurálása](software-updates-ios.md)
 ### [A Vállalati Windows Update beállításainak konfigurálása](windows-update-for-business-configure.md)
 ### [Tanúsítványok konfigurálása](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
