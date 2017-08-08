@@ -237,7 +237,7 @@
 ## [Intune App SDK Xamarin összetevő](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [Hibaelhárítás](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
-## [Támogatás igénylése](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Támogatás igénylése](/intune/get-support?toc=/intune-classic/toc.json)
 ## [Az Intune figyelése jelentésekkel](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Az Endpoint Protection hibáinak elhárítása](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Vállalati erőforrás-hozzáférési problémák elhárítása](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
