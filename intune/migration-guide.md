@@ -1,11 +1,11 @@
 ---
 title: "Útmutató az Intune mobileszköz-kezelési szolgáltatásra történő migráláshoz"
-description: "Ez az útmutató végigvezeti az ügyfeleket a külső MDM-szolgáltatói megoldásról a Microsoft Intune-ra való migráció különféle részletein."
+description: "Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról a Microsoft Intune-ra történő migrálás különböző lépésein."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,28 +13,25 @@ ms.technology:
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9e86f342413a0f31c51d7a56f862986c433309eb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d86260872230bb0a9274fa302acac5caeaa682a7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="intune-migration-guide"></a>Intune migrációs útmutató
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
 ![Intune MDM-migrációs útmutató – grafika](./media/MDM-migration-guide-art.PNG)
 
-Az Intune-ra való sikeres migráció kiindulópontja egy alapos, a jelenlegi mobileszköz-kezelési (MDM-) környezetet, a vállalkozás céljait és a műszaki követelményeket is számításba vevő terv. Ezen kívül szükség lesz a főbb érintettek támogatására és együttműködésére is.
+Az Intune-ra történő sikeres migráláshoz kell egy alapos terv, amely számításba veszi a jelenlegi mobileszköz-kezelési (MDM-) környezetét, az üzleti céljait és a műszaki követelményeket. Ezen kívül szükség lesz a főbb érintettek támogatására és együttműködésére is.
 
-Ez az útmutató végigvezeti Önt a külső MDM-szolgáltatói megoldásról az Intune-ra való migráció különféle részletein.
+Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról az Intune-ra történő migrálás különböző lépésein.
 
 ## <a name="whats-included-in-this-guide"></a>Az útmutató tartalma
 
-Az útmutató két fázist taglal. A bennük szereplő teendők, stratégiák és taktikai útmutatások segítségével végighaladhat az Intune MDM-re való migráció teljes folyamatán.
+Ez az útmutató két fázisra osztja a migrálást, és mindkét fázisban felsorolja azon feladatokat, stratégiákat és taktikai útmutatásokat, amelyek végigvezetik az Intune MDM-re történő migrálás teljes folyamatán.
 
--   [1. fázis: az Intune előkészítése a mobileszköz-kezelésre] (migration-guide-prepare.md)
+-   [1. fázis: Az Intune előkészítése a mobileszköz-felügyeletre](migration-guide-prepare.md)
 
     -   [Az MDM-migráció követelményeinek felmérése](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -42,7 +39,7 @@ Az útmutató két fázist taglal. A bennük szereplő teendők, stratégiák é
 
     -   [Eszköz- és alkalmazásszabályzatok konfigurálása](migration-guide-configure-policies.md)
 
-    -   [Alkalmazásvédelmi szabályzatok konfigurálása] (migration-guide-app-protection-policies.md)
+    -   [Alkalmazásvédelmi szabályzatok konfigurálása](migration-guide-app-protection-policies.md)
 
     -   [Speciális áttelepítési megfontolások](migration-guide-considerations.md)
 
@@ -51,8 +48,8 @@ Az útmutató két fázist taglal. A bennük szereplő teendők, stratégiák é
     -   [Kommunikációs terv](migration-guide-communication-plan.md)
 
     -   [A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel](migration-guide-drive-adoption.md)
-    
-    -   [A szokásos migrációs ciklus](migration-guide-cycle.md)
+
+    -   [A szokásos áttelepítési ciklus](migration-guide-cycle.md)
         -   [A migráció figyelése](migration-guide-cycle.md#monitoring-migration)
         -   [Migráció utáni feladatok](migration-guide-cycle.md#post-migration)
 
@@ -60,17 +57,14 @@ Az útmutató két fázist taglal. A bennük szereplő teendők, stratégiák é
 
 -   Ön már kiértékelte az Intune-t egy megvalósíthatósági tesztkörnyezetben, és úgy döntött, hogy MDM-megoldásként üzembe helyezi a munkahelyén.
 
--   Ön már ismeri az Intune-t és funkcióit. 
-
-> [!NOTE]
-> Az Intune-nal kapcsolatban az [Útmutató az Intune próbaverziójához](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune) című segédanyagban ismerkedhet meg részletesebben a migráció előtt.
+-   Ön már ismeri az Intune-t és funkcióit.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-Fontos észrevenni, hogy az új Intune-környezet eltérhet a korábban használt MDM-megoldástól. A hagyományos MDM-szolgáltatásokkal szemben az Intune az identitásalapú hozzáférés-vezérlésre helyezi a hangsúlyt, és ennélfogva hálózati proxykészülék nélkül is képes szabályozni a vállalati adatok mobileszközökről, a szervezeti hálózaton kívülről történő elérését. A Microsoft az együttesen Enterprise Client + Security éven ismert, szorosan integrált felhőszolgáltatásaira építi azokat a megoldásait, amelyek a felhőn belül biztosítják az adatkezelő szolgáltatásokat.
+Fontos észrevenni, hogy az új Intune-környezet eltérhet a korábban használt MDM-megoldástól. A hagyományos MDM-szolgáltatásokkal szemben az Intune az identitásalapú hozzáférés-vezérlésre helyezi a hangsúlyt, és ennélfogva hálózati proxykészülék nélkül is képes szabályozni a vállalati adatok mobileszközökről, a szervezeti hálózaton kívülről történő elérését. A Microsoft az együttesen Enterprise Mobility + Security ajánlat néven ismert, szorosan integrált felhőszolgáltatásain keresztül kínál megoldásokat az adatkezelő szolgáltatások biztosításához a felhőben.
 
--   Tekintse át az [Intune gyakori használati módjait](migration-guide-prepare.md#assess-mdm-requirements).
+-   Tekintse át az [Intune gyakori használati módjait](common-scenarios.md).
 
 ## <a name="next-steps"></a>További lépések
 
-[1. fázis: az Intune előkészítése a mobileszköz-kezelésre] (migration-guide-prepare.md)
+[1. fázis: Az Intune előkészítése a mobileszköz-felügyeletre](migration-guide-prepare.md)

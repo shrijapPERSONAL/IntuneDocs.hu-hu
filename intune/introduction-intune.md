@@ -5,7 +5,7 @@ keywords: Mi az az Intune?
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
@@ -72,10 +72,10 @@ Ha az Intune-t használja az EMS más szolgáltatásaival, akkor a mobil operác
 
 * [Egyszeri bejelentkezés](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Többtényezős hitelesítés](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Alkalmazás feltételes hozzáférése – hozzáférés engedélyezése, ha a mobilalkalmazás vállalati adatokat tartalmaz](app-based-conditional-access-intune.md) ([klasszikus konzol](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [A vállalati adatok és a személyes adatok elkülönítése alkalmazáson belül](app-protection-policy.md) ([klasszikus konzol](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Alkalmazásvédelmi szabályzat (PIN-kód, titkosítás, mentés másként, vágólap stb.)](app-protection-policies.md) ([klasszikus konzol](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Vállalati adatok törlése a mobilalkalmazásokból](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Alkalmazás feltételes hozzáférése – hozzáférés engedélyezése, ha a mobilalkalmazás vállalati adatokat tartalmaz](app-based-conditional-access-intune.md)
+* [A vállalati adatok és a személyes adatok elkülönítése alkalmazáson belül](app-protection-policy.md)
+* [Alkalmazásvédelmi szabályzat (PIN-kód, titkosítás, mentés másként, vágólap stb.)](app-protection-policies.md)
+* [Vállalati adatok törlése a mobilalkalmazásokból](apps-selective-wipe.md)
 * [Tartalomvédelem támogatása](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Az alkalmazásfelügyelet adatvédelmi szintjeit bemutató ábra](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Az alábbi listában szereplő üzleti problémák hivatkozására kattintva kap
 * [Korlátozott használatú megosztott táblagépek kiadása adott feladattal foglalkozó dolgozóknak](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>További lépések
-* Tájékozódjon az [Intune gyakori használati módjairól](common-scenarios.md) ([klasszikus konzol](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](free-trial-sign-up.md) révén ([klasszikus konzol](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](supported-devices-browsers.md) ([klasszikus konzol](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)).
+* Tájékozódjon az [Intune gyakori használati módjairól](common-scenarios.md).
+* Ismerkedjen meg a termékkel egy [30 napos Intune-próbaverzió](free-trial-sign-up.md) révén.
+* Mélyedjen el az Intune [műszaki követelményeiben és képességeiben](supported-devices-browsers.md).

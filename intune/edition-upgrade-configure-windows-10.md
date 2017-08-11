@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>A Windows 10 kiadásfrissítéseinek konfigurálása a Microsoft Intune-ban
 
@@ -41,10 +41,10 @@ Az alábbi verziófrissítési útvonalak támogatottak:
 
 
 ## <a name="before-you-start"></a>Előkészületek
-Az eszközök legújabb verzióra történő frissítésének megkezdése előtt szüksége lesz a következők valamelyikére:
+Az eszközök legújabb verzióra történő frissítéséhez szüksége lesz a következők közül valamelyikre:
 
-- Termékkulcsra, amely érvényes a Windows új verziójának – a házirend céljaként meghatározott összes eszközre történő – telepítéséhez (a Windows 10 asztali verziója esetén). Többször használható aktiválási kulcsokat (MAK) vagy kulcskezelő kiszolgálói (KMS) kulcsokat használhat. vagy A Microsoft által kiadott licencfájlra, amely a Windows új verziójának – a szabályzat céljaként meghatározott összes eszközön történő – telepítéséhez szükséges licencelési adatokat tartalmazza (a Windows 10 Mobile és a Windows 10 Holographic verzió esetén).
-- A célként meghatározott Windows 10 rendszerű eszközöket regisztrálni kell a Microsoft Intune-ban. A kiadásfrissítési szabályzat nem használható az Intune PC-ügyfélszoftvert futtató számítógépekkel.
+- Termékkulcsra, amely érvényes a Windows új verziójának – a házirend céljaként meghatározott összes eszközre történő – telepítéséhez (a Windows 10 asztali verziója esetén). A Többszörös aktiválási kulcsok (MAK), a Kulcskezelési kiszolgálói (KMS) kulcsok, vagy egy Microsoft által kiadott, a licencelési adatokat tartalmazó licencfájl segítségével telepítheti a Windows új verzióját minden eszközön, amelyet a szabályzat céljaként határozott meg (Windows 10 mobilverzió és Windows 10 Holographic esetén).
+- A Windows 10 rendszerű eszközöket, amelyekhez hozzárendeli a szabályzatot, regisztrálni kell a Microsoft Intune-ban. A kiadásfrissítési szabályzat nem használható az Intune PC-ügyfélszoftvert futtató számítógépekkel.
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 
@@ -56,7 +56,7 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 4. A **Profil létrehozása** panelen írja be a kiadásfrissítési profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
 6. A **Profil típusa** legördülő listából válassza az **Kiadásfrissítés** lehetőséget.
-7. A **Kiadásfrissítés** panelen konfigurálja az alábbiakat:
+7. A **Kiadásfrissítés** panelen konfigurálja az alábbi beállításokat:
     - **Frissítendő kiadás** – A legördülő listából válassza ki azt a Windows 10-verziót, amelyet frissíteni szeretne az eszközökön.
     - **Frissítés erre a kiadásra** – A legördülő listából válassza ki a Windows 10 asztali verzió, a Windows 10 Holographic vagy a Windows 10 Mobile rendszernek azt a verzióját, amelyre a megcélzott eszközöket frissíteni szeretné.
     - **Termékkulcs** – Adja meg a Microsofttól beszerzett termékkulcsot, mely minden megcélzott, a Windows 10 asztali verzióját futtató eszköz frissítéséhez használható.<br>Miután létrehozta a termékkulcsot tartalmazó szabályzatot, a termékkulcsot már nem szerkesztheti. Ennek oka a kulcs biztonsági okokból történő elrejtése. Ha módosítani szeretné a termékkulcsot, a teljes kulcsot újra meg kell adnia.
@@ -64,5 +64,11 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
+
+## <a name="next-steps"></a>További lépések
+
+Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
+
+>[!NOTE]
+>Ha később eltávolítja a szabályzat-hozzárendelést, az eszközön futó Windows-verzió nem áll vissza, és továbbra is megfelelően működik.
 

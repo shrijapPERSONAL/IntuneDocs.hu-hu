@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -59,9 +59,10 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
     - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
     - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
     - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban.
+6. **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Ha az alkalmazás fut, a VPN-kapcsolat nyitva van. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
 6. Ha elkészült, válassza a **Mentés** elemet.
 
-Ezzel hozzárendelte az alkalmazást a kiválasztott csoporthoz.
+Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Alkalmazások hozzárendelési ütközéseinek feloldása
 
@@ -100,7 +101,7 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 |A felhasználó regisztráció nélkül elérhető|A felhasználó elérhető|Elérhető|
 |A felhasználó regisztráció nélkül elérhető|Az eszköz kötelező|Kötelező és Regisztráció nélkül elérhető|
 |A felhasználó regisztráció nélkül elérhető|Az eszköz nem érhető el|Regisztráció nélkül elérhető|
-|A felhasználó regisztráció nélkül elérhető|Eszköz eltávolítása|Eltávolítás és Regisztráció nélkül elérhető.<br>Ha a felhasználó nem a Céges portálról telepítette az alkalmazást, akkor a rendszer az eltávolítást veszi figyelembe.<br>Ha a felhasználó a Céges portálról telepítette az alkalmazást, akkor a telepítés szándék felülírja az eltávolítást.|
+|A felhasználó regisztráció nélkül elérhető|Eszköz eltávolítása|Eltávolítás és Regisztráció nélkül elérhető.<br>Ha a felhasználó nem a Céges portálról telepítette az alkalmazást, akkor a rendszer az eltávolítást veszi figyelembe.<br>Ha a felhasználó a Céges portálról telepíti az alkalmazást, akkor a rendszer a telepítést részesíti előnyben az eltávolítással szemben.|
 
 >[!NOTE]
 >Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat az Intune-ban kötelezőként rendeli hozzá, akkor a Kötelező és az Elérhető szándék automatikusan egyaránt fog vonatkozni rájuk.

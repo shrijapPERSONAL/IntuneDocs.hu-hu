@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal
 
@@ -57,9 +57,9 @@ Csak a „Teljes körű” engedéllyel rendelkező Intune-beli **szolgáltatás
 
 A következő szerepköröket beépített szerepkörként tartalmazza az Intune, és további konfiguráció nélkül rendelhetők hozzá a csoportokhoz:
 
-- **Ügyfélszolgálat**: Távoli feladatokat hajt végre felhasználókon és eszközökön, valamint alkalmazásokat és szabályzatokat rendelhet hozzájuk. 
+- **Ügyfélszolgálat**: Távoli feladatokat hajt végre felhasználókon és eszközökön, valamint alkalmazásokat és szabályzatokat rendelhet hozzájuk.
 - **Szabályzat- és profilkezelő**: A megfelelőségi szabályzatot, a konfigurációs profilokat, az Apple-regisztrációt és a céges eszközazonosítókat kezeli.
-- **Csak olvasási jogosultságú operátor**: Megtekintheti a felhasználókra, regisztrációra, konfigurációra és alkalmazásokra vonatkozó információkat, de nem hajthat végre változtatásokat az Intune-ban.
+- **Csak olvasási jogosultságú operátor**: Megtekintheti a felhasználókra, regisztrációra, konfigurációra és alkalmazásokra vonatkozó információkat. Az Intune-ban nem hajthat végre változtatásokat.
 - **Alkalmazáskezelő**: Kezeli a mobil- és felügyelt alkalmazásokat, és olvashatja az eszközadatokat.
 
 ### <a name="to-assign-a-built-in-role"></a>Beépített szerepkör hozzárendelése
@@ -68,9 +68,9 @@ A következő szerepköröket beépített szerepkörként tartalmazza az Intune,
 
 2. A <*szerepkör neve*> – **Tulajdonságok** panelen kattintson a **Felügyelet**, majd a **Hozzárendelések** elemre.
 
-    > [!NOTE] 
+    > [!NOTE]
     > A beépített szerepkörök nem törölhetők és nem szerkeszthetők
-    
+
 3. Kattintson a **Hozzárendelés** elemre az Egyéni szerepkör panelen.
 
 4. A **Szerepkör-hozzárendelések** panelen adja meg a hozzárendelés **nevét** és választható **leírását**, és válassza ki a következőket:

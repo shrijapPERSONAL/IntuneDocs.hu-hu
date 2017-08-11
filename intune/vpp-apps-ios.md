@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -33,6 +33,19 @@ A Microsoft Intune segítséget nyújt az ilyen program keretében vásárolt al
 - A licencinformáció importálása az App Store-ból
 - A felhasznált licencek számának nyilvántartása
 - Annak megakadályozása, hogy több példányt telepítsen az alkalmazásból, mint amennyit vásárolt
+
+A mennyiségi programban vásárolt alkalmazásokat kétféle módszerrel lehet hozzárendelni:
+
+### <a name="device-licensing"></a>Eszközlicencelés
+
+Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte.
+Ha mennyiségi programban vásárolt alkalmazásokat rendel az eszközhöz, a végfelhasználónak nem kell Apple ID azonosítót megadnia az áruházhoz való hozzáféréshez. 
+
+### <a name="user-licensing"></a>Felhasználói licencelés
+
+Ha felhasználóhoz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, a felhasználóhoz társítva. Az alkalmazás több, a felhasználó tulajdonában lévő eszközön is futhat.
+Ha mennyiségi programban vásárolt alkalmazásokat rendel felhasználókhoz, minden végfelhasználónak érvényes Apple ID azonosítóval kell rendelkeznie az alkalmazás-áruházhoz való hozzáféréshez.
+
 
 Ezen kívül az Apple mennyiségi vásárlásra szolgáló áruházából vásárolt könyvek szinkronizálhatók, felügyelhetők és hozzárendelhetők az Intune-nal. Könyvek felügyeletéhez használja az Intune-portál **Könyvek** funkcióját. A könyvek felügyelete ugyanúgy történik, ahogy az alkalmazásoké.
 Mielőtt nekikezdhetne, fel kell töltenie egy Apple mennyiségi vásárlási program-tokent. Jelenleg csak **Kötelező** telepítésként rendelhet hozzá könyveket.
@@ -81,24 +94,28 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás hozzárendelése
 
-1. A **Mobilalkalmazások** munkafolyamatban válassza a **Felügyelet** > **Licencelt alkalmazások** elemet.
-2. Az alkalmazáslista panelen válassza ki azt az alkalmazást, amelyet szeretne hozzárendelni, és válassza a '**...**' > **Csoportok hozzárendelése**.
-3. Az *Alkalmazás neve*>- **Hozzárendelt csoportok** panelen válassza a **Felügyelet** > **Hozzárendelt csoportok** elemet.
-4. Válassza az **Assign Groups** (Csoportok hozzárendelése), majd a **Select groups** (Csoportok kijelölése) panelen jelölje ki azon Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.
-Válassza a **Szükséges** hozzárendelési műveletet. az eszközcsoportokhoz való hozzárendelés pedig csak a 2017 januárja után létrehozott új bérlők esetében érhető el. Ha az Ön bérlője ennél a dátumnál korábban jött létre, és nincs lehetősége a VPP-alkalmazásokat eszközcsoportokhoz rendelni, forduljon az Intune ügyfélszolgálatához.
-5. Ha elkészült, válassza a **Mentés** elemet.
+1.  A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazáslicencek** lehetőséget.
+2.  Az alkalmazáslista panelen válassza ki azt az alkalmazást, amelyet szeretne hozzárendelni, és válassza a '**...**' > **Csoportok hozzárendelése**.
+3.  A *<app name>* - **Hozzárendelések** panelen válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
+4.  Kattintson a **Select Groups** (Csoportok kiválasztása) elemre, majd a **Select Groups** (Csoportok kiválasztása) panelen válassza ki azokat az Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá kívánja rendelni az alkalmazást.
+5.  Minden kijelölt csoporthoz válassza ki az alábbi beállításokat:
+    - **Típus** – Határozza meg, hogy az alkalmazás **Elérhető** (a végfelhasználók telepíthetik a Céges portálról), vagy **Kötelező** (a végfelhasználók automatikusan megkapják az telepített alkalmazást).
+Ha egy VPP-alkalmazást **Elérhető** típusúként rendel hozzá, az alkalmazás tartalmának és licencének hozzárendelése közvetlenül az alkalmazás-áruházból történik.
+    - **Licenc típusa** – Válassza a **Felhasználói licencelés** vagy az **Eszközlicencelés** lehetőséget.
+6.  Ha elkészült, válassza a **Mentés** elemet.
+
 
 >[!NOTE]
 >A megjelenített alkalmazások listája egy tokenhez van társítva. Ha van egy olyan alkalmazása, amely több VPP-tokenhez is társítva van, akkor ugyanaz az alkalmazás többször is megjelenik; minden tokenhez egyszer.
 
-Az alkalmazás-hozzárendelések figyeléséhez a [How to monitor apps](apps-monitor.md) (Alkalmazások figyelése) című témakörben találhat segítséget.
-
 ## <a name="further-information"></a>További információ
 
-Ha az alkalmazást **Szükséges** telepítésként rendeli hozzá, az alkalmazást telepítő összes felhasználó felhasznál egy licencet.
-
-A licencek visszanyeréséhez módosítania kell a hozzárendelési műveletet az **Eltávolítás** műveletre. A licenc az alkalmazás eltávolítása után felszabadul.
+A licencek visszanyeréséhez az Eltávolítás műveletre kell módosítania a hozzárendelési műveletet. A licenc az alkalmazás eltávolítása után felszabadul.
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
 
-Ha VPP-alkalmazás elérhetőként való hozzárendelését végzi, az alkalmazás tartalmának és licencének hozzárendelése közvetlenül az alkalmazás-áruházból történik.
+
+
+## <a name="next-steps"></a>További lépések
+
+Az alkalmazás-hozzárendelések figyeléséhez a [How to monitor apps](apps-monitor.md) (Alkalmazások figyelése) című témakörben találhat segítséget.

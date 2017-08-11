@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Telefon alaphelyzetbe állítása** – Azt szabályozza, hogy a felhasználó visszaállíthatja-e az eszköz gyári beállításait.
 -   **USB-kapcsolat (csak mobileszköz)** – Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.
 -   **Lopásgátló üzemmód (csak mobileszköz)** – Itt az állítható be, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.
--   **Műveletközpont értesítései (csak mobileszköz)** – Engedélyezi vagy letiltja a Műveletközpont értesítéseinek megjelenését az eszköz zárolási képernyőjén (csak Windows 10 Mobile esetén).
 -   **Cortana** – Engedélyezi vagy letiltja a Cortana beszédfelismerési asszisztenst.
 -   **Hangrögzítés (csak mobileszköz)** – Engedélyezi vagy letiltja az eszköz hangrögzítőjét.
--   **Energiagazdálkodási és alvási beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz energiagazdálkodási és alvási beállításait.
--   **Területi beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz területi beállításait.
--   **Nyelvi beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nyelvi beállításait.
--   **Rendszeridő módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz rendszeridejét.
--   **Az eszköz nevének módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nevét.
+-   **Az eszköz nevének módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nevét (csak Windows 10 mobil verzió esetén)
 -   **Kiépítési csomagok hozzáadása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat telepítsen.
 -   **Kiépítési csomagok eltávolítása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat távolítson el.
 -   **Eszközfelderítés** – Letiltja az eszköz más eszközök általi felderíthetőségét.
@@ -67,7 +62,7 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
     -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Meghatározza, hogy az eszköznek mennyi ideig kell tétlennek lennie a képernyő zárolása előtt.
     -   **Jelszó érvényessége (nap)** – Meghatározza, hogy mennyi idő elteltével kell módosítani a jelszót.
     -   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
-    -   **Jelszó kérése, ha az eszköz visszatér az inaktív állapotból** – Azt adja meg, hogy köteles-e a felhasználó jelszót megadni az eszköz feloldásához (csak Windows 10 Mobile esetén).
+    -   **Jelszó kérése, ha az eszköz visszatér az inaktív állapotból (csak mobil verzióban)** – Azt adja meg, hogy köteles-e a felhasználó jelszót megadni az eszköz feloldásához (csak Windows 10 Mobile esetén).
     -   **Egyszerű jelszavak** – Lehetővé teszi egyszerű jelszavak használatát, például 1111 vagy 1234. Ez a beállítás a Windows-képjelszavak használatát is engedélyezi vagy letiltja.
 -   **Titkosítás** – Engedélyezi a célzott eszközök titkosítását (csak Windows 10 Mobile esetén).
 
@@ -105,6 +100,7 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **Alkalmazásadatok telepítése a rendszerköteten** – Megakadályozza, hogy az alkalmazások adatokat tároljanak az eszköz rendszerkötetén.
 -   **Alkalmazások telepítése a rendszermeghajtón** – Megakadályozza, hogy az alkalmazások adatokat tároljanak az eszköz rendszermeghajtóján.
 -   **Játékvideó-rögzítő (csak asztali verzióban)** – Meghatározza, hogy engedélyezett-e játékok rögzítése és közvetítése.
+-   **Csak áruházból származó alkalmazások** – Meghatározza, hogy a felhasználók telepíthetnek-e alkalmazásokat az alkalmazás-áruháztól különböző forrásokból.
 
 
 
@@ -112,7 +108,6 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
 -   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek az Edge és a Microsoft szolgáltatásai közötti használatát.
 -   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és az Edge között.
--   **SmartScreen** – Engedélyezi vagy letiltja a rosszindulatú webhelyeket blokkoló SmartScreen funkciót.
 -   **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
 -   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását az Edge böngészőben.
@@ -130,13 +125,16 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni az Edge böngészőben (csak asztali verzióban).
 -   **Kezdőlap módosítása** – Engedélyezheti a felhasználóknak, hogy megváltoztassák az Edge megnyitásakor megjelenő kezdőlapokat. A Kezdőlapok beállítással hozhatja létre az Edge indításakor megjelenő lapot vagy lapok listáját.
 -   **Az about:flags laphoz való hozzáférés letiltása** – Megakadályozza, hogy a végfelhasználó hozzáférhessen az Edge about:flags lapjához, amely a fejlesztői és kísérleti beállításokat tartalmazza.
--   **SmartScreen-üzenetek felülbírálása** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú webhelyekre figyelmeztető üzeneteket.
--   **SmartScreen-üzenetek felülbírálása fájlok esetén** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú fájlok letöltésére figyelmeztető üzeneteket.
 -   **WebRTC LocalHost IP-címe** – Letiltja a felhasználó localhost IP-címének megjelenítését a WebRTC protokollal történő telefonhívások esetén.
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
 -   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Edge böngészőből egy webhelyet a Start menübe.
 
+## <a name="edge-browser-smartscreen"></a>Az Edge böngésző SmartScreen funkciója
+
+-   **SmartScreen** – Engedélyezi vagy letiltja a rosszindulatú webhelyeket blokkoló SmartScreen funkciót.
+-   **SmartScreen-üzenetek felülbírálása** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú webhelyekre figyelmeztető üzeneteket.
+-   **SmartScreen-üzenetek felülbírálása fájlok esetén** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú fájlok letöltésére figyelmeztető üzeneteket.
 
 ## <a name="search"></a>Keresés
 - **Biztonságos keresés (csak mobileszközökön)** – Meghatározza, hogy a Cortana hogyan szűrje a felnőtt tartalmat a keresési eredményekben. A megadható értékek a **Szigorú** és a **Közepes**, vagy engedélyezhető, hogy a végfelhasználó állítsa be az értékét.
@@ -156,7 +154,6 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **Bluetooth-észlelhetőség** – Észlelhetővé teszi az eszközt más Bluetooth-kompatibilis eszközök számára.
 -   **Előzetes Bluetooth-párosítás** – Lehetővé teszi meghatározott Bluetooth-eszközök konfigurálását, hogy automatikus legyen a gazdaeszközzel való párosításuk.
 -   **Bluetooth-hirdetés** – Lehetővé teszi az eszköz számára, hogy hirdetéseket fogadjon a Bluetooth-kapcsolaton.
--   **Az eszköz Bluetooth-neve** – Megadhatja az eszköz Bluetooth-nevét. Ha nem ad meg nevet, az alapértelmezett rádiónév lesz használva.
 -   **Csatlakoztatott eszközök szolgáltatás** – Kiválaszthatja, hogy engedélyezi-e a csatlakoztatott eszközök szolgáltatást, amely lehetővé teszi más Bluetooth-eszközök észlelését és a hozzájuk való kapcsolódást.
 -   **NFC** – Lehetővé teszi a felhasználó számára az eszköz NFC funkciójának engedélyezését és konfigurálását.
 -   **Wi-Fi** – Lehetővé teszi, hogy a felhasználó engedélyezze és konfigurálja a Wi-Fi funkciót az eszközön (csak Windows 10 Mobile esetén).
@@ -170,11 +167,16 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 -   **Gépház alkalmazás** – Letiltja a hozzáférést a Windows Gépház alkalmazásához.
     -   **Rendszer** – Letiltja a hozzáférést a Gépház alkalmazás Rendszer területéhez.
+        -   **Energiagazdálkodási és alvási beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz energiagazdálkodási és alvási beállításait.
     -   **Eszközök** – Letiltja a hozzáférést a Gépház alkalmazás Eszközök területéhez.
     -   **Hálózat és internet** – Letiltja a hozzáférést a Gépház alkalmazás Hálózat és internet területéhez.
     -   **Személyre szabás** – Letiltja a hozzáférést a Gépház alkalmazás Személyre szabás területéhez.
     -   **Fiókok** – Letiltja a hozzáférést a Gépház alkalmazás Fiókok területéhez.
     -   **Idő és nyelv** – Letiltja a hozzáférést a Gépház alkalmazás Idő és nyelv területéhez.
+        -   **Rendszeridő módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz rendszeridejét.
+        -   **Területi beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz területi beállításait.
+        -   **Nyelvi beállítások módosítása (csak asztali verzióban)** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nyelvi beállításait.
+    -   **Játékok** – Letiltja a hozzáférést a hozzáférést a Gépház alkalmazás Játékok területéhez.
     -   **Könnyű kezelés** – Letiltja a hozzáférést a Gépház alkalmazás Könnyű kezelés területéhez.
     -   **Adatvédelem** – Letiltja a hozzáférést a Gépház alkalmazás Adatvédelem területéhez.
     -   **Frissítés és biztonság** – Letiltja a hozzáférést a Gépház alkalmazás Frissítés és biztonság területéhez.
@@ -237,17 +239,17 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 ## <a name="windows-spotlight"></a>Windows Reflektorfény
 
 
-- Windows Reflektorfény – Ezzel a beállítással tilthatja le az összes Windows Reflektorfény-funkciót a Windows 10-es eszközökön. Ha letiltja ezt a beállítást, a következő beállítások nem lesznek elérhetők.
+- **Windows Reflektorfény** – Ezzel a beállítással tilthatja le az összes Windows Reflektorfény-funkciót a Windows 10-es eszközökön. Ha letiltja ezt a beállítást, a következő beállítások nem lesznek elérhetők.
     - **Windows Reflektorfény a zárolási képernyőn** – Megakadályozza, hogy a Windows Reflektorfény információt jelenítsen meg az eszköz zárolási képernyőjén.
     - **Külső féltől származó javaslatok a Windows Reflektorfényben** – Megakadályozza, hogy a Windows Reflektorfény nem a Microsoft által közzétett javaslatokat jelenítsen meg.
-    - **Windows-tippek** – A beállítással letilthatja az előugró Windows-tippek megjelenítését.
     - **Fogyasztói funkciók** – Letilthatja az olyan fogyasztói funkciókat, mint a Start menü javaslatai vagy a tagsági értesítések.
+    - **Windows-tippek** – A beállítással letilthatja az előugró Windows-tippek megjelenítését.
     - **Windows Reflektorfény a műveletközpontban** – A Windows Reflektorfény-javaslatok, például az új alkalmazásról vagy biztonsági tartalomról szólók, Windows Műveletközpontban való megjelenítésének letiltása.
     - **Windows Reflektorfény személyre szabása** – Megakadályozza, hogy a Windows Reflektorfény személyre szabja az eredményeket az eszköz használata alapján.
     - **Windows-újdonságok az üdvözlőképernyőn** – A felhasználó számára új vagy frissített funkciókra vonatkozó információkat megjelenítő Windows-újdonságok az üdvözlőképernyőn letiltása.
 
 
-## <a name="display"></a>Megjelenítés
+## <a name="projection"></a>Kivetítés
 
 - **Felhasználói bevitel vezeték nélküli kijelzők vevőegységeiről** – Letiltja a felhasználói bevitelt a vezeték nélküli kijelzők vevőegységeiről.
 - **Kivetítés erre a számítógépre** – Megakadályozza, hogy más eszközök felderíthessék a számítógépet kivetítéshez.

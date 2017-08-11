@@ -15,16 +15,27 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-konzolt, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure-beli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
-|Funkció |Elérés a klasszikus konzolon|Elérés az Azure-beli Intune-ban||------------||---------------|---------------| |Eszközregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > DEP-token](#where-did-apple-dep-go) ||Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és Mac OS X > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-apple-dep-go) | |Regisztráció szabályai |Felügyelet > Mobileszköz-kezelés > Regisztráció szabályai|[Eszközregisztráció > Regisztrációs korlátozások](#where-did-enrollment-rules-go) | |Csoportok iOS sorozatszám szerint|Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint|[Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli sorozatszámok](#where-did-corporate-pre-enrolled-devices-go) | |Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált céges eszközök > iOS-sorozatszám szerint| [Eszközregisztráció > Apple-regisztráció > AC-sorozatszámok](#where-did-corporate-pre-enrolled-devices-go)| |Csoportok IMEI-szám szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált céges eszközök > IMEI-szám szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)| | Céges eszközregisztrációs profil| Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programbeli profilok](#where-did-corporate-pre-enrolled-devices-go) | | Céges eszközregisztrációs profil | Szabályzat > Céges eszközregisztráció | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go)| | Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work-regisztráció | | Feltételek és kikötések | Szabályzat > Feltételek és kikötések | Eszközregisztráció > Feltételek és kikötések |
+|Funkció |Elérési útvonal a klasszikus konzolon|Elérési útvonal az Azure-beli Intune-ban|
+|------------|---------------|---------------|
+|Készülékregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program tokenje](#where-did-apple-dep-go) |
+|Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-apple-dep-go) |
+|Beléptetési szabályok |Felügyelet > Mobileszköz-kezelés > Regisztrációs szabályok|[Eszközregisztráció > Regisztrációs korlátozások](#where-did-enrollment-rules-go) |
+|Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > iOS-sorozatszám szerint|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-corporate-pre-enrolled-devices-go) |
+|Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > iOS-sorozatszám szerint| [Eszközregisztráció > Apple-regisztráció > AC-sorozatszámok](#where-did-corporate-pre-enrolled-devices-go)|
+|Csoportok IMEI szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > IMEI szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)|
+| Vállalati eszközregisztrációs profil| Szabályzat > Vállalati eszközök regisztrációja | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programprofilok](#where-did-corporate-pre-enrolled-devices-go) |
+| Vállalati eszközregisztrációs profil | Szabályzat > Vállalati eszközök regisztrációja | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work > Regisztráció |
+| Feltételek és kikötések | Szabályzatok > Használati feltételek | Eszközregisztráció > Használati feltételek |
 
 
 ## <a name="where-do-i-manage-groups"></a>Hol lehet a csoportokat kezelni?
