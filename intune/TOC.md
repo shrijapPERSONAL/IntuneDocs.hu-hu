@@ -263,7 +263,7 @@
 ### [Windows-alkalmazások beszerzése](end-user-apps-windows.md)
 
 # Monitorozás és hibaelhárítás
-## [Az ügyfélszolgálati operátor szerepkör használata](help-desk-operators.md)
+## [Segítség a felhasználóknak a problémák elhárításában](help-desk-operators.md)
 ## [Az Intune-adattárház használata](reports-nav-create-intune-reports.md)
 ### [Kapcsolódás az adattárházhoz a Power BI használatával](reports-proc-get-a-link-powerbi.md)
 
