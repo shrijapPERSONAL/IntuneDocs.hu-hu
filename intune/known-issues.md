@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -51,12 +51,12 @@ A 2017 januárja előtt létrehozott Intune-fiókokat migrálni kell, hogy az al
 
 Mivel ezek a lehetőségek nem kezelhetők egyszerre a klasszikus Silverlight- és az Azure-konzolon is, a migrálás az alábbi hatást váltja ki:
 - letiltja őket a klasszikus konzolon
-- engedélyezi őket az Azure-konzolon.  
+- engedélyezi őket az Azure-konzolon  
 
 Ha a továbbiakban ezeket az Intune-lehetőségeket az Azure Portalon kezeli, vegye figyelembe az alábbi pontokat:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Eltávolítja a céges eszközregisztrációs profilokat az Apple DEP-ben
-Az Azure Portal nem támogat alapértelmezés szerinti céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. A klasszikus Silverlight Intune-konzol ezen funkcióját a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
+Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. A klasszikus Silverlight Intune-konzol ezen funkcióját a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Az Apple DEP-token migráláskor visszaáll
 
@@ -64,8 +64,7 @@ Ha a klasszikus Intune-portálon (Silverlight) törli az Apple Device Enrollment
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
 
-A klasszikus portálról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi.
-A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
+A klasszikus portálról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
 
 ## <a name="apps"></a>Alkalmazások
 
@@ -111,7 +110,7 @@ További információt a [Mi az eszközmegfelelőség](device-compliance.md) cí
 
 ### <a name="ios-app-protection-policies"></a>iOS-es alkalmazásvédelmi szabályzatok
 
-Megadhat olyan [iOS-hez készült alkalmazásvédelmi szabályzatokat](app-protection-policy-settings-ios.md), melyek a mobilakalmazás-kezeléssel, regisztráció nélkül kezelt eszközök felhasználói számára érhetőek el. Egy átmeneti hiba miatt ezeket a szabályzatok csak olyan iOS-verziókhoz adhatók meg, melyekben egyetlen, és nem pedig több tizedespont szerepel. Ahelyett, hogy az iOS 10.3.1-et adná meg minimális verzióként, az iOS 10.3-at kell beállítania. Ezt a problémát az iOS SDK hamarosan megjelenő frissítése meg fogja oldani.
+Megadhat olyan [iOS-hez készült alkalmazásvédelmi szabályzatokat](app-protection-policy-settings-ios.md), melyek a mobilakalmazás-kezeléssel (MAM), regisztráció nélkül kezelt eszközök felhasználói számára érhetőek el. Egy átmeneti hiba miatt ezeket a szabályzatok csak olyan iOS-verziókhoz adhatók meg, melyekben egyetlen, és nem pedig több tizedespont szerepel. Ahelyett, hogy az iOS 10.3.1-et adná meg minimális verzióként, az iOS 10.3-at kell beállítania. Ezt a problémát az iOS SDK hamarosan megjelenő frissítése meg fogja oldani.
 
 
 ## <a name="administration-and-accounts"></a>Felügyelet és fiókok

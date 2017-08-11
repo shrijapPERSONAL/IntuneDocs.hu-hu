@@ -1,37 +1,35 @@
 ---
 title: "Intune-szószedet"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "A Microsoft Intune-ban használt szakkifejezések egy részének bemutatása"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-szószedet
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |Alkalmazás-hozzárendelés|Lehetővé teszi a felhasználók számára, hogy [megkeressék, letöltsék és telepítsék](/intune/app-management) a szükséges alkalmazásaikat. Ezt korábban *alkalmazások üzembe helyezésének* nevezték.|
-|Alkalmazáskonfigurációs profil|Futtatásuk előtt adott beállításokkal konfigurálja az [iOS](/intune/app-configuration-policies-use-ios)- és [Android](/intune/app-configuration-policies-use-android)-alkalmazásokat.|
+|Alkalmazáskonfigurációs profil <br/><br/>Alkalmazáskonfigurációs szabályzat|Szállítóspecifikus konfigurációval rendelkező mobilalkalmazásoknál érhető el. Futtatásuk előtt adott beállításokkal konfigurálja az [iOS](/intune/app-configuration-policies-use-ios)- és [Android](/intune/app-configuration-policies-use-android)-alkalmazásokat.|
 |Alkalmazások monitorozása|Lehetővé teszi az alkalmazás-hozzárendeléssel kapcsolatos [legutóbbi állapotok és tevékenységek felülvizsgálatát](/intune/apps-monitor).|
 |Alkalmazásvédelem adateltávolítási feladata|[Eltávolítja az alkalmazásadatokat](/intune/app-protection-policies) a felhasználó eszközéről.|
-|Alkalmazásvédelmi szabályzat|Biztosítja, hogy a felhasználó alkalmazásai megfeleljenek a [cégnél érvényes adatvédelmi szabályzatoknak](/intune/app-protection-policies).|
+|Alkalmazásvédelmi szabályzat|Az Enterprise Mobility + Security- (EMS-) technológiával integrált mobilalkalmazásoknál érhető el. Biztosítja, hogy a felhasználó alkalmazásai megfeleljenek a [cégnél érvényes adatvédelmi szabályzatoknak](/intune/app-protection-policies).|
 |App SDK|A [Microsoft Intune App SDK](/intune/app-sdk) segítségével olyan funkciókat adhat hozzá a cégen belül írt alkalmazásokhoz, amelyek lehetővé teszik az alkalmazásoknak az Intune-alapú alkalmazásvédelmi szabályzatokkal történő felügyeletét.|
 |Alkalmazáseltávolítási művelet|Lehetővé teszi [alkalmazások eltávolítását](/intune/apps-deploy) a felhasználó eszközeiről.|
 |Alkalmazásburkoló eszköz|[Parancssori alkalmazás](/intune/apps-prepare-mobile-application-management), amely egy burkolót hoz létre egy üzletági alkalmazás körül. Ez a burkoló lehetővé teszi, hogy az alkalmazást Intune-alapú alkalmazásvédelmi szabályzattal felügyeljék.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Felügyelt böngésző|Egy [webböngésző-alkalmazás](/intune/app-configuration-managed-browser), amelyet az Intune használatával rendelhet hozzá a céges eszközeihez. A felügyeltböngésző-szabályzatban megadható egy engedélyezési vagy blokklista, amellyel korlátozhatók a felügyelt böngésző felhasználói által felkereshető webhelyek.|
 |MDM-szolgáltató|Az [MDM-szolgáltató](/intune/mdm-authority-set) határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Manager és az Intune.|
-|Mobilalkalmazás-konfigurációs szabályzat|Olyan [iOS](/intune/app-configuration-policies-use-ios)- vagy [Android](/intune/app-configuration-policies-use-android)-szabályzat, amelyet futtatva bizonyos beállításokat (például cégnevet vagy kiszolgálócímet) léptethet érvénybe a kompatibilis alkalmazásokban.|
+|Mobilalkalmazás-konfigurációs szabályzat|Szállítóspecifikus konfigurációval rendelkező mobilalkalmazásoknál érhető el. Például olyan [iOS](/intune/app-configuration-policies-use-ios)- vagy [Android](/intune/app-configuration-policies-use-android)-szabályzat, amely bizonyos beállításokat (például cégnevet vagy kiszolgálócímet) léptethet érvénybe a kompatibilis alkalmazások futtatásakor.|
 |Mobilalkalmazás-kiépítési szabályzat|iOS-szabályzat, amelynek segítségével garantálhatja, hogy az iOS-alkalmazásokhoz hozzárendelt [kiépítési profilok](/intune/app-provisioning-profile-ios) ne járjanak le.|
 |Mobilalkalmazás-kezelés|A [mobilalkalmazás-felügyelet (MAM)](/intune/app-lifecycle) lehetővé teszi a felhasználók mobilalkalmazásainak közzétételét, leküldését, konfigurálását, védelmét, figyelését és frissítését.
 |Mobileszköz-kezelés|A [mobileszköz-kezelés (MDM)](/intune/device-lifecycle) segítségével eszközöket regisztrálhat az Intune-ban, hogy azok kiépíthetők, konfigurálhatók, monitorozhatók, illetve felügyelhetők legyenek.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Szelektív törlés|A [szelektív törlés](/intune/device-company-data-remove) a vállalati adatokat, többek között a mobilalkalmazás-felügyeleti (MAM-) adatokat (adott esetben), a beállításokat és az e-mail-profilokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak.|
+|Szelektív törlés|A [szelektív törlés](/intune/device-company-data-remove) csak az alkalmazásvédelmi szabályzatok által védett vállalati adatokat, például a beállításokat és az e-mail-profilokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak.|
 |Közvetlen telepítés|Egy üzletági alkalmazás olyan telepítési művelete, amely során az adott alkalmazást nem az alkalmazás-áruházból telepítik.|
 |Előfizetés|Az Ön által megkötött szerződés, amely lehetőséget nyújt egy Intune-bérlő elérésére.|
 

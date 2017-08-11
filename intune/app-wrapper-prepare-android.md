@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése mobilalkalmazás-felügyelethez az Intune App Wrapping Tool eszközével
 
@@ -50,16 +50,7 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
     > [!NOTE]
     > Egyes esetekben a Java 32 bites verziója memóriaproblémákat okozhat. Tanácsos a 64 bites verziót telepíteni.
 
-- Az Android megköveteli, hogy minden alkalmazáscsomag (.apk) alá legyen írva. A Java keytool eszközzel létrehozhatja a kimeneti burkolt alkalmazás aláírásához szükséges hitelesítő adatokat. Az alábbi parancs például olyan kulcsokat állít elő a keytool.exe végrehajtható fájllal, amelyeket az alkalmazásburkoló eszköz használhat a kimeneti burkolt alkalmazás aláírásához.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Ez a példa az RSA algoritmuson alapuló kulcspárt generál (egy 2048 bites nyilvános kulcsot és a hozzá tartozó titkos kulcsot). Ezután a nyilvános kulcsot egy X.509 v3 verziójú önaláírt tanúsítványba burkolja, és azt egyelemű tanúsítványláncként tárolja. A tanúsítványlánc és a titkos kulcs egy új, "mykeystorefile" nevű kulcstárban lesz tárolva, és a "mykeyalias" aliasszal azonosítható. A kulcstárbejegyzés érvényessége 50.000 nap.
-
-    A parancs használatánál meg kell majd adnia a kulcstárhoz és a kulcshoz tartozó jelszavakat. Használjon biztonságos jelszavakat, de fontos, hogy feljegyezze őket, mert később szüksége lesz rá az alkalmazásburkoló eszköz futtatásához.
-
-    Az Oracle-dokumentáció honlapján részletes információkat talál a Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) és a Java [Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) témakörökben.
+- Az Android megköveteli, hogy minden alkalmazáscsomag (.apk) alá legyen írva. Létező tanúsítványok **újbóli használatához** és az aláíró tanúsítványok teljes útmutatójához lásd: [Aláíró tanúsítványok és burkolóalkalmazások újbóli használata](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A keytool.exe végrehajtható Java-eszközzel létrehozhatja a kimeneti burkolt alkalmazás aláírásához szükséges **új** hitelesítő adatokat. Minden beállított jelszónak biztonságosnak kell lennie, de jegyezze fel őket, mert szükség van rájuk az alkalmazásburkoló eszköz futtatásához.
 
 ## <a name="install-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz telepítése
 
@@ -95,7 +86,7 @@ Jegyezze fel a mappa nevét, ahová az eszközt telepítette. Az alapértelmezet
 |**-KeyStorePassword**&lt;SecureString&gt;|A kulcstár visszafejtésére szolgáló jelszó. Az Android elvárja, hogy minden alkalmazáscsomag (.apk) alá legyen írva. A Java keytool segítségével hozza létre a KeyStorePassword kulcsot. További információk a Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) osztályról.| |
 |**-KeyAlias**&lt;String&gt;|Az aláíráshoz használt kulcs neve.| |
 |**-KeyPassword**&lt;SecureString&gt;|Az aláíráshoz használt titkos kulcs visszafejtésére szolgáló jelszó.| |
-|**-SigAlg**&lt;SecureString&gt;| (Nem kötelező) Az aláíráshoz használandó aláírási algoritmus neve. Az algoritmusnak kompatibilisnek kell lennie a titkos kulccsal.|Példák: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Nem kötelező) Az aláíráshoz használandó aláírási algoritmus neve. Az algoritmusnak kompatibilisnek kell lennie a titkos kulccsal.|Példák: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Nem kötelező) A parancs támogatja gyakran használt PowerShell-paramétereket, mint például a verbose, a debug stb. |
 
 

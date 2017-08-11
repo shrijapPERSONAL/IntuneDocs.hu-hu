@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok figyelése a Microsoft Intune-ban
 Figyelheti a felhasználókra vonatkozó alkalmazásvédelmi szabályzatok megfelelőségi állapotát. Itt információkat találhat az alkalmazásvédelmi szabályzatok által érintett felhasználókról, azok megfelelőségi állapotáról, valamint a felhasználók által esetlegesen tapasztalt problémákról.
@@ -43,11 +43,13 @@ Az **Intune mobilalkalmazás-kezelés** panelen megtekintheti a megfelelési ál
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](../media/mam-azure-portal-user-status-summary.png)
 
--   **Felhasználók:** a szabályzathoz társított alkalmazásokat használó felhasználók száma a vállalatnál.
+-   **Felhasználók**: A cég összes olyan felhasználója, akik egy adott szabályzathoz társított alkalmazást használnak a munkahelyi környezetben.
 
--   **HÁZIREND ÁLTAL KEZELT:** azon felhasználók száma, akik az alkalmazások közül legalább egyet már használtak a munkahelyi környezetben.
+-   **SZABÁLYZAT ÁLTAL KEZELT**: Azon felhasználók, akik már használtak egy alkalmazást, és szabályzat van hozzájuk rendelve a munkahelyi környezetben.
 
--   **NEM TALÁLHATÓ HÁZIREND:** azon felhasználók száma, akik használják ugyan a szabályzathoz társított alkalmazásokat, de akikre nem vonatkozik a beállított szabályzat. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
+-   **NINCS SZABÁLYZAT**: Azon felhasználók, akik szabályzat nélküli alkalmazást használnak a munkahelyi környezetben. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
+    > [!NOTE]
+    > Platformonként több szabályzat esetén a felhasználó akkor minősül szabályzat által kezeltnek, ha legalább egy szabályzat hozzá van rendelve.
 
 - **Megjelölt felhasználók:** a problémákat tapasztaló felhasználók száma. A rendszer jelenleg a **Megjelölt felhasználók** részben kizárólag a jailbreakelt eszközt használó felhasználókat jelöli meg.
 

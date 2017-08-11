@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,90 +15,67 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: eec078fa0ddc0414b2912e3df841841d96b2e79e
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
-# Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
-<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Általános
-<a id="general" class="xliff"></a>
--   **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera.   
+## <a name="general"></a>Általános
+    
 -   **Diagnosztikai adatok küldése** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
--   **FaceTime** – Engedélyezi a FaceTime alkalmazás használatát az eszközön.
 -   **Képernyőfelvétel** – Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.
--   **Siri** – Engedélyezi az eszközön a Siri beszédfelismerési asszisztens használatát.
-    -   **Siri, ha az eszköz zárolva van** – Engedélyezi a Siri beszédfelismerési asszisztens eszközzárolás alatti használatát az eszközön.
-    -   **Siri profanitásszűrője (csak felügyelt)** – Megakadályozza, hogy a Siri durva kifejezéseket mondjon ki, vagy elfogadja ilyenek diktálását.
-    -   **Felhasználó által létrehozott tartalom Siri általi lekérdezése az internetről (csak felügyelt)** – Engedélyezi, hogy a Siri kérdések megválaszolása céljából hozzáférjen webhelyekhez.
+    - **Távoli képernyőfigyelés az Osztályterem alkalmazással (csak felügyelt)** – Letiltja vagy engedélyezi, hogy az Apple Osztályterem alkalmazása figyelje az iOS-eszközök képernyőjét.
+    - **Az Osztályterem alkalmazás értesítés nélküli képernyőfigyelése (csak felügyelt)** – Ha engedélyezi, az oktatók csendes módban, a diákok tudta nélkül figyelhetik a diákok iOS-eszközeinek képernyőjét az Osztályterem alkalmazás használatával.
 -   **Nem megbízható TLS-tanúsítványok** – Engedélyezi nem megbízható TLS-tanúsítványok használatát az eszközön.
+-   **Megbízható nagyvállalati alkalmazás** – Engedélyezi a felhasználó számára, hogy megbízhatónak tekintsen olyan alkalmazásokat, amelyeket nem az alkalmazás-áruházból töltött le.
+- **Fiókmódosítás (csak felügyelt)** – Ha a beállítás ki van kapcsolva, a felhasználó nem módosíthat eszközspecifikus beállításokat (például új eszközfiókok létrehozása, felhasználónév vagy jelszó módosítása) az iOS beállításkezelő alkalmazásából.
+Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra (például Mail, Contacts, Calendar, Facebook és Twitter) vonatkozó beállításokat is érinti, nem vonatkozik azonban azokra az alkalmazásokra, amelyeknek nincsenek az iOS beállításkezelő alkalmazásából konfigurálható fiókbeállításaik (például a Microsoft Outlook alkalmazás).
+- **Korlátozások engedélyezése az eszközbeállítások között (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) állítson be az eszközön.
+- **Az eszköz teljes tartalmának és összes beállításának törlésére szolgáló beállítás használata (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.
+- **Eszköz nevének módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz nevét.
+- **Értesítési beállítások módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz értesítési beállításait.
+- **Háttérkép módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megváltoztassa az eszköz háttérképét.
+- **Vállalati alkalmazások megbízhatósági beállításainak módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megbízhatónak tekintsen olyan alkalmazásokat, amelyeket nem az alkalmazás-áruházból töltött le.
+- **Konfigurációs profil módosítása** – Engedélyezi a felhasználó számára a konfigurációs profilok telepítését.
+- **Aktiválási zár (csak felügyelt)** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.
+
+## <a name="password"></a>Jelszó
+-   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
+    -   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (például a 0000 és az 1234) használatát.
+    -   **Kért jelszótípus** – A kért jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.
+    -   **Nem alfanumerikus karakterek száma a jelszóban** – Adja meg, hogy hány szimbólumkarakternek (például **#** vagy **@**) kell szerepelnie a jelszóban.
+    -   **Jelszó minimális hossza** – Meghatározza, hogy legalább hány karakterből álljon a jelszó.
+    -   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Meghatározza, hogy hány sikertelen bejelentkezési kísérlet után törlődnek az eszközön lévő adatok.
+    -   **Jelszó kérése ennyi perccel a képernyőzárolás után**<sup>1</sup> – Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.
+    -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után**<sup>1</sup> – Ennyi perc elteltével kapcsol ki a kijelző.
+    -   **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
+    -   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
+    -   **Ujjlenyomattal történő zárolásfeloldás engedélyezése** – Engedélyezi az erre alkalmas eszközök zárolásának ujjlenyomattal történő feloldását.
+- **PIN-kód módosítása (csak felügyelt)** – Megakadályozza a jelszó hozzáadását, módosítását és eltávolítását. 
+    - **Ujjlenyomat módosítása (csak felügyelt)** – Megakadályozza, hogy a felhasználó módosítsa, hozzáadja vagy eltávolítsa a TouchID-beállításokat.
+
+<sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
+
+## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
+
 -   **Vezérlőközpont elérése az eszköz zárolt állapotában** – Engedélyezi a felhasználó számára a hozzáférést a vezérlőközpont-alkalmazáshoz olyankor is, amikor az eszköz zárolva van.
 -   **Értesítések, ha az eszköz zárolva van** – Engedélyezi a felhasználó számára, hogy az eszköz zárolásának feloldása nélkül is hozzáférhessen az értesítések nézetéhez.
 -   **Passbook, ha az eszköz zárolva van** – Engedélyezi a felhasználó számára a Passbook alkalmazás elérését olyankor is, amikor az eszköz zárolva van.
 -   **Ma nézet, ha az eszköz zárolva van** – Engedélyezi a felhasználó számára a Ma nézet használatát, ha az eszköz zárolva van.
--   **Megbízható nagyvállalati alkalmazás** – Engedélyezi a felhasználó számára, hogy megbízhatónak tekintsen olyan alkalmazásokat, amelyeket nem az alkalmazás-áruházból töltött le.
--   **AirDrop (csak felügyelt)** – Engedélyezi az AirDrop funkciónak a közeli eszközökkel való tartalomcserére történő használatát.
--   **Spotlight-keresés internetes eredményeinek visszaadása (csak felügyelt)** – Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, és további találatokat adjon vissza.
--   **Szómeghatározások keresése (csak felügyelt)** – Engedélyezi azt az iOS-funkciót, amellyel kijelölhet egy szót, és megkeresheti a meghatározását.
--   **Prediktív billentyűzetek (csak felügyelt)** – Engedélyezi a prediktív billentyűzetek használatát; ezek javaslatokat tesznek a felhasználó által leírni kívánt szavakra.
--   **Automatikus javítás (csak felügyelt)** – Engedélyezi, hogy az eszköz automatikusan kijavítsa a hibásan leírt szavakat.
--   **Billentyűzet helyesírás-ellenőrzése (csak felügyelt)** – Engedélyezi az eszköz helyesírás-ellenőrzőjének használatát.
--   **Billentyűparancsok (csak felügyelt)** – Engedélyezi a billentyűparancsok használatát.
--   **Párosított Apple Watch órák csuklóérzékelése** – Ha ez a beállítás engedélyezve van, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik.
-- **Párosítási jelszó megkövetelése a kimenő AirPlay-kérelmekhez** – A rendszer kéri a párosítási jelszót, ha a felhasználó az AirPlay segítségével tartalmat kíván streamelni egyéb Apple-eszközökre.
-- **Fiókmódosítás (csak felügyelt)** – Ha a beállítás ki van kapcsolva, a felhasználó nem módosíthat eszközspecifikus beállításokat (például új eszközfiókok létrehozása, felhasználónév vagy jelszó módosítása) az iOS beállításkezelő alkalmazásából.
-Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra (például Mail, Contacts, Calendar, Facebook és Twitter) vonatkozó beállításokat is érinti, nem vonatkozik azonban azokra az alkalmazásokra, amelyeknek nincsenek az iOS beállításkezelő alkalmazásából konfigurálható fiókbeállításaik (például a Microsoft Outlook alkalmazás).
-- **Apple Watch párosítása (csak felügyelt)** – Engedélyezi az eszköz Apple Watch órával való párosítását.
-- **Bluetooth módosítása (csak felügyelt)** – Letiltja, hogy a felhasználó módosítsa az eszközön a Bluetooth-beállításokat.
-- **Távoli képernyőfigyelés az Osztályterem alkalmazással (csak felügyelt)** – Letiltja vagy engedélyezi, hogy az Osztályterem alkalmazás figyelje a távoli eszközök képernyőjét.
-- **Korlátozások engedélyezése az eszközbeállítások között (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó eszközkorlátozásokat (szülői felügyeletet) állítson be az eszközön.
-- **Az eszköz teljes tartalmának és összes beállításának törlésére szolgáló beállítás használata (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.
-- **Eszköz nevének módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz nevét.
-- **Diagnosztikai adatok küldésére vonatkozó beállítások módosítása (csak felügyelt)** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
-- **Gazdapárosítás annak szabályozására, hogy az iOS-készülék milyen eszközökkel legyen párosítható (csak felügyelt)** – Engedélyezi a gazdapárosítási funkció számára, hogy lehetővé tegye az iOS-alapú eszközzel párosítható eszközök szabályozását a rendszergazda számára.
-- **Értesítési beállítások módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz értesítési beállításait.
-- **PIN-kód módosítása (csak felügyelt)** – Engedélyezi az eszközjelszó hozzáadását, módosítását és eltávolítását.
-- **Háttérkép módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megváltoztassa az eszköz háttérképét.
-- **Vállalati alkalmazások megbízhatósági beállításainak módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megbízhatónak tekintsen olyan alkalmazásokat, amelyeket nem az alkalmazás-áruházból töltött le.
-- **Alkalmazások telepítése az App Store-ból (csak felügyelt)** – Engedélyezi az eszköz számára az alkalmazás-áruház elérését és alkalmazások telepítését.
-- **Barátok keresése alkalmazás beállításainak módosítása (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.
-- **iBooks Store (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.
-- **Üzenetek alkalmazás az eszközön (csak felügyelt)** – Engedélyezi az Üzenetek alkalmazás használatát SMS-ek küldésére és fogadására.
-- **Podcasts (csak felügyelt)** – Engedélyezi a Podcastok alkalmazás használatát.
-- **Music szolgáltatás (csak felügyelt)** – Engedélyezi az Apple Music alkalmazás használatát.
-- **iTunes Radio szolgáltatás (csak felügyelt)** – Engedélyezi az iTunes Radio alkalmazás használatát.
-- **Apple Hírek (csak felügyelt)** – Engedélyezi az Apple Hírek alkalmazás használatát.
-- **Konfigurációs profil módosítása** – Engedélyezi a felhasználó számára a konfigurációs profilok telepítését.
 
-## Jelszó
-<a id="password" class="xliff"></a>
--   **Jelszó megkövetelése** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
--   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (például a 0000 és az 1234) használatát.
--   **Kért jelszótípus** – A kért jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.
--   **Nem alfanumerikus karakterek száma a jelszóban** – Adja meg, hogy hány szimbólumkarakternek (például **#** vagy **@**) kell szerepelnie a jelszóban.
--   **Jelszó minimális hossza** – Meghatározza, hogy legalább hány karakterből álljon a jelszó.
--   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Meghatározza, hogy hány sikertelen bejelentkezési kísérlet után törlődnek az eszközön lévő adatok.
--   **Jelszó kérése ennyi perccel a képernyőzárolás után**<sup>1</sup> – Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.
--   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után**<sup>1</sup> – Ennyi perc elteltével kapcsol ki a kijelző.
--   **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
--   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
--   **Ujjlenyomattal történő zárolásfeloldás engedélyezése** – Engedélyezi az erre alkalmas eszközök zárolásának ujjlenyomattal történő feloldását.
-
-<sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
-
-## Alkalmazás-áruház, dokumentumok megtekintése, játékok
-<a id="app-store-doc-viewing-gaming" class="xliff"></a>
+## <a name="app-store-doc-viewing-gaming"></a>Alkalmazás-áruház, dokumentumok megtekintése, játékok
 
 
--   **Alkalmazás-áruház (csak felügyelt eszköz esetén)** – Letiltja az alkalmazás-áruház elérését a felügyelt eszközökön.
+-   **Alkalmazás-áruház** – Letiltja az alkalmazás-áruház elérését a felügyelt eszközökön.
+    - **Alkalmazások telepítése az App Store-ból (csak felügyelt)** – Letiltja az alkalmazás-áruház elérését az eszköz kezdőképernyőjén. A végfelhasználók továbbra is használhatják az iTunest vagy az Apple Configurator eszközt alkalmazások telepítésére.
+    - **Automatikus alkalmazásletöltések (csak felügyelt)** – Letiltja a más iOS-eszközökön megvásárolt alkalmazások letöltését erre az eszközre.
 -   **Alkalmazás-áruház elérésére szolgáló jelszó** – A felhasználóktól jelszót kér, mielőtt hozzáférhetnének az alkalmazás-áruházhoz.
 -   **Alkalmazáson belüli vásárlás** – Engedélyezi a futó alkalmazásokból történő áruházi vásárlást.
--   **Automatikus alkalmazásletöltések (csak felügyelt)** -
 -   **Felnőtteknek szánt iTunes-tartalom (zene, podcast vagy hírek)** – Engedélyezi a felnőttnek minősített áruházi tartalom elérését az eszköz számára.
 -   **Az iBook áruházban „Erotika” címkével megjelölt tartalmak letöltése** – Engedélyezi a felhasználó számára az iBooks áruházban erotikus tartalomként megjelölt tartalom letöltését.
 -   **Céges dokumentumok megtekintése a nem felügyelt alkalmazásokban** – Engedélyezi a vállalati dokumentumok tetszőleges alkalmazásban való megtekintését.<br>**Példa:** Szeretné megakadályozni, hogy a felhasználók fájlokat mentsenek a OneDrive alkalmazásból a Dropbox alkalmazásba. Állítsa be ezt a beállítást „Nem” értékre. Miután az eszköz megkapja a házirendet (például újraindítás után), a továbbiakban nem engedélyezi a mentést.
@@ -110,8 +87,24 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 -   **Besorolási régió** – Válassza ki, hogy melyik besorolási régióra vonatkozóan kívánja konfigurálni az engedélyezett letöltéseket, majd adja meg, hogy milyen besorolású **Filmek** és **Tévéműsorok** letöltését engedélyezi.
 -   **Alkalmazások** – Válassza ki, hogy milyen korhatár-besorolású alkalmazásokat tölthessenek le a felhasználók (a **Minden alkalmazás engedélyezése** lehetőséget is választhatja).
 
-## Korlátozott alkalmazások
-<a id="restricted-apps" class="xliff"></a>
+## <a name="built-in-apps"></a>Beépített alkalmazások
+
+-   **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera. 
+    -   **FaceTime** – Engedélyezi a FaceTime alkalmazás használatát az eszközön.
+-   **Siri** – Engedélyezi az eszközön a Siri beszédfelismerési asszisztens használatát.
+    -   **Siri, ha az eszköz zárolva van** – Engedélyezi a Siri beszédfelismerési asszisztens eszközzárolás alatti használatát az eszközön.
+    -   **Siri profanitásszűrője (csak felügyelt)** – Megakadályozza, hogy a Siri durva kifejezéseket mondjon ki, vagy elfogadja ilyenek diktálását.
+    -   **Felhasználó által létrehozott tartalom Siri általi lekérdezése az internetről (csak felügyelt)** – Engedélyezi, hogy a Siri kérdések megválaszolása céljából hozzáférjen webhelyekhez.
+- **Apple Hírek (csak felügyelt)** – Engedélyezi az Apple Hírek alkalmazás használatát.
+- **iBooks Store (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó könyveket böngésszen és vásároljon az iBook áruházban.
+- **Üzenetek alkalmazás az eszközön (csak felügyelt)** – Engedélyezi az Üzenetek alkalmazás használatát SMS-ek küldésére és fogadására.
+- **Podcasts (csak felügyelt)** – Engedélyezi a Podcastok alkalmazás használatát.
+- **Music szolgáltatás (csak felügyelt)** – Engedélyezi az Apple Music alkalmazás használatát.
+- **iTunes Radio szolgáltatás (csak felügyelt)** – Engedélyezi az iTunes Radio alkalmazás használatát.
+- **Barátok keresése alkalmazás beállításainak módosítása (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó megváltoztassa a Barátok alkalmazás beállításait.
+- **Spotlight-keresés internetes eredményeinek visszaadása (csak felügyelt)** – Lehetővé teszi, hogy a Spotlight kereső csatlakozzon az internethez, és további találatokat adjon vissza.
+
+## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
 A korlátozott alkalmazások listájában a következő listák valamelyikét konfigurálhatja:
 
@@ -120,8 +113,7 @@ A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalm
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kívánt nevet, igény szerint az alkalmazás kiadóját, valamint az alkalmazás alkalmazás-áruházbeli URL-címét.
 
-### Az alkalmazás áruházbeli URL-címének megadása
-<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
+### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Az alkalmazás áruházbeli URL-címének megadása
 
 Ha meg szeretné adni egy alkalmazás URL-címét alkalmazások listájában, használja a következő formátumot:
 
@@ -136,13 +128,11 @@ Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a k�
 
 
 
-### További beállítások
-<a id="additional-options" class="xliff"></a>
+### <a name="additional-options"></a>További beállítások
 
 Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. Ennek a következő formátumúnak kell lennie: <*az alkalmazás URL-címe*>, <*az alkalmazás neve*>, <*az alkalmazás kiadója*>. Az **Exportálás** gombra kattintva egy olyan CSV-fájlt hozhat létre, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.
 
-## Alkalmazások megjelenítése vagy elrejtése
-<a id="show-or-hide-apps" class="xliff"></a>
+## <a name="show-or-hide-apps-supervised-only"></a>Alkalmazások megjelenítése vagy elrejtése (csak felügyelt)
 
 A megjelenített és az elrejtett alkalmazások listáján konfigurálhatja valamelyiket a következő listák közül (ennek feltétele, hogy a felügyelt eszközökön az iOS 9.3-as vagy újabb verziója fusson).
 
@@ -151,8 +141,7 @@ A **Megjelenített alkalmazások** listája – Ebben megadhatja a felhasználó
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, és adja meg a kívánt nevet. Tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazásnak az alkalmazás-áruházbeli URL-címét.
 
-### Az alkalmazás áruházbeli URL-címének megadása
-<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
+### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Az alkalmazás áruházbeli URL-címének megadása
 
 Ha meg szeretné adni egy alkalmazás URL-címét alkalmazások listájában, használja a következő formátumot:
 
@@ -164,22 +153,43 @@ Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a k�
 > [!Note]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
-### További beállítások
-<a id="additional-options" class="xliff"></a>
+### <a name="additional-options"></a>További beállítások
 
 Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. Ennek a következő formátumúnak kell lennie: <*az alkalmazás URL-címe*>, <*az alkalmazás neve*>, <*az alkalmazás kiadója*>. Az **Exportálás** gombra kattintva egy olyan CSV-fájlt hozhat létre, amely ugyanebben a formátumban tartalmazza a rejtett vagy a megjelenített alkalmazások listáját.
 
 
-## Mobil
-<a id="cellular" class="xliff"></a>
+## <a name="wireless"></a>Vezeték nélküli
 -   **Adatroaming** – Engedélyezi adatroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
 -   **Barangolás közbeni globális háttérbeli adatbeolvasás** – Engedélyezi az eszköz számára a mobilhálózati roaming közben történő adatlehívást, például az e-mailek lekérését.
 -   **Hangtárcsázás** – Engedélyezi a hangtárcsázási funkciót az eszközön.
 -   **Hangroaming** – Engedélyezi a hangroaming használatát arra az esetre, ha az eszköz mobilhálózathoz csatlakozik.
 -   **Alkalmazások mobil adatforgalmi beállításainak módosítása (csak felügyelt)** – Engedélyezi, hogy a felhasználó szabályozza, mely alkalmazások bonyolíthassanak le mobilhálózati adatforgalmat.
+-   **Személyes elérési pont** – Letiltja az eszköz elérési pontként való használatát. Előfordulhat, hogy egyes hálózatüzemeltető szolgáltatók esetében ez a beállítás nem érvényesül.
+-   **Wi-Fi-hálózatokhoz való csatlakozás csak konfigurációs profilokkal (csak felügyelt)** – Az eszköz csak olyan Wi-Fi-hálózatokhoz csatlakozhat, amelyeket Intune-beli Wi-Fi-profillal konfiguráltak.
 
-## Felhő és tárolás
-<a id="cloud-and-storage" class="xliff"></a>
+- **Mobilhálózati használati szabályok (csak felügyelt)** – A beállítással a felügyelt alkalmazások által mobilhálózatokon használható adattípusokat határozhatja meg. A következő lehetőségek közül választhat:
+    - **Mobiladatok használatának letiltása**
+    - **Mobiladatok használatának letiltása barangolás esetén**
+
+## <a name="connected-devices"></a>Csatlakoztatott eszközök
+
+-   **AirDrop (csak felügyelt)** – Engedélyezi az AirDrop funkciónak a közeli eszközökkel való tartalomcserére történő használatát.
+-   **Apple Watch párosítása (csak felügyelt)** – Engedélyezi az eszköz Apple Watch órával való párosítását.
+-   **Párosított Apple Watch órák csuklóérzékelése** – Ha ez a beállítás engedélyezve van, az Apple Watch nem jelenít meg értesítéseket, amikor nem viselik.
+-   **Bluetooth módosítása (csak felügyelt)** – Letiltja, hogy a felhasználó módosítsa az eszközön a Bluetooth-beállításokat.
+-   **Gazdapárosítás annak szabályozására, hogy az iOS-készülék milyen eszközökkel legyen párosítható (csak felügyelt)** – Engedélyezi a gazdapárosítási funkció számára, hogy lehetővé tegye az iOS-alapú eszközzel párosítható eszközök szabályozását a rendszergazda számára.
+-   **Párosítási jelszó megkövetelése a kimenő AirPlay-kérelmekhez** – A rendszer kéri a párosítási jelszót, ha a felhasználó az AirPlay segítségével tartalmat kíván streamelni egyéb Apple-eszközökre.
+
+## <a name="keyboard-and-dictionary"></a>Billentyűzet és szótár
+
+-   **Szómeghatározások keresése (csak felügyelt)** – Engedélyezi azt az iOS-funkciót, amellyel kijelölhet egy szót, és megkeresheti a meghatározását.
+-   **Prediktív billentyűzetek (csak felügyelt)** – Engedélyezi a prediktív billentyűzetek használatát; ezek javaslatokat tesznek a felhasználó által leírni kívánt szavakra.
+-   **Automatikus javítás (csak felügyelt)** – Engedélyezi, hogy az eszköz automatikusan kijavítsa a hibásan leírt szavakat.
+-   **Billentyűzet helyesírás-ellenőrzése (csak felügyelt)** – Engedélyezi az eszköz helyesírás-ellenőrzőjének használatát.
+-   **Billentyűparancsok (csak felügyelt)** – Engedélyezi a billentyűparancsok használatát.
+-   **Diktálás (csak felügyelt)** – Megakadályozza, hogy a felhasználó hangbemenet használatával írjon be szöveget.
+
+## <a name="cloud-and-storage"></a>Felhő és tárolás
 -   **Biztonsági mentés az iCloudba** – Engedélyezi, hogy a felhasználó biztonsági mentést készítsen az iCloudba az eszközről.
 -   **Dokumentumok iCloudba történő szinkronizálása (csak felügyelt eszköz esetén)** – Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.
 -   **Fényképadatfolyamok iCloudba történő szinkronizálása** – A felhasználók engedélyezhetik a **Saját fotóstreamet** az eszközeiken, amely lehetővé teszi a fényképeknek az iClouddal való szinkronizálását, így a fényképek elérhetővé válnak a felhasználó összes eszközén.
@@ -189,13 +199,11 @@ Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. E
 -   **Megosztott fotóstream** – A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.
 -   **Tevékenység folytatása** – Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy egy másik macOS rendszerű gépen elkezdett munkát (átadás).
 
-## Autonóm egyalkalmazásos mód (csak felügyelt)
-<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
+## <a name="autonomous-single-app-mode-supervised-only"></a>Autonóm egyalkalmazásos mód (csak felügyelt)
 
 Ezekkel a beállításokkal konfigurálhatja az iOS-es eszközöket megadott alkalmazások autonóm egyalkalmazásos módban való futtatására. Ha ez a mód konfigurálva van, és az alkalmazást elindítják, az eszközön nem lehet másik alkalmazást futtatni. Célszerű például így konfigurálni az olyan alkalmazásokat, amelyekkel a felhasználók vizsgázhatnak az eszközön. Az alkalmazás használatának befejezésekor vagy a szabályzat eltávolításakor az eszköz visszatér a szokásos állapotába.
 
-### Beállítások
-<a id="settings" class="xliff"></a>
+### <a name="settings"></a>Beállítások
 
 - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak az ezen a lapon található alkalmazáslistában megjelenő nevét.
 - **Alkalmazás csomagazonosítója** – Itt adhatja meg az alkalmazás csomagazonosítóját. Segítséget a jelen témakörben alább található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
@@ -205,8 +213,7 @@ Az alkalmazásnevek és a csomagazonosítók megadása után az alkalmazást a *
 - **Importálás** – Importálhat egy vesszővel tagolt (.csv kiterjesztésű) fájlt, amely az alkalmazások nevét és a hozzájuk tartozó csomagazonosítókat tartalmazza.
 - **Exportálás** – Az alkalmazásneveket és a hozzájuk tartozó csomagazonosítókat egy vesszővel tagolt (.csv kiterjesztésű) fájlba exportálhatja.
 
-### Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
-<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
 
 Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
 
@@ -254,33 +261,30 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 ```
 
 
-## Kioszkmód
-<a id="kiosk" class="xliff"></a>
--   **Aktiválási zár** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.
+## <a name="kiosk-supervised-only"></a>Kioszkmód (csak felügyelt)
 -   **Kioszkmódban futó alkalmazás** – A **Felügyelt alkalmazás** lehetőséget választva egy az Intune-ba már felvett alkalmazást adhat meg, az **Áruházbeli alkalmazás** lehetőséget választva egy áruházbeli alkalmazás URL-címét. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. További segítségért olvassa el a jelen témakörben alább található „Alkalmazásáruházak URL-címének megadása” című részt.
--   **AssistiveTouch** – Engedélyezi vagy letiltja az **AssistiveTouch** kisegítő beállítást, amely segít a nehézségekkel küzdő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.
--   **Színinvertálás** – Engedélyezi vagy letiltja a Színinvertálás kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.
--   **Monó hang** – Engedélyezi vagy letiltja a Monó hang kisegítő beállítást.
--   **VoiceOver** – Engedélyezi vagy letiltja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.
--   **Nagyítás** – Engedélyezi vagy letiltja a **Nagyítás** kisegítő beállítást, amellyel a felhasználó érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.
--   **Automatikus zárolás** – Engedélyezi vagy letiltja az eszköz automatikus zárolását.
--   **Csengés kapcsolója** – Engedélyezheti vagy letilthatja a csengő kapcsolóját (az elnémítót) az eszközön.
--   **Képernyő elforgatása** – Engedélyezi vagy letiltja a képernyő tájolásának módosítását az eszköz elforgatásakor.
--   **Képernyőalvás gombja** – Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.
--   **Érintésvezérlés** – Engedélyezi vagy letiltja az érintőképernyő használatát az eszközön.
--   **Hangerőgombok** – Engedélyezi vagy letiltja a hangerőszabályzó gombok használatát az eszközön.
--   **AssistiveTouch-vezérlés** – Engedélyezi vagy letiltja az AssistiveTouch funkció beállításának módosítását.
--   **Színinvertálás vezérlője** – Engedélyezi vagy letiltja a színinvertálási funkció beállításainak módosítását.
--   **Kijelölt szöveg felolvasása** – Engedélyezi vagy letiltja a Kijelölés felolvasása kisegítő beállítást, amellyel felolvastatható a felhasználó által kijelölt szöveg.
--   **VoiceOver vezérlője** – Engedélyezi vagy letiltja a VoiceOver funkció beállítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).
--   **Nagyítás vezérlője** – Engedélyezi vagy letiltja a nagyítási funkció működésének felhasználó általi beállítását.
+    -   **AssistiveTouch** – Engedélyezi vagy letiltja az **AssistiveTouch** kisegítő beállítást, amely segít a nehézségekkel küzdő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.
+    -   **Színinvertálás** – Engedélyezi vagy letiltja a Színinvertálás kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.
+    -   **Monó hang** – Engedélyezi vagy letiltja a Monó hang kisegítő beállítást.
+    -   **VoiceOver** – Engedélyezi vagy letiltja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.
+    -   **Nagyítás** – Engedélyezi vagy letiltja a **Nagyítás** kisegítő beállítást, amellyel a felhasználó érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.
+    -   **Automatikus zárolás** – Engedélyezi vagy letiltja az eszköz automatikus zárolását.
+    -   **Csengés kapcsolója** – Engedélyezheti vagy letilthatja a csengő kapcsolóját (az elnémítót) az eszközön.
+    -   **Képernyő elforgatása** – Engedélyezi vagy letiltja a képernyő tájolásának módosítását az eszköz elforgatásakor.
+    -   **Képernyőalvás gombja** – Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.
+    -   **Érintésvezérlés** – Engedélyezi vagy letiltja az érintőképernyő használatát az eszközön.
+    -   **Hangerőgombok** – Engedélyezi vagy letiltja a hangerőszabályzó gombok használatát az eszközön.
+    -   **AssistiveTouch-vezérlés** – Engedélyezi vagy letiltja az AssistiveTouch funkció beállításának módosítását.
+    -   **Színinvertálás vezérlője** – Engedélyezi vagy letiltja a színinvertálási funkció beállításainak módosítását.
+    -   **Kijelölt szöveg felolvasása** – Engedélyezi vagy letiltja a Kijelölés felolvasása kisegítő beállítást, amellyel felolvastatható a felhasználó által kijelölt szöveg.
+    -   **VoiceOver vezérlője** – Engedélyezi vagy letiltja a VoiceOver funkció beállítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).
+    -   **Nagyítás vezérlője** – Engedélyezi vagy letiltja a nagyítási funkció működésének felhasználó általi beállítását.
 
 >[!NOTE]
 > Az iOS-eszközök Kioszk módra való konfigurálása előtt felügyelt módba kell állítania az eszközt az Apple Configurator eszközzel vagy az Apple Device Enrollment Program készülékregisztráció-kezelővel. Az Apple Configurator eszközzel kapcsolatos további információkat az Apple dokumentációjában talál.
 >Ha a megadott iOS-alkalmazás a profil hozzárendelése után települ, az eszköz mindaddig nem lép kioszkmódba, amíg újra nem indítják.
 
-## Safari
-<a id="safari" class="xliff"></a>
+## <a name="safari"></a>Safari
 -   **Safari (csak felügyelt eszköz esetén)** – Ez a beállítás azt határozza meg, hogy használható-e a Safari böngésző az eszközön.
 -   **Automatikus kitöltés** – Engedélyezi a felhasználó számára, hogy módosítsa a böngésző automatikus kiegészítési funkciójának beállításait.
 -   **Cookie-k** – Engedélyezi a cookie-k használatát a böngésző számára.
@@ -289,22 +293,18 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 -   **Előugró ablakok** – Engedélyezi vagy letiltja a böngésző előugróablak-blokkolóját.
 
 
-## Domains
-<a id="domains" class="xliff"></a>
+## <a name="domains"></a>Domains
 
-### Jelöletlen e-mail-tartományok
-<a id="unmarked-email-domains" class="xliff"></a>
+### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
 
 Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó a listában nem szereplő tartományból kap e-mailt, az iOS-es Mail alkalmazásban az nem megbízhatóként lesz megjelölve.
 
 
-### Felügyelt webtartományok
-<a id="managed-web-domains" class="xliff"></a>
+### <a name="managed-web-domains"></a>Felügyelt webtartományok
 
 A **Webtartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A megadott tartományokból letöltött dokumentumok felügyeltnek minősülnek. Ez a beállítás csak a Safari böngészővel letöltött dokumentumokra vonatkozik.
 
 
-### Jelszavak automatikus kitöltése a Safariban
-<a id="safari-password-auto-fill-domains" class="xliff"></a>
+### <a name="safari-password-auto-fill-domains"></a>Jelszavak automatikus kitöltése a Safariban
 
 A **Tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A felhasználók csak a listában szereplő URL-címekhez tartozó webes jelszavakat menthetnek. Ez a beállítás csak a Safari böngészőre és az iOS 9.3 vagy későbbi verzióit futtató eszközökre vonatkozik felügyelt módban. Ha egyetlen URL-címet sem ad meg, jelszavakat minden webhelyhez lehetséges menteni.

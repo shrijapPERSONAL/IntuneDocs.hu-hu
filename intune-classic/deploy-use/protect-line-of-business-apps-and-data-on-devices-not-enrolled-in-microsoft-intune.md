@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Az üzleti alkalmazások és az adatok védelme a Microsoft Intune-ban nem regisztrált eszközökön
 
@@ -31,7 +31,7 @@ Ez a témakör ismerteti a MAM-szabályzatoknak a **nem felügyelt, alkalmazotti
 
 ##  <a name="step-1-prepare-the-app"></a>1. lépés: Az alkalmazás előkészítése
 
-A MAM-szabályzatok alkalmazása előtt be kell csomagolnia az alkalmazást a Microsoft Intune [iOS] rendszerhez készült alkalmazásburkoló eszközéve (prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android), vagy használja az [Intune App SDK](/intune/app-sdk) szoftvert az Intune alkalmazásvédelmi funkciók manuális előkészítéséhez.
+A MAM-szabályzatokat csak akkor érvényesítheti egy alkalmazásra, ha azt előzőleg beburkolta az [iOS](/intune/app-wrapper-prepare-ios) vagy [Android](/intune/app-wrapper-prepare-android) rendszerhez készült Microsoft Intune alkalmazásburkoló eszközzel, vagy az [Intune App SDK](/intune/app-sdk) használatával manuálisan integrálta az Intune alkalmazásvédelmi funkcióit.
 
 További információ az alkalmazásburkoló eszközről és az SDK-ról: [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](/intune/apps-prepare-mobile-application-management).
 

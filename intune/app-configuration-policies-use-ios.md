@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>A Microsoft Intune iOS rendszerhez készült alkalmazáskonfigurációs szabályzatainak használata
 
@@ -37,7 +37,7 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival megadhatja azokat
 
 Ha ezeket a beállításokat a felhasználó helytelenül adja meg, az növelheti a segélyszolgálatra nehezedő terheket, és lelassíthatja az új alkalmazások bevezetését.
 
-Az alkalmazáskonfigurációs szabályzatok segítséget nyújthatnak e problémák megoldásában, mivel még az alkalmazás futtatása előtt hozzá tudják rendelni a beállításokat a szabályzat által érintett felhasználókhoz. A beállítások megadása ezek után automatikusan történik, és nincs szükség felhasználói beavatkozásra.
+Az alkalmazáskonfigurációs szabályzatok segítséget nyújthatnak e problémák megoldásában, mivel még az alkalmazás futtatása előtt hozzá tudják rendelni a beállításokat a szabályzat által érintett felhasználókhoz. A beállítások megadása ezek után automatikusan történik, és nincs szükség felhasználói beavatkozásra. Az alkalmazások minden bizonnyal támogatják az alkalmazáskonfigurációk használatát. További információkért forduljon az alkalmazás forgalmazójához.
 
 A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A szabályzatban meghatározott beállítások használatára akkor kerül sor, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
@@ -57,8 +57,8 @@ A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz ren
 5.  A szabályzatok panelének listájából válassza a **Hozzáadás** elemet.
 6.  A **Konfigurációs szabályzat hozzáadása** panelen adja meg az alkalmazáskonfigurációs szabályzat **Nevét** és **Leírását** (ez utóbbi nem kötelező).
 7.  Az **Eszközregisztráció típusa** lehetőség megadásához válasszon az alábbiak közül:
-    - **Intune-ban regisztrált** ‒ Intune-nal felügyelt, Intune App SDK-t integráló alkalmazások esetén.
-    - **Intune-ban nem regisztrált** ‒ Olyan Intune App SDK-t integráló alkalmazások esetén, melyeket az Intune nem felügyel, vagy egy másik megoldás felügyel.
+    - **Intune-ban regisztrált** – Intune által felügyelt alkalmazásokhoz.
+    - **Intune-ban nem regisztrált** – Intune által nem felügyelt, vagy más megoldással felügyelt alkalmazásokhoz.
 8.  A **Platform** vonatkozásában válassza az **iOS** lehetőséget (csak az Intune-ban regisztrált eszközök esetén).
 9.  Válassza a **Társított alkalmazás** elemet, majd a **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné.
 10. A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Konfigurációs beállítások** lehetőséget.

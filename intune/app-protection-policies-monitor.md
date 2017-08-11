@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](./media/app-protection-user-status-summary.png)
 
--   **Felhasználók:** a szabályzathoz társított alkalmazásokat használó felhasználók száma a vállalatnál.
+-   **Felhasználók**: A cég összes olyan felhasználója, akik egy adott szabályzathoz társított alkalmazást használnak a munkahelyi környezetben.
 
--   **HÁZIREND ÁLTAL KEZELT:** azon felhasználók száma, akik az alkalmazások közül legalább egyet már használtak a munkahelyi környezetben.
+-   **SZABÁLYZAT ÁLTAL KEZELT**: Azon felhasználók, akik már használtak egy alkalmazást, és szabályzat van hozzájuk rendelve a munkahelyi környezetben.
 
--   **NEM TALÁLHATÓ HÁZIREND:** azon felhasználók száma, akik használják ugyan a szabályzathoz társított alkalmazásokat, de akikre nem vonatkozik a beállított szabályzat. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
+-   **NINCS SZABÁLYZAT**: Azon felhasználók, akik szabályzat nélküli alkalmazást használnak a munkahelyi környezetben. Érdemes megfontolni ezen felhasználók bevonását a szabályzat hatálya alá.
+    > [!NOTE]
+    > Platformonként több szabályzat esetén a felhasználó akkor minősül szabályzat által kezeltnek, ha legalább egy szabályzat hozzá van rendelve.
 
 - **Megjelölt felhasználók:** a problémákat tapasztaló felhasználók száma. A rendszer jelenleg a **Megjelölt felhasználók** részben kizárólag a jailbreakelt eszközt használó felhasználókat jelöli meg.
 

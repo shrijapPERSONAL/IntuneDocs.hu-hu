@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+## <a name="week-of-july-31-2017"></a>2017. július 31-i hét
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
+
+Egy olyan változást jelentünk most be, amely a következő néhány hónapban érkezik, és amellyel javulni fog a bejelentkezési élmény az Intune Céges portál Android, iOS és Windows rendszerű alkalmazásaiban. A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.  
+
+Alább képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
+
+__Korábbi bejelentkezési folyamat__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![A Bejelentkezés gombra kattintás után a felhasználónak meg kell adnia a hitelesítő adatait az oldalon. A rendszer a felhasználó e-mail-címét és jelszavát kéri, továbbá a jelszóval kapcsolatos hibák elhárításának módját is meg kell határoznia.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![A jelszó megadása utána Céges portál alkalmazás elvégzi a bejelentkezést, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Új bejelentkezési folyamat__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![A felhasználónak ugyanazon az oldalon csak az e-mail-címét kell megadnia, nem pedig mind az e-mail-címét, mind a jelszavát.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![A felhasználótól csak akkor kéri a rendszer a jelszavát ha már helyesen megadta az e-mail-címét.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Új bejelentkezési folyamat más eszközről való bejelentkezéskor__
+
+![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
+
+![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Nyissa meg egy böngészőablakban az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
+
+![A felhasználó munkagépén futó böngészőablak képe (nem pedig a Céges portál alkalmazásé). A megjelenített „Eszközbejelentkezés” oldal arra kéri a felhasználót, hogy adja meg a Céges portál alkalmazástól kapott kódot.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Írja be a Céges portál alkalmazás által megadott kódot. A __Folytatás__ elemet kiválasztva elvégezheti a hitelesítést a cége által támogatott bármely módszerrel, például intelligens kártyával.
+
+![A felhasználó beírta a mezőbe az egyedi kódját, az „Eszközbejelentkezés” webhely pedig a felhasználó megerősítését kéri, hogy az Intune Céges portálnak kell-e bejelentkezési engedélyt kapnia.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Jóváhagyást jelző oldal, amely megerősíti, hogy a felhasználó bejelentkezett a Céges portál alkalmazásra az eszközén, és hogy ez az oldal bezárható.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+A Céges portál alkalmazás megkezdi a bejelentkezést.
+
+![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>2017. június 12-i hét
 
@@ -180,51 +228,12 @@ Ezek azok a tervezett megoldások, amelyekkel a felhasználói felület frissít
 > [!Note]
 > Vegye figyelembe, hogy az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>A Céges portál felhasználói felületének frissítései <!--1313244 part 2-->
 
-Egy olyan változást jelentünk most be, amely a következő néhány hónapban érkezik, és amellyel javulni fog a bejelentkezési élmény az Intune Céges portál Android, iOS és Windows rendszerű alkalmazásaiban. A Céges portál alkalmazásnál az új felhasználói élmény automatikusan megjelenik minden platformon, miután az Azure AD-ban megjelenik a változtatás. Ezen kívül a felhasználók egy másik eszközről is bejelentkezhetnek a Céges portálba egy egyszeri használtra generált kóddal. Ez különösen akkor hasznos, ha a felhasználónak hitelesítő adatok nélkül kell bejelentkeznie.  
+__Kiemelt alkalmazások frissítései__ A webhelyhez hozzáadtunk egy új oldalt, ahol a felhasználók a megadott kiemelt alkalmazások között böngészhetnek, és finomhangolásokat végeztünk a honlap Kiemelt szakaszán.
 
-Alább képernyőképeket láthat a korábbi bejelentkezési módról, a hitelesítő adatokat használó új bejelentkezési élményről, és a másik eszközről történő bejelentkezési folyamatról.
+![Az alkalmazásokat jelölő színes csempék. Minden alkalmazás alatt nagy színes négyzet látható, melynek színe megegyezik az alkalmazáslogó elsődleges színével. A „Kiemelt alkalmazások” szakasz a Céges portál alkalmazás felső részében látható.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Korábbi bejelentkezési folyamat__
-
-![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![A Bejelentkezés gombra kattintás után a felhasználónak meg kell adnia a hitelesítő adatait az oldalon. A rendszer a felhasználó e-mail-címét és jelszavát kéri, továbbá a jelszóval kapcsolatos hibák elhárításának módját is meg kell határoznia.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![A jelszó megadása utána Céges portál alkalmazás elvégzi a bejelentkezést, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Új bejelentkezési folyamat__
-
-![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![A felhasználónak ugyanazon az oldalon csak az e-mail-címét kell megadnia, nem pedig mind az e-mail-címét, mind a jelszavát.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![A felhasználótól csak akkor kéri a rendszer a jelszavát ha már helyesen megadta az e-mail-címét.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Új bejelentkezési folyamat más eszközről való bejelentkezéskor__
-
-![A Céges portál bejelentkezési oldala, amelyen egy webhely rajza előtt látható egy ember ikonja. Alatta látható a „Bejelentkezés” gomb. Az oldal alján látható egy hivatkozás, amely a Microsoft Adatvédelem és cookie-k oldalára mutat.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
-
-![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Nyissa meg egy böngészőablakban az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
-
-![A felhasználó munkagépén futó böngészőablak képe (nem pedig a Céges portál alkalmazásé). A megjelenített „Eszközbejelentkezés” oldal arra kéri a felhasználót, hogy adja meg a Céges portál alkalmazástól kapott kódot.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Írja be a Céges portál alkalmazás által megadott kódot. A __Folytatás__ elemet kiválasztva elvégezheti a hitelesítést a cége által támogatott bármely módszerrel, például intelligens kártyával.
-
-![A felhasználó beírta a mezőbe az egyedi kódját, az „Eszközbejelentkezés” webhely pedig a felhasználó megerősítését kéri, hogy az Intune Céges portálnak kell-e bejelentkezési engedélyt kapnia.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Jóváhagyást jelző oldal, amely megerősíti, hogy a felhasználó bejelentkezett a Céges portál alkalmazásra az eszközén, és hogy ez az oldal bezárható.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-A Céges portál alkalmazás megkezdi a bejelentkezést.
-
-![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>További információ
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A felhőplatform ütemterve](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak létrehozása (előzetes) az Intune-nal
 
@@ -103,6 +103,9 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
 - **Jelszó érvényessége (napokban)**: Válassza ki, hány nap (1–250 között) elteltével járjon le a jelszó, ami után újat kell létrehoznia.
 
 - **Újból nem használható jelszavak száma**: Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható.
+
+    > [!IMPORTANT]
+    > Ha macOS-eszközön megváltozik a jelszóra vonatkozó követelmény, akkor az csak akkor lép érvénybe, amikor a felhasználó legközelebb megváltoztatja jelszavát. Például ha a jelszó kötelező minimális hosszát 8 számjegyűre állítja át, és a macOS-eszköz jelenlegi jelszava 6 számjegyű, az eszköz egészen addig megfelelőnek minősül, amíg a felhasználó legközelebb meg nem változtatja az eszköz jelszavát.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozásához
 
