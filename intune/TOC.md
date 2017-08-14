@@ -74,6 +74,7 @@
 #### [Korlátozások](enrollment-restrictions-set.md)
 #### [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
 #### [Vállalati azonosítók](corporate-identifiers-add.md)
+#### [Többtényezős hitelesítés](multi-factor-authentication.md)
 #### [Eszközregisztráció-kezelő](device-enrollment-manager-enroll.md)
 #### [Eszközök hozzárendelése csoportokhoz](device-group-mapping.md)
 ### Windows-regisztráció beállítása
@@ -291,7 +292,7 @@
 ## [Az Intune Graph API-k használata](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune-adattárház API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Adatok beolvasása az adattárház API-ból REST-ügyféllel](reports-proc-data-rest.md)
 ### [Az adattárház API-végpontja](reports-api-url.md)
 ### [Az adattárház adatmodellje](reports-ref-data-model.md)
 #### [Dátum típusú entitás referenciája](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [Eszközök típusú entitások referenciája](reports-ref-devices.md)
 #### [Alkalmazás típusú entitások referenciája](reports-ref-application.md)
 #### [Szabályzat típusú entitások referenciája](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Szószedet](intune-glossary.md)
