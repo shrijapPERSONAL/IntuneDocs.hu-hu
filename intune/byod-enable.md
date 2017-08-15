@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD engedélyezése az Intune-nal
 
@@ -75,14 +75,14 @@ Az Intune-nal könnyen elvégezheti az alábbi műveleteket:
 * [Áruházbeli alkalmazások telepítése a felügyelt eszközökre](apps-deploy.md)
 * A céges portál webhelyen még nem felügyelt eszközök megcélzása az alkalmazásokkal
 
-Az Intune az iOS App Store áruházból és a Vállalati Windows Áruházból mennyiségi programban megvásárolt alkalmazások felügyeletét és üzembe helyezését is lehetővé teszi. Ezzel a megoldással csökkenthetők a mennyiségi konstrukcióban vásárolt alkalmazások nyilvántartásával járó adminisztratív terhek.
+Az Intune az iOS App Store áruházból és a Vállalati Microsoft Áruházból mennyiségi programban megvásárolt alkalmazások felügyeletét és üzembe helyezését is lehetővé teszi. Ezzel a megoldással csökkenthetők a mennyiségi konstrukcióban vásárolt alkalmazások nyilvántartásával járó adminisztratív terhek.
 
 > [!TIP]
 > Konfigurálhatja az [egyszeri bejelentkezést (SSO) az Azure AD Connecttel](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). Az egyszeri bejelentkezés lehetővé teszi a felhasználók számára, hogy a helyszínen használt tartományi felhasználónévvel és jelszóval bejelentkezzenek az alkalmazásokba. Az Azure Active Directory alkalmazásproxyval pedig [internetes hozzáférést biztosíthat a helyszíni üzemeltetésű webalkalmazásokhoz](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 -   [Mennyiségi konstrukcióban vásárolt alkalmazások felügyelete iOS-eszközökön](vpp-apps-ios.md): Az [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) programon keresztül egyszerre több licencet vásárolhat az iOS-alkalmazásokhoz. Ehhez Apple VPP-fiókot kell beállítania az Apple webhelyén, és az Apple VPP-tokent fel kell tölteni az Intune-ba. Ezután szinkronizálhatja a mennyiségi vásárlás adatait az Intune-nal, és nyomon követheti a mennyiségi programban vásárolt alkalmazás használatát.
 
--   [A Vállalati Windows Áruházban vásárolt alkalmazások kezelése](windows-store-for-business.md). A [Vállalati Windows Áruházban](https://www.microsoft.com/business-store) alkalmazásokat vásárolhat a szervezete számára egyenként vagy nagyobb mennyiségben. Az áruházat az Intune-nal összekapcsolva a mennyiségi licencszerződés keretében vásárolt alkalmazásokat az Intune-portálról kezelheti.
+-   [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](windows-store-for-business.md). A [Vállalati Microsoft Áruházban](https://www.microsoft.com/business-store) alkalmazásokat kereshet a vállalat számára és egyenként vagy nagyobb mennyiségben is vásárolhat közülük. Az áruházat az Intune-nal összekapcsolva a mennyiségi licencszerződés keretében vásárolt alkalmazásokat az Intune-portálról kezelheti.
 
 ## <a name="protect-company-data"></a>Vállalati adatok védelme
 
@@ -105,10 +105,10 @@ Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policies.md) vé
 
 A [Windows Információvédelem (WIP) szabályzataival](app-protection-policies-configure-windows-10.md) ugyanezt teheti meg a felügyelt Windows 10-es eszközökön. Ezek a szabályzatok nem befolyásolják a dolgozók felhasználói élményét, és nem igénylik a hálózati környezet és más alkalmazások módosítását sem.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Céges adatok törlése a személyes adatok érintetlenül hagyásával
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Céges adatok törlése a személyes adatok érintetlenül hagyásával
 
-A vállalati alkalmazásokat és adatokat el lehet távolítani azokról az eszközökről, amelyeket a továbbiakban már nem használnak munkahelyi célokra, amelyeket más célra használnak, vagy amelyeket elhagytak. Ehhez az Intune szelektív és teljes törlési funkcióit használhatja. A felhasználók az Intune céges portálról távolról is törölhetik saját eszközeiket, ha azokat korábban regisztrálták az Intune-ban.
+A vállalati alkalmazásokat és adatokat el lehet távolítani azokról az eszközökről, amelyeket a továbbiakban már nem használnak munkahelyi célokra, amelyeket más célra használnak, vagy amelyeket elhagytak. Erre az Intune a céges adatok eltávolítása és a gyári beállítások visszaállítása funkciók használatával ad lehetőséget. A felhasználók az Intune Céges portálról távolról is visszaállíthatják saját eszközeiket, ha azokat korábban regisztrálták az Intune-ban.
 
-A [teljes törlés](devices-wipe.md) visszaállítja az eszközt a gyári beállításokra, és eltávolít minden felhasználói adatot és beállítást. A [szelektív törlés](devices-wipe.md#selective-wipe) csak a vállalati adatokat távolítja el az eszközről, a személyes felhasználói adatokat nem érinti.
+A [gyári beállítások visszaállítása](devices-wipe.md) visszaállítja az eszközt a gyári alaphelyzetre, eltávolít minden felhasználói adatot és beállítást, és eltávolítja az eszközt az Intune felügyeleti szolgáltatásából. A [Céges adatok eltávolítása](devices-wipe.md#remove-company-data) csak a céges adatokat távolítja el az eszközről, a személyes felhasználói adatokat nem érinti.
 
-A parancs kiadását követően a rendszer azonnal elkezdi a szelektív törlési folyamatot, és kivonja az eszközt a felügyelet alól. Az eljárás hatására az eszközről eltűnik az összes vállalati adat, az eszköz neve pedig el lesz távolítva az Intune-portálról. Ezzel végéhez ér az eszközfelügyeleti életciklus.
+Az eljárás indítása után az eszköz azonnal hozzálát a visszaállítás folyamatához. Az eljárás hatására az eszközről eltűnik az összes vállalati adat, az eszköz neve pedig el lesz távolítva az Intune-ból. Ezzel végéhez ér az eszközfelügyeleti életciklus.
