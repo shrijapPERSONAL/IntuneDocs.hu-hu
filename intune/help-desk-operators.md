@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7aad054f0861522174faa01b979083a818c106af
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>A felhasználók segítése a Microsoft Intune hibaelhárítási portáljával
+# <a name="use-the-troubleshooting-portal-to-help-users"></a>Segítségnyújtás a felhasználóknak a hibaelhárítási portál használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,22 +35,21 @@ Például ha egy felhasználó Intune-nal kapcsolatos műszaki problémával for
 -   Az eszközön nem működnek a VPN- vagy Wi-Fi-beállítások
 -   Alkalmazástelepítési hiba
 
-
 ## <a name="add-help-desk-operators"></a>Ügyfélszolgálati operátorok felvétele
 Intune-rendszergazdaként hozzárendelheti az Ügyfélszolgálat szerepkört egy felhasználói csoporthoz. A csoport tagjai a felügyeleti portál segítségével elháríthatják a felhasználók problémáit. Minden ügyfélszolgálati munkatársnak Intune-licenccel kell rendelkeznie az Intune-portál eléréséhez. Ismerje meg, [hogyan oszthat ki Intune-licenceket](licenses-assign.md).
 
 Ügyfélszolgálati felhasználók hozzáadása:
-1. [Felhasználó hozzáadása az Intune-hoz](users-add.md) szükség esetén
-2. [Ügyfélszolgálati csoport létrehozása](groups-add.md) és felhasználók hozzáadása a csoporthoz
-3. [RBAC Ügyfélszolgálati Munkatárs szerepkör hozzárendelése](role-based-access-control.md#built-in-roles) vagy [egyéni szerepkör létrehozása](role-based-access-control.md#custom-roles) a következő engedélyekkel:
-  - MobileApps (mobilalkalmazások): Olvasás
-  - ManagedApps (felügyelt alkalmazások): Olvasás
-  - ManagedDevices (felügyelt eszközök): Olvasás
-  - Organization (Munkahely): Olvasás
-  - DeviceCompliancePolices: Olvasás
-  - DeviceConfigurations: Olvasás
+1. [Felhasználók hozzáadása az Intune-hoz](users-add.md) szükség esetén.
+2. [Ügyfélszolgálati csoport létrehozása](groups-add.md) és felhasználók hozzáadása a csoporthoz.
+3. [Az RBAC Ügyfélszolgálati munkatárs szerepkör hozzárendelése](role-based-access-control.md#built-in-roles)
 
-  ![Az Intune-portál képernyőképe a kiemelt Intune-szerepkörökkel és a beépített szerepkörök listájával, köztük a Help Desk Operator (Ügyfélszolgálati munkatárs) szerepkörrel](./media/help-desk-user-add.png)
+  ![Képernyőkép az Intune-portálról, amelyen ki vannak emelve az Intune-szerepkörök és látható a beépített szerepkörök listája, köztük az Ügyfélszolgálati munkatárs szerepkör is](./media/help-desk-user-add.png) Az ügyfélszolgálati munkatársaknak hozzáférést adhat egy [egyéni szerepkör létrehozásával](role-based-access-control.md#custom-roles) és személyre szabásával is.  Az ügyfélszolgálati munkatársaknak a következő jogosultságokkal kell rendelkezniük a felhasználói problémák hibaelhárításához:
+    - MobileApps (mobilalkalmazások): Olvasás
+    - ManagedApps (felügyelt alkalmazások): Olvasás
+    - ManagedDevices (felügyelt eszközök): Olvasás
+    - Organization (Munkahely): Olvasás
+    - DeviceCompliancePolices: Olvasás
+    - DeviceConfigurations: Olvasás
 
 4. **Szolgáltatás-rendszergazdaként** [rendszergazdai engedélyek kiosztásával](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) engedélyezze az ügyfélszolgálati munkatársaknak a szolgáltatás állapotának megtekintését és az Intune-támogatási jegyek megnyitását. Ne adjon **Intune-beli szolgáltatás-rendszergazda** engedélyt, mert ez a címtárszerepkör több jogosultsággal rendelkezik, mint amennyire az ügyfélszolgálati munkatársaknak szükségük van.
 

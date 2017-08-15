@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -72,7 +72,7 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 ## <a name="privacy"></a>Személyes adatok védelme
 
--   **Bemenet személyre szabása** – Ne engedélyezze a felhőalapú beszédszolgáltatások használata a Cortanához, diktáláshoz vagy a Windows Áruház alkalmazásaihoz. Ha engedélyezi ezeket a szolgáltatásokat, a Microsoft hangadatokat gyűjthet a szolgáltatás fejlesztéséhez.
+-   **Bemenet személyre szabása** – Letiltja a felhőalapú beszédszolgáltatások használatát a Cortanához, a diktáláshoz vagy a Microsoft Áruház alkalmazásaihoz. Ha engedélyezi ezeket a szolgáltatásokat, a Microsoft hangadatokat gyűjthet a szolgáltatás fejlesztéséhez.
 -   **A társításra és adatvédelemre vonatkozó felhasználói beleegyezést kérő üzenetek automatikusa elfogadása** – Lehetővé teszi a Windowsnak, hogy automatikusan elfogadja a társítási és adatvédelmi beleegyezést kérő üzeneteket az alkalmazások futtatása közben.
 
 
@@ -91,12 +91,12 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 ## <a name="app-store"></a>Alkalmazásáruház
 
 -   **Alkalmazás-áruház (csak mobileszköz)** – Engedélyezi vagy letiltja az alkalmazásáruházat a Windows 10 Mobile rendszerű eszközökön.
--   **Áruházból származó alkalmazások automatikus frissítése** – Engedélyezi a Windows Áruházból származó alkalmazások automatikus frissítését.
+-   **Áruházból származó alkalmazások automatikus frissítése** – Engedélyezi a Microsoft Áruházból származó alkalmazások automatikus frissítését.
 -   **Megbízható alkalmazás telepítése** – Engedélyezi a megbízható tanúsítvánnyal aláírt alkalmazások közvetlen telepítését.
 -   **Fejlesztői zárolás feloldása** – Engedélyezi, hogy a Windows fejlesztői beállításait (például alkalmazások közvetlen telepítését) a végfelhasználók megváltoztassák.
 -   **Megosztott felhasználói alkalmazásadatok** – Engedélyezi, hogy ugyanazon az eszközön a felhasználók megoszthassák egymás között az alkalmazásadatokat.
 -   **Csak privát áruház használata** – Ennek a beállításnak az engedélyezésével a felhasználók csak a privát áruházból származó alkalmazásokat tölthetik le.
--   **Áruházból származó alkalmazások indítása** – Letiltja az összes előre telepített és a Windows Áruházból letöltött alkalmazást az eszközön.
+-   **Áruházból származó alkalmazások indítása** – Letiltja az összes előre telepített vagy Microsoft Áruházból letöltött alkalmazást az eszközön.
 -   **Alkalmazásadatok telepítése a rendszerköteten** – Megakadályozza, hogy az alkalmazások adatokat tároljanak az eszköz rendszerkötetén.
 -   **Alkalmazások telepítése a rendszermeghajtón** – Megakadályozza, hogy az alkalmazások adatokat tároljanak az eszköz rendszermeghajtóján.
 -   **Játékvideó-rögzítő (csak asztali verzióban)** – Meghatározza, hogy engedélyezett-e játékok rögzítése és közvetítése.
