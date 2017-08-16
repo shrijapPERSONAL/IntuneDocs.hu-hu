@@ -291,7 +291,7 @@
 ### [Intune App SDK Xamarin összetevő](app-sdk-xamarin.md)
 ## [Az Intune Graph API-k használata](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune-adattárház API](reports-nav-intune-date-warehouse.md)
+## [Intune-adattárház API](reports-nav-intune-data-warehouse.md)
 ### [Adatok beolvasása az adattárház API-ból REST-ügyféllel](reports-proc-data-rest.md)
 ### [Az adattárház API-végpontja](reports-api-url.md)
 ### [Az adattárház adatmodellje](reports-ref-data-model.md)
