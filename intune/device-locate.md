@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Elveszett vagy ellopott iOS-eszközök megkeresése az Intune-nal
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/01/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az elveszett vagy ellopott iOS-eszköz helyét a térképen. A funkció csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható. A művelet használata előtt az eszközt [Elveszett eszköz módba](/intune-azure/manage-devices/lost-mode.md) kell állítani.
+
+## <a name="supported-platforms"></a>Támogatott platformok
+
+- Windows – nem támogatott
+- Windows Phone – nem támogatott
+- iOS – az iOS 9.3-as és újabb verzióin támogatott (elveszett eszköz módban), felügyelt és vállalati tulajdonú eszközök esetén
+- macOS – nem támogatott
+- Android – nem támogatott
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>Elveszett vagy ellopott eszköz megkeresése
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
@@ -44,3 +54,8 @@ Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az 
 - A rendszer 24 óráig tárolja az adatokat, majd törli azokat. A helyadatokat manuálisan nem lehet eltávolítani.
 - A helyadatok tároláskor és továbbításkor egyaránt titkosítva vannak.
 - Az Elveszett eszköz mód konfigurálásakor ajánlott a zárolási képernyőn megjelenő üzenetben az eszköz visszajuttatásához segítséget nyújtó információkat feltüntetni.
+
+
+## <a name="next-steps"></a>További lépések
+
+A kezdeményezett művelet állapotát az **Eszközök és csoportok** panel **Eszközműveletek** szakaszában tekintheti meg.

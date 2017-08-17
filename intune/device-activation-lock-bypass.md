@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -39,23 +39,23 @@ Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, é
 - Szüksége van egy jelentésre az összes eszközről, amelyen engedélyezve van az aktiválási zár.
 - Néhány eszközt másik részleghez szeretne rendelni a szervezetben egy eszközfrissítés során. Csak azokat az eszközöket lehet újból hozzárendelni, amelyeken nincs engedélyezve az aktiválási zár.
 
-Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megkerülését az iOS 7.1-ben. Ez lehetővé teszi az aktiválási zár a felhasználó Apple ID azonosítója és jelszava nélkül való eltávolítását a felügyelt eszközökről. A felügyelt eszközök létre tudnak hozni egy eszközspecifikus aktiválásizár-áthidaló kódot, mely az Apple aktiválási kiszolgálóján van tárolva.
+Az Apple az ilyen problémák megoldására vezette be az aktiválási zár megkerülését az iOS 7.1-ben. Az aktiválási zár megkerülése a felhasználó Apple-azonosítója és jelszava nélkül teszi lehetővé az aktiválási zár eltávolítását a felügyelt eszközökről. A felügyelt eszközök létre tudnak hozni egy eszközspecifikus aktiválásizár-áthidaló kódot, mely az Apple aktiválási kiszolgálóján van tárolva.
 
 >[!TIP]
->Az iOS-eszközök felügyelt módja lehetővé teszi az eszközök az Apple Configurator eszközzel való zárolását, így meghatározott üzleti célokra korlátozva annak funkcióit. A felügyelt mód általánosságban csak céges eszközökhöz használható.
+>Az iOS-eszközök felügyelt módja lehetővé teszi az eszközök az Apple Configurator eszközzel való zárolását, így meghatározott üzleti célokra korlátozva annak funkcióit. A felügyelt mód csak vállalati tulajdonú eszközökhöz használható.
 
 Az aktiválási zárról további információt az [Apple webhelyén](https://support.apple.com/HT201365) olvashat.
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Az aktiválási zár kezelése az Intune-nal
 Az Intune a felügyelt iOS 8.0 vagy újabb rendszerű eszközök aktiválási zárának állapotát is le tudja kérdezni. Kizárólag a felügyelt eszközök esetében az Intune képes lekérdezni az aktiválásizár-áthidaló kódot, és közvetlenül kiadni azt az eszköznek. Ha törölték az eszköz adatait, üres felhasználónévvel és a kódot jelszóként használva közvetlenül hozzáférhet az eszközhöz.
 
-**Ennek a következők az üzleti előnyei:**
+**Az aktiválási zárnak az Intune-nal történő felügyelete a következő üzleti előnyökkel jár:**
 
 - A felhasználó élvezheti a Find My iPhone alkalmazás biztonsági előnyeit.
 - Lehetővé teheti, hogy a felhasználó annak tudatában végezhesse a munkáját, hogy az eszközt ki lehet vonni vagy fel lehet oldani a zárolását, ha a használatának módosítására van szükség.
 
 ## <a name="before-you-start"></a>Előkészületek
-Az eszközök aktiválási zárjának megkerülése csak akkor lehetséges, ha előtte aktiválták azt. Tegye a következőt:
+Az eszközök aktiválási zárának megkerüléséhez azt előbb az alábbi lépéseket követve engedélyeznie kell:
 
 1. Eszközkorlátozási profil konfigurálása iOS-hez az Intune-ban az [Eszközkorlátozási profilok konfigurálása](/intune-azure/configure-devices/how-to-configure-device-restrictions) szakasz információi alapján.
 2. **Kioszk** üzemmód engedélyezése **Aktiválási zár** beállításával.
@@ -65,7 +65,7 @@ Az eszközök aktiválási zárjának megkerülése csak akkor lehetséges, ha e
 ## <a name="how-to-use-activation-lock-bypass"></a>Az aktiválási zár megkerülésének használata
 
 >[!IMPORTANT]
->Az eszköz aktiválási zárának megkerülése után a Find My iPhone alkalmazás megnyitásakor egy újabb aktiválási zár lép érvénybe. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
+>Az eszköz aktiválási zárának megkerülése után a Find My iPhone alkalmazás megnyitásakor automatikusan életbe lép egy újabb aktiválási zár. Ezért **csak akkor kövesse ezt az eljárást, ha az eszköz a birtokában van**.
 
 Az Intune-ban az **Aktiválási zár megkerülése** távoli eszközművelet a felhasználó Apple-azonosítója és jelszava nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz ismét bekapcsolja az aktiválási zárat a Find My iPhone alkalmazás elindulásakor. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
 
@@ -74,5 +74,7 @@ Az Intune-ban az **Aktiválási zár megkerülése** távoli eszközművelet a f
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
 5. A kezelt eszközök listáján válasszon egy felügyelt iOS-eszközt, majd válassza az **Aktiválási zár megkerülése** távoli eszközműveletet.
+
+## <a name="next-steps"></a>További lépések
 
 A zárolásfeloldási kérés állapotát az **Eszközök kezelése** munkaterhelésben az eszköz részleteit megjelenítő oldalon ellenőrizheti.

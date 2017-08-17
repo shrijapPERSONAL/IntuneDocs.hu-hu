@@ -1,12 +1,12 @@
 ---
-title: "Az eszközök teljes vagy szelektív törlése Intune használatával"
+title: "A céges adatok eltávolítása és a gyári beállítások visszaállítása az Intune-ban felügyelt eszközökön"
 titleSuffix: Intune on Azure
-description: "A cikk tájékoztatást nyújt a céges adatok eszközökről történő szelektív törléséről, valamint az összes adat törléséről az eszköz gyári alaphelyzetbe állításakor."
+description: "Ez a cikk tájékoztatást nyújt egy eszközön található céges adatok eltávolításáról, valamit az eszköz gyári beállításainak visszaállításáról."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Teljes vagy szelektív törlés alkalmazása
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. Egy távoli törlési parancs kiadásával a felhasználók az Intune Munkahelyi portál segítségével törölhetik az Intune-ban regisztrált saját tulajdonú eszközeik tartalmát.
+Eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Ez a **céges adatok eltávolítása** vagy a **gyári beállítások visszaállítása** parancsok kiadásával tehető meg. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
 
-  > [!NOTE]
-  > Ez a témakör kizárólag az Intune mobileszköz-kezelő által felügyelt eszközök tartalmának törlését ismerteti. Az [Azure-portál](https://portal.azure.com) használatával is [törölheti a vállalati adatokat az alkalmazásokból](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune). Ezenkívül [kivonhatja az Intune ügyfélszoftver által felügyelt számítógépeket](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune).
+> [!NOTE]
+> Mielőtt eltávolítana egy felhasználót az Azure Active Directoryból, adjon ki egy **Gyári beállítások visszaállítása** vagy egy **Céges adatok eltávolítása** parancsot az adott felhasználóhoz rendelt összes eszközre. Ha egy felügyelt eszközzel rendelkező felhasználót távolít el az Azure Active Directoryból, akkor az Intune már nem fogja tudni visszaállítani az eszközén a gyári beállításokat vagy törölni a céges adatokat.
 
-## <a name="full-wipe"></a>Teljes törlés
+## <a name="factory-reset"></a>Gyári beállítások visszaállítása
 
-A **Teljes törlés** visszaállítja az eszközt a gyári beállításokra, és eltávolít minden vállalati is felhasználói adatot és beállítást. Az eszközt a rendszer eltávolítja az Intune-ból. A teljes törlést akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták.  **A teljes törlést óvatosan használja – az eszközről eltávolított adatok nem állíthatók vissza**.
+A **Gyári beállítások visszaállítása** visszaállítja az eszközt a gyári beállításokra, és eltávolít minden vállalati és felhasználói adatot és beállítást. Az eszközt a rendszer eltávolítja az Intune-ból. A gyári beállítások visszaállítását akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták. A gyári beállítások visszaállítását óvatosan használja. Az eszközön tárolt adatok a művelet után nem állíthatók vissza.
 
+### <a name="to-factory-reset-a-device"></a>Az eszköz gyári beállításainak visszaállítása
 
-> [!Warning]
-> A 4 GB-nál kevesebb memóriával rendelkező Windows 10 RTM rendszerű eszközök (a Windows 10 rendszer 1511-es verziójánál korábbi eszközök) a törlés után használhatatlanná válhatnak. Ha egy Windows 10 rendszerű eszköz nem válaszol, az eszközt egy USB-meghajtó segítségével lehet elindítani.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+4. Válassza ki az eszköz nevét, amelyen vissza szeretné állítani a gyári beállításokat.
+5. Az eszköz nevét tartalmazó panelen válassza a **Gyári beállítások visszaállítása** lehetőséget, majd kattintson az **Igen** gombra a visszaállítás megerősítéséhez.
 
+Ha az eszköz be van kapcsolva és csatlakoztatva van, a gyári beállítások visszaállításának az összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
 
-**Eszköz teljes törlése (gyári beállítások visszaállítása)**:
+## <a name="remove-company-data"></a>Céges adatok eltávolítása
 
-1.  Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+A **céges adatok eltávolítása** a felügyelt alkalmazásadatokat (ha vannak ilyenek), a beállításokat és az eszközhöz az Intune használatával hozzárendelt e-mail-profilokat távolítja el. A céges adatok eltávolítása esetén a felhasználó személyes adatai az eszközön maradnak. Az eszközt a rendszer eltávolítja az Intune-ból. Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a céges adatok eltávolítsa.
 
-2.  Válassza ki a törölni kívánt eszköz nevét.
-
-3.  Az eszköz nevét tartalmazó panelen válassza a **Gyári beállítások visszaállítása** lehetőséget, majd kattintson az **Igen** gombra a törlés megerősítéséhez.
-
-Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
-
-1.  Nyissa meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget a [https://portal.office.com](https://portal.office.com) portálon.
-
-2.  A lap bal oldalán található hivatkozást használva jelentkezzen be a szervezeti azonosítójával.
-
-3.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (kattintson a **Register your free Azure Active Directory** előfizetési hivatkozásra).
-
-4.  Válassza az **Active Directory** lehetőséget, és jelölje ki a szervezetét.
-
-5.  Válassza a **Felhasználók** fület.
-
-6.  Jelölje ki azokat a felhasználókat, akiknek az eszközeit törölni szeretné.
-
-7.  Válassza az **Eszközök** lehetőséget.
-
-8.  Szükség szerint távolítson el eszközöket, többek között azokat, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
-
-
-## <a name="selective-wipe"></a>Szelektív törlés
-
-A **szelektív törlés** a vállalati adatokat, többek között a beállításokat és az e-mail-profilokat, valamint adott esetben a mobilalkalmazás-felügyeleti (MAM-) adatokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak. Az eszközt a rendszer eltávolítja az Intune-ból. Az alábbi táblázatok ismertetik, hogy milyen adatokat töröl a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a szelektív törlés. (A táblázatok az egyes platformok szerint vannak rendezve)
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Adattípus|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Felügyeleti ügynök|Törlődik a felügyeleti profil.|
 |E-mail|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
 |Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.|
-|Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|
-|Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
+|Azure Active Directory (AAD) elhagyása|Törlődik az Azure AD rekord.|
+|Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
-**Android**
+### <a name="android"></a>Android
 
 |Adattípus|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ A **szelektív törlés** a vállalati adatokat, többek között a beállítás
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
 |E-mail|Nem alkalmazható (az androidos eszközök nem támogatják az e-mail-profilokat)|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
 |Outlook|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|
-|Azure Active Directory (AAD) elhagyása|Törlődik az AAD-rekord.|Törlődik az AAD-rekord.|
-|Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem törölhetők. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
+|Azure Active Directory (AAD) elhagyása|Törlődik az Azure AD rekord.|Törlődik az Azure AD rekord.|
+|Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Az androidos eszközökről a szelektív törlés eltávolítja a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást. Az eszköz így kikerül az Intune felügyelete alól. Az Android for Work esetében a teljes törlés nem támogatott.
+Az Android for Work-eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz így kikerül az Intune felügyelete alól. Az Android for Work esetében a gyári beállítások visszaállítása nem támogatott.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|A titkosított fájlrendszerrel (EFS) védett fájlok kulcsát a rendszer visszavonja, és a felhasználó nem fogja tudni megnyitni őket.|Nem törlődnek a vállalati alkalmazások.|Törlődnek az eredetileg a vállalati portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Az alkalmazások és a közvetlen telepítési kulcsok el lesznek távolítva.|
+|Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|A titkosított fájlrendszerrel (EFS) védett fájlok kulcsát a rendszer visszavonja, és a felhasználó nem fogja tudni megnyitni őket.|Nem törlődnek a vállalati alkalmazások.|Törlődnek az eredetileg a vállalati portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Az alkalmazások és a közvetlen telepítési kulcsok el lesznek távolítva.<br>A Windows 10 1703-as (Creator Update) és újabb verziója esetén az Office 365 ProPlus-alkalmazások nem lesznek eltávolítva.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|
 |Wi-Fi és VPN profilbeállításai|Eltávolítva.|Eltávolítva.|Nem támogatott.|Eltávolítva.|
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonódnak.|A tanúsítványok törlődnek és visszavonódnak.|Nem támogatott.|A tanúsítványok törlődnek és visszavonódnak.|
 |E-mail|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is.|Nem támogatott.|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|Törlődnek az EFS által védett e-mailek, ideértve a Windows Posta alkalmazásban tárolt leveleket és mellékleteket is. A rendszer eltávolítja az Intune által telepített e-mail-fiókokat.|
-|Azure Active Directory (AAD) elhagyása|Nem.|Nem.|Törlődik az AAD-rekord.|Nem alkalmazható. A Windows 10 nem támogatja az Azure Active Directoryhoz csatlakoztatott eszközök szelektív törlését.|
+|Azure Active Directory (AAD) elhagyása|Nem.|Nem.|Törlődik az Azure AD rekord.|Nem alkalmazható. A Windows 10 nem támogatja a céges adatok eltávolítását az Azure Active Directoryhoz csatlakoztatott eszközökön.|
 
-**Szelektív törlés**:
+### <a name="to-remove-company-data"></a>A céges adatok eltávolítása
 
-1.  Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+4. Válassza ki az eszköz nevét, amelyről szeretné eltávolítani a céges adatokat.
+5. Az eszköz nevét tartalmazó panelen válassza a **Céges adatok eltávolítása** lehetőséget, majd kattintson az **Igen** gombra az eltávolítás megerősítéséhez.
 
-2.  Válassza ki a törölni kívánt eszköz nevét.
+Ha az eszköz be van kapcsolva és csatlakoztatva van, a céges adatok eltávolításának az összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
 
-3.  Az eszköz nevét tartalmazó panelen válassza a **Céges adatok eltávolítása** lehetőséget, majd kattintson az **Igen** gombra a törlés megerősítéséhez.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálról
 
-Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
+Kommunikációs problémák vagy elveszett eszközök miatt előfordulhat, hogy el kell távolítania egy eszközt az Azure Active Directoryból (AD-ból). A törlés parancs nem távolítja el a az eszközt a felügyeletből, de a **Törlés** opcióval eltávolíthatók az Azure-konzolból egy olyan eszköz rekordjai, amelyikről tudja, hogy nem érhető el, és nem valószínű, hogy újra kommunikálni fog az Azure-ral.
+
+1.  Jelentkezzen be az [Azure Portalon az Azure Active Directoryba](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Bejelentkezhet az [Office 365 portálon](https://portal.office.com) is, majd válassza a **Rendszergazda** &gt; **Azure AD** elemet a lap bal oldalán található hivatkozást használva.
+3.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (kattintson a **Register your free Azure Active Directory** előfizetési hivatkozásra).
+4.  Válassza az **Active Directory** lehetőséget, és jelölje ki a szervezetét.
+5.  Válassza a **Felhasználók** fület.
+6.  Jelölje ki azokat a felhasználókat, akiknek az eszközeit törölni szeretné.
+7.  Válassza az **Eszközök** lehetőséget.
+8.  Szükség szerint távolítson el eszközöket, többek között azokat, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
