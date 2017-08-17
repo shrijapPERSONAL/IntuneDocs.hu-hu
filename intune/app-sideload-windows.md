@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
 
@@ -64,7 +64,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Példa: A Munkahelyi portál alkalmazás letöltése, aláírása és telepítése Windows-eszközökre
 
-A Windows-eszközökre (a Windows Phone és a Windows 10 Mobile rendszerű eszközöket is beleértve) az Intune-nal is telepítheti a Munkahelyi portál alkalmazást, nem kell a Windows Áruházból telepítenie. Ehhez le kell töltenie a Munkahelyi portál alkalmazást, és alá kell írnia a cég tanúsítványával.  Erre csak akkor van szükség, ha a felhasználók nem fogják igénybe venni a Vállalati portál alkalmazást, és Windows Phone 8.1-es telefonokra szeretné azt telepíteni.
+A Windows-eszközökre (a Windows Phone-telefonokat és a Windows 10 Mobile rendszerű eszközöket is beleértve) az Intune-nal is telepítheti a Céges portál alkalmazást, nem kell a Microsoft Áruházból telepítenie. Ehhez le kell töltenie a Munkahelyi portál alkalmazást, és alá kell írnia a cég tanúsítványával.  Erre csak akkor van szükség, ha a felhasználók nem fogják igénybe venni a Vállalati portál alkalmazást, és Windows Phone 8.1-es telefonokra szeretné azt telepíteni.
 
 
 1.  **A Vállalati portál alkalmazás letöltése**
@@ -75,7 +75,7 @@ A Windows-eszközökre (a Windows Phone és a Windows 10 Mobile rendszerű eszk�
 
     -   WinPhoneCompanyPortal.ps1 – egy PowerShell-parancsprogram, amellyel aláírhatja a Vállalati portál alkalmazás fájlját, hogy az telepíthető legyen Windows Phone 8.1-es telefonokra
 
-    Azt is megteheti, hogy letölti a Windows Phone 8.1 vagy a Windows 10 Munkahelyi portált (az offline licenccel rendelkező csomagot) a [Vállalati Windows Áruházból](http://businessstore.microsoft.com/). A Munkahelyi portál alkalmazást offline licenccel kell beszerezni, és az offline használatra megfelelő csomagot kell letölteni. A kínálatban a Windows 8 és a Windows Phone 8 platformra készültként megjelölt termékek valójában a 8.1-beli megfelelőjükre utalnak. Ennek Intune-nal való végrehajtásáról bővebben [A Vállalati Windows Áruházban vásárolt alkalmazások kezelése](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) című témakörben olvashat.
+    Azt is megteheti, hogy letölti a Windows Phone 8.1-es vagy a Windows 10-es Céges portált (az offline licenccel rendelkező csomagot) a [Vállalati Microsoft Áruházból](http://businessstore.microsoft.com/). A Munkahelyi portál alkalmazást offline licenccel kell beszerezni, és az offline használatra megfelelő csomagot kell letölteni. A kínálatban a Windows 8 és a Windows Phone 8 platformra készültként megjelölt termékek valójában a 8.1-beli megfelelőjükre utalnak. Ennek az Intune-nal való végrehajtásáról bővebben [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) című témakörben olvashat.
 
 2.  **A Windows Phone SDK letöltése:** Töltse le a Windows Phone SDK 8.0-s verzióját] (http://go.microsoft.com/fwlink/?LinkId=615570), és telepítse a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
 
@@ -144,12 +144,12 @@ A Windows és Windows Phone rendszerű mobilalkalmazások telepítésére szolg�
 5.  Írja alá az összes új és az esetlegesen frissített üzletági alkalmazásokat az új tanúsítvánnyal. A meglévő alkalmazásokat nem kell újra ellátni aláírással és újratelepíteni.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>A Windows 10-es Céges portál alkalmazás manuális telepítése
-A Windows 10-es Céges portál alkalmazást közvetlenül az Intune-ból telepítheti manuálisan akkor is, ha az Intune-t nem integrálta a Vállalati Windows Áruházzal.
+A Windows 10-es Céges portál alkalmazást akkor is telepítheti manuálisan, közvetlenül az Intune-ból, ha az Intune-t nem integrálta a Vállalati Microsoft Áruházzal.
 
  > [!NOTE]
  > Ha ezt a lehetőséget választja, manuális frissítést kell végrehajtania minden alkalommal, amikor új frissítés válik elérhetővé az alkalmazáshoz.
 
-1. Jelentkezzen be [Vállalati Windows Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
+1. Jelentkezzen be [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
 2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
 3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
 ![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Az így aláírt és telepített Windows 10-es Céges portál alkalmazás eseté
 Itt ismertetjük az alkalmazás aláírásának és telepítésének ezt a módját:
 
 1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) oldalról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10-hez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) oldalra.
-2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Windows Áruházból a fenti útmutató szerint.  
+2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Microsoft Áruházból a fenti útmutató szerint.  
 3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
 
 |Paraméter | Leírás|

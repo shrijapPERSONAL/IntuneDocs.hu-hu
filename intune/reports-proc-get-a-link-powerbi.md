@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A Power BI-hoz letölthető egy fájl, amellyel az Intune-bérlőhöz kapcsolódó interaktív, dinamikusan létrehozott jelentéseket hozhat létre. Az adattárházzal használható Power BI-fájl (pbix) kapcsolati beállításokat tartalmaz a bérlőhöz való kapcsolódáshoz, és az alábbi mintajelentések és diagramok is elérhetőek benne: 
+A Power BI-hoz letölthető egy fájl, amellyel az Intune-bérlőhöz kapcsolódó interaktív, dinamikusan létrehozott jelentéseket hozhat létre. Az adattárházzal használható Power BI-fájl (pbix) kapcsolati beállításokat tartalmaz a bérlőhöz való kapcsolódáshoz, és az alábbi mintajelentések és diagramok is elérhetőek benne:  
 
   -  Eszközök
   -  Beléptetés
@@ -46,8 +46,11 @@ Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.co
 
 A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatlakozási információkat, valamint az adattárház adatmodelljén alapuló előre elkészített jelentéseket is. Nyissa meg a fájlt a Power BI Desktopban, és jelentkezzen be az Azure AD-be. A jelentés betölti az Intune-bérlő adatait.
 
+> [!Important]  
+> A bérlő földrajzi helyétől függően a Power BI-fájlok (pbix) eltérőek lehetnek. Ha több Intune-bérlőt felügyel, akkor ügyeljen arra, hogy azt a fájlt használja, amelyet ebbe a bérlőbe bejelentkezve letöltött az Azure Portalról.  
+
 1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
-2.  Nyissa meg a **Microsoft Intune Data Warehouse API (előzetes)** panelt.
+2.  Nyissa meg a **Microsoft Intune-adattárház API (előnézet)** panelt.
 3.  Kattintson a **Download PowerBI file** (Power BI-fájl letöltése) elemre. Adjon meg egy helyet a pbix kiterjesztésű fájl letöltéséhez, és töltse le a fájlt.
 4.  Nyissa meg a fájlt a Power BI-ben. Betöltődik az *Intune-beli adattárház-jelentés*, ami a bérlő adatainak betöltésétől függően hosszabb ideig is eltarthat.
 5.  Ahhoz, hogy az adatok betöltődjenek, és a bérlőadatok megjelenjenek a jelentésekben, kattintson a **Frissítés** elemre.

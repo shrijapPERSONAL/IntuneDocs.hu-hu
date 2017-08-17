@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>A Windows Information Protection (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune 1704-s kiadásától kezdve a mobilalkalmazás-kezelés (MAM) segítségével regisztrációs forgatókönyv nélkül használhatja az alkalmazásvédelmi szabályzatokat Windows 10 rendszerű eszközök esetén.
+Az Intune 1704-es kiadásától kezdve az eszközök regisztrálása nélkül használhatja az alkalmazásvédelmi szabályzatokat Windows 10 rendszer esetén.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -39,17 +39,15 @@ Az Intune 1704-s kiadásától kezdve a mobilalkalmazás-kezelés (MAM) segíts�
 
 ### <a name="types-of-apps"></a>Alkalmazások típusai
 
--   **Ajánlott alkalmazások:** a szabályzatba egyszerűen importálható (leginkább Microsoft Office-) alkalmazásokból előre összeállított lista.
+-   **Ajánlott alkalmazások:** a szabályzatba egyszerűen importálható (leginkább Microsoft Office-) alkalmazásokból előre összeállított lista. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Áruházbeli alkalmazások:** a rendszergazda a Windows Áruházból bármilyen alkalmazást felvehet a szabályzatba.
+-   **Áruházbeli alkalmazások:** bármilyen alkalmazást felvehet a szabályzatba a Microsoft Áruházból.
 
--   **Asztali Windows-alkalmazások:** a rendszergazda bármilyen hagyományos asztali Windows-alkalmazást (exe, dll stb.) felvehet a szabályzatba.
+-   **Asztali Windows-alkalmazások:** bármilyen hagyományos asztali Windows-alkalmazást (.exe, .dll stb.) felvehet a szabályzatba.
 
 ## <a name="pre-requisites"></a>Előfeltételek
 
-A WIP alkalmazásvédelmi szabályzatainak létrehozása előtt be kell állítania a MAM-szolgáltatót.
-
--   További információk a [MAM-szolgáltató konfigurálásáról az Intune segítségével](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+A WIP alkalmazásvédelmi szabályzatainak létrehozása előtt be kell állítania a MAM-szolgáltatót. További információk a [MAM-szolgáltató konfigurálásáról az Intune segítségével](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Emellett rendelkeznie kell a következőkkel:
 
@@ -58,12 +56,13 @@ Emellett rendelkeznie kell a következőkkel:
 
 > [!IMPORTANT]
 > A WIP nem támogatja a többszörös identitás használatát, egyidejűleg csak egyetlen felügyelt identitás létezhet.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>WIP-szabályzat hozzáadása
 
-Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatával hozhat létre WIP-specifikus szabályzatokat.
+Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatával hozhat létre WIP-specifikus szabályzatokat. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Nyissa meg az **Intune mobilalkalmazás-kezelési irányítópultját**, válassza a **Minden beállítás** lehetőséget, majd válassza ki az **Alkalmazásszabályzat** lehetőséget.
+1.  Nyissa meg az **Intune mobilalkalmazás-kezelési irányítópultját**, majd válassza a **Minden beállítás** > **Alkalmazásszabályzat** lehetőséget.
 
 2.  Az **Alkalmazásszabályzat** panelen válassza a **Szabályzat hozzáadása** lehetőséget, majd adja meg a következő értékeket:
 
@@ -85,7 +84,7 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 
 3.  Válassza ki azokat az alkalmazásokat, amelyeknek hozzáférést kíván adni a céges adatokhoz, majd kattintson az **OK** gombra. Az **Engedélyezett alkalmazások** panel frissül, és kibővül a kiválasztott alkalmazásokkal.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Áruházbeli alkalmazások hozzáadása az engedélyezett alkalmazások listájához
+## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Áruházbeli alkalmazás hozzáadása az engedélyezett alkalmazások listájához
 
 **Áruházbeli alkalmazás hozzáadása**
 
@@ -120,65 +119,64 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 > [!NOTE]
 > Egyszerre több **asztali alkalmazást** is hozzáadhat, ha az alkalmazások sor végén található **(...)** menügombra kattint és további alkalmazásokat választ ki. Ha elkészült, kattintson az **OK** gombra.
 
-## <a name="windows-information-protection-wip-learning"></a>Windows Information Protection (WIP) Learning
-
+## <a name="wip-learning"></a>WIP Learning
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 A WIP által védeni kívánt alkalmazások hozzáadása után alkalmazni kell azokon az egyik védelmi módot a **WIP Learning** használatával.
 
 ### <a name="before-you-begin"></a>Előkészületek
 
-A Windows Information Protection (WIP) Learning egy olyan biztonsági jelentés, amellyel a rendszergazdák a WIP számára ismeretlen alkalmazásokat figyelhetik. Ismeretlennek számítanak az olyan alkalmazások, amelyeket nem a munkahelyi IT-részleg helyezett üzembe. A rendszergazda a jelentésből exportálhatja ezeket az alkalmazásokat, és a működési zavarok megelőzése céljából hozzáadhatja őket a WIP-szabályzatokhoz, mielőtt a WIP-et „Felülbírálások elrejtése” módban alkalmazná.
+A WIP Learning egy olyan jelentés, amellyel a WIP számára ismeretlen alkalmazásokat figyelheti. Ismeretlennek számítanak az olyan alkalmazások, amelyeket nem a munkahelyi IT-részleg helyezett üzembe. A jelentésből exportálhatja ezeket az alkalmazásokat, és a munka megzavarását elkerülendő hozzáadhatja őket a WIP-szabályzatokhoz, mielőtt a WIP-et „Felülbírálások elrejtése” módban alkalmazná.
 
 Javasoljuk, hogy először a **Csendes** vagy a **Felülbírálások engedélyezése** módot válassza, és egy kisebb csoporton ellenőrizze, hogy az engedélyezett alkalmazások listájában a megfelelő alkalmazások szerepelnek-e. Ha ezzel végzett, a végleges szabályzatban használhatja a **Felülbírálások elrejtése** módot.
 
-#### <a name="what-the-protection-modes-are"></a>Milyen védelmi módok lehetségesek?
+### <a name="what-are-the-protection-modes"></a>Milyen védelmi módok lehetségesek?
 
-- **Felülbírálások elrejtése:**
-    - A WIP figyeli a nem megfelelő adatmegosztási gyakorlatot, és megakadályozza, hogy a felhasználó elvégezze az adott műveletet.
-    - Ilyen gyakorlat lehet, ha nem céges védelem alatt álló alkalmazásokkal osztanak meg információt, vagy ha a munkahelyén kívüli személyekkel és eszközökkel osztanak meg céges adatokat.
-<br></br>
+#### <a name="hide-overrides"></a>Felülbírálások elrejtése
+A WIP figyeli a nem megfelelő adatmegosztási gyakorlatot, és megakadályozza, hogy a felhasználó elvégezze az adott műveletet. Ilyen gyakorlat lehet, ha nem céges védelem alatt álló alkalmazásokkal osztanak meg információt, vagy ha a munkahelyén kívüli személyekkel és eszközökkel osztanak meg céges adatokat.
 
-- **Felülbírálások engedélyezése:**
-    - A WIP figyeli a nem megfelelő adatmegosztásokat, és figyelmezteti a felhasználót az esetlegesen nem biztonságos tevékenységre.
-    - Ebben a módban azonban a felhasználónak lehetősége van a szabályzat felülbírálásával megosztani az adatokat, a tevékenység pedig megjelenik a műveleti naplóban.
-<br></br>
-- **Csendes:**
-    - A WIP csendes módban üzemel, és úgy naplózza az adatmegosztásokat, hogy nem akadályozza meg azokat a tevékenységeket, amelyek esetében a Felülbírálások engedélyezése módban figyelmeztetések jelennének meg a felhasználó számára.
-    - A nem engedélyezett műveletek azonban továbbra is tiltva vannak, például hálózati erőforrások vagy WIP-védelem alatt álló adatok nem megfelelő elérése.
-<br></br>
-- **Kikapcsolva (nem ajánlott):**
-    - A WIP ki van kapcsolva, így nem védi és nem naplózza az adatokat.
-    - A WIP kikapcsolása után a rendszer megkísérli visszafejteni a WIP-címkével ellátott fájlokat a csatlakoztatott helyszíni meghajtókon. Vegye figyelembe, hogy a WIP-védelem újbóli bekapcsolásakor a korábbi visszafejtési és szabályzatinformációk nem lesznek automatikusan újra alkalmazva.
+#### <a name="allow-overrides"></a>Felülbírálások engedélyezése
+A WIP figyeli a nem megfelelő adatmegosztásokat, és figyelmezteti a felhasználót az esetlegesen nem biztonságos tevékenységre. Ebben a módban azonban a felhasználónak lehetősége van a szabályzat felülbírálásával megosztani az adatokat, a tevékenység pedig megjelenik a műveleti naplóban.
 
-### <a name="to-add-a-protection-mode"></a>Védelmi mód hozzáadása
+#### <a name="silent"></a>Csendes
+A WIP csendes módban üzemel, és úgy naplózza a nem megfelelő adatmegosztásokat, hogy nem akadályozza meg azokat a tevékenységeket, amelyek esetében a Felülbírálások engedélyezése módban figyelmeztetések jelennének meg a felhasználó számára. A nem engedélyezett műveletek azonban továbbra is tiltva vannak, például hálózati erőforrások vagy WIP-védelem alatt álló adatok nem megfelelő elérése.
 
-1.  A **Alkalmazásszabályzat** panelen válassza ki a szabályzat nevét, majd a **Szabályzat hozzáadása** panelen kattintson a **Kötelező beállítások** elemre.
+#### <a name="off-not-recommended"></a>Kikapcsolva (nem ajánlott)
+A WIP ki van kapcsolva, így nem védi és nem naplózza az adatokat.
+
+A WIP kikapcsolása után a rendszer megkísérli visszafejteni a WIP-címkével ellátott fájlokat a csatlakoztatott helyszíni meghajtókon. Vegye figyelembe, hogy a WIP-védelem újbóli bekapcsolásakor a korábbi visszafejtési és szabályzatinformációk nem lesznek automatikusan újra alkalmazva.
+
+### <a name="add-a-protection-mode"></a>Védelmi mód hozzáadása
+
+1.  Az **Alkalmazásszabályzat** panelen válassza ki a kívánt szabályzat nevét, majd válassza a **Kötelező beállítások** lehetőséget.
 
     ![A tanulási mód képernyőképe](./media/learning-mode-sc1.png)
 
 1.  Válassza a **Mentés** elemet.
 
-### <a name="to-use-wip-learning"></a>A WIP Learning használata
+### <a name="use-wip-learning"></a>A WIP Learning használata
 
-1. Nyissa meg az Azure irányítópultját.
+1. Nyissa meg az Azure irányítópultját. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 3. Az **Intune** kiválasztásával megnyílik az **Intune irányítópult**. Itt válassza a **Mobilalkalmazások** elemet.
 
-4. A **Figyelés** szakaszban válassza a **WIP Learning** lehetőséget. Ekkor megjelenik a WIP Learning által naplózott ismeretlen alkalmazások listája.
+4. A **Figyelés** alatt válassza a **WIP Learning** lehetőséget. Ekkor megjelenik a WIP Learning által naplózott ismeretlen alkalmazások listája.
 
 > [!IMPORTANT]
 > A WIP Learning naplójelentésében szereplő alkalmazásokat ezután exportálhatja az alkalmazásvédelmi szabályzatokba.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>WIP alkalmazásvédelmi szabályzat bevezetése
+## <a name="deploy-your-wip-app-protection-policy"></a>WIP alkalmazásvédelmi szabályzat bevezetése
 
 > [!IMPORTANT]
-> Az alábbi információk a WIP mobilalkalmazás-kezeléssel (MAM) való használatára vonatkoznak regisztrációs forgatókönyv használata nélkül.
+> Az alábbi információk az WIP eszközregisztráció nélküli használatára vonatkoznak.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 A WIP alkalmazásvédelmi szabályzat létrehozása után a MAM használatával kell bevezetnie azt a cégnél.
 
-1.  Az **Alkalmazásszabályzat** panelen válassza ki az újonnan létrehozott alkalmazásvédelmi szabályzatot, és válassza a **Felhasználói csoportok**, majd a **Felhasználói csoport hozzáadása** elemet.
+1.  Az **Alkalmazásszabályzat** panelen válassza ki az újonnan létrehozott alkalmazásvédelmi szabályzatot, majd válassza a **Felhasználói csoportok** > **Felhasználói csoport hozzáadása** elemet.
 
     A **Felhasználói csoport hozzáadása** panelen megjelenik az Azure Active Directoryban elérhető összes felhasználói csoport listája.
 
-1.  Válassza ki azt a csoportot, amelyre alkalmazni szeretné a szabályzatot, majd kattintson a **Kiválaszt** lehetőségre.
+1.  Válassza ki azt a csoportot, amelyre alkalmazni szeretné a szabályzatot, majd válassza a **Kiválasztás** lehetőséget a szabályzat üzembe helyezéséhez.
