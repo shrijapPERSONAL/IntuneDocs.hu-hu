@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,16 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.custom: 
+ms.openlocfilehash: 73e9a634e579b85ac5acabebf38c8a08bc1af86c
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-A cikket a 2. szakasz többi témakörével párhuzamosan célszerű feldolgozni, A terv az útmutató korábbi szakaszainak követése közben gyűjtött adatokon és meghozott döntéseken alapul. A tervezési szakaszban az önálló Intune-ra fogunk összpontosítani, amely a Microsoft felhőalapú szolgáltatása.
-
-Ugyan a helyszíni infrastruktúrával kapcsolatban csak minimális mennyiségű követelményt támasztunk, mégis érdemes felkészülni a tervkészítésre, hogy biztosan a saját céljainak és követelményeinek megfelelő mobileszköz-felügyeleti megoldás legyen a végeredmény.
-
-Ezenfelül gyakorta előfordul, hogy az implementálási vagy a tesztelési fázisban módosítani kell a terven, és ezeket a módosításokat nagyon fontos az indokaikkal együtt azonnal dokumentálni. A terv a következő területeket tartalmazza:
+Az Intune-terv [az útmutató más szakaszainak](planning-guide.md) követése közben gyűjtött adatokon és meghozott döntéseken alapul. Az alábbiak összefogásában nyújt segítséget:
 
 -   Aktuális környezet
 
@@ -40,11 +34,14 @@ Ezenfelül gyakorta előfordul, hogy az implementálási vagy a tesztelési fáz
 
 -   Teljesítendő követelmények  
 
+Bár a helyszíni infrastruktúrával kapcsolatban csak minimális mennyiségű követelményt támasztunk, egy terv készítése mégis segíthet abban, hogy biztosan a saját céljainak és követelményeinek megfelelő mobileszköz-felügyeleti megoldás legyen a végeredmény.
+
 Vizsgáljuk meg ezeket a területeket részletesebben. 
 
-## <a name="record-your-environment"></a>A munkakörnyezet dokumentálása
+## <a name="record-your-current-environment"></a>A jelenlegi környezet dokumentálása
+Ezenfelül gyakorta előfordul, hogy az implementálási vagy a tesztelési fázisban módosítani kell a terven. A terv használatával azonnal dokumentálhatja ezeket a változásokat az indokaikkal együtt.
 
-A terv elkészítését megelőző első lépés az aktuális munkakörnyezet dokumentálása. Ez a környezet ugyanis befolyásolhatja a tervezési döntéseket, ezért dokumentálni kell, és figyelembe kell venni a többi Intune-tervezési döntés meghozatalakor. Alább néhány, az aktuális környezet dokumentálásával kapcsolatos példát olvashat:
+A környezet ugyanis befolyásolhatja a tervezési döntéseket, ezért azt dokumentálni kell, és figyelembe kell venni a többi Intune-tervezési döntés meghozatalakor. Alább néhány, az aktuális környezet dokumentálásával kapcsolatos példát olvashat:
 
 -   **Felhőbeli identitás**
 
@@ -52,21 +49,21 @@ A terv elkészítését megelőző első lépés az aktuális munkakörnyezet do
 
     -   Összevont-e a környezet?
 
-    -   Használható-e többtényezős hitelesítés?
+    -   Engedélyezve van-e a többtényezős hitelesítés (MFA)?
 
 -   **E-mail-környezet**
 
-    -   Használnak-e Exchange-et, és ha igen, helyszíni vagy felhőbeli megoldásban?
+    -   Használnak Exchange-et? Helyszíni vagy felhőbeli megoldásban?
 
     -   Folyamatban van-e az Exchange felhőbe való migrálása?
 
--   **Aktuális MDM-megoldás**
+-   **Az aktuális mobileszköz-felügyeleti (MDM) megoldás**
 
     -   Használnak-e jelenleg más MDM-megoldásokat?
 
-    -   Milyen MDM-megoldást használnak a vállalati, illetve a dolgozói tulajdonban lévő eszközök esetében?
+    -   Milyen MDM-megoldást használnak a vállalati, illetve a személyes tulajdonú eszközök esetében?
 
-    -   Milyen képességeket használnak (pl. alkalmazások eszközbeállításai, Wi-Fi-konfigurációk stb.)?
+    -   Milyen képességeket használnak (például alkalmazások eszközbeállításai, Wi-Fi konfigurációk)?
 
     -   Milyen eszközplatformokat támogatnak?
 
@@ -88,12 +85,12 @@ A terv elkészítését megelőző első lépés az aktuális munkakörnyezet do
 
     -   Milyen VPN-megoldást használnak?
 
-    -   A vállalati, illetve a dolgozói tulajdonban lévő eszközök esetében is használják?
+    -   Használják-e a vállalati, illetve a személyes tulajdonú eszközök esetében is?
 
-Az aktuális MDM-környezet dokumentálásakor mindenképpen jegyezze fel azokat a projekteket és más érvényben lévő terveket, amelyek hatással lehetnek a környezetre. Alább egy példával szemléltetjük, hogyan lehet az Intune-terv elkészítéséhez hasznos módon dokumentálni az aktuális környezetet:
+Az aktuális MDM-környezet dokumentálásakor mindenképpen jegyezze fel azokat a projekteket és más érvényben lévő terveket, amelyek hatással lehetnek a környezetre. Alább egy példával szemléltetjük, hogyan lehet dokumentálni az aktuális környezetet az Intune-terv elkészítéséhez:
 
 | **Megoldásterület** | **Aktuális környezet** | **Megjegyzések** |
-|:---:|:---:|:---:|
+|---|---|---|
 | **Identitás** | Azure AD, Azure AD Connect, nem összevont, nincs MFA | Folyamatban lévő projekt: MFA megvalósítása az év végéig |                 
 | **E-mail-környezet** | Helyszíni Exchange, online Exchange | Folyamatban van a migrálás a helyszíni Exchange-ről az online-ra. A postafiókok 75%-át már migráltuk, és a maradék 25% migrálása is lezajlik az Intune-próbaüzem megkezdése előtt. |                
 | **SharePoint** | Helyszíni SharePoint | Nem tervezzük a SharePoint felhőbe költöztetését |  
@@ -102,11 +99,12 @@ Az aktuális MDM-környezet dokumentálásakor mindenképpen jegyezze fel azokat
 | **Rendszerfelügyelet** | System Center Configuration Manager CB 1606 | Meg szeretnénk vizsgálni a hibrid Intune-megoldás lehetőségét |
 | **VPN-megoldás** | Cisco AnyConnect |  |
 
+
+A saját Intune-tervének kidolgozásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ## <a name="choose-an-intune-deployment-option"></a>Intune-telepítési lehetőség választása
 
-Az Intune kétféle telepítési lehetőséget kínál, ezek az önálló és a hibrid. Önnek kell eldöntenie, melyik illik jobban az üzleti követelményeikhez. Önálló telepítés esetén az Intune szolgáltatás a felhőben fut, hibrid telepítés esetén pedig az Intune integrálva van a System Center Configuration Managerrel.
-
-- További információ [az önálló Microsoft Intune és a System Center Configuration Managerrel integrált hibrid mobileszköz-felügyelet közötti választáshoz](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
+Az Intune kétféle telepítési lehetőséget kínál, ezek az önálló és a hibrid. Önálló telepítés esetén az Intune szolgáltatás a felhőben fut, hibrid telepítés esetén pedig az Intune integrálva van a System Center Configuration Managerrel. Ez az útmutató elsősorban az önálló telepítésről szól. [Döntse el, melyik lehetőség felel meg az üzleti követelményeknek](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 ## <a name="intune-tenant-location"></a>Az Intune-bérlő földrajzi helye
 
@@ -123,59 +121,61 @@ A globálisan jelen lévő vállalatoknak a szolgáltatásra való előfizetésk
 
 ## <a name="external-dependencies"></a>Külső függőségek
 
-A külső függőségek olyan szolgáltatások és termékek, amelyek ugyan nem részei az Intune-nak, de vagy követelményei, vagy integrálódhatnak vele. Fontos feltérképezni az esetleges külső függőségekkel kapcsolatos követelményeket és konfigurációs sajátságokat. Az alábbiakban néhány gyakoribb külső függőséget sorolunk fel:
+A külső függőségek olyan szolgáltatások és termékek, amelyek ugyan nem részei az Intune-nak, de vagy követelményei, vagy integrálódhatnak vele. Fontos feltérképezni az esetleges külső függőségekkel kapcsolatos követelményeket és azok konfigurációs sajátságait is. Néhány példa a gyakoribb külső függőségekre:
 
 -   Identitás
 
 -   Felhasználói és eszközcsoportok
 
--   Nyilvános kulcsú infrastruktúra
+-   Nyilvános kulcsú infrastruktúra (PKI)
 
 Vizsgáljuk meg részletesebben ezeket a gyakori külső függőségeket
 
 ### <a name="identity"></a>Identitás
 
-A szervezethez tartozó, eszközt regisztráló felhasználókat az identitásuk révén azonosítjuk. Az Intune-hoz az Azure Active Directoryt (Azure AD) kell használni identitásszolgáltatóként. Ha már ezt a szolgáltatást használják, akkor ki lehet használni a máris a felhőben lévő identitásokat. A helyszíni felhasználói identitások és a Microsoft felhőszolgáltatásai közötti szinkronizálást pedig az Azure AD Connect eszközzel ajánlott elvégezni. Ha a szervezet már használja az Office 365-öt, akkor fontos, hogy az Intune is ugyanazt az Azure Active Directory-környezetet használja.
+A szervezethez tartozó, eszközt regisztráló felhasználókat az identitásuk révén azonosítjuk. Az Intune-hoz az Azure Active Directoryt (Azure AD) kell használni identitásszolgáltatóként. Ha már ezt a szolgáltatást használják, akkor használhatják a felhőben már meglévő identitásokat. A helyszíni felhasználói identitások és a Microsoft felhőszolgáltatásai közötti szinkronizálást pedig az Azure AD Connect eszközzel ajánlott elvégezni. Ha a szervezet már használja az Office 365-öt, akkor fontos, hogy az Intune is ugyanazt az Azure AD-környezetet használja.
 
-Az Intune identitással kapcsolatos követelményeiről alább olvashat bővebben.
+További tudnivalók az Intune-identitással kapcsolatos alábbi követelményekről:
 
--   További tudnivalók [az identitással kapcsolatos követelményekről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Identitáskövetelmények](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
 
--   További tudnivalók [a címtár-szinkronizálás követelményeiről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [A címtár-szinkronizálás követelményei](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
 
--   További tudnivalók [a többtényezős hitelesítés követelményeiről](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [A többtényezős hitelesítés követelményei](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Felhasználói és eszközcsoportok
 
-A felhasználói és eszközcsoportok határozzák meg a telepített környezet célterületét. A telepítés célozhat többek között szabályzatokat, alkalmazásokat vagy profilokat. A csak a felhőben üzemelő Intune támogatja a felhasználói és eszközcsoportokat – Önnek kell megadnia, hogy milyen felhasználói és eszközcsoportokra lesz szükség. Célszerű a helyszíni Active Directoryban létrehozott összes csoportot szinkronizálni az Azure Active Directoryba. A felhasználói és eszközcsoportok megtervezéséről és létrehozásáról alább olvashat bővebben.
+A felhasználói és eszközcsoportok határozzák meg a telepített környezet célterületét, beleértve a szabályzatokat, az alkalmazásokat és a profilokat. Önnek kell eldöntenie, hogy milyen felhasználói és eszközcsoportokra lesz szükség.
 
--   További tudnivalók [a felhasználói és eszközcsoportok megtervezéséről](/intune-classic/deploy-use/plan-your-user-and-device-groups)
+A helyszíni Active Directoryban célszerű létrehoznia az összes csoportot, majd szinkronizálnia azokat az Azure Active Directoryba. További tudnivalók a felhasználói és eszközcsoportok megtervezéséről és létrehozásáról:
 
--   Útmutató [a felhasználói és eszközcsoportok létrehozásához](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+-   [A felhasználói és eszközcsoportok megtervezése](users-add.md).
+
+-   [A felhasználói és eszközcsoportok létrehozása](groups-add.md).
 
 ### <a name="public-key-infrastructure-pki"></a>Nyilvános kulcsú infrastruktúra (PKI)
+A nyilvános kulcsú infrastruktúra tanúsítványokat szolgáltat, amelyekkel az eszközök vagy a felhasználók biztonságosan hitelesíthetik magukat egy szolgáltatásban. Az Intune a Microsoft PKI-infrastruktúráit támogatja. A mobileszközökhöz a tanúsítványalapú hitelesítés követelményeinek való megfelelés érdekében felhasználói és eszköztanúsítványokat is ki lehet állítani. A tanúsítványok használata előtt meg kell állapítani, hogy szüksége van-e tanúsítványokra, a hálózati infrastruktúra támogatja-e a tanúsítványalapú hitelesítést, és hogy a jelenlegi környezetben használnak-e tanúsítványokat.
 
-A nyilvános kulcsú infrastruktúra tanúsítványokat szolgáltat, amelyekkel az eszközök vagy a felhasználók biztonságosan hitelesíthetik magukat egy szolgáltatásban. Az Intune a Microsoft PKI-infrastruktúráit támogatja. A mobileszközökhöz a tanúsítványalapú hitelesítés követelményeinek való megfelelés érdekében felhasználói és eszköztanúsítványokat is ki lehet bocsátani. A tanúsítványhasználat implementálása előtt meg kell állapítani, hogy szükség van-e tanúsítványokra, a hálózati infrastruktúra támogatja-e a tanúsítványalapú hitelesítést, és hogy a jelenlegi környezetben használnak-e tanúsítványokat.
+Ha az Intune VPN-, Wi-Fi- vagy e-mail-profiljaihoz tanúsítványokat tervez használni, bizonyosodjon meg róla, hogy a szervezetnél [már ki van alakítva egy támogatott PKI-infrastruktúra](certificates-configure.md), amely készen áll a tanúsítványprofilok létrehozására és üzembe helyezésére.
 
-Ha az Intune VPN-, Wi-Fi- vagy e-mail-profiljaihoz tanúsítványokat tervez használni, bizonyosodjon meg róla, hogy a szervezetnél már ki van alakítva a tanúsítványprofilok létrehozására és üzembe helyezésére kész, támogatott [PKI-infrastruktúra](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles).
+Emellett SCEP-tanúsítványok kiállítása esetén azt is el kell dönteni, hogy melyik kiszolgálón üzemeljen a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES), és hogyan fog zajlani a kommunikáció.
 
-Továbbá ha SCEP-tanúsítványokat fognak kibocsátani, akkor el kell dönteni, hogy melyik kiszolgálón fog üzemelni a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES), és hogyan fog zajlani a kommunikáció.
+További információk az alábbiakról:
 
-További tudnivalók az Intune-ban történő tanúsítványkonfigurálásról:
+-   [Intune-tanúsítványprofilok konfigurálása](certificates-configure.md)
 
--   [SCEP-tanúsítványinfrastruktúra konfigurálása](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+-   [SCEP-tanúsítványinfrastruktúra konfigurálása](certificates-scep-configure.md)
 
--   [PFX-tanúsítványinfrastruktúra konfigurálása](/intune-classic/deploy-use/configure-certificate-infrastructure-for-pfx)
+-   [PFX-tanúsítványinfrastruktúra konfigurálása](certficates-pfx-configure.md)
 
--   [Intune-tanúsítványprofilok konfigurálása](/intune-classic/deploy-use/configure-intune-certificate-profiles)
 
--   [Erőforrás-hozzáférési szabályzatok konfigurálása](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune)
+
 
 ## <a name="device-platform-considerations"></a>Eszközplatformmal kapcsolatos szempontok
 
-Csak az eszközök alaposabb ismeretében lehet jól megérteni helyes konfigurálásuk mikéntjét.
+Csak az eszközökkel kapcsolatos alábbi szempontok alaposabb ismeretében lehet jól megérteni a helyes konfigurálásuk mikéntjét.
 
--   A támogatott eszközplatformok meghatározása
+-   Támogatott eszközplatformok
 
 -   Eszközök
 
@@ -189,13 +189,11 @@ Vizsgáljuk meg ezeket a területeket részletesebben.
 
 A terv kidolgozásakor tudnia kell, hogy milyen eszközök lesznek a környezetben, és ellenőrizni kell, hogy ezeket az Intune támogatja-e. Az Intune az iOS, az Android és a Windows platformot támogatja.
 
--   További tudnivalók [az Intune által támogatott eszközökről](/intune/supported-devices-browsers)
+[A Intune által támogatott eszközök teljes listája](supported-devices-browsers.md).
 
 ### <a name="devices"></a>Eszközök
 
-Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. A szolgáltatás több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálni a támogatni tervezett eszközöket és OS-platformokat. Itt lehet részletezni a Használati esetek követelményeinek meghatározása című szakaszban létrehozott eszköz- és platformfelsorolást.
-
-Célszerű a verziókat is feljegyezni, hogy a lista használható legyen az eszközképességek OS-platform és -verzió szerinti keresésekor. Például:
+Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. Az Intune több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálnia a támogatni tervezett eszközöket, OS-platformokat és verziókat. Példa:
 
 | **Eszközplatform** | **Operációsrendszer-verziók** |
 |:---:|:---:|
@@ -204,17 +202,17 @@ Célszerű a verziókat is feljegyezni, hogy a lista használható legyen az esz
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10-es táblagépek | 10+ |
 
+
+A saját eszközlistájának kidolgozásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="device-ownership"></a>Az eszközök tulajdonjoga
 
-Az Intune mind a vállalati, mind a dolgozói tulajdonban lévő eszközöket képes kezelni. Azok az eszköz minősülnek vállalati tulajdonúnak, amelyeket egy eszközregisztráció-kezelő vagy egy készülékregisztrációs program (DEP) regisztrál. Ilyen lehet egy, az Apple DEP által regisztrált eszköz, amelyet megjelölnek vállalati tulajdonúként, és egy olyan eszközcsoportba helyezik, amely célzott vállalati szabályzatokat és alkalmazásokat kap.
+Az Intune támogatja a vállalati, illetve a személyes tulajdonban lévő eszközöket is. Azok az eszközök minősülnek vállalati tulajdonúaknak, amelyeket egy eszközregisztráció-kezelő vagy egy készülékregisztrációs program regisztrál. Ilyen lehet például egy, az Apple Készülékregisztrációs programmal regisztrált eszköz, amelyet vállalati tulajdonúként jelölnek meg, és egy olyan eszközcsoportba helyezik, amely célzott vállalati szabályzatokat és alkalmazásokat kap.
 
-A vállalati és a dolgozói tulajdonban lévő eszközökkel kapcsolatos használati esetekről a [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](planning-guide-requirements.md) nyújt további tájékoztatást.
+A vállalati és a személyes tulajdonban lévő eszközökkel kapcsolatos használati esetekről a [3. szakasz: Használatieset-forgatókönyvek követelményeinek meghatározása](planning-guide-requirements.md) nyújt további tájékoztatást.
 
 ### <a name="bulk-enrollment"></a>Tömeges regisztrálás
 
-A vállalati portálon történő önkiszolgáló regisztráción kívül még több más módon is lehet eszközöket regisztrálni az Intune-ban. A tömeges regisztrálás a platformtól függően többféleképpen történhet. Ha tömeges regisztrálásra lesz szükség, akkor döntsön annak módjáról, és a tervet ennek megfelelően dolgozza ki. A tömeges regisztrálás különféle módjairól alább olvashat bővebben.
-
--   További tudnivalók [a tömeges regisztrálásról](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
+ Az eszközök tömeges regisztrálását a platformtól függően többféleképpen valósíthatja meg. Ha tömeges regisztrálásra lesz szüksége, akkor [döntsön annak módjáról](device-enrollment.md), és a tervet ennek megfelelően dolgozza ki.
 
 ## <a name="feature-requirements"></a>Funkciókövetelmények
 
@@ -236,20 +234,23 @@ Vizsgáljuk meg ezeket a területeket részletesebben.
 
 ### <a name="terms-and-conditions-policies"></a>Használati feltételekkel kapcsolatos szabályzatok
 
-A használati feltételekben lehet feltüntetni azokat a szabályzatokat vagy kikötéseket, amelyeket a regisztrálás előtt a felhasználónak el kell fogadnia. Az Intune-ban több használati feltételekkel kapcsolatos szabályzatot is fel lehet venni és üzembe lehet helyezni a felhasználói csoportok számára. Önnek kell eldöntenie, hogy van-e szükség használati feltételekkel kapcsolatos szabályzatokra, illetve ha igen, akkor a szervezetben kinek a feladata ezeket kidolgozni.
+A [használati feltételekben](terms-and-conditions-create.md) lehet feltüntetni azokat a szabályzatokat vagy kikötéseket, amelyeket a végfelhasználónak el kell fogadnia az eszköze regisztrálása előtt. Az Intune-ban több használati feltételekkel kapcsolatos szabályzatot is fel lehet venni és üzembe lehet helyezni a felhasználói csoportok számára.
 
--   Útmutató [használati feltételekkel kapcsolatos szabályzatok létrehozásához](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) az Intune-ban. Alább láthat egy példát a használati feltételekkel kapcsolatos szabályzatok dokumentálására.
+Önnek kell eldöntenie, hogy van-e szükség használati feltételekkel kapcsolatos szabályzatokra, illetve ha igen, akkor a szervezetben kinek a feladata ezeket kidolgozni. Alább láthat egy példát a használati feltételekkel kapcsolatos szabályzatok dokumentálására.
 
 | **Feltételek és kikötések neve** | **Használati eset** | **Célcsoport** |
 |:---:|:---:|:---:|
 | Vállalati feltételek | Vállalati | Vállalati felhasználók |                 
 | BYOD-feltételek | BYOD | BYOD-felhasználók |                
 
+
+A saját felhasználói csoportjai számára feltüntetni kívánt használati feltételek feltérképezéséhez [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ### <a name="configuration-policies"></a>Konfigurációs szabályzatok
 
-A konfigurációs szabályzatok az eszközök biztonsági beállításainak és szolgáltatásainak kezelésére használhatók. A konfigurációs szabályzatok megtervezésekor a használati esetek követelményeit taglaló szakasz alapján határozza meg az Intune-eszközökhöz szükséges konfigurációkat. Dokumentálja, hogy mely beállításokat és hogyan kell konfigurálni, továbbá hogy ezek mely felhasználói vagy eszközcsoportokra vonatkoznak.
+A konfigurációs szabályzatok az eszközök biztonsági beállításainak és szolgáltatásainak kezelésére használhatók. A konfigurációs szabályzatok megtervezésekor a használati esetek követelményeit taglaló szakasz alapján határozza meg az Intune-eszközökhöz szükséges konfigurációkat. Dokumentálja a beállításokat, és hogy hogyan kell azokat konfigurálni. Azt is dokumentálja, hogy ezek mely felhasználói vagy eszközcsoportokra vonatkoznak.
 
-Platformonként legalább egy konfigurációs szabályzatot célszerű létrehozni, de szükség esetén többet is lehet. Az alábbi példában négy különféle konfigurációs szabályzat látható, különböző platformokhoz és használatieset-forgatókönyvekhez.
+Platformonként legalább egy konfigurációs szabályzatot célszerű létrehozni. Szükség esetén platformonként több konfigurációs szabályzatot is létrehozhat. Az alábbi példában négy különféle konfigurációs szabályzat látható, különböző platformokhoz és használatieset-forgatókönyvekhez.
 
 | **Szabályzat neve** | **Eszközplatform** | **Beállítások** | **Célcsoport** |   
 |:---:|:---:|:---:|:---:|
@@ -258,9 +259,12 @@ Platformonként legalább egy konfigurációs szabályzatot célszerű létrehoz
 | BYOD – iOS  | iOS | PIN-kód szükséges. Hossz: 4 | BYOD-eszközök |
 | BYOD – Android  | Android | PIN-kód szükséges. Hossz: 4 | BYOD-eszközök |
 
+
+A saját konfigurációs szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ### <a name="profiles"></a>Profilok
 
-A végfelhasználók profilok segítségével kapcsolódnak a vállalati adatokhoz. Az Intune számos profiltípust támogat. A [profilok](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune) konfigurálásával kapcsolatos döntéseket a használati esetek és követelményeik alapján hozza meg. Az eszközprofilok platformtípusok szerint vannak kategóriákba sorolva, és célszerű belefoglalni őket a tervdokumentációba.
+A végfelhasználók profilok segítségével kapcsolódnak a vállalati adatokhoz. Az Intune számos profiltípust támogat. A profilok konfigurálásával kapcsolatos döntéseket a használati esetek és követelményeik alapján hozza meg. Az eszközprofilok platformtípusok szerint vannak kategóriákba sorolva, és célszerű belefoglalni őket a tervdokumentációba.
 
 -   Tanúsítványprofilok
 
@@ -272,7 +276,7 @@ A végfelhasználók profilok segítségével kapcsolódnak a vállalati adatokh
 
 Vizsgáljuk meg ezeket a profiltípusokat részletesebben.
 
-##### <a name="certificate-profiles"></a>Tanúsítványprofilok
+#### <a name="certificate-profiles"></a>Tanúsítványprofilok
 
 Az Intune a tanúsítványprofilok alapján bocsát ki tanúsítványokat a felhasználók és eszközök számára. Az Intune a következő típusokat támogatja:
 
@@ -282,10 +286,10 @@ Az Intune a tanúsítványprofilok alapján bocsát ki tanúsítványokat a felh
 
 -   PFX-tanúsítvány
 
-Ajánlott dokumentálni, hogy mely felhasználói csoportoknak van szüksége tanúsítványra, hány tanúsítványprofilra lesz szükség, és mely felhasználói csoportokhoz kell őket telepíteni.
+Ajánlott dokumentálnia, hogy mely felhasználói csoportoknak van szüksége tanúsítványra, hány tanúsítványprofilra lesz szükség, és mely felhasználói csoportokhoz kell őket telepíteni.
 
 >[!NOTE]
-> Ne feledje, hogy a SCEP-tanúsítványokhoz megbízható főtanúsítvány is szükséges. Ezért gondoskodjon róla, hogy minden SCEP-tanúsítványt kapó felhasználó kapjon megbízható főtanúsítványt is. Ha SCEP-tanúsítványokra van szükség, tervezze meg és dokumentálja a szükséges SCEP-tanúsítványsablonokat.
+> Ne feledje, hogy a SCEP-tanúsítványokhoz megbízható főtanúsítvány is szükséges. Ezért gondoskodjon róla, hogy minden SCEP-tanúsítványt kapó felhasználó kapjon megbízható főtanúsítványt is. Ha SCEP-tanúsítványokra van szüksége, tervezze meg és dokumentálja a szükséges SCEP-tanúsítványsablonokat.
 
 Az alábbi példa szemlélteti, hogyan lehet dokumentálni a tanúsítványokat a tervezés folyamán:
 
@@ -294,11 +298,12 @@ Az alábbi példa szemlélteti, hogyan lehet dokumentálni a tanúsítványokat 
 | Legfelső szintű hitelesítésszolgáltató | Vállalati legfelső szintű hitelesítésszolgáltató | Android, iOS, Windows Mobile | Vállalati, BYOD  |                                                           
 | SCEP | Felhasználói tanúsítvány | Android, iOS, Windows Mobile | Vállalati, BYOD |                                                           
 
-##### <a name="wi-fi-profile"></a>Wi-Fi-profil
 
-A Wi-Fi-profilok révén a mobileszközök automatikusan csatlakozhatnak a vezeték nélküli hálózatokhoz. Az Intune-ban az összes támogatott platformhoz lehet Wi-Fi-profilt üzembe helyezni.
+A saját tanúsítványprofiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
--   További tudnivalók [az Intune Wi-Fi-profiltámogatásáról.](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
+#### <a name="wi-fi-profile"></a>Wi-Fi-profil
+
+A Wi-Fi-profilok révén a mobileszközök automatikusan csatlakozhatnak a vezeték nélküli hálózatokhoz. Az Intune-ban az összes támogatott platformhoz lehet Wi-Fi-profilt üzembe helyezni. További tudnivalók [az Intune Wi-Fi-profiltámogatásáról.](wi-fi-settings-configure.md)
 
 Az alábbi példa a Wi-Fi-profilok tervezését szemlélteti:
 
@@ -307,11 +312,12 @@ Az alábbi példa a Wi-Fi-profilok tervezését szemlélteti:
 | Wi-Fi | Ázsiai Wi-Fi-profil | Android | Vállalati, BYOD, ázsiai régió|                                                           
 | Wi-Fi | Észak-amerikai Wi-Fi-profil | Android, iOS, Windows 10 Mobile | Vállalati, BYOD, észak-amerikai régió |                                                           
 
-##### <a name="vpn-profile"></a>VPN-profil
 
-A VPN-profilok révén a felhasználók biztonságosan érhetik el a vállalati hálózatot távolról. Az Intune egyaránt támogatja a natív mobil VPN-kapcsolatokon alapuló és a külső gyártók által készített VPN-profilokat.
+A saját Wi-Fi-profiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
--   További tudnivalók [a VPN-profilokról és az Intune által támogatott gyártókról](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune).
+#### <a name="vpn-profile"></a>VPN-profil
+
+A VPN-profilok révén a felhasználók biztonságosan érhetik el a vállalati hálózatot távolról. Az Intune egyaránt támogatja a natív mobil VPN-kapcsolatokon alapuló és a külső gyártók által készített VPN-profilokat. További tudnivalók [a VPN-profilokról és az Intune által támogatott gyártókról](vpn-settings-configure.md).
 
 Az alábbi példában egy VPN-profil dokumentálását szemléltetjük.
 
@@ -320,11 +326,11 @@ Az alábbi példában egy VPN-profil dokumentálását szemléltetjük.
 | VPN | VPN, Cisco, bármilyen csatlakozási profil | Android, iOS, Windows 10 Mobile | Vállalati, BYOD, Észak-Amerika és Németország|                                                           
 | VPN | Pulse Secure | Android | Vállalati, BYOD, ázsiai régió |                                                           
 
-##### <a name="email-profile"></a>E-mail-profil
 
-Az e-mail-profilokkal a levelezőprogramokban automatikusan be lehet állítani a kapcsolati adatokat és az e-mail-konfigurációt. Az Intune csak bizonyos eszközökön támogatja az e-mail-profilokat.
+A saját VPN-profiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+#### <a name="email-profile"></a>E-mail profil
 
--   További tudnivalók az [e-mail-profilokról](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) és a támogatott platformokról.
+Az e-mail-profilokkal automatikusan be lehet állítani a levelezőprogramokban a kapcsolati adatokat és az e-mail-konfigurációt. Az Intune csak bizonyos eszközökön támogatja az e-mail-profilokat. További tudnivalók az [e-mail-profilokról és a támogatott platformokról](email-settings-configure.md).
 
 Az alábbi példában az e-mail-profilok dokumentálását szemléltetjük:
 
@@ -333,19 +339,21 @@ Az alábbi példában az e-mail-profilok dokumentálását szemléltetjük:
 | E-mail-profil | iOS-es e-mail-profil | iOS | Vállalati – Infómunkás BYOD |                                                           
 | E-mail-profil | Android Knox e-mail-profil | Android Knox | BYOD |
 
+
+A saját e-mail-profiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="apps"></a>Alkalmazások
 
-Az Intune-nal többféleképpen is el lehet juttatni alkalmazásokat a felhasználókhoz vagy az eszközökre. Az eljuttatott alkalmazás lehet szoftvertelepítő, nyilvános alkalmazás-áruházból származó vagy külső hivatkozással elérhető alkalmazás, vagy felügyelt iOS-alkalmazás. Az egyesével történő alkalmazástelepítésen kívül a mennyiségi licencelésű alkalmazásokat az iOS és a Windows mennyiségi licencelési programjai keretében is lehet felügyelni és telepíteni. Alább találhat további tájékoztatást az alkalmazások és a mennyiségi licencelésű programok Intune-támogatásáról.
+Az Intune-nal többféleképpen is eljuttathat alkalmazásokat a felhasználókhoz vagy az eszközökre. Az alkalmazás többek között szoftvertelepítő, nyilvános alkalmazás-áruházból származó vagy külső hivatkozással elérhető alkalmazás, illetve felügyelt iOS-alkalmazás lehet. Az egyesével történő alkalmazástelepítésen felül a mennyiségi licencelésű alkalmazásokat az iOS és a Windows mennyiségi licencelési programjai keretében is felügyelheti és telepítheti. További információk az alábbiakról:
 
--   További tudnivalók [az alkalmazástípusokról](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+-   [Az eljuttatható alkalmazások típusai](app-management.md)
 
--   További tudnivalók [az iOS Volume Purchase Program for Business (VPP) programról](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune).
+-   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   További tudnivalók [a Vállalati Windows Áruházról](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+-   [Vállalati Windows Áruházbeli alkalmazások](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Alkalmazástípusok követelményei
 
-Mivel az alkalmazásokat felhasználók és eszközök számára is lehet telepíteni, célszerű eldönteni, hogy mely alkalmazásokat fogja felügyelni az Intune. A lista összeállításakor igyekezzen megválaszolni a következő kérdéseket:
+Mivel az alkalmazásokat felhasználók és eszközök számára is lehet telepíteni, célszerű eldöntenie, hogy mely alkalmazásokat felügyelje az Intune. A lista összeállításakor igyekezzen megválaszolni a következő kérdéseket:
 
 -   Igényelnek-e az alkalmazások integrációt a felhőszolgáltatásokkal?
 
@@ -357,24 +365,25 @@ Mivel az alkalmazásokat felhasználók és eszközök számára is lehet telep�
 
 -   Igényelnek-e az alkalmazások internet-hozzáférést a felhasználói eszközökön?
 
--   Nyilvánosan elérhetők-e az alkalmazások valamilyen alkalmazás-áruházban, vagy egyedi üzletági alkalmazások?
+-   Elérhetők-e az alkalmazások nyilvánosan valamilyen alkalmazás-áruházban, vagy egyedi üzletági (LOB-) alkalmazások?
 
-
->[!TIP]
-> Tekintse át [az Intune által támogatott különféle alkalmazástípusokat](/intune-classic/deploy-use/add-apps).
 
 #### <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok
 
-Az alkalmazásvédelmi szabályzatok azt definiálják, hogyan kezelheti egy alkalmazás a vállalati adatokat, így minimalizálják az adatvesztést. Az Intune minden mobilalkalmazás-felügyelettel kompatibilis alkalmazás esetén támogatja az alkalmazásvédelmi szabályzatok használatát. Az alkalmazásvédelmi szabályzat kialakításakor meg kell határoznia, hogy az adott alkalmazásban hogyan korlátozza a vállalati adatok elérését. Célszerű előtt megismerkedni az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) működésével. Az alábbi példával a meglévő alkalmazások és a szükséges védelem dokumentálását mutatjuk be.
+Az alkalmazásvédelmi szabályzatok azt definiálják, hogyan kezelheti egy alkalmazás a vállalati adatokat, így minimalizálják az adatvesztést. Az Intune minden mobilalkalmazás-felügyelettel kompatibilis alkalmazás esetén támogatja az alkalmazásvédelmi szabályzatok használatát. Az alkalmazásvédelmi szabályzat kialakításakor meg kell határoznia, hogy az adott alkalmazásban hogyan szeretné korlátozni a vállalati adatok elérését. Célszerű megismerkednie az [alkalmazásvédelmi szabályzatok](app-protection-policy.md) működésével. Az alábbi példával a meglévő alkalmazások és a szükséges védelem dokumentálását mutatjuk be.
 
 | **Alkalmazás** | **Rendeltetés** | **Platformok** | **Használati eset** | **Alkalmazásvédelmi szabályzat** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Elérhető | iOS | Vállalati – Vezetők | Nem lehet jailbreakelni, fájlok titkosítása |                                                         
 | Word | Elérhető | iOS, Android – Samsung Knox, nem Knox, Windows 10 Mobile | Vállalati, BYOD | Nem lehet jailbreakelni, fájlok titkosítása |                                                         
 
+
+A saját alkalmazásvédelmi szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="compliance-policies"></a>Megfelelőségi szabályzatok
 
-A megfelelőségi szabályzatok határozzák meg, hogy egy adott eszköz megfelel-e bizonyos követelményeknek. Az Intune megfelelőségi szabályzatokkal határozza meg, hogy az eszközök megfelelőnek minősülnek-e, vagy sem. Ezt követően a megfelelőségi állapot alapján lehet korlátozni a vállalati erőforrások elérését. Ha feltételes hozzáférés szükséges, érdemes [eszközmegfelelőségi szabályzatot](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) tervezni. A követelmények és a használati esetek alapján döntse el, hogy hány eszközmegfelelőségi szabályzatra van szükség, és hogy ezek mely felhasználói csoportokra fognak vonatkozni. Ezenkívül azt is meg kell határozni, hogy mennyi ideig lehet egy eszköz offline állapotban, mielőtt nem megfelelőnek minősülne.
+A megfelelőségi szabályzatok határozzák meg, hogy egy adott eszköz megfelel-e bizonyos követelményeknek. Az Intune megfelelőségi szabályzatokkal határozza meg, hogy az eszközök megfelelőnek minősülnek-e, vagy sem. Ezt követően a megfelelőségi állapot alapján lehet korlátozni vagy engedélyezni a vállalati erőforrások elérését. Ha feltételes hozzáférés szükséges, érdemes [eszközmegfelelőségi szabályzatot](device-compliance.md) terveznie.
+
+A követelmények és a használati esetek alapján döntse el, hogy hány eszközmegfelelőségi szabályzatra van szüksége, és hogy ezek mely felhasználói csoportokra fognak vonatkozni. Ezenkívül azt is el kell döntenie, hogy mennyi ideig lehet egy eszköz offline állapotban, mielőtt nem megfelelőnek minősülne.
 
 Az alábbi példa egy megfelelőségi szabályzat tervezését szemlélteti:
 
@@ -382,21 +391,17 @@ Az alábbi példa egy megfelelőségi szabályzat tervezését szemlélteti:
 |:---:|:---:|:---:|:---:|
 | Megfelelőségi szabályzat | iOS, Android – Samsung Knox, nem Knox, Windows 10 Mobile | PIN-kód szükséges, nem lehet jailbreakelni | Vállalati, BYOD |
 
+
+A saját megfelelőségi szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Feltételes hozzáférési szabályzatok
 
-A Feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi a vállalati erőforrások elérését. Az Intune a teljes Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. El kell döntenie, hogy van-e szükség feltételes hozzáférésre, és hogy az mit fog védeni.
+A feltételes hozzáférés csak a megfelelő eszközök számára engedélyezi az e-mailek vagy más vállalati erőforrások elérését. Az Intune a Enterprise Mobility + Security (EMS) csomaggal együttműködve szabályozza a vállalati erőforrások elérését. Önnek kell eldöntenie, hogy van-e szükség feltételes hozzáférésre, és hogy az mit fog védeni. További információk a [feltételes hozzáférésről](conditional-access.md).
 
--   További tudnivalók [a feltételes hozzáférésről](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)
-
-Online elérés esetén határozza meg, hogy mely platformokra és felhasználói csoportokra fog vonatkozni feltételes hozzáférési szabályzat.
-
-Ezenkívül azt is el kell dönteni, hogy kell-e telepíteni/konfigurálni az Intune szolgáltatás-összekötőt az Exchange Online-hoz vagy a helyszíni Exchange-hez.
-
-További tudnivalók az Intune szolgáltatás-összekötők telepítéséről és konfigurálásáról:
+Online elérés esetén döntse el, hogy mely platformokra és felhasználói csoportokra fog vonatkozni feltételes hozzáférési szabályzat. Ezenkívül azt is el kell döntenie, hogy kell-e telepítenie/konfigurálnia az Intune szolgáltatás-összekötőt az Exchange Online-hoz vagy a helyszíni Exchange-hez. További tudnivalók az Intune szolgáltatás-összekötők telepítéséről és konfigurálásáról: <!---these links are correct--->
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
--   [Helyszíni Exchange](/intune-classic/deploy-use/intune-on-premises-exchange-connector)
+-   [Helyszíni Exchange](exchange-connector-install.md)
 
 Az alábbi példa a feltételes hozzáférési szabályzatok dokumentálását szemlélteti:
 
@@ -405,6 +410,8 @@ Az alábbi példa a feltételes hozzáférési szabályzatok dokumentálását s
 | Exchange Online | iOS, Android | A nem megfelelő eszközök letiltása az Intune által támogatott platformokon | Vállalati, BYOD |
 | SharePoint Online | iOS, Android |  | Vállalati, BYOD |
 
-## <a name="next-section"></a>Következő szakasz
+A saját feltételes hozzáférési szabályzatainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
+## <a name="next-steps"></a>További lépések
 
 A következő szakasz [az Intune implementálási folyamatához](planning-guide-onboarding.md) nyújt útmutatást.

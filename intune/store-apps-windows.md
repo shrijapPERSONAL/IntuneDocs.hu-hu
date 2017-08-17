@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>A Windows 10-es Céges portál alkalmazás manuális hozzárendelése
-A végfelhasználók a Windows Áruházból telepíthetik a Céges portál alkalmazást eszközkezelés és alkalmazástelepítés céljára. Ha azonban a cég megköveteli, hogy hozzárendelje a Céges portál alkalmazást, Ön akkor is hozzárendelheti manuálisan, közvetlenül az Intune-ból a Windows 10-es Céges portál alkalmazást, ha az Intune-t nem integrálta a Vállalati Windows Áruházzal.
+A végfelhasználók a Microsoft Áruházból telepíthetik a Céges portál alkalmazást eszközkezelés és alkalmazástelepítés céljára. Ha azonban a cég megköveteli, hogy hozzárendelje a Céges portál alkalmazást, Ön akkor is hozzárendelheti manuálisan, közvetlenül az Intune-ból a Windows 10-es Céges portál alkalmazást, ha az Intune-t nem integrálta a Vállalati Microsoft Áruházzal.
 
  > [!NOTE]
  > Ha ezt a lehetőséget választja, manuális frissítést kell hozzárendelnie minden alkalommal, amikor új frissítés válik elérhetővé az alkalmazáshoz.
 
-1. Jelentkezzen be [Vállalati Windows Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
+1. Jelentkezzen be [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
 2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
 3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
 ![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Az így aláírt és hozzárendelt Windows 10-es Céges portál alkalmazás eset
 Itt ismertetjük az alkalmazás aláírásának és hozzárendelésének ezt a módját:
 
 1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) oldalról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10-hez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) oldalra.
-2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Windows Áruházból a fenti útmutató szerint.  
+2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Microsoft Áruházból a fenti útmutató szerint.  
 3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
 
 |Paraméter | Leírás|

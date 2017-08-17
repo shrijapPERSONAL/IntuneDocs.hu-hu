@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Alkalmazásalapú feltételes hozzáférés az Intune-nal
 
@@ -26,18 +26,20 @@ ms.lasthandoff: 07/01/2017
 
 Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policy.md) védheti vállalati adatait az Intune-ban regisztrált eszközökön. Az alkalmazásvédelmi szabályzatokat emellett a munkatársak tulajdonában álló, az Intune-ban felügyeletre nem regisztrált eszközökön is alkalmazhatja. Bár ebben az esetben nem a cég felügyeli az eszközt, mégis fontos, hogy a vállalati adatok és erőforrások védve legyenek.
 
-Az alkalmazásalapú feltételes hozzáférés és a mobileszköz-felügyelet biztonsági réteget képez, mivel garantálja, hogy csak az Intune alkalmazásvédelmi szabályzatait támogató mobilalkalmazások férhetnek hozzá az Exchange Online-hoz és más Office 365-szolgáltatásokhoz.
+Az alkalmazásalapú feltételes hozzáférés és a mobileszköz-felügyelet egy biztonsági réteget ad hozzá annak biztosításával, hogy csak az Intune alkalmazásvédelmi szabályzatait támogató mobilalkalmazások férhessenek hozzá az Exchange Online-hoz és más Office 365-szolgáltatásokhoz.
 
 > [!NOTE]
 > A felügyelt alkalmazásra alkalmazásvédelmi szabályzatok vonatkoznak, és az Intune-nal felügyelhető.
 
-Ha csak a Microsoft Outlook alkalmazásnak engedélyezi az Exchange Online elérését, blokkolhatja az iOS és az Android beépített levelezőalkalmazásait. Ezenfelül blokkolhatja az Intune alkalmazásvédelmi szabályzattal el nem látott alkalmazások SharePoint Online-elérését is.
+Azzal, hogy csak a Microsoft Outlook alkalmazásnak engedélyezi az Exchange Online elérését, blokkolhatja az iOS és az Android beépített levelezőalkalmazásait. Ezenfelül blokkolhatja az Intune alkalmazásvédelmi szabályzattal el nem látott alkalmazások SharePoint Online-elérését is.
 
 ## <a name="prerequisites"></a>Előfeltételek
-Alkalmazásalapú feltételes hozzáférési szabályzat létrehozásához szükséges:
+Alkalmazásalapú feltételes hozzáférési szabályzat létrehozásához az alábbiak szükségesek:
 
-- **Enterprise Mobility + Security vagy Azure Active Directory Premium szintű előfizetés**, a felhasználóknak pedig kell, hogy legyen EMS- vagy AD-licence.
-    - Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
+- **Enterprise Mobility + Security (EMS)** vagy **Prémium szintű Azure Active Directory- (AD-) előfizetés**
+- EMS- vagy Azure AD-licenc a felhasználók számára
+
+További információt az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását](https://azure.microsoft.com/pricing/details/active-directory/) ismertető lapon talál.
 
 ## <a name="supported-apps"></a>Támogatott alkalmazások
 
@@ -53,24 +55,22 @@ Alkalmazásalapú feltételes hozzáférési szabályzat létrehozásához szük
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > Az alkalmazásalapú feltételes hozzáférés [üzletági alkalmazásokkal is használható](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), de ezeknek az [Office 365 modern hitelesítését](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kell használniuk.
+Az alkalmazásalapú feltételes hozzáférés [üzletági (LOB-) alkalmazásokkal is használható](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), de ezeknek az [Office 365 modern hitelesítését](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kell használniuk.
 
 ## <a name="how-app-based-conditional-access-works"></a>Az alkalmazásalapú feltételes hozzáférés működése
 
 Ebben a példában a rendszergazda alkalmazásvédelmi szabályzatokkal látta el az Outlook alkalmazást, majd egy feltételes hozzáférési szabállyal felvette az Outlookot a céges levelezés elérésére használható jóváhagyott alkalmazások listájára.
 
-> [!NOTE] 
+> [!NOTE]
 > Az alábbi folyamatábra-struktúra más felügyelt alkalmazásokhoz is használható.
 
-![Folyamatábra: alkalmazásalapú hitelesítés az Intune-nal](./media/ca-intune-common-ways-3.png)
+![Folyamatábra: alkalmazásalapú feltételes hozzáférés az Intune-nal](./media/ca-intune-common-ways-3.png)
 
 1.  A felhasználó az Outlook alkalmazásból hitelesítést próbál végezni az Azure AD-val.
 
 2.  A felhasználó az első hitelesítési kísérletkor átirányítódik az alkalmazás-áruházba, ahonnan közvetítő alkalmazást kell telepítenie. Ez lehet az iOS-es Microsoft Authenticator vagy az androidos eszközökre készült Microsoft Intune vállalati portál.
 
-    > [!NOTE]
-    > Ha ebben a szituációban egy felhasználó natív levelezőalkalmazást próbál használni, az alkalmazás-áruházba lesz átirányítva, hogy telepítse az Outlookot.
+ Ha egy felhasználó natív levelezőalkalmazást próbál használni, a rendszer az alkalmazásáruházba irányítja át, hogy telepíthesse az Outlookot.
 
 3.  A közvetítő alkalmazás települ az eszközre.
 
@@ -80,7 +80,7 @@ Ebben a példában a rendszergazda alkalmazásvédelmi szabályzatokkal látta e
 
 6.  A közvetítő alkalmazás a felhasználó-hitelesítési folyamat keretében elküldi az alkalmazás ügyfél-azonosítóját az Azure AD-nek, amely ellenőrzi, hogy szerepel-e a szabályzat engedélyezési listáján.
 
-7.  Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a szabályzat engedélyezési listáján, az Azure AD megtagadja az elérését.
+7.  Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a listán, az Azure AD nem engedélyezi az elérését.
 
 8.  Az Outlook alkalmazás az Outlook felhőszolgáltatással kapcsolatba lépve kezdeményezi az Exchange Online-nal való kommunikációt.
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -49,6 +49,11 @@ Managed Browser-szabályzatokat a következő eszköztípusokhoz hozhat létre:
 -   Android 4 vagy újabb rendszerű eszközök
 
 -   iOS 8.0 vagy újabb rendszerű eszközök
+
+>[!IMPORTANT]
+>2017 októberétől az Intune Managed Browser alkalmazás Androidon kizárólag az Android 4.4-es vagy újabb rendszerű eszközöket fogja támogatni. Az Intune Managed Browser alkalmazás iOS-en kizárólag az iOS 9.0-s vagy újabb rendszerű eszközöket fogja támogatni.
+>Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
+
 
 Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
 
@@ -84,19 +89,15 @@ A beállításokat Azure AD-beli felhasználói csoportokhoz lehet hozzárendeln
 
 Az Intune Managed Browser és az [Azure AD Alkalmazásproxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) együtt használva támogathatja az iOS- és Android-eszközök felhasználóit a következő helyzetekben:
 
-- Egy felhasználó letölti a Microsoft Outlook alkalmazást és bejelentkezik.  Az Intune alkalmazásvédelmi szabályzatai automatikusan érvényre jutnak. Titkosítják az elmentett adatokat, és megakadályozzák, hogy a felhasználó vállalati fájlokat továbbítson az eszközön lévő nem felügyelt alkalmazások vagy helyek felé. Kiköthető, hogy amikor a felhasználó egy intranetes webhelyre mutató hivatkozásra kattint az Outlookban, akkor a hivatkozás más böngésző helyett a Managed Browser alkalmazásban nyíljon meg.
-A Managed Browser felismeri, hogy az adott intranetes webhely az Alkalmazásproxyn keresztül megnyílt a felhasználónak. A felhasználót automatikusan az Alkalmazásproxyn keresztül irányítja át, hogy csak minden lehetséges többtényezős hitelesítés és feltételes hozzáférés ellenőrzése után érhesse el az intranetes helyet. Ez a webhely, amely távoli felhasználók számára korábban nem volt megtalálható, most már elérhető, és az Outlook-beli hivatkozás is az elvárható módon működik.  
-
-- Egy távoli felhasználó megnyitja a Managed Browser alkalmazást, és a belső URL-cím segítségével megnyit egy intranetes webhelyet. A Managed Browser felismeri, hogy az adott intranetes webhely az Alkalmazásproxyn keresztül megnyílt a felhasználónak. A felhasználót automatikusan az Alkalmazásproxyn keresztül irányítja át, hogy csak minden lehetséges többtényezős hitelesítés és feltételes hozzáférés ellenőrzése után érhesse el az intranetes helyet.
-Ez a webhely, amely távoli felhasználók számára korábban nem volt megtalálható, most már elérhető.  
+- Egy felhasználó letölti a Microsoft Outlook alkalmazást és bejelentkezik. Az Intune alkalmazásvédelmi szabályzatai automatikusan érvényre jutnak. Titkosítják az elmentett adatokat, és megakadályozzák, hogy a felhasználó vállalati fájlokat továbbítson az eszközön lévő nem felügyelt alkalmazások vagy helyek felé. Kiköthető, hogy amikor a felhasználó egy intranetes webhelyre mutató hivatkozásra kattint az Outlookban, akkor a hivatkozás más böngésző helyett a Managed Browser alkalmazásban nyíljon meg. A Managed Browser felismeri, hogy az adott intranetes webhely az Alkalmazásproxyn keresztül megnyílt a felhasználónak. A felhasználót automatikusan az Alkalmazásproxyn keresztül irányítja át, hogy csak minden lehetséges többtényezős hitelesítés és feltételes hozzáférés ellenőrzése után érhesse el az intranetes helyet. Ez a webhely, amely távoli felhasználók számára korábban nem volt megtalálható, most már elérhető, és az Outlook-beli hivatkozás is az elvárható módon működik.
+- Egy távoli felhasználó megnyitja a Managed Browser alkalmazást, és a belső URL-cím segítségével megnyit egy intranetes webhelyet. A Managed Browser felismeri, hogy az adott intranetes webhely az Alkalmazásproxyn keresztül megnyílt a felhasználónak. A felhasználót automatikusan az Alkalmazásproxyn keresztül irányítja át, hogy csak minden lehetséges többtényezős hitelesítés és feltételes hozzáférés ellenőrzése után érhesse el az intranetes helyet. Ez a webhely, amely távoli felhasználók számára korábban nem volt megtalálható, most már elérhető.
 
 ### <a name="before-you-start"></a>Előkészületek
 
-- Győződjön meg róla, hogy belső alkalmazásait az Azure AD Alkalmazásproxyn keresztül teszi közzé.
-- Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
-- A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
-- A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
-- A felhasználók csak a hozzájuk rendelt alkalmazások automatikus alkalmazásproxyra irányítását láthatják.
+- Állítsa be a belső alkalmazásokat az Azure AD alkalmazásproxyban.
+    - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
+    - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
+    - A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. lépés: Automatikus átirányítás engedélyezése az Outlookból a Managed Browserhez
 Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyben engedélyezett a **Webes tartalom megjelenítésének korlátozása a Managed Browser alkalmazásra** beállítás.

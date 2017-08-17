@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8f938e81740d1bb08e0e9995cab94329c2fe5e7
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: fced0a52db719fe2228d6cd91786b7de8f539f57
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Mennyiségi programban vásárolt alkalmazások és könyvek kezelése a Microsoft Intune-nal
 
@@ -33,8 +33,8 @@ A Microsoft Intune segítséget nyújt az ilyen program keretében vásárolt al
 
 ## <a name="which-types-of-apps-and-books-can-you-manage"></a>Milyen típusú alkalmazásokat és könyveket lehet így kezelni?
 
-Az Intune-nal kezelheti az iOS-áruházból mennyiségi programban vásárolt alkalmazásokat és könyveket, valamint azokat az alkalmazásokat, amelyeket a Vállalati Windows Áruházból vásárolt. A következő témakörökből tájékozódhat arról, hogy miképpen kezelheti a különféle áruházakból származó licencbe vett alkalmazásokat:
+Az Intune-nal felügyelheti az iOS-áruházból mennyiségi programban vásárolt alkalmazásokat és könyveket, valamint azokat az alkalmazásokat, amelyeket a Vállalati Microsoft Áruházból vásárolt. A következő témakörökből tájékozódhat arról, hogy miképpen kezelheti a különféle áruházakból származó licencbe vett alkalmazásokat:
 
 - [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](vpp-apps-ios.md)
-- [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások felügyelete](windows-store-for-business.md)
+- [A Vállalati Microsoft Áruházból mennyiségi programban vásárolt alkalmazások felügyelete](windows-store-for-business.md)
 - [iOS-es e-könyvek kezelése](vpp-ebooks-ios.md)

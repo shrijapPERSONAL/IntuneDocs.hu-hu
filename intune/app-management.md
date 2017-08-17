@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -87,7 +87,7 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
 ### <a name="monitor"></a>Figyelő
 - **Licencelt alkalmazások** – Mennyiségi licencszerződés keretében, az alkalmazás-áruházakból vásárolt alkalmazások megtekintése, hozzárendelése és figyelése.
-    - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
+    - [A Vállalati Microsoft Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
 - **Felderített alkalmazások** – Az Intune által hozzárendelt, és az eszközön telepített összes alkalmazás megjelenítése.
 - **Alkalmazástelepítési állapot** – Egy Ön által létrehozott alkalmazás-hozzárendelés állapotát jeleníti meg.
 - **Alkalmazásvédelem állapota** – A kiválasztott felhasználó egy alkalmazásvédelmi szabályzatának állapotát jeleníti meg.
@@ -97,7 +97,7 @@ További információkért lásd: [Alkalmazások figyelése](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Vállalati Windows Áruház** – A Vállalati Windows Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
-    - [A Vállalati Windows Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
+- **Vállalati Microsoft Áruház** – A Vállalati Microsoft Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
+    - [A Vállalati Microsoft Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
 - **A Céges portál védjegye** – A Céges portál testreszabása saját céges védjegy megadásával.
     - [Céges portál konfigurálása](company-portal-app.md)
