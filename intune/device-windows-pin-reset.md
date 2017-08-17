@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>A Microsoft PIN-kód-átállítási szolgáltatásával (Microsoft PIN Reset Service) integrált Windows-eszközök PIN-kódjának alaphelyzetbe állítása az Intune használatával
 
 A Windows-eszközök PIN-kódját alaphelyzetbe állító funkció a Microsoft PIN-kód-átállítási szolgáltatásával (Microsoft PIN Reset Service) integrálva lehetővé teszi új PIN-kód generálását a Windows 10 mobil verzióját futtató eszközökhöz. Az eszközön a Windows 10 alkotói frissítésének vagy újabb verziónak kell futnia.
+
+## <a name="supported-platforms"></a>Támogatott platformok
+
+- Windows – támogatott a Windows 10 Creators Update vagy újabb verzióin (Azure AD-hoz csatlakozott)
+- Windows Phone – nem támogatott
+- iOS – nem támogatott
+- macOS – nem támogatott
+- Android – nem támogatott
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -40,13 +48,14 @@ Ahhoz, hogy távolról alaphelyzetbe állíthassa a felügyelt Windows-eszközö
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Windows-eszközök konfigurálása a PIN-kód alaphelyzetbe állításához
 
-A PIN-kód alaphelyzetbe állításának beállításához a felügyelt Windows-eszközökön engedélyeznie kell a funkciót egy [Intune Windows 10-es egyéni eszközszabályzat](custom-settings-windows-10.md) használatával. A szabályzat az alábbi Windows konfigurációszolgáltatók (CSP-k) segítségével konfigurálható:
+A PIN-kód alaphelyzetbe állításának beállításához a felügyelt Windows-eszközökön engedélyeznie kell a funkciót egy [Intune Windows 10-es egyéni eszközszabályzat](custom-settings-windows-10.md) használatával. A szabályzat az alábbi Windows szabályzatkonfigurációs szolgáltató (CSP) segítségével konfigurálható:
 
 
-- **Felhasználókhoz** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Eszközökhöz** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Eszközök esetén** - **./Device/Vendor/MSFT/PassportForWork/*bérlőazonosító*/Policies/EnablePinRecovery**
 
-Mindkét CSP esetében **True** értéket kell beállítani.
+A *bérlőazonosító* az Azure Active Directory címtár-azonosítójára hivatkozik, amelyet az Azure Active Directory **Tulajdonságok** lapjáról tudhat meg.
+
+Állítsa ennek a CPS-nek az értékét **True**-ra.
 
 ## <a name="steps-to-reset-the-passcode"></a>A PIN-kód alaphelyzetbe állításának lépései
 
