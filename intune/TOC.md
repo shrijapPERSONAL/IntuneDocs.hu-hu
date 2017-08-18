@@ -17,11 +17,12 @@
 ## [Ismert problémák](known-issues.md)
 ## [Támogatás kérése](get-support.md)
 
-# [Első lépések](get-started-evaluation.md)
-## [Csoport létrehozása](get-started-groups.md)
+# [Ismerkedés az Intune-nal](get-started-evaluation.md)
+## [Navigálás az Azure Portalon](get-started-azure.md)
 ## [Felhasználó létrehozása](get-started-users.md)
-## [Eszközök regisztrálása](get-started-enroll.md)
+## [Csoport létrehozása](get-started-groups.md)
 ## [Szabályzatok hozzárendelése](get-started-policies.md)
+## [Eszközök regisztrálása](get-started-enroll.md)
 ## [Alkalmazások hozzárendelése](get-started-apps.md)
 
 
