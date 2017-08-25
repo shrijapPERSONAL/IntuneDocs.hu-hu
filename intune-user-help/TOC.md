@@ -1,16 +1,111 @@
 # Az Intune felhasználói súgója
+
 ## [Felügyelt eszközök használata](use-managed-devices-to-get-work-done.md)
+
 ## [Milyen információkat tekinthet meg a cégem az Intune-nal? ](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
 ## [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-cpwebsite.md)
+
 ## [Hogyan jelentkezhet be a Céges portálra?](sign-in-to-the-company-portal.md)
+
 ## [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
 ### [Mi történik, ha Android-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### [Az eszköz regisztrálása](enroll-your-device-in-Intune-android.md)
+#### [Eszköz regisztrálása az Android for Workben](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-android.md)
+### [Az eszköz titkosítása](encrypt-your-device-android.md)
+### [PIN-kód vagy jelszó beállítása](set-your-pin-or-password-android.md)
+### [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
+### [Zárolási idő beállítása](set-the-amount-of-time-before-your-device-is-locked-android.md)
+### [VPN telepítése](install-your-companys-virtual-private-network-VPN-android.md)
+### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-android.md)
+### [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+#### [Az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-android.md)
+#### [Az eszköz regisztrációjának törlése, ha nem fogadta el a használati feltételeket](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
+#### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
+
+#### [Problémák megoldása naplók segítségével]
+##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+##### [Naplók elküldése e-mailben](send-logs-to-your-it-admin-by-email-android.md)
+##### [Naplók elküldése USB-kábelen](send-logs-to-your-it-admin-using-cable-android.md)
+##### [Regisztrációs hibák beküldése](send-enrollment-errors-to-your-it-admin-android.md)
+
+### Operációs rendszerekkel kapcsolatos kérdések
+#### [Az eszköz frissítése](you-need-to-update-your-android-device.md)
+#### [Nem támogatott verzió](your-android-version-isnt-yet-supported.md)
+#### [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Hiányzik egy szükséges tanúsítvány](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Ismeretlen források kikapcsolása](you-need-to-turn-off-unknown-sources-android.md)
+#### [USB-hibakeresés kikapcsolása](you-need-to-turn-off-usb-debugging-android.md)
+#### [Biztonsági fenyegetések keresésének bekapcsolása](you-need-to-turn-on-scanning-for-security-threats-android.md)
+#### [Nem támogatott biztonsági javítás](you-need-to-update-your-device-OS-security-patch-android.md)
+#### [Eszközök titkosítási hibákkal](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
+
+### Mobile Threat Defense
+#### [Mobile Threat Defense-alkalmazások telepítése](you-are-prompted-to-install-mtd-android.md)
+#### [Fenyegetések elhárítása](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+
+
 ## [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-iOS-or-macOS-device-with-intune.md)
 ### [Mi történik, ha iOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [A Céges portál telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### [iOS-eszköz regisztrálása](enroll-your-device-in-intune-ios.md)
+### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos.md)
+### [macOS-eszköz regisztrálása a Céges portálon](enroll-your-device-in-intune-macos-cp.md)
+
+### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
+### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
+### [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Munkahelyi portál segítségével?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
+### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
+### [Az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-ios.md)
+#### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+### [Az eszköz manuális szinkronizálása](sync-your-device-manually-ios.md)
+
 ### [Az iOS gyakori problémáinak elhárítása](troubleshoot-your-device-iOS.md)
-## [Windows-eszköz használata az Intune-nal](using-your-windows-device-with-intune.md)
+#### [Sérült biztonságú iOS-eszköz ismételt csatlakoztatása](how-to-reconnect-a-compromised-ios-device.md)
+#### [Hibák elküldése a cégnek](send-errors-to-your-it-admin-ios.md)
+#### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-ios.md)
+#### [Hibaüzenet jelent meg](you-get-an-error-while-using-the-company-portal-app-ios.md)
+#### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+#### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-ios.md)
+#### [iOS-eszköz frissítése](you-need-to-update-your-ios-device.md)
+#### [Az általam használt iOS-verzió még nem támogatott](your-ios-version-isnt-yet-supported.md)
+
+### Mobile Threat Defense
+#### [Mobile Threat Defense-alkalmazások telepítése](you-are-prompted-to-install-mtd-ios.md)
+#### [Fenyegetések elhárítása](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+
+
+## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
 ### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Mi történik, ha Windows-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Mi történik, ha a Windows egy másik verziójával rendelkező Windows-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+
+### [Windows-eszköz regisztrálása](enroll-your-device-in-intune-windows.md)
+### [Mi történik a Munkahelyi portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
+
+### [Az eszköz titkosítása](encrypt-your-device-windows.md)
+### [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)
+### [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-windows.md)
+### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+### [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
+### [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
+
 ### [A Windows gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
+#### [Nem tudom regisztrálni a Windows 10-es eszközömet](troubleshoot-your-windows-10-device-windows.md)
+#### [Windows-eszköz frissítése](you-need-to-update-your-windows-device.md)
+#### [Naplók elküldése a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
+#### [Naplók elküldése a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md)
+#### [A Windows verziója jelenleg még nem támogatott](your-windows-version-isnt-yet-supported.md)
+#### [Windowsos titkosítás engedélyezése](you-need-to-enable-windows-encryption.md)
+#### [Eszközömnek kártevőirtó szoftverre van szüksége](your-device-needs-antimalware-software.md)
+#### [Biztonságos rendszerindítás engedélyezése](you-need-to-enable-secure-boot-windows.md)
+#### [Kódintegritás engedélyezése](you-need-to-enable-code-integrity.md)
+
+
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)
