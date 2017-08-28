@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -45,22 +45,24 @@ A 2017 januárja előtt létrehozott Intune-fiókokat migrálni kell, hogy az al
 
 - Vállalati eszközregisztrációs profilok
 - Apple Készülékregisztrációs program
-- Előre regisztrált vállalati eszközök iOS-es sorozatszám-csoportok alapján
-- Eszközregisztráció-kezelők
+- Céges eszközök előzetes bejelentése iOS-es sorozatszám alapján
+- Készülékregisztráció-kezelői fiókok
 - Apple Volume Purchase Program
 
-Mivel ezek a lehetőségek nem kezelhetők egyszerre a klasszikus Silverlight- és az Azure-konzolon is, a migrálás az alábbi hatást váltja ki:
+Mivel ezek a lehetőségek nem kezelhetők egyszerre a klasszikus Intune- (Silverlight-) konzolon és az Azure Portalon is, a migrálás az alábbi hatással lesz rájuk:
 - letiltja őket a klasszikus konzolon
-- engedélyezi őket az Azure-konzolon  
+- engedélyezi őket az Azure Portalon  
+
+2017. szeptember 11-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra 2017. szeptember 11. és 22. között kerül sor. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-konzolon való letiltásától számítva akár hat óráig is tarthat.
 
 Ha a továbbiakban ezeket az Intune-lehetőségeket az Azure Portalon kezeli, vegye figyelembe az alábbi pontokat:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Eltávolítja a céges eszközregisztrációs profilokat az Apple DEP-ben
-Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. A klasszikus Silverlight Intune-konzol ezen funkcióját a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
+Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. Ezt a klasszikus Intune- (Silverlight-) konzolon elérhető funkciót a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Az Apple DEP-token migráláskor visszaáll
 
-Ha a klasszikus Intune-portálon (Silverlight) törli az Apple Device Enrollment Program tokenjét, és nem tölt fel új tokent az Azure Portalra, akkor migráláskor az eredeti token áll vissza az Azure Portalon. A token eltávolításához és a DEP-regisztráció megakadályozásához törölje a tokent az Azure Portalról.
+Ha a klasszikus Intune- (Silverlight-) portálon törli az Apple Készülékregisztrációs program tokenjét, és nem tölt fel új tokent az Azure Portalra, akkor migráláskor az eredeti token áll vissza az Azure Portalon. A token eltávolításához és a DEP-regisztráció megakadályozásához törölje a tokent az Azure Portalról.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
 
@@ -72,7 +74,7 @@ A klasszikus portálról az Azure Portalra migrált szabályzatok állapotinform
 Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-fiókéval megegyező országkódnak megfelelő nyelven jelennek meg, és ahhoz rendelhetők. Az Intune csak az Intune-bérlő országkódjával megegyező iTunes területi beállításról származó alkalmazásokat szinkronizálja. Például ha német Intune-fiókkal rendelkezik, és olyan alkalmazást vásárol, amely csak az Egyesült Államok-beli áruházban érhető el, akkor az Intune nem jeleníti meg az alkalmazást.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Ugyanazon iOS mennyiségi vásárlási programból több példány is feltöltődik
-Ugyanazon VPP-token feltöltéséhez ne kattintson egynél többször a **Feltöltés** gombra. A többszöri kattintás azt eredményezi, hogy másodpéldányok töltődnek fel a VPP-tokenből, és az alkalmazások többször szinkronizálnak ugyanazzal a tokennel. 
+Ugyanazon VPP-token feltöltéséhez ne kattintson egynél többször a **Feltöltés** gombra. A többszöri kattintás azt eredményezi, hogy másodpéldányok töltődnek fel a VPP-tokenből, és az alkalmazások többször szinkronizálnak ugyanazzal a tokennel.
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Az Intune-ban nem regisztrált eszközök esetén csak elsődleges tartományt a
 Ha a **Speciális beállítások** > **Peremhálózat** > **Védett tartomány hozzáadása** beállítás használatával további tartományokat ad meg, a szabályzat nem menthető. A megjelenő hibaüzenetet hamarosan pontosítani fogjuk.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN-ügyfelek támogatása
- 
-A Cisco AnyConnect VPN-ügyfél legújabb kiadása (4.0.07072) jelenleg nem kompatibilis az Intune-nal. Egy jövőbeli Intune-frissítés tartalmazni fogja a kompatibilitást ezzel a verzióval. Addig is azt javasoljuk, hogy használja tovább a jelenlegi verziót, és ne frissítse a Cisco AnyConnect VPN-ügyfelet.
+
+A Cisco AnyConnect VPN-ügyfél legújabb kiadása (4.0.07072) jelenleg nem kompatibilis az Intune-nal.
+Egy jövőbeli Intune-frissítés tartalmazni fogja a kompatibilitást ezzel a verzióval. Addig is azt javasoljuk, hogy használja tovább a jelenlegi verziót, és ne frissítse a Cisco AnyConnect VPN-ügyfelet.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Numerikus jelszó használata macOS Sierra rendszerű eszközökkel
 
@@ -118,16 +121,3 @@ Megadhat olyan [iOS-hez készült alkalmazásvédelmi szabályzatokat](app-prote
 A globális rendszergazdák (más néven a bérlői rendszergazdák) folytathatják a mindennapos adminisztrációs feladataikat különálló Intune- vagy Nagyvállalati mobilitási csomag- (EMS-) licenc nélkül. Ha azonban a szolgáltatást szeretnék használni például a saját eszközük vagy vállalati eszköz regisztrálásához vagy a munkahelyi Intune portál használatához, Intune- vagy EMS-licencre van szükségük.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

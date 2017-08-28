@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -60,18 +60,20 @@ A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatla
 
 Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud az adattárház-API RESTful-végpontjához, és így a jelentéskészítő ügyfél hozzáfér az adatmodellhez. Az alábbi lépéseket követve a Power BI Desktop használatával végezheti el a kapcsolódást, és létrehozhatja saját jelentéseit. Az OData-URL alkalmazásánál a Power BI-n kívül más elemzőeszközöket is használhat, amennyiben az ügyfél OAUTH2.0-hitelesítést, valamint az OData-szabvány 4.0-ás verzióját használja.
 
-1.  A jelentések panelről szerezze be az **OData-URL-t**, például: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Nyissa meg a **Power BI Desktopot**.
-3.  Válassza a **Kezdőlap** > **Adatforrás lekérése** elemet. Válassza az **OData-betöltés** lehetőséget.
-4.  Válassza a **Basic** (Egyszerű) lehetőséget.
-5.  Írja be vagy másolja be az **OData-URL-t** az URL mezőbe.
-6.  Kattintson az **OK**gombra.
-7.  Ha a Power BI Desktop-ügyfélben nem adta meg az Azure AD-s hitelesítő adatait, most adja meg azokat.  
-    a.  Válassza a **Szervezeti fiók** lehetőséget.  
-    b.  Adja meg felhasználónevét és jelszavát.  
-    c.  Kattintson a **Bejelentkezés** elemre.  
-    d.  Kattintson a **Csatlakozás**gombra.  
-8.  Kattintson a **Betöltés** lehetőségre.
+1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
+2.  Nyissa meg a **Microsoft Intune-adattárház API (előnézet)** panelt.
+3. A jelentések panelről szerezze be az egyéni hírcsatorna URL-címét, például: `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. Nyissa meg a **Power BI Desktopot**.
+5. Válassza a **Kezdőlap** > **Adatforrás lekérése** elemet. Válassza az **OData-betöltés** lehetőséget.
+6. Válassza a **Basic** (Egyszerű) lehetőséget.
+7. Írja be vagy másolja be az **OData-URL-t** az URL mezőbe.
+8. Kattintson az **OK**gombra.
+9. Ha a Power BI Desktop-ügyfélben nem adta meg az Azure AD-s hitelesítő adatait, most adja meg azokat.  
+    1.  Válassza a **Szervezeti fiók** lehetőséget.  
+    2.  Adja meg felhasználónevét és jelszavát.  
+    3.  Kattintson a **Bejelentkezés** elemre.  
+    4.  Kattintson a **Csatlakozás**gombra.  
+10. Kattintson a **Betöltés** lehetőségre.
 
 ## <a name="next-steps"></a>További lépések
 
@@ -79,4 +81,4 @@ A fenti módszerrel olyan információkat kaphat a környezetről, mint példáu
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  A bérlő adatai olyan módon vannak felépítve, hogy azokból egyszerűen lehessen információhoz jutni. Az adatok felépítéséről az [Adattárház adatmodellje](reports-ref-data-model.md) című témakörben tájékozódhat. 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  Egy RESTful interfészről is elérheti az adatokat, és belefoglalhatja azokat a saját alkalmazásába. További információért lásd [Adatok beolvasása az adattárház API-ból REST-ügyféllel](reports-proc-data-rest.md).

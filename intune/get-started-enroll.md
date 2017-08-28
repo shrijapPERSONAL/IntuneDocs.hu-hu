@@ -1,12 +1,12 @@
 ---
 title: "Az eszközök regisztrációjának első lépései"
 titleSuffix: Intune on Azure
-description: 
+description: "Megismerheti a regisztrációs folyamatot egy iOS-eszköz teljes regisztrációs folyamatának végigkövetésével."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Az eszközök regisztrációjának első lépései
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Az eszközök regisztrációjának első lépései
 
 A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, miközben gondoskodik a vállalati adatok védelméről. Mivel a végfelhasználók a felügyeleti konzol helyett a saját eszközeiken fognak interakcióba lépni az Intune-nal, részletesen meg kell ismernie a regisztrációs folyamatot. Ezzel a módszerrel kombinálhatja a jól kialakított megfelelőségi házirendeket a regisztrációs folyamattal, és empátiát mutathat felhasználói felé. Ez különösen fontos, mivel a felhasználók pontosan tudni fogják, hogy Ön rendszergazdaként milyen adatokat láthat:
 
-## <a name="what-it-cannot-see"></a>Amit a rendszergazda nem lát
-* Hívási és böngészési előzmények
-* Tartózkodási hely
-* Személyes e-mailek
-* SMS-ek
-* Névjegyek
-* A személyes fiókok jelszavai
-* Naptáresemények
-* Képek, beleértve a Fényképezőgép alkalmazás vagy a Filmtekercs mappa tartalmát
-
-## <a name="what-it-can-see"></a>Amit a rendszergazda lát
-* Modell
-* Sorozatszám
-* Operációs rendszer verziója
-* Alkalmazásnevek
-* Tulajdonos
-* Eszköz neve
-* Gyártó (nem Apple gyártmányú eszközök esetében)
-* Telefonszám (céges eszközök esetén teljes telefonszám, személyes eszközök esetén csak az utolsó négy számjegy)
+| Amit a rendszergazda nem lát | Amit a rendszergazda lát |
+|---|---|
+| Hívási és böngészési előzmények | Modell |
+| Tartózkodási hely | Sorozatszám |
+| Személyes e-mailek | Operációs rendszer verziója |
+| SMS-ek | Alkalmazásnevek |
+| Névjegyek | Tulajdonos |
+| A személyes fiókok jelszavai | Eszköz neve |
+| Naptáresemények | Gyártó (nem Apple gyártmányú eszközök esetében) |
+| Képek, beleértve a Fényképezőgép alkalmazás vagy a Filmtekercs mappa tartalmát | Telefonszám (céges eszközök esetén teljes telefonszám, személyes eszközök esetén csak az utolsó négy számjegy) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Hogyan lehet regisztrálni az eszközt?
 
@@ -67,3 +56,13 @@ Az eszköz regisztrációja az első élmény, amelyben számos végfelhasznál�
 14. Amikor a rendszer a profil telepítésének befejezését jelző képernyőre vált, koppintson a **Kész** elemre.
 15. Megjelenik az „Eszköz regisztrációja” üzenet a képernyőn, majd az eszköz sikeres regisztrációjáról szóló üzenet. Megjelenik egy előugró ablak, amely arra kéri, hogy nyissa meg a lapot a Céges portálon. Koppintson a **Megnyitás** gombra.
 16. Visszatér a **Vállalati hozzáférés beállítása** képernyőre. Ha nem rendelkezik beállított tesztszabályzatokkal, akkor az eszköznek megfelelőnek kell látszania. Ha rendelkezik bármilyen tesztszabályzattal, akkor az **Eszközmegfelelőség** elemre koppintva megjelenik, hogy milyen dolgokat kell végrehajtani, hogy az eszköz biztonságos legyen.
+
+## <a name="next-steps"></a>További lépések
+
+[Ismerkedés az alkalmazások felvételével](get-started-apps.md) – Alkalmazásokat kereshet és adhat hozzá az eszközökhöz, hogy az alkalmazottak elvégezhessék a munkát.
+
+## <a name="learn-more"></a>További információ
+
+* [Eszközregisztrációs lehetőségek az Intune-hoz](enrollment-options.md)
+* [Saját eszközök használatának engedélyezése az Intune-ban](byod-enable.md)
+* [A regisztrációs és az eszközkezelési folyamat megismertetése a végfelhasználókkal](end-user-educate.md)

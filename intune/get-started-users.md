@@ -1,12 +1,12 @@
 ---
 title: "A felhasználókezelés első lépései"
 titleSuffix: Intune on Azure
-description: 
+description: "A felhasználók Intune-ba való felvételével engedélyezheti nekik, hogy mobileszközről is elérjék a céges erőforrásokat."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>A felhasználókezelés első lépései
+# <a name="get-started-with-managing-users"></a>A felhasználók felügyeletének első lépései
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Az Azure Active Directory kezeli a szervezet objektumait, például eszközök és alkalmazások csoportjait, és felhasználók csoportjait is. A felhasználók vagy eszközök csoportokba sorolhatók, így nem szükséges mindegyiket egyedileg kezelni. Ezáltal az alkalmazások és beállítások egyszerűen rendelhetők hozzá egyszerre nagy számú felhasználóhoz vagy eszközhöz.
+Gondolja végig, hányan dolgoznak a munkahelyén. Mindegyiküknek, aki céges adatokkal dolgozik, szüksége lesz egy felhasználói fiókra, amelynek az adatokhoz való hozzáférése felügyelhető az Intune-ban. 
 
 ## <a name="how-do-i-create-a-user"></a>Felhasználó létrehozása
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Az **Erőforrások keresése** alatt keresse meg a **Felhasználók és csoportok** elemet.
-3. A **Felhasználók és csoportok** panelen válassza a **Minden felhasználó**, majd az **+ Új felhasználó** lehetőséget.
+2. A **Erőforrások keresése** használatával keressen rá az **Intune** kifejezésre.
+3. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Felhasználók** lehetőséget. Nyissa meg a **Minden felhasználó** lapot, és válassza az **+ Új felhasználó** lehetőséget.
 4. Adja meg az új felhasználó adatait, például **Név** és a **Felhasználónév**. A felhasználónév részét képező tartománynév csak az eredeti, alapértelmezett “contoso.onmicrosoft.com” tartománynév, vagy olyan ellenőrzött, nem összevont tartománynév lehet, amilyen a “contoso.com”.
 5. A **Csoportok** részen válassza ki a tesztcsoportot, amelyhez a felhasználót hozzá kívánja adni.
 6. Mentse az automatikusan generált jelszót, hogy be tudjon jelentkezni vele a teszthez használt eszközön. Ezt a jelszót meg kell adni a felhasználónak, hogy megváltoztathassák egy saját jelszóra, amelyet meg tudnak jegyezni.
@@ -50,3 +48,7 @@ Felhasználó létrehozása után az [Office 365-portál](http://go.microsoft.co
  > Ezzel elhasználja a licencei egyikét ehhez a felhasználóhoz. Ha az éles környezetben dolgozik, akkor később kikapcsolhatja a licenc használatát, hogy kiossza egy valódi felhasználónak.
 
 5. Válassza a **Mentés** lehetőséget.
+
+## <a name="next-steps"></a>További lépések
+
+[A csoportok felügyeletének első lépései](get-started-groups.md) – Csoportokba rendezheti a felhasználókat, hogy könnyebben felügyelhesse az általuk elérhető szabályzatokat és alkalmazásokat.

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
@@ -103,18 +103,16 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
 
     - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
 
-    - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből.
+     - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből.
+   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és **Felügyelt** üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md)
+   >[!NOTE]
+   >Ha a **Felhasználói affinitás** a **Felhasználói affinitással** lehetőségre van állítva, vagy a **Felügyelt** üzemmód **ki** van kapcsolva, a rendszer letiltja a Megosztott iPad üzemmódot a regisztrációs profilban.
 
-  - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és **Felügyelt** üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik.
-
-  >[!NOTE]
-  >Ha a **Felhasználói affinitás** a **Felhasználói affinitással** lehetőségre van állítva, vagy a **Felügyelt** üzemmód **ki** van kapcsolva, a rendszer letiltja a Megosztott iPad üzemmódot a regisztrációs profilban.
-
-  - **Gyorsítótárazott felhasználók maximális száma** – (a **Megosztott iPad** üzemmód  = **Igen** állapota kötelező) létrehoz egy partíciót az eszközön az egyes felhasználóknak. A javasolt érték azon diákok száma, akik egy meghatározott időtartamra vonatkozóan valószínűleg használják az eszközt. Például ha hat diák használja rendszeresen az eszközt egy adott héten, állítsa ezt a számot hatra.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Párosítás engedélyezése** – meghatározza, hogy az iOS-eszközök szinkronizálhatók-e a számítógéppel. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
 
-    - **Apple Configurator-tanúsítványok** – Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta a **Párosítás engedélyezése** területen, válassza ki az importálandó Apple Configurator-tanúsítványt.
+      - **Apple Configurator-tanúsítványok** – Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta a **Párosítás engedélyezése** területen, válassza ki az importálandó Apple Configurator-tanúsítványt.
 
 7. Válassza a **Beállítási asszisztens beállításai** lehetőséget, és a következő profilbeállítások konfigurálása után válassza a **Mentés** gombot:
 

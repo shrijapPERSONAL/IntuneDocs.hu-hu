@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
 
@@ -32,6 +32,14 @@ Ez a témakör ismerteti, hogy az androidos végfelhasználók hol és hogyan ju
 | ------------- |-------------| -----|
 | Nem kötelező alkalmazások      | A felhasználók a **telepítés** elemre koppintanak a Vállalati portálon. Megjelenik egy értesítés, amelyre koppintva a felhasználók elindítják a telepítést. A telepítés befejezését követően megjelenik az értesítés. | A felhasználók az alkalmazásra koppintanak a Vállalati portálon, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést.|
 | Required apps      | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintva elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés.    | A felhasználóknak megjelenik egy értesítés, amelyet nem tudnak bezárni. Az értesítés azt jelzi, hogy szükség van egy alkalmazás telepítésére. A felhasználók az értesítésre koppintanak, és egy megnyíló Play Áruház-oldalra kerülnek, ahonnan elindíthatják a telepítést. A telepítés befejezését követően megjelenik az értesítés. |
+
+A végfelhasználóknak az [üzletági alkalmazások](lob-apps-android.md) telepítéséhez engedélyezniük kell az ismeretlen forrásból való telepítést. Ezek a beállítások általában két különböző helyen találhatók:
+
+* **Az Android 7.1.2-es és régebbi verzióiban**: **Settings** (Beállítások) > **Security** (Biztonság) > **Unknown sources** (Ismeretlen források)
+* **Az Android 8.0-s és újabb verzióiban**: **Settings** (Beállítások) > **Apps & notifications** (Alkalmazások és értesítések) > **Special app access** (Speciális alkalmazás-hozzáférés) > **Install unknown apps** (Ismeretlen alkalmazások telepítése) > **Company Portal** (Céges portál) > **Allow from this source** (Engedélyezés ebből a forrásból)
+
+Ebben az esetben a Céges portál értesíti a felhasználót, és közvetlenül végigvezeti a megfelelő beállítás megadásán. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Androidos Samsung Knox Standard-eszközök
 

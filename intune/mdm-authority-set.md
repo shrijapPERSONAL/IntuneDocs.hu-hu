@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -40,11 +40,27 @@ A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Int
 
 ## <a name="set-mdm-authority-to-intune"></a>Az Intune beállítása MDM-szolgáltatóként
 
-1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-  ![Képernyőkép: az Intune Hibaelhárítás feladata a Felhasználó kijelölése hivatkozással](media/set-mdm-auth.png)
+1. Az [Azure Portalon](https://portal.azure.com) válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 2. Az Intune panelen válassza az **Eszközregisztrálás**, majd pedig az **Áttekintés** elemet.
+![Képernyőkép az Intune mobileszköz-kezelő szolgáltató beállítására szolgáló képernyőjéről](media/set-mdm-auth.png)
 
-3. Az **Eszközök kezelésének indítása** panelen válassza **A Microsoft Intune beállítása mobileszköz-kezelő szolgáltatóként** lehetőséget. Egy üzenet jelzi, hogy az Intune-t sikeresen beállította mobileszköz-kezelő szolgáltatónak.
+3. A **Mobileszköz-kezelő szolgáltató** szakaszban válassza ki az alábbiak közül a kívánt MDM-szolgáltatót:
+  - **Intune MDM-szolgáltató**
+  - **Configuration Manager MDM-szolgáltató**.
+  - **Nincsenek**
+
+  Egy üzenet jelzi, hogy az Intune-t sikeresen beállította mobileszköz-kezelő szolgáltatónak.
+
+## <a name="enable-device-enrollment"></a>Eszközök regisztrálásának lehetővé tétele
+
+Ha az Intune-t állítja be MDM-szolgáltatóként, a felhasználók regisztrálhatják saját tulajdonú eszközeiket, és az alábbi módokon férhetnek hozzá olyan erőforrásokhoz, mint a levelezés, ha telepítik a Céges portál alkalmazást (iOS és Android), beállítják munkahelyi hitelesítő adataikat (Windows), vagy felkeresik a Céges portál webhelyet (iOS, Android, macOS).
+
+Az egyes platformokon a következők a regisztrálás engedélyezésének, illetve leegyszerűsítésének követelményei:
+- **iOS** – (kötelező) [Apple MDM Push-tanúsítvány beszerzése,](apple-mdm-push-certificate-get.md) majd pedig [a céges iOS-eszközök regisztrálásának engedélyezése](ios-enroll.md) (nem kötelező).
+- **Android** – (nem kötelező) [Az androidos munkahelyi profilok engedélyezése](android-enroll.md)
+- **Windows** – (nem kötelező) Az [automatikus regisztráció](windows-enroll.md) vagy a [csoportos regisztráció](windows-bulk-enroll.md) engedélyezése.
+- **macOS** – Nincsenek követelmények.
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Mobileszköz karbantartása az MDM-tanúsítvány lejárta után
 
