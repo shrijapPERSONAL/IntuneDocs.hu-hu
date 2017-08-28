@@ -15,27 +15,27 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>iOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A megadott beállításoktól függően az alábbi listában található értékek némelyike nem konfigurálható.
+A megadott beállításoktól függően a következő listában található értékek némelyike nem konfigurálható.
 
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
 
 **Kapcsolat neve** – Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakozni fognak. Példák: **192.168.1.1**, **vpn.contoso.com**.
+- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak. Példák: **192.168.1.1**, **vpn.contoso.com**.
 - **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
-    - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban adja meg a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilok valamelyikét. A tanúsítványprofilokról [a tanúsítványok konfigurálását](certificates-configure.md) ismertető cikkben talál részletesebb tájékoztatást.
+    - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban adja meg a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilok valamelyikét. A tanúsítványprofilokról további információt a [How to configure certificates](certificates-configure.md) (Tanúsítványok konfigurálása) című cikkben találhat.
     - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa** – Az szállítók alábbi listájából válassza ki a VPN-kapcsolat típusát:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
@@ -57,12 +57,12 @@ Ha a kapcsolat típusaként az **Egyéni VPN** lehetőséget állította be, kon
 ## <a name="apps-per-app-vpn-settings"></a>Alkalmazások (alkalmazásonkénti VPN) beállításai
 
 - **Alkalmazásonkénti VPN** – Igény szerint engedélyezheti ezt a beállítást olyan URL-címekhez, melyek engedélyezik a VPN-kapcsolatot, ha megnyitják őket a Safari böngészőből. Ennek konfiguráláshoz hitelesítési módszerként a **Tanúsítványok** lehetőséget kellett választania az alapvető VPN-beállításokban.
-- **Adja meg azokat az URL-címeket, amelyek a Safari böngésző használata közben lehetővé teszik a VPN-kapcsolat létrehozását** – A Hozzáadás elemre kattintva hozzáadhatja egy vagy több webhely URL-címét. A rendszer ezen URL-címek megnyitásakor engedélyezi a VPN-kapcsolatot.
+- **Adja meg azokat az URL-címeket, amelyek a Safari böngésző használata közben lehetővé teszik a VPN-kapcsolat létrehozását** – A Hozzáadás elemre kattintva hozzáadhatja egy vagy több webhely URL-címét. Ezeknek a URL-címeknek a használatakor a VPN-kapcsolat engedélyezve van.
 
 - **Igény szerinti szabályok** – Ezzel a beállítással feltételes szabályokat állíthat be, melyek VPN-kapcsolat kezdeményezésekor lépnek érvénybe. Létrehozhat például egy olyan feltételt, amelyben a rendszer csak akkor használja a VPN-kapcsolatot, ha az eszköz nem kapcsolódik valamelyik vállalati Wi-Fi-hálózathoz. Másik lehetőségként olyan feltételt is létrehozhat, amelyben ha egy eszköz nem férhet hozzá egy megadott DNS-keresési tartományhoz, akkor a rendszer nem kezdeményez VPN-kapcsolatot.
 
     - **SSID-k vagy DNS-keresési tartományok** – Megadhatja, hogy a feltétel vezeték nélküli hálózatok **SSID-it** vagy **DNS-keresési tartományokat** használjon. Egy vagy több SSID vagy keresési tartomány konfigurálásához válassza a Hozzáadás lehetőséget.
-    - **URL-sztringminta** – Igény szerint megadhat egy szabály által tesztként használt URL-címet is. Ha az eszköz, amelyen a profil telepítve van, átirányítás nélkül el tudja érni az URL-címet, a rendszer kezdeményezi a VPN-kapcsolatot, és az eszköz kapcsolódik a célként megadott URL-címre. A felhasználó nem látja a teszthez használt URL-célhelyet. URL-sztringmintaként meg lehet adni például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azlőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
+    - **URL-sztringminta** – Igény szerint megadhat egy szabály által tesztként használt URL-címet is. Ha az eszköz, amelyen a profil telepítve van, átirányítás nélkül el tudja érni az URL-címet, a rendszer kezdeményezi a VPN-kapcsolatot, és az eszköz kapcsolódik a célként megadott URL-címre. A felhasználó nem látja a teszthez használt URL-célhelyet. URL-sztringmintaként meg lehet adni például egy naplózási webkiszolgálót, amely VPN-kapcsolat létrejötte előtt ellenőrzi az eszköz megfelelőségét. Egy másik lehetőség, hogy az URL-cím ellenőrzi a VPN webhelyhez történő kapcsolódási képességét azelőtt, hogy létrejönne a VPN-kapcsolat az eszköz és a célként megadott URL-cím között.
     - **Tartományi művelet** – Válasszon a következő lehetőségek közül:
         - Szükség esetén kapcsolódás – 
         - Soha ne legyen kapcsolódás – 

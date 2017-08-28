@@ -1,12 +1,12 @@
 ---
 title: "Bevezetés a szabályzatok használatába"
 titleSuffix: Intune on Azure
-description: 
+description: "Szabályzatok létrehozásával megakadályozhatja a felhasználókat abban, hogy olyan dolgokat hajtsanak végre az eszközeikkel, amelyekre nincs felhatalmazásuk."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>Bevezetés a szabályzatok használatába
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>Bevezetés a szabályzatok használatába
 
 Az Intune használatának megkezdésekor az egyik legfőbb cél az eszközök regisztrálása, hogy biztosan megfeleljenek a vállalati szabályzatoknak. A megfelelőségi szabályzatok nem csak a speciális eszköztípusok, például vállalati tulajdonú kioszkgépek, hanem a személyes eszközök (saját eszközök használata), táblagépek és felhasználó nélküli eszközök kezelésében is segítenek.
 
@@ -56,3 +54,12 @@ __Hogyan hozhatok létre szabályzatot?__
 7. Térjen vissza a **Szabályzat létrehozása** panelre, majd válassza a **Létrehozás** lehetőséget.
 8. A szabályzat létrehozása után válassza a **Hozzárendelések** lehetőséget a tesztcsoporthoz való hozzárendeléséhez. Válassza ki a tesztcsoportot – amelynek tartalmaznia kell a tesztfelhasználót –, majd rendelje hozzá a szabályzatot ehhez a csoporthoz a **Mentés** gombra kattintva.
 9. Várjon néhány percig, és a regisztrált eszköznek kérnie kell egy frissített jelszót, hogy továbbra is megfeleljen a vállalati házirendnek. Ezt manuálisan is ellenőrizheti az **iOS-hez készült céges portál alkalmazásban**, ha rákoppint az eszköz nevére, majd a **Szinkronizálás** gombra.
+
+## <a name="next-steps"></a>További lépések
+
+[Bevezetés az eszközök regisztrációjába](get-started-enroll.md) – Megismerheti a regisztrációs folyamatot egy iOS-eszköz teljes regisztrációs folyamatának végigkövetésével.
+
+## <a name="learn-more"></a>További információ
+
+* [Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)
+* [A feltételes hozzáférési szabályok szokásos használati módjai az Intune-ban](conditional-access-intune-common-ways-use.md)

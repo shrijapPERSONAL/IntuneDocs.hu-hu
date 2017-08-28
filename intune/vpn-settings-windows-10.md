@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Windows 10-es eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
@@ -96,10 +96,13 @@ Az egyéni XML-parancsok írásával kapcsolatban további információt az egye
 
 ## <a name="conditional-access"></a>Feltételes hozzáférés
 
-**Feltételes hozzáférés használata e VPN-kapcsolat esetében** -
-**Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal** -
-**Kibővített kulcshasználat** -
-**Kibocsátó kivonata** -
+**Feltételes hozzáférés használata e VPN-kapcsolat esetében** – Lehetővé teszi az ügyféltől származó eszközmegfelelőségi adatok továbbítását. Ha a beállítás engedélyezve van, a VPN-ügyfél megpróbál kommunikálni az Azure Active Directoryval, hogy megszerezze a hitelesítéshez használandó tanúsítványt. A VPN-t tanúsítványalapú hitelesítés használatára kell beállítani, és a VPN-kiszolgálónak megbízhatóként kell felismernie az Azure Active Directory által visszaadott kiszolgálót.
+
+**Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal** – A Kerberos-hitelesítéshez használttól eltérő tanúsítvány használata az eszközmegfelelőség igazolásához. A tanúsítványhoz a következő beállításokat adja meg: 
+
+- **Kibővített kulcshasználat** – A kibővített kulcshasználat (EKU) megnevezése.
+- **Objektumazonosító** – Az EKU objektumazonosítója.
+- **Kibocsátó kivonata** – Az SSO-tanúsítvány ujjlenyomata.
 
 ## <a name="dns-settings"></a>DNS-beállítások
 

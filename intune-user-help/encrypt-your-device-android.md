@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Androidos eszközök védelme titkosítással
 
@@ -33,8 +33,8 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
 1.  Győződjön meg arról, hogy a képernyő-zárolási PIN-kód vagy jelszó be van állítva az eszközön.
 
-2.  A **Beállítások** menüben válassza ki a **Biztonság** &gt; **Eszköz titkosítása** lehetőséget.
-    (Egyes telefonokon a **Tárolás** &gt; **Tárolás titkosítása** vagy a **Tárolás** &gt; **Zárolási képernyő és biztonság** &gt; **További biztonsági beállítások** menüben található a „Titkosítás” opció).
+2.  A **Settings** (Beállítások) menüben válassza a **Security** (Biztonság)  >  **Encrypt Device** (Eszköz titkosítása) lehetőséget.
+    (Egyes telefonokon a **Storage** (Tárhely)  >  **Storage encryption** (Tárhely titkosítása) vagy a **Storage** (Tárhely)  >  **Lock screen and security**  >  (Zárolási képernyő és biztonság) **Other security settings** (További biztonsági beállítások) menüben található az Encrypt (Titkosítás) beállítás).
 
 3.  Kövesse a képernyőn megjelenő utasításokat. Előfordulhat, hogy a titkosítás során az eszköz többször újraindul.
 
@@ -54,14 +54,16 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 - Ellenőrizze, hogy beállított-e PIN-kódot vagy jelszót az eszközön.
 - Ha már beállította a PIN-kódot vagy jelszót, próbálkozzon az alábbi lépésekkel, amelyeket a rendszergazda megkövetelhet az eszköz biztonságosabbá tételéhez. A lépésekben szereplő menünevek kissé eltérhetnek az eszközön láthatóaktól, attól függően, hogy milyen Android-eszközt használ.
 
-    1. Válassza a **Settings** (Beállítások) > **Security** (Biztonság) > **Screen lock** (Képernyőzár) lehetőséget. Erősítse meg jelenlegi PIN-kódját vagy jelszavát.
+    1. Nyissa meg a **Settings** (Beállítások) > **Lock Screen and Security** (Zárolási képernyő és biztonság) > **Screen lock** (Képernyőzárolás) lapot. Erősítse meg jelenlegi PIN-kódját vagy jelszavát.
 
-    2. A **Choose screen lock** (Képernyőzár kiválasztása) képernyőn válassza ki a használni kívánt képernyőzárat.
+    2. A **Choose screen lock** (Képernyőzár kiválasztása) képernyőn válassza ki a használni kívánt képernyőzárat. 
 
-    3. A **Secure start-up** (Biztonságos indítás) képernyőn koppintson a **Require PIN to start device** (PIN-kód kérése az eszköz indításához), majd a **Continue** (Folytatás) elemre.
+    3. Miután kiválasztotta a képernyőzárat, lépjen vissza a **Lock Screen and Security** (Zárolási képernyő és biztonság) képernyőre, és válassza a **Secure Startup** (Biztonságos indítás) lehetőséget. 
+    
+    4. A **Secure startup** (Biztonságos indítás) képernyőn koppintson a **Require PIN to start device** (PIN-kód kérése az eszköz indításához), majd a **Continue** (Folytatás) elemre.
 
-    4. Adjon meg egy PIN-kódot (a korábban megadott PIN-kódot is beírhatja), és koppintson a **Confirm your PIN** (PIN-kód megerősítése) elemre.
+    5. Adjon meg egy PIN-kódot (a korábban megadott PIN-kódot is beírhatja), és koppintson a **Confirm your PIN** (PIN-kód megerősítése) elemre.
 
-    5. Nyissa meg a Vállalati portál alkalmazást, jelölje ki az eszközét, és koppintson a **Megfelelőség ellenőrzése** elemre.
+    6. Nyissa meg a Vállalati portál alkalmazást, jelölje ki az eszközét, és koppintson a **Megfelelőség ellenőrzése** elemre.
 
 További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

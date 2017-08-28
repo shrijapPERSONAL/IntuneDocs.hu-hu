@@ -175,7 +175,6 @@
 ### [Az iOS oktatási funkcióinak konfigurálása](education-settings-configure-ios.md)
 ### [Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása](education-settings-configure-ios-shared.md)
 ### [iOS-es frissítési szabályzatok konfigurálása](software-updates-ios.md)
-### [A Vállalati Windows Update beállításainak konfigurálása](windows-update-for-business-configure.md)
 ### [Tanúsítványok konfigurálása](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [Szerepkörök kezelése](role-based-access-control.md)
-
+## [Szoftverfrissítések kezelése](windows-update-for-business-configure.md)
 
 ## [Számítógépek kezelése szoftveres ügynökkel](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Számítógépek felügyeletének összehasonlítása](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)

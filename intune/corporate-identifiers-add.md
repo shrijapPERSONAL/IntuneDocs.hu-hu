@@ -1,12 +1,12 @@
 ---
-title: "IMEI azonosítók hozzáadása az Intune-hoz"
+title: "Vállalati azonosítók hozzáadása az Intune-hoz"
 titleSuffix: Intune on Azure
-description: "Ez a témakör azt ismerteti, hogyan lehet céges azonosítókat (IMEI-számokat) felvenni a Microsoft Intune-ba. \""
+description: "Megtudhatja, hogyan adhat hozzá vállalati azonosítókat (regisztrációs módszer, IMEI és sorozatszámok) a Microsoft Intune-hoz. \""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,31 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b38bf2da70537d07a050fa21be9a2a3062ca84b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="add-corporate-identifiers"></a>Vállalati azonosítók felvétele
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune rendszergazdaként létrehozhat és importálhat egy IMEI- (International Mobile Equipment Identifier) számokat vagy sorozatszámokat felsoroló, vesszővel tagolt (.csv) fájlt. Az Intune ezeket az azonosítókat használva határozza meg, hogy egy adott eszköz céges tulajdonú-e. IMEI-számot minden támogatott platformhoz megadhat. Sorozatszámot csak iOS és Android rendszerű eszközhöz adhat meg. Adminisztrációs célból minden IMEI-azonosítóhoz vagy sorozatszámhoz megadhat további adatokat is.
+Intune-rendszergazdaként többféleképpen is azonosíthat eszközöket vállalati tulajdonúként. Az Intune további információkat is képes gyűjteni a vállalati tulajdonú eszközökről. Eszközkorlátozásokat is beállíthat a nem vállalati tulajdonú eszközök regisztrációjának megakadályozásához.
+
+Az eszköz vállalati tulajdonúként lesz azonosítva, ha az alábbi feltételek bármelyike fennáll:
+
+- [i](device-enrollment-manager-enroll.md) fiókkal regisztrálták (bármely platformon).
+- Az Apple [Készülékregisztrációs programban](device-enrollment-program-enroll-ios.md), az [Apple School Managerrel](apple-school-manager-set-up-ios.md) vagy az [Apple Configuratorral](apple-configurator-enroll-ios.md) regisztrálták (csak iOS esetén).
+- Előzetesen deklarálták az eszközt nemzetközi mobilkészülék-azonosító (IMEI) számmal (minden platform IMEI számokkal) vagy sorozatszámokkal (iOS és Android).
+- Az eszköz regisztrálva van az Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként (csak Windows 10 esetén).
+- Az eszköz **tulajdonságaiban** a **Vállalati** érték van megadva.
+
+A vállalati tulajdonú eszközöknél a **Vállalati** jelenik meg az eszközrekordjuk **Tulajdonos** oszlopában az Intune-ban. A megtekintéséhez nyissa meg az **Eszközök** > **Minden eszköz** panelt.
+
+## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Eszköz előzetes deklarálása IMEI számmal vagy sorozatszámmal
+
+Intune-rendszergazdaként létrehozhat és importálhat IMEI számokat vagy sorozatszámokat felsoroló, vesszővel tagolt (.csv) fájlt. Az Intune ezeket az azonosítókat használva határozza meg, hogy egy adott eszköz céges tulajdonú-e. IMEI-számot minden támogatott platformhoz megadhat. Sorozatszámot csak iOS és Android rendszerű eszközhöz adhat meg. Adminisztrációs célból minden IMEI-azonosítóhoz vagy sorozatszámhoz megadhat további adatokat is.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -54,10 +68,9 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 >Ezenkívül fontos tudnia: nem biztos, hogy az androidos sorozatszámok egyediek vagy elérhetőek lesznek. Egyeztessen az eszköz szállítójával arról, hogy a sorozatszám tekinthető-e megbízható eszközazonosítónak.
 >Elképzelhető, hogy az a sorozatszám, amelyet az eszköz az Intune felé jelez, nem egyezik meg az eszköz Android beállítások/Névjegy (Android Settings/About) menüjében megjelenő azonosítóval. Ellenőrizze, hogy az eszköz gyártója milyen típusú sorozatszámot tüntet fel itt.
 
+### <a name="add-a-csv-list-of-corporate-identifiers"></a>Céges azonosítók .csv-listájának felvétele
 
-**Céges azonosítók .csv-listájának felvétele**
-
-1. Az Intune-portálon jelölje ki az **Eszközregisztráció** > **Regisztrációs korlátozások** elemet, majd válassza a **Céges készülékazonosítók** lehetőséget, és kattintson a **Hozzáadás** gombra.
+1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
 
  ![Képernyőkép a céges készülékazonosítók munkaterületről a Hozzáadás gomb kiemelésével.](./media/add-corp-id.png)
 
@@ -69,9 +82,11 @@ Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszkö
 
 ## <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
 
-1. Az Intune-portálon jelölje ki az **Eszközregisztráció** > **Regisztrációs korlátozások** elemet, válassza a **Céges készülékazonosítók** lehetőséget, és kattintson a **Törlés** gombra.
+1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget.
+2. Válassza ki a törölni kívánt eszközazonosítókat, majd kattintson a **Törlés** gombra.
+3. Hagyja jóvá a törlést.
 
-3. Az **Azonosítók törlése** panelen keresse meg a törölni kívánt eszközazonosítók .csv-fájlját, majd kattintson a **Törlés** elemre.
+Ha törli egy regisztrált eszköz céges azonosítóját, azzal nem változtatja meg az eszköz tulajdonosát. Az eszköz tulajdonosának módosításához nyissa meg az **Eszközök** > **Minden eszköz** panelt, válassza ki az eszközt, majd válassza a **Tulajdonságok** lehetőséget, és módosítsa az **Eszköz tulajdonosa** értékét.
 
 ## <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
 Az IMEI-azonosítók részletes specifikációját a [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) lapon találja.

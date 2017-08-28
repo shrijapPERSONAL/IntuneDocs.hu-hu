@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -50,11 +50,11 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 | StartDateInclusiveUTC |A jelen változat adattárházban történő létrehozásának dátuma és időpontja (UTC) |11/23/2016 12:00:00 AM |
 | EndDateExclusiveUTC |A jelen változat elavulásának dátuma és időpontja (UTC) |11/23/2016 12:00:00 AM |
 | IsCurrent |Jelzi, hogy az alkalmazásverzió aktuális-e az adattárházban |Igaz/hamis |
-| RowLastModifiedDateTimeUTC |Az alkalmazásverzió legutóbbi módosításának dátuma és időpontja (UTC) az adattárházban |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Az alkalmazásverzió legutóbbi módosításának dátuma és időpontja (UTC) az adattárházban |2016.11.23. 12:00:00 |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-Az **AppInstallerTypes** entitás az alkalmazás telepítési forrásait listázza.
+Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
 | Tulajdonság  | Leírás |
 |---------|------------|
@@ -80,44 +80,6 @@ Az **AppInstallerTypes** entitás az alkalmazás telepítési forrásait listáz
 | 11 |Windows Mobile MSI |MSI-alapú üzletági alkalmazás |
 | 12 |Windows Phone LOB app |Üzletági Windows Phone-alkalmazás |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-Az **ApplicationTypes** entitás az alkalmazás lehetséges típusait listázza.
-
-| Tulajdonság  | Leírás |
-|---------|------------|
-| ApplicationTypeID |A típus azonosítója |
-| ApplicationTypeKey |A kulcs helyettes kulcsa |
-| ApplicationTypeName |Alkalmazás típusa |
-
-## <a name="example"></a>Példa
-
-| ApplicationTypeID  | Név | Leírás |
-|---------|------------|--------|
-| 0 |InHouse |Belső fejlesztésű alkalmazás |
-| 1 |DeepLink |Alkalmazás-áruházban található alkalmazásra mutató hivatkozás |
-| 2 |WebLink |Webalkalmazásra mutató hivatkozás |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-A **ManagedSoftwareTypes** entitás az alkalmazás lehetséges felügyelt szoftvertípusait listázza.
-
-| Tulajdonság  | Leírás |
-|---------|------------|
-| SoftwareTypeID |A típus azonosítója |
-| SoftwareTypeKey |A kulcs helyettes kulcsa |
-| SoftwareTypeName |A szoftver típusa |
-
-## <a name="example"></a>Példa
-
-| SoftwareTypeID  | Név | Leírás |
-|---------|------------|--------|
-| 0 |Asztali |Asztali alkalmazás |
-| 2 |Frissítés |Ablakfrissítés |
-| 5 |SideCarAgent | |
-| 1 |Mobil |Mobilalkalmazás |
-| 3 |WebLink |Webhivatkozás |
-| 4 |VppDeepLink |Mennyiségi vásárlási programhoz (VPP) tartozó, alkalmazás-áruházbeli alkalmazásra mutató hivatkozás |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
@@ -35,7 +35,6 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus 201
 - Az Intune csak az Office 365 ProPlus 2016 csomagból származó Office-alkalmazások hozzáadását támogatja.
 - Ha bármely Office-alkalmazás meg van nyitva, amikor az Intune telepíti az alkalmazáscsomagot, előfordulhat, hogy elvesznek a végfelhasználók adatai a nem mentett fájlokból.
 - Ez a telepítési mód Windows 10 S-eszközökön nincs támogatva.
-- Ha ezt az alkalmazástípust Elérhetőként rendeli hozzá, és több felhasználót is megcéloz a különféle hozzárendelésekkel, a felhasználók csak a legutóbbi hozzárendeléseket fogják látni.
 - Az Intune nem támogatja az asztali Office 365-programok (más néven az Office Centennial-alkalmazások) Windows Áruházból történő telepítését olyan eszközök esetében, amelyekre korábban már telepítettek valamilyen Office 365-alkalmazást az Intune segítségével. Ha ezt a konfigurációt telepíti, az adatvesztést vagy adatsérülést okozhat.
 
 

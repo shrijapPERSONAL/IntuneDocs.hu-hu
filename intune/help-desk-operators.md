@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Segítségnyújtás a felhasználóknak a hibaelhárítási portál használatával
 
@@ -41,7 +41,7 @@ Intune-rendszergazdaként hozzárendelheti az Ügyfélszolgálat szerepkört egy
 Ügyfélszolgálati felhasználók hozzáadása:
 1. [Felhasználók hozzáadása az Intune-hoz](users-add.md) szükség esetén.
 2. [Ügyfélszolgálati csoport létrehozása](groups-add.md) és felhasználók hozzáadása a csoporthoz.
-3. [Az RBAC Ügyfélszolgálati munkatárs szerepkör hozzárendelése](role-based-access-control.md#built-in-roles)
+3. [Végezz el az RBAC ügyfélszolgálati munkatárs szerepkör hozzárendelését](role-based-access-control.md#built-in-roles).
 
   ![Képernyőkép az Intune-portálról, amelyen ki vannak emelve az Intune-szerepkörök és látható a beépített szerepkörök listája, köztük az Ügyfélszolgálati munkatárs szerepkör is](./media/help-desk-user-add.png) Az ügyfélszolgálati munkatársaknak hozzáférést adhat egy [egyéni szerepkör létrehozásával](role-based-access-control.md#custom-roles) és személyre szabásával is.  Az ügyfélszolgálati munkatársaknak a következő jogosultságokkal kell rendelkezniük a felhasználói problémák hibaelhárításához:
     - MobileApps (mobilalkalmazások): Olvasás
@@ -61,8 +61,6 @@ Az ügyfélszolgálati munkatársak és az Intune-rendszergazdák kétféleképp
 - Jelentkezzen be az Azure Portalon, válassza a **More Services (további szolgáltatások** > **Figyelés + Felügyelet** > **Intune**, majd a **Súgó és támogatás** > **Hibaelhárítás** lehetőséget.
 
 A **Felhasználó kijelölése** elemre kattintva tekintse meg a felhasználót és adatait.
-
-![Képernyőkép: az Intune Hibaelhárítás feladata a Felhasználó kijelölése hivatkozással](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>A hibaelhárítási portál használata
 

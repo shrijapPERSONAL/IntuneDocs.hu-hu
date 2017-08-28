@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése a Microsoft Intune-nal
 
@@ -44,7 +44,6 @@ Mielőtt hozzálát, szerezzen be VPP-tokent az Apple-től, és töltse fel az I
 * Alapértelmezés szerint az Intune naponta kétszer szinkronizál az Apple VPP szolgáltatással. Manuális szinkronizálás bármikor kezdeményezhető.
 * Miután a VPP-tokent az Intune-ba importálta, ne importálja ugyanezt a tokent egy másik eszközfelügyeleti megoldásba. Ez a licenc-hozzárendelések és a felhasználói rekordok elvesztését eredményezheti.
 * Mielőtt az iOS-könyveket az Intune-nal kezdené használni, távolítsa el a más mobileszköz-felügyeleti (MDM) megoldás használatával létrehozott összes meglévő VPP-felhasználói fiókot. Az Intune biztonsági okokból nem szinkronizálja ezeket a felhasználói fiókokat az Intune-ba. Az Intune csak az Intune által létrehozott adatokat szinkronizálja az Apple VPP szolgáltatásból.
-* Jelenleg csak **Kötelező** telepítésként rendelhet hozzá könyveket. Ha a könyvet **Szükséges** telepítésként rendeli hozzá, a könyvet telepítő összes felhasználó felhasznál egy licencet.
 * Csak olyan eszközhöz rendelhet hozzá könyvet, amelyen telepítve van a beépített iBooks alkalmazás. Ha nincs, akkor a felhasználónak újra kell telepítenie az alkalmazást, hogy el tudják olvasni a könyvet. Az Intune jelenleg nem használható eltávolított beépített alkalmazások újratelepítésére.
 * Csak az Apple Volume Purchase Program webhelyéről rendelhet hozzá könyveket. A házon belül létrehozott könyveket nem töltheti fel és rendelheti hozzá.
 * Jelenleg nem rendelhet hozzá könyveket a felhasználói kategóriákhoz ugyanúgy, ahogyan az alkalmazásokat.
@@ -72,10 +71,10 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 ## <a name="to-assign-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás hozzárendelése
 
 1. Az **e-könyvek** munkaterhelésben válassza a **Felügyelet** > **Összes e-könyv** lehetőséget.
-2. A könyvlista panelen válassza ki azt a könyvet, amelyet szeretne hozzárendelni, és válassza a „**...**” elemet. > **Csoportok hozzárendelése**.
+2. A könyvlista paneljén válassza ki a hozzárendelni kívánt könyvet, és válassza a **...** > **Csoportok hozzárendelése** lehetőséget.
 3. A <*könyv neve*> – **Hozzárendelt csoportok** panelen válassza a **Felügyelet** > **Hozzárendelt csoportok** lehetőséget.
 4. Válassza a **Hozzárendelt csoportok**, majd a **Csoportok kiválasztása** panelt, és jelölje ki azon Azure AD felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a könyvet. Az eszközcsoportok jelenleg nem támogatottak.
-Válassza a **Szükséges** hozzárendelési műveletet. 
+Válassza az **Elérhető** vagy a **Kötelező** hozzárendelési műveletet. 
 5. Ha elkészült, válassza a **Mentés** elemet.
 
 ## <a name="next-steps"></a>További lépések
