@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
 
+## <a name="week-of-august-21-2017"></a>2017. augusztus 21-i hét
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Az Intune mobilalkalmazás-felügyelet (MAM) párbeszédpaneljei modern felületet kapnak <!-- 1199015 -->
+
+Az Intune mobilalkalmazás-felügyelet (MAM) párbeszédpaneljei modern megjelenést és működést nyújtó frissített felületet fognak kapni. A párbeszédpanelek működése megegyezik az előző stíluséval.
+
+**Korábbi felhasználói élmény**
+
+![régi felület](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Modern felhasználói élmény**
+
+![modern felület](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>2017. augusztus 14-i hét
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>A Windows 10-hez készült Céges portál alkalmazás Eszköz adatai lapjának frissítései
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>A Windows 10-hez készült Céges portál alkalmazás Eszköz adatai lapjának frissítései.<!---1287448--->
 
 A Windows 10-hez készült Céges portál alkalmazásban a __Kategória__ címke immár nem a cím alatt jelenik meg, hanem egy, az __Eszköz adatai__ lapon szereplő tulajdonság formájában.
 
 ![A windowsos Céges portál alkalmazás Eszköz adatai képernyője, amelyen a Kategóriák mező immár tulajdonságként jelenik meg, nem pedig közvetlenül a képernyő címe alatt szerepel.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>2017. július 31-i hét
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Új eszközinformációk Android-eszközök esetén az Alkalmazások részletei lapon <!--1287476-->
+
+Az Androidhoz készült Céges portál Alkalmazások részletei lapján meg fognak jelenni a rendszergazda által az alkalmazáshoz definiált alkalmazáskategóriák.
+
+![Az Alkalmazások részletei lap frissített változata](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Jobb bejelentkezési élmény a Céges portál alkalmazásokhoz minden platformon <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Felhasználói visszajelzések alapján az androidos Céges portál alkalmazásb
 
 ## <a name="week-of-june-5-2017"></a>2017. június 5-i hét
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Továbbfejlesztett alkalmazáscsempék az iOS-es Céges portál alkalmazásban
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Továbbfejlesztett alkalmazáscsempék az iOS-hez készült Céges portál alkalmazásban <!--1230777-->
 Frissítettük a kezdőlapon található alkalmazáscsempék megjelenését annak érdekében, hogy a Céges portálhoz beállított márkaszínek jelenjenek meg rajtuk.
 
 **Előtte**

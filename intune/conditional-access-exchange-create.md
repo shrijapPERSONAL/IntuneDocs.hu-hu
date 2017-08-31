@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Feltételes hozzáférési szabályzat létrehozása és hozzárendelése a helyszíni Exchange-hez és a régi Dedikált Exchange Online-hoz az Azure-os Microsoft Intune-nal
 
@@ -122,11 +122,7 @@ Az Intune 1704-es kiadásától kezdve a rendszergazdák Azure AD feltételes ho
 
 1. Az **Intune irányítópultján** válassza a **Feltételes hozzáférés** lehetőséget.
 
-2. A **Feltételes hozzáférés** irányítópulton válassza a **Feltételes hozzáférés az Azure Active Directoryban** elemet.
-
-3. Új Azure AD feltételes hozzáférési szabályzat létrehozásához válassza az **Új szabályzat** elemet.
-
-    ![Azure AD feltételes hozzáférési szabályzatok](./media/Azure-AD-CA-Intune.png)
+2. Az új Azure AD feltételes hozzáférési szabályzat létrehozásához a **Szabályzatok** panelen válassza az **Új szabályzat** lehetőséget.
 
 ## <a name="see-also"></a>További információ
 

@@ -14,35 +14,35 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8b218ce38a7e76135a62b1155dbf9060ba511cc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2394068c43e652accfb428ff644229f794d33f24
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-line-of-business-apps-for-mam"></a>Üzletági alkalmazások előkészítése mobilalkalmazás-felügyelethez
+# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Az Intune alkalmazásburkoló eszközével vagy az Intune App SDK-val engedélyezheti, hogy az alkalmazások mobilalkalmazás-felügyeleti (MAM) szabályzatokat használjanak. Az alábbi információkkal többet megtudhat erről a két módszerről és arról, mikor érdemes használni azokat.
+Az Intune alkalmazásburkoló eszközével vagy az Intune App SDK-val engedélyezheti, hogy az alkalmazások alkalmazásvédelmi szabályzatokat használjanak. Az alábbi információkkal többet megtudhat erről a két módszerről és arról, mikor érdemes használni azokat.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune alkalmazásburkoló eszköz
-Az alkalmazásburkoló eszköz főleg belső üzletági (LOB) alkalmazásokhoz készült. Az eszköz egy parancssori alkalmazás, amely egy burkolót hoz létre az alkalmazás körül, az pedig azután lehetővé teszi az alkalmazásnak az Intune mobilalkalmazás-kezelési szabályzatokkal való kezelését.
+Az alkalmazásburkoló eszköz főleg belső üzletági (LOB) alkalmazásokhoz készült. Az eszköz egy parancssori alkalmazás, amely egy burkolót hoz létre az alkalmazás körül, amely lehetővé teszi az alkalmazás Intune alkalmazásvédelmi szabályzatokkal való kezelését.
 
-Nincs szüksége a forráskódra az eszköz használatához, de aláíró hitelesítő adatokra igen.  További információ az aláíró hitelesítő adatokról: [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Az alkalmazásburkoló eszköz dokumentációja az [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md) és az [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md) című cikkekben található.
+Nincs szüksége a forráskódra az eszköz használatához, de aláíró hitelesítő adatokra igen. További információ az aláíró hitelesítő adatokról: [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Az alkalmazásburkoló eszköz dokumentációja az [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md) és az [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md) című cikkekben található.
 
 Az Alkalmazásburkoló eszköz **nem támogatja** az Apple App Store vagy a Google Play áruházban elérhető alkalmazásokat. Nem támogatja továbbá a szolgáltatásokat, amelyek fejlesztői integrációt igényelnek (lásd a következő szolgáltatás-összehasonlító táblázatot).
 
 
-A MAM alkalmazásburkoló eszköznek az Intune-ban nem regisztrált eszközökön való használatáról [Az üzleti alkalmazások és az adatok védelme a nem regisztrált eszközökön a Microsoft Intune-ban című](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune) cikk nyújt tájékoztatást.
+Az alkalmazásvédelmi szabályzatok támogatásához készült alkalmazásburkoló eszköznek az Intune-ban nem regisztrált eszközökön való használatáról [Az üzleti alkalmazások és az adatok védelme a Microsoft Intune-ban nem regisztrált eszközökön](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune) című témakor nyújt tájékoztatást.
 
-### <a name="reasons-to-use-the-app-wrapping-tool"></a>Miért futtassa az alkalmazásburkoló eszközt?
-* Az alkalmazásban nincsenek beépített adatvédelmi funkciók.
-* Egyszerű az alkalmazása.
-* Belső telepítésű az alkalmazása.
+### <a name="reasons-to-use-the-app-wrapping-tool"></a>Mikor érdemes használni az Alkalmazásburkoló eszközt?
+* Az alkalmazásban nincsenek beépített adatvédelmi funkciók
+* Egyszerű az alkalmazás
+* Az alkalmazás belső telepítésű
 * Nincs hozzáférése az alkalmazás forráskódjához
-* Nem ön fejlesztette az alkalmazást.
-* Alkalmazása minimális felhasználói hitelesítési tapasztalattal rendelkezik.
+* Másvalaki fejlesztette az alkalmazást
+* Az alkalmazás csak minimális felhasználói hitelesítési felülettel rendelkezik
 
 
 ### <a name="supported-app-development-platforms"></a>Támogatott alkalmazásfejlesztési platformok
@@ -58,12 +58,12 @@ Az App SDK főleg olyan ügyfeleknek készült, akiknek vannak az Apple App Stor
 További információk az SDK-ról: [Áttekintés](app-sdk.md). Az SDK használatának megkezdéséhez olvassa el a [Bevezetés a Microsoft Intune App SDK használatába](app-sdk-get-started.md) című szakaszt.
 
 ### <a name="reasons-to-use-the-sdk"></a>Az SDK használatának előnyei
-* Az alkalmazásban nincsenek beépített adatvédelmi funkciók.
-* Alkalmazása összetett és számos felületet tartalmaz.
-* Alkalmazása nyilvános alkalmazás-áruházban telepített, például a Google Play-ben vagy az Apple App Store-ban.
-* Ön alkalmazás-fejlesztő és rendelkezik az SDK felhasználásához szükséges technikai tudással.
-* Alkalmazása más SDK-integrációkkal rendelkezik.
-* Alkalmazása gyakran kerül frissítésre.
+* Az alkalmazásban nincsenek beépített adatvédelmi funkciók
+* Az alkalmazás összetett és számos felületet tartalmaz
+* Az alkalmazás nyilvános alkalmazás-áruházból, például a Google Play vagy az Apple App Store áruházból telepíthető
+* Ön alkalmazásfejlesztő, és rendelkezik az SDK használatához szükséges technikai tudással
+* Az alkalmazás más SDK-integrációkkal rendelkezik
+* Az alkalmazás gyakran frissül
 
 ### <a name="supported-app-development-platforms"></a>Támogatott alkalmazásfejlesztési platformok
 
@@ -84,7 +84,7 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Android-, iTunes- vagy iCloud-biztonságimentések megakadályozása|X|X|
 |Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak|X|X|
 |Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak|X|X|
-|Kivágási, másolási és beillesztési műveletek korlátozása más alkalmazásokkal|X|X|
+|Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása|X|X|
 |Egyszerű PIN-kód szükséges a hozzáféréshez|X|X|
 |Az alkalmazások beépített PIN-kódjának lecserélése Intune PIN-kóddal|X||
 |A PIN-kód alaphelyzetbe állítása előtti kísérletek számának megadása|X|X|
@@ -102,8 +102,10 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Célzott alkalmazáskonfiguráció |X||
 |Többszörös identitás támogatása|X||
 |Testreszabható stílus |X|||
-### <a name="see-also"></a>További információ
+## <a name="next-steps"></a>További lépések
 
-[Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md)</br>
-[iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md)</br>
-[Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+A következő témakörökből tudhat meg többet az alkalmazásvédelmi szabályzatokról és az Intune-ról:
+
+  -  [Android alkalmazásburkoló eszköz](app-wrapper-prepare-android.md)</br>
+  - [iOS alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md)</br>
+  - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

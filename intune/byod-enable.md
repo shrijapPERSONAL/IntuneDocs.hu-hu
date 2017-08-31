@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD engedélyezése az Intune-nal
 
@@ -44,22 +44,22 @@ Ebben a lépésben célszerű [testre szabni a céges portált](company-portal-c
 
 Az Intune előkészítése után meg kell győződnie arról, hogy a felügyelni kívánt eszköztípusok megfelelnek a különböző regisztrációs követelményeknek. Az eszközregisztráció folyamata cseppet sem bonyolult, ám eszköztípusonként némileg eltérő.
 
--   **iOS- és Mac-eszköz** iPadek, iPhone-ok és MacOS-es eszközök regisztrálásához [be kell szereznie egy Apple MDM Push-tanúsítványt](apple-mdm-push-certificate-get.md). Ha feltöltötte az MDM Push-tanúsítványt az Intune-ba, megkezdheti az [iOS-es eszközök regisztrálását](/intune-user-help/enroll-your-device-in-intune-ios) a Céges portál alkalmazással, illetve a [MacOS-es eszközök regisztrálását](/intune-user-help/enroll-your-device-in-intune-macos) a Céges portál webhelyen.
+-   **iOS- és Mac-eszközök** iPadek, iPhone-ok és macOS rendszerű eszközök regisztrálásához [be kell szereznie egy Apple MDM Push-tanúsítványt](apple-mdm-push-certificate-get.md). Ha feltöltötte az MDM Push-tanúsítványt az Intune-ba, a felhasználók megkezdhetik az [iOS-eszközök regisztrálását](/intune-user-help/enroll-your-device-in-intune-ios) a Céges portál alkalmazásban, illetve a [macOS rendszerű eszközök regisztrálását](/intune-user-help/enroll-your-device-in-intune-macos) a Céges portál webhelyen.
 
 -   **Android-eszközök** Android-eszközein nincs teendője, ezek alapértelmezés szerint készen állnak az Intune szolgáltatásba való regisztrációra. A felhasználók rendkívül egyszerűen, a Google Play Áruházban elérhető Munkahelyi portál alkalmazással [regisztrálhatják Android-eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phone-telefonok és PC-k** A Windows-eszközök további beállítások használatával regisztrálhatók. A felhasználó élmény egyszerűsítése érdekében az Azure Active Directory (AD) Premium szolgáltatással engedélyezheti a Windows 10-es számítógépek és a Windows 10-es mobileszközök automatikus regisztrációját is. Ha nem rendelkezik Azure AD Premium szolgáltatással, vagy ha a Windows 8.1-hez van szüksége támogatásra, a regisztrálási folyamat megkönnyítése érdekében létrehozhat [a regisztrációs kiszolgálóhoz tartozó DNS-aliast](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium).
+-   **Windows Phone-telefonok és PC-k** A Windows-eszközök további beállítások használatával regisztrálhatók. A felhasználói élmény egyszerűsítése érdekében engedélyezheti a Windows 10-es számítógépek és a Windows 10-es mobileszközök prémium szintű Azure Active Directory (AD) szolgáltatásban való automatikus regisztrációját. Ha nem rendelkezik Azure AD Premium szolgáltatással, vagy ha a Windows 8.1-hez van szüksége támogatásra, a regisztrálási folyamat megkönnyítése érdekében létrehozhat [a regisztrációs kiszolgálóhoz tartozó DNS-aliast](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium).
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>A felügyelt eszközök alapvető biztonsági követelményeknek való megfelelésének ellenőrzése
 
 Miután a felhasználók regisztrálják eszközeiket a felügyelet alá, az IT-részlegnek biztosítania kell, hogy a vállalati alkalmazások és adatok elérésére használt eszközök megfeleljenek az alapvető biztonsági követelményeknek. Ilyen szabály lehet például, hogy PIN-kódot kell használni az eszközök eléréséhez, és titkosítani kell az eszközökön tárolt adatokat. Az ilyen szabályok összességét [megfelelőségi szabályzatnak](device-compliance.md) nevezzük.
 
-Amikor [megfelelőségi szabályzatot telepít](device-compliance-get-started.md) egy felhasználónak, akkor az Intune az illető összes Intune által felügyelt eszközénél ellenőrzi, hogy megfelelnek-e a BYOD-szabályzat részeként definiált alapvető biztonsági követelményeknek. Az eszközök a megfelelőségi ellenőrzés után lejelentik állapotukat az Intune-nak. Bizonyos esetekben előfordulhat, hogy a rendszer a felhasználóktól egyes beállítások módosítását kéri, például a PIN-kód vagy az eszköztitkosítás megváltoztatását. Egyéb esetekben a céges portál alkalmazás egyszerű értesítést küld a felhasználónak a szabályzat feltételeinek nem megfelelő beállításokról.
+Amikor [megfelelőségi szabályzatot telepít](device-compliance-get-started.md) egy felhasználó számára, az Intune az illető összes Intune által felügyelt eszközénél ellenőrzi, hogy az eszköz megfelel-e a BYOD-szabályzat részeként definiált alapvető biztonsági követelményeknek. Az eszközök a megfelelőségi ellenőrzés után lejelentik állapotukat az Intune-nak. Bizonyos esetekben előfordulhat, hogy a rendszer a felhasználóktól egyes beállítások módosítását kéri, például a PIN-kód vagy az eszköztitkosítás megváltoztatását. Egyéb esetekben a céges portál alkalmazás egyszerű értesítést küld a felhasználónak a szabályzat feltételeinek nem megfelelő beállításokról.
 
 ## <a name="provide-access-to-company-resources"></a>Hozzáférés biztosítása a vállalati erőforrásokhoz
 
-Általános jelenség, hogy dolgozói szeretnék mobileszközeiken is elérni a vállalati levelezést és dokumentumokat. Az is fontos szempont számukra, hogy ennek beállításához ne kelljen bonyolult lépéseket elvégezni, illetve a segélyszolgálatnak telefonálgatni. Az Intune segítségével könnyebben [hozhat létre és telepíthet e-mail-beállításokat](email-settings-configure.md) a mobileszközökre előre telepített natív levelezőalkalmazásokhoz.
+Általános jelenség, hogy az alkalmazottak szeretnék mobileszközeiken is elérni a céges levelezést és dokumentumokat. Az is fontos szempont számukra, hogy ennek beállításához ne kelljen bonyolult lépéseket elvégezni, vagy felhívni az ügyfélszolgálatot. Az Intune segítségével könnyebben [hozhat létre és telepíthet e-mail-beállításokat](email-settings-configure.md) a mobileszközökre előre telepített natív levelezőalkalmazásokhoz.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Az Intune az iOS App Store áruházból és a Vállalati Microsoft Áruházból 
 
 ## <a name="protect-company-data"></a>Vállalati adatok védelme
 
-Az Intune a vállalati adatokat számos technológiai réteg segítségével védi. Az identitáskezelő rétegben a feltételes hozzáférés gondoskodik a védelemről. A feltételes hozzáféréssel a szolgáltatásokhoz csak felügyelt, illetve a szabályoknak megfelelő eszközökkel lehet hozzáférni. Az ügyfél-alkalmazási rétegben a mobilalkalmazás-kezelés (MAM) gondoskodik az adatvesztés elleni védelemről.  Ennek részeként megakadályozza az adatok nem védett alkalmazásokba vagy tárhelyekre történő áthelyezését, valamint az eszköz elvesztése vagy ellopása esetén törlik az adatokat.
+Az Intune a vállalati adatokat számos technológiai réteg segítségével védi. Az identitáskezelő rétegben a feltételes hozzáférés gondoskodik a védelemről. A feltételes hozzáféréssel a szolgáltatásokhoz csak felügyelt, illetve a szabályoknak megfelelő eszközökkel lehet hozzáférni. Az ügyfélalkalmazási réteg szintjén alkalmazásvédelmi szabályzatok nyújtanak védelmet az adatvesztés ellen. Ennek részeként megakadályozza az adatok nem védett alkalmazásokba vagy tárhelyekre történő áthelyezését, valamint az eszköz elvesztése vagy ellopása esetén törlik az adatokat.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>A vállalati erőforrásokhoz való feltételes hozzáférés betartatása
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > A feltételes hozzáférési szabályzatok csak akkor működnek, ha korábban már létrehozott egy megfelelőségi szabályzatot, amelynek alapján a rendszer értékelni tudja a megfelelést.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Vállalati adatvesztés megelőzése alkalmazásvédelmi szabályzatokkal
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>A céges adatvesztés megelőzése alkalmazásvédelmi szabályzatokkal
 
 Az Intune alkalmazásvédelmi szabályzataival Ön döntheti el, hogyan történjen az adatok elérése eszközregisztrációval, illetve anélkül. Ez a sokoldalúság teszi lehetővé a céges adatok védelmét, így a felhasználók akkor is biztonságosan elérhetik azokat, ha nem regisztrálták az eszközüket az Intune-nal.
 
-Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policies.md) védheti a felhasználók iOS-es és androidos eszközeivel elért vállalati adatokat. Ezeknek az alkalmazásszintű szabályzatoknak a használatával megszabhatja, hogy dolgozói hogyan használhatják fel és oszthatják meg az adatokat még akkor is, ha valamelyik eszközt nem felügyeli az Intune.
+Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policies.md) megvédheti azokat a céges adatokat, amelyeket a felhasználók iOS- és Android-eszközeikkel érnek el. Ezeknek az alkalmazásszintű szabályzatoknak a használatával megszabhatja, hogy dolgozói hogyan használhatják fel és oszthatják meg az adatokat még akkor is, ha valamelyik eszközt nem felügyeli az Intune.
 
-A [Windows Információvédelem (WIP) szabályzataival](app-protection-policies-configure-windows-10.md) ugyanezt teheti meg a felügyelt Windows 10-es eszközökön. Ezek a szabályzatok nem befolyásolják a dolgozók felhasználói élményét, és nem igénylik a hálózati környezet és más alkalmazások módosítását sem.
+A [Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) használatával ugyanezt megteheti felügyelt Windows 10-s eszközök esetében is. Ezek a szabályzatok nem befolyásolják a dolgozók felhasználói élményét, és nem igénylik a hálózati környezet és más alkalmazások módosítását sem.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Céges adatok törlése a személyes adatok érintetlenül hagyásával
 
-A vállalati alkalmazásokat és adatokat el lehet távolítani azokról az eszközökről, amelyeket a továbbiakban már nem használnak munkahelyi célokra, amelyeket más célra használnak, vagy amelyeket elhagytak. Erre az Intune a céges adatok eltávolítása és a gyári beállítások visszaállítása funkciók használatával ad lehetőséget. A felhasználók az Intune Céges portálról távolról is visszaállíthatják saját eszközeiket, ha azokat korábban regisztrálták az Intune-ban.
+A céges alkalmazásokat és adatokat el lehet távolítani azokról az eszközökről, amelyeket a továbbiakban már nem használnak munkahelyi célokra, a továbbiakban más célra fognak használni, vagy elvesztek. Erre az Intune a céges adatok eltávolítása és a gyári beállítások visszaállítása funkciók használatával ad lehetőséget. A felhasználók az Intune Céges portálról távolról is visszaállíthatják saját eszközeiket, ha azokat korábban regisztrálták az Intune-ban.
 
 A [gyári beállítások visszaállítása](devices-wipe.md) visszaállítja az eszközt a gyári alaphelyzetre, eltávolít minden felhasználói adatot és beállítást, és eltávolítja az eszközt az Intune felügyeleti szolgáltatásából. A [Céges adatok eltávolítása](devices-wipe.md#remove-company-data) csak a céges adatokat távolítja el az eszközről, a személyes felhasználói adatokat nem érinti.
 

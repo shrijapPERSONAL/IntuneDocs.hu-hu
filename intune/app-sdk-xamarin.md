@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b900cb2c2c02ca96a771dbebd208872941079e38
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a684f7ab5841513e8e72a5e6c0af99f52e5fd207
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin összetevő
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 07/01/2017
 ## <a name="overview"></a>Áttekintés
 Az [Intune App SDK Xamarin összetevő](https://components.xamarin.com/view/microsoft.intune.mam) lehetővé teszi az [Intune alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) használatát a Xamarin platformmal fejlesztett iOS- és Android-alkalmazásokban. Az összetevő lehetővé teszi a fejlesztők számára, hogy Intune alkalmazásvédelmi funkciókat építsenek be a Xamarin-alapú alkalmazásaikba.
 
-Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a modult az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a rendszergazda olyan szabályzatot tud érvénybe léptetni a Microsoft Intune-nal, amely számos adatvédelmi funkciót támogat.
+A Microsoft Intune App SDK Xamarin összetevő lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven alkalmazás- vagy MAM-szabályzatokat) építsen be a Xamarinnal fejlesztett alkalmazásokba. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
 
 ## <a name="whats-supported"></a>Támogatott források és műveletek
 
 ### <a name="developer-machines"></a>Fejlesztői gépek
-* Windows
+* macOS
 
 
 ### <a name="mobile-app-platforms"></a>Mobilalkalmazás-platformok
@@ -49,11 +49,11 @@ Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módos�
 * Külső EMM által regisztrált eszközök
 * Nem felügyelt (semmilyen MDM által nem regisztrált) eszközök
 
-Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazások mostantól fogadni tudják az Intune mobilalkalmazás-felügyeleti (MAM-) szabályzatait az Intune mobileszköz-felügyeletben (MDM) regisztrált eszközökön és a nem regisztrált eszközökön is.
+Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alkalmazásokra mostantól alkalmazhatók az Intune alkalmazásvédelmi szabályzatai az Intune mobileszköz-felügyeletében (MDM) regisztrált eszközökön és a nem regisztrált eszközökön is.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* **[Csak az Android esetében]** Az eszközön mindig a legújabb Microsoft Intune Céges portál alkalmazást kell telepíteni.
+* **[Csak az Android esetében]** Az eszközön a legújabb Microsoft Intune Céges portál alkalmazást kell telepíteni.
 
 ## <a name="get-started"></a>Első lépések
 
@@ -65,13 +65,13 @@ Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazás
 
 4.  Futtassa rendszergazdaként a következő parancsot a parancssorban: `Xamarin.Component.exe install <.xam> file`.
 
-5.  A Visual Studióban kattintson jobb gombbal a korábban létrehozott Xamarin-projektben az **components** (összetevők) elemre.
+5.  A Visual Studióban kattintson a jobb gombbal a korábban létrehozott Xamarin-projektben a **components** (összetevők) elemre.
 
 6.  Válassza az **Edit Components** (Összetevők szerkesztése) lehetőséget, és vegye fel az Intune App SDK összetevőt, amelyet helyileg töltött le a számítógépére.
 
 
 
-## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>Intune MAM engedélyezése iOS-mobilalkalmazásban
+## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése az iOS-mobilalkalmazásban
 1.  Az Intune App SDK inicializálásához az `AppDelegate.cs` osztályban lévő összes API esetén hívást kell kezdeményeznie. Példa:
 
       ```csharp
@@ -84,7 +84,7 @@ Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazás
       ```
 
 2.  Most, hogy megtörtént az összetevő hozzáadása és inicializálása, kövesse az App SDK iOS-mobilalkalmazásba való beépítéséhez szükséges általános lépéseket. A natív iOS-alkalmazások engedélyezéséről szóló teljes dokumentációt [az iOS-hez készült Intune App SDK fejlesztői útmutatójában](app-sdk-ios.md) találja.
-3. **Fontos**: Számos, kizárólag a Xamarin-alapú iOS-alkalmazásokra vonatkozó módosítás van. A kulcslánccsoportok engedélyezésekor például a következőt kell hozzáadnia ahhoz, hogy felvegye a Xamarin-mintaalkalmazást, amelyet az összetevőhöz hozzáadott. Alább talál egy példát arra, hogy milyen csoportokat kell tartalmazniuk a kulcslánchozzáférési csoportoknak:
+3. **Fontos**: Számos, kizárólag a Xamarin-alapú iOS-alkalmazásokra vonatkozó módosítás van. A kulcslánccsoportok engedélyezésekor például a következőt kell hozzáadnia ahhoz, hogy felvegye azt a Xamarin-mintaalkalmazást, amelyet az összetevőhöz hozzáadott. Alább talál egy példát arra, hogy milyen csoportokat kell tartalmazniuk a kulcslánchozzáférési csoportoknak:
 
       ```xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -102,14 +102,14 @@ Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alapú alkalmazás
       </plist>
       ```
 
-Teljesítette az összetevő Xamarin-alapú iOS-alkalmazásba való beépítéséhez szükséges lépéseket. Ha a projekt elkészítéséhez Xcode-ot használ, akkor használhatja az `Intune App SDK Settings.bundle` csomagot is. Ezzel a projekt elkészítése során ki- és bekapcsolja az Intune-szabályzatok beállításait a teszteléshez és a hibakereséshez. Ha ki szeretné használni ennek a csomagnak az előnyeit, kövesse [az iOS-hez készült Intune App SDK fejlesztői útmutatójában](app-sdk-ios.md) található lépéseket, és olvassa el [az Xcode-ban történő hibakeresésről szóló szakaszt](app-sdk-ios.md#status-result-and-debug-notifications).
+Teljesítette az összetevő Xamarin-alapú iOS-alkalmazásba való beépítéséhez szükséges lépéseket. Ha a projekt elkészítéséhez Xcode-ot használ, akkor használhatja az `Intune App SDK Settings.bundle` csomagot is. Ezzel a projekt elkészítése során ki- és bekapcsolhatja az Intune-szabályzatok beállításait a teszteléshez és a hibakereséshez. Ha ki szeretné használni ennek a csomagnak az előnyeit, kövesse [az iOS-hez készült Intune App SDK fejlesztői útmutatójában](app-sdk-ios.md) található lépéseket, és olvassa el [az Xcode-ban történő hibakeresésről szóló szakaszt](app-sdk-ios.md#status-result-and-debug-notifications).
 
-## <a name="enabling-mam-in-your-android-mobile-app"></a>MAM engedélyezése Android-mobilalkalmazásban
-Olyan Xamarin-alapú Android-alkalmazások esetén, amelyek nem használnak felhasználóifelület-keretrendszert, olvassa el és kövesse az [Androidhoz készült Intune App SDK fejlesztői útmutatójában] leírtakat. Xamarin-alapú Android-alkalmazások esetén le kell cserélnie az osztályt, a metódusokat és a tevékenységeket a MAM-beli megfelelőikre az útmutatóban található [táblázat](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) alapján. Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl.
+## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Az alkalmazásvédelmi szabályzatok engedélyezése androidos mobilalkalmazásban
+Olyan Xamarin-alapú androidos alkalmazások esetén, amelyek nem használnak felhasználóifelület-keretrendszert, olvassa el és kövesse az [Androidhoz készült Intune App SDK fejlesztői útmutatójában](app-sdk-android.md) leírtakat. Xamarin-alapú Android-alkalmazások esetén le kell cserélnie az osztályt, a metódusokat és a tevékenységeket a MAM-beli megfelelőikre az útmutatóban található [táblázat](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) alapján. Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl.
 
 A Xamarin Formshoz és más felhasználóifelület-keretrendszerekhez biztosítunk egy `MAM.Remapper` nevű eszközt. Az eszköz elvégzi Ön helyett az osztály lecserélését. Ehhez azonban el kell végezni a következő lépéseket:
 
-1.  Fel kell vennie egy hivatkozást a ` Microsoft.Intune.MAM.Remapper.Tasks` NuGet-csomag 0.1.0.0-s vagy frissebb verziójára.
+1.  Fel kell vennie egy hivatkozást a `Microsoft.Intune.MAM.Remapper.Tasks` NuGet-csomag 0.1.0.0-s vagy frissebb verziójára.
 
 2.  Hozzá kell adnia a következő sort az Androidhoz készült csproj-fájlhoz:
   ```xml
@@ -119,6 +119,6 @@ A Xamarin Formshoz és más felhasználóifelület-keretrendszerekhez biztosítu
 
 3.  A hozzáadott `remapping-config.json` fájl felépítési műveleteként a **RemappingConfigFile** műveletet kell beállítania. A felvett `remapping-config.json` fájl kizárólag a Xamarin.Forms-szal működik. Más felhasználóifelület-keretrendszerek esetén tekintse meg a Remapper NuGet-csomaghoz tartozó fontos fájlt.
 
-## <a name="test-your-app"></a>Az alkalmazás tesztelése
+## <a name="next-steps"></a>További lépések
 
 Elvégezte az összetevő alkalmazásba történő beépítésének alapvető lépéseit. Következőnek kövesse a Xamarin-alapú Android-mintaalkalmazásban lévő lépéseket. Két mintát biztosítottunk, egyet a Xamarin.Forms-hoz és egyet az Androidhoz.
