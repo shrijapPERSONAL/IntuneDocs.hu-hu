@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="add-corporate-identifiers"></a>Vállalati azonosítók felvétele
+# <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,15 +31,13 @@ Az eszköz vállalati tulajdonúként lesz azonosítva, ha az alábbi feltétele
 
 - [i](device-enrollment-manager-enroll.md) fiókkal regisztrálták (bármely platformon).
 - Az Apple [Készülékregisztrációs programban](device-enrollment-program-enroll-ios.md), az [Apple School Managerrel](apple-school-manager-set-up-ios.md) vagy az [Apple Configuratorral](apple-configurator-enroll-ios.md) regisztrálták (csak iOS esetén).
-- Előzetesen deklarálták az eszközt nemzetközi mobilkészülék-azonosító (IMEI) számmal (minden platform IMEI számokkal) vagy sorozatszámokkal (iOS és Android).
-- Az eszköz regisztrálva van az Azure Active Directoryban vagy a Nagyvállalati mobilitási csomagban Windows 10 Enterprise-eszközként (csak Windows 10 esetén).
-- Az eszköz **tulajdonságaiban** a **Vállalati** érték van megadva.
+- [Regisztráció előtt az eszközt céges eszközként azonosították](#identify-corporate-owned-devices-with-imei-or-serial-number) nemzetközi mobilkészülék-azonosító (IMEI-) számmal (minden IMEI-számmal rendelkező platform esetében) vagy sorozatszámmal (csak iOS és Android esetében)
+- Az eszköz regisztrálva van az Azure Active Directory vagy a Enterprise Mobility + Security szolgáltatásban Windows 10 Enterprise-eszközként (csak Windows 10 esetén)
+- Az eszköz tulajdonságai között [az eszköz céges tulajdonként](#change-device-ownership) van feltüntetve
 
-A vállalati tulajdonú eszközöknél a **Vállalati** jelenik meg az eszközrekordjuk **Tulajdonos** oszlopában az Intune-ban. A megtekintéséhez nyissa meg az **Eszközök** > **Minden eszköz** panelt.
+## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Céges eszközök azonosítása IMEI- vagy sorozatszám alapján
 
-## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Eszköz előzetes deklarálása IMEI számmal vagy sorozatszámmal
-
-Intune-rendszergazdaként létrehozhat és importálhat IMEI számokat vagy sorozatszámokat felsoroló, vesszővel tagolt (.csv) fájlt. Az Intune ezeket az azonosítókat használva határozza meg, hogy egy adott eszköz céges tulajdonú-e. IMEI-számot minden támogatott platformhoz megadhat. Sorozatszámot csak iOS és Android rendszerű eszközhöz adhat meg. Adminisztrációs célból minden IMEI-azonosítóhoz vagy sorozatszámhoz megadhat további adatokat is.
+Intune-rendszergazdaként létrehozhat és importálhat IMEI számokat vagy sorozatszámokat felsoroló, vesszővel tagolt (.csv) fájlt. Az Intune ezeket az azonosítókat használva határozza meg a regisztráció során, hogy egy adott eszköz céges tulajdonú-e. IMEI-számot minden támogatott platformhoz megadhat. Sorozatszámot csak iOS és Android rendszerű eszközhöz adhat meg. Adminisztrációs célból minden IMEI-azonosítóhoz vagy sorozatszámhoz megadhat további adatokat is.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -80,7 +78,7 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
 Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszközök **Regisztrált** vagy **Nincs kapcsolat** állapotúak lehetnek. ****Utóbbi állapot azt jelenti, hogy az eszköz még nem lépett kapcsolatba az Intune szolgáltatással.
 
-## <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
+### <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
 
 1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget.
 2. Válassza ki a törölni kívánt eszközazonosítókat, majd kattintson a **Törlés** gombra.
@@ -88,5 +86,16 @@ Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszkö
 
 Ha törli egy regisztrált eszköz céges azonosítóját, azzal nem változtatja meg az eszköz tulajdonosát. Az eszköz tulajdonosának módosításához nyissa meg az **Eszközök** > **Minden eszköz** panelt, válassza ki az eszközt, majd válassza a **Tulajdonságok** lehetőséget, és módosítsa az **Eszköz tulajdonosa** értékét.
 
-## <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
+### <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
 Az IMEI-azonosítók részletes specifikációját a [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) lapon találja.
+
+## <a name="change-device-ownership"></a>Eszköz tulajdonosának módosítása
+
+Az Intune-ban az eszközök tulajdonságai között mindegyik eszközbejegyzésnél szerepel a **Tulajdonos**. Rendszergazdaként megadhatja, hogy az adott eszköz **Személyes** vagy **Céges**.
+
+**Eszköz tulajdonosának módosítása:**
+1. Az Intune-ban az Azure Portalon az **Eszközök** > **Minden Eszköz** lehetőségnél válassza ki az adott eszközt.
+3. Válassza a **Tulajdonságok** lehetőséget.
+4. Adja meg az **Eszköz tulajdonosa** beállításnál, hogy az eszköz **Személyes** vagy **Céges**.
+
+  ![Képernyőkép az eszköz tulajdonságai képernyőről az Eszközkategória és az Eszköz tulajdonosa beállításokkal.](./media/device-properties.png)

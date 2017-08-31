@@ -4,7 +4,7 @@ description: "Az iOS és az Android platformhoz is elérhető Intune App SDK leh
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Az Intune App SDK áttekintése
 Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Ha hatékonyabbá szeretné tenni a végfelhasználók és a rendszergazdák munkáját, az API-jainkkal személyre szabhatja alkalmazása működését olyan funkciók tekintetében, amelyek használatához az alkalmazás közreműködése szükséges.
@@ -62,8 +62,7 @@ A többszörös identitás támogatása megoldást kínál arra az adatvédelmi 
 ### <a name="app-protection-without-device-enrollment"></a>Alkalmazásvédelem eszközregisztráció nélkül
 
 >[!IMPORTANT]
->Az Intune-alkalmazásvédelem eszközregisztráció nélkül még nem érhető el az Android rendszerhez készült Intune App SDK-val. Elérhető viszont az Intune alkalmazásburkolóval, az iOS rendszerhez készült SDK-val, az SDK Xamarin-összetevővel és az SDK Cordova beépülő modullal.
-
+>Az Intune-alkalmazásvédelem az eszköz regisztrációja nélkül is elérhető az Intune alkalmazásburkoló eszközei, az Android vagy iOS rendszerhez készült Intune App SDK, az SDK Xamarin összetevőjének és az SDK Cordova beépülő moduljának használatával.
 
 A saját eszközt használó felhasználók sok esetben anélkül szeretnének a vállalati adatokhoz hozzáférni, hogy eszközüket mobileszköz-felügyeleti (MDM) szolgáltatóban kellene regisztrálniuk. Az MDM-alapú regisztrációhoz globális irányítás szükséges az eszköz felett, a felhasználók pedig sok esetben nem szívesen biztosítanak saját eszközük felett ilyen mértékű irányítást a vállalatnak.
 

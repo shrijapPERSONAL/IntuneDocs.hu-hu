@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Az Intune használatának gyakori módjai
 
@@ -40,11 +40,11 @@ Az alábbiakban röviden bemutatjuk az Intune-ra épülő hat leggyakoribb forga
 A legtöbb nagyvállalati mobilitási stratégia annak megtervezésével kezdődik, hogy a dolgozók hogyan tudják biztonságosan elérni az e-maileket az internethez kapcsolódó mobileszközeikkel. Számos szervezet továbbra is a vállalati hálózatában tárolja és üzemelteti a helyszíni adatokat és az alkalmazáskiszolgálókat, például a Microsoft Exchange-et.
 
 
-Az Intune és a Microsoft Enterprise Mobility + Security (EMS) olyan egyedi, integrált [feltételes hozzáférési megoldást](conditional-access.md) ([Klasszikus portál](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) kínál az Exchange Serverhez, amely gondoskodik arról, hogy egyetlen mobileszköznek se legyen hozzáférése az e-mailekhez, amíg az eszköz nincs regisztrálva az Intune-ban. Mindezt úgy hajthatja végre, hogy nem kell további átjárót üzembe helyeznie a vállalati hálózat peremén.
+Az Intune és a Microsoft Enterprise Mobility + Security (EMS) olyan egyedi, integrált [feltételes hozzáférési megoldást](conditional-access.md) ([Klasszikus portál](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) kínál az Exchange Serverhez, amely gondoskodik arról, hogy egyetlen mobileszköznek se legyen hozzáférése az e-mailekhez, amíg az eszköz nincs regisztrálva az Intune-ban. Mindezt anélkül hajthatja végre, hogy további átjárót helyezne üzembe a vállalati hálózat peremén.
 
-Az Intune támogatja az olyan mobilalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói. Ez általában az [Intune által kezelt, hozzáférés-vezérlésre használt tanúsítványokkal](certificates-configure.md) ([Klasszikus portál](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)), valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Microsoft Azure Active Directory-alkalmazásproxyval oldható meg.  
+Az Intune támogatja az olyan mobilalkalmazások hozzáférésének biztosítását is, amelyek biztonságos hozzáférést igényelnek a helyszíni adatokhoz, mint például az üzleti alkalmazások kiszolgálói. Ez általában az [Intune által kezelt, hozzáférés-vezérlésre használt tanúsítványokkal](certificates-configure.md) ([Klasszikus portál](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)), valamint a szegélyhálózatban található szabványos VPN-átjáróval vagy proxyval, például a Microsoft Azure Active Directory-alkalmazásproxyval oldható meg. 
 
-Ezekben az esetekben a vállalati adatok kizárólag az eszköznek a felügyelet hatálya alá való regisztrálásával érhetők el. Az eszközök regisztrálása után a felügyeleti rendszer gondoskodik arról, hogy az eszközök megfeleljenek a szabályzatoknak, mielőtt hozzáférhetnek a vállalati adatokhoz. Ezenkívül az Intune [alkalmazásburkoló eszközével és az App SDK-val](apps-prepare-mobile-application-management.md) az elért adatok az üzleti alkalmazáson belül tarthatók, hogy az alkalmazás ne tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy szolgáltatásoknak.
+Ezekben az esetekben a céges adatok kizárólag az eszköz felügyeletre való regisztrálásával érhetők el. Az eszközök regisztrálása után a felügyeleti rendszer gondoskodik arról, hogy az eszközök megfeleljenek a szabályzatoknak, mielőtt hozzáférhetnek a vállalati adatokhoz. Ezenkívül az Intune [alkalmazásburkoló eszközével és az App SDK-val](apps-prepare-mobile-application-management.md) az elért adatok az üzleti alkalmazáson belül tarthatók, hogy az alkalmazás ne tudja átadni a vállalati adatokat a fogyasztói alkalmazásoknak vagy szolgáltatásoknak.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -61,7 +61,7 @@ A megfelelő alkalmazás-áruházakban elérhető Office-mobilalkalmazások fel 
 Az Office 365 gyakran alkalmazott telepítési módszere, hogy ha mindent, a vállalati alkalmazásokat és tanúsítványokat, valamint a Wi-Fi és a VPN konfigurációját is telepíteni kell az eszközökre, akkor kötelező regisztrálni őket felügyeletre. Ez gyakorta előfordul a vállalati tulajdonú eszközök esetében.  
 
 
-Ha azonban a felhasználónak egyszerűen csak a vállalati e-mailekhez és dokumentumokhoz való hozzáférésre van szüksége, ami általában a személyes tulajdonú eszközök esetében fordul elő, akkor meg lehet követelni, hogy a felhasználó az Office-mobilalkalmazásokat használja (amelyekre [érvényesítette az alkalmazásvédelmi szabályzatokat](app-protection-policies.md) – [Klasszikus portál](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)), és egyáltalán ne regisztrálja az eszközt.  
+Ha azonban a felhasználóinak egyszerűen csak a céges e-mailekhez és dokumentumokhoz való hozzáférésre van szüksége, ami általában a személyes tulajdonú eszközök esetében fordul elő, akkor meg lehet követelni, hogy a felhasználó az Office-mobilalkalmazásokat használja (amelyekre [érvényesítette az alkalmazásvédelmi szabályzatokat](app-protection-policies.md) – [Klasszikus portál](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)), és egyáltalán ne regisztrálja az eszközt.  
 
 
 
@@ -75,7 +75,7 @@ A saját eszközök használata (BYOD) egyre népszerűbb a szervezetekben, mive
 
 Ha az eszközök regisztrálása nem kivitelezhető lehetőség, arra az esetre az Intune kínál egy másik BYOD-módszert is, amely egyszerűen csak [felügyeli a vállalati adatokat tartalmazó alkalmazásokat](app-protection-policies.md) ([Klasszikus portál](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)). Az Intune védelmet nyújt a vállalati adatok számára akkor is, ha a szóban forgó alkalmazás vállalati és személyes adatokhoz is hozzáfér, mint az Office-mobilalkalmazások esetében.  
 
-Rendszergazdaként előírhatja a felhasználóknak, hogy az Office-mobilalkalmazásokkal érjék el az Office 365-öt, és az alkalmazásokat olyan szabályzatokkal konfigurálhatja, amelyek fenntartják az adatok védelmét (például titkosítással, PIN-kódos védelemmel stb.). Ezek a szabályzatok megakadályozzák az adatvesztést a nem felügyelt alkalmazásoknál és tárolóhelyeknél, az ilyen alkalmazásokon belül és kívül is. Például a szabályzatok megakadályozzák, hogy a felhasználó szöveget másoljon a vállalati e-mail-profilból egy fogyasztói e-mail-profilba még akkor is, ha mindkét profil az Outlook Mobile-ban van konfigurálva. Hasonló konfigurációkat adhat meg a BYOD-felhasználók által használt más szolgáltatásokhoz és alkalmazásokhoz is.
+Rendszergazdaként előírhatja a felhasználóknak, hogy az Office-mobilalkalmazásokkal érjék el az Office 365-öt, és az alkalmazásokat olyan szabályzatokkal konfigurálhatja, amelyek fenntartják az adatok védelmét (például titkosítással, PIN-kódos védelemmel stb.). Ezek az alkalmazásvédelmi szabályzatok megakadályozzák az adatvesztést a nem felügyelt alkalmazásoknál és tárolóhelyeknél, az ilyen alkalmazásokon belül és kívül is. Például a szabályzatok megakadályozzák, hogy a felhasználó szöveget másoljon a vállalati e-mail-profilból egy fogyasztói e-mail-profilba még akkor is, ha mindkét profil az Outlook Mobile-ban van konfigurálva. Hasonló konfigurációkat adhat meg a BYOD-felhasználók által használt más szolgáltatásokhoz és alkalmazásokhoz is.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

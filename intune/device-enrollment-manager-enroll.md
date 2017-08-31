@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Eszközök regisztrálása a készülékregisztráció-kezelővel
 
@@ -40,15 +40,15 @@ Csak az Intune-konzolon szereplő felhasználók lehetnek eszközregisztráció-
 
 A DEM-felhasználó a következőket teheti:
 
--   Legfeljebb 1000 eszköz regisztrálása az Intune-ban.
--   Bejelentkezés a Vállalati portálra vállalati alkalmazások beszerzéséhez.
--   A vállalati adatok elérésének konfigurálása szerepkör-specifikus alkalmazások a táblagépekre való telepítésével.
+-   Legfeljebb 1000 eszköz regisztrálása az Intune-ban
+-   Bejelentkezés a Céges portálra céges alkalmazások beszerzéséhez
+-   Szerepkör-specifikus alkalmazások telepítése a táblagépekre a céges adatok elérésének konfigurálásához
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>A DEM-fiókkal regisztrált eszközökre vonatkozó korlátozások
 
 Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a következő korlátozások vonatkoznak:
 
-  - Nincs felhasználónkénti hozzáférés. Mivel az eszközök nem rendelkeznek hozzárendelt felhasználóval, az eszközök nem férhetnek hozzá az e-mailekhez és a vállalati adatokhoz. A VPN-konfigurációk például továbbra is használhatók, hogy az eszközök alkalmazásai elérhessék az adatokat.
+  - Nincs felhasználónkénti hozzáférés. Mivel az eszközök nem rendelkeznek hozzárendelt felhasználóval, az eszközök nem férhetnek hozzá az e-mailekhez és a céges adatokhoz. A VPN-konfigurációk például továbbra is használhatók, hogy az eszközök alkalmazásai elérhessék az adatokat.
   - Nincs feltételes hozzáférés, mivel ezek felhasználónkénti forgatókönyvek.
   - A DEM-felhasználó magán az eszközön nem törölheti az eszközregisztráció-kezelésre regisztrált eszközök regisztrációját a Vállalati portálon. Az Intune-rendszergazda ezt elvégezheti, de a DEM-felhasználó nem.
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.

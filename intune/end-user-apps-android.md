@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android-felhasználói alkalmazások letöltése
 
@@ -50,9 +50,9 @@ Ebben az esetben a Céges portál értesíti a felhasználót, és közvetlenül
 
 Az alkalmazások az alább leírtak szerint kezelhetők vagy nem kezelhetők. Az alkalmazások kezeltként való beállítása minden típusú androidos eszközön azonos.
 
-**Felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal felügyelhetők. Ezek az Intune által becsomagolt vagy az Intune Mobile Application Management (MAM) SDK-val készített alkalmazások. Ezek az alkalmazások az Intune-nal kezelhetők, és alkalmazás-házirendekkel felügyelhetők.
+**Felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal felügyelhetők. Ezeket az Intune „csomagolta be”, vagy az Intune App SDK-val állították össze. Ezek az alkalmazások az Intune-nal kezelhetők, és alkalmazás-házirendekkel felügyelhetők.
 
-**Nem felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal nem felügyelhetők. Ezeket az alkalmazásokat nem az Intune csomagolta be, vagy nem tartalmazzák az Intune MAM SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
+**Nem felügyelt alkalmazások** – Ezek az alkalmazások szabályzatokkal nem felügyelhetők. Ezeket az alkalmazásokat nem az Intune csomagolta be, vagy nem tartalmazzák az Intune App SDK-t. Ezekre az alkalmazásokra nem alkalmazhatók alkalmazás-házirendek.
 
 ### <a name="see-also"></a>További információ
 [Alkalmazások hozzáadása a Microsoft Intune-nal](apps-add.md)

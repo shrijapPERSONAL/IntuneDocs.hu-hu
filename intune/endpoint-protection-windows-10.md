@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows 10 rendszerű eszközökön Endpoint Protection-profillal vezérelheti az olyan biztonsági szolgáltatásokat, mint például a BitLocker.
+Az Endpoint Protection-profillal a Windows 10-es eszközök olyan biztonsági szolgáltatásait szabályozhatja, mint például a BitLocker és a Windows Defender.
 
 A következő témakör az Endpoint Protection-profilok létrehozását mutatja be.
 
@@ -38,13 +38,18 @@ A következő témakör az Endpoint Protection-profilok létrehozását mutatja 
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az eszközfunkció-profil **Nevét** és **Leírását**.
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
-6. A **Profil típusa** legördülő listából válassza az **Endpoint Protection** lehetőséget. 
+6. A **Profil típusa** legördülő listából válassza az **Endpoint Protection** lehetőséget.
 7. A **Windowsos titkosítás** panelen adja meg, milyen beállításokkal szeretné működtetni a rendszert. A következő témakörben leírtak alapján megértheti, milyen funkciót látnak el az egyes beállítások. Ha elkészült, válassza az **OK** elemet.
 8. Lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** lehetőséget.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Útmutató Endpoint Protection-profil beállításához
+## <a name="windows-defender-smartscreen-settings"></a>A Windows Defender SmartScreen beállításai
+
+- **SmartScreen használata alkalmazások és fájlok esetén** –  A Windows SmartScreen használata fájlok és alkalmazások futtatásához.
+- **Nem ellenőrzött fájlok futtatása** – Letilthatja a végfelhasználóknál a Windows SmartScreen által nem ellenőrzött fájlok futtatását.
+
+## <a name="windows-encryption-settings"></a>A Windowsos titkosítás beállításai
 
 ### <a name="windows-settings"></a>Windowsos beállítások
 
@@ -62,16 +67,16 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 
 ### <a name="bitlocker-os-drive-settings"></a>Operációsrendszer-meghajtók BitLocker-beállításai
 
-- **További hitelesítés megkövetelése indításkor** - 
-    - **A BitLocker letiltása kompatibilis TPM-lapka nélküli eszközökön** - 
-    - **TPM-indítás** – Ezzel a beállítással adható meg, hogy a TPM-lapka (Trusted Platform Module – platformmegbízhatósági modul) használata engedélyezett, nem engedélyezett vagy kötelező legyen-e. 
-    - **TPM-indítási PIN-kód** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási PIN-kód használatát. 
-    - **TPM-indítási kulcs** – Ezzel a beállítással adhatja meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítókulcs használatát. 
+- **További hitelesítés megkövetelése indításkor** -
+    - **BitLocker nem kompatibilis TPM-lapkával** -
+    - **TPM-indítás** – Ezzel a beállítással adható meg, hogy a TPM-lapka (Trusted Platform Module – platformmegbízhatósági modul) használata engedélyezett, nem engedélyezett vagy kötelező legyen-e.
+    - **TPM-indítási PIN-kód** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási PIN-kód használatát.
+    - **TPM-indítási kulcs** – Ezzel a beállítással adhatja meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítókulcs használatát.
     - **TPM-indítási kulcs és PIN-kód** – Ezzel a beállítással adhatja meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítókulcs és PIN-kód használatát.
 - **PIN-kód minimális hossza** – Ha engedélyezi ezt a beállítást, megadhatja a TPM-indítási PIN-kód minimális hosszát.
     - **Karakterek minimális száma** – Ezzel a beállítással megadható, hogy hány karaktert kell tartalmaznia az indításkor beírandó PIN-kódnak. A PIN-kód hossza **4**-**20** karakter lehet.
 - **Az operációs rendszer meghajtója helyreállításának engedélyezése** – Ennek a beállításnak a megadásával vezérelheti, hogyan állíthatók helyre a BitLocker által védett operációsrendszer-meghajtók, ha nem állnak rendelkezésre az indításhoz szükséges információk.
-    - **Tanúsítványalapú adat-helyreállítási ügynök engedélyezése** – Ezt a beállítást akkor érdemes engedélyezni, ha azt szeretné, hogy a BitLocker által védett operációsrendszer-meghajtók helyreállításához lehessen adat-helyreállítási ügynököket használni.
+    - **Tanúsítványalapú adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett operációsrendszer-meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
     - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.
     - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
     - **A helyreállítási beállítások elrejtése a BitLocker beállító varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
@@ -92,7 +97,7 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 
 - **Írási hozzáférés letiltása a BitLockerrel nem védett rögzített adatmeghajtókon** – Ha ezt a beállítást engedélyezi, a rögzített vagy beépített adatmeghajtók csak azután lesznek írhatók, ha BitLocker-védelmüket engedélyezte a felhasználó.
 - **Rögzített meghajtók helyreállításának engedélyezése** – Ennek a beállításnak a megadásával vezérelheti, hogyan állíthatók helyre a BitLocker által védett rögzített meghajtók, ha nem állnak rendelkezésre az indításhoz szükséges információk.
-    - **Adat-helyreállítási ügynök engedélyezése** – Ezt a beállítást akkor érdemes engedélyezni, ha azt szeretné, hogy a BitLocker által védett rögzített meghajtók helyreállításához lehessen adat-helyreállítási ügynököket használni.
+    - **Adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett rögzített meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
     - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.  
     - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
     - **A helyreállítási beállítások elrejtése a BitLocker beállító varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
@@ -113,5 +118,3 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 ## <a name="next-steps"></a>További lépések
 
 Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
-
-
