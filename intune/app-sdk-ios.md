@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/27/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29911cf5a8fa3488640813efd8f33ee07c951c31
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -87,9 +87,6 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 2. **2. lehetőség**: Csatolás a `libIntuneMAM.a` erőforrástárhoz. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
 
     ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
-
-    > [!NOTE]
-    > Megjegyzés: ha azt tervezi, hogy közzéteszi az alkalmazást az App Store-ban, a `libIntuneMAM.a` végleges verzióját használja, ne a hibakeresési verziót. A végleges verziót a **release** (kiadás) mappában találja. A hibakeresési verzió részletes kimenetet ad, ami megkönnyíti az Intune App SDK problémáinak elhárítását.
 
     Írja be a `-force_load {PATH_TO_LIB}/libIntuneMAM.a` utasítást a következő helyek egyikére, kicserélve a `{PATH_TO_LIB}` sort az Intune App SDK elérési útjával:
       * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
