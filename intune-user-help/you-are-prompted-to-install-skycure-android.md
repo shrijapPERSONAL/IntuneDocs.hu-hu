@@ -1,11 +1,11 @@
 ---
-title: "Telepítenie kell a Skycure alkalmazást androidos eszközére | Microsoft Docs"
-description: 
+title: "Telepítenie kell a Symantec Endpoint Protection Mobile alkalmazást az Android-eszközön | Microsoft Docs"
+description: "Tájékoztató a SEP Mobile alkalmazás Android-eszközön való telepítéséről."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-android-device"></a>Telepítenie kell a Skycure alkalmazást androidos eszközére
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Telepítenie kell a Symantec Endpoint Protection Mobile alkalmazást az Android-eszközön
 
-A rendszergazda csak a Skycure alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
+A cég informatikai támogató szolgálata csak a Symantec Endpoint Protection (SEP) Mobile alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez az alkalmazás az esetleges fenyegetések felderítésével segíti az eszköz védelmét.
 
 Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasható hibaelhárítási lépéseket.
 
@@ -30,27 +30,27 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 1. Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Skycure telepítése a Play Áruházból** gombra. Ugyanez a Céges portál alkalmazásban is elérhető a __Megfelelőségi részletek__ között.
 
-  ![A Megfelelőségi részletek lap androidos eszközön A nem megfelelő eszközön a Céges portál lap alján üzenet jelzi, hogy az eszköz nem felel meg a mobilkockázati szabályzatnak, és hogy a probléma megoldásához meg kell nyitni a Skycure-t.](./media/skycure-resolves-compliance-android.png)
+  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
-2. Ekkor megnyílik a Skycure telepítési lapja a Play Áruházban. Telepítse a Skycure-t, majd az **ELFOGADÁS** elemre kattintva adjon hozzáférést a Skycure-nak az eszközhöz.
+2. Ekkor megnyílik a SEP Mobile telepítési lapja a Play Áruházban. Telepítse a SEP Mobile-t, majd az **ELFOGADÁS** elemre kattintva adjon hozzáférést a SEP Mobile-nak az eszközhöz.
 
-3. Nyissa meg a Skycure-t, és koppintson a **VERIFY** (Ellenőrzés) elemre.
+3. Nyissa meg a SEP Mobile-t, és koppintson a **VERIFY** (Ellenőrzés) elemre.
 
 4. Koppintson a **Bejelentkezés a következővel: Azure Active Directory** gombra, majd lépjen be abba a fiókba, amelyet a munkahelyi vagy iskolai e-mailek és fájlok elérésére használ.
 
 5. Válassza ki azt a fiókot, amit munkahelyi vagy iskolai e-mailekhez és fájlokhoz való hozzáféréshez használ, majd koppintson a **FIÓK HOZZÁADÁSA** gombra.
 
-6. Az **Elfogadás** gombra koppintva engedélyezze a Skycure-nak a bejelentkeztetést és a profilja olvasását.
+6. Az **Elfogadás** gombra koppintva engedélyezze a SEP Mobile-nak a bejelentkeztetést és a profilja olvasását.
 
-7. Olvassa el, hogy a Skycure miként védi az eszközét, majd koppintson az **OK** gombra. A Skycure beállítása néhány másodperc alatt lezajlik, utána pedig megkezdődik az eszközön a biztonsági fenyegetések keresése.
+7. Olvassa el, hogy a SEP Mobile miként védi az eszközét, majd koppintson az **OK** gombra. A SEP Mobile beállítása néhány másodperc alatt lezajlik, utána pedig megkezdődik az eszközön a biztonsági fenyegetések keresése.
 
-  A Skycure elindul, és azonnal elkezd biztonsági fenyegetéseket keresni az eszközén.
+8. A SEP Mobile elindul, és azonnal elkezd biztonsági fenyegetéseket keresni az eszközén.
 
-  ![A Skycure biztonsági fenyegetéseket keres az eszközön.](./media/skycure-scan-in-progress-android.png)
+  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
 
-  Ha a Skycure biztonsági fenyegetést talál az eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
+  Ha a SEP Mobile biztonsági fenyegetést talál az eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
 
-  ![A Skycure biztonsági fenyegetést talált.](./media/skycure-found-a-threat-android.png)
+  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
 
   Ha nem talál fenyegetést, mindhárom veszélyforrástípus zölddel jelenik meg.
 
@@ -60,6 +60,6 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 **Ha sikertelen a telepítés**
 
-Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a Skycure alkalmazást [manuálisan telepíteni a Play Áruházból](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a SEP Mobile alkalmazást [manuálisan telepíteni a Play Áruházból](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
