@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>iOS-eszköz regisztrálása az Intune-ban
 
@@ -29,7 +29,7 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> Ha egy macOS-eszközt (például MacBook Prót vagy iMacet) szeretne regisztrálni, [kövesse ezt az útmutatót](enroll-your-device-in-intune-macos.md).
+> Ha céges e-maileket próbál elérni a Mail alkalmazásban, akkor a rendszer már feltehetőleg kérést jelenített meg Önnek, hogy az eszközt felügyeletre regisztrálja a biztonságos használat érdekében. Ahhoz, hogy iOS-eszközén is hozzá tudjon férni a céges e-mailekhez és más erőforrásokhoz, kövesse az alábbi útmutatót.
 
 **Előkészületek:**
 

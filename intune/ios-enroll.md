@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-eszközök regisztrálása az Intune-ban
 
@@ -32,7 +32,19 @@ iOS-eszközök engedélyezése előtt végezze el az alábbi lépéseket:
 - [Az Intune beállítása](setup-steps.md) – Ezekkel a lépésekkel állíthatja be az Intune-infrastruktúrát. Különösen fontos, hogy az eszközregisztrációhoz szükség van [saját MDM-szolgáltató beállítására](mdm-authority-set.md).
 - [Apple MDM push-tanúsítvány beszerzése](apple-mdm-push-certificate-get.md) – Az Apple tanúsítványt igényel az iOS- és macOS eszközök felügyeletének lehetővé tételéhez.
 
-Az előfeltételek teljesítését követően a felhasználók telepíthetik a Céges portál alkalmazást saját iOS-eszközeik regisztrálásához, vagy a rendszergazda beállíthatja a vállalati tulajdonú iOS-eszközök felügyeletét. A rendszergazdák hozzárendelhetnek [eszközregisztráció-kezelőket](device-enrollment-manager-enroll.md) is, akik számos eszközt regisztrálhatnak egyetlen felügyeleti fiókkal. Az Intune a következő módszereket támogatja a vállalati tulajdonban lévő iOS-eszközök regisztrálásához:
+## <a name="user-owned-ios-devices-byod"></a>A felhasználó tulajdonában lévő iOS-eszközök (BYOD)
+
+Azt is engedélyezheti, hogy a felhasználók saját személyes eszközeiket regisztrálják az Intune-felügyelethez. Ezt „saját eszköz használata” vagy BYOD (Bring Your Own Device) néven ismerjük. Az előfeltételek teljesítése és a felhasználói licencek hozzárendelése után a felhasználók letölthetik az iOS-es Céges portál alkalmazást az App Store-ból, és az alkalmazástól kapott utasításokat követve elvégezhetik a regisztrációt.
+
+## <a name="company-owned-ios-devices"></a>Vállalati tulajdonban lévő iOS-eszközök
+A felhasználóknak eszközöket vásárló szervezetek számára az Intune a következő módszereket támogatja a vállalati tulajdonban lévő iOS-eszközök regisztrálásához:
+
+- Az Apple készülékregisztrációs programja (DEP)
+- Apple School Manager
+- Regisztrálás az Apple Configurator és a Beállítási asszisztens segítségével
+- Apple Configurator – közvetlen regisztráció
+
+A vállalati tulajdonban lévő iOS-eszközök [készülékregisztráció-kezelő](device-enrollment-manager-enroll.md) fiók használatával is regisztrálhatók.
 
 ## <a name="device-enrollment-program"></a>Készülékregisztrációs program
 A szervezetek az Apple Device Enrollment készülékregisztrációs programján keresztül vásárolhatnak iOS-eszközöket. A DEP vezeték nélkül képes telepíteni egy regisztrációs profilt, amely felügyelet alá helyezi az eszközöket. További tudnivalók a [Készülékregisztrációs programról](device-enrollment-program-enroll-ios.md).

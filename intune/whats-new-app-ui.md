@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+## <a name="week-of-august-28-2017"></a>2017. augusztus 28-i hét
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Az iOS 11-ben a Mail alkalmazás támogatni fogja az OAuth-t<!---1196951--->
+
+Az Intune-nal használt feltételes hozzáférés biztonságosabb hitelesítést tesz lehetővé iOS-eszközökön az OAuth használatával. Ennek a lehetőségnek a kihasználása érdekében az iOS-es Céges portál alkalmazásban egy új fajta folyamatot vezetünk be, amely lehetővé teszi a biztonságosabb hitelesítést. Ha a végfelhasználó a Mail alkalmazásban megpróbál bejelentkezni egy új Exchange-fiókba, a rendszer egy rákérdezést jelenít meg a webes nézethez. Az Intune-ban való regisztráláskor a rendszer egy kérdést jelenít meg, amelynél a felhasználó engedélyezheti, hogy a natív Mail alkalmazás hozzáférjen a tanúsítványhoz. A legtöbb végfelhasználó nem kap többé karanténba helyezett e-maileket. A már meglévő postafiókok továbbra is az alapszintű hitelesítési protokollt használják majd, és ilyen esetben a felhasználók továbbra is kaphatnak karanténba helyezett e-maileket. A végfelhasználói bejelentkezési folyamat hasonló az Office-mobilalkalmazásoknál tapasztalhatóhoz.
+
+![A fiók típusának kiválasztása a natív Mail alkalmazásban.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Az Exchange kiválasztása után az iOS-eszköz egy párbeszédablakot jelenít meg, ahol az e-mail-címet és a fióknevet kell megadni.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Az e-mail-cím és a fióknév megadása.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Átirányítva a Microsoft bejelentkezési oldalára.](./media/ios-11-ca-email-after-1708-04.png)
+
+![A jelszó megadása a Microsoft oldalán.](./media/ios-11-ca-email-after-1708-05.png)
+
+![A Microsoft kérdést jelenít meg, hogy a felhasználó regisztrálja-e az eszközt felügyeletre.](./media/ios-11-ca-email-after-1708-06.png)
+
+![A Céges portál webhely üzenete arra kéri a felhasználót, hogy regisztrálja az eszközt.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>2017. augusztus 21-i hét
 
@@ -31,11 +52,11 @@ Az Intune mobilalkalmazás-felügyelet (MAM) párbeszédpaneljei modern megjelen
 
 **Korábbi felhasználói élmény**
 
-![régi felület](media\NewUI_Old_AttachFileHandler.jpg)
+![régi felület](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Modern felhasználói élmény**
 
-![modern felület](media\NewUI_Modern_AttachFileHandler.jpg)
+![modern felület](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>2017. augusztus 14-i hét
