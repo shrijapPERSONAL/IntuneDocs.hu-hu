@@ -1,6 +1,6 @@
 ---
 title: "Mik azok az alkalmazásvédelmi szabályzatok?"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Ez a témakör azt ismerteti, hogyan védhetők a céges adatok a Microsoft Intune alkalmazásvédelmi szabályzataival.”"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a776de8a27c5fc7b1c472df067610ba7140b07b
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -80,7 +80,7 @@ A korlátozások nélkül használt alkalmazások miatt összekeveredhetnek a v�
 
 
 Az alkalmazásvédelmi szabályzatok révén megakadályozható a vállalati adatoknak az eszköz helyi tárolójára történő mentése, illetve korlátozható a más, alkalmazásvédelmi szabályzatokkal nem védett alkalmazásokba irányuló adatmozgás. Íme néhány az alkalmazásvédelmi szabályzatok beállításai közül:
-- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**,  **A kivágás, másolás és beillesztés korlátozása**.
+- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**, ** A kivágás, másolás és beillesztés korlátozása**.
 - Hozzáférési szabályzati beállítások, például **A hozzáféréshez egyszerű PIN-kód szükséges**, **Felügyelt alkalmazások függetlenített vagy feltört eszközökön való futtatásának letiltása**.
 
 ### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mdm-solution"></a>Adatvédelem alkalmazásvédelmi szabályzatokkal az MDM-megoldásokkal felügyelt eszközökön
