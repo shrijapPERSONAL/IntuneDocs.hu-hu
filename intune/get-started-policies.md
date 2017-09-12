@@ -1,10 +1,10 @@
 ---
 title: "Bevezetés a szabályzatok használatába"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Szabályzatok létrehozásával megakadályozhatja a felhasználókat abban, hogy olyan dolgokat hajtsanak végre az eszközeikkel, amelyekre nincs felhatalmazásuk."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7d100eeb177e2b47065f0688d9f94b2f4e5c06bc
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="get-started-with-policies"></a>Bevezetés a szabályzatok használatába
 
@@ -50,14 +50,14 @@ __Hogyan hozhatok létre szabályzatot?__
 3. Válassza az **Eszközmegfelelőség** elemet.
 4. Az **Eszközmegfelelőség** panelen válassza a **Szabályzatok** lehetőséget.
 5. Válassza a **Szabályzat létrehozása** elemet, majd töltse ki a részleteket, például a **Név** és a **Leírás** mezőt. A **Platform** beállításaként válassza az **iOS** lehetőséget.
-6. A **Beállítások** részben válassza a **Rendszerbiztonság** elemet, majd váltsa át a **Jelszó szükséges a mobileszközök feloldásához** beállítását a **Kötelező** lehetőségre. Más szabályokat is beállíthat, többek között a **Jelszó minimális hossza**, a **Jelszó kötelező típusa**  és a **Nem alfanumerikus karakterek száma a jelszóban** szabályt. Amikor befejezte a szabályzat beállítását, válassza az **OK** gombot.
+6. A **Beállítások** részben válassza a **Rendszerbiztonság** elemet, majd váltsa át a **Jelszó szükséges a mobileszközök feloldásához** beállítását a **Kötelező** lehetőségre. Más szabályokat is beállíthat, többek között a **Jelszó minimális hossza**, a **Jelszó kötelező típusa ** és a **Nem alfanumerikus karakterek száma a jelszóban** szabályt. Amikor befejezte a szabályzat beállítását, válassza az **OK** gombot.
 7. Térjen vissza a **Szabályzat létrehozása** panelre, majd válassza a **Létrehozás** lehetőséget.
 8. A szabályzat létrehozása után válassza a **Hozzárendelések** lehetőséget a tesztcsoporthoz való hozzárendeléséhez. Válassza ki a tesztcsoportot – amelynek tartalmaznia kell a tesztfelhasználót –, majd rendelje hozzá a szabályzatot ehhez a csoporthoz a **Mentés** gombra kattintva.
 9. Várjon néhány percig, és a regisztrált eszköznek kérnie kell egy frissített jelszót, hogy továbbra is megfeleljen a vállalati házirendnek. Ezt manuálisan is ellenőrizheti az **iOS-hez készült céges portál alkalmazásban**, ha rákoppint az eszköz nevére, majd a **Szinkronizálás** gombra.
 
 ## <a name="next-steps"></a>További lépések
 
-[Bevezetés az eszközök regisztrációjába](get-started-enroll.md) – Megismerheti a regisztrációs folyamatot egy iOS-eszköz teljes regisztrációs folyamatának végigkövetésével.
+[Bevezetés az eszközök regisztrációjába](get-started-enroll.md) – Megismerheti a regisztrációt egy iOS-eszköz teljes regisztrációs folyamatának végigkövetésével.
 
 ## <a name="learn-more"></a>További információ
 
