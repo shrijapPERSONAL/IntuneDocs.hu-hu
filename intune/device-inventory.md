@@ -1,12 +1,12 @@
 ---
 title: "Intune-eszközleltár megtekintése"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "A cikkből elsajátíthatja az Intune-nal felügyelt eszközök megjelenítését, illetve hardverük és a rájuk telepített alkalmazások megismerését.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Az Intune-eszközleltár megtekintése
 
@@ -54,3 +54,4 @@ Most válasszon egyet az alábbi lehetőségek közül:
 
 >[!NOTE]
 > Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalmazásokról készít leltárt. A magántulajdonú eszközökön futó alkalmazásokat nem veszi bele a leltárba. A vállalat tulajdonában lévő Windows 10 rendszerű számítógépekről csak a modern alkalmazásokat veszi figyelembe a leltár készítésekor. A Win32-es alkalmazásokról az Intune nem gyűjt információkat.
+> Attól függően, hogy mely szolgáltatót használja az eszközökön, előfordulhat, hogy a rendszer nem gyűjt be minden leltárelemet.
