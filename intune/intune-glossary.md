@@ -1,6 +1,6 @@
 ---
 title: "Intune-szószedet"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "A Microsoft Intune-ban használt szakkifejezések egy részének bemutatása"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-szószedet
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Intune-portál|Az Azure Portal azon része, amelyen keresztül a legtöbb Intune-alapú felügyeleti művelet elvégezhető.|
+|Azure Portal|Az Azure Portal azon része, amelyen keresztül a legtöbb Intune-alapú felügyeleti művelet elvégezhető.|
 |Intune-szoftverügyfél|A [Windows rendszerű számítógépek felügyelete](/intune-classic/get-started/choose-how-to-manage-devices) cikkben ismertetett alternatív megoldások segíthetnek eldönteni, hogy melyik módszert érdemes alkalmaznia.|
 |Intune Software Publisher|Olyan eszköz, amellyel [meghatározhatja, milyen alkalmazásokat szeretne telepíteni, és feltöltheti őket a felhőbe](/intune-classic/deploy-use/add-apps).|
 |Leltár|Megtekintheti a felügyelt eszközök [hardvereit és a rájuk telepített szoftvereket](/intune/device-inventory).|

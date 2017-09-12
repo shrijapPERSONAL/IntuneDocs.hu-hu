@@ -1,6 +1,6 @@
 ---
 title: "PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Útmutató az infrastruktúra konfigurálásához, valamint a PKCS-tanúsítványok Intune-nal végzett létrehozásához és eszközökhöz rendeléséhez."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
