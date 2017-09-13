@@ -1,0 +1,599 @@
+- name: Bevezetés
+  href: introduction-intune.md
+  expanded: true
+  items:
+    - name: Mi az az Azure Portal?
+      href: what-is-intune.md
+    - name: Mi az az Intune for Education?
+      href: introduction-intune-education.md
+    - name: Intune-funkciók az Azure-ban
+      href: ui-changes.md
+      items:
+        - name: Csoportok módosításai
+          href: groups-get-started.md
+    - name: Regisztráljon az ingyenes próbaverzióhoz
+      href: free-trial-sign-up.md
+    - name: Újdonságok
+      href: whats-new.md
+      items:
+        - name: Az alkalmazásfelhasználói felület újdonságai
+          href: whats-new-app-ui.md
+        - name: Újdonságok – Archívum (Azure Portal)
+          href: whats-new-archive.md
+        - name: Újdonságok – Archívum (klasszikus portál)
+          href: whats-new-archive-classic.md
+    - name: Magas szintű architektúra
+      href: high-level-architecture.md
+    - name: Eszközök és alkalmazások életciklusa
+      href: introduction-device-app-lifecycles.md
+      items:
+        - name: Eszközök életciklusa
+          href: device-lifecycle.md
+        - name: Alkalmazások életciklusa
+          href: app-lifecycle.md
+    - name: Gyakori helyzetek
+      href: common-scenarios.md
+    - name: A szolgáltatás leírása
+      href: microsoft-intune-service-description.md
+    - name: Ismert problémák
+      href: known-issues.md
+    - name: Támogatás igénylése
+      href: get-support.md
+- name: Ismerkedés az Intune-nal
+  href: get-started-evaluation.md
+  items:
+    - name: Navigálás az Azure Portalon
+      href: get-started-azure.md
+    - name: Felhasználó létrehozása
+      href: get-started-users.md
+    - name: Csoport létrehozása
+      href: get-started-groups.md
+    - name: Szabályzatok hozzárendelése
+      href: get-started-policies.md
+    - name: Eszközök regisztrálása
+      href: get-started-enroll.md
+    - name: Alkalmazások hozzárendelése
+      href: get-started-apps.md
+- name: Telepítési terv kidolgozása
+  items:
+    - name: Planning guide (Tervezési útmutató)
+      href: planning-guide.md
+      items:
+        - name: Célok és célkitűzések meghatározása
+          href: planning-guide-deployment-goals.md
+        - name: Forgatókönyvek azonosítása
+          href: planning-guide-scenarios.md
+        - name: Követelmények meghatározása
+          href: planning-guide-requirements.md
+        - name: Bevezetési terv kidolgozása
+          href: planning-guide-rollout-plan.md
+        - name: Kommunikációs terv kidolgozása
+          href: planning-guide-communication-plan.md
+        - name: Támogatási terv kidolgozása
+          href: planning-guide-support-plan.md
+        - name: Kialakítás
+          href: planning-guide-design.md
+        - name: Megvalósítás
+          href: planning-guide-onboarding.md
+        - name: Tesztelés és ellenőrzés
+          href: planning-guide-test-validation.md
+        - name: További háttéranyagok
+          href: planning-guide-resources.md
+    - name: Forgatókönyvek végrehajtási útmutatói
+      items:
+        - name: BYOD
+          href: byod-enable.md
+        - name: Az Exchange Online védelme
+          href: exchange-online-protect.md
+        - name: Az ügyfélszolgálati költségek csökkentése
+          href: password-reset.md
+    - name: Migrálási útmutató
+      href: migration-guide.md
+      items:
+        - name: Az Intune előkészítése
+          href: migration-guide-prepare.md
+          items:
+            - name: Alapszintű beállítás
+              href: migration-guide-setup.md
+            - name: Eszköz- és alkalmazáskezelési szabályzatok konfigurálása
+              href: migration-guide-configure-policies.md
+            - name: Alkalmazásvédelmi szabályzatok konfigurálása
+              href: migration-guide-app-protection-policies.md
+            - name: Az áttelepítés szempontjai
+              href: migration-guide-considerations.md
+        - name: Áttelepítési kampány
+          href: migration-guide-campaign.md
+          items:
+            - name: A kommunikáció tervezése
+              href: migration-guide-communication-plan.md
+            - name: A bevezetés ösztönzése
+              href: migration-guide-drive-adoption.md
+            - name: A szokásos migrációs ciklus
+              href: migration-guide-cycle.md
+- name: Cél
+  items:
+    - name: Az Intune beállítása
+      href: setup-steps.md
+      items:
+        - name: Előfeltételek
+          href: supported-devices-browsers.md
+          items:
+            - name: Hálózatisávszélesség-felhasználás
+              href: network-bandwidth-use.md
+        - name: Bejelentkezés az Intune-ba
+          href: account-sign-up.md
+        - name: Tartományok beállítása
+          href: custom-domain-name-configure.md
+        - name: Felhasználók hozzáadása
+          href: users-add.md
+        - name: Csoportok hozzáadása
+          href: groups-add.md
+        - name: Licencek kiosztása
+          href: licenses-assign.md
+        - name: Az MDM-szolgáltató beállítása
+          href: mdm-authority-set.md
+    - name: Eszközök regisztrálása
+      href: device-enrollment.md
+      items:
+        - name: Regisztrációs beállítások
+          href: enrollment-options.md
+          items:
+            - name: használati feltételei
+              href: terms-and-conditions-create.md
+            - name: Korlátozások
+              href: enrollment-restrictions-set.md
+            - name: Apple MDM Push-tanúsítvány
+              href: apple-mdm-push-certificate-get.md
+            - name: Vállalati azonosítók
+              href: corporate-identifiers-add.md
+            - name: Többtényezős hitelesítés
+              href: multi-factor-authentication.md
+            - name: Készülékregisztráció-kezelő
+              href: device-enrollment-manager-enroll.md
+            - name: Eszközök hozzárendelése csoportokhoz
+              href: device-group-mapping.md
+        - name: Windows-regisztráció beállítása
+          items:
+            - name: Windows-regisztráció
+              href: windows-enroll.md
+            - name: Csoportos regisztráció
+              href: windows-bulk-enroll.md
+        - name: Az androidos eszközök regisztrálásának beállítása
+          href: android-enroll.md
+        - name: iOS-eszközök regisztrálásának beállítása
+          href: ios-enroll.md
+          items:
+            - name: Készülékregisztrációs program
+              href: device-enrollment-program-enroll-ios.md
+            - name: Apple School Manager
+              href: apple-school-manager-set-up-ios.md
+            - name: Apple Configurator
+              href: apple-configurator-enroll-ios.md
+        - name: macOS-regisztráció beállítása
+          href: macos-enroll.md
+    - name: Kezelje az eszközöket
+      href: device-management.md
+      items:
+        - name: Aktiválási zár megkerülése
+          href: device-activation-lock-bypass.md
+        - name: A Windows újrakezdés műveletének kezelése
+          href: device-fresh-start.md
+        - name: Elveszett iOS-eszköz megkeresése
+          href: device-locate.md
+        - name: Az iOS-es elveszett mód engedélyezése
+          href: device-lost-mode.md
+        - name: Eszköz zárolása
+          href: device-remote-lock.md
+        - name: Jelszó alaphelyzetbe állítása
+          href: device-passcode-reset.md
+        - name: Eszköz újraindítása
+          href: device-restart.md
+        - name: Aktuális felhasználó kijelentkeztetése
+          href: device-logout-user.md
+        - name: Felhasználó eltávolítása
+          href: device-remove-user.md
+        - name: Távirányítás Androidhoz
+          href: device-profile-android-teamviewer.md
+        - name: Windows 10-es PIN-kód alaphelyzetbe állítása
+          href: device-windows-pin-reset.md
+        - name: Eszköz szinkronizálása
+          href: device-sync.md
+        - name: Eszközkészlet vizsgálata
+          href: device-inventory.md
+        - name: Eszközök eltávolítása
+          href: devices-wipe.md
+    - name: Alkalmazások kezelése
+      href: app-management.md
+      items:
+        - name: Alkalmazások hozzáadása
+          href: apps-add.md
+          items:
+            - name: Androidos áruházbeli alkalmazások
+              href: store-apps-android.md
+            - name: Androidos üzletági alkalmazások
+              href: lob-apps-android.md
+            - name: iOS-es áruházbeli alkalmazások
+              href: store-apps-ios.md
+            - name: iOS-es üzletági alkalmazások
+              href: lob-apps-ios.md
+            - name: Webalkalmazások
+              href: web-app.md
+            - name: Windows Phone 8.1-es áruházbeli alkalmazások
+              href: store-apps-windows-phone-8-1.md
+            - name: Windows Phone LOB-alkalmazások
+              href: lob-apps-windows-phone.md
+            - name: Microsoft Áruházbeli alkalmazások
+              href: store-apps-windows.md
+            - name: Windows LOB apps
+              href: lob-apps-windows.md
+            - name: Android for Work-alkalmazások
+              href: apps-add-android-for-work.md
+            - name: Windows 10-es Office 365-alkalmazások
+              href: apps-add-office365.md
+        - name: Alkalmazások hozzárendelése
+          href: apps-deploy.md
+        - name: Alkalmazások figyelése
+          href: apps-monitor.md
+        - name: iOS-es alkalmazáskonfigurációs profilok
+          href: app-configuration-policies-use-ios.md
+        - name: Androidos alkalmazáskonfigurációs profilok
+          href: app-configuration-policies-use-android.md
+        - name: iOS-alkalmazáskiépítési profilok használata
+          href: app-provisioning-profile-ios.md
+        - name: Alkalmazások szelektív törlése
+          href: apps-selective-wipe.md
+        - name: Mennyiségi programban vásárolt alkalmazások és könyvek használata
+          href: vpp-apps.md
+          items:
+            - name: iOS VPP-alkalmazások
+              href: vpp-apps-ios.md
+            - name: Vállalati Microsoft Áruházbeli alkalmazások
+              href: windows-store-for-business.md
+            - name: iOS-es e-könyvek
+              href: vpp-ebooks-ios.md
+        - name: A Céges portál alkalmazás konfigurálása
+          href: company-portal-app.md
+        - name: A Managed Browser konfigurálása
+          href: app-configuration-managed-browser.md
+    - name: Eszközök konfigurálása
+      href: device-profiles.md
+      items:
+        - name: Eszközprofilok konfigurálása
+          href: device-profile-create.md
+        - name: Eszközfunkciók konfigurálása
+          href: device-features-configure.md
+          items:
+            - name: AirPrint iOS és MacOS rendszerekre
+              href: air-print-settings-ios-macos.md
+            - name: AirPlay iOS rendszerre
+              href: airplay-settings-ios.md
+            - name: Kezdőképernyő elrendezése iOS-hez
+              href: home-screen-settings-ios.md
+            - name: Alkalmazásértesítések iOS-hez
+              href: app-notification-settings-ios.md
+            - name: Megosztott eszközök iOS-hez
+              href: shared-device-settings-ios.md
+            - name: Webszűrő-beállítások iOS-hez
+              href: web-content-filter-settings-ios.md
+        - name: Eszközkorlátozások beállítása
+          href: device-restrictions-configure.md
+          items:
+            - name: Android
+              href: device-restrictions-android.md
+            - name: iOS
+              href: device-restrictions-ios.md
+            - name: macOS
+              href: device-restrictions-macos.md
+            - name: Windows 8.1
+              href: device-restrictions-windows-8-1.md
+            - name: Windows Phone 8.1
+              href: device-restrictions-windows-phone-8-1.md
+            - name: Windows 10
+              href: device-restrictions-windows-10.md
+            - name: Windows 10 Team
+              href: device-restrictions-windows-10-teams.md
+            - name: Android for Work
+              href: device-restrictions-android-for-work.md
+        - name: E-mail-beállítások konfigurálása
+          href: email-settings-configure.md
+          items:
+            - name: Android
+              href: email-settings-android.md
+            - name: iOS
+              href: email-settings-ios.md
+            - name: Windows Phone 8.1
+              href: email-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: email-settings-windows-10.md
+        - name: VPN-beállítások konfigurálása
+          href: vpn-settings-configure.md
+          items:
+            - name: Android
+              href: vpn-settings-android.md
+            - name: iOS
+              href: vpn-settings-ios.md
+            - name: macOS
+              href: vpn-settings-macos.md
+            - name: Windows 8.1
+              href: vpn-settings-windows-8-1.md
+            - name: Windows Phone 8.1
+              href: vpn-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: vpn-settings-windows-10.md
+        - name: Wi-Fi-beállítások konfigurálása
+          href: wi-fi-settings-configure.md
+          items:
+            - name: Android
+              href: wi-fi-settings-android.md
+            - name: iOS
+              href: wi-fi-settings-ios.md
+            - name: macOS
+              href: wi-fi-settings-macos.md
+            - name: Windows 8.1 és Windows 10
+              href: wi-fi-settings-import-windows-8-1.md
+        - name: A Windows 10-kiadás frissítési beállításainak konfigurálása
+          href: edition-upgrade-configure-windows-10.md
+        - name: Windows 10-es Endpoint Protection
+          href: endpoint-protection-windows-10.md
+        - name: A Windows 10 oktatási funkcióinak konfigurálása
+          href: education-settings-configure.md
+        - name: Az iOS oktatási funkcióinak konfigurálása
+          href: education-settings-configure-ios.md
+        - name: Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása
+          href: education-settings-configure-ios-shared.md
+        - name: iOS-frissítési szabályzatok konfigurálása
+          href: software-updates-ios.md
+        - name: Tanúsítványok konfigurálása
+          href: certificates-configure.md
+          items:
+            - name: SCEP
+              href: certificates-scep-configure.md
+            - name: PKCS
+              href: certficates-pfx-configure.md
+        - name: A Windows Information Protection beállításainak konfigurálása
+          href: windows-information-protection-configure.md
+        - name: Távközlési költségek monitorozása
+          href: telecom-expenses-monitor.md
+        - name: Profilok hozzárendelése
+          href: device-profile-assign.md
+        - name: Profilok monitorozása
+          href: device-profile-monitor.md
+        - name: Profilok hibaelhárítása
+          href: device-profile-troubleshoot.md
+    - name: Eszközmegfelelőség beállítása
+      href: device-compliance-get-started.md
+      items:
+        - name: Android-szabályzat létrehozása
+          href: compliance-policy-create-android.md
+        - name: Android for Work-szabályzat létrehozása
+          href: compliance-policy-create-android-for-work.md
+        - name: iOS-szabályzat létrehozása
+          href: compliance-policy-create-ios.md
+        - name: macOS-szabályzat létrehozása
+          href: compliance-policy-create-mac-os.md
+        - name: Windows-szabályzat létrehozása
+          href: compliance-policy-create-windows.md
+        - name: Az eszközmegfelelőség figyelése
+          href: compliance-policy-monitor.md
+    - name: Feltételes hozzáférés beállítása
+      href: conditional-access.md
+      items:
+        - name: A feltételes hozzáférés szokásos használati módjai
+          href: conditional-access-intune-common-ways-use.md
+        - name: A helyszíni Exchange-összekötő telepítése
+          href: exchange-connector-install.md
+        - name: Feltételes hozzáférési szabályzat létrehozása és hozzárendelése
+          href: conditional-access-exchange-create.md
+        - name: Feltételes hozzáférési szabályzatok ismételt hozzárendelése az Intune klasszikus portáljáról
+          href: conditional-access-intune-reassign.md
+        - name: Alkalmazásalapú feltételes hozzáférés
+          href: app-based-conditional-access-intune.md
+        - name: Alkalmazásalapú feltételes hozzáférés beállítása
+          href: app-based-conditional-access-intune-create.md
+        - name: Az ADAL és az Intune
+          href: app-modern-authentication-block.md
+        - name: Feltételes hozzáférés megfelelőségének figyelése
+          href: conditional-access-exchange-monitor.md
+    - name: Alkalmazás- és eszközadatok védelme
+      items:
+        - name: Alkalmazásvédelmi szabályzatok használata
+          href: app-protection-policy.md
+          items:
+            - name: Alkalmazásvédelmi szabályzatok létrehozása
+              href: app-protection-policies.md
+              items:
+                - name: Android-beállítások
+                  href: app-protection-policy-settings-android.md
+                - name: iOS-beállítások
+                  href: app-protection-policy-settings-ios.md
+            - name: Az alkalmazásvédelmi szabályzatok ellenőrzése
+              href: app-protection-policies-validate.md
+            - name: Alkalmazásvédelmi felhasználó állapotának figyelése
+              href: app-protection-policies-monitor.md
+            - name: Felkészülés az alkalmazásvédelmi WIP-szabályzatokra
+              href: app-protection-policies-configure-windows-10.md
+            - name: Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése
+              href: windows-information-protection-policy-create.md
+            - name: iOS-alkalmazások közti adatátvitel kezelése
+              href: data-transfer-between-apps-manage-ios.md
+        - name: Mobile Threat Defense
+          href: mobile-threat-defense.md
+          items:
+            - name: A Lookout beállítása
+              href: lookout-mobile-threat-defense-connector.md
+              items:
+                - name: A Lookout és az Intune közötti integráció
+                  href: lookout-mtd-connector-integration.md
+            - name: A Skycure beállítása
+              href: skycure-mobile-threat-defense-connector.md
+              items:
+                - name: A Skycure és az Intune közötti integráció
+                  href: skycure-mtd-connector-integration.md
+            - name: A Check Point beállítása
+              href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+              items:
+                - name: A Check Point integrációja az Intune-nal
+                  href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+            - name: MTD-alkalmazások hozzáadása
+              href: mtd-apps-ios-app-configuration-policy-add-assign.md
+            - name: MTD engedélyezése az Intune-ban
+              href: mtd-connector-enable.md
+            - name: MTD-eszközmegfelelési szabályzat létrehozása
+              href: mtd-device-compliance-policy-create.md
+        - name: Hálózati hozzáférés-vezérlés
+          href: network-access-control-integrate.md
+        - name: A Windows Hello beállítása
+          href: windows-hello.md
+    - name: Szerepkörök kezelése
+      href: role-based-access-control.md
+    - name: Szoftverfrissítések kezelése
+      href: windows-update-for-business-configure.md
+    - name: Számítógépek kezelése szoftveres ügynökkel
+      href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
+      maintainContext: true
+      items:
+        - name: Számítógépek felügyeletének összehasonlítása
+          href: /intune-classic/deploy-use/pc-management-comparison
+          maintainContext: true
+        - name: Számítógépügyfél telepítése
+          href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
+          maintainContext: true
+        - name: Számítógépek általános felügyeleti feladatai
+          href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
+          maintainContext: true
+          items:
+            - name: Számítógépes szabályzatok
+              href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
+              maintainContext: true
+            - name: Leltár megjelenítése
+              href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
+              maintainContext: true
+            - name: Számítógépek kivonása
+              href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
+              maintainContext: true
+            - name: Számítógépek társítása felhasználókkal
+              href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
+              maintainContext: true
+            - name: Távsegítség
+              href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
+              maintainContext: true
+        - name: "Szabályzatok a Windows rendszerű\_számítógépek védelméhez"
+          href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
+          maintainContext: true
+          items:
+            - name: Szoftverfrissítések
+              href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
+              maintainContext: true
+            - name: Windows tűzfal
+              href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
+              maintainContext: true
+            - name: Endpoint Protection
+              href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
+              maintainContext: true
+        - name: Alkalmazások hozzáadása Intune ügyfélgépekhez
+          href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
+          maintainContext: true
+        - name: Licencszerződések kezelése
+          href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
+          maintainContext: true
+        - name: Szabályzatütközések feloldása
+          href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
+          maintainContext: true
+    - name: Felhasználók oktatása
+      href: end-user-educate.md
+      items:
+        - name: Céges portál-üzenetek
+          href: end-user-company-portal-messages.md
+        - name: Alkalmazásvédelem Androidon
+          href: end-user-mam-apps-android.md
+        - name: Alkalmazásvédelem iOS-en
+          href: end-user-mam-apps-ios.md
+        - name: Android-alkalmazások beszerzése
+          href: end-user-apps-android.md
+        - name: iOS-alkalmazások beszerzése
+          href: end-user-apps-ios.md
+        - name: Windows-alkalmazások beszerzése
+          href: end-user-apps-windows.md
+- name: Monitorozás és hibaelhárítás
+  items:
+    - name: Segítség a felhasználóknak a problémák elhárításában
+      href: help-desk-operators.md
+    - name: Az Intune-adattárház használata
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Kapcsolódás az adattárházhoz a Power BI használatával
+          href: reports-proc-get-a-link-powerbi.md
+- name: Automatizálás és testreszabás
+  items:
+    - name: Egyéni eszközbeállítások konfigurálása
+      href: custom-settings-configure.md
+      items:
+        - name: Android
+          href: custom-settings-android.md
+          items:
+            - name: Wi-Fi-profil előmegosztott kulccsal
+              href: wi-fi-profile-shared-key.md
+            - name: Alkalmazásonkénti VPN-profil
+              href: android-pulse-secure-per-app-vpn.md
+            - name: Alkalmazások engedélyezése/letiltása a Samsung KNOX Standard használatával
+              href: samsung-knox-apps-allow-block.md
+        - name: iOS
+          href: custom-settings-ios.md
+        - name: macOS
+          href: custom-settings-macos.md
+        - name: Windows Phone 8.1
+          href: custom-settings-windows-phone-8-1.md
+        - name: Windows 10
+          href: custom-settings-windows-10.md
+        - name: Android for Work
+          href: custom-settings-android-for-work.md
+    - name: Alkalmazások védelme az Intune App SDK-val
+      href: app-sdk.md
+      items:
+        - name: Ismerkedés az Intune App SDK-val
+          href: app-sdk-get-started.md
+        - name: Üzletági alkalmazások előkészítése alkalmazásvédelemre
+          href: apps-prepare-mobile-application-management.md
+        - name: OS alkalmazásburkoló eszköz
+          href: app-wrapper-prepare-ios.md
+        - name: Intune App SDK iOS rendszerhez
+          href: app-sdk-ios.md
+        - name: Alkalmazásburkoló eszköz Android rendszerhez
+          href: app-wrapper-prepare-android.md
+        - name: Intune App SDK Android rendszerhez
+          href: app-sdk-android.md
+        - name: Intune App SDK Cordova beépülő modul
+          href: app-sdk-cordova.md
+        - name: Intune App SDK Xamarin összetevő
+          href: app-sdk-xamarin.md
+    - name: Jelentéskészítés az Intune-adattárház API-val
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: Adatok beolvasása az adattárház API-ból REST-ügyféllel
+          href: reports-proc-data-rest.md
+        - name: Az adattárház API-végpontja
+          href: reports-api-url.md
+        - name: Az adattárház adatmodellje
+          href: reports-ref-data-model.md
+          items:
+            - name: Dátum típusú entitás referenciája
+              href: reports-ref-date.md
+            - name: Felhasználó típusú entitás referenciája
+              href: reports-ref-user.md
+            - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
+              href: reports-ref-mobile-app-management.md
+            - name: Eszközök típusú entitások referenciája
+              href: reports-ref-devices.md
+            - name: Alkalmazás-entitások referencia
+              href: reports-ref-application.md
+            - name: Szabályzat típusú entitások referenciája
+              href: reports-ref-policy.md
+    - name: Windows-alkalmazások közvetlen telepítése
+      href: app-sideload-windows.md
+    - name: Az Intune Graph API-k használata
+      href: intune-graph-apis.md
+      items:
+        - name: Referenciainformációk az Intune Graph API-khoz
+          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+- name: Szószedet
+  href: intune-glossary.md
