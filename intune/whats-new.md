@@ -1,6 +1,6 @@
 ---
 title: "Újdonságok a Microsoft Intune-ban"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Az Azure-beli Intune-portál újdonságai"
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -102,7 +102,7 @@ A felhasználók mostantól több fiókot (munkahelyit és személyeset) is hasz
 - További információ azon alkalmazásokról, amelyek támogatják az [alkalmazásvédelmet és a többszörös identitást](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) az Intune-nal.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Új beállítások alkalmazások engedélyezéséhez és letiltásához Samsung KNOX Standard-eszközökön
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 Ebben a kiadásban új [eszközkorlátozási beállítások](device-restrictions-android.md) jelennek meg, amelyekkel megadhatók a következő alkalmazáslisták:
  
 - Felhasználók által telepíthető alkalmazások
@@ -112,7 +112,7 @@ Ebben a kiadásban új [eszközkorlátozási beállítások](device-restrictions
 Az alkalmazás megadható URL-cím vagy csomagnév alapján, vagy kiválasztható a felügyelt alkalmazások listájából.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Hivatkozás az új Azure AD alkalmazásalapú feltételes hozzáférési szabályzat felhasználói felületére az Intune-ból
-
+<!-- 1016201 -->
 Az Azure AD tevékenységprofiljában található új feltételes hozzáférési szabályzat felhasználói felületéről a rendszergazdák alkalmazásalapú feltételes szabályzatokat állíthatnak be. Az Azure Intune App Protection szakasz alkalmazásalapú feltételes hozzáférése egyelőre a helyén marad, és a kikényszerítése párhuzamosan zajlik le. Ezekhez adódik hozzá az a kényelmi hivatkozás, amely az Intune tevékenységprofilban található új feltételes hozzáférési szabályzat felhasználói felületére mutat.
 
 - További tudnivalók az [Azure AD-beli alkalmazásalapú feltételes hozzáférésről](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
@@ -124,7 +124,7 @@ Az Azure AD tevékenységprofiljában található új feltételes hozzáférési
 A tűzfal proxybeállításaihoz [DNS-nevek és IP-címek frissített listája](/intune/network-bandwidth-use) érhető el.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Feltételes hozzáféréshez használható az Azure Active Directory <!-- 967947 -->
-Az Azure-konzol Azure Active Directory szakaszában elérhető a feltételes hozzáférés, amellyel hatékonyan és rugalmasan állíthatók be szabályzatok olyan felhőalkalmazásokhoz, mint az Office 365, az Exchange Online vagy a SharePoint Online.  A klasszikus Intune-konzol helyett most már az **Azure Active Directory feltételes hozzáférés** paneljén konfigurálhatja a szabályzatokat. A klasszikus Intune-konzolon meglévő szabályzatokat újra létre kell hozni az Azure-konzolon. További információt az [Azure AD feltételes hozzáférési szabályzatok létrehozása](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview) című témakörben találhat.
+Az Azure Portal Azure Active Directory szakaszában elérhető a feltételes hozzáférés, amellyel hatékonyan és rugalmasan állíthatók be szabályzatok olyan felhőalkalmazásokhoz, mint az Office 365, az Exchange Online vagy a SharePoint Online.  Az Intune-konzol helyett most már az **Azure Active Directory feltételes hozzáférés** paneljén konfigurálhatja a szabályzatokat. Az Intune-konzolon meglévő szabályzatokat újra létre kell hozni az Azure Portalon. További információt az [Azure AD feltételes hozzáférési szabályzatok létrehozása](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview) című témakörben találhat.
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Az Apple regisztrálási forgatókönyvek közvetlen elérése <!--951869-->
 A 2017. január után létrehozott Intune-fiókok esetében az Intune lehetővé tette az Apple regisztrálási forgatókönyvek közvetlen elérését az Azure Portalon elérhető Eszközregisztrációs munkafolyamat használatával. Korábban az Apple-regisztrálási betekintés csak a klasszikus Intune-portálon található hivatkozásokkal volt elérhető. A 2017 januárja előtt létrehozott Intune-fiókok esetében ezek a funkciók egy egyszeri áttelepítést követően válnak elérhetővé az Azure-ban. Az áttelepítés menetrendje még nem elérhető, de a lehető legrövidebb időn belül tájékoztatást adunk róla. Ha a jelenlegi fiókkal nem érhető el az Azure Portal, javasoljuk, hogy hozzon létre egy próbafiókot az új lehetőségek kipróbálásához.

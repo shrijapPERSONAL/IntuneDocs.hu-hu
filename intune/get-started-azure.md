@@ -1,10 +1,10 @@
 ---
 title: "Ismerkedés az Azure Portállal"
-titleSuffix: Intune on Azure
-description: "További tudnivalók irányítópultok létrehozásáról és megosztásáról az Intune-ban az Azure-on."
+titlesuffix: Azure portal
+description: "További tudnivalók irányítópultok létrehozásáról és megosztásáról az Intune-ban az Azure Portalon."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Bevezetés az Intune használatába az Azure Portálon
 
@@ -52,8 +52,8 @@ Mindez relevánsabb lesz, miután további tartalmakat is hozzáadott az Intune-
 
 ## <a name="using-services"></a>Szolgáltatások használata
 
-Ha megnyitja az Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Mobilalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek. 
+Ha megnyitja az Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Mobilalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek.
 
 ## <a name="next-steps"></a>További lépések
 
-* [Ismerkedés a felhasználók kezelése](get-started-users.md) – A felhasználók Intune-hoz adásával engedélyezheti számukra a vállalati erőforrások elérését mobileszközeikkel.
+* [A felhasználók felügyeletének első lépései](get-started-users.md) – A felhasználók Intune-ba való felvételével engedélyezheti nekik, hogy mobileszközről is elérjék a céges erőforrásokat.

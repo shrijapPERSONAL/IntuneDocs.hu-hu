@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>BYOD engedélyezése az Intune-nal
 
@@ -48,7 +48,7 @@ Az Intune előkészítése után meg kell győződnie arról, hogy a felügyelni
 
 -   **Android-eszközök** Android-eszközein nincs teendője, ezek alapértelmezés szerint készen állnak az Intune szolgáltatásba való regisztrációra. A felhasználók rendkívül egyszerűen, a Google Play Áruházban elérhető Munkahelyi portál alkalmazással [regisztrálhatják Android-eszközeiket](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phone-telefonok és PC-k** A Windows-eszközök további beállítások használatával regisztrálhatók. A felhasználói élmény egyszerűsítése érdekében engedélyezheti a Windows 10-es számítógépek és a Windows 10-es mobileszközök prémium szintű Azure Active Directory (AD) szolgáltatásban való automatikus regisztrációját. Ha nem rendelkezik Azure AD Premium szolgáltatással, vagy ha a Windows 8.1-hez van szüksége támogatásra, a regisztrálási folyamat megkönnyítése érdekében létrehozhat [a regisztrációs kiszolgálóhoz tartozó DNS-aliast](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium).
+-   **Windows Phone-telefonok és PC-k** A Windows-eszközök további beállítások használatával regisztrálhatók. A felhasználói élmény egyszerűsítése érdekében engedélyezheti a Windows 10-es számítógépek és a Windows 10-es mobileszközök prémium szintű Azure Active Directory (AD) szolgáltatásban való automatikus regisztrációját. Ha nem rendelkezik Azure AD Premium szolgáltatással, vagy ha a Windows 8.1-hez van szüksége támogatásra, a regisztrálási folyamat megkönnyítése érdekében létrehozhat [a regisztrációs kiszolgálóhoz tartozó DNS-aliast](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium).
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>A felügyelt eszközök alapvető biztonsági követelményeknek való megfelelésének ellenőrzése
@@ -82,7 +82,7 @@ Az Intune az iOS App Store áruházból és a Vállalati Microsoft Áruházból 
 
 -   [Mennyiségi konstrukcióban vásárolt alkalmazások felügyelete iOS-eszközökön](vpp-apps-ios.md): Az [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) programon keresztül egyszerre több licencet vásárolhat az iOS-alkalmazásokhoz. Ehhez Apple VPP-fiókot kell beállítania az Apple webhelyén, és az Apple VPP-tokent fel kell tölteni az Intune-ba. Ezután szinkronizálhatja a mennyiségi vásárlás adatait az Intune-nal, és nyomon követheti a mennyiségi programban vásárolt alkalmazás használatát.
 
--   [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](windows-store-for-business.md). A [Vállalati Microsoft Áruházban](https://www.microsoft.com/business-store) alkalmazásokat kereshet a vállalat számára és egyenként vagy nagyobb mennyiségben is vásárolhat közülük. Az áruházat az Intune-nal összekapcsolva a mennyiségi licencszerződés keretében vásárolt alkalmazásokat az Intune-portálról kezelheti.
+-   [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](windows-store-for-business.md). A [Vállalati Microsoft Áruházban](https://www.microsoft.com/business-store) alkalmazásokat kereshet a vállalat számára és egyenként vagy nagyobb mennyiségben is vásárolhat közülük. Az áruházat az Intune-nal összekapcsolva a mennyiségi licencszerződés keretében vásárolt alkalmazásokat az Azure Portalról kezelheti.
 
 ## <a name="protect-company-data"></a>Vállalati adatok védelme
 

@@ -1,6 +1,6 @@
 ---
 title: "Az Intune-hoz szükséges VPN-beállítások Windows 8.1-es eszközök esetén"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Útmutató a VPN-kapcsolatok Windows 8.1-eszközökön való konfigurálásához használható Intune-beállításokhoz."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: de811d4a41aa8bdf9fd016b6ee439e1ed2ef2a92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>A Microsoft Intune-ban regisztrált Windows 8.1-eszközök VPN-beállításai
 
@@ -30,7 +30,7 @@ A megadott beállításoktól függően az alábbi listában található érték
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
 
-- **Az összes beállítás alkalmazása csak a Windows Phone 8.1-re** – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portalon nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, minden beállítást csak a Windows 8.1-eszközökre alkalmaz a rendszer. Ha a **Nincs konfigurálva** értékre van állítva, akkor a Windows 10 rendszerű eszközökre is alkalmazza rendszer ezeket a beállításokat.
+- **Az összes beállítás alkalmazása csak a Windows 8.1-re** – Ezt a beállítást a klasszikus Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, minden beállítást csak a Windows 8.1-eszközökre alkalmaz a rendszer. Ha a **Nincs konfigurálva** értékre van állítva, akkor a Windows 10 rendszerű eszközökre is alkalmazza rendszer ezeket a beállításokat.
 - **Kapcsolat neve** – Nevezze el a kapcsolatot. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
 - **Kiszolgálók** – Adjon meg egy vagy több olyan VPN-kiszolgálót, amelyhez az eszközök csatlakozni fognak.
     - **Hozzáadás** – Megnyitja a **Sor hozzáadása** panelt, melyen a következőket adhatja meg:

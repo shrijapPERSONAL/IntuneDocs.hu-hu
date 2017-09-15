@@ -1,12 +1,12 @@
 ---
 title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Android esetén"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre androidos eszközökön.”"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
@@ -67,8 +67,8 @@ Az androidos eszköz korlátozási szabályzatával használva ezen beállítás
 <sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Céges portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
 
 Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-nál korábbi verziójú Androidot futtató eszközhöz rendeli, az az alábbi jelenségeket eredményezi.
-- A Céges portál alkalmazás 1704-esnél korábbi verziója esetén nem érvényesül PIN-kód-szabályzat az eszközön, és hibaüzenet jelenik meg az Intune-portálon.
-- Ha a Céges portál alkalmazás 1704-es vagy későbbi verzióját futtatja, csak egyszerű PIN-kód alkalmazható. Az Android 5.0-nál korábbi verziói nem támogatják ezt a beállítást. Hibaüzenet nem jelenik meg az Intune-portálon.
+- A Céges portál alkalmazás 1704-esnél korábbi verziója esetén nem érvényesül PIN-kód-szabályzat az eszközön, és hibaüzenet jelenik meg az Azure Portalon.
+- Ha a Céges portál alkalmazás 1704-es vagy későbbi verzióját futtatja, csak egyszerű PIN-kód alkalmazható. Az Android 5.0-nál korábbi verziói nem támogatják ezt a beállítást. Hibaüzenet nem jelenik meg az Azure Portalon.
 
 
 ## <a name="google-play-store"></a>Google Play Áruház
@@ -79,7 +79,7 @@ Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-ná
 
 A korlátozott alkalmazások listájában konfigurálhatja az alábbi listák egyikét mind androidos, mind Samsung KNOX Standard-alapú eszközökhöz:
 
-A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a telepítése és futtatása nincs engedélyezve a felhasználók számára.
+A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a felhasználó általi telepítését és futtatását jelenteni fogja a rendszer.
 A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalmazza, amelyeknek a telepítése engedélyezve van a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek egyéb alkalmazásokat. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.
 A tiltott alkalmazások beállításait tartalmazó eszközprofilokat hozzá kell rendelni a kívánt felhasználócsoportokhoz.
 
@@ -107,6 +107,21 @@ Az **Importálás** elemre is kattinthat a lista csv-fájlból való betöltés�
 - **Javascript (csak Samsung KNOX esetén)** – Engedélyezi az eszköz webböngészője számára a Java-szkriptek futtatását.
 - **Előugró ablakok (csak Samsung KNOX esetén)** – A böngésző előugróablak-funkciójának engedélyezése.
 
+## <a name="allow-or-block-apps"></a>Alkalmazások engedélyezése és letiltása
+
+Ezzel a beállítással megadható azoknak az alkalmazásoknak a listája, amelyeket kizárólag Samsung KNOX Standard eszközökön engedélyezett telepíteni és futtatni.
+Ezen kívül megadhatóak olyan telepített alkalmazások is, amelyek rejtve lesznek az eszköz elhasználója elől. A felhasználók ezeket az alkalmazásokat nem futtathatják.
+
+- **Telepíthető alkalmazások (csak Samsung KNOX Standard esetén)**
+- **Nem indítható alkalmazások (csak Samsung KNOX Standard esetén)**
+- **Felhasználó elől elrejtett alkalmazások (csak Samsung KNOX Standard esetén)**
+
+Mindegyik beállításnál egy alkalmazáslistát kell konfigurálnia az alábbiak használatával:
+
+- **Alkalmazások hozzáadása csomagnév szerint** – Elsősorban üzletági alkalmazásoknál használatos. Adja meg az alkalmazás nevét, majd az alkalmazáscsomag nevét. 
+- **Alkalmazások hozzáadása URL-cím alapján** – Adja meg az alkalmazás nevét, majd az alkalmazás Google Play Áruházbeli URL-címét.
+- **Felügyelt alkalmazások hozzáadása** – Az Intune-nal felügyelt alkalmazások listájából válassza ki a kívánt alkalmazást.
+
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
 - **Google biztonsági mentés (csak Samsung KNOX esetén)** – Engedélyezi a Google-fiók biztonsági mentését.
@@ -127,9 +142,9 @@ Az **Importálás** elemre is kattinthat a lista csv-fájlból való betöltés�
 
 ## <a name="kiosk"></a>Kioszkmód
 
-A kioszkmód-beállítások csak a Samsung KNOX Standard-eszközökre vonatkoznak.
+A kioszkmód csak a Samsung KNOX Standard eszközökre, és csak az Intune-nal felügyelt alkalmazásokra vonatkozik.
 
-- **Felügyelt alkalmazás kiválasztása** – Válassza ki a következők egyikét egy vagy több, az eszköz kioszkmódjában futtatható alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.
+- **Felügyelt alkalmazás kiválasztása** – Válassza ki a következő lehetőségek egyikét egy vagy több, az eszköz kioszkmódjában futtatható felügyelt alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.
     - **Alkalmazások hozzáadása csomagnév szerint**
     - **Alkalmazások hozzáadása URL-cím szerint**
     - **Felügyelt alkalmazások hozzáadása**.

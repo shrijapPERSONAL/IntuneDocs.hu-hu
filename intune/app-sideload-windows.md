@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
 
@@ -55,7 +55,7 @@ Az alábbi lépésekkel beszerezheti a szükséges tanúsítványokat, és alá�
 6.  **Az alkalmazás feltöltése az Intune-ba**<br>
     Töltse fel az alkalmazás aláírt fájlját és a kódaláíró tanúsítványt, így elérhetővé téve az alkalmazást a végfelhasználók számára.
 
-    1.  Az Intune-portálon kattintson a **Felügyelet** &gt; **Windows Phone** lehetőségre.
+    1.  Az Azure Portalon kattintson a **Felügyelet** &gt; **Windows Phone** lehetőségre.
 
     2.  Kattintson az **Aláírt alkalmazásfájl feltöltése** lehetőségre, és jelentkezzen be az Intune-rendszergazdai azonosítójával.
 
@@ -118,7 +118,7 @@ A Windows-eszközökre (a Windows Phone-telefonokat és a Windows 10 Mobile rend
 
     -   `-EnterpriseId` – a vállalat azonosítója. Ezt az argumentumot vagy az AetxPath argumentumot kötelező megadni. Ha nincs megadva ez az argumentum, a program az AETX-fájlból olvassa be a vállalat azonosítóját. Például: 1000000001.
 
-6.  Telepítse a Windows Phone 8.1-es Vállalati portál alkalmazást (SSP.appx). További útmutatást a [Windows Phone rendszerű üzletági (LOB) alkalmazások hozzáadása](lob-apps-windows-phone.md) ([klasszikus konzol](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) című témakörben talál.
+6.  Telepítse a Windows Phone 8.1-es Vállalati portál alkalmazást (SSP.appx). További útmutatást a [Windows Phone rendszerű üzletági (LOB) alkalmazások hozzáadása](lob-apps-windows-phone.md) ([klasszikus portál](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) című témakörben talál.
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>A Symantec vállalati kódaláíró tanúsítvány megújítása
 
@@ -136,7 +136,7 @@ A Windows és Windows Phone rendszerű mobilalkalmazások telepítésére szolg�
 
 1.  Írja alá az üzleti alkalmazás legújabb verzióját.
 
-2.  Nyissa meg az Intune-konzolt, majd a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** szakaszban kattintson az **Aláírt alkalmazás feltöltése** gombra.
+2.  Nyissa meg az Azure Portalt, majd a **Felügyelet** &gt; **Mobileszköz-kezelés** &gt; **Windows Phone** szakaszban kattintson az **Aláírt alkalmazás feltöltése** gombra.
 
 3.  Töltse fel az imént aláírt Vállalati portál alkalmazást. Az újonnan aláírt SSP.xap fájlra és a Symantectől kapott új .PFX-fájlra, vagy az ezzel az új .PFX-fájllal létrehozott alkalmazásregisztrációs adatblokkra lesz szüksége.
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5da29dceb5308eab72e5b24e220586aa739982ea
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -30,7 +30,7 @@ A Microsoft Intune segít az e program keretében vásárolt alkalmazások felü
 
 > [!Important]
 > Az iOS Volume Purchase Program for Business (VPP) programon keresztül vásárolt alkalmazások licenceit az Intune jelenleg a felhasználókhoz, és nem az eszközökhöz rendeli. Emiatt az alkalmazás telepítéséhez a végfelhasználóknak meg kell adniuk Apple ID azonosítójukhoz tartozó jelszavukat.
-> Az Apple Volume Purchase Program for Education ebben a kiadásban nem támogatott.
+> Az Apple Volume Purchase Program for Education és a B2B-alkalmazások használata ebben a kiadásban nem támogatott.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Nagy mennyiségben vásárolt alkalmazások felügyelete iOS-eszközökön
 Az [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) programon keresztül egyszerre több licencet vásárolhat az iOS-alkalmazásokhoz. Ehhez Apple VPP-fiókot kell beállítani az Apple webhelyén, és az Apple VPP-tokent fel kell tölteni az Intune-ba.  Ezután szinkronizálhatja a mennyiségi vásárlás adatait az Intune-nal, és nyomon követheti a mennyiségi programban vásárolt alkalmazás használatát.

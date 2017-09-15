@@ -1,6 +1,6 @@
 ---
 title: Klasszikus Intune-csoportok az Azure Portalon
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "További információk az Intune Azure Portal csoportokkal kapcsolatos újdonságairól"
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Klasszikus Intune-csoportok az Azure Portalon
 
@@ -38,7 +38,7 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
 - A **Meghatározott tagok kizárása** a csoportból funkció az Azure Portalon nem érhető el, megoldható azonban az Azure AD-alapú biztonsági csoportok speciális szabályaival. Létrehozhat például egy olyan speciális szabályt, amely egyetlen biztonsági csoportba foglalja a Sales nevű részleg minden munkatársát, kivéve azokat, akiknek a beosztásában szerepel az „Assistant” szó. Ezt a következő szabállyal érheti el:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- Az Intune-konzolon elérhető **Minden Exchange ActiveSync által kezelt eszköz** csoport nem lett migrálva az Azure AD-be, az EAS által kezelt eszközök információit azonban továbbra is elérheti az Azure Portalról.
+- A klasszikus Intune-konzolon elérhető **Minden Exchange ActiveSync által kezelt eszköz** csoport nem lett migrálva az Azure AD-be, az EAS által kezelt eszközök információit azonban továbbra is elérheti az Azure Portalról.
 
 ## <a name="how-to-get-started"></a>Első lépések
 
@@ -51,9 +51,9 @@ Előfordulhat, hogy a korábbi Intune-csoportok funkcióinak némelyike nem érh
 
 
 ## <a name="what-happened-to-intune-groups"></a>Mi történt az Intune-csoportokkal?
-A csoportok klasszikus Intune-portálról az Azure Portalon lévő Intune-ba való migrálásakor a következő szabályok érvényesek:
+A csoportok az Azure Portalról az Azure Portalon lévő Intune-ba való migrálásakor a következő szabályok érvényesek:
 
-| Csoportok a klasszikus Intune-ban|Csoportok az Azure AD-ben|
+| Csoportok az Intune-ban|Csoportok az Azure AD-ben|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statikus felhasználói csoport|Statikus Azure AD biztonsági csoport|
 |Dinamikus felhasználói csoport|Statikus Azure AD biztonsági csoportok Azure AD biztonságicsoport-hierarchiával|
@@ -65,7 +65,7 @@ A csoportok klasszikus Intune-portálról az Azure Portalon lévő Intune-ba val
 
 ## <a name="group-hierarchy"></a>Csoporthierarchia
 
-A klasszikus Intune-konzolon minden csoportnak volt szülőcsoportja, és a csoportok csak a szülőcsoport tagjait tartalmazhatták. Az Azure AD-ben a gyermekcsoportok a szülőcsoportjukon kívüli tagokat is tartalmazhatnak.
+Az Intune-konzolon minden csoportnak volt szülőcsoportja, és a csoportok csak a szülőcsoport tagjait tartalmazhatták. Az Azure AD-ben a gyermekcsoportok a szülőcsoportjukon kívüli tagokat is tartalmazhatnak.
 
 ## <a name="group-attributes"></a>Csoportattribútumok
 Az attribútumok a csoportok definiálása során felhasználható eszköztulajdonságok. Ez a táblázat bemutatja, hogyan fog történni ezeknek a feltételeknek az Azure AD-alapú biztonsági csoportokba való migrálása.
@@ -84,4 +84,4 @@ Az attribútumok a csoportok definiálása során felhasználható eszköztulajd
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Mi történik a korábban telepített szabályzatokkal és alkalmazásokkal?
 
-A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban a klasszikus Intune-konzol helyett az Azure Portalon lehet kezelni.
+A szabályzatokat és az alkalmazásokat továbbra is telepíteni lehet a csoportokba. Ezeket a csoportokat azonban az Intune-konzol helyett az Azure Portalon lehet kezelni.

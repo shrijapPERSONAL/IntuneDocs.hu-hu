@@ -1,6 +1,6 @@
 ---
 title: "Regisztrációs korlátozások beállítása az Intune-ban"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune rendszergazdájaként meghatározhatja, hogy mely eszközöket lehessen regisztrálni az Intune általi felügyelethez. Az Intune-portálon állíthatja be az eszközregisztráció következő korlátozásait:
+Az Intune rendszergazdájaként meghatározhatja, hogy mely eszközöket lehessen regisztrálni az Intune általi felügyelethez. Az Azure Portal webhelyen állíthatja be az eszközregisztráció következő korlátozásait:
 
 - Regisztrált eszközök maximális száma
 - Regisztrációra alkalmas eszközplatformok:
@@ -68,7 +68,7 @@ Az alapértelmezett regisztrációs korlátozások minden felhasználóra vonatk
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
-4. Az Intune-portálon válassza az **Eszközök regisztrálása** lehetőséget, majd a **Regisztrációs korlátozások** elemet.
+4. Az Azure Portal webhelyen válassza az **Eszközök regisztrálása**, majd a **Regisztrációs korlátozások** lehetőséget.
 5. Válassza a **Regisztrációs korlátozások** > **Eszközszámkorlátok** lehetőséget.
 6. A **Minden felhasználó** alatt válassza az **Eszközszámkorlát** lehetőséget. Adja meg a regisztrált eszközök felhasználónkénti maximális számát.  
 ![Az Eszközszámkorlátok panel képernyőképe az eszközszámkorlátokkal.](./media/device-restrictions-limit.png)

@@ -1,7 +1,7 @@
 ---
 title: "Hová kerültek az Intune-funkciók az Azure-ban?"
-titleSuffix: Intune on Azure
-description: "Az Intune-funkciók helye az Azure-konzolon."
+titlesuffix: Azure portal
+description: "Az Intune-funkciók helye az Azure Portalon.”"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
-Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-konzolt, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure-beli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
+Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
-|Funkció |Elérési útvonal a klasszikus konzolon|Elérési útvonal az Azure-beli Intune-ban|
+|Funkció |Elérési útvonal a klasszikus portálon|Elérési útvonal az Azure Portalbeli Intune-ban|
 |------------|---------------|---------------|
 |Készülékregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program tokenje](#where-did-apple-dep-go) |
 |Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és
 
 
 ## <a name="where-do-i-manage-groups"></a>Hol lehet a csoportokat kezelni?
-Az Azure-beli Intune az [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) segítségével kezeli a csoportokat.
+Az Azure Portalbeli Intune az [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) segítségével kezeli a csoportokat.
 
 ## <a name="where-did-enrollment-rules-go"></a>Hová tűntek a regisztrációs szabályok?
-A klasszikus konzolon be lehetett állítani a modern windowsos és macOS-es, valamint mobileszközök MDM-regisztrációjára vonatkozó szabályokat:
+A klasszikus portálon be lehetett állítani a modern windowsos és macOS-es, valamint mobileszközök MDM-regisztrációjára vonatkozó szabályokat:
 
 ![Klasszikus mobileszköz-regisztrációs szabályok képe](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Ezek a szabályok kivétel nélkül vonatkoztak az Intune-fiók összes felhaszn
 
 ![Azure-os mobileszköz-regisztrációs korlátozások képe](./media/02-azure-enroll-restrictions.png)
 
-Az eszközök száma szerinti alapértelmezett korlátozás megfelel a klasszikus konzolon a Regisztrált eszközök maximális száma szabálynak:
+Az eszközök száma szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a Regisztrált eszközök maximális száma szabálynak:
 
 ![Azure-os eszközszám-korlátozások képe](./media/03-azure-device-limit.png)
 
-Az eszköztípus szerinti alapértelmezett korlátozás megfelel a klasszikus konzolon a platformkorlátozási szabálynak:
+Az eszköztípus szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a platformkorlátozási szabálynak:
 
 ![Azure-os eszköztípus-korlátozások képe](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ A személyes tulajdonú eszközök letiltásának vagy engedélyezésének képe
 A további korlátozási képességek csak az Azure Portalon lesznek elérhetők.
 
 ## <a name="where-did-apple-dep-go"></a>Hová tűnt az Apple DEP?
-A klasszikus konzolon az Intune-t integrálni lehetett az Apple készülékregisztrációs programjával, és manuálisan szinkronizálást kérni az Apple szolgáltatásával:
+A klasszikus portálon az Intune-t integrálni lehetett az Apple készülékregisztrációs programjával, és manuálisan szinkronizálást kérni az Apple szolgáltatásával:
 
 ![Klasszikus DEP-token képe](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ Az Azure Portalon ugyanazokkal a lépésekkel lehet beállítani az Apple DEP-et
 
 ![Azure-os DEP-token képe](./media/07-azure-dep-token.png)
 
-A klasszikus konzol **Szinkronizálás** lehetősége azonban a sorozatszám-kezelési munkafolyamatba került, hiszen a manuális szinkronizálás eredménye is ott mutatkozik meg:
+A klasszikus portál **Szinkronizálás** lehetősége azonban a sorozatszám-kezelési munkafolyamatba került, hiszen a manuális szinkronizálás eredménye is ott mutatkozik meg:
 
 ![Azure-os DEP-szinkronizálás képe](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>Hová tűntek az előre regisztrált vállalati eszközök?
 ### <a name="by-ios-serial-number"></a>iOS-sorozatszám szerint
-A klasszikus konzolon az iOS-es eszközöket az Apple készülékregisztrációs programjával (DEP) és az Apple Configurator eszközzel lehet regisztrálni. Mindkét módszerrel lehetséges a sorozatszám-alapú előzetes regisztráció, és mindkettőhöz speciális Céges eszközregisztrációs profilokat kell kiosztani. A regisztráció előtt a regisztrációs profilok kiosztását a **Előre regisztrált vállalati eszközök iOS-sorozatszám szerint** eszközcsoporttal lehet kezelni:
+A klasszikus portálon az iOS-es eszközöket az Apple készülékregisztrációs programjával (DEP) és az Apple Configurator eszközzel lehet regisztrálni. Mindkét módszerrel lehetséges a sorozatszám-alapú előzetes regisztráció, és mindkettőhöz speciális Céges eszközregisztrációs profilokat kell kiosztani. A regisztráció előtt a regisztrációs profilok kiosztását a **Előre regisztrált vállalati eszközök iOS-sorozatszám szerint** eszközcsoporttal lehet kezelni:
 
 ![Klasszikus Apple-sorozatszámok képe](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Az Apple DEP-pel és a Configurator eszközzel végzett regisztrációk sorozats
 
 ### <a name="by-imei-all-platforms"></a>IMEI-szám szerint (minden platform)
 
-A klasszikus konzolon előzetesen meg lehet adni azoknak az eszközöknek a sorozatszámát, amelyeket az Intune-regisztráció alkalmával céges tulajdonúként kell megjelölni:
+A klasszikus portálon előzetesen meg lehet adni azoknak az eszközöknek a sorozatszámát, amelyeket az Intune-regisztráció alkalmával céges tulajdonúként kell megjelölni:
 
 ![Klasszikus IMEI-számlista képe](./media/12-classic-corp-imei.png)
 
-Az Azure-konzolon ugyanezeket az IMEI-számokat a Céges készülékazonosítók listába kell feltölteni vesszőkkel tagolt (CSV) fájlként. Az új portálon nem lehet manuálisan bevinni az IMEI-számokat:
+Az Azure Portalon ugyanezeket az IMEI-számokat a Céges készülékazonosítók listába kell feltölteni vesszőkkel tagolt (CSV) fájlként. Az új portálon nem lehet manuálisan bevinni az IMEI-számokat:
 
 ![Azure-os IMEI-számlista képe](./media/13-azure-corp-imei.png)
 
 Az Azure-beli Intune fel van készítve az IMEI mellett másféle azonosítók kezelésére is, de jelenleg csak az IMEI-számokat lehet előzetesen bevinni.
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>Hová tűntek a céges eszközregisztrációs profilok?
-Ha az Apple DEP program keretében vagy az Apple Configurator eszközzel iOS-es eszközöket szeretne regisztrálni, meg kell adnia az eszköznek kiosztandó céges eszközregisztrációs profilt. A klasszikus konzolon ezeknek a profiloknak a létrehozása és kezelése egyetlen listában történt:
+Ha az Apple DEP program keretében vagy az Apple Configurator eszközzel iOS-es eszközöket szeretne regisztrálni, meg kell adnia az eszköznek kiosztandó céges eszközregisztrációs profilt. A klasszikus portálon ezeknek a profiloknak a létrehozása és kezelése egyetlen listában történt:
 
 ![Klasszikus eszközregisztrációs profilok képe](./media/14-classic-corp-profiles.png)
 

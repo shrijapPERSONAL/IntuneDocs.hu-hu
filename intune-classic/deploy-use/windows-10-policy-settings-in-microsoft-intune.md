@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>A Microsoft Intune-ban regisztrált Windows 10-eszközökre vonatkozó Intune-házirendbeállítások
 
@@ -41,9 +41,9 @@ Adja meg a szabályzat nevét és – szükség esetén – a leírását, hogy 
 
 ### <a name="oma-uri-settings"></a>OMA-URI-beállítások
 
-Minden egyes hozzáadni kívánt OMA-URI-beállításhoz adja meg a következő információkat. A rendelkezésre álló beállítások áttekintését a jelen témakör [Windows 10 URI-beállítások](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) című részében találja:
+Minden egyes hozzáadni kívánt OMA-URI-beállításhoz adja meg a következő információkat:
 
-- **Beállítás neve**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában.
+- **Beállítás neve**: Adjon meg egy egyedi nevet az OMA-URI beállítás számára, amellyel az egyszerűen azonosítható a beállítások listájában. Az URI-beállításokkal kapcsolatos további információt [a szabályzatkonfiguráció-szolgáltatókkal foglalkozó cikkben](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) találhat.
 - **Beállítás leírása**: Itt adhatja meg a beállítás leírását (nem kötelező).
 - **Adattípus**: A következő adattípusok közül választhat:
     - **Karakterlánc**

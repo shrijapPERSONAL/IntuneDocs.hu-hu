@@ -1,6 +1,6 @@
 ---
-title: "Az Azure-beli Microsoft Intune ismert problémái"
-titleSuffix: Intune on Azure
+title: "Ismert problémák a Microsoft Intune-ban az Azure Portalon"
+titlesuffix: Azure portal
 description: "Tájékozódhat az Intune ismert problémáiról.”"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -37,7 +37,7 @@ Ha új szolgáltatást szeretne igényelni az Intune-hoz, jelentést küldhet el
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Az Intune által migrálás közben létrehozott csoportok hatással lehetnek más Microsoft-termékek működésére
 
-Ha a klasszikus Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** nevű új csoport. Ez a csoport az Azure Active Directory minden felhasználóját tartalmazza, nem csak az Intune-nal felügyelt felhasználókat. Ez a használat akkor okozhat problémát más Microsoft-termékeknél, ha azt szeretné, hogy valamely meglévő vagy új felhasználók egyetlen csoportnak se legyenek tagjai.
+Ha az Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** nevű új csoport. Ez a csoport az Azure Active Directory minden felhasználóját tartalmazza, nem csak az Intune-nal felügyelt felhasználókat. Ez a használat akkor okozhat problémát más Microsoft-termékeknél, ha azt szeretné, hogy valamely meglévő vagy új felhasználók egyetlen csoportnak se legyenek tagjai.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Egyes képességekhez szükséges másodlagos migrálás
 
@@ -49,20 +49,20 @@ A 2017 januárja előtt létrehozott Intune-fiókokat migrálni kell, hogy az al
 - Készülékregisztráció-kezelői fiókok
 - Apple Volume Purchase Program
 
-Mivel ezek a lehetőségek nem kezelhetők egyszerre a klasszikus Intune- (Silverlight-) konzolon és az Azure Portalon is, a migrálás az alábbi hatással lesz rájuk:
-- letiltja őket a klasszikus konzolon
+Mivel ezek a lehetőségek nem kezelhetők egyszerre az Intune- (Silverlight-) konzolon és az Azure Portalon is, a migrálás az alábbi hatással lesz rájuk:
+- letiltja őket a klasszikus portálon
 - engedélyezi őket az Azure Portalon  
 
-2017. szeptember 11-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra 2017. szeptember 11. és 22. között kerül sor. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-konzolon való letiltásától számítva akár hat óráig is tarthat.
+2017. szeptember 11-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra 2017. szeptember 11. és 22. között kerül sor. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-portálon való letiltásától számítva akár hat óráig is eltarthat.
 
 Ha a továbbiakban ezeket az Intune-lehetőségeket az Azure Portalon kezeli, vegye figyelembe az alábbi pontokat:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Eltávolítja a céges eszközregisztrációs profilokat az Apple DEP-ben
-Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. Ezt a klasszikus Intune- (Silverlight-) konzolon elérhető funkciót a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
+Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. Ezt az Intune- (Silverlight-) konzolon elérhető funkciót a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Az Apple DEP-token migráláskor visszaáll
 
-Ha a klasszikus Intune- (Silverlight-) portálon törli az Apple Készülékregisztrációs program tokenjét, és nem tölt fel új tokent az Azure Portalra, akkor migráláskor az eredeti token áll vissza az Azure Portalon. A token eltávolításához és a DEP-regisztráció megakadályozásához törölje a tokent az Azure Portalról.
+Ha az Intune- (Silverlight-) portálon törli az Apple Készülékregisztrációs program tokenjét, és nem tölt fel új tokent az Azure Portalra, akkor migráláskor az eredeti token áll vissza az Azure Portalon. A token eltávolításához és a DEP-regisztráció megakadályozásához törölje a tokent az Azure Portalról.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
 
@@ -101,8 +101,9 @@ További tudnivalók a fenti beállításokhoz: [A macOS eszközkorlátozásokra
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Az Intune-beli megfelelőségi szabályzatok nem jelennek meg az új konzolon
 
-A klasszikus Intune-portálon létrehozott megfelelőségi szabályzatok migrálva lesznek, de az Azure Portal szerkezeti módosításai miatt nem jelennek meg az Azure Portalon. A klasszikus Intune-portálon létrehozott megfelelőségi szabályzatok továbbra is érvényben vannak, de megnézni és szerkeszteni csak a klasszikus Intune-portálon lehet őket.
-Ügyeljen továbbá arra is, hogy az Azure Portalon létrehozott új szabályzatok a klasszikus Intune-portálon már nem jelennek meg.
+A klasszikus Intune-portálon létrehozott megfelelőségi szabályzatok migrálva lesznek, de az Azure Portal szerkezeti módosításai miatt nem jelennek meg az Azure Portalon. A klasszikus Intune-portálon létrehozott megfelelőségi szabályzatok továbbra is érvényben vannak, de megnézni és szerkeszteni csak a klasszikus portálon lehet őket.
+
+Ügyeljen továbbá arra is, hogy az Azure Portalon létrehozott új szabályzatok a klasszikus portálon már nem jelennek meg.
 
 További információt a [Mi az eszközmegfelelőség](device-compliance.md) című témakörben talál.
 

@@ -1,6 +1,6 @@
 ---
 title: "Egyéni Intune profilbeállítások Android for Work rendszerhez"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Információk az Android for Work-eszközök egyéni Intune-profilbeállításainak létrehozásáról."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work-eszközök egyéni Intune profilbeállításainak létrehozása
 
@@ -32,7 +32,7 @@ Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, a
 1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása](custom-settings-configure.md) című témakör utasításait.
 2. Az **Egyéni OMA-URI beállítások** panelen a **Hozzáadás** elemet választva adhat meg új beállítást.
 3. A **Sor hozzáadása** panelen adja meg a következőket:
-    - **Név** – Adjon meg egyedi nevet az Android for Work egyéni beállításainak, hogy azok azonosíthatók legyenek az Intune-portálon.
+    - **Név** – Adjon egyedi nevet az Android for Work egyéni beállításainak, hogy azok azonosíthatók legyenek az Azure Portal webhelyen.
     - **Leírás** – Adjon meg egy leírást, amely áttekintést nyújt az Android egyéni szabályzatáról, és olyan releváns információkat tartalmaz, amelyek megkönnyítik a keresését.
     - **OMA-URI** – Adja meg az OMA-URI azonosítót, amelyhez beállítást kíván megadni.
     - **Adattípus** – Válassza ki az adattípust az OMA-URI-beállítás megadásához. A **Karakterlánc**, **Karakterlánc (XML)**, **Dátum és idő**, **Egész szám**, **Lebegőpontos szám**, **Logikai** vagy **Base64 (fájl)** lehetőségek közül választhat.

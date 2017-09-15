@@ -1,6 +1,6 @@
 ---
 title: "Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz.”"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz
 
@@ -60,7 +60,7 @@ Adja meg a kezdőképernyőn megjeleníteni kívánt lapokat és az egyes lapoko
 
 
 1. A **Lapok** panelen válassza a **Hozzáadás** lehetőséget.
-2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Válassza a **Hozzáadás** lehetőséget, majd válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni a laphoz.
 4. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a lapon.
 
@@ -76,7 +76,7 @@ Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alá
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Alkalmazás hozzáadása a listához
 
-1. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+1. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. További információt az alább található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
 3. Kattintson az **OK** gombra, majd folytassa az elemek hozzáadását a Dock esetében legfeljebb **6**, lapok esetében legfeljebb **60** elemig.
 4. Amikor végzett, kattintson az **OK**gombra.
@@ -87,8 +87,8 @@ Az egyes lapokhoz egy mappában hozzáadott alkalmazások balról jobbra jelenne
 
 1. Írja be a **Mappanevet**. Ez a név jelenik meg az eszközön a felhasználók számára.
 2. A **Hozzáadás** választásával hozzon létre egy lapot a mappában. Legfeljebb 20 lapot adhat hozzá.
-3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
-3. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Intune-portálon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+3. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. Útmutatást kaphat az **Alkalmazás hozzáadása a listához** című szakaszban.
 3. Válassza a **Hozzáadás** lehetőséget. Legfeljebb 60 elemet adhat hozzá.
 4. Amikor végzett, kattintson az **OK**gombra.

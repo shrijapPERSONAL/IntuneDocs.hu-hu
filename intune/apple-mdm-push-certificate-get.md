@@ -1,6 +1,6 @@
 ---
 title: "Apple MDM push-tanúsítvány beszerzése"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Az Apple MDM Push-tanúsítvány beszerzéséhez szükséges lépések ismertetése az iOS-eszközök Intune-os felügyeletéhez."
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a100b436ecf257c1e3886c23f15fa967fb877b7c
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 804ea185cf48b6781174b888436211a6d70823ca
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/02/2017
 Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac számítógépek mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az Intune-nak MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS-es és Mac eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói telepíthetik a Céges portál alkalmazást az eszközeik regisztrálásához. Az Apple Device Enrollment Programmal a vállalati tulajdonú iOS-eszközökre is beállíthat eszközfelügyeletet, vagy többek között az Apple Configurator használatával is regisztrálhatja az eszközöket. A regisztrálási lehetőségekről további információt talál a [iOS-eszközök regisztrálásának módjai](enrollment-method-choose-ios.md) című témakörben.
 
 ## <a name="steps-to-get-your-certificate"></a>A tanúsítvány beszerzésének lépései
-Az Intune-portálon válassza az **Eszközök regisztrálása** > **Apple-regisztráció** **Apple MDM Push-tanúsítvány** elemet, majd kövesse az Azure Portalon a következő lépéseket.
+Az Azure Portalon válassza az **Eszközök regisztrálása** > **Apple-regisztráció** **Apple MDM Push-tanúsítvány** elemet, majd kövesse az Azure Portalon a következő lépéseket.
 
 **1. lépés Töltse le az Apple MDM push-tanúsítvány létrehozásához szükséges Intune tanúsítvány-aláírási kérelmet.**<br>
 Válassza a **CSR letöltése** lehetőséget a kérelemfájl letöltéséhez és helyi mentéséhez. A fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.
@@ -55,11 +55,11 @@ A tanúsítványt a rendszer ahhoz az Apple-azonosítóhoz társítja, amely lé
 > [!NOTE]
 > A tanúsítványt a rendszer ahhoz az Apple-azonosítóhoz társítja, amely létrehozta azt. Az ajánlott eljárás szerint a felügyeleti feladatokhoz vállalati Apple-azonosítót használjon. Soha ne használjon személyes Apple-azonosítót.
 
-1. Az Intune-portálon válassza az **Eszközök regisztrálása** > **Apple-regisztráció**, majd az **Apple MDM push-tanúsítvány** elemet.
+1. Az Azure Portalon válassza az **Eszközök regisztrálása** > **Apple-regisztráció**, majd az **Apple MDM Push-tanúsítvány** elemet.
 2. Válassza a **CSR letöltése** lehetőséget a kérelemfájl letöltéséhez és helyi mentéséhez. A fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.
 3. Keresse meg a megújítani kívánt tanúsítványt, és kattintson a **Megújítás** elemre.
 4. A**push-tanúsítvány megújítása** képernyőn adjon meg jegyzeteket a tanúsítvány későbbi azonosításának megkönnyítése érdekében, majd a **Fájl kiválasztása** elemre kattintva keresse meg a letöltött új kérelemfájlt, és kattintson a **Feltöltés** elemre.
 5. A **Megerősítés** képernyőn kattintson a **Letöltés** elemre, majd mentse helyileg a .pem fájlt.
-6. Az Azure Intune portálon kattintson az **Apple MDM push-tanúsítvány** böngészőikonra, válassza ki az Apple portáljáról letöltött .pem fájlt, majd kattintson a **Feltöltés** elemre.
+6. Az Azure Portalon kattintson az **Apple MDM push-tanúsítvány** böngészőikonra, válassza ki az Apple portáljáról letöltött .pem-fájlt, majd válassza a **Feltöltés** lehetőséget.
 
 Az Apple MDM push-tanúsítvány ekkor **Aktív** állapotba kerül, és 365 napig érvényben marad.

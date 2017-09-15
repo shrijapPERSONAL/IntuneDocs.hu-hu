@@ -1,12 +1,12 @@
 ---
 title: "A céges adatok eltávolítása és a gyári beállítások visszaállítása az Intune-ban felügyelt eszközökön"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Ez a cikk tájékoztatást nyújt egy eszközön található céges adatok eltávolításáról, valamit az eszköz gyári beállításainak visszaállításáról."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
@@ -106,7 +106,7 @@ Ha az eszköz be van kapcsolva és csatlakoztatva van, a céges adatok eltávol�
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálról
 
-Kommunikációs problémák vagy elveszett eszközök miatt előfordulhat, hogy el kell távolítania egy eszközt az Azure Active Directoryból (AD-ból). A törlés parancs nem távolítja el a az eszközt a felügyeletből, de a **Törlés** opcióval eltávolíthatók az Azure-konzolból egy olyan eszköz rekordjai, amelyikről tudja, hogy nem érhető el, és nem valószínű, hogy újra kommunikálni fog az Azure-ral.
+Kommunikációs problémák vagy elveszett eszközök miatt előfordulhat, hogy el kell távolítania egy eszközt az Azure Active Directoryból (AD-ból). A törlés parancs nem távolítja el az eszközt a felügyeletből, de a **Törlés** opcióval eltávolíthatók az Azure Portalról egy olyan eszköz rekordjai, amelyikről tudja, hogy nem érhető el, és nem valószínű, hogy újra kommunikálni fog az Azure-ral.
 
 1.  Jelentkezzen be az [Azure Portalon az Azure Active Directoryba](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Bejelentkezhet az [Office 365 portálon](https://portal.office.com) is, majd válassza a **Rendszergazda** &gt; **Azure AD** elemet a lap bal oldalán található hivatkozást használva.
 3.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (kattintson a **Register your free Azure Active Directory** előfizetési hivatkozásra).

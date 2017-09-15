@@ -1,6 +1,6 @@
 ---
 title: "Eszközprofilok hibaelhárítása a Microsoft Intune-ban"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Ha elakadt, az alábbi témakör segíthet az Intune-eszközprofilokkal kapcsolatos problémák megoldásában.”"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Eszközprofilok hibaelhárítása a Microsoft Intune-ban
 
@@ -59,7 +59,7 @@ Ha több szabályzatot rendel hozzá ugyanazon felhasználóhoz vagy eszközhöz
 
 -   Ha egy beállítás több megfelelőségi házirendben is szerepel, akkor a szigorúbb megfelelőségi beállítás lesz érvényes.
 
--   Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Intune-konzolon is megjelenik. Az ilyen ütközéseket manuálisan kell feloldani.
+-   Ha egy konfigurációs szabályzatbeállítás ütközik egy másik konfigurációs szabályzatbeállítással, az ütközés az Azure Portalon is megjelenik. Az ilyen ütközéseket manuálisan kell feloldani.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Mi történik, ha ütközés van két alkalmazásvédelmi szabályzat között? Melyik lesz érvényes az alkalmazásra?
 Az ütközési értékek az alkalmazásvédelmi szabályzatok leginkább korlátozó beállításai, a számbeviteli mezők kivételével (ilyen például a PIN-kódmegadási próbálkozások száma az alaphelyzetbe állítás előtt).  A számbeviteli mezők értékei megegyeznek a – javasolt beállításokkal a konzolban létrehozható – MAM-házirendek értékeivel.

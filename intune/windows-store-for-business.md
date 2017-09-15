@@ -1,6 +1,6 @@
 ---
 title: "A Vállalati Microsoft Áruházban vásárolt alkalmazások felügyelete"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Útmutató a Vállalati Microsoft Áruházból származó alkalmazások Intune-ba való szinkronizálásához, és ezután azok kiosztásához és nyomon követéséhez.”"
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 649766b26a1061c4bce11235c04dcbe8570fcdc4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Intune-portálról kezelheti. Példa:
+A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Azure Portalról kezelheti. Példa:
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
 * A szinkronizált alkalmazások megjelennek az Intune felügyeleti konzolján; ezen alkalmazásokat a többi alkalmazáshoz hasonlóan oszthatja ki.
 * Az Intune felügyeleti konzolján nyomon követheti a szabad és a használatban lévő licencek számát.
@@ -64,7 +64,7 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 1. A **Mobilalkalmazások** panelen válassza a **Beállítás** > **Vállalati Microsoft Áruház** lehetőséget.
 2. Kattintson az **Engedélyezés** lehetőségre.
 3. Ha még nem tette meg, kattintson a Vállalati Microsoft Áruházban való regisztrálás hivatkozására, és a fent leírtaknak megfelelően társítsa a fiókját.
-5. A **Nyelv** legördülő listából válassza ki, hogy milyen nyelven jelenjenek meg a Vállalati Microsoft Áruházból származó alkalmazások az Intune-portálon. Az alkalmazások a megjelenítés nyelvétől függetlenül a végfelhasználó nyelvén lesznek telepítve (ha elérhető).
+5. A **Nyelv** legördülő listából válassza ki, hogy milyen nyelven jelenjenek meg a Vállalati Microsoft Áruházból származó alkalmazások az Azure Portalon. Az alkalmazások a megjelenítés nyelvétől függetlenül a végfelhasználó nyelvén lesznek telepítve (ha elérhető).
 6. Kattintson a **Szinkronizálás** lehetőségre a Microsoft Áruházból megvásárolt alkalmazások Intune-ba való felvételéhez.
 
 ## <a name="synchronize-apps"></a>Az alkalmazások szinkronizálása
