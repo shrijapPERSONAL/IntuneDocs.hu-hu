@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | Karakterláncok tömbje | Az alkalmazás WebView-ja �
 > Ha az alkalmazás elérhető lesz az App Store-ban, a `MAMPolicyRequired` értékét NEM értékre kell beállítani az App Store irányelvei alapján.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Célzott MAM-konfiguráció engedélyezése iOS-alkalmazásokhoz
-A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurációs adatokat fogadjanak az Intune App SDK-ból. Ezeknek az adatoknak a formátumát és változatait az alkalmazás tulajdonosának/fejlesztőjének kell meghatároznia és kommunikálnia az Intune-ügyfelek felé. Az Intune-rendszergazdák az Intune Azure-konzolról célozhatják és telepíthetik a konfigurációs adatokat. Ami az Intune App SDK for iOS-t (7.0.1 verzió) illeti, a célzott MAM-konfigurációban résztvevő alkalmazások a MAM szolgáltatáson keresztül kaphatják meg a célzott MAM-konfigurációs adatokat. Az alkalmazáskonfigurációs adatokat az MDM-csatorna helyett az MAM szolgáltatásán keresztül közvetlenül az alkalmazásba küldi a rendszer. Az Intune App SDK egy osztályt biztosít az ezekről a konzolokról lekért adatok eléréséhez. Vegye figyelembe a következő előfeltételeket: <br>
+A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurációs adatokat fogadjanak az Intune App SDK-ból. Ezeknek az adatoknak a formátumát és változatait az alkalmazás tulajdonosának/fejlesztőjének kell meghatároznia és kommunikálnia az Intune-ügyfelek felé. Az Intune-rendszergazdák az Intune Azure Portalon célozhatják és telepíthetik a konfigurációs adatokat. Ami az Intune App SDK for iOS-t (7.0.1 verzió) illeti, a célzott MAM-konfigurációban résztvevő alkalmazások a MAM szolgáltatáson keresztül kaphatják meg a célzott MAM-konfigurációs adatokat. Az alkalmazáskonfigurációs adatokat az MDM-csatorna helyett az MAM szolgáltatásán keresztül közvetlenül az alkalmazásba küldi a rendszer. Az Intune App SDK egy osztályt biztosít az ezekről a konzolokról lekért adatok eléréséhez. Vegye figyelembe a következő előfeltételeket: <br>
 * Mielőtt elérhetné a célzott MAM-konfigurációs felhasználói felületet, az alkalmazásnak regisztrálva kell lennie a MAM-WE-ben. A MAM-WE-re vonatkozó további információért lásd az [Alkalmazásvédelmi szabályzat használata eszközbeléptetés nélkül](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) lapot.
 * Foglalja bele az ```IntuneMAMAppConfigManager.h``` kódot az alkalmazás forrásfájljába.
 * Az alkalmazás konfigurációs objektumának beszerzéséhez hívja az ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` funkciót.

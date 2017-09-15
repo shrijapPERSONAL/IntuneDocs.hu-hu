@@ -1,6 +1,6 @@
 ---
 title: "A használati feltételek beállítása a Microsoft Intune-ban"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "A felhasználók által az Intune Céges portálon látható használati feltételek beállítása. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Gondoskodhat arról, hogy a felhasználók elfogadják a hozzáférésre vonatkozó céges feltételeket
 
@@ -32,14 +32,14 @@ Több használati feltételt hozhat létre, és azokat különböző csoportokho
 ## <a name="create-terms-and-conditions"></a>Használati feltételek létrehozása
 Az alábbi lépések végrehajtásával hozhat létre használati feltételeket. A megjelenítendő név és leírás adminisztrációs célt szolgál, míg a feltételek tulajdonságait a felhasználók láthatják a Céges portálon.
 
-1. Válassza az Intune-portálon az **Eszközök beléptetése**, majd a **Használati feltételek** elemet.
+1. Válassza az Azure Portalon az **Eszközök regisztrálása**, majd a **Használati feltételek** lehetőséget.
 2. Válassza a **Létrehozás** lehetőséget.
-![Képernyőkép az Intune-portálról, ahol a használati feltételekhez tartozó Létrehozás gomb látható](media/terms-create-terms.png)
+![Képernyőkép az Azure Portalról, melyen a használati feltételekhez tartozó Létrehozás gomb látható](media/terms-create-terms.png)
 3. A kibontott panelen adja meg az alábbi adatokat:
 
-   - **Megjelenítendő név**: A feltételek neve az Intune-portálon. A felhasználók nem látják ezt a nevet.
+   - **Megjelenített név**: A feltételek neve az Azure Portalon. A felhasználók nem látják ezt a nevet.
 
-   - **Leírás**: További részletek, amelyek alapján könnyebben felismerhetők a feltételek az Intune-portálon.
+   - **Leírás**: További részletek, amelyek alapján könnyebben felismerhető az adott feltételkészlet az Azure Portalon.
 
 4. Nyissa meg a Feltételek és kikötések panelt a Használati feltételek megadása elem melletti nyílra kattintva, majd adja meg a következő adatokat:
 
@@ -64,9 +64,9 @@ Az alábbi példában látható, hogyan jelennek meg a használati feltételek a
 
 Hozzárendelhet használati feltételeket olyan felhasználói csoportokhoz, amelyeknek el kell fogadniuk a feltételeket a Céges portál használata előtt.
 
-1. Válassza az Intune-portálon az **Eszközök beléptetése**, majd a **Használati feltételek** elemet.
+1. Válassza az Azure Portalon az **Eszközök regisztrálása**, majd a **Használati feltételek** lehetőséget.
 2. A használati feltételek listájában válassza ki a hozzárendelendő feltételeket, majd válassza a **Hozzárendelt csoportok** elemet.
-![Képernyőkép az Intune-portál Csoport hozzárendelése paneljéről, amelyen a használati feltételek hozzárendelésekor látható a Csoport kijelölése és a Kijelölés gomb](media/terms-assign-groups.png)
+![Képernyőkép az Azure Portal Csoport hozzárendelése paneljéről, amelyen látható a használati feltételek hozzárendeléséhez tartozó Csoport kijelölése és Kijelölés gomb](media/terms-assign-groups.png)
 3. Kattintson a **Csoport kijelölése** gombra, a **Csoportok kijelölése** panelen válassza ki a feltételekhez hozzárendelendő csoportokat, majd kattintson a **Kijelölés** elemre. A dinamikus csoportokhoz nem lehet használati feltételeket rendelni.
 4. A **Hozzárendelt csoportok** panelen kattintson a **Mentés** elemre.  Ezzel megtörtént a használati feltételek hozzárendelése a kijelölt csoportok felhasználóihoz. A következő alkalommal a rendszer fel fogja szólítani a felhasználókat a feltételek elfogadására a Céges portálhoz való hozzáférés előtt. A használati feltételeket csak egyszer kell elfogadni, a több eszközzel bíró felhasználóknak tehát nem kell ezt megtenniük minden eszközön.
 

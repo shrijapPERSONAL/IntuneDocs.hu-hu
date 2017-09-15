@@ -1,6 +1,6 @@
 ---
 title: "Alkalmazások hozzárendelése Android for Work-eszközökhöz"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Az alábbi témakörből megtudhatja, hogyan végezheti el a Google Play for Work áruházból származó alkalmazások szinkronizálását és Android for Work-eszközökhöz való hozzárendelését."
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Alkalmazások hozzárendelése Android for Work-eszközökhöz az Intune-nal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az alkalmazások Android for Work-eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az Android for Work részeként telepít, a Google Play for Work áruházból szerezhető be. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazást, majd hagyja jóvá a választást.
-Az alkalmazás ezt követően a **Licencelt alkalmazások** csomópontban jelenik meg az Intune-portálon. Ezen a felületen kezelheti az alkalmazások hozzárendelését, ami ugyanúgy zajlik, mint a hagyományos alkalmazásoknál.
+Az alkalmazások Android for Work-eszközökhöz való hozzárendelése eltér a hagyományos androidos eszközökhöz való hozzárendeléstől. Minden olyan alkalmazás, amelyet az Android for Work részeként telepít, a Google Play for Work áruházból szerezhető be. Jelentkezzen be az áruházba, keresse meg a kívánt alkalmazásokat, majd hagyja jóvá a választást.
+Az alkalmazás ezt követően a **Licencelt alkalmazások** csomópontban jelenik meg az Azure Portal webhelyen. Ezen a felületen kezelheti az alkalmazások hozzárendelését, ami ugyanúgy zajlik, mint a hagyományos alkalmazásoknál.
 
 Ha saját üzletági (LOB) alkalmazásokat hozott létre, azok hozzárendelését is elvégezheti az alábbiak szerint:
 - Hozzon létre egy Google Developer-fiókot, amellyel saját területen tehet közzé alkalmazásokat a Google Play Áruházban.
@@ -34,7 +34,7 @@ Ha saját üzletági (LOB) alkalmazásokat hozott létre, azok hozzárendelésé
 
 ## <a name="before-you-start"></a>Előkészületek
 
-Győződjön meg arról, hogy az Intune-t és az Android for Work-öt is beállította a közös munkára az Intune-portál **Eszközök beléptetése** területén.
+Győződjön meg arról, hogy az Intune és az Android for Work szolgáltatást is beállította a közös munkára az Azure Portal **Eszközök regisztrálása** területén.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Google Play for Work áruházbeli alkalmazások szinkronizálása
 

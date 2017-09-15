@@ -1,6 +1,6 @@
 ---
 title: "Feltételes hozzáférési szabályzatok áttelepítése az Intune klasszikus portáljáról az Azure Portalra"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Feltételes hozzáférési szabályzatok áttelepítése az Intune klasszikus portáljáról az Azure Portalra."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -33,7 +33,7 @@ Ha készen áll az Azure Portalra való áttérésre, akkor a következő lépé
 
 - Az ebben a témakörben leírt lépéseket követve újraalkothatja ezeket a szabályzatokat az Azure Portalon.
 
-- Miután meggyőződött róla, hogy az új szabályzatok a várt módon működnek az Azure Portalon, tiltsa le a feltételes szabályzatokat az Intune klasszikus konzolján.
+- Miután meggyőződött róla, hogy az új szabályzatok a várt módon működnek az Azure Portalon, tiltsa le a feltételes szabályzatokat az Intune klasszikus portálján.
 <br /><br />
     - **Mielőtt letiltaná** a feltételes hozzáférési szabályzatokat az Intune klasszikus portálján, tervezze meg a felhasználók átmozgatását az új szabályzat hatálya alá. Két módszer létezik:
 <br /><br />
@@ -79,7 +79,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
 
 4. A **Hozzárendelések** alatt válassza a **Felhasználók és csoportok** lehetőséget az új feltételes hozzáférési szabályzat létrehozásához.
     
-    ![Felhasználói csoportok kezelőfelületének összehasonlítása az Intune portálján és az Azure Portalon](./media/reassign-ca-1.png)
+    ![Felhasználói csoportok kezelőfelületének összehasonlítása az Intune-portálon és az Azure Portalon](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > Az Azure Portalon és az Intune-portálon végzett kiválasztásnak meg kell egyeznie. Például ha a Minden felhasználó lehetőséget jelölte meg az Intune klasszikus portálján, akkor az Azure Portalon is a **Minden felhasználó** lehetőséget válassza. Ezen kívül, ha használta a **Kivételt képző csoportok** lehetőséget az Intune klasszikus portálon, akkor az ott kijelölt csoportokat ki kell zárnia az Azure Portalon is.

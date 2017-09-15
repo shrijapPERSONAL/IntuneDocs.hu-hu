@@ -1,6 +1,6 @@
 ---
 title: "Regisztrációs korlátozások beállítása az Intune-ban"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Csoportok felvétele az Intune-ban
 Az Intune Azure Active Directory- (AD-) csoportokat használ az eszközök és felhasználók kezelésére. Intune-rendszergazdaként csoportokat állíthat be a vállalat igényeinek megfelelően. Létrehozhat csoportokat a felhasználók és eszközök földrajzi hely, részleg vagy hardverjellemzők szerinti rendezéséhez. Használjon csoportokat a feladatok nagy számban való végrehajtásához. Beállíthat például szabályzatokat számos felhasználóhoz, vagy üzembe helyezhet alkalmazásokat eszközök egy csoportján.
@@ -33,8 +33,8 @@ A következő típusú csoportokat veheti fel:
 ## <a name="add-a-new-group"></a>Új csoport felvétele
 
 Új csoport létrehozásához használja a következő lépéseket.
-1. Az Intune-portálon lépjen a **Csoportok** elemre, és válassza az **Összes csoport** panelen az **Új csoport** lehetőséget.
-  ![Az Intune-portál képernyőképe a kijelölt Új csoport lehetőséggel](./media/groups-add-new.png)
+1. Az Azure Portalon lépjen a **Csoportok** elemre, majd válassza az **Új csoport** lehetőséget az **Összes csoport** panelen.
+  ![Az Azure Portal képernyőképe a kijelölt Új csoport lehetőséggel](./media/groups-add-new.png)
 2. Töltse ki az új csoporthoz a **Név** és a **Leírás** mezőt. Ezek a tulajdonságok csak a felügyeleti portálon jelennek meg, és a felhasználók nem láthatják.
 
 3. Válassza a **Tagságtípus**:

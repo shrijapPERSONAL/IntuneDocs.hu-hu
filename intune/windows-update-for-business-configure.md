@@ -1,6 +1,6 @@
 ---
-title: "Szoftverfrissítések kezelése"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "A Vállalati Windows Update beállításainak konfigurálása az Intune-ban"
+titleSuffix: Azure portal
 description: "Útmutató a Vállalati Windows Update Intune-beli konfigurálásához a Windows 10-es eszközök frissítéseinek kezeléséhez.”"
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -54,20 +54,20 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
     Ezt a beállítást elvégezheti manuálisan, vagy a Windows 10 és újabb verziók esetén használhat egy Intune eszközkorlátozási profilt. Ehhez az **Általános** > **Diagnosztikai adatok küldése** beállításnál legalább az **Alapszintű** értéknek kell szerepelnie. Az eszközprofilokról további információt nyújt az [Eszközkorlátozási beállítások konfigurálása](device-restrictions-configure.md) című témakör.
 
-- A klasszikus Intune felügyeleti konzolon négy beállítás szabályozza a szoftverfrissítések viselkedését. Ezek a beállítások az általános konfigurációs szabályzat részei a Windows 10 rendszerű számítógépeken és mobileszközökön:
+- Az Intune felügyeleti konzolon négy beállítás szabályozza a szoftverfrissítések viselkedését. Ezek a beállítások az általános konfigurációs szabályzat részei a Windows 10 rendszerű számítógépeken és mobileszközökön:
     - **Automatikus frissítések engedélyezése**
     - **Előzetes funkciók engedélyezése**
     - **Telepítés ütemezett napja**
     - **Telepítés ütemezett időpontja**
 
-  A klasszikus konzol néhány egyéb Windows 10 frissítési beállítást is tartalmaz az eszközkonfigurációs profilban. Amennyiben ezen beállítások bármelyike már konfigurálva van a klasszikus Intune felügyeleti konzolon az Azure Portalra való átálláskor, erősen ajánlott a következő lépések végrehajtása:
+  A klasszikus portál néhány egyéb Windows 10-frissítési beállítást is tartalmaz az eszközkonfigurációs profilban. Amennyiben ezen beállítások bármelyike már konfigurálva van az Intune felügyeleti konzolon az Azure Portalra való átálláskor, erősen ajánlott a következő lépések végrehajtása:
 
 1. Hozzon létre Windows 10 frissítési köröket az Azure Portalon a kívánt beállításokkal. Az **Előzetes funkciók engedélyezése** beállítást az Azure Portal nem támogatja, mert az már nem alkalmazható a legújabb Windows 10 buildekre. A frissítési körök létrehozásakor megadhatja a másik három beállítást és a további Windows 10 frissítési beállításokat is.
 
   > [!NOTE]
-  > A klasszikus konzolon megadott Windows 10 frissítési beállítások nem jelennek meg az Azure Portalon az áttelepítés után. Ugyanakkor ezek a beállítások továbbra is érvényben maradnak. Ha a beállítások bármelyikét áttelepítette, majd módosítja az áttelepített szabályzatot az Azure Portalon, akkor ezek a beállítások törlődnek a szabályzatból.
+  > A klasszikus portálon megadott Windows 10-frissítési beállítások nem jelennek meg az Azure Portalon az áttelepítés után. Ugyanakkor ezek a beállítások továbbra is érvényben maradnak. Ha a beállítások bármelyikét áttelepítette, majd módosítja az áttelepített szabályzatot az Azure Portalon, akkor ezek a beállítások törlődnek a szabályzatból.
 
-2. Törölje a frissítési beállításokat a klasszikus konzolon. Az Azure Portalra történő áttelepítés és az azonos beállításoknak egy frissítési körben történő megadása után az esetleges szabályzat-ütközések elkerülése érdekében a beállításokat a klasszikus portálon törölni kell. Ha például ugyanazon beállítás két különböző értékkel van megadva, az olyan ellentmondáshoz vezet, amely nehezen felderíthető, hiszen a klasszikus konzolon megadott beállítások az Azure Portalon nem jelennek meg.
+2. Törölje a frissítési beállításokat a klasszikus portálon. Az Azure Portalra történő áttelepítés és az azonos beállításoknak egy frissítési körben történő megadása után az esetleges szabályzat-ütközések elkerülése érdekében a beállításokat a klasszikus portálon törölni kell. Ha például ugyanazon beállítás két különböző értékkel van megadva, az olyan ellentmondáshoz vezet, amely nehezen felderíthető, hiszen a klasszikus portálon megadott beállítások az Azure Portalon nem jelennek meg.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Frissítési körök létrehozása és hozzárendelése
 

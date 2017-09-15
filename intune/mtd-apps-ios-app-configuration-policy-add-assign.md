@@ -1,7 +1,7 @@
 ---
 title: "MTD-alkalmazások felvétele és hozzárendelése az Intune-hoz"
-titleSuffix: Intune on Azure
-description: "Az MTD-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele az Azure-beli Intune-ba"
+titleSuffix: Azure portal
+description: "Az MTD-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele az Azure Portalbeli Intune-ba"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 
@@ -105,7 +105,7 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 #### <a name="android"></a>Android
 
-- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). Adja meg ezt a [Check Point SandBlast Mobile alkalmazás-áruházbeli URL-címet](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) a  **7. lépésben**.
+- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). Adja meg ezt a [Check Point SandBlast Mobile alkalmazás-áruházbeli URL-címet](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) a ** 7. lépésben**.
 
 #### <a name="ios"></a>iOS
 
@@ -115,7 +115,7 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 ### <a name="for-skycure"></a>Skycure
 
--   Ehhez a művelethez a korábban a [Skycure Management konzolon](https://aad.skycure.com) konfigurált Azure AD-fiókot kell használni, amely megegyezik a klasszikus Intune-konzolra való bejelentkezéshez használttal.
+-   Ehhez a művelethez a korábban a [Skycure Management konzolon](https://aad.skycure.com) konfigurált Azure AD-fiókot kell használni, amely megegyezik a klasszikus Intune-portálra való bejelentkezéshez használttal.
 
 -   **Töltse le** az iOS-es alkalmazáskonfigurációs szabályzatot tartalmazó fájlt: 
     -   Lépjen a [Skycure Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.

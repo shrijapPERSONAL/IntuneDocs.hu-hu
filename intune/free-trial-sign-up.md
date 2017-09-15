@@ -1,6 +1,6 @@
 ---
 title: "Regisztráció a Microsoft Intune 30 napos próbaverziójára"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Regisztráció az Intune 30 napos próbaverziójára.”"
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Regisztráció a Microsoft Intune ingyenes próbaverziójára
 
@@ -47,11 +47,11 @@ Amikor próbaverziót regisztrál, e-mailben elküldjük a fiókadatait is a reg
 Az Intune Azure Portalhoz három portált használhat:
 - Az Intune-irányítópultját az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [mire képes az Intune az Azure Portalon](what-is-intune.md).
 - Az Office 365 Felügyeleti központot ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directory-t használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
-- A klasszikus Intune felügyeleti konzolt ([manage.microsoft.com](https://manage.microsoft.com)), ahol megismerheti azokat a funkciókat is, amelyek még nem elérhetőek az Azure-on.
+- Az Intune felügyeleti konzolt ([manage.microsoft.com](https://manage.microsoft.com)), ahol megismerheti azokat a funkciókat is, amelyek még nem elérhetőek az Azure-on.
 
 Többnyire az alább látható Intune-irányítópulton fog dolgozni. Ezen az oldalon állíthatja be és kezelheti a csoportjait, szabályzatait, eszközeit és alkalmazásait.
 
-Az irányítópultról elérheti a klasszikus Intune felügyeleti portált, ha a **Klasszikus portál** elemre kattint az irányítópult tetején.
+Az irányítópultról elérheti az Intune felügyeleti konzolt, ha a **Klasszikus portál** elemre kattint az irányítópult tetején.
 
 Ha vissza szeretne térni az Intune Azure Portalhoz, nyissa meg a https://portal.azure.com webhelyet a böngészőben, és válassza újból az **Intune** elemet a szolgáltatáslistából.
 
@@ -68,7 +68,7 @@ Ha az Intune-ból szeretné elérni az Office 365 felügyeleti központot, nyiss
 
 ## <a name="next-steps"></a>További lépések
 
-### <a name="intune-on-azure"></a>Az Azure-on elérhető Intune szolgáltatás
+### <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
 További tudnivalók az [Azure Portálon elérhető Intune-ról](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integráció más termékekkel

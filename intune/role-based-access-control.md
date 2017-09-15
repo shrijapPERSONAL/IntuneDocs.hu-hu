@@ -1,6 +1,6 @@
 ---
 title: "Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal"
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Azure-beli Intune – előzetes: megtudhatja, hogyan teszi lehetővé a szerepköralapú hozzáférés-vezérlés annak szabályozását, hogy ki hajthat végre műveletet és végezhet módosításokat."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal
 
@@ -32,7 +32,7 @@ Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat
 
 ![Példa az Intune-beli RBAC felépítésére](./media/intune-rbac-1.PNG)
 
-Az új Intune-portáltól kezdődően az **Azure Active Directory (Azure AD)** két, Intune-nal használható címtárbeli szerepkört kínál fel. Ezek a szerepkörök teljes körű engedélyt biztosítanak minden Intune-beli tevékenységhez:
+Az új Azure Portaltól kezdődően az **Azure Active Directory (Azure AD)** két, Intune-nal használható címtárbeli szerepkört kínál fel. Ezek a szerepkörök teljes körű engedélyt biztosítanak minden Intune-beli tevékenységhez:
 
 - **Globális rendszergazda:** Az ezzel a szerepkörrel rendelkező felhasználók hozzáférnek az Azure AD minden felügyeleti funkciójához, valamint olyan, az Azure AD-val összevont szolgáltatásokhoz is, mint az Exchange Online, a SharePoint Online és a Skype Vállalati online verzió. Az a személy lesz globális rendszergazda, aki regisztrált az Azure AD-bérlőre. Csak a globális rendszergazdák oszthatnak ki további Azure AD-rendszergazdai szerepköröket. A szervezetnek egynél több globális rendszergazdája is lehet. A globális rendszergazdák bármely felhasználó és az összes többi rendszergazda jelszavát is alaphelyzetbe állíthatják.
 
@@ -46,12 +46,12 @@ Az új Intune-portáltól kezdődően az **Azure Active Directory (Azure AD)** k
     > [!TIP]
     > Az Intune-ban három olyan Azure AD-bővítmény látható (**Felhasználók**, **Csoportok** és **Feltételes hozzáférés**), amelyeket az Azure AD RBAC segítségével szabályozhat. A **Felhasználóifiók-adminisztrátori** szerepkör csak az Azure AD-felhasználói vagy -csoporttevékenységek végrehajtására jogosít fel, és nem biztosít teljes körű engedélyt az összes Intune-beli tevékenységhez. További információkért tekintse meg a [Szerepköralapú hozzáférés-vezérlés (RBAC) az Azure AD-vel](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) című cikket.
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Klasszikus Intune-konzolon létrehozott szerepkörök
+## <a name="roles-created-in-the-intune-classic-portal"></a>Klasszikus Intune-portálon létrehozott szerepkörök
 
-Csak a „Teljes körű” engedéllyel rendelkező Intune-beli **szolgáltatás-rendszergazdákat** migrálja a rendszer a klasszikus Intune-konzolról az Azure-beli Intune-ba. Az Intune-beli **szolgáltatás-rendszergazdákat** „Csak olvasási" vagy „Ügyfélszolgálat" hozzáféréssel újra hozzá kell rendelni az Azure Portalon található Intune-szerepkörökhöz, és el kell távolítani őket a klasszikus portálról.
+Csak a „Teljes körű” engedéllyel rendelkező Intune-beli **szolgáltatás-rendszergazdákat** migrálja a rendszer a klasszikus Intune-portálról az Azure Portalbeli Intune-ba. Az Intune-beli **szolgáltatás-rendszergazdákat** „Csak olvasási" vagy „Ügyfélszolgálat" hozzáféréssel újra hozzá kell rendelni az Azure Portalon található Intune-szerepkörökhöz, és el kell távolítani őket a klasszikus portálról.
 
 > [!IMPORTANT]
-> Az Intune-beli szolgáltatás-rendszergazdai szerepkör hozzáférését szükség esetén fenn lehet tartani a klasszikus konzolon, ha a rendszergazdáknak Windows rendszerű gépek Intune-alapú felügyeletéhez továbbra is hozzá kell férniük ahhoz.
+> Az Intune-beli szolgáltatás-rendszergazdai szerepkör hozzáférését szükség esetén fenn lehet tartani a klasszikus portálon, ha a rendszergazdáknak Windows rendszerű gépek Intune-alapú felügyeletéhez továbbra is hozzá kell férniük ahhoz.
 
 ## <a name="built-in-roles"></a>Beépített szerepkörök
 

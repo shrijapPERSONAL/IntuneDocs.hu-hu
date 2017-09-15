@@ -1,6 +1,6 @@
 ---
 title: "Az Intune eszközkorlátozási beállításai Android for Work rendszerhez"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre Android for Work rendszerű eszközökön."
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7e7f74f516a4b60b6a727d6c51ec54dab96aa88e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Az Android for Work-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Munkahelyi profil beállításai
-- **Munkahelyi és személyes profilok közötti adatmegosztás** – ezzel a beállítással szabályozhatja, hogy a munkahelyi profilban szereplő alkalmazások megoszthatnak-e adatokat a személyes profilban szereplőkkel. A beállítás az alkalmazáson belüli megosztási műveleteket szabályozza (például a **Megosztás...** lehetőséget a Chrome böngészőalkalmazásban), és nem vonatkozik a vágólap másolási/beillesztési funkciójára. Az [alkalmazásvédelmi szabályzat beállításaitól](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) eltérően az eszközkorlátozási beállítások felügyelete az Intune-portálon történik, és az Android for Work típusú munkahelyiprofil-partíció szolgál a felügyelt alkalmazások elkülönítésére. A következő lehetőségek közül választhat:
+- **Munkahelyi és személyes profilok közötti adatmegosztás** – ezzel a beállítással szabályozhatja, hogy a munkahelyi profilban szereplő alkalmazások megoszthatnak-e adatokat a személyes profilban szereplőkkel. A beállítás az alkalmazáson belüli megosztási műveleteket szabályozza (például a **Megosztás...** lehetőséget a Chrome böngészőalkalmazásban), és nem vonatkozik a vágólap másolási/beillesztési funkciójára. Az [alkalmazásvédelmi szabályzat beállításaitól](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) eltérően az eszközkorlátozási beállítások felügyelete az Azure Portalon történik, és az Android for Work típusú munkahelyiprofil-partíció szolgál a felügyelt alkalmazások elkülönítésére. A következő lehetőségek közül választhat:
     - **Alapértelmezett megosztási korlátozások** – ez a beállítás az eszköz alapértelmezett megosztási működésmódja, amely a futtatott Android-verziótól függően eltérő. Alapértelmezés szerint a személyes profilból lehet a munkahelyi profilba adatokat megosztani, a munkahelyiből a személyesbe viszont nem. A beállítás célja a munkahelyi profilból a személyesbe irányuló adatmegosztás megelőzése. A Google a 6.0-snál újabb verziójú eszközökön nem nyújt lehetőséget a személyesből a munkahelyi profilba irányuló adatmegosztás blokkolására.   
     - **A munkahelyi profilban lévő alkalmazások kezelhetik a személyes profilból érkező megosztási kérelmeket** – ezzel a lehetőséggel engedélyezheti a személyesből a munkahelyi profilba irányuló adatmegosztásra szolgáló beépített Android-funkciót. Engedélyezéskor a személyes profil alkalmazásaiból származó megosztási kérések kezdeményezhetnek adatmegosztást a munkahelyi profil alkalmazásaival. A 6.0-snál korábbi verziójú androidos eszközökön ez az alapértelmezett beállítás.
     - **Határokon keresztüli megosztás engedélyezése** – lehetővé teszi a munkahelyi profil határán kívüli megosztást mindkét irányban. Ilyenkor a munkahelyi profilban szereplő alkalmazások megoszthatnak adatokat a személyes profi jelöletlen alkalmazásaival. A beállítást csak körültekintően szabad használni, mert lehetővé teszi a munkahelyi profil alkalmazásainak az adatmegosztást az eszköz nem felügyelt részével.

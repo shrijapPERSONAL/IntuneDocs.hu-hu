@@ -1,6 +1,6 @@
 ---
 title: "VPN-beállítások az Intune-ban Windows Phone 8.1-es eszközök esetén"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "A cikk a VPN-kapcsolatoknak a Windows Phone 8.1 rendszerű eszközökön való konfigurálására használható Intune-beállításokat ismerteti.”"
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: debfe6cde108daf88db8d18db1e7da2186fc32ea
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Windows Phone 8.1-es eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
@@ -29,7 +29,7 @@ A megadott beállításoktól függően az alábbi listában található érték
 
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
-- **Apply all settings to Windows Phone 8.1 only** (Az összes beállítás alkalmazása csak a Windows Phone 8.1-re) – Ezt a beállítást a hagyományos Intune-portálon lehet konfigurálni. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a Windows 10 Mobile rendszerű eszközökre is alkalmazza rendszer ezeket a beállításokat.
+- **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ez a beállítás a klasszikus Intune-portálon konfigurálható. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a Windows 10 Mobile rendszerű eszközökre is alkalmazza rendszer ezeket a beállításokat.
 - **Kapcsolat neve** – Nevezze el a kapcsolatot. A végfelhasználók akkor látják ezt a nevet, amikor rendelkezésre álló VPN-kapcsolatokat keresnek az eszközükön.
 - **Hitelesítési mód** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
     - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban adja meg a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilok valamelyikét. A tanúsítványprofilokról [a tanúsítványok konfigurálását](certificates-configure.md) ismertető cikkben talál részletesebb tájékoztatást.

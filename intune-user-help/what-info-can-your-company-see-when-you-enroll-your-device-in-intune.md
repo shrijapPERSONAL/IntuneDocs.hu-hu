@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Milyen adatokat láthat a munkahelyem, ha regisztrálom az eszközömet az Intune-ban?
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Milyen adatok láthatók a cég számára, ha regisztrálom az eszközömet?
 
-A céges adatok védelme érdekében az eszköznek a felügyeletben történő regisztrálásával egyszersmind engedélyezi, hogy munkahelye rendszergazdái hozzáférhessenek az eszközön található bizonyos adatokhoz.
+A céges adatok védelme érdekében az eszköznek a felügyeletre való regisztrálásával engedélyezi, hogy a cég hozzáférhessen az eszközön található bizonyos adatokhoz.
 
-**Amit a rendszergazda nem láthat**
+**A cég számára soha nem látható adatok**
 
 - Hívási és böngészési előzmények
--   Tartózkodási hely
-- Személyes e-mailek
-- SMS-ek
+- E-mailek és SMS-ek
 - Névjegyek
--   A személyes fiókok jelszavai
-- Naptáresemények
+- Naptár
+-   Jelszavak
 - Képek, beleértve a Fényképezőgép alkalmazás vagy a Filmtekercs mappa tartalmát
 
-**Amit a rendszergazda láthat**
+**A cég számára minden esetben látható adatok**
 
--   Modell
--   Sorozatszám
--   Operációs rendszer verziója
--   Alkalmazásnevek
--   Tulajdonos
--   Eszköz neve
--   Gyártó (nem Apple gyártmányú eszközök esetében)
--   Telefonszám (céges eszközök esetén teljes telefonszám, személyes eszközök esetén csak az utolsó négy számjegy)
+- Az eszköz modellje, például iPhone 7
+- Gyártó, például a Microsoft
+- Operációs rendszer, például Android 7.1
+- Alkalmazásnevek, például Microsoft Word
+- Az eszköz tulajdonosa
+- Eszköz neve
+- Sorozatszám
+
+**A cég számára esetlegesen látható adatok**
+
+-  Telefonszám: a **céges** eszközök esetében a teljes telefonszám látható. A **személyes** tulajdonú eszközök esetében csak a telefonszám utolsó négy számjegye látható a cég számára. Minden egyes eszköz **Tulajdonjogtípusát** megtekintheti az adott eszköz **Eszköz részletei** lapjának megnyitásával. 
+-  Tartózkodási hely: a cég számára soha nem látható az eszköz helye, kivéve, ha olyan felügyelt iOS-eszközzel rendelkezik, amely elveszett. [Ezt hogyan lehet megállapítani?](https://go.microsoft.com/fwlink/?linkid=853816)

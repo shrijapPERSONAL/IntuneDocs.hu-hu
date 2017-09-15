@@ -1,6 +1,6 @@
 ---
 title: "SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "A cikk tájékoztatást nyújt az infrastruktúra konfigurálásáról és az Intune SCEP-tanúsítványprofiljainak ezt követő létrehozásáról és hozzárendeléséről."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ Ez a témakör bemutatja az infrastruktúra konfigurálását, majd az Egyszerű
 -  **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására.
 Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/library/dn473016.aspx).
 
--  1**Microsoft Intune Certificate Connector**: Az Intune-portálon keresztül töltse le a **Certificate Connector** (Tanúsítvány-összekötő) telepítőjét (**ndesconnectorssetup.exe**). Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt. 
+-  **Microsoft Intune Tanúsítvány-összekötő**: Az Azure Portal webhelyről töltse le a **Tanúsítvány-összekötő** telepítőjét (**ndesconnectorssetup.exe**). Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt. 
 -  1**Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) használjon olyan kiszolgálót, amelyen a Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
     -  Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
     -  Biztonsági ajánlás olyan környezetekben, ahol az eszközök az interneten keresztül csatlakozva kapnak és újítanak meg tanúsítványokat.

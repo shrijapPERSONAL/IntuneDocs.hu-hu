@@ -1,6 +1,6 @@
 ---
 title: "iOS-eszközök regisztrálása – Készülékregisztrációs program"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Céges tulajdonú iOS-es eszközök regisztrálása az Apple eszközbeléptetési programjával (DEP)"
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -55,7 +55,7 @@ Az iOS-eszközök DEP-regisztrációjához először is egy Apple-től származ�
 A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál használatával rendelheti hozzá az eszközök felügyeletét az Intune-hoz.
 
 > [!NOTE]
-> Ha törli a tokent a klasszikus Intune-konzolról az Azure-ba történő migrálás előtt, előfordulhat, hogy az Intune visszaállít egy korábban törölt Apple DEP-tokent. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról.
+> Ha törli a tokent a klasszikus Intune-portálról az Azure-ba történő migrálás előtt, előfordulhat, hogy az Intune visszaállít egy korábban törölt Apple DEP-tokent. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról.
 
 **1. lépés Töltsön le egy nyilvános kulcsú Intune-tanúsítványt (ez szükséges az Apple DEP-token létrehozásához).**<br>
 
@@ -104,7 +104,7 @@ Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gomb
 Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt a DEP-eszközökhöz. A regisztrálás során az eszközök csoportjára alkalmazott beállításokat egy készülékregisztrációs profil határozza meg.
 
 1. Az Azure-beli Intune-portálon válassza az **Eszközök regisztrálása** > **Apple-regisztráció** elemet.
-2. Az **Apple készülékregisztrációs programon** belül válassza a **Készülékregisztrációs programbeli profilok**  > **Létrehozás** elemet.
+2. Az **Apple készülékregisztrációs programon** belül válassza a **Készülékregisztrációs programbeli profilok ** > **Létrehozás** elemet.
 3. A **Regisztrációs profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
   A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül kívánja-e regisztrálni.

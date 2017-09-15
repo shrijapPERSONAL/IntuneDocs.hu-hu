@@ -1,6 +1,6 @@
 ---
 title: "Office 365 ProPlus-alkalmazások telepítése Windows 10-re az Intune-nal"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Annak ismertetése, hogyan egyszerűsíthető az Office 365-alkalmazások a Windows 10-es eszközökre való telepítése az Intune használatával."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
@@ -60,7 +60,7 @@ Ebben a lépésben választhatja ki az Office-alkalmazásokat, melyeket szeretne
 
 ## <a name="configure-app-information"></a>Az alkalmazásadatok konfigurálása
 
-Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezen adatok alapján azonosíthatja azt az Intune-konzolon, és a végfelhasználónak is segítenek azt megtalálni a Céges portál alkalmazásban.
+Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezen adatok alapján azonosíthatja azt az Intune-ban, és a végfelhasználónak is segítenek megtalálni azt a Céges portál alkalmazásban.
 
 1.  Az **Alkalmazás felvétele** panelen válassza az **App Suite Information** (Alkalmazáscsomag adatai) elemet.
 2.  Az **App Suite Information** (Alkalmazáscsomag adatai) panelen adja meg az alábbi adatokat: 

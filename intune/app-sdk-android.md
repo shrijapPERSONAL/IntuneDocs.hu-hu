@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -456,8 +456,9 @@ A következőkben az alkalmazások ADAL-konfigurációjának gyakori eseteit mut
     |--|--|
     | Authority | Az a környezet, amelyben az AAD-fiókokat konfigurálták |
     | ClientID | Az alkalmazás ClientID azonosítója (az Azure AD állítja elő az alkalmazás regisztrálásakor) |
-    | NonBrokerRedirectURI | Az alkalmazás érvényes átirányítási URI-ja, vagy alapértelmezés szerint `urn:ietf:wg:oauth:2.0:oob`. <br><br> Ezt az értéket mindenképpen elfogadható átirányítási URI-ként kell beállítani az alkalmazás ClientID azonosítójához.
-    | SkipBroker | Hamis |
+    | NonBrokerRedirectURI | Az alkalmazás érvényes átirányítási URI-ja, vagy `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Ezt az értéket mindenképpen elfogadható átirányítási URI-ként kell beállítani az alkalmazás ClientID azonosítójához.
+   | SkipBroker | False |
 
 
 3. **Az alkalmazás integrálja az ADAL-t, de nem támogatja a közvetített hitelesítést/eszközszintű SSO-t:**
@@ -1355,7 +1356,7 @@ Az Intune SDK fenntartja az Android API által biztosított szerződést, bár a
 
 ## <a name="telemetry"></a>Telemetria
 
-Az Androidhoz készült Intune App SDK nem szabályozza az alkalmazásából való adatgyűjtést. Az Céges portál alkalmazás alapértelmezés szerint a következő használati eseményekkel kapcsolatos telemetriai adatokat naplózza. Az adatokat az SDK a Microsoft Intune-nak küldi el. A Microsoft szabályzatának megfelelően nem gyűjtünk személyazonosításra alkalmas adatokat (PII).
+Az Androidhoz készült Intune App SDK nem szabályozza az alkalmazásából való adatgyűjtést. Az Céges portál alkalmazás alapértelmezés szerint telemetriai adatokat naplóz. Az adatokat az SDK a Microsoft Intune-nak küldi el. A Microsoft szabályzatának megfelelően nem gyűjtünk személyazonosításra alkalmas adatokat (PII).
 
 > [!NOTE]
 > Ha a végfelhasználók nem szeretnének ilyen adatokat küldeni, ki kell kapcsolniuk a telemetriát a Céges portál alkalmazás Beállítások menüpontjában. További információt [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android) című témakörben találhat. 

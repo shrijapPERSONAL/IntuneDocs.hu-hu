@@ -1,6 +1,6 @@
 ---
 title: "Alkalmazásvédelmi szabályzatok létrehozása és telepítése"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "A felügyelt alkalmazások által használt céges adatok védelme Intune-os alkalmazásvédelmi szabályzatok segítségével.”"
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47cafd6fa252ca7db9ca1129c5dcc5bd0d70d154
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 2e535b2aa11401d51edb33cbad54e9222fd6da6a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-Ha a klasszikus Intune-konzolon használható utasításokat keres, tekintse meg az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) ismertető cikket.
+Ha a klasszikus Intune-portálon használható utasításokat keres, tekintse meg az [alkalmazásvédelmi szabályzatok létrehozását](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) ismertető cikket.
 
 Az alkalmazásvédelmi szabályzatok alkalmazhatók a felügyelt és az Intune által nem felügyelt eszközökön futó alkalmazásokra is. Az alkalmazásvédelmi szabályzatok működésének és az Intune-os alkalmazásvédelmi szabályzatok által támogatott forgatókönyvek részletes ismertetését lásd: [A Microsoft Intune alkalmazásvédelmi szabályzatai](app-protection-policy.md).
 

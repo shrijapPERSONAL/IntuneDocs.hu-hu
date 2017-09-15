@@ -1,6 +1,6 @@
 ---
 title: "Ügyfélszolgálati hibaelhárítási portál"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Az ügyfélszolgálat munkatársai a hibaelhárítási portál segítségével oldják meg a felhasználók műszaki problémáit"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Segítségnyújtás a felhasználóknak a hibaelhárítási portál használatával
 
@@ -35,14 +35,14 @@ Például ha egy felhasználó Intune-nal kapcsolatos műszaki problémával for
 -   Alkalmazástelepítési hiba
 
 ## <a name="add-help-desk-operators"></a>Ügyfélszolgálati operátorok felvétele
-Intune-rendszergazdaként hozzárendelheti az Ügyfélszolgálat szerepkört egy felhasználói csoporthoz. A csoport tagjai a felügyeleti portál segítségével elháríthatják a felhasználók problémáit. Minden ügyfélszolgálati munkatársnak Intune-licenccel kell rendelkeznie az Intune-portál eléréséhez. Ismerje meg, [hogyan oszthat ki Intune-licenceket](licenses-assign.md).
+Intune-rendszergazdaként hozzárendelheti az Ügyfélszolgálat szerepkört egy felhasználói csoporthoz. A csoport tagjai az Azure Portal webhelyen elháríthatják a felhasználók problémáit. Minden ügyfélszolgálati munkatársnak Intune-licenccel kell rendelkeznie az Azure Portal eléréséhez. Ismerje meg, [hogyan oszthat ki Intune-licenceket](licenses-assign.md).
 
 Ügyfélszolgálati felhasználók hozzáadása:
 1. [Felhasználók hozzáadása az Intune-hoz](users-add.md) szükség esetén.
 2. [Ügyfélszolgálati csoport létrehozása](groups-add.md) és felhasználók hozzáadása a csoporthoz.
 3. [Végezz el az RBAC ügyfélszolgálati munkatárs szerepkör hozzárendelését](role-based-access-control.md#built-in-roles).
 
-  ![Képernyőkép az Intune-portálról, amelyen ki vannak emelve az Intune-szerepkörök és látható a beépített szerepkörök listája, köztük az Ügyfélszolgálati munkatárs szerepkör is](./media/help-desk-user-add.png) Az ügyfélszolgálati munkatársaknak hozzáférést adhat egy [egyéni szerepkör létrehozásával](role-based-access-control.md#custom-roles) és személyre szabásával is.  Az ügyfélszolgálati munkatársaknak a következő jogosultságokkal kell rendelkezniük a felhasználói problémák hibaelhárításához:
+  ![Képernyőkép az Azure Portalról, amelyen ki vannak emelve az Intune-szerepkörök és látható a beépített szerepkörök listája, köztük az Ügyfélszolgálati munkatárs szerepkör is](./media/help-desk-user-add.png) Az ügyfélszolgálati munkatársaknak hozzáférést adhat egy [egyéni szerepkör létrehozásával](role-based-access-control.md#custom-roles) és személyre szabásával is.  Az ügyfélszolgálati munkatársaknak a következő jogosultságokkal kell rendelkezniük a felhasználói problémák hibaelhárításához:
     - MobileApps (mobilalkalmazások): Olvasás
     - ManagedApps (felügyelt alkalmazások): Olvasás
     - ManagedDevices (felügyelt eszközök): Olvasás

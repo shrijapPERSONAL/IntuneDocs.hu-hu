@@ -1,6 +1,6 @@
 ---
 title: "Skycure-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele"
-description: "A Skycure-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele a klasszikus Intune-konzolra."
+description: "A Skycure-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele a klasszikus Intune-portálra."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d762e1aed998642db66908549b2d15d54601aed
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Skycure-alkalmazások, a Microsoft Authenticator alkalmazás és az iOS-es konfigurációs szabályzat felvétele
 
@@ -30,9 +30,9 @@ Ezenfelül a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-fa
 
 ## <a name="before-you-begin"></a>Előkészületek
 
--   Az alábbi lépéseket a [klasszikus Intune-konzolon](https://manage.microsoft.com/) kell elvégezni.
+-   Az alábbi lépéseket a [klasszikus Intune-portálon](https://manage.microsoft.com/) kell elvégezni.
 
--   A korábban a Skycure Management konzolon konfigurált Azure AD-fiókot használja, amely elvileg megegyezik a klasszikus Intune-konzolra való bejelentkezéshez használttal.
+-   Ehhez a művelethez a korábban a Skycure Management konzolon konfigurált Azure AD-fiókot kell használni, amely megegyezik a klasszikus Intune-portálra való bejelentkezéshez használttal.
 
 -   Készítse elő a Skycure-integrációs fájlt, amelyet korábban .zip formátumban letöltött a Skycure Management konzolról, és amelyben megtalálható az iOS-es alkalmazáskonfigurációs szabályzat paramétereit tároló **skycure\_configuration.plist** fájl.
 
@@ -44,7 +44,7 @@ Ezenfelül a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-fa
 
 ## <a name="to-add-the-skycure-app-for-android"></a>Az Androidra készült Skycure alkalmazás felvétele
 
-1.  A klasszikus Intune-konzolon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
+1.  A klasszikus Intune-portálon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
 
 2.  A **Szoftver telepítése** lapon válassza a **Külső hivatkozás** lehetőséget, majd az [Adja meg az URL-címet](https://play.google.com/store/apps/details?id=com.skycure.skycure) mezőbe illessze be az **Androidra készült Skycure alkalmazás URL-címét**.
 
@@ -58,7 +58,7 @@ Ezenfelül a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-fa
 
 ## <a name="to-add-the-skycure-app-for-ios"></a>Az iOS-re készült Skycure alkalmazás felvétele
 
-1.  A klasszikus Intune-konzolon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
+1.  A klasszikus Intune-portálon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
 
 2.  A **Szoftver telepítése** lapon válassza a **Felügyelt iOS-alkalmazás az App Store-ból** lehetőséget, majd az [Adja meg az URL-címet](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) mezőbe illessze be az **iOS-re készült Skycure alkalmazás URL-címét**.
 
@@ -74,7 +74,7 @@ Ezenfelül a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-fa
 
 ## <a name="to-add-the-microsoft-authenticator-app-for-ios"></a>Az iOS-re készült Microsoft Authenticator alkalmazás felvétele
 
-1.  A klasszikus Intune-konzolon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
+1.  A klasszikus Intune-portálon az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet választva indítsa el az Intune Software Publishert, és kattintson a **Tovább** gombra.
 
 2.  A **Szoftver telepítése** lapon válassza a **Felügyelt iOS-alkalmazás az App Store-ból** lehetőséget, majd az [Adja meg az URL-címet](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) mezőbe illessze be az **iOS-re készült Microsoft Authenticator alkalmazás URL-címét**.
 
@@ -90,7 +90,7 @@ Ezenfelül a [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-fa
 
 ## <a name="to-add-the-skycure-ios-app-configuration-policy"></a>Az iOS-es Skycure alkalmazáshoz tartozó alkalmazáskonfigurációs szabályzat felvétele
 
-1.  A klasszikus Intune-konzolon válassza a **Házirend** &gt; **Áttekintés &gt; Házirend hozzáadása** lehetőséget.
+1.  A klasszikus Intune-portálon válassza a **Házirend** &gt; **Áttekintés &gt; Házirend hozzáadása** lehetőséget.
 
 2.  A szabályzatok listájában bontsa ki az **iOS** csomópontot, válassza a **Mobilalkalmazás-konfigurációs házirend (iOS 8.0 és újabb)** lehetőséget, majd a **Házirend létrehozása** elemet.
 

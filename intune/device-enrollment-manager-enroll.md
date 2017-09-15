@@ -1,6 +1,6 @@
 ---
 title: "Eszközök regisztrálása – készülékregisztráció-kezelő"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Az eszközök Intune-ban való regisztrálásához használja a készülékregisztráció-kezelői fiókot. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Eszközök regisztrálása a készülékregisztráció-kezelővel
 
@@ -36,7 +36,7 @@ A felhasználóknak szerepelniük kell az Azure Portal webhelyen ahhoz, hogy fel
 
 Egy étterem 50 pénztári táblagépet szeretne biztosítani a felszolgálóknak és rendelési monitorokat a konyhai személyzetnek. Az alkalmazottaknak nem szükséges hozzáférni a céges adatokhoz, vagy felhasználóként bejelentkezni. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot, és felveszi az étterem egyik vezetőjét a DEM-fiókba, ezzel gyakorlatilag DEM-képességeket biztosítva az adott vezető számára. A vezető ekkor már regisztrálhatja az 50 táblagépet a DEM-hitelesítőadatok használatával.
 
-Csak az Intune-konzolon szereplő felhasználók lehetnek eszközregisztráció-kezelők. Az eszközregisztráció-kezelő felhasználó nem lehet Intune-rendszergazda.
+Csak az Azure Portalon szereplő felhasználók lehetnek eszközregisztráció-kezelők. Az eszközregisztráció-kezelő felhasználó nem lehet Intune-rendszergazda.
 
 A DEM-felhasználó a következőket teheti:
 
@@ -95,5 +95,5 @@ A készülékregisztráció-kezelő eltávolítása nincs hatással a regisztrá
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>A készülékregisztráció-kezelő tulajdonságainak megtekintése
 
-1. Az Intune-portálon válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** elemet.
+1. Az Azure Portalon válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** elemet.
 2. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** parancsot.

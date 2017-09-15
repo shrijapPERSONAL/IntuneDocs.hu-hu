@@ -1,6 +1,6 @@
 ---
 title: "Alkalmazások hozzáadása a Microsoft Intune-hoz"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Ezekkel az eljárásokkal felveheti az alkalmazásokat az Intune-ba, hogy készen álljanak a felhasználókhoz és eszközökhöz való hozzárendelésre. \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f2ac5b25cfe3e688363a21775872baaa9ff89a
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 108f789f16304498cf54387326d112353bf70aa2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Alkalmazás hozzáadása a Microsoft Intune-hoz
 
@@ -81,7 +81,7 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 
 Korábban az Intune számos beépített alkalmazást tartalmazott, melyeket hamar hozzá lehetett rendelni egy kategóriához. A visszajelzések alapján azonban eltávolítottuk ezt a listát, és többé már nem jelennek meg beépített alkalmazások.
 Ugyanakkor ha vannak olyan beépített alkalmazások, melyeket korábban már hozzárendelt valamelyik kategóriához, azok továbbra is meg fognak jelenni az alkalmazások listáján. Ezek az alkalmazások szükség szerint továbbra is hozzárendelhetők.
-Terveink szerint egy későbbi kiadásban elérhetővé teszünk majd egy egyszerűbb módszert a beépített alkalmazások Intune-portálról történő kiválasztására és hozzárendelésére.
+Terveink szerint egy későbbi kiadásban elérhetővé teszünk majd egy egyszerűbb módszert a beépített alkalmazások Azure Portalról történő kiválasztására és hozzárendelésére.
 
 ## <a name="next-steps"></a>További lépések
 

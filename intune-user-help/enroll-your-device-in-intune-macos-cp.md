@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
@@ -31,7 +31,7 @@ A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés
   > [!NOTE]
   > Ha iOS-eszközt (iPhone-t vagy iPadet) szeretne regisztrálni, [ezt az útmutatást kövesse inkább](enroll-your-device-in-intune-ios.md).
 
-1. A __Dock__ sávban keresse meg a __Safari__ ikont, és nyissa meg a [Microsoft letöltőközpont](https://www.microsoft.com/download/details.aspx?id=55770) a macOS-hez készült Céges portál alkalmazáshoz tartozó oldalát.
+1.  A __Dock__ menüben keresse meg a __Safarit__, majd nyissa meg az [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal) címet. 
 
 2. Töltse le az alkalmazást. A Mac-eszköz ellenőrzi, hogy a letöltött **CompanyPortal.dmg** fájl megnyitása biztonságos-e. Miután megnyitotta a fájlt a **Letöltések** mappában, húzza át a **CompanyPortal** alkalmazást az **Alkalmazások** mappába.
 

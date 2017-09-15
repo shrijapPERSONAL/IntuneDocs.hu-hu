@@ -23,9 +23,12 @@ Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket reg
 
 4. Konfigurálja az **MDM-felhasználói hatókört**. Adja meg, hogy mely felhasználók eszközeit felügyelje a Microsoft Intune. Ezeket a Windows 10 rendszerű eszközöket a rendszer automatikusan regisztrálni tudja a Microsoft Intune-felügyeletbe.
 
-  - **Nincsenek**
-  - **Néhány**
-  - **Összes**
+  - **Nincs** – Automatikus MDM-regisztráció letiltva
+  - **Néhány** – Kiválaszthatja a **csoportokat**, melyek automatikusan regisztrálhatják Windows 10-es eszközeiket
+  - **Mind** – Minden felhasználó automatikusan regisztrálhatja Windows 10-es eszközeit
+
+      > [!IMPORTANT]
+      > Ha egy csoport tekintetében mind a **MAM felhasználói hatókör**, mind pedig az automatikus MDM-regisztráció (**MDM felhasználói hatókör**) engedélyezve van, akkor csak a MAM lép érvénybe. Az adott csoport felhasználói számára eszköz munkahelyi csatlakozásánál csak a MAM lesz hozzáadva. Az eszközök MDM-regisztrálása nem automatikus.
 
    ![Az Azure Portal képernyőképe](../media/auto-enroll-scope.png)
 
@@ -33,9 +36,6 @@ Az automatikus regisztrálással a felhasználók Windows 10-es eszközeiket reg
     - **MDM használati feltételeinek URL-címe**
     - **MDM-felderítési URL-cím**
     - **MDM megfelelőségi URL-címe**
-
-    > [!IMPORTANT]
-    > Ha egy csoport tekintetében mind a **MAM felhasználói hatókör**, mind pedig az automatikus MDM-regisztráció (**MDM felhasználói hatókör**) engedélyezve van, akkor csak a MAM lép érvénybe. Az adott csoport felhasználói számára eszköz munkahelyi csatlakozásánál csak a MAM lesz hozzáadva. Az eszközök MDM-regisztrálása nem automatikus.
 
 6. Válassza a **Mentés** lehetőséget.
 

@@ -1,7 +1,7 @@
 ---
 title: "A helyszíni EAS Exchange Connector beállítása az Intune-ban"
-titleSuffix: Intune Azure
-description: "Azure-beli Intune: Exchange ActiveSync MDM – Az Intune és a helyszíni Exchange Server közötti kommunikáció engedélyezése a Connector eszközzel"
+titleSuffix: Azure portal
+description: "Az Intune és a helyszíni Exchange Server közötti kommunikáció engedélyezése a Connector eszközzel"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange Connector telepítése az Azure-beli Microsoft Intune-ban
 
@@ -30,7 +30,7 @@ A helyszíni Exchange Server-környezetekben az Intune helyszíni Exchange Conne
 
 Ha engedélyezni szeretne egy kapcsolatot, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a helyszíni Exchange Serverrel, akkor kövesse az alábbi lépéseket:
 
-1.  Töltse le az Intune helyszíni Exchange Connectorát az Intune-portálról.
+1.  Töltse le az Intune helyszíni Exchange Connector eszközét az Azure Portalról.
 2.  Telepítése és konfigurálja a helyszíni Intune Exchange Connectort.
 3.  Az Exchange-kapcsolat ellenőrzése.
 
