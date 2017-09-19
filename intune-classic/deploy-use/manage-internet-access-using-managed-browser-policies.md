@@ -2,8 +2,8 @@
 title: "Webes hozzáférés felügyelete a Managed Browser alkalmazással"
 description: "Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/10/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d0b8a72f3b06384144e4059806c3e872de68b05a
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -108,7 +108,7 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
     -   HTTPS – 443-as port
 
-    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;* *és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
+    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;** és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
 
 -   Az alábbi táblázat az URL-címek megadásakor használható mintákat ismerteti:
 
