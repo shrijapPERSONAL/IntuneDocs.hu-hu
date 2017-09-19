@@ -2,8 +2,8 @@
 title: "Hálózati hozzáférés védelme Cisco ISE-vel"
 description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9cc69764233fdb8bd9cba03dd0f8e841392ee19a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>A Cisco ISE használata az Intune-nal
 

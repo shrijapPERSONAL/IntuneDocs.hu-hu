@@ -37,7 +37,7 @@
       href: microsoft-intune-service-description.md
     - name: Ismert problémák
       href: known-issues.md
-    - name: Támogatás igénylése
+    - name: Támogatás kérése
       href: get-support.md
 - name: Ismerkedés az Intune-nal
   href: get-started-evaluation.md
@@ -115,7 +115,7 @@
     - name: Az Intune beállítása
       href: setup-steps.md
       items:
-        - name: Előfeltételek
+        - name: Támogatott konfigurációk
           href: supported-devices-browsers.md
           items:
             - name: Hálózatisávszélesség-felhasználás
