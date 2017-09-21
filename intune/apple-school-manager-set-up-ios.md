@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
@@ -38,17 +38,8 @@ Egyébként az Apple School Manager programba történő regisztráció nem hasz
 - A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Az [Apple School Management](http://school.apple.com) program keretében vásárolt eszközök
 
-**Az Apple School Manager programba történő regisztráció lépései**
-1. [Az Apple School Manager jogkivonatának (token) beszerzése és az eszközök hozzárendelése](#get-the-apple-token-and-assign-devices)
-2. [Beléptetési profil létrehozása](#create-an-apple-enrollment-profile)
-3. [A School Data Sync csatlakoztatása ](#connect-school-data-sync) (nem kötelező)
-4. [Apple School Manager által felügyelt eszközök szinkronizálása](#sync-managed-devices)
-5. [Apple School Manager-profil hozzárendelése az eszközökhöz](#assign-a-profile-to-devices)
-6. [Eszközök terjesztése a felhasználóknak](#distribute-devices-to-users)
-
 >[!NOTE]
 >A többtényezős hitelesítés (MFA) nem működik az Apple School Manager-eszközök felhasználói affinitással történő regisztrálása során. A regisztrációt követően az ilyen eszközökön is az elvárásoknak megfelelően működik az MFA. A regisztráció végeztével az MFA az elvárásoknak megfelelően működik. Az első bejelentkezéskor az eszközök nem tudják figyelmeztetni a felhasználókat a jelszó módosítására. Továbbá a lejárt jelszóval rendelkező felhasználók sem kapnak felszólítást a jelszó alaphelyzetbe állítására a regisztráció alatt. A felhasználóknak egy másik eszköz használatával kell alaphelyzetbe állítani a jelszavukat.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Az Apple-token beszerzése és az eszközök hozzárendelése
 
@@ -104,7 +95,8 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
     - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
 
      - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből.
-   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és **Felügyelt** üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md)
+   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és **Felügyelt** üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
+
    >[!NOTE]
    >Ha a **Felhasználói affinitás** a **Felhasználói affinitással** lehetőségre van állítva, vagy a **Felügyelt** üzemmód **ki** van kapcsolva, a rendszer letiltja a Megosztott iPad üzemmódot a regisztrációs profilban.
 

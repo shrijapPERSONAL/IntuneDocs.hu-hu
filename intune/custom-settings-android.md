@@ -3,10 +3,10 @@ title: "Egyéni beállítások az Intune-ban Android-eszközök esetén"
 titleSuffix: Azure portal
 description: "Az egyéni Android-profil beállításainak ismertetése."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92014eb9fd5564c0527b8cbf68732a51cf83bc96
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 433e79ae1518f86aeb7206d5213fc38a38de5218
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Androidos eszközökre vonatkozó egyéni beállítások a Microsoft Intune-ban
 
@@ -27,7 +27,14 @@ ms.lasthandoff: 09/09/2017
 
 A Microsoft Intune Androidos **egyéni** profiljával OMA-URI-beállításokat léptethet érvénybe, amelyekkel felügyelheti az Android-eszközökön elérhető szolgáltatásokat. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
 
-Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, amelyek nem konfigurálhatók Intune-szabályzatokkal.
+Ezzel a képességgel az alábbi Android-beállításokat léptetheti érvénybe, amelyek nem konfigurálhatók Intune-szabályzatokkal:
+
+- [Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni Microsoft Intune-eszközprofillal](/intune/wi-fi-profile-shared-key)
+- [Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal](/intune/android-pulse-secure-per-app-vpn)
+- [Alkalmazások engedélyezése és letiltása egyéni szabályzattal Samsung KNOX Standard-eszközökön a Microsoft Intune-ban](/intune/samsung-knox-apps-allow-block)
+
+>[!IMPORTANT]
+>Jelenleg csak a fentiekben felsorolt beállítások konfigurálhatók ezzel a profiltípussal. Az Android-eszközök nem teszik elérhetővé a konfigurálható OMA-URI-beállítások teljes listáját. Ha további beállításokat szeretne elérni, nyújtson be egy kérelmet az [Intune Uservoice webhelyén](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Egyéni profilbeállítások Android rendszerű eszközökhöz
 
@@ -45,8 +52,6 @@ Ezzel a képességgel olyan Android-beállításokat is érvénybe léptethet, a
 
 A beállítások befejezését követően létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen. Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
 
-Használhatja az alábbi néhány példában látható egyéni beállításokat:
 
-- [Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni Microsoft Intune-eszközprofillal](/intune/wi-fi-profile-shared-key)
-- [Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal](/intune/android-pulse-secure-per-app-vpn)
-- [Alkalmazások engedélyezése és letiltása egyéni szabályzattal Samsung KNOX Standard-eszközökön a Microsoft Intune-ban](/intune/samsung-knox-apps-allow-block)
+
+

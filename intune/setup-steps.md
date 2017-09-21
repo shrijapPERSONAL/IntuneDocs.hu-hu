@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>Az Intune beállítása
 
@@ -37,7 +37,7 @@ Ha jelenleg a Microsoft System Center Configuration Managerrel felügyeli a szá
 
 | Lépések | Állapot  |
 | ------------- |-------------|
-| 1  | [Előfeltételek](supported-devices-browsers.md) – Tudnivalók a kezdés előtt. Ez a szakasz tartalmazza a támogatott konfigurációkat és a hálózati követelményeket.|
+| 1  | [Támogatott konfigurációk](supported-devices-browsers.md) – Tudnivalók a kezdés előtt. Ez a szakasz tartalmazza a támogatott konfigurációkat és a hálózati követelményeket.|
 | 2 |  [Bejelentkezés az Intune-ba](account-sign-up.md) – Jelentkezzen be a próba-előfizetésbe, vagy hozzon létre egy új Intune-előfizetést. |  
 | 3 | [Tartománynév konfigurálása](custom-domain-name-configure.md) – DNS-regisztráció beállítása a vállalat tartománynevének Intune-nal való összekapcsolásához. Ezáltal a felhasználók egy ismerős tartományban kapcsolódhatnak az Intune-hoz, és használhatják az erőforrásokat.  |
 | 4 | [Felhasználók hozzáadása](users-add.md) – Felhasználók manuális hozzáadása, vagy kapcsolódás az Active Directoryhoz a felhasználók és az Intune szinkronizálásához. Kötelező, kivéve, ha az eszközei „felhasználó nélküliek”, például kioszkeszközök. |

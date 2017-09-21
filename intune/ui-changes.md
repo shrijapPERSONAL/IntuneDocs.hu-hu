@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
 |Funkció |Elérési útvonal a klasszikus portálon|Elérési útvonal az Azure Portalbeli Intune-ban|
 |------------|---------------|---------------|
-|Készülékregisztrációs program (DEP) |Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program tokenje](#where-did-apple-dep-go) |
-|Készülékregisztrációs program (DEP)| Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-apple-dep-go) |
+|Készülékregisztrációs program (DEP) [csak iOS rendszeren]|Felügyelet > Mobileszköz-kezelés > iOS > Készülékregisztrációs program|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program tokenje](#where-did-apple-dep-go) |
+|Készülékregisztrációs program (DEP) [csak iOS rendszeren]| Felügyelet > Mobileszköz-kezelés > iOS és macOS > Készülékregisztrációs program |[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-apple-dep-go) |
 |Beléptetési szabályok |Felügyelet > Mobileszköz-kezelés > Regisztrációs szabályok|[Eszközregisztráció > Regisztrációs korlátozások](#where-did-enrollment-rules-go) |
 |Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > iOS-sorozatszám szerint|[Eszközregisztráció > Apple-regisztráció > Regisztrációs program sorozatszámai](#where-did-corporate-pre-enrolled-devices-go) |
 |Csoportok iOS-sorozatszám szerint |Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > iOS-sorozatszám szerint| [Eszközregisztráció > Apple-regisztráció > AC-sorozatszámok](#where-did-corporate-pre-enrolled-devices-go)|
