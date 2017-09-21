@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -54,14 +54,14 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
 6.  A **Vállalati hozzáférés beállítása** képernyőn koppintson a **KEZDÉS** gombra.
 
-    ![A vállalati hozzáférés beállítási képernyője](./media/and-enroll-4a-comp-access-setup.png)
+    ![A vállalati hozzáférés beállítási képernyője](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > A sárga háromszög nem hibát jelez, hanem azt mutatja, hogy néhány lépés még hátravan a regisztráció folyamatából.
 
-7. A **Miért érdemes regisztrálnia az eszközét?** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **FOLYTATÁS** gombra.
+7. **Az eszközkezelés előnyei** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **FOLYTATÁS** gombra.
 
-    ![A „Miért érdemes regisztrálni az eszközt?” képernyője](./media/and-enroll-4b-why-enroll.png)
+    ![Az eszközkezelés előnyei képernyő](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet hozzá az eszközén, majd koppintson a **FOLYTATÁS** gombra.
 
@@ -114,13 +114,13 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
 14. Amikor megjelenik a **Vállalati hozzáférés beállítása** képernyő, koppintson a **FOLYTATÁS** elemre. Ha megjelenik egy üzent arról, hogy az eszköz nem megfelelő, kövesse az utasításokat a probléma megoldásához, majd koppintson a **FOLYTATÁS** elemre.
 
-    ![Az eszköz nem megfelelő, de regisztrálva van](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Az eszköz nem megfelelő, de regisztrálva van](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Megoldásra váró eszközmegfelelőségi problémák jelennek meg](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Megoldásra váró eszközmegfelelőségi problémák jelennek meg](/intune/media/android_cp_enroll_03_post_1709.png)
 
     A részletek megtekintéséhez koppintson a problémára.
 
-    ![Bővített eszközmegfelelőségi problémák](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Bővített eszközmegfelelőségi problémák](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![A vállalati hozzáférés beállítási képernyője](./media/and-enroll-9d-comp-access-setup.png)  
 

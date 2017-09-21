@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -95,6 +95,17 @@ Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentke
 ### <a name="how-to-explain-this-to-your-users"></a>A felhasználók tájékoztatásának módja
 Ajánlja a felhasználóknak a [Naplók elküldése a rendszergazdának e-mailben](/intune-user-help/send-logs-to-your-it-admin-by-email-android) című témakört. Javasolhatja ezen kívül a [Naplók elküldése a rendszergazdának USB-kábel használatával](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) című témakört is, ha a két módszer összehasonlítását szeretné lehetővé tenni.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>A céges ügyfélszolgálatnak hozzáférést kell nyújtania Önnek a céges erőforrásokhoz
+
+### <a name="where-it-appears"></a>Megjelenési helye
+Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához, és egy felhasználó megpróbál bejelentkezni, a bejelentkezés meghiúsul. Az alábbi üzenet jelenik meg:
+
+> **A céges ügyfélszolgálatnak hozzáférést kell nyújtania Önnek a céges erőforrásokhoz**  
+> A cége a Windows Információvédelem szabályzataival védi az eszközt. A céges ügyfélszolgálatnak meg kell győződnie arról, hogy engedélyezi-e a Céges portálnak a hozzáférést.
+
+### <a name="what-it-means"></a>Jelentés
+
+Adja hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához a Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatában. További információ: [A Windows Információvédelem (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>További információ
 [Mit kell tudniuk a végfelhasználóknak az Intune használatáról?](end-user-educate.md)
