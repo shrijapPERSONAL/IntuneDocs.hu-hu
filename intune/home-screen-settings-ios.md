@@ -15,17 +15,17 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5acee0ad4ea3d593acec78336f4815304503092
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 1fceed3027e0d8bb746692c1eb39e17829aa3891
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Használja ezeket a beállításokat az alkalmazások, mappák és webklipek konfigurálására az iOS dokkolási és kezdőképernyőjén.
+Használja ezeket a beállításokat az alkalmazások és mappák konfigurálására az iOS dokkolási és kezdőképernyőjén.
 
 Az iOS-eszközöknek, amelyekhez a profilt társítja, felügyelt módban kell lenniük, és az iOS legalább 9.3-as verzióját kell futtatniuk.
 

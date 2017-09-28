@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>A Mobile Threat Defense (MTD) eszközmegfelelőségi szabályzatának létrehozása az Intune-nal
 
@@ -35,8 +35,6 @@ Az MTD beállítása során az MTD-partnerkonzolon már létrehozott egy szabál
 Az MTD-eszközmegfelelési szabályzat előfeltételei:
 
 -   Az MTD és az Intune közötti integráció beállítása
-
--   Az MTD-összekötő engedélyezése az Intune-ban
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>Az MTD-eszközmegfelelési szabályzat létrehozásához
 
@@ -77,3 +75,7 @@ Ha a felhasználókhoz eszközmegfelelőségi szabályzatot kíván rendelni, ol
 
     > [!NOTE] 
     > Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
+
+## <a name="next-steps"></a>További lépések
+
+- [MTD engedélyezése az Intune-nal](mtd-connector-enable.md)
