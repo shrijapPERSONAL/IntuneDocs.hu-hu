@@ -27,7 +27,7 @@
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
 
-#### [Problémák megoldása naplók segítségével]
+#### Problémák megoldása naplók segítségével
 ##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Naplók elküldése e-mailben](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Naplók elküldése USB-kábelen](send-logs-to-your-it-admin-using-cable-android.md)
