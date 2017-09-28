@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Riasztások használata Microsoft Intune-értesítésekhez
 
@@ -61,6 +61,8 @@ A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) vá
 
 ## <a name="working-with-alerts"></a>A riasztások kezelése
 
+Ha riasztásokat szeretne megtekinteni a [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com), válassza a **Riasztások** elemet, majd válassza ki a megnézni kívánt riasztástípust.
+
 A következő beállításokkal kezelheti a riasztásokat az Intune felügyeleti konzolról.
 
 |Beállítás|Leírás|
@@ -70,11 +72,12 @@ A következő beállításokkal kezelheti a riasztásokat az Intune felügyeleti
 |**Riasztás bezárása**|A riasztások listájában válassza ki a bezárni kívánt riasztást, majd kattintson a **Riasztás bezárása** elemre.<br /><br />A bezárt riasztások 90 nap után véglegesen törlődnek.|
 |**Bezárt riasztás újraaktiválása**|A riasztáslistában válassza a **Szűrők** legördülő lista **Bezárt** elemét.<br /><br />A bezárt riasztások listájában jelölje ki az újraaktiválni kívánt riasztást, majd kattintson a **Riasztás újraaktiválása** elemre.|
 
-Az Intune riasztásainak aktív állapota a következők esetén szűnik meg:
+Az Intune riasztásai aktív állapotúak maradnak 30 napig, vagy az alábbiak egyikének bekövetkeztéig:
 
-- Ha a riasztást generáló probléma megoldódik.
-- Ha a riasztást manuálisan lezárja.
-- Ha 45 nap eltelt a riasztás generálása óta.
+- A riasztást kiváltó probléma megoldódik.
+- A riasztást valaki manuálisan lezárja.
+
+A lezárt riasztások újraaktiválhatóak a lezárást követő 30 napra. A 30 nap leteltével a lezárt és az inaktív riasztások törlődnek az Intune-ból.
 
 > [!TIP]
 > Ha ugyanazt a riasztást különböző operációs rendszerű eszközök is kiváltják, elképzelhető, hogy több verzió jelenik meg ugyanabból a riasztásból a riasztáslistában.

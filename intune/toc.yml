@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Forgatókönyvek végrehajtási útmutatói
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Az Exchange Online védelme
           href: exchange-online-protect.md
         - name: Az ügyfélszolgálati költségek csökkentése
           href: password-reset.md
+        - name: Illetéktelen hozzáférés megakadályozása
+          href: data-outside-protect.md
+        - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Migrálási útmutató
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: A Check Point integrációja az Intune-nal
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: MTD-alkalmazások hozzáadása
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: MTD engedélyezése az Intune-ban
-              href: mtd-connector-enable.md
-            - name: MTD-eszközmegfelelési szabályzat létrehozása
-              href: mtd-device-compliance-policy-create.md
+            - name: A Zimperium beállítása
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: A Zimperium és az Intune integrációja
+                  href: zimperium-mtd-connector-integration.md
+            - name: Az Intune beállítása az MTD-hez
+              items:
+                - name: MTD-alkalmazások hozzáadása
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: MTD-eszközmegfelelési szabályzat létrehozása
+                  href: mtd-device-compliance-policy-create.md
+                - name: MTD engedélyezése az Intune-ban
+                  href: mtd-connector-enable.md
         - name: Hálózati hozzáférés-vezérlés
           href: network-access-control-integrate.md
         - name: A Windows Hello beállítása
