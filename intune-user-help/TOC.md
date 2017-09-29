@@ -46,8 +46,15 @@
 
 ### Mobile Threat Defense
 #### [Mobile Threat Defense-alkalmazások telepítése](you-are-prompted-to-install-mtd-android.md)
+##### [A Lookout for Work telepítése](you-are-prompted-to-install-lookout-for-work-android.md)
+##### [A Symantec Endpoint Protection Mobile telepítése](you-are-prompted-to-install-skycure-android.md)
+##### [A SandBlast Mobile Protect telepítése](you-are-prompted-to-install-sandblast-android.md)
+##### [A Zimperium zIPS telepítése](you-are-prompted-to-install-zips-android.md)
 #### [Fenyegetések elhárítása](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-
+##### [A Lookout for Work használata](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+##### [A Symantec Endpoint Protection Mobile használata](you-need-to-resolve-a-threat-found-by-skycure-android.md)
+##### [A SandBlast Mobile Protect használata](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
+##### [A Zimperium zIPS használata](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-iOS-or-macOS-device-with-intune.md)
 ### [Mi történik, ha iOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -77,7 +84,15 @@
 
 ### Mobile Threat Defense
 #### [Mobile Threat Defense-alkalmazások telepítése](you-are-prompted-to-install-mtd-ios.md)
+##### [A Lookout for Work telepítése](you-are-prompted-to-install-lookout-for-work-ios.md)
+##### [A Symantec Endpoint Protection Mobile telepítése](you-are-prompted-to-install-skycure-ios.md)
+##### [A SandBlast Mobile Protect telepítése](you-are-prompted-to-install-sandblast-ios.md)
+##### [A Zimperium zIPS telepítése](you-are-prompted-to-install-zips-ios.md)
 #### [Fenyegetések elhárítása](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+##### [A Lookout for Work használata](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+##### [A Symantec Endpoint Protection Mobile használata](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
+##### [A SandBlast Mobile Protect használata](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
+##### [A Zimperium zIPS használata](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
