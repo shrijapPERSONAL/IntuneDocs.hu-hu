@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 847b08efc2424da7ae9483db355f2804ac1e00c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5d59f5b9c0401e84dddbe21a274b0fed91e5dce
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>A regisztráláskor azonosítania kell az eszközt
 
@@ -30,4 +30,4 @@ Ha az Intune-ban próbálja meg regisztrálni iOS vagy macOS rendszerű eszköz�
 2. Koppintson a **folytatás** gombra.
 3. Írja be az eszköz sorozatszámának utolsó négy számjegyét, hogy az Intune ellenőrizhesse az regisztrációs állapotát. A sorozatszám megkereséséhez lásd: [Hogyan találhatom meg az eszköz sorozatszámát?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

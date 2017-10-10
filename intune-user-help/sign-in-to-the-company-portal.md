@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hogyan jelentkezhetek be a Céges portál alkalmazásba? <!--User Story 1132123-->
 
@@ -79,4 +79,4 @@ Ha nem jelszóval jelentkezik be a céges erőforrások használatához, más es
 
   ![Miután a hitelesítési folyamat lezárult, bejelentkezik a Céges portál alkalmazás, és a folyamatot egy betöltést jelző sáv mutatja.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
