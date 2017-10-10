@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b3a9ea6fb7134f2be6b05f883e5dab2d1aef1d59
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Az eszköz átnevezése a Vállalati portál webhelyről
 
-Dönthet úgy, hogy átnevezi az eszközt, hogy azt könnyebb legyen azonosítani. Ezt a [Vállalati portál webhelyén](http://portal.manage.microsoft.com) teheti meg. A Vállalati portál webhelye egy weblap, amelyen az informatikai részleg általi felügyeletre regisztrált számítógépeket és eszközöket kezelheti.
+Dönthet úgy, hogy átnevezi az eszközt, hogy azt könnyebb legyen azonosítani. Ezt a [Vállalati portál webhelyén](https://portal.manage.microsoft.com) teheti meg. A Vállalati portál webhelye egy weblap, amelyen az informatikai részleg általi felügyeletre regisztrált számítógépeket és eszközöket kezelheti.
 
 Az eszköz átnevezése:
 
-1.  A [Céges portál webhelyen](http://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/Intune/whats-new/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiket át szeretné nevezni.
 
@@ -40,4 +40,4 @@ Az eszköz átnevezése:
 
 4.  Írja be az új nevet az eszköz nevének helyére, majd koppintson az **Átnevezés** gombra. Mostantól az új nevén látható az eszköz.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
