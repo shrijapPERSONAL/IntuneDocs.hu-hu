@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
             title: Jelentések létrehozása az Intune Data Warehouse (előzetes verzió) szolgáltatással
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
-            title: '[Blog] További tudnivalók az új szerepköralapú hozzáférés-vezérlésről'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
+            title: '[Blog] Az Intune Certificate Connector használatával kibocsátott PFX-tanúsítványok'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
-            title: '[Blog] Az Intune szolgáltatás állapotának ismertetése'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
+            title: '[Blog] MAM által kezelt és MDM által kezelt alkalmazások közti kommunikáció beállítása'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Videók
@@ -128,6 +128,7 @@ sections:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://fasttrack.microsoft.com/ems">Több mint 150 licence van? Éljen a FastTrack előnyeivel!</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Az Enterprise Mobility + Security blog megnyitása</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Segítség kérése az Intune támogatási blogján</a>'
           - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Visszajelzés küldése az Intune-ról a UserVoice szolgáltatásban</a>'
