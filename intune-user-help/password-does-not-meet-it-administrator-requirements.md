@@ -1,5 +1,5 @@
 ---
-title: "A jelszó nem felel meg a rendszergazda követelményeinek | Microsoft Docs"
+title: "A jelszó nem felel meg a cég informatikai támogatási szolgálata követelményeinek | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -14,15 +14,15 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>A jelszó nem felel meg a rendszergazda követelményeinek
+# <a name="your-password-does-not-meet-your-company-supports-requirements"></a>A jelszó nem felel meg a cég informatikai támogatási szolgálata követelményeinek
 
-A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem felel meg egy vagy több, a rendszergazda által meghatározott követelménynek. A probléma elhárításához kövesse az eszközén megjelent utasításokat. A problémák leírása az alábbiakban olvasható.
+A munkahelyi vagy iskolai erőforrások eléréséhez használt jelszó nem felel meg egy vagy több, a cég informatikai támogatási szolgálata által meghatározott követelménynek. A probléma elhárításához kövesse az eszközén megjelent utasításokat. A problémák leírása az alábbiakban olvasható.
 
 A PIN-kód és a jelszó beállításához használja az eszközének megfelelő hivatkozást:
 
@@ -32,18 +32,18 @@ A PIN-kód és a jelszó beállításához használja az eszközének megfelelő
 
 PIN-kóddal vagy jelszóval kapcsolatos problémák leírása:
 
-- **Nincsenek számok, nagybetűk, speciális karakterek a jelszóban**. A rendszergazda előírja, hogy számok, nagybetűk és speciális karakterek legyenek a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #.
+- **Nincsenek számok, nagybetűk, speciális karakterek a jelszóban**. A cég informatikai támogatási szolgálata előírja, hogy számok, nagybetűk és speciális karakterek legyenek a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #.
 
 - **A jelszó túl egyszerű, így nem elég biztonságos**. Példák a túl egyszerű jelszóra: 1234 vagy 1111. Ha nem biztos abban, milyen jelszavak engedélyezettek, ügyeljen arra, hogy a jelszó ne tartalmazzon olyan egymást sorban követő vagy ismétlődő számokat, mint amilyen a példában is látható.
 
-- **A jelszó lejárt**. Ha jelszava lejárt, egy újat kell beállítania, amely megfelel a rendszergazda által meghatározott feltételeknek.
+- **A jelszó lejárt**. Ha jelszava lejárt, egy újat kell beállítania, amely megfelel a cég informatikai támogatási szolgálata által meghatározott feltételeknek.
 
-- **Nincs beállítva jelszó**. Mielőtt hozzáférne munkahelyi e-mailjéhez vagy az eszközén lévő adatokhoz, a rendszergazda által meghatározott feltételeknek megfelelő jelszót kell beállítania.
+- **Nincs beállítva jelszó**. Mielőtt hozzáférne munkahelyi e-mailjéhez vagy az eszközén lévő adatokhoz, a cég informatikai támogatási szolgálata által meghatározott feltételeknek megfelelő jelszót kell beállítania.
 
-- **A jelszó túl rövid**. A rendszergazda megköveteli, hogy hosszabb, több karakterből álló jelszót használjon.
+- **A jelszó túl rövid**. A cég informatikai támogatási szolgálata megköveteli, hogy hosszabb, több karakterből álló jelszót használjon.
 
-- **A jelszót a közelmúltban használták**. A rendszergazda nem engedélyezi, hogy régi jelszót újra alkalmazzon. Válasszon egy korábban még nem használt jelszót.
+- **A jelszót a közelmúltban használták**. A cég informatikai támogatási szolgálata nem engedélyezi, hogy régi jelszót újra alkalmazzon. Válasszon egy korábban még nem használt jelszót.
 
-- **A jelszó nem elég bonyolult**. A rendszergazda előírja, hogy még több szám, nagybetű és speciális karakter legyen a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #. Ez az eszközön lévő más fiókokra is igaz lehet, tehát mindenképpen ellenőrizze az egyéb munkahelyi fiókokat, hogy a jelszó megfeleljen az informatikai részleg által az eszköz számára előírt követelményeknek.
+- **A jelszó nem elég bonyolult**. A cég informatikai támogatási szolgálata előírja, hogy számok, nagybetűk és speciális karakterek legyenek a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #. Ez az eszközön lévő más fiókokra is igaz lehet, tehát mindenképpen ellenőrizze az egyéb munkahelyi fiókokat, hogy a jelszó megfeleljen az informatikai részleg által az eszköz számára előírt követelményeknek.
 
-Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a cég informatikai támogatási szolgálatához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

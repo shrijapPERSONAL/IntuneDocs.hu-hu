@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Sérült biztonságú Android-eszköz ismételt csatlakoztatása
 
-A rendszergazda azt észlelte, hogy feltört eszközt használ. A „feltört” állapot azt jelenti, hogy az eszközt az operációs rendszerhez való hozzáférés érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve. Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a vállalati erőforrásokhoz.
+A cég informatikai támogatási szolgálata azt észlelte, hogy Ön egy rootolt eszközt használ. A „feltört” állapot azt jelenti, hogy az eszközt az operációs rendszerhez való hozzáférés érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve. Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a vállalati erőforrásokhoz.
 
-További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [céges portál webhelyén](https://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

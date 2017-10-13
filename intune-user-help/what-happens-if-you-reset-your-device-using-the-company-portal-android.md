@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Android-eszközt a Vállalati portál használatával?
 
@@ -28,8 +28,8 @@ Ha a Vállalati portál alkalmazás segítségével állítja alaphelyzetbe andr
 
 A Samsung KNOX-eszközökön „szelektív törlés” is végezhető. Ehhez használja a Vállalati portál **eszközeltávolítás** funkcióját. A szelektív törlés csak a következőket távolítja el:
 
-- A rendszergazda által elérhetővé tett vállalati alkalmazások.
+- A cég informatikai támogatási szolgálata által elérhetővé tett vállalati alkalmazások.
 - E-mailek, VPN és Wi-Fi.
-- A rendszergazda azon képessége, hogy megköveteljen bizonyos beállításokat.
+- A cég informatikai támogatási szolgálatának azon képessége, hogy megköveteljen bizonyos beállításokat.
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

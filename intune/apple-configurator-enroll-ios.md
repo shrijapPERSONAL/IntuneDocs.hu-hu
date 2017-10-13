@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-eszközök regisztrálása az Apple Configurator használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune támogatja az iOS-eszközöknek a Mac számítógépen futó [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) segítségével történő regisztrálását. A céges regisztrálás Apple Configuratorral való beállításához az adott iOS-eszközt USB-csatlakozóval kell csatlakoztatni egy Mac számítógéphez. Az Apple Configurator használatával kétféle módon lehet regisztrálni az eszközt az Intune-ban:
+Az Intune támogatja az iOS-eszközöknek a Mac számítógépen futó [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) segítségével történő regisztrálását. A céges regisztrálás Apple Configuratorral való beállításához az adott iOS-eszközt USB-csatlakozóval kell csatlakoztatni egy Mac számítógéphez. Az Apple Configurator használatával kétféle módon lehet regisztrálni az eszközt az Intune-ban:
 - **Regisztráció a Beállítási asszisztenssel** – Visszaállítja a gyári beállításokat az eszközön, és felkészíti azt a Beállítási asszisztenssel történő regisztrálásra.
 - **Közvetlen regisztrálás** – Ez a folyamat nem állítja vissza az eszközön a gyári beállításokat, és az iOS-beállításokon keresztül regisztrálja azt. Ez a módszer csak a **felhasználói affinitás nélküli** eszközöket támogatja.
 
@@ -38,7 +38,7 @@ Az Apple Configurator regisztrációs módszerei nem használhatók az [eszközr
 - [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
 - Az eszközök sorozatszámai (csak a Beállítási asszisztenssel történő regisztrálás esetén)
 - USB csatlakozókábelek
-- [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) alkalmazást futtató Mac számítógép
+- [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) alkalmazást futtató macOS-számítógép
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Apple Configurator-profil létrehozása az eszközökhöz
 
@@ -69,7 +69,7 @@ Egy eszközregisztrációs profil meghatározza a regisztrálás során alkalmaz
 
 **Apple Configurator-sorozatszámok hozzáadása az Intune-hoz**
 
-1. Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv-fájlt). A bal oldali oszlopban tüntesse fel a sorozatszámot, a jobb oldali oszlopban pedig a további adatokat. A lista jelenlegi maximális mérete 500 sor. Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
+1. Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv-fájlt). A bal oldali oszlopban tüntesse fel a sorozatszámot, a jobb oldali oszlopban pedig a további adatokat. A lista jelenlegi maximális mérete 5000 sor. Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 
     F7TLWCLBX196,eszköz adatai</br>
     DLXQPCWVGHMJ,eszköz adatai

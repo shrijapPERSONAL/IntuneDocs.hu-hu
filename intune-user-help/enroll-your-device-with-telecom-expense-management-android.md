@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Android-eszköz regisztrálása a távközlésiköltség-kezelőben
 
@@ -30,7 +30,7 @@ Elképzelhető, hogy az Ön szervezeténél használnak távközlésiköltség-k
 
 Válassza ki a megfelelő lehetőséget. Ezt követően értesítést kap arról, hogy telepítse a [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) alkalmazást a Google Play Áruházból. A Datalert alkalmazás fogja lehetővé tenni, hogy a szervezet mérni tudja az adathasználatot. Ha munkahelyén konfigurálva van a munkahelyi vagy iskolai fiókkal történő regisztráció, akkor a munkahelyi vagy iskolai fiókjával kell bejelentkeznie. Ellenkező esetben személyes információ, például telefonszám alapján, egy kód segítségével kell visszaigazolnia eszközét, hogy az alkalmazásból regisztrálni tudjon a Datalert szolgáltatásba.
 
-A továbblépéshez koppintson a képernyő jobb felső sarkában található __következő__ nyílra. A rendszergazda nyújthat segítséget abban a kérdésben, hogy __munkahelyi vagy iskolai Microsoft-fiókjával__, illetve __telefonszámával__ tud-e regisztrálni.
+A továbblépéshez koppintson a képernyő jobb felső sarkában található __következő__ nyílra. A cég informatikai támogató szolgálata nyújthat segítséget abban a kérdésben, hogy __munkahelyi vagy iskolai Microsoft-fiókjával__, illetve __telefonszámával__ tud-e regisztrálni.
 
   ![A Datalert alkalmazás nyitó képernyőjének képe, amely röviden leírja, hogyan segíti a Datalert az adatcsomag optimális használatát, és hivatkozást tartalmaz a következő képernyőre lépéshez.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ A továbblépéshez koppintson a képernyő jobb felső sarkában található __
 
 A regisztrálás után az adathasználati adatok megjelennek a Datalert alkalmazásban.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

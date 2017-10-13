@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Mi történik a Munkahelyi portál alkalmazás telepítésekor és egy iOS- vagy macOS-eszköz Intune-beli regisztrálásakor?
 
@@ -32,11 +32,11 @@ A Munkahelyi portál alkalmazás telepítése és az iOS- vagy macOS-eszköznek 
 
 -   Ha a telefonját elveszíti vagy ellopják, távolról visszaállíthatja a gyári beállításait.
 
--   Automatikusan konfigurálhatja vállalati e-mail-fiókját.
+-   Automatikusan beállíthatja a vállalati e-mail-fiókját.
 
-Az eszköz Intune-beli regisztrálásával engedélyezi a rendszergazdának az eszköz kezelését, így biztosítható az eszközön tárolt munkahelyi adatok védelme.
+Az eszköz Intune-beli regisztrálásával engedélyezi a cég informatikai támogatási szolgálatának az eszköz kezelését, így biztosítható az eszközön tárolt munkahelyi adatok védelme.
 
-A regisztrált eszközökön a következőkre van lehetősége a rendszergazdának:
+A regisztrált eszközökön a következőkre van lehetősége a cég informatikai támogatási szolgálatának:
 
 -   Ha elveszne az eszköz, netán ellopnák azt, visszaállítható a készülék annak alapértelmezett gyári beállításaira.
 
@@ -62,4 +62,4 @@ A regisztrált eszközökön a következőkre van lehetősége a rendszergazdán
 
 -   Az automatikus fájlszinkronizálás engedélyezése vagy letiltása, amíg az eszköz barangol. Az automatikus fájlszinkronizálás engedélyezése barangolási költségekkel járhat.
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

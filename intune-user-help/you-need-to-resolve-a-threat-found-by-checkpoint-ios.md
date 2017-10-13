@@ -1,26 +1,26 @@
 ---
-title: "SandBlast Mobile Protect által észlelt fenyegetések elhárítása Androidon | Microsoft Docs"
-description: "Ismerje meg, hogyan háríthatja el a Mobile Protect által talált fenyegetéseket Androidon."
+title: "SandBlast Mobile Protect által észlelt fenyegetések elhárítása iOS-en | Microsoft Docs"
+description: "Ismerje meg, hogyan háríthatja el a Mobile Protect által talált fenyegetéseket iOS-en."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
+ms.assetid: 5b2a69e7-cc86-4f1b-81d9-35b8b23b937b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
+ms.openlocfilehash: 568bc0c0627e78ce4dd73cdfe8f74afa7f544b46
 ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/28/2017
 ---
-# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>A SandBlast Mobile Protect által észlelt fenyegetés elhárítása
+# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>El kell hárítania egy fenyegetést, amelyet a SandBlast Mobile Protect észlelt
 
 Mivel a SandBlast Mobile Protect potenciális fenyegetést talált az eszközén, el kell hárítania a problémát, hogy ismét hozzáférhessen a céges vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz. A megjelenő üzenet tartalma attól a problémától függ, amelyet a SandBlast Mobile Protect talált az eszközön.
 
@@ -30,7 +30,7 @@ A probléma elhárításához nyissa meg a SandBlast Mobile Protect alkalmazást
 
 Ha a regisztrált eszközön vírus vagy egyéb biztonsági fenyegetés található, akkor a céges e-mailek vagy fájlok elérésének megkísérlésekor a SandBlast Mobile Protect alkalmazás figyelmezteti a szükséges lépésekre.
 
-Az **eszközkezelési portálon** található hivatkozásra koppintva nyissa meg a [Céges portál webhelyet](https://portal.manage.microsoft.com), ahol megtalálja a hiba elhárításához követendő útmutatást.
+Az **eszközkezelési portálon** található hivatkozásra koppintva nyissa meg a [Céges portál webhelyet](http://portal.manage.microsoft.com), ahol megtalálja a hiba elhárításához követendő útmutatást.
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Példa a SandBlast Mobile Protect által fenyegetésként észlelt alkalmazásra
 
@@ -38,4 +38,4 @@ Ha olyan alkalmazást telepített, amelyet a SandBlast Mobile Protect fenyegeté
 
 Ebben az esetben távolítsa el az alkalmazást, hogy azonnal hozzáférhessen a céges e-mailjeihez és adataihoz. Ha ezt nem teszi meg, az alkalmazás eltávolításáig nem férhet hozzá az e-mailekhez és az adatokhoz.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).

@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22144721ba6bfad565009b306e7216ad1e5582af
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 162e2262067d38d792e23c8a98d52e81cf548bbe
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>Az iOS-eszköze operációs rendszerének verziója még nem élvez támogatást
 
-Mivel a technológia rendkívül gyors ütemben fejlődik, előfordulhat, hogy az Ön által használt eszköz olyan modern, hogy a rendszergazdának még nem volt lehetősége tesztelni. Ez azt jelenti, hogy az iOS legújabb verziója esetleg nem fog tudni együttműködni a vállalati eszközökkel.
+Mivel a technológia rendkívül gyors ütemben fejlődik, előfordulhat, hogy az Ön által használt eszköz olyan modern, hogy a cég informatikai támogatási szolgálatának még nem volt lehetősége tesztelni. Ez azt jelenti, hogy az iOS legújabb verziója esetleg nem fog tudni együttműködni a vállalati eszközökkel.
 
-Ebben az esetben forduljon a rendszergazdához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ebben az esetben forduljon a cég informatikai támogatási szolgálatához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

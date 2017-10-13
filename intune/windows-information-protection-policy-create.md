@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>A Windows Information Protection (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával
 
@@ -155,16 +155,13 @@ A WIP kikapcsolása után a rendszer megkísérli visszafejteni a WIP-címkével
 
 ### <a name="use-wip-learning"></a>A WIP Learning használata
 
-1. Nyissa meg az Azure irányítópultját. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** lehetőséget. A szövegmezőbe írja be az **Intune** szót.
 
-2. Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+3. Válassza az **Intune** > **Mobilalkalmazások** elemet.
 
-3. Az **Intune** kiválasztásával megnyílik az **Intune irányítópult**. Itt válassza a **Mobilalkalmazások** elemet.
-
-4. A **Figyelés** alatt válassza a **WIP Learning** lehetőséget. Ekkor megjelenik a WIP Learning által naplózott ismeretlen alkalmazások listája.
-
-> [!IMPORTANT]
-> A WIP Learning naplójelentésében szereplő alkalmazásokat ezután exportálhatja az alkalmazásvédelmi szabályzatokba.
+4. Válassza az **Alkalmazásvédelem állapota** > **Jelentések** > **Windows Information Protection Learning** elemet.  
+ 
+    A WIP Learning naplójelentésében szereplő alkalmazásokat ezután exportálhatja az alkalmazásvédelmi szabályzatokba.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP alkalmazásvédelmi szabályzat bevezetése
 

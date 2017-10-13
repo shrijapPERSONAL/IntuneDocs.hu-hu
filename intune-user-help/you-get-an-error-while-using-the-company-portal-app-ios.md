@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2208d25b4e27f3a896c431f301a46392a4b21f80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Hibaüzenet jelenik meg a Céges portál alkalmazás használatakor
 
-Ha iOS rendszerű eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ez többféleképpen is lehetséges:
+Ha iOS rendszerű eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához a hibával kapcsolatos információkat elküldheti a cég informatikai támogatási szolgálatának. Ez többféleképpen is lehetséges:
 
 -   A hibáról értesítő üzenetben koppintson a **Jelentés** gombra.
 
@@ -32,4 +32,4 @@ Ha iOS rendszerű eszközén hibaüzenet jelenik meg a Céges portál alkalmazá
 
 -   A Céges portál alkalmazásba belépve rázza meg az eszközt, majd a diagnosztikai riasztás megjelenésekor koppintson az **E-mail küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

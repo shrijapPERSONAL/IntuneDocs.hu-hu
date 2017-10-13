@@ -1,6 +1,6 @@
 ---
 title: "A Lookout for Work által talált fenyegetések elhárítása Android rendszeren | Microsoft Docs"
-description: 
+description: "Ismerje meg, hogyan háríthatja el a Lookout for Work által talált fenyegetéseket Androidon."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>El kell hárítania a Lookout for Work által azonosított fenyegetést
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása
 
 A Lookout for Work potenciális fenyegetést talált az eszközön. Ahhoz, hogy ismét hozzáférhessen vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, el kell hárítania a problémát. A következőhöz hasonló üzenetet fog látni:
 
@@ -34,7 +34,7 @@ Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés talá
 
 ![A Lookout for Work hibaüzenete és hivatkozás a Vállalati portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Példa olyan alkalmazásra, amelyet a Lookout for Work fenyegetésként észlel
 
@@ -44,4 +44,4 @@ Ha olyan alkalmazást telepített, amelyet a Lookout for Work fenyegetésként �
 
 Az alkalmazás eltávolítása után azonnal hozzáférhet a vállalati e-mailjeihez és adataihoz. Az e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

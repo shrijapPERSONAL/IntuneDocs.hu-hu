@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf43ed13b852cccbce44e2a31890e164e3519490
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
@@ -62,7 +62,7 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
     ![A Hozzáférés munkahelyi vagy iskolai rendszerhez elem kiválasztása](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a rendszergazda hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája.
+2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a cég informatikai támogatási szolgálata hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája.
 
     - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
     - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
@@ -129,4 +129,4 @@ Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalm
 
    A képernyő tetején a „Fiók szinkronizálása” üzenet lesz látható egészen addig, amíg az eszköz szinkronizálása be nem fejeződik.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -30,21 +30,19 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Android-eszközén
 
 Ezek a regisztrálási útmutatók a natív és a Samsung KNOX Android-eszközökre vonatkoznak. A Samsung KNOX olyan biztonsági szolgáltatás, amelynek segítségével bizonyos Samsung-eszközöknek további védelmet biztosíthat a natív Android nyújtotta lehetőségeken felül. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung KNOX-eszközzel rendelkezik-e. Ha nem jelenik meg a „KNOX verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
 
-A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki egy olyan kategóriát, amely a leginkább illik az Ön eszközhasználatára. A rendszergazda ezen a kategórián keresztül segít ellenőrizni az alkalmazásokat, amelyekhez hozzáfér.
-
-Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [regisztrálási hibák elküldhetők a rendszergazdának](send-enrollment-errors-to-your-it-admin-android.md).
+A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki egy olyan kategóriát, amely a leginkább illik az Ön eszközhasználatára. A cég informatikai támogatási szolgálata ezen a kategórián keresztül segít ellenőrizni az alkalmazásokat, amelyekhez hozzáfér.
 
 **Android-eszköz regisztrálása:**
 
 1.  Telepítse az Intune Vállalati portál nevű ingyenes alkalmazást a [Google Play áruházból](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Nyissa meg a Microsoft Intune Vállalati portál alkalmazást.
+2.  Nyissa meg a Vállalati portál alkalmazást.
 
 3.  A Vállalati portál alkalmazás **üdvözlőképernyőjén** koppintson a **Bejelentkezés** elemre, és jelentkezzen be a munkahelyi vagy az iskolai fiókjával.
 
     ![Androidos üdvözlőképernyőre készült Céges portál alkalmazás, amely arra kéri a felhasználót, hogy jelentkezzen be a szükséges munkahelyi vagy iskolai fiókjával. Arra is figyelmeztet, hogy a Microsoft-fiókok és egyéb személyes fiókok nincsenek engedélyezve.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Ha a rendszergazda kikötéseket és feltételeket írt elő a munkahely erőforrásainak használatához, az **ELFOGADÁS** gombra koppintva fogadja el őket. A képernyő a használt Android-verziótól függően kismértékben eltérhet az alábbi képtől.
+4.  Ha a cég informatikai támogatási szolgálata kikötéseket és feltételeket írt elő a munkahely erőforrásainak használatához, az **ELFOGADÁS** gombra koppintva fogadja el őket. A képernyő a használt Android-verziótól függően kismértékben eltérhet az alábbi képtől.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  A **Vállalati hozzáférés beállítása** képernyőn koppintson a **KEZDÉS** gombra.
+6.  A **Vállalati hozzáférés beállítása** képernyőn koppintson a **FOLYTATÁS** elemre.
 
-    ![A vállalati hozzáférés beállítási képernyője](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![A vállalati hozzáférés beállítási képernyője](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > A sárga háromszög nem hibát jelez, hanem azt mutatja, hogy néhány lépés még hátravan a regisztráció folyamatából.
 
-7. **Az eszközkezelés előnyei** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **FOLYTATÁS** gombra.
+7.  Tekintse át a listában, hogy a cég informatikai támogatási szolgálata milyen tartalmakhoz férhet hozzá az eszközén, majd koppintson a **FOLYTATÁS** gombra.
 
-    ![Az eszközkezelés előnyei képernyő](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Adatvédelmi beállítások](/intune/media/android_cp_enroll_02_after_1710.png)
 
-8.  Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet hozzá az eszközén, majd koppintson a **FOLYTATÁS** gombra.
+9.  A **Következő lépések** képernyőn olvassa el, mi történik a regisztráció során, majd koppintson a **REGISZTRÁCIÓ** elemre.
 
-    ![Adatvédelmi beállítások](./media/and-enroll-4c-we-care-privacy.png)
-
-9.  A **What comes next** (Mi a következő lépés?) képernyőn olvassa el, mi történik a regisztráció során, majd koppintson a **REGISZTRÁCIÓ** elemre.
-
-    ![A „Mi a következő lépés?” képernyő](./media/and-enroll-4d-what-comes-next.png)
+    ![A „Mi a következő lépés?” képernyő](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Ha az Android 6.0-s vagy újabb verzióját használja, végezze el ezt a lépést. Egyéb esetben lépjen a következő lépésre.
 
-    Ha a rendszergazda létrehozott bizonyos szabályzatokat, akkor előfordulhat, hogy megjelennek az alábbi üzenetek:
+    Ha a cég informatikai támogatási szolgálata létrehozott bizonyos szabályzatokat, akkor előfordulhat, hogy megjelennek az alábbi üzenetek:
     -   **Allow Company Portal to make and manage phone calls? (Engedélyezi, hogy a Munkahelyi portál alkalmazás telefonhívásokat indítson és kezeljen?)**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [r
 
     A Céges portálnak az eszközfelügyelethez eszközadminisztrátori szerepkörre van szüksége. Ez feljogosítja a rendszergazdát bizonyos információ megnézésére (például hogy Ön hányszor próbálta meg feloldani a zárolási képernyőt), és bizonyos műveletek elvégzésére.
 
-    Fontos szem előtt tartani, hogy ezek a műveletek a nagyobb biztonságot szolgálják. A rendszergazda nem az Ön bizalmas adataihoz akar hozzáférni és nem törli őket ok nélkül, csak gondoskodni szeretne a céges adatok biztonságáról.
+    Fontos szem előtt tartani, hogy ezek a műveletek a nagyobb biztonságot szolgálják. A cég informatikai támogatási szolgálata nem az Ön bizalmas adataihoz akar hozzáférni és nem törli őket ok nélkül, csak gondoskodni szeretne a céges adatok biztonságáról.
 
-    A Microsoftnak nincs befolyása erre az üzenetre, és értjük, hogy a megfogalmazása drasztikusnak tűnhet, de a Céges portál nem tudja csak azokat a korlátozásokat és hozzáféréseket megjeleníteni, amelyek az adott szervezetre érvényesek: csak ezek mindegyikét lehet egyszerre engedélyezni ezen a képernyőn. Ha az eszköz szervezeti használatával kapcsolatos kérdése van, a [Céges portál webhelyen](http://portal.manage.microsoft.com) látható elérhetőségek valamelyikén kérjen tájékoztatást a céges rendszergazdától.
+    A Microsoftnak nincs befolyása erre az üzenetre, és értjük, hogy a megfogalmazása drasztikusnak tűnhet, de a Céges portál nem tudja csak azokat a korlátozásokat és hozzáféréseket megjeleníteni, amelyek az adott szervezetre érvényesek: csak ezek mindegyikét lehet egyszerre engedélyezni ezen a képernyőn. Ha az eszköz szervezeti használatával kapcsolatos kérdése van, a [Céges portál webhelyen](https://portal.manage.microsoft.com) látható elérhetőségek valamelyikén kérjen tájékoztatást a cég informatikai támogatási szolgálatától.
 
 12.  Az útmutatást követve írja be a PIN-kódját vagy a jelszavát. Ha korábban már beállított egy PIN-kódot vagy egy jelszót a szóban forgó eszközön, ez a képernyő nem jelenik meg, és új PIN-kódot vagy jelszót sem kell megadnia.
 
@@ -133,4 +127,6 @@ Mielőtt vállalati alkalmazások telepítésével próbálkozna, a **Beállít�
 > [!Note]
 > Ha a szervezete távközlésiköltség-kezelő szoftvert használ, az eszköz teljes regisztrálásához még néhány lépést el kell végezni. További információért [kattintson ide](enroll-your-device-with-telecom-expense-management-android.md).
 
-További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+Ha hibaüzenet jelenik meg az eszköz Intune-regisztrálása közben, akkor a [regisztrálási hibák elküldhetők a cég informatikai támogatási szolgálatának](send-enrollment-errors-to-your-it-admin-android.md).
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [Céges portál webhelyén](https://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

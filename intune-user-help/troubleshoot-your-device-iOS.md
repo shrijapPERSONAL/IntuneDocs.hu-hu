@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Az iOS-eszközök gyakori problémáinak elhárítása
 
-Időnként előfordulhatnak problémák az iOS-eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a rendszergazdához a [Céges portál webhelyen](http://portal.manage.microsoft.com) található elérhetőségén.
+Időnként előfordulhatnak problémák az iOS-eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://portal.manage.microsoft.com) található elérhetőségen.
 
 - [Sérült biztonságú iOS-eszközt kell újracsatlakoztatnom](how-to-reconnect-a-compromised-ios-device.md)
-- [Hibákat kell elküldenem a rendszergazdának](send-errors-to-your-it-admin-ios.md)
+- [Hibákat kell elküldenem a cég informatikai támogatási szolgálatának](send-errors-to-your-it-admin-ios.md)
 - [Hibákat kell elküldenem a Microsoftnak](send-logs-to-microsoft-ios.md)
 - [Hibaüzenetet kapok a Céges portál alkalmazás használatakor](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [A regisztráláshoz azonosítanom kell az eszközt](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

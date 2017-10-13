@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Engedélyeznie kell a biztonságos rendszerindítást
 
 A szervezetben engedélyeznie kell a Windows biztonságos rendszerindítását, amely egy, az eszköz védelmét segítő biztonsági szolgáltatás.
 
-A Biztonságos rendszerindítás engedélyezése tapasztalt felhasználók által elvégzendő feladat. Ha mobileszközt használ, kérje az informatikai rendszergazda segítségét.
+A Biztonságos rendszerindítás engedélyezése tapasztalt felhasználók által elvégzendő feladat. Ha mobileszközt használ, kérje a cég informatikai támogatási szolgálatának segítségét.
 
-Ha számítógépet használ, kapcsolatba léphet az informatikai rendszergazdával, vagy megtekintheti a [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) (Biztonságos rendszerindítás letiltása) oldalon a „To re-enable Secure Boot” (Biztonságos rendszerindítás ismételt engedélyezése) című szakaszt, hogy megpróbálja saját kezűleg engedélyezni a Biztonságos rendszerindítást.
+Ha számítógépet használ, kapcsolatba léphet a cég informatikai támogatási szolgálatával, vagy megtekintheti a [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) (Biztonságos rendszerindítás letiltása) oldalon a „To re-enable Secure Boot” (Biztonságos rendszerindítás ismételt engedélyezése) című szakaszt, hogy megpróbálja saját kezűleg engedélyezni a Biztonságos rendszerindítást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

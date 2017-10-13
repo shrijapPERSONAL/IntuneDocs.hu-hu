@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4946404a4bdb4968c47904549a581c9c39f6e9e0
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
@@ -68,11 +68,11 @@ Az Intune az Azure AD-vel együttműködve a hozzáférés-vezérlési forgatók
 Alkalmazásfelügyelet alatt a következőket értjük:
 * Mobilalkalmazások kiosztása a dolgozók számára
 * Az alkalmazás futtatásakor alkalmazandó egységes beállítások konfigurálása
-* Annak előírása, hogyan használhatók és oszthatók meg a céges adatok a mobilalkalmazásokban
-* Céges adatok eltávolítása a mobilalkalmazásokból   
+* Előírhatják, hogyan használhatók és oszthatók meg a vállalati adatok a mobilalkalmazásokban.
+* Eltávolíthatják a vállalati adatokat a mobilalkalmazásokból.   
 * Alkalmazások frissítése
-* Jelentésküldés a használt mobilalkalmazásokról
-* A mobilalkalmazások használatának nyomon követése
+* Nyilvántarthatják a használt mobilalkalmazásokat.
+* Nyomon követhetik a mobilalkalmazások használatát.
 
 Tapasztalataink szerint a „mobilalkalmazás-felügyelet” (MAM) kifejezést úgy is szokták használni, hogy csak külön utal a fent felsorolt tevékenységek valamelyikére, vagy a tevékenységek valamilyen kombinációjára. Gyakran előfordul például, hogy a felhasználók összevonják az alkalmazások konfigurálásának fogalmát a céges adatok mobilalkalmazásokon belüli védelmével. Ez azzal magyarázható, hogy egyes mobilalkalmazások olyan beállításokat is tartalmaznak, amelyekkel az adatvédelmi funkciók konfigurálhatók.
 

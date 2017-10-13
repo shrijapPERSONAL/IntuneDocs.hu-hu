@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
@@ -95,7 +95,7 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
     - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
 
      - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből.
-   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és **Felügyelt** üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
+   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és Felügyelt üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
 
    >[!NOTE]
    >Ha a **Felhasználói affinitás** a **Felhasználói affinitással** lehetőségre van állítva, vagy a **Felügyelt** üzemmód **ki** van kapcsolva, a rendszer letiltja a Megosztott iPad üzemmódot a regisztrációs profilban.

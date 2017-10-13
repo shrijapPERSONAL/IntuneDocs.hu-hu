@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c76ad3ea5a2fb7aafe7a40aa2e258a083c2d6c8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e7375e6670c15fe186f5e77876e7b46f9021ad9d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása
 
-A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgáltatásairól. Ezt annak érdekében tesszük, hogy javítsuk a termékeink, többek között a Céges portál, megbízhatóságát és teljesítményét. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A rendszergazdák nem tudják befolyásolni ezeknek az adatoknak a gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
+A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgáltatásairól. Ezt annak érdekében tesszük, hogy javítsuk a termékeink, többek között a Céges portál, megbízhatóságát és teljesítményét. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A cég informatikai támogatási szolgálata nem tudja befolyásolni ezeknek az adatoknak a gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudja módosítani.
 
 Ha szeretné kikapcsolni ezeknek az adatoknak a gyűjtését az Android-eszközén, nyissa meg a Céges portál alkalmazás **Használati adatok** beállítását.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

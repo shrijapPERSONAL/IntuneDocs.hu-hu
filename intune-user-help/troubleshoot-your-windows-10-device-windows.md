@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása
 Ha végrehajtotta a [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md) című témakörben leírt lépéseket, de mégsem tudja elérni munkahelyi vagy iskolai levelezését vagy fájljait, próbálkozzon a következő hibaelhárítási lépésekkel.
@@ -57,6 +57,6 @@ Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi va
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Hibaelhárítási lépések, ha ezt látja: „Munkahelyi vagy iskolai fiók beállítása”
 
-Ha a következő üzenetet látja:  __Nem találtunk a megadott felhasználónévvel egyező felügyeleti végpontot. Ellenőrizze, hogy helyesen írta-e be a felhasználónevét, és próbálkozzon újra. Ha ismeri a felügyeleti végpontja URL-címét, írja be.__, akkor próbálja ismét beírni a felhasználónevét és a jelszavát. Ha továbbra sem működik, ellenőrizze a rendszergazdával azt a webhelyet, amelyet a **Felügyeleti végpont** szövegmezőben meg kell adnia. Ez a webhely valószínűleg a következőhöz hasonlít: **www.azöncége.onmicrosoft.com**. 
+Ha a következő üzenetet látja:  __Nem találtunk a megadott felhasználónévvel egyező felügyeleti végpontot. Ellenőrizze, hogy helyesen írta-e be a felhasználónevét, és próbálkozzon újra. Ha ismeri a felügyeleti végpontja URL-címét, írja be.__, akkor próbálja ismét beírni a felhasználónevét és a jelszavát. Ha továbbra sem működik, ellenőrizze a cég informatikai támogatási szolgáltatásánál azt a webhelyet, amelyet a **Felügyeleti végpont** szövegmezőben meg kell adnia. Ez a webhely valószínűleg a következőhöz hasonlít: **www.azöncége.onmicrosoft.com**. 
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

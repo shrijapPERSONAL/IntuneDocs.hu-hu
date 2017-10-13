@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>iOS-eszköz regisztrálása az Intune-ban
 
@@ -52,9 +52,9 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének r
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
   > [!NOTE]
-  > A sárga háromszögek nem azt jelzik, hogy máris hiba történt. Az ikonok azt mutatják, hogy néhány lépés még hátravan a regisztráció folyamatából.
+  > A sárga háromszögek nem azt jelzik, hogy máris hiba történt. hanem azt mutatja, hogy néhány lépés még hátravan a regisztráció folyamatából.
 
-4. Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet/nem férhet hozzá a regisztrált eszközén, majd koppintson a **Folytatás** gombra.
+4. Tekintse át a listában, hogy a cég informatikai támogatási szolgálata milyen tartalmakhoz férhet/nem férhet hozzá a regisztrált eszközén, majd koppintson a **Folytatás** gombra.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ Ezzel megtörtént az eszköz Intune-beli regisztrálása, és a rendszer vissza
 > [!Note]
 > Az eszköz regisztrációjának befejezéséhez még néhány lépést végre kell hajtania. További információ a [távközlésiköltség-kezelőben való regisztrációról](enroll-your-device-with-telecom-expense-management-ios.md). Ha a cége az Apple Készülékregisztrációs programját használja, további információt [itt](enroll-your-device-dep-ios.md) találhat.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

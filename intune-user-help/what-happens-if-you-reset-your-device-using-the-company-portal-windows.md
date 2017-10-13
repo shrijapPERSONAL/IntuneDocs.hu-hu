@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Windows-eszközt a Vállalati portálon?
 
@@ -28,8 +28,8 @@ Ha a Vállalati portál alkalmazást vagy a [Vállalati portál webhelyet](reset
 
 |Eszközök konfigurálása és felügyelete|Eszköz típusa|
 |---------------------------------------|---------------|
-|A rendszergazda felügyeli a mobileszközt|**Windows 10 és Windows Phone 8.1**</br>Az eszköz nem jelenik meg többé a Vállalati portálon, és a Vállalati portál megpróbálja visszaállítani az eszközt a gyári alapértékekre. A rendszer eltávolítja a személyes adatait, alkalmazásait és beállításait. <br /><br />**Windows 10 Mobile**</br>Az eszköz regisztrációjának törlése kizárólag alaphelyzetbe állítással lehetséges.|
+|A cég informatikai támogatási szolgálata felügyeli a mobileszközt|**Windows 10 és Windows Phone 8.1**</br>Az eszköz nem jelenik meg többé a Vállalati portálon, és a Vállalati portál megpróbálja visszaállítani az eszközt a gyári alapértékekre. A rendszer eltávolítja a személyes adatait, alkalmazásait és beállításait. <br /><br />**Windows 10 Mobile**</br>Az eszköz regisztrációjának törlése kizárólag alaphelyzetbe állítással lehetséges.|
 |Az eszköz csak a vállalati e-mailekhez férhet hozzá.|**Windows Phone 8.1**<br />Az eszköz nem jelenik meg többé a Vállalati portálon, és a rendszer törli a vállalati e-mail-fiókját és a nem mentett e-maileket.<br /><br />**Windows 7 vagy Windows Vista**<br />Kizárólag e-mailek elérésére használt, Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.<br /><br />**Windows 8.1 és Windows 8**<br />Az eszköz nem jelenik meg többé a Vállalati portálon, és a rendszer törli a vállalati e-mail-fiókját és a nem mentett e-maileket.|
 |Számítógépek és laptopok|**Windows 8.1 és Windows 8**<br />Windows 8 vagy Windows 8.1 rendszert futtató számítógép nem állítható alaphelyzetbe, kivéve, ha kizárólag e-mailek elérésére használják.<br /><br />**Windows 7 vagy Windows Vista**<br />Windows 7 vagy korábbi operációs rendszert futtató számítógép nem állítható alaphelyzetbe.|
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

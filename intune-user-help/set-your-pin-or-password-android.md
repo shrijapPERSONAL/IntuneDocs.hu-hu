@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>PIN kód vagy jelszó beállítása
 
-Ha az Intune-t használva fér hozzá munkahelyi vagy iskolai adataihoz, a rendszergazda megkövetelheti, hogy állítson be PIN-kódot vagy jelszót az androidos eszközén. Elképzelhető, hogy olyan üzenetek jelennek meg, amelyek hosszabb vagy összetettebb PIN-kód vagy jelszó megadását kérik a fokozott biztonság érdekében. Ezeket a PIN-kódokat többek között arra használhatja, hogy a zárolási képernyőről érje el az eszközt.
+Ha az Intune-t használva fér hozzá munkahelyi vagy iskolai adataihoz, a cég informatikai támogatási szolgálata megkövetelheti, hogy állítson be PIN-kódot vagy jelszót az androidos eszközén. Elképzelhető, hogy olyan üzenetek jelennek meg, amelyek hosszabb vagy összetettebb PIN-kód vagy jelszó megadását kérik a fokozott biztonság érdekében. Ezeket a PIN-kódokat többek között arra használhatja, hogy a zárolási képernyőről érje el az eszközt.
 
 Az alábbi lépéseket követve állíthatja be a PIN-kódot vagy a jelszót.
 
@@ -33,4 +33,4 @@ Az alábbi lépéseket követve állíthatja be a PIN-kódot vagy a jelszót.
 2.  Állítsa be és erősítse meg az új jelszót.
 
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

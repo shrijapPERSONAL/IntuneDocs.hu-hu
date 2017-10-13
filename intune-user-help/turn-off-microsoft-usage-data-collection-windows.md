@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Az adatok Microsoft általi gyűjtésének kikapcsolása
 
-A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgáltatásairól. Ezt annak érdekében tesszük, hogy javítsuk a termékeink, többek között a Céges portál, megbízhatóságát és teljesítményét. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A rendszergazdák nem tudják befolyásolni ezeknek az adatoknak a gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudják módosítani.
+A Microsoft automatikusan gyűjt bizonyos adatokat a termékeiről és szolgáltatásairól. Ezt annak érdekében tesszük, hogy javítsuk a termékeink, többek között a Céges portál, megbízhatóságát és teljesítményét. Annak ellenére, hogy ezek az adatok anonimok, előfordulhat, hogy néhány felhasználó nem járul hozzá ezek gyűjtéséhez. A cég informatikai támogatási szolgálata nem tudja befolyásolni ezeknek az adatoknak a gyűjtését, és az adatgyűjtésre vonatkozó felhasználói beállítást sem tudja módosítani.
 
 Ha szeretné kikapcsolni a használati adatok gyűjtését a Windows-eszközén, keresse meg a Céges portál alkalmazásban a **Használati adatok** beállítást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

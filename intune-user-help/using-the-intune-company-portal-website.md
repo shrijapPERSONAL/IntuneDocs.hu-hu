@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Az Intune vállalati portál webhelyének használata
 A [Munkahelyi portál webhelye](https://portal.manage.microsoft.com) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
@@ -39,10 +39,10 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
 -   [Manuálisan szinkronizálhatja az eszközt az alkalmazástelepítés felgyorsítása érdekben](sync-your-device-manually-cpwebsite.md)
 
--   Megkeresheti a rendszergazda elérhetőségét, ha be vannak állítva ezek az adatok
+-   Megkeresheti a cég informatikai támogatási szolgálatának elérhetőségét, ha be vannak állítva ezek az adatok
 
 -   Megtekintheti az eszköz adatait, beleértve azt is, hogy az eszköz megfelel-e a munkahelye vagy iskolája házirendjeinek
 
 -   Távoli kapcsolat segítségével kezelheti a számítógépét (a lehetőség csak személyi számítógépek esetében működik)
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
