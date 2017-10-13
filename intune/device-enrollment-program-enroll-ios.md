@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -30,6 +30,9 @@ Ez a témakör az Apple [készülékregisztrációs programja (DEP)](https://dep
 DEP-regisztráció engedélyezéséhez az Intune- és az Apple DEP-portált is használnia kell. Ahhoz, hogy az eszközök felügyeletét az Intune-hoz rendelhesse, szükség van a sorozatszámok vagy a beszerzési rendelésszámok listájára. Olyan DEP-regisztrációs profilokat hoz létre, amelyek tartalmazzák a regisztráció során az eszközre vonatkozó beállításokat.
 
 A DEP-regisztráció egyébként nem működik az [eszközregisztráció-kezelővel](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>A felügyelt mód ismertetése
+Az Apple az iOS 5-tel vezette be a felügyelt módot. A felügyelt módon futtatott iOS-eszközök (készülékek) működése nagyobb mértékben felügyelhető. Így kifejezetten hasznos céges tulajdonú készülékek üzemeltetése esetén. Az Intune az Apple készülékregisztrációs program (DEP) keretében biztosít lehetőséget az eszközök felügyelt módú üzemeltetésének beállítására. 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 
 5. Megjelenik a **Hozzáadás:&lt;Kiszolgálónév&gt;** párbeszédablak, és kéri **a nyilvános kulcs feltöltését**. Kattintson a **Choose File…** (Fájl kiválasztása…) elemre a .pem-fájl feltöltéséhez, majd válassza a **Next** (Tovább) lehetőséget.
 
-6.  Az **Add &lt;Kiszolgálónév&gt;** (<Kiszolgálónév> hozzáadása) párbeszédpanelen megjelenik a **Your Server Token** (Az Ön kiszolgálói jogkivonata) hivatkozás. Töltse le a kiszolgálói jogkivonatfájlt (.p7m) a számítógépre, majd válassza a **Done**(Kész) lehetőséget.
 
 7. Válassza a **Deployment Programs** (Telepítési programok) &gt; **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Devices** (Eszközök kezelése) lehetőséget.
 8. Az **Eszközök kiválasztásának szempontja** alatt adja meg az eszközök azonosításának módját:
@@ -103,7 +105,7 @@ Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gomb
 Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt a DEP-eszközökhöz. A regisztrálás során az eszközök csoportjára alkalmazott beállításokat egy készülékregisztrációs profil határozza meg.
 
 1. Az Azure-beli Intune-portálon válassza az **Eszközök regisztrálása** > **Apple-regisztráció** elemet.
-2. Az **Apple készülékregisztrációs programon** belül válassza a **Készülékregisztrációs programbeli profilok ** > **Létrehozás** elemet.
+2. Az **Apple készülékregisztrációs programon** belül válassza a **Készülékregisztrációs programbeli profilok**  > **Létrehozás** elemet.
 3. A **Regisztrációs profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
   A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül kívánja-e regisztrálni.
@@ -115,7 +117,10 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 4. Az **Eszközfelügyeleti beállítások** lehetőség választásával konfigurálja a következő profilbeállításokat:
 
   ![Képernyőkép ‒ Felügyeleti mód kiválasztása. Az eszköz a következő beállításokkal rendelkezik: Felügyelt, Zárolt regisztráció és Párosítás engedélyezése „Az összes elutasítása” értékkel. Az Apple Configurator-tanúsítványok lehetőség új regisztrációs programprofiloknál szürkén jelenik meg.](./media/enrollment-program-profile-mode.png)
-    - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
+    - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek. A felügyelt módú üzemeltetés lehetővé tételéhez a Microsoft a DEP használatát javasolja, különösen olyan szervezeteknél, amelyeknél nagy mennyiségű iOS-eszközt használnak.
+
+ > [!NOTE]
+ > Regisztráció után már nem lehet az eszközöket felügyelt módra állítani az Intune-t használva. Ha a regisztráció már megtörtént, az iOS-eszközt egy USB-kábelt használva össze kell kötni egy Mac számítógéppel, és az Apple Configuratort használva engedélyezni kell rajta a felügyelt módot. Ennek hatására a rendszer először alaphelyzetbe állítja az eszközt, majd beállítja rajta a felügyelt módot. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat. A felügyelt készülékeken meg fog jelenni az „Ezt az iPhone-t a Contoso kezeli.” felirat a zárolási képernyőn, valamint az „Ez egy felügyelt iPhone. A Contoso figyelheti az internetes forgalmat és megállapíthatja a készülék helyét.” figyelmeztetés. a **Beállítások** > **Általános** > **Névjegy** menüpontban.
 
     - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül.
 
@@ -146,6 +151,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
         - **Diagnosztikai adatok**
 
     Válassza a **Mentés** elemet.
+
 9. A profilbeállítások mentéséhez a **Regisztrációs profil létrehozása** panelen kattintson a **Létrehozás** elemre. A regisztrációs profil megjelenik az Apple Regisztrációs Program Regisztrációs profillistájában.
 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
