@@ -1,11 +1,11 @@
 ---
-title: "A Skycure által talált fenyegetések elhárítása iOS rendszeren | Microsoft Docs"
-description: 
+title: "Symantec Endpoint Protection Mobile for iOS által észlelt fenyegetések elhárítása | Microsoft Docs"
+description: "Megtudhatja, hogyan hárítsa el az iOS-eszközön észlelt fenyegetéseket."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cdb0106da1d81843f7dd07d0986d597b94a77c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>El kell hárítania a Skycure által azonosított fenyegetést
+# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
-A Skycure potenciális fenyegetést talált az Ön eszközén. Csak akkor férhet ismét hozzá vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, ha elhárította a problémát. A következőhöz hasonló üzenetet fog látni:
+A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell oldania ezt a problémát. A következőhöz hasonló üzenetet fog látni:
 
-![„Nincs megfelelés” üzenet a Lookout from Worktől](./media/ios-skycure-noncompliant-in-ssp.png)
+![Symantec Endpoint Protection Mobile által küldött, megfelelőség hiányát jelző üzenet](./media/ios-skycure-noncompliant-in-ssp.png)
 
-A probléma elhárításához nyissa meg a Skycure alkalmazást, és kövesse az alkalmazásban megjelenő utasításokat.
+A probléma megoldásához nyissa meg a Symantec Endpoint Protection Mobile alkalmazást, és kövesse az ott megjelenő utasításokat.
 
 ## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Mi látható, ha a regisztrált eszköz e-mailekhez és fájlokhoz való hozzáférése le van tiltva?
 
@@ -34,14 +34,15 @@ Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés talá
 
 ![A Skycure hibaüzenete és hivatkozás a Céges portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](http://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
 
-## <a name="example-of-an-app-that-skycure-sees-as-a-threat"></a>Példa a Skycure által fenyegetésként észlelt alkalmazásra
+## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile által fenyegetésként észlelt alkalmazás – példa
 
-Ha olyan alkalmazást telepített, amely a Skycure szerint fenyegetést jelent, akkor a Skycure az alkalmazáson belül értesíti Önt.
+A Symantec Endpoint Protection Mobile alkalmazás saját felületén jelzi, ha Ön olyan alkalmazást telepített, amelyet fenyegetésnek észlel.
 
 Koppintson az alkalmazás nevére a képernyő tetején, és az utasítások alapján távolítsa el a fenyegetést.
 
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+
