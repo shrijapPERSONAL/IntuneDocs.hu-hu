@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: d9a7ba4e3a4c10919ba933cc59c8093bec3588db
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>A Céges portál alkalmazás frissítése
 
@@ -45,7 +45,7 @@ A Vállalati portál alkalmazás frissítése:
 2.  Hajtsa végre a telepítési lépéseket.
 
     > [!NOTE]
-    > Ha nem fér hozzá a Microsoft Áruházhoz, lépjen kapcsolatba a rendszergazdával.
+    > Ha nem fér hozzá a Microsoft Áruházhoz, lépjen kapcsolatba a cég informatikai támogatási szolgálatával.
 
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

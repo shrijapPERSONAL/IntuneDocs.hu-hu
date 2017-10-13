@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Munkahelyi profil létrehozása és eszköz regisztrálása az Intune-ban
 
-Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailjeihez, az alkalmazásaihoz és az egyéb munkahelyi adataihoz. A regisztráció részeként egy munkahelyi profilt állít be, amely elkülöníti az eszközön lévő személyes adatokat a munkahelyi adatoktól. A rendszergazdák csak a munkahelyi adatokat tartalmazó munkahelyi profilt kezelhetik. Az eszközön lévő személyes adatokhoz nem férhetnek hozzá. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
+Android-eszközének regisztrálásával hozzáférhet a vállalati e-mailjeihez, az alkalmazásaihoz és az egyéb munkahelyi adataihoz. A regisztráció részeként egy munkahelyi profilt állít be, amely elkülöníti az eszközön lévő személyes adatokat a munkahelyi adatoktól.
+
+A cég informatikai támogatási szolgálata csak a munkahelyi adatokat tartalmazó munkahelyi profilt kezelheti. Az eszközön lévő személyes adatokhoz nem férhet hozzá. Többet tudhat meg arról, hogy [mi történik a munkahelyi profil létrehozásakor](what-happens-when-you-create-a-work-profile-android.md).
 
 Munkahelyi profil létrehozása:
 
@@ -32,27 +34,27 @@ Munkahelyi profil létrehozása:
 
     ![Androidos Vállalati portál alkalmazás üdvözlőképernyője](./media/and-enroll-0-welcome-screen.png)
 
-2. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **KEZDÉS** gombra.
+2. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **FOLYTATÁS** elemre.
 
-    ![A Vállalati hozzáférés beállítása képernyő](./media/andr-afw-begin-company-access-setup.png)
+    ![A Vállalati hozzáférés beállítása képernyő](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  A **Miért hozzon létre munkahelyi profilt?** képernyőn olvassa el, mi mindent lesz képes megtenni, majd koppintson a **FOLYTATÁS** gombra.
 
     ![Miért hozzon létre munkahelyi profilt](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Tekintse át a listában, hogy a rendszergazda milyen tartalmakhoz férhet hozzá az eszközén, majd koppintson a **FOLYTATÁS** gombra.
+4.  Tekintse át a listában, hogy a cég informatikai támogatási szolgálata milyen tartalmakhoz férhet hozzá az eszközén, majd koppintson a **FOLYTATÁS** gombra.
 
-    ![Mit láthat a rendszergazda az eszközén, és mit nem](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![Mit láthat a cég informatikai támogatási szolgálata az eszközén, és mit nem](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  A **Mi a következő lépés?** képernyőn olvassa el, mi a következő lépés, majd koppintson a **REGISZTRÁCIÓ** elemre.
+5.  A **Következő lépések** képernyőn olvassa el, mi történik a regisztráció során, majd koppintson a **REGISZTRÁCIÓ** elemre.
 
-    ![A „Mi a következő lépés?” képernyő](./media/andr-afw-what-comes-next.png)
+    ![A következő lépések képernyő](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. A **Munkahelyi profil beállítása** képernyőn koppintson a **TOVÁBB** elemre ahhoz, hogy a Vállalati portál hozzáférhessen a munkahely profilhoz.
 
     ![Adjon hozzáférést a munkahelyi profilhoz a Vállalati portál alkalmazás számára](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Tekintse át a Google képernyőt, amely részletezi, hogy mit tehet a rendszergazda, ha létrehoz egy munkahelyi profilt, majd koppintson az **OK** gombra.
+7. Tekintse át a Google képernyőt, amely részletezi, hogy mit tehet a cég informatikai támogatási szolgálata, ha létrehoz egy munkahelyi profilt, majd koppintson az **OK** gombra.
 
     ![Tekintse át a Google információit a munkahelyi profilokról](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ Munkahelyi profil létrehozása:
 
     Rövid időre megjelenik a következő üzenet: "Eszköz regisztrálása folyamatban."
 
-11. Amikor a **Vállalati hozzáférés beállítása** képernyőn látja, hogy minden megfelelően be lett állítva, koppintson a **FOLYTATÁS** elemre.
+11. Ha a **Készen vagyunk!** képernyőn azt látja, hogy minden megfelelően be lett állítva, koppintson a **KÉSZ** elemre.
 
-    ![A Vállalati hozzáférés beállítása jelzi, hogy a munkahelyi profil beállítása és regisztrálása befejeződött](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. A **Vállalati hozzáférés beállítása befejeződött** képernyőn koppintson a **KÉSZ** elemre. Előfordulhat, hogy további lépések végrehajtása szükséges, ha a rendszergazda egyéb követelményeket szabott meg.
-
-    ![A Vállalati hozzáférés beállítása befejeződött](./media/andr-afw-company-access-setup-complete.png)
+    ![A Vállalati hozzáférés beállítása jelzi, hogy a munkahelyi profil beállítása és regisztrálása befejeződött](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     Most már beszerezheti a vállalati alkalmazásokat a Play Store for Work áruházból.
 
     ![Play Store for Work alkalmazások lap](./media/andr-afw-tap-work-play-store-icon.png)
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

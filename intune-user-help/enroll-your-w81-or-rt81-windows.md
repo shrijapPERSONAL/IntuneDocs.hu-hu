@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) témakörben.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Céges portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a cég informatikai támogatási szolgálata az eszközén, és mit nem?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) témakörben.
 
 
 Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása az Intune-ban:
@@ -45,7 +45,7 @@ Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása az Intune-ban:
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Jelölje be az **Alkalmazások és szolgáltatások engedélyezése az IT rendszergazdai felületről** párbeszédpanel **Elfogadom** négyzetét, majd koppintson a **Bekapcsolás** elemre.
+5.  Jelölje be az **Alkalmazások és szolgáltatások engedélyezése a cég informatikai támogatási szolgálatának felületéről** párbeszédpanel **Elfogadom** négyzetét, majd koppintson a **Bekapcsolás** elemre.
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ Azt javasoljuk, hogy telepítse a Vállalati portál alkalmazást, mert azzal eg
 
 4.  Koppintson a **Telepítés** vagy az **Ingyenes** lehetőségre. Az, hogy melyik beállítás jelenik meg, attól függ, hogy a vállalat hogyan állította be az alkalmazást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

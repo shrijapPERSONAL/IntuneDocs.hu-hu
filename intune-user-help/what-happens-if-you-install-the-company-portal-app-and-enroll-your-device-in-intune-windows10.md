@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Mi történik a Vállalati portál alkalmazás telepítésekor és a Windows 10-eszköz Intune-beli regisztrálásakor?
 
@@ -34,22 +34,22 @@ Miután telepítette a Vállalati portál alkalmazást, és annak használatáva
 
 -   Ha elveszíti a telefonját, visszaállíthatja a gyári beállításait.
 
-A regisztrálás lépéseiért lásd: [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md). A [Milyen adatokhoz jut hozzá a rendszergazda, ha regisztrálom az eszközömet az Intune-ban?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) című szakaszból megtudhatja, hogy a rendszergazda mit láthat az eszközén.
+A regisztrálás lépéseiért lásd: [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md). A [Milyen adatokhoz jut hozzá a cég informatikai támogatási szolgálata, ha regisztrálom az eszközömet az Intune-ban?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) című szakaszból megtudhatja, hogy a cég informatikai támogatási szolgálata mit láthat az eszközén.
 
 Számítógép hozzáadásakor:
 
--   Olyan szoftverek települnek a számítógépre, amelyek lehetővé teszik a rendszergazda számára a számítógép felügyeletét, Önnek pedig a különböző vállalati erőforrások, például alkalmazások és támogatási információk elérését. A rendszergazda automatikusan frissítheti ezeket a szoftvereket.
+-   Olyan szoftverek települnek a számítógépre, amelyek lehetővé teszik a cég informatikai támogatási szolgálata számára a számítógép felügyeletét, Önnek pedig a különböző vállalati erőforrások, például alkalmazások és támogatási információk elérését. A cég informatikai támogatási szolgálata automatikusan frissítheti ezeket a szoftvereket.
 
 -   Lehetséges, hogy az Intune Endpoint Protection is települ a számítógépre. Ez egy vírusok és kártevő szoftverek elleni védelmi alkalmazás.
 
--   A rendszergazda leltárt készíthet a számítógépre telepített szoftverekről, ideértve az Ön által személyes használatra telepített szoftvereket is.
+-   A cég informatikai támogatási szolgálata leltárt készíthet a számítógépre telepített szoftverekről, ideértve az Ön által személyes használatra telepített szoftvereket is.
 
 -   Elképzelhető, hogy el kell fogadnia a vonatkozó használati feltételeket.
 
--   A rendszergazda adatokat gyűjthet a számítógép merevlemezéről, illetve adatokat törölhet róla. A rendszergazda akár a merevlemez teljes tartalmát is törölheti.
+-   A cég informatikai támogatási szolgálata adatokat gyűjthet a számítógép merevlemezéről, illetve adatokat törölhet róla. A cég informatikai támogatási szolgálata akár a merevlemez teljes tartalmát is törölheti.
 
--   A rendszergazda alkalmazásokat és frissítéseket telepíthet a számítógépre.
+-   A cég informatikai támogatási szolgálata alkalmazásokat és frissítéseket telepíthet a számítógépre.
 
--   A rendszergazda szabályzatokat léptethet életbe a számítógépen. Például előfordulhat, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen. A rendszergazda azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót a számítógépről, vagy letörölheti a számítógép merevlemezén lévő összes adatot, ha túl sokszor próbálkozott.
+-   A cég informatikai támogatási szolgálata szabályzatokat léptethet életbe a számítógépen. Például előfordulhat, hogy jelszót vagy PIN-kódot kell beállítania a számítógépen. A cég informatikai támogatási szolgálata azt is korlátozhatja, hogy hányszor lehet helytelen jelszót megadni, és kizárhatja a felhasználót a számítógépről, vagy letörölheti a számítógép merevlemezén lévő összes adatot, ha túl sokszor próbálkozott.
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
@@ -48,4 +48,4 @@ A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés
 
 8. A Mac-eszköz ekkor elkezdi a felügyeletre való regisztrálást. Előfordulhat, hogy a művelet időtartama alatt a rendszer a számítógépre vonatkozó bejelentkezési adatok megadására kéri. A regisztrációs folyamat igénybe vehet néhány percet. Ezalatt végezhet egyéb műveleteket a számítógépen. A Vállalati hozzáférés beállításának befejezése után megjelenő üzenet a folyamat lezárulásáról tájékoztat.
 
-További segítségre van szüksége? Érdeklődjön munkahelye rendszergazdájától. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com).

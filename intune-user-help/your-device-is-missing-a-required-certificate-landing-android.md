@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Az eszközhöz hiányzik egy szükséges tanúsítvány
 
@@ -30,12 +30,12 @@ A [kriptográfia](https://technet.microsoft.com/library/cc962030.aspx) az inform
 
 ## <a name="fixing-certificate-issues"></a>Tanúsítványproblémák elhárítása
 
-Ha az androidos eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, a rendszergazda által kért tanúsítvány, nem fog tudni bejelentkezni a Munkahelyi portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
+Ha az androidos eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, a cég informatikai támogatási szolgálata által kért tanúsítvány, nem fog tudni bejelentkezni a céges portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
 
 ![képernyőfelvétel-hibaüzenet-hiányzó-tanúsítványról](./media/andr-cert_install-1-cert_missing.png)
 
 Az első lépésként ellenőrizze, hogy eszközén [hiányzik-e egy olyan tanúsítvány, amely rendszerint előre telepített](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Ha ez nem hoz eredményt, a rendszergazda [a fokozott biztonság érdekében második tanúsítvány telepítésre kötelezheti](your-device-is-missing-an-IT-required-certificate-android.md).
+Ha ez nem hoz eredményt, a cég informatikai támogatási szolgálata [a fokozott biztonság érdekében második tanúsítvány telepítésre kötelezheti](your-device-is-missing-an-IT-required-certificate-android.md).
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

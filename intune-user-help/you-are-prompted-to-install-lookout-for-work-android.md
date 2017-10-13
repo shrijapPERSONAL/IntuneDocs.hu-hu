@@ -1,11 +1,11 @@
 ---
 title: "Telepítenie kell a Lookout for Work alkalmazást a Windows-eszközön | Microsoft Docs"
-description: 
+description: "Ismerje meg a Lookout for Work telepítési módját Androidon."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9e0ea429a6fd68bf984f814d512f9e5a8b327358
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-lookout-for-work"></a>Telepítenie kell a Lookout for Work alkalmazást
+# <a name="install-lookout-for-work"></a>A Lookout for Work telepítése
 
-A rendszergazda csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
+A cég informatikai támogatási szolgálata csak a Lookout for Work alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez a szolgáltatás az esetleges biztonsági fenyegetések felderítésével segít az eszköz védelmében.
 
 Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasható hibaelhárítási lépéseket.
 
-**A következőket kell tennie:**
+## <a name="what-you-need-to-do"></a>A következőket kell tennie:
 
 1.  Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Lookout for Work telepítése a Play Áruházból** gombra.
 
@@ -70,8 +70,10 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
   Ha a Lookout for Work biztonsági fenyegetést talál eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
 
-**Ha sikertelen a telepítés**
+## <a name="if-the-installation-doesnt-work"></a>Ha sikertelen a telepítés
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a Lookout for Work alkalmazást [manuálisan telepíteni a Play Áruházból](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+

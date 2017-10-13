@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6a2a14548a57e26fe322d0c28cb515e6590acb69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Az Android-eszköze operációs rendszerének verziója még nem élvez támogatást
 
-Mivel a technológia rendkívül gyors ütemben fejlődik, előfordulhat, hogy az Ön által használt eszköz olyan modern, hogy a rendszergazdának még nem volt lehetősége tesztelni. Ez azt jelenti, hogy az Android legújabb verziója esetleg nem fog tudni együttműködni a vállalati eszközökkel.
+Mivel a technológia rendkívül gyors ütemben fejlődik, előfordulhat, hogy az Ön által használt eszköz olyan modern, hogy a cég informatikai támogatási szolgálatának még nem volt lehetősége tesztelni. Ez azt jelenti, hogy az Android legújabb verziója esetleg nem fog tudni együttműködni a vállalati eszközökkel.
 
-Ebben az esetben forduljon a rendszergazdához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ebben az esetben forduljon a cég informatikai támogatási szolgálatához, és kérjen segítséget a probléma megoldásában. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

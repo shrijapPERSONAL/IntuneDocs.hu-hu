@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a808f9030053b1aee571dbde9bba01d5d503a8a2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Sérült biztonságú iOS-készülék újracsatlakoztatása
 
-A rendszergazda azt észlelte, hogy Ön egy feltört eszközt használ. A „feltört” vagy „jailbreakelt” állapot azt jelenti, hogy az eszközt bizonyos kritikus fontosságú fájlok korlátlan elérése érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve.
+A cég informatikai támogatási szolgálata azt észlelte, hogy Ön egy feltört eszközt használ. A „feltört” vagy „jailbreakelt” állapot azt jelenti, hogy az eszközt bizonyos kritikus fontosságú fájlok korlátlan elérése érdekében módosították, ami kedvezőtlenül befolyásolhatja a biztonságot, és fenyegetést jelenthet a vállalati erőforrásokra nézve.
 
-Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a céges erőforrásokhoz, és a rendszergazdától kell segítséget kérnie. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha ez történik, az adott eszköz a továbbiakban nem férhet hozzá a céges erőforrásokhoz, és a cég informatikai támogatási szolgálatától kell segítséget kérnie. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

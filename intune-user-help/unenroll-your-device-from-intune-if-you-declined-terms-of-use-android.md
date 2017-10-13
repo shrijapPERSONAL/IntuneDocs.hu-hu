@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b99ce8b30e25960e09e39b81f0f58aa09af2affa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d96619693c879d7e3041b6554363bea58f6792a5
+ms.sourcegitcommit: 659fe1b08eb7f02bc7eaed6b9e21a95fa1ef45b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Az eszköz regisztrációjának törlése, ha nem fogadta el a használati feltételeket
 
@@ -40,4 +40,4 @@ Az eszköz Intune-regisztrációjának törlése és a Vállalati portál alkalm
 
     Most már eltávolíthatja a Vállalati portál alkalmazást.
 
-További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [Céges portál webhelyén](https://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

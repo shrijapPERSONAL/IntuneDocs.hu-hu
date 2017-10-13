@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Az androidos eszközhöz hiányzik egy, a rendszergazda által kért tanúsítvány
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Az androidos eszközhöz hiányzik egy, a cég informatikai támogató szolgálata által kért tanúsítvány
 
-Ha az eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, a rendszergazda által kért tanúsítvány, nem fog tudni bejelentkezni a Céges portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
+Ha az eszköz nincs regisztrálva az Intune-ban, és hiányzik róla egy, a cég informatikai támogatási szolgálata által kért tanúsítvány, nem fog tudni bejelentkezni a Céges portál alkalmazásba. Amikor megpróbál bejelentkezni, a következő üzenet jelenik meg:
 
 ![képernyőfelvétel-hibaüzenet-hiányzó-tanúsítványról](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Azonosítsa a hiányzó tanúsítványt azáltal, hogy megtekinti egy vállalati vagy iskolai számítógépen
 
-1. Nyissa meg egy számítógépen az Internet Explorert. Ha nincs erre a célra használható számítógépe, forduljon a rendszergazdához. A rendszergazda elérhetőségét a [Céges portál webhelyén](http://portal.manage.microsoft.com) találja.
+1. Nyissa meg egy számítógépen az Internet Explorert. Ha nincs erre a célra használható számítógépe, forduljon a cég informatikai támogató szolgálatához. A cég informatikai támogató szolgálatának elérhetőségét a [Céges portál webhelyén](https://portal.manage.microsoft.com) találja.
 
-2. Lépjen a [Céges portál webhelyére](http://portal.manage.microsoft.com), és jelentkezzen be a munkahelyi vagy iskolai fiókjával.
+2. Lépjen a [Céges portál webhelyére](https://portal.manage.microsoft.com), és jelentkezzen be a munkahelyi vagy iskolai fiókjával.
 
 3. A böngésző címsorának jobb szélén válassza az alábbi képernyőképen látható, lakat alakú szimbólumot.
 
     ![képernyőfelvétel-internet-explorer-címsor-lakat-szimbólum](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    Ha nem látja a lakat alakú szimbólumot, ne lépjen tovább, hanem forduljon a rendszergazdához. A lakat azt jelenti, hogy biztonságosan jelentkezett be, ezért ha nem látja a szimbólumot, nem javasolt a továbblépés.
+    Ha nem látja a lakat alakú szimbólumot, ne lépjen tovább, hanem forduljon a cég informatikai támogató szolgálatához. A lakat azt jelenti, hogy biztonságosan jelentkezett be, ezért ha nem látja a szimbólumot, nem javasolt a továbblépés.
 
 4. Válassza a **Tanúsítványok megtekintése** elemet.
 
@@ -67,6 +67,6 @@ A probléma megoldásához és a szükséges tanúsítvány beszerzéséhez hajt
 
 6. Zárja be a Céges portál alkalmazást.
 
-7. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a rendszergazdával.
+7. Nyissa ismét meg a Céges portál alkalmazást. Ekkor már be kell, hogy tudjon jelentkezni a Céges portál alkalmazásba. Ha segítségre van szüksége, lépjen kapcsolatba a cég informatikai támogató szolgálatával.
 
-Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a rendszergazda segítségével telepíteni kell. Kérje a rendszergazda segítségét a [Céges portál webhelyen](http://portal.manage.microsoft.com) található elérhetőségeken.
+Ha ugyanazt a „Hiányzó tanúsítvány” üzenetet látja, mint amelyik fentebb is látható, és már követte a fenti lépéseket, akkor valószínűleg egy másik tanúsítvány is van, amelyet a cég informatikai támogató szolgálatának segítségével telepíteni kell. Kérje a cég informatikai támogató szolgálatának segítségét a [Céges portál webhelyen](https://portal.manage.microsoft.com) található elérhetőségeken.

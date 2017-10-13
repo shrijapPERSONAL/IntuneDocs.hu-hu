@@ -1,5 +1,5 @@
 ---
-title: "Hibák elküldése a rendszergazdának | Microsoft Docs"
+title: "Hibák elküldése a cég informatikai támogatási szolgálatának | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Hibák elküldése a rendszergazdának az iOS-eszköz problémái alapján
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Hibák elküldése a cég informatikai támogatási szolgálatának az iOS-eszköz problémái alapján
 
-Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás használata során, a probléma megoldása végett elküldheti a rendszergazdának kapcsolódó információkat. Ez többféleképpen is lehetséges:
+Ha hibaüzenet jelenik meg az iOS-eszközön a céges portál alkalmazás használata során, a probléma megoldása érdekében a kapcsolódó információkat elküldheti a cég informatikai támogatási szolgálatának. Ez többféleképpen is lehetséges:
 
 -   A hibáról értesítő üzenetben koppintson a **Jelentés** elemre.
 
@@ -32,4 +32,4 @@ Ha hibaüzenet jelenik meg az iOS-eszközön a Vállalati portál alkalmazás ha
 
 -   A Céges portál alkalmazásban rázza meg az eszközt, és a diagnosztikai riasztás megjelenésekor koppintson a **Diagnosztikai jelentés küldése** elemre. Ha nem jelenik meg a riasztás az eszköz megrázása után, a **Beállítások** > **Céges portál** beállításnál ellenőrizze, hogy be van-e kapcsolva a **Rázó kézmozdulat** beállítás.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

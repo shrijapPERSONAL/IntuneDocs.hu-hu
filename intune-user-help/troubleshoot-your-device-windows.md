@@ -15,20 +15,20 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 483b2155c2f1935a5b0d79b84ab65db1f9fc182d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>A Windows-eszközök gyakori problémáinak elhárítása
 
-Időnként előfordulhatnak problémák a Windows-eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a rendszergazdához a [Céges portál webhelyen](https://portal.manage.microsoft.com) található elérhetőségén.
+Időnként előfordulhatnak problémák a Windows-eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://portal.manage.microsoft.com) található elérhetőségen.
 
 - [Nem tudom regisztrálni a Windows 10-es eszközömet](troubleshoot-your-windows-10-device-windows.md)
 - [Frissítenem kell windowsos eszközömet](you-need-to-update-your-windows-device.md)
-- [Naplókat kell küldenem a rendszergazdának a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
-- [Naplókat kell küldenem a rendszergazdának a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md)
+- [Naplókat kell küldenem a cég informatikai támogatási szolgálatának a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
+- [Naplókat kell küldenem a cég informatikai támogatási szolgálatának a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md)
 - [A Windows verziója jelenleg még nem támogatott](your-windows-version-isnt-yet-supported.md)
 - [Engedélyeznem kell a Windows titkosítást](you-need-to-enable-windows-encryption.md)
 - [Eszközömnek kártevőirtó szoftverre van szüksége](your-device-needs-antimalware-software.md)

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android-eszköz megfelelőségének ellenőrzése
 
@@ -30,4 +30,4 @@ Ha az eszköz egy ideje nem jelentkezett be az Intune-ba, előfordulhat, hogy ne
 
 2. **Ellenőrizze a megfelelőséget**.
 
-Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a rendszergazdát, hogy állítsa alaphelyzetbe. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha nem tudja alaphelyzetbe állítani elveszett vagy ellopott eszközét, kérje meg a cég informatikai támogatási szolgálatát, hogy állítsa alaphelyzetbe. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

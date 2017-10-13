@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
@@ -33,8 +33,8 @@ Munkahelye rendszergazdái láthatják a munkával kapcsolatos adatokat, de a sz
 ## <a name="how-do-i-get-the-company-portal"></a>Hogyan szerezhetem be a Céges portált?
 A Vállalati portált kétféleképpen szerezheti be:
 
-- Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a rendszergazda is telepítheti Önnek azt.
-- Megnyithatja a rendszergazdája által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com).
+- Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
+- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com).
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
 A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
@@ -54,9 +54,9 @@ A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladato
 - [A Munkahelyi portál webhely használata](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Mi történik, ha hozzáadok egy számítógépet vagy egy eszközt a Vállalati portálhoz?
-Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően). Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi a rendszergazdának az eszköz felügyeletét.
+Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, előfordulhat, hogy települ néhány szoftver, vagy letöltődik egy alkalmazás (eszköztől függően). Egyúttal az eszközön található vállalati információk védelme céljából engedélyezi a cég informatikai támogató szolgálatának az eszköz felügyeletét.
 
-Ha meg szeretné tudni, hogy a rendszergazda mit lát az eszközén, kövesse a használt eszköz típusának megfelelő hivatkozást:
+Ha meg szeretné tudni, hogy a cég informatikai támogató szolgálata mit lát az eszközén, kövesse a használt eszköz típusának megfelelő hivatkozást:
 
 - [A Céges portál alkalmazás telepítése Android rendszerű eszközön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [A Céges portál alkalmazás telepítése iOS és macOS rendszerű eszközökön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ A Microsoft azt javasolja, hogy először próbálja meg saját maga megoldani a
 - [Az iOS-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-ios.md)
 - [A Windows-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 
-Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a rendszergazdához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com).
+Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a cég informatikai támogató szolgálatához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com).

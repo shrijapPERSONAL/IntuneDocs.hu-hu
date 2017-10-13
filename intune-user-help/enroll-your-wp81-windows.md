@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: c7ac377cd3bc958440d191bd45ea5062acdb7647
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1-eszköz regisztrálása az Intune-ban
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a rendszergazda az eszközén, és mit nem?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) témakörben.
+Ha munkahelye vagy iskolája a Microsoft Intune-t használja, eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati erőforrásaihoz. Ha regisztrálja az eszközeit, azzal a szervezete megóvhatja a vállalati adatokat. További információk a regisztrációval kapcsolatban: [Mi történik a Céges portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), illetve [Mit láthat a cég informatikai támogatási szolgálata az eszközén, és mit nem?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) témakörben.
 
 
 Az Phone 8.1 rendszerű eszköznek az Intune-ban való regisztrálásához kövesse a vállalatára vagy iskolájára érvényes utasításokat:
@@ -82,6 +82,6 @@ Regisztrálja az eszközt:
 
 4.  Ha a rendszer kéri a vállalati alkalmazás vagy központ telepítését, jelölje be a megfelelő jelölőnégyzetet, majd koppintson a **kész** gombra.
 
-Ha a rendszergazda úgy állította be a Vállalati portál alkalmazást, hogy az a regisztráció során települjön, a Vállalati portál megjelenik az alkalmazáslistában.
+Ha a cég informatikai támogatási szolgálata úgy állította be a Céges portál alkalmazást, hogy az a regisztráció során települjön, a Céges portál megjelenik az alkalmazáslistában.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

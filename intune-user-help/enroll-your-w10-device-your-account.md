@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 rendszerű eszköz regisztrálása az Intune-ban
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Jelentkezzen be](./media/W10-enroll-4-sign-in.png)
 
-Még mindig nem fér hozzá a munkahelyi vagy iskolai e-mailjeihez, fájljaihoz vagy egyéb adataihoz? Próbálja meg helyrehozni a hozzáférést a [fiókjával kapcsolatos hibák elhárításával](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Ha még mindig nem működik a hozzáférés, forduljon a rendszergazdához további segítségért.
+Még mindig nem fér hozzá a munkahelyi vagy iskolai e-mailjeihez, fájljaihoz vagy egyéb adataihoz? Próbálja meg helyrehozni a hozzáférést a [fiókjával kapcsolatos hibák elhárításával](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Ha még mindig nem működik a hozzáférés, további segítségért forduljon a cég informatikai támogatási szolgálatához.
 
-A Céges portál alkalmazásban elérhető kapcsolattartási adatokon keresztül könnyedén segítséget kérhet a rendszergazdától, emellett a Céges portálon megtalálhatja és letöltheti a napi munkájához ajánlott és szükséges alkalmazásokat is. Lehetséges, hogy a Céges portál alkalmazás már telepítve van az eszközén. Ha az __Összes alkalmazás__ listában szerepel a __Céges portál__, akkor Ön már rendelkezik az alkalmazással.
+A Céges portál alkalmazásban elérhető kapcsolattartási adatokon keresztül könnyedén segítséget kérhet a cég informatikai támogatási szolgálatától, emellett a Céges portálon megtalálhatja és letöltheti a napi munkájához ajánlott és szükséges alkalmazásokat is. Lehetséges, hogy a Céges portál alkalmazás már telepítve van az eszközén. Ha az __Összes alkalmazás__ listában szerepel a __Céges portál__, akkor Ön már rendelkezik az alkalmazással.
 
 Ha a vállalati portál nem jelenik meg az alkalmazáslistán, akkor a következő lépésekkel telepítheti.
 

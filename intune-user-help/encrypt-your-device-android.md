@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Androidos eszközök védelme titkosítással
 
 Egy eszköz titkosításakor a rajta lévő információt egy védelmi kódréteg veszi körül, amely megakadályozza, hogy illetéktelenek férjenek hozzá. Az információbiztonság érdekében a munkahelye az androidos eszközök titkosítását követeli meg Öntől, mielőtt hozzáférhetne a vállalati fájlokhoz, e-mailekhez és adatokhoz.
 
 > [!Note]
-> Ha a rendszergazda ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
+> Ha a cég informatikai támogatási szolgálata ezt kéri, előfordulhat, hogy egy PIN-kódot vagy jelszót kell beállítania a titkosítás megkezdése előtt.
 
 Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
@@ -52,7 +52,7 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
 - Ellenőrizze, hogy az eszköz fel van-e töltve és csatlakoztatva van-e.
 - Ellenőrizze, hogy beállított-e PIN-kódot vagy jelszót az eszközön.
-- Ha már beállította a PIN-kódot vagy jelszót, próbálkozzon az alábbi lépésekkel, amelyeket a rendszergazda megkövetelhet az eszköz biztonságosabbá tételéhez. A lépésekben szereplő menünevek kissé eltérhetnek az eszközön láthatóaktól, attól függően, hogy milyen Android-eszközt használ.
+- Ha már beállította a PIN-kódot vagy jelszót, próbálkozzon az alábbi lépésekkel, amelyeket a cég informatikai támogatási szolgálata megkövetelhet az eszköz biztonságosabbá tételéhez. A lépésekben szereplő menünevek kissé eltérhetnek az eszközön láthatóaktól, attól függően, hogy milyen Android-eszközt használ.
 
     1. Nyissa meg a **Settings** (Beállítások) > **Lock Screen and Security** (Zárolási képernyő és biztonság) > **Screen lock** (Képernyőzárolás) lapot. Erősítse meg jelenlegi PIN-kódját vagy jelszavát.
 
@@ -66,4 +66,4 @@ Ha megszünteti a telefonja regisztrációját, a titkosítás megmarad.
 
     6. Nyissa meg a Vállalati portál alkalmazást, jelölje ki az eszközét, és koppintson a **Megfelelőség ellenőrzése** elemre.
 
-További segítségre van szüksége? Forduljon a rendszergazdához (a kapcsolattartási adatokat a [Munkahelyi portál webhelyén](http://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához (a kapcsolattartási adatokat a [Céges portál webhelyén](https://portal.manage.microsoft.com) találja), vagy írjon a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-csapatának</a>.

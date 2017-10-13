@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>A vállalat virtuális magánhálózatának (VPN-jének) telepítése
 
-Ha a rendszergazda VPN-alkalmazást konfigurált, hogy a felhasználók hozzá tudjanak férni a vállalati erőforrásokhoz, akkor megjelenik egy értesítés az Android-eszközén, amely arról tájékoztatja, hogy telepítenie kell egy VPN-alkalmazást. Kövesse a következő lépéseket a VPN-alkalmazás telepítéséhez:
+Ha a cég informatikai támogatási szolgálata VPN-alkalmazást konfigurált, hogy a felhasználók hozzá tudjanak férni a vállalati erőforrásokhoz, akkor megjelenik egy értesítés az Android-eszközén, amely arról tájékoztatja, hogy telepítenie kell egy VPN-alkalmazást. Kövesse a következő lépéseket a VPN-alkalmazás telepítéséhez:
 
 1.  Húzza le az értesítési fiókot, és koppintson **A szükséges alkalmazás telepítéséhez koppintson ide.** elemre.
 
@@ -33,4 +33,4 @@ Ha a rendszergazda VPN-alkalmazást konfigurált, hogy a felhasználók hozzá t
 3.  Koppintson **A vállalati VPN-profil telepítéséhez koppintson ide** elemre, és kövesse az utasításokat. Előfordulhat, hogy a telepítési lépések némileg eltérnek – attól függően, hogy melyik VPN-szolgáltatót használja a vállalata.
 
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

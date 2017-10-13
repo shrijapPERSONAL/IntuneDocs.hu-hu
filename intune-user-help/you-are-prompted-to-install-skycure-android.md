@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,21 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
-ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
+ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Telepítenie kell a Symantec Endpoint Protection Mobile alkalmazást az Android-eszközön
+# <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>A Symantec Endpoint Protection Mobile alkalmazás telepítése Android-eszközön
 
 A cég informatikai támogató szolgálata csak a Symantec Endpoint Protection (SEP) Mobile alkalmazás telepítését követően teszi lehetővé, hogy hozzáférjen a munkájához. Ez az alkalmazás az esetleges fenyegetések felderítésével segíti az eszköz védelmét.
 
 Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasható hibaelhárítási lépéseket.
 
-**A következőket kell tennie:**
+## <a name="what-you-need-to-do"></a>A következőket kell tennie:
 
 1. Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Skycure telepítése a Play Áruházból** gombra. Ugyanez a Céges portál alkalmazásban is elérhető a __Megfelelőségi részletek__ között.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. Ekkor megnyílik a SEP Mobile telepítési lapja a Play Áruházban. Telepítse a SEP Mobile-t, majd az **ELFOGADÁS** elemre kattintva adjon hozzáférést a SEP Mobile-nak az eszközhöz.
 
@@ -46,20 +44,16 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 8. A SEP Mobile elindul, és azonnal elkezd biztonsági fenyegetéseket keresni az eszközén.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * Ha a SEP Mobile biztonsági fenyegetést talál az eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
 
-  Ha a SEP Mobile biztonsági fenyegetést talál az eszközén, megjeleníti a problémamegoldáshoz szükséges tudnivalókat.
+  * Ha nem talál fenyegetést, mindhárom veszélyforrástípus zölddel jelenik meg.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  Ha nem talál fenyegetést, mindhárom veszélyforrástípus zölddel jelenik meg.
-
-    A Céges portál **Eszköz adatai** képernyőjén látható, hogy az eszköz immár megfelel a cég biztonsági előírásainak.
+    * A Céges portál **Eszköz adatai** képernyőjén látható, hogy az eszköz immár megfelel a cég biztonsági előírásainak.
 
     ![Eszköze most már megfelel a szabályzatoknak](./media/mtd-device-now-compliant-android.png)
 
-**Ha sikertelen a telepítés**
+## <a name="if-the-installation-doesnt-work"></a>Ha sikertelen a telepítés
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a SEP Mobile alkalmazást [manuálisan telepíteni a Play Áruházból](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

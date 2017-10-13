@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Felügyelt alkalmazások használata iOS-eszközön
 
-A felügyelt alkalmazások olyan alkalmazások, amelyeket a rendszergazda beállíthat a rajtuk keresztül elérhető vállalati adatok védelme érdekében. Amikor iOS-es eszközön felügyelt alkalmazásban fér hozzá vállalati adatokhoz, észreveheti, hogy az alkalmazás a várttól kissé eltérően működik. Előfordulhat például, hogy nem tudja másolni és beilleszteni a védett vállalati adatokat, vagy nem tudja menteni az adatokat bizonyos helyekre.
+A felügyelt alkalmazások olyan alkalmazások, amelyeket a cég informatikai támogatási szolgálata beállíthat a rajtuk keresztül elérhető vállalati adatok védelme érdekében. Amikor iOS-es eszközön felügyelt alkalmazásban fér hozzá vállalati adatokhoz, észreveheti, hogy az alkalmazás a várttól kissé eltérően működik. Előfordulhat például, hogy nem tudja másolni és beilleszteni a védett vállalati adatokat, vagy nem tudja menteni az adatokat bizonyos helyekre.
 
 A különböző felügyelt alkalmazások együtt is működhetnek az eszközön annak érdekében, hogy el tudja végezni mindennapos feladatait, miközben a vállalati adatok védelméről is gondoskodnak. Ha például megnyit egy vállalati fájlt egy felügyelt alkalmazásban, és egy másik alkalmazásra van szükség a fájl megtekintéséhez, a szükséges alkalmazás automatikusan megnyílik. Ha egy szükséges alkalmazás nem érhető el, akkor előfordulhat, hogy bizonyos műveletek, például a dokumentumok vagy a felügyelt dokumentumokban található webes hivatkozások megnyitása nem végezhetők el.
 
@@ -35,14 +35,14 @@ Amikor felügyelt alkalmazásban fér hozzá vállalati adatokhoz, az alábbihoz
 ### <a name="how-do-i-get-managed-apps"></a>Hogyan szerezhetők be a felügyelt alkalmazások?
 Különböző módokon szerezhet be felügyelt alkalmazásokat:
 
--   Ha az eszköze regisztrálva van a Microsoft Intune-nal, akkor telepítheti az alkalmazást a Vállalati portál alkalmazásból vagy a Vállalati portál webhelyről, illetve a rendszergazda is telepítheti azt az eszközére. A regisztrálással kapcsolatban lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve [MacOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-macos.md).
+-   Ha az eszköze regisztrálva van a Microsoft Intune-nal, akkor telepítheti az alkalmazást a Céges portál alkalmazásból vagy a Céges portál webhelyről, illetve a cég informatikai támogatási szolgálata is telepítheti azt az eszközére. A regisztrálással kapcsolatban lásd: [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md), illetve [MacOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-macos.md).
 
 -   Alkalmazást telepíthet az App Store-ból is, majd bejelentkezhet az Intune által felügyelt vállalati felhasználói fiókjával.
 
-Egyes esetekben előfordulhat, hogy a rendszergazda egy telepített alkalmazáshoz több licencet is vásárol. Ha egy olyan üzenet jelenik meg, amely arra kéri, hogy fogadja el az Apple Volume Purchase Program szerződését, ez teljesen normális, és elfogadhatja. Ha nem fogadja el, nem fogja tudni telepíteni az alkalmazást.
+Egyes esetekben előfordulhat, hogy a cég informatikai támogatási szolgálata egy telepített alkalmazáshoz több licencet is vásárol. Ha egy olyan üzenet jelenik meg, amely arra kéri, hogy fogadja el az Apple Volume Purchase Program szerződését, ez teljesen normális, és elfogadhatja. Ha nem fogadja el, nem fogja tudni telepíteni az alkalmazást.
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>Mit felügyelhet a rendszergazda az alkalmazásokban?
-Itt talál néhány példát arra, hogy melyek lehetnek azok a rendszergazda által az alkalmazásokban felügyelt elemek, amelyek hatással lehetnek a vállalati adatok használatára az eszközön:
+### <a name="what-can-my-company-support-manage-in-an-app"></a>Mit felügyelhet a cég informatikai támogatási szolgálata az alkalmazásokban?
+Itt talál néhány példát arra, hogy melyek lehetnek azok a cég informatikai támogatási szolgálata által az alkalmazásokban felügyelt elemek, amelyek hatással lehetnek a vállalati adatok használatára az eszközön:
 
 -   Adott webhelyek hozzáférése
 
@@ -62,4 +62,4 @@ Itt talál néhány példát arra, hogy melyek lehetnek azok a rendszergazda ál
 
 -   Adattitkosítási követelmények
 
-Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba az informatikai rendszergazdájával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Az eszközén lévő felügyelt alkalmazásokról további információért lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

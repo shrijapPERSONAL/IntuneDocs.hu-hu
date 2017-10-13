@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Mi történik munkahelyi profil létrehozásakor
 
@@ -28,9 +28,9 @@ A munkahelyi profil beállításával az eszközön elkülönítheti a munkahely
 
 Ha munkahelyi profilt hoz létre:
 
-- Az eszközön a rendszergazda csak a munkával kapcsolatos e-maileket, alkalmazásokat, beállításokat és adatokat kezelheti, a személyes alkalmazásokat és adatokat nem.
+- Az eszközön a cég informatikai támogatási szolgálata csak a munkával kapcsolatos e-maileket, alkalmazásokat, beállításokat és adatokat kezelheti, a személyes alkalmazásokat és adatokat nem.
 
-- A munkahelyi alkalmazásokat a Play Store for Work áruházból kapja. Személyes alkalmazásait a szokott módon a Google Play áruházból szerezheti be. Személyes alkalmazásait a rendszergazda nem látja és nem kezelheti.
+- A munkahelyi alkalmazásokat a Play Store for Work áruházból kapja. Személyes alkalmazásait a szokott módon a Google Play áruházból szerezheti be. Személyes alkalmazásait a cég informatikai támogatási szolgálata nem látja és nem kezelheti.
 
 - A munkahelyi alkalmazások elkülönülnek a személyes alkalmazásaitól, ugyanakkor mindkét típus egyszerre jelenik meg a kezdőképernyőn. Az alábbi kép egy példa arra, hogy mit láthat. A tényleges képernyő ettől némileg különböző lehet.
 
@@ -38,9 +38,9 @@ Ha munkahelyi profilt hoz létre:
 
     ![Android Play Store for Work áruház](./media/afw-google-play-store-for-work.png)
 
-- Munkahelyi profiljának a társaság vagy az iskola a tulajdonosa, így rendszergazdája telepítheti vagy eltávolíthatja a munkahelyi alkalmazásait és profilját, azonban a személyes alkalmazásait és adatait nem.
-- A rendszergazda nem állíthatja alaphelyzetbe az eszközét és nem törölheti annak adatait.
+- Munkahelyi profiljának a társaság vagy az iskola a tulajdonosa, így a cég informatikai támogatási szolgálata telepítheti vagy eltávolíthatja a munkahelyi alkalmazásait és profilját, azonban a személyes alkalmazásait és adatait nem.
+- A cég informatikai támogatási szolgálata nem állíthatja alaphelyzetbe az eszközét és nem törölheti annak adatait.
 
 A munkahelyi profil létrehozásának lépéseiről itt olvashat: [Munkahelyi profil létrehozása és az eszköz regisztrálása](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

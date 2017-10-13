@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 32fef3aebacbc0144a7c387f3bfafbb20fd2c075
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dfcb60d16a4412c66c81db53ed5bbc9dd2b46bba
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Mi történik, ha törli iOS- vagy macOS-eszközének regisztrációját az Intune-ból?
 
@@ -42,4 +42,4 @@ Ha törli iOS- vagy macOS-eszközének regisztrációját az Intune-ból:
 
 A regisztráció törlését ismertető útmutatást lásd: [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md).
 
-Ha kérdése van, lépjen kapcsolatba a rendszergazdával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+Ha kérdése van, lépjen kapcsolatba a cég informatikai támogatási szolgálatával. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

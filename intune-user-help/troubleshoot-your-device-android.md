@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Androidos eszközök gyakori problémáinak elhárítása
 
-Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a rendszergazdához a [Céges portál webhelyen](http://portal.manage.microsoft.com) található elérhetőségén.
+Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban, melyek hibaelhárítással oldhatók meg. Az alábbiakban látható azon korábban tapasztalt gyakori problémák listája, amelyeket először megpróbálhat önállóan megoldani. Összetettebb problémák esetén javasoljuk, hogy forduljon a cég informatikai támogatási szolgálatához a [Céges portál webhelyen](https://portal.manage.microsoft.com) található elérhetőségen.
 
 - [Megfelelőség ellenőrzése androidos eszközökön](check-compliance-on-your-device-android.md)
-- [Az eszközproblémák rendszergazdai megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Naplók elküldése a rendszergazdának e-mailben](send-logs-to-your-it-admin-by-email-android.md)
-- [Naplók elküldése a rendszergazdának USB-kábelen keresztül](send-logs-to-your-it-admin-using-cable-android.md)
-- [Regisztrálási hibák elküldése a rendszergazdának](send-enrollment-errors-to-your-it-admin-android.md)
+- [Az eszközproblémák a cég informatikai támogatási szolgálata általi megoldásának támogatása részletes naplózással](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Naplók elküldése a cég informatikai támogatási szolgálatának e-mailben](send-logs-to-your-it-admin-by-email-android.md)
+- [Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül](send-logs-to-your-it-admin-using-cable-android.md)
+- [Regisztrálási hibák elküldése a cég informatikai támogatási szolgálatának](send-enrollment-errors-to-your-it-admin-android.md)
 - [Frissítenie kell Android-eszközét](you-need-to-update-your-android-device.md)
 - [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](your-android-version-isnt-yet-supported.md)
 - [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)

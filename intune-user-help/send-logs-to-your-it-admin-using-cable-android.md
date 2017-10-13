@@ -1,5 +1,5 @@
 ---
-title: "Naplók elküldése a rendszergazdának USB-kábelen keresztül | Microsoft Docs"
+title: "Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül | Microsoft Docs"
 description: "Adatnaplók elküldése USB-kábelen keresztül"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Naplók elküldése a rendszergazdának USB-kábelen keresztül
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül
 
-Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a rendszergazdának a hibával kapcsolatos információkat. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
+Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához a hibával kapcsolatos információkat e-mailben elküldheti a cég informatikai támogatási szolgálatának. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
 
 > [!Note]
-> A kezdés előtt győződjön meg arról, hogy kéznél van-e a rendszergazda e-mail-címe. Ez a [Céges portál webhelyén](http://portal.manage.microsoft.com) vagy a Céges portál alkalmazásban található meg.
+> A kezdés előtt ellenőrizze, hogy kéznél van-e a cég informatikai támogatási szolgálatának e-mail-címe. Ez a [Céges portál webhelyén](https://portal.manage.microsoft.com) vagy a Céges portál alkalmazásban található meg.
 
 1.  A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
 
@@ -35,6 +35,6 @@ Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás has
 
 3.  A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az **Androidos eszköz neve\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\mappát\**.
 
-4.  Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a rendszergazdának.
+4.  Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a cég informatikai támogatási szolgálatának.
 
-További segítségre van szüksége? Forduljon a rendszergazdához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](http://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
