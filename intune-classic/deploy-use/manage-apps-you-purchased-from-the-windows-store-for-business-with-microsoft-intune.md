@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4bac9ba7497b579d05318bd2d11829a44dbc482
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
@@ -54,7 +55,7 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 ## <a name="configure-synchronization"></a>A szinkronizálás konfigurálása
 
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
-2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés**  >  ** Windows** elemet, majd válassza a **Vállalati Áruház** elemet.
+2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés**  >   **Windows** elemet, majd válassza a **Vállalati Áruház** elemet.
 3. A **Vállalati Microsoft Áruház** lapon tegye a következőket:
  * Ha még nem tette meg, kattintson a Vállalati Microsoft Áruházba történő regisztráció hivatkozására.
  * Miután regisztrálta magát, válassza a **Szinkronizálás konfigurálása** elemet.
