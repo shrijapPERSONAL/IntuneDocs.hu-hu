@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
-ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
+ms.openlocfilehash: 76764155e66ab69b5428712dae8a860233acaeb6
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -70,8 +70,8 @@ Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell 
 * Mielőtt az iOS VPP-t az Intune-nal kezdené használni, távolítsa el a más mobileszköz-felügyeleti (MDM) megoldás használatával létrehozott összes meglévő VPP-felhasználói fiókot. Az Intune biztonsági okokból nem szinkronizálja ezeket a felhasználói fiókokat az Intune-ba. Az Intune csak az Intune által létrehozott adatokat szinkronizálja az Apple VPP szolgáltatásból.
 * Az Intune legfeljebb 256 VPP-token hozzáadását támogatja.
 * Az Apple készülékregisztrációs profil (DEP) program automatizálja a mobileszközök felügyeleti célú regisztrációját (MDM regisztrációját). A készülékregisztrációs profilt használva a vállalati eszközöket kézbevétel nélkül is be tudja állítani. A DEP programba ugyanazzal a programügynök-fiókkal tud regisztrálni, mint amit az Apple VPP-hez használt. Az [Apple Központi Telepítési Program](https://deploy.apple.com) oldalon felsorolt valamennyi program egyedi azonosítóval rendelkezik, amellyel nem lehet bejelentkezni az olyan Apple-szolgáltatásokba, mint amilyen például az iTunes áruház. 
+* Ha felhasználólicencelési modellel rendel hozzá VPP-alkalmazásokat a felhasználókhoz vagy eszközökhöz (felhasználói affinitással), minden egyes Intune-felhasználót társítani kell egy egyedi Apple ID-vel vagy egy e-mail-címmel, amikor az eszközükön elfogadják az Apple használati feltételeit. Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurálja azt a felhasználó egyedi Apple ID-jével vagy e-mail-címével. Az Apple ID vagy e-mail-cím és az Intune-felhasználó egyedi párt alkot, amely akár öt eszközön használható.
 * A VPP-token használata egyszerre csak egy Intune-fiókban támogatott. Nem használja újra ugyanazt a VPP-tokent több Intune-bérlőhöz.
-* Ha felhasználólicencelési modellel rendel hozzá VPP-alkalmazásokat a felhasználókhoz vagy eszközökhöz (felhasználói affinitással), minden egyes Intune-felhasználót társítani kell egy egyedi Apple ID-vel vagy egy e-mail-címmel, amikor az eszközükön elfogadják az Apple használati feltételeit. Ne használja az Apple Központi Telepítési Programhoz használt Apple-azonosítót. Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurálja azt a felhasználó egyedi Apple ID-jével vagy e-mail-címével. Az Apple ID vagy e-mail-cím és az Intune-felhasználó egyedi párt alkot, amely akár öt eszközön használható.
 
 >[!IMPORTANT]
 >Miután a VPP-tokent az Intune-ba importálta, ne importálja ugyanezt a tokent egy másik eszközfelügyeleti megoldásba. Ez a licenc-hozzárendelések és a felhasználói rekordok elvesztését eredményezheti.
