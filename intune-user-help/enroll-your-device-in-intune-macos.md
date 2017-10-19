@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,34 +13,31 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>macOS-eszköz regisztrálása az Intune-ban
 
 Munkájának elvégzéséhez hozzá kell férnie munkahelyének alkalmazásaihoz, adataihoz és erőforrásaihoz. Ha macOS-eszközt használ a munkahelyén, akkor ez egy __felügyeleti profil__ telepítését követeli meg. Ez egyszerűen egy olyan fájl, amelyet a cég informatikai támogatási szolgálata állított össze, és betölti a beállításokat és a hozzáférési adatokat a Mac gépre. Szeretne még többet megtudni? Ebben a cikkben elolvashatja, [mi történik a Céges portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-
-  > [!NOTE]
-  > Ha valójában egy iOS-eszközt (iPhone-t vagy iPadet) szeretne regisztrálni, [ezt az útmutatást kövesse](enroll-your-device-in-intune-ios.md).
 
 1. A __Dock__ területén keresse meg a __Safari__ böngészőt, nyisson meg egy új ablakot, majd keresse fel a [Munkahelyi portál webhelyét](https://portal.manage.microsoft.com).
 2. Jelentkezzen be a Munkahelyi portál webhelyre a munkahelyi vagy az iskolai fiókjával.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Bejelentkezés után látni fogja az elérhető __Kezdőlap__, __Alkalmazások__ és __Kategóriák__ lapokat. Ezen a lapon jelennek meg a telepítéshez rendelkezésre álló alkalmazások. Ha még nincs regisztrált eszköze, a következő figyelmeztetés jelenik meg: **Nem lehet megjeleníteni alkalmazásokat.** Lépjen tovább a __Saját eszközök__ elem kiválasztásával.
+3. Bejelentkezés után kattintson az oldal jobb felső sarkában található **Menü**re, és válassza a **Saját eszközök** elemet.
 
  ![Képernyőkép a webes portál kezdőlapjáról, amelyen látható, hogy még nincsenek telepíthető alkalmazások. Alul a Saját eszközök gomb jelenik meg.](./media/macOS_enroll_001_landing_page.png)
 
-4. A __Saját eszközök__ lapon a regisztrált eszközök listája vagy egy szalagcím látható. A megjelenített tartalom attól függ, hogy Önnek van-e már macOS vagy egyéb rendszerű regisztrált eszköze. A listán nem szereplő eszközök regisztrálásához válassza a következő feliratú szalagcímet: __Ha az eszköz szerepel a listán, koppintson ide az azonosításhoz. Akkor is koppintson ide, ha a listán nem szereplő eszközt szeretne regisztrálni__.
+4. A __Saját eszközök__ lapon a regisztrált eszközök listája vagy egy szalagcím látható. A megjelenített tartalom attól függ, hogy Önnek van-e már macOS vagy egyéb rendszerű regisztrált eszköze. A listán nem szereplő eszközök regisztrálásához válassza a következő feliratú szalagcímet: __Ha az eszköz szerepel a listán, koppintson ide az azonosításhoz. Akkor is koppintson ide, ha a listán nem szereplő eszközt szeretne regisztrálni__. Ha nincs regisztrált eszköze, a szalagcímen ez a szöveg lesz látható: **Önnek nincsenek regisztrált eszközei. Ezt az eszközt ide kattintva regisztrálhatja.**
 
-  ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+  ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
 5. Megjelenik egy másik előugró ablak, amely röviden elmagyarázza, hogy miért kell __azonosítania vagy regisztrálnia ezt az eszközt__. Olvassa el, majd lépjen tovább a __Regisztrálás__ gombra kattintva.
 
@@ -64,5 +61,7 @@ Munkájának elvégzéséhez hozzá kell férnie munkahelyének alkalmazásaihoz
 9. A Mac további üzeneteket is megjeleníthet a profil részleteiről, illetve arról, hogy biztosan __telepíti__-e. Lépjen tovább az üzenetek __Continue__ (Folytatás) és __Install__ (Telepítés) gombjára kattintva. A telepítés befejeződése után láthatja az újonnan telepített __felügyeleti profilt__ az __eszközprofilok__ listájában.
 
  ![A telepített macOS-profil](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+Előfordulhat, hogy egyes profilok a jelzésük szerint **Nem ellenőrzött** állapotúak. Ha ezek a saját cégétől származnak, akkor ez nem jelent problémát.
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com).

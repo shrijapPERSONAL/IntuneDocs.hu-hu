@@ -4,20 +4,20 @@
   - Apple iOS 9.0 vagy újabb verziók
   - Mac OS X 10.9 és újabb verziók
 
-### <a name="windows"></a>Windows
+### <a name="google"></a>Google
+  - Android 4.4 és újabb (beleértve a Samsung KNOX Standard 4.4-es és újabb verzióit is) *
+  - Android for Work ([követelmények](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
+
+### <a name="microsoft"></a>Microsoft
   - Windows 10 (Home, S, Pro, Education és Enterprise verzió)
   - Windows 10 mobil verzió
   - Windows 10 IoT Enterprise rendszerű eszközök (x86, x64)
   - Windows 10 IoT Enterprise Mobile rendszerű eszközök
   - Windows Holographic és Windows Holographic Enterprise
   - Windows Phone 8.1, Windows 8.1 RT és Windows 8.1-et futtató PC-k (fenntartási módban)
-  
-  Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (Azure AD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-### <a name="google"></a>Google
-- Google Android 4.0 és újabb verziók (beleértve a Samsung KNOX Standard 4.0-s és újabb verzióit is)*
-- Google Android for Work ([követelmények](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
+Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (Azure AD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-A következő Samsung Galaxy Ace-modelleket az Intune nem képes Samsung KNOX Standard-eszközként kezelni: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY és SM-G313U. Ezeket az eszközöket a rendszer szabványos Android-eszközökként kezeli. További tájékoztatást a [Samsung KNOX](https://www.samsungknox.com/en) webhelyén talál.
+* Az ellenőrzött Samsung KNOX Standard-eszközök teljes listája megtalálható az [Android és Samsung KNOX Standard-eszközök konfigurációs szabályzatának beállításai](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices) témánál.
 
 Az eszközök és a felügyeleti metódusok teljes listája [Az Intune által támogatott eszközök](/intune/supported-devices-browsers#intune-supported-devices) című cikkben található.

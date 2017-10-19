@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -53,7 +53,7 @@ Mivel ezek a lehetőségek nem kezelhetők egyszerre az Intune- (Silverlight-) k
 - letiltja őket a klasszikus portálon
 - engedélyezi őket az Azure Portalon  
 
-2017. szeptember 11-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra 2017. szeptember 11. és 22. között kerül sor. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-portálon való letiltásától számítva akár hat óráig is eltarthat.
+2017. szeptember 22-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra már korábban sor kerülhetett. Ha nem ez a helyzet, akkor ezeknek a lehetőségeknek az Azure-ba való migrálása novemberig megtörténik. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-portálon való letiltásától számítva akár hat óráig is eltarthat.
 
 Ha a továbbiakban ezeket az Intune-lehetőségeket az Azure Portalon kezeli, vegye figyelembe az alábbi pontokat:
 

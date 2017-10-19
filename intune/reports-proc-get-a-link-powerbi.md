@@ -5,7 +5,7 @@ keywords: "Intune-adattárház"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -34,13 +34,13 @@ A Power BI-hoz letölthető egy fájl, amellyel az Intune-bérlőhöz kapcsolód
   -  Szoftverfrissítések
   -  Eszközleltár-naplók
 
-A jelentésekben szerepelnek továbbá a regisztrálásokra, a megfelelőségre, az eszközkonfigurációs profilokra és a szoftverfrissítésekre vonatkozó adatok és trendek. A mintadiagramok és a jelentések könnyen használható szűrőket alkalmaznak a megjelenítésnél. A Power BI Desktop **Szűrők** paneljének használatával speciális szűrőket is alkalmazhat. 
+A jelentésekben szerepelnek továbbá a regisztrálásokra, a megfelelőségre, az eszközkonfigurációs profilokra és a szoftverfrissítésekre vonatkozó adatok és trendek. A mintadiagramok és a jelentések könnyen használható szűrőket alkalmaznak a megjelenítésnél. A Power BI Desktop **Szűrők** paneljének használatával speciális szűrőket is alkalmazhat.
 
 Az alábbiakban bemutatjuk, hogyan töltheti le a Power BI-fájl, és hogyan használhatja az OData-hivatkozást a Power BI-vel.
 
 ## <a name="install-power-bi"></a>A Power BI telepítése
 
-Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) webhelyről töltheti le. 
+Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) webhelyről töltheti le.
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Az adatok és jelentések betöltése a Power BI-fájl (pbix) használatával
 
@@ -54,7 +54,7 @@ A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatla
 3.  Kattintson a **Download PowerBI file** (Power BI-fájl letöltése) elemre. Adjon meg egy helyet a pbix kiterjesztésű fájl letöltéséhez, és töltse le a fájlt.
 4.  Nyissa meg a fájlt a Power BI-ben. Betöltődik az *Intune-beli adattárház-jelentés*, ami a bérlő adatainak betöltésétől függően hosszabb ideig is eltarthat.
 5.  Ahhoz, hogy az adatok betöltődjenek, és a bérlőadatok megjelenjenek a jelentésekben, kattintson a **Frissítés** elemre.
-6.  Ha a Power BI-hoz nem az Azure Active Directory-hez tartozó hitelesítő adatait használta, a Power BI kérni fogja a hitelesítő adatokat. Az adatok megadásához hitelesítő módszerként válassza a **Szervezeti fiók** lehetőséget.
+6.  Ha a Power BI-hoz nem az Azure Active Directory-hez tartozó hitelesítő adatait használta, a Power BI kérni fogja a hitelesítő adatokat. Az adatok megadásához hitelesítő módszerként válassza a **Munkahelyi fiók** lehetőséget.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Adatok betöltése a Power BI-be az OData-hivatkozás használatával
 
@@ -69,7 +69,7 @@ Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud a
 7. Írja be vagy másolja be az **OData-URL-t** az URL mezőbe.
 8. Kattintson az **OK**gombra.
 9. Ha a Power BI Desktop-ügyfélben nem adta meg az Azure AD-s hitelesítő adatait, most adja meg azokat.  
-    1.  Válassza a **Szervezeti fiók** lehetőséget.  
+    1.  Válassza a **Munkahelyi fiók** lehetőséget.  
     2.  Adja meg felhasználónevét és jelszavát.  
     3.  Kattintson a **Bejelentkezés** elemre.  
     4.  Kattintson a **Csatlakozás**gombra.  
@@ -80,5 +80,5 @@ Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud a
 A fenti módszerrel olyan információkat kaphat a környezetről, mint például a regisztrált eszközök száma az elmúlt egy hétben napi bontásban. Az Intune-os adattárház Azure-panelről beszerezhető Power BI-fájljának (pbix) használatával készült jelentésekből a bérlőről és az ügyfelekről kaphat részletes információkat. Ezen kívül azonban az Intune számos további lehetőséget is kínál az adatok bővítésére vagy újbóli felhasználására. A Power BI és az Intune adattárház-API-jának használatával még sok más lehetőség is rendelkezésére áll, többek között:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
- -  A bérlő adatai olyan módon vannak felépítve, hogy azokból egyszerűen lehessen információhoz jutni. Az adatok felépítéséről az [Adattárház adatmodellje](reports-ref-data-model.md) című témakörben tájékozódhat. 
+ -  A bérlő adatai olyan módon vannak felépítve, hogy azokból egyszerűen lehessen információhoz jutni. Az adatok felépítéséről az [Adattárház adatmodellje](reports-ref-data-model.md) című témakörben tájékozódhat.
  -  Egy RESTful interfészről is elérheti az adatokat, és belefoglalhatja azokat a saját alkalmazásába. További információért lásd [Adatok beolvasása az adattárház API-ból REST-ügyféllel](reports-proc-data-rest.md).
