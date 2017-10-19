@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddb9b939b695f8612c02a2a25f4670e28c556c44
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
+ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -44,4 +44,4 @@ Ezután a következő lépések egyikével tudhat meg többet az alkalmazásokr�
 ## <a name="monitor"></a>Figyelő
 
 - **Eszköz telepítési állapota** – Részletes információt biztosít minden egyes eszközről, amelyhez hozzárendelte a kiválasztott alkalmazást, beleértve az eszköz nevét, operációs rendszerét, az utolsó Intune-ba való bejelentkezés időpontját és az alkalmazás telepítésének állapotát.
-- **Felhasználó telepítési állapota** – Részletes információt biztosít minden felhasználóról, amelyhez hozzárendelte a kiválasztott alkalmazást, beleértve az alkalmazás a felhasználó eszközein lévő telepítéseinek számát és az esetleges telepítési hibák adatait.
+- **Felhasználó telepítési állapota** – Részletes információt biztosít minden felhasználóról, akikhez hozzárendelte a kiválasztott alkalmazást, beleértve az alkalmazás a felhasználó eszközein lévő telepítéseinek számát és az esetleges telepítési hibák adatait.

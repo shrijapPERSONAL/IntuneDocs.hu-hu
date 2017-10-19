@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Úgy tűnik, hogy az androidos eszköze titkosított, de a Céges portál nem így gondolja
 
@@ -39,6 +39,15 @@ Egyes Android-eszközök indítási PIN-kód létrehozását teszik kötelezőv�
 ### <a name="downgrade-your-version-of-android"></a>Az Android alacsonyabb verzióra való visszaléptetése
 
 Ha az eszköz felkínálja az Android egy alacsonyabb, 6.0-s vagy újabb verziójára való visszalépés lehetőségét, használja azt. Amennyiben egy alacsonyabb verzióra való visszalépést kell megkísérelni az eszközön, az adatvesztési kockázattal jár. Ellenkező esetben javasoljuk, hogy a probléma megoldásához lépjen kapcsolatba a cég informatikai támogató szolgálatával. A cég informatikai támogató szolgálatának kapcsolattartási adatait a [Céges portál webhelyen](https://portal.manage.microsoft.com) a kapcsolattartási adatoknál találja.
+
+### <a name="encrypt-the-entire-device"></a>A teljes eszköz titkosítása
+
+Egyes eszközök esetében választható a teljes eszköz titkosítása vagy csak a használatban lévő tárterület titkosítása. A „csak a használatban lévő tárterület titkosítása” lehetőség helyett válassza a teljes eszköz titkosítását. Ha már megtörtént a csak a használatban lévő tárterület titkosítása:
+
+1. [Távolítsa el ezt az eszközt a Céges portálról](unenroll-your-device-from-intune-android.md)
+2. Fejtse vissza a használatban lévő tárterületet
+3. Titkosítsa a teljes eszközt
+4. Regisztrálja újra az eszközt
 
 ## <a name="specific-manufacturer-issues"></a>Gyártóspecifikus problémák
 

@@ -62,6 +62,7 @@
 ### [iOS-eszköz regisztrálása](enroll-your-device-in-intune-ios.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása a Céges portálon](enroll-your-device-in-intune-macos-cp.md)
+### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
 
 ### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 ### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)

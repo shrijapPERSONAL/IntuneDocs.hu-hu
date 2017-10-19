@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -51,7 +51,7 @@ Managed Browser-szabályzatokat a következő eszköztípusokhoz hozhat létre:
 -   iOS 8.0 vagy újabb rendszerű eszközök
 
 >[!IMPORTANT]
->2017 októberétől az Intune Managed Browser alkalmazás Androidon kizárólag az Android 4.4-es vagy újabb rendszerű eszközöket fogja támogatni. Az Intune Managed Browser alkalmazás iOS-en kizárólag az iOS 9.0-s vagy újabb rendszerű eszközöket fogja támogatni.
+>2017 októberétől az Intune Managed Browser alkalmazás Androidon kizárólag az Android 4.4-es vagy újabb rendszerű eszközöket támogatja. Az Intune Managed Browser alkalmazás iOS-en kizárólag az iOS 9.0-s vagy újabb rendszerű eszközöket fogja támogatni.
 >Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
 
 
@@ -64,10 +64,10 @@ Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerekt
 3.  A felügyeleti lista **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 4.  Az **Alkalmazáskonfigurációs szabályzatok** panelen kattintson a **Hozzáadás** lehetőségre.
 5.  Az **Alkalmazáskonfiguráció hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
-6.  Az **Eszközregisztráció** típusaként válassza a **Nem az Intune-nal regisztrált** lehetőséget.
+6.  Az **Eszközregisztráció típusa** lehetőség megadásához válassza a **Felügyelt eszközök** vagy a **Felügyelt alkalmazások** lehetőséget.
 7.  Válassza a **Kötelező alkalmazások kiválasztása** elemet, majd a **Célalkalmazások** panelen válassza a **Managed Browser** lehetőséget iOS-hez, Androidhoz vagy igény szerint mindkettőhöz.
 8.  Az **OK** kiválasztásával visszatérhet az **Alkalmazáskonfiguráció hozzáadása** panelre.
-9.  Kattintson a **Konfigurációs beállítások** elemre. A **Konfigurálás** panelen kulcs-érték párok definiálásával adhatja meg a Managed Browserhez szükséges konfigurációkat. A jelen témakör későbbi részeiben további információt talál a definiálható kulcs-érték párokról.
+9.  Kattintson a **Konfigurációs beállítások** elemre. A **Konfigurálás** panelen kulcs-érték párok definiálásával adhatja meg a Managed Browserhez szükséges konfigurációkat. A jelen cikk későbbi részeiben további információt talál a definiálható kulcs-érték párokról.
 10. Ha elkészült, válassza az **OK** elemet.
 11. Az **Alkalmazáskonfiguráció hozzáadása** panelen válassza a **Létrehozás** elemet.
 12. Ezzel létrejön az új konfiguráció, és megjelenik az **Alkalmazáskonfiguráció** panelen.
@@ -127,6 +127,7 @@ Ezzel a beállítással konfigurálhatók a Managed Browser felhasználói szám
 
 - Ezeket a könyvjelzőket a felhasználók nem törölhetik és nem módosíthatják
 - Ezek a könyvjelzők a lista tetején jelennek meg. A felhasználók által készített könyvjelzők ezek alá kerülnek.
+- Ha engedélyezte az alkalmazásproxy-átirányítást, akkor alkalmazásproxyval rendelkező webalkalmazásokat akár belső, akár külső URL-cím használatával is hozzáadhat.
 
 A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
@@ -161,20 +162,20 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
     -   HTTPS – 443-as port
 
-    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;** és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
+    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;* *és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
 
 -   Az alábbi táblázat az URL-címek megadásakor használható mintákat ismerteti:
 
 |URL-cím|Részletek|Egyezik|Nem egyezik|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Egyetlen lapnak felel meg|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Egyetlen lapnak felel meg|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Az összes www.contoso.com karakterlánccal kezdődő URL-cím|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|A contoso.com összes altartománya|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Egyetlen mappa|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Egyetlen lap, amely portszámot használ|http://www.contoso.com:80|
-    |https://www.contoso.com|Egyetlen biztonságos lap|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Egyetlen mappa és annak összes almappája|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|Egyetlen lapnak felel meg|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|Egyetlen lapnak felel meg|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|Az összes www.contoso.com karakterlánccal kezdődő URL-cím|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|A contoso.com összes altartománya|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|Egyetlen mappa|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|Egyetlen lap, amely portszámot használ|http://www.contoso.com:80|
+|https://www.contoso.com|Egyetlen biztonságos lap|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|Egyetlen mappa és annak összes almappája|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   Az alábbi példák nem engedélyezett beviteleket szemléltetnek:
 
@@ -200,8 +201,6 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Biztonság és adatvédelem a Managed Browser használatánál
 
--   Az IOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
-
 -   A Managed Browser nem használja a felhasználók eszközein futó beépített böngésző egyedi beállításait. Ezekhez a beállításokhoz a Managed Browser nem fér hozzá.
 
 -   Ha engedélyezi az **Egyszerű PIN-kód megkövetelése a hozzáféréshez** vagy a **Vállalati hitelesítő adatok megkövetelése a hozzáféréshez** beállítást a Managed Browser böngészőhöz hozzárendelt alkalmazásvédelmi szabályzatban, és a felhasználó a hitelesítési lapon a súgóhivatkozásra kattint, bármely internetes webhelyet elérhet, függetlenül attól, hogy azok hozzá lettek-e adva a felügyeltböngésző-szabályzat blokklistájához.
@@ -214,3 +213,14 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
 
 
+-   Az IOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
+-   A Managed Browser nem használja a felhasználók eszközein futó beépített böngésző egyedi beállításait. Ezekhez a beállításokhoz a Managed Browser nem fér hozzá.
+
+-   Ha engedélyezi az **Egyszerű PIN-kód megkövetelése a hozzáféréshez** vagy a **Vállalati hitelesítő adatok megkövetelése a hozzáféréshez** beállítást a Managed Browser böngészőhöz hozzárendelt alkalmazásvédelmi szabályzatban, és a felhasználó a hitelesítési lapon a súgóhivatkozásra kattint, bármely internetes webhelyet elérhet, függetlenül attól, hogy azok hozzá lettek-e adva a felügyeltböngésző-szabályzat blokklistájához.
+
+-   A Managed Browser csak akkor képes blokkolni a hozzáférést a webhelyekhez, ha azokat közvetlenül érik el. Nem blokkolja a hozzáférést, ha a felhasználó köztes szolgáltatások (például egy fordítási szolgáltatás) használatával éri el a webhelyet.
+
+-   A hitelesítés lehetővé tétele és az Intune-dokumentáció elérése érdekében a **&#42;.microsoft.com** mentesül az engedélyezési és blokkolási beállítások alól, és mindig engedélyezve van.
+
+### <a name="turn-off-usage-data"></a>A használatra vonatkozó adatok kikapcsolása
+A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
