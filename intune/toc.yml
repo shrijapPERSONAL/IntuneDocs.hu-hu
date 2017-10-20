@@ -536,6 +536,8 @@
       items:
         - name: Kapcsolódás az adattárházhoz a Power BI használatával
           href: reports-proc-get-a-link-powerbi.md
+        - name: Jelentés készítése az OData-adatcsatornából a Power BI használatával
+          href: reports-proc-create-with-odata.md
 - name: Automatizálás és testreszabás
   items:
     - name: Egyéni eszközbeállítások konfigurálása
