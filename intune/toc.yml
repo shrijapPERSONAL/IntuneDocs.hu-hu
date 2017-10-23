@@ -162,6 +162,8 @@
               href: windows-enroll.md
             - name: Csoportos regisztráció
               href: windows-bulk-enroll.md
+            - name: Windows AutoPilot üzembe helyezési program
+              href: enrollment-autopilot.md
         - name: Az androidos eszközök regisztrálásának beállítása
           href: android-enroll.md
         - name: iOS-eszközök regisztrálásának beállítása
@@ -601,11 +603,9 @@
               href: reports-ref-devices.md
             - name: Alkalmazás-entitások referencia
               href: reports-ref-application.md
-            - name: Szabályzat típusú entitások referenciája
-              href: reports-ref-policy.md
+            - name: Segédlet a felhasználói eszköztársítások entitáshoz
+              href: reports-ref-userdeviceassociations.md
     - name: Windows-alkalmazások közvetlen telepítése
-      href: app-sideload-windows.md
-    - name: Az Intune Graph API-k használata
       href: intune-graph-apis.md
       items:
         - name: Referenciainformációk az Intune Graph API-khoz
