@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: Szerepkörök kezelése
       href: role-based-access-control.md
+    - name: Operációs rendszer verziószámainak kezelése
+      href: manage-os-versions.md
     - name: Szoftverfrissítések kezelése
       href: windows-update-for-business-configure.md
     - name: Számítógépek kezelése szoftveres ügynökkel
