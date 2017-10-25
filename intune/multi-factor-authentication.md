@@ -46,7 +46,7 @@ Ha meg szeretné követelni a többtényezős hitelesítést a regisztráció so
 1. Jelentkezzen be a [Microsoft Azure Portálra](https://portal.azure.com) a hitelesítő adataival.
 2. A portálon válassza az **Azure Active Directory** lehetőséget.
 2. Az **Azure Active Directoryban** válassza a **Kezelés** > **Vállalati alkalmazások** pontot.
-3. A **Vállalati alkalmazások** lapon válassza a **Kezelés ** > **Minden alkalmazás** pontot. Megjelenik az Ön által kezel összes Azure-alkalmazást tartalmazó lista.
+3. A **Vállalati alkalmazások** lapon válassza a **Kezelés**  > **Minden alkalmazás** pontot. Megjelenik az Ön által kezel összes Azure-alkalmazást tartalmazó lista.
 3. A listáról válassza a **Microsoft Intune-regisztráció** elemet.
 4. A **Microsoft Intune-ban** válassza a **Biztonság** > **Feltételes hozzáférés** elemet.
 5. Válassza az **Új szabályzat** lehetőséget.
