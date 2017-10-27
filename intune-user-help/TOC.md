@@ -26,6 +26,7 @@
 
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
+#### [Outlook-e-mailek szinkronizálása takarékos üzemmódban](power-saving-mode-android.md)
 
 #### Problémák megoldása naplók segítségével
 ##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

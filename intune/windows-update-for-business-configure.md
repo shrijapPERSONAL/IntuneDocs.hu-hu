@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -29,7 +29,7 @@ A Windows 10 rendszerű eszközök frissítésére a Windows szoftverszolgáltat
 A Vállalati Windows Update használatával egyszerűbbé válik a frissítések kezelése, így nem szükséges külön jóváhagyni az egyes frissítéseket az eszközcsoportokhoz. A különböző környezetekben továbbra is kezelhetők a kockázatok egy frissítéstelepítési stratégia konfigurálásával, és a Windows Update gondoskodik a frissítések megfelelő időpontban történő telepítéséről. A Microsoft Intune lehetővé teszi a frissítési beállítások konfigurálását az eszközökön és a frissítések telepítésének késleltetését. Az Intune nem tárolja a frissítéseket, csak a frissítési szabályzat-hozzárendelést. Az eszközök közvetlenül a Microsoft Update-hez fordulnak a frissítésekért. A **Windows 10 frissítési körök** az Intune használatával konfigurálhatók és kezelhetők. A frissítési kör olyan beállításokat tartalmaz, amelyek a Windows 10 frissítések telepítésének ütemezését és mikéntjét konfigurálják. Megadhatja például a következő beállításokat:
 
 - **Windows 10 karbantartási ág**: Kiválasztható, hogy az eszközcsoportok az aktuális ág vagy az aktuális üzleti ág frissítéseit kapják meg.  
-- **Halasztó beállítások**: A frissítéseket halasztó beállítások megadásával késleltethető a frissítések telepítése az eszközcsoportokon. A lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
+- **Halasztó beállítások**: A frissítéseket halasztó beállítások megadásával késleltethető a frissítések telepítése az eszközcsoportokon. Ezzel a beállítással a lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
 - **Felfüggesztés**: A frissítések telepítésének felfüggesztése, ha a frissítési terv bármely pontján probléma merülne fel.
 - **Karbantartási időszak**: Megadható egy időszak, amelyben a frissítések telepíthetők.
 - **Frissítés típusa**: Megadható, hogy milyen típusú frissítések települjenek. Ezek lehetnek például a minőségi frissítések, funkciófrissítések vagy illesztőprogramok.
@@ -103,14 +103,35 @@ Az új frissítési kör megjelenik a frissítési körök listájában.
 2. A következő lapon válassza a **Csoportok kijelölése** lehetőséget, majd jelölje ki a csoportokat, amelyekhez hozzá kívánja rendelni ezt a kört.
 3. Ha kész, válassza a **Kijelölés** lehetőséget a hozzárendelés befejezéséhez.
 
-
-
 ## <a name="update-compliance-reporting"></a>Frissítés-megfelelőségi jelentés
+A frissítés-megfelelőség nyomon követhető az Intune-ban vagy az Operations Management Suite (OMS) ingyenes megoldása, az Update Compliance segítségével.
+
+### <a name="review-update-compliance-in-intune"></a>Frissítés-megfelelőség ellenőrzése az Intune-ban 
+<!-- 1352223 -->
+A szabályzatjelentésben ellenőrizheti a konfigurált Windows 10-es frissítési körök telepítési állapotát. 
+1. Jelentkezzen be az Azure Portalra.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza a **Szoftverfrissítések** lehetőséget.
+4. A **Szoftverfrissítések** panelen válassza az **Áttekintés** elemet. Itt általános információkat találhat minden hozzárendelt frissítési kör állapotáról.
+5. Nyissa meg az alábbi jelentések valamelyikét: 
+     
+   **Minden frissítési körhöz:**
+   1. A **Szoftverfrissítések** > **Windows 10-es frissítési körök** panelen. 
+   2. A **Figyelés** szakaszban válassza a **Frissítési körönkénti telepítési állapot** lehetőséget.
+                   
+   **Meghatározott frissítési körökhöz:** 
+   1. A **Szoftverfrissítések** > **Windows 10-es frissítési körök** panelen válassza a megtekinteni kívánt frissítési kört.
+   2. Az adott frissítési kör adatainak megtekintéséhez a **Figyelés** szakaszban válasszon az alábbi jelentések közül:
+      - **Frissítési kör telepítése eszközökhöz**
+      - **Frissítési kör telepítése felhasználókhoz**
+      - **Beállításonkénti telepítési állapot**
+
+### <a name="review-update-compliance-using-oms"></a>Frissítés-megfelelőség ellenőrzése az OMS használatával
 A Windows 10 frissítések alkalmazása nyomon követhető az Operations Management Suite (OMS) ingyenes megoldása, az Update Compliance segítségével. További információ: [Windows frissítések figyelése az Update Compliance használatával](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Ennek a megoldásnak a használatával kereskedelmi azonosító telepíthető azokra az Intune-nal felügyelt Windows 10 eszközökre, amelyekről frissítés-megfelelőségi jelentést kíván készíteni.
 
 A kereskedelmi azonosítót az Intune-konzolon egy egyéni szabályzat OMA-URI beállításaival konfigurálhatja. További információ: [A Microsoft Intune-ban regisztrált Windows 10-eszközökre vonatkozó Intune-szabályzatbeállítások](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-A kereskedelmi azonosító konfigurálásához szükséges (kis- és nagybetűket megkülönböztető) OMA-URI elérési út: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+A kereskedelmi azonosító konfigurálásához szükséges (kis- és nagybetűket megkülönböztető) OMA-URI elérési út: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a következő beállítások használhatók:
 
@@ -121,18 +142,6 @@ Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a 
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
 ![A Windows beállítása diagnosztikai és használati adatok küldéséhez](./media/commID.png)
-
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
 
 ## <a name="how-to-pause-updates"></a>Frissítések felfüggesztése
 A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadályozható, hogy az eszköz minőségi vagy funkciófrissítéseket fogadjon. A megadott időtartam után a felfüggesztés automatikusan megszűnik, és az eszköz keresni kezdi az alkalmazható Windows-frissítéseket. A keresés után a frissítések ismét felfüggeszthetők.

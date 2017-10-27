@@ -5,7 +5,7 @@ keywords: "Intune-adattárház"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb311429e0537709b3476154bdef24347cb99026
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
+ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Az Intune-adattárház használata
 
@@ -41,4 +41,5 @@ Az adattárház az Azure Portalnál több információt nyújt a mobilkörnyezet
 **További lépések**
 
 - Kapcsolódjon az adattárházhoz a Power BI használatával, és készítsen információs jelentéseket. További információt a [Csatlakozás az Intune-adattárházhoz a Power BI segítségével](reports-proc-get-a-link-powerbi.md)című témakörben talál.
+- A hivatkozást felhasználva készítsen egyéni jelentéseket a Power BI használatával. Ehhez a [Jelentés készítése az OData-adatcsatornából a Power BI használatával](reports-proc-create-with-odata.md) című témakörben talál útmutatót.
 - Az Intune-adattárház API-ról, az adatmodellről és az entitások közötti kapcsolatokról, <!-- , and an example of creating a custom client to retrieve data,--> további információt az [Intune-adattárház API](reports-nav-intune-data-warehouse.md) című témakörben talál.

@@ -1,12 +1,12 @@
 ---
-title: "Androidos eszközök távoli felügyelete a TeamViewer használatával"
+title: "Eszközök távoli felügyelete a TeamViewer használatával"
 titlesuffix: Azure portal
-description: "Útmutató androidos eszközök távoli felügyeletéhez a TeamViewer használatával.”"
+description: "Útmutató eszközök távoli felügyeletéhez a TeamViewer használatával.”"
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,29 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a6286760e1e49cdb090736e9444fe8ce18ddeb7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
-# <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Távsegítség nyújtása az Intune által felügyelt Android-eszközökhöz
+# <a name="provide-remote-assistance-for-intune-managed-devices"></a>Távsegítség nyújtása az Intune által felügyelt eszközökhöz
 
-Az Intune-ból a külön megvásárolható [TeamViewer](https://www.teamviewer.com) szoftverrel távsegítséget nyújthat az androidos eszközök felhasználóinak. Olvassa el a jelen témakört az első lépésekhez.
+Az Intune-ból a külön megvásárolható [TeamViewer](https://www.teamviewer.com) szoftverrel távsegítséget nyújthat a felügyelt eszközök felhasználóinak. Olvassa el a jelen témakört az első lépésekhez.
 
 ## <a name="before-you-start"></a>Előkészületek
+
+### <a name="supported-devices"></a>Támogatott eszközök
+
+A távfelügyeletet az alábbi Intune-nal felügyelt eszközök támogatják:
+
+- Intune-nal felügyelt Android-eszközök
+- Windows 10, Windows 10 Mobile és újabb rendszereket futtató, az Intune által felügyelt Windows-eszközök.
+
+>[!NOTE]
+>A TeamViewer szoftver nem támogatja a Windows Holographic (HoloLens), a Windows Team (Surface Hub) és a Windows 10 S rendszereket
+
+
 
 ### <a name="required-permissions"></a>Szükséges engedélyek
 
@@ -38,7 +50,7 @@ Győződjön meg arról, hogy az Azure Portal felhasználójához a következő 
 
 ### <a name="configure-the-intune-teamviewer-connector"></a>Az Intune TeamViewer-összekötő konfigurálása
 
-Mielőtt távsegítséget nyújtana androidos eszközökre, az alábbi lépéseket követve konfigurálnia kell az Intune TeamViewer-összekötőt:
+Mielőtt távsegítséget nyújtana eszközökre, az alábbi lépéseket követve konfigurálnia kell az Intune TeamViewer-összekötőt:
 
 
 1. Jelentkezzen be az Azure Portalra.
@@ -50,22 +62,22 @@ Mielőtt távsegítséget nyújtana androidos eszközökre, az alábbi lépések
 7. Ekkor megnyílik a TeamViewer webhelyének egyik oldala. A TeamViewer-licenc hitelesítő adatainak megadását követően kattintson a **Bejelentkezés** gombra.
 
 
-## <a name="how-to-remotely-administer-an-android-device"></a>Androidos eszközök távoli felügyelete
+## <a name="how-to-remotely-administer-a-device"></a>Eszközök távoli felügyelete
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Felügyelet** > **Minden eszköz** lehetőséget.
 5. Válassza ki az eszközt, amelyet szeretne távolról felügyelni, majd az eszköztulajdonságok paneljén válassza az **Egyéb** > **Új távsegítség-munkamenet** lehetőséget.
-6. Miután az Intune kapcsolódott a TeamViewer szolgáltatáshoz, látni fog némi információt az androidos eszközről. Válassza a **Csatlakozás** lehetőséget a távoli munkamenet elindításához.
+6. Miután az Intune kapcsolódott a TeamViewer szolgáltatáshoz, látni fog némi információt az eszközről. Válassza a **Csatlakozás** lehetőséget a távoli munkamenet elindításához.
 
-![Androidos TeamViewer-ablakok](./media/android-teamviewer.png)
+![Androidos TeamViewer-példa](./media/android-teamviewer.png)
 
-A TeamViewer ablakban számos távoli műveletet végezhet el az androidos eszközön, beleértve az eszköz távvezérlését. A végrehajtható műveletek teljes ismertetéséért lásd: a [TeamViewer dokumentációját](https://www.teamviewer.com/support/documents/).
+A TeamViewer ablakban számos távoli műveletet végezhet el az eszközön, beleértve az eszköz távvezérlését. A végrehajtható műveletek teljes ismertetéséért lásd: a [TeamViewer dokumentációját](https://www.teamviewer.com/support/documents/).
 
 Ha végzett, zárja be a TeamViewer ablakot.
 
-## <a name="end-user-notifications"></a>Végfelhasználói értesítések
+## <a name="next-steps"></a>További lépések
 
 A végfelhasználó egy értesítésjelzőt lát az eszközén található céges portál alkalmazás ikonján, és megjelenik egy értesítés is, ha megnyitja az alkalmazást. Ekkor lehetőségük nyílik a távsegítségkérés elfogadására.
 

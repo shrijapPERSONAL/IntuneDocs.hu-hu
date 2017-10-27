@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Szabályzat típusú entitások referenciája
 
@@ -35,13 +35,13 @@ A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, v
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| PolicyKey |A szabályzat adattárházban való jelölésére szolgáló egyedi kulcs |123 |
-| PolicyId |A szabályzat egyedi azonosítója az adattárházban |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |A szabályzat neve |„Windows 10 Baseline” |
+| PolicyKey |A szabályzat adattárházban való jelölésére szolgáló egyedi kulcs. |123 |
+| PolicyId |A szabályzat egyedi azonosítója az adattárházban. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |A szabályzat neve. |„Windows 10 Baseline” |
 | PolicyVersion |A szabályzat verziója. A szabályzat szerkesztésekor vagy módosításakor új verzió jön létre. |1, 2, 3 |
-| IsDeleted |Jelzi, hogy frissítve lett-e a szabályzatrekord.  Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik. Hamis – a szabályzat legújabb rekordja. |Igaz/hamis |
-| StartDateInclusiveUTC |A szabályzat adattárházban történt létrehozásának dátuma és időpontja (UTC) |2016.11.23. 12:00:00 |
-| DeletedDateUTC |Az IsDeleted paraméter igaz értékre történt módosulásának dátuma és időpontja (UTC) |2016.11.23. 12:00:00 |
+| IsDeleted |Jelzi, hogy frissítve lett-e a szabályzatrekord.  <br>Igaz – a szabályzat új, frissített mezőkkel ellátott rekorddal rendelkezik. <br>Hamis – a szabályzat legújabb rekordja. |Igaz/hamis |
+| StartDateInclusiveUTC |A szabályzat adattárházban történt létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| DeletedDateUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 | RowLastModifiedDateTimeUTC |A szabályzat adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 
 ## <a name="policytype"></a>PolicyType
@@ -50,9 +50,9 @@ A **PolicyType** entitás az eszköz- és alkalmazáskonfigurációs profilok, v
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| PolicyTypeId |A szabályzat egyedi azonosítója a forrásrendszerben |123 |
-| PolicyTypeId |A szabályzat egyedi azonosítója az adattárházban |1 |
-| PolicyTypeName |A szabályzattípus neve. |A Windows 10-re vonatkozó megfelelőségi szabályzat |
+| PolicyTypeId |A szabályzat egyedi azonosítója a forrásrendszerben. |123 |
+| PolicyTypeKey |A szabályzat egyedi azonosítója az adattárházban. |1 |
+| PolicyTypeName |A szabályzattípus neve. |A Windows 10-re vonatkozó megfelelőségi szabályzat. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő,
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| DateKey |A Date Key azt jelöli, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése |20160703 |
-| Függőben |A függő állapotú egyedi eszközök száma |123 |
-| Sikerült |A sikeres állapotú egyedi eszközök száma |12 |
-| Hiba |A hibás állapotú egyedi eszközök száma |10 |
-| Sikertelen |A sikertelen állapotú lévő egyedi eszközök száma |2 |
+| DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
+| Függőben |A függő állapotú egyedi eszközök száma. |123 |
+| Sikerült |A sikeres állapotú egyedi eszközök száma. |12 |
+| Hiba |A hibás állapotú egyedi eszközök száma. |10 |
+| Sikertelen |A sikertelen állapotú egyedi eszközök száma. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ A **UserConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, s
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| DateKey |A Date Key azt jelöli, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése |20160703 |
-| Függőben |A függő állapotú egyedi felhasználók száma |123 |
-| Sikerült |A sikeres állapotú egyedi felhasználók száma |12 |
-| Hiba |A hibás állapotú egyedi felhasználók száma |10 |
-| Sikertelen |A sikertelen állapotú egyedi felhasználók száma |2 |
+| DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
+| Függőben |A függő állapotú egyedi felhasználók száma. |123 |
+| Sikerült |A sikeres állapotú egyedi felhasználók száma. |12 |
+| Hiba |A hibás állapotú egyedi felhasználók száma. |10 |
+| Sikertelen |A sikertelen állapotú egyedi felhasználók száma. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ A **PolicyTypeActivity** entitás a sikeres, függő, sikertelen vagy hibás ál
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése |20160703 |
-| PolicyKey |Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében |Windows 10 baseline |
-| PolicyTypeKey |Szabályzatkulcs típusa, amely összekapcsolható a szabályzattípussal a szabályzattípus nevének lekérése érdekében |Windows10megfelelőségiSzabályzat |
-| Függőben |A függő állapotú egyedi eszközök száma |123 |
-| Sikerült |A sikeres állapotú egyedi eszközök száma |12 |
-| Hiba |A hibás állapotú egyedi eszközök száma |10 |
-| Sikertelen- |A sikertelen állapotú egyedi eszközök száma |2 |
+| DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
+| PolicyKey |Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében. |Windows 10 baseline |
+| PolicyTypeKey |Szabályzatkulcs típusa, amely összekapcsolható a szabályzattípussal a szabályzattípus nevének lekérése érdekében. |Windows 10-es megfelelőségi szabályzat |
+| Függőben |A függő állapotú egyedi eszközök száma. |123 |
+| Sikerült |A sikeres állapotú egyedi eszközök száma. |12 |
+| Hiba |A hibás állapotú egyedi eszközök száma. |10 |
+| Sikertelen- |A sikertelen állapotú egyedi eszközök száma. |2 |

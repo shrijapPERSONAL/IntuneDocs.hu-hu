@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune-adattárház API
 
@@ -41,9 +41,12 @@ Ez a referenciaszakasz áttekintést nyújt az Intune-adattárház adatmodelljé
 
 ## <a name="odata-custom-client"></a>Egyéni OData-ügyfél
 
-Az Intune adattárház-adatmodellje RESTful-végpontokon keresztül érhető el. Ahhoz, hogy hozzáférjen az adatokhoz, az ügyfélnek az OAuth 2.0 protokollt használva igazolnia kell, hogy jogosult a Microsoft Azure Active Directory (Azure AD) használatára. Ehhez először be kell állítani egy webalkalmazást és egy ügyfelet az Azure-ban, és meg kell adni az ügyfélnek a megfelelő jogosultságokat. A helyi ügyfél megkapja az engedélyt, és kommunikálhat a Data Warehouse-végpontokkal.
+Az Intune-adatárház adatmodellje RESTful végpontokon keresztül érhető el. Ahhoz, hogy hozzáférjen az adatokhoz, az ügyfélnek az OAuth 2.0 protokollt használva igazolnia kell, hogy jogosult az Azure Active Directory (Azure AD) használatára. Ehhez először be kell állítani egy webalkalmazást és egy ügyfelet az Azure-ban, és meg kell adni az ügyfélnek a megfelelő jogosultságokat. A helyi ügyfél megkapja az engedélyt, és kommunikálhat az Adattárház-végpontokkal.
 
 További információért lásd az [Adatok beolvasása az adattárház API-ból REST-ügyféllel](reports-proc-data-rest.md) című cikket.
+
+> [!Note]  
+> Kódpéldákat a [GitHub Intune-adattárház tárházban](https://github.com/Microsoft/Intune-Data-Warehouse) találhat a GitHubon.
 
 ## <a name="interacting-with-the-api"></a>Az API használata
 
@@ -58,6 +61,8 @@ Az OData olyan absztrakt adatmodellt és protokollt határoz meg, amely minden �
 
 ## <a name="next-steps"></a>További lépések
 
-[Az Azure AD hitelesítési forgatókönyvei](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData 4.0-s verzió](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Az Azure AD használatáról további információt kaphat a [Hitelesítési forgatókönyvek az Azure AD-ban](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) című témakörben.
+
+OData-val kapcsolatos forrásokat az [odata.org](http://www.odata.org) webhelyen talál.
+  
+Az OData 4.0-ás verziójának szabványát az [OData 4.0-ás verzió] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) webhelyen találja  

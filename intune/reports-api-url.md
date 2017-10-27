@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune-adattárház API-végpontja
 
 Az Intune-adattárház API-t az adott szerepköralapú hozzáférés-vezérlőkkel és Azure AD-beli hitelesítő adatokkal rendelkező fiókokkal használhatja. Ezután az OAuth 2.0 segítségével hitelesíti majd REST-ügyfelét az Azure AD szolgáltatással. Végül pedig megalkotja az adattárház-erőforrás hívására szolgáló beazonosítható URL-címet.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Az Azure AD-beli és az Intune-beli hitelesítő adatokra vonatkozó követelmények
-
-A hitelesítés és az engedélyezés az Azure AD-beli hitelesítő adatokon és az Intune szerepköralapú hozzáférés-vezérlésén (RBAC) alapul. Alapértelmezés szerint a bérlő valamennyi globális rendszergazdája és Intune-beli szolgáltatás-rendszergazdája hozzáféréssel rendelkezik az API-hoz. Az Intune-szerepkörök használatával azáltal biztosíthat több felhasználónak is hozzáférést, hogy hozzáférést ad nekik a **Jelentéskészítési erőforráshoz**.
-
-Az API-hoz való hozzáférésre vonatkozó követelmények a következők:
-
-  -  Az Intune-licencet hozzá kell rendelni a felhasználóhoz
-  -  A felhasználónak a következők egyikének kell lennie:
-      -  Azure AD-beli globális rendszergazda
-      -  Intune-beli szolgáltatás-rendszergazda
-      -  A **Jelentések** erőforráshoz szerepköralapú hozzáféréssel rendelkező felhasználó
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Engedélyezés
 
@@ -64,4 +54,4 @@ Az API jelenlegi verziója a következő: `beta`.
 
 ## <a name="odata-query-options"></a>Az OData-lekérdezés beállításai
 
-A jelenlegi verzió a következő OData-lekérdezésparamétereket támogatja: `$skip, $top, $filter, $orderby`.
+A jelenlegi verzió a következő OData-lekérdezésparamétereket támogatja: `$filter, $orderby, $select, $skip,` és `$top`.
