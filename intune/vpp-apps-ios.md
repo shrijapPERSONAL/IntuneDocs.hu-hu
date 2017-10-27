@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76764155e66ab69b5428712dae8a860233acaeb6
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -41,14 +41,12 @@ A mennyiségi programban vásárolt alkalmazásokat kétféle módszerrel lehet 
 Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte.
 Ha mennyiségi programban vásárolt alkalmazásokat rendel az eszközhöz, a végfelhasználónak nem kell Apple ID azonosítót megadnia az áruházhoz való hozzáféréshez. 
 
-
-
 ### <a name="user-licensing"></a>Felhasználói licencelés
 
 Ha felhasználóhoz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, a felhasználóhoz társítva. Az alkalmazás több, a felhasználó tulajdonában lévő eszközön is futhat (ennek a korlátját az Apple határozza meg).
 Ha mennyiségi programban vásárolt alkalmazásokat rendel felhasználókhoz, minden végfelhasználónak érvényes, egyedi Apple ID azonosítóval kell rendelkeznie az App Store-hoz való hozzáféréshez.
 
-Ezen kívül az Apple mennyiségi vásárlásra szolgáló áruházából vásárolt könyvek szinkronizálhatók, felügyelhetők és hozzárendelhetők az Intune-nal. További információkat a [Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése](vpp-ebooks-ios.md) című cikkben talál.
+Ezen kívül az Apple mennyiségi vásárlásra (VPP) szolgáló áruházából vásárolt könyvek szinkronizálhatók, felügyelhetők és hozzárendelhetők az Intune-nal. További információkat a [Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése](vpp-ebooks-ios.md) című cikkben talál.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Nagy mennyiségben vásárolt alkalmazások felügyelete iOS-eszközökön
 
@@ -63,15 +61,17 @@ Ezenkívül, az iTunes Connectben megadott, megfelelő jogosultságokkal rendelk
 ## <a name="before-you-start"></a>Előkészületek
 Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell töltenie azt az Intune-fiókjába. Ezenkívül tisztában kell lennie a következő feltételekkel:
 
-* Több mennyiségi vásárlási program tokenjeit társíthatja az Intune-fiókhoz.
+* Intune-fiókjához több VPP-tokent is társíthat.
 * Ha korábban VPP-tokent használt egy másik termékkel, egy újat kell létrehoznia az Intune használatához.
 * A tokenek egy évig érvényesek.
 * Alapértelmezés szerint az Intune naponta kétszer szinkronizál az Apple VPP szolgáltatással. Manuális szinkronizálás bármikor kezdeményezhető.
-* Mielőtt az iOS VPP-t az Intune-nal kezdené használni, távolítsa el a más mobileszköz-felügyeleti (MDM) megoldás használatával létrehozott összes meglévő VPP-felhasználói fiókot. Az Intune biztonsági okokból nem szinkronizálja ezeket a felhasználói fiókokat az Intune-ba. Az Intune csak az Intune által létrehozott adatokat szinkronizálja az Apple VPP szolgáltatásból.
+* Mielőtt az Apple VPP-t az Intune-nal kezdené használni, távolítsa el a más mobileszköz-felügyeleti (MDM) megoldás használatával létrehozott összes meglévő VPP-felhasználói fiókot. Az Intune biztonsági okokból nem szinkronizálja ezeket a felhasználói fiókokat az Intune-ba. Az Intune csak az Intune által létrehozott adatokat szinkronizálja az Apple VPP szolgáltatásból.
 * Az Intune legfeljebb 256 VPP-token hozzáadását támogatja.
-* Az Apple készülékregisztrációs profil (DEP) program automatizálja a mobileszközök felügyeleti célú regisztrációját (MDM regisztrációját). A készülékregisztrációs profilt használva a vállalati eszközöket kézbevétel nélkül is be tudja állítani. A DEP programba ugyanazzal a programügynök-fiókkal tud regisztrálni, mint amit az Apple VPP-hez használt. Az [Apple Központi Telepítési Program](https://deploy.apple.com) oldalon felsorolt valamennyi program egyedi azonosítóval rendelkezik, amellyel nem lehet bejelentkezni az olyan Apple-szolgáltatásokba, mint amilyen például az iTunes áruház. 
+* Az Apple készülékregisztrációs profil (DEP) program automatizálja a mobileszközök felügyeleti célú regisztrációját (MDM regisztrációját). A készülékregisztrációs profilt használva a vállalati eszközöket kézbevétel nélkül is be tudja állítani. A DEP programba ugyanazzal a programügynök-fiókkal tud regisztrálni, mint amit az Apple VPP-hez használt. Az [Apple Központi Telepítési Program](https://deploy.apple.com) oldalon felsorolt valamennyi program egyedi azonosítóval rendelkezik, amellyel nem lehet bejelentkezni az olyan Apple-szolgáltatásokba, mint amilyen például az iTunes áruház.
 * Ha felhasználólicencelési modellel rendel hozzá VPP-alkalmazásokat a felhasználókhoz vagy eszközökhöz (felhasználói affinitással), minden egyes Intune-felhasználót társítani kell egy egyedi Apple ID-vel vagy egy e-mail-címmel, amikor az eszközükön elfogadják az Apple használati feltételeit. Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurálja azt a felhasználó egyedi Apple ID-jével vagy e-mail-címével. Az Apple ID vagy e-mail-cím és az Intune-felhasználó egyedi párt alkot, amely akár öt eszközön használható.
 * A VPP-token használata egyszerre csak egy Intune-fiókban támogatott. Nem használja újra ugyanazt a VPP-tokent több Intune-bérlőhöz.
+* Ha felhasználólicencelési modellel rendel hozzá VPP-alkalmazásokat a felhasználókhoz vagy eszközökhöz (felhasználói affinitással), minden egyes Intune-felhasználót társítani kell egy egyedi Apple ID-vel vagy egy e-mail-címmel, amikor az eszközükön elfogadják az Apple használati feltételeit.
+Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurálja azt a felhasználó egyedi Apple ID-jével vagy e-mail-címével. Az Apple ID vagy e-mail-cím és az Intune-felhasználó egyedi párt alkot, amely akár öt eszközön használható.
 
 >[!IMPORTANT]
 >Miután a VPP-tokent az Intune-ba importálta, ne importálja ugyanezt a tokent egy másik eszközfelügyeleti megoldásba. Ez a licenc-hozzárendelések és a felhasználói rekordok elvesztését eredményezheti.
@@ -80,9 +80,16 @@ Mielőtt hozzálát, be kell szereznie a VPP-tokent az Apple-től, és fel kell 
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1.  Az **Intune** panelen válassza a **Mobilalkalmazások** > **iOS-es VPP-tokenek** elemet a **Beállítás** lehetőség alatt.
 2.  A VPP-tokenek panel listájában kattintson a **Létrehozás** elemre.
 4. Az **VPP-token Létrehozása** panelen adja meg az alábbi adatokat:
     - **VPP-jogkivonatfájl** – Ha még nem tette meg, iratkozzon fel a vállalati Volume Purchase Programra vagy az oktatási programra. A regisztrációt követően töltse le a fiókjához tartozó Apple VPP-tokent, és itt jelölje ki.
+    - **Apple ID** – Adja meg a mennyiségi vásárlási programhoz kapcsolódó fiók Apple ID-ját.
+    - **Ország/régió** – Válassza ki a VPP országkódját.  Az Intune a megadott VPP-ország áruházából az összes területi beállításhoz tartozó VPP-alkalmazást szinkronizálja.
+        > [!WARNING]  
+        > Az ország módosításakor az ezzel a tokennel létrehozott alkalmazásoknál az Apple-szolgáltatással való legközelebbi szinkronizálás alkalmával frissülni fognak az alkalmazás metaadatai és az áruházi URL-cím. Az alkalmazás nem fog frissülni, ha az nem található meg az új országhoz tartozó áruházában.
+
+    - **VPP-fiók típusa** –A következő lehetőségek közül választhat: **Üzlet** és **Oktatás**.
     - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül. Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
 4. Amikor elkészült, kattintson a **Feltöltés** gombra.
 
@@ -107,13 +114,29 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 >[!NOTE]
 >A megjelenített alkalmazások listája egy tokenhez van társítva. Ha van egy olyan alkalmazása, amely több VPP-tokenhez is társítva van, akkor ugyanaz az alkalmazás többször is megjelenik; minden tokenhez egyszer.
 
+## <a name="end-user-prompts-for-vpp"></a>VPP-figyelmeztetés a végfelhasználónak
+
+A végfelhasználó különféle helyzetekben figyelmeztetést fog kapni VPP-alkalmazások telepítésére. A különféle feltételek az alábbi táblázatban láthatók:
+
+| # | Forgatókönyv                                | Meghívás az Apple VPP-programba                              | Figyelmeztetés alkalmazástelepítésre | Apple ID bekérése |
+|---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
+| 1 | BYOD – licenccel rendelkező felhasználó                             | I                                                                                               | I                                           | I                                 |
+| 2 | Corp (Vállalat) – licenccel rendelkező felhasználó (nem felügyelt eszköz)     | I                                                                                               | I                                           | I                                 |
+| 3 | Corp (Vállalat) – licenccel rendelkező felhasználó (felügyelt eszköz)         | I                                                                                               | N                                           | I                                 |
+| 4 | BYOD – licenccel rendelkező eszköz                           | N                                                                                               | I                                           | N                                 |
+| 5 | CORP (Vállalat) – licenccel rendelkező eszköz (nem felügyelt eszköz)                           | N                                                                                               | I                                           | N                                 |
+| 6 | CORP (Vállalat) – licenccel rendelkező eszköz (felügyelt eszköz)                           | N                                                                                               | N                                           | N                                 |
+| 7 | Teljes képernyős mód (felügyelt eszköz) – licenccel rendelkező eszköz | N                                                                                               | N                                           | N                                 |
+| 8 | Teljes képernyős mód (felügyelt eszköz) – licenccel rendelkező felhasználó   | --- | ---                                          | ---                                |
+
+> [!Note]  
+> VPP-alkalmazásokat nem ajánlott teljes képernyős eszközökhöz rendelni VPP-felhasználói licenceléssel.
+
 ## <a name="further-information"></a>További információ
 
 A licencek visszanyeréséhez az Eltávolítás műveletre kell módosítania a hozzárendelési műveletet. A licenc az alkalmazás eltávolítása után felszabadul. Ha eltávolít egy olyan alkalmazást, amely hozzá volt rendelve egy felhasználóhoz, az Intune megpróbálja felszabadítani a felhasználóhoz társított összes alkalmazáslicencet.
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni egy eszközön, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase Programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
-
-
 
 ## <a name="next-steps"></a>További lépések
 

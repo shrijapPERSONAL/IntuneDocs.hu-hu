@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 199760a60ee2290560ebdf933192de0eaf569e9e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="configure-ios-update-policies"></a>iOS-frissítési szabályzatok konfigurálása
 Az iOS-frissítési szabályzatokkal kikényszerítheti a felügyelt iOS-eszközökön a legújabb elérhető szoftverfrissítések automatikus telepítését. Konfigurálhatja, hogy mely napokon vagy időszakokban ne települjenek frissítések az eszközökön.
@@ -40,3 +40,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendsze
 1. A **Szoftverfrissítések** panelen válassza az **iOS-frissítési szabályzatok** lehetőséget.
 2. Válassza ki a frissíteni kívánt iOS-frissítési szabályzatot.
 3. Válassza a **Tulajdonságok** lehetőséget, majd frissítse a korlátozott napokra vonatkozó információt.
+
+## <a name="monitor-ios-devices-with-older-ios-versions"></a>Régebbi iOS-verziót futtató iOS-eszközök figyelése 
+<!-- 1352223 -->
+Az **Elavult iOS-eszközök** jelentést a **Szoftverfrissítések** > **iOS-frissítési szabályzat** panelről lehet elérni. A jelentésben megtekintheti az iOS-frissítési szabályzatok által megcélzott felügyelt, és nem frissíthető iOS-eszközök listáját. Minden eszköz mellett látható lesz egy állapotleírás is, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan.

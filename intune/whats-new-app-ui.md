@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+## <a name="week-of-october-16-2017"></a>2017. október 16-i hét
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Újdonságok a Céges portál kereső funkcióiban<!--1331697-->
+Továbbfejlesztjük az alkalmazáskeresési lehetőségeket, első lépésben a [Céges portál weboldalról](https://portal.manage.microsoft.com) elérhetőket. A keresések a Név és a Leírás mezőben megadott információkon túl az alkalmazáskategóriák megadásával finomíthatók. Az eredményeket alapértelmezés szerint relevancia alapján állítja sorrendbe a rendszer. 
+
+Ezeket a változtatásokat az iOS-es felhasználók is észlelni fogják, mert a Céges portál weboldal része az iOS-es Céges portál alkalmazásnak. Az androidos és windowsos Céges portál alkalmazásokba az elkövetkező hónapokban lesznek bevezetve hasonló újítások.
+
+A relevancia megállapításának finomításán még dolgozunk, ezért várjuk a tapasztalatokkal kapcsolatos visszajelzéseket, melyek a Céges portál weboldalának alján található „Visszajelzés” hivatkozást használva küldhetők el.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Nagy méretű ikonok megjelenítése az iOS-es Céges portálhoz <!-- 1454593 -->
+Ebben a kiadásban elhárítottunk egy ismert problémát azzal kapcsolatban, ahogyan az iOS-es Céges portál ikonokat jelenít meg az alkalmazás címében. A 120x120 pixeles vagy nagyobb méretű feltöltött ikonok most már teljes méretben jelennek meg az alkalmazás címében a [Céges portál webhelyén](https://portal.manage.microsoft.com) és az iOS-es Céges portál alkalmazás oldalain.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>2017. október 2-i hét
 
@@ -67,7 +85,7 @@ Egyszerűsítettük az Androidhoz készült Céges portál alkalmazás regisztr�
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>2017. augusztus 28-i hét
+## <a name="august-2017"></a>2017. augusztus
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Az iOS 11-ben a Mail alkalmazás támogatni fogja az OAuth-t<!---1196951--->
 
@@ -87,7 +105,7 @@ Az Intune-nal használt feltételes hozzáférés biztonságosabb hitelesítést
 
 ![A Céges portál webhely üzenete arra kéri a felhasználót, hogy regisztrálja az eszközt.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>2017. augusztus 21-i hét
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Az Intune mobilalkalmazás-felügyelet (MAM) párbeszédpaneljei modern felületet kapnak <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Az Intune mobilalkalmazás-felügyelet (MAM) párbeszédpaneljei modern megjelen
 ![modern felület](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>2017. augusztus 14-i hét
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>A Windows 10-hez készült Céges portál alkalmazás Eszköz adatai lapjának frissítései.<!---1287448--->
 
 A Windows 10-hez készült Céges portál alkalmazásban a __Kategória__ címke immár nem a cím alatt jelenik meg, hanem egy, az __Eszköz adatai__ lapon szereplő tulajdonság formájában.
 
 ![A windowsos Céges portál alkalmazás Eszköz adatai képernyője, amelyen a Kategóriák mező immár tulajdonságként jelenik meg, nem pedig közvetlenül a képernyő címe alatt szerepel.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>2017. július 31-i hét
+## <a name="july-2017"></a>2017. július
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Új eszközinformációk Android-eszközök esetén az Alkalmazások részletei lapon <!--1287476-->
 
@@ -164,7 +180,7 @@ A Céges portál alkalmazás megkezdi a bejelentkezést.
 
 ![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>2017. június 12-i hét
+## <a name="june-2017"></a>2017. június
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Az Androidhoz készült Céges portál alkalmazás mostantól új felhasználói felületet nyújt az alkalmazásvédelmi szabályzatokhoz <!--1305217-->
 A felhasználók visszajelzései alapján úgy módosítottuk az Androidhoz készült Céges portál alkalmazást, hogy egy **Céges tartalom elérése** gombot is hozzáadtunk. Ez mentesíti a végfelhasználót attól, hogy az egész regisztrációs folyamaton végig kelljen mennie, ha csak olyan alkalmazásokat kíván elérni, amelyek az Intune mobilalkalmazás-felügyelet egyik funkcióját, az alkalmazásvédelmi szabályzatokat támogatják.
@@ -210,8 +226,6 @@ Felhasználói visszajelzések alapján az androidos Céges portál alkalmazásb
 ![Az androidos Céges portál alkalmazás képe, a jobb felső sarokban a megnyitott műveletmenüvel. A „Saját profil” és a „beállítások” lehetőség alatt harmadikként megjelenik az új „céges portál eltávolítása” lehetőség is, alatta a „használati feltételek”, a „súgó és visszajelzés” és végül a „névjegy”.](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![A megerősítést kérő párbeszédpanel képe, amely az új „céges portál eltávolítása” lehetőség kiválasztása után jelenik meg. A párbeszédpanel tájékoztatja a felhasználót, hogy „a céges portál eltávolítása után az eszközt nem fogja felügyelni a rendszergazda, és megszűnhet a hozzáférés a céges adatokhoz, a céges alkalmazásokhoz és a céges e-mailekhez.” Megkérdezi a felhasználót, biztosan el akarja-e távolítani a Céges portál alkalmazást, mely esetben az „Igen” lehetőséget választhatja.](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>2017. június 5-i hét
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Továbbfejlesztett alkalmazáscsempék az iOS-hez készült Céges portál alkalmazásban <!--1230777-->
 Frissítettük a kezdőlapon található alkalmazáscsempék megjelenését annak érdekében, hogy a Céges portálhoz beállított márkaszínek jelenjenek meg rajtuk.

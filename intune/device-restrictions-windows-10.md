@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -64,7 +64,7 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
     -   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
     -   **Jelszó kérése, ha az eszköz visszatér az inaktív állapotból (csak mobil verzióban)** – Azt adja meg, hogy köteles-e a felhasználó jelszót megadni az eszköz feloldásához (csak Windows 10 Mobile esetén).
     -   **Egyszerű jelszavak** – Lehetővé teszi egyszerű jelszavak használatát, például 1111 vagy 1234. Ez a beállítás a Windows-képjelszavak használatát is engedélyezi vagy letiltja.
--   **Titkosítás** – Engedélyezi a célzott eszközök titkosítását (csak Windows 10 Mobile esetén).
+-   **Titkosítás** – Titkosítás engedélyezése a megcélzott eszközökön.
 
 ## <a name="personalization"></a>Személyre szabás
 

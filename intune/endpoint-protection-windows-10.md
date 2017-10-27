@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19c20ac5dd73b45dc06d1df6a7d08cc6bac42982
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
+ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
@@ -28,6 +28,9 @@ ms.lasthandoff: 09/15/2017
 Az Endpoint Protection-profillal a Windows 10-es eszközök olyan biztonsági szolgáltatásait szabályozhatja, mint például a BitLocker és a Windows Defender.
 
 A következő témakör az Endpoint Protection-profilok létrehozását mutatja be.
+
+> [!Note]
+> Ezek a beállítások nem támogatottak a Windows 10 Home és Professional kiadásaiban.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection-profil létrehozása
 

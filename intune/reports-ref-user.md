@@ -14,11 +14,11 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2b9739299c52c668117116f54c08715f1218d130
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: be8b7041882539c4e379074cffea385f582f686e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 
@@ -30,14 +30,14 @@ A **Felhasználó** entitás a vállalaton belül hozzárendelt licenccel rendel
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
-| UserKey |A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs |123 |
-| UserId |A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |A felhasználó e-mail címe |John@constoso.com |
-| DisplayName |A felhasználó megjelenítendő neve |István |
+| UserKey |A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
+| UserId |A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail |A felhasználó e-mail címe. |John@constoso.com |
+| DisplayName |A felhasználó megjelenítendő neve. |István |
 | IntuneLicensed |Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel. |Igaz/hamis |
 | IsDeleted |Jelzi, hogy frissítve lett-e a felhasználórekord.  True (Igaz) – a felhasználóhoz új, frissített mezőkből álló rekord tartozik a táblában. False (Hamis) – a felhasználó legfrissebb rekordja. |Igaz/hamis |
-| StartDateInclusiveUTC |A felhasználó adattárházban történt létrehozásának dátuma és időpontja (UTC) |2016.11.23 12:00:00 |
-| EndDateExclusiveUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC) |2016.11.23 12:00:00 |
-| IsCurrent |Jelzi, hogy a felhasználórekord aktuális-e az adattárházban |Igaz/hamis |
-| RowLastModifiedDateTimeUTC |A felhasználó adattárházban történt utolsó módosításának dátuma és időpontja (UTC) |2016.11.23 12:00:00 |
+| StartDateInclusiveUTC |A felhasználó adattárházban történt létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| EndDateExclusiveUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| IsCurrent |Jelzi, hogy a felhasználórekord aktuális-e az adattárházban. |Igaz/hamis |
+| RowLastModifiedDateTimeUTC |A felhasználó adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
 

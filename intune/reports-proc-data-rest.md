@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -58,7 +58,7 @@ Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az �
 
 Most már rendelkezik egy Azure-ban definiált alkalmazással. Gondoskodjon arról, hogy a natív alkalmazásból hozzá lehessen férni a Microsoft Intune API-hoz.
 
-1.  Kattintson a natív alkalmazásra. Az alkalmazásnak Ön adta az „Intune-adattárházügyfél”, vagy ehhez hasonló nevet.
+1.  Kattintson a natív alkalmazásra. Az alkalmazásnak Ön az **Intune-adattárházügyfél**, vagy ehhez hasonló nevet adott.
 2.  A **Beállítások** panelen kattintson a **Szükséges engedélyek** lehetőségre.
 3.  A **Szükséges engedélyek** panelen kattintson a **Hozzáadás** lehetőségre.
 4.  Kattintson az **API kiválasztása** lehetőségre.
@@ -152,14 +152,14 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
 1.  Indítsa el a **Microsoft Visual Studiót**.
 2.  Válassza a **Fájl** > **Új projekt** lehetőséget. Bontsa ki a **Visual C#** lehetőséget, és válassza a **Console App (.Net Framework)** (Konzolalkalmazás (.Net-keretrendszer)) lehetőséget. 
 3.  A projektnek adja az ` IntuneDataWarehouseSamples` nevet, és tallózással válassza ki, hova szeretné azt menteni, majd kattintson az **OK** gombra.
-3.  Kattintson a jobb gombbal a megoldás nevére a Megoldáskezelőben, majd válassza a **Manage NuGet Packages for Solution** (Megoldás NuGet-csomagjainak kezelése) lehetőséget. Kattintson a **Tallózás** lehetőségre, majd írja be a „Microsoft.IdentityModel.Clients.ActiveDirectory” kifejezést a keresőmezőbe.
-4. Válassza ki a csomagot, jelölje ki a **IntuneDataWarehouseSamples** projektet a „Manage Packages for Your Solution” (Megoldás csomagjainak kezelése) szakaszban, majd kattintson a **Telepítés** lehetőségre. 
-5. Az **Elfogadom** elemre kattintva fogadja el a NuGet-csomag licencfeltételeit.
-6. Nyissa meg a `Program.cs` fájlt a Megoldáskezelőben.
+4.  Kattintson a jobb gombbal a megoldás nevére a Megoldáskezelőben, majd válassza a **Manage NuGet Packages for Solution** (Megoldás NuGet-csomagjainak kezelése) lehetőséget. Kattintson a **Tallózás** elemre, majd írja a `Microsoft.IdentityModel.Clients.ActiveDirectory` szöveget a keresőmezőbe.
+5. Válassza ki a csomagot, jelölje ki a **IntuneDataWarehouseSamples** projektet a „Manage Packages for Your Solution” (Megoldás csomagjainak kezelése) szakaszban, majd kattintson a **Telepítés** lehetőségre. 
+6. Az **Elfogadom** elemre kattintva fogadja el a NuGet-csomag licencfeltételeit.
+7. Nyissa meg a `Program.cs` fájlt a Megoldáskezelőben.
 
     ![A projekt a Visual Studióban](media\reports-get_rest_data_in.png)
 
-7.  Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
+8.  Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Frissítse a mintakódban található `TODO` elemeket.
-9.  A **Ctrl + F5** billentyűkombinációval állítsa össze és futtassa az Intune.DataWarehouseAPIClient ügyfelet hibakeresési módban.
+9.  Frissítse a mintakódban található `TODO` elemeket.
+10.  A **Ctrl + F5** billentyűkombinációval állítsa össze és futtassa az Intune.DataWarehouseAPIClient ügyfelet hibakeresési módban.
 
     ![JSON formátumban beolvasott dátumentitás.](media\reports-get_rest_data_output.png)
 
-10.  Tekintse meg a kimenetet a konzolon. A kimenet JSON formátumban tartalmazza az Intune-bérlő **dates** entitásából kinyert adatokat.
+11.  Tekintse meg a kimenetet a konzolon. A kimenet JSON formátumban tartalmazza az Intune-bérlő **dates** entitásából kinyert adatokat.
 
 ## <a name="next-steps"></a>További lépések
 

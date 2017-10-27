@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Mobile Threat Defense telepítése iOS-eszközön
 
@@ -31,6 +31,17 @@ A cég informatikai támogatási szolgálata csak a Mobile Threat Defense alkalm
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Ha sikertelen a telepítés**
+## <a name="additional-information-your-company-can-see"></a>A vállalat által látható további információk
+
+A Mobile Threat Defense használatával a vállalatok gondoskodhatnak eszközeik biztonságáról olyan alkalmazások ellen, amelyek céges adatokat próbálnak megszerezni. Ennek a védelemnek a használatához arra van szükség, hogy az eszközön telepített alkalmazásokról további információt lehessen továbbítani a vállalat által használt Mobile Threat Defense szolgáltatáshoz. A vállalat nem fér hozzá az Ön személyes alkalmazásainak adataihoz. Ha Mobile Threat Defense szolgáltatást használ, az eszközön található összes alkalmazás hozzá lesz adva a [mit láthat a vállalat](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) listához. Az alábbiakban látható, hogy az alkalmazásnak mely részeit láthatja a vállalat:
+
+*   Alkalmazás neve
+* Alkalmazásazonosító: egyedi név, amely az App Store-ban azonosítja az alkalmazást
+*   Alkalmazásverzió és rövid verziószám: az alkalmazáshoz tartozó kiadási számok
+* Alkalmazásköteg és dinamikus méret: az alkalmazás által az eszközön elfoglalt tárterület
+* Alkalmazás érvényessége: azt jelzi, hogy az alkalmazás használatra jóvá van-e hagyva
+*   Alkalmazáskezelési állapot: azt jelzi, hogy az alkalmazást a vállalat kezeli-e, vagy pedig személyes alkalmazás
+
+## <a name="if-the-installation-doesnt-work"></a>Ha sikertelen a telepítés
 
 Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

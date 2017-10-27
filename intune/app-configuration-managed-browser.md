@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -37,7 +37,11 @@ Mivel az alkalmazás integrálva van az Intune SDK-val, alkalmazásvédelmi szab
 
 További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](/intune/app-protection-policy) című témakörben talál.
 
-Ezeket a beállításokat azokra az eszközökre alkalmazhatja, amelyek regisztrálva vannak az Intune-ban vagy egy másik eszközkezelő termékben, de olyan eszközökre is, amelyek nem állnak felügyelet alatt.
+Ezek a beállítások az alábbiakra alkalmazhatók:
+
+- Az Intune-ban regisztrált eszközök
+- Más MDM-termékben regisztrált eszközök
+- Nem felügyelt eszközök
 
 Ha a felhasználók telepítik a Managed Browser alkalmazást az alkalmazásáruházból, és azt nem az Intune felügyeli, akkor az egyszerű webböngészőként használható, amely a Microsoft MyApps webhelyen keresztül támogatja az egyszeri bejelentkezést. A felhasználók közvetlenül a MyApps webhelyére vannak irányítva, ahol megjelenik az összes számukra kiosztott SaaS-alkalmazás.
 Ha a Managed Browsert nem az Intune felügyeli, más Intune által kezelt alkalmazások adatait nem lehet elérni vele. 
