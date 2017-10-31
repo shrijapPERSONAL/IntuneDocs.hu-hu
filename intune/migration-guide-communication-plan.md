@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>A kommunikáció tervezése
 
@@ -52,6 +52,8 @@ Az Intune további sablonokat nyújt, amelyeket az eszközök regisztrálásána
 -   Az [A végfelhasználók oktatása az Intune használatával kapcsolatban](end-user-educate.md) című témakör részletezi a regisztrálás lépéseit az egyes mobiloperációsrendszer-platformok esetében.
 
 -   Az [Intune végfelhasználói regisztrálási sablon rendszergazdák számára](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) testreszabható Word-dokumentum ismerteti az Android, iOS és Mac rendszerű eszközök regisztrálását az Intune-ban.
+
+-   A [FastTrack az EMS útmutatóihoz és e-mail-üzeneteihez](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) a vállalat emblémájával személyre szabható, ezzel is elősegítve az Intune és az EMS szervezeten belüli bevezetését.
 
 ## <a name="next-steps"></a>További lépések
 

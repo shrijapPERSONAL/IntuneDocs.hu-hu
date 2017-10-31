@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-eszközök regisztrálása a Windows AutoPilot Deployment Program használatával
 A Windows AutoPilot Deployment Program leegyszerűsíti az eszközök üzembe helyezését. Jelenleg a testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Előfordulhat, hogy ezen egyéni operációsrendszer-lemezképek az új eszközökön való alkalmazásával is sok időt tölt el, hogy előkészítse őket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az Intune AutoPilot-eszközök felügyeletére való használatakor regisztrálásukat követően kezelheti az eszközökön a szabályzatokat, profilokat, alkalmazásokat és így tovább. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséhez lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -47,13 +47,16 @@ Az AutoPilot Deployment-profilok segítségével konfigurálhatja az AutoPilot-e
    - **Adatvédelmi beállítások**: válasszon, hogy a felhasználók számára megjelenjenek-e az adatvédelmi beállítások. 
    - **Végfelhasználói licencszerződés (EULA)**: válasszon, hogy a felhasználók számára megjelenjen-e a végfelhasználói licencszerződés.
    - **Felhasználói fiók típusa**: válassza ki, hogy a felhasználói fiók típusa egy **Rendszergazdafiók**, vagy **Általános jogú** felhasználó-e.
+
+     > [!Note]    
+     > Ez a beállítás nem vonatkozik a globális rendszergazdai vagy a vállalati rendszergazdai fiókokra. Ezek a fiókok nem tartozhatnak sztenderd felhasználókhoz, mert hozzáféréssel rendelkeznek az Azure AD minden felügyeleti funkciójához.
 8. Kattintson a **Létrehozás** elemre a profil létrehozásához. Az AutoPilot Deployment-profil ettől kezdve már hozzárendelhető az eszközökhöz.
      
-   > [!Note]    
-   > A következő beállítások az összes AutoPilot Deployment-profilra kiterjednek:
-   > - A Cortana, a OneDrive és az OEM-regisztráció beállításlapjainak kihagyása
-   > - Munkahelyi vagy iskolai fiók automatikus beállítása
-   > - Céges vagy iskolai arculatot használó bejelentkezési módszer    
+> [!Note]    
+> A következő beállítások az összes AutoPilot Deployment-profilra kiterjednek:
+> - A Cortana, a OneDrive és az OEM-regisztráció beállításlapjainak kihagyása
+> - Munkahelyi vagy iskolai fiók automatikus beállítása
+> - Céges vagy iskolai arculatot használó bejelentkezési módszer    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment-profil hozzárendelése
 Miután létrehozta az AutoPilot Deployment-profilokat, hozzárendelheti azokat a kiválasztott eszközökhöz.

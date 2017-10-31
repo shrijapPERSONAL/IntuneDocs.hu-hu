@@ -1,11 +1,11 @@
 ---
 title: "Hogyan kell bejelentkezni a Céges portál alkalmazásba | Microsoft Docs"
-description: 
+description: "Információk arról, hogyan lehet bejelentkezni a Céges portál alkalmazásba különféle platformokon."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Hogyan jelentkezhetek be a Céges portál alkalmazásba? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Az alábbi képeken az iOS rendszer látható, de a folyamat gyakorlatilag ugyan
 4. Amint a Céges portál elfogadta az adatokat, lezajlik a bejelentkezés, és hozzáférhet a céges erőforrásokhoz.   
 
   ![A hitelesítési folyamat végeztével a Céges portál alkalmazás bejelentkezik, amit egy betöltést jelző sáv jelez.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Bejelentkezés tanúsítványalapú hitelesítéssel
+
+1.  Nyissa meg az eszközén a Céges portál alkalmazást.
+
+2.  Adja meg a **munkahelyi vagy iskolai fiókját**.
+
+3.  Koppintson a **Bejelentkezés tanúsítvánnyal** lehetőségre.
+
+4.  A tanúsítvány használatához koppintson a **Folytatás** lehetőségre.
 
 ## <a name="signing-in-from-another-device"></a>Más eszközről történő bejelentkezés
 
