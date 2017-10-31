@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatok androidos beállításai
 A jelen témakörben ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
@@ -86,3 +86,8 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 | **Offline időtartam (nap) az alkalmazásadatok törlése előtt** | Ennyi offline állapotban eltöltött nap után (a rendszergazda adja meg) az alkalmazás arra kéri a felhasználót, hogy csatlakozzon a hálózathoz és hitelesítsen újra. Sikeres hitelesítés után a felhasználó ismét hozzáférhet az adataihoz, és az offline időtartam alaphelyzetbe áll.  Ha a felhasználó nem hitelesít, az alkalmazás végrehajtja a felhasználó fiókjának és adatainak szelektív törlését.  Arról, hogy a szelektív törlés mely adatokat távolítja el, a [Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) című cikkben talál további információt.<br><br> | 90 nap |
 | **Képernyőfelvétel és az Android Assistant alkalmazás tiltása (Android 6.0+)** | Az **Igen** értéket választva letilthatja az eszköz képernyő-rögzítési lehetőségeit és az **Android Assistant** használatát az alkalmazás használatakor. Az **Igen** értéket választva az alkalmazásváltó funkció betekintő képe is homályos lesz, ha az alkalmazást munkahelyi vagy iskolai fiókkal használják. | Nem |
 | **Alkalmazás PIN-kódjának letiltása, ha az eszköz PIN-kódja felügyelt** | Válassza az **Igen** beállítást, ha le szeretné tiltani az alkalmazás PIN-kódját, amikor a regisztrált eszközön eszközzárolást észlelt a rendszer. | Nem |
+| **Az Android operációs rendszer minimális verziójának megkövetelése** | Az **Igen** lehetőség kiválasztásával megkövetelheti az Android operációs rendszer minimális verzióját az alkalmazás használatakor. A felhasználó hozzáférése le lesz tiltva, ha az Android operációs rendszer eszközön lévő verziója nem felel meg a követelménynek. | Nem |
+| **Az Android operációs rendszer minimális verziójának megkövetelése (csak figyelmeztetés)** | Az **Igen** lehetőség kiválasztásával megkövetelheti az Android operációs rendszer minimális verzióját az alkalmazás használatakor. A felhasználó értesítést fog kapni, ha az Android operációs rendszer eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető. | Nem |
+| **Az alkalmazás minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek.<br><br>A megcélzandó alkalmazások kiválasztásakor vegye figyelembe, hogy az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek.<br><br> | Nem | 
+| **Az alkalmazás minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójára vonatkozó javaslat megjelenítéséhez. A felhasználó értesítést fog kapni, ha az alkalmazásnak az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br>A megcélzandó alkalmazások kiválasztásakor vegye figyelembe, hogy az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek.<br><br> | Nem | 
+
