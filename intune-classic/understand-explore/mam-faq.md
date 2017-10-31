@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -70,16 +70,16 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 **Mik a [Word, Excel és PowerPoint](https://products.office.com/business/office) alkalmazások használatának további feltételei?**
 
-  1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat és egy felhőalapú társzolgáltatás-fiókot a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
+  1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat, és egy felhőalapú társzolgáltatás-fiókot is tartalmazhat a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
 
-  2. A végfelhasználónak rendelkeznie kell az eszközére telepített [OneDrive](https://onedrive.live.com/about/) alkalmazással, és be kell jelentkeznie az AAD-fiókjába.
+  2. A végfelhasználónak egy olyan felügyelt hellyel kell rendelkeznie, amelyet a részletes mentés másként funkcióval konfiguráltak a „Mentés másként művelet letiltása” alkalmazásvédelmi szabályzatbeállítás alatt. Ha például a felügyelt hely a OneDrive, a [OneDrive](https://onedrive.live.com/about/) alkalmazást konfigurálni kell a felhasználó Word, Excel és PowerPoint alkalmazásaiban.
 
-  3. A végfelhasználóra életbe léptetett alkalmazásvédelmi szabályzatnak társítva kell lennie a OneDrive alkalmazással.
+  3. Ha a felügyelt hely a OneDrive, a végfelhasználóra életbe léptetett alkalmazásvédelmi szabályzatnak társítva kell lennie a OneDrive alkalmazással.
 
   >[!NOTE]
   > Az Office-mobilalkalmazások jelenleg csak a SharePoint Online verziót támogatják, a helyszíni SharePoint rendszert nem.
 
-**Miért szükséges a OneDrive az Office-hoz?** Az Intune az alkalmazásban található összes adatot „cégesként” vagy „személyesként” jelöli meg. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal).
+**Miért szükséges felügyelt hely (vagyis a OneDrive) az Office-hoz?** Az Intune az alkalmazásban található összes adatot „cégesként” vagy „személyesként” jelöli meg. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal).
 
 **Mik a Skype Vállalati verzió használatának további feltételei?** A licenckövetelményekért lásd: [Skype Vállalati verzió](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -102,6 +102,18 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
   2. **Biztonságos-e a PIN-kód?** A PIN-kód arra szolgál, hogy csak a megfelelő felhasználó férhessen hozzá az alkalmazásban a céges adatokhoz. Így az Intune az alkalmazáshoz tartozó PIN-kódjának megváltoztatásához a végfelhasználónak be kell jelentkeznie a munkahelyi vagy iskolai fiókjába. Ezt a hitelesítést az Azure Active Directory biztonságos jogkivonatcsere révén kezeli, ami nem transzparens az Intune App SDK számára. A munkahelyi vagy iskolai adatok védelmére biztonsági szemszögből a titkosítás a legjobb módszer. A titkosítás nem függ össze az alkalmazás PIN-kódjával, csak annak saját alkalmazásvédelmi szabályzatával.
 
   3. **Hogyan védi a PIN-kódot az Intune a találgatásos támadásoktól?** Az alkalmazás PIN-szabályzatának részeként a rendszergazda beállíthatja, hogy legfeljebb hányszor adhatja meg a felhasználó a PIN-kódját, mielőtt a rendszer zárolná az alkalmazást. Bizonyos számú kísérlet után az Intune App SDK törölheti az összes „céges” adatot az alkalmazásban.
+  
+**Hogyan használja az Intune az alkalmazás numerikus és jelszavas PIN-kódját?**
+A MAM jelenleg alfanumerikus, valamint speciális karaktereket is megkövetelő (ún. PIN-jelszó) alkalmazásszintű PIN-kódokat (iOS) támogat, amelyeknek a használatához az szükséges, hogy az alkalmazások (vagyis a WXP, az Outlook, a Managed Browser és a Yammer) integrálják az iOS-es Intune APP SDK-t. Az integráció hiányában a PIN-jelszóbeállítások nem lesznek megfelelően megkövetelve a megcélzott alkalmazásoknál. Mivel az alkalmazások integrációja fokozatosan történik, a numerikus és jelszavas PIN-kódok viselkedése a felhasználó szemszögéből átmenetileg megváltozik, ezért fontos a tájékoztatás. Az Intune 2017. októberi kiadásban az alábbi működésmód várható...
+
+Azok az alkalmazások, amelyek
+1. ugyanazon alkalmazáskiadótól származnak,
+2. a konzolon megcélzott PIN-jelszóval rendelkeznek, és 
+3. az ezzel a funkcióval rendelkező SDK-t (7.1.12 és újabb verziók) használják, ugyanazt a jelszavas PIN-kódot tudják majd használni ezeknél az alkalmazásoknál. 
+
+Azok az alkalmazások, amelyek
+1. ugyanazon alkalmazáskiadótól származnak,
+2. a konzolon megcélzott numerikus PIN-kóddal rendelkeznek, ugyanazt a numerikus PIN-kódot tudják majd használni ezeknél az alkalmazásoknál. 
 
 **Mi a helyzet a titkosítással?** A rendszergazdák olyan alkalmazásvédelmi szabályzatokat léptethetnek életbe, amelyek előírják az alkalmazásadatok titkosítását. A szabályzat részeként a rendszergazda azt is megadhatja, hogy mikor kell titkosítani a tartalmat.
 

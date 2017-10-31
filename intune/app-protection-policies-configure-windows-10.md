@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Felkészülés az alkalmazásvédelmi szabályzatok Windows 10 rendszereken történő konfigurálására
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mielőtt Windows 10-es alkalmazásvédelmi szabályzatot hozhatna létre, az Azure AD-ben a MAM-szolgáltató beállításával engedélyeznie kell a Windows 10-es mobilalkalmazás-kezelést (MAM). Ezzel a beállítással meghatározhatja a regisztráció állapotát, amikor az Intune-ban új Windows Information Protection- (WIP-) szabályzatot hoz létre.
-
-> [!NOTE]
-> A regisztráció állapota lehet MAM vagy mobileszköz-kezelés (MDM).
-
-## <a name="to-configure-the-mam-provider"></a>MAM-szolgáltató konfigurálása
-
-1.  Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be Intune-os hitelesítő adataival.
-
-2.  A baloldali menüben válassza az **Azure Active Directory** elemet.
-
-    ![MAM-szolgáltató konfigurálása](./media/mam-provider-sc-1.png)
-
-3.  A megnyíló **Azure AD** panelen válassza a **Mobilitás (MDM és MAM)** lehetőséget, majd kattintson a **Microsoft Intune** elemre.
-
-    ![Mobilitás: MDM és MAM](./media/mam-provider-sc-1.png)
-
-4.  A megnyíló konfigurációs panelen először válassza a **Alapértelmezett MAM URL-címeinek visszaállítása** elemet, majd végezze el az alábbi beállításokat:
-
-    a.  MAM felhasználói hatókör: a MAM használatával a vállalati adatokat védheti egy meghatározott, Windows 10-es eszközöket használó felhasználói csoport vagy az összes felhasználó célzásával is.
-
-    b.  A MAM használati feltételeinek URL-címe: a MAM-szolgáltatás használati feltételeire mutató URL-cím. A végfelhasználók itt férhetnek hozzá a MAM-szolgáltatás használati feltételeihez.
-
-    c.  A MAM felderítési URL-címe: az eszközök ezt az URL-címet keresik, amikor alkalmazásvédelmi szabályzatokat kell alkalmazniuk.
-
-    d.  A MAM megfelelőségi URL-címe:
-
-5.  Ha a beállításokkal végzett, válassza a **Mentés** elemet.
+Windows 10-es rendszerhez mobilalkalmazás-kezelést (MAM) úgy engedélyezhet, hogy beállítja a MAM-szolgáltatót az Azure AD-ban. A MAM-szolgáltató Azure AD-n belüli beállításával meghatározhatja a regisztráció állapotát, amikor az Intune-ban új Windows Information Protection- (WIP-) szabályzatot hoz létre. A regisztráció állapota lehet MAM vagy mobileszköz-kezelés (MDM).
 
 > [!NOTE]
 > A MAM által regisztrált állapotú eszközöknek csatlakoztatva kell lenniük az Azure AD-hez.
+
+## <a name="to-configure-the-mam-provider"></a>MAM-szolgáltató konfigurálása
+
+1. Jelentkezzen be az Azure Portalon, majd válassza az **Azure Active Directory** elemet.
+
+2. A **Kezelés** csoportban válassza a **Mobilitás (MDM és MAM)** elemet.
+
+3. Kattintson a **Microsoft Intune** elemre.
+
+4. A **Konfigurálás** panel **Alapértelmezett MAM URL-címek** csoportjában végezze el a konfigurációs beállításokat.
+
+    **MAM-felhasználói hatókör**  
+      Az automatikus MAM-regisztrációval a felhasználók Windows-eszközein található vállalati adatok kezelhetők. Az automatikus MAM-regisztráció a saját eszközök használatának esetén lesz konfigurálva.<ul><li>**Nincsenek**<br>Ezt akkor válassza, ha minden felhasználó regisztrálható a MAM-ban.</li><li>**Néhány**<br>Kiválaszthatja azokat az Azure AD-csoportokat, amelyekbe a MAM-ban regisztrálandó felhasználók tartoznak.</li><li>**Összes**<br>Ezt akkor válassza, ha minden felhasználó regisztrálható a MAM-ban.</li></ul>
+
+    **A MAM használati feltételeinek URL-címe**  
+     A MAM-szolgáltatás használati feltételeire mutató URL-cím. Ezt a címet használhatja arra, hogy a felhasználók számára még az eszköz regisztrálása előtt megjeleníthesse a szolgáltatásra vonatkozó használati feltételeket. A használati feltételekben a felhasználók tájékozódhatnak arról, hogy milyen szabályzatok vonatkoznak majd a mobileszközükre.
+
+    **MDM-felderítési URL-cím**  
+    A MAM-szolgáltatás regisztrálásra mutató URL-címe. A regisztrálási cím az eszközök MAM-szolgáltatásban történő regisztrálásához használatos.
+
+    **A MAM megfelelőségi URL-címe**  
+      A MAM-szolgáltatás megfelelőségi információkra mutató URL-címe. Ha a felhasználó nem megfelelő eszközről próbál erőforrást elérni, és a hozzáférését megtagadja a rendszer, a megfelelőséggel kapcsolatos információra mutató URL-cím jelenik meg számára. A felhasználók ezen a MAM által üzemeltetett URL-címen információt kaphatnak arról, hogy miért nem megfelelő az eszközük. Ezen kívül az eszköz megfelelővé tételének érdekében önkiszolgáló hibaelhárítást is elindíthatnak, hogy a kívánt erőforráshoz hozzá tudjanak férni.
+
+5.  Kattintson a **Mentés**gombra.
 
 ## <a name="next-steps"></a>További lépések
 
