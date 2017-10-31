@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>A Microsoft Intune előzetes kiadása – 2017. október
 
@@ -151,19 +151,6 @@ Az Android Oreo megjelenésétől kezdve a Google egy új védelmi funkciót vez
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Támogatás a Windows 10-kiadások frissítési szabályzatához <!-- 903672(archived), 1119689 -->  
 A Windows 10-hez létrehozhat olyan kiadásfrissítési szabályzatot, amely a Windows 10-es eszközöket az alábbi verziókra frissíti: Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education és Windows 10 Professional Education N. A Windows 10 kiadásfrissítéseiről a [Windows 10 kiadásfrissítéseinek konfigurálása](edition-upgrade-configure-windows-10.md) című témakörből tájékozódhat.
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Bővítmények az Intune MAM-hez és az androidos Outlookhoz <!-- 1450688 -->
-Az Office-csapat néhány hét múlva jelenti be az Androidhoz készült Outlookhoz használható bővítmények megjelenését. A bővítménykészlet már most is elérhető az Outlookhoz Windows és iOS rendszereken, valamint weben és Mac gépeken. Mivel a bővítmények felügyelete az Exchange-en keresztül történik, a felhasználók másolhatnak és megoszthatnak adatokat és üzeneteket az Outlook és a nem felügyelt bővítményalkalmazások között, kivéve ha az Exchange-adminisztrátor kikapcsolta a bővítményekhez való hozzáférést. 
-
-A bővítmények felhasználói hozzáférését az Exchange-adminisztrátorral együttműködve kezelheti, biztosítva, hogy a MAM adatvédelmi szabályzatok érvényesek legyenek a bővítményekre is.
-
-#### <a name="how-does-this-affect-me"></a>Hogyan érint ez engem?
-Ha az Exchange-szabályzatok már megakadályozzák a bővítmények telepítését vagy közvetlen telepítését, akkor nincs további teendője. A MAM-szabályzatok a várakozásoknak megfelelően lesznek alkalmazva. Ha azonban megadott olyan MAM-szabályzatokat, amelyek korlátozzák az androidos Outlookban a kivágási, másolási és beillesztési műveleteket, de az Exchange-ben nem állított be bővítményszabályzatot, akkor számítani kell rá, hogy a felhasználók alapértelmezés szerint telepíthetnek az Outlookhoz bővítményeket. Ezek a bővítmények hozzáférhetnek az üzenetek törzséhez, tárgyához és más tulajdonságaihoz. Ha szeretné megakadályozni, hogy a felhasználó bővítményeket telepíthessen, kérje meg az Exchange-adminisztrátort, hogy távolítsa el a „Saját Marketplace-alkalmazások” és a „Saját egyéni alkalmazások” szerepköröket.
-
-Az Exchange-beállítás változása érinteni fogja az Outlookot Windows és iOS rendszeren, a weben, Mac gépen és mobileszközön is. 
-
-#### <a name="what-do-i-need-to-do"></a>Mit kell tennem?
-Minél hamarabb ellenőrizze az Exchange-szabályzatot. Tájékoztassa az informatikai és támogató munkatársakat. Ha bármilyen konkrét kérdése van, forduljon támogatási szolgálatunkhoz. 
 
 
 
