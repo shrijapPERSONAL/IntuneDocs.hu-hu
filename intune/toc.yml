@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Alkalmazások figyelése
           href: apps-monitor.md
-        - name: iOS-es alkalmazáskonfigurációs profilok
-          href: app-configuration-policies-use-ios.md
-        - name: Androidos alkalmazáskonfigurációs profilok
-          href: app-configuration-policies-use-android.md
+        - name: Alkalmazáskonfigurációs szabályzatok
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS felügyelt eszközök
+              href: app-configuration-policies-use-ios.md
+            - name: Android felügyelt eszközök
+              href: app-configuration-policies-use-android.md
+            - name: Felügyelt alkalmazások
+              href: app-configuration-policies-managed-app.md
         - name: iOS-alkalmazáskiépítési profilok használata
           href: app-provisioning-profile-ios.md
         - name: Alkalmazások szelektív törlése
@@ -381,6 +386,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows-szabályzat létrehozása
           href: compliance-policy-create-windows.md
+        - name: Meg nem felelés esetén végrehajtandó műveletek
+          href: actions-for-noncompliance.md
         - name: Az eszközmegfelelőség figyelése
           href: compliance-policy-monitor.md
     - name: Feltételes hozzáférés beállítása
