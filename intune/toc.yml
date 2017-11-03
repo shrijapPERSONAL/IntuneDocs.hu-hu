@@ -545,6 +545,8 @@
     - name: Az Intune-adattárház használata
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Módosítási napló Adatraktár
+          href: reports-changelog.md
         - name: Kapcsolódás az adattárházhoz a Power BI használatával
           href: reports-proc-get-a-link-powerbi.md
         - name: Jelentés készítése az OData-adatcsatornából a Power BI használatával
@@ -602,18 +604,20 @@
         - name: Az adattárház adatmodellje
           href: reports-ref-data-model.md
           items:
-            - name: Dátum típusú entitás referenciája
-              href: reports-ref-date.md
-            - name: Felhasználó típusú entitás referenciája
-              href: reports-ref-user.md
-            - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
-              href: reports-ref-mobile-app-management.md
-            - name: Eszközök típusú entitások referenciája
-              href: reports-ref-devices.md
             - name: Alkalmazás-entitások referencia
               href: reports-ref-application.md
-            - name: Segédlet a felhasználói eszköztársítások entitáshoz
-              href: reports-ref-userdeviceassociations.md
+            - name: Dátum típusú entitás referenciája
+              href: reports-ref-date.md
+            - name: Eszközök típusú entitások referenciája
+              href: reports-ref-devices.md
+            - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
+              href: reports-ref-mobile-app-management.md
+            - name: Szabályzat típusú entitások referenciája
+              href: reports-ref-policy.md
+            - name: A felhasználó-eszköz társításának hivatkozása
+              href: reports-ref-user-device.md
+            - name: Felhasználó típusú entitás referenciája
+              href: reports-ref-user.md
     - name: Windows-alkalmazások közvetlen telepítése
       href: intune-graph-apis.md
       items:
