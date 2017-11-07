@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c894a0314af1967dce67a7ffc5b3279bff6125f4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 699fa64bc0f720b18c1376e39b85eccd9018bbaf
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>A VPN-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -37,7 +37,7 @@ A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 |-|-|-|-|-|-|-|
 |Pulse Secure|Igen|Igen|Igen|Igen|Igen|Igen|
 |Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
-|Citrix|Igen (csak Android esetén)|Igen|Nem|Nem|Nem|Nem|
+|Citrix|Igen|Igen|Nem|Nem|Nem|Igen|
 |F5 Edge Client|Igen|Igen|Igen|Igen|Igen|Igen|
 |Dell SonicWALL Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
