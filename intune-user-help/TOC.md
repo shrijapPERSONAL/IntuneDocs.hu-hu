@@ -8,7 +8,7 @@
 
 ## [Hogyan jelentkezhet be a Céges portálra?](sign-in-to-the-company-portal.md)
 
-## [Android-eszköz használata az Intune-nal](using-your-android-device-with-intune.md)
+## [Android-eszköz használata](using-your-android-device-with-intune.md)
 ### [Mi történik, ha Android-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Az eszköz regisztrálása](enroll-your-device-in-Intune-android.md)
 #### [Eszköz regisztrálása az Android for Workben](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [A SandBlast Mobile Protect használata](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [A Zimperium zIPS használata](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [iOS vagy macOS rendszerű eszköz használata az Intune-nal](using-your-iOS-or-macOS-device-with-intune.md)
+## [iOS-eszköz használata](using-your-iOS-device-with-intune.md)
 ### [Mi történik, ha iOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [A Céges portál telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS-eszköz regisztrálása](enroll-your-device-in-intune-ios.md)
-### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos.md)
-### [macOS-eszköz regisztrálása a Céges portálon](enroll-your-device-in-intune-macos-cp.md)
-### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
 
 ### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 ### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [A SandBlast Mobile Protect használata](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [A Zimperium zIPS használata](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [macOS-eszköz használata](using-your-macos-device-with-intune.md)
+### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
+### [Örökölt macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-legacy.md)
+### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
 ### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [Eszközömnek kártevőirtó szoftverre van szüksége](your-device-needs-antimalware-software.md)
 #### [Biztonságos rendszerindítás engedélyezése](you-need-to-enable-secure-boot-windows.md)
 #### [Kódintegritás engedélyezése](you-need-to-enable-code-integrity.md)
-
+#### [Engedélyezni kell a tűzfalat](you-need-to-enable-defender-firewall-windows.md)
+#### [Engedélyezni kell a felhasználói fiókok felügyeletét](you-need-to-enable-uac-windows.md)
+#### [Frissíteni kell a Windows-t](you-need-to-update-os-build-version-windows.md)
+#### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md) 
 
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)
