@@ -5,20 +5,20 @@ keywords: sdk, Xamarin, intune
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 11/15/2016
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ab9807d22aa1a5c232b595df2bd999c0c178b16
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: f50ecfbf5a0ac0b05de38e0ad29b27a729ab824b
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin összetevő
 
@@ -29,6 +29,9 @@ ms.lasthandoff: 10/11/2017
 
 ## <a name="overview"></a>Áttekintés
 Az [Intune App SDK Xamarin összetevő](https://components.xamarin.com/view/microsoft.intune.mam) lehetővé teszi az [Intune alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) használatát a Xamarin platformmal fejlesztett iOS- és Android-alkalmazásokban. Az összetevő lehetővé teszi a fejlesztők számára, hogy Intune alkalmazásvédelmi funkciókat építsenek be a Xamarin-alapú alkalmazásaikba.
+
+> [!NOTE]
+> A Xamarinhoz készült Intune SDK jelenleg előzetes verzióban érhető el. 
 
 A Microsoft Intune App SDK Xamarin összetevő lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven alkalmazás- vagy MAM-szabályzatokat) építsen be a Xamarinnal fejlesztett alkalmazásokba. A MAM-kompatibilis alkalmazás az, amelyik integrálva van az Intune App SDK-val. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
 

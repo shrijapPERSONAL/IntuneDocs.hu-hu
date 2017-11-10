@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Az Intune több módot is kínál a felügyelt alkalmazások jellemzőinek, valamint hozzárendelési állapotának figyelésére.
 
-1. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
-2. Az alkalmazáslista paneljén válassza ki azt az alkalmazást, melynek adatait meg szeretné tekinteni. Ekkor megjelenik az <*alkalmazásnév*> **eszköz telepítési állapota** panel: ![Alkalmazás telepítésének állapota panel.](./media/monitor-apps.png)
+1. Jelentkezzen be az Azure Portalra.
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
+3. A **Mobilalkalmazások** területen válassza az **Alkalmazások** elemet a **Felügyelet** csoportban.
+     
+    ![Alkalmazástelepítés állapota panel.](./media/monitor-apps.png)
+5. Az alkalmazáslista panelen válasszon egy alkalmazást. Ekkor megjelenik az <*alkalmazásnév*> **Eszköz telepítési állapota** panel.
+
+Az eszköz telepítési állapotjelentése az alábbi oszlopokat tartalmazza:
+
+1.  **Eszköz neve** Az eszköztípus neve.
+2.  **Felhasználónév** A felhasználónév.
+3.   **Platform** Az eszközön telepített operációs rendszer.
+4.  **Verzió** Az alkalmazás verziószáma.
+5.   **Állapot** Az alkalmazások lehetséges állapotai: **Telepítve**, **Nincs telepítve**, **Telepítés folyamatban** és **Hiba**.
+6. **Állapot részletei** Az eszközön található alkalmazás állapotának olvasható leírása.
+7. **Utolsó bejelentkezés** Az eszköz legutóbbi bejelentkezése az Intune-ba.
 
 Ezután a következő lépések egyikével tudhat meg többet az alkalmazásokról és azok hozzárendeléseiről.
 

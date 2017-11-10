@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -82,7 +82,7 @@ Az Azure Portal **Intune App Protection** paneljén a rendszergazdák alkalmazá
     ![Felhasználói csoportok kezelőfelületének összehasonlítása az Intune-portálon és az Azure Portalon](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > Az Azure Portalon és az Intune-portálon végzett kiválasztásnak meg kell egyeznie. Például ha a Minden felhasználó lehetőséget jelölte meg az Intune klasszikus portálján, akkor az Azure Portalon is a **Minden felhasználó** lehetőséget válassza. Ezen kívül, ha használta a **Kivételt képző csoportok** lehetőséget az Intune klasszikus portálon, akkor az ott kijelölt csoportokat ki kell zárnia az Azure Portalon is.
+    > Az Azure Portalon és a klasszikus portálon végzett kiválasztásnak meg kell egyeznie. Például ha a Minden felhasználó lehetőséget jelölte meg az Intune klasszikus portálján, akkor az Azure Portalon is a **Minden felhasználó** lehetőséget válassza. Ezen kívül, ha használta a **Kivételt képző csoportok** lehetőséget az Intune klasszikus portálon, akkor az ott kijelölt csoportokat ki kell zárnia az Azure Portalon is.
 
 5. A csoport kijelölése után kattintson a **Kiválaszt**, majd a **Kész** gombra.
 

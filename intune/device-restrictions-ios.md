@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Általános
-    
+
 -   **Diagnosztikai adatok küldése** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
 -   **Képernyőfelvétel** – Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.
     - **Távoli képernyőfigyelés az Osztályterem alkalmazással (csak felügyelt)** – Letiltja vagy engedélyezi, hogy az Apple Osztályterem alkalmazása figyelje az iOS-eszközök képernyőjét.
@@ -44,6 +44,54 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 - **Konfigurációs profil módosítása** – Engedélyezi a felhasználó számára a konfigurációs profilok telepítését.
 - **Aktiválási zár (csak felügyelt)** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.
 
+## <a name="configurations-requiring-supervision"></a>Felügyeletet igénylő konfigurációk
+
+Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során, az Apple Készülékregisztrációs programján keresztül vagy az Apple Configuratorral engedélyezhető. A Supervised (Felügyelt) mód engedélyezése után az Intune az alábbi funkciókkal konfigurálhatja az eszközöket:
+
+- App Lock (Egyetlen alkalmazás mód) 
+- Globális HTTP-Proxy 
+- Aktiválási zár megkerülése 
+- Önálló egyetlen alkalmazás mód 
+- Webtartalomszűrő 
+- Háttér és zárolási képernyő beállítása 
+- Felhasználói beavatkozás nélküli alkalmazástelepítés 
+- Mindig bekapcsolt VPN 
+- Kizárólag felügyelt alkalmazások telepítésének engedélyezése 
+- iBookstore 
+- iMessages 
+- Game Center 
+- Airdrop 
+- AirPlay 
+- Párosítás gazdagéppel 
+- Felhőalapú szinkronizálás 
+- Spotlight-keresés 
+- Handoff 
+- Eszköz törlése 
+- Korlátozások felhasználói felülete 
+- Konfigurációs profilok telepítése a felhasználói felület használatával 
+- Hírek 
+- Billentyűparancsok 
+- PIN-kód módosítása 
+- Eszköznév módosítása 
+- Háttérkép módosítása 
+- Alkalmazások automatikus letöltése 
+- Vállalati alkalmazások megbízhatóságának módosítása 
+- Apple Music 
+- Mail Drop 
+- Párosítás Apple Watch órával 
+
+> [!NOTE]
+> Az Apple megerősítette, hogy bizonyos beállítások 2018-ban át fognak kerülni a kizárólag felügyelt módban használhatók közé. Mérlegelje ezt, ha az alábbi beállításokat azelőtt használja, mielőtt a kapcsolódó funkciókat az Apple áthelyezi a kizárólag felügyelt módban használhatók közé:
+> - Végfelhasználók által végzett alkalmazástelepítés
+> - Alkalmazás eltávolítása
+> - FaceTime
+> - Safari
+> - iTunes
+> - Durva tartalom
+> - iCloud dokumentumok és adatok
+> - Több résztvevős játék
+> - Barátok hozzáadása a Game Centerben
+
 ## <a name="password"></a>Jelszó
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
     -   **Egyszerű jelszavak** – Engedélyezi az egyszerű jelszavak (például a 0000 és az 1234) használatát.
@@ -56,7 +104,7 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
     -   **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
     -   **Korábbi jelszavak újbóli használatának tiltása** – Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.
     -   **Ujjlenyomattal történő zárolásfeloldás engedélyezése** – Engedélyezi az erre alkalmas eszközök zárolásának ujjlenyomattal történő feloldását.
-- **PIN-kód módosítása (csak felügyelt)** – Megakadályozza a jelszó hozzáadását, módosítását és eltávolítását. 
+- **PIN-kód módosítása (csak felügyelt)** – Megakadályozza a jelszó hozzáadását, módosítását és eltávolítását.
     - **Ujjlenyomat módosítása (csak felügyelt)** – Megakadályozza, hogy a felhasználó módosítsa, hozzáadja vagy eltávolítsa a TouchID-beállításokat.
 
 <sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
@@ -89,7 +137,7 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 
 ## <a name="built-in-apps"></a>Beépített alkalmazások
 
--   **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera. 
+-   **Kamera** – A beállítás meghatározza, hogy használható-e az eszközön a kamera.
     -   **FaceTime** – Engedélyezi a FaceTime alkalmazás használatát az eszközön.
 -   **Siri** – Engedélyezi az eszközön a Siri beszédfelismerési asszisztens használatát.
     -   **Siri, ha az eszköz zárolva van** – Engedélyezi a Siri beszédfelismerési asszisztens eszközzárolás alatti használatát az eszközön.
@@ -124,9 +172,7 @@ A tiltott alkalmazások beállításait tartalmazó eszközprofilokat hozzá kel
 Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a következő URL-címet használja: https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
-
-
+> Az iTunes segítségével is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
 
 ### <a name="additional-options"></a>További beállítások
 
@@ -247,7 +293,7 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL
 A **Webtartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A megadott tartományokból letöltött dokumentumok felügyeltnek minősülnek. Ez a beállítás csak a Safari böngészővel letöltött dokumentumokra vonatkozik.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Jelszavak automatikus kitöltése a Safariban
+### <a name="safari-password-autofill-domains"></a>Jelszavak automatikus kitöltése a Safariban
 
 A **Tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. A felhasználók csak a listában szereplő URL-címekhez tartozó webes jelszavakat menthetnek. Ez a beállítás csak a Safari böngészőre és az iOS 9.3 vagy későbbi verzióit futtató eszközökre vonatkozik felügyelt módban. Ha egyetlen URL-címet sem ad meg, jelszavakat minden webhelyhez lehetséges menteni.

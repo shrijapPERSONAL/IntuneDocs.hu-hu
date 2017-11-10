@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
-ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
+ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Az Intune-adattárház használata
 
@@ -35,8 +35,12 @@ Az adattárház az Azure Portalnál több információt nyújt a mobilkörnyezet
   -  Napi szintű frissített adatok
   -  OData-szabványt használó adatmodell
 
+> [!Note]
+> Ha hibrid mobileszköz-kezelést (MDM) használ a System Center Configuration Managerrel és a Microsoft Intune-nal, az adatokat az SCCM-ből kell lekérnie. Az Intune-adattárház csak az Intune-adatokat tartalmazza. Az egyéni jelentésekhez használhatja az SCCM Power BI-irányítópultot. További információ: „[A Power BI-megoldássablon bejelentése a System Center Configuration Managerhez]( https://powerbi.microsoft.com/blog/sccm-solution-template)”, és „[Power BI-jelentés és -irányítópult létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard).”
+
+
 > [!Important]  
-> A bétaverzió segítségével az adattárház legújabb funkcióit próbálhatja ki. A bétaverzió használatához URL-címének az `api-version=beta` lekérdezési paraméterrel kell rendelkeznie. A bétaverzió olyan funkciókat is kínál, amelyek támogatott szolgáltatásként még érhetőek el általánosan. Amikor az Intune új funkciókkal bővíti a szolgáltatást, előfordulhat, hogy a bétaverzió viselkedése és az adategyezmény megváltozik. Frissítések esetén a bétaverziót használó egyéni kódok vagy jelentéskészítő eszközök működésében hibák jelentkezhetnek. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> A bétaverzió használatával kipróbálhatja az adattárház legújabb funkcióit. A bétaverzió használatához URL-címének az `api-version=beta` lekérdezési paraméterrel kell rendelkeznie. A bétaverzió olyan funkciókat is kínál, amelyek támogatott szolgáltatásként még érhetőek el általánosan. Amikor az Intune új funkciókkal bővíti a szolgáltatást, előfordulhat, hogy a bétaverzió viselkedése és az adategyezmény megváltozik. Frissítések esetén a bétaverziót használó egyéni kódok vagy jelentéskészítő eszközök működésében hibák jelentkezhetnek.
 
 **További lépések**
 
