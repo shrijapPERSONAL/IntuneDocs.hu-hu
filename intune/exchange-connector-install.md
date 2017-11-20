@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange Connector telepítése az Azure-beli Microsoft Intune-ban
 
@@ -134,13 +134,18 @@ Miután az Exchange Connector létrehozta a kapcsolatot, azokat a mobileszközö
 > [!NOTE]
 > Ha telepítette a helyszíni Exchange Connectort, de később törli az Exchange-kapcsolatot, akkor el kell távolítania a helyszíni Exchange Connectort is arról a számítógépről, amelyre telepítette.
 
-## <a name="validate-the-exchange-connection"></a>Az Exchange-kapcsolat ellenőrzése
+## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange Connector tevékenységének figyelése
 
 Az Exchange Connector sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange Connector kapcsolatának ellenőrzése:
 
-- Az Intune irányítópultján válassza a **Helyszíni hozzáférés** lehetőséget. A kapcsolat állapotának ellenőrzéséhez a **Kezelés** alatt válassza a **Helyszíni Exchange-hozzáférés** lehetőséget.
+1. Az Intune irányítópultján válassza a **Helyszíni hozzáférés** lehetőséget.
+2. A kapcsolat állapotának ellenőrzéséhez a **Kezelés** alatt válassza a **Helyszíni Exchange-hozzáférés** lehetőséget.
 
 Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és időpontját is.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) felügyeleti csomag
+
+Az Intune 1710-es kadásától kezdve használható [az Exchange Connectorhoz és az Intune-hoz készült SCOM felügyeleti csomag](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Ez számos megoldást nyújt az Exchange Connector figyelésére, amikor hibaelhárítás szükséges.
 
 ## <a name="next-steps"></a>További lépések
 [Feltételes hozzáférési szabályzat létrehozása helyszíni Exchange-hez](conditional-access-exchange-create.md)

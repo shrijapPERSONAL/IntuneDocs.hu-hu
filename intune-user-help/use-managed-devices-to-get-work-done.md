@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
@@ -28,7 +28,7 @@ A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek s
 Az eszköznek az Intune felügyelete alá történő regisztrálása lehetővé teszi az informatikai osztály számára a munkahelyi vagy iskolai erőforrások kezelését és védelmét, miközben Ön mint alkalmazott szabadon választott eszközön végezheti feladatait. Ezt alapvetően úgy érheti el, hogy a Céges portálon regisztrálja az eszközt a felügyeleti rendszerben.
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Milyen adatokat láthat a munkahelyem, ha regisztrálom az eszközömet az Intune-ban?
-Munkahelye rendszergazdái láthatják a munkával kapcsolatos adatokat, de a személyes adatait nem. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. [A felhasználói súgó következő cikkében](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) részletezzük, hogy mit láthatnak, és mit nem.
+Munkahelye ügyfélszolgálata láthatja a munkával kapcsolatos adatokat, de a személyes adatait nem. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. [A felhasználói súgó következő cikkében](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) részletezzük, hogy mit láthatnak, és mit nem.
 
 ## <a name="how-do-i-get-the-company-portal"></a>Hogyan szerezhetem be a Céges portált?
 A Vállalati portált kétféleképpen szerezheti be:
@@ -49,7 +49,8 @@ A Vállalati portál alkalmazás és webhely között van néhány kisebb eltér
 A Vállalati portál webhelyen, illetve az alkalmazásban elvégezhető feladatok közti különbséget az alábbi hivatkozások egyikén tekintheti meg:
 
 - [Android-eszköz használata](using-your-android-device-with-intune.md)
-- [iOS vagy macOS rendszerű eszköz használata](using-your-ios-or-macOS-device-with-intune.md)
+- [iOS-eszköz használata](using-your-ios-device-with-intune.md)
+- [macOS-eszköz használata](using-your-macos-device-with-intune.md)
 - [Windows-eszköz használata](using-your-windows-device-with-intune.md)
 - [A Munkahelyi portál webhely használata](using-the-intune-company-portal-website.md)
 

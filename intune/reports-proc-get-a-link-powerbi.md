@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Kapcsolódás az adattárházhoz a Power BI használatával
 
@@ -53,9 +53,9 @@ A Power BI-fájl (pbix) tartalmazza a bérlő eléréséhez használható csatla
 
 1.  Jelentkezzen be az Azure Portalra, és válassza a **Monitoring + Management (Figyelés és kezelés)** > **Intune** elemet. Az **Intune** elemet erőforrások keresésével is megtalálhatja.  
 2.  Nyissa meg a **Microsoft Intune-adattárház API (előnézet)** panelt.
-3.  Kattintson a **Download PowerBI file** (Power BI-fájl letöltése) elemre. Adjon meg egy helyet a pbix kiterjesztésű fájl letöltéséhez, és töltse le a fájlt.
+3.  Válassza a **Download PowerBI file** (Power BI-fájl letöltése) lehetőséget. Adjon meg egy helyet a pbix kiterjesztésű fájl letöltéséhez, és töltse le a fájlt.
 4.  Nyissa meg a fájlt a Power BI-ben. Betöltődik az *Intune-beli adattárház-jelentés*, ami a bérlő adatainak betöltésétől függően hosszabb ideig is eltarthat.
-5.  Ahhoz, hogy az adatok betöltődjenek, és a bérlőadatok megjelenjenek a jelentésekben, kattintson a **Frissítés** elemre.
+5.  Válassza a **Frissítés** lehetőséget a bérlőadatok betöltéséhez és a jelentések áttekintéséhez.
 6.  Ha a Power BI-hoz nem az Azure Active Directory-hez tartozó hitelesítő adatait használta, a Power BI kérni fogja a hitelesítő adatokat. Az adatok megadásához hitelesítő módszerként válassza a **Szervezeti fiók** lehetőséget.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Adatok betöltése a Power BI-be az OData-hivatkozás használatával
@@ -69,13 +69,13 @@ Ha az ügyfél hitelesítve van az Azure AD-ben, az OData-URL kapcsolódni tud a
 5. Válassza a **Kezdőlap** > **Adatforrás lekérése** elemet. Válassza az **OData-betöltés** lehetőséget.
 6. Válassza a **Basic** (Egyszerű) lehetőséget.
 7. Írja be vagy másolja be az **OData-URL-t** az URL mezőbe.
-8. Kattintson az **OK**gombra.
+8. Válassza az **OK** gombot.
 9. Ha a Power BI Desktop-ügyfélben nem adta meg az Azure AD-s hitelesítő adatait, most adja meg azokat. Ahhoz, hogy hozzáférjen az adatokhoz, az OAuth 2.0 protokollt használva igazolnia kell, hogy jogosult az Azure Active Directory (Azure AD) használatára.  
     1.  Válassza a **Szervezeti fiók** lehetőséget.  
     2.  Adja meg felhasználónevét és jelszavát.  
-    3.  Kattintson a **Bejelentkezés** elemre.  
-    4.  Kattintson a **Csatlakozás**gombra.  
-10. Kattintson a **Betöltés** lehetőségre.
+    3.  Válassza a **Bejelentkezés** lehetőséget.  
+    4.  Válassza a **Kapcsolódás** lehetőséget.  
+10. Válassza a **Betöltés** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
 

@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-eszközök regisztrálása a Windows AutoPilot Deployment Program használatával
 A Windows AutoPilot Deployment Program leegyszerűsíti az eszközök üzembe helyezését. Jelenleg a testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Előfordulhat, hogy ezen egyéni operációsrendszer-lemezképek az új eszközökön való alkalmazásával is sok időt tölt el, hogy előkészítse őket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az Intune AutoPilot-eszközök felügyeletére való használatakor regisztrálásukat követően kezelheti az eszközökön a szabályzatokat, profilokat, alkalmazásokat és így tovább. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséhez lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -57,6 +57,13 @@ Az AutoPilot Deployment-profilok segítségével konfigurálhatja az AutoPilot-e
 > - A Cortana, a OneDrive és az OEM-regisztráció beállításlapjainak kihagyása
 > - Munkahelyi vagy iskolai fiók automatikus beállítása
 > - Céges vagy iskolai arculatot használó bejelentkezési módszer    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>A Windows AutoPilot-hozzárendelés nélküli eszközökre vonatkozó riasztások <!-- 163236 -->
+Megjeleníthet a Windows AutoPilot-hozzárendelés nélküli eszközökre vonatkozó riasztásokat, hogy megtudja, az AutoPilot programban résztvevő eszközök közül hányhoz nincs hozzárendelve AutoPilot Deployment-profil. A riasztás adatai alapján a profilok létrehozhatók és a hozzárendelés nélküli eszközökhöz rendelhetők. A riasztásra kattintva megjelenik a Windows AutoPilot-eszközök részletes adatokat is tartalmazó, teljes listája. 
+1. Jelentkezzen be az [Azure](https://portal.azure.com/)-ba. 
+2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközregisztráció** lehetőséget.
+4. A riasztás megjelenítéséhez válassza az **Áttekintés** lehetőséget. Az AutoPilot-eszközök listájának megjelenítéséhez kattintson a riasztásra.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment-profil hozzárendelése
 Miután létrehozta az AutoPilot Deployment-profilokat, hozzárendelheti azokat a kiválasztott eszközökhöz.

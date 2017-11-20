@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
@@ -60,16 +60,16 @@ Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.co
 
     ![OData-adatcsatorna](media/reports-create-01-odatafeed.png)
 
-9. Kattintson az **OK**gombra.
+9. Válassza az **OK** gombot.
 10. Válassza a **Szervezeti fiók** lehetőséget, és jelentkezzen be az Intune-hoz tartozó hitelesítő adataival. 
 
     ![Szervezeti fiók hitelesítő adatai](media/reports-create-02-org-account.png)
 
-11. Kattintson a **Csatlakozás**gombra. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája. 
+11. Válassza a **Kapcsolódás** lehetőséget. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája. 
 
     ![A Navigátor](media/reports-create-02-loadentities.png)
 
-12. Válassza ki a **devices** (eszközök) és az **ownerTypes** (tulajdonostípusok) táblákat.  Kattintson a **Betöltés** lehetőségre. A Power BI betölti az adatokat a modellbe.
+12. Válassza ki a **devices** (eszközök) és az **ownerTypes** (tulajdonostípusok) táblákat.  Válassza a **Betöltés** lehetőséget. A Power BI betölti az adatokat a modellbe.
 
 ## <a name="create-a-relationship"></a>Kapcsolat létrehozása 
 
@@ -77,8 +77,8 @@ Nem csak egyetlen tábla adatait, de több táblát is importálhat, és így eg
 
 ![Kapcsolatok kezelése](media/reports-create-03-managerelationships.png)
 
-1. Kattintson a **Kapcsolatok kezelése** lehetőségre.
-2. Ha a Power BI még nem ismerte fel a kapcsolatokat, kattintson az **Automatikus felismerés...** lehetőségre.  
+1. Válassza a **Kapcsolatok kezelése** lehetőséget.
+2. Ha a Power BI még nem észlelte a kapcsolatokat, válassza az **Automatikus észlelés...** lehetőséget.  
 A kapcsolatokat egy From (forrás) és egy To (cél) oszlopban láthatja. Ebben a példában az **eszközök** tábla **ownerTypeKey** adatmezőjéből indul kapcsolat az **ownerTypes** tábla **ownerTypeKey** mezőjébe. A kapcsolatok használatával az **eszközök** táblában kikeresheti az eszköztípusok kódjaihoz tartozó egyszerű neveket.
 
 ## <a name="create-a-treemap-visualization"></a>Fatérkép-diagram létrehozása
@@ -100,7 +100,7 @@ Ezzel elkészített egy olyan vizualizációt, amely megmutatja, hogy milyen a s
 
 A fatérkép-diagramhoz szűrőt is hozzáadhat, hogy az további kérdésekre is választ tudjon adni az alkalmazással. 
 
-1. Kattintson a jelentésvászonra, majd a **Vizualizációk** alatt található **Szeletelő ikonra** ( ![Fatérkép-diagram adatokkal](media/reports-create-slicer.png) ).
+1. Kattintson a jelentésvászonra, majd a **Vizualizációk** alatt található **Szeletelő ikonra** ( ![Fatérkép diagram adatokkal](media/reports-create-slicer.png) ).
 2. Keresse meg az **ownerTypes** táblát, majd az **ownerTypeName** adatmezőt húzza a **Vizualizációk** panelen található **Szűrők** szakaszba.  
    Az eszközök táblában van egy **OwnerTypeKey** nevű adatmező, amely azt a kódot tartalmazza, amely azt jelzi, hogy az eszköz vállalati vagy személyes tulajdonú-e. Mivel ebben a szűrőben egyszerű neveket célszerű használni, keresse meg az **ownerTypes** táblát, és húzza el az **ownerTypeName** mezőt. Ebből a példából láthatja, hogyan támogatja az adatmodell a táblák közötti kapcsolatokat.
 
@@ -108,8 +108,8 @@ A fatérkép-diagramhoz szűrőt is hozzáadhat, hogy az további kérdésekre i
 
 Ezzel létrehozott egy olyan interaktív szűrőt, amelyben egyszerű váltással meg lehet tekinteni, milyen eloszlásban vannak a vállalatnál vállalati és személyes tulajdonú eszközök.
 
-1. A **Vállalati** lehetőségre kattintva a vállalati eszközök eloszlása látható.
-2. A **Személyes** lehetőségre kattintva a személyes tulajdonú eszközök nézhetők meg.
+1. A **Vállalati** lehetőséget választva a vállalati eszközök eloszlása jeleníthető meg.
+2. A **Személyes** lehetőséget választva a személyes tulajdonú eszközök tekinthetők meg.
 
 ## <a name="next-steps"></a>További lépések
 

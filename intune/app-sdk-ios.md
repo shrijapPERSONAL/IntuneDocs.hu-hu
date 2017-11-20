@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -159,7 +159,24 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
 11. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, karakterlánctömbként vegye fel ezeket a csoportokat az **IntuneMAMSettings** szótárba a `AppGroupIdentifiers` kulcs alatt.
 
+## <a name="using-the-intune-mam-configurator-tool"></a>Az Intune MAM Configurator eszköz használata
 
+Az Intune MAM Configurator eszköz már az info.plist fájlon az SDK manuális integrálásához szükséges összes műveletet kezeli. Az iOS rendszerhez készült Intune App SDK tárházában található meg. Az alkalmazás nem kezeli az olyan további alkalmazásspecifikus beállításokat, mint például a Multi-ID vagy az AAD-beállítások. Az eszköz 3 paraméterrel rendelkezik:
+ 
+|Tulajdonság|Használat|
+|---------------|--------------------------------|
+|- i |  `<Path to the input plist>` |
+|- e | A jogosultságokat tartalmazó fájlok |
+|- o |  (Elhagyható) `<Path for the changed input plist>` |
+    
+Az Intune MAM Configurator eszköz használatával a következők frissíthetők:
+* Az alkalmazás bármely fő storyboard- és/vagy fő Nib-fájlja az IntuneMAMSettings szótárban.
+* Az alkalmazás bármelyik, az Info.plist fájlban meghatározott és az -intunemam utótaggal rendelkező URL-sémája.
+* Az alkalmazás az Info.plist fájlban meghatározott egyes dokumentumtípusainak „Document Content Type UTIs” tömbjeinél megkettőzi azokat a bejegyzéseket, amelyek karakterlánca tartalmazza a „com.microsoft.intune.mam” előtagot.
+* Az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportokat hozzáadja az IntuneMAMSettings szótárhoz az AppGroupIdentitifiers kulcs karakterlánctömbjeként.
+
+    
+>[!NOTE] Ha az info.plist fájl manuális módosítása helyett az eszköz használata mellett dönt, akkor javasolt azt az alkalmazás info.plist fájljának vagy jogosultságainak módosítása után mindig újból futtatni.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Az Azure Active Directory Authentication Library (ADAL) konfigurálása (nem kötelező)
 

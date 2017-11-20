@@ -1,7 +1,7 @@
 ---
 title: "Az Intune alkalmazáskonfigurációs szabályzatai | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Megtudhatja, hogyan használhatja az Intune alkalmazáskonfigurációs szabályzatait."
+description: "Ismerkedés az Intune alkalmazáskonfigurációs szabályzatainak használatával."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Az Intune alkalmazáskonfigurációs szabályzatai
 
 A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott iOS- és Android-alkalmazásokhoz. Egy alkalmazás kérheti a felhasználótól például a következők megadását:
 
-- Egyéni portszám
-- Nyelvi beállítások
-- Biztonsági beállítások
-- Márkajelzési beállítások, például a vállalat logója
+- Egyéni portszám.
+- Nyelvi beállítások.
+- Biztonsági beállítások.
+- Márkajelzési beállítások, például a vállalat logója.
 
 Ha ezeket a beállításokat a felhasználó helytelenül adja meg, az növelheti a segélyszolgálatra nehezedő terheket, és lelassíthatja az új alkalmazások bevezetését.
 
@@ -38,7 +38,7 @@ A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz ren
 
 Az Intune alkalmazáskonfigurációinak használatára két lehetőség van:
  - **Felügyelt eszközök**  
-   Az eszköz MDM-szolgáltatója az Intune.
+   Az eszköz mobileszköz-kezelő (MDM) szolgáltatója az Intune.
  - **Felügyelt alkalmazások**  
    Az alkalmazás eszközregisztráció nélküli felügyelet alá tartozik.
 
@@ -46,7 +46,7 @@ Az Intune alkalmazáskonfigurációinak használatára két lehetőség van:
 
 Az alkalmazáskonfigurációs szabályzatokat az azokat támogató alkalmazásokhoz használhatja. Az Intune alkalmazáskonfigurációjának támogatásához az alkalmazásoknak támogatniuk kell az alkalmazáskonfigurációk használatát. Részletekért forduljon az alkalmazás forgalmazójához.
 
-Előkészítheti az üzletági alkalmazásait az Intune App SDK az alkalmazásba való belefoglalásával, vagy az alkalmazás burkolásával annak fejlesztése után. Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. További információ: [Az Intune App SDK áttekintése](app-sdk.md).
+Előkészítheti az üzletági alkalmazásokat az Intune App SDK az alkalmazásba való belefoglalásával, vagy az alkalmazás annak fejlesztése utáni burkolásával. Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. További információ: [Az Intune App SDK áttekintése](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API-támogatás az alkalmazáskonfigurációhoz
 
