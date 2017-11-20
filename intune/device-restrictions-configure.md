@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8beabb21df8b122b7a1dd18a698a8075604046b5
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b61ad1c0a114c8a66c174fa34c4520e2f6c6244a
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Az eszközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
@@ -29,7 +29,7 @@ Az eszközkorlátozások révén számos olyan kategóriában szabályozhatja a 
 
 A témakörben található információk alapján megismerheti az eszközkorlátozási profilok konfigurálásának alapjait, és az egyes platformokra vonatkozó további témakörökben bővebben is olvashat az eszközök tulajdonságairól.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
+Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása:
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
@@ -57,11 +57,14 @@ A témakörben található információk alapján megismerheti az eszközkorlát
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-Ha szeretné a profilt csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
+Ha szeretné a profil csoportokhoz való hozzárendelésével folytatni, erről a [How to assign device profiles](device-profile-assign.md) (Eszközprofilok hozzárendelése) című témakörben olvashat.
 
-## <a name="example-of-device-restriction-settings"></a>Eszközkorlátozási beállítások – példa
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
-Ebben a magas szintű példában egy olyan eszközkorlátozási szabályzatot hozhat létre, amely letiltja a beépített kameraalkalmazás használatát az androidos eszközökön.
+## Example of device restriction settings
 
-![A kamera letiltása androidos eszközökön](./media/disable-android-camera.png)
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
+
+-->

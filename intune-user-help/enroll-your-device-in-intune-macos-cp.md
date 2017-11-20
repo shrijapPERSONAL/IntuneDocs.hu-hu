@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,36 +16,50 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
-[!INCLUDE[macos-preview-1708](./includes/macos-preview-1708.md)]
+A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés megkönnyíti a munkavégzést. A szervezet az Intune-t [azon erőforrásokhoz való hozzáférés kezelésére](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md) használja, amelyekhez a macOS-hez készült Céges portál alkalmazás letöltése szükséges. Ezek az utasítások az OS X El Capitan 10.11 vagy újabb rendszerű macOS-eszközök esetében működnek.
 
-A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés megkönnyíti a munkavégzést. A szervezet az Intune-t [azon erőforrásokhoz való hozzáférés kezelésére](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) használja, amelyekhez a macOS-hez készült Céges portál alkalmazás letöltése szükséges. Ezek az utasítások az OS X El Capitan 10.11 vagy újabb rendszerű macOS-eszközök esetében működnek.
+> [!NOTE]
+> A macOS régebbi verzióit futtató macOS-eszközök regisztrálásához [itt](enroll-your-device-in-intune-macos-legacy.md) talál útmutatást.
 
-  > [!NOTE]
-  > Ha iOS-eszközt (iPhone-t vagy iPadet) szeretne regisztrálni, [ezt az útmutatást kövesse inkább](enroll-your-device-in-intune-ios.md).
+1. A __Dock__ területén keresse meg a __Safari__ böngészőt, nyisson meg egy új ablakot, majd keresse fel a [Munkahelyi portál webhelyét](https://portal.manage.microsoft.com).
 
-1.  A __Dock__ menüben keresse meg a __Safarit__, majd nyissa meg az [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal) címet. 
+2. Jelentkezzen be a Munkahelyi portál webhelyre a munkahelyi vagy az iskolai fiókjával.
 
-2. Töltse le az alkalmazást. A Mac-eszköz ellenőrzi, hogy a letöltött **CompanyPortal.dmg** fájl megnyitása biztonságos-e. Miután megnyitotta a fájlt a **Letöltések** mappában, húzza át a **CompanyPortal** alkalmazást az **Alkalmazások** mappába.
+[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Nyissa meg az **Alkalmazások** mappát vagy a **Kezdőpanelt**, majd a **Céges portált**.
+3. Bejelentkezés után kattintson az oldal jobb felső sarkában található **Menü**re, és válassza a **Saját eszközök** elemet.
 
-4. A Mac-eszköz ekkor az alábbi szövegű üzenetet jeleníti meg: **A „CompanyPortal” az internetről letöltött alkalmazás. Biztosan megnyitja?** Kattintson a **Megnyitás** gombra.
+   ![Képernyőkép a webes portál kezdőlapjáról, amelyen látható, hogy még nincsenek telepíthető alkalmazások. Alul a Saját eszközök gomb jelenik meg.](./media/macOS_enroll_001_landing_page.png)
+
+4. A __Saját eszközök__ lapon a regisztrált eszközök listája vagy egy szalagcím látható. A megjelenített tartalom attól függ, hogy Önnek van-e már macOS vagy egyéb rendszerű regisztrált eszköze. A listán nem szereplő eszközök regisztrálásához válassza a következő feliratú szalagcímet: __Ha az eszköz szerepel a listán, koppintson ide az azonosításhoz. Akkor is koppintson ide, ha a listán nem szereplő eszközt szeretne regisztrálni__. Ha nincs regisztrált eszköze, a szalagcímen ez a szöveg lesz látható: **Önnek nincsenek regisztrált eszközei. Ezt az eszközt ide kattintva regisztrálhatja.**
+
+    ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+
+5. A regisztráció folytatásához töltse le macOS-eszközére a Céges portál alkalmazást.
+
+    ![Ez az értesítés szólítja fel a felhasználót a macOS rendszerhez készült Céges portál alkalmazás letöltésére. Az értesítés szövege a jobb alsó sarokban lévő „Letöltés” feliratú gomb felett jelenik meg.](./media/macOS_enroll_IWP_CP_app_notice.png)
+
+6. A Mac-eszköz ellenőrzi, hogy a letöltött **CompanyPortal.pkg** fájl megnyitása biztonságos-e. Indítsa el a telepítőt és végezze el a telepítés lépéseit.
+
+7. Miután a telepítés befejeződött, nyissa meg az **Alkalmazások** mappát vagy a **Kezdőpanelt**, majd a **Céges portált**.
+
+8. A Mac-eszköz ekkor az alábbi szövegű üzenetet jeleníti meg: **A „CompanyPortal” az internetről letöltött alkalmazás. Biztosan megnyitja?** Kattintson a **Megnyitás** gombra.
 
   > [!NOTE]
   > Az Intune-nak hozzá kell férnie a számítógépéhez, enélkül nem tud meggyőződni arról, hogy elég biztonságos-e az eszköz a vállalat erőforrásainak eléréséhez. Ha a számítógép elutasítja a Céges portál alkalmazás megnyitását, próbálja meg [kikapcsolni a forgalomirányítót](https://support.apple.com/HT202491), majd ezután megnyitni az alkalmazást.
 
-6. A Céges portál alkalmazás elsőként megjelenő képernyője arra kéri, hogy ugyanazzal a munkahelyi vagy iskolai fiókkal **jelentkezzen be**, amelyet a Céges portál webhelyére való bejelentkezéshez is használt.
+9. A Céges portál alkalmazás elsőként megjelenő képernyője arra kéri, hogy ugyanazzal a munkahelyi vagy iskolai fiókkal **jelentkezzen be**, amelyet a Céges portál webhelyére való bejelentkezéshez is használt.
 
-7. A Céges portál megerősíti a fiókadatokat, majd megjeleníti az **Eszközök beléptetése** és az **Eszközmegfelelőség** állapotát. A megjelenő sárga háromszögek arról tájékoztatják, hogy bizonyos műveletek elvégzése válik szükségessé annak biztosítása érdekében, hogy Mac-eszköze biztonságosan használható legyen a munkahelyen. A **Kezdés** gombra kattintva elkezdheti az [eszköz felügyeletre való regisztrálását](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+10. A Céges portál megerősíti a fiókadatokat, majd megjeleníti az **Eszközök beléptetése** és az **Eszközmegfelelőség** állapotát. A megjelenő sárga háromszögek arról tájékoztatják, hogy bizonyos műveletek elvégzése válik szükségessé annak biztosítása érdekében, hogy Mac-eszköze biztonságosan használható legyen a munkahelyen. A **Kezdés** gombra kattintva elkezdheti az [eszköz felügyeletre való regisztrálását](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-8. A Mac-eszköz ekkor elkezdi a felügyeletre való regisztrálást. Előfordulhat, hogy a művelet időtartama alatt a rendszer a számítógépre vonatkozó bejelentkezési adatok megadására kéri. A regisztrációs folyamat igénybe vehet néhány percet. Ezalatt végezhet egyéb műveleteket a számítógépen. A Vállalati hozzáférés beállításának befejezése után megjelenő üzenet a folyamat lezárulásáról tájékoztat.
+11. A Mac-eszköz ekkor elkezdi a felügyeletre való regisztrálást. Előfordulhat, hogy a művelet időtartama alatt a rendszer a számítógépre vonatkozó bejelentkezési adatok megadására kéri. A regisztrációs folyamat igénybe vehet néhány percet. Ezalatt végezhet egyéb műveleteket a számítógépen. A Vállalati hozzáférés beállításának befejezése után megjelenő üzenet a folyamat lezárulásáról tájékoztat.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatási szolgálatához. A kapcsolatfelvételi adatait megtalálja a [Munkahelyi portál webhelyén](https://portal.manage.microsoft.com).

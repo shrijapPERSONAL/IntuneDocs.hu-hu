@@ -3,10 +3,10 @@ title: "Regisztrációs korlátozások beállítása az Intune-ban"
 titlesuffix: Azure portal
 description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban. \""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -33,7 +33,7 @@ Az Intune rendszergazdájaként meghatározhatja, hogy mely eszközöket lehesse
   - iOS
   - macOS
   - Windows
-- Az operációs rendszer verziója (csak iOS és Android esetén)
+- A platform operációsrendszer-verziója iOS, Android és Windows esetén (csak a Windows 10 verziói használhatók, ha a Windows 8.1 használata engedélyezett, akkor ezt a részt hagyja üresen)
   - Minimális verzió
   - Maximális verzió
 - Személyes tulajdonú eszközök korlátozása (csak iOS, Android vagy macOS esetén)
@@ -55,7 +55,7 @@ Az alapértelmezett regisztrációs korlátozások minden felhasználós és fel
 
   Kattintson a **Mentés**gombra.
 6. A **Minden felhasználó** alatt válassza a **Platformkonfigurációk** lehetőséget, és adja meg a következő beállításokat. Az engedélyezett platformok esetén a következő lehetőségeket konfigurálhatja:
-  - **Verzió** – Adja meg az operációs rendszer **Minimális** és **Maximális** verzióját Android- és iOS-eszközökhöz. Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programmal, az Apple School Manager programmal, vagy az Apple Configurator alkalmazással regisztrált eszközökre.
+  - **Verzió** – Adja meg az operációs rendszer **Minimális** és **Maximális** verzióját Android-, iOS-, vagy Windows-eszközökhöz. Az Android a főverzió.alverzió.változat.build formátumot támogatja. Az iOS a főverzió.alverzió.változat formátumot támogatja. A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén. Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre. 
   - **Személyes tulajdonú** – Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az Android-, iOS- és macOS-eszközökhöz.
   ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatform-konfigurációval, ahol a személyes tulajdonú eszközök beállításai meg vannak adva.](media/device-restrictions-platform-configurations.png)
   Kattintson a **Mentés**gombra.

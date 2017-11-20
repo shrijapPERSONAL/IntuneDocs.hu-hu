@@ -3,10 +3,10 @@ title: "Wi-Fi-profil létrehozása előmegosztott kulccsal"
 titleSuffix: Azure portal
 description: "Előmegosztott kulccsal ellátott Wi-Fi profil létrehozása egyéni Intune-eszközprofillal.”"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni Microsoft Intune-eszközprofillal
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni eszközprofil segítségével
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ebből a cikkből megtudhatja, hogyan hozhat létre előmegosztott kulccsal ellátott Wi-Fi profilt az Intune **Egyéni konfiguráció** funkciójával. A témakörben szereplő példa pedig elmagyarázza, hogyan hozzon létre EAP-alapú Wi-Fi-profilt.
@@ -205,3 +205,12 @@ Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
     Érdemes olyan számítógépet választani, amely még nem kapcsolódott túl sok vezeték nélküli hálózathoz, mivel az összes profilt át kell néznie, hogy megtalálja a megfelelőt.
 3.     Keresse meg a kívánt nevű XML-fájlt.
 4.     Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal Adat mezőjébe.
+
+## <a name="best-practices"></a>Gyakorlati tanácsok
+A Wi-Fi-profil PSK használatával való üzembe helyezése előtt ellenőrizze, hogy az eszköz tud-e közvetlenül kapcsolódni a végponthoz.
+
+Kulcsok (jelszavak és hozzáférési kódok) cseréjekor számítson üzemszünetre, és az üzembe helyezést ennek figyelembe vételével tervezze meg. A Wi-Fi-profilok leküldését ajánlatos munkaidőn kívülre időzíteni. A felhasználókat is figyelmeztesse a kapcsolat esetleges kimaradására.
+ 
+A zökkenőmentes átmenet és a szabályzatfrissítések időben történő továbbítása érdekében az eszközöknek legalább egy kommunikációs csatornát nyitva kell tartaniuk az Intune felé. Ehhez használhatja a mobilkapcsolatot, vagy biztosíthat olyan Wi-Fi-vendéghozzáférést, mely csak az Intune-végpontokkal köti össze a felhasználókat.
+
+

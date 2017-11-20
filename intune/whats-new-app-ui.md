@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+
+## <a name="week-of-november-6-2017"></a>2017. November 6-i hét
+
+### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Újdonságok a Céges portál alkalmazás és webhely keresési funkcióiban <!--1418189-->
+A Céges portál alkalmazások mostantól alkalmazáskategóriák és nevek közötti, illetve leírásokban való kereséseket is használnak. Az eredmények relevancia alapján csökkenő sorrendben jelennek meg. Ezek az újdonságok a [Céges portál webhelyen](https://portal.manage.microsoft.com) is elérhetők.
+
+A relevancia megállapításának finomításán még dolgozunk, ezért várjuk a tapasztalatokkal kapcsolatos visszajelzéseket, melyek a Céges portál weboldalának alján található „Visszajelzés” hivatkozást használva küldhetők el.
+
+
 
 ## <a name="week-of-october-16-2017"></a>2017. október 16-i hét
 

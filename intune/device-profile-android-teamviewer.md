@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Távsegítség nyújtása az Intune által felügyelt eszközökhöz
 
@@ -29,13 +29,10 @@ Az Intune-ból a külön megvásárolható [TeamViewer](https://www.teamviewer.c
 
 ### <a name="supported-devices"></a>Támogatott eszközök
 
-A távfelügyeletet az alábbi Intune-nal felügyelt eszközök támogatják:
-
-- Intune-nal felügyelt Android-eszközök
-- Windows 10, Windows 10 Mobile és újabb rendszereket futtató, az Intune által felügyelt Windows-eszközök.
+Az Intune-nal felügyelt Android- és Windows-eszközök támogatják a távfelügyeletet.
 
 >[!NOTE]
->A TeamViewer szoftver nem támogatja a Windows Holographic (HoloLens), a Windows Team (Surface Hub) és a Windows 10 S rendszereket
+>A TeamViewer szoftver nem támogatja a Windows Holographic (HoloLens), a Windows Team (Surface Hub) és a Windows 10 S rendszereket. 
 
 
 

@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Regisztráció manuális törlése** – Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
 -   **Főtanúsítvány manuális telepítése (csak mobileszköz)** – Letiltja a felhasználó számára a főtanúsítványok és a köztes szolgáltatói tanúsítványok manuális telepítését.
 -   **Diagnosztikai adatok küldése** – A lehetséges értékek a következők:
-    -       **Nincs** – Az eszköz nem küld adatokat a Microsoftnak.
-    -       **Alapszintű** – Az eszköz korlátozott információkat küld a Microsoftnak
-    -       **Bővített** – Az eszköz bővebb diagnosztikai adatokat küld a Microsoftnak
-    -       **Teljes** – A Bővített beállítással küldött adatok mellett az eszköz állapotával kapcsolatos információkat is küld.
+    - **Nincs** – Az eszköz nem küld adatokat a Microsoftnak
+    - **Alapszintű** – Az eszköz korlátozott információkat küld a Microsoftnak
+    - **Bővített** – Az eszköz bővebb diagnosztikai adatokat küld a Microsoftnak
+    - **Teljes** – A Bővített beállítással küldött adatok mellett az eszköz állapotával kapcsolatos információkat is küld.
 -   **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
 -   **OneDrive-fájlszinkronizálás** – Letiltja az eszköz fájljainak OneDrive-ba való szinkronizálását.
 -   **Cserélhető tároló** – Meghatározza, hogy az eszközzel használható-e külső tárolóeszköz, például SD-kártya.
@@ -105,6 +105,7 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 
 ## <a name="edge-browser"></a>Edge böngésző
+
 -   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
 -   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek az Edge és a Microsoft szolgáltatásai közötti használatát.
 -   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és az Edge között.
@@ -180,6 +181,44 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
     -   **Könnyű kezelés** – Letiltja a hozzáférést a Gépház alkalmazás Könnyű kezelés területéhez.
     -   **Adatvédelem** – Letiltja a hozzáférést a Gépház alkalmazás Adatvédelem területéhez.
     -   **Frissítés és biztonság** – Letiltja a hozzáférést a Gépház alkalmazás Frissítés és biztonság területéhez.
+
+## <a name="kiosk"></a>Kioszkmód
+
+-   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) típusát.  A lehetőségek a következők:
+
+      - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
+      - **Egyalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz egy alkalmazást futtasson teljes képernyőn.
+      - **Többalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz több alkalmazást futtasson teljes képernyőn.
+
+    Az egyalkalmazásos kioszkokhoz a következő beállítások szükségesek:
+
+      - **Felhasználói fiók** – Megadja a teljes képernyős alkalmazáshoz társított (az eszközön) helyi felhasználói fiókot, vagy az Azure AD-fiókot.  Az Azure AD-tartományokhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
+
+         A nyilvános környezetben található eszközök esetében a jogosulatlan tevékenység kizárása érdekében minimális jogosultsággal rendelkező fiókokat kell használni.  
+
+      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját.  További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
+
+    Több alkalmazás teljes képernyőn való futtatásához kioszkkonfigurációra van szükség.  Hozzon létre kioszkkonfigurációt a **Hozzáadás** gomb használatával, vagy válasszon egy meglévőt.
+
+    A többalkalmazásos kioszkkonfigurációk az alábbi beállításokat tartalmazzák:
+
+    - **Kioszkkonfiguráció neve** – Egy adott konfiguráció azonosítására szolgáló felhasználóbarát név.
+
+    - Egy vagy több **teljes képernyős alkalmazás**, melyek a következőkből állnak:
+
+        - A teljes képernyős alkalmazás típusát megadó **Alkalmazástípus**.  Támogatott értékei egyebek mellett a következők:   
+
+            - **Win32-alkalmazás** – Hagyományos asztali alkalmazás.  (A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.)
+
+            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás.  [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
+
+        - **Alkalmazásazonosító** – Vagy a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén), vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén) adja meg.
+
+    - A **Tálca** azt jelzi, hogy a tálca a teljes képernyőn megjelenik-e (**Engedélyezve**) vagy sem (**Nincs konfigurálva**).
+
+    - **Start menü elrendezése** – Megad egy XML-fájlt, amely leírja az alkalmazások [megjelenését a Start menüben](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Hozzárendelt felhasználók** – Egy vagy több, a kioszkkonfigurációhoz társított felhasználói fiókot ad meg.  Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva.  A tartományhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

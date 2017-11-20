@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2383d41c52618710a1d42f0b2236d41d117b42be
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatok androidos beállításai
 A jelen témakörben ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
@@ -90,3 +90,5 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 | **Az Android operációs rendszer minimális verziójának megkövetelése (csak figyelmeztetés)** | Az **Igen** lehetőség kiválasztásával megkövetelheti az Android operációs rendszer minimális verzióját az alkalmazás használatakor. A felhasználó értesítést fog kapni, ha az Android operációs rendszer eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető. | Nem |
 | **Az alkalmazás minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek.<br><br>A megcélzandó alkalmazások kiválasztásakor vegye figyelembe, hogy az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek.<br><br> | Nem | 
 | **Az alkalmazás minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójára vonatkozó javaslat megjelenítéséhez. A felhasználó értesítést fog kapni, ha az alkalmazásnak az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br>A megcélzandó alkalmazások kiválasztásakor vegye figyelembe, hogy az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek.<br><br> | Nem | 
+| **Az Android minimálisan előírt biztonsági javítási szintje** | A Google által kiadott Android biztonsági javítás minimális szintjének előírásához válassza az **Igen** lehetőséget. A felhasználó hozzáférése le lesz tiltva, ha az Android operációs rendszer az eszközön lévő biztonsági javítási szintje nem felel meg a követelménynek. | Nem |
+| **Az Android minimálisan előírt biztonsági javítási szintje (csak figyelmeztetés)** | A Google által kiadott Android biztonsági javítás minimális szintjének előírásához válassza az **Igen** lehetőséget. A felhasználó értesítést kap, ha az Android operációs rendszer az eszközön lévő biztonsági javítási szintje nem felel meg a követelménynek. Az értesítés elvethető. | Nem |

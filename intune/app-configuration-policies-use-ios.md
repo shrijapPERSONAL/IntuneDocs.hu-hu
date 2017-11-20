@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
@@ -40,34 +40,40 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
 3. Válassza a **Mobilalkalmazások** panelt.
-4. A **Felügyelet** csoportban válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget, majd kattintson a **Hozzáadás** gombra.
+4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
-    - **Név**  
+    - **Név**<br>
       Az Azure Portalon megjelenő profilnév.
-    - **Leírás**  
+    - **Leírás**<br>
       Az Azure Portalon megjelenő profilleírás.
-    - **Eszközbeléptetés típusa**  
+    - **Eszközbeléptetés típusa**<br>
       Válasza a **Felügyelt eszközök** lehetőséget.
 6. A **Platform** beállításban válassza az **iOS** lehetőséget.
-7.  Válassza a **Társított alkalmazás** elemet, majd a **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné.
+7.  Válassza a **Társított alkalmazás** lehetőséget. A **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné.
 8.  A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Konfigurációs beállítások** lehetőséget.
-9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. Válassza az alábbi lehetőségek egyikét:
+9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. Válasszon az alábbi lehetőségek közül:
     - **[Konfigurációtervező használata](#Use-the-configuration-designer)**
     - **[XML-adatok megadása](#enter-xml-data)**
-10. Kattintson az **OK** gombra, majd a **Hozzáadás** lehetőségre.
+10. Válassza az **OK**, majd a **Hozzáadás** gombot.
 
 ## <a name="use-configuration-designer"></a>A configuration designer használata
 
-A konfigurációtervezőt olyan eszközökön található alkalmazásokhoz használhatja, amelyek regisztrálva vannak vagy nincsenek regisztrálva az Intune-ban. A tervezővel konkrét konfigurációs kulcsokat és értékeket konfigurálhat. Az értékekhez az adattípust is meg kell adnia. A beállítások megadása ezen alkalmazások számára az alkalmazás telepítésekor automatikusan történik.
+A konfigurációtervezőt olyan eszközökön található alkalmazásokhoz használhatja, amelyek regisztrálva vannak vagy nincsenek regisztrálva az Intune-ban. A tervezővel konkrét konfigurációs kulcsokat és értékeket konfigurálhat. Az értékekhez az adattípust is meg kell adnia. A beállítások megadása ezen alkalmazások számára azok telepítésekor automatikusan történik.
 
 ### <a name="add-a-setting"></a>Beállítás hozzáadása
 
-1. A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat: <ul><li>**Konfigurációs kulcs**<br>Ez egyedi azonosítóként szolgál az adott beállításkonfigurációhoz.</li><li>**Érték típusa**<br>A konfigurációs érték adattípusa. A típus az alábbiak egyike: egész szám, valós szám, karakterlánc vagy logikai.</li><li>**Konfigurációs érték**<br>A konfiguráció értéke.</li></ul>
-2. A konfigurációs beállítások megadásához kattintson az **OK** gombra.
+1. A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:
+   - **Konfigurációs kulcs**<br>
+     Az adott beállításkonfigurációhoz egyedi azonosítóként szolgáló kulcs.
+   - **Érték típusa**<br>
+     A konfigurációs érték adattípusa. A típus az alábbiak egyike: egész szám, valós szám, karakterlánc vagy logikai.
+   - **Konfigurációs érték**<br>
+     A konfiguráció értéke.
+2. A konfigurációs beállítások megadásához válassza az **OK** gombot.
 
 ### <a name="delete-a-setting"></a>Beállítás törlése
 
-1. Kattintson a beállítás melletti három pontra (…).
+1. Válassza a beállítás melletti három pontot (**...**).
 2. Válassza a **Törlés** elemet.
 
 A \{\{ és \}\} karaktereket csak a tokentípusok használják, ezek más célokra nem használhatók.
@@ -76,13 +82,12 @@ A \{\{ és \}\} karaktereket csak a tokentípusok használják, ezek más célok
 
 Beírhat vagy beilleszthet egy XML-tulajdonságlistát, amelyben a kívánt alkalmazáskonfigurációs beállítások szerepelnek (Intune-ban regisztrált eszközök esetén adható meg). Az XML-tulajdonságlista formátuma a konfigurálni kívánt alkalmazás függvényében eltérő. A használandó formátummal kapcsolatban forduljon az alkalmazás szállítójához.
 
-Az Intune ellenőrzi az XML-formátumot, azt azonban nem, hogy az XML-tulajdonságlista működni fog-e a célalkalmazással.
-Az XML-tulajdonságlistákkal kapcsolatos további információért tekintse meg [Az XML-tulajdonságlisták ismertetése] című témakört
+Az Intune ellenőrzi az XML-formátumot, azt azonban nem, hogy az XML-tulajdonságlista (PList) működni fog-e a célalkalmazással.
 
 További információ az XML-tulajdonságlistákról:
 
   -  [iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-  -  Tekintse meg az [Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Az XML Plist ismertetése) című témakört az iOS Developer Libraryben.
+  -  Tekintse meg az [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Az XML-tulajdonságlisták ismertetése) című témakört az iOS Developer Libraryben.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Alkalmazáskonfigurációs XML-fájl példaformátuma
 
@@ -126,15 +131,15 @@ Az Intune a következő adattípusokat támogatja a tulajdonságlistákban:
 ### <a name="tokens-used-in-the-property-list"></a>A tulajdonságlistában használt tokenek
 
 Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlistában:
-- \{\{userprincipalname\}\} – (példa: **John@contoso.com**)
-- \{\{mail\}\} – (példa: **John@contoso.com**)
-- \{\{partialupn\}\} – (Példa: **János**)
-- \{\{accountid\}\} – (Példa: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} – (Példa: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} – (Példa: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} – (Példa: **Kovács János**)
-- \{\{serialnumber\}\} – (Példa: **F4KN99ZUG5V2**) iOS-eszközök esetében
-- \{\{serialnumberlast4digits\}\} – (Példa: **G5V2**) iOS-eszközök esetében
+- \{\{userprincipalname\}\} — például **John@contoso.com**
+- \{\{mail\}\} — például **John@contoso.com**
+- \{\{partialupn\}\} — például **János**
+- \{\{accountid\}\} — például **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\} — például **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\} — például **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\} — például **Szabó János**
+- \{\{serialnumber\}\} — például **F4KN99ZUG5V2** (iOS-eszközök esetén)
+- \{\{serialnumberlast4digits\}\} — például **G5V2** (iOS-eszközök esetén)
 
 ## <a name="next-steps"></a>További lépések
 

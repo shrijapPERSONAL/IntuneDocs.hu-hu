@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A Windows 10 rendszerű eszközök frissítésére a Windows szoftverszolgáltatás használható. A Windows 10-ben az új funkció- és minőségi frissítések magukban foglalják valamennyi korábbi frissítés tartalmát. Ennek köszönhetően a legújabb frissítés telepítésével biztosítható, hogy a Windows 10 eszközök teljesen naprakészek legyenek. A Windows korábbi verzióitól eltérően a frissítés egy része helyett már a teljes frissítést telepíteni kell.
+A Windows 10 rendszerű eszközök frissítésére a Windows szoftverszolgáltatás használható. A Windows 10-ben az új funkció- és minőségi frissítések magukban foglalják valamennyi korábbi frissítés tartalmát. Ennek köszönhetően a legújabb frissítés telepítésével biztosítható, hogy a Windows 10 rendszerű eszközök naprakészek legyenek. A Windows korábbi verzióitól eltérően a frissítés egy része helyett már a teljes frissítést telepíteni kell.
 
 A Vállalati Windows Update használatával egyszerűbbé válik a frissítések kezelése, így nem szükséges külön jóváhagyni az egyes frissítéseket az eszközcsoportokhoz. A különböző környezetekben továbbra is kezelhetők a kockázatok egy frissítéstelepítési stratégia konfigurálásával, és a Windows Update gondoskodik a frissítések megfelelő időpontban történő telepítéséről. A Microsoft Intune lehetővé teszi a frissítési beállítások konfigurálását az eszközökön és a frissítések telepítésének késleltetését. Az Intune nem tárolja a frissítéseket, csak a frissítési szabályzat-hozzárendelést. Az eszközök közvetlenül a Microsoft Update-hez fordulnak a frissítésekért. A **Windows 10 frissítési körök** az Intune használatával konfigurálhatók és kezelhetők. A frissítési kör olyan beállításokat tartalmaz, amelyek a Windows 10 frissítések telepítésének ütemezését és mikéntjét konfigurálják. Megadhatja például a következő beállításokat:
 
-- **Windows 10 karbantartási ág**: Kiválasztható, hogy az eszközcsoportok az aktuális ág vagy az aktuális üzleti ág frissítéseit kapják meg.  
+- **Windows 10 karbantartási csatorna**: Eldöntheti, hogy az eszközcsoportok a célzott féléves csatornán vagy a féléves csatornán kapjanak frissítéseket.  
 - **Halasztó beállítások**: A frissítéseket halasztó beállítások megadásával késleltethető a frissítések telepítése az eszközcsoportokon. Ezzel a beállítással a lépésenkénti frissítési terv alapján a folyamat végig nyomon követhető.
 - **Felfüggesztés**: A frissítések telepítésének felfüggesztése, ha a frissítési terv bármely pontján probléma merülne fel.
 - **Karbantartási időszak**: Megadható egy időszak, amelyben a frissítések telepíthetők.
@@ -78,7 +78,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 5. A frissítési körök listáját megjelenítő panelen válassza a **Létrehozás** lehetőséget.
 6. A **Frissítési kör létrehozása** panelen adjon meg egy nevet és igény szerint leírást a frissítési körhöz, majd válassza a **Beállítások** lehetőséget.
 7. A **Beállítások** panelen konfigurálja az alábbi adatokat:
-    - **Karbantartási ág**: Válassza ki, hogy az eszköz az aktuális ág (Current Branch) vagy az aktuális üzleti ág (Current Branch for Business) Windows-frissítéseit kapja meg.
+    - **Karbantartási csatorna**: Állítsa be, hogy az eszköz a célzott féléves csatornán vagy a féléves csatornán kapjon frissítéseket.
     - **Microsoft frissítések**: Döntse el, hogy kíván-e alkalmazás-frissítéseket keresni a Microsoft Update webhelyen.
     - **Windows-illesztőprogramok**: Döntse el, hogy mellőzni kívánja-e a Windows Update-illesztőprogramokat a frissítések során.
     - **Automatikus frissítés módja**: Válassza ki, hogy milyen módon keressen, töltsön le és telepítsen frissítéseket az automatikus frissítés. További információ:  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
     A minőségi frissítések általában meglévő Windows-funkciók javításai és továbbfejlesztései, és rendszerint minden hónap első keddjén jelennek meg, bár a Microsoft bármikor kibocsáthatja őket. Meghatározhatja, hogy az elérhetővé válásuk után kívánja-e késleltetni a minőségi frissítések fogadását, és ha igen, akkor mennyi ideig.
     - **Funkciófrissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a funkciófrissítéseket. Ezeknek a funkciófrissítéseknek a fogadása a kiadásuktól számítva legfeljebb 180 nappal késleltethető.
 
-    A funkciófrissítések általában új Windows-funkciók. A **Karbantartási ág** (**CB** vagy **CBB**) beállítása után megadhatja, hogy kívánja-e késleltetni a funkciófrissítések fogadását, és ha igen, akkor mennyi ideig attól számítva, hogy elérhetővé válnak a Microsoftnál vagy a Windows Update szolgáltatásban.
+    A funkciófrissítések általában új Windows-funkciók. A **Karbantartási csatorna** beállítás a célzott féléves csatornára vagy a féléves csatornára való konfigurálása után megadhatja, hogy szeretné-e késleltetni a Microsoft által a Windows Update szolgáltatásban közzétett funkciófrissítések fogadását, és ha igen, akkor mennyivel.
 
     Példa:  
-    **Ha a karbantartási ág beállítása CB (aktuális ág) és a késleltetés ideje 30 nap**: Tegyük fel, hogy az X funkciófrissítés CB-ként először januárban válik nyilvánosan elérhetővé a Windows Update-en keresztül. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
+    **Ha a karbantartási csatorna a Féléves csatorna (célzott) értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
 
-    **Ha a karbantartási ág beállítása CBB (aktuális üzleti ág) és a késleltetés ideje 30 nap**: Tegyük fel, hogy az X funkciófrissítés CB-ként először januárban válik nyilvánosan elérhetővé a Windows Update-en keresztül. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a CBB ágon. Az eszköz 30 nappal a CBB megjelenés után fogadja a funkciófrissítést, és májusban frissül.
+    **Ha a karbantartási csatorna a Féléves csatorna értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.
 
     - **Kézbesítés optimalizálása** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Ha minden kész, kattintson az **OK** elemre, majd a **Frissítési kör létrehozása** panelen a **Létrehozás** lehetőségre.

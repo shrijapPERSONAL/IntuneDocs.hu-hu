@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -68,7 +68,7 @@ Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerekt
 3.  A felügyeleti lista **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 4.  Az **Alkalmazáskonfigurációs szabályzatok** panelen kattintson a **Hozzáadás** lehetőségre.
 5.  Az **Alkalmazáskonfiguráció hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
-6.  Az **Eszközregisztráció típusa** lehetőség megadásához válassza a **Felügyelt eszközök** vagy a **Felügyelt alkalmazások** lehetőséget.
+6.  Az **Eszközregisztráció** típusaként válassza a **Felügyelt alkalmazások** lehetőséget.
 7.  Válassza a **Kötelező alkalmazások kiválasztása** elemet, majd a **Célalkalmazások** panelen válassza a **Managed Browser** lehetőséget iOS-hez, Androidhoz vagy igény szerint mindkettőhöz.
 8.  Az **OK** kiválasztásával visszatérhet az **Alkalmazáskonfiguráció hozzáadása** panelre.
 9.  Kattintson a **Konfigurációs beállítások** elemre. A **Konfigurálás** panelen kulcs-érték párok definiálásával adhatja meg a Managed Browserhez szükséges konfigurációkat. A jelen cikk későbbi részeiben további információt talál a definiálható kulcs-érték párokról.
@@ -202,6 +202,22 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>A felügyelt alkalmazások naplóinak elérése a Managed Browser használatával iOS rendszeren
+
+A végfelhasználók, akiknek az iOS-eszközén telepítve van a Managed Browser, a Microsoft által közzétett összes alkalmazás felügyeleti állapotát megtekinthetik. Elküldhetik a naplófájlokat a felügyelt iOS-eszköz hibaelhárítása céljából.
+
+1. Nyissa meg az iOS **beállításait**.
+2. Válassza ki a **Managed Browser** alkalmazás beállításait.
+3. Az **Intune-diagnosztika engedélyezése** kapcsolóval állítsa át a böngészőt hibaelhárítási módba.
+4. Nyissa meg a **Managed Browsert**. Kattintson az **Intune-alkalmazás állapotának megtekintése** lehetőségre az egyéni alkalmazásszabályzat-beállítások áttekintéséhez.
+5. Az **Első lépések**, majd a **Naplók megosztása** vagy a **Naplók küldése a Microsoftnak** lehetőséget választva küldje el a hibaelhárítási naplófájlokat a rendszergazdának vagy a Microsoftnak.
+
+A böngésző az alkalmazásban is megnyitható hibaelhárítási módban.
+
+1. Nyissa meg a Managed Browsert.
+2. A címsorba gépelje be a következőt: `about:intunehelp`
+A böngésző hibaelhárítási módban indul el.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Biztonság és adatvédelem a Managed Browser használatánál
 

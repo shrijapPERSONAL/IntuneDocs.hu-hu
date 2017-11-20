@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 750ce7dbb0dccf08757e076826e2d3650b6e6ab5
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: c46d7e8f4291345a9da87f7a7a6f3180415b69a4
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt alkalmazásokhoz eszközbeléptetés nélkül
 
@@ -30,7 +30,7 @@ Az alkalmazáskonfigurációs szabályzatokat nem regisztrált eszközökön is 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
 3. Válassza a **Mobilalkalmazások** panelt.
-4. A **Felügyelet** csoportban válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget, majd kattintson a **Hozzáadás** gombra.
+4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
     - **Név**  
       Az Azure Portalon megjelenő profilnév.
@@ -39,25 +39,25 @@ Az alkalmazáskonfigurációs szabályzatokat nem regisztrált eszközökön is 
     - **Eszközbeléptetés típusa**  
       Válassza az **Alkalmazások kezelése** lehetőséget.
 6. A konfigurálni kívánt alkalmazás kiválasztásához válassza a **Társított alkalmazás** lehetőséget. Válassza ki a listából azon alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
-7. Az alkalmazás által támogatott konfigurációs beállításokhoz írja be a **Név** és az **Érték** adatokat, majd kattintson a három pontra (**…**).  
-    Egy konfiguráció törléséhez kattintson a három pontra (**...** ), és válassza a **Törlés** lehetőséget.  
-    Az Intune App SDK-kompatibilis alkalmazások támogatják a kulcs-érték pár konfigurációit. Ha többet szeretne megtudni a támogatott kulcs-érték párok konfigurációiról, tekintse meg az egyes alkalmazások dokumentációját.  
+7. Az alkalmazás által támogatott konfigurációs beállítások mindegyikéhez írja be a **Nevet** és az **Értéket**, majd válassza a három pontot (**…**).  
+    Egy konfiguráció törléséhez válassza a három pontot (**...** ), majd a **Törlés** lehetőséget.  
+    Az Intune App SDK-val kompatibilis alkalmazások támogatják a kulcs-érték párokban megadott konfigurációkat. Ha többet szeretne megtudni a támogatott kulcs-érték párokban megadott konfigurációkról, tekintse meg az egyes alkalmazások dokumentációját.  
     Ezen kívül az alkalmazás által létrehozott adatokkal dinamikusan feltöltött tokeneket is használhat.
 
-## <a name="configuration-values-using-tokens"></a>Tokeneket használó konfigurációs értékek
+## <a name="configuration-values-for-using-tokens"></a>Konfigurációs értékek jogkivonatok használatához
 
-Az Intune létrehozhat és elküldhet egyes tokeneket a felügyelt alkalmazásnak. Ha például az alkalmazáskonfigurációja használhat e-mail beállítást, tokennel dinamikus e-mailt adhat hozzá. Írja be az alkalmazás által várt nevet a **Név** mezőbe, majd írja be az **Érték** mezőbe az alábbi értéket: `\{\{mail\}\}`.
+Az Intune képes bizonyos jogkivonatokat generálni és elküldeni a felügyelt alkalmazásnak. Ha például az alkalmazáskonfiguráció használhat e-mail-beállítást, egy jogkivonattal dinamikus e-mailt adhat hozzá. Írja be az alkalmazás által várt nevet a **Név** mezőbe, majd írja be az **Érték** mezőbe az alábbi értéket: `\{\{mail\}\}`.
 
 Az Intune a következő tokentípusokat támogatja a konfigurációs beállítások között:
 
-- \{\{userprincipalname\}\} – (példa: **John@contoso.com**)
-- \{\{mail\}\} – (példa: **John@contoso.com**)
-- \{\{partialupn\}\} – (Példa: **János**)
-- \{\{accountid\}\} – (Példa: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} – (Példa: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} – (Példa: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} – (Példa: **Kovács János**)
-- \{\{PrimarySMTPAddress\}\} – (Példa: testuser@ad.domain.com) 
+- \{\{userprincipalname\}\} — például **John@contoso.com**
+- \{\{mail\}\} — például **John@contoso.com**
+- \{\{partialupn\}\} — például **János**
+- \{\{accountid\}\} — például **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\} — például **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\} — például **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\} — például **Szabó János**
+- \{\{PrimarySMTPAddress\}\}– például**testuser@ad.domain.com** 
 
 
 > [!Note]  

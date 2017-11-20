@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Eszközök regisztrálása a készülékregisztráció-kezelővel
 
@@ -54,6 +54,7 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.
   - A felhasználók nem futtathatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat az eszközökön, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
   - (Csak iOS esetén) Ha eszközregisztráció-kezelővel regisztrálja az iOS-eszközöket, akkor nem használhatja az Apple Configuratort, a Készülékregisztrációs programot (DEP) és az Apple School Manager (ASM) programot az eszközök regisztrálására.
+  - (Csak Android esetén) Az adott DEM-fiókkal regisztrálható Android for Work-eszközök száma korlátozott. DEM-fiókonként legfeljebb tíz androidos munkahelyi profillal rendelkező eszközt lehet regisztrálni. Ez a korlátozás a hagyományos Android-eszközök regisztrációjára nem vonatkozik.
   - Mindegyik eszközhöz eszközlicenc szükséges. További információ a [felhasználói és eszközlicencekről](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
