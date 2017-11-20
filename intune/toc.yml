@@ -608,19 +608,23 @@
         - name: Az adattárház adatmodellje
           href: reports-ref-data-model.md
           items:
+            - name: A felhasználói élettartam reprezentációja az Intune-adattárházban
+              href: reports-ref-user-timeline.md
             - name: Alkalmazás-entitások referencia
               href: reports-ref-application.md
+            - name: Aktuális felhasználó típusú entitás referenciája
+              href: reports-ref-current-user.md
             - name: Dátum típusú entitás referenciája
               href: reports-ref-date.md
             - name: Eszközök típusú entitások referenciája
               href: reports-ref-devices.md
-            - name: Az Intune felügyeleti bővítmény referenciája
+            - name: Intune felügyeleti bővítmény típusú entitás referenciája
               href: reports-ref-intunemanagementextension.md
             - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
               href: reports-ref-mobile-app-management.md
             - name: Szabályzat típusú entitások referenciája
               href: reports-ref-policy.md
-            - name: A felhasználó-eszköz társításának hivatkozása
+            - name: Felhasználói eszköztársítás típusú entitás referenciája
               href: reports-ref-user-device.md
             - name: Felhasználó típusú entitás referenciája
               href: reports-ref-user.md
