@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ Az alábbiakban a vállalat által birtokolt eszközök (COD) regisztrációs fo
 Az eszközregisztráció-kezelő (DEM) egy speciális felhasználói fiók, amely több vállalati tulajdonú eszköz regisztrációjára és felügyeletére szolgál. A kezelők tudják telepíteni a Vállalati portált és regisztrálni számos, felhasználó nélküli eszközt. További információ a [DEM](./device-enrollment-manager-enroll.md) módszerről.
 
 ### <a name="dep"></a>DEP
-Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az iOS Supervised (Felügyelt) üzemmódját, amely lehetővé teszi a következő funkciók beállítását az eszközön:
-
-- App Lock (Egyetlen alkalmazás mód) 
-- Globális HTTP-Proxy 
-- Aktiválási zár megkerülése 
-- Önálló egyetlen alkalmazás mód 
-- Webtartalomszűrő 
-- Háttér és zárolási képernyő beállítása 
-- Felhasználói beavatkozás nélküli alkalmazástelepítés 
-- Mindig bekapcsolt VPN 
-- Kizárólag felügyelt alkalmazások telepítésének engedélyezése 
-- iBookstore 
-- iMessages 
-- Game Center 
-- Airdrop 
-- AirPlay 
-- Párosítás gazdagéppel 
-- Felhőalapú szinkronizálás 
-- Spotlight-keresés 
-- Handoff 
-- Eszköz törlése 
-- Korlátozások felhasználói felülete 
-- Konfigurációs profilok telepítése a felhasználói felület használatával 
-- Hírek 
-- Billentyűparancsok 
-- PIN-kód módosítása 
-- Eszköznév módosítása 
-- Háttérkép módosítása 
-- Alkalmazások automatikus letöltése 
-- Vállalati alkalmazások megbízhatóságának módosítása 
-- Apple Music 
-- Mail Drop 
-- Párosítás Apple Watch órával 
-
-> [!NOTE]
-> Az Apple megerősítette, hogy bizonyos beállítások 2018-ban át fognak kerülni a kizárólag felügyelt módban használhatók közé. Mérlegelje ezt, ha az alábbi beállításokat azelőtt használja, mielőtt a kapcsolódó funkciókat az Apple áthelyezi a kizárólag felügyelt módban használhatók közé:
-> - Alkalmazás telepítése
-> - Alkalmazás eltávolítása
-> - FaceTime
-> - Safari
-> - iTunes
-> - Durva tartalom
-> - iCloud dokumentumok és adatok
-> - Több résztvevős játék
-> - Barátok hozzáadása a Game Centerben
+Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az iOS Supervised (Felügyelt) üzemmódját, amely lehetővé teszi konkrét funkciók beállítását az eszközön.
 
 További információ az iOS-eszközök regisztrálásáról a DEP keretében:
 
 - [Az iOS-eszközök regisztrálási módjának kiválasztása](ios-enroll.md)
-- [iOS-eszközök regisztrálása a Készülékregisztrációs program segítségével](device-enrollment-program-enroll-ios.md)
+- [iOS-eszközök regisztrálása a Készülékregisztrációs program segítségével](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 Az Apple Configurator segítségével a rendszergazdák a beállítási asszisztens használatával USB-kapcsolaton keresztül manuálisan előkészíthetnek minden vállalat által birtokolt eszközt. A rendszergazda létrehoz egy regisztrációs profilt, és exportálja azt az Apple Configuratorba. Amikor a felhasználók megkapják az eszközeiket, választhatják a beállítási asszisztens futtatását az eszköz regisztrálásához. Ez a módszer támogatja az **iOS Supervised** (Felügyelt) üzemmódját, amely lehetővé teszi a következő funkciókat:

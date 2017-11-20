@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -113,8 +113,50 @@ A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
     * Ha úgy dönt, hogy nem kíván SDK-ból származó telemetriai adatokat küldeni a Microsoft Intune-nak az alkalmazásából, le kell tiltania az SDK-ban a telemetria-átvitelt az IntuneMAMSetting könyvtárban található `MAMTelemetryDisabled` tulajdonság „YES” értékre való állításával.
 
-
 * **Androidhoz készült Intune App SDK**: A telemetriai adatokat a program nem naplózza az SDK használatával.
+
+ Az üzletági iOS- és Android-alkalmazás verziószáma látható <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>Üzletági alkalmazások verziószámai
+
+Az Intune üzletági alkalmazásai mostantól megjelenítik az iOS- és Android-alkalmazások verziószámait. A számok az Azure Portal alkalmazáslistáján, valamint az Alkalmazás áttekintése panelen jelennek meg. A végfelhasználók az alkalmazásszámot a céges portál alkalmazásban és a webportálon tekinthetik meg.
+
+### <a name="full-version-number"></a>Teljes verziószám
+
+A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például: 2.2(2.2.17560800)
+
+A teljes verziószám két részből áll:
+
+ - **Verzió**  
+   A verziószám az alkalmazás természetes nyelven olvasható kiadási száma. A végfelhasználók ezzel azonosítják az alkalmazás különböző kiadásait.
+
+ - **Buildszám**  
+    A buildszám egy olyan belső szám, amelyet alkalmazásdetektáláshoz és az alkalmazások szoftveres felügyeletéhez használnak. A buildszám az alkalmazás olyan iterációira vonatkozik, amely a kód változásaira hivatkozik.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Verzió- és buildszám az Android és az iOS rendszerben
+
+Az Android és az iOS is verzió- és buildszámokkal hivatkozik az alkalmazásokra. Azonban mindkét operációs rendszer rendelkezik kizárólag az operációs rendszerre vonatkozó jelentésekkel. Az alábbi táblázat ismerteti, milyen kapcsolatban állnak egymással ezek a kifejezések.
+
+Az Intune-ban használandó üzletági alkalmazások fejlesztésekor ne feledje a verzió- és a buildszámot is használni. Az Intune alkalmazásfelügyeleti funkciói egy kifejező **CFBundleVersion**- (iOS) és egy **PackageVersionCode**-számot (Android) használnak. Ezek a számok megtalálhatók az alkalmazásjegyzékben. 
+
+Intune|iOS|Android|Leírás|
+|---|---|---|---|
+Verziószám|CFBundleShortVersionString|PackageVersionName |Ez a szám az alkalmazás egy adott kiadását jelzi a végfelhasználóknak.|
+Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy iterációját jelzi.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    A csomag kiadási verziószámát határozza meg. Ez a szám az alkalmazás egy megjelent verzióját azonosítja. A végfelhasználók ezzel hivatkoznak az alkalmazásra.
+ - **CFBundleVersion**  
+    A csomag buildverziója, amely a csomag egy iterációját azonosítja. A szám egy kiadott vagy még meg nem jelent csomagot is azonosíthat. A számot alkalmazásdetektáláshoz használják.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    A felhasználók számára megjelenő verziószám. Ez az attribútum megadható nyers karakterláncként vagy egy karakterlánc-erőforrás hivatkozásaként is. A karakterláncnak a felhasználók számára való megjelenésen kívül nincs célja.
+ - **PackageVersionCode**  
+    Belső verziószám. Ezzel a számmal határozható meg, hogy egy verzió újabb-e egy másiknál. A magasabb számok újabb verziókat jelentenek. Ez nem az a verzió 
 
 ## <a name="next-steps-after-integration"></a>Az integrációt követő lépések
 

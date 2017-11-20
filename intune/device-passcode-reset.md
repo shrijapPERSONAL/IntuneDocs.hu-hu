@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Az Intune által kezelt eszközök PIN-kódjának alaphelyzetbe állítása
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az **Új PIN-kód** művelet új PIN-kódot generál az eszközhöz. A kód az <*eszköznév*> **Áttekintés** panelen jelenik meg.
+A **PIN-kód eltávolítása** művelet új PIN-kódot hoz létre az eszközhöz. A kód az <*eszköznév*> **Áttekintés** panelen jelenik meg.
 
 ## <a name="supported-platforms"></a>Támogatott platformok
 
@@ -41,7 +41,7 @@ Az **Új PIN-kód** művelet új PIN-kódot generál az eszközhöz. A kód az <
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
-5. A felügyelt eszközök listájából válassza ki az eszközt, majd válassza a távoli **Új PIN-kód** eszközműveletet.
+5. A felügyelt eszközök listájából válassza ki az eszközt, majd válassza a távoli **PIN-kód eltávolítása** eszközműveletet.
 
 ## <a name="next-steps"></a>További lépések
 

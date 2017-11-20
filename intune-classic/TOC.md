@@ -95,6 +95,7 @@
 #### [Licencszerződések kezelése](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [Szabályzatütközések feloldása](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Riasztások kezelése](deploy-use/get-notified-by-alerts.md)
+### [Az Azure-on elérhető Intune szolgáltatás](deploy-use/intune-on-azure.md)
 ## Eszközök konfigurálása
 ### [Az eszközök beállításainak és funkcióinak kezelése szabályzatok használatával](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS-beállítások](deploy-use/ios-policy-settings-in-microsoft-intune.md)

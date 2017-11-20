@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot üzembe helyezési program
               href: enrollment-autopilot.md
+            - name: Beléptetés állapota képernyő
+              href: windows-enrollment-status.md
         - name: Az androidos eszközök regisztrálásának beállítása
           href: android-enroll.md
         - name: iOS-eszközök regisztrálásának beállítása
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: A Windows Information Protection beállításainak konfigurálása
           href: windows-information-protection-configure.md
+        - name: PowerShell-parancsprogramok kezelése
+          href: intune-management-extension.md
         - name: Távközlési költségek monitorozása
           href: telecom-expenses-monitor.md
         - name: Profilok hozzárendelése
@@ -556,11 +560,11 @@
     - name: Egyéni eszközbeállítások konfigurálása
       href: custom-settings-configure.md
       items:
+        - name: Wi-Fi-profil előmegosztott kulccsal
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Wi-Fi-profil előmegosztott kulccsal
-              href: wi-fi-profile-shared-key.md
             - name: Alkalmazásonkénti VPN-profil
               href: android-pulse-secure-per-app-vpn.md
             - name: Alkalmazások engedélyezése/letiltása a Samsung KNOX Standard használatával
@@ -604,19 +608,23 @@
         - name: Az adattárház adatmodellje
           href: reports-ref-data-model.md
           items:
+            - name: A felhasználói élettartam reprezentációja az Intune-adattárházban
+              href: reports-ref-user-timeline.md
             - name: Alkalmazás-entitások referencia
               href: reports-ref-application.md
+            - name: Aktuális felhasználó típusú entitás referenciája
+              href: reports-ref-current-user.md
             - name: Dátum típusú entitás referenciája
               href: reports-ref-date.md
             - name: Eszközök típusú entitások referenciája
               href: reports-ref-devices.md
-            - name: Az Intune felügyeleti bővítmény referenciája
+            - name: Intune felügyeleti bővítmény típusú entitás referenciája
               href: reports-ref-intunemanagementextension.md
             - name: Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
               href: reports-ref-mobile-app-management.md
             - name: Szabályzat típusú entitások referenciája
               href: reports-ref-policy.md
-            - name: A felhasználó-eszköz társításának hivatkozása
+            - name: Felhasználói eszköztársítás típusú entitás referenciája
               href: reports-ref-user-device.md
             - name: Felhasználó típusú entitás referenciája
               href: reports-ref-user.md
