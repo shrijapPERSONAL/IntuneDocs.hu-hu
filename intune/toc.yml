@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager webszolgáltatás
+              href: certificates-symantec-configure.md
         - name: A Windows Information Protection beállításainak konfigurálása
           href: windows-information-protection-configure.md
         - name: PowerShell-parancsprogramok kezelése
@@ -425,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS-beállítások
                   href: app-protection-policy-settings-ios.md
+                - name: Alkalmazásvédelmi naplók áttekintése a Managed Browserben
+                  href: app-protection-policy-settings-log.md
             - name: Az alkalmazásvédelmi szabályzatok ellenőrzése
               href: app-protection-policies-validate.md
             - name: Alkalmazásvédelmi felhasználó állapotának figyelése
