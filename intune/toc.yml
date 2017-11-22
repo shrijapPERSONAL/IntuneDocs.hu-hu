@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Android for Work-szabályzat létrehozása
           href: compliance-policy-create-android-for-work.md
+        - name: Szabályzat létrehozása a Google Play Protect-támogatáshoz
+          href: compliance-policy-create-google-play-protect.md
         - name: iOS-szabályzat létrehozása
           href: compliance-policy-create-ios.md
         - name: macOS-szabályzat létrehozása
