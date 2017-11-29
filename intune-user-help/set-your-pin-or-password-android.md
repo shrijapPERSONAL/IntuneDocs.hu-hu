@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 68f9f6333cbe3e450027e64399e2c0375459f1ca
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="set-your-pin-or-password"></a>PIN kód vagy jelszó beállítása
 
@@ -28,9 +28,10 @@ Ha az Intune-t használva fér hozzá munkahelyi vagy iskolai adataihoz, a cég 
 
 Az alábbi lépéseket követve állíthatja be a PIN-kódot vagy a jelszót.
 
-1.  Koppintson a **Settings** (Beállítások) &gt; **Security** (Biztonság) &gt; **Screen Lock** (Képernyőzárolás) &gt; **Password** (Jelszó) elemre.
+1.  Koppintson a **Beállítások** > **Biztonság** > **Képernyőzár** > **Jelszó** elemre.
 
 2.  Állítsa be és erősítse meg az új jelszót.
 
+Egyes eszközöknél előfordulhat, hogy a jelszava mellett egy indítási PIN-kódot is be kell állítania. Lehetséges, hogy ezt a problémát megoldhatja, ha a megkeresi ezt a beállítási lehetőséget a beállításokat végző alkalmazásban. A Samsung Galaxy S7 eszközökön például a biztonságos indítást a **Beállítások** > **Képernyőzár és biztonság** > **Biztonságos indítás** területen engedélyezheti. További információkért kattintson [ide ](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise). 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

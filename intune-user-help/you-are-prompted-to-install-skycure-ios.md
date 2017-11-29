@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c03ac73377278925773123dc10d10cf3e8256e41
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>A Symantec Endpoint Protection Mobile alkalmazás telepítése iOS-eszközön
 
@@ -42,7 +42,7 @@ Ha a SEP Mobile biztonsági fenyegetést talál eszközén, megjeleníti a probl
 
 ## <a name="if-the-installation-doesnt-work"></a>Ha sikertelen a telepítés
 
-Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ha ez történik, próbálja meg telepíteni a Zimperium zIPS alkalmazást [az App Store-ból, manuálisan](https://itunes.apple.com/app/sep-mobile/id695620821).
+Egyes esetekben előfordulhat, hogy a telepítés Öntől független technikai okokból meghiúsul. Ilyenkor próbálja a SEP Mobile alkalmazást [manuálisan telepíteni az App Store-ból](https://itunes.apple.com/app/sep-mobile/id695620821).
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
 

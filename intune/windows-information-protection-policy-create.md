@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>A Windows Information Protection (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával
 
@@ -125,13 +125,13 @@ A WIP által védeni kívánt alkalmazások hozzáadása után alkalmazni kell a
 
 ### <a name="before-you-begin"></a>Előkészületek
 
-A WIP Learning egy olyan jelentés, amellyel a WIP számára ismeretlen alkalmazásokat figyelheti. Ismeretlennek számítanak az olyan alkalmazások, amelyeket nem a munkahelyi IT-részleg helyezett üzembe. A jelentésből exportálhatja ezeket az alkalmazásokat, és a munka megzavarását elkerülendő hozzáadhatja őket a WIP-szabályzatokhoz, mielőtt a WIP-et „Felülbírálások elrejtése” módban alkalmazná.
+A WIP Learning egy olyan jelentés, amellyel a WIP számára ismeretlen alkalmazásokat figyelheti. Ismeretlennek számítanak az olyan alkalmazások, amelyeket nem a munkahelyi IT-részleg helyezett üzembe. Ezeket az alkalmazásokat exportálhatja a jelentésből, és a zavartalan munka érdekében hozzáadhatja őket a WIP-szabályzatokhoz, mielőtt kikényszerítik a WIP „Letiltás” módját.
 
-Javasoljuk, hogy először a **Csendes** vagy a **Felülbírálások engedélyezése** módot válassza, és egy kisebb csoporton ellenőrizze, hogy az engedélyezett alkalmazások listájában a megfelelő alkalmazások szerepelnek-e. Ha ezzel végzett, a végleges szabályzatban használhatja a **Felülbírálások elrejtése** módot.
+Javasoljuk, hogy először a **Csendes** vagy a **Felülbírálások engedélyezése** módot válassza, és egy kisebb csoporton ellenőrizze, hogy az engedélyezett alkalmazások listájában a megfelelő alkalmazások szerepelnek-e. Ha ezzel végzett, átválthat a végleges kényszerítési szabályzatra, a **Letiltás** módra.
 
 ### <a name="what-are-the-protection-modes"></a>Milyen védelmi módok lehetségesek?
 
-#### <a name="hide-overrides"></a>Felülbírálások elrejtése
+#### <a name="block"></a>Letiltás
 A WIP figyeli a nem megfelelő adatmegosztási gyakorlatot, és megakadályozza, hogy a felhasználó elvégezze az adott műveletet. Ilyen gyakorlat lehet, ha nem céges védelem alatt álló alkalmazásokkal osztanak meg információt, vagy ha a munkahelyén kívüli személyekkel és eszközökkel osztanak meg céges adatokat.
 
 #### <a name="allow-overrides"></a>Felülbírálások engedélyezése

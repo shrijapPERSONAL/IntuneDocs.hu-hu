@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f7cc595655950ef1bf2586e939b6f02e270e7afc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
+ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2017"></a>A Microsoft Intune előzetes kiadása – 2017. November
+# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>A Microsoft Intune előzetes kiadása – 2017. december
 
 Ez az **előzetes kiadás** a Microsoft Intune következő verzióiban található funkciók listáját tartalmazza. Az információkat szűk körben bocsátjuk rendelkezésre, és a későbbiekben változhatnak. Ne ossza meg ezeket az információkat cégen kívüli személyekkel. Fennáll a kockázata, hogy az itt felsorolt funkciók nem készülnek el a kitűzött határidőig, és csak egy későbbi kiadásban lesznek elérhetők. Más funkciók próbaüzemben működnek (fokozatos bevezetéssel), hogy meggyőződjünk arról, hogy készen állnak a használatra. Esetleges kérdéseivel és észrevételeivel forduljon a Microsoft-termékcsoport kapcsolattartójához.
 
@@ -39,7 +39,102 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 
 ## <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
 
+### <a name="app-protection-policies-----679615---"></a>Alkalmazásvédelmi szabályzatok  <!-- 679615 -->
+Az Intune alkalmazásvédelmi szabályzatai lehetőséget nyújtanak globális szintű alapértelmezett szabályzatok létrehozására, amelyekkel gyorsan beállítható a megfelelő védelem a teljes bérlő összes felhasználója számára.
 
+### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>iOS Volume Purchase Program-alkalmazások visszavonása  <!-- 820863 -->
+Ha egy adott eszközhöz egy vagy több iOS Volume Purchase Program-alkalmazás is tartozik, akkor ezentúl visszavonható az eszköztől az eszközalapú alkalmazáslicenc. Az alkalmazáslicenc visszavonása nem törli a vonatkozó VPP-alkalmazást az eszközről. A VPP-alkalmazás törléséhez az **Eltávolítás** műveletre kell módosítania a hozzárendelési műveletet. További információért olvassa el a [Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal](vpp-apps-ios.md) című témakört.
+
+### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>iOS Volume Purchasing Program-token licenceinek visszavonása <!-- 820870 -->
+Visszavonható lesz az egy adott VPP-tokenhez tartozó összes iOS Volume Purchasing Program-alkalmazás (VPP-alkalmazás) licence.
+
+### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>iOS Volume Purchasing Program-token törlése <!-- 820879 -->
+A konzol segítségével törölheti az iOS Volume Purchasing Program (VPP) tokenjét. Ez akkor lehet szükséges, ha egy VPP-token több példányban van meg.
+
+### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Hálózati hozzáférés-vezérlés (NAC) által felügyelt eszközök bejelentkezési jelentéskészítése <!-- 1232250 -->
+A változtatás előtt a rendszergazdák nem láthatták az Intune-ban, hogy a NAC által felügyelt eszköz kommunikál-e a NAC-megoldásukkal. Ha egy NAC-felügyelt eszköz nem kommunikál a NAC-megoldással, az eszközt a NAC-megoldás nem megfelelőnek minősíti, és letiltja, ezért az eszközt a megfelelőségi állapotot figyelő feltételes hozzáférési szabályzatok is letiltják.
+
+A változtatásnak köszönhetően a rendszergazdák most már láthatják, hogy melyik hálózati hozzáférés-vezérlés által felügyelt eszköz kommunikál sikeresen a hálózati hozzáférés-vezérlő megoldásukkal, és melyik nem. A funkció az Intune Eszközmegfelelőségi tevékenységprofiljának két új figyelőfüggvényéből áll, amelyeknek a következők a statisztikái:
+- **NAC-hívások átlagos száma az elmúlt órában**
+- **Legutóbbi NAC bejövő kérelem (dátum/idő)**
+
+### <a name="new-ios-device-action------1244701---"></a>Új iOS-eszközművelet   <!-- 1244701 -->
+Leállíthatja az iOS 10.3 rendszerű felügyelt eszközöket. Ez a művelet azonnal leállítja az eszközt, anélkül, hogy a végfelhasználót figyelmeztetné. A **Leállítás (csak felügyelt eszköz esetén)** műveletet az eszköztulajdonságoknál találhatja, amikor kiválaszt egy eszközt az **Eszköz** tevékenységprofilban.
+
+### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Támogatott a Palo Alto VPN <!-- 1333680 eeready -->
+A **Kapcsolat típusa** listában mostantól Palo Alto VPN is választható az alapszintű VPN beállításakor.
+
+### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Több összekötő támogatása az SCEP- és a PFX-tanúsítványok kezeléshez <!-- 1361755 eeready -->
+Azok az ügyfeleink, akik helyszíni NDES-összekötővel kézbesítik a tanúsítványokat az eszközökre, mostantól több összekötőt is beállíthatnak egy bérlőben.
+
+Ez az új funkció támogatja az alábbi forgatókönyvet:
+
+- **Magas rendelkezésre állás**
+
+    Az egyes NDES-összekötők lekérik a tanúsítványkérelmeket az Intune-ból.  Ha az egyik NDES-összekötő offline állapotba kerül, a másik összekötő folytathatja a kérelmek feldolgozását.
+
+### <a name="new-automatic-redeployment-setting----1469168---"></a>Új automatikus újratelepítési beállítás <!-- 1469168 -->
+Ez a beállítás lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz záróképernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újrakonfigurálása, illetve beléptetése a felügyeleti rendszerbe.
+
+A beállítás a Windows 10 -> Eszközkorlátozások-> Általános -> Automatikus újratelepítés menüpont alatt található.
+
+### <a name="install-office-apps-on-macos-devices----1494311---"></a>Office-alkalmazások telepítése macOS-eszközökre <!-- 1494311 -->
+macOS-eszközökre is telepíthetők az Office-alkalmazások. Az új alkalmazástípusnak köszönhetően telepíteni lehet a Word, az Excel, a PowerPoint, az Outlook és a OneNote alkalmazást. Az alkalmazások a Microsoft AutoUpdater (MAU) szolgáltatást is tartalmazzák, amely segít a biztonság megőrzésében és az alkalmazások folyamatos frissítésében.
+
+### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>Surface Hub-erőforrásfiókok támogatása <!-- 1566442 eeready -->
+Egy új eszközművelet segítségével mostantól a rendszergazdák megadhatják és frissíthetik a Surface Hubhoz társított erőforrásfiókot.
+
+A Surface Hub az erőforrásfiókkal hitelesíthető a Skype/Exchange felé, így bekapcsolódhat az értekezletbe. Létrehozhat egy egyedi erőforrásfiókot, hogy a Surface Hub konferenciateremként jelenjen meg az értekezletben. Az erőforrásfiók megjelenhet például *Konferenciaterem B41/6233* néven. A Surface Hub-erőforrásfiókot (vagyis az eszközfiókot) általában a konferencia helyszínéhez kell beállítani akkor, amikor az erőforrásfiók egyéb paramétereit is meg kell változtatni.
+
+Ha a rendszergazdák megpróbálják frissíteni az eszköz erőforrásfiókjának adatait, meg kell adniuk az eszközhöz rendelt Active Directory-beli/Azure Active Directory-beli hitelesítő adatokat. Ha az eszköznél jelszóváltoztatás van beállítva, a rendszergazdának az Azure Active Directoryban kell megkeresnie a jelszót.
+
+> [!NOTE]
+> A mezőket egy csomagban küldi el a rendszer, és az összes korábban beállított mező értékét felülírja. Az üres mezők is felülírják a meglévő mezőket.
+
+A rendszergazdák a következő beállításokat konfigurálhatják:
+
+- **Erőforrásfiók**  
+
+   - **Active Directory-felhasználó**   
+   Tartománynév\felhasználónév vagy egyszerű felhasználónév (UPN): user@domainname.com
+   - **Jelszó**
+
+
+- **További nem kötelezően kitöltendő erőforrásfiók-paraméterek**  (az adott erőforrásfiókkal kell beállítani)
+   - **Jelszóváltoztatás gyakorisága**   
+     Gondoskodik róla, hogy a fiók jelszavát a Surface Hub biztonsági okokból minden héten automatikusan frissítse. A funkció bekapcsolását követően a további paraméterek beállításához új jelszót kell kérni a fiókhoz az Azure Active Directoryban.
+
+   - **SIP-cím**    
+     Csak abban az esetben szükséges, ha az automatikus felfedezés sikertelen.
+
+   - **E-mail**    
+     Az eszköz/erőforrásfiók e-mail-címe.
+
+   - **Exchange-kiszolgáló**    
+     Csak abban az esetben szükséges, ha az automatikus felfedezés sikertelen.
+
+   - **Naptár-szinkronizálás**    
+     A naptár-szinkronizálás és más Exchange Server-szolgáltatások engedélyezését teszi lehetővé. Például: értekezlet-szinkronizálás.
+
+### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>Elérhető az Intune-ban a Fiók áthelyezése művelet  <!-- 1573558, 1579830 -->
+A **Fiók áthelyezése** művelettel egy bérlőt az egyik Azure skálázási egységből a másikba telepíthet át. A **Fiók áthelyezése** műveletet a felhasználó is kezdeményezheti, amikor az Intune támogatási csoportjához fordul és áthelyezést kér, és a Microsoft is használhatja, ha a szolgáltatás háttérhálózatának módosítása szükségessé válik. A **Fiók áthelyezése** során a bérlő csak olvasható (ROM) módban érhető el. A ROM-mód idején az eszközregisztráció, az eszközök átnevezése, a megfelelőségi állapot frissítése és a hasonló szolgáltatási műveletek sikertelenek lesznek.
+
+### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>Új beállítások az eszközkonfigurációs profilban: Windows Defender biztonsági központ (WDSC)<!-- 1335507 -->
+Az Intune eszközkonfigurációs profiljának beállításai új szakasszal bővültek. Ez a **Windows Defender biztonsági központ** néven szerepel az Endpoint Protection szakasznál. A rendszergazdák beállíthatják, hogy a Windows Defender biztonsági központ mely területei legyenek elérhetők a végfelhasználók számára. Ha a rendszergazda elrejti a Windows Defender biztonsági központ valamelyik területét, a felhasználó eszközén nem fognak megjelenni az adott területtel kapcsolatos értesítések.
+
+A rendszergazdák a következő területeket rejthetik el a Windows Defender biztonsági központ eszközkonfigurációs profilbeállításai közül:
+- Vírusok és veszélyforrások elleni védelem
+- Eszközteljesítmény és -állapot
+- Tűzfal és hálózatvédelem
+- Alkalmazás- és böngészővezérlés
+- Családi beállítások
+
+A rendszergazdák azt is személyre szabhatják, hogy a felhasználók melyik értesítéseket kapják meg. Beállítható például, hogy a felhasználók a Windows Defender biztonsági központ összes látható területének értesítéseit megkapják, vagy csak a kritikus értesítéseket. A nem kritikus értesítések közé tartoznak a Windows Defender víruskereső rendszeres összefoglalói és a vizsgálatok befejezését jelző értesítések. Minden más értesítés kritikusnak minősül. Emellett testre is szabhatja az értesítések tartalmát, például a rendszergazda elérhetőségét beágyazhatja a felhasználók eszközein megjelenő értesítések szövegébe.
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>Office 365-mobilalkalmazások hozzárendelése iOS- és Android-eszközökhöz a regisztrált alkalmazástípussal <!-- 1332318 -->
 A **Beépített** alkalmazástípussal könnyebben hozhat létre és rendelhet Office 365-alkalmazásokat a felügyelt iOS- és Android-eszközeihez. Ezek az alkalmazások olyan 0365-alkalmazásokat tartalmaznak, mint a Word, az Excel, a PowerPoint és a OneDrive. Az alkalmazástípushoz konkrét alkalmazásokat rendelhet hozzá, valamint szerkesztheti az alkalmazásadatok konfigurációját.
 

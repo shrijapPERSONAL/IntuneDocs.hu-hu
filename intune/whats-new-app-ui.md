@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
 
+## <a name="week-of-november-13-2017"></a>2017. november 13-i hét
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Újdonságok az iOS rendszerre készült Céges portál 2.9.0-s verziójának eszközbeállítási munkafolyamatával kapcsolatban <!---1417174--->
+
+Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás eszközbeállítási munkafolyamatát. Nyelvezete felhasználóbarátabb lett, képernyőit – ahol lehetett – összevontuk. A nyelvezetet ezenkívül az Ön cégére alkalmaztuk, ezért a beállítás szövegében végig a konkrét cégnév jelenik meg.
+
+> [!NOTE]
+> Azt a cégnevet használjuk, amelyet az Azure Portal **Microsoft Intune** > **Mobilalkalmazások**  > **Céges portál védjegyezése** > **Cég neve** alatt adott meg. Ha nem állította be ezt az értéket, az **Azure Active Directory** > **Tulajdonságok** > **Név** alatt megadott bérlő nevét használjuk. Ha a Céges portál védjegyezése alatt nem állított be cégnevet, és nem kívánja a bérlő nevét megjeleníteni, azt javasoljuk, hogy állítsa be cége nevét a Céges portál védjegyezése alatt. Ha nem szeretné, hogy ez a karakterlánc megjelenjen a Céges portál fejlécén, törölheti a jelölőnégyzetet a “Cég nevének megjelenítése az embléma mellett” feliratnál.
+
+|Előtte|Utána|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Az előző lépéssel összevonva*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>2017. November 6-i hét
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Frissítések a Windows 10-es Céges portál alkalmazáshoz <!--1299474-->
+A Windows 10-es Céges portál alkalmazás frissített Beállítások oldalán az összes beállításnál egységesebbek lettek a beállítások és az elvárt felhasználói műveletek. A frissített szerkezet igazodik a többi Windows-alkalmazás elrendezéséhez.
+
+|Előtte|Utána|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Újdonságok a Céges portál alkalmazás és webhely keresési funkcióiban <!--1418189-->
 A Céges portál alkalmazások mostantól alkalmazáskategóriák és nevek közötti, illetve leírásokban való kereséseket is használnak. Az eredmények relevancia alapján csökkenő sorrendben jelennek meg. Ezek az újdonságok a [Céges portál webhelyen](https://portal.manage.microsoft.com) is elérhetők.
 
 A relevancia megállapításának finomításán még dolgozunk, ezért várjuk a tapasztalatokkal kapcsolatos visszajelzéseket, melyek a Céges portál weboldalának alján található „Visszajelzés” hivatkozást használva küldhetők el.
-
-
 
 ## <a name="week-of-october-16-2017"></a>2017. október 16-i hét
 
@@ -45,10 +70,6 @@ A relevancia megállapításának finomításán még dolgozunk, ezért várjuk 
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Nagy méretű ikonok megjelenítése az iOS-es Céges portálhoz <!-- 1454593 -->
 Ebben a kiadásban elhárítottunk egy ismert problémát azzal kapcsolatban, ahogyan az iOS-es Céges portál ikonokat jelenít meg az alkalmazás címében. A 120x120 pixeles vagy nagyobb méretű feltöltött ikonok most már teljes méretben jelennek meg az alkalmazás címében a [Céges portál webhelyén](https://portal.manage.microsoft.com) és az iOS-es Céges portál alkalmazás oldalain.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>2017. október 2-i hét
