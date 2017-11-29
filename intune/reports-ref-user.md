@@ -5,7 +5,7 @@ keywords: "Intune-adattárház"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,30 +14,36 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8088127f5968c0b4f07f83b1dad02ba90f4e6b9a
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reference-for-user-entity"></a>Felhasználó típusú entitás referenciája
 
 A **Felhasználó** kategória tartalmazza az adatmodellbeli felhasználó- és ügynöktulajdonságokat meghatározó **Felhasználó** entitást.
 
-**Felhasználó**
+## <a name="user"></a>Felhasználói
 
 A **Felhasználó** entitás a vállalaton belül hozzárendelt licenccel rendelkező összes Azure Active Directory- (Azure AD-) felhasználót kilistázza.
+
+A **Felhasználó** entitásgyűjtemény az utolsó egy hónapról tartalmaz adatokat. A rekordok között akkor is ott vannak az adatgyűjtési időszakon belüli felhasználói állapotok, ha a felhasználót azóta eltávolították. Például az elmúlt egy hónap során hozzáadhattak az Intune-hoz egy felhasználót, majd el is távolíthatták onnan. Az elmúlt hónap adatai tartalmazzák a felhasználót és állapotát annak ellenére, hogy a felhasználó a jelentés időpontjában nincs jelen. Ekkor létrehozhat egy olyan jelentést, amely megjeleníti a felhasználó korábbi jelenlétének időtartamát az adatokban.
 
 | Tulajdonság  | Leírás | Példa |
 |---------|------------|--------|
 | UserKey |A felhasználó egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
 | UserId |A felhasználó egyedi azonosítója – a UserKey-hez hasonló, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |A felhasználó e-mail címe. |John@constoso.com |
+| UPN | A felhasználó egyszerű felhasználóneve. | John@constoso.com |
 | DisplayName |A felhasználó megjelenítendő neve. |István |
 | IntuneLicensed |Megadja, hogy a felhasználó rendelkezik-e Intune-licenccel. |Igaz/hamis |
-| IsDeleted |Jelzi, hogy frissítve lett-e a felhasználórekord.  True (Igaz) – a felhasználóhoz új, frissített mezőkből álló rekord tartozik a táblában. False (Hamis) – a felhasználó legfrissebb rekordja. |Igaz/hamis |
-| StartDateInclusiveUTC |A felhasználó adattárházban történt létrehozásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
-| EndDateExclusiveUTC |Az IsDeleted paraméter True (Igaz) értékre módosulásának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
-| IsCurrent |Jelzi, hogy a felhasználórekord aktuális-e az adattárházban. |Igaz/hamis |
-| RowLastModifiedDateTimeUTC |A felhasználó adattárházban történt utolsó módosításának dátuma és időpontja (UTC). |2016.11.23. 12:00:00 |
+| IsDeleted | Azt jelzi, hogy a felhasználó összes engedélye lejárt-e, és a felhasználót emiatt eltávolították-e az Intune-ból. Egyetlen rekord esetén ez a jelölő nem változik. Ehelyett új rekord jön létre egy új felhasználói állapothoz. |Igaz/hamis |
+| StartDateInclusiveUTC |If IsDeleted = FALSE, az a dátum és időpont (UTC), amikor a felhasználóhoz licencet rendeltek, és megjelent az Intune-ban. If IsDeleted = TRUE, az a dátum és időpont (UTC), amikor a felhasználó licencei lejártak, és eltávolították az Intune-ból. |2016.11.23. 12:00:00 |
+| EndDateExclusiveUTC |If IsDeleted = FALSE, az a dátum és időpont (UTC), amikor a felhasználó licence lejárt, és eltávolították az Intune-ból. A licenc az előző nap folyamán járt le. If IsDeleted = TRUE, az a dátum és időpont (UTC), amikor a felhasználó új licencet kapott, és ismét létrehozták az Intune-ban.  |2016.11.23. 12:00:00 |
+| IsCurrent |Azt jelzi, hogy ez a rekord a felhasználó legfrissebb állapotát mutatja-e. Egyetlen felhasználónak több rekordja is lehet, de a jelenlegi állapotot csak az egyik mutatja.  |Igaz/hamis |
+| RowLastModifiedDateTimeUTC |A rekord adattárházban történt utolsó módosításának dátuma és időpontja (UTC)  |2016.11.23. 12:00:00 |
 
+## <a name="next-steps"></a>További lépések
+ - A **Jelenlegi felhasználó** entitásgyűjtemény segítségével a jelenleg aktív felhasználókra korlátozhatja a felhasználói adatokat. További információkért lásd: [Jelenlegi felhasználó típusú entitás referenciája](reports-ref-current-user.md). 
+ - A [Felhasználói élettartam ábrázolása az Intune adattárházban](reports-ref-user-timeline.md) című témakörben további információt talál arról, hogy az adattárház miképpen követi nyomon egy felhasználó élettartamát az Intune-ban.

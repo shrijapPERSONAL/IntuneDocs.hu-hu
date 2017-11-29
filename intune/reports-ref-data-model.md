@@ -5,7 +5,7 @@ keywords: "Intune-adattárház"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>Az adattárház adatmodellje
 
-Az Intune-adattárház napi adatgyűjtéssel dokumentálja a folyamatosan változó mobilkörnyezet előzményeit.
+Az Intune-adattárház napi adatgyűjtéssel dokumentálja a mobileszközök folyamatosan változó környezetének előzményeit. A nézet az egymással összefüggő dolgok időbeli képe.
 
-A bérlőről lekért adatokat a rendszer egy adattárházba továbbítja. Az adattárház olyan entitások és kapcsolatok összessége, amelyek fontosak lehetnek a feltenni kívánt kérdések szempontjából. Ahhoz például, hogy megítélje, növekvő tendenciát mutatnak-e egy belső fejlesztésű androidos alkalmazás telepítései, áttekintheti a múlt heti telepítések számát napi bontásban. Az adattárház szerkezete lehetővé teszi a mobil környezet alapos megismerését. Az olyan elemzési eszközök pedig, mint a Microsoft Power BI, képi megjelenítéseket és dinamikus irányítópultokat hozhatnak létre az adattárház adatmodellje alapján.
+## <a name="things-entity-sets"></a>Dolgok: Entitáskészletek
 
-Az Intune-adattárház szerkezete a csillagséma-modellt használja. A csillagséma az idő dimenziójában rendszerezi a tényadatokat. Ebben a modellben a *tényadat* mennyiségi mérőszám, mint például az eszközök száma, az alkalmazások száma, vagy a regisztráció ideje. Szintén ebben a modellben a *dimenzió* bizonyos kategóriák összességét és a köztük lévő hierarchikus kapcsolatot jelenti. Például a napok hónapokba, a hónapok évekbe rendeződnek. A rugalmasságra és adatelemzésre optimalizált csillagséma-modell segít összeállítani a folyamatosan változó mobilkörnyezet megértéséhez szükséges jelentéseket.
+Az adattárház a következő magas szintű területeken tünteti fel az adatokat:
 
-Az adattárház az adatokat a következő magas szintű kategóriákban tünteti fel:
   -  Alkalmazásvédelem által engedélyezett alkalmazások és használat
   -  Regisztrált eszközök, tulajdontárgyak és készlet
   -  Alkalmazások és szoftverleltár
   -  Eszközkonfigurációs és megfelelőségi szabályzatok
 
-**Az adatmodell entitáskészletei**
-
-Az entitáskészletek az adatmodell nevesített entitásgyűjteményei. Ezen készletek tartalmazzák a modellben összegyűjtött adatok meghatározására szolgáló entitásokat. Minden entitáskészlet egy hozzáférési pontot biztosít az adattárház adatmodelljéhez. A következő entitáskategóriákról részletes leírást talál:
+Ezek a területek tartalmazzák az Intune-környezet számára jelentős entitásokat és dolgokat. Az entitáscsoportokról a következő témakörökben talál részletes információt:
 
   -  [Alkalmazás](reports-ref-application.md)
   -  [Dátum](reports-ref-date.md)
@@ -45,4 +42,23 @@ Az entitáskészletek az adatmodell nevesített entitásgyűjteményei. Ezen ké
   -  [Szabályzat](reports-ref-policy.md)
   -  [Mobilalkalmazás-felügyelet (MAM)](reports-ref-mobile-app-management.md)
   -  [Felhasználó](reports-ref-user.md)
+  -  [Jelenlegi felhasználó](reports-ref-current-user.md)
   -  [Felhasználók és eszközök társítása](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>Kapcsolatok: Csillagséma-modell
+
+Az adattárház olyan kapcsolatokba rendezi az entitásokat, amelyek fontosak lehetnek a feltenni kívánt kérdések szempontjából. Például áttekintheti egy belső fejlesztésű Android-alkalmazás telepítéseinek számát. Az adattárház szerkezete lehetővé teszi a mobil környezet alapos megismerését. Az olyan elemzési eszközök pedig, mint a Microsoft Power BI, képi megjelenítéseket és dinamikus irányítópultokat hozhatnak létre az adattárház adatmodellje alapján.
+
+Az entitások és a kapcsolatok a csillagséma-modell alapján rendeződnek. A csillagséma az idő dimenziójában kapcsolja össze a tényadatokat. Ebben a modellben a *tényadat* mennyiségi mérőszám, mint például az eszközök száma, az alkalmazások száma, vagy a regisztráció ideje. A ténytáblák nagy mennyiségű adatot tárolnak. Néha igen nagy méretet is elérhetnek, ezért általában 30 napra korlátozzák az információt. A *dimenzió* összefüggésbe helyezi a tényeket. A tény azt jelzi, hogy mi történt, a dimenziók arra mutatnak rá, hogy kivel. A dimenziótáblák, mint például a **Felhasználó** tábla, kisebbek a ténytábláknál, és hosszabb ideig tárolhatják az adatokat. 
+
+A rugalmasságra és adatelemzésre optimalizált csillagséma-modell segít összeállítani a folyamatosan változó mobilkörnyezet megértéséhez szükséges jelentéseket.
+
+## <a name="time-daily-snapshots"></a>Idő: Napi pillanatképek
+
+Az adattárház az Intune alsóbb rétege. Az Intune az egyezményes világidő (UTC) szerint éjfélkor napi pillanatképet készít, és ezt a pillanatképet az adattárházban tárolja. A pillanatképek tárolási ideje ténytábláról ténytáblára változik. Némelyiket hét napig, némelyiket 30 napig, vagy akár tovább is tárolja a rendszer.
+
+## <a name="next-steps"></a>További lépések
+
+ - Annak részletesebb megismeréséhez, hogy az adattárház miképpen követi nyomon a felhasználó élettartamát az Intune-ban, lásd: [A felhasználó élettartamának ábrázolása az Intune-adattárházban](reports-ref-user-timeline.md).
+ - Az adattárházakkal való munka részletesebb megismeréséhez lásd: [Első adattárház létrehozása](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - A Power BI és az adattárház használatának részletesebb megismeréséhez lásd: [Új Power BI-jelentés létrehozása adatkészlet importálásával ](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

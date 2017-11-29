@@ -1,11 +1,11 @@
 ---
-title: "iOS-eszköz regisztrálása az Intune-ban | Microsoft Docs"
-description: "Egy iOS-eszköz regisztrálását mutatja be az Intune-ban"
+title: "A céges erőforrásokhoz történő hozzáférés beállítása | Microsoft Docs"
+description: "Ismerteti az iOS-eszközök Intune-felügyelet alá helyezését"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,89 +16,63 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="enroll-your-ios-device-in-intune"></a>iOS-eszköz regisztrálása az Intune-ban
+# <a name="set-up-access-to-your-company-resources"></a>A céges erőforrásokhoz történő hozzáférés beállítása
 
-Ha munkahelye vagy iskolája a Microsoft Intune-t használja, iOS-eszközének regisztrálásával hozzáférhet a vállalati levelezéséhez, fájljaihoz és egyéb vállalati forrásokhoz. Az eszközök regisztrálása lehetővé teszi az informatikai osztály számára ezeknek a munkahelyi vagy iskolai erőforrásoknak a kezelését és védelmét, miközben Ön a kívánt eszközön végezheti a feladatait. További információk a regisztrációval kapcsolatban: [Mi történik a Vállalati portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Az Ön cége rengeteg védett információt használ, az e-mailektől kezdve többek között a fájlokig és a hálózatokig. A cég a Microsoft Intune segítségével védi ezeket az információkat, amikor Ön az iOS-eszközéről fér hozzájuk. Ennek révén felügyelheti az erőforrásokat és tarthatja biztonságban őket, miközben Ön nyugodtan végezheti a munkáját a kedvenc eszközén.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > Ha céges e-maileket próbál elérni a Mail alkalmazásban, akkor a rendszer már feltehetőleg kérést jelenített meg Önnek, hogy az eszközt felügyeletre regisztrálja a biztonságos használat érdekében. Ahhoz, hogy iOS-eszközén is hozzá tudjon férni a céges e-mailekhez és más erőforrásokhoz, kövesse az alábbi útmutatót.
 
-**Előkészületek:**
+## <a name="before-you-start"></a>Előkészületek
 
-- Miután elkezdte, ne hagyja félbe a regisztrációt. A több percig tartó szünet leállítja a folyamatot, amelyet ilyenkor elölről kell kezdenie.
-- Ha a regisztráció bármilyen okból meghiúsul, térjen vissza a Céges portál alkalmazásba, és próbálkozzon újra.
-- Győződjön meg róla, hogy működik a Wi-Fi. Ellenkező esetben a regisztráció sikertelen lesz.
-- Ha az eszközön letiltotta a Safari böngészőt, oldja fel a tiltást. A Safarira szükség van az eszközregisztrációs folyamat során.
+- Csak akkor kezdje meg a folyamatot, ha egy munkamenetben végre tudja hajtani az egészet. Néhány percnél tovább tartó szünet esetén a folyamat általában megáll, és újra kell kezdeni.
+- Ha a folyamat sikertelen, vissza kell térnie a Céges portál alkalmazásba, és ismét meg kell kísérelnie.
+- Győződjön meg róla, hogy az eszközén működik a WiFi és a Safari.
+- Töltse le az [Intune Céges portál alkalmazás telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md) fájlt.
 
 
-**iOS-eszköz regisztrálása:**
+## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Céges erőforrásokhoz történő hozzáférés beállítása a Céges portál alkalmazás használatával
 
-1.  Végezze el [Az Intune Vállalati portál alkalmazásának telepítése, majd bejelentkezés a portálra](install-and-sign-in-to-the-intune-company-portal-app-ios.md) című részben ismertetett lépéseket.
-
-2. A **Vállalati hozzáférés beállítása** lapon koppintson a **Kezdés** elemre.
-
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. A **Miért érdemes regisztrálnia az eszközét?** képernyőn olvassa el, mi mindent tesz lehetővé az eszköz regisztrálása, majd koppintson a **Folytatás** elemre.
-
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > A sárga háromszögek nem azt jelzik, hogy máris hiba történt. hanem azt mutatja, hogy néhány lépés még hátravan a regisztráció folyamatából.
-
-4. Tekintse át a listában, hogy a cég informatikai támogatási szolgálata milyen tartalmakhoz férhet/nem férhet hozzá a regisztrált eszközén, majd koppintson a **Folytatás** gombra.
-
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  A **Mi a következő lépés?** képernyőn olvassa el, mi történik a regisztráció során, majd koppintson a **Regisztráció** elemre.
-
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  A **Profil telepítése** képernyőn koppintson a **Telepítés** elemre, és ha az alkalmazás kéri, írja be a PIN-kódját.
-
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  Koppintson a **Telepítés** elemre.
-
-    ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  A **Telepítés** elemre koppintva jelezze, hogy elolvasta a figyelmeztetést.
-
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  Koppintson a **Megbízhatóság** elemre.
-
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  Amikor a rendszer a profil telepítésének befejezését jelző képernyőre vált, koppintson a **Kész** elemre.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-    A képernyőn megjelenik az „Eszköz regisztrálása” üzenet.
-
-11.  Amikor egy üzenet arra kéri, hogy nyissa meg az oldalt a Vállalati portálon, koppintson a **Megnyitás** elemre.
-
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. A **Vállalati hozzáférés beállítása** képernyőn koppintson a **Folytatás** elemre. Ezen a képernyőn megtekintheti az eszközmegfelelőség esetleges további követelményeit, például egy jelszó megadását. Kövesse a képernyőn megjelenő utasításokat, amíg nem teljesíti az összes megfelelőségi követelményt. Ha végzett, vissza fog lépni a vállalati hozzáférés beállítási képernyőjére. Koppintson a **Tovább** gombra.
-
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. Koppintson a **Kész** gombra.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-Ezzel megtörtént az eszköz Intune-beli regisztrálása, és a rendszer visszalépteti a Vállalati portál alkalmazásba.
+|Megjelenő kép|Magyarázat|
+|---|---|
+|![A Céges portál bejelentkezési képernyője, alul a „Bejelentkezés” gombbal.](./media/ios-0-cp-enroll-1711.png)|Nyissa meg a Céges portál alkalmazást, és koppintson a **Bejelentkezés** gombra.|
+|![Azure AD-bejelentkezés kérése.](./media/ios-0a-cp-enroll-1711.png)|Adja meg a céges e-mail-címét, majd koppintson a **Következő** elemre.|
+|![Azure AD-jelszó kérése.](./media/ios-0b-cp-enroll-1711.png)|Adja meg a jelszót, majd koppintson a **Bejelentkezés** elemre.|
+|![Céges erőforrások betöltése kezdőképernyő.](./media/ios-1-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
+|![Feltételek és kikötések.](./media/ios-2-cp-enroll-1711.png)|Olvassa el, majd koppintson az **Összes elfogadása** elemre a feltételek és kikötések elfogadásához.|
+|![Céges hozzáférés beállítása képernyő. Az eszköz felügyeletét és beállításait most kell kialakítani.](./media/ios-3-cp-enroll-1711.png)|Az **Eszköz felügyelet alá helyezése** elemre koppintva kezdje meg az eszköz alkalmassá tételét a céges erőforrásokhoz történő hozzáféréshez. Ha jelenleg nem tudja megtenni ezt, választhatja az **Elhalasztás** műveletet, de ebben az esetben nem férhet hozzá az e-mailjeihez, dokumentumaihoz, stb.|
+|![Mit láthat a cégem képernyő.](./media/ios-4-cp-enroll-1711.png)|Az alul látható hivatkozásra kattintva **További információkat** kaphat arról, ami a cég számára látható. Ha nem kívánja megtekinteni, koppintson a **Folytatás** elemre.|
+|![Következő lépések képernyő.](./media/ios-5-cp-enroll-1711.png)|Ez képernyő végigvezeti a beállítás folyamatának lépésein. A folyamat végrehajtása során a Safari, a Beállítások, és a Céges portál alkalmazásokat fogja használni. Koppintson a **Következő** elemre.|
+|![Képernyő betöltése, miután a „Következő lépések” képernyőn a Következő elemre koppintott.](./media/ios-6-cp-enroll-1711.png)||
+|![Átváltás a Safari böngészőre a regisztrációhoz.](./media/ios-7-cp-enroll-1711.png)|A rendszer átirányítja Önt a Safarira, hogy felügyeleti információkat szerezzen az eszközről.|
+|![A rendszer arra kéri, hogy nyissa meg a Beállítások alkalmazást.](./media/ios-8-cp-enroll-1711.png)|Az **Engedélyezés** elemre koppintva nyissa meg a Beállítások alkalmazást a konfigurációs profil letöltéséhez. Ezt kell telepíteni ahhoz, hogy a cége kezelhesse a vállalati információkat az eszközén.|
+|![A profil megnyílik a beállításokban.](./media/ios-9-cp-enroll-1711.png)|Koppintson a **Telepítés** elemre.|
+|![A profil modális párbeszédpaneljének telepítése a képernyő aljáról.](./media/ios-10-cp-enroll-1711.png)|Koppintson a **Telepítés** elemre.|
+|![A profil telepítése folyamatban betöltési képernyő.](./media/ios-11-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
+|![Profilkezelés figyelmeztetési képernyő.](./media/ios-12-cp-enroll-1711.png)|Ez az Apple által írt figyelmeztetés további információt nyújt arról, hogy milyen műveleteket lehet végrehajtani a felügyelt eszközökön. Részletesebb tudnivalók a [Milyen adatok láthatók a cég számára](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) című oldalon.|
+|![A rendszer arra kéri, hogy adjon megbízást a távoli felügyeletre.](./media/ios-13-cp-enroll-1711.png)|A **Megbízom** elemre koppintással engedélyezze cégének, hogy a vállalati információkat és beállításokat felügyelje az eszközén.|
+|![Profil telepítésének befejezése képernyő.](./media/ios-14-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
+|![A profil telepítése megtörtént képernyő.](./media/ios-15-cp-enroll-1711.png)|A profilja telepítve van, hamarosan megkezdődhet az eszközén található vállalati információk és beállítások felügyelete.|
+|![Átváltás a Safari böngészőre a regisztrációhoz.](./media/ios-16-cp-enroll-1711.png)|A rendszer ismét átirányítja a Safarira, hogy lezárulhasson az eszköz felügyeleti információinak bekérése. |
+|![A rendszer arra kéri, hogy nyissa meg a Céges portált.](./media/ios-17-cp-enroll-1711.png)|Koppintson a **Megnyitás** gombra.|
+|![Vállalati erőforrások betöltése képernyő.](./media/ios-18-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
+|![Válasszon eszközkategóriát a Céges portál alkalmazásban.](./media/ios-19-cp-enroll-1711.png)|Válassza ki az eszköznek leginkább megfelelő kategóriát. Ez általában attól függ, hogy ki az eszköz tulajdonosa, és hogy hol található az eszköz az idő legnagyobb részében.|
+|![Kategória kiválasztva.](./media/ios-20-cp-enroll-1711.png)||
+|![Eszközfelügyelet sikeres; most frissítenie kell a beállításokat.](./media/ios-21-cp-enroll-1711.png)|Sikeresen felügyelet alá helyezte az eszközt. Lehet, hogy még hátravan néhány beállítás, mint például a jelszó hossza, amelyet valószínűleg frissítenie kell a cég számára. A végrehajtáshoz koppintson az **Eszközbeállítások frissítése** lehetőségre.|
+|![Eszközbeállítások megerősítése.](./media/ios-22-cp-enroll-1711.png)|A Céges portál ellenőrzi, hogy szükség van-e valamelyik beállítás frissítésére.|
+|![A beállítások ellenőrzése lezárult, az operációs rendszer verziója nem megfelelő](./media/ios-23-cp-enroll-1711.png)|A Céges Portál javaslatokat ad a beállításokkal kapcsolatos problémák megoldására. A problémák megoldását követően koppintson a **Beállítások ellenőrzése** elemre.|
+|![Eszközbeállítások megerősítése képernyő](./media/ios-24-cp-enroll-1711.png)|Az eszköz ellenőrzi, hogy a beállítások elég biztonságosak-e a céges erőforrások eléréséhez.|
+|![Sikeresen regisztrált és frissítette beállításait](./media/ios-25-cp-enroll-1711.png)|Gratulálunk! Ezzel megtörtént az eszköz Intune-beli regisztrálása.|
 
 > [!Note]
-> Az eszköz regisztrációjának befejezéséhez még néhány lépést végre kell hajtania. További információ a [távközlésiköltség-kezelőben való regisztrációról](enroll-your-device-with-telecom-expense-management-ios.md). Ha a cége az Apple Készülékregisztrációs programját használja, további információt [itt](enroll-your-device-dep-ios.md) találhat.
+> Már csak néhány lépést kell megtennie, hogy az eszköz teljes felügyelet alá kerüljön. További információ a [távközlésiköltség-kezelőben való regisztrációról](enroll-your-device-with-telecom-expense-management-ios.md). Ha a cége az Apple Készülékregisztrációs programját használja, további információt [itt](enroll-your-device-dep-ios.md) találhat.
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

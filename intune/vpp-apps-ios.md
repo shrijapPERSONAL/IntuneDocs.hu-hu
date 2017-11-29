@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Az alkalmazás több példányának megvásárlásával csökkenthetők az alkalmazások különböző megvásárolt példányainak nyilvántartásával járó adminisztratív terhek.
+Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások.
 
-A Microsoft Intune segítséget nyújt az ilyen program keretében vásárolt alkalmazások kezelésében a következő módon:
+A Microsoft Intune segítséget nyújt az ilyen program keretében vásárolt alkalmazások több példányának kezelésében a következő módon:
 
-- Licencinformációk jelentése az App Store-ból
-- A felhasznált licencek számának nyilvántartása
-- Annak megakadályozása, hogy több példányt telepítsen az alkalmazásból, mint amennyit vásárolt
+- Licencinformációk jelentése az App Store-ból.
+- A felhasznált licencek számának nyilvántartása.
+- Annak megakadályozása, hogy több példányt telepítsen az alkalmazásból, mint amennyit vásárolt.
 
 A mennyiségi programban vásárolt alkalmazásokat kétféle módszerrel lehet hozzárendelni:
 
 ### <a name="device-licensing"></a>Eszközlicencelés
 
-Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte.
+Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte. 
+
 Ha mennyiségi programban vásárolt alkalmazásokat rendel az eszközhöz, a végfelhasználónak nem kell Apple ID azonosítót megadnia az áruházhoz való hozzáféréshez. 
 
 ### <a name="user-licensing"></a>Felhasználói licencelés
 
 Ha felhasználóhoz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, a felhasználóhoz társítva. Az alkalmazás több, a felhasználó tulajdonában lévő eszközön is futhat (ennek a korlátját az Apple határozza meg).
+
 Ha mennyiségi programban vásárolt alkalmazásokat rendel felhasználókhoz, minden végfelhasználónak érvényes, egyedi Apple ID azonosítóval kell rendelkeznie az App Store-hoz való hozzáféréshez.
 
 Ezen kívül az Apple mennyiségi vásárlásra (VPP) szolgáló áruházából vásárolt könyvek szinkronizálhatók, felügyelhetők és hozzárendelhetők az Intune-nal. További információkat a [Mennyiségi vásárlási program keretében vásárolt iOS-es e-könyvek kezelése](vpp-ebooks-ios.md) című cikkben talál.
@@ -81,7 +83,7 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 1.  Az **Intune** panelen válassza a **Mobilalkalmazások** > **iOS-es VPP-tokenek** elemet a **Beállítás** lehetőség alatt.
-2.  A VPP-tokenek panel listájában kattintson a **Létrehozás** elemre.
+2.  A VPP-tokenek panel listájában válassza a **Létrehozás** elemet.
 4. Az **VPP-token Létrehozása** panelen adja meg az alábbi adatokat:
     - **VPP-jogkivonatfájl** – Ha még nem tette meg, iratkozzon fel a vállalati Volume Purchase Programra vagy az oktatási programra. A regisztrációt követően töltse le a fiókjához tartozó Apple VPP-tokent, és itt jelölje ki.
     - **Apple ID** – Adja meg a mennyiségi vásárlási programhoz kapcsolódó fiók Apple ID-ját.
@@ -91,14 +93,11 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
 
     - **VPP-fiók típusa** –A következő lehetőségek közül választhat: **Üzlet** és **Oktatás**.
     - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül. Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
-4. Amikor elkészült, kattintson a **Feltöltés** gombra.
+4. Amikor elkészült, válassza a **Feltöltés** gombot.
 
 A token a jogkivonatok panel listájában jelenik meg.
 
 Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **Szinkronizálás** lehetőség kiválasztásával.
-
-> [!NOTE]
-> A Microsoft Intune csak azoknak az alkalmazásoknak az adatait szinkronizálja, amelyek nyilvánosan elérhetők a iTunes Store-ban. **Az iOS-re készült egyéni B2B-alkalmazások** még nem támogatottak. Ha a használati esete ilyen alkalmazásokra vonatkozik, az alkalmazásadatok nem szinkronizálódnak.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Mennyiségi programban vásárolt alkalmazás hozzárendelése
 
@@ -134,7 +133,7 @@ A végfelhasználó különféle helyzetekben figyelmeztetést fog kapni VPP-alk
 
 ## <a name="further-information"></a>További információ
 
-A licencek visszanyeréséhez az Eltávolítás műveletre kell módosítania a hozzárendelési műveletet. A licenc az alkalmazás eltávolítása után felszabadul. Ha eltávolít egy olyan alkalmazást, amely hozzá volt rendelve egy felhasználóhoz, az Intune megpróbálja felszabadítani a felhasználóhoz társított összes alkalmazáslicencet.
+A licencek visszanyeréséhez módosítania kell a hozzárendelési műveletet az **Eltávolítás** műveletre. A licenc az alkalmazás eltávolítása után felszabadul. Ha eltávolít egy olyan alkalmazást, amely hozzá volt rendelve egy felhasználóhoz, az Intune megpróbálja felszabadítani a felhasználóhoz társított összes alkalmazáslicencet.
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni egy eszközön, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase Programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
 

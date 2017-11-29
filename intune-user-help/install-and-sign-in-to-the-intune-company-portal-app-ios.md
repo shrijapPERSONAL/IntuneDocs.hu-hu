@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3036485eef5d7a2b633b51229015d2f53d3fa7
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>A Céges portál alkalmazás telepítése, majd bejelentkezés a portálra
 
@@ -34,6 +34,6 @@ Az iOS-eszközökre telepíthető Vállalati portál alkalmazás hozzáférést 
 
 3.  Nyissa meg a Vállalati portál alkalmazást, és írja be a munkahelyi vagy az iskolai e-mail címét és jelszavát, majd koppintson a **Bejelentkezés** elemre.
 
-    Ha első alkalommal jelentkezik be a vállalati portálra, és a munkahelye vagy az iskolája Intune-t használ, az alkalmazás kérni fogja, hogy regisztrálja az eszközt az Intune-ban. A regisztráláshoz kövesse az [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md) vagy a [macOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-macos.md) témakör lépéseit. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
+    Ha első alkalommal jelentkezik be a vállalati portálra, és a munkahelye vagy az iskolája Intune-t használ, az alkalmazás kérni fogja, hogy regisztrálja az eszközt az Intune-ban. A regisztrációhoz kövesse az [iOS-eszköz regisztrálása az Intune-ban](enroll-your-device-in-intune-ios.md) című cikkben található lépéseket. További lehetőség: [Bejelentkezés más eszköz használatával](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).

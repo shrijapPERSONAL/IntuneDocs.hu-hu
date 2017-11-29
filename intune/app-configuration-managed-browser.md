@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -100,8 +100,9 @@ Az Intune Managed Browser és az [Azure AD Alkalmazásproxy]( https://docs.micro
 
 - Állítsa be a belső alkalmazásokat az Azure AD alkalmazásproxyban.
     - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
-    - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
-    - A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
+- A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
+- A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
+Megjegyzés: Az alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben akár 24 órát is igénybe vehet.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. lépés: Automatikus átirányítás engedélyezése az Outlookból a Managed Browserhez
 Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyben engedélyezett a **Webes tartalom megjelenítésének korlátozása a Managed Browser alkalmazásra** beállítás.
@@ -218,6 +219,8 @@ A böngésző az alkalmazásban is megnyitható hibaelhárítási módban.
 1. Nyissa meg a Managed Browsert.
 2. A címsorba gépelje be a következőt: `about:intunehelp`
 A böngésző hibaelhárítási módban indul el.
+
+Az alkalmazásnaplókban tárolt beállítások listáját az [Alkalmazásvédelmi naplók áttekintése a Managed Browserben](app-protection-policy-settings-log.md) című témakörben találja.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Biztonság és adatvédelem a Managed Browser használatánál
 

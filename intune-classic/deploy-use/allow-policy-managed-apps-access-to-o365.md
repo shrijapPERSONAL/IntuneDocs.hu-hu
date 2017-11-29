@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Beállíthatja, hogy csak azok a mobilalkalmazások érhessék el az O365-szolgátasokat, amelyek támogatják az Intune-alkalmazásvédelmi szabályzatokat
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Az [Intune alkalmazásvédelmi szabályzatainak](protect-apps-and-data-with-microsoft-intune.md) segítségével védheti vállalati adatait az Intune-ban regisztrált és felügyelt eszközökön. Az alkalmazásvédelmi szabályzatokat emellett olyan eszközökön is alkalmazhatja, amelyek **a munkatársak tulajdonában állnak, és amelyek nincsenek az Intune-ban felügyeletre regisztrálva**.  Jóllehet ebben az esetben nem felügyeli az eszközt, mégis fontos, hogy a vállalati adatok és erőforrások védettek legyenek. A MAM és az alkalmazásalapú feltételes hozzáférés segítségével létrehozhat egy olyan szabályzatot, amely csak az Intune alkalmazásvédelmi szabályzatokat támogató mobilalkalmazásokat engedi hozzáférni az O365 szolgáltatásokhoz, például az Exchange Online-hoz.
+Az [Intune alkalmazásvédelmi szabályzatainak](protect-apps-and-data-with-microsoft-intune.md) segítségével védheti vállalati adatait az Intune-ban regisztrált és felügyelt eszközökön. Az alkalmazásvédelmi szabályzatokat emellett olyan eszközökön is alkalmazhatja, amelyek **a munkatársak tulajdonában állnak, és amelyek nincsenek az Intune-ban felügyeletre regisztrálva**.  Jóllehet ebben az esetben nem felügyeli az eszközt, mégis fontos, hogy a vállalati adatok és erőforrások védettek legyenek. A MAM alkalmazásalapú feltételes hozzáférés segítségével létrehozhat egy olyan szabályzatot, amely csak az Intune alkalmazásvédelmi szabályzatokat támogató mobilalkalmazásokat engedi hozzáférni az O365 szolgáltatásokhoz, például az Exchange Online-hoz.
 
 Például ha csak a **Microsoft Outlook alkalmazást** engedélyezi hozzáférni az Exchange Online-hoz, **blokkolhatja azokat a beépített levelezőalkalmazásokat iOS-en és Androidon**, amelyek nem rendelkeznek az Intune MAM-szabályzatok adatvédelmével, hogy levelezést az **Exchange Online-on** folytathassa. Azt is megteheti, hogy a **SharePoint Online** elérését blokkolja azon mobilalkalmazások számára, amelyekhez nincs Intune MAM-támogatásuk.
 
-Az következő ábra azt a folyamatot mutatja be, amelynek alapján az alkalmazásalapú feltételes hozzáférési szabályzatok eldöntik, hogy mikor engedélyezik vagy tiltják le a hozzáférést: ![A hozzáférés megadásáról vagy letiltásáról hozott döntés különféle kritériumainak ábrája ](../media/mam-ca-decision-flow_simple.png).
+A következő ábra azt a folyamatot mutatja be, amelynek alapján az alkalmazásalapú feltételes hozzáférési szabályzatok eldöntik, hogy mikor engedélyezzék vagy tiltsák a hozzáférést: ![A hozzáférés megadásáról vagy letiltásáról hozott döntés különféle kritériumainak ábrája](../media/mam-ca-decision-flow_simple.png).
 
 Az ábrán használt rövidítések leírása:
 * **CP**: a Munkahelyi portál alkalmazás
@@ -38,7 +38,7 @@ Az ábrán használt rövidítések leírása:
 * **EAS**: Exchange Active Sync
 
 ## <a name="prerequisites"></a>Előfeltételek
-**Mielőtt** létrehozna egy alkalmazásalapú feltételes hozzáférési szabályzatot, rendelkeznie kell **Enterprise Mobility + Security vagy Azure Active Directory Premium szintű előfizetéssel**, és a felhasználóknak licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
+**Mielőtt** létrehozna egy alkalmazásalapú feltételes hozzáférési szabályzatot, rendelkeznie kell egy **Enterprise Mobility + Security vagy Azure Active Directory Premium szintű előfizetéssel**, a felhasználóknak pedig licenccel kell rendelkezniük az EMS-hez vagy az Azure AD-hoz. Részletesebb tájékoztatást az [Enterprise Mobility díjszabását](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) vagy az [Azure Active Directory díjszabását ismertető lapon](https://azure.microsoft.com/pricing/details/active-directory/) talál.
 
 
 ## <a name="supported-apps"></a>Támogatott alkalmazások
@@ -55,7 +55,7 @@ Az ábrán használt rövidítések leírása:
 >[!IMPORTANT]
 >Androidos eszközökön a kezdeti regisztrációt a OneDrive alkalmazásba vagy az Outlook alkalmazásba való bejelentkezéssel kell elvégezni. Az androidos OneNote alkalmazás még nem támogatja a regisztráció nélküli MAM-használatot.
 
-Azt, hogy mit tapasztalnak a felhasználók, ha alkalmazásalapú feltételes hozzáférési szabályzattal felügyelt alkalmazást használnak, a [Mire számítson, ha egy alkalmazást a MAM feltételes hozzáféréssel használ?](use-apps-with-mam-ca.md) című cikk nyújt tájékoztatást.
+Az alkalmazásalapú feltételes hozzáférési szabályzattal felügyelt alkalmazás használatához lásd: [Mire számítson, ha egy alkalmazást a MAM feltételes hozzáféréssel használ?](use-apps-with-mam-ca.md).
 
 
 ## <a name="next-steps"></a>További lépések

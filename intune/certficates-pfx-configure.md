@@ -1,208 +1,172 @@
 ---
 title: "PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titlesuffix: Azure portal
-description: "Útmutató az infrastruktúra konfigurálásához, valamint a PKCS-tanúsítványok Intune-nal végzett létrehozásához és eszközökhöz rendeléséhez."
+titleSuffix: Intune on Azure
+description: "PKCS-tanúsítványok létrehozása és hozzárendelése az Intune-nal.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: MicrosoftGuyJFlo
+ms.author: joflore
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
-ms.reviewer: vinaybha
+ms.assetid: 
+ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
+ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
+
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör az infrastruktúra konfigurálását és az SCEP-tanúsítványprofilok ezt követő, az Intune-nal végzett létrehozását és eszközökhöz rendelését ismerteti.
+## <a name="requirements"></a>Követelmények
 
-Ha bármilyen tanúsítványalapú hitelesítést szeretne végrehajtani a szervezetben, szüksége lesz egy vállalati hitelesítésszolgáltatóra.
+A PKCS-tanúsítványok Intune-nal történő használatához a következő infrastruktúrával kell rendelkeznie:
 
-A PKCS-tanúsítványprofilok használatához a vállalati hitelesítésszolgáltatón kívül a következőkre is szüksége lesz:
+* Meglévő, konfigurált Active Directory tartományi szolgáltatások (AD DS) tartomány.
+ 
+  Ha további információra van szüksége az AD DS telepítéséről és konfigurálásáról, tekintse meg az [Az AD DS tervezése és kialakítása](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning) című cikket.
 
--   Egy számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval. Alternatív megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
+* Meglévő, konfigurált vállalati hitelesítésszolgáltató (CA).
 
--  A hitelesítésszolgáltatóval kommunikálni képes számítógépen futó Intune Certificate Connector.
+  Ha további információra van szüksége az Active Directory tanúsítványszolgáltatások (AD CS) telepítéséről és konfigurálásáról, tekintse meg a [Lépésenkénti útmutató az Active Directory tanúsítványszolgáltatásokhoz](https://technet.microsoft.com/library/cc772393) című cikket.
 
-## <a name="important-terms"></a>Fontos szakkifejezések
+  > [!WARNING]
+  > Az Intune követelményei szerint az AD CS-t vállalati hitelesítésszolgáltatóval, és nem önálló hitelesítésszolgáltatóval kell futtatni.
 
+* Vállalati hitelesítésszolgáltatóhoz kapcsolódó ügyfél.
+* Vállalati hitelesítésszolgáltatótól származó főtanúsítvány exportált másolata.
+* Az Intune-portálról letöltött Microsoft Intune Tanúsítvány-összekötő (NDESConnectorSetup.exe).
+* A Microsoft Intune Tanúsítvány-összekötő (NDESConnectorSetup.exe) üzemeltetésére alkalmas Windows Server.
 
--    **Active Directory-tartomány**: A jelen szakaszban felsorolt összes kiszolgálónak (a webalkalmazás-proxykiszolgáló kivételével) csatlakoznia kell a szervezet Active Directory-tartományához.
+## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Főtanúsítvány exportálása a vállalati hitelesítésszolgáltatótól
 
--  **Hitelesítésszolgáltató**: Olyan vállalati hitelesítésszolgáltató (CA), amelyen a Windows Server 2008 R2 vagy újabb rendszer Enterprise Edition verziója fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx).
-    Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
+VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz esetében fő vagy köztes hitelesítésszolgáltatói tanúsítványra van szükség. Az alábbi lépések ismertetik a szükséges tanúsítvány beszerzését a vállalati hitelesítésszolgáltatótól.
 
--  **Egy számítógép, amely képes kommunikálni a hitelesítésszolgáltatóval**: Másik megoldásként használhatja magát a hitelesítésszolgáltató számítógépet is.
--  **Microsoft Intune Tanúsítvány-összekötő**: Töltse le a **Tanúsítvány-összekötő** telepítőjét (**ndesconnectorssetup.exe**) az Azure Portalról. Ezután futtassa az **ndesconnectorssetup.exe** fájlt azon a számítógépen, amelyre telepíteni szeretné az tanúsítvány-összekötőt. A PKCS-tanúsítványprofilok esetében a hitelesítésszolgáltatóval kommunikáló számítógépre telepítse a Tanúsítvány-összekötőt.
--  **Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) olyan kiszolgálót használhat, amelyen Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
-    -  Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
-    -  Biztonsági ajánlás olyan környezetekben, ahol az eszközök az interneten keresztül csatlakozva kapnak és újítanak meg tanúsítványokat.
+1. Jelentkezzen be a vállalati hitelesítésszolgáltatóhoz egy rendszergazdai jogosultságokkal rendelkező fiókkal.
+2. Nyisson meg rendszergazdaként egy parancssort.
+3. Exportálja a hitelesítésszolgáltatói főtanúsítványt egy olyan helyre, ahol később hozzáférhet.
 
- > [!NOTE]           
-> -    A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa a Hitelesítésszolgáltató hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) által használt hosszú URL-címeket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
->-  Ezenkívül a WAP-ot futtató kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
-    A WAP-hoz szükséges tanúsítványokkal kapcsolatos további tudnivalókért olvassa el a **Tanúsítványok megtervezése** című szakaszt a [Felkészülés az alkalmazások webalkalmazás-proxyval való közzétételére](https://technet.microsoft.com/library/dn383650.aspx) című cikkben. A WAP-kiszolgálókkal kapcsolatos általános információkért tekintse meg [A webalkalmazás-proxy használata](http://technet.microsoft.com/library/dn584113.aspx) című témakört.|
+   Példa:
 
+   `certutil -ca.cert certnew.cer`
 
-## <a name="certificates-and-templates"></a>Tanúsítványok és sablonok
-
-|Objektum|Részletek|
-|----------|-----------|
-|**Tanúsítványsablon**|Ezt a sablont a vállalati hitelesítésszolgáltatón tudja konfigurálni.|
-|**Megbízható legfelső szintű hitelesítésszolgáltató tanúsítványa**|Ezt a tanúsítványt **.cer** fájlként kell exportálnia a vállalati hitelesítésszolgáltatótól vagy bármely olyan eszközről, amely megbízik a vállalati hitelesítésszolgáltatóban, majd a megbízható hitelesítésszolgáltatói tanúsítványprofillal ki kell osztania az eszközöknek.<br /><br />Operációsrendszer-platformonként egy darab megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványt használjon, és társítsa azt az egyes létrehozott megbízható főtanúsítvány-profilokkal.<br /><br />Szükség esetén további megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványokat is használhat. Ezzel például bizalmi kapcsolatot alakíthat ki egy hitelesítésszolgáltatónak, mely aláírja a kiszolgálói hitelesítési tanúsítványokat a szervezet Wi-Fi hozzáférési pontjai számára.|
+   További információkárt lásd: [Certutil-feladatok a tanúsítványok kezeléséhez](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 
-## <a name="configure-your-infrastructure"></a>Az infrastruktúra konfigurálása
-A tanúsítványprofilok konfigurálása előtt végre kell hajtania a következő lépéseket. Ezekhez szükség van a Windows Server 2012 R2 és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
+## <a name="configure-certificate-templates-on-the-certification-authority"></a>Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 
-- **1. lépés:** tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-- **2. lépés:** az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+1. Jelentkezzen be a vállalati hitelesítésszolgáltatóhoz egy rendszergazdai jogosultságokkal rendelkező fiókkal.
+2. Nyissa meg a **Hitelesítésszolgáltató** konzolt.
+3. Kattintson a jobb gombbal a **Tanúsítványsablonok** elemre, majd kattintson a **Kezelés** parancsra.
+4. Keresse meg a **Felhasználói** tanúsítványsablont, kattintson rá a jobb gombbal, majd kattintson a **Sablon duplikálása** elemre. Ekkor megnyílik az **Új sablon tulajdonságai** ablak.
+5. A **Kompatibilitás** lapon
+   * Állítsa a **Hitelesítésszolgáltató** beállítást **Windows Server 2008 R2** értékre.
+   * Állítsa a **Tanúsítvány kezdeményezettje** beállítást **Windows 7 / Server 2008 R2** értékre.
+6. Az **Általános** lapon:
+   * Állítsa a **Sablon megjelenítendő neve** beállítást egy aktuális névre.
 
-## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>1. lépés: tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
+   > [!WARNING]
+   > A **Sablon neve** alapértelmezés szerint ugyanaz, mint a **Sablon megjelenítendő neve**, *szóköz nélkül*. Jegyezze meg a sablon nevét későbbi használatra.
 
-### <a name="to-configure-the-certification-authority"></a>A hitelesítésszolgáltató konfigurálásához
+7. A **Kérelmek kezelése** lapon jelölje be **A titkos kulcs exportálható** jelölőnégyzetet.
+8. A **Titkosítás** lapon győződjön meg róla, hogy a **Minimális kulcshossz** értéke 2048.
+9. A **Tulajdonos neve** lapon kattintson **A kérelem fogja tartalmazni** választógombra.
+10. A **Bővítmények** lapon ellenőrizze, hogy az **Alkalmazás-szabályzatok** alatt láthatóak-e a következő elemek: Titkosított fájlrendszer, Biztonságos e-mail, Ügyfél-hitelesítés.
+    
+      > [!IMPORTANT]
+      > iOS- és macOS-tanúsítványsablonok esetében a **Kiterjesztések** lapon módosítsa a **Kulcshasználat** beállítást, és ügyeljen rá, hogy **Az aláírás igazolja az eredetet** jelölőnégyzet ne legyen bejelölve.
 
-1.  Hozzon létre egy új egyéni sablont a vállalati hitelesítésszolgáltatón a Tanúsítványsablonok beépülő modullal, vagy másoljon és szerkesszen egy meglévő sablont (például a Felhasználó sablont) a PKCS szolgáltatással való használatra.
+11. A **Biztonság** lapon vegye fel annak a kiszolgálónak a fiókját, amelyen telepíti a Microsoft Intune Tanúsítvány-összekötőt.
+    * Adja meg a fiók számára az **Olvasás** és **Beléptetés** engedélyeket.
+12. A tanúsítvány mentéséhez kattintson az **Alkalmaz**, majd az **OK** elemre.
+13. Zárja be a **Tanúsítvány-sablonok konzolt**.
+14. A **Hitelesítésszolgáltató** konzolon kattintson a jobb gombbal a **Tanúsítványsablonok**, az **Új**, majd a **Kiállítandó tanúsítványsablon** elemekre.
+    * Válassza ki az iménti lépésekben létrehozott sablont, majd kattintson az **OK** elemre.
+15. Ahhoz, hogy a kiszolgáló az Intune-ban regisztrált eszközök és felhasználók nevében kezelhesse a tanúsítványokat, kövesse az alábbi lépéseket:
 
-    A sablonnak legalább az alábbiakat kell tartalmaznia:
+    a. Kattintson a jobb gombbal a hitelesítésszolgáltatóra, majd kattintson a **Tulajdonságok** elemre.
 
-    -   Adjon meg egy leíró nevet a sablonnak a **Sablon megjelenítendő neve** mezőben.
+    b. A biztonság lapon vegye fel annak a kiszolgálónak a fiókját, amelyen futtatja a Microsoft Intune Tanúsítvány-összekötőt.
+      * A fiók számára adja meg a **Tanúsítványok kiadása és kezelése** és a **Tanúsítványkérés** engedélyeket.
+16. Jelentkezzen ki a vállalati hitelesítésszolgáltatóból.
 
-    -   A **Tulajdonos neve** lapon válassza **A kérelem fogja tartalmazni**lehetőséget. (A biztonságot az Intune NDES-házirendmodulja fogja érvényesíteni.)
+## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>A Microsoft Intune Tanúsítvány-összekötő letöltése, telepítése és konfigurálása
 
-    -   A **Kiterjesztések** lapon győződjön meg róla, hogy az **Alkalmazás-házirendek leírása** lista tartalmazza az **Ügyfél-hitelesítés**elemet.
+![ConnectorDownload][ConnectorDownload]
 
-        > [!IMPORTANT]
-        > iOS- és macOS-tanúsítványsablonok esetében a **Kiterjesztések** lapon módosítsa a **Kulcshasználat** beállítást, és ügyeljen rá, hogy **Az aláírás igazolja az eredetet** jelölőnégyzet ne legyen bejelölve.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Nyissa meg az **Intune**-t, az **Eszközkonfigurációt** és a **Hitelesítésszolgáltatót**, majd kattintson a **Tanúsítvány-összekötő letöltése** elemre.
+   * Mentse a letöltést egy olyan helyre, ahol hozzá tud férni a kiszolgálón, amelyen telepíteni fogja.
+3. Jelentkezzen be azon a kiszolgálón, amelyen telepíteni fogja a Microsoft Intune Tanúsítvány-összekötőt.
+4. Futtassa a telepítőt, és fogadja el az alapértelmezett helyet. A telepítő az összekötőt a C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe helyen telepíti.
 
-2.  Ellenőrizze az **Érvényesség időtartama** beállítást a sablon **Általános** lapján. Alapértelmezés szerint az Intune a sablonban konfigurált értéket használja. Lehetősége van azonban arra is, hogy a hitelesítésszolgáltató konfigurálásával engedélyezze a kérelmezőnek egy másik érték megadását, amelyet aztán az Intune felügyeleti konzoljából tud megadni. Ha azt szeretné, hogy mindig a sablonban lévő érték legyen használva, hagyja ki ennek a lépésnek a hátralévő részét.
+      a. A Telepítőbeállítás oldalon kattintson a **PFX terjesztése**, majd a **Tovább** elemre.
 
-    > [!IMPORTANT]
-    > Az iOS és a macOS mindig a sablonban beállított értéket használja, minden más konfigurációs beállítástól függetlenül.
+   b. Kattintson a **Telepítés** elemre, és várjon, amíg a telepítés befejeződik.
 
-    Ha a hitelesítésszolgáltató konfigurálásával lehetővé kívánja tenni a kérelmezőnek az érvényességi időszak megadását, futtassa az alábbi parancsokat a hitelesítésszolgáltatón:
+   c. A befejezés lapon jelölje be a **Intune-összekötő indítása** feliratú jelölőnégyzetet, majd kattintson a **Befejezés** elemre.
 
-    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+5. Az NDES-összekötő ablaknak ekkor a **Regisztráció** lapra kell nyílnia. Az Intune-hoz történő kapcsolódás engedélyezéséhez kattintson a **Bejelentkezés** elemre, és adjon meg egy fiókot rendszergazdai engedélyekkel.
+6. A **Speciális** lapon kijelölve hagyhatja a **Use this computer's SYSTEM account (default)** (A számítógép SYSTEM fiókjának használata (alapértelmezett)) feliratú választógombot.
+7. Kattintson az **Alkalmaz**, majd a **Bezárás** elemre.
+8. Most pedig lépjen vissza az Azure Portalra. Ha megnyitja az **Intune**, az **Eszközkonfiguráció** majd a **Hitelesítésszolgáltató** lapot, a **Kapcsolat állapota** menüpont alatt pár percen belül meg kell jelennie egy zöld pipa jelnek és az **Aktív** szónak. Ez a megerősítés jelzi, hogy az összekötő kiszolgáló kapcsolatba tud lépni az Intune-nal.
 
-    b.  **net stop certsvc**
+## <a name="create-a-device-configuration-profile"></a>Eszközkonfigurációs profil létrehozása
 
-    c.  **net start certsvc**
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Nyissa meg az **Intune**, majd az **Eszközkonfiguráció**, és végül a **Profilok** lapot, majd kattintson a **Profil létrehozása** elemre.
 
-3.  Tegye közzé a Hitelesítésszolgáltató beépülő modullal a tanúsítványsablont a vállalati hitelesítésszolgáltatón.
+   ![NavigateIntune][NavigateIntune]
 
-    a.  Válassza a **Tanúsítványsablonok** csomópontot, kattintson a **Művelet**-&gt; **Új** &gt;**Kiállítandó tanúsítványsablon** lehetőségre, majd válassza ki a 2. lépésben létrehozott sablont.
+3. Adja meg az alábbi adatokat:
+   * **Név** a profil számára
+   * Igény szerint hozzáadhat egy leírást
+   * **Platform**, amelyen telepíteni kell a profilt
+   * A **Profiltípust** állítsa **Megbízható tanúsítványra**
+4. Nyissa meg a **Beállítások** lapot, és adja meg a korábban exportált hitelesítésszolgáltatói főtanúsítvány .cer fájlját.
 
-    b.  Ellenőrizze a **Tanúsítványsablonok** mappában, hogy a sablon közzététele sikerült-e.
+   > [!NOTE]
+   > A **3. lépésben** választott Platformtól függően lehetősége lehet **Céltárolót** választani a tanúsítvány számára.
 
-4.  A hitelesítésszolgáltató számítógépen győződjön meg róla, hogy az Intune Tanúsítvány-összekötőt futtató számítógépnek van regisztrálási engedélye, és így hozzáférhet a PKCS-tanúsítványprofil létrehozásakor használt sablonhoz. Állítsa be az engedélyt a hitelesítésszolgáltató számítógép tulajdonságainak **Biztonság** lapján.
+   ![ProfileSettings][ProfileSettings]
 
-## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>2. lépés: az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
-Ebben a lépésben:
+5. A profil mentéséhez kattintson az **OK**, majd a **Létrehozás** elemre.
+6. Az új profil egy vagy több eszközhöz történő hozzárendeléséhez lásd: [Microsoft Intune-eszközprofilok hozzárendelése](device-profile-assign.md).
 
-- A tanúsítvány-összekötő támogatásának engedélyezése
-- A tanúsítvány-összekötő letöltése, telepítése és konfigurálása.
+## <a name="create-a-pkcs-certificate-profile"></a>PKCS-tanúsítványprofil létrehozása
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezéséhez
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Nyissa meg az **Intune**, majd az **Eszközkonfiguráció**, és végül a **Profilok** lapot, majd kattintson a **Profil létrehozása** elemre.
+3. Adja meg az alábbi adatokat:
+   * **Név** a profil számára
+   * Igény szerint hozzáadhat egy leírást
+   * **Platform**, amelyen telepíteni kell a profilt
+   * A **Profiltípust** állítsa **PKCS-tanúsítványra**
+4. Nyissa meg a **Beállítások** lapot, és adja meg a következő adatokat:
+   * **Megújítási küszöb (%)** – Az ajánlott érték 20%.
+   * **Tanúsítvány érvényességi időtartama** – ha nem módosította a tanúsítványsablont, akkor a megadott beállítás egy év.
+   * **Hitelesítésszolgáltató** – Ez a beállítás a vállalati hitelesítésszolgáltató belső teljes tartományneve (FQDN).
+   * **Hitelesítésszolgáltató neve** – Ez a beállítás a vállalati hitelesítésszolgáltató neve, ami nem feltétlenül azonos az előző elemmel.
+   * **Tanúsítványsablon neve** – Ez a beállítás a korábban létrehozott sablon neve. Emlékeztető: a **Sablon neve** alapértelmezés szerint ugyanaz, mint a **Sablon megjelenítendő neve**, *szóköz nélkül*.
+   * **Tulajdonos nevének formátuma** – Ennél a beállításnál, ha nincs eltérő követelmény, a **Köznapi nevet** adja meg.
+   * **Tulajdonos alternatív neve** – Ennél a beállításnál, ha nincs eltérő követelmény, az **Egyszerű felhasználónevet (UPN)** adja meg.
+   * **Kibővített kulcshasználat** – Amíg a fenti, **Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál** szakasz 10. lépésében ismertetett alapértelmezett beállításokat használja, a következő **Előre meghatározott értékeket** adja meg a kijelölési mezőből:
+      * **Általános felhasználás**
+      * **Ügyfél-hitelesítés**
+      * **Biztonságos e-mail**
+   * **Főtanúsítvány** – (Androidos profilokhoz) Ez a beállítás a fenti [Főtanúsítvány exportálása a vállalati hitelesítésszolgáltatótól](#export-the-root-certificate-from-the-enterprise-ca) szakasz 3. lépésében exportált .cer fájl.
 
-1.  Jelentkezzen be az Azure Portalra.
-2.  Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3.  Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2.  Válassza az **Eszközök konfigurálása** panel **Beállítás** > **Hitelesítésszolgáltató** elemét.
-2.  A **1. lépésnél** válassza az **Engedélyezés** lehetőséget.
-
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálásához
-
-1.  Válassza az **Eszközök konfigurálása** panel **Beállítás** > **Hitelesítésszolgáltató** elemét.
-2.  Válassza **A tanúsítvány-összekötő letöltése** lehetőséget.
-2.  A letöltés befejezése után futtassa a letöltött telepítőprogramot (**ndesconnectorssetup.exe**).
-  Futtassa a telepítőt azon a számítógépen, amely kapcsolódni tud a hitelesítésszolgáltatóhoz. Válassza a PKCS (PFX) Distribution (PKCS (PFX) terjesztése lehetőséget, majd az **Install** (Telepítés) elemet. A telepítés befejeződése után folytassa egy tanúsítványprofil létrehozásával. Ezt a [tanúsítványprofilok konfigurálását bemutató](certificates-configure.md) cikk ismerteti.
-
-3.  Ha a rendszer kéri az ügyféltanúsítványt a Tanúsítvány-összekötőhöz, válassza a **Kijelölés** lehetőséget, és válassza ki a telepített **ügyfél-hitelesítő** tanúsítványt.
-
-    Miután kiválasztotta az ügyfél-hitelesítési tanúsítványt, a rendszer visszairányítja az **Client Certificate for Microsoft Intune Certificate Connector** (Ügyféltanúsítvány a Microsoft Intune Certificate Connectorhoz) felületre. Bár a választott tanúsítvány nem látható, kattintson a **Tovább** gombra a tanúsítvány tulajdonságainak megtekintéséhez. Ezután válassza a **Tovább**, majd a **Telepítés** lehetőséget.
-
-4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
-
-    > [!TIP]
-    > Ha bezárná a varázslót a tanúsítvány-összekötő felhasználói felületének megnyitása előtt, akkor az alábbi parancs futtatásával nyithatja meg:
-    >
-    > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
-
-5.  A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
-
-    a. Válassza a **Bejelentkezés** lehetőséget, és írja be az Intune szolgáltatás rendszergazdai hitelesítő adatait, vagy egy globális felügyeleti engedéllyel rendelkező bérlői rendszergazda hitelesítő adatait.
-
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
-    b. Váltson a **Speciális** lapra, majd adja meg egy olyan fiók hitelesítő adatait, amely rendelkezik **Tanúsítványok kiállítása és kezelése** engedéllyel a vállalati hitelesítésszolgáltatónál.
-
-    c. Válassza az **Alkalmaz** lehetőséget.
-
-    Bezárhatja a tanúsítvány-összekötő felhasználói felületét.
-
-6.  Nyisson meg egy parancssort, és írja be a következőt: **services.msc**. Ezután nyomja meg az **Enter** billentyűt, a jobb egérgombbal kattintson az **Intune-összekötő szolgáltatás** elemre, majd válassza az **Újraindítás** lehetőséget.
-
-A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és írja be az alábbi URL-t, melynek egy **403-as** hibát kell visszaadnia:
-
-**http:// &lt;NDES-kiszolgáló_teljes_tartományneve&gt;/certsrv/mscep/mscep.dll**
+5. A profil mentéséhez kattintson az **OK**, majd a **Létrehozás** elemre.
+6. Az új profil egy vagy több eszközhöz történő hozzárendeléséhez lásd: [Microsoft Intune-eszközprofilok hozzárendelése](device-profile-assign.md).
 
 
-### <a name="how-to-create-a-pkcs-certificate-profile"></a>PKCS-tanúsítványprofil létrehozása
-
-Az Azure Portalon válassza az **Eszközök konfigurálása** elemet.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
-3. A profilok panelen kattintson a **Profil létrehozása** lehetőségre.
-4. A **Profil létrehozása** panelen adja meg a PKCS-tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
-5. Válassza ki a PKCS-tanúsítvány eszközplatformját a **Platform** legördülő lista következő elemei közül:
-    - **Android**
-    - **Android for Work**
-    - **iOS**
-    - **Windows 10 és újabb**
-6. A **Profil típusa** legördülő listában válassza a **PKCS-tanúsítvány** lehetőséget.
-7. A **PKCS-tanúsítvány** panelen konfigurálja a következő beállításokat:
-    - **Megújítási küszöb (%)** – Adja meg, hogy az eszköz a tanúsítvány élettartamának hány százalékos hátralévő idejénél igényelje a tanúsítvány megújítását.
-    - **Tanúsítvány érvényességi időtartama** – Ha a kiállító hitelesítésszolgáltatón a **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** parancs futtatásával engedélyezte az egyéni érvényességi időtartamot, akkor meghatározhatja a tanúsítvány lejáratáig hátralévő időt.<br>A megadott tanúsítványsablonban meghatározott érvényességi időszaknál rövidebb értéket is beállíthat, hosszabbat azonban nem. Ha például a tanúsítványsablonban két év van meghatározva a tanúsítvány érvényességi idejeként, akkor egy évet beállíthat értékként, öt évet azonban nem. Az értéknek emellett a kiállító hitelesítésszolgáltató tanúsítványának hátralévő érvényességi időszakánál is kevesebbnek kell lennie.
-    - **Kulcstároló-szolgáltató** (Windows 10): Itt adhatja meg, hogy a rendszer hol tárolja a tanúsítvány kulcsát. Az alábbi értékek közül választhat:
-        - **Regisztrálás a platformmegbízhatósági modul kulcstároló-szolgáltatójába (ha van ilyen), máskülönben regisztrálás a szoftverkulcstároló-szolgáltatóba**
-        - **Regisztrálás a platformmegbízhatósági modul kulcstároló-szolgáltatójába, máskülönben a művelet sikertelen**
-        - **Regisztrálás a Passportba, máskülönben a művelet sikertelen (Windows 10 és újabb verzió)**
-        - **Regisztrálás szoftverkulcstároló-szolgáltatóba**
-    - **Hitelesítésszolgáltató:** Olyan vállalati hitelesítésszolgáltató (CA), amelyen a Windows Server 2008 R2 vagy újabb rendszer Enterprise kiadása fut. Az önálló hitelesítésszolgáltató nem támogatott. A hitelesítésszolgáltató konfigurálásáról lásd: [Hitelesítésszolgáltató telepítése](http://technet.microsoft.com/library/jj125375.aspx). Ha a hitelesítésszolgáltatója Windows Server 2008 R2 rendszeren fut, [telepítenie kell a KB2483564 jelű gyorsjavítást](http://support.microsoft.com/kb/2483564/).
-    - **Hitelesítésszolgáltató neve** – Adja meg a hitelesítésszolgáltatója nevét.
-    - **Tanúsítványsablon neve** – Válassza ki annak a tanúsítványsablonnak a nevét, amelynek használatára a Hálózati eszközök tanúsítványigénylési szolgáltatása be van állítva, és amely hozzá van adva egy kiállító hitelesítésszolgáltatóhoz.
-    Ügyeljen rá, hogy a név pontosan azonos legyen a Hálózati eszközök tanúsítványigénylési szolgáltatását futtató kiszolgáló beállításjegyzékében szereplő névvel. A tanúsítványsablon valódi nevét adja meg, ne pedig a tanúsítványsablon megjelenített nevét. 
-    Keresse meg a tanúsítványsablonok nevét. Ehhez nyissa meg a következő kulcsot: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Az **EncryptionTemplate**, a **GeneralPurposeTemplate**és a **SignatureTemplate**beállítások értékei a tanúsítványsablonokat jelölik. Alapértelmezés szerint mindhárom tanúsítványsablon értéke IPSECIntermediateOffline, amely az **IPSec (offline kérelem)** megjelenített sablonnévhez tartozik. 
-    - **Tulajdonos nevének formátuma** – Válassza ki a listáról, hogy az Intune hogyan hozza létre automatikusan a tulajdonos nevét a tanúsítványkérelemben. Ha a tanúsítvány felhasználóhoz tartozik, a felhasználó e-mail címét is feltüntetheti a tulajdonos nevében. A következő lehetőségek közül választhat:
-        - **Nincs konfigurálva**
-        - **Köznapi név**
-        - **Köznapi név (e-mail is)**
-        - **Köznapi név mint e-mail cím**
-    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt egy hálózati házirend-kiszolgáló felé történő hitelesítésre használja, a tulajdonos alternatív neveként az egyszerű felhasználónevet (UPN) állítsa be. 
-    Választhatja az **Egyéni Azure AD-attribútum** lehetőséget is. Ha erre a lehetőségre kattint, egy újabb legördülő mező jelenik meg. Az **Egyéni Azure AD-attribútum** legördülő menüs mezőjében csak a **Részleg** lehetőséget választhatja. Ha ezt választja, és a részleg azonosítása nem történt meg az Azure AD-ben, a rendszer nem állítja ki a tanúsítványt. A probléma megoldásához azonosítsa a részleget, és mentse a módosításokat. A legközelebbi eszközbejelentkezésnél megoldódik a probléma, és a tanúsítvány elkészül. Ehhez a mezőhöz az ASN.1 jelölést kell használni. 
-    - **Kibővített kulcshasználat** (Android) – Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés** , hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet. 
-    - **Főtanúsítvány** (Android) – Válasszon ki egy olyan legfelső szintű hitelesítésszolgáltatói tanúsítványprofilt, amelyet korábban konfigurált és hozzárendelt a felhasználóhoz vagy az eszközhöz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. Ez a korábban létrehozott megbízható tanúsítványprofil.
-8. Miután elkészült, lépjen vissza a **Profil létrehozása** panelre, és kattintson a **Létrehozás** elemre.
-
-Ekkor a profil létrejön, és megjelenik a profilok listáját tartalmazó panelen.
-
-## <a name="how-to-assign-the-certificate-profile"></a>A tanúsítványprofil hozzárendelése
-
-Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a következőket:
-
-- Amikor csoportokhoz rendeli a tanúsítványprofilokat, a megbízható hitelesítésszolgáltatói tanúsítványprofilból származó tanúsítványfájl települ az eszközre. Az eszköz a PKCS-tanúsítványprofilt használja tanúsítványkérelem létrehozására.
-- A tanúsítványprofilok csak a profil létrehozásakor használt platformot futtató eszközökre települnek.
-- Tanúsítványprofilokat rendelhet felhasználógyűjteményekhez és eszközgyűjteményekhez is.
-- Ha azt szeretné, hogy a tanúsítványok gyorsan megjelenjenek az eszközökön a regisztráció után, a tanúsítványprofilt felhasználócsoporthoz és ne eszközcsoporthoz rendelje hozzá. Ha eszközcsoporthoz rendeli, akkor teljes eszközregisztráció szükséges, mielőtt az eszköz megkaphatná a szabályzatokat.
-- Jóllehet az egyes profilokat külön-külön rendeli hozzá, a legfelső szintű hitelesítésszolgáltató és a PKCS-profil hozzárendelésére is szükség van. Ellenkező esetben a PKCS-tanúsítványszabályzat hibát fog jelezni.
-
-A profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikk nyújt általános tájékoztatást.
+[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Nyissa meg az Intune oldalt az Azure Portalon, és hozzon létre egy új profilt egy megbízható tanúsítványhoz"
+[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Hozzon létre egy profilt, és töltsön fel egy megbízható tanúsítványt"
+[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Töltse le a tanúsítvány-összekötőt az Azure Portalról"
