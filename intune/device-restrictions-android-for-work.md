@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Az Android for Work-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **Korábbi jelszavak újbóli használatának tiltása** – itt adhatja meg, hogy hány új jelszót kell beállítani, mielőtt egy korábbit újból használhatna (**1**-**24**).
 - **Ujjlenyomattal történő zárolásfeloldás** – letilthatja, hogy a végfelhasználók az eszközt annak ujjlenyomat-olvasójával oldják fel.
 - **Smart Lock és egyéb megbízhatósági ügynökök** – kompatibilis eszközökön ezzel vezérelheti az intelligens zárolási funkciót. Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van (például ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van). Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.
+
+## <a name="system-security"></a>Rendszerbiztonság
+
+ - **Alkalmazások fenyegetettségvizsgálata** ‒ az **Alkalmazások ellenőrzése** (Verify Apps) beállítást kötelező bekapcsolni a munkahelyi és személyes profiloknál.
+
+   > [!Note]  
+   > Ez a beállítás csak Android O vagy újabb rendszerű eszközök esetén érvényesül. 
 
 ## <a name="next-steps"></a>További lépések
 

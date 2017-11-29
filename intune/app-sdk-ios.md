@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -95,6 +95,10 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
         > [!NOTE]
         > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
 
+    Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
+
+    ![Intune App SDK (iOS) – erőforráscsomagok másolása](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Vegye fel a következő iOS-keretrendszereket a projektbe:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
-
-    ![Intune App SDK (iOS) – erőforráscsomagok másolása](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Ha a mobilalkalmazás fő Nib vagy a Storyboard fájlt definiál az info.plist fájlban, kivágás művelettel távolítsa el a **Main Storyboard** vagy a **Main Nib** fájlmezőket. Az Info.plist fájlban illessze be a kivágott mezőket és a hozzájuk tartozó értékeket egy **IntuneMAMSettings** nevű új szótárban, a következő kulcsnevekkel:
+4. Ha a mobilalkalmazás fő Nib vagy a Storyboard fájlt definiál az info.plist fájlban, kivágás művelettel távolítsa el a **Main Storyboard** vagy a **Main Nib** fájlmezőket. Az Info.plist fájlban illessze be a kivágott mezőket és a hozzájuk tartozó értékeket egy **IntuneMAMSettings** nevű új szótárban, a következő kulcsnevekkel:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
     Az info.plist fájlt nyers formátumban megtekintve láthatja a kulcsneveket. Kattintson jobb gombbal a dokumentum törzsében bárhol, és válassza a **Show Raw Keys/Values** (Nyers kulcsok/értékek megjelenítése) nézetet.
 
-6. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
+5. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
 
   > [!NOTE]
     > A telepítési profil esetében elengedhetetlen az új kulcsláncmegosztási értékek támogatása. A kulcslánc-hozzáférési csoportoknak támogatniuk kell a helyettesítő karaktert. Ezt a .mobileprovision fájl szövegszerkesztőben való megnyitásával ellenőrizheti, rákeresve a **keychain-access-groups** kifejezésre. Itt meggyőződhet arról, hogy használ-e helyettesítő karaktert. Példa:
@@ -132,7 +131,7 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
     </array>
     ```
 
-7. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
+6. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. A kulcslánc-hozzáférési csoportokat a kezelőfelületet vagy a jogosultságokat tartalmazó fájl használatával hozhatja létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
 
     1. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
 
@@ -140,24 +139,23 @@ Az Intune App SKD engedélyezéséhez kövesse az alábbi lépéseket:
 
     3. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
 
-        4. Vegye fel a `com.microsoft.workplacejoin` csoportot a meglévő hozzáférési csoportokba.
-            ![Intune App SDK (iOS) – kulcsláncok megosztása](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK (iOS) – kulcsláncok megosztása](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Ha a jogosultságokat tartalmazó fájlt használja a kulcslánc-hozzáférési csoport létrehozására, az `$(AppIdentifierPrefix)` előtaggal együtt illessze be a kulcslánc-hozzáférési csoportot a jogosultságokat tartalmazó fájlba. Példa:
+    4. Ha a jogosultságokat tartalmazó fájlt közvetlenül szerkeszti, ahelyett hogy a korábban bemutatott Xcode felhasználói felületet használná a kulcslánc-hozzáférési csoportok létrehozásához, fűzze a `$(AppIdentifierPrefix)` előtagot a kulcslánc hozzáférési csoportokhoz (az Xcode ezt automatikusan megteszi). Példa:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > A jogosultságokat tartalmazó fájl egy XML-fájl, amely minden mobilalkalmazásnál egyedi, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban.
+    > A jogosultságokat tartalmazó fájl egy XML-fájl, amely minden mobilalkalmazásnál egyedi, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban. Ha az alkalmazása eddig nem rendelkezett jogosultságokat tartalmazó fájllal, a kulcslánc megosztás engedélyezésekor (6-os lépés) az Xcode generál egyet.
 
-8. Ha az alkalmazás az Info.plist fájlban határozza meg az URL-sémákat, mindegyikhez vegyen fel új sémát az `-intunemam` utótaggal együtt.
+7. Ha az alkalmazás az Info.plist fájlban határozza meg az URL-sémákat, mindegyikhez vegyen fel új sémát az `-intunemam` utótaggal együtt.
 
-9. Ha az alkalmazás az Info.plist fájlban határozza meg a dokumentumtípusokat, mindegyik elem „Document Content Type UTIs” tömbjénél kettőzze meg azokat a bejegyzéseket, amelyek sztringje tartalmazza a „com.microsoft.intune.mam” előtagot. előtagot.
+8. Ha az alkalmazás az Info.plist fájlban határozza meg a dokumentumtípusokat, mindegyik elem „Document Content Type UTIs” tömbjénél kettőzze meg azokat a bejegyzéseket, amelyek sztringje tartalmazza a „com.microsoft.intune.mam” előtagot. előtagot.
 
-10. Az iOS 9 és újabb rendszerre fejlesztett mobilalkalmazások esetében az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Emellett minden egyes felsorolt protokollhoz vegyen fel egy új protokollt, és fűzze hozzá a `-intunemam` paramétert. A `http-intunemam`, `https-intunemam` és `ms-outlook-intunemam` elemet is fel kell venni a tömbbe.
+9. Az iOS 9 és újabb rendszerre fejlesztett mobilalkalmazások esetében az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Emellett minden egyes felsorolt protokollhoz vegyen fel egy új protokollt, és fűzze hozzá a `-intunemam` paramétert. A `http-intunemam`, `https-intunemam` és `ms-outlook-intunemam` elemet is fel kell venni a tömbbe.
 
-11. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, karakterlánctömbként vegye fel ezeket a csoportokat az **IntuneMAMSettings** szótárba a `AppGroupIdentifiers` kulcs alatt.
+10. Ha az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportok találhatók, karakterlánctömbként vegye fel ezeket a csoportokat az **IntuneMAMSettings** szótárba a `AppGroupIdentifiers` kulcs alatt.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Az Intune MAM Configurator eszköz használata
 
