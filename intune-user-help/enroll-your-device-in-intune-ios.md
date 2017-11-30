@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>A céges erőforrásokhoz történő hozzáférés beállítása
 
@@ -48,7 +48,7 @@ Az Ön cége rengeteg védett információt használ, az e-mailektől kezdve tö
 |![Azure AD-jelszó kérése.](./media/ios-0b-cp-enroll-1711.png)|Adja meg a jelszót, majd koppintson a **Bejelentkezés** elemre.|
 |![Céges erőforrások betöltése kezdőképernyő.](./media/ios-1-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
 |![Feltételek és kikötések.](./media/ios-2-cp-enroll-1711.png)|Olvassa el, majd koppintson az **Összes elfogadása** elemre a feltételek és kikötések elfogadásához.|
-|![Céges hozzáférés beállítása képernyő. Az eszköz felügyeletét és beállításait most kell kialakítani.](./media/ios-3-cp-enroll-1711.png)|Az **Eszköz felügyelet alá helyezése** elemre koppintva kezdje meg az eszköz alkalmassá tételét a céges erőforrásokhoz történő hozzáféréshez. Ha jelenleg nem tudja megtenni ezt, választhatja az **Elhalasztás** műveletet, de ebben az esetben nem férhet hozzá az e-mailjeihez, dokumentumaihoz, stb.|
+|![Céges hozzáférés beállítása képernyő. Az eszköz felügyeletét és beállításait most kell kialakítani.](./media/ios-3-cp-enroll-1711.png)|Az **Kezdés** elemre koppintva kezdje meg az eszköz alkalmassá tételét a céges erőforrásokhoz történő hozzáféréshez. Ha jelenleg nem tudja megtenni ezt, választhatja az **Elhalasztás** műveletet, de ebben az esetben nem férhet hozzá az e-mailjeihez, dokumentumaihoz, stb.|
 |![Mit láthat a cégem képernyő.](./media/ios-4-cp-enroll-1711.png)|Az alul látható hivatkozásra kattintva **További információkat** kaphat arról, ami a cég számára látható. Ha nem kívánja megtekinteni, koppintson a **Folytatás** elemre.|
 |![Következő lépések képernyő.](./media/ios-5-cp-enroll-1711.png)|Ez képernyő végigvezeti a beállítás folyamatának lépésein. A folyamat végrehajtása során a Safari, a Beállítások, és a Céges portál alkalmazásokat fogja használni. Koppintson a **Következő** elemre.|
 |![Képernyő betöltése, miután a „Következő lépések” képernyőn a Következő elemre koppintott.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Az Ön cége rengeteg védett információt használ, az e-mailektől kezdve tö
 |![Vállalati erőforrások betöltése képernyő.](./media/ios-18-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
 |![Válasszon eszközkategóriát a Céges portál alkalmazásban.](./media/ios-19-cp-enroll-1711.png)|Válassza ki az eszköznek leginkább megfelelő kategóriát. Ez általában attól függ, hogy ki az eszköz tulajdonosa, és hogy hol található az eszköz az idő legnagyobb részében.|
 |![Kategória kiválasztva.](./media/ios-20-cp-enroll-1711.png)||
-|![Eszközfelügyelet sikeres; most frissítenie kell a beállításokat.](./media/ios-21-cp-enroll-1711.png)|Sikeresen felügyelet alá helyezte az eszközt. Lehet, hogy még hátravan néhány beállítás, mint például a jelszó hossza, amelyet valószínűleg frissítenie kell a cég számára. A végrehajtáshoz koppintson az **Eszközbeállítások frissítése** lehetőségre.|
+|![Eszközfelügyelet sikeres; most frissítenie kell a beállításokat.](./media/ios-21-cp-enroll-1711.png)|Sikeresen felügyelet alá helyezte az eszközt. Lehet, hogy még hátravan néhány beállítás, mint például a jelszó hossza, amelyet valószínűleg frissítenie kell a cég számára. A folytatáshoz koppintson a **Folytatás** parancsra.|
 |![Eszközbeállítások megerősítése.](./media/ios-22-cp-enroll-1711.png)|A Céges portál ellenőrzi, hogy szükség van-e valamelyik beállítás frissítésére.|
 |![A beállítások ellenőrzése lezárult, az operációs rendszer verziója nem megfelelő](./media/ios-23-cp-enroll-1711.png)|A Céges Portál javaslatokat ad a beállításokkal kapcsolatos problémák megoldására. A problémák megoldását követően koppintson a **Beállítások ellenőrzése** elemre.|
 |![Eszközbeállítások megerősítése képernyő](./media/ios-24-cp-enroll-1711.png)|Az eszköz ellenőrzi, hogy a beállítások elég biztonságosak-e a céges erőforrások eléréséhez.|
