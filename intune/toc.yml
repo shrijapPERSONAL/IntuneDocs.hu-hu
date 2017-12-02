@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot üzembe helyezési program
               href: enrollment-autopilot.md
-            - name: Beléptetés állapota képernyő
-              href: windows-enrollment-status.md
         - name: Az androidos eszközök regisztrálásának beállítása
           href: android-enroll.md
         - name: iOS-eszközök regisztrálásának beállítása
