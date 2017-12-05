@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 6d7b22c871ed1e62bfdc148f30fb832786baf294
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -172,9 +172,9 @@ Az Intune MAM Configurator eszköz használatával a következők frissíthetők
 * Az alkalmazás bármelyik, az Info.plist fájlban meghatározott és az -intunemam utótaggal rendelkező URL-sémája.
 * Az alkalmazás az Info.plist fájlban meghatározott egyes dokumentumtípusainak „Document Content Type UTIs” tömbjeinél megkettőzi azokat a bejegyzéseket, amelyek karakterlánca tartalmazza a „com.microsoft.intune.mam” előtagot.
 * Az alkalmazás jogosultságaiban meghatározott alkalmazáscsoportokat hozzáadja az IntuneMAMSettings szótárhoz az AppGroupIdentitifiers kulcs karakterlánctömbjeként.
-
     
->[!NOTE] Ha az info.plist fájl manuális módosítása helyett az eszköz használata mellett dönt, akkor javasolt azt az alkalmazás info.plist fájljának vagy jogosultságainak módosítása után mindig újból futtatni.
+> [!Note]
+> Ha az info.plist fájl manuális módosítása helyett az eszköz használata mellett dönt, akkor javasolt azt az alkalmazás info.plist fájljának vagy jogosultságainak módosítása után mindig újból futtatni.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Az Azure Active Directory Authentication Library (ADAL) konfigurálása (nem kötelező)
 
