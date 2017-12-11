@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: Megosztott eszközök iOS-hez
               href: shared-device-settings-ios.md
+            - name: Az Intune konfigurálása egyszeri bejelentkezéshez iOS-es eszközökön
+              href: sso-ios.md
             - name: Webszűrő-beállítások iOS-hez
               href: web-content-filter-settings-ios.md
         - name: Eszközkorlátozások beállítása
