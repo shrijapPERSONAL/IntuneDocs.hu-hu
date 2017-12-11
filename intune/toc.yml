@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Adatszivárgás megakadályozása nem felügyelt eszközökön
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: Az MDM és az MAM összehasonlítása
+          href: byod-technology-decisions.md
     - name: Migrálási útmutató
       href: migration-guide.md
       items:
