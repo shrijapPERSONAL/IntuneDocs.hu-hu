@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 446b395aab311d13ebc7ac6b8c3ed7c740070729
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: d2a7cd5cc4c201a73570f73892563463cb0bdcc7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>A Windows Defender bekapcsolása a vállalati erőforrásokhoz való hozzáférés érdekében
 
@@ -48,4 +48,4 @@ Győződjön meg arról, hogy a valós idejű védelem be van kapcsolva. Ehhez n
 
 Győződjön meg arról, hogy a víruskeresési definíciók naprakészek. Ehhez nyissa meg a **Start** menüt, és keressen rá a **Windows Defender biztonsági központ** kifejezésre. A **Védelmi frissítések** és a **Frissítések keresése** lehetőséggel ellenőrizze, hogy az eszköze naprakész védelemmel rendelkezik-e vírusok ellen. Ha ez a lehetőség nem jelenik meg, akkor kövesse a [Valós idejű védelem bekapcsolása](turn-on-defender-windows.md#turn-on-real-time-protection) című szakaszban szereplő lépéseket.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

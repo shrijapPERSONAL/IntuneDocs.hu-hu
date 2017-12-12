@@ -14,15 +14,15 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
-A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell oldania ezt a problémát. A következőhöz hasonló üzenetet fog látni:
+A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell szüntetnie ezt a problémát. A következőhöz hasonló üzenetet fog látni:
 
 ![Symantec Endpoint Protection Mobile által küldött, megfelelőség hiányát jelző üzenet](./media/ios-skycure-noncompliant-in-ssp.png)
 
@@ -34,7 +34,7 @@ Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés talá
 
 ![A Skycure hibaüzenete és hivatkozás a Céges portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com#HelpDeskDialog) eléréséhez, ahol útmutatót talál a probléma elhárításához.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile által fenyegetésként észlelt alkalmazás – példa
 
@@ -44,5 +44,5 @@ Koppintson az alkalmazás nevére a képernyő tetején, és az utasítások ala
 
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
 
