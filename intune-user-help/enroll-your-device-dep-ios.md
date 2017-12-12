@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 0d469a52c10a3c6080a3e900d55d18d7798bb534
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs programmal
 
@@ -33,4 +33,4 @@ Az Apple Készülékregisztrációs programja olyan cégek és szervezetek szám
 5.  Fogadja el a **feltételeket és kikötéseket**, majd döntse el, hogy szeretne-e diagnosztikai adatokat küldeni az Apple-nek.
 6.  A regisztráció befejeztével az eszköz további műveletek elvégzését kérheti. Ilyen lehet például a jelszó megadása az e-mail-hozzáféréshez, a PIN-kód megadása vagy beleegyezés további alkalmazástelepítésekbe – a céges Intune-rendszergazda korábbi beállításaitól függően.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 9886fdf682b08707d4a5292f8c34aca20b828028
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-email"></a>Naplók elküldése a cég informatikai támogatási szolgálatának e-mailben
 
-Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához e-mailben elküldheti a cég informatikai támogatási szolgálatának a hibával kapcsolatos információkat. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
+Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához a hibával kapcsolatos információkat e-mailben elküldheti a cég informatikai támogatási szolgálatának. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
 
 > [!Note]
 > Annak érdekében, hogy a cég informatika támogató szolgálata könnyebben felderíthesse a problémát, kapcsolja be a _részletes naplózást_. Részletes naplózáskor az összes releváns részlet bekerül a jelentésbe. [Útmutató a részletes naplózás bekapcsolásához](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -40,4 +40,4 @@ Ha naplót szeretne elküldeni a cég informatikai támogatási szolgálatának 
 
 3.  A **Súgó** elemben koppintson a **Súgó megjelenítése** lehetőségre.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

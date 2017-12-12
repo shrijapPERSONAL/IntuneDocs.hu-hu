@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
-Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](https://portal.manage.microsoft.com) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti. Ezen a webhelyen elvégezheti ugyanazoknak a műveleteknek a többségét, mint amelyeket a Munkahelyi portálon szokott elvégezni.
+Ha elveszti vagy ellopják az eszközét, célszerű lehet visszaállítani a gyári alapbeállításait, nehogy illetéktelenek férhessenek hozzá az adatokhoz. A [Vállalati portál webhely segítségével](https://portal.manage.microsoft.com#HelpDeskDialog) távolról alaphelyzetbe állíthatja az eszközt. A Vállalati portál webhelye egy weblap, amelyen az Intune-ban regisztrált számítógépeket és eszközöket kezelheti. Ezen a webhelyen elvégezheti ugyanazoknak a műveleteknek a többségét, mint amelyeket a Munkahelyi portálon szokott elvégezni.
 
 Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati portálon, és visszaállnak rajta a gyári alapbeállítások.
 
@@ -33,7 +33,7 @@ Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati 
 
 Az eszköz alaphelyzetbe állítása:
 
-1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
+1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiket át szeretné nevezni.
 
@@ -47,4 +47,4 @@ Az eszköz alaphelyzetbe állítása:
 
 Az eszköz alaphelyzetbe állítása megtörtént.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül
 
 Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás használata során, a probléma megoldásához a hibával kapcsolatos információkat e-mailben elküldheti a cég informatikai támogatási szolgálatának. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
 
 > [!Note]
-> A kezdés előtt ellenőrizze, hogy kéznél van-e a cég informatikai támogatási szolgálatának e-mail-címe. Ez a [Céges portál webhelyén](https://portal.manage.microsoft.com) vagy a Céges portál alkalmazásban található meg.
+> A kezdés előtt ellenőrizze, hogy kéznél van-e a cég informatikai támogatási szolgálatának e-mail-címe. Ez a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog) vagy a Céges portál alkalmazásban található meg.
 
 1.  A hibaképernyőn koppintson az **Adatok küldése** lehetőségre. A naplóküldési módszer kiválasztására szolgáló üzenet megjelenésekor azt a módszert válassza ki, amely menti a fájlokat az eszközre.
 
@@ -37,4 +37,4 @@ Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás has
 
 4.  Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a cég informatikai támogatási szolgálatának.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

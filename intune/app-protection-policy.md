@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 12/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f642df3cfd3910522e226d864c72cc148c3b7a4c
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -61,9 +61,8 @@ Az MDM-megoldásoknak az alkalmazásvédelmi szabályzatokkal együttes használ
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Az alkalmazásvédelmi szabályzatok által támogatott platformok
--   iOS 8.1-es vagy újabb verzió
-
--   Android 4 vagy újabb verzió
+-   iOS 9-es vagy újabb verzió
+-   Android 4.4-es vagy újabb verzió
 
 A Windows-eszközök jelenleg nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Az alkalmazásvédelmi szabályzatok és az alkalmazásadatok védelme
@@ -80,7 +79,7 @@ A korlátozások nélkül használt alkalmazások miatt összekeveredhetnek a v�
 
 
 Az alkalmazásvédelmi szabályzatok révén megakadályozható a vállalati adatoknak az eszköz helyi tárolójára történő mentése, illetve korlátozható a más, alkalmazásvédelmi szabályzatokkal nem védett alkalmazásokba irányuló adatmozgás. Íme néhány az alkalmazásvédelmi szabályzatok beállításai közül:
-- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**, ** A kivágás, másolás és beillesztés korlátozása**.
+- Adatáthelyezési szabályzatok, például **A Mentés másként művelet letiltása**,  **A kivágás, másolás és beillesztés korlátozása**.
 - Hozzáférési szabályzati beállítások, például **A hozzáféréshez egyszerű PIN-kód szükséges**, **Felügyelt alkalmazások függetlenített vagy feltört eszközökön való futtatásának letiltása**.
 
 ### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mdm-solution"></a>Adatvédelem alkalmazásvédelmi szabályzatokkal az MDM-megoldásokkal felügyelt eszközökön

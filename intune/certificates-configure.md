@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f0d518edc26c382d6df71b95b84328eb375baf6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e9e511cef22fdfc8e2975bd14f7b969067317a44
+ms.sourcegitcommit: 2ad0d88d3ef5b81563c6a54eaf52f09e126abeaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Tanúsítványok konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- vagy e-mail-profilokon keresztüli elérését, ezeket a kapcsolatokat tanúsítványokkal hitelesítheti. A tanúsítványok kiváltják a kapcsolatok felhasználónévvel és jelszóval való hitelesítését.
+Amikor a felhasználóknak engedélyezi a vállalati erőforrások VPN-, Wi-Fi- vagy e-mail-profilokon keresztüli elérését, ezeket a kapcsolatokat tanúsítványokkal hitelesítheti. Tanúsítványok használatakor nem kell megadnia a felhasználóneveket és a jelszavakat a kapcsolatok hitelesítéséhez.
 
 Az Intune-nal hozzárendelheti ezeket a tanúsítványokat a felügyelt eszközökhöz. Az Intune a következő tanúsítványtípusok eszközökhöz rendelését és felügyeletét támogatja:
 
@@ -45,27 +45,30 @@ Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és 
     - Windows 8.1 és újabb
     - Windows Phone 8.1 és újabb verziók
     - Windows 10 és újabb
-3. Hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat. A következő platformú eszközök számára **PKCS-** vagy **SCEP**-tanúsítványprofilt oszthat ki:
-    - iOS 8.0 és újabb verziók
-    - Android 4.0 és újabb verziók
-    - Android for Work
-    - Windows 10 (asztali és mobilverzió), illetve újabb
+3. Hozza létre a VPN-, Wi-Fi- és e-mail-hozzáférés hitelesítésére szolgáló tanúsítványprofilokat.
 
-    A következő platformok esetében csak SCEP-tanúsítványprofil használható:
+   A következő platformú eszközök számára **PKCS-** vagy **SCEP**-tanúsítványprofilt oszthat ki:
 
--   macOS 10.9 és újabb verziók
--   Windows Phone 8.1 és újabb verziók
+   - iOS 8.0 és újabb verziók
+   - Android 4.0 és újabb verziók
+   - Android for Work
+   - Windows 10 (asztali és mobilverzió), illetve újabb
+
+   A következő platformot futtató eszközök esetében csak **SCEP-tanúsítványprofil** használható:
+
+   - macOS 10.9 és újabb verziók
+   - Windows Phone 8.1 és újabb verziók
 
 Mindegyik eszközplatformhoz külön profilt kell létrehoznia. Létrehozásakor társítsa a profilt a már létrehozott megbízható főtanúsítvány-profilhoz.
 
 ### <a name="further-considerations"></a>További szempontok
 
 - Ha nem rendelkezik vállalati hitelesítésszolgáltatóval, létre kell hoznia egyet.
-- Ha az eszközplatformjai alapján úgy dönt, hogy SCEP-profilt használ, egy NDES-kiszolgálót is konfigurálnia kell.
+- SCEP-profilok használatakor konfigurálnia kell egy NDES-kiszolgálót is.
 - Mind az SCEP-, mind a PKCS-profilok használatához le kell töltenie és konfigurálnia kell a Microsoft Intune Tanúsítvány-összekötőt.
 
 
-## <a name="step-1--configure-your-certificate-infrastructure"></a>1. lépés: a tanúsítványinfrastruktúra konfigurálása
+## <a name="step-1-configure-your-certificate-infrastructure"></a>1. lépés: a tanúsítványinfrastruktúra konfigurálása
 
 Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-típusok infrastruktúrájának konfigurálásához:
 
@@ -73,7 +76,7 @@ Az alábbi témakörök nyújtanak segítséget az egyes tanúsítványprofil-t�
 - [PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal](certficates-pfx-configure.md)
 
 
-## <a name="step-2---export-your-trusted-root-ca-certificate"></a>2. lépés: a megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2. lépés: a megbízható legfelső szintű hitelesítésszolgáltató tanúsítványának exportálása
 
 Exportálja a megbízható legfelső szintű hitelesítésszolgáltató (CA) tanúsítványát **.cer** kiterjesztésű fájlként a kibocsátó hitelesítésszolgáltatóról vagy a vállalati hitelesítésszolgáltatóban megbízó bármelyik eszközről. A titkos kulcsot ne exportálja.
 

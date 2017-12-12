@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f4a6ed7d399806b2b8ac8fb24d9a29675ffe00b3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Az Outlook nem szinkronizálja a felügyelt e-maileket, ha az androidos akkumulátor-optimalizálás be van kapcsolva
 
 > [!IMPORTANT]
-> A problémát azért itt dokumentáljuk, mert az elmúlt időben nagy mennyiségű felhasználói visszajelzést kaptunk vele kapcsolatban. Ha a probléma az alábbi lépések elvégzése után is fennáll, további segítségért lépjen kapcsolatba a [cég informatikai támogatási szolgálatával](https://portal.manage.microsoft.com).
+> A problémát azért itt dokumentáljuk, mert az elmúlt időben nagy mennyiségű felhasználói visszajelzést kaptunk vele kapcsolatban. Ha a probléma az alábbi lépések elvégzése után is fennáll, további segítségért lépjen kapcsolatba a [cég informatikai támogatási szolgálatával](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 Az eszköz Intune-regisztrációjával hozzáférhet a céges erőforrásokhoz. A leggyakrabban használt erőforrások egyike az e-mail-hozzáférés. Az Android-eszközök esetében az Outlook-levelezés hozzáférésével kapcsolatos hibák egyike az akkumulátor-optimalizálás bekapcsolása során jelentkezett. Az akkumulátor-optimalizálás automatikusan bekapcsolhat az eszköz üzemidejének meghosszabbítása érdekében. Az akkumulátor-optimalizálás az automatikus e-mail-letöltés leállításával részben segít megőrizni az eszköz töltöttségét.
 
@@ -73,4 +73,4 @@ A szükséges beállításokat emellett a rendszerbeállítások között is meg
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

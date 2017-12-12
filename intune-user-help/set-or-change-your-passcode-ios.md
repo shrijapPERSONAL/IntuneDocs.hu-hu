@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 80cd4b97aafd3307fee310ea742d82a5ff215680
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-or-change-your-passcode"></a>PIN-kód beállítása vagy módosítása
 
@@ -41,4 +41,4 @@ Ha gondja van a PIN-kóddal kapcsolatos követelménynek megfelelő PIN-kód be�
 2. Koppintson a **Change Passcode** (PIN-kód módosítása) elemre, és adja meg a régi PIN-kódját.
 3. Adjon meg egy új PIN-kódot, amely megfelel a cég informatikai támogató szolgálata által meghatározott követelményeknek, majd a megerősítéshez írja be még egyszer.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ProPlus-alkalmazások telepítése Windows 10-re az Intune-nal"
+title: "Office 365-alkalmazások telepítése mobileszközökre az Intune-nal"
 titlesuffix: Azure portal
 description: "Annak ismertetése, hogyan egyszerűsíthető az Office 365-alkalmazások a Windows 10-es eszközökre való telepítése az Intune használatával."
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
-Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus 2016-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen alkalmazásként jelennek meg az Intune-konzol alkalmazáslistájában.
+Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus 2016-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -137,7 +137,3 @@ Az alábbi táblázatban az esetlegesen megjelenő gyakori hibakódok és azok j
 ## <a name="next-steps"></a>További lépések
 
 Mostantól hozzárendelheti az alkalmazásokat a kiválasztott csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
-
-             
-
-

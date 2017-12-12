@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Az Intune vállalati portál webhelyének használata
-A [Munkahelyi portál webhelye](https://portal.manage.microsoft.com) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
+A [Munkahelyi portál webhelye](https://portal.manage.microsoft.com#HelpDeskDialog) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
 
 A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
@@ -45,4 +45,4 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 
 -   Távoli kapcsolat segítségével kezelheti a számítógépét (a lehetőség csak személyi számítógépek esetében működik)
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
