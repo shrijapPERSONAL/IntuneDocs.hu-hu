@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: fe9a4d7f52c462efa4c926544129da565620f60c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Mi történik munkahelyi profil létrehozásakor
 
@@ -43,4 +43,4 @@ Ha munkahelyi profilt hoz létre:
 
 A munkahelyi profil létrehozásának lépéseiről itt olvashat: [Munkahelyi profil létrehozása és az eszköz regisztrálása](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
