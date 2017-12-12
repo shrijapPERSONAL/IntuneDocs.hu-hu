@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Segítségnyújtás a felhasználóknak a hibaelhárítási portál használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A hibaelhárítási portál segítségével az ügyfélszolgálat munkatársai és az Intune-rendszergazdák felhasználói információkat tekinthetnek meg a felhasználói segítségkérések teljesítéséhez. Az ügyfélszolgálattal rendelkező cégek **Ügyfélszolgálat** jogosultságot oszthatnak ki egy felhasználói csoport részére. Az ügyfélszolgálati szerepkörrel rendelkezők a **Hibaelhárítás** panelt használhatják.
+
+A **Hibaelhárítás** panelen megtalálhatók lesznek a felhasználói regisztrálással kapcsolatos problémák. A hiba adatai és a megoldáshoz javasolt lépések segítséget nyújtanak a rendszergazdának és az ügyfélszolgálati munkatársaknak a hibalehárításban. A rendszer nem jegyez fel minden regisztrálási hibát, és bizonyos hibáknál nem kínál fel megoldási javaslatokat. 
 
 Az ügyfélszolgálati szerepkör hozzárendeléséről a [Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal](/intune/role-based-access-control) című témakör nyújt további információt.
 
@@ -33,7 +35,7 @@ Ha egy felhasználó Intune-nal kapcsolatos műszaki problémával fordul az üg
 - Felhasználó állapota
 - Hozzárendelések
 - Megfelelőségi problémák
-- Az eszköz nem válaszol
+- Az eszköz nem található
 - Az eszközön nem működnek a VPN- vagy Wi-Fi-beállítások
 - Alkalmazástelepítési hiba
 

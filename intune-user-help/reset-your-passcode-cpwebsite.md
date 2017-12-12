@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 43460cb18681c47e14c89c8dbeb70a4ae006eb7d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Az eszköz jelszavának alaphelyzetbe állítása a Vállalati portál webhelyén
 
-Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, a [Céges portál webhelyen](https://portal.manage.microsoft.com) kérhet újat. A Vállalati portál webhelyét az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a Vállalati portál alkalmazásban elvégezhető legtöbb feladat végrehajtására használhatja.
+Ha elveszíti egy Intune-ban regisztrált eszköz PIN-kódját vagy jelszavát, a [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) kérhet újat. A Vállalati portál webhelyét az Intune-ban regisztrált számítógépek és eszközök felügyeletére, illetve a Vállalati portál alkalmazásban elvégezhető legtöbb feladat végrehajtására használhatja.
 
 > [!NOTE]
 > Regisztrált céges eszköz használata esetén előfordulhat, hogy a Jelszó alaphelyzetbe állítása gomb nem jelenik meg a Céges portál webhelyén. Ha ezt tapasztalja, kérje meg a cég informatikai támogatási szolgálatát, hogy állítsa alaphelyzetbe a jelszót.
 
 A jelszó alaphelyzetbe állítása:
 
-1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/intune/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
+1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra ![A menügomb képe, három vízszintes vonal párhuzamosan elhelyezve egymás alá.](/intune/media/CP_hamburger_menu.png), majd válassza az __Saját eszközök__ menüpontot.
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiknek a jelszavát alaphelyzetbe kívánja állítani.
 
@@ -68,4 +68,4 @@ A jelszó alaphelyzetbe állítása:
 
 Ha szeretne egy megerősítő értesítést megjeleníteni arról, hogy a jelszó átállítása sikeresen megtörtént, kattintson a Vállalati portál webhelyének felső sarkában található értesítésjelzőre.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

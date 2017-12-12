@@ -14,11 +14,11 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a92a64cdb94376991dfe8bea2e928316201b566
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 852d960e39e35d9399a6a47d550cf97fc5581818
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Tegye biztonságosabbá készülékét a megfelelő jelszóval
 
@@ -44,4 +44,4 @@ Ha a Windows-eszköz nem felel meg a cég informatikai támogatási szolgálata 
 3. Adja meg az új jelszót az **Új jelszó** mezőben, majd még egyszer a **Jelszó megerősítése** mezőben.
 4. Válassza a **kész** elemet.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

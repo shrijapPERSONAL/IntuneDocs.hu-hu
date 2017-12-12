@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -94,8 +94,8 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
     **Ha a karbantartási csatorna a Féléves csatorna értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.
 
-    - **Kézbesítés optimalizálása** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
-8. Ha minden kész, kattintson az **OK** elemre, majd a **Frissítési kör létrehozása** panelen a **Létrehozás** lehetőségre.
+    - **Kézbesítés optimalizálása** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Ha minden kész, kattintson az **OK** elemre, majd a **Frissítési kör létrehozása** panelen a **Létrehozás** lehetőségre.
 
 Az új frissítési kör megjelenik a frissítési körök listájában.
 

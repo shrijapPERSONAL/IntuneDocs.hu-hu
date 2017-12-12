@@ -14,11 +14,11 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 6cfc144b188b1701a2e5e599af43d12c98d48496
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása
 
@@ -34,7 +34,7 @@ Ha a regisztrált eszközön vírus vagy másféle biztonsági fenyegetés talá
 
 ![A Lookout for Work hibaüzenete és hivatkozás a Vállalati portál webhelyére](./media/mtd-go-to-device-management-portal-android.png)
 
-Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com) eléréséhez, ahol útmutatót talál a probléma elhárításához.
+Koppintson az **eszközkezelési portál** hivatkozásra a [Vállalati portál webhelyének](https://portal.manage.microsoft.com#HelpDeskDialog) eléréséhez, ahol útmutatót talál a probléma elhárításához.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Példa olyan alkalmazásra, amelyet a Lookout for Work fenyegetésként észlel
 
@@ -46,5 +46,5 @@ Ha ehhez hasonló üzenet jelenik meg, koppintson az alkalmazás nevére a képe
 
 Az alkalmazás eltávolítása után azonnal hozzáférhet az e-mailekhez és más vállalati vagy iskolai adatokhoz. A vállalati e-mailekhez és más adatokhoz egészen addig nem férhet hozzá, amíg el nem távolítja az alkalmazást.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
 

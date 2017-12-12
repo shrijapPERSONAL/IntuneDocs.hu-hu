@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ef555fa550e1c2fcab96d4837e7fcdba1ab4a9e6
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Frissítenie kell az eszközt az Outlook alkalmazás telepítéséhez
 
@@ -34,4 +34,4 @@ Koppintson a **Beállítások** menüre, majd a **Frissítés** vagy a **Rendsze
 ## <a name="if-you-have-an-ios-device"></a>iOS rendszerű eszköz esetén
 Koppintson a **Beállítások** > **Általános** > **Szoftverfrissítés** lehetőségre.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

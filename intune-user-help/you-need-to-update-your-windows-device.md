@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c2c27f48eec08724b1ced23d564e3df6ab18303
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7e27e1bbe9b48b24e02b9b77a93ddc10f7a1d9b0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Frissítenie kell Windows-eszközét
 
@@ -35,4 +35,4 @@ A Windowst futtató számítógépek esetében keressen az **operációs rendsze
 
 Windows 10-es és Windows 8.1-es rendszer esetében írja be a __keresősávba__ a __Windows-verziót__. A __Miben segíthetek?__ alatt válassza ki a __Windows-verziót__. Megjelenik a verziószám. Ez a szám valami ehhez hasonló lesz: __10.0.14393.447__.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

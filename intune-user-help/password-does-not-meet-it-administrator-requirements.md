@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>A jelszó nem felel meg a cég informatikai támogatási szolgálata követelményeinek
 
@@ -46,4 +46,4 @@ PIN-kóddal vagy jelszóval kapcsolatos problémák leírása:
 
 - **A jelszó nem elég bonyolult**. A cég informatikai támogatási szolgálata előírja, hogy számok, nagybetűk és speciális karakterek legyenek a jelszavában. A számok és nagybetűk mellett például ilyen szimbólumok szerepelhetnek: $, %, #. Ez az eszközön lévő más fiókokra is igaz lehet, tehát mindenképpen ellenőrizze az egyéb munkahelyi fiókokat, hogy a jelszó megfeleljen az informatikai részleg által az eszköz számára előírt követelményeknek.
 
-Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a cég informatikai támogatási szolgálatához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+Ha nem tudja, hogyan alakíthat ki a követelményeknek megfelelő jelszót, forduljon a cég informatikai támogatási szolgálatához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

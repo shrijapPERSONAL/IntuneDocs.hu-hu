@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 406da09419e13319b8ebf4f59a05ca36eff1edad
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -81,11 +81,7 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 
 **4. lépés**: Az NDES Intune-nal való használatának konfigurálása
 
-**5. lépés**: Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
-
-> [!NOTE]
-> Egy ismert probléma miatt a következő eljárást követve végezze a tanúsítvány-összekötő letöltését, telepítését és konfigurálását: [SCEP-tanúsítványinfrastruktúra konfigurálása -> Az infrastruktúra konfigurálása -> 5. feladat](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
-
+**5. lépés**: Az Intune Tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
 
 #### <a name="step-1---create-an-ndes-service-account"></a>1. lépés – NDES szolgáltatásfiók létrehozása
 
@@ -168,7 +164,7 @@ A feladat tartalma:
 
 
 
-   1.  Jelentkezzen be az NDES szolgáltatásnak helyt adó kiszolgálón **Vállalati rendszergazdaként**, és telepítse az NDES-t a [Szerepkörök és szolgáltatások hozzáadása varázslóval](https://technet.microsoft.com/library/hh831809.aspx) :
+   1.  Jelentkezzen be az NDES szolgáltatásnak helyt adó kiszolgálón **Vállalati rendszergazdaként**, és telepítse az NDES-t a [Szerepkörök és szolgáltatások hozzáadása varázslóval](https://technet.microsoft.com/library/hh831809.aspx):
 
     1.  A varázslóban válassza az **Active Directory tanúsítványszolgáltatások** lehetőséget az AD CS szerepkör-szolgáltatások eléréséhez. Válassza a **Hálózati eszközök tanúsítványigénylési szolgáltatása**lehetőséget, törölje a jelet a **Hitelesítésszolgáltató**jelölőnégyzetből, és fejezze be a varázslót.
 
@@ -181,7 +177,7 @@ A feladat tartalma:
 
         -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 3.5**. Az ASP.NET 3.5 telepítése telepíti a .NET-keretrendszer 3.5-öt is. A .NET-keretrendszer 3.5 telepítésekor a **.NET-keretrendszer 3.5** alapszolgáltatásai mellett telepítse a **HTTP-aktiválás**szolgáltatást is.
 
-        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 4.5**. Az ASP.NET 4.5 telepítése a .NET-keretrendszer 4.5-ös verzióját is telepíti. A .NET-keretrendszer 4.5 telepítésekor a **.NET-keretrendszer 4.5** alapszolgáltatásai mellett telepítse az **ASP.NET 4.5** és a **WCF-szolgáltatások** &gt; **HTTP-aktiválás** szolgáltatását is.
+        -   **Webkiszolgáló** &gt; **Alkalmazásfejlesztés** &gt; **ASP.NET 4.5**. Az ASP.NET 4.5 telepítése telepíti a .NET-keretrendszer 4.5-öt is. A .NET-keretrendszer 4.5 telepítésekor a **.NET-keretrendszer 4.5** alapszolgáltatásai mellett telepítse az **ASP.NET 4.5** és a **WCF-szolgáltatások** &gt; **HTTP-aktiválás** szolgáltatását is.
 
         -   **Felügyeleti eszközök** &gt; **Kompatibilitás az IIS 6 kezelésével** &gt; **Kompatibilitás az IIS 6 metabázisával**
 
@@ -207,7 +203,7 @@ A feladat tartalma:
 -   Kérelemszűrés konfigurálása az IIS-ben
 
 
-1.  Nyissa meg az NDES-kiszolgálón Az Active Directory tanúsítványszolgáltatások beállítása varázslót, és végezze el az alábbi konfigurációs lépéseket.
+1.  Nyissa meg az NDES-kiszolgálón Az Active Directory tanúsítványszolgáltatások beállítása varázslót, és végezze el az alábbi konfigurációs lépéseket:
 
     > [!TIP]
     > Ha az előző feladatban rákattintott a hivatkozásra, akkor ez a varázsló már meg van nyitva. Ellenkező esetben nyissa meg a Kiszolgálókezelőt az Active Directory tanúsítványszolgáltatások telepítés utáni konfigurációjának eléréséhez.
@@ -235,7 +231,7 @@ A feladat tartalma:
     |Aláírás és titkosítás|GeneralPurposeTemplate|Kulcstitkosítás<br /><br />Digitális aláírás|
     Ha például a tanúsítványsablon célja **Titkosítás**, akkor az **EncryptionTemplate** azonosító értékét kell a tanúsítványsablon nevére cserélnie.
 
-3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) fognak érkezni, amelyek esetében két beállításjegyzékbeli bejegyzést kell felvennie:
+3. Az NDES-kiszolgálóra rendkívül hosszú URL-címek (lekérdezések) érkeznek, melyekhez két beállításjegyzékbeli bejegyzést kell felvennie:
 
     |Tartózkodási hely|Érték|Típus|Adat|
     |-------|-----|----|----|
@@ -282,7 +278,7 @@ A feladat tartalma:
 
 1.  Nyissa meg az NDES-kiszolgálón az **IIS-kezelőt**, válassza az **Alapértelmezett webhely** lehetőséget a **Kapcsolatok** ablaktáblán, és nyissa meg a **Kérelmek szűrése**beállítást.
 
-2.  Kattintson a **Szolgáltatás beállításainak szerkesztése**lehetőségre, és adja meg a következőket:
+2.  Kattintson a **Szolgáltatás beállításainak szerkesztése** lehetőségre, és adja meg a következő értékeket:
 
     **lekérdezés-karakterlánc hossza (bájt)** = **65534**
 
@@ -298,14 +294,19 @@ A feladat tartalma:
 
     Név: **MaxRequestBytes**, decimális **65534**
 
-4.  Indítsa újra az NDES-kiszolgálót. A kiszolgáló mostantól készen áll az tanúsítvány-összekötő támogatására.
+4. Indítsa újra az NDES-kiszolgálót. A kiszolgáló mostantól készen áll az tanúsítvány-összekötő támogatására.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
 A feladat tartalma:
 
-Az NDES támogatásának engedélyezése az Intune-ban.
+- Az NDES támogatásának engedélyezése az Intune-ban.
 
-A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az NDES-kiszolgálón.
+- A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az NDES-kiszolgálón.
+
+   > [!NOTE]
+   > Magas rendelkezésre állás megvalósításához telepíthet több példányt a Tanúsítvány-összekötőből.
+
+<!--1528104 we need to flesh out the HA recommendation in the note above -->
 
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezése
 
@@ -316,9 +317,6 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 5.  Válassza az **Tanúsítvány-összekötő engedélyezése** lehetőséget.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
-
-> [!NOTE]
-> Egy ismert probléma miatt a következő eljárást követve végezze a tanúsítvány-összekötő letöltését, telepítését és konfigurálását: [SCEP-tanúsítványinfrastruktúra konfigurálása -> Az infrastruktúra konfigurálása -> 5. feladat](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
@@ -341,7 +339,7 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5.  A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
+5.  A **Tanúsítvány-összekötő** felhasználói felületén:
 
     Kattintson a **Bejelentkezés** gombra, és írja be az Intune szolgáltatás rendszergazdai hitelesítő adatait, vagy egy bérlői rendszergazda globális felügyeleti engedéllyel rendelkező hitelesítő adatait.
 
@@ -359,8 +357,8 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>SCEP-tanúsítványprofil létrehozása
 
-1. Az Azure Portalon válassza az **Eszközök konfigurálása** elemet.
-2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
+1. Az Azure-portálon válassza az **Eszközök konfigurálása** elemet.
+2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az SCEP-tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. Válassza ki az SCEP-tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet eszközkorlátozási beállításokat megadni:
@@ -383,19 +381,21 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
         - **Köznapi név**
         - **Köznapi név (e-mail is)**
         - **Köznapi név mint e-mail cím**
+        - **IMEI (Nemzetközi mobilkészülék-azonosító)**
+        - **Sorozatszám**
         - **Egyéni** – Ha erre a lehetőségre kattint, egy újabb legördülő mező jelenik meg. Ezt a mezőt egyéni tulajdonosnév-formátumok megadásához használhatja. Az egyéni formátum két változót támogat: **Egyszerű név (CN)** és **E-mail (E)**. Egy vagy több változó és statikus sztring együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Ebben a példában egy olyan egyéni névformátumot hozott létre, amely a CN és az E változón kívül sztringeket használ a szervezeti egység (OU), a szervezet (O), a hely (L), az állam (ST) és az ország (C) értékeként. [Ez a témakör](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) a **CertStrToName** függvényt és annak támogatott sztringjeit ismerteti.
         
-    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt fogja hitelesítésre használni egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania. 
+    - **Tulajdonos alternatív neve** – Határozza meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt hitelesítésre használja egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania. 
     - **Kulcshasználat** – Adja meg a tanúsítvány kulcshasználati beállításait. Az alábbi lehetőségek közül választhat: 
         - **Kulcstitkosítás**: Csak akkor engedélyezi a kulcscserét, ha a kulcs titkosítva van. 
         - **Digitális aláírás**: Csak akkor engedélyezi a kulcscserét, ha a kulcs védelmét digitális aláírás segíti. 
     - **Kulcsméret (bit)** – Adja meg, hogy hány bitet tartalmazzon a kulcs. 
     - **Kivonatoló algoritmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10) – Válassza ki a tanúsítvánnyal használni kívánt kivonatoló algoritmust a rendelkezésre álló típusok közül. Válassza a kapcsolódó eszközöknél használható legerősebb biztonsági szintet. 
     - **Főtanúsítvány** – Válasszon ki egy olyan legfelső szintű hitelesítésszolgáltatói tanúsítványprofilt, amelyet korábban konfigurált és hozzárendelt a felhasználóhoz vagy az eszközhöz. Ennek a hitelesítésszolgáltatói tanúsítványnak a legfelső szintű tanúsítványnak kell lennie az adott tanúsítványprofilban konfigurált tanúsítványt kiállító hitelesítésszolgáltatónál. 
-    - **Kibővített kulcshasználat** – Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés** , hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet. 
+    - **Kibővített kulcshasználat** – Válassza a **Hozzáadás** gombot, és vegye fel a kívánt értékeket a tanúsítvány felhasználási céljai közé. A legtöbb esetben a tanúsítványnál szükséges az **Ügyfél-hitelesítés**, hogy a felhasználó vagy az eszköz hitelesíthető legyen egy kiszolgálóval. Szükség szerint azonban tetszőleges más kulcshasználatot is felvehet. 
     - **Regisztrációs beállítások**
         - **Megújítási küszöb (%)** – Adja meg, hogy az eszköz a tanúsítvány élettartamának hány százalékos hátralévő idejénél igényelje a tanúsítvány megújítását.
-        - **SCEP-kiszolgálók URL-címe** – Adja meg egy vagy több olyan NDES-kiszolgáló URL-címét, amely SCEP-tanúsítványokat fog kibocsátani. 
+        - **SCEP-kiszolgálók URL-címe** – Adja meg egy vagy több olyan NDES-kiszolgáló URL-címét, amely SCEP-tanúsítványokat bocsát ki. 
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.

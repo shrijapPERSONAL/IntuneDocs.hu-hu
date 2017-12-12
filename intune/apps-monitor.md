@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -29,33 +29,75 @@ Az Intune több módot is kínál a felügyelt alkalmazások jellemzőinek, vala
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
-3. A **Mobilalkalmazások** területen válassza az **Alkalmazások** elemet a **Felügyelet** csoportban.
-     
-    ![Alkalmazástelepítés állapota panel.](./media/monitor-apps.png)
+3. A **Mobilalkalmazások** területen válassza az **Alkalmazások** elemet a **Kezelés** csoportban.
 5. Az alkalmazáslista panelen válasszon egy alkalmazást. Ekkor megjelenik az <*alkalmazásnév*> **Eszköz telepítési állapota** panel.
 
-Az eszköz telepítési állapotjelentése az alábbi oszlopokat tartalmazza:
+## <a name="app-overview-blade"></a>Alkalmazás áttekintése panel
 
-1.  **Eszköz neve** Az eszköztípus neve.
-2.  **Felhasználónév** A felhasználónév.
-3.   **Platform** Az eszközön telepített operációs rendszer.
-4.  **Verzió** Az alkalmazás verziószáma.
-5.   **Állapot** Az alkalmazások lehetséges állapotai: **Telepítve**, **Nincs telepítve**, **Telepítés folyamatban** és **Hiba**.
-6. **Állapot részletei** Az eszközön található alkalmazás állapotának olvasható leírása.
-7. **Utolsó bejelentkezés** Az eszköz legutóbbi bejelentkezése az Intune-ba.
+Az <*alkalmazás neve*> **Eszköz telepítési állapota** panelen áttekintheti a környezetében lévő alkalmazás részletes állapotadatait.
 
-Ezután a következő lépések egyikével tudhat meg többet az alkalmazásokról és azok hozzárendeléseiről.
+### <a name="essentials"></a>Alapadatok
 
-## <a name="general"></a>Általános
+Az **Alapadatok** szakasz az alábbi információkat nyújtja az alkalmazásról:
 
-- **Áttekintés** – Alapvető áttekintést nyújt az alkalmazásról és a hozzá tartozó esetleges hozzárendelések állapotáról. A diagramok egyikének kiválasztásával megnyithatja az **Eszköz telepítési állapota** vagy a **Felhasználó telepítési állapota** panelt, melyeken részletesebb információkat találhat.
+ - **Kiadó**  
+Az alkalmazás kiadója.
+ - **Operációs rendszer**  
+Az alkalmazás operációs rendszere (Windows, iOS, Android stb.).
+ - **Létrehozás**  
+A jelen változat létrehozásának ideje.
+ - **Kiosztott**  
+**Igen** vagy **Nem** attól függően, hogy az alkalmazás ki lett-e osztva.
 
-## <a name="manage"></a>A számítógépeken futó
+### <a name="status"></a>Állapot
+Az egyes diagramok az alábbi állapotadatok számlálóját jelenítik meg:
 
-- **Tulajdonságok** – Megjelenítheti és módosíthatja a kijelölt alkalmazáshoz tartozó információkat. Az alkalmazások tulajdonságairól az [Alkalmazás hozzáadása a Microsoft Intune-hoz](apps-add.md) című témakörben találhat további információt.
-- **Hozzárendelések** – Az alkalmazás hozzárendeléseiről nyújt információt. További információ: [How to assign apps to groups with Microsoft Intune](apps-deploy.md) (Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal).
+ - **Telepítve**  
+A telepített alkalmazások száma.
+ - **Nincs telepítve**  
+A nem telepített alkalmazások száma.
+ - **Telepítés függőben**  
+Azon alkalmazások száma, amelyek telepítése jelenleg zajlik.
+ - **Sikertelen**  
+A sikertelen telepítések száma.
+ - **Ismeretlen**  
+Az ismeretlen állapotú alkalmazások száma.
 
-## <a name="monitor"></a>Figyelő
+### <a name="device-status"></a>Eszközállapot
 
-- **Eszköz telepítési állapota** – Részletes információt biztosít minden egyes eszközről, amelyhez hozzárendelte a kiválasztott alkalmazást, beleértve az eszköz nevét, operációs rendszerét, az utolsó Intune-ba való bejelentkezés időpontját és az alkalmazás telepítésének állapotát.
-- **Felhasználó telepítési állapota** – Részletes információt biztosít minden felhasználóról, akikhez hozzárendelte a kiválasztott alkalmazást, beleértve az alkalmazás a felhasználó eszközein lévő telepítéseinek számát és az esetleges telepítési hibák adatait.
+Az eszköz állapota. Egy fánkdiagramban láthatja az alkalmazás telepítési állapotát eszközönként. A diagramra kattintva megnyithatja az eszközállapot részletes listáját. A részleteket tartalmazó táblázatban az alábbi oszlopok szerepelnek:
+
+ - **Eszköz neve**  
+Az eszköz neve az eszközök elnevezését megengedő platformokon. Más platformokon az Intune hoz létre nevet más tulajdonságok alapján. Ez az attribútum nem minden eszköz esetén elérhető.
+ - **Felhasználónév**  
+A felhasználó neve.
+ - **Platform**  
+Az eszköz operációs rendszere (Windows, iOS, Android stb.).
+ - **Verzió**  
+Az alkalmazás verziószáma. Üzletági alkalmazások esetében az alkalmazás teljes verziószáma látható. A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például: 2.2(2.2.17560800)
+ - **Állapot**  
+Az alkalmazás állapota.
+ - **Állapot részletei**  
+Az állapot részletei.
+ - **Legutóbbi bejelentkezés**  
+Az eszköz Intune-nal való utolsó szinkronizálásának dátuma.
+
+
+### <a name="user-status"></a>Felhasználó állapota
+
+A felhasználó állapota. Egy fánkdiagramban láthatja az alkalmazás telepítési állapotát felhasználónként. A diagramra kattintva megnyithatja az eszközállapot részletes listáját. A részleteket tartalmazó táblázatban az alábbi oszlopok szerepelnek:
+ - **Név**  
+A felhasználó Azure AD-beli neve.
+ - **Felhasználónév**  
+A felhasználó egyedi neve.
+ - **Telepítések**  
+A felhasználó által használt alkalmazástelepítések száma.
+ - **Hibák**  
+A felhasználó sikertelen telepítéseinek száma.
+ - **Nincs telepítve**  
+A felhasználó által nem telepített alkalmazások száma.
+
+
+## <a name="next-steps"></a>További lépések
+
+Az Intune-adatok használatáról bővebben [Az Intune-adattárház használata](reports-nav-create-intune-reports.md) című témakörben tájékozódhat.

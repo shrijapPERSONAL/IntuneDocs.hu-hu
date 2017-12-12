@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
@@ -42,7 +42,7 @@ Az androidos eszköz korlátozási szabályzatával használva ezen beállítás
 - **Képernyőfelvétel (csak Samsung KNOX esetén)** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
 - **Beszédfelismerési asszisztens (csak Samsung KNOX esetén)** – Engedélyezi a Beszédfelismerési asszisztens szoftver használatát az eszközön.
 - **YouTube (csak Samsung KNOX esetén)** – Engedélyezi a YouTube alkalmazás használatát az eszközön.
-- **Megosztott eszközök** – Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>A bejelentkezett végfelhasználó hozzáfér az alkalmazásokhoz, és a rá érvényes szabályzatok is működnek. A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.
+- **Megosztott eszközök (csak Samsung KNOX esetében)** – Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>Az SCEP-tanúsítványprofillal együtt használva ez a szolgáltatás lehetővé teszi a végfelhasználóknak, hogy megosszanak egy eszközt úgy, hogy az összes felhasználónak ugyanazok az alkalmazások legyenek elérhetők, de a saját SCEP-felhasználói tanúsítványukkal.  A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.  Ez a szolgáltatás csak az üzletági alkalmazásokra érvényes.
 
 ## <a name="password"></a>Jelszó
 

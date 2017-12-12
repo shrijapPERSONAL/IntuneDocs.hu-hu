@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10-es eszközök regisztrálásával kapcsolatos problémák elhárítása
 Ha végrehajtotta a [Windows 10 Mobile-eszköz vagy Windows 10 asztali eszköz regisztrálása az Intune-ban](enroll-your-w10-phone-or-w10-pc-windows.md) című témakörben leírt lépéseket, de mégsem tudja elérni munkahelyi vagy iskolai levelezését vagy fájljait, próbálkozzon a következő hibaelhárítási lépésekkel.
@@ -59,4 +59,4 @@ Ha követte a fenti lépéseket, de továbbra sem tud hozzáférni munkahelyi va
 
 Ha a következő üzenetet látja:  __Nem találtunk a megadott felhasználónévvel egyező felügyeleti végpontot. Ellenőrizze, hogy helyesen írta-e be a felhasználónevét, és próbálkozzon újra. Ha ismeri a felügyeleti végpontja URL-címét, írja be.__, akkor próbálja ismét beírni a felhasználónevét és a jelszavát. Ha továbbra sem működik, ellenőrizze a cég informatikai támogatási szolgáltatásánál azt a webhelyet, amelyet a **Felügyeleti végpont** szövegmezőben meg kell adnia. Ez a webhely valószínűleg a következőhöz hasonlít: **www.azöncége.onmicrosoft.com**.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
