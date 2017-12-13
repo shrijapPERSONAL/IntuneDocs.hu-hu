@@ -552,6 +552,8 @@
   items:
     - name: Segítség a felhasználóknak a problémák elhárításában
       href: help-desk-operators.md
+    - name: Auditnaplók Intune-tevékenységekhez
+      href: monitor-audit-logs.md
     - name: Az Intune-adattárház használata
       href: reports-nav-create-intune-reports.md
       items:
