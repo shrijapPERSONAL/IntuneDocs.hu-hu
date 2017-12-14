@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 Intune-rendszergazdaként létrehozhat és felügyelhet olyan regisztrációs korlátozásokat, amelyek meghatározzák az Intune-ban regisztrálható eszközök számát és típusát. Több korlátozást is létrehozhat, melyeket alkalmazhat különféle felhasználói csoportokra. Az egyes korlátozásokhoz [prioritássorrendet](#change-enrollment-restriction-priority) állíthat be.
 
 >[!NOTE]
->A regisztrációs korlátozások nem biztonsági funkciók. A feltört eszközök más tulajdonságokat állíthatnak magukról. Ezek a korlátozások a nem rosszindulatú felhasználók esetén jelentenek észszerű erőfeszítést igénylő akadályt. 
+>A regisztrációs korlátozások nem biztonsági funkciók. A feltört eszközök más tulajdonságokat állíthatnak magukról. Ezek a korlátozások a nem rosszindulatú felhasználók esetén jelentenek észszerű erőfeszítést igénylő akadályt.
+
+>[!NOTE]
+>A fentiekben említett csoporthoz rendelhető regisztrációs korlátozás és a prioritási funkció jelenleg bevezetés alatt áll az Intune ügyfélbázisa számára. A bevezetés befejezéséig elképzelhető, hogy nem lehet hozzáférni a csoportra és a prioritásra vonatkozó funkciókhoz. 
 
 Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
 
@@ -60,7 +63,7 @@ A rendszer tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, 
 8. Eszköztípuskorlát esetén kattintson a **Platformok** és a **Platformkonfigurációk** lehetőségre a különféle platformok és verziók engedélyezéséhez vagy blokkolásához.
 9. Kattintson a **Hozzárendelések** > **+ Csoportok kiválasztása** lehetőségre.
 10. A **Csoportok kiválasztása** területen válasszon egy vagy több csoportot, és kattintson a **Kiválasztás** gombra. A korlátozás csak azokra a csoportokra lesz érvényes, amelyekhez hozzárendelte azt. Ha egy korlátozást egyetlen csoporthoz sem rendel hozzá, akkor az adott korlátozásnak semmilyen hatása nem lesz.
-11. Kattintson a **Mentés**gombra.
+11. Kattintson a **Save** (Mentés) gombra.
 12. Az új korlátozások az alapértelmezett korlátozásnál eggyel magasabb prioritással jönnek létre. Igény esetén [módosíthatja a prioritást](#change-enrollment-restriction-priority).
 
 ## <a name="set-device-type-restrictions"></a>Típus szerinti korlátozás beállítása
@@ -72,7 +75,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Az **Eszköztípus-korlátozások** területen válassza ki a beállítani kívánt korlátot.
 5. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformok** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
-6. Kattintson a **Mentés**gombra.
+6. Kattintson a **Save** (Mentés) gombra.
 7. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformkonfigurációk** lehetőséget, és adja meg a **Verziók** beállítás minimális és maximális értékét az összes felsorolt platformhoz. Példa a támogatott verziókra:
   - Az Android és az Android for Work a főverzió.alverzió.változat.build formátumot támogatja.
   - Az iOS a főverzió.alverzió.változat formátumot támogatja.
@@ -81,7 +84,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
 
     ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatform-konfigurációval, ahol a személyes tulajdonú eszközök beállításai meg vannak adva.](media/device-restrictions-platform-configurations.png)
-9. Kattintson a **Mentés**gombra.
+9. Kattintson a **Save** (Mentés) gombra.
 
 >[!NOTE]
 >- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú Android for Work-eszközök továbbra is regisztrálhatók.
@@ -98,7 +101,7 @@ Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
 4. Az **Eszközszámkorlátok** területen válassza ki a beállítani kívánt korlátot.
 5. Válassza az **Eszközszámkorlát** lehetőséget, majd a legördülő listában válassza ki a felhasználó által regisztrálható eszközök maximális számát.
     ![Az Eszközszámkorlátok panel képernyőképe az eszközszámkorlátokkal.](./media/device-restrictions-limit.png)
-6. Kattintson a **Mentés**gombra.
+6. Kattintson a **Save** (Mentés) gombra.
 
 ## <a name="change-enrollment-restriction-priority"></a>A regisztrációs korlátozások prioritásának módosítása
 
