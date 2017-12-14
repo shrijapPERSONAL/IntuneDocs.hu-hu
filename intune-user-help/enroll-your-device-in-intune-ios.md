@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>A céges erőforrásokhoz történő hozzáférés beállítása
 
@@ -57,7 +57,7 @@ Az Ön cége rengeteg védett információt használ, az e-mailektől kezdve tö
 |![A profil megnyílik a beállításokban.](./media/ios-9-cp-enroll-1711.png)|Koppintson a **Telepítés** elemre.|
 |![A profil modális párbeszédpaneljének telepítése a képernyő aljáról.](./media/ios-10-cp-enroll-1711.png)|Koppintson a **Telepítés** elemre.|
 |![A profil telepítése folyamatban betöltési képernyő.](./media/ios-11-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
-|![Profilkezelés figyelmeztetési képernyő.](./media/ios-12-cp-enroll-1711.png)|Ez az Apple által írt figyelmeztetés további információt nyújt arról, hogy milyen műveleteket lehet végrehajtani a felügyelt eszközökön. Részletesebb tudnivalók a [Milyen adatok láthatók a cég számára](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) című oldalon.|
+|![Profilkezelés figyelmeztetési képernyő.](./media/ios-12-cp-enroll-1711.png)|Ez az Apple által írt figyelmeztetés további információt nyújt arról, hogy milyen műveleteket lehet végrehajtani a felügyelt eszközökön. Részletes tudnivalókért lásd: [Milyen adatok láthatók a cég számára](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
 |![A rendszer arra kéri, hogy adjon megbízást a távoli felügyeletre.](./media/ios-13-cp-enroll-1711.png)|A **Megbízom** elemre koppintással engedélyezze cégének, hogy a vállalati információkat és beállításokat felügyelje az eszközén.|
 |![Profil telepítésének befejezése képernyő.](./media/ios-14-cp-enroll-1711.png)|Várja meg, amíg betöltődik.|
 |![A profil telepítése megtörtént képernyő.](./media/ios-15-cp-enroll-1711.png)|A profilja telepítve van, hamarosan megkezdődhet az eszközén található vállalati információk és beállítások felügyelete.|
@@ -75,4 +75,4 @@ Az Ön cége rengeteg védett információt használ, az e-mailektől kezdve tö
 > [!Note]
 > Már csak néhány lépést kell megtennie, hogy az eszköz teljes felügyelet alá kerüljön. További információ a [távközlésiköltség-kezelőben való regisztrációról](enroll-your-device-with-telecom-expense-management-ios.md). Ha a cége az Apple Készülékregisztrációs programját használja, további információt [itt](enroll-your-device-dep-ios.md) találhat.
 
-További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com).
+További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

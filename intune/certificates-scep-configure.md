@@ -3,10 +3,10 @@ title: "SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal"
 titlesuffix: Azure portal
 description: "A cikk tájékoztatást nyújt az infrastruktúra konfigurálásáról és az Intune SCEP-tanúsítványprofiljainak ezt követő létrehozásáról és hozzárendeléséről."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -81,14 +81,14 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 
 **4. lépés**: Az NDES Intune-nal való használatának konfigurálása
 
-**5. lépés**: Az Intune Tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
+**5. lépés**: Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
 
 #### <a name="step-1---create-an-ndes-service-account"></a>1. lépés – NDES szolgáltatásfiók létrehozása
 
 Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon arról, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2. lépés – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-A feladat tartalma:
+A feladatban az alábbiak szerepelnek:
 
 -   Tanúsítványsablon konfigurálása az NDES számára
 
@@ -153,7 +153,7 @@ Ha a hitelesítésszolgáltató konfigurálásával lehetővé kívánja tenni a
 
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3. lépés – Előfeltételek konfigurálása az NDES-kiszolgálón
-A feladat tartalma:
+A feladatban az alábbiak szerepelnek:
 
 -   Az NDES hozzáadása egy Windows Server-kiszolgálóhoz, és az IIS konfigurálása az NDES támogatására
 
@@ -194,7 +194,7 @@ A feladat tartalma:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>4. lépés – Az NDES Intune-nal való használatának konfigurálása
-A feladat tartalma:
+A feladatban az alábbiak szerepelnek:
 
 -   Az NDES konfigurálása a vállalati hitelesítésszolgáltatóval való használatra
 
@@ -239,7 +239,7 @@ A feladat tartalma:
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (decimális)|
 
 
-4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** -> **Kérésszűrés** -> **Szolgáltatás beállításainak szerkesztése** lehetőséget, majd módosítsa az **URL-cím maximális hossza** és a **Lekérdezés-karakterlánc maximális hossza** beállítás értéket a következőre: *65534*, ahogy az a képen is látható.
+4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** -> **Kérésszűrés** -> **Szolgáltatás beállításainak szerkesztése** lehetőséget, majd módosítsa az **URL-cím maximális hossza** és a **Lekérdezés-karakterlánc maximális hossza** beállítás értékét a következőre: *65534*, ahogy az a képen is látható.
 
     ![Maximális URL-hossz és lekérdezéshossz az IIS-ben](.\media\SCEP_IIS_max_URL.png)
 
@@ -296,33 +296,20 @@ A feladat tartalma:
 
 4. Indítsa újra az NDES-kiszolgálót. A kiszolgáló mostantól készen áll az tanúsítvány-összekötő támogatására.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Tanúsítvány-összekötő engedélyezése, telepítése és konfigurálása
-A feladat tartalma:
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+A feladatban az alábbiak szerepelnek:
 
 - Az NDES támogatásának engedélyezése az Intune-ban.
+- A tanúsítvány-összekötő letöltése, telepítése és konfigurálása a környezeti kiszolgálón. A magas rendelkezésre állás megvalósításához több tanúsítvány-összekötőt telepíthet a különböző kiszolgálókra.
 
-- A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az NDES-kiszolgálón.
-
-   > [!NOTE]
-   > Magas rendelkezésre állás megvalósításához telepíthet több példányt a Tanúsítvány-összekötőből.
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>A tanúsítvány-összekötő támogatásának engedélyezése
-
-1. Jelentkezzen be az Azure Portalra.
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltéséhez, telepítéséhez és konfigurálásához
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. Jelentkezzen be az Azure Portalra. 
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
 4. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét.
-5.  Válassza az **Tanúsítvány-összekötő engedélyezése** lehetőséget.
-
-##### <a name="to-download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
-
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét.
-5. Válassza **A tanúsítvány-összekötő letöltése** lehetőséget.
+5. Kattintson a **Hozzáadás** elemre, és válassza az **Összekötői fájl letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, amelyhez hozzá tud férni a telepítéshez használt kiszolgálón. 
 6.  A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**) egy Windows Server 2012 R2-kiszolgálón. A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. (A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.)
 
     > [!NOTE]
@@ -339,7 +326,7 @@ A feladat tartalma:
     >
     > **&lt;telepítési_útvonal&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5.  A **Tanúsítvány-összekötő** felhasználói felületén:
+5.  A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
 
     Kattintson a **Bejelentkezés** gombra, és írja be az Intune szolgáltatás rendszergazdai hitelesítő adatait, vagy egy bérlői rendszergazda globális felügyeleti engedéllyel rendelkező hitelesítő adatait.
 
@@ -358,7 +345,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 ## <a name="how-to-create-a-scep-certificate-profile"></a>SCEP-tanúsítványprofil létrehozása
 
 1. Az Azure-portálon válassza az **Eszközök konfigurálása** elemet.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+2. Az **Eszközök konfigurálása** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az SCEP-tanúsítványprofil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. Válassza ki az SCEP-tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet eszközkorlátozási beállításokat megadni:
