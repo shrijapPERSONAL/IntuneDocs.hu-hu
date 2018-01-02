@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
@@ -31,13 +31,13 @@ Az eszköznek az Intune felügyelete alá történő regisztrálása lehetővé 
 Munkahelye ügyfélszolgálata láthatja a munkával kapcsolatos adatokat, de a személyes adatait nem. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. [A felhasználói súgó következő cikkében](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) részletezzük, hogy mit láthatnak, és mit nem.
 
 ## <a name="how-do-i-get-the-company-portal"></a>Hogyan szerezhetem be a Céges portált?
-A Vállalati portált kétféleképpen szerezheti be:
+A Céges portált kétféleképpen szerezheti be:
 
-- Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
-- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com).
+- Telepítheti az eszközére a Céges portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
+- Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
-A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
+A Céges portál alkalmazás és a Munkahelyi portál webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
 
 - Az eszközök regisztrálása felügyelet céljából
 - Az eszközök állapotának megtekintése
@@ -60,8 +60,9 @@ Ha hozzáad egy számítógépet vagy egy eszközt a vállalati portálhoz, elő
 Ha meg szeretné tudni, hogy a cég informatikai támogató szolgálata mit lát az eszközén, kövesse a használt eszköz típusának megfelelő hivatkozást:
 
 - [A Céges portál alkalmazás telepítése Android rendszerű eszközön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [A Céges portál alkalmazás telepítése iOS és macOS rendszerű eszközökön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [A Céges portál alkalmazás telepítése Windows rendszerű eszközön](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [A Céges portál alkalmazás telepítése iOS rendszerű eszközön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [A Céges portál alkalmazás telepítése macOS rendszerű eszközön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [A Céges portál alkalmazás telepítése Windows rendszerű eszközön](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Milyen számítógépeket és eszközöket lehet hozzáadni a Vállalati portálhoz?
 -   iOS (például iPhone és iPad) és macOS (például MacBook és iMac) rendszerű Apple-eszközök
@@ -78,7 +79,8 @@ Igen, a Vállalati portálról eltávolíthat vagy alaphelyzetbe állíthat egy 
 Számítógép vagy eszköz a Céges portálról való *eltávolításakor* az eszköz regisztrációja az Intune-ból is törlődik. A regisztráció törlése után az adott eszközről többé nem fér hozzá a Vállalati portálhoz, és az is előfordulhat, hogy egyes vállalati adatok törlődnek az eszközről. Az eszközöknek a Vállalati portálról való eltávolításáról információt az alábbi hivatkozások egyikén találhat:
 
 - [Android rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-android.md)
-- [iOS és macOS rendszerű eszközök regisztrációjának törlése](unenroll-your-device-from-intune-ios.md)
+- [iOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-ios.md)
+- [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)
 - [Windows rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-windows.md)
 
 Számítógép vagy eszköz *alaphelyzetbe állításakor* a Vállalati portál megpróbálja a gyártó alapértelmezett beállításai szerinti helyzetbe állítani a számítógépet vagy eszközt. Az eszköz alaphelyzetbe állításával töröl minden vállalati és személyes adatot az eszközről! Ha elvesztette az eszközét, akkor távolról, a Vállalati portál webhelyéről is alaphelyzetbe állíthatja.
@@ -95,6 +97,7 @@ A Microsoft azt javasolja, hogy először próbálja meg saját maga megoldani a
 
 - [Androidos eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
 - [Az iOS-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-ios.md)
+- [A macOS-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
 - [A Windows-eszközök gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 
-Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a cég informatikai támogató szolgálatához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com).
+Alább hozzászólva segítséget kérhet, de mivel minden munkahely különböző követelményeket támaszt, előfordulhat, hogy nem mindig tudjuk megválaszolni a felmerülő kérdéseket. A leggyorsabb és leginkább megfelelő választ valószínűleg a cég informatikai támogató szolgálatához fordulva fogja kapni. A rendszergazdák elérhetőségét fel kell tüntetni a [Céges portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

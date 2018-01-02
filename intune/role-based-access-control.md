@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal
 
@@ -36,7 +36,7 @@ Az új Azure Portaltól kezdődően az **Azure Active Directory (Azure AD)** ké
 
 - **Globális rendszergazda:** Az ezzel a szerepkörrel rendelkező felhasználók hozzáférnek az Azure AD minden felügyeleti funkciójához, valamint olyan, az Azure AD-val összevont szolgáltatásokhoz is, mint az Exchange Online, a SharePoint Online és a Skype Vállalati online verzió. Az a személy lesz globális rendszergazda, aki regisztrált az Azure AD-bérlőre. Csak a globális rendszergazdák oszthatnak ki további Azure AD-rendszergazdai szerepköröket. A szervezetnek egynél több globális rendszergazdája is lehet. A globális rendszergazdák bármely felhasználó és az összes többi rendszergazda jelszavát is alaphelyzetbe állíthatják.
 
-- **Intune-beli szolgáltatás-rendszergazda:** Az ezzel a szerepkörrel rendelkező felhasználók az Intune-szolgáltatás megléte esetén globális engedélyt kapnak az Intune-ban. A szerepkör feljogosít a felhasználók és eszközök felügyeletére, valamint csoportok létrehozására és felügyeletére.
+- **Intune-beli szolgáltatás-rendszergazda:** Az ezzel a szerepkörrel rendelkező felhasználók az Intune-szolgáltatás megléte esetén globális engedélyt kapnak az Intune-ban. A szerepkör emellett, ha nincsenek érvényben az Azure-ban ezt felülíró korlátozások, feljogosít a felhasználók és eszközök felügyeletére, valamint Intune-csoportok létrehozására és felügyeletére.
 
 - **Feltételes hozzáférésű rendszergazda:** A felhasználók ezzel a szerepkörrel csak a feltételes hozzáférési szabályzatok megtekintésére, létrehozására és törlésére rendelkeznek jogosultságokkal.
 

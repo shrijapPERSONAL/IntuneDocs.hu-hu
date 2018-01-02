@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/07/2016
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9aeb3525016bf820dc23402659c2c953143385c9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 206aef4185934448418d7b080ab94af94e792e74
+ms.sourcegitcommit: ad97d658682bf563638521856931e2709e40e14b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a dolgozó elhagyja a vállalatot, fontos eltávolítani a vállalati alkalmazásadatokat az eszközről. Előfordul, hogy a személyes adatokat meg kell őrizni, különösen, ha az eszköz a dolgozó saját tulajdona.
+
+>[!NOTE]
+> A vállalati adatok Intune által felügyelt alkalmazásokból való törlése jelenleg csak iOS és Android platformon támogatott.
 
 A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési kérést az ebben a témakörben leírt lépésekkel. A kérelem teljesítése után az alkalmazás a következő futtatásakor az eszközön a vállalati adatok törlődnek az alkalmazásból.
 
@@ -36,11 +39,11 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 
-2.  Válassza a **További szolgáltatások** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza ki az **Intune** elemet. Amikor megjelenik az Intune-panel, válassza az **Alkalmazások kezelése** panelt.
+2.  Válassza a **További szolgáltatások** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza ki az **Intune** elemet. Amikor megjelenik az Intune panel, válassza a **Mobilalkalmazások** panelt.
 
-    ![Képernyőfelvétel: Az Új törlési kérés panel](./media/intune-azure-preview-blade.png)
+    ![A Microsoft Intune panel képernyőképe](./media/apps-selective-wipe01.png)
 
-3.  A **Mobilalkalmazások panelen** válassza az **Új törlési kérés** lehetőséget. Ennek hatására megnyílik az **Új törlési kérés** panel.
+3.  A **Mobilalkalmazások panelen** válassza az **Alkalmazások szelektív törlése** lehetőséget.
 
 4.  Kattintson az **Új törlési kérés** lehetőségre. Ennek hatására megnyílik az **Új törlési kérés** panel.
 
@@ -48,9 +51,9 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 5.  Válassza a **Felhasználó** elemet a **Felhasználó** panel megnyitásához, és válassza ki azt a felhasználót, akinek az alkalmazásadatait törölni kívánja.
 
-6.  Válassza az **Eszköz** lehetőséget. Ekkor megnyílik az **Eszköz** panel, amelyen látható a kijelölt felhasználóhoz társított összes eszköz listája, valamint két oszlop is: az eszköznév, amely az eszköz felhasználó által definiált rövid neve, és az eszköztípus, amely az eszközplatformot mutatja. Válassza ki a törölni kívánt eszközt.
+6.  Ezután válassza az **Eszköz** lehetőséget az **Új törlési kérés** panelen. Ekkor megnyílik az **Eszköz kiválasztása** panel, amelyen látható a választott felhasználóhoz társított összes eszköz listája, valamint két oszlop is: az eszköznév, amely az eszköz felhasználó által definiált rövid neve, és az eszköztípus, amely az eszközplatformot mutatja. Válassza ki a törölni kívánt eszközt.
 
-7.  Ekkor ismét az **Új törlési kérés** panel jelenik meg. A törlési kérés elindításához kattintson az **OK** gombra. 
+7.  Ekkor ismét az **Új törlési kérés** panel jelenik meg. A törlési kérés elindításához kattintson az **OK** gombra.
 
 A szolgáltatás külön törlési kéréseket hoz létre az egyes védett alkalmazásokhoz az eszközön és a törlési kéréshez társított felhasználóhoz, és nyomon követi azokat.
 
@@ -58,9 +61,9 @@ A szolgáltatás külön törlési kéréseket hoz létre az egyes védett alkal
 
 Elérhető egy összesítő jelentés is, amely a törlési kérelem összesített állapotát jeleníti meg, és tartalmazza a függőben lévő kérések és a hibák számát. Ha további részleteket szeretne megismerni, kövesse az alábbi lépéseket:
 
-1.  A **Mobilalkalmazások - Alkalmazások szelektív törlése panel** a kérések listáját felhasználói csoportosításban jeleníti meg. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
+1.  A **Mobilalkalmazások – Alkalmazások szelektív törlése** panel a kérések listáját felhasználói csoportosításban jeleníti meg. A rendszer minden, az eszközön futó védett alkalmazáshoz külön törlési kérést hoz létre, ezért több kérés jelenhet meg ugyanannál a felhasználónál. Az állapot mutatja, hogy a törlési kérés **függőben van**, **sikertelen**, vagy **sikeres**.
 
-    ![Képernyőfelvétel: Az Új törlési kérés panel](./media/wipe-request-status-1.png)
+    ![Képernyőkép a törlési kérés állapotáról az Alkalmazások szelektív törlése panelen](./media/wipe-request-status-1.png)
 
 Ezen kívül látható az eszköz neve és típusa is, ami megkönnyíti a jelentések olvasását.
 
@@ -71,11 +74,11 @@ Ezen kívül látható az eszköz neve és típusa is, ami megkönnyíti a jelen
 
 A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan nem törli.  Törlési kérés manuális törléséhez:
 
-1.  A **Törlési kérés** panelen kattintson a **Törlési kérések** csempére a **Törlési kérés** panel megnyitásához.
+1.  Nyissa meg a **Mobilalkalmazások – Alkalmazások szelektív törlése** panelt.
 
-2.  Kattintson a jobb egérgombbal a törölni kívánt törlési kérésre, majd válassza a **Törlési kérés törlése** lehetőséget.
+2.  Kattintson a listában a jobb gombbal a törölni kívánt törlési kérésre, és válassza a **Törlési kérés törlése** lehetőséget.
 
-    ![Képernyőfelvétel: Az Új törlési kérés panel](./media/delete-wipe-request.png)
+    ![Képernyőkép a törlési kérések listájáról az Alkalmazások szelektív törlése panelen](./media/delete-wipe-request.png)
 
 3.  Ha a rendszer törlési megerősítést kér, válassza az **Igen** vagy a **Nem** lehetőséget, majd kattintson az **OK** gombra.
 

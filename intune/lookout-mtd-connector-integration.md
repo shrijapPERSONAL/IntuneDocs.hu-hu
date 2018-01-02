@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>A Lookout Mobile Threat Defense integrációjának beállítása az Intune-ban
 
@@ -72,7 +72,8 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 2.  Az Azure AD-bérlő regisztrálásához a Lookout-konzolra való első bejelentkezésnél egy Azure AD-szerepkörű globális rendszergazdai felhasználói fiókkal kell bejelentkezni. A későbbiekben nem szükséges ezt a szintű Azure AD-jogosultságot használni. Egy hozzájárulást kérő lap jelenik meg. A regisztráció befejezéséhez válassza az **elfogad** lehetőséget. Miután elfogadta és hozzájárulását adta, át lesz irányítva a Lookout-konzolra.
 
     ![A Lookout-konzol első alkalommal megjelenő bejelentkezési lapjának képernyőképe](./media/lookout_mtp_initial_login.png)
-    > [MEGJEGYZÉS] A bejelentkezési problémákkal kapcsolatos segítségért tekintse meg a [Lookout-integráció hibaelhárításával](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) foglakozó weblapot.
+    > [!NOTE] 
+    > Bejelentkezési problémákkal kapcsolatban lásd: [A Lookout-integráció hibaelhárítása](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration).
 
 3.  Nyissa meg a [Lookout konzolon](https://aad.lookout.com) a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
 
@@ -85,7 +86,8 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 ## <a name="configure-enrollment-groups"></a>Regisztrációs csoportok konfigurálása
 1. Ajánlott eljárásként az [Azure AD felügyeleti portálon](https://manage.windowsazure.com) hozzon létre egy néhány tagból álló Azure AD-alapú biztonsági csoportot a Lookout-integráció teszteléséhez.
 
-    > [MEGJEGYZÉS] Az Azure AD regisztrációs csoportjához tartozó felhasználók minden, a Lookout által támogatott és az Intune-ban regisztrált eszköze, amely támogatott, valamint azonosítva és regisztrálva van, jogosult aktiválásra a Lookout MTD-konzolon.
+    > [!NOTE] 
+    > Az Azure AD regisztrációs csoportjához tartozó felhasználók minden, a Lookout által támogatott és az Intune-ban regisztrált eszköze, amely támogatott, valamint azonosítva és regisztrálva van, jogosult aktiválásra a Lookout MTD-konzolon.
 
 2. Nyissa meg a [Lookout-konzolon](https://aad.lookout.com) a **System (Rendszer)** modult, válassza a **Connectors (Összekötők)** lapot, majd az **Enrollment Management (Regisztrációkezelés)** lehetőséget választva adja meg azoknak a felhasználóknak a csoportját, akiknek az eszközei regisztrálva lesznek a Lookoutban. A regisztráláshoz adja meg az Azure AD biztonsági csoport **Megjelenített nevét**.
 

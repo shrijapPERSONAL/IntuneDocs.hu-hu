@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -69,6 +69,17 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
    - **Minden eszköz felügyelete Android-eszközként**. Minden Android-eszköz, az Android for Worköt támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
    - **Minden támogatott eszköz felügyelete Android for Work-eszközként**. Az Android for Worköt támogató eszközök mindegyike Android for Work-eszközként lesz regisztrálva. Az Android for Worköt nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
    - **Csak a megadott felhasználói csoportokban szereplő felhasználók támogatott eszközeinek felügyelete Android for Work-eszközként**. Az Android for Work-alapú felügyelet a megadott felhasználókra korlátozható. Csak a kijelölt csoportok tagjai által regisztrált, Android for Worköt támogató eszközök lesznek Android for Work-eszközként lesz regisztrálva. Minden más eszköz Android-eszközként lesz regisztrálva. Ez főleg Android for Workös próbák során hasznos.
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>A Céges portál alkalmazás jóváhagyása a felügyelt Google Play Áruházban
+Jóvá kell hagynia az Androidhoz készült Céges portál alkalmazást a felügyelt Google Play Áruházban annak érdekében, hogy az alkalmazás megkapja az automatikus frissítéseket. Ha nem hagyja jóvá a Céges portál alkalmazást, előfordulhat, hogy az nem fogja megkapni a Microsoft által kiadott fontos hibajavításokat és új funkciókat, és így idővel elavulttá válik.
+
+Kövesse az alábbi lépéseket az Intune Céges portál alkalmazás jóváhagyásához:
+
+1.  Töltse le a Céges portál alkalmazást a [felügyelt Google Play Áruházból](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+2.  Jelentkezzen be a felügyelt Google Play Áruházba ugyanazzal a Google-fiókkal, amelyet az Android for Work-kötés konfigurálásához használt.
+3.  Kattintson a **Jóváhagyás** lehetőségre.  Ekkor megnyílik egy új párbeszédpanel.
+4.  Tekintse át a párbeszédpanelen látható engedélyeket, majd kattintson a **Jóváhagyás** lehetőségre. Ezeknek az engedélyeknek a jóváhagyására azért van szükség, hogy a Céges portál alkalmazás kezelni tudja az eszközön lévő munkahelyi profilt.
+5.  Válassza a **Jóváhagyás fenntartása, amikor az alkalmazás új engedélyeket kér** lehetőséget, majd kattintson a **Mentés** gombra.
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:
