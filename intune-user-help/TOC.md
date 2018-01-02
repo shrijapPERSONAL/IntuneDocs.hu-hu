@@ -4,9 +4,9 @@
 
 ## [Milyen információkat tekinthet meg a cégem az Intune-nal? ](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Saját eszköz alaphelyzetbe állítása](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [Hogyan jelentkezhet be a Céges portálra?](sign-in-to-the-company-portal.md)
+## [Bejelentkezés a céges portálra](sign-in-to-the-company-portal.md)
 
 ## [Android-eszköz használata](using-your-android-device-with-intune.md)
 ### [Mi történik, ha Android-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -66,15 +66,15 @@
 ### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
 ### [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Munkahelyi portál segítségével?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
-### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 ### [Az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-ios.md)
 #### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Az eszköz manuális szinkronizálása](sync-your-device-manually-ios.md)
 
-### [Az iOS gyakori problémáinak elhárítása](troubleshoot-your-device-iOS.md)
+#### [Az iOS gyakori problémáinak elhárítása](troubleshoot-your-device-iOS.md)
 #### [Sérült biztonságú iOS-eszköz ismételt csatlakoztatása](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hibák elküldése a cégnek](send-errors-to-your-it-admin-ios.md)
 #### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-ios.md)
+#### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hibaüzenet jelent meg](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,11 +97,20 @@
 ### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
 ### [Örökölt macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-legacy.md)
-### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
+### [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)
+
+### [A macOS gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
+#### [Az általam használt macOS-verzió még nem támogatott](your-macos-version-isnt-yet-supported.md)
+#### [macOS-eszköz frissítése](you-need-to-update-your-macos-device.md)
+#### [A Céges portállal kapcsolatos hibák jelentése](send-errors-macos.md)
+#### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-macos.md)
+#### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
+#### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
-### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Mi történik, ha a Windows egy másik verziójával rendelkező Windows-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Windows 10 rendszerű eszközök beléptetése](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [A Windows más verzióinak beléptetése](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Windows-eszköz regisztrálása](enroll-your-device-in-intune-windows.md)
 ### [Mi történik a Munkahelyi portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +137,6 @@
 #### [Engedélyezni kell a tűzfalat](you-need-to-enable-defender-firewall-windows.md)
 #### [Engedélyezni kell a felhasználói fiókok felügyeletét](you-need-to-enable-uac-windows.md)
 #### [Frissíteni kell a Windows-t](you-need-to-update-os-build-version-windows.md)
-#### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md) 
+#### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md)
 
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)

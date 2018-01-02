@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Felhasználó eltávolítása
           href: device-remove-user.md
-        - name: Távirányítás Androidhoz
+        - name: Távolról vezérelt mobileszközök
           href: device-profile-android-teamviewer.md
         - name: Windows 10-es PIN-kód alaphelyzetbe állítása
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Windows 10-es Office 365-alkalmazások
               href: apps-add-office365.md
+            - name: macOS-es Office 365-alkalmazások
+              href: apps-add-office365-macos.md
         - name: Alkalmazások hozzárendelése
           href: apps-deploy.md
         - name: Alkalmazások figyelése
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Feltételes hozzáférés megfelelőségének figyelése
           href: conditional-access-exchange-monitor.md
+        - name: A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
+          href: conditional-access-integrate-jamf.md
+        - name: Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
+          href: conditional-access-assign-jamf.md
     - name: Alkalmazás- és eszközadatok védelme
       items:
         - name: Alkalmazásvédelmi szabályzatok használata

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+## <a name="week-of-november-27-2017"></a>2017. november 27-i hét
+
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Új „Eszközkategóriák” lépés a Windows 10 rendszerhez készült Céges portál alkalmazás interaktív telepítőjében <!---1335292--->
+
+Ha engedélyezte az [eszközcsoport-leképezést](device-group-mapping.md), a Windows 10 rendszerhez készült Céges portál alkalmazás mostantól végigvezeti a felhasználókat egy eszközkategória választásán, miután regisztrálták az eszközüket.
+
+![Eszközcsoport-leképezési kategória](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>2017. november 13-i hét
 
@@ -46,7 +54,7 @@ Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás esz
 ## <a name="week-of-november-6-2017"></a>2017. November 6-i hét
 
 ### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Frissítések a Windows 10-es Céges portál alkalmazáshoz <!--1299474-->
-A Windows 10-es Céges portál alkalmazás frissített Beállítások oldalán az összes beállításnál egységesebbek lettek a beállítások és az elvárt felhasználói műveletek. A frissített szerkezet igazodik a többi Windows-alkalmazás elrendezéséhez.
+Frissítettük a Windows 10-es Céges portál alkalmazás beállítások oldalát, hogy egységesebbek legyenek a beállítások és a beállításoknál elvégezhető felhasználói műveletek. Az elrendezését is átalakítottuk, hogy jobban igazodjon a többi Windows-alkalmazáséhoz.
 
 |Előtte|Utána|
 |---|---|

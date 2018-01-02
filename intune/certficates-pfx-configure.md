@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
 
@@ -101,22 +101,20 @@ VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Nyissa meg az **Intune**-t, az **Eszközkonfigurációt** és a **Hitelesítésszolgáltatót**, majd kattintson a **Tanúsítvány-összekötő letöltése** elemre.
-   * Mentse a letöltést egy olyan helyre, ahol hozzá tud férni a kiszolgálón, amelyen telepíteni fogja.
-3. Jelentkezzen be azon a kiszolgálón, amelyen telepíteni fogja a Microsoft Intune Tanúsítvány-összekötőt.
-4. Futtassa a telepítőt, és fogadja el az alapértelmezett helyet. A telepítő az összekötőt a C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe helyen telepíti.
+1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+2. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget. 
+3. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét. 
+4. Kattintson a **Hozzáadás** gombra, és válassza az **Összekötő letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, ahol hozzá tud férni a kiszolgálón, amelyre telepíteni fogja. 
+5.  Jelentkezzen be azon a kiszolgálón, amelyen telepíteni fogja a Microsoft Intune Tanúsítvány-összekötőt.
+6.  Futtassa a telepítőt, és fogadja el az alapértelmezett helyet. A telepítő az összekötőt a C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe helyen telepíti.
+    1. A Telepítőbeállítás oldalon kattintson a **PFX terjesztése**, majd a **Tovább** elemre.
+    2. Kattintson a **Telepítés** elemre, és várjon, amíg a telepítés befejeződik.
+    3. A Befejezés lapon jelölje be az **Intune-összekötő indítása** feliratú jelölőnégyzetet, majd kattintson a **Befejezés** elemre.
+7.  Az NDES-összekötő ablaknak ekkor a **Regisztráció** lapra kell nyílnia. Az Intune-hoz való kapcsolódás engedélyezéséhez kattintson a **Bejelentkezés** elemre, és adjon meg egy rendszergazdai engedélyekkel rendelkező fiókot.
+8.  A **Speciális** lapon kijelölve hagyhatja a **Use this computer's SYSTEM account (default)** (A számítógép SYSTEM fiókjának használata (alapértelmezett)) feliratú választógombot.
+9.  Kattintson az **Alkalmaz**, majd a **Bezárás** elemre.
+10. Most pedig lépjen vissza az Azure Portalra. Néhány percen belül meg kell jelennie egy zöld pipajelnek és az **Aktív** szónak a **Kapcsolat állapota** területen, ha megnyitja az **Intune** > **Eszközkonfiguráció** > **Hitelesítésszolgáltató** lapot. Ez a megerősítés jelzi, hogy az összekötő kiszolgáló kapcsolatba tud lépni az Intune-nal.
 
-      a. A Telepítőbeállítás oldalon kattintson a **PFX terjesztése**, majd a **Tovább** elemre.
-
-   b. Kattintson a **Telepítés** elemre, és várjon, amíg a telepítés befejeződik.
-
-   c. A befejezés lapon jelölje be a **Intune-összekötő indítása** feliratú jelölőnégyzetet, majd kattintson a **Befejezés** elemre.
-
-5. Az NDES-összekötő ablaknak ekkor a **Regisztráció** lapra kell nyílnia. Az Intune-hoz történő kapcsolódás engedélyezéséhez kattintson a **Bejelentkezés** elemre, és adjon meg egy fiókot rendszergazdai engedélyekkel.
-6. A **Speciális** lapon kijelölve hagyhatja a **Use this computer's SYSTEM account (default)** (A számítógép SYSTEM fiókjának használata (alapértelmezett)) feliratú választógombot.
-7. Kattintson az **Alkalmaz**, majd a **Bezárás** elemre.
-8. Most pedig lépjen vissza az Azure Portalra. Ha megnyitja az **Intune**, az **Eszközkonfiguráció** majd a **Hitelesítésszolgáltató** lapot, a **Kapcsolat állapota** menüpont alatt pár percen belül meg kell jelennie egy zöld pipa jelnek és az **Aktív** szónak. Ez a megerősítés jelzi, hogy az összekötő kiszolgáló kapcsolatba tud lépni az Intune-nal.
 
 ## <a name="create-a-device-configuration-profile"></a>Eszközkonfigurációs profil létrehozása
 
@@ -169,4 +167,4 @@ VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Nyissa meg az Intune oldalt az Azure Portalon, és hozzon létre egy új profilt egy megbízható tanúsítványhoz"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Hozzon létre egy profilt, és töltsön fel egy megbízható tanúsítványt"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Töltse le a tanúsítvány-összekötőt az Azure Portalról"
+[ConnectorDownload]: ./media/certificates-download-connector.png "Töltse le a tanúsítvány-összekötőt az Azure Portalról"  
