@@ -299,7 +299,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -331,7 +331,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -581,7 +581,7 @@
           items:
             - name: Alkalmazásonkénti VPN-profil
               href: android-pulse-secure-per-app-vpn.md
-            - name: Alkalmazások engedélyezése/letiltása a Samsung KNOX Standard használatával
+            - name: Alkalmazások engedélyezése/letiltása a Samsung Knox Standard használatával
               href: samsung-knox-apps-allow-block.md
         - name: iOS
           href: custom-settings-ios.md

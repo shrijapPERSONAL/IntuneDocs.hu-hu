@@ -27,12 +27,14 @@
 ### [Az Android gyakori problémáinak elhárítása](troubleshoot-your-device-android.md)
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
 #### [Outlook-e-mailek szinkronizálása takarékos üzemmódban](power-saving-mode-android.md)
+#### [A Samsung Knox gyakori problémáinak elhárítása](samsung-knox-errors-android.md)
 
 #### Problémák megoldása naplók segítségével
 ##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Naplók elküldése e-mailben](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Naplók elküldése USB-kábelen](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Regisztrációs hibák beküldése](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-android.md)
 
 ### Operációs rendszerekkel kapcsolatos kérdések
 #### [Az eszköz frissítése](you-need-to-update-your-android-device.md)
@@ -64,7 +66,7 @@
 
 ### [Felügyelt alkalmazások használata az eszközön](use-managed-apps-on-your-device-ios.md)
 ### [PIN-kód beállítása vagy módosítása](set-or-change-your-passcode-ios.md)
-### [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Munkahelyi portál segítségével?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
 ### [Az eszköz regisztrációjának törlése](unenroll-your-device-from-intune-ios.md)
 #### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
@@ -74,6 +76,7 @@
 #### [Sérült biztonságú iOS-eszköz ismételt csatlakoztatása](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hibák elküldése a cégnek](send-errors-to-your-it-admin-ios.md)
 #### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-ios.md)
+#### [Meglévő vállalati e-mail-fiók található](existing-company-email-account-found.md)
 #### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hibaüzenet jelent meg](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
-### [Windows 10 rendszerű eszközök beléptetése](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [A Windows más verzióinak beléptetése](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [Mi történik, ha más Windows-verziót regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows-eszköz regisztrálása](enroll-your-device-in-intune-windows.md)
-### [Mi történik a Munkahelyi portál alkalmazás telepítésekor és az eszköz Intune-beli regisztrálásakor?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Windows 10 rendszerű eszköz regisztrálása](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása](enroll-your-w81-or-rt81-windows.md)
+#### [Windows Phone 8.1-es eszköz regisztrációja](enroll-your-wp81-windows.md)
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
-
 ### [Az eszköz titkosítása](encrypt-your-device-windows.md)
 ### [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)
 ### [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-windows.md)
