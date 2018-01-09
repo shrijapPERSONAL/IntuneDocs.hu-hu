@@ -3,8 +3,8 @@ title: "Csak a céges adatok törlése az alkalmazásokból"
 titleSuffix: Azure portal
 description: "A cikk tájékoztatást nyújt az alkalmazások Microsoft Intune-nal való szelektív törléséről."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/05/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 206aef4185934448418d7b080ab94af94e792e74
-ms.sourcegitcommit: ad97d658682bf563638521856931e2709e40e14b
+ms.openlocfilehash: 0a1c6085ddf07c70eaaf81b6e043b6da35544388
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -82,7 +82,7 @@ A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan
 
 3.  Ha a rendszer törlési megerősítést kér, válassza az **Igen** vagy a **Nem** lehetőséget, majd kattintson az **OK** gombra.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Mi az alkalmazásvédelmi szabályzat?](app-protection-policy.md)
 
 [Mi az alkalmazáskezelés?](app-management.md)

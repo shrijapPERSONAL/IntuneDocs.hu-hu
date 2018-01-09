@@ -3,8 +3,8 @@ title: "Alkalmazásadatok és -hozzárendelések monitorozása"
 titlesuffix: Azure portal
 description: "Miután társított egy alkalmazást a felhasználókhoz vagy eszközökhöz, ezekkel az információkkal monitorozhatja az alkalmazás állapotát."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: cb95319d2574116d480de9bdf74ef36129d0970f
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Alkalmazásadatok és -hozzárendelések figyelése a Microsoft Intune-ban
 
@@ -29,14 +29,14 @@ Az Intune több módot is kínál a felügyelt alkalmazások jellemzőinek, vala
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
-3. A **Mobilalkalmazások** területen válassza az **Alkalmazások** elemet a **Kezelés** csoportban.
+3. A **Mobilalkalmazások** területen válassza az **Alkalmazások** elemet a **Felügyelet** csoportban.
 5. Az alkalmazáslista panelen válasszon egy alkalmazást. Ekkor megjelenik az <*alkalmazásnév*> **Eszköz telepítési állapota** panel.
 
 ## <a name="app-overview-blade"></a>Alkalmazás áttekintése panel
 
 Az <*alkalmazás neve*> **Eszköz telepítési állapota** panelen áttekintheti a környezetében lévő alkalmazás részletes állapotadatait.
 
-### <a name="essentials"></a>Alapadatok
+### <a name="essentials"></a>Alapok
 
 Az **Alapadatok** szakasz az alábbi információkat nyújtja az alkalmazásról:
 

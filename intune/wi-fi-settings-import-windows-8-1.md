@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8bd14fe96fd3c508fd88a43ed6ed7c553d95cf
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fe2bb05060ac490fbd9cd95c8fa5d0c001873d96
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Wi-Fi-beállítások importálása Windows 8.1 és újabb rendszerű eszközökhöz a Microsoft Intune-ban
 
@@ -41,7 +41,7 @@ A Windows rendszerben a **netsh wlan** segédprogrammal az Intune által is olva
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
-3. A profilok panelen katttintson a **Profil létrehozása** lehetőségre.
+3. A profilok panelen kattintson a **Profil létrehozása** lehetőségre.
 4. A **Profil létrehozása** panelen adjon meg egy **Nevet** és **Leírást** az eszközkorlátozási profilra vonatkozóan.
 5. A **Platform** legördülő listájában válassza a **Windows 8.1 vagy újabb** lehetőséget.
 6. A **Profil típusa** legördülő listában válassza a **Wi-Fi importálás** lehetőséget.

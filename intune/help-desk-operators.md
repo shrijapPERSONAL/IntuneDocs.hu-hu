@@ -3,8 +3,8 @@ title: "Ügyfélszolgálati hibaelhárítási portál | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Az ügyfélszolgálat munkatársai a hibaelhárítási portál segítségével oldják meg a felhasználók műszaki problémáit"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/26/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 845b225fe60ecde71f364b224a0984638662a3db
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Segítségnyújtás a felhasználóknak a hibaelhárítási portál használatával
 
@@ -58,7 +58,7 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Terület | Név | Leírás |
+| Terület | Név | Description |
 | ---  | ---  | ---         |
 | 1.   | Fiók állapota  | Az aktuális Intune-bérlő állapotát jeleníti meg, amely lehet **Aktív** vagy **Inaktív**.       |
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
@@ -74,7 +74,7 @@ Az eszközökön, vagy az Intune és az Azure Active Directory (AD) által kezel
 
 A mobilalkalmazások tulajdonságai.
 
-| Tulajdonság      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Tulajdonság      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Név          | Az alkalmazás neve.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Operációs rendszer            | Az eszközön telepített operációs rendszer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -85,7 +85,7 @@ A mobilalkalmazások tulajdonságai.
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Tulajdonság           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
@@ -101,7 +101,7 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 
 Az alkalmazásvédelmi szabályzat az Enterprise Mobility Solution- (EMS-) technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Tulajdonság    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |
@@ -118,7 +118,7 @@ Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkal
 
 A táblázat az Intune által kezelt eszközök alkalmazásvédelmi szabályzatainak állapotát mutatja be.
 
-| Tulajdonság    | Leírás                                                                                                                                |
+| Tulajdonság    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Név        | Az alkalmazás neve.                                                                                                        |
 | Telepítve    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
@@ -151,7 +151,7 @@ Gondoskodik róla, hogy a vállalati alkalmazások és adatok elérésére haszn
 
 A megfelelőségi szabályzatok tulajdonságai.
 
-| Tulajdonság      | Leírás                                                                                                                         |
+| Tulajdonság      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Név          | Az alkalmazás neve.                                                                                                        |
@@ -163,7 +163,7 @@ A megfelelőségi szabályzatok tulajdonságai.
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Tulajdonság           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
@@ -179,7 +179,7 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 
 Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Tulajdonság    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |
@@ -196,7 +196,7 @@ Alkalmazásvédelmi szabályzat szállítóspecifikus konfigurációval rendelke
 
 A konfigurációs szabályzatok tulajdonságai.
 
-| Tulajdonság      | Leírás                                                                                                                         |
+| Tulajdonság      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Hozzárendelés    | Az egyes felhasználók alkalmazásvédelmi alkalmazásainak állapota. Az alkalmazások lehetséges állapotai: **Bejelentkezett** és **Nem bejelentkezett**. |
 | Név          | Az alkalmazás neve.                                                                                                        |
@@ -208,7 +208,7 @@ A konfigurációs szabályzatok tulajdonságai.
 
 Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók által kezelt eszközök.
 
-| Tulajdonság           | Leírás                                                                                                                         |
+| Tulajdonság           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Eszköz neve        | Az eszköztípus neve.                                                                                                     |
 | Felügyeli         | A szabályzat módosítási idejének időbélyege.                                                                                              |
@@ -225,7 +225,7 @@ Az Intune által, vagy az Intune vagy az Azure AD által kezelt felhasználók �
 
 Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkalmazásoknál érhető el. Ez biztosítja a vállalati adatok alapvető védelmét, amikor azokat különféle, például Office-os mobilalkalmazások töltik le. 
 
-| Tulajdonság    | Leírás                                                                           |
+| Tulajdonság    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Állapot      | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
 | Alkalmazás neve    | Az alkalmazás neve                                                           |

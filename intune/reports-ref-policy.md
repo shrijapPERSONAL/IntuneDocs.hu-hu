@@ -2,8 +2,8 @@
 title: "Szabályzat | Microsoft Docs"
 description: "Az Intune-adattárház API-ban található entitásgyűjtemények szabályzatkategóriájára vonatkozó referencia-témakör."
 keywords: "Intune-adattárház"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 06c489f8519bda2f3f0359589c3af845ade423fe
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-policy-entities"></a>Szabályzat típusú entitások referenciája
 
@@ -33,7 +33,7 @@ A **Szabályzat**kategória mobileszközökhöz tartozó entitásokat tartalmaz,
 
 A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, valamint megfelelőségi szabályzatokat tartalmaz. A szabályzatokat a Mobileszköz-kezelési (MDM) megoldás segítségével rendelheti hozzá a vállalat valamely csoportjához.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | PolicyKey |A szabályzat adattárházban való jelölésére szolgáló egyedi kulcs. |123 |
 | PolicyId |A szabályzat egyedi azonosítója az adattárházban. |b66bc706-ffff-7437-0340-032819502773 |
@@ -48,7 +48,7 @@ A **Szabályzat** entitás eszköz- és alkalmazáskonfigurációs profilokat, v
 
 A **PolicyType** entitás az eszköz- és alkalmazáskonfigurációs profilok, valamint a megfelelőségi szabályzatok típusait tartalmazza. A szabályzatokat a Mobileszköz-kezelési (MDM) megoldás segítségével rendelheti hozzá a vállalat valamely csoportjához.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | PolicyTypeId |A szabályzat egyedi azonosítója a forrásrendszerben. |123 |
 | PolicyTypeKey |A szabályzat egyedi azonosítója az adattárházban. |1 |
@@ -58,7 +58,7 @@ A **PolicyType** entitás az eszköz- és alkalmazáskonfigurációs profilok, v
 
 A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú eszközök számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az adott eszköz valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott eszköz két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor az entitás növeli az értéket a sikeres állapotot jelző számlálón, és hibás állapotba helyezi az eszközt. Az entitás azt sorolja fel, hogy hány eszköz van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
 | Függőben |A függő állapotú egyedi eszközök száma. |123 |
@@ -70,7 +70,7 @@ A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő,
 
 A **UserConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú felhasználók számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk.  A **UserConfigurationProfileDeviceActivity** entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
 | Függőben |A függő állapotú egyedi felhasználók száma. |123 |
@@ -82,7 +82,7 @@ A **UserConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, s
 
 A **PolicyTypeActivity** entitás a sikeres, függő, sikertelen vagy hibás állapotú eszközök számát sorolja fel összesítve. Ezeket az állapotokat az adott eszköz-, illetve alkalmazáskonfigurációs profilra, valamint megfelelőségi szabályzatra vonatkozóan ismerteti.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |20160703 |
 | PolicyKey |Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében. |Windows 10 baseline |

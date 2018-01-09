@@ -3,10 +3,10 @@ title: "Mennyiségi programban vásárolt iOS-alkalmazások felügyelete | Micro
 titlesuffix: Azure portal
 description: "Az iOS áruházból mennyiségi programban vásárolt alkalmazások szinkronizálása az Intune-nal, majd használatuk felügyelete és nyomon követése."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -38,9 +38,9 @@ A mennyiségi programban vásárolt alkalmazásokat kétféle módszerrel lehet 
 
 ### <a name="device-licensing"></a>Eszközlicencelés
 
-Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte. 
+Ha eszközhöz rendeli az alkalmazást, egyetlen alkalmazáslicenc lesz használatban, továbbra is ahhoz az eszközhöz társítva, amelyhez hozzárendelte.
 
-Ha mennyiségi programban vásárolt alkalmazásokat rendel az eszközhöz, a végfelhasználónak nem kell Apple ID azonosítót megadnia az áruházhoz való hozzáféréshez. 
+Ha mennyiségi programban vásárolt alkalmazásokat rendel az eszközhöz, a végfelhasználónak nem kell Apple ID azonosítót megadnia az áruházhoz való hozzáféréshez.
 
 ### <a name="user-licensing"></a>Felhasználói licencelés
 
@@ -92,7 +92,8 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
         > Az ország módosításakor az ezzel a tokennel létrehozott alkalmazásoknál az Apple-szolgáltatással való legközelebbi szinkronizálás alkalmával frissülni fognak az alkalmazás metaadatai és az áruházi URL-cím. Az alkalmazás nem fog frissülni, ha az nem található meg az új országhoz tartozó áruházában.
 
     - **VPP-fiók típusa** –A következő lehetőségek közül választhat: **Üzlet** és **Oktatás**.
-    - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül. Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
+    - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül.
+Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
 4. Amikor elkészült, válassza a **Feltöltés** gombot.
 
 A token a jogkivonatok panel listájában jelenik meg.
@@ -134,6 +135,8 @@ A végfelhasználó különféle helyzetekben figyelmeztetést fog kapni VPP-alk
 ## <a name="further-information"></a>További információ
 
 A licencek visszanyeréséhez módosítania kell a hozzárendelési műveletet az **Eltávolítás** műveletre. A licenc az alkalmazás eltávolítása után felszabadul. Ha eltávolít egy olyan alkalmazást, amely hozzá volt rendelve egy felhasználóhoz, az Intune megpróbálja felszabadítani a felhasználóhoz társított összes alkalmazáslicencet.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni egy eszközön, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase Programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
 

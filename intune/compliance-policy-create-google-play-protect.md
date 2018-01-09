@@ -3,8 +3,8 @@ title: "A Google Play Protect megfelelőségvizsgálatának engedélyezése az I
 titleSuffix: Azure portal
 description: "A cikk azt mutatja be, hogyan hozható létre megfelelőségi szabályzat androidos eszközökön a Google Play Protect engedélyezéséhez."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d610bc338c1bcf81ed3bc71f1357e001914c5877
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 3d9e687ff31d50e30ea4d15a4eb751c0e78dc24e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató
 
@@ -27,7 +27,7 @@ A Google Play Protect (GPP) megfelelőségvizsgálatához létrehozhat egy új, 
 
 Az adott beállításokat szükségessé tevő megfelelőségi szabályzatot Android-felhasználókra és Android-eszközökre lehet alkalmazni. Ha egy eszközön nincsenek engedélyezve ezek a beállítások, akkor az eszköz nem megfelelőnek minősül.
 
-## <a name="create-a-compliance-policy"></a>Megfelelőségi szabályzat létrehozása
+## <a name="create-a-compliance-policy"></a>Megfelelőségi házirend létrehozása
 
 1. Jelentkezzen be az Azure Portalra. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
 2. A **Kezelés** csoportból válassza az **Eszközmegfelelőség** elemet. 
