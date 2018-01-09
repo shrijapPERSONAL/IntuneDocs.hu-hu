@@ -2,8 +2,8 @@
 title: "Mobilalkalmazás-felügyelet (MAM) | Microsoft Docs"
 description: "Az Intune-adattárház API-ban található entitásgyűjtemények mobilalkalmazásfelügyelet-kategóriájára vonatkozó referencia-témakör."
 keywords: "Intune-adattárház"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 4951ec43b2abdb52af091b2d1366bd23a9c2ab5b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobilalkalmazás-felügyelet (MAM) típusú entitások referenciája
 
@@ -36,7 +36,7 @@ A **Mobilalkalmazás-felügyelet** kategória a következő mobilalkalmazásokka
 
 A **MamApplication** entitás azokat az üzletági alkalmazásokat sorolja fel, amelyek felügyelete a Mobilalkalmazás-felügyelet használatával történik és nincsenek beléptetve a vállalat rendszerébe.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | ApplicationKey |A MAM-alkalmazás egyedi azonosítója az adattárházban. |123 |
 | ApplicationName |A MAM-alkalmazás neve. |"Word" |
@@ -50,7 +50,7 @@ A **MamApplication** entitás azokat az üzletági alkalmazásokat sorolja fel, 
 
 A **MamApplicationInstance** entitás a felügyelt Mobilalkalmazás-felügyeleti (MAM) alkalmazásokat sorolja fel felhasználóként és eszközönként egy példányban. Az entitásban felsorolt összes felhasználó és eszköz védelem alatt áll, vagyis legalább egy MAM-szabályzat hozzájuk van rendelve.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | ApplicationInstanceKey |A MAM-alkalmazáspéldány egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
 | UserId |Annak a felhasználónak az azonosítója, aki ezt a MAM-alkalmazást telepítette. |b66bc706-ffff-7437-0340-032819502773 |
@@ -75,7 +75,7 @@ A **MamCheckin** entitás a MAM-alkalmazáspéldány Intune szolgáltatásba tö
 > [!Note]  
 > Ha az alkalmazáspéldány naponta többször is bejelentkezik, azokat az adattárház egyetlen bejelentkezésként tárolja.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | DateKey |A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve a MAM-alkalmazás bejelentkezése. | 20160703 |
 | ApplicationInstanceKey |A MAM-alkalmazás bejelentkezéséhez társított alkalmazáspéldány kulcsa. |1900.2.5. 12:00:00 |
@@ -90,7 +90,7 @@ A **MamCheckin** entitás a MAM-alkalmazáspéldány Intune szolgáltatásba tö
 
 A **MamDeviceHealth** entitás azokat az eszközöket jelöli, amelyekhez mobilalkalmazás-felügyeleti szabályzatok vannak rendelve, beleértve a jailbreakelt eszközöket is.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | DeviceHealthKey |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója az adattárházban – helyettes kulcs. |1900.1.1. 12:00:00 |
 | DeviceHealth |Az eszköz és a hozzá tartozó eszközállapot egyedi azonosítója – hasonló a DeviceHealthKey-hez, de az azonosító természetes kulcs. |1900.1.1. 12:00:00 |
@@ -101,7 +101,7 @@ A **MamDeviceHealth** entitás azokat az eszközöket jelöli, amelyekhez mobila
 
 A **MamEffectivePolicy** entitás a vállalatnál alkalmazott összes érvényben levő mobilalkalmazás-felügyeleti szabályzatot sorolja fel. Az érvényben levő hozzárendelt szabályzat az adott alkalmazásra és felhasználóra vonatkozó szabályzatok összevonásának eredménye.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | EffectivePolicyKey |Az érvényben levő MAM-szabályzat egyedi azonosítója az adattárházban. |2 |
 | RealPolicyKey |A MAM-szabályzat informatikai szakember által létrehozott egyedi azonosítója. |1 |
@@ -111,7 +111,7 @@ A **MamEffectivePolicy** entitás a vállalatnál alkalmazott összes érvénybe
 
 A **MamGlobalApplication** entitás azokat az áruházbeli alkalmazásokat sorolja fel, amelyek felügyelete a Mobilalkalmazás-felügyelet használatával történik és nincsenek beléptetve a vállalat rendszerébe.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | ApplicationKey |Az áruházbeli alkalmazás egyedi azonosítója az adattárházban, más néven a helyettes kulcs. |123 |
 | ApplicationId |Az áruházbeli alkalmazás egyedi azonosítója. Az azonosító hasonló az ApplicationKey-hez, de természetes kulcs. |com.microsoft.skydrive.<ios> |
@@ -122,7 +122,7 @@ A **MamGlobalApplication** entitás azokat az áruházbeli alkalmazásokat sorol
 
 A **MamPlatform** entitás azoknak a platformoknak a nevét és típusát sorolja fel, amelyeken telepítettek MAM-alkalmazást.
 
-| Tulajdonság | Leírás | Példa |
+| Tulajdonság | Description | Példa |
 |---------|------------|--------|
 | PlatformKey |A platform egyedi azonosítója az adattárházban – helyettes kulcs. |123 |
 | Platform |A platform egyedi azonosítója – a PlatformKey-hez hasonló, de természetes kulcs. |123 |

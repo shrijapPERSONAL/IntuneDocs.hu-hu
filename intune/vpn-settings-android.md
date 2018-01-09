@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23d898df90313a1a342c5a8898afea55e50dd705
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 17aa425a7daad35860eb4694e9bf798dc655992c
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Androidos eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
@@ -38,7 +38,7 @@ A kiválasztott beállításoktól függően nem minden, az alábbiakban felsoro
 - **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
     - **Tanúsítványok** – Adjon meg egy, a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilt. A tanúsítványprofilokról további információt a [How to configure certificates](certificates-configure.md) (Tanúsítványok konfigurálása) című cikkben találhat.
     - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az szállítók alábbi listájából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**
@@ -56,7 +56,7 @@ A kiválasztott beállításoktól függően nem minden, az alábbiakban felsoro
 - **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
     - **Tanúsítványok** – Adjon meg egy, a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilt. A tanúsítványprofilokról további információt a [How to configure certificates](certificates-configure.md) (Tanúsítványok konfigurálása) című cikkben találhat.
     - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
-- **Kapcsolat típusa** – Az szállítók alábbi listájából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
     - **Dell SonicWALL Mobile Connect**

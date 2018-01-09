@@ -3,8 +3,8 @@ title: "Üzletági Android-alkalmazások hozzáadása az Intune-hoz"
 titlesuffix: Azure portal
 description: "Útmutató az üzletági Android-alkalmazások Intune-ba való felvételéhez."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/12/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 141d0499f055441ff099a5bec1c4ea695f77326c
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 3d421889f5c271770c2c97fe37ff82cedc531985
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Androidos üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/20/2017
     - **Név** – Itt adhatja meg az alkalmazás céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
     - **Leírás** – Adja meg az alkalmazás leírását, amelyet a felhasználók is láthatnak majd a céges portálon.
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
-    - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legrégebbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerű eszközhöz rendeli hozzá, nem fog települni.
+    - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legrégebbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerrel rendelkező eszközhöz rendelik hozzá, akkor nem lesz telepítve.
     - **Kategória** – Választhat egyet vagy többet a beépített kategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Így megkönnyítheti a felhasználók számára az alkalmazás megkeresését a céges portálon való böngészés során.
     - **Megjelenítés kiemelt alkalmazásként a Céges portálon** – Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
     - **Információs URL-cím** – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím jelenik meg a felhasználók számára a céges portálon.

@@ -2,8 +2,8 @@
 title: "Az adattárház adatmodellje | Microsoft Docs"
 description: "Az Intune-adattárház napi adatgyűjtéssel dokumentálja a folyamatosan változó mobilkörnyezet előzményeit."
 keywords: "Intune-adattárház"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: bb4248c773e30244beb310a5b5c8b3fb0bb9d5f0
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="data-warehouse-data-model"></a>Az adattárház adatmodellje
 
@@ -59,6 +59,6 @@ Az adattárház az Intune alsóbb rétege. Az Intune az egyezményes világidő 
 
 ## <a name="next-steps"></a>További lépések
 
- - Annak részletesebb megismeréséhez, hogy az adattárház miképpen követi nyomon a felhasználó élettartamát az Intune-ban, lásd: [A felhasználó élettartamának ábrázolása az Intune-adattárházban](reports-ref-user-timeline.md).
+ - A [Felhasználói élettartam ábrázolása az Intune adattárházban](reports-ref-user-timeline.md) című témakörben további információt talál arról, hogy az adattárház miképpen követi nyomon egy felhasználó élettartamát az Intune-ban.
  - Az adattárházakkal való munka részletesebb megismeréséhez lásd: [Első adattárház létrehozása](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
  - A Power BI és az adattárház használatának részletesebb megismeréséhez lásd: [Új Power BI-jelentés létrehozása adatkészlet importálásával ](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

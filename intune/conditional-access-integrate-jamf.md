@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |A klasszikus portálbeli Intune-ról keres dokumentációt? [Lépjen tovább ide](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Jelenleg Private Preview verzióban|
-|--|
-|A jelen témakörben leírt funkciók jelenleg csak Private Preview verzióban érhetők el az ügyfelek számára. Miután a verzió minden felhasználó számára elérhetővé vált, eltávolítjuk ezt a megjegyzést.|
-| |
-
 Ha a szervezet a [Jamf Pro](https://www.jamf.com) segítségével felügyeli a végfelhasználók Mac-alapú számítógépeit, lehetősége van a Microsoft Intune megfelelőségi szabályzataival és az Azure Active Directory-alapú feltételes hozzáféréssel biztosítani az eszközmegfelelőséget a szervezetben.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 A Jamf Pro használatával történő feltételes hozzáférés konfigurálásához a következőkre van szüksége:
 
-- Hozzáférés a macOS feltételes hozzáférést biztosító Intune Private Preview verzióhoz
 - A Jamf Pro 10.1.0-ás vagy későbbi verziója
 - [macOS-hez készült Céges portál alkalmazás](https://aka.ms/macoscompanyportal)
 - OS X 10.11-es vagy későbbi Yosemite verzióval rendelkező macOS-alapú eszközök
@@ -55,12 +49,12 @@ Az Intune és a Jamf Pro csatlakoztatásához a következők szükségesek:
 ## <a name="create-a-new-application-in-azure-active-directory"></a>Új alkalmazás létrehozása az Azure Active Directoryban
 
 1. Nyissa meg az **Azure Active Directory** > **Alkalmazásregisztrációk** lapot.
-2. Kattintson az **+Új alkalmazás regisztrálása** gombra.
+2. Kattintson az **+Új alkalmazás létrehozása** elemre.
 3. Adjon meg egy **megjelenítendő nevet**, például **Jamf feltételes hozzáférés**.
 4. Kattintson a **Webalkalmazás / API** elemre.
 5. Adja meg a **Bejelentkezési URL-címet** a Jamf Pro-példány URL-címe alapján.
 6. Kattintson az **Alkalmazás létrehozása** lehetőségre.
-7. Mentse az újonnan létrehozott **Alkalmazásazonosítót**, majd válassza a **Beállítások** lehetőséget, és navigáljon az **API-hozzáférés** > **Kulcsok** lapra az új alkalmazáskulcs létrehozásához. Adja meg a kívánt leírást a **Leírás** oszlopban, adja meg a lejárat időtartamát a **Lejárat** oszlopban, majd mentse az alkalmazáskulcsot. 
+7. Mentse az újonnan létrehozott **Alkalmazásazonosítót**, majd válassza a **Beállítások** lehetőséget, és navigáljon az **API-hozzáférés** > **Kulcsok** lapra az új alkalmazáskulcs létrehozásához. Adja meg a kívánt leírást a **Leírás** oszlopban, adja meg a lejárat időtartamát a **Lejárat** oszlopban, majd mentse az alkalmazáskulcsot.
 
   > [!IMPORTANT]
   > Az alkalmazáskulcs csak egyszer jelenik meg a folyamat során. Mindenképpen olyan helyre mentse, ahol később könnyen hozzáférhet.
@@ -105,7 +99,7 @@ A Jamf Pro rögzíti a felügyelt macOS-alapú eszközök eszközkészletadatait
 * Titkosított (FileVault 2)
 * Forgalomirányító állapota
 * Jelszó: Karakterkészletek minimális száma
-* Jelszó lejárta (napokban)
+* Jelszó lejárata (nap)
 * Jelszó típusa – egyszerű, alfanumerikus, vagy ismeretlen
 * Automatikus bejelentkezés tiltása
 * PIN-kód minimális hossza

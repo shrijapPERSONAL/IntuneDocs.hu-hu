@@ -2,8 +2,8 @@
 title: "Adatok beolvasása az adattárház API-ból REST-ügyféllel"
 description: "Adatok beolvasása az Intune-adattárházból RESTful API-val"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4991a2b26b97428fc54234ff35871d446107b950
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -76,7 +76,7 @@ Az Intune-adattárház API-t használhatja olyan általános REST ügyfelekkel, 
 
 A következők szükségesek REST-hívások a Postman alkalmazásból való végrehajtásához:
 
-| Attribútum        | Leírás                                                                                                                                                                          | Példa                                                                                       |
+| Attribútum        | Description                                                                                                                                                                          | Példa                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Visszahívási URL     | Az alábbi címet adja meg az alkalmazás Beállítások oldalán visszahívási URL-címként.                                                                                                                              | https://www.getpostman.com/oauth2/Callback                                                    |
 | Jogkivonat neve       | A karakterlánc, amellyel az ügyfél átadja a hitelesítő adatokat az Azure-alkalmazásnak. A folyamat során egy jogkivonat jön létre, mellyel az adattárház API-t hívhatja.                          | Tulajdonos                                                                                        |

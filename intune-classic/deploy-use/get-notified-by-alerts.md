@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Riasztások használata Microsoft Intune-értesítésekhez
 
@@ -54,7 +54,7 @@ Emellett az is beállítható, hogy az Intune e-mailben értesítse arról, ha r
 
 A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Riasztások és értesítések** elemet, majd válasszon a következő feladatok közül:
 
-|Feladat|Leírás|
+|Feladat|Description|
 |---|------|
 |**Riasztástípusok**|Válassza ki a konfigurálni kívánt riasztástípust, majd tegye a következők valamelyikét:<br /><br />Válassza a **Konfigurálás** elemet. A **Riasztástípus beállítása** párbeszédpanelen adja meg a kívánt beállításokat, majd kattintson az **OK** gombra.<br /><br />**Engedélyezze** vagy **tiltsa le** a riasztást.<br /><br />Bontsa ki a **Riasztástípusok** csomópontot, majd válassza ki azt a kategóriát, amelynek a riasztástípusait meg szeretné tekinteni.|
 |**Címzettek**|Kattintson a **Hozzáadás** gombra, majd adja meg az új e-mail-címet, amelyen e-mail értesítéseket szeretne fogadni.<br /><br />A meglévő címzetteket **szerkesztheti** és **törölheti** is.<br /><br />Ha értesítést szeretne kapni, a kívánt e-mail címet az **Értesítési szabályok** területen is fel kell vennie címzettként.|
@@ -66,7 +66,7 @@ Ha riasztásokat szeretne megtekinteni a [Microsoft Intune felügyeleti konzolon
 
 A következő beállításokkal kezelheti a riasztásokat az Intune felügyeleti konzolról.
 
-|Beállítás|Leírás|
+|Beállítás|Description|
 |-----|----|
 |**Aktív riasztások megtekintése**|Válasszon a következő lehetőségek közül:<br /><br />**A riasztás összefoglalásának megtekintése** Az **Irányítópult** munkaterületen a legfontosabb hibák a Riasztások panelen jelennek meg. További részletes információk megjelenítéséhez kattintson az ablaktáblára.<br /><br />Emellett az egyes riasztások összefoglalását a **Riasztások** munkaterület **Áttekintés** lapján tekintheti meg.<br /><br />**Az összes riasztás megtekintése** A **Riasztások** munkaterületen válassza a **Minden riasztás** elemet.|
 |**Megjegyzések megtekintése**|Válasszon a következő lehetőségek közül:<br /><br />Az **Irányítópult** munkaterületen kattintson a **Megjegyzések** elemre.<br /><br />A **Riasztások** munkaterületen válassza a **Minden riasztás** &gt; **Értesítések** elemet.|
