@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5ba247c67c5810ec6c9e436819d04141f26032f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 50818a75d1a0877ac77e5d0a5eefb696a168baf7
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>A Microsoft Intune-ban regisztrált Windows 8.1-eszközök VPN-beállításai
 
@@ -40,7 +40,7 @@ A megadott beállításoktól függően az alábbi listában található érték
     - **Importálás** – Tallózással keresse meg a kiszolgálók vesszővel tagolt listáját tartalmazó fájlt (formátuma: leírás, IP-cím vagy teljes tartománynév, alapértelmezett kiszolgáló). Indítsa el ezeknek a **Kiszolgálók** listába való importálását az **OK** gombra kattintva.
     - **Exportálás** – Exportálja a kiszolgálók listáját egy vesszővel tagolt (CSV-) fájlba.
 
-- **Kapcsolat típusa** – Az alábbi szállítólistából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
 - **Check Point Capsule VPN**
 - **Dell SonicWALL Mobile Connect**
 - **F5 Edge Client**

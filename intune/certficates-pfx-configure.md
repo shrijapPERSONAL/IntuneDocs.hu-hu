@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és kezelése az Intune-nal
 
@@ -53,12 +53,13 @@ VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz
 2. Nyisson meg rendszergazdaként egy parancssort.
 3. Exportálja a hitelesítésszolgáltatói főtanúsítványt egy olyan helyre, ahol később hozzáférhet.
 
-   Példa:
+   Például:
+
+4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
    `certutil -ca.cert certnew.cer`
 
    További információkárt lásd: [Certutil-feladatok a tanúsítványok kezeléséhez](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
-
 
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
 
@@ -104,7 +105,7 @@ VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz
 1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 2. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget. 
 3. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét. 
-4. Kattintson a **Hozzáadás** gombra, és válassza az **Összekötő letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, ahol hozzá tud férni a kiszolgálón, amelyre telepíteni fogja. 
+4. Kattintson a **Hozzáadás** elemre, és válassza az **Összekötői fájl letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, amelyhez hozzá tud férni a telepítéshez használt kiszolgálón. 
 5.  Jelentkezzen be azon a kiszolgálón, amelyen telepíteni fogja a Microsoft Intune Tanúsítvány-összekötőt.
 6.  Futtassa a telepítőt, és fogadja el az alapértelmezett helyet. A telepítő az összekötőt a C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe helyen telepíti.
     1. A Telepítőbeállítás oldalon kattintson a **PFX terjesztése**, majd a **Tovább** elemre.

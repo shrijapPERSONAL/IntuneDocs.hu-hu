@@ -3,8 +3,8 @@ title: "Alkalmazások hozzáadása a Microsoft Intune-hoz"
 titlesuffix: Azure portal
 description: "Ezekkel az eljárásokkal felveheti az alkalmazásokat az Intune-ba, hogy készen álljanak a felhasználókhoz és eszközökhöz való hozzárendelésre. \""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 108f789f16304498cf54387326d112353bf70aa2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b33e15e8bd6597464bfe54a5152a872889d08e15
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Alkalmazás hozzáadása a Microsoft Intune-hoz
 
@@ -71,7 +71,7 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Beállítás** > **Alkalmazáskategóriák** elemet.
+4. A **Mobilalkalmazások** területen válassza a **Beállítás** > **	Alkalmazáskategóriák** elemet.
 5. Az **Alkalmazáskategóriák** panelen látható az aktuális kategóriák listája. Válasszon a következő lehetőségek közül:
     - **Új kategória létrehozása** – Adja meg az új kategória nevét a **Create category** (Kategória létrehozása) panelen. A neveket csak egy nyelven lehet megadni, és az Intune nem fordítja le őket. Ha végzett, kattintson a **Létrehozás** gombra.
     - **Kategória szerkesztése** – Bármelyik, a listán szereplő kategóriánál válassza a **...** elemet. A **Tulajdonságok** panelen átnevezheti a kategóriát, illetve törölheti a kategóriát.
