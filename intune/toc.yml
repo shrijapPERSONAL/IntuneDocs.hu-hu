@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Felhasználó típusú entitás referenciája
               href: reports-ref-user.md
-    - name: Windows-alkalmazások közvetlen telepítése
+    - name: Intune Graph API
       href: intune-graph-apis.md
       items:
         - name: Referenciainformációk az Intune Graph API-khoz

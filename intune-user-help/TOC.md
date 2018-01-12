@@ -6,6 +6,8 @@
 
 ## [Saját eszköz alaphelyzetbe állítása](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Jelszó frissítése](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Bejelentkezés a céges portálra](sign-in-to-the-company-portal.md)
 
 ## [Android-eszköz használata](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Az eszköz manuális szinkronizálása](sync-your-device-manually-ios.md)
 
-#### [Az iOS gyakori problémáinak elhárítása](troubleshoot-your-device-iOS.md)
+### [Az iOS gyakori problémáinak elhárítása](troubleshoot-your-device-iOS.md)
 #### [Sérült biztonságú iOS-eszköz ismételt csatlakoztatása](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hibák elküldése a cégnek](send-errors-to-your-it-admin-ios.md)
 #### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-ios.md)
@@ -116,6 +118,7 @@
 #### [Mi történik, ha más Windows-verziót regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows-eszköz regisztrálása](enroll-your-device-in-intune-windows.md)
 #### [Windows 10 rendszerű eszköz regisztrálása](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Windows 10-es eszköz regisztrálása a Hozzáférés munkahelyi vagy iskolai rendszerhez elemmel](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1-es eszköz regisztrációja](enroll-your-wp81-windows.md)
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
