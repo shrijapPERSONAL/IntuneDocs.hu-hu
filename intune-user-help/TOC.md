@@ -79,6 +79,7 @@
 #### [Hibák elküldése a cégnek](send-errors-to-your-it-admin-ios.md)
 #### [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-ios.md)
 #### [Meglévő vállalati e-mail-fiók található](existing-company-email-account-found.md)
+#### [Elérte az eszközkorlátozási felső határt](device-limit-wpj-ios.md)
 #### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hibaüzenet jelent meg](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -112,6 +113,7 @@
 #### [Ez az eszköz kissé másféle](device-little-different-jamf.md)
 #### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+#### [Elérte az eszközkorlátozási felső határt](device-limit-wpj-macos.md)
 
 ## [Windows-eszköz használata](using-your-windows-device-with-intune.md)
 ### [Mi történik, ha Windows 10-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
