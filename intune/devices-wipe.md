@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
@@ -77,7 +77,7 @@ A **céges adatok eltávolítása** a felügyelt alkalmazásadatokat (ha vannak 
 
 ### <a name="android"></a>Android
 
-|Adattípus|Android|Android Samsung KNOX Standard|
+|Adattípus|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Webhivatkozások|Eltávolítva.|Eltávolítva.|
 |Nem felügyelt Google Play-alkalmazások|A telepített alkalmazások és azok adatai megmaradnak.|A telepített alkalmazások és azok adatai megmaradnak.|
@@ -89,7 +89,7 @@ A **céges adatok eltávolítása** a felügyelt alkalmazásadatokat (ha vannak 
 |Tanúsítvány profilbeállításai|A tanúsítványok visszavonódnak, de nem törlődnek.|A tanúsítványok törlődnek és visszavonódnak.|
 |Felügyeleti ügynök|Visszavonódik az eszköz-rendszergazdai jogosultság.|Visszavonódik az eszköz-rendszergazdai jogosultság.|
 |E-mail|Nem alkalmazható (az androidos eszközök nem támogatják az e-mail-profilokat)|Törlődnek az Intune által telepített levelezési profilok és az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|Törlődnek az androidos Microsoft Outlook alkalmazás által fogadott e-mailek.|
+|Outlook|Az androidos Microsoft Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook adatai nem törlődnek a regisztráció törlésekor.|Az androidos Microsoft Outlook alkalmazás által fogadott e-mailek törlődnek, de csak abban az esetben, ha az Outlook MAM-szabályzatokkal védett. Ellenkező esetben az Outlook adatai nem törlődnek a regisztráció törlésekor.|
 |Azure Active Directory (AAD) elhagyása|Törlődik az Azure AD rekord.|Törlődik az Azure AD rekord.|
 |Névjegyek | Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja.  A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,35 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c89d253f28a26a560251b159a3705016b4c7fad3
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
+# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az androidos eszköz korlátozási szabályzatával használva ezen beállításokkal konfigurálhatja az eszközöket a szervezetben.
 
 >[!TIP]
->Ha a kívánt beállítások nem elérhetőek, lehet, hogy konfigurálni tudja az eszközöket egy [egyéni profil](custom-settings-android.md) használatával. 
+>Ha a kívánt beállítások nem elérhetőek, lehet, hogy konfigurálni tudja az eszközöket egy [egyéni profil](custom-settings-android.md) használatával.
 
 ## <a name="general"></a>Általános
 
 - **Kamera** – Engedélyezi az eszköz kamerájának használatát.
-- **Másolás és beillesztés (csak Samsung KNOX esetén)** – Az eszköz másolási és beillesztési funkcióinak engedélyezése.
-- **Vágólap megosztása az alkalmazások között (csak Samsung KNOX esetén)** – Engedélyezi a vágólap használatát az alkalmazások közötti másolásra és beillesztésre.
-- **Diagnosztikai adatok küldése (csak Samsung KNOX esetén)** – Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.
-- **Gyári beállítások visszaállítása (csak Samsung KNOX esetén)** – Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.
-- **Földrajzi hely meghatározása (csak Samsung KNOX esetén)** – Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat.
-- **Kikapcsolás (csak Samsung KNOX esetén)** – Engedélyezi az eszköz felhasználó általi kikapcsolását.<br>Ha le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás nem adható meg.
-- **Képernyőfelvétel (csak Samsung KNOX esetén)** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
-- **Beszédfelismerési asszisztens (csak Samsung KNOX esetén)** – Engedélyezi a Beszédfelismerési asszisztens szoftver használatát az eszközön.
-- **YouTube (csak Samsung KNOX esetén)** – Engedélyezi a YouTube alkalmazás használatát az eszközön.
-- **Megosztott eszközök (csak Samsung KNOX esetében)** – Felügyelt Samsung KNOX Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>Az SCEP-tanúsítványprofillal együtt használva ez a szolgáltatás lehetővé teszi a végfelhasználóknak, hogy megosszanak egy eszközt úgy, hogy az összes felhasználónak ugyanazok az alkalmazások legyenek elérhetők, de a saját SCEP-felhasználói tanúsítványukkal.  A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.  Ez a szolgáltatás csak az üzletági alkalmazásokra érvényes.
+- **Másolás és beillesztés (csak Samsung Knox esetén)** – Az eszköz másolási és beillesztési funkcióinak engedélyezése.
+- **Vágólap megosztása az alkalmazások között (csak Samsung Knox esetén)** – Engedélyezi a vágólap használatát az alkalmazások közötti másolásra és beillesztésre.
+- **Diagnosztikai adatok küldése (csak Samsung Knox esetén)** – Megakadályozza, hogy a felhasználó diagnosztikai adatokat küldjön az eszközről.
+- **Gyári beállítások visszaállítása (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó visszaállítsa a gyári beállításokat az eszközön.
+- **Földrajzi hely meghatározása (csak Samsung Knox esetén)** – Lehetővé teszi, hogy az eszköz felhasználja a földrajzi helyre vonatkozó adatokat.
+- **Kikapcsolás (csak Samsung Knox esetén)** – Engedélyezi az eszköz felhasználó általi kikapcsolását.<br>Ha le van tiltva, a **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** beállítás nem adható meg.
+- **Képernyőfelvétel (csak Samsung Knox esetén)** – Lehetővé teszi, hogy a felhasználó képként rögzítse a képernyőn látható tartalmat.
+- **Beszédfelismerési asszisztens (csak Samsung Knox esetén)** – Engedélyezi a Beszédfelismerési asszisztens szoftver használatát az eszközön.
+- **YouTube (csak Samsung Knox esetén)** – Engedélyezi a YouTube alkalmazás használatát az eszközön.
+- **Megosztott eszközök (csak Samsung Knox esetében)** – Felügyelt Samsung Knox Standard-eszközök konfigurálása megosztáshoz. Ebben a módban a végfelhasználók Azure AD-beli hitelesítő adataikkal jelentkezhetnek be az eszközön. Az eszköz felügyelt marad, függetlenül attól, hogy használatban van-e vagy sem.<br>Az SCEP-tanúsítványprofillal együtt használva ez a szolgáltatás lehetővé teszi a végfelhasználóknak, hogy megosszanak egy eszközt úgy, hogy az összes felhasználónak ugyanazok az alkalmazások legyenek elérhetők, de a saját SCEP-felhasználói tanúsítványukkal.  A felhasználói kijelentkezéskor az összes alkalmazásadat törlődik.  Ez a szolgáltatás csak az üzletági alkalmazásokra érvényes.
+- **Dátum- és időmódosítás letiltása (Samsung Knox)** – Megakadályozza, hogy a felhasználók módosítsák az eszköz dátum- és időbeállításait. 
 
 ## <a name="password"></a>Jelszó
 
@@ -60,8 +61,8 @@ Az androidos eszköz korlátozási szabályzatával használva ezen beállítás
     - **Legalább alfanumerikus karakterek**
     - **Legalább alfanumerikus karakterek és szimbólumok**
 - **Korábbi jelszavak újbóli használatának tiltása** – Megakadályozza, hogy a végfelhasználó általa korábban már használt jelszót hozzon létre.
-- **Ujjlenyomattal történő zárolásfeloldás (csak Samsung KNOX esetén)** – Engedélyezi a támogatott eszközök ujjlenyomattal történő zárolásfeloldását.
-- **Smart Lock és egyéb megbízhatósági ügynökök** – A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung KNOX Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van. Így például abban az esetben, ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.
+- **Ujjlenyomattal történő zárolásfeloldás (csak Samsung Knox esetén)** – Engedélyezi a támogatott eszközök ujjlenyomattal történő zárolásfeloldását.
+- **Smart Lock és egyéb megbízhatósági ügynökök** – A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung Knox Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van. Így például abban az esetben, ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.
 - **Titkosítás** – Megköveteli, hogy az eszközön minden fájl titkosítva legyen.
 
 <sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Céges portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
@@ -73,11 +74,11 @@ Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-ná
 
 ## <a name="google-play-store"></a>Google Play Áruház
 
-- **Google Play Áruház (csak Samsung KNOX esetén)** – Engedélyezi a felhasználó számára a Google Play Áruház elérését az eszközön.
+- **Google Play Áruház (csak Samsung Knox esetén)** – Engedélyezi a felhasználó számára a Google Play Áruház elérését az eszközön.
 
 ## <a name="restricted-apps"></a>Korlátozott alkalmazások
 
-A korlátozott alkalmazások listájában konfigurálhatja az alábbi listák egyikét mind androidos, mind Samsung KNOX Standard-alapú eszközökhöz:
+A korlátozott alkalmazások listájában konfigurálhatja az alábbi listák egyikét mind androidos, mind Samsung Knox Standard-alapú eszközökhöz:
 
 A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a felhasználó általi telepítését és futtatását jelenteni fogja a rendszer.
 A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalmazza, amelyeknek a telepítése engedélyezve van a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek egyéb alkalmazásokat. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.
@@ -101,48 +102,48 @@ Az **Importálás** elemre is kattinthat a lista csv-fájlból való betöltés�
 
 ## <a name="browser"></a>Böngésző
 
-- **Webböngésző (csak Samsung KNOX esetén)** – Meghatározza, hogy lehet-e használni az eszköz alapértelmezett webböngészőjét.
-- **Automatikus kitöltés (csak Samsung KNOX esetén)** – Engedélyezi a használni kívánt webböngésző automatikus kitöltési funkcióját.
-- **Cookie-k (csak Samsung KNOX esetén)** – Engedélyezi, hogy az eszköz webböngészője cookie-kat használjon.
-- **Javascript (csak Samsung KNOX esetén)** – Engedélyezi az eszköz webböngészője számára a Java-szkriptek futtatását.
-- **Előugró ablakok (csak Samsung KNOX esetén)** – A böngésző előugróablak-funkciójának engedélyezése.
+- **Webböngésző (csak Samsung Knox esetén)** – Meghatározza, hogy lehet-e használni az eszköz alapértelmezett webböngészőjét.
+- **Automatikus kitöltés (csak Samsung Knox esetén)** – Engedélyezi a használni kívánt webböngésző automatikus kitöltési funkcióját.
+- **Cookie-k (csak Samsung Knox esetén)** – Engedélyezi, hogy az eszköz webböngészője cookie-kat használjon.
+- **Javascript (csak Samsung Knox esetén)** – Engedélyezi az eszköz webböngészője számára a Javascript-parancsfájlok futtatását.
+- **Előugró ablakok (csak Samsung Knox esetén)** – A böngésző előugróablak-funkciójának engedélyezése.
 
 ## <a name="allow-or-block-apps"></a>Alkalmazások engedélyezése és letiltása
 
-Ezzel a beállítással megadható azoknak az alkalmazásoknak a listája, amelyeket kizárólag Samsung KNOX Standard eszközökön engedélyezett telepíteni és futtatni.
+Ezzel a beállítással megadható azoknak az alkalmazásoknak a listája, amelyeket kizárólag Samsung Knox Standard eszközökön engedélyezett telepíteni és futtatni.
 Ezen kívül megadhatóak olyan telepített alkalmazások is, amelyek rejtve lesznek az eszköz elhasználója elől. A felhasználók ezeket az alkalmazásokat nem futtathatják.
 
-- **Telepíthető alkalmazások (csak Samsung KNOX Standard esetén)**
-- **Nem indítható alkalmazások (csak Samsung KNOX Standard esetén)**
-- **Felhasználó elől elrejtett alkalmazások (csak Samsung KNOX Standard esetén)**
+- **Telepíthető alkalmazások (csak Samsung Knox Standard esetén)**
+- **Nem indítható alkalmazások (csak Samsung Knox Standard esetén)**
+- **Felhasználó elől elrejtett alkalmazások (csak Samsung Knox Standard esetén)**
 
 Mindegyik beállításnál egy alkalmazáslistát kell konfigurálnia az alábbiak használatával:
 
-- **Alkalmazások hozzáadása csomagnév szerint** – Elsősorban üzletági alkalmazásoknál használatos. Adja meg az alkalmazás nevét, majd az alkalmazáscsomag nevét. 
+- **Alkalmazások hozzáadása csomagnév szerint** – Elsősorban üzletági alkalmazásoknál használatos. Adja meg az alkalmazás nevét, majd az alkalmazáscsomag nevét.
 - **Alkalmazások hozzáadása URL-cím alapján** – Adja meg az alkalmazás nevét, majd az alkalmazás Google Play Áruházbeli URL-címét.
 - **Felügyelt alkalmazások hozzáadása** – Az Intune-nal felügyelt alkalmazások listájából válassza ki a kívánt alkalmazást.
 
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 
-- **Google biztonsági mentés (csak Samsung KNOX esetén)** – Engedélyezi a Google-fiók biztonsági mentését.
-- **Google-fiók automatikus szinkronizálása (csak Samsung KNOX esetén)** – Engedélyezi a Google-fiókbeállítások automatikus szinkronizálását.
-- **Cserélhető tárolók (csak Samsung KNOX esetén)** – Engedélyezi az eszköz számára a cserélhető tárolók, például SD-kártyák használatát.
-- **Tárolókártyák titkosítása (csak Samsung KNOX esetén)** – Meghatározza, hogy kötelező legyen-e az eszköz tárolókártyájának titkosítása.
+- **Google biztonsági mentés (csak Samsung Knox esetén)** – Engedélyezi a Google-fiók biztonsági mentését.
+- **Google-fiók automatikus szinkronizálása (csak Samsung Knox esetén)** – Engedélyezi a Google-fiókbeállítások automatikus szinkronizálását.
+- **Cserélhető tárolók (csak Samsung Knox esetén)** – Engedélyezi az eszköz számára a cserélhető tárolók, például SD-kártyák használatát.
+- **Tárolókártyák titkosítása (csak Samsung Knox esetén)** – Meghatározza, hogy kötelező legyen-e az eszköz tárolókártyájának titkosítása.
 
 ## <a name="cellular-and-connectivity"></a>Mobilhálózati és egyéb kapcsolatok
 
-- **Adatroaming (csak Samsung KNOX esetén)** – Engedélyezi az adatroaming használatát, ha az eszköz mobilhálózathoz csatlakozik.
-- **SMS- és MMS-funkciók (csak Samsung KNOX esetén)** – Engedélyezi az SMS- és MMS-üzenetküldést az eszközön.
-- **Hangtárcsázás (csak Samsung KNOX esetén)** – Engedélyezi vagy letiltja a hangtárcsázás funkciót az eszközön.
-- **Hangroaming (csak Samsung KNOX esetén)** – Engedélyezi a hangroaming használatát, ha az eszköz mobilhálózathoz csatlakozik.
-- **Bluetooth (csak Samsung KNOX esetén)** – Engedélyezi a Bluetooth használatát az eszközön.
-- **NFC (csak Samsung KNOX esetén)** – Engedélyezi a kis hatótávolságú kommunikációt használó műveleteket a támogatott eszközön.
-- **Wi-Fi (csak Samsung KNOX esetén)** – Engedélyezi az eszköz Wi-Fi-funkcióinak használatát.
-- **Wi-Fi-alapú internetmegosztás (csak Samsung KNOX esetén)** – Engedélyezi a Wi-Fi-alapú internetmegosztást az eszközön.
+- **Adatroaming (csak Samsung Knox esetén)** – Engedélyezi az adatroaming használatát, ha az eszköz mobilhálózathoz csatlakozik.
+- **SMS- és MMS-funkciók (csak Samsung Knox esetén)** – Engedélyezi az SMS- és MMS-üzenetküldést az eszközön.
+- **Hangtárcsázás (csak Samsung Knox esetén)** – Engedélyezi vagy letiltja a hangtárcsázás funkciót az eszközön.
+- **Hangroaming (csak Samsung Knox esetén)** – Engedélyezi a hangroaming használatát, ha az eszköz mobilhálózathoz csatlakozik.
+- **Bluetooth (csak Samsung Knox esetén)** – Engedélyezi a Bluetooth használatát az eszközön.
+- **NFC (csak Samsung Knox esetén)** – Engedélyezi a kis hatótávolságú kommunikációt használó műveleteket a támogatott eszközön.
+- **Wi-Fi (csak Samsung Knox esetén)** – Engedélyezi az eszköz Wi-Fi-funkcióinak használatát.
+- **Wi-Fi-alapú internetmegosztás (csak Samsung Knox esetén)** – Engedélyezi a Wi-Fi-alapú internetmegosztást az eszközön.
 
 ## <a name="kiosk"></a>Kioszkmód
 
-A kioszkmód csak a Samsung KNOX Standard eszközökre, és csak az Intune-nal felügyelt alkalmazásokra vonatkozik.
+A kioszkmód csak a Samsung Knox Standard eszközökre, és csak az Intune-nal felügyelt alkalmazásokra vonatkozik.
 
 - **Felügyelt alkalmazás kiválasztása** – Válassza ki a következő lehetőségek egyikét egy vagy több, az eszköz kioszkmódjában futtatható felügyelt alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.
     - **Alkalmazások hozzáadása csomagnév szerint**

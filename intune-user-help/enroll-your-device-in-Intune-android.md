@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android-eszköz regisztrálása az Intune-ban
 
@@ -28,7 +28,7 @@ Ha munkahelye vagy iskolája a Microsoft Intune-t használja, Android-eszközén
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Ezek a regisztrálási útmutatók a natív és a Samsung KNOX Android-eszközökre vonatkoznak. A Samsung KNOX olyan biztonsági szolgáltatás, amelynek segítségével bizonyos Samsung-eszközöknek további védelmet biztosíthat a natív Android nyújtotta lehetőségeken felül. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung KNOX-eszközzel rendelkezik-e. Ha nem jelenik meg a „KNOX verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
+Ezek a regisztrálási útmutatók a natív és a Samsung Knox Android-eszközökre vonatkoznak. A Samsung Knox olyan biztonsági szolgáltatás, amelynek segítségével bizonyos Samsung-eszközöknek további védelmet biztosíthat a natív Android nyújtotta lehetőségeken felül. A **Beállítások** > **Az eszköz névjegye** területen megállapíthatja, hogy Samsung Knox-eszközzel rendelkezik-e. Ha nem szerepel a „Knox-verzió” kifejezés, akkor natív Android-eszközzel rendelkezik.
 
 A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki egy olyan kategóriát, amely a leginkább illik az Ön eszközhasználatára. A cég informatikai támogatási szolgálata ezen a kategórián keresztül segít ellenőrizni az alkalmazásokat, amelyekhez hozzáfér.
 
@@ -98,9 +98,9 @@ A regisztráció előtt vagy után a rendszer megkérheti, hogy válasszon ki eg
 
     ![Adjon meg PIN-kódot vagy jelszót](./media/and-enroll-6-PIN-native.png)
 
-13.  Ha Samsung KNOX-eszközt használ, koppintson a **Megerősítés** elemre. Ekkor megjelenik egy üzenet, hogy az eszköz regisztrálása folyamatban van. Ha natív Android-eszközt használ, akkor csak egy üzenet jelenik meg arról, hogy az eszköz regisztrálása folyamatban van, ahogy az alábbi képernyőképen látható.
+13.  Ha Samsung Knox-eszközt használ, koppintson a **Megerősítés** elemre. Ekkor megjelenik egy üzenet, hogy az eszköz regisztrálása folyamatban van. Ha natív Android-eszközt használ, akkor csak egy üzenet jelenik meg arról, hogy az eszköz regisztrálása folyamatban van, ahogy az alábbi képernyőképen látható.
 
-    ![Samsung KNOX adatvédelmi szabályzat](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox adatvédelmi szabályzat](./media/and-enroll-7-knox-privacy-policy.png)
 
     Ezen a képernyőképen az látható, hogy az eszköz regisztrálása folyamatban van.
 

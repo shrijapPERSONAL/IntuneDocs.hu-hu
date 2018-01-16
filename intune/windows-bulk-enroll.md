@@ -3,8 +3,8 @@ title: "Windows 10-es eszközök csoportos regisztrálása"
 titlesuffix: Azure portal
 description: "Csoportos regisztrációs csomag létrehozása a Microsoft Intune-hoz"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
@@ -29,8 +29,6 @@ A rendszergazda nagy számú új windowsos eszközt csatlakoztathat az Azure Act
 Az Azure AD-felhasználók általános jogú felhasználók ezeken az eszközökön, és megkapják a hozzájuk rendelt Intune-szabályzatokat és a kötelező alkalmazásokat. Az önkiszolgáló és a Céges portált használó forgatókönyvek jelenleg nem támogatottak.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windowsos eszközök csoportos regisztrációjának előfeltételei
-
-Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 
 - A Windows 10 alkotói frissítését vagy újabb verziót futtató eszközök
 - [Windowsos eszközök automatikus regisztrációja](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 2. Nyissa meg a **Windows Configuration Designer** alkalmazást, és válassza a **Provision desktop devices** (Asztali eszközök kiépítése) elemet.
 ![Képernyőkép a Provision desktop services elem kiválasztásáról a Windows Configuration Designerben](media/bulk-enroll-select.png)
 
-3. Megnyílik egy **New project** (Új projekt) ablak, ahol az alábbiakat kell megadnia:
-  - **Név** – A projekt neve
-  - **Projektmappa** – A projekt mentési helye
-  - **Leírás** – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designer programban](media/bulk-enroll-name.png)
+3. Megnyílik egy **New project** (Új projekt) ablak, ahol az alábbi adatokat kell megadnia:
+  - **Name** (Név) – A projekt neve
+  - **Project folder** (Projektmappa) – A projekt mentési helye
+  - **Description** (Leírás) – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-name.png)
 
 4.  Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Lehetőség van termékkulcs megadására is, ha frissíti a Windows-kiadást, megosztott használatra konfigurálja az eszközt, és eltávolítja az előre telepített szoftvert.
 ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-device.png)
 
-5.  Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha ez nincs megadva, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
+5.  Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha nincsenek konfigurálva a hálózati eszközök, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
 ![Képernyőkép a Wi-Fi engedélyezéséről, a hálózati SSID és a hálózattípus konfigurálásáról a Windows Configuration Designerben](media/bulk-enroll-network.png)
 
 6.  Válassza az **Enroll in Azure AD** (Regisztrálás az Azure AD-ban) lehetőséget, adja meg a **Bulk Token Expiry** (Csoportos jogkivonat lejárati ideje) értékét, majd válassza a **Get Bulk Token** (Csoportos jogkivonat beszerzése) elemet.
@@ -77,7 +75,7 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 
  A kiépítési csomag használatának részletes leírását megtalálja a [Kiépítési csomag alkalmazása](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) című témakörben.
 
-3. A csomag alkalmazása után az eszköz 1 percen belül automatikusan újraindul.
+3. A csomag alkalmazása után az eszköz egy percen belül automatikusan újraindul.
  ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](media/bulk-enroll-add.png)
 
 4. Az újraindítás után az eszköz automatikusan csatlakozik az Azure Active Directoryhoz, és regisztrálódik a Microsoft Intune-ban.
@@ -88,7 +86,7 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 A kiépítés alapvetően új windowsos eszközök esetében használható. Kiépítési hibák esetén szükség lehet a gyári beállítások visszaállítására, vagy az eszköz rendszerindító lemezképből való helyreállítására. Az alábbi példák egyes kiépítési hibákhoz adnak magyarázatot:
 
 - Ha egy kiépítési csomaggal olyan Active Directory-tartományhoz vagy Azure Active Directory-bérlőhöz próbál csatlakozni, amely nem hoz létre helyi fiókot, akkor az eszköz elérhetetlenné válhat, ha a tartományhoz való csatlakozás hálózati hiba miatt meghiúsul.
-- A kiépítési csomag szkriptjei rendszerkörnyezetben futnak, és bármilyen módosítást képesek elvégezni az eszköz fájlrendszerén és konfigurációján. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy a gyári beállítások visszaállításával lehet helyreállítani.
+- A kiépítési csomag által futtatott parancsfájlok rendszerkörnyezetben futnak. A parancsfájlok tetszőleges módosításokat képesek végrehajtani az eszköz fájlrendszerében és konfigurációiban. Egy rosszindulatú vagy hibás szkript azt eredményezheti, hogy az eszközt csak a rendszerkép alaphelyzetbe állításával vagy a gyári beállítások visszaállításával lehet helyreállítani.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>A csoportos regisztrációval és a Céges portállal kapcsolatos problémák
 Ha egy felhasználó egy korábban már csoportosan regisztrált eszközt próbál a Céges portál segítségével regisztrálni, a rendszer figyelmezteti, hogy az eszközzel további műveleteket (beállítást vagy regisztrációt) kell végrehajtania. Az eszköz regisztrálva van, de a regisztrációt a Céges portál alkalmazás vagy webhely nem ismeri fel.

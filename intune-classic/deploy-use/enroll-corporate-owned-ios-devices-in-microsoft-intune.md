@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>A vállalat által birtokolt iOS-eszközök regisztrálása a Microsoft Intune-ban[1502]
 
@@ -73,7 +73,7 @@ Felhasználói affinitás szükséges az alábbiak támogatásához:
 
   Ha az eszköz még nincs regisztrálva a vállalatnál, a normál regisztrálási művelet folytatásához a felhasználó válassza az **új eszköz** lehetőséget.
 
-6. A következő képernyőn a felhasználónak meg kell erősítenie az új eszköz sorozatszámát. A felhasználó a **sorozatszám megerősítése** hivatkozásra koppintva indíthatja el a beállítási alkalmazást a sorozatszám ellenőrzéséhez. A felhasználónak ezután meg kell adnia a sorozatszám utolsó négy számjegyét a Vállalati portál alkalmazásban.
+6. A következő képernyőn a felhasználónak meg kell erősítenie az új eszköz sorozatszámát. A felhasználó a **sorozatszám megerősítése** hivatkozásra koppinthat, és ezzel megnyithatja a beállítási alkalmazás a sorozatszám ellenőrzéséhez való használatára vonatkozó útmutatást. A felhasználónak ezután meg kell adnia a sorozatszám utolsó négy számjegyét a Vállalati portál alkalmazásban.
 
   Ez a lépés azt ellenőrzi, hogy az eszköz az Intune-ban regisztrált vállalati eszköz-e. Ha az eszközön található sorozatszám nem egyezik, nem a megfelelő eszköz választotta ki. A felhasználónak ekkor vissza kell lépnie az előző képernyőre, és ki kell választania egy másik eszközt.
 
@@ -89,5 +89,5 @@ Ha szükség van a felhasználói affinitásra, az eszköz regisztrálása előt
 
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md)

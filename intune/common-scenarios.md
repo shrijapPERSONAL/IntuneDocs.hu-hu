@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Az Intune használatának gyakori módjai
 
@@ -82,7 +82,7 @@ Rendszergazdaként előírhatja a felhasználóknak, hogy az Office-mobilalkalma
 ## <a name="issue-corporate-owned-phones-to-your-employees"></a>Vállalati tulajdonú telefonok kiadása a dolgozóknak
 Napjainkban sok dolgozó mobileszközökkel dolgozik, így a versenyképesség fenntartása érdekében elengedhetetlen a termelékenység megteremtése mobileszközökön is. Ezeknek a dolgozóknak zavartalan hozzáférésre van szükségük az összes vállalati alkalmazáshoz és adathoz, tetszőleges időpontban, függetlenül a tartózkodási helyüktől. Gondoskodnia kell arról, hogy a vállalati adatok védettek, a felügyeleti költségek pedig alacsonyak legyenek.  
 
-Az Intune [tömeges kiépítési és felügyeleti megoldásokat](device-enrollment.md) kínál ([Klasszikus portál](/intune-classic/deploy-use/manage-corporate-owned-devices)), amelyek integrálhatók a piacon jelen lévő fő vállalati eszközfelügyeleti platformokkal, beleértve az Apple készülékregisztrációs programját és a Samsung KNOX mobilbiztonsági platformot. Az eszközkonfigurációknak az Intune-nal történő központi létrehozása elősegíti a vállalati eszközök kiépítésének magas szintű automatizálását.  
+Az Intune [tömeges kiépítési és felügyeleti megoldásokat](device-enrollment.md) kínál ([Klasszikus portál](/intune-classic/deploy-use/manage-corporate-owned-devices)), amelyek integrálhatók a piacon jelen lévő fő vállalati eszközfelügyeleti platformokkal, beleértve az Apple készülékregisztrációs programját és a Samsung Knox mobilbiztonsági platformot. Az eszközkonfigurációknak az Intune-nal történő központi létrehozása elősegíti a vállalati eszközök kiépítésének magas szintű automatizálását.  
 
 Képzelje el a következő helyzetet: az imént adott át egy iPhone-t bontatlan dobozban az egyik dolgozónak. A dolgozó bekapcsolja a telefont, és a telefonon lefut a vállalati beállítási folyamat, amelynek során az eszköznek hitelesítenie kell magát. Az iPhone-t a [biztonsági szabályzatok](device-profiles.md) zökkenőmentesen konfigurálják ([Klasszikus portál](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)).
 

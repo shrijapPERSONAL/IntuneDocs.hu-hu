@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Az Android-eszköz képernyőjének zárolása előtt eltelő idő beállítása
 
 Ha újra csatlakozni szeretne a munkájához, meg kell adnia a jelszó időkorlátját az eszközén az eszköztípusnak megfelelő lépéseket követve.
 
-## <a name="native-non-samsung-knox-device"></a>Natív (nem Samsung KNOX-) eszköz
+## <a name="native-non-samsung-knox-device"></a>Natív (nem Samsung Knox-) eszköz
 
 1.  Eszköze **beállításai** között koppintson a **Biztonság** &gt; **Automatikus zárolás** (egyes eszközökön a **Telefon zárolása ezt követően:**) elemre.
 
@@ -34,7 +34,7 @@ Ha újra csatlakozni szeretne a munkájához, meg kell adnia a jelszó időkorl�
 
 2.  Válassza ki a jelszó lejárati értékét.
 
-## <a name="samsung-knox-device"></a>Samsung KNOX-eszköz
+## <a name="samsung-knox-device"></a>Samsung Knox-eszköz
 
 1.  Az eszköz **Settings** (Beállítások) alkalmazásában koppintson a **Lock screen and security** (Zárolási képernyő és biztonság) &gt; **Lock automatically** (Automatikus zárolás) elemre.
 

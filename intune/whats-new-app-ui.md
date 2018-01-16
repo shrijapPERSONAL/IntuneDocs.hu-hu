@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
+
+## <a name="week-of-december-11-2017"></a>2017. december 11-i hét
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Üzenet küldése a felhasználóknak a fiókról <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+A Céges portál webhely felhasználóinak le lesznek tiltva azon műveletek, amelyek végrehajtásához írási jogosultság szükséges a bérlőhöz. A felhasználóknak megjelenik egy hibaüzenet, mely ismerteti, hogy a fiókjuk karbantartás alatt áll. Hasonló változások várhatók hamarosan a Céges portál alkalmazásban is Android, iOS, macOS és Windows rendszeren.
+
+![Fiókáthelyezés során megjelenő hibaüzenet](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>2017. november 27-i hét
 
@@ -380,7 +388,7 @@ __Kiemelt alkalmazások frissítései__ A webhelyhez hozzáadtunk egy új oldalt
 
 ![Az alkalmazásokat jelölő színes csempék. Minden alkalmazás alatt nagy színes négyzet látható, melynek színe megegyezik az alkalmazáslogó elsődleges színével. A „Kiemelt alkalmazások” szakasz a Céges portál alkalmazás felső részében látható.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A felhőplatform ütemterve](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Az Intune újdonságai](https://docs.microsoft.com/intune/whats-new)

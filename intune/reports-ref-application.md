@@ -2,10 +2,10 @@
 title: "Alkalmazás | Microsoft Docs"
 description: "Referencia-témakör az Intune-adattárház API entitásgyűjteményeiben található Alkalmazás kategóriához."
 keywords: "Intune-adattárház"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -34,7 +34,7 @@ Az **Alkalmazás** kategória mobileszközökhöz készült entitásokat tartalm
 
 Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 
-| Tulajdonság  | Leírás | Példa |
+| Tulajdonság  | Description | Példa |
 |---------|------------|--------|
 | AppKey |Az alkalmazás egyedi azonosítója. |123 |
 | ApplicationId |Az alkalmazás egyedi azonosítója – Az AppKey-hez hasonlít, de természetes kulcs. |b66bc706-ffff-7437-0340-032819502773 |
@@ -56,15 +56,15 @@ Az **AppRevision** entitás listázza az alkalmazások összes verzióját.
 
 Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
-| Tulajdonság  | Leírás |
+| Tulajdonság  | Description |
 |---------|------------|
 | AppTypeID |A típus azonosítója |
 | AppTypeKey |A kulcs helyettes kulcsa |
 | AppTypeName |Alkalmazás típusa |
 
-## <a name="example"></a>Példa
+### <a name="example"></a>Példa
 
-| AppTypeID  | Név | Leírás |
+| AppTypeID  | Név | Description |
 |---------|------------|--------|
 | 0 |Android store app | Android Áruházbeli alkalmazás. |
 | 1 |Android LOB app | Üzletági Android-alkalmazás. |
@@ -85,15 +85,15 @@ Az **AppTypes** entitás az alkalmazás telepítési forrásait listázza.
 
 A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait listázza.
 
-| Tulajdonság  | Leírás |
+| Tulajdonság  | Description |
 |---------|------------|
 | VppProgramTypeID | A típus azonosítója. |
 | VppProgramTypeKey | A kulcs helyettes kulcsa. |
 | VppProgramTypeName | A VPP program típusa. |
 
-## <a name="example"></a>Példa
+### <a name="example"></a>Példa
 
-| VppProgramID  | Név | Leírás |
+| VppProgramID  | Név | Description |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | A Microsoft VPP-programja. |
 | 00000000-0000-0000-0000-000000000000 | Not Yet Available (Még nem érhető el) | Alapértelmezett érték, nincs VPP. |
@@ -105,10 +105,33 @@ A **VppProgramTypes** entitás az alkalmazás lehetséges VPP-programtípusait l
 
 Az **ApplicationInventory** entitás a leltárkészítés pillanatában az eszközön talált alkalmazásokat sorolja fel.
 
-| Tulajdonság  | Leírás |
+| Tulajdonság  | Description |
 |---------|------------|
 | DeviceKey | Az Intune-eszközazonosítót tartalmazó eszköztáblára mutató hivatkozás. |
 | DateKey | A leltári napot megadó dátumtáblázat-hivatkozás. |
 | ApplicationName | Az alkalmazás neve. |
 | ApplicationVersion | Az alkalmazás verziója. |
 | BundleSize | Az alkalmazás mérete bájtban. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapotát jelöli, miután az hozzá lett rendelve egy eszközöket, felhasználókat vagy mindkettőt tartalmazó csoporthoz.
+
+| Tulajdonság | Description |
+|---|---|
+| AppInstallStateKey | A fiókhoz tartozó alkalmazástelepítési állapot egyedi azonosítója. |
+| AppInstallState | Az alkalmazástelepítési állapot felsorolásértéke. |
+| AppInstallStateName | Az alkalmazástelepítési állapot neve. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+A **MobileAppDeviceUserInstallStatus** a mobilalkalmazás telepítési állapotát jelöli egy adott eszközre és felhasználóra vonatkozóan.
+
+| Tulajdonság | Description |
+|---|---|
+| DateKey | Az alkalmazástelepítési állapot rögzítési dátumának kulcsa. |
+| AppKey | A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja. |
+| DeviceKey | Egy céleszköz kulcsa, mely a Device osztály egy példányát azonosítja. |
+| UserKey | Egy célfelhasználó kulcsa, mely a User osztály egy példányát azonosítja. |
+|AppInstallStateKey | Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja. |
+| ErrorCode | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |

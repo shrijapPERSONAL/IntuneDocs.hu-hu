@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -43,31 +43,6 @@ A Windows 10 rendszert Windows MDM-regisztráción keresztül tudja felügyelni 
 
 Ha az Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** nevű új csoport. Ez a csoport az Azure Active Directory minden felhasználóját tartalmazza, nem csak az Intune-nal felügyelt felhasználókat. Ez a használat akkor okozhat problémát más Microsoft-termékeknél, ha azt szeretné, hogy valamely meglévő vagy új felhasználók egyetlen csoportnak se legyenek tagjai.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Egyes képességekhez szükséges másodlagos migrálás
-
-A 2017 januárja előtt létrehozott Intune-fiókokat migrálni kell, hogy az alábbi lehetőségek használhatók legyenek az Azure Portalon:
-
-- Vállalati eszközregisztrációs profilok
-- Apple Készülékregisztrációs program
-- Céges eszközök előzetes bejelentése iOS-es sorozatszám alapján
-- Készülékregisztráció-kezelői fiókok
-- Apple Volume Purchase Program
-
-Mivel ezek a lehetőségek nem kezelhetők egyszerre az Intune- (Silverlight-) konzolon és az Azure Portalon is, a migrálás az alábbi hatással lesz rájuk:
-- letiltja őket a klasszikus portálon
-- engedélyezi őket az Azure Portalon  
-
-2017. szeptember 22-től ezeknek a funkcióknak a migrálása az Azure-ba történő elsődleges migrálás részeként történik. Ha a fiókját már migrálták az Azure Portalra, erre a másodlagos migrálásra már korábban sor kerülhetett. Ha nem ez a helyzet, akkor ezeknek a lehetőségeknek az Azure-ba való migrálása novemberig megtörténik. A fiókmigrálás még azon a napon befejeződik, amelyen elkezdődött. A migrálás a funkciók klasszikus Intune-portálon való letiltásától számítva akár hat óráig is eltarthat.
-
-Ha a továbbiakban ezeket az Intune-lehetőségeket az Azure Portalon kezeli, vegye figyelembe az alábbi pontokat:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Eltávolítja a céges eszközregisztrációs profilokat az Apple DEP-ben
-Az Azure Portal nem támogat alapértelmezett céges eszközregisztrációs profilt az Apple Készülékregisztrációs program (DEP) eszközeihez. Ezt az Intune- (Silverlight-) konzolon elérhető funkciót a profilok szándékolatlan hozzárendelésének megelőzése érdekében megszüntetjük. Az Azure Portalon az Apple DEP-fiókokból szinkronizált sorozatszámokhoz a rendszer nem rendel alapértelmezett céges eszközregisztrációs profilt. Az eszköz használata előtt regisztrációs profilt kell hozzárendelni.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Az Apple DEP-token migráláskor visszaáll
-
-Ha az Intune- (Silverlight-) portálon törli az Apple Készülékregisztrációs program tokenjét, és nem tölt fel új tokent az Azure Portalra, akkor migráláskor az eredeti token áll vissza az Azure Portalon. A token eltávolításához és a DEP-regisztráció megakadályozásához törölje a tokent az Azure Portalról.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
 
 A klasszikus portálról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
@@ -79,6 +54,7 @@ Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-fiókéval
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Ugyanazon iOS mennyiségi vásárlási programból több példány is feltöltődik
 Ugyanazon VPP-token feltöltéséhez ne kattintson egynél többször a **Feltöltés** gombra. A többszöri kattintás azt eredményezi, hogy másodpéldányok töltődnek fel a VPP-tokenből, és az alkalmazások többször szinkronizálnak ugyanazzal a tokennel.
+
 
 <!-- ## Groups -->
 

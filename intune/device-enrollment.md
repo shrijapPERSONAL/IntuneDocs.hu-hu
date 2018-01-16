@@ -1,12 +1,12 @@
 ---
 title: "Mit jelent az eszközök regisztrálása a Microsoft Intune-ban"
 titlesuffix: Azure portal
-description: "Útmutató iOS-, Android- és Windows-eszközök regisztrálásához.”"
+description: "Útmutató iOS, Android és Windows rendszerű eszközök regisztrálásához."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,9 +27,9 @@ Ez a témakör az eszközregisztrálást írja le, és felsorolja azokat a kül�
 
 Az eszközök Intune-ban való regisztrálásának az a célja, hogy azok felügyelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. Az Intune-ban regisztrált eszközök részére a rendszer MDM-tanúsítványt állít ki, amelyet az eszközök az Intune szolgáltatással való kommunikációban használnak.
 
-Az eszköz regisztrálásának módja függ az eszköz típusától, tulajdonosától és az elvárt felügyeleti szinttől. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
+Az eszköz regisztrálásának módja függ az eszköz típusától, a tulajdonostól és az elvárt felügyeleti szinttől. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
 
-Ha az Exchange ActiveSyncet használja helyben vagy a felhőben, akkor regisztrálás nélkül is engedélyezheti az egyszerű Intune-felügyeletet (hamarosan további információ válik elérhetővé). A Windows rendszerű számítógépek is kezelhetők mobileszközként. Ez az ajánlott módszer, az alábbiakban leírtak szerint.
+Ha helyi vagy felhőalapú Exchange ActiveSync programot használ, akkor regisztrálás nélkül is engedélyezhet egyszerű Intune-felügyeletet. A Windows rendszerű számítógépek is kezelhetők mobileszközként. Ez az ajánlott módszer, az alábbiakban leírtak szerint.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Az eszközök regisztrálási módszereinek áttekintése
@@ -66,7 +66,7 @@ Az alábbi táblázat áttekintést nyújt az Intune regisztrációs módszereir
 | **Módszer** |  **Alaphelyzetbe állítás szükséges** |    **Felhasználói affinitás**   |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](./android-enroll.md)|
-|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Nem | Igen | Nem| [További információ](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 

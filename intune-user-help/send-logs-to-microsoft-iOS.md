@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 082acce8d82d50be28e0328c76e63c4440608983
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28c83baeea59f1722744ea63ac19c21599fccebf
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Naplók küldése a Céges portál fejlesztőinek iOS-es eszközök esetén
 
@@ -29,7 +29,7 @@ Egyes esetekben a Céges portál alkalmazás váratlanul kiléphet. Ez egy olyan
 Ha a hibát Ön is tapasztalja, a Céges portál fejlesztőinek további információra van szükségük a hiba reprodukálásához és a probléma okának felderítéséhez. A szükséges lépések az alábbiak:
 
 1.  Kísérelje meg a hiba reprodukálását. Nem baj, ha nem sikerül, de ha igen, a következő lépés egyszerűbb lehet.
-2.  Válassza a __Beállítások__ > __Adatvédelem__ > __Diagnosztika és használat__ > __Diagnosztika és használati adatok__ menüpontot. Ez a lista tartalmazza az alkalmazáshoz tartozó lezajlott tevékenységeket az összeomlásoktól kezdve az általános használati mintákig. Az adatok nem tartalmaznak személyes információkat. A rendszer a listát a legutóbbi tevékenységektől a legrégebbi tevékenységekig rendezi. Ha sikerült reprodukálnia a hibát, az az alkalmazáshoz tartozó tevékenységlista első elemeként jelenik meg a lapon. Ha nem sikerült reprodukálnia a hibát, görgessen le addig, amíg nem talál egy olyan elemet, amely a „Company Portal” („céges portál”) kifejezéssel kezdődik. Koppintson erre az elemre a megnyitáshoz.
+2.  Válassza a __Beállítások__ > __Adatvédelem__ > __Analitika__ > __Analytics Data__ (Analitikai adatok) lehetőséget. Ez a lista tartalmazza az alkalmazáshoz tartozó lezajlott tevékenységeket az összeomlásoktól kezdve az általános használati mintákig. Az adatok nem tartalmaznak személyes információkat. A rendszer a listát a legutóbbi tevékenységektől a legrégebbi tevékenységekig rendezi. Ha sikerült reprodukálnia a hibát, az az alkalmazáshoz tartozó tevékenységlista első elemeként jelenik meg a lapon. Ha nem sikerült reprodukálnia a hibát, görgessen le addig, amíg nem talál egy olyan elemet, amely a „Company Portal” („céges portál”) kifejezéssel kezdődik. Koppintson erre az elemre a megnyitáshoz.
 3.  Tartsa lenyomva és húzza lefelé vagy felfelé a kis kék pontokat a jelentés teljes szövegének kijelöléséhez. Koppintson a __Másolás__ elemre az előugró menüben.
 4.  Indítsa el a levelezőprogramot, majd másolja be a tartalmat az e-mail törzsébe. Küldje el az e-mailt az <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a> címre.
 
