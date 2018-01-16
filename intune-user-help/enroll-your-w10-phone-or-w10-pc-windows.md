@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7317a60a9640df0b95444a2b032c12b3ca9f20b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Windows 10 rendszerű eszközök regisztrálása az Intune-ban
 
@@ -47,6 +47,6 @@ Szeretne még többet megtudni? Tekintse át, hogy mi történik, amikor [regisz
 1.  A __Start__ menüben pöccintéssel lépjen a __Minden alkalmazás__ listához, és válassza ki a __Beállítások__ alkalmazást.        
 2.  Koppintson a __Rendszer__, majd a __Névjegy__ elemre.       
 3.  Az __Eszközadatok__ bejegyzésnél koppintson a __További információ__ elemre. Megjelenik az eszköz adatait tartalmazó lista. A listában keresse meg a __Verzió__ bejegyzést.        
-4.  Ha a verzió __1607__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
+4.  Ha __1607-es vagy újabb__ verzióval rendelkezik, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-access-work-or-school.md). Ha a verzió __1511 vagy régebbi__, folytassa [ezekkel a lépésekkel](enroll-your-w10-device-your-account.md).
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

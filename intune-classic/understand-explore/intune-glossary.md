@@ -6,18 +6,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 06/16/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e733d1d59d073dab9fb2b6c18ee92dadbc86adbe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cb186004395a4ccf84de6f0bc335cbd44a79583b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-szószedet
 
@@ -61,13 +61,13 @@ ms.lasthandoff: 10/10/2017
 |-|-|
 |Környezet|Olyan művelet, amelynek során alkalmazást vagy szabályzatot küld egy Ön által felügyelt eszköznek vagy felhasználónak.|
 |Központi telepítési művelet|Egy [alkalmazás központi telepítésekor](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune) Ön által meghozott döntés. Az alkalmazás telepítését kötelezővé vagy választhatóvá teheti, vagy eltávolíthatja az alkalmazást.|
-|Eszközregisztráció-kezelő|A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az [eszközregisztráció-kezelői](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (DEM-) fiók egy akár ezer eszköz regisztrálására is képes, speciális Intune-fiók.|
+|Készülékregisztráció-kezelő|A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az [eszközregisztráció-kezelői](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (DEM-) fiók egy akár ezer eszköz regisztrálására is képes, speciális Intune-fiók.|
 |Eszközcsoport-leképezés|Segítségével [automatikusan adhat hozzá eszközöket a csoportokhoz](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) az eszköz kategóriája (pl. „Személyes” vagy „Értékesítés”) alapján, amelyet Ön vagy a végfelhasználó rendel az eszközhöz.|
 
 ## <a name="e"></a>E
 |||
 |-|-|
-|E-mail profil|Ezzel a szabályzattal [e-mail-elérési beállításokat](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) adhat meg mobileszközökön futó adott e-mail ügyfelekhez, hogy a végfelhasználónak csak minimális teendője legyen.|
+|E-mail-profil|Ezzel a szabályzattal [e-mail-elérési beállításokat](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) adhat meg mobileszközökön futó adott e-mail ügyfelekhez, hogy a végfelhasználónak csak minimális teendője legyen.|
 |EMS|A Microsoft Enterprise Mobility + Security (korábbi nevén Nagyvállalati mobilitási csomag) megvédi céges adatait, és lehetővé teszi a felhasználóknak [a szükséges alkalmazások és tartalom elérését](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Végfelhasználó|[Különböző eszközök (például telefonok és számítógépek) felhasználói](/intune/end-user-educate), akiknek a felügyelete az Intune használatával történik.|
 |Regisztrálás|A Microsoft Intune [regisztráció](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést.|
@@ -106,7 +106,7 @@ ms.lasthandoff: 10/10/2017
 |Felügyelt böngésző|Egy [webböngésző-alkalmazás](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies), amelyet a Microsoft Intune használatával telepíthet a szervezetében. A felügyeltböngésző-szabályzatban megadható egy engedélyezési vagy blokklista, amellyel korlátozhatók a felügyelt böngésző felhasználói által felkereshető webhelyek.|
 |Mobilalkalmazás-kezelés|A [mobilalkalmazás-felügyelet (MAM)](/intune/app-lifecycle) lehetővé teszi a felhasználók mobilalkalmazásainak közzétételét, leküldését, konfigurálását, védelmét, figyelését és frissítését.
 |Mobil eszközök felügyelete|A [mobileszköz-felügyelet (MDM)](/intune/device-lifecycle) lehetővé teszi az eszközöknek az Intune-ban történő regisztrálását, így az adott eszközök kiépíthetők, konfigurálhatók, megfigyelhetők, illetve különböző műveletek végezhetők rajtuk.
-|MDM-szolgáltató|Az [MDM-szolgáltató](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune.|
+|MDM-szolgáltató|Az [MDM-szolgáltató](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Manager és az Intune.|
 |Mobilalkalmazás-kiépítési szabályzat|iOS-szabályzat, amelynek segítségével garantálhatja, hogy az iOS-alkalmazásokhoz [létesített profilok](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) ne járjanak le.|
 |Mobilalkalmazás-konfigurációs szabályzat|Az iOS-szabályzatokkal futtatáskor [beállításokat biztosíthat a kompatibilis iOS-alkalmazásokhoz](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) (például cégnevet vagy kiszolgálócímet).|
 
@@ -134,7 +134,7 @@ ms.lasthandoff: 10/10/2017
 |||
 |-|-|
 |Szelektív törlés|A [szelektív törlés](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) a vállalati adatokat, többek között a mobilalkalmazás-felügyeleti (MAM-) adatokat (adott esetben), a beállításokat és az e-mail-profilokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak.|
-|-előfizetés|Az Ön által megkötött szerződés, amely lehetőséget nyújt egy Intune-bérlő elérésére.|
+|Előfizetés|Az Ön által megkötött szerződés, amely lehetőséget nyújt egy Intune-bérlő elérésére.|
 
 ## <a name="t"></a>T
 |||
