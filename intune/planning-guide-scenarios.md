@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Mobileszköz-kezelési használati esetek azonosítása
 
@@ -50,8 +50,8 @@ Határozza meg, hogy az egyes használati esetek tartalmaznak-e alárendelt hasz
 | **Használati esetek** | **Használati alesetek** |
 |:---:|:---:|
 | Vállalati | Infomunkás |              
-| Vállalat | Vezetők |           
-| Vállalat | Kioszkmód |
+| Vállalati | Vezetők |           
+| Vállalati | Kioszkmód |
 | BYOD | Infomunkás |           
 | BYOD | Vezetők |
 
@@ -59,13 +59,13 @@ Határozza meg, hogy az egyes használati esetek tartalmaznak-e alárendelt hasz
 
 ## <a name="organizational-groups-for-your-scenarios"></a>Céges csoportok a használati eseteihez
 
-Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Példa:
+Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcsolódó munkahelyi csoportokat. Például:
 
 | **Használati esetek** | **Használati alesetek** | **Munkahelyi csoportok** |
 |:---:|:---:|:---:|
-| Vállalat | Infomunkás | HR, pénzügy |               
-| Vállalat | Vezető | HR, pénzügy |            
-| Vállalat | Kioszkmód | Kereskedelem |
+| Vállalati | Infomunkás | HR, Pénzügy |               
+| Vállalati | Vezető | HR, Pénzügy |            
+| Vállalati | Kioszkmód | Kereskedelem |
 | BYOD | Infomunkás | Marketing, értékesítés |            
 | BYOD | Vezető | Marketing, értékesítés |
 
@@ -74,13 +74,13 @@ Ezután azonosítania kell az egyes használati esetekhez és alesetekhez kapcso
 
 A következő lépés az egyes használati esetekhez kapcsolódó mobileszköz-platformok azonosítása. Egynél több is lehet.
 
-A vállalati használati esetei támogathatják például az iOS és az Androidra fejlesztett Samsung KNOX eszközplatformokat. A saját eszközhasználati (BYOD) szabályzata tartalmazhat támogatást további mobileszköz-platformokhoz, például Androidhoz (nem Samsung KNOX) és Windows 10 Mobile-hoz. Az előző példákból kiindulva mobileszköz-platformokat társítottunk mindegyik használati esethez.
+A vállalati használati esetei támogathatják például az iOS és az Androidra fejlesztett Samsung Knox eszközplatformokat. A saját eszközhasználati (BYOD) szabályzata tartalmazhat támogatást további mobileszköz-platformokhoz, például Androidhoz (nem Samsung Knox) és Windows 10 Mobile-hoz. Az előző példákból kiindulva mobileszköz-platformokat társítottunk mindegyik használati esethez.
 
 | **Használati esetek** | **Használati alesetek** | **Csoportok** | **Eszközplatformok** |   
 |:---:|:---:|:---:|:---:|
-| Vállalat | Infomunkás | HR, pénzügy | iOS |                                                           
-| Vállalat | Vezetők | HR, pénzügy | iOS |                                                           
-| Vállalat | Kioszkmód | Kereskedelem | Android |
+| Vállalati | Infomunkás | HR, pénzügy | iOS |                                                           
+| Vállalati | Vezetők | HR, Pénzügy | iOS |                                                           
+| Vállalati | Kioszkmód | Kereskedelem | Android |
 | BYOD | Infomunkás | Marketing, értékesítés | iOS |                                                           
 | BYOD | Vezetők | Marketing, értékesítés | iOS |
 

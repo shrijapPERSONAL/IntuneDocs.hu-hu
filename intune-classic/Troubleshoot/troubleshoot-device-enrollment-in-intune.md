@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
@@ -37,6 +37,12 @@ A hibaelhárítás megkezdése előtt ellenőrizze, hogy az Intune megfelelően 
 -   [Windowsos eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Android-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) – nincs szükség további lépésekre
 -   [Android for Work-eszközök kezelésének beállítása](/intune-classic/deploy-use/set-up-android-for-work)
+
+Azt is biztosíthatja, hogy a felhasználó eszközén megfelelően legyen beállítva a dátum és az idő:
+
+1. Indítsa újra az eszközt.
+2. Győződjön meg arról, hogy a dátum és az idő a végfelhasználó időzónájához képest a GMT-szabványokhoz közeli (+ vagy - 12 óra) értékre van beállítva.
+3. Távolítsa el, majd telepítse újra az Intune Céges portált (ha ez alkalmazható).
 
 A felügyelt eszközök felhasználói össze tudják gyűjteni a regisztrációs és diagnosztikai naplókat, hogy átnézhesse őket. A naplók felhasználók általi gyűjtésére vonatkozó utasítások itt találhatók:
 
@@ -229,27 +235,29 @@ Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépés
 
 **1. megoldás**:
 
-Kérje meg a felhasználót, hogy kövesse az [eszközről hiányzó tanúsítvány problémájának kezelését ismertető cikk](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) útmutatását. Ha a hiba ezt követően sem szűnik meg, kérje meg a felhasználókat, hogy próbálkozzanak a 2. megoldással.
+Előfordulhat, hogy a felhasználó [Az eszközhöz hiányzik egy szükséges tanúsítvány](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) című témakörben leírt útmutatás alapján be tudja szerezni a hiányzó tanúsítványt. Ha a hiba továbbra is fennáll, próbálkozzon a 2. megoldással.
 
 **2. megoldás**:
 
 Ha a felhasználók a vállalati hitelesítő adatok megadását, illetve az összevont bejelentkezési oldalra való átirányítást követően is a hiányzó tanúsítványra utaló hibát látják, elképzelhető, hogy az Active Directory összevonási szolgáltatások (AD FS) kiszolgálójáról hiányzik egy közbenső tanúsítvány.
 
-A tanúsítványhiba azért lép fel, mivel az Android rendszerű eszközöknél szükség van rá, hogy az [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx) tartalmazzon egy közbenső tanúsítványt, de jelenleg az alapértelmezett AD FS-kiszolgálók és AD FS-proxykiszolgálók csak az AD FS szolgáltatás SSL-tanúsítványát küldik el az SSL-ügyfél hello üzenetére adott SSL-kiszolgálói hello válasz részeként.
+A tanúsítványhiba azért fordul elő, mert az androidos eszközöknek közbenső tanúsítványokra van szükségük ahhoz, hogy szerepelhessenek az [SSL-kiszolgáló hello üzeneteiben](https://technet.microsoft.com/library/cc783349.aspx). Jelenleg az AD FS-kiszolgáló vagy a WAP és az AD FS közötti proxykiszolgáló alapértelmezett példányai csak az AD FS szolgáltatás SSL-tanúsítványát küldik el az SSL-kiszolgáló SSL-ügyfelek hello kérelmére adott hello válaszában.
 
 A probléma megoldásához importálja a tanúsítványt az AD FS-kiszolgálón vagy a proxykon található személyes számítógép-tanúsítványok tárába a következő módon:
 
-1.  Indítsa el a helyi számítógép tanúsítványkezelő konzolját az AD FS- és a proxykiszolgálókon. Kattintson jobb gombbal a **Start** gombra, válassza a **Futtatás** lehetőséget, majd írja be: **certlm.msc**.
+1.  Az AD FS- és proxykiszolgálókon kattintson a jobb gombbal a **Start** > **Futtatás** > **certlm.msc** lehetőségre. Ezzel elindítja a helyi gép tanúsítványkezelő konzolját.
 2.  Bontsa ki a **Személyes** elemet, majd válassza a **Tanúsítványok** lehetőséget.
 3.  Keresse meg az AD FS szolgáltatással való kommunikációhoz szükséges tanúsítványt (ez egy nyilvános aláírású tanúsítvány), és kattintson rá duplán a tulajdonságok megjelenítéséhez.
-4.  Válassza a **Tanúsítványlánc** lapfület a tanúsítvány szülőtanúsítványának/-tanúsítványainak megjelenítéséhez.
+4.  Válassza a **Tanúsítványlánc** lapot a tanúsítvány szülőtanúsítványának vagy -tanúsítványainak megjelenítéséhez.
 5.  Az összes szülőtanúsítványnál válassza a **Tanúsítvány megtekintése** lehetőséget.
-6.  Válassza a **Részletek** lapot, majd a **Másolás fájlba** lehetőséget.
-7.  A varázsló utasításait követve exportálja vagy mentse a tanúsítvány nyilvános kulcsát a kívánt helyre.
-8.  Importálja a 3. lépésben exportált szülőtanúsítványokat a Helyi számítógép\Személyes\Tanúsítványok mappába. Ehhez kattintson a jobb gombbal a **Tanúsítványok** elemre, válassza a **Minden feladat** > **Importálás** lehetőséget, majd a varázsló utasításait követve importálja a tanúsítvány(oka)t.
-9.  Indítsa újra az AD FS-kiszolgálókat.
-10. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
-A felhasználó ezután már be kell, hogy tudjon jelentkezni a Vállalati portál alkalmazásba az Android-eszközről.
+6.  Válassza a **Részletek** lap > **Másolás fájlba...**  lehetőséget.
+7.  A varázsló utasításait követve exportálja vagy mentse a szülőtanúsítvány nyilvános kulcsát a fájl kívánt helyére.
+8.  Kattintson a jobb gombbal a **Tanúsítványok** > **Minden feladat** > **Importálás** lehetőségre.
+9.  A varázsló utasításait követve importálja a szülőtanúsítvány(oka)t a **Helyi számítógép\Személyes\Tanúsítványok** helyre.
+10. Indítsa újra az AD FS-kiszolgálókat.
+11. Ismételje meg a fenti lépéseket az összes AD FS- és proxykiszolgálón.
+
+A [https://www.digicert.com/help/](https://www.digicert.com/help/) címen elérhető diagnosztikai eszközzel ellenőrizheti, hogy a tanúsítvány megfelelően lett-e telepítve. A **Kiszolgáló címe** mezőbe írja be az AD FS-kiszolgáló teljes tartománynevét (példa: sts.contso.com), majd kattintson a **Kiszolgáló vizsgálata** lehetőségre.
 
 **A tanúsítványok megfelelő telepítésének ellenőrzése**:
 
@@ -306,7 +314,7 @@ Regisztráció után az eszközök ismét kifogástalan állapotba kerülnek, é
 ### <a name="verify-ws-trust-13-is-enabled"></a>Ellenőrizze, hogy a WS-Trust 1.3 engedélyezve van-e
 **Probléma:** Az eszközregisztrációs programhoz (DEP) tartozó iOS-eszközöket nem lehet regisztrálni
 
-A felhasználói affinitással rendelkező DEP-eszközök regisztrációjához engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot a felhasználói jogkivonat kérelmezése céljából. Az Active Directory alapértelmezés szerint engedélyezi ezt a végpontot. A Get-AdfsEndpoint PowerShell-parancsmagot futtatva, majd a trust/13/UsernameMixed végpontot megkeresve láthatja az engedélyezett végpontok listáját. Példa:
+A felhasználói affinitással rendelkező DEP-eszközök regisztrációjához engedélyezni kell a WS-Trust 1.3 Username/Mixed végpontot a felhasználói jogkivonat kérelmezése céljából. Az Active Directory alapértelmezés szerint engedélyezi ezt a végpontot. A Get-AdfsEndpoint PowerShell-parancsmagot futtatva, majd a trust/13/UsernameMixed végpontot megkeresve láthatja az engedélyezett végpontok listáját. Például:
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 

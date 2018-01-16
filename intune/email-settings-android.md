@@ -15,21 +15,21 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c793721cad40ea0f1662ae72ed334b98226c96d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: adc61e3d6a8b413ca5a03a2fdbc3d2353226040b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Android-eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune-rendszergazdaként e-mail-beállításokat hozhat létre és rendelhet hozzá az alábbi Android-eszközökhöz:
-- [Android Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
+- [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
-## <a name="android-samsung-knox-standard-email-settings"></a>Az Android Samsung KNOX Standard e-mail-beállításai
+## <a name="android-samsung-knox-standard-email-settings"></a>Az Android Samsung Knox Standard e-mail-beállításai
 - **E-mail-kiszolgáló** – Itt adja meg az Exchange-kiszolgáló állomásnevét.
 - **Fióknév** – Adja meg az e-mail-fiók megjelenítendő nevét (ez a név lesz látható a felhasználók eszközén).
 - **Felhasználónév attribútum az AAD-ből** – Ez a név az Active Directory (AD) vagy az Azure AD attribútuma, amely az e-mail-profilhoz tartozó felhasználónév létrehozására szolgál. Válassza az **elsődleges SMTP-címet** (például user1@contoso.com) vagy az **egyszerű felhasználónevet** (például user1 vagy user1@contoso.com).

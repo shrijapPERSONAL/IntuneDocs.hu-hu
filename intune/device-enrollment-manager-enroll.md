@@ -3,10 +3,10 @@ title: "Eszközök regisztrálása – készülékregisztráció-kezelő"
 titlesuffix: Azure portal
 description: "Az eszközök Intune-ban való regisztrálásához használja a készülékregisztráció-kezelői fiókot. \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,22 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Eszközök regisztrálása a készülékregisztráció-kezelővel
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A szervezetek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
+A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
 
 A felhasználóknak szerepelniük kell az Azure Portal webhelyen ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság biztosítása érdekében a DEM-felhasználó nem lehet egyben Intune-rendszergazda is.
 
 >[!NOTE]
->A készülékregisztráció-kezelős módszer nem használható a következő egyéb regisztrációs módszerekkel: [Apple Configurator beállítási asszisztenssel](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator közvetlen beléptetéssel](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) vagy [Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md).
+>A készülékregisztráció-kezelős módszer nem használható a következő egyéb regisztrációs módszerekkel: [Apple Configurator beállítási asszisztenssel](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator közvetlen beléptetéssel](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) vagy [Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md). Emellett macOS-eszközök regisztrálására sem használható. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Eszközregisztráció-kezelői példaforgatókönyv
 

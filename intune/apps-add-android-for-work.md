@@ -3,8 +3,8 @@ title: "Alkalmazások hozzárendelése Android for Work-eszközökhöz"
 titlesuffix: Azure portal
 description: "Az alábbi témakörből megtudhatja, hogyan végezheti el a Google Play for Work áruházból származó alkalmazások szinkronizálását és Android for Work-eszközökhöz való hozzárendelését."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Alkalmazások hozzárendelése Android for Work-eszközökhöz az Intune-nal
 
@@ -52,7 +52,7 @@ Győződjön meg arról, hogy az Intune és az Android for Work szolgáltatást 
 2. Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot. Az első bejelentkezés előtt regisztrálni kell, továbbá megfizetni a Google Developer-program regisztrációs díját.
 3. A konzolon válassza az **Add new application** (Új alkalmazás hozzáadása) elemet.
 4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját cég tagjai számára (<cég neve>)) lehetőséget.<br>
-  ![Az alkalmazás elérhetővé tétele csak a saját szervezet számára beállítás](media/restrict.png)<br>
+  ![Az alkalmazás elérhetővé tétele csak a saját cég számára beállítás](media/restrict.png)<br>
 Ezzel a művelettel gondoskodhat arról, hogy az alkalmazás csak a munkahelye számára legyen elérhető, a Google Play Áruház nyilvános területein ne.
 További információt az androidos alkalmazások feltöltéséről és közzétételéről a [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469) súgóközpontban talál.
 5. Miután feltöltötte az alkalmazást, lépjen be a [Google Play for Work áruházba](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot.

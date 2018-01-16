@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
-Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem foglalkozik az Ön által keresett funkcióval, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
+Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
 |Funkció |Elérési útvonal a klasszikus portálon|Elérési útvonal az Azure Portalbeli Intune-ban|
 |------------|---------------|---------------|
@@ -36,6 +36,7 @@ Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és
 | Vállalati eszközregisztrációs profil | Szabályzat > Vállalati eszközök regisztrációja | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work > Regisztráció |
 | Feltételek és kikötések | Szabályzatok > Használati feltételek | Eszközregisztráció > Használati feltételek |
+A céges portál beállításai|Felügyelet > Céges portál|**Kezelés** > Mobilalkalmazások<br> **Telepítő** > A Céges portál védjegyezése
 
 
 ## <a name="where-do-i-manage-groups"></a>Hol lehet a csoportokat kezelni?
@@ -62,7 +63,7 @@ A személyes tulajdonú eszközök letiltásának vagy engedélyezésének képe
 
 ![Azure-os személyes eszközletiltási beállítások képe](./media/05-azure-personal-block.png)
 
-A további korlátozási képességek csak az Azure Portalon lesznek elérhetők.
+A további korlátozási képességek csak az Azure Portalon érhetők el.
 
 ## <a name="where-did-apple-dep-go"></a>Hová tűnt az Apple DEP?
 A klasszikus portálon az Intune-t integrálni lehetett az Apple készülékregisztrációs programjával, és manuálisan szinkronizálást kérni az Apple szolgáltatásával:
@@ -73,7 +74,7 @@ Az Azure Portalon ugyanazokkal a lépésekkel lehet beállítani az Apple DEP-et
 
 ![Azure-os DEP-token képe](./media/07-azure-dep-token.png)
 
-A klasszikus portál **Szinkronizálás** lehetősége azonban a sorozatszám-kezelési munkafolyamatba került, hiszen a manuális szinkronizálás eredménye is ott mutatkozik meg:
+A klasszikus portál **Szinkronizálás** lehetősége azonban a sorozatszám-kezelési munkafolyamatba került, hiszen a manuális szinkronizálás eredménye is ott jelenik meg:
 
 ![Azure-os DEP-szinkronizálás képe](./media/08-azure-dep-sync.png)
 

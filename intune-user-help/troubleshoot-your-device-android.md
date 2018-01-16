@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Androidos eszközök gyakori problémáinak elhárítása
 
@@ -30,6 +30,7 @@ Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban,
 - [Naplók elküldése a cég informatikai támogatási szolgálatának e-mailben](send-logs-to-your-it-admin-by-email-android.md)
 - [Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül](send-logs-to-your-it-admin-using-cable-android.md)
 - [Regisztrálási hibák elküldése a cég informatikai támogatási szolgálatának](send-enrollment-errors-to-your-it-admin-android.md)
+- [Hibák elküldése a Microsoftnak](send-logs-to-microsoft-android.md)
 - [Frissítenie kell Android-eszközét](you-need-to-update-your-android-device.md)
 - [Az eszköz nem kompatibilis az operációs rendszer maximális verziójával](your-android-version-isnt-yet-supported.md)
 - [Az eszközt feltörték, és nem lehet csatlakoztatni](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ Időnként előfordulhatnak problémák az androidos eszközökkel kapcsolatban,
 - [Az eszköz titkosítottnak tűnik, de a Céges portál mást jelez](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [A rendszer arra kéri, hogy telepítsen veszélyforrások elleni eszközvédelmet biztosító alkalmazást androidos eszközére](you-are-prompted-to-install-mtd-android.md)
 - [El kell hárítania egy fenyegetést, amelyet a veszélyforrások elleni eszközvédelmet biztosító alkalmazás talált az androidos eszközön](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [Samsung Knox-eszközök hibáinak javítása](samsung-knox-errors-android.md)

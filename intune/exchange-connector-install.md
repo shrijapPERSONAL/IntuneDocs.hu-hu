@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange Connector telepítése az Azure-beli Microsoft Intune-ban
 
@@ -133,6 +133,13 @@ Miután az Exchange Connector létrehozta a kapcsolatot, azokat a mobileszközö
 
 > [!NOTE]
 > Ha telepítette a helyszíni Exchange Connectort, de később törli az Exchange-kapcsolatot, akkor el kell távolítania a helyszíni Exchange Connectort is arról a számítógépről, amelyre telepítette.
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Magas rendelkezésre állású helyszíni Exchange Connector támogatása 
+Miután az Exchange-összekötő létrehozott egy Exchange-kapcsolatot a megadott CAS (ügyfél-hozzáférési kiszolgáló) használatával, képes felfedezni más CAS kiszolgálókat is. Ha az elsődleges CAS elérhetetlenné válik, az összekötő átvált egy másik CAS-ra (ha elérhető), amíg az elsődleges CAS elérhetősége helyre nem áll. Ez a funkció alapértelmezés szerint be van kapcsolva. Ha szeretné kikapcsolni a funkciót, kövesse az alábbi eljárást:
+1. Az Exchange-összekötőt futtató kiszolgálón nyissa meg a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector mappát. 
+2. Nyissa meg egy szövegszerkesztőben az **OnPremisesExchangeConnectorServiceConfiguration.xml** fájlt.
+3. Módosítsa az &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; értéket az &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; értékre a funkció letiltásához.    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange Connector tevékenységének figyelése
 

@@ -2,10 +2,10 @@
 title: "Támogatott eszközök – Microsoft Intune"
 description: "Az Intune-eszközkezelés által támogatott eszközplatformok és böngészők listája"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>Támogatott eszközök és böngészők
 
@@ -39,11 +39,14 @@ Az Intune a következő eszközöket képes felügyelni a mobileszköz-felügyel
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>Támogatott Samsung KNOX Standard-eszközök
+### <a name="supported-samsung-knox-standard-devices"></a>Támogatott Samsung Knox Standard-eszközök
 
-Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung KNOX-aktiválást, ha az eszköz szerepel a [támogatott KNOX-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Így elkerülhetők az MDM-regisztrációt megakadályozó KNOX-aktiválási hibák. Azokat az eszközöket, melyek nem támogatják a Samsung KNOX-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a KNOX platformot, míg mások nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy kompatibilis-e a KNOX-szal.
+Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung Knox-aktiválást, ha az eszköz szerepel a [támogatott Knox-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Így elkerülhetők az MDM-regisztrációt megakadályozó Knox-aktiválási hibák. Azokat az eszközöket, melyek nem támogatják a Samsung Knox-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a Knox platformot, míg mások nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy kompatibilis-e a Knox-szal.
 
-Az alábbi Samsung eszközök nem támogatják a KNOX platformot, így ezeket az androidos Céges portál alkalmazás natív Android-eszközként fogja regisztrálni:
+> [!NOTE]
+> Előfordulhat, hogy a Samsung Knox-eszközök regisztrálásához [engedélyeznie kell a Samsung kiszolgálóinak elérését](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+
+Az alábbi Samsung-eszközök nem támogatják a Knox platformot, így ezeket az androidos Céges portál alkalmazás natív Android-eszközként fogja regisztrálni:
 
 | **Eszköz neve** | **Eszköz modellszáma** |
 | --- | --- |

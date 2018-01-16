@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -307,7 +307,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Az iOS rendszerhez készült alkalmazásburkoló eszköz támogatott képességei
 
-|Képesség|Leírás|Ajánlott útmutatás|
+|Képesség|Description|Ajánlott útmutatás|
 |--------------|---------------|------------------------|
 |Alkalmazáscsoportok|Alkalmazáscsoportok használatával biztosíthatja több alkalmazás hozzáférését a megosztott tárolókhoz, és engedélyezheti a folyamatközi kommunikációt az alkalmazások között.<br /><br />Az alkalmazáscsoportok engedélyezéséhez nyissa meg a **Capabilities** (Képességek) panelt, és kattintson az **On** (Bekapcsolás) lehetőségre az **App Groups** (Alkalmazáscsoportok) beállításnál. Felvehet alkalmazáscsoportokat, illetve kijelölhet meglévőket.|Alkalmazáscsoportok használatakor használjon címfeloldási DNS-t:<br /><br />*csoport.com.cégnév.Alkalmazáscsoport*|
 |Háttérbeli üzemmódok|A háttérbeli üzemmódok engedélyezése esetén az iOS-alkalmazás tovább futhat a háttérben is.||
@@ -393,7 +393,19 @@ Az alkalmazásburkoló eszköz használata során kövesse az alábbi biztonság
 
 -   Amikor egy burkolt alkalmazásból figyeli az eszközükön lévő dokumentummappát, láthatja az .msftintuneapplauncher nevű mappát. Ha módosítja vagy törli ezt a mappát, az hatással lehet a korlátozott alkalmazások megfelelő működésére.
 
-### <a name="see-also"></a>További információ
+## <a name="getting-logs-for-your-wrapped-applications"></a>Naplófájlok beszerzése burkolt alkalmazásokhoz
+Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a burkolt alkalmazásaihoz.
+
+1. Nyissa meg az iOS beállításkezelő alkalmazását az eszközön, és válassza a kívánt LOB-alkalmazást.
+2. Állítsa a **Diagnostics Console** beállítást a **Be** állásba.
+3. Indítsa el a LOB-alkalmazást.
+4. Kattintson az „Első lépések” hivatkozásra.
+5. Most már megoszthatja a naplófájlokat e-mailben, vagy átmásolhatja őket egy OneDrive-helyre.
+
+>[!NOTE]
+A naplózási funkció engedélyezve van az Intune alkalmazásburkoló eszköz 7.1.13-as vagy újabb verziójával burkolt alkalmazásokban.
+
+### <a name="see-also"></a>Lásd még:
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)</br>
 - [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

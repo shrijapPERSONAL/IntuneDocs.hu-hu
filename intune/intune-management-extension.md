@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -57,7 +57,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-assignments.png)
  
 6. Az elérhető Azure AD-csoportok listázásához válassza a **Csoportok kiválasztása** lehetőséget. 
-7. Válassza ki a csoportokat, és kattintson a **Kiválasztás** lehetőségre a szabályzat hozzájuk rendeléséhez.
+7. Jelöljön ki egy vagy több olyan csoportot, amelyek azokat a felhasználókat tartalmazzák, akiknek az eszközeire telepíteni szeretné a parancsfájlt, majd a **Kiválasztás** lehetőségre kattintva társítsa a szabályzatot a kijelölt csoportokhoz.
 
 Az Intune felügyeleti bővítmény óránként szinkronizál az Intune-nal. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése. 
  
