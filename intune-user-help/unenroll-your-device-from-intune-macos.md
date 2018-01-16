@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>macOS-eszköz regisztrációjának törlése az Intune-ból
 
-Amikor törli az iOS-alapú eszköz Intune-regisztrációját, az nem fog tudni többé hozzáférni a vállalati erőforrásokhoz, és kikerül az Intune felügyelete alól.
+Amikor törli a macOS-eszköz Intune-regisztrációját, az többé már nem fér hozzá a céges erőforrásokhoz.
 
 Kövesse az alábbi lépéseket a macOS-eszköz felügyelet alól való kivonásához:
 
@@ -34,11 +34,11 @@ Kövesse az alábbi lépéseket a macOS-eszköz felügyelet alól való kivonás
 
 Az eszköz regisztrációjának Intune-ból való törlésekor a következők történnek:
 
--   Az eszköz többé nem jelenik meg a vállalati portálon.
+-   Az eszköz nem jelenik meg a Céges portálon.
 
--   Többé nem telepíthet alkalmazásokat a vállalati portálról.
+-   Nem telepíthet alkalmazásokat a Céges portálról.
 
--   Az eszközön annak regisztrálásakor módosult beállítások (például a kamera letiltása vagy meghatározott hosszúságú jelszó megkövetelése) hatályukat vesztik.
+-   Az eszközön annak regisztrálásakor módosult beállítások (mint például a jelszó hossza) hatályukat veszítik.
 
 -   Előfordulhat, hogy az eszközről többé nem lehet elérni egyes vállalati erőforrásokat, például fájlmegosztásokat és belső webhelyeket.
 
@@ -46,8 +46,6 @@ Az eszköz regisztrációjának Intune-ból való törlésekor a következők t�
 
 -   Előfordulhat, hogy Wi-Fi- vagy virtuális magánhálózati (VPN-) kapcsolaton keresztül nem tud többé a vállalati hálózathoz csatlakozni.
 
--   A rendszer eltávolítja a vállalati e-mail profilokat az eszközről.
-
--   A csak levelezéshez konfigurált eszközök nem fognak megjelenni a Vállalati portál alkalmazásban és a vállalati portál webhelyén.
+-   Előfordulhat, hogy a rendszer eltávolítja a céges levelezéshez való hozzáférést az eszközről.
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
