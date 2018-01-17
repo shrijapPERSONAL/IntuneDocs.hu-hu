@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>SCEP-tanúsítványinfrastruktúra konfigurálása
 
@@ -231,7 +231,7 @@ A feladat tartalma:
     |Tanúsítványsablon célja (a Kérelmek kezelése lapon)|Szerkesztendő beállításazonosító|Az SCEP-profil Intune felügyeleti konzolban látható értéke|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
     |Aláírás|SignatureTemplate|Digitális aláírás|
-    |Titkosítás|EncryptionTemplate|Kulcstitkosítás|
+    |Encryption|EncryptionTemplate|Kulcstitkosítás|
     |Aláírás és titkosítás|GeneralPurposeTemplate|Kulcstitkosítás<br /><br />Digitális aláírás|
     Ha például a tanúsítványsablon célja **Titkosítás**, akkor az **EncryptionTemplate** azonosító értékét kell a tanúsítványsablon nevére cserélnie.
 
@@ -338,6 +338,9 @@ A tanúsítvány-összekötő letöltése, telepítése és konfigurálása az N
 5.  A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
 
     Kattintson a **Bejelentkezés** gombra, és írja be az Intune szolgáltatás rendszergazdai hitelesítő adatait, vagy egy bérlői rendszergazda globális felügyeleti engedéllyel rendelkező hitelesítő adatait.
+
+    > [!NOTE]
+    > Ha az NDESConnectorUI.exe-be való bejelentkezéskor **Ismeretlen felhasználónév** hibaüzenetet kap, az általában azt jelenti, hogy olyan fiókot használt, amelyhez nem tartozik érvényes Intune-licenc. Rendeljen a fiókhoz egy Intune- vagy EMS-licencet, és próbálkozzon újra.
 
     Ha a szervezet proxykiszolgálót használ, és proxy szükséges ahhoz, hogy az NDES-kiszolgáló el tudja érni az internetet, kattintson a **Proxykiszolgáló használata** lehetőségre, és adja meg a proxykiszolgáló nevét és portját, illetve a csatlakozáshoz szükséges fiókadatokat.
 
