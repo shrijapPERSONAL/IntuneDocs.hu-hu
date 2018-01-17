@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Felhasználó típusú entitás referenciája
               href: reports-ref-user.md
-    - name: Intune Graph API
+    - name: Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
       href: intune-graph-apis.md
       items:
-        - name: Referenciainformációk az Intune Graph API-khoz
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune API – referencia
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Erőforrások
   items:
     - name: Szószedet
