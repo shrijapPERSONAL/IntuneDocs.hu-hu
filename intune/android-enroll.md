@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -75,7 +75,7 @@ Jóvá kell hagynia az Androidhoz készült Céges portál alkalmazást a felüg
 
 Kövesse az alábbi lépéseket az Intune Céges portál alkalmazás jóváhagyásához:
 
-1.  Töltse le a Céges portál alkalmazást a [felügyelt Google Play Áruházból](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Keresse meg a Céges portál alkalmazást a [felügyelt Google Play Áruházban](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Jelentkezzen be a felügyelt Google Play Áruházba ugyanazzal a Google-fiókkal, amelyet az Android for Work-kötés konfigurálásához használt.
 3.  Kattintson a **Jóváhagyás** lehetőségre.  Ekkor megnyílik egy új párbeszédpanel.
 4.  Tekintse át a párbeszédpanelen látható engedélyeket, majd kattintson a **Jóváhagyás** lehetőségre. Ezeknek az engedélyeknek a jóváhagyására azért van szükség, hogy a Céges portál alkalmazás kezelni tudja az eszközön lévő munkahelyi profilt.
