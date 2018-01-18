@@ -5,20 +5,20 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/10/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 942e7ceb8d42240c46387889677cb4620a9da103
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS-re készült Microsoft Intune App SDK – fejlesztői útmutató
 
@@ -29,9 +29,9 @@ Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alka
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-* Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode 8-as vagy újabb verziója.
+* Szüksége lesz egy OS X 10.8.5 vagy újabb verziót futtató Mac OS-számítógépre, amelyen telepítve van az Xcode 9-es vagy újabb verziója.
 
-* Az alkalmazásnak iOS 9 vagy újabb verziókkal kell működnie.
+* Az alkalmazásnak az iOS 9.3.5-ös vagy újabb verzióival kell működnie.
 
 * Olvassa el [az iOS-hez készült Intune App SDK licencfeltételeit](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Nyomtassa ki és őrizze meg a szerződés egy példányát. Az iOS-hez készült Intune App SDK letöltésével és használatával elfogadja licencfeltételeket.  Ha nem fogadja el, ne használja a szoftvert.
 
@@ -208,7 +208,7 @@ Ha az alkalmazás nem az ADAL-t használja, az Intune App SDK szolgáltatja az A
 ## <a name="receiving-app-protection-policy"></a>Alkalmazásvédelmi szabályzat fogadása
 
 ### <a name="overview"></a>Áttekintés
-Az Intune alkalmazásvédelmi szabályzatának fogadásához az alkalmazásoknak regisztrációs kérelmet kell kezdeményezniük az Intune szolgáltatással. Az Intune konzollal konfigurálhatja az alkalmazásokat az alkalmazásvédelmi szabályzat eszközregisztrációtól független fogadására. Az **APP-WE** vagy MAM-WE néven is ismert eszközregisztráció nélküli alkalmazásvédelmi szabályzat lehetővé teszi, hogy az Intune anélkül is felügyelhesse az alkalmazásokat, hogy az eszközök az Intune mobileszköz-felügyeletre (MDM) regisztrálva lennének. Mindkét esetben szükséges regisztrálni az Intune szolgáltatásban a szabályzat fogadásához.
+Az Intune alkalmazásvédelmi szabályzatának fogadásához az alkalmazásoknak regisztrációs kérelmet kell kezdeményezniük az Intune MAM szolgáltatásban. Az Intune konzollal konfigurálhatja az alkalmazásokat az alkalmazásvédelmi szabályzat eszközregisztrációtól független fogadására. Az **APP-WE** vagy MAM-WE néven is ismert eszközregisztráció nélküli alkalmazásvédelmi szabályzat lehetővé teszi, hogy az Intune anélkül is felügyelhesse az alkalmazásokat, hogy az eszközök az Intune mobileszköz-felügyeletre (MDM) regisztrálva lennének. Mindkét esetben szükséges regisztrálni az Intune MAM szolgáltatásban a szabályzat fogadásához.
 
 ### <a name="apps-that-use-adal"></a>ADAL-t használó alkalmazások
 
@@ -235,7 +235,7 @@ Az API meghívása után az alkalmazás a szokásos módon működhet tovább. H
 
 ### <a name="apps-that-do-not-use-adal"></a>Az ADAL-t nem használó alkalmazások
 
-Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolgáltatástól, amely nem jelentkezteti be a felhasználót az ADAL használatával. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Akkor célszerű ezt a technikát használni, ha az alkalmazás nem hitelesített felhasználót az Azure AD-ban, de az adatok védelme érdekében szüksége van alkalmazásvédelmi szabályzatra. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak az `IntuneMAMEnrollmentManager` példány `loginAndEnrollAccount` metódusát kell használnia:
+Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune MAM szolgáltatástól, amely nem jelentkezteti be a felhasználót az ADAL használatával. Ez esetben az API meghívásával kell utasítani az SDK-t ennek a hitelesítésnek a kezelésére. Az alkalmazásoknak ezt a módszert kell használniuk abban az esetben, ha nem hitelesítették a felhasználót az Azure AD-vel, ugyanakkor szükség van az alkalmazásvédelmi szabályzat lekérésére az adatok védelméhez. Ilyen például, ha másik hitelesítési szolgáltatást használ az alkalmazásba való bejelentkezésre, vagy ha az alkalmazás egyáltalán nem támogatja a bejelentkezést. Ehhez az alkalmazásnak az `IntuneMAMEnrollmentManager` példány `loginAndEnrollAccount` metódusát kell használnia:
 
 ```objc
 /**
@@ -248,7 +248,7 @@ Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune szolg�
 
 ```
 
-A metódus meghívása esetén az SDK hitelesítő adatok megadását kéri a felhasználótól, ha nem található meglévő token///jogkivonat. Az SDK ezután megpróbálja regisztrálni az alkalmazást az Intune szolgáltatásban a megadott felhasználói fiók nevében. A metódus nil (nulla) identitással is meghívható. Ez esetben az SDK regisztrálja az eszköz meglévő felügyelt felhasználóját (az MDM esetében), vagy ha nem talál meglévő felhasználót, kéri a felhasználótól a felhasználónevet.
+A metódus meghívása esetén az SDK hitelesítő adatok megadását kéri a felhasználótól, ha nem található meglévő token///jogkivonat. Az SDK ezután megpróbálja regisztrálni az alkalmazást az Intune MAM szolgáltatásban a megadott felhasználói fiók nevében. A metódus nil (nulla) identitással is meghívható. Ez esetben az SDK regisztrálja az eszköz meglévő felügyelt felhasználóját (az MDM esetében), vagy ha nem talál meglévő felhasználót, kéri a felhasználótól a felhasználónevet.
 
 Ha a regisztráció sikertelen, az alkalmazásnak valamikor a jövőben újra meg kell vizsgálnia az API meghívásának lehetőségét, függően a sikertelenség részleteitől. Az alkalmazás egy delegálton keresztül fogadhat [értesítéseket](#Status-result-and-debug-notifications) a regisztrációs kérések eredményéről.
 
@@ -287,7 +287,7 @@ A felhasználó kijelentkeztetése előtt az alkalmazásnak meg kell hívnia a k
 
 ```
 
-Ezt a metódust még a felhasználó Azure AD-jogkivonatainak törlése előtt kell meghívni. Az SDK-nak azért van szüksége a felhasználói fiók AAD-jogkivonatára, hogy a felhasználó nevében küldhessen el bizonyos kéréseket az Intune szolgáltatásnak.
+Ezt a metódust még a felhasználó Azure AD-jogkivonatainak törlése előtt kell meghívni. Az SDK-nak azért van szüksége a felhasználói fiók AAD-jogkivonatára vagy -jogkivonataira, hogy a felhasználó nevében küldhessen el bizonyos kéréseket az Intune MAM szolgáltatásnak.
 
 Ha az alkalmazás saját maga gondoskodik a felhasználó céges adatainak törléséről, akkor a `doWipe` jelző false értékre állítható. Egyéb esetben az alkalmazás az SDK-val is elvégeztetheti a szelektív törlést. Ennek eredményeképpen létrejön egy hívás az alkalmazás szelektív törlési delegáltja felé.
 
@@ -453,10 +453,10 @@ WebViewHandledURLSchemes | Karakterláncok tömbje | Az alkalmazás WebView-ja �
 > Ha az alkalmazás elérhető lesz az App Store-ban, a `MAMPolicyRequired` értékét NEM értékre kell beállítani az App Store irányelvei alapján.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Célzott MAM-konfiguráció engedélyezése iOS-alkalmazásokhoz
-A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurációs adatokat fogadjanak az Intune App SDK-ból. Ezeknek az adatoknak a formátumát és változatait az alkalmazás tulajdonosának/fejlesztőjének kell meghatároznia és kommunikálnia az Intune-ügyfelek felé. Az Intune-rendszergazdák az Intune Azure Portalon célozhatják és telepíthetik a konfigurációs adatokat. Ami az Intune App SDK for iOS-t (7.0.1 verzió) illeti, a célzott MAM-konfigurációban résztvevő alkalmazások a MAM szolgáltatáson keresztül kaphatják meg a célzott MAM-konfigurációs adatokat. Az alkalmazáskonfigurációs adatokat az MDM-csatorna helyett az MAM szolgáltatásán keresztül közvetlenül az alkalmazásba küldi a rendszer. Az Intune App SDK egy osztályt biztosít az ezekről a konzolokról lekért adatok eléréséhez. Vegye figyelembe a következő előfeltételeket: <br>
-* Mielőtt elérhetné a célzott MAM-konfigurációs felhasználói felületet, az alkalmazásnak regisztrálva kell lennie a MAM-WE-ben. A MAM-WE-re vonatkozó további információért lásd az [Alkalmazásvédelmi szabályzat használata eszközbeléptetés nélkül](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) lapot.
+A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurációs adatokat fogadjanak az Intune App SDK-ból. Ezeknek az adatoknak a formátumát és változatait az alkalmazás tulajdonosának/fejlesztőjének kell meghatároznia és kommunikálnia az Intune-ügyfelek felé. Az Intune-rendszergazdák az Intune Azure Portalon célozhatják és telepíthetik a konfigurációs adatokat. Az iOS-hez készült Intune App SDK 7.0.1-es és újabb verzióiban a célzott MAM-konfigurációban résztvevő alkalmazások a MAM szolgáltatáson keresztül kaphatják meg a célzott MAM-konfigurációs adatokat. Az alkalmazáskonfigurációs adatokat az MDM-csatorna helyett az MAM szolgáltatásán keresztül közvetlenül az alkalmazásba küldi a rendszer. Az Intune App SDK egy osztályt biztosít az ezekről a konzolokról lekért adatok eléréséhez. Vegye figyelembe a következő előfeltételeket: <br>
+* Ahhoz, hogy el lehessen érni a célzott MAM-konfigurációs felhasználói felületet, az alkalmazást regisztrálni kell az Intune MAM szolgáltatásban. További információkért lásd: [Alkalmazásvédelmi szabályzat fogadása](#receiving-app-protection-policy).
 * Foglalja bele az ```IntuneMAMAppConfigManager.h``` kódot az alkalmazás forrásfájljába.
-* Az alkalmazás konfigurációs objektumának beszerzéséhez hívja az ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` funkciót.
+* Az alkalmazás konfigurációs objektumának beszerzéséhez hívja az ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` funkciót.
 * Hívja a megfelelő szelektort az ```IntuneMAMAppConfig``` objektumon. Ha például az alkalmazás kulcsa egy karakterlánc, akkor használhatja a ```stringValueForKey``` vagy az ```allStringsForKey``` lehetőséget. Az ```IntuneMAMAppConfig.h header``` fájl közli a visszaadott értékeket/hibafeltételeket.
 
 A Graph API célzott MAM-konfigurációs értékekre vonatkozó képességeivel kapcsolatos további információért lásd a [Graph API-referencia – célzott MAM-konfiguráció](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) témájú weblapot. <br>

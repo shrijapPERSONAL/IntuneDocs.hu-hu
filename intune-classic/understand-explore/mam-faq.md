@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -91,29 +91,30 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 **Mi a többszörösidentitás-támogatás célja?** A többszörösidentitás-támogatással a „céges” és fogyasztói célközönséggel egyaránt rendelkező alkalmazásokat (például az Office-alkalmazásokat) a „céges” fiókok Intune alkalmazásvédelmi funkcióval felvértezve lehet kiadni.
 
-**Mikor jelenik meg a PIN-kód megadására szolgáló képernyő?** Az Intune PIN-kód megadására szolgáló képernyő csak akkor jelenik meg, ha a felhasználó „céges” adatokhoz próbál meg hozzáférni az alkalmazásban. Például a Word/Excel/PowerPoint alkalmazásokban akkor jelenik meg, ha a végfelhasználó a OneDrive vállalati verzióból próbál megnyitni egy dokumentumot (feltételezve, hogy már sikeresen életbe léptett egy PIN-kódot kérő alkalmazásvédelmi szabályzatot).
-
 **Mi helyzet az Outlook többszörös identitással való használata esetén?** Mivel az Outlook a személyes és a „céges” e-mailek kombinált nézetét kínálja, az Outlook alkalmazás már az indításkor kéri az Intune PIN-kódját.
 
 **Mire szolgál az Intune az alkalmazáshoz tartozó PIN-kódja?** A személyes azonosítószám (PIN-kód) egy olyan kód, amellyel ellenőrizni lehet, hogy egy alkalmazásban a megfelelő felhasználó fér-e hozzá a céges adatokhoz.
 
   1. **Mikor kell a felhasználónak megadni a PIN-kódját?** Az Intune csak akkor kéri a felhasználó PIN-kódját az alkalmazáshoz, amikor a felhasználó „céges” adatokhoz szeretne hozzáférni. A többszörös identitást használó alkalmazások, például a Word/Excel/PowerPoint esetében a felhasználónak akkor kell megadnia a PIN-kódját, mikor „céges” dokumentumot vagy fájlt próbál megnyitni. Az egyszeres identitással rendelkező alkalmazások, például az Intune alkalmazásburkoló eszköz használatával előkészített üzletági alkalmazások már indításkor kérik a PIN-kódot, ugyanis az Intune App SDK tudja, hogy a felhasználó tevékenysége az alkalmazásban mindig „céges”.
 
-  2. **Biztonságos-e a PIN-kód?** A PIN-kód arra szolgál, hogy csak a megfelelő felhasználó férhessen hozzá az alkalmazásban a céges adatokhoz. Így az Intune az alkalmazáshoz tartozó PIN-kódjának megváltoztatásához a végfelhasználónak be kell jelentkeznie a munkahelyi vagy iskolai fiókjába. Ezt a hitelesítést az Azure Active Directory biztonságos jogkivonatcsere révén kezeli, ami nem transzparens az Intune App SDK számára. A munkahelyi vagy iskolai adatok védelmére biztonsági szemszögből a titkosítás a legjobb módszer. A titkosítás nem függ össze az alkalmazás PIN-kódjával, csak annak saját alkalmazásvédelmi szabályzatával.
+2. **Milyen gyakran kell a felhasználónak megadnia az Intune PIN-kódját?**
+A rendszergazda az Intune felügyeleti konzolján beállíthatja az Intune alkalmazásvédelmi szabályzatának „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítását. Ez a beállítás azt határozza meg, hogy mennyi idő után ellenőrzi a rendszer a hozzáférési követelményeket az eszközön, és jelenik meg újból az alkalmazás PIN-kódot bekérő képernyője. Ugyanakkor a PIN-kóddal kapcsolatos alábbi fontos információk is befolyásolják, hogy a rendszer milyen gyakran kér felhasználói bevitelt: 
 
-  3. **Hogyan védi a PIN-kódot az Intune a találgatásos támadásoktól?** Az alkalmazás PIN-szabályzatának részeként a rendszergazda beállíthatja, hogy legfeljebb hányszor adhatja meg a felhasználó a PIN-kódját, mielőtt a rendszer zárolná az alkalmazást. Bizonyos számú kísérlet után az Intune App SDK törölheti az összes „céges” adatot az alkalmazásban.
+* **A használhatóság fokozása érdekében az ugyanattól a gyártótól származó alkalmazások megosztott PIN-kódot használnak:** Az iOS-ben minden **ugyanattól a gyártótól származó** alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ. Androidon minden alkalmazás egyetlen közös alkalmazásszintű PIN-kódot használ.
+* **A PIN-kódhoz társított számláló gördülő jellege:** amikor megadják a PIN-kódot egy alkalmazás (az A alkalmazás) eléréséhez, és az alkalmazás kikerül az előtérből (a bemenet fő fókuszából) az eszközön, ezen PIN-kód számlálója alaphelyzetbe áll. Egy olyan alkalmazás (B alkalmazás) sem fogja bekérni a PIN-kódot a felhasználótól, amely szintén ezt a PIN-kódot használja, mivel a számláló alaphelyzetbe állt. Az adatkérés akkor jelenik meg újra, amikor a rendszer ismét eléri a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értékét. 
+
+>[!NOTE] 
+> A felhasználó hozzáférési követelményeinek gyakoribb ellenőrzése (azaz a PIN-kód kérése) érdekében, különösen a gyakran használt alkalmazások esetében javasolt csökkenteni a „Hozzáférési követelmények újbóli ellenőrzése ennyi idő után (perc)” beállítás értéket. 
+
+  3. **Biztonságos-e a PIN-kód?** A PIN-kód arra szolgál, hogy csak a megfelelő felhasználó férhessen hozzá az alkalmazásban a céges adatokhoz. Így az Intune az alkalmazáshoz tartozó PIN-kódjának megváltoztatásához a végfelhasználónak be kell jelentkeznie a munkahelyi vagy iskolai fiókjába. Ezt a hitelesítést az Azure Active Directory biztonságos jogkivonatcsere révén kezeli, ami nem transzparens az Intune App SDK számára. A munkahelyi vagy iskolai adatok védelmére biztonsági szemszögből a titkosítás a legjobb módszer. A titkosítás nem függ össze az alkalmazás PIN-kódjával, csak annak saját alkalmazásvédelmi szabályzatával.
+
+  4. **Hogyan védi a PIN-kódot az Intune a találgatásos támadásoktól?** Az alkalmazás PIN-szabályzatának részeként a rendszergazda beállíthatja, hogy legfeljebb hányszor adhatja meg a felhasználó a PIN-kódját, mielőtt a rendszer zárolná az alkalmazást. Bizonyos számú kísérlet után az Intune App SDK törölheti az összes „céges” adatot az alkalmazásban.
   
-**Hogyan használja az Intune az alkalmazás numerikus és jelszavas PIN-kódját?**
-A MAM jelenleg alfanumerikus, valamint speciális karaktereket is megkövetelő (ún. PIN-jelszó) alkalmazásszintű PIN-kódokat (iOS) támogat, amelyeknek a használatához az szükséges, hogy az alkalmazások (vagyis a WXP, az Outlook, a Managed Browser és a Yammer) integrálják az iOS-es Intune APP SDK-t. Az integráció hiányában a PIN-jelszóbeállítások nem lesznek megfelelően megkövetelve a megcélzott alkalmazásoknál. Mivel az alkalmazások integrációja fokozatosan történik, a numerikus és jelszavas PIN-kódok viselkedése a felhasználó szemszögéből átmenetileg megváltozik, ezért fontos a tájékoztatás. Az Intune 2017. októberi kiadásban az alábbi működésmód várható...
+  5. **Miért kell kétszer beállítanom a PIN-kódot az ugyanattól a gyártótól származó alkalmazások esetében?**
+A MAM (az iOS esetében) jelenleg az alfanumerikus, valamint speciális karaktereket is tartalmazó alkalmazásszintű PIN-kódok (ún. hitelesítő kódok) használatát teszi lehetővé, amihez szükséges, hogy az alkalmazások (vagyis a WXP, az Outlook, a Managed Browser és a Yammer) integrálják az iOS-es Intune APP SDK-t. Az integráció hiányában a PIN-jelszóbeállítások nem lesznek megfelelően megkövetelve a megcélzott alkalmazásoknál. Ez a szolgáltatás az iOS-hez készült Intune SDK következő verziójában jelent meg: 7.1.12. <br> A szolgáltatás támogatása és az iOS-hez készült Intune SDK előző verzióival való kompatibilitás biztosítása érdekében a 7.1.12-es és újabb verziókban minden PIN-kód (akár numerikus, akár hitelesítő kód) az SDK korábbi verzióinak numerikus PIN-kódjaitól elkülönítve van kezelve. Így ha egy eszközön olyan alkalmazások találhatók, melyek az iOS-hez készült Intune SDK 7.1.12-esnél korábbi ÉS 7.1.12-esnél újabb verziójával rendelkeznek, és ugyanattól a gyártótól származnak, ezekhez két PIN-kódot kell beállítani. <br><br> Ugyanakkor a két PIN-kód között (melyek az egyes alkalmazásokhoz tartoznak) semmilyen kapcsolat nincs, azaz meg kell felelniük az alkalmazásra vonatkozó alkalmazásvédelmi szabályzatnak. Ennek megfelelően a felhasználó *csak* akkor állíthatja be kétszer ugyanazt a PIN-kódot, ha az A és a B alkalmazásra ugyanazok a szabályzatok érvényesek (a PIN-kódokra vonatkozóan). <br><br> Ez a viselkedés kizárólag az Intune mobilalkalmazás-felügyeleti funkciójával engedélyezett iOS-alkalmazások PIN-kódjaira jellemző. Ahogy az idő múlásával az alkalmazások az iOS-hez készült Intune SDK újabb verzióira térnek át, egyre kisebb problémát fog jelenteni, hogy kétszer kell beállítani a PIN-kódot az ugyanazon gyártótól származó alkalmazásokhoz. Erre az alábbi megjegyzésben találhat egy példát.
 
-Azok az alkalmazások, amelyek
-1. ugyanazon alkalmazáskiadótól származnak,
-2. a konzolon megcélzott PIN-jelszóval rendelkeznek, és 
-3. az ezzel a funkcióval rendelkező SDK-t (7.1.12 és újabb verziók) használják, ugyanazt a jelszavas PIN-kódot tudják majd használni ezeknél az alkalmazásoknál. 
-
-Azok az alkalmazások, amelyek
-1. ugyanazon alkalmazáskiadótól származnak,
-2. a konzolon megcélzott numerikus PIN-kóddal rendelkeznek, ugyanazt a numerikus PIN-kódot tudják majd használni ezeknél az alkalmazásoknál. 
+>[!NOTE]
+> Ha például az A alkalmazás egy 7.1.12-esnél korábbi verzióval készült, a B alkalmazás pedig a 7.1.12-es vagy annál újabb verzióval készült, és a kettő ugyanazon gyártótól származik, a végfelhasználónak külön kell majd PIN-kódot beállítania az A-hoz és a B-hez, ha mindkettő egy iOS-es eszközre van telepítve. <br> Ha az eszközön telepítve van a C alkalmazás, mely az SDK 7.1.9-es verziójával rendelkezik, az ugyanazt a PIN-kódot fogja használni, mint az A alkalmazás. <br> Ha a D alkalmazás a 7.1.14-es verzióval készült, az ugyanazt a PIN-kódot fogja használni, mint a B alkalmazás. <br> Ha egy eszközön csak az A és a C alkalmazás van telepítve, akkor egy PIN-kódot kell beállítani. Ugyanez arra az esetre is vonatkozik, ha egy eszközön csak a B és a D alkalmazás van telepítve.
 
 **Mi a helyzet a titkosítással?** A rendszergazdák olyan alkalmazásvédelmi szabályzatokat léptethetnek életbe, amelyek előírják az alkalmazásadatok titkosítását. A szabályzat részeként a rendszergazda azt is megadhatja, hogy mikor kell titkosítani a tartalmat.
 
@@ -146,7 +147,7 @@ Azok az alkalmazások, amelyek
 
 **Az iOS megosztási bővítménnyel megnyithatom a munkahelyi vagy az iskolai adatokat a nem felügyelt alkalmazásokban, még akkor is, ha az adatátviteli szabályzat beállítása „csak felügyelt alkalmazások” vagy „nincs alkalmazás”. Nem jár ez adatszivárgással?** Az Intune alkalmazásvédelmi szabályzata nem tudja kezelni az iOS megosztási bővítményt az eszköz felügyelete nélkül. Ezért az _**Intune titkosítja a „céges” adatokat, mielőtt az alkalmazáson kívül megosztaná**_. Ezt úgy ellenőrizheti, hogy megpróbálja megnyitni a „céges” fájlt a felügyelt alkalmazáson kívül. A fájlnak titkosítottnak kell lennie, így a felügyelt alkalmazáson kívül mással nem nyitható meg.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 - [Az Android mobilalkalmazás-felügyeleti szabályzatának beállításai a Microsoft Intune-ban](../deploy-use/android-mam-policy-settings.md)
 - [iOS mobilalkalmazás-felügyeleti szabályzat konfigurálása](../deploy-use/ios-mam-policy-settings.md)
 - [A mobilalkalmazás-kezelés beállításának ellenőrzése](../deploy-use/validate-mobile-application-management.md)

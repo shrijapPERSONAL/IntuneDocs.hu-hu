@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Általános
--   **Képernyőfelvétel (csak mobileszköz)** – A felhasználó képként rögzítheti a képernyőn látható tartalmat.
--   **Másolás és beillesztés (csak mobileszköz)** – Engedélyezi az alkalmazások közötti másolási és beillesztési műveletet az eszközön.
--   **Regisztráció manuális törlése** – Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
--   **Főtanúsítvány manuális telepítése (csak mobileszköz)** – Letiltja a felhasználó számára a főtanúsítványok és a köztes szolgáltatói tanúsítványok manuális telepítését.
--   **Diagnosztikai adatok küldése** – A lehetséges értékek a következők:
+- **Képernyőfelvétel (csak mobileszköz)** – A felhasználó képként rögzítheti a képernyőn látható tartalmat.
+- **Másolás és beillesztés (csak mobileszköz)** – Engedélyezi az alkalmazások közötti másolási és beillesztési műveletet az eszközön.
+- **Regisztráció manuális törlése** – Lehetővé teszi a felhasználó számára a munkahelyi fiók manuális törlését az eszközről.
+- **Főtanúsítvány manuális telepítése (csak mobileszköz)** – Letiltja a felhasználó számára a főtanúsítványok és a köztes szolgáltatói tanúsítványok manuális telepítését.
+- **Diagnosztikai adatok küldése** – A lehetséges értékek a következők:
     - **Nincs** – Az eszköz nem küld adatokat a Microsoftnak
     - **Alapszintű** – Az eszköz korlátozott információkat küld a Microsoftnak
     - **Bővített** – Az eszköz bővebb diagnosztikai adatokat küld a Microsoftnak
     - **Teljes** – A Bővített beállítással küldött adatok mellett az eszköz állapotával kapcsolatos információkat is küld.
--   **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
--   **OneDrive-fájlszinkronizálás** – Letiltja az eszköz fájljainak OneDrive-ba való szinkronizálását.
--   **Cserélhető tároló** – Meghatározza, hogy az eszközzel használható-e külső tárolóeszköz, például SD-kártya.
--   **Földrajzi hely** – Meghatározza, hogy az eszköz használhatja-e a helyalapú szolgáltatások adatait.
--   **Internetkapcsolat megosztása** – Engedélyezi az internetkapcsolat megosztását az eszközön.
--   **Telefon alaphelyzetbe állítása** – Azt szabályozza, hogy a felhasználó visszaállíthatja-e az eszköz gyári beállításait.
--   **USB-kapcsolat (csak mobileszköz)** – Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.
--   **Lopásgátló üzemmód (csak mobileszköz)** – Itt az állítható be, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.
--   **Cortana** – Engedélyezi vagy letiltja a Cortana beszédfelismerési asszisztenst.
--   **Hangrögzítés (csak mobileszköz)** – Engedélyezi vagy letiltja az eszköz hangrögzítőjét.
--   **Az eszköz nevének módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nevét (csak Windows 10 mobil verzió esetén)
--   **Kiépítési csomagok hozzáadása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat telepítsen.
--   **Kiépítési csomagok eltávolítása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat távolítson el.
--   **Eszközfelderítés** – Letiltja az eszköz más eszközök általi felderíthetőségét.
--   **Feladatváltó (csak mobileszköz)** – Letiltja a feladatváltót az eszközön.
--   **SIM-kártyahibát jelző párbeszédpanel (csak mobileszköz)** – Letiltja a hibaüzenetet, amely akkor jelenne meg, amikor a rendszer nem észlel SIM-kártyát az eszközön.
+- **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
+- **OneDrive-fájlszinkronizálás** – Letiltja az eszköz fájljainak OneDrive-ba való szinkronizálását.
+- **Cserélhető tároló** – Meghatározza, hogy az eszközzel használható-e külső tárolóeszköz, például SD-kártya.
+- **Földrajzi hely** – Meghatározza, hogy az eszköz használhatja-e a helyalapú szolgáltatások adatait.
+- **Internetkapcsolat megosztása** – Engedélyezi az internetkapcsolat megosztását az eszközön.
+- **Telefon alaphelyzetbe állítása** – Azt szabályozza, hogy a felhasználó visszaállíthatja-e az eszköz gyári beállításait.
+- **USB-kapcsolat (csak mobileszköz)** – Azt szabályozza, hogy az eszközök elérhetnek-e külső tárolóeszközöket USB-kapcsolaton keresztül.
+- **Lopásgátló üzemmód (csak mobileszköz)** – Itt az állítható be, hogy engedélyezve van-e a Windows lopásgátló üzemmódja.
+- **Cortana** – Engedélyezi vagy letiltja a Cortana beszédfelismerési asszisztenst.
+- **Hangrögzítés (csak mobileszköz)** – Engedélyezi vagy letiltja az eszköz hangrögzítőjét.
+- **Az eszköz nevének módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz nevét (csak Windows 10 mobil verzió esetén)
+- **Kiépítési csomagok hozzáadása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat telepítsen.
+- **Kiépítési csomagok eltávolítása** – Megakadályozza, hogy a konfigurációs ügynök kiépítési csomagokat távolítson el.
+- **Eszközfelderítés** – Letiltja az eszköz más eszközök általi felderíthetőségét.
+- **Feladatváltó (csak mobileszköz)** – Letiltja a feladatváltót az eszközön.
+- **SIM-kártyahibát jelző párbeszédpanel (csak mobileszköz)** – Letiltja a hibaüzenetet, amely akkor jelenne meg, amikor a rendszer nem észlel SIM-kártyát az eszközön.
+- **Automatikus újbóli üzembe helyezés** – Lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz zárolási képernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
 
 
 ## <a name="password"></a>Jelszó
@@ -68,19 +68,68 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 ## <a name="personalization"></a>Személyre szabás
 
--   **Asztali háttérkép URL-címe (csak asztali verzióban)** – A Windows asztali háttérképeként használandó PNG, JPG vagy JPEG formátumú kép URL-címének megadása. A felhasználók ezt a beállítást nem változtathatják meg.
+- **Asztali háttérkép URL-címe (csak asztali verzióban)** – A Windows asztali háttérképeként használandó PNG, JPG vagy JPEG formátumú kép URL-címének megadása. A felhasználók ezt nem tudják módosítani.
 
 ## <a name="privacy"></a>Személyes adatok védelme
 
 -   **Bemenet személyre szabása** – Letiltja a felhőalapú beszédszolgáltatások használatát a Cortanához, a diktáláshoz vagy a Microsoft Áruház alkalmazásaihoz. Ha engedélyezi ezeket a szolgáltatásokat, a Microsoft hangadatokat gyűjthet a szolgáltatás fejlesztéséhez.
 -   **A társításra és adatvédelemre vonatkozó felhasználói beleegyezést kérő üzenetek automatikusa elfogadása** – Lehetővé teszi a Windowsnak, hogy automatikusan elfogadja a társítási és adatvédelmi beleegyezést kérő üzeneteket az alkalmazások futtatása közben.
 
+Meghatározhatja azon adatok körét, amelyeket az eszközön futó összes alkalmazás elérhet. Definiálhat kivételeket alkalmazásonként az **Alkalmazásonkénti adatvédelmi kivételek** segítségével.
+
+### <a name="exceptions"></a>Kivételek
+
+- **Fiókadatok** – Megadhatja, hogy az alkalmazás hozzáférhet-e a felhasználó nevéhez, képéhez és kapcsolati adataihoz.
+- **Háttérben futó alkalmazások** – Megadhatja, hogy az alkalmazás futhat-e a háttérben.
+- **Naptár** – Megadhatja, hogy az alkalmazás hozzáférhet-e a naptárhoz.
+- **Híváslista** – Megadhatja, hogy az alkalmazás hozzáférhet-e a híváslistához.
+- **Kamera** – Megadhatja, hogy az alkalmazás hozzáférhet-e a kamerához.
+- **Névjegyek** – Megadhatja, hogy az alkalmazás hozzáférhet-e a névjegyekhez.
+- **E-mail** – Megadhatja, hogy az alkalmazás hozzáférhet-e az e-mailekhez, és küldhet-e e-mailt.
+- **Tartózkodási hely** – Megadhatja, hogy az alkalmazás hozzáférhet-e a tartózkodási hellyel kapcsolatos adatokhoz.
+- **Üzenetkezelés** – Megadhatja, hogy az alkalmazás olvashat és küldhet-e SMS- és MMS-üzeneteket.
+- **Mikrofon** – Megadhatja, hogy az alkalmazás használhatja-e a mikrofont.
+- **Mozgásérzékelő** – Megadhatja, hogy az alkalmazás hozzáférhet-e az eszköz mozgásérzékelőjének adataihoz.
+- **Értesítések** – Megadhatja, hogy az alkalmazás hozzáférhet-e az értesítésekhez.
+- **Telefon** – Megadhatja, hogy az alkalmazás hozzáférhet-e a telefonhoz.
+- **Antennák** – Egyes alkalmazások adatokat küldenek és fogadnak az eszközben lévő antennákkal (például Bluetooth-antennával). Az ilyen alkalmazásoknak szüksége lehet az antennák be- és kikapcsolására. Megadhatja, hogy az alkalmazás kezelheti-e ezeket az antennákat.
+- **Feladatok** – Megadhatja, hogy az alkalmazás hozzáférhet-e a feladatokhoz.
+- **Megbízható eszközök** – Megadhatja, hogy az alkalmazás használhat-e megbízható eszközöket (már csatlakoztatott, illetve a PC-hez, táblagéphez vagy telefonhoz gyárilag tartozó hardvereket). Például: televíziók és kivetítők.
+- **Visszajelzés és diagnosztika** – Megadhatja, hogy az alkalmazás hozzáférhet-e a diagnosztikai adatokhoz.
+- **Szinkronizálás eszközökkel** – Megadhatja, hogy az alkalmazás oszthat-e meg és szinkronizálhat-e adatokat automatikusan olyan vezeték nélküli eszközökkel, amelyek nincsenek kifejezetten párosítva az adott PC-vel, táblagéppel vagy telefonnal.
+
+## <a name="per-app-privacy-exceptions"></a>Alkalmazásonkénti adatvédelmi kivételek
+
+Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállításoktól eltérő adatvédelmi működést.
+
+- **Csomag neve** – Az alkalmazás csomagcsaládjának neve.
+- **Alkalmazás neve** – Az alkalmazás neve.
+
+### <a name="exceptions"></a>Kivételek
+
+- **Fiókadatok** – Megadhatja, hogy az alkalmazás hozzáférhet-e a felhasználó nevéhez, képéhez és kapcsolati adataihoz.
+- **Háttérben futó alkalmazások** – Megadhatja, hogy az alkalmazás futhat-e a háttérben.
+- **Naptár** – Megadhatja, hogy az alkalmazás hozzáférhet-e a naptárhoz.
+- **Híváslista** – Megadhatja, hogy az alkalmazás hozzáférhet-e a híváslistához.
+- **Kamera** – Megadhatja, hogy az alkalmazás hozzáférhet-e a kamerához.
+- **Névjegyek** – Megadhatja, hogy az alkalmazás hozzáférhet-e a névjegyekhez.
+- **E-mail** – Megadhatja, hogy az alkalmazás hozzáférhet-e az e-mailekhez, és küldhet-e e-mailt.
+- **Tartózkodási hely** – Megadhatja, hogy az alkalmazás hozzáférhet-e a tartózkodási hellyel kapcsolatos adatokhoz.
+- **Üzenetkezelés** – Megadhatja, hogy az alkalmazás olvashat és küldhet-e SMS- és MMS-üzeneteket.
+- **Mikrofon** – Megadhatja, hogy az alkalmazás használhatja-e a mikrofont.
+- **Mozgásérzékelő** – Megadhatja, hogy az alkalmazás hozzáférhet-e az eszköz mozgásérzékelőjének adataihoz.
+- **Értesítések** – Megadhatja, hogy az alkalmazás hozzáférhet-e az értesítésekhez.
+- **Telefon** – Megadhatja, hogy az alkalmazás hozzáférhet-e a telefonhoz.
+- **Antennák** – Egyes alkalmazások adatokat küldenek és fogadnak az eszközben lévő antennákkal (például Bluetooth-antennával). Az ilyen alkalmazásoknak szüksége lehet az antennák be- és kikapcsolására. Megadhatja, hogy az alkalmazás kezelheti-e ezeket az antennákat.
+- **Feladatok** – Megadhatja, hogy az alkalmazás hozzáférhet-e a feladatokhoz.
+- **Megbízható eszközök** – Megadhatja, hogy az alkalmazás használhat-e megbízható eszközöket (már csatlakoztatott, illetve a PC-hez, táblagéphez vagy telefonhoz gyárilag tartozó hardvereket). Például: televíziók és kivetítők.
+- **Visszajelzés és diagnosztika** – Megadhatja, hogy az alkalmazás hozzáférhet-e a diagnosztikai adatokhoz.
+- **Szinkronizálás eszközökkel** – Megadhatja, hogy az alkalmazás oszthat-e meg és szinkronizálhat-e adatokat automatikusan olyan vezeték nélküli eszközökkel, amelyek nincsenek kifejezetten párosítva az adott PC-vel, táblagéppel vagy telefonnal.
 
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
-
--   **Műveletközpont értesítései (csak mobileszköz)** – Engedélyezi a Műveletközpont értesítéseinek megjelenését az eszköz zárolási képernyőjén (csak Windows 10 Mobile esetén).
--   **Zárolási képernyő URL-címe (csak asztali verzióban)** – A Windows zárolási képernyőjének háttérképeként használandó PNG, JPG vagy JPEG formátumú kép URL-címét adja meg. A felhasználók ezt a beállítást nem változtathatják meg.
+- **Műveletközpont értesítései (csak mobileszköz)** – Engedélyezi a Műveletközpont értesítéseinek megjelenését az eszköz zárolási képernyőjén (csak Windows 10 Mobile esetén).
+- **Zárolási képernyő URL-címe (csak asztali verzióban)** – A Windows zárolási képernyőjének háttérképeként használandó PNG, JPG vagy JPEG formátumú kép URL-címét adja meg. A felhasználók ezt nem tudják módosítani.
 -   **Felhasználó által konfigurálható képernyő-időkorlát (csak mobilon)** – Engedélyezi a felhasználóknak az időtartam konfigurálását 
 -   **Cortana zárolt képernyőn (csak asztali verzió)** – Nem engedélyezi, hogy a felhasználó interakcióba lépjen a Cortanával, ha a képernyő zárolva van (csak Windows 10 asztali verziónál).
 -   **Bejelentési értesítések zárolt képernyőn** – Riasztások megjelenítésének letiltása az eszköz zárolási képernyőjén.
@@ -131,11 +180,11 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Edge böngészőből egy webhelyet a Start menübe.
 
-## <a name="edge-browser-smartscreen"></a>Az Edge böngésző SmartScreen funkciója
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
--   **SmartScreen** – Engedélyezi vagy letiltja a rosszindulatú webhelyeket blokkoló SmartScreen funkciót.
--   **SmartScreen-üzenetek felülbírálása** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú webhelyekre figyelmeztető üzeneteket.
--   **SmartScreen-üzenetek felülbírálása fájlok esetén** – Engedélyezi, hogy a végfelhasználó letilthassa a SmartScreen szűrő által megjelenített, az esetlegesen rosszindulatú fájlok letöltésére figyelmeztető üzeneteket.
+- **SmartScreen a Microsoft Edge böngészőhöz** – Az Edge SmartScreen webhely- és fájlletöltésekhez való hozzáférésének engedélyezése.
+- **Rosszindulatú webhelyelérés** - Meggátolja a felhasználókat abban, hogy figyelmen kívül hagyják a Windows Defender SmartScreen szűrő figyelmeztetéseit, és letiltja a webhely elérését.
+- **Ellenőrizetlen fájlletöltés** - Meggátolja a felhasználókat abban, hogy figyelmen kívül hagyják a Windows Defender SmartScreen szűrő figyelmeztetéseit, és letiltja az ellenőrizetlen fájlok letöltését.
 
 ## <a name="search"></a>Keresés
 - **Biztonságos keresés (csak mobileszközökön)** – Meghatározza, hogy a Cortana hogyan szűrje a felnőtt tartalmat a keresési eredményekben. A megadható értékek a **Szigorú** és a **Közepes**, vagy engedélyezhető, hogy a végfelhasználó állítsa be az értékét.
@@ -182,9 +231,30 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
     -   **Adatvédelem** – Letiltja a hozzáférést a Gépház alkalmazás Adatvédelem területéhez.
     -   **Frissítés és biztonság** – Letiltja a hozzáférést a Gépház alkalmazás Frissítés és biztonság területéhez.
 
-## <a name="kiosk"></a>Kioszkmód
+## <a name="start"></a>Indítás
 
--   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) típusát.  A lehetőségek a következők:
+- **Alkalmazások levétele a tálcáról** – Megakadályozza, hogy a felhasználó alkalmazásokat távolítson el a Start menüből.
+- **Dokumentumok a Start menüben** – A Windows Start menü Dokumentumok mappájának megjelenítése vagy elrejtése.
+- **Letöltések a Start menüben** – A Windows Start menü Letöltések mappájának megjelenítése vagy elrejtése.
+- **Fájlkezelő a Start menüben** – A Fájlkezelő alkalmazás megjelenítése vagy elrejtése a Windows Start menüjében.
+- **Otthoni csoport a Start menüben** – A Windows Start menü Otthoni csoport mappájának megjelenítése vagy elrejtése.
+- **Zene a Start menüben** – A Windows Start menü Zene mappájának megjelenítése vagy elrejtése.
+- **Hálózat a Start menüben** – A Windows Start menü Hálózat mappájának megjelenítése vagy elrejtése.
+- **Személyes mappa a Start menüben** – A Windows Start menü Személyes mappájának megjelenítése vagy elrejtése.
+- **Képek a Start menüben** – A Windows Start menü képeket tartalmazó mappájának megjelenítése vagy elrejtése.
+- **Gépház a Start menüben** – A Gépház alkalmazás elrejtése vagy megjelenítése a Windows Start menüben.
+- **Videók a Start menüben** – A Windows Start menü videókat tartalmazó mappájának megjelenítése vagy elrejtése.
+
+## <a name="display"></a>Megjelenítés
+
+- **GDI-méretezés bekapcsolása az alkalmazásoknál**
+- **GDI-méretezés kikapcsolása az alkalmazásoknál**
+
+  A GDI DPI-méretezés lehetővé teszi, hogy a nem DPI-figyelő alkalmazások monitoronként DPI-figyelővé váljanak. Megadhatja az örökölt alkalmazásokat, melyek esetében a GDI DPI-méretezés be van kapcsolva. Ha a GDI DPI-méretezés bekapcsolása és kikapcsolása egyaránt konfigurálva van egy alkalmazás esetében, akkor a méretezés ehhez az alkalmazáshoz ki lesz kapcsolva.
+
+## <a name="kiosk-preview"></a>Kioszk (előnézet)
+
+-   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) típusát. A lehetőségek a következők:
 
       - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
       - **Egyalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz egy alkalmazást futtasson teljes képernyőn.
@@ -192,13 +262,13 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
     Az egyalkalmazásos kioszkokhoz a következő beállítások szükségesek:
 
-      - **Felhasználói fiók** – Megadja a teljes képernyős alkalmazáshoz társított (az eszközön) helyi felhasználói fiókot, vagy az Azure AD-fiókot.  Az Azure AD-tartományokhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
+      - **Felhasználói fiók** – Megadja a teljes képernyős alkalmazáshoz társított (az eszközön) helyi felhasználói fiókot, vagy az Azure AD-fiókot. Az Azure AD-tartományokhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
 
          A nyilvános környezetben található eszközök esetében a jogosulatlan tevékenység kizárása érdekében minimális jogosultsággal rendelkező fiókokat kell használni.  
 
-      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját.  További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
+      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
 
-    Több alkalmazás teljes képernyőn való futtatásához kioszkkonfigurációra van szükség.  Hozzon létre kioszkkonfigurációt a **Hozzáadás** gomb használatával, vagy válasszon egy meglévőt.
+    Több alkalmazás teljes képernyőn való futtatásához kioszkkonfigurációra van szükség. Hozzon létre kioszkkonfigurációt a **Hozzáadás** gomb használatával, vagy válasszon egy meglévőt.
 
     A többalkalmazásos kioszkkonfigurációk az alábbi beállításokat tartalmazzák:
 
@@ -208,9 +278,9 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
         - A teljes képernyős alkalmazás típusát megadó **Alkalmazástípus**.  Támogatott értékei egyebek mellett a következők:   
 
-            - **Win32-alkalmazás** – Hagyományos asztali alkalmazás.  (A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.)
+            - **Win32-alkalmazás** – Hagyományos asztali alkalmazás. (A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.)
 
-            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás.  [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
+            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
 
         - **Alkalmazásazonosító** – Vagy a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén), vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén) adja meg.
 
@@ -218,9 +288,9 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
     - **Start menü elrendezése** – Megad egy XML-fájlt, amely leírja az alkalmazások [megjelenését a Start menüben](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Hozzárendelt felhasználók** – Egy vagy több, a kioszkkonfigurációhoz társított felhasználói fiókot ad meg.  Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva.  A tartományhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
+    - **Hozzárendelt felhasználók** – Egy vagy több, a kioszkkonfigurációhoz társított felhasználói fiókot ad meg. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva. A tartományhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender víruskereső
 
 -   **Valós idejű figyelés engedélyezése** – Engedélyezi a kártevők, kémprogramok és más nemkívánatos szoftverek valós idejű keresését.
 -   **Viselkedésfigyelés engedélyezése** – Engedélyezi, hogy a Defender gyanús tevékenységekre utaló ismert mintákat keressen az eszközökön.
@@ -256,7 +326,7 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 
 
 
-## <a name="defender-exclusions"></a>A Defender vizsgálata alóli kivételek
+### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender víruskereső – kizárások
 
 -   **A vizsgálatokból és a valós idejű védelemből kizárandó fájlok és mappák** – Felvesz egy vagy több fájlt vagy mappát (például **C:\Elérési út** vagy **%ProgramFiles%\Elérési út\fájlnév.exe**) a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a fájlokat és mappákat.
 -   **A vizsgálatokból és a valós idejű védelemből kizárandó fájlkiterjesztések** – Ezzel a beállítással egy vagy több fájlnév-kiterjesztés (például **jpg** vagy **txt**) vehető fel a kivételek listájára. A rendszer nem vizsgálja az ilyen kiterjesztésű fájlokat a valós idejű és a ütemezett vizsgálatok során.
@@ -294,16 +364,41 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 - **Kivetítés erre a számítógépre** – Megakadályozza, hogy más eszközök felderíthessék a számítógépet kivetítéshez.
 - **PIN-kód kérése párosításhoz** – PIN-kód kérésének megkövetelése vetítőeszközhöz való csatlakozáskor.
 
-## <a name="start"></a>Indítás
+## <a name="cloud-printer"></a>Felhőbeli nyomtató
 
-- **Alkalmazások levétele a tálcáról** – Megakadályozza, hogy a felhasználó alkalmazásokat távolítson el a Start menüből.
-- **Dokumentumok a Start menüben** – A Windows Start menü Dokumentumok mappájának megjelenítése vagy elrejtése.
-- **Letöltések a Start menüben** – A Windows Start menü Letöltések mappájának megjelenítése vagy elrejtése.
-- **Fájlkezelő a Start menüben** – A Fájlkezelő alkalmazás megjelenítése vagy elrejtése a Windows Start menüjében.
-- **Otthoni csoport a Start menüben** – A Windows Start menü Otthoni csoport mappájának megjelenítése vagy elrejtése.
-- **Zene a Start menüben** – A Windows Start menü Zene mappájának megjelenítése vagy elrejtése.
-- **Hálózat a Start menüben** – A Windows Start menü Hálózat mappájának megjelenítése vagy elrejtése.
-- **Személyes mappa a Start menüben** – A Windows Start menü Személyes mappájának megjelenítése vagy elrejtése.
-- **Képek a Start menüben** – A Windows Start menü képeket tartalmazó mappájának megjelenítése vagy elrejtése.
-- **Gépház a Start menüben** – A Gépház alkalmazás elrejtése vagy megjelenítése a Windows Start menüben.
-- **Videók a Start menüben** – A Windows Start menü videókat tartalmazó mappájának megjelenítése vagy elrejtése.
+- **Nyomtatófelderítési URL-cím** – A felhőbeli nyomtatók felderítéséhez használt végpont.
+- **Nyomtatóelérési szolgáltató URL-címe** – Az OAuth-jogkivonatok beszerzésének hitelesítési végpontja.
+- **Azure-beli natív ügyfélalkalmazás GUID-azonosítója** – Az OAuth-szolgáltatótól OAuth-jogkivonatok letöltésére jogosult ügyfélalkalmazás GUID-azonosítója.
+- **Nyomtatási szolgáltatás erőforrás-URI-ja** – A nyomtatási szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
+- **Lekérdezendő nyomtatók maximális száma (csak mobil)** – Az egyes felderítési végpontokból lekérdezendő nyomtatók maximális száma.
+- **Nyomtatófelderítési szolgáltatás erőforrás-URI-ja** – A nyomtatófelderítési szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
+
+## <a name="reporting-and-telemetry"></a>Jelentéskészítés és telemetria
+
+- **Használati adatok megosztása** – Itt adhatja meg a diagnosztikai adatok küldésének szintjét.
+- **Telemetria proxykiszolgálója**
+
+  Adja meg az „Összekapcsolt felhasználói élmények és telemetria” szolgáltatásnak küldött kéréseket SSL-kapcsolaton keresztül továbbító proxykiszolgáló teljes tartománynevét (FQDN) vagy IP-címét a következő formátumban: *kiszolgáló*:*port*. Ha a megadott proxy nem érhető el, vagy ha e szabályzat engedélyezésekor nincs megadva proxy, az „Összekapcsolt felhasználói élmények és telemetria” szolgáltatás adatai nem lesznek továbbítva a helyi eszközről.
+
+   Példák a formátumra:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Üzenetküldés
+
+- **Üzenetszinkronizálás (csak mobilon)** – Az Üzenetek mindenhol és a szöveges üzenetek funkció biztonsági mentésének és visszaállításának letiltása.
+- **MMS (csak mobilon)** – Az MMS küldése/fogadása funkció letiltása az eszközön.
+- **RCS (csak mobilon)** – A gazdag kommunikációs szolgáltatások (RCS) küldése/fogadása funkció letiltása az eszközön.
+
+
+
+
+
+
+
+
+
+
+
+

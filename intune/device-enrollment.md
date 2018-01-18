@@ -14,72 +14,58 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör az eszközregisztrálást írja le, és felsorolja azokat a különféle módszereket, amelyekkel a mobileszközök regisztrálhatók az Intune-nal való felügyeletre.
+Az Intune lehetővé teszi a dolgozók eszközeinek és alkalmazásainak, illetve a céges adatokhoz való hozzáférésük kezelését. Ezen mobileszköz-kezelés (MDM) használatához az eszközöket először regisztrálni kell az Intune szolgáltatásban. Az eszközök regisztrálásakor azok egy MDM-tanúsítványt kapnak. Ez a tanúsítvány az Intune szolgáltatással való kommunikációra szolgál.
 
-Az eszközök Intune-ban való regisztrálásának az a célja, hogy azok felügyelhetők legyenek. Ezt a funkciót mobileszköz-kezelésnek (MDM) nevezzük az Intune dokumentációjában. Az Intune-ban regisztrált eszközök részére a rendszer MDM-tanúsítványt állít ki, amelyet az eszközök az Intune szolgáltatással való kommunikációban használnak.
+Amint az alábbi táblázatokban látható, a dolgozók eszközeit többféleképpen is lehet regisztrálni. Az egyes módszerek az eszköz tulajdonosától (személyes vagy céges), az eszköztípustól (iOS, Windows, Android) és a felügyeleti követelményektől (alaphelyzetbe állítások, affinitás, zárolás) függ.
 
-Az eszköz regisztrálásának módja függ az eszköz típusától, a tulajdonostól és az elvárt felügyeleti szinttől. A saját eszközök használatával (BYOD) történő regisztráció lehetővé teszi a felhasználóknak saját, személyes telefonjaik, táblagépeik vagy számítógépeik regisztrálását. Vállalat által birtokolt eszközök (COD) használatával történő regisztráció lehetővé tesz olyan felügyeleti lehetőségeket, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények.
+## <a name="ios-enrollment-methods"></a>iOS-eszközök regisztrálási módszerei
 
-Ha helyi vagy felhőalapú Exchange ActiveSync programot használ, akkor regisztrálás nélkül is engedélyezhet egyszerű Intune-felügyeletet. A Windows rendszerű számítógépek is kezelhetők mobileszközként. Ez az ajánlott módszer, az alábbiakban leírtak szerint.
-
-
-## <a name="overview-of-device-enrollment-methods"></a>Az eszközök regisztrálási módszereinek áttekintése
-
-Az alábbi táblázat áttekintést nyújt az Intune regisztrációs módszereiről, és az egyes módszerekhez kapcsolódó lehetőségekről és követelményekről.
-
-**Jelmagyarázat**
-
-- **Alaphelyzetbe állítása szükséges** – Az eszköz gyári beállításokra történő visszaállítása a regisztráció alatt.
-- **Felhasználói affinitás** – Az eszközök felhasználókkal való társítása. További információk: [Felhasználói affinitás](device-enrollment-program-enroll-ios.md).
-- **Zárolás** – Nem engedélyezi a felhasználóknak az eszközök regisztrációjának törlését.
-
-**iOS-eszközök regisztrálási módszerei**
-
-| **Módszer** |  **Alaphelyzetbe állítás szükséges** |    **Felhasználói affinitás**   |   **Zárolás** | **Részletek** |
+| **Módszer** |  **Alaphelyzetbe állítás szükséges** |    [**Felhasználói affinitás**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Zárolás** | **Részletek** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   Nem |Nem |Nem  | [További információ](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](./device-enrollment-program-enroll-ios.md)|
+| | A rendszer a regisztráció során visszaállítja az eszközök gyári beállításait. |  Minden eszközt egy felhasználóhoz társítja.| A felhasználók nem törölhetik az eszközök regisztrációját.  | |
+|**[BYOD](#bring-your-own-device)** | Nem|   Igen |   Nem | [További információ](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  | [További információ](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| Igen |   Nem kötelező megadni |  Nem| [További információ](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[További információ](./apple-configurator-direct-enroll-ios.md)|
 
-**Windows-eszközök regisztrálási módszerei**
+## <a name="windows-enrollment-methods"></a>Windows-eszközök regisztrálási módszerei
 
 | **Módszer** |  **Alaphelyzetbe állítás szükséges** |    **Felhasználói affinitás**   |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem |   Igen |   Nem | [További információ](windows-enroll.md)|
-|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nem |  Igen |   Nem | [További információ](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  |[További információ](device-enrollment-manager-enroll.md)|
 |**Automatikus regisztráció** | Nem |Igen |Nem | [További információ](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Csoportos regisztráció** |Nem |Nem |Nem | [További információ](./windows-bulk-enroll.md) |
 
-**Android-eszközök regisztrálási módszerei**
+## <a name="android-enrollment-methods"></a>Android-eszközök regisztrálási módszerei
 
 | **Módszer** |  **Alaphelyzetbe állítás szükséges** |    **Felhasználói affinitás**   |   **Zárolás** | **Részletek**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Nem|    Igen |   Nem | [További információ](./android-enroll.md)|
-|**[DEM](#dem)**|   Nem |Nem |Nem  |[További információ](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nem|   Igen |   Nem | [További információ](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  |[További információ](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Nem | Igen | Nem| [További információ](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-A saját eszközeiket használó („BYOD”) felhasználók telepítik és futtatják a Céges portál alkalmazást az eszköz regisztrálásához. A program lehetővé teszi, hogy a felhasználók elérhessék a vállalati erőforrásokat, például az e-mailt.
+## <a name="bring-your-own-device"></a>Saját eszközök használata (Bring Your Own Device)
+A saját (BYOD-) eszközök közé tartoznak a személyes telefonok, táblagépek és számítógépek. A BYOD-eszközök regisztrálásához a felhasználók telepítik és futtatják a Céges portál alkalmazást. A program lehetővé teszi, hogy a felhasználók elérhessék a vállalati erőforrásokat, például az e-mailt.
 
-## <a name="corporate-owned-devices"></a>Vállalati tulajdonú eszközök
-Az alábbiakban a vállalat által birtokolt eszközök (COD) regisztrációs forgatókönyvei szerepelnek. Az iOS-eszközök az Apple által biztosított megoldások segítségével közvetlenül is regisztrálhatók. A rendszergazdák vagy menedzserek bármilyen típusú eszközt regisztrálhatnak az eszközregisztráció-kezelő segítségével. Az IMEI-számmal rendelkező eszközöket azonosítani lehet, és meg lehet jelölni vállalati tulajdonúként, ami lehetőséget nyújt a vállalati tulajdonú eszközök kezelésére.
+## <a name="corporate-owned-device"></a>Céges eszköz
+A céges eszközök (COD) közé tartoznak a szervezet tulajdonában lévő és a dolgozóknak kiosztott telefonok, táblagépek és számítógépek. A céges eszközök (COD) regisztrációja olyan forgatókönyveket támogat, mint például az automatikus regisztráció, a megosztott eszközök vagy az előre engedélyezett regisztrációs követelmények. A céges eszközök regisztrálásának egy rendszergazdák és menedzserek által gyakran használt módja a készülékregisztráció-kezelő (DEM) alkalmazása. Az iOS-eszközök közvetlenül regisztrálhatók a Készülékregisztrációs program (DEP) Apple által biztosított eszközeivel. Az IMEI-számmal rendelkező eszközöket is lehet azonosítani és meg lehet jelölni céges tulajdonúként.
 
-### <a name="dem"></a>DEM
+### <a name="device-enrollment-manager"></a>Készülékregisztráció-kezelő
 Az eszközregisztráció-kezelő (DEM) egy speciális felhasználói fiók, amely több vállalati tulajdonú eszköz regisztrációjára és felügyeletére szolgál. A kezelők tudják telepíteni a Vállalati portált és regisztrálni számos, felhasználó nélküli eszközt. További információ a [DEM](./device-enrollment-manager-enroll.md) módszerről.
 
-### <a name="dep"></a>DEP
+### <a name="apple-device-enrollment-program"></a>Apple Készülékregisztrációs program
 Az Apple készülékregisztrációs program (DEP) lehetővé teszi szabályzatok létrehozását és vezeték nélküli központi telepítését a DEP keretében vásárolt és felügyelt eszközökre. Az eszköz regisztrálása akkor történik, amikor a felhasználók első alkalommal bekapcsolják az eszközt, és futtatják rajta az iOS beállítási asszisztens alkalmazást. Ez a módszer támogatja az iOS Supervised (Felügyelt) üzemmódját, amely lehetővé teszi konkrét funkciók beállítását az eszközön.
 
 További információ az iOS-eszközök regisztrálásáról a DEP keretében:
