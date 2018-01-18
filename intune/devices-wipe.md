@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
@@ -96,6 +96,18 @@ A **céges adatok eltávolítása** a felügyelt alkalmazásadatokat (ha vannak 
 ### <a name="android-for-work"></a>Android for Work
 
 Az Android for Work-eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz így kikerül az Intune felügyelete alól. Az Android for Work esetében a gyári beállítások visszaállítása nem támogatott.
+
+
+### <a name="macos"></a>macOS
+
+|Adattípus|macOS|
+|-------------|-------|
+|Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik, és ezután a felhasználók megváltoztathatják ezeket a beállításokat.|
+|Wi-Fi és VPN profilbeállításai|Eltávolítva.|
+|Tanúsítvány profilbeállításai|A rendszer az MDM-mel telepített tanúsítványokat eltávolítja és visszavonja.|
+|Felügyeleti ügynök|Törlődik a felügyeleti profil.|
+|Outlook|Ha a feltételes hozzáférés engedélyezve van, az eszközre nem fog új üzenet érkezni.|
+|Azure Active Directory (AAD) elhagyása|Törlődik az Azure AD rekord.|
 
 ### <a name="windows"></a>Windows
 
