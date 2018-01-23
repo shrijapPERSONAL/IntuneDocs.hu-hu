@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 72291be81df5e0358c9477a2749fb7d9d7cb8fdc
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 45bc21b0f49d8ebbed22623aa54ad3d0f5de7589
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS-felhasználói alkalmazások letöltése
 
@@ -49,7 +49,7 @@ A regisztrált felhasználók úgy jutnak hozzá az alkalmazásokhoz, hogy a kö
 
 Az alkalmazások felvételéről és ezeken a csempéken való megjelenítéséről az [Alkalmazások hozzáadása beléptetett eszközökhöz az Intune-ban](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md) című rész nyújt tájékoztatást.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Android-felhasználói alkalmazások letöltése](end-user-apps-android.md)
 
 [Windows-felhasználói alkalmazások letöltése](end-user-apps-windows.md)
