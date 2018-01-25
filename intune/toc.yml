@@ -124,7 +124,7 @@
         - name: Támogatott konfigurációk
           href: supported-devices-browsers.md
           items:
-            - name: Hálózatisávszélesség-felhasználás
+            - name: Hálózati konfiguráció
               href: network-bandwidth-use.md
         - name: Bejelentkezés az Intune-ba
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot üzembe helyezési program
               href: enrollment-autopilot.md
+            - name: Beléptetés állapota képernyő
+              href: windows-enrollment-status.md
         - name: Az androidos eszközök regisztrálásának beállítása
           href: android-enroll.md
         - name: iOS-eszközök regisztrálásának beállítása
