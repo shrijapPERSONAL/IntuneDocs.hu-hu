@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: cbccff7ac58c98e85f5a038950feb5bd6590922b
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: dae736aef57489880915c269cb30785371380a52
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows-eszközök regisztrálása a Windows AutoPilot Deployment Program használatával
 A Windows AutoPilot Deployment Program leegyszerűsíti az eszközök üzembe helyezését. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az Intune AutoPilot-eszközök felügyeletére való használatakor regisztrálásukat követően kezelheti az eszközökön a szabályzatokat, profilokat, alkalmazásokat és így tovább. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséhez lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -77,7 +77,7 @@ Miután létrehozta az AutoPilot Deployment-profilokat, hozzárendelheti azokat 
 7. Frissítse a nézetet annak megjelenítéséhez, hogy vannak-e a profilhoz rendelt eszközök. A folyamat eltarthat néhány percig, attól függően, hogy hány eszközt választott ki. 
 
 > [!Note]
-> A rendszer hozzárendeli az eszközhöz az új profilt. Az Intune-ban már regisztrált eszközökre azonban a profil csak az eszköz alaphelyzetbe állítása és ismételt regisztrálása után lesz alkalmazva.
+> A rendszer hozzárendeli az eszközhöz az új profilt, Az Intune-ban már regisztrált eszközökre azonban a profil csak az eszköz alaphelyzetbe állítása és ismételt regisztrálása után lesz alkalmazva.
 
 ### <a name="assign-a-different-autopilot-deployment-profile"></a>Másik AutoPilot Deployment-profil hozzárendelése
 Ha már hozzárendelt egy AutoPilot Deployment-profilt egy eszközhöz, és egy másik profilt szeretne hozzárendelni, rendelje az új profilt az eszközhöz.  
@@ -101,6 +101,7 @@ Ha nem érdekli a mobileszköz-kezelés, használhatja az AutoPilot megoldást p
 - Szinkronizálni egy másik portálon létrehozott profilokat
 - Megjeleníteni a profil-hozzárendelések más portálon végzett módosításait
 - Szinkronizálni a más portálon végzett profil-hozzárendeléseket
+- Megjeleníteni az eszközlista más portálon végzett módosításait
 
 ## <a name="next-steps"></a>További lépések
 Miután konfigurálta a Windows AutoPilotot regisztrált Windows 10 rendszerű eszközökhöz, sajátítsa el azok felügyeletét. További információt [A Microsoft Intune-eszközfelügyelet ismertetése](https://docs.microsoft.com/intune/device-management) című témakörben talál.

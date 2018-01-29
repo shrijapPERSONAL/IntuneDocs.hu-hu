@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok?
 
@@ -41,7 +41,7 @@ Az **Intune-felügyeletre regisztrált** eszközöknél üzenet jelenik meg, ame
 
 Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkakörnyezetben használják, így az alkalmazásnak a környezettől függően két különböző működése figyelhető meg: munkahelyi vagy személyes.  
 
-Az Intune többszörös identitást támogató alkalmazásokra csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, amikor a végfelhasználó a munkahelyi környezetben használja az alkalmazást.  Például a munkaadathoz való hozzáférésekor a végfelhasználónak PIN-kódot kell megadnia.  Az **Outlook alkalmazás** esetén a végfelhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazásnál** ez akkor fordul elő, amikor a végfelhasználó beírja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint* és **Excel** esetén ez akkor fordul elő, amikor a végfelhasználó a cég OneDrive vállalati helyén tárolt dokumentumhoz fér hozzá.
+Az Intune többszörös identitást támogató alkalmazásokra csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, amikor a végfelhasználó a munkahelyi környezetben használja az alkalmazást.  Például a munkaadathoz való hozzáférésekor a végfelhasználónak PIN-kódot kell megadnia.  Az **Outlook alkalmazás** esetén a végfelhasználónak az alkalmazás indításakor kell megadnia a PIN-kódot. A **OneDrive alkalmazásnál** ez akkor fordul elő, amikor a végfelhasználó beírja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint** és **Excel** esetén ez akkor fordul elő, amikor a végfelhasználó a cég OneDrive vállalati helyén tárolt dokumentumhoz fér hozzá.
 ##  <a name="managing-user-accounts-on-the-device"></a>Felhasználói fiókok kezelése az eszközön
 
 Az Intune az alkalmazásvédelmi szabályzatok telepítését eszközönként csak egy felhasználói fiók esetében támogatja.
@@ -65,5 +65,5 @@ Ha iOS-eszközt használ, és egy második munkahelyi fiókot próbál felvenni 
 
 ## <a name="next-steps"></a>További lépések
 [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban](app-protection-policies.md)

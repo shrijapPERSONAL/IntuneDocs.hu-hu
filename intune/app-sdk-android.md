@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
 > [!NOTE]
 > Kezdésként érdemes lehet elolvasni [Az Intune APP SDK áttekintése](app-sdk.md) című cikket, amely ismerteti az SDK aktuálisan elérhető funkcióit, valamint az integrációval kapcsolatos előkészületeket a támogatott platformokon.
 
-Az Androidhoz készült Microsoft Intune App SDK révén Intune-os alkalmazásvédelmi szabályzatokat (más néven **APP**- vagy MAM-szabályzatokat) építhet be natív Android-alkalmazásába. Intune-kompatibilisnek az Intune App SDK-val integrált alkalmazásokat nevezzük. A rendszergazdák egyszerűen telepíthetnek alkalmazásvédelmi szabályzatokat az Intune-kompatibilis alkalmazáshoz, ha az Intune aktívan felügyeli az alkalmazást.
+Az Androidhoz készült Microsoft Intune App SDK révén Intune-os alkalmazásvédelmi szabályzatokat (más néven **APP**- vagy MAM-szabályzatokat) építhet be natív Android-alkalmazásába. Intune által kezeltnek az Intune App SDK-val integrált alkalmazásokat nevezzük. A rendszergazdák egyszerűen telepíthetnek alkalmazásvédelmi szabályzatokat az Intune által kezelt alkalmazáshoz, ha az Intune aktívan felügyeli az alkalmazást.
 
 
 ## <a name="whats-in-the-sdk"></a>Az SDK tartalma
@@ -55,7 +55,7 @@ Az Intune App SDK egy lefordított androidos projekt. Ez azt jelenti, hogy jelen
 Az androidos Intune App SDK a [Céges portál](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) alkalmazással teszi lehetővé az alkalmazásvédelmi szabályzatok működését. A Céges portál az Intune szolgáltatástól kéri le az alkalmazásvédelmi szabályzatokat. Az alkalmazás az inicializáláskor betölti a Céges portálról a szabályzatot és a betartatásához szükséges kódot.
 
 > [!NOTE]
-> Ha a Céges portál alkalmazás nincs telepítve az eszközre, akkor az Intune-kompatibilis alkalmazás ugyanúgy működik, mint az általános, az Intune alkalmazásvédelmi szabályzatait nem támogató alkalmazások.
+> Ha a Céges portál alkalmazás nincs telepítve az eszközre, akkor az Intune által kezelt alkalmazás ugyanúgy működik, mint az általános, az Intune alkalmazásvédelmi szabályzatait nem támogató alkalmazások.
 
 Az eszközregisztráció nélküli alkalmazásvédelem esetében a felhasználónak _**nem**_ kell regisztrálnia az eszközt a Céges portál alkalmazással.
 
@@ -875,7 +875,7 @@ Az `MAMActivity` osztály metódusát felül is lehet bírálni, ha azt szeretn�
 
 ### <a name="implicit-identity-changes"></a>Az identitás implicit megváltoztatása
 
-Az alkalmazás identitásbeállítási képessége mellett a szálak és a környezetek identitása megváltoztatható a más, alkalmazásvédelmi szabályzattal ellátott Intune-kompatibilis alkalmazásból beérkező adatok alapján is.
+Az alkalmazás identitásbeállítási képessége mellett a szálak és a környezetek identitása megváltoztatható a más, alkalmazásvédelmi szabályzattal ellátott Intune által kezelt alkalmazásból beérkező adatok alapján is.
 
 #### <a name="examples"></a>Példák
 
@@ -947,7 +947,7 @@ Az `onMAMIdentitySwitchRequired` metódus hívandó az összes implicit identit�
 Gyakran előfordul a felhasználói felület szálán végrehajtott műveleteknél, hogy más szálaknak adnak át háttérfeladatokat. A többszörös identitást támogató alkalmazásoknak biztosítaniuk kell, hogy ezek a háttérfeladatok a megfelelő identitással fussanak, mely gyakran megegyezik az átadást végző tevékenység identitásával. A MAM SDK a `MAMAsyncTask` és a `MAMIdentityExecutors` osztály biztosításával nyújt segítséget az identitás megőrzéséhez.
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-A `MAMAsyncTask` osztály használatához egyszerűen ebből az osztályból származtassa a saját osztályát az AsyncTask osztály helyett, és cserélje le a `doInBackground` és a `onPreExecute` metódus felülbírálását a `doInBackgroundMAM` és a `onPreExecuteMAM` metódus felülbírálására. A `MAMAsyncTask` konstruktorának paramétereként meg kell adnia a tevékenység kontextusát. Példa:
+A `MAMAsyncTask` osztály használatához egyszerűen ebből az osztályból származtassa a saját osztályát az AsyncTask osztály helyett, és cserélje le a `doInBackground` és a `onPreExecute` metódus felülbírálását a `doInBackgroundMAM` és a `onPreExecuteMAM` metódus felülbírálására. A `MAMAsyncTask` konstruktorának paramétereként meg kell adnia a tevékenység kontextusát. Például:
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -1353,6 +1353,32 @@ Alább felsoroljuk az összes megengedett stílusattribútumot, az általuk szab
 | Kiemelőszín | A PIN-kód mezőjének szegélyszíne kiemelt állapotban <br> Hivatkozások |accent_color | Szín |
 | Alkalmazás emblémája | Az Intune PIN-kódot bekérő képernyőjén megjelenő nagy ikon | logo_image | Rajzolható |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Felhasználói bejelentkezési kérelem kérése egy APP-WE-szolgáltatás automatikus regisztrálásához, Intune-alkalmazásvédelmi szabályzatok kérése az SDK-val integrált Android LOB-alkalmazás használatához, valamint az ADAL SSO engedélyezése (nem kötelező)
+
+Az alábbiakban útmutatást találhat egy APP-WE szolgáltatás automatikus regisztrációjához szükséges, az alkalmazásindításkor megjelenő felhasználói kérés beállításához (ebben a szakaszban erre **alapértelmezett regisztráció** néven hivatkoztunk), valamint ahhoz, hogy hogyan kényszerítheti az Intune alkalmazásvédelmi szabályzatait, hogy csak az Intune által védett felhasználók használhassák a SDK-val integrált Android LOB-alkalmazást. A cikk emellett ismerteti, hogyan engedélyezhető az SSO az SDK-val integrált Android LOB-alkalmazáshoz. Ezt **nem** támogatják azok az áruházbeli alkalmazások, amelyeket nem Intune-felhasználók is használhatnak.
+
+> [!NOTE] 
+> Az **alapértelmezett regisztráció** előnyei közé tartozik egy egyszerűsített módszer az eszközön található alkalmazás az APP-WE szolgáltatástól lekért szabályzatához.
+
+### <a name="general-requirements"></a>Általános követelmények
+* Az Intune SDK csapata kérni fogja az alkalmazás azonosítóját. Ezt az [Azure Portalon](https://portal.azure.com/), a **Minden alkalmazás** terület **Alkalmazásazonosító** oszlopában találhatja meg. Az Intune SDK csapatát e-mailen keresztül érdemes felkeresni (msintuneappsdk@microsoft.com).
+     
+### <a name="working-with-the-intune-sdk"></a>Az Intune SDK használata
+Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
+
+1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
+> [!NOTE] 
+> Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az Azure Portal-alkalmazásazonosítónak. 
+* Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.
+
+2. Az alapértelmezett regisztráció engedélyezéséhez írja az alábbi értéket a jegyzékfájlba: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Ez lehet az alkalmazás egyetlen MAM-WE-integrációja. Ha az alkalmazás többször próbál meg MAMEnrollmentManager API-kat hívni, problémák merülhetnek fel.
+
+3. A MAM-szabályzat engedélyezéséhez írja az alábbi értéket a jegyzékfájlba: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Ez kényszeríti a felhasználót, hogy letöltse a céges portált az eszközre, és a használat előtt elvégezze az alapértelmezett regisztrációt.
+
 ## <a name="limitations"></a>Korlátozások
 
 ### <a name="file-size-limitations"></a>Fájlméretre vonatkozó korlátozások
@@ -1380,7 +1406,7 @@ A [ProGuard](http://proguard.sourceforge.net/) nélkül futó nagyméretű kódb
     
 ### <a name="exported-services"></a>Exportált szolgáltatások
 
- Az Intune App SDK-ban szereplő AndroidManifest.xml fájlban szerepel a **MAMNotificationReceiverService** szolgáltatás, amelynek exportált szolgáltatásnak kell lennie ahhoz, hogy a Céges portál értesítéseket küldhessen a kompatibilis alkalmazásoknak. A szolgáltatás ellenőrzi a hívót annak ellenőrzéséhez, hogy csak a vállalati portál számára engedélyezett-e az értesítések küldése.
+ Az Intune App SDK-ban szereplő AndroidManifest.xml fájlban szerepel a **MAMNotificationReceiverService** szolgáltatás, amelynek exportált szolgáltatásnak kell lennie ahhoz, hogy a Céges portál értesítéseket küldhessen a kezelt alkalmazásoknak. A szolgáltatás ellenőrzi a hívót annak ellenőrzéséhez, hogy csak a vállalati portál számára engedélyezett-e az értesítések küldése.
 
 ### <a name="reflection-limitations"></a>A reflexió korlátozásai
 Egyes MAM-alaposztályok (például MAMActivity és MAMDocumentsProvider) olyan metódusokat tartalmaznak (az eredeti Android-alaposztályok alapján), amelyek paraméter- és visszatérési típusai csak bizonyos API-szintek felett érhetők el. Ezen okból kifolyólag nem mindig enumerálható reflexióval az alkalmazás-összetevők összes metódusa. Ez a korlátozás nemcsak a MAM-ra érvényes, hanem akkor is jelentkezne, ha az alkalmazás saját maga implementálná az adott metódusokat az Android-alaposztályokból.

@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +87,7 @@ A tanúsítványprofilok konfigurálása előtt végre kell hajtania az alábbi 
 Hozzon létre egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni. Ezt a fiókot kell megadnia a sablonok vállalati hitelesítésszolgáltatónál való konfigurálásakor, még mielőtt telepítené és konfigurálná az NDES-t. Gondoskodjon arról, hogy a felhasználó rendelkezzen az alapértelmezett jogokkal, valamint a következő jogokkal: **Helyi bejelentkezés engedélyezése**, **Bejelentkezés szolgáltatásként** és **Bejelentkezés kötegfájlfolyamatként**. Egyes szervezeteknél olyan korlátozási szabályzatok lehetnek érvényben, amelyek letiltják ezeket a jogokat.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>2. lépés – Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-A feladatban az alábbiak szerepelnek:
+A feladat tartalma:
 
 -   Tanúsítványsablon konfigurálása az NDES számára
 
@@ -194,7 +193,7 @@ A feladatban az alábbiak szerepelnek:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>4. lépés – Az NDES Intune-nal való használatának konfigurálása
-A feladatban az alábbiak szerepelnek:
+A feladat tartalma:
 
 -   Az NDES konfigurálása a vállalati hitelesítésszolgáltatóval való használatra
 
@@ -227,7 +226,7 @@ A feladatban az alábbiak szerepelnek:
     |Tanúsítványsablon célja (a Kérelmek kezelése lapon)|Szerkesztendő beállításazonosító|Az SCEP-profil Intune felügyeleti konzolban látható értéke|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
     |Aláírás|SignatureTemplate|Digitális aláírás|
-    |Titkosítás|EncryptionTemplate|Kulcstitkosítás|
+    |Encryption|EncryptionTemplate|Kulcstitkosítás|
     |Aláírás és titkosítás|GeneralPurposeTemplate|Kulcstitkosítás<br /><br />Digitális aláírás|
     Ha például a tanúsítványsablon célja **Titkosítás**, akkor az **EncryptionTemplate** azonosító értékét kell a tanúsítványsablon nevére cserélnie.
 
@@ -297,7 +296,7 @@ A feladatban az alábbiak szerepelnek:
 4. Indítsa újra az NDES-kiszolgálót. A kiszolgáló mostantól készen áll az tanúsítvány-összekötő támogatására.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>5. lépés – Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
-A feladatban az alábbiak szerepelnek:
+A feladat tartalma:
 
 - Az NDES támogatásának engedélyezése az Intune-ban.
 - A tanúsítvány-összekötő letöltése, telepítése és konfigurálása a környezeti kiszolgálón. A magas rendelkezésre állás megvalósításához több tanúsítvány-összekötőt telepíthet a különböző kiszolgálókra.
@@ -329,6 +328,9 @@ A feladatban az alábbiak szerepelnek:
 5.  A **Certificate Connector** (Tanúsítvány-összekötő) felhasználói felületén:
 
     Kattintson a **Bejelentkezés** gombra, és írja be az Intune szolgáltatás rendszergazdai hitelesítő adatait, vagy egy bérlői rendszergazda globális felügyeleti engedéllyel rendelkező hitelesítő adatait.
+
+    > [!IMPORTANT]
+    > A felhasználói fiókot egy érvényes Intune-licenchez kell hozzárendelni. Ha a felhasználói fiók nem rendelkezik érvényes Intune-licenccel, az NDESConnectorUI.exe sikertelenül fut.
 
     Ha a szervezet proxykiszolgálót használ, és proxy szükséges ahhoz, hogy az NDES-kiszolgáló el tudja érni az internetet, kattintson a **Proxykiszolgáló használata** lehetőségre, és adja meg a proxykiszolgáló nevét és portját, illetve a csatlakozáshoz szükséges fiókadatokat.
 

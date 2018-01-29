@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -34,7 +34,7 @@ Az Intune App SDK hasonló lehetőségeket támogat az Android és az iOS eseté
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Ha az alkalmazás elérhető lesz nyilvános alkalmazás-áruházban, például az Apple App Store-ban vagy a Google Play áruházban:
 
-Először _**regisztrálnia kell**_ az alkalmazást a Microsoft Intune-nál, és el kell fogadnia a regisztrációs feltételeket. Ezt követően a rendszergazdák alkalmazásvédelmi szabályzatot alkalmazhatnak a felkészített alkalmazásra, amely Intune-alkalmazáspartnerként lesz látható.
+Először _**regisztrálnia kell**_ az alkalmazást a Microsoft Intune-nál, és el kell fogadnia a regisztrációs feltételeket. Ezt követően a rendszergazdák alkalmazásvédelmi szabályzatot alkalmazhatnak a kezelt alkalmazásra, amely Intune-alkalmazáspartnerként lesz látható.
 
 Az Intune-rendszergazdák nem alkalmazhatják az alkalmazásvédelmi szabályzatot az alkalmazás mélyhivatkozására, amíg el nem végezte a regisztrációt, és a Microsoft Intune-csapat meg nem erősítette azt. A Microsoft felveszi az alkalmazást a [Microsoft Intune-partnerek lapjára](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Az alkalmazás ikonja jelzi, hogy az alkalmazás támogatja az Intune alkalmazásvédelmi szabályzatait.
 
@@ -60,8 +60,6 @@ Ha a jövőben változik az alkalmazás mélyhivatkozása, újra kell regisztrá
 > [!NOTE]
 > Kérjük, értesítsen minket, ha az alkalmazást az Intune App SDK új verziójával frissíti.
 
-
-
 ## <a name="download-the-sdk-files"></a>Az SDK-fájlok letöltése
 
 A natív iOS-hez, illetve Androidhoz készült Intune App SDK-k egy Microsoft GitHub-fiókban találhatók. Az alábbi két nyilvános adattár tartalmazza a natív iOS-hez, illetve Androidhoz készült SDK-fájlokat:
@@ -75,10 +73,6 @@ Ha Xamarin- vagy Cordova-alkalmazást kíván felvenni, használja a következő
 * [Intune App SDK Cordova beépülő modul](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Érdemes regisztrálnia egy GitHub-fiókot, hogy leágazhasson az adattárakból, és lehúzhassa a változásokat. A GitHub révén a fejlesztők kommunikálni tudnak a termékcsapattal, hibákat jelenthetnek, és gyors válaszokat kaphatnak, elolvashatják a kibocsátási megjegyzéseket, valamint visszajelzést adhatnak a Microsoftnak. Az Intune App SDK GitHubra vonatkozó kérdései az msintuneappsdk@microsoft.com címen teheti fel.
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>IOS vagy Android rendszerhez készült alkalmazás engedélyezése alkalmazásvédelmi szabályzat használatához
 
@@ -102,9 +96,6 @@ A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK 
  
  * Az alkalmazás [AAD-ügyfélazonosítójának](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) egyedinek kell lennie az iOS-es és androidos platformokon egyaránt.
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>Telemetria konfigurálása az alkalmazásra vonatkozóan
 
 A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
@@ -113,7 +104,10 @@ A Microsoft Intune statisztikát gyűjt az alkalmazás használatáról.
 
     * Ha úgy dönt, hogy nem kíván SDK-ból származó telemetriai adatokat küldeni a Microsoft Intune-nak az alkalmazásából, le kell tiltania az SDK-ban a telemetria-átvitelt az IntuneMAMSetting könyvtárban található `MAMTelemetryDisabled` tulajdonság „YES” értékre való állításával.
 
-* **Androidhoz készült Intune App SDK**: A telemetriai adatokat a program nem naplózza az SDK használatával.
+* **Androidhoz készült Intune App SDK**: Az Androidhoz készült Intune App SDK nem szabályozza az alkalmazásából való adatgyűjtést. Az Céges portál alkalmazás alapértelmezés szerint telemetriai adatokat naplóz. Az adatokat az SDK a Microsoft Intune-nak küldi el. A Microsoft szabályzatának megfelelően nem gyűjtünk személyazonosításra alkalmas adatokat (PII). 
+
+    * Ha a végfelhasználók nem szeretnének ilyen adatokat küldeni, ki kell kapcsolniuk a telemetriát a Céges portál alkalmazás Beállítások menüpontjában. További információt [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android) című témakörben találhat. 
+
 
  Az üzletági iOS- és Android-alkalmazás verziószáma látható <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ Az Intune üzletági alkalmazásai mostantól megjelenítik az iOS- és Android-
 
 ### <a name="full-version-number"></a>Teljes verziószám
 
-A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például: 2.2(2.2.17560800)
+A teljes verziószám az alkalmazás egy adott verzióját azonosítja. A szám az alábbi formátumban jelenik meg: _Verzió_(_Build_). Például: 2.2(2.2.17560800). 
 
 A teljes verziószám két részből áll:
 
@@ -163,7 +157,7 @@ Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy
 ### <a name="test-your-app"></a>Az alkalmazás tesztelése
 Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való integrálásához szükséges lépéseket, meg kell győződnie arról, hogy a felhasználóknál és a rendszergazdánál engedélyezve vannak és működnek az alkalmazásvédelmi szabályzatok. Az integrált alkalmazás teszteléséhez a következőkre lesz szüksége:
 
-* **Microsoft Intune-tesztfiók**: Az Intune használatára előkészített alkalmazása Intune-beli alkalmazásvédelmi funkcióinak teszteléséhez Microsoft Intune-fiók szükséges.
+* **Microsoft Intune-tesztfiók**: Az Intune által kezelt alkalmazás az Intune-beli alkalmazásvédelmi funkcióinak teszteléséhez Microsoft Intune-fiók szükséges.
 
     * Ha független szoftverszállítóként engedélyezi az Intune alkalmazásvédelmi szabályzatának használatához az iOS vagy Android rendszerhez készült áruházbeli alkalmazásait, a regisztráció (az ezt ismertető lépésben leírt módon történő) befejezése után kapni fog egy promóciós kódot. A promóciós kód lehetővé teszi, hogy feliratkozzon a Microsoft Intune próbaverziójának 1 évig meghosszabbított használatára.
 
@@ -171,7 +165,7 @@ Miután elvégezte az iOS vagy Android alkalmazásnak az Intune App SDK-való in
 
 * **Az Intune alkalmazásvédelmi szabályzatai**: Ha az alkalmazását az összes Intune-beli alkalmazásvédelmi szabályzattal tesztelni szeretné, akkor minden szabályzatbeállításnál tudnia kell, mi a várt viselkedés. Lásd az [iOS alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/ios-mam-policy-settings) és az [Android alkalmazásvédelmi szabályzatainak](/intune-classic/deploy-use/android-mam-policy-settings) ismertetését.
 
-* **Hibaelhárítás**: Ha problémákat tapasztal az alkalmazás használata során tapasztalható felhasználói élmény manuális tesztelésekor, nézze át [A MAM hibaelhárítása](/intune-classic/troubleshoot/troubleshoot-mam) című szakaszt. Ez a cikk az Intune-hoz előkészített alkalmazásokban esetleg előforduló gyakoribb problémákhoz, párbeszédpanelekhez és hibaüzenetekhez nyújt segítséget. 
+* **Hibaelhárítás**: Ha problémákat tapasztal az alkalmazás használata során tapasztalható felhasználói élmény manuális tesztelésekor, nézze át [A MAM hibaelhárítása](/intune-classic/troubleshoot/troubleshoot-mam) című szakaszt. Ez a cikk az Intune-ban kezelt alkalmazásokban esetleg előforduló gyakoribb problémákhoz, párbeszédpanelekhez és hibaüzenetekhez nyújt segítséget. 
 
 ### <a name="badge-your-app-optional"></a>Az alkalmazás megjelölése jelvénnyel (nem kötelező)
 

@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 12f4a09fe10ec792abe8183369a21f53c23f5d1a
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2018"></a>A Microsoft Intune előzetes kiadása – 2018. január
 
@@ -33,7 +33,7 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -41,7 +41,7 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 
 ### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>Megfelelőségi problémák egyszerűbb megoldása a Windows 10 rendszerhez készült Céges portál alkalmazásban <!--676546 -->
 
-A Windows-eszközök végfelhasználói mostantól rá tudnak koppintani a Céges portál alkalmazásban az okra, amely miatt az eszköz nem felel meg valamelyik biztonsági szabálynak. Amikor csak lehetséges, ennek hatására meg fog jelenni az a beállítási képernyő, ahol kezelhető a probléma. 
+A Windows-eszközök végfelhasználói mostantól rá tudnak koppintani a Céges portál alkalmazásban az okra, amely miatt az eszköz nem felel meg valamelyik biztonsági szabálynak. Amikor csak lehetséges, ennek hatására meg fog jelenni az a beállítási képernyő, ahol kezelhető a probléma.
 
 ### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>Új felhasználóhitelesítési lehetőség az Apple-eszközök tömeges regisztrálásakor <!-- 747625 -->
 Az Intune mostantól lehetővé teszi az eszközök Céges portál alkalmazással való hitelesítését az alábbi regisztrációs módszerek használatakor:
@@ -59,16 +59,16 @@ Az Intune támogatni fogja az eszközök regisztrációját akár 100 különbö
 
 Az áttelepítés után az Apple DEP vagy ASM rendszer Graphon keresztüli kezeléséhez használt bétaverziós Graph API-k és közzétett parancsfájlok nem fognak többé működni. Már fejlesztés alatt állnak az új bétaverziós Graph API-k, és az áttelepítés után kiadjuk őket.
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>Eszközkategóriák kiválasztása a „Hozzáférés munkahelyi vagy iskolai rendszerhez” beállításokkal <!-- 1058963 eeready --> 
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>Eszközkategóriák kiválasztása a „Hozzáférés munkahelyi vagy iskolai rendszerhez” beállításokkal <!-- 1058963 eeready -->
 Ha engedélyezte az [eszközcsoport-leképezést](https://docs.microsoft.com/en-us/intune/device-group-mapping), a Windows 10-felhasználókat felkéri a rendszer egy eszközkategória választására, miután regisztráltak a **Gépház** > **Fiókok** > **Hozzáférés munkahelyi vagy iskolai rendszerhez** területen elérhető **Csatlakozás** gombbal, vagy a kezdőélmény során.
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Megfelelőségi szabályzatok alkalmazása eszközcsoportokban lévő eszközökre <!--1307012 -->
 
-Alkalmazhatja majd a megfelelőségi szabályzatokat felhasználói csoportokban lévő felhasználókra. Alkalmazhatja majd a megfelelőségi szabályzatokat eszközcsoportokban lévő eszközökre. 
+Alkalmazhatja majd a megfelelőségi szabályzatokat felhasználói csoportokban lévő felhasználókra. Alkalmazhatja majd a megfelelőségi szabályzatokat eszközcsoportokban lévő eszközökre.
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>Alkalmazástársítás belefoglalása vagy kizárása csoportok alapján <!-- 1406920 -->
 
-Az alkalmazások társítása során, illetve a társítás típusának kiválasztása után megadhatja a belefoglalni, valamint a kizárni kívánt csoportokat. Felhasználhatja a beépített csoportokat (Minden felhasználó, Minden eszköz és Minden felhasználó+eszköz) is belefoglalási csoportként.
+Az alkalmazások társítása során, illetve a társítás típusának kiválasztása után megadhatja a belefoglalni, valamint a kizárni kívánt csoportokat.
 
 ### <a name="remote-erase-command-support----1438084---"></a>Távoli törlési parancs támogatása <!-- 1438084 -->
 
@@ -93,7 +93,7 @@ Hamarosan megjelenik egy bővítmény az Intune-ban a Windows Information Protec
 
 Láthatók lesznek a nem megfelelő eszközökről értesítő e-mailekben a nem megfelelő eszközök adatai. A következő cikket frissítjük majd ennek a változásnak megfelelően: [Meg nem felelés esetén végrehajtandó műveletek automatizálása](#actions-for-noncompliance).
 
-### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Az Intune feltételes hozzáférési szabályzatai csak az Azure Portalon állnak rendelkezésre <!-- 1737088 1634311 --> 
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Az Intune feltételes hozzáférési szabályzatai csak az Azure Portalon állnak rendelkezésre <!-- 1737088 1634311 -->
 Egyszerűbbé válik a feltételes hozzáférés konfigurálása és felügyelete. A szabályzatok konfigurálására és felügyeletére csak az [Azure Portal](https://portal.azure.com) **Azure Active Directory** > **Feltételes hozzáférés** menüpontjában lesz lehetőség. A kényelmes használat céljából ez a panel az Intune-ban is elérhető lesz az Azure Portal **Intune** > **Feltételes hozzáférés** menüpontjában.
 
 ###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>Riasztás a lejárt és hamarosan lejáró tokenekről <!-- 1639263 -->
@@ -105,8 +105,11 @@ A PrinterOn vezeték nélküli nyomtatási megoldásaival a felhasználók távo
 ### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>A Céges portál alkalmazás jóváhagyása Android for Work rendszerhez <!--1797090 -->
 Ha a cég használ Android for Work rendszert, manuálisan jóvá kell hagynia a Céges portál alkalmazást Androidhoz annak érdekében, hogy az továbbra is fogadni tudja az automatikus frissítéseket a felügyelt Google Play Áruházból.
 
+### <a name="faceid-on-ios-devices----1807377---"></a>FaceID iOS-eszközökön<!-- 1807377 -->
+Az Intune alkalmazásvédelmi szabályzatai mostantól támogatják az iOS-eszközök FaceID-vezérlő beállítását. Ez a beállítás a FaceID funkciót támogató eszközökre vonatkozik (jelenleg csak az iPhone X). Ez a beállítás nem azonos a jelenleg támogatott TouchID-vezérlőkkel. A szervezetek kiválaszthatják, hogy megbízhatónak találják-e a PIN-kérésekhez a FaceID-technológiát a TouchID helyett.
+
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>Microsoft Graph API Intune-hoz – Általános elérhetőség <!-- 1833289 -->
-Az Microsoft Graph szolgáltatás Intune-hoz készült API-jai programozott hozzáférést nyújtanak olyan adatokhoz és metódusokhoz, amelyekkel automatizálhatja az Intune szolgáltatásban elvégezhető felügyeleti műveleteket.  Most, hogy ezek az API-k **általánosan elérhetővé válnak**, az ügyfelek, partnerek és fejlesztők a segítségükkel integrálhatják azokat a belső fejlesztésű vagy kereskedelmi megoldásaikat, amelyek az Intune-hoz vagy a Microsoft Graphon keresztül elérhető más Microsoft-szolgáltatásokhoz kapcsolódnak vagy azok támogatását igénylik. 
+Az Microsoft Graph szolgáltatás Intune-hoz készült API-jai programozott hozzáférést nyújtanak olyan adatokhoz és metódusokhoz, amelyekkel automatizálhatja az Intune szolgáltatásban elvégezhető felügyeleti műveleteket.  Most, hogy ezek az API-k **általánosan elérhetővé válnak**, az ügyfelek, partnerek és fejlesztők a segítségükkel integrálhatják azokat a belső fejlesztésű vagy kereskedelmi megoldásaikat, amelyek az Intune-hoz vagy a Microsoft Graphon keresztül elérhető más Microsoft-szolgáltatásokhoz kapcsolódnak vagy azok támogatását igénylik.
 
 <!-- the following are present prior to 1801 -->
 
@@ -118,13 +121,6 @@ Ha egy adott eszközhöz egy vagy több iOS Volume Purchase Program-alkalmazás 
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>iOS Volume Purchasing Program-token licenceinek visszavonása <!-- 820870 -->
 Visszavonható lesz az egy adott VPP-tokenhez tartozó összes iOS Volume Purchasing Program-alkalmazás (VPP-alkalmazás) licence.
-
-### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Hálózati hozzáférés-vezérlés (NAC) által felügyelt eszközök bejelentkezési jelentéskészítése <!-- 1232250 -->
-A változtatás előtt a rendszergazdák nem láthatták az Intune-ban, hogy a NAC által felügyelt eszköz kommunikál-e a NAC-megoldásukkal. Ha egy NAC-felügyelt eszköz nem kommunikál a NAC-megoldással, az eszközt a NAC-megoldás nem megfelelőnek minősíti, és letiltja, ezért az eszközt a megfelelőségi állapotot figyelő feltételes hozzáférési szabályzatok is letiltják.
-
-A változtatásnak köszönhetően a rendszergazdák most már láthatják, hogy melyik hálózati hozzáférés-vezérlés által felügyelt eszköz kommunikál sikeresen a hálózati hozzáférés-vezérlő megoldásukkal, és melyik nem. A funkció az Intune Eszközmegfelelőségi tevékenységprofiljának két új figyelőfüggvényéből áll, amelyeknek a következők a statisztikái:
-- **NAC-hívások átlagos száma az elmúlt órában**
-- **Legutóbbi NAC bejövő kérelem (dátum/idő)**
 
 ### <a name="new-ios-device-action------1244701---"></a>Új iOS-eszközművelet   <!-- 1244701 -->
 Leállíthatja az iOS 10.3 rendszerű felügyelt eszközöket. Ez a művelet azonnal leállítja az eszközt, anélkül, hogy a végfelhasználót figyelmeztetné. A **Leállítás (csak felügyelt eszköz esetén)** műveletet az eszköztulajdonságoknál találhatja, amikor kiválaszt egy eszközt az **Eszköz** tevékenységprofilban.
@@ -185,6 +181,14 @@ A módosítások a novemberi frissítésben jelennek meg, azonban időbe telhet,
 ### <a name="configure-an-ios-app-pin----1586774---"></a>iOS-alkalmazások PIN-kódjának konfigurálása <!-- 1586774 -->
 Hamarosan kérhet PIN-kódot a kívánt iOS-alkalmazások használatához. A PIN-kód megkövetelését és napokban megadott lejárati idejét az Azure Portalon konfigurálhatja. Amikor szükséges, a felhasználóknak új PIN-kódot kell beállítaniuk, ha hozzá szeretnének férni egy iOS-alkalmazáshoz. Ezt a funkciót csak az Intune App SDK alkalmazásvédelmével ellátott iOS-alkalmazások támogatják.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Felhasználóiélmény-frissítés az iOS-hez készült Céges portál alkalmazásban <!--1412866-->
+
+Egy nagyszabású felhasználóiélmény-frissítést adunk ki az iOS-es Céges portál alkalmazáshoz. A frissítés teljes mértékben átalakítja az alkalmazás látványát, modernebb külsőt, valamint könnyebb használhatóságot és elérhetőséget nyújtva. Az iOS-es Céges portál minden funkciója továbbra is ugyanúgy működik.
+
+A frissített, iOS-es Céges portál alkalmazás előzetes verziója elérhető az Apple TestFlight programjában, amelynek keretében kipróbálhatja az alkalmazást, és visszajelzést küldhet róla. Regisztráció a TestFlight-hozzáféréshez: https://aka.ms/intune_ios_cp_testflight. 
+
+![előzetes képek az új ios-es céges portál alkalmazáshoz](./media/ios-cp-app-redesign-1801-teaser.png)
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -204,10 +208,6 @@ A Windows 10-hez létrehozhat olyan kiadásfrissítési szabályzatot, amely a W
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### <a name="android-for-work-support-for-lookout----1087312---"></a>Az Android for Work Lookout-támogatása <!-- 1087312 -->   
-A Lookouttal rendelkező Intune-összekötők támogatni fogják az Android for Work rendszerű eszközöket a Lookout for Work alkalmazás használatakor. A Lookout alkalmazást a tárolón kívül vagy belül egyaránt telepítheti.
 
 ### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune App Protection és Citrix MDX fejlesztői eszközök <!-- 709185 -->
 Az eszközöket és az alkalmazásokat a Citrix XenMobile MDX és a Microsoft Intune kombinációjával is kezelheti. Így az eszközök kezelésénél egyaránt igénybe veheti az Intune alkalmazásvédelmi szabályzatát és a Citrix mVPN-technológiáját.

@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -53,7 +53,6 @@ Az alkalmazásburkoló eszköz futtatása előtt bizonyos általános előfelté
   * A bementi alkalmazás jogosultságait az Intune alkalmazásburkoló eszköz használata előtt be kell állítani. A [jogosultságok](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) a meglévők mellett további engedélyekkel és képességekkel ruházzák fel az alkalmazást. További utasításokért lásd az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részt.
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Az App Wrapping Tool Apple Developerre vonatkozó előfeltételei
-
 
 Ha burkolt alkalmazásokat kizárólag a szervezete felhasználói számára szeretne terjeszteni, szüksége lesz egy fiókra az [Apple Developer Enterprise Programban](https://developer.apple.com/programs/enterprise/), valamint az Apple Developerhez csatolt, az alkalmazás-aláíráshoz használt néhány entitásra.
 
@@ -204,8 +203,8 @@ Az alkalmazásburkoló eszközzel a következő parancssori paraméterek haszná
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Részletes használati információkat jelenít meg az alkalmazásburkoló eszközben elérhető parancssori tulajdonságokról.|
 |**-v**|(Nem kötelező) Részletes üzeneteket jelenít meg a konzolon. A hibakeresést célszerű ezzel a kapcsolóval végezni.|
-|**-e**| (Nem kötelező) Ezzel a kapcsolóval utasíthatja az alkalmazásburkoló eszközt a hiányzó jogosultságok törlésére alkalmazásfeldolgozás közben. További részletek az Alkalmazásjogosultságok beállítása című részben olvashatók.|
-|**-xe**| (Nem kötelező) Információkat jelenít meg az alkalmazás iOS-bővítményeiről, továbbá arról, hogy ezek milyen jogosultságokkal használhatók. További részletek az Alkalmazásjogosultságok beállítása című részben olvashatók. |
+|**-e**| (Nem kötelező) Ezzel a kapcsolóval utasíthatja az alkalmazásburkoló eszközt a hiányzó jogosultságok törlésére alkalmazásfeldolgozás közben. További részletek az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részben olvashatók.|
+|**-xe**| (Nem kötelező) Információkat jelenít meg az alkalmazás iOS-bővítményeiről, továbbá arról, hogy ezek milyen jogosultságokkal használhatók. További részletek az [Alkalmazásjogosultságok beállítása](#setting-app-entitlements) című részben olvashatók. |
 |**-x**| (Nem kötelező) `<An array of paths to extension provisioning profiles>`. Akkor használja, ha az alkalmazáshoz bővítménylétesítési profil szükséges.|
 |**-f**|(Nem kötelező) `<Path to a plist file specifying arguments.>` Ez a kapcsoló a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-fájl neve előtt használandó, ha az IntuneMAMPackager többi tulajdonságát (például -i, -o és -p) a plist-sablonban adja meg. Lásd a plist használata argumentumok megadásához című részt. |
 |**-b**|(Nem kötelező) A -b argumentumok nélküli használatával a burkolt kimeneti alkalmazás csomagverziója ugyanaz lesz, mint a bementi alkalmazásé (nem ajánlott). <br/><br/> A `-b <custom bundle version>` használatával a burkolt alkalmazás egyéni CFBundleVersion-számmal fog rendelkezni. Ha egyéni CFBundleVersion-számot szeretne megadni, célszerű a natív alkalmazás CFBundleVersion-számában a legalacsonyabb értékű tagot megnövelni, például 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ A burkolt alkalmazást a korábban megadott kimeneti mappába menti a rendszer. 
 > A burkolt alkalmazás feltöltésénél megpróbálhat egy régebbi verziót frissíteni, ha az alkalmazás egy régebbi (burkolt vagy natív) verziója már korábban üzembe lett helyezve az Intune-ban. Hiba esetén az alkalmazást új alkalmazásként töltse fel, és törölje a korábbi verziót.
 
 Mostantól telepítheti az alkalmazást a felhasználócsoportok számára, és alkalmazásvédelmi szabályzatokat léptethet érvénybe az alkalmazásra vonatkozóan. Az alkalmazás ezt követően a megadott alkalmazásvédelmi szabályzatoknak megfelelően fut az eszközön.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Milyen gyakran érdemes újraburkolni az iOS-alkalmazást az Intune alkalmazásburkoló eszközével?
+Általában az alábbi esetekben van szükség az alkalmazások újraburkolására:
+* Maga az alkalmazás új verzióban jelent meg. Az alkalmazás előző verziója a burkolás után az Intune-konzolba lett feltöltve.
+* Az Intune iOS-hez használható alkalmazásburkoló eszközének olyan új verziója jelent meg, amely lehetővé teszi a fontosabb hibajavításokat vagy meghatározott alkalmazásvédelmi szabályzatokkal kapcsolatos Intune-funkciókat. Ilyen új verzió 6-8 hetente jelenik meg, és a [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) GitHub-tárházban érhető el.
+
+iOS-alkalmazások esetében az alkalmazás aláírásához használt tanúsítvány- vagy létesítési profiltól eltérő profillal is burkolhatók az alkalmazások, azonban ha az alkalmazásban megadott jogosultságok nem szerepelnek az új létesítési profilban, a burkolás meghiúsul. Ha az „-e” parancssori opcióval (amely eltávolítja a hiányzó jogosultságokat az alkalmazásból) kényszeríti a sikeres burkolást az ilyen esetekben, előfordulhat, hogy az alkalmazás nem megfelelően fog működni.
+
+Ajánlott eljárások az újraburkoláshoz:
+* Győződjön meg arról, hogy egy másik létesítési profil rendelkezik minden olyan szükséges jogosultsággal, amelyekkel a korábbi létesítési profilok is rendelkeztek. 
 
 ## <a name="error-messages-and-log-files"></a>Hibaüzenetek és naplófájlok
 Az alábbi információkat használva háríthatja el az alkalmazásburkoló eszközzel kapcsolatos hibákat.

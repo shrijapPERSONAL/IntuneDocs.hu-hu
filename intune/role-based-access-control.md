@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal
 
@@ -61,6 +61,18 @@ A következő szerepköröket beépített szerepkörként tartalmazza az Intune,
 - **Szabályzat- és profilkezelő**: A megfelelőségi szabályzatot, a konfigurációs profilokat, az Apple-regisztrációt és a céges eszközazonosítókat kezeli.
 - **Csak olvasási jogosultságú operátor**: Megtekintheti a felhasználókra, regisztrációra, konfigurációra és alkalmazásokra vonatkozó információkat. Az Intune-ban nem hajthat végre változtatásokat.
 - **Alkalmazáskezelő**: Kezeli a mobil- és felügyelt alkalmazásokat, és olvashatja az eszközadatokat.
+- **Iskolai rendszergazda**: Az [Intune for Education](introduction-intune-education.md) Windows 10-eszközeit kezeli, és az alábbi műveleteket hajthatja végre: 
+
+|Engedély|Működés|
+|---|---|
+|Adatnaplózás|Olvasás|
+|DeviceConfigurations|Hozzárendelés, létrehozás, törlés, olvasás, frissítés|
+|Eszközregisztráció-kezelők|Olvasás, frissítés|
+|Kezelt eszközök|Olvasás, frissítés<!--, Delete [To be added in 1803]-->|
+|Mobilalkalmazásokban|Hozzárendelés, létrehozás, törlés, olvasás, frissítés|
+|Reports|Olvasás|
+|Távoli műveletek|Számítógép megtisztítása, újraindítás, távoli zárolás, kivonás, eszközszinkronizálás, törlés|
+|Szervezet|Olvasás|
 
 ### <a name="to-assign-a-built-in-role"></a>Beépített szerepkör hozzárendelése
 
