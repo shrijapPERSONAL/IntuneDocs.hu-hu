@@ -1,6 +1,6 @@
 ---
-title: "Az Intune Graph API elérése az Azure AD használatával"
-description: "A cikk azokat a lépéseket írja le, amelyekkel az alkalmazások elérhetik az Intune Graph API-t az Azure AD-n keresztül"
+title: "Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban"
+description: "A cikk azokat a lépéseket írja le, amelyekkel az alkalmazások elérhetik az Intune API-kat a Microsoft Graphban az Azure AD-n keresztül."
 keywords: "intune graphapi c# powershell engedély szerepkörök"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Az Intune Graph API elérése az Azure AD használatával
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
 
-A [Microsoft Graph API](https://developer.microsoft.com/graph/) mostantól megfelelő API-kkal és engedélyezési szerepkörökkel támogatja a Microsoft Intune szolgáltatást.  A Graph API az Azure Active Directoryt (Azure AD) használja a hitelesítéshez és a hozzáférés-vezérléshez.  
-Az Intune Graph API-hoz való hozzáféréshez a következőkre van szükség:
+A [Microsoft Graph API](https://developer.microsoft.com/graph/) mostantól megfelelő API-kkal és engedélyezési szerepkörökkel támogatja a Microsoft Intune szolgáltatást.  A Microsoft Graph API az Azure Active Directoryt (Azure AD) használja a hitelesítéshez és a hozzáférés-vezérléshez.  
+Az Intune API-k a Microsoft Graphban való eléréséhez a következők szükségesek:
 
 - Alkalmazásazonosító, amely tartalmazza:
 
-    - az Azure AD és a Graph API-k hívásához szükséges engedélyt,
+    - az Azure AD és a Microsoft Graph API-k hívásához szükséges engedélyt,
     - az adott alkalmazásfeladatokhoz kapcsolódó engedélyhatóköröket.
 
 - Felhasználói hitelesítő adatok, amelyek tartalmazzák:
@@ -38,11 +38,11 @@ Az Intune Graph API-hoz való hozzáféréshez a következőkre van szükség:
 
 Ez a cikk:
 
-- Bemutatja, hogy kell regisztrálni egy Graph API-hozzáféréssel és a kapcsolódó engedélyezési szerepkörökkel rendelkező alkalmazást.
+- Bemutatja, hogy kell regisztrálni egy Microsoft Graph API-hozzáféréssel és a kapcsolódó engedélyezési szerepkörökkel rendelkező alkalmazást.
 
-- Leírja az Intune Graph API engedélyezési szerepköreit.
+- Leírja az Intune API engedélyezési szerepköreit.
 
-- Példákat ad az Intune Graph API hitelesítésére C# és PowerShell környezetben.
+- Példákat ad az Intune API hitelesítésére C# és PowerShell környezetben.
 
 - Leírja, hogyan állítható be több bérlő támogatása.
 
@@ -53,9 +53,9 @@ További tudnivalókért lásd:
 - [Alkalmazások integrálása az Azure Active Directoryval](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Az OAuth 2.0 ismertetése](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Alkalmazások regisztrálása a Graph API használatához
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Alkalmazások regisztrálása a Microsoft Graph API használatához
 
-A következőképpen regisztrálhat egy alkalmazást a Graph API használatához:
+Ha alkalmazásokat szeretne regisztrálni a Microsoft Graph API használatához:
 
 1.  Jelentkezzen be az [Azure Portalon](https://portal.azure.com) rendszergazdai hitelesítő adatokkal.
 
@@ -127,15 +127,15 @@ Ezen a ponton lehetősége van:
 
 ## <a name="intune-permission-scopes"></a>Intune-engedélyhatókörök
 
-Az Azure AD és a Graph API engedélyhatókörök segítségével szabályozza a céges erőforrásokhoz való hozzáférést.  
+Az Azure AD és a Microsoft Graph engedélyhatókörök segítségével szabályozza a céges erőforrásokhoz való hozzáférést.  
 
-Az engedélyhatókörök (más néven _OAuth-hatókörök_) az adott Intune-entitásokhoz és tulajdonságaikhoz való hozzáférést szabályozzák. Ez a szakasz az Intune Graph API-funkciók engedélyhatóköreit foglalja össze.
+Az engedélyhatókörök (más néven _OAuth-hatókörök_) az adott Intune-entitásokhoz és tulajdonságaikhoz való hozzáférést szabályozzák. Ez a szakasz az Intune API-funkciók engedélyhatóköreit foglalja össze.
 
 További tudnivalók:
 - [Azure AD-hitelesítés](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Alkalmazás-engedélyhatókörök](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-A Graph API engedélyezésekor az alábbi táblázatban összefoglalt Intune Graph API-engedélyhatóköröket adhatja meg az Intune-funkciókhoz való hozzáférés szabályozásához.  Az első oszlop a funkció nevét tünteti fel abban a formában, ahogy az Azure Portalon megjelenik, a második oszlopban az engedélyhatókör neve látható.
+A Microsoft Graph engedélyezésekor az alábbi táblázatban összefoglalt Intune API-engedélyhatóköröket adhatja meg az Intune-funkciókhoz való hozzáférés szabályozásához.  Az első oszlop a funkció nevét tünteti fel abban a formában, ahogy az Azure Portalon megjelenik, a második oszlopban az engedélyhatókör neve látható.
 
 _Hozzáférés engedélyezése_ beállítás | Hatókör neve
 :--|:--
@@ -153,7 +153,7 @@ __Microsoft Intune-konfiguráció olvasása__ | [DeviceManagementServiceConfig.R
 
 A táblázat az Azure Portalon látható sorrendben listázza a beállításokat. Az alábbi szakaszokban a hatókörök betűrendes listája és a hozzájuk tartozó leírás olvasható.
 
-Jelenleg minden Intune-engedélyhatókörhöz rendszergazdai hozzáférés szükséges.  Ez azt jelenti, hogy az Intune Graph API-erőforrásokhoz hozzáférő alkalmazások vagy szkriptek futtatásához rendelkeznie kell a megfelelő hitelesítő adatokkal.
+Jelenleg minden Intune-engedélyhatókörhöz rendszergazdai hozzáférés szükséges.  Ez azt jelenti, hogy az Intune API-erőforrásokhoz hozzáférő alkalmazások vagy szkriptek futtatásához rendelkeznie kell a megfelelő hitelesítő adatokkal.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Bármely példa tesztelésénél előfordulhat, hogy a rendszer az alábbihoz ha
 
 Ilyenkor ellenőrizze a következőket:
 
-- Az alkalmazásazonosítót olyanra módosította, amely jogosult a Graph API és a `DeviceManagementManagedDevices.Read.All` engedélyhatókör használatára.
+- Az alkalmazásazonosítót olyanra módosította, amely jogosult a Microsoft Graph API és a `DeviceManagementManagedDevices.Read.All` engedélyhatókör használatára.
 
 - A bérlői hitelesítő adatok támogatják a felügyeleti funkciókat.
 
