@@ -5,7 +5,7 @@ description: "A felügyelt alkalmazások által használt céges adatok védelme
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c282a98ecf357f650fbfa14499a206c4d283f81a
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -124,6 +124,6 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 ## <a name="next-steps"></a>További lépések
 [A megfelelőség és a felhasználói állapot figyelése](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-android.md)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-ios.md)

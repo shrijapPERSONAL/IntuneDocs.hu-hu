@@ -5,7 +5,7 @@ description: "Az Intune Tanúsítvány-összekötő telepítése és konfigurál
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Az Intune Tanúsítvány-összekötő beállítása a Symantec PKI Manager webszolgáltatáshoz
 
@@ -277,7 +277,7 @@ A tanúsítványprofil objektumazonosítója egy a Symantec hitelesítésszolgá
    > [!IMPORTANT]
    > Ahhoz, hogy az Intune Tanúsítvány-összekötő használatával a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat adhasson ki, a PKCS-tanúsítványprofil következő paramétereinél az alábbi táblázatban megadott, illetve a képernyőfelvételen látható értékeket kell beállítani. 
 
-    |PKCS-tanúsítvány paraméterei | Érték | Leírás |
+    |PKCS-tanúsítvány paraméterei | Érték | Description |
     | --- | --- | --- |
     | Hitelesítésszolgáltató | pki-ws.symauth.com | Ez az érték a Symantec CA alapszolgáltatásának FQDN neve, záró perjelek nélkül.  Ha nem biztos abban, hogy ez a Symantec CA-előfizetéséhez tartozó alapszolgáltatás FQDN neve, érdeklődjön a Symantec ügyfélszolgálatánál. <br><br> Ha az FQDN helytelen, az Intune Tanúsítvány-összekötő nem tudja kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.| 
     | Hitelesítésszolgáltató neve | Symantec | Ennek az értéknek a **Symantec** karakterláncnak kell lennie. <br><br> Ha itt bármilyen más érték szerepel, az Intune Tanúsítvány-összekötő nem fogja tudni kiállítani a Symantec hitelesítésszolgáltatótól származó PKCS-tanúsítványokat.|

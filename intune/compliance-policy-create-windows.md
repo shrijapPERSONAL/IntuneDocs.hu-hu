@@ -5,7 +5,7 @@ description: "A cikk azt ismerteti, hogyan lehet megfelelőségi szabályzatokat
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre.  Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről a [Get started with device compliance](device-compliance-get-started.md) (Az eszközmegfelelőség használatának első lépései) című témakörben találhat további információt.
+A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre.  Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -102,7 +102,7 @@ Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összete
 
 **Ez a beállítás csak Windows 10 Mobile-eszközökre vonatkozik.**
 
-### <a name="encryption"></a>Titkosítás
+### <a name="encryption"></a>Encryption
 
 - **Titkosítás megkövetelése mobileszközön:** Állítsa ezt a beállítást **Igen** értékre, ha szeretné előírni, hogy az eszközök csak titkosítás használata esetén csatlakozhassanak az erőforrásokhoz.
 

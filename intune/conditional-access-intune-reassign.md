@@ -5,7 +5,7 @@ description: "Feltételes hozzáférési szabályzatok áttelepítése az Intune
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -198,7 +198,7 @@ Fontos, hogy miután újra hozzárendelte a feltételes hozzáférési szabályz
 
     ![Feltételes hozzáférési szabályzatok letiltása az Intune klasszikus portálján](./media/reassign-ca-18.png)
 
-## <a name="see-also"></a>További információ
+## <a name="see-also"></a>Lásd még:
 
 - [A feltételes hozzáférés szokásos módjai az Intune-nal](conditional-access-intune-common-ways-use.md)
 - [alkalmazásalapú feltételes hozzáférés az Intune-nal](app-based-conditional-access-intune.md)

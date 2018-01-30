@@ -4,23 +4,24 @@ description: "Tudja meg, mit jelent az eszköz regisztrálása az Intune-felügy
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Felügyelt eszközök használata a munkavégzéshez
 A Microsoft Intune olyan szoftveres megoldás, amely lehetővé teszi a cégek számára a különböző eszközök (például okostelefonok, táblagépek és személyi számítógépek), az alkalmazások, valamint az e-mailhez hasonló más vállalati erőforrások felügyeletét. Ezáltal a rendszer módot ad rá, hogy az alkalmazottak bárhonnan, bármilyen eszközről elérhessék a munkahelyi adatokat, ugyanakkor segít megőrizni a vállalati adatok biztonságát.
@@ -31,13 +32,13 @@ Az eszköznek az Intune felügyelete alá történő regisztrálása lehetővé 
 Munkahelye ügyfélszolgálata láthatja a munkával kapcsolatos adatokat, de a személyes adatait nem. Ez különösen fontos tudnivaló, ha személyes eszközt regisztrál munkahelyi használatra. [A felhasználói súgó következő cikkében](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) részletezzük, hogy mit láthatnak, és mit nem.
 
 ## <a name="how-do-i-get-the-company-portal"></a>Hogyan szerezhetem be a Céges portált?
-A Céges portált kétféleképpen szerezheti be:
+A Vállalati portált kétféleképpen szerezheti be:
 
-- Telepítheti az eszközére a Céges portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
+- Telepítheti az eszközére a Vállalati portál alkalmazást. A Céges portál alkalmazást általában az eszköz alkalmazásáruházából lehet telepíteni, de a cég informatikai támogató szolgálata is telepítheti Önnek azt.
 - Megnyithatja a cég informatikai támogató szolgálata által beállított [Céges portál webhelyet](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Az alkalmazás és a webhely közötti különbség
-A Céges portál alkalmazás és a Munkahelyi portál webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
+A Vállalati portál alkalmazás és webhely között van néhány kisebb eltérés, de a legtöbb feladatot bármelyiken elvégezheti. Néhány olyan feladat, amelyet elvégezhet:
 
 - Az eszközök regisztrálása felügyelet céljából
 - Az eszközök állapotának megtekintése

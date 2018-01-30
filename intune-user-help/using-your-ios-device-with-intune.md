@@ -4,23 +4,24 @@ description: "Hivatkozáslista az Intune-ban regisztrált iOS-eszközökön elv�
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1a7e47b92a2b10996ba9312713234b0d0af9468e
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 8e6eb579968fe8499b176e58ff50b9d7635aa3c0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>iOS-eszköz használata az Intune-nal
 
@@ -45,5 +46,5 @@ Az Intune jelenleg az iOS 9.0-ás és újabb verzióit támogatja.
 - [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-ios.md)
 - [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-ios.md)
 - [Mi történik, ha törli az eszköz regisztrációját az Intune-ból?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
-- [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Munkahelyi portál segítségével?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+- [Mi történik, ha alaphelyzetbe állít egy saját eszközt a Vállalati portálon?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 - [Az eszköz manuális szinkronizálása](sync-your-device-manually-ios.md)

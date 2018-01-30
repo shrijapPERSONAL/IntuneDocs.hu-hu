@@ -4,7 +4,7 @@ description: "Ez a cikk segít tervet kidolgozni a kizárólag felhőalapú Micr
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>Terv létrehozása
 
@@ -193,7 +193,7 @@ A terv kidolgozásakor tudnia kell, hogy milyen eszközök lesznek a környezetb
 
 ### <a name="devices"></a>Eszközök
 
-Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. Az Intune több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálnia a támogatni tervezett eszközöket, OS-platformokat és verziókat. Példa:
+Az Intune a mobileszközök felügyelete révén védi a vállalati adatokat és teszi lehetővé, hogy a végfelhasználók több helyszínen is dolgozhassanak. Az Intune több eszközplatformot is támogat, ezért javasolt a szervezet tervében dokumentálnia a támogatni tervezett eszközöket, OS-platformokat és verziókat. Például:
 
 | **Eszközplatform** | **Operációsrendszer-verziók** |
 |:---:|:---:|
@@ -272,7 +272,7 @@ A végfelhasználók profilok segítségével kapcsolódnak a vállalati adatokh
 
 -   VPN-profil
 
--   E-mail profil
+-   E-mail-profil
 
 Vizsgáljuk meg ezeket a profiltípusokat részletesebben.
 
@@ -301,7 +301,7 @@ Az alábbi példa szemlélteti, hogyan lehet dokumentálni a tanúsítványokat 
 
 A saját tanúsítványprofiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
-#### <a name="wi-fi-profile"></a>Wi-Fi-profil
+#### <a name="wi-fi-profile"></a>Wi-Fi profil
 
 A Wi-Fi-profilok révén a mobileszközök automatikusan csatlakozhatnak a vezeték nélküli hálózatokhoz. Az Intune-ban az összes támogatott platformhoz lehet Wi-Fi-profilt üzembe helyezni. További tudnivalók [az Intune Wi-Fi-profiltámogatásáról.](wi-fi-settings-configure.md)
 
@@ -328,7 +328,7 @@ Az alábbi példában egy VPN-profil dokumentálását szemléltetjük.
 
 
 A saját VPN-profiljainak meghatározásához [letöltheti a fenti táblázat sablonját](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
-#### <a name="email-profile"></a>E-mail profil
+#### <a name="email-profile"></a>E-mail-profil
 
 Az e-mail-profilokkal automatikusan be lehet állítani a levelezőprogramokban a kapcsolati adatokat és az e-mail-konfigurációt. Az Intune csak bizonyos eszközökön támogatja az e-mail-profilokat. További tudnivalók az [e-mail-profilokról és a támogatott platformokról](email-settings-configure.md).
 
@@ -349,7 +349,7 @@ Az Intune-nal többféleképpen is eljuttathat alkalmazásokat a felhasználókh
 
 -   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Vállalati Windows Áruházbeli alkalmazások](windows-store-for-business.md)
+-   [Vállalati Microsoft Áruházbeli alkalmazások](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Alkalmazástípusok követelményei
 
