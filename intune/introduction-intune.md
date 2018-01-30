@@ -4,7 +4,7 @@ description: "Ismerkedjen meg az Intune-nal, az Enterprise Mobility + Security m
 keywords: Mi az az Intune?
 author: Lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: 64fd5e506d0c2fdfa5d99e6ac96d6e12c886fcbe
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
@@ -47,7 +47,7 @@ Az Intune az Enterprise Mobility + Security (EMS) megoldás mobileszköz- és mo
 
 Az Intune architektúráját szemléltető diagramot [nagyobb méretben](./media/intunearchitecture.svg) is megnézheti.
 
-Az Intune eszköz- és alkalmazásfelügyeleti funkcióinak és az EMS adatvédelmének alkalmazási módja a [megoldani kívánt üzleti problémától](#common-business-problems-that-intune-helps-solve) függ. Példa:
+Az Intune eszköz- és alkalmazásfelügyeleti funkcióinak és az EMS adatvédelmének alkalmazási módja a [megoldani kívánt üzleti problémától](#common-business-problems-that-intune-helps-solve) függ. Például:
 * Az eszközfelügyeletet igen hasznosnak fogja találni, ha olyan eszközök készletét alakítja ki, amelyeket közösen használnak egyetlen célra egy kiskereskedelmi bolt több műszakban dolgozó alkalmazottai.
 * Az alkalmazásfelügyeletre támaszkodhat, ha engedélyezni kívánja a dolgozóknak a saját eszközeik használatát (BYOD) a céges adatok elérésére.  
 * Ha pedig céges telefonokat bocsát az infomunkások rendelkezésére, akkor mindkét technológiát alkalmaznia kell.

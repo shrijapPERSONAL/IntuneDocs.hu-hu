@@ -5,7 +5,7 @@ description: "Az Intune-funkciók helye az Azure Portalon.”"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
-manager: angrobe
+manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
-ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
+ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.

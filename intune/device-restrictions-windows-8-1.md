@@ -5,7 +5,7 @@ description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9b31f9d4e784358d5672b0b8de68d34532b72c8
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 8.1-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/12/2017
 -   **Jelszó minimális hossza** – Konfigurálja a jelszó minimális hosszát (karakterszámát).
 -   **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Törli az eszközön lévő adatokat a megadott számú sikertelen bejelentkezési kísérlet után.
 -   **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Azt állítja be, hogy az eszköz hány perc tétlenség után kérjen jelszót a zárolás feloldásához.
--   **Jelszó érvényessége (nap)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
+-   **Jelszó érvényessége (napokban)** – Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.
 -   **Korábbi jelszavak újbóli használatának tiltása** – Meghatározza, hogy a felhasználó beállíthat-e általa korábban már használt jelszavakat.
 -   **Képjelszó és PIN-kód** – Engedélyezi a képjelszó és a PIN-kód használatát. A képjelszó segítségével a felhasználó egy képre rajzolt kézmozdulatokkal jelentkezhet be. A PIN-kód gyors bejelentkezést tesz lehetővé egy négyjegyű kóddal.
 -   **Titkosítás** – Megköveteli, hogy az eszközön minden fájl titkosítva legyen.<br>A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](https://support.microsoft.com/kb/3013816) .

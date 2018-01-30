@@ -5,7 +5,7 @@ description: "Útmutató Android for Work-eszközök megfelelőségi szabályzat
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9a01b88708dd077f15b6e23536667f7ee752e67
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e9ec660fcbd1f02fb0767e322edfdfa7f85964a7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
@@ -93,7 +93,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt kell használni. A rendszer jelszó beírását kéri a végfelhasználótól a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
 
-### <a name="encryption"></a>Titkosítás
+### <a name="encryption"></a>Encryption
 
 - **Titkosítás megkövetelése mobileszközön:** Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök megkövetelik a titkosítást.
 

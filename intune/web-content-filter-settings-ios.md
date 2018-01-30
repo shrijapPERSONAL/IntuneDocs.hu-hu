@@ -5,21 +5,20 @@ description: "Ismerkedjen meg az iOS-es eszközök webhelyhozzáférésének eng
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 12/03/2017
+manager: dougeby
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Webtartalomszűrő-beállítások iOS-eszközökhöz
 
@@ -47,8 +46,11 @@ Ha nincs megadva semmilyen URL, akkor a felhasználók mindössze a microsoft.co
 ## <a name="configure-urls"></a>URL-címek konfigurálása
 
 1. A **Webes tartalomszűrés** panelen szükség esetén válasszon az alábbi beállítások közül:
-    - **Engedélyezett URL-címek** – az **Engedélyezett URL-címek** panelen írja be az engedélyezni (az Apple webszűrőjén átengedni) kívánt URL-címeket, és mindegyik után nyomja meg az Entert.
-    - **Blokkolt URL-címek** – a **Blokkolt URL-címek** panelen írja be a(z Apple webszűrőjének beállításaitól függetlenül) blokkolni kívánt URL-címeket, és mindegyik után nyomja meg az Entert.
+   - **Engedélyezett URL-címek** – az **Engedélyezett URL-címek** panelen írja be az engedélyezni (az Apple webszűrőjén átengedni) kívánt URL-címeket, és mindegyik után nyomja meg az Entert.
+     > [!NOTE]
+     > Az itt megadott URL-címekre nem vonatkozik az Apple webszűrője. Ezek az URL-címek nem a kizárólagosan engedélyezett webhelyeket képviselik. Ha ilyet szeretne beállítani, használja a **Csak meghatározott webhelyek** lehetőséget.
+
+   - **Blokkolt URL-címek** – a **Blokkolt URL-címek** panelen írja be a(z Apple webszűrőjének beállításaitól függetlenül) blokkolni kívánt URL-címeket, és mindegyik után nyomja meg az Entert.
 2. Amikor végzett, kattintson az **OK**gombra.
 
 

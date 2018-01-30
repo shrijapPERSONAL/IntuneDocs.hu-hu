@@ -4,7 +4,7 @@ description: "A Microsoft Intune „Újdonságok” tájékoztatónak archívuma
 keywords: 
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4d83b8b83cba0dab1fc089309201aa591b3d26e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>A klasszikus Intune-portál újdonságai – korábbi hónapok
 
@@ -364,5 +364,5 @@ __A Symantec aláíró tanúsítványának feltöltéséhez most már nincs szü
 __A Windows Phone 8 Munkahelyi portál támogatása__ A Windows Phone 8 Munkahelyi portál támogatását kivezetjük. A Windows Phone 8 és WinRT platform támogatását 2016 októberében kivezettük. Egyúttal a Windows 8 vállalati portál támogatását is elavulttá minősítettük 2016 októberével.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new.md).
