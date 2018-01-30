@@ -4,21 +4,22 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 852d960e39e35d9399a6a47d550cf97fc5581818
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4affdc5f4b58ddfb6db77eb7bcce41eeb1253710
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Tegye biztonságosabbá készülékét a megfelelő jelszóval
 
@@ -27,7 +28,7 @@ A céges erőforrásokhoz, például e-mailekhez és dokumentumokhoz való hozz�
 Ha a Windows-eszköz nem felel meg a cég informatikai támogatási szolgálata jelszószabályzatának, megjelenik egy üzenet, amely röviden ismerteti a problémát, és elmagyarázza, mit kell tennie, hogy a jelszava megfeleljen a követelményeknek.
 
 > [!Note]
-> A cég informatikai támogatási szolgálata több követelményt is beállíthat a jelszóhoz. Megadhatja például, hogy a jelszó bizonyos számú karakterből álljon, illetve hogy számok és betűk is szerepeljenek benne. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogy hogyan állítsa be vagy változtassa meg a jelszavát. A követelmények összes lehetséges kombinációjára vonatkozóan nem áll módunkban utasításokat biztosítani.
+> A cég informatikai támogatási szolgálata több követelményt is beállíthat a jelszóhoz. Megadhatja például, hogy a jelszó bizonyos számú karakterből álljon, illetve hogy számok és betűk is szerepeljenek benne. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogy hogyan állítsa be vagy változtassa meg a jelszavát. Nem ismerteti azonban a követelmények minden lehetséges kombinációját.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Jelszó módosítása Windows Phone 8.1 rendszerű telefonon
 
