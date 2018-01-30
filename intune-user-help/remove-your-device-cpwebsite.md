@@ -4,23 +4,24 @@ description: "Eszköz eltávolítása a Vállalati portálról"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: adfce4c7b62181f5874f44f62f4b820b061538b0
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4064b18a9553c3818008c0641b9428a03733f7c2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Eltávolíthatja az eszközét a vállalati portálról
 
@@ -34,7 +35,7 @@ Az eszköz eltávolítása:
 
 2. A __Saját eszközök__ oldalon válassza ki az eltávolítani kívánt eszköz nevét.
 
-    ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+    ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
 3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Eltávolítás** gombra.
 

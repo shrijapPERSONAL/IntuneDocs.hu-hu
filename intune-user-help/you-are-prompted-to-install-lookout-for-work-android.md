@@ -4,21 +4,22 @@ description: "Ismerje meg a Lookout for Work telepítési módját Androidon."
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c4e0eb3832114c83539025af9d7afebe38e68d81
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3c07a84f029ee5b997b3bfe20a73de6335057cbc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-lookout-for-work"></a>A Lookout for Work telepítése
 
@@ -50,7 +51,7 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 6. Koppintson az **Elfogadás** gombra, hogy engedélyezze a Lookout for Wordnek, hogy beléptesse és beolvassa a profilját. A képernyőn látható, hogy a Lookout for Work éppen csatlakozik a Lookout Security Cloudhoz.
 
-  ![koppintson az Elfogadás gombra, hogy engedélyezze a Lookout for Wordnek, hogy beolvassa a profilját](./media/lookout-needs-permission-to-view-profile-android.png)
+  ![koppintson az Elfogadás gombra, hogy engedélyezze a Lookout for Worknek, hogy beolvassa a profilját](./media/lookout-needs-permission-to-view-profile-android.png)
 
 7. Ellenőrizze azon elemeket, amelyek arról tájékoztatnak, hogy a Lookout miként védi eszközét, majd koppintson az **OK** gombra.
 

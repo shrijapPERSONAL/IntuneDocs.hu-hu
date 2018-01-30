@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 181c3df521e9cf213367becf00e4a53469ad69a9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
@@ -37,7 +38,7 @@ Az eszköz alaphelyzetbe állítása:
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiket át szeretné nevezni.
 
-  ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+  ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
 3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Alaphelyzetbe állítás** gombra.
 

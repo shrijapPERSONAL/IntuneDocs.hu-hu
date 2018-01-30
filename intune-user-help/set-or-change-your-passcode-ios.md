@@ -4,27 +4,28 @@ description: "PIN-kód beállítása vagy módosítása"
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 80cd4b97aafd3307fee310ea742d82a5ff215680
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: dbd2bef05082e6e4f9b7dfef72277040bb6587a7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-or-change-your-passcode"></a>PIN-kód beállítása vagy módosítása
 
 Ha az iOS-eszköz nem felel meg a cég informatikai támogató szolgálata PIN-kód-szabályzatának, megjelenik egy üzenet, amely röviden ismerteti a problémát, és elmagyarázza, mit kell tennie, hogy a PIN-kódja megfeleljen a követelményeknek.
 
-A cég informatikai támogató szolgálata több követelményt is beállíthat a PIN-kódhoz. Például megadhatja, hogy a PIN-kód bizonyos számú karakterből álljon, és hogy számok, betűk és speciális karakterek is szerepeljenek benne. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogyan állítsa be vagy változtassa meg a PIN-kódját. A követelmények összes lehetséges kombinációjára vonatkozóan nem áll módunkban utasításokat biztosítani. Ezeket a PIN-kódokat többek között arra használhatja, hogy a zárolási képernyőről érje el az eszközt.
+A cég informatikai támogató szolgálata több követelményt is beállíthat a PIN-kódhoz. Például megadhatja, hogy a PIN-kód bizonyos számú karakterből álljon, és hogy számok, betűk és speciális karakterek is szerepeljenek benne. Mivel több követelményt is be lehet állítani, ez az útmutató csak azt ismerteti, hogyan állítsa be vagy változtassa meg a PIN-kódját. Nem ismerteti azonban a követelmények minden lehetséges kombinációját. Ezeket a PIN-kódokat többek között arra használhatja, hogy a zárolási képernyőről érje el az eszközt.
 
 Ha gondja van a PIN-kóddal kapcsolatos követelménynek megfelelő PIN-kód beállításával, segítségért forduljon a cég informatikai támogató szolgálatához.
 
