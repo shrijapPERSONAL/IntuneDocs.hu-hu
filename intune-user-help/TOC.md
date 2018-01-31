@@ -30,6 +30,7 @@
 #### [Az eszközök megfelelőségének ellenőrzése](check-compliance-on-your-device-android.md)
 #### [Outlook-e-mailek szinkronizálása takarékos üzemmódban](power-saving-mode-android.md)
 #### [A Samsung Knox gyakori problémáinak elhárítása](samsung-knox-errors-android.md)
+#### [Eszköz frissítése az Outlook telepítéséhez](update-device-outlook-android.md)
 
 #### Problémák megoldása naplók segítségével
 ##### [A részletes naplózás bekapcsolása](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -85,6 +86,7 @@
 #### [Az eszköz azonosítása](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Sorozatszám megkeresése](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [iOS-eszköz frissítése](you-need-to-update-your-ios-device.md)
+#### [Eszköz frissítése az Outlook telepítéséhez](update-device-outlook-ios.md)
 #### [Az általam használt iOS-verzió még nem támogatott](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense
