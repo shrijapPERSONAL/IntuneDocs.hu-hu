@@ -4,7 +4,7 @@ description: "Az Intune-eszközkezelés által támogatott eszközplatformok és
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,34 +14,34 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Támogatott eszközök és böngészők
+# <a name="supported-operating-systems-and-browsers"></a>Támogatott operációs rendszerek és böngészők
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Ez a cikk a vállalatnál az eszközkezelésért felelős rendszergazdák számára készült. A következő témakörben találhat segítséget az Intune telefonra való telepítéséhez: [Using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) (Feladatok elvégzése kezelt eszközökön).
+Ez a cikk a vállalatnál az eszközkezelésért felelős rendszergazdák számára készült. A következő témakörben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions).
 
 A Microsoft Intune beállítása előtt tekintse át az alábbi követelményeket:
 
-- [Támogatott eszközök és számítógépek](#intune-supported-devices)
+- [Támogatott operációs rendszerek](#intune-supported-operating-systems)
 - [Az Intune használatára alkalmas böngészők listája](#intune-supported-web-browsers)
 
 Ismerkedjen meg [az Intune hálózatisávszélesség-felhasználásával](network-bandwidth-use.md) is ([a klasszikus portálon](/intune-classic/get-started/network-bandwidth-use)).
 
-## <a name="intune-supported-devices"></a>Az Intune által támogatott eszközök
+## <a name="intune-supported-operating-systems"></a>Az Intune által támogatott operációs rendszerek
 
-Az Intune a következő eszközöket képes felügyelni a mobileszköz-felügyeleti funkciókkal:
+Az alábbi operációs rendszereket használó eszközöket kezelheti:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Támogatott Samsung Knox Standard-eszközök
 
-Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung Knox-aktiválást, ha az eszköz szerepel a [támogatott Knox-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Így elkerülhetők az MDM-regisztrációt megakadályozó Knox-aktiválási hibák. Azokat az eszközöket, melyek nem támogatják a Samsung Knox-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a Knox platformot, míg mások nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy kompatibilis-e a Knox-szal.
+Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung Knox-aktiválást, ha az eszköz szerepel a [támogatott Knox-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Így elkerülhetők az MDM-regisztrációt megakadályozó Knox-aktiválási hibák. Azokat az eszközöket, melyek nem támogatják a Samsung Knox-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a Knox platformot, míg mások nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy kompatibilis-e a KNOX-szal.
 
 > [!NOTE]
 > Előfordulhat, hogy a Samsung Knox-eszközök regisztrálásához [engedélyeznie kell a Samsung kiszolgálóinak elérését](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
@@ -85,7 +85,6 @@ Az alábbi Samsung-eszközök nem támogatják a Knox platformot, így ezeket az
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Az Intune nem használható a Windows Server operációs rendszer felügyeletére.
 
 ### <a name="windows-pc-software-client"></a>Windowsos számítógépeken futó szoftveres ügyfél
 

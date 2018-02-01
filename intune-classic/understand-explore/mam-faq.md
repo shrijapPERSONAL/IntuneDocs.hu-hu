@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -32,7 +32,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 **Mi az MAM?** Az [Intune mobilalkalmazás-kezelés](/intune/app-lifecycle) olyan Intune-beli felügyeleti összetevők csoportja, amelyek lehetővé teszik mobilalkalmazások közzétételét és leküldését a felhasználók részére, valamint azok konfigurálását, védelmét, figyelését és frissítését.
 
-**Milyen előnyöket kínál az MAM-alkalmazásvédelem?** Az MAM védi munkahelye adatait az alkalmazáson belül. Az MAM-WE segítségével a bizalmas adatokat tartalmazó munkahelyi vagy iskolai alkalmazások szinte bármilyen eszközön felügyelhetők, beleértve a személyes tulajdonú eszközöket is saját eszközök használata (BYOD) esetén. Több irodai alkalmazás felügyelhető az Intune MAM-mel, például a Microsoft Office-alkalmazások. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
+**Milyen előnyöket kínál az MAM-alkalmazásvédelem?** Az MAM védi munkahelye adatait az alkalmazáson belül. Az MAM-WE segítségével a bizalmas adatokat tartalmazó munkahelyi vagy iskolai alkalmazások szinte bármilyen eszközön felügyelhetők, beleértve a személyes tulajdonú eszközöket is saját eszközök használata (BYOD) esetén. Több irodai alkalmazás felügyelhető az Intune MAM-mel, például a Microsoft Office-alkalmazások. Lásd a nyilvánosan elérhető, [Intune által kezelt alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
 **Milyen eszközkonfigurációkat támogat az MAM?** Az Intune MAM két konfigurációt támogat:
   1. **Intune MDM + MAM**: az MAM első indításakor támogatott első konfiguráció. A rendszergazda csak az Intune mobileszköz-kezelésben (MDM) regisztrált eszközökön felügyelheti az MAM- és alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Az MDM + MAM-et használó alkalmazások felügyeletéhez a https://manage.microsoft.com webhelyen elérhető önálló Intune-konzolra van szükség.
@@ -48,9 +48,9 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatokkal felügyelhető alkalmazások
 
-**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](/intune/app-sdk) által előkészített vagy az [Intune alkalmazásburkoló eszköz](/intune/apps-prepare-mobile-application-management) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune-hoz előkészített alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
+**Mely alkalmazásokat lehet alkalmazásvédelmi szabályzatokkal felügyelni?** Az [Intune App SDK](/intune/app-sdk) által előkészített vagy az [Intune alkalmazásburkoló eszköz](/intune/apps-prepare-mobile-application-management) által beburkolt, Intune alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Lásd a nyilvánosan elérhető, [Intune által kezelt alkalmazások](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) hivatalos listáját.
 
-**Mik az alkalmazásvédelmi szabályzatok Intune használatára előkészített alkalmazáson való használatának alapkövetelményei?**
+**Mik az alkalmazásvédelmi szabályzatok Intune által kezelt alkalmazáson való használatának alapkövetelményei?**
   1. A végfelhasználónak rendelkeznie kell egy Azure Active Directory- (AAD-) fiókkal. Az Intune-felhasználók Azure Active Directoryban történő létrehozásáról lásd: [Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz](/intune/users-permissions-add).
 
   2. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt Microsoft Intune-licenccel. További információ a végfelhasználókhoz rendelt Intune-licencekről: [Intune-licencek kezelése](/intune/licenses-assign).
@@ -136,7 +136,7 @@ A MAM (az iOS esetében) jelenleg az alfanumerikus, valamint speciális karakter
 
 **Miért nem működnek a helyszíni szolgáltatások az Intune-nal védett alkalmazásokkal?** Az Intune alkalmazásvédelem megköveteli a felhasználói identitás konzisztenciáját az alkalmazás és az Intune App SDK között. Ez kizárólag modern hitelesítés révén garantálható. Előfordulnak olyan helyzetek, amelyekben az alkalmazások működnek a helyszíni konfigurációval, ám ezek a forgatókönyvek se nem konzisztensek, se nem garantáltak.
 
-**Létezik biztonságos módja a webes hivatkozások megnyitásának a felügyelt alkalmazásokból?** Igen! A rendszergazda életbe léptethet és beállíthat egy alkalmazásvédelmi szabályzatot az [Intune Managed Browser alkalmazáshoz](../deploy-use/manage-internet-access-using-managed-browser-policies.md), amely egy, a Microsoft Intune által fejlesztett, az Intune használatával egyszerűen felügyelhető webböngésző. A rendszergazda előírhatja, hogy az Intune-hoz előkészített alkalmazásokban található összes webhivatkozást csak a Managed Browser alkalmazással lehessen megnyitni.
+**Létezik biztonságos módja a webes hivatkozások megnyitásának a felügyelt alkalmazásokból?** Igen! A rendszergazda életbe léptethet és beállíthat egy alkalmazásvédelmi szabályzatot az [Intune Managed Browser alkalmazáshoz](../deploy-use/manage-internet-access-using-managed-browser-policies.md), amely egy, a Microsoft Intune által fejlesztett, az Intune használatával egyszerűen felügyelhető webböngésző. A rendszergazda előírhatja, hogy az Intune által kezelt alkalmazásokban található összes webhivatkozást csak a Managed Browser alkalmazással lehessen megnyitni.
 
 
 ## <a name="app-experience-on-android"></a>Az alkalmazás felhasználói felülete Androidon

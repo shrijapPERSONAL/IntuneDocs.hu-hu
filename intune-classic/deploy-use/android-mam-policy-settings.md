@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Android-eszközök alkalmazásvédelmi szabályzatainak beállításai a Microsoft Intune-ban
 
@@ -33,7 +33,7 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 | Beállítás | Használat | Alapértelmezett érték(ek) |
 |------|------|------|
 | **Android-alapú biztonsági mentések tiltása** | **Igen** érték esetén az alkalmazás nem készít biztonsági másolatot a munkahelyi vagy iskolai adatokról az [Android Backup Service](https://developer.android.com/google/backup/index.html) szolgáltatásba, **Nem** érték esetén megteszi.| Igen |
-| **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások kaphatnak adatokat ettől az alkalmazástól: <ul><li> **Szabályzattal felügyelt alkalmazások**: Az adatátvitel csak más, szabályzattal felügyelt alkalmazásokba engedélyezett.</li> <li>**Minden alkalmazás**: Az adatátvitel engedélyezett minden alkalmazásnál. </li> <li>**Nincs**: Minden alkalmazásba tiltott az adatátvitel, ideértve a szabályzat által felügyelt többi alkalmazást is.</li></ul> <p>Vannak kivételt képező alkalmazások és szolgáltatások, amelyek felé az Intune engedélyezheti az adatátvitelt. Az alkalmazások és a szolgáltatások teljes listája az [Adatátviteli kivételek](#Data-transfer-exemptions) című szakaszban olvasható.| Minden alkalmazás |
+| **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások kaphatnak adatokat ettől az alkalmazástól: <ul><li> **Szabályzattal felügyelt alkalmazások**: Az adatátvitel csak más, szabályzattal felügyelt alkalmazásokba engedélyezett.</li> <li>**Minden alkalmazás**: Az adatátvitel engedélyezett minden alkalmazásnál. </li> <li>**Nincs**: Minden alkalmazásba tiltott az adatátvitel., ideértve a szabályzat által felügyelt többi alkalmazást is.</li></ul> <p>Vannak kivételt képező alkalmazások és szolgáltatások, amelyek felé az Intune engedélyezheti az adatátvitelt. Az alkalmazások és a szolgáltatások teljes listája az [Adatátviteli kivételek](#Data-transfer-exemptions) című szakaszban olvasható.| Minden alkalmazás |
 | **Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások küldhetnek adatokat ebbe az alkalmazásba: <ul><li>**Szabályzattal felügyelt alkalmazások**: Az átvitel csak más, szabályzattal felügyelt alkalmazásokból engedélyezett.</li><li>**Minden alkalmazás**: Az adatátvitel minden alkalmazásból engedélyezett.</li><li>**Nincs**: Minden alkalmazásból tiltott az adatátvitel, ideértve a szabályzat által felügyelt többi alkalmazást is. </li></ul> <p>Vannak kivételt képező alkalmazások és szolgáltatások, amelyek felől az Intune engedélyezheti az adatátvitelt. Az alkalmazások és a szolgáltatások teljes listája az [Adatátviteli kivételek](#Data-transfer-exemptions) című szakaszban olvasható. | Minden alkalmazás |
 | **A „Mentés másként” művelet letiltása** | Az **Igen** gombot választva letilthatja a Mentés másként lehetőség használatát ebben az alkalmazásban. A **Nem** gombot választva engedélyezheti a Mentés másként funkció használatát. <p><br>**A társzolgáltatások kijelölése, melyekbe menthetők a vállalati adatok** <br>A felhasználók a kijelölt szolgáltatásokba nem tudnak menteni (OneDrive vállalati verzió, SharePoint és Helyi tárhely). Minden más szolgáltatás tiltva lesz.</p> | Nem <br><br> 0 kijelölve |
 | **Kivágási, másolási és beillesztési műveletek korlátozása más alkalmazásokkal** | Itt adhatja meg, hogy mikor használhatók a kivágási, másolási és beillesztési műveletek az alkalmazásban. A következő lehetőségek közül választhat: <ul><li>**Letiltva**:  A kivágási, másolási és beillesztési műveletek letiltása az alkalmazás és más alkalmazások között.</li><li>**Szabályzattal felügyelt alkalmazások**: A kivágási, másolási és beillesztési műveletek engedélyezése az alkalmazás és más, szabályzattal felügyelt alkalmazások között.</li><li>**Szabályzattal felügyelt alkalmazások beillesztési lehetőséggel**: A kivágási és másolási műveletek engedélyezése az alkalmazás és más, szabályzattal felügyelt alkalmazások között. Adatok beillesztésének engedélyezése bármely alkalmazásból ebbe az alkalmazásba.</li><li>**Bármely alkalmazás**: Az alkalmazások közötti kivágási, másolási és beillesztési műveletek nem korlátozottak. | Bármely alkalmazás |
@@ -48,13 +48,13 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 
   ## <a name="data-transfer-exemptions"></a>Adatátviteli kivételek
 
-  Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Intune alkalmazásvédelmi szabályzata engedélyezheti számukra, hogy adatokat küldjenek és fogadjanak. Például az összes Intune-hoz előkészített androidos alkalmazásnak képesnek kell lennie a Google Szövegfelolvasóval történő adatforgalmazásra, hogy a rendszer fel tudja olvasni a mobileszköz képernyőjén látható szöveget. Ez a lista idővel változhat. Azok a szolgáltatások és alkalmazások szerepelnek rajta, amelyek megítélésünk szerint biztonságosan segítik a hatékony munkát.
+  Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Intune alkalmazásvédelmi szabályzata engedélyezheti számukra, hogy adatokat küldjenek és fogadjanak. Például az összes Intune által kezelt Androidos alkalmazásnak képesnek kell lennie a Google Szövegfelolvasóval történő adatforgalmazásra, hogy a rendszer fel tudja olvasni a mobileszköz képernyőjén látható szöveget. Ez a lista idővel változhat. Azok a szolgáltatások és alkalmazások szerepelnek rajta, amelyek megítélésünk szerint biztonságosan segítik a hatékony munkát.
 
   ### <a name="full-exemptions"></a>Teljes kivételek
 
   Ezek az alkalmazások teljes mértékben jogosultak arra, hogy adatokat küldjenek az Intune által felügyelt alkalmazásoknak, és adatokat fogadjanak tőlük.
 
-  |Alkalmazás/szolgáltatás neve | Leírás |
+  |Alkalmazás/szolgáltatás neve | Description |
   | ------ | ---- |
   | com.android.phone | Natív telefonalkalmazás
   | com.android.vending | Google Play Áruház |
@@ -69,7 +69,7 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
   ### <a name="conditional-exemptions"></a>Feltételes kivételek
   Ezek az alkalmazások csak bizonyos feltételek teljesülése esetén kapnak engedélyt arra, hogy adatokat küldjenek az Intune által felügyelt alkalmazásoknak, és adatokat fogadjanak tőlük.
 
-  |Alkalmazás/szolgáltatás neve | Leírás | A kivétel feltétele|
+  |Alkalmazás/szolgáltatás neve | Description | A kivétel feltétele|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome böngésző | Az Android 7.0-s és újabb verziói a Chrome-ot használják bizonyos WebView-összetevőkhöz, és a böngésző sosincs elrejtve. Az alkalmazásból és részére küldött adatforgalom azonban mindig korlátozás alá esik.
   | com.skype.raider | Skype | A Skype alkalmazás csak egyes olyan műveletek esetére van engedélyezve, amelyek telefonhívást eredményezhetnek. |

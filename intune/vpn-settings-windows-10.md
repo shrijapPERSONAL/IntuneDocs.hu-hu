@@ -5,27 +5,25 @@ description: "Útmutató a VPN-kapcsolatok Windows 10-eszközökön való konfig
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 10/20/2017
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Windows 10-es eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A megadott beállításoktól függően az alábbi listában található értékek némelyike nem konfigurálható.
+A megadott beállításoktól függően a következő listában található értékek némelyike nem konfigurálható.
 
 
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
@@ -40,7 +38,7 @@ A megadott beállításoktól függően az alábbi listában található érték
     - **Importálás** – Tallózással keressen meg egy, a kiszolgálók vesszővel tagolt listáját tartalmazó fájlt, melynek formátuma a következő: leírás, IP-cím vagy teljes tartománynév, alapértelmezett kiszolgáló. Az **OK** gombra kattintva indíthatja el ezek importálását a **Kiszolgálók** listába.
     - **Exportálás** – Exportálja a kiszolgálók listáját egy vesszővel tagolt (CSV-) fájlba.
 
-**Kapcsolat típusa** – Az szállítók alábbi listájából válassza ki a VPN-kapcsolat típusát:
+**Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
 - **Automatikus**
 - **Check Point Capsule VPN**
 - **Citrix VPN**
@@ -82,7 +80,9 @@ A megadott beállításoktól függően az alábbi listában található érték
 
 Az egyéni XML-parancsok írásával kapcsolatban további információt az egyes gyártók VPN-dokumentációjában talál.
 
-**Bújtatás megosztása**  -  Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a VPN-kapcsolatot használja a munkahelyi fájlok elérésére, de egyszerű böngészésre a szálloda normál hálózatát.
+További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfiguráció](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+
+**Bújtatás megosztása** - Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a VPN-kapcsolatot használja a munkahelyi fájlok elérésére, de egyszerű böngészésre a szálloda normál hálózatát.
 - **A VPN-kapcsolat megosztott protokollbújtatási útvonalai** – Választható útvonalak hozzáadása külső VPN-szolgáltatók számára. Mindhez adja meg a célelőtagot és az előtag méretét.
 
 ## <a name="apps-and-traffic-rules"></a>Alkalmazások és adatforgalmi szabályok

@@ -4,8 +4,8 @@ description: "Az Intune-előfizetés használatának megkezdéséhez szükséges
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Az Intune beállítása
 
@@ -47,3 +47,4 @@ Ha jelenleg a Microsoft System Center Configuration Managerrel felügyeli a szá
 | 8 | [Eszközök konfigurálása](device-profiles.md) – Az eszközbeállítások kezelésére alkalmas profilok beállítása. Az eszközprofilokkal előre lehet konfigurálni az e-mailek, a VPN, a Wi-Fi és az eszközfunkciók beállításait. Az eszközök hozzáférésének korlátozására is alkalmasak, amivel védheti az eszközöket és az adatokat is.  |
 | 9 | [Céges portál testreszabása](company-portal-app.md) – Testre szabhatja az Intune céges portálját, amelyet a felhasználók az eszközök regisztrálására és alkalmazások telepítésére használhatnak. Ezek a beállítások a Céges portál alkalmazásban és az Intune céges portál webhelyén is megjelennek. |
 | 10 | [Eszközregisztráció engedélyezése](mdm-authority-set.md) – Engedélyezheti iOS-, Windows-, Android- és Mac-eszközök kezelését az Intune-ban az MDM-jogosultság beállításával és meghatározott platformok engedélyezésével. |
+| 11 | [Alkalmazásszabályzatok konfigurálása](app-protection-policy.md) – Konkrét beállításokat adhat meg a Microsoft Intune alkalmazásvédelmi szabályzatainak alapján. |
