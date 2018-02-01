@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1612f5af24bd4c96aced4e3a6f1572a4c49d9913
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -50,7 +50,7 @@ Az alkalmazásvédelmi szabályzatok támogatásához készült alkalmazásburko
 |**Alkalmazásburkoló eszköz** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Igen|Igen|
-|**Android**| Nem |Igen|
+|**Android**| Előzetes verzió |Igen|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 Az App SDK főleg olyan ügyfeleknek készült, akiknek vannak az Apple App Store vagy a Google Play Store áruházban alkalmazásai, és az Intune-nal szeretnék kezelni az alkalmazásokat. De bármilyen alkalmazás kihasználhatja az SDK integrálásának előnyeit, még üzletági alkalmazások esetében is.

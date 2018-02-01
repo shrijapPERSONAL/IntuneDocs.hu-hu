@@ -5,21 +5,20 @@ description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Az Android for Work-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>Munkahelyi profilhoz tartozó jelszó
 - **Munkahelyi profilhoz tartozó jelszó megkövetelése** – (Android 7.0 és újabb verziók esetén, amelyekben engedélyezve van a munkahelyi profil) olyan jelszószabályzatot határozhat meg, amely csak a munkahelyi profil alkalmazásaira vonatkozik. Alapértelmezés szerint a végfelhasználónak lehetősége van két külön-külön definiált PIN-kód használatára, vagy dönthet úgy, hogy a két PIN-kód összevonásával csak az erősebbet használja.
 - **Jelszó minimális hossza** – itt adhatja meg a jelszóban szereplő számjegyek vagy karakterek minimális számát (**4**-**16**)
-- **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – itt adhatja meg, hogy mennyi idő után zárolódjon a munkahelyi profil. A felhasználónak ezután meg kell adnia a hitelesítő adatait a hozzáférés visszanyeréséhez.
+- **A munkahelyi profil zárolása legfeljebb ennyi perc inaktivitás után** – itt adhatja meg, hogy mennyi idő után zárolódjon a munkahelyi profil. A felhasználónak ezután meg kell adnia a hitelesítő adatait a hozzáférés visszanyeréséhez.
 - **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – itt adhatja meg, hogy hányszor lehet helytelen jelszót megadni, mielőtt a rendszer törölné az eszközről a munkahelyi profil összes adatát.
 - **Jelszó érvényessége (nap)** – itt adhatja meg, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát (**1**-**255**).
 - **Kötelező jelszótípus** – itt adhatja meg az eszközön beállítandó jelszó típusát. A következő lehetőségek közül választhat:

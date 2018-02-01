@@ -5,7 +5,7 @@ description: "Előmegosztott kulccsal ellátott Wi-Fi profil létrehozása egyé
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulccsal ellátott Wi-Fi-profil létrehozása egyéni eszközprofil segítségével
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
 A Wi-Fi-profil PSK használatával való üzembe helyezése előtt ellenőrizze, hogy az eszköz tud-e közvetlenül kapcsolódni a végponthoz.
 
 Kulcsok (jelszavak és hozzáférési kódok) cseréjekor számítson üzemszünetre, és az üzembe helyezést ennek figyelembe vételével tervezze meg. A Wi-Fi-profilok leküldését ajánlatos munkaidőn kívülre időzíteni. A felhasználókat is figyelmeztesse a kapcsolat esetleges kimaradására.
- 
-A zökkenőmentes átmenet és a szabályzatfrissítések időben történő továbbítása érdekében az eszközöknek legalább egy kommunikációs csatornát nyitva kell tartaniuk az Intune felé. Ehhez használhatja a mobilkapcsolatot, vagy biztosíthat olyan Wi-Fi-vendéghozzáférést, mely csak az Intune-végpontokkal köti össze a felhasználókat.
 
-
+A zökkenőmentes átállás érdekében gondoskodjon róla, hogy a felhasználó eszköze más módon csatlakozzon az internethez. A felhasználónak például vissza kell tudni váltani a Vendég Wi-Fi-hálózatra (vagy egy másik Wi-Fi-hálózatra), vagy mobilhálózati kapcsolattal kell rendelkeznie, amellyel kommunikálhat az Intune-nal. A felhasználó így továbbra is megkaphatja a szabályzatfrissítéseket, amíg a vállalati Wi-Fi-hálózat frissül az eszközön.
