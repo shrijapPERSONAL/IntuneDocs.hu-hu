@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -254,7 +254,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 ## <a name="kiosk-preview"></a>Kioszk (előnézet)
 
--   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) típusát. A lehetőségek a következők:
+-   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) típusát. A lehetőségek a következők:
 
       - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
       - **Egyalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz egy alkalmazást futtasson teljes képernyőn.
@@ -266,7 +266,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
          A nyilvános környezetben található eszközök esetében a jogosulatlan tevékenység kizárása érdekében minimális jogosultsággal rendelkező fiókokat kell használni.  
 
-      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
+      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
 
     Több alkalmazás teljes képernyőn való futtatásához kioszkkonfigurációra van szükség. Hozzon létre kioszkkonfigurációt a **Hozzáadás** gomb használatával, vagy válasszon egy meglévőt.
 
@@ -280,13 +280,13 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
             - **Win32-alkalmazás** – Hagyományos asztali alkalmazás. (A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.)
 
-            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
+            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
 
-        - **Alkalmazásazonosító** – Vagy a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén), vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén) adja meg.
+        - **Alkalmazásazonosító** – Vagy a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén), vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén) adja meg.
 
     - A **Tálca** azt jelzi, hogy a tálca a teljes képernyőn megjelenik-e (**Engedélyezve**) vagy sem (**Nincs konfigurálva**).
 
-    - **Start menü elrendezése** – Megad egy XML-fájlt, amely leírja az alkalmazások [megjelenését a Start menüben](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Start menü elrendezése** – Megad egy XML-fájlt, amely leírja az alkalmazások [megjelenését a Start menüben](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Hozzárendelt felhasználók** – Egy vagy több, a kioszkkonfigurációhoz társított felhasználói fiókot ad meg. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva. A tartományhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
 
