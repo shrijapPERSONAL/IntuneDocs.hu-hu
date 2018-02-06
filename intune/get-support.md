@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -47,7 +47,7 @@ Rendszergazdaként az alábbi lépésekben küldheti be a támogatási jegyet az
     - **Támogatási csomag**: **Technikai támogatás – benne foglalt** (Az Intune technikai támogatása díjtalan.)
 
     >[!IMPORTANT]
-    >Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier szintű támogatási ajánlat részleteit lásd [A szolgáltatások leírása](https://www.microsoft.com/microsoftservices/services-list.aspx) dokumentáció 5.3.3 számú, „Tanácsadási szolgáltatások” című szakaszában.
+    >Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier szintű támogatási ajánlat részleteit lásd [A szolgáltatások leírása](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) dokumentáció 5.3.3 számú, „Tanácsadási szolgáltatások” című szakaszában.
 
     A folytatáshoz válassza a **Tovább** gombot.
 4. Annak érdekében, hogy kérése a megfelelő szakemberhez kerüljön, a **Probléma** panelen adja meg a következő adatokat:

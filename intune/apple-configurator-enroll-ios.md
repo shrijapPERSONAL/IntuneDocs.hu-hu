@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-eszközök regisztrálása az Apple Configurator használatával
 
@@ -71,8 +71,8 @@ Egy eszközregisztrációs profil meghatározza a regisztrálás során alkalmaz
 
 1. Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv-fájlt). A bal oldali oszlopban tüntesse fel a sorozatszámot, a jobb oldali oszlopban pedig a további adatokat. A lista jelenlegi maximális mérete 5000 sor. Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 
-    F7TLWCLBX196,eszköz adatai</br>
-    DLXQPCWVGHMJ,eszköz adatai
+  F7TLWCLBX196,eszköz adatai</br>
+  DLXQPCWVGHMJ,eszköz adatai
 
    Ismerje meg, [hogyan találhatja meg egy iOS-eszköz sorozatszámát](https://support.apple.com/HT204073).
 2. Az Azure-beli Intune-portálon válassza az **Eszközök regisztrálása**, majd az **Apple-regisztráció** elemet.
@@ -164,3 +164,5 @@ Nem telepíthetők a felhasználói kapcsolatot igénylő alkalmazások, többek
 7. Az iOS-eszközön nyissa meg a **Beállítások** alkalmazást, majd válassza az **Általános** > **Eszközkezelés** > **Felügyeleti profil** lehetőséget. Ellenőrizze, hogy a profiltelepítés szerepel-e a listán, valamint ellenőrizze az iOS-házirend korlátozásait és a telepített alkalmazásokat. A házirend-korlátozások és alkalmazások megjelenítése az eszközön akár 10 percet is igénybe vehet.
 
 8. Eszközök terjesztése. Az iOS-eszköz most már felügyelt, és regisztrálva van az Intune-ban.
+
+
