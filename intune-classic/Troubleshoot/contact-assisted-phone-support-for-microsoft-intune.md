@@ -37,7 +37,7 @@ ms.lasthandoff: 10/10/2017
 |Bahreini Királyság|24 x 7|Vasárnaptól csütörtökig<br /><br />09:00 – 19:00 Arábiai idő szerint (UTC +2)|Angol|800 81 250||
 |Belarusz|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Moszkvai idő szerint (UTC +4)|Orosz&#42; és angol|8 820 0071 0003<br /><br />1. lépés: Válassza a 9. lehetőséget<br /><br />2. lépés. Adja meg a 7707 kódot||
 |Belgium|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Holland&#42;, francia&#42; és angol|80081174|022008884|
-|Brazília|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Brazil idő szerint (UTC -2)|Portugál (brazíliai)&#42; és angol|08007621146|1147001999|
+|Brazília|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Brazil idő szerint (UTC -2)|Portugál (Brazília)&#42; és angol|08007621146|1147001999|
 |Bulgária|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Bolgár&#42; és angol|008001184446||
 |Kanada|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Csendes-óceáni téli idő szerint (UTC -8)|Angol|800-865-9408||
 |Chile|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Chilei idő szerint (UTC -3)|Spanyol&#42; és angol|800226826|1230-020-0005|
