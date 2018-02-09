@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Gyakori helyzetek
       href: common-scenarios.md
+    - name: MAM – GYAKORI KÉRDÉSEK
+      href: mam-faq.md
 - name: Telepítési terv kidolgozása
   items:
     - name: Planning guide (Tervezési útmutató)
