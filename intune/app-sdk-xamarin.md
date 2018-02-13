@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 11/01/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b52b83b84e36a89b5e578c9e14c5093715a559c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin összetevő
 
@@ -66,7 +66,7 @@ Az Intune App SDK Xamarin összetevővel létrehozott Xamarin-alkalmazásokra mo
 
 3.  Töltse le az Intune App SDK Xamarin Component mappát a [GitHubról](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) vagy a [Nuget.orgról](https://www.nuget.org/profiles/msintuneappsdk), és csomagolja ki. Az 1. és a 3. lépésben letöltött fájlnak ugyanazon a könyvtárszinten kell lennie.
 
-4.  Futtassa rendszergazdaként a következő parancsot a parancssorban: `Xamarin.Component.exe install <.xam> file`.
+4.  Futtassa rendszergazdaként a következő parancsot a parancssorban: `mono Xamarin.Component.exe install <.xam> file`.
 
 5.  A Visual Studióban kattintson a jobb gombbal a korábban létrehozott Xamarin-projektben a **components** (összetevők) elemre.
 

@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Az ügyfélszolgálati költségek önkiszolgáló jelszóváltoztatással való csökkentése
 
@@ -35,7 +35,7 @@ Engedélyezheti, hogy az alkalmazottak az ügyfélszolgálat közreműködése n
 ## <a name="next-steps"></a>További lépések
 
 További tudnivalók a következő témakörökről:
-* [A jelszavakra vonatkozó gyakorlati tanácsok](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [A jelszavakra vonatkozó gyakorlati tanácsok](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Az önkiszolgáló jelszóváltoztatáshoz tartozó licencek](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 Segítségre van szüksége ennek, illetve az egyéb EMS- vagy Office 365-forgatókönyvek lehetővé tételéhez? Ha legalább 150 Microsoft 365- , Enterprise Mobility + Security- vagy Prémium szintű Azure Active Directory-licenccel rendelkezik, használja [FastTrack-juttatásait](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).

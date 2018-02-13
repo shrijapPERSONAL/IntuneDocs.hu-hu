@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 0e4629d5322721fa59a1257920815b1fc5d60780
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -93,7 +93,7 @@ Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentke
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>A felhasználók tájékoztatásának módja
-Ajánlja a felhasználóknak a [Naplók elküldése a rendszergazdának e-mailben](/intune-user-help/send-logs-to-your-it-admin-by-email-android) című témakört. Javasolhatja ezen kívül a [Naplók elküldése a rendszergazdának USB-kábel használatával](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) című témakört is, ha a két módszer összehasonlítását szeretné lehetővé tenni.
+Ajánlja a felhasználóknak a [Naplók elküldése a rendszergazdának e-mailben](/intune-user-help/send-logs-to-your-it-admin-by-email-android) című témakört. 
 
 ## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>A céges ügyfélszolgálatnak hozzáférést kell nyújtania Önnek a céges erőforrásokhoz
 

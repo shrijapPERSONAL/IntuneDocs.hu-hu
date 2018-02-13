@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a felügyelt Office 365-alkalmazásokban
 
@@ -128,4 +128,4 @@ Ezen szabályzatok, vagy az Azure-beli Intune-portálon létrehozott bármely sz
 ![Felhasználói felület elérési útja szabályzatok megtekintéséhez – kép](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>További lépések
-További információk az [alkalmazásvédelmi szabályzatokról](https://docs.microsoft.comapp-protection-policy.md).
+További információk az [alkalmazásvédelmi szabályzatokról](app-protection-policy.md).
