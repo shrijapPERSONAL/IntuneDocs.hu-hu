@@ -109,7 +109,7 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
     -   HTTPS – 443-as port
 
-    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;* *és a *&colon;http&period;//www&period;contoso*com: /*;* nem támogatott.
+    A portszám helyettesítő karakterrel való megadása nem támogatott. Például a **http&colon;//www&period;contoso&period;com:*;* és a **http&colon;//www&period;contoso&period;com: /*;** nem támogatott.
 
 -   Az alábbi táblázat az URL-címek megadásakor használható mintákat ismerteti:
 
