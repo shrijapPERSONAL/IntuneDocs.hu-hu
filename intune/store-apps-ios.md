@@ -36,7 +36,7 @@ A témakörben található információ segítségével iOS-es áruházbeli alka
 Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások hozzárendelése lehetséges. Ha fizetős alkalmazást szeretne az Intune segítségével hozzárendelni, fontolja meg az [iOS mennyiségi vásárlási program](vpp-apps-ios.md) használatát.
 
 >[!NOTE]
->A Microsoft Intune-beli munkavégzéshez a Chrome és az Edge böngészőt ajánljuk.
+>A Microsoft Intune-beli munkavégzéshez a Chrome és a Microsoft Edge böngészőt ajánljuk.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>1. lépés: Az alkalmazás megkeresése az áruházban
 
