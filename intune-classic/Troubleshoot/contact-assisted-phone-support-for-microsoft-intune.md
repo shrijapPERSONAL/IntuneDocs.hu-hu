@@ -56,7 +56,7 @@ ms.lasthandoff: 10/10/2017
 |Németország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Német&#42; és angol|0800 5892332|069380789508||
 |Görögország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Görög&#42; és angol|0080044142831||
 |Guatemala|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Kínai téli idő szerint (UTC +6)|Spanyol&#42; és angol|1-800-300-0069<br /><br />1. lépés Válassza a 4. lehetőséget (a speciális hozzáféréshez)<br /><br />2. lépés Adja meg a 7007 kódot||
-|Hongkong (KKT)|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)|Kantoni&#42;, mandarin&#42; és angol||30713055|
+|Hongkong KKT|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)|Kantoni&#42;, mandarin&#42; és angol||30713055|
 |Magyarország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Magyar&#42; és angol|36 80 983 899|36 1 778 9292|
 |Izland|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Greenwich-i középidő szerint (UTC)|Angol|8009609||
 |India|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Indiai téli idő szerint (UTC +5:30)|Angol|000800 4402038|18002002052|
