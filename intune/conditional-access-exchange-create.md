@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Feltételes hozzáférési szabályzat létrehozása és hozzárendelése a helyszíni Exchange-hez és a régi Dedikált Exchange Online-hoz az Azure-os Microsoft Intune-nal
 
@@ -65,7 +65,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - EAS levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak Android for Work eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy email-profilt a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
 
 > [!NOTE]
-> A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott. Az Android for Work a következő néhány hónap során lesz biztosítva az Intune-bérlők számára.
+> A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott. 
 
 ### <a name="support-for-pcs"></a>Számítógépek támogatása
 
