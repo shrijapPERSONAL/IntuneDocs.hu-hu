@@ -3,7 +3,7 @@ title: "Alkalmazások hozzáadása a Microsoft Intune-hoz"
 titlesuffix: Azure portal
 description: "Ezekkel az eljárásokkal felveheti az alkalmazásokat az Intune-ba, hogy készen álljanak a felhasználókhoz és eszközökhöz való hozzárendelésre. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/17/2018
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Alkalmazás hozzáadása a Microsoft Intune-hoz
 
@@ -33,6 +33,7 @@ Az Intune a következő típusú alkalmazások hozzáadását és hozzárendelé
 | Alkalmazások a weben                           | Az Intune létrehoz egy parancsikont a webalkalmazáshoz az eszköz kezdőképernyőjén          | Az alkalmazások frissítése automatikus     |
 | Belső fejlesztésű (üzletági) alkalmazások  | Az Intune telepíti az alkalmazást az eszközön (a telepítőfájlt Önnek kell letöltenie)    | Frissítenie kell az alkalmazást       |
 | Áruházbeli alkalmazások                       | Az Intune telepíti az alkalmazást az eszközön                                       | Az alkalmazások frissítése automatikus     |
+| Beépített alkalmazások                        | Az Intune telepíti az alkalmazást az eszközön                                       | Az alkalmazások frissítése automatikus     |
 
 
 Az Intune a webalkalmazásokon kívül a következő platformok áruházbeli és üzletági alkalmazásait támogatja:
@@ -49,6 +50,7 @@ Az Intune a webalkalmazásokon kívül a következő platformok áruházbeli és
     - iOS-es üzletági (LOB) alkalmazások
     - Windows Phone rendszerű üzletági (LOB) alkalmazások (.xap fájlok)
     - Windows rendszerű üzletági (LOB) alkalmazások (csak .msi fájlok)
+- Beépített alkalmazások    
 
 >[!TIP]
 > Az üzletági (LOB) alkalmazásokat egy alkalmazástelepítő fájlból adja hozzá. Egy iOS LOB alkalmazás telepítéséhez például az **Alkalmazás hozzáadása** panel **Alkalmazás típusa** részén az **Üzletági alkalmazás** beállítás megadásával adhatja hozzá az alkalmazást. Ezután válassza ki az alkalmazáscsomag fájlját (.ipa kiterjesztés). Az ilyen típusú alkalmazások általában belső fejlesztésűek.
@@ -147,4 +149,5 @@ Az alábbi témakörök ismertetik az egyes platformok alkalmazásainak felvéte
 - [Windows Áruházbeli alkalmazások](store-apps-windows.md)
 - [Windows LOB-alkalmazás](lob-apps-windows.md)
 - [Windows 10-es Office 365-alkalmazások](apps-add-office365.md)
+- [Beépített alkalmazások](apps-add-bulit-in.md)
 

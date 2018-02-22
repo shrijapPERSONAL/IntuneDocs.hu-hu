@@ -150,3 +150,4 @@
 #### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md)
 
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)
+### [Eszköz távoli zárolása](remote-lock-your-device-cpwebsite.md)

@@ -287,6 +287,26 @@
           items:
             - name: Alkalmazások szelektív törlése
               href: apps-selective-wipe.md
+            - name: Alkalmazásvédelmi szabályzatok használata
+              href: app-protection-policy.md
+              items:
+                - name: Alkalmazásvédelmi szabályzatok létrehozása
+                  href: app-protection-policies.md
+                  items:
+                    - name: Android-beállítások
+                      href: app-protection-policy-settings-android.md
+                    - name: iOS-beállítások
+                      href: app-protection-policy-settings-ios.md
+                - name: Az alkalmazásvédelmi szabályzatok ellenőrzése
+                  href: app-protection-policies-validate.md
+                - name: Alkalmazásvédelmi felhasználó állapotának figyelése
+                  href: app-protection-policies-monitor.md
+                - name: Felkészülés az alkalmazásvédelmi WIP-szabályzatokra
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése
+                  href: windows-information-protection-policy-create.md
+                - name: iOS-alkalmazások közti adatátvitel kezelése
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Eszközök konfigurálása
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
           href: conditional-access-assign-jamf.md
-    - name: Alkalmazás- és eszközadatok védelme
+    - name: Eszközadatok védelme
       items:
-        - name: Alkalmazásvédelmi szabályzatok használata
-          href: app-protection-policy.md
-          items:
-            - name: Alkalmazásvédelmi szabályzatok létrehozása
-              href: app-protection-policies.md
-              items:
-                - name: Android-beállítások
-                  href: app-protection-policy-settings-android.md
-                - name: iOS-beállítások
-                  href: app-protection-policy-settings-ios.md
-            - name: Az alkalmazásvédelmi szabályzatok ellenőrzése
-              href: app-protection-policies-validate.md
-            - name: Alkalmazásvédelmi felhasználó állapotának figyelése
-              href: app-protection-policies-monitor.md
-            - name: Felkészülés az alkalmazásvédelmi WIP-szabályzatokra
-              href: app-protection-policies-configure-windows-10.md
-            - name: Alkalmazásvédelmi WIP-szabályzatok létrehozása és hozzárendelése
-              href: windows-information-protection-policy-create.md
-            - name: iOS-alkalmazások közti adatátvitel kezelése
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Az adattárház API-végpontja
           href: reports-api-url.md
+        - name: Alkalmazásalapú hitelesítés az adattárházban
+          href: data-warehouse-app-only-auth.md
         - name: Az adattárház adatmodellje
           href: reports-ref-data-model.md
           items:

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -49,6 +49,9 @@ Ha a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md)
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-kötés létrehozása az Intune-ban
 
+> [!NOTE]
+> A Google- és a Microsoft-tartományok közötti interakció miatt ennél a lépésnél előfordulhat, hogy a művelet sikeres elvégzéséhez módosítania kell a böngésző beállításait.  Győződjön meg róla, hogy a „portal.azure.com” és a „play.google.com” tartomány azonos biztonsági zónában található a böngészőben.
+
 1. **Az Intune MDM beállítása**<br>
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
 2. **Android for Work-kötés konfigurálása**<br>
@@ -64,11 +67,10 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
    Az **Organization name** (Szervezet neve) mezőben adja meg a vállalat nevét. Az **Enterprise mobility management (EMM) provider** (Nagyvállalati mobileszköz-felügyeleti (EMM-) szolgáltató) mezőben a **Microsoft Intune** értéknek kell megjelennie. Fogadja el az Android for Work-szerződést, majd válassza a **Confirm** (Jóváhagyás) gombot. Megtörténik a kérelem feldolgozása.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work-regisztrációs beállítások megadása
-   Az Android for Work használata csak bizonyos Android-eszközökön támogatott. Az [Android for Workre vonatkozó követelményeket](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window") megtalálja a Google webhelyén. Az Android for Worköt támogató eszközök mindegyike támogatja a hagyományos Android-alapú felügyeletet is. Az Intune-ban megadhatja, hogyan történjen az Android for Worköt támogató eszközök felügyelete:
+Az Android for Work használata csak bizonyos Android-eszközökön támogatott. Az [Android for Workre vonatkozó követelményeket](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22) megtalálja a Google webhelyén. Az Android for Worköt támogató eszközök mindegyike támogatja a hagyományos Android-alapú felügyeletet is. Az Intune-ban megadhatja, hogy az Android for Worköt támogató eszközök felügyelete a [regisztrációs korlátozásokból](enrollment-restrictions-set.md) hogyan történjen.
 
-   - **Minden eszköz felügyelete Android-eszközként**. Minden Android-eszköz, az Android for Worköt támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
-   - **Minden támogatott eszköz felügyelete Android for Work-eszközként**. Az Android for Worköt támogató eszközök mindegyike Android for Work-eszközként lesz regisztrálva. Az Android for Worköt nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
-   - **Csak a megadott felhasználói csoportokban szereplő felhasználók támogatott eszközeinek felügyelete Android for Work-eszközként**. Az Android for Work-alapú felügyelet a megadott felhasználókra korlátozható. Csak a kijelölt csoportok tagjai által regisztrált, Android for Worköt támogató eszközök lesznek Android for Work-eszközként lesz regisztrálva. Minden más eszköz Android-eszközként lesz regisztrálva. Ez főleg Android for Workös próbák során hasznos.
+- **Blokkolás (alapértelmezett)**: Minden Android-eszköz, az Android for Worköt támogatókat is beleértve, hagyományos Android-eszközként lesz regisztrálva.
+- **Engedélyezés**: Az Android for Worköt támogató eszközök mindegyike Android for Work-eszközként lesz regisztrálva. Az Android for Worköt nem támogató eszközök hagyományos Android-eszközként lesznek regisztrálva.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>A Céges portál alkalmazás jóváhagyása a felügyelt Google Play Áruházban
 Jóvá kell hagynia az Androidhoz készült Céges portál alkalmazást a felügyelt Google Play Áruházban annak érdekében, hogy az alkalmazás megkapja az automatikus frissítéseket. Ha nem hagyja jóvá a Céges portál alkalmazást, előfordulhat, hogy az nem fogja megkapni a Microsoft által kiadott fontos hibajavításokat és új funkciókat, és így idővel elavulttá válik.

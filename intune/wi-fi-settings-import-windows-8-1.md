@@ -6,26 +6,24 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a587ef87afd9a8629ac6a274fe87406fb24f79f7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Wi-Fi-beállítások importálása Windows 8.1 és újabb rendszerű eszközökhöz a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A Windows 8.1, vagy a Windows 10 asztali vagy mobilverzióját futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt.
+A Windows 8.1, a Windows 10 operációs rendszer asztali vagy mobil verzióját vagy a Windows Holographic for Business verziót futtató eszközökre importálhatja az előzőleg fájlba exportált Wi-Fi konfigurációs profilt.
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Wi-Fi beállítások exportálása windowsos eszközről
 
@@ -43,10 +41,14 @@ A Windows rendszerben a **netsh wlan** segédprogrammal az Intune által is olva
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
 3. A profilok panelen kattintson a **Profil létrehozása** lehetőségre.
 4. A **Profil létrehozása** panelen adjon meg egy **Nevet** és **Leírást** az eszközkorlátozási profilra vonatkozóan.
+
+   > [!WARNING]
+   > A névnek meg **kell** egyeznie a Wi-Fi-profil xml-fájlban az attribútumban található névvel, ellenkező esetben sikertelen lesz a művelet.
+
 5. A **Platform** legördülő listájában válassza a **Windows 8.1 vagy újabb** lehetőséget.
 6. A **Profil típusa** legördülő listában válassza a **Wi-Fi importálás** lehetőséget.
-7. Az **Alap Wi-Fi** panelen adja meg a következőket:
-    - **Kapcsolat neve** – adja meg a Wi-Fi-kapcsolat nevét. Ez a név fog megjelenni a végfelhasználók számára elérhető Wi-Fi-hálózatok böngészése közben.
+7. Az **Alap Wi-Fi** panelen adja meg a következő beállításokat:
+    - **Kapcsolat neve** – adja meg a Wi-Fi-kapcsolat nevét. Ez a név jelenik meg a végfelhasználók számára elérhető Wi-Fi-hálózatok böngészése közben.
     - **Profil XML-fájlja** – A tallózás gombra kattintva válassza ki azt az XML-fájlt, amely az Intune-ba importálni kívánt Wi-Fi profilbeállításokat tartalmazza.
     - **Fájl tartalma** – Megjeleníti a kiválasztott konfigurációs profil XML-kódját.
 8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.

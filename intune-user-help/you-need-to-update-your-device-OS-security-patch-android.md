@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Frissítenie kell androidos eszközének operációs rendszerét
 
-Ha megjelenik a „Minimum Android security patch level is not configured” (Az Android minimálisan előírt biztonsági javítási szintje nincs konfigurálva) üzenet, akkor eszköze biztonságának érdekében frissítést kell letöltenie. Egy kiadott _javítás_ biztosítja, hogy a szoftver továbbra is zökkenőmentesen működjön és naprakész maradjon. A cég informatikai támogatási szolgálata arra kötelezi, hogy telepítse a javítást annak érdekében, hogy az eszközén található munkahelyi adatok a lehető legnagyobb védelmet élvezhessék. A szükséges biztonsági javítás helye attól függően változhat, hogy egy adott típusú Samsung eszközzel rendelkezik-e.
+Ha megjelenik a „Minimum Android security patch level is not configured” (Az Android minimálisan előírt biztonsági javítási szintje nincs konfigurálva) üzenet, akkor eszköze biztonságának érdekében frissítést kell letöltenie. Egy kiadott _javítás_ biztosítja, hogy a szoftver továbbra is zökkenőmentesen működjön és naprakész maradjon. A cég informatikai támogatási szolgálata arra kötelezi, hogy telepítse a javítást annak érdekében, hogy az eszközén található munkahelyi adatok a lehető legnagyobb védelmet élvezhessék. A szükséges biztonsági javítás helye attól függően változhat, hogy milyen típusú Android-eszközzel rendelkezik.
 
 Ha Samsung eszközzel rendelkezik, a **Beállítások** > **A telefon névjegye** területen nézze meg, szerepel-e valahol a „Knox” kifejezés. Ha igen, kövesse a következő, Samsung Knoxra vonatkozó utasításokat.
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,18 +17,21 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0cd9107462348e92c9b1a3122c19591bcab6a00e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ed8475956a13e2f35d37b57f0d404f916c239998
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>A Windows-eszközök védelme titkosítással
 
-Egy eszköz titkosításakor a rajta lévő információt egy védelmi kódréteg veszi körül, amely megakadályozza, hogy illetéktelenek férjenek hozzá. Az információbiztonság érdekében a munkahelye a Windows-eszközök titkosításával követeli meg Öntől a vállalati vagy munkahelyi adatok védelmét.
+Egy eszköz titkosításakor a rajta lévő információt egy védelmi kódréteg veszi körül, amely megakadályozza, hogy illetéktelenek férjenek hozzá. Az információbiztonság érdekében a munkahelye a Windows-eszközök titkosításával követeli meg Öntől a vállalati vagy munkahelyi adatok védelmét. 
+
+Ha Windows Phone rendszerű eszközzel rendelkezik, és az regisztrálva van, kötelező titkosítás esetén a rendszer automatikusan titkosítja az eszközt.
 
 > [!Note]
-> Ha Windows Phone rendszerű eszközzel rendelkezik, és az regisztrálva van, kötelező titkosítás esetén a rendszer automatikusan titkosítja az eszközt.
+> A titkosítás nem támogatott Windows 10 Home rendszerben. Olvassa el a tájékoztatót a [Windows 10 Home rendszer Windows 10 Pro verzióra való frissítéséről](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro).
+
 
 Asztali eszközt az alábbi utasításokat követve titkosíthat.
 

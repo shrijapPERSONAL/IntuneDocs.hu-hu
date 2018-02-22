@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>A Microsoft Intune-műveletek értelmezése jelentések segítségével
 
@@ -32,7 +32,7 @@ Az Intune-jelentések információkat nyújtanak a szervezetében lévő szoftve
 
 ## <a name="report-types"></a>Jelentéstípusok
 
-|Jelentés típusa|Leírás|
+|Jelentés típusa|Description|
 |---------------|---------------|
 |**Frissítési jelentések**|A szervezet számítógépein sikeresen végrehajtott szoftverfrissítéseket jelenítik meg. Emellett megjelenítik a sikertelen, függőben lévő vagy szükséges frissítéseket is. A szoftverfrissítéssel kapcsolatos további információkért lásd: [Windows rendszerű számítógépek naprakészen tartása szoftverfrissítésekkel a Microsoft Intune-ban](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Észlelt szoftverek jelentései**|Megjeleníti a szervezete számítógépein telepített szoftvereket. Szoftververziók tartoznak. A megjelenített információkat a szoftver gyártója és kategóriája szerint szűrheti is. A listában lévő frissítések kibontásával, a listaelem mellett lévő iránymutató nyílra kattintva részletes információkat jeleníthet meg (például azokat a számítógépeket, amelyeken a frissítés telepítve van).<br /><br />Ha számítógépeket von ki vagy csoporttagságot módosít az Intune-ban, akkor több percig is eltarthat, mire a módosítások megjelennek az Észlelt szoftverek jelentésben. Ha szeretné, hogy a szoftverleltár a lehető legpontosabb legyen, akkor a számítógépek kivonása vagy a csoporttagságuk módosítása után várjon néhány percet, mielőtt az érintett számítógépeket magában foglaló jelentést készítene.|
