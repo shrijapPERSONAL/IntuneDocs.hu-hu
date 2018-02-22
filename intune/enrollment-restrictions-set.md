@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -31,7 +31,7 @@ Intune-rendszergazdaként létrehozhat és felügyelhet olyan regisztrációs ko
 >A regisztrációs korlátozások nem biztonsági funkciók. A feltört eszközök más tulajdonságokat állíthatnak magukról. Ezek a korlátozások a nem rosszindulatú felhasználók esetén jelentenek észszerű erőfeszítést igénylő akadályt.
 
 >[!NOTE]
->A fentiekben említett csoporthoz rendelhető regisztrációs korlátozás és a prioritási funkció jelenleg bevezetés alatt áll az Intune ügyfélbázisa számára. A bevezetés befejezéséig elképzelhető, hogy nem lehet hozzáférni a csoportra és a prioritásra vonatkozó funkciókhoz. 
+>A fentiekben említett csoporthoz rendelhető regisztrációs korlátozás és a prioritási funkció jelenleg bevezetés alatt áll az Intune ügyfélbázisa számára. A bevezetés befejezéséig elképzelhető, hogy nem lehet hozzáférni a csoportra és a prioritásra vonatkozó funkciókhoz.
 
 Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
 
@@ -80,7 +80,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
   - Az Android és az Android for Work a főverzió.alverzió.változat.build formátumot támogatja.
   - Az iOS a főverzió.alverzió.változat formátumot támogatja.
   - A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén.
-  Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre. 
+  Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
 8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
 
     ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatform-konfigurációval, ahol a személyes tulajdonú eszközök beállításai meg vannak adva.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
     ![Az Eszközszámkorlátok panel képernyőképe az eszközszámkorlátokkal.](./media/device-restrictions-limit.png)
 6. Kattintson a **Mentés**gombra.
 
+A végfelhasználó üzenetet kap majd, ha elérte a regisztrálható eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:
+
+![Képernyőkép az iOS-eszközön megjelenő limitértesítésről](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>A regisztrációs korlátozások prioritásának módosítása
 
-A prioritást akkor használja a rendszer, ha egy felhasználó több olyan csoportnak is a tagja, amelyhez korlátozások vannak hozzárendelve. A felhasználókra a rendszer egyedül a vonatkozó csoportok legmagasabb prioritású korlátozását alkalmazza. Tegyük fel például, hogy Attila tagja az A csoportnak, melyhez egy 5-ös prioritású korlátozás van hozzárendelve, illetve tagja a B csoportnak, melyhez egy 2-es prioritású korlátozás van hozzárendelve. Ez esetben Attilára csak a 2-es prioritású korlátozást alkalmazza a rendszer. 
+A prioritást akkor használja a rendszer, ha egy felhasználó több olyan csoportnak is a tagja, amelyhez korlátozások vannak hozzárendelve. A felhasználókra a rendszer egyedül a vonatkozó csoportok legmagasabb prioritású korlátozását alkalmazza. Tegyük fel például, hogy Attila tagja az A csoportnak, melyhez egy 5-ös prioritású korlátozás van hozzárendelve, illetve tagja a B csoportnak, melyhez egy 2-es prioritású korlátozás van hozzárendelve. Ez esetben Attilára csak a 2-es prioritású korlátozást alkalmazza a rendszer.
 
 Az Ön által létrehozott korlátozások az alapértelmezettnél eggyel magasabb prioritást kapnak.
 
-Az eszközregisztráció tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, mind az eszközszámra vonatkozóan. Ez a két korlátozás az összes felhasználóra érvényes, hacsak felül nem bírálja őket egy magasabb prioritású korlátozás. 
+Az eszközregisztráció tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, mind az eszközszámra vonatkozóan. Ez a két korlátozás az összes felhasználóra érvényes, hacsak felül nem bírálja őket egy magasabb prioritású korlátozás.
 
-Az összes egyéni korlátozás prioritását módosíthatja. 
+Az összes egyéni korlátozás prioritását módosíthatja.
 
 **A korlátozások prioritásának módosításához:**
 
@@ -120,8 +124,3 @@ Az összes egyéni korlátozás prioritását módosíthatja.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Vigye az egérmutatót a korlátozás fölé a prioritáslistában.
 5. A három függőleges pontot alkotó ikon használatával húzza a prioritást a lista megfelelő helyére.
-
-
-
-
-

@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -45,8 +44,9 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 - A Windows Update a Windows 10 alábbi verzióit támogatja:
     - Windows 10
     - Windows 10 Team (Surface Hub-eszközök esetén)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- A Windows 10 Mobile és a Windows 10 Holographic rendszert futtató eszközök nem támogatottak.
+ A Windows 10 Mobile rendszert futtató eszközök nem támogatottak.
 
 - Windows eszközökön a **Visszajelzés és diagnosztika** > **Diagnosztikai és használati adatok** beállításnál legalább az **Alapszintű** értéknek kell szerepelnie.
 
@@ -89,8 +89,7 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
     A funkciófrissítések általában új Windows-funkciók. A **Karbantartási csatorna** beállítás a célzott féléves csatornára vagy a féléves csatornára való konfigurálása után megadhatja, hogy szeretné-e késleltetni a Microsoft által a Windows Update szolgáltatásban közzétett funkciófrissítések fogadását, és ha igen, akkor mennyivel.
 
-    Például:  
-    **Ha a karbantartási csatorna a Féléves csatorna (célzott) értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
+    Például: **Ha a karbantartási csatorna a Féléves csatorna (célzott) értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Az eszköz csak februárban, 30 nappal később fogadja a frissítést.
 
     **Ha a karbantartási csatorna a Féléves csatorna értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.
 
@@ -154,3 +153,11 @@ A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadály
 > [!IMPORTANT]
 > A felfüggesztési parancsot a kiadása után az eszközök akkor kapják meg, amikor legközelebb bejelentkeznek a szolgáltatásba. Megtörténhet, hogy mielőtt bejelentkeznek, még telepítenek egy ütemezett frissítést.
 > Ha az adott eszköz ki van kapcsolva a felfüggesztési parancs kiadásakor, akkor a bekapcsolása után esetleg letölthet és telepíthet ütemezett frissítéseket, mielőtt bejelentkezik az Intune-ba.
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business-támogatás
+
+A Windows Holographic for Business az alábbi beállításokat támogatja:
+
+- **Az automatikus frissítés viselkedése**
+- **Microsoft-termékek frissítései**
+- **Karbantartási csatorna**

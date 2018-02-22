@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>A Microsoft Intune konfigurációs szabályzatainak ismertetése
 
@@ -105,7 +105,7 @@ Csak a Windows Phone-ra és a regisztrált Windows-eszközökre vonatkozik.
 |Házirend neve|Alkalmazási helyzet|
 |---------------|------------------------|
 |**Exchange ActiveSync-házirend**|Az Exchange ActiveSync által kezelt mobileszközök biztonsági és funkcionális beállításainak konfigurálása.<br /><br />Részletekért lásd: [Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Mobileszközök biztonsági házirendje**|<ul><li>Többek között a következő mobileszköz-beállítások konfigurálása (platformfüggetlen):<br /><br /><ul><li>Biztonság</li><li>Titkosítás</li><li>Rendszer</li><li>E-mail</li><li>Alkalmazások</li></ul></li></ul>
+|**Mobileszközök biztonsági házirendje**|<ul><li>Többek között a következő mobileszköz-beállítások konfigurálása (platformfüggetlen):<br /><br /><ul><li>Biztonság</li><li>Encryption</li><li>Rendszer</li><li>E-mail</li><li>Alkalmazások</li></ul></li></ul>
 > [!IMPORTANT]
 A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz minden eszközplatformhoz, és ezek a szabályzatok a legfrissebb használható beállításokat tartalmazzák. Továbbra is használhatja a mobileszközök biztonsági házirendjét, és minden meglévő telepítés továbbra is működni fog, de meg kell terveznie az új konfigurációs házirendekre való mielőbbi áttérést.<br />Részletekért lásd: [Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-ban](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
@@ -117,6 +117,6 @@ A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz mi
 |**A Microsoft Intune Center beállításai**|Konfigurálja a Microsoft Intune-ban megjelenő részleteket a felügyelt számítógépeken.<br /><br />Ez a házirendtípus csak eszközcsoportok számára telepíthető.<br /><br />Részletekért lásd: [A Windows rendszerű számítógépek a Microsoft Intune számítógépügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**A Windows tűzfal beállításai**|A Windows tűzfal beállításait és kivételeit konfigurálja a számítógépek általános hálózati kommunikációja számára, beleértve a következőket:<br /><br />-   BranchCache<br />-   Távsegítség<br />-   Médiafájlok megosztása<br /><br />Ez a házirendtípus csak eszközcsoportok számára telepíthető.<br /><br />A részleteket lásd: [Windows rendszerű számítógépek biztonságossá tétele a Microsoft Intune-hoz készült Endpoint Protection szolgáltatással](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

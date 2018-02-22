@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: b56907217b45ddb2bfe869f23abc34c0508bdbd7
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Átmeneti felhasználói felületi eltérések
+>
+>Az ezen a lapon ismertetett szolgáltatások felhasználói felülete frissítés alatt áll. A megújult felhasználói felület április végéig elérhetővé válik az összes felhasználói fiókban.
+>
+>Ha az **Eszközök beléptetése** lap az alábbi képen láthatóhoz hasonló Önnél, akkor a fiókja még nem lett frissítve az új felhasználói felületre, így használhatja a jelen súgólapot.
+>
+>![Régi felhasználói felület](./media/appleenroll-oldui.png)
+>
+>Ha az **Eszközök beléptetése** lap az alábbi képen láthatóhoz hasonló, akkor a frissített felhasználói felületet használja.  Látogasson el [erre a súgólapra](device-enrollment-program-enroll-ios-newui.md).
+>
+>![Új felhasználói felület](./media/appleenroll-newui.png)
 
 Ez a témakör az Apple [készülékregisztrációs programja (DEP)](https://deploy.apple.com) keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Nagyszámú eszköz DEP-regisztrálását végezheti el anélkül, hogy kézbe venné őket. Közvetlenül a felhasználóknak küldhet el olyan eszközöket, mint az iPhone vagy az iPad. Amikor a felhasználó bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint fut, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
 

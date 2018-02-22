@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 666ce43e3bd87db5a8245694d22401819c369951
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Átmeneti felhasználói felületi eltérések
+>
+>Az ezen a lapon ismertetett szolgáltatások felhasználói felülete frissítés alatt áll. A megújult felhasználói felület április végéig elérhetővé válik az összes felhasználói fiókban.
+>
+>Ha az **Eszközök beléptetése** lap az alábbi képen láthatóhoz hasonló Önnél, akkor a fiókja még nem lett frissítve az új felhasználói felületre, így használhatja a jelen súgólapot.
+>
+>![Régi felhasználói felület](./media/appleenroll-oldui.png)
+>
+>Ha az **Eszközök beléptetése** lap az alábbi képen láthatóhoz hasonló, akkor a frissített felhasználói felületet használja.  Látogasson el [erre a súgólapra](apple-school-manager-set-up-ios-newui.md).
+>
+>![Új felhasználói felület](./media/appleenroll-newui.png)
 
 Ez a témakör az [Apple School Manager](https://school.apple.com/) program keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Az Intune használatával nagy számú iOS-eszközt regisztrálhat az Apple School Manager programba anélkül, hogy kézbe venné az eszközökhöz. Amikor egy tanuló vagy a tanár bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint indul el, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
 

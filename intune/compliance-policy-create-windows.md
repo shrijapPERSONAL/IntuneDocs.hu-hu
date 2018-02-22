@@ -6,27 +6,25 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre.  Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
+A megfelelőségi szabályzatok az egyes platformhoz hozhatók létre. Megfelelőségi szabályzatok az Azure Portal webhelyen hozhatók létre. A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt. A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -46,15 +44,15 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 **Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező PIN-kódot beállítani.)+
 
-**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) A rendszer a következő műveleteket hajtja végre, ha az eszköz nem megfelelő:+
+**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
 
 - A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portal webhelyen
 
-1. Az **Intune** panelen válassza az **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehozás** lehetőséget.
-2. Adja meg a szabályzat nevét és leírását, majd válassza ki a platformot, amelyre alkalmazni szeretné.
+1. Az **Intune** panelen válassza a **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehozás** lehetőséget.
+2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
 3. Válassza a **Megfelelőségi követelmények** lehetőséget a megfelelőségi követelmények paneljének megnyitásához.  Itt megadhatja a **Biztonság**, az **Eszközállapot** és az **Eszköztulajdonság** beállítást. Miután elkészült, kattintson az **Ok** gombra.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
@@ -71,7 +69,7 @@ A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez vá
 1. Válassza ki azt a szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-beli biztonsági csoportokat**, és hozzárendelheti őket a szabályzathoz.
 2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához.  A **Kiválasztás** elemre kattintva telepítheti a szabályzatot a felhasználók számára.
 
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
+Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
 
 <!---## Compliance policy settings--->
 
@@ -84,7 +82,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
 - **Jelszó minimális hossza:** Meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
 - **Megkövetelt jelszótípus:** Meghatározza, hogy a felhasználóknak **alfanumerikus** vagy **numerikus** jelszót kell-e létrehozniuk.
 
-A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
+A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi szabályzat kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
 
 - **Karakterkészletek minimális száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
   - Kisbetűk
@@ -92,9 +90,9 @@ A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelel
   - Szimbólumok
   - Számok
 
-Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszavakat kell létrehozniuk. A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
+Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszavakat kell létrehozniuk. A Windows rendszerű és Microsoft-fiókkal elért eszközök esetén a megfelelőségi szabályzat kiértékelése helytelen, ha a jelszó minimális hossza hosszabb nyolc karakternél, vagy ha a karakterkészletek minimális száma meghaladja a kettőt.
 
-- **Jelszó kérése ennyi perc inaktivitás után:** Azt a tétlenségi időt határozza meg, amely eltelte után a felhasználónak újra be kell írnia a jelszavát.
+- **Jelszó kérése ennyi perc inaktivitás után:** arra a tétlenségi időre vonatkozik, amelyen túl a felhasználónak újra meg kell adnia a jelszavát.
 - **Jelszó érvényessége (napokban)**: Válassza ki, hogy hány nap elteltével járjon le a felhasználó jelszava, ami után újat kell létrehoznia.
 - **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
 - **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
@@ -132,23 +130,23 @@ A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állap
 
 Meghatározza a felhasználók jelszavában szereplő számjegyek vagy karakterek minimális számát.
 
-A Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
+A Microsoft-fiókkal elért eszközök esetében a megfelelőségi szabályzat kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
 
 - **Kötelező jelszótípus:** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott
 
 Meghatározza, hogy a felhasználóknak **alfanumerikus** vagy **numerikus** jelszót kell-e létrehozniuk.
 
-- **Karakterkészletek minimális száma:** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott. Ha a **Kötelező jelszótípus** **Alfanumerikus**, ez a beállítás határozza meg a jelszóban szereplő karakterkészletek minimális számát. A négy karakterkészlet a következő:
+- **Karakterkészletek minimális száma:** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott. Ha a **Jelszó kötelező** típusa **Alfanumerikus**, ez a beállítás határozza meg a jelszóban szereplő karakterkészletek minimális számát. A négy karakterkészlet a következő:
   - Kisbetűk
   - Nagybetűk
   - Szimbólumok
   - Számok: Ha nagyobb értékre állítja ezt a beállítást, a felhasználóknak összetettebb jelszavakat kell létrehozniuk.
 
-A Microsoft-fiókkal elért eszközök esetén a megfelelőségi házirend kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
+A Microsoft-fiókkal elért eszközök esetében a megfelelőségi szabályzat kiértékelése helytelen, ha **A jelszó minimális hossza** több mint 8 karakter, vagy ha a **Karakterkészletek minimális száma** meghaladja a kettőt.
 
 - **Jelszó kérése ennyi perc inaktivitás után:** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott.
 
-Azt a tétlenségi időt határozza meg, amely eltelte után a felhasználónak újra be kell írnia a jelszavát.
+Azt a tétlenségi időt határozza meg, amelynek eltelte után a felhasználónak újra be kell írnia a jelszavát.
 
 - **Jelszó érvényessége (napokban):** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott.
 
@@ -160,7 +158,7 @@ Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** b
 
 - **Korábbi jelszavak újbóli használatának tiltása:** – Windows RT, Windows RT 8.1 és Windows 8.1 rendszeren támogatott.
 
-Ha a **Korábbi jelszavak megjegyzése** be van jelölve, adja meg azon korábban használt jelszavak számát, amelyeket nem lehet ismét használni.
+Ha a **Korábbi jelszavak megjegyzése** be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
 
 
 ## <a name="device-health-settings"></a>Eszközállapot-beállítások
@@ -185,10 +183,18 @@ Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkez
 
 Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
-**Az operációs rendszer szükséges minimális verziója** és az **Operációs rendszer maximálisan engedélyezett verziója** beállításhoz használandó verziószám megállapításához futtassa a **winver** parancsot a parancssorból. A winver parancs visszaadja az operációs rendszer jelentett verzióját.+
+**Az operációs rendszer szükséges minimális verziója** és az **Operációs rendszer maximálisan engedélyezett verziója** beállításokhoz használandó verziószám megállapításához futtassa a **winver** parancsot a parancssorból. A winver parancs visszaadja az operációs rendszer jelentett verzióját.+
 
 - Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-as. Ha az operációs rendszer verziószabálya Windows 8.1-re van megadva a Windows esetén, az eszköz akkor is nem megfelelőként jelenik meg, ha Windows 8.1 operációs rendszer fut rajta.
 - Windows 10-es számítógépeken a verziót a következőképpen kell beállítani: &quot;10.0&quot; + a winver parancs által visszaadott operációs rendszer buildszáma.
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business-támogatás
+
+A Windows Holographic for Business az alábbi beállításokat támogatja:
+
+- Rendszerbiztonság / Titkosítás
+
+  **Adattárolás titkosítása eszközön**.
 
 <!--- ## Next steps
 

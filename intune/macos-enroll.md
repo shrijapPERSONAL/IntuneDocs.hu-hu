@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8528b3ec28499657b1eb39e1b981f92be3ab83ca
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>macOS-eszközök regisztrálása az Intune-ban
 
@@ -51,4 +51,4 @@ Kérje a végfelhasználókat, hogy a [Céges portál webhelyen](http://portal.m
 Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
 
 - [Információk végfelhasználóknak a Microsoft Intune használatáról](end-user-educate.md)
-- [iOS vagy macOS rendszerű eszköz használata az Intune-nal](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
+- [macOS-eszköz használata az Intune-nal](/intune-user-help/using-your-macos-device-with-intune)

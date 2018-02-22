@@ -2,10 +2,10 @@
 title: "Microsoft Intune App SDK Cordova beépülő modul"
 description: 
 keywords: SDK, Cordova, Intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova beépülő modul
 
-> [!NOTE]
-> Először célszerű elolvasnia az [Intune App SDK használatának első lépései](app-sdk-get-started.md) című cikket, amely bemutatja az integráció előkészítését a támogatott platformokon.
+> [!IMPORTANT]
+> Az Intune 2018. május 1-ével befejezi a Microsoft Intune App SDK Cordova beépülő modul támogatását. Javasoljuk, hogy a továbbiakban az Intune alkalmazásburkoló eszközt használja. További információk az alkalmazásburkoló eszközről: [iOS-hez készült alkalmazásburkoló eszköz](app-wrapper-prepare-ios.md) és [Androidhoz készült alkalmazásburkoló eszköz](app-wrapper-prepare-android.md). Erről a változásról további információt talál az [Újdonságok a Microsoft Intune-ban](whats-new.md) témakör [Értesítések](whats-new.md#notices) szakaszában.
 
 ## <a name="overview"></a>Áttekintés
 
 Az [Intune App SDK Cordova beépülő modul](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) Cordovával készített iOS- és Android alkalmazásokban. A beépülő modullal a fejlesztők beépíthetik az Intune alkalmazásfelügyeleti és adatvédelmi funkcióit a Cordova-alapú alkalmazásaikba.
+
+> [!NOTE]
+> Először célszerű elolvasnia az [Intune App SDK használatának első lépései](app-sdk-get-started.md) című cikket, amely bemutatja az integráció előkészítését a támogatott platformokon.
 
 Tapasztalni fogja, hogy az SDK funkcióit az alkalmazás működésének módosítása nélkül is engedélyezheti. Miután beépítette a beépülő modult az iOS vagy az Android rendszerhez készített mobilalkalmazásába, a Microsoft Intune rendszergazdája telepíteni tud olyan Intune alkalmazásvédelmi szabályzatot, amely számos adatvédelmi funkciót támogat. A beépülő modult azért készítettük el, hogy a lépések többségét automatikusan lehessen végrehajtani a Cordovában a build létrehozásakor. Ennek eredményeképpen gyorsan felkészítheti az alkalmazását az Intune alkalmazásvédelemre. A kezdéshez kövesse az alábbi lépéseket a célplatformnak megfelelően.
 
@@ -65,7 +68,7 @@ Az Intune App SDK Cordova beépülő modullal létrehozott Cordova-alapú alkalm
 
 
 
-## <a name="quick-start"></a>Gyors kezdés
+## <a name="quickstart"></a>Gyors útmutató
 
 1. Frissítse az ADAL verzióját:
 

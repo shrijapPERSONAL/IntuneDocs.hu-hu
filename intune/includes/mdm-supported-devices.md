@@ -7,7 +7,7 @@
 ### <a name="google"></a>Google
 - Android 4.4 és újabb (beleértve a Samsung Knox Standard 4.4-es és újabb verzióit is)
 
-  Az ellenőrzött Samsung Knox Standard-eszközök teljes listája megtalálható az [Android és Samsung Knox Standard-eszközök konfigurációs szabályzatának beállításai](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices) című témakörben.
+  Az ellenőrzött Samsung Knox Standard-eszközök teljes listája megtalálható az [Android és Samsung Knox Standard-eszközök konfigurációs szabályzatának beállításai](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices) című témakörben.
 
 
 - Android for Work [(követelmények)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
@@ -18,9 +18,9 @@
 - Windows 10 mobil verzió
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
-- Windows Holographic és Windows Holographic Enterprise
+- Windows Holographic for Business
 
-  További információ a Microsoft HoloLens-eszközök kezeléséről: [A HoloLens MDM-regisztrációja](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+  További információ a Windows Holographic for Business operációs rendszert futtató eszközök kezeléséről: [A Window Holographic for Business támogatása](../windows-holographic-for-business.md).
 
 - Windows Phone 8.1, Windows 8.1 RT és Windows 8.1-et futtató PC-k (fenntartási módban)
 
