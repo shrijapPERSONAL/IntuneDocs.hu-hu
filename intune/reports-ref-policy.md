@@ -5,20 +5,19 @@ keywords: "Intune-adattárház"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Szabályzat típusú entitások referenciája
 
@@ -66,9 +65,9 @@ A **DeviceConfigurationProfileDeviceActivity** entitás a napi sikeres, függő,
 | Hiba |A hibás állapotú egyedi eszközök száma. |10 |
 | Sikertelen |A sikertelen állapotú egyedi eszközök száma. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-A **UserConfigurationProfileDeviceActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú felhasználók számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk.  A **UserConfigurationProfileDeviceActivity** entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
+
+A **DeviceConfigurationProfileUserActivity** entitás a napi sikeres, függő, sikertelen vagy hibás állapotú felhasználók számát sorolja fel. A szám az entitáshoz rendelt eszközkonfigurációs profilokat jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk.  A **DeviceConfigurationProfileUserActivity** entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
 | Tulajdonság  | Description | Példa |
 |---------|------------|--------|
@@ -90,4 +89,77 @@ A **PolicyTypeActivity** entitás a sikeres, függő, sikertelen vagy hibás ál
 | Függőben |A függő állapotú egyedi eszközök száma. |123 |
 | Sikerült |A sikeres állapotú egyedi eszközök száma. |12 |
 | Hiba |A hibás állapotú egyedi eszközök száma. |10 |
-| Sikertelen- |A sikertelen állapotú egyedi eszközök száma. |2 |
+| Sikertelen |A sikertelen állapotú egyedi eszközök száma. |2 |
+
+## <a name="compliance-policy"></a>Megfelelőségi szabályzat
+
+A Megfelelőségi szabályzat API-referencia olyan entitásokat tartalmaz, amelyek információval szolgálnak az eszközökhöz rendelt megfelelőségi szabályzatok állapotáról.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+Az alábbi táblázatban foglaltuk össze az eszközökhöz rendelt megfelelőségi szabályzatok hozzárendelési állapotát. A lista felsorolja az egyes megfelelőségi állapotokban található eszközök számát is.
+
+
+|Tulajdonság     |Description  |Példa  |
+|---------|---------|---------|
+|DateKey  |A megfelelőségi szabályzat összefoglalójának létrehozási dátumkulcsa.|20161204 |
+|Ismeretlen  |Azoknak az eszközöknek a száma, amelyek offline állapotban vannak, vagy valamilyen más okból nem sikerült kapcsolatba lépniük az Intune-nal vagy az Azure AD-vel. |5|
+|NotApplicable      |Azoknak az eszközöknek a száma, amelyeknél a rendszergazda által meghatározott eszközmegfelelőségi szabályzatok nem alkalmazhatók.|201 |
+|Compliant (Megfelelő)      |Azoknak az eszközöknek a száma, amelyek megfelelnek a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak. |4083 |
+|InGracePeriod      |Azoknak az eszközöknek a száma, amelyek nem megfelelőek, de a rendszergazda által meghatározott türelmi időszakban vannak. |57|
+|NonCompliant      |Azoknak az eszköznek a száma, amelyek nem felelnek meg a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak, vagy a felhasználó nem a rendszergazda által meghatározott szabályzatoknak megfelelően járt el.|43 |
+|Hiba      |Azoknak az eszközöknek a száma, amelyeknek nem sikerült kapcsolatba lépniük az Intune-nal vagy az Azure AD-vel, és hibaüzenetet küldtek. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+Az alábbi táblázatban foglaltuk össze az eszközökhöz rendelt megfelelőségi szabályzatok hozzárendelési állapotát szabályzatonként és szabályzattípusonként. A lista szabályzatonként felsorolja az egyes megfelelőségi állapotokban található eszközök számát.
+
+
+
+|Tulajdonság  |Description  |Példa  |
+|---------|---------|---------|
+|DateKey  |A megfelelőségi szabályzat összefoglalójának létrehozási dátumkulcsa.|20161219|
+|PolicyKey     |Annak a megfelelőségi szabályzatnak a kulcsa, amelyhez az összefoglalás készült. |10178 |
+|PolicyPlatformKey      |Annak a megfelelőségi szabályzathoz tartozó platformnak a kulcsa, amelyhez az összefoglalás készült.|5|
+|Ismeretlen     |Azoknak az eszközöknek a száma, amelyek offline állapotban vannak, vagy valamilyen más okból nem sikerült kapcsolatba lépniük az Intune-nal vagy az Azure AD-vel.|13|
+|NotApplicable     |Azoknak az eszközöknek a száma, amelyeknél a rendszergazda által meghatározott eszközmegfelelőségi szabályzatok nem alkalmazhatók.|3|
+|Compliant (Megfelelő)      |Azoknak az eszközöknek a száma, amelyek megfelelnek a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak. |45|
+|InGracePeriod      |Azoknak az eszközöknek a száma, amelyek nem megfelelőek, de a rendszergazda által meghatározott türelmi időszakban vannak. |3|
+|NonCompliant      |Azoknak az eszköznek a száma, amelyek nem felelnek meg a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak, vagy a felhasználó nem a rendszergazda által meghatározott szabályzatoknak megfelelően járt el.|7|
+|Hiba      |Azoknak az eszközöknek a száma, amelyeknek nem sikerült kapcsolatba lépniük az Intune-nal vagy az Azure AD-vel, és hibaüzenetet küldtek. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+Az alábbi táblázat felsorolja minden hozzárendelt szabályzat platformtípusát. A táblázat nem sorolja fel azokat a szabályzatplatform-típusokat, amelyeket még soha nem rendeltek hozzá eszközökhöz.
+
+
+|Tulajdonság  |Description  |Példa  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |A szabályzatplatform típusának egyedi kulcsa. |20170519 |
+|PolicyPlatformTypeId      |A szabályzatplatform típusának egyedi azonosítója.|1|
+|PolicyPlatformTypeName      |A szabályzatplatform típusának neve.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+Az alábbi táblázat a sikeres, függő, sikertelen vagy hibás állapotú eszközök napi számát tartalmazza. A szám a szabályzattípus-profilok szerinti adatot jelöli. Ha például az adott eszköz valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott eszköz két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor az entitás növeli az értéket a sikeres állapotot jelző számlálón, és hibás állapotba helyezi az eszközt. A PolicyDeviceActivity entitás azt sorolja fel, hogy hány eszköz van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
+
+|Tulajdonság  |Description  |Példa  |
+|---------|---------|---------|
+|DateKey|A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése.|20160703|
+|Függőben|A függő állapotú egyedi eszközök száma.|123|
+|Sikerült|A sikeres állapotú egyedi eszközök száma.|12|
+PolicyKey|Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében.|Windows 10 baseline|
+|Hiba|A hibás állapotú egyedi eszközök száma.|10|
+|Sikertelen|A sikertelen állapotú egyedi eszközök száma.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+Az alábbi táblázat a sikeres, függő, sikertelen vagy hibás állapotú felhasználók napi számát tartalmazza. A szám a szabályzattípus-profilok szerinti adatot jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk. A PolicyUserActivity entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
+
+|Tulajdonság  |Description  |Példa  |
+|---------|---------|---------|
+|DateKey|A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése.|20160703|
+|Függőben|A függő állapotú egyedi eszközök száma.|123|
+|Sikerült|A sikeres állapotú egyedi eszközök száma.|12|
+PolicyKey|Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében.|Windows 10 baseline|
+|Hiba|A hibás állapotú egyedi eszközök száma.|10|

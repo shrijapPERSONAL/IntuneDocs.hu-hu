@@ -1,25 +1,24 @@
 ---
 title: "Megfelelőségi szabályzat létrehozása macOS rendszerhez"
 titleSuffix: Azure portal
-description: "További információ megfelelőségi szabályzat létrehozásáról macOS rendszerhez.”"
+description: "További információ megfelelőségi szabályzat létrehozásáról macOS rendszerhez."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak létrehozása az Intune-nal
 
@@ -35,20 +34,16 @@ Az eszközmegfelelőségi szabályzatok létrehozása és hozzárendelése előt
 > [!IMPORTANT]
 > Minden egyes platformhoz létre kell hoznia eszközmegfelelőségi szabályzatokat. Az Intune-os eszközmegfelelőségi szabályzat beállításai a platformképességektől, azaz az MDM protokollon keresztül elérhetővé tett beállításoktól függenek.
 
-Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
-
--------------------------------
+Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják:
 
 
-| **Szabályzat-beállítás** | **macOS 10.11 és újabb verziók** |
+| Házirend-beállítás | macOS 10.11 és újabb verziók |
 | --- | --- |
 | **PIN-kód vagy jelszó konfigurálása** | Kijavítva |   
 | **Eszköztitkosítás** | Kijavítva (PIN-kód beállításával) |
 | **E-mail profil** | Karanténba helyezve |
 |**Operációs rendszer minimális verziója** | Karanténba helyezve |
 | **Operációs rendszer maximális verziója** | Karanténba helyezve |  
-| **Windows-állapotigazolás** | Nem alkalmazható |  
-----------------------------
 
 
 **Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználó kénytelen lesz PIN-kódot beállítani.)
@@ -70,27 +65,27 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
 
 ### <a name="device-health"></a>Eszközállapot
 
-- **Rendszerintegritás-védelem megkövetelése** : válassza a **Kötelező** beállítást annak ellenőrzésére, hogy a macOS-es eszközöknél engedélyezve van-e a rendszerintegritás-védelem.
+- **Rendszerintegritás-védelem megkövetelése** – válassza a **Kötelező** beállítást annak ellenőrzésére, hogy a macOS-es eszközöknél engedélyezve van-e a rendszerintegritás-védelem.
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
+- **Minimális operációsrendszer-verzió** – Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
 
-- **Maximális operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximális operációsrendszer-verzió** – Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 ### <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
 #### <a name="password"></a>Jelszó
 
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza a **Kötelező** lehetőséget.
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához** – Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza a **Kötelező** lehetőséget.
 
-- **Egyszerű jelszavak**: Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza a **Blokkolás** lehetőséget.
+- **Egyszerű jelszavak** – Ha nem szeretné engedélyezni, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza a **Blokkolás** lehetőséget.
 
-- **Jelszó minimális hossza:** meghatározza a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **Jelszó minimális hossza** – meghatározza a jelszóban szereplő számjegyek vagy karakterek minimális számát.
 
-- **Jelszó típusa**: Meghatározza, hogy a felhasználóknak **alfanumerikus** jelszót vagy **numerikus** jelszót kell-e létrehozniuk.
+- **Jelszó típusa** – Meghatározza, hogy a felhasználóknak **alfanumerikus** jelszót vagy **numerikus** jelszót kell-e létrehozniuk.
 
-- **Nem alfanumerikus karakterek száma a jelszóban**: Ha a **Megkövetelt jelszótípus** **Alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. 
+- **Nem alfanumerikus karakterek száma a jelszóban** – Ha a **Megkövetelt jelszótípus** **Alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. 
 
     > [!NOTE]
     > Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
@@ -98,11 +93,11 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
     > [!IMPORTANT]
     > A macOS-eszközök esetében ez a beállítás a speciális karakterek minimális számára utal, például: **!** **#** , **&amp;**), amelynek szerepelnie kell a jelszóban.
 
-- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó kérése legfeljebb ennyi perc inaktivitás után** – Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
 
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap (1–250 között) elteltével járjon le a jelszó, ami után újat kell létrehoznia.
+- **Jelszó érvényessége (napokban)** – Válassza ki, hány nap (1–250 között) elteltével járjon le a jelszó, ami után újat kell létrehoznia.
 
-- **Újból nem használható jelszavak száma**: Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható.
+- **Újból nem használható jelszavak száma** – Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható.
 
     > [!IMPORTANT]
     > Ha macOS-eszközön megváltozik a jelszóra vonatkozó követelmény, akkor az csak akkor lép érvénybe, amikor a felhasználó legközelebb megváltoztatja jelszavát. Például ha a jelszó kötelező minimális hosszát 8 számjegyűre állítja át, és a macOS-eszköz jelenlegi jelszava 6 számjegyű, az eszköz egészen addig megfelelőnek minősül, amíg a felhasználó legközelebb meg nem változtatja az eszköz jelszavát.

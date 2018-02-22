@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal a Microsoft Intune segítségével
 
@@ -57,9 +57,7 @@ Az MDM-megoldások és az alkalmazásvédelmi szabályzatok együttes használat
 - **Az alkalmazásvédelmi szabályzatok gondoskodnak az alkalmazási rétegbeli védelemről**. Például egy szabályzat segítségével PIN-kódot kérhet egy alkalmazás munkahelyi környezetben való megnyitásához, meggátolhatja az alkalmazások közötti adatmegosztást, illetve megakadályozhatja a vállalati alkalmazások adatainak személyes tárolóhelyre való mentését.
 
 ## <a name="devices-that-support-mam"></a>A mobilalkalmazás-felügyeletet támogató eszközök
-Az alkalmazásvédelmi szabályzatok jelenleg a következő rendszereken támogatottak:
--   iOS 8.1-es vagy újabb verzió
--   Android 4 vagy újabb verzió
+Az Intune alkalmazásvédelmi szabályzatplatformjainak támogatása az Office alkalmazásplatformok támogatásával van összhangban. További információt az [Office rendszerkövetelményei](https://products.office.com/en-US/office-system-requirements) című témakörben talál.
 
 >[!NOTE]
 >A Windows-eszközök az MAM-ben regisztrációs forgatókönyv hiányában nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
