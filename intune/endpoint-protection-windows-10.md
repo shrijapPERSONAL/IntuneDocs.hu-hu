@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
@@ -225,7 +225,9 @@ A biztonsági rés kiaknázása elleni védelem engedélyezéséhez hozzon létr
 
 Az **Alkalmazás-ellenőrző kódintegritási szabályzatok** használatával további alkalmazásokat is kiválaszthat, amelyeket a Windows Defender Alkalmazásvezérlésnek vagy ellenőriznie kell, vagy biztonságosan futtathatónak kell besorolnia. A Windows-összetevők és a Windows Áruházból származó alkalmazások automatikusan biztonságosan futtathatóként lesznek besorolva.
 
-„Naplózási módban” az alkalmazások nem lesznek letiltva. A „naplózási mód” minden eseményt egy ügyfélnaplóban rögzít.
+**Naplózási módban** az alkalmazások nem lesznek letiltva. A **naplózási mód** minden eseményt egy ügyfélnaplóban rögzít.
+
+Ha az Alkalmazásvezérlést bekapcsolták, utána csak úgy lehet letiltani, ha a módot **Kényszerítésről** **Naplózási módra** változtatja. Ha a módot **Kényszerítésről** **Nincs konfigurálva** értékre változtatja, akkor az Alkalmazásvezérlés a hozzárendelt eszközökön továbbra is kényszerítve lesz.
 
 ## <a name="windows-defender-security-center"></a>Windows Defender biztonsági központ
 

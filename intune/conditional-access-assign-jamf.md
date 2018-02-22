@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
 
@@ -66,6 +66,12 @@ Ahhoz, hogy az eszközt Jamf Pro által kezelt eszközként regisztrálhassák a
 2. Konfigurálja a **Microsoft Intune-integráció** tartalmat, beleértve az eseményindítót és a végrehajtás gyakoriságát is.
 3. A **Hatókör** lapra kattintva terjessze ki a szabályzat hatókörét az összes megcélzott eszközre.
 4. A **Self Service** lapra kattintva tegye elérhetővé a szabályzatot a Jamf Self Service szolgáltatásban. Adja hozzá a szabályzatot az **Eszközmegfelelőség** kategóriához. Kattintson a **Mentés**gombra.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Jamf által felügyelt eszköz eltávolítása az Intune-ból
+
+A Jamf által felügyelt eszközök nem távolíthatók el az Intune-ból. Az ilyen eszközt a Jamf Pro használatával kell eltávolítani, ami az Intune-ból is eltávolítja a Jamf által felügyelt eszközt. 
+
+További információt a [Jamf által felügyelt eszköz eltávolítása a Jamf Próban](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information) című dokumentációban talál. Ha további segítségre van szüksége, támogatási jegyet is küldhet a [Jamf támogatási szolgálatának](https://www.jamf.com/support/). 
 
 ## <a name="next-steps"></a>További lépések
 
