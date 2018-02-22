@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Alkalmazás hozzáadása a Microsoft Intune-hoz
 
@@ -124,7 +124,7 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Beállítás** > **	Alkalmazáskategóriák** elemet.
+4. A **Mobilalkalmazások** területen válassza a **Beállítás** > **Alkalmazáskategóriák** elemet.
 5. Az **Alkalmazáskategóriák** panelen látható az aktuális kategóriák listája. Válasszon a következő lehetőségek közül:
     - **Új kategória létrehozása** – A **Hozzáadás** lehetőségre kattintva nyissa meg a **Kategória létrehozása** panelt, majd adjon meg egy nevet az új kategóriának. A neveket csak egy nyelven lehet megadni, és az Intune nem fordítja le őket. Ha végzett, kattintson a **Létrehozás** gombra.
     - **Kategória szerkesztése** – Bármelyik, a listán szereplő kategóriánál válassza a **...** elemet. Ez a lehetőség egy felugró menüt jelenít meg, amelyben **rögzítheti az irányítópulton** vagy **törölheti** a kategóriát.
@@ -149,5 +149,5 @@ Az alábbi témakörök ismertetik az egyes platformok alkalmazásainak felvéte
 - [Windows Áruházbeli alkalmazások](store-apps-windows.md)
 - [Windows LOB-alkalmazás](lob-apps-windows.md)
 - [Windows 10-es Office 365-alkalmazások](apps-add-office365.md)
-- [Beépített alkalmazások](apps-add-bulit-in.md)
+- [Beépített alkalmazások](apps-add-built-in.md)
 
