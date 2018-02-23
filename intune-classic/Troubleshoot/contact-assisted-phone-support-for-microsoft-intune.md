@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 10/10/2017
 |Bahreini Királyság|24 x 7|Vasárnaptól csütörtökig<br /><br />09:00 – 19:00 Arábiai idő szerint (UTC +2)|Angol|800 81 250||
 |Belarusz|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Moszkvai idő szerint (UTC +4)|Orosz&#42; és angol|8 820 0071 0003<br /><br />1. lépés: Válassza a 9. lehetőséget<br /><br />2. lépés. Adja meg a 7707 kódot||
 |Belgium|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Holland&#42;, francia&#42; és angol|80081174|022008884|
-|Brazília|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Brazil idő szerint (UTC -2)|Portugál (Brazília)&#42; és angol|08007621146|1147001999|
+|Brazília|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Brazil idő szerint (UTC -2)|Portugál (brazíliai)&#42; és angol|08007621146|1147001999|
 |Bulgária|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Bolgár&#42; és angol|008001184446||
 |Kanada|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Csendes-óceáni téli idő szerint (UTC -8)|Angol|800-865-9408||
 |Chile|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Chilei idő szerint (UTC -3)|Spanyol&#42; és angol|800226826|1230-020-0005|
@@ -56,7 +56,7 @@ ms.lasthandoff: 10/10/2017
 |Németország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Német&#42; és angol|0800 5892332|069380789508||
 |Görögország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Görög&#42; és angol|0080044142831||
 |Guatemala|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Kínai téli idő szerint (UTC +6)|Spanyol&#42; és angol|1-800-300-0069<br /><br />1. lépés Válassza a 4. lehetőséget (a speciális hozzáféréshez)<br /><br />2. lépés Adja meg a 7007 kódot||
-|Hongkong KKT|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)|Kantoni&#42;, mandarin&#42; és angol||30713055|
+|Hongkong (KKT)|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Hongkongi idő szerint (UTC +8)|Kantoni&#42;, mandarin&#42; és angol||30713055|
 |Magyarország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Magyar&#42; és angol|36 80 983 899|36 1 778 9292|
 |Izland|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Greenwich-i középidő szerint (UTC)|Angol|8009609||
 |India|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Indiai téli idő szerint (UTC +5:30)|Angol|000800 4402038|18002002052|
