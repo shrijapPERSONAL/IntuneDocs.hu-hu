@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Licencek kiosztása
           href: licenses-assign.md
+        - name: Intune-licencek
+          href: licenses.md
         - name: Az MDM-szolgáltató beállítása
           href: mdm-authority-set.md
     - name: Eszközök regisztrálása
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: Az iOS-es elveszett mód engedélyezése
           href: device-lost-mode.md
+        - name: iOS-es felügyelt mód bekapcsolása
+          href: device-supervised-mode.md
         - name: Eszköz zárolása
           href: device-remote-lock.md
         - name: Jelszó alaphelyzetbe állítása
@@ -251,7 +255,7 @@
             - name: Webalkalmazások
               href: web-app.md
             - name: Beépített alkalmazások
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Alkalmazások telepítése
           href: apps-deploy.md
           items:

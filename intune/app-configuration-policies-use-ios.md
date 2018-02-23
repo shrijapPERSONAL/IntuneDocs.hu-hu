@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott iOS-alkalmazásokhoz. A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
+
+Alkalmazáskonfigurálási szabályzatot rendelhet a felhasználók és eszközök egy csoportjához belefoglalási és kizárási hozzárendelések kombinációjával. Miután hozzáadta az alkalmazáskonfigurálási szabályzatot, beállíthatja az alkalmazáskonfigurálási szabályzat hozzárendeléseit. A szabályzat hozzárendeléseinek beállításakor felvehet vagy kizárhat a szabályzat hatálya alá eső felhasználói csoportokat. Amikor felvesz egy vagy több csoportot, kiválaszthat bizonyos csoportokat, vagy választhat beépített csoportokat. Beépített csoportok a következők: **Minden felhasználó**, **Minden eszköz**, és **Minden felhasználó és minden eszköz**. 
+
+>[!NOTE]
+>Az Intune biztosítja az előre létrehozott **Minden felhasználó** és **Minden eszköz** csoportok beépített optimalizálását a felhasználók kényelme érdekében a konzolon. Mindenképpen ajánlott ezeket a csoportokat használni az összes felhasználó és az összes eszköz megcélzására az Ön által létrehozott „Minden felhasználó” vagy „Minden eszköz” csoport helyett.
+
+Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási szabályzathoz, kiválaszthatja az adott kizárni kívánt csoportokat is.
 
 > [!TIP]
 > Ez a szabályzattípus jelenleg csak az iOS 8.0-ás vagy újabb verzióit futtató eszközökön érhető el. A szabályzat az alábbi alkalmazástelepítési módszereket támogatja:
@@ -52,9 +59,24 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
 7.  Válassza a **Társított alkalmazás** lehetőséget. A **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné.
 8.  A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Konfigurációs beállítások** lehetőséget.
 9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. Válasszon az alábbi lehetőségek közül:
-    - **[Konfigurációtervező használata](#Use-the-configuration-designer)**
+    - **[Konfigurációtervező használata](#use-configuration-designer)**
     - **[XML-adatok megadása](#enter-xml-data)**
-10. Válassza az **OK**, majd a **Hozzáadás** gombot.
+10. XML-adatainak hozzáadását követően használja az **OK**, majd a **Hozzáadás** gombot a konfigurációs szabályzat hozzáadásához. Ekkor megjelenik a konfigurációs szabályzat áttekintő panelje.
+11. Válassza a **Hozzárendelések** lehetőséget a belefoglalási és kizárási beállítások megjelenítéséhez. 
+
+    ![Szabályzat-hozzárendelések](./media/app-config-policy01.png)
+12. Válassza a **Minden felhasználó** lehetőséget a **Belefoglalás** lapon.
+
+    ![Szabályzat-hozzárendelések – Minden felhasználó](./media/app-config-policy02.png)
+13. Válassza a **Kizárás** lapot. 
+14. Kattintson a **Válassza ki a kizárandó csoportokat** lehetőségre a kapcsolódó panel megjelenítéséhez.
+
+    ![Szabályzat-hozzárendelések – Válassza ki a kizárandó csoportokat](./media/app-config-policy03.png)
+15. Válassza ki azokat a csoportokat, amelyeket ki szeretne zárni, majd kattintson a **Kijelölés** lehetőségre.
+
+    >[!NOTE]
+    >Csoportok hozzáadásakor, ha bármely más csoport már bele lett foglalva egy adott hozzárendelés-típus esetében, az előre ki lesz jelölve és nem módosítható más belefoglalási hozzárendelés-típusok esetében. Ezért az adott csoport használatba lett véve, és így nem használható kizárt csoportként.
+16. Kattintson a **Mentés**gombra.
 
 ## <a name="use-configuration-designer"></a>A configuration designer használata
 

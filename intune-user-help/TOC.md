@@ -104,7 +104,6 @@
 ## [macOS-eszköz használata](using-your-macos-device-with-intune.md)
 ### [Mi történik, ha macOS-eszközt regisztrál?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-cp.md)
-### [Örökölt macOS-eszköz regisztrálása](enroll-your-device-in-intune-macos-legacy.md)
 ### [macOS rendszerű eszköz regisztrációjának törlése](unenroll-your-device-from-intune-macos.md)
 
 ### [A macOS gyakori problémáinak elhárítása](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Naplók elküldése a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
 #### [Naplók elküldése a Gépház alkalmazásból](send-logs-to-your-it-admin-settings-windows.md)
 #### [A Windows verziója jelenleg még nem támogatott](your-windows-version-isnt-yet-supported.md)
+#### [Az Office 365 telepítése Windows 10-es eszközön](install-office-windows.md)
 #### [Windowsos titkosítás engedélyezése](you-need-to-enable-windows-encryption.md)
 #### [Eszközömnek kártevőirtó szoftverre van szüksége](your-device-needs-antimalware-software.md)
 #### [Biztonságos rendszerindítás engedélyezése](you-need-to-enable-secure-boot-windows.md)

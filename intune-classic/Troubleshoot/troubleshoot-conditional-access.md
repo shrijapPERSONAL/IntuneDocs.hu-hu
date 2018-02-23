@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
 
@@ -90,7 +90,7 @@ Előfordulhat, hogy egy eszköz feltételes hozzáférését a rendszer anélkü
 - Ellenőrizze az Exchange Connector naplófájljaiban a SendEmail műveletekkel kapcsolatos hibákat. A keresendő parancs lehet például egy SendEmail művelet az értesítési fiókból a felhasználói fiók felé.
 - Mielőtt az Exchange Connector zárolná az eszközt, aktiválási e-mailt küld. Ha az eszköz offline állapotban van, előfordulhat, hogy nem kapja meg az aktiválási e-mailt. Ellenőrizze, hogy az eszköz e-mail-ügyfele ügyfélleküldéses módszerrel és nem lekérdezéssel fér hozzá az e-mailekhez, mert ez is okozhatja azt, hogy nem érkeznek meg. Váltson lekérdezési módra, és ellenőrizze, hogy az eszköz megkapja-e az e-mailt.
 
-## <a name="non-compliant-device-not-blocked"></a>Nem megfelelő eszköz nincs letiltva
+## <a name="noncompliant-device-not-blocked"></a>Nem megfelelő eszköz nincs letiltva
 
 Ha olyan eszközzel találkozik, amely nem megfelelő, mégis rendelkezik hozzáféréssel, hajtsa végre a következőket.
 
