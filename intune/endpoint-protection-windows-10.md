@@ -75,7 +75,7 @@ Ezek a beállítások minden hálózattípusnál alkalmazhatók.
 
 ### <a name="network-settings"></a>Hálózati beállítások
 
-Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen többek között a **Tartományi (munkahelyi) hálózat**, a **Magánhálózat (észlelhető)** és a **	Nyilvános (nem észlelhető) hálózat**.
+Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen többek között a **Tartományi (munkahelyi) hálózat**, a **Magánhálózat (észlelhető)** és a **Nyilvános (nem észlelhető) hálózat**.
 
 #### <a name="general-settings"></a>Általános beállítások
 
