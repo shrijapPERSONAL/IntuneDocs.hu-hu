@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/19/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 300ddb15f2d7b8f2fc6ab4a0e9e32852e0604e0a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0ecf5e17bb66ac6515a3e67f4b0a1bc82ec9c3ba
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="windows-holographic-for-business-device-restriction-settings-in-microsoft-intune"></a>A Windows Holographic for Business eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
@@ -41,19 +41,18 @@ Az alábbi eszközkorlátozási beállítások a Windows Holographic for Busines
 
 ## <a name="app-store"></a>Alkalmazásáruház
 
--   **Alkalmazásáruház** – engedélyezi vagy letiltja az Alkalmazásáruház használatát az eszközön.
 -   **Áruházból származó alkalmazások automatikus frissítése** – Engedélyezi a Microsoft Áruházból származó alkalmazások automatikus frissítését.
 -   **Megbízható alkalmazás telepítése** – Engedélyezi a megbízható tanúsítvánnyal aláírt alkalmazások közvetlen telepítését.
 -   **Fejlesztői zárolás feloldása** – Engedélyezi, hogy a Windows fejlesztői beállításait (például alkalmazások közvetlen telepítését) a végfelhasználók megváltoztassák.
 
-## <a name="edge-browser"></a>Edge böngésző
+## <a name="edge-browser"></a>Microsoft Edge böngésző
 
 -   **Microsoft Edge böngésző** – Engedélyezi az Edge böngésző használatát az eszközön.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
 -   **Előugró ablakok** – Blokkolja az előugró ablakokat a böngészőben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Keresési javaslatok** – Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
--   **Jelszókezelő** – Engedélyezi vagy letiltja az Edge böngésző Jelszókezelő szolgáltatását.
-- **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
+-   **Jelszókezelő** – Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását.
+- **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Microsoft Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
