@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>A Microsoft Intune előzetes kiadása – 2018. február
 
@@ -40,6 +40,10 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Új regisztrációs hibákat ábrázoló trenddiagram és hibaokokat tartalmazó táblázat <!-- 1471783 -->
+
+Az Enrollment Overview (Regisztráció áttekintése) lapon megtekintheti a regisztrációs hibák trendjét és az öt leggyakoribb hibaokot. A diagramra vagy a táblázatra kattintva hozzáférhet a részletesebb adatokhoz, valamint hibaelhárítási tanácsokat és szervizelési javaslatokat is találhat.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>A munkahelyi profilban található fiókok hozzáadásának vagy eltávolításának tiltása a végfelhasználók számára<!-- 1728700 -->    
 A Gmail alkalmazás egy Android for Work-profilba történő telepítésekor az Android for Work Eszközkorlátozások profiljának **Fiók hozzáadása és eltávolítása** beállítása segítségével megakadályozhatja, hogy a végfelhasználók fiókokat adjanak hozzá vagy távolítsanak el.
@@ -76,9 +80,6 @@ Például hozzáadhatja kivételként a Webex-csomagot az MAM adatátviteli szab
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>A Céges portál témáinak testreszabása hexadecimális kódokkal <!--1049561 eeready-->
 
 Hexadecimális kódokkal testreszabhatja a témák színeit a Céges portál alkalmazásaiban. A hexadecimális kód megadásakor az Intune meghatározza a szövegszín és a háttérszín közötti legnagyobb kontrasztot eredményező szövegszínt a [WCAG 2.0 szabványok](http://www.w3.org/TR/WCAG20) alapján. A szöveg színéről és a céges emblémáról is megtekinthet egy-egy előnézeti képet a **Mobilalkalmazások** > **Céges portál** területen. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Eszközkategóriák kiválasztása a „Hozzáférés munkahelyi vagy iskolai rendszerhez” beállításokkal <!-- 1058963 --> 
-Ha engedélyezte az [eszközcsoport-leképezést](https://docs.microsoft.com/intune/device-group-mapping), a Windows 10-felhasználókat felkéri a rendszer egy eszközkategória választására, miután regisztráltak a **Gépház** > **Fiókok** > **Hozzáférés munkahelyi vagy iskolai rendszerhez** területen elérhető **Csatlakozás** gombbal, vagy a kezdőélmény során.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Új Windows Defender Credential Guard-beállítások az Endpoint Protection-beállításokban <!--1102252 --> 
 
@@ -120,7 +121,7 @@ Az eszközök számára két új adatvédelmi beállítás érhető el:
 
 A felhasználók a Készülékregisztráció-kezelővel regisztrálhatnak a macOS Céges portálra.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>A Microsoft Edge böngésző új beállításai <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Az Edge böngésző új beállításai <!--1469166 -->
 
 A Microsoft Edge böngészőt használó eszközök számára két új beállítás érhető el: **A kedvencek fájl elérési útja** és **A Kedvencek módosításai**. 
 

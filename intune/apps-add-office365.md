@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus 2016-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
-Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus 2016-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
+Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -32,7 +32,7 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus 201
 >Az Office telepítésének ezen módja csak akkor támogatott, ha a Microsoft Office más verziói nincsenek telepítve az eszközön.
 
 - Azokon az eszközökön, melyekre telepíti az alkalmazásokat, a Windows 10 alkotói frissítésének vagy újabb verziójának kell futnia.
-- Az Intune csak az Office 365 ProPlus 2016 csomagból származó Office-alkalmazások hozzáadását támogatja.
+- Az Intune csak az Office 365 ProPlus csomagból származó Office-alkalmazások hozzáadását támogatja.
 - Ha bármely Office-alkalmazás meg van nyitva, amikor az Intune telepíti az alkalmazáscsomagot, előfordulhat, hogy a telepítés sikertelen lesz, és elvesznek a végfelhasználók adatai a nem mentett fájlokból.
 - Ez a telepítési mód nincs támogatva Windows 10S, Windows Home, Windows Team, Windows Holographic és Windows Holographic for Business rendszert futtató eszközökön.
 - Az Intune nem támogatja az asztali Office 365-programok (más néven az Office Centennial-alkalmazások) Microsoft Áruházból történő telepítését olyan eszközök esetében, amelyekre korábban már telepítettek valamilyen Office 365-alkalmazást az Intune segítségével. Ha ezt a konfigurációt telepíti, az adatvesztést vagy adatsérülést okozhat.

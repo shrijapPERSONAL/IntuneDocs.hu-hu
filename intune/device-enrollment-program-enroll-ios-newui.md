@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b97da0c8ca0a1e3891a64508b565749dec06de93
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 48b74b81c9f3f8b9c936ae22a343ccfb565b4ec1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -68,7 +68,7 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 > [!NOTE]
 > Ha törli a tokent a klasszikus Intune-portálról az Azure-ba történő migrálás előtt, előfordulhat, hogy az Intune visszaállít egy korábban törölt Apple DEP-tokent. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról. Ilyenkor a DEP-tokent ismét törölheti az Azure Portalról.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. lépés: Töltse le a nyilvános kulcsú Intune-tanúsítványt, amelyre szükség van a token létrehozásához.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. lépés Töltse le a nyilvános kulcsú Intune-tanúsítványt, amelyre szükség van a token létrehozásához.
 
 1. Az Azure-beli Intune-portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > **Hozzáadás** elemet.
 
@@ -77,7 +77,7 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 2. Kattintson a **Nyilvános kulcs letöltése** elemre a titkosításikulcs-fájl (.pem) letöltéséhez és helyi mentéséhez. A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
   ![Képernyőkép – A Készülékregisztrációs program tokenje panel az Apple tanúsítványok munkaterületen – nyilvános kulcs letöltése.](./media/device-enrollment-program-enroll-ios/image02.png)
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. lépés: Töltsön le a kulcsa segítségével egy tokent az Apple-től.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. lépés Töltsön le a kulcsa segítségével egy tokent az Apple-től.
 
 1. A **Token létrehozása az Apple Készülékregisztrációs programjában** elemre kattintva nyissa meg az Apple Központi Telepítési Program portálját, és jelentkezzen be a cége Apple-azonosítójával. A későbbiekben ezt az Apple ID-t használhatja a DEP-token megújításához.
 2.  Az Apple [Központi Telepítési Program portálján ](https://deploy.apple.com) válassza a**Készülékregisztrációs program** **Első lépések** elemét.
@@ -99,13 +99,13 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 
    Az Apple-portál **Központi telepítési programok** &gt; **Készülékregisztrációs program** &gt; **Hozzárendelési előzmények** menüpontjában jeleníthető meg az eszközök és a hozzájuk tartozó MDM-kiszolgálók listája.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés: Mentse a token létrehozásához használt Apple ID-t.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés. Mentse a token létrehozásához használt Apple ID-t.
 
 Az Azure-beli Intune-portálon adja meg az Apple ID azonosítót későbbi felhasználásra.
 
 ![Képernyőkép – A DEP-token létrehozásához használt Apple ID megadása és a DEP-token megkeresése.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>4. lépés: Töltse fel a tokent.
+### <a name="step-4-upload-your-token"></a>4. lépés. Töltse fel a tokent.
 Az **Apple-token** mezőben keresse meg tallózással a tanúsítványfájlt (.pem), és válassza a **Megnyitás**, majd a **Létrehozás** lehetőséget. A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és felügyelje az iOS-eszközöket a szabályzatoknak a regisztrált mobileszközökre való leküldésével. Az Intune automatikusan szinkronizálja az Apple-lel a regisztrációs programfiók adatait.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple-regisztrációs profil létrehozása

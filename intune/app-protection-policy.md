@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Mik azok az alkalmazásvédelmi szabályzatok?
 
@@ -61,8 +61,7 @@ Az MDM-megoldásoknak az alkalmazásvédelmi szabályzatokkal együttes használ
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Az alkalmazásvédelmi szabályzatok által támogatott platformok
--   iOS 9-es vagy újabb verzió
--   Android 4.4-es vagy újabb verzió
+Az Intune alkalmazásvédelmi szabályzatplatformjának támogatása az Office alkalmazásplatform támogatásával van összhangban. További információt az [Office rendszerkövetelményei](https://products.office.com/en-US/office-system-requirements) című témakörben talál.
 
 A Windows-eszközök jelenleg nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Az alkalmazásvédelmi szabályzatok és az alkalmazásadatok védelme
