@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c2ebbe451f83dc14a9294c78a21ecfd30e5d155
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
 
@@ -94,7 +94,7 @@ A [Google Play Alkalmazások szakaszában](https://play.google.com/store/apps) k
 
 Nyissa meg az alkalmazás telepítési lapját, és másolja az URL-címet a vágólapra. Most ezt a címet felhasználhatja URL-címként a kompatibilis vagy a nem kompatibilis alkalmazások listájában.
 
-Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre. Használja a következő URL-címet: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Példa: Keressen rá a [Google Play Alkalmazások szakaszában](https://play.google.com/store/apps) a **Microsoft Plannerre**. Használja a következő URL-címet: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>További beállítások
 

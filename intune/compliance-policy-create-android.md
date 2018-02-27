@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 6da4e6ffb473cee73f3946e5af3d97ddd5bb6b7b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Android-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/30/2018
 
 Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz. 
 
-- A megfelelőségi szabályzatokról a [What is a device compliance](device-compliance.md) (Mi az eszközmegfelelőség?) című témakörben találhat további információt.
-- A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről a [Get started with device compliance](device-compliance-get-started.md) (Az eszközmegfelelőség használatának első lépései) című témakörben találhat további információt.
+- A megfelelőségi szabályzatokról a [Mi az eszközmegfelelőség?](device-compliance.md) című témakörben találhat további információt.
+- A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozásához
 
@@ -48,8 +48,8 @@ Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egye
 
 A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatok a **Megfelelőségi szabályzatok** panelen találhatók.
 
-1. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik az a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-csoportokat**, és hozzárendelheti őket a szabályzathoz.
-2. Az Azure AD biztonság csoportokat megjelenítő panel megnyitásához válassza a **Csoportok kiválasztása** lehetőséget. Itt találhatóak az Azure Active Directory biztonsági csoportjai.  Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
+1. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Ezután kiválaszthat **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
+2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához. Itt találhatóak az Azure Active Directory biztonsági csoportjai.  Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
 
 Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
 
@@ -57,7 +57,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
 
 ## <a name="device-health-and-security-settings"></a>Eszközállapot és biztonsági beállítások
 
-- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
+- **Az eszköz nem lehet függetlenített vagy feltört eszköz**: Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
 - **Annak megkövetelése, hogy az ismeretlen forrásból származó alkalmazások telepítését a rendszer megakadályozza az eszközökön (Android 4.0 vagy újabb)**: A beállítás engedélyezésével és az **Igen** lehetőség beállításával letilthatja azokat az eszközöket, amelyeken engedélyezve van a **Biztonság** >; **Ismeretlen források** beállítás.
 
 ### <a name="important"></a>Fontos
@@ -67,13 +67,11 @@ Az alkalmazások közvetlen telepítéséhez engedélyezni kell az **Ismeretlen 
 - **Az USB-hibakeresés letiltásának megkövetelése (Android 4.2 vagy újabb)**: Ezzel a beállítással adhatja meg, hogy a rendszer ellenőrizze-e az USB-hibakeresés engedélyezését az eszközön.
 - **A Biztonsági fenyegetések keresése az eszközön beállítás engedélyezésének megkövetelése az eszközökön (Android 4.2-4.4)**: Ezzel a beállítás szabja meg, hogy az **Alkalmazások ellenőrzése** funkció engedélyezve van-e az eszközön.
 - **Az Android minimálisan előírt biztonsági javítási szintje (Android 6.0 vagy újabb)**: Ezzel a beállítással adható meg az Android minimálisan előírt javítási szintje. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot a következő formátumban kell megadni: ÉÉÉÉ-HH-NN.
-- **Veszélyforrások elleni eszközvédelem engedélyezésének megkövetelése**: ez a beállítás a Lookout MTP-megoldás kockázatelmérését megfelelőségi feltételként állítja be. Válassza ki a megengedett maximális kockázati szintet, amely az alábbiak egyike lehet:
-  - **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
+- **Veszélyforrások elleni eszközvédelem engedélyezése**: ezzel a beállítással megfelelési feltételként kiveszi a kockázatelemzést Lookout MTP-megoldásból. Válassza ki a megengedett maximális kockázati szintet, amely az alábbiak egyike lehet:
+  - **Semmilyen (védett)**: Ez a fenyegetettségi szint a legbiztonságosabb. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszköz vonatkozásában fennálló fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
-  - **Magas**: Ez a legkevésbé biztonságos beállítás. Alapvetően az összes kockázati szintet engedélyezi. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
-
-További információ: [az eszközök fenyegetések elleni védelmét szolgáló szabály engedélyezése a megfelelőségi szabályzatban](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+  - **Magas**: Ez a fenyegetettségi szint a legkevésbé biztonságos. Alapvetően az összes kockázati szintet engedélyezi. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
 
 ## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
@@ -96,12 +94,12 @@ További információ: [az eszközök fenyegetések elleni védelmét szolgáló
 
 ### <a name="encryption"></a>Encryption
 
-- **Titkosítás megkövetelése mobileszközön**: Állítsa ezt a beállítást **Igen** értékre, ha szeretné megkövetelni, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás használatával titkosíthatók.
+- **Titkosítás megkövetelése mobileszközön**: Válassza az **Igen** értéket annak megköveteléséhez, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás használatával titkosíthatók.
 
 ## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 
 - **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
-- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 ## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>A nem megfelelő besorolású beállítások kezelése a feltételes hozzáférési szabályzatokkal
 
