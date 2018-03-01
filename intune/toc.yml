@@ -606,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: Windows-alkalmazások beszerzése
           href: end-user-apps-windows.md
+        - name: Az Intune által az Apple-nek küldött adatok
+          href: data-intune-sends-to-apple.md
+        - name: Az Intune által a Google-nek küldött adatok
+          href: data-intune-sends-to-google.md
     - name: Monitorozás és hibaelhárítás
       items:
         - name: Segítség a felhasználóknak a problémák elhárításában
