@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -130,14 +130,14 @@ A Windows 10 frissítések alkalmazása nyomon követhető az Operations Managem
 
 A kereskedelmi azonosítót az Intune-konzolon egy egyéni szabályzat OMA-URI beállításaival konfigurálhatja. További információ: [A Microsoft Intune-ban regisztrált Windows 10-eszközökre vonatkozó Intune-szabályzatbeállítások](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-A kereskedelmi azonosító konfigurálásához szükséges (kis- és nagybetűket megkülönböztető) OMA-URI elérési út: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+A kereskedelmi azonosító konfigurálásához szükséges (kis- és nagybetűket megkülönböztető) OMA-URI elérési út: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a következő beállítások használhatók:
 
 - **Beállítás neve**: Windows Analytics kereskedelmi azonosító
 - **Beállítás leírása**: Kereskedelmi azonosító konfigurálása Windows Analytics megoldásokhoz
 - **Adattípus:** Karakterlánc
-- **OMA-URI** (megkülönbözteti a kis- és nagybetűket): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI** (megkülönbözteti a kis- és nagybetűket): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
 ![A Windows beállítása diagnosztikai és használati adatok küldéséhez](./media/commID.png)

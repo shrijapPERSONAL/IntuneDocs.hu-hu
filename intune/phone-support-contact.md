@@ -1,10 +1,10 @@
 ---
-title: "Kapcsolatfelvétel az Intune telefonos tanácsadással"
-titlesuffix: Azure portal
-description: "A Microsoft Intune ügyfélszolgálatának telefonszámai.”"
+title: "Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással"
+titlesuffix: Microsoft Intune
+description: "A Microsoft Intune telefonos szolgálatának telefonszámait tartalmazza."
 keywords: "munkaidő"
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2017
 ms.topic: article
@@ -15,15 +15,18 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3de5f7524982c2a068bb8a62f90778722b037605
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: fffe789f287d68a341e529e8f27b7f76156fa798
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+A cikk a Microsoft Intune telefonos tanácsadásának kapcsolatfelvételi adatait ismerteti.
 
 ## <a name="phone-numbers-and-business-hours"></a>Telefonszámok és munkaidő
 
@@ -72,7 +75,7 @@ ms.lasthandoff: 02/23/2018
 |Lettország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Lett&#42; és angol||80004233|
 |Liechtenstein|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42;, olasz&#42; és angol|0800000300|0227614114|
 |Litvánia|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Litván&#42; és angol|880030960||
-|Luxemburg|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42; és angol|80021094|24871510|
+|Luxemburg|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42 és angol|80021094|24871510|
 |Macedónia V.J.K.|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Angol|0800-94288<br /><br />1. lépés: Tárcsázza a telefonszámot<br /><br />2. lépés. Írja be a 001 számsort<br /><br />3. lépés. Írja be a 877-663-5075 számsort||
 |Malajzia|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Malajziai idő szerint (UTC +8)|Bahasa&#42;, maláj&#42; és angol|1800 220030|362074606|
 |Málta|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Angol|0 80062231||
