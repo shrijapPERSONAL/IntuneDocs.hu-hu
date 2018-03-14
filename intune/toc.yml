@@ -236,6 +236,9 @@
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft Áruházbeli alkalmazások
                   href: store-apps-windows.md
+                  items:
+                    - name: A Céges portál alkalmazás manuális hozzáadása
+                      href: store-apps-company-portal-app.md
                 - name: Android for Work-alkalmazások
                   href: apps-add-android-for-work.md
                 - name: Windows 10-es Office 365-alkalmazások
@@ -441,6 +444,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows-szabályzat létrehozása
           href: compliance-policy-create-windows.md
+        - name: Házirend kiértékelése
+          href: policy-evaluate.md
         - name: Meg nem felelés esetén végrehajtandó műveletek
           href: actions-for-noncompliance.md
         - name: Az eszközmegfelelőség figyelése
