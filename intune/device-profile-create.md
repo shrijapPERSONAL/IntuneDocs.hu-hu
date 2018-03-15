@@ -14,11 +14,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Eszközprofil létrehozása a Microsoft Intune-ban
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 2. A **Microsoft Intune** területen válassza az **Eszközkonfiguráció** lehetőséget, majd a **Profilok** elemet, végül a **Profil létrehozása** lehetőséget.
 
-3. Adja meg a következő tulajdonságokat: 
+3. Adja meg a következő tulajdonságokat:
 
     - **Név**: Adja meg az új profil leíró nevét.
     - **Leírás**: Nem kötelező, de ajánlott. Adja meg a profil leírását.
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/05/2018
 
     ![Adja meg a beállításokat az eszközprofil létrehozásához](./media/create-device-profile.png)
 
-4. Ha kész, válassza a **Létrehozás** lehetőséget. 
+4. Ha kész, válassza a **Létrehozás** lehetőséget.
 
 Ekkor létrejön a profil, és megjelenik a listán. Ha a profilt csoportokhoz szeretné rendelni, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
 
