@@ -1,10 +1,10 @@
 ---
-title: "Intune által felügyelt iOS-eszköz felhasználójának eltávolítása"
-titlesuffix: Azure portal
-description: "Ismerje meg, hogyan távolíthat el felhasználót egy Intune által felügyelt, megosztott iOS-eszközről.”"
+title: "A Microsoft Intune által felügyelt iOS-eszköz felhasználójának eltávolítása"
+titlesuffix: 
+description: "Ismerje meg, hogyan távolíthat el felhasználót egy Intune által felügyelt, megosztott iOS-eszközről."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 979614aaa450493ea0b5cc2a1baaccc10a6dd028
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1b2321de0c0541111fdf6f18345bd952ca8b5448
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Felhasználó eltávolítása Intune által felügyelt, megosztott iOS-eszközről
+# <a name="remove-a-user-from-a-shared-ios-device"></a>Felhasználó eltávolítása megosztott iOS-eszközről
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +37,8 @@ Azoknak a megosztott iPad- eszközöknek a helyi gyorsítótárából, amelyeken
 
 ## <a name="how-to-remove-a-user"></a>Felhasználó eltávolítása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
 5. A felügyelt eszközök listájából válasszon ki egy iOS-eszközt.
@@ -47,4 +47,4 @@ Azoknak a megosztott iPad- eszközöknek a helyi gyorsítótárából, amelyeken
 
 ## <a name="next-steps"></a>További lépések
 
-A kezdeményezett művelet állapotát az **Eszközök és csoportok** panel **Eszközműveletek** szakaszában tekintheti meg.
+A kezdeményezett művelet állapotát az **Eszközök** panel **Eszközműveletek** szakaszában tekintheti meg.

@@ -1,12 +1,11 @@
 ---
-title: "Intune-beli eszközkonfigurációs profilok létrehozása"
-titlesuffix: Azure portal
-description: "Ismerje meg, hogyan hozhat létre eszközkonfigurációs profilokat az Intune-ban.”"
+title: "Eszközprofilok létrehozása az Azure-beli Microsoft Intune-ban | Microsoft Docs"
+description: "A Microsoft Intune-ban eszközprofilokat adhat hozzá és konfigurálhat, így megadhatja a platform típusát és konfigurálhatja a beállításokat az Azure Portalon"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Eszközkonfigurációs profilok létrehozása a Microsoft Intune-ban
+# <a name="create-a-device-profile-in-microsoft-intune"></a>Eszközprofil létrehozása a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>A profil létrehozása
+1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** lehetőséget, majd keresse meg a **Microsoft Intune** elemet.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
-2. A profilok listáját megjelenítő panelen válassza a **Profil létrehozása** lehetőséget.
-3. A **Profil létrehozása** panelen adja meg a következőket:
-    - **Név** – Adja meg az új profil leíró nevét.
-    - **Leírás** – Megadhatja a profil leírását (nem kötelező).
-    - **Platform** – Válassza ki a létrehozni kívánt profil platformtípusát.
-    - **Profiltípus** – Válassza ki a létrehozni kívánt profil típusát. A rendelkezésre álló típusok listája a kiválasztott platformtól függően változik.
-    - **Beállítások** – Az egyes profiltípusok beállításaival kapcsolatos további információkért tekintse meg az alábbi témaköröket:
+2. A **Microsoft Intune** területen válassza az **Eszközkonfiguráció** lehetőséget, majd a **Profilok** elemet, végül a **Profil létrehozása** lehetőséget.
+
+3. Adja meg a következő tulajdonságokat: 
+
+    - **Név**: Adja meg az új profil leíró nevét.
+    - **Leírás**: Nem kötelező, de ajánlott. Adja meg a profil leírását.
+    - **Platform**: Válassza ki a platform típusát:  
+
+        - **Android**
+        - **Android for Work**
+        - **iOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 és újabb**
+        - **Windows 10 és újabb**
+
+    - **Profiltípus**: Válassza ki a létrehozni kívánt profil típusát. A lista a választott platformtól függ.
+    - **Beállítások**: Az alábbi témakörök az egyes profiltípusok beállításait ismertetik:
+
         -  [Eszközfunkciók beállításai](device-features-configure.md)
         -  [Eszközkorlátozási beállítások](device-restrictions-configure.md)
         -  [E-mail-beállítások](email-settings-configure.md)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [Oktatási beállítások](education-settings-configure.md)
         -  [Egyéni beállítások](custom-settings-configure.md)
 
-    ![Eszközprofil létrehozása](./media/create-device-profile.png)
-4. Ha végzett a beállítások konfigurálásával, a **Profil létrehozása** panelen válassza a **Létrehozás** elemet.
+    ![Adja meg a beállításokat az eszközprofil létrehozásához](./media/create-device-profile.png)
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
+4. Ha kész, válassza a **Létrehozás** lehetőséget. 
+
+Ekkor létrejön a profil, és megjelenik a listán. Ha a profilt csoportokhoz szeretné rendelni, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
 
 
-### <a name="next-steps"></a>További lépések
-Az eszközprofilok hozzárendelésével kapcsolatos további információkért lásd: [How to assign device profiles with Microsoft Intune](device-profile-assign.md) (Eszközprofilok hozzárendelése a Microsoft Intune-nal).
+## <a name="next-steps"></a>További lépések
+Az eszközprofilok hozzárendeléséhez tekintse meg az [Eszközprofilok hozzárendelése a Microsoft Intune-nal](device-profile-assign.md) című témakört.

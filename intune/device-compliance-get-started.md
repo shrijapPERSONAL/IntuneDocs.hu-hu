@@ -1,29 +1,28 @@
 ---
-title: "Intune-eszközmegfelelőségi szabályzatok"
-titleSuffix: Azure portal
+title: "A Microsoft Intune eszközmegfelelőségi szabályzatai"
+titleSuffix: 
 description: "Ebből a témakörből megtudhatja, mit jelent az eszközmegfelelőség fogalma a Microsoft Intune-ban"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>A Microsoft Intune eszközmegfelelőségi szabályzatai – első lépések
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-## <a name="what-is-device-compliance-in-intune"></a>Eszközmegfelelőség az Intune-ban
 
 Az eszközöknek az Intune eszközmegfelelőségi szabályzatai által meghatározott szabályok és beállítások szerint kell működnie, hogy megfeleljen az Intune előírásainak.
 
@@ -43,7 +42,7 @@ Ezek a szabályok a következők:
 
 A megfelelőségi szabályzatokkal figyelheti eszközei megfelelőségi állapotát is.
 
-### <a name="device-compliance-requirements"></a>Eszközmegfelelőségi követelmények
+## <a name="device-compliance-requirements"></a>Eszközmegfelelőségi követelmények
 
 A megfelelőségi követelmények gyakorlatilag olyan szabályok (például PIN-kódhasználat vagy titkosítás megkövetelése az eszközön), amelyeket kötelezőként vagy nem kötelezőként lehet megjelölni az egyes megfelelőségi szabályzatokban.
 

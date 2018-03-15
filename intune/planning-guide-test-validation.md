@@ -1,9 +1,10 @@
 ---
 title: "Az Intune tesztelése és ellenőrzése"
-description: "Egy kizárólag felhőalapú Intune-beli megoldás a környezetben történő tesztelésekor és érvényesítésekor megfontolandó szempontok."
+titlesuffix: Microsoft Intune
+description: "Teljes mértékben felhőalapú Intune-megoldás tesztelése és ellenőrzése saját környezetben."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Az Intune tesztelése és ellenőrzése
 
-A tesztelési fázisra a megvalósítási fázis alatt és azután kerül sor. Az összes előzetesen azonosított szükséges informatikai (rendszergazdai) és végfelhasználói (használatieset-) forgatókönyv teszteléséhez tesztfiókokra, -csoportokra és -eszközökre van szükség.
+A Microsoft Intune üzemelésének tesztelésénél javasoljuk, hogy végezzen működésbeli ellenőrzést és különféle használati eseteken alapuló ellenőrzést. A funkcionális ellenőrzési tesztelés során minden egyes összetevő és konfiguráció tesztelésre kerül, melynek során megállapítható, hogy azok megfelelően működnek-e. A használati eseteken alapuló ellenőrzés részeként tesztelni érdemes, hogy többféle feladatot magában foglaló esetekben is megfelelő működés tapasztalható-e. 
 
 A tesztelési folyamatba ajánlatos bevonni az informatikai és a támogatási munkatársakat, így elkészíthető a támogatási dokumentáció, és biztosítható, hogy a támogatási munkatársak megfelelő támogatást tudjanak nyújtani a termékhez. Ha a használati esetek alapján egyes összetevők vagy forgatókönyvek nem működnek megfelelően, a szükséges változtatásokat a változtatás okának feltüntetésével dokumentálni érdemes.
 

@@ -1,7 +1,7 @@
 ---
-title: "Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Ez a témakör azt ismerteti, hogyan lehet alkalmazáskonfigurációs szabályzatokkal konfigurációs adatokat szolgáltatni a futtatott Android for Work-alkalmazásoknak."
+title: "Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz"
+titlesuffix: Microsoft Intune
+description: "A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott Android for Work-alkalmazásokhoz."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -30,8 +30,8 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
 > [!Note]  
 > Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza a **Mobilalkalmazások** panelt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
@@ -41,7 +41,7 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
       Az Azure Portalon megjelenő profilleírás.
     - **Eszközbeléptetés típusa**  
       Válasza a **Felügyelt eszközök** lehetőséget.
-6. A **Platform** beállításban válassza az **Android** lehetőséget.
+6. A **Platform** beállításban válassza az **Android for Work** lehetőséget.
 7. Válassza a **Társított alkalmazás** lehetőséget azon alkalmazás kiválasztásához, amelyhez a konfigurációs szabályzatot definiálni szeretné. Válassza ki a listából azon Android for Work alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
 8. Válassza a **Konfigurációs beállítások** lehetőséget. A konfigurációkat a következőkkel adhatja meg:
     - [A konfigurációtervező](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ Amikor valamelyik eszközön sor kerül az alkalmazáskonfigurációs szabályza
 
 Az alkalmazások az Android-eszköz funkcióinak eléréséhez szükséges engedélyét is megadhatja előre. Alapértelmezés szerint az eszközengedélyeket (például a tartózkodási hely adataihoz vagy az eszköz kamerájához való hozzáférést) megkövetelő Android-alkalmazások felszólítják a felhasználókat az engedélyek elfogadására vagy elutasítására. Ha például egy alkalmazás az eszköz mikrofonját használja, a rendszer felszólítja a felhasználót, hogy adjon engedélyt az alkalmazásnak a mikrofon használatára.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
-3. Válassza a **Mobilalkalmazások** lehetőséget. A **Felügyelet** csoportban válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget, majd a **Hozzáadás** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Válassza a **Mobilalkalmazások** lehetőséget.
+3. A **Felügyelet** csoportban válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget, majd a **Hozzáadás** lehetőséget.
 4. Adja meg a következő adatokat:
     - **Név**. Az Azure Portalon megjelenő profilnév.
     - **Leírás**. Az Azure Portalon megjelenő profilleírás.
-    - **Platform**. Válassza az **Android** lehetőséget.
-    - **Eszközregisztráció típusa**. A **Felügyelt eszközök** beállítás van előre kijelölve.
+    - **Eszközregisztráció típusa**. Válassza a **Felügyelt eszközök** lehetőséget.
+    - **Platform**. Válassza az **Android for Work** lehetőséget.
 5. Válassza a **Társított alkalmazás** lehetőséget azon alkalmazás kiválasztásához, amelyhez a konfigurációs szabályzatot definiálni szeretné. Válassza ki a listából azon Android for Work alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
 6. Válassza az **Engedélyek** majd **Hozzáadás** lehetőséget.
 7. Válasszon a rendelkezésre álló alkalmazásengedélyek listájából, és kattintson az **OK** gombra.

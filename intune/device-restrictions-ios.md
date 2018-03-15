@@ -1,27 +1,26 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban iOS esetén"
-titleSuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az iOS-eszközökön."
+title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban iOS-hez"
+titleSuffix: 
+description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az iOS rendszerű eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Az iOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
+A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók iOS rendszerű eszközökhöz.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -107,7 +106,7 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - **PIN-kód módosítása (csak felügyelt)** – Megakadályozza a jelszó hozzáadását, módosítását és eltávolítását.
     - **Ujjlenyomat módosítása (csak felügyelt)** – Megakadályozza, hogy a felhasználó módosítsa, hozzáadja vagy eltávolítsa a TouchID-beállításokat.
 
-<sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
+<sup>1</sup>Ha a **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** és a **Jelszó kérése legfeljebb ennyi perccel a képernyőzárolás után** beállítást is konfigurálja, akkor a rendszer egymást követően alkalmazza őket. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő öt perc után automatikusan ki fog kapcsolni, és az eszköz további öt perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz öt perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
@@ -182,8 +181,8 @@ Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, m
 
 A megjelenített és az elrejtett alkalmazások listáján konfigurálhatja valamelyiket a következő listák közül (ennek feltétele, hogy a felügyelt eszközökön az iOS 9.3-as vagy újabb verziója fusson).
 
-A **Rejtett alkalmazások** listája – Itt felsorolhatja azokat az alkalmazásokat, amelyek rejtve lesznek a felhasználók számára. Az ilyen alkalmazásokat a felhasználók nem látják és nem tudják elindítani.
-A **Megjelenített alkalmazások** listája – Ebben megadhatja a felhasználók által látható és elindítható alkalmazások listáját. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
+A **Rejtett alkalmazások** listája – Itt felsorolhatja azokat az alkalmazásokat, amelyek rejtve vannak a felhasználók számára. Az ilyen alkalmazásokat a felhasználók nem látják és nem tudják elindítani.
+A **Megjelenített alkalmazások** listája – Itt felsorolhatja a felhasználók által látható és elindítható alkalmazásokat. Ezeken kívül a felhasználók más alkalmazásokat nem látnak és nem indíthatnak el.
 
 A lista konfigurálásához kattintson a **Hozzáadás** gombra, és adja meg a kívánt nevet. Tetszés szerint megadhatja az alkalmazás kiadóját, valamint az alkalmazásnak az alkalmazás-áruházbeli URL-címét.
 
@@ -240,7 +239,7 @@ Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. E
 -   **Dokumentumok iCloudba történő szinkronizálása (csak felügyelt eszköz esetén)** – Engedélyezi a dokumentumok és kulcsértékek szinkronizálását az iCloud tárhelyére.
 -   **Fényképadatfolyamok iCloudba történő szinkronizálása** – A felhasználók engedélyezhetik a **Saját fotóstreamet** az eszközeiken, amely lehetővé teszi a fényképeknek az iClouddal való szinkronizálását, így a fényképek elérhetővé válnak a felhasználó összes eszközén.
 -   **Biztonsági másolatok titkosítása** – Megköveteli az eszköz minden biztonsági másolatának titkosítását.
--   **iCloud-fotókönyvtár** – A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.    Minden olyan fénykép, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból, el lesz távolítva az eszközről, ha a beállítás a **Nem** értékre van állítva.
+-   **iCloud-fotókönyvtár** – A **Nem** értékre állítva letilthatja a felhasználói fényképek és videók felhőben való tárolását lehetővé tevő iCloud-fotókönyvtár használatát.   Ha a beállítás a **Nem** értékre van állítva, a rendszer minden olyan fényképet eltávolít az eszközről, amely nincs teljes egészében letöltve az eszközre az iCloud-fotókönyvtárból.
 -   **Felügyelt alkalmazások szinkronizálása a felhővel** – Engedélyezi, hogy az Intune-nal felügyelt alkalmazások adatokat szinkronizáljanak a felhasználó iCloud-fiókjával.
 -   **Megosztott fotóstream** – A **Nem** értékre állítva letilthatja az **iCloud-fotómegosztást** az eszközön.
 -   **Tevékenység folytatása** – Lehetővé teszi, hogy a felhasználó folytassa az iOS-eszközön vagy egy másik macOS rendszerű gépen elkezdett munkát (átadás).
@@ -251,7 +250,7 @@ Ezekkel a beállításokkal konfigurálhatja az iOS-es eszközöket megadott alk
 
 ### <a name="settings"></a>Beállítások
 
-- **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak az ezen a lapon található alkalmazáslistában megjelenő nevét.
+- **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak az ezen a panelen található alkalmazáslistában megjelenő nevét.
 - **Alkalmazás csomagazonosítója** – Itt adhatja meg az alkalmazás csomagazonosítóját. Segítséget a jelen témakörben alább található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
 
 Az alkalmazásnevek és a csomagazonosítók megadása után az alkalmazást a **Hozzáadás** lehetőség választásával adhatja hozzá a listához.
@@ -343,7 +342,7 @@ Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosí
 
 ### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
 
-Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó a listában nem szereplő tartományból kap e-mailt, az iOS-es Mail alkalmazásban az nem megbízhatóként lesz megjelölve.
+Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó nem a konfigurált tartományok egyikéből kap e-mailt, az iOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
 
 
 ### <a name="managed-web-domains"></a>Felügyelt webtartományok

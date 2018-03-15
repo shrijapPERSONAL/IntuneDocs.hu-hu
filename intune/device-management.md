@@ -1,12 +1,12 @@
 ---
-title: "Eszközök kezelése az Intune-nal"
-titleSuffix: Intune on Azure
-description: "Útmutató az Intune-nal felügyelt eszközök megjelenítéséhez és az eszközökön végrehajtható különféle műveletekhez.”"
+title: "Eszközök kezelése a Microsoft Intune-nal"
+titleSuffix: 
+description: "Áttekintheti az Intune-nal felügyelt eszközöket, és különféle műveleteket hajthat végre rajtuk."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>A Microsoft Intune-eszközfelügyelet ismertetése
 
@@ -29,8 +29,8 @@ Rendszergazdaként meg kell győződnie arról, hogy a felügyelt eszközök a v
 
 Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről, és lehetővé teszi, hogy távolról hajtson végre műveleteket rajtuk. A munkafolyamat elérése:
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune-ban** válassza az **Eszközök** lehetőséget.
 4. Megtekintheti az eszközökre vonatkozó információkat, és végrehajthatja az alábbi távoli eszközműveleteket:
     - **Áttekintés** – A kezelhető regisztrált eszközök pillanatképe.
@@ -38,10 +38,12 @@ Az **Eszközök** munkafolyamat áttekintést nyújt a felügyelt eszközökről
     - **Azure AD-eszközök** – Az Azure Active Directory (AD) szolgáltatásban regisztrált vagy azzal összekapcsolt eszközök. További tudnivalók az [Azure AD eszközkezeléséről](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
     - **Eszközműveletek** – Az eszközökön végrehajtott távoli műveletek előzményei, amelyek tartalmazzák a műveletet, az állapotot, a műveletet kezdeményező felhasználót és az időt.
 
-    ![Eszközműveletek figyelése](./media/monitor-device-actions.png)
+        ![Képernyőkép az eszközműveletek figyeléséről](./media/monitor-device-actions.png)
 
-    - **TeamViewer** – A TeamViewer szolgáltatás révén az Intune-ban kezelt Android-eszközök használói távsegítséget kérhetnek a rendszergazdájuktól. További információ a [TeamViewerről](device-profile-android-teamviewer.md).
-
+    - **Auditnaplók** – Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. További információk az [Auditnaplókról](monitor-audit-logs.md).
+    - **TeamViewer-összekötő** – A TeamViewer szolgáltatás révén az Intune-ban kezelt Android-eszközök használói távsegítséget kérhetnek a rendszergazdájuktól. További információ a [TeamViewerről](device-profile-android-teamviewer.md).
+    - **Súgó és támogatás** – Hibaelhárítási információkat kereshet, támogatást kérhet, és megtekintheti az Intune állapotát.  
+    
 ## <a name="available-device-actions"></a>Elérhető eszközműveletek
 Az egyes műveletek az eszköz platformjának és konfigurációjának függvényében érhetők el.
 

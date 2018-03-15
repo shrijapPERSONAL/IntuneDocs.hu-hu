@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90b1321c0df49f446bfdeccbacdfd5642396dacd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864d528091de7a6113485347304b0dc254af2c7d
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Elveszett vagy ellopott iOS-eszközök megkeresése az Intune-nal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az elveszett vagy ellopott iOS-eszköz helyét a térképen. A funkció csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható. A művelet használata előtt az eszközt [Elveszett eszköz módba](/intune-azure/manage-devices/lost-mode.md) kell állítani.
+Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az elveszett vagy ellopott iOS-eszköz helyét a térképen. A funkció csak felügyelt módban lévő, DEP-pel regisztrált, céges tulajdonban lévő iOS-eszközökön használható. A művelet használata előtt az eszközt [Elveszett eszköz módba](device-lost-mode.md) kell állítani.
 
 ## <a name="supported-platforms"></a>Támogatott platformok
 
@@ -37,11 +37,11 @@ Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az 
 
 ## <a name="how-to-locate-a-lost-or-stolen-device"></a>Elveszett vagy ellopott eszköz megkeresése
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
-5. A felügyelt eszközök listájából válassza ki az eszközt, majd válassza az **Eszköz megkeresése** távoli eszközműveletet.
+4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
+5. A felügyelt eszközök listájából válassza ki az eszközt, és válassza a **...Továbbiak** lehetőséget, majd az **Eszköz megkeresése** távoli eszközműveletet.
 6. Miután a rendszer megtalálta az eszközt, megjeleníti annak helyét az **Eszköz megkeresése** panelen.
     ![Eszköz megkeresése panel](./media/locate-device.png)
 
@@ -58,4 +58,4 @@ Az **Eszköz megkeresése** eszközművelet használatával jelenítheti meg az 
 
 ## <a name="next-steps"></a>További lépések
 
-A kezdeményezett művelet állapotát az **Eszközök és csoportok** panel **Eszközműveletek** szakaszában tekintheti meg.
+A kezdeményezett művelet állapotát az **Eszközök** panel **Eszközműveletek** szakaszában tekintheti meg.

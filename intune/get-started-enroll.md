@@ -1,10 +1,10 @@
 ---
-title: "Az eszközök regisztrációjának első lépései"
-titlesuffix: Azure portal
+title: "Az iOS-eszközök regisztrációs folyamatának ismertetése"
+titlesuffix: Microsoft Intune
 description: "Megismerheti a regisztrációs folyamatot egy iOS-eszköz teljes regisztrációs folyamatának végigkövetésével."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>Az eszközök regisztrációjának első lépései
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Az iOS-eszközök felhasználói regisztrációs folyamatának ismertetése
 
 A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, miközben gondoskodik a vállalati adatok védelméről. Mivel a végfelhasználók a felügyeleti konzol helyett a saját eszközeiken fognak interakcióba lépni az Intune-nal, részletesen meg kell ismernie a regisztrációs folyamatot. Ezzel a módszerrel kombinálhatja a jól kialakított megfelelőségi házirendeket a regisztrációs folyamattal, és empátiát mutathat felhasználói felé. Ez különösen fontos, mivel a felhasználók pontosan tudni fogják, hogy Ön rendszergazdaként milyen adatokat láthat:
 

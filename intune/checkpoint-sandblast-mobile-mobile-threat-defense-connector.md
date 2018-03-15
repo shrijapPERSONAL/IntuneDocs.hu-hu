@@ -3,8 +3,8 @@ title: "Check Point SandBlast Mobile-összekötő az Intune-nal"
 titlesuffix: Azure portal
 description: "Check Point SandBlast-integráció az Intune-nal"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09a8914be00b7af039257fe0759967b7f5a90c5e
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 10bc23b5b5e0d0d278677ed4bf332787fc16b367
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-összekötő az Intune-nal
 
@@ -33,73 +33,74 @@ Az Androidra és iOS-re készült Check Point SandBlast Mobile alkalmazás rögz
 
 Az Intune eszközmegfelelőségi szabályzata tartalmaz egy szabályt a Check Point SandBlast Mobile Threat Defense-hez, amely a Check Point SandBlast kockázatfelmérésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét. Amennyiben az eszköz nem megfelelőnek minősül, akkor megszűnik a felhasználók hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A mobileszközeikre telepített Check Point SandBlast mobilalkalmazás segítséget nyújt a felhasználóknak a probléma elhárításához és a vállalati erőforrásokhoz való hozzáférés visszaszerzéséhez.
 
-<!-- ## Sample scenarios
+<!-- ## Sample scenarios 
+closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
-Here are some common scenarios:
+Néhány gyakori helyzet:
 
-### Control access based on threats from malicious apps
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>Hozzáférés vezérlése rosszindulatú alkalmazások jelentette fenyegetés alapján
 
-When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
+Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a rendszer, a probléma megoldásáig az eszközön letilthatók az alábbiak:
 
--   Connecting to corporate e-mail
+-   Hozzáférés a vállalati e-mailekhez
 
--   Syncing corporate files with the OneDrive for Work app
+-   A vállalati fájlok szinkronizálása a OneDrive for Work alkalmazással
 
--   Accessing company apps
+-   Hozzáférés vállalati alkalmazásokhoz
 
-**Block when malicious apps are detected:**
+**Letiltás kártékony alkalmazás észlelése esetén:**
 
-![Check Point MTD block when malicious apps are detected](./media/checkpoint-MTD-2.PNG)
+![Check Point MTD – letiltás kártékony alkalmazás észlelése esetén](./media/checkpoint-MTD-2.PNG)
 
-**Access granted on remediation:**
+**A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![Check Point MTD access granted](./media/checkpoint-MTD-3.PNG)
+![Check Point MTD – hozzáférés engedélyezve](./media/checkpoint-MTD-3.PNG)
 
-### Control access based on threat to network
+### <a name="control-access-based-on-threat-to-network"></a>Hozzáférés vezérlése hálózati fenyegetés alapján
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+Észleli a hálózaton a fenyegetéseket, például a **közbeékelődéses (man-in-the-middle)** támadást, és az eszköz jelentette kockázat alapján biztosítja a Wi-Fi-hálózatok elérésének védelmét.
 
-**Block network access through Wi-Fi:**
+**Wi-Fi-s hálózati elérés letiltása:**
 
-![Check Point MTD block network access through Wi-Fi](./media/checkpoint-MTD-4.PNG)
+![Check Point MTD – Wi-Fi-s hálózati elérés letiltása](./media/checkpoint-MTD-4.PNG)
 
-**Access granted on remediation:**
+**A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![Check Point MTD Wi-Fi access granted](./media/checkpoint-MTD-5.PNG)
+![Check Point MTD – Wi-Fi-hozzáférés engedélyezve](./media/checkpoint-MTD-5.PNG)
 
-### Control access to SharePoint Online based on threat to network
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Hozzáférés vezérlése a SharePoint Online-hoz hálózati fenyegetés alapján
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+Észleli a hálózaton a fenyegetéseket, például a **közbeékelődéses (man-in-the-middle)** támadást, és az eszköz jelentette kockázat alapján megakadályozza a vállalati fájlok szinkronizálását.
 
-**Block SharePoint Online when network threats are detected:**
+**A SharePoint Online letiltása hálózati fenyegetések észlelése esetén:**
 
-![Check Point MTD block SharePoint Online access](./media/checkpoint-MTD-6.PNG)
+![Check Point MTD – SharePoint Online-hozzáférés letiltása](./media/checkpoint-MTD-6.PNG)
 
-**Access granted on remediation:**
+**A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![Check Point MTD SharePoint Online access granted](./media/checkpoint-MTD-7.PNG)
+![Check Point MTD – SharePoint Online-hozzáférés engedélyezve](./media/checkpoint-MTD-7.PNG)
 
-## Supported platforms
+## <a name="supported-platforms"></a>Támogatott platformok
 
--   **Android 4.1 and later**
+-   **Android 4.1 és újabb verziók**
 
--   **iOS 8 and later**
+-   **iOS 8 és újabb verziók**
 
-## Pre-requisites
+## <a name="pre-requisites"></a>Előfeltételek
 
--   Azure Active Directory Premium
+-   Prémium szintű Azure Active Directory
 
--   Microsoft Intune subscription
+-   Microsoft Intune-előfizetés
 
--   Check Point SandBlast Mobile Threat Defense subscription
-    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+-   Check Point SandBlast Mobile Threat Defense-előfizetés
+    -   További információt a [CheckPoint SandBlast webhelyén](https://www.checkpoint.com/) találhat.
 
-## Next steps
+## <a name="next-steps"></a>További lépések
 
-- [Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [A Check Point SandBlast integrálása az Intune-nal](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 
-- [Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Check Point SandBlast Mobile-alkalmazás beállítása](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
+- [CheckPoint SandBlast Mobile eszközmegfelelőségi szabályzat létrehozása](mtd-device-compliance-policy-create.md)
 
-- [Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
+- [A CheckPoint SandBlast Mobile MTD-összekötő engedélyezése](mtd-connector-enable.md)

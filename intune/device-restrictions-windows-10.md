@@ -1,25 +1,26 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Windows 10 esetén"
-titlesuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 10-es eszközökön."
+title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Windows 10 esetén"
+titlesuffix: 
+description: "A cikk tájékoztatást nyújt a Microsoft Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 10 rendszerű eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - A rendszer nem alkalmazza ezt a szabályzatbeállítást, ha a számítógép az Azure Active Directoryhoz van csatlakoztatva, és engedélyezve van az automatikus regisztráció. 
    - A szabályzatbeállítás a Windows 10 Home rendszerű számítógépekre nem vonatkozik.
 - **Főtanúsítvány manuális telepítése (csak mobileszköz)** – Letiltja a felhasználó számára a főtanúsítványok és a köztes szolgáltatói tanúsítványok manuális telepítését.
-- **Diagnosztikai adatok küldése** – A lehetséges értékek a következők:
-    - **Nincs** – Az eszköz nem küld adatokat a Microsoftnak
-    - **Alapszintű** – Az eszköz korlátozott információkat küld a Microsoftnak
-    - **Bővített** – Az eszköz bővebb diagnosztikai adatokat küld a Microsoftnak
-    - **Teljes** – A Bővített beállítással küldött adatok mellett az eszköz állapotával kapcsolatos információkat is küld.
+
 - **Kamera** – Engedélyezi vagy letiltja az eszköz kamerájának használatát.
 - **OneDrive-fájlszinkronizálás** – Letiltja az eszköz fájljainak OneDrive-ba való szinkronizálását.
 - **Cserélhető tároló** – Meghatározza, hogy az eszközzel használható-e külső tárolóeszköz, például SD-kártya.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Eszközfelderítés** – Letiltja az eszköz más eszközök általi felderíthetőségét.
 - **Feladatváltó (csak mobileszköz)** – Letiltja a feladatváltót az eszközön.
 - **SIM-kártyahibát jelző párbeszédpanel (csak mobileszköz)** – Letiltja a hibaüzenetet, amely akkor jelenne meg, amikor a rendszer nem észlel SIM-kártyát az eszközön.
+- **Szabadkézi munkaterület** – Megakadályozza, hogy a felhasználók hozzáférjenek a szabadkézi munkaterülethez. Ha ez a beállítás nincs konfigurálva, a szabadkézi munkaterület engedélyezve lesz (a funkció elérhető), így a felhasználók a zárolási képernyőn is elérhetik azt.
 - **Automatikus újbóli üzembe helyezés** – Lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz zárolási képernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
 
 
@@ -75,6 +73,9 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 
 -   **Bemenet személyre szabása** – Letiltja a felhőalapú beszédszolgáltatások használatát a Cortanához, a diktáláshoz vagy a Microsoft Áruház alkalmazásaihoz. Ha engedélyezi ezeket a szolgáltatásokat, a Microsoft hangadatokat gyűjthet a szolgáltatás fejlesztéséhez.
 -   **A társításra és adatvédelemre vonatkozó felhasználói beleegyezést kérő üzenetek automatikusa elfogadása** – Lehetővé teszi a Windowsnak, hogy automatikusan elfogadja a társítási és adatvédelmi beleegyezést kérő üzeneteket az alkalmazások futtatása közben.
+- **Felhasználói tevékenységek közzététele**: A megosztott élmények és a feladatváltóban nemrég használt erőforrások megelőzéséhez ezt a beállítást **tiltsa le**.
+- **Csak a helyi tevékenységek**: A csak a helyi tevékenységek alapján megosztott használat és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez ezt a beállítást **tiltsa le**.
+
 
 Meghatározhatja azon adatok körét, amelyeket az eszközön futó összes alkalmazás elérhet. Definiálhat kivételeket alkalmazásonként az **Alkalmazásonkénti adatvédelmi kivételek** segítségével.
 
@@ -130,7 +131,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 ## <a name="locked-screen-experience"></a>Zárolási képernyő felülete
 
 - **Műveletközpont értesítései (csak mobileszköz)** – Engedélyezi a Műveletközpont értesítéseinek megjelenését az eszköz zárolási képernyőjén (csak Windows 10 Mobile esetén).
-- **Zárolási képernyő URL-címe (csak asztali verzióban)** – A Windows zárolási képernyőjének háttérképeként használandó PNG, JPG vagy JPEG formátumú kép URL-címét adja meg. A felhasználók ezt nem tudják módosítani.
+- **Zárolási képernyő URL-címe (csak asztali verzióban)** – A Windows zárolási képernyőjének háttérképeként használandó JPEG formátumú kép URL-címét adja meg. A felhasználók ezt nem tudják módosítani.
 -   **Felhasználó által konfigurálható képernyő-időkorlát (csak mobilon)** – Engedélyezi a felhasználóknak az időtartam konfigurálását 
 -   **Cortana zárolt képernyőn (csak asztali verzió)** – Nem engedélyezi, hogy a felhasználó interakcióba lépjen a Cortanával, ha a képernyő zárolva van (csak Windows 10 asztali verziónál).
 -   **Bejelentési értesítések zárolt képernyőn** – Riasztások megjelenítésének letiltása az eszköz zárolási képernyőjén.
@@ -158,7 +159,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 -   **Microsoft Edge böngésző (csak mobil)** – Engedélyezi az Edge böngésző használatát az eszközön.
 -   **Címsor legördülő funkciója (csak asztali gép)** – Ezzel akadályozhatja meg, hogy az Edge megjelenítse a javaslatok listáját egy legördülő menüben gépelés közben. Ezzel minimalizálhatja a hálózati sávszélességnek az Edge és a Microsoft szolgáltatásai közötti használatát.
--   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és a Microsoft Edge között.
+-   **Kedvencek szinkronizálása a Microsoft-böngészők között (csak asztali gépek)** – Lehetővé teszi, hogy a Windows szinkronizálja a kedvenceket az Internet Explorer és az Edge között.
 -   **„Do Not Track” fejlécek küldése** – Arra konfigurálja az Edge böngészőt, hogy Do Not Track (Követés letiltása) fejléceket küldhessen a felhasználók által meglátogatott webhelyeknek.
 -   **Cookie-k** – Engedélyezi a böngészőnek, hogy mentse az internetről érkező cookie-kat az eszközre.
 -   **JavaScript** – Engedélyezi a szkriptek (például a JavaScript) futtatását az Edge böngészőben.
@@ -166,7 +167,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Keresési javaslatok** – Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben.
 -   **Intranetes forgalom átirányítása az Internet Explorerbe** – Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben (csak a Windows 10 asztali verzióra vonatkozik).
 -   **Automatikus kitöltés** – Engedélyezi a felhasználók számára, hogy módosítsák a böngésző automatikus kiegészítési funkciójának beállításait (csak a Windows 10 asztali verzióra vonatkozik).
--   **Jelszókezelő** – Engedélyezi vagy letiltja az Microsoft Edge böngésző Jelszókezelő szolgáltatását.
+-   **Jelszókezelő** – Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását.
 -   **Vállalati üzemmód webhelylistájának helye** – Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(Csak a Windows 10 asztali verzió.)
 -   **Fejlesztői eszközök** – Megakadályozza, hogy a végfelhasználók megnyithassák az Edge fejlesztői eszközeit.
 -   **Bővítmények** – Engedélyezi, hogy a végfelhasználók Edge-bővítményeket telepítsenek az eszközön.
@@ -180,6 +181,8 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
 -   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
+-  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Ez lehet például http://contoso.com/favorites.html.
+-  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

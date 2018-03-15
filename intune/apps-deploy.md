@@ -1,12 +1,12 @@
 ---
-title: "Alkalmazások hozzárendelése csoportokhoz"
-titlesuffix: Azure portal
-description: "Miután hozzáadott egy alkalmazást az Intune-hoz, érdemes hozzárendelni azt felhasználók vagy eszközök csoportjaihoz."
+title: "Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-ban"
+titlesuffix: 
+description: "Miután hozzáadott egy alkalmazást a Microsoft Intune-hoz, érdemes hozzárendelni azt felhasználók vagy eszközök csoportjaihoz."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
@@ -38,29 +38,30 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 |Alkalmazások hozzárendelése elérhetőként|Igen|Igen|
 |Alkalmazások hozzárendelése szükségesként|Igen|Nem|
 |Alkalmazások eltávolítása|Igen|Nem|
+|Alkalmazásfrissítések fogadása az Intune-ból|Igen|Nem|
 |A végfelhasználók a Céges portál alkalmazásban telepítik az elérhető alkalmazásokat|Igen|Nem|
 |A végfelhasználók a webalapú Céges portálon telepítik az elérhető alkalmazásokat|Igen|Igen|
 
 > [!NOTE]
-> Jelenleg (mind üzletági, mind pedig áruházbeli) iOS- és Android-alkalmazásokat rendelhet hozzá azokhoz az eszközökhöz, melyek nincsenek regisztrálva az Intune-ban.
+> Jelenleg (mind üzletági, mind pedig áruházbeli) iOS- és Android-alkalmazásokat rendelhet hozzá azokhoz az eszközökhöz, melyek nincsenek regisztrálva az Intune-ban.<br></br><br></br>
+> Az alkalmazásfrissítések fogadásához az Intune-ban nem regisztrált eszközök felhasználóinak fel kell keresniük saját céges portáljukat, hogy manuálisan telepítsék az alkalmazásfrissítéseket.
 
 ## <a name="how-to-assign-an-app"></a>Alkalmazás hozzárendelése
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 1. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 2. Az alkalmazáslista paneljén kattintson arra az alkalmazásra, amelyet szeretne hozzárendelni.
-3. Az <*alkalmazásnév*> – **Áttekintés** panelen válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
-4. Válassza a **Csoportok kiválasztása** lehetőséget, majd a **Csoportok kiválasztása** panelen jelölje ki azon Azure AD-csoportokat, amelyekhez hozzá szeretné rendelni az alkalmazást.
+3. Az **Áttekintés** panelen válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
+4. Válassza a **Csoport hozzáadása** lehetőséget, majd a **Csoport hozzáadása** panelen jelölje ki a alkalmazás hozzárendelésébe belefoglalni vagy abból kizárni kívánt Azure AD-csoportokat.
 5. Minden kiválasztott alkalmazáshoz válasszon egy **hozzárendelési típust** az alábbi lehetőségek közül:
-    - **Elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
-    - **Nem alkalmazható** – Az alkalmazás nincs telepítve, vagy nem jelenik meg a Céges portálon.
+    - **Regisztrált eszközökhöz elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
+    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban.
     - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
     - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
-    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban.
-6. **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Ha az alkalmazás fut, a VPN-kapcsolat nyitva van. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
-6. Ha elkészült, válassza a **Mentés** elemet.
+6. **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
+6. Ha elkészült, válassza az **OK** majd a **Mentés** elemet.
 
 Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz.
 

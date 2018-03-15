@@ -1,6 +1,7 @@
 ---
-title: "Felhasználók által is látható Céges portál-üzenetek Androidon"
-description: "Az Intune végfelhasználói által is látható Céges portál-alkalmazásüzeneteket ismerteti."
+title: "Felhasználók által is látható Céges portál-üzenetek az eszközökön"
+titlesuffix: Microsoft Intune
+description: "A cikk azokat az üzeneteket ismerteti, amelyeket a végfelhasználók láthatnak a Céges portálon."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>A Vállalati portál alkalmazás üzeneteinek ismertetése a végfelhasználókkal
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 > A következő információk kizárólag Android 6.0-s és újabb rendszerű eszközökre vonatkoznak.
 
-A regisztrációs folyamat közben a végfelhasználók két olyan üzenetet is láthatnak, amelyek aggodalomra adhatnak okot.
+A cikk azokat az alkalmazásüzeneteket ismerteti, amelyeket a végfelhasználók láthatnak a Céges portálon. Az alkalmazásüzenetek általában a regisztrációs folyamat különféle szakaszaiban jelennek meg. A cikk bemutatja, hol jelennek meg az üzenetek, milyen konkrét jelentésük van, és hogy mi történik, ha a felhasználók nem adnak hozzáférést. Ezen kívül megtudhatja, hogyan érdemes az üzeneteket ismertetni a felhasználók számára.
 
 - __Allow Company Portal to make and manage phone calls? (Engedélyezi, hogy a Munkahelyi portál alkalmazás telefonhívásokat indítson és kezeljen?)__
 - __Allow Company Portal to access photos, media, and files on your device? (Engedélyezi a Munkahelyi portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?)__
@@ -81,7 +82,7 @@ További információért ajánlja a felhasználóknak az [Android-eszközök re
 Az **Allow Company Portal to access photos, media, and files on your device?** (Engedélyezi a Vállalati portál alkalmazásnak, hogy hozzáférjen az eszközén tárolt fényképekhez, médiatartalmakhoz és fájlokhoz?) üzenet akkor jelenik meg, ha a felhasználó az **Adatok elküldése** elemre koppintva naplókat küld a rendszergazdának.
 
 ### <a name="what-it-means"></a>Jelentés
-Megerősítő válasszal a felhasználó engedélyezi, hogy eszköze adatnaplókat írjon az eszköz SD-kártyájára, és engedélyezi, hogy a rendszer ezeket a naplókat USB-kábel segítségével más helyre másolja.   
+Megerősítő válasszal a felhasználó engedélyezi, hogy eszköze adatnaplókat írjon az eszköz SD-kártyájára.Megerősítő válasszal a felhasználó engedélyezi, hogy eszköze adatnaplókat írjon az eszköz SD-kártyájára. Azt is engedélyezi továbbá, hogy a rendszer ezeket a naplókat USB-kábel segítségével más helyre másolja.   
 
 > [!NOTE]
 > **A Munkahelyi portál alkalmazás sohasem próbál hozzáférni a felhasználó fényképeihez, médiatartalmaihoz és fájljaihoz.** Az üzenet szövegét a Google szabja meg, és nem módosítható.
@@ -89,7 +90,7 @@ Megerősítő válasszal a felhasználó engedélyezi, hogy eszköze adatnaplók
 ### <a name="what-happens-if-users-deny-access"></a>Mi történik, ha a felhasználók nem engedélyezik a hozzáférést
 Ha a felhasználó nem engedélyezi a hozzáférést, e-mailben akkor is elküldheti az adatnaplókat, ám azok nem másolhatók az SD-kártyára.
 
-Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentkeznek a Vállalati portál alkalmazásba, az üzenetben látható egy **Ne jelenjen meg többé** feliratú jelölőnégyzet, amelynek bejelölésével végleg kikapcsolhatják az üzenet megjelenítését. Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja, az üzenet újból megjelenik, amikor a felhasználó a legközelebb megpróbálja elküldeni a naplókat. Amennyiben a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Tárterület** lapon tehetik ezt meg.
+Amikor a felhasználók a hozzáférés megtagadása után másodszor bejelentkeznek a Vállalati portál alkalmazásba, az üzenetben látható egy **Ne jelenjen meg többé** feliratú jelölőnégyzet, amelynek bejelölésével végleg kikapcsolhatják az üzenet megjelenítését. Ha a felhasználó engedélyezi a hozzáférést, de később megtagadja, az üzenet újból megjelenik, amikor a felhasználó a legközelebb megpróbálja elküldeni a naplókat. Amennyiben azonban a felhasználók később ismét engedélyezni szeretnék a hozzáférést, a **Beállítások** > **Alkalmazások** > **Vállalati portál** > **Engedélyek** > **Tárterület** lapon tehetik ezt meg.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>A felhasználók tájékoztatásának módja
@@ -101,7 +102,7 @@ Ajánlja a felhasználóknak a [Naplók elküldése a rendszergazdának e-mailbe
 Ha nem adta hozzá a Céges portált az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** listájához, és egy felhasználó megpróbál bejelentkezni, a bejelentkezés meghiúsul. Az alábbi üzenet jelenik meg:
 
 > **A céges ügyfélszolgálatnak hozzáférést kell nyújtania Önnek a céges erőforrásokhoz**  
-> A cége a Windows Információvédelem szabályzataival védi az eszközt. A céges ügyfélszolgálatnak meg kell győződnie arról, hogy engedélyezi-e a Céges portálnak a hozzáférést.
+> A cége a Windows Információvédelem szabályzataival védi az eszközt. A céges ügyfélszolgálatnak biztosítania kell, hogy engedélyezze a Céges portálnak a hozzáférést ezekhez az erőforrásokhoz.
 
 ### <a name="what-it-means"></a>Jelentés
 

@@ -1,7 +1,7 @@
 ---
 title: "Wi-Fi-beállítások konfigurálása az Intune-ban"
-titleSuffix: Azure portal
-description: "Útmutató arról, hogyan konfigurálhatóak a Wi-Fi-kapcsolatok felügyelt eszközökön az Intune-nal.”"
+titleSuffix: Microsoft Intune
+description: "Útmutató arról, hogyan konfigurálhatóak a Wi-Fi-kapcsolatok felügyelt eszközökön a Microsoft Intune-nal."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -46,7 +46,7 @@ A témakörben található információk alapján megismerheti a Wi-Fi-profilok 
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>A Wi-Fi-beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
@@ -62,7 +62,7 @@ A témakörben található információk alapján megismerheti a Wi-Fi-profilok 
    > [!IMPORTANT]
    > Ha Windows 10 (beleértve a Windows Holographic for Businesst is) rendszerű eszközökhöz készít profilt, a platformok közül válassza a **Windows 8.1 vagy újabb** lehetőséget. A **Windows 10 vagy újabb** platform nem tartalmaz Wi-Fi-s profiltípust. 
 
-6. Apple vagy Android rendszerű eszközök esetén a **Wi-Fi típusa** legördülő listában válassza az **Alapszintű** vagy **Vállalati** lehetőséget. Ha alapvető jellemzőket, például a hálózat nevét és SSID azonosítóját szeretné megadni, használhatja az **Alapszintű** lehetőséget. A **Vállalati** lehetőséggel több speciális adatot adhat meg, mint például az EAP protokoll használatát, ha a Wi-Fi-hálózata ezt használja. 
+6. Apple vagy Android rendszerű eszközök esetén a **Wi-Fi típusa** legördülő listában válassza az **Alapszintű** vagy **Vállalati** lehetőséget. Ha alapvető jellemzőket, például a hálózat nevét és SSID azonosítóját szeretné megadni, használhatja az **Alapszintű** lehetőséget. A **Vállalati** lehetőséggel több speciális adatot adhat meg, mint például az EAP protokoll használatát, ha a Wi-Fi-hálózata ezt a protokollt használja. 
 
    A **Wi-Fi-importálás** profil (Windows 8.1 és újabb esetén) lehetővé teszi, hogy egy másik eszközön XML-fájlba exportált Wi-Fi-beállításokat importálhasson.
 1. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:

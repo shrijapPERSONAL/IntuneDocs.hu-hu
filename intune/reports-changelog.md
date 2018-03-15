@@ -2,10 +2,10 @@
 title: "Intune-adattárház – módosítási napló | Microsoft Docs"
 description: "Az Intune-adattárház API módosításai."
 keywords: "Intune-adattárház"
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Az Intune-adattárház API módosítási naplója
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Maradjon naprakész az Intune-adattárház frissítéseivel kapcsolatban.
+
+## <a name="1801"></a>1801
+_Kiadás dátuma: 2018. január_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Alkalmazásalapú hitelesítés az Intune-adattárházban <!-- 1867540 -->
+
+Beállíthat alkalmazásokat az Azure Active Directory (Azure AD) segítségével úgy, hogy hitelesítsék magukat az Intune-adattárházban. További információ: [Alkalmazásalapú hitelesítés az Intune-adattárházban](data-warehouse-app-only-auth.md).
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Az Azure AD-beli és az Intune-beli hitelesítő adatokra vonatkozó követelmények <!-- 2077525 -->
+
+- Már nincs szükség egy felhasználóhoz rendelt Intune-licencre, ha az Intune Data Warehouse-hoz szeretne hozzáférni (beleértve az API-t).
+- Az Intune szerepkörének neve **Jelentések**ről **Intune Data Warehouse**-ra módosult. 
+
+    További információ: [Az Azure AD-beli és az Intune-beli hitelesítő adatokra vonatkozó követelmények](reports-api-url.md#azure-ad-and-intune-credential-requirements).
+
+### <a name="odata-query-options----2077711---"></a>Az OData-lekérdezés beállításai <!-- 2077711 -->
+
+OData-lekérdezési paraméterként a következőt is használhatja: <code>$select</code>. A jelenlegi verzió a következő OData-lekérdezésparamétereket támogatja: <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code> és <code>$top</code>. További információt [Az OData-lekérdezés beállításai](reports-api-url.md#odata-query-options) című témakörben találhat.
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Új entitások az adattárház adatmodelljében <!-- 2077804 -->
+
+ - A [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) entitást hozzáadtuk. A **MobileAppDeviceUserInstallStatus** a mobilalkalmazás telepítési állapotát jelöli egy adott eszközre és felhasználóra vonatkozóan.
+ - A [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) entitást hozzáadtuk. A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapotát jelöli, miután az hozzá lett rendelve egy eszközöket, felhasználókat vagy mindkettőt tartalmazó csoporthoz. 
 
 ## <a name="1710"></a>1710
 _Kiadás dátuma: 2017. november_

@@ -1,12 +1,12 @@
 ---
 title: "iOS-es alkalmazásvédelmi szabályzat-beállításai"
-titlesuffix: Azure portal
-description: "Ez a témakör az alkalmazásvédelmi szabályzatok iOS-es eszközökre vonatkozó beállításait ismerteti.”"
+titlesuffix: Microsoft Intune
+description: "Ez a témakör az alkalmazásvédelmi szabályzatok iOS-es eszközökre vonatkozó beállításait ismerteti."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS-es alkalmazásvédelmi szabályzat-beállításai
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A jelen témakörben ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
+A jelen témakörben ismertetett szabályzatbeállításokat az Azure Portal **Szabályzat hozzáadása** > **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
 
 A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beállítások és hozzáférési beállítások. A jelen témakörben a ***szabályzattal felügyelt alkalmazások*** kifejezés olyan alkalmazásokra utal, amelyekhez alkalmazásvédelmi szabályzatot állítottak be.
 
@@ -32,8 +32,8 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 
 | Beállítás | Használat | Alapértelmezett érték |
 |------|------|------|
-| **Tunes- és iCloud-alapú biztonsági mentések tiltása** | Válassza az **Igen** lehetőséget az összes kezelt fájl iTunesba és iCloudba történő biztonsági mentésének letiltásához. Válassza a **Nem** lehetőséget a kezelt fájlok iTunesba és iCloudba történő biztonsági mentésének engedélyezéséhez.| Igen |
-| **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások kaphatnak adatokat ettől az alkalmazástól: <ul><li> **Szabályzattal felügyelt alkalmazások**: Az adatátvitel csak más, szabályzattal felügyelt alkalmazásokba engedélyezett.</li> <li>**Minden alkalmazás**: Az adatátvitel engedélyezett minden alkalmazásnál. </li> <li>**Nincs**: Minden alkalmazásba tiltott az adatátvitel., ideértve a szabályzat által felügyelt többi alkalmazást is.</li></ul> A **Szabályzat által felügyelt alkalmazások** vagy a **Nincs** beállítás alkalmazása esetén le lesz tiltva az iOS 9 rendszer azon funkciója, amely lehetővé teszi, hogy a Spotlight-kereső adatokat kereshessen az alkalmazásokon belül. <br><br> Vannak kivételt képező alkalmazások és szolgáltatások, amelyek felé az Intune engedélyezheti az adatátvitelt. Az alkalmazások és a szolgáltatások teljes listája az [Adatátviteli kivételek](#data-transfer-exemptions) című szakaszban olvasható. | Minden alkalmazás |
+| **Tunes- és iCloud-alapú biztonsági mentések tiltása** | Ha az **Igen** gombot választja, a rendszer megakadályozza, hogy az alkalmazás a munkahelyi vagy iskolai adatokról biztonsági mentést készítsen az iTunesban és az iCloudban. Ha a **Nem** gombot választja, a rendszer engedélyezi, hogy az alkalmazás a munkahelyi vagy iskolai adatokról biztonsági mentést készítsen az iTunesban és az iCloudban.| Igen |
+| **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások kaphatnak adatokat ettől az alkalmazástól: <ul><li> **Szabályzattal felügyelt alkalmazások**: Az adatátvitel csak más, szabályzattal felügyelt alkalmazásokba engedélyezett.</li> <li>**Minden alkalmazás**: Az adatátvitel engedélyezett minden alkalmazásnál. </li> <li>**Nincs**: Minden alkalmazásba tiltott az adatátvitel., ideértve a szabályzat által felügyelt többi alkalmazást is.</li></ul> A **Szabályzat által felügyelt alkalmazások** vagy a **Nincs** beállítás alkalmazása esetén le lesz tiltva az iOS 9 rendszer azon funkciója, amely lehetővé teszi, hogy a Spotlight-kereső adatokat kereshessen az alkalmazásokon belül. <br><br> Vannak kivételt képező alkalmazások és szolgáltatások, amelyek felé az Intune alapértelmezés szerint engedélyezheti az adatátvitelt. Emellett létrehozhat saját kivételeket, ha egy olyan alkalmazásnak való adatátvitelt kell engedélyeznie, amely nem támogatja az Intune APP-t. További információt az [Adatátviteli kivételek](#data-transfer-exemptions) című témakörben találhat. | Minden alkalmazás |
 | **Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak** | Itt adhatja meg, mely alkalmazások küldhetnek adatokat ebbe az alkalmazásba: <ul><li>**Szabályzattal felügyelt alkalmazások**: Az átvitel csak más, szabályzattal felügyelt alkalmazásokból engedélyezett.</li><li>**Minden alkalmazás**: Az adatátvitel minden alkalmazásból engedélyezett.</li><li>**Nincs**: Minden alkalmazásból tiltott az adatátvitel, ideértve a szabályzat által felügyelt többi alkalmazást is.</li></ul> Vannak kivételt képező alkalmazások és szolgáltatások, amelyek számára az Intune engedélyezheti az adatátvitelt. Az alkalmazások és a szolgáltatások teljes listája az [Adatátviteli kivételek](#data-transfer-exemptions) című szakaszban olvasható. A nem regisztrált iOS-eszközökön futó többszörös identitású MAM-alkalmazások figyelmen kívül hagyják ezt a szabályzatot, és engedélyeznek minden bejövő adatot. | Minden alkalmazás |
 | **A „Mentés másként” művelet letiltása** | Az **Igen** gombot választva letilthatja a Mentés másként lehetőség használatát ebben az alkalmazásban. A **Nem** gombot választva engedélyezheti a Mentés másként funkció használatát. | Nem |
 | **Kivágási, másolási és beillesztési műveletek korlátozása más alkalmazásokkal** | Itt adhatja meg, hogy mikor használhatók a kivágási, másolási és beillesztési műveletek az alkalmazásban. A következő lehetőségek közül választhat: <ul><li>**Letiltva**:  A kivágási, másolási és beillesztési műveletek letiltása az alkalmazás és más alkalmazások között.</li><li>**Szabályzattal felügyelt alkalmazások**: A kivágási, másolási és beillesztési műveletek engedélyezése az alkalmazás és más, szabályzattal felügyelt alkalmazások között.</li><li>**Szabályzattal felügyelt alkalmazások beillesztési lehetőséggel**: A kivágási és másolási műveletek engedélyezése az alkalmazás és más, szabályzattal felügyelt alkalmazások között. Adatok beillesztésének engedélyezése bármely alkalmazásból ebbe az alkalmazásba.</li><li>**Bármely alkalmazás**: Az alkalmazások közötti kivágási, másolási és beillesztési műveletek nem korlátozottak. | Bármely alkalmazás |
@@ -53,13 +53,12 @@ Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Int
 | Alkalmazás/szolgáltatás neve(i) | Description |
 | ---- | --- |
 |<code>tel; telprompt</code> | Natív telefonalkalmazás |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Eszközbeállítások |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Alkalmazásáruház |
-| <code>calshow</code> | Natív naptár |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Eszközbeállítások |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Alkalmazásáruház |
+|<code>calshow</code> | Natív naptár |
 
-
-
+További információt [Az adatátviteli szabályzat kivételei alkalmazások esetén](app-protection-policies-exception.md) című témakörben találhat. 
 
 ## <a name="access-settings"></a>Hozzáférési beállítások
 

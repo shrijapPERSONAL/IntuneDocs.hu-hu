@@ -1,12 +1,12 @@
 ---
-title: "Alkalmazáskiépítési profilok"
-titlesuffix: Azure portal
+title: "iOS-alkalmazáskiépítési profilok a Microsoft Intune-ban"
+titlesuffix: 
 description: "Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.”"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Az iOS-mobileszközös kiépítési profilok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Az Intune iOS-mobileszközös kiépítési profiljainak segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,10 +39,10 @@ A tanúsítvány lejárata után újra regisztrálnia kell az alkalmazást egy �
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS-beli mobilalkalmazás-kiépítési profilok létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-1.  A **Mobilalkalmazások** munkafolyamatban válassza a **Felügyelet** > **iOS-alapú kiépítési profilok** elemet.
+1.  A **Mobilalkalmazások** munkafolyamatban válassza a **Felügyelet** > **iOS-alkalmazáskiépítési profilok** elemet.
 2.  A profilok listáját mutató panelen válassza a **Profil létrehozása** lehetőséget.
 3. A **Profil létrehozása** panelen konfigurálja a következő értékeket:
     - **Név** – Adjon egy nevet a mobil kiépítési profilnak.

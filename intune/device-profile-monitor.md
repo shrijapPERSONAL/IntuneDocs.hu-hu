@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Eszközprofilok figyelése a Microsoft Intune-ban
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 01/25/2018
 Kétféleképpen figyelheti az Intune-eszközprofilok hozzárendelésének előrehaladását:
 
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
 2. A profilokat tartalmazó panel listáján válassza ki a kezelni kívánt profilt, majd tegye a következők valamelyikét:
-    - Válassza a <*profilnév*> **Jelentések** panel **Áttekintés** elemét, ha alapvető információkat szeretne látni a profilról és hozzárendeléseiről.
-    - Válassza a <*profilnév*> **Jelentések** panel a **Jelentés** elemét, ha részletesebb információkat szeretne látni a profilról és hozzárendeléseiről.
+    - Válassza a <*profilnév*> **Eszközkonfigurációs profil** panel **Áttekintés** elemét, ha alapvető információkat szeretne látni a profilról és hozzárendeléseiről.
+    - Válassza a <*profilnév*> **Eszközkonfigurációs profil** panel **Hozzárendelések** elemét, ha részletes információkat szeretne látni a profilról és hozzárendeléseiről.

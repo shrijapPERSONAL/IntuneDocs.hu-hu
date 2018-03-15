@@ -1,7 +1,7 @@
 ---
 title: "Webes hozzáférés felügyelete a Managed Browser alkalmazással"
-titlesuffix: Azure portal
-description: "Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét.”"
+titlesuffix: Microsoft Intune
+description: "Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -63,17 +63,17 @@ Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerekt
 
 ## <a name="create-a-managed-browser-app-configuration"></a>A Managed Browser alkalmazás konfigurációjának létrehozása
 
-1.  Jelentkezzen be az Azure Portalra.
-2.  Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  A felügyeleti lista **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
-4.  Az **Alkalmazáskonfigurációs szabályzatok** panelen kattintson a **Hozzáadás** lehetőségre.
-5.  Az **Alkalmazáskonfiguráció hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
+4.  Az **Alkalmazáskonfiguráció** panelen válassza a **Hozzáadás** lehetőséget.
+5.  A **Konfigurációs szabályzat hozzáadása** panelen az alkalmazáskonfigurációs beállításokhoz írja be a **Nevet** és a **Leírást** (ez utóbbi nem kötelező).
 6.  Az **Eszközregisztráció** típusaként válassza a **Felügyelt alkalmazások** lehetőséget.
 7.  Válassza a **Kötelező alkalmazások kiválasztása** elemet, majd a **Célalkalmazások** panelen válassza a **Managed Browser** lehetőséget iOS-hez, Androidhoz vagy igény szerint mindkettőhöz.
-8.  Az **OK** kiválasztásával visszatérhet az **Alkalmazáskonfiguráció hozzáadása** panelre.
+8.  Az **OK** kiválasztásával visszatérhet a **Konfigurációs szabályzat hozzáadása** panelre.
 9.  Kattintson a **Konfigurációs beállítások** elemre. A **Konfigurálás** panelen kulcs-érték párok definiálásával adhatja meg a Managed Browserhez szükséges konfigurációkat. A jelen cikk későbbi részeiben további információt talál a definiálható kulcs-érték párokról.
 10. Ha elkészült, válassza az **OK** elemet.
-11. Az **Alkalmazáskonfiguráció hozzáadása** panelen válassza a **Létrehozás** elemet.
+11. A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Hozzáadás** lehetőséget.
 12. Ezzel létrejön az új konfiguráció, és megjelenik az **Alkalmazáskonfiguráció** panelen.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerekt
 
 A beállításokat Azure AD-beli felhasználói csoportokhoz lehet hozzárendelni. Ha az illető felhasználó rendelkezik telepített Managed Browser alkalmazással, akkor az alkalmazás felügyelete a megadott beállításokkal történik.
 
-1. Az Intune mobilalkalmazás-kezelési irányítópult **Beállítások** paneljén válassza az **Alkalmazáskonfiguráció** lehetőséget.
+1. Az Intune mobilalkalmazás-kezelési irányítópult **Mobilalkalmazások** paneljén válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget.
 2. A listából válassza ki a hozzárendelni kívánt alkalmazáskonfigurációt.
-3. A következő panelen válassza a **Felhasználói csoportok** lehetőséget.
-4. A **Felhasználói csoportok** panelen válassza ki azt az Azure AD-csoportot, amelyhez az alkalmazáskonfigurációt hozzá szeretné rendelni, majd válassza az **OK** elemet.
+3. Válassza ki a következő panelen a **Hozzárendelések** elemet.
+4. A **Hozzárendelések** panelen válassza ki azt az Azure AD-csoportot, amelyhez az alkalmazáskonfigurációt hozzá szeretné rendelni, majd válassza az **OK** elemet.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Alkalmazásproxy-beállítások konfigurálása a Managed Browser alkalmazáshoz

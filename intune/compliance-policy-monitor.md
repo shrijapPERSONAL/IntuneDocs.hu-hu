@@ -1,33 +1,31 @@
 ---
 title: "Intune-eszközmegfelelőségi szabályzatok figyelése"
 titlesuffix: Azure portal
-description: "Útmutatók eszközmegfelelőségi szabályzatok figyeléséhez.”"
+description: "Útmutató az eszközmegfelelőségi szabályzatok figyeléséhez"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
+ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
-A megfelelőségi jelentésekkel a rendszergazda elemezheti a cég eszközeinek megfelelőségi állapotát, így lehetővé válik a szervezet felhasználói által tapasztalt megfelelőségi problémák gyors elhárítása. A jelentésekkel információ szerezhető egy eszköz általános megfelelőségi állapotáról, az egyes beállítások vagy egyes szabályzatok megfelelőségi állapotáról, és egy-egy eszköz részletesebben is megvizsgálható, és ellenőrizhető, hogy mely beállítások és szabályzatok vonatkoznak rá.
+A megfelelőségi jelentésekkel a rendszergazdák elemezhetik a cég eszközeinek megfelelőségi állapotát, és így gyorsan elháríthatják a szervezet felhasználói által tapasztalt megfelelőségi problémákat. A jelentésekkel információ szerezhető egy eszköz általános megfelelőségi állapotáról, az egyes beállítások vagy egyes szabályzatok megfelelőségi állapotáról, és egy-egy eszköz részletesebben is megvizsgálható, és ellenőrizhető, hogy mely beállítások és szabályzatok vonatkoznak rá.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
-Az **Intune eszközmegfelelőségi irányítópultját** az alábbi lépéseket követve találja meg az Azure Portalon:
+Az **Intune eszközmegfelelőségi irányítópultját** a következő lépéseket követve találhatja meg az Azure Portalon:
 
 1.  Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival.
 
@@ -64,18 +62,18 @@ Az Intune-ban regisztrált összes eszköz összesített megfelelőségi állapo
 
     -   További információ a nem megfelelő eszközökre alkalmazható műveletekről.
 
--   **Az eszköz nincs szinkronizálva:** az eszköz nem jelentette az eszközmegfelelőségi szabályzat állapotát az alábbi okok miatt:
+-   **Az eszköz nincs szinkronizálva:** az eszköz nem jelentette az eszközmegfelelőségi szabályzat állapotát a következő okok egyike miatt:
 
     -   **Ismeretlen**: az eszköz offline állapotban van, vagy valamilyen más okból nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel.
 
     -   **Hiba**: az eszköznek nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel, és üzenetben megkapta a hiba okát.
 
 > [!IMPORTANT] 
-> A jelentésben a **Megfelelő** gyűjtő alatt szerepelnek azok az eszközök, amelyek regisztrálva vannak az Intune-ban, de nem vonatkozik rájuk eszközmegfelelőségi szabályzat.
+> A jelentésben a **Megfelelő** gyűjtőben szerepelnek azok az eszközök, amelyek regisztrálva vannak az Intune-ban, de nem vonatkozik rájuk eszközmegfelelőségi szabályzat.
 
 #### <a name="drill-down-option"></a>Részletes információ
 
-Az **Eszközmegfelelőségi irányítópulton** az eszközmegfelelőségi csempére kattintva részletes információt kaphat az eszközmegfelelőségi szabályzat által érintett egyes eszközök **megfelelőségi állapotáról**, a **felhasználói e-mail-aliasokról**, az **eszköz modelljéről** és **tartózkodási helyéről**.
+Az **Eszközmegfelelőségi irányítópulton** az eszközmegfelelőségi csempére kattintva részletes információt kaphat a **megfelelőségi állapotról**, a **felhasználói e-mail-aliasokról**, az **eszköz modelljéről** és a **tartózkodási helyről** az eszközmegfelelőségi szabályzat által érintett egyes eszközök esetében.
 
 ![Eszközmegfelelőségi irányítópult – részletes információk](./media/idc-2.png)
 
@@ -131,22 +129,33 @@ Ha az egyes eszközmegfelelőségi szabályzatbeállításokra kattint, megjelen
 
 ![Eszközmegfelelőségi beállítás neve](./media/idc-7.png)
 
-### <a name="per-policy-device-compliance-report"></a>Szabályzatok szerinti eszközmegfelelőségi jelentés
+## <a name="policy-compliance-report"></a>Szabályzatoknak való megfelelőségi jelentés
 
 Ez a jelentés megfelelőség szerinti bontásban tartalmaz információt a szabályzatokról és az egyes megfelelőségi állapotokhoz tartozó eszközök összesített számáról. A **Szabályzatmegfelelőség** csempe az **Eszközmegfelelőségi irányítópulton** érhető el, és megtekinthető rajta a rendszergazda által eddig létrehozott összes szabályzat, a szabályzat által megcélzott platformok, valamint a megfelelő és a nem megfelelő eszközök száma.
 
 ![Szabályzatok szerinti eszközmegfelelőségi jelentés](./media/idc-8.png)
 
-A Szabályzatmegfelelőségi csempére, majd az egyes eszközmegfelelőségi szabályzatokra kattintva megtekinthető az adott eszközmegfelelőségi szabályzat által érintett eszköz **megfelelőségi állapota**, a **felhasználói e-mail-alias**, **az eszközmodell** és az eszköz **tartózkodási helye**.
+A Szabályzatoknak való megfelelőség csempéjére, majd az egyes eszközmegfelelőségi szabályzatokra kattintva megtekinthető a **megfelelőségi állapot**, a **felhasználói e-mail-alias**, **az eszköz modellje** és a **tartózkodási hely** az eszközmegfelelőségi szabályzat által érintett egyes eszközök esetében.
 
 ![Szabályzatmegfelelőségi csempe](./media/idc-9.png)
 
-### <a name="per-setting-device-compliance-report"></a>Beállítások szerinti eszközmegfelelőségi jelentés
+## <a name="setting-compliance-report"></a>Beállításoknak való megfelelőségi jelentés
 
-Ez a jelentés szabályzatbeállítások szerinti bontásban tartalmaz információt az egyes megfelelőségi állapotokhoz tartozó eszközök összesített számáról. A **Beállítási megfelelőség** csempe az **Eszközmegfelelőségi irányítópulton** érhető el, és megtekinthető rajta a rendszergazda által létrehozott összes eszközmegfelelőségi szabályzat minden megfelelőségi szabályzati beállítása, a szabályzatbeállítások által megcélzott platformok, valamint a nem megfelelő eszközök száma.
+Ez a jelentés szabályzatbeállítások szerinti bontásban tartalmaz információt az egyes megfelelőségi állapotokhoz tartozó eszközök összesített számáról. A **Beállításmegfelelőségi** csempe az **Eszközmegfelelőségi irányítópulton** érhető el, és megtekinthető rajta a rendszergazda által létrehozott összes eszközmegfelelőségi szabályzat minden megfelelőségi szabályzatbeállítása, a szabályzatbeállítások által megcélzott platformok, valamint a nem megfelelő eszközök száma.
 
 ![Beállítások szerinti eszközmegfelelőségi jelentés](./media/idc-10.png)
 
-A Beállításmegfelelőségi csempére, majd az egyes eszközmegfelelőségi szabályzatbeállításokra kattintva megtekinthető az adott eszközmegfelelőségi szabályzatbeállítás által érintett eszköz **megfelelőségi állapota**, a **felhasználói e-mail-alias**, **az eszközmodell** és az eszköz **tartózkodási helye**.
+A Beállításmegfelelőségi csempére, majd az egyes eszközmegfelelőségi szabályzatbeállításokra kattintva megtekinthető a **megfelelőségi állapot**, a **felhasználói e-mail-alias**, **az eszköz modellje** és a **tartózkodási hely** az adott eszközmegfelelőségi szabályzatbeállítás által érintett egyes eszközök esetében.
 
 ![Beállításmegfelelőségi csempe](./media/idc-11.png)
+
+## <a name="threat-agent-status-report"></a>A fenyegetésfigyelő ügynök állapotjelentése
+
+Ez a jelentés lehetővé teszi, hogy megtekintse a Windows Defender-ügynök állapotát. Ha az **Eszközmegfelelőséghez** egy összesített állapotjelentést használ, megtekintheti azokat az eszközöket, melyeken el kell végezni a következő műveletek egyikét:
+- Aláírás frissítése
+- Újraindítás
+- Manuális beavatkozás
+- Teljes vizsgálat
+- Egyéb, beavatkozást igénylő ügynökállapotok
+
+Az egyes állapotkategóriákhoz tartozó részletes jelentésekben megtalálhatók a figyelmet igénylő, illetve a **tisztaként** jelentő számítógépek.

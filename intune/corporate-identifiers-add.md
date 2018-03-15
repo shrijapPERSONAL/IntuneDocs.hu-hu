@@ -1,7 +1,7 @@
 ---
 title: "Vállalati azonosítók hozzáadása az Intune-hoz"
-titlesuffix: Azure portal
-description: "Megtudhatja, hogyan adhat hozzá vállalati azonosítókat (regisztrációs módszer, IMEI és sorozatszámok) a Microsoft Intune-hoz. \""
+titlesuffix: Microsoft Intune
+description: "Megtudhatja, hogyan adhat hozzá vállalati azonosítókat (regisztrációs módszer, IMEI és sorozatszámok) a Microsoft Intune-hoz."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
@@ -72,7 +72,7 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
 1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
 
- ![Képernyőkép a céges készülékazonosítók munkaterületről a Hozzáadás gomb kiemelésével.](./media/add-corp-id.png)
+ ![A céges készülékazonosítók munkaterülete a Hozzáadás gomb kiemelésével](./media/add-corp-id.png)
 
 2. Az **Azonosítók hozzáadása** panelen adja meg az azonosító típusát: **IMEI** vagy **Sorozatszám**. Megadhatja, hogy a korábban importált számok **felülírják-e a meglévő azonosítók adatait**.
 
@@ -100,4 +100,4 @@ Az Intune-ban az eszközök tulajdonságai között mindegyik eszközbejegyzésn
 3. Válassza a **Tulajdonságok** lehetőséget.
 4. Adja meg az **Eszköz tulajdonosa** beállításnál, hogy az eszköz **Személyes** vagy **Céges**.
 
-  ![Képernyőkép az eszköz tulajdonságai képernyőről az Eszközkategória és az Eszköz tulajdonosa beállításokkal.](./media/device-properties.png)
+  ![Az eszköz tulajdonságai képernyő az Eszközkategória és az Eszköz tulajdonosa beállításokkal](./media/device-properties.png)

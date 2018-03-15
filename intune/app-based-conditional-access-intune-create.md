@@ -1,9 +1,9 @@
 ---
-title: "Alkalmazásalapú feltételes hozzáférési szabályzat az Intune-nal"
-description: "Ez a témakör ismerteti, hogy hogyan konfigurálhat alkalmazásalapú feltételes hozzáférési szabályzatot az Intune-nal."
+title: "Alkalmazásalapú feltételes hozzáférési szabályzat beállítása az Intune-ban"
+description: "Útmutató az alkalmazásalapú feltételes hozzáférési szabályzatok Intune-ban való létrehozásához."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -14,42 +14,40 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d938a21e041055c61e6638e94841a056e20b38
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 89ee7c0df2fde740c18b84f1d9f028d59ba5d81d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="set-up-app-based-conditional-access-policies"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása
+# <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör utasításokat tartalmaz alkalmazásalapú feltételes hozzáférési szabályzatok beállításához a jóváhagyott alkalmazások listáján szereplő alkalmazásokhoz. A jóváhagyott alkalmazások listája a Microsoft által tesztelt alkalmazásokból áll.
+A cikk azt írja le, hogyan állíthatók be alkalmazásalapú feltételes hozzáférési szabályzatok a jóváhagyott alkalmazások listáján szereplő alkalmazásokhoz. A jóváhagyott alkalmazások listája a Microsoft által tesztelt alkalmazásokból áll.
 
 > [!IMPORTANT]
-> Ez a témakör az alkalmazásalapú feltételes hozzáférési szabályzat Exchange Online-nal való felvételének lépésein vezeti végig, de ugyanezekkel a lépésekkel vehet fel más alkalmazásokat is a jóváhagyott alkalmazások listájáról, például a SharePoint Online, a Microsoft Teams stb. alkalmazást.
+> A cikk az alkalmazásalapú feltételes hozzáférési szabályzat Exchange Online-nal való felvételének lépésein vezeti végig, de ugyanezekkel a lépésekkel vehet fel olyan más alkalmazásokat is a jóváhagyott alkalmazások listájáról, mint például a SharePoint Online, a Microsoft Teams, stb.
 
 ## <a name="to-create-an-app-based-conditional-access-policy"></a>Alkalmazásalapú feltételes hozzáférési szabályzat létrehozása
 1.  Nyissa meg az [Azure Portal](https://portal.azure.com) webhelyet, és jelentkezzen be a hitelesítő adataival.
 
-2.  Válassza a **További szolgáltatások** lehetőséget, majd írja be az Intune kifejezést.
+2.  Válassza a **Minden szolgáltatás** lehetőséget, majd írja be az Intune kifejezést.
 
 3.  Válassza az **Intune alkalmazásvédelem** lehetőséget.
 
-4.  Az **Intune mobilalkalmazás-kezelés** panelen kattintson a **Minden beállítás** csempére.
+4.  Az **Intune App Protection** panel **Feltételes hozzáférés** szakaszában válassza az **Exchange Online** lehetőséget.
 
-5.  A **Feltételes hozzáférés** szakaszban válassza az **Exchange Online** elemet.
-
-    ![Képernyőfelvétel a beállítások panel feltételes hozzáférés területéről, amelyen kiemelve látható az Exchange Online opció](./media/MAM-conditional-access-1.png)
+    ![Képernyőkép a beállítások panel feltételes hozzáférés területéről, amelyen kiemelve látható az Exchange Online lehetőség](./media/MAM-conditional-access-1.png)
 
 6. Az **Engedélyezett alkalmazások** panelen válassza **Az Intune alkalmazásszabályzatait támogató alkalmazások engedélyezése** lehetőséget, hogy csak az Intune alkalmazásvédelmi szabályzatai által támogatott alkalmazások férhessenek hozzá az Exchange Online-hoz. Amikor kiválasztja ezt a beállítást, megjelenik a támogatott alkalmazások listája.
 
     > [!NOTE]
-    > Ebben az esetben egyik Exchange Active Sync e-mail ügyfélprogram sem, így az iOS és az Android Exchange Online-hoz csatlakozó beépített e-mail ügyfélprogramjai sem küldhetnek vagy fogadhatnak leveleket. A felhasználók ehelyett egyetlen e-mail üzenetet kapnak, amely tájékoztatja őket, hogy az Outlook e-mail alkalmazást kell használniuk.
+    > Ebben az esetben egyik Exchange ActiveSync-levelezőprogram sem, így az iOS és az Android Exchange Online-hoz csatlakozó beépített levelezőprogramjai sem küldhetnek vagy fogadhatnak leveleket. A felhasználók ehelyett egyetlen e-mail üzenetet kapnak, amely tájékoztatja őket, hogy az Outlook e-mail alkalmazást kell használniuk.
 
 7. A szabályzatnak a felhasználókra való alkalmazásához nyissa meg a **Korlátozott felhasználói csoportok** panelt, és válassza a **Felhasználói csoport hozzáadása** lehetőséget. Válasszon ki egy vagy több felhasználói csoportot, amelyre alkalmazni kívánja ezt a szabályzatot.
 
-    ![A korlátozott felhasználói csoportok panel a felhasználói csoport hozzáadás opció kiemelésével – képernyőfelvétel](./media/mam-ca-add-user-group.png)
+    ![Képernyőkép a Korlátozott felhasználói csoportok panelről, a Felhasználói csoport hozzáadása lehetőség kiemelésével](./media/mam-ca-add-user-group.png)
 
 8. Előfordulhat, hogy az előző lépésben kiválasztott felhasználói csoportnak vannak olyan tagjai, akikre nem kívánja alkalmazni ezt a szabályzatot. Ilyen esetben e felhasználók csoportját adja hozzá a kivétel alá eső felhasználók listájához. Az **Exchange Online** panelen válassza a **Kivétel alá eső felhasználói csoportok** lehetőséget. A felhasználói csoportok listájának megnyitásához válassza a **Felhasználói csoport hozzáadása** lehetőséget. Válassza ki azokat a csoportokat, amelyeket szeretné kivonni a szabályzat hatálya alól.
 
@@ -77,7 +75,7 @@ Az Intune 1708-as kiadásától kezdve a rendszergazdák alkalmazásalapú felt�
 
 4. A szabályzatnév megadása, valamint a **Hozzárendelések** szakaszban hozzáférhető beállítások konfigurálása után válassza a **Hozzáférés-szabályozás** szakaszban található **Engedélyezés** elemet.
 
-5. Az új szabályzat mentéséhez válassza a **Jóváhagyott ügyfélalkalmazás megkövetelése**, majd a **Kijelölés** lehetőséget, és végül kattintson az **OK** gombra.
+5. Az új szabályzat mentéséhez válassza a **Jóváhagyott ügyfélalkalmazás megkövetelése**, majd a **Kijelölés**, végül pedig a **Létrehozás** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
 [Modern hitelesítés nélküli alkalmazások blokkolása](app-modern-authentication-block.md)

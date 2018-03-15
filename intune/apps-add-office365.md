@@ -1,12 +1,12 @@
 ---
-title: "Office 365-alkalmazások telepítése mobileszközökre az Intune-nal"
-titlesuffix: Azure portal
-description: "Annak ismertetése, hogyan egyszerűsíthető az Office 365-alkalmazások a Windows 10-es eszközökre való telepítése az Intune használatával."
+title: "Office 365-alkalmazások telepítése a Microsoft Intune használatával"
+titlesuffix: 
+description: "Annak ismertetése, hogyan egyszerűsíthető az Office 365-alkalmazások a Windows 10-es eszközökre való telepítése a Microsoft Intune használatával.”"
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
@@ -85,11 +85,11 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
 1.  Az **Alkalmazás felvétele** panelen válassza az **App Suite Settings** (Alkalmazáscsomag beállításai) elemet.
 2.  Az **App Suite Settings** (Alkalmazáscsomag beállításai) panelen adja meg az alábbi adatokat:
     - **Office-verzió** – Itt választhatja ki, hogy az Office 32 bites vagy 64 bites verzióját szeretné hozzárendelni. A 32 bites verziót 32 bites és 64 bites eszközökön is, a 64 bites verziót viszont csak 64 bites eszközökön telepítheti.
-    - **Frissítési csatorna** – Itt választhatja ki, hogyan történjen az Office frissítése az eszközökön. A különböző frissítési csatornákkal kapcsolatban az Overview of update channels for Office 365 ProPlus (Az Office 365 ProPlus frissítési csatornáinak áttekintése) című témakörben találhat további információt. A következő lehetőségek közül választhat:
-        - **Aktuális**
-        - **Késleltetett**
-        - **Első kiadáshoz tartozó aktuális**
-        - **Első kiadáshoz tartozó késleltetett**
+    - **Frissítési csatorna** – Itt választhatja ki, hogyan történjen az Office frissítése az eszközökön. A különböző frissítési csatornákkal kapcsolatban az [Office 365 ProPlus frissítési csatornáinak áttekintése](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) című témakörben találhat további információt. A következő lehetőségek közül választhat:
+        - **Havonta**
+        - **Havonta (megcélzott)**
+        - **Semi-Annual**
+        - **Féléves (megcélzott)**
     - **Automatically accept the app end user license agreement** (Az alkalmazás végfelhasználói licencszerződésének automatikus elfogadása) – Ezt a beállítást akkor jelölje be, ha nem követeli meg a végfelhasználóktól, hogy elfogadják a licencszerződést. Ebben az esetben az Intune automatikusan elfogadja a szerződést.
     - **Use shared computer activation** (Megosztott aktiválás használata) – A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információt az Overview of shared computer activation for Office 365 ProPlus (Az Office 365 ProPlus megosztott aktiválásának áttekintése) című témakörben találhat.
     - **Nyelvek** – Az Office automatikusan telepít minden támogatott nyelvet, mely telepítve van a Windowsban a végfelhasználói eszközön. Ezt a beállítást akkor jelölje be, ha az alkalmazáscsomaghoz további nyelveket szeretne telepíteni.
