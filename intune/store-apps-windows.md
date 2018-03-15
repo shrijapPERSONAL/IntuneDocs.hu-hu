@@ -1,12 +1,12 @@
 ---
-title: "Windows áruházbeli alkalmazások hozzáadása az Intune-hoz"
-titleSuffix: Azure portal
-description: "Útmutató Windows Áruházbeli alkalmazások Intune-ba való felvételéhez."
+title: "Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz"
+titleSuffix: 
+description: "Útmutató Windows Áruházbeli alkalmazások a Microsoft Intune-ba való hozzáadásához."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,38 +15,40 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdc1696175f26dc4bb89fcdd005d88bc0948f86d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 815f780ef9f04870f19e75481ed74f0a1c3601f3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Az alkalmazások hozzárendelése, figyelése, konfigurálása és védelme előtt hozzá kell adnia őket az Intune-hoz. A következő lépésekkel Windows Áruházbeli alkalmazásokat adhat hozzá a Microsoft Intune-hoz.
 
-1. Jelentkezzen be az Azure Portalra.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
-5. Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
-6. Az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazás adatai** elemet.
-7. Az **Alkalmazás szerkesztése** panelen konfigurálja az alábbi adatokat. Amikor elkészült, kattintson a **Hozzáadás** lehetőségre. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
+4. A **Mobilalkalmazások** területen a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
+5. Kattintson a lista feletti **Hozzáadás** a lehetőségre.
+6. Az **Áruházbeli alkalmazás** listában elérhető típusok közül válassza a **Windows** lehetőséget .
+7. Az alkalmazásadatok konfigurálásához válassza az **Alkalmazás adatai** lehetőséget.
+8. Az **Alkalmazás adatai** panelen konfigurálja a következő alkalmazásinformációkat: A választott alkalmazástól függően előfordulhat, hogy bizonyos információk már automatikusan kitöltve jelennek meg a panelen:
     - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak a Céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
-    - **Alkalmazás leírása** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
+    - **Leírás** – Itt adhatja meg az alkalmazás leírását. A leírás a céges portálon megjelenik a felhasználóknak.
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
-    - **Alkalmazás-áruház URL-címe** – Itt adhatja meg a létrehozni kívánt alkalmazás áruházbeli URL-címét.
-    - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legkorábbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerrel rendelkező eszközhöz rendelik hozzá, akkor nem lesz telepítve.
-    - **Kategória (nem kötelező)** – Választhat egyet vagy többet a beépített alkalmazáskategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ezzel megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
+    - **Alkalmazás-áruház URL-címe** – Itt adhatja meg a létrehozni kívánt alkalmazás áruházbeli URL-címét. 
+    - **Kategória** (nem kötelező) – Választhat egyet vagy többet az alkalmazáskategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ennek az adatnak a hozzáadásával megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
     - **Megjelenítés kiemelt alkalmazásként a Céges portálon** – Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
-    - **Információs URL-cím** – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
-    - **Adatvédelmi nyilatkozat URL-címe** – Igény esetén itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
-    - **Fejlesztő** – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
-    - **Tulajdonos** – Igény esetén megadhatja az alkalmazás tulajdonosának nevét (például **HR-osztály**).
-    - **Megjegyzések** – Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket.
-    - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
-8. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
+    - **Információs URL-cím** (nem kötelező) – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Adatvédelmi nyilatkozat URL-címe** (nem kötelező) – Itt adhatja meg az alkalmazás adatvédelmi nyilatkozatát tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Fejlesztő** (nem kötelező) – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
+    - **Tulajdonos** (nem kötelező) – Igény esetén megadhatja az alkalmazás tulajdonosának nevét (például **HR osztály**).
+    - **Megjegyzések** (nem kötelező) – Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket.
+    - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a céges portálon böngésző felhasználók számára.
+1. A szükséges alkalmazásadatok megadása után kattintson az **OK** gombra.
+2. Kattintson a **Hozzáadás** lehetőségre az **Alkalmazás hozzáadása** panelen.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md).
 
@@ -59,16 +61,22 @@ A végfelhasználók a Microsoft Áruházból telepíthetik a Céges portál alk
 1. Jelentkezzen be [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) fiókjába, és szerezze be a Céges portál alkalmazás **offline licencű** verzióját.  
 2. Miután beszerezte az alkalmazást, válassza ki a **Készlet** lapon.  
 3. A **Platform** listából válassza ki a **Windows 10 minden eszközre** lehetőséget, majd válassza ki a megfelelő **architektúrát**, és töltse le az alkalmazást. Ehhez az alkalmazáshoz nincs szükség alkalmazás-licencfájlra.
-![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](./media/Win10CP-all-devices.png)
+
+    ![Kép a Windows 10 minden eszközre, X86 architektúrával csomag letöltési részleteiről](./media/Win10CP-all-devices.png)
+
 4. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 9 csomaggal, ahogy az alábbi ábrán látható.
 
-![Kép a letöltendő függőségi fájlokról ](./media/Win10CP-dependent-files.png)
-5. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (pl. C:&#92;Céges portál) a következőképpen felépített csomagokkal:
-  1. Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
-  ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
-  2. Helyezze el a kilenc függőségcsomagot a Függőségek mappában.  
-  Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt.  
-  ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és hozzárendelheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](./media/Win10CP-error-message.png)
+    ![Kép a letöltendő függőségi fájlokról](./media/Win10CP-dependent-files.png)
+
+5. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (például: C:&#92;Céges portál) a következőképpen felépített csomagokkal:
+  - Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
+  
+    ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
+
+  - Helyezze el a kilenc függőségcsomagot a Függőségek mappában. Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt: 
+
+      ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és hozzárendelheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](./media/Win10CP-error-message.png)
+
 6. Lépjen vissza az Intune-ba, és töltse fel a Céges portál alkalmazást új alkalmazásként. Rendelje hozzá szükséges alkalmazásként a kívánt felhasználói célcsoport számára.  
 
 Itt talál további információkat arról, hogy az Intune miképpen kezeli az univerzális alkalmazások függőségeit: [appxbundle telepítése függőségekkel a Microsoft Intune MDM-en keresztül](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  

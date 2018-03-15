@@ -1,7 +1,7 @@
 ---
-title: "Regisztrációs korlátozások beállítása az Intune-ban"
-titlesuffix: Azure portal
-description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban. \""
+title: "Regisztrációs korlátozások beállítása a Microsoft Intune-ban"
+titlesuffix: 
+description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune-rendszergazdaként létrehozhat és felügyelhet olyan regisztrációs korlátozásokat, amelyek meghatározzák az Intune-ban regisztrálható eszközök számát és típusát. Több korlátozást is létrehozhat, melyeket alkalmazhat különféle felhasználói csoportokra. Az egyes korlátozásokhoz [prioritássorrendet](#change-enrollment-restriction-priority) állíthat be.
+Intune-rendszergazdaként létrehozhat és kezelhet regisztrációs korlátozásokat. Ezek a korlátozások szabják meg az Intune-kezelésre regisztrálható eszközök számát és típusát. Több korlátozást is létrehozhat, melyeket alkalmazhat különféle felhasználói csoportokra. Az egyes korlátozásokhoz [prioritássorrendet](#change-enrollment-restriction-priority) állíthat be.
 
 >[!NOTE]
 >A regisztrációs korlátozások nem biztonsági funkciók. A feltört eszközök más tulajdonságokat állíthatnak magukról. Ezek a korlátozások a nem rosszindulatú felhasználók esetén jelentenek észszerű erőfeszítést igénylő akadályt.
@@ -83,7 +83,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
   Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
 8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
 
-    ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatform-konfigurációval, ahol a személyes tulajdonú eszközök beállításai meg vannak adva.](media/device-restrictions-platform-configurations.png)
+    ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatformmal, amely a személyes tulajdonú eszközökhöz van konfigurálva](media/device-restrictions-platform-configurations.png)
 9. Kattintson a **Mentés**gombra.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Az **Eszközszámkorlátok** területen válassza ki a beállítani kívánt korlátot.
 5. Válassza az **Eszközszámkorlát** lehetőséget, majd a legördülő listában válassza ki a felhasználó által regisztrálható eszközök maximális számát.
-    ![Az Eszközszámkorlátok panel képernyőképe az eszközszámkorlátokkal.](./media/device-restrictions-limit.png)
+    ![Képernyőkép az eszközszám-korlátozás panelről](./media/device-restrictions-limit.png)
 6. Kattintson a **Mentés**gombra.
 
 A végfelhasználó üzenetet kap majd, ha elérte a regisztrálható eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:

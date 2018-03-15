@@ -1,6 +1,6 @@
 ---
-title: "Eszközök regisztrálása – készülékregisztráció-kezelő"
-titlesuffix: Azure portal
+title: "Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával"
+titlesuffix: Microsoft Intune
 description: "Az eszközök Intune-ban való regisztrálásához használja a készülékregisztráció-kezelői fiókot. \""
 keywords: 
 author: ErikjeMS
@@ -15,28 +15,28 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enroll-devices-using-device-enrollment-manager"></a>Eszközök regisztrálása a készülékregisztráció-kezelővel
+# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
 
-A felhasználóknak szerepelniük kell az Azure Portal webhelyen ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság biztosítása érdekében a DEM-felhasználó nem lehet egyben Intune-rendszergazda is.
+A felhasználóknak szerepelniük kell az [Azure Portalon](https://portal.azure.com) ahhoz, hogy fel lehessen venni őket eszközregisztráció-kezelőként. Az optimális biztonság biztosítása érdekében a DEM-felhasználó nem lehet egyben Intune-rendszergazda is.
 
 >[!NOTE]
->A készülékregisztráció-kezelős módszer nem használható a következő egyéb regisztrációs módszerekkel: [Apple Configurator beállítási asszisztenssel](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator közvetlen beléptetéssel](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) vagy [Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md). Emellett macOS-eszközök regisztrálására sem használható.
+>A készülékregisztráció-kezelős módszer nem használható a következő egyéb regisztrációs módszerekkel: [Apple Configurator beállítási asszisztenssel](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator közvetlen beléptetéssel](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) vagy [Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Eszközregisztráció-kezelői példaforgatókönyv
 
 Egy étterem 50 pénztári táblagépet szeretne biztosítani a felszolgálóknak és rendelési monitorokat a konyhai személyzetnek. Az alkalmazottaknak nem szükséges hozzáférni a céges adatokhoz, vagy felhasználóként bejelentkezni. Az Intune-rendszergazda létrehoz egy eszközregisztráció-kezelői fiókot, és felveszi az étterem egyik vezetőjét a DEM-fiókba, ezzel gyakorlatilag DEM-képességeket biztosítva az adott vezető számára. A vezető ekkor már regisztrálhatja az 50 táblagépet a DEM-hitelesítőadatok használatával.
 
-Csak az Azure Portalon szereplő felhasználók lehetnek eszközregisztráció-kezelők. Az eszközregisztráció-kezelő felhasználó nem lehet Intune-rendszergazda.
+Csak az [Azure Portalon](https://portal.azure.com) szereplő felhasználók lehetnek eszközregisztráció-kezelők. Az eszközregisztráció-kezelő felhasználó nem lehet Intune-rendszergazda.
 
 A DEM-felhasználó a következőket teheti:
 
@@ -88,11 +88,11 @@ A készülékregisztráció-kezelő eltávolítása nincs hatással a regisztrá
 
 **Készülékregisztráció-kezelő eltávolítása**
 
-1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-2. Válassza az Intune panel **Eszközök regisztrálása** elemét, majd a **Készülékregisztráció-kezelők** elemet.
-3. A **Készülékregisztráció-kezelő** panelen kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra, és válassza az **Eltávolítás** parancsot.
+1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+2. Az Intune panelen válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** lehetőséget.
+3. A **Készülékregisztráció-kezelő** panelen válassza ki a készülékregisztráció-kezelő felhasználót, majd válassza az **Eltávolítás** lehetőséget.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>A készülékregisztráció-kezelő tulajdonságainak megtekintése
 
-1. Az Azure Portalon válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** elemet.
-2. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** parancsot.
+1. Az [Azure Portalon](https://portal.azure.com) válassza az **Eszközök regisztrálása**, majd a **Készülékregisztráció-kezelők** lehetőséget.
+2. Kattintson a jobb gombbal a készülékregisztráció-kezelő felhasználóra az **Készülékregisztráció-kezelők** panelen, és válassza a **Tulajdonságok** lehetőséget.

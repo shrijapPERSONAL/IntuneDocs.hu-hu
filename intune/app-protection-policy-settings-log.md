@@ -1,7 +1,7 @@
 ---
-title: "Alkalmazásvédelmi szabályzat naplói"
-titlesuffix: Azure portal
-description: "Ez a témakör az alkalmazásvédelmi szabályzatok alkalmazásnaplókban tárolt beállításait mutatja be."
+title: "Az alkalmazásvédelmi szabályzat naplóinak áttekintése"
+titlesuffix: Microsoft Intune
+description: "Ismerje meg az alkalmazásvédelmi naplók áttekinthető beállításait."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Ügyfelekre vonatkozó alkalmazásvédelmi naplók áttekintése
 
-A naplók eléréséhez engedélyeznie kell az Intune diagnosztikai módját a mobilügyfél alkalmazásához. Az alábbi táblázat a naplóban tárolt beállítások nevét és magyarázatát tartalmazza.
+Ismerje meg az alkalmazásvédelmi naplók áttekinthető beállításait. A naplók eléréséhez engedélyeznie kell az Intune diagnosztikai módját a mobilügyfél alkalmazásához. Az alábbi táblázat a naplóban tárolt beállítások nevét és magyarázatát tartalmazza.
 
 ## <a name="app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatbeállítások
 

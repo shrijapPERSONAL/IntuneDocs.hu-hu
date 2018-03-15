@@ -3,8 +3,8 @@ title: "A Lookout-integráció beállítása az Intune-ban"
 titlesuffix: Azure portal
 description: "Lookout-előfizetés beállítása az Intune-ban"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>A Lookout Mobile Threat Defense integrációjának beállítása az Intune-ban
 
@@ -55,7 +55,7 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 
 3. Kérdezze le az Azure AD-csoportazonosítót. A Lookout konzol két hozzáférési szintet támogat:  
   * **Teljes hozzáférés:** Az Azure AD-rendszergazda létrehozhat egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból álló csoportot is.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
-  * **Korlátozott hozzáférés:** a csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
+  * **Korlátozott hozzáférés:** A csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
 
     > [!TIP] 
     > Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/articles/114094105653).
@@ -94,7 +94,7 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
     ![képernyőkép az Intune-összekötő regisztrálási oldaláról](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > A **Megjelenített névben** különbséget kell tenni a kis- és nagybetűk között, ahogyan az az Azure portálon a biztonsági csoport **Tulajdonságok** lapján látható. Amint az alábbi képen látható, a biztonsági csoport **Megjelenített nevében** nagybetűs szavak, míg a címben csak kisbetűk szerepelnek. A Lookout-konzolon a biztonsági csoport **Megjelenített nevénél** használja a megfelelő írásmódot.
+    > A rendszer a **Megjelenített névben** megkülönbözteti a kis- és nagybetűket, ahogyan az az Azure Portalon a biztonsági csoport **Tulajdonságok** lapján látható. Amint az alábbi képen látható, a biztonsági csoport **Megjelenített nevében** nagybetűs szavak, míg a címben csak kisbetűk szerepelnek. A Lookout-konzolon a biztonsági csoport **Megjelenített nevénél** használja a megfelelő írásmódot.
     >![képernyőkép az Azure portálról, az Azure Active Directory szolgáltatás tulajdonságok lapjáról](./media/aad-group-display-name.png)
 
     >[!NOTE] 
@@ -131,7 +131,7 @@ A Lookout Mobile Threat Defense osztályokba sorolja a különféle fenyegetési
 > A kockázati szintek fontos elemét alkotják a Mobile Threat Defense-nek, mert az Intune-integráció az eszköz megfelelőségét a kockázati szintek alapján számítja ki futásidőben. Az Intune-rendszergazda állítja be a szabályzatban, hogy egy eszköz akkor nem megfelelő, ha egy olyan aktív fenyegetés található rajta, amelynek a szintje: **Magas**, **Közepes** vagy **Alacsony**. A Lookout Mobile Threat Defense veszélyforrás-besorolási szabályzata közvetlen alapja az Intune-ban lezajló eszközmegfelelőségi számításnak.
 
 ## <a name="watching-enrollment"></a>A regisztráció figyelése
-A telepítés befejezése után a Lookout Mobile Threat Defense elkezdi lekérdezni az Azure AD-ből azokat az eszközöket, amelyek megfelelnek a megadott regisztrációs csoportoknak.  A regisztrált eszközök adatai az Eszközök modulban találhatók.  Az eszközök kezdeti állapota mindig „folyamatban” lesz.  Az eszközállapot akkor frissül, ha a Lookout for Work alkalmazás az illető eszközön telepítve lett, megnyitották és aktiválták azt.  Ha szeretne részletes információt arról, hogyan lehet leküldeni a Lookout for Work alkalmazást az eszközre, tekintse meg a [Lookout for Work alkalmazások hozzáadása az Intune-nal](mtd-apps-ios-app-configuration-policy-add-assign.md) témakört.
+A telepítés befejezése után a Lookout Mobile Threat Defense elkezdi lekérdezni az Azure AD-ből azokat az eszközöket, amelyek megfelelnek a megadott regisztrációs csoportoknak.  A regisztrált eszközök adatai az Eszközök modulban találhatók.  Az eszközök kezdeti állapota mindig „folyamatban” lesz.  Az eszközállapot akkor frissül, ha a Lookout for Work alkalmazás az illető eszközön telepítve lett, megnyitották és aktiválták azt.  A [Lookout for Work alkalmazások hozzáadása az Intune-nal](mtd-apps-ios-app-configuration-policy-add-assign.md) című témakörben találhat részletes információt arról, hogyan lehet leküldeni a Lookout for Work alkalmazást az eszközre.
 
 ## <a name="next-steps"></a>További lépések
 

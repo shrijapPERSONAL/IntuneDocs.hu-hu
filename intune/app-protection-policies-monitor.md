@@ -1,7 +1,7 @@
 ---
 title: "Az alkalmazásvédelmi szabályzatok figyelése"
-titleSuffix: Azure portal
-description: "Megtudhatja, hány felhasználóra érvényes a szabályzat, és lefúrással megjelenítheti a részleteket.”"
+titleSuffix: Microsoft Intune
+description: "Az Intune-ban figyelheti a mobilalkalmazás-kezelési szabályzatok megfelelőségi állapotát."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Az alkalmazásvédelmi szabályzatok figyelése
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -39,10 +39,10 @@ Három különböző helyen figyelheti a megfelelőségi állapotot:
 
 ## <a name="summary-view"></a>Összesített nézet
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-4. A **Mobilalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelmi felhasználó állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
+4. A **Mobilalkalmazások** területen válassza a **Figyelés** > **Alkalmazásvédelem állapota** lehetőséget az összefoglaló nézet megjelenítéséhez:
 
 ![Az Intune mobilalkalmazás-kezelés panel Összefoglalás csempéje](./media/app-protection-user-status-summary.png)
 
@@ -73,17 +73,17 @@ Itt megkeresheti az adott felhasználókat, és ellenőrizheti a megfelelési á
   - **Nincs beadva:** a szabályzat települt a felhasználónál, de az alkalmazást még egyszer sem használták a munkahelyi környezetben.
 
 >[!NOTE]
-> Ha a keresett felhasználók nem rendelkeznek telepített MAM-szabályzattal, egy üzenet jelenik meg, amely arról tájékoztatja, hogy a felhasználóra nem vonatkozik egyetlen MAM-szabályzat sem.
+> Ha a keresett felhasználók nem rendelkeznek telepített MAM-szabályzattal, egy üzenet jelenik meg, amely arról tájékoztatja, hogy a felhasználóra nem vonatkozik egyetlen MAM-szabályzat sem.Ha a keresett felhasználók nem rendelkeznek telepített MAM-szabályzattal, egy üzenet jelenik meg, amely arról tájékoztatja, hogy a felhasználóra nem vonatkozik egyetlen MAM-szabályzat sem.
 
 A felhasználóhoz tartozó jelentések megtekintéséhez kövesse az alábbi lépéseket:
 
 1.  Egy felhasználó kijelöléséhez válassza az **Összefoglalás** csempét.
 
-    ![3. képernyőkép](./media/MAM-reporting-6.png)
+    ![Képernyőkép az Intune mobilalkalmazás-kezelés Beállítások paneljének Összefoglalás csempéjéről](./media/MAM-reporting-6.png)
 
 2. A megjelenő **Alkalmazásjelentések** panelen válassza a **Felhasználó kijelölése** lehetőséget, és keresse meg a kívánt Azure Active Directory-felhasználót.
 
-    ![A Felhasználó kijelölése elem az Alkalmazásjelentések panelen](./media/MAM-reporting-2.png)
+    ![Képernyőkép az Alkalmazásjelentés panel Felhasználó kiválasztása lehetőségéről](./media/MAM-reporting-2.png)
 
 3. Válassza ki a listából a felhasználót. Megjelennek a felhasználó megfelelési állapotára vonatkozó információk.
 
@@ -94,7 +94,7 @@ A részletes nézetben látható a hibaüzenet, annak az alkalmazásnak a neve, 
 
 Itt megtalálhatja a Részletes nézetben is szereplő jelentéseket, illetve további jelentéseket, melyek segítséget nyújtanak a mobilalkalmazás-kezelési szabályzat megfelelőségi állapotával kapcsolatban:
 
-![4. képernyőkép](./media/MAM-reporting-7.png)
+![Képernyőkép a Beállítások panel két elérhető jelentéséről](./media/MAM-reporting-7.png)
 
 -   **Alkalmazásvédelmi felhasználói jelentés:** Ugyanazokat az információkat ismerteti, mint a Részletes nézetre vonatkozó fentebbi szakaszban említett **Felhasználói állapot** jelentés.
 
@@ -110,7 +110,7 @@ Itt megtalálhatja a Részletes nézetben is szereplő jelentéseket, illetve to
 
         -   Minden alkalmazás érvényesítve lett, de nincsenek rájuk vonatkozó MAM-szabályzatok.
 
-![2. képernyőkép](./media/MAM-reporting-4.png)
+![Képernyőkép egy felhasználó Alkalmazásjelentés paneljéről, három regisztrált alkalmazás táblázatával](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Táblacsoportosítás
 
@@ -125,13 +125,13 @@ Az alkalmazásvédelmi szabályzatokkal kapcsolatos összes tevékenységet egye
 
 Az alkalmazásvédelmi jelentés létrehozásához kövesse az alábbi lépéseket:
 
-1. Az Intune-os mobilalkalmazás-kezelés paneljén válassza az alkalmazásvédelmi jelentést.
+1. Az Intune-os mobilalkalmazás-kezelés paneljén válassza az **Alkalmazásvédelmi jelentés** lehetőséget.
 
-    ![Képernyőkép-6](./media/app-protection-report-csv-2.png)
+    ![Képernyőkép az Intune mobilalkalmazás-kezelés panel Alkalmazásvédelem letöltési hivatkozásáról](./media/app-protection-report-csv-2.png)
 
 2. Válassza az Igen lehetőséget a jelentés mentéséhez, majd válassza a Mentés másként lehetőséget, és válassza ki azt a mappát, ahova a jelentést menteni szeretné.
 
-    ![Képernyőkép-7](./media/app-protection-report-csv-1.png)
+    ![Képernyőkép a Jelentés mentése jóváhagyó mezőről](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Lásd még:
 [iOS-alkalmazások közti adatátvitel kezelése](data-transfer-between-apps-manage-ios.md)

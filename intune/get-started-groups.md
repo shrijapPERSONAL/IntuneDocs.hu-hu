@@ -1,10 +1,10 @@
 ---
-title: "Csoportok – első lépések"
-titleSuffix: Azure portal
+title: "Csoport létrehozása a Microsoft Intune-ban"
+titleSuffix: 
 description: "Csoportokba rendezheti a felhasználókat, hogy könnyebben kezelhesse a szabályzatokat és az általuk elérhető alkalmazásokat."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>Csoportok – első lépések
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>Csoport létrehozása a felhasználók és az adathozzáférés kezeléséhez
 
-Csoportok segítéségével kezelheti a felhasználókat, és tarthatja ellenőrzés alatt, hogy a felhasználók milyen céges erőforrásokat érhetnek el. Ezek az erőforrások lehetnek a könyvtára részei, vagy lehetnek külső erőforrások, például SaaS-alkalmazások vagy SharePoint-helyek.
+Csoportokkal kezelheti a felhasználókat, és ellenőrzés alatt tarthatja, hogy a felhasználók milyen céges erőforrásokat érhetnek el. Ezek az erőforrások lehetnek a könyvtára részei, vagy lehetnek külső erőforrások, például SaaS-alkalmazások vagy SharePoint-helyek.
 
 A Microsoft Intune az Azure Active Directoryt (Azure AD) használja a vállalati erőforrásokhoz való hozzáférés kezelésére. Ez a hozzáférés a címtárban található szabályzatokkal vezérelhető. Ezt a hozzáférést ekkor az Intune kezeli a mobileszközöknél, ami lehetővé teszi a csoport tagjainak az erőforrások elérését.
 

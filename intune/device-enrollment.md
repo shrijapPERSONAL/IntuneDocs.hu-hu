@@ -1,6 +1,6 @@
 ---
 title: "Mit jelent az eszközök regisztrálása a Microsoft Intune-ban"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Útmutató iOS, Android és Windows rendszerű eszközök regisztrálásához."
 keywords: 
 author: ErikjeMS
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-device-enrollment"></a>Mi az eszközregisztrálás?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,6 +37,14 @@ Amint az alábbi táblázatokban látható, a dolgozók eszközeit többféleké
 |**[DEP](#apple-device-enrollment-program)**|   Igen |   Nem kötelező megadni |  Nem kötelező megadni|[További információ](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| Igen |   Nem kötelező megadni |  Nem| [További információ](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Nem |    Nem  | Nem|[További információ](./apple-configurator-direct-enroll-ios.md)|
+
+## <a name="macos-enrollment-methods"></a>macOS-eszközök regisztrálási módszerei
+
+| **Módszer** |  **Alaphelyzetbe állítás szükséges** |  **Felhasználói affinitás** | **Zárolás** | **Részletek**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | Nem| Igen | Nem | [További információ](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Nem |Nem |Nem  | [További információ](./device-enrollment-manager-enroll.md)|
+
 
 ## <a name="windows-enrollment-methods"></a>Windows-eszközök regisztrálási módszerei
 

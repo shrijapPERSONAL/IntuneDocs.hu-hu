@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditnaplók Intune-tevékenységekhez
-Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. A létrehozási, frissítési (szerkesztési), törlési és hozzárendelési műveletek, illetve a távoli feladatok naplózott eseményeket generálnak, melyek megtekinthetők. A legtöbb Intune-beli számítási feladat auditnaplói megtekinthetők. 
+Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. A létrehozási, frissítési (szerkesztési), törlési és hozzárendelési műveletek, illetve a távoli feladatok naplózott eseményeket generálnak, melyek megtekinthetők. A legtöbb Intune-beli számítási feladat auditnaplói megtekinthetők. A naplózás alapértelmezés szerint engedélyezve van az összes ügyfél számára, és nem tiltható le. A naplózási események 2017 decemberében, az új funkció megjelenésekor kezdődtek, az ezt megelőző események így nincsenek rögzítve.
 
 ## <a name="who-can-access-the-data"></a>Ki férhet hozzá az adatokhoz?
 A következő engedélyekkel rendelkező felhasználók tekinthetik meg az auditnaplókat:

@@ -1,6 +1,6 @@
 ---
-title: "Intune-licencek kiosztása"
-description: "Licencek és eszközök hozzárendelése az Intune-előfizetéshez"
+title: "Microsoft Intune-licencek hozzárendelése"
+description: "Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>Intune-licencek hozzárendelése a felhasználói fiókokhoz
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) haszná
 
 3.  Kapcsolja az **Intune** vagy az **Enterprise Mobility + Security** beállítást **Be**, és válassza a **Mentés** lehetőséget.
 
-  ![Kép az Office 365 portálon történő terméklicenc-hozzárendelésről.](./media/office-assign-license.png)
+  ![Képernyőkép az Office 365 portál Terméklicencek szakaszáról.](./media/office-assign-license.png)
 
 4. A felhasználói fiókot most már rendelkezik a szolgáltatás használatához és az eszközöknek a felügyelet alá való regisztrálásához szükséges engedélyekkel.
 
@@ -46,11 +46,11 @@ Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) haszná
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>A School Data Sync használata licencek kiosztására a felhasználók számára az Intune for Educationben
 Az oktatási szervezetek a School Data Sync (SDS) segítségével Intune for Education-licenceket oszthatnak ki a szinkronizált felhasználóknak. Az SDS-profil beállítása esetén jelölje be az Intune for Education jelölőnégyzetet.  
 
-![Az SDS-profil beállításának képe](./media/i4e-sds-profile-setup-setting.png)
+![Képernyőkép az SDS-profil beállításáról](./media/i4e-sds-profile-setup-setting.png)
 
 Az Intune for Education-licencek kiosztásakor ellenőrizze, hogy az Intune A Direct-licenc is ki van-e osztva.
 
-![Terméklicenc beállításának képe](./media/i4e-set-licenses.png)
+![Képernyőkép a terméklicenc beállításáról](./media/i4e-set-licenses.png)
 
 További tudnivalók az SDS-ről: [A School Data Sync áttekintése](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 

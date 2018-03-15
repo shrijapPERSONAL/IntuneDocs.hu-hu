@@ -1,12 +1,12 @@
 ---
-title: "Mi az alkalmazáskezelés?"
-titlesuffix: Azure portal
-description: "Ezen témakör a Microsoft Intune-nal történő alkalmazáskezeléssel kapcsolatos alapismereteket tartalmazza"
+title: "Az alkalmazáskezelés a Microsoft Intune-ban"
+titlesuffix: 
+description: "Ezen témakör a Microsoft Intune-nal történő alkalmazáskezeléssel kapcsolatos alapismereteket tartalmazza."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Rendszergazdaként az Ön feladata biztosítani, hogy a végfelhasználók hozzáférhessenek a munkájukhoz szükséges alkalmazásokhoz. Ez kihívást jelenthet, mivel:
+A Microsoft Intune lehetővé teszi a rendszergazdáknak, hogy a cég által használt mobilalkalmazásokat felügyeljék. Ez a funkció az eszközkezelési és adatvédelmi funkciókat egészíti ki. A funkció használatánál elsődleges szempont, hogy a felhasználók hozzáférhessenek a munkájukhoz szükséges alkalmazásokhoz. Ez kihívást jelenthet, mivel:
 - Sokféle eszközplatformot és alkalmazástípust kell kezelnie.
 - Előfordulhat, hogy a vállalati eszközökön és a felhasználók saját eszközein található alkalmazásokat egyaránt felügyelnie kell.
 - Gondoskodnia kell a céges hálózat és a felhasználói adatok biztonságáról.
 
 Emellett előfordulhat, hogy az Intune-ban nem regisztrált eszközökön található alkalmazásokat is szeretne hozzárendelni és felügyelni.
 
-Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt eszközökön való használatához.
+Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt eszközökön való használatához. Az alábbi táblázat az alkalmazáskezelési lehetőségeket foglalja össze. A táblázat alatt segítséget talál ahhoz, hogy a Microsoft Intune Azure Portalbeli használatával is megismerkedjen. 
 
 ## <a name="app-management-capabilities-by-platform"></a>Alkalmazás-felügyeleti szolgáltatások platform szerint
 
@@ -64,8 +64,8 @@ Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt e
 
 Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatban találja, amely a következőképpen érhető el:
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
@@ -115,3 +115,7 @@ További információért lásd: [Alkalmazások figyelése](apps-monitor.md).
 ### <a name="help-and-support"></a>Súgó és támogatás
 - **Súgó és támogatás** – Hibaelhárítási információkat kereshet, támogatást kérhet, és megtekintheti az Intune állapotát.
     - [Problémák elhárítása](help-desk-operators.md)
+    
+## <a name="next-steps"></a>További lépések
+
+- [Alkalmazás hozzáadása a Microsoft Intune-hoz](apps-add.md)

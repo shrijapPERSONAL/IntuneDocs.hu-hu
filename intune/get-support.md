@@ -1,10 +1,10 @@
 ---
 title: "Hogyan kérhet támogatást az Intune-hoz"
-titlesuffix: Azure portal
-description: "A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez."
+titlesuffix: Microsoft Intune
+description: "A Microsoft Intune fizetős és próbaverziós előfizetéseihez online és telefonos segítséget kérhet."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Hogyan kérhet támogatást az Intune-hoz
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 A Microsoft Intune-hoz a Microsoft globális műszaki, értékesítés előtti, számlázási és előfizetési támogatást nyújt. A támogatás interneten és telefonon is elérhető mind a fizetős, mind a próbaverziós előfizetésekhez. Az online műszaki támogatás angolul és japánul érhető el. Telefonos támogatás és online számlázási támogatás más nyelveken is elérhető.
 
 >[!IMPORTANT]
-> Ha olyan termékekhez szeretne műszaki támogatást igénybe venni, amelyek együttműködnek az Intune-nal, de nem a Microsoft készített, például a Saaswedo, a Cisco vagy a Lookout, akkor először forduljon ezeknek a termékeknek a szállítójához. Mielőtt megnyitja az Intune-nal kapcsolatos támogatási kérelmet, győződjön meg róla, hogy a másik terméket megfelelően konfigurálta.
+> Ha olyan külső termékekhez szeretne műszaki támogatást igénybe venni, amelyek együttműködnek az Intune-nal (például a Saaswedo, a Cisco vagy a Lookout), akkor először forduljon ezeknek a termékeknek a szállítójához. Mielőtt megnyitja az Intune-nal kapcsolatos támogatási kérelmet, győződjön meg róla, hogy a másik terméket megfelelően konfigurálta.
 
 ## <a name="create-an-online-support-ticket"></a>Online támogatási jegy létrehozása
 
@@ -41,16 +41,20 @@ Rendszergazdaként az alábbi lépésekben küldheti be a támogatási jegyet az
 2. Az Azure Portal Súgó és támogatási oldalán kattintson az **Új támogatási kérelem** lehetőségre.
 
     ![Képernyőkép az Azure Portal Súgó és támogatás oldaláról az Új támogatási kérelem hivatkozás kiemelésével](./media/azure-support-ticket-link.png)
+
 3. Az **Alapvető műveletek** panelen a legtöbb Intune-nal kapcsolatos technikai támogatáskéréshez a következő lehetőségeket választhatja:
     - **Problématípus**: **Technikai**
     - **Szolgáltatás**: **Microsoft Intune**
-    - **Támogatási csomag**: **Technikai támogatás – benne foglalt** (Az Intune technikai támogatása díjtalan.)
-
+    - **Támogatási csomag**: **Technikai támogatás – benne foglalt** (Az Intune technikai támogatása díjtalan) vagy **Premier**
+    
     >[!IMPORTANT]
-    >Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier szintű támogatási ajánlat részleteit lásd [A szolgáltatások leírása](https://www.microsoft.com/microsoftservices/services-list.aspx) dokumentáció 5.3.3 számú, „Tanácsadási szolgáltatások” című szakaszában.
+    >- Ha Ön**Premier ügyfél**, és nem látja a **Támogatási csomag: Premier** elemet, a szerződés és a bérlő összekapcsolásához forduljon a műszaki partnerkezelőjéhez.
+    >- Az Intune támogatása és a Configuration Managerrel használt Intune támogatása díjtalan. A Premier szintű támogatási ajánlat részleteit [A szolgáltatások leírása](https://enterprise.microsoft.com/en-us/services/services-list/) dokumentáció 5.3.3 számú, „Tanácsadási szolgáltatások” című szakaszában találhatja meg.
 
     A folytatáshoz válassza a **Tovább** gombot.
+
 4. Annak érdekében, hogy kérése a megfelelő szakemberhez kerüljön, a **Probléma** panelen adja meg a következő adatokat:
+
     - **Súlyosság**
     - **Probléma típusa**
     - **Kategória**
@@ -59,13 +63,15 @@ Rendszergazdaként az alábbi lépésekben küldheti be a támogatási jegyet az
 
     ![Képernyőkép az Azure Portal Súgó és támogatás lapjáról a Problémához kapcsolódó kitöltött mezőkkel és a problémán alapuló megjelenített megoldásokkal](./media/support-need-solutions.png)
 
-    Annak érdekében, hogy utánajárhassunk a problémának és megoldhassuk, adja meg az alábbi adatokat:
-    -   **Részletek**
+    Annak érdekében, hogy az ügyfélszolgálat utánajárhasson a problémának és megoldhassa, adja meg az alábbi adatokat:
+    
+    - **Részletek**
     - **Dátum**
     - **Idő**
-    - Kiegészítő adatok
+    - **Kiegészítő adatok**
 
     Kattintson a **Tovább** gombra.
+
 5. A támogatási kérelemhez adja meg az **Elérhetőségi adatait**. Ezt az információt a Microsoft az Önnel való kapcsolatfelvételre használja fel.
 6. A támogatási kérelem elküldéséhez kattintson a **Létrehozás** elemre.
 
@@ -74,6 +80,5 @@ Rendszergazdaként az alábbi lépésekben küldheti be a támogatási jegyet az
 
 ## <a name="additional-resources"></a>További háttéranyagok
 - [Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással](phone-support-contact.md)
-- [Mennyiségi licencszolgáltatási központ](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Számlázási és előfizetés-kezelési támogatás](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Mennyiségi licencelés](http://go.microsoft.com/fwlink/p/?LinkID=282015)

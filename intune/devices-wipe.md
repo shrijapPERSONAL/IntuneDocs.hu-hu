@@ -1,6 +1,6 @@
 ---
-title: "A céges adatok eltávolítása és a gyári beállítások visszaállítása az Intune-ban felügyelt eszközökön"
-titlesuffix: Azure portal
+title: "A gyári beállítások visszaállítása eszközökön vagy a céges adatok eltávolítása azokról a Microsoft Intune-nal"
+titlesuffix: 
 description: "Ez a cikk tájékoztatást nyújt egy eszközön található céges adatok eltávolításáról, valamit az eszköz gyári beállításainak visszaállításáról."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
@@ -35,9 +35,9 @@ A **Gyári beállítások visszaállítása** visszaállítja az eszközt a gyá
 
 ### <a name="to-factory-reset-a-device"></a>Az eszköz gyári beállításainak visszaállítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
 4. Válassza ki az eszköz nevét, amelyen vissza szeretné állítani a gyári beállításokat.
 5. Az eszköz nevét tartalmazó panelen válassza a **Gyári beállítások visszaállítása** lehetőséget.
 6. A Windows 10 rendszer 1709-es és újabb verzióihoz egy további lehetőség is rendelkezésre áll a regisztrációállapot és a felhasználói fiók megőrzéséhez. 
@@ -122,9 +122,9 @@ Az Android for Work-eszközökről a céges adatok eltávolítása a munkahelyi 
 
 ### <a name="to-remove-company-data"></a>A céges adatok eltávolítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
 4. Válassza ki az eszköz nevét, amelyről szeretné eltávolítani a céges adatokat.
 5. Az eszköz nevét tartalmazó panelen válassza a **Céges adatok eltávolítása** lehetőséget, majd kattintson az **Igen** gombra az eltávolítás megerősítéséhez.
 
@@ -134,9 +134,9 @@ Ha az eszköz be van kapcsolva és csatlakoztatva van, a céges adatok eltávol�
 
 Kommunikációs problémák vagy elveszett eszközök miatt előfordulhat, hogy el kell távolítania egy eszközt az Azure Active Directoryból (AD-ból). A törlés parancs nem távolítja el az eszközt a felügyeletből, de a **Törlés** opcióval eltávolíthatók az Azure Portalról egy olyan eszköz rekordjai, amelyikről tudja, hogy nem érhető el, és nem valószínű, hogy újra kommunikálni fog az Azure-ral.
 
-1.  Jelentkezzen be az [Azure Portalon az Azure Active Directoryba](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Bejelentkezhet az [Office 365 portálon](https://portal.office.com) is, majd válassza a **Rendszergazda** &gt; **Azure AD** elemet a lap bal oldalán található hivatkozást használva.
+1.  Jelentkezzen be az [Azure Portalon az Azure Active Directoryba](http://aka.ms/accessaad) a rendszergazdai hitelesítő adataival. Azt is teheti, hogy bejelentkezik az [Office 365 portálon](https://portal.office.com), majd a **Felügyeleti központok** &gt; **Azure AD** lehetőséget választja a lap bal oldalán található hivatkozást használva.
 3.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha díjköteles fiókkal rendelkezik, ennek elvégzéséhez nem szükséges hitelkártya vagy díjrendezés (kattintson a **Register your free Azure Active Directory** előfizetési hivatkozásra).
-4.  Válassza az **Active Directory** lehetőséget, és jelölje ki a szervezetét.
+4.  Válassza az **Azure Active Directory** lehetőséget, és jelölje ki a szervezetet.
 5.  Válassza a **Felhasználók** fület.
 6.  Jelölje ki azokat a felhasználókat, akiknek az eszközeit törölni szeretné.
 7.  Válassza az **Eszközök** lehetőséget.

@@ -1,10 +1,10 @@
 ---
-title: "Regisztrációs korlátozások beállítása az Intune-ban"
-titlesuffix: Azure portal
-description: "Regisztráció korlátozása platform alapján és eszközregisztrálási korlát beállítása az Intune-ban. \""
+title: "Csoportok hozzáadása a felhasználók és eszközök rendszerezéséhez"
+titlesuffix: Microsoft Intune
+description: "Csoportokat adhat hozzá azzal a céllal, hogy a felhasználókat és az eszközöket földrajzi hely, részleg vagy hardvertulajdonságok alapján rendszerezhesse."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e55a96ee1bee5b1f25a4ddf3366f3e7dc94122a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="add-groups-in-intune"></a>Csoportok felvétele az Intune-ban
+# <a name="add-groups-to-organize-users-and-devices"></a>Csoportok hozzáadása a felhasználók és eszközök rendszerezéséhez
 Az Intune Azure Active Directory- (AD-) csoportokat használ az eszközök és felhasználók kezelésére. Intune-rendszergazdaként csoportokat állíthat be a vállalat igényeinek megfelelően. Létrehozhat csoportokat a felhasználók és eszközök földrajzi hely, részleg vagy hardverjellemzők szerinti rendezéséhez. Használjon csoportokat a feladatok nagy számban való végrehajtásához. Beállíthat például szabályzatokat számos felhasználóhoz, vagy üzembe helyezhet alkalmazásokat eszközök egy csoportján.
 
 Ez a témakör elmagyarázza, hogyan vehet fel csoportokat az Intune-ban való használatra.
@@ -34,7 +34,7 @@ A következő típusú csoportokat veheti fel:
 
 Új csoport létrehozásához használja a következő lépéseket.
 1. Az Azure Portalon lépjen a **Csoportok** elemre, majd válassza az **Új csoport** lehetőséget az **Összes csoport** panelen.
-  ![Az Azure Portal képernyőképe a kijelölt Új csoport lehetőséggel](./media/groups-add-new.png)
+  ![A Felhasználók és csoportok képernyőképe az ÚJ csoport lehetőség kiválasztásával](./media/groups-add-new.png)
 2. Töltse ki az új csoporthoz a **Név** és a **Leírás** mezőt. Ezek a tulajdonságok csak a felügyeleti portálon jelennek meg, és a felhasználók nem láthatják.
 
 3. Válassza a **Tagságtípus**:
@@ -42,7 +42,7 @@ A következő típusú csoportokat veheti fel:
   - **Dinamikus felhasználó** **Dinamikus lekérdezéssel** meghatározott felhasználói csoport létrehozásához.
   - **Dinamikus eszköz** **Dinamikus lekérdezéssel** meghatározott eszközcsoport létrehozásához.
 
-  ![Képernyőkép egy Intune-csoport tulajdonságairól Név, Leírás, Tagságtípus, Office engedélyezése funkciókkal és tagokkal](./media/groups-add-properties.png)
+  ![Az Intune-csoporttulajdonságok képernyőképe](./media/groups-add-properties.png)
 
   Az Azure AD lehetővé teszi dinamikus csoportok létrehozását a tagságot meghatározó szabályok alapján. Az [attribútumalapú dinamikus csoportok létrehozásának](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) elsajátítása.
 

@@ -1,31 +1,30 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Android esetén"
-titlesuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre androidos eszközökön.”"
+title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Android esetén"
+titlesuffix: 
+description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az Android rendszerű eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban
+# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az androidos eszköz korlátozási szabályzatával használva ezen beállításokkal konfigurálhatja az eszközöket a szervezetben.
+A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Android rendszerű eszközökhöz.
 
 >[!TIP]
 >Ha a kívánt beállítások nem elérhetőek, lehet, hogy konfigurálni tudja az eszközöket egy [egyéni profil](custom-settings-android.md) használatával.
@@ -80,7 +79,7 @@ Ha az **Összetett numerikus** beállítást konfigurálja, majd azt egy 5.0-ná
 
 A korlátozott alkalmazások listájában konfigurálhatja az alábbi listák egyikét mind androidos, mind Samsung Knox Standard-alapú eszközökhöz:
 
-A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a felhasználó általi telepítését és futtatását jelenteni fogja a rendszer.
+A **Letiltott alkalmazások** listája – Azokat a nem az Intune által kezelt alkalmazásokat tartalmazza, amelyeknek a felhasználó általi telepítését és futtatását jelenti a rendszer.
 A **Jóváhagyott alkalmazások** listája – Azokat az alkalmazásokat tartalmazza, amelyeknek a telepítése engedélyezve van a felhasználók számára. A megfelelőség biztosítása érdekében a felhasználók nem telepíthetnek egyéb alkalmazásokat. Az Intune által kezelt alkalmazások automatikusan engedélyezettek.
 A tiltott alkalmazások beállításait tartalmazó eszközprofilokat hozzá kell rendelni a kívánt felhasználócsoportokhoz.
 
@@ -111,7 +110,7 @@ Az **Importálás** elemre is kattinthat a lista csv-fájlból való betöltés�
 ## <a name="allow-or-block-apps"></a>Alkalmazások engedélyezése és letiltása
 
 Ezzel a beállítással megadható azoknak az alkalmazásoknak a listája, amelyeket kizárólag Samsung Knox Standard eszközökön engedélyezett telepíteni és futtatni.
-Ezen kívül megadhatóak olyan telepített alkalmazások is, amelyek rejtve lesznek az eszköz elhasználója elől. A felhasználók ezeket az alkalmazásokat nem futtathatják.
+Ezen kívül megadhatóak olyan telepített alkalmazások is, amelyek rejtve vannak az eszköz elhasználója elől. A felhasználók ezeket az alkalmazásokat nem futtathatják.
 
 - **Telepíthető alkalmazások (csak Samsung Knox Standard esetén)**
 - **Nem indítható alkalmazások (csak Samsung Knox Standard esetén)**

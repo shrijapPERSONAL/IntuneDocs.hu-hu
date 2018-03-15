@@ -1,10 +1,10 @@
 ---
 title: "iOS aktiválási zárának megkerülése az Intune-nal"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Az Intune használata az iOS aktiválási zárjának megkerülésére a zárolt eszközök eléréséhez."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Aktiválási zár megkerülése felügyelt iOS-eszközökön az Intune-nal
 
@@ -69,11 +69,11 @@ Az eszközök aktiválási zárának megkerüléséhez azt előbb az alábbi lé
 
 Az Intune-ban az **Aktiválási zár megkerülése** távoli eszközművelet a felhasználó Apple-azonosítója és jelszava nélkül távolítja el az aktiválási zárat az iOS-eszközről. Az aktiválási zár megkerülése után az eszköz ismét bekapcsolja az aktiválási zárat a Find My iPhone alkalmazás elindulásakor. Csak akkor kerülje meg az aktiválási zárat, ha fizikailag is hozzáfér az eszközhöz.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
-5. A kezelt eszközök listáján válasszon egy felügyelt iOS-eszközt, majd válassza az **Aktiválási zár megkerülése** távoli eszközműveletet.
+4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
+5. A kezelt eszközök listáján válasszon egy felügyelt iOS-eszközt, és válassza a **...Továbbiak** lehetőséget, majd az **Aktiválási zár megkerülése** távoli eszközműveletet.
 
 ## <a name="next-steps"></a>További lépések
 

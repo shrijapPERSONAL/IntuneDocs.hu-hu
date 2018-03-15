@@ -1,6 +1,6 @@
 ---
-title: "Android-eszközök regisztrálása az Intune-ban | Microsoft Docs"
-titlesuffix: Azure portal
+title: "Androidos eszközök regisztrálása az Intune-ban"
+titlesuffix: Microsoft Intune
 description: "Útmutató az Android-eszközök Intune-ban való regisztrálásához."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -50,7 +50,7 @@ Ha a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md)
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-kötés létrehozása az Intune-ban
 
 > [!NOTE]
-> A Google- és a Microsoft-tartományok közötti interakció miatt ennél a lépésnél előfordulhat, hogy a művelet sikeres elvégzéséhez módosítania kell a böngésző beállításait.  Győződjön meg róla, hogy a „portal.azure.com” és a „play.google.com” tartomány azonos biztonsági zónában található a böngészőben.
+> A Google- és a Microsoft-tartományok közötti interakció miatt ennél a lépésnél előfordulhat, hogy a művelet sikeres elvégzéséhez módosítania kell a böngésző beállításait.  Ügyeljen rá, hogy a „portal.azure.com” és a „play.google.com” tartomány azonos biztonsági zónában legyen található a böngészőben.
 
 1. **Az Intune MDM beállítása**<br>
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
@@ -58,7 +58,7 @@ Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **M
     Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.
 
    a. Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Konfigurálás** elemet a Google Play Áruház Android for Work-webhelyének megnyitásához. A webhely egy új lapon nyílik meg a böngészőben.
-   ![Képernyőkép az Android for Work-kötés konfigurálására mutató hivatkozásról](./media/android-work-bind.png)
+   ![Az Android for Work-eszközök regisztrálási képernyője](./media/android-work-bind.png)
 
    b. **Bejelentkezés a Google-fiókba**<br>
    A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot osztják meg a vállalati rendszergazdák az alkalmazások Play for Work konzolon való felügyeletéhez és közzétételéhez. Meglévő Google-fiókot is használhat, illetve újat is létrehozhat.  A választott fiók nem lehet G Suite-tartományhoz rendelve.
@@ -79,7 +79,7 @@ Kövesse az alábbi lépéseket az Intune Céges portál alkalmazás jóváhagy�
 
 1.  Keresse meg a Céges portál alkalmazást a [felügyelt Google Play Áruházban](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Jelentkezzen be a felügyelt Google Play Áruházba ugyanazzal a Google-fiókkal, amelyet az Android for Work-kötés konfigurálásához használt.
-3.  Kattintson a **Jóváhagyás** lehetőségre.  Ekkor megnyílik egy új párbeszédpanel.
+3.  Kattintson a **Jóváhagyás** lehetőségre. Ekkor megnyílik egy párbeszédpanel.
 4.  Tekintse át a párbeszédpanelen látható engedélyeket, majd kattintson a **Jóváhagyás** lehetőségre. Ezeknek az engedélyeknek a jóváhagyására azért van szükség, hogy a Céges portál alkalmazás kezelni tudja az eszközön lévő munkahelyi profilt.
 5.  Válassza a **Jóváhagyás fenntartása, amikor az alkalmazás új engedélyeket kér** lehetőséget, majd kattintson a **Mentés** gombra.
 

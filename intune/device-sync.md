@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Az eszközök szinkronizálása az Intune-nal a legfrissebb szabályzatok és műveletek beolvasásához
 
@@ -37,11 +37,11 @@ A **Szinkronizálás** eszközművelet kikényszeríti a választott eszköz azo
 
 ## <a name="how-to-sync-a-device"></a>Eszköz szinkronizálása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. Az **Eszközök és csoportok** panelen válassza a **Minden eszköz** lehetőséget.
-5. A felügyelt eszközök listájából válasszon ki egy eszközt, majd válassza a **Szinkronizálás** távoli műveletet.
+4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
+5. A felügyelt eszközök listájából válasszon ki egy eszközt, és válassza a **...Továbbiak** lehetőséget, majd a **Szinkronizálás** távoli műveletet.
 7. A művelet megerősítéséhez válassza az **Igen** lehetőséget.
 
 

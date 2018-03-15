@@ -1,10 +1,11 @@
 ---
-title: "Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal"
-description: "Az ebben a témakörben leírtak segítenek eldönteni, mikor használja az Alkalmazásburkoló eszközt és az App SDK-t arra, hogy engedélyezze az egyéni, üzletági alkalmazások számára a mobilalkalmazás-kezelési szabályzatok használatát."
+title: "Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára"
+titlesuffix: Microsoft Intune
+description: "Az alkalmazásburkoló eszközzel és az App SDK-val az egyéni üzletági alkalmazásai is használhatnak alkalmazásvédelmi szabályzatokat a Microsoft Intune-ban."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
@@ -102,6 +103,7 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 |Célzott alkalmazáskonfiguráció |X||
 |Többszörös identitás támogatása|X||
 |Testreszabható stílus |X|||
+
 ## <a name="next-steps"></a>További lépések
 
 A következő témakörökből tudhat meg többet az alkalmazásvédelmi szabályzatokról és az Intune-ról:

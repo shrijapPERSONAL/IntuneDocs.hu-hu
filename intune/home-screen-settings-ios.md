@@ -1,45 +1,43 @@
 ---
-title: "Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz"
+title: "Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz"
 titlesuffix: Azure portal
-description: "Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz.”"
+description: "Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz iOS-eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune kezdőképernyő-elrendezési beállítások iOS-eszközökhöz
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Használja ezeket a beállításokat az alkalmazások és mappák konfigurálására az iOS dokkolási és kezdőképernyőjén.
+Ezekkel a beállításokkal konfigurálhatja az alkalmazások és mappák elrendezését az iOS-eszközök kezdőképernyőjén és a Dockban.
 
-Az iOS-eszközöknek, amelyekhez a profilt társítja, felügyelt módban kell lenniük, és az iOS legalább 9.3-as verzióját kell futtatniuk.
+A hozzárendelt profillal rendelkező iOS-eszközöknek felügyelt módban kell lenniük, és az iOS legalább 9.3-as verzióját kell futtatniuk.
 
-1. Az **Eszközfunkciók** panelen válassza a **Kezdőképernyő-elrendezés (csak felügyelt)** lehetőséget.
-2. A **Kezdőképernyő-elrendezés (csak felügyelt)** panelen válassza ki, hogy a **Dock** vagy a **Lapok** elrendezését kívánja konfigurálni.
+1. Az **Eszközkonfiguráció** terület **Profil létrehozása**, **Eszközfunkciók** lappján válassza a**Kezdőképernyő-elrendezés (csak felügyelt)** lehetőséget.
+2. A **Kezdőképernyő-elrendezés (csak felügyelt)** lapon válassza ki, hogy a **Dock** vagy a **Lapok** elrendezését kívánja-e konfigurálni.
 
 ## <a name="add-items-to-the-dock"></a>Elemek hozzáadása a Dockhoz
 
-A **Dock** panelen legfeljebb 6 elemet vagy mappát adhat hozzá az iOS képernyőn elhelyezkedő Dockhoz. Sok eszköz azonban ennél kevesebb elemet enged meg, az iPhone-eszközök például csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
+A **Dock** lapon legfeljebb 6 elemet vagy mappát adhat hozzá az iOS-képernyőn elhelyezkedő Dockhoz. Sok eszköz azonban ennél kevesebb elemet enged meg, az iPhone-eszközök például csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
 
 1. A **Hozzáadás** választásával adhat elemeket a Dockhoz.
-2. A **Sor hozzáadása** panelen válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni.
+2. A **Sor hozzáadása** lapon válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván-e hozzáadni.
 3. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a Dockban.
-4. Folytassa az elemek hozzáadását. Amikor elkészült, kattintson minden panelen az **OK** gombra, míg vissza nem tér a **Profil létrehozása** panelre. Válassza a **Létrehozás** lehetőséget.
+4. Folytassa az elemek hozzáadását. Ha elkészült, kattintson minden lapon az **OK** gombra, míg vissza nem tér a **Profil létrehozása** lapra. Válassza a **Létrehozás** lehetőséget.
 
 >[!TIP]
 > A kezdőképernyő és a lapok listáin húzással rendezheti át az elemek sorrendjét. 
@@ -48,19 +46,19 @@ A **Dock** panelen legfeljebb 6 elemet vagy mappát adhat hozzá az iOS képerny
 
 Ebben a példában úgy konfiguráltuk a Dockot, hogy csak a Safari, Mail és Stock alkalmazások jelenjenek meg rajta. A következő ábrán a Mail alkalmazás ki van jelölve, hogy megjelenjenek a tulajdonságai:
 
-![Példa iOS Dock beállításokra](http://i.imgur.com/FfFiUcP.png)
+![Példa iOS Dock beállításokra](./media/FfFiUcP.png)
 
 Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbi képernyőképen láthatóhoz hasonló Dock lesz:
 
-![Példa iOS Dock elrendezésére iPhone-eszközön](http://i.imgur.com/bAgCe8F.png)
+![Példa iOS Dock elrendezésére iPhone-eszközön](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Kezdőképernyő-lapok hozzáadása
 
 Adja meg a kezdőképernyőn megjeleníteni kívánt lapokat és az egyes lapokon megjelenő alkalmazásokat. Az egyes lapokhoz adott alkalmazások balról jobbra jelennek meg, a listában megadott sorrendben. Ha több alkalmazást ad hozzá, mint amennyi a lapon elfér, akkor azok egy következő lapra kerülnek át.
 
 
-1. A **Lapok** panelen válassza a **Hozzáadás** lehetőséget.
-2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+1. A **Lapok** lapon válassza a **Hozzáadás** lehetőséget.
+2. A **Sor hozzáadása** lapon írjon be egy **Lapnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Válassza a **Hozzáadás** lehetőséget, majd válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni a laphoz.
 4. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a lapon.
 
@@ -68,11 +66,11 @@ Adja meg a kezdőképernyőn megjeleníteni kívánt lapokat és az egyes lapoko
 
 Ebben a példában egy **Contoso** elnevezésű új lapot konfiguráltunk. A lapon csak a Barátok keresése és a Beállítások alkalmazás látható. A következő ábrán a Beállítások alkalmazás ki van jelölve, hogy megjelenjenek a tulajdonságai:
 
-![Példa iOS-kezdőképernyő beállítására](http://i.imgur.com/Jc2OxyX.png)
+![Példa iOS-kezdőképernyő beállítására](./media/Jc2OxyX.png)
 
 Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alábbi képernyőképen láthatóhoz hasonló lap lesz:
 
-![iOS-eszköz módosított kezdőképernyővel](http://i.imgur.com/Bd37PHa.png)
+![iOS-eszköz módosított kezdőképernyővel](./media/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Alkalmazás hozzáadása a listához
 
@@ -87,7 +85,7 @@ Az egyes lapokhoz egy mappában hozzáadott alkalmazások balról jobbra jelenne
 
 1. Írja be a **Mappanevet**. Ez a név jelenik meg az eszközön a felhasználók számára.
 2. A **Hozzáadás** választásával hozzon létre egy lapot a mappában. Legfeljebb 20 lapot adhat hozzá.
-3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+3. A **Sor hozzáadása** lapon írjon be egy nevet a laphoz. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. Útmutatást kaphat az **Alkalmazás hozzáadása a listához** című szakaszban.
 3. Válassza a **Hozzáadás** lehetőséget. Legfeljebb 60 elemet adhat hozzá.

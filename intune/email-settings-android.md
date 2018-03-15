@@ -1,27 +1,25 @@
 ---
-title: "Android és Android for Work rendszerű eszközök e-mail-beállításai az Intune-ban"
-titleSuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az e-mail-kapcsolatok Android-eszközökön való konfigurálásához használható Intune-beállításokról."
+title: "Android és Android for Work rendszerű eszközök e-mail-beállításai a Microsoft Intune-ban"
+titleSuffix: 
+description: "Útmutató az e-mail-beállítások Android és Android for Work rendszerű eszközökön való konfigurálásához használható Microsoft Intune-beállításokhoz."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Android-eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android és Android for Work rendszerű eszközök e-mail-profilokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

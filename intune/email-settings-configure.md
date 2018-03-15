@@ -1,25 +1,23 @@
 ---
-title: "E-mail-beállítások konfigurálása az Intune-ban"
-titleSuffix: Azure portal
-description: "A cikk bemutatja, hogyan konfigurálható az Intune arra, hogy a felügyelt eszközöket csatlakoztassa a céges levelezéshez."
+title: "A Microsoft Intune e-mail-beállításainak konfigurálása"
+titleSuffix: 
+description: "A cikk azt mutatja be, hogyan konfigurálható a Microsoft Intune arra, hogy a felügyelt eszközöket csatlakoztassa a céges levelezéshez."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Az e-mail-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -37,16 +35,16 @@ A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram
 - Windows Phone 8.1 és újabb verziók
 - Windows 10 (asztali rendszer) és Windows 10 Mobile
 
-A témakörben található információk alapján megismerheti az e-mail-profilok konfigurálásának alapjait, és az egyes platformokra vonatkozó további témakörökben bővebben is olvashat az eszközök tulajdonságairól.
+A cikkben található információk alapján megismerheti az e-mail-profilok konfigurálásának alapjait, és az egyes platformokra vonatkozó további témakörökben bővebben is olvashat az eszközök tulajdonságairól.
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Az e-mail-beállításokat tartalmazó eszközprofil létrehozása
 
 1. Jelentkezzen be az Azure Portalra.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
-3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** panelen írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
+3. Az **Intune** lapon válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** lapon válassza a **Kezelés** > **Profilok** lehetőséget.
+3. A profilok lapján válassza a **Profil létrehozása** lehetőséget.
+4. A **Profil létrehozása** lapon írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné az e-mail-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet e-mail-eszközbeállításokat megadni:
     - **Android** (csak Samsung Android Knox Standard esetén)
     - **Android for Work**
@@ -59,16 +57,16 @@ A témakörben található információk alapján megismerheti az e-mail-profilo
     - [iOS-beállítások](email-settings-ios.md)
     - [Windows Phone 8.1-beállítások](email-settings-windows-phone-8-1.md)
     - [Windows 10-beállítások](email-settings-windows-10.md)
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
+8. Ha elkészült, lépjen vissza a **Profil létrehozása** lapra, és válassza a **Létrehozás** elemet.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
+Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó lapon.
 Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
 
 ## <a name="further-information"></a>További információ
 
 ### <a name="remove-an-email-profile"></a>E-mail-profil eltávolítása
 
-Ha egy eszközről törölni szeretne egy e-mail-profilt, módosítsa a hozzárendelését, és távolítson el minden olyan csoportot, amelynek tagja az eszköz. Megjegyzendő, hogy ha ez az egy e-mail-profil van az eszközön, nem lehet ezzel a módszerrel eltávolítani.
+Ha egy eszközről törölni szeretne egy e-mail-profilt, módosítsa a hozzárendelését, és távolítson el minden olyan csoportot, amelynek tagja az eszköz. Ha ez az egyetlen e-mail-profil az eszközön, nem lehet ezzel a módszerrel eltávolítani.
 
 ### <a name="securing-email-access"></a>Az e-mail-elérés védelme
 

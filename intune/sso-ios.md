@@ -1,25 +1,25 @@
 ---
-title: "Az Intune konfigurálása egyszeri bejelentkezéshez iOS-es eszközökön"
-titlesuffix: Azure portal
-description: "Ismerje meg, hogyan konfigurálhatja az Intune-t egyszeri bejelentkezéshez iOS-eszközökön."
+title: "Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez"
+titlesuffix: 
+description: "Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása egyszeri bejelentkezéshez iOS-es eszközökön
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Az iOS-eszköz egyszeri bejelentkezési képességeinek kihasználásához az al
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Profilok** lehetőséget.
-3. A Profilok panelen válassza a **Profil létrehozása** lehetőséget, adjon meg egy nevet és egy leírást, majd adja meg a következő beállításokat:
+3. Az **Intune** lapon válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** lapon válassza a **Profilok** lehetőséget.
+3. A Profilok lapon válassza a **Profil létrehozása** lehetőséget, adjon meg egy nevet és egy leírást, majd adja meg a következő beállításokat:
    - **Platform**: Válassza az **iOS** lehetőséget. 
    - **Profil típusa**: Válassza az **Eszközfunkciók** lehetőséget.
-4. Az **Eszközfunkciók** panelen válassza az **Egyszeri bejelentkezés** lehetőséget.
+4. Az **Eszközfunkciók** lapon válassza az **Egyszeri bejelentkezés** lehetőséget.
 
-   ![Egyszeri bejelentkezés panel](./media/sso-blade.png)
+   ![Egyszeri bejelentkezés lap](./media/sso-blade.png)
 
-2. Az **Egyszeri bejelentkezés** panelen lévő mezők kitöltéséhez használja az alábbi összefoglaló táblázatot. A táblázatot követő szakaszokban további információt kaphat az egyes mezőkről.
+2. Az **Egyszeri bejelentkezés** oldalon lévő mezők kitöltéséhez használja az alábbi összefoglaló táblázatot. A táblázatot követő szakaszokban további információt kaphat az egyes mezőkről.
    
    |Mező  |Megjegyzések|
    |---------|---------|
@@ -82,7 +82,7 @@ Ha egy felhasználó csatlakozik ezen webhelyek bármelyikéhez, az iOS-eszköz 
 > [!NOTE]
 > Ezeknek az URL-címeknek érvényes formátumú teljes tartományneveknek kell lenniük. Az Apple a következő formátumot írja elő: `http://<yourURL.domain>`
 
-Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. Az eszköz egyszerű, karakterlánc-alapú egyeztetést végez, ezért a `http://www.contoso.com/` URL-előtag nem felel meg a `http://www.contoso.com:80/` címnek. iOS 9.0-s vagy újabb rendszer esetén azonban használhat egyetlen * helyettesítő karaktert az összes egyező érték megadásához. Például a `http://*.contoso.com/` minta illeszkedik mind a `http://store.contoso.com/`, mind pedig a `http://www.contoso.com` címre.
+Az URL-egyeztetési mintáknak `http://` vagy `https://` előtaggal kell kezdődniük. Az eszköz egyszerű, karakterlánc-alapú egyeztetést végez, ezért a `http://www.contoso.com/` URL-előtag nem felel meg a `http://www.contoso.com:80/` címnek. iOS 9.0-s vagy újabb rendszer esetén azonban használhat egyetlen \* helyettesítő karaktert az összes egyező érték megadásához. Például a `http://*.contoso.com/` minta illeszkedik mind a `http://store.contoso.com/`, mind pedig a `http://www.contoso.com` címre.
 A `http://.com` és a `https://.com` minta pedig illeszkedik az összes HTTP, illetve HTTPS előtagú URL-címre.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Az egyszeri bejelentkezést használó alkalmazások

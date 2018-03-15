@@ -3,10 +3,10 @@ title: "A Windows Information Protection (WIP) alkalmazásvédelmi szabályzatai
 titlesuffix: Azure portal
 description: "A WIP alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>A Windows Information Protection (WIP) alkalmazásvédelmi szabályzatainak létrehozása és bevezetése az Intune használatával
 
@@ -33,7 +33,7 @@ Az Intune 1704-es kiadásától kezdve az eszközök regisztrálása nélkül ha
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Az engedélyezett és mentesített alkalmazások listája
 
--   **Engedélyezett alkalmazások:** ezeknek meg kell felelniük az adott szabályzatnak.
+-   **Engedélyezett alkalmazások:** ezeknek az alkalmazásoknak meg kell felelniük az adott szabályzatnak.
 
 -   **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a céges adatokhoz.
 
@@ -49,7 +49,7 @@ Az Intune 1704-es kiadásától kezdve az eszközök regisztrálása nélkül ha
 
 A WIP alkalmazásvédelmi szabályzatainak létrehozása előtt be kell állítania a MAM-szolgáltatót. További információk a [MAM-szolgáltató konfigurálásáról az Intune segítségével](app-protection-policies-configure-windows-10.md).
 
-Emellett rendelkeznie kell a következőkkel:
+Emellett rendelkeznie kell a következő licenccel és frissítéssel:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) licenc.
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ Emellett rendelkeznie kell a következőkkel:
 
 ## <a name="to-add-a-wip-policy"></a>WIP-szabályzat hozzáadása
 
-Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatával hozhat létre WIP-specifikus szabályzatokat. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatával hozhat létre WIP-specifikus szabályzatokat. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  Nyissa meg az **Intune mobilalkalmazás-kezelési irányítópultját**, majd válassza a **Minden beállítás** > **Alkalmazásszabályzat** lehetőséget.
 
@@ -80,7 +80,7 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 
 1.  Az **Alkalmazásszabályzat** panelen válassza ki a kívánt szabályzat nevét, majd a **Házirend hozzáadása** panelen válassza az **Engedélyezett alkalmazások** lehetőséget. Megnyílik az **Engedélyezett alkalmazások** panel, ahol megjelenik azoknak az alkalmazásoknak a listája, amelyekre ez a szabályzat vonatkozik.
 
-2.  Az **Engedélyezett alkalmazások** panelen válassza az **Alkalmazások hozzáadása** lehetőséget. Megnyílik az **Alkalmazások hozzáadása** panel, amelyen láthatja a listában található összes alkalmazást.
+2.  Az **Engedélyezett alkalmazások** panelen válassza az **Alkalmazások hozzáadása** lehetőséget. Az **Alkalmazások hozzáadása** panelen láthatja a listában található összes alkalmazást.
 
 3.  Válassza ki azokat az alkalmazásokat, amelyeknek hozzáférést kíván adni a céges adatokhoz, majd kattintson az **OK** gombra. Az **Engedélyezett alkalmazások** panel frissül, és kibővül a kiválasztott alkalmazásokkal.
 
@@ -92,7 +92,7 @@ Miután cégénél beállította az Intune-t, az [Azure Portal](https://docs.mic
 
 2.  Az **Engedélyezett alkalmazások** panelen válassza az **Alkalmazások hozzáadása** lehetőséget.
 
-3.  Az **Alkalmazások hozzáadása** panelen válassza az **Áruházbeli alkalmazások** lehetőséget a legördülő listából. A panelen szövegbeviteli mezők jelennek meg, amelyekkel megadhatja az alkalmazás **közzétevőjét** és az alkalmazás **nevét**.
+3.  Az **Alkalmazások hozzáadása** panelen válassza az **Áruházbeli alkalmazások** lehetőséget a legördülő listából. Szövegbeviteli mezők jelennek meg, amelyekkel megadhatja az alkalmazás **közzétevőjét** és az alkalmazás **nevét**.
 
 4.  Írja be az alkalmazás és a közzétevő nevét, majd kattintson az **OK** gombra.
 
@@ -153,7 +153,7 @@ A WIP kikapcsolása után a rendszer megkísérli visszafejteni a WIP-címkével
 
     ![A tanulási mód képernyőképe](./media/learning-mode-sc1.png)
 
-1.  Válassza a **Mentés** elemet.
+2.  Válassza a **Mentés** elemet.
 
 ### <a name="use-wip-learning"></a>A WIP Learning használata
 
@@ -164,6 +164,19 @@ A WIP kikapcsolása után a rendszer megkísérli visszafejteni a WIP-címkével
 4. Válassza az **Alkalmazásvédelem állapota** > **Jelentések** > **Windows Information Protection Learning** elemet.  
  
     A WIP Learning naplójelentésében szereplő alkalmazásokat ezután exportálhatja az alkalmazásvédelmi szabályzatokba.
+
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Titkosított elemek keresésének engedélyezése a Windows Search szolgáltatás indexelőprogramjában
+Engedélyezi vagy tiltja az elemek indexelését. Ez a Windows Search szolgáltatás indexelőprogramjára vonatkozó kapcsoló határozza meg, hogy indexelendők-e a titkosított, például a Windows Információvédelem (WIP) által védett fájlok.
+
+Ez az alkalmazásvédelmi szabályzat a Windows Információvédelem szabályzatának **Speciális beállításai** között található. Az alkalmazásvédelmi szabályzatot a *Windows 10* platformhoz kell beállítani, az alkalmazásszabályzat **Regisztrációs állapot** értékeként pedig a **Regisztrációval** értéket kell megadni. 
+
+A szabályzat engedélyezésekor a WIP által védett elemek indexelve lesznek, a velük kapcsolatos metaadatok pedig titkosítatlan helyen lesznek tárolva. A metaadatok között szerepel egyebek között a fájl elérési útja és módosításának dátuma.
+
+A szabályzat tiltásakor a WIP által védett elemek nem lesznek indexelve és nem jelennek meg a Cortana vagy a fájlkezelő eredményei között. A Fényképek és a Groove alkalmazás teljesítménye csökkenhet, ha nagy mennyiségű WIP-védelemmel ellátott médiafájl található az eszközön.
+
+## <a name="add-encrypted-file-extensions"></a>Titkosított fájlok kiterjesztéseinek megadása
+
+A **Titkosított elemek keresésének engedélyezése a Windows Search szolgáltatás indexelőprogramjában** beállítás mellett egy fájlkiterjesztésekből álló lista is megadható. Az ilyen kiterjesztésű fájlok titkosítva lesznek, ha Server Message Block (SMB) megosztásról másolják őket a vállalatnak a hálózati helyek listája alapján meghatározott területén belül. Ha ez a szabályzat nincs beállítva, akkor a meglévő automatikus titkosítás lesz alkalmazva. Ha ez a szabályzat be van állítva, akkor csak a listában szereplő kiterjesztésű fájlok lesznek titkosítva.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP alkalmazásvédelmi szabályzat bevezetése
 
@@ -178,4 +191,8 @@ A WIP alkalmazásvédelmi szabályzat létrehozása után a MAM használatával 
 
     A **Felhasználói csoport hozzáadása** panelen megjelenik az Azure Active Directoryban elérhető összes felhasználói csoport listája.
 
-1.  Válassza ki azt a csoportot, amelyre alkalmazni szeretné a szabályzatot, majd válassza a **Kiválasztás** lehetőséget a szabályzat üzembe helyezéséhez.
+2.  Válassza ki azt a csoportot, amelyre alkalmazni szeretné a szabályzatot, majd válassza a **Kiválasztás** lehetőséget a szabályzat üzembe helyezéséhez.
+
+## <a name="next-steps"></a>További lépések
+
+- További információk a Windows információvédelemről: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 

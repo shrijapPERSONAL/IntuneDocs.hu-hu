@@ -1,32 +1,32 @@
 ---
-title: "A Vállalati Windows Hello használata"
-titleSuffix: Azure portal
+title: "A Vállalati Windows Hello integrálása a Microsoft Intune-nal"
+titleSuffix: 
 description: "Útmutató szabályzatok létrehozásához a Vállalati Windows Hello felügyelt eszközön való használatához.”"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>A Vállalati Windows Hello használata
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>A Vállalati Windows Hello integrálása a Microsoft Intune-nal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune integrálható a Vállalati Windows Hello (korábban Microsoft Passport for Work) nevű alternatív bejelentkezési módszerrel, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett.
+A Vállalati Windows Hello (korábbi nevén Microsoft Passport for Work) integrálható a Microsoft Intune-nal.
 
-A Vállalati Hello lehetővé teszi jelszó helyett *felhasználói kézmozdulatok* használatát a bejelentkezéshez. A felhasználói hitelesítési mód lehet egy egyszerű PIN-kód, biometrikus hitelesítés, mint például a Windows Hello, vagy egy külső eszköz, például egy ujjlenyomat-olvasó.
+ A Vállalati Windows Hello egy alternatív bejelentkezési módszer, amely Active Directoryt vagy egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett. Ez lehetővé teszi jelszó helyett *felhasználói kézmozdulatok* használatát a bejelentkezéshez. A felhasználói hitelesítési mód lehet egy egyszerű PIN-kód, biometrikus hitelesítés, mint például a Windows Hello, vagy egy külső eszköz, például egy ujjlenyomat-olvasó.
 
 Az Intune kétféleképpen integrálható a Vállalati Hello szolgáltatással:
 
@@ -50,17 +50,17 @@ A házirendek között felmerülő esetleges ütközések feloldásához és a P
 
 1.  Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
-2.  Az Intune panelen válassza az **Eszközök beléptetése**, majd a **Windows-alapú regisztráció** > **Vállalati Windows Hello** lehetőséget.
+2.  Az Intune lapon válassza az **Eszközök beléptetése**, majd a **Windows-alapú regisztráció** > **Vállalati Windows Hello** lehetőséget.
 
-3.  A megnyíló panelen válassza az **Alapértelmezett** beállításokat.
+3.  A megnyíló lapon válassza az **Alapértelmezett** beállításokat.
 
-4.  A **Minden felhasználó** panelen kattintson a **Tulajdonságok** lehetőségre, majd adjon meg egy **Nevet** és **Leírást** a Vállalati Windows Hello beállításai számára.
+4.  A **Minden felhasználó** lapon kattintson a **Tulajdonságok** lehetőségre, majd adjon meg egy **Nevet** és **Leírást** a Vállalati Windows Hello beállításai számára.
 
-5. A **Minden felhasználó** panelen kattintson a **Beállítások** lehetőségre, majd a **Vállalati Windows Hello konfigurálása** területen válasszon az alábbiak közül:
+5. A **Minden felhasználó** lapon kattintson a **Beállítások** lehetőségre, majd a **Vállalati Windows Hello konfigurálása** területen válasszon az alábbiak közül:
 
     - **Letiltva**. Ha nem szeretné használni a Vállalati Windows Hello szolgáltatást, válassza ezt a beállítást. Ezt követően a képernyőn a többi beállítás nem lesz elérhető.
     - **Engedélyezve**. Vállalati Windows Hello beállításainak konfigurálásához válassza ezt a beállítást.
-    - **Nincs konfigurálva**. Ha nem szeretné, hogy az Intune vezérelje a Vállalati Windows Hello beállításait, válassza ezt a beállítást. A Windows 10-eszközökön meglévő Vállalati Windows Hello-beállítások nem módosulnak. A panelen a többi beállítás nem elérhető.
+    - **Nincs konfigurálva**. Ha nem szeretné, hogy az Intune vezérelje a Vállalati Windows Hello beállításait, válassza ezt a beállítást. A Windows 10-eszközökön meglévő Vállalati Windows Hello-beállítások nem módosulnak. A lapon a többi beállítás nem elérhető.
 
 6.  Ha az előző lépésben az **Engedélyezve** lehetőséget választotta, akkor konfigurálja a szükséges beállításokat. A rendszer az összes regisztrált Windows 10 és Windows 10 Mobile rendszerű eszközre alkalmazni fogja őket.
 

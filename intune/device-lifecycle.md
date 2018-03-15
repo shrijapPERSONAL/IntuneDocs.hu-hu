@@ -1,30 +1,28 @@
 ---
-title: "Az MDM-életciklus áttekintése"
+title: "A Microsoft Intune mobileszköz-kezelési életciklusának áttekintése"
 description: "Ismerje meg, hogyan segíti az Intune az eszközök kezelését a teljes életciklusuk alatt a regisztrációtól a beállításon át a végső kivonásig."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>A mobileszköz-kezelés (MDM) életciklusának áttekintése
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>A Microsoft Intune mobileszköz-kezelési életciklusának áttekintése
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Valamennyi Ön által kezelt eszköz rendelkezik úgynevezett *életciklussal*. Az Intune segít ennek az életciklusnak a kezelésében a regisztrációtól a beállításon és védelmen át egészen az eszköz kivonásáig, amikor már nincs rá szükség:
+Valamennyi Ön által kezelt eszköz rendelkezik *életciklussal*. Az Intune segít ennek az életciklusnak a kezelésében a regisztrációtól a beállításon és védelmen át egészen az eszköz kivonásáig, amikor már nincs rá szükség.
 
 ![Az eszközök életciklusa](./media/device-lifecycle.png "Az eszközök életciklusa az Intune-ban")
 
