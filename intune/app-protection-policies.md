@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -37,14 +37,14 @@ Az alkalmazásvédelmi szabályzatok alkalmazhatók a felügyelt és az Intune �
 Amennyiben az MAM által támogatott alkalmazások listáját keresi, lásd az [MAM alkalmazáslistáját](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
-1.  A **Mobilalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket. 
-2. Válassza a **Szabályzat hozzáadása** elemet. 
+1.  A **Mobilalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket.
+2. Válassza a **Szabályzat hozzáadása** elemet.
 
   ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/app-protection-add-policy.png)
 
 3.  Írja be a szabályzat nevét, adjon meg egy rövid leírást, és válassza ki a szabályzat platformtípusát. Igény esetén platformonként egynél több szabályzatot is beállíthat.
 
-4.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzattal való társításra. 
+4.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzattal való társításra.
 5. Az alkalmazások kijelölése után a mentéshez válassza a **Kiválasztás** lehetőséget.
 
     > [!IMPORTANT]
@@ -59,7 +59,7 @@ Amennyiben az MAM által támogatott alkalmazások listáját keresi, lásd az [
     > A szabályzat beállításai csak akkor lépnek érvénybe, ha munkahelyi környezetben használják az alkalmazásokat. Ha a végfelhasználók az alkalmazást személyes célra használják, nem vonatkoznak rájuk a ezek szabályzatok.
 
 7.  A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
-8. A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre. 
+8. A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre.
 9. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
 
 Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a felhasználók számára ekkor még nincs telepítve. A szabályzatok életbe léptetéséről a [Szabályzat telepítése a felhasználók számára](app-protection-policies.md#deploy-a-policy-to-users) című szakasz nyújt tájékoztatást.
@@ -74,7 +74,7 @@ Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a f
    ![Képernyőkép a Hozzárendelések panelről a Belefoglalandó csoportok kijelölése menüpont kiemelésével](./media/app-protection-policy-add-users.png)
 
 2.  A **Felhasználói csoport hozzáadása** panelen megjelenik a felhasználói csoportok listája. Ezen a listán az **Azure Active Directory**összes biztonsági csoportja szerepel. Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
-  
+
     ![Képernyőkép: Az Azure Active Directory-felhasználók listája a Felhasználói csoportok hozzáadása panelen](./media/azure-ad-user-group-list.png)
 
 A szabályzat ezzel létrejött, és telepítve lett a felhasználók számára.

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4d91d00995d821b14b3b2a04681b4c57258a7c0
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -40,7 +40,8 @@ A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Int
 
 ## <a name="set-mdm-authority-to-intune"></a>Az Intune beállítása MDM-szolgáltatóként
 
-1. Az [Azure Portalon](https://portal.azure.com) válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. A **Mobileszköz-kezelő szolgáltató** beállítás megnyitásához válassza a narancssárga szalagcímet.
 3. A **Mobileszköz-kezelő szolgáltató** szakaszban válassza ki az alábbiak közül a kívánt MDM-szolgáltatót:
   - **Intune MDM-szolgáltató**
