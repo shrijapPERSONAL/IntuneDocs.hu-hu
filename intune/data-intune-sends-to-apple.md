@@ -1,6 +1,6 @@
 ---
 title: "Az Intune által az Apple-nek küldött adatok"
-titlesuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "Az Intune által az Apple-nek küldött adatok listája."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d23fdce58b9ef35fe292ca6570904320e0922f16
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: c247cfbd715368f65dfb1ba2ce8b5e88a491d302
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="data-intune-sends-to-apple"></a>Az Intune által az Apple-nek küldött adatok
 
@@ -29,7 +29,7 @@ Ha a következő Apple-szolgáltatások bármelyike engedélyezve van egy eszkö
 
 - [Apple Készülékregisztrációs program (DEP)](device-enrollment-program-enroll-ios.md)
 - [Apple MDM Push-tanúsítvány (APNS)](apple-mdm-push-certificate-get.md)
-- [Apple School Manager (ASM)](https://docs.microsoft.com/en-us/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync.md)
+- [Apple School Manager (ASM)](https://docs.microsoft.com/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync)
 - [Apple Volume Purchase Program (VPP)](vpp-apps-ios.md)
 
 Mielőtt a Microsoft Intune létrehozhatná a kapcsolatot, Önnek létre kell hoznia egy Apple-fiókot minden Apple-szolgáltatáshoz.
