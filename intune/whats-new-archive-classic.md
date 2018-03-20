@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>A klasszikus Intune-portál újdonságai – korábbi hónapok
 
@@ -281,7 +281,7 @@ A következő cikkek frissültek:
 
 * [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)
 * [iOS-alkalmazások mobilalkalmazás-felügyeletre való előkészítése az alkalmazásburkoló eszközzel](app-wrapper-prepare-ios.md)
-* [Bevezetés a Microsoft Intune App SDK használatába](/app-sdk-get-started.md)
+* [Bevezetés a Microsoft Intune App SDK használatába](app-sdk-get-started.md)
 * [iOS-hoz készült Intune App SDK – fejlesztői útmutató](app-sdk-ios.md)
 
 A következő cikkek most jelentek meg a dokumentumtárban:
