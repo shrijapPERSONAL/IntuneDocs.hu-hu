@@ -1,29 +1,29 @@
 ---
-title: "Megosztott eszközök Intune-beli konfigurációs beállításai iOS-re"
-titlesuffix: Azure portal
-description: "Ismertető az iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható beállításokról."
+title: "Megosztott eszközök Microsoft Intune-beli konfigurációs beállításai iOS-re"
+titlesuffix: 
+description: "Ismertető az iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható Microsoft Intune-beállításokról."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5473a280551ab74f781a2de682d7e5922491e98
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9147eaff2bd366dbfd86c6422e0f7a29f685db62
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Közös használatú eszköz konfigurációs beállításai üzenetek megjelenítéséhez az iOS-eszköz zárolási képernyőjén
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Ez a cikk ismerteti az iOS-eszköz zárolási képernyőjén információ megjelenítéséhez használható Microsoft Intune-beállításokat.
 
 A közös használatú eszköz konfigurációs beállításai lehetővé teszik választható szöveg megjelenítését a bejelentkezési ablakban és a zárolási képernyőn. Megadhat például „Elvesztés esetén küldje vissza” üzenetet és eszközcímkeadatokat. 
 
@@ -32,6 +32,7 @@ A közös használatú eszköz konfigurációs beállításai lehetővé teszik 
 
 ## <a name="create-shared-device-settings"></a>Közös használatú eszköz beállításainak létrehozása
 
+1. Az [Intune az Azure Portalon](https://portal.azure.com) felületről lépjen az eszközkonfigurációs terület [**Eszközfunkciók** részére](device-features-configure.md). 
 1. Az **Eszközfunkciók** panelen válassza a **Megosztott eszköz konfigurációja (csak felügyelt eszközökön)** lehetőséget.
 2. A **Megosztott eszköz konfigurációja (csak felügyelt eszközökön)** panelen konfigurálja a következőket:
     - **Eszközcímke-információ** – Adjon meg információkat az eszköz eszközcímkéjéről. Például: **A Contoso vállalat tulajdona**. A megadott információ minden eszközön megjelenik, amelyhez ezt a profilt hozzárendeli.

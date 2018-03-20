@@ -5,7 +5,7 @@ description: "Megtudhatja, hogyan tölthet fel a Windows 10-es eszközökön fut
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8c959ca3df62cbda17e5a659d0703cbc37f3249
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -37,11 +37,11 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell-parancsfájlhoz tartozó szabályzat létrehozása 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
-5. A **PowerShell-parancsfájlok** panelen válassza a **Parancsfájl hozzáadása** lehetőséget.
-6. A **PowerShell-parancsfájl hozzáadása** panelen adjon meg egy **nevet** és egy **leírást** a PowerShell-parancsfájlnak.
+5. A **PowerShell-parancsfájlok** panelen válassza a **Hozzáadás** lehetőséget.
+6. A **PowerShell-parancsfájl hozzáadása** panelen adjon meg a PowerShell-parancsfájl **Nevét** és **Leírását**.
 7. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A parancsfájlnak 10 (ASCII) vagy 5 kilobájtnál (Unicode) kisebbnek kell lennie.
 8. Válassza a **Konfigurálás** lehetőséget, majd adja meg, hogy a parancsfájl a felhasználó hitelesítő adataival fusson-e az eszközön (**Igen**) vagy a rendszerkörnyezetben (**Nem**). Alapértelmezés szerint a parancsfájl a rendszerkörnyezetben fut. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget. 
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-add-script.png)
@@ -50,7 +50,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 
 ## <a name="assign-a-powershell-script-policy"></a>PowerShell-parancsfájlhoz tartozó házirend hozzárendelése
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
 5. A **PowerShell-parancsfájlok** panelen válassza ki a hozzárendelni kívánt parancsfájlt, majd válassza a **Felügyelet** > **Hozzárendelések** lehetőséget.
@@ -64,7 +64,7 @@ Az Intune felügyeleti bővítmény óránként szinkronizál az Intune-nal. Miu
 ## <a name="monitor-run-status-for-powershell-scripts"></a>A PowerShell-parancsfájlok futtatási állapotának figyelése
 Megfigyelheti a felhasználók és eszközök PowerShell-parancsfájljainak futtatási állapotát az Azure Portalon.
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
 5. A **PowerShell-parancsfájlok** panelen válassza ki a megfigyelendő parancsfájlt, válassza a **Figyelés** lehetőséget, majd válassza ki az alábbi jelentések egyikét:

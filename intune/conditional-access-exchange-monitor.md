@@ -1,12 +1,12 @@
 ---
-title: "Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz"
-titlesuffix: Azure portal
-description: "Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune Azure Portal használatával"
+title: "Az Exchange feltételes hozzáférésének figyelése a Microsoft Intune-ban"
+titlesuffix: 
+description: "Figyelheti a feltételes hozzáférési megfelelőséget a helyszíni Exchange-hez és Exchange Online-hoz az Intune Azure Portal használatával."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Feltételes hozzáférési megfelelőség figyelése helyszíni Exchange-hez és Exchange Online-hoz az Intune-ban
 
@@ -36,21 +36,21 @@ Az Intune 1704-es kiadásától kezdve a rendszergazdák jelentési információ
 
 2.  Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
 
-3.  Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+3.  Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 4.  Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
 
 5.  Válassza a **Feltételes hozzáférés**, majd az **Áttekintés** lehetőséget.
 
-6.  A feltételes hozzáférési megfelelőséggel kapcsolatos jelentésének megtekintéséhez a diagramban válassza ki a három lehetőség (**Letiltva**, **Karantén** vagy **Engedélyezett**) egyikét.
+6.  A feltételes hozzáférési megfelelőséggel kapcsolatos jelentésének megtekintéséhez a diagramban válassza ki a három lehetőség (**Engedélyezett**, **Letiltva** vagy **Karantén**) egyikét.
 
-    ![Feltételes hozzáférési irányítópult](./media/CA-reporting-intune-1.png)
+    ![A Feltételes hozzáférési irányítópult képe](./media/CA-reporting-intune-1.png)
 
 A három terület egyikének kiválasztása után bővebb információt kap az engedélyezett, a tiltott vagy a karanténba helyezett eszközökről.
 
-Az egyes eszközökről további részletes információkat is megjeleníthet. Az alábbi képen szereplő eszköz például le van tiltva. Az Intune arra is lehetőséget ad, hogy a feltételes hozzáférési megfelelőség jelentésének paneljéről eltávolítsa a vállalati adatokat.
+Az egyes eszközökről további részletes információkat is megjeleníthet. A következő képen szereplő eszköz például le van tiltva. Az Intune arra is lehetőséget ad, hogy a feltételes hozzáférési megfelelőség jelentésének paneljéről eltávolítsa a vállalati adatokat.
 
-![Feltételes hozzáférési jelentés – részletes eszközinformációk](./media/CA-reporting-intune-3.png)
+![Feltételes hozzáférési jelentés – részletes eszközinformációk képe](./media/CA-reporting-intune-3.png)
 
 Az eszközinformációk panelen további információk jelennek meg:
 

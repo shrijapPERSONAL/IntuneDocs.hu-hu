@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-beállítások iOS- és macOS-eszközökhöz
 
@@ -40,6 +40,7 @@ Ezzel az eljárással vehet fel AirPrint-információkat az AirPrint-adattartalo
 
 ## <a name="configure-an-airprint-profile"></a>AirPrint-profil konfigurálása
 
+1. Az [Intune az Azure Portalon](https://portal.azure.com) felületről lépjen az eszközkonfigurációs terület [**Eszközfunkciók** részére](device-features-configure.md). 
 1. Az **Eszközfunkciók** panelen válassza az **AirPrint** elemet.
 2. Az **AirPrint** panelen az **IP-cím** és az **Erőforrás elérési útja** megadásával és a **Hozzáadás** gombra kattintva vegye fel az AirPrint-célhelyet.
 3. Folytassa, amíg fel nem vette az összes kívánt célhelyet. Ha elkészült, válassza az **OK** elemet.

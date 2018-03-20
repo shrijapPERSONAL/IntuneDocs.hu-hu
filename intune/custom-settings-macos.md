@@ -1,27 +1,25 @@
 ---
-title: "Egyéni beállítások az Intune-ban macOS-eszközök esetén"
-titleSuffix: Azure portal
+title: "Egyéni Microsoft Intune-beállítások macOS rendszerű eszközökhöz"
+titleSuffix: 
 description: "Az egyéni macOS-profil beállításainak ismertetése."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó egyéni beállítások a Microsoft Intune-ban
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Egyéni Microsoft Intune-eszközbeállítások macOS rendszerű eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,7 +29,7 @@ Ezzel a funkcióval olyan macOS-beállításokat rendelhet hozzá, amelyek nem k
 
 
 1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban](custom-settings-configure.md) című témakör utasításait.
-2. A **Profil létrehozása** panelen adja meg a következőket:
+2. Az **Egyéni konfigurációs profil** panelen konfigurálja az összes alábbi beállítást:
 
 - **Egyéni konfigurációs profil neve** – Adja meg, hogy a szabályzat milyen néven jelenjen meg az eszközön és az Intune-állapotban.
 - **Konfigurációs profil fájlja** – Keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt.

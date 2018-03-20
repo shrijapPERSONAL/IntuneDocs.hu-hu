@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Az Intune megosztott iPad eszközökkel kapcsolatos oktatási beállításainak konfigurálása
 
@@ -62,12 +62,12 @@ Az SDS-be a következő módszerek valamelyikével importálhat adatokat:
 
 ### <a name="configure-general-settings"></a>Általános beállítások konfigurálása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
 5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-6. A **Profil létrehozása** panelen töltse ki az iOS-es oktatási profil **Név** és **Leírás** mezőjét.
+6. A **Profil létrehozása** panelen adja meg az iOS-es oktatási profil **Nevét** és **Leírását**.
 7. A **Platform** legördülő listájában válassza az **iOS** lehetőséget.
 8. A **Profil típusa** legördülő listában válassza az **Oktatás** lehetőséget.
 9. Válassza a **Beállítások** > **Konfigurálás** lehetőséget.
@@ -133,29 +133,29 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 
 ## <a name="step-3---create-a-device-category"></a>3. lépés – eszközkategória létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközregisztráció** lehetőséget.
-4. A **Regisztráció – Áttekintés** panelen válassza az **Eszközkategóriák** elemet.
-5. A **Regisztráció – Eszközkategóriák** panelen válassza a **Létrehozás** lehetőséget.
-6. Az **Eszközkategória létrehozása** panelen írja be a kategóriára vonatkozó **Név** és **Leírás** szövegét.
+4. Az **Eszközregisztráció – Áttekintés** panelen válassza az **Eszközkategóriák** elemet.
+5. Az **Eszközregisztráció – Eszközkategóriák** panelen válassza a **Létrehozás** lehetőséget.
+6. Az **Eszközkategória létrehozása** panelen adja meg a kategória **Nevét** és **Leírását**.
 7. A **Eszközkategória létrehozása** panelen válassza a **Létrehozás** lehetőséget.
 
 Az eszközkategória ekkor létrejön a **Regisztráció – Eszközkategóriák** panelen.
 
 ## <a name="step-4--create-a-dynamic-group"></a>4. lépés – dinamikus csoport létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza a **Csoportok** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Csoportok** lehetőséget.
 4. A **Felhasználók és csoportok – Minden csoport** panelen válassza az **Új csoport** lehetőséget.
-5. A **Csoport** lapon adja meg a csoporthoz a **Név** és a **Leírás** mező értékét.
+5. A **Csoport** panelen válasszon **Csoporttípust**, majd adja meg a csoport **Nevét** és **Leírását**.
 6. A **Tagság típusa** legördülő listából válassza a **Dinamikus eszköz** lehetőséget.
 7. A tagsági szabályok létrehozásához válassza a **Dinamikus eszköztagság** lehetőséget.
 8. A **Dinamikus tagsági szabályok** panelen tegye a következőket:
 1. Az **Eszközök hozzáadásának helye** legördülő menüben válassza a **deviceCategory** lehetőséget.
-2. Válassza az **Egyenlő** lehetőséget
-3. Írja be az üres szövegdobozba a létrehozott eszközkategória nevét
+2. Válassza az **Egyenlő** lehetőséget.
+3. Írja be az üres szövegdobozba a létrehozott eszközkategória nevét.
 9. A **Dinamikus tagsági szabályok** panelen válassza a **Lekérdezés hozzáadása** lehetőséget.
 10. A **Csoport** panelen válassza a **Létrehozás** lehetőséget.
 
@@ -163,21 +163,21 @@ A dinamikus csoport ekkor létrejön a **Felhasználók és csoportok – Minden
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. lépés – eszközök hozzárendelése egy kategóriához (kocsik)
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-5. Az **Eszközök – Minden eszköz** panelen válasszon egy eszközt.
-6. Az eszközpanelen válassza a **Tulajdonságok** lehetőséget.
+5. Az **Eszközök – Minden eszköz** panelen válasszon ki egy eszközt.
+6. Az eszközök paneljén válassza a **Tulajdonságok** lehetőséget.
 7. Az eszköz Tulajdonságok panelén adja meg az eszközkategóriát az **Eszközkategória** szövegdobozban.
-8. Az eszközpanelen válassza a **Mentés** lehetőséget.
+8. Az eszközök paneljén válassza a **Mentés** lehetőséget.
 
 Az eszköz mostantól hozzá van rendelve az eszközkategóriához. Ismételje meg ezt a folyamatot minden olyan eszközre, amelyet hozzá szeretne rendelni a létrehozott eszközkategóriához.
 
 ## <a name="step-6--create-classroom-profiles"></a>6. lépés – Osztályterem-profilok létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Kocsiprofilok** lehetőséget.
 5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
@@ -192,12 +192,12 @@ Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó pane
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. lépés – a kocsiprofil hozzárendelése az osztályokhoz
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Egyéb** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 4. Az **Eszközkonfiguráció** panelen válassza a **Figyelés** > **Hozzárendelés állapota** lehetőséget.
 5. A **Hozzárendelés állapota** panelen jelölje ki a létrehozott **kocsiprofilt**.
-6. A **kocsiprofil paneljén** válassza a **Hozzárendelések** lehetőséget, majd a **Belefoglalás** területen a **Válassza ki a befoglalandó csoportokat** lehetőséget.
+6. A **Kocsiprofil** panelen válassza a **Hozzárendelések** lehetőséget, majd a **Belefoglalás** területen a **Válassza ki a befoglalandó csoportokat** lehetőséget.
 7. Válassza ki a kocsiprofil célosztályait (ne válasszon ki csoportokat), majd kattintson a **Kijelölés** lehetőségre. 
 8. Ha elkészült, válassza a **Mentés** elemet.
 

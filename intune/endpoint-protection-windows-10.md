@@ -1,12 +1,12 @@
 ---
-title: "Intune Endpoint Protection-beállítások Windows 10 rendszerhez"
-titlesuffix: Azure portal
+title: "Microsoft Intune Endpoint Protection-beállítások Windows 10 rendszerhez"
+titlesuffix: 
 description: "Ez a cikk azt mutatja be, hogy Windows 10 rendszerű eszközökön milyen Intune-beállításokkal szabályozhatja az olyan Endpoint Protection szolgáltatások beállításait, mint például a BitLocker."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások létrehozása Windows 10 és újabb rendszerekhez
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Az Endpoint Protection-profillal a Windows 10-es eszközök olyan biztonsági szolgáltatásait szabályozhatja, mint például a BitLocker és a Windows Defender.
 
-A következő témakör az Endpoint Protection-profilok létrehozását mutatja be.
+A következő cikk az Endpoint Protection-profilok létrehozását mutatja be.
 
 > [!Note]
 > Ezek a beállítások nem támogatottak a Windows 10 Home és Professional kiadásaiban.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection-profil létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen adja meg az eszközfunkció-profil **Nevét** és **Leírását**.
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
 6. A **Profil típusa** legördülő listából válassza az **Endpoint Protection** lehetőséget.
-7. Adja meg a kívánt beállításokat. A következő témakörben leírtak alapján megértheti, milyen funkciót látnak el az egyes beállítások. Ha elkészült, válassza az **OK** elemet.
+7. Adja meg a kívánt beállításokat. A következő cikk azt ismerteti, milyen funkciót látnak el az egyes beállítások. Ha elkészült, válassza az **OK** elemet.
 8. Lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** lehetőséget.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
@@ -57,6 +57,7 @@ Az Alkalmazásőr csak a 64 bites Windows 10-eszközöknél érhető el. Ennek a
 - **Nyomtatás a virtuális böngészőből** – Engedélyezheti, hogy a virtuális böngészőben megjelenő tartalom a PDF-, az XPS-, a helyi és/vagy a hálózati nyomtatókkal nyomtathatók legyenek.
 - **Naplók gyűjtése** – Az alkalmazásőr virtuális böngészési munkamenetében előforduló események naplóinak összegyűjtése.
 - **Felhasználó által létrehozott böngészési adatok megtartása** – Engedélyezheti az alkalmazásőr által védett böngészési munkamenet során létrehozott felhasználói adatok (például jelszavak, kedvencek vagy cookie-ek) mentését.
+- **Grafikus gyorsítás** – Az alkalmazásőr virtuális böngészési munkameneteiben gyorsabban betöltheti a magas grafikai igényű webhelyeket, ha engedélyezi a virtuális grafikai feldolgozóegységhez való hozzáférést.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender-tűzfal
@@ -100,7 +101,7 @@ Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen töb
 
 ## <a name="windows-encryption"></a>Windows-titkosítás
 
-### <a name="windows-settings"></a>Windows-beállítások
+### <a name="windows-settings"></a>Windowsos beállítások
 
 Ezek a beállítások a Windows 10 minden verziójára érvényesek.
 

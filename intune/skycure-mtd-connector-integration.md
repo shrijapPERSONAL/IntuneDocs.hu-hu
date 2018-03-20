@@ -1,7 +1,7 @@
 ---
-title: "A Skycure és az Intune közötti integráció beállítása"
-titlesuffix: Azure portal
-description: "Állítsa be a Skycure és a Microsoft Intune közötti integrációt."
+title: "A Skycure és a Microsoft Intune közötti integráció beállítása"
+titlesuffix: 
+description: "A Skycure Mobile Threat Defense beállítása a Microsoft Intune-ban a mobileszközök a vállalati erőforrásokhoz való hozzáférésének kezeléséhez."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>A Skycure és az Intune közötti integráció beállítása
 
-Az egyszeri bejelentkezés lehetőségéhez a Skycure-alkalmazásokat fel kell venni az Azure AD-be.
+A Skycure Mobile Threat Defense megoldás Intune-beli integrálásához kövesse az alábbi lépéseket. Az egyszeri bejelentkezés lehetőségéhez a Skycure-alkalmazásokat fel kell venni az Azure AD-be.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -62,15 +62,15 @@ A Skycure kétféleképpen integrálható az Intune-nal:
 
 4.  Az **iOS App** (iOS-es alkalmazás) címkén kattintson az **Add to Active Directory** (Felvétel az Active Directoryba) elemre.
 
-    ![iOS-es alkalmazás a Skycure Management konzolon](./media/skycure-setup-1.png)
+    ![A Skycure Management konzolon található iOS-alkalmazás képe](./media/skycure-setup-1.png)
 
 5.  Megnyílik a bejelentkezési oldal. Adja meg Intune-os hitelesítő adatait, majd kattintson az **Accept** (Elfogadom) gombra.
 
-    ![Az iOS-es alkalmazás Intune-bejelentkezési képernyője](./media/skycure-setup-2.png)
+    ![Kép az iOS-alkalmazás Intune-bejelentkezési képernyőjéről](./media/skycure-setup-2.png)
 
 6.  Ha az alkalmazás bekerült az Azure AD-be, ezzel kapcsolatos jelzés jelenik meg a Skycure Management konzolon.
 
-    ![iOS-es alkalmazás sikeres felvételét jelző képernyő](./media/skycure-setup-3.png)
+    ![Kép az iOS-alkalmazás sikeres felvételét jelző képernyőről](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > Végezze el ugyanezt az eljárást az **Androidra készült Skycure alkalmazással** és a **Felügyeleti alkalmazással** is.
@@ -79,13 +79,13 @@ A Skycure kétféleképpen integrálható az Intune-nal:
 
 Fel kell vennie egy olyan biztonsági csoportot, amelynek tagja az összes Skycure-t futtató eszköz.
 
-1.  Adja meg és jelölje ki az összes Skycure-t futtató eszközöket tartalmazó biztonsági csoportot, majd kattintson az **Apply changes** (Módosítások alkalmazása) elemre.
+-  Adja meg és jelölje ki az összes Skycure-t futtató eszközöket tartalmazó biztonsági csoportot, majd kattintson az **Apply changes** (Módosítások alkalmazása) elemre.
 
-    ![Biztonsági csoport konfigurálása a Skycure Management konzolon](./media/skycure-setup-4.png)
+    ![Kép a biztonsági csoport konfigurálásának helyéről a Skycure Management konzolon](./media/skycure-setup-4.png)
 
 A Skycure a Mobile Threat Defense szolgáltatást futtató eszközöket az Azure AD biztonsági csoportjaival szinkronizálja.
 
-![Biztonsági csoport konfigurálásának befejezése a Skycure Management konzolon](./media/skycure-setup-5.png)
+![Kép a biztonsági csoport konfigurálásának befejezéséről a Skycure Management konzolon](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Teljes integráció beállítása az Intune és a Skycure között
 
@@ -103,7 +103,7 @@ A Skycure a Mobile Threat Defense szolgáltatást futtató eszközöket az Azure
 
 5.  Kattintson az **Apply changes** (Módosítások alkalmazása) elemre.
 
-    ![A teljes Skycure-integráció befejezése](./media/skycure-setup-6.png)
+    ![Kép a teljes Skycure-integráció befejezéséről](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>További lépések
 

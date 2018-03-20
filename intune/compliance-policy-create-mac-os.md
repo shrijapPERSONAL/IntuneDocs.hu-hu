@@ -1,12 +1,12 @@
 ---
-title: "Megfelelőségi szabályzat létrehozása macOS rendszerhez"
-titleSuffix: Azure portal
-description: "További információ megfelelőségi szabályzat létrehozásáról macOS rendszerhez."
+title: "macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban"
+titleSuffix: 
+description: "Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune macOS-eszközmegfelelőségi szabályzatot."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak létrehozása az Intune-nal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+A macOS-eszközmegfelelőségi szabályzatokkal megszabhatja a macOS-eszközök megfelelőségéhez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -108,7 +110,7 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
 
 2. Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
 
-3. Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+3. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 4. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
 
@@ -118,7 +120,7 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
 
 7. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
 
-8. A megjelenő **macOS rendszerű megfelelőségi szabályzat** panelen válassza ki az eszközmegfelelőségi beállításkategóriákat (**Biztonság**, **Eszközállapot** és **Eszköztulajdonság**) a saját beállítások meghatározásához.
+8. A megjelenő **Mac rendszerű megfelelőségi szabályzat** panelen válassza ki az eszközmegfelelőségi beállításkategóriákat (**Rendszerbiztonság**, **Eszközállapot** és **Eszköztulajdonság**) a saját beállítások meghatározásához.
 
 10. Ha elkészült a beállítások kiválasztásával, kattintson az **OK** gombra az egyes eszközmegfelelőségi beállításkategóriák alatt.
 
@@ -126,13 +128,13 @@ Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a kü
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
-A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatok a **Megfelelőségi szabályzatok** panelen találhatók.
+A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatokat az **Eszközmegfelelőségi szabályzatok** panelen tekintheti meg.
 
-1. Válassza ki azt az eszközmegfelelőségi szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-beli biztonsági csoportokat**, és hozzárendelheti őket a szabályzathoz.
+1. Válassza ki azt az eszközmegfelelőségi szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
 
-2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához.
+2. Válassza a **Kiválasztott csoportok** lehetőséget az Azure AD biztonsági csoportjait megjelenítő lap megnyitásához.
 
-3. Válassza a **Kijelölés**, majd a **Mentés** gombot az eszközmegfelelőségi szabályzat Azure AD biztonsági csoportokhoz rendelésére.
+3. Válassza a **Mentés** gombot az eszközmegfelelőségi szabályzat Azure AD biztonsági csoportokhoz rendelésére.
 
 4. Miután befejezte az eszközmegfelelőségi szabályzat hozzárendelése a csoportokhoz, bezárhatja a **Hozzárendelések** panelt.
 

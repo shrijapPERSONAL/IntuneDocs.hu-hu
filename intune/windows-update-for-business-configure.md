@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -71,20 +71,21 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Frissítési körök létrehozása és hozzárendelése
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Szoftverfrissítések** lehetőséget.
-4. A **Szoftverfrissítések** panelen válassza a **Kezelés** > **Windows 10 frissítési körök** lehetőséget.
+4. A **Szoftverfrissítések** panelen válassza a **Kezelés** > **Windows 10-es frissítési körök** lehetőséget.
 5. A frissítési körök listáját megjelenítő panelen válassza a **Létrehozás** lehetőséget.
-6. A **Frissítési kör létrehozása** panelen adjon meg egy nevet és igény szerint leírást a frissítési körhöz, majd válassza a **Beállítások** lehetőséget.
+6. A **Frissítési kör létrehozása** panelen adjon meg egy nevet és igény szerint leírást a frissítési körhöz, majd válassza a **Beállítások – Konfigurálás** lehetőséget.
 7. A **Beállítások** panelen konfigurálja az alábbi adatokat:
     - **Karbantartási csatorna**: Állítsa be, hogy az eszköz a célzott féléves csatornán vagy a féléves csatornán kapjon frissítéseket.
-    - **Microsoft frissítések**: Döntse el, hogy kíván-e alkalmazás-frissítéseket keresni a Microsoft Update webhelyen.
+    - **Microsoft-termékfrissítések**: Döntse el, hogy kíván-e alkalmazás-frissítéseket keresni a Microsoft Update webhelyen.
     - **Windows-illesztőprogramok**: Döntse el, hogy mellőzni kívánja-e a Windows Update-illesztőprogramokat a frissítések során.
     - **Automatikus frissítés módja**: Válassza ki, hogy milyen módon keressen, töltsön le és telepítsen frissítéseket az automatikus frissítés. További információ:  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Minőségi frissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a minőségi frissítéseket. Ezeknek a minőségi frissítéseknek a fogadása a kiadásuktól számítva legfeljebb 30 nappal késleltethető.  
 
     A minőségi frissítések általában meglévő Windows-funkciók javításai és továbbfejlesztései, és rendszerint minden hónap első keddjén jelennek meg, bár a Microsoft bármikor kibocsáthatja őket. Meghatározhatja, hogy az elérhetővé válásuk után kívánja-e késleltetni a minőségi frissítések fogadását, és ha igen, akkor mennyi ideig.
+
     - **Funkciófrissítések késleltetésének időtartama (nap)** – Adja meg, hány nappal kívánja késleltetni a funkciófrissítéseket. Ezeknek a funkciófrissítéseknek a fogadása a kiadásuktól számítva legfeljebb 180 nappal késleltethető.
 
     A funkciófrissítések általában új Windows-funkciók. A **Karbantartási csatorna** beállítás a célzott féléves csatornára vagy a féléves csatornára való konfigurálása után megadhatja, hogy szeretné-e késleltetni a Microsoft által a Windows Update szolgáltatásban közzétett funkciófrissítések fogadását, és ha igen, akkor mennyivel.
@@ -93,13 +94,13 @@ A kialakított frissítési körök hozzárendelhetők az eszközcsoportokhoz. F
 
     **Ha a karbantartási csatorna a Féléves csatorna értékre van beállítva, a késleltetési idő pedig 30 nap**: Tegyük fel, hogy az X funkciófrissítés januárban jelenik meg először a Windows Update szolgáltatásban a (célzott) féléves csatornán. Négy hónappal később, áprilisban az X funkciófrissítés megjelenik a féléves csatornán. Az eszköz 30 nappal annak a féléves csatornán való megjelenése után fogadja a funkciófrissítést, és májusban frissül.
 
-    - **Kézbesítés optimalizálása** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. Ha minden kész, kattintson az **OK** elemre, majd a **Frissítési kör létrehozása** panelen a **Létrehozás** lehetőségre.
+    - **Kézbesítésoptimalizálásos letöltési mód** – Válassza ki azt a módszert, amellyel az eszközök letöltik a Windows-frissítéseket. További információ: [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Ha minden kész, kattintson az **OK** gombra, majd a **Frissítési kör létrehozása** panelen a **Létrehozás** lehetőségre.
 
 Az új frissítési kör megjelenik a frissítési körök listájában.
 
 1. A kör hozzárendeléséhez jelölje ki a kört a frissítési körök listájában, majd a <*kör neve*> lapon válassza a **Hozzárendelések** lehetőséget.
-2. A következő lapon válassza a **Csoportok kijelölése** lehetőséget, majd jelölje ki a csoportokat, amelyekhez hozzá kívánja rendelni ezt a kört.
+2. A következő lapon válassza a **Válassza ki a befoglalandó csoportokat** lehetőséget, majd jelölje ki a csoportokat, amelyekhez hozzá kívánja rendelni ezt a kört.
 3. Ha kész, válassza a **Kijelölés** lehetőséget a hozzárendelés befejezéséhez.
 
 ## <a name="update-compliance-reporting"></a>Frissítés-megfelelőségi jelentés
@@ -108,8 +109,8 @@ A frissítés-megfelelőség nyomon követhető az Intune-ban vagy az Operations
 ### <a name="review-update-compliance-in-intune"></a>Frissítés-megfelelőség ellenőrzése az Intune-ban 
 <!-- 1352223 -->
 A szabályzatjelentésben ellenőrizheti a konfigurált Windows 10-es frissítési körök telepítési állapotát. 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Szoftverfrissítések** lehetőséget.
 4. A **Szoftverfrissítések** panelen válassza az **Áttekintés** elemet. Itt általános információkat találhat minden hozzárendelt frissítési kör állapotáról.
 5. Nyissa meg az alábbi jelentések valamelyikét: 
@@ -119,11 +120,10 @@ A szabályzatjelentésben ellenőrizheti a konfigurált Windows 10-es frissíté
    2. A **Figyelés** szakaszban válassza a **Frissítési körönkénti telepítési állapot** lehetőséget.
                    
    **Meghatározott frissítési körökhöz:** 
-   1. A **Szoftverfrissítések** > **Windows 10-es frissítési körök** panelen válassza a megtekinteni kívánt frissítési kört.
+   1. A **Szoftverfrissítések** > **Windows 10-es frissítési körök** panelen válassza ki a megtekinteni kívánt frissítési kört.
    2. Az adott frissítési kör adatainak megtekintéséhez a **Figyelés** szakaszban válasszon az alábbi jelentések közül:
-      - **Frissítési kör telepítése eszközökhöz**
-      - **Frissítési kör telepítése felhasználókhoz**
-      - **Beállításonkénti telepítési állapot**
+      - **Eszközállapot**
+      - **Felhasználó állapota**
 
 ### <a name="review-update-compliance-using-oms"></a>Frissítés-megfelelőség ellenőrzése az OMS használatával
 A Windows 10 frissítések alkalmazása nyomon követhető az Operations Management Suite (OMS) ingyenes megoldása, az Update Compliance segítségével. További információ: [Windows frissítések figyelése az Update Compliance használatával](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Ennek a megoldásnak a használatával kereskedelmi azonosító telepíthető azokra az Intune-nal felügyelt Windows 10 eszközökre, amelyekről frissítés-megfelelőségi jelentést kíván készíteni.
@@ -136,18 +136,18 @@ Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a 
 
 - **Beállítás neve**: Windows Analytics kereskedelmi azonosító
 - **Beállítás leírása**: Kereskedelmi azonosító konfigurálása Windows Analytics megoldásokhoz
-- **Adattípus:** Karakterlánc
 - **OMA-URI** (megkülönbözteti a kis- és nagybetűket): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Adattípus:** Karakterlánc
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
 ![A Windows beállítása diagnosztikai és használati adatok küldéséhez](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Frissítések felfüggesztése
 A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadályozható, hogy az eszköz minőségi vagy funkciófrissítéseket fogadjon. A megadott időtartam után a felfüggesztés automatikusan megszűnik, és az eszköz keresni kezdi az alkalmazható Windows-frissítéseket. A keresés után a frissítések ismét felfüggeszthetők.
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza a **Szoftverfrissítések** lehetőséget.
-4. A **Szoftverfrissítések** panelen válassza a **Kezelés** > **Windows 10 frissítési körök** lehetőséget.
+4. A **Szoftverfrissítések** panelen válassza a **Kezelés** > **Windows 10-es frissítési körök** lehetőséget.
 5. A frissítési körök listáját megjelenítő panelen válassza ki a felfüggeszteni kívánt kört, majd attól függően, hogy a frissítések melyik típusát kívánja felfüggeszteni, válassza a **...** > **Minőségi frissítések felfüggesztése** > vagy a **Funkciófrissítések felfüggesztése** lehetőséget.
 
 > [!IMPORTANT]

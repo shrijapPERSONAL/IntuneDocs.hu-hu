@@ -1,11 +1,12 @@
 ---
-title: "Jelentés készítése az OData-adatcsatornából a Power BI használatával | Microsoft Docs"
+title: "Jelentés készítése az OData-adatcsatornából a Power BI használatával"
+titlesuffix: Microsoft Intune
 description: "Fatérkép-diagram létrehozása a Power BI Desktop használatával, az Intune-adattárház API-ból származó interaktív szűrővel."
 keywords: "Intune-adattárház"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a81a3b0648c77e3adb7a57bdcecddea1e0412eb2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Jelentés készítése az OData-adatcsatornából a Power BI használatával
 
-Ebben az oktatóanyagban létre fog hozni egy fatérkép-diagramot a Power BI Desktop használatával, az Intune-adattárház API-ból származó interaktív szűrővel. Előfordulhat például, hogy a pénzügyi igazgató azt szeretné tudni, hogy a teljes eszközállomány hogyan oszlik meg vállalati és személyes tulajdonúak között. A fatérkép-diagram megmutatja az eszköztípusok teljes számát. Látható benne, hogy hány iOS-es, hány androidos és hány windowsos eszköz van vállalati, és hány személyes tulajdonban.
+Ez a cikk bemutatja, hogyan hozhat létre egy fatérkép-diagramot a Power BI Desktop használatával, az Intune-adattárház API-ból származó interaktív szűrővel. Előfordulhat például, hogy a pénzügyi igazgató azt szeretné tudni, hogy a teljes eszközállomány hogyan oszlik meg vállalati és személyes tulajdonúak között. A fatérkép-diagram megmutatja az eszköztípusok teljes számát. Látható benne, hogy hány iOS-es, hány androidos és hány windowsos eszköz van vállalati, és hány személyes tulajdonban.
 
 ### <a name="overview-of-creating-the-chart"></a>A diagram létrehozásának áttekintése
 
-A diagram létrehozásához az alábbi lépéseket fogja elvégezni:
+A diagram létrehozásához az alábbi lépéseket kell elvégeznie:
 1. A Power BI Desktop telepítése, ha még nincs telepítve.
 2. Csatlakozás az Intune-adattárház adatmodellhez, és a modell aktuális adatainak letöltése.
 3. Az adatmodell kapcsolatainak létrehozása és kezelése.
@@ -49,8 +50,8 @@ Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.co
 > [!Note]  
 > Az Intune-beli **Jelentések** eléréséhez hozzáférési engedélyre van szükség. További információt az [Engedélyezés](reports-api-url.md) témakörben talál.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Nyissa meg az **Intune-adattárház** panelt.
 4. Másolja az egyéni URL-címet. Például így: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Nyissa meg a Power BI Desktopot.
@@ -61,24 +62,25 @@ Telepítse a Power BI Desktop legújabb verzióját. Ezt a [PowerBI.microsoft.co
     ![OData-adatcsatorna](media/reports-create-01-odatafeed.png)
 
 9. Válassza az **OK** gombot.
-10. Válassza a **Szervezeti fiók** lehetőséget, és jelentkezzen be az Intune-hoz tartozó hitelesítő adataival. 
+10. Válassza a **Szervezeti fiók** lehetőséget, és jelentkezzen be az Intune-hoz tartozó hitelesítő adataival.
 
     ![Szervezeti fiók hitelesítő adatai](media/reports-create-02-org-account.png)
 
-11. Válassza a **Kapcsolódás** lehetőséget. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája. 
+11. Válassza a **Kapcsolódás** lehetőséget. Ekkor megnyílik a Navigátor, és megjelenik rajta az Intune-adattárházban található táblák listája.
 
     ![A Navigátor](media/reports-create-02-loadentities.png)
 
 12. Válassza ki a **devices** (eszközök) és az **ownerTypes** (tulajdonostípusok) táblákat.  Válassza a **Betöltés** lehetőséget. A Power BI betölti az adatokat a modellbe.
 
-## <a name="create-a-relationship"></a>Kapcsolat létrehozása 
+## <a name="create-a-relationship"></a>Kapcsolat létrehozása
 
 Nem csak egyetlen tábla adatait, de több táblát is importálhat, és így egyszerre több tábla összekapcsolt adatait is elemezheti.  A Power BI rendelkezik egy **automatikus felismerés** funkcióval, amely megpróbálja megkeresni és létrehozni a kapcsolatokat. Az Adattárház táblái úgy lettek kialakítva, hogy képesek legyenek együttműködni a Power BI automatikus felismerés funkciójával. Ha azonban a Power BI nem tudja automatikusan megtalálni a kapcsolatokat, manuális kezelésre is van lehetőség.
 
 ![Kapcsolatok kezelése](media/reports-create-03-managerelationships.png)
 
 1. Válassza a **Kapcsolatok kezelése** lehetőséget.
-2. Ha a Power BI még nem észlelte a kapcsolatokat, válassza az **Automatikus észlelés...** lehetőséget.  
+2. Ha a Power BI még nem észlelte a kapcsolatokat, válassza az **Automatikus észlelés...** lehetőséget.
+
 A kapcsolatokat egy From (forrás) és egy To (cél) oszlopban láthatja. Ebben a példában az **eszközök** tábla **ownerTypeKey** adatmezőjéből indul kapcsolat az **ownerTypes** tábla **ownerTypeKey** mezőjébe. A kapcsolatok használatával az **eszközök** táblában kikeresheti az eszköztípusok kódjaihoz tartozó egyszerű neveket.
 
 ## <a name="create-a-treemap-visualization"></a>Fatérkép-diagram létrehozása
@@ -92,21 +94,24 @@ A fatrékép-diagram adatok hierarchikus viszonyát jeleníti meg négyzeteken b
 3. Bontsa ki a **devices** (eszközök) táblát, és válassza a **manufacturer** (gyártó) adatmezőt a **Mezők** panelen.
 4. A **manufacturer** (gyártók) adatmezőt húzza a jelentésvásznon lévő Fatérkép-diagramra.
 5. A **devices** tábla **deviceKey** adatmezőjét húzza a **Vizualizációk** panelen található **Értékek** szakaszba, és tegye az **Ide húzza az adatmezőt** feliratú négyzetbe.  
+
 Ezzel elkészített egy olyan vizualizációt, amely megmutatja, hogy milyen a szervezetben az eszközök gyártók szerinti eloszlása.
 
 ![Fatérkép-diagram adatokkal](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Szűrő hozzáadása
 
-A fatérkép-diagramhoz szűrőt is hozzáadhat, hogy az további kérdésekre is választ tudjon adni az alkalmazással. 
+A fatérkép-diagramhoz szűrőt is hozzáadhat, hogy az további kérdésekre is választ tudjon adni az alkalmazással.
 
-1. Kattintson a jelentésvászonra, majd a **Vizualizációk** alatt található **Szeletelő ikonra** ( ![Fatérkép diagram adatokkal](media/reports-create-slicer.png) ).
+
+1. Szűrő hozzáadásához kattintson a jelentésvászonra, majd a **Vizualizációk** alatt található **Szeletelő ikonra** ( ![Fatérkép diagram adatokkal](media/reports-create-slicer.png) ).
 2. Keresse meg az **ownerTypes** táblát, majd az **ownerTypeName** adatmezőt húzza a **Vizualizációk** panelen található **Szűrők** szakaszba.  
+
    Az eszközök táblában van egy **OwnerTypeKey** nevű adatmező, amely azt a kódot tartalmazza, amely azt jelzi, hogy az eszköz vállalati vagy személyes tulajdonú-e. Mivel ebben a szűrőben egyszerű neveket célszerű használni, keresse meg az **ownerTypes** táblát, és húzza el az **ownerTypeName** mezőt. Ebből a példából láthatja, hogyan támogatja az adatmodell a táblák közötti kapcsolatokat.
 
 ![Fatérkép-diagram szűrővel](media/reports-create-08_ownertype.png)
 
-Ezzel létrehozott egy olyan interaktív szűrőt, amelyben egyszerű váltással meg lehet tekinteni, milyen eloszlásban vannak a vállalatnál vállalati és személyes tulajdonú eszközök.
+Ezzel létrehozott egy olyan interaktív szűrőt, amelyben egyszerű váltással megtekinthetők a vállalati és a személyes tulajdonú eszközök. Ezzel a szűrővel megtekintheti az eloszlás változásait.
 
 1. A **Vállalati** lehetőséget választva a vállalati eszközök eloszlása jeleníthető meg.
 2. A **Személyes** lehetőséget választva a személyes tulajdonú eszközök tekinthetők meg.

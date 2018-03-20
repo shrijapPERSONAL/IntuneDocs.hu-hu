@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Az Intune Tanúsítvány-összekötő beállítása a Symantec PKI Manager webszolgáltatáshoz
 
@@ -166,8 +166,11 @@ Az alábbi lépéseket követve szerezze be a regisztrációszolgáltató (RA) t
 
 Ha már a legújabb Intune Tanúsítvány-összekötőt használja egy meglévő Microsoft hitelesítésszolgáltató kezeléséhez, és emellett be szeretné állítani egy Symantec hitelesítésszolgáltató támogatását, ugorja át ezt a lépést. Ellenkező esetben töltse le a legújabb Intune Tanúsítvány-összekötőt az Intune felügyeleti portálról, és kövesse az alábbi utasításokat.
 
-1. Jelentkezzen be a https://portal.azure.com címen az Intune-bérlői rendszergazdai hitelesítő adataival, majd keresse meg a Intune forrásanyagokat.
-2. Töltse le a NDESConnectorSetup.exe fájlt a **Microsoft Intune** > **Eszközkonfiguráció** > **Hitelesítésszolgáltató** > **Tanúsítvány-összekötő letöltése** hivatkozásra kattintva.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Eszközök konfigurálása** lehetőséget.
+4. Válassza az **Eszközök konfigurálása** panel **Hitelesítésszolgáltató** elemét.
+5. Kattintson a **Hozzáadás** elemre, és válassza az **Összekötői fájl letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, amelyhez hozzá tud férni a telepítéshez használt kiszolgálón. 
 3. Futtassa az NDESConnectorSetup.exe fájlt emelt szintű jogosultságokkal.
 
     a. A **Telepítési beállítások** képernyőn válassza ki a **PFX terjesztés** lehetőséget az alábbi képernyőfelvételen látható módon.  A telepítés további részében használja az alapértelmezett értékeket.
@@ -233,7 +236,7 @@ Az Intune-ban kezelt eszközökhöz kiadott PKCS-tanúsítványoknak megbízhat�
 
     a. Jelentkezzen be az [Azure Portalra](https://portal.azure.com) az Intune-bérlői rendszergazdai hitelesítő adataival, majd keresse meg a Intune forrásanyagokat.
 
-    b. A **Microsoft Intune** > **Eszközkonfiguráció** - **Profilok** > **Profil létrehozása** lehetőségre kattintva hozzon létre egy megbízható tanúsítványprofilt.
+    b. A **Microsoft Intune** > **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőségre kattintva hozzon létre egy megbízható tanúsítványprofilt.
 
     c. Adja meg a szükséges információkat a **Név** és **Leírás** mezőkben, majd válassza ki a célplatformot. 
 
@@ -264,7 +267,7 @@ A tanúsítványprofil objektumazonosítója egy a Symantec hitelesítésszolgá
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS-tanúsítványprofil létrehozása
 
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com) az Intune bérlői rendszergazdai hitelesítő adataival, majd keresse meg a Intune-forrásanyagokat.
-2. A **Microsoft Intune** > **Eszközkonfiguráció – Profilok** > **Profil létrehozása** > **PKCS-tanúsítvány** lehetőségre kattintva hozzon létre egy PKCS-tanúsítványprofilt.
+2. A **Microsoft Intune** > **Eszközkonfiguráció>Profilok** > **Profil létrehozása** lehetőségre kattintva hozzon létre egy PKCS-tanúsítványprofilt.
 
     a. Adja meg a szükséges információkat a **Név** és **Leírás** mezőkben, majd válassza ki a célplatformot.
 

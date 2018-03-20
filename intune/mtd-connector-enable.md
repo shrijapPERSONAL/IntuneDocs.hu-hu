@@ -1,12 +1,12 @@
 ---
-title: "Mobile Threat Defense-összekötő engedélyezése az Intune-nal"
+title: "A Mobile Threat Defense-összekötő engedélyezése a Microsoft Intune-ban"
 titlesuffix: Azure portal
-description: "Engedélyezheti a Mobile Threat Defense-összekötőt az Intune-ban."
+description: "A Mobile Threat Defense (MTD) partner és a Microsoft Intune közötti összekötő engedélyezése."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,24 +15,24 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>Mobile Threat Defense engedélyezése az Intune-ban
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>A Mobile Threat Defense-összekötő engedélyezése az Intune-ban
 
 > [!NOTE] 
 > Ez a témakör minden Mobile Threat Defense-partnerre vonatkozik.
 
-A Mobile Threat Defense (MTD) Intune-beli engedélyezéséhez az Intune-összekötő előzetes konfigurálására van szükség az MTD-partnerkonzolon.
+A Mobile Threat Defense (MTD) beállítása során konfigurált egy, az MTD-partnerkonzolra vonatkozó fenyegetésosztályozási szabályzatot, és létrehozta az eszközmegfelelőségi szabályzatot az Intune-ban. Ha már konfigurálta az Intune-összekötőt az MTD-partnerkonzolon, engedélyezheti az MTD-kapcsolatot az Intune-ban.
 
 ## <a name="to-enable-the-mtd-connector"></a>Az MTD-összekötő engedélyezése
 
 1. Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival. Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
 
-2. Az **Azure-irányítópulton** válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+2. Az **Azure-irányítópulton** válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 3. Ha az **Intune** elemre kattint, megnyílik az **Intune irányítópultja**.
 

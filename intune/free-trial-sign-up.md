@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/04/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Regisztráció a Microsoft Intune ingyenes próbaverziójára
 
@@ -32,44 +32,20 @@ Ez a cikk végigvezeti Önt az Azure Portalhoz tartozó önálló Intune-próbav
 
 2. A regisztrációs folyamat végén egy üzenet jelenik meg, amely az új fiók adatait tartalmazza. <br/> ![Fiókadatok képernyőképe](./media/2-end-of-sign-up-process.png) <br/>Ha ekkor a **Minden készen áll** gombra kattint, megnyílik az Office 365 felügyeleti központja, ahol felhasználókat adhat a tesztkörnyezethez. <br/><br/>Ha viszont közvetlenül az Intune Azure Portalra szeretne belépni, nyisson meg egy új böngészőablakot, és írja be a **https://portal.azure.com** címet a böngésző címsorába. Megnyílik az Azure bejelentkezési oldala, ahol a bejelentkezéshez megadhatja a kapott hitelesítő adatokat. Ezt a címet bármikor használhatja, amikor az Intune próbaverziójába szeretne belépni. <br/> ![Az Azure Portal bejelentkezési oldalának képernyőképe](./media/azure-portal-signin.png)
 
-Amikor először jelentkezik be az azure-os Intune-ba, akkor előfordulhat, hogy az Intune nem jelenik meg az Azure-irányítópulton. Az Intune szolgáltatás felvétele az Azure-irányítópultra:
-1. Az irányítópult bal oldalán, az Azure-szolgáltatások listájában kattintson a **További szolgáltatások >** elemre, és a keresőmezőbe írja be az **Intune** kifejezést.
+Amikor először jelentkezik be az Intune [Azure Portalba](https://portal.azure.com), akkor előfordulhat, hogy az Intune nem jelenik meg az Azure-irányítópulton. Az Intune szolgáltatás felvétele az Azure-irányítópultra:
+1. Az irányítópult bal oldalán, az Azure-szolgáltatások listájában kattintson a **Minden szolgáltatás >** elemre, és a keresőmezőbe írja be az **Intune** kifejezést.
 2. Válassza a listából az **Intune** elemet, és a csillagra kattintva vegye fel a szolgáltatáslistára.<br/> ![Kép: az Intune kiválasztása a szolgáltatáslistából](./media/azure-add-intune1.png)
 3. Ezután a szolgáltatáslistában az **Intune** elemet kiválasztva megnyithatja az Intune-irányítópultot.
 
 Amikor próbaverziót regisztrál, e-mailben elküldjük a fiókadatait is a regisztráció során megadott e-mail címre. Az e-mail megerősíti, hogy a próbaverzió aktív.
 
-
-
 ## <a name="keeping-the-admin-experiences-straight"></a>Átlátható felügyelet
 
-
-Az Intune Azure Portalhoz három portált használhat:
-- Az Intune-irányítópultját az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [mire képes az Intune az Azure Portalon](what-is-intune.md).
-- Az Office 365 Felügyeleti központot ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directory-t használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
-- Az Intune felügyeleti konzolt ([manage.microsoft.com](https://manage.microsoft.com)), ahol megismerheti azokat a funkciókat is, amelyek még nem elérhetőek az Azure-on.
-
-Többnyire az alább látható Intune-irányítópulton fog dolgozni. Ezen az oldalon állíthatja be és kezelheti a csoportjait, szabályzatait, eszközeit és alkalmazásait.
-
-Az irányítópultról elérheti az Intune felügyeleti konzolt, ha a **Klasszikus portál** elemre kattint az irányítópult tetején.
-
-Ha vissza szeretne térni az Intune Azure Portalhoz, nyissa meg a https://portal.azure.com webhelyet a böngészőben, és válassza újból az **Intune** elemet a szolgáltatáslistából.
-
- ![Az Intune-irányítópult képe](./media/intune-azure-dashboard.png)
-
-
-Az alábbi képen az Office 365 felügyeleti központ látható, ahol hozzáadhatja és kezelheti a felhasználókat, valamint a fiók olyan egyéb aspektusait, mint a számlázás és a támogatás.
-
-![Az Office 365 felügyeleti központját bemutató kép](./media/office-admin-center.png)
-
-Ha az Office 365 felügyeleti központból szeretné elérni az Intune irányítópultot, nyissa meg a https://portal.azure.com webhelyet a böngészőben. Válassza a szolgáltatáslistából az **Intune** elemet.
-
-Ha az Intune-ból szeretné elérni az Office 365 felügyeleti központot, nyissa meg a https://portal.office.com webhelyet a böngészőben. Ha már bejelentkezett az Intune-ba, akkor közvetlenül az Office 365 felügyeleti központba fog jutni.
+Két portált használhat:
+- Az Intune-irányítópultot az Azure-on ([portal.azure.com](https://portal.azure.com)), ahol megismerheti [mire képes az Intune](what-is-intune.md). Többnyire az Intune-irányítópulton fog dolgozni.
+- Az Office 365 Felügyeleti központot ([portal.office.com](https://portal.office.com)), ahol a felhasználókat adhatja hozzá és kezelheti, ha nem az Azure Active Directoryt használja ezekre a feladatokra. Továbbá fiókjának számlázási- támogatási- és egyéb aspektusait is kezelheti itt.
 
 ## <a name="next-steps"></a>További lépések
-
-### <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
-További tudnivalók az [Azure Portálon elérhető Intune-ról](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integráció más termékekkel
 Az Azure Active Directory felhasználói fiókok Intune-nal való használatával kapcsolatos további információk:

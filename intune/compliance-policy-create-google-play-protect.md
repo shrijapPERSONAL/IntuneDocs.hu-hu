@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató
 
@@ -29,14 +29,15 @@ Az adott beállításokat szükségessé tevő megfelelőségi szabályzatot And
 
 ## <a name="create-a-compliance-policy"></a>Megfelelőségi házirend létrehozása
 
-1. Jelentkezzen be az Azure Portalra. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. A **Kezelés** csoportból válassza az **Eszközmegfelelőség** elemet. 
 3. Válassza a **Szabályzatok** majd a **Szabályzat létrehozása** lehetőséget.
 4. Adja meg a szabályzat **Nevét** és **Leírását**.
 5. A platformra vonatkozóan adja meg az **Android** értéket.
 6. Válassza a **Beállítások** > **Eszközállapot** lehetőséget.
 7. Adja meg a **Google Play Protect**-beállításokat.
-8. Ha megadta a Google Play Protect-beállításokat, adja meg a **Biztonság**- és az **Eszköztulajdonság**-beállításokat. Ha elkészült, válassza az **OK** elemet.
+8. Ha megadta a Google Play Protect-beállításokat, adja meg a **Rendszerbiztonság**- és az **Eszköztulajdonság**-beállításokat. Ha elkészült, válassza az **OK** elemet.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Google Play Protect-beállítások megadása
 

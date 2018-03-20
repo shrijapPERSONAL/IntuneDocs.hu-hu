@@ -1,11 +1,12 @@
 ---
-title: "Az adattárház adatmodellje | Microsoft Docs"
-description: "Az Intune-adattárház napi adatgyűjtéssel dokumentálja a folyamatosan változó mobilkörnyezet előzményeit."
+title: "Az adattárház adatmodellje"
+titlesuffix: Microsoft Intune
+description: "A Microsoft Intune-adattárház napi adatgyűjtéssel dokumentálja a folyamatosan változó mobilkörnyezet előzményeit."
 keywords: "Intune-adattárház"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Az adattárház adatmodellje
 
-Az Intune-adattárház napi adatgyűjtéssel dokumentálja a mobileszközök folyamatosan változó környezetének előzményeit. A nézet az egymással összefüggő dolgok időbeli képe.
+Az Intune-adattárház napi adatgyűjtéssel dokumentálja a mobileszközök folyamatosan változó környezetének előzményeit. A nézet az egymással összefüggő entitások időbeli képe.
 
-## <a name="things-entity-sets"></a>Dolgok: Entitáskészletek
+## <a name="entities-entity-sets"></a>Entitások: Entitáskészletek
 
 Az adattárház a következő magas szintű területeken tünteti fel az adatokat:
 
@@ -33,7 +34,7 @@ Az adattárház a következő magas szintű területeken tünteti fel az adatoka
   -  Alkalmazások és szoftverleltár
   -  Eszközkonfigurációs és megfelelőségi szabályzatok
 
-Ezek a területek tartalmazzák az Intune-környezet számára jelentős entitásokat és dolgokat. Az entitáscsoportokról a következő témakörökben talál részletes információt:
+Ezek a területek tartalmazzák az Intune-környezet számára jelentős entitásokat. Az entitáscsoportokról a következő témakörökben talál részletes információt:
 
   -  [Alkalmazás](reports-ref-application.md)
   -  [Dátum](reports-ref-date.md)

@@ -1,12 +1,12 @@
 ---
-title: "Az Intune webtartalomszűrő-beállításai iOS-eszközökhöz"
-titlesuffix: Azure portal
-description: "Ismerkedjen meg az iOS-es eszközök webhelyhozzáférésének engedélyezésére és letiltására szolgáló beállításokkal."
+title: "A Microsoft Intune webtartalomszűrő-beállításai iOS-eszközökhöz"
+titlesuffix: 
+description: "Ismerkedjen meg az iOS-es eszközök webhelyhozzáférésének engedélyezésére és letiltására szolgáló Microsoft Intune-beállításokkal."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,24 @@ ms.technology:
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Webtartalomszűrő-beállítások iOS-eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ezekkel a beállításokkal konfigurálhatja, hogy az iOS-es eszközök böngészőinek végfelhasználói mely URL-eket érhetik el, és melyeket nem. Az URL-címeket kétféleképpen konfigurálhatja:
+Ez a cikk bemutatja az iOS-eszközök böngészőinek URL-cím-hozzáférését vezérlő Microsoft Intune-beállításokat.
+
+Az URL-címeket kétféleképpen konfigurálhatja:
 
 - **URL-címek konfigurálása** – használja az Apple felnőtt kulcsszavakat, például trágár vagy nyíltan szexuális tartalmú kifejezéseket kereső beépített webszűrőjét. Ez a funkció betöltéskor vizsgálja meg a weblapokat, így próbálja felismerni és blokkolni a nem megfelelő tartalmat. A szűrő által nem ellenőrzött URL-eket is konfigurálhat, valamint a szűrő beállításaitól függetlenül letiltott URL-eket.
 
 - **Csak meghatározott webhelyek** (csak a Safari böngészőben) – ezek az URL-ek a Safari könyvjelzői közé kerülnek. A felhasználó **kizárólag** ezeket a webhelyeket nyithatja meg, az összes többi le lesz tiltva. Akkor célszerű ezt a lehetőséget választani, ha a felhasználók által elérhető URL-ek listája pontosan ismert.
 Ha nincs megadva semmilyen URL, akkor a felhasználók mindössze a microsoft.com, a microsoft.net és az apple.com webhelyekhez férnek hozzá.
-
-
 
 ## <a name="get-started"></a>Első lépések
 
@@ -63,7 +63,7 @@ Ha nincs megadva semmilyen URL, akkor a felhasználók mindössze a microsoft.co
 2. Az egyes webhelyek adatainak kitöltése után mindig kattintson a **Hozzáadás** gombra.
 3. Amikor végzett, kattintson az **OK**gombra.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Az Intune a következő URL-eket engedélyezi automatikusan:
 > - www.microsoft.com
 > - www.microsoft.net

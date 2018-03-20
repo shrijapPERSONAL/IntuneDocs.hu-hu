@@ -1,29 +1,29 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban macOS esetén"
-titlesuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a macOS-eszközökön."
+title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban macOS esetén"
+titlesuffix: 
+description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a macOS rendszerű eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>A macOS eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>A Microsoft Intune macOS-eszközkorlátozásokra vonatkozó beállításai
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ezen beállítások használatával a macOS-eszközöket egy eszközkorlátozási profilban kezelheti.
+A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó beállításait, melyek konfigurálhatók macOS rendszerű eszközökhöz.
 
 ## <a name="password"></a>Jelszó
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
@@ -49,5 +49,5 @@ A lista konfigurálásához kattintson a **Hozzáadás** gombra, adja meg a kív
 
 ### <a name="unmarked-email-domains"></a>Jelöletlen e-mail-tartományok
 
-Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a végfelhasználó nem a konfigurált tartományok egyikéből kap e-mailt, az iOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
+Az **E-mail-tartomány URL-címe** mezőben adjon a listához egy vagy több URL-címet. Ha a felhasználó nem a konfigurált tartományok egyikéből kap e-mailt, az iOS-es Mail alkalmazásban ez az e-mail nem megbízhatóként jelenik meg.
 

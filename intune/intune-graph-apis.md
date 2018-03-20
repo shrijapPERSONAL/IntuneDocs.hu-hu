@@ -5,7 +5,7 @@ keywords: "intune graphapi c# powershell engedély szerepkörök"
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
 
@@ -97,7 +97,7 @@ Ha alkalmazásokat szeretne regisztrálni a Microsoft Graph API használatához:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Helyezzen pipát az alkalmazás számára szükséges szerepkörök nevétől balra.  Az adott Intune-engedélyhatókörök megismeréséhez lásd: [Intune-engedélyhatókörök](#user-content-intune-permission-scopes).  Egyéb Graph API-engedélyhatókörök megismeréséhez lásd a [Microsoft Graph-engedélyekkel kapcsolatos segédanyagot](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Helyezzen pipát az alkalmazás számára szükséges szerepkörök nevétől balra.  Az adott Intune-engedélyhatókörök megismeréséhez lásd: [Intune-engedélyhatókörök](#intune-permission-scopes).  Egyéb Graph API-engedélyhatókörök megismeréséhez lásd a [Microsoft Graph-engedélyekkel kapcsolatos segédanyagot](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     A legjobb eredményt akkor éri el, ha az alkalmazás implementálásához szükséges lehető legkevesebb szerepkört választja.
 
@@ -139,7 +139,7 @@ A Microsoft Graph engedélyezésekor az alábbi táblázatban összefoglalt Intu
 
 _Hozzáférés engedélyezése_ beállítás | Hatókör neve
 :--|:--
-__Felhasználót érintő távoli műveletek végzése Microsoft Intune-eszközökön__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Felhasználót érintő távoli műveletek végzése Microsoft Intune-eszközökön__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Microsoft Intune-eszközök olvasása és írás rájuk__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune-eszközök olvasása__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC beállításainak olvasása és írása__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ Ne felejtse el hozzáadni a felhasználót igény szerint a többi szerepkörhö
 
 Ezenkívül:
 
-- A http://portal.office.com webhelyen rendeljen hozzá egy Intune-licencet az felhasználói fiókhoz.
+- A https://portal.office.com webhelyen rendeljen hozzá egy Intune-licencet az felhasználói fiókhoz.
 
 - Módosítsa úgy az alkalmazás kódját, hogy a sajátja helyett inkább az ügyfél Azure AD-bérlői tartományán hitelesítsen.
 
