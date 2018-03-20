@@ -1,12 +1,12 @@
 ---
-title: "Megfelelőségi szabályzat létrehozása Android rendszerhez"
-titleSuffix: Azure portal
-description: "Útmutató az androidos eszközök megfelelőségi szabályzatának létrehozásához.”"
+title: "Android-eszközök eszközmegfelelőségi szabályzatának létrehozása a Microsoft Intune-ban"
+titleSuffix: 
+description: "Az eszközmegfelelőség követelményeinek megszabásához Microsoft Intune eszközmegfelelőségi szabályzatot hozhat létre Android-eszközökre."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6da4e6ffb473cee73f3946e5af3d97ddd5bb6b7b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Android-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz. 
-
-- A megfelelőségi szabályzatokról a [Mi az eszközmegfelelőség?](device-compliance.md) című témakörben találhat további információt.
-- A megfelelőségi szabályzatok létrehozása előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
+Az Android-eszközökhöz készült megfelelőségi szabályzatok meghatározzák az Android-eszközök megfelelőségéhez szükséges szabályokat és beállításokat. A szabályzatokat feltételes hozzáféréssel is használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, továbbá eszközjelentéseket kaphat, és meg nem felelés esetén különböző műveleteket hajthat végre. Az Azure-beli Intune portálon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és a létrehozásuk előtt teljesítendő előfeltételekről az [Eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozásához
 
-1. Az **Intune** panelen válassza az **Eszközmegfelelőség beállítása** lehetőséget. A **Kezelés** alatt válassza az **Összes eszközmegfelelőségi szabályzat**, majd a **Létrehozás** lehetőséget.
-2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
-3. A **Megfelelőségi követelmények** területen megadhatja a **Biztonság**, az **Eszközállapot** és az **Eszköztulajdonság** beállításait. Ha elkészült, válassza az **OK** elemet.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + Felügyelet** szakaszban található.
+1. Az **Intune** panelen válassza az **Eszközmegfelelőség** lehetőséget. A **Kezelés** területen válassza a **Szabályzatok**, majd a **Szabályzat létrehozása** lehetőséget.
+3. A **Beállítások konfigurálása** területre kattintva megadhatja az **Eszközbiztonság**, az **Eszközállapot**, és az **Eszköztulajdonságok** beállításait. Ha elkészült, válassza az **OK** elemet.
 
-<!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
+9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.--->
 
 ## <a name="to-assign-user-groups"></a>Felhasználói csoportok hozzárendeléséhez
 
-A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatok a **Megfelelőségi szabályzatok** panelen találhatók.
+A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatokat az **Eszközmegfelelőségi szabályzatok** panelen tekintheti meg.
 
-1. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Ezután kiválaszthat **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
-2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához. Itt találhatóak az Azure Active Directory biztonsági csoportjai.  Válassza ki azokat a felhasználói csoportokat, amelyekhez hozzá szeretné rendelni a szabályzatot, és válassza a **Kiválasztás** elemet. A **Kiválasztás** elem választásával telepítheti a szabályzatot a felhasználók számára.
+1. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik egy panel, amelyen kiválaszthatja az **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
+2. A **Kiválasztott csoportok** elemre kattintva nyissa meg az Azure AD-biztonsági csoportokat megjelenítő panelt. Itt találhatóak az Azure Active Directory biztonsági csoportjai.  Ezek közül kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
 
 Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
 
@@ -58,7 +56,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabá
 ## <a name="device-health-and-security-settings"></a>Eszközállapot és biztonsági beállítások
 
 - **Az eszköz nem lehet függetlenített vagy feltört eszköz**: Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
-- **Annak megkövetelése, hogy az ismeretlen forrásból származó alkalmazások telepítését a rendszer megakadályozza az eszközökön (Android 4.0 vagy újabb)**: A beállítás engedélyezésével és az **Igen** lehetőség beállításával letilthatja azokat az eszközöket, amelyeken engedélyezve van a **Biztonság** >; **Ismeretlen források** beállítás.
+- **Annak megkövetelése, hogy az ismeretlen forrásból származó alkalmazások telepítését a rendszer megakadályozza az eszközökön (Android 4.0 vagy újabb)**: A beállítás engedélyezésével és az **Igen** lehetőség beállításával letilthatja azokat az eszközöket, amelyeken engedélyezve van a **Biztonság** > **Ismeretlen források** beállítás.
 
 ### <a name="important"></a>Fontos
 
@@ -68,10 +66,12 @@ Az alkalmazások közvetlen telepítéséhez engedélyezni kell az **Ismeretlen 
 - **A Biztonsági fenyegetések keresése az eszközön beállítás engedélyezésének megkövetelése az eszközökön (Android 4.2-4.4)**: Ezzel a beállítás szabja meg, hogy az **Alkalmazások ellenőrzése** funkció engedélyezve van-e az eszközön.
 - **Az Android minimálisan előírt biztonsági javítási szintje (Android 6.0 vagy újabb)**: Ezzel a beállítással adható meg az Android minimálisan előírt javítási szintje. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot a következő formátumban kell megadni: ÉÉÉÉ-HH-NN.
 - **Veszélyforrások elleni eszközvédelem engedélyezése**: ezzel a beállítással megfelelési feltételként kiveszi a kockázatelemzést Lookout MTP-megoldásból. Válassza ki a megengedett maximális kockázati szintet, amely az alábbiak egyike lehet:
-  - **Semmilyen (védett)**: Ez a fenyegetettségi szint a legbiztonságosabb. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
+  - **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszköz vonatkozásában fennálló fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
-  - **Magas**: Ez a fenyegetettségi szint a legkevésbé biztonságos. Alapvetően az összes kockázati szintet engedélyezi. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+  - **Magas**: Ez a legkevésbé biztonságos beállítás. Alapvetően az összes kockázati szintet engedélyezi. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+
+További információ: [az eszközök fenyegetések elleni védelmét szolgáló szabály engedélyezése a megfelelőségi szabályzatban](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
@@ -94,7 +94,7 @@ Az alkalmazások közvetlen telepítéséhez engedélyezni kell az **Ismeretlen 
 
 ### <a name="encryption"></a>Encryption
 
-- **Titkosítás megkövetelése mobileszközön**: Válassza az **Igen** értéket annak megköveteléséhez, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás használatával titkosíthatók.
+- **Titkosítás megkövetelése mobileszközön**: Állítsa ezt a beállítást **Igen** értékre, ha szeretné megkövetelni, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás használatával titkosíthatók.
 
 ## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 
@@ -119,9 +119,9 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 --------------------------
 
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználónak kötelező PIN-kódot beállítani.)+
+**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználó kénytelen lesz PIN-kódot beállítani.)
 
-**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) A rendszer a következő műveleteket hajtja végre, ha az eszköz nem megfelelő:+
+**Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
 
 - A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.

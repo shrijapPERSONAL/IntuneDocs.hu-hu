@@ -1,9 +1,10 @@
 ---
-title: "Az Office 365 Exchange Online védelmének biztosítása eszközkezelés megkövetelése nélkül"
-description: "Hozzáférést biztosít az alkalmazottaknak a munkahelyi e-mail-címükhöz. Nincs szükség eszközkezelésre."
+title: "Exchange eszközkezelés nélkül"
+titleSuffix: Microsoft Intune
+description: "A Microsoft Intune-nal egy eszközkezelési rendszer beállítása nélkül adhat hozzáférést a felhasználóknak az Office 365-ös Exchange Online-levelezésükhöz."
 keywords: "Office 365 Exchange e-mail-hozzáférés"
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 10/31/2017
 ms.prod: 
@@ -13,11 +14,11 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53872921bc4c7a52224741ab3b743a1d9ac52f42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e677a8418aba9aca4db753695444140ea9f6f941
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Az Office 365 Exchange Online védelmének biztosítása eszközkezelés megkövetelése nélkül
 

@@ -1,35 +1,35 @@
 ---
-title: "E-mail-beállítások az Intune-ban Windows Phone 8.1-es eszközök esetén"
-titleSuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az e-mail-kapcsolatok Windows Phone 8.1 rendszerű eszközökön való konfigurálásához használható Intune-beállításokról."
+title: "E-mail-beállítások a Microsoft Intune-ban Windows Phone 8.1-es eszközök esetén"
+titleSuffix: 
+description: "Útmutató az e-mail-kapcsolatok Windows Phone 8.1 rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14b39932bb6bf2ee32fea8e51603fc055436dbe9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 06815ac6ed6e24bc1efb4ea612b867fc78e7fb5e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Windows Phone 8.1-es eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>A Windows Phone 8.1 rendszerű eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+A cikk a Windows Phone 8.1 rendszerű eszközökhöz konfigurálható e-mail-profilbeállításokat mutatja be.
 
 
 - **Az összes beállítás alkalmazása csak Windows Phone 8.1 rendszeren** – Ez a beállítás a klasszikus Intune-portálon konfigurálható. Ez a beállítás az Azure Portal webhelyen nem módosítható. Ha ez a beállítás a **Konfigurálva** értékre van állítva, a rendszer minden beállítást csak a Windows Phone 8.1 rendszerű eszközökre alkalmaz. Ha a **Nincs konfigurálva** értékre van állítva, akkor a rendszer a Windows 10 Mobile rendszerű eszközökre is alkalmazza ezeket a beállításokat.
 - **E-mail-kiszolgáló** – Itt adja meg az Exchange-kiszolgáló állomásnevét.
-- **Fióknév** – Adja meg az e-mail-fiók megjelenítendő nevét (ez lesz látható a felhasználók eszközén).
-- **Felhasználónév attribútum az AAD-ből** – Ez az Active Directory (AD) vagy az Azure AD egy attribútuma, ennek alapján fogja generálni a rendszer ennek az e-mail-profilnak a felhasználónevét. Válassza az **Elsődleges SMTP-cím** (például **user1@contoso.com**) lehetőséget, vagy az **Egyszerű felhasználónév** (például **user1** vagy **user1@contoso.com**) lehetőséget.
+- **Fióknév** – Adja meg az e-mail-fiók megjelenítendő nevét (ez a név lesz látható a felhasználók eszközén).
+- **Felhasználónév attribútum az AAD-ből** – Ez az Active Directory (AD) vagy az Azure AD egy attribútuma, ennek alapján generálja a rendszer az e-mail-profil felhasználónevét. Válassza az **Elsődleges SMTP-cím** (például **user1@contoso.com**) lehetőséget, vagy az **Egyszerű felhasználónév** (például **user1** vagy **user1@contoso.com**) lehetőséget.
 - **E-mail-cím attribútuma az AAD-ből** – Válassza ki, hogyan jöjjön létre a felhasználói e-mail-cím az egyes eszközökön. Ha az elsődleges SMTP-cím használatával kíván bejelentkezni az Exchange-be, válassza az **Elsődleges SMTP-cím** lehetőséget; ha e-mail-címként a teljes egyszerű felhasználónevet kívánja használni, válassza az **Egyszerű felhasználónév** lehetőséget.
 
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="synchronization-settings"></a>Szinkronizálási beállítások
 
 - **Szinkronizálandó e-mailek mennyisége** – Válassza ki, hogy hány napra visszamenőleg szeretné szinkronizálni az e-maileket, vagy az összes e-mail szinkronizálásához válassza a **Korlátlan** lehetőséget.
-- **Szinkronizálás ütemezése** – Válassza ki azt az ütemezést, amely szerint az eszközök szinkronizálni fogják az adatokat az Exchange Serverrel. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.
+- **Szinkronizálás ütemezése** – Válassza ki azt az ütemezést, amely alapján az eszközök szinkronizálni fogják az adatokat az Exchange Serverrel. **Az üzenetek érkezésekor** lehetőség kiválasztásával a rendszer azonnal szinkronizálja az adatokat, amint megérkeznek, a **Manuális** beállítás esetén pedig a felhasználónak kell kezdeményeznie a szinkronizálást.
 
 ## <a name="content-sync-settings"></a>Tartalomszinkronizálási beállítások
 

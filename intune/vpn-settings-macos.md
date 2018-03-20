@@ -1,43 +1,43 @@
 ---
-title: "VPN-beállítások az Intune-ban macOS-eszközök esetén"
-titlesuffix: Azure portal
-description: "Útmutató a VPN-kapcsolatok macOS-eszközökön való konfigurálásához használható Intune-beállításokhoz."
+title: "macOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban"
+titlesuffix: 
+description: "A VPN-kapcsolatok macOS-eszközökön való konfigurálásához használható Intune-beállítások ismertetése."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ec712abe220ca6b020c5d015dc55f0d956cd860
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>macOS-eszközökre vonatkozó VPN-beállítások a Microsoft Intune-ban
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>A macOS rendszerű eszközökre vonatkozó VPN-beállítások konfigurálása a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A megadott beállításoktól függően az alábbi listában található értékek némelyike nem konfigurálható.
+A cikk a VPN-kapcsolatoknak a macOS rendszerű eszközökön való konfigurálására használható Intune-beállításokat ismerteti.
 
-## <a name="base-vpn-settings"></a>**Alapvető VPN-beállítások**
+A megadott beállításoktól függően a következő listában található értékek némelyike nem konfigurálható.
+
+## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
 **Kapcsolat neve** – Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakozni fognak. Példák: **192.168.1.1**, **vpn.contoso.com**.
+- **IP-cím vagy teljes tartománynév** – Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak. Példák: **192.168.1.1**, **vpn.contoso.com**.
 - **Hitelesítési módszer** – Válassza ki a következő lehetőségek közül, hogy miképpen hitelesítik magukat az eszközök a VPN-kiszolgálón:
     - **Tanúsítványok** – A **Hitelesítési tanúsítvány** szakaszban adja meg a kapcsolat hitelesítéséhez korábban létrehozott SCEP- vagy PKCS-tanúsítványprofilok valamelyikét. A tanúsítványprofilokról [a tanúsítványok konfigurálását](certificates-configure.md) ismertető cikkben talál részletesebb tájékoztatást.
     - **Felhasználónév és jelszó** – A végfelhasználóknak felhasználónevet és jelszót kell megadniuk, ha szeretnének bejelentkezni a VPN-kiszolgálóra.
 - **Kapcsolat típusa** – Az alábbi listából válassza ki a VPN-kapcsolat típusát:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Egyéni VPN**

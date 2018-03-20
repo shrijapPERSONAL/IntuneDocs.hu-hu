@@ -1,12 +1,12 @@
 ---
-title: "A helyszíni EAS Exchange Connector beállítása az Intune-ban"
-titleSuffix: Azure portal
-description: "Az Intune és a helyszíni Exchange Server közötti kommunikáció engedélyezése a Connector eszközzel"
+title: "A Microsoft Intune helyszíni Exchange-összekötőjének beállítása"
+titleSuffix: 
+description: "A helyszíni Exchange-összekötővel kezelheti az eszközök az Exchange-postaládákhoz való hozzáférését az Intune-regisztráció és az Exchange Active Sync (EAS) alapján."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Az Intune helyszíni Exchange Connector telepítése az Azure-beli Microsoft Intune-ban
 
@@ -70,11 +70,11 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 
 1. Egy, a helyszíni Exchange Conectort támogató Windows Server rendszerben nyissa meg az [Azure Portalt](http://portal.azure.com), és jelentkezzen be egy olyan felhasználói fiókkal, amely rendszergazda a helyszíni Exchange Serveren, és van licence az Exchange Server használatához.
 
-2. Válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+2. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 3. Az **Intune** kiválasztásával megnyílik az Intune irányítópult. Itt válassza a **Helyszíni hozzáférés** lehetőséget.
 
-4. A **Helyszíni hozzáférés – Exchange ActiveSync-összekötő** panel **Beállítás** szakaszában válassza az **A helyszíni összekötő letöltése** elemet.
+4. Válassza az **Exchange ActiveSync összekötő** lehetőséget, majd **A helyszíni összekötő letöltése** elemet.
 
 5.  A helyszíni Exchange Connectort egy tömörített (.zip) mappa tartalmazza, amelyet megnyithat vagy a számítógépre is menthet. A **Fájl letöltése** párbeszédpanelen kattintson a **Mentés** parancsra a tömörített mappa biztonságos helyre való mentéséhez.
 
@@ -93,7 +93,7 @@ A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi
 
 3.  A **Microsoft Intune Exchange Connector** párbeszédpanelen válassza ki a **Helyszíni Microsoft Exchange Server** vagy **Üzemeltetett Microsoft Exchange Server** lehetőségek egyikét.
 
-  ![Válassza ki a meglévő Exchange Server típusát](./media/intune-sa-exchange-connector-config.png)
+  ![Kép az Exchange-kiszolgáló típusának kiválasztási helyéről](./media/intune-sa-exchange-connector-config.png)
 
   Helyszíni Exchange-kiszolgáló esetén adja meg az **Ügyfélelérési kiszolgáló** szerepkört futtató Exchange-kiszolgáló nevét vagy teljes tartománynevét.
 
@@ -116,7 +116,7 @@ A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi
 
     5. A **Felhasználó (Tartomány\felhasználó)** és **Jelszó** mezőknél adja meg az Exchange-kiszolgálóhoz való csatlakozáshoz szükséges hitelesítő adatokat.
 
-    6.  Adja meg azokat a rendszergazdai hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.
+    6.  Adja meg azokat a hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezt a felhasználót dedikálhatja kizárólag az értékesítésekre. Az értesítésekkel foglalkozó felhasználónak egy Exchange-postaládára van szüksége az értesítések e-mailes küldéséhez. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.  
 
         Győződjön meg arról, hogy az Automatikus észlelés szolgáltatás és az Exchange-webszolgáltatások konfigurálva vannak az Exchange ügyfélelérési kiszolgálón. Az ezzel kapcsolatos további információkért lásd: [Ügyfélelérési kiszolgáló](https://technet.microsoft.com/library/dd298114.aspx).
 

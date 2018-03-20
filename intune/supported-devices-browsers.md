@@ -1,5 +1,6 @@
 ---
-title: "Támogatott eszközök – Microsoft Intune"
+title: "A Microsoft Intune által támogatott operációs rendszerek és böngészők"
+titleSuffix: 
 description: "Az Intune-eszközkezelés által támogatott eszközplatformok és böngészők listája"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Támogatott operációs rendszerek és böngészők
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Ez a cikk a vállalatnál az eszközkezelésért felelős rendszergazdák számára készült. A következő témakörben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions).
+A Microsoft Intune beállítása előtt tekintse át a támogatott operációs rendszereket és böngészőket.
 
-A Microsoft Intune beállítása előtt tekintse át az alábbi követelményeket:
-
-- [Támogatott operációs rendszerek](#intune-supported-operating-systems)
-- [Az Intune használatára alkalmas böngészők listája](#intune-supported-web-browsers)
-
-Ismerkedjen meg [az Intune hálózatisávszélesség-felhasználásával](network-bandwidth-use.md) is ([a klasszikus portálon](/intune-classic/get-started/network-bandwidth-use)).
+A következő témakörben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions). Ismerkedjen meg [az Intune hálózatisávszélesség-felhasználásával](network-bandwidth-use.md) is ([a klasszikus portálon](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Az Intune által támogatott operációs rendszerek
 

@@ -1,29 +1,30 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Windows Phone 8.1 esetén"
-titleSuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows Phone 8.1-es eszközökön."
+title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Windows Phone 8.1 esetén"
+titleSuffix: 
+description: "Az Intune azon beállításainak ismertetése, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows Phone 8.1 rendszerű eszközökön."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>A Windows Phone 8.1 eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>A Windows Phone 8.1 eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó beállításait, melyek konfigurálhatók Windows Phone 8.1 rendszerű eszközökhöz.
+
 
 ## <a name="general"></a>Általános
 
@@ -75,7 +76,7 @@ Például: Keressen rá az áruházban a Skype alkalmazásra. A használt URL-c�
 
 ### <a name="additional-options"></a>További beállítások
 
-Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, mely a következő formátumú: <*alkalmazás URL-címe*>, <*alkalmazás neve*>, <*alkalmazás kiadója*>. Az **Exportálás** gombra kattintva pedig létrehozhat egy CSV-fájlt, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.
+Az **Importálás** gombra kattintva feltöltheti a listát egy CSV-fájlból, mely a következő formátumú: <*alkalmazás URL-címe*>, <*alkalmazás neve*>, <<app publisher>>. Az **Exportálás** gombra kattintva pedig létrehozhat egy CSV-fájlt, amely ugyanebben a formátumban tartalmazza a korlátozott alkalmazások listáját.
 
 
 ## <a name="browser"></a>Böngésző

@@ -1,27 +1,25 @@
 ---
-title: "Egyéni Intune-beállítások iOS-eszközökhöz"
+title: "Egyéni Microsoft Intune-beállítások iOS rendszerű eszközökhöz"
 titleSuffix: Azure portal
-description: "Az egyéni iOS-profil beállításainak ismertetése"
+description: "Útmutató az egyéni iOS-profilokban használható beállításokhoz."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 761b19de8442e88717a5dcd52f7f0375bace91da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Egyéni Microsoft Intune-beállítások iOS-eszközökhöz
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>Egyéni Microsoft Intune-eszközbeállítások iOS rendszerű eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,7 +29,7 @@ Ezzel a funkcióval olyan iOS-beállításokat rendelhet hozzá a felhasználók
 
 
 1. Az első lépésekhez kövesse az [Egyéni eszközbeállítások konfigurálása a Microsoft Intune-ban](custom-settings-configure.md) című témakör utasításait.
-2. A **Profil létrehozása** panelen adja meg a következőket:
+2. Az **Egyéni konfigurációs profil** panelen konfigurálja az összes alábbi beállítást:
 
 - **Egyéni konfigurációs profil neve** – Adja meg, hogy a szabályzat milyen néven jelenjen meg az eszközön és az Intune-állapotban.
 - **Konfigurációs profil fájlja** – Keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt.

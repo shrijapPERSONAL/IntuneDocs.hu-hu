@@ -1,12 +1,12 @@
 ---
-title: "Bevezetés a szabályzatok használatába"
-titlesuffix: Azure portal
-description: "Szabályzatok létrehozásával megakadályozhatja a felhasználókat abban, hogy olyan dolgokat hajtsanak végre az eszközeikkel, amelyekre nincs felhatalmazásuk."
+title: "Bevezetés a Microsoft Intune szabályzatainak használatába"
+titlesuffix: 
+description: "A szabályzatokkal megvédheti a vállalati adatait, és kezelheti a végfelhasználók által a céges erőforrásokhoz való hozzáféréshez használt eszközöket."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="get-started-with-policies"></a>Bevezetés a szabályzatok használatába
+# <a name="get-started-with-creating-policies"></a>Szabályzatok létrehozása – első lépések
 
 Az Intune használatának megkezdésekor az egyik legfőbb cél az eszközök regisztrálása, hogy biztosan megfeleljenek a vállalati szabályzatoknak. A megfelelőségi szabályzatok nem csak a speciális eszköztípusok, például vállalati tulajdonú kioszkgépek, hanem a személyes eszközök (saját eszközök használata), táblagépek és felhasználó nélküli eszközök kezelésében is segítenek.
 
-![Megfelelőségi irányítópult nagyon kevés adattal](/intune/media/generic-compliance-dashboard.png)
+![Megfelelőségi irányítópult kevés adattal](/intune/media/generic-compliance-dashboard.png)
 
-A megfelelőségi szabályzatok a következő felügyeleti képességeket biztosítják mobileszközökhöz:
+Mobileszközök kezelése az alábbi területeken megfelelőségi szabályzatokkal:
 
 * Az egyes felhasználók által regisztrálható eszközök számának korlátozása
 * Eszközbeállítások (például eszközszintű titkosítás, jelszóhossz, kamerahasználat) kezelése
@@ -45,11 +45,12 @@ Minden egyes platformhoz Ön hoz létre megfelelőségi szabályzatokat. Ezt a g
 
 __Hogyan hozhatok létre szabályzatot?__
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Az **Erőforrások keresése** területen keresse meg az **Intune-t**.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Eszközmegfelelőség** elemet.
 4. Az **Eszközmegfelelőség** panelen válassza a **Szabályzatok** lehetőséget.
-5. Válassza a **Szabályzat létrehozása** elemet, majd töltse ki a részleteket, például a **Név** és a **Leírás** mezőt. A **Platform** beállításaként válassza az **iOS** lehetőséget.
+5. Válassza a **Szabályzat létrehozása** elemet, majd töltse ki a részleteket, például a **Név** és a **Leírás** mezőt. 
+6. A **Platform** beállításaként válassza az **iOS** lehetőséget.
 6. A **Beállítások** részben válassza a **Rendszerbiztonság** elemet, majd váltsa át a **Jelszó szükséges a mobileszközök feloldásához** beállítását a **Kötelező** lehetőségre. Más szabályokat is beállíthat, többek között a **Jelszó minimális hossza**, a **Jelszó kötelező típusa**  és a **Nem alfanumerikus karakterek száma a jelszóban** szabályt. Amikor befejezte a szabályzat beállítását, válassza az **OK** gombot.
 7. Térjen vissza a **Szabályzat létrehozása** panelre, majd válassza a **Létrehozás** lehetőséget.
 8. A szabályzat létrehozása után válassza a **Hozzárendelések** lehetőséget a tesztcsoporthoz való hozzárendeléséhez. Válassza ki a tesztcsoportot – amelynek tartalmaznia kell a tesztfelhasználót –, majd rendelje hozzá a szabályzatot ehhez a csoporthoz a **Mentés** gombra kattintva.

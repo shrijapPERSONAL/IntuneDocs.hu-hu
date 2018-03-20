@@ -1,11 +1,12 @@
 ---
 title: "Adatok beolvasása az adattárház API-ból REST-ügyféllel"
+titlesuffix: Microsoft Intune
 description: "Adatok beolvasása az Intune-adattárházból RESTful API-val"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e96e1a728fbb054f412dc6c2a3610179aec18b75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -34,7 +35,7 @@ Az alábbi lépésekből megtudhatja, hogyan engedélyezheti és érheti el az A
 
 ## <a name="create-a-client-app-as-a-native-app-in-azure"></a>Ügyfélalkalmazás létrehozása natív alkalmazásként az Azure-ban
 
-Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az ügyfélalkalmazás. A helyi számítógépen futó ügyfélalkalmazás az Intune adattárház API-ra hivatkozik, amikor a helyi ügyfél bekéri a hitelesítési adatokat. 
+Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az ügyfélalkalmazás. A helyi számítógépen futó ügyfélalkalmazás az Intune adattárház API-ra hivatkozik, amikor a helyi ügyfél bekéri a hitelesítési adatokat.
 
 1. Jelentkezzen be a bérlőhöz tartozó Azure Portalra. Válassza az **Azure Active Directory** > **Alkalmazásregisztrációk** lehetőséget az **Alkalmazásregisztrációk** panel megnyitásához.
 2. Válassza az **Új alkalmazásregisztráció** lehetőséget.
@@ -61,7 +62,7 @@ Most már rendelkezik egy Azure-ban definiált alkalmazással. Gondoskodjon arr�
 7.  Válassza a **Kiválasztás** lehetőséget.
 8.  Jelölje be a **Delegált engedélyek** jelölőnégyzetet a **Get data warehouse information from Microsoft Intune** (Adattárház-információk beolvasása a Microsoft Intune-ból) lehetőség felvételéhez.
 
-    ![Hozzáférés engedélyezése](media\reports-get_rest_data_client_access.png)
+    ![Hozzáférés engedélyezése – Microsoft Intune API](media\reports-get_rest_data_client_access.png)
 
 9.  Válassza a **Kiválasztás** lehetőséget.
 10.  Válassza a **Kész** lehetőséget.
@@ -90,12 +91,12 @@ A következők szükségesek REST-hívások a Postman alkalmazásból való vég
 
 A végpont is szükséges. Az adattárház-végpont beszerzéséhez szükséges az egyedi hírcsatorna URL-címe. Az OData-végpont az Adattárház panelen érhető el.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** + **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Egyéb feladatok** szakaszban válassza az **Intune-adattárház beállítása** lehetőséget.
 4. Másolja be az egyedi hírcsatorna URL-címét a **Külső gyártótól származó jelentéskészítési szolgáltatások használata** szakaszba. Az eredménynek a következőhöz hasonlónak kell lennie: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-A végpont formátuma a következőnek felel meg: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+A végpont formátuma a következőnek felel meg: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
 
 A **dates** entitás megjelenése például a következő: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -151,10 +152,10 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
 > Az alábbi kódminta elérhető a [GitHubon](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). A kód legutóbbi változtatásai és frissítései a GitHub-tárházban érhetők el.
 
 1.  Indítsa el a **Microsoft Visual Studiót**.
-2.  Válassza a **Fájl** > **Új projekt** lehetőséget. Bontsa ki a **Visual C#** lehetőséget, és válassza a **Console App (.Net Framework)** (Konzolalkalmazás (.Net-keretrendszer)) lehetőséget. 
+2.  Válassza a **Fájl** > **Új projekt** lehetőséget. Bontsa ki a **Visual C#** lehetőséget, és válassza a **Console App (.Net Framework)** (Konzolalkalmazás (.Net-keretrendszer)) lehetőséget.
 3.  A projektnek adja az ` IntuneDataWarehouseSamples` nevet, és tallózással válassza ki, hova szeretné azt menteni, majd kattintson az **OK** gombra.
 4.  Kattintson a jobb gombbal a megoldás nevére a Megoldáskezelőben, majd válassza a **Manage NuGet Packages for Solution** (Megoldás NuGet-csomagjainak kezelése) lehetőséget. Válassza a **Tallózás** elemet, majd írja a `Microsoft.IdentityModel.Clients.ActiveDirectory` szöveget a keresőmezőbe.
-5. Válassza ki a csomagot, jelölje ki a **IntuneDataWarehouseSamples** projektet a Manage Packages for Your Solution (Megoldás csomagjainak kezelése) szakaszban, majd válassza a **Telepítés** lehetőséget. 
+5. Válassza ki a csomagot, jelölje ki a **IntuneDataWarehouseSamples** projektet a Manage Packages for Your Solution (Megoldás csomagjainak kezelése) szakaszban, majd válassza a **Telepítés** lehetőséget.
 6. Az **Elfogadom** elemet választva fogadja el a NuGet-csomag licencfeltételeit.
 7. Nyissa meg a `Program.cs` fájlt a Megoldáskezelőben.
 
@@ -178,15 +179,15 @@ namespace IntuneDataWarehouseSamples
     * emailAddress - The email address of the user that you will authenticate as.
     *
     * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not 
+    *    This is inline only for simplicity in this sample. We do not
     *    recommend storing passwords in plaintext.
     *
     * applicationId - The application ID of the native app that was created in AAD.
     *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in 
+    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
     *      the Azure portal.
-    * 
-    * collectionName - The name of the warehouse entity collection you would like to 
+    *
+    * collectionName - The name of the warehouse entity collection you would like to
     *      access.
     */
    var emailAddress = "intuneadmin@yourcompany.com";
@@ -224,6 +225,6 @@ namespace IntuneDataWarehouseSamples
 
 ## <a name="next-steps"></a>További lépések
 
-Az engedélyezéssel, az API URL-címek szerkezetével és az OData-végpontokkal kapcsolatban az [Intune-adattárház API-végpontja](reports-api-url.md) című témakörben találhat további információkat. 
+Az engedélyezéssel, az API URL-címek szerkezetével és az OData-végpontokkal kapcsolatban az [Intune-adattárház API-végpontja](reports-api-url.md) című témakörben találhat további információkat.
 
 Az API-ban megtalálható adatentitásokkal kapcsolatban az Intune-adattárház adatmodelljében is tájékozódhat. További információ: [Az adattárház adatmodellje](reports-ref-data-model.md).

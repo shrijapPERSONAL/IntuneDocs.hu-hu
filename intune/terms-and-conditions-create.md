@@ -1,12 +1,12 @@
 ---
 title: "A használati feltételek beállítása a Microsoft Intune-ban"
-titlesuffix: Azure portal
-description: "A felhasználók által az Intune Céges portálon látható használati feltételek beállítása. "
+titlesuffix: 
+description: "A felhasználók által az Intune Céges portálon látható használati feltételek beállítása."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df7f91cbdcbafb785d0c4cfb1612d6c2f9e5581e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="ensure-users-accept-company-terms-for-access"></a>Gondoskodhat arról, hogy a felhasználók elfogadják a hozzáférésre vonatkozó céges feltételeket
+# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>A céges felhasználói hozzáférési használati feltételek kezelése
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,7 +32,9 @@ Több használati feltételt hozhat létre, és azokat különböző csoportokho
 ## <a name="create-terms-and-conditions"></a>Használati feltételek létrehozása
 Az alábbi lépések végrehajtásával hozhat létre használati feltételeket. A megjelenítendő név és leírás adminisztrációs célt szolgál, míg a feltételek tulajdonságait a felhasználók láthatják a Céges portálon.
 
-1. Válassza az Azure Portalon az **Eszközök regisztrálása**, majd a **Használati feltételek** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Válassza az **Intune** panelen az **Eszközök beléptetése**, majd a **Használati feltételek** elemet.
 2. Válassza a **Létrehozás** lehetőséget.
 ![Képernyőkép az Azure Portalról, melyen a használati feltételekhez tartozó Létrehozás gomb látható](media/terms-create-terms.png)
 3. A kibontott panelen adja meg az alábbi adatokat:
@@ -41,7 +43,7 @@ Az alábbi lépések végrehajtásával hozhat létre használati feltételeket.
 
    - **Leírás**: További részletek, amelyek alapján könnyebben felismerhető az adott feltételkészlet az Azure Portalon.
 
-4. Nyissa meg a Feltételek és kikötések panelt a Használati feltételek megadása elem melletti nyílra kattintva, majd adja meg a következő adatokat:
+4. Nyissa meg a Feltételek és kikötések panelt a **Használati feltételek megadása** elem melletti nyílra kattintva, majd adja meg a következő adatokat:
 
    ![Képernyőkép a végfelhasználói használati feltételek elfogadó képernyőjéről a feltételek összegzésével](./media/terms-summary-create.png)
 
@@ -65,21 +67,22 @@ Az alábbi példában látható, hogyan jelennek meg a használati feltételek a
 Hozzárendelhet használati feltételeket olyan felhasználói csoportokhoz, amelyeknek el kell fogadniuk a feltételeket a Céges portál használata előtt.
 
 1. Válassza az Azure Portalon az **Eszközök regisztrálása**, majd a **Használati feltételek** lehetőséget.
-2. A használati feltételek listájában válassza ki a hozzárendelendő feltételeket, majd válassza a **Hozzárendelt csoportok** elemet.
+2. A használati feltételek listájában válassza ki a hozzárendelendő feltételeket, majd válassza a **Kezelés** > **Hozzárendelések** elemet.
 ![Képernyőkép az Azure Portal Csoport hozzárendelése paneljéről, amelyen látható a használati feltételek hozzárendeléséhez tartozó Csoport kijelölése és Kijelölés gomb](media/terms-assign-groups.png)
-3. Kattintson a **Csoport kijelölése** gombra, a **Csoportok kijelölése** panelen válassza ki a feltételekhez hozzárendelendő csoportokat, majd kattintson a **Kijelölés** elemre. A dinamikus csoportokhoz nem lehet használati feltételeket rendelni.
+3. Kattintson a **Bevonandó csoportok kijelölése** lehetőségre, válassza ki a feltételekhez hozzárendelendő csoportokat, majd kattintson a **Kijelölés** elemre. A dinamikus csoportokhoz nem lehet használati feltételeket rendelni.
 4. A **Hozzárendelt csoportok** panelen kattintson a **Mentés** elemre.  Ezzel megtörtént a használati feltételek hozzárendelése a kijelölt csoportok felhasználóihoz. A következő alkalommal a rendszer fel fogja szólítani a felhasználókat a feltételek elfogadására a Céges portálhoz való hozzáférés előtt. A használati feltételeket csak egyszer kell elfogadni, a több eszközzel bíró felhasználóknak tehát nem kell ezt megtenniük minden eszközön.
 
 
 ## <a name="monitor-terms-and-conditions"></a>A használati feltételek figyelése
 
-1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. Válassza az Intune panelen az **Eszközök beléptetése**, majd a **Használati feltételek** elemet.
-2. A használati feltételek listájában válassza ki azokat a feltételeket, amelyeknél meg szeretné tekinteni az elfogadást, majd válassza az **Elfogadási állapotok** elemet.
+1. Az Azure Portalon válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** lehetőséget. 
+1. Válassza az Intune panelen az **Eszközök beléptetése**, majd a **Használati feltételek** elemet.
+2. A használati feltételek listájában válassza ki azokat a feltételeket, amelyeknél meg szeretné tekinteni az elfogadást, majd válassza az **Elfogadási jelentés** elemet.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>A használati feltételek több változatának használata
 Szerkesztheti a használati feltételeket, és felügyelheti verzióikat. Javasoljuk, hogy amikor jelentős módosításokat végez a használati feltételeken, mindig növelje meg a verziószámot, és követelje meg az új feltételek elfogadását. Akkor tartsa meg az aktuális verziószámot, ha például gépelési hibákat javít, vagy a formázást módosítja.
 
-1. Az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Az Azure Portalon válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** lehetőséget.
 
 2. Az Intune panelen válassza az **Eszközök beléptetése** elemet, válassza a **Használati feltételek** elemet, válassza ki a módosítandó használati feltételeket, majd válassza a **Tulajdonságok** elemet.
 

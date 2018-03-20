@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Az iOS-beli Osztályterem alkalmazás Intune-beállításainak konfigurálása
 
@@ -72,12 +72,12 @@ Az SDS-be a következő módszerek valamelyikével importálhat adatokat:
 
 ### <a name="configure-general-settings"></a>Általános beállítások konfigurálása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3.  Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4.  Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
 5.  A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-6.  A **Profil létrehozása** panelen töltse ki az iOS-es oktatási profil **Név** és **Leírás** mezőjét.
+6.  A **Profil létrehozása** panelen adja meg az iOS-es oktatási profil **Nevét** és **Leírását**.
 7.  A **Platform** legördülő listájában válassza az **iOS** lehetőséget.
 8.  A **Profil típusa** legördülő listában válassza az **Oktatás** lehetőséget.
 9.  Válassza a **Beállítások** > **Konfigurálás** lehetőséget.

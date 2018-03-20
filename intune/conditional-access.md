@@ -1,12 +1,12 @@
 ---
-title: "Feltételes hozzáférés az Intune-nal"
-titlesuffix: Azure portal
-description: "Útmutató a felhasználókra és eszközökre vonatkozó feltételek meghatározásához a vállalati adatok eléréséhez a Microsoft Intune-ban.”"
+title: "Feltételes hozzáférés a Microsoft Intune-nal"
+titlesuffix: 
+description: "Útmutató a felhasználókra, eszközökre és alkalmazásokra vonatkozó feltételek meghatározásához a vállalati adatok eléréséhez a Microsoft Intune-ban."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Mi a feltételes hozzáférés?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör ismerteti az Enterprise Mobility + Security (EMS) szolgáltatásra vonatkozó feltételes hozzáférést, majd általános példákat ad a feltételes hozzáférésre alkalmazására az Intune használata során.
+A feltétles hozzáférés azokat a módszereket jelenti, amelyekkel vezérelheti az e-mail-fiókjához és a céges erőforrásaihoz való eszköz- és alkalmazás-hozzáférést. Ez a témakör az eszköz- és alkalmazásalapú feltételes hozzáférést ismerteti, valamint az Intune feltételes hozzáférésének gyakori használati eseteit mutatja be.
 
 Az Enterprise Mobility + Security (EMS) feltételes hozzáférése nem önálló termék, hanem olyan megoldás, amely az EMS részét képező összes szolgáltatásban és a termékben megtalálható. A részletes hozzáférés-vezérlést biztosít a vállalati adatok védelméhez, miközben olyan felhasználói felületet nyújt, amely lehetővé teszi, hogy bármely eszközről, bárhonnan a lehető leghatékonyabban dolgozhassanak a felhasználók.
 

@@ -1,12 +1,12 @@
 ---
-title: "Windows Phone 8.1-es áruházbeli alkalmazások hozzáadása az Intune-hoz"
-titleSuffix: Azure portal
-description: "Útmutató Windows Phone 8.1-es alkalmazások Intune-ba való felvételéhez."
+title: "Windows Phone 8.1-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz"
+titleSuffix: 
+description: "Útmutató Windows Phone 8.1-es áruházbeli alkalmazások a Microsoft Intune-ba való hozzáadásához."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,29 +15,29 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe03df8a37b149eb7e918a6cd98a686ffefa38e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e4c3935c8dc263ceef9981a9fc9c47ace6f77d86
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Mielőtt az alkalmazást hozzárendelné egy eszközhöz vagy felhasználói csoporthoz, az eszközt először hozzá kell adnia a Microsoft Intune-hoz. Az alábbi lépések azt mutatják be, hogyan adhat hozzá az Intune-hoz egy Windows Phone 8.1-es áruházbeli alkalmazást az Azure Portalon.
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Alkalmazások kezelése** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
 4. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 5. Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
-6. Az **Alkalmazás hozzáadása** panelen válassza az **Alkalmazás adatai** elemet.
-7. Az **Alkalmazás szerkesztése** panelen konfigurálja az alábbi adatokat. Amikor elkészült, kattintson a **Hozzáadás** lehetőségre. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
-    - **Alkalmazás neve** – Itt adhatja meg az alkalmazásnak a Céges portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
-    - **Alkalmazás leírása** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
+6. Az **Alkalmazás hozzáadása** panelen válassza a **Windows Phone 8.1** lehetőséget az **Alkalmazás típusa** a területen, majd válassza az **Alkalmazásadatok** lehetőséget.
+7. Az **Alkalmazás adatai** panelen konfigurálja az alábbi információkat. Amikor elkészült, kattintson az **OK** lehetőségre. A választott alkalmazástól függően előfordulhat, hogy egyes értékek automatikusan ki vannak töltve a panelen:
+    - **Név** – Itt adhatja meg az alkalmazásnak a vállalati portálon megjelenő nevét. Ügyeljen arra, hogy a megadott alkalmazásnevek egyediek legyenek. Ha ugyanazt az alkalmazásnevet kétszer adja meg, csak az egyik alkalmazás fog megjelenni a felhasználók számára a vállalati portálon.
+    - **Leírás** – Itt adhatja meg az alkalmazás leírását. amelyet meg szeretne jeleníteni a felhasználók számára a vállalati portálon.
     - **Kiadó** – Adja meg az alkalmazás kiadójának nevét.
     - **Alkalmazás-áruház URL-címe** – Itt adhatja meg a létrehozni kívánt alkalmazás áruházbeli URL-címét.
-    - **Minimális operációsrendszer-verzió** – A listából kiválaszthatja az operációs rendszer legkorábbi olyan verzióját, amelyre az alkalmazás telepíthető. Ha az alkalmazást régebbi operációs rendszerrel rendelkező eszközhöz rendelik hozzá, akkor nem lesz telepítve.
     - **Kategória (nem kötelező)** – Választhat egyet vagy többet a beépített alkalmazáskategóriák közül, vagy megadhat egyénileg létrehozott kategóriát is. Ezzel megkönnyítheti a felhasználók számára az alkalmazás megkeresését a vállalati portálon való böngészés során.
     - **Megjelenítés kiemelt alkalmazásként a Céges portálon** – Ezzel a beállítással hangsúlyosan jelenítheti meg az alkalmazást a Céges portál főoldalán alkalmazásokat kereső felhasználók számára.
     - **Információs URL-cím** – Igény szerint megadhatja az alkalmazással kapcsolatos információkat tartalmazó webhely URL-címét. Ez az URL-cím fog megjelenni a felhasználók számára a vállalati portálon.
@@ -45,7 +45,11 @@ ms.lasthandoff: 01/25/2018
     - **Fejlesztő** – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
     - **Tulajdonos** – Igény esetén megadhatja az alkalmazás tulajdonosának nevét (például **HR-osztály**).
     - **Megjegyzések** – Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket.
-    - **Ikon feltöltése** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
-8. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget.
+    - **Ikon** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a vállalati portálon böngésző felhasználók számára.
+8. Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Hozzáadás** lehetőséget.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md).
+
+## <a name="next-steps"></a>További lépések
+
+- [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)

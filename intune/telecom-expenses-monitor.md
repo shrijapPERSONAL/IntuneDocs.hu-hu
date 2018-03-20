@@ -1,12 +1,12 @@
 ---
 title: "Távközlésiköltség-kezelő szolgáltatások beállítása"
-titleSuffix: Azure portal
-description: "A Saaswedo távközlésiköltség-kezelő szolgáltatás konfigurálása az Intune-nal való integráláshoz.”"
+titleSuffix: Microsoft Intune
+description: "Az Intune integrálása a Saaswedo távközlésiköltség-kezelő szolgáltatással."
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9b0b22dc3831cbb14ab876b5f4e58f82cf53abc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Távközlésiköltség-kezelő szolgáltatás beállítása az Intune-ban
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert olyan valós idejű távközlésiköltség-kezelő szoftver, amely módot ad a távközlési adatok használatának kezelésére, valamint segít elkerülni az adathasználati és a roamingkeret költséges és váratlan túllépését az Intune által felügyelt eszközökön.
+Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert egy valós idejű távközlésiköltség-kezelő szoftver, amellyel a távközlési adathasználatot kezelheti. A szoftverrel elkerülheti az Intune által kezelt eszközök költséges és váratlan kerettúllépéseit adatfogyasztásnál és roaming esetén.
 
-Az Intune és a Datalert integrációja lehetővé teszi, hogy központilag állítson be, figyeljen és alkalmazzon roaming- és belföldi adathasználati korlátokat automatikus riasztások használatával abban az esetben, ha a korlátok túllépnek meghatározott küszöbértékeket. A szolgáltatás konfigurálásával különféle műveleteket alkalmazhat személyekre vagy végfelhasználói csoportokra, például letilthatja a roamingot, ha a felhasználók túllépik a küszöbértéket. Az adathasználati és figyelési információkat biztosító jelentések a Datalert kezelőkonzolján érhetők el.
+Az Intune és a Datalert integrációja lehetővé teszi, hogy központilag állítson be, figyeljen és alkalmazzon roaming- és belföldi adathasználati korlátokat. Automatikus riasztások jelzik, ha a fogyasztások túllépnek meghatározott küszöbértékeket. A szolgáltatás konfigurálásával különféle műveleteket alkalmazhat személyekre vagy végfelhasználói csoportokra, például letilthatja a roamingot vagy a küszöbérték átlépését. Az adathasználati és figyelési információkat biztosító jelentések a Datalert kezelőkonzolján érhetők el.
 
 A következő ábra bemutatja, hogy milyen integráció áll fenn az Intune és a Datalert között.
 
@@ -68,7 +68,7 @@ Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra
 
     Amikor a **Connection** (Csatlakozás) elemet választja, a Datalert szolgáltatás bejelentkezik az Intune-ba, hogy ellenőrizze, nincsenek-e már meglévő kapcsolatok a Datalert és az Intune között. Néhány másodperc elteltével megjelenik a Microsoft bejelentkezési oldala, amelyet a Datalert Azure-beli hitelesítése követ.
 
-6. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert „thank you” („köszönjük”) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Sikertelen ellenőrzés esetén piros színű üzenet jelenik meg. Ebben az esetben forduljon segítségért a Datalert ügyfélszolgálatához.
+6. A Microsoft hitelesítési oldalán válassza az **Elfogadás** lehetőséget. Ekkor megnyílik a Datalert „thank you” („köszönjük”) lapja, amely néhány másodperc múlva bezárul. A Datalert ellenőrzi a kapcsolatot, majd az ellenőrzött elemek listája mellett zöld színű pipákat jelenít meg. Ha az ellenőrzés nem sikerül, egy vörös üzenet jelenik meg. Vegye fel a kapcsolatot a Datalert ügyfélszolgálatával.
 
     A következő képernyőfelvételen a zöld pipák láthatók, amelyek a csatlakozás sikere esetén jelennek meg.
 
@@ -78,9 +78,9 @@ Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra
 
 A fenti 1. lépés befejeződése után a kapcsolatnak elvben automatikusan engedélyezve kell lennie, és az Azure Portalon az **Aktív** kapcsolati állapotnak kell látszania. Ezek a lépések bemutatják, hogyan ellenőrizheti, **Aktív**-e az állapot.
 
-1. Jelentkezzen be az Azure Portalra.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
 
@@ -88,25 +88,27 @@ A fenti 1. lépés befejeződése után a kapcsolatnak elvben automatikusan enge
 
    Keresse meg a lap tetején látható **Aktív** kapcsolati állapotot.
 
-  ![Az Azure Portal, rajta az Aktív állapotú Datalert-kapcsolattal](./media/tem-azure-portal-enable-service.png)
+  ![Az Intune oldala, rajta az Aktív állapotú Datalert-kapcsolattal](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. lépés: A Datalert alkalmazás telepítése a vállalat regisztrált eszközeire
 
-Ahhoz, hogy biztosan csak vállalati tulajdonú előfizetésekre vonatkozó adathasználati adatokat gyűjtsön, eszközkategóriákat kell létrehoznia az Intune-ban, és a Datalert alkalmazást csak a vállalati telefonokhoz kell hozzárendelnie. Végezze el az alábbi részekben ismertetett lépéseket.
+Ha biztosítani szeretné, hogy a rendszer csak a vállalati tulajdonú vonalakról gyűjtsön adathasználati adatokat, két dolgot kell tennie:
+- hozzon létre eszközkategóriákat az Intune-ban
+- korlátozza a Datalert alkalmazást kizárólag vállalati tulajdonú telefonokra.
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Az eszközkategóriák és a kategóriákhoz rendelt eszközcsoportok definiálása
 
-A szervezet szükségleteitől függően létre kell hoznia legalább két eszközkategóriát (például Vállalati és Saját tulajdonú), és dinamikus eszközcsoportokat kell meghatároznia mindkét kategóriához. Szükség esetén több kategóriát is létrehozhat a szervezet számára.
+A cég szükségleteitől függően hozzon létre legalább két eszközkategóriát (például Vállalati és Saját tulajdonú). Ezután hozzon létre dinamikus eszközcsoportokat minden kategóriához. Szükség esetén több kategóriát is létrehozhat a szervezet számára.
 
 Amikor a felhasználók regisztrálják az eszközeiket, látják ezeket a kategóriákat. Attól függően, hogy a felhasználó melyik kategóriát választja, a regisztrált eszköz a megfelelő eszközcsoportba kerül. Az eszközkategóriák létrehozásának lépéseit az [Eszközök hozzárendelése csoportokhoz](device-group-mapping.md) című témakör ismerteti.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/tem-dynamic-membership-rules.png)
+  ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-dynamic-membership-rules.png)
 
 #### <a name="create-the-datalert-app-in-intune"></a>A Datalert alkalmazás létrehozása az Intune-ban
 
 Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a következő lépésekkel. Az ismertetett lépésekben az iOS-t használjuk példaként.
 
-1. Válassza az Azure Portal **Intune** paneljének **Mobilalkalmazások** elemét.
+1. Válassza az [Azure Portal](https://portal.azure.com) **Intune** paneljének **Mobilalkalmazások** elemét.
 
 2. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
 
@@ -116,25 +118,25 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
 5. Keressen rá a Datalert alkalmazásra a **Keresés az App Store-ban** szolgáltatással. Ehhez írja be a **Datalert** nevet a keresőablakba.
 
-6. Válassza ki a **Datalert** alkalmazást, és válassza az **OK** gombot.
+6. Válassza ki a **Datalert** alkalmazást, és majd a **Kiválasztás** lehetőséget.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/tem-select-app-from-apple-app-store.png)
+   ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-select-app-from-apple-app-store.png)
 
 7. Hozzon létre egy iOS-alkalmazást a hátralévő lépéseket követve.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/tem-steps-to-create-the-app.png)
+   ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-steps-to-create-the-app.png)
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>A Datalert alkalmazás hozzárendelése a vállalati eszközök csoportjához
 
-1. Válassza ki az előző lépésben létrehozott Datalert iOS-alkalmazást.
+1. A **Mobilalkalmazások – Alkalmazások** panelen válassza ki az előző lépésben létrehozott Datalert iOS-alkalmazást.
 
-2. Az **Alkalmazások** panelen lépjen a **Kezelés** > **Feladatok** területre.
+2. Az **Alkalmazások** panelen válassza a **Kezelés** > **Hozzárendelések** elemet.
 
-3. Válassza a **Csoportok kiválasztása** elemet, és válassza ki a vállalati tulajdonú eszközök csoportját a lépéseknek megfelelően.
+3. Válassza a **Csoport hozzáadása** lehetőséget, és válassza ki a vállalati tulajdonú eszközök csoportját a lépéseknek megfelelően.
 
 4. Adja meg, hogy kötelező-e vagy sem az alkalmazás telepítése a csoport számára. A példa képernyőfelvételen kötelező a telepítés. Ez azt jelenti, hogy a felhasználó köteles telepíteni a Datalert alkalmazást azután, hogy regisztrálja az eszközét.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/tem-assign-datalert-app-to-device-group.png)
+  ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Vállalati telefon-előfizetések felvétele a Datalert konzoljába
 
@@ -142,7 +144,7 @@ Mostanra úgy konfigurálta az Intune és a Datalert szolgáltatást, hogy tudja
 
 A beállítások megadásához látogasson el a [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (A Datalert beállítása a Microsoft Intune-hoz) weblapra (http://www.datalert.fr/microsoft-intune/intune-setup), és kövesse a beállítási varázsló lépéseit a **Settings** (Beállítások) lapon.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/tem-add-phone-lines-to-datalert-console.png)
+  ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-add-phone-lines-to-datalert-console.png)
 
 
 A Datalert szolgáltatás most már aktív, és megkezdi az adathasználat figyelését, valamint a mobil és roaming-adatforgalom letiltását azokon az eszközökön, amelyek túllépik a beállított használati korlátokat.
