@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Az e-mail-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -39,17 +39,19 @@ A cikkben található információk alapján megismerheti az e-mail-profilok kon
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Az e-mail-beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** lapon válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** lapon válassza a **Kezelés** > **Profilok** lehetőséget.
-3. A profilok lapján válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** lapon írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
+3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
+4. A **Profil létrehozása** panelen írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné az e-mail-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet e-mail-eszközbeállításokat megadni:
     - **Android** (csak Samsung Android Knox Standard esetén)
     - **Android for Work**
     - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 és újabb**
     - **Windows 10 és újabb**
 6. A **Profil típusa** legördülő listában válassza az **E-mail** lehetőséget.
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
@@ -57,9 +59,9 @@ A cikkben található információk alapján megismerheti az e-mail-profilok kon
     - [iOS-beállítások](email-settings-ios.md)
     - [Windows Phone 8.1-beállítások](email-settings-windows-phone-8-1.md)
     - [Windows 10-beállítások](email-settings-windows-10.md)
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** lapra, és válassza a **Létrehozás** elemet.
+8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó lapon.
+Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
 
 ## <a name="further-information"></a>További információ

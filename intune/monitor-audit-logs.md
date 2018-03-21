@@ -4,17 +4,17 @@ description: "Útmutató az Intune-tevékenységeket rögzítő auditnaplók át
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditnaplók Intune-tevékenységekhez
 Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. A létrehozási, frissítési (szerkesztési), törlési és hozzárendelési műveletek, illetve a távoli feladatok naplózott eseményeket generálnak, melyek megtekinthetők. A legtöbb Intune-beli számítási feladat auditnaplói megtekinthetők. A naplózás alapértelmezés szerint engedélyezve van az összes ügyfél számára, és nem tiltható le. A naplózási események 2017 decemberében, az új funkció megjelenésekor kezdődtek, az ezt megelőző események így nincsenek rögzítve.
@@ -28,8 +28,8 @@ A következő engedélyekkel rendelkező felhasználók tekinthetik meg az audit
 ## <a name="audit-logs-for-intune-workloads"></a>Intune-beli számítási feladatok auditnaplói
 Az auditnaplók az egyes Intune-beli számítási feladatok Figyelés csoportjában tekinthetők meg.  
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza ki a számítási feladatot, melynek meg szeretné tekinteni az auditnaplóit.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza ki azt a számítási feladatot, amelynek meg szeretné tekinteni a naplóit, például az **Eszközök** elemet.
 4. A számítási feladat **Figyelés** csoportjában válassza a **Naplók** lehetőséget.
 
 ## <a name="review-audit-events"></a>Naplózási események áttekintése
@@ -39,6 +39,7 @@ Az auditnaplók alapértelmezett listanézete a következő elemeket jeleníti m
 
 - az előfordulás dátuma és időpontja
 - Kezdeményező (szereplő)
+- Alkalmazásnév
 - Tevékenység
 - Cél(ok)
 - Kategória

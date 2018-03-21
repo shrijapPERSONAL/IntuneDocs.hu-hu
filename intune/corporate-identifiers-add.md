@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
@@ -70,7 +70,7 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Céges azonosítók .csv-listájának felvétele
 
-1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
+1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
 
  ![A céges készülékazonosítók munkaterülete a Hozzáadás gomb kiemelésével](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszkö
 
 ### <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
 
-1. Az Intune-ban az Azure Portálon válassza az **Eszközök beléptetése** > **Céges készülékazonosítók** lehetőséget.
+1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** lehetőséget.
 2. Válassza ki a törölni kívánt eszközazonosítókat, majd kattintson a **Törlés** gombra.
 3. Hagyja jóvá a törlést.
 
-Ha törli egy regisztrált eszköz céges azonosítóját, azzal nem változtatja meg az eszköz tulajdonosát. Az eszköz tulajdonosának módosításához nyissa meg az **Eszközök** > **Minden eszköz** panelt, válassza ki az eszközt, majd válassza a **Tulajdonságok** lehetőséget, és módosítsa az **Eszköz tulajdonosa** értékét.
+Ha törli egy regisztrált eszköz céges azonosítóját, azzal nem változtatja meg az eszköz tulajdonosát. Az eszköz tulajdonosának módosításához nyissa meg az **Eszközök** panelt, válassza ki az eszközt, majd válassza a **Tulajdonságok** lehetőséget, és módosítsa az **Eszköz tulajdonosa** értékét.
 
 ### <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
 Az IMEI-azonosítók részletes specifikációját a [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) lapon találja.
@@ -96,7 +96,7 @@ Az IMEI-azonosítók részletes specifikációját a [3GGPP TS 23.003](https://p
 Az Intune-ban az eszközök tulajdonságai között mindegyik eszközbejegyzésnél szerepel a **Tulajdonos**. Rendszergazdaként megadhatja, hogy az adott eszköz **Személyes** vagy **Céges**.
 
 **Eszköz tulajdonosának módosítása:**
-1. Az Intune-ban az Azure Portalon az **Eszközök** > **Minden Eszköz** lehetőségnél válassza ki az adott eszközt.
+1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) az **Eszközök** területen válassza ki az adott eszközt.
 3. Válassza a **Tulajdonságok** lehetőséget.
 4. Adja meg az **Eszköz tulajdonosa** beállításnál, hogy az eszköz **Személyes** vagy **Céges**.
 

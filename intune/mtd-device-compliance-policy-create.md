@@ -1,12 +1,12 @@
 ---
-title: "A Mobile Threat Defense eszközmegfelelőségi szabályzatának létrehozása az Intune-ban"
-titlesuffix: Azure portal
-description: "A Mobile Threat Defense eszközmegfelelőségi szabályzatának létrehozása az Intune-ban"
+title: "MTD-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-nal"
+titlesuffix: 
+description: "Létrehozhat egy olyan Intune-beli eszközmegfelelőségi szabályzatot, amely az MTD-partner fenyegetettségi szintjeivel határozza meg, hogy egy mobileszköz hozzáférhet-e a céges erőforrásokhoz."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>A Mobile Threat Defense (MTD) eszközmegfelelőségi szabályzatának létrehozása az Intune-nal
 
@@ -40,7 +40,7 @@ Az MTD-eszközmegfelelési szabályzat előfeltételei:
 
 1.  Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
 
-2.  Az **Azure-irányítópulton** válassza a bal oldali menü **További szolgáltatások** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+2.  Az **Azure-irányítópulton** válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
 
 3.  Ha az **Intune** elemre kattint, megnyílik az **Intune irányítópultja**.
 
@@ -50,7 +50,7 @@ Az MTD-eszközmegfelelési szabályzat előfeltételei:
 
 6.  A **Megfelelőségi szabályzat** panelen kattintson az **Eszközállapot** lehetőségre.
 
-7.  Az **Eszközállapot** panelen a **Maximálisan elérhető mobileszköz-fenyegetettségi szint használata** alatti legördülő menüből válassza ki a mobilfenyegetés védelmi szintjét.
+7.  Az **Eszközállapot** panelen a **Maximálisan elérhető eszközfenyegetettségi szint használata** alatti legördülő menüből válassza ki a mobilfenyegetés védelmi szintjét.
 
     a.  **Védett**: Ez a szint a legbiztonságosabb. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
 
@@ -71,7 +71,7 @@ Ha a felhasználókhoz eszközmegfelelőségi szabályzatot kíván rendelni, ol
 
 1. Válassza ki azt a szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ez a művelet megnyitja a panelt, amelyen kiválaszthatja a kívánt **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
 
-2. Válassza a **Csoportok kiválasztása** lehetőséget az Azure AD biztonsági csoportjait megjelenítő panel megnyitásához.  A **Kiválasztás** elemre kattintva telepítheti a szabályzatot a felhasználók számára.
+2. Válassza a **Belefoglalandó csoportok** lehetőséget az Azure AD biztonsági csoportjait megjelenítő lap megnyitásához.  A **Kiválasztás** elemre kattintva telepítheti a szabályzatot a felhasználók számára.
 
     > [!NOTE] 
     > Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.

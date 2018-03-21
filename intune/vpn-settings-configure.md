@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>A VPN-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -37,7 +37,7 @@ A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 |Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
 |Citrix|Igen|Igen|Nem|Nem|Nem|Igen|
 |F5 Edge Client|Igen|Igen|Igen|Igen|Igen|Igen|
-|Dell SonicWALL Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
+|SonicWall Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
 |Cisco AnyConnect|Igen|Igen|Igen|Nem|Nem|Nem|
 |Automatikus|Nem|Nem|Nem|Nem|Nem|Igen|
@@ -54,10 +54,10 @@ Az [Egyéni VPN-profilok létrehozása](custom-vpn-profiles-create.md) című t�
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>A VPN-beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **Profilok** lehetőséget.
+2. Az **Eszközkonfiguráció** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
 3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
 4. A **Profil létrehozása** panelen töltse ki az egyéni VPN-profil **Név** és **Leírás** mezőjét.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné a VPN-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet VPN-eszközbeállításokat megadni:

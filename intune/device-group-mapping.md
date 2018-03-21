@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Eszközöket csoportokba rendezése a könnyebb kezelhetőség érdekében
 
@@ -41,12 +41,11 @@ Bármilyen tetszés szerinti eszközkategóriát létrehozhat, például:
 ## <a name="how-to-configure-device-categories"></a>Az eszközkategóriák konfigurálása
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. lépés - Eszközkategóriák létrehozása az Azure Portal Intune panelén
-1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközregisztráció** lehetőséget.
-3. Az **Eszközregisztráció** panelen válassza az **Eszközkategóriák** elemet.
-4. Az **Eszközkategóriák** lapon a **Létrehozás** elemmel hozhat létre új kategóriát.
-5. Az **Eszközkategória létrehozása** panelen töltse ki az új kategória **Név** és **Leírás** mezőjét (utóbbi nem kötelező).
-6. Ha végzett, kattintson a **Létrehozás** gombra. Az új kategória megjelenik a kategóriák listájában.
+1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** elemet.
+2. Az **Eszközregisztráció** panelen válassza az **Eszközkategóriák** elemet.
+3. Az **Eszközkategóriák** lapon a **Létrehozás** elemmel hozhat létre új kategóriát.
+4. Az **Eszközkategória létrehozása** panelen töltse ki az új kategória **Név** és **Leírás** mezőjét (utóbbi nem kötelező).
+5. Ha végzett, kattintson a **Létrehozás** gombra. Az új kategória megjelenik a kategóriák listájában.
 
 Azure Active Directory biztonsági csoportok létrehozásakor az eszközkategória nevét fogja használni a 2. lépésben.
 
@@ -61,23 +60,20 @@ Ha vannak konfigurált eszközcsoportok, amikor a felhasználók regisztrálják
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>A felügyelt eszközök kategóriáinak megtekintése
 
-1.  Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+1.  Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök** elemet.
 
-2. Az Azure Portal Intune panelén válassza az **Eszközök** lehetőséget.
+2.  A **Felügyelet** alatt kattintson a **Minden eszköz** elemre.
 
-3.  A **Felügyelet** alatt kattintson a **Minden eszköz** elemre.
-
-4.  Az eszközlistában keresse meg az **Eszközkategória** oszlopot.
+3.  Az eszközlistában keresse meg az **Eszközkategória** oszlopot.
 
 Ha az **Eszközkategória** oszlop nem látható, kattintson az **Oszlopok** elemre, a listából válassza az **Eszközkategória** elemet, és kattintson az **Alkalmaz** gombra.
 
 ### <a name="to-change-the-category-of-a-device"></a>Eszköz kategóriájának módosítása
 
-1. Az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. A **Kezelés** szakasz **Eszközök** paneljén válassza a **Minden eszköz** lehetőséget.
-5. Az eszközlistából válassza ki a kívánt eszközt, majd az eszköz tulajdonságainak panelén válassza a **Felügyelet** szakaszban válassza a **Tulajdonságok** lehetőséget.
-6. A következő panelen a kijelölt eszköz **Eszközkategória** tulajdonságát átállíthatja a korábban konfigurált kategórianevek bármelyikére.
+1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök** elemet.
+2. A **Kezelés** szakasz **Eszközök** paneljén válassza a **Minden eszköz** lehetőséget.
+3. Az eszközlistából válassza ki a kívánt eszközt, majd az eszköz tulajdonságainak panelén válassza a **Felügyelet** szakaszban válassza a **Tulajdonságok** lehetőséget.
+4. A következő panelen a kijelölt eszköz **Eszközkategória** tulajdonságát átállíthatja a korábban konfigurált kategórianevek bármelyikére.
 
 ## <a name="after-you-configure-device-groups"></a>Az eszközcsoportok konfigurálása után
 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Miután felvett egy alkalmazást az Intune-ba, felhasználókhoz és eszközökhöz rendelheti hozzá.
+Miután hozzáadott egy alkalmazást a Microsoft Intune-hoz, felhasználókhoz és eszközökhöz rendelheti hozzá.
 
 Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy azokat az Intune kezeli-e vagy sem. Az alábbi táblázat segítségével megismerheti az alkalmazások felhasználókhoz és eszközökhöz való hozzárendelésének különböző lehetőségeit:
 
@@ -51,19 +51,28 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-1. A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
+1. A **Mobilalkalmazások** terület **Kezelés** szakaszában válassza az **Alkalmazások** lehetőséget.
 2. Az alkalmazáslista paneljén kattintson arra az alkalmazásra, amelyet szeretne hozzárendelni.
-3. Az **Áttekintés** panelen válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
-4. Válassza a **Csoport hozzáadása** lehetőséget, majd a **Csoport hozzáadása** panelen jelölje ki a alkalmazás hozzárendelésébe belefoglalni vagy abból kizárni kívánt Azure AD-csoportokat.
-5. Minden kiválasztott alkalmazáshoz válasszon egy **hozzárendelési típust** az alábbi lehetőségek közül:
+3. Az alkalmazásspecifikus **Áttekintés** panel **Kezelés** szakaszában válassza a **Hozzárendelések** lehetőséget.
+4. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz tartozó **Csoport hozzáadása** panel megjelenítéséhez.
+5. Az adott alkalmazáshoz válasszon egy **hozzárendelési típust** az alábbi lehetőségek közül:
     - **Regisztrált eszközökhöz elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
-    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban.
+    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. Vegye figyelembe, hogy az **Android for Work alkalmazás** típus nem támogatja ezt a beállítást. 
     - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
     - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
-6. **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
-6. Ha elkészült, válassza az **OK** majd a **Mentés** elemet.
 
-Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz.
+    > [!NOTE]
+    > **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
+
+6. Az alkalmazás-hozzárendelés célcsoportjának kiválasztásához válassza a **Belefoglalt csoportok** lehetőséget.
+7. A csoportok kiválasztása után kattintson a **Kiválasztás** lehetőségre.
+8. Kattintson a **Hozzárendelés** panel **OK** gombjára a belefoglalt csoportok szakasz befejezéséhez.
+9. Ha ki szeretne zárni felhasználói csoportokat az alkalmazás-hozzárendelés alól, kattintson a **Csoportok kizárása** lehetőségre.
+10. Ha kizár csoportokat, kattintson a **Csoportok kiválasztása** panel **Kiválasztás** lehetőségére.
+11. A **Csoport hozzáadása** panelen kattintson az **OK** lehetőségre.
+12. Az alkalmazás **Hozzárendelések** panelén kattintson a **Mentés** lehetőségre a hozzárendelések mentéséhez.
+
+Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz. További információt az alkalmazás-hozzárendelések belefoglalásához és kizárásához az [Alkalmazás-hozzárendelések belefoglalása és kizárása](apps-inc-exl-assignments.md) részben talál.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Alkalmazások hozzárendelési ütközéseinek feloldása
 
@@ -78,8 +87,8 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 |A felhasználó elérhető|A felhasználható nem érhető el|Nem érhető el|
 |A felhasználó elérhető|Felhasználó eltávolítása|Eltávolítás|
 |A felhasználható nem érhető el|Felhasználó eltávolítása|Eltávolítás
-|A felhasználó kötelező|Az eszköz kötelező|Mind a két szándék létezik, az átjáró Kötelező szándékként kezeli 
-|A felhasználó kötelező|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel 
+|A felhasználó kötelező|Az eszköz kötelező|Mind a két szándék létezik, az átjáró Kötelező szándékként kezeli
+|A felhasználó kötelező|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel
 |A felhasználó elérhető|Az eszköz kötelező|Mind a két szándék létezik, az átjáró a Kötelező szándékot oldja fel (Kötelező és Elérhető)
 |A felhasználó elérhető|Eszköz eltávolítása|Mind a két szándék létezik, az átjáró az Elérhető szándékot oldja fel.<br>Az alkalmazás megjelenik a Céges portálon.<br>Korábban (korábbi szándékkal kötelezőként) telepített alkalmazás esetén a rendszer eltávolítja az alkalmazást.<br>Ha viszont a felhasználó a Céges portálról kattint a telepítésre, az alkalmazás telepítve lesz, és a rendszer az eltávolítás szándékát veti el.|
 |A felhasználható nem érhető el|Az eszköz kötelező|Kötelező|
@@ -105,7 +114,7 @@ Néha előfordul, hogy ugyanazt az alkalmazást eltérő szándékkal rendelik h
 |A felhasználó regisztráció nélkül elérhető|Eszköz eltávolítása|Eltávolítás és Regisztráció nélkül elérhető.<br>Ha a felhasználó nem a Céges portálról telepítette az alkalmazást, akkor a rendszer az eltávolítást veszi figyelembe.<br>Ha a felhasználó a Céges portálról telepíti az alkalmazást, akkor a rendszer a telepítést részesíti előnyben az eltávolítással szemben.|
 
 >[!NOTE]
->Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat az Intune-ban kötelezőként rendeli hozzá, akkor a Kötelező és az Elérhető szándék automatikusan egyaránt fog vonatkozni rájuk.
+>Csak áruházból származó felügyelt iOS-alkalmazások esetén, ha ezeket az alkalmazásokat a Microsoft Intune-ban **kötelezőként** rendeli hozzá, akkor a **Kötelező** és az **Elérhető** szándék automatikusan egyaránt fog vonatkozni rájuk.
 
 ## <a name="next-steps"></a>További lépések
 

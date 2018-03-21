@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának beállítása az Apple School Manager programban
 
@@ -89,7 +89,7 @@ Keresse meg a tanúsítványfájlt (.p7m), majd kattintson a **Megnyitás** gomb
 ## <a name="create-an-apple-enrollment-profile"></a>Apple-regisztrációs profil létrehozása
 A regisztrálás során az eszközök csoportjára alkalmazott beállításokat egy készülékregisztrációs profil határozza meg.
 
-1. Az Azure-beli Intune-portálon válassza az **Eszközök regisztrálása**, majd az **Apple-regisztráció** elemet.
+1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása**, majd az **Apple-regisztráció** elemet.
 2. A **Készülékregisztrációs program** szakaszban válassza a **Készülékregisztrációs programbeli profilok** elemet.
 3. A **Készülékregisztrációs programbeli profilok** panelen válassza a **Létrehozás** elemet.
 4. A **Regisztrációs profil létrehozása** panelen adja meg az Intune-ban megjelenő profil **nevét** és **leírását**.
@@ -149,7 +149,7 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
 Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyeletére, szinkronizálhatja az Intune-t az Apple szolgáltatással, hogy a felügyelt eszközök megjelenjenek az Intune-ban.
 
-1. Az Azure-beli Intune-portálon válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
+1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
   ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
 2. A **Szinkronizálás** panelen válassza a **Szinkronizálási kérelem** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
@@ -166,7 +166,7 @@ Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyel
 ## <a name="assign-a-profile-to-devices"></a>Profil hozzárendelése az eszközökhöz
 Az Intune által felügyelt Apple School Manager-eszközökhöz még a regisztrálás előtt hozzá kell rendelni egy regisztrációs profilt.
 
-1. Az Azure-beli Intune-portálon válassza az **Eszközregisztráció** > **Apple-regisztráció**, majd a **Készülékregisztrációs programbeli profilok** lehetőséget.
+1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközregisztráció** > **Apple-regisztráció**, majd a **Készülékregisztrációs programbeli profilok** lehetőséget.
 2. A **Készülékregisztrációs programbeli profilok** listából válassza ki az eszközhöz hozzárendelni kívánt profilt, majd válassza az **Eszköz-hozzárendelések** elemet.
 
  ![Az eszköz-hozzárendelések a Hozzárendelés lehetőség kijelölésével.](./media/enrollment-program-device-assign.png)

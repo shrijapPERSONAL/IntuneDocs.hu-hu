@@ -1,7 +1,7 @@
 ---
 title: "Alkalmazásvédelmi szabályzatok androidos beállításai"
 titlesuffix: Microsoft Intune
-description: "Ez a témakör az alkalmazásvédelmi szabályzatok androidos eszközökre vonatkozó beállításait ismerteti."
+description: "Ez a témakör az alkalmazásvédelmi szabályzatok Android rendszerű eszközökre vonatkozó beállításait ismerteti."
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Alkalmazásvédelmi szabályzatok androidos beállításai
 Ez a témakör az alkalmazásvédelmi szabályzatok Android rendszerű eszközökre vonatkozó beállításait ismerteti. Az ismertetett szabályzatbeállításokat az Azure Portal **Beállítások** paneljén lehet [konfigurálni](app-protection-policies.md) az alkalmazásvédelmi szabályzatokhoz.
@@ -73,7 +73,7 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
   | com.android.providers.media | Android médiatartalom-szolgáltató | A médiatartalom-szolgáltató csak a csengőhang-kiválasztási művelet esetére van engedélyezve. |
   | com.google.android.gms; com.google.android.gsf | A Google Play-szolgáltatások csomagjai | Ezeknek a csomagoknak a Google Cloud Messaging műveletei, például a leküldéses értesítések esetére vannak engedélyei. |
 
-További információt [Az adatátviteli szabályzat kivételei alkalmazások esetén](app-protection-policies-exception.md) című témakörben találhat. 
+További információt [Az adatátviteli szabályzat kivételei alkalmazások esetén](app-protection-policies-exception.md) című témakörben találhat.
 
 ##  <a name="access-settings"></a>Hozzáférési beállítások
 
@@ -88,7 +88,10 @@ További információt [Az adatátviteli szabályzat kivételei alkalmazások es
 | **Alkalmazás PIN-kódjának letiltása, ha az eszköz PIN-kódja felügyelt** | Válassza az **Igen** beállítást, ha le szeretné tiltani az alkalmazás PIN-kódját, amikor a regisztrált eszközön eszközzárolást észlelt a rendszer. | Nem |
 | **Az Android operációs rendszer minimális verziójának megkövetelése** | Az **Igen** lehetőség kiválasztásával megkövetelheti az Android operációs rendszer minimális verzióját az alkalmazás használatakor. A felhasználó hozzáférése le lesz tiltva, ha az Android operációs rendszer eszközön lévő verziója nem felel meg a követelménynek.<br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat.| Nem |
 | **Az Android operációs rendszer minimális verziójának megkövetelése (csak figyelmeztetés)** | Az **Igen** lehetőség kiválasztásával megkövetelheti az Android operációs rendszer minimális verzióját az alkalmazás használatakor. A felhasználó értesítést fog kapni, ha az Android operációs rendszer eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat. | Nem |
-| **Az alkalmazás minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat.| Nem | 
-| **Az alkalmazás minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójára vonatkozó javaslat megjelenítéséhez. A felhasználó értesítést fog kapni, ha az alkalmazásnak az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat.| Nem | 
+| **Az alkalmazás minimális verziójának megkövetelése** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójának megköveteléséhez. A felhasználó hozzáférése le lesz tiltva, ha az iOS operációs rendszer az eszközön lévő verziója nem felel meg a követelménynek.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat.| Nem |
+| **Az alkalmazás minimális verziójának megkövetelése (csak figyelmeztetés)** | Válassza az **Igen** lehetőséget a használandó alkalmazás minimális verziójára vonatkozó javaslat megjelenítéséhez. A felhasználó értesítést fog kapni, ha az alkalmazásnak az eszközön lévő verziója nem felel meg a követelménynek. Az értesítés elvethető.<br><br>Mivel az alkalmazások gyakran különböző verziószámozási sémákkal rendelkeznek, olyan szabályzatot érdemes létrehoznia, amely egy alkalmazást céloz meg egy minimális alkalmazásverzió alapján (például „Outlook verziószabályzat”). <br><br> Ez a szabályzatbeállítás a következő értékformátumokat támogatja: főverzió.alverzió, főverzió.alverzió.build és főverzió.alverzió.build.változat.| Nem |
 | **Az Android minimálisan előírt biztonsági javítási szintje** | A Google által kiadott Android biztonsági javítás minimális szintjének előírásához válassza az **Igen** lehetőséget. A felhasználó hozzáférése le lesz tiltva, ha az Android operációs rendszer az eszközön lévő biztonsági javítási szintje nem felel meg a követelménynek.<br><br> Ez a szabályzatbeállítás a következő dátumformátumot támogatja: ÉÉÉÉ-HH-NN. | Nem |
 | **Az Android minimálisan előírt biztonsági javítási szintje (csak figyelmeztetés)** | A Google által kiadott Android biztonsági javítás minimális szintjének előírásához válassza az **Igen** lehetőséget. A felhasználó értesítést kap, ha az Android operációs rendszer az eszközön lévő biztonsági javítási szintje nem felel meg a követelménynek. Az értesítés elvethető.<br><br> Ez a szabályzatbeállítás a következő dátumformátumot támogatja: ÉÉÉÉ-HH-NN. | Nem |
+
+> [!NOTE]
+> Ha meg szeretné tudni, hogy hogyan működnek az egyazon alkalmazás- és felhasználói csoportokra konfigurált többes Intune-alkalmazásvédelmi hozzáférési beállítások Android rendszerben, olvassa el [az Intune MAM-ról szóló gyakori kérdéseket és válaszokat](mam-faq.md).

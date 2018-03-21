@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Csak vállalati adatok törlése az Intune által felügyelt alkalmazásokból
 
@@ -39,7 +39,7 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
 1.  Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 
-2.  Válassza a **További szolgáltatások** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza ki az **Intune** elemet. Megnyílik az Intune panel. Válassza a **Mobilalkalmazások** lehetőséget.
+2.  Válassza a **Minden szolgáltatás** lehetőséget, a szűrési szövegmezőbe írja be az **Intune** szót, majd válassza az **Intune** elemet. Amikor megjelenik az Intune panel, válassza a **Mobilalkalmazások** panelt.
 
     ![A Microsoft Intune panel képernyőképe](./media/apps-selective-wipe01.png)
 
@@ -49,13 +49,11 @@ A vállalati alkalmazásadatok szelektív törléséhez hozzon létre törlési 
 
     ![Képernyőfelvétel: Az Új törlési kérés panel](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Válassza a **Felhasználó** elemet a **Felhasználó** panel megnyitásához, és válassza ki azt a felhasználót, akinek az alkalmazásadatait törölni kívánja.
+5.  Válasszon egy felhasználót, majd válassza a **Kijelölés** lehetőséget annak a felhasználónak a megadásához, akinek az alkalmazásadatait törölni kívánja.
 
-6.  Ezután válassza az **Eszköz** lehetőséget az **Új törlési kérés** panelen. Ez a művelet megnyitja az **Eszköz kiválasztása** panelt. Itt jelenik meg a kiválasztott felhasználóhoz társított összes eszköz. A panel ezen kívül megjeleníti az eszköz nevét (ez a felhasználó által megadott rövid név), valamint az eszköz platformját is tartalmazó eszköztípust. 
+6.  Ezután válassza az **Eszköz** lehetőséget az **Új törlési kérés** panelen. Ekkor megnyílik az **Eszköz kiválasztása** panel, amelyen látható a választott felhasználóhoz társított összes eszköz listája, valamint két oszlop is: az eszköznév, amely az eszköz felhasználó által definiált rövid neve, és az eszköztípus, amely az eszközplatformot mutatja. Válassza ki a törölni kívánt eszközt.
 
-7. A listából válassza ki a törölni kívánt eszközt.
-
-8.  Ekkor ismét az **Új törlési kérés** panel jelenik meg. A törlési kérés elindításához kattintson az **OK** gombra.
+7.  Ekkor ismét az **Új törlési kérés** panel jelenik meg. A törlési kérés elindításához kattintson az **OK** gombra.
 
 A szolgáltatás külön törlési kéréseket hoz létre az egyes védett alkalmazásokhoz az eszközön és a törlési kéréshez társított felhasználóhoz, és nyomon követi azokat.
 

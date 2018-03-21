@@ -1,10 +1,10 @@
 ---
-title: "Feltételes hozzáférés az Intune-nal"
-titlesuffix: Azure portal
-description: "A feltételes hozzáférés használatának szokásos módjai az Intune-ban"
+title: "Feltételes hozzáférés a Microsoft Intune-nal"
+titlesuffix: 
+description: "A cikk azt ismerteti, hogyan használható az Intune feltételes hozzáférése az eszköz- és alkalmazásalapú feltételes hozzáféréshez."
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>A feltételes hozzáférés használatának szokásos módjai az Intune-ban
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Mik a feltételes hozzáférés használatának szokásos módjai az Intune-ban?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune két fő feltételes hozzáférési típussal rendelkezik. Az első a eszközalapú feltételes hozzáférés, a második pedig az alkalmazásalapú feltételes hozzáférés. A feltételes hozzáférés megfelelőségének a szervezetben való engedélyezéséhez konfigurálnia kell a kapcsolódó megfelelőségi szabályzatokat.
+Az Intune-ban kétféle feltételes hozzáférés létezik: eszközalapú és alkalmazásalapú feltételes hozzáférés. A feltételes hozzáférés megfelelőségének a szervezetben való engedélyezéséhez konfigurálnia kell a kapcsolódó megfelelőségi szabályzatokat. A feltételes hozzáférés gyakori használati formái a helyszíni Exchange-hozzáférés engedélyezése vagy letiltása, a hálózati hozzáférés vezérlése vagy egy Mobile Threat Defense-megoldással való integráció.
 
 Az alábbi információ segítségével megismerheti az Intune *mobileszköz*-megfelelőségi és a *mobilalkalmazás*-kezelési funkcióit. 
 

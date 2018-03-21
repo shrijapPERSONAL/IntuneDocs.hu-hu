@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Bevezetés a Microsoft Intune használatába az Azure Portálon
 
@@ -31,7 +31,7 @@ Az Azure Portal bal oldalán található __oldalsáv__ megjeleníti az összes r
 
 ![Egy felhasználó a Microsoft Intune-t keresi a „További szolgáltatások” listában.](./media/azure-add-intune1.png)
 
-1. Válassza a lap bal oldalán, az oldalsáv alján a **További szolgáltatások** hivatkozást.
+1. Válassza a lap bal oldalán lévő oldalsávon a **Minden szolgáltatás** hivatkozást.
 2. Keressen az **Intune** kifejezésre a szűrőmezőben.
 3. Kattintson a **csillagra**, amivel felveszi az Intune-t a kedvenc szolgáltatásai listájának az aljára.
 4. Mutasson az Intune szolgáltatásra. Jelölje ki és húzza át az Intune-t a szolgáltatás nevének jobb oldalán található **három függőleges ponttal**.
@@ -52,7 +52,7 @@ Ez a funkció relevánsabb lesz, miután további tartalmakat is hozzáadott az 
 
 ## <a name="using-services"></a>Szolgáltatások használata
 
-Ha megnyitja a Microsoft Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Mobilalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek.
+Ha megnyitja az Intune-t vagy bármely más szolgáltatást az Azure-ban, az egy **panelen** fog megjelenni. Az Intune-ban először használt tevékenységprofilok egy része, mint a **Felhasználók**, **Csoportok** és **Mobilalkalmazások**, mind teljes képernyős panelen jelennek meg. Amikor kiválasztja a tevékenységprofilt, az ennek megfelelő panel a teljes lapon jelenik meg. Más panelek megnyitáskor a panel jobb oldalából fognak előcsúszni, és az alá a fő panel alá fognak összecsukódni, ahonnan előjöttek.
 
 ## <a name="next-steps"></a>További lépések
 

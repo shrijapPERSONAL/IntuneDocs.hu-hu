@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 A hibaelhárítási portál segítségével az ügyfélszolgálat munkatársai és az Intune-rendszergazdák felhasználói információkat tekinthetnek meg a felhasználói segítségkérések teljesítéséhez. Az ügyfélszolgálattal rendelkező cégek **Ügyfélszolgálat** jogosultságot oszthatnak ki egy felhasználói csoport részére. Az ügyfélszolgálati szerepkörrel rendelkezők a **Hibaelhárítás** panelt használhatják.
 
-A **Hibaelhárítás** panelen megtalálhatók lesznek a felhasználói regisztrálással kapcsolatos problémák. A hiba adatai és a megoldáshoz javasolt lépések segítséget nyújtanak a rendszergazdának és az ügyfélszolgálati munkatársaknak a hibalehárításban. A rendszer nem jegyez fel minden regisztrálási hibát, és bizonyos hibáknál nem kínál fel megoldási javaslatokat. 
+A **Hibaelhárítás** panelen megtalálhatók lesznek a felhasználói regisztrálással kapcsolatos problémák. A hiba adatai és a megoldáshoz javasolt lépések segítséget nyújtanak a rendszergazdának és az ügyfélszolgálati munkatársaknak a hibalehárításban. A rendszer nem jegyez fel minden regisztrálási hibát, és bizonyos hibáknál nem kínál fel megoldási javaslatokat.
 
 Az ügyfélszolgálati szerepkör hozzárendeléséről a [Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal](/intune/role-based-access-control) című témakör nyújt további információt.
 
@@ -41,12 +41,12 @@ Ha egy felhasználó Intune-nal kapcsolatos műszaki problémával fordul az üg
 
 ## <a name="to-review-troubleshooting-details"></a>A hibaelhárítási adatok ellenőrzése
 
-A hibaelhárítási portálon a **Felhasználó kijelölése** hivatkozással lehet megnézni a felhasználó adatait. A felhasználói adatok segítséget nyújtanak a felhasználók és eszközeik aktuális állapotának áttekintésében.  
+A hibaelhárítási panelen a **Felhasználó kiválasztása** hivatkozással lehet megnézni a felhasználó adatait. A felhasználói adatok segítséget nyújtanak a felhasználók és eszközeik aktuális állapotának áttekintésében.  
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** panelen válassza az **Hibaelhárítás** lehetőséget.
-4. Kattintson a **Felhasználó kiválasztása** lehetőségre.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza a **Hibaelhárítás** lehetőséget.
+4. A felhasználó kiválasztásához kattintson a **Kijelölés** lehetőségre.
 5. Jelöljön ki egy felhasználót a megfelelő név vagy e-mail cím beírásával. Kattintson a **Kiválasztás** lehetőségre. A felhasználóval kapcsolatos hibaelhárítási információ a Hibaelhárítás panelen jelenik meg. Az alábbi táblázat tartalmazza az információk leírását.
 
 > [!Note]  
@@ -54,7 +54,7 @@ A hibaelhárítási portálon a **Felhasználó kijelölése** hivatkozással le
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>A hibaelhárítási irányítópult területei
 
-A **Hibaelhárítás** panel használatával felhasználói információkat tekinthet meg. 
+A **Hibaelhárítás** panel használatával felhasználói információkat tekinthet meg.
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -63,7 +63,7 @@ A **Hibaelhárítás** panel használatával felhasználói információkat teki
 | 1.   | Fiók állapota  | Az aktuális Intune-bérlő állapotát jeleníti meg, amely lehet **Aktív** vagy **Inaktív**.       |
 | 2.   | Felhasználó kiválasztása  | Az aktuálisan kiválasztott felhasználó neve. Új felhasználó kiválasztásához kattintson a **Felhasználó váltása** lehetőségre.       |
 | 3.   | Felhasználó állapota  | Megjeleníti a felhasználó Intune-licencének állapotát, az eszközök számát, az egyes eszközök megfelelőségét, az alkalmazások számát és az alkalmazások megfelelőségét.       |
-| 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Mobilalkalmazásokban<li>Alkalmazásvédelmi szabályzatok<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok<li> Regisztrációs korlátozások</ul>      |
+| 4.   | Felhasználói adatok  | A listából kiválaszthatja a panelen megtekintendő információkat. <br>Az alábbiak közül választhat: <ul><li>Mobilalkalmazásokban<li>Alkalmazásvédelmi szabályzatok<li>Megfelelőségi szabályzatok<li> Konfigurációs szabályzatok</ul>      |
 | 5.   | Csoporttagság  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Mobilalkalmazások információi

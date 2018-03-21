@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
-A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók iOS rendszerű eszközökhöz.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó beállításait, amelyek konfigurálhatók iOS rendszerű eszközökhöz.
+
 ## <a name="general"></a>Általános
 
+-   **Használati adatok megosztása** – Engedélyezheti vagy letilthatja az eszköz számára, hogy diagnosztikai és használati telemetriaadatokat küldjön az Apple-nek.
 -   **Diagnosztikai adatok küldése** – Engedélyezi vagy letiltja, hogy az eszköz diagnosztikai adatokat küldjön az Apple számára.
 -   **Képernyőfelvétel** – Engedélyezi a felhasználó számára, hogy képként rögzítse a képernyő tartalmát.
     - **Távoli képernyőfigyelés az Osztályterem alkalmazással (csak felügyelt)** – Letiltja vagy engedélyezi, hogy az Apple Osztályterem alkalmazása figyelje az iOS-eszközök képernyőjét.
@@ -213,8 +215,8 @@ Az **Importálás** gombra kattintva egy CSV formátumú fájlt is beolvashat. E
 -   **Wi-Fi-hálózatokhoz való csatlakozás csak konfigurációs profilokkal (csak felügyelt)** – Az eszköz csak olyan Wi-Fi-hálózatokhoz csatlakozhat, amelyeket Intune-beli Wi-Fi-profillal konfiguráltak.
 
 - **Mobilhálózati használati szabályok (csak felügyelt)** – A beállítással a felügyelt alkalmazások által mobilhálózatokon használható adattípusokat határozhatja meg. A következő lehetőségek közül választhat:
-    - **Mobiladatok használatának letiltása**
-    - **Mobiladatok használatának letiltása barangolás esetén**
+    - **Mobiladatok használatának letiltása** – A mobiladatok használatát letilthatja **Minden kezelt alkalmazás** vagy **adott alkalmazások** számára.
+    - **Mobiladatok használatának letiltása barangolás esetén** – A mobiladatok barangolás esetén való használatát letilthatja **Minden kezelt alkalmazás** vagy **adott alkalmazások** számára.
 
 ## <a name="connected-devices"></a>Csatlakoztatott eszközök
 
