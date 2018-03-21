@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Ezekkel a beállításokkal konfigurálhatja az alkalmazások és mappák elrend
 
 A hozzárendelt profillal rendelkező iOS-eszközöknek felügyelt módban kell lenniük, és az iOS legalább 9.3-as verzióját kell futtatniuk.
 
-1. Az **Eszközkonfiguráció** terület **Profil létrehozása**, **Eszközfunkciók** lappján válassza a**Kezdőképernyő-elrendezés (csak felügyelt)** lehetőséget.
-2. A **Kezdőképernyő-elrendezés (csak felügyelt)** lapon válassza ki, hogy a **Dock** vagy a **Lapok** elrendezését kívánja-e konfigurálni.
+1. Az [Intune az Azure Portalon](https://portal.azure.com) felületről lépjen az eszközkonfigurációs terület [**Eszközfunkciók** részére](device-features-configure.md).
+2. Az **Eszközfunkciók** panelen válassza a **Kezdőképernyő-elrendezés (csak felügyelt)** lehetőséget.
+3. A **Kezdőképernyő-elrendezés (csak felügyelt)** panelen válassza ki, hogy a **Dock** vagy a **Lapok** elrendezését kívánja-e konfigurálni.
 
 ## <a name="add-items-to-the-dock"></a>Elemek hozzáadása a Dockhoz
 
-A **Dock** lapon legfeljebb 6 elemet vagy mappát adhat hozzá az iOS-képernyőn elhelyezkedő Dockhoz. Sok eszköz azonban ennél kevesebb elemet enged meg, az iPhone-eszközök például csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
+A **Dock** panelen legfeljebb 6 elemet vagy mappát adhat hozzá az iOS-képernyőn elhelyezkedő Dockhoz. Sok eszköz azonban ennél kevesebb elemet enged meg, az iPhone-eszközök például csak négy elem elhelyezését támogatják. Ebben az esetben csak az első négyként konfigurált elemek jelennek meg az eszközön.
 
 1. A **Hozzáadás** választásával adhat elemeket a Dockhoz.
-2. A **Sor hozzáadása** lapon válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván-e hozzáadni.
+2. A **Sor hozzáadása** panelen válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván-e hozzáadni.
 3. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a Dockban.
-4. Folytassa az elemek hozzáadását. Ha elkészült, kattintson minden lapon az **OK** gombra, míg vissza nem tér a **Profil létrehozása** lapra. Válassza a **Létrehozás** lehetőséget.
+4. Folytassa az elemek hozzáadását. Ha elkészült, kattintson minden panelen az **OK** gombra, míg vissza nem tér a **Profil létrehozása** panelre. Válassza a **Létrehozás** lehetőséget.
 
 >[!TIP]
-> A kezdőképernyő és a lapok listáin húzással rendezheti át az elemek sorrendjét. 
+> A kezdőképernyő és a lapok listáin húzással rendezheti át az elemek sorrendjét.
 
 ### <a name="example"></a>Példa
 
@@ -56,9 +57,8 @@ Ha a szabályzatot egy iPhone-eszközhöz társítja, akkor az eredmény az alá
 
 Adja meg a kezdőképernyőn megjeleníteni kívánt lapokat és az egyes lapokon megjelenő alkalmazásokat. Az egyes lapokhoz adott alkalmazások balról jobbra jelennek meg, a listában megadott sorrendben. Ha több alkalmazást ad hozzá, mint amennyi a lapon elfér, akkor azok egy következő lapra kerülnek át.
 
-
-1. A **Lapok** lapon válassza a **Hozzáadás** lehetőséget.
-2. A **Sor hozzáadása** lapon írjon be egy **Lapnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+1. A **Lapok** panelen válassza a **Hozzáadás** lehetőséget.
+2. A **Sor hozzáadása** panelen írjon be egy **Lapnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Válassza a **Hozzáadás** lehetőséget, majd válassza ki, hogy **Alkalmazást** vagy **Mappát** kíván hozzáadni a laphoz.
 4. Az ebben a témakörben található információk alapján konfigurálja, hogy milyen alkalmazásokat és mappákat szeretne megjeleníteni a lapon.
 
@@ -85,7 +85,7 @@ Az egyes lapokhoz egy mappában hozzáadott alkalmazások balról jobbra jelenne
 
 1. Írja be a **Mappanevet**. Ez a név jelenik meg az eszközön a felhasználók számára.
 2. A **Hozzáadás** választásával hozzon létre egy lapot a mappában. Legfeljebb 20 lapot adhat hozzá.
-3. A **Sor hozzáadása** lapon írjon be egy nevet a laphoz. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
+3. A **Sor hozzáadása** panelen írjon be egy nevet a laphoz. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 3. Írjon be egy **Alkalmazásnevet**. Ez a név arra való, hogy az Azure Portalon hivatkozzon rá, és *nem jelenik meg* az iOS-eszközön.
 2. Adja meg a megjeleníteni kívánt alkalmazás **csomagazonosítóját**. Útmutatást kaphat az **Alkalmazás hozzáadása a listához** című szakaszban.
 3. Válassza a **Hozzáadás** lehetőséget. Legfeljebb 60 elemet adhat hozzá.
@@ -94,7 +94,7 @@ Az egyes lapokhoz egy mappában hozzáadott alkalmazások balról jobbra jelenne
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Csomagazonosító-referencia beépített iOS-alkalmazásokhoz
 
-Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával. 
+Az alábbi listában néhány gyakori beépített iOS-alkalmazás csomagazonosítóját ismertetjük. Ha más alkalmazás csomagazonosítóját szeretné megismerni, lépjen kapcsolatba a szoftver gyártójával.
 
 |||
 |-|-|

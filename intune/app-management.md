@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/09/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -34,7 +34,7 @@ A Microsoft Intune lehetővé teszi a rendszergazdáknak, hogy a cég által has
 
 Emellett előfordulhat, hogy az Intune-ban nem regisztrált eszközökön található alkalmazásokat is szeretne hozzárendelni és felügyelni.
 
-Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt eszközökön való használatához. Az alábbi táblázat az alkalmazáskezelési lehetőségeket foglalja össze. A táblázat alatt segítséget talál ahhoz, hogy a Microsoft Intune Azure Portalbeli használatával is megismerkedjen. 
+Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt eszközökön való használatához. Az alábbi táblázat az alkalmazáskezelési lehetőségeket foglalja össze. A táblázat alatt segítséget talál ahhoz, hogy a Microsoft Intune Azure Portalbeli használatával is megismerkedjen.
 
 ## <a name="app-management-capabilities-by-platform"></a>Alkalmazás-felügyeleti szolgáltatások platform szerint
 
@@ -51,7 +51,7 @@ Az Intune számos szolgáltatást kínál a szükséges alkalmazások kívánt e
 |Egy alkalmazás-áruházból mennyiségi licencszerződés keretében vásárolt alkalmazások hozzárendelése és nyomon követése|Nem|Nem|Nem|Igen|
 |Az alkalmazások kötelező telepítése eszközökön (kötelező)<sup>2</sup>|Igen|Igen|Igen|Igen|
 |Nem kötelező telepítés az eszközökön a Céges portálról (elérhető telepítés)|Igen|Igen|Igen|Igen|
-|Alkalmazás telepítési hivatkozása a weben (webklip)|Igen|Igen|Igen|Igen|
+|Alkalmazás telepítési hivatkozása a weben (webes hivatkozás)|Igen|Igen|Igen|Igen|
 |Belső fejlesztésű (üzletági) alkalmazások|Igen|Igen|Nem|Igen|
 |Áruházbeli alkalmazások|Igen|Igen|Igen|Igen|
 |Alkalmazások frissítése|Igen|Igen|Igen|Igen|
@@ -70,25 +70,29 @@ Az alkalmazáshoz kapcsolódó legtöbb dolgot a **Mobile Apps** munkafolyamatba
 
     ![A Mobile Apps munkafolyamat](./media/apps-workload.png)
 
+Az alábbi információ a **Mobilalkalmazások** panelen elérhető lehetőségeknek felel meg.
+
 ### <a name="manage"></a>A számítógépeken futó
-- **Alkalmazások** – Itt veheti fel, oszthatja ki és figyelheti az alkalmazások többségét.
+- **Alkalmazások** – Ezzel a beállítással a munkaerő által használt alkalmazásokat adhatja hozzá, tekintheti meg, rendelheti hozzá és figyelheti. További információt az alábbi cikkekben talál:
     - [Alkalmazások hozzáadása](apps-add.md)
     - [Alkalmazások hozzárendelése](apps-deploy.md)
     - [Alkalmazások figyelése](apps-monitor.md)
-- **Alkalmazáskonfigurációs szabályzatok** – Az alkalmazáskonfigurációs szabályzatokkal automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy alkalmazást futtat.
-    - [iOS-es alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-ios.md)
-    - [Androidos alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-android.md)
-- **Alkalmazásvédelmi szabályzatok** – Lehetővé teszik beállítások társítását egy alkalmazáshoz a használt céges adatok védelme érdekében. Például korlátozhatja egy alkalmazás más alkalmazásokkal való kommunikációját, vagy előírhatja PIN-kód megadását a felhasználónak egy céges alkalmazás eléréséhez.
+- **Alkalmazáskonfigurációs szabályzatok** – Az alkalmazáskonfigurációs szabályzatokkal automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor egy felhasználó egy alkalmazást futtat. További információt az alábbi cikkekben talál:
+    - [Az Intune alkalmazáskonfigurációs szabályzatai](app-configuration-policies-overview.md)
+        - [iOS-es alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-ios.md)
+        - [Androidos alkalmazáskonfigurációs szabályzatok](app-configuration-policies-use-android.md)
+- **Alkalmazásvédelmi szabályzatok** – Az alkalmazásvédelmi szabályzatok lehetővé teszik beállítások társítását egy alkalmazáshoz a használt céges adatok védelme érdekében. Például korlátozhatja egy alkalmazás más alkalmazásokkal való kommunikációját, vagy előírhatja PIN-kód megadását a felhasználónak egy céges alkalmazás eléréséhez. További információt az alábbi cikkekben talál:
     - [Alkalmazásvédelmi szabályzatok](app-protection-policies.md)
-- **Szelektív alkalmazástörlés** – Csak a céges adatok eltávolítása a kiválasztott felhasználó eszközéről.
+- **Szelektív alkalmazástörlés** – Csak a céges adatok eltávolítása a kiválasztott felhasználó eszközéről. További információt az alábbi cikkekben talál:
     - [Alkalmazások szelektív törlése](apps-selective-wipe.md)
-- **iOS-alapú kiépítési profilok** – Az iOS-alkalmazások tartalmaznak egy kiépítési profilt és kódot, tanúsítvánnyal aláírva. Ha a tanúsítvány lejár, az alkalmazás a továbbiakban nem futtatható. Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.
+- **iOS-alkalmazáskiépítési profilok** – Az iOS-alkalmazások tartalmaznak egy kiépítési profilt és kódot, tanúsítvánnyal aláírva. Ha a tanúsítvány lejár, az alkalmazás a továbbiakban nem futtatható. Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások. További információt az alábbi cikkekben talál:
     - [iOS-alkalmazáskiépítési profilok](app-provisioning-profile-ios.md)
 
 További információért lásd: [Alkalmazások kezelése](app-management.md).
 
 ### <a name="monitor"></a>Figyelő
-- **Alkalmazáslicencek** – Az alkalmazás-áruházakból vásárolt mennyiségi licencszerződéses alkalmazások megtekintése, hozzárendelése és figyelése.
+- **Alkalmazáslicencek** – Az alkalmazás-áruházakból vásárolt mennyiségi licencszerződéses alkalmazások megtekintése, hozzárendelése és figyelése. További információt az alábbi cikkekben talál:
+    - [iOS Volume Purchase Program-alkalmazások](vpp-apps-ios.md)
     - [A Vállalati Microsoft Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
 - **Felderített alkalmazások** – Megjeleníti az Intune által hozzárendelt, és az eszközön telepített összes alkalmazást.
 - **Alkalmazástelepítési állapot** – Egy Ön által létrehozott alkalmazás-hozzárendelés állapotát jeleníti meg.
@@ -100,22 +104,22 @@ További információért lásd: [Alkalmazások figyelése](apps-monitor.md).
 ### <a name="setup"></a>Setup
 - **iOS VPP-jogkivonatok** – Megtekintheti és felhasználhatja az iOS Volume Purchase Program (VPP) keretében beszerzett licenceit.
     - [iOS Volume-Purchased Program keretében vásárolt alkalmazások](vpp-apps-ios.md)
-- **Windowsos vállalati tanúsítvány** – Alkalmazhat egy olyan kódaláíró tanúsítványt, amely üzletági alkalmazások felügyelt Windows-eszközökre való terjesztésére szolgál, vagy megtekintheti az állapotát. 
-- **Windowsos Symantec-tanúsítvány** – Alkalmazhat egy Symantec kódaláíró tanúsítványt, mely XAP és WP8.x appx-fájlok Windows 10 Mobile-eszközökre való terjesztéséhez szükséges, vagy megtekintheti az állapotát. 
-- **Vállalati Microsoft Áruház** – A Vállalati Microsoft Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot.
+- **Windowsos vállalati tanúsítvány** – Alkalmazhat egy olyan kódaláíró tanúsítványt, amely üzletági alkalmazások felügyelt Windows-eszközökre való terjesztésére szolgál, vagy megtekintheti az állapotát.
+- **Windowsos Symantec-tanúsítvány** – Alkalmazhat egy Symantec kódaláíró tanúsítványt, mely XAP és WP8.x appx-fájlok Windows 10 Mobile-eszközökre való terjesztéséhez szükséges, vagy megtekintheti az állapotát.
+- **Vállalati Microsoft Áruház** – A Vállalati Microsoft Áruházba történő integráció beállítása. Ezt követően az Intune-ban szinkronizálhatja és kioszthatja a megvásárolt alkalmazásokat, továbbá nyilvántarthatja a licenchasználatot. További információt az alábbi cikkekben talál:
     - [A Vállalati Microsoft Áruházból mennyiségi programban vásárolt alkalmazások](windows-store-for-business.md)
-- **Közvetlen telepítési kulcsok (Windows)** – Hozzáadhat egy Windowsos közvetlen telepítési kulcsot, mellyel közvetlenül az eszközre telepíthet egy alkalmazást, ahelyett hogy közzétenné azt a Windows Áruházban, majd onnan telepítené.
-    - [Windows-alkalmazás közvetlen telepítése](app-sideload-windows.md) 
-- **A Céges portál védjegye** – A Céges portál testreszabása saját céges védjegy megadásával.
+- **Közvetlen telepítési kulcsok (Windows)** – Hozzáadhat egy Windowsos közvetlen telepítési kulcsot, mellyel közvetlenül az eszközre telepíthet egy alkalmazást, ahelyett hogy közzétenné azt a Windows Áruházban, majd onnan telepítené. További információt az alábbi cikkekben talál:
+    - [Windows-alkalmazás közvetlen telepítése](app-sideload-windows.md)
+- **A Céges portál védjegye** – A Céges portál testreszabása saját céges védjegy megadásával. További információt az alábbi cikkekben talál:
     - [Céges portál konfigurálása](company-portal-app.md)
 - **Alkalmazáskategóriák** – Alkalmazáskategória-neveket adhat hozzá, rögzíthet és törölhet.
-- **Android for Work** – Jóváhagyhatja a cégben engedélyezett alkalmazásokat, és szinkronizálhatja őket.
-    - [Android for Work-alkalmazások](apps-add-android-for-work.md) 
+- **Android for Work** – Jóváhagyhatja a cégben engedélyezett alkalmazásokat, és szinkronizálhatja őket. További információt az alábbi cikkekben talál:
+    - [Android for Work-alkalmazások](apps-add-android-for-work.md)
 
 ### <a name="help-and-support"></a>Súgó és támogatás
-- **Súgó és támogatás** – Hibaelhárítási információkat kereshet, támogatást kérhet, és megtekintheti az Intune állapotát.
+- **Súgó és támogatás** – Hibaelhárítási információkat kereshet, támogatást kérhet, és megtekintheti az Intune állapotát. További információt az alábbi cikkekben talál:
     - [Problémák elhárítása](help-desk-operators.md)
-    
+
 ## <a name="next-steps"></a>További lépések
 
 - [Alkalmazás hozzáadása a Microsoft Intune-hoz](apps-add.md)

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
 
@@ -34,18 +34,19 @@ Az iOS-eszköz egyszeri bejelentkezési képességeinek kihasználásához az al
 
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
-3. Az **Intune** lapon válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** lapon válassza a **Profilok** lehetőséget.
-3. A Profilok lapon válassza a **Profil létrehozása** lehetőséget, adjon meg egy nevet és egy leírást, majd adja meg a következő beállításokat:
-   - **Platform**: Válassza az **iOS** lehetőséget. 
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
+4. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
+5. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
+6. Adjon meg egy nevet és egy leírást, majd adja meg a következő beállításokat:
+   - **Platform**: Válassza az **iOS** lehetőséget.
    - **Profil típusa**: Válassza az **Eszközfunkciók** lehetőséget.
-4. Az **Eszközfunkciók** lapon válassza az **Egyszeri bejelentkezés** lehetőséget.
+7. Az **Eszközfunkciók** panelen válassza az **Egyszeri bejelentkezés** lehetőséget.
 
-   ![Egyszeri bejelentkezés lap](./media/sso-blade.png)
+   ![Egyszeri bejelentkezés panel](./media/sso-blade.png)
 
-2. Az **Egyszeri bejelentkezés** oldalon lévő mezők kitöltéséhez használja az alábbi összefoglaló táblázatot. A táblázatot követő szakaszokban további információt kaphat az egyes mezőkről.
-   
+8. Az **Egyszeri bejelentkezés** panelen lévő mezők kitöltéséhez használja az alábbi összefoglaló táblázatot. A táblázatot követő szakaszokban további információt kaphat az egyes mezőkről.
+
    |Mező  |Megjegyzések|
    |---------|---------|
    |**Felhasználónév attribútum az AAD-ből**|Ezt a tulajdonságot az Intune minden egyes felhasználó esetén kikeresi az AAD-ból, és feltölti vele a vonatkozó mezőt (például egyszerű felhasználónév), mielőtt létrehozná az eszközön telepített XML-adatcsomagot.|

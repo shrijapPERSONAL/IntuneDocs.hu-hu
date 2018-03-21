@@ -1,12 +1,11 @@
 ---
-title: "Intune-t futtató Windows 10 rendszerű eszközök alaphelyzetbe állítása"
-titlesuffix: Azure portal
-description: "A cikk azt ismerteti, hogyan használható az Újrakezdés az Intune-t futtató Windows 10 rendszerű számítógépek alaphelyzetbe állításához.”"
+title: "Windows 10 rendszerű eszközök visszaállítása a Microsoft Intune-nal – Azure | Microsoft Docs"
+description: "A Microsoft Intune Újrakezdés funkciójával eltávolíthat alkalmazásokat Windows 10 rendszerű számítógépekről, beleértve az OEM-ektől származó, előre telepített alkalmazásokat is. A kezdőmappa tartalmát is megtarthatja, ha a felhasználói adatok megtartása beállítás engedélyezve van."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +13,31 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c45d3e47c90ca7739b3aa6eee1bf31d787a82264
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Intune-t futtató Windows 10 rendszerű eszközök alaphelyzetbe állítása az Újrakezdéssel
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az **Újrakezdés** eszközművelet eltávolít minden alkalmazást az alkotói frissítéssel rendelkező Windows 10-es számítógépről, majd automatikusan a Windows legújabb verziójára frissíti az eszközt.
-Ezzel a művelettel egyszerűbben eltávolíthatók az új gépeken gyakran előtelepítve megtalálható számítógépgyártói (OEM) alkalmazások. A konfigurációval meg lehet adni, hogy a művelet a felhasználói adatokat is eltávolítsa-e. Ebben az esetben az alkalmazások és a beállítások el lesznek távolítva, de a felhasználó kezdőmappájának tartalma megmarad.
+Az **Újrakezdés** eszközművelet eltávolít minden olyan alkalmazást, amely az alkotói frissítéssel rendelkező Windows 10 rendszerű számítógépeken fut. Ezután automatikusan frissíti a Windowst a legújabb verzióra.
 
-## <a name="how-to-use-fresh-start"></a>Az Újrakezdés használata
+Ezzel a művelettel eltávolíthat olyan előre telepített (OEM-ektől származó) alkalmazásokat, amelyek általában telepítve vannak egy új számítógépen. Ha meg szeretné tartani a felhasználó kezdőmappájának tartalmát, és csak az alkalmazásokat és a beállításokat szeretné törölni, használja a(z) `if user data is retained` beállítást.
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-5. A felügyelt eszközök listájából válassza ki a Windows 10-es asztali eszközt, majd válassza a távoli **Újrakezdés** eszközműveletet.
+> [!IMPORTANT]
+> Az Újrakezdés törli az eszköz Intune-regisztrációját, azonban az Azure Active Directory-kapcsolata megmarad.
+
+## <a name="use-fresh-start"></a>Az Újrakezdés használata
+
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson a **Minden szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet.
+3. Kattintson az **Eszközök**, majd a **Minden eszköz** elemre.
+4. A felügyelt eszközök listájából válassza ki a Windows 10-es asztali eszközt, majd válassza az **Újrakezdés** lehetőséget.
 
 ## <a name="next-steps"></a>További lépések
 
-A kezdeményezett művelet állapotát az **Eszközök** panel **Eszközműveletek** szakaszában tekintheti meg.
-
+Az ikon állapotának megtekintéséhez válassza az **Eszközműveletek** (**Microsoft Intune** > **Eszközök**) lehetőséget.

@@ -1,12 +1,12 @@
 ---
 title: "Alkalmazások hozzárendelése Android for Work-eszközökhöz"
 titlesuffix: Microsoft Intune
-description: "Az alábbi témakörből megtudhatja, hogyan végezheti el a Google Play for Work áruházból származó alkalmazások szinkronizálását és Android for Work-eszközökhöz való hozzárendelését.”"
+description: "Az alábbi témakörből megtudhatja, hogyan végezheti el a Google Play for Work áruházból származó alkalmazások szinkronizálását és Android for Work-eszközökhöz való hozzárendelését."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Alkalmazások hozzárendelése Android for Work-eszközökhöz az Intune-nal
 
@@ -38,36 +38,35 @@ Győződjön meg arról, hogy az Intune és az Android for Work szolgáltatást 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Google Play for Work áruházbeli alkalmazások szinkronizálása
 
 1. Nyissa meg a [Google Play for Work áruházat](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot.
-2. Az áruházban keresse meg az Intune-nal hozzárendelendő alkalmazást.
-3. A kiválasztott alkalmazás lapján válassza a **Jóváhagyás** elemet. Ebben a példában a Microsoft Excel alkalmazást választotta.<br>
-  ![Alkalmazás jóváhagyása – példa](media/approve.png)
-4. Ekkor megjelenik egy ablak, amelyben az alkalmazás engedélyt kér bizonyos műveletek végrehajtására. A folytatáshoz válassza a **Jóváhagyás** elemet.<br>
-  ![Alkalmazásengedélyek jóváhagyása – példa](media/approve-app-permissions.png)
-5. A jóváhagyás megtörténik, és az alkalmazás megjelenik a rendszergazdai konzolon.
+2. Az áruházban keresse meg és válassza ki az Intune-nal hozzárendelendő alkalmazást.
+3. Az alkalmazást megjelenítő lapon válassza a **Jóváhagyás** lehetőséget. A következő példákban a Microsoft Excel alkalmazás van kiválasztva.</br>
 
-## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work áruházból származó üzletági alkalmazások közzététele és szinkronizálása
+    ![Példa – Alkalmazás jóváhagyása a Google Play for Work Áruházban](media/approve.png)</br>
+    
+  Ekkor megjelenik egy ablak, amelyben az alkalmazás engedélyt kér bizonyos műveletek végrehajtására. 
 
-1. Nyissa meg a Google Play Developer Console-t a [play.google.com/apps/publish](https://play.google.com/apps/publish) címen.
-2. Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot. Az első bejelentkezés előtt regisztrálni kell, továbbá megfizetni a Google Developer-program regisztrációs díját.
-3. A konzolon válassza az **Add new application** (Új alkalmazás hozzáadása) elemet.
-4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját cég tagjai számára (<cég neve>)) lehetőséget:<br>
-  ![Az alkalmazás elérhetővé tétele csak a saját cég számára beállítás](media/restrict.png)<br>
-Ezzel a művelettel gondoskodhat arról, hogy az alkalmazás csak a munkahelye számára legyen elérhető, a Google Play Áruház nyilvános területein ne.
-További információt az androidos alkalmazások feltöltéséről és közzétételéről a [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469) súgóközpontban talál.
-5. Miután feltöltötte az alkalmazást, lépjen be a [Google Play for Work áruházba](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot.
-6. Az áruház **Alkalmazások** csomópontjában ellenőrizze, hogy látja-e a közzétett alkalmazást. Az alkalmazás automatikusan megkapja az engedélyt az Intune-nal való szinkronizálásra.
+4. Az engedélyek elfogadásához és a folytatáshoz válassza a **Jóváhagyás** lehetőséget.</br>
 
-## <a name="assign-an-android-for-work-app"></a>Android for Work-alkalmazások hozzárendelése
+    ![Példa – Alkalmazásengedélyek jóváhagyása](media/approve-app-permissions.png)
+
+5. Adja meg, hogyan szeretné kezelni az új alkalmazásengedély-kérelmeket. Ezt követően válassza a **Mentés** lehetőséget az új alkalmazásengedély-kérelmek kezelési módjának mentéséhez.</br>
+
+    ![Példa – Új alkalmazásengedély-kérelmek mentése](media/approve-app-settings.png)</br>
+
+    A jóváhagyás megtörténik, és az alkalmazás megjelenik a rendszergazdai konzolon. Mostantól [szinkronizálhatja az Android for Work alkalmazást az Intune-nal](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+
+## <a name="sync-an-android-for-work-app-with-intune"></a>Az Android for Work alkalmazás szinkronizálása az Intune-nal
 
 Ha jóváhagyott egy áruházból beszerzett alkalmazást, de nem látja a **Mobilalkalmazások** munkaterület **Licencelt alkalmazások** csomópontjában, az alábbi lépésekkel kényszerítheti az azonnali szinkronizálást:
 
-1. Jelentkezzen be az Azure Portalra.
-2. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-3. A **Mobilalkalmazások** területen válassza a **Beállítás** > **Android for Work** elemet.
-4. Az Android for Work panelen válassza a **Szinkronizálás** elemet.
-5. A lapon látható az utolsó szinkronizálás időpontja és állapota is.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
+3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
+4. A **Mobilalkalmazások** terület **Beállítás** szakaszában válassza az **Android for Work** lehetőséget.
+5. Az Android for Work panelen válassza a **Szinkronizálás** elemet. A lapon frissül az utolsó szinkronizálás időpontja és állapota.
+6. A **Mobilalkalmazások** területen válassza az **Alkalmazások** lehetőséget az újonnan elérhető Android for Work-alkalmazás megjelenítéséhez.
 
-Ha az alkalmazás megjelenik a **Mobilalkalmazások** munkaterület **Licencelt alkalmazások** csomópontjában, [ugyanúgy hozzárendelheti, mint bármelyik alkalmazást](/intune-azure/manage-apps/deploy-apps). Az alkalmazásokat úgy is hozzá lehet rendelni, hogy csak bizonyos felhasználói csoportokat érjenek el.
+Ha az alkalmazás megjelenik a **Mobilalkalmazások** munkaterület **Alkalmazáslicencek** csomópontjában, [ugyanúgy hozzárendelheti, mint bármelyik alkalmazást](/intune-azure/manage-apps/deploy-apps). Az alkalmazásokat úgy is hozzá lehet rendelni, hogy csak bizonyos felhasználói csoportokat érjenek el.
 
 A hozzárendelés után az alkalmazás rendelkezésre áll a célzott eszközökön. A rendszer nem kér telepítési jóváhagyást az eszköz felhasználójától.
 
@@ -84,7 +83,23 @@ Ellenőrizze rendszeresen a felügyelt Google Play-konzolon az új alkalmazásen
 2. Jelentkezzen be azzal a Google-fiókkal, amelyet az alkalmazások közzétételénél és jóváhagyásánál használt.
 3. A **Frissítések** lapon ellenőrizze, hogy szükséges-e alkalmazásokat frissíteni.  A listában szereplő összes alkalmazás új engedélyeket kér, és a hozzárendelés addig nem lehetséges, amíg az engedélyeket meg nem adják.  
 
-Alternatív megoldásként beállíthatja, hogy a Google Play alkalmazásonként automatikusan végezze el az engedélyek ismételt megadását. 
+Alternatív megoldásként beállíthatja, hogy a Google Play alkalmazásalapon automatikusan végezze el az engedélyek ismételt megadását. 
 
+## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work áruházból származó üzletági alkalmazások használata
 
+1. Nyissa meg a Google Play Developer Console-t a [play.google.com/apps/publish](https://play.google.com/apps/publish) címen.
+2. Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot. Az első bejelentkezés előtt regisztrálni kell, továbbá megfizetni a Google Developer-program regisztrációs díját.
+3. A konzolon válassza az **Add new application** (Új alkalmazás hozzáadása) elemet.
+4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját cég tagjai számára (<cég neve>)) lehetőséget:</br>
+
+    ![Az alkalmazás elérhetővé tétele csak a saját szervezet számára beállítás](media/restrict.png)</br>
+
+Ezzel a művelettel gondoskodhat arról, hogy az alkalmazás csak a munkahelye számára legyen elérhető, a Google Play Áruház nyilvános területein ne.
+További információt az androidos alkalmazások feltöltéséről és közzétételéről a [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469) súgóközpontban talál.
+5. Miután feltöltötte az alkalmazást, lépjen be a [Google Play for Work áruházba](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot.
+6. Az áruház **Alkalmazások** csomópontjában ellenőrizze, hogy látja-e a közzétett alkalmazást. Az alkalmazás automatikusan megkapja az engedélyt az Intune-nal való szinkronizálásra.
+
+## <a name="next-steps"></a>További lépések
+
+- [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)
 

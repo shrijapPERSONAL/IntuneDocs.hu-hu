@@ -1,12 +1,12 @@
 ---
 title: "Office 365-alkalmazások telepítése a Microsoft Intune használatával"
 titlesuffix: 
-description: "Annak ismertetése, hogyan egyszerűsíthető az Office 365-alkalmazások a Windows 10-es eszközökre való telepítése a Microsoft Intune használatával.”"
+description: "Az Office 365-alkalmazások a Windows 10-es eszközökre való telepítésének egyszerűsítése a Microsoft Intune használatával."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365 ProPlus-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Office 365-alkalmazások hozzárendelése Windows 10-es eszközökhöz a Microsoft Intune-nal
 
-Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
+Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365-alkalmazásokat a Windows 10 rendszerű kezelt eszközökhöz. Emellett telepíthet alkalmazásokat a Microsoft Project Online asztali ügyfeléhez és a Microsoft Visio Pro for Office 365 szolgáltatáshoz is, amennyiben rendelkezik hozzájuk licenccel. A kívánt alkalmazások egyetlen bejegyzésként jelennek meg az Intune-konzol alkalmazáslistájában.
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -32,7 +32,7 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus-alk
 >Az Office telepítésének ezen módja csak akkor támogatott, ha a Microsoft Office más verziói nincsenek telepítve az eszközön.
 
 - Azokon az eszközökön, melyekre telepíti az alkalmazásokat, a Windows 10 alkotói frissítésének vagy újabb verziójának kell futnia.
-- Az Intune csak az Office 365 ProPlus csomagból származó Office-alkalmazások hozzáadását támogatja.
+- Az Intune csak az Office 365 csomagból származó Office-alkalmazások hozzáadását támogatja.
 - Ha bármely Office-alkalmazás meg van nyitva, amikor az Intune telepíti az alkalmazáscsomagot, előfordulhat, hogy a telepítés sikertelen lesz, és elvesznek a végfelhasználók adatai a nem mentett fájlokból.
 - Ez a telepítési mód nincs támogatva Windows 10S, Windows Home, Windows Team, Windows Holographic és Windows Holographic for Business rendszert futtató eszközökön.
 - Az Intune nem támogatja az asztali Office 365-programok (más néven az Office Centennial-alkalmazások) Microsoft Áruházból történő telepítését olyan eszközök esetében, amelyekre korábban már telepítettek valamilyen Office 365-alkalmazást az Intune segítségével. Ha ezt a konfigurációt telepíti, az adatvesztést vagy adatsérülést okozhat.
@@ -41,12 +41,13 @@ Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 ProPlus-alk
 
 ## <a name="get-started"></a>Első lépések
 
-1.  Jelentkezzen be az Azure Portal webhelyre.
-2.  Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1.  Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2.  Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3.  Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-4.  A **Mobilalkalmazások** területen válassza a **Kezelés** > **Alkalmazások** elemet.
+4.  A **Mobilalkalmazások** területen a **Kezelés** szakaszban válassza az **Alkalmazások** lehetőséget.
 5.  Az alkalmazások listája fölött válassza a **Hozzáadás** lehetőséget.
-6.  Az **Alkalmazás felvétele** panelen válassza **Office 365 ProPlus Suite (Windows 10)** (Office 365 ProPlus-csomag (Windows 10)) lehetőséget.
+6.  Az **Alkalmazások hozzáadása** panel **Alkalmazás típusa** listájában válassza a **Windows 10** lehetőséget az **Office 365 csomag** alatt.
+    Mostantól konfigurálhatja az alkalmazáscsomagot.
 
 ## <a name="configure-the-app-suite"></a>Az alkalmazáscsomag konfigurálása
 
@@ -61,7 +62,7 @@ Ebben a lépésben választhatja ki az Office-alkalmazásokat, melyeket szeretne
 
 ## <a name="configure-app-information"></a>Az alkalmazásadatok konfigurálása
 
-Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezen adatok alapján azonosíthatja azt az Intune-ban, és a végfelhasználónak is segítenek megtalálni azt a Céges portál alkalmazásban.
+Ebben a lépésben meg kell adnia az alkalmazáscsomag adatait. Ezek alapján azonosíthatja az alkalmazáscsomagot az Intune-ban, és a felhasználók is ezek alapján találhatják meg azt a Céges portál alkalmazásban.
 
 1.  Az **Alkalmazás felvétele** panelen válassza az **App Suite Information** (Alkalmazáscsomag adatai) elemet.
 2.  Az **App Suite Information** (Alkalmazáscsomag adatai) panelen adja meg az alábbi adatokat:
@@ -75,7 +76,7 @@ Ebben a lépésben adhatja meg az alkalmazáscsomag adatait. Ezen adatok alapjá
     - **Fejlesztő** – Igény esetén megadhatja az alkalmazás fejlesztőjének nevét.
     - **Tulajdonos** – Igény esetén megadhatja az alkalmazás tulajdonosának nevét (például **HR-osztály**).
     - **Megjegyzések** – Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket.
-    - **Ikon feltöltése** – Feltölthet egy ikont, mely megjelenik az alkalmazással a céges portálon böngésző felhasználók számára.
+    - **Ikon** – Töltsön fel egy ikont, mely megjelenik az alkalmazással a céges portálon böngésző felhasználók számára.
 3.  Amikor elkészült, kattintson az **OK**gombra.
 
 ## <a name="configure-app-settings"></a>Alkalmazásbeállítások konfigurálása
@@ -91,7 +92,7 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
         - **Semi-Annual**
         - **Féléves (megcélzott)**
     - **Automatically accept the app end user license agreement** (Az alkalmazás végfelhasználói licencszerződésének automatikus elfogadása) – Ezt a beállítást akkor jelölje be, ha nem követeli meg a végfelhasználóktól, hogy elfogadják a licencszerződést. Ebben az esetben az Intune automatikusan elfogadja a szerződést.
-    - **Use shared computer activation** (Megosztott aktiválás használata) – A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információt az Overview of shared computer activation for Office 365 ProPlus (Az Office 365 ProPlus megosztott aktiválásának áttekintése) című témakörben találhat.
+    - **Use shared computer activation** (Megosztott aktiválás használata) – A megosztott aktiválás akkor használatos, amikor több felhasználó használja ugyanazt a számítógépet. További információt az Overview of shared computer activation for Office 365 (Az Office 365 megosztott aktiválásának áttekintése) című témakörben találhat.
     - **Nyelvek** – Az Office automatikusan telepít minden támogatott nyelvet, mely telepítve van a Windowsban a végfelhasználói eszközön. Ezt a beállítást akkor jelölje be, ha az alkalmazáscsomaghoz további nyelveket szeretne telepíteni.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ Ebben a lépésben az alkalmazáscsomag telepítési beállításait konfigurál
 
 ## <a name="finish-up"></a>Befejezés
 
-Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Mentés** lehetőséget. A létrehozott alkalmazás megjelenik az alkalmazáslistában.
+Ha elkészült, az **Alkalmazás hozzáadása** panelen válassza a **Hozzáadás** lehetőséget. A létrehozott alkalmazás megjelenik az alkalmazáslistában.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Az alkalmazáscsomag telepítése során megjelenő hibakódok
 
@@ -137,4 +138,4 @@ Az alábbi táblázatban az esetlegesen megjelenő gyakori hibakódok és azok j
 
 ## <a name="next-steps"></a>További lépések
 
-Mostantól hozzárendelheti az alkalmazásokat a kiválasztott csoportokhoz. További segítségért lásd: [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps).
+- Az alkalmazások a választott csoportokhoz való hozzárendeléséhez tekintse meg az [Alkalmazások hozzárendelése csoportokhoz](/intune-azure/manage-apps/deploy-apps) című cikket.

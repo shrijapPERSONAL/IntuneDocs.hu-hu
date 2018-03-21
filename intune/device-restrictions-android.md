@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban 
 
@@ -144,7 +144,7 @@ Mindegyik beállításnál egy alkalmazáslistát kell konfigurálnia az alábbi
 
 A kioszkmód csak a Samsung Knox Standard eszközökre, és csak az Intune-nal felügyelt alkalmazásokra vonatkozik.
 
-- **Felügyelt alkalmazás kiválasztása** – Válassza ki a következő lehetőségek egyikét egy vagy több, az eszköz kioszkmódjában futtatható felügyelt alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön.
+- **Felügyelt alkalmazás kiválasztása** – Válassza ki a következő lehetőségek egyikét egy vagy több, az eszköz kioszkmódjában futtatható felügyelt alkalmazás hozzáadásához. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. Előtelepített böngészők nem definiálhatók olyan alkalmazásként, amelynek engedélyezett a futás az eszköz kioszkmódban való használatakor. Ha böngészőre van szüksége, fontolja meg a [Felügyelt böngésző](app-configuration-managed-browser.md) használatát.
     - **Alkalmazások hozzáadása csomagnév szerint**
     - **Alkalmazások hozzáadása URL-cím szerint**
     - **Felügyelt alkalmazások hozzáadása**.

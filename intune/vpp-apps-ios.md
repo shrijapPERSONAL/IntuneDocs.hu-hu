@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -80,8 +80,8 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP-token beszerzése és feltöltése
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 1.  Az **Intune** panelen válassza a **Mobilalkalmazások** > **iOS-es VPP-tokenek** elemet a **Beállítás** lehetőség alatt.
 2.  A VPP-tokenek panel listájában válassza a **Létrehozás** elemet.
 4. Az **VPP-token Létrehozása** panelen adja meg az alábbi adatokat:
@@ -94,7 +94,7 @@ Amikor beállít egy eszközt egy új Intune-felhasználó számára, konfigurá
     - **VPP-fiók típusa** –A következő lehetőségek közül választhat: **Üzlet** és **Oktatás**.
     - **Alkalmazások automatikus frissítése** – Az automatikus frissítés engedélyezéséhez válasszon a **Be** és **Ki** érték közül. Ha ez a funkció engedélyezve van, a készülék bejelentkezésekor az Intune frissíti az adott tokennel vásárolt összes alkalmazást az Intune szolgáltatáson keresztül.
 Az App Store áruházban észleli a VPP-alkalmazások frissítéseit, és automatikusan leküldi azokat az eszközre, amikor az eszköz bejelentkezik.
-4. Amikor elkészült, válassza a **Feltöltés** gombot.
+4. Amikor elkészült, válassza a **Létrehozás** gombot.
 
 A token a jogkivonatok panel listájában jelenik meg.
 
@@ -104,7 +104,7 @@ Az Apple által tárolt adatok bármikor szinkronizálhatók az Intune-nal a **S
 
 1.  Az **Intune** panelen válassza az **Mobilalkalmazások** > **Alkalmazások** elemet a **Kezelés** lehetőség alatt.
 2.  Az alkalmazáslista paneljén válassza ki a hozzárendelni kívánt alkalmazást, és válassza a **Hozzárendelés** lehetőséget.
-3.  Az ***Alkalmazás neve*** - **Hozzárendelések** panelen kattintson a **Csoportok kiválasztása** elemre, majd a **Csoportok kiválasztása** panelen válassza ki azokat az Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá kívánja rendelni az alkalmazást.
+3.  Az ***Alkalmazás neve*** - **Hozzárendelések** panelen kattintson a **Csoport hozzáadása** elemre, majd a **Csoport hozzáadása** panelen válasszon egy **hozzárendelés-típust** és azokat az Azure AD-beli felhasználói vagy eszközcsoportokat, amelyekhez hozzá kívánja rendelni az alkalmazást.
 5.  Minden kijelölt csoporthoz válassza ki az alábbi beállításokat:
     - **Típus** – Határozza meg, hogy az alkalmazás **Elérhető**, azaz a végfelhasználók telepíthetik a Céges portálról, vagy **Kötelező**, azaz a végfelhasználók automatikusan megkapják az telepített alkalmazást.
     - **Licenc típusa** – Válassza a **Felhasználói licencelés** vagy az **Eszközlicencelés** lehetőséget.

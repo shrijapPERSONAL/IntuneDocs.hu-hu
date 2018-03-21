@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/5/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
 
@@ -41,13 +41,14 @@ Exportálja a tanúsítványt, és adja hozzá a CA-hoz.
 
 Válasszon egy meglévő csoportot az Azure Active Directoryban (Azure AD), illetve hozzon létre egy újat, amely az alkalmazásonkénti VPN-hez hozzáféréssel rendelkező tagokat tartalmazza.
 
-1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. Kattintson a **Csoportok**, majd az **Új csoport** elemre.
-3. Adja meg a csoport **nevét**. 
-4. Adja meg a csoport **leírását**. 
+3. Válassza ki a csoport számára a **Csoport típusát**. 
+3. Adja meg a csoport számára a **Csoport nevét**. 
+4. Adja meg a csoport számára a **Csoport leírását**. 
 5. Adja meg a **Hozzárendelt** beállítást a **Tagság típusa** elemhez.
-6. Az **Engedélyezi az Office-funkciókat?** kérdésnél válassza a **Nem** lehetőséget.
-7. A VPN-felhasználókat név vagy e-mail cím alapján keresheti a **Tagok** panelen.
+7. A VPN-felhasználókat név vagy e-mail-cím alapján keresheti a **Tagok** panelen.
 8. Jelöljön ki minden felhasználót, és kattintson a **Kiválasztás** lehetőségre.
 9. Kattintson a **Létrehozás** gombra.
 
@@ -55,14 +56,15 @@ Válasszon egy meglévő csoportot az Azure Active Directoryban (Azure AD), ille
 
 Importálja az Intune-ban létrehozott profilba a VPN-kiszolgáló a CA által kiadott legfelső szintű tanúsítványát. A megbízható tanúsítványprofil arra utasítja az iOS-eszközt, hogy tekintse automatikusan megbízhatónak a VPN-kiszolgáló által bemutatott CA-t.
 
-1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
 3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
     1. Adja meg a **nevet**.
     2. Adja meg a **leírást**.
     3. A **Platform** beállításban válassza az **iOS** lehetőséget.
     4. A **Profil típusa** beállításban válassza a **Megbízható tanúsítvány** a lehetőséget.
-4. Kattintson a mappa ikonra, és keresse meg a VPN-felügyeleti konzolból exportált VPN-tanúsítványát (.cer-fájl). Kattintson az OK gombra.
+4. Kattintson a mappa ikonra, és keresse meg a VPN-felügyeleti konzolból exportált VPN-tanúsítványát (.cer-fájl). Kattintson az **OK**gombra.
 5. Kattintson a **Létrehozás** gombra.
 
     ![Megbízható tanúsítványprofil létrehozása](media\vpn-per-app-create-trusted-cert.png)
@@ -71,7 +73,8 @@ Importálja az Intune-ban létrehozott profilba a VPN-kiszolgáló a CA által k
 
 A megbízható főtanúsítvány-profil lehetővé teszi, hogy az iOS automatikusan megbízhatónak tekintse a VPN-kiszolgálót. Az SCEP-tanúsítvány biztosítja az iOS VPN-ügyfél hitelesítő adatait a VPN-kiszolgálónak. A tanúsítvány lehetővé teszi az iOS-eszközök számára a felhasználó értesítése nélkül csendes hitelesítést a felhasználónév és a jelszó bekérése nélkül. 
 
-1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget. 
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
 3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
     1. Adja meg a **nevet**.
@@ -97,7 +100,8 @@ A megbízható főtanúsítvány-profil lehetővé teszi, hogy az iOS automatiku
 
 A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tanúsítványt, a VPN-hez tartozó kapcsolati adatokat és az Alkalmazásonkénti VPN jelzőt az Alkalmazásonkénti VPN funkció használatának engedélyezéséhez az iOS alkalmazásban.
 
-1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. Válassza az **Eszközkonfiguráció**, majd a **Profilok** lehetőséget.
 3. Kattintson a **Profil létrehozása** gombra. A **Profil létrehozása** párbeszédpanelen:
     1. Adja meg a **nevet**.
@@ -111,7 +115,7 @@ A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tan�
     4. Válassza ki az SCEP-tanúsítványt a **Hitelesítési tanúsítvány** területen, és kattintson az **OK** gombra.
     5. A **kapcsolat típusaként** válassza a VPN-t.
     6. Ha szükséges, konfigurálja a VPN jellemzőit.
-    7. Válassza a **Megosztott protokollbújtatás** letiltását.
+    7. Válassza a **Megosztott protokollbújtatás letiltását**.
 5. Kattintson az **Automatikus VPN** elemre. Az **Automatikus VPN** párbeszédpanelen:
     1. Az **Automatikus VPN típusa** beállításban válassza az **Alkalmazásonkénti VPN** lehetőséget.
     2. Írja be a VPN URL-címét, majd kattintson a **Hozzáadás** gombra.
@@ -126,19 +130,21 @@ A VPN-profil tartalmazza az ügyfél-hitelesítő adatokat tartalmazó SCEP-tan�
 
 Miután hozzáadta a VPN-profilt, társítsa az alkalmazást és a Microsoft Azure Active Directory-csoportot a profillal.
 
-1. Nyissa meg az Azure Portalt. Válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 2. Válassza a **Mobilalkalmazások** lehetőséget.
 3. Kattintson az **Alkalmazások** elemre.
 4. Válassza ki az alkalmazást az alkalmazások listájából.
 5. Kattintson a **Hozzárendelések** lehetőségre
-6. Kattintson a **Csoportok kiválasztása**, elemre a korábban meghatározott csoportok kijelöléséhez. Kattintson a **Kiválasztás** lehetőségre.
-7. A **Hozzárendelések** panelen válassza a **Típus** beállításban a **Szükséges** értéket.
-8. Válassza ki a VPN-definíciót a **VPN-ekhez**.
+6. Kattintson a **Csoport hozzáadása** parancsra.
+7. Válassza a **Szükséges** elemet a **Hozzárendelés típusa** beállításnál a **Csoport hozzáadása** panelen.
+6. Válassza ki a korábban definiált csoportot, és válassza az **Alkalmazás szükségessé tétele** lehetőséget.
+8. Válassza ki a VPN-definíciót a **VPN-hez**.
  
     > [!NOTE]  
     > Egyes esetekben akár egy percig is eltarthat, amíg a VPN-definíció kikeresi az értéket. Várjon 3–5 percet, mielőtt a **Mentésre** kattintana.
 
-9. Kattintson a **Mentés**gombra.
+9. Kattintson az **OK** gombra, majd a **Mentés** lehetőségre.
 
     ![Alkalmazás társítása a VPN-nel](media\vpn-per-app-app-to-vpn.png)
 

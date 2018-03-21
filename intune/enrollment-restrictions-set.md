@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -53,8 +53,8 @@ A rendszer tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, 
 
 ## <a name="create-a-restriction"></a>Korlátozás létrehozása
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Válassza a **Korlátozás létrehozása** lehetőséget.
 5. Adjon meg nevet és leírást a korlátozás számára.
@@ -70,8 +70,8 @@ A rendszer tartalmaz alapértelmezett korlátozásokat mind az eszköztípusra, 
 
 Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja:
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Az **Eszköztípus-korlátozások** területen válassza ki a beállítani kívánt korlátot.
 5. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformok** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
@@ -81,10 +81,10 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
   - Az iOS a főverzió.alverzió.változat formátumot támogatja.
   - A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén.
   Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
-8. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
+6. Válassza a **személyes tulajdonú** eszközök **Engedélyezés** vagy **Blokkolás** lehetőségét az összes felsorolt platform esetében.
 
     ![Az eszközkorlátozási munkaterület képernyőképe az alapértelmezett eszközplatformmal, amely a személyes tulajdonú eszközökhöz van konfigurálva](media/device-restrictions-platform-configurations.png)
-9. Kattintson a **Mentés**gombra.
+7. Kattintson a **Mentés**gombra.
 
 >[!NOTE]
 >- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú Android for Work-eszközök továbbra is regisztrálhatók.
@@ -95,13 +95,13 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 
 Az eszközszámkorlátok beállításait az alábbi lépésekkel módosíthatja:
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Az **Eszközszámkorlátok** területen válassza ki a beállítani kívánt korlátot.
 5. Válassza az **Eszközszámkorlát** lehetőséget, majd a legördülő listában válassza ki a felhasználó által regisztrálható eszközök maximális számát.
     ![Képernyőkép az eszközszám-korlátozás panelről](./media/device-restrictions-limit.png)
-6. Kattintson a **Mentés**gombra.
+4. Kattintson a **Mentés**gombra.
 
 A végfelhasználó üzenetet kap majd, ha elérte a regisztrálható eszközök maximális számát. iOS rendszer esetében ez az alábbi módon jelenik meg:
 
@@ -119,8 +119,8 @@ Az összes egyéni korlátozás prioritását módosíthatja.
 
 **A korlátozások prioritásának módosításához:**
 
-1. Jelentkezzen be az Azure Portalra.
-2. Válassza a **További szolgáltatások** lehetőséget, írja be az **Intune** keresési kifejezést, majd válassza az **Intune** lehetőséget.
+1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Eszközök regisztrálása** > **Regisztrációs korlátozások** lehetőséget.
 4. Vigye az egérmutatót a korlátozás fölé a prioritáslistában.
-5. A három függőleges pontot alkotó ikon használatával húzza a prioritást a lista megfelelő helyére.
+5. A bal oldali, három függőleges pontot alkotó ikon használatával húzza a prioritást a lista megfelelő helyére.

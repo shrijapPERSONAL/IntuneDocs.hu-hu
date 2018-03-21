@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -55,9 +55,9 @@ Ha a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md)
 1. **Az Intune MDM beállítása**<br>
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
 2. **Android for Work-kötés konfigurálása**<br>
-    Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.
+    Az Intune rendszergazdájaként az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** elemet.
 
-   a. Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Konfigurálás** elemet a Google Play Áruház Android for Work-webhelyének megnyitásához. A webhely egy új lapon nyílik meg a böngészőben.
+   a. Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Felügyelt Google Play-alkalmazások – Konfigurálás** elemet a Google Play Áruház Android for Work-webhelyének megnyitásához. A webhely egy új lapon nyílik meg a böngészőben.
    ![Az Android for Work-eszközök regisztrálási képernyője](./media/android-work-bind.png)
 
    b. **Bejelentkezés a Google-fiókba**<br>
@@ -106,7 +106,7 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Az In
 ### <a name="to-unbind-an-android-for-work-account"></a>Android for Work-fiók kötésének megszüntetése
 
 1. **Android for Work-kötés feloldása**<br>
-    Az Intune rendszergazdájaként az Azure Portalon válassza a **További szolgáltatások** > **Figyelés + felügyelet** > **Intune** elemet.  Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Kötés megszüntetése** elemet.
+    Az Intune rendszergazdájaként az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** elemet.  Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Kötés megszüntetése** elemet.
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez válassza az **Igen** gombot.

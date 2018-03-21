@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Csoport létrehozása a felhasználók és az adathozzáférés kezeléséhez
 
@@ -30,11 +30,13 @@ A Microsoft Intune az Azure Active Directoryt (Azure AD) használja a vállalati
 ## <a name="how-do-i-create-a-group"></a>Hogyan hozhatok létre csoportot?
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. A **Erőforrások keresése** használatával keressen rá az **Intune** kifejezésre.
+2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Csoportok** lehetőséget.
 4. A **Felhasználók és csoportok – Összes csoport** panelen válassza az **Új csoport** parancsot.
-5. A **Csoport** panelen adja meg a csoport **Nevét** és **Leírását**.
+5. A **Csoport** panelen válassza a **Csoport típusa** lehetőséget.
+5. Töltse ki a csoporthoz a **Név** és a **Leírás** mezőt.
 6. Adja meg a **Tagság típusa** elemhez a **Hozzárendelt** beállítást. Ne **engedélyezze az Office-funkciókat** a tesztcsoporthoz.
+7. Adja meg a csoport tagjait a **Tagok** lehetőség választásával.
 7. Kattintson a **Létrehozás** gombra.
 
 Ha sikeresen létrehozott egy csoportot, annak meg kell jelennie az **Összes csoport** listáján. Ha itt nem jelenik meg, próbáljon létrehozni egy másik csoportot.
