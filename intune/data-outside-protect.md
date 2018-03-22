@@ -1,25 +1,27 @@
 ---
-title: "A céges adatokhoz való illetéktelen hozzáférés megakadályozása"
-description: "Hogyan akadályozható meg a céges adatokhoz való illetéktelen hozzáférés, ha azokat a cég hálózatán kívül is megosztják."
-keywords: "Office 365 O365 Azure Information Protection hálózaton kívüli adatok védelme céges adatok"
-author: arob98
+title: A céges adatokhoz való illetéktelen hozzáférés megakadályozása
+titlesuffix: Microsoft Intune
+description: A cég hálózatán kívül megosztott céges adatokhoz való illetéktelen hozzáférés megakadályozása a Microsoft Intune-nal.
+keywords: Office 365 O365 Azure Information Protection hálózaton kívüli adatok védelme céges adatok
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>A céges adatokhoz való illetéktelen hozzáférés megakadályozása 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>A céges adatokhoz való illetéktelen hozzáférés megakadályozása a Microsoft Intune-nal
 
 Az Office 365 dokumentumait és e-mailjeit besorolással és címkézéssel védheti, így csak a jogosultsággal rendelkező felhasználók férhetnek hozzá az adatokhoz. Miután a rendszergazda vagy a felhasználók létrehozták a szabályokat és feltételeket, a beállítások kezelése automatikusan történik. A rendszergazdák emellett ajánlott beállításokat is megadhatnak a felhasználók számára. A rendszergazdák és a felhasználók azt követően is visszavonhatják a hozzáférési engedélyeket, miután az adatokat megosztották másokkal, és ehhez nincs szükség szolgáltatói segítségre. Ennek eredményeképp még akkor is szabályozható, hogy ki nyithat meg vagy módosíthat adatokat, amikor az adatok már a céges hálózaton kívülre kerültek. 
 
@@ -44,5 +46,5 @@ Tudassa velük, hogy [mikor és hogyan kell védelemmel ellátni a bizalmas info
 
 A következő lépések részeként további információhoz juthat azokról az egyéb módszerekről, melyekkel növelhető a céges adatok védelme, beleértve a következőket: 
 
-* Ismerje meg az [Azure Information Protection iOS- és Android-eszközökön való használatát](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Az [Azure Information Protection használata iOS- és Android-eszközökön](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Windows Phone-telefonok és Mac-gépek esetén ismerkedjen meg a [Microsoft Rights Management Sharing alkalmazással](https://technet.microsoft.com/dn451248).

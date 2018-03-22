@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Cordova beépülő modul"
-description: 
+title: Microsoft Intune App SDK Cordova beépülő modul
+description: Az Intune App SDK Cordova beépülő modullal a fejlesztők beépíthetik az Intune alkalmazásfelügyeleti és adatvédelmi funkcióit a Cordova-alapú alkalmazásaikba.
 keywords: SDK, Cordova, Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova beépülő modul
 
@@ -118,7 +118,7 @@ A beépülő modul automatikusan felismeri a Cordova számára megadott aláír�
 
 Az elvárt formátumról további információkat talál a [Cordova gradle típusú aláírását](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) bemutató cikkben.
 
-Jelenleg nincsenek támogatva a `build.json` vagy más tetszőleges helyeken megadott aláírási információk a Cordova-build létrehozásakor megadott paraméterekkel.
+Az Intune jelenleg nem támogatja a `build.json` vagy más tetszőleges helyeken megadott aláírási információk a Cordova-build létrehozásakor megadott paraméterekkel.
 
 ## <a name="debugging-from-visual-studio"></a>Hibakeresés a Visual Studióból
 
@@ -129,8 +129,8 @@ Az alkalmazás első indítását követően meg kell jelennie egy párbeszédpa
 ### <a name="android"></a>Android
 
 * A MultiDex támogatása nem teljes.
-* Az alkalmazásnak legfeljebb `minSdkVersion` 14-es és `targetSdkVersion` 24-es verziókkal kell rendelkeznie. Az API 25 jelenleg nincs támogatva az alkalmazásoknál
-* A V2-es aláírási sémával aláírt alkalmazásokat nem lehetséges újra aláírni. Ha V2-aláírású alkalmazást csomagol be a beépülő modullal, a kimeneti becsomagolt .apk nem lesz aláírva.
+* Az alkalmazásnak legfeljebb `minSdkVersion` 14-es és `targetSdkVersion` 24-es verziókkal kell rendelkeznie. Az Intune jelenleg nem támogatja az API 25-öt az alkalmazásoknál
+* Az Intune nem írhatja újra alá a V2-es aláírási sémával aláírt alkalmazásokat. Ha V2-aláírású alkalmazást csomagol be a beépülő modullal, a kimeneti becsomagolt .apk nem lesz aláírva.
 *
   * A Cordova alapértelmezett V2-aláírását letilthatja, ha a `build-extras.gradle` fájlhoz hozzáadja a következőket:
 

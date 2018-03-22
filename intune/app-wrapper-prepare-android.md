@@ -1,24 +1,24 @@
 ---
-title: "Android-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel"
-description: "Megtudhatja, hogyan burkolhatja az Android-alkalmazásait anélkül, hogy módosítaná magának az alkalmazásnak a programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
-keywords: 
+title: Android-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel
+description: Megtudhatja, hogyan burkolhatja az Android-alkalmazásait anélkül, hogy módosítaná magának az alkalmazásnak a programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Android-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -30,8 +30,6 @@ Ez az eszköz egy windowsos parancssori alkalmazás, amely PowerShell-ablakban f
 
 
 Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásburkoló eszköz futtatásához kapcsolódó biztonsági szempontok](#security-considerations-for-running-the-app-wrapping-tool). Az eszköz letöltéséhez keresse fel a [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) oldalát a GitHubon.
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz használatára vonatkozó előfeltételek teljesítése
 
@@ -51,6 +49,8 @@ Az eszköz futtatása előtt olvassa el a következő cikket: [Az alkalmazásbur
     > Egyes esetekben a Java 32 bites verziója memóriaproblémákat okozhat. Tanácsos a 64 bites verziót telepíteni.
 
 - Az Android megköveteli, hogy minden alkalmazáscsomag (.apk) alá legyen írva. Létező tanúsítványok **újbóli használatához** és az aláíró tanúsítványok teljes útmutatójához lásd: [Aláíró tanúsítványok és burkolóalkalmazások újbóli használata](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A keytool.exe végrehajtható Java-eszközzel létrehozhatja a kimeneti burkolt alkalmazás aláírásához szükséges **új** hitelesítő adatokat. Minden beállított jelszónak biztonságosnak kell lennie, de jegyezze fel őket, mert szükség van rájuk az alkalmazásburkoló eszköz futtatásához.
+
+- (Nem kötelező) Engedélyezze a Multidexet a bemeneti alkalmazásban. Az alkalmazások a burkolás során hozzáadott Intune MAM SDK osztályok miatt néha meghaladják a Dalvik Executable (DEX) méretkorlátját. A DEX-fájlok az Android-alkalmazások fordításának részei. Ebben az esetben az ajánlott eljárás a Multidex engedélyezése az alkalmazáson belül. Egyes cégeknél elképzelhető, hogy ehhez az alkalmazás fordítójával (azaz az alkalmazás-összeállító csapattal) való együttműködés szükséges. 
 
 ## <a name="install-the-app-wrapping-tool"></a>Az alkalmazásburkoló eszköz telepítése
 
@@ -159,6 +159,7 @@ Az alábbiakban útmutatást találhat egy APP-WE szolgáltatás automatikus reg
 Ezek az utasítások minden olyan Android- és Xamarin-alkalmazásra vonatkoznak, amelyek Intune-alkalmazásvédelmi szabályzatokat szeretnének kérni a végfelhasználói eszközöktől.
 
 1. Konfigurálja az ADAL-t az [Androidos Intune SDK útmutatójában](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) megadott lépések alapján.
+
 > [!NOTE] 
 > Az alkalmazáshoz tartozó „ügyfél-azonosító” kifejezés megfelel az alkalmazáshoz tartozó Azure Portal-alkalmazásazonosítónak. 
 * Az SSO engedélyezéséhez a 2. „Common ADAL configurationre” van szükség.

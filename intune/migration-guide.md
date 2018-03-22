@@ -1,29 +1,30 @@
 ---
-title: "Útmutató az Intune mobileszköz-kezelési szolgáltatásra történő migráláshoz"
-description: "Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról a Microsoft Intune-ra történő migrálás különböző lépésein."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Útmutató az Intune mobileszköz-kezelési szolgáltatásra történő migráláshoz
+titlesuffix: Microsoft Intune
+description: Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról a Microsoft Intune-ra történő migrálás különböző lépésein.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Intune migrációs útmutató
 
-![Intune MDM-migrációs útmutató – grafika](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM-migrációs útmutató – grafika](./media/MDM-migration-guide-art.PNG)
 
-Az Intune-ra történő sikeres migráláshoz kell egy alapos terv, amely számításba veszi a jelenlegi mobileszköz-kezelési (MDM-) környezetét, az üzleti céljait és a műszaki követelményeket. Ezen kívül szükség lesz a főbb érintettek támogatására és együttműködésére is.
+A Microsoft Intune-ba történő sikeres migráláshoz kell egy alapos terv, amely számításba veszi a jelenlegi mobileszköz-kezelési (MDM-) környezetét, az üzleti céljait és a műszaki követelményeket. Ezen kívül szükség lesz a főbb érintettek támogatására és együttműködésére is.
 
 Ez az útmutató végigvezeti a külső MDM-szolgáltatói megoldásról az Intune-ra történő migrálás különböző lépésein.
 

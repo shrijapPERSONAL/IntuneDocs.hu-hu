@@ -1,27 +1,30 @@
 ---
-title: "iOS-es MAM-szabályzatok"
-description: "Ez a témakör bemutatja a mobilalkalmazás-felügyeleti szabályzat beállításait iOS-eszközökhöz."
-keywords: 
+title: iOS-es MAM-szabályzatok
+description: Ez a témakör bemutatja a mobilalkalmazás-felügyeleti szabályzat beállításait iOS-eszközökhöz.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS-es mobilalkalmazás-védelmi szabályzat-beállításai
+
+> [!IMPORTANT]
+> Az oldal tartalma nagyrészt elévült, mivel az Intune alkalmazásvédelmi szabályzatait teljes mértékben az Azure Portalra migráltuk. További információ az [Intune az Azure Portalon elérhető iOS-es alkalmazásvédelmi szabályzatairól](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -51,7 +54,7 @@ A szabályzatbeállításoknak két kategóriájuk van: adatáthelyezési beáll
 
 Egyes alkalmazások és platformszolgáltatások kivételt képeznek, és az Intune alkalmazásvédelmi szabályzata bizonyos helyzetekben engedélyezheti számukra, hogy adatokat küldjenek és fogadjanak. Ez a lista idővel változhat. Azok a szolgáltatások és alkalmazások szerepelnek rajta, amelyek megítélésünk szerint biztonságosan segítik a hatékony munkát.
 
-| Alkalmazás/szolgáltatás neve(i) | Leírás |
+| Alkalmazás/szolgáltatás neve(i) | Description |
 | ---- | --- |
 |tel; telprompt | Natív telefonalkalmazás |
 | skype | Skype |

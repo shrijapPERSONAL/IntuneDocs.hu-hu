@@ -1,26 +1,27 @@
 ---
-title: "Intune – bevezetési fázis"
-description: "Ez a cikk részletesen ismerteti azokat a szempontokat, amelyeket figyelembe kell venni az Intune kizárólag felhőalapú megoldásának bevezetési folyamatánál saját környezetben."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune – bevezetési fázis
+titlesuffix: Microsoft Intune
+description: Ez a cikk részletesen ismerteti azokat a szempontokat, amelyeket figyelembe kell venni a Microsoft Intune kizárólag felhőalapú megoldásának bevezetési folyamatánál saját környezetben.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="implement-your-intune-plan"></a>Az Intune-terv bevezetése
+# <a name="implement-your-microsoft-intune-plan"></a>A Microsoft Intune-terv megvalósítása
 
 A bevezetési fázis az Intune éles környezetben való üzembe helyezéséből áll. Az implementálási folyamat során az Intune és (ha szükséges) a külső függőségek telepítése és konfigurálására kerül sor saját [használatieset-követelményei](planning-guide-requirements.md) alapján.
 

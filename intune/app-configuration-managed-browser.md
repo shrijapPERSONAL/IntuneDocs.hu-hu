@@ -1,25 +1,25 @@
 ---
-title: "Webes hozzáférés felügyelete a Managed Browser alkalmazással"
+title: Webes hozzáférés felügyelete a Managed Browser alkalmazással
 titlesuffix: Microsoft Intune
-description: "Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét."
-keywords: 
-author: erikre
+description: Telepítheti a Managed Browser alkalmazást, amellyel korlátozhatja a webböngészést és a webes adatok egyéb alkalmazásokba történő átvitelét.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -35,7 +35,7 @@ Mivel az alkalmazás integrálva van az Intune SDK-val, alkalmazásvédelmi szab
 - Képernyőmentés megakadályozása
 - Annak biztosítása, hogy a felhasználók által kiválasztott tartalomra mutató hivatkozások csak más felügyelt alkalmazásokban nyíljanak meg.
 
-További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](/intune/app-protection-policy) című témakörben talál.
+További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](/intune/app-protection-policy.md) című témakörben talál.
 
 Ezek a beállítások az alábbiakra alkalmazhatók:
 
@@ -59,7 +59,47 @@ Managed Browser-szabályzatokat a következő eszköztípusokhoz hozhat létre:
 >Az Managed Browser továbbra is használható lesz korábbi verziójú Android vagy iOS rendszerű eszközökön, de az alkalmazás újabb verziói nem lesznek telepíthetők, és előfordulhat, hogy az alkalmazás bizonyos képességei nem lesznek hozzáférhetők. Javasoljuk, hogy frissítse az ilyen eszközök operációs rendszerét egy támogatott verzióra.
 
 
-Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) webes tartalom megnyitását.
+Az Intune Managed Browser támogatja a [Microsoft Intune alkalmazási partnerektől származó](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) webes tartalom megnyitását.
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Az Intune Managed Browser feltételes hozzáférése
+
+A Managed Browser már egy feltételes hozzáféréshez jóváhagyott ügyfélalkalmazás. Ez azt jelenti, hogy úgy korlátozhatja a mobilböngészők hozzáférését az Azure AD-hez csatlakozó webalkalmazásokhoz, hogy a felhasználók csak a Managed Browsert használhassák, valamint letilthat minden más nem védett böngészőt, például a Safarit vagy a Chrome-ot. Ezt a védelmet Azure-erőforrásokra alkalmazhatja, például az Exchange Online-ra, a SharePoint Online-ra, az Office-portálra, valamint olyan helyszíni webhelyekre, amelyekhez külső felhasználók is hozzáférhetnek [az Azure AD-alkalmazásproxyn](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) keresztül. 
+
+Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser használatára korlátozza mobilplatformokon, hozzon létre egy AD feltételes hozzáférési szabályzatot, amelyhez jóváhagyott ügyfélalkalmazások szükségesek. 
+
+1. Az Azure Portalon válasza az **Azure Active Directory** > **Vállalati alkalmazások** > **Feltételes hozzáférés** > **Új szabályzat** lehetőséget. 
+2. Ezután válassza a panel **Hozzáférés-szabályozási** szakaszában a **Hozzáférés** lehetőséget. 
+3. Kattintson a **Jóváhagyott ügyfélalkalmazás megkövetelése** lehetőségre. 
+4. A **Hozzáférés** panelen kattintson a **Kiválasztás** elemre. Ezt a szabályzatot hozzá kell rendelni azokhoz a felhőalkalmazásokhoz, amelyek esetében azt szeretné, hogy csak az Intune Managed Browser alkalmazásból legyenek elérhetők.
+
+    ![Azure AD – Managed Browser feltételes hozzáférési szabályzat](./media/managed-browser-conditional-access-01.png)
+
+5. A **Hozzárendelések** szakaszban válassza a **Feltételek** > **Ügyfélalkalmazások** lehetőséget. Megjelenik az **Ügyfélalkalmazások** panel.
+6. A **Konfigurálás** területen kattintson az **Igen** lehetőségre a szabályzat adott ügyfélalkalmazásokra való érvényesítéséhez.
+7. Ellenőrizze, hogy a **Browser** van-e kiválasztva ügyfélalkalmazásként.
+
+    ![Azure AD – Managed Browser – Ügyfélalkalmazások kiválasztása](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > Ha korlátozni szeretné, hogy mely natív (nem böngészőbeli) alkalmazások férhetnek hozzá ezekhez a felhőalkalmazásokhoz, válassza a **Mobilalkalmazások és asztali ügyfelek** lehetőséget.
+
+8. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget, majd válassza ki azokat a felhasználókat és csoportokat, akikhez hozzá szeretné rendelni ezt a szabályzatot. 
+
+    > [!NOTE]
+    > A felhasználóknak az Intune alkalmazásvédelmi szabályzatának hatásköre alatt is kell lenniük. További információ az Intune alkalmazásvédelmi szabályzatainak létrehozásáról: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
+
+9. A szabályzat védelme alá tartozó alkalmazások megadásához a **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
+
+Miután konfigurálta a fenti szabályzatot, a felhasználók csak az Intune Managed Browserrel férhetnek hozzá az Azure AD-hez kapcsolódó, a szabályzat védelme alá tartozó webalkalmazásokhoz. Ha a felhasználók egy nem kezelt böngészőt próbálnak meg használni ehhez, egy értesítés jelenik meg az eszközükön, amely tudatja velük, hogy csak az Intune Managed Browsert használhatják.
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Egyszeri bejelentkezés az Azure AD-hez kapcsolódó webalkalmazások esetén az Intune Managed Browserben
+
+Az Intune Managed Browser iOS- és Android-alkalmazás mostantól SSO-t is használhat minden webalkalmazáshoz (SaaS és helyszíni alkalmazásokhoz), amely az Azure AD-hez csatlakozik. Ha a Microsoft Authenticator alkalmazás telepítve van iOS-en, vagy az Intune Céges portál alkalmazás Androidon, az Intune Managed Browser felhasználói hozzáférhetnek az Azure AD-hez csatlakozó webalkalmazásokhoz anélkül, hogy újra meg kellene adniuk a hitelesítő adataikat.
+
+Az Intune Managed Browser SSO-ja megköveteli az eszközöktől, hogy regisztrálva legyenek a Microsoft Authenticator alkalmazásban iOS rendszeren, vagy az Intune Céges portál alkalmazásban Androidon. Az Authenticator vagy az Intune Céges portál alkalmazással rendelkező felhasználóknak regisztrálniuk kell az eszközüket, ha egy Azure AD-hez csatlakozó webalkalmazást nyitnak meg az Intune Managed Browserben, ha az eszközüket még nem regisztrálta egy másik alkalmazás. Miután az eszközt regisztrálták az Intune által kezelt fiókkal, a fiók az Azure AD-hez csatlakozó webalkalmazások esetében SSO-val fog rendelkezni. 
+
+> [!NOTE]
+> Az eszközregisztráció egy egyszerű bejelentkezés az Azure AD szolgáltatással. Nem igényel teljes eszközregisztrációt, és nem ad az eszközre vonatkozó további jogosultságokat az informatikai részlegnek.
 
 ## <a name="create-a-managed-browser-app-configuration"></a>A Managed Browser alkalmazás konfigurációjának létrehozása
 
@@ -102,7 +142,10 @@ Az Intune Managed Browser és az [Azure AD Alkalmazásproxy]( https://docs.micro
     - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
 - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
 - A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
-Megjegyzés: Az alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben akár 24 órát is igénybe vehet.
+
+    > [!NOTE]
+    > Az alkalmazásproxy frissített átirányítási adatainak érvénybe lépése a Managed Browserben akár 24 órát is igénybe vehet.
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. lépés: Automatikus átirányítás engedélyezése az Outlookból a Managed Browserhez
 Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyben engedélyezett a **Webes tartalom megjelenítésének korlátozása a Managed Browser alkalmazásra** beállítás.
@@ -115,6 +158,7 @@ Ez az eljárás az Alkalmazásproxy átirányítás használatára konfigurálja
 |Kulcs|Érték|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+További információt a Managed Browser és az Azure AD alkalmazásproxy a helyszíni webalkalmazásokhoz való zökkenőmentes (és védett) hozzáféréséhez szükséges együttes használatáról az Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Együtt jobb: Az Intune és az Azure Active Directory együtt fejleszti a felhasználói hozzáférést) című blogbejegyzésében találhat.
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>A Managed Browser kezdőlapjának beállítása
 
@@ -123,7 +167,7 @@ Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók a Mana
 |||
 |-|-|
 |Kulcs|Érték|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Példa: **https://www.bing.com**|
+|**com.microsoft.intune.mam.managedbrowser.homepage**|Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: **https://www.bing.com**|
 
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>A Managed Browser könyvjelzőinek beállítása
@@ -139,7 +183,7 @@ A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó
 |||
 |-|-|
 |Kulcs|Érték|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a **&#124;** karakter választja el.<br><br>Példa: **Microsoft Bing&#124;https://www.bing.com**<br><br>Több könyvjelző megadásakor az egyes párokat a **&#124;&#124;** karakter választja el.<br><br>Példa: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+|**com.microsoft.intune.mam.managedbrowser.bookmarks**|Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a **&#124;** karakter választja el.<br><br>Például: **Microsoft Bing&#124;https://www.bing.com**<br><br>Több könyvjelző megadásakor az egyes párokat a **&#124;&#124;** karakter választja el.<br><br>Például: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Engedélyezett és letiltott URL-címek meghatározása a Managed Browser számára
 
@@ -247,3 +291,7 @@ A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módsze
 
 ### <a name="turn-off-usage-data"></a>A használatra vonatkozó adatok kikapcsolása
 A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
+
+## <a name="next-steps"></a>További lépések
+
+- [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
