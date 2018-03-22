@@ -1,23 +1,23 @@
 ---
-title: "A Vállalati Windows Update beállításainak konfigurálása az Intune-ban"
-titleSuffix: Azure portal
-description: "Útmutató a Vállalati Windows Update Intune-beli konfigurálásához a Windows 10-es eszközök frissítéseinek kezeléséhez.”"
-keywords: 
+title: A Vállalati Windows Update beállításainak konfigurálása a Microsoft Intune-ban
+titleSuffix: ''
+description: Útmutató a Vállalati Windows Update Microsoft Intune-beli konfigurálásához a Windows 10-es eszközök frissítéseinek kezeléséhez.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Szoftverfrissítések kezelése
 
@@ -140,7 +140,7 @@ Az **OMA-URI beállítások hozzáadása vagy módosítása** alatt például a 
 - **Adattípus:** Karakterlánc
 - **Érték**: <*Használja az OMS munkaterület Windows-telemetria lapján látható GUID értéket*>
 
-![A Windows beállítása diagnosztikai és használati adatok küldéséhez](./media/commID.png)
+![OMA-URI beállítás – Sor hozzáadása](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Frissítések felfüggesztése
 A frissítések felfüggesztésétől számítva legfeljebb 35 napig megakadályozható, hogy az eszköz minőségi vagy funkciófrissítéseket fogadjon. A megadott időtartam után a felfüggesztés automatikusan megszűnik, és az eszköz keresni kezdi az alkalmazható Windows-frissítéseket. A keresés után a frissítések ismét felfüggeszthetők.

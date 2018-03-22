@@ -1,25 +1,27 @@
 ---
-title: "Adatszivárgás megakadályozása nem felügyelt eszközökön"
-description: "Hozzáférés engedélyezése eszközökön a vállalati adatokhoz adatszivárgás elleni védelem mellett."
-keywords: "adatvédelem, adatszivárgás elleni védelem, O365 eszköz, Office 365"
-author: arob98
+title: Adatszivárgás megakadályozása nem felügyelt eszközökön
+titlesuffix: Microsoft Intune
+description: Hozzáférés engedélyezése eszközökön a vállalati adatokhoz adatszivárgás elleni védelem mellett a Microsoft Intune-nal.
+keywords: adatvédelem, adatszivárgás elleni védelem, O365 eszköz, Office 365
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices"></a>Adatszivárgás megakadályozása nem felügyelt eszközökön
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Adatszivárgás megakadályozása nem felügyelt eszközökön a Microsoft Intune-nal
 
 Ha az Office 365 által üzemeltetett vállalati adatokhoz engedélyez hozzáférést, ellenőrizheti, hogy a felhasználók hogyan osztják meg és mentik az adatokat, és megelőzheti a szándékos vagy véletlen adatszivárgást. A Microsoft Intune-nal olyan adatvédelmi szabályzatokat állíthat be, amelyekkel gondoskodhat a felhasználók saját eszközein található vállalati adatok biztonságáról. Az eszközöket nem szükséges regisztrálni az Intune szolgáltatásban. 
 

@@ -1,25 +1,25 @@
 ---
-title: "Eszközök regisztrálásával kapcsolatos problémák elhárítása"
-description: "Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához."
-keywords: 
+title: Eszközök regisztrálásával kapcsolatos problémák elhárítása
+description: Javaslatok az eszközök regisztrálásával kapcsolatos problémák megoldásához.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
@@ -70,7 +70,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
 
-1.  Nyissa meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget a [https://portal.office.com](https://portal.office.com) portálon.
+1.  Nyissa meg a(z) [http://aka.ms/accessaad](http://aka.ms/accessaad) oldalt, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget innen: [https://portal.office.com](https://portal.office.com).
 
 2.  A lap bal oldalán található hivatkozást használva jelentkezzen be a szervezeti azonosítójával.
 
@@ -99,7 +99,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 
 1.  Távolítsa el az eszközről az Intune Vállalati portál alkalmazást.
 
-2.  Nyissa meg a böngészőt az eszközön, keresse meg a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)portált, és tegyen kísérletet egy felhasználói bejelentkezésre.
+2.  Nyissa meg a böngészőt az eszközön, keresse meg a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) oldalt, és tegyen kísérletet egy felhasználói bejelentkezésre.
 
 3.  Ha a felhasználó nem tud bejelentkezni, kérje meg, hogy próbálkozzon egy másik hálózattal.
 
@@ -165,8 +165,8 @@ A következő táblázat azon hibákat tartalmazza, melyeket Android-eszközök 
 
 |Hibaüzenet|Probléma|Megoldás|
 |---|---|---|
-|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br><br>További információ [az Intune-licencek a felhasználói fiókokhoz való hozzárendelésével](/intune/licenses-assign.md) kapcsolatban.
-|**A rendszergazdának be kell állítania a mobileszköz-felügyeleti szolgáltatót**<br>Úgy tűnik, hogy a rendszergazda még nem állította be a mobileszköz-felügyeleti szolgáltatót. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|A mobileszköz-kezelő szolgáltató még nincs megadva.|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban. További információ [a mobileszköz-felügyeleti szolgáltató beállításáról](/intune/mdm-authority-set.md).|
+|**A rendszergazdának hozzáférési licencet kell hozzárendelnie**<br>A rendszergazda nem adott hozzáférést az alkalmazás használatához. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|Az eszközt nem lehet regisztrálni, mert a felhasználó fiókja nem rendelkezik a szükséges licenccel.|Ahhoz, hogy a felhasználók regisztrálhassák az eszközeiket, hozzájuk kell rendelni a szükséges licencet. Ez az üzenet azt jelenti, hogy nem rendelkeznek a megfelelő licenctípussal a meghatározott mobileszköz-kezelő szolgáltatóhoz. Ha például az Intune lett mobileszköz-kezelő szolgáltatóként meghatározva, és System Center 2012 R2 Configuration Manager-licencet használnak, ezt a hibaüzenetet látják.<br><br>További információ [az Intune-licencek a felhasználói fiókokhoz való hozzárendelésével](/intune/licenses-assign) kapcsolatban.
+|**A rendszergazdának be kell állítania a mobileszköz-felügyeleti szolgáltatót**<br>Úgy tűnik, hogy a rendszergazda még nem állította be a mobileszköz-felügyeleti szolgáltatót. Kérjen segítséget a rendszergazdától, vagy próbálkozzon újra később.|A mobileszköz-kezelő szolgáltató még nincs megadva.|A mobileszköz-kezelő szolgáltató nincs megadva az Intune-ban. További információ [a mobileszköz-felügyeleti szolgáltató beállításáról](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Az eszközök nem tudnak lejelentkezni az Intune szolgáltatásnál, és az Intune felügyeleti konzolján „Nem megfelelő” állapotúként jelennek meg
@@ -332,7 +332,7 @@ További információt az [Ajánlott eljárások az Active Directory összevoná
 
 2.  Győződjön meg arról, hogy az eszköz még nincs egy másik MDM szolgáltatóhoz regisztrálva, vagy még nincs hozzá felügyeleti profil telepítve.
 
-3.  Nyissa meg a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) portált, és amikor a rendszer kéri, telepítse a profilt.
+3.  Navigáljon a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) oldalra, és telepítse a profilt a rendszer kérésekor.
 
 4.  Ellenőrizze, hogy az iOS-hez készült Safari az alapértelmezett böngésző-e, és a cookie-k engedélyezettek-e.
 
@@ -377,7 +377,7 @@ Hamarosan közzétesszük az arra vonatkozó példákat, hogy mit kell keresni e
 
 
 ### <a name="other-ios-enrollment-errors"></a>Egyéb iOS-beléptetési hibák
-Az iOS-eszközök regisztrálási hibáinak listáját az eszközfelhasználói dokumentáció [Hibába ütközik, amikor megpróbálja regisztrálni az eszközt az Intune-ban](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) című szakaszában találhatja.
+Az iOS-regisztrálási hibák listáját a dokumentációban, az [iOS-eszközregisztrációs problémák hibaelhárítása a Microsoft Intune-ban](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) című cikkben találhatja.
 
 ## <a name="pc-issues"></a>PC-kkel kapcsolatos problémák
 

@@ -1,24 +1,24 @@
 ---
-title: "A Microsoft Intune szolgáltatás leírása"
-description: "Az Intune egy felhőalapú szolgáltatás, amellyel Windows, iOS, Mac OS X, Android és Windows Mobile rendszerű eszközök felügyelhetők."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: A Microsoft Intune szolgáltatás leírása
+description: A Microsoft Intune egy felhőalapú szolgáltatás, amellyel Windows, iOS, Mac OS X, Android és Windows Mobile rendszerű eszközök felügyelhetők.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>A Microsoft Intune szolgáltatás leírása
 
@@ -33,7 +33,7 @@ Az Intune szorosan együttműködik az identitáskezelés és a hozzáférés-ve
 Ha szeretne továbbiakat megtudni arról, hogyan kezelheti az eszközöket, alkalmazásokat és védheti a céges adatokat az Intune-nal, olvassa el az [Intune dokumentációját](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30 napos ingyenes próbaverzió
-Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
+Az Intune használatát egy 30 napos ingyenes próbaverzióval kezdheti meg, amely 100 felhasználói licencet tartalmaz. Az ingyenes próbaverzió elindításához [látogasson el az Intune bejelentkezési oldalára](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Ha munkahelye vállalati szerződéssel vagy egy egyenértékű mennyiségi licencszerződéssel rendelkezik, az ingyenes próbaverzió beállítását bízza Microsoft-képviselőjére.
 
 > [!NOTE]
 > Ha munkahelyének van munkahelyi vagy iskolai Microsoft Online Services-fiókja, és előfordulhat, hogy a próbaidőszak leteltével élesben folytatja ennek az Intune-előfizetésnek a használatát, akkor az oldalon válassza a **Bejelentkezés** lehetőséget, és a hitelesítéshez használja a munkahelye globális rendszergazdai fiókját. Ez a művelet gondoskodik arról, hogy az Intune próbaverzió a meglévő munkahelyi vagy iskolai fiókhoz kapcsolódjon.

@@ -1,25 +1,25 @@
 ---
-title: "Regisztráció beállítása macOS-eszközökhöz"
+title: Regisztráció beállítása macOS-eszközökhöz
 titlesuffix: Microsoft Intune
-description: "Útmutató macOS-eszközök Intune-ban való regisztrációjának beállításához."
-keywords: 
+description: Útmutató macOS-eszközök Intune-ban való regisztrációjának beállításához.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 03/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c1fb846dc65ee14315edf7b9ba15e0e24998a3a2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Regisztráció beállítása macOS-eszközökhöz az Intune-ban
 
@@ -53,9 +53,20 @@ A macOS-eszközök regisztrálásának letiltásáról a [Típus szerinti korlá
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>A felhasználók tájékoztatása arról, hogy miképpen regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez
 
-Kérje a végfelhasználókat, hogy a [Céges portál webhelyen](http://portal.manage.microsoft.com) található útmutatás alapján regisztrálják eszközeiket. Hivatkozást is küldhet nekik az online regisztrációhoz: [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+Kérje a végfelhasználókat, hogy a [Céges portál webhelyen](https://portal.manage.microsoft.com) található útmutatás alapján regisztrálják eszközeiket. Hivatkozást is küldhet nekik az online regisztrációhoz: [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
 
 Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
 
 - [Információk végfelhasználóknak a Microsoft Intune használatáról](end-user-educate.md)
 - [macOS-eszköz használata az Intune-nal](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="enroll-virtual-macos-machines-for-testing"></a>Virtuális macOS-gépek regisztrálása teszteléshez
+
+> [!NOTE]
+> A virtuális macOS-gépekhez csak teszteléshez jár támogatás. A virtuális macOS-gépeket ne használja végfelhasználói termelési eszközökként. 
+
+A virtuális macOS-gépeket a Parallels Desktop vagy a VMWare Fusion segítségével regisztrálhatja tesztelésre. 
+
+A Parallels Desktophoz meg kell adnia a virtuális gépek hardvertípusát és sorozatszámát, hogy az Intune felismerje őket. A Parallels útmutatójával [megadhatja a hardvertípust](http://kb.parallels.com/123594) és a [sorozatszámot](http://kb.parallels.com/123455), valamint a teszteléshez szükséges beállításokat. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
+
+A VMware Fusion esetében [szerkesztenie kell a .vmx-fájlt](https://kb.vmware.com/s/article/1014782) a virtuális gép hardvermodelljének és sorozatszámának megadásához. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 

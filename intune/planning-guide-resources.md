@@ -1,23 +1,24 @@
 ---
-title: "Sablonok és erőforrások az Intune üzembe helyezésének tervezéséhez és megvalósításához"
-description: "Az Intune üzembe helyezésének megtervezése és megvalósítása során hasznos Intune-információkra mutató hivatkozások."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Sablonok és erőforrások az Intune üzembe helyezésének tervezéséhez és megvalósításához
+titlesuffix: Microsoft Intune
+description: A Microsoft Intune üzembe helyezésének megtervezése és megvalósítása során hasznos Intune-információkra mutató hivatkozások.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>További erőforrások az Intune üzembe helyezésének megtervezéséhez
 
@@ -50,7 +51,7 @@ Itt további, az Intune üzembe helyezésének megtervezése, kialakítása és 
 
 -   [Intune-blog](https://blogs.technet.microsoft.com/enterprisemobility/) – Blogbejegyzések arról, hogyan illeszkedik az Intune az nagyvállalati mobilitás egészébe.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx) – Tájékozódhat arról, milyen módon közelíti meg a Microsoft a biztonságot, az adatvédelmet, a megfelelőséget és az átláthatóságot a Microsoft összes felhőalapú termékében és szolgáltatásában.
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) – Tájékozódhat arról, milyen módon közelíti meg a Microsoft a biztonságot, az adatvédelmet, a megfelelőséget és az átláthatóságot a Microsoft összes felhőalapú termékében és szolgáltatásában.
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) – Új funkciókat szeretne, vagy más ügyfelekkel együtt szavazna az egyes funkciókra? Az Intune-nal kapcsolatos visszajelzéseit elküldheti a User Voice-on keresztül. Figyelünk a véleményére.
 

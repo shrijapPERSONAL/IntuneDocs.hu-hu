@@ -1,28 +1,28 @@
 ---
-title: "Alapvető adatkezelés beállítása az Office 365-alkalmazásokban az Intune-ban"
-titlesuffix: Azure portal
-description: "Az Office 365-alkalmazások kezelése varázsló kapcsolódó dokumentációja.”"
-keywords: 
+title: Office 365-alkalmazások adatkezelése a Microsoft Intune-ban
+titlesuffix: ''
+description: Az Office 365-alkalmazások a Microsoft Intune-beli adatkezelésének ismertetése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a felügyelt Office 365-alkalmazásokban
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a Microsoft Intune-beli felügyelt Office 365-alkalmazásokban
 
 Az **Office 365-alkalmazások kezelése** varázsló minden eszközplatform esetében létrehoz egy alkalmazásvédelmi szabályzatot.
 
@@ -46,30 +46,30 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 
 ## <a name="user-experience-on-an-ios-device"></a>Az iOS-eszközök felhasználói felülete
 
-1. A OneDrive Vállalati verzió alkalmazást elindítva nyissa meg a bejelentkezési lapot.  <br/> ![A OneDrive bejelentkezési képernyőjének képe iOS rendszer esetén](./media/onedrive-ios-sign-in.png)
-2. Írja be a munkahelyi fiókja felhasználónevét. Ekkor megnyílik az Office 365 hitelesítési lapja, ahol megadhatja a munkahelyi hitelesítő adatait. <br/> ![Az Office 365 bejelentkezési lapjának képe](./media/o365-sign-in-ios.png)
-3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, érvénybe lépnek az alkalmazásvédelmi szabályzatok, és a rendszer arra kéri, hogy indítsa újra a OneDrive Vállalati verziót.  <br/>![Az iOS újraindítási figyelmeztetésének képe](./media/ios-restart-prompt.png)    
+1. A OneDrive Vállalati verzió alkalmazást elindítva nyissa meg a bejelentkezési lapot.  
+2. Írja be a munkahelyi fiókja felhasználónevét. Ekkor megnyílik az Office 365 hitelesítési lapja, ahol megadhatja a munkahelyi hitelesítő adatait. 
+3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, érvénybe lépnek az alkalmazásvédelmi szabályzatok, és a rendszer arra kéri, hogy indítsa újra a OneDrive Vállalati verziót. 
+
   > [!NOTE]
   > Az Újraindítás szükséges üzenet csak az Intune-ban nem regisztrált eszközökön jelenik meg.
 
+4. Indítsa újra a OneDrive Vállalati verziót. Az alkalmazás engedélyezett alkalmazásvédelmi szabályzatokkal indul el, és az eszköz PIN-kód megadását kéri (ha nincs még konfigurálva az eszköz PIN-kódja).  
 
-4. Indítsa újra a OneDrive Vállalati verziót. Az alkalmazás engedélyezett alkalmazásvédelmi szabályzatokkal indul el, és az eszköz PIN-kód megadását kéri (ha nincs még konfigurálva az eszköz PIN-kódja). <br/> ![A PIN-kód létrehozására vonatkozó kérdés képe](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > A felhasználók többsége számára nem jelenik meg ez a kérdés. Ezt a kérdést csak azok a felhasználóknak fog megjelenni, akik még nem engedélyezték az iOS-eszközön a PIN-kódot.
 
-
-5. Miután beállította és megerősítette a PIN-kódot, térjen vissza a OneDrive Vállalati verzió alkalmazáshoz. Ekkor egyszeri értesítés tájékoztatja a felhasználót arról, hogy a rendszergazda már védi a munkahelyi adatokat a OneDrive-on. <br/> ![A rendszergazdától kapott egyszeri értesítés képe](./media/one-time-notice.png)
-6. A OneDrive Vállalati verzióban tárolt fájljainak eléréséhez kattintással lépjen tovább az értesítésről. <br/> ![A OneDrive-fájlok képe iOS-eszközön](./media/onedrive-files-ios.png) <br/>
+5. Miután beállította és megerősítette a PIN-kódot, térjen vissza a OneDrive Vállalati verzió alkalmazáshoz. Ekkor egyszeri értesítés tájékoztatja a felhasználót arról, hogy a rendszergazda már védi a munkahelyi adatokat a OneDrive-on. 
+6. A OneDrive Vállalati verzióban tárolt fájljainak eléréséhez kattintással lépjen tovább az értesítésről. 
 
 >[!NOTE]
 >A telepített szabályzatok módosításai az alkalmazás következő indításakor lépnek érvénybe.
-
 
 ## <a name="user-experience-on-an-android-device"></a>Az androidos eszközök felhasználói felülete
 
 1. A OneDrive Vállalati verzió alkalmazást elindítva nyissa meg a bejelentkezési lapot.  <br/> ![A OneDrive alkalmazás üdvözlőképernyőjének képe](./media/onedrive-android-welcome.png)
 2. Írja be a munkahelyi fiókja felhasználónevét. Ekkor megnyílik az Office 365 hitelesítési lapja, ahol megadhatja a munkahelyi hitelesítő adatait. <br/> ![O365-bejelentkezési lap képe Androidon](./media/o365-sign-in-android.png)
-3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, megjelenik egy üzenet, amely tartalmazza a Céges portál alkalmazás telepítésére vonatkozó utasításokat, ha az még nincs telepítve az eszközön. Koppintson a **Ugrás az Áruházba** elemre a folytatáshoz. <br/> ![A Céges portál alkalmazás beszerzésére kérő üzenet képe](./media/get-company-portal-android.png) <br/>Ha a Céges portál alkalmazás már telepítve van a telefonján, a OneDrive Vállalati verzió alkalmazás automatikusan elindul, és a befejező megjegyzésre ugorhat.    
+3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, megjelenik egy üzenet, amely tartalmazza a Céges portál alkalmazás telepítésére vonatkozó utasításokat, ha az még nincs telepítve az eszközön. Koppintson a **Ugrás az Áruházba** elemre a folytatáshoz. <br/> ![A Céges portál alkalmazás beszerzésére kérő üzenet képe](./media/get-company-portal-android.png) <br/>Ha a Céges portál alkalmazás már telepítve van a telefonján, a OneDrive Vállalati verzió alkalmazás automatikusan elindul, és a befejező megjegyzésre ugorhat.   
+
   > [!IMPORTANT]
   > Androidon, miután beállította az Office-alkalmazások alkalmazásvédelmi szabályzat általi kezelését, az eszköz felhasználójának telepítenie **kell** a Céges portál alkalmazást annak ellenére, hogy a végfelhasználónak nem kell megnyitnia azt, és nem kell bejelentkeznie az alkalmazásba az e-mailek vagy dokumentumok elolvasásához.
 
@@ -128,4 +128,4 @@ Ezen szabályzatok, vagy az Azure-beli Intune-portálon létrehozott bármely sz
 ![Felhasználói felület elérési útja szabályzatok megtekintéséhez – kép](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>További lépések
-További információk az [alkalmazásvédelmi szabályzatokról](app-protection-policy.md).
+- További információk az [alkalmazásvédelmi szabályzatokról](app-protection-policy.md).

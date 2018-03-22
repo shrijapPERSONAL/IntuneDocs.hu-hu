@@ -1,27 +1,26 @@
 ---
-title: "Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal"
-titleSuffix: Azure portal
-description: "Azure-beli Intune – előzetes: megtudhatja, hogyan teszi lehetővé a szerepköralapú hozzáférés-vezérlés annak szabályozását, hogy ki hajthat végre műveletet és végezhet módosításokat."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: RBAC a Microsoft Intune-nal
+description: Megtudhatja, hogyan szabhatja meg a Szerepköralapú hozzáférés-vezérléssel, hogy mely felhasználók hajthatnak végre műveleteket és végezhetnek módosításokat a Microsoft Intune-ban.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) az Intune-nal
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
 Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat végre különböző Intune-feladatokat, és kikre vonatkozhatnak az adott feladatok. A beépített szerepköröket bizonyos gyakori Intune-os helyzetekben használhatja, de saját szerepköröket is létrehozhat. Egy szerepkört a következők határoznak meg:
 

@@ -1,25 +1,26 @@
 ---
-title: "Eszközmegfelelőségi és alkalmazáskezelési szabályzatok konfigurálása Intune-migráció során"
-description: "Ez a cikk az eszközmegfelelőségi és alkalmazáskezelési szabályzatok Intune-migráció során történő konfigurálásához szükséges lépéseket ismerteti."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Eszközmegfelelőségi és alkalmazáskezelési szabályzatok konfigurálása Intune-migráció során
+titlesuffix: Microsoft Intune
+description: Ez a cikk az eszközmegfelelőségi és alkalmazáskezelési szabályzatok Microsoft Intune-migráció során történő konfigurálásához szükséges lépéseket ismerteti.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>Eszközmegfelelőségi és alkalmazáskezelési szabályzatok konfigurálása
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Eszközmegfelelőségi és alkalmazásfelügyeleti szabályzatok konfigurálása Microsoft Intune-migráció során
 
 Az Intune-migráció során a fő cél az, hogy minden eszköz regisztrálva legyen az Intune-ban, és megfeleljenek a rájuk vonatkozó szabályzatoknak. Az eszközszabályzatok nem csak a vállalati tulajdonban lévő egyfelhasználós eszközök felügyeletét segítik, hanem a saját tulajdonú (BYOD), valamint a közösen használt eszközökét is (például kioszkok, POS-eszközök, közös használatú iskolai táblagépek, illetve felhasználó nélküli iOS-es eszközök).
 

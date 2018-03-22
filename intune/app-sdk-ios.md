@@ -1,24 +1,24 @@
 ---
-title: "A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató"
-description: "Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune-alkalmazásvédelmi szabályzatokat (vagy más néven APP- vagy MAM-szabályzatokat) építsen be natív iOS-alkalmazásába."
-keywords: 
+title: A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
+description: Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune-alkalmazásvédelmi szabályzatokat (vagy más néven APP- vagy MAM-szabályzatokat) építsen be natív iOS-alkalmazásába.
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 49ffac609ec24917b8490c535ebd74c6d2729ccd
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -470,7 +470,7 @@ A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurá
 * Az alkalmazás konfigurációs objektumának beszerzéséhez hívja az ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` funkciót.
 * Hívja a megfelelő szelektort az ```IntuneMAMAppConfig``` objektumon. Ha például az alkalmazás kulcsa egy karakterlánc, akkor használhatja a ```stringValueForKey``` vagy az ```allStringsForKey``` lehetőséget. Az ```IntuneMAMAppConfig.h header``` fájl közli a visszaadott értékeket/hibafeltételeket.
 
-A Graph API célzott MAM-konfigurációs értékekre vonatkozó képességeivel kapcsolatos további információért lásd a [Graph API-referencia – célzott MAM-konfiguráció](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) témájú weblapot. <br>
+További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 A célzott MAM-alkalmazáskonfigurációs szabályzat iOS rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata iOS rendszerben](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
 

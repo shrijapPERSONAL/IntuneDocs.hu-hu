@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune-licencek hozzárendelése"
-description: "Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket"
-keywords: 
+title: Microsoft Intune-licencek hozzárendelése
+description: Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
 
@@ -58,6 +58,17 @@ További tudnivalók az SDS-ről: [A School Data Sync áttekintése](https://sup
 * Azok a **felhasználók**, akiknek felhasználói licencet oszt ki, elérhetik és használhatják az online szolgáltatásokat és a kapcsolódó szoftvereket (köztük a System Centert) az alkalmazások és legfeljebb 15 eszköz felügyelete céljából.
 * Azok az **eszközök**, amelyeknek eszközlicencet oszt ki, tetszőleges számú felhasználó számára lehetővé teszik, hogy elérhessék és használhassák az online szolgáltatásokat és a kapcsolódó szoftvereket (köztük a System Centert).
 * Ha egy eszköz több felhasználó is használ, akkor mindegyiknek eszközlicencre, vagy minden felhasználónak felhasználói licencre van szüksége.
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>A megvásárolt licencek típusainak ismertetése
+
+Az Intune vásárlási módja határozza meg az előfizetési adatokat:
+
+- Ha Nagyvállalati Szerződés keretében vásárolta meg az Intune-t, az előfizetési adatait a Mennyiségi licenc portál **Előfizetések** területén tekintheti meg.
+- Ha az Intune-t egy felhőszolgáltatótól vásárolta meg, keresse fel a viszonteladót.
+- Ha az Intune-t a CC# vagy az Invoice szolgáltatáson keresztül vásárolta, a licencek felhasználóalapúak.
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Az EMS felhasználói licencek szelektív kezelése a PowerShell segítségével
 Előfordulhat, hogy a Microsoft Enterprise Mobility + Security (korábban: Nagyvállalati mobilitási csomag) megoldást használó szervezeteknek vannak olyan felhasználói, akiknek csak az EMS csomagban foglalt Azure Active Directory Premium vagy Intune szolgáltatásra van szükségük. Az [Azure Active Directory PowerShell-parancsmagok](https://msdn.microsoft.com/library/jj151815.aspx) használatával egy-egy szolgáltatás vagy a szolgáltatások egy részhalmaza is hozzárendelhető.

@@ -1,25 +1,25 @@
 ---
-title: "Előzetes kiadás"
-description: 
-keywords: 
+title: Előzetes kiadás
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>A Microsoft Intune előzetes kiadása – 2018. március
 
@@ -147,6 +147,33 @@ Egyéni e-könyv-kategóriákat hozhat létre, majd hozzájuk rendelheti a menny
 
 Az Androidhoz készült Céges portál alkalmazás az Android [Material Design](https://material.io/) irányelveihez igazodva frissülni fog. Az új ikonokat az alkalmazás kiadásával egyidőben, az [Újdonságok az alkalmazások felhasználói felületén](whats-new-app-ui.md) című cikkben tesszük közzé. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Edge-mobiltámogatás az Intune alkalmazásvédelmi szabályzataihoz <!-- 1817882 -->
+
+A Microsoft Edge mobilböngésző támogatja az Intune-ban meghatározott alkalmazásvédelmi szabályzatokat.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Teljesen megkülönböztető név használata az SCEP-tanúsítvány tulajdonosaként <!--2221763 eeready-->
+SCEP-tanúsítványprofil létrehozásakor meg kell adnia a tulajdonos nevét. Ehhez használhatja a teljesen megkülönböztető nevet. A **Tulajdonos neve** területen válassza az **Egyéni** lehetőséget, majd írja be a következőt: `CN={{OnPrem_Distinguished_Name}}`. Az `{{OnPrem_Distinguished_Name}}` változó használatához ügyeljen rá, hogy az `onpremisesdistingishedname` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Az iOS-eszközöktől 15 percenként PIN-kódot kér a rendszer <!--1550837 eeready-->
+Miután megfelelőségi vagy konfigurációs szabályzatot alkalmazott egy iOS-eszközre, a felhasználóktól 15 percenként egy PIN-kódot kér a rendszer. A kérések mindaddig megjelennek, amíg a felhasználó nem ad meg egy PIN-kódot.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Bluetooth-alapú névjegymegosztás – Android for Work <!--1098983 eeready-->
+Alapértelmezés szerint az Android megakadályozza a munkahelyi profil névjegyeinek Bluetooth-eszközökkel való szinkronizálását. Ennek eredményeképpen a munkahelyi profil névjegyei nem jelennek meg a hívóazonosítón a Bluetooth-eszközökön.
+
+Az **Android for Work** > **Eszközkorlátozások** > **Munkahelyi profil beállításai** területen egy új beállítás található:
+- Névjegyek megosztása Bluetooth-kapcsolattal
+
+Az Intune-rendszergazda konfigurálhatja ezeket a beállításokat a megosztás engedélyezéséhez. Ez akkor hasznos, ha egy eszközt egy autóalapú Bluetooth-eszközzel szeretne párosítani, amely megjeleníti a hívóazonosítót a kihangosítós használat során. Ha a beállítás engedélyezve van, a munkahelyi profil névjegyei megjelennek. Ha a beállítás le van tiltva, a munkahelyi profil névjegyei nem jelennek meg.
+
+A következőkre vonatkozik: Android munkahelyi profilos eszközök Android v6.0 és újabb operációs rendszerekkel.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Az automatikus frissítések ütemezése <!--1805514 -->
+
+Az Intune-nal igény szerint telepítheti az automatikus frissítéseket a [Windows frissítési köreinek beállításaival](windows-update-for-business-configure.md). Ismétlődő frissítéseket ütemezhet, például a hetet, a napot és az időt. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Az eszköz újraindításakor végzett ellenőrzések letiltása <!--1805490 -->
+
+Az Intune-nal vezérelheti a [kezelt szoftverfrissítéseket](windows-update-for-business-configure.md). Az **Újraindítási ellenőrzések** tulajdonság alapértelmezés szerint hozzá lesz adva és engedélyezve lesz. Az eszközök újraindításakor végzett (például az aktív felhasználókra vagy az akkumulátor szintjére vonatkozó) rendszeres ellenőrzések átugrásához válassza a **Kihagyás** lehetőséget. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Hexadecimális kódokkal testreszabhatja a témák színeit a Céges portál alk
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Új Windows Defender Credential Guard-beállítások az Endpoint Protection-beállításokban <!--1102252 --> 
 
-Az új [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] beállítások az **Eszközkonfiguráció** > **Profilok** > **Endpoint Protection** területén találhatók meg. A következő beállítások lesznek hozzáadva: 
+Új [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard]-beállításokkal bővült az **Eszközkonfiguráció** > **Profilok** > **Endpoint protection** terület. A következő beállítások lesznek hozzáadva: 
 
 - Platformbiztonsági szint: megadhatja, hogy engedélyezve legyen-e a platformbiztonsági szint a következő újraindításkor. A virtualizálás-alapú biztonsághoz biztonságos rendszerindítás szükséges. A virtualizálás-alapú biztonságot igény szerint a közvetlen memória-hozzáférés (DMA) védelmi funkcióinak használatakor is engedélyezheti. A DMA-védelemhez hardveres támogatás szükséges, és csak a megfelelően konfigurált eszközökön alkalmazható.
 - Virtualizálás-alapú biztonság: megadhatja, hogy engedélyezve legyen-e a virtualizálás-alapú biztonság a következő újraindításkor. 
@@ -185,29 +212,6 @@ Az oktatási profilok új beállításai a **Nyomtatók** kategória **Nyomtató
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS-es alkalmazáskiépítési konfiguráció <!-- 1581650 -->
 iOS-es alkalmazáskiépítési profilok hozzárendelésével, illetve biztonsági csoportok alkalmazásával vagy kizárásával megelőzheti, hogy lejárjanak az alkalmazásai.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Új beállítások a Windows Defender – biztonsági rés kiaknázása elleni védelemhez <!-- 631893 -->
-
-Hat új **Támadási felület csökkentése** beállítás és bővített **Mappahozzáférés felügyelete: Mappavédelem** funkciók érhetők el. Ezeket a beállításokat az alábbi helyen találhatja meg: Eszközkonfiguráció\Profilok\
-Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kiaknázása elleni védelem.
-
-#### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
-
-|Beállítás neve  |Beállítás lehetőségei  |Description  |
-|---------|---------|---------|
-|Zsarolóprogramok elleni speciális védelem|Engedélyezve, Naplózás, Nincs konfigurálva|Zsarolóprogramok elleni agresszív védelem.|
-|A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése|Engedélyezve, Naplózás, Nincs konfigurálva|A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése (lsass.exe).|
-|Folyamatlétrehozás a PSExec- és WMI-parancsokból|Tiltás, Naplózás, Nincs konfigurálva|A PSEx-ec és WMI-parancsokból eredő folyamatlétrehozások letiltása.|
-|Nem megbízható és aláíratlan, USB-ről futó folyamatok|Tiltás, Naplózás, Nincs konfigurálva|Nem megbízható és aláíratlan, USB-ről futó folyamatok letiltása.|
-|Az elterjedtségre, korra és megbízható listákra vonatkozó kritériumoknak nem megfelelő végrehajtható fájlok|Tiltás, Naplózás, Nincs konfigurálva|Az elterjedtségre, korra és megbízható listákra vonatkozó kritériumoknak nem megfelelő végrehajtható fájlok letiltása.|
-
-#### <a name="controlled-folder-access"></a>Mappahozzáférés felügyelete
-
-|Beállítás neve  |Beállítás lehetőségei  |Description  |
-|---------|---------|---------|
-|Mappavédelem (már implementálva)|Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> **Új**<br>Lemezmódosítás letiltása, lemezmódosítás naplózása|
-Fájlok és mappák védelme a nemkívánatos alkalmazások által végrehajtott, jogosulatlan módosítások ellen.<br><br>**Engedélyezés**: Megakadályozza, hogy a nem megbízható alkalmazások módosítsák vagy töröljék a védett mappák fájljait, valamint hogy lemezszektorokra írjanak.<br><br>
-**Csak a lemezmódosítások letiltása**:<br>Nem engedélyezi a nem megbízható alkalmazásoknak, hogy lemezszektorokra írjanak. A nem megbízható alkalmazások továbbra is módosíthatják vagy törölhetik a védett mappák fájljait.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Új Windows Defender alkalmazásőr-beállítások <!-- 1631890 -->
 

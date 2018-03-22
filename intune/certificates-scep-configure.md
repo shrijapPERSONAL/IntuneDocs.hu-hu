@@ -1,26 +1,25 @@
 ---
-title: "SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal"
-titlesuffix: Azure portal
-description: "A cikk tájékoztatást nyújt az infrastruktúra konfigurálásáról és az Intune SCEP-tanúsítványprofiljainak ezt követő létrehozásáról és hozzárendeléséről."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: SCEP-tanúsítványok konfigurálása és kezelése a Microsoft Intune-nal
+description: Megismerheti az infrastruktúra konfigurálását, majd az Egyszerű tanúsítványbeiktatási protokoll (SCEP) tanúsítványprofiljainak ezt követő létrehozását és hozzárendelését a Microsoft Intune-nal.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése az Intune-nal
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése a Microsoft Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ez a témakör bemutatja az infrastruktúra konfigurálását, majd az Egyszerű tanúsítványbeiktatási protokoll (SCEP) tanúsítványprofiljainak ezt követő létrehozását és hozzárendelését az Intune-nal.

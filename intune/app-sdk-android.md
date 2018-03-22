@@ -1,24 +1,24 @@
 ---
-title: "A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek"
-description: "Az Androidhoz készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune mobilalkalmazás-felügyeleti (MAM) funkcióját beépítse Android-alkalmazásaiba."
+title: A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
+description: Az Androidhoz készült Microsoft Intune App SDK lehetővé teszi, hogy az Intune mobilalkalmazás-felügyeleti (MAM) funkcióját beépítse Android-alkalmazásaiba.
 keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53f0d46fa1a9452b7a0cc1e243373f21556f5fb6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek
 
@@ -1311,7 +1311,7 @@ public interface MAMAppConfig {
 Az alkalmazás konfigurációja egy új értesítéstípust ad hozzá:
 * **REFRESH_APP_CONFIG**: ezt az értesítést egy `MAMUserNotification` tartalmazza, és tájékoztatja az alkalmazást, hogy új alkalmazáskonfigurációs adatok érhetők el.
 
-A Graph API célzott MAM-konfigurációs szabályzattal kapcsolatos lehetőségeiről lásd: [Graph API Reference MAM Targeted Config]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+További információ a Graph API funkcióiról: [Graph API-segédlet](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 A célzott MAM-alkalmazáskonfigurációs szabályzat Android rendszerben való létrehozásáról lásd [A Microsoft Intune alkalmazáskonfigurációs szabályzatainak használata Android rendszerben](https://docs.microsoft.com/intune/app-configuration-policies-use-android) célzott MAM-alkalmazáskonfigurációról szóló szakaszát.
 

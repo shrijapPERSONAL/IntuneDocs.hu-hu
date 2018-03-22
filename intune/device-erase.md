@@ -1,24 +1,24 @@
 ---
-title: "macOS-eszköz adatainak törlése"
-titlesuffix: Azure portal
-description: "A cikk azt ismerteti, hogyan törölhető macOS rendszerű eszközről minden adat, beleértve az operációs rendszert is.”"
-keywords: 
+title: macOS-eszköz adatainak törlése
+titleSuffix: Microsoft Intune
+description: A cikk azt ismerteti, hogyan törölhető macOS rendszerű eszközről minden adat, beleértve az operációs rendszert is.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81f328004863e812b706174e74a9b74d0bdf80b6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: d6ae04abda7f026bcbc02e325274712a386147b8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Minden adat törlése macOS rendszerű eszközről
 

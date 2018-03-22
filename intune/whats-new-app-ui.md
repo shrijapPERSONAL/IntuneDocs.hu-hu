@@ -1,35 +1,30 @@
 ---
-title: "Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban"
-description: "Ismerje meg, mi változott a végfelhasználói eszközökön Intune-nal működő alkalmazásokhoz tartozó felhasználói felületen."
-keywords: 
+title: Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
+titlesuffix: Microsoft Intune
+description: Ismerje meg, mi változott a végfelhasználói eszközökön Microsoft Intune-nal működő alkalmazásokhoz tartozó felhasználói felületen.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
 
-## <a name="week-of-december-11-2017"></a>2017. december 11-i hét
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Üzenet küldése a felhasználóknak a fiókról <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-A Céges portál webhely felhasználóinak le lesznek tiltva azon műveletek, amelyek végrehajtásához írási jogosultság szükséges a bérlőhöz. A felhasználóknak megjelenik egy hibaüzenet, mely ismerteti, hogy a fiókjuk karbantartás alatt áll. Hasonló változások várhatók hamarosan a Céges portál alkalmazásban is Android, iOS, macOS és Windows rendszeren.
-
-![Fiókáthelyezés során megjelenő hibaüzenet](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>2017. november 27-i hét
 
@@ -213,7 +208,7 @@ Koppintson a __Bejelentkezés más eszközről__ hivatkozásra.
 
 ![A rendszer arra kéri a felhasználót, hogy látogassa meg a aka.ms/devicelogin oldalt a munkagéphez tartozó, megjelenített egyedi kódot használva a bejelentkezéshez.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Nyissa meg egy böngészőablakban az [http://aka.ms/devicelogin](https://aka.ms/devicelogin) webhelyet.
+Nyisson meg egy böngészőt, majd lépjen a következő oldalra: [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![A felhasználó munkagépén futó böngészőablak képe (nem pedig a Céges portál alkalmazásé). A megjelenített „Eszközbejelentkezés” oldal arra kéri a felhasználót, hogy adja meg a Céges portál alkalmazástól kapott kódot.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ A Céges portál alkalmazás megkezdi a bejelentkezést.
 
 ## <a name="june-2017"></a>2017. június
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Az Androidhoz készült Céges portál alkalmazás mostantól új felhasználói felületet nyújt az alkalmazásvédelmi szabályzatokhoz <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Az Androidhoz készült Céges portál alkalmazás mostantól új felhasználói felületet nyújt az alkalmazásvédelmi szabályzatokhoz
 A felhasználók visszajelzései alapján úgy módosítottuk az Androidhoz készült Céges portál alkalmazást, hogy egy **Céges tartalom elérése** gombot is hozzáadtunk. Ez mentesíti a végfelhasználót attól, hogy az egész regisztrációs folyamaton végig kelljen mennie, ha csak olyan alkalmazásokat kíván elérni, amelyek az Intune mobilalkalmazás-felügyelet egyik funkcióját, az alkalmazásvédelmi szabályzatokat támogatják.
 
 A felhasználó az eszköz regisztrálása helyett a **Céges tartalom elérése** gombra koppint.
@@ -322,13 +317,13 @@ Az androidos Céges portál alkalmazás frissítésének köszönhetően bejelen
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Ezek azok a tervezett megoldások, amelyekkel a felhasználói felület frissít
 > [!Note]
 > Vegye figyelembe, hogy az alábbi képek előzetes verziókra vonatkozhatnak, és a bejelentett termék eltérhet az itt bemutatott verzióktól.
 
+### <a name="ui-iwp"></a>Új frissítés a felhasználói felülethez a Céges portál webhelyen <!--2000968-->
+
+Áprilisban új felhasználói élményt vezetünk be a Céges portál webhelyén, melynek része a megújult felhasználói felület, az egyszerűsített műveletek és továbbfejlesztett kisegítő lehetőségek. A felhasználóbarátabb élmény érdekében az ügyfelek által javasolt olyan fejlesztéseket valósítottunk meg, mint az alkalmazások megosztása és a teljesítmény javítása általában.
+
+Ügyfeleink javaslatai alapján olyan új funkciókat is bevezettünk, amelyek jelentősen megnövelik a jelenlegi funkciók használhatóságát és működését:
+
+-   A webhely felhasználói felületének fejlesztései
+-   Alkalmazások közvetlen hivatkozásainak megoszthatósága
+- Nagy méretű alkalmazáskatalógusok javított teljesítménye
+
+A változás érvénybe lépéséhez Önnek semmit nem kell tennie. Értesíteni fogjuk Önt, ha elérhetővé válik a megújult Céges portál webhely. Arra azonban szükség lehet, hogy a végfelhasználói dokumentumokat az új képernyőképekkel frissítse. Emellett frissítést igényelhet az iOS-es Céges portál alkalmazás dokumentációja is, mivel az iOS-alkalmazás **Alkalmazások** szakasza a webhelyre támaszkodik.
+
+|Frissített|Előző|
+|---|---|
+|![A frissített eszköz oldalán az eszköz pontosan az eszközadatok fölé van igazítva, és nem a teljes lista fölött ugrik fel.](./media/iwp-device-after-1803.png)|![Az eszközoldal előző verziója.](./media/iwp-device-before-1803.png)|
+|![A frissített alkalmazástelepítési oldalon az alkalmazás pontosan a leírás és a különböző telepítési adatok, így a közzététel dátuma, a verzió és az alkalmazástípus fölött jelenik meg.](./media/iwp-app-install-after-1803.png)|![A telepítésoldal előző verziója.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Felhasználóiélmény-frissítés az iOS-hez készült Céges portál alkalmazásban <!--1412866-->
 
 Egy nagyszabású felhasználóiélmény-frissítést adunk ki az iOS-es Céges portál alkalmazáshoz. A frissítés teljes mértékben átalakítja az alkalmazás látványát, modernebb külsőt, valamint könnyebb használhatóságot és elérhetőséget nyújtva. Az iOS-es Céges portál minden funkciója továbbra is ugyanúgy működik.
 
-A frissített, iOS-es Céges portál alkalmazás előzetes verziója elérhető az Apple TestFlight programjában, amelynek keretében kipróbálhatja az alkalmazást, és visszajelzést küldhet róla. Regisztráció a TestFlight-hozzáféréshez: https://aka.ms/intune_ios_cp_testflight.
+A frissített, iOS-es Céges portál alkalmazás előzetes verziója elérhető az Apple TestFlight programjában, amelynek keretében kipróbálhatja az alkalmazást, és visszajelzést küldhet róla. Feliratkozás a TestFlighthoz való hozzáféréshez: https://aka.ms/intune_ios_cp_testflight. A frissítéssel kapcsolatos a legújabb híreket itt találja: https://aka.ms/iOS_companyportal_update.
 
 ![előzetes képek az új ios-es céges portál alkalmazáshoz](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Kiemelt alkalmazások frissítései__ A webhelyhez hozzáadtunk egy új oldalt
 
 ### <a name="see-also"></a>Lásd még:
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [A felhőplatform ütemterve](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [A felhőplatform ütemterve](https://www.microsoft.com/cloud-platform/roadmap)
 * [Az Intune újdonságai](https://docs.microsoft.com/intune/whats-new)

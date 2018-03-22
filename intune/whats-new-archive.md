@@ -1,26 +1,26 @@
 ---
-title: "A Microsoft Intune újdonságai a korábbi hónapokból"
-titlesuffix: 
-description: "Az Intune újdonságai oldalán korábban megjelenő információkat olvashatja"
-keywords: 
+title: A Microsoft Intune újdonságai a korábbi hónapokból
+titlesuffix: ''
+description: Az Intune újdonságai oldalán korábban megjelenő információkat olvashatja
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ba6262c1126a421f2e2ca0e5085796c11df8d9a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
@@ -220,7 +220,7 @@ A fenntartási módban ezekhez az alkalmazásokhoz azonban már csak fontos bizt
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment-----1490695---"></a>Nem támogatott Samsung Knox-eszközök regisztrációjának letiltása<!-- 1490695 -->
 
-A Céges portál alkalmazás csak a támogatott Samsung Knox-eszközöket próbálja meg regisztrálni. Az MDM-regisztrációt megakadályozó Knox-aktiválási hibák elkerülése érdekében az alkalmazás csak a [Samsung által közzétett eszközlistán](https://www.samsungknox.com/knox-supported-devices/knox-workspace) szereplő eszközöket próbálja meg regisztrálni. Előfordulhat, hogy egy Samsung-eszköz bizonyos modelljei támogatják a Knox platformot, míg más modelljei nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse a viszonteladóval, hogy az eszköz Knox-kompatibilis-e. Az ellenőrzött eszközök teljes listáját megtalálhatja az [Android- és Samsung Knox Standard-eszközök konfigurációs szabályzatának beállításai](/intune/supported-devices-browsers.md#intune-supported-devices) című témakörben.
+A Céges portál alkalmazás csak a támogatott Samsung Knox-eszközöket próbálja meg regisztrálni. Az MDM-regisztrációt megakadályozó Knox-aktiválási hibák elkerülése érdekében az alkalmazás csak a [Samsung által közzétett eszközlistán](https://www.samsungknox.com/knox-supported-devices/knox-workspace) szereplő eszközöket próbálja meg regisztrálni. Előfordulhat, hogy egy Samsung-eszköz bizonyos modelljei támogatják a Knox platformot, míg más modelljei nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse a viszonteladóval, hogy az eszköz Knox-kompatibilis-e. Az ellenőrzött eszközök teljes listáját megtalálhatja az [Android- és Samsung Knox Standard-eszközök konfigurációs szabályzatának beállításai](/intune/supported-devices-browsers.md#intune-supported-web-browsers) című témakörben.
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Az Android 4.3-as és korábbi verzióinak támogatása lejár <!-- 1171126, 1326920 -->
 A felügyelt alkalmazások és az Androidra készült Céges portál alkalmazás esetén az Android 4.4-es vagy újabb verziója követelmény lesz a vállalati erőforrások eléréséhez. Decemberre az összes regisztrált eszköz ki lesz vonva, így elveszti hozzáférését a vállalati erőforrásokhoz. Ha MDM nélküli alkalmazásvédelmi szabályzatokat használ, akkor az alkalmazások nem jutnak hozzá a frissítésekhez és a használhatóságuk idővel romlani kezd.
@@ -281,7 +281,7 @@ Mostantól beállítható a Mac-eszközök Intune-ba való regisztrálását és
 - További információ a [feltételes hozzáférés támogatásáról macOS-eszközöknél](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
 ### <a name="company-portal-app-for-macos-is-in-public-preview----1484796---"></a>Nyilvános előzetes verzióban elérhető a macOS-hez készült Céges portál alkalmazás <!---1484796--->
-Az Enterprise Mobility + Security-beli feltételes hozzáférés nyilvános előzetesének részeként előzetes verzióban elérhető a macOS-es Céges portál alkalmazás. Ez a kiadás a macOS 10.11-es és későbbi verzióit támogatja. Letölthető a [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal) címről. 
+Az Enterprise Mobility + Security-beli feltételes hozzáférés nyilvános előzetesének részeként előzetes verzióban elérhető a macOS-es Céges portál alkalmazás. Ez a kiadás a macOS 10.11-es és későbbi verzióit támogatja. Letöltés: [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
 
 
 ### <a name="new-device-restriction-settings-for-windows-10"></a>Új Windows 10-es eszközkorlátozási beállítások    

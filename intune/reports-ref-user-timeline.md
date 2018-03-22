@@ -1,30 +1,31 @@
 ---
-title: "A felhasználói entitás idővonala az adattárházban | Microsoft Docs"
-description: "Az Intune-adattárház egy idővonalon ábrázolja a felhasználókat."
-keywords: "Intune-adattárház"
+title: A felhasználói entitás idővonala az adattárházban
+titlesuffix: Microsoft Intune
+description: Megtudhatja, hogyan ábrázolja az Intune-adattárház egy idővonalon a felhasználókat.
+keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>A felhasználói élettartam reprezentációja az Intune-adattárházban
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>A felhasználói élettartam reprezentációja a Microsoft Intune-adattárházban
 
 Az Intune-adattárházban tárolt adatok pillanatképeinek egy hónapját időalapú trendekre vonatkozó kérdések megválaszolására használhatja fel. Például megtekintheti az egy hónap alatt felvett felhasználók számát. Azt is megtudhatja, hogy hány felhasználót távolítottak el a rendszerből.
 
-Az ilyen elemzések szolgáltatásához az adattárház előzményadatokat tárol. Ez azt jelenti, hogy az adattárház képes nyomon követni egy entitás élettartamát. Rögzíti, hogy az entitást mikor hozták létre, mikor változik az állapota, és mikor kerül törlésre. A mennyiségi mérések napi pillanatképeivel rögzített előzmények használatával összehasonlíthat egy napot az előzővel, és így tovább.
+Az ilyen típusú elemzések szolgáltatásához az adattárház előzményadatokat tárol. Az adattárház képes követni az entitások élettartamát. Rögzíti, hogy az entitást mikor hozták létre, mikor változik az állapota, és mikor kerül törlésre. A mennyiségi mérések napi pillanatképeivel rögzített előzmények használatával összehasonlíthat egy napot az előzővel, és így tovább.
 
 Az entitások állapotváltozásai megnehezíthetik az entitások élettartamának elemzését. Ez azt jelenti, hogy ha a 30. napon tekinti meg a pillanatképet, a felhasználói rekord talán nem létezik aktív állapotban az adatok között. Lehet, hogy csak a 29-28. napon létezik aktívként, míg a 28. nap előtt egyáltalán nem is létezett a felhasználó.
 
