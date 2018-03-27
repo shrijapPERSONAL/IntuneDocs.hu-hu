@@ -1,24 +1,24 @@
 ---
-title: "Intune-ügyfélszoftvert futtató számítógépekhez tartozó szoftverlicenc-szerződések kezelése"
-description: "Az Intune lehetővé teszi a Microsoft mennyiségi licencszerződéseinek keretében beszerzett, vagy egyéb módon megvásárolt szoftverek licencszerződéseinek kezelését."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Intune-ügyfélszoftvert futtató számítógépekhez tartozó szoftverlicenc-szerződések kezelése
+description: Az Intune lehetővé teszi a Microsoft mennyiségi licencszerződéseinek keretében beszerzett, vagy egyéb módon megvásárolt szoftverek licencszerződéseinek kezelését.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb60588f793ae430d5e40de6a42db3610e3a1cb6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Windows-számítógépes szoftverek licencszerződéseinek kezelése a Microsoft Intune-ban
 
@@ -126,7 +126,7 @@ A mennyiségi licencelési információk frissítése után összehasonlíthatja
 > [!NOTE]
 > Az összes Microsoft mennyiségi licencszerződésnél megjelenített **Terméknév** a **Nem érhető el**.
 
-## <a name="add-and-edit-other-software-licensing-agreements"></a>Egyéb szoftverlicenc-szerződések hozzáadása és szerkesztése
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Egyéb szoftverek licencszerződéseinek hozzáadása és szerkesztése
 Az Intune-hoz a Microsoft mennyiségi licencszerződésektől eltérő típusú licencszerződéseket is hozzáadhat. Ezek a szerződések kereskedőktől vásárolt Microsoft- vagy nem Microsoft-szoftvereket tartalmazhatnak.
 
 > [!IMPORTANT]

@@ -1,25 +1,25 @@
 ---
-title: "Hálózati hozzáférés védelme Cisco ISE-vel"
-description: "A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz."
-keywords: 
-author: arob98
+title: Hálózati hozzáférés védelme Cisco ISE-vel
+description: A Cisco ISE alkalmazást az Intune-nal együtt használva biztosíthatja, hogy eszközei regisztrálva legyenek az Intune-ban és eleget tegyenek a szabályzatoknak, mielőtt csatlakoznának a Cisco ISE által vezérelt hálózatokhoz.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>A Cisco ISE használata az Intune-nal
 
@@ -120,7 +120,7 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
     “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
      ], 
  
-Példa:
+Például:
  
     “keyCredentials“: [
     {
@@ -155,7 +155,7 @@ A ISE felügyeleti konzolján adja meg ezeket az értékeket:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Az Intune-bérlő és a Cisco ISE-kiszolgáló által közösen kezelt adatok
 Ez a táblázat felsorolja az Intune-bérlő és a Cisco ISE-kiszolgáló között megosztott adatokat az Intune által felügyelt eszközök esetében.
 
-|Tulajdonság|  Leírás|
+|Tulajdonság|  Description|
 |---------------|------------------------------------------------------------|
 |complianceState|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az eszköz megfelelő vagy nem megfelelő.|
 |isManaged|Az „igaz” vagy a „hamis” karakterlánc, amely azt jelzi, hogy az ügyfelet az Intune kezeli-e.|
@@ -187,6 +187,6 @@ Ha a felhasználó úgy dönt, hogy regisztrálja az eszközt, a rendszer átir�
 Emellett a [letölthető regisztrációs útmutatóval](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) egyéni útmutatást kaphat a felhasználói élményéhez.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 
 [Cisco Identity Services Engine Felügyeleti útmutató, 2.1-es kiadás](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

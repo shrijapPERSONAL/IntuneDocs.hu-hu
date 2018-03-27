@@ -1,25 +1,25 @@
 ---
-title: "Megfelelőségi szabályzat beállításai Androidhoz"
-description: "Ez a témakör bemutatja az eszközmegfelelőségi szabályzat beállításait Android-eszközökhöz."
-keywords: 
+title: Megfelelőségi szabályzat beállításai Androidhoz
+description: Ez a témakör bemutatja az eszközmegfelelőségi szabályzat beállításait Android-eszközökhöz.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f781c5498a569a067f0f2aa6f780a6cc37c9985c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Android-eszközökhöz a Microsoft Intune-ban
 
@@ -58,7 +58,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból:** A **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt használhatja. A rendszer jelszó beírását kéri a végfelhasználótól a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
 
-### <a name="encryption"></a>Titkosítás
+### <a name="encryption"></a>Encryption
 - **Titkosítás megkövetelése mobileszközökön:** Állítsa ezt a beállítást **Igen** értékre, ha azt szeretné, hogy az eszközök csak titkosítás használatával csatlakozhassanak az erőforrásokhoz. Az eszközök **A mobileszközök zárolásának feloldásához jelszó szükséges** beállítás konfigurálásával titkosíthatók.
 
 ## <a name="device-health-and-security-settings"></a>Eszközállapot és biztonsági beállítások

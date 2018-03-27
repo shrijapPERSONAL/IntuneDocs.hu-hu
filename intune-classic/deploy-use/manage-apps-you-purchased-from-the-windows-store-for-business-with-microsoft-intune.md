@@ -1,31 +1,31 @@
 ---
-title: "Vállalati Microsoft Áruházbeli alkalmazások felügyelete"
-description: "Csatlakoztassa a Microsoft Intune-t a Vállalati Microsoft Áruházhoz, ha szeretné az Intune-konzolról felügyelni és telepíteni a mennyiségi programban vásárolt alkalmazásokat"
-keywords: 
+title: Vállalati Microsoft Áruházbeli alkalmazások felügyelete
+description: Csatlakoztassa a Microsoft Intune-t a Vállalati Microsoft Áruházhoz, ha szeretné az Intune-konzolról felügyelni és telepíteni a mennyiségi programban vásárolt alkalmazásokat
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Intune-konzolról kezelheti. Példa:
+A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Intune-konzolról kezelheti. Például:
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
 * A szinkronizált alkalmazások megjelennek az Intune felügyeleti konzolján, és a többi alkalmazáshoz hasonlóan telepítheti őket.
 * Az Intune felügyeleti konzolján nyomon követheti a szabad és a használatban lévő licencek számát.
@@ -82,5 +82,5 @@ A Vállalati Microsoft Áruházból származó alkalmazások telepítésekor az 
 > A telepített alkalmazásokhoz csak az a felhasználó férhet hozzá, aki eredetileg regisztrálta az eszközt. Más felhasználók nem férhetnek hozzá az alkalmazásokhoz.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Alkalmazások hozzáadása Microsoft Intune-beli mobileszközökhöz](add-apps-for-mobile-devices-in-microsoft-intune.md)

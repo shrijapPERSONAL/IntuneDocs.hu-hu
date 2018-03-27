@@ -1,25 +1,25 @@
 ---
-title: "Kapcsolatfelvétel a telefonos tanácsadással "
-description: "A Microsoft Intune ügyfélszolgálatának telefonszámai."
-keywords: "munkaidő"
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 'Kapcsolatfelvétel a telefonos tanácsadással '
+description: A Microsoft Intune ügyfélszolgálatának telefonszámai.
+keywords: munkaidő
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 0cabaf4474ef96f25a09477fd5d25e2c68b559a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Kapcsolatfelvétel a Microsoft Intune telefonos tanácsadással
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 02/23/2018
 |Lettország|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Lett&#42; és angol||80004233|
 |Liechtenstein|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42;, olasz&#42; és angol|0800000300|0227614114|
 |Litvánia|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Keleti-európai idő szerint (UTC +2)|Litván&#42; és angol|880030960||
-|Luxemburg|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42; és angol|80021094|24871510|
+|Luxemburg|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Francia&#42;, német&#42 és angol|80021094|24871510|
 |Macedónia V.J.K.|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Angol|0800-94288<br /><br />1. lépés: Tárcsázza a telefonszámot<br /><br />2. lépés. Írja be a 001 számsort<br /><br />3. lépés. Írja be a 877-663-5075 számsort||
 |Malajzia|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 18:00 Malajziai idő szerint (UTC +8)|Bahasa&#42;, maláj&#42; és angol|1800 220030|362074606|
 |Málta|24 x 7|Hétfőtől péntekig<br /><br />09:00 – 17:00 Közép-európai idő szerint (UTC +1)|Angol|0 80062231||
