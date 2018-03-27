@@ -1,25 +1,25 @@
 ---
-title: "iOS aktiválási zár kezelése az eszközökön"
-description: "A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: iOS aktiválási zár kezelése az eszközökön
+description: A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely az iOS 7.1 és újabb rendszerű eszközök Find My iPhone alkalmazásának egyik funkciója.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a05c8e6a45c57f5f6f0c90d5fbb48164cde34a1c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Az iOS-eszközök védelme a Microsoft Intune-hoz készült aktiválásizár-megkerüléssel
 
@@ -34,7 +34,7 @@ A Microsoft Intune szolgáltatással kezelhető az iOS aktiválási zára, amely
 -   Az eszköz újraaktiválása
 
 ## <a name="how-activation-lock-affects-you"></a>Az aktiválási zár hatásai
-Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Példa:
+Az aktiválási zár segít az iOS-eszközök védelmének biztosításában, és növeli a megtalálásuk esélyét azok elvesztésekor vagy ellopásakor, ugyanakkor ez a funkció számos kihívást is jelenthet Ön, mint rendszergazda számára. Például:
 
 -   Egy felhasználó beállítja az aktiválási zárat egy eszközön. A felhasználó később elhagyja a céget és visszaszolgáltatja az eszközt. A felhasználó Apple ID azonosítója és jelszava nélkül semmilyen módon nem lehet újraaktiválni az eszközt.
 
@@ -101,6 +101,6 @@ Az alábbi két módon tekintheti meg az aktiválási zárat használó eszköz�
     >Az Intune hétnaponta leltárt készít az aktiválási zárral rendelkező eszközökről. Emiatt előfordulhat, hogy egy eszköz nem azonnal az aktiválásizár-állapotával együtt jelenik meg az Intune konzolján.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Eszközök kivonása](retire-devices-from-microsoft-intune-management.md)
 [Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)

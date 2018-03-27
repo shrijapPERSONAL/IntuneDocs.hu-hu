@@ -1,25 +1,25 @@
 ---
-title: "A Windows kiadásfrissítési szabályzatának beállításai"
-description: "Ismerje meg, hogyan frissíthet automatikusan Windows 10-eszközt más verzióra az Intune segítségével."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: A Windows kiadásfrissítési szabályzatának beállításai
+description: Ismerje meg, hogyan frissíthet automatikusan Windows 10-eszközt más verzióra az Intune segítségével.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 690fe1f1b2555996b2ef124cde6e3fba53e82ec7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>A Windows kiadásfrissítési házirendjének beállításai a Microsoft Intune-ban
 
@@ -52,5 +52,5 @@ Az eszközök legújabb verzióra történő frissítésének megkezdése előtt
 |**Termékkulcs**|Adja meg a Microsofttól kapott, minden megcélzott Windows 10 asztali eszköz frissítéséhez használható termékkulcsot.<br>Miután létrehozta a termékkulcsot tartalmazó házirendet, a termékkulcsot már nem szerkesztheti. Ennek oka a kulcs biztonsági okokból történő elrejtése. Ha módosítani szeretné a termékkulcsot, a teljes kulcsot újra meg kell adnia.
 |**Licencfájl**|Válassza a **Tallózás** elemet, és jelölje ki a Microsofttól kapott, a Windows Holographic vagy Windows 10 Mobile azon kiadásának licencadatait tartalmazó licencfájlt, amelyre a célzott eszközöket frissíteni szeretné.
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

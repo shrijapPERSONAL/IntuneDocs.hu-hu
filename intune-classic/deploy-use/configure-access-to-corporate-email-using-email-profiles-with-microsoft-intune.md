@@ -1,25 +1,25 @@
 ---
-title: "Vállalati e-mailek elérése e-mail-profilokkal"
-description: "Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára."
-keywords: 
+title: Vállalati e-mailek elérése e-mail-profilokkal
+description: Az e-mail-profil beállításainak segítségével konfigurálhatók az e-mail-hozzáférési beállítások a mobileszközökön futó konkrét e-mail-ügyfélprogramok számára.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Vállalati levelezéshez való hozzáférés konfigurálása e-mail profilokkal a Microsoft Intune-ban
 

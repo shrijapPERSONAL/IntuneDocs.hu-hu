@@ -1,25 +1,25 @@
 ---
-title: "MAM-szabályzatok létrehozása és telepítése"
-description: "Az ebben a témakörben található részletes útmutatóval MAM-szabályzatokat hozhat létre és telepíthet."
-keywords: 
+title: MAM-szabályzatok létrehozása és telepítése
+description: Az ebben a témakörben található részletes útmutatóval MAM-szabályzatokat hozhat létre és telepíthet.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban
 
@@ -96,7 +96,7 @@ Az alábbi lépésekkel hozhat létre alkalmazásvédelmi szabályzatokat:
 Ha az előző eljárásban leírtak szerint hozta létre a szabályzatot, az a felhasználók számára ekkor még nincs telepítve. A szabályzatok életbe léptetéséről a következő, „Szabályzat telepítése a felhasználók számára” című szakasz nyújt tájékoztatást.
 
 > [!IMPORTANT]
-> Ha egy alkalmazáshoz létrehoz egy alkalmazásszabályzatot az Intune felügyeleti konzoljával, és az Azure Portalon is létrehoz egy alkalmazásszabályzatot hozzá, akkor az Azure Portalon létrehozott szabályzat élvez elsőbbséget. Az Intune vagy a Configuration Manager-konzol jelentéseiben azonban az Intune felügyeleti konzoljában létrehozott szabályzatbeállítások szerepelnek. Példa:
+> Ha egy alkalmazáshoz létrehoz egy alkalmazásszabályzatot az Intune felügyeleti konzoljával, és az Azure Portalon is létrehoz egy alkalmazásszabályzatot hozzá, akkor az Azure Portalon létrehozott szabályzat élvez elsőbbséget. Az Intune vagy a Configuration Manager-konzol jelentéseiben azonban az Intune felügyeleti konzoljában létrehozott szabályzatbeállítások szerepelnek. Például:
 >
 > -   Az Intune felügyeleti konzolján létrehozott egy alkalmazásszabályzatot, amely tiltja az alkalmazásból való másolást.
 > -   Az Azure konzolján létrehozott egy alkalmazásszabályzatot, amely engedélyezi az alkalmazásból való másolást.
@@ -216,6 +216,6 @@ Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintés�
 ## <a name="next-steps"></a>További lépések
 [A megfelelőség és a felhasználói állapot figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-android)
 * [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-ios)

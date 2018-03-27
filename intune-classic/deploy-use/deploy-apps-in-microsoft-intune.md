@@ -1,25 +1,25 @@
 ---
-title: "Az alkalmazások üzembe helyezése"
-description: "A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében."
-keywords: 
+title: Az alkalmazások üzembe helyezése
+description: A témakörben található információk segítséget nyújtanak az alkalmazások Microsoft Intune-on keresztüli telepítésében.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7e0fd24dffaf58267e492f470ee8a7861d6810aa
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ed098a22da1def82c90fbb159d54be9b1a369ba8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
 

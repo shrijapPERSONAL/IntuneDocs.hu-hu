@@ -1,25 +1,25 @@
 ---
-title: "Megfelelőségi szabályzat beállításai iOS-es eszközökhöz"
-description: "Ez a témakör azokat a szabályokat és beállításokat ismerteti, amelyeket az iOS-eszközök megfelelőségi szabályzatában adhat meg."
-keywords: 
+title: Megfelelőségi szabályzat beállításai iOS-es eszközökhöz
+description: Ez a témakör azokat a szabályokat és beállításokat ismerteti, amelyeket az iOS-eszközök megfelelőségi szabályzatában adhat meg.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cd64a833aa9dbddd2e85dbc427f5c5d5d2bca64
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai iOS-eszközökhöz a Microsoft Intune-ban
 
@@ -63,7 +63,7 @@ Ha más platformokra vonatkozó információkat keres, válassza az alábbiak eg
 
 - **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**: Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt használhatja. A rendszer megkéri a felhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz elérésekor.
 
-### <a name="email-profile"></a>E-mail profil
+### <a name="email-profile"></a>E-mail-profil
 - **Csak az Intune által felügyelt e-mail fiók használható:** Ha **Igen** értékre állítja a beállítást, az eszköznek az eszközre telepített e-mail-fiókot kell használnia. Az eszköz a következő esetekben számít nem megfelelőnek:
   - Az e-mail-profil nem a megfelelőségi szabályzat által célzott felhasználócsoporttól különböző felhasználócsoportnál van telepítve.
   - A felhasználó már beállított egy, az eszközre telepített Intune levelezési profillal egyező e-mail-fiókot az eszközön. Az Intune nem írhatja felül a felhasználó által létesített profilt, így nem kezelheti. A megfelelőség biztosítása érdekében a felhasználónak törölnie kell a meglévő e-mail-beállításokat. Ezt követően az Intune képes lesz a felügyelt e-mail-profil telepítésére.

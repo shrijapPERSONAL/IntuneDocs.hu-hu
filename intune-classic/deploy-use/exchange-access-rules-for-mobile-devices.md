@@ -1,25 +1,25 @@
 ---
-title: "Mobileszközökre vonatkozó Exchange-hozzáférési szabályok"
-description: "Exchange ActiveSync hozzáférési szabályok EAS-eszközök kapcsolódásának engedélyezéséhez vagy letiltásához"
-keywords: 
+title: Mobileszközökre vonatkozó Exchange-hozzáférési szabályok
+description: Exchange ActiveSync hozzáférési szabályok EAS-eszközök kapcsolódásának engedélyezéséhez vagy letiltásához
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 097d6ee8a7ad6752d48f554ee0bc9b3729311fe2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Mobileszközökre vonatkozó Exchange-hozzáférési szabályok
 
@@ -29,7 +29,7 @@ A mobileszközökre vonatkozó Exchange-hozzáférési szabályok határozzák m
 
 Az alábbi táblázat az Exchange ActiveSync által felügyelt hozzáférési szinteket tartalmazza:
 
-|Hozzáférési szint|Leírás|
+|Hozzáférési szint|Description|
 |----------------|---------------|
 |**Az eszközök hozzáférhetnek az Exchange-hez**|Az *engedélyezett hozzáférés* állapotában a mobileszköz szinkronizálhat az Exchange ActiveSynckel, és kapcsolódhat az Exchange-kiszolgálóhoz az e-mailek lekérése, valamint a Naptár, a Névjegyek, a Feladatok és a Megjegyzések kezelése céljából. Ez mindaddig így marad, amíg az eszköz megfelel valamely, az Exchange-ben korábban konfigurált Exchange ActiveSync postaláda-házirendnek, kivéve, ha a felhasználót vagy az adott mobileszközt az Exchange-rendszergazda letiltotta.|
 |**Az eszközök nem férhetnek hozzá az Exchange-hez**|A *letiltott hozzáférés* állapotában a mobileszközök le vannak tiltva, és az Exchange-kiszolgálóhoz való kapcsolódásuk nem engedélyezett. Az eszközök egy HTTP 403 Tiltott hibaüzenetet kapnak. A felhasználó egy e-mailt kap az Exchange-kiszolgálótól, amely értesíti, hogy a mobileszköz postaládához való hozzáférése le van tiltva. Ez az üzenet a zárolt mobileszközön nem jelenhet meg. A **Felhasználói értesítés beállítása** feladatban egyéni szöveget adhat hozzá ehhez az üzenethez, és utasításokkal láthatja el azokat a felhasználókat, akiknek az eszközei zárolva lettek. |
@@ -37,7 +37,7 @@ Az alábbi táblázat az Exchange ActiveSync által felügyelt hozzáférési sz
 
 A hozzáférési stratégia egy **alapértelmezett szabály** és a **platformkivételek** kombinációját jelenti, amely minden, az Exchange-hez csatlakozó mobileszközre érvényes. Az alábbi táblázat felsorol néhány példát a hozzáférési stratégiákra.
 
-|Hozzáférési stratégia|Leírás|
+|Hozzáférési stratégia|Description|
 |-------------------|---------------|
 |Engedélyezési lista|Az *engedélyezési listák* segítségével hozzáférést biztosíthat bizonyos ismert eszközöknek, míg minden más eszköz hozzáférését korlátozhatja. Ehhez egyéni szabályokat kell létrehozni, hogy a kívánt eszközplatformok hozzáférjenek a felhasználók postaládáihoz. Miután egy ilyen szabályt létrehozott, az alapértelmezett hozzáférési szabályt úgy kell beállítania, hogy az letiltson vagy karanténba helyezzen minden egyéb eszközt. Egy új eszköz engedélyezési listához való hozzáadásához hozzon létre egy új egyéni szabályt.|
 |Tiltólista|A *tiltólisták* segítségével alapértelmezés szerint engedélyezheti a hozzáférést minden eszköznek, de letilthatja azon eszközök hozzáférését, amelyeknél nem szeretné, hogy hozzáférjenek a szervezetéhez. Tiltólistát egyéni szabályok megalkotásával lehet létrehozni, amelyek letiltják azokat a platformokat, amelyek számára nem szeretné lehetővé tenni a szervezet postaládáival való szinkronizálást. Az alapértelmezett szabályt úgy ajánlatos beállítani, hogy engedélyezze a hozzáférést minden olyan eszköznek, amelyet a meglévő szabályok nem kifejezetten tiltanak. Új eszköz vagy eszközök tiltólistához való hozzáadásához hozzon létre egy új egyéni szabályt.|

@@ -1,23 +1,23 @@
 ---
-title: "Egyéni beállítások a Microsoft Intune-ban Windows Holographic for Business esetén"
-titlesuffix: 
-description: "A Windows Holographic for Business egyéni profiljaiban használható egyéni beállítások ismertetése."
-keywords: 
+title: Egyéni beállítások a Microsoft Intune-ban Windows Holographic for Business esetén
+titlesuffix: ''
+description: A Windows Holographic for Business egyéni profiljaiban használható egyéni beállítások ismertetése.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>A Windows Holographic for Business rendszert futtató eszközökre vonatkozó egyéni eszközbeállítások a Microsoft Intune-ban
 
@@ -58,7 +58,7 @@ Az alábbi beállítások a Windows Holographic for Business rendszert futtató 
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Karakterlánc<br>URL – Az eszköz frissítéseket keres a WSUS-kiszolgálótól a megadott URL-címen.<br>Nincs beállítva – Az eszköz a Microsoft Update szolgáltatásból keres frissítéseket.|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Egész szám<br>0 – Nincs konfigurálva. Az eszköz minden alkalmazható frissítést telepít.<br>1 – Az eszköz csak azokat a frissítéseket telepíti, amelyek alkalmazhatók és a jóváhagyott frissítések listáján is szerepelnek. Állítsa ezt a szabályzatot 1 értékre, ha azt szeretné, hogy az informatikai részleg vezérelje az eszközfrissítések üzembe helyezését, például ha az üzembe helyezés előtt tesztelésre van szükség.|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Fontos**<br>El kell olvasnia és el kell fogadnia a végfelhasználói nevében a frissítési licencfeltételeket. Amennyiben ezt nem teszi meg, az a jogi vagy szerződéses kötelezettségek megszegésének számít.|A frissítések jóváhagyásának és a licencfeltételek a végfelhasználók nevében történő elfogadásának csomópontja.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Fontos**<br>Az AppLocker CSP-cikk escape-karakterrel jelölt XML-példákat használ. A beállítások egyéni Intune-profilokkal való konfigurálásához hagyományos XML-t kell használnia.|Karakterlánc<br>További információt az [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) cikkben találhat. 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Fontos**<br>Az AppLocker CSP-cikk escape-karakterrel jelölt XML-példákat használ. A beállítások egyéni Intune-profilokkal való konfigurálásához hagyományos XML-t kell használnia.|Karakterlánc<br>További információt az [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) cikkben találhat.
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>A konfigurálható szabályzatok megkeresése
 

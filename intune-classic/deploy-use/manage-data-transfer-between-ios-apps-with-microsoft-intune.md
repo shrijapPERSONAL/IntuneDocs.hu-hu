@@ -1,25 +1,25 @@
 ---
-title: "iOS-alkalmazások közti adatátvitel kezelése"
-description: "Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez."
-keywords: 
+title: iOS-alkalmazások közti adatátvitel kezelése
+description: Olvassa el ezt a témakört az iOS Megnyitás a követezőben funkciója használatának, valamint az alkalmazások közötti adatátvitel kezeléséhez szükséges mobilalkalmazás-kezelési szabályzatok megismeréséhez.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal
 
@@ -108,5 +108,5 @@ Először [hozzon létre és telepítsen egy alkalmazásvédelmi szabályzatot](
 
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal a Microsoft Intune segítségével](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
