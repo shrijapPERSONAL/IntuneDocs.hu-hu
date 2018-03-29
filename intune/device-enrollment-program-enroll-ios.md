@@ -1,25 +1,25 @@
 ---
-title: "iOS-eszközök regisztrálása a Készülékregisztrációs programmal"
+title: iOS-eszközök regisztrálása a Készülékregisztrációs programmal
 titlesuffix: Microsoft Intune
-description: "Céges tulajdonú iOS-es eszközök regisztrálása az Apple eszközbeléptetési programjával (DEP)"
-keywords: 
+description: Céges tulajdonú iOS-es eszközök regisztrálása az Apple eszközbeléptetési programjával (DEP)
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple Készülékregisztrációs programjával
 
@@ -42,10 +42,10 @@ Ez a témakör az Apple [készülékregisztrációs programja (DEP)](https://dep
 
 DEP-regisztráció engedélyezéséhez az Intune- és az Apple DEP-portált is használnia kell. Ahhoz, hogy az eszközök felügyeletét az Intune-hoz rendelhesse, szükség van a sorozatszámok vagy a beszerzési rendelésszámok listájára. Olyan DEP-regisztrációs profilokat hoz létre, amelyek tartalmazzák a regisztráció során az eszközre vonatkozó beállításokat.
 
-A DEP-regisztráció egyébként nem működik az [eszközregisztráció-kezelővel](device-enrollment-manager-enroll.md).
+A DEP-regisztráció nem működik az [eszközregisztráció-kezelővel](device-enrollment-manager-enroll.md). Továbbá a macOS jelenleg nem támogatja a DEP-et.
 
 ## <a name="what-is-supervised-mode"></a>A felügyelt mód ismertetése
-Az Apple az iOS 5-tel vezette be a felügyelt módot. A felügyelt módon futtatott iOS-eszközök (készülékek) működése nagyobb mértékben felügyelhető. Így kifejezetten hasznos céges tulajdonú készülékek üzemeltetése esetén. Az Intune az Apple készülékregisztrációs program (DEP) keretében biztosít lehetőséget az eszközök felügyelt módú üzemeltetésének beállítására. 
+Az Apple az iOS 5-tel vezette be a felügyelt módot. A felügyelt módon futtatott iOS-eszközök (készülékek) működése nagyobb mértékben felügyelhető. Így kifejezetten hasznos céges tulajdonú készülékek üzemeltetése esetén. Az Intune az Apple készülékregisztrációs program (DEP) keretében biztosít lehetőséget az eszközök felügyelt módú üzemeltetésének beállítására.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -172,7 +172,7 @@ Miután az Intune engedélyt kapott az eszközei felügyeletére, szinkronizálh
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
   ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
-  
+
 2. A **Szinkronizálás** panelen válassza a **Szinkronizálási kérelem** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
    ![A Szinkronizálás panel a Szinkronizálás kérése hivatkozás kijelölésével](./media/enrollment-program-device-request-sync.png)
@@ -206,6 +206,4 @@ Ahhoz, hogy egy eszközt regisztrálni lehessen, először hozzá kell rendelni 
 ## <a name="distribute-devices"></a>Eszközök terjesztése
 Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte visszaállítják az eszköz gyári beállításait.
 
-Lásd: [iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs programmal](/intune-user-help/enroll-your-device-dep-ios). 
-
-
+Lásd: [iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs programmal](/intune-user-help/enroll-your-device-dep-ios).

@@ -1,25 +1,25 @@
 ---
-title: "Gyakori kérdések az MAM-ről és az alkalmazásvédelemről"
-description: "Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazásvédelemmel kapcsolatos gyakori kérdésekre adott válaszokat ismerteti."
-keywords: 
+title: Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
+description: Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazásvédelemmel kapcsolatos gyakori kérdésekre adott válaszokat ismerteti.
+keywords: ''
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -37,7 +37,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 **Milyen eszközkonfigurációkat támogat az MAM?** Az Intune MAM két konfigurációt támogat:
   1. **Intune MDM + MAM**: az MAM első indításakor támogatott első konfiguráció. A rendszergazda csak az Intune mobileszköz-kezelésben (MDM) regisztrált eszközökön felügyelheti az MAM- és alkalmazásvédelmi szabályzatokat használó alkalmazásokat. Az MDM + MAM-et használó alkalmazások felügyeletéhez a https://manage.microsoft.com webhelyen elérhető önálló Intune-konzolra van szükség.
 
-  2. **MAM eszközregisztráció nélkül:** az eszközregisztráció nélküli MAM (MAM-WE) révén a rendszergazda felügyelheti az Intune MDM-ben nem regisztrált eszközökön található, MAM- és alkalmazásvédelmi szabályzatot használó alkalmazásokat. Ez azt jelenti, hogy az Intune csak külső EMM-szolgáltatóknál regisztrált eszközökön felügyelheti az alkalmazásokat. Az MAM-WE-t használó alkalmazások felügyeletéhez a http://portal.azure.com webhelyen található Azure-portálon elérhető Intune-konzol használata javasolt.
+  2. **MAM eszközregisztráció nélkül:** az eszközregisztráció nélküli MAM (MAM-WE) révén a rendszergazda felügyelheti az Intune MDM-ben nem regisztrált eszközökön található, MAM- és alkalmazásvédelmi szabályzatot használó alkalmazásokat. Ez azt jelenti, hogy az Intune csak külső EMM-szolgáltatóknál regisztrált eszközökön felügyelheti az alkalmazásokat. Az MAM-WE-t használó alkalmazások felügyeletéhez a http://portal.azure.com címen található Azure Portalon elérhető Intune-konzol használata javasolt.
 
 
 ## <a name="app-protection-policies"></a>Alkalmazásvédelmi szabályzatok

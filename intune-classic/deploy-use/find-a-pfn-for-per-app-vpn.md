@@ -1,25 +1,25 @@
 ---
-title: "Csomagcsaládnév (FPN) keresése alkalmazásonkénti VPN-hez"
-description: "PFN megkeresése egy alkalmazásonkénti VPN konfigurálásához."
-keywords: 
+title: Csomagcsaládnév (FPN) keresése alkalmazásonkénti VPN-hez
+description: PFN megkeresése egy alkalmazásonkénti VPN konfigurálásához.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4b5d71e46fbc78ebadf52e96bb75eedecc291ee
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-konfigurációkhoz
 
@@ -72,10 +72,10 @@ A OneNote-ra vonatkozóan lekért adatok a következők:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>A PFN megkeresése, ha az alkalmazás nincs telepítve a számítógépre
 
-1.  Nyissa meg a https://www.microsoft.com/store/apps webhelyet.
+1.  Lépjen a https://www.microsoft.com/store/apps lapra.
 2.  Írja be az alkalmazás nevét a keresősávba. A jelen példában keressen rá a OneNote-ra.
 3.  Válassza az alkalmazásra mutató hivatkozást. Figyelje meg, hogy az URL-cím végén egy több betűből álló betűsorozat található. A példánkban az URL-cím a következőképpen néz ki `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
-4.  Egy másik lapon illessze be a következő URL-címet: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Cserélje az `<app id>` azonosítót a https://www.microsoft.com/store/apps webhelyről származó alkalmazásazonosítóra – vagyis a 3. lépésben elért URL-cím végén található betűsorra. Ebben a példában, a OneNote esetében a következő URL-t kell beillesztenie: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+4.  Egy másik lapon illessze be a következő URL-címet: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Cserélje le az `<app id>` azonosítót a https://www.microsoft.com/store/apps webhelyről származó alkalmazásazonosítóra – vagyis a 3. lépésben ismertetett, az URL-cím végén található betűsorra. Ebben a példában, a OneNote esetében a következő URL-t kell beillesztenie: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 A Microsoft Edge böngészőben megjelennek a kívánt adatok; az Internet Explorerben válassza a **Megnyitás** parancsot az adatok megtekintéséhez. A PFN értéke az első sorban található. A jelen példában az eredmények a következők:
 

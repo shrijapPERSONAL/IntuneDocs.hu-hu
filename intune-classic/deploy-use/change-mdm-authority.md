@@ -1,24 +1,24 @@
 ---
-title: "A Configuration Manager beállítása mobileszköz-felügyeleti szolgáltatóként (hibrid mobileszköz-kezelés)"
-description: "Megtudhatja, hogyan módosíthatja az MDM-szolgáltatót Intune-ról (önálló) Configuration Managerre (hibrid)."
-keywords: 
+title: A Configuration Manager beállítása mobileszköz-felügyeleti szolgáltatóként (hibrid mobileszköz-kezelés)
+description: Megtudhatja, hogyan módosíthatja az MDM-szolgáltatót Intune-ról (önálló) Configuration Managerre (hibrid).
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>Az MDM-szolgáltató módosítása
 A Configuration Manager 1610-es verziójától kezdődően anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt. Az ebben a témakörben található lépésekkel anélkül módosíthatja egy meglévő Microsoft Intune-bérlő Intune beállítását és az MDM-szolgáltató **Microsoft Intune** (önálló) beállítását **Configuration Manager** (hibrid MDM) értékre, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt.
@@ -134,7 +134,7 @@ Az MDM-szolgáltató váltása után tekintse át az alábbi lépéseket:
     - E-mail-profil
     - VPN-profil
     - Tanúsítványprofil
-    - Wi-Fi-profil
+    - Wi-Fi profil
     - Konfigurációs profilok
 - Az új MDM-szolgáltatóra való váltás után a Microsoft Intune felügyeleti konzol megfelelőségi adatainak akár egy hétre is szükségük lehet, hogy pontosan jelenjenek meg. Az Azure Active Directory és az eszköz megfelelőségi állapotai azonban pontosak maradnak, az eszköz így továbbra is védelem alatt áll.
 - Ügyeljen rá, hogy a meglévő beállításokat felülírandó új beállítások ugyanazzal a névvel rendelkezzenek, mint a korábbiak. Így az új beállítások biztosan felülírják a korábbiakat. Ellenkező esetben előfordulhat, hogy az eszközökön felesleges profilok és szabályzatok maradnak.    

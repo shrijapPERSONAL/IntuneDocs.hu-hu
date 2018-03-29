@@ -1,25 +1,25 @@
 ---
-title: "Android- és Samsung KNOX-szabályzatbeállítások"
-description: "Szabályzatok létrehozása, amelyek vezérlik a beállításokat és a szolgáltatásokat az Intune-nal felügyelt Android-eszközökön."
-keywords: 
+title: Android- és Samsung KNOX-szabályzatbeállítások
+description: Szabályzatok létrehozása, amelyek vezérlik a beállításokat és a szolgáltatásokat az Intune-nal felügyelt Android-eszközökön.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Android- és Samsung KNOX Standard-eszközök konfigurációs szabályzatának beállításai a Microsoft Intune-ban
 
@@ -38,7 +38,7 @@ Az Intune **Androidhoz készült általános konfigurációs szabályzatát** a 
 -   **Megfelelő és nem megfelelő alkalmazások** – egy listában megadhatja a vállalatnál megfelelőnek vagy nem megfelelőnek ítélt alkalmazásokat. Android és iOS rendszerű eszközökön a **Jelentés a szabályzatnak nem megfelelő alkalmazásokról** beállítással ellenőrizhető, hogy a listában megadott alkalmazások kompatibilisek-e a felhasználók által telepített alkalmazásokkal. A jelentés ugyanakkor nem képes ténylegesen letiltani az alkalmazás telepítését.
 
 > [!TIP]
-> Beállíthatja, hogy a felhasználóknak kötelező legyen elfogadni, hogy az eszközükön lévő valamennyi alkalmazás – így személyes alkalmazásaik is – ellenőrizve legyenek, és a nem megfelelő alkalmazásokat a rendszer letiltsa vagy nem megfelelőként jelentse. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a vállalati portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információt a [Használati feltételek házirend-beállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md) című témakörben találhat.
+> Beállíthatja, hogy a felhasználóknak kötelező legyen elfogadni, hogy az eszközükön lévő valamennyi alkalmazás – így személyes alkalmazásaik is – ellenőrizve legyenek, és a nem megfelelő alkalmazásokat a rendszer letiltsa vagy nem megfelelőként jelentse. A felhasználóknak el kell fogadniuk ezeket a feltételeket ahhoz, hogy beléptethessék eszközüket, és a céges portál segítségével beszerezhessék az alkalmazásokat. A használati feltételekkel kapcsolatos további információt a [Használati feltételek házirend-beállításai a Microsoft Intune-ban](terms-and-condition-policy-settings-in-microsoft-intune.md) című témakörben találhat.
 
 Ha a keresett beállítás nem szerepel ebben a témakörben, valószínűleg létre tudja hozni egy egyéni Android-szabályzattal, amely lehetővé teszi az OMA-URI-beállítások használatát az eszköz vezérlésére. További információkért olvassa el a jelen témakörben alább található [Egyéni szabályzatbeállítások](#custom-policy-settings) című részt.
 
@@ -175,7 +175,7 @@ A [Google Play Alkalmazások szakaszában](https://play.google.com/store/apps) k
 
 Nyissa meg az alkalmazás telepítési lapját, és másolja az URL-címet a vágólapra. Most ezt a címet felhasználhatja URL-címként a kompatibilis vagy a nem kompatibilis alkalmazások listájában.
 
-Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre. A használt URL-cím a következő: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Például: Keressen rá a Google Play-ben a Microsoft Office Mobile kifejezésre. Az Ön által használt URL-cím a következő lesz: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## <a name="custom-policy-settings"></a>Egyéni szabályzatbeállítások
 A Microsoft Intune **Androidos egyéni konfigurációs szabályzatával** OMA-URI-beállításokat léptethet érvénybe, amelyekkel vezérelhetők az Android-eszközökön elérhető szolgáltatások. Ezek szabványos beállítások, amelyeket számos mobileszköz-gyártó alkalmaz az eszközök szolgáltatásainak vezérlésére.
@@ -212,5 +212,5 @@ Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli m
 
 Megnézheti a támogatott Samsung KNOX-eszközök és az [Intune által támogatott eszközök](/intune/supported-devices-browsers.md#intune-supported-devices) listáját.
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,25 +1,25 @@
 ---
-title: "iOS-es szabályzatbeállítások"
-description: "Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére."
-keywords: 
+title: iOS-es szabályzatbeállítások
+description: Szabályzatok létrehozása Intune-ban felügyelt iOS-eszközök beállításainak és funkcióinak felügyeletére.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-szabályzatbeállítások a Microsoft Intune-ban
 
@@ -222,7 +222,7 @@ Ha meg szeretné adni egy alkalmazás URL-címét a szabályzatnak megfelelő é
 
 2. Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet a megfelelő és nem megfelelő alkalmazások listájának, illetve a kioszkmódban futtatni kívánt alkalmazásnak a konfigurálásához.
 
-**Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Ebben az esetben a következő URL-t használja: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Például:** Keressen rá az **iPad Microsoft Word**kifejezésre. Az URL-cím, melyet használni fog a következő lesz: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
@@ -383,5 +383,5 @@ Mielőtt elkezdené, telepítenie kell az Apple Configurator eszközt, és létr
 |**Konfigurációs profil fájlja**|Válassza az **Importálás** elemet, majd keresse meg az Apple Configurator eszközzel létrehozott konfigurációs profilt. **Megjegyzés:** Ellenőrizze, hogy az Apple Configurator eszközből exportált beállítások kompatibilisek-e azon eszközök iOS-verziójával, amelyekre az egyéni iOS-házirendet telepíti. A nem kompatibilis beállításokból fakadó problémák megoldásával kapcsolatos információkat az [Apple Developer](https://developer.apple.com/) webhelyről letölthető **Configuration Profile Reference** és **Mobile Device Management Protocol Reference** című (angol nyelvű) útmutatókban talál.|
     |**Konfigurációs profil adatai**|Megjeleníti az importált konfigurációs profil XML-kódját.|
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

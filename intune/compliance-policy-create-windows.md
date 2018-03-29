@@ -1,23 +1,22 @@
 ---
-title: "Windows-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban"
-titleSuffix: 
-description: "Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune Windows-eszközmegfelelőségi szabályzatot."
-keywords: 
+title: Windows-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune Windows-eszközmegfelelőségi szabályzatot.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban
 
@@ -177,7 +176,7 @@ A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állap
 
 - **Az operációs rendszer szükséges minimális verziója:** – Windows 8.1 és Windows 10 rendszeren támogatott.
 
-Az értéket „főverzió.alverzió.build” formában adja meg. A verziószámnak meg kell egyeznie a ```winver``` parancs által visszaadott verzióval.
+Itt adja meg a major.minor.build.CU számot. A verziószámnak meg kell egyeznie a ```winver``` parancs által visszaadott verzióval.
 
 Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 

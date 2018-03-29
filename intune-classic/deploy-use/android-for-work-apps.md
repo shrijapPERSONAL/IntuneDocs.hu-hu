@@ -1,25 +1,25 @@
 ---
-title: "Alkalmazások telepítése Android for Work-alapú eszközökre"
-description: "Itt megtudhatja, hogyan szinkronizáljon és telepítsen alkalmazásokat Android for Work-eszközökre a Google Play for Work áruházból."
-keywords: 
+title: Alkalmazások telepítése Android for Work-alapú eszközökre
+description: Itt megtudhatja, hogyan szinkronizáljon és telepítsen alkalmazásokat Android for Work-eszközökre a Google Play for Work áruházból.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Alkalmazások telepítése Android for Work-eszközökre | Microsoft Intune
 
@@ -52,8 +52,8 @@ Győződjön meg róla, hogy az Intune-t és az Android for Work-öt is beállí
 1. Nyissa meg a Google Play Developer Console-t a [play.google.com/apps/publish](https://play.google.com/apps/publish) címen.
 2. Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot. Az első bejelentkezés előtt regisztrálni kell, továbbá megfizetni a Google Developer-program regisztrációs díját.
 3. A konzolon válassza az **Add new application** (Új alkalmazás hozzáadása) elemet.
-4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját cég tagjai számára (<cég neve>)) lehetőséget.<br>
-  ![Az alkalmazás elérhetővé tétele csak a saját szervezet számára beállítás](media/restrict.png)<br>
+4. Az alkalmazások és azok információinak feltöltése ugyanúgy történik, mint bármelyik alkalmazás közzététele a Google Play áruházban. Ugyanakkor ki kell választani az **Only make this application available to my organization (<*organization name*>)** (Az alkalmazás elérhetővé tétele csak a saját cég tagjai számára (<cég neve>)) lehetőséget:<br>
+  ![Az alkalmazás elérhetővé tétele csak a saját cég számára beállítás](media/restrict.png)<br>
 Ezzel a művelettel gondoskodhat arról, hogy az alkalmazás csak a munkahelye számára legyen elérhető, a Google Play Áruház nyilvános területein ne.
 További információt az androidos alkalmazások feltöltéséről és közzétételéről a [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469) súgóközpontban talál.
 5. Miután feltöltötte az alkalmazást, lépjen be a [Google Play for Work áruházba](https://play.google.com/work). Ugyanazzal a fiókkal jelentkezzen be, amellyel beállította az Intune és az Android for Work közötti kapcsolatot.
@@ -82,7 +82,7 @@ Ha az alkalmazás fejlesztője megváltozott engedélyekkel rendelkező új alka
 
 Ellenőrizze rendszeresen a felügyelt Google Play-konzolon az új alkalmazásengedélyeket. Beállíthatja, hogy a Google Play e-mailt küldjön Önnek vagy másoknak, ha új engedélyekre van szükség egy jóváhagyott alkalmazáshoz. Ha egy alkalmazás a hozzárendelése után sincs telepítve az eszközökön, az alábbi lépéseket követve ellenőrizheti, hogy vannak-e új alkalmazásengedélyek:
 
-1. Keresse fel a http://play.google.com/work webhelyet
+1. Látogasson el a http://play.google.com/work címre
 2. Jelentkezzen be azzal a Google-fiókkal, amelyet az alkalmazások közzétételénél és jóváhagyásánál használt.
 3. A **Frissítések** lapon ellenőrizze, hogy szükséges-e alkalmazásokat frissíteni.  A listában szereplő összes alkalmazás új engedélyeket kér, és a hozzárendelés addig nem lehetséges, amíg az engedélyeket meg nem adják.  
 

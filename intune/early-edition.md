@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>A Microsoft Intune előzetes kiadása – 2018. március
 
@@ -51,11 +51,11 @@ A helyszíni Intune Exchange Connector segítségével annak alapján kezelheti 
 Az iOS-hez készült Cisco AnyConnect új VPN-profiljai a Cisco AnyConnect 4.0.7x vagy újabb verzióival működnek. A meglévő iOS Cisco AnyConnect VPN-profiljai a **Cisco Legacy AnyConnect** (Cisco örökölt AnyConnect) nevet kapják, és továbbra is úgy működnek a Cisco AnyConnect 4.0.5x verziójával, mint eddig.
 
 > [!NOTE]
-> Ez a változás csak az iOS rendszerre érvényes, az Android, az Android for Work és a macOS rendszerekhez továbbra is csak egy Cisco AnyConnect-lehetőség érhető el. 
+> Ez a változás csak az iOS rendszerre érvényes, az Android, az Android for Work és a macOS rendszerekhez továbbra is csak egy Cisco AnyConnect-lehetőség érhető el.
 
 #### <a name="more-information"></a>További információ
 
-Az új alkalmazás támogatásához új iOS Cisco AnyConnect VPN-profilt kell létrehoznia, mert az új Cisco AnyConnect és a Cisco Legacy AnyConnect két különböző alkalmazás. Ha saját környezetben kezeli az AnyConnect-ügyfelet, az új Cisco AnyConnect-alkalmazást is üzembe kell helyeznie. Frissítés végrehajtásához törölnie kell a Cisco Legacy AnyConnect VPN-profilt is, továbbá el kell távolítania a Cisco Legacy AnyConnect-alkalmazást. 
+Az új alkalmazás támogatásához új iOS Cisco AnyConnect VPN-profilt kell létrehoznia, mert az új Cisco AnyConnect és a Cisco Legacy AnyConnect két különböző alkalmazás. Ha saját környezetben kezeli az AnyConnect-ügyfelet, az új Cisco AnyConnect-alkalmazást is üzembe kell helyeznie. Frissítés végrehajtásához törölnie kell a Cisco Legacy AnyConnect VPN-profilt is, továbbá el kell távolítania a Cisco Legacy AnyConnect-alkalmazást.
 
 A hálózati hozzáférés-vezérlő (NAC) integrációja az eredeti kiadásban nem működik az új AnyConnect-ügyféllel. Jelenleg is dolgozunk a Cisco közreműködésével a NAC-integráció elérhetővé tételén egy későbbi kiadásban.
 
@@ -64,7 +64,7 @@ A hálózati hozzáférés-vezérlő (NAC) integrációja az eredeti kiadásban 
 A függetlenítés (jailbreakelés) bővített észlelése egy új megfelelőségi beállítás, amelynek segítségével az Intune hatékonyabban értékelheti a feltört eszközöket. A beállítás révén az eszköznek gyakrabban, a helyalapú szolgáltatások és az akkumulátor fokozott használatával kell bejelentkeznie az Intune-ba.
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Kötelező üzletági (LOB) alkalmazások üzembe helyezésének lehetősége az összes felhasználó számára Windows 10 rendszerű asztali eszközökön <!-- 1627835 RS4 -->
-Az ügyfelek eszközkörnyezetben helyezhetik üzembe a kötelező üzletági Windows 10 rendszerű alkalmazásokat. Így az alkalmazások az eszköz összes felhasználója számára elérhetővé válnak. Ez csak Windows 10 rendszerű asztali eszközökre vonatkozik. 
+Az ügyfelek eszközkörnyezetben helyezhetik üzembe a kötelező üzletági Windows 10 rendszerű alkalmazásokat. Így az alkalmazások az eszköz összes felhasználója számára elérhetővé válnak. Ez csak Windows 10 rendszerű asztali eszközökre vonatkozik.
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>Lejáró üzletági (LOB) alkalmazások az Intune-ban <!-- 748789 -->
 Az Intune az Azure Portalon keresztül értesítést küld a hamarosan lejáró üzletági alkalmazásokról. Az üzletági alkalmazás új verziójának letöltésekor az Intune eltávolítja a lejárati értesítést az alkalmazáslistáról.
@@ -73,10 +73,10 @@ Az Intune az Azure Portalon keresztül értesítést küld a hamarosan lejáró 
 A Céges portálon az 1703-as vagy annál újabb verziójú Windows 10 rendszerrel eszközt regisztráló ügyfelek az alkalmazás elhagyása nélkül hajthatják végre a regisztráció első lépését.
 
 ### <a name="new-management-name-column----1333586---"></a>Új oszlop Felügyeleti név elnevezéssel <!-- 1333586 -->
-Az Eszközök panelen új oszlop jelenik meg, **Felügyeleti név** elnevezéssel. Ez egy automatikusan létrehozott, nem szerkeszthető név, amely az alábbi képlet alapján rendelődik hozzá az egyes eszközökhöz: 
+Az Eszközök panelen új oszlop jelenik meg, **Felügyeleti név** elnevezéssel. Ez egy automatikusan létrehozott, nem szerkeszthető név, amely az alábbi képlet alapján rendelődik hozzá az egyes eszközökhöz:
 - Az összes eszköz alapértelmezett neve: <username>_<devicetype>_<enrollmenttimestamp>
-- Tömegesen hozzáadott eszközökhöz: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
- 
+- Tömegesen hozzáadott eszközökhöz: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+
 Ez egy választható oszlop az Eszközök panelen. Alapértelmezésben nem érhető el, csak az Oszlopválasztó használatával lehet hozzáférni. Az új oszlop nincs hatással az eszköz nevére.
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Új beállítások a Windows Defender biztonsági központ értesítő eszközének konfigurációs profilján <!-- 1631906 -->
@@ -107,19 +107,19 @@ Ezek a beállítások az **Eszközkonfiguráció** -> **Profil létrehozása** -
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>Mac-alkalmazástűzfal konfigurálása <!-- 1690461 -->
 
 Lehetőség nyílik a Mac-alkalmazástűzfal konfigurálására. Ennek révén alkalmazásonként, és nem portonként szabályozhatja a kapcsolódásokat. Így könnyebb kihasználni a tűzfalvédelem előnyeit, és meggátolni, hogy kéretlen alkalmazások foglalják le az engedélyezett alkalmazások számára megnyitott hálózati portokat.
- 
+
 Ez a funkció az **Eszközkonfiguráció** -> **Profil létrehozása** -> **macOS** -> **Endpoint protection** területen található meg.
 
 A Tűzfal beállítás engedélyezése után két stratégia szerint konfigurálhatja a tűzfalat:
 
 - Minden bejövő kapcsolat letiltása
 
-   A megcélzott eszközökön letilthat minden bejövő kapcsolatot. Ha emellett dönt, az összes alkalmazás számára le lesznek tiltva a bejövő kapcsolatok. 
+   A megcélzott eszközökön letilthat minden bejövő kapcsolatot. Ha emellett dönt, az összes alkalmazás számára le lesznek tiltva a bejövő kapcsolatok.
 
 - Egyes alkalmazások engedélyezése vagy letiltása
 
    A megadott alkalmazások számára engedélyezheti vagy tilthatja a bejövő kapcsolatok fogadását. A rejtett üzemmód engedélyezésével megakadályozhatja a válaszadást az ellenőrzési kérelmekre.
- 
+
 #### <a name="more-information"></a>További információ
 
 - Minden bejövő kapcsolat letiltása
@@ -134,7 +134,7 @@ A Tűzfal beállítás engedélyezése után két stratégia szerint konfigurál
 - Rejtett üzemmód
 
    Ha ezt az üzemmódot engedélyezi, a számítógép nem fog válaszolni az ellenőrzési kérelmekre. A számítógép továbbra is válaszol az engedélyezett alkalmazásokhoz tartozó kérelmekre. Az olyan váratlan kérelmeket, mint az ICMP (ping), a rendszer figyelmen kívül hagyja.
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Az Androidhoz készült Céges portál alkalmazás Súgó és Visszajelzés funkciójának frissítése <!--1631531 -->
 
@@ -143,16 +143,16 @@ Az androidos alkalmazások ajánlott eljárásaihoz igazodva hamarosan frissüln
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Mennyiségi vásárlási programon (VPP) belül beszerzett e-könyvekhez rendelhető egyéni könyvkategóriák <!-- 1488911 -->
 Egyéni e-könyv-kategóriákat hozhat létre, majd hozzájuk rendelheti a mennyiségi vásárlási programon belüli e-könyveket. A végfelhasználók egyaránt látni fogják az újonnan létrehozott e-könyv-kategóriákat és a hozzájuk rendelt könyveket.
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Frissített vizualizációk az Androidhoz készült Céges portálhoz <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>A HoloLens és a Surface Hub most megjelenik az eszközlistákban <!--1725868-->
 
-Az Androidhoz készült Céges portál alkalmazás az Android [Material Design](https://material.io/) irányelveihez igazodva frissülni fog. Az új ikonokat az alkalmazás kiadásával egyidőben, az [Újdonságok az alkalmazások felhasználói felületén](whats-new-app-ui.md) című cikkben tesszük közzé. 
+Az Androidhoz készült Céges portál alkalmazás ezentúl támogatja az Intune-ban regisztrált HoloLens- és Surface Hub-eszközök megjelenítését.
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Edge-mobiltámogatás az Intune alkalmazásvédelmi szabályzataihoz <!-- 1817882 -->
 
 A Microsoft Edge mobilböngésző támogatja az Intune-ban meghatározott alkalmazásvédelmi szabályzatokat.
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Teljesen megkülönböztető név használata az SCEP-tanúsítvány tulajdonosaként <!--2221763 eeready-->
-SCEP-tanúsítványprofil létrehozásakor meg kell adnia a tulajdonos nevét. Ehhez használhatja a teljesen megkülönböztető nevet. A **Tulajdonos neve** területen válassza az **Egyéni** lehetőséget, majd írja be a következőt: `CN={{OnPrem_Distinguished_Name}}`. Az `{{OnPrem_Distinguished_Name}}` változó használatához ügyeljen rá, hogy az `onpremisesdistingishedname` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével. 
+SCEP-tanúsítványprofil létrehozásakor meg kell adnia a tulajdonos nevét. Ehhez használhatja a teljesen megkülönböztető nevet. A **Tulajdonos neve** területen válassza az **Egyéni** lehetőséget, majd írja be a következőt: `CN={{OnPrem_Distinguished_Name}}`. Az `{{OnPrem_Distinguished_Name}}` változó használatához ügyeljen rá, hogy az `onpremisesdistingishedname` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével.
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Az iOS-eszközöktől 15 percenként PIN-kódot kér a rendszer <!--1550837 eeready-->
 Miután megfelelőségi vagy konfigurációs szabályzatot alkalmazott egy iOS-eszközre, a felhasználóktól 15 percenként egy PIN-kódot kér a rendszer. A kérések mindaddig megjelennek, amíg a felhasználó nem ad meg egy PIN-kódot.
@@ -169,11 +169,11 @@ A következőkre vonatkozik: Android munkahelyi profilos eszközök Android v6.0
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>Az automatikus frissítések ütemezése <!--1805514 -->
 
-Az Intune-nal igény szerint telepítheti az automatikus frissítéseket a [Windows frissítési köreinek beállításaival](windows-update-for-business-configure.md). Ismétlődő frissítéseket ütemezhet, például a hetet, a napot és az időt. 
+Az Intune-nal igény szerint telepítheti az automatikus frissítéseket a [Windows frissítési köreinek beállításaival](windows-update-for-business-configure.md). Ismétlődő frissítéseket ütemezhet, például a hetet, a napot és az időt.
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>Az eszköz újraindításakor végzett ellenőrzések letiltása <!--1805490 -->
 
-Az Intune-nal vezérelheti a [kezelt szoftverfrissítéseket](windows-update-for-business-configure.md). Az **Újraindítási ellenőrzések** tulajdonság alapértelmezés szerint hozzá lesz adva és engedélyezve lesz. Az eszközök újraindításakor végzett (például az aktív felhasználókra vagy az akkumulátor szintjére vonatkozó) rendszeres ellenőrzések átugrásához válassza a **Kihagyás** lehetőséget. 
+Az Intune-nal vezérelheti a [kezelt szoftverfrissítéseket](windows-update-for-business-configure.md). Az **Újraindítási ellenőrzések** tulajdonság alapértelmezés szerint hozzá lesz adva és engedélyezve lesz. Az eszközök újraindításakor végzett (például az aktív felhasználókra vagy az akkumulátor szintjére vonatkozó) rendszeres ellenőrzések átugrásához válassza a **Kihagyás** lehetőséget.
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Az Enrollment Overview (Regisztráció áttekintése) lapon megtekintheti a regi
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>A Céges portál témáinak testreszabása hexadecimális kódokkal <!--1049561 -->
 
-Hexadecimális kódokkal testreszabhatja a témák színeit a Céges portál alkalmazásaiban. A hexadecimális kód megadásakor az Intune meghatározza a szövegszín és a háttérszín közötti legnagyobb kontrasztot eredményező szövegszínt a [WCAG 2.0 szabványok](http://www.w3.org/TR/WCAG20) alapján. A szöveg színéről és a céges emblémáról is megtekinthet egy-egy előnézeti képet a **Mobilalkalmazások** > **Céges portál** területen. 
+Hexadecimális kódokkal testreszabhatja a témák színeit a Céges portál alkalmazásaiban. A hexadecimális kód megadásakor az Intune meghatározza a szövegszín és a háttérszín közötti legnagyobb kontrasztot eredményező szövegszínt a [WCAG 2.0 szabványok](http://www.w3.org/TR/WCAG20) alapján. A szöveg színéről és a céges emblémáról is megtekinthet egy-egy előnézeti képet a **Mobilalkalmazások** > **Céges portál** területen.
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Új Windows Defender Credential Guard-beállítások az Endpoint Protection-beállításokban <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Új Windows Defender Credential Guard-beállítások az Endpoint Protection-beállításokban <!--1102252 -->
 
-Új [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard]-beállításokkal bővült az **Eszközkonfiguráció** > **Profilok** > **Endpoint protection** terület. A következő beállítások lesznek hozzáadva: 
+Új [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard]-beállításokkal bővült az **Eszközkonfiguráció** > **Profilok** > **Endpoint protection** terület. A következő beállítások lesznek hozzáadva:
 
 - Platformbiztonsági szint: megadhatja, hogy engedélyezve legyen-e a platformbiztonsági szint a következő újraindításkor. A virtualizálás-alapú biztonsághoz biztonságos rendszerindítás szükséges. A virtualizálás-alapú biztonságot igény szerint a közvetlen memória-hozzáférés (DMA) védelmi funkcióinak használatakor is engedélyezheti. A DMA-védelemhez hardveres támogatás szükséges, és csak a megfelelően konfigurált eszközökön alkalmazható.
-- Virtualizálás-alapú biztonság: megadhatja, hogy engedélyezve legyen-e a virtualizálás-alapú biztonság a következő újraindításkor. 
-- Windows Defender Credential Guard: a Credential Guard a virtualizálás-alapú biztonsággal történő együttes bekapcsolásával megvédheti a hitelesítő adatokat a következő újraindításnál, ha a platformszintű biztonság engedélyezve van a biztonságos újraindítás és a virtualizálás-alapú biztonság funkciókkal. Elérhető beállítások: **Letiltva**, **Engedélyezve UEFI-zárolással**, **Engedélyezve zárolás nélkül**, és **Nincs konfigurálva**. 
+- Virtualizálás-alapú biztonság: megadhatja, hogy engedélyezve legyen-e a virtualizálás-alapú biztonság a következő újraindításkor.
+- Windows Defender Credential Guard: a Credential Guard a virtualizálás-alapú biztonsággal történő együttes bekapcsolásával megvédheti a hitelesítő adatokat a következő újraindításnál, ha a platformszintű biztonság engedélyezve van a biztonságos újraindítás és a virtualizálás-alapú biztonság funkciókkal. Elérhető beállítások: **Letiltva**, **Engedélyezve UEFI-zárolással**, **Engedélyezve zárolás nélkül**, és **Nincs konfigurálva**.
   - A „Letiltva” beállítás távolról kikapcsolja a Credential Guardot, ha azt korábban bekapcsolta az „Engedélyezve zárolás nélkül” funkcióval.
 
   - Az „Engedélyezve UEFI-zárolással” beállítással biztosíthatja, hogy a Credential Guard ne legyen letiltható egy beállításkulccsal vagy egy csoportházirenddel. A beállítás használata után a Credential Guard letiltásához a csoportházirendet „Letiltva” állapotra kell állítania, és el kell távolítania a biztonsági funkciókat a jelen lévő felhasználókkal rendelkező számítógépekről a UEFI-ben megőrzött konfigurációk törléséhez. Amíg megvannak a UEFI-konfigurációk, a Credential Guard engedélyezve marad.
@@ -208,7 +208,7 @@ A Windows 10-eszközökön az új Helyi eszközbiztonsági beállításokkal adh
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Új nyomtatóbeállítások az oktatási profilokban <!-- 1308900 -->
 
-Az oktatási profilok új beállításai a **Nyomtatók** kategória **Nyomtatók**, **Alapértelmezett nyomtató**, **Új nyomtatók hozzáadása** területén érhetők el. 
+Az oktatási profilok új beállításai a **Nyomtatók** kategória **Nyomtatók**, **Alapértelmezett nyomtató**, **Új nyomtatók hozzáadása** területén érhetők el.
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS-es alkalmazáskiépítési konfiguráció <!-- 1581650 -->
 iOS-es alkalmazáskiépítési profilok hozzárendelésével, illetve biztonsági csoportok alkalmazásával vagy kizárásával megelőzheti, hogy lejárjanak az alkalmazásai.
@@ -265,5 +265,3 @@ Jelenleg nincsenek aktív értesítések.
 
 ### <a name="see-also"></a>Lásd még:
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new.md).
-
-

@@ -1,23 +1,23 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban iOS-hez"
-titleSuffix: 
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az iOS rendszerű eszközökön."
-keywords: 
+title: Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban iOS-hez
+titleSuffix: ''
+description: A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az iOS rendszerű eszközökön.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>A Microsoft Intune iOS-eszközkorlátozásokra vonatkozó beállításai
 
@@ -40,7 +40,6 @@ Ez az iOS beállításkezelő alkalmazásából elérhető, más alkalmazásokra
 - **Az eszköz teljes tartalmának és összes beállításának törlésére szolgáló beállítás használata (csak felügyelt)** – Lehetővé teszi, hogy a felhasználó törölje az összes tartalmat és beállítást az eszközről.
 - **Eszköz nevének módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz nevét.
 - **Értesítési beállítások módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy módosítsa az eszköz értesítési beállításait.
-- **Háttérkép módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megváltoztassa az eszköz háttérképét.
 - **Vállalati alkalmazások megbízhatósági beállításainak módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára, hogy megbízhatónak tekintsen olyan alkalmazásokat, amelyeket nem az alkalmazás-áruházból töltött le.
 - **Konfigurációs profil módosítása (csak felügyelt)** – Engedélyezi a felhasználó számára a konfigurációs profilok telepítését.
 - **Aktiválási zár (csak felügyelt)** – Engedélyezi az aktiválási zárat a felügyelt iOS-eszközökön.
@@ -74,7 +73,6 @@ Az iOS Supervised (Felügyelt) módja csak a kezdeti eszközbeállítás során,
 - Billentyűparancsok 
 - PIN-kód módosítása 
 - Eszköznév módosítása 
-- Háttérkép módosítása 
 - Alkalmazások automatikus letöltése 
 - Vállalati alkalmazások megbízhatóságának módosítása 
 - Apple Music 
@@ -170,7 +168,7 @@ Keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban haszn
 Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet az engedélyezett és a letiltott alkalmazások listájának, illetve a kioszkmódban futtatni kívánt alkalmazásoknak a konfigurálásához.
 A tiltott alkalmazások beállításait tartalmazó eszközprofilokat hozzá kell rendelni a kívánt felhasználócsoportokhoz.
 
-Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a következő URL-címet használja: https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Az URL-cím, melyet használni fog a következő: https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Az iTunes segítségével is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.
@@ -195,7 +193,7 @@ Ha meg szeretné adni egy alkalmazás URL-címét alkalmazások listájában, ha
 Keresőmotor segítségével keresse meg az iTunes alkalmazás-áruházban használni kívánt alkalmazást, és nyissa meg az alkalmazás lapját.
 Másolja a vágólapra a lap URL-címét, és használja ezt az URL-címet az engedélyezett és a letiltott alkalmazások listájának, illetve a kioszkmódban futtatni kívánt alkalmazásoknak a konfigurálásához.
 
-Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Ebben az esetben a következő URL-címet használja: https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Példa: Keressen rá az iPad Microsoft Word alkalmazásra. Az URL-cím, melyet használni fog a következő: https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Az iTunes szoftverrel is megkeresheti az alkalmazást, majd a **Hivatkozás másolása** parancs használatával beszerezheti az alkalmazás URL-címét.

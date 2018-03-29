@@ -1,12 +1,11 @@
 ---
-title: Az eszközök távoli újraindítása az Intune-nal
-titlesuffix: Microsoft Intune
-description: Az eszközök a Microsoft Intune újraindítási eszközműveletével történő távoli újraindításának ismertetése.
+title: Eszközök újraindítása az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Újraindíthatja a Windows- és iOS-eszközöket a Microsoft Intune használatával az Azure Portalon az Újraindítás távoli művelettel.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +13,11 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 98b3403e3f45e1aa7169937a05692686d97d7362
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Az eszközök távoli újraindítása az Intune-nal
 
@@ -34,18 +33,17 @@ Az **újraindítási** eszközművelettel a kiválasztott eszköz újraindíthat
 - iOS – támogatott
 
     > [!Note]  
-    > Ehhez a parancshoz felügyelt eszközökre és az **Eszközzárolás** hozzáférési jogosultságra van szükség. Az eszköz azonnal újraindul. A PIN-kóddal zárolt iOS-eszközök nem csatlakoznak újra a Wi-Fi-hálózatokra az újraindítás után, így előfordulhat, hogy ilyen esetekben nem tudnak kommunikálni a kiszolgálóval.
+    > Ehhez a parancshoz felügyelt eszközökre és az **Eszközzárolás** hozzáférési jogosultságra van szükség. Az eszköz azonnal újraindul. Újraindítás után a PIN-kóddal zárolt iOS-eszközök nem csatlakoznak újra a Wi-Fi-hálózathoz. Újraindítás után az eszköz lehet, hogy nem fog tudni kommunikálni a kiszolgálóval.
 - macOS – nem támogatott
 - Android – nem támogatott
 
-## <a name="how-to-restart-a-device"></a>Eszköz újraindítása
+## <a name="restart-a-device"></a>Eszköz újraindítása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
-4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-5. A felügyelt eszközök listájából válassza ki az eszközt, és válassza a **...Továbbiak** lehetőséget, majd az **Újraindítás** távoli eszközműveletet.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget.
+4. A kezelt eszközök listájában válasszon ki egy eszközt, válassza a **További** lehetőséget, majd az **Újraindítás** távoli eszközműveletet.
 
 ## <a name="next-steps"></a>További lépések
 
-A kezdeményezett művelet állapotát az **Eszközök** panel **Eszközműveletek** szakaszában tekintheti meg.
+- Az **Újraindítás** eszközművelet állapotának megtekintéséhez válassza az **Eszközök** > **Eszközműveletek** lehetőséget.

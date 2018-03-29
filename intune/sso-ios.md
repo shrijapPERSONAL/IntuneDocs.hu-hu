@@ -1,23 +1,23 @@
 ---
-title: "Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez"
-titlesuffix: 
-description: "Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez."
-keywords: 
+title: Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
+titlesuffix: ''
+description: Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Az Intune konfigurálása iOS-eszközökön való egyszeri bejelentkezéshez
 
@@ -90,7 +90,7 @@ A `http://.com` és a `https://.com` minta pedig illeszkedik az összes HTTP, il
 
 Adja meg, hogy a végfelhasználó eszközének mely alkalmazásai használják az egyszeri bejelentkezéses adatcsomagot.
 
-Az `AppIdentifierMatches` tömbnek olyan karakterláncokat kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg azonosítóira. Ezek a karakterláncok lehetnek pontos egyezések (például: `com.contoso.myapp`), illetve meghatározhatnak előtag-egyeztetést is a kötegazonosítóhoz a *\ helyettesítő karakter segítségével. A helyettesítő karakternek egy pont karakter (.) után kell állnia, és csak egyszer szerepelhet az értékben, a karakterlánc végén (például: `com.contoso.*`). A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
+Az `AppIdentifierMatches` tömbnek olyan karakterláncokat kell tartalmaznia, amelyek illeszkednek az alkalmazásköteg azonosítóira. Ezek a karakterláncok lehetnek pontos egyezések (például: `com.contoso.myapp`), illetve meghatározhatnak előtag-egyeztetést is a kötegazonosítóhoz a \* helyettesítő karakter segítségével. A helyettesítő karakternek egy pont karakter (.) után kell állnia, és csak egyszer szerepelhet az értékben, a karakterlánc végén (például: `com.contoso.*`). A helyettesítő karakter használatakor az összes olyan alkalmazás hozzáférést kap a fiókhoz, amelynek a kötegazonosítója a megadott előtaggal kezdődik.
 
 Az **Alkalmazás neve** mezőben megadhat egy felhasználóbarát nevet, mely alapján könnyebben azonosíthatja a kötegazonosítót.
 

@@ -1,25 +1,25 @@
 ---
-title: "A helyszíni EAS Exchange-összekötője"
-description: "A Connector eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és az Exchange ActiveSync MDM-et futtató helyszíni Exchange-kiszolgáló között."
-keywords: 
+title: A helyszíni EAS Exchange-összekötője
+description: A Connector eszközzel engedélyezheti a kommunikációt az Intune felügyeleti konzol és az Exchange ActiveSync MDM-et futtató helyszíni Exchange-kiszolgáló között.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>A helyszíni Intune Exchange Connector telepítése
 
@@ -62,7 +62,7 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Töltse le a helyszíni Exchange Connector szoftver telepítőcsomagját
 
-1. A helyszíni Exchange Connector használatához egy támogatott Windows Server operációs rendszerben nyissa meg a [ Microsoft Intune felügyeleti konzolt](https://manage.microsoft.com) (https://manage.microsoft.com) egy olyan felhasználói fiókkal, amely rendszergazda az Exchange-bérlőben, és licenccel rendelkezik az Exchange Server használatához.
+1. Egy a helyszíni Exchange Connector használatához egy támogatott Windows Server operációs rendszerben nyissa meg a [Microsoft Intune felügyeleti konzolt](https://manage.microsoft.com) (https://manage.microsoft.com)) egy olyan felhasználói fiókkal, amely rendszergazda az Exchange-bérlőben, és rendelkezik licenccel az Exchange Server használatához.
 ![Nyissa meg az Exchange-kapcsolat beállítását](../media/ExchangeConnector.gif)
 
 2.  A munkaterület parancsikon ablaktábláján válassza a **Felügyelet**> **lehetőséget, majd lépjen a Mobileszköz-kezelés** > **Microsoft Exchange**>**Exchange-kapcsolat beállítása** pontra.

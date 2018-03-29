@@ -1,4 +1,4 @@
 |A következőkre vonatkozik: Intune az Azure Portalon |
 |--|
-|A klasszikus portálbeli Intune-ról keres dokumentációt? [Lépjen tovább ide](/intune/introduction-intune?toc=/intune-classic/toc.json).|
+|A klasszikus portálbeli Intune-ról keres dokumentációt? Olvassa el ezt az [Intune-t bemutató cikket](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
