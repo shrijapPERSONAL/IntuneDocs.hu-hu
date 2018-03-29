@@ -1,31 +1,31 @@
 ---
-title: "A Microsoft Intune által felügyelt iOS-eszköz felhasználójának eltávolítása"
-titlesuffix: 
-description: "Ismerje meg, hogyan távolíthat el felhasználót egy Intune által felügyelt, megosztott iOS-eszközről."
-keywords: 
+title: A Microsoft Intune által felügyelt iOS-eszköz felhasználójának eltávolítása
+titlesuffix: ''
+description: Ismerje meg, hogyan távolíthat el felhasználót egy Intune által felügyelt, megosztott iOS-eszközről.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce1b6b439c287b67a7c9e776edf136e78e5ecf5b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01928439f3a4d9280036b2e1a9576175ef425050
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Felhasználó eltávolítása megosztott iOS-eszközről
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Azoknak a megosztott iPad- eszközöknek a helyi gyorsítótárából, amelyeken [iOS-es oktatási profil](education-settings-configure-ios.md) kezeli az iOS-es Osztályterem alkalmazást, a **Felhasználó eltávolítása** művelettel távolítható el egy kiválasztott felhasználó. 
+A **Felhasználó eltávolítása** művelettel törölheti a kiválasztott felhasználót az iPad eszköz helyi gyorsítótárából. Az iPad eszközt úgy kell beállítani egy [iOS oktatási profillal](education-settings-configure-ios.md), hogy kezelje az iOS Osztályterem alkalmazást. 
 
 ## <a name="supported-platforms"></a>Támogatott platformok
 
@@ -35,16 +35,16 @@ Azoknak a megosztott iPad- eszközöknek a helyi gyorsítótárából, amelyeken
 - macOS – nem támogatott
 - Android – nem támogatott
 
-## <a name="how-to-remove-a-user"></a>Felhasználó eltávolítása
+## <a name="remove-a-user"></a>Felhasználó eltávolítása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Eszközök** lehetőséget.
 4. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
 5. A felügyelt eszközök listájából válasszon ki egy iOS-eszközt.
-6. Az eszköz paneljén kattintson a **Felhasználók** elemre.
-7. A listán jobb gombbal kattintson az eltávolítani kívánt felhasználóra, majd kattintson a **Felhasználó eltávolítása** elemre.
+6. Az eszköz ablaktábláján válassza a **Felhasználók** lehetőséget.
+7. A listán a jobb gombbal kattintson az eltávolítani kívánt felhasználóra, majd kattintson a **Felhasználó eltávolítása** elemre.
 
 ## <a name="next-steps"></a>További lépések
 
-A kezdeményezett művelet állapotát az **Eszközök** panel **Eszközműveletek** szakaszában tekintheti meg.
+- A **Felhasználók eltávolítása** művelet állapotának megtekintéséhez válassza az **Eszközök** > **Eszközműveletek** lehetőséget.

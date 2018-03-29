@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>SCEP-tanúsítványok konfigurálása és kezelése a Microsoft Intune-nal
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ Ha a hitelesítésszolgáltató konfigurálásával lehetővé kívánja tenni a
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>3. lépés – Előfeltételek konfigurálása az NDES-kiszolgálón
 A feladatban az alábbiak szerepelnek:
 
+<<<<<<< HEAD
+
+- Az NDES hozzáadása egy Windows Server-kiszolgálóhoz, és az IIS konfigurálása az NDES támogatására
+- Az NDES szolgáltatásfiók hozzáadása a IIS_IUSR csoporthoz
+- Az NDES szolgáltatásfiók egyszerű szolgáltatásnevének beállítása =======
 -   Az NDES hozzáadása egy Windows Server-kiszolgálóhoz, és az IIS konfigurálása az NDES támogatására
+>>>>>>> 3365d47d4... szülője A „release-intune-1803” ág egyesítése a mesterrel
 
 -   Az NDES szolgáltatásfiók hozzáadása a IIS_IUSR csoporthoz
 

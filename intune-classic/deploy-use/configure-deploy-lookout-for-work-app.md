@@ -1,24 +1,24 @@
 ---
-title: "A Lookout for Work alkalmazás telepítése"
-description: "Lookout for Work alkalmazások konfigurálása és telepítése Android operációs rendszeren."
+title: A Lookout for Work alkalmazás telepítése
+description: Lookout for Work alkalmazások konfigurálása és telepítése Android operációs rendszeren.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>A Lookout for Work alkalmazás konfigurálása és telepítése
 
@@ -29,7 +29,7 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
 ## <a name="android-google-play-store-app"></a>Android (Google Play Áruház alkalmazás)
 
 1.  A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza az **Alkalmazások**, majd az **Alkalmazások felvétele** lehetőséget.
-2.  A közzétevő **Szoftver telepítése** lapján válassza a **Külső hivatkozás** elemet, és adja meg a következő URL-címet: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  A közzétevő **Szoftver telepítése** lapján válassza a **Külső hivatkozás** lehetőséget, és adja meg a következő URL-címet: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Ne jelölje be a felügyelt böngészőt előíró jelölőnégyzetet.
 
@@ -60,7 +60,7 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
 
 3. Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók számára az alábbiak szerint:
   1.  Jelentkezzen be az [Azure Active Directory felügyeleti portálon](https://manage.windowsazure.com), és keresse meg az alkalmazáslapot.
-  2.  Adja hozzá a **Lookout for Work iOS alkalmazást** **natív ügyfélalkalmazásként**.
+  2.  Adja hozzá a **Lookout for Work iOS alkalmazást****natív ügyfélalkalmazásként**.
   ![a natív ügyfélalkalmazás lehetőséget mutató képernyőkép az alkalmazás hozzáadása párbeszédpanelről](../media/mtp/aad-add-app.png)
   3. Cserélje le a **com.lookout.enterprise.yourcompanyname** sort az IPA aláírásakor választott ügyfélcsomag-azonosítóval.
   4.  Adjon hozzá további átirányítási URI-t: **&lt;companyportal://code/>**, valamint az eredeti átirányítási URI-ja URLencoded verzióját.

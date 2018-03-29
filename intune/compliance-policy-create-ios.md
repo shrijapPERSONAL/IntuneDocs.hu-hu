@@ -1,49 +1,42 @@
 ---
-title: "iOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban"
-titleSuffix: 
-description: "Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune iOS-eszközmegfelelőségi szabályzatot."
-keywords: 
-author: msmimart
-ms.author: mimart
+title: IOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Létrehozhat Microsoft Intune-beli eszközmegfelelőségi szabályzatokat iOS-eszközökhöz e-mail-fiók megadásához, feltört eszközök ellenőrzéséhez, az operációs rendszer használható minimális és maximális verziójának ellenőrzéséhez, valamint a jelszókorlátozásoknak, például a jelszó hosszának és az eszköz inaktivitási idejének a beállításához.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>iOS-es eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>iOS-es eszközök megfelelőségi szabályzatainak felvétele az Intune-ban
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az iOS-eszközmegfelelőségi szabályzatokkal megszabhatja az iOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és a létrehozásuk előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
+Az Intune iOS-eszközmegfelelőségi szabályzataival megszabhatja az iOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és a létrehozásuk előtt teljesítendő előfeltételekről az [Eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
--------------------------------
-
-
 | **Szabályzat-beállítás** | **iOS 8.0 vagy újabb** |
 | --- | --- |
-| **PIN-kód vagy jelszó konfigurálása** | Kijavítva |   
+| **PIN-kód vagy jelszó konfigurálása** | Kijavítva |
 | **Eszköztitkosítás** | Kijavítva (PIN-kód beállításával) |
 | **Jailbreakelt vagy rootolt eszköz** | Karanténba helyezve (nem beállítás)
 | **E-mail profil** | Karanténba helyezve |
 |**Operációs rendszer minimális verziója** | Karanténba helyezve |
-| **Operációs rendszer maximális verziója** | Karanténba helyezve |  
-| **Windows-állapotigazolás** | Nem alkalmazható |  
-----------------------------
-
+| **Operációs rendszer maximális verziója** | Karanténba helyezve |
+| **Windows-állapotigazolás** | Nem alkalmazható |
 
 **Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználó kénytelen lesz PIN-kódot beállítani.)
 
@@ -54,11 +47,11 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portal webhelyen
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-1. Az **Intune** panelen válassza az **Eszközmegfelelőség** lehetőséget. A **Kezelés** területen válassza a **Szabályzatok**, majd a **Szabályzat létrehozása** lehetőséget.
-2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
-3. A **Megfelelőségi követelmények** területen megadhatja a **Rendszerbiztonság**, az **Eszközállapot** és az **Eszköztulajdonság** beállításait. Ha elkészült, válassza az **OK** lehetőséget.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
+4. Adjon meg egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
+5. Válassza a **Beállítások** lehetőséget az **E-mail**, **Eszközállapot****Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK** gombot.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A rendsz
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
-
-### <a name="password"></a>Jelszó
-
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget. A jelszót használó iOS-eszközöket titkosítja a rendszer.
-- **Egyszerű jelszavak engedélyezése:** Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan jelszavakat, mint az **1234** vagy az **1111**, válassza az **Igen** lehetőséget.
-- **Jelszó minimális hossza**: Meghatározza a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-- **Megkövetelt jelszótípus:** Meghatározza, hogy a felhasználóknak **alfanumerikus** jelszót vagy **numerikus** jelszót kell-e létrehozniuk.
-- **Karakterkészletek minimális száma:** Ha a **Megkövetelt jelszótípus** **Alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
-  - Kisbetűk
-  - Nagybetűk
-  - Szimbólumok
-  - Számok
-
-Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
-
-Az iOS-eszközök esetében ez a beállítás a speciális karakterek minimális számára utal, például: **!** **#** , **&amp;**), amelynek szerepelnie kell a jelszóban.
-
-- **Jelszó kérése ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-- **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
-- **Korábbi jelszavak újbóli használatának tiltása**: Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
-- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**: Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással együtt használhatja. A rendszer megkéri a felhasználót egy jelszó beírására a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz elérésekor.
-
-### <a name="email-profile"></a>E-mail-profil
+## <a name="email"></a>E-mail
 
 - **Csak az Intune által felügyelt e-mail fiók használható:** Ha **Igen** értékre állítja a beállítást, az eszköznek az eszközre telepített e-mail-fiókot kell használnia. Az eszköz a következő esetekben számít nem megfelelőnek:
   - Az e-mail-profil nem a megfelelőségi szabályzat által célzott felhasználócsoporttól különböző felhasználócsoportnál van telepítve.
@@ -111,14 +80,34 @@ Az iOS-eszközök esetében ez a beállítás a speciális karakterek minimális
 
 Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurálása e-mail-profilokkal a Microsoft Intune-ban](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) című témakörben talál további információt.
 
-## <a name="device-health-settings"></a>Eszközállapot-beállítások
+## <a name="device-health"></a>Device health
 
-- **Az eszköz nem lehet függetlenített vagy feltört eszköz:** Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
+- **Feltört eszközök**: Ha ezt a beállítást engedélyezi, akkor a feltört eszközök nem lesznek kompatibilisek.
+- **Annak a megkövetelése, hogy az eszköz az eszközfenyegetettségi szinten vagy az alatt legyen**: Válassza a maximális fenyegetettségi szintet az eszközök nem kompatibilisként való megjelöléséhez. Ha például a **Közepes** fenyegetettségi szintet állítja be, akkor a közepes, alacsony vagy biztonságos szintű eszközök kompatibilisek. A magas fenyegetettségi szintű eszközök nem kompatibilisek.
 
 ## <a name="device-properties"></a>Eszköztulajdonságok
 
 - **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
-- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ezután kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+
+## <a name="system-security"></a>Rendszerbiztonság
+
+### <a name="password"></a>Jelszó
+
+> [!NOTE]
+> Miután megfelelőségi vagy konfigurációs szabályzatot alkalmazott egy iOS-eszközre, a felhasználóktól 15 percenként egy PIN-kódot kér a rendszer. A kérések mindaddig megjelennek, amíg a felhasználó meg nem ad egy PIN-kódot.
+
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget. A jelszót használó iOS-eszközöket titkosítja a rendszer.
+- **Egyszerű jelszavak**: Ha engedélyezni szeretné, hogy a felhasználók használhassanak olyan jelszavakat, mint az **1234** vagy az **1111**, válassza az **Igen** lehetőséget.
+- **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **Megkövetelt jelszótípus**: Megadhatja, hogy a felhasználóknak **alfanumerikus** jelszót vagy **numerikus** jelszót kell-e létrehozniuk.
+- **Nem alfanumerikus karakterek száma a jelszóban**: Megadhatja, hogy hány speciális karakternek (például &, #, %, ! stb.) kell szerepelnie a jelszóban.
+
+    Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
+
+- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
+- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
 
 <!--- ## Next steps
 

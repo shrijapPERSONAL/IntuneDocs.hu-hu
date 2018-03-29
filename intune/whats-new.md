@@ -1,25 +1,25 @@
 ---
-title: "Újdonságok a Microsoft Intune-ban"
-titlesuffix: 
-description: "Az Azure-beli Intune-portál újdonságai"
-keywords: 
+title: Újdonságok a Microsoft Intune-ban
+titlesuffix: ''
+description: Az Azure-beli Intune-portál újdonságai
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f171779a2606790dd1e59caf5e261e6d22faaf7f
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: be4d02419879a765c3d84a99b65a1184f7e8353e
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 
@@ -47,6 +47,10 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 
 ## <a name="week-of-march-12-2018"></a>2018. március 12-i hét
+
+#### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Frissített vezérlők az Androidhoz készült Céges portálhoz <!--976944 -->
+
+Az Android [Material Design](https://material.io/) irányelveihez igazodva frissítettük az Androidhoz készült Céges portál alkalmazást. Az új ikonok képét [Az alkalmazás felhasználói felületének újdonságai](whats-new-app-ui.md) cikkben tekintheti meg.
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>Új beállítások a Windows Defender – biztonsági rés kiaknázása elleni védelemhez <!-- 1631893 -->
 

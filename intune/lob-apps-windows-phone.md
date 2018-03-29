@@ -1,25 +1,25 @@
 ---
-title: "Windows Phone rendszerű üzletági alkalmazások hozzáadása a Microsoft Intune-hoz"
-titlesuffix: 
-description: "Az üzletági (LOB) Windows Phone-alkalmazások az Intune-hoz való hozzáadásának ismertetése."
-keywords: 
+title: Windows Phone rendszerű üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
+titlesuffix: ''
+description: Az üzletági (LOB) Windows Phone-alkalmazások az Intune-hoz való hozzáadásának ismertetése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8466a77929620ef9ef7c1559dae62990730d0acd
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4053c2f932f6101397deb6bf0c3a142fa713aec4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Phone rendszerű üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 

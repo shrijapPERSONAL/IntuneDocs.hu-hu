@@ -1,25 +1,25 @@
 ---
-title: "Apple DEP-felügyelet iOS-eszközökön"
-description: "Olyan regisztrációs profil telepítése, amely az iOS készülékregisztrációs program (DEP) keretében vásárolt Apple-eszközök felügyelet céljából történő vezeték nélküli regisztrálására szolgál."
-keywords: 
+title: Apple DEP-felügyelet iOS-eszközökön
+description: Olyan regisztrációs profil telepítése, amely az iOS készülékregisztrációs program (DEP) keretében vásárolt Apple-eszközök felügyelet céljából történő vezeték nélküli regisztrálására szolgál.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>A készülékregisztrációs programban részt vevő vállalati iOS-eszközök regisztrálása
 
@@ -29,13 +29,14 @@ A Microsoft Intune-nal olyan regisztrációs profilt telepíthet, amely képes v
 
 >[!NOTE]
 >A DEP-regisztrációt nem lehet használni az [eszközregisztráció-kezelői](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) módszerrel.
->Ha a felhasználók a Céges portál alkalmazással regisztrálják iOS-es eszközeiket, az eszközök sorozatszámait pedig később importálják és egy DEP-profilhoz rendelik, akkor az eszközök Intune-regisztrációja megszűnik.
+>Ezenkívül, ha a felhasználók a Céges portál alkalmazással regisztrálják iOS-es eszközeiket, az eszközök sorozatszámait pedig később importálják és egy DEP-profilhoz rendelik, akkor az eszközök Intune-regisztrációja megszűnik.
+> Továbbá a macOS jelenleg nem támogatja a DEP-et.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>iOS-es eszközök Apple DEP-felügyelettel való regisztrálásának előfeltételei
 
 - [APNs-tanúsítvány telepítése](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- A szervezetnek csatlakoznia kell az Apple DEP-hez, és az eszközöket ezen program keretében kell beszerezniük. A folyamat részletei a következő webhelyen érhetők el:  [https://deploy.apple.com](https://deploy.apple.com). A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
+- A szervezetnek csatlakoznia kell az Apple DEP-hez, és az eszközöket ezen program keretében kell beszerezniük. Az eljárás részleteit itt találja: [https://deploy.apple.com](https://deploy.apple.com). A program előnyei közé tartozik a beavatkozás nélküli beállítás, amelynek használata esetén az eszközöket nem kell csatlakoztatnia egy számítógép USB-portjához.
 
 - A vállalat által birtokolt iOS-eszközöket csak egy az Apple-től származó DEP-jogkivonat birtokában regisztrálhatja a DEP programba. Ez a jogkivonat lehetővé teszi, hogy az Intune szinkronizálja a DEP-ben résztvevő, vállalat által birtokolt eszközök adatait. A token ezen felül lehetővé teszi, hogy az Intune Regisztrációs profilokat töltsön fel az Apple-nek, és a feltöltött profilokhoz eszközöket rendeljen hozzá.
 
@@ -130,7 +131,7 @@ Az alábbi lépések azt ismertetik, hogyan lehet azonnal regisztrálni az iOS-e
 
 ### <a name="assign-dep-devices-for-management"></a>DEP-eszközök hozzárendelése kezelés céljából
 
-1. Nyissa meg a [Device Enrollment Program portált](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID-val.
+1. Nyissa meg a [Device Enrollment Program portálját](https://deploy.apple.com) (https://deploy.apple.com), és jelentkezzen be a vállalati Apple ID azonosítóval.
 
 2. Válassza a **Deployment Program** (Telepítési program) &gt; **Device Enrollment Program** (Készülékregisztrációs program) &gt; **Manage Devices** (Eszközök kezelése) lehetőséget.
 

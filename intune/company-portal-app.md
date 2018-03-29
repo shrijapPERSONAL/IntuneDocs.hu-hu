@@ -1,25 +1,25 @@
 ---
-title: "A Céges portál alkalmazás konfigurálása"
+title: A Céges portál alkalmazás konfigurálása
 titleSuffix: Microsoft Intune
-description: "További információ a vállalatspecifikus védjegyezés az Intune Céges portál alkalmazásban való alkalmazásáról."
-keywords: 
+description: További információ a vállalatspecifikus védjegyezés az Intune Céges portál alkalmazásban való alkalmazásáról.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -41,7 +41,7 @@ A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartás
 |**Vállalat neve**|40|Ez a név a Vállalati portál címeként jelenik meg.|        
 |**IT-részleg kapcsolattartójának a neve**|40|Ez a név az **IT-csoport elérhetősége** lapon jelenik meg.|      
 |**IT-részleg telefonszáma**|20|Ez a telefonszám az **IT-csoport elérhetősége** lapon jelenik meg.|        
-|IT-részleg e-mail címe|40|Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail címet a következő formátumban: **alias@domainname.com**.|     
+|**IT-részleg e-mail címe**|40|Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail címet a következő formátumban: **alias@domainname.com**.|     
 |**További információ**|120|Az **IT-csoport elérhetősége** lapon jelenik meg.|      
 |**Vállalat adatvédelmi nyilatkozatának URL-címe**|79|Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: **https://www.contoso.com**.|        
 
@@ -52,7 +52,7 @@ A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi 
 
 |Mező neve|Maximális hossz|További információ|        
 |-|-|-|     
-|**Támogatási webhely URL-címe**|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-címet **https://www.contoso.com** formátumban kell megadni. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|        
+|**Támogatási webhely URL-címe**|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-cím formátumának a következőnek kell lennie: **https://www.contoso.com**. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|        
 |**Támogatási webhely neve**|40|Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de rövid nevet nem, akkor Az IT-csoport weboldalának megnyitása felirat jelenik meg a Céges portál **IT-csoport elérhetősége** lapján.       
 
 ## <a name="company-branding-customization"></a>Vállalati arculat szerinti testreszabás       

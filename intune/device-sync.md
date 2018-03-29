@@ -1,25 +1,25 @@
 ---
-title: "Eszközök szinkronizálása a Microsoft Intune nal – Azure | Micrososft Docs"
-description: "Az Intune-ban regisztrált vagy az általa kezelt eszközöket szinkronizálásával az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket. Az Azure Portallal való szinkronizálás lépései és az újrapróbálható hibakódok."
-keywords: 
+title: Eszközök szinkronizálása a Microsoft Intune nal – Azure | Micrososft Docs
+description: A Microsoft Intune-ban regisztrált vagy az általa kezelt eszközök szinkronizálásával az eszközök beolvashatják a legfrissebb szabályzatokat és műveleteket. Az Azure Portallal való szinkronizálás lépései és az újrapróbálható hibakódok.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Az eszközök szinkronizálása a legfrissebb szabályzatok és műveletek beolvasásához – Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Az eszközök szinkronizálása az Intune-nal a legfrissebb szabályzatok és műveletek beolvasásához
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,10 +36,10 @@ A **Szinkronizálás** eszközművelet kikényszeríti a választott eszköz azo
 
 ## <a name="sync-a-device"></a>Eszköz szinkronizálása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza a **Microsoft Intune** elemet. 
-3. Az **Intune** területen válassza az **Eszközök**, majd a **Minden eszköz** lehetőséget.
-4. A felügyelt eszközök listájából válasszon ki egy eszközt, és válassza a **...Továbbiak** lehetőséget, majd a **Szinkronizálás** műveletet.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Válassza a **Minden szolgáltatás** lehetőséget, szűrjön az **Intune**-ra, és válassza a **Microsoft Intune** elemet. 
+3. Az **Intune**-ban válassza az **Eszközök** > **Minden eszköz** lehetőséget.
+4. A kezelt eszközök listájában válasszon ki egy eszközt, válassza a **További** lehetőséget, majd a **Szinkronizálás** elemet.
 5. Válassza az **Igen** lehetőséget a megerősítéshez.
 
 
@@ -62,6 +62,6 @@ Ha a rendszergazda a **Szinkronizálás** eszközműveletet futtatja, a sikertel
 | 2016330889 | A biztonságos kapcsolat sikertelen. Kapcsolat alaphelyzetbe állítása. | Igen|
 | 2016330888 | A kiszolgáló megbízhatósági értékelése sikertelen. | Nem|
 
-## <a name="next-step"></a>Következő lépés
+## <a name="next-steps"></a>További lépések
 
-Válassza az **Eszközműveletek** lehetőséget a szinkronizálási művelet állapotának megtekintéséhez. 
+- A szinkronizálási művelet állapotának megtekintéséhez válassza az **Eszközműveletek** lehetőséget. 

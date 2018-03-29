@@ -1,24 +1,24 @@
 ---
-title: "Eszközprofilok az Azure-beli Microsoft Intune-ban | Microsoft Docs"
-description: "A különféle Microsoft Intune-eszközprofilok áttekintése a funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, Windows 10-frissítés, BitLocker és Windows Defender, Windows Információvédelem és az Azure Portal-beli egyéni eszközkonfigurációs beállítások ismertetésével. Ezeket a profilokat vállalati adatai és eszközei kezelésére és védelmére használhatja."
-keywords: 
+title: Eszközprofilok az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: A különféle Microsoft Intune-eszközprofilok áttekintése a funkciók, korlátozások, e-mail, Wi-Fi, VPN, oktatás, tanúsítványok, Windows 10-frissítés, BitLocker és Windows Defender, Windows Információvédelem és az Azure Portal-beli egyéni eszközkonfigurációs beállítások ismertetésével. Ezeket a profilokat vállalati adatai és eszközei kezelésére és védelmére használhatja.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Mik azok a Microsoft Intune-eszközprofilok?
 
@@ -120,6 +120,8 @@ Ez a funkció csak a Windows 10 rendszert támogatja
 ## <a name="endpoint-protection-profile"></a>Végpontvédelmi profil
 A [Végpontvédelmi beállítások Windows 10-hez](endpoint-protection-windows-10.md) a BitLocker és a Windows Defender beállításait konfigurálja Windows 10 rendszerű eszközökön.
 
+A Windows Defender Komplex veszélyforrások elleni védelem (WDATP) Microsoft Intune-ban való előkészítéséhez lásd: [Configure endpoints using Mobile Device Management (MDM) tools (Végpontok konfigurálása Mobile Device Management (MDM) eszközök használatával)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
 Ez a funkció csak a Windows 10 rendszert támogatja
 
 ## <a name="windows-information-protection-profile"></a>Windows információvédelem profil
@@ -130,7 +132,7 @@ Ez a funkció csak a Windows 10 rendszert támogatja
 ## <a name="custom-profile"></a>Egyéni profil
 Az [Egyéni beállítások](custom-settings-configure.md) segítségével egyebek mellett az Intune-ba be nem épített eszközbeállítások alkalmazhatók. Például OMA-URI értékek adhatók meg Android-eszközökön. iOS-eszközökön importálható egy, az Apple Configuratorban létrehozott konfigurációs fájl. 
 
-Ez a funkció a következőket támogatja: 
+Ez a funkció a következőket támogatja:
 
 - Android
 - iOS

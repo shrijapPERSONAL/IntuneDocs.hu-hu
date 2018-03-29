@@ -1,25 +1,25 @@
 ---
-title: "Mac OS X-szabályzatbeállítások"
-description: "Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban."
-keywords: 
+title: Mac OS X-szabályzatbeállítások
+description: Az Intune számos beépített beállítási lehetőséget kínál Mac OS X-eszközökön, amelyeket konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>A Mac OS X-konfigurációs házirendek beállításai a Microsoft Intune-ban
 
@@ -119,5 +119,5 @@ Az egyéni házirend által használt konfigurációs profilfájlt kétfélekép
 -   A fájlt Ön is létrehozhatja, ha az [Apple konfigurációs profilok készítésére szolgáló útmutatójának](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) megfelelő sémáját használja.
 
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
