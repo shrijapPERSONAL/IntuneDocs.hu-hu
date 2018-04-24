@@ -1,29 +1,29 @@
 ---
-title: "A mobileszközök regisztrációjára vonatkozó előfeltételek"
-description: "Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére."
-keywords: 
+title: A mobileszközök regisztrációjára vonatkozó előfeltételek
+description: Beállíthat mobileszköz-felügyeleti (MDM) előfeltételeket, és felkészülhet a különböző operációs rendszerek beléptetésére.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Mobileszköz-kezelés előfeltételei az Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A következő lépésekkel teheti lehetővé az alkalmazottak számára, hogy regisztrálják a mobileszközüket az Intune-ban. Ugyanezek a lépések szükségesek a vállalat tulajdonában lévő eszközök esetében is.
 
@@ -39,7 +39,7 @@ A következő lépésekkel teheti lehetővé az alkalmazottak számára, hogy re
 
 A Microsoft Intune-nal bővített Configuration Manager-t keresi?
 > [!div class="button"]
-[Az SCCM dokumentációjának megtekintése >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Az SCCM dokumentációjának megtekintése >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>1. lépés: Kapcsolatok engedélyezése
 
@@ -51,7 +51,7 @@ A mobileszközök regisztrációjának engedélyezése előtt feltétlenül vég
 Az MDM-szolgáltató határozza meg azt a felügyeleti szolgáltatást, amely az eszközök kezelésére jogosult. MDM-szolgáltató lehet például maga az Intune, illetve a Configuration Managerbe és az Intune. Ha a Configuration Manager van beállítva felügyeleti szolgáltatóként, nem használhat más szolgáltatást a mobileszközök felügyeletére.
 
 >[!IMPORTANT]
-> A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a meglévő felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információért tekintse meg a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című részt.
+> A Configuration Manager 1610-es vagy későbbi verziójában és a Microsoft Intune 1705-ös verziójában anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, vagy hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és a regisztráció újbóli elvégzését. További információt a [Mi a teendő, ha nem a megfelelő MDM-szolgáltatót választotta?](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) című szakaszban talál.
 
 1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Mobileszköz-kezelés** lehetőséget.
 
@@ -80,21 +80,22 @@ A vállalati portál testreszabásával ismerős és könnyen használható kör
 
 A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartási adatokat és részleteket a felhasználók a Vállalati portál IT-csoport elérhetősége képernyőjén tekinthetik meg. Az adatvédelmi nyilatkozat az Adatvédelem hivatkozásra kattintva jeleníthető meg.
 
-|Mező neve|Maximális hossz|További információ|
-    |----------|------------------------|----------------|
-    |A cég neve|40|Ez a név a Vállalati portál címeként jelenik meg. **Megjegyzés:**: Csak alfanumerikus karaktereket tartalmazhat. Ez a mező nem támogatja a speciális karaktereket.|
-    |IT-részleg kapcsolattartójának a neve|40|Ez a név az **IT-csoport elérhetősége** lapon jelenik meg.|
-    |IT-részleg telefonszáma|20|Ez a telefonszám az **IT-csoport elérhetősége** lapon jelenik meg.|
-    |IT-részleg e-mail címe|40|Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail címet a következő formátumban: **alias@domainname.com**.|
-    |További információ|120|Ez az információ az **IT-csoport elérhetősége** lapon jelenik meg.|
-    |Vállalat adatvédelmi nyilatkozatának URL-címe:|79|Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: https://www.contoso.com.|
+
+|          Mező neve           | Maximális hossz |                                                                                       További információ                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         A cég neve          |     40     |                Ez a név a Vállalati portál címeként jelenik meg. <strong>Megjegyzés:</strong>: Csak alfanumerikus karaktereket tartalmazhat. Ez a mező nem támogatja a speciális karaktereket.                |
+|  IT-részleg kapcsolattartójának a neve   |     40     |                                                                Ez a név az <strong>IT-csoport elérhetősége</strong> lapon jelenik meg.                                                                |
+|  IT-részleg telefonszáma   |     20     |                                                           Ez a telefonszám az <strong>IT-csoport elérhetősége</strong> lapon jelenik meg.                                                           |
+|  IT-részleg e-mail címe  |     40     |             Ez a cím az <strong>IT-csoport elérhetősége</strong> lapon jelenik meg. Meg kell adnia egy érvényes e-mail címet a következő formátumban: <strong>alias@domainname.com</strong>.              |
+|    További információ     |    120     |                                                            Ez az információ az <strong>IT-csoport elérhetősége</strong> lapon jelenik meg.                                                             |
+| Vállalat adatvédelmi nyilatkozatának URL-címe: |     79     | Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Támogatási kapcsolattartók
 A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi a felhasználók számára az online támogatás elérését.
 
 |Mező neve|Maximális hossz|További információ|
     |----------|------------------------|----------------|
-    |Támogatási webhely URL-címe|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-címet a https://www.contoso.com formátumban kell megadni. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|
+    |Támogatási webhely URL-címe|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-cím formátumának a következőnek kell lennie: https://www.contoso.com. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|
     |Webhely neve|40|Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de egyszerű nevet nem, akkor **Az IT-csoport weboldalának megnyitása** felirat jelenik meg a Vállalati portál **IT-csoport elérhetősége** lapján.|
 
 
@@ -199,7 +200,7 @@ Távolítsa el az Intune-előfizetést úgy, hogy jobb gombbal az előfizetésre
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Mobileszköz-felügyeleti szolgáltató módosítása az Office 365-ről a Configuration Managerre
 
-1. Lépjen a [https://protection.office.com](https://protection.office.com) oldalra.
+1. Lépjen a következő helyre: [https://protection.office.com](https://protection.office.com).
 2. Válassza a **Biztonsági házirendek** fület, majd az **Eszközkezelés** lehetőséget.
 3. A **Szelektív törlés** segítségével vonja ki az összes eszközt. Az eszköz kivonását ne próbálja meg az adott eszközön végrehajtani. Ha a szelektív törlés nincsen engedélyezve, nincs szükség további műveletre.
 4. Válassza a **Biztonsági házirendek** fület, majd az **Eszközbiztonsági házirendek** lehetőséget.

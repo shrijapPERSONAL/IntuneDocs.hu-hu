@@ -1,29 +1,29 @@
 ---
-title: "Androidos eszközök regisztrálása az Intune-ban"
+title: Androidos eszközök regisztrálása az Intune-ban
 titlesuffix: Microsoft Intune
-description: "Útmutató az Android-eszközök Intune-ban való regisztrálásához."
-keywords: 
+description: Útmutató az Android-eszközök Intune-ban való regisztrálásához.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune rendszergazdájaként kezelhet Android-eszközöket, beleértve a Samsung Knox Standard rendszerűeket is. Ezen túlmenően felügyelheti az [Android for Work-eszközök](#enable-enrollment-of-android-for-work-devices) munkahelyi profiljait is.
 
@@ -47,6 +47,8 @@ Ha engedélyezni szeretné az [Android for Work támogatású](https://support.g
 
 Ha a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md) regisztrál Android for Work-eszközöket, akkor a fiókonként regisztrálható eszközök számának felső korlátja 10.
 
+További információ: [Az Intune által a Google-nek küldött adatok](data-intune-sends-to-google.md).
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Android for Work-kötés létrehozása az Intune-ban
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Ha a [Készülékregisztráció-kezelővel](device-enrollment-manager-enroll.md)
 1. **Az Intune MDM beállítása**<br>
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
 2. **Android for Work-kötés konfigurálása**<br>
-    Az Intune rendszergazdájaként az [Azure Portalon](https://portal.azure.com) válassza a **Minden szolgáltatás** > **Figyelés + felügyelet** > **Intune** elemet.
-
-   a. Az **Intune** panelen válassza az **Eszközök beléptetése** > **Android for Work-regisztráció** elemet, majd válassza a **Felügyelt Google Play-alkalmazások – Konfigurálás** elemet a Google Play Áruház Android for Work-webhelyének megnyitásához. A webhely egy új lapon nyílik meg a böngészőben.
+    
+   a. Jelentkezzen be az [Azure Portalbeli Intune-ba](https://aka.ms/intuneportal), és válassza az **Eszközregisztráció** > **Android-regisztráció** > **Felügyelt Google Play** lehetőséget.
    ![Az Android for Work-eszközök regisztrálási képernyője](./media/android-work-bind.png)
 
-   b. **Bejelentkezés a Google-fiókba**<br>
+   b. Engedélyezze a Microsoftnak az **Elfogadom** lehetőség választásával a [felhasználó- és eszközadatok Google-nak való elküldését](data-intune-sends-to-google.md). 
+   
+   c. Válassza **A Google indítása és csatlakozás** lehetőséget a Google Play Android for Work-webhelyének megnyitásához. A webhely egy új lapon nyílik meg a böngészőben.
+  
+   d. **Bejelentkezés a Google-fiókba**<br>
    A Google bejelentkezési oldalán lépjen be az adott bérlő összes Android for Work-alapú felügyeleti feladatához társítandó Google-fiókkal. Ezt a Google-fiókot osztják meg a vállalati rendszergazdák az alkalmazások Play for Work konzolon való felügyeletéhez és közzétételéhez. Meglévő Google-fiókot is használhat, illetve újat is létrehozhat.  A választott fiók nem lehet G Suite-tartományhoz rendelve.
 
-   c. **A szervezet adatainak megadása**<br>
+   e. **A szervezet adatainak megadása**<br>
    Az **Organization name** (Szervezet neve) mezőben adja meg a vállalat nevét. Az **Enterprise mobility management (EMM) provider** (Nagyvállalati mobileszköz-felügyeleti (EMM-) szolgáltató) mezőben a **Microsoft Intune** értéknek kell megjelennie. Fogadja el az Android for Work-szerződést, majd válassza a **Confirm** (Jóváhagyás) gombot. Megtörténik a kérelem feldolgozása.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work-regisztrációs beállítások megadása
@@ -110,3 +115,14 @@ Az Android for Work-regisztrációt és -felügyeletet ki is kapcsolhatja. Az In
 
 2. **Android for Work-kötés törlésének jóváhagyása**<br>
   A kötés törléséhez és az összes Android for Work-eszköz Intune-regisztrációjának megszüntetéséhez válassza az **Igen** gombot.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Végfelhasználói élmény Samsung Knox-eszköz regisztrálása során
+A Samsung Knox-eszközök regisztrálása során több szempontot figyelembe kell venni:
+-   Ha a szabályzatok nem követelnek PIN-kódot, az eszköznek akkor is egy legalább négyjegyű PIN-kódra lesz szüksége a regisztrációhoz. Ha az eszköznek nincs PIN-kódja, a felhasználónak létre kell hoznia egyet.
+-   A Munkahelyi csatlakozás tanúsítványai (WPJ) esetében nincs felhasználói tevékenység.
+-   A felhasználónak megjelennek a szolgáltatásregisztráció adatai, valamint az alkalmazás funkciói.
+-   A felhasználónak megjelennek a Knox-regisztráció adatai, valamint a Knox funkciói.
+-   Ha kényszerítve van egy titkosítási szabályzat, a felhasználóknak be kell állítaniuk egy legalább hat karakterből álló összetett jelszót az eszközön.
+-   A vállalati erőforrás-hozzáférés szolgáltatásai által leküldött tanúsítványok esetében nincsenek további felhasználói telepítési kérések.
+- Egyes régebbi Knox-eszközök további, vállalati erőforrás-hozzáféréshez használt tanúsítványokat kérhetnek a felhasználóktól.
+- Ha egy Samsung Mini-eszköz nem tudja telepíteni a WPJ-t **A tanúsítvány nem található** vagy a **Nem sikerült regisztrálni az eszközt** hibák miatt, telepítse a Samsung-vezérlőprogramok legújabb frissítéseit.

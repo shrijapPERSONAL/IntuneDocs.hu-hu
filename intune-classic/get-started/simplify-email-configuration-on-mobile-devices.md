@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Rövid útmutató: A mobileszközök e-mail-konfigurációjának leegyszerűsítése
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune-nal az Intune által kezelt iOS- Android- és Windows-mobileszközökre email-, VPN- és Wi-Fi-profilokat telepíthet, így időt és erőforrásokat takaríthat meg cégének. Az e-mail-profilok automatikus konfigurációja jelentősen javítja a végfelhasználói élményt, növeli az elégedettségi szintet, és csökkenti az ügyfélszolgálati kiadásokat.
 

@@ -1,27 +1,27 @@
 ---
-title: "E-mail-beállítások a Microsoft Intune-ban Windows Phone 8.1-es eszközök esetén"
-titleSuffix: 
-description: "Útmutató az e-mail-kapcsolatok Windows Phone 8.1 rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz."
-keywords: 
+title: E-mail-beállítások a Microsoft Intune-ban Windows Phone 8.1-es eszközök esetén
+titleSuffix: ''
+description: Útmutató az e-mail-kapcsolatok Windows Phone 8.1 rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06815ac6ed6e24bc1efb4ea612b867fc78e7fb5e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: a8d0ce028fbfa214240ce7973a2a0699a8c88a6a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>A Windows Phone 8.1 rendszerű eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk a Windows Phone 8.1 rendszerű eszközökhöz konfigurálható e-mail-profilbeállításokat mutatja be.
 

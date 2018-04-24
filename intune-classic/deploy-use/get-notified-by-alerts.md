@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: daa936b43c53d14d57f2c48f80dff7e908354054
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 35b47dbc789e7f2ea2b200b8c22ff3bae6152f40
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Riasztások használata Microsoft Intune-értesítésekhez
 
-[!INCLUDE[classic portal](../includes/classic-portal.md)]
+[!INCLUDE [classic portal](../includes/classic-portal.md)]
 
 A riasztásokkal nyomon követheti, mi történik a Microsoft Intune-ban. A riasztások többek között a következő eseményekről kaphat értesítést:
 - Az Exchange Connectorral kapcsolatos problémákról, amelyek a mobileszköz-felügyeletet is érintik

@@ -1,29 +1,29 @@
 ---
-title: "A Microsoft Intune hálózati követelményei és sávszélességi adatai"
-titlesuffix: 
-description: "Az Intune hálózati konfigurációja követelményeinek és a sávszélességi adatainak áttekintése."
-keywords: 
+title: A Microsoft Intune hálózati követelményei és sávszélességi adatai
+titlesuffix: ''
+description: Az Intune hálózati konfigurációja követelményeinek és a sávszélességi adatainak áttekintése.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune – a hálózati konfiguráció követelményei és sávszélessége
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Ez az útmutató az Intune szolgáltatás hálózati követelményeivel kapcsolatban nyújt segítséget a rendszergazdáknak. Információt talál benne a sávszélességre vonatkozó követelményekről, valamint a proxybeállításokhoz szükséges IP-cím- és portbeállításokról.
 
@@ -58,11 +58,13 @@ Az ügyfelek tartalomkéréseit fogadó gyorsítótárazási proxykiszolgálók 
 
 Az alábbiakban az Intune-ügyfelek számára tartalmakat gyorsítótárazó proxykiszolgálókhoz használható tipikus beállítások láthatók.
 
-|Beállítás|Javasolt érték|Részletek|
-|-----------|---------------------|-----------|
-|Gyorsítótár mérete|5 GB-tól 30 GB-ig|Az érték a hálózatban lévő ügyfélszámítógépek számától és a használt beállításoktól függ. A fájlok túl korai törlésének elkerülése érdekében a gyorsítótár mérete a környezethez igazítható.|
-|Egyedi gyorsítótárfájlok mérete|950 MB|Ez a beállítás nem feltétlenül érhető el minden gyorsítótárazási proxykiszolgálón.|
-|Gyorsítótárazandó objektumtípusok|HTTP<br /><br />HTTPS<br /><br />BITS|Az Intune-csomagok olyan CAB-fájlok, amelyeket a Háttérben futó intelligens átviteli szolgáltatás (BITS) tölt le HTTP protokollal.|
+
+|          Beállítás           |           Javasolt érték           |                                                                                                  Részletek                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Gyorsítótár mérete         |             5 GB-tól 30 GB-ig             | Az érték a hálózatban lévő ügyfélszámítógépek számától és a használt beállításoktól függ. A fájlok túl korai törlésének elkerülése érdekében a gyorsítótár mérete a környezethez igazítható. |
+| Egyedi gyorsítótárfájlok mérete |                950 MB                 |                                                                     Ez a beállítás nem feltétlenül érhető el minden gyorsítótárazási proxykiszolgálón.                                                                     |
+|   Gyorsítótárazandó objektumtípusok    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Az Intune-csomagok olyan CAB-fájlok, amelyeket a Háttérben futó intelligens átviteli szolgáltatás (BITS) tölt le HTTP protokollal.                                               |
+
 A proxykiszolgálók tartalmak gyorsítótárazására való használatával kapcsolatos további tudnivalókat a proxykiszolgáló-megoldása dokumentációjában találhat.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>A Háttérben futó intelligens átviteli szolgáltatás használata a számítógépeken
@@ -159,14 +161,16 @@ A következő táblázat az Intune-ügyfél által elért portokat és szolgált
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple-eszközhálózati információ
-| Állomásnév  | URL (IP-cím/alhálózat) | Protokoll | Port | Eszköz |
-| --- | --- | --- | --- | --- |
-|  Felügyeleti konzol  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS és macOS |
-| Felügyeleti konzol  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS és macOS |
-| Felügyeleti konzol  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS és macOS  |
-| PI-kiszolgáló  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Apple iOS és macOS esetén felhőalapú üzenetekhez. |
-| Eszközszolgáltatások  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Eszközszolgáltatások  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Eszközszolgáltatások  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Eszközök (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 és 443 | Csak Apple. &#39;#&#39; véletlenszerű szám 0 és 200 között. |
-| Eszközök (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 vagy 443 | Csak Apple |
+
+|         Állomásnév         |                                        URL (IP-cím/alhálózat)                                        |  Protokoll  |     Port     |                          Eszköz                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Felügyeleti konzol       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS és macOS                    |
+|      Felügyeleti konzol       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS és macOS                    |
+|      Felügyeleti konzol       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS és macOS                    |
+|        PI-kiszolgáló         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Apple iOS és macOS esetén felhőalapú üzenetekhez.          |
+|     Eszközszolgáltatások      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Eszközszolgáltatások      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Eszközszolgáltatások      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Eszközök (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 és 443 | Csak Apple. &#39;#&#39; véletlenszerű szám 0 és 200 között. |
+| Eszközök (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 vagy 443   |                        Csak Apple                         |
+

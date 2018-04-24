@@ -1,27 +1,27 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Windows 8.1 rendszerű eszközök esetén"
-titleSuffix: 
-description: "Az Intune azon beállításainak ismertetése, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 8.1 rendszerű eszközökön."
-keywords: 
+title: Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Windows 8.1 rendszerű eszközök esetén
+titleSuffix: ''
+description: Az Intune azon beállításainak ismertetése, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 8.1 rendszerű eszközökön.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d0203a8bea8a058d71130b16706269cb9a462cb3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>A Windows 8.1-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó beállításait, melyek konfigurálhatók Windows 8.1 és újabb rendszerű eszközökhöz.
 

@@ -1,47 +1,47 @@
 ---
-title: "Androidos eszközök kezelésének beállítása"
-description: "Lehetővé teheti az androidos vagy KNOX Standard-eszközöknek a Microsoft Intune-nal történő mobileszköz-felügyeletét (MDM)."
-keywords: 
+title: Androidos eszközök kezelésének beállítása
+description: Lehetővé teheti az androidos vagy KNOX Standard-eszközöknek a Microsoft Intune-nal történő mobileszköz-felügyeletét (MDM).
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5826cd29bf07a3f1cf9b91ec75f0e0bb46050d60
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d1245f5644b24d258f8542252f8910789b63ba02
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-android-device-management"></a>Android-eszközök kezelésének beállítása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune-rendszergazdaként a Munkahelyi portálról engedélyezheti az Android-eszközök (köztük a Samsung Knox Standard eszközök) kezelését. A felhasználók így a Google Play áruházban elérhető Munkahelyi portál alkalmazással regisztrálhatják az eszközeiket.
 
 Alapértelmezés szerint az Android-eszközök regisztrációja engedélyezett az Intune-ban. Az Android-eszközök regisztrációjának letiltásához jelentkezzen be a [Microsoft Intune felügyeleti portálra](https://manage.microsoft.com) a rendszergazdai hitelesítő adataival. Válassza a **Felügyelet** > **Mobileszköz-kezelés** > **Regisztráció szabályai** elemet, majd törölje az **Android-eszközök engedélyezése** jelölőnégyzetet.
 
-1.  **Az Intune beállítása**<br>
-    Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#step-2-set-mdm-authority), valamint beállítja a mobileszköz-kezelést.
+1. **Az Intune beállítása**<br>
+   Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** [állítja be a mobileszköz-kezelő szolgáltatóként](prerequisites-for-enrollment.md#step-2-set-mdm-authority), valamint beállítja a mobileszköz-kezelést.
 
-2.  **Android eszközök regisztrálása**<br>
-    Az androidos mobileszközök regisztrációjának engedélyezéséhez nincs szükség további beállítások megadására az Intune-konzolon.
+2. **Android eszközök regisztrálása**<br>
+   Az androidos mobileszközök regisztrációjának engedélyezéséhez nincs szükség további beállítások megadására az Intune-konzolon.
 
-3.  **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**
+3. **Mondja el a felhasználóknak, miként regisztrálhatják az eszközeiket a vállalati erőforrások eléréséhez.**
 
-    A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
+   A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). A beléptetési folyamat tájékoztatja a felhasználókat, hogy mire számíthatnak, illetve hogy mit láthatnak a rendszergazdák az eszközeiken található dolgokból, és mit nem.
 
-    Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
-  - [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate)
-  - [Végfelhasználói útmutató Android-eszközökhöz](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
+   Más végfelhasználói feladatokkal kapcsolatos további információkért tanulmányozza a következő cikkeket:
+   - [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate)
+   - [Végfelhasználói útmutató Android-eszközökhöz](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Kínában nem érhető el a Google Play áruház, ezért az Android-eszközöknek kínai alkalmazásáruházakból kell beszerezniük a Vállalati portált. Az androidos Munkahelyi portál alkalmazás a következő áruházakból is letölthető lesz:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
@@ -60,5 +60,5 @@ A Munkahelyi portál alkalmazás androidos verziója a Google Play szolgáltatá
 |Távoli zárolás|||
 |PIN-kód alaphelyzetbe állítása|||
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md)

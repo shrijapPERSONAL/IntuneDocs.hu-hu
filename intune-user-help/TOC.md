@@ -128,7 +128,7 @@
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
 ### [Az eszköz titkosítása](encrypt-your-device-windows.md)
 ### [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)
-### [Az eszköz regisztrációjának törlése az Intune-ból](unenroll-your-device-from-intune-windows.md)
+### [Eltávolíthatja az eszközét az Intune-ból](unenroll-your-device-from-intune-windows.md)
 ### [Mi történik, ha törli az eszköz regisztrációját?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)

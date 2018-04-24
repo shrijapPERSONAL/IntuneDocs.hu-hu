@@ -1,29 +1,33 @@
 ---
-title: "WiFi-profil létrehozása előmegosztott kulccsal az Azure-beli Microsoft Intune-ban | Microsoft Docs"
-description: "Egyéni profil segítségével létrehozhat egy előmegosztott kulcsú Wi-Fi-profilt. A cikkben találhat XML-mintakódot Android-, Windows- és EAP-alapú Wi-Fi-profilok Microsoft Intune-ban való létrehozásához."
-keywords: 
+title: WiFi-profil létrehozása előmegosztott kulccsal az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Egyéni profil segítségével létrehozhat egy előmegosztott kulcsú Wi-Fi-profilt. A cikkben találhat XML-mintakódot Android-, Windows- és EAP-alapú Wi-Fi-profilok Microsoft Intune-ban való létrehozásához.
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Előmegosztott kulccsal ellátott WiFi-profil létrehozása egyéni eszközprofil segítségével – Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az előmegosztott kulcsok (PSK-k) segítségével hitelesítheti a felhasználókat a vezeték nélküli helyi hálózatokon. Az Intune-nal hozhat létre egy előmegosztott kulccsal ellátott WiFi-profilt. A profil létrehozásához először készítenie kell egy **egyéni eszközkonfigurációs profilt** az Intune-ban. A cikk emellett tartalmaz néhány példát az EAP-alapú Wi-Fi-profilok létrehozásához is.
+
+> [!IMPORTANT]
+>- Az előmegosztott kulcsok Windows 10 rendszerben való használata szervizelési hiba megjelenéséhez vezet az Intune-ban. E hiba megjelenésekor a Wi-Fi-profilt a rendszer megfelelően hozzárendeli az eszközhöz, és a profil a várt módon fog működni.
+>- Az előmegosztott kulcsot tartalmazó Wi-Fi-profilok exportálásakor gondoskodjon a fájlok védelméről. A kulcs egyszerű szövegként szerepel, ezért az Ön felelőssége a kulcs védelme.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -46,15 +50,15 @@ Hozhat létre előmegosztott kulcsot tartalmazó egyéni profilt Androidhoz vagy
 
    d. **OMA-URI**:
 
-    - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Ne hagyja ki a karaktersor elején található pontot.
+     > [!NOTE]
+     > Ne hagyja ki a karaktersor elején található pontot.
 
-    Az SSID az az SSID, amelyhez létrehozza a házirendet. Például írja be a következőt: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     Az SSID az az SSID, amelyhez létrehozza a házirendet. Például írja be a következőt: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Érték mező**: ide illessze be az XML-kódot. Tekintse át a cikkben található példákat. Módosítsa az értékeket a saját hálózati beállításainak megfelelően. A kódban található megjegyzések további információt nyújtanak.
+   e. **Érték mező**: ide illessze be az XML-kódot. Tekintse át a cikkben található példákat. Módosítsa az értékeket a saját hálózati beállításainak megfelelően. A kódban található megjegyzések további információt nyújtanak.
 3. Válassza az **OK** gombot, mentsen, majd társítsa a szabályzatot.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ Az XML-fájlt meglévő Wi-Fi-kapcsolat alapján is létrehozhatja az alábbi l�
 
 1. Nyissa meg a következő mappát egy olyan számítógépen, amely kapcsolódik a kívánt vezeték nélküli hálózathoz, vagy a közelmúltban kapcsolódott hozzá: `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
 
-  Célszerű olyan számítógépet választania, amely nem csatlakozott sok vezeték nélküli hálózathoz. Máskülönben előfordulhat, hogy végig kell böngésznie az összes profilt a helyes profil megtalálásához.
+   Célszerű olyan számítógépet választania, amely nem csatlakozott sok vezeték nélküli hálózathoz. Máskülönben előfordulhat, hogy végig kell böngésznie az összes profilt a helyes profil megtalálásához.
 
 2. Keresse meg az XML-fájlok között a megfelelő nevű fájlt.
 3. Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal **Adat** mezőjébe.

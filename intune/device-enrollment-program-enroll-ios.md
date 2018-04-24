@@ -15,15 +15,15 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple Készülékregisztrációs programjával
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Átmeneti felhasználói felületi eltérések
@@ -76,11 +76,11 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** elemet.
 
-  ![A Készülékregisztrációs programbeli token panel az Apple-tanúsítványok munkaterületen](./media/enrollment-program-token-add.png)
+   ![A Készülékregisztrációs programbeli token panel az Apple-tanúsítványok munkaterületen](./media/enrollment-program-token-add.png)
 
 2. Kattintson a **Nyilvános kulcs letöltése** elemre a titkosításikulcs-fájl (.pem) letöltéséhez és helyi mentéséhez. A .pem fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple Device Enrollment Program portálról.
 
-  ![A Készülékregisztrációs programbeli token panel az Apple tanúsítványok munkaterületen – nyilvános kulcs letöltése](./media/enrollment-program-token-download.png)
+   ![A Készülékregisztrációs programbeli token panel az Apple tanúsítványok munkaterületen – nyilvános kulcs letöltése](./media/enrollment-program-token-download.png)
 
 **2. lépés Hozzon létre és töltsön le egy Apple DEP-jogkivonatot.**<br>
 1. A **Token létrehozása az Apple Készülékregisztrációs programjában** elemre kattintva nyissa meg az Apple Központi Telepítési Program portálját és jelentkezzen be a cége Apple-azonosítójával. A későbbiekben ezt az Apple ID-t használhatja a DEP-token megújításához.
@@ -120,37 +120,37 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 2. Az **Apple készülékregisztrációs programon** belül válassza a **Készülékregisztrációs programbeli profilok**  > **Létrehozás** elemet.
 3. A **Regisztrációs profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül kívánja-e regisztrálni.
+   A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül kívánja-e regisztrálni.
 
- - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, mint például az alkalmazások telepítése, a céges portált kell használniuk. A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+   - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, mint például az alkalmazások telepítése, a céges portált kell használniuk. A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyeket nem társítottak adott felhasználóhoz. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
+   - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyeket nem társítottak adott felhasználóhoz. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
 4. Az **Eszközfelügyeleti beállítások** lehetőség választásával konfigurálja a következő profilbeállításokat:
 
-  ![Felügyeleti mód kiválasztása](./media/enrollment-program-profile-mode.png)
-  - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek. A felügyelt módú üzemeltetés lehetővé tételéhez a Microsoft a DEP használatát javasolja, különösen olyan szervezeteknél, amelyeknél nagy mennyiségű iOS-eszközt használnak.
+   ![Felügyeleti mód kiválasztása](./media/enrollment-program-profile-mode.png)
+   - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek. A felügyelt módú üzemeltetés lehetővé tételéhez a Microsoft a DEP használatát javasolja, különösen olyan szervezeteknél, amelyeknél nagy mennyiségű iOS-eszközt használnak.
 
- > [!NOTE]
- > Regisztráció után már nem lehet az eszközöket felügyelt módra állítani az Intune-t használva. Ha a regisztráció már megtörtént, az iOS-eszközt egy USB-kábelt használva össze kell kötni egy Mac számítógéppel, és az Apple Configuratort használva engedélyezni kell rajta a felügyelt módot. Ennek hatására a rendszer először alaphelyzetbe állítja az eszközt, majd beállítja rajta a felügyelt módot. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat. A felügyelt készülékeken meg fog jelenni az „Ezt az iPhone-t a Contoso kezeli.” felirat a zárolási képernyőn, valamint az „Ez egy felügyelt iPhone. A Contoso figyelheti az internetes forgalmat és megállapíthatja a készülék helyét.” figyelmeztetés. a **Beállítások** > **Általános** > **Névjegy** menüpontban.
+   > [!NOTE]
+   > Regisztráció után már nem lehet az eszközöket felügyelt módra állítani az Intune-t használva. Ha a regisztráció már megtörtént, az iOS-eszközt egy USB-kábelt használva össze kell kötni egy Mac számítógéppel, és az Apple Configuratort használva engedélyezni kell rajta a felügyelt módot. Ennek hatására a rendszer először alaphelyzetbe állítja az eszközt, majd beállítja rajta a felügyelt módot. Ezzel kapcsolatban az [Apple Configurator dokumentációjában](http://help.apple.com/configurator/mac/2.3) talál további információkat. A felügyelt készülékeken meg fog jelenni az „Ezt az iPhone-t a Contoso kezeli.” felirat a zárolási képernyőn, valamint az „Ez egy felügyelt iPhone. A Contoso figyelheti az internetes forgalmat és megállapíthatja a készülék helyét.” figyelmeztetés. a **Beállítások** > **Általános** > **Névjegy** menüpontban.
 
-  - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül.
+   - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül.
 
-  - **Megosztott iPad engedélyezése** – Az Apple Készülékregisztrációs programja nem támogatja a megosztott iPadeket.
+   - **Megosztott iPad engedélyezése** – Az Apple Készülékregisztrációs programja nem támogatja a megosztott iPadeket.
 
-  - **Párosítás engedélyezése** – meghatározza, hogy az iOS-eszközök szinkronizálhatók-e a számítógéppel. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
+   - **Párosítás engedélyezése** – meghatározza, hogy az iOS-eszközök szinkronizálhatók-e a számítógéppel. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
 
-  - **Apple Configurator-tanúsítványok** – Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta a **Párosítás engedélyezése** területen, válassza ki az importálandó Apple Configurator-tanúsítványt.
+   - **Apple Configurator-tanúsítványok** – Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választotta a **Párosítás engedélyezése** területen, válassza ki az importálandó Apple Configurator-tanúsítványt.
 
-  Válassza a **Mentés** elemet.
+   Válassza a **Mentés** elemet.
 
 5. Kattintson a **Beállítási asszisztens beállításai** elemre, és konfigurálja az alábbi profilbeállításokat:
 
-  ![A beállítások konfigurálásának választása és az új regisztrációs programbeli profil létrehozásához elérhető beállítások](./media/enrollment-program-profile-settings.png)
-  - **Részleg neve** – Akkor jelenik meg, ha a felhasználó az aktiválás során az **About Configuration** (Konfiguráció névjegye) elemre koppint.
+   ![A beállítások konfigurálásának választása és az új regisztrációs programbeli profil létrehozásához elérhető beállítások](./media/enrollment-program-profile-settings.png)
+   - **Részleg neve** – Akkor jelenik meg, ha a felhasználó az aktiválás során az **About Configuration** (Konfiguráció névjegye) elemre koppint.
 
-  - **Részleg telefonszáma** – Akkor jelenik meg, ha a felhasználó az aktiválás közben a **Segítségre van szüksége?** gombra kattint.
-    - **Beállítási asszisztens – Beállítások** – Ezeknek a beállításoknak a megadása nem kötelező, és az iOS **Beállítások** menüjében később is konfigurálhatók.
+   - **Részleg telefonszáma** – Akkor jelenik meg, ha a felhasználó az aktiválás közben a **Segítségre van szüksége?** gombra kattint.
+     - **Beállítási asszisztens – Beállítások** – Ezeknek a beállításoknak a megadása nem kötelező, és az iOS **Beállítások** menüjében később is konfigurálhatók.
         - **PIN-kód**
         - **Helyalapú szolgáltatások**
         - **Visszaállítás**
@@ -162,16 +162,19 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
         - **Siri**
         - **Diagnosztikai adatok**
 
-    Válassza a **Mentés** elemet.
+     Válassza a **Mentés** elemet.
 
-9. A profilbeállítások mentéséhez a **Regisztrációs profil létrehozása** panelen kattintson a **Létrehozás** elemre. A regisztrációs profil megjelenik az Apple Regisztrációs Program Regisztrációs profillistájában.
+>[!NOTE]
+>Az iOS rendszer 11-es verziójától kezdődően az iCloud-alapú biztonsági másolat visszaállításának engedélyezéséhez a Beállítási asszisztens „Visszaállítás” és „Apple ID” beállítását egyaránt meg kell adnia.
+
+6. A profilbeállítások mentéséhez a **Regisztrációs profil létrehozása** panelen kattintson a **Létrehozás** elemre. A regisztrációs profil megjelenik az Apple Regisztrációs Program Regisztrációs profillistájában.
 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
 Miután az Intune engedélyt kapott az eszközei felügyeletére, szinkronizálhatja az Intune-t az Apple-lel, hogy megtekinthesse a felügyelt eszközöket az Azure-beli Intune-portálon.
 
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
-  ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
+   ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
 
 2. A **Szinkronizálás** panelen válassza a **Szinkronizálási kérelem** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
@@ -193,15 +196,15 @@ Ahhoz, hogy egy eszközt regisztrálni lehessen, először hozzá kell rendelni 
 1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközregisztráció** > **Apple-regisztráció**, majd a **Készülékregisztrációs programbeli profilok** lehetőséget.
 2. A **Készülékregisztrációs programbeli profilok** listájáról válassza ki azt a profilt, amelyet az eszközökhöz kíván rendelni, majd kattintson az **Eszközök hozzárendelése** elemre.
 
- ![Az eszköz-hozzárendelések a Hozzárendelés lehetőség kijelölésével](./media/enrollment-program-device-assign.png)
+   ![Az eszköz-hozzárendelések a Hozzárendelés lehetőség kijelölésével](./media/enrollment-program-device-assign.png)
 
 3. Kattintson a **Hozzárendelés** elemre, majd válassza ki a profilhoz rendelendő eszközöket. A megjelenített eszközöket az alábbiak szerint szűrheti:
-  - **nem hozzárendelt**
-  - **bármelyik**
-  - **&lt;profilnév&gt;**
+   - **nem hozzárendelt**
+   - **bármelyik**
+   - **&lt;profilnév&gt;**
 4. Válassza ki a hozzárendelni kívánt eszközöket. Az oszlop fölötti jelölőnégyzettel legfeljebb 1000 eszköz választható ki. Ezután kattintson a **Hozzárendel** gombra. Ha több mint 1000 eszközt szeretne hozzárendelni, ismételje meg a lépéseket, amíg az összes eszközt hozzá nem rendelte egy regisztrációs profilhoz.
 
-  ![A készülékregisztrációs programbeli profil hozzárendelésére szolgáló gomb az Intune-ban](media/dep-profile-assignment.png)
+   ![A készülékregisztrációs programbeli profil hozzárendelésére szolgáló gomb az Intune-ban](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>Eszközök terjesztése
 Az eddigiekben engedélyezte az eszközfelügyeletet és a szinkronizálást az Apple és az Intune között, valamint a DEP-eszközök regisztrálása céljából hozzárendelt egy profilt. Az eszközök ekkor már kioszthatók a felhasználóknak. Felhasználói affinitással rendelkező eszközök esetén minden felhasználóhoz hozzá kell rendelni egy Intune-licencet. A felhasználói affinitás nélküli eszközökhöz licenc szükséges. Regisztrációs profil csak akkor léptethető érvénybe egy aktivált eszközön, ha előtte visszaállítják az eszköz gyári beállításait.

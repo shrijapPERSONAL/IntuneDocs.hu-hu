@@ -1,29 +1,29 @@
 ---
-title: "Mobileszközök biztonsági házirendjének beállításai"
-description: "Az Intune használatával konfigurálhatja azokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni."
-keywords: 
+title: Mobileszközök biztonsági házirendjének beállításai
+description: Az Intune használatával konfigurálhatja azokat a beállításokat, amelyeket a vállalat felügyelt eszközein kíván érvénybe léptetni.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > A Microsoft Intune most már külön konfigurációs szabályzatokat biztosít a különböző eszközplatformokhoz. Ezek a szabályzatok a felhasználható legfrissebb beállításokat tartalmazzák. Továbbra is használhatja a mobileszköz-biztonsági szabályzatot, és a meglévő telepítések továbbra is működni fognak. Mindazonáltal fel kell készülnie az új konfigurációs szabályzatokra való mielőbbi áttérésre, mivel a későbbiekben el lesz távolítva a mobileszköz-biztonsági szabályzat.
@@ -48,32 +48,34 @@ Mobileszköz-biztonsági szabályzatokat a következő eszköztípusok esetében
 
 ## <a name="security-settings"></a>Biztonsági beállítások
 
-|Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Jelszó megkövetelése a mobileszköz-zárolás feloldásához**|Nem|Nem|Igen|Igen|Igen|
-|**Kötelező jelszótípus**<br /><br />Ez a beállítás határozza meg a kötelező jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|Igen|Igen|Igen|Igen|Nem|
-|**Megkövetelt jelszótípus – a karakterkészletek minimális száma**<br /><br />A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. Ez a beállítás azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. iOS-eszközök esetén azonban azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban.|Igen|Igen|Igen|Igen|Nem|
-|**Jelszó minimális hossza**|Igen|Igen|Igen|Igen|Igen|
-|**Egyszerű jelszavak engedélyezése**<br /><br />Egyszerű jelszó például a „0000” és az „1234”.|Nem|Nem|Igen|Igen|Nem|
-|**Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről**|Igen|Igen|Igen|Igen|Igen|
-|**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Igen|Igen|Igen|Igen|Igen|
-|**Jelszó érvényessége (nap)**|Igen|Igen|Igen|Igen|Igen|
-|**Korábbi jelszavak megjegyzése**|Igen|Igen|Igen|Igen|Igen|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Igen|Igen|Igen|Igen|Igen|
-|**Jelszó erőssége**|Nem|Nem|Nem|Nem|Igen|
-|**Képjelszó és PIN-kód engedélyezése**|Igen|Igen|Nem|Nem|Nem|
-|**Jelszó kérése ennyi perc inaktivitás után**|Nem|Nem|Nem|Igen|Nem|
-|**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Nem|Nem|Nem|iOS 7 és újabb verziók|Nem|
+|                                                                                                                                                                                        Beállítás neve                                                                                                                                                                                         | Windows 8.1 és Windows RT 8.1 | Windows RT | Windows Phone 8 és Windows Phone 8.1 |       iOS       | Android és Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Jelszó megkövetelése a mobileszköz-zárolás feloldásához</strong>                                                                                                                                                                 |               Nem               |     Nem     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                 <strong>Kötelező jelszótípus</strong><br /><br />Ez a beállítás határozza meg a kötelező jelszótípust, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.                                                                                                                 |              Igen               |    Igen     |                  Igen                  |       Igen       |                Nem                 |
+| <strong>Megkövetelt jelszótípus – a karakterkészletek minimális száma</strong><br /><br />A következő négy karakterkészlet létezik: kisbetűk, nagybetűk, számok és szimbólumok. Ez a beállítás azt határozza meg, hány különböző karakterkészletnek kell szerepelnie a jelszóban. iOS-eszközök esetén azonban azt határozza meg, hány szimbólumnak kell szerepelnie a jelszóban. |              Igen               |    Igen     |                  Igen                  |       Igen       |                Nem                 |
+|                                                                                                                                                                          <strong>Jelszó minimális hossza</strong>                                                                                                                                                                           |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                               <strong>Egyszerű jelszavak engedélyezése</strong><br /><br />Egyszerű jelszó például a „0000” és az „1234”.                                                                                                                                                |               Nem               |     Nem     |                  Igen                  |       Igen       |                Nem                 |
+|                                                                                                                                                  <strong>Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről</strong>                                                                                                                                                   |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                                         <strong>Képernyő kikapcsolása ennyi perc inaktivitás után</strong><sup>1</sup>                                                                                                                                                          |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                                                         <strong>Jelszó érvényessége (nap)</strong>                                                                                                                                                                         |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                                                         <strong>Korábbi jelszavak megjegyzése</strong>                                                                                                                                                                          |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                              <strong>Korábbi jelszavak megjegyzése</strong> – <strong>Korábbi jelszavak újbóli használatának tiltása</strong>                                                                                                                                              |              Igen               |    Igen     |                  Igen                  |       Igen       |                Igen                |
+|                                                                                                                                                                              <strong>Jelszó erőssége</strong>                                                                                                                                                                              |               Nem               |     Nem     |                  Nem                   |       Nem        |                Igen                |
+|                                                                                                                                                                       <strong>Képjelszó és PIN-kód engedélyezése</strong>                                                                                                                                                                       |              Igen               |    Igen     |                  Nem                   |       Nem        |                Nem                 |
+|                                                                                                                                                             <strong>Jelszó kérése ennyi perc inaktivitás után</strong>                                                                                                                                                              |               Nem               |     Nem     |                  Nem                   |       Igen       |                Nem                 |
+|                                                                                                                                                                          <strong>Ujjlenyomattal történő zárolásfeloldás engedélyezése</strong>                                                                                                                                                                          |               Nem               |     Nem     |                  Nem                   | iOS 7 és újabb verziók |                Nem                 |
+
 <sup>1</sup>Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, egymás után alkalmazza őket a rendszer. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra vonatkozó szabályzatot, a rendszer a felhasználókat a jelszavuk módosítására kényszeríti, még akkor is, ha az aktuális jelszó megfelel a szabályzat követelményeinek.
 
 ## <a name="encryption-settings"></a>Titkosítási beállítások
 
-|Beállítás neve|Windows 8.1 és Windows RT 8.1|Windows RT|Windows Phone 8 és Windows Phone 8.1|iOS|Android és Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|Igen|Nem|Igen|Nem|Igen|
-|**Titkosítás megkövetelése tárolókártyákon**<br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.|nem áll rendelkezésre|nem áll rendelkezésre|nem áll rendelkezésre <br />Az alkalmazások és a kapcsolódó adatok titkosítása automatikusan megtörténik.|nem áll rendelkezésre|Igen|
+|                                                                                                                                     Beállítás neve                                                                                                                                     | Windows 8.1 és Windows RT 8.1 | Windows RT |              Windows Phone 8 és Windows Phone 8.1              | iOS | Android és Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Titkosítás megkövetelése mobileszközön</strong><sup>1</sup><br /><br />A Windows Phone 8-telefonokon ezt <strong>Igen</strong>értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez <strong>A mobileszközök zárolásának feloldásához jelszó szükséges</strong>beállítást engedélyezni kell. |              Igen               |     Nem     |                               Igen                               | Nem  |                Igen                |
+|                                                                    <strong>Titkosítás megkövetelése tárolókártyákon</strong><br /><br />Az Exchange ActiveSync által felügyelt eszközökre is vonatkozik.                                                                     |              nem áll rendelkezésre               |    nem áll rendelkezésre     | nem áll rendelkezésre <br />Az alkalmazások és a kapcsolódó adatok titkosítása automatikusan megtörténik. | nem áll rendelkezésre |                Igen                |
+
 <sup>1</sup>További információ a Windows 8.1 rendszerű eszközökkel kapcsolatban:
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](http://support.microsoft.com/kb/3013816) .
@@ -212,5 +214,5 @@ Ha Windows RT rendszerű eszközökön léptet érvénybe jelszóhosszúságra v
 |**Vágólap alkalmazások közötti megosztásának engedélyezése**|Nem|Nem|Nem|Nem|Igen (csak Samsung KNOX Standard)|
 |**YouTube engedélyezése**|Nem|Nem|Nem|Nem|Igen (csak Samsung KNOX Standard)|
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,27 +1,27 @@
 ---
-title: "A Microsoft Intune Windows 10 rendszerű eszközökre vonatkozó e-mail-beállításai"
-titleSuffix: 
-description: "Útmutató az e-mail-beállítások Windows 10 rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz."
-keywords: 
+title: A Microsoft Intune Windows 10 rendszerű eszközökre vonatkozó e-mail-beállításai
+titleSuffix: ''
+description: Útmutató az e-mail-beállítások Windows 10 rendszerű eszközökön való konfigurálásához használható Intune-beállításokhoz.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4a0c3eaf0643ede02b8c084d172b7a51d251b3a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>A Windows 10 rendszerű eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk a Windows 10 rendszerű eszközökhöz konfigurálható e-mail-profilbeállításokat mutatja be.
 

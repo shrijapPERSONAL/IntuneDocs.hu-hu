@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok az Azure Portalon
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Azure Portalon a következőkre vonatkozó alkalmazásvédelmi szabályzatokat hozhat létre és kezelhet:
 
@@ -32,9 +32,9 @@ Az Azure Portalon a következőkre vonatkozó alkalmazásvédelmi szabályzatoka
 - Semmilyen MDM-megoldásban **nem regisztrált** eszközökön futó alkalmazások.
 - **Harmadik féltől származó MDM-megoldásban regisztrált** eszközökön futó alkalmazások.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Az Azure Portal az új felügyeleti konzol az alkalmazásvédelmi szabályzatok létrehozására. Az Intune-ban regisztrált eszközök alkalmazásait támogató alkalmazásvédelmi szabályzatokat is létrehozhat azonban, ha az [Intune felügyeleti konzolt](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) használja a mobileszközök kezelésének bizonyos eseteire.
-
+> 
 > Előfordulhat, hogy az Intune felügyeleti konzolon nem jelenik az alkalmazásvédelmi szabályzatok minden beállítása. Emellett ha az Intune felügyeleti konzolon és az Azure Portalon is hoz létre alkalmazásvédelmi szabályzatokat, az Azure Portalon létrehozott szabályzatok felülbírálják az Intune felügyeleti konzolon létrehozottakat. Ebben az esetben a rendszer az Azure Portal alkalmazásvédelmi szabályzatait érvényesíti az alkalmazásokra, illetve telepíti a felhasználók számára.
 
 

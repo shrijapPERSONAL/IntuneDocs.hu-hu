@@ -1,29 +1,29 @@
 ---
-title: "Az Apple School Manager programba való regisztrálás beállítása iOS-eszközök esetén"
+title: Az Apple School Manager programba való regisztrálás beállítása iOS-eszközök esetén
 titlesuffix: Microsoft Intune
-description: "A cikk tájékoztatást nyújt az Apple School Manager programba való regisztrálás Intune-beli beállításáról céges tulajdonú iOS-eszközök esetén."
-keywords: 
+description: A cikk tájékoztatást nyújt az Apple School Manager programba való regisztrálás Intune-beli beállításáról céges tulajdonú iOS-eszközök esetén.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának beállítása az Apple School Manager programban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Átmeneti felhasználói felületi eltérések
@@ -61,7 +61,7 @@ A céges tulajdonú iOS-eszközök regisztrálását csak akkor végezheti el az
 **1. lépés Töltsön le egy nyilvános kulcsú Intune-tanúsítványt, amelyre szükség van az Apple-token létrehozásához.**<br>
 1. Az [Azure-beli Intune-portálon](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása**, majd a **Készülékregisztrációs programbeli token** lehetőséget.
 
-  ![A Készülékregisztrációs programbeli token panel az Apple tanúsítványok munkaterületen – nyilvános kulcs letöltése](./media/enrollment-program-token-download.png)
+   ![A Készülékregisztrációs programbeli token panel az Apple tanúsítványok munkaterületen – nyilvános kulcs letöltése](./media/enrollment-program-token-download.png)
 
 2. A **Készülékregisztrációs programbeli token** panelen válassza a **Nyilvános kulcs letöltése** lehetőséget a titkosításikulcs-fájl (.pem) letöltéséhez és helyi mentéséhez. A .pem-fájllal megbízhatósági kapcsolati tanúsítványt kérhet az Apple School Manager portálról.
 
@@ -95,20 +95,20 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
 4. A **Regisztrációs profil létrehozása** panelen adja meg az Intune-ban megjelenő profil **nevét** és **leírását**.
 5. A **Felhasználói affinitás** beállítással adhatja meg, hogy a profilt használó eszközök felhasználói affinitással vagy anélkül legyenek-e regisztrálva.
 
- - **Regisztrálás felhasználói affinitással** – A telepítés során egy adott felhasználóhoz társítja az eszközt.
+   - **Regisztrálás felhasználói affinitással** – A telepítés során egy adott felhasználóhoz társítja az eszközt.
 
-  Az Apple School Manager megosztott iPadeket kezelő üzemmódja felhasználói affinitás nélküli regisztrálást igényel.
+   Az Apple School Manager megosztott iPadeket kezelő üzemmódja felhasználói affinitás nélküli regisztrálást igényel.
 
- - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyeket nem egy adott felhasználóhoz társítottak, például megosztott eszközök esetében. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
+   - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyeket nem egy adott felhasználóhoz társítottak, például megosztott eszközök esetében. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
 6. Válassza az **Eszközkezelési beállítások** lehetőséget. A rendszer ezeket az elemeket az aktiválás során állítja be, és a módosításhoz a gyári beállítások visszaállítására van szükség. Konfigurálja az alábbi profilbeállításokat, majd válassza a **Mentés** lehetőséget:
 
-  ![Felügyeleti mód kiválasztása](./media/enrollment-program-profile-mode.png)
+   ![Felügyeleti mód kiválasztása](./media/enrollment-program-profile-mode.png)
 
-    - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
+   - **Felügyelt** – olyan felügyeleti mód, amely több felügyeleti funkciót engedélyez, és alapértelmezés szerint tiltja az Aktiválási zár funkciót. Ha a jelölőnégyzetet üresen hagyja, a felügyeleti lehetőségek korlátozva lesznek.
 
      - **Zárolt regisztráció** – (Felügyelt felügyeleti mód szükséges hozzá) Letiltja az iOS azon beállításait, amelyek lehetővé tennék a felügyeleti profil eltávolítását. Ha a jelölőnégyzetet üresen hagyja, lehetővé teszi a felügyeleti profil eltávolítását a Beállítások menüből.
-   - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és Felügyelt üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
+     - **Megosztott iPad** – (**Felhasználói affinitás nélküli regisztrálást** és Felügyelt üzemmódot igényel.) Egy felügyelt Apple ID azonosító használatával több felhasználónak teszi lehetővé a regisztrált iPadekre való bejelentkezést. A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
 
    >[!NOTE]
    >Ha a **Felhasználói affinitás** a **Felhasználói affinitással** lehetőségre van állítva, vagy a **Felügyelt** üzemmód **ki** van kapcsolva, a rendszer letiltja a Megosztott iPad üzemmódot a regisztrációs profilban.
@@ -149,14 +149,14 @@ A regisztrálás során az eszközök csoportjára alkalmazott beállításokat 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
 Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyeletére, szinkronizálhatja az Intune-t az Apple szolgáltatással, hogy a felügyelt eszközök megjelenjenek az Intune-ban.
 
-1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
+1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli eszközök** > **Szinkronizálás** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
-  ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
+   ![A Szinkronizálás hivatkozás kiválasztása a Készülékregisztrációs programba felvett eszközök mező kijelölése után](./media/enrollment-program-device-sync.png)
 2. A **Szinkronizálás** panelen válassza a **Szinkronizálási kérelem** lehetőséget. A folyamatjelző mutatja, hogy mennyi idő múlva lehetséges újabb szinkronizálási kérelmet indítani.
 
-  ![Szinkronizálási kérelem hivatkozás kiválasztása a Szinkronizálás panelen](./media/enrollment-program-device-request-sync.png)
+   ![Szinkronizálási kérelem hivatkozás kiválasztása a Szinkronizálás panelen](./media/enrollment-program-device-request-sync.png)
 
-  Az Apple elfogadható forgalomra vonatkozó feltételeinek teljesítése céljából az Intune az alábbi korlátozásokat írja elő:
+   Az Apple elfogadható forgalomra vonatkozó feltételeinek teljesítése céljából az Intune az alábbi korlátozásokat írja elő:
    -    Teljes szinkronizálás legfeljebb hétnaponta futtatható. A teljes szinkronizálás során az Intune frissíti az Apple által hozzárendelt összes Intune-sorozatszámot, függetlenül attól, hogy azokat korábban szinkronizálták-e. Ha az előző teljes szinkronizálástól számított hét napon belül újabb teljes szinkronizálást kísérel meg, az Intune csak a szolgáltatásban még nem szereplő sorozatszámokat frissíti.
    -    A szinkronizálási kérések elbírálása 15 percet vesz igénybe. Ez idő alatt, vagy amíg a kérelem ellenőrzése nem fejeződött be, a **Szinkronizálás** gomb inaktív.
 
@@ -169,15 +169,15 @@ Az Intune által felügyelt Apple School Manager-eszközökhöz még a regisztr�
 1. Az [Azure Portalbeli Intune-on](https://aka.ms/intuneportal) válassza az **Eszközregisztráció** > **Apple-regisztráció**, majd a **Készülékregisztrációs programbeli profilok** lehetőséget.
 2. A **Készülékregisztrációs programbeli profilok** listából válassza ki az eszközhöz hozzárendelni kívánt profilt, majd válassza az **Eszköz-hozzárendelések** elemet.
 
- ![Az eszköz-hozzárendelések a Hozzárendelés lehetőség kijelölésével.](./media/enrollment-program-device-assign.png)
+   ![Az eszköz-hozzárendelések a Hozzárendelés lehetőség kijelölésével.](./media/enrollment-program-device-assign.png)
 
 3. Kattintson a **Hozzárendelés** elemre, majd válassza ki a profilhoz hozzárendelni kívánt Apple School Manager-eszközöket. A megjelenített eszközöket az alábbiak szerint szűrheti:
-  - **nem hozzárendelt**
-  - **bármelyik**
-  - **&lt;profilnév&gt;**
+   - **nem hozzárendelt**
+   - **bármelyik**
+   - **&lt;profilnév&gt;**
 4. Válassza ki a hozzárendelni kívánt eszközöket. Az oszlop feletti jelölőnégyzettel legfeljebb 1000 listázott eszköz jelölhető ki. Kattintson a **Hozzárendelés** elemre. Ha több mint 1000 eszközt szeretne hozzárendelni, ismételje meg a lépéseket, amíg az összes eszközt hozzá nem rendelte egy regisztrációs profilhoz.
 
-  ![A készülékregisztrációs programbeli profil hozzárendelésére szolgáló gomb az Intune-ban](media/dep-profile-assignment.png)
+   ![A készülékregisztrációs programbeli profil hozzárendelésére szolgáló gomb az Intune-ban](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>Eszközök terjesztése a felhasználóknak
 

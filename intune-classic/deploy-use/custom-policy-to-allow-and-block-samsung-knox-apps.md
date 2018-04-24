@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Egyéni szabályzat használata alkalmazások engedélyezéséhez és letiltásához Samsung Knox Standard-eszközökön
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ennek a témakörnek az eljárásait használva elkészíthet egy egyéni Microsoft Intune-szabályzatot, amellyel az alábbiak egyikét hozhatja létre:
 
@@ -39,21 +39,21 @@ Ezek a beállítások kizárólag a Samsung Knox Standard rendszerű eszközök�
 3. Adja meg a szabályzat nevét és leírását (az utóbbi nem kötelező), majd az **OMA-URI beállítások** szakaszban válassza a **Hozzáadás** lehetőséget.
 4. Az **OMA-URI beállítás hozzáadása vagy szerkesztése** párbeszédpanelen adja meg a következő információkat. Az eszközön nem futtatható alkalmazások listájához:
     
-    - **A beállítás neve:** Írja be a következőt: **PreventStartPackages**.
-    - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „Nem futtatható alkalmazások listája”.
-    -   **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
-    -   **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Érték:** Adja meg a letiltani kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
+   - **A beállítás neve:** Írja be a következőt: **PreventStartPackages**.
+   - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „Nem futtatható alkalmazások listája”.
+   - **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
+   - **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **Érték:** Adja meg a letiltani kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
 
-    Azon alkalmazások listájához, amelyek telepítése engedélyezett a felhasználók számára a Google Play áruházból, miközben minden más alkalmazás le van tiltva:
+     Azon alkalmazások listájához, amelyek telepítése engedélyezett a felhasználók számára a Google Play áruházból, miközben minden más alkalmazás le van tiltva:
 
-    - **A beállítás neve:** Írja be a következőt: **AllowInstallPackages**.
-    - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „A Google Play áruházból telepíthető alkalmazások listája”.
-    - **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
-    - **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-    - **Érték:** Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
+   - **A beállítás neve:** Írja be a következőt: **AllowInstallPackages**.
+   - **A beállítás leírása:** Ha szeretné, beírhat egy leírást. Például: „A Google Play áruházból telepíthető alkalmazások listája”.
+   - **Adattípus:** A legördülő listából válassza a **Karakterlánc** elemet.
+   - **OMA-URI:** Írja be a következőt: **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Érték:** Adja meg az engedélyezni kívánt alkalmazáscsomagok nevének listáját. Elválasztóként használhatja a **; : ,** vagy a **|** karaktereket. (Például csomag1;csomag2;)
 
-4. Kattintson az **OK**, majd a **Szabályzat mentése** gombra. 
+5. Kattintson az **OK**, majd a **Szabályzat mentése** gombra. 
 
 >[!TIP]
 > Az alkalmazás csomagazonosítóját úgy tudja megtalálni, hogy a Google Play áruházban megkeresi az alkalmazás oldalát. A csomagazonosítót az alkalmazáscsomag URL-címe tartalmazza. Például a Microsoft Word alkalmazás azonosítója **com.microsoft.office.word**.

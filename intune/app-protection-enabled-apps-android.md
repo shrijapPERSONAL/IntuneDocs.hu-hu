@@ -1,29 +1,29 @@
 ---
-title: "Android-alkalmazások alkalmazásvédelmi szabályzatokkal"
+title: Android-alkalmazások alkalmazásvédelmi szabályzatokkal
 titlesuffix: Microsoft Intune
-description: "A védelmi szabályzatokkal rendelkező Android-alkalmazások várható működésének ismertetése."
-keywords: 
+description: A védelmi szabályzatokkal rendelkező Android-alkalmazások várható működésének ismertetése.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok? 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az alkalmazásvédelmi szabályzatokkal rendelkező Android-alkalmazások várható működésének ismertetése. Az alkalmazásvédelmi szabályzatok csak akkor lépnek érvénybe, ha az adott alkalmazásokat munkahelyi környezetben használják. Például akkor, ha egy munkahelyi fiókkal fér hozzá egy alkalmazáshoz, vagy ha a cég OneDrive-tárhelyén található fájlokhoz fér hozzá.
 ##  <a name="accessing-apps"></a>Alkalmazásokhoz való hozzáférés
@@ -75,9 +75,11 @@ A rendszer a következő fájltípusokat támogatja:
 * **Dokumentumok:** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|A Pfile egy általános „burkoló” formátum védett fájlok számára. Magába foglalja a titkosított tartalmat és az Azure Information Protection-licenceket. Ez bármilyen fájltípus védelmére használható.|A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt ptxt, csv, pcsv, log, plog, xml, pxml.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A Pfile egy általános „burkoló” formátum védett fájlok számára. Magába foglalja a titkosított tartalmat és az Azure Information Protection-licenceket. Ez bármilyen fájltípus védelmére használható. | A szövegfájlok, beleértve az XML, a CSV és a hasonló típusú fájlokat, akkor is megnyithatók az alkalmazásban, ha védelem alatt állnak. Fájltípusok: txt ptxt, csv, pcsv, log, plog, xml, pxml. |
+
 ---------------
 ## <a name="next-steps"></a>További lépések
 [Milyen hatással vannak az iOS-es alkalmazásokra az alkalmazásvédelmi szabályzatok?](app-protection-enabled-apps-ios.md)

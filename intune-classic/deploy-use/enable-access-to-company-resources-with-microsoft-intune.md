@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5bfc02f5f10ce88b992d0ea250d7b36fdf3f66dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>A vállalati erőforrások hozzáférésének engedélyezése a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune-alapú Wi-Fi-, VPN- és e-mail-profilokkal hozzáférést biztosíthat a felhasználóknak a munkájuk elvégzéséhez szükséges fájlokhoz és erőforrásokhoz, bárhol legyenek is. A hozzáférés védelmét tanúsítványprofilok segítik.
 
@@ -46,15 +46,19 @@ Virtuális magánhálózati (VPN-) beállításokat alkalmazhat a felhasználók
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>Az [e-mail-profilok](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) és a támogatott platformok
 Segítségükkel létrehozhatja, érvénybe léptetheti és nyomon követheti a natív e-mail-ügyfélprogram beállításait a szervezetnél található eszközökön.
 
-|Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|Nem|Igen|Igen|Nem|Igen|
+
+| Windows 8.1 és újabb | Windows Phone 8.1 és újabb verziók | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          Nem           |             Igen             | Igen |   Nem    |          Igen          |
+
 > [!NOTE]
 > [Ez az Intune csapata által írt blogbejegyzés](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) tájékoztatást nyújt a Windows Phone 8.1 Wi-Fi-profilnak az OMA-URI-beállításokkal történő konfigurálásáról.
 
 ## <a name="certificate-profilessecure-resource-access-with-certificate-profilesmd-and-supported-platforms"></a>A [tanúsítványprofilok](secure-resource-access-with-certificate-profiles.md) és a támogatott platformok
 Segít a vállalati erőforrások elérésének biztonságossá tételében, beleértve a vezeték nélküli hálózatokat és a VPN-kapcsolatokat.
 
-|Windows 8.1 és újabb|Windows Phone 8.1 és újabb verziók|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|Igen|Igen|Igen|Igen|Igen|
+
+| Windows 8.1 és újabb | Windows Phone 8.1 és újabb verziók | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          Igen          |             Igen             | Igen |   Igen   |          Igen          |
+

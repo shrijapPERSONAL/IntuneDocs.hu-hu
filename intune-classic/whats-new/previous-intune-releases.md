@@ -2,8 +2,8 @@
 title: Korábbi kiadások
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>Az Intune korábbi kiadásai
 
 Ez a lap az [Újdonságok a Microsoft Intune-ban](whats-new-in-microsoft-intune.md) című témakörben megjelent bejelentések archívuma.
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>2016. július
 
@@ -94,12 +94,12 @@ Az Intune-ra vonatkozó szolgáltatásállapot-adatok átkerültek a központi, 
     * Az Intune által felügyeltnek kell lenniük
     * Meg kell felelniük az Intune összes telepített megfelelőségi szabályzatának
 
- A nem megfelelő eszközökkel rendelkező végfelhasználókat kérni fogja a rendszer, hogy regisztráljanak, és hárítsák el a megfelelőségi problémákat, hogy hozzáférést kapjanak.
+  A nem megfelelő eszközökkel rendelkező végfelhasználókat kérni fogja a rendszer, hogy regisztráljanak, és hárítsák el a megfelelőségi problémákat, hogy hozzáférést kapjanak.
 - **Feltételes hozzáférés böngészőhöz.** Feltételes hozzáférési szabályzatot állíthat be az [Exchange Online-hoz](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune), így az csak a felügyelt és a szabályozásoknak megfelelő iOS- és Android-eszközök támogatott webböngészőiről érhető majd el. Az Outlook Web Accessbe (OWA) és a SharePoint-webhelyekre iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a rendszer a bejelentkezés előtt kérni fogja az eszköz Intune-beli regisztrálását, valamint az esetleges szabályozási hiányosságok elhárítását.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **A Dynamics CRM Online támogatja a feltételes hozzáférést.** Feltételes hozzáférési házirendet állíthat be a [Dynamics CRM Online-hoz](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune), hogy csak a felügyelt és a szabályozásnak megfelelő iOS- és Android-eszközök érhessék el. A Dynamics CRM mobilalkalmazásba iOS- vagy Android-eszközön bejelentkezni próbáló végfelhasználóktól a bejelentkezés végrehajtása előtt a rendszer kérni fogja a regisztrálást az Intune-ba, valamint a meg nem felelést okozó problémák megszüntetését.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Az Intune Munkahelyi portál újdonságai
 
@@ -180,19 +180,19 @@ Mindezeket a funkciókat a hibrid ügyfelek is támogatják (tehát az Intune-na
 
 ### <a name="app-management"></a>Alkalmazáskezelés
 - **A felhasználók mobilalkalmazás-felügyeleti megfelelősége.**
-Már az Azure Active Directory- (AAD-) bérlőben szereplő bármely felhasználónál megtekintheti az alkalmazásfelügyeleti házirendek [állapotát](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune). Ez a következő teendőket foglalja magában:
-   - Eszközök
-   - Alkalmazások az eszközön
+  Már az Azure Active Directory- (AAD-) bérlőben szereplő bármely felhasználónál megtekintheti az alkalmazásfelügyeleti házirendek [állapotát](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune). Ez a következő teendőket foglalja magában:
+  - Eszközök
+  - Alkalmazások az eszközön
 
-   Az állapot a következő értékeket veheti fel:
+    Az állapot a következő értékeket veheti fel:
 
-   **Beadva**: azt jelzi, hogy a házirend telepítve van a felhasználónál, az alkalmazást pedig használták munkahelyi környezetben, és sikeresen megkapta a házirendet.
+    **Beadva**: azt jelzi, hogy a házirend telepítve van a felhasználónál, az alkalmazást pedig használták munkahelyi környezetben, és sikeresen megkapta a házirendet.
 
     **Nincs beadva:** azt jelzi, hogy a házirend telepítve van a felhasználónál, de az alkalmazást egyszer sem használták a munkahelyi környezetben.
 
 
 - **Az Outlook-névjegyek szinkronizálásának megakadályozása mobilalkalmazás-felügyelettel (Android).**
-A [mobilalkalmazás-kezeléshez](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) új beállítás érhető el, a natív címjegyzékbe már elmentett kapcsolatok törlődni fognak. Ezt az új beállítást már az Android-eszközökön elérhető Outlook alkalmazás is támogatja.
+  A [mobilalkalmazás-kezeléshez](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) új beállítás érhető el, a natív címjegyzékbe már elmentett kapcsolatok törlődni fognak. Ezt az új beállítást már az Android-eszközökön elérhető Outlook alkalmazás is támogatja.
 
 ### <a name="device-management"></a>Eszközkezelés
 - **A céges eszközök telefonszámos azonosítása.** A „Céges” eszközként besorolt telefonokat a rendszer már a teljes telefonszámukkal azonosítja, például amikor jelentést készít a mobileszközkészletről. A BYOD-eszközök telefonszámai továbbra is **** karakterekkel maszkolva, csak az utolsó 4 számjegyükkel jelennek meg.
@@ -212,6 +212,6 @@ A [mobilalkalmazás-kezeléshez](/intune-classic/deploy-use/wipe-managed-company
 
 A fenti állapotok megjelenése előtt a felhasználónál zavart okozhatott, ha egy alkalmazás telepítése hosszú ideig tartott, ugyanis csak a „Telepítés” állapotot láthatta, amely akár órákig is a képernyőn maradhatott. Az új állapotok bevezetésével a felhasználó a támogatási szolgálat felkeresése helyett a „Várakozás az eszköz szinkronizálására” hivatkozásra kattinthat, és az útmutatást követve folytatásra kényszerítheti a szinkronizálási folyamatot.
 
->[!div class="step-by-step"]
-
->[&larr; **Az Intune újdonságai**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Az Intune újdonságai**](whats-new-in-microsoft-intune.md)    

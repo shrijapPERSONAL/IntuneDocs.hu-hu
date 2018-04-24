@@ -1,27 +1,27 @@
 ---
-title: "Android-eszköz regisztrálása a távközlésiköltség-kezelőben az Intune-nal"
-description: "Ez a cikk azt ismerteti, hogyan regisztrálhat androidos eszközt a távközlésiköltség-kezelőben."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Android-eszköz regisztrálása a távközlésiköltség-kezelőben az Intune-nal
+description: Ez a cikk azt ismerteti, hogyan regisztrálhat androidos eszközt a távközlésiköltség-kezelőben.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Android-eszköz regisztrálása a távközlésiköltség-kezelőben
 
@@ -39,11 +39,11 @@ A továbblépéshez koppintson a képernyő jobb felső sarkában található __
 
 1. Válassza az __Enroll with Microsoft account__ (Bejelentkezés Microsoft-fiókkal) gombot.
 
-  ![A Datalert alkalmazás Settings (Beállítások) képernyője, fent az eszközregisztrációhoz szükséges telefonszám megadására szolgáló mezővel, alul pedig az „Enroll with Microsoft account” gombbal – ehhez Microsoft Office 365-fiók és Intune-előfizetés szükséges.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![A Datalert alkalmazás Settings (Beállítások) képernyője, fent az eszközregisztrációhoz szükséges telefonszám megadására szolgáló mezővel, alul pedig az „Enroll with Microsoft account” gombbal – ehhez Microsoft Office 365-fiók és Intune-előfizetés szükséges.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. A rendelkezésre álló fiókok közül válassza ki munkahelyi vagy iskolai fiókját. Ha a fiók nem látható, az **Add account** (Fiók hozzáadása) gombbal tud bejelentkezni.
 
-  ![A Pick account (Fiókválasztás) képernyő egy példafiókkal és az Add account gombbal.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![A Pick account (Fiókválasztás) képernyő egy példafiókkal és az Add account gombbal.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. A Datalert telepítője néhány másodperc alatt elkészül. Ezután koppintson a __Finish__ (Befejezés) gombra.
 
@@ -51,15 +51,15 @@ A továbblépéshez koppintson a képernyő jobb felső sarkában található __
 
 1. Adja meg az eszköz telefonszámát.
 
-  ![Képernyőkép arról, hogy a Datalert alkalmazás a telefonszámot kéri megadni.](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Képernyőkép arról, hogy a Datalert alkalmazás a telefonszámot kéri megadni.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. Ezt követően SMS-ben kap egy ellenőrző kódot. Írja be a kódot, és koppintson az __OK__ lehetőségre.
 
-  ![Képernyőkép: a Datalert alkalmazás kéri az SMS-ben elküldött ellenőrző kódot.](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Képernyőkép: a Datalert alkalmazás kéri az SMS-ben elküldött ellenőrző kódot.](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. Az ellenőrző kód beírása után a Datalert telepítése befejeződött. Koppintson a __Finish__ (Befejezés) elemre. Ezzel készen áll arra, hogy az adathasználatot a Datalert alkalmazással figyelje.
 
-  ![Képernyőkép: a Datalert alkalmazás a mai adatforgalmat jeleníti meg.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Képernyőkép: a Datalert alkalmazás a mai adatforgalmat jeleníti meg.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 A regisztrálás után az adathasználati adatok megjelennek a Datalert alkalmazásban.
 

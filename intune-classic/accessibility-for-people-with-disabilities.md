@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 584ed73ee8be23d72ffc17fe8456dbb296d92a8c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ffacb5eeda5ed42fb2c5666b9f59b8cee14b71be
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Kisegítő lehetőségek fogyatékkal élők számára
 A Microsoft elkötelezett az iránt, hogy termékeit és szolgáltatásait mindenki számára könnyebben használhatóvá tegye. Az alábbi témakörök információt nyújtanak azokról a funkciókról, termékekről és szolgáltatásokról, amelyek elérhetőbbé teszik a fogyatékkal élők számára a Microsoft Intune-t.

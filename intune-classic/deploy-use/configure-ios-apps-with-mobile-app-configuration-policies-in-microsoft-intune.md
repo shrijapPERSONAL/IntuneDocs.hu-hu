@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>iOS-alkalmazások konfigurálása mobilalkalmazás-konfigurációs házirendek segítségével a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune mobilalkalmazás-konfigurációs szabályzataival automatikusan megadhatja az olyan beállításokat, amelyekre szükség lehet, amikor a felhasználók iOS-alkalmazásokat futtatnak. Egy alkalmazás kérheti a felhasználótól például a következők megadását:
 
@@ -77,14 +77,14 @@ Az új szabályzat megjelenik a **Konfigurációs szabályzatok** csomópontban.
 ## <a name="information-about-the-xml-file-format"></a>Információ az XML-fájlformátummal kapcsolatban
 
 Az Intune a következő adattípusokat támogatja a tulajdonságlistákban:
-    
+
 - &lt;integer&gt; (egész szám)
 - &lt;real&gt; (valós szám)
 - &lt;string&gt; (karakterlánc)
 - &lt;array&gt; (tömb)
 - &lt;dict&gt; (szótár)
 - &lt;true /&gt; (igaz) vagy &lt;false /&gt; (hamis)
-     
+
 Az adattípusokkal kapcsolatban további információt az iOS Developer Library [About Property List](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) (Tulajdonságlisták) című témakörében talál.
 
 Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlistában:
@@ -97,7 +97,7 @@ Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlis
 - \{\{username\}\} – (Példa: **Kovács János**)
 - \{\{serialnumber\}\} – (Példa: **F4KN99ZUG5V2**) iOS-eszközök esetében
 - \{\{serialnumberlast4digits\}\} – (Példa: **G5V2**) iOS-eszközök esetében
-    
+
 A \{\{ és \}\} karaktereket csak a tokentípusok használják, ezek más célokra nem használhatók.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Mobilalkalmazás-konfigurációs házirend társítása egy alkalmazáshoz
@@ -139,5 +139,4 @@ Mobilalkalmazás-konfigurációs fájl létrehozásakor a következő értékek 
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

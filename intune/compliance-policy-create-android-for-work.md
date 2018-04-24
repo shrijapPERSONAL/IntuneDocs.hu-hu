@@ -1,30 +1,30 @@
 ---
-title: "Android for Work-alapú megfelelőségi szabályzat létrehozása"
+title: Android for Work-alapú megfelelőségi szabályzat létrehozása
 titleSuffix: Microsoft Intune
-description: "Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Intune Android for Work-eszközmegfelelőségi szabályzatot."
-keywords: 
+description: Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Intune Android for Work-eszközmegfelelőségi szabályzatot.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Android for Work-eszközmegfelelőségi szabályzatokkal megszabhatja az Android for Work-eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz. A megfelelőségi szabályzatokról és a létrehozásuk előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
 

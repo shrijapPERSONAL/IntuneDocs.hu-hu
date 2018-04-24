@@ -1,48 +1,48 @@
 ---
-title: "Androidos naplók küldése a Microsoft fejlesztőinek | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Androidos naplók küldése a Microsoft fejlesztőinek | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b03ac31cc51d69e1872954fa4afbce55add8479f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Naplók küldése a Céges portál fejlesztőinek androidos eszközök esetén
 
-Egyes esetekben a Céges portál alkalmazás váratlanul kiléphet. Ez egy olyan probléma, amelyről az alkalmazás fejlesztői mindenképpen tudni szeretnének, mivel a visszajelzés segít az alkalmazás továbbfejlesztésében és a jövőbeni hasonló problémák megelőzésében. Ezek az információk az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók.
+Egyes esetekben a Céges portál alkalmazás váratlanul kiléphet. A nem várt viselkedésről az alkalmazás fejlesztői mindenképpen tudni szeretnének, mivel a visszajelzés segít az alkalmazás továbbfejlesztésében és a jövőbeni hasonló problémák megelőzésében. Az ilyen hibák részletei az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók. A Céges portál csapatának a Céges portálra vonatkozó naplókra van szüksége a probléma okának feltárásához.
 
 > [!Note]
-> Annak érdekében, hogy a cég informatika támogató szolgálata könnyebben felderíthesse a problémát, kapcsolja be a _részletes naplózást_. Részletes naplózáskor az összes releváns részlet bekerül a jelentésbe. [Útmutató a részletes naplózás bekapcsolásához](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+> Annak érdekében, hogy a cég informatikai támogató szolgálata könnyebben felderíthesse a probléma okát, kapcsolja be a _részletes naplózást_. A részletes napló a hibák minden részletét rögzíti, és ezeket a jelentésbe is belefoglalja. [Útmutató a részletes naplózás bekapcsolásához](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) 
 
-Ha a hibát Ön is tapasztalja, a Céges portál fejlesztőinek szükségük van a Céges portál naplóira ahhoz, hogy megpróbálják meghatározni a probléma alapvető okát. Naplók küldése a Microsoftnak:
+Naplók küldése a Microsoftnak:
 
 1.  Nyissa meg a Vállalati portál alkalmazást.
 
-2.  Koppintson a **Menü** >  **Súgó és visszajelzés** elemre.
+2.  Koppintson a **Menü** > **Súgó** > **E-mail küldése a támogatásnak** lehetőségre.
 
     > [!NOTE]
     > A felhasználó androidos eszközétől függően a **Menü** elem szoftveres vagy hardveres gomb is lehet.
 
-3.  A **Visszajelzés** szakaszban koppintson a **Visszajelzés küldése** lehetőségre.
+3.  koppintson a **Csak naplók feltöltése** lehetőségre.
 
-4.  Az e-mailben röviden ismertesse a tapasztalt problémát, majd koppintson a **Küldés** lehetőségre.
+4.  A feltöltés végén kapni fog egy incidens-azonosítót. Ezt az azonosítót őrizze meg.
 
-Emellett közvetlenül is küldhet e-mailt a Céges portál andoridos csapatának a következő címen: <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
+Közvetlenül küldhet e-mailt a Céges portál andoridos csapatának a következő címen: <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune mobilalkalmazás-felügyeleti (MAM) szabályzatai lehetővé teszik a telepített alkalmazások funkcióinak módosítását, ezzel segítenek elérni, hogy azok összhangba kerüljenek vállalata megfelelőségi és biztonsági szabályzataival. Például korlátozhatja a felügyelt alkalmazások kivágási, másolási és beillesztési műveleteit, vagy konfigurálhat egy alkalmazást arra, hogy az összes webes hivatkozás egy felügyelt böngészőben nyíljon meg.
 
@@ -180,7 +180,7 @@ Miután létrehozott és telepített egy mobilalkalmazás-felügyeleti szabályz
 
 4.  Jelölje ki azt a mobilalkalmazás-kezelési házirendet, amelynek meg szeretné tekinteni az állapotát. A házirend adatait az alsó ablaktáblában, a beállításait pedig a hozzá tartozó csomópont kibontásával tekintheti meg.
 
-5.  Az egyes mobilalkalmazás-felügyeleti szabályzatok **Állapot** oszlopában a **Megfelel**, **Megfelel (folyamatban)**vagy a **Hiba** szó jelenik meg. Ha a kijelölt szabályzat egy vagy több beállítása ütközik, a mezőben a **Hiba** szó fog megjelenni.
+5.  Az egyes mobilalkalmazás-felügyeleti szabályzatok **Állapot** oszlopában a **Megfelel**, **Megfelel (folyamatban)** vagy a **Hiba** szó jelenik meg. Ha a kijelölt szabályzat egy vagy több beállítása ütközik, a mezőben a **Hiba** szó fog megjelenni.
 
 6.  Ha azonosított egy ütközést, felülvizsgálhatja az ütköző szabályzatbeállításokat, vagy alkalmazhat csupán egy szabályzatot az alkalmazásra és a felhasználóra.
 

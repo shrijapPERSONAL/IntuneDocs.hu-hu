@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b09545e99f18815e690ad224e11e772e8911c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>Mobileszközök regisztrálásának lehetővé tétele
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakor azt mutatja be, hogy miképpen tehetik lehetővé az Intune-rendszergazdák a mobileszközök regisztrálását. Az Intune-nak a telefonján való használatáról a [Munkavégzés felügyelt eszközökkel](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) című cikk nyújt tájékoztatást.
 
@@ -66,4 +66,4 @@ A [céges eszközök regisztrálásának](/intune-classic/deploy-use/manage-corp
 Gratulálunk! Ezzel befejezte az *Intune – Első lépések útmutatójának* utolsó lépését. Most, hogy a kezdeti konfigurálást befejezte, további MDM-funkciók engedélyezését is fontolóra veheti.
 
 >[!div class="step-by-step"]
->[&larr; **Eszközök regisztrálása**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Konfigurációt követő feladatok** &rarr;](.\post-configuration-tasks.md)  
+>[&larr; **Eszközök regisztrálása**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Konfigurációt követő feladatok** &rarr;](./post-configuration-tasks.md)  

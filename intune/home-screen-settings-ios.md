@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz"
-titleSuffix: 
-description: "Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz iOS-eszközökön a Microsoft Intune-ban."
-keywords: 
+title: Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz
+titleSuffix: ''
+description: Útmutató a kezdőképernyő és a Dock testreszabásához használható beállításokhoz iOS-eszközökön a Microsoft Intune-ban.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Microsoft Intune kezdőképernyő-elrendezési beállításai iOS-eszközökhöz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ezekkel a beállításokkal konfigurálhatja az alkalmazások és mappák elrendezését az iOS-eszközök kezdőképernyőjén és a Dockban.
 

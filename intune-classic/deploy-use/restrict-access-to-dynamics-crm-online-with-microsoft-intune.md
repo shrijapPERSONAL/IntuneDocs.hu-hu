@@ -1,29 +1,29 @@
 ---
-title: "A Dynamics CRM Online védelme"
-description: "Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést."
-keywords: 
+title: A Dynamics CRM Online védelme
+description: Feltételes hozzáféréssel védheti és vezérelheti a Dynamics CRM Online-hoz való hozzáférést.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>A Dynamics CRM Online-hoz való hozzáférés védelme az Intune használatával
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Dynamics CRM Online-hoz való hozzáférést iOS- és Android-eszközökről a Microsoft Intune feltételes hozzáférési funkciójával szabályozhatja.  Az Intune feltételes hozzáférése két összetevőből áll:
 * Egy [eszközmegfelelőségi szabályzatból](introduction-to-device-compliance-policies-in-microsoft-intune.md), amelynek az eszköznek meg kell felelnie, hogy a rendszer megfelelőnek találja.
@@ -73,17 +73,17 @@ Ha készen áll, folytassa a 3. lépéssel.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>3. lépés: A Dynamics CRM házirendjének konfigurálása
 Ezután állítsa be úgy a házirendet, hogy csak a felügyelt és a feltételeknek megfelelő eszközök érhessék el a Dynamics CRM-et. A szabályzat ezek után az Azure Active Directoryban tárolódik.
 
-1.  Az Intune felügyeleti konzolján kattintson a **Házirend > Feltételes hozzáférés > Dynamics CRM Online-szabályzat** elemre.
+1. Az Intune felügyeleti konzolján kattintson a **Házirend > Feltételes hozzáférés > Dynamics CRM Online-szabályzat** elemre.
 
-  ![Képernyőfelvétel a Dynamics CRM Online feltétes hozzáférési szabályzatának oldaláról](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Képernyőfelvétel a Dynamics CRM Online feltétes hozzáférési szabályzatának oldaláról](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
-3.  Az **Alkalmazás hozzáférése**szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
-  * **iOS**
-  * **Android--**
-4.  A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directorybeli biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
-5.  A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
-6.  Ha elkészült, válassza a **Mentés** elemet.
+2. Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
+3. Az **Alkalmazás hozzáférése**szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
+   * **iOS**
+   * **Android**
+4. A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directorybeli biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
+5. A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
+6. Ha elkészült, válassza a **Mentés** elemet.
 
 Ezzel elvégezte a Dynamics CRM feltételes elérésének beállítását. A feltételes hozzáférési szabályzatot nem kell telepítenie, az azonnal érvénybe lép.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>A megfelelőség és a feltételes hozzáférési házirendek megfigyelése

@@ -1,31 +1,29 @@
 ---
-title: "A Lookout for Work által talált fenyegetések elhárítása iOS rendszeren | Microsoft Docs"
-description: "Ismerje meg, hogyan háríthatja el a Lookout for Work által talált fenyegetéseket iOS-en."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: A Lookout for Work által talált fenyegetések elhárítása iOS rendszeren | Microsoft Docs
+description: Ismerje meg, hogyan háríthatja el a Lookout for Work által talált fenyegetéseket iOS-en.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f317c8ddf89510e695b727548d5abafdf9319c25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: be7d54cdde7e82cd0e0d4820ecfddff171e5984a
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>A Lookout for Work által azonosított fenyegetés elhárítása
 
-A Lookout for Work potenciális fenyegetést talált az eszközön. Ahhoz, hogy ismét hozzáférhessen vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, el kell hárítania a problémát. A következőhöz hasonló üzenetet fog látni:
-
-![„Nincs megfelelés” üzenet a Lookout from Worktől](./media/ios-lfw-noncompliant-in-ssp.png)
+A Lookout for Work potenciális fenyegetést talált az eszközön. Ahhoz, hogy ismét hozzáférhessen vállalati vagy iskolai e-mailjeihez, alkalmazásaihoz és fájljaihoz, el kell hárítania a problémát.
 
 A probléma elhárításához nyissa meg a Lookout from Work alkalmazást, és kövesse az alkalmazásban megjelenő utasításokat.
 

@@ -1,29 +1,29 @@
 ---
-title: "Az adatok védelme távoli törléssel"
-description: "Az Intune a szelektív és a teljes törlési funkcióval is eltávolíthatja a bizalmas vállalati adatokat, valamint a vállalati erőforrásokhoz való hozzáférést."
-keywords: 
+title: Az adatok védelme távoli törléssel
+description: Az Intune a szelektív és a teljes törlési funkcióval is eltávolíthatja a bizalmas vállalati adatokat, valamint a vállalati erőforrásokhoz való hozzáférést.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Intune által felügyelt eszközökről törölni tudja az alkalmazásokat és az adatokat, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Az Intune ehhez szelektív törlési és teljes törlési funkciókat kínál. Egy távoli törlési parancs kiadásával a felhasználók az Intune Munkahelyi portál segítségével törölhetik az Intune-ban regisztrált saját tulajdonú eszközeik tartalmát.
 
@@ -40,37 +40,37 @@ A **Teljes törlés** visszaállítja az eszközt a gyári beállításokra, és
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Eszköz tartalmának távoli törlése az Intune felügyeleti konzoljáról
 
-1.  Válassza ki a törlendő eszközöket. Az eszközök felhasználónként vagy eszközönként választhatók ki.
+1. Válassza ki a törlendő eszközöket. Az eszközök felhasználónként vagy eszközönként választhatók ki.
 
-    -   **Felhasználó alapján:**
+   - **Felhasználó alapján:**
 
-        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden felhasználó** elemre.
+     1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) kattintson a **Csoportok** &gt; **Minden felhasználó** elemre.
 
-        2.  Kattintson annak a felhasználónak a nevére, akinek a mobileszközét törölni szeretné. Kattintson a **Tulajdonságok megtekintése** elemre.
+     2.  Kattintson annak a felhasználónak a nevére, akinek a mobileszközét törölni szeretné. Kattintson a **Tulajdonságok megtekintése** elemre.
 
-        3.  A felhasználó **Tulajdonságok** lapján kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Több eszköz kijelöléséhez nyomja le a Ctrl billentyűt és kattintson az egérrel.
+     3.  A felhasználó **Tulajdonságok** lapján kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Több eszköz kijelöléséhez nyomja le a Ctrl billentyűt és kattintson az egérrel.
 
-    -   **Eszköz alapján:**
+   - **Eszköz alapján:**
 
-        1.  Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden mobileszköz** lehetőséget.
+     1. Az [Intune felügyeleti konzolján](https://manage.microsoft.com/) válassza a **Csoportok** &gt; **Minden mobileszköz** lehetőséget.
 
-         ![Kivonási vagy törlési művelet indítása](../media/dev-sa-wipe.png)
+        ![Kivonási vagy törlési művelet indítása](../media/dev-sa-wipe.png)
 
-        2.  Kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Több eszköz kijelöléséhez nyomja le a Ctrl billentyűt és kattintson az egérrel.
+     2. Kattintson az **Eszközök** elemre, majd a törölni kívánt mobileszköz nevére. Több eszköz kijelöléséhez nyomja le a Ctrl billentyűt és kattintson az egérrel.
 
-2.  Válassza a **Kivonás/Összes adat törlése** lehetőséget.
+2. Válassza a **Kivonás/Összes adat törlése** lehetőséget.
 
-3.  Ekkor a rendszer kérni fogja az eszköz kivonásának megerősítését.
+3. Ekkor a rendszer kérni fogja az eszköz kivonásának megerősítését.
 
-    -   Ha **szelektív törlést** szeretne végrehajtani, amely csak a vállalati alkalmazásokat és adatokat távolítja el, kattintson az **Igen** gombra.
+   -   Ha **szelektív törlést** szeretne végrehajtani, amely csak a vállalati alkalmazásokat és adatokat távolítja el, kattintson az **Igen** gombra.
 
-    -   Minden alkalmazást és adatot törlő és az eszközt a gyári alapértelmezett beállításokra visszaállító **Teljes törlés** végrehajtásához válassza az **Adatok törlése az eszközről annak kivonása előtt** lehetőséget. Ez a művelet minden platformra érvényes, kivéve a Windows 8.1-et. **A teljes törlési funkcióval törölt adatok nem állíthatók vissza**.
+   -   Minden alkalmazást és adatot törlő és az eszközt a gyári alapértelmezett beállításokra visszaállító **Teljes törlés** végrehajtásához válassza az **Adatok törlése az eszközről annak kivonása előtt** lehetőséget. Ez a művelet minden platformra érvényes, kivéve a Windows 8.1-et. **A teljes törlési funkcióval törölt adatok nem állíthatók vissza**.
 
 Ha az eszköz be van kapcsolva és csatlakoztatva van, a törlés összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
 
-1.  Nyissa meg a [http://aka.ms/accessaad](http://aka.ms/accessaad) weblapot, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget a [https://portal.office.com](https://portal.office.com) portálon.
+1.  Nyissa meg a(z) [http://aka.ms/accessaad](http://aka.ms/accessaad) oldalt, vagy válassza a **Felügyelet** &gt; **Azure AD** lehetőséget innen: [https://portal.office.com](https://portal.office.com).
 
 2.  A lap bal oldalán található hivatkozást használva jelentkezzen be a szervezeti azonosítójával.
 

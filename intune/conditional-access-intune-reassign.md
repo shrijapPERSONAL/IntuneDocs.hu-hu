@@ -1,25 +1,25 @@
 ---
-title: "Feltételes hozzáférés áttelepítése az Azure Portalra"
+title: Feltételes hozzáférés áttelepítése az Azure Portalra
 titlesuffix: Microsoft Intune
-description: "Az Intune klasszikus portálján korábban létrehozott feltételes hozzáférési szabályzatokat újra hozzárendelheti az Azure Portalhoz."
-keywords: 
+description: Az Intune klasszikus portálján korábban létrehozott feltételes hozzáférési szabályzatokat újra hozzárendelheti az Azure Portalhoz.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Feltételes hozzáférési szabályzatok ismételt társítása az Intune klasszikus portáljáról az Azure Portalra való áttéréskor
 
@@ -183,8 +183,8 @@ Ha az Exchange Online szabályzat részeként az Exchange Active Sync szolgálta
 
 Fontos, hogy miután újra hozzárendelte a feltételes hozzáférési szabályzatokat az Azure Portalon, fokozatosan letiltsa az Intune klasszikus portálján korábban létrehozott feltételes hozzáférési szabályzatokat. Emellett szükség lehet ugyanarra a biztonsági csoportra az Azure Portalon létrehozott feltételes hozzáférési szabályzatok alkalmazásához.
 
-> [!NOTE] 
-    > Mielőtt letiltaná a feltételes hozzáférési szabályzatokat az Intune klasszikus portálján, olvassa el az [Előkészületek](#before-you-begin) című fejezetet a témakör elején.
+> [!NOTE]
+> Mielőtt letiltaná a feltételes hozzáférési szabályzatokat az Intune klasszikus portálján, olvassa el az [Előkészületek](#before-you-begin) című fejezetet a témakör elején.
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Feltételes hozzáférési szabályzatok letiltása
 

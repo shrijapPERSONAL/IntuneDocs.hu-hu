@@ -1,29 +1,29 @@
 ---
-title: "E-mailek és az Office 365 védelme"
-description: "Ez a témakör azt ismerteti, hogyan használható a feltételes hozzáférés arra, hogy csak a megfelelő eszközök férhessenek hozzá a vállalati e-mailekhez, valamint a SharePoint Online-on és más szolgáltatásokban tárolt vállalati adatokhoz."
-keywords: 
+title: E-mailek és az Office 365 védelme
+description: Ez a témakör azt ismerteti, hogyan használható a feltételes hozzáférés arra, hogy csak a megfelelő eszközök férhessenek hozzá a vállalati e-mailekhez, valamint a SharePoint Online-on és más szolgáltatásokban tárolt vállalati adatokhoz.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Az e-mailek, az Office 365- és egyéb szolgáltatások elérésének védelme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Enterprise Mobility + Security (EMS) feltételes hozzáférés használatával védheti a vállalati e-mailek és az Office 365-szolgáltatások, például a **Helyszíni Exchange**, az **Exchange Online**, a **Dedikált Exchange Online**, a **SharePoint Online**, a **Skype Vállalati online verzió** és más szolgáltatások elérését. Ez a funkció lehetővé teszi, hogy a vállalati e-mail- és Office 365-szolgáltatásokhoz csak olyan eszközök férhessenek hozzá, amelyek megfelelnek az Ön által az Intune rendszergazdai konzolján vagy a klasszikus Azure-portálon beállított szabályoknak.
 ## <a name="how-does-conditional-access-work"></a>Hogyan működik a feltételes hozzáférés?
@@ -72,12 +72,12 @@ Az Intune más szabályzataitól eltérően a feltételes hozzáférési szabál
 
 2. [Eszközmegfelelőségi szabályzat létrehozása](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-2.  Feltételes hozzáférési szabályzat létrehozása a következők Microsoft-felhőszolgáltatás/-termék valamelyikéhez:
+3. Feltételes hozzáférési szabályzat létrehozása a következők Microsoft-felhőszolgáltatás/-termék valamelyikéhez:
 
-  - [Feltételes hozzáférési szabályzat létrehozása az Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása az új Dedikált Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása a régi Dedikált Exchange Online-hoz](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása a SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása a Skype Vállalati online verziójához](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Feltételes hozzáférési szabályzat létrehozása a Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása az Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása az új Dedikált Exchange Online-hoz](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása a régi Dedikált Exchange Online-hoz](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása a SharePoint Online-hoz](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása a Skype Vállalati online verziójához](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Feltételes hozzáférési szabályzat létrehozása a Dynamics CRM Online-hoz](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Alkalmazások hozzáadása beléptetett eszközökhöz az Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mielőtt központilag telepíthetne vagy kezelhetne egy alkalmazást, hozzá kell adnia azt a Microsoft Intune-hoz. Ez a témakör bemutatja, hogyan vehet fel alkalmazásokat a beléptetett eszközökhöz.
 
@@ -34,32 +34,32 @@ Mielőtt központilag telepíthetne vagy kezelhetne egy alkalmazást, hozzá kel
 ## <a name="add-the-app"></a>Az alkalmazás hozzáadása
 Az Intune Software Publisherrel konfigurálhatja az alkalmazás tulajdonságait, és töltheti fel az alkalmazást a felhőbeli tárhelyre (ha ez lehetséges). Kövesse az alábbi lépéseket:
 
-1.  A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet az Intune Software Publisher elindításához.
+1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) válassza az **Alkalmazások** &gt; **Alkalmazások felvétele** elemet az Intune Software Publisher elindításához.
 
-    > [!TIP]
-    > Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és jelszavát.
+   > [!TIP]
+   > Előfordulhat, hogy a szoftverközzétevő elindulása előtt meg kell adnia Intune-felhasználónevét és jelszavát.
 
-2.  A Publisher **Szoftvertelepítés** lapján, a **Válassza ki, hogyan legyen elérhető a szoftver az eszközök számára** beállításnál válasszon a következő lehetőségek közül:
-    - **Szoftvertelepítő**, az **.msi** kiterjesztésű alkalmazásokhoz:
-        - **Válassza ki a szoftver telepítőjének fájltípusát**. Itt adhatja meg a telepíteni kívánt szoftver típusát. Ha például iOS-alkalmazást szeretne telepíteni, válassza a **Csomag hozzáadása iOS-hez (&#42;.ipa-fájl)** lehetőséget.
-        - **Adja meg a szoftver telepítőfájljainak helyét**. Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
-        - **A mappában található további fájlokkal és almappákkal együtt**. Ez a lehetőség csa a **Windows Installer** fájltípus esetében érhető el.<br>A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.<br>Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
+2. A Publisher **Szoftvertelepítés** lapján, a **Válassza ki, hogyan legyen elérhető a szoftver az eszközök számára** beállításnál válasszon a következő lehetőségek közül:
+   - **Szoftvertelepítő**, az **.msi** kiterjesztésű alkalmazásokhoz:
+       - **Válassza ki a szoftver telepítőjének fájltípusát**. Itt adhatja meg a telepíteni kívánt szoftver típusát. Ha például iOS-alkalmazást szeretne telepíteni, válassza a **Csomag hozzáadása iOS-hez (&#42;.ipa-fájl)** lehetőséget.
+       - **Adja meg a szoftver telepítőfájljainak helyét**. Adja meg a telepítőfájlok helyét, vagy kattintson a **Tallózás** gombra a kívánt hely listából való kiválasztásához.
+       - **A mappában található további fájlokkal és almappákkal együtt**. Ez a lehetőség csa a **Windows Installer** fájltípus esetében érhető el.<br>A Windows Installert használó szoftverek némelyike kiegészítő fájlokat igényel, amelyek általában a telepítőfájlokkal azonos mappában találhatók. Akkor válassza ezt a lehetőséget, ha ezeket a fájlokat is telepíteni kívánja.<br>Ez a telepítési típus némi helykapacitást igényel a felhőbeli tárhelyen.
 
-  -   **Külső hivatkozás**, olyan alkalmazások esetén, amelyeket alkalmazásáruházra mutató hivatkozás megadásával kíván létrehozni:
+   -   **Külső hivatkozás**, olyan alkalmazások esetén, amelyeket alkalmazásáruházra mutató hivatkozás megadásával kíván létrehozni:
 
-        - **Adja meg az URL-címet**. Adja meg az alábbi URL-címek valamelyikét:
-            - Itt adhatja meg a telepíteni kívánt alkalmazás alkalmazásáruházbeli URL-címét. Ha például a Microsoft Remote Desktop Android-alkalmazást szeretné telepíteni, a következő címet adja meg: **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Az alkalmazás URL-címét úgy érheti el, ha egy keresőmotorban megkeresi az alkalmazást tartalmazó áruházi oldalt. A Távoli asztal alkalmazás megkereséséhez például keressen rá a **Microsoft Távoli asztal Android** kifejezésre.
-            - Egy webhely. Az Intune telepíti az eszközre a webhely parancsikonját (avagy webklipjét).
-            - Egy alkalmazásét az interneten. Az Intune telepíti az eszközre az alkalmazás parancsikonját.
-        - **Felügyelt böngésző szükséges a hivatkozás megnyitásához (csak Android és iOS rendszerek esetén)**. Ha egy webhelyre vagy webalkalmazásra mutató hivatkozást telepít a felhasználók számára, az csak az Intune által felügyelt böngészőben lesz megnyitható. Ezt a böngészőt telepíteni kell az eszközökön.<br>A felügyelt böngészővel kapcsolatos további részletekért olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](manage-internet-access-using-managed-browser-policies.md) című témakört.<br>Ez a telepítési típus nem igényel szabad területet a felhőbeli tárhelyen.
+       - **Adja meg az URL-címet**. Adja meg az alábbi URL-címek valamelyikét:
+           - Itt adhatja meg a telepíteni kívánt alkalmazás alkalmazásáruházbeli URL-címét. Ha például a Microsoft Remote Desktop Android-alkalmazást szeretné telepíteni, a következő címet adja meg: **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Az alkalmazás URL-címét úgy érheti el, ha egy keresőmotorban megkeresi az alkalmazást tartalmazó áruházi oldalt. A Távoli asztal alkalmazás megkereséséhez például keressen rá a **Microsoft Távoli asztal Android** kifejezésre.
+           - Egy webhely. Az Intune telepíti az eszközre a webhely parancsikonját (avagy webklipjét).
+           - Egy alkalmazásét az interneten. Az Intune telepíti az eszközre az alkalmazás parancsikonját.
+       - **Felügyelt böngésző szükséges a hivatkozás megnyitásához (csak Android és iOS rendszerek esetén)**. Ha egy webhelyre vagy webalkalmazásra mutató hivatkozást telepít a felhasználók számára, az csak az Intune által felügyelt böngészőben lesz megnyitható. Ezt a böngészőt telepíteni kell az eszközökön.<br>A felügyelt böngészővel kapcsolatos további részletekért olvassa el [Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban](manage-internet-access-using-managed-browser-policies.md) című témakört.<br>Ez a telepítési típus nem igényel szabad területet a felhőbeli tárhelyen.
 
-  -   **Felügyelt iOS-alkalmazás az alkalmazás-áruházból**, az iTunes áruházból származó ingyenes alkalmazások esetén, amelyeket mobilalkalmazás-kezelési (MAM) házirendekkel kíván felügyelni:
+   -   **Felügyelt iOS-alkalmazás az alkalmazás-áruházból**, az iTunes áruházból származó ingyenes alkalmazások esetén, amelyeket mobilalkalmazás-kezelési (MAM) házirendekkel kíván felügyelni:
 
-        - **Adja meg az URL-címet**. Adja meg a telepíteni kívánt alkalmazás alkalmazásáruházbeli URL-címét. Ha például a Microsoft Work Folders iOS-alkalmazást szeretné telepíteni, a következő címet adja meg: **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Ez a telepítési típus nem igényel szabad területet a felhőbeli tárhelyen.
+       - **Adja meg az URL-címet**. Adja meg a telepíteni kívánt alkalmazás alkalmazásáruházbeli URL-címét. Ha például a Microsoft Work Folders iOS-alkalmazást szeretné telepíteni, a következő címet adja meg: **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Ez a telepítési típus nem igényel szabad területet a felhőbeli tárhelyen.
 
-        Ha például Microsoft Word alkalmazást kívánja az iTunes áruházból eszközökre telepíteni, az oldal így jelenne meg:
+       Ha például Microsoft Word alkalmazást kívánja az iTunes áruházból eszközökre telepíteni, az oldal így jelenne meg:
 
-        ![Intune Software Publisher](./media/publisher-for-mobile.png)
+       ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Amikor egy áruházból ad hozzá és telepít egy alkalmazást, a végfelhasználóknak rendelkezniük kell egy fiókkal az adott áruházban, hogy telepíteni tudják az alkalmazást.

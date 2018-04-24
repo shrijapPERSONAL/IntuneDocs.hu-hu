@@ -1,31 +1,31 @@
 ---
-title: "iOS-alkalmazások alkalmazásvédelmi szabályzatokkal"
+title: iOS-alkalmazások alkalmazásvédelmi szabályzatokkal
 titlesuffix: Microsoft Intune
-description: "A védelmi szabályzatokkal rendelkező iOS-alkalmazások várható működésének ismertetése."
-keywords: 
+description: A védelmi szabályzatokkal rendelkező iOS-alkalmazások várható működésének ismertetése.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az alkalmazásvédelmi szabályzatokkal védett iOS-alkalmazások felhasználói élményének ismertetése. Az alkalmazásvédelmi szabályzatok csak akkor lépnek érvénybe, ha az adott alkalmazásokat munkahelyi környezetben használják. Például akkor, ha egy munkahelyi fiókkal fér hozzá egy alkalmazáshoz, vagy amikor ha a cég OneDrive-helyén található fájlokhoz fér hozzá.
+Az alkalmazásvédelmi szabályzatokkal védett iOS-alkalmazások felhasználói élményének ismertetése. Az alkalmazásvédelmi szabályzatok csak akkor lépnek érvénybe, ha az adott alkalmazásokat munkahelyi környezetben használják. Például akkor, ha egy munkahelyi fiókkal fér hozzá egy alkalmazáshoz, vagy ha a cég OneDrive-tárhelyén található fájlokhoz fér hozzá.
 ##  <a name="accessing-apps"></a>Alkalmazásokhoz való hozzáférés
 
 Ha az eszköz **nincs regisztrálva az Intune-ban**, a rendszer az alkalmazás első használatakor felkéri a felhasználót, hogy indítsa újra az alkalmazást.  Az újraindítás azért szükséges, hogy a rendszer alkalmazni tudja az alkalmazásvédelmi szabályzatokat az alkalmazásra. Az alábbi képernyőképen ezt láthatja a Skype alkalmazásban:
@@ -39,7 +39,7 @@ Az **Intune-kezelésre regisztrált** eszközöknél üzenet jelenik meg, amely 
 
 ##  <a name="using-apps-with-multi-identity-support"></a>A többszörös identitást támogató alkalmazások használata
 
-Az alkalmazásvédelmi szabályzatok csak akkor lépnek hatályba, amikor egy felhasználó megpróbál hozzáférni a munkához kapcsolódó adatokhoz.  A működés eltérő lehet, ha a felhasználó személyes használatra nyitja meg az alkalmazást. 
+Az alkalmazásvédelmi szabályzatok csak akkor lépnek hatályba, amikor egy felhasználó munkához kapcsolódó adatokhoz próbál meg hozzáférni.  A működés eltérő lehet, ha a felhasználó személyes használatra nyitja meg az alkalmazást. 
 
 A többszörös identitást támogató alkalmazások esetében az Intune csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, ha egy felhasználó munkahelyi adatokhoz fér hozzá.  A rendszer például bekérheti a felhasználótól a PIN-kódot.  Az **Outlook alkalmazásban** akkor jelenik meg adatkérdés, ha egy felhasználó elindítja az alkalmazást. A **OneDrive alkalmazásban** akkor jelenik meg adatkérdés, ha egy felhasználó megadja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint** és **Excel** alkalmazásban akkor jelenik meg adatkérdés, ha egy felhasználó a céges OneDrive-on található dokumentumokhoz fér hozzá.
 ##  <a name="managing-user-accounts-on-the-device"></a>Felhasználói fiókok kezelése az eszközön

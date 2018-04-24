@@ -1,29 +1,29 @@
 ---
-title: "Eszközök kivonása"
-description: "Az Intune a házirend és a vállalati portál szelektív és teljes törlését is támogatja az eszközök az Intune-kezelésből való eltávolításához."
-keywords: 
+title: Eszközök kivonása
+description: Az Intune a házirend és a vállalati portál szelektív és teljes törlését is támogatja az eszközök az Intune-kezelésből való eltávolításához.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Eszközök kivonása az Intune felügyelete alól
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Akár vállalati, akár saját eszközökről van szó, eljön a pillanat, amikor egy felügyelt eszközt ki kell vonni az Intune-felügyelet alól.
 
@@ -50,7 +50,7 @@ Ha eltávolítja egy felhasználó licencét, akkor megszűnik a felhasználó r
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálon
 
-1.  Jelentkezzen be szervezeti hitelesítő adataival a [http://aka.ms/accessaad](http://aka.ms/accessaad) vagy a [https://portal.office.com](https://portal.office.com) webhelyre, majd válassza a **Rendszergazdai központok** &gt; **Azure AD** lehetőséget.
+1.  Jelentkezzen be vállalati hitelesítő adataival a [http://aka.ms/accessaad](http://aka.ms/accessaad) vagy a [https://portal.office.com](https://portal.office.com) webhelyre, majd válassza a **Rendszergazdai központok** &gt; **Azure AD** lehetőséget.
 
 2.  Ha még nem rendelkezik Azure-előfizetéssel, hozzon létre egyet. Ha fizetős fiókot használ, ehhez nincs szükség hitelkártyára vagy befizetésre. Válassza a **Register your free Azure Active Directory subscription** (Ingyenes Azure Active Directory-előfizetés regisztrálása) előfizetési hivatkozást.
 
@@ -75,5 +75,5 @@ Az alkalmazott Intune-felhasználói fiókjának licencét is érdemes visszavon
 ## <a name="retire-hardware"></a>Hardver kivonása
 Egyes esetekben maga az eszköz éri el életciklusának végét. Ilyen esetekben egy teljes törléssel [a gyári beállítások visszaállíthatók](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md), az összes adat eltávolítható, és az eszköz el is távolítható az Intune-ból. Ezután a vállalati szabályzatnak megfelelően le lehet selejtezni a hardvereket.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Adatok védelme teljes vagy szelektív törléssel](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)

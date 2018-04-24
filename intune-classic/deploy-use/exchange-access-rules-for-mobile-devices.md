@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Mobileszközökre vonatkozó Exchange-hozzáférési szabályok
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A mobileszközökre vonatkozó Exchange-hozzáférési szabályok határozzák meg az eszközök az Exchange ActiveSync-hez való hozzáférésnek szintjét. Ezek a beállítások minden mobileszközre hatással vannak, a Microsoft Intune-ban nem regisztrált eszközöket is beleértve. Kiindulásképpen meghatározhat egy **alapértelmezett szabályt** , amely minden olyan mobileszközre érvényes, amelyre nem alkalmaztak egyéni szabályt.
 
@@ -37,11 +37,13 @@ Az alábbi táblázat az Exchange ActiveSync által felügyelt hozzáférési sz
 
 A hozzáférési stratégia egy **alapértelmezett szabály** és a **platformkivételek** kombinációját jelenti, amely minden, az Exchange-hez csatlakozó mobileszközre érvényes. Az alábbi táblázat felsorol néhány példát a hozzáférési stratégiákra.
 
-|Hozzáférési stratégia|Description|
-|-------------------|---------------|
-|Engedélyezési lista|Az *engedélyezési listák* segítségével hozzáférést biztosíthat bizonyos ismert eszközöknek, míg minden más eszköz hozzáférését korlátozhatja. Ehhez egyéni szabályokat kell létrehozni, hogy a kívánt eszközplatformok hozzáférjenek a felhasználók postaládáihoz. Miután egy ilyen szabályt létrehozott, az alapértelmezett hozzáférési szabályt úgy kell beállítania, hogy az letiltson vagy karanténba helyezzen minden egyéb eszközt. Egy új eszköz engedélyezési listához való hozzáadásához hozzon létre egy új egyéni szabályt.|
-|Tiltólista|A *tiltólisták* segítségével alapértelmezés szerint engedélyezheti a hozzáférést minden eszköznek, de letilthatja azon eszközök hozzáférését, amelyeknél nem szeretné, hogy hozzáférjenek a szervezetéhez. Tiltólistát egyéni szabályok megalkotásával lehet létrehozni, amelyek letiltják azokat a platformokat, amelyek számára nem szeretné lehetővé tenni a szervezet postaládáival való szinkronizálást. Az alapértelmezett szabályt úgy ajánlatos beállítani, hogy engedélyezze a hozzáférést minden olyan eszköznek, amelyet a meglévő szabályok nem kifejezetten tiltanak. Új eszköz vagy eszközök tiltólistához való hozzáadásához hozzon létre egy új egyéni szabályt.|
-|Vegyes engedélyezés és tiltás|Az engedélyezési és tiltólistákon felül karanténba is helyezheti az új mobileszközöket a szervezetbe való belépéskor addig, amíg értékeli őket. Ha például van egy tiltólistája azokról az eszközökről, amelyeket nem engedélyez a szervezetén belül, és van egy engedélyezési listája azokról, amelyeknek engedélyezi a hozzáférést, akkor alapértelmezett szabályként megadhatja a karantént. Minden egyéb eszköz automatikusan karanténba kerül. Ez lehetővé teszi, hogy megismerje az új eszközöket, amikor a szervezetbe belépnek, és eldöntse, hogy az engedélyezési vagy a tiltólistához adja-e őket.|
+
+|    Hozzáférési stratégia    |                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Engedélyezési lista       |                                                                                  Az <em>engedélyezési listák</em> segítségével hozzáférést biztosíthat bizonyos ismert eszközöknek, míg minden más eszköz hozzáférését korlátozhatja. Ehhez egyéni szabályokat kell létrehozni, hogy a kívánt eszközplatformok hozzáférjenek a felhasználók postaládáihoz. Miután egy ilyen szabályt létrehozott, az alapértelmezett hozzáférési szabályt úgy kell beállítania, hogy az letiltson vagy karanténba helyezzen minden egyéb eszközt. Egy új eszköz engedélyezési listához való hozzáadásához hozzon létre egy új egyéni szabályt.                                                                                  |
+|      Tiltólista       |                              A <em>tiltólisták</em> segítségével alapértelmezés szerint engedélyezheti a hozzáférést minden eszköznek, de letilthatja azon eszközök hozzáférését, amelyeknél nem szeretné, hogy hozzáférjenek a szervezetéhez. Tiltólistát egyéni szabályok megalkotásával lehet létrehozni, amelyek letiltják azokat a platformokat, amelyek számára nem szeretné lehetővé tenni a szervezet postaládáival való szinkronizálást. Az alapértelmezett szabályt úgy ajánlatos beállítani, hogy engedélyezze a hozzáférést minden olyan eszköznek, amelyet a meglévő szabályok nem kifejezetten tiltanak. Új eszköz vagy eszközök tiltólistához való hozzáadásához hozzon létre egy új egyéni szabályt.                               |
+| Vegyes engedélyezés és tiltás | Az engedélyezési és tiltólistákon felül karanténba is helyezheti az új mobileszközöket a szervezetbe való belépéskor addig, amíg értékeli őket. Ha például van egy tiltólistája azokról az eszközökről, amelyeket nem engedélyez a szervezetén belül, és van egy engedélyezési listája azokról, amelyeknek engedélyezi a hozzáférést, akkor alapértelmezett szabályként megadhatja a karantént. Minden egyéb eszköz automatikusan karanténba kerül. Ez lehetővé teszi, hogy megismerje az új eszközöket, amikor a szervezetbe belépnek, és eldöntse, hogy az engedélyezési vagy a tiltólistához adja-e őket. |
+
 Az alábbi eljárás bemutatja egy egyéni szabály létrehozásának folyamatát.
 
 ## <a name="create-a-default-access-rule"></a>Alapértelmezett hozzáférési szabály létrehozása

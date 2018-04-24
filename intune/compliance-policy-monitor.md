@@ -1,27 +1,30 @@
 ---
-title: "A Microsoft Intune eszközmegfelelőségi szabályzatainak figyelése"
-titlesuffix: 
-description: "Az eszközmegfelelőségi irányítópulttal figyelheti az eszközmegfelelőségeket, jelentéseket tekinthet meg, valamint megtekintheti a szabályzatonkénti és beállításonkénti eszközmegfelelőségeket."
-keywords: 
+title: A Microsoft Intune eszközmegfelelőségi szabályzatainak figyelése
+titlesuffix: ''
+description: Az eszközmegfelelőségi irányítópulttal figyelheti az eszközmegfelelőségeket, jelentéseket tekinthet meg, valamint megtekintheti a szabályzatonkénti és beállításonkénti eszközmegfelelőségeket.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
 A megfelelőségi jelentésekkel a rendszergazdák elemezhetik a cég eszközeinek megfelelőségi állapotát, és így gyorsan elháríthatják a szervezet felhasználói által tapasztalt megfelelőségi problémákat. A jelentésekkel információ szerezhető egy eszköz általános megfelelőségi állapotáról, az egyes beállítások vagy egyes szabályzatok megfelelőségi állapotáról, és egy-egy eszköz részletesebben is megvizsgálható, és ellenőrizhető, hogy mely beállítások és szabályzatok vonatkoznak rá.
+
+> [!NOTE]
+> Az Önök visszajelzései alapján márciusban bevezetünk néhány biztonsági fejlesztést az Intune szolgáltatásban. A megfelelőségi szabályzatai konfigurációjától függően esetleg be kell avatkoznia, hogy a végfelhasználók ne veszítsék el e-mail-hozzáférésüket. A részleteket a [Várható biztonsági fejlesztések](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) című cikk tartalmazza.
 
 ## <a name="before-you-begin"></a>Előkészületek
 
@@ -124,6 +127,19 @@ Ha a **Frissítés gombra** kattint, a beúszó lapka bezárul, a megjelenített
 Kattintson egy eszközre. Ekkor megnyílik az **Eszközök panel** a kiválasztott eszközzel, ahol további részleteket láthat a vonatkozó eszközmegfelelőségi szabályzat beállításáról.
 
 Ha az egyes eszközmegfelelőségi szabályzatbeállításokra kattint, megjelenik annak a rendszergazda által meghatározott eszközmegfelelőségi szabályzatnak a neve, amelyen ez a beállítás alapul.
+
+### <a name="devices-without-compliance-policy"></a>Megfelelőségi szabályzat nélküli eszközök
+Ez a jelentés azokat az eszközöket azonosítja, amelyekhez nincs megfelelőségi szabályzat rendelve. Az összes megfelelőségi szabályzat nélküli eszközt „nem megfelelő”-ként megjelölő biztonsági beállítás bevezetésével fontossá válik az ilyen eszközök azonosítása. Ezt követően hozzájuk rendelhet legalább egy megfelelőségi szabályzatot.
+
+> [!NOTE]
+> Az új biztonsági beállítás az Intune portálon konfigurálható. Válassza az **Eszközmegfelelőség** lehetőséget, majd a **Beállítások** alatt a **Megfelelőségi szabályzat beállításai** lehetőséget. A váltójelölő használatával állítsa a **Hozzárendelt megfelelőségi szabályzattal nem rendelkező eszköz megjelölése mint** beállítást a **megfelelő** vagy a **nem megfelelő** értékre. Minderről többet olvashat a [Biztonsági fejlesztések az Intune szolgáltatásban](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) című cikkben.
+
+![A megfelelőségi szabályzat nélküli eszközökről szóló jelentést bemutató kép](./media/idc-12.png)
+
+A **Megfelelőségi szabályzat nélküli eszközök** csempe az Eszközmegfelelőség irányítópulton érhető el. Megjelenik rajta minden megfelelőségi szabályzat nélküli eszköz, az eszköz felhasználója, megfelelőségi státusza és az eszköz típusa.
+
+> [!NOTE]
+> Az olyan felhasználók, akikhez bármilyen megfelelőségi szabályzat van rendelve, nem jelennek meg a jelentésben, tekintet nélkül az eszközplatformra. Így például, ha véletlenül Windows megfelelőségi szabályzat van egy androidos eszközzel rendelkező felhasználóhoz rendelve, akkor az eszköz nem jelenik meg a jelentésben. Az Intune ennek ellenére nem megfelelőként fogja kezelni az androidos eszközt. A problémák elkerülése érdekében ajánlott külön szabályzatot létrehozni minden eszközplatformhoz és azokat minden felhasználóra érvényesíteni.
 
 ### <a name="per-policy-device-compliance-report"></a>Szabályzatok szerinti eszközmegfelelőségi jelentés
 

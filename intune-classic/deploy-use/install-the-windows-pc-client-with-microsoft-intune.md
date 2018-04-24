@@ -1,27 +1,27 @@
 ---
-title: "PC-s ügyfélszoftver telepítése"
-description: "Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését."
-keywords: 
+title: PC-s ügyfélszoftver telepítése
+description: Ezzel az útmutatóval beállíthatja a Windows rendszerű számítógépeinek a Microsoft Intune-ügyfélszoftverrel való kezelését.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Windows rendszerű számítógépek az Intune-ügyfélszoftver telepítésével regisztrálhatók. Az Intune-ügyfélszoftver a következő módszerekkel telepíthető:
 
@@ -39,13 +39,13 @@ Egy Intune-licenc legfeljebb öt számítógépen teszi lehetővé az Intune-üg
 
 Az összes módszer, kivéve azokat, amelyekben maguk a felhasználók telepítik az Intune-ügyfélszoftvert, megköveteli a szoftver letöltését, hogy ezután központilag lehessen telepíteni azt a végfelhasználók számára.
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Felügyelet** &gt; **Ügyfélszoftver letöltése** lehetőségre.
+1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com/) kattintson a **Felügyelet** &gt; **Ügyfélszoftver letöltése** lehetőségre.
 
-  ![Az Intune-számítógépügyfél letöltése](../media/pc-sa-client-download.png)
+   ![Az Intune-számítógépügyfél letöltése](../media/pc-sa-client-download.png)
 
 2. Az **Ügyfélszoftver letöltése** oldalon kattintson az **Ügyfélszoftver letöltése** elemre. Ezt követően mentse a szoftvert tartalmazó **Microsoft_Intune_Setup.zip** csomagot a hálózat egy biztonságos helyére.
 
-  Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
+   Az Intune-ügyfélszoftver telepítési csomagja egyedi és specifikus információt tartalmaz, amely egy beágyazott tanúsítványon keresztül érhető el, és az Ön fiókjára vonatkozik. Ha jogosulatlan felhasználók férnek hozzá a telepítőcsomaghoz, a beágyazott tanúsítvány által jelölt fiókhoz számítógépeket regisztrálhatnak, és hozzáférhetnek a vállalat erőforrásaihoz.
 
 3. Bontsa ki a telepítőcsomag tartalmát a biztonságos helyre a hálózaton.
 

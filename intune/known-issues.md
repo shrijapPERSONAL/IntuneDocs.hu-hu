@@ -1,37 +1,35 @@
 ---
-title: "A Microsoft Intune ismert problémái"
-titlesuffix: Microsoft Intune
-description: "A Microsoft Intune ismert problémái."
-keywords: 
+title: Ismert problémák a Microsoft Intune-ban – Azure | Microsoft Docs
+description: A Microsoft Intune ismert problémái.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-Ebből a témakörből megismerheti a Microsoft Intune esetleges ismert problémáit.
+Ebből a cikkből megismerheti a Microsoft Intune esetleges ismert problémáit.
 
 Ha olyan hibát szeretne jelenteni, amely nem szerepel itt, [nyisson meg egy támogatási kérelmet](get-support.md).
 
-Ha új szolgáltatást szeretne igényelni az Intune-hoz, jelentést küldhet el [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) webhelyünkön.
+Ha új szolgáltatást szeretne igényelni az Intune-hoz, jelentést küldhet el a [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) webhelyen.
 
 ## <a name="migration"></a>Áttelepítés
 
@@ -45,7 +43,7 @@ Ha az Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>A migrált szabályzatok állapotpaneljei nem működnek
 
-A klasszikus portálról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
+A klasszikus Azure Portalról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
 
 ## <a name="apps"></a>Alkalmazások
 
@@ -66,9 +64,8 @@ Az Intune-ban nem regisztrált eszközök esetén csak elsődleges tartományt a
 Ha a **Speciális beállítások** > **Peremhálózat** > **Védett tartomány hozzáadása** beállítás használatával további tartományokat ad meg, a szabályzat nem menthető. A megjelenő hibaüzenetet hamarosan pontosítani fogjuk.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN-ügyfelek támogatása
+A Cisco AnyConnect VPN-ügyfél legújabb kiadása (4.0.07072) jelenleg nem kompatibilis az Intune-nal. Egy jövőbeli Intune-frissítés tartalmazni fogja a kompatibilitást ezzel a verzióval. Addig is azt javasoljuk, hogy használja tovább a jelenlegi verziót, és ne frissítse a Cisco AnyConnect VPN-ügyfelet.
 
-A Cisco AnyConnect VPN-ügyfél legújabb kiadása (4.0.07072) jelenleg nem kompatibilis az Intune-nal.
-Egy jövőbeli Intune-frissítés tartalmazni fogja a kompatibilitást ezzel a verzióval. Addig is azt javasoljuk, hogy használja tovább a jelenlegi verziót, és ne frissítse a Cisco AnyConnect VPN-ügyfelet.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Numerikus jelszó használata macOS Sierra rendszerű eszközökkel
 

@@ -2,8 +2,8 @@
 title: Eszközkorlátozások az Android for Work rendszerhez a Microsoft Intune-ban – Azure | Microsoft Docs
 description: Az Android for Work rendszert futtató eszközökön korlátozhatja az eszköz bizonyos beállításait, többek között a másolást és beillesztést, az értesítések megjelenítését, az alkalmazásengedélyeket, az adatmegosztást, a jelszóhosszt, a sikertelen bejelentkezéseket, a zárolás feloldását ujjlenyomattal, a jelszavak újbóli használatát és a munkahelyi kapcsolatok bluetooth-on keresztüli megosztásának engedélyezését.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
 
 A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Android for Work rendszerű eszközökhöz.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Munkahelyi profil beállításai
 
@@ -48,6 +48,8 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
    Letiltja a munkahelyi profilban található fiókok manuális hozzáadását vagy eltávolítását a végfelhasználók számára.
 
    Ha például a Gmail alkalmazást Android for Work-profilban telepíti, megakadályozhatja, hogy a végfelhasználók fiókokat adjanak hozzá vagy távolítsanak el ebben a munkaprofilban.
+
+- **Névjegyek megosztása Bluetooth-kapcsolattal**: Engedélyezi egy másik Bluetooth-eszköz (például egy autó) a munkahelyi névjegyekhez való hozzáférését. Alapértelmezés szerint ez a beállítás nincs konfigurálva, a munkahelyi névjegyek pedig nem jelennek meg. A megosztás engedélyezéséhez és a munkahelyi profil névjegyeinek megjelenítéséhez válassza az **Engedélyezés** lehetőséget. Ez a beállítás az Android munkahelyi profilos, Android v6.0 és újabb operációs rendszerekkel rendelkező eszközökre vonatkozik.
 
 ### <a name="work-profile-password"></a>Munkahelyi profilhoz tartozó jelszó
 

@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
@@ -63,7 +63,7 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 - A végfelhasználónak [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) postaládával és az AAD-fiókjához kapcsolt licenccel kell rendelkeznie.
 
   >[!NOTE]
-  > Az Outlook mobilalkalmazás jelenleg csupán a Microsoft Exchange Online-t támogatja, a helyszíni Exchange-t vagy az Office 365 dedikált verzióban található Exchange-t nem.
+  > Az Outlook mobilalkalmazás az Intune App Protection szolgáltatást jelenleg csak a Microsoft Exchange Online és a [hibrid, modern hitelesítésű Exchange Server kiszolgálók](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) esetében támogatja, az Office 365 dedikált verzióban futó Exchange esetében nem.
 
 **Mik a [Word, az Excel és a PowerPoint](https://products.office.com/business/office) alkalmazás használatának további feltételei?**
 

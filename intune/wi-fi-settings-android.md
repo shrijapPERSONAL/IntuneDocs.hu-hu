@@ -1,27 +1,27 @@
 ---
-title: "A Microsoft Intune Wi-Fi-beállításainak konfigurálása Android rendszerű eszközökhöz"
-titleSuffix: 
-description: "Az Android- és Android for Work-eszközök Intune-beli Wi-Fi-konfigurációs beállításainak ismertetése."
-keywords: 
+title: A Microsoft Intune Wi-Fi-beállításainak konfigurálása Android rendszerű eszközökhöz
+titleSuffix: ''
+description: Az Android- és Android for Work-eszközök Intune-beli Wi-Fi-konfigurációs beállításainak ismertetése.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c110121ceb3d7ff871078c39f73b17606e2e7f13
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android és Android for Work rendszerű eszközök Wi-Fi-beállításainak konfigurálása a Microsoft Intune-ban  
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ez a cikk bemutatja a Microsoft Intune-ban az Android és Android for Work rendszerű eszközökhöz konfigurálható Wi-Fi-beállításokat.
 
@@ -58,7 +58,8 @@ Az alábbi Wi-Fi-beállítások Android- és Android for Work-eszközökhöz egy
 #### <a name="client-authentication"></a>Ügyfél-hitelesítés
 
 
-|Beállítás neve|További információ|A következő esetekben használja|
-|----------|--------------|----------|
-|**Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)**|Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP- vagy PKCS-tanúsítványprofilt.|Ha az EAP-típus **EAP-TLS**|
-|**Hitelesítési módszer**|Válassza ki a kapcsolat hitelesítési módszerét:<br>- **Tanúsítványok**, ha a kiszolgálónak az identitás tanúsítványaként benyújtott SCEP- vagy PKCS-ügyféltanúsítványt szeretné kiválasztani.<br><br>- **Felhasználónév és jelszó** – ha más hitelesítési módszert szeretne megadni. <br><br>Ha a **Felhasználónév és jelszó** lehetőséget választotta, konfigurálja a következőket:<br><br>-  **Nem EAP-módszer (belső identitás)**, majd válassza ki, hogyan hitelesíti a kapcsolatot:<br>- **Nincs**<br>- **Titkosítatlan jelszó (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP 2-es verzió (MS-CHAP v2)**<br>Az elérhető lehetőségek a választott EAP-típustól függnek.<br><br>**és**<br><br>- **Identitásadatok védelme (külső identitás)** – Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót.|Ha az EAP-típus **EAP-TTLS** vagy **PEAP**|
+|                                     Beállítás neve                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       További információ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            A következő esetekben használja                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>Ügyfél-hitelesítéshez használandó ügyféltanúsítvány (identitástanúsítvány)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Válassza ki a kapcsolat hitelesítéséhez használni kívánt SCEP- vagy PKCS-tanúsítványprofilt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              Ha az EAP-típus <strong>EAP-TLS</strong>              |
+|                        <strong>Hitelesítési módszer</strong>                        | Válassza ki a kapcsolat hitelesítési módszerét:<br>- <strong>Tanúsítványok</strong>, ha a kiszolgálónak az identitás tanúsítványaként benyújtott SCEP- vagy PKCS-ügyféltanúsítványt szeretné kiválasztani.<br><br>- <strong>Felhasználónév és jelszó</strong> – ha más hitelesítési módszert szeretne megadni. <br><br>Ha a <strong>Felhasználónév és jelszó</strong> lehetőséget választotta, konfigurálja a következőket:<br><br>-  <strong>Nem EAP-módszer (belső identitás)</strong>, majd válassza ki, hogyan hitelesíti a kapcsolatot:<br>- <strong>Nincs</strong><br>- <strong>Titkosítatlan jelszó (PAP)</strong><br>- <strong>Challenge Handshake Authentication Protocol (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP 2-es verzió (MS-CHAP v2)</strong><br>Az elérhető lehetőségek a választott EAP-típustól függnek.<br><br><strong>és</strong><br><br>- <strong>Identitásadatok védelme (külső identitás)</strong> – Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet. A hitelesítés során a rendszer először a névtelen identitást küldi el, majd később egy biztonságos csatornán küldi el a valódi azonosítót. | Ha az EAP-típus <strong>EAP-TTLS</strong> vagy <strong>PEAP</strong> |
+

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>iOS-eszközök regisztrálása az Apple Configurator és a Beállítási asszisztens segítségével
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Intune támogatja a vállalat által birtokolt iOS-eszközöknek a Mac számítógépen futó [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) segítségével történő regisztrálását. Ez a folyamat visszaállítja az eszköz gyári beállításait, és felkészíti az eszközt a Beállítási asszisztens futtatására, amely telepíti a vállalat szabályzatait az eszköz új felhasználója számára.
 
@@ -59,7 +59,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
 1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Házirend** &gt; **Munkahelyi eszközök regisztrációja** lapra, majd válassza a **Hozzáadás** lehetőséget.
 
-  ![Eszközbeléptetési profil létrehozása](../media/pol-sa-corp-enroll.png)
+   ![Eszközbeléptetési profil létrehozása](../media/pol-sa-corp-enroll.png)
 
 2. Adja meg az eszközprofilok részleteit:
 
@@ -80,7 +80,7 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
    -  **Device Enrollment Program** – Az Apple Device Enrollment Program (DEP) nem használható a Beállítási asszisztenssel végzett regisztrációhoz. Ellenőrizze, hogy a váltógomb **ki** értékre van-e állítva.
 
-3.  Profil hozzáadásához válassza a **Profil mentése** lehetőséget.
+3. Profil hozzáadásához válassza a **Profil mentése** lehetőséget.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>iOS-eszközök regisztrálása a Beállítási asszisztenssel
 
@@ -90,29 +90,29 @@ Egy eszközregisztrációs profil meghatározza az egy eszközcsoportra alkalmaz
 
    ![Eszközök felvétele párbeszédablak](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Sorozatszámokat tartalmazó CSV-fájl feltöltése** – Hozzon létre egy vesszővel tagolt, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben legfeljebb 5000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot.
+   - **Sorozatszámokat tartalmazó CSV-fájl feltöltése** – Hozzon létre egy vesszővel tagolt, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben legfeljebb 5000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot.
 
-    |||
-    |-|-|
-    |&lt;1. sorozatszám&gt;|&lt;1. eszköz részletei&gt;|
-    |&lt;2. sorozatszám&gt;|&lt;2. eszköz részletei&gt;|
+     |||
+     |-|-|
+     |&lt;1. sorozatszám&gt;|&lt;1. eszköz részletei&gt;|
+     |&lt;2. sorozatszám&gt;|&lt;2. eszköz részletei&gt;|
 
-  Ez a .csv- fájl így jelenik meg egy szövegszerkesztőben:
+   Ez a .csv- fájl így jelenik meg egy szövegszerkesztőben:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Eszközadatok kézi hozzáadása** – Adja meg legfeljebb 15 eszköz sorozatszámát, adatait és az esetleges megjegyzéseket.
+   -  **Eszközadatok kézi hozzáadása** – Adja meg legfeljebb 15 eszköz sorozatszámát, adatait és az esetleges megjegyzéseket.
 
-  Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket.
+   Az **Eszközök felülvizsgálata** panelen ellenőrizheti a sorozatszámokat. Azt is eldöntheti, hogy felülírja-e az újból importált sorozatszámok **részleteit**, vagy a **Felülírás** jelölőnégyzet jelölését törölve megtartja az aktuális részleteket.
 
-  > [!NOTE]
-  > Az Intune korábbi felügyeleti konzolján a rendszergazdák egy feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes sorozatszámok korábbi részleteit. Az új Azure Portalon csak az összes sorozatszám adatainak felülírására vagy az új részletek figyelmen kívül hagyására lesz lehetőség.
+   > [!NOTE]
+   > Az Intune korábbi felügyeleti konzolján a rendszergazdák egy feltöltött CSV-fájlból fogadhatják el a társított részleteket, így írhatják felül az egyes sorozatszámok korábbi részleteit. Az új Azure Portalon csak az összes sorozatszám adatainak felülírására vagy az új részletek figyelmen kívül hagyására lesz lehetőség.
 
-  > [!NOTE]
-  > Ha később el szeretne távolítani vállalati tulajdonú eszközöket az Intune kezeléséből, akkor előfordulhat, hogy az eszköz regisztrációjának letiltásához az **Előre regisztrált vállalati eszközök** elemcsoportban található **iOS-sorozatszám szerint** eszközcsoportban el kell távolítania az eszköz gyári számát az Intune-ból. Ha az Intune vészhelyreállítási eljárást hajt végre a sorozatszámok eltávolítása közben vagy ahhoz közeli időpontban, győződjön meg arról, hogy a csoportban csak az aktív eszközök sorozatszámai szerepelnek.
+   > [!NOTE]
+   > Ha később el szeretne távolítani vállalati tulajdonú eszközöket az Intune kezeléséből, akkor előfordulhat, hogy az eszköz regisztrációjának letiltásához az **Előre regisztrált vállalati eszközök** elemcsoportban található **iOS-sorozatszám szerint** eszközcsoportban el kell távolítania az eszköz gyári számát az Intune-ból. Ha az Intune vészhelyreállítási eljárást hajt végre a sorozatszámok eltávolítása közben vagy ahhoz közeli időpontban, győződjön meg arról, hogy a csoportban csak az aktív eszközök sorozatszámai szerepelnek.
 
 2. Kattintson a **Tovább** gombra.
 
@@ -137,7 +137,7 @@ Adja meg a hozzáadott eszközökhöz hozzárendelendő profilt az elérhető pr
 
 Az iOS-eszközök csatlakoznak a Mac számítógéphez, és regisztrálva vannak a mobileszköz-kezelésre.
 
-1.  A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
+1. A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
 
    > [!WARNING]
    > Az eszközökön vissza kell állítani a gyári beállításokat a regisztrációs folyamat során. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. Az eszközön az **üdvözlőképernyőnek** kell látszania az eszköz csatlakoztatásakor.
@@ -148,12 +148,12 @@ Az iOS-eszközök csatlakoznak a Mac számítógéphez, és regisztrálva vannak
 
    Ha a rendszer figyelmezteti, hogy nincs ellenőrizve a kiszolgáló URL-címe, nyugodtan figyelmen kívül hagyhatja. Kattintson minden megjelenő oldalon a **Next** (Tovább) gombra, amíg be nem fejeződik a varázsló.
 
-4.  Az iOS-mobileszközöket csatlakoztassa a Mac számítógéphez egy USB-adapterrel.
+4. Az iOS-mobileszközöket csatlakoztassa a Mac számítógéphez egy USB-adapterrel.
 
-    > [!WARNING]
-    > Az eszközökön vissza kell állítani a gyári beállításokat a regisztrációs folyamat során. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. A Beállítási asszisztens indításakor az eszközön az **üdvözlőképernyőnek** kell látszania.
+   > [!WARNING]
+   > Az eszközökön vissza kell állítani a gyári beállításokat a regisztrációs folyamat során. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. A Beállítási asszisztens indításakor az eszközön az **üdvözlőképernyőnek** kell látszania.
 
-5.  Válassza a **Prepare** (Előkészítés) lehetőséget. A Prepare iOS Device (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
+5. Válassza a **Prepare** (Előkészítés) lehetőséget. A Prepare iOS Device (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
 
 6. Az Enroll in MDM Server (Regisztrálás MDM-kiszolgálón) panelen válassza ki a létrehozott kiszolgáló nevét, majd válassza a **Next** (Tovább) gombot.
 

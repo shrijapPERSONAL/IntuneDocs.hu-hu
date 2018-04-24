@@ -1,5 +1,5 @@
 ---
-title: A Microsoft Intune újdonságai a korábbi hónapokból
+title: A Microsoft Intune újdonságai a korábbi hónapokból – Azure | Microsoft Docs
 titlesuffix: ''
 description: Az Intune újdonságai oldalán korábban megjelenő információkat olvashatja
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>A Microsoft Intune újdonságai – korábbi hónapok
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>2017. október
 
@@ -570,7 +570,7 @@ További információt az [Android for Work-eszközök korlátozásaira vonatkoz
 Újabb [windowsos eszközkorlátozási beállításokat](device-restrictions-windows-10.md) vezettünk be, amelyek a vezeték nélküli kijelzőkhöz, az eszközfelderítéshez, a feladatváltáshoz vagy a SIM-kártyák hibaüzeneteihez hasonló szolgáltatásokat szabályoznak.
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Újdonságok a tanúsítványkonfigurációban <!-- 918991 and 823198 -->
-SCEP-tanúsítványprofil létrehozásakor iOS, Android és Windows-eszközök esetén a **Tulajdonos nevének formátuma** beállításnál az**Egyéni** lehetőség is választható. A jelen frissítés előtt az **Egyéni** mező csak iOS-eszközök esetén volt elérhető. További információért lásd: [ SCEP-tanúsítványprofil létrehozása] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+SCEP-tanúsítványprofil létrehozásakor iOS, Android és Windows-eszközök esetén a <strong>Tulajdonos nevének formátuma</strong> beállításnál az<strong>Egyéni</strong> lehetőség is választható. A jelen frissítés előtt az <strong>Egyéni</strong> mező csak iOS-eszközök esetén volt elérhető. További információ: [SCEP-tanúsítványprofil létrehozása](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
 PKCS-tanúsítványprofil létrehozásakor a **Tulajdonos alternatív neve** értékeként az **Egyéni Azure Ad-attribútum** lehetőség is választható. Az **Egyéni Azure Ad-attribútum** kiválasztásakor a **Részleg** lehetőség is megjelenik. További információt [a PKCS-tanúsítványprofilok létrehozásáról](certficates-pfx-configure.md#create-a-device-configuration-profile) szóló útmutatóban talál.
 

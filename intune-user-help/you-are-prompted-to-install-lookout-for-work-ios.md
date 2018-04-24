@@ -1,25 +1,25 @@
 ---
-title: "Telepítenie kell a Lookout for Work alkalmazást az iOS-eszközön | Microsoft Docs"
-description: "Ismerje meg a Lookout for Work telepítési módját iOS-en."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Telepítenie kell a Lookout for Work alkalmazást az iOS-eszközön | Microsoft Docs
+description: Ismerje meg a Lookout for Work telepítési módját iOS-en.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae05df1478baa8b965cdcd11a47ffc0d694734ab
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>A Lookout for Work alkalmazás telepítése az iOS-eszközön
 
@@ -31,15 +31,15 @@ A cég informatikai támogatási szolgálata csak a Lookout for Work alkalmazás
 
 1.  Ha a következő üzenet jelenik meg, akkor a **Telepítés** gombra koppintással engedélyezheti a Lookout for Work telepítését az eszközön.
 
-  ![A Telepítés gombra koppintással telepítheti a Lookout for Work alkalmazást](./media/ios-mtd-install-app-request.png)
+      ![Képernyőkép az alkalmazástelepítés üzenetről egy Mégse és egy Telepítés gombbal.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
 2. Ha a következő üzenetet látja, koppintson a **Beállítások** gombra, kapcsolja be a **Helyalapú szolgáltatásokat**, majd koppintson a **Folytatás** gombra.
 
-  ![Koppintson a Beállítások, majd a Helyalapú szolgáltatások gombra](./media/ios-lfw-allow-location-services.png)
+      ![Koppintson a Beállítások, majd a Helyalapú szolgáltatások gombra](./media/ios-lfw-allow-location-services.png)
 
 3. Tekintse át a Lookout for Work használatához szükséges engedélyeket, majd koppintson a **Folytatás** gombra.
 
-  ![sikeresen létrejött a kapcsolat a Lookout for Workhöz](./media/ios-lfw-permissions-lookout-needs.png)
+      ![sikeresen létrejött a kapcsolat a Lookout for Workhöz](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Amikor a rendszer rákérdez arra, hogy engedélyezi-e a Lookout for Work alkalmazásnak értesítések küldését, koppintson az **Engedélyezés** gombra.
 

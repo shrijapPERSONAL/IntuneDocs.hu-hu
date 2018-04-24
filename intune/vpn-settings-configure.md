@@ -1,31 +1,39 @@
 ---
-title: "A VPN-beállítások konfigurálása a Microsoft Intune-ban"
-titleSuffix: 
-description: "Útmutató arról, hogyan konfigurálhatóak a VPN-kapcsolatok felügyelt eszközökön a Microsoft Intune-nal."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: VPN-eszközprofil létrehozása az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Tekintse meg az iOS-eszközökhöz használható VPN-kapcsolati típusokat, hozzon létre VPN-eszközprofilt az Azure Portalon, és tudja meg, hogyan tudja megvédeni a VPN-profilt tanúsítványokkal vagy felhasználónévvel és jelszóval a Microsoft Intune-ban.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>A VPN-beállítások konfigurálása a Microsoft Intune-ban
+# <a name="create-vpn-profiles-in-intune"></a>VPN-profilok létrehozása az Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az eszközök egy VPN-csatlakozási profil használatával kezdeményeznek kapcsolatot a VPN-kiszolgálóval. A Microsoft Intune **VPN-profiljainak** használatával a VPN-beállításokat a szervezet felhasználóihoz és eszközeihez rendelheti hozzá, így könnyen és biztonságosan kapcsolódhatnak a hálózathoz.
 
-Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a beállításokat, amelyek a vállalati hálózaton lévő egyik fájlmegosztáshoz való csatlakozáshoz szükségesek. Ehhez létre kell hoznia egy, a vállalati hálózathoz való csatlakozáshoz szükséges beállításokat tartalmazó VPN-profilt, majd ezt a profilt minden iOS-eszközt használó felhasználónak ki kell osztania. A felhasználók látni fogják a VPN-kapcsolatot a rendelkezésre álló hálózatok listájában, és könnyen csatlakozhatnak.
+Tegyük fel például, hogy minden iOS-eszközön alkalmazni szeretné azokat a beállításokat, amelyek a vállalati hálózaton lévő egyik fájlmegosztáshoz való csatlakozáshoz szükségesek. Létrehoz egy VPN-profilt, mely tartalmazza a vállalati hálózathoz való csatlakozáshoz szükséges beállításokat. Ezután hozzárendeli ezt a profilt az iOS-eszközzel rendelkező összes felhasználóhoz. A felhasználók látni fogják a VPN-kapcsolatot a rendelkezésre álló hálózatok listájában, és könnyen csatlakozhatnak.
+
+Egyéni Intune-konfigurációs szabályzatokkal VPN-profilok hozhatók létre a következő platformokon:
+
+* Android 4 és újabb verziók
+* A Windows 8.1-es vagy újabb verzióját futtató regisztrált eszközök
+* Windows Phone 8.1 és újabb verziók
+* A Windows 10 asztali verzióját futtató regisztrált eszközök
+* Windows 10 mobil verzió
+* Windows Holographic for Business
 
 ## <a name="vpn-connection-types"></a>VPN-kapcsolat típusai
 
@@ -46,41 +54,36 @@ A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 |PPTP|Nem|Nem|Nem|Nem|Nem|Igen|
 |Egyéni|Nem|Igen|Igen|Nem|Nem|Nem|
 
-
 > [!IMPORTANT]
 > Az eszközökre alkalmazott VPN-profilok használatához telepíteni kell a megfelelő VPN-alkalmazást a profilhoz. Az alkalmazás Intune-nal történő hozzárendeléséhez [A Microsoft Intune-alkalmazásfelügyelet ismertetése](app-management.md) című témakörben talál segítséget.  
 
-Az [Egyéni VPN-profilok létrehozása](custom-vpn-profiles-create.md) című témakörből tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.     
+Az [Egyéni beállításokkal rendelkező profil létrehozása](custom-settings-configure.md) című témakörből tájékozódhat arról, hogy hogyan hozhat létre egyéni VPN-profilokat URI-beállításokkal.
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>A VPN-beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panelen válassza a **Kezelés** > **Profilok** lehetőséget.
-3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** panelen töltse ki az egyéni VPN-profil **Név** és **Leírás** mezőjét.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+4. Adja meg a VPN-profil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné a VPN-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet VPN-eszközbeállításokat megadni:
-    - **Android**
-    - **Android for Work**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 és újabb**
-    - **Windows 10 és újabb**
+  - **Android**
+  - **Android for Work**
+  - **iOS**
+  - **macOS**
+  - **Windows Phone 8.1**
+  - **Windows 8.1 és újabb**
+  - **Windows 10 és újabb**
 6. A **Profil típusa** legördülő listában válassza a **VPN** lehetőséget.
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-    - [Az Android és az Android for Work beállításai](vpn-settings-android.md)
-    - [iOS-beállítások](vpn-settings-ios.md)
-    - [macOS-beállítások](vpn-settings-macos.md)
-    - [Windows Phone 8.1-beállítások](vpn-settings-windows-phone-8-1.md)
-    - [Windows 8.1-beállítások](vpn-settings-windows-8-1.md)
-    - [Windows 10-beállítások](vpn-settings-windows-10.md) (beleértve a Windows Holographic for Businesst is)
-8. Ha elkészült, lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** elemet.
+  - [Az Android és az Android for Work beállításai](vpn-settings-android.md)
+  - [iOS-beállítások](vpn-settings-ios.md)
+  - [macOS-beállítások](vpn-settings-macos.md)
+  - [Windows Phone 8.1-beállítások](vpn-settings-windows-phone-8-1.md)
+  - [Windows 8.1-beállítások](vpn-settings-windows-8-1.md)
+  - [Windows 10-beállítások](vpn-settings-windows-10.md) (beleértve a Windows Holographic for Businesst is)
+8. Ha végzett, hozza létre a profilt a **Létrehozás** lehetőség választásával.
 
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
-Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
-
+Ekkor létrejön a profil, és megjelenik a profilok listájában. Ha csoportokhoz szeretné hozzárendelni a profilt, tekintse meg az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikket.
 
 ## <a name="methods-of-securing-vpn-profiles"></a>A VPN-profilok védelmének biztosítása
 
@@ -88,7 +91,7 @@ A VPN-profilok számos különböző kapcsolattípust és különféle gyártók
 
 ### <a name="certificates"></a>Tanúsítványok
 
-A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy PKCS-tanúsítványprofilt, amelyet korábban az Intune-ban hozott létre. Ez a profil identitástanúsítványként is ismert. és ennek segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy *főtanúsítvánnyal*), amelyet Ön a felhasználó eszközének a csatlakoztatásához hozott létre. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
+A VPN-profil létrehozásakor ki kell választania egy SCEP-vagy PKCS-tanúsítványprofilt, amelyet korábban az Intune-ban hozott létre. Ez a profil identitástanúsítványként is ismert. Ennek segítségével hajtja végre a rendszer a hitelesítést egy olyan megbízható tanúsítványprofillal (vagy *főtanúsítvánnyal*), amelyet Ön a felhasználói eszköz csatlakozásának engedélyezéséhez hozott létre. A megbízható tanúsítványt a rendszer a VPN-kapcsolatot hitelesítő számítógépre alkalmazza, amely általában a VPN-kiszolgáló.
 
 A tanúsítványprofiloknak az Intune-ban történő létrehozásáról és használatáról a következő dokumentumban olvashat bővebben: [Tanúsítványok konfigurálása a Microsoft Intune-nal](certificates-configure.md).
 

@@ -1,27 +1,26 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban"
-titleSuffix: 
-description: "A cikk azt ismerteti, hogyan használható a Microsoft Intune a beállítások és funkciók kezelt eszközökön való konfigurálásához."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Eszközkorlátozási beállítások konfigurálása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Eszközprofillal korlátozhatja a funkciókat Android, macOS, iOS, Windows Phone és Windows 10 rendszerű eszközökön a Microsoft Intune-ban
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Az eszközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Ezközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az eszközkorlátozások révén számos kategóriában szabályozhatja a kezelt beállítások és funkciók széles körét, például:
 - Biztonság
@@ -35,12 +34,10 @@ A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeke
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** lapon válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** lap **Kezelés** területén válassza a **Profilok** lehetőséget.
-3. A **Profilok** lapon válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** lapon adjon meg egy **Nevet** és **Leírást** az eszközkorlátozási profilra vonatkozóan.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
+4. Adja meg az eszközkorlátozási profil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre egyéni beállításokat szeretne alkalmazni. Jelenleg az alábbi platformok egyikét választhatja ki az eszközkorlátozási beállításokhoz:
     - **Android**
     - **iOS**

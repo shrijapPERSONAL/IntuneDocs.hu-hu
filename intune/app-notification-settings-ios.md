@@ -1,28 +1,28 @@
 ---
-title: "Alkalmazásértesítések létrehozása iOS-eszközökre – Microsoft Intune – Azure | Microsoft Docs"
-description: "A Microsoft Intune-ban hozzáadhat vagy létrehozhat alkalmazásértesítéseket iOS-eszközök számára. Kiválaszthatja, mely alkalmazások küldjenek értesítéseket, konfigurálhatja a zárolási képernyő értesítési beállításait, engedélyezheti a hangot, kiválaszthatja az értesítés típusát és jelvényt adhat hozzá."
-keywords: 
+title: Alkalmazásértesítések létrehozása iOS-eszközökre – Microsoft Intune – Azure | Microsoft Docs
+description: A Microsoft Intune-ban hozzáadhat vagy létrehozhat alkalmazásértesítéseket iOS-eszközök számára. Kiválaszthatja, mely alkalmazások küldjenek értesítéseket, konfigurálhatja a zárolási képernyő értesítési beállításait, engedélyezheti a hangot, kiválaszthatja az értesítés típusát és jelvényt adhat hozzá.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>iOS-eszközök alkalmazásértesítési beállításainak konfigurálása az Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konfigurálhatja, hogyan küldenek értesítéseket az iOS-eszközön telepített alkalmazások. Ezek a beállítások az iOS 9.3-at vagy újabb verziót futtató felügyelt eszközökön vannak támogatva.
 
@@ -33,18 +33,18 @@ Konfigurálhatja, hogyan küldenek értesítéseket az iOS-eszközön telepítet
 3. Válassza az **Alkalmazásértesítések (csak felügyelt)** lehetőséget, majd a **Hozzáadás**: ![Alkalmazásértesítés hozzáadása iOS- vagy macOS-profilban az Intune-ban](./media/ios-macos-app-notifications.png) lehetőséget
 4. Adja meg a következő tulajdonságokat:
 
-  - **Alkalmazás csomagazonosítója** – Adja meg a konfigurálni kívánt alkalmazás **csomagazonosítóját**. Segítséget a jelen cikkben található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
-  - **Alkalmazásnév** – Adja meg a konfigurálni kívánt alkalmazás nevét. A név nem jelenik meg az eszközön, és arra szolgál, hogy az alkalmazás könnyebben megtalálható legyen a listában.
-  - **Kiadó** – Adja meg a konfigurálni kívánt alkalmazás kiadójának nevét. A közzétett név nem jelenik meg az eszközön, és arra szolgál, hogy az alkalmazás könnyebben megtalálható legyen a listában.
-  - **Értesítések** – Engedélyezi vagy tiltja, hogy az alkalmazás értesítéseket küldjön az eszközre. Ha ezt letiltja, a következő beállítások szintén le lesznek tiltva.
-    - **Megjelenítés az Értesítési központban** – Ha engedélyezi ezt a beállítást, az alkalmazás értesítéseket jeleníthet meg az Értesítési központban.
-    - **Megjelenítés a zárolási képernyőn** – Ha engedélyezi ezt a beállítást, az eszköz zárolási képernyőjén üzenetek jelenhetnek meg.
-    - **Riasztás típusa** – Válassza ki, hogy az alábbiak közül milyen típusú értesítések jelenjenek meg az eszköz zárolásának feloldásakor:
-      - **Egyik sem** – Nem jelennek meg értesítések.
-      - **Szalagcím** – Egy szalagcím jelenik meg rövid időre az értesítés szövegével.
-      - **Modális** – Az üzenetet a felhasználónak manuálisan kell bezárnia, mielőtt használni tudná az eszközt.
-    - **Jelvény az alkalmazásikonon** – Ha engedélyezi ezt a beállítást, az alkalmazásikonon egy üzenetet jelző jelvény jelenik meg.
-    - **Hangok** – Ha engedélyezi ezt a beállítást, az értesítés kézbesítését hang kíséri.
+   - **Alkalmazás csomagazonosítója** – Adja meg a konfigurálni kívánt alkalmazás **csomagazonosítóját**. Segítséget a jelen cikkben található **Csomagazonosító-referencia beépített iOS-alkalmazásokhoz** című szakaszban talál.
+   - **Alkalmazásnév** – Adja meg a konfigurálni kívánt alkalmazás nevét. A név nem jelenik meg az eszközön, és arra szolgál, hogy az alkalmazás könnyebben megtalálható legyen a listában.
+   - **Kiadó** – Adja meg a konfigurálni kívánt alkalmazás kiadójának nevét. A közzétett név nem jelenik meg az eszközön, és arra szolgál, hogy az alkalmazás könnyebben megtalálható legyen a listában.
+   - **Értesítések** – Engedélyezi vagy tiltja, hogy az alkalmazás értesítéseket küldjön az eszközre. Ha ezt letiltja, a következő beállítások szintén le lesznek tiltva.
+     - **Megjelenítés az Értesítési központban** – Ha engedélyezi ezt a beállítást, az alkalmazás értesítéseket jeleníthet meg az Értesítési központban.
+     - **Megjelenítés a zárolási képernyőn** – Ha engedélyezi ezt a beállítást, az eszköz zárolási képernyőjén üzenetek jelenhetnek meg.
+     - **Riasztás típusa** – Válassza ki, hogy az alábbiak közül milyen típusú értesítések jelenjenek meg az eszköz zárolásának feloldásakor:
+       - **Egyik sem** – Nem jelennek meg értesítések.
+       - **Szalagcím** – Egy szalagcím jelenik meg rövid időre az értesítés szövegével.
+       - **Modális** – Az üzenetet a felhasználónak manuálisan kell bezárnia, mielőtt használni tudná az eszközt.
+     - **Jelvény az alkalmazásikonon** – Ha engedélyezi ezt a beállítást, az alkalmazásikonon egy üzenetet jelző jelvény jelenik meg.
+     - **Hangok** – Ha engedélyezi ezt a beállítást, az értesítés kézbesítését hang kíséri.
 
 5. Folytassa, amíg hozzá nem adta az összes kívánt beállítást. Ha hozzáadta az alkalmazásokat, kattintson az **OK** gombra.
 6. Válassz a **Létrehozás** elemet a profil mentéséhez.

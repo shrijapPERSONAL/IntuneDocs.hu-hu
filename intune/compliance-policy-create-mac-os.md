@@ -1,31 +1,31 @@
 ---
-title: "macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban"
-titleSuffix: 
-description: "Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune macOS-eszközmegfelelőségi szabályzatot."
-keywords: 
+title: macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban
+titleSuffix: ''
+description: Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune macOS-eszközmegfelelőségi szabályzatot.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak létrehozása az Intune-nal
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A macOS-eszközmegfelelőségi szabályzatokkal megszabhatja a macOS-eszközök megfelelőségéhez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz.
+A macOS-eszközmegfelelőségi szabályzatokkal megszabhatja a macOS-eszközök megfelelőségéhez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon minden platformhoz létrehozhat megfelelőségi szabályzatokat.
 
 ## <a name="before-you-begin"></a>Előkészületek
 

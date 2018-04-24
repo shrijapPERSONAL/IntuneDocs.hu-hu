@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Gyakori kérdések az MAM-ről és az alkalmazásvédelemről
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazásvédelemmel kapcsolatos gyakori kérdésekre adott válaszokat ismerteti.
 
@@ -61,23 +61,23 @@ Ez a cikk az Intune mobilalkalmazás-kezeléssel (MAM) és az Intune alkalmazás
 
 **Mik az [Outlook mobilalkalmazás](https://www.microsoft.com/outlook-com/mobile/) használatának további feltételei?**
 
-  1. A végfelhasználónak telepítenie kell az Outlook mobilalkalmazást az eszközére.
+1. A végfelhasználónak telepítenie kell az Outlook mobilalkalmazást az eszközére.
 
-  2. A végfelhasználónak [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) postaládával és az AAD-fiókjához kapcsolt licenccel kell rendelkeznie.
+2. A végfelhasználónak [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) postaládával és az AAD-fiókjához kapcsolt licenccel kell rendelkeznie.
 
-  >[!NOTE]
-  > Az Outlook mobilalkalmazás jelenleg csupán a Microsoft Exchange Online-t támogatja, a helyszíni Exchange-t vagy az Office 365 dedikált verzióban található Exchange-t nem.
+   >[!NOTE]
+   > Az Outlook mobilalkalmazás jelenleg csupán a Microsoft Exchange Online-t támogatja, a helyszíni Exchange-t vagy az Office 365 dedikált verzióban található Exchange-t nem.
 
 **Mik a [Word, Excel és PowerPoint](https://products.office.com/business/office) alkalmazások használatának további feltételei?**
 
-  1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat, és egy felhőalapú társzolgáltatás-fiókot is tartalmazhat a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
+1. A végfelhasználónak rendelkeznie kell az Azure Active Directory-fiókjához rendelt [Office 365 Vállalati vagy Nagyvállalati](https://products.office.com/business/compare-more-office-365-for-business-plans) licenccel. Az előfizetésnek tartalmaznia kell a mobileszközökön használt Office-alkalmazásokat, és egy felhőalapú társzolgáltatás-fiókot is tartalmazhat a [OneDrive Vállalati verzióban](https://onedrive.live.com/about/business/). Az Office 365 licenc az [Office-portálon](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) történő hozzárendeléséhez kövesse [ezeket az utasításokat](http://portal.office.com).
 
-  2. A végfelhasználónak egy olyan felügyelt hellyel kell rendelkeznie, amelyet a részletes mentés másként funkcióval konfiguráltak a „Mentés másként művelet letiltása” alkalmazásvédelmi szabályzatbeállítás alatt. Ha például a felügyelt hely a OneDrive, a [OneDrive](https://onedrive.live.com/about/) alkalmazást konfigurálni kell a felhasználó Word, Excel és PowerPoint alkalmazásaiban.
+2. A végfelhasználónak egy olyan felügyelt hellyel kell rendelkeznie, amelyet a részletes mentés másként funkcióval konfiguráltak a „Mentés másként művelet letiltása” alkalmazásvédelmi szabályzatbeállítás alatt. Ha például a felügyelt hely a OneDrive, a [OneDrive](https://onedrive.live.com/about/) alkalmazást konfigurálni kell a felhasználó Word, Excel és PowerPoint alkalmazásaiban.
 
-  3. Ha a felügyelt hely a OneDrive, a végfelhasználóra életbe léptetett alkalmazásvédelmi szabályzatnak társítva kell lennie a OneDrive alkalmazással.
+3. Ha a felügyelt hely a OneDrive, a végfelhasználóra életbe léptetett alkalmazásvédelmi szabályzatnak társítva kell lennie a OneDrive alkalmazással.
 
-  >[!NOTE]
-  > Az Office-mobilalkalmazások jelenleg csak a SharePoint Online verziót támogatják, a helyszíni SharePoint rendszert nem.
+   >[!NOTE]
+   > Az Office-mobilalkalmazások jelenleg csak a SharePoint Online verziót támogatják, a helyszíni SharePoint rendszert nem.
 
 **Miért szükséges felügyelt hely (vagyis a OneDrive) az Office-hoz?** Az Intune az alkalmazásban található összes adatot „cégesként” vagy „személyesként” jelöli meg. „Cégesnek” azok az adatok számítanak, amelyek vállalati forrásból származnak. Az Office-alkalmazásokat illetően az Intune a következőket tekinti vállalati forrásnak: e-mailek (Exchange) vagy felhőbeli tárhely (OneDrive alkalmazás Vállalati OneDrive-fiókkal).
 
@@ -124,15 +124,15 @@ A MAM (az iOS esetében) jelenleg az alfanumerikus, valamint speciális karakter
 
 **Hogyan törli távolról az adatokat az Intune?** Az Intune három különböző módon törölhet adatokat: teljes törlés az eszközről, MDM szelektív törlés és MAM szelektív törlés. A távoli MDM törléssel kapcsolatos további információkat talál az [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) című cikkben. Az MAM szelektív törléssel kapcsolatos további információkat talál az [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) című cikkben.
 
-  1. **Mi a teljes törlés?** A [teljes törlés](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) törli **az eszközről** az összes adatot és beállítást, visszaállítva az alapértelmezett gyári beállításokat. Az eszközt a rendszer eltávolítja az Intune-ból.
-  >[!NOTE]
-  > Teljes törlés csak az Intune mobileszköz-kezelésben regisztrált eszközökön hajtható végre.
+1. **Mi a teljes törlés?** A [teljes törlés](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) törli **az eszközről** az összes adatot és beállítást, visszaállítva az alapértelmezett gyári beállításokat. Az eszközt a rendszer eltávolítja az Intune-ból.
+   >[!NOTE]
+   > Teljes törlés csak az Intune mobileszköz-kezelésben regisztrált eszközökön hajtható végre.
 
-  2. **Mi az MDM szelektív törlés?** A szelektív törlésről lásd: [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
+2. **Mi az MDM szelektív törlés?** A szelektív törlésről lásd: [Adatok védelme teljes vagy szelektív törléssel a Microsoft Intune használatával](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
 
-  3. **Mi az MAM szelektív törlés?** A MAM szelektív törlés egyszerűen eltávolítja a vállalati alkalmazásadatokat egy alkalmazásból. A kérelem az Intune Azure-portál használatával küldhető be. A törlési kérelem beküldéséről az [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) című cikk nyújt tájékoztatást.
+3. **Mi az MAM szelektív törlés?** A MAM szelektív törlés egyszerűen eltávolítja a vállalati alkalmazásadatokat egy alkalmazásból. A kérelem az Intune Azure-portál használatával küldhető be. A törlési kérelem beküldéséről az [A Microsoft Intune-nal felügyelt vállalati alkalmazások adatainak törlése](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md) című cikk nyújt tájékoztatást.
 
-  4. **Milyen gyorsan megy végbe az MAM szelektív törlés?** Ha a felhasználó a szelektív törlés elindítását követően is használja az alkalmazást, az Intune App SDK 30 percenként ellenőrzi, hogy érkezett-e az Intune MAM szolgáltatásból kérés a szelektív törlésre. Akkor is ellenőrzi a szelektív törlést, amikor a felhasználó először indítja el az alkalmazást és lép be a munkahelyi vagy iskolai fiókjába.
+4. **Milyen gyorsan megy végbe az MAM szelektív törlés?** Ha a felhasználó a szelektív törlés elindítását követően is használja az alkalmazást, az Intune App SDK 30 percenként ellenőrzi, hogy érkezett-e az Intune MAM szolgáltatásból kérés a szelektív törlésre. Akkor is ellenőrzi a szelektív törlést, amikor a felhasználó először indítja el az alkalmazást és lép be a munkahelyi vagy iskolai fiókjába.
 
 **Miért nem működnek a helyszíni szolgáltatások az Intune-nal védett alkalmazásokkal?** Az Intune alkalmazásvédelem megköveteli a felhasználói identitás konzisztenciáját az alkalmazás és az Intune App SDK között. Ez kizárólag modern hitelesítés révén garantálható. Előfordulnak olyan helyzetek, amelyekben az alkalmazások működnek a helyszíni konfigurációval, ám ezek a forgatókönyvek se nem konzisztensek, se nem garantáltak.
 

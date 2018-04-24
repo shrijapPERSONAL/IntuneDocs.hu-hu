@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>Az MDM-szolgáltató módosítása
 A Configuration Manager 1610-es verziójától kezdődően anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt. Az ebben a témakörben található lépésekkel anélkül módosíthatja egy meglévő Microsoft Intune-bérlő Intune beállítását és az MDM-szolgáltató **Microsoft Intune** (önálló) beállítását **Configuration Manager** (hibrid MDM) értékre, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt.
@@ -76,16 +76,16 @@ iOS-eszközök esetében konfigurálnia kell az APNs-tanúsítványt a Configura
 
 1. **Tanúsítvány-aláírási kérés letöltése**
 
-    1. A Configuration Manager konzolban lépjen a **Felügyelet** &gt; **Felhőszolgáltatások** &gt; **Microsoft Intune-előfizetések** területre, és válassza az **APN szolgáltatás tanúsítványkérésének létrehozása** lehetőséget az **Apple Push Notification Service tanúsítványkérésének beszerzése** párbeszédpanel megnyitásához.  
-    2. A**Tallózás** gombra válassza ki a helyet, ahová menteni szeretné az új tanúsítvány-aláírási kérés (.csr) fájlját. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját.  
-    3. Kattintson a **Letöltés**lehetőségre. A rendszer letölti az új Microsoft Intune .csr fájlt, és a Configuration Manager menti azt.   
+   1. A Configuration Manager konzolban lépjen a **Felügyelet** &gt; **Felhőszolgáltatások** &gt; **Microsoft Intune-előfizetések** területre, és válassza az **APN szolgáltatás tanúsítványkérésének létrehozása** lehetőséget az **Apple Push Notification Service tanúsítványkérésének beszerzése** párbeszédpanel megnyitásához.  
+   2. A**Tallózás** gombra válassza ki a helyet, ahová menteni szeretné az új tanúsítvány-aláírási kérés (.csr) fájlját. Mentse helyileg a tanúsítvány-aláírási kérelem (.csr) fájlját.  
+   3. Kattintson a **Letöltés**lehetőségre. A rendszer letölti az új Microsoft Intune .csr fájlt, és a Configuration Manager menti azt.   
 
-    > [!IMPORTANT]
-    > Ekkor le kell töltenie egy új tanúsítvány-aláírási kérelmet. Ne használjon egy meglévő fájlt, mert a művelet sikertelen lesz.  
+      > [!IMPORTANT]
+      > Ekkor le kell töltenie egy új tanúsítvány-aláírási kérelmet. Ne használjon egy meglévő fájlt, mert a művelet sikertelen lesz.  
 
-2.  Nyissa meg az [Apple Push Certificates portált](http://go.microsoft.com/fwlink/?LinkId=269844), majd jelentkezzen be **ugyanazzal** az Apple ID-vel, mint amit korábban az Intune önálló verziójában az APNs-tanúsítvány létrehozásához és megújításához használt.
+2. Nyissa meg az [Apple Push Certificates portált](http://go.microsoft.com/fwlink/?LinkId=269844), majd jelentkezzen be **ugyanazzal** az Apple ID-vel, mint amit korábban az Intune önálló verziójában az APNs-tanúsítvány létrehozásához és megújításához használt.
 
-    ![Az Apple Push Certificates portál bejelentkezési oldala](../media/mdm-change-apns-portal.png)
+   ![Az Apple Push Certificates portál bejelentkezési oldala](../media/mdm-change-apns-portal.png)
 
 3. Válassza ki az Intune önálló verziójában használt APNs-tanúsítványt, majd kattintson a **Megújítás**lehetőségre.
 

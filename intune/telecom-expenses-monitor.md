@@ -1,28 +1,28 @@
 ---
-title: "Távközlésiköltség-kezelő szolgáltatások beállítása"
+title: Távközlésiköltség-kezelő szolgáltatások beállítása
 titleSuffix: Microsoft Intune
-description: "Az Intune integrálása a Saaswedo távközlésiköltség-kezelő szolgáltatással."
+description: Az Intune integrálása a Saaswedo távközlésiköltség-kezelő szolgáltatással.
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Távközlésiköltség-kezelő szolgáltatás beállítása az Intune-ban
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Intune segítségével kezelheti a vállalati tulajdonú mobileszközök adatforgalmából eredő távközlési költségeket. Ennek lehetővé tétele érdekében az Intune egy külső szoftverfejlesztő, a Saaswedo Datalert távközlésiköltség-kezelő megoldásával van integrálva. A Datalert egy valós idejű távközlésiköltség-kezelő szoftver, amellyel a távközlési adathasználatot kezelheti. A szoftverrel elkerülheti az Intune által kezelt eszközök költséges és váratlan kerettúllépéseit adatfogyasztásnál és roaming esetén.
 
@@ -72,7 +72,7 @@ Mielőtt hozzálát, győződjön meg róla, hogy van előfizetése az Intune-ra
 
     A következő képernyőfelvételen a zöld pipák láthatók, amelyek a csatlakozás sikere esetén jelennek meg.
 
-  ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![A Datalert sikeres csatlakozást jelző lapja](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. lépés: Annak ellenőrzése, hogy aktív-e az Intune távközlésiköltség-kezelési funkciója
 
@@ -88,7 +88,7 @@ A fenti 1. lépés befejeződése után a kapcsolatnak elvben automatikusan enge
 
    Keresse meg a lap tetején látható **Aktív** kapcsolati állapotot.
 
-  ![Az Intune oldala, rajta az Aktív állapotú Datalert-kapcsolattal](./media/tem-azure-portal-enable-service.png)
+   ![Az Intune oldala, rajta az Aktív állapotú Datalert-kapcsolattal](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. lépés: A Datalert alkalmazás telepítése a vállalat regisztrált eszközeire
 
@@ -136,13 +136,13 @@ Hozza létre a Datalert alkalmazást mindegyik platformhoz az Intune-ban, a köv
 
 4. Adja meg, hogy kötelező-e vagy sem az alkalmazás telepítése a csoport számára. A példa képernyőfelvételen kötelező a telepítés. Ez azt jelenti, hogy a felhasználó köteles telepíteni a Datalert alkalmazást azután, hogy regisztrálja az eszközét.
 
-  ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-assign-datalert-app-to-device-group.png)
+   ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. lépés: Vállalati telefon-előfizetések felvétele a Datalert konzoljába
 
 Mostanra úgy konfigurálta az Intune és a Datalert szolgáltatást, hogy tudjanak kommunikálni egymással. Most fel kell vennie a vállalati telefon-előfizetéseket a Datalert konzoljába, és meg kell határoznia, hogy milyen küszöbértékek érvényesek a honos hálózaton és a roaming során való használatra, és milyen intézkedés történik a megszegésük esetén. A vállalati telefon-előfizetéseket manuálisan is felveheti a Datalert konzoljába, vagy megvárhatja, hogy az eszköz Intune-regisztrációja után azok automatikusan fel legyenek véve.
 
-A beállítások megadásához látogasson el a [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (A Datalert beállítása a Microsoft Intune-hoz) weblapra (http://www.datalert.fr/microsoft-intune/intune-setup), és kövesse a beállítási varázsló lépéseit a **Settings** (Beállítások) lapon.
+A beállítások megadásához látogasson el a [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (A Datalert beállítása a Microsoft Intune-hoz, http://www.datalert.fr/microsoft-intune/intune-setup)) weblapra, és kövesse a beállítási varázsló lépéseit a **Settings** (Beállítások) lapon.
 
   ![Képernyőkép a Szabályzat hozzáadása panelről](./media/tem-add-phone-lines-to-datalert-console.png)
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Felkészülés az alkalmazásvédelmi szabályzatoknak az Azure Portalon történő konfigurálására
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ebből a témakörből megismerheti, hogy milyen előfeltételek megléte és lépések elvégzése szükséges, **még mielőtt** alkalmazásvédelmi szabályzatokat hozhat létre az Azure Portalon.
 
@@ -74,18 +74,18 @@ A támogatott Microsoft-alkalmazások teljes listájának megtekintéséhez kere
 
 ## <a name="prerequisites"></a>Előfeltételek
 
--   **Microsoft Intune-előfizetés**. A felhasználóknak Intune-licencekre van szükségük ahhoz, hogy megkapják azokat az alkalmazásokat, amelyekre alkalmazásvédelmi szabályzat érvényes.
-Már van Intune-előfizetése, ha jelenleg is az Intune-t használja az eszközök kezeléséhez. Akkor is rendelkezik Intune-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-kezelési funkciók miatt próbálná ki az Intune-t, létrehozhat egy próbafiókot a [Microsoft Intune lapon](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **Microsoft Intune-előfizetés**. A felhasználóknak Intune-licencekre van szükségük ahhoz, hogy megkapják azokat az alkalmazásokat, amelyekre alkalmazásvédelmi szabályzat érvényes.
+  Már van Intune-előfizetése, ha jelenleg is az Intune-t használja az eszközök kezeléséhez. Akkor is rendelkezik Intune-előfizetéssel, ha Nagyvállalati mobilitási csomag (EMS) licencet vásárolt. Ha a mobilalkalmazás-kezelési funkciók miatt próbálná ki az Intune-t, létrehozhat egy próbafiókot a [Microsoft Intune lapon](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Az Office portál **Számlázás** lapján ellenőrizheti, hagy rendelkezik-e Intune-előfizetéssel.  Ha van előfizetése, az Intune állapota az előfizetések alatt **Aktív**.
+  Az Office portál **Számlázás** lapján ellenőrizheti, hagy rendelkezik-e Intune-előfizetéssel.  Ha van előfizetése, az Intune állapota az előfizetések alatt **Aktív**.
 
--   **Office 365-előfizetés**, amely a következőkhöz szükséges:
+- **Office 365-előfizetés**, amely a következőkhöz szükséges:
 
   - Alkalmazásvédelmi szabályzatok foganatosítása a több identitás használatát támogató alkalmazásokra.
 
   - SharePoint Online- és Exchange Online munkahelyi fiókok létrehozása. A helyi Exchange-et és a helyi SharePointot nem támogatjuk.
 
--   **A Skype Vállalati online verzió beállítása modern hitelesítéshez**. További információkért lásd [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (A modern hitelesítés engedélyezése) című cikket.
+- **A Skype Vállalati online verzió beállítása modern hitelesítéshez**. További információkért lásd [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (A modern hitelesítés engedélyezése) című cikket.
 
 
 - Microsoft Azure Active Directory (Azure AD) a felhasználók létrehozásához. Az Azure AD akkor hitelesíti a felhasználókat, amikor azok végfelhasználóként elindítják az alkalmazást, és megadják a munkahelyi hitelesítő adataikat.

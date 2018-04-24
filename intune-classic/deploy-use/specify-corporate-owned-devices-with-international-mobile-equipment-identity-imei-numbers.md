@@ -1,54 +1,56 @@
 ---
-title: "IMEI-számok megadása"
-description: "A Microsoft Intune-nal a rendszergazdák IMEI-számokat importálhatnak a mobileszközplatformokra, így könnyebben azonosíthatják a vállalati tulajdonban lévő mobileszközöket"
-keywords: 
+title: IMEI-számok megadása
+description: A Microsoft Intune-nal a rendszergazdák IMEI-számokat importálhatnak a mobileszközplatformokra, így könnyebben azonosíthatják a vállalati tulajdonban lévő mobileszközöket
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9038670a4c0b4bf52868ba739336dd35366eed2f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cdc1e1ac6147903ec6ada30e7a3b42189a228c78
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Vállalati tulajdonban lévő eszközök megadása IMEI-számokkal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune lehetővé teszi, hogy a rendszergazdák nemzetközi mobilkészülék-azonosító (IMEI-) számokat importáljanak IMEI-számokkal rendelkező mobileszköz-platformok esetén, hogy könnyebben azonosítsák a vállalati tulajdonban lévő mobileszközöket. Az eszközök Intune-ban való regisztrációja után az IMEI-számokat importáló eszközöket itt találja: **Csoportok** > **Áttekintés** > **Összes eszköz**. Az **Eszközcsoport** felsorolja az importált IMEI-számmal rendelkező eszközöket **Vállalati** értékkel látják el a **Tulajdonos** oszlopban.
 
 1. A [Microsoft Intune felügyeleti konzoljában](https://manage.microsoft.com) lépjen a **Csoportok** &gt; **Minden eszköz** &gt; **Előre regisztrált vállalati eszközök** &gt; **IMEI-szám szerint (minden platform)** területre, majd válassza az **Eszközök felvétele** lehetőséget. Két módon adhat hozzá eszközöket:
 
-    -   **Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot. A részletek mezőjébe legfeljebb 128 karakter írható. 
+   - **Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot. A részletek mezőjébe legfeljebb 128 karakter írható. 
 
-        |||
-        |-|-|
-        |&lt;1. IMEI azonosító&gt;|&lt;1. eszköz részletei&gt;|
-        |&lt;2. IMEI azonosító&gt;|&lt;2. eszköz részletei&gt;|
-        Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
-        ```
-        01234567890123,device details
-        02234567890123,device details
-        ```
+     |                 |                           |
+     |-----------------|---------------------------|
+     | &lt;1. IMEI azonosító&gt; | &lt;1. eszköz részletei&gt; |
+     | &lt;2. IMEI azonosító&gt; | &lt;2. eszköz részletei&gt; |
 
-    -   **Eszközadatok kézi megadása** – Adja meg legfeljebb tizenöt eszköz sorozatszámát és adatait.
+     Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
+
+     ```
+     01234567890123,device details
+     02234567890123,device details
+     ```
+
+   - **Eszközadatok kézi megadása** – Adja meg legfeljebb tizenöt eszköz sorozatszámát és adatait.
 
    A *Részletek* mező adminisztratív célokra szolgál. Olyan részleteket adhat meg, amelyek segítenek azonosítani az eszközt a Céges eszközök hardverazonosító szerinti listájában. Ezek az információk nem kerülnek át az eszközre, csak az Intune konzoljában jelennek meg.
 
-2.   Kattintson a **Tovább** gombra.
-3.  Az **Eszközök felülvizsgálata** panelen ellenőrizheti az importált eszköz IMEI-számát. Eldöntheti azt is, hogy felülírja-e az újraimportált IMEI-számok **Részleteit**. A **Felülírás** négyzet jelölését törölve megőrizheti az aktuális részleteket. Válassza a **Befejezés** lehetőséget az IMEI-számok importálásához.
-4.  Az importált IMEI-számok és leírások az **IMEI szerint (minden platform)** listába kerülnek.
+2. Kattintson a **Tovább** gombra.
+3. Az **Eszközök felülvizsgálata** panelen ellenőrizheti az importált eszköz IMEI-számát. Eldöntheti azt is, hogy felülírja-e az újraimportált IMEI-számok **Részleteit**. A **Felülírás** négyzet jelölését törölve megőrizheti az aktuális részleteket. Válassza a **Befejezés** lehetőséget az IMEI-számok importálásához.
+4. Az importált IMEI-számok és leírások az **IMEI szerint (minden platform)** listába kerülnek.
 
 > [!IMPORTANT]
 > Ha Android-eszközökhöz tartozó IMEI-számokat importál, ügyeljen rá, hogy egyes Android-eszközök több IMEI-számmal is rendelkezhetnek. Ha olyan IMEI-számot importál, amely nem egyezik meg az eszköz által az Intune-nak jelentett IMEI-számmal, az eszköz nem vállalati, hanem személyes eszközként lesz besorolva.

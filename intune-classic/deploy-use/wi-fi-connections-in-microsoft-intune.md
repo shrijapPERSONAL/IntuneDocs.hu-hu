@@ -1,35 +1,35 @@
 ---
 title: Wi-Fi-kapcsolatok
-description: "A Wi-Fi profilok használatával segítséget nyújthat a felhasználóknak a Wi-Fi hálózatokhoz való csatlakozáshoz."
-keywords: 
+description: A Wi-Fi profilok használatával segítséget nyújthat a felhasználóknak a Wi-Fi hálózatokhoz való csatlakozáshoz.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Az eszközök konfigurálása a vállalati Wi-Fi hálózatokhoz való csatlakozáshoz
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune Wi-Fi profiljaival vezeték nélküli hálózati beállításokat adhat meg a szervezet felhasználói és eszközei számára. Wi-Fi-profil központi telepítése esetén a felhasználók anélkül csatlakozhatnak a vállalati Wi-Fi-hálózathoz, hogy azt maguknak kellene konfigurálniuk.
 
 Tegyük fel például, hogy egy új, **Contoso Wi-Fi** nevű vezeték nélküli hálózatot helyezett üzembe, és szeretné beállítani, hogy az összes iOS-eszköz kapcsolódjon ehhez a hálózathoz. Ennek folyamata a következő:
 
-![A Wi-Fi profillal kapcsolatos eljárás összefoglalása](..\media\wi-fi-process-diagram.png)
+![A Wi-Fi profillal kapcsolatos eljárás összefoglalása](../media/wi-fi-process-diagram.png)
 
 1.   Hozza létre a **Contoso Wi-Fi** vezeték nélküli hálózathoz való csatlakozáshoz szükséges beállításokat tartalmazó Wi-Fi-profilt.
 
@@ -67,23 +67,25 @@ A Windows 8.1 vagy a Windows 10 operációs rendszer asztali vagy mobil verziój
 
 Ehhez a házirendtípushoz nincsenek ajánlott beállítások, Egyéni házirendet kell létrehoznia.
 
-3.  Adja meg a profil nevét és leírását.
+3. Adja meg a profil nevét és leírását.
 
 4. Adja meg a **Hálózati kapcsolatok** beállítás értékeit.
- - **SSID (Szolgáltatáskészlet-azonosító)**: Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy a felhasználók a hálózat nevét lássák, ne az SSID-t.
- - **Kapcsolódás akkor is, ha a hálózat nem teszi közzé a nevét (SSID)**: Ha azt szeretné, hogy az eszközök akkor is csatlakozhassanak a hálózathoz, ha az nem látható a hálózatok listájában (mert rejtett, és nem teszi közzé a nevét), jelölje be ezt a beállítást.
+   - **SSID (Szolgáltatáskészlet-azonosító)**: Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy a felhasználók a hálózat nevét lássák, ne az SSID-t.
+   - **Kapcsolódás akkor is, ha a hálózat nem teszi közzé a nevét (SSID)**: Ha azt szeretné, hogy az eszközök akkor is csatlakozhassanak a hálózathoz, ha az nem látható a hálózatok listájában (mert rejtett, és nem teszi közzé a nevét), jelölje be ezt a beállítást.
 
 5. Konfigurálja a kijelölt platform **Biztonsági beállításait** . A rendelkezésre álló beállítások a választott biztonsági típusoktól függnek. A [Biztonsági beállítások](#security-settings) című rész ismerteti őket
 
 6. Konfigurálja a **proxybeállításokat** (csak iOS és MAC OS X).
 
-    |Beállítás neve|További információ|Mikor kell használni|
-    |----------------|-------------------|-------------|
-    |**A Wi-Fi kapcsolat proxybeállításai**|Válassza ki a proxybeállítások típusát:<br /><br />-   **Nincs** (alapértelmezett)<br />-   **Manuális** – Manuálisan adja meg a proxykiszolgáló URL-címét és portszámát.<br />-   **Automatikus** – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja.|Mindig|
-    |**Proxykiszolgáló címe** és **Portszám**|Adja meg a proxykiszolgáló URL-címét és portszámát.|Ha **A Wi-Fi-kapcsolat proxybeállításai** beállítás értéke **Kézi**.|
-    |**Proxykiszolgáló URL-címe**|Adja meg a proxykiszolgáló beállításait tartalmazó fájl URL-címét.|Ha **A Wi-Fi-kapcsolat proxybeállításai** beállítás értéke **Automatikus**|
 
-7.  A Wi-Fi profil mentése
+   |                              Beállítás neve                              |                                                                                                                                További információ                                                                                                                                 |                                            Mikor kell használni                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>A Wi-Fi kapcsolat proxybeállításai</strong>        | Válassza ki a proxybeállítások típusát:<br /><br />-   <strong>Nincs</strong> (alapértelmezett)<br />-   <strong>Manuális</strong> – Manuálisan adja meg a proxykiszolgáló URL-címét és portszámát.<br />-   <strong>Automatikus</strong> – A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. |                                              Mindig                                               |
+   | <strong>Proxykiszolgáló címe</strong> és <strong>Portszám</strong> |                                                                                                              Adja meg a proxykiszolgáló URL-címét és portszámát.                                                                                                               |  Ha <strong>A Wi-Fi-kapcsolat proxybeállításai</strong> beállítás értéke <strong>Kézi</strong>.   |
+   |                   <strong>Proxykiszolgáló URL-címe</strong>                    |                                                                                                      Adja meg a proxykiszolgáló beállításait tartalmazó fájl URL-címét.                                                                                                       | Ha <strong>A Wi-Fi-kapcsolat proxybeállításai</strong> beállítás értéke <strong>Automatikus</strong> |
+
+
+7. A Wi-Fi profil mentése
 
 Az új szabályzat a **Házirend** munkaterület **Konfigurációs szabályzatok** csomópontjában jelenik meg. A profil hatályba léptetésével kapcsolatos tudnivalókat lásd: **További lépések**.
 
@@ -177,5 +179,5 @@ Az alábbi táblázatok tartalmazzák az Android-, iOS- és Mac OS X-rendszerek 
 |**Identitásadatok védelmének engedélyezése (külső identitás)**|Adja meg az EAP-identitásra irányuló kérelemre adott válasz szövegét. Ez a szöveg tetszőleges érték lehet.<br /><br />A hitelesítés során a rendszer először ezt a névtelen identitást küldi el. Azt követően egy biztonságos alagúton küldi el a valódi azonosítót.|Ha az **EAP-típus** **PEAP**, **EAP-TTLS** vagy **EAP-FAST**.|
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 A következő cikkből megtudhatja, hogyan hozhat létre Wi-Fi-profilt egy előmegosztott kulccsal: [Wi-Fi-profil létrehozása előmegosztott kulccsal](pre-shared-key-wi-fi-profile.md).

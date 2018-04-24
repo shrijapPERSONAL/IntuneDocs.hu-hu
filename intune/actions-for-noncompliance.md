@@ -1,22 +1,22 @@
 ---
-title: "Meg nem felelés esetén használható üzenetek és műveletek az Azure-beli Microsoft Intune-ban | Microsoft Docs"
-description: "Értesítési e-mailt hozhat létre, és elküldheti azt a nem megfelelő eszközökre. Miután az eszköz nem megfelelőként lett megjelölve, hozzáadhat olyan műveleteket, mint a türelmi időszak kijelölése a megfelelőség teljesítéséig, vagy egy ütemterv, amely az eszköz megfelelővé válásáig letiltja a hozzáférést. Mindezt megteheti az Azure-beli Microsoft Intune használatával."
-keywords: 
+title: Meg nem felelés esetén használható üzenetek és műveletek az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: Értesítési e-mailt hozhat létre, és elküldheti azt a nem megfelelő eszközökre. Miután az eszköz nem megfelelőként lett megjelölve, hozzáadhat olyan műveleteket, mint a türelmi időszak kijelölése a megfelelőség teljesítéséig, vagy egy ütemterv, amely az eszköz megfelelővé válásáig letiltja a hozzáférést. Mindezt megteheti az Azure-beli Microsoft Intune használatával.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz – Intune
 
@@ -54,14 +54,14 @@ Kétféle művelet használható:
 3. Kattintson az **Eszközmegfelelőség**, majd az **Értesítések** elemre. 
 4. Válassza az **Értesítés létrehozása** lehetőséget, majd adja meg az alábbi adatokat:
 
-  - Név
-  - Tárgy
-  - Üzenet
-  - E-mail fejléce – a cég emblémájának megjelenítése
-  - E-mail lábléce – a cég emblémájának megjelenítése
-  - E-mail lábléce – a kapcsolatfelvételi adatok megjelenítése
+   - Név
+   - Tárgy
+   - Üzenet
+   - E-mail fejléce – a cég emblémájának megjelenítése
+   - E-mail lábléce – a cég emblémájának megjelenítése
+   - E-mail lábléce – a kapcsolatfelvételi adatok megjelenítése
 
-  ![Megfelelőségről szóló értesítési üzenetminta az Intune-ban](./media/actionsfornoncompliance-1.PNG)
+   ![Megfelelőségről szóló értesítési üzenetminta az Intune-ban](./media/actionsfornoncompliance-1.PNG)
 
 Ha megadta a szükséges információkat, válassza a **Létrehozás** elemet. Az értesítési üzenet sablonja mostantól használható.
 
@@ -77,7 +77,7 @@ További műveletet akkor vehet fel, ha új megfelelőségi szabályzatot hoz l�
 1. Az [Azure Portalon](https://portal.azure.com) nyissa meg a **Microsoft Intune** lapot, és kattintson az **Eszközmegfelelőség** elemre.
 2. Kattintson a **Szabályzatok** elemre, válassza ki az egyik szabályzatot, majd kattintson a **Tulajdonságok** elemre. 
 
-  Még nincs szabályzata? Létrehozhat egy új szabályzatot [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), vagy más platformokon.
+   Még nincs szabályzata? Létrehozhat egy új szabályzatot [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), vagy más platformokon.
 
 3. Válassza a **Meg nem felelőség esetén végrehajtandó műveletek** lehetőséget, és kattintson a **Hozzáadás** elemre a művelet paramétereinek megadásához. Választhatja a korábban már létrehozott üzenetsablont, hozzáadhat új címzetteket, és frissítheti a türelmi időszak ütemezését. Az ütemezésben megadhatja a napok számát (0 és 365 között), majd kötelezővé teheti a feltételes hozzáférési szabályzatok érvénybe léptetését. Ha **0** napot adott meg, a feltételes hozzáférés **azonnal** letiltja a céges erőforrásokhoz való hozzáférést.
 

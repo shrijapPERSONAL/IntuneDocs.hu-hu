@@ -14,15 +14,15 @@ ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: 3660255503c0dc7faa8d41b698f3d5fd9e4c330f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e2e168fec9796f1038080afdf79b0e847f65e40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windowsos eszközök csoportos regisztrálása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A rendszergazda nagy számú új windowsos eszközt csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ha az Azure AD-bérlőhöz csoportosan szeretne eszközöket regisztrálni, először a Windows Configuration Designer (WCD) alkalmazással létre kell hoznia egy kiépítési csomagot. Ha a kiépítési csomagokat céges tulajdonban lévő eszközökre alkalmazza, az eszközök az Azure AD-bérlőhöz lesznek csatlakoztatva, és regisztrálódnak az Intune-felügyeletben. A csomag alkalmazása után az Azure AD-felhasználók bejelentkezhetnek az eszközökre.
 
@@ -38,47 +38,47 @@ Windowsos eszközök csoportos regisztrálásához az alábbiak szükségesek:
 ## <a name="create-a-provisioning-package"></a>Kiépítési csomag létrehozása
 
 1. Töltse le a [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) alkalmazást a Microsoft Áruházból.
-![A Windows Configuration Designer alkalmazás áruházbeli képernyőképei és ismertetője](../media/bulk-enroll-store.png)
+   ![A Windows Configuration Designer alkalmazás áruházbeli képernyőképei és ismertetője](../media/bulk-enroll-store.png)
 
 2. Nyissa meg a **Windows Configuration Designer** alkalmazást, és válassza a **Provision desktop devices** (Asztali eszközök kiépítése) elemet.
-![Képernyőkép a Provision desktop services elem kiválasztásáról a Windows Configuration Designerben](../media/bulk-enroll-select.png)
+   ![Képernyőkép a Provision desktop services elem kiválasztásáról a Windows Configuration Designerben](../media/bulk-enroll-select.png)
 
 3. Megnyílik egy **New project** (Új projekt) ablak, ahol az alábbiakat kell megadnia:
-  - **Name** (Név) – A projekt neve
-  - **Project folder** (Projektmappa) – A projekt mentési helye
-  - **Description** (Leírás) – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-name.png)
+   - **Name** (Név) – A projekt neve
+   - **Project folder** (Projektmappa) – A projekt mentési helye
+   - **Description** (Leírás) – A projekt leírása (nem kötelező) ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-name.png)
 
-4.  Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Lehetőség van termékkulcs megadására is, ha frissíti a Windows-kiadást, megosztott használatra konfigurálja az eszközt, és eltávolítja az előre telepített szoftvert.<BR>
-![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-device.png)
+4. Adjon meg egyedi neveket az eszközök számára. A névben szerepelhet sorozatszám (%%SERIAL%%) vagy véletlenszerű karaktersorozat. Lehetőség van termékkulcs megadására is, ha frissíti a Windows-kiadást, megosztott használatra konfigurálja az eszközt, és eltávolítja az előre telepített szoftvert.<BR>
+   ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-device.png)
 
-5.  Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha ez nincs megadva, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
-![Képernyőkép a Wi-Fi engedélyezéséről, a hálózati SSID és a hálózattípus konfigurálásáról a Windows Configuration Designerben](../media/bulk-enroll-network.png)
+5. Lehetőség van arra is, hogy beállítsa, mely Wi-Fi-hálózathoz csatlakozzanak az eszközök az első indításkor.  Ha ez nincs megadva, az eszköz első indításakor vezetékes hálózati kapcsolatra lesz szükség.
+   ![Képernyőkép a Wi-Fi engedélyezéséről, a hálózati SSID és a hálózattípus konfigurálásáról a Windows Configuration Designerben](../media/bulk-enroll-network.png)
 
-6.  Válassza az **Enroll in Azure AD** (Regisztrálás az Azure AD-ban) lehetőséget, adja meg a **Bulk Token Expiry** (Csoportos jogkivonat lejárati ideje) értékét, majd válassza a **Get Bulk Token** (Csoportos jogkivonat beszerzése) elemet.
-![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-account.png)
+6. Válassza az **Enroll in Azure AD** (Regisztrálás az Azure AD-ban) lehetőséget, adja meg a **Bulk Token Expiry** (Csoportos jogkivonat lejárati ideje) értékét, majd válassza a **Get Bulk Token** (Csoportos jogkivonat beszerzése) elemet.
+   ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-account.png)
 
 7. A csoportos jogkivonat beszerzéséhez meg kell adnia az Azure AD-beli hitelesítő adatait.
-![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-cred.png)
+   ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-cred.png)
 
-8.  Ha a **Bulk Token** (Csoportos jogkivonat) sikeresen letöltődött, kattintson a **Next** (Tovább) gombra.
+8. Ha a **Bulk Token** (Csoportos jogkivonat) sikeresen letöltődött, kattintson a **Next** (Tovább) gombra.
 
 9. Az **Add applications** elemmel alkalmazásokat, az **Add certificates** elemmel tanúsítványokat vehet fel az eszközökre. A megadott alkalmazások és tanúsítványok telepítve lesznek az eszközön.
 
 10. Igény esetén a kiépítési csomagot jelszóval is védheti.  Kattintson a **Létrehozás** gombra.
-![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-create.png)
+    ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Eszközök üzembe helyezése
 
 1. Keresse meg a kiépítési csomagot abban a mappában, amelyet az alkalmazásban a **Project folder** mezőben megadott.
 
 2. Válassza ki azt a módszert, amellyel a kiépítési csomagot alkalmazni szeretné az eszközre.  A kiépítési csomagot az alábbi módszerekkel lehet eszközre alkalmazni:
- - Másolja a kiépítési csomagot USB-meghajtóra, majd csatlakoztassa az USB-meghajtót a csoportosan regisztrálni kívánt eszközhöz, majd a kezdeti beállításnál alkalmazza a csomagot.
- - Másolja a kiépítési csomagot egy hálózati meghajtóra, majd a kezdeti beállításnál alkalmazza a csomagot a csoportosan regisztrálni kívánt eszközre.
+   - Másolja a kiépítési csomagot USB-meghajtóra, majd csatlakoztassa az USB-meghajtót a csoportosan regisztrálni kívánt eszközhöz, majd a kezdeti beállításnál alkalmazza a csomagot.
+   - Másolja a kiépítési csomagot egy hálózati meghajtóra, majd a kezdeti beállításnál alkalmazza a csomagot a csoportosan regisztrálni kívánt eszközre.
 
- A kiépítési csomag használatának részletes leírását megtalálja a [Kiépítési csomag alkalmazása](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) című témakörben.
+   A kiépítési csomag használatának részletes leírását megtalálja a [Kiépítési csomag alkalmazása](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) című témakörben.
 
 3. A csomag alkalmazása után az eszköz 1 percen belül automatikusan újraindul.
- ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-add.png)
+   ![Képernyőkép a név, a projektmappa és a leírás megadásáról a Windows Configuration Designerben](../media/bulk-enroll-add.png)
 
 4. Az újraindítás után az eszköz automatikusan csatlakozik az Azure Active Directoryhoz, és regisztrálódik a Microsoft Intune-ban.
 

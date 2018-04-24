@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune-tanúsítványprofilok konfigurálása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Miután a [SCEP-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-scep.md) vagy a [PFX-tanúsítványinfrastruktúra konfigurálása](configure-certificate-infrastructure-for-pfx.md) részben leírtaknak megfelelően konfigurálta az infrastruktúrát és a tanúsítványokat, hozzáfoghat a tanúsítványprofilok létrehozásához. Ennek folyamata a következő:
 
@@ -92,39 +92,39 @@ Miután létrehozott egy megbízható hitelesítésszolgáltatói tanúsítvány
 
 -  Windows Phone 8.1 és újabb verziók
 
-2.  **SCEP-tanúsítványprofil** házirend hozzáadása
+2. **SCEP-tanúsítványprofil** házirend hozzáadása
 
-    További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
-    > [!NOTE]
-    >
-    > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** legördülő listából válassza az **Egyéni** lehetőséget (csak iOS-profilok esetén érhető el).
-    >
-    > Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:
+3. A profilkonfigurációs oldalon szereplő utasításokat követve végezze el az SCEP-tanúsítványprofil beállítását.
+   > [!NOTE]
+   > 
+   > Egyéni tulajdonosnév megadásához a **Tulajdonos nevének formátuma** legördülő listából válassza az **Egyéni** lehetőséget (csak iOS-profilok esetén érhető el).
+   > 
+   > Az egyéni formátum jelenleg két változót támogat: `Common Name (CN)` és `Email (E)`. A változók és a statikus karakterláncok együttes használatával a következőhöz hasonló egyéni tulajdonosnév-formátumot hozhat létre:
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > A példában a rendszergazda egy olyan tulajdonosnév-formátumot hozott létre, amely a `CN` és az `E` változó mellett a Szervezeti Egység, a Szervezet, a Hely, az Állam és az Ország értékek karakterláncait is alkalmazza. A [CertStrToName függvény](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) sorolja fel a támogatott karakterláncokat.
-
-4.  Válassza a **Házirend mentése** elemet.
+4. Válassza a **Házirend mentése** elemet.
 
 Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>.PFX-tanúsítványprofil létrehozásához
 
-1.  Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet, majd válasszon ki egy eszközplatformot. A .PFX-tanúsítványokat támogatják:
-  - Android 4 és újabb verziók
-  - Android for Work
-  - Windows 10 és újabb
-  - Windows Phone 10 és újabb verziók
-  - iOS 8.0 és újabb verziók    
+1. Az [Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Házirend** &gt; **Házirend hozzáadása** elemet, majd válasszon ki egy eszközplatformot. A .PFX-tanúsítványokat támogatják:
+   - Android 4 és újabb verziók
+   - Android for Work
+   - Windows 10 és újabb
+   - Windows Phone 10 és újabb verziók
+   - iOS 8.0 és újabb verziók    
 
 
-2.  **.PFX-tanúsítványprofil** házirend hozzáadása.
-      További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Adja meg a házirendűrlapon kért adatokat.
-4.  Válassza a **Házirend mentése** elemet.
+2. **.PFX-tanúsítványprofil** házirend hozzáadása.
+     További információ: [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Adja meg a házirendűrlapon kért adatokat.
+4. Válassza a **Házirend mentése** elemet.
 
 Az új házirend a **Házirend** munkaterületen jelenik meg. Ekkor telepítheti.
 

@@ -1,25 +1,25 @@
 ---
-title: "Az iOS-alkalmazások közötti adatátvitel kezelése"
+title: Az iOS-alkalmazások közötti adatátvitel kezelése
 titlesuffix: Microsoft Intune
-description: "Ismerje meg, hogyan használhatja a Microsoft Intune mobilalkalmazás-kezelési házirendjeit az alkalmazások közötti adatátvitel kezeléséhez."
-keywords: 
+description: Ismerje meg, hogyan használhatja a Microsoft Intune mobilalkalmazás-kezelési házirendjeit az alkalmazások közötti adatátvitel kezeléséhez.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-ban
 ## <a name="manage-ios-apps"></a>IOS-alkalmazások felügyelete
@@ -63,9 +63,9 @@ Az egyszerű felhasználónév beállítását **kötelező** megadni olyan eszk
 
 2. Az alkalmazások konfigurációjának megadására szolgáló szakaszban adja meg a következő beállítást:
 
-  **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
+   **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
 
-  A kulcs-érték pár pontos szintaxisa függ a külső MDM-szolgáltatótól. Az alábbi táblázat külső MDM-szolgáltatókra és az esetükben megadandó kulcs-érték párra közöl példákat.
+   A kulcs-érték pár pontos szintaxisa függ a külső MDM-szolgáltatótól. Az alábbi táblázat külső MDM-szolgáltatókra és az esetükben megadandó kulcs-érték párra közöl példákat.
 
 |Külső MDM-szolgáltató| Konfigurációs kulcs | Érték típusa | Konfigurációs érték|
 | ------- | ---- | ---- | ---- |

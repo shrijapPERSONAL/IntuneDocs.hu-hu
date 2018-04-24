@@ -9,30 +9,30 @@ Az automatikus regisztrálással a felhasználók úgy is regisztrálhatják Win
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Az automatikus MDM-regisztráció konfigurálása
 
-1. Jelentkezzen be az [Azure felügyeleti portálra](https://portal.azure.com) (https://manage.windowsazure.com), és válassza az **Azure Active Directory** lehetőséget.
+1. Jelentkezzen be az [Azure felügyeleti portálon](https://portal.azure.com) (https://manage.windowsazure.com)), majd válassza az **Azure Active Directory** elemet.
 
-  ![Az Azure Portal képernyőképe](../media/auto-enroll-azure-main.png)
+   ![Az Azure Portal képernyőképe](../media/auto-enroll-azure-main.png)
 
 2. Válassza a **Mobilitás (MDM és MAM)** elemet.
 
-  ![Az Azure Portal képernyőképe](../media/auto-enroll-mdm.png)
+   ![Az Azure Portal képernyőképe](../media/auto-enroll-mdm.png)
 
 3. Válassza a **Microsoft Intune** elemet.
 
-  ![Az Azure Portal képernyőképe](../media/auto-enroll-intune.png)
+   ![Az Azure Portal képernyőképe](../media/auto-enroll-intune.png)
 
 4. Konfigurálja az **MDM-felhasználói hatókört**. Adja meg, hogy mely felhasználók eszközeit felügyelje a Microsoft Intune. E felhasználók Windows 10 rendszerű eszközeit a rendszer automatikusan belépteti a Microsoft Intune-felügyeletbe.
 
-  - **Nincsenek**
-  - **Néhány**
-  - **Összes**
+   - **Nincsenek**
+   - **Néhány**
+   - **Összes**
 
- ![Az Azure Portal képernyőképe](../media/auto-enroll-scope.png)
+   ![Az Azure Portal képernyőképe](../media/auto-enroll-scope.png)
 
 5. A következő URL-címekhez használja az alapértelmezett értékeket:
-  - **MDM használati feltételeinek URL-címe**
-  - **MDM-felderítési URL-cím**
-  - **MDM megfelelőségi URL-címe**
+   - **MDM használati feltételeinek URL-címe**
+   - **MDM-felderítési URL-cím**
+   - **MDM megfelelőségi URL-címe**
 
 6. Válassza a **Mentés** lehetőséget.
 

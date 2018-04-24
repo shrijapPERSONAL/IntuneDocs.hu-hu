@@ -1,29 +1,29 @@
 ---
-title: "iOS-eszközök regisztrálása az Apple Configuratorral"
+title: iOS-eszközök regisztrálása az Apple Configuratorral
 titlesuffix: Microsoft Intune
-description: "Útmutató a céges iOS-eszközöknek az Apple Configurator és a Beállítási asszisztens használatával való regisztrálásához."
-keywords: 
+description: Útmutató a céges iOS-eszközöknek az Apple Configurator és a Beállítási asszisztens használatával való regisztrálásához.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-eszközök regisztrálása az Apple Configurator használatával
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Átmeneti felhasználói felületi eltérések
@@ -85,8 +85,8 @@ Egy eszközregisztrációs profil meghatározza a regisztrálás során alkalmaz
 
 1. Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv-fájlt). A bal oldali oszlopban tüntesse fel a sorozatszámot, a jobb oldali oszlopban pedig a további adatokat. A lista jelenlegi maximális mérete 5000 sor. Szövegszerkesztőben a .csv-fájl az alábbihoz hasonlóan jelenik meg:
 
-  F7TLWCLBX196,eszköz adatai</br>
-  DLXQPCWVGHMJ,eszköz adatai
+   F7TLWCLBX196,eszköz adatai</br>
+   DLXQPCWVGHMJ,eszköz adatai
 
    Ismerje meg, [hogyan találhatja meg egy iOS-eszköz sorozatszámát](https://support.apple.com/HT204073).
 2. Az [Azure Portalbeli](https://portal.azure.com) Intune-ban válassza az **Eszközök regisztrálása**, majd az **Apple-regisztráció** elemet.
@@ -119,23 +119,23 @@ Miután létrehozta a profilt és hozzárendelte a sorozatszámokat, egy URL-cí
 1. Az [Azure Portalbeli](https://portal.azure.com) Intune-ban válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **AC-profilok** lehetőséget, majd válassza ki az exportálni kívánt profilt.
 2. A profilban válassza a **Profil exportálása** lehetőséget.
 
-  ![A Beállítási asszisztenssel történő regisztrációs folyamat Profil exportálása lehetősége, a profil URL-címének kiemelésével](./media/ios-apple-configurator-expor-sat.png)
+   ![A Beállítási asszisztenssel történő regisztrációs folyamat Profil exportálása lehetősége, a profil URL-címének kiemelésével](./media/ios-apple-configurator-expor-sat.png)
 3. Másolja a profil URL-címét a vágólapra. A címet később hozzáadhatja az Apple Configuratorban az iOS-eszközök által használt Intune-profil meghatározásához.
 
-  Ezt követően importálja ezt a profilt az Apple Configuratorban az alábbi eljárással, hogy meghatározza az iOS-eszközök által használt Intune-profilt.
+   Ezt követően importálja ezt a profilt az Apple Configuratorban az alábbi eljárással, hogy meghatározza az iOS-eszközök által használt Intune-profilt.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Eszközök regisztrálása a Beállítási asszisztenssel
 
-1.  A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
-  > [!WARNING]
-  > A regisztrációs folyamat során az eszközök visszaállnak a gyári beállításokra. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. Az eszközön az **üdvözlőképernyőnek** kell látszania az eszköz csatlakoztatásakor.
+1. A Mac-számítógépen nyissa meg az **Apple Configurator 2** eszközt. A menüsávban válassza az **Apple Configurator 2**, majd a **Beállítások** elemet.
+   > [!WARNING]
+   > A regisztrációs folyamat során az eszközök visszaállnak a gyári beállításokra. Az ajánlott eljárás szerint állítsa alaphelyzetbe az eszközt, és kapcsolja be. Az eszközön az **üdvözlőképernyőnek** kell látszania az eszköz csatlakoztatásakor.
 
 2. Válassza a **Beállítások** panelen a **Servers** (Kiszolgálók) elemet, majd az MDM-kiszolgálói varázsló elindításához válassza a „+” szimbólumot. Kattintson a **Tovább** gombra.
 3. Írja be a Beállítási asszisztens segítségével a Microsoft Intune-ban történő iOS-eszközregisztrációhoz megadott MDM-kiszolgáló **állomásnevét vagy URL-címét** (Host name or URL) és **regisztrációs URL-címét** (Enrollment URL) a megfelelő mezőkbe. Az Enrollment URL (Regisztrációs URL-cím) mezőnél az Intune-ból exportált regisztrációs profil URL-címét adja meg. Kattintson a **Tovább** gombra.  
 
-  Ha a rendszer figyelmezteti, hogy nincs ellenőrizve a kiszolgáló URL-címe, nyugodtan figyelmen kívül hagyhatja. Kattintson minden megjelenő oldalon a **Next** (Tovább) gombra, amíg be nem fejeződik a varázsló.
-4.  Az iOS-mobileszközöket csatlakoztassa a Mac számítógéphez egy USB-adapterrel.
-5.  Jelölje ki a kezelni kívánt iOS-eszközöket, majd válassza az **Előkészítés** lehetőséget. A **Prepare iOS Device** (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
+   Ha a rendszer figyelmezteti, hogy nincs ellenőrizve a kiszolgáló URL-címe, nyugodtan figyelmen kívül hagyhatja. Kattintson minden megjelenő oldalon a **Next** (Tovább) gombra, amíg be nem fejeződik a varázsló.
+4. Az iOS-mobileszközöket csatlakoztassa a Mac számítógéphez egy USB-adapterrel.
+5. Jelölje ki a kezelni kívánt iOS-eszközöket, majd válassza az **Előkészítés** lehetőséget. A **Prepare iOS Device** (iOS-eszköz előkészítése) panelen válassza a **Manual** (Manuális) elemet, majd a **Next** (Tovább) gombot.
 6. Az **Enroll in MDM Server** (Regisztrálás MDM-kiszolgálón) panelen válassza ki a létrehozott kiszolgáló nevét, majd válassza a **Next** (Tovább) gombot.
 7. A **Supervise Devices** (Eszközök felügyelete) panelen válassza ki a felügyelet szintjét, majd válassza a **Next** (Tovább) gombot.
 8. A **Create an Organization** (Szervezet létrehozása) panelen válassza ki a szervezetet az **Organization** mezőben, vagy hozzon létre új szervezetet, majd válassza a **Next** gombot.
@@ -162,13 +162,14 @@ Nem telepíthetők a felhasználói kapcsolatot igénylő alkalmazások, többek
 
 2. Ha a profilt közvetlenül az iOS-eszközökre szeretné telepíteni felügyeleti profilként, helyezze át a fájlt egy [Apple Configuratort](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) futtató Mac gépre.
 3. Készítse elő az eszközt az Apple Configuratorral az alábbi lépések segítségével.
-  1. Egy Mac számítógépen nyissa meg az Apple Configurator 2.0 eszközt.
-  2. Csatlakoztassa az iOS-eszközt a Mac számítógéphez egy USB-kábellel. Zárja be a Fotók, az iTunes és más alkalmazásokat, amelyek megnyílnak az eszközhöz annak észlelésekor.
-  3. Az Apple Configuratorban válassza ki a csatlakoztatott iOS-eszközt, majd kattintson az **Add** (Hozzáadás) gombra. Az eszközhöz adható lehetőségek a legördülő listában jelennek meg. Válassza a **Profilok** lehetőséget.
+   1. Egy Mac számítógépen nyissa meg az Apple Configurator 2.0 eszközt.
+   2. Csatlakoztassa az iOS-eszközt a Mac számítógéphez egy USB-kábellel. Zárja be a Fotók, az iTunes és más alkalmazásokat, amelyek megnyílnak az eszközhöz annak észlelésekor.
+   3. Az Apple Configuratorban válassza ki a csatlakoztatott iOS-eszközt, majd kattintson az **Add** (Hozzáadás) gombra. Az eszközhöz adható lehetőségek a legördülő listában jelennek meg. Válassza a **Profilok** lehetőséget.
 
-    ![A Beállítási asszisztenssel történő regisztrációs folyamat Profil exportálása lehetősége, a profil URL-címének kiemelésével](./media/ios-apple-configurator-add-profile.png)
+      ![A Beállítási asszisztenssel történő regisztrációs folyamat Profil exportálása lehetősége, a profil URL-címének kiemelésével](./media/ios-apple-configurator-add-profile.png)
 
-  4. A fájlkiválasztóval válassza ki az Intune-ból exportált .mobileconfig fájlt, majd válassza az **Add** (Hozzáadás) gombot. Ezzel a profil hozzá lesz adva az eszközhöz. Ha az eszköz Felügyeletlen, a telepítést el kell fogadni az eszközön.
+   4. A fájlkiválasztóval válassza ki az Intune-ból exportált .mobileconfig fájlt, majd válassza az **Add** (Hozzáadás) gombot. Ezzel a profil hozzá lesz adva az eszközhöz. Ha az eszköz Felügyeletlen, a telepítést el kell fogadni az eszközön.
+
 4. Az alábbi lépések segítségével telepítse a profilt az iOS-eszközön. Az eszköz elvileg elvégezte a Beállítási asszisztens lépéseit, és készen áll a használatra. Ha a regisztrációba alkalmazástelepítések tartoznak, az eszközhöz be kell állítani egy Apple ID azonosítót, mert az alkalmazástelepítéshez ezzel kell bejelentkezni az Apple Store áruházba.
    1. Oldja fel az iOS-eszköz zárolását.
    2. A **Felügyeleti profil** **Profil telepítése** párbeszédpanelén kattintson a **Telepítés** gombra.

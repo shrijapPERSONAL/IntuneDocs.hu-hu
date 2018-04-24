@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A [Vállalati Microsoft Áruház](https://www.microsoft.com/business-store) az a hely, ahol alkalmazásokat vásárolhat a szervezete számára egyenként vagy mennyiségi program keretében. Az áruházat a Microsoft Intune-nal összekapcsolva a mennyiségi programban vásárolt alkalmazásokat az Intune-konzolról kezelheti. Például:
 * Szinkronizálhatja az áruházban vásárolt alkalmazások listáját az Intune-nal.
@@ -57,8 +57,8 @@ Most már folytathatja a műveletet, és beállíthatja a szinkronizálást az I
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
 2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés**  >   **Windows** elemet, majd válassza a **Vállalati Áruház** elemet.
 3. A **Vállalati Microsoft Áruház** lapon tegye a következőket:
- * Ha még nem tette meg, kattintson a Vállalati Microsoft Áruházba történő regisztráció hivatkozására.
- * Miután regisztrálta magát, válassza a **Szinkronizálás konfigurálása** elemet.
+   * Ha még nem tette meg, kattintson a Vállalati Microsoft Áruházba történő regisztráció hivatkozására.
+   * Miután regisztrálta magát, válassza a **Szinkronizálás konfigurálása** elemet.
 4. **A Vállalati Microsoft Áruházzal való alkalmazásszinkronizálás konfigurálása** párbeszédpanelen válassza a **Vállalati Microsoft Áruházzal való szinkronizálás engedélyezése** lehetőséget.
 5. A **Nyelv** legördülő listán válassza ki azt a nyelvet, amelyet a Vállalati Microsoft Áruházból származó alkalmazásoknak az Intune-konzolon való megjelenítéséhez kíván használni. Az alkalmazások a végfelhasználó nyelvén lesznek telepítve (ha ez elérhető), függetlenül a megjelenítéshez választott nyelvtől.
 6. Kattintson az **OK**gombra.

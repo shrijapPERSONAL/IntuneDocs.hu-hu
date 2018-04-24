@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. fázis: a Microsoft Intune előkészítése a mobileszköz-felügyeletre (MDM)
 
@@ -55,23 +55,23 @@ Mielőtt részletesen rátérnénk az Intune beállítására, tekintsük át a 
 
 ### <a name="what-is-your-device-security-policy"></a>Milyen eszközbiztonsági szabályzat van érvényben?
 
--   Szükséges-e eszközszintű titkosítás?
+- Szükséges-e eszközszintű titkosítás?
 
--   Mi az eszközök aktuális jelszavainak/PIN-kódjainak hossza?
+- Mi az eszközök aktuális jelszavainak/PIN-kódjainak hossza?
 
--   Szükség van-e eszközfunkciók letiltására vagy bizonyos fajta eszközműködés korlátozására? Az eszközkonfigurációs profilokkal számos platformspecifikus beállítást szabályozhat:
-      - Kamera letiltása
-      - Egyalkalmazásos mód<br/>
+- Szükség van-e eszközfunkciók letiltására vagy bizonyos fajta eszközműködés korlátozására? Az eszközkonfigurációs profilokkal számos platformspecifikus beállítást szabályozhat:
+    - Kamera letiltása
+    - Egyalkalmazásos mód<br/>
 
--   Milyen hitelesítés támogatása szükséges? Ha tanúsítványalapú hitelesítésre van szükség, milyen fajta tanúsítványokat kell létrehozni?
+- Milyen hitelesítés támogatása szükséges? Ha tanúsítványalapú hitelesítésre van szükség, milyen fajta tanúsítványokat kell létrehozni?
   - Az Intune-nal erőforrás-hozzáférési szabályzatokban használható tanúsítványokat hozhat létre a regisztrált eszközökhöz.
-    -   Milyen típusú nyilvános kulcsú infrastruktúra (PKI) támogatása szükséges?
-<br></br>
--   Van-e szükség virtuális magánhálózat (VPN) támogatására eszköz- vagy alkalmazásszinten?
+  -   Milyen típusú nyilvános kulcsú infrastruktúra (PKI) támogatása szükséges?
+  <br></br>
+- Van-e szükség virtuális magánhálózat (VPN) támogatására eszköz- vagy alkalmazásszinten?
 
-    -   Az Intune-nal külső VPN-szolgáltatókhoz is lehet VPN-konfigurációkat létrehozni.
-<br/><br/>
--   Lehet-e átmeneti kivételeket tenni bizonyos követelmények alól az üzemszünet elkerülése érdekében? Vagy a hozzáférést kapó eszközöknek mindig meg kell felelniük az összes biztonsági követelménynek?
+  -   Az Intune-nal külső VPN-szolgáltatókhoz is lehet VPN-konfigurációkat létrehozni.
+  <br/><br/>
+- Lehet-e átmeneti kivételeket tenni bizonyos követelmények alól az üzemszünet elkerülése érdekében? Vagy a hozzáférést kapó eszközöknek mindig meg kell felelniük az összes biztonsági követelménynek?
 
 ## <a name="next-steps"></a>További lépések
 Ha kíváncsi, hogyan mérték fel egyes cégek saját mobileszköz-felügyeleti követelményeiket, tekintse meg ezeket a különféle iparágakból származó [esettanulmányokat](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune).
