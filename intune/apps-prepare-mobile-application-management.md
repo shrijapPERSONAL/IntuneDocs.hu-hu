@@ -1,29 +1,29 @@
 ---
-title: "Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára"
+title: Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 titlesuffix: Microsoft Intune
-description: "Az alkalmazásburkoló eszközzel és az App SDK-val az egyéni üzletági alkalmazásai is használhatnak alkalmazásvédelmi szabályzatokat a Microsoft Intune-ban."
-keywords: 
+description: Az alkalmazásburkoló eszközzel és az App SDK-val az egyéni üzletági alkalmazásai is használhatnak alkalmazásvédelmi szabályzatokat a Microsoft Intune-ban.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Üzletági alkalmazások felkészítése az alkalmazásvédelmi szabályzatok használatára
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Az Intune alkalmazásburkoló eszközével vagy az Intune App SDK-val engedélyezheti, hogy az alkalmazások alkalmazásvédelmi szabályzatokat használjanak. Az alábbi információkkal többet megtudhat erről a két módszerről és arról, mikor érdemes használni azokat.
 
@@ -70,8 +70,8 @@ További információk az SDK-ról: [Áttekintés](app-sdk.md). Az SDK használa
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Igen – használja az [Intune App SDK Xamarin összetevőt](app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](app-sdk-cordova.md).|
-|**Android**| Igen – használja az [Intune App SDK Xamarin összetevőt](app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](app-sdk-cordova.md).|
+|**iOS**|Igen – használja az [Intune App SDK Xamarin-kötéseket](app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](app-sdk-cordova.md).|
+|**Android**| Igen – használja az [Intune App SDK Xamarin-kötéseket](app-sdk-xamarin.md).|Igen – használja az [Intune App SDK Cordova beépülő modult](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Szolgáltatások összehasonlítása
 Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használható beállításokat sorolja fel.
@@ -79,30 +79,30 @@ Ez a táblázat az App SDK-hoz és az alkalmazásburkoló eszközhöz használha
 > [!NOTE]
 > Az alkalmazásburkoló használható a különálló Intune-nal és a Configuration Managerrel kombinált Intune-nal is.
 
-|Funkció|App SDK|Alkalmazásburkoló eszköz|
-|-----------|---------------------|-----------|
-|A vállalat által kezelt böngészőben megjelenő webtartalom korlátozása|X|X|
-|Android-, iTunes- vagy iCloud-biztonságimentések megakadályozása|X|X|
-|Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak|X|X|
-|Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak|X|X|
-|Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása|X|X|
-|Egyszerű PIN-kód szükséges a hozzáféréshez|X|X|
-|Az alkalmazások beépített PIN-kódjának lecserélése Intune PIN-kóddal|X||
-|A PIN-kód alaphelyzetbe állítása előtti kísérletek számának megadása|X|X|
-|Ujjlenyomat használatának engedélyezése PIN-kód helyett |X|X|
-|Vállalati hitelesítő adatok szükségesek a hozzáféréshez|X|X|
-|A felügyelt alkalmazások futtatásának tiltása jailbreakelt vagy rootolt eszközökön|X|X|
-|Alkalmazásadatok titkosítása|X|X|
-|A hozzáférési követelmények ismételt ellenőrzése a megadott számú percek után|X|X|
-|Az offline türelmi időszak megadása|X|X|
-|Képernyőrögzítés letiltása (csak Android esetén)|X|X|
-|Eszközregisztráció nélküli MAM támogatása|X|X|
-|Teljes törlés|X|X|
-|Szelektív törlés <br></br>**Megjegyzés:** iOS esetén a felügyeleti profil törlésekor az alkalmazást is törli.|X||
-|A „Mentés másként” művelet letiltása |X||
-|Célzott alkalmazáskonfiguráció |X||
-|Többszörös identitás támogatása|X||
-|Testreszabható stílus |X|||
+|                                                         Funkció                                                          | App SDK | Alkalmazásburkoló eszköz |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              A vállalat által kezelt böngészőben megjelenő webtartalom korlátozása                              |    X    |         X         |
+|                                        Android-, iTunes- vagy iCloud-biztonságimentések megakadályozása                                        |    X    |         X         |
+|                                         Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak                                         |    X    |         X         |
+|                                        Más alkalmazásokból való adatfogadás engedélyezése az alkalmazásnak                                         |    X    |         X         |
+|                                      Más alkalmazásokkal végzett kivágás, másolás és beillesztés korlátozása                                       |    X    |         X         |
+|                                              Egyszerű PIN-kód szükséges a hozzáféréshez                                               |    X    |         X         |
+|                                         Az alkalmazások beépített PIN-kódjának lecserélése Intune PIN-kóddal                                         |    X    |                   |
+|                                     A PIN-kód alaphelyzetbe állítása előtti kísérletek számának megadása                                      |    X    |         X         |
+|                                             Ujjlenyomat használatának engedélyezése PIN-kód helyett                                             |    X    |         X         |
+|                                         Vállalati hitelesítő adatok szükségesek a hozzáféréshez                                         |    X    |         X         |
+|                             A felügyelt alkalmazások futtatásának tiltása jailbreakelt vagy rootolt eszközökön                              |    X    |         X         |
+|                                                     Alkalmazásadatok titkosítása                                                     |    X    |         X         |
+|                           A hozzáférési követelmények ismételt ellenőrzése a megadott számú percek után                            |    X    |         X         |
+|                                             Az offline türelmi időszak megadása                                             |    X    |         X         |
+|                                           Képernyőrögzítés letiltása (csak Android esetén)                                            |    X    |         X         |
+|                                        Eszközregisztráció nélküli MAM támogatása                                         |    X    |         X         |
+|                                                        Teljes törlés                                                         |    X    |         X         |
+| Szelektív törlés <br></br><strong>Megjegyzés:</strong> iOS esetén a felügyeleti profil törlésekor az alkalmazást is törli. |    X    |                   |
+|                                                    A „Mentés másként” művelet letiltása                                                     |    X    |                   |
+|                                            Célzott alkalmazáskonfiguráció                                            |    X    |                   |
+|                                                Többszörös identitás támogatása                                                |    X    |                   |
+|                                                    Testreszabható stílus                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>További lépések
 

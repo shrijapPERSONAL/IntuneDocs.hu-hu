@@ -1,28 +1,28 @@
 ---
-title: "Alkalmazásalapú feltételes hozzáférés az Intune-nal"
-description: "Megtudhatja, hogyan működik az Intune alkalmazásalapú feltételes hozzáférése."
-keywords: 
+title: Alkalmazásalapú feltételes hozzáférés az Intune-nal
+description: Megtudhatja, hogyan működik az Intune alkalmazásalapú feltételes hozzáférése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Alkalmazásalapú feltételes hozzáférés az Intune-nal
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az [Intune alkalmazásvédelmi szabályzataival](app-protection-policy.md) védheti vállalati adatait az Intune-ban regisztrált eszközökön. Az alkalmazásvédelmi szabályzatokat emellett a munkatársak tulajdonában álló, az Intune-ban felügyeletre nem regisztrált eszközökön is alkalmazhatja. Bár ebben az esetben nem a cég felügyeli az eszközt, mégis fontos, hogy a vállalati adatok és erőforrások védve legyenek.
 
@@ -56,29 +56,29 @@ Ebben a példában a rendszergazda alkalmazásvédelmi szabályzatokkal látta e
 
 ![Az alkalmazásalapú feltételes hozzáférés folyamata egy folyamatábrán bemutatva](./media/ca-intune-common-ways-3.png)
 
-1.  A felhasználó az Outlook alkalmazásból hitelesítést próbál végezni az Azure AD-val.
+1. A felhasználó az Outlook alkalmazásból hitelesítést próbál végezni az Azure AD-val.
 
-2.  A felhasználó az első hitelesítési kísérletkor átirányítódik az alkalmazás-áruházba, ahonnan közvetítő alkalmazást kell telepítenie. Ez lehet az iOS-es Microsoft Authenticator vagy az androidos eszközökre készült Microsoft Intune vállalati portál.
+2. A felhasználó az első hitelesítési kísérletkor átirányítódik az alkalmazás-áruházba, ahonnan közvetítő alkalmazást kell telepítenie. Ez lehet az iOS-es Microsoft Authenticator vagy az androidos eszközökre készült Microsoft Intune vállalati portál.
 
- Ha egy felhasználó natív levelezőalkalmazást próbál használni, a rendszer az alkalmazásáruházba irányítja át, hogy telepíthesse az Outlookot.
+   Ha egy felhasználó natív levelezőalkalmazást próbál használni, a rendszer az alkalmazásáruházba irányítja át, hogy telepíthesse az Outlookot.
 
-3.  A közvetítő alkalmazás települ az eszközre.
+3. A közvetítő alkalmazás települ az eszközre.
 
-4.  A közvetítő alkalmazás megkezdi az Azure AD regisztrációs folyamatát, amely eszközrekordot hoz létre az Azure AD-ben. Ez nem azonos a mobileszköz-felügyelet (MDM) beléptetési folyamatával, de erre a rekordra is szükség van, hogy a feltételes hozzáférési szabályzatokat be lehessen tartatni az eszközön.
+4. A közvetítő alkalmazás megkezdi az Azure AD regisztrációs folyamatát, amely eszközrekordot hoz létre az Azure AD-ben. Ez nem azonos a mobileszköz-felügyelet (MDM) beléptetési folyamatával, de erre a rekordra is szükség van, hogy a feltételes hozzáférési szabályzatokat be lehessen tartatni az eszközön.
 
-5.  A közvetítő alkalmazás ellenőrzi az alkalmazás identitását. A közvetítő alkalmazás a biztonsági rétegnek köszönhetően képes ellenőrizni, hogy az alkalmazás engedélyezett-e a felhasználó számára.
+5. A közvetítő alkalmazás ellenőrzi az alkalmazás identitását. A közvetítő alkalmazás a biztonsági rétegnek köszönhetően képes ellenőrizni, hogy az alkalmazás engedélyezett-e a felhasználó számára.
 
-6.  A közvetítő alkalmazás a felhasználó-hitelesítési folyamat keretében elküldi az alkalmazás ügyfél-azonosítóját az Azure AD-nek, amely ellenőrzi, hogy szerepel-e a szabályzat engedélyezési listáján.
+6. A közvetítő alkalmazás a felhasználó-hitelesítési folyamat keretében elküldi az alkalmazás ügyfél-azonosítóját az Azure AD-nek, amely ellenőrzi, hogy szerepel-e a szabályzat engedélyezési listáján.
 
-7.  Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a listán, az Azure AD nem engedélyezi az elérését.
+7. Az Azure AD a szabályzat engedélyezési listája alapján engedélyezi a felhasználónak a hitelesítést és az alkalmazás használatát. Ha az alkalmazás nem szerepel a listán, az Azure AD nem engedélyezi az elérését.
 
-8.  Az Outlook alkalmazás az Outlook felhőszolgáltatással kapcsolatba lépve kezdeményezi az Exchange Online-nal való kommunikációt.
+8. Az Outlook alkalmazás az Outlook felhőszolgáltatással kapcsolatba lépve kezdeményezi az Exchange Online-nal való kommunikációt.
 
-9.  Az Outlook felhőszolgáltatás az Azure AD-vel kommunikálva lekér egy Exchange Online-szolgáltatás-hozzáférési jogkivonatot a felhasználó részére.
+9. Az Outlook felhőszolgáltatás az Azure AD-vel kommunikálva lekér egy Exchange Online-szolgáltatás-hozzáférési jogkivonatot a felhasználó részére.
 
-10.  Az Outlook alkalmazás az Exchange Online-nal kommunikálva lekéri a felhasználó céges e-mailjeit.
+10. Az Outlook alkalmazás az Exchange Online-nal kommunikálva lekéri a felhasználó céges e-mailjeit.
 
-11.  A céges e-mailek kézbesítődnek a felhasználó postafiókjába.
+11. A céges e-mailek kézbesítődnek a felhasználó postafiókjába.
 
 ## <a name="next-steps"></a>További lépések
 [Alkalmazásalapú feltételes hozzáférési szabályzat létrehozása](app-based-conditional-access-intune-create.md)

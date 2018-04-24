@@ -1,50 +1,62 @@
 ---
-title: "Apple MDM push-tanúsítvány beszerzése"
+title: Apple MDM push-tanúsítvány beszerzése
 titlesuffix: Microsoft Intune
-description: "Az Apple MDM Push-tanúsítvány beszerzéséhez szükséges lépések ismertetése az iOS-eszközök Intune-nal való felügyeletéhez."
-keywords: 
+description: Az Apple MDM Push-tanúsítvány beszerzéséhez szükséges lépések ismertetése az iOS-eszközök Intune-nal való felügyeletéhez.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 504f2431754aa88ddf79bef4a201cbf7aa032834
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 28eb86a1924dc72df4c77cc3f8a05aacd61e0fbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány beszerzése
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
- Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac számítógépek mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az Intune-nak MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS-es és Mac eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói telepíthetik a Céges portál alkalmazást az eszközeik regisztrálásához. Az Apple Device Enrollment Programmal a vállalati tulajdonú iOS-eszközökre is beállíthat eszközfelügyeletet, vagy többek között az Apple Configurator használatával is regisztrálhatja az eszközöket. A regisztrálási lehetőségekről további információt talál a [iOS-eszközök regisztrálásának módjai](enrollment-method-choose-ios.md) című témakörben.
+Az Intune lehetőséget nyújt az iPadek, iPhone-ok és Mac számítógépek mobileszköz-felügyeletére (MDM), és hozzáférést biztosít a felhasználóknak a vállalati e-mailjeikhez és alkalmazásaikhoz. Az Intune-nak Apple MDM Push-tanúsítványra van szüksége ahhoz, hogy felügyelni tudja az iOS- és macOS-eszközöket. Miután hozzáadta a tanúsítványt az Intune-hoz, felhasználói a következő segítségével regisztrálhatják az eszközeiket:
+
+- A Céges portál alkalmazás.
+
+- Az Apple tömeges regisztrálási módjai, mint a Készülékregisztrációs program, az Apple School Manager vagy az Apple Configurator.
+
+A regisztrálási lehetőségekről további információt talál a [iOS-eszközök regisztrálásának módjai](enrollment-method-choose-ios.md) című témakörben.
+
+Amikor a leküldéses tanúsítvány lejár, meg kell újítani. Megújításkor győződjön meg róla, hogy ugyanazt az Apple ID-t használja, mint a leküldéses tanúsítvány létrehozásakor.
+
 
 ## <a name="steps-to-get-your-certificate"></a>A tanúsítvány beszerzésének lépései
 Az [Azure Portalon](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Apple MDM Push-tanúsítvány** elemet, majd kövesse az [Azure Portalon](https://portal.azure.com) a következő lépéseket.
 
-**1. lépés Töltse le az Apple MDM push-tanúsítvány létrehozásához szükséges Intune tanúsítvány-aláírási kérelmet.**<br>
+### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>1. lépés Engedélyezze a Microsoftnak a felhasználó- és eszközadatok Apple-nek való elküldését
+Válassza az **Elfogadom.** lehetőséget az engedély megadásához.
+
+![Az MDM Push-tanúsítvány konfigurálása képernyő az MDM Push beállítását megelőzően.](./media/create-mdm-push-certificate.png)
+
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>2. lépés Töltse le az Apple MDM push-tanúsítvány létrehozásához szükséges Intune tanúsítvány-aláírási kérelmet
 Válassza a **CSR letöltése** lehetőséget a kérelemfájl letöltéséhez és helyi mentéséhez. A fájl a megbízhatósági kapcsolat tanúsítványának Apple Push Certificates portálról való beszerzésére szolgál.
 
-  ![Az MDM Push-tanúsítvány konfigurálása képernyő az MDM Push beállítását megelőzően.](./media/create-mdm-push-certificate.png)
-
-**2. lépés Apple MDM push-tanúsítvány létrehozása**<br>
+  ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>3. lépés. Apple MDM push-tanúsítvány létrehozása
 Válassza az **MDM push-tanúsítvány létrehozása** lehetőséget az Apple Push Certificates Portal webhely megnyitásához. A céges Apple-azonosítójával való bejelentkezés után kattintson a **Tanúsítvány létrehozása** lehetőségre. Válassza a **Fájl kiválasztása** elemet, keresse meg a tanúsítvány-aláírási kérelem fájlját, majd válassza a **Feltöltés** lehetőséget. A tanúsítvány .pem kiterjesztésű fájljának letöltéséhez a megerősítés lapon válassza a **Letöltés** elemet, és mentse a fájlt helyileg.
 
 > [!NOTE]
 > A tanúsítványt a rendszer ahhoz az Apple-azonosítóhoz társítja, amely létrehozta azt. Ajánlott eljárásként használjon céges Apple ID-t kezelési feladatokhoz, és ügyeljen rá, hogy a postafiókot egy terjesztési listához hasonlóan többen figyelik. Soha ne használjon személyes Apple-azonosítót.
 
-**3. lépés Adja meg az Apple MDM Push-tanúsítvány létrehozásához használt Apple ID azonosítót.**<br>
+### <a name="step-4-enter-the-apple-id-used-to-create-your-apple-mdm-push-certificate"></a>4. lépés. Adja meg az Apple MDM Push-tanúsítvány létrehozásához használt Apple ID azonosítót
 Jegyezze fel az azonosítót, hogy ne feledje a tanúsítványt időben megújítani.
 
-**4. lépés Tallózással keresse meg a fájlt az Apple MDM push-tanúsítvány feltöltéséhez.**<br>
+### <a name="step-5-browse-to-your-apple-mdm-push-certificate-to-upload"></a>5. lépés. Tallózással keresse meg a fájlt az Apple MDM push-tanúsítvány feltöltéséhez
 Keresse meg a tanúsítványfájlt (.pem), majd kattintson a **Megnyitás** gombra, és válassza a **Feltöltés** elemet. A leküldéses tanúsítvány lehetővé teszi, hogy az Intune regisztrálja és felügyelje az Apple-eszközöket.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Apple MDM push-tanúsítvány megújítása

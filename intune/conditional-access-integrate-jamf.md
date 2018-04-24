@@ -1,25 +1,25 @@
 ---
-title: "A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség érdekében"
-titlesuffix: 
-description: "A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket."
-keywords: 
+title: A Jamf Pro integrálása a Microsoft Intune-nal a megfelelőség érdekében
+titlesuffix: ''
+description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>A Jamf Pro integrálása az Intune-nal a megfelelőség érdekében
 
@@ -56,20 +56,20 @@ Az Intune és a Jamf Pro csatlakoztatásához a következők szükségesek:
 6. Kattintson az **Alkalmazás létrehozása** lehetőségre.
 7. Mentse az újonnan létrehozott **Alkalmazásazonosítót**, majd válassza a **Beállítások** lehetőséget, és navigáljon az **API-hozzáférés** > **Kulcsok** lapra az új alkalmazáskulcs létrehozásához. Adja meg a kívánt leírást a **Leírás** oszlopban, adja meg a lejárat időtartamát a **Lejárat** oszlopban, majd mentse az alkalmazáskulcsot.
 
-  > [!IMPORTANT]
-  > Az alkalmazáskulcs csak egyszer jelenik meg a folyamat során. Mindenképpen olyan helyre mentse, ahol később könnyen hozzáférhet.
+   > [!IMPORTANT]
+   > Az alkalmazáskulcs csak egyszer jelenik meg a folyamat során. Mindenképpen olyan helyre mentse, ahol később könnyen hozzáférhet.
 
 8. Nyissa meg a **Beállítások** lapot, navigáljon az **API-hozzáférés** > **Szükséges engedélyek** lapra, és törölje az összes engedélyt.
 
-  > [!NOTE]
-  > Adjon hozzá egy új szükséges engedélyt. Az alkalmazás csak akkor működik megfelelően, ha egyetlen szükséges engedéllyel rendelkezik.
+   > [!NOTE]
+   > Adjon hozzá egy új szükséges engedélyt. Az alkalmazás csak akkor működik megfelelően, ha egyetlen szükséges engedéllyel rendelkezik.
 
-9.  Válassza ki a **Microsoft Intune API** lehetőséget, majd kattintson a **Kiválaszt** elemre.
+9. Válassza ki a **Microsoft Intune API** lehetőséget, majd kattintson a **Kiválaszt** elemre.
 10. Válassza ki a **Eszközattribútumok küldése a Microsoft Intune-ba** lehetőséget, majd kattintson a **Kiválaszt** elemre.
 11. Miután mentette az alkalmazáshoz szükséges engedélyeket, kattintson az **Engedélyek megadása** gombra.
 
-  > [!NOTE]
-  > Az alkalmazáskulcs lejártakor új alkalmazáskulcsot kell létrehoznia a Microsoft Azure-ban, majd frissítenie kell a feltételes hozzáférési adatokat a Jamf Pro-ban. A szolgáltatás megszakításmentes végrehajtása érdekében az Azure lehetővé teszi, hogy a régi és az új kulcs egyidejűleg aktív legyen.
+    > [!NOTE]
+    > Az alkalmazáskulcs lejártakor új alkalmazáskulcsot kell létrehoznia a Microsoft Azure-ban, majd frissítenie kell a feltételes hozzáférési adatokat a Jamf Pro-ban. A szolgáltatás megszakításmentes végrehajtása érdekében az Azure lehetővé teszi, hogy a régi és az új kulcs egyidejűleg aktív legyen.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Az Intune engedélyezése a Jamf Pro-val történő integrációra
 

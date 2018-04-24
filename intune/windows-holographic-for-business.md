@@ -1,55 +1,91 @@
 ---
-title: Windows Holographic rendszerű számítógépek felügyelete a Microsoft Intune-nal
-titleSuffix: ''
-description: Ismerje meg, hogyan támogatja a Microsoft Intune a Windows Holographic for Business rendszert futtató eszközöket.
+title: Windows Holographic rendszerű eszközök felügyelete az Azure-beli Microsoft Intune-nal | Microsoft Docs
+description: Windows Holographic for Business rendszerű eszközökön sokféle feladatot végrehajthat a Microsoft Intune használatával, egyebek között konfigurálhatja a Céges portált, létrehozhat megfelelőségi szabályzatokat, testre szabhat OMA-URI-beállításokat, telepíthet alkalmazásokat, csoportokba sorolhat eszközöket, profilokat hozhat létre, eszközöket korlátozhat, szoftverfrissítéseket engedélyezhet, konfigurálhatja a VPN- és Wi-Fi-beállításokat és használhatja a Hello for Businesst.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/1/2018
+ms.date: 4/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd39b0a9a03d77a54ac71c47c5df67e9beacd9d
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="manage-devices-running-windows-holographic-with-microsoft-intune"></a>Windows Holographic rendszerű eszközök felügyelete a Microsoft Intune-nal
-
+# <a name="customize-devices-running-windows-holographic-with-intune"></a>Windows Holographic rendszerű eszközök testre szabása az Intune-nal
 
 A Microsoft Intune-nal felügyelhetőek a Windows Holographic for Business rendszert futtató eszközök is, például a [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
-A Windows Holographic operációs rendszert futtató eszközök Microsoft Intune-nal való kezeléséhez létre kell hoznia egy kiadásfrissítési profilt az eszközöknek a Windows Holographicról a Windows Holographic for Businessre történő frissítésére. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is.
+Windows Holographic rendszerű eszközök Microsoft Intune-nal való felügyeletéhez létre kell hoznia egy kiadásfrissítési profilt. Ez a frissítési profil frissíti az eszközöket a Windows Holographic rendszerről a Windows Holographic for Business rendszerre. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információt [A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra](holographic-upgrade.md) című témakörben talál.
 
-További információt [A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra](holographic-upgrade.md) című témakörben talál.
+A Windows Holographic for Business rendszerű eszközök felügyeletében és testre szabásában segítenek az e cikkben leírt műveletek. Kezelheti többek között például a szoftverfrissítéseket és konfigurálhatja a VPN-beállításokat.
 
-Az alábbi témakörök további tájékoztatást nyújtanak arról, miképpen támogatja a Microsoft Intune a Windows Holographic for Business rendszert:
+## <a name="company-portal"></a>Céges portál
+**[A Céges portál alkalmazás konfigurálása](company-portal-app.md)**
 
-## <a name="device-restrictions"></a>Eszközkorlátozások
-- [A Windows Holographic for Business eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban](device-restrictions-windows-holographic.md)
-
-## <a name="custom-settings"></a>Egyéni beállítások
-- [A Windows Holographic for Business rendszert futtató eszközökre vonatkozó egyéni eszközbeállítások a Microsoft Intune-ban](custom-settings-windows-holographic.md)
+Az Intune része a Céges portál, ahol a felhasználók egyebek között hozzáférnek a vállalat adataihoz, eszközöket regisztrálnak, alkalmazásokat telepítenek és kapcsolatba lépnek az IT-részleggel. A Céges portál alkalmazás testre szabható a Windows Holographic for Bussines rendszerű eszközökhöz.
 
 ## <a name="compliance-policy"></a>Megfelelőségi szabályzat
-- [Windowsos eszközök megfelelőségi szabályzatainak létrehozása az Intune-ban](compliance-policy-create-windows.md)
+**[Eszközmegfelelőségi szabályzat létrehozása](compliance-policy-create-windows.md)**
+
+A megfelelőségi szabályzatok olyan szabályok és beállítások, amelyeknek az eszközöknek eleget kell tenniük, hogy megfelelőnek minősüljenek. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozhatja, hogy nem megfelelő eszközök hozzáférjenek a vállalati erőforrásokhoz. Az Intune-ban létrehozhat a Windows Holographic for Business rendszerű eszközök hozzáférését engedélyező vagy tiltó megfelelőségi szabályzatokat is. Létrehozhat például olyan szabályzatot, amely megköveteli a Bitlocker engedélyezését.
+
+Lásd még: **[Első lépések a megfelelőségi szabályzatokkal](device-compliance-get-started.md)**.
+
+## <a name="deploy-apps"></a>Alkalmazások telepítése
+**[Alkalmazások hozzáadása az Intune-hoz](apps-add.md)**
+
+Az Intune használatával alkalmazásokat adhat hozzá a Windows Holographic for Business rendszerű eszközeihez. Alkalmazások telepítésére több mód is van, többek között:
+
+- [Microsoft Áruházbeli alkalmazások hozzáadása](store-apps-windows.md)
+- [Saját készítésű alkalmazások hozzáadása](lob-apps-windows.md)
+- [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)
+
+## <a name="device-categories-and-groups"></a>Eszközkategóriák és csoportok
+**[Eszközök csoportokba sorolása](device-group-mapping.md)**
+
+Az Intune használatával eszközkategóriákat hozhat létre, hogy azok alapján automatikusan hozzáadja az eszközöket az olyan csoportokhoz, mint az Értékesítés, Könyvelés, Emberi erőforrások stb. A cél a Windows Holographic for Business rendszerű eszközök felügyeletének megkönnyítése.
+
+## <a name="device-configuration-profiles"></a>Eszközkonfigurációs profilok 
+**[Első lépések a konfigurációs profilokkal](device-profiles.md) és [saját profil létrehozása](device-profile-create.md)**
+
+Az Intune olyan beállításokat és funkciókat kínál, amelyeket Ön engedélyezhet vagy letilthat a vállalatához tartozó különböző eszközökön. Ezek a beállítások és funkciók profilok használatával kezelhetők. Létrehozhat például olyan profilt, amely a Cortanát engedélyezi vagy a Windows Defender SmartScreent használja a Windows Holographic for Business rendszerű eszközein.
+
+Profiljaiban OMA-URI használatával testre szabhat néhány beállítást, létrehozhat eszközkorlátozásokat és konfigurálhatja a virtuális magánhálózatokat (VPN) és a Wi-Fit.
+
+#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Egyéni eszközbeállítások](custom-settings-windows-holographic.md)
+
+Az OMA-URI (Open Mobile Alliance Uniform Resource Identifier) konfigurálásához egyéni profilt hozhat létre az Intune-ban. Az OMA-URI beállítások használatával a Windows Holographic for Business rendszerű eszközök olyan funkcióit szabályozhatja, mint a VPN engedélyezése vagy a frissítések keresése a Microsoft Update szolgáltatásban.
+
+#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Eszközkorlátozások](device-restrictions-windows-holographic.md)
+
+Az eszközkorlátozásokkal többek között az eszközök olyan beállításai és funkciói szabályozhatók, mint a jelszó megkövetelése, alkalmazások telepítése a [Microsoft Áruházból](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) vagy a Bluetooth engedélyezése. Ezek a korlátozások egy Intune-profilban jönnek létre. Ez a profil több Windows Holographic for Business rendszerű eszközön is alkalmazható.
+
+#### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN konfigurálása](vpn-settings-configure.md)
+
+A virtuális magánhálózatok (VPN) segítségével biztonságos távoli hozzáférést biztosíthat felhasználóinak a vállalati hálózathoz. Az Intune-ban létrehozhat a Windows Holographic for Business rendszerű eszközeire vonatkozó beállításokat tartalmazó VPN-profilt. Létrehozhat például egy VPN-profilt, hogy minden Windows Holographic for Business rendszerű eszköz Citrix VPN-t használjon kapcsolattípusként.
+
+#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi konfigurálása](wi-fi-settings-configure.md)
+
+Az Intune-ban Wi-Fi-profilt is létrehozhat, amellyel vezeték nélküli hálózati beállításokat rendel a Windows Holographic for Business rendszerű eszközeihez. Wi-Fi-profil hozzárendelésekor a végfelhasználók a hálózat konfigurálása nélkül kapnak vállalati hálózati hozzáférést. Létrehozhat például egy Wi-Fi hálózatot külön a Windows Holographic for Business rendszerű eszközöknek.
 
 ## <a name="software-updates"></a>Szoftverfrissítések
-- [Szoftverfrissítések kezelése](windows-update-for-business-configure.md)
+**[Szoftverfrissítések kezelése](windows-update-for-business-configure.md)**
+
+Az Intune tartalmaz egy frissítési körök nevű funkciót a Windows 10-es eszközökhöz. A frissítési körökhöz tartozik a frissítések telepítési módját meghatározó beállítások egy csoportja. Létrehozhat például egy karbantartási időszakot a frissítések telepítésére vagy eldöntheti, hogy kíván-e újraindítást a frissítések telepítése után. Egy frissítési kör több Windows Holographic for Business rendszerű eszközre is alkalmazható.
+
+## <a name="terms-and-conditions"></a>használati feltételei
+**[A vállalati felhasználói hozzáférési használati feltételek megadása](terms-and-conditions-create.md)**
+
+Megkövetelheti, hogy a felhasználók csak a használati feltételek elfogadása után regisztrálhassák eszközeiket és érhessék el a céges alkalmazásokat, köztük a levelezést. Az Intune-ban megadhatja, hogy hogyan jelenjenek meg a használati feltételek a Céges portálon és ezeket a használati feltételeket hozzá is rendelheti a Windows Holographic for Business rendszerű eszközökhöz.
 
 ## <a name="windows-hello-for-business"></a>Vállalati Windows Hello
-- [A Vállalati Windows Hello használata](windows-hello.md)
+**[A Vállalati Windows Hello használata](windows-hello.md)**
 
-## <a name="vpn-settings"></a>VPN-beállítások
-- [A VPN-beállítások konfigurálása a Microsoft Intune-ban](vpn-settings-configure.md)
-
-## <a name="wi-fi-settings"></a>Wi-Fi-beállítások
-- [A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban](wi-fi-settings-configure.md) 
- 
-
-
+A Vállalati Windows Hello egy alternatív bejelentkezési módszer, amely egy Azure Active Directory-fiókot használ jelszó, intelligens kártya vagy virtuális intelligens kártya helyett. A Vállalati Windows Hellóval Windows Holographic for Business rendszerű eszközei PIN-kóddal jelentkezhetnek be, amelynek minimális hosszát Ön állítja be.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Az Exchange Connector hibaelhárítása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör az Intune Exchange Connectorral kapcsolatos problémák elhárításáról szól.
 
@@ -36,8 +36,8 @@ Tekintse át az Exchange Connector konfigurációját, és ellenőrizze, megold�
 - Az Exchange Connector konfigurálásakor adjon meg egy olyan ügyfélelérési kiszolgálót (CAS-t), amely a lehető legközelebb van Exchange Connectort futtató kiszolgálóhoz. A CAS és az Exchange Connector közötti kommunikációs késés eszközfelderítési késést okozhat, különösen az O365 dedikált verziójának használatakor.
 - Vegye figyelembe, hogy az Exchange Connector és az Exchange-es CAS közötti szinkronizálás időbeli késéssel jár. A teljes szinkronizálás naponta egyszer, az eltérések szinkronizálása (gyors szinkronizálás) pedig kétóránként történik meg. Elképzelhető, hogy az újonnan regisztrált eszközökkel késés tapasztalható a hozzáféréskor.
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Az Exchange ActiveSync-eszköz nem deríthető fel az Exchange-ből
-Ellenőrizze, hogy az Exchange Connector szinkronizál-e az Exchange-kiszolgálóval. Ezt a teljes szinkronizálás vagy az eltérések szinkronizálásának naplófájljaiból állapíthatja meg. Lásd: Az Exchange Connector naplófájljai. Ha az eszköz csatlakoztatását követően sikeresen megtörtént a teljes szinkronizálás vagy az eltérések szinkronizálása, biztosan nem ez a probléma forrása. Ha nem került sor a szinkronizálásra, gyűjtse össze a szinkronizálási naplókat, és csatolja őket a támogatási kérelméhez.
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Az Exchange ActiveSync-eszköz nem deríthető fel az Exchange-ből
+  Ellenőrizze, hogy az Exchange Connector szinkronizál-e az Exchange-kiszolgálóval. Ezt a teljes szinkronizálás vagy az eltérések szinkronizálásának naplófájljaiból állapíthatja meg. Lásd: Az Exchange Connector naplófájljai. Ha az eszköz csatlakoztatását követően sikeresen megtörtént a teljes szinkronizálás vagy az eltérések szinkronizálása, biztosan nem ez a probléma forrása. Ha nem került sor a szinkronizálásra, gyűjtse össze a szinkronizálási naplókat, és csatolja őket a támogatási kérelméhez.
 
 - Ha egy felhasználó nem rendelkezik Intune-licenccel, az Exchange Connector nem észleli az eszközeit.
 - Ha egy felhasználó elsődleges SMTP-címe különbözik az AAD-ben szereplő egyszerű felhasználónevétől, az Exchange Connector nem észleli az adott Intune/AAD-felhasználó eszközeit. Javítsa az elsődleges SMTP-címet.

@@ -1,25 +1,25 @@
 ---
-title: "Alkalmazás"
+title: Alkalmazás
 titlesuffix: Microsoft Intune
-description: "Referencia-témakör az Intune-adattárház API entitásgyűjteményeiben található Alkalmazás kategóriához."
-keywords: "Intune-adattárház"
+description: Referencia-témakör az Intune-adattárház API entitásgyűjteményeiben található Alkalmazás kategóriához.
+keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>Alkalmazás-entitások referencia
 
@@ -128,11 +128,13 @@ A **MobileAppInstallState** entitás egy mobilalkalmazás telepítési állapot�
 
 A **MobileAppDeviceUserInstallStatus** a mobilalkalmazás telepítési állapotát jelöli egy adott eszközre és felhasználóra vonatkozóan.
 
-| Tulajdonság | Description |
-|---|---|
-| DateKey | Az alkalmazástelepítési állapot rögzítési dátumának kulcsa. |
-| AppKey | A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja. |
-| DeviceKey | Egy céleszköz kulcsa, mely a Device osztály egy példányát azonosítja. |
-| UserKey | Egy célfelhasználó kulcsa, mely a User osztály egy példányát azonosítja. |
-|AppInstallStateKey | Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja. |
-| ErrorCode | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
+
+|      Tulajdonság      |                                                         Description                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Az alkalmazástelepítési állapot rögzítési dátumának kulcsa.                                  |
+|       AppKey       |                             A mobilalkalmazás kulcsa, mely az AppRevision osztály egy példányát azonosítja.                              |
+|     DeviceKey      |                              Egy céleszköz kulcsa, mely a Device osztály egy példányát azonosítja.                               |
+|      UserKey       |                                Egy célfelhasználó kulcsa, mely a User osztály egy példányát azonosítja.                                 |
+| AppInstallStateKey |                     Az alkalmazástelepítési állapot kulcsa, mely a MobileAppInstallState osztály egy példányát azonosítja.                     |
+|     ErrorCode      | Az alkalmazástelepítő, a mobilplatform vagy a szolgáltatás által az alkalmazás telepítésével kapcsolatban visszaadott hibakód. |
+

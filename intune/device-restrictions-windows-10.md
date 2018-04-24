@@ -1,28 +1,27 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Windows 10 esetén"
-titlesuffix: 
-description: "A cikk tájékoztatást nyújt a Microsoft Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 10 rendszerű eszközökön."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Eszközkorlátozási beállítások Windows 10 rendszerhez az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: A cikk tájékoztatást nyújt a Microsoft Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a Windows 10 rendszerű eszközökön.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>A Windows 10-es és újabb verzióinak eszközkorlátozásokra vonatkozó beállításai a Microsoft Intune-ban
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Általános
 - **Képernyőfelvétel (csak mobileszköz)** – A felhasználó képként rögzítheti a képernyőn látható tartalmat.
@@ -51,7 +50,6 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Szabadkézi munkaterület** – Megakadályozza, hogy a felhasználók hozzáférjenek a szabadkézi munkaterülethez. Ha ez a beállítás nincs konfigurálva, a szabadkézi munkaterület engedélyezve lesz (a funkció elérhető), így a felhasználók a zárolási képernyőn is elérhetik azt.
 - **Automatikus újbóli üzembe helyezés** – Lehetővé teszi a rendszergazdai jogosultságokkal rendelkező felhasználóknak, hogy az eszköz zárolási képernyőjén a **CTRL + Win + R** billentyűkombinációval törölhessék az összes felhasználói adatot és beállítást. Ennek hatására automatikusan megtörténik az eszköz újbóli konfigurálása és regisztrálása felügyeletre.
 
-
 ## <a name="password"></a>Jelszó
 -   **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.
     -   **Kért jelszótípus** – Azt határozza meg, hogy a jelszó csak számokból vagy számokból és betűkből állhat.
@@ -75,7 +73,6 @@ Windows 10 Mobile-eszközök esetében: a megadott számú sikertelen bejelentke
 -   **A társításra és adatvédelemre vonatkozó felhasználói beleegyezést kérő üzenetek automatikusa elfogadása** – Lehetővé teszi a Windowsnak, hogy automatikusan elfogadja a társítási és adatvédelmi beleegyezést kérő üzeneteket az alkalmazások futtatása közben.
 - **Felhasználói tevékenységek közzététele**: A megosztott élmények és a feladatváltóban nemrég használt erőforrások megelőzéséhez ezt a beállítást **tiltsa le**.
 - **Csak a helyi tevékenységek**: A csak a helyi tevékenységek alapján megosztott használat és a feladatváltóban nemrég használt erőforrások felderítésének megelőzéséhez ezt a beállítást **tiltsa le**.
-
 
 Meghatározhatja azon adatok körét, amelyeket az eszközön futó összes alkalmazás elérhet. Definiálhat kivételeket alkalmazásonként az **Alkalmazásonkénti adatvédelmi kivételek** segítségével.
 
@@ -137,8 +134,6 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Bejelentési értesítések zárolt képernyőn** – Riasztások megjelenítésének letiltása az eszköz zárolási képernyőjén.
 -   **Képernyő időkorlátja (csak mobilon)** – A képernyő zárolási idejének megadása másodpercben, aminek elteltével kikapcsol.
 
-
-
 ## <a name="app-store"></a>Alkalmazásáruház
 
 -   **Alkalmazás-áruház (csak mobileszköz)** – Engedélyezi vagy letiltja az alkalmazásáruházat a Windows 10 Mobile rendszerű eszközökön.
@@ -152,8 +147,6 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Alkalmazások telepítése a rendszermeghajtón** – Megakadályozza, hogy az alkalmazások adatokat tároljanak az eszköz rendszermeghajtóján.
 -   **Játékvideó-rögzítő (csak asztali verzióban)** – Meghatározza, hogy engedélyezett-e játékok rögzítése és közvetítése.
 -   **Csak áruházból származó alkalmazások** – Meghatározza, hogy a felhasználók telepíthetnek-e alkalmazásokat az alkalmazás-áruháztól eltérő forrásokból.
-
-
 
 ## <a name="edge-browser"></a>Microsoft Edge böngésző
 
@@ -181,7 +174,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
 -   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
--  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Ez lehet például http://contoso.com/favorites.html.
+-  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Például: http://contoso.com/favorites.html.
 -  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
@@ -192,6 +185,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 ## <a name="search"></a>Keresés
 - **Biztonságos keresés (csak mobileszközökön)** – Meghatározza, hogy a Cortana hogyan szűrje a felnőtt tartalmat a keresési eredményekben. A megadható értékek a **Szigorú** és a **Közepes**, vagy engedélyezhető, hogy a végfelhasználó állítsa be az értékét.
+- **Internetes keresési találatok megjelenítése** – Letiltja vagy engedélyezi az internetes találatok megjelenítését az eszközön való kereséskor.
 
 ## <a name="cloud-and-storage"></a>Felhő és tárolás
 -   **Microsoft-fiók** – Lehetővé teszi, hogy a felhasználó Microsoft-fiókot társítson az eszközhöz.
@@ -215,7 +209,6 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **Wi-Fi manuális konfigurálása** – Azt szabályozza, hogy a felhasználó konfigurálhat-e saját Wi-Fi-kapcsolatokat, vagy csak a Wi-Fi-profillal konfigurált kapcsolatokat használhatja (csak Windows 10 Mobile esetén).
 -   **Wi-Fi-ellenőrzési időköz** – Meghatározza, hogy az eszközök milyen gyakorisággal keressenek Wi-Fi-hálózatokat. Adjon meg egy 1 (leggyakoribb) és 500 (legritkább) közötti értéket.
 -   **Bluetooth-engedélyezett szolgáltatások** – Az engedélyezett Bluetooth-szolgáltatások és -profilok meghatározása hexadecimális karakterláncokként.
-
 
 ## <a name="control-panel-and-settings"></a>Vezérlőpult és Gépház
 
@@ -258,41 +251,48 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 ## <a name="kiosk-preview"></a>Kioszk (előnézet)
 
--   **Kioszkmód** – Azonosítja a szabályzat által támogatott [teljes képernyős mód](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) típusát. A lehetőségek a következők:
+A kioszkeszközök jellemzően egyetlen alkalmazást futtatnak, vagy az alkalmazások egy előre meghatározott készletét. A rendszer a felhasználóknak csak ezekhez a kioszkalkalmazásokhoz ad hozzáférést, és meggátolja az eszköz más funkcióinak és szolgáltatásainak elérését.
 
-      - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
-      - **Egyalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz egy alkalmazást futtasson teljes képernyőn.
-      - **Többalkalmazásos kioszk** – A profil engedélyezi, hogy az eszköz több alkalmazást futtasson teljes képernyőn.
+- **Kioszkmód** – Azonosítja a szabályzat által támogatott kioszkmód típusát. A lehetőségek a következők:
 
-    Az egyalkalmazásos kioszkokhoz a következő beállítások szükségesek:
+  - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
+  - **Egyalkalmazásos kioszk** – A profil csak egyetlen alkalmazás futtatását engedélyezi az eszköznek. Amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
+  - **Többalkalmazásos kioszk** – A profil engedélyezi több alkalmazás futtatását az eszköznek. Csak a hozzáadott alkalmazások lesznek elérhetők a felhasználónak. A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználónak, amely csak a szükséges alkalmazások elérését engedélyezi, a többi alkalmazást pedig elrejti a felhasználó elől.
 
-      - **Felhasználói fiók** – Megadja a teljes képernyős alkalmazáshoz társított (az eszközön) helyi felhasználói fiókot, vagy az Azure AD-fiókot. Az Azure AD-tartományokhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>Egyalkalmazásos kioszk
+Adja meg a következő beállításokat:
 
-         A nyilvános környezetben található eszközök esetében a jogosulatlan tevékenység kizárása érdekében minimális jogosultsággal rendelkező fiókokat kell használni.  
+- **Felhasználói fiók** – Adja meg a kioszkalkalmazáshoz társított helyi (eszközön létező) felhasználói fiókot, vagy az Azure AD-fiókot. Azure AD-tartományhoz csatlakozó fiókot a következő formában tud megadni: `domain\username@tenant.org`. 
 
-      - **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Megadja a teljes képernyős alkalmazás alkalmazásfelhasználói modellben használt azonosítóját. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
+    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja az `AzureAD\user@contoso.com` formátumot.
 
-    [Több alkalmazás teljes képernyőn való futtatásához](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) kioszkkonfigurációra van szükség. Hozzon létre kioszkkonfigurációt a **Hozzáadás** gomb használatával, vagy válasszon egy meglévőt.
+- **Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)** – Adja meg a kioszkalkalmazás alkalmazásfelhasználói modellben használt azonosítóját. További információkat a [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Telepített alkalmazás alkalmazásfelhasználói modellben használt azonosítójának megkeresése) című témakörben találhat.
 
-    A többalkalmazásos kioszkkonfigurációk az alábbi beállításokat tartalmazzák:
+#### <a name="multi-app-kiosks"></a>Többalkalmazásos kioszk
+A [többalkalmazásos kioszkeszközök](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) olyan kioszkkonfigurációt használnak, amely más beállítások mellett tartalmazza az engedélyezett alkalmazások listáját. 
 
-    - **Kioszkkonfiguráció neve** – Egy adott konfiguráció azonosítására szolgáló felhasználóbarát név.
+Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (vagy válasszon egy meglévőt). Ezután adja meg a következő beállításokat:
 
-    - Egy vagy több **teljes képernyős alkalmazás**, melyek a következőkből állnak:
+- **Kioszkkonfiguráció neve** – Írja be a konfiguráció azonosítására szolgáló felhasználóbarát nevet.
 
-        - A teljes képernyős alkalmazás típusát megadó **Alkalmazástípus**.  Támogatott értékei egyebek mellett a következők:   
+- **Kioszkalkalmazások** – Adja meg a Start menüben elérhető alkalmazásokat. A felhasználó kizárólag a megadott alkalmazásokat fogja tudni elérni.
 
-            - **Win32-alkalmazás** – Hagyományos asztali alkalmazás. (A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.)
+  - **Alkalmazástípus** – Adja meg a kioszkalkalmazás típusát:
+    - **Win32-alkalmazás** – Hagyományos asztali alkalmazás. A futtatható fájlnak az eszközön érvényes teljes elérési útja szükséges.
+    - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
 
-            - **UWP-alkalmazás** - Egy univerzális Windows-alkalmazás. [Az alkalmazás alkalmazásfelhasználói modellben használt azonosítója (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) szükséges.
+  - **Azonosító** – Adja meg a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén) vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén).
 
-        - **Alkalmazásazonosító** – Vagy a futtatható fájlnak az eszközön érvényes teljes elérési útját (Win32-alkalmazás esetén), vagy [az alkalmazás alkalmazásfelhasználói modellben használt azonosítóját (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (univerzális Windows-alkalmazás esetén) adja meg.
+- **Tálca** – Válassza az **Engedélyezés** beállítást a tálca megjelenítéséhez, vagy hagyja meg az alapértelmezett **Nincs konfigurálva** beállítást a tálca kioszkeszközön való elrejtéséhez.
 
-    - A **Tálca** azt jelzi, hogy a tálca a teljes képernyőn megjelenik-e (**Engedélyezve**) vagy sem (**Nincs konfigurálva**).
+- **Start menü elrendezése** – Adjon meg egy XML-fájlt, amely meghatározza, hogyan jelenjenek meg az alkalmazások a Start menüben. A [Start menü elrendezésének testreszabása és exportálása](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) című cikkben találhat útmutatást és XML-mintát.
 
-    - **Start menü elrendezése** – Megad egy XML-fájlt, amely leírja az alkalmazások [megjelenését a Start menüben](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Hozzárendelt felhasználók** – Egy vagy több, a kioszkkonfigurációhoz társított felhasználói fiókot ad meg. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva. A tartományhoz csatlakozó fiókokat a következő formában kell megadni: `domain\\username@tenant.org`.
+  Az XML-fájlok használatáról és létrehozásáról bővebb információt a [Több alkalmazást futtató Windows 10 rendszerű kioszk létrehozása](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) című cikkben találhat.
+
+- **Hozzárendelt felhasználók** – Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A fiókkal való bejelentkezéskor csak a konfigurációban meghatározott alkalmazások érhetők el. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva.
+
+    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja a `domain\user@tenant.com` formátumot.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender víruskereső
 
@@ -328,14 +328,11 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
     -   **Felhasználó által definiált**
     -   **Tiltás**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender víruskereső – kizárások
 
 -   **A vizsgálatokból és a valós idejű védelemből kizárandó fájlok és mappák** – Felvesz egy vagy több fájlt vagy mappát (például **C:\Elérési út** vagy **%ProgramFiles%\Elérési út\fájlnév.exe**) a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a fájlokat és mappákat.
 -   **A vizsgálatokból és a valós idejű védelemből kizárandó fájlkiterjesztések** – Ezzel a beállítással egy vagy több fájlnév-kiterjesztés (például **jpg** vagy **txt**) vehető fel a kivételek listájára. A rendszer nem vizsgálja az ilyen kiterjesztésű fájlokat a valós idejű és a ütemezett vizsgálatok során.
 -   **A vizsgálatokból és a valós idejű védelemből kizárandó folyamatok** – Ezzel a beállítással egy vagy több **.exe**, **.com** vagy **.scr** típusú folyamat vehető fel a kivételek listájára. A rendszer a valós idejű és ütemezett vizsgálatok során nem vizsgálja ezeket a folyamatokat.
-
 
 ## <a name="network-proxy"></a>Hálózati proxy
 
@@ -348,9 +345,7 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
     -   **Proxyhasználat alóli kivételek** – Adja meg azokat az URL-címeket, amelyeknél nem kell proxykiszolgálót használni. Az egyes címeket pontosvesszővel választhatja el egymástól.
     -   **Proxykiszolgáló kihagyása helyi cím esetén** – Engedélyezze ezt a beállítást, ha az intranet helyi címeinél nem szeretné használni a proxykiszolgálót.
 
-
 ## <a name="windows-spotlight"></a>Windows Reflektorfény
-
 
 - **Windows Reflektorfény** – Ezzel a beállítással tilthatja le az összes Windows Reflektorfény-funkciót a Windows 10-es eszközökön. Ha letiltja ezt a beállítást, a következő beállítások nem lesznek elérhetők.
     - **Windows Reflektorfény a zárolási képernyőn** – Megakadályozza, hogy a Windows Reflektorfény információt jelenítsen meg az eszköz zárolási képernyőjén.
@@ -360,7 +355,6 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
     - **Windows Reflektorfény a műveletközpontban** – A Windows Reflektorfény-javaslatok, például az új alkalmazásról vagy biztonsági tartalomról szólók, Windows Műveletközpontban való megjelenítésének letiltása.
     - **Windows Reflektorfény személyre szabása** – Megakadályozza, hogy a Windows Reflektorfény személyre szabja az eredményeket az eszköz használata alapján.
     - **Windows-újdonságok az üdvözlőképernyőn** – A felhasználó számára új vagy frissített funkciókra vonatkozó információkat megjelenítő Windows-újdonságok az üdvözlőképernyőn letiltása.
-
 
 ## <a name="projection"></a>Kivetítés
 
@@ -394,15 +388,3 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 - **Üzenetszinkronizálás (csak mobilon)** – Az Üzenetek mindenhol és a szöveges üzenetek funkció biztonsági mentésének és visszaállításának letiltása.
 - **MMS (csak mobilon)** – Az MMS küldése/fogadása funkció letiltása az eszközön.
 - **RCS (csak mobilon)** – A gazdag kommunikációs szolgáltatások (RCS) küldése/fogadása funkció letiltása az eszközön.
-
-
-
-
-
-
-
-
-
-
-
-

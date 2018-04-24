@@ -1,27 +1,27 @@
 ---
-title: "macOS-eszköz Céges portálon való regisztrálása az Intune-ban | Microsoft Docs"
-description: "A cikk azt mutatja be, hogyan regisztrálhatók macOS-eszközök az Intune-ban a Céges portál alkalmazással"
+title: macOS-eszköz Céges portálon való regisztrálása az Intune-ban | Microsoft Docs
+description: A cikk azt mutatja be, hogyan regisztrálhatók macOS-eszközök az Intune-ban a Céges portál alkalmazással
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
@@ -30,11 +30,12 @@ A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés
 > [!NOTE]
 > A macOS régebbi verzióit futtató macOS-eszközök regisztrálásához [itt](enroll-your-device-in-intune-macos-legacy.md) talál útmutatást.
 
-1. A __Dock__ területén keresse meg a __Safari__ böngészőt, nyisson meg egy új ablakot, majd keresse fel a [Munkahelyi portál webhelyét](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. A __Dock__ területén keresse meg a __Safari__ böngészőt, nyisson meg egy új ablakot, majd keresse fel a [Munkahelyi portál webhelyét](https://portal.manage.microsoft.com).
 
 2. Jelentkezzen be a Munkahelyi portál webhelyre a munkahelyi vagy az iskolai fiókjával.
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+
 
 3. Bejelentkezés után kattintson az oldal jobb felső sarkában található **Menü**re, és válassza a **Saját eszközök** elemet.
 
@@ -54,8 +55,8 @@ A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés
 
 8. A Mac-eszköz ekkor az alábbi szövegű üzenetet jeleníti meg: **A „CompanyPortal” az internetről letöltött alkalmazás. Biztosan megnyitja?** Kattintson a **Megnyitás** gombra.
 
-  > [!NOTE]
-  > Az Intune-nak hozzá kell férnie a számítógépéhez, enélkül nem tud meggyőződni arról, hogy elég biztonságos-e az eszköz a vállalat erőforrásainak eléréséhez. Ha a számítógép elutasítja a Céges portál alkalmazás megnyitását, próbálja meg [kikapcsolni a forgalomirányítót](https://support.apple.com/HT202491), majd ezután megnyitni az alkalmazást.
+   > [!NOTE]
+   > Az Intune-nak hozzá kell férnie a számítógépéhez, enélkül nem tud meggyőződni arról, hogy elég biztonságos-e az eszköz a vállalat erőforrásainak eléréséhez. Ha a számítógép elutasítja a Céges portál alkalmazás megnyitását, próbálja meg [kikapcsolni a forgalomirányítót](https://support.apple.com/HT202491), majd ezután megnyitni az alkalmazást.
 
 9. A Céges portál alkalmazás elsőként megjelenő képernyője arra kéri, hogy ugyanazzal a munkahelyi vagy iskolai fiókkal **jelentkezzen be**, amelyet a Céges portál webhelyére való bejelentkezéshez is használt.
 

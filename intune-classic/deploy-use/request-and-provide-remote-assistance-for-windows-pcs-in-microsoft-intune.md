@@ -1,29 +1,28 @@
 ---
-title: "Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez"
-description: "Végfelhasználói és rendszergazdai lépések a PC-ként felügyelt Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához."
-keywords: 
+title: Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
+description: Végfelhasználói és rendszergazdai lépések a PC-ként felügyelt Windows rendszerű számítógépek távsegítségéhez és a számítógépek távolról indításához.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Távsegítség kérése és nyújtása Windows rendszerű számítógépekhez
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A jelen témakörben ismertetett információk csak azokra a PC-ként felügyelt Windows-számítógépekre vonatkoznak, amelyeket az Intune szoftverügyfél segítségével felügyel.
 
@@ -59,8 +58,8 @@ Ahhoz, hogy a távsegítség funkcióval támogatást biztosíthasson az azt ké
 
 ## <a name="respond-to-a-remote-assistance-request"></a>Válasz távsegítségre vonatkozó kérésre
 
-1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Példa:
-> ![Távsegítségkérést bemutató képernyőkép](./media/team-viewer.png)
+1. A felhasználók által benyújtott távsegítségkéréseket a **Riasztások** munkaterület **Figyelés** > **Távsegítség** menüjében tekintheti meg. Például:
+   > ![Távsegítségkérést bemutató képernyőkép](./media/team-viewer.png)
 
 <br>Azokat a kéréseket, amelyekre 4 órán át nem érkezik válasz, a rendszer eltávolítja.
 2. A kérés elfogadásához kattintson **A kérelem jóváhagyása és a Távsegítség alkalmazás elindítása** elemre.
@@ -84,6 +83,6 @@ Amikor hibák megoldásán dolgozik, elképzelhető, hogy időről időre távol
 
 4.  A **Feladat állapota** párbeszédpanelen áttekintheti az aktuális távoli feladatokat, a feladatok állapotát, az eszköz nevét és minden jelentett hibát.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 
 [A Windows rendszerű számítógépek Intune-szoftverügyféllel való felügyeletének általános feladatai](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

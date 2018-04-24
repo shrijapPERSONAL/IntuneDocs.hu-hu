@@ -1,28 +1,28 @@
 ---
-title: "iOS-alkalmazások alkalmazásvédelmi szabályzatokkal"
-description: "Ez a témakör azt ismerteti, hogy milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS-alkalmazások alkalmazásvédelmi szabályzatokkal
+description: Ez a témakör azt ismerteti, hogy milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0a9d17f8066ddd16c06322cf9cc64457daff87f1
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 955120228289da3bac7cf013955effeee0cd7579
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
  Ez a témakör az olyan alkalmazásokkal kapcsolatos felhasználói élményt ismerteti, melyekre alkalmazásvédelmi szabályzatok vannak alkalmazva. Az alkalmazásvédelmi szabályzatokat csak akkor alkalmazza a rendszer, amikor az alkalmazásokat munkahelyi környezetben használják; például ha a felhasználó munkahelyi fiókkal fér hozzá az alkalmazásokhoz, vagy a cég OneDrive Vállalati verzióbeli helyén tárolt fájlokhoz fér hozzá.
 

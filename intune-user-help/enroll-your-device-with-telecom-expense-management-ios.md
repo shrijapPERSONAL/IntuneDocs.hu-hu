@@ -1,27 +1,27 @@
 ---
-title: "iOS-eszköz regisztrálása a távközlésiköltség-kezelőben az Intune-nal"
-description: "Ez a cikk azt ismerteti, hogyan regisztrálhat iOS-es eszközt a távközlésiköltség-kezelőben."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS-eszköz regisztrálása a távközlésiköltség-kezelőben az Intune-nal
+description: Ez a cikk azt ismerteti, hogyan regisztrálhat iOS-es eszközt a távközlésiköltség-kezelőben.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>iOS-eszköz regisztrálása a távközlésiköltség-kezelőben
 
@@ -40,11 +40,11 @@ Válassza ki a megfelelő lehetőséget. Ezt követően értesítést kap arról
 
 1. Válassza az __Enroll with Microsoft account__ (Bejelentkezés Microsoft-fiókkal) gombot.
 
-  ![A Datalert alkalmazás Settings (Beállítások) képernyője, fent az eszközregisztrációhoz szükséges telefonszám megadására szolgáló mezővel, alul pedig az „Enroll with Microsoft account” gombbal – ehhez Microsoft Office 365-fiók és Intune-előfizetés szükséges.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![A Datalert alkalmazás Settings (Beállítások) képernyője, fent az eszközregisztrációhoz szükséges telefonszám megadására szolgáló mezővel, alul pedig az „Enroll with Microsoft account” gombbal – ehhez Microsoft Office 365-fiók és Intune-előfizetés szükséges.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. Ekkor megjelenik a __"Datalert" wants to open "Authenticator"__ (A Datalert meg szeretné nyitni az Authenticatort) üzenet. Válassza az __Open__ (Megnyitás) lehetőséget.
 
-  ![A felhasználót a Datalert nevében az Authenticator alkalmazás elindítására kérő üzenet.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![A felhasználót a Datalert nevében az Authenticator alkalmazás elindítására kérő üzenet.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. Jelentkezzen be a __Microsoft school or work account__ (Munkahelyi vagy iskolai Microsoft-fiók) lehetőséget választva. A Datalert telepítője néhány másodperc alatt elkészül. Ezután koppintson a __Finish__ (Befejezés) gombra.
 
@@ -52,15 +52,15 @@ Válassza ki a megfelelő lehetőséget. Ezt követően értesítést kap arról
 
 1. Adja meg az eszköz telefonszámát.
 
-  ![Képernyőkép arról, hogy a Datalert alkalmazás a telefonszámot kéri megadni.](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![Képernyőkép arról, hogy a Datalert alkalmazás a telefonszámot kéri megadni.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. Ezt követően SMS-ben kap egy ellenőrző kódot. Írja be a kódot, és koppintson az __OK__ lehetőségre.
 
-  ![Képernyőkép: a Datalert alkalmazás kéri az SMS-ben elküldött ellenőrző kódot.](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![Képernyőkép: a Datalert alkalmazás kéri az SMS-ben elküldött ellenőrző kódot.](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. Az ellenőrző kód beírása után a Datalert telepítése befejeződött. Koppintson a __Finish__ (Befejezés) elemre. Ezzel készen áll arra, hogy az adathasználatot a Datalert alkalmazással figyelje.
 
-  ![Képernyőkép: a Datalert alkalmazás a mai adatforgalmat jeleníti meg.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![Képernyőkép: a Datalert alkalmazás a mai adatforgalmat jeleníti meg.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 A regisztrálás után az adathasználati adatok megjelennek a Datalert alkalmazásban.
 

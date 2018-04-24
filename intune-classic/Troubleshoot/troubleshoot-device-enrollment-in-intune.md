@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Eszközök regisztrálásával kapcsolatos problémák elhárítása az Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör az eszközök regisztrálásával kapcsolatos problémák megoldásához nyújt segítséget. Ha ezekkel az információkkal nem tudja megoldani a problémát, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben talál további részleteket a segítségkéréshez.
 
@@ -87,9 +87,9 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 8.  Szükség szerint távolítson el eszközöket, többek között azokat, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
 
 > [!NOTE]
-
+> 
 > Az eszközregisztráció-kezelői fiók használatával elkerülheti a maximális szám elérését az eszközregisztráció során. Lásd: [Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel a Microsoft Intune-ban](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > Az eszközregisztráció-kezelői fiókba felvett felhasználói fiók nem tud regisztrálást végrehajtani, ha az adott felhasználói bejelentkezéshez a Feltételes hozzáférés szabályzat van érvényben.
 
 ### <a name="company-portal-temporarily-unavailable"></a>A Vállalati portál átmenetileg nem érhető el
@@ -154,7 +154,7 @@ A rendszergazdák az Azure Active Directory portálon törölhetnek eszközöket
 **Hiba:** Amikor a második ellenőrzött tartományt adja hozzá az AD FS-hez, a második tartomány egyszerű felhasználóneves (UPN) utótagjával rendelkező felhasználók nem tudnak bejelentkezni a portálokra vagy nem tudnak eszközöket regisztrálni.
 
 
-**Megoldás:** Az olyan Microsoft Office 365-ügyfeleknek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a munkahelyükön több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében. Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a **SupportMultipleDomain** kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
+<strong>Megoldás:</strong> Az olyan Microsoft Office 365-ügyfeleknek, akik egyszeri bejelentkezést (SSO) használnak az AD FS 2.0-n keresztül, és a munkahelyükön több felső szintű tartomány szerepel az UPN-utótagban (például @contoso.com vagy @fabrikam.com), az AD FS 2.0 összevonási szolgáltatás külön példányát kell telepíteni minden utótag esetében. Már létezik egy [összegzés az AD FS 2.0-hoz](http://support.microsoft.com/kb/2607496), amelyhez használható a <strong>SupportMultipleDomain</strong> kapcsolóval, hogy az AD FS-kiszolgáló támogassa az ilyen helyzetet anélkül, hogy további AD FS 2.0 kiszolgálókra lenne szükség. További információkat [ebben a blogban](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) talál.
 
 
 ## <a name="android-issues"></a>Android-problémák
@@ -195,27 +195,27 @@ Ha a 2. megoldás nem működik, kérje a felhasználókat a következő lépés
 
 1. Indítsa el az eszközön a Smart Manager alkalmazást.
 
-  ![A Smart Manager ikon kiválasztása az eszközön](./media/smart-manager-app-icon.png)
+   ![A Smart Manager ikon kiválasztása az eszközön](./media/smart-manager-app-icon.png)
 
 2. Válassza a **Battery** (Akkumulátor) csempét.
 
-  ![A Battery (Akkumulátor) csempe kiválasztása](./media/smart-manager-battery-tile.png)
+   ![A Battery (Akkumulátor) csempe kiválasztása](./media/smart-manager-battery-tile.png)
 
 3. Válassza az **App power saving** (Alkalmazás energiatakarékossága) vagy **App optimization** (Alkalmazás optimalizálása) terület **Detail** (Részletek) elemét.
 
-  ![Az App power saving (Alkalmazás energiatakarékossága) vagy App optimization (Alkalmazás optimalizálása) terület Detail (Részletek) elemének kiválasztása](./media/smart-manager-app-power-saving-detail.png)
+   ![Az App power saving (Alkalmazás energiatakarékossága) vagy App optimization (Alkalmazás optimalizálása) terület Detail (Részletek) elemének kiválasztása](./media/smart-manager-app-power-saving-detail.png)
 
 4. Koppintson a **Munkahelyi portál** elemre az alkalmazáslistában.
 
-  ![A Munkahelyi portál kiválasztása az alkalmazáslistából](./media/smart-manager-company-portal.png)
+   ![A Munkahelyi portál kiválasztása az alkalmazáslistából](./media/smart-manager-company-portal.png)
 
 5. Válassza a **Turned off** (Kikapcsolva) beállítást.
 
-  ![A Turned off (Kikapcsolva) beállítás kiválasztása az App optimization (Alkalmazás optimalizálása) párbeszédpanelen](./media/smart-manager-app-optimization-turned-off.png)
+   ![A Turned off (Kikapcsolva) beállítás kiválasztása az App optimization (Alkalmazás optimalizálása) párbeszédpanelen](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Győződjön meg róla az **App power saving** (Alkalmazás energiatakarékossága) vagy az **App optimization** (Alkalmazás optimalizálása) területen, hogy a Munkahelyi portál ki van kapcsolva.
 
-  ![Annak ellenőrzése, hogy a Munkahelyi portál ki van-e kapcsolva](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Annak ellenőrzése, hogy a Munkahelyi portál ki van-e kapcsolva](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Profiltelepítési hiba

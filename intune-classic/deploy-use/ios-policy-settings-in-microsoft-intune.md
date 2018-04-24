@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-szabályzatbeállítások a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Intune számos beépített beállítási lehetőséget kínál, amelyeket iOS-eszközökön konfigurálhat. Ezen kívül használhatja az Apple Configurator eszközt is olyan egyéni beállítások létrehozására, amelyek nem érhetők el az Intune-ban.
 
@@ -45,20 +45,22 @@ Ha a keresett beállítás nem jelenik meg ebben a témakörben, valószínűleg
 ### <a name="security-settings"></a>Biztonsági beállítások
 Az összes beállítás az iOS 8.0-ás és újabb verzióira vonatkozik.
 
-|Beállítás neve|Részletek|
-|----------------|-------|
-|**Jelszó szükséges a mobileszközök feloldásához**|Azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközeikhez való hozzáféréshez.|
-|**Kötelező jelszótípus**|A kötelező jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.|
-|**Jelszó speciális karaktereinek minimális száma**|Azt határozza meg, hogy hány szimbólumnak (például **#** vagy **@**) kell szerepelnie a jelszóban.|
-|**Jelszó minimális hossza**|Meghatározza, hogy legalább hány karakterből álljon a jelszó.|
-|**Egyszerű jelszavak engedélyezése**|Egyszerű jelszavak, például **0000** vagy **1234** engedélyezése.|
-|**Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről**|Meghatározza, hogy hány sikertelen bejelentkezési kísérlet után kerülnek törlésre az eszköz adatai.|
-|**Jelszó kérése ennyi perc inaktivitás után**<sup>1</sup>|Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.|
-|**Jelszó lejárata (nap)**|Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.|
-|**Jelszóelőzmények megjegyzése**|Meghatározza, hogy a felhasználó használhatja-e az általa korábban már használt jelszavakat.|
-|**Korábbi jelszavak megjegyzése** – **Korábbi jelszavak újbóli használatának tiltása**|Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.|
-|**Képernyő kikapcsolása ennyi perc inaktivitás után**<sup>1</sup>|Ennyi perc elteltével kapcsol ki a kijelző.|
-|**Ujjlenyomattal történő zárolásfeloldás engedélyezése**|Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.|
+
+|                                           Beállítás neve                                            |                                                            Részletek                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Jelszó szükséges a mobileszközök feloldásához</strong>                    |                        Azt határozza meg, hogy a felhasználóknak kell-e jelszót megadniuk az eszközeikhez való hozzáféréshez.                        |
+|                              <strong>Kötelező jelszótípus</strong>                              |                   A kötelező jelszó típusát határozza meg, például hogy a jelszó csak számokat, vagy számokat és betűket is tartalmazhat.                    |
+|                <strong>Jelszó speciális karaktereinek minimális száma</strong>                 | Azt határozza meg, hogy hány szimbólumnak (például <strong>#</strong> vagy <strong>@</strong>) kell szerepelnie a jelszóban. |
+|                             <strong>Jelszó minimális hossza</strong>                              |                                   Meghatározza, hogy legalább hány karakterből álljon a jelszó.                                    |
+|                              <strong>Egyszerű jelszavak engedélyezése</strong>                              |                          Egyszerű jelszavak, például <strong>0000</strong> vagy <strong>1234</strong> engedélyezése.                          |
+|     <strong>Ennyi ismétlődő sikertelen bejelentkezés után törlődnek végleg az adatok az eszközről</strong>      |                       Meghatározza, hogy hány sikertelen bejelentkezési kísérlet után kerülnek törlésre az eszköz adatai.                        |
+|          <strong>Jelszó kérése ennyi perc inaktivitás után</strong><sup>1</sup>           |                   Azt határozza meg, hogy az eszköz mennyi időt tölthet üresjáratban, mielőtt a felhasználónak újra meg kellene adnia a jelszavát.                    |
+|                            <strong>Jelszó lejárata (nap)</strong>                            |                             Meghatározza, hogy hány nap elteltével kell megváltoztatni az eszköz jelszavát.                             |
+|                            <strong>Jelszóelőzmények megjegyzése</strong>                             |                           Meghatározza, hogy a felhasználó használhatja-e az általa korábban már használt jelszavakat.                           |
+| <strong>Korábbi jelszavak megjegyzése</strong> – <strong>Korábbi jelszavak újbóli használatának tiltása</strong> |                           Azt határozza meg, hogy az eszköz hány korábban használt jelszót jegyezzen meg.                           |
+|            <strong>Képernyő kikapcsolása ennyi perc inaktivitás után</strong><sup>1</sup>             |                             Ennyi perc elteltével kapcsol ki a kijelző.                             |
+|                             <strong>Ujjlenyomattal történő zárolásfeloldás engedélyezése</strong>                             |                                        Az eszközzárolás ujjlenyomattal történő feloldásának engedélyezése.                                         |
+
 <sup>1</sup> Ha iOS-eszközön konfigurálja a **Képernyő kikapcsolása ennyi perc inaktivitás után** és a **Jelszó kérése ennyi perc inaktivitás után** beállítást is, egymás után alkalmazza őket a rendszer. Ha például mindkét beállítást az **5** perc értékre állítja be, a képernyő 5 perc után automatikusan ki fog kapcsolni, és az eszköz további 5 perc után lesz zárolva. Ha azonban a felhasználó manuálisan kapcsolja ki a képernyőt, azonnal a második beállítás lesz alkalmazva. Ugyanebben a példában az eszköz 5 perccel azután lesz zárolva, hogy a felhasználó kikapcsolta a képernyőt.
 
 ### <a name="system-settings"></a>Rendszerbeállítások
@@ -180,25 +182,26 @@ A megfelelő és nem megfelelő alkalmazásokkal kapcsolatos beállításokat ta
 
 ### <a name="kiosk-mode-settings"></a>Teljes képernyős mód beállításai
 
-|Beállítás neve|Részletek|
-|----------------|--------------------|
-|**Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása**|Válassza a **Tallózás** elemet, majd adja meg azt a kezelt vagy áruházbeli alkalmazást, amelynek futtatását engedélyezni kívánja, amikor az eszköz kioszkmódban van. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. További segítségért olvassa el a jelen témakörben alább található „Alkalmazásáruházak URL-címének megadása” című részt.|
-|**Érintés engedélyezése**|Engedélyezi vagy letiltja az érintőképernyő használatát az eszközön.|
-|**Képernyő elforgatásának engedélyezése**|Engedélyezi vagy letiltja a képernyő tájolásának módosítását az eszköz elforgatásakor.|
-|**Hangerőszabályzó gombok engedélyezése**|Engedélyezi vagy letiltja a hangerőszabályzó gombok használatát az eszközön.|
-|**Csengetőkapcsoló engedélyezése**|Engedélyezi vagy letiltja a csengető- (némító-) kapcsolót az eszközön.|
-|**Képernyőt felébresztő gomb engedélyezése**|Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.|
-|**Automatikus zárolás engedélyezése**|Engedélyezi vagy letiltja az eszköz automatikus zárolását.|
-|**Monó hangzás engedélyezése**|Engedélyezi vagy letiltja a **Monó hang** kisegítő beállítást.|
-|**Narrátor engedélyezése**|Engedélyezi vagy letiltja a **VoiceOver** kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.|
-|**Narrátor beállításainak engedélyezése**|Engedélyezi vagy letiltja a VoiceOver (hangalámondás) funkció beállítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).|
-|**Zoomolás engedélyezése**|Engedélyezi vagy letiltja a **Nagyítás** kisegítő beállítást, amellyel a felhasználó érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.|
-|**Zoomolás beállításainak engedélyezése**|Engedélyezi vagy letiltja a nagyítási funkció működésének felhasználó általi beállítását.|
-|**Színinvertálás engedélyezése**|Engedélyezi vagy letiltja a **Színek invertálása** kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.|
-|**Színinvertálás beállításainak engedélyezése**|Engedélyezi vagy letiltja a színinvertálási funkció beállításainak módosítását.|
-|**Az AssistiveTouch engedélyezése**|Engedélyezi vagy letiltja a **Kisegítő érintés** kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.|
-|**Az AssistiveTouch beállításainak engedélyezése**|Engedélyezi vagy letiltja a Kisegítő érintés funkció beállításának módosítását.|
-|**Szövegfelolvasás engedélyezése**|Engedélyezi vagy letiltja a **Beszéd kiválasztása** kisegítő beállítást, amellyel felolvastatható a felhasználó által kijelölt szöveg.|
+|                                            Beállítás neve                                            |                                                                                                                                      Részletek                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Az eszköz kioszkmódjában futtatandó felügyelt alkalmazás kiválasztása</strong> | Válassza a <strong>Tallózás</strong> elemet, majd adja meg azt a kezelt vagy áruházbeli alkalmazást, amelynek futtatását engedélyezni kívánja, amikor az eszköz kioszkmódban van. Az itt megadotton kívül más alkalmazás nem futtatható az eszközön. További segítségért olvassa el a jelen témakörben alább található „Alkalmazásáruházak URL-címének megadása” című részt. |
+|                                    <strong>Érintés engedélyezése</strong>                                    |                                                                                                                  Engedélyezi vagy letiltja az érintőképernyő használatát az eszközön.                                                                                                                  |
+|                               <strong>Képernyő elforgatásának engedélyezése</strong>                               |                                                                                                Engedélyezi vagy letiltja a képernyő tájolásának módosítását az eszköz elforgatásakor.                                                                                                 |
+|                               <strong>Hangerőszabályzó gombok engedélyezése</strong>                                |                                                                                                           Engedélyezi vagy letiltja a hangerőszabályzó gombok használatát az eszközön.                                                                                                           |
+|                                <strong>Csengetőkapcsoló engedélyezése</strong>                                |                                                                                                             Engedélyezi vagy letiltja a csengető- (némító-) kapcsolót az eszközön.                                                                                                              |
+|                          <strong>Képernyőt felébresztő gomb engedélyezése</strong>                           |                                                                                                           Engedélyezi vagy letiltja a képernyő ébresztőgombját az eszközön.                                                                                                            |
+|                                  <strong>Automatikus zárolás engedélyezése</strong>                                  |                                                                                                                 Engedélyezi vagy letiltja az eszköz automatikus zárolását.                                                                                                                 |
+|                                 <strong>Monó hangzás engedélyezése</strong>                                 |                                                                                                      Engedélyezi vagy letiltja a <strong>Monó hang</strong> kisegítő beállítást.                                                                                                      |
+|                                 <strong>Narrátor engedélyezése</strong>                                 |                                                                               Engedélyezi vagy letiltja a <strong>VoiceOver</strong> kisegítő beállítást, amely hangosan felolvassa az eszköz képernyőjén megjelenő szöveget.                                                                                |
+|                           <strong>Narrátor beállításainak engedélyezése</strong>                           |                                                                  Engedélyezi vagy letiltja a VoiceOver (hangalámondás) funkció beállítását (például hogy milyen gyorsan történjen a képernyőn látható szöveg felolvasása).                                                                   |
+|                                    <strong>Zoomolás engedélyezése</strong>                                    |                                                                         Engedélyezi vagy letiltja a <strong>Nagyítás</strong> kisegítő beállítást, amellyel a felhasználó érintéssel nagyíthatja az eszköz képernyőjén megjelenő tartalmat.                                                                         |
+|                              <strong>Zoomolás beállításainak engedélyezése</strong>                              |                                                                                                  Engedélyezi vagy letiltja a nagyítási funkció működésének felhasználó általi beállítását.                                                                                                  |
+|                               <strong>Színinvertálás engedélyezése</strong>                                |                                                                    Engedélyezi vagy letiltja a <strong>Színek invertálása</strong> kisegítő beállítást, amellyel módosíthatja a képernyőt a látásukban korlátozott felhasználók számára.                                                                    |
+|                         <strong>Színinvertálás beállításainak engedélyezése</strong>                          |                                                                                         Engedélyezi vagy letiltja a színinvertálási funkció beállításainak módosítását.                                                                                         |
+|                              <strong>Az AssistiveTouch engedélyezése</strong>                               |                                                     Engedélyezi vagy letiltja a <strong>Kisegítő érintés</strong> kisegítő beállítást, amely segít a nehézségekkel küszködő felhasználóknak a képernyőn elvégezhető kézmozdulatok végrehajtásában.                                                     |
+|                        <strong>Az AssistiveTouch beállításainak engedélyezése</strong>                         |                                                                                       Engedélyezi vagy letiltja a Kisegítő érintés funkció beállításának módosítását.                                                                                       |
+|                              <strong>Szövegfelolvasás engedélyezése</strong>                              |                                                                        Engedélyezi vagy letiltja a <strong>Beszéd kiválasztása</strong> kisegítő beállítást, amellyel felolvastatható a felhasználó által kijelölt szöveg.                                                                         |
+
 > [!NOTE]
 > Az alábbi megjegyzések az iOS-eszközök Kioszk módjának beállításaira vonatkoznak:
 >
@@ -349,8 +352,6 @@ Ebben a listában megtalálhatja a megjeleníteni vagy elrejteni kívánt beép�
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

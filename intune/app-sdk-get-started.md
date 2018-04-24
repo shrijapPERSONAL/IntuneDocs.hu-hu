@@ -1,24 +1,24 @@
 ---
-title: "Bevezetés a Microsoft Intune App SDK használatába"
-description: "A mobilalkalmazások gyors engedélyezése a Microsoft Intune-beli mobilalkalmazás-felügyelet (MAM) használatához."
-keywords: 
+title: Bevezetés a Microsoft Intune App SDK használatába
+description: A mobilalkalmazások gyors engedélyezése a Microsoft Intune-beli mobilalkalmazás-felügyelet (MAM) használatához.
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -69,7 +69,7 @@ A natív iOS-hez, illetve Androidhoz készült Intune App SDK-k egy Microsoft Gi
 
 Ha Xamarin- vagy Cordova-alkalmazást kíván felvenni, használja a következő SDK-változatokat:
 
-* [Intune App SDK Xamarin összetevő](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune App SDK Xamarin-kötések](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune App SDK Cordova beépülő modul](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Érdemes regisztrálnia egy GitHub-fiókot, hogy leágazhasson az adattárakból, és lehúzhassa a változásokat. A GitHub révén a fejlesztők kommunikálni tudnak a termékcsapattal, hibákat jelenthetnek, és gyors válaszokat kaphatnak, elolvashatják a kibocsátási megjegyzéseket, valamint visszajelzést adhatnak a Microsoftnak. Az Intune App SDK GitHubra vonatkozó kérdései az msintuneappsdk@microsoft.com címen teheti fel.
@@ -84,7 +84,7 @@ A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK 
 
 * **[Az Intune App SDK Cordova beépülő moduljának útmutatója](app-sdk-cordova.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Cordova használatával az Intune alkalmazásvédelmi szabályzataihoz.
 
-* **[Az Intune App SDK Xamarin összetevőjének útmutatója](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Cordova használatával az Intune alkalmazásvédelmi szabályzataihoz.
+* **[Az Intune App SDK Xamarin-kötések útmutatója](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Xamarin használatával az Intune alkalmazásvédelmi szabályzataihoz.
 
 
 
@@ -142,7 +142,7 @@ Buildszám|CFBundleVersion|PackageVersionCode |Ez a szám az alkalmazáskód egy
 
 - **CFBundleShortVersionString**  
     A csomag kiadási verziószámát határozza meg. Ez a szám az alkalmazás egy megjelent verzióját azonosítja. A végfelhasználók ezzel hivatkoznak az alkalmazásra.
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     A csomag buildverziója, amely a csomag egy iterációját azonosítja. A szám egy kiadott vagy még meg nem jelent csomagot is azonosíthat. A számot alkalmazásdetektáláshoz használják.
 
 #### <a name="android"></a>Android

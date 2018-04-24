@@ -1,28 +1,28 @@
 ---
-title: "A Microsoft Intune webtartalomszűrő-beállításai iOS-eszközökhöz"
-titlesuffix: 
-description: "Ismerkedjen meg az iOS-es eszközök webhelyhozzáférésének engedélyezésére és letiltására szolgáló Microsoft Intune-beállításokkal."
-keywords: 
+title: A Microsoft Intune webtartalomszűrő-beállításai iOS-eszközökhöz
+titlesuffix: ''
+description: Ismerkedjen meg az iOS-es eszközök webhelyhozzáférésének engedélyezésére és letiltására szolgáló Microsoft Intune-beállításokkal.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Webtartalomszűrő-beállítások iOS-eszközökhöz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ez a cikk bemutatja az iOS-eszközök böngészőinek URL-cím-hozzáférését vezérlő Microsoft Intune-beállításokat.
 
@@ -57,13 +57,13 @@ Ha nincs megadva semmilyen URL, akkor a felhasználók mindössze a microsoft.co
 ## <a name="specific-websites-only"></a>Csak meghatározott webhelyek
 
 1. A **Webes tartalomszűrés** panelen minden engedélyezni kívánt webhelyhez konfigurálja az alábbi beállításokat:
-    - **URL** – írja be az engedélyezni kívánt webhely URL-jét (például **http://www.contoso.com**).
+    - **URL** – írja be az engedélyezni kívánt webhely URL-címét (például **http://www.contoso.com**).
     - **Elérési út felvétele a könyvjelzők közé** – Adja meg a könyvjelző kívánt tárolási helyét (például **/Contoso/Business Apps**). Ha nem adja meg az elérési utat, a könyvjelző az eszköz alapértelmezett könyvjelzőmappájába kerül.
     - **Cím** – Adjon jellemző címet a könyvjelzőnek.
 2. Az egyes webhelyek adatainak kitöltése után mindig kattintson a **Hozzáadás** gombra.
 3. Amikor végzett, kattintson az **OK**gombra.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Az Intune a következő URL-eket engedélyezi automatikusan:
 > - www.microsoft.com
 > - www.microsoft.net

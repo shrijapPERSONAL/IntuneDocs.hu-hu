@@ -1,28 +1,28 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Android esetén"
-titlesuffix: 
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az Android rendszerű eszközökön."
-keywords: 
+title: Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban Android esetén
+titlesuffix: ''
+description: A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre az Android rendszerű eszközökön.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Android rendszerű eszközökhöz.
 

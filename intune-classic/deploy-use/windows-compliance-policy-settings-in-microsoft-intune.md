@@ -1,37 +1,37 @@
 ---
-title: "Megfelelőségi szabályzat beállításai Windows-eszközökhöz"
-description: "Ez a témakör a Windows-eszközök megfelelőségi szabályzatában konfigurálható szabályokat és beállításokat ismerteti."
-keywords: 
+title: Megfelelőségi szabályzat beállításai Windows-eszközökhöz
+description: Ez a témakör a Windows-eszközök megfelelőségi szabályzatában konfigurálható szabályokat és beállításokat ismerteti.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Megfelelőségi szabályzat beállításai Windows-eszközökhöz a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az ebben a témakörben leírt szabályzatbeállítások a Windows operációs rendszerrel működő eszközökre vonatkoznak. A következő szakaszok a támogatott Windows-verziókat ismertetik.
 
 Ha más platformokra vonatkozó információkat keres, válasszon a következők közül:
 > [!div class="op_single_selector"]
-- [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Megfelelőségi szabályzat beállításai iOS-eszközökhöz](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Megfelelőségi szabályzat beállításai Android-eszközökhöz](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Megfelelőségi szabályzat beállításai az Android for Workhöz](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Megfelelőségi szabályzat beállításai Windows Phone-eszközökhöz
 A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 és újabb verziók.
@@ -80,7 +80,7 @@ A jelen szakaszban felsorolt beállítások támogatottak a Windows Phone 8.1 é
   > A Windows-eszközök nem támogatják az eszközállapot-igazolás részeként telepített külső **korai indítású kártevőirtó illesztőprogramokat** (ELAM).
 
   A HAS szolgáltatás működésével kapcsolatos információért lásd: [Állapotigazolási CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
+  ###  <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 - **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni.
     Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
@@ -153,4 +153,4 @@ Beállíthat olyan szabályt, amely előírja, hogy a Windows 10-eszközöknek k
 - Windows 8.1-es számítógépek esetén például a visszaadott verzió a **6.3**-as. Ha az operációs rendszer verziószabálya Windows 8.1-re van megadva a Windows esetén, az eszköz akkor is nem megfelelőként jelenik meg, ha Windows 8.1 operációs rendszer fut rajta.
 
 - Windows 10-es számítógépeken a verziót a következőképpen kell beállítani: **10.0** + az operációs rendszernek a **winver** parancs által visszaadott buildszáma. Például: 10.0.10586.
-> ![Az operációs verzió buildszáma kiemelve „A Windows névjegye” párbeszédpanelen](./media/ca_win10-os-version.png)
+  > ![Az operációs verzió buildszáma kiemelve „A Windows névjegye” párbeszédpanelen](./media/ca_win10-os-version.png)

@@ -1,27 +1,27 @@
 ---
-title: "Mobilalkalmazás-kezelési hibaelhárítás"
-description: "Ebben a témakörben a feltételes hozzáférést alkalmazó környezetekre vonatkozó hibaelhárítási információkat olvashat."
-keywords: 
+title: Mobilalkalmazás-kezelési hibaelhárítás
+description: Ebben a témakörben a feltételes hozzáférést alkalmazó környezetekre vonatkozó hibaelhárítási információkat olvashat.
+keywords: ''
 author: oydang
 ms.author: oydang
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ec6e663c570399f0adca02772416904d5a9dcc79
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobilalkalmazás-kezelési hibaelhárítás
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ha az Intune mobilalkalmazás-kezeléssel kapcsolatos problémába ütközik, először ebben a cikkben próbálja meg megkeresni a megoldást. Ebben a témakörben számos gyakran előforduló problémát és kérdést megtárgyalunk, és ezekre kínálunk megoldásokat és válaszokat.
 

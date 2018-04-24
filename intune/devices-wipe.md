@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Ez a **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállítása** parancsok kiadásával tehető meg. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
 
@@ -72,7 +72,7 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 |Tanúsítvány profilbeállításai|A tanúsítványok törlődnek és visszavonásra kerülnek.|
 |Kezelőügynök|Törlődik a felügyeleti profil.|
 |E-mail|Törlődnek az Intune-on keresztül telepített e-mail-profilok. Törlődnek az eszközön gyorsítótárazott e-mailek.|
-|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek.|
+|Outlook|Törlődnek az iOS rendszerhez készült Microsoft Outlook alkalmazás által fogadott e-mailek. Ennek előfeltétele, hogy az Outlook mobilalkalmazás kötelező alkalmazásként telepítve legyen az iOS-felhasználóknál.|
 |Az Azure AD elhagyása|Törlődik az Azure AD rekord.|
 |Névjegyek |Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 

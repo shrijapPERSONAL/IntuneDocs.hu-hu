@@ -1,24 +1,24 @@
 ---
-title: "Házirend"
+title: Házirend
 titlesuffix: Microsoft Intune
-description: "Az Intune-adattárház API-ban található entitásgyűjtemények szabályzatkategóriájára vonatkozó referencia-témakör."
-keywords: "Intune-adattárház"
+description: Az Intune-adattárház API-ban található entitásgyűjtemények szabályzatkategóriájára vonatkozó referencia-témakör.
+keywords: Intune-adattárház
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Szabályzat típusú entitások referenciája
 
@@ -157,10 +157,12 @@ PolicyKey|Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyNa
 
 Az alábbi táblázat a sikeres, függő, sikertelen vagy hibás állapotú felhasználók napi számát tartalmazza. A szám a szabályzattípus-profilok szerinti adatot jelöli. Ha például az egyik felhasználó valamennyi hozzárendelt szabályzata tekintetében sikeres állapotú, akkor az entitás azon a napon eggyel növeli az értéket a sikeres állapotot jelző számlálón. Ha az adott felhasználó két hozzárendelt profillal rendelkezik, amelyek közül az egyik sikeres, míg a másik hibás állapotú, akkor a felhasználót hibás állapotúnak számítjuk. A PolicyUserActivity entitás azt sorolja fel, hogy hány felhasználó van az egyes állapotokban az elmúlt 30 napon belüli adott napon.
 
-|Tulajdonság  |Description  |Példa  |
-|---------|---------|---------|
-|DateKey|A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése.|20160703|
-|Függőben|A függő állapotú egyedi eszközök száma.|123|
-|Sikerült|A sikeres állapotú egyedi eszközök száma.|12|
-PolicyKey|Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében.|Windows 10 baseline|
-|Hiba|A hibás állapotú egyedi eszközök száma.|10|
+
+| Tulajdonság  |                                         Description                                         |       Példa       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | A dátumkulcs azt jelzi, hogy az adattárházban mikor lett rögzítve az eszközkonfigurációs profil bejelentkezése. |      20160703       |
+|  Függőben  |                         A függő állapotú egyedi eszközök száma.                          |         123         |
+| Sikerült |                         A sikeres állapotú egyedi eszközök száma.                          |         12          |
+| PolicyKey |                Szabályzatkulcs, amely összekapcsolható a szabályzattal a policyName paraméter lekérése érdekében.                 | Windows 10 baseline |
+|   Hiba   |                          A hibás állapotú egyedi eszközök száma.                           |         10          |
+

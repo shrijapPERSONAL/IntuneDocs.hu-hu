@@ -1,29 +1,29 @@
 ---
-title: "Windows 10-es szabályzatbeállítások"
-description: "Az ebben a témakörben ismertetett szabályzatbeállítások segítségével konfigurálhatja a regisztrált asztali Windows 10- és Windows 10 Mobile-eszközök beépített és egyéni beállításait."
-keywords: 
+title: Windows 10-es szabályzatbeállítások
+description: Az ebben a témakörben ismertetett szabályzatbeállítások segítségével konfigurálhatja a regisztrált asztali Windows 10- és Windows 10 Mobile-eszközök beépített és egyéni beállításait.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>A Microsoft Intune-ban regisztrált Windows 10-eszközökre vonatkozó Intune-házirendbeállítások
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör ismerteti azokat az Intune-szabályzatbeállításokat, amelyeket Windows 10-eszközök felügyeletére használhat. A témakörben olvasható információkat [Az eszközök beállításainak és funkcióinak felügyelete a Microsoft Intune-szabályzatok használatával](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune) című cikk útmutatásaival egészítheti ki.
 
@@ -116,16 +116,16 @@ A Microsoft Intune Windows 10-es eszközökhöz készült **általános konfigur
 
 |Beállítás neve|További információ (ha szükséges)|
 |----------------|----------------------|
-|**Webböngésző engedélyezése**|Engedélyezi a Microsoft Edge webböngésző használatát az eszközön<br>(csak a Windows 10 Mobile)|
+|**Webböngésző engedélyezése**|Engedélyezi az Edge webböngésző használatát az eszközön<br>(csak a Windows 10 Mobile)|
 |**Keresési javaslatok engedélyezése a címsorban**|Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben|
 |**Intranetes adatforgalom küldésének engedélyezése az Internet Explorerbe**|Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben<br>(csak a Windows 10 asztali verzió)|
-|**Követés letiltásának engedélyezése**|Lehetővé teszi a Microsoft Edge böngésző számára a Do Not Track (Követés letiltása) fejlécek küldését a felhasználók által meglátogatott webhelyeknek|
+|**Követés letiltásának engedélyezése**|Lehetővé teszi az Edge böngésző számára a Do Not Track (Követés letiltása) fejlécek küldését a felhasználók által meglátogatott webhelyeknek|
 |**SmartScreen engedélyezése**||
-|**Active Scripting engedélyezése**|A parancsprogramok, például a JavaScriptek futtatásának engedélyezés a Microsoft Edge böngészőben|
+|**Active Scripting engedélyezése**|A parancsprogramok, például a JavaScriptek futtatásának engedélyezés az Edge böngészőben|
 |**Előugró ablakok engedélyezése**|Csak a Windows 10 asztali verzióra vonatkozik|
 |**Cookie-k engedélyezése**||
 |**Automatikus kitöltés engedélyezése**|Engedélyezi a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását<br>(csak a Windows 10 asztali verzió)|
-|**Jelszókezelő engedélyezése**|Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását|
+|**Jelszókezelő engedélyezése**|Engedélyezi vagy letiltja az Edge böngésző Jelszókezelő szolgáltatását|
 |**Vállalati üzemmód webhelylistájának helye**|Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(csak a Windows 10 asztali verzió)|
 
 ### <a name="apps"></a>Alkalmazások
@@ -210,5 +210,5 @@ Ezek a beállítások csak a Windows 10 asztali verziójában érvényesek.
 |**Automatikus frissítések engedélyezése**|Az automatikus frissítések engedélyezése. A következő lehetőségek egyikének beállításával szabályozhatja a frissítések működését:<br />**Értesítést kérek a letöltésről**<br />**Automatikus telepítés karbantartási időpontban**<br />**Automatikus telepítés és újraindítás karbantartási időpontban**<br />**Automatikus telepítés és újraindítás ütemezett időpontban**: Felhívjuk figyelmét, hogy kiválasztása esetén a következő beállítások konfigurálása is lehetővé válik: **Végfelhasználói értesítések letiltása**, illetve **Adja meg az ütemezett frissítések telepítésének napját**.<br>(csak a Windows 10 asztali verzió)|
 |**Előzetes funkciók engedélyezése**|Lehetővé teszi a Microsoft számára, hogy előzetes verziójú beállításokat és funkciókat telepítsen a Windows 10 rendszerű eszközökre. Meghatározhatja, hogy csak a beállítások telepítését engedélyezi, vagy minden előzetes verziójú beállítás és funkció telepítését is.|
 
-### <a name="see-also"></a>További információ
-[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-szabályzatok használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+### <a name="see-also"></a>Lásd még:
+[Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

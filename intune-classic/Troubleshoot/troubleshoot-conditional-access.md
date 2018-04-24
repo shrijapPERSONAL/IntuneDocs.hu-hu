@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>A feltételes hozzáférés hibaelhárítása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az e-mailek vagy a SharePoint megnyitásakor a felhasználóknak a rendszer általában egy regisztrálási kérelmet jelenít meg. A kérés a vállalati portálra irányítja a felhasználót.
 
@@ -49,20 +49,20 @@ Az egyes eszközökre vonatkozó feltételek megtekinthetők az Azure felügyele
 
 ## <a name="compliance-issues"></a>Megfelelőségi problémák
 
- -  Az eszköz nem felel meg az Intune házirendjeinek. A leggyakoribb probléma ebben az esetben a titkosítás és a jelszókövetelmények. A rendszer átirányítja a felhasználót a vállalati portálra, ahol konfigurálhatja az eszköz megfelelőségét.
- -  A megfelelőségi adatok regisztrálása az eszközön időbe telhet. Várjon néhány percet, és próbálkozzon újra.
- -  iOS eszközök esetén:
-     -   Ha már van a felhasználó által létrehozott e-mail-profil, ez meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy e-mail-profil telepítése nélkül regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
-     -   Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
+- Az eszköz nem felel meg az Intune házirendjeinek. A leggyakoribb probléma ebben az esetben a titkosítás és a jelszókövetelmények. A rendszer átirányítja a felhasználót a vállalati portálra, ahol konfigurálhatja az eszköz megfelelőségét.
+- A megfelelőségi adatok regisztrálása az eszközön időbe telhet. Várjon néhány percet, és próbálkozzon újra.
+- iOS eszközök esetén:
+  - Ha már van a felhasználó által létrehozott e-mail-profil, ez meggátolja az Intune-rendszergazda által létrehozott profil telepítését. Ez gyakori probléma, mivel az iOS-felhasználók gyakran hoznak létre egy e-mail-profilt a regisztráció előtt. A vállalati portál tájékoztatja a felhasználót, hogy a manuálisan beállított e-mail-profil sérti a megfelelőségi házirendet, és megkéri, hogy távolítsa el a profilt. A felhasználónak ekkor törölnie kell az e-mail-profilt, hogy az Intune-profilt telepíthesse. A probléma elkerülése érdekében kérje meg a felhasználókat, hogy e-mail-profil telepítése nélkül regisztráljanak, és engedélyezzék az Intune-nak, hogy telepítse a profilt.
+  - Az iOS-eszközök esetében előfordulhat, hogy elakadnak a megfelelőség-ellenőrzési állapotban, és megakadályozzák, hogy a felhasználó újabb bejelentkezést kezdeményezzen. A vállalati portál újraindítása megoldhatja ezt a problémát; ilyenkor a megfelelőségi állapot az eszköz állapotát tükrözi az Intune-ban. Miután az összes információt összegyűjtötték az eszközről, a megfelelőségi ellenőrzés gyorsan történik; átlagosan kevesebb mint fél másodpercet vesz igénybe.
 
-        Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
+    Az eszközök jellemzően azért akadnak el ebben az állapotban, mert nem sikerül csatlakozniuk a szolgáltatáshoz, vagy mert a szinkronizálás túlságosan hosszú ideig tart.  Ha a probléma különböző hálózati konfigurációkban (mobil, Wi-Fi, VPN) az eszköz többszöri újraindítása ellenére is tartósan fennáll, és ellenőrizte, hogy az SSP naprakész állapotban van az eszközön, a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben leírt módon vegye fel a kapcsolatot a Microsoft ügyfélszolgálatával.
 
- - Androidos eszközök esetén:
-    - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel azokat. 
+- Androidos eszközök esetén:
+   - Előfordulhat, hogy bizonyos androidos eszközök titkosítottnak tűnnek, de a Céges portál alkalmazás nem titkosítottként ismeri fel azokat. 
     
-        -   Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
+       -   Az ebben az állapotban lévő eszközökhöz a felhasználónak egy biztonságos indítási PIN-kódot kell megadnia. A felhasználó számára a Céges portál alkalmazás értesítést jelenít meg, kérve egy indítási PIN-kód beállítását az eszközhöz. Koppintson az eszközértesítésre, és a meglévő PIN-kód vagy a jelszó ellenőrzése után válassza a **Require PIN to start device** (PIN-kód kérése az eszköz indításához) beállítást a **Secure start-up** (Biztonságos indítás) képernyőn. Ezután koppintson az eszközhöz tartozó **Megfelelőség ellenőrzése** gombra a Céges portál alkalmazásban. Az eszközt ettől kezdve titkosítottként kell, hogy észlelje a program.
     
-        -   Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
+       -   Egyes eszközgyártók alapértelmezett PIN-kód használatával titkosítják eszközeiket a felhasználó által megadott PIN-kód helyett. Az Intune az alapértelmezett PIN-kódot használó titkosítást nem biztonságosnak ismeri fel, mert ez a titkosítási módszer az eszközön lévő adatokat az eszközhöz fizikai hozzáféréssel rendelkező rosszindulatú felhasználók általi kockázatnak teszi ki. Ha ez a probléma, vegye fontolóra az [alkalmazásvédelmi szabályzatok](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) használatát.
 
 ## <a name="policy-issues"></a>Szabályzattal kapcsolatos problémák
 
@@ -118,22 +118,22 @@ Ha ezekkel a hibaelhárítási eljárásokkal nem sikerül megoldani a problém�
 ### <a name="exchange-connector-logs"></a>Az Exchange Connector naplófájljai
 
 #### <a name="general-log-information"></a>Általános naplófájl-információk
-Az Exchange Connector naplófájljainak megtekintéséhez használja a [Server Trace Viewer Tool] (Server Trace Viewer eszközt) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Ennek az eszköznek a használatához le kell töltenie a Windows Server SDK-t.
+Az Exchange Connector naplófájljainak megtekintéséhez használja a [Server Trace Viewer Tool] (Server Trace Viewer eszközt) (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>). Ennek az eszköznek a használatához le kell töltenie a Windows Server SDK-t.
 
 >[!NOTE]
 >A naplófájlok a C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs mappában találhatók. A naplók a *Connector0.log* fájltól a *Connector29.log* fájlig tartó 30 naplófájlban találhatók. Miután egy naplófájlban összegyűlt 10 MB adat, a rendszer megnyitja a következőt. Amikor betelik a Connector29 naplófájl, a folyamat a Connector0 naplófájllal újraindul, felülírva a korábbi naplófájlokat.
 
 #### <a name="locating-sync-logs"></a>A szinkronizálási naplók keresése
 
--    A naplófájlokban a **full sync** keresőkifejezéssel kereshet teljes szinkronizálásra. A teljes szinkronizálás kezdetét a következő szöveg jelzi:
+- A naplófájlokban a **full sync** keresőkifejezéssel kereshet teljes szinkronizálásra. A teljes szinkronizálás kezdetét a következő szöveg jelzi:
 
-    „Handling command: Getting the mobile device list without a time filter (full sync) for <number> users”
+  „Handling command: Getting the mobile device list without a time filter (full sync) for <number> users”
 
-    A teljes szinkronizálás naplófájljának a vége így néz ki:
+  A teljes szinkronizálás naplófájljának a vége így néz ki:
 
-    „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','”
+  „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','”
 
--   A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
+- A naplófájlokban a **quick sync** keresőkifejezéssel kereshet gyors (különbözeti) szinkronizálásra.
 
 ##### <a name="exceptions-in-get-next-command"></a>A Get next parancs kivételei
 Az Exchange Connector naplófájljaiban keresse meg a **Get next paranccsal** kapcsolatos kivételeket, és adja meg azokat a Microsoft támogatási szolgálata számára.

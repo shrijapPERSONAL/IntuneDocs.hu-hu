@@ -1,29 +1,29 @@
 ---
-title: "Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-ban"
-titlesuffix: 
-description: "Miután hozzáadott egy alkalmazást a Microsoft Intune-hoz, érdemes hozzárendelni azt felhasználók vagy eszközök csoportjaihoz."
-keywords: 
+title: Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-ban
+titlesuffix: ''
+description: Miután hozzáadott egy alkalmazást a Microsoft Intune-hoz, érdemes hozzárendelni azt felhasználók vagy eszközök csoportjaihoz.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Miután hozzáadott egy alkalmazást a Microsoft Intune-hoz, felhasználókhoz és eszközökhöz rendelheti hozzá.
 
@@ -51,26 +51,26 @@ Az alkalmazásokat hozzárendelheti eszközökhöz, függetlenül attól, hogy a
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Mobilalkalmazások** lehetőséget.
-1. A **Mobilalkalmazások** terület **Kezelés** szakaszában válassza az **Alkalmazások** lehetőséget.
-2. Az alkalmazáslista paneljén kattintson arra az alkalmazásra, amelyet szeretne hozzárendelni.
-3. Az alkalmazásspecifikus **Áttekintés** panel **Kezelés** szakaszában válassza a **Hozzárendelések** lehetőséget.
-4. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz tartozó **Csoport hozzáadása** panel megjelenítéséhez.
-5. Az adott alkalmazáshoz válasszon egy **hozzárendelési típust** az alábbi lehetőségek közül:
-    - **Regisztrált eszközökhöz elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
-    - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. Vegye figyelembe, hogy az **Android for Work alkalmazás** típus nem támogatja ezt a beállítást. 
-    - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
-    - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
+4. A **Mobilalkalmazások** terület **Kezelés** szakaszában válassza az **Alkalmazások** lehetőséget.
+5. Az alkalmazáslista paneljén kattintson arra az alkalmazásra, amelyet szeretne hozzárendelni.
+6. Az alkalmazásspecifikus **Áttekintés** panel **Kezelés** szakaszában válassza a **Hozzárendelések** lehetőséget.
+7. Válassza a **Csoport hozzáadása** lehetőséget az alkalmazáshoz tartozó **Csoport hozzáadása** panel megjelenítéséhez.
+8. Az adott alkalmazáshoz válasszon egy **hozzárendelési típust** az alábbi lehetőségek közül:
+   - **Regisztrált eszközökhöz elérhető** – A felhasználók a Céges portál alkalmazásban vagy webhelyen telepítik az alkalmazást.
+   - **Regisztrációval vagy anélkül is elérhető** – Az alkalmazás hozzárendelése olyan felhasználók csoportjaihoz, akik eszközei nincsenek regisztrálva az Intune-ban. Vegye figyelembe, hogy az **Android for Work alkalmazás** típus nem támogatja ezt a beállítást. 
+   - **Szükséges** – A rendszer telepíti az alkalmazást a kiválasztott csoportok eszközeire.
+   - **Eltávolítás** – A rendszer eltávolítja az alkalmazást a kiválasztott csoportok eszközeiről.
 
-    > [!NOTE]
-    > **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Csak iOS-alkalmazásokhoz** – Ha alkalmazásonkénti VPN-beállításokat tartalmazó iOS VPN-profilt hozott létre, a **VPN** elem alatt jelölheti ki azt. Az alkalmazás futtatásakor megnyílik a VPN-kapcsolat. További tudnivalókért lásd: [VPN-beállítások iOS-eszközökön](vpn-settings-ios.md).
 
-6. Az alkalmazás-hozzárendelés célcsoportjának kiválasztásához válassza a **Belefoglalt csoportok** lehetőséget.
-7. A csoportok kiválasztása után kattintson a **Kiválasztás** lehetőségre.
-8. Kattintson a **Hozzárendelés** panel **OK** gombjára a belefoglalt csoportok szakasz befejezéséhez.
-9. Ha ki szeretne zárni felhasználói csoportokat az alkalmazás-hozzárendelés alól, kattintson a **Csoportok kizárása** lehetőségre.
-10. Ha kizár csoportokat, kattintson a **Csoportok kiválasztása** panel **Kiválasztás** lehetőségére.
-11. A **Csoport hozzáadása** panelen kattintson az **OK** lehetőségre.
-12. Az alkalmazás **Hozzárendelések** panelén kattintson a **Mentés** lehetőségre a hozzárendelések mentéséhez.
+9. Az alkalmazás-hozzárendelés célcsoportjának kiválasztásához válassza a **Belefoglalt csoportok** lehetőséget.
+10. A csoportok kiválasztása után kattintson a **Kiválasztás** lehetőségre.
+11. Kattintson a **Hozzárendelés** panel **OK** gombjára a belefoglalt csoportok szakasz befejezéséhez.
+12. Ha ki szeretne zárni felhasználói csoportokat az alkalmazás-hozzárendelés alól, kattintson a **Csoportok kizárása** lehetőségre.
+13. Ha kizár csoportokat, kattintson a **Csoportok kiválasztása** panel **Kiválasztás** lehetőségére.
+14. A **Csoport hozzáadása** panelen kattintson az **OK** lehetőségre.
+15. Az alkalmazás **Hozzárendelések** panelén kattintson a **Mentés** lehetőségre a hozzárendelések mentéséhez.
 
 Ezzel az alkalmazást hozzárendelte a kiválasztott csoportokhoz. További információt az alkalmazás-hozzárendelések belefoglalásához és kizárásához az [Alkalmazás-hozzárendelések belefoglalása és kizárása](apps-inc-exl-assignments.md) részben talál.
 

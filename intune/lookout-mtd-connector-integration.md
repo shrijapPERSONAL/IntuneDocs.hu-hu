@@ -1,25 +1,25 @@
 ---
-title: "A Lookout-integráció beállítása a Microsoft Intune-ban"
-titlesuffix: 
-description: "Megismerheti az Intune a Lookout Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését."
-keywords: 
+title: A Lookout-integráció beállítása a Microsoft Intune-ban
+titlesuffix: ''
+description: Megismerheti az Intune a Lookout Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>A Lookout Mobile Threat Defense integrációjának beállítása az Intune-ban
 
@@ -54,32 +54,32 @@ A következő lépések segítségével gyűjtse össze a Lookout-támogatás sz
 2. Az előfizetés nevének kiválasztása után megjelenő URL-cím tartalmazza az előfizetés azonosítóját.  Ha probléma merül fel az előfizetési azonosító lékérdezésekor, további információt talál ebben a [Microsoft-támogatási cikkben](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b).
 
 3. Kérdezze le az Azure AD-csoportazonosítót. A Lookout konzol két hozzáférési szintet támogat:  
-  * **Teljes hozzáférés:** Az Azure AD-rendszergazda létrehozhat egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból álló csoportot is.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
-  * **Korlátozott hozzáférés:** A csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
+   * **Teljes hozzáférés:** Az Azure AD-rendszergazda létrehozhat egy csoportot teljes hozzáférésű felhasználók számára, és választhatóan egy korlátozott hozzáférésű felhasználókból álló csoportot is.  Csak ennek a két csoportnak a tagjai jelentkezhetnek be a **Lookout konzolra**.
+   * **Korlátozott hozzáférés:** A csoport felhasználóinak a Lookout konzol több konfigurációs és regisztrációval kapcsolatos moduljához nincs hozzáférésük, illetve csak olvasási hozzáférésük van a Lookout konzol **Security Policy** moduljához.  
 
-    > [!TIP] 
-    > Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/articles/114094105653).
+     > [!TIP] 
+     > Az engedélyekről további információt talál a Lookout-webhelyen, [ebben a cikkben](https://personal.support.lookout.com/hc/articles/114094105653).
 
-    > [!NOTE] 
-    > A **Csoportobjektum azonosítója** a **Tulajdonságok** lapon található az **Azure AD felügyeleti portálján**.
+     > [!NOTE] 
+     > A **Csoportobjektum azonosítója** a **Tulajdonságok** lapon található az **Azure AD felügyeleti portálján**.
 
 4. Miután kigyűjtötte ezeket az információkat, lépjen kapcsolatba a Lookout támogatási szolgálatával (e-mail: enterprisesupport@lookout.com). A Lookout ügyfélszolgálat a megadott információkat felhasználva, az elsődleges kapcsolattartóval együttműködve előkészíti az előfizetést, és elkészíti a vállalati Lookout-fiókot.
 
 ## <a name="configure-your-subscription"></a>Az előfizetés konfigurálása
 
-1. Miután a Lookout ügyfélszolgálata elkészítette a vállalati Lookout-fiókot, a Lookout e-mailben küldi el a vállalat elsődleges kapcsolattartójának címére a bejelentkezési URL-címet: https://aad.lookout.com/les?action=consent.
+1. Miután a Lookout ügyfélszolgálata elkészítette a vállalati Lookout-fiókot, a Lookout e-mailben küldi el a vállalat elsődleges kapcsolattartójának címére a bejelentkezési URL-címet: <https://aad.lookout.com/les?action=consent>.
 
-2.  Az Azure AD-bérlő regisztrálásához a Lookout-konzolra való első bejelentkezésnél egy Azure AD-szerepkörű globális rendszergazdai felhasználói fiókkal kell bejelentkezni. A későbbiekben nem szükséges ezt a szintű Azure AD-jogosultságot használni. Egy hozzájárulást kérő lap jelenik meg. A regisztráció befejezéséhez válassza az **elfogad** lehetőséget. Miután elfogadta és hozzájárulását adta, át lesz irányítva a Lookout-konzolra.
+2. Az Azure AD-bérlő regisztrálásához a Lookout-konzolra való első bejelentkezésnél egy Azure AD-szerepkörű globális rendszergazdai felhasználói fiókkal kell bejelentkezni. A későbbiekben nem szükséges ezt a szintű Azure AD-jogosultságot használni. Egy hozzájárulást kérő lap jelenik meg. A regisztráció befejezéséhez válassza az **elfogad** lehetőséget. Miután elfogadta és hozzájárulását adta, át lesz irányítva a Lookout-konzolra.
 
-    ![A Lookout-konzol első alkalommal megjelenő bejelentkezési lapjának képernyőképe](./media/lookout_mtp_initial_login.png)
+   ![A Lookout-konzol első alkalommal megjelenő bejelentkezési lapjának képernyőképe](./media/lookout_mtp_initial_login.png)
 
-3.  Nyissa meg a [Lookout konzolon](https://aad.lookout.com) a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
+3. Nyissa meg a [Lookout konzolon](https://aad.lookout.com) a **System** (Rendszer) modult, válassza a **Connectors** (Összekötők) lapot, majd az **Intune** lehetőséget.
 
-    ![képernyőkép a Lookout konzolról, amelyen az összekötők lap meg van nyitva, az Intune lehetőség pedig ki van emelve](./media/lookout_mtp_setup-intune-connector.png)
+   ![képernyőkép a Lookout konzolról, amelyen az összekötők lap meg van nyitva, az Intune lehetőség pedig ki van emelve](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  A **Connectors (Összekötők)** > **Connection Settings (Kapcsolat beállítása)** lapon adja meg a **Heartbeat Frequency (Szívverés gyakorisága)** értékét.
+4. A **Connectors (Összekötők)** > **Connection Settings (Kapcsolat beállítása)** lapon adja meg a **Heartbeat Frequency (Szívverés gyakorisága)** értékét.
 
-    ![képernyőkép a kapcsolat beállítása lapról, amin a szívverés gyakorisága már konfigurálva van](./media/lookout-mtp-connection-settings.png)
+   ![képernyőkép a kapcsolat beállítása lapról, amin a szívverés gyakorisága már konfigurálva van](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Regisztrációs csoportok konfigurálása
 1. Ajánlott eljárásként az [Azure AD felügyeleti portálon](https://manage.windowsazure.com) hozzon létre egy néhány tagból álló Azure AD-alapú biztonsági csoportot a Lookout-integráció teszteléséhez.

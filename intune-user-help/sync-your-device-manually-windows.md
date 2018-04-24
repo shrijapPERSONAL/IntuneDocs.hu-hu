@@ -1,27 +1,27 @@
 ---
-title: "Windows-eszköz manuális szinkronizálása | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Windows-eszköz manuális szinkronizálása | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
@@ -65,10 +65,10 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
 2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a cég informatikai támogatási szolgálata hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája.
 
-    - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
-    - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
+   - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
+   - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
 
-    ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-info-button.png)
+     ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-info-button.png)
 
 3. Kattintson az **Információ** gombra. Az alábbi példához hasonlóan megnyílik egy párbeszédpanel.
 

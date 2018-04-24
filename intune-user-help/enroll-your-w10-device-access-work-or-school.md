@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 rendszerű eszköz regisztrálása az Intune-ban | Microsoft Docs"
-description: "1607-es vagy újabb verziójú Windows 10 rendszerű eszköz regisztrációja az Intune-ban"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Windows 10 rendszerű eszköz regisztrálása az Intune-ban | Microsoft Docs
+description: 1607-es vagy újabb verziójú Windows 10 rendszerű eszköz regisztrációja az Intune-ban
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2183f17b2797229f6af156349029e8061658c51b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fee90ed055a0d132a4f6304d7b33f67005caf0fc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 rendszerű eszköz regisztrálása az Intune-ban
 
@@ -32,30 +32,30 @@ ms.lasthandoff: 01/25/2018
 
 1. Lépjen a **Start** menüre.
 
-  - Ha **Windows 10 rendszerű asztali** eszközt használ, lépjen a **Start** menüre.
-  - Ha **Windows 10 Mobile** rendszerű eszközt használ, nyissa meg a **kezdőképernyőt**, és pöccintsen a **Minden alkalmazás** listára.
+   - Ha **Windows 10 rendszerű asztali** eszközt használ, lépjen a **Start** menüre.
+   - Ha **Windows 10 Mobile** rendszerű eszközt használ, nyissa meg a **kezdőképernyőt**, és pöccintsen a **Minden alkalmazás** listára.
 
-2.  A keresősávban keressen a „beállítások” kifejezésre, majd nyissa meg a Windows **Beállítások** alkalmazását.
+2. A keresősávban keressen a „beállítások” kifejezésre, majd nyissa meg a Windows **Beállítások** alkalmazását.
 
 3. Válassza a **Fiókok** > **Hozzáférés munkahelyi vagy iskolai rendszerhez** > **Csatlakozás** elemet.
 
     ![Válassza a Hozzáférés munkahelyi vagy iskolai fiókhoz lehetőséget](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  Adja meg a munkahelyi vagy iskolai e-mail-címét, és válassza a **Tovább** elemet.
+4. Adja meg a munkahelyi vagy iskolai e-mail-címét, és válassza a **Tovább** elemet.
 
-    ![Adja meg a munkahelyi vagy iskolai fiókját](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+   ![Adja meg a munkahelyi vagy iskolai fiókját](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával.
+5. Jelentkezzen be az Intune-ba munkahelyi vagy iskolai fiókjával.
 
     ![Munkahelyi vagy iskolai fiók beállítása](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Ekkor megjelenik egy üzenet arról, hogy a munkahely vagy iskola regisztrálja az eszközt.
 
-5. Amikor megjelenik a **Készen vagyunk!** képernyő, válassza a **Bezárás** elemet. Ezzel készen is van.
+6. Amikor megjelenik a **Készen vagyunk!** képernyő, válassza a **Bezárás** elemet. Ezzel készen is van.
 
-  ![Válassza a Bezárás elemet a „Készen vagyunk!” képernyőn](./media/w10-enroll-rs1-youre-all-set.png)
+   ![Válassza a Bezárás elemet a „Készen vagyunk!” képernyőn](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. Ha szeretné még egyszer ellenőrizni, hogy a kapcsolat megfelelően működik-e, lépjen vissza a **Gépház** területre, ahol most már meg kell jelennie a listán a munkahelyi vagy iskolai fiókjának.
+7. Ha szeretné még egyszer ellenőrizni, hogy a kapcsolat megfelelően működik-e, lépjen vissza a **Gépház** területre, ahol most már meg kell jelennie a listán a munkahelyi vagy iskolai fiókjának.
 
     ![A kapcsolat megfelelő beállításának ellenőrzése](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 

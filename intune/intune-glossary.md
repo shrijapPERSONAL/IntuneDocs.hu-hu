@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-szószedet
 A Microsoft Intune gyakori kifejezéseinek definíciói.
@@ -39,11 +39,13 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Azure Portal|Az Intune új konzolja. [További információ](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|Saját eszközök használata ([Bring Your Own Device](/intune/device-enrollment)). A felhasználók telepítik az eszközeikre az Intune Céges portál alkalmazást, majd regisztrálják az eszközüket, így hozzáférhetnek az olyan vállalati erőforrásokhoz, mint a levelezés, a vállalati alkalmazások és adatok, valamint az ügyfélszolgálat.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Tanúsítványprofil|Ezzel a szabályzattípussal tanúsítványokkal [teheti biztonságossá a vállalati erőforrások elérését](/intune/certificates-configure), amikor Wi-Fi-t, levelezést vagy VPN-profilokat használ.|
@@ -55,6 +57,7 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Egyéni szabályzat|Akkor [használja ezeket a szabályzatokat](/intune/custom-settings-configure), ha az általános konfigurációs szabályzat beépített beállításai nem felelnek meg Önnek. Egyéni szabályzattal lehetősége nyílhat más módon, például az Apple Configurator vagy OMA-URI használatával beállítást létrehozni.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Környezet|Olyan művelet, amelynek során alkalmazást vagy szabályzatot küld egy Ön által felügyelt eszköznek vagy felhasználónak. Ezt a műveletet most már *hozzárendelésnek* nevezik.|
@@ -62,6 +65,7 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Eszközprofilok|[Ezek a profilok](/intune/device-profile-create) lehetővé teszik számos funkció, illetve biztonsági és hozzáférési beállítások konfigurálását a felügyelt eszközökön.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-mail-profil|Ezzel a szabályzattal [e-mail-hozzáférési beállításokat](/intune/email-settings-configure) adhat meg mobileszközökhöz, hogy a végfelhasználónak csak minimális teendője legyen.|
@@ -70,21 +74,25 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Regisztrálás|A Microsoft Intune [regisztráció](/intune/device-enrollment) segítségével vonja felügyelet alá az eszközöket, és teszi lehetővé az erőforrásokhoz való hozzáférést.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Microsoft-szolgáltatás](https://technet.microsoft.com/library/mt228265.aspx) olyan Intune-felhasználók számára, akik a feltételeknek megfelelő csomaggal és 150 licenccel rendelkeznek. Ha ezt a szolgáltatást használja, a Microsoft szakemberei segíthetnek Önnek az Intune üzembe helyezésében.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Csoportok|A csoportok lehetővé teszik, hogy [összegyűjtse a logikailag kapcsolódó felhasználókat és eszközöket](/intune/groups-get-started). Például létrehozhat egy csoportot, amely az összes windowsos számítógépet tartalmazza. Ezt követően ezekhez a csoportokhoz alkalmazásokat és profilokat rendelhet hozzá.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Hibrid|Olyan konfiguráció, amelyben az Intune-nal regisztrált eszközöket a System Center Configuration Manager konzoljával felügyelheti.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure Portal|Az Azure Portal azon része, amelyen keresztül a legtöbb Intune-alapú felügyeleti művelet elvégezhető.|
@@ -93,11 +101,13 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Leltár|Megtekintheti a felügyelt eszközök [hardvereit és a rájuk telepített szoftvereket](/intune/device-inventory).|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Teljes képernyős mód|Ez az [eszközkorlátozási profil](/intune/device-restrictions-configure) részeként beállított mód lehetővé teszi az eszközök lezárását. Például egy kiskereskedelmi eszközt beállíthat úgy, hogy csak néhány alkalmazás futtatását engedélyezze.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Felügyelt böngésző|Egy [webböngésző-alkalmazás](/intune/app-configuration-managed-browser), amelyet az Intune használatával rendelhet hozzá a céges eszközeihez. A felügyeltböngésző-szabályzatban megadható egy engedélyezési vagy blokklista, amellyel korlátozhatók a felügyelt böngésző felhasználói által felkereshető webhelyek.|
@@ -110,17 +120,20 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Egy iparági szabványnak számító eszközfelügyeleti protokoll, amelyet számos hardvergyártó használ mobileszközök és PC-k szolgáltatásainak kezeléséhez.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Ezek azonosítják az OMA-DM szabványnak megfelelő egyéni eszközbeállításokat. Ezek a beállítások az [egyéni Intune-profilokban](/intune/custom-settings-configure) használhatók, ha nincs az Ön igényeinek megfelelő beépített beállítás.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |PIN-kód alaphelyzetbe állítása|Intune-szolgáltatás, amely lehetővé teszi, hogy a támogatott eszközökön a végfelhasználót [új PIN-kód beállítására](/intune/device-passcode-reset) kötelezze.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Távoli zárolás|Intune-funkció, amely lehetővé teszi a [támogatott eszközök zárolását](/intune/device-remote-lock), még akkor is, ha Ön nincs az eszköz birtokában.|
@@ -128,6 +141,7 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Szelektív törlés|A [szelektív törlés](/intune/device-company-data-remove) csak az alkalmazásvédelmi szabályzatok által védett vállalati adatokat, például a beállításokat és az e-mail-profilokat távolítja el az eszközről. Szelektív törlés esetén a felhasználó személyes adatai az eszközön maradnak.|
@@ -135,6 +149,7 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |Előfizetés|Az Ön által megkötött szerződés, amely lehetőséget nyújt egy Intune-bérlő elérésére.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Külső gyártótól származó alkalmazás, amely az Intune-nal együttműködve biztosít [távsegítség-funkciókat](/intune/device-profile-android-teamviewer) az Intune-nal felügyelt Android-eszközökhöz.|
@@ -142,12 +157,15 @@ A Microsoft Intune gyakori kifejezéseinek definíciói.
 |használati feltételei|Felhasználókhoz hozzárendelhető szabályzattípus. Olyan információkat tartalmaz, amelyeket a felhasználóknak [el kell olvasniuk és el kell fogadniuk](/intune/terms-and-conditions-create), hogy regisztrálhassanak a céges portálon, és hozzáférhessenek a munkájukhoz kapcsolódó anyagokhoz.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Mennyiségi licencszerződés keretében vásárolt alkalmazások és könyvek|Egyes alkalmazás-áruházak lehetővé teszik, hogy több licencet is vásároljon a cégnél használni kívánt alkalmazásokhoz és könyvekhez. Az Intune segítséget nyújt az [ilyen szerződés keretében vásárolt](/intune/vpp-apps) alkalmazások és könyvek kezelésében. Importálhatja a licencadatokat az alkalmazás-áruházból, figyelemmel kísérheti a felhasznált licencek számát, és meggátolhatja, hogy a megvásároltnál több példányban telepítsen egy alkalmazást.|
 |VPN-profil|Szabályzat, amely [VPN-beállításokat](/intune/vpn-settings-configure) rendel hozzá a felügyelt eszközökhöz, hogy a végfelhasználónak csak minimális teendője legyen.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi-profil|Szabályzat, amely [vezeték nélküli hálózati beállításokat](/intune/wi-fi-settings-configure) rendel hozzá az eszközökhöz, hogy a felhasználók a beállítások ismerete és konfigurálása nélkül csatlakozhassanak a céges hálózathoz.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi-profil | Szabályzat, amely [vezeték nélküli hálózati beállításokat](/intune/wi-fi-settings-configure) rendel hozzá az eszközökhöz, hogy a felhasználók a beállítások ismerete és konfigurálása nélkül csatlakozhassanak a céges hálózathoz. |
+

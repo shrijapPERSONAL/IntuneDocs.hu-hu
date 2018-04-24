@@ -1,27 +1,27 @@
 ---
-title: "Wi-Fi-beállítások konfigurálása az Intune-ban"
+title: Wi-Fi-beállítások konfigurálása az Intune-ban
 titleSuffix: Microsoft Intune
-description: "Útmutató arról, hogyan konfigurálhatóak a Wi-Fi-kapcsolatok felügyelt eszközökön a Microsoft Intune-nal."
-keywords: 
+description: Útmutató arról, hogyan konfigurálhatóak a Wi-Fi-kapcsolatok felügyelt eszközökön a Microsoft Intune-nal.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune Wi-Fi-profiljaival a vezeték nélküli hálózati beállításokat a szervezet felhasználóihoz és eszközeihez rendelheti hozzá. Wi-Fi-profil hozzárendelése esetén a felhasználók anélkül csatlakozhatnak a vállalati Wi-Fi hálózathoz, hogy azt maguknak kellene konfigurálniuk.
 

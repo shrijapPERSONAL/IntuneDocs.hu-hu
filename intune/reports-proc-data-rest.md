@@ -1,25 +1,25 @@
 ---
-title: "Adatok beolvasása az adattárház API-ból REST-ügyféllel"
+title: Adatok beolvasása az adattárház API-ból REST-ügyféllel
 titlesuffix: Microsoft Intune
-description: "Adatok beolvasása az Intune-adattárházból RESTful API-val"
-keywords: 
+description: Adatok beolvasása az Intune-adattárházból RESTful API-val
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Adatok beolvasása az Intune-adattárház API-ból REST-ügyféllel
 
@@ -45,7 +45,7 @@ Hozzon létre egy natív alkalmazást az Azure-ben. Ez a natív alkalmazás az �
     3.  Írjon be egy URL-címet a **Bejelentkezési URL-cím** mezőbe. A bejelentkezési URL-cím az adott forgatókönyvtől is függ, azonban ha a Postman alkalmazást tervezi használni, a következő címet írja be: `https://www.getpostman.com/oauth2/callback`. A visszahívásra az ügyfél-hitelesítési lépésben lesz szükség a Microsoft Azure AD-beli hitelesítéshez.
 4.  Válassza a **Létrehozás** lehetőséget.
 
-     ![Intune-adattárház API](media\reports-get_rest_data_client_overview.png)
+     ![Intune-adattárház API](./media/reports-get_rest_data_client_overview.png)
 
 5. Jegyezze fel az alkalmazás **Alkalmazásazonosítóját**. Az azonosítóra szükség lesz a következő szakaszban.
 
@@ -62,7 +62,7 @@ Most már rendelkezik egy Azure-ban definiált alkalmazással. Gondoskodjon arr�
 7.  Válassza a **Kiválasztás** lehetőséget.
 8.  Jelölje be a **Delegált engedélyek** jelölőnégyzetet a **Get data warehouse information from Microsoft Intune** (Adattárház-információk beolvasása a Microsoft Intune-ból) lehetőség felvételéhez.
 
-    ![Hozzáférés engedélyezése – Microsoft Intune API](media\reports-get_rest_data_client_access.png)
+    ![Hozzáférés engedélyezése – Microsoft Intune API](./media/reports-get_rest_data_client_access.png)
 
 9.  Válassza a **Kiválasztás** lehetőséget.
 10.  Válassza a **Kész** lehetőséget.
@@ -79,10 +79,10 @@ A következők szükségesek REST-hívások a Postman alkalmazásból való vég
 
 | Attribútum        | Description                                                                                                                                                                          | Példa                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Visszahívási URL     | Az alábbi címet adja meg az alkalmazás Beállítások oldalán visszahívási URL-címként.                                                                                                                              | https://www.getpostman.com/oauth2/Callback                                                    |
+| Visszahívási URL     | Az alábbi címet adja meg az alkalmazás Beállítások oldalán visszahívási URL-címként.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Jogkivonat neve       | A karakterlánc, amellyel az ügyfél átadja a hitelesítő adatokat az Azure-alkalmazásnak. A folyamat során egy jogkivonat jön létre, mellyel az adattárház API-t hívhatja.                          | Tulajdonos                                                                                        |
 | Hitelesítési URL-cím         | A hitelesítéshez használt URL-cím. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
-| Hozzáférési jogkivonat URL-címe | A jogkivonat megadásához használt URL-cím.                                                                                                                                              | https://Login.microsoftonline.com/common/oauth2/token |
+| Hozzáférési jogkivonat URL-címe | A jogkivonat megadásához használt URL-cím.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | Ügyfél-azonosító        | Az Azure-beli natív alkalmazás létrehozásakor hozta létre és jegyezte fel.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
 | Hatókör (nem kötelező) | Üres                                                                                                                                                                               | Ezt a mezőt üresen hagyhatja.                                                                     |
 | Engedélyezési típus       | A jogkivonat egy engedélyezési kód.                                                                                                                                                  | Engedélyezési kód                                                                            |
@@ -132,7 +132,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 
 12. Válassza a **Request Token** (Jogkivonat kérése) lehetőséget.
 
-    ![A jogkivonat adatai](media\reports-postman_getnewtoken.png)
+    ![A jogkivonat adatai](./media/reports-postman_getnewtoken.png)
 
 13. Adja meg a hitelesítő adatait az Active AD engedélyezési oldalán. A Postmanben most már szerepelni fog a `Bearer` nevű jogkivonat a jogkivonatok listáján.
 14. Válassza a **Use Token** (Jogkivonat használata) lehetőséget. A fejlécek listája tartalmazza az új engedélyezési kulcsértéket és a `Bearer <your-authorization-token>` értéket.
@@ -142,7 +142,7 @@ Ahhoz, hogy beszerezzen egy új hozzáférési jogkivonatot a Postman számára,
 1.  Válassza a **Küldés** lehetőséget.
 2.  A visszaadott adatok a Postman-válasz törzsében jelennek meg.
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>REST-ügyfél (C#) létrehozása az Intune-adattárház adatainak beolvasásához
 
@@ -151,45 +151,45 @@ Az alábbi minta egy egyszerű REST-ügyfelet tartalmaz. A kód a .Net-kódtár 
 > [!Note]  
 > Az alábbi kódminta elérhető a [GitHubon](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). A kód legutóbbi változtatásai és frissítései a GitHub-tárházban érhetők el.
 
-1.  Indítsa el a **Microsoft Visual Studiót**.
-2.  Válassza a **Fájl** > **Új projekt** lehetőséget. Bontsa ki a **Visual C#** lehetőséget, és válassza a **Console App (.Net Framework)** (Konzolalkalmazás (.Net-keretrendszer)) lehetőséget.
-3.  A projektnek adja az ` IntuneDataWarehouseSamples` nevet, és tallózással válassza ki, hova szeretné azt menteni, majd kattintson az **OK** gombra.
-4.  Kattintson a jobb gombbal a megoldás nevére a Megoldáskezelőben, majd válassza a **Manage NuGet Packages for Solution** (Megoldás NuGet-csomagjainak kezelése) lehetőséget. Válassza a **Tallózás** elemet, majd írja a `Microsoft.IdentityModel.Clients.ActiveDirectory` szöveget a keresőmezőbe.
+1. Indítsa el a **Microsoft Visual Studiót**.
+2. Válassza a **Fájl** > **Új projekt** lehetőséget. Bontsa ki a **Visual C#** lehetőséget, és válassza a **Console App (.Net Framework)** (Konzolalkalmazás (.Net-keretrendszer)) lehetőséget.
+3. A projektnek adja az ` IntuneDataWarehouseSamples` nevet, és tallózással válassza ki, hova szeretné azt menteni, majd kattintson az **OK** gombra.
+4. Kattintson a jobb gombbal a megoldás nevére a Megoldáskezelőben, majd válassza a **Manage NuGet Packages for Solution** (Megoldás NuGet-csomagjainak kezelése) lehetőséget. Válassza a **Tallózás** elemet, majd írja a `Microsoft.IdentityModel.Clients.ActiveDirectory` szöveget a keresőmezőbe.
 5. Válassza ki a csomagot, jelölje ki a **IntuneDataWarehouseSamples** projektet a Manage Packages for Your Solution (Megoldás csomagjainak kezelése) szakaszban, majd válassza a **Telepítés** lehetőséget.
 6. Az **Elfogadom** elemet választva fogadja el a NuGet-csomag licencfeltételeit.
 7. Nyissa meg a `Program.cs` fájlt a Megoldáskezelőben.
 
-    ![A projekt a Visual Studióban](media\reports-get_rest_data_in.png)
+    ![A projekt a Visual Studióban](./media/reports-get_rest_data_in.png)
 
-8.  Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. Írja felül a Program.cs fájlban található kódot az alábbi kóddal:  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
-    *      the Azure portal.
-    *
-    * collectionName - The name of the warehouse entity collection you would like to
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -198,9 +198,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -212,16 +212,16 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  Frissítse a mintakódban található `TODO` elemeket.
-10.  A **Ctrl + F5** billentyűkombinációval állítsa össze és futtassa az Intune.DataWarehouseAPIClient ügyfelet hibakeresési módban.
+9. Frissítse a mintakódban található `TODO` elemeket.
+10. A **Ctrl + F5** billentyűkombinációval állítsa össze és futtassa az Intune.DataWarehouseAPIClient ügyfelet hibakeresési módban.
 
-    ![JSON formátumban beolvasott dátumentitás.](media\reports-get_rest_data_output.png)
+    ![JSON formátumban beolvasott dátumentitás.](./media/reports-get_rest_data_output.png)
 
-11.  Tekintse meg a kimenetet a konzolon. A kimenet JSON formátumban tartalmazza az Intune-bérlő **dates** entitásából kinyert adatokat.
+11. Tekintse meg a kimenetet a konzolon. A kimenet JSON formátumban tartalmazza az Intune-bérlő **dates** entitásából kinyert adatokat.
 
 ## <a name="next-steps"></a>További lépések
 

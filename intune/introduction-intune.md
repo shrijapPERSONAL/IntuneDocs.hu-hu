@@ -1,28 +1,28 @@
 ---
 title: Mi az a Microsoft Intune?
-description: "Ismerkedjen meg az Intune-nal, az Enterprise Mobility + Security megoldás mobileszköz-felügyeleti (MDM-) és mobilalkalmazás-felügyeleti (MAM-) összetevőjével, amely segítséget nyújt a céges adatok védelméhez."
+description: Ismerkedjen meg az Intune-nal, az Enterprise Mobility + Security megoldás mobileszköz-felügyeleti (MDM-) és mobilalkalmazás-felügyeleti (MAM-) összetevőjével, amely segítséget nyújt a céges adatok védelméhez.
 keywords: Mi az az Intune?
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Az Intune egy felhőalapú nagyvállalati mobileszköz-felügyeleti (EMM-) szolgáltatás, amely segítséget nyújt a munkatársak hatékonyságának fenntartásához a céges adatok védelmének megőrzése mellett. Az Intune-nal a következőkre nyílik lehetősége:
 * Felügyelheti a munkatársak által a vállalati adatok elérésére használt mobileszközöket.

@@ -1,28 +1,28 @@
 ---
-title: "Újdonságok a Microsoft Intune klasszikus portáljának archívumában"
-description: "A Microsoft Intune „Újdonságok” tájékoztatónak archívuma"
-keywords: 
+title: Újdonságok a Microsoft Intune klasszikus portáljának archívumában
+description: A Microsoft Intune „Újdonságok” tájékoztatónak archívuma
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>A klasszikus Intune-portál újdonságai – korábbi hónapok
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Ezen az oldalon a klasszikus Intune-portál [Újdonságai](whats-new.md) oldalon korábban szereplő bejelentések és új funkciók olvashatók.
 
@@ -359,7 +359,7 @@ __Az Intune App SDK Xamarin összetevő most már támogatja a regisztráció n�
 
 __A Symantec aláíró tanúsítványának feltöltéséhez most már nincs szükség az aláírt Windows Phone 8 Munkahelyi portálra__ A Symantec aláíró tanúsítványának feltöltéséhez mostantól nincs szükség az aláírt Windows Phone 8 Munkahelyi portál alkalmazásra. A tanúsítványt függetlenül fel lehet tölteni.
 
-###<a name="deprecations"></a>Elavulások
+### <a name="deprecations"></a>Elavulások
 
 __A Windows Phone 8 Munkahelyi portál támogatása__ A Windows Phone 8 Munkahelyi portál támogatását kivezetjük. A Windows Phone 8 és WinRT platform támogatását 2016 októberében kivezettük. Egyúttal a Windows 8 vállalati portál támogatását is elavulttá minősítettük 2016 októberével.
 

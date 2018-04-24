@@ -1,27 +1,27 @@
 ---
-title: "Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 181c3df521e9cf213367becf00e4a53469ad69a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Az eszköz alaphelyzetbe állítása a Vállalati portál webhelyről
 
@@ -34,17 +34,17 @@ Ha alaphelyzetbe állítja az eszközt, többé nem fog megjelenni a Vállalati 
 
 Az eszköz alaphelyzetbe állítása:
 
-1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
+1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
 
 2. A __Saját eszközök__ oldalon válassza ki annak az eszköznek a nevét, amelyiket át szeretné nevezni.
 
-  ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Képernyőkép a Saját eszköz lapról, amelyen különböző azonosítatlan eszközök láthatók a listán nem szereplő eszközök regisztrálását vagy az azonosítatlan eszközök azonosítását felajánló szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Alaphelyzetbe állítás** gombra.
+3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson az **Alaphelyzetbe állítás** gombra.
 
-    ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
 
-4.  Egy figyelmeztető üzenet jelenik meg, amely tájékoztatja, hogy a gyári beállítások visszaállításával minden adat törlődni fog az eszközről. Koppintson az **Alaphelyzetbe állítás** lehetőségre, és erősítse meg, hogy ezt kívánja tenni.
+4. Egy figyelmeztető üzenet jelenik meg, amely tájékoztatja, hogy a gyári beállítások visszaállításával minden adat törlődni fog az eszközről. Koppintson az **Alaphelyzetbe állítás** lehetőségre, és erősítse meg, hogy ezt kívánja tenni.
 
 Az eszköz alaphelyzetbe állítása megtörtént.
 

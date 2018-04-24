@@ -1,27 +1,27 @@
 ---
-title: "A Microsoft Intune e-mail-beállításainak konfigurálása"
-titleSuffix: 
-description: "A cikk azt mutatja be, hogyan konfigurálható a Microsoft Intune arra, hogy a felügyelt eszközöket csatlakoztassa a céges levelezéshez."
-keywords: 
+title: A Microsoft Intune e-mail-beállításainak konfigurálása
+titleSuffix: ''
+description: A cikk azt mutatja be, hogyan konfigurálható a Microsoft Intune arra, hogy a felügyelt eszközöket csatlakoztassa a céges levelezéshez.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Az e-mail-beállítások konfigurálása a Microsoft Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 E-mail-profilok segítségével konfigurálhatók a felügyelt eszközökön azok a beállítások, amelyek a vállalati levelezőrendszerhez való csatlakozáshoz és szinkronizáláshoz szükségesek. Ezáltal garantálható, hogy minden eszközön egységesek legyenek a beállítások, ráadásul kevesebbszer igényelnek segítséget olyan felhasználók, akik nem tudják a helyes e-mail-beállításokat.
 

@@ -1,29 +1,29 @@
 ---
-title: "Alkalmazások és adatok védelme"
-description: "Ez a témakör ismerteti azokat a különböző Intune-funkciókat és képességeket, amelyek a rendelkezésére állnak a vállalati alkalmazások és adatok védelme érdekében."
-keywords: 
+title: Alkalmazások és adatok védelme
+description: Ez a témakör ismerteti azokat a különböző Intune-funkciókat és képességeket, amelyek a rendelkezésére állnak a vállalati alkalmazások és adatok védelme érdekében.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Alkalmazások és adatok védelme a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Intune a vállalati adatokat több technológiai réteg segítségével védi. Az identitáskezelő rétegben a feltételes hozzáférés gondoskodik a védelemről: a szolgáltatásokhoz csak felügyelt, illetve a szabályoknak megfelelő eszközökkel lehet hozzáférni. Az ügyfélalkalmazási rétegben a mobilalkalmazás-kezelés (MAM) gondoskodik az adatvesztés elleni védelemről. Ennek részeként megakadályozza az adatok nem védett alkalmazásokba vagy tárhelyekre történő áthelyezését, illetve az eszköz elvesztése vagy ellopása esetén törli az adatokat. Azt javasoljuk, hogy az adatvédelem megvalósítása mellett a mobil munkaerő termelékenységének megőrzése érdekében e két védelmi réteget együttesen kell használni.
 

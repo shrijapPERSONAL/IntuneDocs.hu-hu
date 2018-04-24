@@ -1,29 +1,29 @@
 ---
-title: "Vállalati azonosítók hozzáadása az Intune-hoz"
+title: Vállalati azonosítók hozzáadása az Intune-hoz
 titlesuffix: Microsoft Intune
-description: "Megtudhatja, hogyan adhat hozzá vállalati azonosítókat (regisztrációs módszer, IMEI és sorozatszámok) a Microsoft Intune-hoz."
-keywords: 
+description: Megtudhatja, hogyan adhat hozzá vállalati azonosítókat (regisztrációs módszer, IMEI és sorozatszámok) a Microsoft Intune-hoz.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune-rendszergazdaként vállalati tulajdonúként azonosíthat eszközöket, így finomíthatja a felügyeletet és az azonosítást. Az Intune további felügyeleti feladatokat végezhet, valamint további adatokat gyűjthet, például a vállalati tulajdonú eszközök teljes telefonszámát és az eszközökön található alkalmazások leltárát. Eszközkorlátozásokat is beállíthat a nem vállalati tulajdonú eszközök regisztrációjának megakadályozásához.
 
@@ -72,7 +72,7 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 
 1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
 
- ![A céges készülékazonosítók munkaterülete a Hozzáadás gomb kiemelésével](./media/add-corp-id.png)
+   ![A céges készülékazonosítók munkaterülete a Hozzáadás gomb kiemelésével](./media/add-corp-id.png)
 
 2. Az **Azonosítók hozzáadása** panelen adja meg az azonosító típusát: **IMEI** vagy **Sorozatszám**. Megadhatja, hogy a korábban importált számok **felülírják-e a meglévő azonosítók adatait**.
 
@@ -97,7 +97,7 @@ Az Intune-ban az eszközök tulajdonságai között mindegyik eszközbejegyzésn
 
 **Eszköz tulajdonosának módosítása:**
 1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) az **Eszközök** területen válassza ki az adott eszközt.
-3. Válassza a **Tulajdonságok** lehetőséget.
-4. Adja meg az **Eszköz tulajdonosa** beállításnál, hogy az eszköz **Személyes** vagy **Céges**.
+2. Válassza a **Tulajdonságok** lehetőséget.
+3. Adja meg az **Eszköz tulajdonosa** beállításnál, hogy az eszköz **Személyes** vagy **Céges**.
 
-  ![Az eszköz tulajdonságai képernyő az Eszközkategória és az Eszköz tulajdonosa beállításokkal](./media/device-properties.png)
+   ![Az eszköz tulajdonságai képernyő az Eszközkategória és az Eszköz tulajdonosa beállításokkal](./media/device-properties.png)

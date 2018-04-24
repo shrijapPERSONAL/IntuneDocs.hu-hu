@@ -1,29 +1,29 @@
 ---
-title: "Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával"
+title: Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 titlesuffix: Microsoft Intune
-description: "Az eszközök Intune-ban való regisztrálásához használja a készülékregisztráció-kezelői fiókot. \""
-keywords: 
+description: Az eszközök Intune-ban való regisztrálásához használja a készülékregisztráció-kezelői fiókot. "
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott eszközökként használni.  
 
@@ -49,12 +49,12 @@ A DEM-felhasználó a következőket teheti:
 Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a következő korlátozások vonatkoznak:
 
   - Nincs felhasználónkénti hozzáférés. Mivel az eszközök nem rendelkeznek hozzárendelt felhasználóval, az eszközök nem férhetnek hozzá az e-mailekhez és a céges adatokhoz. A VPN-konfigurációk például továbbra is használhatók, hogy az eszközök alkalmazásai elérhessék az adatokat.
-  - Nincs feltételes hozzáférés, mivel ezek felhasználónkénti forgatókönyvek.
   - A DEM-felhasználó magán az eszközön nem törölheti az eszközregisztráció-kezelésre regisztrált eszközök regisztrációját a Vállalati portálon. Az Intune-rendszergazda törölheti a regisztrációt.
   - A Vállalati portál alkalmazásban vagy a webhelyén csak a helyi eszköz jelenik meg.
-  - A felhasználók nem futtathatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat az eszközökön, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
+  - A felhasználók nem használhatnak az Apple Volume Purchase Program (VPP) keretében vásárolt alkalmazásokat a felhasználói licencekkel, mivel az alkalmazások kezeléséhez felhasználói Apple ID azonosítóra van szükség.
   - (Csak iOS esetén) Ha eszközregisztráció-kezelővel regisztrálja az iOS-eszközöket, akkor nem használhatja az Apple Configuratort, a Készülékregisztrációs programot (DEP) és az Apple School Manager (ASM) programot az eszközök regisztrálására.
   - (Csak Android esetén) Az adott DEM-fiókkal regisztrálható Android for Work-eszközök száma korlátozott. DEM-fiókonként legfeljebb tíz androidos munkahelyi profillal rendelkező eszközt lehet regisztrálni. Ez a korlátozás a hagyományos Android-eszközök regisztrációjára nem vonatkozik.
+  - Az eszközök telepíthetnek VPP-alkalmazásokat, ha rendelkeznek eszközlicenccel.
   - Mindegyik eszközhöz eszközlicenc szükséges. További információ a [felhasználói és eszközlicencekről](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 

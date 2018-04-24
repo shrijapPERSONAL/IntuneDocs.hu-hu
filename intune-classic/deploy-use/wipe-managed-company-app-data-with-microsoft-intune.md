@@ -1,29 +1,29 @@
 ---
-title: "Felügyelt vállalati alkalmazás adatainak törlése"
-description: "Ismerje meg a csak vállalati adatok eszközökről történő távoli eltávolításának módját."
-keywords: 
+title: Felügyelt vállalati alkalmazás adatainak törlése
+description: Ismerje meg a csak vállalati adatok eszközökről történő távoli eltávolításának módját.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7f89d79edcc52892e2988e4b2f152cb68d80070
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 8d946b551118441b737335f6bd8c4603a49e0dd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wipe-company-app-data-with-intune-mam"></a>Az Intune MAM-mal felügyelt vállalati alkalmazások adatainak törlése
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ha egy eszközt elveszítenek vagy ellopnak, vagy ha a dolgozó elhagyja a vállalatot, fontos eltávolítani a vállalati alkalmazásadatokat az eszközről. Előfordul, hogy a személyes adatokat meg kell őrizni, különösen, ha az eszköz a dolgozó saját tulajdona.
 
@@ -89,7 +89,7 @@ A felfüggesztett állapotú törlés addig lesz megjelenítve, míg manuálisan
 4.  Ha a rendszer törlési megerősítést kér, válassza az **Igen** vagy a **Nem** lehetőséget, majd kattintson az **OK** gombra.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Alkalmazásadatok védelme mobilalkalmazás-felügyeleti házirendekkel](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Az Azure-portál használata](azure-portal-for-microsoft-intune-mam-policies.md)

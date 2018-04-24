@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 273919a7f5a62ab6b7b625756da29d3b58339578
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f6e5955b690eedf06872171fcc22eb86a0f7764e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
 
@@ -118,13 +118,13 @@ Ezen a ponton lehetősége van:
 
     Ehhez tegye a következőket:
 
-    1. Az alkalmazás paneljén kattintson a **Jegyzékfájl** elemre, amely megnyitja a **Jegyzékfájl szerkesztése** panelt.
+  1. Az alkalmazás paneljén kattintson a **Jegyzékfájl** elemre, amely megnyitja a **Jegyzékfájl szerkesztése** panelt.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. Módosítsa az `availableToOtherTenants` beállítást `true` értékűre.
+  2. Módosítsa az `availableToOtherTenants` beállítást `true` értékűre.
 
-    3. Mentse a változtatásokat.
+  3. Mentse a változtatásokat.
 
 ## <a name="intune-permission-scopes"></a>Intune-engedélyhatókörök
 

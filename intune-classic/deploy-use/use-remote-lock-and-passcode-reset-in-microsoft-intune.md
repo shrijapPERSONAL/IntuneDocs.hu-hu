@@ -1,28 +1,28 @@
 ---
-title: "Zárolás és jelszó alaphelyzetbe állítása távolról"
-description: "Az Intune egyaránt nyújt távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló funkciókat."
-keywords: 
+title: Zárolás és jelszó alaphelyzetbe állítása távolról
+description: Az Intune egyaránt nyújt távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló funkciókat.
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb7014392655eef44f94cf095717616732ebfd0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fc1cad418904de335b434a3726e2772d0558b303
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Az adatok védelme távoli zárolással és jelszó alaphelyzetbe állításával
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune egyaránt biztosít távoli zárolásra és a jelszavak alaphelyzetbe állítására szolgáló képességeket.
 
@@ -41,7 +41,7 @@ Az alábbi táblázatban áttekintheti, hogy hogyan működik a távoli zárolá
 |Windows 10 (asztali verzió)|Nem támogatott|
 |Windows Phone 8 és Windows Phone 8.1|Támogatott|
 |Windows RT 8.1 és Windows RT|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
-|Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
+|Windows 8.1|Támogatott, ha az eszköz aktuális felhasználója megegyezik az eszközt beléptető felhasználóval.|
 
 Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogatják a távoli zárolást.
 
@@ -85,5 +85,5 @@ Az Intune szoftverügyfélben regisztrált Windows számítógépek nem támogat
 3.  A listában kattintson a zárolni kívánt eszközre vagy eszközökre. A tálcán kattintson a **Távoli feladatok** elemre, és válassza a **Jelszó alaphelyzetbe állítása** lehetőséget.
 
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Eszköz kivonása](retire-devices-from-microsoft-intune-management.md), illetve [a Windowsban elérhető, az eszközadatok felügyeletére szolgáló szelektív törlési funkció ismertetése](http://technet.microsoft.com/library/dn486874.aspx)

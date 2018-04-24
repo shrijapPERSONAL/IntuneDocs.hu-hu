@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 A rendszergazdák jogosultak közvetlenül felvenni az új felhasználókat, vagy szinkronizálni a felhasználókat a helyszíni Active Directoryból. Ha felvették a felhasználókat a szolgáltatásba, regisztrálhatják az eszközeiket, és elérhetik a vállalati erőforrásokat. További jogosultságokat is adhat a felhasználóknak, többek között *globális rendszergazdai* és *szolgáltatásadminisztrátori* engedélyeket.
 
@@ -35,16 +35,16 @@ Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office
 2. Az Office 365 menüjében válassza a **Rendszergazda** elemet.
 3. A Felügyeleti központban válassza a **Felhasználó hozzáadása** elemet.
 
-  ![Képernyőkép a Felhasználó hozzáadása szakaszról](media/office-add-user.png)
+   ![Képernyőkép a Felhasználó hozzáadása szakaszról](media/office-add-user.png)
 
 4. Adja meg a következő felhasználói adatokat:
-  - **Utónév**
-  - **Vezetéknév**
-  - **Megjelenítendő név**
-  - **Felhasználói név** – A szolgáltatás eléréséhez használt és az Azure Active Directoryban tárolt egyszerű felhasználónév (UPN)
-  - **Hely**
-  - **Kapcsolattartási adatok** (nem kötelező)
-  - **Jelszó** –automatikus létrehozás vagy adja meg
+   - **Utónév**
+   - **Vezetéknév**
+   - **Megjelenítendő név**
+   - **Felhasználói név** – A szolgáltatás eléréséhez használt és az Azure Active Directoryban tárolt egyszerű felhasználónév (UPN)
+   - **Hely**
+   - **Kapcsolattartási adatok** (nem kötelező)
+   - **Jelszó** –automatikus létrehozás vagy adja meg
 
      ![Képernyőkép az új felhasználó szakaszról](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ Az Intune-előfizetéshez manuálisan is hozzáadhat felhasználókat az [Office
 1. Jelentkezzen be az [Azure Portalra](https://portal.azure.com), majd lépjen a **Minden szolgáltatás** > **Monitoring + Management** > **Intune** elemre. *Kereshet erőforrásokat* is az **Intune-hoz**.
 2. Válassza a **Felhasználók** > **Minden felhasználó** lehetőséget.
 3. A Felügyeleti központban válassza az **Új felhasználó** elemet.
-  ![Képernyőkép az Új felhasználó hozzáadása elemről](media/intune-add-user.png)
+   ![Képernyőkép az Új felhasználó hozzáadása elemről](media/intune-add-user.png)
 4. Adja meg a következő felhasználói adatokat:
-  - **Név**
-  - **Felhasználónév** – Az új név az Azure Active Directory portálon ![Képernyőkép a név és a felhasználónév hozzáadásáról](media/intune-add-user-info.png) Válassza az **OK** gombot a folytatáshoz.
+   - **Név**
+   - **Felhasználónév** – Az új név az Azure Active Directory portálon ![Képernyőkép a név és a felhasználónév hozzáadásáról](media/intune-add-user-info.png) Válassza az **OK** gombot a folytatáshoz.
 5. Szükség esetén a következő felhasználói tulajdonságokat is megadhatja:
-  - **Profil** – Munkahelyi adatok, többek között a **Beosztás megnevezése** és a **Részleg**
-  -  **Csoportok** – Válasszon a felhasználó által felehető csoportokat
-  - **Címtár szerepkör** – Rendszergazdai jogosultságok adása a felhasználónak (többek között szolgáltatásadminisztrátor szerepkör az Intune-hoz).
+   - **Profil** – Munkahelyi adatok, többek között a **Beosztás megnevezése** és a **Részleg**
+   -  **Csoportok** – Válasszon a felhasználó által felehető csoportokat
+   - **Címtár szerepkör** – Rendszergazdai jogosultságok adása a felhasználónak (többek között szolgáltatásadminisztrátor szerepkör az Intune-hoz).
 
-  Az új felhasználó Intune-hoz adásához válassza a **Létrehozás** gombot.
+   Az új felhasználó Intune-hoz adásához válassza a **Létrehozás** gombot.
 6. Válassza a **Profil** lehetőséget, majd válasszon egy **Felhasználási helyet** az új felhasználónak. A felhasználási hely megadása szükséges, mielőtt az új felhasználóhoz hozzárendelhetne egy Intune-licencet. A folytatáshoz válassza a **Mentés** gombot.
     ![A felhasználási hely képernyőképe](media/intune-add-user-loc.png)
 7. Intune-licenc felhasználóhoz rendeléséhez válassza a **Licencek** lehetőséget, majd a **Hozzárendelés** elemet. Az eszközök regisztrálásához és a vállalati erőforrások eléréséhez Intune-licenc szükséges. Válassza a **Termékek** lehetőséget, válassza ki a licenctípust, aztán a **Kiválasztás** lehetőséget, majd a **Hozzárendelés** elemet.
@@ -112,7 +112,7 @@ Az Office 365-portál eléréséhez a fióknak **Bejelentkezés engedélyezve** 
 A címtár-szinkronizálás konfigurálásával importálhatja a helyi Active Directoryban lévő felhasználói fiókokat a Microsoft Azure Active Directory (Azure AD) szolgáltatásba (ide tartoznak az Intune-felhasználók is). A helyi Active Directory szolgáltatás Azure Active Directory-alapú szolgáltatásokkal való összekapcsolásával jóval egyszerűbbé válik az identitásfelügyelet. Az egyszeri bejelentkezési funkciók konfigurálásával ismerőssé és könnyebbé teheti a felhasználók számára a hitelesítést. Ha egy [Azure AD-bérlőt](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) egyszerre több szolgáltatáshoz is társít, a korábban már szinkronizált felhasználói fiókok is elérhetővé válnak az összes felhőalapú szolgáltatásban.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Helyi felhasználók szinkronizálása az Azure AD szolgáltatással
-A felhasználói fiókoknak az Azure AD-val való szinkronizálásához kizárólag az [Azure AD Connect varázslóra](https://www.microsoft.com/download/details.aspx?id=47594) van szüksége. Az Azure AD Connect varázsló egyszerűsített és irányított kezelőfelülettel segíti a helyszíni identitási infrastruktúrának a felhőhöz történő csatlakoztatását.  Válassza ki a topológiát és a vonatkozó igényeket (egyetlen vagy több címtár, jelszavak szinkronizálása vagy összevonás). A varázsló telepíti és konfigurálja a kapcsolat működéséhez szükséges az összes összetevőt. Ilyen összetevők többek között: a szinkronizálási szolgáltatások, az Active Directory összevonási szolgáltatások (AD FS) és az Azure AD PowerShell modul.
+A felhasználói fiókoknak az Azure AD-val való szinkronizálásához kizárólag az [Azure AD Connect varázslóra](https://www.microsoft.com/download/details.aspx?id=47594) van szüksége. Az Azure AD Connect varázsló egyszerűsített és irányított kezelőfelülettel segíti a helyszíni identitási infrastruktúrának a felhőhöz történő csatlakoztatását. Válassza ki a topológiát és a vonatkozó igényeket (egyetlen vagy több címtár, jelszókivonatok szinkronizálása, átmenő hitelesítés vagy összevonás). A varázsló telepíti és konfigurálja a kapcsolat működéséhez szükséges az összes összetevőt. Ilyen összetevők többek között: a szinkronizálási szolgáltatások, az Active Directory összevonási szolgáltatások (AD FS) és az Azure AD PowerShell modul.
 
 > [!TIP]
 > Az Azure AD Connect a korábban Dirsync és Azure AD Sync néven kibocsátott eszközök valamennyi funkcióját tartalmazza. További tájékoztatás a [Címtár-integrációra](http://technet.microsoft.com/library/jj573653.aspx) vonatkozóan. További tudnivalók a helyi címtárban lévő felhasználói fiókok Azure AD-vel való szinkronizálásáról: [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx) (Az Active Directory és az Azure AD közötti hasonlóságok).

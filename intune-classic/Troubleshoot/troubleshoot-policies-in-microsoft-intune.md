@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9d9fa95e7992488e8c25e713136be17bcd1580bf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Szabályzatokkal kapcsolatos problémák elhárítása a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ha problémába ütközik az Intune-szabályzatok érvénybe léptetése vagy kezelése során, kezdje itt. Ez a témakör néhány gyakori problémát és azok megoldását ismerteti.
 
@@ -34,11 +34,11 @@ Ha problémába ütközik az Intune-szabályzatok érvénybe léptetése vagy ke
 
 Az Intune felügyeleti konzoljában az **Eszköztulajdonságok**csoportban minden eszközhöz tartozik egy szabályzatlap. Minden egyes házirend rendelkezik egy **Kívánt érték** és egy **Állapot**jellemzővel. A kívánt érték az az érték, amelyet a házirend hozzárendelésekor el kívánt érni. Az állapot az eszközre érvényes összes házirend alkalmazása, valamint a hardver és az operációs rendszer által szabott korlátozások és rendszerkövetelmények együttese alapján elért érték. A lehetséges állapotok az alábbiak:
 
--   **Megfelelő:**Az eszköz megkapta a szabályzatot, és jelenti a szolgáltatásnak, hogy megfelel a beállításnak.
+-   **Megfelelő:** Az eszköz megkapta a szabályzatot, és jelenti a szolgáltatásnak, hogy megfelel a beállításnak.
 
--   **Nem alkalmazható:**A szabályzatbeállítás nem alkalmazható. Az iOS-eszközök e-mail beállításai például nem alkalmazhatók az androidos eszközökre.
+-   **Nem alkalmazható:** A szabályzatbeállítás nem alkalmazható. Az iOS-eszközök e-mail beállításai például nem alkalmazhatók az androidos eszközökre.
 
--   **Folyamatban:**A rendszer elküldte a szabályzatot az eszköznek, de az nem jelentette az állapotot a szolgáltatásnak. Például az Android rendszeren csak akkor működik a titkosítás, ha a felhasználó engedélyezi, ezért függőben lehet.
+-   **Folyamatban:** A rendszer elküldte a szabályzatot az eszköznek, de az nem jelentette az állapotot a szolgáltatásnak. Például az Android rendszeren csak akkor működik a titkosítás, ha a felhasználó engedélyezi, ezért függőben lehet.
 
 Az alábbi képernyőképen két világos példa látható:
 
@@ -55,7 +55,7 @@ Az alábbi képernyőképen két világos példa látható:
 ## <a name="issues-with-enrolled-devices"></a>A regisztrált eszközök problémái
 
 ### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Figyelmeztetés: A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen
-**Probléma:**A felügyeleti konzolban megjelenik **A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen**  figyelmeztetés.
+**Probléma:** A felügyeleti konzolban megjelenik **A hozzáférési szabályok mentése az Exchange szolgáltatásba sikertelen**  figyelmeztetés.
 
 Ha a felügyeleti konzol Helyszíni Exchange-szabályzat munkaterületén szabályzatot hozott létre, de O365-öt használ, az Intune nem kényszeríti ki a konfigurált szabályzatbeállítások használatát. Jegyezze fel a figyelmeztetésben szereplő szabályzatforrást.  A Helyszíni Exchange-szabályzat munkaterületen törölje az örökölt szabályokat, mivel azok a helyszíni Exchange-hez készült Intune-on belüli globális Exchange-szabályok, és nem vonatkoznak az O365-re. Ezután hozzon létre új szabályzatot az O365-höz.
 

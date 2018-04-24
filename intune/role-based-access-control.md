@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -26,7 +26,7 @@ Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat
 
 - **Szerepkör-definíció**: a szerepkör neve, a szerepkör által kezelt erőforrások és az egyes erőforrásokhoz rendelt engedélyek.
 - **Tagok**: Az engedélyekkel rendelkező felhasználói csoportok.
-- **Hatókör**: Azon felhasználói vagy eszközcsoportok, amelyeket a tagok kezelhetnek.
+- **Hatókör**: Azok a felhasználói vagy eszközcsoportok, amelyeken a tagok alkalmazások vagy szabályzatok üzembe helyezését végezhetik, vagy távoli műveleteket hajthatnak végre.
 - **Feladat**: A definíció, a tagok és a hatókör konfigurálása után feladat rendelhető a szerepkörköz.
 
 ![Példa az Intune-beli RBAC felépítésére](./media/intune-rbac-1.PNG)

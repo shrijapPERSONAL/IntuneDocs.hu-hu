@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Hogyan fogják megtapasztalni a felhasználók az alapszintű védelmet a Microsoft Intune-beli felügyelt Office 365-alkalmazásokban
 
@@ -50,13 +50,13 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 2. Írja be a munkahelyi fiókja felhasználónevét. Ekkor megnyílik az Office 365 hitelesítési lapja, ahol megadhatja a munkahelyi hitelesítő adatait. 
 3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, érvénybe lépnek az alkalmazásvédelmi szabályzatok, és a rendszer arra kéri, hogy indítsa újra a OneDrive Vállalati verziót. 
 
-  > [!NOTE]
-  > Az Újraindítás szükséges üzenet csak az Intune-ban nem regisztrált eszközökön jelenik meg.
+   > [!NOTE]
+   > Az Újraindítás szükséges üzenet csak az Intune-ban nem regisztrált eszközökön jelenik meg.
 
 4. Indítsa újra a OneDrive Vállalati verziót. Az alkalmazás engedélyezett alkalmazásvédelmi szabályzatokkal indul el, és az eszköz PIN-kód megadását kéri (ha nincs még konfigurálva az eszköz PIN-kódja).  
 
-  > [!NOTE]
-  > A felhasználók többsége számára nem jelenik meg ez a kérdés. Ezt a kérdést csak azok a felhasználóknak fog megjelenni, akik még nem engedélyezték az iOS-eszközön a PIN-kódot.
+   > [!NOTE]
+   > A felhasználók többsége számára nem jelenik meg ez a kérdés. Ezt a kérdést csak azok a felhasználóknak fog megjelenni, akik még nem engedélyezték az iOS-eszközön a PIN-kódot.
 
 5. Miután beállította és megerősítette a PIN-kódot, térjen vissza a OneDrive Vállalati verzió alkalmazáshoz. Ekkor egyszeri értesítés tájékoztatja a felhasználót arról, hogy a rendszergazda már védi a munkahelyi adatokat a OneDrive-on. 
 6. A OneDrive Vállalati verzióban tárolt fájljainak eléréséhez kattintással lépjen tovább az értesítésről. 
@@ -70,8 +70,8 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 2. Írja be a munkahelyi fiókja felhasználónevét. Ekkor megnyílik az Office 365 hitelesítési lapja, ahol megadhatja a munkahelyi hitelesítő adatait. <br/> ![O365-bejelentkezési lap képe Androidon](./media/o365-sign-in-android.png)
 3. Miután az Azure Active Directoryban sikeresen megtörtént az adatok hitelesítése, megjelenik egy üzenet, amely tartalmazza a Céges portál alkalmazás telepítésére vonatkozó utasításokat, ha az még nincs telepítve az eszközön. Koppintson a **Ugrás az Áruházba** elemre a folytatáshoz. <br/> ![A Céges portál alkalmazás beszerzésére kérő üzenet képe](./media/get-company-portal-android.png) <br/>Ha a Céges portál alkalmazás már telepítve van a telefonján, a OneDrive Vállalati verzió alkalmazás automatikusan elindul, és a befejező megjegyzésre ugorhat.   
 
-  > [!IMPORTANT]
-  > Androidon, miután beállította az Office-alkalmazások alkalmazásvédelmi szabályzat általi kezelését, az eszköz felhasználójának telepítenie **kell** a Céges portál alkalmazást annak ellenére, hogy a végfelhasználónak nem kell megnyitnia azt, és nem kell bejelentkeznie az alkalmazásba az e-mailek vagy dokumentumok elolvasásához.
+   > [!IMPORTANT]
+   > Androidon, miután beállította az Office-alkalmazások alkalmazásvédelmi szabályzat általi kezelését, az eszköz felhasználójának telepítenie **kell** a Céges portál alkalmazást annak ellenére, hogy a végfelhasználónak nem kell megnyitnia azt, és nem kell bejelentkeznie az alkalmazásba az e-mailek vagy dokumentumok elolvasásához.
 
 4. Ekkor megnyílik a Google Play áruház, ahonnan letöltheti és telepítheti a Céges portál alkalmazást. Az alkalmazás segít az adatok védelmében és biztonságuk megőrzésében. <br/> ![Az alkalmazás képe a Google Play áruházban](./media/google-play-get-app-android.png)
 5. Az alkalmazás telepítésének befejezése után az **Elfogadás** gombra kattintva fogadja el a használati feltételeket. A OneDrive Vállalati verzió ekkor automatikusan elindul.
@@ -86,6 +86,7 @@ Ebben a cikkben a OneDrive Vállalati verzióval mutatjuk be a felhasználói é
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>Milyen szabályzatokat nem állít be a varázsló?
+
 |     |       | |
 |----|--------|-|
 |**Név**|Office 365-alkalmazások kezelése| |

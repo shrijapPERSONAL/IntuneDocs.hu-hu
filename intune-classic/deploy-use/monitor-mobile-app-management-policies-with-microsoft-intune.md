@@ -1,25 +1,25 @@
 ---
-title: "MAM-szabályzatok figyelése a Microsoft Intune-nal"
-description: "Megtudhatja, hány felhasználóra érvényes a szabályzat, és lefúrással megjelenítheti a részleteket."
-keywords: 
+title: MAM-szabályzatok figyelése a Microsoft Intune-nal
+description: Megtudhatja, hány felhasználóra érvényes a szabályzat, és lefúrással megjelenítheti a részleteket.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b25c2ebe6fa8edf7ce954f68c22d4086fcaf7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok figyelése a Microsoft Intune-ban
 Figyelheti a felhasználókra vonatkozó alkalmazásvédelmi szabályzatok megfelelőségi állapotát. Itt információkat találhat az alkalmazásvédelmi szabályzatok által érintett felhasználókról, azok megfelelőségi állapotáról, valamint a felhasználók által esetlegesen tapasztalt problémákról.
@@ -131,7 +131,7 @@ Az alkalmazásvédelmi jelentés létrehozásához kövesse az alábbi lépések
 
     ![Képernyőkép-7](../media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>További információ
+## <a name="see-also"></a>Lásd még:
 [iOS-alkalmazások közti adatátvitel kezelése](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Milyen hatással vannak az androidos alkalmazásokra az alkalmazásvédelmi szabályzatok?](/intune/end-user-mam-apps-android)

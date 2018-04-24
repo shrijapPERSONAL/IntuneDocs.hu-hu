@@ -1,29 +1,29 @@
 ---
-title: "Az eszközmegfelelőség figyelése"
+title: Az eszközmegfelelőség figyelése
 titlesuffix: Microsoft Intune
-description: "A cikk az eszközmegfelelőség figyelését ismerteti.”"
-keywords: 
+description: A cikk az eszközmegfelelőség figyelését ismerteti.”
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b363e074b1b0652a81d56c68e28cf11220adfa56
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Az eszközmegfelelőség figyelése az Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A **megfelelőségi profilok** állapotának összegzését az **Áttekintés** panelen tekintheti meg.
 A diagramokon keresztüli interaktív átkattintással feltárhatja a részleteket. Ha több megfelelőségi profil is konfigurálva van, a szabályzatállapotot a szabályzat panelen, a **Kezelés** > **Jelentések** területen érheti el.

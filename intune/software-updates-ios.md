@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Az iOS-frissítési szabályzatok konfigurálása a Microsoft Intune-ban
 
@@ -55,3 +55,4 @@ Ezzel érvénybe léptette a szabályzatot a felhasználók vagy az eszközök s
 ## <a name="monitor-ios-device-installation-failures"></a>IOS-eszközök telepítési hibáinak figyelése
 <!-- 1352223 -->
 Az **iOS-eszközök telepítési hibái** jelentést a **Szoftverfrissítések** ablaktáblán lehet elérni. A jelentésben megtekintheti azoknak a felügyelt iOS-eszközöknek a listáját, amelyekre iOS-frissítési szabályzat vonatkozik, frissítéssel próbálkoztak, és nem lehetett frissíteni őket. Minden eszköz mellett látható lesz egy állapotleírás is, amelyből kiderül, hogy az adott eszköz miért nem frissült automatikusan. A kifogástalan, naprakész eszközök nem jelennek meg a listában. Naprakésznek számít az a legújabb frissítés, amelyet maga az eszköz támogatni képes.
+

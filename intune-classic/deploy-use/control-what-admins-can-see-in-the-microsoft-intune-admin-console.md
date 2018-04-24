@@ -15,58 +15,58 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9baa0325a90e152ffd6cf6a31cdd0a458588758a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: bdc248689f586a44f4c84568b9d9f9c1fa3e059a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Az Intune-konzolnézetek testre szabása a rendszergazdai szerepköröknek megfelelően
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune rendszergazdai konzolnézeteinek szűrésével lehetősége van arra, hogy a rendszergazdáknak csak azokat az elemeket jelenítse meg, amelyeket az adott szerepkör esetén látniuk kell. Engedélyezheti például, hogy kizárólag a felügyeleti konzol operátorai frissíthessék a kártevő szoftverek meghatározásait vagy állíthassák alaphelyzetbe az eszközök jelszavait. Ezt úgy hajthatja végre, ha előre definiált **megjelöléseket** használ, amelyeket az adott felhasználókhoz rendel. A felügyeleti konzol használatakor e felhasználók kizárólag a megjelölésüknek megfelelő elemeket fogják látni.
 
 ## <a name="to-create-a-custom-view"></a>Egyéni nézet létrehozása
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Szolgáltatás-rendszergazdák** elemet.
+1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) válassza a **Felügyelet** &gt; **Szolgáltatás-rendszergazdák** elemet.
 
-2.  A szolgáltatás-rendszergazdák listájából válassza ki azt a felhasználót, akinek megjelölését módosítani kívánja, majd válassza a **Hozzáférés kezelése** lehetőséget.
+2. A szolgáltatás-rendszergazdák listájából válassza ki azt a felhasználót, akinek megjelölését módosítani kívánja, majd válassza a **Hozzáférés kezelése** lehetőséget.
 
-3.  A **Hozzáférés kezelése** párbeszédpanelen válassza ki azt a hozzáférési szintet, amelyet a kiválasztott felhasználóhoz kíván rendelni. A következő lehetőségek közül választhat:
+3. A **Hozzáférés kezelése** párbeszédpanelen válassza ki azt a hozzáférési szintet, amelyet a kiválasztott felhasználóhoz kíván rendelni. A következő lehetőségek közül választhat:
 
-    -   **Teljes hozzáférés**
-    -   **Csak olvasási hozzáférés**
-    -   **Segélyszolgálat – Csoportok csomópont**
+   -   **Teljes hozzáférés**
+   -   **Csak olvasási hozzáférés**
+   -   **Segélyszolgálat – Csoportok csomópont**
 
-    A teljes hozzáférés és a csak olvasási hozzáférés jelentése magától értetődő. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
+   A teljes hozzáférés és a csak olvasási hozzáférés jelentése magától értetődő. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
-    A **Segélyszolgálat – Csoportok csomópont** hozzáférési szint korlátozza, hogy a rendszergazda mit láthat és mit tehet meg az alábbiak közül:
+   A **Segélyszolgálat – Csoportok csomópont** hozzáférési szint korlátozza, hogy a rendszergazda mit láthat és mit tehet meg az alábbiak közül:
 
-    -   Láthatja a felhasználók és az eszközök listáját. A rendszergazda nem használhat szűrőket a nézet módosításához. Ön azonban csoportszűréssel módosíthatja a rendszergazdai nézeteket. További információkért lásd: [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+   -   Láthatja a felhasználók és az eszközök listáját. A rendszergazda nem használhat szűrőket a nézet módosításához. Ön azonban csoportszűréssel módosíthatja a rendszergazdai nézeteket. További információkért lásd: [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-    -   Kinyomtathatja a felhasználók és az eszközök listáját
+   -   Kinyomtathatja a felhasználók és az eszközök listáját
 
-    -   Exportálja a felhasználók és az eszközök listáját
+   -   Exportálja a felhasználók és az eszközök listáját
 
-    -   Megtekintheti egy felhasználó vagy egy eszköz tulajdonságait
+   -   Megtekintheti egy felhasználó vagy egy eszköz tulajdonságait
 
-    -   Hajtsa végre a következő távoli feladatokat:
+   -   Hajtsa végre a következő távoli feladatokat:
 
-        -   Teljes kártevő-ellenőrzés futtatása
+       -   Teljes kártevő-ellenőrzés futtatása
 
-        -   Gyors kártevő-ellenőrzés futtatása
+       -   Gyors kártevő-ellenőrzés futtatása
 
-        -   A számítógép újraindítása
+       -   A számítógép újraindítása
 
-        -   Kártevő-definíciók frissítése
+       -   Kártevő-definíciók frissítése
 
-        -   A házirendek frissítése
+       -   A házirendek frissítése
 
-        -   A leltár frissítése
+       -   A leltár frissítése
 
-        -   Eszköz távoli zárolása
+       -   Eszköz távoli zárolása
 
-        -   Új PIN-kód kérése
+       -   Új PIN-kód kérése
 
 Amikor az így beállított rendszergazda legközelebb megnyitja az Intune felügyeleti konzolt, az Ön által megadott hozzáférési szintet kapja meg.

@@ -5,12 +5,12 @@
   - Mac OS X 10.9 és újabb verziók
 
 ### <a name="windows"></a>Windows
-  - Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
-  - Windows 10 mobil verzió
-  - Windows 10 IoT Enterprise rendszerű eszközök (x86, x64)
-  - Windows 10 IoT Enterprise Mobile rendszerű eszközök
-  - Windows Holographic &amp; Windows Holographic Enterprise
-  - Windows Phone 8.1, Windows 8.1 RT és Windows 8.1-et futtató PC-k (fenntartási módban)
+- Windows 10 (Home, Pro, Education és Enterprise) operációs rendszerű számítógépek
+- Windows 10 mobil verzió
+- Windows 10 IoT Enterprise rendszerű eszközök (x86, x64)
+- Windows 10 IoT Enterprise Mobile rendszerű eszközök
+- Windows Holographic &amp; Windows Holographic Enterprise
+- Windows Phone 8.1, Windows 8.1 RT és Windows 8.1-et futtató PC-k (fenntartási módban)
 
   Az Enterprise Mobility + Security (EMS) csomaggal rendelkező ügyfelek az [Azure Active Directory (AAD) használatával is regisztrálhatják Windows 10 rendszerű eszközeiket](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 

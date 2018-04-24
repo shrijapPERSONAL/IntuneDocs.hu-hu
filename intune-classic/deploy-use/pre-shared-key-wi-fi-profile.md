@@ -1,43 +1,43 @@
 ---
-title: "Előre megosztott kulcsot használó Wi-Fi"
-description: "Wi-Fi-profil létrehozása előmegosztott kulccsal az Egyéni konfiguráció funkció segítségével."
-keywords: 
+title: Előre megosztott kulcsot használó Wi-Fi
+description: Wi-Fi-profil létrehozása előmegosztott kulccsal az Egyéni konfiguráció funkció segítségével.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Előmegosztott kulcsú Wi-Fi-profil létrehozása egyéni szabályzattal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ebből a cikkből megtudhatja, hogyan hozhat létre Wi-Fi profilt előmegosztott kulccsal az Intune **Egyéni konfiguráció** funkciója segítségével. A témakörben szereplő példa pedig elmagyarázza, hogyan hozzon létre EAP-alapú Wi-Fi-profilt.
 
 > [!NOTE]
--   Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
-- Android-rendszerek esetén használhatja a Johnathon Biersack által biztosított [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) programot is.
--   További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
--  iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Alternatív megoldásként használja a Johnathon Biersack által biztosított [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) programot.
+> -   Előfordulhat, hogy egyszerűbb másolni a kódot egy olyan számítógépről, amely már csatlakozik a kívánt hálózathoz. Ennek leírását lásd alább.
+> - Android-rendszerek esetén használhatja a Johnathon Biersack által biztosított [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) programot is.
+> -   További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
+> -  iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Alternatív megoldásként használja a Johnathon Biersack által biztosított [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) programot.
 
 
-1.  Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
+1. Ha Android- vagy Windows-rendszerre hoz létre előmegosztott kulcsos Wi-Fi-profilt, illetve EAP-alapú Wi-Fi-profilt, akkor a házirend létrehozásakor ne valamelyik Wi-Fi-profilt válassza, hanem az eszköz platformjának megfelelő **Egyéni konfiguráció** lehetőséget.
 
-2.  Adjon meg egy nevet és egy leírást.
-3.  Adjon hozzá egy OMA-URI beállítást:
+2. Adjon meg egy nevet és egy leírást.
+3. Adjon hozzá egy OMA-URI beállítást:
 
    a.   Adjon nevet a Wi-Fi-hálózat ezen beállításának.
 
@@ -47,15 +47,15 @@ Ebből a cikkből megtudhatja, hogyan hozhat létre Wi-Fi profilt előmegosztott
 
    d.   **OMA-URI**:
 
-    - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Ne hagyja ki a karaktersor elején található pontot.
+   > [!NOTE]
+   > Ne hagyja ki a karaktersor elején található pontot.
 
-    Az SSID az az SSID, amelyhez létrehozza a házirendet. Például: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   Az SSID az az SSID, amelyhez létrehozza a házirendet. Például: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **Érték mező**: ide illessze be az XML-kódot. Íme egy példa. Az értékeket saját hálózati beállításainak megfelelően adja meg. Útmutatásért tekintse át a kód megjegyzéseket tartalmazó részét.
+   e. **Érték mező**: ide illessze be az XML-kódot. Íme egy példa. Az értékeket saját hálózati beállításainak megfelelően adja meg. Útmutatásért tekintse át a kód megjegyzéseket tartalmazó részét.
 4. Mentéshez válassza az **OK** lehetőséget, majd telepítse a házirendet.
 
     > [!NOTE]
@@ -202,8 +202,8 @@ Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
 1. Nyissa meg a következő mappát egy olyan számítógépen, amely kapcsolódik a kívánt vezeték nélküli hálózathoz, vagy a közelmúltban kapcsolódott hozzá: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
     Érdemes olyan számítógépet választani, amely még nem kapcsolódott túl sok vezeték nélküli hálózathoz, mivel az összes profilt át kell néznie, hogy megtalálja a megfelelőt.
-3.     Keresse meg a kívánt nevű XML-fájlt.
-4.     Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal Adat mezőjébe.
+2. Keresse meg a kívánt nevű XML-fájlt.
+3. Miután megtalálta a megfelelő XML-fájlt, másolja, majd illessze be az XML-kódot az OMA-URI-beállítások oldal Adat mezőjébe.
 
 ## <a name="deploy-the-policy"></a>A szabályzat telepítése
 
@@ -217,5 +217,5 @@ Az XML-fájlt meglévő Wi-Fi kapcsolat alapján is létrehozhatja:
 
 Ha egy már telepített házirendet választ ki, a házirendlista alsó részén további információkat láthat róla.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Wi-Fi-kapcsolatok a Microsoft Intune-ban](wi-fi-connections-in-microsoft-intune.md)

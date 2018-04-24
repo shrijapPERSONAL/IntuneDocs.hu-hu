@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok létrehozása és telepítése a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör azt a folyamatot ismerteti, amellyel az **Azure Portalon** hozható létre alkalmazásvédelmi szabályzat. Az alkalmazásvédelmi szabályzatok létrehozására szolgáló új felügyeleti konzol az Azure Portal. Azt javasoljuk, hogy a továbbiakban ezen a portálon hozza létre az alkalmazásvédelmi szabályzatokat. Az Azure-portál a következő MAM-forgatókönyveket teszi lehetővé:
 
@@ -31,23 +31,23 @@ Ez a témakör azt a folyamatot ismerteti, amellyel az **Azure Portalon** hozhat
 - Külső MDM-megoldás által kezelt eszközök
 - MDM-megoldással (BYOD) nem kezelt eszközök
 
->[!IMPORTANT]
-Ha jelenleg az **Intune felügyeleti konzolt** használja eszközei kezeléséhez, vegye figyelembe az alábbiakat:
-
+> [!IMPORTANT]
+> Ha jelenleg az **Intune felügyeleti konzolt** használja eszközei kezeléséhez, vegye figyelembe az alábbiakat:
+> 
 > * Az [Intune felügyeleti konzollal](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) létrehozhat olyan alkalmazásvédelmi szabályzatot, amely az Intune-ban regisztrált eszközökön futó alkalmazásokat támogatja.
 > * Az Intune felügyeleti konzolon létrehozott alkalmazásvédelmi szabályzatokat nem lehet importálni az Azure Portalra.  Újra létre kell hozni az alkalmazásvédelmi szabályzatokat az Azure Portalon.
-
+> 
 > * Előfordulhat, hogy az Intune felügyeleti konzolon nem látja az alkalmazásvédelmi szabályzatok minden beállítását. Az Azure Portal az alkalmazásvédelmi szabályzatok létrehozására szolgáló új felügyeleti konzol.
-
+> 
 > * Felügyelt alkalmazások telepítéséhez létre kell hoznia egy alkalmazásvédelmi szabályzatot az Intune felügyeleti konzolon. Ebben az esetben érdemes lehet mind az Intune felügyeleti konzolon, mind az Azure Portalon létrehozni alkalmazásvédelmi szabályzatokat. Az Intune felügyeleti konzol szabályzataival gondoskodhat róla, hogy tudja telepíteni a felügyelt alkalmazást, az Azure Portal pedig az új felügyeleti konzol, ahol az alkalmazásvédelmi szabályzatok minden beállítását megadhatja.
-
+> 
 > * Ha az Intune felügyeleti konzolon és az Azure Portalon is létrehoz alkalmazásvédelmi szabályzatokat, a rendszer az Azure Portalon létrehozott szabályzatot érvényesíti az alkalmazásokra.
 
 Az Android és az iOS platformokon támogatott szabályzatbeállítások listájának megtekintéséhez válasszon a következő lehetőségek közül:
 
 > [!div class="op_single_selector"]
-- [iOS-szabályzatok](ios-mam-policy-settings.md)
-- [Android-szabályzatok](android-mam-policy-settings.md)
+> - [iOS-szabályzatok](ios-mam-policy-settings.md)
+> - [Android-szabályzatok](android-mam-policy-settings.md)
 
 - Az alkalmazásvédelmi szabályzatok működését és az Intune alkalmazásvédelmi szabályzataival kezelhető típushelyzeteket [az alkalmazások adatainak az alkalmazásvédelmi szabályzatokkal való védelmét ismertető cikk](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) mutatja be részletesen.
 
@@ -129,13 +129,13 @@ Az Intune 1703-as verziójától kezdve az új alkalmazásvédelmi szabályzatok
 > [!IMPORTANT]
 > Új alkalmazásvédelmi szabályzat létrehozásakor válassza a Windows 10 értéket a platformok listájából.
 
-1.  A Házirend hozzáadása panelen az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** lehetőséget választva nyissa meg az Engedélyezett vagy a Mentesített alkalmazások panelt.
+1. A Házirend hozzáadása panelen az **Engedélyezett alkalmazások** vagy a **Mentesített alkalmazások** lehetőséget választva nyissa meg az Engedélyezett vagy a Mentesített alkalmazások panelt.
 
-    > [!NOTE]
-    >
-    - **Engedélyezett alkalmazások:** ezeknek be kell tartaniuk az adott szabályzatot.
-    - **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a vállalati adatokhoz.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Engedélyezett alkalmazások:** ezeknek be kell tartaniuk az adott szabályzatot.
+   > - **Mentesített alkalmazások:** ezek mentesülnek az adott szabályzat alól, és korlátozás nélkül hozzáférnek a vállalati adatokhoz.
+   > <br></br>
 2. Az Engedélyezett vagy a Mentesített alkalmazások panelen válassza az **Alkalmazások felvétele** lehetőséget. Felveheti a Microsoft ajánlott alkalmazásait, áruházbeli és asztali alkalmazásokat.
 
     a.  **Ajánlott alkalmazások:** a szabályzatba egyszerűen importálható (leginkább Office-) alkalmazásokból előre összeállított lista.
@@ -210,8 +210,8 @@ A változtatások hatásának megfigyeléséhez a felhasználónak ki kell jelen
 Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintéséhez válasszon a következő lehetőségek közül:
 
 > [!div class="op_single_selector"]
-- [iOS-szabályzatok](ios-mam-policy-settings.md)
-- [Android-szabályzatok](android-mam-policy-settings.md)
+> - [iOS-szabályzatok](ios-mam-policy-settings.md)
+> - [Android-szabályzatok](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>További lépések
 [A megfelelőség és a felhasználói állapot figyelése](monitor-mobile-app-management-policies-with-microsoft-intune.md)

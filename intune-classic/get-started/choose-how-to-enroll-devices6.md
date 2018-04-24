@@ -14,26 +14,26 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fd09126b8226828ccb60f30e0daa6135643303e2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b730aae4e3e8f576824ac61811018293cc07e080
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>A mobileszközök regisztrálásának módjai
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs módszer a legmegfelelőbb az Ön által felügyelt eszközök számára.
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Hogyan kezelheti a dedikált, vállalati tulajdonú eszközöket?**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[iOS beállítási asszisztens >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Megjelölés IMEI-számokkal >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [iOS beállítási asszisztens >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [Megjelölés IMEI-számokkal >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   A vállalati eszközök az alábbi módokon regisztrálhatók dedikált felhasználókkal:
 
@@ -44,4 +44,4 @@ A kérdésekre adott válaszai segítenek eldönteni, hogy mely regisztrációs 
   - **Megjelölés IMEI-számmal** - A vállalati eszközök nemzetközi mobilkészülék-azonosító számainak (IMEI) importálásával azokat vállalati eszközökként jelölheti meg az Intune-ban. Ez az egyetlen módszer a dedikált („egyfelhasználós”) Windows és Android rendszerű eszközök vállalati tulajdonúként való azonosításához. Azok az iOS rendszerű eszközök, amelyeket nem regisztrálnak az Apple eszközregisztrációs programjában vagy az Apple Configurator eszközben, ugyancsak címkézhetők IMEI számmal. Az eszközök „vállalati tulajdonúként” való előzetes deklarálásukat követően terjeszthetők a felhasználóknak. A felhasználók ezután dedikált eszközként regisztrálhatják az eszközeiket a Vállalati portál telepítésével, így hozzáférhetnek az olyan vállalati erőforrásokhoz, mint a levelezés, a vállalati alkalmazások és az adatok.
 
 > [!div class="button"]
-[< Vissza](choose-how-to-enroll-devices3.md)
+> [< Vissza](choose-how-to-enroll-devices3.md)

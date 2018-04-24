@@ -12,15 +12,15 @@ ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ac83eb71b04e034023d008fa4cdbb960f2c4bedb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Az Android for Work-eszközök felügyelete az Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Android for Work azon, Android-eszközökhöz készült funkciók és szolgáltatások együttese, amelyek elkülönítik a személyes alkalmazásokat és adatokat a munkahelyi alkalmazásokat és adatokat tartalmazó munkahelyi profiltól. Az Android for Work további felügyeleti lehetőségeket és adatvédelmet biztosít, amikor a felhasználók Android-eszközt használnak munkavégzésre. Az Intune-nal úgy telepítheti az alkalmazásokat és a vállalati erőforrásokat az Android for Work-eszközökre, hogy elkülöníti egymástól a munkához kapcsolódó és a személyes adatokat. A sikeres telepítést követően az alkalmazások és az általuk használt adatok kizárólag az Android for Work-környezetben lesznek elérhetők az eszközön.
 

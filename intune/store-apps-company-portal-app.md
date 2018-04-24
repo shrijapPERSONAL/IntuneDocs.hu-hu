@@ -1,29 +1,29 @@
 ---
-title: "A Windows 10-es Céges portál alkalmazás manuális hozzáadása"
+title: A Windows 10-es Céges portál alkalmazás manuális hozzáadása
 titleSuffix: Microsoft Intune
-description: "A Windows 10-es Céges portál alkalmazás manuális hozzáadásának ismertetése."
-keywords: 
+description: A Windows 10-es Céges portál alkalmazás manuális hozzáadásának ismertetése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06ed9395d06e2d64edcedcaadfe819ad03f1d495
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f2c7e449e9931bccd5e736bd09c33e0b42c623e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-using-microsoft-intune"></a>A Windows 10-es Céges portál alkalmazás manuális hozzáadása a Microsoft Intune-nal
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A végfelhasználók a Microsoft Áruházból telepíthetik a Céges portál alkalmazást eszközkezelés és alkalmazástelepítés céljára. Ha azonban a cég megköveteli, hogy hozzárendelje a Céges portál alkalmazást, Ön akkor is hozzárendelheti manuálisan, közvetlenül az Intune-ból a Windows 10-es Céges portál alkalmazást, ha az Intune-t nem integrálta a Vállalati Microsoft Áruházzal.
 
@@ -48,11 +48,11 @@ A végfelhasználók a Microsoft Áruházból telepíthetik a Céges portál alk
 
 7. Töltse le a „Szükséges keretrendszer” cím alatt található összes csomagot. Ezt az x86, az x64 és az ARM architektúrákkal kell elvégezni, összesen 12 csomaggal.
 8. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (például: C:&#92;Céges portál) a következőképpen felépített csomagokkal:
-  - Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
+   - Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
 
-    ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
+     ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
 
-  - Helyezze el a függőségcsomagokat a *Dependencies* mappában. 
+   - Helyezze el a függőségcsomagokat a *Dependencies* mappában. 
 
      > [!NOTE]
      > Ha a függőségeket nem a megfelelő formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni a fájlokat a csomag feltöltésekor, így a folyamat sikertelen lesz, és egy hibaüzenetet jelenít meg.
@@ -81,18 +81,19 @@ Az így aláírt és hozzárendelt Windows 10-es Céges portál alkalmazás eset
 
 Itt ismertetjük az alkalmazás aláírásának és hozzárendelésének ezt a módját:
 
-1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) oldalról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10-hez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) oldalra.
+1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) lapról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10 rendszerhez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) lapra.
 2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Microsoft Áruházból a fenti útmutató szerint.  
 3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
 
-|Paraméter | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Az appxbundle forrásfájl elérési útja |
-|OutputWin10AppxBundle |Az aláírt appxbundle fájl kimeneti útja.  Win81Appx A Windows 8.1 vagy Windows Phone 8.1 Céges portál (.APPX) fájl elérési útja.|
-|PfxFilePath |A Symantec vállalati mobil-kódaláíró tanúsítvány (.PFX) fájl elérési útja. |
-|PfxPassword| A Symantec vállalati mobil-kódaláíró tanúsítvány jelszava. |
-|PublisherId |A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.|
-|SdkPath | A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       Paraméter       |                                                                        Description                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  Az appxbundle forrásfájl elérési útja                                                  |
+| OutputWin10AppxBundle | Az aláírt appxbundle fájl kimeneti útja.  Win81Appx A Windows 8.1 vagy Windows Phone 8.1 Céges portál (.APPX) fájl elérési útja. |
+|      PfxFilePath      |                                       A Symantec vállalati mobil-kódaláíró tanúsítvány (.PFX) fájl elérési útja.                                        |
+|      PfxPassword      |                                         A Symantec vállalati mobil-kódaláíró tanúsítvány jelszava.                                          |
+|      PublisherId      |          A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.           |
+|        SdkPath        |     A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10     |
+
 A parancsfájl kimenete a futtatás végeztével a Windows 10-es Céges portál alkalmazás aláírt verziója lesz. Ekkor az Intune-on keresztül rendelheti hozzá az alkalmazás aláírt verzióját LOB-alkalmazásként, ami frissíteni fogja a jelenleg hozzárendelt verziókat erre az új alkalmazásra.  
 
 ## <a name="next-steps"></a>További lépések

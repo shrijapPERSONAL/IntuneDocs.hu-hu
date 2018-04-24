@@ -1,28 +1,28 @@
 ---
-title: "Windows-számítógép felügyeleti lehetőségeinek összehasonlítása"
-description: "A vállalat által birtokolt iOS-eszközök regisztrálása az Apple Device Enrollment program (DEP) vagy az Apple Configurator eszköz segítségével"
-keywords: 
+title: Windows-számítógép felügyeleti lehetőségeinek összehasonlítása
+description: A vállalat által birtokolt iOS-eszközök regisztrálása az Apple Device Enrollment program (DEP) vagy az Apple Configurator eszköz segítségével
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f6de91724db10ef64e2c1fd6eee6101c6eac79a
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c760f9c76e54c0b5f9eb037414870ab1c8943803
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows-számítógépek számítógépként és mobileszközként való felügyeletének összehasonlítása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A vállalatok a Microsoft Intune-ban kezelhetik a Windows-számítógépeket mobileszközként, a mobileszköz-kezelés (MDM) vagy számítógépként az Intune szoftverügyfél használatával.  A Microsoft azt javasolja, hogy az ügyfelek lehetőség szerint az MDM-megoldást válasszák a felügyelethez. A két választási lehetőség közötti különbség jobb megértése érdekében a következő táblázat összehasonlítja a két felügyeleti megoldást.
 

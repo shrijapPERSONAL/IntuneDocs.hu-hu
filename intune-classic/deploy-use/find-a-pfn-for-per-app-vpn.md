@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Csomagcsalád nevének (PFN) megkeresése az alkalmazásonkénti VPN-konfigurációkhoz
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ahhoz, hogy egy alkalmazásonkénti VPN-t be tudjon állítani, két lehetősége is van a PFN megkeresésére.
 
@@ -37,7 +37,7 @@ A Get-AppxPackage szintaxisa a következő:
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-Előfordulhat, hogy a PFN lekéréséhez rendszergazdaként kell futtatnia a PowerShellt.
+> Előfordulhat, hogy a PFN lekéréséhez rendszergazdaként kell futtatnia a PowerShellt.
 
 Ha például a számítógépre telepített összes univerzális alkalmazásra vonatkozó adatot szeretné lekérni, használja a `Get-AppxPackage` parancsot.
 

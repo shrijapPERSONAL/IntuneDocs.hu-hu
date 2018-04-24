@@ -1,29 +1,29 @@
 ---
-title: "Alkalmazásadatok védelme MAM-szabályzatok használatával"
-description: "Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-kezelési szabályzatok a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában."
-keywords: 
+title: Alkalmazásadatok védelme MAM-szabályzatok használatával
+description: Ez a témakör azt ismerteti, hogyan segítenek a mobilalkalmazás-kezelési szabályzatok a vállalati adatok védelmében, az adatveszteség megakadályozásában és a személyes és munkahelyi adatok különválasztásában.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Alkalmazásadatok védelme alkalmazásvédelmi szabályzatokkal a Microsoft Intune segítségével
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Az alkalmazásadatok védelme
 Az alkalmazottak mobileszközöket használnak a személyes és munkahelyi feladatokhoz. A produktív munkavégzést elősegítő környezet megteremtése mellett a véletlen vagy szándékos adatveszteség megelőzése is fontos szempont egy vállalatban.  Továbbá fontos szempont az is, hogy azon vállalati adatok védelmét is tudja biztosítani, melyekhez az alkalmazottak nem felügyelt eszközök használatával férnek hozzá.
@@ -57,7 +57,7 @@ Az MDM-megoldások és az alkalmazásvédelmi szabályzatok együttes használat
 - **Az alkalmazásvédelmi szabályzatok gondoskodnak az alkalmazási rétegbeli védelemről**. Például egy szabályzat segítségével PIN-kódot kérhet egy alkalmazás munkahelyi környezetben való megnyitásához, meggátolhatja az alkalmazások közötti adatmegosztást, illetve megakadályozhatja a vállalati alkalmazások adatainak személyes tárolóhelyre való mentését.
 
 ## <a name="devices-that-support-mam"></a>A mobilalkalmazás-felügyeletet támogató eszközök
-Az Intune alkalmazásvédelmi szabályzatplatformjainak támogatása az Office alkalmazásplatformok támogatásával van összhangban. További információt az [Office rendszerkövetelményei](https://products.office.com/en-US/office-system-requirements) című témakörben talál.
+Az Intune alkalmazásvédelmi szabályzatplatformjának támogatása az Office alkalmazásplatform támogatásával van összhangban. További információt az [Office rendszerkövetelményei](https://products.office.com/en-US/office-system-requirements) című témakörben talál.
 
 >[!NOTE]
 >A Windows-eszközök az MAM-ben regisztrációs forgatókönyv hiányában nem támogatottak. A Windows 10-eszközöket azonban regisztrálhatja az Intune-ba, amelyben lehetőség van a hasonló funkciókat biztosító Windows Információvédelem használatára. További információk: [Vállalati adatok védelme a Windows információvédelemmel (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

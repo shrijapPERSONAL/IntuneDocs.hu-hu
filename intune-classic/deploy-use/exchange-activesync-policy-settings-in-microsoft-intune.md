@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megadhatók azok a beállítások, amelyekkel az Exchange ActiveSync által kezelt eszközök szolgáltatásai és funkciói széles körben vezérelhetővé válnak.
 
@@ -44,10 +44,11 @@ A Microsoft Intune **Exchange ActiveSync**-házirendjének használatával megad
 
 ## <a name="encryption-settings"></a>Titkosítási beállítások
 
-|Beállítás neve|Részletek|
-|----------------|---|
-|**Titkosítás megkövetelése mobileszközön**<sup>1</sup>|Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br><br>A Windows Phone 8-telefonokon ezt **Igen**értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez **A mobileszközök zárolásának feloldásához jelszó szükséges**beállítást engedélyezni kell.|
-|**Titkosítás megkövetelése tárolókártyákon**|A külső tárhelyen, például egy SD-kártyán tárolt adatok titkosítása szükséges (a támogatott eszközökön).
+|                           Beállítás neve                           |                                                                                                                                    Részletek                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Titkosítás megkövetelése mobileszközön</strong><sup>1</sup> | Ha az eszköz támogatja a titkosítást, titkosítani kell a rajta lévő adatokat.<br><br>A Windows Phone 8-telefonokon ezt <strong>Igen</strong>értékre kell állítani.<br /><br />Az iOS-eszközök titkosításának engedélyezéséhez <strong>A mobileszközök zárolásának feloldásához jelszó szükséges</strong>beállítást engedélyezni kell. |
+|       <strong>Titkosítás megkövetelése tárolókártyákon</strong>       |                                                                                  A külső tárhelyen, például egy SD-kártyán tárolt adatok titkosítása szükséges (a támogatott eszközökön).                                                                                  |
+
 <sup>1</sup> További információ a Windows 8.1 rendszerű eszközökhöz
 
 -   A Windows 8.1 rendszerű eszközökön a titkosítás kényszerítéséhez minden egyes eszközön telepíteni kell a következőt: [2014. decemberi MDM-ügyfélfrissítés Windows rendszerre](https://support.microsoft.com/kb/3013816) .

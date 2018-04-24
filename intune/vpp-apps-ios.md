@@ -1,30 +1,30 @@
 ---
-title: "Mennyiségi programban vásárolt iOS-alkalmazások felügyelete a Microsoft Intune-ban"
-titlesuffix: 
-description: "Az iOS áruházból mennyiségi programban vásárolt alkalmazások szinkronizálása a Microsoft Intune-nal, majd használatuk felügyelete és nyomon követése."
-keywords: 
+title: Mennyiségi programban vásárolt iOS-alkalmazások felügyelete a Microsoft Intune-ban
+titlesuffix: ''
+description: Az iOS áruházból mennyiségi programban vásárolt alkalmazások szinkronizálása a Microsoft Intune-nal, majd használatuk felügyelete és nyomon követése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az iOS App Store áruháza lehetővé teszi, hogy több licencet is vásároljon a vállalatnál használni kívánt alkalmazásokhoz. Több licenc vásárlásával hatékonyabban kezelhetők a vállalaton belüli alkalmazások.
 
@@ -152,6 +152,17 @@ Ha egy VPP-token összes VPP-alkalmazásának licenceit törölni szeretné, el�
 ## <a name="further-information"></a>További információ
 
 Amikor egy jogosult eszközzel rendelkező felhasználó először próbál VPP-alkalmazást telepíteni egy eszközön, a rendszer megkéri, hogy csatlakozzon az Apple Volume Purchase Programhoz. Még az alkalmazás telepítésének folytatása előtt csatlakozniuk kell. Az Apple Volume Purchase programhoz való csatlakozás meghívójához az szükséges, hogy a felhasználó tudja használni az iTunes alkalmazást az iOS-eszközön. Ha szabályzatot állított be az iTunes Store alkalmazás letiltásához, a VPP-alkalmazások felhasználói alapú licencelése nem fog működni. A megoldás az, hogy vagy engedélyezi az iTunes alkalmazást a szabályzat eltávolításával, vagy eszközalapú licencelést használ.
+
+## <a name="frequently-asked-questions"></a>Gyakori kérdések
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Mennyi ideig tart, mire a portál frissíti a licencszámot egy alkalmazás telepítése vagy az eszközről való eltávolítása után?
+A licenc néhány órával az alkalmazások telepítése vagy eltávolítása után frissül. Megjegyzés: Ha a végfelhasználó eltávolítja az alkalmazást, a licenc továbbra is a felhasználóhoz vagy az eszközhöz lesz rendelve.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>Túlléphető egy alkalmazáselőfizetés? Ha igen, milyen körülmények között?
+Igen. Az Intune rendszergazdája túllépheti az alkalmazáselőfizetéseket. Ha például a rendszergazda 100 licencet vásárol XYZ alkalmazáshoz, majd egy 500 tagú csoporthoz rendeli azt. Az első 100 tag (felhasználó vagy eszköz) megkapja a licencet, a többi taghoz azonban nem lesz hozzárendelve licenc.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Jól tudom, hogy az Intune naponta automatikusan szinkronizálja az alkalmazáslicenceket az Apple-lel?
+Az Intune 15 óránként szinkronizálja az Apple-lel az alkalmazáslicenceket.
 
 ## <a name="next-steps"></a>További lépések
 

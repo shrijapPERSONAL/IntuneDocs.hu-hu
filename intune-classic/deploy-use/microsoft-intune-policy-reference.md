@@ -1,29 +1,29 @@
 ---
-title: "A konfigurációs szabályzat ismertetése"
-description: "Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik szabályzatát használja eszközeinek felügyeletére."
-keywords: 
+title: A konfigurációs szabályzat ismertetése
+description: Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik szabályzatát használja eszközeinek felügyeletére.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>A Microsoft Intune konfigurációs szabályzatainak ismertetése
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az ebben a témakörben található információk segítségével eldöntheti, hogy a Microsoft Intune melyik konfigurációs szabályzatát használja eszközeinek felügyeletére.
 
@@ -102,12 +102,13 @@ Csak a Windows Phone-ra és a regisztrált Windows-eszközökre vonatkozik.
 
 ## <a name="common-mobile-device-settings"></a>Mobileszközök általános beállításai
 
-|Házirend neve|Alkalmazási helyzet|
-|---------------|------------------------|
-|**Exchange ActiveSync-házirend**|Az Exchange ActiveSync által kezelt mobileszközök biztonsági és funkcionális beállításainak konfigurálása.<br /><br />Részletekért lásd: [Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Mobileszközök biztonsági házirendje**|<ul><li>Többek között a következő mobileszköz-beállítások konfigurálása (platformfüggetlen):<br /><br /><ul><li>Biztonság</li><li>Encryption</li><li>Rendszer</li><li>E-mail</li><li>Alkalmazások</li></ul></li></ul>
+|                  Házirend neve                   |                                                                                                                       Alkalmazási helyzet                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync-házirend</strong>   | Az Exchange ActiveSync által kezelt mobileszközök biztonsági és funkcionális beállításainak konfigurálása.<br /><br />Részletekért lásd: [Exchange ActiveSync házirend-beállítások a Microsoft Intune-ban](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Mobileszközök biztonsági házirendje</strong> |                                  <ul><li>Többek között a következő mobileszköz-beállítások konfigurálása (platformfüggetlen):<br /><br /><ul><li>Biztonság</li><li>Encryption</li><li>Rendszer</li><li>E-mail</li><li>Alkalmazások</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz minden eszközplatformhoz, és ezek a szabályzatok a legfrissebb használható beállításokat tartalmazzák. Továbbra is használhatja a mobileszközök biztonsági házirendjét, és minden meglévő telepítés továbbra is működni fog, de meg kell terveznie az új konfigurációs házirendekre való mielőbbi áttérést.<br />Részletekért lásd: [Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-ban](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> A Microsoft Intune már külön **konfigurációs szabályzatokat** tartalmaz minden eszközplatformhoz, és ezek a szabályzatok a legfrissebb használható beállításokat tartalmazzák. Továbbra is használhatja a mobileszközök biztonsági házirendjét, és minden meglévő telepítés továbbra is működni fog, de meg kell terveznie az új konfigurációs házirendekre való mielőbbi áttérést.<br />Részletekért lásd: [Mobileszközök biztonsági házirendjének beállításai a Microsoft Intune-ban](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Házirendek az Intune-szoftverügyféllel felügyelt Windows rendszerű számítógépekhez
 

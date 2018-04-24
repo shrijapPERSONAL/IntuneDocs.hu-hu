@@ -1,29 +1,28 @@
 ---
-title: "Microsoft Intune Endpoint Protection-beállítások Windows 10 rendszerhez"
-titlesuffix: 
-description: "Ez a cikk azt mutatja be, hogy Windows 10 rendszerű eszközökön milyen Intune-beállításokkal szabályozhatja az olyan Endpoint Protection szolgáltatások beállításait, mint például a BitLocker."
-keywords: 
+title: Endpoint Protection hozzáadása Windows 10 rendszeren az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: A Microsot Intune-ban, Windows 10-eszközökön az Endpoint Protection-beállítások használatával vagy konfigurálásával engedélyezheti a Windows Defender funkcióit, így az alkalmazásőrt, a tűzfalat, a SmartScreent, a titkosítást és a BitLockert, a biztonsági rés kiaknázása elleni védelmet, az alkalmazásvezérlést, a biztonsági központot és a helyi eszközök biztonságát.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune Endpoint Protection-beállítások létrehozása Windows 10 és újabb rendszerekhez
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az Endpoint Protection-profillal a Windows 10-es eszközök olyan biztonsági szolgáltatásait szabályozhatja, mint például a BitLocker és a Windows Defender.
 
@@ -31,21 +30,6 @@ A következő cikk az Endpoint Protection-profilok létrehozását mutatja be.
 
 > [!Note]
 > Ezek a beállítások nem támogatottak a Windows 10 Home és Professional kiadásaiban.
-
-## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection-profil létrehozása
-
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-2. Az **Eszközkonfiguráció** panel **Kezelés** területén válassza a **Profilok** lehetőséget.
-3. A profilok paneljén válassza a **Profil létrehozása** lehetőséget.
-4. A **Profil létrehozása** panelen adja meg az eszközfunkció-profil **Nevét** és **Leírását**.
-5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
-6. A **Profil típusa** legördülő listából válassza az **Endpoint Protection** lehetőséget.
-7. Adja meg a kívánt beállításokat. A következő cikk azt ismerteti, milyen funkciót látnak el az egyes beállítások. Ha elkészült, válassza az **OK** elemet.
-8. Lépjen vissza a **Profil létrehozása** panelre, és válassza a **Létrehozás** lehetőséget.
-
-Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó panelen.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender alkalmazásőr
 
@@ -56,9 +40,9 @@ Az Alkalmazásőr csak a 64 bites Windows 10-eszközöknél érhető el. Ennek a
 - **Vállalati webhelyeken lévő külső tartalom** – A nem jóváhagyott webhelyekről származó tartalom betöltésének tiltása.
 - **Nyomtatás a virtuális böngészőből** – Engedélyezheti, hogy a virtuális böngészőben megjelenő tartalom a PDF-, az XPS-, a helyi és/vagy a hálózati nyomtatókkal nyomtathatók legyenek.
 - **Naplók gyűjtése** – Az alkalmazásőr virtuális böngészési munkamenetében előforduló események naplóinak összegyűjtése.
-- **Felhasználó által létrehozott böngészési adatok megtartása** – Engedélyezheti az alkalmazásőr által védett böngészési munkamenet során létrehozott felhasználói adatok (például jelszavak, kedvencek vagy cookie-ek) mentését.
-- **Grafikus gyorsítás** – Az alkalmazásőr virtuális böngészési munkameneteiben gyorsabban betöltheti a magas grafikai igényű webhelyeket, ha engedélyezi a virtuális grafikai feldolgozóegységhez való hozzáférést.
-
+- **Felhasználó által létrehozott böngészési adatok megtartása** – Az alkalmazásőr által védett böngészési munkamenet során létrehozott felhasználói adatok (például jelszavak, kedvencek vagy cookie-ek) mentése.
+- **Grafikus gyorsítás** – Az alkalmazásőr virtuális böngészési munkameneteiben gyorsabban betöltheti a magas grafikai igényű webhelyeket. A webhelyek gyorsabban betöltenek, ha engedélyezi a virtuális grafikai feldolgozóegységhez való hozzáférést.
+- **Fájlok letöltése a gazdagép fájlrendszerébe** – Engedélyezheti a felhasználóknak, hogy letöltsenek fájlokat a virtualizált böngészőből a gazdagép operációs rendszerébe.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender-tűzfal
 
@@ -72,7 +56,7 @@ Ezek a beállítások minden hálózattípusnál alkalmazhatók.
 - **IPsec-kivételek** – Beállítható, hogy bizonyos forgalomra ne vonatkozzon az IPsec. Ilyen lehet például a **Szomszédfelderítési IPv6 ICMP-típuskódok**, az **ICMP**, az **Útválasztó-felderítési IPv6 ICMP-típuskódok**, valamint **Mind az IPv4-es, mind az IPv6-os DHCP hálózati forgalom**.
 - **Visszavont tanúsítványok listájának ellenőrzése** – Beállítható egy érték, amely kötelezően alkalmazva lesz a visszavont tanúsítványok ellenőrzésekor, például **CRL-ellenőrzés letiltása**, **Sikertelen CRL-ellenőrzés csak visszavont tanúsítványok esetén**, valamint **Sikertelen CRL-ellenőrzés bármilyen hibánál**.
 - **Hitelesítési készlet alkalomszerű egyeztetése kulcsmodulonként** – Beállítható, hogy a kulcskezelő modulok hagyják figyelmen kívül a teljes hitelesítési készletet, ha az adott készlet nem minden hitelesítési csomagját támogatják.
-- **Csomagok várólistára helyezése** – Annak megadása, hogy a fogadó oldali szoftver skálázása IPsec-alagutas átjáró használata esetén miként legyen engedélyezve a titkosított fogadás és az egyszerű szöveges továbbítás számára. Ezzel biztosítható a csomagsorrend megőrzése. Ezzel biztosítható a csomagsorrend megőrzése.
+- **Csomagok várólistára helyezése** – Annak megadása, hogy a fogadó oldali szoftver skálázása IPsec-alagutas átjáró használata esetén miként legyen engedélyezve a titkosított fogadás és az egyszerű szöveges továbbítás számára. Ezzel biztosítható a csomagsorrend megőrzése. Ezzel a beállítással biztosítható a csomagsorrend megőrzése.
 
 ### <a name="network-settings"></a>Hálózati beállítások
 
@@ -81,8 +65,8 @@ Ezek a beállítások meghatározott hálózattípusokra vonatkoznak. Ilyen töb
 #### <a name="general-settings"></a>Általános beállítások
 
 - **Windows Defender-tűzfal** – Ezzel a beállítással letiltható a hálózati forgalom.
-- **Rejtett üzemmód** – Letiltható, hogy a tűzfal rejtett üzemmódban működjön. Ennek a tiltásnak a beállítása az **IPsec-et használó csomagok mentességének** letiltását is lehetővé teszi.
-- **Védett** – Ha ezt és a tűzfalbeállítást is letiltja, akkor a teljes bejövő forgalom le lesz tiltva.
+- **Rejtett üzemmód** – Letiltható, hogy a tűzfal rejtett üzemmódban működjön. A rejtett üzemmód tiltásnak a beállítása az **IPsec-et használó csomagok mentességének** letiltását is lehetővé teszi.
+- **Védett** – Ha ezt és a tűzfalbeállítást is engedélyezi, akkor a teljes bejövő forgalom le lesz tiltva.
 - **Egyedi küldésű válaszok a csoportos küldésű szórásokra** – Egyedi küldésű válaszok tiltása a csoportos küldésű válaszokra. Csoportos küldésű vagy szórási üzenetekre általában nem kívánatos egyedi küldésű válaszokat kapni, mivel az ilyen típusú válaszok szolgáltatásmegtagadási támadást jeleznek, vagy azt jelzik, hogy egy támadó egy ismert aktív számítógépbe próbál bejutni.
 - **Bejövő értesítések** – Letiltható az üzenetek felhasználóknak való megjelenítése, ha le van tiltva, hogy az alkalmazás figyeljen egy portot.
 - **Alapértelmezett művelet bejövő kapcsolatokhoz** – Letiltható az az alapbeállítás szerinti művelet, amelyet a tűzfal a bejövő kapcsolatoknál alkalmaz.
@@ -115,53 +99,52 @@ Az alapbeállítások minden típusú adatmeghajtóra vonatkozó univerzális Bi
 
 - **Figyelmeztetés egyéb lemeztitkosításra** – Az egyéb lemeztitkosítással kapcsolatos figyelmeztető üzenet letiltása a végfelhasználók gépein.
 - **Titkosítási módszerek konfigurálása** – Ha engedélyezi ezt a beállítást, különböző titkosítási algoritmusokat állíthat be az operációs rendszerhez, a rendszeren található adatokhoz és a cserélhető meghajtókhoz.
-    - **Operációsrendszer-meghajtók titkosítása** – Az operációs rendszer meghajtóihoz használandó titkosítási módszer kiválasztására szolgál. Javasoljuk az XTS-AES algoritmus használatát.
-    - **Rögzített adatmeghajtók titkosítása** – A rögzített (beépített) adatmeghajtókhoz használandó titkosítási módszer kiválasztására szolgál. Javasoljuk az XTS-AES algoritmus használatát.
-    - **Cserélhető adatmeghajtók titkosítása** – A cserélhető adatmeghajtókhoz használandó titkosítási módszer kiválasztására szolgál. Ha a cserélhető meghajtót olyan eszközökkel is használja, amelyeken nem Windows 10 operációs rendszer fut, az AES-CBC algoritmus használatát javasoljuk.
+  - **Operációsrendszer-meghajtók titkosítása** – Az operációs rendszer meghajtóihoz használandó titkosítási módszer kiválasztására szolgál. Javasoljuk az XTS-AES algoritmus használatát.
+  - **Rögzített adatmeghajtók titkosítása** – A rögzített (beépített) adatmeghajtókhoz használandó titkosítási módszer kiválasztására szolgál. Javasoljuk az XTS-AES algoritmus használatát.
+  - **Cserélhető adatmeghajtók titkosítása** – A cserélhető adatmeghajtókhoz használandó titkosítási módszer kiválasztására szolgál. Ha a cserélhető meghajtót olyan eszközökkel is használja, amelyeken nem Windows 10 operációs rendszer fut, az AES-CBC algoritmus használatát javasoljuk.
 
 ### <a name="bitlocker-os-drive-settings"></a>Operációsrendszer-meghajtók BitLocker-beállításai
 
 Ezek a beállítások kifejezetten az operációsrendszer-adatmeghajtókra érvényesek.
 
 - **További hitelesítés indításkor** – A számítógép indítására vonatkozó hitelesítési követelmények konfigurálása, beleértve a platformmegbízhatósági modul (TPM) használatát.
-    - **BitLocker nem kompatibilis TPM-lapkával**
-    - **Kompatibilis TPM-indítás** – Ezzel a beállítással adható meg, hogy a TPM-lapka (Trusted Platform Module – platformmegbízhatósági modul) használata engedélyezett, nem engedélyezett vagy kötelező legyen-e.
-    - **Kompatibilis TPM-indítási PIN-kód** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási PIN-kód használatát.
-    - **Kompatibilis TPM-indítási kulcs** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási kulcs használatát.
-    - **Kompatibilis TPM-indítási kulcs és PIN-kód** – Ezzel a beállítással adhatja meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítókulcs és PIN-kód használatát.
+  - **BitLocker nem kompatibilis TPM-lapkával**
+  - **Kompatibilis TPM-indítás** – Ezzel a beállítással adható meg, hogy a TPM-lapka (Trusted Platform Module – platformmegbízhatósági modul) használata engedélyezett, nem engedélyezett vagy kötelező legyen-e.
+  - **Kompatibilis TPM-indítási PIN-kód** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási PIN-kód használatát.
+  - **Kompatibilis TPM-indítási kulcs** – Ezzel a beállítással adható meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítási kulcs használatát.
+  - **Kompatibilis TPM-indítási kulcs és PIN-kód** – Ezzel a beállítással adhatja meg, hogy a TPM-lapkához engedélyezi, nem engedélyezi vagy kötelezővé teszi-e egy indítókulcs és PIN-kód használatát.
 - **PIN-kód minimális hossza** – Ha engedélyezi ezt a beállítást, megadhatja a TPM-indítási PIN-kód minimális hosszát.
-    - **Karakterek minimális száma** – Ezzel a beállítással megadható, hogy hány karaktert kell tartalmaznia az indításkor beírandó PIN-kódnak. A PIN-kód hossza **4**-**20** karakter lehet.
+  - **Karakterek minimális száma** – Ezzel a beállítással megadható, hogy hány karaktert kell tartalmaznia az indításkor beírandó PIN-kódnak. A PIN-kód hossza **4**-**20** karakter lehet.
 - **Operációsrendszer-meghajtó helyreállítása** – Ennek a beállításnak a megadásával vezérelheti, hogyan állíthatók helyre a BitLocker által védett operációsrendszer-meghajtók, ha nem állnak rendelkezésre az indításhoz szükséges információk.
-    - **Tanúsítványalapú adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett operációsrendszer-meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
-    - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.
-    - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
-    - **Helyreállítási beállítások a BitLocker konfigurációs varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
-    - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
-    - **AD DS-ben tárolt BitLocker helyreállítási adatok** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
-        - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
-        - **Csak a helyreállítási jelszavak biztonsági mentése**
-    - **Helyreállítási adatok AD DS-be való mentése a BitLocker engedélyezése előtt** – Ezzel a beállítással szabályozható, hogy a felhasználók ne tudják bekapcsolni a BitLockert addig, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
+  - **Tanúsítványalapú adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett operációsrendszer-meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
+  - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.
+  - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
+  - **Helyreállítási beállítások a BitLocker konfigurációs varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
+  - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
+  - **AD DS-ben tárolt BitLocker helyreállítási adatok** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
+    - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
+    - **Csak a helyreállítási jelszavak biztonsági mentése**
+  - **Helyreállítási adatok AD DS-be való mentése a BitLocker engedélyezése előtt** – Ezzel a beállítással szabályozható, hogy a felhasználók ne tudják bekapcsolni a BitLockert addig, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
 - **Rendszerindítás előtti helyreállítási üzenet és URL-cím** – Ezzel a beállítással engedélyezhető, hogy a rendszerindítás előtti kulcshelyreállítási képernyőn a rendszer megjelenítsen egy üzenetet és egy URL-címet.
-    - **Rendszerindítás előtti helyreállítási üzenet** – Itt adhatja meg, milyen rendszerindítás előtti helyreállítási üzenet jelenjen meg a felhasználók számára. A következő lehetőségek közül választhat:
-        - **Az alapértelmezett helyreállítási üzenet és URL-cím használata**
-        - **Üres helyreállítási üzenet és URL-cím használata**
-        - **Egyéni helyreállítási üzenet**
-        - **Egyéni helyreállítási URL**
-
+  - **Rendszerindítás előtti helyreállítási üzenet** – Itt adhatja meg, milyen rendszerindítás előtti helyreállítási üzenet jelenjen meg a felhasználók számára. A következő lehetőségek közül választhat:
+    - **Az alapértelmezett helyreállítási üzenet és URL-cím használata**
+    - **Üres helyreállítási üzenet és URL-cím használata**
+    - **Egyéni helyreállítási üzenet**
+    - **Egyéni helyreállítási URL**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Rögzített adatmeghajtók BitLocker-beállításai
 
 - **Írási hozzáférés BitLockerrel nem védett rögzített adatmeghajtóhoz** – Ha ezt a beállítást engedélyezi, a rögzített vagy beépített adatmeghajtók csak azután lesznek írhatók, ha BitLocker-védelmüket engedélyezte a felhasználó.
 - **Rögzített meghajtó helyreállítása** – Ennek a beállításnak a megadásával vezérelheti, hogyan állíthatók helyre a BitLocker által védett rögzített meghajtók, ha nem állnak rendelkezésre az indításhoz szükséges információk.
-    - **Adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett rögzített meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
-    - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.  
-    - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
-    - **Helyreállítási beállítások a BitLocker konfigurációs varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
-    - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
-    - **AD DS-ben tárolt BitLocker helyreállítási adatok** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
-        - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
-        - **Csak a helyreállítási jelszavak biztonsági mentése**
-    - **Helyreállítási adatok AD DS-be való mentése a BitLocker engedélyezése előtt** – Ezzel a beállítással szabályozható, hogy a felhasználók ne tudják bekapcsolni a BitLockert addig, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
+  - **Adat-helyreállítási ügynök** – Ezt a beállítást akkor érdemes engedélyezni, ha a BitLocker által védett rögzített meghajtók helyreállításához szeretne adat-helyreállítási ügynököket használni.
+  - **Helyreállítási jelszó felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 48 jegyű helyreállítási jelszó létrehozását.  
+  - **Helyreállítási kulcs felhasználói létrehozása** – Ezzel a beállítással megadhatja, hogy a felhasználók számára engedélyezi, nem engedélyezi vagy kötelezővé teszi-e 256 bites helyreállítási kulcs létrehozását.
+  - **Helyreállítási beállítások a BitLocker konfigurációs varázslójában** – Ennek a beállításnak az engedélyezésével megakadályozhatja, hogy a BitLocker bekapcsolásakor a felhasználók lássák vagy módosítani tudják a helyreállítási lehetőségeket.
+  - **A BitLocker helyreállítási adatainak mentése az AD DS-be** – Ezzel a beállítással engedélyezhető, hogy a BitLocker helyreállítási információit az Active Directoryban tárolja a rendszer.
+  - **AD DS-ben tárolt BitLocker helyreállítási adatok** – Ezzel a beállítással adható meg, hogy a BitLocker helyreállítási információi mely részét tárolja a rendszer az Active Directoryban. A következő lehetőségek közül választhat:
+    - **A helyreállítási jelszavak és a kulcscsomagok biztonsági mentése**
+    - **Csak a helyreállítási jelszavak biztonsági mentése**
+  - **Helyreállítási adatok AD DS-be való mentése a BitLocker engedélyezése előtt** – Ezzel a beállítással szabályozható, hogy a felhasználók ne tudják bekapcsolni a BitLockert addig, amíg az eszköz nem csatlakozott a tartományhoz, és nem sikerült menteni a BitLocker helyreállítási információit az Active Directoryban.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Cserélhető adatmeghajtók BitLocker-beállításai
 
@@ -173,6 +156,8 @@ Ezek a beállítások kifejezetten az operációsrendszer-adatmeghajtókra érv�
 A [Windows Defender - biztonsági rés kiaknázása elleni védelem](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) használatával az alkalmazottak által használt alkalmazásokat lehet kezelni, és csökkenthető vele az alkalmazások támadási felülete.
 
 ### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
+
+- **A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése**
 
 [Kiküszöbölhetők azok az események és alkalmazások](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard), amelyeket általában a biztonsági réseket kereső kártevő szoftverek használnak a számítógépek megfertőzése céljából.
 
@@ -191,12 +176,21 @@ Az alábbiak letiltásával a veszélyes szkriptek ellen védekezhet:
 
 - **Js-, VBS-, PS-fájlok és makrók rejtjelezett kódja**
 - **Internetről letöltött .js vagy .vbs fájlok végrehajtása (nincs kivétel)**
+- **Folyamatlétrehozás a PSExec- és WMI-parancsokból**
+- **Nem megbízható és aláíratlan, USB-ről futó folyamatok**
+- **Az elterjedtségre, korra és megbízható listákra vonatkozó kritériumoknak nem megfelelő végrehajtható fájlok**
 
 #### <a name="rules-to-prevent-email-threats"></a>E-mail-fenyegetések megakadályozását szolgáló szabályok
 
 Az alábbiak letiltásával megakadályozhatja az e-mail-fenyegetéseket:
 
 - **Webes levelezés vagy az asztali levelezőprogramok e-mailjeiből eltávolított végrehajtható tartalom (például .exe, .dll, .ps, .js, és .vbs fájlok) futtatása (nincs kivétel)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Zsarolóprogramok elleni szabályok
+- **Zsarolóprogramok elleni speciális védelem**
+
+> [!TIP]
+> További információ a szabályokról: [A támadási felület csökkentése a Windows Defender – biztonsági rés kiaknázása elleni védelemmel](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard).
 
 #### <a name="attack-surface-reduction-exceptions"></a>Támadási felület csökkentése – kivételek
 
@@ -247,7 +241,7 @@ Letilthatja a felhasználói hozzáférést a Windows Defender biztonsági közp
 
 #### <a name="it-contact-information"></a>Az informatikai szolgálat kapcsolattartási adatai
 
-Adja meg az informatikai szolgálat azon elérhetőségeit, amelyek megjelennek majd a Windows Defender biztonsági központ alkalmazásban és az alkalmazásértesítésekben. Az alábbi lehetőségek közül választhat: **Az alkalmazásban és az értesítésekben is jelenjen meg**, **Csak az alkalmazásban jelenjen meg**, **Csak az értesítésekben jelenjen meg** és **Ne jelenjen meg**. Meg kell adnia az **IT-szervezet nevét**, és az alábbiak közül legalább egyet:
+Adja meg az informatikai szolgálat azon elérhetőségeit, amelyek megjelennek majd a Windows Defender biztonsági központ alkalmazásban és az alkalmazásértesítésekben. Az alábbi lehetőségek közül választhat: **Az alkalmazásban és az értesítésekben is jelenjen meg**, **Csak az alkalmazásban jelenjen meg**, **Csak az értesítésekben jelenjen meg** és **Ne jelenjen meg**. Meg kell adnia az **IT-szervezet nevét**, és az alábbi kapcsolatfelvételi lehetőségek közül legalább egyet:
 
 - **IT-részleg telefonszáma vagy Skype-elérhetősége**
 - **IT-részleg e-mail címe**
@@ -255,4 +249,4 @@ Adja meg az informatikai szolgálat azon elérhetőségeit, amelyek megjelennek 
 
 ## <a name="next-steps"></a>További lépések
 
-Ha folytatni szeretné az eszközprofil csoportokhoz való hozzárendelésével, erről az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikk nyújt tájékoztatást.
+Ha a profilt csoportokhoz szeretné rendelni, az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikkben talál további információt.

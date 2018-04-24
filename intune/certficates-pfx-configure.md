@@ -1,28 +1,28 @@
 ---
-title: "PKCS-tanúsítványok használata az Azure-beli Microsoft Intune-nal | Micrososft Docs"
-description: "Nyíltkulcsú titkosításiszabvány- (PKCS-) tanúsítványok hozzáadása vagy létrehozása a Microsoft Intune-nal a következő lépésekben: gyökértanúsítvány exportálása, tanúsítványsablon konfigurálása, Microsoft Intune Tanúsítvány-összekötő letöltése és telepítése, eszközkonfigurációs profil létrehozása, PKCS-tanúsítványprofil létrehozása az Azure-ban és a saját hitelesítésszolgáltatónál"
-keywords: 
+title: PKCS-tanúsítványok használata az Azure-beli Microsoft Intune-nal | Micrososft Docs
+description: 'Nyíltkulcsú titkosításiszabvány- (PKCS-) tanúsítványok hozzáadása vagy létrehozása a Microsoft Intune-nal a következő lépésekben: gyökértanúsítvány exportálása, tanúsítványsablon konfigurálása, Microsoft Intune Tanúsítvány-összekötő letöltése és telepítése, eszközkonfigurációs profil létrehozása, PKCS-tanúsítványprofil létrehozása az Azure-ban és a saját hitelesítésszolgáltatónál'
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>PKCS-tanúsítványok konfigurálása és használata az Intune-nal
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A tanúsítványok az olyan céges forrásokhoz történő hozzáférés hitelesítését és biztonságossá tételét szolgálják, mint a VPN és a saját WiFi hálózat. Ez a cikk a PKCS-tanúsítványok exportálását, majd Intune-profilhoz történő hozzáadását ismerteti. 
 
@@ -56,7 +56,7 @@ VPN-, WiFi- és egyéb erőforrással történő hitelesítéshez minden eszköz
 
    Például:
 
-4.  Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
+4. Ha a varázsló befejeződött, még mielőtt bezárná, kattintson **Launch the Certificate Connector UI**(Certificate Connector felhasználói felületének indítása) lehetőségre.
 
    `certutil -ca.cert certnew.cer`
 

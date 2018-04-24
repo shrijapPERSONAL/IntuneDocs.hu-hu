@@ -1,12 +1,12 @@
 ---
-title: Alkalmazásonkénti VPN-profil az Android Pulse Secure használatával
+title: Egyéni alkalmazásonkénti Androidos VPN-profil
 titlesuffix: Microsoft Intune
 description: Megtudhatja, hogyan hozhat létre alkalmazásonkénti VPN-profilt a Microsoft Intune-nal felügyelt Android-eszközökhöz.
 keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,23 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc87363169cd2d967b2fea9683926970c18c5e97
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 96d164c0f4274a6d1fc81a0c7f9d86cccfec1fb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Az Intune által felügyelt Android 5.0-s és újabb rendszerű eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először hozzon létre egy olyan profit, amely a Pulse Secure kapcsolattípust használja. Ezután hozzon létre egy olyan egyéni szabályzatot, amely a VPN-profilt meghatározott alkalmazásokkal társítja.
+Az Intune által felügyelt Android 5.0-s és újabb rendszerű eszközökhöz alkalmazásonkénti VPN-profilt hozhat létre. Először hozzon létre egy olyan VPN-profit, amely a Pulse Secure vagy a Citrix kapcsolattípust használja. Ezután hozzon létre egy olyan egyéni szabályzatot, amely a VPN-profilt meghatározott alkalmazásokkal társítja.
 
-Miután érvénybe léptette a szabályzatot Android rendszerű eszközén vagy a felhasználói csoportokon, a felhasználóknak el kell indítaniuk a PulseSecure VPN-t. A PulseSecure ezután csak a megadott alkalmazások adatforgalma számára engedélyezi a nyitott VPN-kapcsolat használatát.
+Miután hozzárendeli a szabályzatot az Android rendszerű eszközhöz vagy felhasználócsoportokhoz, a felhasználóknak el kell indítaniuk a PulseSecure vagy a Citrix VPN-ügyfelet. A VPN-ügyfél ezután csak a megadott alkalmazások adatforgalma számára engedélyezi a nyitott VPN-kapcsolat használatát.
 
 > [!NOTE]
 >
-> Ez a profil csak a Pulse Secure kapcsolattípust támogatja.
+> Ez a profil csak a Pulse Secure és a Citrix kapcsolattípust támogatja.
 
 
 ## <a name="step-1-create-a-vpn-profile"></a>1. lépés: VPN-profil létrehozása

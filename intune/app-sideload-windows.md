@@ -1,26 +1,26 @@
 ---
-title: "Windows- és Windows Phone-alkalmazások közvetlen telepítése az Intune-nal"
-description: "A cikkből megtudhatja, hogyan írhatja alá az üzleti alkalmazásokat, hogy az Intune segítségével telepíthesse őket."
-keywords: 
+title: Windows- és Windows Phone-alkalmazások közvetlen telepítése az Intune-nal
+description: A cikkből megtudhatja, hogyan írhatja alá az üzleti alkalmazásokat, hogy az Intune segítségével telepíthesse őket.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Üzleti alkalmazások aláírása, hogy telepíteni lehessen őket Windows-eszközökre az Intune segítségével
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune-rendszergazdaként telepíthet üzleti alkalmazásokat (köztük a Munkahelyi portál alkalmazást) Windows és Windows 10 Mobile rendszerű eszközökre. Ahhoz, hogy .appx vagy .xap alkalmazásokat telepíthessen Windows 10 vagy a Windows 10 Mobile rendszerű eszközökre, vagy bármilyen üzleti alkalmazást telepíthessen Windows 8.1 vagy Windows Phone 8.1 rendszerű eszközökre, **be kell szereznie a Symantec vállalati mobil-kódaláíró tanúsítványt**. Az ilyen Windows-eszközökön csak a Symantec aláírásával ellátott alkalmazások minősülnek megbízhatónak. A Windows 10-alkalmazások és az „univerzális” alkalmazások esetében használhatja saját hitelesítésszolgáltatóját. Ez a tanúsítvány az alábbiakhoz szükséges:
 
@@ -78,11 +78,11 @@ A Windows-eszközökre (a Windows Phone-telefonokat és a Windows 10 Mobile rend
 
     Azt is megteheti, hogy letölti a Windows Phone 8.1-es vagy a Windows 10-es Céges portált (az offline licenccel rendelkező csomagot) a [Vállalati Microsoft Áruházból](http://businessstore.microsoft.com/). A Munkahelyi portál alkalmazást offline licenccel kell beszerezni, és az offline használatra megfelelő csomagot kell letölteni. A kínálatban a Windows 8 és a Windows Phone 8 platformra készültként megjelölt termékek valójában a 8.1-beli megfelelőjükre utalnak. Ennek az Intune-nal való végrehajtásáról bővebben [A Vállalati Microsoft Áruházban vásárolt alkalmazások kezelése](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) című témakörben olvashat.
 
-2.  **A Windows Phone SDK letöltése:** Töltse le a Windows Phone SDK 8.0-s verzióját] (http://go.microsoft.com/fwlink/?LinkId=615570), és telepítse a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
+2.  **A Windows Phone SDK letöltése** Töltse le a Windows Phone SDK 8.0-s verzióját] (http://go.microsoft.com/fwlink/?LinkId=615570)), és telepítse a számítógépre. Az SDK az alkalmazásregisztrációs adatblokkok létrehozásához szükséges.
 
 3.  **AETX-fájl létrehozása** Hozza létre az alkalmazásregisztrációs adatblokk .aetx kiterjesztésű fájlját a Symantec PFX-fájlból a Windows Phone SDK 8.0 részét képező AETGenerator.exe eszközzel. Az AETX-fájlok létrehozásával kapcsolatos útmutatást itt találja: [Alkalmazásregisztrációs adatblokk létrehozása a Windows Phone rendszerhez](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **A Windows 8.1 rendszerhez készült Windows SDK letöltése** Töltse le és telepítse a [Windows Phone SDK-t](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Ügyeljen arra, hogy a Vállalati portál alkalmazás PowerShell-parancsprogramja az alapértelmezett telepítési helyet ( `${env:ProgramFiles(x86)}\Windows Kits\8.1`) használja. Ha máshová telepíti, meg kell adnia a helyet egy parancsmag-paraméterben.
+4.  **A Windows 8.1 rendszerhez készült Windows SDK letöltése** Töltse le és telepítse a [Windows Phone SDK-t](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525)). Ügyeljen arra, hogy a Vállalati portál alkalmazás PowerShell-parancsprogramja az alapértelmezett telepítési helyet ( `${env:ProgramFiles(x86)}\Windows Kits\8.1`) használja. Ha máshová telepíti, meg kell adnia a helyet egy parancsmag-paraméterben.
 
 5.  **Az alkalmazás kódjának aláírása a PowerShell használatával** A telepített Windows SDK-t és a Symantec Enterprise Mobile Code Signing Certificate tanúsítványt tartalmazó gazdagépről nyissa meg a **Windows PowerShell** alkalmazást rendszergazdaként, keresse meg a Sign-WinPhoneCompanyPortal.ps1 fájlt, és futtassa a parancsprogramot.
 
@@ -128,7 +128,7 @@ A Windows és Windows Phone rendszerű mobilalkalmazások telepítésére szolg�
 
     A Symantec-tanúsítványokkal kapcsolatos további tudnivalókért keresse fel a [www.symantec.com](http://www.symantec.com) webhelyet, vagy hívja az 1-877-438-8776 vagy az 1-650-426-3400 telefonszámot.
 
-2.  Nyissa meg a webhelyet (például: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)), és jelentkezzen be a tanúsítványhoz tartozó Symantec-gyártóazonosítóval és e-mail címmel. Fontos, hogy ugyanazon a számítógépen indítása el a megújítást, amelyen le fogja tölteni a tanúsítványt.
+2.  Nyissa meg a webhelyet (például: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) és jelentkezzen be a tanúsítványhoz tartozó Symantec-közzétevőazonosítóval és e-mail-címmel. Fontos, hogy ugyanazon a számítógépen indítása el a megújítást, amelyen le fogja tölteni a tanúsítványt.
 
 3.  Miután megkapta a jóváhagyást a megújításhoz és kifizette azt, töltse le a tanúsítványt.
 
@@ -158,11 +158,11 @@ A Windows 10-es Céges portál alkalmazást akkor is telepítheti manuálisan, k
 
 ![Kép a letöltendő függőségi fájlokról ](./media/Win10CP-dependent-files.png)
 5. Mielőtt feltöltené a Céges portál alkalmazást az Intune-ra, hozzon létre egy mappát (pl. C:&#92;Céges portál) a következőképpen felépített csomagokkal:
-  1. Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
-  ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
-  2. Helyezze el a kilenc függőségcsomagot a Függőségek mappában.  
-  Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt.  
-  ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és telepítheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](./media/Win10CP-error-message.png)
+   1. Helyezze el a Céges portál csomagot a C:\Céges portál helyen. Ugyanitt hozzon létre egy Függőségek almappát is.  
+   ![APPXBUN fájllal mentett Függőségek mappa képe](./media/Win10CP-Dependencies-save.png)
+   2. Helyezze el a kilenc függőségcsomagot a Függőségek mappában.  
+   Ha a függőségeket nem ebben a formátumban helyezi el, az Intune nem tudja majd felismerni és feltölteni őket a csomag feltöltésekor, így a folyamat sikertelen lesz a következő hiba miatt.  
+   ![A szoftver telepítőjéhez tartozó Windows-alkalmazás nem található az alkalmazás mappájában. Továbbra is létrehozhatja és telepítheti az alkalmazást, de az nem fog futni addig, amíg hozzá nem adja a hiányzó Windows alkalmazás-függőséget.](./media/Win10CP-error-message.png)
 6. Lépjen vissza az Intune-ba, és töltse fel a Céges portál alkalmazást új alkalmazásként. Telepítse szükséges alkalmazásként a kívánt felhasználói célcsoport számára.  
 
 Itt talál további információkat arról, hogy az Intune miképpen kezeli az univerzális alkalmazások függőségeit: [appxbundle telepítése függőségekkel a Microsoft Intune MDM-en keresztül](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
@@ -186,17 +186,18 @@ Az így aláírt és telepített Windows 10-es Céges portál alkalmazás eseté
 
 Itt ismertetjük az alkalmazás aláírásának és telepítésének ezt a módját:
 
-1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) oldalról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10-hez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) oldalra.
+1. Töltse le a Microsoft Intune Windows 10-es Céges portál alkalmazás aláírása parancsfájlt a [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) lapról.  A parancsfájlhoz olyan gazdagépre van szükség, amelyen telepítve van a Windows 10-hez készült Windows SDK. A Windows 10 rendszerhez készült Windows SDK letöltéséhez látogasson el a [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) lapra.
 2. Töltse le a Windows 10-es Céges portál alkalmazást a Vállalati Microsoft Áruházból a fenti útmutató szerint.  
 3. Futtassa a parancsfájlt azokkal a bemeneti paraméterekkel, amelyek a Windows 10-es Céges portál alkalmazás aláírásához használt parancsfájl fejlécén találhatók (alább kivonatolva). A függőségeket nem kell hozzáadni a parancsprogramhoz. Csak akkor van rájuk szükség, amikor éppen folyamatban van az alkalmazás feltöltése az Intune felügyeleti konzolra.
 
-|Paraméter | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Az appxbundle forrásfájl elérési útja. |
-|OutputWin10AppxBundle |Az aláírt appxbundle fájl kimeneti útja. |
-|Win81Appx | A Windows 8.1 vagy Windows Phone 8.1 Céges portál (.APPX) fájl elérési útja.|
-|PfxFilePath |A Symantec vállalati mobil-kódaláíró tanúsítvány (.PFX) fájl elérési útja. |
-|PfxPassword| A Symantec vállalati mobil-kódaláíró tanúsítvány jelszava. |
-|PublisherId |A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.|
-|SdkPath | A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       Paraméter       |                                                                    Description                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             Az appxbundle forrásfájl elérési útja.                                              |
+| OutputWin10AppxBundle |                                                  Az aláírt appxbundle fájl kimeneti útja.                                                  |
+|       Win81Appx       |                          A Windows 8.1 vagy Windows Phone 8.1 Céges portál (.APPX) fájl elérési útja.                           |
+|      PfxFilePath      |                                   A Symantec vállalati mobil-kódaláíró tanúsítvány (.PFX) fájl elérési útja.                                    |
+|      PfxPassword      |                                     A Symantec vállalati mobil-kódaláíró tanúsítvány jelszava.                                      |
+|      PublisherId      |      A vállalat gyártóazonosítója. Ha nincs megadva, a program a Symantec Enterprise Mobile Code Signing Certificate tanúsítvány Subject (Tulajdonos) mezőjének értékét használja.       |
+|        SdkPath        | A Windows 10-hez készült Windows SDK gyökérmappájának elérési útja. Ezt az argumentumot nem kötelező megadni, és az alapértelmezett értéke ${env:ProgramFiles(x86)}\Windows Kits\10 |
+
 A parancsfájl kimenete a futtatás végeztével a Windows 10-es Céges portál alkalmazás aláírt verziója lesz. Ekkor az Intune-on keresztül telepítheti az alkalmazás aláírt verzióját LOB-alkalmazásként, ami frissíteni fogja a jelenleg telepített verziókat erre a új alkalmazásra.  

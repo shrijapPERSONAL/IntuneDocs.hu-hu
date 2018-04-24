@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Eszközök kategorizálása eszközcsoport-leképezéssel a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune **eszközcsoport-leképezés** funkciója segítségével a különböző, Ön által meghatározott kategóriákon alapuló csoportokhoz adhatja hozzá az eszközöket, megkönnyítve ezzel a felügyeletüket. 
 
@@ -67,10 +67,10 @@ Az Azure Active Directory-alapú biztonsági csoportok fokozatos megvalósítás
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>1. lépés - Eszközkategóriák létrehozása az Intune felügyeleti konzolján
 1. A [Microsoft Intune felügyeleti konzolján](https://manage.microsoft.com) válassza a **Felügyelet** elemet.
-3. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** csomópontot, majd válassza az **Eszközkategóriák** elemet.
-4. Az **Eszközkategóriák** lapon látni fog egy listát, ahol elvégezheti az eszközkategóriák konfigurálását: 
-- Adjon meg egy nevet, amelyet a **Hozzáadás** elemre kattintva új eszközkategóriaként vehet fel.
-- Emellett lehetőség van kategóriák kiválasztására és **Törlésére**.
+2. A **Felügyelet** munkaterületen bontsa ki a **Mobileszköz-kezelés** csomópontot, majd válassza az **Eszközkategóriák** elemet.
+3. Az **Eszközkategóriák** lapon látni fog egy listát, ahol elvégezheti az eszközkategóriák konfigurálását: 
+4. Adjon meg egy nevet, amelyet a **Hozzáadás** elemre kattintva új eszközkategóriaként vehet fel.
+5. Emellett lehetőség van kategóriák kiválasztására és **Törlésére**.
 
 Azure Active Directory biztonsági csoportok létrehozásakor az eszközkategória nevét fogja használni a 2. lépésben.
 

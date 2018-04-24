@@ -1,31 +1,29 @@
 ---
-title: "Symantec Endpoint Protection Mobile for iOS által észlelt fenyegetések elhárítása | Microsoft Docs"
-description: "Megtudhatja, hogyan hárítsa el az iOS-eszközön észlelt fenyegetéseket."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Symantec Endpoint Protection Mobile for iOS által észlelt fenyegetések elhárítása | Microsoft Docs
+description: Megtudhatja, hogyan hárítsa el az iOS-eszközön észlelt fenyegetéseket.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile által észlelt fenyegetés elhárítása
 
-A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell szüntetnie ezt a problémát. A következőhöz hasonló üzenetet fog látni:
-
-![Symantec Endpoint Protection Mobile által küldött, megfelelőség hiányát jelző üzenet](./media/ios-skycure-noncompliant-in-ssp.png)
+A Symantec Endpoint Protection Mobile potenciális fenyegetést észlelt az Ön eszközén. Ahhoz, hogy ismét hozzáférjen céges vagy iskolai levelezéséhez, alkalmazásaihoz és fájljaihoz, meg kell szüntetnie ezt a problémát. 
 
 A probléma megoldásához nyissa meg a Symantec Endpoint Protection Mobile alkalmazást, és kövesse az ott megjelenő utasításokat.
 

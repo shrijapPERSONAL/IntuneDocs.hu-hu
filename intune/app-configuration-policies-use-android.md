@@ -1,31 +1,31 @@
 ---
-title: "Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz"
+title: Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 titlesuffix: Microsoft Intune
-description: "A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott Android for Work-alkalmazásokhoz."
-keywords: 
+description: A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott Android for Work-alkalmazásokhoz.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott Android for Work-alkalmazásokhoz. A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
+A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg az Android for Work-alkalmazásokhoz. Az alkalmazásfejlesztőnek közzé kell tennie az Androidos kezelt alkalmazás konfigurációs beállításait az alkalmazás konfigurációs beállításainak megadásához. Rendelje hozzá az alkalmazáskonfigurációs szabályzatot ahhoz a felhasználói csoporthoz, amelyre alkalmazni szeretné a beállításokat.  A szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
 > [!Note]  
 > Az alkalmazáskonfigurációt nem minden alkalmazás támogatja. Érdeklődjön az alkalmazás fejlesztőjénél, hogy az alkalmazás az alkalmazáskonfigurációs szabályzatok támogatásához készült-e.
@@ -50,16 +50,27 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
 
 ## <a name="use-the-configuration-designer"></a>A konfigurációtervező használata
 
-A konfigurációtervezőt olyan eszközökön található alkalmazásokhoz használhatja, amelyek regisztrálva vannak vagy nincsenek regisztrálva az Intune-ban. A tervezővel konkrét konfigurációs kulcsokat és értékeket konfigurálhat. Az értékekhez az adattípust is meg kell adnia.
+A konfigurációtervezőt a konfigurációkat támogató Android-alkalmazásokhoz használhatja. A konfiguráció az Intune-ban regisztrált eszközökre fog vonatkozni. A tervezővel konkrét konfigurációs értékeket adhat meg az alkalmazás által közzétett beállításokhoz.
 
+Az alkalmazáshoz megadni kívánt konfigurációs beállítások kiválasztásához válassza a **Hozzáadás** lehetőséget.  
 A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:
 
-  - **Konfigurációs kulcs**  
-     Az adott beállításkonfigurációhoz egyedi azonosítóként szolgáló kulcs.
   - **Érték típusa**  
-    A konfigurációs érték adattípusa. A típus az alábbiak egyike: egész szám, valós szám, karakterlánc vagy logikai.
+    A konfigurációs érték adattípusa. Karakterlánc értéktípusok esetében igény szerint megadhat egy változót vagy tanúsítványprofilt értéktípusnak.
   - **Konfigurációs érték**  
-    A konfiguráció értéke. 
+    A konfiguráció értéke. Ha értéktípusnak egy változót vagy tanúsítványt ad meg, a konfigurációs érték legördülő menüjében változók és tanúsítványprofilok közül választhat.  Ha egy tanúsítványt választ, az eszközre alkalmazott tanúsítványalias a futásidő során lesz feltöltve.
+    
+### <a name="supported-variables-for-configuration-values"></a>A konfigurációs értékek támogatott változói
+
+Ha változót szeretne megadni értéktípusnak, az alábbi lehetőségek közül választhat:
+- Egyszerű felhasználónév, például **John@contoso.com**
+- E-mail, például **John@contoso.com**
+- Részleges egyszerű felhasználónév, például **János**
+- Fiókazonosító, például **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- Eszközazonosító, például **b9841cd9-9843-405f-be28-b2265c59ef97**
+- Felhasználóazonosító, például **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Felhasználónév, például **Szabó János**
+
 
 ## <a name="enter-the-json-editor"></a>A JSON-szerkesztő megnyitása
 

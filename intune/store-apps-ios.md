@@ -1,30 +1,29 @@
 ---
-title: "iOS-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz"
-titlesuffix: 
-description: "Útmutató iOS-es áruházbeli alkalmazások a Microsoft Intune-ba való hozzáadásához."
+title: iOS-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
+titlesuffix: ''
+description: Útmutató iOS-es áruházbeli alkalmazások a Microsoft Intune-ba való hozzáadásához.
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bd10c4f05204d0e911a7538f5d5133e4a336320
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS-es áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A témakörben található információ segítségével iOS-es áruházbeli alkalmazásokat adhat hozzá a Microsoft Intune-hoz. Az iOS-es áruházbeli alkalmazásokat az Intune telepíti a felhasználói eszközökön. A felhasználónak a cég munkatársának kell lennie. Az iOS-es alkalmazásbeli alkalmazások automatikusan frissülnek.
 
@@ -65,7 +64,7 @@ Ezzel az eljárással csak az áruházban ingyenesen elérhető alkalmazások ho
     - **Megjegyzések** – Ide írhatja be az alkalmazáshoz társítani kívánt megjegyzéseket. Ez a mező csak rendszergazdáknak jelenik meg, a végfelhasználók nem láthatják.
     - **Ikon** – Itt töltheti fel az alkalmazáshoz hozzárendelni kívánt ikont. Ez az alkalmazásikon jelenik meg a céges portálon böngésző felhasználók számára.
 13. Ha elkészült, az **Adatok hozzáadása** panelen kattintson az **OK** gombra.
-14. Kattintson a **Hozzáadás** lehetőségre az **Alkalmazás hozzáadása** panelen.
+14. Az **Alkalmazás hozzáadása** panelen kattintson a **Hozzáadás** elemre.
 
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz.
 

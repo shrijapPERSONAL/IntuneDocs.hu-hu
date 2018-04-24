@@ -1,30 +1,29 @@
 ---
-title: "Alkalmazásvédelmi szabályzatok létrehozása és telepítése"
+title: Alkalmazásvédelmi szabályzatok létrehozása és telepítése
 titleSuffix: Microsoft Intune
-description: "A Microsoft Intune alkalmazásvédelmi szabályzatainak létrehozása és hozzárendelése."
-keywords: 
+description: A Microsoft Intune alkalmazásvédelmi szabályzatainak létrehozása és hozzárendelése.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Az alábbiakban azt ismertetjük, hogyan hozhat létre és rendelhet hozzá a Microsoft Intune-ban alkalmazásvédelmi szabályzatokat a felhasználók számára. A témakör a meglévő szabályzatok módosítását is ismerteti.
 
@@ -37,28 +36,28 @@ Az alkalmazásvédelmi szabályzatok alkalmazhatók a felügyelt és az Intune �
 Amennyiben az MAM által támogatott alkalmazások listáját keresi, lásd az [MAM alkalmazáslistáját](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Alkalmazásvédelmi szabályzat létrehozása
-1.  A **Mobilalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket.
+1. A **Mobilalkalmazások** munkafolyamatban a **Kezelés** szakaszban válassza az **Alkalmazásvédelmi szabályzatok** lehetőséget. Ekkor megnyílik az **Alkalmazásvédelmi szabályzatok** panel, amelyen új szabályzatokat hozhat létre, és szerkesztheti a meglévőket.
 2. Válassza a **Szabályzat hozzáadása** elemet.
 
-  ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/app-protection-add-policy.png)
+   ![Képernyőfelvétel a Szabályzat hozzáadása panelről](./media/app-protection-add-policy.png)
 
-3.  Írja be a szabályzat nevét, adjon meg egy rövid leírást, és válassza ki a szabályzat platformtípusát. Igény esetén platformonként egynél több szabályzatot is beállíthat.
+3. Írja be a szabályzat nevét, adjon meg egy rövid leírást, és válassza ki a szabályzat platformtípusát. Igény esetén platformonként egynél több szabályzatot is beállíthat.
 
-4.  Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzattal való társításra.
+4. Válassza az **Alkalmazások** elemet az **Alkalmazások panel** megnyitásához, ahol megjelenik a rendelkezésre álló alkalmazások listája. Egy vagy több alkalmazást is kijelölhet a listában a létrehozott szabályzattal való társításra.
 5. Az alkalmazások kijelölése után a mentéshez válassza a **Kiválasztás** lehetőséget.
 
     > [!IMPORTANT]
     > Legalább egy alkalmazást ki kell jelölnie a szabályzat létrehozásához.
 
-6.  A **Beállítások** megnyitásához a **Szabályzat hozzáadása** panelen válassza a **Kötelező beállítások konfigurálása** elemet.
+6. A **Beállítások** megnyitásához a **Szabályzat hozzáadása** panelen válassza a **Kötelező beállítások konfigurálása** elemet.
 
-    A szabályzatbeállításoknak két kategóriájuk van, az **Adatáthelyezés** és a **Hozzáférés**.  Az adatáthelyezési szabályzatok az alkalmazások kimenő és bemenő adatforgalmára vonatkoznak. A hozzáférési szabályzatok a végfelhasználóknak az alkalmazásokhoz való hozzáférését határozzák meg munkahelyi környezetben.
-    Használatuk megkönnyítése érdekében a szabályzatbeállításoknak alapértelmezett értékük van. Ha az alapértelmezett értékek megfelelnek az elvárásainak, nem szükséges változtatnia.
+   A szabályzatbeállításoknak két kategóriájuk van, az **Adatáthelyezés** és a **Hozzáférés**.  Az adatáthelyezési szabályzatok az alkalmazások kimenő és bemenő adatforgalmára vonatkoznak. A hozzáférési szabályzatok a végfelhasználóknak az alkalmazásokhoz való hozzáférését határozzák meg munkahelyi környezetben.
+   Használatuk megkönnyítése érdekében a szabályzatbeállításoknak alapértelmezett értékük van. Ha az alapértelmezett értékek megfelelnek az elvárásainak, nem szükséges változtatnia.
 
-    > [!TIP]
-    > A szabályzat beállításai csak akkor lépnek érvénybe, ha munkahelyi környezetben használják az alkalmazásokat. Ha a végfelhasználók az alkalmazást személyes célra használják, nem vonatkoznak rájuk a ezek szabályzatok.
+   > [!TIP]
+   > A szabályzat beállításai csak akkor lépnek érvénybe, ha munkahelyi környezetben használják az alkalmazásokat. Ha a végfelhasználók az alkalmazást személyes célra használják, nem vonatkoznak rájuk a ezek szabályzatok.
 
-7.  A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
+7. A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
 8. A konfiguráció mentéséhez válassza az **OK** gombot. Ekkor visszakerül a **Szabályzat hozzáadása** panelre.
 9. Válassza a **Létrehozás** lehetőséget a szabályzat létrehozásához és a beállítások mentéséhez.
 
@@ -119,6 +118,16 @@ A változtatások hatásának érzékeléséhez a felhasználónak ki kell jelen
 2.  Válassza a **Szabályzatbeállítások** elemet a **Szabályzatbeállítások** panel megnyitásához.
 
 3.  Módosítsa a beállításokat, majd mentse a változtatásokat a **Mentés** ikonnal.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Eszközkezelési állapottól függő alkalmazásvédelmi szabályzatok
+Gyakori a szervezetekben, hogy a felhasználóknak engedélyezett mind a mobileszköz-kezelés (MDM) által felügyelt eszközök használata, mind pedig a nem felügyelt, csak az Intune alkalmazásvédelmi szabályzatok által védett eszközök használata, ideértve például a BYOD eszközöket.
+
+Mivel az Intune alkalmazásvédelmi szabályzatok a felhasználói identitáshoz vannak társítva, a felhasználók védelmi beállításait a rendszer hagyományosan alkalmazza mind a regisztrált (MDM által felügyelt), mind pedig a regisztrálatlan (MDM nélküli) eszközökre. Emiatt lehetővé tettük annak megadását, hogy az Intune alkalmazásvédelmi szabályzatot az Intune-ban regisztrált vagy regisztrálatlan iOS- és Android-eszközökre kívánja-e alkalmazni. Használhat egy külön védelmi szabályzatot a nem felügyelt eszközökre szigorú adatveszteség-megelőzési (DLP) beállításokkal, illetve egy külön védelmi szabályzatot az MDM által felügyelt eszközökre kevésbé szigorú DLP-beállításokkal. 
+
+Ezeknek a szabályzatoknak a létrehozásához lépjen a **Mobilalkalmazások** > **Alkalmazásvédelmi szabályzatok** területre az Intune-konzolon, és válassza a **Szabályzat hozzáadása** lehetőséget. Másik lehetőségként egy meglévő alkalmazásvédelmi szabályzatot is szerkeszthet. Ha az alkalmazásvédelmi szabályzatot a felügyelt és a felügyeletlen eszközökre egyaránt alkalmazni szeretné, akkor győződjön meg róla, hogy a **Target to all app types** (Alkalmazás minden alkalmazástípusra) beállításnál az **Igen** lehetőség van kiválasztva (mely az alapértelmezett érték). Ha a szabályzatot az eszközkezelési állapottól függően szeretné alkalmazni, állítsa a **Target to all app types** beállítást a **Nem** értékre. 
+
+> [!NOTE]
+> Ha kifejezetten iOS-eszközökre vonatkozó támogatási információkat keres az alkalmazásvédelmi szabályzatok eszközkezelési állapottól függő alkalmazásáról, lásd: [MAM-alapú védelmi szabályzatok alkalmazása eszközkezelési állapot alapján](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## <a name="policy-settings"></a>Szabályzatbeállítások
 Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintéséhez válasszon a következő hivatkozások közül:

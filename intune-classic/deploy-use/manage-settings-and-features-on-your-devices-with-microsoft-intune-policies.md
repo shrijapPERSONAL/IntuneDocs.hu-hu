@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e639dda2509ab51bfcf6d0976be517e220800e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Az eszközök beállításainak és funkcióinak felügyelete a Microsoft Intune-szabályzatok használatával
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-A Microsoft Intune*-szabályzatok* a mobileszközök és a számítógépek funkcióit szabályozó beállítások csoportjai. A szabályzatokat ajánlott vagy testreszabott beállításokat tartalmazó sablonok segítségével hozhatja létre, majd telepítheti őket az eszköz- vagy felhasználói csoportok számára.
+A Microsoft Intune *-szabályzatok* a mobileszközök és a számítógépek funkcióit szabályozó beállítások csoportjai. A szabályzatokat ajánlott vagy testreszabott beállításokat tartalmazó sablonok segítségével hozhatja létre, majd telepítheti őket az eszköz- vagy felhasználói csoportok számára.
 
 ## <a name="types-of-policies"></a>Szabályzatok típusai
 

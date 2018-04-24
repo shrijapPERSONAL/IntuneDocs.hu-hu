@@ -1,31 +1,31 @@
 ---
-title: "Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz"
-titleSuffix: 
-description: "Útmutató Windows Áruházbeli alkalmazások a Microsoft Intune-ba való hozzáadásához."
-keywords: 
+title: Microsoft Store-alkalmazások hozzáadása a Microsoft Intune-hoz
+titleSuffix: ''
+description: Útmutató Microsoft Store-beli (Windows Áruházbeli) alkalmazások Microsoft Intune-ba való hozzáadásához.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows Áruházbeli alkalmazások hozzáadása a Microsoft Intune-hoz
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store-alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az alkalmazások hozzárendelése, figyelése, konfigurálása és védelme előtt hozzá kell adnia őket az Intune-hoz. A következő lépésekkel Windows Áruházbeli alkalmazásokat adhat hozzá a Microsoft Intune-hoz.
+Az alkalmazások hozzárendelése, figyelése, konfigurálása és védelme előtt hozzá kell adnia őket az Intune-hoz. A következő lépésekkel Microsoft Store-alkalmazásokat adhat hozzá a Microsoft Intune-hoz.
 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
@@ -51,5 +51,4 @@ Az alkalmazások hozzárendelése, figyelése, konfigurálása és védelme elő
 A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendelheti a kívánt csoportokhoz. 
 
 ## <a name="next-steps"></a>További lépések
-
 - [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)

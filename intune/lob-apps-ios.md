@@ -15,15 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7de6c995108bff3b1571b281df2745629c7f9741
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: b46981aa097de96764bd0c88ad3385debbcce85d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikkben található információ segítségével iOS rendszerű üzletági alkalmazásokat adhat hozzá a Microsoft Intune-hoz.
 
@@ -74,7 +74,7 @@ A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendel
 
 ## <a name="step-5---update-a-line-of-business-app"></a>5. lépés – üzletági alkalmazás frissítése
 
-[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]  
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
 > Ahhoz, hogy az Intune szolgáltatás sikeresen üzembe tudja helyezni az új IPA-fájlt az eszközön, az IPA-csomagban található *Info.plist* fájlban meg kell növelni az *CFBundleVersion* karakterlánc értékét.

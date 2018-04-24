@@ -1,27 +1,27 @@
 ---
-title: "Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban macOS esetén"
-titlesuffix: 
-description: "A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a macOS rendszerű eszközökön."
-keywords: 
+title: Eszközkorlátozásokra vonatkozó beállítások a Microsoft Intune-ban macOS esetén
+titlesuffix: ''
+description: A cikk tájékoztatást nyújt az Intune azon beállításairól, amelyekkel szabályozhatók az eszközbeállítások, illetve a funkciók köre a macOS rendszerű eszközökön.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f4cf5a5eb716760034b25b52098b9e65e6540c63
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>A Microsoft Intune macOS-eszközkorlátozásokra vonatkozó beállításai
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A cikk bemutatja a Microsoft Intune olyan eszközkorlátozásokra vonatkozó beállításait, melyek konfigurálhatók macOS rendszerű eszközökhöz.
 

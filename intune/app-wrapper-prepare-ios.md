@@ -1,28 +1,28 @@
 ---
-title: "iOS-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel"
-description: "Megtudhatja, hogyan burkolhatja az iOS-alkalmazásait anélkül, hogy módosítaná magának az alkalmazásnak a programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására."
-keywords: 
+title: iOS-alkalmazások burkolása az Intune Alkalmazásburkoló eszközzel
+description: Megtudhatja, hogyan burkolhatja az iOS-alkalmazásait anélkül, hogy módosítaná magának az alkalmazásnak a programkódját. Előkészítheti az alkalmazásokat a mobilalkalmazás-felügyeleti szabályzatok alkalmazására.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 A Microsoft Intune App Wrapping Tool for iOS nevű alkalmazásburkoló eszközzel engedélyezheti az Intune alkalmazásvédelmi szabályzatait a saját fejlesztésű IOS-alkalmazásokra az alkalmazás kódjának módosítása nélkül.
 
@@ -98,48 +98,48 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 4. Kattintson a **Certificates, IDs & Profiles** (Tanúsítványok, azonosítók és profilok) lehetőségre.
 
-  ![Apple fejlesztői portál](./media/iOS-signing-cert-1.png)
+   ![Apple fejlesztői portál](./media/iOS-signing-cert-1.png)
 
 5. Kattintson az ![Apple fejlesztői portál plusz jel](./media/iOS-signing-cert-2.png) jelre a jobb felső sarokban iOS-tanúsítvány hozzáadásához.
 
 6. A **Production** (Éles üzem) alatt létrehozhat **Belső és Ad Hoc** tanúsítványokat.
 
-  ![Belső és Ad Hoc tanúsítvány kiválasztása](./media/iOS-signing-cert-3.png)
+   ![Belső és Ad Hoc tanúsítvány kiválasztása](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Ha az alkalmazást nem tervezi terjeszteni, csak belső tesztelésre szánja, akkor iOS App Development (iOS-alkalmazásfejlesztési) tanúsítványt is használhat a Production típusú helyett. Fejlesztői tanúsítvány használata esetén bizonyosodjon meg róla, hogy a mobil kiépítési profil megadja, hogy mely eszközökre fog települni az alkalmazás.
+   >[!NOTE]
+   >Ha az alkalmazást nem tervezi terjeszteni, csak belső tesztelésre szánja, akkor iOS App Development (iOS-alkalmazásfejlesztési) tanúsítványt is használhat a Production típusú helyett. Fejlesztői tanúsítvány használata esetén bizonyosodjon meg róla, hogy a mobil kiépítési profil megadja, hogy mely eszközökre fog települni az alkalmazás.
 
 7. Kattintson a **Next** (Folytatás) gombra a lap alján.
 
 8. Olvassa el az útmutatót a **Certificate Signing Request (CSR)** (tanúsítvány-aláírási kérelem) Keychain Access alkalmazással való létrehozásáról macOS rendszerű számítógépen.
 
-  ![CSR létrehozásának útmutatója](./media/iOS-signing-cert-4.png)
+   ![CSR létrehozásának útmutatója](./media/iOS-signing-cert-4.png)
 
 9. A fenti útmutatót használva hozzon létre tanúsítvány-aláírási kérelmet. Indítsa el a macOS-számítógépen a **Keychain Access** alkalmazást.
 
 10. A képernyő felső részén a macOS menüsorában válassza a **Keychain Access > Certificate Assistant (Tanúsítványsegéd) >  Request a Certificate From a Certificate Authority (Tanúsítvány kérése hitelesítésszolgáltatótól)** elemet.  
 
-  ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-5.png)
+    ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-5.png)
 
 11. CSR-fájl létrehozásához kövesse az Apple fejlesztői webhely fenti útmutatóját. A CSR-fájlt mentse el a macOS-számítógépre.
 
-  ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-6.png)
+    ![Tanúsítvány kérése hitelesítésszolgáltatótól a Keychain Access alkalmazásban](./media/iOS-signing-cert-6.png)
 
 12. Térjen vissza az Apple fejlesztői webhelyre. Kattintson a **Folytatás**gombra. Töltse fel a CSR-fájlt.
 
 13. Az Apple létrehozza az aláíró tanúsítványt. Töltse le, majd mentse el egy könnyen megtalálható helyre a macOS-számítógépen.
 
-  ![Aláíró tanúsítvány letöltése](./media/iOS-signing-cert-7.png)
+    ![Aláíró tanúsítvány letöltése](./media/iOS-signing-cert-7.png)
 
 14. A tanúsítvány kulcslánchoz való hozzáadásához kattintson duplán a letöltött tanúsítványfájlra.
 
 15. Nyissa meg újra a **Keychain Access** alkalmazást. Az ablak jobb felső részében található keresősávval keresse meg a tanúsítványt. Kattintson jobb egérgombbal a megtalált elemre a menü megjelenítéséhez, majd kattintson a **Get Info** (Információk) lehetőségre. A példaképernyőkön fejlesztési tanúsítványt használunk éles üzemi tanúsítvány helyett.
 
-  ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-8.png)
+    ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-8.png)
 
 16. Ekkor megjelenik egy információs ablak. Görgessen az ablak aljára, és keresse meg a **Fingerprints** (Ujjlenyomatok) címkét. Másolja ki az (itt homályosan látható) **SHA1** karakterláncot, és használja ezt az App Wrapping Tool -c paraméterének argumentumaként.
 
-  ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-9.png)
+    ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,7 +153,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
 4. A **Distribution** (Terjesztés) alatt létrehozhat **In House** (Belső) létesítési profilt.
 
-  ![Belső létesítési profil kiválasztása](./media/iOS-provisioning-profile-1.png)
+   ![Belső létesítési profil kiválasztása](./media/iOS-provisioning-profile-1.png)
 
 5. Kattintson a **Folytatás**gombra. Fontos, hogy az előzőekben létrehozott aláíró-tanúsítványt összekapcsolja a létesítési profillal.
 
@@ -414,8 +414,8 @@ Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a b
 4. Kattintson az „Első lépések” hivatkozásra.
 5. Most már megoszthatja a naplófájlokat e-mailben, vagy átmásolhatja őket egy OneDrive-helyre.
 
->[!NOTE]
-A naplózási funkció engedélyezve van az Intune alkalmazásburkoló eszköz 7.1.13-as vagy újabb verziójával burkolt alkalmazásokban.
+> [!NOTE]
+> A naplózási funkció engedélyezve van az Intune alkalmazásburkoló eszköz 7.1.13-as vagy újabb verziójával burkolt alkalmazásokban.
 
 ### <a name="see-also"></a>Lásd még:
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)</br>

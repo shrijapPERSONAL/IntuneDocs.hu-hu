@@ -1,11 +1,11 @@
 ---
-title: Az eszközök megtekintése a Microsoft Intune-nal – Azure | Microsoft Docs
+title: Eszköz részletes adatainak megtekintése az Azure-beli Microsoft Intune-nal | Microsoft Docs
 description: Megtekintheti az eszközei adatait, például az operációs rendszereket, a tárhelyet, a gyártót és a modelladatokat. Az Azure-beli Microsoft Intune-nal lekérheti a telepített alkalmazások listáját, ellenőrizheti a megfelelőségi szabályzatokat, és beállíthatja a TeamViewert. Ez hasonlít a kezelt eszközök leltárának áttekintéséhez.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,36 +13,37 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eaaf3e9807a8eab66c24f4d1bb3c3c5ea9f4cfe0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 404fb301d9ab749f887840208e12388e12d79db4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az **Eszközök** funkció további részletekkel szolgál a kezelt eszközökkel kapcsolatban, például hardveradatokkal és a telepített alkalmazások listájával. 
+Az **Eszközök** funkció további részletekkel szolgál a kezelt eszközökkel kapcsolatban, például hardveradatokkal és a telepített alkalmazások listájával.
 
 Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajdonságait az Azure Portalon.
 
-## <a name="view-your-device-details"></a>Eszközadatok megtekintése
+## <a name="view-the-device-details"></a>Eszköz részletes adatainak megtekintése
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza az **Eszközök** lehetőséget. Az Eszközök területen több lehetősége van:
+3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget, majd jelölje ki a listában szereplő eszközök egyikét, hogy megnyissa annak részletes adatait:
 
-   - **Áttekintés**: Tájékoztatást nyújt a regisztrált eszközökről és az egyes eszközökön futó operációs rendszerekről.
-   - **Kezelés**: A **Minden eszköz** vagy az **Azure AD-eszközök** lehetőséget választva megjelenítheti az összes kezelt eszköz listáját.
-    Válassza ki a listáról az egyik eszközt. Ekkor megnyílik az <*eszköznév*> **áttekintése**, ahol kiválaszthatja a következőket:
-     - **Áttekintés**: Az eszköz neve, tulajdonosa, BYOD-típusa, bejelentkezési időpontja és egyéb adatok megjelenítése.
-     - **Hardver**: A rendelkezésre álló szabad tárhely, a modell és a gyártó neve és egyéb részletek.
-     - **Észlelt alkalmazások**: Felsorolja azon telepített alkalmazásokat, amelyet az Intune talált az eszközön.
-     - **Eszközmegfelelőség**: Megjeleníti az eszközhöz rendelt összes megfelelőségi szabályzat állapotát.
-     - **Az eszköz konfigurációja**: Megjeleníti az eszközhöz rendelt összes eszközkonfigurációs szabályzat megfelelőségi állapotát.
-   - **Figyelés**: Az **Eszközműveletek** lehetőséget választva megjeleníthetők a kezelt eszközökön végrehajtott műveletek és jelenlegi állapotuk. A **naplók** a különböző feladatok állapotát jelenítik meg.
-   - **Telepítő** > **TeamViewer-összekötő**: Távoli felügyeletet konfigurálhat az eszközökön a TeamViewer-szoftverrel. Részletesebb információk: [Távsegítség nyújtása az Intune által felügyelt Android-eszközökhöz](device-profile-android-teamviewer.md).
+   - Az **Áttekintés** az eszköz nevét és néhány lényeges tulajdonságát tartalmazza, köztük sok más mellett azt is, hogy saját eszköz-e (BYOD), és mikor jelentkezett be. A továbbiakhoz válassza a **További részletek** lehetőséget:
+     - Céges adatok eltávolítása
+     - Eszköz törlése
+     - Az eszköz távoli zárolása
+     - Törlés
+     - Távsegítség-munkamenet indítása
+   - [Saját létrehozású eszközkategória](device-group-mapping.md) hozzárendelésére és az eszköz tulajdonosának (saját eszköz vagy vállalati eszköz) átállítására használja a **Tulajdonságok** lehetőséget.
+   - A **Hardver** sok részletet tartalmaz az eszközről, köztük sok más mellett az eszköz azonosítóját, operációs rendszerét és annak verzióját, a tárhelyet, a modellt és a gyártót és a feltételes hozzáférés beállításait.
+   - Az **Észlelt alkalmazások** verziójukkal együtt sorolja fel azon telepített alkalmazásokat, amelyet az Intune talált az eszközön. Az alkalmazások listáját **Exportálni** is tudja egy .csv-fájlba.
+   - Az **Eszközmegfelelőség** a hozzárendelt megfelelőségi szabályzatok listája mellett azt is tartalmazza, hogy az eszköz megfelelő vagy nem.
+   - Az **Eszközkonfiguráció** az eszközhöz rendelt összes eszközkonfigurációs szabályzat listáját mutatja meg, és hogy a szabályzat alkalmazása sikeres vagy sikertelen.
 
 Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalmazásokról készít listát. A személyes eszközökön található alkalmazásokat nem ellenőrzi. A vállalat tulajdonában lévő Windows 10 rendszerű számítógépekről csak a modern alkalmazásokat veszi figyelembe a lista készítésekor. A Win32-es alkalmazásokról az Intune nem gyűjt információkat. Az eszközök szolgáltatójától függően előfordulhat, hogy nem minden alkalmazásról talál információt.
 

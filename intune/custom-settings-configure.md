@@ -1,26 +1,26 @@
 ---
-title: "Egyéni eszközbeállítások az Azure-beli Intune-ban | Microsoft Docs"
-description: "Profilok hozzáadása és létrehozása egyéni beállítások használatához Windows, Android és iOS-eszközökön a Microsoft Intune-nal"
-keywords: 
+title: Egyéni eszközbeállítások az Azure-beli Intune-ban | Microsoft Docs
+description: Profilok hozzáadása és létrehozása egyéni beállítások használatához Windows, Android és iOS-eszközökön a Microsoft Intune-nal
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Egyéni beállításokkal rendelkező profil létrehozása az Intune-ban
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Előfordulhat, nem talál meg minden szükséges vagy igényelt beépített beállítást az Intune-ban. Az is megtörténhet, hogy olyan beállítást kíván használni, amely más eszközprofilokban is elérhető. A beállítások hozzáadásához létrehozhat egy eszközprofilt, és egyéni eszközbeállításokkal konfigurálhatja azt.
 

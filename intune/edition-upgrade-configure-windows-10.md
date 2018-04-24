@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 rendszerű eszközök frissítése az Azure-beli Microsoft Intune-nal | Microsoft Docs"
-description: "Eszközprofilt hozhat létre a Microsoft Intune-ban a Windows 10 rendszerű eszközök új verziókra történő frissítéséhez. Tekintse meg a Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic és Mobile kiadások támogatott frissítési útvonalait is."
-keywords: 
+title: Windows 10 rendszerű eszközök frissítése az Azure-beli Microsoft Intune-nal | Microsoft Docs
+description: Eszközprofilt hozhat létre a Microsoft Intune-ban a Windows 10 rendszerű eszközök új verziókra történő frissítéséhez. Tekintse meg a Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic és Mobile kiadások támogatott frissítési útvonalait is.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>A Windows 10-kiadás frissítési profiljának konfigurálása az Intune-ban
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Frissítési profilt konfigurálhat az Intune-ban a Windows 10-kiadást futtató eszközök más kiadásra történő frissítéséhez. Tekintse meg a támogatott frissítési útvonalakat is.
 
@@ -122,23 +122,23 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Eszközkorlátozási beállításokat tartalmazó eszközprofil létrehozása
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a  **Microsoft Intune** elemet.
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközkonfiguráció** lehetőséget, kattintson a **Profilok** elemre, majd válassza a **Profil létrehozása** lehetőséget.
 4. Adja meg a kiadásfrissítési profil nevét és leírását a **Név** és **Leírás** mezőben.
 5. A **Platform** legördülő listából válassza a **Windows 10 és újabb** lehetőséget.
 6. A **Profil típusa** legördülő listából válassza az **Kiadásfrissítés** lehetőséget.
 7. A **Kiadásfrissítés** tulajdonságai területen adja meg a következő beállításokat:
-  - **Frissítés erre a kiadásra** – A legördülő listából válassza ki a Windows 10 asztali verzió, a Windows 10 Holographic, vagy a Windows 10 Mobile rendszernek azt a verzióját, amelyre a megcélzott eszközöket frissíteni szeretné.
-  - **Termékkulcs** – Adja meg azt a Microsofttól beszerzett termékkulcsot, amely minden megcélzott, a Windows 10 asztali verzióját futtató eszköz frissítéséhez használható. 
+   - **Frissítés erre a kiadásra** – A legördülő listából válassza ki a Windows 10 asztali verzió, a Windows 10 Holographic, vagy a Windows 10 Mobile rendszernek azt a verzióját, amelyre a megcélzott eszközöket frissíteni szeretné.
+   - **Termékkulcs** – Adja meg azt a Microsofttól beszerzett termékkulcsot, amely minden megcélzott, a Windows 10 asztali verzióját futtató eszköz frissítéséhez használható. 
     Miután létrehozta a termékkulcsot tartalmazó szabályzatot, a termékkulcsot nem lehet többé frissíteni, és biztonsági okokból rejtve marad. A termékkulcs módosításához a teljes kulcsot újra meg kell adnia.
-  - **Licencfájl** – a Microsofttól kapott licencfájl kiválasztásához válassza a **Böngészés** lehetőséget. A licencfájl arról a Windows Holographic vagy Windows 10 Mobile kiadásról tartalmaz licencinformációkat, amelyre a megcélzott eszközöket frissíteni kívánja.
+   - **Licencfájl** – a Microsofttól kapott licencfájl kiválasztásához válassza a **Böngészés** lehetőséget. A licencfájl arról a Windows Holographic vagy Windows 10 Mobile kiadásról tartalmaz licencinformációkat, amelyre a megcélzott eszközöket frissíteni kívánja.
 8. Ha elkészült, a változások mentéséhez kattintson a **Létrehozás** elemre.
 
 Ekkor létrejön a profil, és megjelenik a profilok listájában.
 
 ## <a name="next-steps"></a>További lépések
 
-Ha csoportokhoz kívánja hozzárendelni a profilt, tekintse meg az [Eszközprofilok hozzárendelése](device-profile-assign.md) című témakört.
+Ha a profilt csoportokhoz szeretné rendelni, az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikkben talál további információt.
 
 >[!NOTE]
 >Ha később eltávolítja a szabályzat-hozzárendelést, az eszközön futó Windows-verzió nem áll vissza, és továbbra is megfelelően működik.

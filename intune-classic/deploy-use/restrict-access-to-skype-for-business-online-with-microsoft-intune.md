@@ -1,29 +1,29 @@
 ---
-title: "A Skype Vállalati online verzió védelme"
-description: "A feltételes hozzáférés funkció segítségével védheti és felügyelheti a Skype Vállalati online verzióhoz való hozzáférést."
-keywords: 
+title: A Skype Vállalati online verzió védelme
+description: A feltételes hozzáférés funkció segítségével védheti és felügyelheti a Skype Vállalati online verzióhoz való hozzáférést.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>A Skype Vállalati online verzió elérésének védelme a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Skype Vállalati online verzióhoz való hozzáférés korlátozásához állítson be a **Skype Vállalati online verzióra** vonatkozó feltételes hozzáférési szabályzatot.
 A feltételes hozzáférés két összetevőből áll:
@@ -87,23 +87,23 @@ Ha készen áll, folytassa a **3. lépéssel**.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3. lépés: A Skype Vállalati online verzióra vonatkozó szabályzat beállítása
 Ezután állítsa be úgy a szabályzatot, hogy csak a felügyelt és a feltételeknek megfelelő eszközök érhessék el a Skype Vállalati online verziót. A szabályzat ezek után az Azure Active Directoryban tárolódik.
 
-1.  A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** > **Feltételes hozzáférés** > **A Skype Vállalati online verzió szabályzata** lehetőségre.
+1. A [Microsoft Intune felügyeleti konzolon](https://manage.microsoft.com) kattintson a **Házirend** > **Feltételes hozzáférés** > **A Skype Vállalati online verzió szabályzata** lehetőségre.
 
-  ![A Skype Vállalati online verzió feltétes hozzáférési szabályzatának oldaláról készült képernyőkép](./media/conditional_access_SFBPolicy.png)
+   ![A Skype Vállalati online verzió feltétes hozzáférési szabályzatának oldaláról készült képernyőkép](./media/conditional_access_SFBPolicy.png)
 
-2.  Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
+2. Válassza a **Feltételes hozzáférési szabályzat engedélyezése** lehetőséget.
 
-3.  Az **Alkalmazás hozzáférése**szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
+3. Az **Alkalmazás hozzáférése**szakaszban kiválaszthatja, hogy mire szeretné alkalmazni a feltételes hozzáférési szabályzatot:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android--**
+   -   **Android**
 
-4.  A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directorybeli biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
+4. A **Megcélzott csoportok** területen kattintson a **Módosítás** lehetőségre azon Active Directorybeli biztonsági csoportok kiválasztásához, amelyekre érvényes a szabályzat. Kiválaszthatja, hogy a szabályzat minden felhasználóra, vagy csak felhasználók bizonyos csoportjaira vonatkozzon.
 
-5.  A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
+5. A **Kivétel alá eső csoportok**területen kattintson a **Módosítás** lehetőségre azon Active Directory-alapú biztonsági csoportok kiválasztásához, amelyekre nem érvényes a szabályzat.
 
-6.  Ha elkészült, válassza a **Mentés** elemet.
+6. Ha elkészült, válassza a **Mentés** elemet.
 
 Ezzel elvégezte a Skype Vállalati online verzió feltételes elérésének beállítását. Nem kell telepítenie a feltételes hozzáférési szabályzatot, az azonnal érvénybe lép.
 

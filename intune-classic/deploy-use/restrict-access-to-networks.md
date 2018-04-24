@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>A Cisco ISE használata az Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Cisco Identity Services Engine (ISE) Intune-integrációja lehetővé teszi, hogy az Intune eszközregisztrációs és megfelelőségi állapotával hálózati szabályzatokat hozzon létre az ISE-környezetében. Ezekkel a szabályzatokkal biztosíthatja, hogy a céges hálózathoz csak azok az eszközök csatlakozhassanak, amelyeket az Intune felügyel, és amelyek megfelelnek az Intune szabályzatainak.
 
@@ -70,13 +70,13 @@ b. Válassza a lakat ikon &gt;  **További információ** lehetőséget.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>Önaláírt tanúsítvány létrehozása az ISE alkalmazásban 
 
-1.  A ISE-konzolon válassza az **Administration** (Felügyelet) > **Certificates** (Tanúsítványok) > **System Certificates** (Rendszertanúsítványok) > **Generate Self Signed Certificate** (Önaláírt tanúsítvány létrehozása) elemet.  
-2.       Exportálja az önaláírt tanúsítványt.
+1. A ISE-konzolon válassza az **Administration** (Felügyelet) > **Certificates** (Tanúsítványok) > **System Certificates** (Rendszertanúsítványok) > **Generate Self Signed Certificate** (Önaláírt tanúsítvány létrehozása) elemet.  
+2. Exportálja az önaláírt tanúsítványt.
 3. Egy szövegszerkesztőben szerkessze az alábbiak szerint az exportált tanúsítványt:
 
- - Törölje a **-----BEGIN CERTIFICATE-----** sort.
- - Törölje az **-----END CERTIFICATE-----** sort.
- 
+   - Törölje a **-----BEGIN CERTIFICATE-----** sort.
+   - Törölje az **-----END CERTIFICATE-----** sort.
+
 Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 
 
@@ -88,13 +88,13 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 5. Mentse a fájlt névváltoztatás nélkül.
 6. Adjon az alkalmazásnak engedélyt a Microsoft Graph-hoz és a Microsoft Intune API-hoz.
 
- a. A Microsoft Graph-hoz válassza a következőket:
+   a. A Microsoft Graph-hoz válassza a következőket:
     - **Alkalmazásengedélyek**: Címtáradatok olvasása
     - **Delegált engedélyek**:
         - Felhasználói adatok elérése bármikor
         - A felhasználók beléptetése
 
- b. A Microsoft Intune API-hoz az **Alkalmazásengedélyeknél** válassza **Az eszköz állapotának és megfelelőségének beolvasása az Intune-ról** lehetőséget.
+   b. A Microsoft Intune API-hoz az **Alkalmazásengedélyeknél** válassza **Az eszköz állapotának és megfelelőségének beolvasása az Intune-ról** lehetőséget.
 
 7. Válassza a **Végpontok megtekintése** lehetőséget, és másolja le az alábbi értékeket az ISE-beállítások konfigurálásához:
 
@@ -105,23 +105,40 @@ Ellenőrizze, hogy a teljes szöveg egy sorból áll-e
 |Frissítse a kódot az ügyfél-azonosítóval|Ügyfél-azonosító|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. lépés: Töltse fel az önaláírt tanúsítványt az ISE-ből az Azure AD-ben létrehozott ISE-alkalmazásba
-1.     A .cer X509 nyilvános tanúsítványfájlból szerezze be a base64-kódolású tanúsítvány-értéket és ujjlenyomatot. Ez a példa PowerShellt használ:
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Tárolja el az értékeket a $base64Thumbprint, a $base64Value és a $keyid változókhoz, amelyeket a következő lépésben használ majd.
-2.       Töltse fel a tanúsítványt a jegyzékfájlon keresztül. Jelentkezzen be az [Azure felügyeleti portálra](https://manage.windowsazure.com)
-2.      Az Azure AD beépülő modulban keresse meg az X.509-es tanúsítvánnyal konfigurálni kívánt alkalmazást.
-3.      Töltse le az alkalmazás jegyzékfájlját. 
-5.      Az üres “KeyCredentials”: [], tulajdonságot cserélje le a következő JSON-kódra.  A KeyCredentials összetett típus; leírása az [Entitások és összetett típusok segédletben](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) található.
+1. A .cer X509 nyilvános tanúsítványfájlból szerezze be a base64-kódolású tanúsítvány-értéket és ujjlenyomatot. Ez a példa PowerShellt használ:
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Töltse fel a tanúsítványt a jegyzékfájlon keresztül. Jelentkezzen be az [Azure felügyeleti portálra](https://manage.windowsazure.com)
+3. Az Azure AD beépülő modulban keresse meg az X.509-es tanúsítvánnyal konfigurálni kívánt alkalmazást.
+4. Töltse le az alkalmazás jegyzékfájlját. 
+5. Az üres “KeyCredentials”: [], tulajdonságot cserélje le a következő JSON-kódra.  A KeyCredentials összetett típus; leírása az [Entitások és összetett típusok segédletben](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) található.
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 Például:
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Például:
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Mentse az alkalmazás jegyzékfájlján végrehajtott módosítást.
-7.      Töltse fel a módosított alkalmazásjegyzék-fájlt az Azure felügyeleti központon keresztül.
-8.      Nem kötelező: Töltse le újra a jegyzékfájlt, hogy ellenőrizze, hogy a X-509-es tanúsítvány telepítve lett az alkalmazáson.
+
+6. Mentse az alkalmazás jegyzékfájlján végrehajtott módosítást.
+7. Töltse fel a módosított alkalmazásjegyzék-fájlt az Azure felügyeleti központon keresztül.
+8. Nem kötelező: Töltse le újra a jegyzékfájlt, hogy ellenőrizze, hogy a X-509-es tanúsítvány telepítve lett az alkalmazáson.
 
 >[!NOTE]
 >

@@ -1,25 +1,25 @@
 ---
-title: "Az iOS-eszközök regisztrálási módjának kiválasztása az Intune-ban"
+title: Az iOS-eszközök regisztrálási módjának kiválasztása az Intune-ban
 titlesuffix: Microsoft Intune
-description: "iOS-eszközök a Microsoft Intune-ban való regisztrációjának beállítása."
-keywords: 
+description: iOS-eszközök a Microsoft Intune-ban való regisztrációjának beállítása.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-eszközök regisztrálása az Intune-ban
 
@@ -79,11 +79,11 @@ Felhasználói affinitás szükséges az alábbiak támogatásához:
 
 5. A bejelentkezés után a rendszer kéri a felhasználótól az eszköz regisztrálását. Ennek első lépése az eszköz azonosítása. Az alkalmazás megjeleníti azon iOS-eszközök listáját, amelyek már a vállalat tulajdonában vannak, és amelyek hozzá vannak rendelve a felhasználók Intune-fiókjához. A felhasználónak ki kell választania a megfelelő eszközt.
 
-  Ha az eszköz még nincs regisztrálva a vállalatnál, a normál regisztrálási művelet folytatásához a felhasználó válassza az **új eszköz** lehetőséget.
+   Ha az eszköz még nincs regisztrálva a vállalatnál, a normál regisztrálási művelet folytatásához a felhasználó válassza az **új eszköz** lehetőséget.
 
 6. A következő képernyőn a felhasználónak meg kell erősítenie az új eszköz sorozatszámát. A felhasználó a **sorozatszám megerősítése** hivatkozásra koppinthat, és ezzel megnyithatja a beállítási alkalmazás a sorozatszám ellenőrzéséhez való használatára vonatkozó útmutatást. A felhasználónak ezután meg kell adnia a sorozatszám utolsó négy számjegyét a Vállalati portál alkalmazásban.
 
-  Ez a lépés azt ellenőrzi, hogy az eszköz az Intune-ban regisztrált vállalati eszköz-e. Ha az eszközön található sorozatszám nem egyezik, nem a megfelelő eszköz választotta ki. A felhasználónak ekkor vissza kell lépnie az előző képernyőre, és ki kell választania egy másik eszközt.
+   Ez a lépés azt ellenőrzi, hogy az eszköz az Intune-ban regisztrált vállalati eszköz-e. Ha az eszközön található sorozatszám nem egyezik, nem a megfelelő eszköz választotta ki. A felhasználónak ekkor vissza kell lépnie az előző képernyőre, és ki kell választania egy másik eszközt.
 
 7. A sorozatszám ellenőrzése után a Vállalati portál alkalmazás átirányítja a felhasználót a Vállalati portál webhelyre a regisztrálás véglegesítéséhez. Ekkor a webhely felajánlja a lehetőséget, hogy visszatérjen az alkalmazáshoz.
 

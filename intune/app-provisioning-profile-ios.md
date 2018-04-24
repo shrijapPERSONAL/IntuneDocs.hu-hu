@@ -1,29 +1,29 @@
 ---
-title: "iOS-alkalmazáskiépítési profilok a Microsoft Intune-ban"
-titlesuffix: 
-description: "Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.”"
-keywords: 
+title: iOS-alkalmazáskiépítési profilok a Microsoft Intune-ban
+titlesuffix: ''
+description: Az Intune biztosítja az eszközöket, amelyek segítségével proaktív módon rendelhet hozzá új kiépítési profilt azokhoz az eszközökhöz, amelyeken hamarosan lejárnak az alkalmazások.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87d97ddd4c70236193d4e6bb12ac6d68e4085903
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6394af9affd5087aaf26489be4b49e84568d6e1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Az Intune iOS-mobileszközös kiépítési profiljainak segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
+# <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Az iOS-alkalmazáskiépítési profilok segítségével megakadályozhatja, hogy az alkalmazásai lejárjanak
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Bevezetés
 
@@ -36,6 +36,7 @@ Az iPhone-okhoz és iPadekhez rendelt Apple iOS üzletági alkalmazások beépí
 Az alkalmazások aláírásához használt vállalati aláíró tanúsítvány általában három évig érvényes. A kiépítési profil viszont egy év után lejár. Amíg a tanúsítvány még érvényes, az Intune biztosítja az eszközöket egy új kiépítési profil proaktív hozzárendelésére olyan eszközökhöz, amelyeken már majdnem lejáró alkalmazások vannak.
 A tanúsítvány lejárata után újra regisztrálnia kell az alkalmazást egy új tanúsítvánnyal, és be kell ágyaznia egy új kiépítési profilt az új tanúsítvány kulcsával.
 
+Rendszergazdaként belefoglaló vagy kizáró biztonsági csoportokat hozhat létre iOS-alkalmazáskiépítési konfigurációk hozzárendeléséhez. Egy iOS-alkalmazáskiépítési konfigurációt hozzárendelhet például Minden felhasználóhoz, de kizárhatja a vezetői csoportot.
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS-beli mobilalkalmazás-kiépítési profilok létrehozása
 

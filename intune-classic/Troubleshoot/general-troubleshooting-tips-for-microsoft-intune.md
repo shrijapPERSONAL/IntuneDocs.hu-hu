@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Általános hibaelhárítási tippek a Microsoft Intune rendszerhez
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek fel a konfigurációval vagy az ügyféleszközökkel kapcsolatban. Az alábbi információk segítségével megtalálhatja a probléma okát, és így megoldhatja a problémát.
 
@@ -50,13 +50,13 @@ Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek 
 
 ## <a name="collect-available-data"></a>Rendelkezésre álló adatok összegyűjtése
 
--   Az alábbi források segítséget nyújtanak az eszköznaplók gyűjtésével kapcsolatban:
+- Az alábbi források segítséget nyújtanak az eszköznaplók gyűjtésével kapcsolatban:
   - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése USB-kábelen keresztül a rendszergazdának](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése e-mailben a rendszergazdának](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Az Android regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Az iOS regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   A felügyeleti konzol adatainak (például a szabályzat megvalósításával kapcsolatos problémának) birtokában vizsgálja meg az érintett szabályzatot, illetve állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
+- A felügyeleti konzol adatainak (például a szabályzat megvalósításával kapcsolatos problémának) birtokában vizsgálja meg az érintett szabályzatot, illetve állapotát a [Csoportok használata felhasználók és eszközök kezelésére a Microsoft Intune-nal](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) című témakörben leírtak szerint.
 
 ## <a name="research-the-solution"></a>Megoldás keresése
 

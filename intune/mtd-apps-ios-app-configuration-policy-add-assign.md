@@ -1,25 +1,25 @@
 ---
-title: "MTD-alkalmazások hozzáadása és hozzárendelése a Microsoft Intune-hoz"
-titleSuffix: 
-description: "Az Intune-nal Mobile Threat Defense-alkalmazásokat, a Microsoft Authenticator alkalmazást és iOS-es konfigurációs szabályzatokat adhat hozzá az Azure Portalon."
-keywords: 
+title: MTD-alkalmazások hozzáadása és hozzárendelése a Microsoft Intune-hoz
+titleSuffix: ''
+description: Az Intune-nal Mobile Threat Defense-alkalmazásokat, a Microsoft Authenticator alkalmazást és iOS-es konfigurációs szabályzatokat adhat hozzá az Azure Portalon.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 
@@ -75,7 +75,7 @@ A részletes leírást a Lookout for Work iOS-alkalmazás újbóli aláírásár
 Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók számára az alábbiak szerint:
 
 1. Lépjen az [Azure Portalra](https://portal.azure.com), jelentkezzen be a hitelesítő adataival, majd nyissa meg az alkalmazás lapot.
-  
+
 2. Adja hozzá a **Lookout for Work iOS alkalmazást****natív ügyfélalkalmazásként**.
 
 3. Cserélje le a **com.lookout.enterprise.yourcompanyname** sort az IPA aláírásakor választott ügyfélcsomag-azonosítóval.
@@ -133,13 +133,13 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 -   **Töltse le** az iOS-es alkalmazáskonfigurációs szabályzatot tartalmazó fájlt: 
     -   Lépjen a [Skycure Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.
-    
+
     -   Kattintson a **Settings** (Beállítások) &gt; **Device Management Integrations** (Eszközfelügyelet-integráció) &gt; **EMM Integration Selection** (EMM-integráció kiválasztása) elemre, válassza a **Microsoft Intune** lehetőséget, és mentse a választást.
-    
+
     -   Kattintson az **Integration setup files** (Integráció-telepítőfájlok) hivatkozásra, és mentse a létrejövő \*.zip fájlt. A .zip-fájlban található a **skycure\_configuration.plist** fájl, amellyel létrehozható az iOS-es alkalmazáskonfigurációs szabályzat az Intune-ban.
-    
+
     -   A Skycure iOS-es alkalmazáskonfigurációs szabályzat felvételéhez lásd a következő útmutatót:[A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
-    
+
     - A **8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be a **skycure_configuration.plist** fájl tartalmát a konfigurációs szabályzat törzsébe.
 
 A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
@@ -151,7 +151,6 @@ A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>A Zimperium esetében
@@ -179,7 +177,6 @@ A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Alkalmazások hozzárendelése (minden MTD partner)

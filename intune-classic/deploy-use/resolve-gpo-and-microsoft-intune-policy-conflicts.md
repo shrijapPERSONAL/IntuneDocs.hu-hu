@@ -1,28 +1,28 @@
 ---
-title: "A GPO- és Intune-házirendek ütközéseinek feloldása"
-description: "Megtudhatja, hogyan szüntetheti meg az ütközéseket a Csoportházirend és az Intune konfigurációs szabályzatai között."
-keywords: 
+title: A GPO- és Intune-házirendek ütközéseinek feloldása
+description: Megtudhatja, hogyan szüntetheti meg az ütközéseket a Csoportházirend és az Intune konfigurációs szabályzatai között.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9764a1fec44ff5aae7ebcf63b3ebde252bb687f9
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Csoportházirend-objektumok (GPO) és Microsoft Intune-szabályzatütközések feloldása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Az Intune szabályzatai megkönnyítik a Windows-számítógépek beállításainak kezelését. Például szabályzat segítségével felügyelheti a Windows tűzfal beállításait a számítógépeken. Az Intune számos beállítása hasonló a Windows csoportházirend-beállításaihoz. Esetenként azonban előfordulhat, hogy a két módszer ütközik egymással.
 
@@ -116,5 +116,5 @@ A csoportházirend-objektumok alkalmazását korlátozhatja csak azokra a bizton
 
 Az új biztonsági csoportot regisztrációként kell kezelni az Intune szolgáltatásmódosításaiban.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [Windows rendszerű számítógépek felügyelete a Microsoft Intune-nal](manage-windows-pcs-with-microsoft-intune.md)

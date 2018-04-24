@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Vállalati tulajdonban lévő eszközök regisztrálása az Eszközregisztráció-kezelővel
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A cégek az Intune használatával nagyszámú mobileszközt felügyelhetnek egyetlen felhasználói fiókkal. Az *eszközregisztráció-kezelői* (DEM-) fiók egy speciális felhasználói fiók, mely akár ezer eszköz regisztrálására képes. A meglévő felhasználók a DEM-fiókba való felvételével különleges DEM-képességeket biztosíthat számukra. Minden regisztrált eszköz felhasznál egyetlen licencet. Az ezzel a fiókkal regisztrált eszközöket célszerű nem személyes („BYOD”), hanem megosztott (konkrét felhasználóhoz nem társított) eszközökként használni.  
 
@@ -67,22 +67,22 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
 
 ## <a name="add-a-device-enrollment-manager"></a>Eszközregisztráció-kezelő hozzáadása
 
-1.  Győződjön meg arról, hogy már létezik a felhasználó, akit fel szeretne venni a DEM-fiókba. Ha hozzá kell adnia a felhasználót, jelentkezzen be az [Office 365 portálra](https://go.microsoft.com/fwlink/p/?LinkId=698854), és kövesse a [Felhasználók felvétele egyenként és tömegesen az Office 365-be – rendszergazdai súgó](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) című témakörben szereplő lépéseket.
+1. Győződjön meg arról, hogy már létezik a felhasználó, akit fel szeretne venni a DEM-fiókba. Ha hozzá kell adnia a felhasználót, jelentkezzen be az [Office 365 portálra](https://go.microsoft.com/fwlink/p/?LinkId=698854), és kövesse a [Felhasználók felvétele egyenként és tömegesen az Office 365-be – rendszergazdai súgó](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) című témakörben szereplő lépéseket.
 
-2.  Jelentkezzen be rendszergazdai azonosítójával a [Microsoft Intune felügyeleti konzoljába](https://manage.microsoft.com).
+2. Jelentkezzen be rendszergazdai azonosítójával a [Microsoft Intune felügyeleti konzoljába](https://manage.microsoft.com).
 
-3.  A navigációs ablaktáblában kattintson a **Rendszergazda** elemre, lépjen a **Rendszergazdai felügyelet** beállításra, és válassza az **Eszközregisztráció-kezelő** lehetőséget. Ekkor megnyílik az **Eszközregisztráció-kezelő** lap.
+3. A navigációs ablaktáblában kattintson a **Rendszergazda** elemre, lépjen a **Rendszergazdai felügyelet** beállításra, és válassza az **Eszközregisztráció-kezelő** lehetőséget. Ekkor megnyílik az **Eszközregisztráció-kezelő** lap.
 
-4.  Kattintson a **Hozzáadás...** lehetőségre. Megnyílik az **Eszközregisztráció-kezelő hozzáadása** párbeszédpanel.
+4. Kattintson a **Hozzáadás...** lehetőségre. Megnyílik az **Eszközregisztráció-kezelő hozzáadása** párbeszédpanel.
 
-5.  Adja meg az Intune-fiók **felhasználói azonosítóját**, és kattintson az **OK** gombra.
+5. Adja meg az Intune-fiók **felhasználói azonosítóját**, és kattintson az **OK** gombra.
 
-    Az eszközregisztráció-kezelő most már ugyanazzal az eljárással regisztrálhat mobileszközöket, amelyet a végfelhasználók használnak a Vállalati portálon a saját eszközök használata esetén. A kezelő végfelhasználó telepítheti a céges portál alkalmazást és regisztrálhatja az eszközt a saját DEM hitelesítő adataival, legfeljebb 1000 eszközön. A végfelhasználók regisztrálásának az egyes platformokra vonatkozó lépéseit lásd:
+   Az eszközregisztráció-kezelő most már ugyanazzal az eljárással regisztrálhat mobileszközöket, amelyet a végfelhasználók használnak a Vállalati portálon a saját eszközök használata esetén. A kezelő végfelhasználó telepítheti a céges portál alkalmazást és regisztrálhatja az eszközt a saját DEM hitelesítő adataival, legfeljebb 1000 eszközön. A végfelhasználók regisztrálásának az egyes platformokra vonatkozó lépéseit lásd:
 
-  - [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Windows-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [iOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [macOS-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Android-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Windows-eszköz regisztrálása az Intune-ban](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eszközregisztráció-kezelő törlése az Intune-ból
 

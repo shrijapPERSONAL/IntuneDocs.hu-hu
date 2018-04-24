@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: a2c194e7741c8ce79d87ad68eb408508b2929167
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>A Skycure Mobile Threat Defense megfelelőségi szabályzatának létrehozása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Skycure Mobile Threat Defense révén az Intune lehetővé teszi a mobileszközökön a veszélyforrások azonosítását és a kapcsolódó kockázatfelmérést. Intune-os megfelelőségi szabályzatban létrehozhat olyan szabályt, amely a kockázat felmérésével állapítja meg az eszköz megfelelőségét. Ezután a feltételes hozzáférési szabályzat segítségével az eszközmegfelelőség alapján szabályozhatja a szolgáltatásokhoz való hozzáférést.
 

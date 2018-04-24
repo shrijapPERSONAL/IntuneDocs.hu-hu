@@ -15,32 +15,31 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f5976b76f839a973355ed2c0b157f8c72733bf64
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>A helyszíni Intune Exchange Connector telepítése
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Olyan kapcsolat beállításához, amely lehetővé teszi, hogy a Microsoft Intune kommunikáljon a mobileszközök postaládáit működtető Exchange-kiszolgálóval, le kell töltenie a helyszíni Exchange Connector összekötő eszközt, majd az Intune felügyeleti konzolról konfigurálnia kell azt. Típustól függetlenül az Intune előfizetésenként csak egy Exchange-Connector kapcsolatot támogat.
 
 ## <a name="on-premises-exchange-connector-requirements"></a>A helyszíni Exchange Connector rendszerkövetelményei
 A következő táblázat a helyszíni Exchange Connector számítógépre vonatkozó követelményeit tartalmazza.
 
-|Követelmény|További információ|
-|---------------|--------------------|
-|Operációs rendszerek|Az Intune a helyszíni Exchange Connectort olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, a Windows Server 2008 R2, a Windows Server 2012 vagy a Windows Server 2012 R2 rendszer valamelyik kiadása fut.<br /><br />Az összekötő Server Core rendszereken nem támogatott.|
-|Microsoft Exchange|A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára, vagy régi dedikált Exchange Online-ra van szükség. Lépjen kapcsolatba a fiókkezelővel annak megállapításához, hogy a dedikált Exchange Online-környezet **új** vagy **régi** konfigurációval rendelkezik-e.|
-|Mobileszköz-kezelő szolgáltató| [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](prerequisites-for-enrollment.md#step-2-set-mdm-authority).|
-|Hardver|Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie.|/intune/users-permissions-add
-|Active Directory-szinkronizálás|Mielőtt az Intune-t a Connector segítségével csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/users-permissions-add), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával.|
-|További szoftverek|Az összekötőt futtató számítógépnek a Microsoft .NET-keretrendszer 4.5-ös és a Windows PowerShell 2.0-s verziójának teljes telepítésével kell rendelkeznie.|
-|Hálózat|Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Server-t üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com.|
 
+|            Követelmény             |                                                                                                                                                                                                        További információ                                                                                                                                                                                                        |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Operációs rendszerek          |                                                                          Az Intune a helyszíni Exchange Connectort olyan számítógépen támogatja, amelyen a Windows Server 2008 SP2 64 bites, a Windows Server 2008 R2, a Windows Server 2012 vagy a Windows Server 2012 R2 rendszer valamelyik kiadása fut.<br /><br />Az összekötő Server Core rendszereken nem támogatott.                                                                          |
+|         Microsoft Exchange         |                                                                           A helyszíni összekötőhöz a Microsoft Exchange 2010 SP1 vagy újabb verziójára, vagy régi dedikált Exchange Online-ra van szükség. Lépjen kapcsolatba a fiókkezelővel annak megállapításához, hogy a dedikált Exchange Online-környezet <strong>új</strong> vagy <strong>régi</strong> konfigurációval rendelkezik-e.                                                                           |
+| Mobileszköz-kezelő szolgáltató |                                                                                                                                                       [Mobileszköz-kezelő szolgáltatóként a Microsoft Intune-t állítsa be](prerequisites-for-enrollment.md#step-2-set-mdm-authority).                                                                                                                                                        |
+|              Hardver              |                                                                                                                                                     Azon számítógépnek, amelyre az összekötőt telepíteni kívánja, 1,6 GHz-es processzorral, 2 GB memóriával és legalább 10 GB szabad lemezterülettel kell rendelkeznie.                                                                                                                                                      |
+|  Active Directory-szinkronizálás  |                                                                             Mielőtt az Intune-t a Connector segítségével csatlakoztatná az Exchange-kiszolgálóhoz, [állítsa be az Active Directory-szinkronizálást](/intune/users-permissions-add), hogy a helyi felhasználók és biztonsági csoportok szinkronizálva legyenek az Azure Active Directory meglévő példányával.                                                                              |
+|        További szoftverek         |                                                                                                                                           Az összekötőt futtató számítógépnek a Microsoft .NET-keretrendszer 4.5-ös és a Windows PowerShell 2.0-s verziójának teljes telepítésével kell rendelkeznie.                                                                                                                                           |
+|              Hálózat               | Az összekötő telepítéséhez használt számítógépnek olyan tartományhoz kell tartoznia, amely megbízhatósági kapcsolatban áll az Exchange Server-t üzemeltető tartománnyal.<br /><br />A számítógépet úgy kell beállítani, hogy a 80-as és a 443-as porton, a tűzfalakon és a proxykiszolgálókon keresztül hozzáférjen az Intune szolgáltatáshoz. Az Intune által használt tartományok a következők: manage.microsoft.com, &#42;manage.microsoft.com és &#42;.manage.microsoft.com. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange-parancsmagokkal kapcsolatos követelmények
 
@@ -77,45 +76,45 @@ Létre kell hoznia egy Active Directory-felhasználói fiókot, amelyet az Intun
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>A helyszíni Intune Exchange Connector telepítése és konfigurálása
 A helyszíni Intune Exchange Connector telepítéséhez hajtsa végre az alábbi lépéseket. A helyszíni Exchange Connector Intune-előfizetésenként csak egyszer és csak egy számítógépre telepíthető. Ha a helyszíni Exchange Connector szoftverből további példányt próbál meg konfigurálni, akkor az új kapcsolat felváltja az eredeti kapcsolatot.
 
-1.  A helyszíni Exchange Connector által támogatott operációs rendszerben bontsa ki az **Exchange_Connector_Setup.zip** fájl tartalmát egy biztonságos helyre.
+1. A helyszíni Exchange Connector által támogatott operációs rendszerben bontsa ki az **Exchange_Connector_Setup.zip** fájl tartalmát egy biztonságos helyre.
 
-2.  A fájlok kibontása után nyissa meg a kibontott mappát, majd kattintson duplán az **Exchange_Connector_Setup.exe** fájlra a helyszíni Exchange Connector telepítéséhez.
+2. A fájlok kibontása után nyissa meg a kibontott mappát, majd kattintson duplán az **Exchange_Connector_Setup.exe** fájlra a helyszíni Exchange Connector telepítéséhez.
 
-    > [!IMPORTANT]
-    > Ha a célmappa nem biztonságos hely, akkor a helyszíni Connector telepítése után törölje a **WindowsIntune.accountcert** tanúsítványfájlt.
+   > [!IMPORTANT]
+   > Ha a célmappa nem biztonságos hely, akkor a helyszíni Connector telepítése után törölje a **WindowsIntune.accountcert** tanúsítványfájlt.
 
-3.  A **Microsoft Intune Exchange Connector** párbeszédpanelen válassza ki a **Helyszíni Microsoft Exchange Server** vagy **Üzemeltetett Microsoft Exchange Server** lehetőségek egyikét.
+3. A **Microsoft Intune Exchange Connector** párbeszédpanelen válassza ki a **Helyszíni Microsoft Exchange Server** vagy **Üzemeltetett Microsoft Exchange Server** lehetőségek egyikét.
 
-  ![Válassza ki a meglévő Exchange Server típusát](../media/IntuneSA1dconfigureExchConnector.png)
+   ![Válassza ki a meglévő Exchange Server típusát](../media/IntuneSA1dconfigureExchConnector.png)
 
-  Helyszíni Exchange-kiszolgáló esetén adja meg az **Ügyfélelérési kiszolgáló** szerepkört futtató Exchange-kiszolgáló nevét vagy teljes tartománynevét.
+   Helyszíni Exchange-kiszolgáló esetén adja meg az **Ügyfélelérési kiszolgáló** szerepkört futtató Exchange-kiszolgáló nevét vagy teljes tartománynevét.
 
-  Üzemeltetett Exchange-kiszolgáló esetén adja meg az Exchange-kiszolgáló címét. Az üzemeltetett Exchange-kiszolgáló URL-címének megkeresése:
+   Üzemeltetett Exchange-kiszolgáló esetén adja meg az Exchange-kiszolgáló címét. Az üzemeltetett Exchange-kiszolgáló URL-címének megkeresése:
 
-    1. Nyissa meg az Office 365 Outlook Web Appjét.
+   1. Nyissa meg az Office 365 Outlook Web Appjét.
 
-    2. Kattintson a **?** ikonra baloldalt felül, majd válassza a **Névjegy** lehetőséget.
+   2. Kattintson a **?** ikonra baloldalt felül, majd válassza a **Névjegy** lehetőséget.
 
-    3. Keresse meg a **POP külső kiszolgáló** értéket.
+   3. Keresse meg a **POP külső kiszolgáló** értéket.
 
-    4. Kattintson a **Proxykiszolgáló** elemre az üzemeltetett Exchange proxykiszolgáló-beállításainak megadásához.
-        1. Válassza a **Proxykiszolgáló használata mobileszköz-információk szinkronizálásakor**lehetőséget.
+   4. Kattintson a **Proxykiszolgáló** elemre az üzemeltetett Exchange proxykiszolgáló-beállításainak megadásához.
+       1. Válassza a **Proxykiszolgáló használata mobileszköz-információk szinkronizálásakor**lehetőséget.
 
-        2. Adja meg a **proxykiszolgáló nevét** és **portszámát** a kiszolgálóhoz való hozzáféréshez.
+       2. Adja meg a **proxykiszolgáló nevét** és **portszámát** a kiszolgálóhoz való hozzáféréshez.
 
-        3. Ha a proxykiszolgálóhoz való csatlakozáshoz hitelesítő adatok megadása szükséges, válassza a **Hitelesítő adatok használata a proxykiszolgálóhoz való csatlakozáshoz** lehetőséget. Ezután adja meg a **tartomány\felhasználó** és a **jelszó** értékét.
+       3. Ha a proxykiszolgálóhoz való csatlakozáshoz hitelesítő adatok megadása szükséges, válassza a **Hitelesítő adatok használata a proxykiszolgálóhoz való csatlakozáshoz** lehetőséget. Ezután adja meg a **tartomány\felhasználó** és a **jelszó** értékét.
 
-        4. Válassza az **OK** gombot.
+       4. Válassza az **OK** gombot.
 
-    5. A **Felhasználó (Tartomány\felhasználó)** és **Jelszó** mezőknél adja meg az Exchange-kiszolgálóhoz való csatlakozáshoz szükséges hitelesítő adatokat.
+   5. A **Felhasználó (Tartomány\felhasználó)** és **Jelszó** mezőknél adja meg az Exchange-kiszolgálóhoz való csatlakozáshoz szükséges hitelesítő adatokat.
 
-    6.  Adja meg azokat a rendszergazdai hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.
+   6.  Adja meg azokat a rendszergazdai hitelesítő adatokat, amelyek szükségesek ahhoz, hogy az értesítéseket egy felhasználó Exchange Server-postaládájába küldhesse a rendszer. Ezeket az értesítéseket a feltételes hozzáférési szabályzatokon keresztül konfigurálhatja az Intune-ban.
 
-        Győződjön meg arról, hogy az Automatikus észlelés szolgáltatás és az Exchange-webszolgáltatások konfigurálva vannak az Exchange ügyfélelérési kiszolgálón. Az ezzel kapcsolatos további információkért lásd: [Ügyfélelérési kiszolgáló](https://technet.microsoft.com/library/dd298114.aspx).
+       Győződjön meg arról, hogy az Automatikus észlelés szolgáltatás és az Exchange-webszolgáltatások konfigurálva vannak az Exchange ügyfélelérési kiszolgálón. Az ezzel kapcsolatos további információkért lásd: [Ügyfélelérési kiszolgáló](https://technet.microsoft.com/library/dd298114.aspx).
 
-    7.  A **Jelszó** mezőben adja meg a fiók jelszavát, hogy az Intune hozzáférhessen az Exchange-kiszolgálóhoz.
+   7.  A **Jelszó** mezőben adja meg a fiók jelszavát, hogy az Intune hozzáférhessen az Exchange-kiszolgálóhoz.
 
-    8. Válassza a **Csatlakozás** elemet.
+   8. Válassza a **Csatlakozás** elemet.
 
 A kapcsolat konfigurálása néhány percig is eltarthat.
 

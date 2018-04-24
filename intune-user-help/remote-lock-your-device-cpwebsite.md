@@ -1,33 +1,33 @@
 ---
-title: "Eszköz zárolása a Céges portálról | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Eszköz zárolása a Céges portálról | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9faaacb321dfd13c053768ea27f0cca38b30d077
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Az eszköz távoli zárolása a Vállalati portál webhelyéről
 
 Történhetnek balesetek, és néha előfordulhat, hogy eltűnnek eszközök. Ha az eszköz elveszett vagy ellopták, leginkább amiatt aggódhat, hogy bárki hozzáférhet a rajta lévő adatokhoz, akárhol is legyen az eszköz.
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog). A Távoli zárolás a következő rendszereken használható:
 
@@ -40,25 +40,25 @@ A biztonság kedvéért zárolhatja azt a Távoli zárolás lehetőséggel a [V�
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>A Távoli zárolás funkció használata az eszköz zárolásához
 
-1.  A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
+1. A [Céges portál webhelyen](https://portal.manage.microsoft.com#HelpDeskDialog) koppintson a __menü__ gombra, majd válassza a __Saját eszközök__ lehetőséget.
 
 2. A __Saját eszközök__ oldalon válassza ki a zárolni kívánt eszköz nevét.
 
-  ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Képernyőkép a Saját eszközök oldalról, amelyen néhány azonosítatlan eszköz látható a nem felsorolt eszközök regisztrálására, illetve az azonosítatlan eszközök azonosítására felszólító szalagcím felett.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson a **Távoli zárolás** gombra.
+3. Az adott eszköz lehetőségei egy előreugró ablakban nyílnak meg. Koppintson a **Távoli zárolás** gombra.
 
-    ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
+   ![A kiválasztott eszközzel kapcsolatos összes lehetőség a Céges portál webhelyén, többek között az Átnevezés, az Eltávolítás, az Eszköz alaphelyzetbe állítása, a Jelszó alaphelyzetbe állítása és a Távoli zárolás lehetőségei. ](./media/iwp-screen-with-all-options.png)
 
-4.  Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
+4. Ekkor megjelenik egy értesítés, mely arról tájékoztatja, hogy az eszköz zárolására készül. Koppintson a **Távoli zárolás** lehetőségre, és a Vállalati portál webhelye megpróbálja zárolni az eszközt.
 
-    Miután kiválasztotta a **Távoli zárolás** lehetőséget, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
+   Miután kiválasztotta a **Távoli zárolás** lehetőséget, a „Távoli zárolás függőben” üzenet fog megjelenni.  Ha a távoli zárolás sikeres, az állapot a „Sikeres volt a távoli zárolás” állapotra változik.
 
-    A Távoli zárolás állapota három helyen jelenik meg:
+   A Távoli zárolás állapota három helyen jelenik meg:
 
-    * A webhely értesítési területén.
-    * Az eszköz **Részletek** lapján.
-    * Az oldal **Eszközeim** területén, az eszköz nevét megjelenítő csempén.
+   * A webhely értesítési területén.
+   * Az eszköz **Részletek** lapján.
+   * Az oldal **Eszközeim** területén, az eszköz nevét megjelenítő csempén.
 
 > [!Note]
 > Ha „A távoli zárolás nem sikerült” értesítés jelenik meg, néhány perc várakozás után próbálkozzon újra az eszköz zárolásával. Amikor újra próbálkozik, az állapot ismét „Távoli zárolás függőben” lesz. Ha az újrapróbálkozás sem sikerül, forduljon a cég informatikai támogatási szolgálatához.

@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -66,7 +66,7 @@ Ez az útmutató az iOS-hez készült Intune App SDK következő összetevőit i
     * IntuneMAMPolicyDelegate.h
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
-    
+
 Az IntuneMAM.h importálásával a fenti fejlécek mindegyikének tartalma elérhetővé válik a fejlesztők számára.
 
 
@@ -89,66 +89,67 @@ Az Intune App SDK az alábbi lépésekkel engedélyezhető:
     ![Intune App SDK (iOS) – csatolt keretrendszerek és könyvtárak](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     Írja be a `-force_load {PATH_TO_LIB}/libIntuneMAM.a` utasítást a következő helyek egyikére, kicserélve a `{PATH_TO_LIB}` sort az Intune App SDK elérési útjával:
-      * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
-      * az Xcode kezelőfelület **Other Linker Flags** (Más csatoló jelzők) területe
+   * a projekt `OTHER_LDFLAGS` buildkonfigurációs beállítása
+   * az Xcode kezelőfelület **Other Linker Flags** (Más csatoló jelzők) területe
 
-        > [!NOTE]
-        > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
+     > [!NOTE]
+     > A `PATH_TO_LIB` megkereséséhez jelölje ki a `libIntuneMAM.a` fájlt és, és válassza a **File** (Fájl) menü **Get Info** (Információ megjelenítése) parancsát. Másolja és illessze be a **Where** (Hely) feliratnál látható információt (az elérési utat) az **Info** (Információ) ablak **General** (Általános) szakaszából.
 
-    Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
+     Húzza az `IntuneMAMResources.bundle` erőforrás-csomagot a **Copy Bundle Resources** (Erőforrás-csomagok másolása) alatti **Build Phases** (Összeállítási fázisok) elemre a projektbe való felvételhez.
 
-    ![Intune App SDK (iOS) – erőforráscsomagok másolása](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     ![Intune App SDK (iOS) – erőforráscsomagok másolása](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    Vegye fel a következő iOS-keretrendszereket a projektbe:  
-            * MessageUI.framework  
-            * Security.framework  
-            * MobileCoreServices.framework  
-            * SystemConfiguration.framework  
-            * libsqlite3.tbd  
-            * libc++.tbd  
-            * ImageIO.framework  
-            * LocalAuthentication.framework  
-            * AudioToolbox.framework  
-            * QuartzCore.framework  
-            * WebKit.framework  
+     Vegye fel a következő iOS-keretrendszereket a projektbe:  
+    * MessageUI.framework  
+    * Security.framework  
+    * MobileCoreServices.framework  
+    * SystemConfiguration.framework  
+    * libsqlite3.tbd  
+    * libc++.tbd  
+    * ImageIO.framework  
+    * LocalAuthentication.framework  
+    * AudioToolbox.framework  
+    * QuartzCore.framework  
+    * WebKit.framework
 
 3. Engedélyezze a kulcsláncmegosztást (ha még nincs engedélyezve) a projekthez használni kívánt elemeken a **Capabilities** (Képességek) lehetőségre kattintva, majd kapcsolja be a **Keychain Sharing** (Kulcsláncmegosztás) kapcsolót. A következő lépéshez szükséges a kulcsláncmegosztás.
 
-  > [!NOTE]
-    > A telepítési profil esetében elengedhetetlen az új kulcsláncmegosztási értékek támogatása. A kulcslánc-hozzáférési csoportoknak támogatniuk kell a helyettesítő karaktert. Ezt a .mobileprovision fájl szövegszerkesztőben való megnyitásával ellenőrizheti, rákeresve a **keychain-access-groups** kifejezésre. Itt meggyőződhet arról, hogy használ-e helyettesítő karaktert. Például:
-    ```xml
-    <key>keychain-access-groups</key>
-    <array>
-    <string>YOURBUNDLESEEDID.*</string>
-    </array>
-    ```
+   > [!NOTE]
+   > A telepítési profil esetében elengedhetetlen az új kulcsláncmegosztási értékek támogatása. A kulcslánc-hozzáférési csoportoknak támogatniuk kell a helyettesítő karaktert. Ezt a .mobileprovision fájl szövegszerkesztőben való megnyitásával ellenőrizheti, rákeresve a **keychain-access-groups** kifejezésre. Itt meggyőződhet arról, hogy használ-e helyettesítő karaktert. Például:
+   >  ```xml
+   >  <key>keychain-access-groups</key>
+   >  <array>
+   >  <string>YOURBUNDLESEEDID.*</string>
+   >  </array>
+   >  ```
 
 4. Miután engedélyezte a kulcsláncmegosztást, az alábbi lépésekkel hozhat létre egy különálló hozzáférési csoportot, amelyben az Intune App SDK adatait tárolhatja. Kulcslánc-hozzáférési csoportot a felhasználói felületen vagy a jogosultságfájllal hozhat létre. Ha a kezelőfelületet használja a kulcslánc-hozzáférési csoport létrehozására, kövesse az alábbi lépéseket:
 
-    1. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
+   1. Ha a mobilalkalmazás nem határozott meg kulcslánc-hozzáférési csoportokat, vegye fel az alkalmazás csomagazonosítóját az első csoport létrehozásához.
 
-    2. Húzza a `com.microsoft.intune.mam` megosztott kulcslánccsoportot a meglévő hozzáférési csoportokhoz. Az Intune App SDK ezt a hozzáférési csoportot használja adatok tárolására.
+   2. Húzza a `com.microsoft.intune.mam` megosztott kulcslánccsoportot a meglévő hozzáférési csoportokhoz. Az Intune App SDK ezt a hozzáférési csoportot használja adatok tárolására.
 
-    3. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
+   3. Vegye fel a `com.microsoft.adalcache` csoportot a meglévő hozzáférési csoportokba.
 
-        ![Intune App SDK (iOS) – kulcsláncok megosztása](./media/intune-app-sdk-ios-keychain-sharing.png)
+       ![Intune App SDK (iOS) – kulcsláncok megosztása](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    4. Ha a jogosultságokat tartalmazó fájlt közvetlenül szerkeszti, ahelyett hogy a korábban bemutatott Xcode felhasználói felületet használná a kulcslánc-hozzáférési csoportok létrehozásához, fűzze a `$(AppIdentifierPrefix)` előtagot a kulcslánc hozzáférési csoportokhoz (az Xcode ezt automatikusan megteszi). Például:
+   4. Ha a jogosultságokat tartalmazó fájlt közvetlenül szerkeszti, ahelyett hogy a korábban bemutatott Xcode felhasználói felületet használná a kulcslánc-hozzáférési csoportok létrehozásához, fűzze a `$(AppIdentifierPrefix)` előtagot a kulcslánc hozzáférési csoportokhoz (az Xcode ezt automatikusan megteszi). Például:
 
-            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
-    > [!NOTE]
-    > A jogosultságfájl egy, az Ön mobilalkalmazásához tartozó egyedi XML-fájl, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban. Ha az alkalmazása eddig nem rendelkezett jogosultságokat tartalmazó fájllal, a kulcsláncmegosztás engedélyezésekor (3. lépés) az Xcode generál egyet.
+      > [!NOTE]
+      > A jogosultságfájl egy, az Ön mobilalkalmazásához tartozó egyedi XML-fájl, és speciális engedélyek és képességek meghatározására szolgál az iOS-alkalmazásban. Ha az alkalmazása eddig nem rendelkezett jogosultságokat tartalmazó fájllal, a kulcsláncmegosztás engedélyezésekor (3. lépés) az Xcode generál egyet.
 
 5. Az alkalmazáshoz tartozó Info.plist fájl `LSApplicationQueriesSchemes` tömbjében tüntessen fel minden protokollt, amelyet az alkalmazás átad az `UIApplication canOpenURL` számára. Ne felejtse el menteni a módosításokat, mielőtt folytatná a következő lépéssel.
 
 6. Fejezze be az alkalmazás Info.plist fájljának konfigurálását az [SDK adattárában](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) található IntuneMAMConfigurator eszközzel. Az eszköz 3 paraméterrel rendelkezik:
-|Tulajdonság|Használat|
-|---------------|--------------------------------|
-|- i |  `<Path to the input plist>` |
-|- e | `<Path to the entitlements file>` |
-|- o |  (Elhagyható) `<Path to the output plist>` |
+
+   |Tulajdonság|Használat|
+   |---------------|--------------------------------|
+   |- i |  `<Path to the input plist>` |
+   |- e | `<Path to the entitlements file>` |
+   |- o |  (Elhagyható) `<Path to the output plist>` |
 
 Ha nem adja meg az „-o” paramétert, a bemeneti fájl helyben lesz módosítva. Az eszköz idempotens, és az Info.plist fájl vagy a jogosultságok változása esetén újra kell futtatnia. Emellett ha frissíti az Intune SDK-t, javasoljuk, hogy töltse le és futtassa az eszköz legújabb verzióját, mert elképzelhető, hogy megváltoztak az Info.plist fájl konfigurációs követelményei a legújabb kiadásban.
 
@@ -171,9 +172,9 @@ Az ADAL bináris fájljaira való hivatkozáshoz kövesse az alábbi lépéseket
 1. Töltse le az [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) erőforrástárat a GitHubról, majd kövesse az [utasításokat](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) az ADAL Git-almodulok vagy CocoaPods használatával történő letöltéséhez.
 
 2. Vegye fel az ADAL-keretrendszert (1. lehetőség) vagy a statikus kódtárat (2. lehetőség) a projektjébe:
-    
+
     **1. lehetőség (ajánlott):** Húzza az `ADAL.framework` keretrendszert a projekthez használni kívánt elemek **Embedded Binaries** (Beágyazott bináris fájlok) listájába.
-    
+
     **2. lehetőség:** Húzza a `libADALiOS.a` kódtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába. Írja be a `-force_load {PATH_TO_LIB}/libADALiOS.a` utasítást a projekt `OTHER_LDFLAGS` buildkonfigurációs beállításába vagy az **Other Linker Flags** (Más csatoló jelzők) helyre az Xcode kezelőfelületen. A `PATH_TO_LIB` helyett adja meg az ADAL bináris fájljainak helyét.
 
 
@@ -210,7 +211,7 @@ Ha az alkalmazás már ADAL-t használ, az alábbi konfigurációs beállításo
 Az alkalmazások felülbírálhatják ezeket az Azure AD-beállításokat futtatáskor. Ehhez egyszerűen állítsa be az `aadAuthorityUriOverride`, `aadClientIdOverride` és az `aadRedirectUriOverride` tulajdonságot az `IntuneMAMPolicyManager` példányon.
 
 > [!NOTE]
-    > Az Info.plist fájl használatát javasoljuk az összes olyan beállításhoz, amely statikus, és nem igényel futtatáskori meghatározást. Az `IntuneMAMPolicyManager`-tulajdonságokhoz rendelt értékek elsőbbséget élveznek az Info.plist fájlban megadott hasonló értékekkel szemben, és még az alkalmazás újraindítása után is megmaradnak. Az SDK továbbra is használni fogja ezeket szabályzat-ellenőrzéshez egészen a felhasználó regisztrációjának törléséig, vagy addig, amíg nem módosítja vagy törli az értékeket.
+> Az Info.plist fájl használatát javasoljuk az összes olyan beállításhoz, amely statikus, és nem igényel futtatáskori meghatározást. Az `IntuneMAMPolicyManager`-tulajdonságokhoz rendelt értékek elsőbbséget élveznek az Info.plist fájlban megadott hasonló értékekkel szemben, és még az alkalmazás újraindítása után is megmaradnak. Az SDK továbbra is használni fogja ezeket szabályzat-ellenőrzéshez egészen a felhasználó regisztrációjának törléséig, vagy addig, amíg nem módosítja vagy törli az értékeket.
 
 ### <a name="if-your-app-does-not-use-adal"></a>Ha az alkalmazás nem használ ADAL-t
 
@@ -233,7 +234,6 @@ Az ADAL-t már használó alkalmazásoknak az `IntuneMAMEnrollmentManager` péld
  */
 
 (void)registerAndEnrollAccount:(NSString *)identity;
-
 ```
 
 Az SDK a `registerAndEnrollAccount` metódus meghívásával regisztrálja a felhasználói fiókot, és megpróbálja regisztrálni az alkalmazást ennek a fióknak a nevében. Ha a regisztráció bármilyen okból nem sikerül, az SDK 24 óra múlva újra próbálkozik. Hibakeresési célokra az alkalmazás egy delegálton keresztül fogadhat [értesítéseket](#Status-result-and-debug-notifications) a regisztrációs kérések eredményéről.
@@ -256,7 +256,6 @@ Olyan alkalmazás is fogadhat alkalmazásvédelmi szabályzatot az Intune MAM sz
  *  @param identity The UPN of the account to be logged in and enrolled.
  */
  (void)loginAndEnrollAccount: (NSString *)identity;
-
 ```
 
 A metódus meghívása esetén az SDK hitelesítő adatok megadását kéri a felhasználótól, ha nem található meglévő token///jogkivonat. Az SDK ezután megpróbálja regisztrálni az alkalmazást az Intune MAM szolgáltatásban a megadott felhasználói fiók nevében. A metódus nil (nulla) identitással is meghívható. Ez esetben az SDK regisztrálja az eszköz meglévő felügyelt felhasználóját (az MDM esetében), vagy ha nem talál meglévő felhasználót, kéri a felhasználótól a felhasználónevet.
@@ -295,7 +294,6 @@ A felhasználó kijelentkeztetése előtt az alkalmazásnak meg kell hívnia a k
  *  @param doWipe   If YES, a selective wipe if the account is un-enrolled
  */
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
-
 ```
 
 Ezt a metódust még a felhasználó Azure AD-jogkivonatainak törlése előtt kell meghívni. Az SDK-nak azért van szüksége a felhasználói fiók AAD-jogkivonatára vagy -jogkivonataira, hogy a felhasználó nevében küldhessen el bizonyos kéréseket az Intune MAM szolgáltatásnak.
@@ -338,7 +336,6 @@ Az értesítéseket delegáltmetódusok adják át. Ezeket a `Headers/IntuneMAME
  */
 
 (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status;
-
 ```
 
 Ezek a delegáltmetódusok egy `IntuneMAMEnrollmentStatus` objektumot adnak vissza, amely a következő információkat tartalmazza:
@@ -374,7 +371,6 @@ A következők a delegáltmetódusok megvalósítására szolgálnak példákkal
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
-
 ```
 
 ## <a name="app-restart"></a>Alkalmazás újraindítása

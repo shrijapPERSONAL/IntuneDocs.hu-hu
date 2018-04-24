@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Alkalmazások telepítése a Microsoft Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör ismerteti azokat a fogalmakat, amelyeknek a megértésére feltétlenül szükség van ahhoz, hogy alkalmazásokat telepítsen a Microsoft Intune-ban.
 
@@ -46,18 +46,19 @@ Az alkalmazások telepítésekor a következő telepítési műveletek közül v
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Az egyes telepítőtípusokhoz elérhető telepítési műveletek
 
-|Telepítő típusa|Szükséges telepítés|Elérhető telepítés|Eltávolítás|Nem alkalmazható|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Windows-alkalmazáscsomag (felhasználói csoport számára telepített)|Igen|Igen|Igen|Igen|
-|Windows-alkalmazáscsomag (eszközcsoport számára telepített)|Igen|Nem|Igen|Igen|
-|Mobileszközökhöz készült alkalmazáscsomag (felhasználói csoport számára telepített)|Igen|Igen|Igen|Igen|
-|Mobileszközökhöz készült alkalmazáscsomag (eszközcsoport számára telepített)|Igen|Nem|Igen|Igen|
-|Windows Installer (felhasználói csoport számára telepített)|Nem|Igen|Nem|Igen|
-|Windows Installer (eszközcsoport számára telepített)|Igen|Nem|Igen|Igen|
-|Külső hivatkozás (felhasználói csoport számára telepített)|Nem|Igen|Nem|Igen|
-|Külső hivatkozás (eszközcsoport számára telepített)|Nem|Nem|Nem|Nem|
-|Felügyelt iOS-alkalmazás az App Store-ból (felhasználói csoport számára telepített)|Igen|Igen|Igen|Igen|
-|Felügyelt iOS-alkalmazás az App Store-ból (eszközcsoport számára telepített)|Igen|Nem|Igen|Igen|
+|                         Telepítő típusa                          | Szükséges telepítés | Elérhető telepítés | Eltávolítás | Nem alkalmazható |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Windows-alkalmazáscsomag (felhasználói csoport számára telepített)          |       Igen        |        Igen        |    Igen    |      Igen       |
+|        Windows-alkalmazáscsomag (eszközcsoport számára telepített)         |       Igen        |        Nem         |    Igen    |      Igen       |
+|    Mobileszközökhöz készült alkalmazáscsomag (felhasználói csoport számára telepített)    |       Igen        |        Igen        |    Igen    |      Igen       |
+|   Mobileszközökhöz készült alkalmazáscsomag (eszközcsoport számára telepített)   |       Igen        |        Nem         |    Igen    |      Igen       |
+|          Windows Installer (felhasználói csoport számára telepített)           |        Nem        |        Igen        |    Nem     |      Igen       |
+|         Windows Installer (eszközcsoport számára telepített)          |       Igen        |        Nem         |    Igen    |      Igen       |
+|            Külső hivatkozás (felhasználói csoport számára telepített)             |        Nem        |        Igen        |    Nem     |      Igen       |
+|           Külső hivatkozás (eszközcsoport számára telepített)            |        Nem        |        Nem         |    Nem     |       Nem       |
+|  Felügyelt iOS-alkalmazás az App Store-ból (felhasználói csoport számára telepített)  |       Igen        |        Igen        |    Igen    |      Igen       |
+| Felügyelt iOS-alkalmazás az App Store-ból (eszközcsoport számára telepített) |       Igen        |        Nem         |    Igen    |      Igen       |
+
 > [!TIP]
 > Ha az alkalmazás telepítése során felhasználói és eszközcsoportokat egyaránt megad, az alkalmazást csak **Elérhető telepítés módban** telepítheti.
 

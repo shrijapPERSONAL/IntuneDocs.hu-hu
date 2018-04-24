@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Rövid útmutató: Céges adatszivárgások megelőzése az Office 365 mobilalkalmazásaiban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Microsoft Intune mobilalkalmazás-kezelési (MAM) házirendjeivel megvédheti az Office 365 mobilalkalmazásaiban és egyéb üzletági alkalmazásokban tárolt szervezeti adatait a céges adatszivárgásoktól. A végfelhasználók az eszközeik az Intune mobileszköz-kezelésben (MDM) történő regisztrálása nélkül is használhatják az Intune MAM-házirendjeit. Így ha felhasználói nem szeretnék regisztrálni saját iOS- vagy Android-mobileszközüket a Microsoft MDM-megoldásainak egyikében (Intune, Configuration Manager, EAS), ha a felhasználók eszközeinek kezelése nélkül szeretné megvédeni a vállalati adatokat, vagy már egy nem Microsoft által szolgáltatott MDM-megoldást használ, az Intune segít a céges adatbiztonság megerősítésében.   
 

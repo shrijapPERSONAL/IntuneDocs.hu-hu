@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>iOS-alkalmazások közti adatátvitel felügyelete a Microsoft Intune-nal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>IOS-alkalmazások felügyelete
 A vállalati adatok védelmébe tartozik annak biztosítása, hogy csak a vállalat által felügyelt alkalmazásokkal lehessen fájlokat átvinni.  Az iOS-alkalmazásokat az alábbi módokon felügyelheti:
@@ -51,17 +51,17 @@ Annak biztosításához, hogy a harmadik féltől származó MDM megoldás segí
 A felhasználó UPN beállítását **kötelező** megadni olyan eszközök esetében, amelyeket küldő EMM-megoldás felügyel. Az alább leírt eljárás egy általános módszer az UPN-beállítás és az eredményül kapott végfelhasználói élmény konfigurálásához:
 
 
-1.  Az Azure Portalon [konfiguráljon alkalmazásvédelmi szabályzatot](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) az iOS platformra. A vállalati igényeknek megfelelően konfigurálja a szabályzat beállításait, majd válassza ki az alkalmazásokat, amelyeknek ezzel a szabályzattal kell rendelkezniük.
+1. Az Azure Portalon [konfiguráljon alkalmazásvédelmi szabályzatot](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) az iOS platformra. A vállalati igényeknek megfelelően konfigurálja a szabályzat beállításait, majd válassza ki az alkalmazásokat, amelyeknek ezzel a szabályzattal kell rendelkezniük.
 
-2.  A felügyelni kívánt alkalmazásokat és az e-mail-profilt telepítse **saját külső MDM-megoldásával** az alábbi, általánosságban ismertetett lépések alapján. Ennek módjával az 1. példa is foglalkozik.
+2. A felügyelni kívánt alkalmazásokat és az e-mail-profilt telepítse **saját külső MDM-megoldásával** az alábbi, általánosságban ismertetett lépések alapján. Ennek módjával az 1. példa is foglalkozik.
 
-  1.  Telepítse az alkalmazást a következő alkalmazáskonfigurációs beállításokkal:
+   1. Telepítse az alkalmazást a következő alkalmazáskonfigurációs beállításokkal:
 
       **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
 
       Példa: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Telepítse a regisztrált eszközökre a „Megnyitási engedélyek felügyelete” szabályzatot a külső MDM-szolgáltató segítségével.
+   2. Telepítse a regisztrált eszközökre a „Megnyitási engedélyek felügyelete” szabályzatot a külső MDM-szolgáltató segítségével.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>1. példa: A rendszergazda teendői külső MDM-konzolon
@@ -70,9 +70,9 @@ A felhasználó UPN beállítását **kötelező** megadni olyan eszközök eset
 
 2. Az alkalmazások konfigurációjának megadására szolgáló szakaszban adja meg a következő beállítást:
 
-  **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
+   **kulcs** = IntuneMAMUPN, **érték** = <username@company.com>
 
-  A kulcs-érték pár pontos szintaxisa függ a külső MDM-szolgáltatótól. Az alábbi táblázat külső MDM-szolgáltatókra és az esetükben megadandó kulcs-érték párra közöl példákat.
+   A kulcs-érték pár pontos szintaxisa függ a külső MDM-szolgáltatótól. Az alábbi táblázat külső MDM-szolgáltatókra és az esetükben megadandó kulcs-érték párra közöl példákat.
 
 |Külső MDM-szolgáltató| Konfigurációs kulcs | Érték típusa | Konfigurációs érték|
 | ------- | ---- | ---- | ---- |

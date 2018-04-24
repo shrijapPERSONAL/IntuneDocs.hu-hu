@@ -1,28 +1,28 @@
 ---
-title: "Windowsos eszközök Microsoft Intune-beli kezelésének beállítása"
-description: "A mobileszközök Microsoft Intune-nal való felügyeletének (MDM) engedélyezése Windows-eszközök esetén."
-keywords: 
+title: Windowsos eszközök Microsoft Intune-beli kezelésének beállítása
+description: A mobileszközök Microsoft Intune-nal való felügyeletének (MDM) engedélyezése Windows-eszközök esetén.
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Windowsos eszközök kezelésének beállítása
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ez a témakör a felhasználók windowsos eszközeinek regisztrációját segít megkönnyíteni a rendszergazdáknak.  A windowsos eszközök további lépések nélkül is regisztrálhatók, de a folyamatot meg lehet könnyíteni a felhasználók számára.
 
@@ -35,7 +35,7 @@ A Windows-eszközök regisztrálásának egyszerűsítését két tényező hat�
 |**Windows 10**|[Automatikus regisztráció](#enable-windows-10-automatic-enrollment) |[Felhasználói regisztráció](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Korábbi Windows-verziók**|[Felhasználói regisztráció](#enable-windows-enrollment-without-automatic-enrollment)|[Felhasználói regisztráció](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Windowsos regisztráció engedélyezése automatikus regisztráció nélkül
 A felhasználói eszközregisztrációt a Prémium szintű Azure AD automatikus regisztrációja nélkül is lehetővé teheti. A licencek hozzárendelése után a felhasználóknak a regisztrálás előtt hozzá kell adniuk munkahelyi fiókjukat a személyes tulajdonban lévő eszközeiken, vagy a céges tulajdonú eszközeiket csatlakoztatniuk kell az Azure AD-hoz. DNS-aliasok (CNAME rekordtípus) létrehozása megkönnyíti a felhasználóknak az eszközeik regisztrálását. DNS CNAME erőforrásrekord létrehozásával a felhasználók Intune-kiszolgálónév beírása nélkül tudnak csatlakozni az Intune-hoz és regisztrálni a szolgáltatásra.
@@ -69,5 +69,5 @@ A végfelhasználói regisztrációra vonatkozó utasításokért lásd: [Window
 
 A végfelhasználói feladatokkal kapcsolatban lásd: [Információk végfelhasználóknak a Microsoft Intune használatáról](/intune/end-user-educate).
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 [A Microsoft Intune-beli eszközregisztráció előfeltételei](prerequisites-for-enrollment.md)

@@ -1,36 +1,36 @@
 ---
-title: "Az Azure Portalbeli Intune bemutatása"
-titlesuffix: 
-description: "A Microsoft Intune az Azure Portalon érhető el. Alapvető tudnivalók az Azure Portalon elérhető Intune-ról."
-keywords: 
+title: Az Azure Portalbeli Intune bemutatása
+titlesuffix: ''
+description: A Microsoft Intune az Azure Portalon érhető el. Alapvető tudnivalók az Azure Portalon elérhető Intune-ról.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Az Azure Portalbeli Microsoft Intune bemutatása
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A Microsoft Intune a többi Azure-szolgáltatáshoz hasonlóan az Azure Portalon érhető el. Az Azure Portalon az **Intune** lehetőség kiválasztásával kezelheti a cége mobileszközeit, PC-it és alkalmazásait.
 
->[!NOTE] 
+> [!NOTE]
 > Ha a Microsoft Intune egy korábbi verzióját már használta, akkor az alábbi információt hasznosnak fogja találni:
-    * A [Hová kerültek a szolgáltatások az Azure-ban?](ui-changes.md) hivatkozással megjelenítheti az adott, az Azure-ra való átálláskor módosított munkafolyamatokat és felhasználóifelület-elemeket.
-    * A [Klasszikus Intune-csoportok az Azure Portalon](groups-get-started.md) ismerteti a csoportok kezelésében az Azure Active Directory biztonsági csoportokra való áttérés hatásait.
+>     * A [Hová kerültek a szolgáltatások az Azure-ban?](ui-changes.md) hivatkozással megjelenítheti az adott, az Azure-ra való átálláskor módosított munkafolyamatokat és felhasználóifelület-elemeket.
+>     * A [Klasszikus Intune-csoportok az Azure Portalon](groups-get-started.md) ismerteti a csoportok kezelésében az Azure Active Directory biztonsági csoportokra való áttérés hatásait.
 
 A Microsoft Intune Azure Portalbeli használatának néhány fontos pontja:
 

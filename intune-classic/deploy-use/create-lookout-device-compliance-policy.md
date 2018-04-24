@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>A Lookout eszközmegfelelőségi szabályzatának létrehozása Intune-ban
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 A Lookout Mobile Threat Defense révén az Intune lehetővé teszi a mobileszközökön a veszélyforrások azonosítását és a kapcsolódó kockázatfelmérést. Megfelelőségi szabályzatban létrehozhat olyan szabályt, amely a kockázat felmérésével állapítja meg az eszköz megfelelőségét. Ezután a feltételes hozzáférési szabályzat segítségével az eszközmegfelelőség alapján szabályozhatja a szolgáltatásokhoz való hozzáférést.
 
@@ -36,13 +36,13 @@ A Lookout Mobile Threat Defense megfelelőségi szabályzatának előfeltételei
 A Lookout Mobile Threat Defense beállítása során a [Lookout-konzolon](https://aad.lookout.com) létrehozott egy szabályzatot, amely a fenyegetéseket magas, közepes és alacsony szintűként osztályozza. Az Intune megfelelőségi szabályzatban megadta a maximális megengedett kockázati szintet.
 
 1. Lépjen az [Intune felügyeleti konzol](https://manage.microsoft.com) **Megfelelőségi szabályzatok** lapjára. Használhat meglévő megfelelőségi szabályzatot, vagy létrehozhat egy újat. Az **Eszközállapot** alatt engedélyezze a **Veszélyforrások elleni eszközvédelem** funkciót.
-  ![képernyőfelvétel az eszközvédelmi szabály beállításáról](../media/mtp/mtp-compliance-policy-rule.png)
+   ![képernyőfelvétel az eszközvédelmi szabály beállításáról](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Adja meg a **Legnagyobb megengedett fenyegetettségi szint** értékét:
-  * **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség.  Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta.  Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.  
-  * **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű veszélyforrások vannak rajta. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
-  * **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt veszélyforrások alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelése esetén az eszköz nem megfelelőnek minősül.
-  * **Magas**: Ez a legkevésbé biztonságos beállítás. Nem léptet életbe korlátozást semmilyen veszélyforrás-szinten, és a Lookout Mobile Threat Protection szoftvert csak jelentéskészítésre használja.
+   * **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség.  Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta.  Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.  
+   * **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű veszélyforrások vannak rajta. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
+   * **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt veszélyforrások alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelése esetén az eszköz nem megfelelőnek minősül.
+   * **Magas**: Ez a legkevésbé biztonságos beállítás. Nem léptet életbe korlátozást semmilyen veszélyforrás-szinten, és a Lookout Mobile Threat Protection szoftvert csak jelentéskészítésre használja.
 
 ![képernyőkép az eszközvédelmi szabály beállításának kockázatiszint-beállításáról](../media/mtp/mtp-compliance-policy-setting.png)
 
