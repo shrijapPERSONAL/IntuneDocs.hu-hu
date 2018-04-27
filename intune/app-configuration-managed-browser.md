@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -155,10 +155,9 @@ Az Outlookot olyan alkalmazásvédelmi szabályzattal kell konfigurálni, amelyb
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>2. lépés: Alkalmazáskonfigurációs szabályzat hozzárendelése a Managed Browser alkalmazáshoz.
 Ez az eljárás az Alkalmazásproxy átirányítás használatára konfigurálja a Managed Browser alkalmazást. A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-|||
-|-|-|
-|Kulcs|Érték|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Kulcs                                                             | Érték    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 További információt a Managed Browser és az Azure AD alkalmazásproxy a helyszíni webalkalmazásokhoz való zökkenőmentes (és védett) hozzáféréséhez szükséges együttes használatáról az Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Együtt jobb: Az Intune és az Azure Active Directory együtt fejleszti a felhasználói hozzáférést) című blogbejegyzésében találhat.
 
@@ -166,10 +165,8 @@ További információt a Managed Browser és az Azure AD alkalmazásproxy a hely
 
 Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók a Managed Browser elindításakor vagy új lap megnyitásakor látnak. A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Kulcs                                |                                                           Érték                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>A Managed Browser könyvjelzőinek beállítása
@@ -182,21 +179,17 @@ Ezzel a beállítással konfigurálhatók a Managed Browser felhasználói szám
 
 A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Kulcs                                 |                                                                                                                                                                                                                                                         Érték                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Több könyvjelző megadásakor az egyes párokat a <strong>&#124;&#124;</strong> karakter választja el.<br><br>Például: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Engedélyezett és letiltott URL-címek meghatározása a Managed Browser számára
 
 A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó eljárással adja meg az alábbi kulcs-érték párt:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Kulcs                                                                                                                                                                |                                                                                                                                                                                    Érték                                                                                                                                                                                    |
-| A következő lehetőségek közül választhat:<br><br>- Engedélyezett URL-címek megadásához (kizárólag ezek az URL-címek engedélyezettek, más webhelyek nem lesznek elérhetőek): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Tiltott URL-címek megadásához (minden más webhely elérhető lesz): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal <strong>&#124;</strong> karakterrel elválasztva egymástól.<br><br>Példák:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Kulcs|Érték|
+|-|-|
+|A következő lehetőségek közül választhat:<br><br>- Engedélyezett URL-címek megadásához (kizárólag ezek az URL-címek engedélyezettek, más webhelyek nem lesznek elérhetőek): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Tiltott URL-címek megadásához (minden más webhely elérhető lesz): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Példák:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Mindkét kulcsot ne adja meg. Ha ugyanahhoz a felhasználóhoz mindkét kulcs meg van adva, akkor az engedélyezett kulcs érvényesül, mert az jelent nagyobb korlátozást.

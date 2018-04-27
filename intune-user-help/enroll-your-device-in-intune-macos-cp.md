@@ -17,18 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>A macOS-eszköz Céges portál alkalmazással való regisztrálása az Intune-ban
 
 A szervezet alkalmazásaihoz, adataihoz és erőforrásaihoz való hozzáférés megkönnyíti a munkavégzést. A szervezet az Intune-t [azon erőforrásokhoz való hozzáférés kezelésére](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md) használja, amelyekhez a macOS-hez készült Céges portál alkalmazás letöltése szükséges. Ezek az utasítások az OS X El Capitan 10.11 vagy újabb rendszerű macOS-eszközök esetében működnek.
 
-> [!NOTE]
-> A macOS régebbi verzióit futtató macOS-eszközök regisztrálásához [itt](enroll-your-device-in-intune-macos-legacy.md) talál útmutatást.
 
 1. A __Dock__ területén keresse meg a __Safari__ böngészőt, nyisson meg egy új ablakot, majd keresse fel a [Munkahelyi portál webhelyét](https://portal.manage.microsoft.com).
 

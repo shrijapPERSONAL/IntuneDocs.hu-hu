@@ -3,7 +3,7 @@ title: Technológiai döntések a hozott eszközök EMS általi felügyeletéhez
 description: Fő technológiai döntések a hozott eszközök engedélyezésével, illetve a céges adatok Microsoft Enterprise Mobility + Security szolgáltatással való védelmével kapcsolatban.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technológiai döntések a hozott eszközök Microsoft Enterprise Mobility + Security (EMS) általi felügyeletével kapcsolatban.
 
@@ -78,6 +78,6 @@ Sok cégnek megvannak azonban a saját, specifikus kockázataik.  Az alábbi tá
 |Véletlen adatmegosztás vagy mentés nem biztonságos helyre | Nyomtatás letiltása | nem áll rendelkezésre|
 
 ## <a name="next-steps"></a>További lépések
-A fentiek alapján eldöntheti, hogy az eszközfelügyeletre, az alkalmazásfelügyeletre, vagy pedig a kettő kombinációjára összpontosítva engedélyezi a hozott eszközöket a cégében. A kívánt implementációt önállóan meghatározhatja, és biztos lehet abban, hogy bárhogyan is dönt, az Azure AD-ban elérhetők lesznek a megfelelő identitás- és biztonsági szolgáltatások.
+A fentiek alapján eldöntheti, hogy az eszközfelügyeletre, az alkalmazásfelügyeletre, vagy pedig a kettő kombinációjára összpontosítva engedélyezi a hozott eszközöket a cégében. A kívánt implementációt önállóan meghatározhatja, és biztos lehet abban, hogy bárhogyan is dönt, az Azure AD-ban elérhetők lesznek a megfelelő identitás- és biztonsági szolgáltatások.  
 
 A tervezés következő fázisához használja az Intune [Tervezési útmutatóját](planning-guide.md).
