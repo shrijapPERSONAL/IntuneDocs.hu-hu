@@ -407,8 +407,6 @@
           href: edition-upgrade-configure-windows-10.md
         - name: A Windows 10 oktatási funkcióinak konfigurálása
           href: education-settings-configure.md
-        - name: Az iOS oktatási funkcióinak konfigurálása
-          href: education-settings-configure-ios.md
         - name: Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása
           href: education-settings-configure-ios-shared.md
         - name: iOS-frissítési szabályzatok konfigurálása
@@ -511,6 +509,8 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: MTD engedélyezése az Intune-ban
                   href: mtd-connector-enable.md
+        - name: Veszélyforrások elleni fejlett védelem
+          href: advanced-threat-protection.md
         - name: Hálózati hozzáférés-vezérlés
           href: network-access-control-integrate.md
         - name: A Windows Hello beállítása
@@ -596,6 +596,10 @@
           href: data-intune-sends-to-apple.md
         - name: Az Intune által a Google-nek küldött adatok
           href: data-intune-sends-to-google.md
+        - name: Az Apple által az Intune-nak küldött adatok
+          href: data-apple-sends-to-intune.md
+        - name: A Google által az Intune-nak küldött adatok
+          href: data-google-sends-to-intune.md
     - name: Monitorozás és hibaelhárítás
       items:
         - name: Segítség a felhasználóknak a problémák elhárításában
@@ -694,6 +698,8 @@
               href: reports-ref-user-device.md
             - name: Felhasználó típusú entitás referenciája
               href: reports-ref-user.md
+        - name: Az Intune-adattárház fiókadatainak áthelyezése
+          href: data-warehouse-account-move.md
     - name: Az Azure AD használata az Intune API-k elérésére a Microsoft Graphban
       href: intune-graph-apis.md
       items:
