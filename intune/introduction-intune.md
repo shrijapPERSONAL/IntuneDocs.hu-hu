@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 23d669bfd535fb08bb52d194a1852aa774b5a186
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
@@ -81,7 +81,7 @@ Amikor az alkalmazások konfigurálása és az Intune összefüggésében haszn�
 Ha az Intune-t használja az EMS más szolgáltatásaival, akkor a mobil operációs rendszer és a mobilalkalmazások saját alkalmazáskonfigurációs lehetőségei által nyújtottnál magasabb szintű mobilalkalmazás-védelmet biztosíthat a szervezet számára. Az EMS használatával felügyelt alkalmazások a mobilalkalmazások és az adatvédelmi funkciók szélesebb köréhez férhetnek hozzá. Ide tartoznak például a következők:
 
 * [Egyszeri bejelentkezés](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Többtényezős hitelesítés](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+*   [Többtényezős hitelesítés](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Alkalmazás feltételes hozzáférése – hozzáférés engedélyezése, ha a mobilalkalmazás vállalati adatokat tartalmaz](app-based-conditional-access-intune.md)
 * [A vállalati adatok és a személyes adatok elkülönítése alkalmazáson belül](app-protection-policy.md)
 * [Alkalmazásvédelmi szabályzat (PIN-kód, titkosítás, mentés másként, vágólap stb.)](app-protection-policies.md)
