@@ -3,8 +3,8 @@ title: Alkalmazásonkénti VPN beállítása a Microsoft Intune-ban iOS-eszköz�
 titleSuffix: ''
 description: Megadhatja, hogy mely felügyelt alkalmazások használhatják virtuális magánhálózatát (VPN-jét) az Intune által felügyelt iOS-eszközökön.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Alkalmazásonkénti virtuális magánhálózat (VPN) beállítása az Intune-ban iOS-eszközökhöz
 
 Megadhatja, hogy mely felügyelt alkalmazások használhatják virtuális magánhálózatát (VPN-jét) az Intune által felügyelt iOS-eszközökön. Alkalmazásonkénti VPN Intune-beli megadása esetén a felhasználó a céges dokumentumok elérésekor automatikusan az Ön VPN-jén keresztül csatlakozik.
+
+Alkalmazásonkénti VPN jelenleg a következő szolgáltatókhoz érhető el: 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Az alkalmazásonkénti VPN-re vonatkozó előfeltételek
 
@@ -37,7 +45,7 @@ Exportálja a tanúsítványt, és adja hozzá a CA-hoz.
 4. Adja hozzá a VPN-kiszolgálón való hitelesítéshez használt tanúsítványt kiállító hitelesítésszolgáltató nevét.
     Ha az eszköz által bemutatott hitelesítésszolgáltató szerepel a megbízható hitelesítésszolgáltatóknak a VPN-kiszolgálón található listáján, a VPN-kiszolgáló sikeresen hitelesíti az eszközt.
 
-## <a name="create-a--group-for-your-vpn-users"></a>A VPN-felhasználók csoportjának létrehozása
+## <a name="create-a-group-for-your-vpn-users"></a>Csoport létrehozása VPN-felhasználók számára
 
 Válasszon egy meglévő csoportot az Azure Active Directoryban (Azure AD), illetve hozzon létre egy újat, amely az alkalmazásonkénti VPN-hez hozzáféréssel rendelkező tagokat tartalmazza.
 

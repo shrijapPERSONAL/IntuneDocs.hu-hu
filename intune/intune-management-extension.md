@@ -3,8 +3,8 @@ title: PowerShell-parancsfájlok kezelése a Microsoft Intune-ban Windows 10-es 
 titlesuffix: ''
 description: Megtudhatja, hogyan tölthet fel PowerShell-parancsfájlokat a Microsoft Intune-ba, amelyeket Windows 10-es eszközökön futtathat.
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -33,8 +33,8 @@ Az Intune felügyeleti bővítmény kiegészíti a Windows 10 MDM beépített fu
 
 ## <a name="prerequisites"></a>Előfeltételek
 Az Intune felügyeleti bővítmény előfeltételei a következők:
-- Az eszközöknek csatlakozniuk kell az Azure AD-hoz
-- Az eszközöknek a Windows 10 1607-es vagy újabb verziójával kell rendelkezniük
+- Az eszközöknek csatlakozniuk kell az Azure AD-hoz. Ez a Hybrid AD-hoz csatlakoztatott eszközökre nem vonatkozik.
+- Az eszközöknek a Windows 10 1607-es vagy újabb verziójával kell rendelkezniük.
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell-parancsfájlhoz tartozó szabályzat létrehozása 
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
@@ -43,7 +43,7 @@ Az Intune felügyeleti bővítmény előfeltételei a következők:
 4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
 5. A **PowerShell-parancsfájlok** panelen válassza a **Hozzáadás** lehetőséget.
 6. A **PowerShell-parancsfájl hozzáadása** panelen adjon meg a PowerShell-parancsfájl **Nevét** és **Leírását**.
-7. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A parancsfájlnak 10 (ASCII) vagy 5 kilobájtnál (Unicode) kisebbnek kell lennie.
+7. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A szkriptnek 200 kB-nál kisebbnek kell lennie.
 8. Válassza a **Konfigurálás** lehetőséget, majd adja meg, hogy a parancsfájl a felhasználó hitelesítő adataival fusson-e az eszközön (**Igen**) vagy a rendszerkörnyezetben (**Nem**). Alapértelmezés szerint a parancsfájl a rendszerkörnyezetben fut. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget. 
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-add-script.png)
 9. Adja meg, hogy a parancsfájl megkövetelje-e egy megbízható közzétevő aláírását (**Igen**). Alapértelmezés szerint a parancsfájl aláírása nem kötelező. 

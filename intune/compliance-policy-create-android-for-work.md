@@ -1,12 +1,11 @@
 ---
-title: Android for Work-alapú megfelelőségi szabályzat létrehozása
-titleSuffix: Microsoft Intune
-description: Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Intune Android for Work-eszközmegfelelőségi szabályzatot.
+title: Android for Work megfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Android for Work-eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása. Feltört eszközök választható engedélyezése, az elfogadható fenyegetettségi szint megadása, a Google Play Áruház ellenőrzése, minimális és maximális operációsrendszer-verzió megadása, jelszókövetelmények megválasztása és alkalmazások közvetlen telepítésének engedélyezése.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +14,17 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának létrehozása az Intune-ban
-
+# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Android for Work-eszközmegfelelőségi szabályzatokkal megszabhatja az Android for Work-eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Megfelelőségi szabályzatok az Intune Azure portálon hozhatók létre az egyes platformokhoz. A megfelelőségi szabályzatokról és a létrehozásuk előtt teljesítendő előfeltételekről [Az eszközmegfelelőség használatának első lépései](device-compliance-get-started.md) című témakörben találhat további információt.
+Az Intune-beli Android for Work-eszközmegfelelőségi szabályzatokkal megszabhatja az ilyen eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozható vagy engedélyezhető a vállalati erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon különböző platformokhoz hozhat létre megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -49,13 +47,10 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 - Ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik, a rendszer letiltja az eszközt.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Megfelelőségi szabályzat létrehozása az Azure Portal webhelyen
+## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-1. Az **Intune** panelen válassza az **Eszközmegfelelőség** lehetőséget. A **Kezelés** területen válassza a **Szabályzatok**, majd a **Szabályzat létrehozása** lehetőséget.
-2. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
-3. A **Beállítások > konfigurálás** lehetőséggel adja meg a **Rendszerbiztonság**, az **Eszközállapot** és az **Eszköztulajdonságok** beállításokat. Ha elkészült, válassza az **OK** elemet.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. A **Platform** beállításban válassza az **Android for Work** lehetőséget. Válassza a **Beállítások konfigurálása** lehetőséget az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK**, majd a **Létrehozás** lehetőséget.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -64,59 +59,69 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
+## <a name="device-health"></a>Device health
 
-A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatokat az **Eszközmegfelelőségi szabályzatok** panelen tekintheti meg.
+- **Feltört eszközök**: Ezt a beállítást engedélyezve a függetlenített eszközök nem megfelelőként lesznek minősítve.
+- **Maximálisan elérhető eszközfenyegetettségi szint használata**: Ezzel a beállítással a Lookout MTP-től származó kockázatbecslés lesz a megfelelőség feltétele. Megadható a legnagyobb megengedett fenyegetettségi szint:
+  - **Védett**: Ez a legbiztonságosabb beállítás. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
+  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
+  - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszköz vonatkozásában fennálló fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
+  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
+- **A Google Play-szolgáltatások be van állítva**: Megadása esetén a Google Play-szolgáltatások alkalmazást telepíteni és engedélyezni kell. A Google Play-szolgáltatások lehetővé teszik a biztonsági frissítéseket, és számos biztonsági funkció előfeltételei a hitelesített Google-eszközökön.
+- **Naprakész biztonsági szolgáltató**: Megadása esetén egy naprakész biztonsági szolgáltatóval kell védeni az eszközöket az ismert biztonsági kockázatokkal szemben.
+- **SafetyNet eszközigazolás**: Megadható a [SafetyNet igazolás](https://developer.android.com/training/safetynet/attestation.html) elvárt szintje. A választható lehetőségek:
+  - **Nincs konfigurálva**
+  - **Alapvető integritás ellenőrzése**
+  - **Alapvető integritás ellenőrzés és tanúsított eszközök**
 
-1. Válassza ki azt a szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
-2. Válassza a **Kiválasztott csoportok** lehetőséget az Azure AD biztonsági csoportjait megjelenítő lap megnyitásához.  A **Mentés** elemet választva telepítheti a szabályzatot a felhasználók számára.
+#### <a name="threat-scan-on-apps"></a>Alkalmazások fenyegetettségvizsgálata
 
-Ezzel érvénybe léptette a szabályzatot a felhasználók számára.  A szabályzattal megcélzott felhasználók által használt eszközök megfelelőségét értékelni fogja a rendszer.
+A munkahelyi profilokkal rendelkező (Android for Work ) eszközökön az **Alkalmazások fenyegetettségvizsgálata** beállítás a konfigurációs szabályzat beállításai között található. A beállítást rendszergazdák tudják engedélyezni az adott eszközre.
 
-<!--- ##  Compliance policy settings--->
+Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vonatkozóan engedélyezhető az **Alkalmazások fenyegetettségvizsgálata** beállítás. Hozzon létre egy eszközprofilt, és tegye kötelezővé a rendszerbiztonsági beállítást. További információt az [Android for Work-eszközök korlátozásaira vonatkozó beállítások az Intune-ban](device-restrictions-android-for-work.md) című témakörben talál.
+
+## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
+
+- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ezután pedig hozzáfér a vállalati erőforrásokhoz.
+- **Maximális operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
 ## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
 ### <a name="password"></a>Jelszó
 
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza az **Igen** lehetőséget.
-- **Jelszó minimális hossza**: Meghatározza a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-- **Jelszó erőssége**: Ez a beállítás észleli, hogy az Ön által megadott jelszókövetelmények konfigurálva vannak-e az eszközön. E beállítás bekapcsolásával írja elő a felhasználóknak az Android-eszközök bizonyos jelszókövetelményeinek konfigurálását. A következő lehetőségek közül választhat:
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez.
+- **Jelszó minimális hossza**: Meghatározhatja a felhasználó jelszavában szereplő számjegyek vagy karakterek minimális számát.
+- **Jelszó megkövetelt típusa**: Megadható, hogy a jelszó csak számjegyeket vagy számokat és más karaktereket vegyesen tartalmazzon. A következő lehetőségek közül választhat:
+  - **Eszköz alapértelmezése**
   - **Alacsony biztonságú biometrikus**
-  - **Kötelező**
   - **Legalább számok**
+  - **Komplex numerikus**
   - **Legalább betűk**
   - **Legalább alfanumerikus karakterek**
-  - **Alfanumerikus karakterek és szimbólumok**
-- **Jelszó kérése ennyi perc inaktivitás után**: Azt a tétlenségi időt adja meg, amelyen túl a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Adja meg, hogy hány nap elteltével járjon le a felhasználó jelszava, és legyen szükséges újat létrehoznia.
-- **Korábbi jelszavak megjegyzése:** Ezt a beállítást a **Korábbi jelszavak újbóli használatának tiltása** beállítással használva korlátozhatja, hogy a felhasználó korábban már használt jelszavakat hozzon létre.
-- **Korábbi jelszavak újbóli használatának tiltása:** Ha a **Korábbi jelszavak megjegyzése** beállítás be van jelölve, adja meg, hogy az utolsó hány korábbi jelszót ne lehessen ismét használni.
-- **Jelszó kérése, amikor az eszköz visszatér inaktív állapotból**: Ezt a beállítást a **Jelszó kérése ennyi perc inaktivitás után** beállítással kell használni. A rendszer a jelszó beírását kéri a végfelhasználótól a **Jelszó kérése ennyi perc inaktivitás után** beállításban megadott ideig inaktív eszköz eléréséhez.
-
+  - **Legalább alfanumerikus karakterek és szimbólumok**
+- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Megadható, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
+- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány legutóbbi jelszó ne legyen újra felhasználható. Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.
 
 ### <a name="encryption"></a>Encryption
 
 - **Titkosítás megkövetelése mobileszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök megkövetelik a titkosítást.
 
+### <a name="device-security"></a>Eszközbiztonság
 
-## <a name="device-health-and-security-settings"></a>Eszközállapot és biztonsági beállítások
+- **Az ismeretlen forrásból származó alkalmazások tiltása**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
+- **Céges portál alkalmazás futtatókörnyezetének integritása**: Ellenőrzi, hogy a Céges portál alkalmazás alapértelmezett futtatókörnyezete van-e telepítve, megfelelően alá van-e írva, nincs-e hibakereső módban, és ismert forrásból telepítették-e.
+- **Az USB-hibakeresés letiltása az eszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközökön már le van tiltva az USB-hibakeresés.
+- **Minimális biztonsági javítási szint**: Megadható a legrégebbi biztonsági javítás, amellyel az eszköz rendelkezhet. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot `YYYY-MM-DD` formátumban kell megadni.
 
-- **Az eszköz nem lehet függetlenített vagy feltört eszköz**: Ha bekapcsolja ezt a beállítást, a rendszer nem megfelelőként fogja értékelni a feltört eszközöket.
-- **Az ismeretlen forrásból származó alkalmazások telepítése megakadályozásának megkövetelése az eszközökön**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
-- **Az USB-hibakeresés letiltásának megkövetelése**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközökön már le van tiltva az USB-hibakeresés.
-- **Az Android minimálisan előírt biztonsági javítási szintje:** Ezzel a beállítással adható meg az Android minimálisan előírt biztonsági javítási szintje. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot a következő formátumban kell megadni: ÉÉÉÉ-HH-NN.
-- **Veszélyforrások elleni eszközvédelem engedélyezése**: ezzel a beállítással megfelelési feltételként kiveszi a kockázatelemzést Lookout MTP-megoldásból. Válassza ki a maximális megengedett kockázati szintet, ami az alábbiak egyike lehet:
-  - **Semmilyen (védett)**: Ez a legbiztonságosabb lehetőség. Annyit jelent, hogy az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
-  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha vonatkozásában kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
-  - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszköz vonatkozásában fennálló fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelése esetén az eszköz nem megfelelőnek minősül.
-  - **Magas**: Ez a legkevésbé biztonságos beállítás. Lényegében minden kockázati szintet engedélyez, ezért valószínűleg csak jelentéskészítési célokra lehet hasznos.
+## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
-## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
+1. Válassza ki a konfigurált szabályzatot. A meglévő szabályzatok az **Eszközmegfelelőség** > **Szabályzatok** alatt találhatók.
+2. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Belefoglalhat vagy kizárhat Azure Active Directory (AD) biztonsági csoportokat.
+3. Azure AD-biztonsági csoportjait a **Kijelölt csoportok** lehetőséget választva tekintheti meg. Kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
 
-- **Az operációs rendszer szükséges minimális verziója**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
-- **Maximálisan engedélyezett operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie a rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.
 
-<!--- ## Next steps
-
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>További lépések
+[Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz](actions-for-noncompliance.md)  
+[Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)

@@ -1,12 +1,11 @@
 ---
-title: macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban
-titleSuffix: ''
-description: Az eszközmegfelelőségi követelmények megszabásához hozzon létre egy Microsoft Intune macOS-eszközmegfelelőségi szabályzatot.
+title: macOS-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: macOS-eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása a rendszerintegritás-védelem használatához, az operációs rendszer minimális és maximális verziójának megadásához, jelszókövetelmények kiválasztásához és adattárolók titkosításához.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +13,21 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak létrehozása az Intune-nal
-
+# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>macOS-es eszközök megfelelőségi szabályzatainak hozzáadása az Intune-nal
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A macOS-eszközmegfelelőségi szabályzatokkal megszabhatja a macOS-eszközök megfelelőségéhez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használhatja, így engedélyezheti vagy letilthatja a céges erőforrásokhoz való hozzáférést, eszközjelentéseket kaphat, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon minden platformhoz létrehozhat megfelelőségi szabályzatokat.
-
-## <a name="before-you-begin"></a>Előkészületek
-
-Az eszközmegfelelőségi szabályzatok létrehozása és hozzárendelése előtt tekintse át az Intune eszközmegfelelőségi szabályzataival kapcsolatos fogalmakat.
-
-- Az eszközmegfelelőségi szabályzatokkal kapcsolatos további információkért lásd [Az Intune eszközmegfelelőségi szabályzatai – első lépések](device-compliance.md) című részt.
-
-> [!IMPORTANT]
-> Minden egyes platformhoz létre kell hoznia eszközmegfelelőségi szabályzatokat. Az Intune-os eszközmegfelelőségi szabályzat beállításai a platformképességektől, azaz az MDM protokollon keresztül elérhetővé tett beállításoktól függenek.
+Az Intune macOS-eszközmegfelelőségi szabályzataival megszabhatja a macOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják:
 
+---------------------------
 
 | Házirend-beállítás | macOS 10.11 és újabb verziók |
 | --- | --- |
@@ -45,102 +35,65 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 | **Eszköztitkosítás** | Kijavítva (PIN-kód beállításával) |
 | **E-mail profil** | Karanténba helyezve |
 |**Operációs rendszer minimális verziója** | Karanténba helyezve |
-| **Operációs rendszer maximális verziója** | Karanténba helyezve |  
+| **Operációs rendszer maximális verziója** | Karanténba helyezve |
 
+---------------------------
 
-**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. (Például a felhasználó kénytelen lesz PIN-kódot beállítani.)
+**Javítva** = Az eszköz operációs rendszere megköveteli a megfelelést. Például a felhasználó köteles lesz PIN-kódot beállítani.
 
 **Karanténba helyezve** = Az eszköz operációs rendszere nem követeli meg a megfelelést. (Az Android-eszközök például nem követelik meg a felhasználótól az eszköz titkosítását.) Ha az eszköz nem megfelelő, a következő műveletekre kerül sor:
 
 - A rendszer letiltja az eszközt, ha a felhasználóra feltételes hozzáférési szabályzat vonatkozik.
 - A vállalati portál értesíti a felhasználót a megfelelőséggel kapcsolatos problémákról.
 
-## <a name="macos-compliance-policy-settings"></a>MacOS-es megfelelőségiszabályzat-beállítások
+## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
 
-Az új eszközmegfelelőségnek az Intune-nal létrehozásakor választhat a különböző beállításokkal rendelkező különböző kategóriák közül:
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. A **Platform** beállításnál adja meg a **macOS** értéket. Válassza a **Beállítások konfigurálása** lehetőséget az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK** majd a **Létrehozás** lehetőséget.
 
-- Eszközállapot
+## <a name="device-health"></a>Eszközállapot
 
-- Eszköztulajdonságok
+- **Rendszerintegritás-védelem megkövetelése**: macOS-es eszközein **kötelező** engedélyezni a [rendszerintegritás-védelmet](https://support.apple.com/HT204899).
 
-- Rendszerbiztonság
+## <a name="device-properties"></a>Eszköztulajdonságok
 
-### <a name="device-health"></a>Eszközállapot
+- **Minimális operációsrendszer-verzió**: Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, ez után pedig hozzáférést kap a vállalati erőforrásokhoz.
+- **Maximális operációsrendszer-verzió**: Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva. A felhasználónak ekkor az informatikai rendszergazdához kell fordulnia. Az eszköz csak akkor használható a vállalati erőforrások elérésére, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
-- **Rendszerintegritás-védelem megkövetelése** – válassza a **Kötelező** beállítást annak ellenőrzésére, hogy a macOS-es eszközöknél engedélyezve van-e a rendszerintegritás-védelem.
+## <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
-### <a name="device-properties"></a>Eszköztulajdonságok
+### <a name="password"></a>Jelszó
 
-- **Minimális operációsrendszer-verzió** – Ha egy eszköz nem teljesíti az operációs rendszer szükséges minimális verziójára vonatkozó követelményt, nem megfelelőként fog szerepelni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A felhasználó választhatja az eszköz frissítését. Azt követően hozzáférhet a vállalati erőforrásokhoz.
+- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez.
+- **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
+- **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
+- **Jelszó típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**Alfanumerikus**) karaktereket vegyesen tartalmazzon.
+- **Nem alfanumerikus karakterek száma a jelszóban**: Megadhatja, hogy hány speciális karakternek (például &, #, %, ! stb.) kell szerepelnie a jelszóban.
 
-- **Maximális operációsrendszer-verzió** – Ha egy eszközön a szabályban megadott operációsrendszer-verziónál újabb fut, a vállalati erőforrásokhoz való hozzáférés le lesz tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
+    Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
 
-### <a name="system-security-settings"></a>A rendszer biztonsági beállításai
-
-#### <a name="password"></a>Jelszó
-
-- **Jelszó megkövetelése a mobileszköz-zárolás feloldásához** – Ha azt szeretné, hogy a felhasználók kötelesek legyenek jelszót megadni az eszköz eléréséhez, válassza a **Kötelező** lehetőséget.
-
-- **Egyszerű jelszavak** – Ha nem szeretné engedélyezni, hogy a felhasználók használhassanak olyan egyszerű jelszavakat, mint az **1234** vagy az **1111**, válassza a **Blokkolás** lehetőséget.
-
-- **Jelszó minimális hossza** – meghatározza a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-
-- **Jelszó típusa** – Meghatározza, hogy a felhasználóknak **alfanumerikus** jelszót vagy **numerikus** jelszót kell-e létrehozniuk.
-
-- **Nem alfanumerikus karakterek száma a jelszóban** – Ha a **Megkövetelt jelszótípus** **Alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. 
-
-    > [!NOTE]
-    > Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
+- **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
+- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
+- **Újból nem használható jelszavak száma**: Megadhatja, hogy hány legutóbbi jelszó ne legyen újra felhasználható.
 
     > [!IMPORTANT]
-    > A macOS-eszközök esetében ez a beállítás a speciális karakterek minimális számára utal, például: **!** **#** , **&amp;**), amelynek szerepelnie kell a jelszóban.
+    > Ha macOS-eszközön megváltozik a jelszóra vonatkozó követelmény, akkor az csak akkor lép érvénybe, amikor a felhasználó legközelebb megváltoztatja jelszavát. Ha például a jelszó kötelező minimális hosszát 8 számjegyűre állítja át, és a macOS-eszköz jelenlegi jelszava 6 számjegyű, az eszköz egészen addig megfelelőnek minősül, amíg a felhasználó legközelebb meg nem változtatja az eszköz jelszavát.
 
-- **Jelszó kérése legfeljebb ennyi perc inaktivitás után** – Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
+### <a name="encryption"></a>Encryption
 
-- **Jelszó érvényessége (napokban)** – Válassza ki, hány nap (1–250 között) elteltével járjon le a jelszó, ami után újat kell létrehoznia.
-
-- **Újból nem használható jelszavak száma** – Meghatározza, hogy hány korábbi jelszó ne legyen újra felhasználható.
-
-    > [!IMPORTANT]
-    > Ha macOS-eszközön megváltozik a jelszóra vonatkozó követelmény, akkor az csak akkor lép érvénybe, amikor a felhasználó legközelebb megváltoztatja jelszavát. Például ha a jelszó kötelező minimális hosszát 8 számjegyűre állítja át, és a macOS-eszköz jelenlegi jelszava 6 számjegyű, az eszköz egészen addig megfelelőnek minősül, amíg a felhasználó legközelebb meg nem változtatja az eszköz jelszavát.
-
-## <a name="to-create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozásához
-
-1. Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival.
-
-2. Miután sikeresen bejelentkezett, megjelenik az **Azure irányítópultja**.
-
-3. Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
-
-4. Az **Intune** kiválasztásával megjelenik az **Intune irányítópultja**.
-
-5. Válassza az **Eszközmegfelelőség** elemet, majd a **Kezelés** csoportban válassza a **Házirendek** lehetőséget.
-
-6. Válassza a **Házirend létrehozása** lehetőséget.
-
-7. Írjon be egy nevet és egy leírást, és válassza ki azt a platformot, amelyre ez a szabályzat vonatkozik.
-
-8. A megjelenő **Mac rendszerű megfelelőségi szabályzat** panelen válassza ki az eszközmegfelelőségi beállításkategóriákat (**Rendszerbiztonság**, **Eszközállapot** és **Eszköztulajdonság**) a saját beállítások meghatározásához.
-
-10. Ha elkészült a beállítások kiválasztásával, kattintson az **OK** gombra az egyes eszközmegfelelőségi beállításkategóriák alatt.
-
-11. Válassza az **OK**, majd a **Létrehozás** gombot.
+- **Adattároló titkosítása az eszközön**: A **Kötelező** lehetőséget választva az adattárolók titkosítva lesznek az eszközökön.
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése
 
-A megfelelőségi szabályzatok felhasználókhoz való hozzárendeléséhez válasszon egy már konfigurált szabályzatot. A meglévő szabályzatokat az **Eszközmegfelelőségi szabályzatok** panelen tekintheti meg.
+1. Válasszon ki egy konfigurált szabályzatot. A meglévő szabályzatok az **Eszközmegfelelőség** > **Szabályzatok** alatt találhatók.
+2. Válassza ki a szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Belefoglalhat vagy kizárhat Azure Active Directory (AD) biztonsági csoportokat.
+3. Azure AD-biztonsági csoportjait a **Kijelölt csoportok** lehetőséget választva tekintheti meg. Kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
 
-1. Válassza ki azt az eszközmegfelelőségi szabályzatot, amelyet szeretne hozzárendelni felhasználókhoz, majd válassza a **Hozzárendelések** lehetőséget. Ekkor megnyílik a panel, amelyen kiválaszthatja a kívánt **Azure Active Directory-biztonsági csoportokat**, és hozzárendelheti azokat a szabályzathoz.
+> [!TIP]
+> Az eszközök alapértelmezés szerint nyolc óránként ellenőrzik a megfelelőséget. Az eljárást azonban a felhasználó is kikényszerítheti az Intune Céges portál alkalmazáson keresztül.
 
-2. Válassza a **Kiválasztott csoportok** lehetőséget az Azure AD biztonsági csoportjait megjelenítő lap megnyitásához.
-
-3. Válassza a **Mentés** gombot az eszközmegfelelőségi szabályzat Azure AD biztonsági csoportokhoz rendelésére.
-
-4. Miután befejezte az eszközmegfelelőségi szabályzat hozzárendelése a csoportokhoz, bezárhatja a **Hozzárendelések** panelt.
-
-    > [!TIP]
-    > Alapértelmezés szerint az eszközök 8 óránként ellenőrzik a megfelelőséget, de a felhasználók kényszeríthetik ezt a folyamatot az Intune Céges portál alkalmazás használatával.
+Ezzel érvénybe léptette a szabályzatot a felhasználók számára. A rendszer ekkor kiértékeli a szabályzat hatókörébe tartozó felhasználók által használt eszközök megfelelőségét.
 
 ## <a name="next-steps"></a>További lépések
-
-[Az eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)
+[Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz](actions-for-noncompliance.md)  
+[Intune-eszközmegfelelőségi szabályzatok figyelése](compliance-policy-monitor.md)

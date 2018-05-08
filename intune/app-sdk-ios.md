@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | Karakterláncok tömbje | Az alkalmazás WebView-ja �
 
 > [!NOTE]
 > Ha az alkalmazás elérhető lesz az App Store-ban, a `MAMPolicyRequired` értékét NEM értékre kell beállítani az App Store irányelvei alapján.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>Adatok megosztása az UIActivityViewController használatával 
+Kezdve a 8.0.2+ verziótól az Intune APP SDK képes lesz az UIActivityViewController műveleteinek szűrésére, így nem Intune-beli megosztási helyek is választhatók. Ezt a működést az alkalmazás adatátviteli szabályzata és egy hamarosan megjelenő APP-funkció fogja szabályozni. Az új funkció akkor lesz engedélyezve, miután a Microsoft saját alkalmazásainak többsége (tehát a Word, az Excel és a PowerPoint) végrehajtotta az UIActivityViewController általi adatmegosztáshoz szükséges módosításokat. 
+ 
+### <a name="copy-to-actions"></a>„Másolás ide” műveletek 
+Dokumentumoknak az UIActivityViewController és az UIDocumentInteractionController általi megosztásakor az iOS másolási műveletet jelenít meg a megosztott dokumentum megnyitását támogató alkalmazások mindegyike mellett. Az alkalmazások az Info.plist fájljukban lévő CFBundleDocumentTypes beállításban közlik a támogatott dokumentumok típusát. Ez a megosztástípus többé nem lesz elérhető, ha a szabályzat nem engedi meg a nem felügyelt alkalmazásokkal való megosztást. Helyette egy felhasználói felület nélküli műveleti bővítményt kell hozzáadni az alkalmazásokhoz, amely az iOS-es Intune APP SDK-ra hivatkozik. A műveleti bővítmény kódcsonkként működik. A fájlmegosztó működést az SDK implementálja. A SDK-integráció fenti lépésein kívül a következőket kell végrehajtani: 
+ 
+1. Az alkalmazás Info.plist fájljában a CFBundleURLTypes alatt szerepelnie kell legalább egy schemeURL-definíciónak. 
+2. Az alkalmazásnak és a műveleti bővítménynek benne kell lennie legalább egy közös alkalmazáscsoportban, az alkalmazáscsoportnak pedig szerepelnie kell az AppGroupIdentifiers tömbben az alkalmazás és bővítmény IntuneMAMSettings katalógusában. 
+3. A műveleti bővítmény neveként adja meg a „Megnyitás a következőben:” szöveget az alkalmazás nevével kiegészítve. Szükség esetén az Info.plist fájl honosítható. 
+4. A bővítményhez az [Apple fejlesztői dokumentációban](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/) leírt módon tervezhet ikonsablont. Ezek a képek az IntuneMAMConfigurator eszközzel is generálhatók az alkalmazás .app mappájából. Futtassa az „IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory” parancsot. 
+5. A bővítmény Info.plist fájljában az IntuneMAMSettings alatt adjon meg egy logikai típusú beállítást, melynek neve OpenInActionExtension, értéke pedig YES. 
+6. A NSExtensionActivationRule beállítást konfigurálja úgy, hogy támogasson egyedi fájlokat és minden „com.microsoft.intune.mam” előtagú típust az alkalmazás CFBundleDocumentTypes beállításából. Ha az alkalmazás például a public.text és public.image típusokat támogatja, akkor az aktiválási szabály a következő lesz: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Meglévő megosztási és műveleti bővítmények frissítése 
+Ha az alkalmazás már tartalmaz megosztási vagy műveleti bővítményeket, akkor az Intune-típusok engedélyezéséhez módosítani kell azok NSExtensionActivationRule beállítását. Minden kiterjesztéssel megadott támogatott típushoz új típust kell megadni a „com.microsoft.intune.mam” előtaggal. Ha a meglévő aktiválási szabály például a következő:  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Akkor az alábbi módon kell módosítani: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] Az Intune-típusok a IntuneMAMConfigurator-eszköz használatával adhatók az aktiválási szabályhoz. Ha a meglévő aktiválási szabály előre definiált sztringkonstansokat használ (például NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText stb.), akkor a predikátumok szintaxisa nagyon bonyolulttá válhat. Az IntuneMAMConfigurator-eszköz arra is felhasználható, hogy az aktiválási szabályt sztringkonstansokból predikátumsztringgé alakítsa az Intune-típusok hozzáadása során. Az IntuneMAMConfigurator a GitHub adattárában található meg. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Célzott MAM-konfiguráció engedélyezése iOS-alkalmazásokhoz
 A célzott MAM-konfiguráció lehetővé teszi, hogy az alkalmazások konfigurációs adatokat fogadjanak az Intune App SDK-ból. Ezeknek az adatoknak a formátumát és változatait az alkalmazás tulajdonosának/fejlesztőjének kell meghatároznia és kommunikálnia az Intune-ügyfelek felé. Az Intune-rendszergazdák az Intune Azure Portalon célozhatják és telepíthetik a konfigurációs adatokat. Az iOS-hez készült Intune App SDK 7.0.1-es és újabb verzióiban a célzott MAM-konfigurációban résztvevő alkalmazások a MAM szolgáltatáson keresztül kaphatják meg a célzott MAM-konfigurációs adatokat. Az alkalmazáskonfigurációs adatokat az MDM-csatorna helyett az MAM szolgáltatásán keresztül közvetlenül az alkalmazásba küldi a rendszer. Az Intune App SDK egy osztályt biztosít az ezekről a konzolokról lekért adatok eléréséhez. Vegye figyelembe a következő előfeltételeket: <br>

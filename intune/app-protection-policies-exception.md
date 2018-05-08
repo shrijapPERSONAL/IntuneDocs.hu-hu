@@ -3,10 +3,10 @@ title: Az adatátviteli szabályzat kivételei alkalmazások esetén
 titleSuffix: Microsoft Intune
 description: Kivételeket hozhat létre az Intune Mobilalkalmazás-kezelés (MAM) adatátviteli szabályzataihoz.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Kivételek létrehozása az Intune Mobilalkalmazás-kezelés (MAM) adatátviteli szabályzataihoz
 
@@ -47,9 +47,18 @@ Az androidos szabályzatok esetén alkalmazáscsomagok alapján konfigurálható
 ### <a name="example"></a>Példa
 Ha a **Webex** csomagot kivételként hozzáadja a MAM adatátviteli szabályzatához, akkor a felügyelt Outlook-e-mailekben a Webex-hivatkozásokat közvetlenül a Webex-alkalmazásban lehet megnyitni. Az adatátvitel azonban továbbra is korlátozva marad az egyéb nem kezelt alkalmazásokban.
 
-- iOS-es **Webex**-példa: ha engedélyezni szeretné, hogy a **Webex** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás, adatátviteli kivételt kell hozzáadnia a következő sztringhez: <code>wbx</code>.
+- iOS-es **Webex**-példa: ha engedélyezni szeretné, hogy a **Webex** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás, adatátviteli kivételt kell hozzáadnia a következő sztringhez: <code>wbx</code>
+    
+ - iOS-es **Maps**-példa: ha engedélyezni szeretné, hogy a natív **Maps** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás, adatátviteli kivételt kell hozzáadnia a következő sztringhez: <code>maps</code>
 
-- Androidos **Webex**-példa: ha engedélyezni szeretné, hogy a **Webex** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás, adatátviteli kivételt kell hozzáadnia a következő sztringhez: <code>com.cisco.webex.meetings</code>. 
+- Androidos **Webex**-példa: ha engedélyezni szeretné, hogy a **Webex** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás, adatátviteli kivételt kell hozzáadnia a következő sztringhez: <code>com.cisco.webex.meetings</code>
+    
+- Androidos **SMS**-példa: ha engedélyezni szeretné, hogy a natív **SMS** alkalmazást meg tudja hívni egy Intune által kezelt alkalmazás különböző üzenetkezelő alkalmazásokban és Android-eszközökön, adatátviteli kivételeket kell hozzáadnia a következő sztringekhez: 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## <a name="next-steps"></a>További lépések
 

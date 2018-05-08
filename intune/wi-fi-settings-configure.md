@@ -3,8 +3,8 @@ title: Wi-Fi-beállítások konfigurálása az Intune-ban
 titleSuffix: Microsoft Intune
 description: Útmutató arról, hogyan konfigurálhatóak a Wi-Fi-kapcsolatok felügyelt eszközökön a Microsoft Intune-nal.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -38,7 +38,7 @@ A Wi-Fi-profilok a következő eszközplatformokat támogatják:
 - Android 4 és újabb verziók
 - Android for Work
 - iOS 8.0 és újabb verziók
-- macOS (a Mac OS X 10.9-es vagy újabb verziója)
+- macOS (a Mac OS X 10.11-es vagy újabb verziója)
 
 Windows 8.1, Windows 10, Windows 10 Mobile és Windows Holographic for Business rendszerű eszközök esetén importálhatja egy másik eszköz korábban exportált Wi-Fi-konfigurációját.
 

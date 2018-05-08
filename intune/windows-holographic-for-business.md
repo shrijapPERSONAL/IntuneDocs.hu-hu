@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Windows Holographic rendszerű eszközök testre szabása az Intune-nal
 
@@ -38,7 +38,7 @@ A megfelelőségi szabályzatok olyan szabályok és beállítások, amelyeknek 
 
 Lásd még: **[Első lépések a megfelelőségi szabályzatokkal](device-compliance-get-started.md)**.
 
-## <a name="deploy-apps"></a>Alkalmazások telepítése
+## <a name="deploy-and-manage-apps"></a>Alkalmazások központi telepítése és kezelése
 **[Alkalmazások hozzáadása az Intune-hoz](apps-add.md)**
 
 Az Intune használatával alkalmazásokat adhat hozzá a Windows Holographic for Business rendszerű eszközeihez. Alkalmazások telepítésére több mód is van, többek között:
@@ -46,6 +46,16 @@ Az Intune használatával alkalmazásokat adhat hozzá a Windows Holographic for
 - [Microsoft Áruházbeli alkalmazások hozzáadása](store-apps-windows.md)
 - [Saját készítésű alkalmazások hozzáadása](lob-apps-windows.md)
 - [Alkalmazások hozzárendelése csoportokhoz](apps-deploy.md)
+
+A Microsoft Intune-nal univerzális Windows-alkalmazások telepíthetők a Windows Holographic for Business rendszert futtató Microsoft HoloLens-eszközökre. Az alkalmazáscsomagok közvetlenül feltölthetők az Intune Azure Portalon, vagy üzembe helyezhetők a Microsoft Store Vállalatoknak áruházból. A kapcsolódó témakörökről az alábbi cikkek nyújtanak bővebb információt:
+- Üzletági alkalmazások telepítéséről az Intune Azure Portalon: [Windowsos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz](lob-apps-windows.md).
+- Alkalmazások telepítéséről a Microsoft Store Vállalatoknak áruházból: [A Microsoft Store Vállalatoknak áruházban vásárolt alkalmazások kezelése a Microsoft Intune-nal](windows-store-for-business.md). 
+- Alkalmazások kezeléséről a Microsoft Intune-nal: [Alkalmazáskezelés a Microsoft Intune-ban](app-management.md).
+- A Microsoft HoloLensre készülő alkalmazások fejlesztéséről: [Vegyes valóság alkalmazások a Microsoft HoloLenshez](https://www.microsoft.com/hololens/apps). 
+
+> [!NOTE]
+> A Windows 10 Holographic for Business 1607 rendszerű HoloLens-eszközök nem támogatják a Microsoft Store Vállalatoknak áruházból származó, online licencelt alkalmazásokat. További információ: [Alkalmazások telepítése a HoloLens-re](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+
 
 ## <a name="device-categories-and-groups"></a>Eszközkategóriák és csoportok
 **[Eszközök csoportokba sorolása](device-group-mapping.md)**

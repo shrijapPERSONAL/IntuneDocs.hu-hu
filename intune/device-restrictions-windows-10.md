@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Eszközkorlátozási beállítások Windows 10-hez (és újabb rendszerekhez) az Intune-ban
 A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Windows 10 rendszerű eszközökhöz.
@@ -253,7 +253,7 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 
 A kioszkeszközök jellemzően egyetlen alkalmazást futtatnak, vagy az alkalmazások egy előre meghatározott készletét. A rendszer a felhasználóknak csak ezekhez a kioszkalkalmazásokhoz ad hozzáférést, és meggátolja az eszköz más funkcióinak és szolgáltatásainak elérését.
 
-- **Kioszkmód** – Azonosítja a szabályzat által támogatott kioszkmód típusát. A lehetőségek a következők:
+- **Kioszkmód** – Azonosítja a szabályzat által támogatott teljes képernyős mód típusát. A lehetőségek a következők:
 
   - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
   - **Egyalkalmazásos kioszk** – A profil csak egyetlen alkalmazás futtatását engedélyezi az eszköznek. Amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
@@ -292,7 +292,7 @@ Hozzon létre egy kioszkkonfigurációt a **Hozzáadás** gomb használatával (
 
 - **Hozzárendelt felhasználók** – Adjon meg egy vagy több olyan felhasználói fiókot, amely jogosult a társított alkalmazások használatára. A fiókkal való bejelentkezéskor csak a konfigurációban meghatározott alkalmazások érhetők el. Ez lehet egy helyi fiók az eszközön, vagy egy Azure AD-fiók, amely a teljes képernyős alkalmazáshoz van társítva.
 
-    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja a `domain\user@tenant.com` formátumot.
+    Nyilvános környezetben működő, automatikus bejelentkezésű kioszkeszköz esetében ajánlott a legalacsonyabb szintű hozzáféréssel rendelkező felhasználótípust (például egyszerű helyi felhasználó fiókot) választania. Ha Azure Active Directory- (AD-) fiókot kíván konfigurálni a kioszkmódhoz, használja az `domain\user@tenant.com` formátumot.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender víruskereső
 
@@ -370,6 +370,11 @@ Ha a meghajtón található fájlok írásvédettek, a Defender nem tudja eltáv
 - **Nyomtatási szolgáltatás erőforrás-URI-ja** – A nyomtatási szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
 - **Lekérdezendő nyomtatók maximális száma (csak mobil)** – Az egyes felderítési végpontokból lekérdezendő nyomtatók maximális száma.
 - **Nyomtatófelderítési szolgáltatás erőforrás-URI-ja** – A nyomtatófelderítési szolgáltatás Azure Portal webhelyen konfigurált OAuth-erőforrás-URI-ja.
+
+## <a name="local-printer"></a>Helyi nyomtató
+- **Nyomtatók** – A hozzáadott helyi nyomtatók listája.
+- **Alapértelmezett nyomtató** – Az alapértelmezett nyomtató beállítása.
+- **Felhasználói hozzáférés új nyomtatók hozzáadásához** – Helyi nyomtatók használatának engedélyezése vagy tiltása.
 
 ## <a name="reporting-and-telemetry"></a>Jelentéskészítés és telemetria
 

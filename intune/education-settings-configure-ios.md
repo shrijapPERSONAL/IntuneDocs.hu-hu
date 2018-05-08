@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Az iOS-beli Osztályterem alkalmazás Intune-beállításainak konfigurálása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Bevezetés
-Az [Osztályterem](https://itunes.apple.com/app/id1085319084) egy olyan alkalmazás, amely lehetővé teszi az oktatóknak a tanulási folyamat és a diákok eszközeinek irányítását az osztályteremben. Az alkalmazás használatával egy oktató például:
+Az [Osztályterem](https://itunes.apple.com/app/id1085319084) egy olyan alkalmazás, amely lehetővé teszi az oktatóknak a tanulási folyamat és a diákok eszközeinek irányítását az osztályteremben. Néhány példa a tanároknak az alkalmazás által elérhető lehetőségeire:
 
 - Megnyithat alkalmazásokat a diákok eszközein
 - Zárolhatja az iPad képernyőjét és feloldhatja annak zárolását
@@ -34,18 +34,18 @@ Az [Osztályterem](https://itunes.apple.com/app/id1085319084) egy olyan alkalmaz
 - Egy könyvjelzőre vagy egy könyv adott fejezetére léptetheti a diákok iPadjeit
 - Megjelenítheti egy diák iPad-képernyőjét az Apple TV-n
 
-Használja az Intune iOS **Oktatás** eszközprofilját és ennek a témakörnek az információit az Osztályterem alkalmazásnak és azoknak az eszközöknek a beállításához, amelyeken használni fogja azt.
+Az Osztályterem alkalmazást csak az után telepítheti eszközére, hogy létrehozott és konfigurált egy Intune iOS oktatási eszközprofilt.
 
 ## <a name="before-you-start"></a>Előkészületek
 
 A beállítások konfigurálása előtt vegye figyelembe a következőket:
 
-- Az oktatók és a diákok iPadjeinek regisztrálva kell lenniük az Intune-ban
+- Az oktatók és a diákok iPadjeinek regisztrálva kell lenniük az Intune-ban.
 - Győződjön meg arról, hogy az oktató eszközén telepítve van az [Apple Osztályterem](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) alkalmazás. Telepítheti az alkalmazást manuálisan, vagy használhatja az [Intune-alkalmazáskezelést](app-management.md).
-- Tanúsítványokat kell konfigurálnia az oktatói és a diákeszközök közötti kapcsolat hitelesítéséhez (lásd a 2. lépést)
-- A tanári és a hallgatói iPadeknek azonos Wi-Fi hálózaton kell lenniük, és a Bluetooth használatának engedélyezése is szükséges
-- Az Osztályterem alkalmazás iOS 9.3 vagy újabb operációs rendszerű felügyelt iPadeken működik
-- Ebben a kiadásban az Intune az 1:1-es forgatókönyv kezelését támogatja, amelynek esetén minden diák saját dedikált iPad készülékkel rendelkezik
+- Tanúsítványokat kell konfigurálnia az oktatói és a diákeszközök közötti kapcsolat hitelesítéséhez (lásd a 2. lépést: iOS-es oktatási profil létrehozása és hozzárendelése az Intune-ban).
+- A tanári és a hallgatói iPadeknek azonos Wi-Fi hálózaton kell lenniük, és a Bluetooth használatának engedélyezése is szükséges.
+- Az Osztályterem alkalmazás iOS 9.3 vagy újabb operációs rendszerű felügyelt iPadeken működik.
+- Ebben a kiadásban az Intune az 1:1-es forgatókönyv kezelését támogatja, amelynek esetén minden diák saját dedikált iPad készülékkel rendelkezik.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1. lépés – Importálja az iskolai adatokat az Azure Active Directoryba
@@ -82,14 +82,14 @@ Az SDS-be a következő módszerek valamelyikével importálhat adatokat:
 9.  Válassza a **Beállítások** > **Konfigurálás** lehetőséget.
 
 
-Ezután tanúsítványokra lesz szüksége az oktató és a diákok iPadjei közötti megbízhatósági kapcsolat létrehozásához. A tanúsítványok az eszközök közötti kapcsolatok felhasználónevek és jelszavak megadása nélküli, zökkenőmentes és csendes hitelesítéséhez használatosak.
+A következő lépésben tanúsítványokat fog létrehozni az oktató és a diákok iPadjei közötti megbízhatósági kapcsolat létrehozásához. A tanúsítványok az eszközök közötti kapcsolatok felhasználónevek és jelszavak megadása nélküli, zökkenőmentes és csendes hitelesítéséhez használatosak.
 
 >[!IMPORTANT]
 >A használt oktatói és diáktanúsítványokat különböző hitelesítésszolgáltatóknak (CA) kell kiállítaniuk. Létre kell hoznia két új alárendelt hitelesítésszolgáltatót a meglévő tanúsítvány-infrastruktúrához kapcsolódva: egyet az oktatók és egyet a diákok számára.
 
 Az iOS oktatási profiljai csak a PFX-tanúsítványokat támogatják. Az SCEP-tanúsítványok nem támogatottak.
 
-A létrehozott tanúsítványoknak támogatniuk kell a kiszolgálói hitelesítést is a felhasználó hitelesítése mellett.
+A létrehozott tanúsítványoknak a kiszolgálói hitelesítést és a felhasználóhitelesítést is támogatniuk kell.
 
 ### <a name="configure-teacher-certificates"></a>Oktatói tanúsítványok konfigurálása
 
@@ -97,13 +97,15 @@ Az **Oktatás** panelen válassza a **Oktatói tanúsítványok** lehetőséget.
 
 #### <a name="configure-teacher-root-certificate"></a>Oktatói főtanúsítvány konfigurálása
 
-Az **Oktatói főtanúsítvány** területen a Tallózás gombra kattintva válassza ki az oktatói főtanúsítvány .cer (DER vagy Base64-kódolású) vagy .P7b (a teljes tanúsítványlánccal vagy anélkül) kiterjesztésű fájlját.
+A **Tanári főtanúsítvány** alatt válassza a böngészés gombot. Válassza a következő főtanúsítványok egyikét:
+- .cer kiterjesztésű (DER vagy Base64 kódolású) 
+- .P7B kiterjesztésű (teljes lánccal vagy anélkül)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Oktatói PKCS#12 tanúsítvány konfigurálása
 
 Az **Oktatói PKCS#12-tanúsítvány** területen konfigurálja a következő értékeket:
 
-- **Tulajdonosnév formátuma** – Az Intune automatikusan előtaggal egészíti ki a tanúsítvány köznapi nevét. Ez az oktatói tanúsítványoknál **leader** (vezető), illetve **member** (tag) a diáktanúsítványok esetében.
+- **Tulajdonos nevének formátuma**: Az Intune a tanári tanúsítványokban szereplő teljes nevet automatikusan ellátja a **vezető** előtaggal. A tanulói tanúsítványban szereplő teljes nevek előtagja **tag** lesz.
 - **Hitelesítésszolgáltató:** Olyan vállalati hitelesítésszolgáltató (CA), amelyen a Windows Server 2008 R2 vagy újabb rendszer Enterprise kiadása fut. Az önálló hitelesítésszolgáltató nem támogatott. 
 - **Hitelesítésszolgáltató neve** – Adja meg a hitelesítésszolgáltatója nevét.
 - **Tanúsítványsablon neve** – Válassza ki annak a tanúsítványsablonnak a nevét, amely hozzá van adva egy kiállító hitelesítésszolgáltatóhoz. 
@@ -120,13 +122,15 @@ Miután befejezte a tanúsítványok konfigurálását, kattintson az **OK** gom
 
 #### <a name="configure-student-root-certificate"></a>Tanulói főtanúsítvány konfigurálása
 
-A **Tanulói főtanúsítvány** területen a Tallózás gombra kattintva válassza ki a tanulói főtanúsítvány .cer (DER vagy Base64-kódolású) vagy .P7b (a teljes tanúsítványlánccal vagy anélkül) kiterjesztésű fájlját.
+A **Tanulói főtanúsítvány** alatt válassza a böngészés gombot. Válassza a következő főtanúsítványok egyikét:
+- .cer kiterjesztésű (DER vagy Base64 kódolású) 
+- .P7B kiterjesztésű (teljes lánccal vagy anélkül)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Tanulói PKCS#12-tanúsítvány konfigurálása
 
 Az **Tanulói PKCS#12-tanúsítvány** területen konfigurálja a következő értékeket:
 
-- **Tulajdonosnév formátuma** – Az Intune automatikusan előtaggal egészíti ki a tanúsítvány köznapi nevét. Ez az oktatói tanúsítványoknál **leader** (vezető), illetve **member** (tag) a diáktanúsítványok esetében.
+- **Tulajdonos nevének formátuma**: Az Intune a tanári tanúsítványokban szereplő teljes nevet automatikusan ellátja a **vezető** előtaggal. A tanulói tanúsítványban szereplő teljes nevek előtagja **tag** lesz.
 - **Hitelesítésszolgáltató:** Olyan vállalati hitelesítésszolgáltató (CA), amelyen a Windows Server 2008 R2 vagy újabb rendszer Enterprise kiadása fut. Az önálló hitelesítésszolgáltató nem támogatott. 
 - **Hitelesítésszolgáltató neve** – Adja meg a hitelesítésszolgáltatója nevét.
 - **Tanúsítványsablon neve** – Válassza ki annak a tanúsítványsablonnak a nevét, amely hozzá van adva egy kiállító hitelesítésszolgáltatóhoz. 
@@ -147,7 +151,7 @@ Rendelje hozzá a profilt az iskolai adatok az Azure AD-vel való szinkronizál�
 
 ## <a name="next-steps"></a>További lépések
 
-Az oktatók az Osztályterem alkalmazás használatakor most már teljes hozzáféréssel rendelkeznek a diákok eszközeihez.
+Az oktatók ez után az Osztályterem alkalmazás használatakor teljes hozzáféréssel rendelkeznek a diákok eszközeihez.
 
 Az Osztályterem alkalmazással kapcsolatos további tudnivalókért lásd az [Osztályterem alkalmazás súgóját](https://help.apple.com/classroom/ipad/2.0/) az Apple webhelyén.
 

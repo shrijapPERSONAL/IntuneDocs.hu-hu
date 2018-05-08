@@ -24,7 +24,7 @@ ms.lasthandoff: 04/18/2018
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Intune iOS-eszközmegfelelőségi szabályzataival megszabhatja az iOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) a című cikk nyújt bővebb tájékoztatást.
+Az Intune iOS-eszközmegfelelőségi szabályzataival megszabhatja az iOS-eszközök megfelelőségéhez kötelezően szükséges szabályokat és beállításokat. Az eszközmegfelelőségi szabályzatokat a feltételes hozzáféréssel használva engedélyezheti vagy letilthatja a hozzáférést a vállalati erőforrásokhoz. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Intune Azure Portalon minden platformhoz létrehozhat megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
@@ -63,7 +63,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 ## <a name="email"></a>E-mail
 
-- **Felügyelt e-mail-profil megkövetelése a mobileszközökön**: Ha ez Kötelezőként van megadva, akkor az Intune által felügyelt e-mail-profillal nem rendelkező eszközök nem megfelelőnek minősülnek. Egy eszköz akkor nem rendelkezhet felügyelt e-mail-profillal, ha nincs megfelelő célcsoportban, vagy ha a felhasználó manuálisan állította be az e-mail-fiókokt az eszközön.
+- **Felügyelt e-mail-profil megkövetelése a mobileszközökön**: Ha ez Kötelezőként van megadva, akkor az Intune által felügyelt e-mail-profillal nem rendelkező eszközök nem megfelelőnek minősülnek. Egy eszköz akkor nem rendelkezhet felügyelt e-mail-profillal, ha nincs megfelelő célcsoportban, vagy ha a felhasználó manuálisan állította be az e-mail-fiókot az eszközön.
 
   Az eszköz a következő esetekben számít nem megfelelőnek:
   - Az e-mail-profil nem a megfelelőségi szabályzat által célzott felhasználócsoporttól különböző felhasználócsoportnál van telepítve.
@@ -76,7 +76,7 @@ Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurál
 ## <a name="device-health"></a>Device health
 
 - **Feltört eszközök**: Ha ezt a beállítást engedélyezi, akkor a feltört eszközök nem lesznek kompatibilisek.
-- **Maximálisan elérhető eszközfenyegetettségi szint használata** (iOS 8.0 és újabb verziók): Válassza ki a legmagasabb fenyegetettségi szintet az eszközök nemmegfelelőként való megjelöléséhez. Az ezt a szintet meghaladó fenyegetettségű eszközök nem megfelelőként lesznek megjelölve:
+- **Maximálisan elérhető eszközfenyegetettségi szint használata** (iOS 8.0 és újabb verziók): Válassza ki a legmagasabb fenyegetettségi szintet az eszközök nem megfelelőként való megjelöléséhez. Az ezt a szintet meghaladó fenyegetettségű eszközök nem megfelelőként lesznek megjelölve:
   - **Védett**: Ez a legbiztonságosabb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
@@ -97,7 +97,7 @@ Az e-mail-profilról a [Vállalati levelezéshez való hozzáférés konfigurál
 - **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez. A jelszót használó iOS-eszközöket titkosítja a rendszer.
 - **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
 - **Jelszó minimális hossza**: Meghatározhatja a jelszóban szereplő számjegyek vagy karakterek minimális számát.
-- **Jelszó megkövetelt típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**Alfanumerikus**) karaktereket vegyesen tartalmazzon.
+- **Jelszó megkövetelt típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**alfanumerikus**) karaktereket vegyesen tartalmazzon.
 - **Nem alfanumerikus karakterek száma a jelszóban**: Megadhatja, hogy hány speciális karakternek (például &, #, %, ! stb.) kell szerepelnie a jelszóban.
 
     Ha nagyobb értékre állítja, a felhasználóknak összetettebb jelszót kell létrehozniuk.
