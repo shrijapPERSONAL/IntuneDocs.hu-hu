@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizált e-mailek és műveletek hozzáadása a nem megfelelő eszközökhöz – Intune
 
@@ -77,7 +77,10 @@ További műveletet akkor vehet fel, ha új megfelelőségi szabályzatot hoz l�
 1. Az [Azure Portalon](https://portal.azure.com) nyissa meg a **Microsoft Intune** lapot, és kattintson az **Eszközmegfelelőség** elemre.
 2. Kattintson a **Szabályzatok** elemre, válassza ki az egyik szabályzatot, majd kattintson a **Tulajdonságok** elemre. 
 
-   Még nincs szabályzata? Létrehozhat egy új szabályzatot [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), vagy más platformokon.
+  Még nincs szabályzata? Létrehozhat egy új szabályzatot [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), vagy más platformokon.
+  
+  > [!NOTE]
+  > A JAMF-eszközök és az eszközcsoportok segítségével megcélzott eszközök jelenleg nem képesek megfelelőségi műveleteket fogadni.
 
 3. Válassza a **Meg nem felelőség esetén végrehajtandó műveletek** lehetőséget, és kattintson a **Hozzáadás** elemre a művelet paramétereinek megadásához. Választhatja a korábban már létrehozott üzenetsablont, hozzáadhat új címzetteket, és frissítheti a türelmi időszak ütemezését. Az ütemezésben megadhatja a napok számát (0 és 365 között), majd kötelezővé teheti a feltételes hozzáférési szabályzatok érvénybe léptetését. Ha **0** napot adott meg, a feltételes hozzáférés **azonnal** letiltja a céges erőforrásokhoz való hozzáférést.
 

@@ -149,6 +149,6 @@
 #### [Engedélyezni kell a felhasználói fiókok felügyeletét](you-need-to-enable-uac-windows.md)
 #### [Frissíteni kell a Windows-t](you-need-to-update-os-build-version-windows.md)
 #### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md)
-
+## [Eszköz távoli zárolása az Intune Céges portál alkalmazásból Windows rendszerben](remote-lock-your-device-cp-app.md) 
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)
 ### [Eszköz távoli zárolása](remote-lock-your-device-cpwebsite.md)

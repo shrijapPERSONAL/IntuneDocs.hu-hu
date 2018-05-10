@@ -1,12 +1,12 @@
 ---
-title: Újdonságok a Microsoft Intune-ban
+title: Újdonságok a Microsoft Intune-ban – Azure | Microsoft Docs
 titlesuffix: ''
 description: Az Azure-beli Intune-portál újdonságai
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>2018. április 23-i hét
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>A veszélyforrások elleni fejlett védelem (ATP) és az Intune teljesen integrálva van <!-- EEready 1629303 -->
+
+A Windows Defender biztonsági központban (ATP portál) kapcsolatot hozhat létre a Microsoft Intune-nal. Ennek létrehozása után egy Intune-megfelelőségi szabályzat alapján meg lesz határozva az elfogadható fenyegetettségi szint. Így a fenyegetettségi szint túllépése esetén egy Azure Active Directory-beli megfelelőségi szabályzat a vállalaton belül letilthatja néhány alkalmazás elérését.
+
+Ez a funkció teszi lehetővé az ATP számára a fájlok vizsgálatát, a fenyegetések észlelését, és a Windows 10 rendszerű eszközöket érintő kockázatok jelentését.
+
+Lásd: [Az ATP engedélyezése feltételes hozzáféréssel az Intune-ban](advanced-threat-protection.md).
+
+## <a name="week-of-april-16-2018"></a>2018. április 16-i hét
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>Cisco AnyConnect ügyfél használata iOS-hez <!-- EEready 1333708 -->
+
+Új VPN-profil iOS-hez történő létrehozásakor mostantól két lehetőség közül lehet választani: **Cisco AnyConnect** és **Cisco Legacy AnyConnect**. A Cisco AnyConnect-profilok a 4.0.7x és újabb verziókat támogatják. Meglévő iOS Cisco AnyConnect VPN-profiljai a **Cisco Legacy AnyConnect** nevet kapják, és továbbra is úgy működnek a Cisco AnyConnect 4.0.5x és régebbi verzióival, mint eddig.
+
+> [!NOTE]
+> Ez a módosítás csak az iOS-re vonatkozik. Az Android, az Android for Work és a macOS platformokhoz továbbra is csak egy Cisco AnyConnect-lehetőség érhető el.
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>A Jamf-ban regisztrált macOS-eszközök már regisztrálhatnak az Intune-nal <!-- 2370684 -->
+
+A macOS-es Céges portál 1.3 és 1.4 verziója nem regisztrálta sikeresen a Jamf-eszközöket az Intune-nal. A macOS portál 1.4.2 verziója kijavítja ezt a hibát.
+
 
 ## <a name="week-of-april-9-2018"></a>2018. április 9-i hét
 
@@ -140,8 +164,6 @@ Ez egy választható oszlop az Eszközök panelen. Alapértelmezés szerint nem 
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>Az iOS-eszközöktől 15 percenként PIN-kódot kér a rendszer <!--1550837 -->
 Miután megfelelőségi vagy konfigurációs szabályzatot alkalmazott egy iOS-eszközre, a felhasználóktól 15 percenként egy PIN-kódot kér a rendszer. A kérések mindaddig megjelennek, amíg a felhasználó nem ad meg egy PIN-kódot.
 
-
-
 #### <a name="schedule-your-automatic-updates---1805514---"></a>Az automatikus frissítések ütemezése <!--1805514 -->
 Az Intune-nal igény szerint telepítheti az automatikus frissítéseket a [Windows frissítési köreinek beállításaival](windows-update-for-business-configure.md). Ezzel a frissítéssel ismétlődő frissítéseket ütemezhet, amelyek a hetet, a napot és az időt is tartalmazzák.
 
@@ -179,6 +201,10 @@ A Tűzfal beállítás engedélyezése után két stratégia szerint konfigurál
 - Egyes alkalmazások engedélyezése vagy letiltása
 
    A megadott alkalmazások számára engedélyezheti vagy tilthatja a bejövő kapcsolatok fogadását. A rejtett üzemmód engedélyezésével megakadályozhatja a válaszadást az ellenőrzési kérelmekre.
+
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>Részletes hibakódok és -üzenetek <!-- 1376342 -->
+
+A hibakódok és hibaüzenetek részletesebben megtekinthetők az Eszközkonfigurációban. A továbbfejlesztett jelentés bemutatja a beállításokat, azok állapotát és a hibakeresés részleteit.
 
 ##### <a name="more-information"></a>További információ
 
@@ -935,12 +961,6 @@ Az Intune-adattárház adatmodelljének első verziója csak a legújabb Intune-
 
 
 ## <a name="notices"></a>Értesítések
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Hogyan készüljek fel a változásra?
-
-A változás előkészítéséhez Önnek nincs teendője, mivel kisebb munkafolyamat-kezelőfelületi frissítésekről van szó.
-A Microsoft GDPR-megfelelőségével kapcsolatban további információért forduljon a További információk hivatkozáson keresztül elérhető Adatvédelmi központhoz.
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Tervezett módosítás: Új Windows 10-beállítás az Intune kioszkkonfigurációjához <!-- 1560072 -->
 Megváltozott az asztali Windows 10 1709-es és későbbi (RS3 és későbbi) verzióinak konfigurálási helye és módja az Intune Azure Portalon.

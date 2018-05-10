@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -80,6 +80,8 @@ Az eszközmegfelelőségi szabályzatok használatához az alábbi követelmény
   - Windows 10
 
 - A megfelelőségi állapotuk jelentéséhez az eszközöket regisztrálnia kell az Intune-ban.
+
+- Támogatottak az egy felhasználóhoz regisztrált, illetve elsődleges felhasználóval nem rendelkező eszközök is. Több felhasználói környezet egyidejű használata nem támogatott.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Az Intune-eszközmegfelelőségi szabályzatok és az Azure AD együttműködése
 
@@ -148,9 +150,9 @@ A szabályzat szabályainak megfelelő eszközök hozzáférést kapnak az e-mai
 Eszközmegfelelőségi szabályzatokat a feltételes hozzáférés nélkül is használhat. A megfelelőségi szabályzatok önálló használata esetén a megcélzott eszközöket megfelelőségi állapotuk szerint értékeli ki és jelenti a rendszer. Jelentést kérhet például arról, hogy hány eszköz nincs titkosítva, vagy mely eszközök vannak jailbreakelve vagy rootolva. Ha a megfelelőségi szabályzatokat feltételes hozzáférés nélkül használja, akkor nem korlátozza a rendszer a vállalati erőforrások elérését.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Az eszközmegfelelőségi szabályzatok üzembe helyezésének módjai
-Az eszközmegfelelőségi szabályzatokat üzembe helyezheti felhasználói csoportokban lévő felhasználók, illetve eszközcsoportokban lévő eszközök számára. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer a felhasználói eszközök megfelelőségét ellenőrzi.
+Az eszközmegfelelőségi szabályzatokat felhasználói csoportokban lévő felhasználók, illetve eszközcsoportokban lévő eszközök számára helyezheti üzembe. Amikor felhasználók számára telepít megfelelőségi szabályzatot, a rendszer az összes felhasználói eszköz megfelelőségét ellenőrzi.
 
-Az eszközcsoportokban lévő eszközökhöz a **Megfelelőségi szabályzat beállításai** lap (Azure Portal > Eszközmegfelelőség) az alábbi beállításokat tartalmazza:
+A **Megfelelőségi szabályzat beállításai** lap (Azure Portal > Eszközmegfelelőség) az alábbi beállításokat tartalmazza:
 
 - **Hozzárendelt megfelelőségi szabályzattal nem rendelkező eszköz megjelölése mint**: Ehhez a tulajdonsághoz két érték tartozik:
 
