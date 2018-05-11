@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/24/2018
+ms.date: 05/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -43,13 +43,145 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 
 ## <a name="week-of-april-23-2018"></a>2018. április 23-i hét
 
+### <a name="app-management"></a>Alkalmazáskezelés
+
+#### <a name="passcode-support-for-mam-pin-on-android---1438086---"></a>PIN-jelszó támogatása MAM PIN-ként Androidon<!-- 1438086 -->
+
+Az Intune-rendszergazdák alkalmazásindítási követelményként állíthatnak be PIN-jelszót a numerikus MAM PIN-kód helyett. Ha a beállítás engedélyezve van, akkor a rendszer a felhasználót egy PIN-jelszó beállítására kéri, amelyet kötelező alkalmaznia, mielőtt hozzáférhetne a MAM-kompatibilis alkalmazásokhoz. A PIN-jelszó olyan numerikus PIN-kód, amely legalább egy speciális karaktert vagy kisbetűt/nagybetűt is tartalmaz. Az Intune a PIN-jelszót a hagyományos, numerikus PIN-kódhoz hasonlóan támogatja: állíthat be minimális jelszóhosszt, és engedélyezheti a karakterek és sorozatok ismétlődését a felügyeleti konzolon. Ennek a funkciónak a használatához a Céges portál legújabb verziójára van szükség Android rendszerben. Ez a funkció már elérhető az iOS rendszerben.
+
+#### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>macOS – üzletági (LOB) alkalmazások támogatása <!-- 1473977 -->
+A Microsoft Intune támogatni fogja a macOS-hoz készült LOB-alkalmazások telepítését az Azure Portalról. Ezzel a funkcióval hozzáadhat egy macOS-hoz készült LOB-alkalmazást az Intune-hoz, miután azt előkészítette egy, a GitHubon elérhető eszközzel. Válassza az Azure Portalon az **Intune** panel **Mobilalkalmazások** elemét. A **Mobilalkalmazások** panelen válassza az **Alkalmazások** > **Hozzáadás** elemet. Az **Alkalmazás hozzáadása** panelen válassza az **Üzletági alkalmazás** lehetőséget. 
+
+#### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>Beépített Minden felhasználó és Minden eszköz csoport Android for Work- (AFW) alkalmazástársításokhoz <!-- 1813073 -->
+Kihasználhatja a beépített **Minden felhasználó** és **Minden eszköz** csoportot az AFW-alapú alkalmazástársításokhoz. További információ: [Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban](apps-inc-exl-assignments.md).
+
+#### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Az Intune újratelepíti a felhasználók által eltávolított kötelező alkalmazásokat <!-- 1947010 -->
+Ha egy végfelhasználó eltávolít egy kötelező alkalmazást, az Intune a 7 napos újraértékelési ciklus kivárása helyett 24 órán belül automatikusan újratelepíti az alkalmazást.
+
+### <a name="device-configuration"></a>Eszközök konfigurálása
+
+####  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153-eeready---"></a>Csoport minden eszközének megjelenítése az eszközprofil-diagramon és -állapotlistán <!-- 1449153 eeready -->
+Eszközprofil konfigurálásakor (**Eszközök konfigurálása** > **Profilok**) kiválasztja az eszközprofilt, például iOS. Ezután hozzárendeli ezt a profilt egy csoporthoz, mely tartalmaz iOS- és nem iOS-eszközöket is. A grafikus diagramon lévő számlálón az látható, hogy a profil alkalmazva lett az iOS- *és* a nem iOS-eszközökre is (**Eszközök konfigurálása** > **Profilok** > meglévő profil > **Áttekintés**). Amikor a grafikus diagramot választva megjeleníti az **Áttekintés** lapot, az **Eszközállapot** terület felsorolja a csoport összes eszközét, nemcsak az iOS-eszközöket. 
+
+A jelen frissítés megjelenése után a grafikus diagram (**Eszközök konfigurálása** > **Profilok** > meglévő profil > **Áttekintés**) csak az adott eszközprofil számlálóját jeleníti meg. Ha például az eszközprofil iOS-eszközökre van alkalmazva, akkor a diagram csak az iOS-eszközök számát jeleníti meg. A grafikus diagram választása és az **Eszközállapot** lista megnyitása esetén is csak az iOS-eszközök lesznek felsorolva.
+
+A jelen frissítés elkészültéig a grafikus felhasználói diagramot ideiglenesen eltávolítottuk. 
+
+#### <a name="always-on-vpn-for-windows-10---1333666---"></a>Mindig bekapcsolva VPN Windows 10-hez <!--1333666 -->
+
+Jelenleg a [Minden bekapcsolva](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on) trigger a Windows 10-eszközökön csak OMA-URI-val létrehozott egyéni VPN-profil segítségével használható.
+
+A frissítés révén a rendszergazdák engedélyezhetik a Mindig bekapcsolva beállítást a Windows 10 VPN-profilokban közvetlenül az Azure Portalon elérhető Intune konzolról. A Mindig bekapcsolva beállítású VPN-profilok automatikusan csatlakoznak az alábbi esetekben:
+
+- Felhasználói bejelentkezés az eszközre
+- Hálózatváltozás az eszközön
+- Az eszköz képernyője ismét bekapcsol, miután ki volt kapcsolva
+
+#### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Új nyomtatóbeállítások az oktatási profilokban <!-- 1308900 -->
+
+Az oktatási profilok új beállításai a **Nyomtatók** kategória **Nyomtatók**, **Alapértelmezett nyomtató**, **Új nyomtatók hozzáadása** területén érhetők el.
+
+#### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>Hívóazonosító megjelenítése a személyes profilban – Android for Work <!--1098984 -->
+Előfordulhat, hogy az eszközön személyes profilt használó végfelhasználók nem látják egy munkahelyi kapcsolat hívásazonosítójának részleteit. 
+
+Ez a frissítés egy új beállítást jelenít meg az **Android for Work** > **Eszközkorlátozások** > **Munkahelyi profil beállításai** területen:
+- Munkahelyi kapcsolat hívásazonosítójának megjelenítése a személyes profilban
+
+Engedélyezése (konfigurálás nélkül) esetén a munkahelyi hívó részletei megjelennek a személyes profilban. Tiltása esetén a munkahelyi hívó részletei nem jelennek meg a személyes profilban. 
+
+A következőkre vonatkozik: Android munkahelyi profilos eszközök Android v6.0 és újabb operációs rendszerekkel
+
+#### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Új Windows Defender Credential Guard-beállítások az Endpoint Protection-beállításokban <!--1102252 --><!--from 1802 and 1804-->
+
+Ezzel a frissítéssel a [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Eszközkonfiguráció** > **Profilok** > **Endpoint protection**) az alábbi beállításokkal bővült: 
+
+- **Windows Defender Credential Guard**: Bekapcsolja a Credential Guardot virtualizálás-alapú biztonsággal. Ennek a funkciónak a bekapcsolása segít megvédeni a hitelesítő adatokat a következő újraindításkor, ha a **Platformbiztonsági szint a Biztonságos rendszerindítással** és a **Virtualizálás-alapú biztonság** egyaránt be van kapcsolva. A lehetőségek a következők:
+  - **Letiltva**: Ha a Credential Guard előzőleg be volt kapcsolva az **Engedélyezve zárolással** lehetőséggel, akkor ez távolról kikapcsolja a Credential Guardot.
+
+  - **Engedélyezve UEFI-zárolással**: Ezzel a beállítással biztosíthatja, hogy a Credential Guard ne lehessen letiltható egy beállításkulccsal vagy egy csoportházirenddel. Ha ennek a beállításnak a használata után le szeretné tiltani a Credential Guardot, akkor a Csoportházirendet „Letiltva” állapotra kell állítania. Ezt követően távolítsa el a biztonsági funkciót mindegyik számítógépen egy fizikailag jelen lévő felhasználóval. Ezekkel a lépésekkel törölhető az UEFI-ban megőrzött konfiguráció. Amíg megvannak a UEFI-konfigurációk, a Credential Guard engedélyezve marad.
+
+  - **Engedélyezve zárolás nélkül**: Távolról letilthatja a Credential Guardot egy csoportházirenddel. Azokon az eszközökön, amelyek ezt a beállítást használják, legalább a Windows 10 1511-es verziójának kell futnia.
+
+Az alábbi függő technológiák automatikusan engedélyezve lesznek a Credential Guard konfigurálásakor: 
+
+  - **Virtualizálás-alapú biztonság (VBS) engedélyezése**: Bekapcsolja a virtualizálás-alapú biztonságot (VBS-t) a következő újraindításkor. A virtualizálás-alapú biztonság a Windows hipervizorral nyújt támogatást biztonsági szolgáltatásokhoz, és Biztonságos rendszerindítás szükséges hozzá.
+  - **Biztonságos rendszerindítás közvetlen memóriaeléréssel (DMA-val)**: Bekapcsolja a VBS-t a biztonságos rendszerindítás és a közvetlen memóriaelérés funkcióival. A DMA-védelemhez hardveres támogatás szükséges, és csak a megfelelően konfigurált eszközökön alkalmazható. 
+
+#### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Egyéni tulajdonosnév használata SCEP-tanúsítványokban <!-- 2064190 -->
+Használhatja az **OnPremisesSamAccountName** köznapi nevet egyéni tulajdonosként az SCEP-tanúsítványprofilokban. Így használhatja például a következőt: `CN={OnPremisesSamAccountName})`.
+
+####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977-eeready--"></a>Kamera és képernyőkép rögzítésének blokkolása Android for Work rendszerben <!-- 1098977 eeready-->
+Két új tulajdonság érhető el letiltásra, amikor az Android-eszközökhöz eszközkorlátozásokat állít be: 
+- Kamera: Letiltja a hozzáférést az eszközön lévő összes kamerához
+- Képernyőfelvétel: Letiltja a képernyőfelvételt, és megakadályozza a tartalom megjelenítését a biztonságos videokimenettel nem rendelkező megjelenítő eszközökön
+
+Android for Work rendszerre érvényes.
+
+
+### <a name="device-enrollment"></a>Eszközök beléptetése
+
+#### <a name="new-enrollment-steps-for-users-on-devices-with-macos-high-sierra-10132---1734567---"></a>Új regisztrációs lépések a macOS High Sierra 10.13.2 és újabb rendszert futtató eszközök felhasználóinak <!--1734567 -->
+A macOS High Sierra 10.13.2 rendszer bevezette a „felhasználó által jóváhagyott” mobileszköz-kezelési regisztrációt. A jóváhagyott regisztrációk lehetővé teszik az Intune-nak bizonyos biztonsági szempontból kényes beállítások kezelését. További információt az Apple támogatási dokumentumában találhat itt: https://support.apple.com/HT208019.
+
+A macOS rendszerhez készült Céges portál alkalmazással regisztrált eszközök „felhasználó által nem jóváhagyott” állapotúként vannak minősítve, hacsak a felhasználó manuálisan jóváhagyást nem ad a Rendszerbeállítások menü megnyitásával. Emiatt a macOS rendszerhez készült Céges portál alkalmazás mostantól a regisztrációs folyamat végén átirányítja a macOS 10.13.2 és újabb rendszerek felhasználóit a regisztrációjuk manuális jóváhagyásához. Az Intune felügyeleti konzolja jelenti, ha egy regisztrált eszközt jóváhagyott a felhasználó.
+
+
+
+### <a name="device-management"></a>Eszközkezelés
+
 #### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>A veszélyforrások elleni fejlett védelem (ATP) és az Intune teljesen integrálva van <!-- EEready 1629303 -->
 
-A Windows Defender biztonsági központban (ATP portál) kapcsolatot hozhat létre a Microsoft Intune-nal. Ennek létrehozása után egy Intune-megfelelőségi szabályzat alapján meg lesz határozva az elfogadható fenyegetettségi szint. Így a fenyegetettségi szint túllépése esetén egy Azure Active Directory-beli megfelelőségi szabályzat a vállalaton belül letilthatja néhány alkalmazás elérését.
+A [Komplex veszélyforrások elleni védelem](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) megállapítja a Windows 10 rendszerű eszközök kockázati szintjét. A Windows Defender biztonsági központban (ATP portál) kapcsolatot hozhat létre a Microsoft Intune-nal. Ennek létrehozása után egy Intune-megfelelőségi szabályzat alapján meg lesz határozva az elfogadható fenyegetettségi szint. Így a fenyegetettségi szint túllépése esetén egy Azure Active Directory-beli megfelelőségi szabályzat a vállalaton belül letilthatja néhány alkalmazás elérését.
 
 Ez a funkció teszi lehetővé az ATP számára a fájlok vizsgálatát, a fenyegetések észlelését, és a Windows 10 rendszerű eszközöket érintő kockázatok jelentését.
 
 Lásd: [Az ATP engedélyezése feltételes hozzáféréssel az Intune-ban](advanced-threat-protection.md).
+
+#### <a name="support-for-user-less-devices----1637553---"></a>Felhasználó nélküli eszközök támogatása <!-- 1637553 -->
+Az Intune támogatja a megfelelőség kiértékelését a felhasználó nélküli eszközökön is, ideértve például a Microsoft Surface Hub eszközt. A megfelelőségi szabályzat alkalmazható közvetlenül eszközökre. Ezért a megfelelőség (vagy meg nem felelőség) megállapítható a társított felhasználó nélküli eszközök esetében is.
+
+#### <a name="delete-autopilot-devices----1713650---"></a>Autopilot-eszközök törlése <!-- 1713650 -->
+Az Intune-rendszergazdák [törölhetik az Autopilot-eszközöket](enrollment-autopilot.md#delete-autopilot-devices).
+
+#### <a name="improved-device-deletion-experience---1832333---"></a>Továbbfejlesztett eszköztörlési funkció <!--1832333 -->
+Mostantól nem kell eltávolítania a céges adatokat vagy visszaállítania a gyári beállításokat, mielőtt [törölhetne egy eszközt az Intune-ból](devices-wipe.md#delete-devices-from-the-intune-portal).
+
+Az új törlési funkció eléréséhez jelentkezzen be az Intune-ba, és válassza az **Eszközök** > **Minden eszköz** > eszköz neve > **Törlés** lehetőséget.
+
+Ha továbbra is szeretné alaphelyzetbe állítani vagy kivonni az eszközöket, használhatja a megszokott **Céges adatok eltávolítása** és **Gyári beállítások visszaállítása** lehetőséget, mielőtt a **Törlés** lehetőséget választaná. 
+
+#### <a name="play-sounds-on-ios-when-in-lost-mode----1947769---"></a>Hang lejátszása iOS rendszeren Elveszett üzemmódban <!-- 1947769 -->
+Amikor egy felügyelt iOS-eszköz a mobileszköz-kezelés (MDM) [Elveszett üzemmódjában](device-lost-mode.md) van, [lejátszhat egy hangot](device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device) (**Eszközök** > **Minden eszköz** > válasszon iOS-eszközt > **Áttekintés** > **Egyebek**). A hang lejátszása egészen addig folytatódik, amíg az eszköz ki nem lép az Elveszett üzemmódból, vagy a felhasználó le nem tiltja a hangot az eszközön. iOS 9.3-as és újabb rendszerű eszközökre érvényes.
+
+#### <a name="block-or-allow-web-results-in-searches-made-on-an-intune-device---1972804--"></a>Keresések webes találatainak letiltása vagy engedélyezése Intune-eszközön <!--1972804-->
+
+A rendszergazdák mostantól letilthatják az eszközön a keresések webes eredményeit.
+
+#### <a name="improved-error-messaging-for-apple-mdm-push-certificate-upload-failure----2172331---"></a>Javított hibaüzenet az Apple MDM Push-tanúsítvány feltöltési hibájához <!-- 2172331 -->
+
+A hibaüzenet elmagyarázza, hogy ugyanazt az Apple ID-t kell használni egy meglévő MDM-tanúsítvány megújításakor.
+
+#### <a name="test-the-company-portal-for-macos-on-virtual-machines----2216679---"></a>A macOS-hez készült Céges portál tesztelése virtuális gépeken <!-- 2216679 -->
+
+Közzétettünk egy útmutatót IT-rendszergazdák számára, amelyben segítséget kapnak ahhoz, hogy a macOS-hez készült Céges portál alkalmazást teszteljék virtuális gépeken a Parallels Desktopban és a VMware Fusionben. További információt a [Virtuális macOS-gépek regisztrálása teszteléshez](macos-enroll.md#enroll-virtual-macos-machines-for-testing) című témakörben talál.
+
+
+### <a name="user-interface"></a>Felhasználói felület
+
+#### <a name="improved-device-tiles-in-the-windows-10-company-portal---2213364---"></a>Továbbfejlesztett eszközcsempék a Windows 10-es Céges portálban <!--2213364 -->
+
+Frissítettük a csempéket, így most már jobban hozzáférhetőek a gyengén látó felhasználók számára is, és jobb teljesítményt nyújtanak a képernyőolvasó eszközök használatakor.
+
+#### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>Diagnosztikai jelentések küldése a macOS rendszerhez készült Céges portál alkalmazásban <!-- 2216677 -->
+Frissült a macOS-eszközökhöz készült Céges portál alkalmazás, így jobb lehetőségeket nyújt a felhasználóknak az Intune-nal kapcsolatos hibák jelentésére. A dolgozói a Céges portál alkalmazásból a következőket tehetik meg:
+
+- Diagnosztikai jelentések feltöltése közvetlenül a Microsoft fejlesztői csapatának.
+- Incidensazonosító elküldése e-mailben a vállalata informatikai támogatási csoportjának.
+
+További információt a [Néhány hiba macOS esetén](/intune-user-help/send-errors-macos) című témakörben talál.
+
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Az Intune támogatja a Fluent Design System használatát a Windows 10-hez készült Céges portál alkalmazásban <!-- 1195010 WNready -->
+A Windows 10-es Intune Céges portál alkalmazást frissítettük a [Fluent Design System navigációs nézetével](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Az alkalmazás oldalán egy statikus, függőleges lista jelenik meg a legfelső szintű oldalakkal. A gyors megtekintéshez és az oldalak közötti váltáshoz kattintson bármelyik hivatkozásra. Egy frissítéssorozattal adaptív, kényelmesebb és ismerősebb Intune-élményt szeretnénk létrehozni. Ez a sorozat első frissítése. A frissített megjelenés megtekintésez lépjen [Az alkalmazásfelhasználói felület újdonságai](whats-new-app-ui.md) területre.
 
 ## <a name="week-of-april-16-2018"></a>2018. április 16-i hét
 
@@ -73,7 +205,7 @@ Az Android platform ajánlott eljárásaihoz igazodva frissítettük az Androidh
 - Diagnosztikai naplókat küldhetnek a Microsoftnak.
 - Egy eseményazonosítót és a hibát ismertető e-mailt írhatnak a céges ügyfélszolgálatnak.  
 
-A frissített ügyféltámogatást a [Naplók elküldése e-mailben](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) és a [Hibák elküldése a Microsoftnak](/intune-user-help/send-logs-to-microsoft-android.md) területen érheti el.
+A frissített ügyféltámogatást a [Naplók elküldése e-mailben](/intune-user-help/send-logs-to-your-it-admin-by-email-android) és a [Hibák elküldése a Microsoftnak](/intune-user-help/send-logs-to-microsoft-android) területen érheti el.
 
 
 #### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Új regisztrációs hibákat ábrázoló trenddiagram és hibaokokat tartalmazó táblázat <!-- 1471783 -->

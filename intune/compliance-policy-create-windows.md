@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -121,23 +121,23 @@ A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Az operációs rendszer szükséges minimális verziója**: Megadható főverzió.alverzió.build.CU formában. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
+- **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a főverzió.alverzió.build.CU szám formátumban. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
 
   Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
-- **Az operációs rendszer megengedett maximális verziója**: Megadható főverzió.alverzió.build.CU formában. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
+- **Operációs rendszer maximális verziója**: Adja meg a maximálisan megengedhető verziót a főverzió.alverzió.build.CU szám formátumban. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
 
   Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
-- **Az operációs rendszer szükséges minimális verziója mobileszközökön**: Megadható főverzió.alverzió.build formában.
+- **Operációs rendszer minimális verziója mobileszközöknél**: Adja meg a minimálisan megkövetelt verziót a főverzió.alverzió.build formátumban.
 
   Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
-- **Az operációs rendszer maximális verziója mobileszközökön**: Megadható főverzió.alverzió.build formában.
+- **Operációs rendszer maximális verziója mobileszközöknél**: Adja meg a maximálisan megengedett verziót a főverzió.alverzió.build formátumban.
 
   Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
-- **Érvényes operációsrendszer-buildek**: Megadható az elfogadható operációsrendszer-verziók minimumot és maximumot is tartalmazó tartománya.
+- **Érvényes operációsrendszer-buildek**: Megadható az elfogadható operációsrendszer-verziók minimumot és maximumot is tartalmazó tartománya. Az elfogadható OS-buildszámok listáját vesszővel tagolt (CSV) fájlban **exportálhatja**.
 
 ### <a name="system-security-settings"></a>A rendszer biztonsági beállításai
 
@@ -147,7 +147,7 @@ A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP
 - **Egyszerű jelszavak**: Ha nem szeretné engedélyezni, hogy a felhasználók olyan egyszerű jelszavakat használhassanak, mint az **1234** vagy az **1111**, válassza a **Tiltás** lehetőséget. A **Nincs konfigurálva** beállítással a felhasználók olyan jelszavakat is létrehozhatnak, mint az **1234** vagy az **1111**.
 - **Jelszó típusa**: Megadható, hogy a jelszó csak **számjegy** karaktereket vagy számjegy és más (**Alfanumerikus**) karaktereket vegyesen tartalmazzon.
 
-  - 1**Jelszavak nem alfanumerikus karaktereinek száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
+  - **Jelszavak nem alfanumerikus karaktereinek száma:** Ha a **Megkövetelt jelszótípus** **alfanumerikus**, ez a beállítás határozza meg a jelszóban használandó karakterkészletek minimális számát. A négy karakterkészlet a következő:
     - Kisbetűk
     - Nagybetűk
     - Szimbólumok
