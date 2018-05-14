@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Küldje el a felügyelt macOS-eszközével kapcsolatban felmerülő hibákat a megfelelő személyeknek.
 
-Ha hibaüzenet jelenik meg a macOS-eszközön a Céges portál alkalmazás használata során, a probléma megoldása érdekében a kapcsolódó információkat elküldheti a cég informatikai támogatási szolgálatának.
+A Céges portálban néha magyarázat nélküli hibák fordulhatnak elő. Ilyen esetben e-mailt küldhet a cége támogatási szakemberének a hiba részleteivel. Ezek a részletek adják meg a hibához kapcsolódó, annak felderítéséhez szükséges információkat.
 
 ## <a name="send-errors-to-your-company-support"></a>Hibák elküldése a cég informatikai támogatási szolgálatának
 
- A hibaadatokat többféleképpen is elküldheti a cége informatikai támogatási szolgálatának:
+Hibaüzenet adatainak küldése a Céges portál alkalmazásban:
 
--   A hibáról értesítő üzenetben kattintson a **Jelentés** elemre.
+-   A kapott hibaüzeneten kattintson a **Jelentés** lehetőségre.
 
--   A Céges portál alkalmazás **Súgó** menüjében kattintson a **Diagnosztikai jelentés mentése** lehetőségre. Válassza ki a fájl mentésének helyét. A fájlt elküldheti e-mailben vagy feltöltheti, a cége támogatási szolgálatának igényeitől függően.
+-   Kattintson a **Súgó** menü > **Diagnosztikai jelentés mentése** lehetőségére. Válassza ki a fájl mentésének helyét. Ezután küldje el e-mailben vagy töltse fel a fájlt a cége támogatási szakemberének.
 
-- Ha a levelezőalkalmazása már konfigurálva van, elküldheti a diagnosztikai jelentést a **Súgó** > **Diagnosztikai jelentés küldése** lehetőség választásával.
+-   Ha a levelezőalkalmazása konfigurálva van, elküldheti a diagnosztikai jelentést a **Súgó** > **Diagnosztikai jelentés küldése** lehetőség választásával. A naplók feltöltése után kattintson a **E-mail adatai** lehetőségre.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Hibák küldése a Céges portál fejlesztőinek macOS-eszköz esetén
 
-Időnként a Céges portál alkalmazás a várttól eltérően működhet. Ezek olyan problémák, amelyekről az alkalmazás fejlesztői mindenképpen tudni szeretnének, mivel a visszajelzés segít az alkalmazás továbbfejlesztésében és a jövőbeni hasonló problémák megelőzésében. Ezek az információk az eszközön tárolt, _diagnostic report_ (diagnosztikai jelentés) nevű speciális dokumentumban találhatók.
+Egyes esetekben a Céges portál alkalmazás váratlanul kiléphet. Az alkalmazásfejlesztőknek visszajelzést küldhet a váratlan események előfordulásakor. Ők a hibák adatait elemezve megkeresik annak okát, és megakadályozzák a jövőbeli előfordulását. Az ilyen hibák részletei az eszközön tárolt, _diagnostic log_ (diagnosztikai napló) nevű speciális dokumentumban találhatók. A Céges portál csapatának a Céges portálra vonatkozó naplókra van szüksége a probléma okának feltárásához.
 
-Ha diagnosztikai jelentéseket kíván küldeni a Céges portál alkalmazást fejlesztő Microsoft-csapatnak, meg kell adnia néhány információt, melyek segítenek diagnosztizálni a hiba forrását. A cége támogatási szolgálatának való elküldés helyett használja <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">ezt az e-mail-sablont</a> a hiba Microsoftnak való elküldéséhez.
+Naplók küldése a Microsoftnak:
+
+1.  Nyissa meg a Vállalati portál alkalmazást.
+2.  Kattintson a **Súgó** menü > **Diagnosztikai jelentés küldése** lehetőségére.  A naplók feltöltése után kapni fog egy incidensazonosítót. Másolja ki és mentse az azonosítót.
+3.  Küldjön egy e-mailt a Microsoftnak <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">ezzel a sablonnal</a>.
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

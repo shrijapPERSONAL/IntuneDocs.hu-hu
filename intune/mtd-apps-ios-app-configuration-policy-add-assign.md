@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Mobile Threat Defense- (MTD) alkalmazások felvétele és hozzárendelése az Intune-nal
 
@@ -53,7 +53,7 @@ iOS-eszközök esetén a [Microsoft Authenticator](https://docs.microsoft.com/az
 
 #### <a name="microsoft-authenticator-app-for-ios"></a>iOS-hez készült Microsoft Authenticator alkalmazás
 
-- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [ Microsoft Authenticator alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8).
+- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja a [ Microsoft Authenticator alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8).
 
 ### <a name="lookout"></a>Lookout
 
@@ -62,7 +62,7 @@ iOS-eszközök esetén a [Microsoft Authenticator](https://docs.microsoft.com/az
 
 #### <a name="ios"></a>iOS
 
-- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [ Lookout for Work iOS alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8).
+- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja a [ Lookout for Work iOS alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8).
 
 #### <a name="lookout-for-work-app-outside-the-apple-store"></a>Lookout for Work alkalmazás az Apple áruházon kívül
 
@@ -91,15 +91,15 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 - Töltse fel az újból aláírt .ipa-fájlt az[iOS LOB alkalmazások hozzáadása az Intune-nal](lob-apps-ios.md) című témakörben leírtaknak megfelelően. Ezenkívül a minimum OS-verziót iOS 8.0-ra vagy újabbra kell állítania.
 
-### <a name="skycure"></a>Skycure
+### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
 
 #### <a name="android"></a>Android
 
-- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). A **7. lépésben** használja a [ Skycure alkalmazás-áruházbeli URL-címét](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+- Lásd a következő útmutatót: [Android Áruházbeli alkalmazás felvétele a Microsoft Intune-ba](store-apps-android.md). A **7. lépésben** használja ezt a [SEP Mobile alkalmazás-áruházbeli URL-címet](https://play.google.com/store/apps/details?id=com.skycure.skycure).  **Minimális operációs rendszerként** jelölje be az **Android 4.0 (Ice Cream Sandwich)** rendszert.
 
 #### <a name="ios"></a>iOS
 
-- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [Skycure alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/skycure/id695620821?mt=8).
+- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja ezt a [SEP Mobile alkalmazás-áruházbeli URL-címet](https://itunes.apple.com/us/app/skycure/id695620821?mt=8).
 
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -109,7 +109,7 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 #### <a name="ios"></a>iOS
 
-- Szerezze be az iOS alkalmazást a [Check Point SandBlast Mobile-tól](https://www.checkpoint.com/products/sandblast-mobile/). Tekintse át az [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md) témát, majd az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** adja meg az Apple áruházbeli URL-címet.
+- Szerezze be az iOS alkalmazást a [Check Point SandBlast Mobile-tól](https://www.checkpoint.com/products/sandblast-mobile/). Tekintse át az [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md) témát, majd az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** adja meg az Apple áruházbeli URL-címet.
 
 ### <a name="zimperium"></a>Zimperium
 
@@ -119,7 +119,7 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 #### <a name="ios"></a>iOS
 
-- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **5. lépésében** használja a [Zimperium alkalmazás-áruházbeli URL-címét](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8).
+- Lásd a következő útmutatót: [iOS Store-alkalmazás felvétele a Microsoft Intune-ba](store-apps-ios.md). Az **Alkalmazásadatok konfigurálása** szakasz **12. lépésében** használja ezt a [Zimperium alkalmazás-áruházbeli URL-címet](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8).
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>Az MTD-alkalmazás társításához az iOS-es alkalmazáskonfigurációs szabályzatával
 
@@ -127,31 +127,24 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 - Hozza létre az iOS-es alkalmazáskonfigurációs szabályzatot az [iOS-es alkalmazáskonfigurációs szabályzat használata](app-configuration-policies-use-ios.md) témakör leírása alapján.
 
-### <a name="for-skycure"></a>Skycure
+### <a name="for-sep-mobile"></a>SEP Mobile
 
--   Ehhez a művelethez a korábban a [Skycure Management konzolon](https://aad.skycure.com) konfigurált Azure AD-fiókot kell használni, amely megegyezik a klasszikus Intune-portálra való bejelentkezéshez használttal.
+-   Ehhez a művelethez a korábban a [Symantec Endpoint Protection Management konzolon](https://aad.skycure.com) konfigurált Microsoft Azure Active Directory-fiókot kell használni, amely megegyezik a klasszikus Intune-portálra való bejelentkezéshez használttal.
 
 -   **Töltse le** az iOS-es alkalmazáskonfigurációs szabályzatot tartalmazó fájlt: 
-    -   Lépjen a [Skycure Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.
+    -   Lépjen a [Symantec Endpoint Protection Management konzolra](https://aad.skycure.com), és jelentkezzen be rendszergazdai azonosító adataival.
 
-    -   Kattintson a **Settings** (Beállítások) &gt; **Device Management Integrations** (Eszközfelügyelet-integráció) &gt; **EMM Integration Selection** (EMM-integráció kiválasztása) elemre, válassza a **Microsoft Intune** lehetőséget, és mentse a választást.
+    -   Lépjen a **Settings** (Beállítások) lapra, majd az **Integrations** (Integrációk) alatt válassza az **Intune** lehetőséget. Válassza az **EMM Integration Selection** (EMM-integráció kiválasztása) lehetőséget. Válassza a **Microsoft** lehetőséget, majd mentse a kijelölés.
 
-    -   Kattintson az **Integration setup files** (Integráció-telepítőfájlok) hivatkozásra, és mentse a létrejövő \*.zip fájlt. A .zip-fájlban található a **skycure\_configuration.plist** fájl, amellyel létrehozható az iOS-es alkalmazáskonfigurációs szabályzat az Intune-ban.
+    -   Kattintson az **Integration setup files** (Integráció-telepítőfájlok) hivatkozásra, és mentse a létrejövő \*.zip fájlt. A .zip-fájlban található a ***.plist**-fájl, amellyel létrehozható az iOS-es alkalmazáskonfigurációs szabályzat az Intune-ban.
 
-    -   A Skycure iOS-es alkalmazáskonfigurációs szabályzat felvételéhez lásd a következő útmutatót:[A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
+    -   A SEP Mobile iOS-es alkalmazáskonfigurációs szabályzat felvételéhez lásd a következő útmutatót:[A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).
 
-    - A **8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be a **skycure_configuration.plist** fájl tartalmát a konfigurációs szabályzat törzsébe.
+    - A **8. lépésnél** válassza az **XML adatok megadása** lehetőséget, majd másolja be a ***.plist**-fájl tartalmát a konfigurációs szabályzat törzsébe.
 
-A **skycure_configuration.plist**-tartalmat innen is kimásolhatja:
+> [!NOTE]
+> Ha nem sikerült beolvasni a fájlokat, lépjen kapcsolatba a [Symantec Endpoint Protection Mobile nagyvállalati támogatási szolgálatával](https://support.symantec.com/en_US/contact-support.html).
 
-```
-<dict>
-    <key>MdmType</key>
-    <string>Intune</string>
-    <key>UserEmail</key>
-    <string>{{userprincipalname}}</string>
-</dict>
-```
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
 - A Check Point SandBlast Mobile iOS-es alkalmazáskonfigurációs szabályzat felvételéhez tekintse át a következő útmutatót: [A Microsoft Intune alkalmazáskonfigurációs szabályzatának használata iOS-hez](app-configuration-policies-use-ios.md).

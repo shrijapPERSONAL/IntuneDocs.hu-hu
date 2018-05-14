@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,38 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: aa0b7396c22bd8bc832a6d845d4f40603013608a
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban
 
-Az Intune-ban úgy határozhatja meg, hogy ki férhet hozzá az alkalmazáshoz, ha csoportokat rendel hozzá akár az engedélyezéshez, akár a kizáráshoz. Azonban mielőtt csoportokat rendelne az alkalmazáshoz, meg kell adnia az alkalmazás hozzárendelési típusát. A hozzárendelés típusával az alkalmazás elérhetővé vagy kötelezővé tehető, illetve törölhető. 
+Az Intune-ban úgy határozhatja meg, hogy ki férhet hozzá az alkalmazáshoz, ha felhasználói csoportokat rendel hozzá akár az engedélyezéshez, akár a kizáráshoz. Mielőtt csoportokat rendelne az alkalmazáshoz, meg kell adnia az alkalmazás hozzárendelési típusát. A hozzárendelés típusával az alkalmazás elérhetővé vagy kötelezővé tehető, illetve törölhető. 
 
-Amikor egy alkalmazás elérhetősége van a középpontban, az alkalmazás-hozzárendeléseket felhasználók vagy eszközök csoportjaira vonatkozóan végezheti el csoport-hozzárendelések belefoglalásával vagy kizárásával. Ez a funkció akkor különösen hasznos, ha nagyobb csoportok számára szeretné elérhetővé tenni az alkalmazást, majd pedig szűkíteni szeretné a felhasználók körét, miközben egy kisebb csoportot is kizárhat. A kisebb csoport lehet például tesztcsoport, vagy vezetők egy csoportja. 
+Egy alkalmazás elérhetőségének megadásakor az alkalmazás-hozzárendeléseket felhasználók vagy eszközök csoportjaira vonatkozóan végezheti el csoport-hozzárendelések belefoglalásával vagy kizárásával. Ez a funkció akkor különösen hasznos, ha nagyobb csoportok számára szeretné elérhetővé tenni az alkalmazást, majd pedig szűkíteni szeretné a felhasználók körét, miközben egy kisebb csoportot is kizárhat. A kisebb csoport lehet például tesztcsoport, vagy egy vezetői csoport. 
 
-Amikor csoportot zár ki egy alkalmazás-hozzárendelésből, akkor vagy csak felhasználói vagy csak eszközcsoportot kell kizárnia, vegyesen nem. Az Intune nem veszi számításba a felhasználók és eszközök közötti társításokat a csoportok kizárásánál. Felhasználói csoportok belefoglalása és eszközcsoportok egyidejű kizárása minden bizonnyal nem éri el a kívánt eredményt, mivel a belefoglalás felülírja a kizárást. Ha például egy iOS-alkalmazást **Minden felhasználóra** céloz, és kizárja a **Minden iPad** csoportot, az eredmény az lesz, hogy minden iPadet használó felhasználó továbbra is hozzáfér az alkalmazáshoz. Ha azonban az iOS-alkalmazás célzása **Minden eszköz**, és kizárja a **Minden iPad** csoportot, akkor a beállítás sikeres lesz.  
+Amikor csoportot zár ki egy alkalmazás-hozzárendelésből, akkor vagy csak felhasználói vagy csak eszközcsoportot kell kizárnia. Nem zárhat ki vegyes, felhasználói és eszközcsoportokat is. 
 
->[!NOTE]
->Alkalmazások csoport-hozzárendelésénél a **Nem alkalmazható** típus nem használható többé, helyette a csoport kizárása lehetőség használható. 
+Az Intune nem veszi számításba a felhasználók és eszközök közötti társításokat a csoportok kizárásánál. Felhasználói csoportok belefoglalása és eszközcsoportok egyidejű kizárása minden bizonnyal nem éri el a kívánt eredményt. A belefoglalás elsőbbséget élvez a kizárással szemben. Ha például egy iOS-alkalmazást **Minden felhasználóra** céloz, és kizárja a **Minden iPad** csoportot, az eredmény az lesz, hogy minden iPadet használó felhasználó továbbra is hozzáfér az alkalmazáshoz. Ha azonban az iOS-alkalmazás célzása **Minden eszköz**, és kizárja a **Minden iPad** csoportot, akkor a beállítás sikeres lesz.  
+
+> [!NOTE]
+> Alkalmazások csoport-hozzárendelésénél a **Nem alkalmazható** típus nem használható többé, helyette a csoport kizárása lehetőség használható. 
 >
->Az Intune biztosítja az előre létrehozott **Minden felhasználó** és **Minden eszköz** csoportok beépített optimalizálását a felhasználók kényelme érdekében a konzolon. Mindenképpen ajánlott ezeket a csoportokat használni az összes felhasználó és az összes eszköz megcélzására az Ön által létrehozott „Minden felhasználó” vagy „Minden eszköz” csoport helyett.  
+> Az Intune előre létrehozott, **Minden felhasználó** és **Minden eszköz** csoportokat biztosít a konzolon. A csoportok beépített optimalizációkkal bírnak a felhasználók kényelme érdekében. Mindenképpen ajánlott ezeket a csoportokat használni az összes felhasználó és az összes eszköz megcélzására az Ön által létrehozott „Minden felhasználó” vagy „Minden eszköz” csoport helyett.  
 >
->Az Android Enterprise (korábbi nevén Android for Work) a befoglaló és kizáró csoportokat támogatja, de az előre létrehozott **Minden felhasználó** és **Minden eszköz** beépített csoportokat nem.
+> Az Android Enterprise (korábbi nevén Android for Work) támogatja a csoportok belefoglalását és kizárását. Kihasználhatja a beépített **Minden felhasználó** és **Minden eszköz** csoportot az Android Enterprise-alapú alkalmazástársításokhoz. 
 
-## <a name="including-and-excluding-groups-when-assigning-apps"></a>Csoportok belefoglalása és kizárása alkalmazások hozzárendelésénél 
-Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizárás használatával:
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
+
+## <a name="include-and-exclude-groups-when-assigning-apps"></a>Csoportok belefoglalása és kizárása alkalmazások hozzárendelésénél 
+Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizárás használatával, tegye a következőket:
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. A Microsoft Intune panelen válassza a **Mobilalkalmazások** lehetőséget.
+3. Az **Intune** menüben válassza a **Mobilalkalmazások** lehetőséget.
 4. A **Mobilalkalmazások** panelen válassza az **Alkalmazások** lehetőséget. Megjelenik a hozzáadott alkalmazások listája.
-5. Válassza ki a hozzárendelni kívánt alkalmazást. Megjelenik az alkalmazáshoz tartozó irányítópult. 
-6. A **Kezelés** szakaszban válassza a **Hozzárendelések** elemet. 
+5. Válassza ki a hozzárendelni kívánt alkalmazást. Megjelennek az alkalmazás adatai egy irányítópulton. 
+6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések**. elemet. 
 
     ![Alkalmazás-hozzárendelések az Intune-ban](./media/apps-inc-exl-01.png)
 7. Az alkalmazáshoz hozzárendelt felhasználói csoportok hozzáadásához válassza a **Csoport hozzáadása** lehetőséget. 
@@ -53,26 +56,28 @@ Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizár�
     ![Alkalmazás-hozzárendelések az Intune-ban – Csoport hozzáadása](./media/apps-inc-exl-02.png)
 10. A **Belefoglalt csoportok** lehetőséggel választhatja ki azokat a felhasználói csoportokat, amelyek számára elérhetővé szeretné tenni az alkalmazást.
 
-    >[!NOTE]
-    >Csoportok hozzáadásakor, ha bármely más csoport már bele lett foglalva egy adott hozzárendelés-típus esetében, az előre ki lesz jelölve, és nem módosítható más belefoglalási hozzárendelés-típusok esetében. Ezért az adott csoport használatba lett véve, és így nem használható kizárt csoportként.
+    > [!NOTE]
+    > Csoportok hozzáadásakor, ha bármely más csoport már bele lett foglalva egy adott hozzárendelés-típus esetében, az alkalmazás előre ki van jelölve, és nem módosítható más belefoglalási hozzárendelés-típusok esetében. Az használatba vett csoport nem használható belefoglalt csoportként.
 
 11. Az **Igen** választásával teheti elérhetővé az alkalmazást minden felhasználó számára.
 
     ![Alkalmazás-hozzárendelések az Intune-ban – Csoportok belefoglalása](./media/apps-inc-exl-03.png)
-12. Az **OK** választásával foglalhatja bele a csoportot.
-13. A **Kizárt csoportok** lehetőséggel választhatja ki azokat a felhasználói csoportokat, amelyek számára nem szeretné elérhetővé tenni az alkalmazást. 
-14. Válassza ki azokat a csoportokat, amelyek számára elérhetetlenné szeretné tenni az alkalmazást.
+12. Kattintson az **OK** gombra a csoport belefoglalásához.
+13. A **Kizárt csoportok** lehetőséggel válassza ki azokat a felhasználói csoportokat, amelyek számára nem szeretné elérhetővé tenni az alkalmazást. 
+14. Válassza ki a kizárni kívánt csoportokat. Így az alkalmazás nem érhető el ezekhez a csoportokhoz.
 
     ![Alkalmazás-hozzárendelések az Intune-ban – Csoportok kizárása](./media/apps-inc-exl-04.png)
 15. A csoportkiválasztás befejezéséhez kattintson a **Kiválasztás** lehetőségre.
-16. A **Csoport hozzáadása** panelen kattintson az **OK** lehetőségre. Megjelenik az alkalmazáshoz tartozó **Hozzárendelések** listája.
+16. A **Csoport hozzáadása** panelen kattintson az **OK** gombra. Megjelenik az alkalmazáshoz tartozó **Hozzárendelések** listája.
 17. A **Mentés** lehetőségre kattintva aktiválhatja az alkalmazásra vonatkozó csoport-hozzárendeléseket.
 
-Csoport-hozzárendeléseknél a már hozzárendelt vagy kiválasztott csoportok nem elérhetőek. Ha jelenleg nem elérhető csoportot szeretne kiválasztani, akkor először távolítsa azt el az alkalmazás hozzárendelési listájából. Az alkalmazás **Hozzárendelések** listáját úgy szerkesztheti, ha kiválasztja azt a sort, amely a módosítandó hozzárendelést tartalmazza. Ezen kívül úgy is eltávolíthat hozzárendelést, ha a sor végén található három pontra (...) kattint, majd az **Eltávolítás** lehetőséget választja. A **Hozzárendelések** lista megjelenítését is módosíthatja: választhat **Hozzárendelési típus** vagy **Belefoglalt/Kizárt** állapot szerinti csoportosíts között.
+Csoport-hozzárendelések esetén a már hozzárendelt csoportok nem módosíthatók. Ha jelenleg nem elérhető csoportot szeretne kiválasztani, akkor először távolítsa el az alkalmazást az alkalmazás hozzárendelési listájából. 
+
+A hozzárendelések szerkesztéséhez az alkalmazás **Hozzárendelések** listájában válassza ki azt a sort, amely a módosítandó hozzárendelést tartalmazza. Ezen kívül úgy is eltávolíthat hozzárendelést, ha a sor végén található három pontra (**…**) kattint, majd az **Eltávolítás** lehetőséget választja. A **Hozzárendelések** lista megjelenítésének módosításához **Hozzárendelési típus** vagy **Belefoglalt/Kizárt** állapot szerint csoportosíthat.
 
 ![Alkalmazás-hozzárendelések az Intune-ban – befejezés](./media/apps-inc-exl-05.png)
 
 ## <a name="next-steps"></a>További lépések
 
-- A [Microsoft Intune blogján](https://aka.ms/new_app_assignment_process) további információt talál az alkalmazások csoport-hozzárendelésénél alkalmazható belefoglalásról és kizárásról.
-- [Alkalmazásadatok és -hozzárendelések figyelése](apps-monitor.md)
+- További információt az alkalmazások csoport-hozzárendelésénél alkalmazható belefoglalásról és kizárásról a [Microsoft Intune blogján](https://aka.ms/new_app_assignment_process) találhat.
+- További információ az [alkalmazásadatok és -hozzárendelések figyeléséről](apps-monitor.md).

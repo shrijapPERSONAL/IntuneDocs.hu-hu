@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
 
@@ -50,6 +50,12 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
    Ha például a Gmail alkalmazást Android for Work-profilban telepíti, megakadályozhatja, hogy a végfelhasználók fiókokat adjanak hozzá vagy távolítsanak el ebben a munkaprofilban.
 
 - **Névjegyek megosztása Bluetooth-kapcsolattal**: Engedélyezi egy másik Bluetooth-eszköz (például egy autó) a munkahelyi névjegyekhez való hozzáférését. Alapértelmezés szerint ez a beállítás nincs konfigurálva, a munkahelyi névjegyek pedig nem jelennek meg. A megosztás engedélyezéséhez és a munkahelyi profil névjegyeinek megjelenítéséhez válassza az **Engedélyezés** lehetőséget. Ez a beállítás az Android munkahelyi profilos, Android v6.0 és újabb operációs rendszerekkel rendelkező eszközökre vonatkozik. Engedélyezésével megengedheti bizonyos Bluetooth-eszközöknek, hogy az első kapcsolat alkalmával gyorsítótárazzák a munkahelyi kapcsolatokat. Ennek a szabályzatnak az eredeti párosítás/szinkronizálás utáni letiltása nem feltétlenül távolítja el a munkahelyi kapcsolatokat a Bluetooth-eszközről.
+
+- **Képernyőfelvétel**: Letiltja az eszköz munkahelyi profiljában a képernyőfelvételek készítését. Ezen kívül megakadályozza a tartalom megjelenítését a biztonságos videokimenettel nem rendelkező megjelenítő eszközökön.
+
+- **Megjelenik a munkahelyi hívó azonosítója a személyes profilban**: Engedélyezése (konfigurálás nélkül) esetén a munkahelyi hívó részletei megjelennek a személyes profilban. Tiltása esetén a munkahelyi hívó részletei nem jelennek meg a személyes profilban. Az Android operációs rendszer 6.0-ás és újabb verzióira vonatkozik.
+
+- **Fényképezőkép**: Letiltja a fényképezőgépet az eszköz munkahelyi profiljában. A beállítás nincs hatással a fényképezőkép személyes profilban való használatára.
 
 ### <a name="work-profile-password"></a>Munkahelyi profilhoz tartozó jelszó
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
@@ -58,7 +58,9 @@ Ha az eszköz be van kapcsolva és csatlakoztatva van, a **Gyári beállítások
 
 ## <a name="remove-company-data"></a>Céges adatok eltávolítása
 
-A **Céges adatok eltávolítása** művelet eltávolítja a felügyelt alkalmazásadatokat (ha vannak ilyenek), a beállításokat és az eszközhöz az Intune használatával hozzárendelt e-mail-profilokat. A **Céges adatok eltávolítása** a felhasználó személyes adatai az eszközön hagyja. Az eszközt a rendszer eltávolítja az Intune-ból. 
+A **Céges adatok eltávolítása** művelet eltávolítja a felügyelt alkalmazásadatokat (ha vannak ilyenek), a beállításokat és az eszközhöz az Intune használatával hozzárendelt e-mail-profilokat. Az eszközt a rendszer eltávolítja az Intune-ból. Ez akkor történik meg, amikor az eszköz legközelebb bejelentkezik és megkapja a távoli **Céges adatok eltávolítása** műveletet.
+
+A **Céges adatok eltávolítása** a felhasználó személyes adatai az eszközön hagyja.  
 
 Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer, és hogy az eszközön maradó adatokra milyen hatással van a **Céges adatok eltávolítsa** művelet a céges adatok eltávolítása után.
 
@@ -123,13 +125,19 @@ Az Android for Work-eszközökről a céges adatok eltávolítása a munkahelyi 
 
 ### <a name="remove-company-data"></a>Céges adatok eltávolítása
 
-1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
-4. Válassza ki az eszköz nevét, amelyről szeretné eltávolítani a céges adatokat.
-5. Az eszköz nevét megjelenítő ablaktáblán válassza a **Céges adatok eltávolítása** lehetőséget. Válassza az **Igen** lehetőséget a megerősítéshez.
+1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
+2. Az **Eszközök** panelen válassza a **Minden eszköz** lehetőséget.
+3. Válassza ki az eszköz nevét, amelyről szeretné eltávolítani a céges adatokat.
+4. Az eszköz nevét megjelenítő ablaktáblán válassza a **Céges adatok eltávolítása** lehetőséget. Válassza az **Igen** lehetőséget a megerősítéshez.
 
 Ha az eszköz be van kapcsolva és csatlakoztatva van, a **Céges adatok eltávolítása** műveletnek az összes eszköztípusra való propagálása kevesebb, mint 15 percet vesz igénybe.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Eszközök törlése az Intune-portálról
+
+Ha el szeretne távolítani eszközöket az Intune-portálról, ezt megteheti az adott eszközpanelen. Az eszköz következő bejelentkezésekor minden céges adat el lesz távolítva.
+
+1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
+2. Válassza az **Eszközök** > **Minden eszköz** > a törölni kívánt eszközök > **Törlés** lehetőséget.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálról
 

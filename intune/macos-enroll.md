@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e522708879818f644780904c42fe9e6fb19a402
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Regisztráció beállítása macOS-eszközökhöz az Intune-ban
 
@@ -70,3 +70,11 @@ A virtuális macOS-gépeket a Parallels Desktop vagy a VMWare Fusion segítség�
 A Parallels Desktophoz meg kell adnia a virtuális gépek hardvertípusát és sorozatszámát, hogy az Intune felismerje őket. A Parallels útmutatójával [megadhatja a hardvertípust](http://kb.parallels.com/123594) és a [sorozatszámot](http://kb.parallels.com/123455), valamint a teszteléshez szükséges beállításokat. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
 
 A VMware Fusion esetében [szerkesztenie kell a .vmx-fájlt](https://kb.vmware.com/s/article/1014782) a virtuális gép hardvermodelljének és sorozatszámának megadásához. Azt javasoljuk, hogy a virtuális gépeket futtató eszközök hardvertípusa egyezzen meg a létrehozandó virtuális gépek hardvertípusával. A hardvertípust az **Apple menü** > **A Mac névjegye** > **Rendszerjelentés** > **Modellazonosító** területen találhatja meg. 
+
+## <a name="user-approved-enrollment"></a>Felhasználó által jóváhagyott regisztráció
+
+A felhasználói jóváhagyott MDM-regisztráció egy olyan macOS-regisztrációs típus, amellyel bizonyos biztonsági szempontból kényes beállításokat kezelhet. További információt az [Apple támogatási dokumentumában találhat](https://support.apple.com/HT208019).
+
+A felhasználó általi jóváhagyáshoz a végfelhasználónak manuális jóváhagyást kell adnia a rendszerbeállítások használatával a macOS Céges portállal való regisztráció után. Ehhez útmutatást a macOS 10.13.2 vagy újabb rendszert használó felhasználók a macOS Céges portálon találhatnak.
+
+Annak megállapításához, hogy az eszköz jóvá van-e hagyva a felhasználó által, lépjen az Intune-portálra, majd válassza az **Eszközök** > **Minden eszköz**> kívánt eszköz > **Hardver** lehetőséget. Jelölje be a **Felhasználó által jóváhagyott** mezőt.

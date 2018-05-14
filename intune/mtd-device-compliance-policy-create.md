@@ -1,25 +1,25 @@
 ---
-title: "MTD-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-nal"
-titlesuffix: 
-description: "Létrehozhat egy olyan Intune-beli eszközmegfelelőségi szabályzatot, amely az MTD-partner fenyegetettségi szintjeivel határozza meg, hogy egy mobileszköz hozzáférhet-e a céges erőforrásokhoz."
-keywords: 
+title: MTD-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-nal
+titlesuffix: ''
+description: Létrehozhat egy olyan Intune-beli eszközmegfelelőségi szabályzatot, amely az MTD-partner fenyegetettségi szintjeivel határozza meg, hogy egy mobileszköz hozzáférhet-e a céges erőforrásokhoz.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>A Mobile Threat Defense (MTD) eszközmegfelelőségi szabályzatának létrehozása az Intune-nal
 
@@ -36,7 +36,7 @@ Az MTD-eszközmegfelelési szabályzat előfeltételei:
 
 -   Az MTD és az Intune közötti integráció beállítása
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Az MTD-eszközmegfelelési szabályzat létrehozásához
+## <a name="to-create-an-mtd-device-compliance-policy"></a>MTD-eszközmegfelelési szabályzat létrehozása
 
 1.  Az [Azure Portalon](https://portal.azure.com/) jelentkezzen be az Intune-os hitelesítő adataival.
 
@@ -65,7 +65,7 @@ Az MTD-eszközmegfelelési szabályzat előfeltételei:
 > [!IMPORTANT]
 > Ha az Office 365 vagy más szolgáltatások számára feltételes hozzáférési szabályzatokat hoz létre, a rendszer a megfelelőségi értékelés alapján letiltja a nem megfelelő eszközök hozzáférését a céges erőforrásokhoz, amíg az eszközön a fenyegetés el nem hárul.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>MTD-eszközmegfelelőségi szabályzat hozzárendelése
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>MTD-eszközmegfelelési szabályzat hozzárendelése
 
 Ha a felhasználókhoz eszközmegfelelőségi szabályzatot kíván rendelni, olyan szabályzatot válasszon, amelyet előzőleg már konfigurált. A meglévő szabályzatokat az **Eszközmegfelelőségi szabályzatok** panelen tekintheti meg.
 

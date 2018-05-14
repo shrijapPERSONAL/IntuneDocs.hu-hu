@@ -255,6 +255,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB apps
                   href: lob-apps-windows.md
+                - name: macOS-es üzletági alkalmazások
+                  href: lob-apps-macos.md
             - name: Webalkalmazások
               href: web-app.md
             - name: Beépített alkalmazások
@@ -486,10 +488,10 @@
               items:
                 - name: A Lookout és az Intune közötti integráció
                   href: lookout-mtd-connector-integration.md
-            - name: A Skycure beállítása
+            - name: A Symantec beállítása
               href: skycure-mobile-threat-defense-connector.md
               items:
-                - name: A Skycure és az Intune közötti integráció
+                - name: A Symantec és az Intune közötti integráció
                   href: skycure-mtd-connector-integration.md
             - name: A Check Point beállítása
               href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md

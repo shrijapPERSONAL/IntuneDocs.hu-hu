@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Bevezetés a Microsoft Intune App SDK használatába
 
@@ -67,10 +67,9 @@ A natív iOS-hez, illetve Androidhoz készült Intune App SDK-k egy Microsoft Gi
 * [Intune App SDK iOS rendszerhez](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Intune App SDK Android rendszerhez](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Ha Xamarin- vagy Cordova-alkalmazást kíván felvenni, használja a következő SDK-változatokat:
+Ha Xamarin-alkalmazásról van szó, használja a következő SDK-változatot:
 
 * [Intune App SDK Xamarin-kötések](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune App SDK Cordova beépülő modul](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Érdemes regisztrálnia egy GitHub-fiókot, hogy leágazhasson az adattárakból, és lehúzhassa a változásokat. A GitHub révén a fejlesztők kommunikálni tudnak a termékcsapattal, hibákat jelenthetnek, és gyors válaszokat kaphatnak, elolvashatják a kibocsátási megjegyzéseket, valamint visszajelzést adhatnak a Microsoftnak. Az Intune App SDK GitHubra vonatkozó kérdései az msintuneappsdk@microsoft.com címen teheti fel.
 
@@ -81,8 +80,6 @@ A következő fejlesztői útmutatók segítséget nyújtanak az Intune App SDK 
 * **[iOS-hez készült Intune App SDK – fejlesztői útmutató](app-sdk-ios.md)**: Ez a dokumentum részletesen ismerteti a natív iOS-alkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit.
 
 * **[Androidhoz készült Intune App SDK – fejlesztői útmutató](app-sdk-android.md)**: Ez a dokumentum részletesen ismerteti a natív androidos alkalmazásnak az Intune App SDK-val való engedélyezésének lépéseit.
-
-* **[Az Intune App SDK Cordova beépülő moduljának útmutatója](app-sdk-cordova.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Cordova használatával az Intune alkalmazásvédelmi szabályzataihoz.
 
 * **[Az Intune App SDK Xamarin-kötések útmutatója](app-sdk-xamarin.md)**: Ez a dokumentum segít iOS- és Android-alkalmazások összeállításában a Xamarin használatával az Intune alkalmazásvédelmi szabályzataihoz.
 

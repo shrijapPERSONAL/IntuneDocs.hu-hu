@@ -1,30 +1,43 @@
 ---
-title: "Eszközök regisztrálása a Windows AutoPilot Deployment Program használatával"
+title: Eszközök regisztrálása a Windows AutoPilot Deployment Program használatával
 titleSuffix: Microsoft Intune
-description: "Útmutató Windows 10-eszközök regisztrálásához a Windows AutoPilot Deployment Program használatával."
-keywords: 
+description: Útmutató Windows 10-eszközök regisztrálásához a Windows AutoPilot Deployment Program használatával.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows-eszközök regisztrálása a Windows AutoPilot Deployment Program használatával
 A Windows AutoPilot Deployment Program leegyszerűsíti az eszközök üzembe helyezését. A testre szabott operációsrendszer-lemezképek létrehozása és karbantartása sok időt vesz igénybe. Gyakran ezeknek az egyéni operációsrendszer-lemezképeknek az új eszközökre való alkalmazásával is időt kell töltenie, hogy felkészítse az eszközöket a használatra, mielőtt a végfelhasználóknak adná azokat. A Microsoft Intune és az AutoPilot révén új eszközöket adhat hozzá a végfelhasználók számára anélkül, hogy egyéni operációsrendszer-lemezképek létrehozására, kezelésére és az eszközökre való alkalmazására lenne szükség. Az Intune AutoPilot-eszközök felügyeletére való használatakor regisztrálásukat követően kezelheti az eszközökön a szabályzatokat, profilokat, alkalmazásokat és így tovább. A megoldás előnyeinek, használati eseteinek és előfeltételeinek áttekintéséhez lásd [a Windows AutoPilot áttekintését](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## <a name="prerequisites"></a>Előfeltételek
-- [Az eszközöknek regisztrálva kell lenniük a szervezeténél](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Engedélyezni kell a Windowsos eszközök automatikus regisztrációját](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Prémium szintű Azure Active Directory előfizetéssel kell rendelkeznie](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>Eszközök felvétele
+
+Windows AutoPilot-eszközök felvételéhez importálhat egy CSV-fájlt az adataikkal.
+
+1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Eszközök** > **Importálás** elemet.
+
+    ![Windows AutoPilot-eszközök képernyőképe](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. A **Windows AutoPilot-eszközök hozzáadása** alatt tallózzon a hozzáadni kívánt eszközök sorozatszámait, Windows-termékazonosítóit és hardverkivonatait tartalmazó CSV-fájlhoz.
+
+    ![Képernyőkép Windows AutoPilot-eszközök felvételéről](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. Válassza az **Importálás** lehetőséget az eszközadatok importálásának elindításához. Ez néhány percig tarthat.
 
 ## <a name="synchronize-devices"></a>Eszközök szinkronizálása
 Szinkronizálja a regisztrált eszközöket az Intune-ban, hogy konfigurálhassa őket.
@@ -108,6 +121,16 @@ Megjeleníthet a Windows AutoPilot-hozzárendelés nélküli eszközökre vonatk
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Válassza az **Intune** területen az **Eszközregisztráció** lehetőséget.
 4. A riasztás megjelenítéséhez válassza az **Áttekintés** lehetőséget. Az AutoPilot-eszközök listájának megjelenítéséhez kattintson a riasztásra.  
+
+## <a name="delete-autopilot-devices"></a>AutoPilot-eszközök törlése
+
+A nem regisztrált Windows AutoPilot-eszközök törölhetők. Megszüntetheti az eszközök regisztrációját, és törölheti őket.
+
+1. Az [Azure Portalbeli Intune-ban](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Windows-regisztráció** > **Eszközök** lehetőséget.
+
+2. A **Windows AutoPilot-eszközök** területen jelölje ki a törölni kívánt eszközöket, majd válassza a **Törlés** gombot.
+
+3. Hagyja jóvá a törlést az **Igen** választásával. A törlés eltarthat néhány percig.
 
 
 ## <a name="next-steps"></a>További lépések

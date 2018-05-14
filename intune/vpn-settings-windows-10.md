@@ -1,11 +1,11 @@
 ---
-title: A VPN-beállítások megtekintése a Microsoft Intune-ban – Azure | Microsoft Docs
+title: A Windows 10 VPN-beállításainak konfigurálása a Microsoft Intune-ban – Azure | Microsoft Docs
 description: Részletesebben megismerheti a Microsoft Intune elérhető VPN-beállításait, ezek használati módjait és működését, beleértve a forgalomra vonatkozó szabályokat, a feltételes hozzáférést, valamint a Windows 10- és Windows Holographic for Business-eszközök DNS- és proxybeállításait.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/8/2018
+ms.date: 4/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="read-about-the-vpn-settings-in-intune"></a>Információ az Intune VPN-beállításairól
+# <a name="windows-10-vpn-settings-in-intune"></a>A Windows 10 VPN-beállításai az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -35,95 +35,111 @@ A kiválasztott beállításoktól függően előfordulhat, hogy nem minden ért
 ## <a name="base-vpn-settings"></a>Alapvető VPN-beállítások
 
 - **Kapcsolat neve**: Adja meg a kapcsolat nevét. A végfelhasználók akkor látják ezt a nevet, amikor megkeresik a rendelkezésre álló VPN-kapcsolatok listáját az eszközükön.
-- **Kiszolgálók**: Adjon meg egy vagy több olyan VPN-kiszolgálót, amelyhez az eszközök csatlakozni fognak.
-  - **Hozzáadás**: Megnyitja a **Sor hozzáadása** panelt, ahol az alábbi információkat adhatja meg:
-    - **Leírás**: Adja meg a kiszolgáló leíró nevét (például **Contoso VPN-kiszolgáló**)
-    - **IP-cím vagy teljes tartománynév**: Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak, például **192.168.1.1** vagy **vpn.contoso.com**
-    - **Alapértelmezett kiszolgáló**: Ezt a kiszolgálót engedélyezi alapértelmezett kiszolgálóként, melyet az eszközök kapcsolat létesítéséhez fognak használni. Csak egy kiszolgálót állítson be alapértelmezett kiszolgálóként.
-  - **Importálás**: Tallózással keressen meg egy, a kiszolgálók vesszővel tagolt listáját tartalmazó fájlt, melynek formátuma a következő: leírás, IP-cím vagy teljes tartománynév, alapértelmezett kiszolgáló. Az **OK** gombra kattintva indíthatja el a kiszolgálók importálását a **Kiszolgálók** listába.
+- **Kiszolgálók**: Adjon meg egy vagy több olyan VPN-kiszolgálót, amelyhez az eszközök csatlakozni fognak. Kiszolgáló hozzáadásakor az alábbi információkat adhatja meg:
+  - **Leírás**: Adja meg a kiszolgáló leíró nevét (például **Contoso VPN-kiszolgáló**)
+  - **IP-cím vagy teljes tartománynév**: Adja meg annak a VPN-kiszolgálónak az IP-címét vagy teljes tartománynevét, amelyhez az eszközök csatlakoznak, például **192.168.1.1** vagy **vpn.contoso.com**
+  - **Alapértelmezett kiszolgáló**: Ezt a kiszolgálót engedélyezi alapértelmezett kiszolgálóként, melyet az eszközök kapcsolat létesítéséhez fognak használni. Csak egy kiszolgálót állítson be alapértelmezett kiszolgálóként.
+  - **Importálás**: Tallózással keressen meg egy, a kiszolgálók vesszővel tagolt listáját tartalmazó fájlt, melynek formátuma a következő: leírás, IP-cím vagy teljes tartománynév, alapértelmezett kiszolgáló. A kiszolgálók a **Kiszolgálók** listába történő importálásához kattintson az **OK** gombra.
   - **Exportálás**: Exportálja a kiszolgálók listáját egy vesszővel tagolt (CSV-) fájlba
 
-**Kapcsolat típusa**: Az alábbi listából válassza ki a VPN-kapcsolat típusát:
+- **Kapcsolat típusa**: Az alábbi listából válassza ki a VPN-kapcsolat típusát:
 
-- **Automatikus**
-- **Check Point Capsule VPN**
-- **Citrix VPN**
-- **SonicWall Mobile Connect**
-- **F5 Edge Client**
-- **IKEv2**
-- **L2TP**
-- **PPTP**
-- **Pulse Secure**
+  - **Pulse Secure**
+  - **F5 Edge Client**
+  - **SonicWall Mobile Connect**
+  - **Check Point Capsule VPN**
+  - **Citrix**
+  - **Automatikus**
+  - **IKEv2**
+  - **L2TP**
+  - **PPTP**
 
-**Bejelentkezési csoport vagy tartomány** (csak SonicWALL Mobile Connect esetén): Ez a tulajdonság nem állítható be a VPN-profilban. Ehelyett a Mobile Connect akkor elemzi ezt az értéket, ha a felhasználónév és a tartomány `username@domain` vagy `DOMAIN\username` formátumban van megadva.
+  Amikor kiválasztja a VPN-kapcsolat típusát, előfordulhat, hogy az alábbi beállításokat is meg kell adnia:  
+    - **Mindig bekapcsolva**: Ezzel a beállítással automatikusan csatlakozik a VPN-kapcsolathoz a következő esetekben: 
+      - Felhasználói bejelentkezés az eszközre
+      - Hálózatváltozás az eszközön
+      - Az eszköz képernyője ismét bekapcsol, miután ki volt kapcsolva 
 
-**Egyéni XML**/**EAP XML**: Adja meg a VPN-kapcsolatot konfiguráló egyéni XML-parancsokat.
+    - **Hitelesítési módszer**: Adja meg, hogy hogyan szeretné hitelesíteni a felhasználókat a VPN-kiszolgálón. A **tanúsítványok** fejlett funkciókkal szolgálnak, például beavatkozás nélküli működés, igény szerinti VPN és alkalmazásonkénti VPN.
+    - **Hitelesítő adatok megjegyzése minden bejelentkezéskor**: Ezzel a beállítással gyorsítótárazhatja a hitelesítő adatokat.
+    - **Egyéni XML**: Adja meg a VPN-kapcsolatot konfiguráló egyéni XML-parancsokat.
+    - **EAP XML**: Adja meg a VPN-kapcsolatot konfiguráló EAP XML-parancsokat
 
-**Példa a Pulse Secure esetére:**
+#### <a name="pulse-secure-example"></a>Pulse Secure-példa
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-**Példa a CheckPoint Mobile VPN esetére:**
-
-```
-<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-```
-
-**Példa a SonicWALL Mobile Connect esetére:**
-
-```
-<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-```
-
-**Példa az F5 Edge Client esetére:**
+#### <a name="f5-edge-client-example"></a>F5 Edge Client-példa
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
+#### <a name="sonicwall-mobile-connect-example"></a>SonicWall Mobile Connect-példa
+**Bejelentkezési csoport vagy tartomány**: Ez a tulajdonság nem állítható be a VPN-profilban. Ehelyett a Mobile Connect akkor elemzi ezt az értéket, ha a felhasználónév és a tartomány `username@domain` vagy `DOMAIN\username` formátumban van megadva.
+
+Például:
+
+```
+<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+```
+
+#### <a name="checkpoint-mobile-vpn-example"></a>CheckPoint Mobile VPN-példa
+
+```
+<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+```
+
+#### <a name="writing-custom-xml"></a>Egyéni XML írása
 Az egyéni XML-parancsok írásával kapcsolatban további információt az egyes gyártók VPN-dokumentációjában talál.
 
 További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfiguráció](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
-**Bújtatás megosztása**: Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
-- **A VPN-kapcsolat megosztott protokollbújtatási útvonalai**: Választható útvonalak hozzáadása külső VPN-szolgáltatók számára. Mindhez adja meg a célelőtagot és az előtag méretét.
-
 ## <a name="apps-and-traffic-rules"></a>Alkalmazások és adatforgalmi szabályok
 
+<<<<<<< HEAD
+- **WIP vagy alkalmazások társítása ezzel a VPN-nel**: Engedélyezze ezt a beállítást, ha azt szeretné, hogy csak bizonyos használják a VPN-kapcsolatot. A választható lehetőségek:
+
+  - **WIP társítása ezzel a kapcsolattal**: Adjon meg egy **WIP-tartományt ehhez a kapcsolathoz**
+  - **Alkalmazások társítása ezzel a kapcsolattal**: **Korlátozhatja a VPN-kapcsolat ezekhez az alkalmazásokhoz**, majd hozzáadhat **társított alkalmazásokat**. A megadott alkalmazások automatikusan a VPN-kapcsolatot használják. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén adja meg a Csomagcsalád nevét. Asztali alkalmazások esetén adja meg az alkalmazás fájlelérési útvonalát.
+=======
 **A VPN-kapcsolat ezekre az alkalmazásokra korlátozódjon**: Engedélyezze ezt a beállítást, ha azt szeretné, hogy csak bizonyos használják a VPN-kapcsolatot.
 
 **Társított alkalmazások**: Adja meg a VPN-kapcsolatot automatikusan használó alkalmazások listáját. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén adja meg a Csomagcsalád nevét. Asztali alkalmazások esetén adja meg az alkalmazás fájlelérési útvonalát.
+>>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
 
->[!IMPORTANT]
->Azt javasoljuk, hogy tegyen biztonságossá minden, alkalmazásonkénti VPN-ekhez létrehozott alkalmazáslistát. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
+  >[!IMPORTANT]
+  >Azt javasoljuk, hogy tegyen biztonságossá minden, alkalmazásonkénti VPN-ekhez létrehozott alkalmazáslistát. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
 
-**A VPN-kapcsolat hálózati forgalmi szabályai**: Állítsa be, hogy a VPN-kapcsolatnál mely protokollok, valamint melyik helyi és távoli portok és címtartományok lesznek engedélyezve. Ha nem hoz létre hálózati forgalmi szabályt, minden protokoll, port és címtartomány engedélyezve lesz. Egy szabály létrehozása után a VPN-kapcsolat csak az Ön által a szabályban megadott protokollokat, portokat és címtartományokat használja.
+- **A VPN-kapcsolat hálózati forgalmi szabályai**: Állítsa be, hogy a VPN-kapcsolatnál mely protokollok, valamint melyik helyi és távoli portok és címtartományok lesznek engedélyezve. Ha nem hoz létre hálózati forgalmi szabályt, minden protokoll, port és címtartomány engedélyezve lesz. Egy szabály létrehozása után a VPN-kapcsolat csak az Ön által a szabályban megadott protokollokat, portokat és címtartományokat használja.
 
 ## <a name="conditional-access"></a>Feltételes hozzáférés
 
-**Feltételes hozzáférés használata e VPN-kapcsolat esetében**: Lehetővé teszi az ügyféltől származó eszközmegfelelőségi adatok továbbítását. Ha a beállítás engedélyezve van, a VPN-ügyfél megpróbál kommunikálni az Azure Active Directoryval, hogy megszerezze a hitelesítéshez használandó tanúsítványt. A VPN-t tanúsítványalapú hitelesítés használatára kell beállítani, és a VPN-kiszolgálónak megbízhatóként kell felismernie az Azure Active Directory által visszaadott kiszolgálót.
+- **Feltételes hozzáférés használata e VPN-kapcsolat esetében**: Lehetővé teszi az ügyféltől származó eszközmegfelelőségi adatok továbbítását. Ha a beállítás engedélyezve van, a VPN-ügyfél megpróbál kommunikálni az Azure Active Directoryval (AD), hogy megszerezze a hitelesítéshez használandó tanúsítványt. A VPN-t tanúsítványalapú hitelesítés használatára kell beállítani, és a VPN-kiszolgálónak megbízhatóként kell felismernie az Azure AD által visszaadott kiszolgálót.
 
-**Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal**: A Kerberos-hitelesítéshez használttól eltérő tanúsítvány használata az eszközmegfelelőség igazolásához. A következő beállításokkal rendelkező tanúsítványt adja meg:
+- **Egyszeri bejelentkezés (SSO) helyettesítő tanúsítvánnyal**: A Kerberos-hitelesítéshez használttól eltérő tanúsítvány használata az eszközmegfelelőség igazolásához. A következő beállításokkal rendelkező tanúsítványt adja meg:
 
-- **Kibővített kulcshasználat**: A kibővített kulcshasználat (EKU) megnevezése
-- **Objektumazonosító**: Az EKU objektumazonosítója
-- **Kibocsátó kivonata**: Az SSO-tanúsítvány ujjlenyomata
+  - **Név**: A kibővített kulcshasználat (EKU) neve
+  - **Objektumazonosító**: Az EKU objektumazonosítója
+  - **Kibocsátó kivonata**: Az SSO-tanúsítvány ujjlenyomata
 
 ## <a name="dns-settings"></a>DNS-beállítások
 
-**A VPN-kapcsolat DNS-nevei és -kiszolgálói**: A VPN-kapcsolat által a kapcsolat létrejötte után használt DNS-kiszolgálók megadása.
-Minden egyes kiszolgálóhoz adja meg az alábbi adatokat:
-- **DNS-név**
+**A VPN-kapcsolat tartománya és kiszolgálói**: Megadhat egy tartományt és DNS-kiszolgálót a VPN-nek. Megadhatja, hogy a kapcsolat létrejötte után a VPN-kapcsolat mely DNS-kiszolgálókat használja. Minden egyes kiszolgálóhoz adja meg az alábbi adatokat:
+- **Tartomány**
 - **DNS-kiszolgáló**
 - **Proxy**
 
 ## <a name="proxy-settings"></a>Proxybeállítások
 
-- **Proxybeállítások automatikus észlelése**: Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, adja meg, hogy szeretné-e, ha az eszközök automatikusan észlelnék a kapcsolatbeállításokat.
 - **Automatikus konfigurációs szkript**: A proxykiszolgálót egy konfigurációs fájl segítségével konfigurálja. Adja meg a konfigurációs fájlt tartalmazó **Proxykiszolgáló URL-címét**, például `http://proxy.contoso.com`.
-- **Proxykiszolgáló használata**: Ha manuálisan szeretné megadni a proxykiszolgáló beállításait, akkor engedélyezze ezt a beállítást.
-  - **Cím**: Adja meg a proxykiszolgáló címét (IP-címként)
-  - **Portszám**: Adja meg a proxykiszolgálóhoz társított portszámot
-- **Proxy mellőzése helyi címek esetén**: Ha a VPN-kiszolgáló proxykiszolgálót igényel a kapcsolathoz, válassza ezt a beállítást, ha a megadott helyi címekhez nem szeretné használni a proxykiszolgálót.
+- **Cím**: Adja meg a proxykiszolgáló címét, amely egy IP-cím vagy egy `vpn.contoso.com`
+- **Portszám** – Adja meg a proxykiszolgáló TCP-portszámát.
+- **Proxy megkerülése helyi címeknél**: Ha nem szeretne proxykiszolgálót használni a helyi címekhez, válassza az Engedélyezés lehetőséget. Ez a beállítás akkor lép érvénybe, ha a VPN-kiszolgálónak proxykiszolgálóra van szüksége a kapcsolathoz.
+
+## <a name="split-tunneling"></a>Vegyes alagútkezelés
+
+- **Bújtatás megosztása**: Az **Engedélyezés** vagy a **Letiltás** beállítással szabályozhatja, hogy az eszközök választhatnak-e a forgalomtól függően a kapcsolatok közül. Egy szállodai vendég például a munkahelyi fájlok elérésére a VPN-kapcsolatot, de egyszerű böngészésre a szálloda normál hálózatát használja.
+- **A VPN-kapcsolat megosztott protokollbújtatási útvonalai**: Választható útvonalak hozzáadása külső VPN-szolgáltatók számára. Minden kapcsolathoz adja meg a célelőtagot és az előtag méretét.

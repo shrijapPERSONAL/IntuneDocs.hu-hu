@@ -1,29 +1,29 @@
 ---
-title: "Skycure-összekötő a Microsoft Intune-nal"
-titlesuffix: 
-description: "Megismerheti az Intune a Skycure Mobile Threat Defense-szel való integrálását, amellyel vezérelheti a mobileszközök a vállalati erőforrásokhoz való hozzáférését."
-keywords: 
+title: Symantec-összekötő a Microsoft Intune-nal
+titlesuffix: ''
+description: Megismerheti az Intune szolgáltatás Symantec Endpoint Protection Mobile-lal való integrálását, amellyel vezérelheti a mobileszközök vállalati erőforrásokhoz való hozzáférését.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-összekötő
+# <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-összekötő
 
-A Microsoft Intune-nal integrálható, Skycure nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a Skycure által az eszközökről gyűjtött telemetriai adatokon alapul, például:
+A Microsoft Intune-nal integrálható, Symantec Endpoint Protection Mobile (SEP Mobile) nevű, veszélyforrások elleni mobileszköz-védelmi megoldás kockázatfelmérése alapján feltételes hozzáféréssel korlátozható a vállalati erőforrások mobil elérése. A kockázatfelmérés a SEP Mobile által az eszközökről gyűjtött telemetriai adatokon alapul, például:
 
 -   Fizikai védelem
 
@@ -33,21 +33,21 @@ A Microsoft Intune-nal integrálható, Skycure nevű, veszélyforrások elleni m
 
 -   Biztonsági rések elleni védelem
 
-Feltételes hozzáférési szabályzatokat konfigurálhat az Intune eszközmegfelelőségi szabályzataira épülő Skycure-kockázatfelmérés alapján, és ezek révén az észlelt fenyegetések alapján engedélyezheti vagy tilthatja le a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
+Az Intune eszközmegfelelési szabályzataival engedélyezheti a SEP Mobile-kockázatfelmérést, majd az észlelt fenyegetések alapján a feltételes hozzáférési szabályzatokkal engedélyezheti vagy tilthatja le a nem megfelelő eszközök hozzáférését a vállalati erőforrásokhoz.
 
-## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a Skycure a vállalati erőforrások védelmét?
+## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Hogyan segíti az Intune és a SEP Mobile a vállalati erőforrások védelmét?
 
-Az Androidra és iOS-re készült Skycure mobilalkalmazás rögzíti a fájlrendszer, a hálózati protokollkészlet, valamint az eszközök és az alkalmazások telemetriai adatait, ha elérhetők, és továbbítja őket a Skycure felhőszolgáltatásnak, amely felméri az eszköz kockázatát a mobil veszélyforrások tekintetében.
+Az Androidra és iOS-re készült SEP Mobile alkalmazás rögzíti a fájlrendszer, a hálózati protokollkészlet, valamint az eszközök és az alkalmazások telemetriai adatait, ha elérhetők, és továbbítja őket a Symantec felhőszolgáltatásnak, amely felméri az eszköz kockázatát a mobil veszélyforrások tekintetében.
 
-Az Intune eszközmegfelelőségi szabályzata tartalmaz egy szabályt a Skycure Mobile Threat Defense-hez, amely a Skycure kockázatfelmérésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
+Az Intune eszközmegfelelőségi szabályzata tartalmaz egy szabályt a SEP Mobile-hoz, amely a SEP Mobile kockázatfelmérésén alapul. Ha ez a szabály engedélyezve van, az Intune az engedélyezett szabályzat alapján értékeli az eszköz megfelelőségét.
 
-Amennyiben az eszköz nem megfelelőnek minősül, akkor megszűnik a hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A Skycure mobilalkalmazás segítséget nyújt a letiltott eszközök felhasználóinak a probléma elhárításához és a vállalati erőforrásokhoz való hozzáférés visszaszerzéséhez.
+Amennyiben az eszköz nem megfelelőnek minősül, akkor megszűnik a hozzáférése az olyan erőforrásokhoz, mint az Exchange Online és a SharePoint Online. A SEP Mobile alkalmazás segítséget nyújt a letiltott eszközök felhasználóinak a probléma elhárításához és a vállalati erőforrásokhoz való hozzáférés visszaszerzéséhez.
 
-Az Intune kétféleképpen integrálható a Skycure-ral:
+Az Intune kétféleképpen integrálható a SEP Mobile-lal:
 
--   Az **alapszintű beállítás** írásvédett mód, amely révén a Skycure vizsgálhatja az Intune-beli eszközöket.
+-   Az **alapszintű beállítás** írásvédett mód, amely révén a SEP Mobile vizsgálhatja az Intune-beli eszközöket.
 
--   A **teljes integráció** lehetővé teszi, hogy a Skycure jelentse az eszközökkel kapcsolatos kockázatokat és a biztonsági incidensek részleteit az Intune-nak.
+-   A **teljes integráció** lehetővé teszi, hogy a SEP Mobile jelentse az eszközökkel kapcsolatos kockázatokat és a biztonsági incidensek részleteit az Intune-nak.
 
 ## <a name="sample-scenarios"></a>Mintaforgatókönyvek
 
@@ -65,11 +65,11 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 **Letiltás kártékony alkalmazás észlelése esetén:**
 
-![A program kártevőt észlelt](./media/skycure-arch-1.png)
+![A program kártevőt észlelt](./media/symantec-arch-1.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![A fenyegetés kiküszöbölését és a kártevők észlelését követően a hozzáférés ismét biztosított](./media/skycure-arch-2.png)
+![A fenyegetés kiküszöbölését és a kártevők észlelését követően a hozzáférés ismét biztosított](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Hozzáférés vezérlése hálózati fenyegetés alapján
 
@@ -77,11 +77,11 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 **Wi-Fi-s hálózati elérés letiltása:**
 
-![Wi-Fi-s hálózati elérés letiltása](./media/skycure-arch-3.png)
+![Wi-Fi-s hálózati elérés letiltása](./media/symantec-arch-3.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított](./media/skycure-arch-4.png)
+![A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított](./media/symantec-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Hozzáférés vezérlése a SharePoint Online-hoz hálózati fenyegetés alapján
 
@@ -89,11 +89,11 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 **A SharePoint Online letiltása hálózati fenyegetések észlelése esetén:**
 
-![A SharePoint Online letiltása hálózati fenyegetések észlelése esetén](./media/skycure-arch-5.png)
+![A SharePoint Online letiltása hálózati fenyegetések észlelése esetén](./media/symantec-arch-5.png)
 
 **A fenyegetés kiküszöbölését követően a hozzáférés ismét biztosított:**
 
-![A fenyegetés kiküszöbölését követően a SharePoint-hozzáférés ismét biztosított – példa](./media/skycure-arch-6.png)
+![A fenyegetés kiküszöbölését követően a SharePoint-hozzáférés ismét biztosított – példa](./media/symantec-arch-6.png)
 
 ## <a name="supported-platforms"></a>Támogatott platformok
 
@@ -107,18 +107,18 @@ Ha az eszközön kártékony alkalmazásokat, például kártevőket észlel a r
 
 -   Microsoft Intune-előfizetés
 
--   Skycure Mobile Threat Defense-előfizetés
+-   Symantec Endpoint Protection Mobile-előfizetés
 
-További tájékoztatást a [Skycure webhelyén](https://www.skycure.com/skycure-microsoft-integration/) talál.
+További tájékoztatást a [Symantec webhelyén](https://www.skycure.com/skycure-microsoft-integration/) talál.
 
 ## <a name="next-steps"></a>További lépések
 
-Az Intune és a Skycure integrálásához szükséges lépések:
+Az Intune és a SEP Mobile integrálásához szükséges lépések:
 
-- [A Skycure és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
+- [A SEP Mobile és az Intune közötti integráció beállítása](skycure-mtd-connector-integration.md)
 
-- [A Skycure-alkalmazások, a Microsoft Authenticator és az iOS-es alkalmazáskonfigurációs szabályzat felvétele és hozzárendelése](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [A SEP Mobile-alkalmazások, a Microsoft Authenticator és az iOS-es alkalmazáskonfigurációs szabályzat felvétele és hozzárendelése](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [A Skycure eszközmegfelelőségi szabályzatának létrehozása az Intune-ban](mtd-device-compliance-policy-create.md)
+- [A SEP Mobile eszközmegfelelőségi szabályzatának létrehozása az Intune-ban](mtd-device-compliance-policy-create.md)
 
-- [A Skycure MTD-összekötő engedélyezése az Intune-ban](mtd-connector-enable.md)
+- [A SEP Mobile MTD-összekötő engedélyezése az Intune-ban](mtd-connector-enable.md)
