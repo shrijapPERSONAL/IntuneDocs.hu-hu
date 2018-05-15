@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
+ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Windows Holographic rendszerű eszközök testre szabása az Intune-nal
 
@@ -25,6 +25,16 @@ A Microsoft Intune-nal felügyelhetőek a Windows Holographic for Business rends
 Windows Holographic rendszerű eszközök Microsoft Intune-nal való felügyeletéhez létre kell hoznia egy kiadásfrissítési profilt. Ez a frissítési profil frissíti az eszközöket a Windows Holographic rendszerről a Windows Holographic for Business rendszerre. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információt [A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra](holographic-upgrade.md) című témakörben talál.
 
 A Windows Holographic for Business rendszerű eszközök felügyeletében és testre szabásában segítenek az e cikkben leírt műveletek. Kezelheti többek között például a szoftverfrissítéseket és konfigurálhatja a VPN-beállításokat.
+
+## <a name="azure-active-directory"></a>Azure Active Directory
+
+Az Azure Active Directory (AD) segítségével könnyedén kezelheti és vezérelheti a Windows Holographic for Business rendszerű eszközeit. Az Intune és az Azure AD használatával: 
+
+- **[Az Azure Active Directoryhoz kapcsolt eszközök beállítása](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Windows 10 rendszerű munkahelyi eszközeit, beleértve a Windows Holographic for Business rendszerű eszközöket is, hozzáadhatja az Azure Active Directoryhoz. Ez a funkció lehetővé teszi, hogy az Azure AD vezérelje az eszközt. Segít biztosítani, hogy a felhasználói olyan eszközökről csatlakozzanak a vállalati erőforrásokhoz, amelyek megfelelnek a vállalat biztonsági és megfelelőségi szabványainak.
+
+  További részletekért tekintse meg [Az Azure AD-val történő eszközkezelés bemutatása](https://docs.microsoft.com/azure/active-directory/device-management-introduction) cikket.
+
+- **[Csoportos regisztráció Windows-eszközök esetében](windows-bulk-enroll.md)**: Egyszerre nagy számú új windowsos eszközt is csatlakoztathat az Azure Active Directoryhoz és az Intune-hoz. Ezt a szolgáltatást csoportos regisztrációnak hívják, és kiépítési csomagokat használ. Ezek a csomagok összekötik a Windows Holographic for Business rendszerű eszközöket az Azure AD-bérlővel, és regisztrálják őket az Intune-ban.
 
 ## <a name="company-portal"></a>Céges portál
 **[A Céges portál alkalmazás konfigurálása](company-portal-app.md)**
@@ -56,6 +66,18 @@ A Microsoft Intune-nal univerzális Windows-alkalmazások telepíthetők a Windo
 > [!NOTE]
 > A Windows 10 Holographic for Business 1607 rendszerű HoloLens-eszközök nem támogatják a Microsoft Store Vállalatoknak áruházból származó, online licencelt alkalmazásokat. További információ: [Alkalmazások telepítése a HoloLens-re](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
 
+## <a name="device-actions"></a>Eszközműveletek
+Az Intune rendelkezik néhány olyan beépített funkcióval, amelyek használatával a rendszergazdák különböző műveleteket végezhetnek lokálisan az eszközön, vagy távoli eléréssel az Intune-ban az Azure Portalról. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
+
+Windows Holographic for Business rendszert futtató eszközök használata esetén a következő műveletek végezhetők: 
+
+- **[Gyári beállítások visszaállítása](devices-wipe.md#factory-reset)**: A **Gyári beállítások visszaállítása** művelet eltávolítja az eszközt az Intune-ból, és visszaállítja az eszköz gyári alapértelmezett beállításait. Ezt a műveletet akkor érdemes használni, mielőtt az eszközt egy új felhasználónak adják, vagy ha az eszköz elveszett, vagy ellopták.
+
+- **[Céges adatok eltávolítása](devices-wipe.md#remove-company-data)**: A **Céges adatok eltávolítása** művelet eltávolítja az eszközt az Intune-ból, eltávolítja a felügyelt alkalmazásadatokat, beállításokat és az Intune által hozzárendelt e-mail-profilokat. A felhasználó személyes adatai az eszközön maradnak.
+
+- **[Eszköz szinkronizálása a legfrissebb szabályzatok és műveletek hozzáadásához](device-sync.md)**: A **Szinkronizálás** művelettel kényszeríteni lehet az eszközt, hogy azonnal csatlakozzon az Intune-hoz. Bejelentkezéskor az eszköz azonnal fogadja az hozzárendelt összes függőben lévő műveletet vagy szabályzatot. Ez a funkció segíthet ellenőrizni a vonatkozó szabályzatokat és elhárítani a hibákat anélkül, hogy ki kellene várni a következő ütemezett bejelentkezést.
+
+**[A Microsoft Intune-eszközfelügyelet ismertetése](device-management.md)**  című cikkből további részleteket is megtudhat az Azure Portal használatával történő eszközkezelésről. 
 
 ## <a name="device-categories-and-groups"></a>Eszközkategóriák és csoportok
 **[Eszközök csoportokba sorolása](device-group-mapping.md)**

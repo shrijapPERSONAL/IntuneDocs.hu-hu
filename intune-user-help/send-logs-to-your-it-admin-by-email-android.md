@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>Naplók elküldése a cég támogatási szolgálatának e-mailben
 
 Előfordulhat, hogy hibát tapasztal Android-eszközén a Céges portál alkalmazás használata során. Ilyen esetben e-mailt küldhet a cég támogatási szakemberének a hiba részleteivel. Ezek a részletek adják meg a hibához kapcsolódó, annak felderítéséhez szükséges információkat.  
 
-A hiba részletei az eszközön tárolt, _diagnosztikai napló_ nevű speciális dokumentumban találhatók. Amikor feltölti a naplókat a Céges portál alkalmazásba, azok először az alkalmazás Microsoftos fejlesztőihez lesznek továbbítva. Ők a naplók felhasználásával javítják az alkalmazás működését, és előzik meg a további hibákat. Ilyenkor Ön kap egy egyedi incidensazonosítót, amelyet át kell adnia a cég rendszergazdájának.  
+A hiba részletei az eszközön tárolt, _diagnosztikai napló_ nevű speciális dokumentumban találhatók. Amikor feltölti a naplókat a Céges portál alkalmazásba, azok először az alkalmazás Microsoftos fejlesztőihez lesznek továbbítva. Ők a naplók felhasználásával javítják az alkalmazás működését, és előzik meg a további hibákat. Ilyenkor Ön kap egy egyedi incidensazonosítót, amelyet át kell adnia a cég rendszergazdájának, hogy ő hivatkozni tudjon a Microsoft ügyfélszolgálatánál jelentett esetre.
 
 > [!Note]
 > Annak érdekében, hogy a cég informatikai támogató szolgálata könnyebben felderíthesse a probléma okát, kapcsolja be a _részletes naplózást_. A részletes napló a hibák minden részletét rögzíti, és ezeket a jelentésbe is belefoglalja. [Útmutató a részletes naplózás bekapcsolásához](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)  

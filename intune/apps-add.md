@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -155,6 +155,16 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Az Intune által automatikusan hozzáadott alkalmazások
 
 Korábban az Intune számos beépített alkalmazást tartalmazott, melyeket hamar hozzá lehetett rendelni egy kategóriához. Ezt a listát az Intune-ügyfelek visszajelzései alapján eltávolítottuk, és a beépített alkalmazások többé nem jelennek meg. A korábban már hozzárendelt beépített alkalmazások azonban továbbra is megjelennek az alkalmazások listájában. Az alkalmazások szükség szerint továbbra is hozzárendelhetők.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Kötelező alkalmazások telepítése, frissítése, vagy eltávolítása
+
+A kötelező alkalmazásokat az Intune a 7 napos újraértékelési ciklus kivárása helyett 24 órán belül automatikusan újratelepíti, frissíti, vagy eltávolítja.
+
+Az Intune a kötelező alkalmazásokat a következő feltételek alapján telepíti újra, frissíti, vagy távolítja el automatikusan:
+- Ha a végfelhasználó eltávolít egy olyan alkalmazást, amelyet az eszközre kötelezően telepített alkalmazásnak jelöltek, akkor az Intune az ütemezett időpontban automatikusan újratelepíti az adott alkalmazást.
+- Ha a kötelező alkalmazás telepítése sikertelen, vagy valamiért az alkalmazás nincs jelen az eszközön, az Intune ellenőrzi a megfelelőséget, és az ütemezett időpontban újratelepíti az alkalmazást.  
+- Az egyik rendszergazda elérhetővé tesz egy alkalmazást egy felhasználói csoport számára, és a felhasználó telepíti ezt az alkalmazást az eszközre a céges portál használatával. Később a rendszergazda frissíti az alkalmazást v1-es verzióról v2-re. Amennyiben az alkalmazás korábbi verziója jelen van az eszközön, az Intune az ütemezett időpontban frissíteni fogja az alkalmazást.
+- Ha a rendszergazda az alkalmazást törlésre jelöli ki, és az alkalmazás továbbra is jelen van a készüléken és eltávolítása sikertelen volt, az Intune ellenőrzi a megfelelőséget, és eltávolítja az alkalmazást az ütemezett időpontban.   
 
 ## <a name="next-steps"></a>További lépések
 

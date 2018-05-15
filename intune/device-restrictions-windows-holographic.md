@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Eszközkorlátozásokra vonatkozó beállítások az Intune-ban Windows Holographic for Business esetén
 
@@ -68,7 +68,7 @@ Az alábbi eszközkorlátozási beállítások a Windows Holographic for Busines
 
 - **Rendszeridő módosítása** – Megakadályozza, hogy a végfelhasználó megváltoztassa az eszköz rendszeridejét.
 
-## <a name="kiosk-preview"></a>Kioszk (előnézet)
+## <a name="kiosk"></a>Kioszkmód
 
 A kioszkeszközök jellemzően egy adott alkalmazást futtatnak. A rendszer a felhasználóknak csak a kioszkalkalmazáshoz ad hozzáférést, és meggátolja az eszköz más funkcióinak és szolgáltatásainak elérését.
 
@@ -76,6 +76,9 @@ A kioszkeszközök jellemzően egy adott alkalmazást futtatnak. A rendszer a fe
 
   - **Nincs konfigurálva** (alapértelmezés) – A szabályzat nem engedélyezi a teljes képernyős módot. 
   - **Egyalkalmazásos kioszk** – A profil csak egyetlen alkalmazás futtatását engedélyezi az eszköznek. Amikor a felhasználó bejelentkezik, elindul az adott alkalmazás. Ez a mód emellett meggátolja a felhasználót abban, hogy új alkalmazásokat nyisson meg vagy másik futó alkalmazásra váltson.
+  - **Többalkalmazásos kioszk** – A profil engedélyezi több alkalmazás futtatását az eszköznek. Csak a hozzáadott alkalmazások lesznek elérhetők a felhasználónak. A többalkalmazásos kioszk (vagy fix célú eszköz) előnye az, hogy egy olyan, könnyen érthető környezetet nyújt a felhasználónak, amelyben csak a szükséges alkalmazások érhetőek el. Azokat az alkalmazásokat pedig, amelyekre nincsen szükség, elrejti a rendszer. 
+  
+    Amikor egy többalkalmazásos kioszkhoz alkalmazásokat ad hozzá, egy fájlt is meg kell adnia a Start menü elrendezéséhez. A [Start menü elrendezési fájlját](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) bemutató cikk tartalmaz egy minta XML-fájlt is, amelyet használhat az Intune-ban. 
 
 #### <a name="single-app-kiosks"></a>Egyalkalmazásos kioszk
 Adja meg a következő beállításokat:
