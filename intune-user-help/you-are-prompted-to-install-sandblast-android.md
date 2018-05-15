@@ -15,11 +15,11 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 889fb53fc215763b061f5165425df7b0b9960702
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Telepítenie kell a SandBlast Mobile Protect alkalmazást Android-eszközén
 
@@ -29,7 +29,7 @@ Ha problémája akad a telepítéssel, próbálja ki a témakör végén olvasha
 
 **A következőket kell tennie:**
 
-1. Húzza le az értesítési sávot a képernyő tetejéről és koppintson a **Szükséges alkalmazás – A(z) Skycure telepítése a Play Áruházból** gombra. Ugyanez a Céges portál alkalmazásban is elérhető a __Megfelelőségi részletek__ között.
+1. Húzza le az értesítési sávot a képernyő tetejéről, és koppintson a **Szükséges alkalmazás – A SandBlast Mobile Protect telepítése a Play Áruházból** gombra. Ugyanez a Céges portál alkalmazásban is elérhető a __Megfelelőségi részletek__ között.
 
 2. Ekkor megnyílik a SandBlast Mobile Protect telepítési lapja a Play Áruházban. Telepítse a SandBlast Mobile Protectet, majd az **ELFOGADÁS** elemre kattintva adjon hozzáférést a SandBlast Mobile Protectnek az eszközhöz.
 

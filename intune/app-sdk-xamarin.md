@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f9cc117925f59c9fb7c55d0ff10aedf09d26f93
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -74,35 +74,35 @@ A [licencfeltételek](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/b
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Az alkalmazásvédelmi szabályzatok engedélyezése androidos mobilalkalmazásban
-Adja hozzá Xamarin.Android-projektjéhez a [Microsoft.Intune.MAM.Xamarin.Android NuGet-csomagot](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android).
+## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Az Intune alkalmazásvédelmi szabályzatainak engedélyezése Androidos mobilalkalmazásban
 
-Xamarin.Android-alkalmazások esetén olvassa el és kövesse végig az [Androidhoz készült Intune App SDK – fejlesztői útmutató](app-sdk-android.md) című cikket, beleértve az osztályok, metódusok és tevékenységek MAM-megfelelőikre való cseréjét az útmutatóban foglalt [táblázat](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) alapján. 
+### <a name="xamarinandroid-integration"></a>Xamarin.Android-integráció
+
+1. Adja hozzá Xamarin.Android-projektjéhez a [Microsoft.Intune.MAM.Xamarin.Android NuGet-csomag](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) legfrissebb verzióját. Ezzel elérhetővé válnak az Intune alkalmazáshoz való engedélyezéséhez szükséges hivatkozások.
+
+2. Olvassa el és kövesse [A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md) című cikk lépéseit, és fordítson kiemelt figyelmet a következő szakaszokra:
+    1. A [teljes osztályok és metódusok lecserélése szakasz](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
+    2. A [MAMApplication szakasz](app-sdk-android.md#mamapplication). Ügyeljen rá, hogy az alosztály megfelelően jelölve legyen a `[Application]` attribútummal, és felülbírálja a `(IntPtr, JniHandleOwnership)` konstruktort.
+    3. Az [ADAL-integráció szakaszt](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) amennyiben az alkalmazás AAD-ben történő hitelesítést is végrehajt.
+    4. A [MAM-WE regisztrációs szakaszt](app-sdk-android.md#app-protection-policy-without-device-enrollment) ha az alkalmazás a MAM-szolgáltatásból fog lekérni szabályzatot.
 
 > [!NOTE]
-> Ha az alkalmazás nem rendelkezik meghatározott `android.app.Application` osztállyal, akkor hozzon létre egyet, és győződjön meg arról, hogy az a `MAMApplication` osztálytól örököl.
-
-> [!NOTE]
-> Ha az [Androidhoz készült Intune App SDK – fejlesztői útmutató](app-sdk-android.md) alapján keres egyenértékű API-kat a `Microsoft.Intune.MAM.Xamarin.Android` kötések között, vagy az útmutatóból konvertál kódrészleteket, akkor ügyeljen rá, hogy a Xamarin kötésgenerátora a következő jelentős módokon módosítja az Android-API-kat:
-> * Minden azonosító úgynevezett CamelCase formátumra lesz konvertálva (com.microsoft.foo -> Com.Microsoft.Foo)
-> * Minden get/set művelet értékadó műveletté lesz konvertálva (pl. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
+> Ha az [A Microsoft Intune App SDK Androidon – útmutató fejlesztőknek](app-sdk-android.md) alapján keres egyenértékű API-kat a `Microsoft.Intune.MAM.Xamarin.Android` kötések között, vagy amikor az útmutatóból konvertál kódrészleteket, akkor ügyeljen rá, hogy a Xamarin kötésgenerátora a következő jelentős módokon módosítja az Android-API-kat:
+> * Az összes azonosító Pascal case írásmódra módosul (com.foo.bar -> Com.Foo.Bar)
+> * Minden get/set művelet tulajdonság típusú műveletté lesz konvertálva (pl. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
 > * Minden interfész neve elé be lesz illesztve az 'I' karakter (FooInterface -> IFooInterface)
 
-A Xamarin Formst és más felhasználóifelület-keretrendszereket használó alkalmazásokhoz biztosítunk egy `Microsoft.Intune.MAM.Remapper` nevű eszközt. Az eszköz elvégzi Ön helyett az osztály lecserélését. A használatához hajtsa végre a következőket:
+### <a name="xamarinforms-integration"></a>Xamarin.Forms-integráció
 
-1.  Projektjéhez adja hozzá a [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-csomagot.
+**Az előző lépések végrehajtása mellett** a `Xamarin.Forms`-alkalmazásokhoz egy `Microsoft.Intune.MAM.Remapper`-csomagot is elérhetővé tettünk. Ez a csomag úgy cseréli le az osztályokat, hogy `MAM`-osztályokat injektál az olyan gyakran használt `Xamarin.Forms`-osztályok osztályhierarchiájába mint a `FormsAppCompatActivity` és a `FormsApplicationActivity`, így nyugodtan használhatja osztályait továbbra is, csupán felülbírálást kell biztosítania az olyan MAM-kompatibilis funkcióknak, mint a `OnMAMCreate` és a `OnMAMResume`. A használatához hajtsa végre a következőket:
 
-2.  A hozzáadott `remapping-config.json` fájl build műveleteként a **RemappingConfigFile** műveletet kell beállítania. A felvett `remapping-config.json` fájl kizárólag a Xamarin.Forms-szal működik. Más felhasználóifelület-keretrendszerek esetén tekintse meg a Remapper NuGet-csomaghoz tartozó fontos fájlt.
+1.  Projektjéhez adja hozzá a [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet-csomagot. Ezzel automatikusan hozzáadhatja az Intune APP SDK Xamarin-kötéseit, ha esetleg még nem adta volna őket meg.
 
-3.  Az MAM-alkalmazás OnMAMCreate függvényéhez adjon hozzá egy Xamarin.Forms.Forms.Init(Context, Bundle) hívást, ugyanis Intune-felügyelettel az alkalmazása a háttérben is elindítható.
-
-4.  Hajtsa végre az [Androidhoz készült Intune App SDK – fejlesztői útmutató](app-sdk-android.md) többi, az Ön alkalmazására vonatkozó lépését.
+2.  Adjon hozzá egy `Xamarin.Forms.Forms.Init(Context, Bundle)`-hívást a 2.2-es lépésnél létrehozott `MAMApplication`-osztály `OnMAMCreate`-funkciójához. Erre azért van szükség, mert az Intune-felügyelet használata esetén az alkalmazás a háttérben is elindítható.
 
 > [!NOTE]
-> Előfordulhat, hogy a remapping-config.json build művelete megszakad a Microsoft.Intune.MAM.Remapper.Tasks csomag frissítésekor. Ebben az esetben a build sikertelen lesz.
+> Mivel ez a művelet felülír egy olyan függőséget, amit a Visual Studio az Intellisense automatikus kiegészítéshez használ, lehet, hogy újra kell indítania a Visual Studiot a remapper eszköz első futtatását követően ahhoz, hogy az Intellisense felismerje a változtatásokat. 
 
-## <a name="next-steps"></a>További lépések
-
-Végrehajtotta az alkalmazása Intune-felügyeletre való előkészítésének alapvető lépéseit. Most már követheti a fent felsorolt platformok integrációs útmutatóiban leírt lépéseket.
+## <a name="support"></a>Support
 
 Ha vállalata már Intune-ügyfél, akkor a Microsoft támogató szolgálat képviselőjével együttműködve nyisson meg egy támogatási jegyet, és hozzon létre bejelentést [a GitHub hibabejelentő oldalán](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), mi pedig segítünk, amint tudunk. 

@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>A Microsoft Intune ismert problémái
 
@@ -46,6 +46,14 @@ Ha az Intune-portálról az Azure Portalra migrált, megjelenhet egy **All Users
 A klasszikus Azure Portalról az Azure Portalra migrált szabályzatok állapotinformációi nem jelennek meg. A klasszikus portálon azonban megnézhetők ezeknek a szabályzatoknak az állapotinformációi. A migrált konfigurációs szabályzatok állapotinformációit akkor jelenítheti meg, ha újra létrehozza őket az Azure Portalon.
 
 ## <a name="apps"></a>Alkalmazások
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Több alkalmazástelepítési kérelem egyes VPP-alkalmazások esetében
+Előfordulhat, hogy egyes VPP-alkalmazások esetében annak ellenére több alkalmazástelepítési kérelem is megjelenik, hogy az alkalmazások már telepítve vannak a végfelhasználói eszközökön. A problémát az okozza, hogy az **Automatikus alkalmazásfrissítések** beállítás **Be** van kapcsolva a VPP-tokenben, amelyet az Intune Azure Portalra feltöltött.    
+
+A probléma elhárításához kapcsolja ki az **Automatikus alkalmazásfrissítések** beállítást a VPP-tokenben. Ehhez nyissa meg a Microsoft Intune-t az Azure Portalon. Az Intune-ban válassza a **Mobilalkalmazások** > **iOS VPP-tokenek** lehetőséget. Ezután válassza ki azt a VPP-tokent, amely az érintett alkalmazást telepítette, majd válassza ki a **Szerkesztés** > **Automatikus alkalmazásfrissítések** > **Ki** > **Mentés** lehetőségeket. A másik lehetőség, hogy letiltja az érintett alkalmazás VPP-alkalmazásként történő telepítését, így a továbbiakban nem jelennek meg a telepítési kérelmek sem.    
+
+Ez az egy ismert probléma a jelenlegi kiadásban. Hamarosan kiadunk egy javítást, amely megoldja a problémát. Ha a javítás telepítve lesz, a felhasználók nem fogják többé ezeket az alkalmazástelepítési kérelmeket megkapni.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-bérlő alapértelmezés szerinti nyelvén érhetők el
 Az iOS mennyiségi programban vásárolt alkalmazások csak az Intune-fiókéval megegyező országkódnak megfelelő nyelven jelennek meg, és ahhoz rendelhetők. Az Intune csak az Intune-bérlő országkódjával megegyező iTunes területi beállításról származó alkalmazásokat szinkronizálja. Például ha német Intune-fiókkal rendelkezik, és olyan alkalmazást vásárol, amely csak az Egyesült Államok-beli áruházban érhető el, akkor az Intune nem jeleníti meg az alkalmazást.

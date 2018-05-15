@@ -125,6 +125,7 @@
 #### [Windows 10-es eszköz regisztrálása a Hozzáférés munkahelyi vagy iskolai rendszerhez elemmel](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1- vagy Windows RT 8.1-eszköz regisztrálása](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1-es eszköz regisztrációja](enroll-your-wp81-windows.md)
+### [Alkalmazások telepítése a windowsos Céges portál alkalmazásból](install-apps-cpapp-windows.md)
 ### [Alaphelyzetbe állíthatja az eszközét](reset-erase-your-device-cpwebsite.md)
 ### [Az eszköz titkosítása](encrypt-your-device-windows.md)
 ### [Jelszó beállítása vagy módosítása](set-or-change-your-password-windows.md)

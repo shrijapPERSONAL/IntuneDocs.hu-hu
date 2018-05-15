@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>A Windows 10 VPN-beállításai az Intune-ban
 
@@ -99,17 +99,10 @@ További információ az egyéni EAP XML-ek létrehozásáról: [EAP-konfigurác
 
 ## <a name="apps-and-traffic-rules"></a>Alkalmazások és adatforgalmi szabályok
 
-<<<<<<< HEAD
 - **WIP vagy alkalmazások társítása ezzel a VPN-nel**: Engedélyezze ezt a beállítást, ha azt szeretné, hogy csak bizonyos használják a VPN-kapcsolatot. A választható lehetőségek:
 
   - **WIP társítása ezzel a kapcsolattal**: Adjon meg egy **WIP-tartományt ehhez a kapcsolathoz**
   - **Alkalmazások társítása ezzel a kapcsolattal**: **Korlátozhatja a VPN-kapcsolat ezekhez az alkalmazásokhoz**, majd hozzáadhat **társított alkalmazásokat**. A megadott alkalmazások automatikusan a VPN-kapcsolatot használják. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén adja meg a Csomagcsalád nevét. Asztali alkalmazások esetén adja meg az alkalmazás fájlelérési útvonalát.
-=======
-**A VPN-kapcsolat ezekre az alkalmazásokra korlátozódjon**: Engedélyezze ezt a beállítást, ha azt szeretné, hogy csak bizonyos használják a VPN-kapcsolatot.
-
-**Társított alkalmazások**: Adja meg a VPN-kapcsolatot automatikusan használó alkalmazások listáját. Az alkalmazás típusa határozza meg az alkalmazás azonosítóját. Univerzális alkalmazások esetén adja meg a Csomagcsalád nevét. Asztali alkalmazások esetén adja meg az alkalmazás fájlelérési útvonalát.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >Azt javasoljuk, hogy tegyen biztonságossá minden, alkalmazásonkénti VPN-ekhez létrehozott alkalmazáslistát. Ha a listát esetleg arra nem jogosult felhasználó módosítja, és Ön így importálja azt az alkalmazásonkénti VPN-alkalmazáslistába, azzal olyan alkalmazásoknak is VPN-elérést nyújthat, amelyeknek eredetileg nem szeretett volna. Az alkalmazáslisták védelmének módja lehet a hozzáférés-vezérlési lista (ACL) létrehozása.
 
