@@ -93,7 +93,7 @@
           href: planning-guide-onboarding.md
         - name: Tesztelés és ellenőrzés
           href: planning-guide-test-validation.md
-        - name: További háttéranyagok
+        - name: További források
           href: planning-guide-resources.md
     - name: Migrálási útmutató
       href: migration-guide.md
@@ -308,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS-beállítások
                       href: app-protection-policy-settings-ios.md
+                    - name: Adatátvitel kivételek
+                      href: app-protection-policies-exception.md
                 - name: Az alkalmazásvédelmi szabályzatok ellenőrzése
                   href: app-protection-policies-validate.md
                 - name: Alkalmazásvédelmi felhasználó állapotának figyelése
