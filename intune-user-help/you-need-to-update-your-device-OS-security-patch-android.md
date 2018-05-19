@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f2622a173b33fd28c55a9a63321a9f2faa16a5d7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Frissítenie kell androidos eszközének operációs rendszerét
 
-Ha megjelenik a „Minimum Android security patch level is not configured” (Az Android minimálisan előírt biztonsági javítási szintje nincs konfigurálva) üzenet, akkor eszköze biztonságának érdekében frissítést kell letöltenie. Egy kiadott _javítás_ biztosítja, hogy a szoftver továbbra is zökkenőmentesen működjön és naprakész maradjon. A cég informatikai támogatási szolgálata arra kötelezi, hogy telepítse a javítást annak érdekében, hogy az eszközén található munkahelyi adatok a lehető legnagyobb védelmet élvezhessék. A szükséges biztonsági javítás helye attól függően változhat, hogy milyen típusú Android-eszközzel rendelkezik.
+Ha megjelenik egy üzenet, amely szerint az Android előírt biztonsági javítási szintje nincs konfigurálva, akkor eszköze biztonságának érdekében frissítést kell letöltenie. Egy kiadott _javítás_ biztosítja, hogy a szoftver továbbra is zökkenőmentesen működjön és naprakész maradjon. A cég informatikai támogatási szolgálata arra kötelezi, hogy telepítse a javítást annak érdekében, hogy az eszközén található munkahelyi adatok a lehető legnagyobb védelmet élvezhessék. A szükséges biztonsági javítás helye attól függően változhat, hogy milyen típusú Android-eszközzel rendelkezik.
 
 Ha Samsung eszközzel rendelkezik, a **Beállítások** > **A telefon névjegye** területen nézze meg, szerepel-e valahol a „Knox” kifejezés. Ha igen, kövesse a következő, Samsung Knoxra vonatkozó utasításokat.
 

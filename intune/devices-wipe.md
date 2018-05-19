@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eszközök eltávolítása a gyári beállítások visszaállításával vagy a céges adatok eltávolításával
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. Ez a **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállítása** parancsok kiadásával tehető meg. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
+A **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállítása** műveletekkel eltávolíthatja az eszközt az Intune-ból, ha az eszközre már nincs szükség, azt egy megváltozott célra használják, vagy ha elveszett. A saját tulajdonban lévő, Intune-ban regisztrált eszközeikre a felhasználók is kiadhatnak egy távoli parancsot az Intune céges portálon keresztül.
 
 > [!NOTE]
 > Mielőtt eltávolítana egy felhasználót az Azure Active Directoryból (Azure AD), adjon ki egy **Gyári beállítások visszaállítása** vagy egy **Céges adatok eltávolítása** parancsot az adott felhasználóhoz rendelt összes eszközre. Ha felügyelt eszközzel rendelkező felhasználókat távolít el az Azure AD-ból, akkor az Intune már nem fogja tudni visszaállítani ezeken az eszközökön a gyári beállításokat vagy eltávolítani a céges adatokat.
 
 ## <a name="factory-reset"></a>Gyári beállítások visszaállítása
 
-A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A gyári beállítások visszaállítása eltávolítja az összes vállalati és felhasználói adatot, illetve beállítást. Az eszközt a rendszer eltávolítja az Intune-ból. A gyári beállítások visszaállítását akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták. A **Gyári beállítások visszaállítása** funkciót óvatosan használja. Az eszközön tárolt adatok a művelet után nem állíthatók vissza.
+A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg vagy törlődnek, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet.
+
+|Gyári beállítások visszaállítása művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Description|
+|:-------------:|:------------:|:------------:|------------|
+|**Gyári beállítások visszaállítása**| Nincs bejelölve | Igen | Törli az összes felhasználói fiókot, adatot, MDM-szabályzatot és beállítást. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
+|**Gyári beállítások visszaállítása**| Bejelölve | Nem | Törli az összes MDM-szabályzatot. Megtartja a felhasználói fiókokat és az adatokat. Visszaállítja a felhasználói beállításokat az alapértelmezett értékre. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
+
+A **Regisztrációs állapot és felhasználói fiók megtartása** lehetőség csak a Windows 10 1709-es vagy újabb verziók esetében érhető el.
+
+A rendszer újra alkalmazza az MDM-szabályzatokat az eszköz következő Intune-csatlakozásakor.
+
+A gyári beállítások visszaállítását akkor érdemes használni, ha szeretne alaphelyzetbe állítani egy adott eszközt, mielőtt új felhasználónak adná, illetve abban az esetben, ha az eszközt elveszítették vagy ellopták. A **Gyári beállítások visszaállítása** funkciót óvatosan használja. Az eszközön tárolt adatok a művelet után nem állíthatók vissza.
 
 ### <a name="factory-reset-a-device"></a>Az eszköz gyári beállításainak visszaállítása
 

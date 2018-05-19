@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Android-eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
 
@@ -96,16 +96,16 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 - **Jelszó megkövetelése a mobileszköz-zárolás feloldásához**: A felhasználók **kötelesek** jelszót megadni az eszköz eléréséhez.
 - **Jelszó minimális hossza**: Meghatározhatja a felhasználó jelszavában szereplő számjegyek vagy karakterek minimális számát.
-- **Jelszó megkövetelt típusa**: Megadható, hogy a jelszó csak számjegyeket vagy számokat és más karaktereket vegyesen tartalmazzon. A következő lehetőségek közül választhat:
+- **Jelszó megkövetelt típusa**: Adja meg, hogy a jelszó csak számjegyeket vagy számokat és más karaktereket vegyesen tartalmazzon. A következő lehetőségek közül választhat:
   - **Eszköz alapértelmezése**
   - **Alacsony biztonságú biometrikus**
   - **Legalább számok**
-  - **Komplex numerikus**
+  - **Komplex numerikus**: Nem lehet ismétlődő vagy egymást követő számokat megadni (például „1111” vagy „1234”).
   - **Legalább betűk**
   - **Legalább alfanumerikus karakterek**
   - **Legalább alfanumerikus karakterek és szimbólumok**
 - **Jelszó kérése legfeljebb ennyi perc inaktivitás után**: Arra a tétlenségi időre vonatkozik, amelynek elteltével a felhasználónak újra meg kell adnia a jelszavát.
-- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után újat kell létrehoznia.
+- **Jelszó érvényessége (napokban)**: Válassza ki, hány nap elteltével járjon le a jelszó, ami után a felhasználónak újat kell létrehoznia.
 - **Újból nem használható jelszavak száma**: Megadhatja, hogy hány legutóbbi jelszó ne legyen újra felhasználható. Ezzel a beállítással korlátozhatja, hogy a felhasználó korábban használt jelszavakat hozzon létre.
 
 ### <a name="encryption"></a>Encryption

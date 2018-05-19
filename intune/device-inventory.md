@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -46,6 +46,16 @@ Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajd
    - Az **Eszközkonfiguráció** az eszközhöz rendelt összes eszközkonfigurációs szabályzat listáját mutatja meg, és hogy a szabályzat alkalmazása sikeres vagy sikertelen.
 
 Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalmazásokról készít listát. A személyes eszközökön található alkalmazásokat nem ellenőrzi. A vállalat tulajdonában lévő Windows 10 rendszerű számítógépekről csak a modern alkalmazásokat veszi figyelembe a lista készítésekor. A Win32-es alkalmazásokról az Intune nem gyűjt információkat. Az eszközök szolgáltatójától függően előfordulhat, hogy nem minden alkalmazásról talál információt.
+
+|Platform|Személyes tulajdonú eszközök esetében|Vállalati tulajdonú eszközök esetében|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (a Configuration Manager-ügyfél nélkül)|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|
+|Windows 8.1 (a Configuration Manager-ügyfél nélkül)|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
+|Windows Phone 8|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
+|Windows RT|Csak felügyelt alkalmazások|Csak felügyelt alkalmazások|  
+|iOS|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|
+|macOS|Az összes, az eszközön telepített alkalmazás|Az összes, az eszközön telepített alkalmazás|  
+|Android|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|  
 
 ## <a name="next-steps"></a>További lépések
 Ismerje meg az Intune-beli [eszközkezelés](device-management.md) további funkcióit.

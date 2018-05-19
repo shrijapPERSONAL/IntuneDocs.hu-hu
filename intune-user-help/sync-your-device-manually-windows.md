@@ -5,80 +5,88 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows-eszköz manuális szinkronizálása
 
-Előfordulhat, hogy egy alkalmazás telepítése a windowsos eszközre a várhatónál hosszabb időt vesz igénybe. Ilyen esetben megpróbálhatja manuálisan szinkronizálni a windowsos eszközt. A szinkronizálással esetleg gyorsítható a telepítés.
+Ha nem elég gyors az alkalmazástelepítés, kezdeményezzen manuális eszközszinkronizálást. A manuális szinkronizálással kényszerítheti az eszközt az Intune-hoz való csatlakozásra és a legújabb frissítések és kommunikáció letöltésére. Az eszközszinkronizálás után felgyorsulhat a telepítés.
 
-> [!Note]
-> Alacsonyabb sebességű hálózatokon, vagy ha egyszerre nagy számú eszközön végeznek letöltést, az alkalmazások telepítése hosszabb időt is igénybe vehet.
+Az Intune a Céges portál alkalmazásból és az eszköz Beállítások alkalmazásából támogatja a manuális szinkronizálást. 
 
-A Windows alábbi verzióit manuálisan is lehet szinkronizálni. Ha az eszközön a Windows más verziója fut, a manuális szinkronizálás sajnos nem elérhető.
+A Céges portál alkalmazás csak a Windows 10 alkotói frissítését (1703) vagy újabb verziót futtató eszközökön érhető el. 
+* [Szinkronizálás a Céges portál alkalmazásból](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Windows 10 asztali verzió szinkronizálása](#windows-10-desktop)
-* [Windows 10 mobil verzió szinkronizálása](#windows-10-mobile)
-* [Windows Phone 8.1 szinkronizálása](#windows-phone-81)
+Minden Windows-eszköz szinkronizálható az eszköz Beállítások alkalmazásából, beleértve a következőket:
 
-## <a name="windows-10-desktop"></a>Windows 10 asztali verzió
-A Windows 10 rendszernek egynél több verziója van, így a lépések két részre oszthatók. Annak megállapításához, hogy mely lépések szükségesek, tekintse meg a képernyőképeket, és kövesse azokat a lépéseket, amelyek a leginkább hasonlítanak az eszközön látható állapotra.
+* [Windows 10 asztali verzió](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. Kattintson a **Start** gombra, majd a **Beállítások** elemre.
+## <a name="sync-from-company-portal-app-for-windows"></a>Szinkronizálás a Windows Céges portál alkalmazásból
+Az alkotói frissítést (1703) vagy újabb verziót futtató Windows 10-es eszközök manuális szinkronizálásához kövesse az alábbi lépéseket.
 
-    ![A Start gomb](./media/win10pc-sync-1-start-button.png)
+1.  Nyissa meg az eszközén a Céges portál alkalmazást.
 
-2. A **Beállítások** lapon válassza **Fiókok** lehetőséget.
+2.  Válassza a **Beállítások** > **Szinkronizálás** lehetőséget.
 
-    ![A Fiókok lehetőség kiválasztása a Beállítások lapon](./media/win10pc-sync-2-settings-accounts.png)
+    ![Képernyőkép a Céges portál alkalmazásról, kiemelt Beállítások elemmel](./media/RS1_homePage_settings_04.png)  
+    
+    ![Képernyőkép a Céges portál beállítások lapjáról, kiemelt Szinkronizálás gombbal](./media/RS1_settingspage_sync05.png)    
 
-3. A következő két képernyő közül válassza ki azt, amelyen ugyanaz látszik, mint az eszközön. Hajtsa végre a kiválasztott képernyőhöz tartozó lépéseket.
+## <a name="sync-from-settings-app"></a>Szinkronizálás a Beállítások alkalmazásból 
+A Microsoft HoloLenses, Windows 10 asztali verziós, Windows 10 Mobile-os vagy Windows Phone 8.1-es eszközének a Beállítások alkalmazásból történő szinkronizálásához kövesse az alábbi lépéseket.
 
-    Ha a „Hozzáférés munkahelyi vagy iskolai rendszerhez” feliratú képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](#steps-to-follow-if-you-see-access-work-or-school) című részben leírt lépéseket.
+### <a name="windows-10-desktop"></a>Windows 10 asztali verzió
+1. Az eszközön válassza a **Start** > **Beállítások** lehetőséget.
 
-    ![Szinkronizálási teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Válassza a **Fiókok** elemet.
 
-    Ha a „Hozzáférés munkahelyi rendszerhez” feliratú képernyőt látja, hajtsa végre a [Teendők, ha ezt látja: Hozzáférés munkahelyi rendszerhez](#steps-to-follow-if-you-see-work-access) című részben leírt lépéseket.
+    ![A Fiókok lehetőség kiválasztása a Beállítások lapon](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. A Windows 10 több asztali verzióval is rendelkezik. Hasonlítsa össze a képernyőjét a lenti képernyőképekkel, így megtudhatja, melyik útmutatást kell követnie. 
+
+    * Ha a képernyőjén **Hozzáférés munkahelyi vagy iskolai rendszerhez** felirat látható, ugorjon a [Hozzáférés munkahelyi vagy iskolai rendszerhez](#access-work-or-school) szakaszhoz.
+
+    ![A Hozzáférés munkahelyi vagy iskolai rendszerhez lehetőség a beállítások alkalmazásban](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * Ha a képernyőn a **Munkahelyi hozzáférés** felirat jelenik meg, ugorjon a [Munkahelyi hozzáférés](#work-access) szakaszhoz.  
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Teendők, ha ezt látja: Hozzáférés munkahelyi vagy iskolai rendszerhez
+#### <a name="access-work-or-school-steps"></a>Hozzáférés munkahelyi vagy iskolai rendszerhez – lépések
 
-1. A **Fiókok** lapon válassza ki a **Munkahelyi vagy iskolai hozzáférés** elemet.
+1. Kattintson a **Hozzáférés munkahelyi vagy iskolai rendszerhez** elemre.
 
-    ![A Hozzáférés munkahelyi vagy iskolai rendszerhez elem kiválasztása](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Képernyőkép a Hozzáférés munkahelyi vagy iskolai rendszerhez lehetőségről](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. Válassza ki a munkahelyi vagy iskolai fiókját. Attól függően, hogy a cég informatikai támogatási szolgálata hogyan állította be a rendszert, két fiókot láthat, amelyek az alábbiakban látható példához hasonlóak. Az egyik fiók mellett egy aktatáska látható, a másik mellett a Microsoft emblémája.
-
-   - Ha az aktatáskás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
-   - Ha csak a Microsoft emblémás fiókot látja, válassza ki azt, és keresse az alatta lévő **Információ** gombot.
+2. Válassza ki azt a fiókot, amely mellett egy aktatáska ikon látható. Ha nem lát ilyen fiókot, előfordulhat, hogy a cége másképp konfigurálta a beállításokat. Ebben az esetben kattintson arra a fiókra, amely mellett egy Microsoft-embléma látható.
 
      ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-info-button.png)
 
-3. Kattintson az **Információ** gombra. Az alábbi példához hasonlóan megnyílik egy párbeszédpanel.
+3. Kattintson az **Információ** lehetőségre. 
 
-    ![Válassza ki az aktatáska vagy a Microsoft emblémája melletti fiókot](./media/win10pc-rs1-sync-button.png)
+4. Kattintson a **Szinkronizálás** elemre. 
 
-4. Kattintson a **Szinkronizálás** gombra. Az eszköz Intune-nal való szinkronizálása megtörténik.
+#### <a name="work-access-steps"></a>Munkahelyi hozzáférés – lépések
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>Teendők, ha ezt látja: Munkahelyi hozzáférés
-
-1. A **Fiókok** lapon válassza a **Munkahelyi hozzáférés** elemet.
+1.  Kattintson a **Munkahelyi hozzáférés** elemre.
 
     ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10pc-sync-3-work-access.png)
 
@@ -86,35 +94,38 @@ A Windows 10 rendszernek egynél több verziója van, így a lépések két rés
 
     ![A cég nevének kiválasztása az eszközfelügyelethez](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Kattintson a **Szinkronizálás** gombra.
+3. Kattintson a **Szinkronizálás** elemre. A gomb a szinkronizálás végéig le van tiltva.
 
-    ![Kattintás a Szinkronizálás gombra](./media/win10pc-sync-5-tap-sync.png)
+    ![Kattintás a Szinkronizálás gombra](./media/win10pc-sync-5-tap-sync.png)  
 
-   A gomb a szinkronizálás befejezéséig szürke marad.
 
 ### <a name="windows-10-mobile"></a>Windows 10 mobil verzió
-Windows 10 Mobile rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
 
-   1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** menüpontra.
+   1. Az eszközön lépjen a **Minden alkalmazás** > **Beállítások** > **Fiókok** menüpontra.
 
        ![Fiókok kiválasztása a Beállítások képernyőn](./media/win10m-sync-1-settings-accounts.png)
 
-   2. Válassza a **Munkahelyi hozzáférés** elemet.
+   2. Válassza a **Munkahelyi hozzáférés** lehetőséget.
 
        ![Munkahelyi hozzáférés kiválasztása a fiók típusaként](./media/win10m-sync-2-work-access.png)
 
-   3. A **Regisztrálás eszközfelügyeletre** részen válassza ki a cég nevét.
+   3. A **Regisztrálás eszközfelügyeletre** területen válassza ki a cég nevét.
 
        ![A cég nevének kiválasztása az eszközfelügyelethez](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. Kattintson a **Szinkronizálás** ikonra.
+   4. Kattintson a **Szinkronizálás** ikonra. A gomb a szinkronizálás végéig le van tiltva.
 
-       ![Kattintás a Szinkronizálás ikonra](./media/win10m-sync-4-tap-sync.png)
+       ![Kattintás a Szinkronizálás ikonra](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+Ezek az utasítások a Windows 10 évforduló frissítés (más néven RS1-et) futtató HoloLens-eszközökre vonatkoznak. 
+1.  Nyissa meg a Beállítások alkalmazást az eszközön.  
 
-       A képernyő tetején megjelenik a „Fiók szinkronizálása” üzenet. Amíg az eszköz szinkronizálása be nem fejeződik, a **Szinkronizálás** gomb inaktív marad.
+2.  Kattintson a **Fiókok** > **Munkahelyi hozzáférés** elemre.  
+    ![Képernyőkép a HoloLens beállítások alkalmazásáról, kiemelt Fiókok hivatkozással](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
-Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalmazástelepítés felgyorsítása érdekében:
+3.  Válassza ki a csatlakoztatott fiókot, majd válassza a **Szinkronizálás** lehetőséget. ![Képernyőkép a HoloLens beállítások alkalmazásáról, kiemelt szinkronizálás gombbal](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. Lépjen a **Minden alkalmazás** > **Beállítások** > **Munkahely** menüpontra.
 
@@ -127,7 +138,5 @@ Windows Phone 8.1 rendszerű eszköz manuális szinkronizálása a lassú alkalm
 3. Kattintson a **Szinkronizálás** ikonra.
 
     ![Kattintás a Szinkronizálás ikonra](./media/wp81-3-sync-tap-sync-button.png)
-
-   A képernyő tetején a „Fiók szinkronizálása” üzenet lesz látható egészen addig, amíg az eszköz szinkronizálása be nem fejeződik.
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).

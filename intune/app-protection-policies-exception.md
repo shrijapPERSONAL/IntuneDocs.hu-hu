@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Kivételek létrehozása az Intune Mobilalkalmazás-kezelés (MAM) adatátviteli szabályzataihoz
 
@@ -30,9 +30,7 @@ A rendszergazdák kivételeket hozhatnak létre az Intune Mobilalkalmazás-kezel
 >[!WARNING] 
 > Az adatátviteli szabályzat kivételeinek módosítása az Ön felelőssége. A szabályzathoz való hozzáadással engedélyezi, hogy a nem felügyelt alkalmazások (azaz az Intune által nem kezelt alkalmazások) hozzáférjenek a felügyelt alkalmazások által védett adatokhoz. A védett adatokhoz való hozzáférés azonban biztonsági kockázatokkal járhat. Ezért csak olyan alkalmazások esetén hozzon létre adatátviteli kivételeket, amelyeket megbízhatónak tekint a cég, de amelyek nem támogatják az Intune alkalmazásvédelmi szabályzatokat (más néven APP-t). Emellett csakis olyan alkalmazásokhoz ajánlott kivételeket megadni, amelyek nem jelentenek adatszivárgási kockázatot.
 
-Ez a funkció akkor érvényes, ha olyan Intune alkalmazásvédelmi szabályzatot hoz létre, amelynél az adatátvitel a **Csak felügyelt alkalmazások** lehetőséggel van beállítva. Ha az adatátviteli szabályzat **Csak felügyelt alkalmazások** beállítással lett létrehozva, akkor a kivételektől eltekintve az adatátvitel továbbra is az Intune által kezelt alkalmazásokra korlátozódik. Korlátozásokat protokollokkal (iOS) vagy csomagokkal hozhat létre (Android).
-
-Ezt a funkciót úgy is konfigurálhatja, hogy engedélyezve legyenek a kivételek az Intune MAM alkalmazásvédelmi szabályzatának **adatátvételi korlátozásai** alól. Ez a szabályzat csak akkor szükséges, ha engedélyezni szeretné, hogy az Intune APP-t nem támogató alkalmazásokba is végezhető legyen adatátvitel. Ez a szabályzat lehetővé teszi az Intune által kezelt alkalmazások számára, hogy a **Csak felügyelt alkalmazások** beállítás mellett is meg tudjanak hívni nem felügyelt alkalmazásokat URL-protokoll (iOS) vagy csomagnév (Android) alapján. A fontos natív alkalmazásokat az Intune hozzáadja a kivételek alapértelmezett listájához. 
+Ha az Intune alkalmazásvédelmi szabályzataiban a **Más alkalmazásokból való adatátvitel engedélyezése az alkalmazásnak** beállítást a **Szabályzat által felügyelt alkalmazások** beállításra állítja, az alkalmazás csak olyan alkalmazásokba vihet át adatokat, amelyeket az Intune kezel. Ha olyan alkalmazások számára szeretné engedélyezni az adatátvitelt, amelyek nem támogatják az Intune APP-t, a **Kivételt képező alkalmazások** lehetőség használatával kivételeket hozhat létre. A kivételekkel az Intune által kezelt alkalmazások URL-protokoll (iOS) vagy csomagnév (Android) alapján hívhatnak meg nem kezelt alkalmazásokat. Alapértelmezés szerint az Intune hozzáadja a fontos natív alkalmazásokat a kivételek alapértelmezett listájához. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Az iOS-es adatátviteli szabályzat kivételei
 Az iOS-es szabályzatok esetén URL-protokoll alapján konfigurálhatók az adatátviteli kivételek. Ha kivételt szeretne hozzáadni, olvassa el az alkalmazás fejlesztője által készített dokumentációt, és ellenőrizze, milyen URL-protokollok vannak támogatva. Az iOS-es adatátviteli kivételekről az [iOS-es alkalmazásvédelmi szabályzat beállításai – Adatátviteli kivételek](app-protection-policy-settings-ios.md#data-transfer-exemptions) című témakörben talál további információt.

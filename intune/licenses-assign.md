@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune-licencek hozzárendelése a felhasználókhoz, hogy regisztrálhassák az eszközöket
 
@@ -42,6 +42,10 @@ Az [Office 365 portál](http://go.microsoft.com/fwlink/p/?LinkId=698854) haszná
 
 > [!NOTE]
 > Miután regisztrálnak egy eszközt, a felhasználók már megjelennek a felügyeleti konzolon. Emellett kiválaszthat egy felhasználói csoportot az egyszerre való szerkesztéshez, vagy hozzáadva, vagy lecserélve az összes kijelölt felhasználó licencét.
+
+## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Intune-licent hozzárendelése az Azure Active Directoryval
+
+Az Azure Active Directory segítségével is hozzárendelhet Intune-licenceket a felhasználókhoz. További információ: [Felhasználók licencelése az Azure Active Directoryban](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>A School Data Sync használata licencek kiosztására a felhasználók számára az Intune for Educationben
 Az oktatási szervezetek a School Data Sync (SDS) segítségével Intune for Education-licenceket oszthatnak ki a szinkronizált felhasználóknak. Az SDS-profil beállítása esetén jelölje be az Intune for Education jelölőnégyzetet.  
