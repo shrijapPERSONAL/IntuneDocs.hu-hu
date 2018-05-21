@@ -93,7 +93,7 @@
           href: planning-guide-onboarding.md
         - name: Tesztelés és ellenőrzés
           href: planning-guide-test-validation.md
-        - name: További források
+        - name: További háttéranyagok
           href: planning-guide-resources.md
     - name: Migrálási útmutató
       href: migration-guide.md
@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Csoportos regisztráció
               href: windows-bulk-enroll.md
+            - name: Beléptetés állapota oldal
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot üzembe helyezési program
               href: enrollment-autopilot.md
         - name: Az androidos eszközök regisztrálásának beállítása
