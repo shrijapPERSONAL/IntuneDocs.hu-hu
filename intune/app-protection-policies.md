@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Alkalmazásvédelmi szabályzatok létrehozása és hozzárendelése
 
@@ -127,7 +127,7 @@ Mivel az Intune alkalmazásvédelmi szabályzatok a felhasználói identitáshoz
 Ezeknek a szabályzatoknak a létrehozásához lépjen a **Mobilalkalmazások** > **Alkalmazásvédelmi szabályzatok** területre az Intune-konzolon, és válassza a **Szabályzat hozzáadása** lehetőséget. Másik lehetőségként egy meglévő alkalmazásvédelmi szabályzatot is szerkeszthet. Ha az alkalmazásvédelmi szabályzatot a felügyelt és a felügyeletlen eszközökre egyaránt alkalmazni szeretné, akkor győződjön meg róla, hogy a **Target to all app types** (Alkalmazás minden alkalmazástípusra) beállításnál az **Igen** lehetőség van kiválasztva (mely az alapértelmezett érték). Ha a szabályzatot az eszközkezelési állapottól függően szeretné alkalmazni, állítsa a **Target to all app types** beállítást a **Nem** értékre. 
 
 > [!NOTE]
-> Ha kifejezetten iOS-eszközökre vonatkozó támogatási információkat keres az alkalmazásvédelmi szabályzatok eszközkezelési állapottól függő alkalmazásáról, lásd: [MAM-alapú védelmi szabályzatok alkalmazása eszközkezelési állapot alapján](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+> Ha kifejezetten iOS-eszközökre vonatkozó támogatási információkat keres az alkalmazásvédelmi szabályzatok eszközkezelési állapottól függő alkalmazásáról, lásd: [MAM-alapú védelmi szabályzatok alkalmazása eszközkezelési állapot alapján](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Szabályzatbeállítások
 Az iOS és az Android szabályzatbeállításait tartalmazó lista megtekintéséhez válasszon a következő hivatkozások közül:

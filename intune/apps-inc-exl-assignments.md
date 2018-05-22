@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/20/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa0b7396c22bd8bc832a6d845d4f40603013608a
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban
 
@@ -46,7 +46,7 @@ Ha csoportokhoz szeretne alkalmazást hozzárendelni a belefoglalás és kizár�
 3. Az **Intune** menüben válassza a **Mobilalkalmazások** lehetőséget.
 4. A **Mobilalkalmazások** panelen válassza az **Alkalmazások** lehetőséget. Megjelenik a hozzáadott alkalmazások listája.
 5. Válassza ki a hozzárendelni kívánt alkalmazást. Megjelennek az alkalmazás adatai egy irányítópulton. 
-6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések**. elemet. 
+6. A menü **Kezelés** szakaszában válassza a **Hozzárendelések** elemet. 
 
     ![Alkalmazás-hozzárendelések az Intune-ban](./media/apps-inc-exl-01.png)
 7. Az alkalmazáshoz hozzárendelt felhasználói csoportok hozzáadásához válassza a **Csoport hozzáadása** lehetőséget. 
