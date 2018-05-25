@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>A Microsoft Intune App SDK iOS rendszeren – fejlesztői útmutató
 
 > [!NOTE]
-> Célszerű először elolvasnia az [Intune App SDK bevezető dokumentumát](app-sdk-get-started.md), amely ismerteti az integráció előkészítését a támogatott platformokon.
+> Javasoljuk, hogy olvassa el az [Intune App SDK használatának első lépései](app-sdk-get-started.md) című cikket, mely útmutatást nyújt az integráció előkészítéséhez a támogatott platformokon.
 
 Az iOS-hez készült Microsoft Intune App SDK lehetővé teszi, hogy Intune alkalmazásvédelmi szabályzatokat (vagy más néven **alkalmazás-** vagy **MAM-szabályzatokat**) építsen be natív iOS-alkalmazásába. MAM-kompatibilisnek az Intune App SDK-val integrált alkalmazásokat nevezzük. Mindez lehetővé teszi a rendszergazdáknak, hogy alkalmazásvédelmi szabályzatokat telepítsenek a mobilalkalmazásra vonatkozóan, ha az Intune aktívan felügyeli az alkalmazást.
 
@@ -81,8 +81,8 @@ Az Intune App SDK az alábbi lépésekkel engedélyezhető:
 
 1. **1. lehetőség (ajánlott)**: Az `IntuneMAM.framework` csatolása a projekthez. Húzza az `IntuneMAM.framework` keretrendszert a projekthez használni kívánt elemek **Embedded Binaries** (Beágyazott bináris fájlok) listájába.
 
-    > [!NOTE]
-    > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. További információért lásd [Az alkalmazás beküldése az App Store-ba](#Submit-your-app-to-the-App-Store) című témakört.
+   > [!NOTE]
+   > Ha a keretrendszert használja, manuálisan kell eltávolítania a szimulátorarchitektúrákat az univerzális keretrendszerből, mielőtt beküldi az alkalmazást az App Store-ba. További információért lásd [Az alkalmazás beküldése az App Store-ba](#Submit-your-app-to-the-App-Store) című témakört.
 
 2. **2. lehetőség**: Csatolás a `libIntuneMAM.a` erőforrástárhoz. Húzza a `libIntuneMAM.a` könyvtárat a projekthez használni kívánt elemek **Linked Frameworks and Libraries** (Csatolt keretrendszerek és könyvtárak) listájába.
 
@@ -179,7 +179,7 @@ Az ADAL bináris fájljaira való hivatkozáshoz kövesse az alábbi lépéseket
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>ADAL-jogkivonatok gyorsítótárának megosztása más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal.**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>ADAL-jogkivonatok gyorsítótárának megosztása más, ugyanazzal a kiépítési profillal aláírt alkalmazásokkal.
 
 Ha ADAL-jogkivonatokat szeretne megosztani ugyanazzal a kiépítési profillal aláírt alkalmazások között, kövesse az alábbi utasításokat:
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] Az Intune-típusok a IntuneMAMConfigurator-eszköz használatával adhatók az aktiválási szabályhoz. Ha a meglévő aktiválási szabály előre definiált sztringkonstansokat használ (például NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText stb.), akkor a predikátumok szintaxisa nagyon bonyolulttá válhat. Az IntuneMAMConfigurator-eszköz arra is felhasználható, hogy az aktiválási szabályt sztringkonstansokból predikátumsztringgé alakítsa az Intune-típusok hozzáadása során. Az IntuneMAMConfigurator a GitHub adattárában található meg. 
+> [!NOTE]
+> Az Intune-típusok a IntuneMAMConfigurator-eszköz használatával adhatók az aktiválási szabályhoz. Ha a meglévő aktiválási szabály előre definiált sztringkonstansokat használ (például NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText stb.), akkor a predikátumok szintaxisa nagyon bonyolulttá válhat. Az IntuneMAMConfigurator-eszköz arra is felhasználható, hogy az aktiválási szabályt sztringkonstansokból predikátumsztringgé alakítsa az Intune-típusok hozzáadása során. Az IntuneMAMConfigurator a GitHub adattárában található meg. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Célzott MAM-konfiguráció engedélyezése iOS-alkalmazásokhoz

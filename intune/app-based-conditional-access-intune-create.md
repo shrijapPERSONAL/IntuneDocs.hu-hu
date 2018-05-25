@@ -5,7 +5,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da6f351f4ce5cf6b0aeae977ffbef56dab5bd2df
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c505e881fe06d6f4da217533d0507731ac22a29f
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok beállítása az Intune-ban
 
@@ -27,39 +27,11 @@ ms.lasthandoff: 04/26/2018
 A cikk azt írja le, hogyan állíthatók be alkalmazásalapú feltételes hozzáférési szabályzatok a jóváhagyott alkalmazások listáján szereplő alkalmazásokhoz. A jóváhagyott alkalmazások listája a Microsoft által tesztelt alkalmazásokból áll.
 
 > [!IMPORTANT]
-> A cikk az alkalmazásalapú feltételes hozzáférési szabályzat Exchange Online-nal való felvételének lépésein vezeti végig, de ugyanezekkel a lépésekkel vehet fel olyan más alkalmazásokat is a jóváhagyott alkalmazások listájáról, mint például a SharePoint Online, a Microsoft Teams, stb.
-
-## <a name="to-create-an-app-based-conditional-access-policy"></a>Alkalmazásalapú feltételes hozzáférési szabályzat létrehozása
-1.  Nyissa meg az [Azure Portal](https://portal.azure.com) webhelyet, és jelentkezzen be a hitelesítő adataival.
-
-2.  Válassza a **Minden szolgáltatás** lehetőséget, majd írja be az Intune kifejezést.
-
-3.  Válassza az **Intune alkalmazásvédelem** lehetőséget.
-
-4.  Az **Intune App Protection** panel **Feltételes hozzáférés** szakaszában válassza az **Exchange Online** lehetőséget.
-
-    ![Képernyőkép a beállítások panel feltételes hozzáférés területéről, amelyen kiemelve látható az Exchange Online lehetőség](./media/MAM-conditional-access-1.png)
-
-6. Az **Engedélyezett alkalmazások** panelen válassza **Az Intune alkalmazásszabályzatait támogató alkalmazások engedélyezése** lehetőséget, hogy csak az Intune alkalmazásvédelmi szabályzatai által támogatott alkalmazások férhessenek hozzá az Exchange Online-hoz. Amikor kiválasztja ezt a beállítást, megjelenik a támogatott alkalmazások listája.
-
-    > [!NOTE]
-    > Ebben az esetben egyik Exchange ActiveSync-levelezőprogram sem, így az iOS és az Android Exchange Online-hoz csatlakozó beépített levelezőprogramjai sem küldhetnek vagy fogadhatnak leveleket. A felhasználók ehelyett egyetlen e-mail üzenetet kapnak, amely tájékoztatja őket, hogy az Outlook e-mail alkalmazást kell használniuk.
-
-7. A szabályzatnak a felhasználókra való alkalmazásához nyissa meg a **Korlátozott felhasználói csoportok** panelt, és válassza a **Felhasználói csoport hozzáadása** lehetőséget. Válasszon ki egy vagy több felhasználói csoportot, amelyre alkalmazni kívánja ezt a szabályzatot.
-
-    ![Képernyőkép a Korlátozott felhasználói csoportok panelről, a Felhasználói csoport hozzáadása lehetőség kiemelésével](./media/mam-ca-add-user-group.png)
-
-8. Előfordulhat, hogy az előző lépésben kiválasztott felhasználói csoportnak vannak olyan tagjai, akikre nem kívánja alkalmazni ezt a szabályzatot. Ilyen esetben e felhasználók csoportját adja hozzá a kivétel alá eső felhasználók listájához. Az **Exchange Online** panelen válassza a **Kivétel alá eső felhasználói csoportok** lehetőséget. A felhasználói csoportok listájának megnyitásához válassza a **Felhasználói csoport hozzáadása** lehetőséget. Válassza ki azokat a csoportokat, amelyeket szeretné kivonni a szabályzat hatálya alól.
-
-## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>Felhasználói csoportok módosítása meglévő alkalmazásalapú feltételes hozzáférési szabályzatban vagy törlése abból
-
-1. Nyissa meg a **Korlátozott felhasználói csoportok** panelt, majd jelölje ki a törölni kívánt felhasználói csoportot.
-2. A három pontra kattintva megjelennek a törlési lehetőségek.
-3. A felhasználói csoportnak a listáról való eltávolításához válassza a **Törlés** opciót.
+> Ez a cikk végigvezeti az alkalmazásalapú feltételes hozzáférési szabályzatok hozzáadásának lépésein. Ne feledje, hogy ugyanezeket a lépéseket használhatja, ha alkalmazásokat ad hozzá, például SharePoint Online, Microsoft Teams és Microsoft Exchange Online, a jóváhagyott alkalmazások listájából.
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Alkalmazásalapú feltételes hozzáférési szabályzatok Azure AD-munkafolyamatban való létrehozása
 
-Az Intune 1708-as kiadásától kezdve a rendszergazdák alkalmazásalapú feltételes hozzáférési szabályzatokat hozhatnak létre az Azure AD-munkafolyamatból. E kényelmes megoldásnak köszönhetően nem kell váltania az Azure- és az Intune-munkafolyamatok között.
+A rendszergazdák alkalmazásalapú feltételes hozzáférési szabályzatokat hozhatnak létre az Azure AD-munkafolyamatból. E kényelmes megoldásnak köszönhetően nem kell váltania az Azure- és az Intune-munkafolyamatok között.
 
 > [!IMPORTANT]
 > Ahhoz, hogy Azure AD feltételes hozzáférési szabályzatokat hozhasson létre az Intune Azure Portal webhelyen, Azure AD Premium szintű előfizetésre van szükség.

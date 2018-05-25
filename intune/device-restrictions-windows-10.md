@@ -167,12 +167,12 @@ Az egyes alkalmazásokhoz beállíthat az alapértelmezett adatvédelmi beállí
 -   **InPrivate-böngészés** – Megakadályozza, hogy a végfelhasználók InPrivate-böngészési munkamenetet nyissanak meg.
 -   **Első futtatáskori oldal megjelenítése** – Megakadályozza a bemutató lap megjelenítését a Microsoft Edge első futtatásakor.
     -   **Első futtatás URL-címe** – Megadhatja annak a lapnak az URL-címét, amely akkor jelenik meg, amikor a felhasználó első alkalommal futtatja a Microsoft Edge böngészőt (csak Windows 10 mobil verziónál).
--   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni az Edge böngészőben (csak asztali verzióban).
+-   **Kezdőlapok** – Azoknak a webhelyeknek a listája, amelyek kezdőlapokként szeretne megjeleníteni a Microsoft Edge böngészőben (csak asztali verzióban).
 -   **Kezdőlap módosítása** – Engedélyezheti a felhasználóknak, hogy megváltoztassák a Microsoft Edge megnyitásakor megjelenő kezdőlapokat. A Kezdőlapok beállítással hozhatja létre a Microsoft Edge indításakor megjelenő lapot vagy lapok listáját.
 -   **Az about:flags laphoz való hozzáférés letiltása** – Megakadályozza, hogy a végfelhasználó hozzáférhessen a Microsoft Edge about:flags lapjához, amely a fejlesztői és kísérleti beállításokat tartalmazza.
 -   **WebRTC LocalHost IP-címe** – Letiltja a felhasználó localhost IP-címének megjelenítését a WebRTC protokollal történő telefonhívások esetén.
 -   **Alapértelmezett keresőmotor** – Meghatározza az alapértelmezetten használandó keresőmotort. A végfelhasználók ezt az értéket bármikor módosíthatják.
--   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja az Edge böngészőt.
+-   **Böngészési adatok törlése kilépéskor** – Előzmények és böngészési adatok törlése, amikor a felhasználó bezárja a Microsoft Edge böngészőt.
 -   **Adatgyűjtés élő csempéhez** – Leállítja a Windows élő csempéből történő adatgyűjtését, amikor a felhasználók kitűznek az Microsoft Edge böngészőből egy webhelyet a Start menübe.
 -  **Kedvencek lista** – A kedvencek fájl elérési útját adja meg. Például: http://contoso.com/favorites.html.
 -  **A kedvencek módosításának korlátozása** – Ha ezt **Letiltva** értékre állítja, a felhasználók nem használhatják a Kedvencek listában a hozzáadás, importálás, rendezés és szerkesztés funkciókat. 

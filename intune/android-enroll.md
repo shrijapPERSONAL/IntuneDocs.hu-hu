@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>Androidos eszközök regisztrálása
 
@@ -58,7 +58,8 @@ További információ: [Az Intune által a Google-nek küldött adatok](data-int
 Ha még nem tette meg, készítse elő a mobileszköz-kezelést úgy, hogy a **Microsoft Intune-t** állítja be [mobileszköz-kezelői szolgáltatóként](mdm-authority-set.md).
 2. **Android for Work-kötés konfigurálása**<br>
     
-   a. Jelentkezzen be az [Azure Portalbeli Intune-ba](https://aka.ms/intuneportal), és válassza az **Eszközregisztráció** > **Android-regisztráció** > **Felügyelt Google Play** lehetőséget.
+   a. Jelentkezzen be az [Azure Portalbeli Intune-ba](https://aka.ms/intuneportal), és válassza az **Eszközregisztráció** > **Android-regisztráció** > **Felügyelt Google Play** lehetőséget.  Ha egyéni Intune-rendszergazdai szerepkört használ, akkor ennek eléréséhez szervezeti olvasási és frissítési engedély szükséges.
+   
    ![Az Android for Work-eszközök regisztrálási képernyője](./media/android-work-bind.png)
 
    b. Engedélyezze a Microsoftnak az **Elfogadom** lehetőség választásával a [felhasználó- és eszközadatok Google-nak való elküldését](data-intune-sends-to-google.md). 

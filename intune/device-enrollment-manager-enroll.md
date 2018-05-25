@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 
@@ -73,9 +73,9 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
 
 ## <a name="permissions-for-dem"></a>DEM-engedélyek
 
-A DEM-regisztrációs feladatok végrehajtásához globális vagy Intune-szolgáltatásrendszergazdai Azure AD-szerepkörök szükségesek. Ezek a szerepkörök az összes DEM-felhasználó megtekintéséhez is szükségesek, annak ellenére, hogy az RBAC-jogosultságok fel vannak sorolva és elérhetők az egyéni felhasználói szerepkör alatt. Azok a hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel nem rendelkező felhasználók, akiknek van olvasási jogosultságuk a készülékregisztráció-kezelői szerepkörhöz, csak az általuk létrehozott DEM-felhasználókat láthatják. Az RBAC-szerepkörök támogatása ezekhez a funkciókhoz később lesz bejelentve.
+A DEM-regisztrációs feladatok felügyeleti portálon való végrehajtásához globális vagy Intune-szolgáltatásrendszergazdai Azure AD-szerepkörök szükségesek. Ezek a szerepkörök az összes DEM-felhasználó megtekintéséhez is szükségesek, annak ellenére, hogy az RBAC-jogosultságok fel vannak sorolva és elérhetők az egyéni felhasználói szerepkör alatt. Azok a hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel nem rendelkező felhasználók, akiknek van olvasási jogosultságuk a készülékregisztráció-kezelői szerepkörhöz, csak az általuk létrehozott DEM-felhasználókat láthatják. Az RBAC-szerepkörök támogatása ezekhez a funkciókhoz később lesz bejelentve.
 
-Ha egy felhasználó nem rendelkezik hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel, de van olvasási jogosultsága a hozzá rendelt készülékregisztráció-kezelői szerepkörhöz, akkor csak az általa létrehozott DEM-felhasználót láthatja.
+Ha egy felhasználó nem rendelkezik hozzárendelt globális rendszergazdai vagy Intune-szolgáltatásrendszergazdai szerepkörrel, de van olvasási jogosultsága a hozzá rendelt készülékregisztráció-kezelői szerepkörhöz, akkor csak az általa létrehozott DEM-felhasználókat láthatja.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Készülékregisztráció-kezelő eltávolítása
 

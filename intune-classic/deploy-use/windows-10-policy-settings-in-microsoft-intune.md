@@ -116,16 +116,16 @@ A Microsoft Intune Windows 10-es eszközökhöz készült **általános konfigur
 
 |Beállítás neve|További információ (ha szükséges)|
 |----------------|----------------------|
-|**Webböngésző engedélyezése**|Engedélyezi az Edge webböngésző használatát az eszközön<br>(csak a Windows 10 Mobile)|
+|**Webböngésző engedélyezése**|Engedélyezi a Microsoft Edge webböngésző használatát az eszközön<br>(csak a Windows 10 Mobile)|
 |**Keresési javaslatok engedélyezése a címsorban**|Lehetővé teszi, hogy a keresőmotor webhelyeket javasoljon a keresőkifejezések beírása közben|
 |**Intranetes adatforgalom küldésének engedélyezése az Internet Explorerbe**|Engedélyezi a felhasználók számára az intranetes webhelyek megnyitását az Internet Explorerben<br>(csak a Windows 10 asztali verzió)|
-|**Követés letiltásának engedélyezése**|Lehetővé teszi az Edge böngésző számára a Do Not Track (Követés letiltása) fejlécek küldését a felhasználók által meglátogatott webhelyeknek|
+|**Követés letiltásának engedélyezése**|Lehetővé teszi a Microsoft Edge böngésző számára a Do Not Track (Követés letiltása) fejlécek küldését a felhasználók által meglátogatott webhelyeknek|
 |**SmartScreen engedélyezése**||
-|**Active Scripting engedélyezése**|A parancsprogramok, például a JavaScriptek futtatásának engedélyezés az Edge böngészőben|
+|**Active Scripting engedélyezése**|A parancsprogramok, például a JavaScriptek futtatásának engedélyezés a Microsoft Edge böngészőben|
 |**Előugró ablakok engedélyezése**|Csak a Windows 10 asztali verzióra vonatkozik|
 |**Cookie-k engedélyezése**||
 |**Automatikus kitöltés engedélyezése**|Engedélyezi a felhasználók számára a böngésző automatikus kiegészítési funkciója beállításainak módosítását<br>(csak a Windows 10 asztali verzió)|
-|**Jelszókezelő engedélyezése**|Engedélyezi vagy letiltja az Edge böngésző Jelszókezelő szolgáltatását|
+|**Jelszókezelő engedélyezése**|Engedélyezi vagy letiltja a Microsoft Edge böngésző Jelszókezelő szolgáltatását|
 |**Vállalati üzemmód webhelylistájának helye**|Megadja, hogy hol található a Vállalati üzemmódban megnyíló webhelyek listája. Ezt a listát a felhasználók nem szerkeszthetik.<br>(csak a Windows 10 asztali verzió)|
 
 ### <a name="apps"></a>Alkalmazások

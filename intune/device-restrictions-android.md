@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Android- és Samsung Knox Standard-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban 
 
@@ -47,6 +47,10 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 ## <a name="password"></a>Jelszó
 
 - **Jelszó** – Megköveteli a végfelhasználótól, hogy jelszót adjon meg az eszköz eléréséhez.|Yes|Yes|
+
+    > [!NOTE]
+    > A Samsung Knox-eszközök automatikusan megkövetelnek egy 4 számjegyű PIN-kódot az MDM-regisztráció során. A natív Androidos eszközök automatikusan megkövetelhetnek egy PIN-kódot a feltételes hozzáférésnek való megfeleléshez.
+
 - **Jelszó minimális hossza** – Megadja a felhasználó által beállítandó jelszó minimális hosszát (4 és 16 karakter között).
 - **Képernyőzárolás legfeljebb ennyi perc inaktivitás után** – Az eszköz az itt megadott számú perc elteltével automatikusan zárolja magát.
 - **Sikertelen bejelentkezések száma, mielőtt törlődne az eszközön lévő összes adat** – Megadja, hogy hány sikertelen bejelentkezés legyen megengedett, mielőtt az eszközön tárolt adatok törölődnének.
@@ -55,7 +59,7 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
     - **Eszköz alapértelmezése**
     - **Alacsony biztonságú biometrikus**
     - **Legalább számok**
-    - **Komplex numerikus** – Ismétlődő vagy egymást követő számokat, mint például az ’1111’ vagy az ’1234’ nem szabad megadni<sup>1</sup>
+    - **Komplex numerikus** – Nem lehet ismétlődő vagy egymást követő számokat megadni (például „1111” vagy „1234”).<sup>1</sup>
     - **Legalább betűk**
     - **Legalább alfanumerikus karakterek**
     - **Legalább alfanumerikus karakterek és szimbólumok**
@@ -63,6 +67,9 @@ A cikk bemutatja a Microsoft Intune összes olyan eszközkorlátozásokra vonatk
 - **Ujjlenyomattal történő zárolásfeloldás (csak Samsung Knox esetén)** – Engedélyezi a támogatott eszközök ujjlenyomattal történő zárolásfeloldását.
 - **Smart Lock és egyéb megbízhatósági ügynökök** – A kompatibilis Android-eszközökön vezérelheti vele az intelligens zárolás funkciót (Samsung Knox Standard 5.0 és újabb verziók). Ez a „bizalmi ügynök” néven is ismert telefonos funkció lehetővé teszi az eszköz zárolási képernyője jelszavának letiltását vagy megkerülését, ha az eszköz megbízható helyen van. Így például abban az esetben, ha egy adott Bluetooth-eszközhöz van csatlakoztatva, vagy egy bizonyos NFC-címke közelében van. Ezzel a beállítással letilthatja, hogy a felhasználók konfigurálják az intelligens zárolást.
 - **Titkosítás** – Megköveteli, hogy az eszközön minden fájl titkosítva legyen.
+
+    > [!NOTE]
+    > Ha kényszerítve van egy titkosítási szabályzat, a Samsung Knox-eszközökön a felhasználónak be kell állítania egy 6 karakterből álló összetett jelszót eszközjelszóként.
 
 <sup>1</sup> Mielőtt ezt e beállítást eszközökhöz rendeli, győződjön meg arról, hogy a Céges portál alkalmazás a legújabb verzióra van frissítve az érintett eszközökön.
 

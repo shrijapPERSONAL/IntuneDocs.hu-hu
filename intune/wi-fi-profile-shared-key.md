@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Előmegosztott kulccsal ellátott WiFi-profil létrehozása egyéni eszközprofil segítségével – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Az előmegosztott kulcsok (PSK-k) segítségével hitelesítheti a felhasználó
 - Android-eszközökhöz használhatja az [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) programot is.
 - További OMA-URI-beállítások megadásával több hálózatot és kulcsot is hozzáadhat.
 - iOS-rendszereken a profil létrehozásához használja az Apple Configurator programot egy Mac munkaállomáson. Másik lehetőségként használhatja az [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) programot.
+- Az előmegosztott kulcsokhoz egy 64 hexadecimális számból álló karakterláncot vagy egy 8–63 nyomtatható ASCII-karakterből álló jelszót kell megadnia. Bizonyos karakterek, például a csillag ( * ), nem támogatottak.
 
 ## <a name="create-a-custom-profile"></a>Egyéni profil létrehozása
 Hozhat létre előmegosztott kulcsot tartalmazó egyéni profilt Androidhoz vagy Windowshoz, illetve EAP-alapú Wi-Fi-profilt. A profil Azure Portallal való létrehozásáról az [Egyéni eszközbeállítások létrehozása](custom-settings-configure.md) című témakörben tájékozódhat. Az eszközprofil létrehozásakor válassza az eszköz platformjához tartozó **Egyéni** lehetőséget. Ne válassza a Wi-Fi-profil lehetőséget. Az Egyéni lehetőség választása után: 
@@ -42,16 +43,16 @@ Hozhat létre előmegosztott kulcsot tartalmazó egyéni profilt Androidhoz vagy
 1. Adja meg a profil nevét és leírását.
 2. Adjon hozzá egy új OMA-URI-beállítást az alábbi tulajdonságokkal: 
 
-   a. Adjon nevet a Wi-Fi-hálózat ezen beállításának
+   a. Adjon nevet a Wi-Fi-hálózat ezen beállításának.
 
-   b. (Nem kötelező) Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt
+   b. (Nem kötelező) Írja be az OMA-URI-beállítás leírását, vagy hagyja üresen a mezőt.
 
    c. Állítsa az **Adattípus** beállítást a **Karakterlánc** értékre.
 
    d. **OMA-URI**:
 
-   - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android rendszerhez**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Windows rendszerhez**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Ne hagyja ki a karaktersor elején található pontot.

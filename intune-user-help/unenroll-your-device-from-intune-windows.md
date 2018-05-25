@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Windows-eszköz eltávolítása az Intune-ból
 
@@ -72,13 +72,13 @@ Az alábbi lépésekkel eltávolíthat egy Windows 8.1-es mobileszközt az Intun
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Személyes információk törlése a Céges portál eltávolítása után
 A Céges portál kétféle adatot tárol az Ön windowsos eszközén:
 
--   **Diagnosztikai naplók**: A Microsoft által gyűjtött szabványos alkalmazástevékenység-adatok automatikusan törlődnek az eszköz a Céges portálból való eltávolításakor. Az alkalmazástevékenységi adatok például az alkalmazás használatának időtartama vagy az összeomlási adatok.
+-   **Diagnosztikai naplók**: A Microsoft által gyűjtött szabványos alkalmazástevékenység-adatok. Automatikusan törlődnek a Céges portál alkalmazás eltávolításakor. Az alkalmazástevékenységi adatok például az alkalmazás használatának időtartama vagy az összeomlási adatok.
 -   **Alkalmazás-gyorsítótár**: Olyan támogató fájlok, amelyek tárolása szükséges az alkalmazás működéséhez, például ikonok és beállítások.
 
-Ennek az információnak a teljes törléséhez végre kell hajtania néhány lépést.
+A tárolt naplók és gyorsítótár törléséhez kövesse az alábbi lépéseket:
 
-1. Távolítsa el a Céges portált. [A Céges portál alkalmazás eltávolítása](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) törli az eszközön tárolt alkalmazásadatok egy részét.  
+* [Távolítsa el a Céges portál alkalmazást.](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Állítsa alaphelyzetbe a Céges portált a tárolt alkalmazásadatok visszaállításához. Nyissa meg a **Beállítások** alkalmazást, és válassza az **Alkalmazások** > **Céges portál** > **Speciális beállítások** > **Alaphelyzetbe állítás** lehetőséget. 
+* Állítsa alaphelyzetbe a Céges portál alkalmazást. Nyissa meg a **Beállítások** alkalmazást, és válassza az **Alkalmazások** > **Céges portál** > **Speciális beállítások** > **Alaphelyzetbe állítás** lehetőséget. 
 
 További segítségre van szüksége? Forduljon a cég informatikai támogatásához. Az elérhetőségét keresse meg a [Vállalati portál webhelyén](https://portal.manage.microsoft.com#HelpDeskDialog).
