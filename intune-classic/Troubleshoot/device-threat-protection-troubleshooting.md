@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470797"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>A Lookout Intune-nal való integrációjának hibaelhárítása
 
@@ -36,7 +37,7 @@ A Lookout MTP csak konfigurált Azure AD-csoportból engedélyezi a felhasznál�
 
 * E-mail: enterprisesupport@lookout.com
 * Jelentkezzen be az [MTP-konzolon](http://aad.lookout.com) és keresse meg a **Támogatás** modult.
-* Lépjen a https://enterprise.support.lookout.com/hc/requests lapra, és nyújtson be támogatási kérelmet.
+* Lépjen a <https://enterprise.support.lookout.com/hc/requests> lapra, és nyújtson be támogatási kérelmet.
 
 ## <a name="unable-to-sign-in"></a>Ha nem tud bejelentkezni
 Az alábbi hibát látja, ha az Azure AD globális rendszergazdája nem fogadta el a kezdeti Lookout-telepítést.
@@ -81,7 +82,7 @@ Megnyithatja a **Devices** (Eszközök) modult a [Lookout-konzolon](http://aad.l
 Amennyiben az új felhasználó tagja valamelyik Lookout MTP-hez tartozó regisztrációs csoportnak, az eszköz megjelenik, miután az Azure AD társítja azt az új felhasználóval.
 
 ## <a name="compliance-remediation-workflows"></a>Megfelelőség-helyreállítási munkafolyamatok
-- [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az iOS-eszközön](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
