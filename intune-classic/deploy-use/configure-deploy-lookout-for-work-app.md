@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569391"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>A Lookout for Work alkalmazás konfigurálása és telepítése
 
@@ -85,11 +86,11 @@ Ez a cikk részletes információval szolgál arról, hogyan konfigurálhatja é
 
    Válassza a **Szükséges telepítés** beállítást, hogy a Lookout alkalmazás telepítését kötelezővé tegye a felhasználók eszközein.
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Mi történik ha telepített alkalmazást megnyitja az eszközön
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, a rendszer felszólítja a felhasználót, hogy aktiválja az alkalmazást, majd válassza a Bejelentkezés Azure Active Directoryval opciót. A végfelhasználói folyamat részletes áttekintése a következő témakörökben található:
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Mi történik ha telepített alkalmazást megnyitja az eszközön 
+Amikor a felhasználó megnyitja a Lookout for Work alkalmazást az eszközön, a rendszer felszólítja a felhasználót, hogy aktiválja az alkalmazást, majd válassza a Bejelentkezés Azure Active Directoryval opciót. A végfelhasználói folyamat részletes áttekintése a következő témakörökben található:
 
 * [A rendszer felszólítja a Lookout for Work telepítésére az Android-eszközön](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [El kell hárítania egy fenyegetést, amit a Lookout for Work talált az Android-eszközön](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>További lépések

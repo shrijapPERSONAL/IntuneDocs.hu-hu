@@ -17,7 +17,6 @@
 ### [Felhasználók és eszközök rendszerezése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Szabályzatok érvénybe léptetése és alkalmazások telepítése](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [A Munkahelyi portál testreszabása](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Eszközök regisztrálása](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Konfigurálás utáni feladatok](get-started/post-configuration-tasks.md)
 ## További lépések
 ### [Céges adatszivárgások megelőzése az Office 365 alkalmazásokban](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Felügyelt iOS-eszközök visszaállítása](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android- és Samsung KNOX-beállítások](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Előmegosztott kulcsú Wi-Fi-profil létrehozása egyéni szabályzattal](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Egyéni szabályzat használata az Android-eszközök alkalmazásonkénti VPN-profiljainak létrehozásához](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Egyéni szabályzat használata alkalmazások engedélyezéséhez és letiltásához Samsung KNOX-eszközökön](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Az Android for Work beállításai](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8- és Windows 8.1-beállítások](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Eszközök kivonása](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Alkalmazások hozzáadása](deploy-use/add-apps.md)
-### [Alkalmazások hozzáadása regisztrált eszközökhöz](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Windows-alkalmazások közvetlen telepítése](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Alkalmazások telepítése](deploy-use/deploy-apps.md)
-### [Alkalmazások telepítése eszközökre és számítógépekre](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Alkalmazások telepítése Android for Work-alapú eszközökre](deploy-use/android-for-work-apps.md)
-### [Alkalmazások figyelése](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Mennyiségi programban vásárolt alkalmazások felügyelete](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Mennyiségi programban vásárolt iOS-alkalmazások felügyelete](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Mennyiségi programban vásárolt Windows-alkalmazások felügyelete](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Alkalmazások konfigurálása
 ### [Alkalmazások frissítése](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Alkalmazások használata alkalmazásalapú feltételes hozzáféréssel](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [ADAL nélküli alkalmazások blokkolása](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Hálózati hozzáférés védelme (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Hozzáférés védelme az eszköz-, a hálózati és az alkalmazáskockázat alapján](deploy-use/mobile-threat-defense.md)
 #### [Lookout Mobile Threat Defense-összekötő](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Az alkalmazásvédelmi szabályzatok ellenőrzése](deploy-use/validate-mobile-application-management.md)
 #### [Az alkalmazásvédelmi szabályzatoknak való megfelelőség figyelése](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [iOS-alkalmazások közti adatátvitel kezelése](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Intune felügyeleti konzol MAM-szabályzatokhoz](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Üzletági alkalmazások előkészítése mobilalkalmazás-felügyelethez](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Alkalmazások és adatok kivonása
 ### [Teljes vagy szelektív törlés alkalmazása](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Alkalmazások kivonása ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Felügyelt vállalati alkalmazás adatainak törlése](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [MDM-szolgáltató módosítása](deploy-use/change-mdm-authority.md)
