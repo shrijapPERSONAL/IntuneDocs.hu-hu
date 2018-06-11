@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744669"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>A Windows Defender ATP engedélyezése feltételes hozzáféréssel az Intune-ban
 
@@ -51,19 +52,19 @@ Az ATP Intune-nal való használatához a következőknek konfigurálva és hasz
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
-3. Válassza az **Eszközmegfelelőség** > **Windows Defender ATP** > **Windows Defender Komplex veszélyforrások elleni védelem rendszergazdai konzol megnyitása** lehetőséget.
+3. Válassza az **Eszközmegfelelőség** > **Windows Defender ATP** > **A Windows Defender biztonsági központ megnyitása** lehetőséget.
 
-    ![Helyettesítő szöveg](./media/atp-device-compliance-open-windows-defender.png)
+    ![A Windows Defender biztonsági központ megnyitásának kiválasztása](./media/atp-device-compliance-open-windows-defender.png)
 
 4. A **Windows Defender biztonsági központban**:
     1. Válassza a **Beállítások** > **Speciális funkciók** lehetőséget.
     2. A **Microsoft Intune kapcsolathoz** válassza a **Be** lehetőséget:
 
-        ![Helyettesítő szöveg](./media/atp-security-center-intune-toggle.png)
+        ![Az Intune-hoz való kapcsolódás engedélyezése](./media/atp-security-center-intune-toggle.png)
 
     3. Válassza a **Beállítások mentése** lehetőséget.
 
-5. Az Intune-ba visszatérve válassza az **Eszközmegfelelőség** > **Windows Defender ATP** lehetőséget. A **Windows 10.0.15063+ rendszerű eszközök csatlakoztatása a Windows Defender Komplex veszélyforrások elleni védelemhez** melletti kapcsolót állítsa **Be** helyzetbe.
+5. Az Intune-ba visszatérve válassza az **Eszközmegfelelőség** > **Windows Defender ATP** lehetőséget. Adja meg a **10.0.15063 vagy újabb verziójú windowsos eszközök csatlakoztatása a következőhöz: Windows Defender ATP** beállításnál a **Be** értéket.
 6. Válassza a **Mentés** lehetőséget.
 
 Ezt a feladatot általában egyszer kell elvégezni. Ha tehát az ATP már engedélyezve van az Intune-erőforrásában, akkor nem szükséges megismételnie.
@@ -115,9 +116,9 @@ A megfelelőségi szabályzat határozza meg egy eszközön a kockázat elfogadh
 2. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
 3. Adjon meg **Nevet** és **Leírást**.
 4. A **Platform** beállításnál válassza a **Windows 10 és újabb** lehetőséget.
-5. Az **Eszközállapot** beállításainál adja meg az **Eszköz fenyegetettségi szintjének legmagasabb megengedett szintje** Ön által választott értékét:
+5. A **Windows Defender ATP** beállításainál adja meg **A következő vagy ez alatti számítógép-kockázati pontszám megkövetelése** Ön által választott értékét:
 
-  - **Védett**: Ez a szint a legbiztonságosabb. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
+  - **Tiszta**: Ez a szint a legbiztonságosabb. Az eszköz csak akkor fér hozzá a céges erőforrásokhoz, ha semmilyen veszélyforrás nincs rajta. Ha bármilyen veszélyforrás észlelhető, az eszköz nem megfelelőnek minősül.
   - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű veszélyforrások állnak fenn. A közepes vagy magas fenyegetettségi szintű eszközök nem megfelelők.
   - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt veszélyforrások alacsony vagy közepes szintűek. Magas szintű fenyegetések észlelése esetén az eszköz nem megfelelőnek minősül.
   - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Az ilyen eszközök magas, közepes és alacsony szintű fenyegetettség esetén is megfelelőnek minősülnek.
