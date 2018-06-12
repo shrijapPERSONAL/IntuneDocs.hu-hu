@@ -38,7 +38,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - Az [Exchange Active Sync helyszíni Exchange-összekötőt](exchange-connector-install.md) kell használni, amely összekapcsolja az Intune-t a helyszíni Exchange-dzsel.
 
     >[!IMPORTANT]
-    >Az Exchange-összekötő az Intune-bérlőjéhez tartozik, és semmilyen más bérlővel nem használható. Az Intune mostantól egy előfizetés esetén több helyszíni Exchange-összekötőt is támogat. Ha a cég egynél több helyszíni Exchange-összekötővel rendelkezik, minden Exchange-szervezet részére külön összekötőt építhet ki.
+    >Az Exchange-összekötő az Intune-bérlőjéhez tartozik, és semmilyen más bérlővel nem használható. Az Intune mostantól egy előfizetésben több helyszíni Exchange-összekötőt is támogat. Ha a cég egynél több helyszíni Exchange-összekötővel rendelkezik, minden Exchange-szervezet részére külön összekötőt építhet ki.
 
 - A helyszíni Exchange-szervezet összekötője bármely gépen telepíthető, amennyiben az képes az Exchange-kiszolgálóval való kommunikációra.
 

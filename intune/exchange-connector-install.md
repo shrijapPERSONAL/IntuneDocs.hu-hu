@@ -141,14 +141,14 @@ Az Intune egy előfizetésben több helyszíni Exchange-összekötőt is támoga
 
 Az alábbi szakaszokban ismertetett magas rendelkezésre állási, figyelési és manuális szinkronizálási szolgáltatásokat a rendszer az Intune-hoz csatlakoztatott összes Exchange-szervezetnél támogatja.
 
-## <a name="on-premises-exchange-connector-high-availability-support"></a>Magas rendelkezésre állású helyszíni Exchange-összekötő támogatása 
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Magas rendelkezésre állású helyszíni Exchange Connector támogatása 
 Miután az Exchange-összekötő létrehozott egy Exchange-kapcsolatot a megadott CAS (ügyfél-hozzáférési kiszolgáló) használatával, képes felfedezni más CAS kiszolgálókat is. Ha az elsődleges CAS elérhetetlenné válik, az összekötő átvált egy másik CAS-ra (ha elérhető), amíg az elsődleges CAS elérhetősége helyre nem áll. Ez a funkció alapértelmezés szerint be van kapcsolva. Ha szeretné kikapcsolni a funkciót, kövesse az alábbi eljárást:
 1. Az Exchange-összekötőt futtató kiszolgálón nyissa meg a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector mappát. 
 2. Nyissa meg egy szövegszerkesztőben az **OnPremisesExchangeConnectorServiceConfiguration.xml** fájlt.
 3. Módosítsa az &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; értéket az &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; értékre a funkció letiltásához.    
 
 
-## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange-összekötő tevékenységének figyelése
+## <a name="monitor-the-exchange-connector-activity"></a>Az Exchange Connector tevékenységének figyelése
 
 Az Exchange-összekötő sikeres konfigurálása után megtekintheti a kapcsolat és a legutóbbi sikeres szinkronizálási kísérlet állapotát. Az Exchange-összekötő kapcsolatainak ellenőrzése:
 
@@ -159,7 +159,7 @@ Ellenőrizheti a legutóbbi sikeres szinkronizálási kísérlet dátumát és i
 
 ### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) felügyeleti csomag
 
-Az Intune 1710-es kadásától kezdve használható [az Exchange-összekötőhöz és az Intune-hoz készült SCOM felügyeleti csomag](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Ez számos megoldást nyújt az Exchange-összekötő figyelésére, amikor hibaelhárítás szükséges.
+Az Intune 1710-es kadásától kezdve használható [az Exchange Connectorhoz és az Intune-hoz készült SCOM felügyeleti csomag](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Ez számos megoldást nyújt az Exchange Connector figyelésére, amikor hibaelhárítás szükséges.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Gyors szinkronizálás vagy teljes szinkronizálás manuális kényszerítése
 A helyszíni Exchange-összekötők automatikusan szinkronizálják az EAS- és az Intune-eszközrekordokat rendszeres időközönként. Ha egy eszköz megfelelőségi állapota megváltozik, az automatikus szinkronizálási folyamat rendszeresen frissíti a rekordokat az eszközelérés letiltásához vagy engedélyezéséhez.

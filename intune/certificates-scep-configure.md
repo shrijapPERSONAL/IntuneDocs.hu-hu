@@ -227,7 +227,7 @@ A feladatban az alábbiak szerepelnek:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
 
 
-4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** > **Kérésszűrés** > **Szolgáltatás beállításainak szerkesztése** lehetőséget. Módosítsa az **URL-cím maximális hossza** és a **Lekérdezés-karakterlánc maximális hossza** beállítás értékét a következőre: *65534*, ahogy az a képen is látható:
+4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** > **Kérésszűrés** > **Szolgáltatás beállításainak szerkesztése** lehetőséget. Módosítsa az **URL-cím maximális hossza** és a **Lekérdezési sztring maximális hossza** beállítás értékét a következőre: *65534*, ahogy az a képen is látható:
 
     ![Maximális URL-hossz és lekérdezéshossz az IIS-ben](./media/SCEP_IIS_max_URL.png)
 
@@ -270,7 +270,8 @@ A feladatban az alábbiak szerepelnek:
 
 2. Válassza a **Szolgáltatás beállításainak szerkesztése** lehetőséget, és adja meg a következő értékeket:
 
-    - **lekérdezés-karakterlánc hossza (bájt)** = **65534**
+    - 
+  **lekérdezési sztring hossza (bájt)** = **65534**
     - **URL-cím maximális hossza (bájt)** = **65534**
 
 3. Tekintse át a következő beállításkulcsot:
@@ -377,7 +378,7 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 
           A(z) `{{onPremisesSamAccountName}}` változó használatához ügyeljen rá, hogy a(z) `onPremisesSamAccountName` felhasználói attribútumot szinkronizálja az Azure AD-vel az [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) segítségével.
 
-       Egy vagy több változó és statikus karakterlánc együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre: **CN={{UserName}},E={{EmailAddress}},OU=Mobil,O=Pénzügyi csoport,L=Budapest,C=HU**. <br/> Ez a példa egy olyan tulajdonosnév-formátumot hoz létre, amely a CN és az E változó mellett a Szervezeti Egység (OU), a Szervezet (O), a Hely (L) és az Ország (C) értékek karakterláncát is alkalmazza. A függvény leírását és a támogatott karakterláncokat a [CertStrToName függvény](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) című cikkben találhatja meg.
+       Egy vagy több változó és statikus sztring együttes használatával az ehhez a példához hasonló egyéni tulajdonosnév-formátumot hozhat létre: **CN={{UserName}},E={{EmailAddress}},OU=Mobil,O=Pénzügyi csoport,L=Budapest,C=HU**. <br/> Ez a példa egy olyan tulajdonosnév-formátumot hoz létre, amely a CN és az E változó mellett a Szervezeti Egység (OU), a Szervezet (O), a Hely (L) és az Ország (C) értékek sztringjét is alkalmazza. A függvény leírását és a támogatott sztringeket a [CertStrToName függvény](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) című cikkben találhatja meg.
 
 - **Tulajdonos alternatív neve**: Adja meg, hogy az Intune hogyan hozza létre automatikusan a tulajdonos alternatív nevének értékeit a tanúsítványkérelemben. Ha felhasználói tanúsítványtípust választott ki, akkor például az egyszerű felhasználónevet (UPN) is használhatja a tulajdonos alternatív neveként. Ha az ügyféltanúsítványt hitelesítésre használja egy hálózati házirend-kiszolgáló felé, a tulajdonos alternatív neveként az egyszerű felhasználónevet kell beállítania.
 - **Kulcshasználat**: Adja meg a tanúsítvány kulcshasználati beállításait. A választható lehetőségek:
