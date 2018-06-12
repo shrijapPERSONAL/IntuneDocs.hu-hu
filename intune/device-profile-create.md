@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744652"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Eszközprofil létrehozása a Microsoft Intune-ban
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **Profiltípus**: Válassza ki a létrehozni kívánt profil típusát. A lista a választott platformtól függ.
    - **Beállítások**: Az alábbi témakörök az egyes profiltípusok beállításait ismertetik:
 
-       -  [Eszközfunkciók beállításai](device-features-configure.md)
-       -  [Eszközkorlátozási beállítások](device-restrictions-configure.md)
-       -  [E-mail-beállítások](email-settings-configure.md)
-       -  [VPN-beállítások](vpn-settings-configure.md)
-       -  [Wi-Fi-beállítások](wi-fi-settings-configure.md)
-       -  [A Windows 10 kiadásfrissítési beállításai](edition-upgrade-configure-windows-10.md)
-       -  [Tanúsítványbeállítások](certificates-configure.md)
-       -  [A Windows Információvédelem beállításai](windows-information-protection-configure.md)
-       -  [Oktatási beállítások](education-settings-configure.md)
-       -  [Egyéni beállítások](custom-settings-configure.md)
+       -  [Eszközfunkciók](device-features-configure.md)
+       -  [Eszközkorlátozások](device-restrictions-configure.md)
+       -  [Endpoint Protection](endpoint-protection-configure.md)
+       -  [Kioszkmód](kiosk-settings.md)
+       -  [Email](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  Education [Windows 10](education-settings-configure.md) és [iOS](wi-fi-settings-ios.md) rendszerhez
+       -  [Windows 10 kiadásfrissítés](edition-upgrade-configure-windows-10.md)
+       -  [iOS-es frissítési szabályzatok](software-updates-ios.md)
+       -  [Tanúsítványok](certificates-configure.md)
+       -  [Windows Információvédelem](windows-information-protection-configure.md)
+       -  [Egyéni](custom-settings-configure.md)
 
      ![A Profil létrehozása képernyőképe](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 Ekkor létrejön a profil, és megjelenik a listában.
 
-
 ## <a name="next-steps"></a>További lépések
-Az eszközprofilok hozzárendeléséhez tekintse meg az [Eszközprofilok hozzárendelése a Microsoft Intune-nal](device-profile-assign.md) című témakört.
+[Rendelje hozzá a profilt](device-profile-assign.md), és [kövesse nyomon az állapotát](device-profile-monitor.md).

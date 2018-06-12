@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744992"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -153,6 +154,9 @@ Amikor hozzáad egy alkalmazást az Intune-hoz, kiválaszthatja a kívánt kateg
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Az Intune által automatikusan hozzáadott alkalmazások
 
 Korábban az Intune számos beépített alkalmazást tartalmazott, melyeket hamar hozzá lehetett rendelni egy kategóriához. Ezt a listát az Intune-ügyfelek visszajelzései alapján eltávolítottuk, és a beépített alkalmazások többé nem jelennek meg. A korábban már hozzárendelt beépített alkalmazások azonban továbbra is megjelennek az alkalmazások listájában. Az alkalmazások szükség szerint továbbra is hozzárendelhetők.
+
+> [!NOTE]
+> Kötelező nem üzletági alkalmazás telepítéséhez az Intune telepítési parancsot küld az eszköz bejelentkezésekor, feltéve hogy az alkalmazás nem észlelhető és az alkalmazás telepítési állapota nem *Telepítés függőben*.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Kötelező alkalmazások telepítése, frissítése, vagy eltávolítása
 

@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744907"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -111,21 +112,20 @@ Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-
 - **BitLocker megkövetelése**: Ha a BitLocker be van kapcsolva, az eszköz meg tudja védeni az eszközön tárolt adatokat a jogosulatlan hozzáféréstől, amikor a rendszer ki van kapcsolva vagy hibernálva van. A Windows BitLocker-meghajtótitkosítás titkosítja a Windows operációs rendszer kötetén tárolt összes adatot. A BitLocker a TPM-mel segíti elő a Windows operációs rendszer és a felhasználói adatok védelmét. Segít abban is, hogy ne lehessen illetéktelenül hozzáférni a számítógéphez akkor sem, ha az felügyelet nélkül van, elveszett vagy ellopták. Ha a számítógépen kompatibilis TPM található, a BitLocker a TPM-mel zárolja az adatokat védő titkosítási kulcsokat. Ezért a kulcsok nem érhetők el addig, amíg a TPM nem ellenőrizte a számítógép állapotát.
 - **Biztonságos rendszerindítás engedélyezésének megkövetelése az eszközön**: Amikor a biztonságos rendszerindítás engedélyezett, az a rendszert gyárilag megbízható állapotban végzett rendszerindításra kényszeríti. Ezenkívül amikor a biztonságos rendszerindítás engedélyezett, a gép rendszerindításához használt fő összetevőknek a megfelelő titkosított aláírásokra van szükségük, amelyekben az eszközt gyártó szervezet megbízik. Az UEFI belső vezérlőprogram ellenőrzi az aláírást, mielőtt engedélyezi a számítógép elindítását. Ha bármelyik megfigyelt fájlt illetéktelen módosítás ért az aláírás feltörésével, a rendszer nem indul el.
 - **Kódintegritás megkövetelése**: A kódintegritás olyan szolgáltatás, amely ellenőrzi az illesztők vagy rendszerfájlok integritását, amikor azokat betölti a memóriába. A kódintegritás észleli, ha aláíratlan illesztőprogramot vagy rendszerfájlt töltenek be a kernelbe. Azt is észleli, ha egy rendszerfájlt módosít egy olyan kártevő szoftver, amelyet rendszergazdai jogosultságokkal rendelkező felhasználói fiókkal futtatnak.
-- **Maximálisan elérhető eszközfenyegetettségi szint használata**: Ezzel a beállítással a fenyegetéseket elhárító szolgáltatásoktól származó kockázatbecslés lesz a megfelelőség feltétele. Megadható a legnagyobb megengedett fenyegetettségi szint:
-  - **Védett**: Ez a legbiztonságosabb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
-  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
-  - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
-  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
 
 A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
-- **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a főverzió.alverzió.build.CU szám formátumban. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
+- **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a **főverzió.alverzió.build.CU szám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Ha egy eszköz a megadott verziónál korábbi operációs rendszerrel rendelkezik, azt a rendszer nem megfelelőként fogja jelenteni. Megjelenik egy hivatkozás, amelyen a verziófrissítésre vonatkozó információk érhetők el. A végfelhasználó frissítheti az eszközt, és utána hozzáférhet a vállalati erőforrásokhoz.
 
-- **Operációs rendszer maximális verziója**: Adja meg a maximálisan megengedhető verziót a főverzió.alverzió.build.CU szám formátumban. A build.CU számnak meg kell egyeznie a `ver` vagy a `winver` parancs által visszaadott verzióval.
+- **Operációs rendszer maximális verziója**: Adja meg a maximálisan megengedhető verziót a **főverzió.alverzió.build.változatszám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Ha egy eszközön a szabályban megadott operációsrendszer-verziótól újabb fut, a vállalati erőforrásokhoz való hozzáférés le van tiltva, és a felhasználónak kapcsolatba kell lépnie az informatikai rendszergazdával. Az eszköz csak akkor használható a vállalati erőforrások eléréséhez, ha a szabályt úgy módosítják, hogy engedélyezze az operációs rendszer verzióját.
 
@@ -161,9 +161,17 @@ A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP
 - **Újból nem használható jelszavak száma**: Megadhatja, hogy hány korábbi jelszó ne legyen újra felhasználható.
 - **Jelszó megkövetelése amikor az eszköz visszatér az inaktív állapotból (mobil és Holographic rendszer esetén)**: A felhasználóknak minden alkalommal meg kell adniuk a jelszót, amikor az eszköz visszatér az inaktív állapotból.
 
-### <a name="encryption"></a>Encryption
+#### <a name="encryption"></a>Encryption
 
 - **Adattároló titkosítása az eszközön**: A **Kötelező** lehetőséget választva az adattárolók titkosítva lesznek az eszközökön.
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- **A következő vagy ez alatti számítógép-kockázati pontszám megkövetelése**: Ezzel a beállítással a fenyegetéseket elhárító szolgáltatásoktól származó kockázatbecslés lesz a megfelelőség feltétele. Megadható a legnagyobb megengedett fenyegetettségi szint:
+  - **Tiszta**: Ez a legbiztonságosabb beállítás, mivel az eszköz esetében semmilyen fenyegetés nem engedélyezett. Bármilyen szintű fenyegetés észlelésekor az eszközt a rendszer nem megfelelőként értékeli.
+  - **Alacsony**: Az eszköz csak abban az esetben minősül megfelelőnek, ha kizárólag alacsony szintű fenyegetések állnak fenn. Bármilyen magasabb szintű fenyegetés esetén az eszköz nem megfelelő státuszúnak minősül.
+  - **Közepes**: Az eszköz abban az esetben minősül megfelelőnek, ha az eszközön észlelt fenyegetések alacsony vagy közepes szintűek. Magas szintű fenyegetés észlelésekor a rendszer nem megfelelőként értékeli az eszközt.
+  - **Magas**: Ez a legkevésbé biztonságos, minden fenyegetettségi szintet megengedő beállítás. Akkor lehet hasznos, ha ezt a megoldást kizárólag jelentéskészítési célokra használja.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

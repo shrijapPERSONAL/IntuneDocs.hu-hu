@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61d58c794015b0b87f4c9949d9c53e7166925022
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744584"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>A Microsoft Intune Céges portál alkalmazásának konfigurálása
 
@@ -35,35 +36,49 @@ A vállalati portál testreszabásával ismerős és könnyen használható kör
 > [!Note]       
 > A Windows 10 Céges portál mostantól alkalmazáshasználati naplókat küld közvetlenül a Microsoftnak, ha egy felhasználó segítséget kér egy problémához. Így könnyebben háríthatók el és oldhatók meg a Microsoftnak továbbított problémák.  
 
-## <a name="company-contact-information-and-privacy-statement"></a>Vállalat kapcsolattartási adatai és adatvédelmi nyilatkozata        
-A vállalat neve a Vállalati portál címeként jelenik meg. A kapcsolattartási adatokat és részleteket a felhasználók a Céges portál **IT-csoport elérhetősége** képernyőjén tekinthetik meg. Az adatvédelmi nyilatkozat az Adatvédelem hivatkozásra kattintva jeleníthető meg.
+## <a name="company-information-and-privacy-statement"></a>A vállalat adatai és adatvédelmi nyilatkozata        
+A vállalat neve a Vállalati portál címeként jelenik meg. Az adatvédelmi nyilatkozat az Adatvédelem hivatkozásra kattintva jeleníthető meg.
 
 A csillaggal (*) jelölt mezők kitöltése kötelező.       
 
 
 | Mező neve | Maximális hossz | További információ |
 |---|---|---|
-|**Vállalat neve**| 40 | Ez a név a Vállalati portál címeként jelenik meg. |
-|**IT-részleg kapcsolattartójának a neve** | 40 | Ez a név az **IT-csoport elérhetősége** lapon jelenik meg. |
-|**IT-részleg telefonszáma** | 20 | Ez a telefonszám az **IT-csoport elérhetősége** lapon jelenik meg. |
-|**IT-részleg e-mail címe**| 40 | Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail-címet a következő formátumban: `alias@domainname.com`. |
-| **További információ**|    120     | Az **IT-csoport elérhetősége** lapon jelenik meg. |
-| **Vállalat adatvédelmi nyilatkozatának URL-címe** |     79     | Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: `<https://www.contoso.com>`. |
+|**Vállalat neve**| 40 | Ez a név a Céges portál címeként jelenik meg, és az Intune használata alatt végig szöveges formában olvasható. |
+| **Az adatvédelmi nyilatkozat URL-címe** |     79     | Itt adhatja meg vállalatának adatvédelmi nyilatkozatát, amely akkor jelenik meg, ha a felhasználó a Vállalati portál adatvédelmi hivatkozásaira kattint. Érvényes URL-címet kell megadnia, a következő formátumban: `<https://www.contoso.com>`. |
 
-## <a name="support-contacts"></a>Támogatási kapcsolattartók     
-A támogatási webhely a Vállalati portálon jelenik meg, és lehetővé teszi a felhasználók számára az online támogatás elérését.        
+## <a name="support-information"></a>Támogatási információk      
+Ahhoz, hogy munkatársainak megadhassa az Intune-nal kapcsolatos kérdések esetén használható kapcsolattartási adatokat, írja be a céges támogatási információkat.       
 
 |Mező neve|Maximális hossz|További információ|
 |---|---|---|
-|**Támogatási webhely URL-címe**|150|Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-cím formátumának a következőnek kell lennie: **https://www.contoso.com**. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján.|
-|**Támogatási webhely neve**|40|Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de rövid nevet nem, akkor Az IT-csoport weboldalának megnyitása felirat jelenik meg a Céges portál **IT-csoport elérhetősége** lapján.
+|**Kapcsolattartó neve** | 40 | Ez a név az **IT-csoport elérhetősége** lapon jelenik meg. |
+|**Telefonszám** | 20 | A kapcsolattartási szám megjelenik az **IT-csoport elérhetősége** lapon, és lehetővé teszi munkatársai számára a támogatáskérést. |
+|**E-mail cím**| 40 | Ez a cím az **IT-csoport elérhetősége** lapon jelenik meg. Meg kell adnia egy érvényes e-mail-címet a következő formátumban: `alias@domainname.com`. |
+|**Webhely neve**| 40 | Ez a név a támogatási webhely URL-címének rövid neveként jelenik meg. Ha a támogatási webhelyhez csak URL-címet ad meg, de rövid nevet nem, akkor Az IT-csoport weboldalának megnyitása felirat jelenik meg a Céges portál **IT-csoport elérhetősége** lapján. |
+|**Webhely URL-címe**| 150 | Ha rendelkezik saját felhasználóinak szánt támogatási webhellyel, ide írja be az URL-címét. Az URL-cím formátumának a következőnek kell lennie: **https://www.contoso.com**. Ha nem ad meg URL-címet, semmi sem jelenik meg a támogatási webhelyről a Vállalati portál **IT-csoport elérhetősége** lapján. |
+| **További információ**| 120 | Az **IT-csoport elérhetősége** lapon jelenik meg. |
+
 
 ## <a name="company-branding-customization"></a>Vállalati arculat szerinti testreszabás       
 A Vállalati portál testre szabható a vállalat emblémájának és nevének, valamint a téma színének és a háttérnek a megadásával.     
 
+### <a name="theme-color"></a>Téma színe
+Témaszínt alkalmazhat a Céges portálon. Jelöljön ki egy szabványos színt, vagy adjon meg egy hexadecimális hatjegyű kódot az egyéni színhez.
+
 |Mező neve|További információ|
 |---|---|
-|**Téma színe**|A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy konkrét hexadecimális kódot.|
-|**Cég emblémájának megjelenítése**|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. Mindkét emblémának egy .png vagy .jpg formátumú fájlnak kell lennie, melyek felbontása legfeljebb 400 x 100 képpont, mérete pedig legfeljebb 750 KB lehet.<br>A megadott vállalatnevet a feltöltött embléma mellett is megjelenítheti.|
+|**Színtípus**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. |
+|**Szín választása** vagy **Hexadecimális színkód**| A Vállalati portálra alkalmazni kívánt témaszín kiválasztása. Választhat a színválasztóból, vagy megadhat egy hexadecimális kódot. Ezek a lehetőségek az Ön által megadott **Színtípus** alapján érhetők el.  |
 
-A módosítások mentése után **Preview your settings in the Intune Web Portal** (A beállítások előnézetének megtekintése az Intune webportálon) lehetőséget választva tekintheti meg, hogyan fognak megjelenni a konfigurációk.
+### <a name="company-logo"></a>Céges embléma
+Feltöltheti cége emblémáját, és láthatóvá teheti végig az Intune használata során.
+
+|Mező neve|További információ|
+|---|---|
+|**Cég emblémájának megjelenítése**|Ha engedélyezi ezt a beállítást, feltöltheti a Vállalati portálon megjeleníteni kívánt vállalati emblémát. Két emblémát tölthet fel: az egyik akkor jelenik meg, ha a Vállalati portál háttérszíne fehér, a másik pedig akkor, ha a Vállalati portál a témának megfelelő háttérszínnel jelenik meg. |
+|**Embléma feltöltése témaszínnel ellátott háttér elé**| Ez a lehetőség akkor érhető el, ha a céges embléma megjelenítése mellett döntött. Az emblémának legfeljebb 400 x 400 képpont felbontású, legfeljebb 750 KB méretű .png vagy .jpg formátumú fájlnak kell lennie. |
+|**Embléma feltöltése világos háttér elé**| Ez a lehetőség akkor érhető el, ha a céges embléma megjelenítése mellett döntött. Az emblémának legfeljebb 400 x 400 képpont felbontású, legfeljebb 750 KB méretű .png vagy .jpg formátumú fájlnak kell lennie. |
+|**Cégnév feltüntetése az embléma mellett**| Válassza ezt a lehetőséget, ha a megadott cégnevet meg szeretné jeleníteni a feltöltött embléma mellett. |
+
+A módosítások mentése után a panel tetején látható **Preview your settings in the Intune Web Portal** (A beállítások előnézetének megtekintése az Intune webportálon) lehetőségre kattintva tekintheti meg előre a konfigurációk megjelenítését.

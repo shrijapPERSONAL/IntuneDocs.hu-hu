@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744941"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune Endpoint Protection-beállítások Windows 10 és újabb rendszerekhez
 
@@ -300,15 +301,21 @@ Ezekkel a beállításokkal konfigurálhatja a Windows 10-eszközök helyi bizto
 
 - **Ennyi perc inaktivitás a zárolási képernyőn a képernyővédő aktiválása előtt**: Megadhatja az interaktív asztal bejelentkezési képernyőjén töltött inaktív percek maximum számát, mielőtt elindul a képernyővédő.
 - **CTRL+ALT+DEL billentyűkombináció a bejelentkezéshez**: A CTRL+ALT+DEL billentyűkombináció kötelezővé tétele a felhasználói bejelentkezésekhez.
-- **Viselkedés intelligens kártya eltávolításakor**: Meghatározza, hogy mi történik, ha egy bejelentkezett felhasználó intelligens kártyáját eltávolítják az intelligenskártya-olvasóból.
-A [LocalPoliciesSecurity-beállítások](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) című témakörben további információt találhat.
+- **Viselkedés intelligens kártya eltávolításakor**: Meghatározza, hogy mi történik, ha egy bejelentkezett felhasználó intelligens kártyáját eltávolítják az intelligenskártya-olvasóból. A választható lehetőségek:
+
+  - **Munkaállomás zárolása**: Az intelligens kártya eltávolítása zárolja a munkaállomást. Ez a beállítás lehetővé teszi a felhasználóknak, hogy elhagyják a helyiséget, magukkal vigyék az intelligens kártyájukat, és továbbra is fenntartsák védett munkamenetüket.
+  - **Kijelentkezés kényszerítése**: Az intelligens kártya eltávolítása automatikusan kijelentkezteti a felhasználót.
+  - **Munkamenet szétkapcsolása távoli asztali szolgáltatás esetén**: Az intelligens kártya eltávolítása a felhasználó kijelentkeztetése nélkül kapcsolja szét a munkamenetet. Ez a beállítás lehetővé teszi, hogy a felhasználó az intelligens kártya újbóli beillesztésével később, vagy más intelligenskártya-olvasóval felszerelt gépnél újbóli bejelentkezés nélkül folytathassa a munkamenetet. Helyi munkamenet esetén ez a szabályzat pontosan úgy működik, mint a Munkaállomás zárolása.
+
+    A [LocalPoliciesSecurity-beállítások](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) című témakörben további információt találhat.
 
 #### <a name="display"></a>Megjelenítés
 
 - **Felhasználói adatok a zárolási képernyőn**: A lezárt munkamenetek során megjelenített felhasználói adatokat konfigurálja. Ha nincs konfigurálva, a felhasználó megjelenített neve, a tartomány és a felhasználónév látható.
+  - **Nincs konfigurálva**: Felhasználó megjelenített neve, a tartomány és a felhasználónév
+  - **Felhasználó megjelenített neve, tartomány- és felhasználónév**
   - **Csak a felhasználó megjelenített neve**
   - **Ne jelenjenek meg a felhasználói adatok**
-  - **Nincs konfigurálva**: Felhasználó megjelenített neve, a tartomány és a felhasználónév
 - **Utolsó bejelentkezett felhasználó elrejtése**: Ne jelenjen meg az eszközön legutóbb bejelentkezett személy felhasználóneve.
 - **Felhasználónév elrejtése a bejelentkezéskor**: Ne jelenjen meg az eszközre bejelentkező személy felhasználóneve a hitelesítő adatok megadása után, valamint az eszköz asztalának megjelenítése előtt.
 - **Bejelentkezési üzenet címe:** A bejelentkező felhasználók számára megjelenő üzenet címe.
@@ -316,13 +323,13 @@ A [LocalPoliciesSecurity-beállítások](https://docs.microsoft.com/windows/clie
 
 ### <a name="network-access-and-security"></a>Hálózati hozzáférés és biztonság
 
-- **Névtelen hozzáférés a nevesített csövekhez és a megosztásokhoz**: Korlátozza a névtelen hozzáférést a megosztási és a névtelen csövekre vonatkozó beállításokhoz. A névtelenül megadható beállításokra vonatkozik.
-- **SAM-fiókok névtelen enumerálása**: Lehetővé teszi a névtelen felhasználók számára a SAM-fiókok enumerálását. A Windows engedélyezi a névtelen felhasználók számára a tartományfiókok és hálózati megosztások enumerálását.
-- **SAM-fiókok és megosztások névtelen enumerálása**: Letilthatja a SAM-fiókok és megosztások névtelen enumerálását. A Windows engedélyezi a névtelen felhasználók számára a tartományfiókok és hálózati megosztások enumerálását.
-- **A LAN Manager üzenetkivonatának tárolása jelszómódosításkor**: A következő jelszómódosításakor megadhatja, hogy a rendszer tárolja-e az új jelszó LAN Manager- (LM-) üzenetkivonatát. Az alapértelmezett beállítás a Nem.
-- **PKU2U hitelesítési kérelmek**: Az eszköz PKU2U hitelesítési kérelmeinek letiltása az online azonosító adatok használatához.
-- **Távoli RPC-kapcsolatok korlátozása SAM-re**: Az alapértelmezett Security Descriptor Definition Language-karakterlánc szerkesztésével engedélyezheti vagy letilthatja a felhasználók és csoportok számára a SAM felé intézett távoli hívásokat.
-- **Biztonsági leíró**
+- **Névtelen hozzáférés nevesített csövekhez és megosztásokhoz**: **Nem konfigurált** (alapértelmezett) módban korlátozza a névtelen hozzáférést a megosztási és nevesített csövekre vonatkozó beállításokhoz. A névtelenül megadható beállításokra vonatkozik.
+- **SAM-fiókok névtelen számbavétele**: **Engedélyezi** a névtelen felhasználók számára a SAM-fiókok számbavételét. A Windows engedélyezi a névtelen felhasználók számára a tartományfiókok és hálózati megosztások enumerálását.
+- **SAM-fiókok és -megosztások névtelen számbavétele**: **Nem konfigurált** (alapértelmezett) állapot esetén a névtelen felhasználók számba vehetik a tartományi fiókok és hálózati megosztások neveit. A SAM-fiókok és -megosztások névtelen számbavételének megakadályozásához állítsa **Letilt** értékre.
+- **A LAN Manager üzenetkivonatának tárolása jelszómódosításkor**: Amikor legközelebb módosítja a jelszót, **Engedélyezze** a LAN Manager (LM) számára az új jelszó üzenetkivonatának tárolását. **Nem konfigurált** (alapértelmezett) érték esetén az üzenetkivonat nem tárolódik.
+- **PKU2U hitelesítési kérelmek**: **Tiltsa le** az online azonosító adatok használatához az eszközre érkező PKU2U hitelesítési kérelmeket. **Nem konfigurált** (alapértelmezett) érték esetén ezek a kérelmek engedélyezve vannak.
+- **A SAM-re érkező távoli RPC-kapcsolatok korlátozása**: **Engedélyezze** az alapértelmezett Security Descriptor Definition Language-karakterláncnak, hogy megtagadhassa a felhasználók és csoportok SAM felé intézett távoli hívásait. **Nem konfigurált** (alapértelmezett) érték esetén a Security Descriptor Definition Language-karakterlánc engedélyezi a felhasználók és csoportok SAM felé intézett távoli hívásait.
+  - **Biztonsági leíró**
 
 ### <a name="recovery-console-and-shutdown"></a>Helyreállítási konzol és leállítás
 
@@ -359,13 +366,13 @@ A [LocalPoliciesSecurity-beállítások](https://docs.microsoft.com/windows/clie
 
 ### <a name="microsoft-network-client"></a>Microsoft hálózati ügyfél
 
-- **Kommunikáció digitális aláírása (ha a kiszolgáló egyetért)**: Meghatározza, hogy az SMB-ügyfél SMB-csomagok aláírását próbálja-e egyeztetni. Ha ez a beállítás engedélyezve van (ez az alapértelmezés), a Microsoft hálózati ügyfél a kiszolgálótól a munkamenet beállításakor az SMB-csomagok aláírását kéri. Ha a csomagaláírás engedélyezve van a kiszolgálón, a csomagaláírás egyeztetése megkezdődik. Ha ez a szabályzat le van tiltva, az SMB-ügyfél soha nem egyezteti az SMB-csomagok aláírását.
+- **Kommunikáció digitális aláírása (ha a kiszolgáló egyetért)**: Meghatározza, hogy az SMB-ügyfél SMB-csomagok aláírását próbálja-e egyeztetni. Ha ez a beállítás engedélyezve van (Nem konfigurált), akkor a Microsoft hálózati ügyfél a kiszolgálótól a munkamenet beállításakor az SMB-csomagok aláírását kéri. Ha a csomagaláírás engedélyezve van a kiszolgálón, a csomagaláírás egyeztetése megkezdődik. Ha ez a szabályzat le van tiltva, az SMB-ügyfél soha nem egyezteti az SMB-csomagok aláírását.
 - **Titkosítatlan jelszó küldése külső SMB-kiszolgálóknak**: Ha ez a beállítás engedélyezve van, a Server Message Block- (SMB-) átirányító egyszerű szöveges jelszavakat küldhet az olyan, nem Microsoftos SMB-kiszolgálóknak, amelyek nem támogatják a hitelesítés közbeni jelszótitkosítást.
 
 ### <a name="microsoft-network-server"></a>Microsoft hálózati kiszolgáló
 
-- **Kommunikáció digitális aláírása (ha az ügyfél egyetért)**: Meghatározza, hogy az SMB-kiszolgáló egyezteti-e az SMB-csomagok aláírását az ezt kérő ügyfelekkel. Ha ez a beállítás engedélyezve van, a Microsoft hálózati kiszolgáló egyezteti az SMB-csomagok aláírását az ügyfél kérése szerint. Ez azt jelenti, hogy ha a csomagaláírás engedélyezve van az ügyfélnél, a csomagaláírás egyeztetése megkezdődik. Ha ez a szabályzat le van tiltva (ez az alapértelmezett beállítás), az SMB-ügyfél soha nem egyezteti az SMB-csomagok aláírását.
-- **Kommunikáció digitális aláírása (mindig)**: Meghatározza, hogy a csomagaláírás kötelező-e az SMB-kiszolgáló-összetevő számára. Ha ez a beállítás engedélyezve van, a Microsoft hálózati kiszolgáló nem kommunikál a Microsoft hálózati ügyféllel, hacsak az ügyfél bele nem egyezik az SMB-csomagok aláírásába. Ha ez a beállítás le van tiltva (ez az alapértelmezett állapot), az SMB-csomagok aláírásának egyeztetése megkezdődik az ügyfél és a kiszolgáló között.
+- **Kommunikáció digitális aláírása (ha az ügyfél egyetért)**: Meghatározza, hogy az SMB-kiszolgáló egyezteti-e az SMB-csomagok aláírását az ezt kérő ügyfelekkel. Ha ez a beállítás engedélyezve van, a Microsoft hálózati kiszolgáló egyezteti az SMB-csomagok aláírását az ügyfél kérése szerint. Ez azt jelenti, hogy ha a csomagaláírás engedélyezve van az ügyfélnél, a csomagaláírás egyeztetése megkezdődik. Ha ez a beállítás **Nem konfigurált** állapotú vagy le van tiltva (alapértelmezett), akkor az SMB-ügyfél soha nem egyezteti az SMB-csomagok aláírását.
+- **Kommunikáció digitális aláírása (mindig)**: Meghatározza, hogy a csomagaláírás kötelező-e az SMB-kiszolgáló-összetevő számára. Ha ez a beállítás engedélyezve van, a Microsoft hálózati kiszolgáló nem kommunikál a Microsoft hálózati ügyféllel, hacsak az ügyfél bele nem egyezik az SMB-csomagok aláírásába. Ha ez a beállítás **Nem konfigurált** és le van tiltva (alapértelmezett), akkor az SMB-csomagok aláírásának egyeztetése megkezdődik az ügyfél és a kiszolgáló között.
 
 ## <a name="next-steps"></a>További lépések
 

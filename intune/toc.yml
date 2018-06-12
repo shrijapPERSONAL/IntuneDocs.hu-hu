@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Kioszkbeállítások konfigurálása
+          href: kiosk-settings.md
         - name: E-mail-beállítások konfigurálása
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 és Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Oktatás
+          items:
+            - name: Megosztott eszközök iOS-en
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: A Windows 10-kiadás frissítési beállításainak konfigurálása
           href: edition-upgrade-configure-windows-10.md
-        - name: A Windows 10 oktatási funkcióinak konfigurálása
-          href: education-settings-configure.md
-        - name: Az iOS-es oktatási funkciók megosztott eszközeinek konfigurálása
-          href: education-settings-configure-ios-shared.md
         - name: iOS-frissítési szabályzatok konfigurálása
           href: software-updates-ios.md
         - name: Tanúsítványok konfigurálása
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows-szabályzat létrehozása
           href: compliance-policy-create-windows.md
+        - name: Helyalapú házirend
+          href: use-network-locations.md
         - name: Házirend kiértékelése
           href: policy-evaluate.md
         - name: Meg nem felelés esetén végrehajtandó műveletek

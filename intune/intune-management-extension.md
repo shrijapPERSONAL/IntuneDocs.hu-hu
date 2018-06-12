@@ -1,12 +1,11 @@
 ---
-title: PowerShell-parancsfájlok kezelése a Microsoft Intune-ban Windows 10-es eszközök esetén
-titlesuffix: ''
-description: Megtudhatja, hogyan tölthet fel PowerShell-parancsfájlokat a Microsoft Intune-ba, amelyeket Windows 10-es eszközökön futtathat.
+title: PowerShell-parancsfájlok hozzáadása a Microsoft Intune-ban Windows 10-es eszközökhöz – Azure | Microsoft Docs
+description: PowerShell-parancsfájlok hozzáadása, parancsfájlszabályzat hozzárendelése Azure Active Directory-csoportokhoz, parancsfájlok figyelése jelentésekkel, és a parancsfájlok Windows 10 rendszerű eszközökről való törlésének lépései a Microsoft Intune-ban.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583672"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>PowerShell-parancsfájlok kezelése az Intune-ban Windows 10-es eszközök esetén
 Az Intune felügyeleti bővítményével Windows 10-es eszközökön futtatandó PowerShell-parancsfájlokat tölthet fel az Intune-ba. A felügyeleti bővítmény kiegészíti a Windows 10 mobileszköz-kezelési funkcióit, és könnyebbé teszi a modern felügyeletre váltást.
@@ -35,39 +35,33 @@ Az Intune felügyeleti bővítmény kiegészíti a Windows 10 MDM beépített fu
 Az Intune felügyeleti bővítmény előfeltételei a következők:
 - Az eszközöknek csatlakozniuk kell az Azure AD-hoz. Ez a Hybrid AD-hoz csatlakoztatott eszközökre nem vonatkozik.
 - Az eszközöknek a Windows 10 1607-es vagy újabb verziójával kell rendelkezniük.
+- Az automatikus MDM-regisztrációt [engedélyeznie kell az Azure AD-ban](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), és az eszközöket automatikusan regisztrálnia kell az Intune-ban.
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell-parancsfájlhoz tartozó szabályzat létrehozása 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
-5. A **PowerShell-parancsfájlok** panelen válassza a **Hozzáadás** lehetőséget.
-6. A **PowerShell-parancsfájl hozzáadása** panelen adjon meg a PowerShell-parancsfájl **Nevét** és **Leírását**.
-7. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A szkriptnek 200 kB-nál kisebbnek kell lennie.
-8. Válassza a **Konfigurálás** lehetőséget, majd adja meg, hogy a parancsfájl a felhasználó hitelesítő adataival fusson-e az eszközön (**Igen**) vagy a rendszerkörnyezetben (**Nem**). Alapértelmezés szerint a parancsfájl a rendszerkörnyezetben fut. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget. 
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközkonfiguráció** > **PowerShell-parancsfájlok** > **Hozzáadás** lehetőséget.
+4. Adja meg a PowerShell-parancsfájl nevét és leírását a **Név** és a **Leírás** mezőben. A **Parancsfájl helye** beállításhoz keresse meg a PowerShell-parancsfájlt. A parancsfájlnak 200 KB-nál (ASCII) vagy 100 KB-nál (Unicode) kisebbnek kell lennie.
+5. Válassza a **Konfigurálás** elemet. Ezután adja meg, hogy a parancsfájl a felhasználó hitelesítő adataival fusson-e az eszközön (**Igen**) vagy a rendszerkörnyezetben (**Nem**). Alapértelmezés szerint a parancsfájl a rendszerkörnyezetben fut. Hacsak a parancsfájlt nem a rendszerkörnyezetben kell futtatnia, válassza az **Igen** lehetőséget. 
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-add-script.png)
-9. Adja meg, hogy a parancsfájl megkövetelje-e egy megbízható közzétevő aláírását (**Igen**). Alapértelmezés szerint a parancsfájl aláírása nem kötelező. 
-10. A parancsfájl mentéséhez kattintson az **OK** gombra, majd a **Létrehozás** lehetőségre.
+6. Adja meg, hogy a parancsfájl megkövetelje-e egy megbízható közzétevő aláírását (**Igen**). Alapértelmezés szerint a parancsfájl aláírása nem kötelező. 
+7. A parancsfájl mentéséhez válassza az **OK**, majd a **Létrehozás** gombot.
 
 ## <a name="assign-a-powershell-script-policy"></a>PowerShell-parancsfájlhoz tartozó házirend hozzárendelése
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
-5. A **PowerShell-parancsfájlok** panelen válassza ki a hozzárendelni kívánt parancsfájlt, majd válassza a **Felügyelet** > **Hozzárendelések** lehetőséget.
+1. A **PowerShell-parancsfájlok** panelen válassza ki a hozzárendelni kívánt parancsfájlt, majd válassza a **Kezelés** > **Hozzárendelések** lehetőséget.
   ![PowerShell-parancsfájl hozzáadása panel](./media/mgmt-extension-assignments.png)
  
-6. Az elérhető Azure AD-csoportok listázásához válassza a **Csoportok kiválasztása** lehetőséget. 
-7. Jelöljön ki egy vagy több olyan csoportot, amelyek azokat a felhasználókat tartalmazzák, akiknek az eszközeire telepíteni szeretné a parancsfájlt, majd a **Kiválasztás** lehetőségre kattintva társítsa a szabályzatot a kijelölt csoportokhoz.
+2. Az elérhető Azure AD-csoportok listázásához válassza a **Csoportok kiválasztása** lehetőséget. 
+3. Jelöljön ki egy vagy több olyan csoportot, amelyek azokat a felhasználókat tartalmazzák, akiknek az eszközeire telepíteni szeretné a parancsfájlt. Válassza a **Kiválasztás** lehetőséget a szabályzat kijelölt csoportokhoz rendeléséhez.
 
 Az Intune felügyeleti bővítmény óránként szinkronizál az Intune-nal. Miután hozzárendelte a szabályzatot az Azure AD-csoportokhoz, elindul a PowerShell-parancsfájl, és elkészül a futtatási eredmények jelentése. 
  
 ## <a name="monitor-run-status-for-powershell-scripts"></a>A PowerShell-parancsfájlok futtatási állapotának figyelése
 Megfigyelheti a felhasználók és eszközök PowerShell-parancsfájljainak futtatási állapotát az Azure Portalon.
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Az **Intune** panelen válassza az **Eszközkonfiguráció** lehetőséget.
-4. Az **Eszközkonfiguráció** panelen válassza a **Felügyelet** > **PowerShell-parancsfájlok** lehetőséget.
-5. A **PowerShell-parancsfájlok** panelen válassza ki a megfigyelendő parancsfájlt, válassza a **Figyelés** lehetőséget, majd válassza ki az alábbi jelentések egyikét:
+
+A **PowerShell-parancsfájlok** panelen válassza ki a megfigyelendő parancsfájlt, válassza a **Figyelés** lehetőséget, majd válassza az alábbi jelentések egyikét:
    - **Eszközállapot**
    - **Felhasználó állapota**
+
+## <a name="delete-a-powershell-script"></a>PowerShell-parancsfájl törlése
+A **PowerShell-parancsfájlok** panelen kattintson a jobb gombbal a parancsfájlra, és válassza a **Törlés** lehetőséget.

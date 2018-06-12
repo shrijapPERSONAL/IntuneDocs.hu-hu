@@ -1,23 +1,24 @@
 ---
-title: "Eszközök távoli felügyelete a Microsoft Intune-ban – Azure | Microsoft Docs"
-description: "Áttekintés a TeamViewer használatához szükséges szerepkörökről, és a TeamViewer-összekötő telepítéséről, valamint lépésenkénti útmutató eszközök távoli felügyeletéhez a Microsoft Intune használatával az Azure Portalon"
-keywords: 
+title: Eszközök távoli felügyelete a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Áttekintés a TeamViewer használatához szükséges szerepkörökről, és a TeamViewer-összekötő telepítéséről, valamint lépésenkénti útmutató eszközök távoli felügyeletéhez a Microsoft Intune használatával az Azure Portalon
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744635"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>A TeamViewer használata Intune-eszközök távoli felügyeletéhez
 
@@ -25,7 +26,7 @@ Az Intune által kezelt eszközök a [TeamViewer](https://www.teamviewer.com) ha
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- Használjon támogatott eszközt. Az Intune-nal felügyelt Android- és Windows-eszközök támogatják a távfelügyeletet. A TeamViewer nem feltétlenül támogatja a Windows Holographic (HoloLens), Windows Team (Surface Hub), vagy Windows 10 S rendszerű eszközöket. A támogatással kapcsolatban tekintse át a [TeamViewer](https://www.teamviewer.com) frissítéseit.
+- Használjon támogatott eszközt. Az Intune-nal felügyelt Android-, Windows-, iOS- és macOS-eszközök támogatják a távfelügyeletet. A TeamViewer nem feltétlenül támogatja a Windows Holographic (HoloLens), Windows Team (Surface Hub), vagy Windows 10 S rendszerű eszközöket. A támogatással kapcsolatban tekintse át a [TeamViewer](https://www.teamviewer.com) frissítéseit.
 
 - Az Azure Portal-beli Intune rendszergazdának a következő [Intune-szerepkörökkel](role-based-access-control.md) kell rendelkeznie:  
 

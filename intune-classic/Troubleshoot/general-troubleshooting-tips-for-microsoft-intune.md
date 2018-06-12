@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718029"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Általános hibaelhárítási tippek a Microsoft Intune rendszerhez
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 Előfordulhat, hogy a Microsoft Intune telepítése után problémák merülnek fel a konfigurációval vagy az ügyféleszközökkel kapcsolatban. Az alábbi információk segítségével megtalálhatja a probléma okát, és így megoldhatja a problémát.
 
 > [!NOTE]
-> Ha támogatási kérelmet szeretne létrehozni, vagy egy meglévő kérelmet kíván megtekinteni, [nyissa meg az Office 365 felügyeleti központját](https://portal.office.com/admin/default.aspx). A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben találhat további információkat.
+> Támogatási kérelem létrehozásához vagy meglévő kérelem megtekintéséhez [nyissa meg az Azure Súgó és támogatás](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oldalát. A támogatási lehetőségekről a [Hogyan kérhet támogatást az Intune-hoz](how-to-get-support-for-microsoft-intune.md) című témakörben találhat további információkat.
 
 ## <a name="define-the-problem"></a>A probléma meghatározása
 

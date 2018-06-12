@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744601"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>VPN-profilok létrehozása az Intune-ban
 
@@ -41,18 +42,19 @@ A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
 |Kapcsolat típusa|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Igen|Igen|Igen|Igen|Igen|Igen|
-|Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
-|Citrix|Igen|Igen|Nem|Nem|Nem|Igen|
-|F5 Edge Client|Igen|Igen|Igen|Igen|Igen|Igen|
-|SonicWall Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
+|Automatikus|Nem|Nem|Nem|Nem|Nem|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
 |Cisco AnyConnect|Igen|Igen|Igen|Nem|Nem|Nem|
-|Automatikus|Nem|Nem|Nem|Nem|Nem|Igen|
+|SonicWall Mobile Connect|Igen|Igen|Igen|Igen|Igen|Igen|
+|F5 Edge Client|Igen|Igen|Igen|Igen|Igen|Igen|
+|Palo Alto Hálózatok GlobalProtect|Nem|Igen|Nem|Nem|Nem|Igen|
+|Pulse Secure|Igen|Igen|Igen|Igen|Igen|Igen|
+|Cisco (IPSec)|Nem|Igen|Nem|Nem|Nem|Nem|
+|Citrix|Igen (csak Android esetén)|Igen|Nem|Nem|Nem|Igen|
 |IKEv2|Nem|Nem|Nem|Nem|Nem|Igen|
 |L2TP|Nem|Nem|Nem|Nem|Nem|Igen|
 |PPTP|Nem|Nem|Nem|Nem|Nem|Igen|
-|Egyéni|Nem|Igen|Igen|Nem|Nem|Nem|
+|Egyéni VPN|Nem|Igen|Igen|Nem|Nem|Nem|
 
 > [!IMPORTANT]
 > Az eszközökre alkalmazott VPN-profilok használatához telepíteni kell a megfelelő VPN-alkalmazást a profilhoz. Az alkalmazás Intune-nal történő hozzárendeléséhez [A Microsoft Intune-alkalmazásfelügyelet ismertetése](app-management.md) című témakörben talál segítséget.  

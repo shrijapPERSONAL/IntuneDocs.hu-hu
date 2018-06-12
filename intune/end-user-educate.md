@@ -1,11 +1,11 @@
 ---
 title: A végfelhasználók felkészítése a Microsoft Intune használatára | Microsoft Intune
-description: Tájékoztassa a végfelhasználókat, hogy sikeres legyen az Intune bevezetése.
+description: Tájékoztassa az eszközfelhasználókat az Intune sikeres bevezetése érdekében.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/10/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,46 +13,51 @@ ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717995"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>A végfelhasználók felkészítése a Microsoft Intune használatára
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, miközben gondoskodik a vállalati adatok védelméről. A rendszer sikeres bevezetését több lépésben végezheti el, beleértve az Intune kipróbálását az [ingyenes próbaverzióval](app-sdk.md).
+A Microsoft Intune segít a munkatársak mobileszközökkel való ellátásában, és gondoskodik a céges adatok védelméről. Az Intune cégen belüli teszteléséhez kipróbálhatja az [ingyenes verziót](app-sdk.md).
 
-Azonban semmilyen technológia nem garantálja azt, hogy a felhasználók fel is ismerik az eszközfelügyelet fontosságát. Sőt, számos végfelhasználó gondolhatja úgy, hogy Ön hozzáfér a személyes adataikhoz – különösen ha az Intune bevezetése [saját eszközök használatával](/enterprise-mobility-security/solutions/byod-design-considerations-guide) történik.
+A Microsoft Intune bevezetésekor fontos, hogy a munkatársak megértsék az eszközfelügyelet és a céges mobilitás szükségességét. Ha nem ad nekik magyarázatot, néhányan úgy érezhetik, hogy Ön illetéktelenül fér hozzá az adataikhoz. Tovább erősítheti az adatvédelemmel kapcsolatos aggodalmakat, ha az Intune-t hozott eszközökön, [BYOD-megoldásként](/enterprise-mobility-security/solutions/byod-design-considerations-guide) telepíti.
 
 > [!Important]
-> A végfelhasználók vállalati eszközfelügyelettel kapcsolatos kétségeinek megismerése és ezek proaktív kezelése a rendszer sikeres bevezetésének kritikus fontosságú része.
+> A céges eszközfelügyeletet érintő felhasználói aggodalmak megértése és ezek proaktív kezelése a rendszer bevezetésének kritikus fontosságú része.
 
-A bevezetés nem csak a technológia beüzemeléséről és az eszközök szétosztásáról szól, hanem a megfelelő tájékoztatásról is, mivel a végfelhasználók csak így értékelhetik igazán az Intune által nyújtott biztonságos hozzáférést. A felhasználók idegenkedhetnek a nagyvállalati mobilitástól, ha nem magyarázza el számukra, hogy a rendszer pontosan mire jó, illetve mire képes (vagy nem képes).
+A sikeres bevezetéshez nem elég csupán ellátni a munkatársakat az új, funkcionális technológiával. Meg is kell ismertetni és el kell fogadtatni velük az új technológiát. Ezért fontos a felhasználók számára az Intune által nyújtott adatvédelem megértése és elfogadása. 
 
-## <a name="things-to-consider-about-your-end-users"></a>Amire érdemes figyelni a végfelhasználókkal kapcsolatban
+## <a name="things-to-consider-about-your-users"></a>Amire érdemes odafigyelni a felhasználókkal kapcsolatban
 
-__Milyen szintű tapasztalattal rendelkeznek a végfelhasználók?__ A végfelhasználók a különböző technológiák használata során különböző tapasztalatokra tesznek szert. Ezek a tapasztalatok lehetnek pozitívak (például olyan emlékezetes fényképek, amelyeket a végfelhasználó készített a gyermekeiről) vagy lehetnek negatívak (például amikor a végfelhasználó beleejti a mobilkészülékét a lefolyóba, és minden olyan adatot elveszít róla, amelyről nincs biztonsági mentés). Az ilyen tapasztalatok határozzák meg azt, hogy a végfelhasználók miként viszonyulnak a technológiához, és mit gondolnak az eszközök személyes és üzleti célú felhasználásáról.
+__Milyen szintű technológiai tapasztalattal rendelkeznek a felhasználók?__ A felhasználók technológiai ismeretei és tapasztalatai eltérőek lehetnek. A tapasztalatok lehetnek pozitívak, mint például egy családi fényképezkedés a nyaraláson, vagy negatívak, mint amikor valaki beleejt egy eszközt a mosogatóba. A tapasztalatok befolyásolják a felhasználók viszonyát a személyes és a céges technológia használatához.
 
-__Mit jelent számomra a mobileszköz-kezelés?__ Elképzelhető, hogy a felhasználók nincsenek teljesen tisztában azzal, hogy Ön milyen hozzáféréssel rendelkezik (vagy nem rendelkezik) a felhasználók eszközeihez és adataihoz. A felhasználókat aggaszthatja, hogy az informatikai osztály és a vezetőség esetlegesen nyomon követi minden lépésüket. Ez különösen azokat a kevésbé tapasztalt felhasználókat zavarhatja, akik úgy vélik, hogy az eszközeiken végzett minden tevékenység személyes jellegű. A tapasztaltabb felhasználók konkrét félelmei pedig olyan feltételezésekből származhatnak, amely szerint a Nagy Testvér figyeli őket az eszközeiken, és még az is előfordulhat, hogy a felhasználók terjesztik ezeket a nézeteiket a munkatársak körében.
+__Mit jelent a mobileszköz-kezelés a felhasználók számára?__ Nem biztos, hogy a felhasználók pontosan értik, hogy Ön milyen hozzáféréssel rendelkezik – vagy nem rendelkezik – az eszközükhöz és az adataikhoz. A felhasználók tarthatnak attól, hogy az informatikai részleg vagy a vezetőség nyomon követi a tevékenységüket. A kevésbé tapasztalt eszközhasználók úgy vélhetik, hogy az eszközükön végzett összes tevékenység magánjellegű. 
 
-__Milyen kényelmetlenségek érhetik a végfelhasználókat?__ Az alkalmazások telepítése, az eszközök regisztrálása, valamint a megfelelőség biztosítása időigényes feladat. Az Intune kiemelt prioritása a vállalati adatok biztonságának garantálása, de egy PIN-kód használatának indokolatlan megkövetelése feldühítheti a felhasználókat a személyes eszközeik vállalati felügyeletével kapcsolatban. Ha kötelező alkalmazásfrissítéseket küld egy üzleti szempontból fontos konferenciahívás közepén, csökkentheti a felhasználók termelékenységét. Ez pedig épp ellenkezője annak, amiért eredetileg ellátta őket mobileszközökkel.
+__Milyen kellemetlenségeket okozhat a felhasználóknak az Intune?__  Vegye figyelembe és tartsa tiszteletben, hogy a felhasználóknak időbe telik az alkalmazások telepítése, az eszközregisztráció és a megfelelőség fenntartása. Az Intune központi telepítéseinek legfontosabb eleme minden esetben a céges adatbiztonság. Az eszközhasználatról alkotott felhasználói elképzeléseket azonban rossz irányban befolyásolhatják az olyan szabályzatok, amelyek például a következőkkel járnak együtt:  
+* Érthetetlen PIN-kódok használatának megkövetelése a személyes eszközökön
+* Kötelező alkalmazásfrissítések kiküldése fontos munkafázisok közben  
+
+Az ilyen szabályzatok a munkatársak hatékonyságát is ronthatják. 
 
 ## <a name="things-you-should-do"></a>Tennivalók
 
-Ha eloszlatja a felhasználók aggodalmait, a rendszer bevezetése simább lehet. Az alábbi listában több olyan módszert talál, amelyekkel elősegítheti az eszközfelügyelet végfelhasználói elfogadását.
+Olvassa el az alábbi tippeket az Intune központi telepítésének megkönnyítéséhez a céges felhasználók számára.
 
-* __Legyen segítőkész.__ Az Intune dokumentációja különböző tartalmakkal segíti a végfelhasználókat a feladataik végrehajtásában, ideértve például az eszközök regisztrációját vagy a hibaelhárítást. A tartalmak között találhatók olyan cikkek, amelyeket a rendszer a Céges portálról küld a felhasználóknak. A cikkek különböző szakaszokra oszlanak: a Céges portál alkalmazás telepítése és az Intune-regisztráció; a felhasználók által az eszközökön végrehajtható általános műveletek, valamint a hibaelhárítás. A dokumentáció a [Felügyelt eszközök használata a munkavégzéshez](/intune-user-help/use-managed-devices-to-get-work-done) című témakörben található.
+* __Legyen segítőkész.__ Az Intune dokumentációja segíti a felhasználókat az olyan, kimondottan Intune-ra vonatkozó feladatok elvégzésében, mint az eszközök regisztrációja és hibaelhárítása. Bizonyos témaköröket a felhasználók egyetlen kattintással elérhetnek a Céges portálról. Ezek a témakörök segítenek a Céges portál alkalmazás telepítésében, az Intune regisztrációjában, a felhasználók által az eszközökön végrehajtható általános műveleteknél, és a hibaelhárításban. A dokumentáció listája a [Felügyelt eszközök használata](/intune-user-help/use-managed-devices-to-get-work-done) című cikkben is megtalálható.
 
-* __Legyen elérhető.__ A végfelhasználóknak tudniuk kell, hogy hol kérhetnek segítséget az eszközeikkel kapcsolatban. Ne felejtse el megadni a rendszergazda kapcsolattartási adatait a [Vállalati portál testreszabásakor](company-portal-customize.md), hogy a felhasználók szükség esetén tudjanak segítséget kérni.
+* __Legyen elérhető.__ Tájékoztassa a felhasználókat, hogy az eszköz problémája esetén hol kérhetnek segítséget. Amikor [testre szabja a Céges portált](company-portal-customize.md), ne feledje megadni az informatikai rendszergazda elérhetőségét.
 
-* __Legyen személyes.__ A bevezetett rendszer szempontjából nem elég konkrét útmutatók azt éreztethetik a felhasználókkal, hogy Ön nem veszi figyelembe a felhasználók tapasztalatait. Ezzel a [rendszergazdáknak készült, testreszabható, végfelhasználói Intune-regisztrációs sablonnal](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) saját regisztrációs útmutatót készíthet a végfelhasználóknak.
+* __Legyen személyes.__ Adjon a konkrét cég központi telepítésére vonatkozó útmutatásokat. Ez meggyőzi a felhasználókat, hogy odafigyel a személyes tapasztalataikra. Ezen a [testre szabható, felhasználói Intune-regisztrációs sablonon](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) megadhatja a saját regisztrációs instrukcióit a felhasználók számára.
 
-* __Keresse a különböző kommunikációs lehetőségeket.__ A [különböző tanulási stílusokhoz](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) hasonlóan a felhasználók különböző módon fogyasztanak információkat. Azoknak a felhasználóknak, akik a szövegalapú dokumentációk helyett inkább a videókat kedvelik, [különböző eszköztípusok regisztrációjához készült videotartalmakat](https://channel9.msdn.com/Series/IntuneEnrollment) és sok minden mást kínálunk a 9-es csatornán. A videókat közvetlenül be lehet ágyazni saját [SharePoint-webhelyekre](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581), vagy le lehet tölteni őket helyi példányként – akár csak hanggal vagy képpel.
+* __Keresse a különböző kommunikációs lehetőségeket.__ A felhasználók [eltérő stílusban tanulnak](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), és különböznek az információfogyasztási szokásaik is. A vizuális típusok számára az Intune a Channel 9 oldalán elérhetővé tette [a különböző eszköztípusok regisztrációját bemutató videókat](https://channel9.msdn.com/Series/IntuneEnrollment). A videókat közvetlenül beágyazhatja a saját [SharePoint-oldalán](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Helyi példányokat is letölthet a videókról vagy a hanganyagokról.
 
-* __Legyen figyelmes.__ A végfelhasználói tapasztalatok hatással vannak a termelékenységre, ezért ezek megértése egyszerűsíti az aktuálisan felmerülő problémák megoldását. Ha tisztában van azzal, hogy a végfelhasználók miként töltenek le alkalmazásokat, egyszerűbbé teheti a felhasználók által tapasztalt problémák diagnosztizálását, és elősegítheti a problémák gyorsabb megoldását.
+* __Legyen figyelmes.__ Az Intune-felhasználók tapasztalatai az Ön munkájának hatékonyságát is érintik. Ha megérti ezeket a tapasztalatokat, könnyebben oldhatja meg az eszközök és a felhasználók problémáit. Például tájékozódhat arról, hogy a felhasználók milyen módon jutnak hozzá az alkalmazásokhoz. Ha előre tájékozódik, könnyebben és gyorsabban diagnosztizálhatja és javíthatja a hibákat.
 
 * **Android**
   * [Android-eszköz használata az Intune-nal](/intune-user-help/using-your-android-device-with-intune)
@@ -66,9 +71,9 @@ Ha eloszlatja a felhasználók aggodalmait, a rendszer bevezetése simább lehet
   * [Windows-eszköz használata az Intune-nal](/intune-user-help/using-your-windows-device-with-intune)
   * [Windows-felhasználói alkalmazások letöltése](end-user-apps-windows.md)
 
-* __Legyen előrelátó.__ Egyértelműen mondja el a felhasználóknak, hogy pontosan milyen adatokat felügyel az eszközeiken. Mondja el nekik, hogy milyen típusú adatokat gyűjt, és miért gyűjti azokat. Tájékoztassa őket arról, hogy miként tervezi az eszközadatok felhasználását. [A Microsoft hisz abban, hogy felhasználóknak joga van a lehető legrészletesebben megismerni az ügyféladatok felhőben történő kezelésének módját](https://www.microsoft.com/trustcenter/about/transparency), és hiszünk abban, hogy ez a filozófia jelentősen növelheti a végfelhasználók Intune-nal való elégedettségét.
+* __Legyen előrelátó.__ Közölje érthetően, hogy mit fog felügyelni a felhasználói eszközökön. Mondja el a felhasználóknak, hogy milyen adatokat gyűjt, és miért. Tájékoztassa őket az adatok tervezett felhasználási módjáról. [A Microsoft hisz abban, hogy a felhasználóknak joga van a lehető legrészletesebben megismerni az ügyféladatok felhőbeli kezelésének módját](https://www.microsoft.com/trustcenter/about/transparency), és hogy ez a filozófia jelentősen növelheti a véghasználók Intune-nal való elégedettségét.
 
 >[!Note]
 > Amikor csak lehetséges, az átláthatóság központi elemét képezi a rendszer sikeres bevezetésének.
 
-A bizalomnak és a gondosan megfogalmazott megfelelőségi szabályzatoknak köszönhetően a végfelhasználók tisztában lehetnek azzal, hogy bár Ön *képes* betekinteni bizonyos személyes adatokba, ez *nincsen szándékában*, és vállalja a felelősséget a felhasználók személyes adatainak megsértéséért. Ha a jogi és a HR-részleggel közösen fogalmaz meg egy nyilatkozatot, a különösen nehezen kezelhető alkalmazottak aggodalmait is eloszlathatja.
+Fontos, hogy a bizalom együtt járjon a jól kialakított szabályzatokkal. A felhasználóknak tudniuk kell, hogy még ha *lehetősége* van is bizonyos személyes adatok megtekintésére, akkor sincs ilyen *szándéka*. Segítse őket annak megértésében, hogy Ön felelősségre vonható a személyes adataik esetleges megsértéséért. A cég jogi és HR-részlegének segítségével nyilatkozatot tehet, amely tovább enyhítheti a munkatársak aggodalmait.

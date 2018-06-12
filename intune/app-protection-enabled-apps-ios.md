@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703281"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Milyen hatással vannak az iOS-alkalmazásokra az alkalmazásvédelmi szabályzatok?
 
@@ -39,7 +40,7 @@ Az **Intune-kezelésre regisztrált** eszközöknél üzenet jelenik meg, amely 
 
 ##  <a name="using-apps-with-multi-identity-support"></a>A többszörös identitást támogató alkalmazások használata
 
-Az alkalmazásvédelmi szabályzatok csak akkor lépnek hatályba, amikor egy felhasználó munkához kapcsolódó adatokhoz próbál meg hozzáférni.  A működés eltérő lehet, ha a felhasználó személyes használatra nyitja meg az alkalmazást. 
+Az alkalmazásvédelmi szabályzatok csak akkor lépnek hatályba, amikor egy felhasználó munkához kapcsolódó adatokhoz próbál hozzáférni. A működés eltérő lehet, ha a felhasználó személyes használat céljából kísérel meg hozzáférni az alkalmazáshoz. A szabályzatok nem vonatkoznak a nem mentett új tartalmakra sem. Az új tartalom csak akkor minősül céges adatnak, ha céges helyen, például a SharePointon vagy a OneDrive vállalati verzión mentették.
 
 A többszörös identitást támogató alkalmazások esetében az Intune csak akkor alkalmaz alkalmazásvédelmi szabályzatokat, ha egy felhasználó munkahelyi adatokhoz fér hozzá.  A rendszer például bekérheti a felhasználótól a PIN-kódot.  Az **Outlook alkalmazásban** akkor jelenik meg adatkérdés, ha egy felhasználó elindítja az alkalmazást. A **OneDrive alkalmazásban** akkor jelenik meg adatkérdés, ha egy felhasználó megadja a munkahelyi fiókot.  A Microsoft **Word**, **PowerPoint** és **Excel** alkalmazásban akkor jelenik meg adatkérdés, ha egy felhasználó a céges OneDrive-on található dokumentumokhoz fér hozzá.
 ##  <a name="managing-user-accounts-on-the-device"></a>Felhasználói fiókok kezelése az eszközön
