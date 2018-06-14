@@ -137,6 +137,7 @@
 ### [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
 
 ### [A Windows gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
+### [Hozzáférésipont-korlátozások feloldása](resolve-access-point-restrictions.md)
 #### [Nem tudom regisztrálni a Windows 10-es eszközömet](troubleshoot-your-windows-10-device-windows.md)
 #### [Windows-eszköz frissítése](you-need-to-update-your-windows-device.md)
 #### [Naplók elküldése a Céges portál alkalmazásból](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Eltávolíthatja az eszközét](remove-your-device-cpwebsite.md)
 ### [Kezdeményezheti az eszköz PIN-kódjának alaphelyzetbe állítását](reset-your-passcode-cpwebsite.md)
 ### [Eszköz alaphelyzetbe állítása és törlése](reset-erase-your-device-cpwebsite.md)
-### [Az eszköz manuális szinkronizálása](sync-your-device-manually-cpwebsite.md)
