@@ -148,7 +148,7 @@
         - name: Regisztrációs beállítások
           href: enrollment-options.md
           items:
-            - name: Használati feltételek
+            - name: használati feltételei
               href: terms-and-conditions-create.md
             - name: Korlátozások
               href: enrollment-restrictions-set.md
@@ -158,7 +158,7 @@
               href: corporate-identifiers-add.md
             - name: Többtényezős hitelesítés
               href: multi-factor-authentication.md
-            - name: Eszközregisztráció-kezelő
+            - name: Készülékregisztráció-kezelő
               href: device-enrollment-manager-enroll.md
             - name: Eszközök hozzárendelése csoportokhoz
               href: device-group-mapping.md
@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: macOS-regisztráció beállítása
           href: macos-enroll.md
+        - name: Az Intune-szoftverügyfél telepítése Windows rendszerű számítógépekre
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: Eszközök regisztrálásával kapcsolatos problémák elhárítása
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: Kezelje az eszközöket
       href: device-management.md
       items:
@@ -259,6 +263,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB apps
                   href: lob-apps-windows.md
+                - name: Windows LOB-alkalmazások közvetlen telepítése
+                  href: app-sideload-windows.md
                 - name: macOS-es üzletági alkalmazások
                   href: lob-apps-macos.md
             - name: Webalkalmazások
@@ -499,7 +505,7 @@
         - name: Adatvédelem és személyes adatok
           href: privacy-personal-data.md
           items:
-            - name: 'Adatgyűjtés '
+            - name: Adatgyűjtés
               href: privacy-data-collect.md
             - name: Adattárolás és -feldolgozás
               href: privacy-data-store-process.md
@@ -678,8 +684,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Windowsos üzletági alkalmazások közvetlen telepítése
-          href: app-sideload-windows.md
 - name: Fejlesztői útmutatás
   items:
     - name: Alkalmazások védelme az Intune App SDK-val
