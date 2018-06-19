@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831945"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Az Android rendszerű eszközökre vonatkozó VPN-beállítások konfigurálása a Microsoft Intune-ban 
 

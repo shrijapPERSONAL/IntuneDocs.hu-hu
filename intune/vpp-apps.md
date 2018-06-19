@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34224398"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Mennyiségi programban vásárolt alkalmazások és könyvek kezelése a Microsoft Intune-nal
 

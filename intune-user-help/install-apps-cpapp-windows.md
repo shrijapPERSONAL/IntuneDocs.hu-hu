@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927321"
 ---
 # <a name="install-apps-on-your-device"></a>Alkalmazások telepítése az eszközön
 Alkalmazások telepítése az eszközön Windows Céges portál alkalmazásból.

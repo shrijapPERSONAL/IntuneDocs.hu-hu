@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028061"
 ---
 # <a name="change-the-mdm-authority"></a>Az MDM-szolgáltató módosítása
 A Configuration Manager 1610-es verziójától kezdődően anélkül módosíthatja az MDM-szolgáltatót, hogy fel kellene vennie a kapcsolatot a Microsoft ügyfélszolgálatával, valamint anélkül, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt. Az ebben a témakörben található lépésekkel anélkül módosíthatja egy meglévő Microsoft Intune-bérlő Intune beállítását és az MDM-szolgáltató **Microsoft Intune** (önálló) beállítását **Configuration Manager** (hibrid MDM) értékre, hogy el kellene végeznie a már felügyelt eszközök regisztrációjának törlését és az újbóli regisztrációt.

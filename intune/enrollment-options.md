@@ -1,22 +1,23 @@
 ---
-title: "A Microsoft Intune által kezelt eszközök regisztrációs beállításai"
-titleSuffix: 
-description: "A Microsoft Intune által kezelt eszközökön a rendszergazdák által megadható regisztrációs beállítások."
-keywords: 
+title: A Microsoft Intune által kezelt eszközök regisztrációs beállításai
+titleSuffix: ''
+description: A Microsoft Intune által kezelt eszközökön a rendszergazdák által megadható regisztrációs beállítások.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
 ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29748718"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Az Intune által kezelt eszközök regisztrációs beállításai
 

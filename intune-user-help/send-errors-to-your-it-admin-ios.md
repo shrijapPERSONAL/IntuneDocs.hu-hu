@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327704"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Hibák elküldése a cég informatikai támogatási szolgálatának az iOS-eszköz problémái alapján
 Előfordulhat, hogy hibát tapasztal iOS-eszközén a Céges portál alkalmazás használata során. Ilyen esetben e-mailt küldhet a cég támogatási szakemberének a hiba részleteivel. Ezek a részletek adják meg a hibához kapcsolódó, annak felderítéséhez szükséges információkat.

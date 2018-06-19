@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018481"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>A cikk ismerteti, mire lehet számítani olyan alkalmazás használata esetén, amelyre alkalmazásalapú feltételes hozzáférés érvényes.
 

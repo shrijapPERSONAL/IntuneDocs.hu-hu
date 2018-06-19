@@ -1,16 +1,16 @@
 ---
-title: "Az Intune tesztelése és ellenőrzése"
+title: Az Intune tesztelése és ellenőrzése
 titlesuffix: Microsoft Intune
-description: "Teljes mértékben felhőalapú Intune-megoldás tesztelése és ellenőrzése saját környezetben."
-keywords: 
+description: Teljes mértékben felhőalapú Intune-megoldás tesztelése és ellenőrzése saját környezetben.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29720682"
 ---
 # <a name="intune-testing-and-validation"></a>Az Intune tesztelése és ellenőrzése
 

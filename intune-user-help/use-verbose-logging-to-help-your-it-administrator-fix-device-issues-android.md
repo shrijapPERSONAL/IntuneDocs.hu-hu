@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016764"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>A cég informatikai támogatási szolgálatának segítése az eszközproblémák megoldásában részletes naplózással
 

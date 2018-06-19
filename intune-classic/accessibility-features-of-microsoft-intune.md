@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013058"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>A Microsoft Intune kisegítő lehetőségei
 A Microsoft Windows kisegítő lehetőségei mellett a Microsoft Intune-t az alábbi szolgáltatások teszik könnyebben használhatóvá a fogyatékkal élők számára: Billentyűparancsok használata

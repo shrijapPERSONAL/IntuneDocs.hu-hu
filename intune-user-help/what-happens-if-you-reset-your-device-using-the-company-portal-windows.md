@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755487"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Mi történik, ha alaphelyzetbe állít egy saját Windows-eszközt a Vállalati portálon?
 

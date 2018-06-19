@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021517"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Alkalmazásvédelmi szabályzatok figyelése a Microsoft Intune-ban
 Figyelheti a felhasználókra vonatkozó alkalmazásvédelmi szabályzatok megfelelőségi állapotát. Itt információkat találhat az alkalmazásvédelmi szabályzatok által érintett felhasználókról, azok megfelelőségi állapotáról, valamint a felhasználók által esetlegesen tapasztalt problémákról.

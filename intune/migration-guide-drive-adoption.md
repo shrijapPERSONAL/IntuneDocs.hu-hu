@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29926388"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>A végfelhasználói bevezetés ösztönzése feltételes hozzáféréssel a Microsoft Intune-ban
 

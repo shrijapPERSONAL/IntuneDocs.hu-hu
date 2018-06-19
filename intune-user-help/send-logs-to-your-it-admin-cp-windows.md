@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915494"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Naplók küldése a cég informatikai támogató szolgálatának a Windows 10 céges portál alkalmazásából
 

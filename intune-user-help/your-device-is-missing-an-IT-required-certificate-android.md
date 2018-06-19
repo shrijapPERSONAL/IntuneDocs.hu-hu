@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019857"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Az androidos eszközhöz hiányzik egy, a cég informatikai támogató szolgálata által kért tanúsítvány
 

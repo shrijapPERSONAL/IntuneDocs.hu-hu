@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755967"
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>El kell hárítania egy fenyegetést, amelyet a SandBlast Mobile Protect észlelt
 

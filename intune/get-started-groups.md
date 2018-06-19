@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021013"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Csoport létrehozása a felhasználók és az adathozzáférés kezeléséhez
 

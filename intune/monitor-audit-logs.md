@@ -1,21 +1,22 @@
 ---
-title: "Auditnaplók Microsoft Intune-tevékenységekhez"
-description: "Útmutató a Microsoft Intune-tevékenységeket rögzítő auditnaplók áttekintéséhez."
-keywords: 
+title: Auditnaplók Microsoft Intune-tevékenységekhez
+description: Útmutató a Microsoft Intune-tevékenységeket rögzítő auditnaplók áttekintéséhez.
+keywords: ''
 ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
 ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29962446"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Auditnaplók Intune-tevékenységekhez
 Az auditnaplókban a Microsoft Intune-ban változást előidéző tevékenységek jegyzéke érhető el. A létrehozási, frissítési (szerkesztési), törlési és hozzárendelési műveletek, illetve a távoli feladatok naplózott eseményeket generálnak, melyek megtekinthetők. A legtöbb Intune-beli számítási feladat auditnaplói megtekinthetők. A naplózás alapértelmezés szerint engedélyezve van az összes ügyfél számára, és nem tiltható le. A naplózási események 2017 decemberében, az új funkció megjelenésekor kezdődtek, az ezt megelőző események így nincsenek rögzítve.

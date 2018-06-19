@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832949"
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work-eszközök egyéni Intune profilbeállításainak létrehozása
 

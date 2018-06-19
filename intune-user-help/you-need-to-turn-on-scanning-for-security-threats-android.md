@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073818"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>A biztonsági fenyegetések keresésének engedélyezése az eszközön 
 Ha tudtán kívül egy nem biztonságos alkalmazást telepít, azzal kockázatnak teheti ki az eszközadatokat. Az eszközadatok védelme érdekében azt javasoljuk, ügyeljen a következőkre: 

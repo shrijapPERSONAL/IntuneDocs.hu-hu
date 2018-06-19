@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831158"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>A Windows 10 rendszerű eszközökre vonatkozó e-mail-profilbeállítások a Microsoft Intune-ban
 
