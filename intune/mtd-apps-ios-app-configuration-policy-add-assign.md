@@ -77,7 +77,7 @@ Engedélyezze az Azure Active Directory-hitelesítést iOS-felhasználók szám�
 
 1. Lépjen az [Azure Portalra](https://portal.azure.com), jelentkezzen be a hitelesítő adataival, majd nyissa meg az alkalmazás lapot.
 
-2. Adja hozzá a **Lookout for Work iOS alkalmazást****natív ügyfélalkalmazásként**.
+2. Adja hozzá a **Lookout for Work iOS alkalmazást natív ügyfélalkalmazásként**.
 
 3. Cserélje le a **com.lookout.enterprise.yourcompanyname** sort az IPA aláírásakor választott ügyfélcsomag-azonosítóval.
 
