@@ -672,8 +672,12 @@
           href: troubleshoot-software-updates-in-microsoft-intune.md
         - name: Az Endpoint Protection hibáinak elhárítása
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Szabályzatok hibakeresése
+        - name: Szabályzatokkal kapcsolatos problémák elhárítása
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: A feltételes hozzáférés hibaelhárítása
+          href: troubleshoot-conditional-access.md
+        - name: Az Exchange-összekötő hibaelhárítása
+          href: troubleshoot-exchange-connector.md
     - name: Automatizálás és testreszabás
       items:
         - name: Egyéni eszközbeállítások konfigurálása
