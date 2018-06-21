@@ -135,6 +135,7 @@
 ### [Mi történik az eszköz alaphelyzetbe állításakor?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [A használatra vonatkozó adatok Microsoft általi gyűjtésének kikapcsolása](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Az eszköz manuális szinkronizálása](sync-your-device-manually-windows.md)
+### [Eszközök távoli zárolása Windows 10-es eszközről](remote-lock-your-device-cp-app.md) 
 
 ### [A Windows gyakori problémáinak elhárítása](troubleshoot-your-device-windows.md)
 ### [Hozzáférésipont-korlátozások feloldása](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [Engedélyezni kell a felhasználói fiókok felügyeletét](you-need-to-enable-uac-windows.md)
 #### [Frissíteni kell a Windows-t](you-need-to-update-os-build-version-windows.md)
 #### [Be kell kapcsolni a Windows Defendert](turn-on-defender-windows.md)
-## [Eszköz távoli zárolása az Intune Céges portál alkalmazásból Windows rendszerben](remote-lock-your-device-cp-app.md) 
+
 ## [Az Intune Munkahelyi portál webhelyének használata](using-the-intune-company-portal-website.md)
 ### [Eszköz távoli zárolása](remote-lock-your-device-cpwebsite.md)
 ### [Átnevezheti az eszközét](rename-your-device-cpwebsite.md)
