@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547488"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>IOS-eszköz eltávolítása az Intune-ból
 
@@ -59,6 +60,8 @@ Ha az eszközt el szeretné távolítani az Intune-ból, kövesse az alábbi lé
   -   A rendszer eltávolítja a vállalati e-mail profilokat az eszközről.
 
   -   A csak levelezéshez konfigurált eszközök nem fognak megjelenni a Vállalati portál alkalmazásban és a vállalati portál webhelyén.
+  
+  -   Törlődnek az alkalmazások. Törlődnek a vállalati alkalmazásadatok.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>A Céges portál alkalmazás által gyűjtött adatok eltávolítása
 

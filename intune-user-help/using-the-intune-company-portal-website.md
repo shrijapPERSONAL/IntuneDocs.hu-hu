@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762229"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Az Intune vállalati portál webhelyének használata
 A [Munkahelyi portál webhelye](https://portal.manage.microsoft.com#HelpDeskDialog) egy olyan weblap, amellyel az Intune-ban regisztrált számítógépeket és eszközöket lehet kezelni.
@@ -37,8 +38,6 @@ A következőket teheti a felhasználó a Munkahelyi portál webhelyen:
 -   [Kezdeményezheti az eszköz PIN-kódjának alaphelyzetbe állítását](reset-your-passcode-cpwebsite.md)
 
 -   [Távolról zárolhatja az eszközét](remote-lock-your-device-cpwebsite.md)
-
--   [Manuálisan szinkronizálhatja az eszközt az alkalmazástelepítés felgyorsítása érdekben](sync-your-device-manually-cpwebsite.md)
 
 -   Megkeresheti a cég informatikai támogatási szolgálatának elérhetőségét, ha be vannak állítva ezek az adatok
 
