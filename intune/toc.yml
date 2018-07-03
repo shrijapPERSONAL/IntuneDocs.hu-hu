@@ -557,6 +557,11 @@
               items:
                 - name: A Zimperium és az Intune integrációja
                   href: zimperium-mtd-connector-integration.md
+            - name: A Pradeo beállítása
+              href: pradeo-mobile-threat-defense-connector.md
+              items:
+                - name: A Pradeo és az Intune közötti integráció
+                  href: pradeo-mtd-connector-integration.md
             - name: Az Intune beállítása az MTD-hez
               items:
                 - name: MTD-alkalmazások hozzáadása
