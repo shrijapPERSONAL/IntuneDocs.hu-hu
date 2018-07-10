@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474446"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
@@ -206,13 +207,17 @@ Lásd: [iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs p
 ## <a name="renew-a-dep-token"></a>DEP-token megújítása  
 1. Ugrás a deploy.apple.com címre.  
 2. A **Manage Servers** (Kiszolgálók kezelése) területen válassza ki a megújítani kívánt token-fájlhoz társított MDM-kiszolgálót.
-3. Válassza a **Generate New Token** (Új token létrehozása) lehetőséget.  
+3. Válassza a **Generate New Token** (Új token létrehozása) lehetőséget.
+
+    ![Képernyőkép új token generálásáról.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. Válassza a **Your Server Token** (Saját kiszolgálói token) lehetőséget.  
-5. Az [Azure-beli Intune-portálon](https://aka.ms/intuneportal) válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** elemet.  
-6. Válassza ki a tokent, és válassza a **Token megújítása** lehetőséget.  
-7. Adja meg az eredeti token létrehozásához használt Apple ID-t.  
+5. Az [Azure-beli Intune-portálon](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, és válasszon ki a tokent.
+    ![Képernyőkép a regisztrációs programtokenekről.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. Válassza a **Token megújítsa** lehetőséget, majd adja meg az eredeti token létrehozásához használt Apple ID-t.  
+    ![Képernyőkép új token generálásáról.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. Töltse fel az újonnan letöltött tokent.  
 9. Válassza a **Token megújítása** lehetőséget. Látni fogja a token megújításáról szóló megerősítő üzenetet.   
-
-
-
+    ![Képernyőkép a megerősítésről.](./media/device-enrollment-program-enroll-ios/confirmation.png)

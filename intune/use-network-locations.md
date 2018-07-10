@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745136"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843123"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Helyek (hálózati kerítés) használata az Intune-ban
 
@@ -35,7 +35,7 @@ A gyártási létesítményben néhány alkalmazott Android-eszközöket haszná
 2. Hozzon létre egy megfelelőségi szabályzatot, amely megköveteli, hogy ezek az eszközök a vállalati hálózathoz csatlakozzanak, és rendelje hozzá ezt a szabályzatot.
 3. Ha az eszköz a gyártási üzemen kívül kerül, akkor nem megfelelőnek minősül, és nem fér hozzá a vállalati erőforrásokhoz.
 
-Intune-szabályzatok használatával értesítést küldhet arról, hogy az eszköz nem megfelelő, és zárolhatja is az eszközt. Amikor az eszköz ismét a helyszínen, a hálózati helyen van, akkor fel lehet oldani a zárolását, és újra hozzáférhet a vállalati erőforrásokhoz.
+Hozzáadhat [meg nem felelés esetén végrehajtandó műveleteket](#configure-the-actions-for-noncompliance) is. Amikor az eszköz ismét a helyszínen, a hálózati helyen van, újra hozzáférhet a vállalati erőforrásokhoz.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

@@ -1,25 +1,26 @@
 ---
-title: "Eszközmegfelelési szabályzat Jamf-eszközökhöz"
+title: Eszközmegfelelési szabályzat Jamf-eszközökhöz
 titlesuffix: Microsoft Intune
-description: "A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket."
-keywords: 
+description: A Microsoft Intune megfelelőségi szabályzatait az Azure Active Directory feltételes hozzáférésével használva biztonságossá teheti a Jamf által kezelt eszközöket.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482335"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
 
@@ -34,6 +35,9 @@ Az Azure Active Directory és a Microsoft Intune feltételes hozzáférési szab
 
 1. Nyissa meg a Microsoft Azure-t, majd az **Intune** > **Eszközmegfelelőség** > **Szabályzatok** oldalt. Szabályzatokat hozhat létre macOS eszközökre, beleértve számos, nem megfelelő felhasználókra és csoportokra vonatkozó műveletet (pl. figyelmeztető e-mailek küldése).
 2. Keresse meg a kívánt csoportokat, és alkalmazza rájuk a szabályzatokat.
+
+> [!Note]
+> A megfelelőség érdekében az Intune teljes lemeztitkosítást követel meg.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>A macOS-hez készült Vállalati portál alkalmazás üzembe helyezése a Jamf Pro szolgáltatásban
 

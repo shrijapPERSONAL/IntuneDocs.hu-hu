@@ -1,12 +1,11 @@
 ---
-title: Bevezetés a Microsoft Intune szabályzatainak használatába
-titlesuffix: ''
-description: A szabályzatokkal megvédheti a vállalati adatait, és kezelheti a végfelhasználók által a céges erőforrásokhoz való hozzáféréshez használt eszközöket.
+title: Kezdő lépések az Azure-beli Microsoft Intune-ban | Microsoft Docs
+description: A szabályzatokkal megvédheti a vállalati adatait, és kezelheti a végfelhasználók által a céges erőforrásokhoz való hozzáféréshez használt eszközöket. Valamint hozzárendelheti a szabályzatokat csoportokhoz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +14,27 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8bffd0435988cc59c5c0e4d754b861729d466ae
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: d7fa1b596a1800971919cfc0ab3e94d2d16ec328
+ms.sourcegitcommit: afda8a0fc0f615e976b18ddddf81d56d7ae3566e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271524"
 ---
 # <a name="get-started-with-creating-policies"></a>Szabályzatok létrehozása – első lépések
 
-Az Intune használatának megkezdésekor az egyik legfőbb cél az eszközök regisztrálása, hogy biztosan megfeleljenek a vállalati szabályzatoknak. A megfelelőségi szabályzatok nem csak a speciális eszköztípusok, például vállalati tulajdonú kioszkgépek, hanem a személyes eszközök (saját eszközök használata), táblagépek és felhasználó nélküli eszközök kezelésében is segítenek.
+Az Intune-szabályzatok nagyszerű módot kínálnak az eszközök regisztrálására és a vállalati szabályzatoknak való megfelelőségük biztosítására. A megfelelőségi szabályzatok a speciális eszköztípusok, például vállalati tulajdonú kioszkgépek és a személyes eszközök (saját eszközök használata), táblagépek és felhasználó nélküli eszközök kezelésében is segítenek.
 
 ![Megfelelőségi irányítópult kevés adattal](/intune/media/generic-compliance-dashboard.png)
 
-Mobileszközök kezelése az alábbi területeken megfelelőségi szabályzatokkal:
+A mobileszközök felügyelhetők megfelelőségi szabályzatokkal, beleértve a következőket:
 
-* Az egyes felhasználók által regisztrálható eszközök számának korlátozása
-* Eszközbeállítások (például eszközszintű titkosítás, jelszóhossz, kamerahasználat) kezelése
-* alkalmazások, e-mail-profilok, VPN-profilok stb. távoli telepítése;
+* A felhasználó által az Intune-ban regisztrált eszközök számának szabályozása
+* Eszközbeállítások, például eszközszintű titkosítás, jelszóhossz és kamerahasználat kezelése
+* Alkalmazások, e-mail-profilok, VPN-profilok és egyebek távoli telepítése
 * Eszközszintű feltételek kiértékelése a biztonsági megfelelőségi szabályzatokhoz
 
-Minden egyes platformhoz Ön hoz létre megfelelőségi szabályzatokat. Ezt a gyakorlatot iOS-en mutatjuk be. IOS-eszközökhöz a következő szabályzatok érhetők el:
+Megfelelőségi szabályzatok mindegyik platformhoz, például az iOS, az Android, a Windows és másokhoz is létrehozhatók. Ebben a gyakorlatban az iOS-t használjuk. IOS-eszközökhöz a következő szabályzatok érhetők el:
 
 * PIN-kód vagy jelszó konfigurálása
 * Eszköztitkosítás
@@ -43,18 +43,30 @@ Minden egyes platformhoz Ön hoz létre megfelelőségi szabályzatokat. Ezt a g
 * Operációs rendszer minimális verziója
 * Operációs rendszer maximális verziója
 
-__Hogyan hozhatok létre szabályzatot?__
+## <a name="create-a-policy"></a>Házirend létrehozása
 
-1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
-2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. Válassza az **Eszközmegfelelőség** elemet.
-4. Az **Eszközmegfelelőség** panelen válassza a **Szabályzatok** lehetőséget.
-5. Válassza a **Szabályzat létrehozása** elemet, majd töltse ki a részleteket, például a **Név** és a **Leírás** mezőt. 
-6. A **Platform** beállításaként válassza az **iOS** lehetőséget.
-6. A **Beállítások** részben válassza a **Rendszerbiztonság** elemet, majd váltsa át a **Jelszó szükséges a mobileszközök feloldásához** beállítását a **Kötelező** lehetőségre. Más szabályokat is beállíthat, többek között a **Jelszó minimális hossza**, a **Jelszó kötelező típusa**  és a **Nem alfanumerikus karakterek száma a jelszóban** szabályt. Amikor befejezte a szabályzat beállítását, válassza az **OK** gombot.
-7. Térjen vissza a **Szabályzat létrehozása** panelre, majd válassza a **Létrehozás** lehetőséget.
-8. A szabályzat létrehozása után válassza a **Hozzárendelések** lehetőséget a tesztcsoporthoz való hozzárendeléséhez. Válassza ki a tesztcsoportot – amelynek tartalmaznia kell a tesztfelhasználót –, majd rendelje hozzá a szabályzatot ehhez a csoporthoz a **Mentés** gombra kattintva.
-9. Várjon néhány percig, és a regisztrált eszköznek kérnie kell egy frissített jelszót, hogy továbbra is megfeleljen a vállalati házirendnek. Ezt manuálisan is ellenőrizheti az **iOS-hez készült céges portál alkalmazásban**, ha rákoppint az eszköz nevére, majd a **Szinkronizálás** gombra.
+1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
+3. Válassza az **Eszközmegfelelőség** > **Szabályzatok** > **Szabályzat létrehozása** lehetőséget.
+4. Adja meg a szabályzat **Név** és **Leírás** mezőiben az adatokat. 
+5. A **Platform** beállításban válassza az **iOS** lehetőséget.
+6. A **Beállítások** részben válassza a **Rendszerbiztonság** elemet, majd adja meg a **Jelszó szükséges a mobileszközök feloldásához** lehetőséghez a **Kötelező** beállítást. 
+
+    Más szabályokat is beállíthat, például: 
+    - **Jelszó minimális hossza**
+    - **Kötelező jelszótípus**
+    - **A jelszó nem alfanumerikus karaktereinek száma**
+    
+    Amikor befejezte a szabályzat beállítását, válassza az **OK** gombot.
+  
+7. Térjen vissza a **Szabályzat létrehozása** lehetőséghez, majd válassza a **Létrehozás** lehetőséget. Ezzel a lépéssel létrehozza a szabályzatot, és felveszi azt az **Eszközmegfelelőség** > **Szabályzatok** listára.
+8. Válassza ki az új szabályzatot, majd válassza a **Hozzárendelések** lehetőséget. Belefoglalhat vagy kizárhat Azure Active Directory (AD) biztonsági csoportokat.
+Meglévő Azure AD-biztonsági csoportjait a Kijelölt csoportok lehetőséget választva tekintheti meg. Kiválaszthatja, hogy mely csoportokra vonatkozzon a szabályzat, majd a **Mentés** elemre kattintva alkalmazhatja azt.
+
+Az új vállalati szabályzatnak való megfelelés érdekében a regisztrált eszköz néhány perc múlva frissített jelszót kér. A frissítést manuálisan ellenőrizheti az **iOS-es céges portál alkalmazásban**. Nyissa meg a Céges portál alkalmazást, jelölje ki az eszköz nevét, majd válassza a **Szinkronizálás** lehetőséget.
+
+> [!NOTE]
+> A dinamikus eszközcsoportra alkalmazott új szabályzatoknak a csoportba tartozó összes eszközre történő alkalmazása akár nyolc órát is igénybe vehet.
 
 ## <a name="next-steps"></a>További lépések
 

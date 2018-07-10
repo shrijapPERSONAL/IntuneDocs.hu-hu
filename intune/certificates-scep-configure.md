@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745026"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297905"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>SCEP-tanúsítványok konfigurálása és használata az Intune-nal
 
@@ -36,12 +36,16 @@ Ez a cikk bemutatja az infrastruktúra konfigurálását, majd az Egyszerű tan�
 - **NDES-kiszolgáló**: a Windows Server 2012 R2 vagy újabb rendszeren futó kiszolgálón telepítenie kell a hálózati eszközök tanúsítványigénylési szolgáltatását (NDES). Az Intune nem támogatja az NDES használatát, ha az olyan kiszolgálón fut, amely vállalati hitelesítésszolgáltatót is futtat. Az [Útmutató a hálózati eszközök tanúsítványigénylési szolgáltatásához](http://technet.microsoft.com/library/hh831498.aspx) című cikkből tájékozódhat arról, hogyan kell konfigurálnia a Windows Server 2012 R2 rendszert az NDES futtatására.
 Az NDES-kiszolgálónak csatlakoznia kell a tartományhoz, amely a hitelesítésszolgáltatót futtatja, de nem lehet ugyanazon a kiszolgálón, mint a hitelesítésszolgáltató. További információ az NDES-kiszolgáló különálló erdőben, elszigetelt hálózaton vagy belső tartományon való telepítéséről: [Házirendmodul használata a Hálózati eszközök tanúsítványigénylési szolgáltatásával](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Tanúsítvány-összekötő**: Az Azure Portal webhelyről töltse le a **Tanúsítvány-összekötő** telepítőjét (**ndesconnectorssetup.exe**). Ezután futtathatja a **ndesconnectorssetup.exe** fájlt a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES) szerepkört üzemeltető kiszolgálón, ahol a Tanúsítvány-összekötőt szeretné telepíteni. 
+- **Microsoft Intune Tanúsítvány-összekötő**: Az Azure Portal webhelyről töltse le a **Tanúsítvány-összekötő** telepítőjét (**NDESConnectorSetup.exe**). Ezután futtathatja az **NDESConnectorSetup.exe** fájlt a hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) szerepkört üzemeltető kiszolgálón, ahol a Tanúsítvány-összekötőt szeretné telepíteni.
+
+  - Az NDES tanúsítvány-összekötő a Federal Information Processing Standard (FIPS) módot is támogatja. A FIPS nem kötelező, de lehet tanúsítványokat kibocsátani és visszavonni, ha engedélyezve van.
+
 - 1**Webalkalmazás-proxykiszolgáló** (nem kötelező): Webalkalmazás-proxykiszolgálóként (WAP) használjon olyan kiszolgálót, amelyen a Windows Server 2012 R2 vagy újabb verziójú rendszer fut. Ez a konfiguráció:
-  -  Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
-  -  Biztonsági ajánlás olyan környezetekben, ahol az eszközök az interneten keresztül csatlakozva kapnak és újítanak meg tanúsítványokat.
+  - Lehetővé teszi, hogy az eszközök az interneten keresztül fogadjanak tanúsítványokat.
+  - Biztonsági ajánlás olyan környezetekben, ahol az eszközök az interneten keresztül csatlakozva kapnak és újítanak meg tanúsítványokat.
 
 #### <a name="additional"></a>Továbbiak
+
 - A WAP-ot futtató kiszolgálón [telepíteni kell egy frissítést](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) ahhoz, hogy az támogassa az NDES által használt hosszú URL-eket. Ez a frissítés megtalálható a [2014. decemberi kumulatív frissítésben](http://support.microsoft.com/kb/3013769), illetve önállóan a [KB3011135-as jelű frissítésként](http://support.microsoft.com/kb/3011135).
 - A WAP-kiszolgálónak rendelkeznie kell egy SSL-tanúsítvánnyal, amely a külső ügyfeleknek közzétett nevet egyezteti, valamint meg kell bíznia az NDES-kiszolgálón használt SSL-tanúsítványban. E tanúsítványok segítségével a WAP-kiszolgáló képes megszakítani az ügyfelek SSL-kapcsolatát, illetve új SSL-kapcsolatot létrehozni az NDES-kiszolgálóval.
 
@@ -71,17 +75,7 @@ Az NDES-kiszolgálót egy proxyn keresztül, például az [Azure AD-alkalmazásp
 |**NDES szolgáltatásfiók**|Adjon meg egy tartományfelhasználói fiókot, melyet NDES szolgáltatásfiókként fog használni.|
 
 ## <a name="configure-your-infrastructure"></a>Az infrastruktúra konfigurálása
-A tanúsítványprofilok konfigurálása előtt hajtsa végre a következő feladatokat. E feladatokhoz szükség van a Windows Server 2012 R2 és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
-
-**1. lépés**: NDES szolgáltatásfiók létrehozása
-
-**2. lépés**: Tanúsítványsablonok konfigurálása a hitelesítésszolgáltatónál
-
-**3. lépés**: Előfeltételek konfigurálása az NDES-kiszolgálón
-
-**4. lépés**: Az NDES Intune-nal való használatának konfigurálása
-
-**5. lépés**: Az Intune Certificate Connector engedélyezése, telepítése és konfigurálása
+A tanúsítványprofilok konfigurálása előtt kövesse a következő lépéseket. Ezekhez szükség van a Windows Server 2012 R2 vagy újabb verzió és az Active Directory tanúsítványszolgáltatások (ADCS) ismeretére:
 
 #### <a name="step-1---create-an-ndes-service-account"></a>1. lépés – NDES szolgáltatásfiók létrehozása
 
@@ -226,7 +220,6 @@ A feladatban az alábbiak szerepelnek:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimális) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimális) |
 
-
 4. Az IIS-kezelőben válassza az **Alapértelmezett webhely** > **Kérésszűrés** > **Szolgáltatás beállításainak szerkesztése** lehetőséget. Módosítsa az **URL-cím maximális hossza** és a **Lekérdezési sztring maximális hossza** beállítás értékét a következőre: *65534*, ahogy az a képen is látható:
 
     ![Maximális URL-hossz és lekérdezéshossz az IIS-ben](./media/SCEP_IIS_max_URL.png)
@@ -292,13 +285,17 @@ A feladatban az alábbiak szerepelnek:
 - A Tanúsítvány-összekötő letöltése, telepítése és konfigurálása a hálózati eszközök tanúsítványigénylési szolgáltatás (NDES) szerepkört üzemeltető kiszolgálón a saját környezetben. Annak érdekében, hogy méretezhető lehessen az NDES-kiépítés a cégen belül, több NDES-kiszolgáló is telepíthető úgy, hogy mindegyikhez tartozik egy-egy Microsoft Intune Tanúsítvány-összekötő.
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>A tanúsítvány-összekötő letöltése, telepítése és konfigurálása
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com).
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök konfigurálása**, majd a **Hitelesítésszolgáltató** lehetőséget.
 4. Válassza a **Hozzáadás**, majd az **Összekötői fájl letöltése** lehetőséget. Mentse a letöltést egy olyan helyre, amelyhez hozzá tud férni a telepítéshez használt kiszolgálón.
-5. A letöltés befejezése után futtassa a letöltött telepítőt (**ndesconnectorssetup.exe**) azon a kiszolgálón, amely az NDES szerepkört üzemelteti. A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. (A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.)
+5. A letöltés befejezése után lépjen arra a kiszolgálóra, amely a Hálózati eszközök tanúsítványigénylési szolgáltatása (NDES) szerepkört üzemelteti. Ha ez megvan:
+
+    1. Győződjön meg róla, hogy telepítve van-e a .NET 4.5-keretrendszer, mivel arra szüksége van az NDES tanúsítvány-összekötőjének. A .NET 4.5-keretrendszer automatikusan részen a Windows Server 2012 R2 és újabb verzióknak.
+    2. Futtassa a telepítőprogramot (**NDESConnectorSetup.exe**). A telepítés során az NDES házirendmodulja és a CRP (tanúsítványregisztrációs pont) webszolgáltatás is települ. A CRP webszolgáltatás, melynek neve CertificateRegistrationSvc, alkalmazásként fut az IIS-ben.
 
     > [!NOTE]
     > Ha önálló Intune-hoz telepíti az NDES-t, akkor a CRP szolgáltatás automatikusan települ a tanúsítvány-összekötővel együtt. Az Intune szolgáltatásnak a Configuration Managerrel való használatakor a tanúsítványregisztrációs pontot különálló helyrendszerszerepkörként telepíti.
@@ -306,7 +303,7 @@ A feladatban az alábbiak szerepelnek:
 6. Ha a rendszer kéri az ügyféltanúsítványt a tanúsítvány-összekötőhöz, válassza a **Kijelölés** lehetőséget, majd válassza ki az **ügyfél-hitelesítő** tanúsítványt, amelyet a 3. feladatban telepített az NDES-kiszolgálóra.
 
     Miután kiválasztotta az ügyfél-hitelesítési tanúsítványt, a rendszer visszairányítja az **Client Certificate for Microsoft Intune Certificate Connector** (Ügyféltanúsítvány a Microsoft Intune Certificate Connectorhoz) felületre. Bár a választott tanúsítvány nem látható, válassza a **Tovább** gombot a tanúsítvány tulajdonságainak megtekintéséhez. Válassza a **Tovább**, majd a **Telepítés** lehetőséget.
-    
+
     > [!IMPORTANT]
     > Az Intune Tanúsítvány-összekötő nem regisztrálható olyan eszközökön, amelyeken az Internet Explorer fokozott biztonsági beállításai vannak engedélyezve. Az Intune Tanúsítvány-összekötő használatához [tiltsa le az IE fokozott biztonsági beállításait](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
@@ -336,10 +333,13 @@ A szolgáltatás futásának ellenőrzéséhez nyisson meg egy böngészőt, és
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> Az NDES tanúsítvány-összekötő tartalmazza a TLS 1.2 támogatását. Ha tehát a kiszolgáló, amelyen az NDES tanúsítvány-összekötő telepítve van, támogatja a TLS 1.2-t, akkor a TLS 1.2 lesz használva. Amennyiben a kiszolgáló nem támogatja a TLS 1.2 verziót, a TLS 1.1 lesz használva. Az eszközök és a kiszolgáló közötti hitelesítéshez jelenleg a TLS 1.1 van használatban.
+
 ## <a name="create-a-scep-certificate-profile"></a>SCEP-tanúsítványprofil létrehozása
 
 1. Nyissa meg az Azure Portalon a Microsoft Intune-t.
-2. Válassza az **Eszközkonfiguráció** lehetőséget, kattintson a **Profilok** elemre, és válassza a **Profil létrehozása** lehetőséget.
+2. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 3. Adja meg az SCEP-tanúsítványprofil **nevét** és **leírását**.
 4. Válassza ki az SCEP-tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet eszközkorlátozási beállításokat megadni:
    - **Android**
@@ -407,12 +407,16 @@ Mielőtt csoportokhoz rendeli a tanúsítványprofilokat, vegye figyelembe a kö
 
     > [!NOTE]
     > Ha több erőforrásprofilt helyez üzembe egyazon tanúsítványprofil használatával, akkor iOS rendszer esetén több példányt is látni fog a tanúsítványból a felügyeleti profilban.
-    
+
 Az profilok hozzárendeléséről az [Eszközprofilok hozzárendelése](device-profile-assign.md) című cikk nyújt tájékoztatást.
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune-összekötő beállításának ellenőrzése és hibaelhárítás
+
+Problémák elhárításához és az Intune-összekötő telepítésének ellenőrzéséhez lásd: [Hitelesítésszolgáltató szkriptmintái](https://aka.ms/intuneconnectorverificationscript)
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Connector-események és diagnosztikai kódok
 
-A 6.1803.x.x verziótól kezdődően az Intune Connector Service naplózza az eseményeket az **Eseménynaplóban** (**Alkalmazás- és szolgáltatásnaplók** > **Microsoft Intune Connector**). Ezek az események segíthetnek elhárítani az Intune Connector konfigurációjával kapcsolatos esetleges problémákat. A naplózott eseményrekordokban megtalálhatja, hogy a művelet sikeres vagy sikertelen volt-e, illetve a rekordok diagnosztikai kódokat és üzeneteket is tartalmaznak, melyek segítenek a rendszergazdának a probléma elhárításában.
+A 6.1806.x.x verziótól kezdődően az Intune Connector Service naplózza az eseményeket az **Eseménynaplóban** (**Alkalmazás- és szolgáltatásnaplók** > **Microsoft Intune Connector**). Ezek az események segíthetnek elhárítani az Intune Connector konfigurációjával kapcsolatos esetleges problémákat. A naplózott eseményrekordokban megtalálhatja, hogy a művelet sikeres vagy sikertelen volt-e, illetve a rekordok diagnosztikai kódokat és üzeneteket is tartalmaznak, melyek segítenek a rendszergazdának a probléma elhárításában.
 
 ### <a name="event-ids-and-descriptions"></a>Eseményazonosítók és -leírások
 
@@ -431,10 +435,10 @@ A 6.1803.x.x verziótól kezdődően az Intune Connector Service naplózza az es
 | 20102 | PkcsCertIssue_Failure  | Egy PKCS-tanúsítvány kibocsátása nem sikerült. Ellenőrizze az eseményhez tartozó eszközazonosítót, felhasználóazonosítót, hitelesítésszolgáltatói nevet, tanúsítványsablon-nevet és tanúsítvány-ujjlenyomatot. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Sikeresen vissza lett vonva a tanúsítvány. Ellenőrizze az eseményhez tartozó eszközazonosítót, felhasználóazonosítót, hitelesítésszolgáltatói nevet és tanúsítvány-sorozatszámot. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Nem sikerült a tanúsítvány visszavonása. Ellenőrizze az eseményhez tartozó eszközazonosítót, felhasználóazonosítót, hitelesítésszolgáltatói nevet és tanúsítvány-sorozatszámot. További információért tekintse át az NDES SVC-naplófájlokat.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | Sikeresen le lett töltve egy kérelem egy tanúsítvány aláírására, egy ügyféltanúsítvány letöltésére vagy egy tanúsítvány visszavonására. A letöltés részleteit megtalálhatja az esemény adataiban.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | Nem sikerült letölteni egy kérelmet egy tanúsítvány aláírására, egy ügyféltanúsítvány letöltésére vagy egy tanúsítvány visszavonására. A letöltés részleteit megtalálhatja az esemény adataiban. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | Sikeresen fel lett töltve a tanúsítvány kérelme vagy visszavonási adata. A feltöltés részleteit megtalálhatja az esemény adataiban. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | Nem sikerült feltölteni a tanúsítvány kérelmét vagy visszavonási adatait. Ellenőrizze az esemény adatai között megtalálható feltöltési állapotot a hiba helyének megállapításához.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | Sikeresen fel lett töltve a tanúsítvány kérelme vagy visszavonási adata. A feltöltés részleteit megtalálhatja az esemény adataiban. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Nem sikerült feltölteni a tanúsítvány kérelmét vagy visszavonási adatait. Ellenőrizze az esemény adatai között megtalálható feltöltési állapotot a hiba helyének megállapításához.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Sikeresen le lett töltve egy kérelem egy tanúsítvány aláírására, egy ügyféltanúsítvány letöltésére vagy egy tanúsítvány visszavonására. A letöltés részleteit megtalálhatja az esemény adataiban.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Nem sikerült letölteni egy kérelmet egy tanúsítvány aláírására, egy ügyféltanúsítvány letöltésére vagy egy tanúsítvány visszavonására. A letöltés részleteit megtalálhatja az esemény adataiban. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | A tanúsítványregisztrációs pont sikeresen ellenőrzött egy ügyfélkérdést | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | A tanúsítványregisztrációs pont végzett, de elutasította a kérelmet. További részletekért ellenőrizze a diagnosztikai kódot és üzenetet. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | A tanúsítványregisztrációs pont nem tudott ellenőrizni egy ügyfélkérést. További részletekért ellenőrizze a diagnosztikai kódot és üzenetet. Az eseményüzenet adataiban megtalálhatja a kérdéshez tartozó eszközazonosítót. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

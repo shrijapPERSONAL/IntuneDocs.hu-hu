@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032591"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232936"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
-Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ezért készítettük ezt az útmutatót azoknak, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
+Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ez az útmutató azoknak készült, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
 ## <a name="quick-reference-guide"></a>Rövid összefoglaló útmutató
 
 |Funkció |Elérési útvonal a klasszikus portálon|Elérési útvonal az Azure Portalbeli Intune-ban|
@@ -45,27 +45,37 @@ A céges portál beállításai|Felügyelet > Céges portál|**Kezelés** > Mobi
 Az Azure Portalbeli Intune az [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) segítségével kezeli a csoportokat.
 
 ## <a name="where-did-enrollment-rules-go"></a>Hová tűntek a regisztrációs szabályok?
-A klasszikus portálon be lehetett állítani a modern windowsos és macOS-es, valamint mobileszközök MDM-regisztrációjára vonatkozó szabályokat:
+A klasszikus portálon be lehetett állítani a modern windowsos és macOS-es, valamint mobileszközök MDM-regisztrációjára vonatkozó szabályokat.
 
 ![Klasszikus mobileszköz-regisztrációs szabályok képe](./media/01-classic-rules.png)
 
-Ezek a szabályok kivétel nélkül vonatkoztak az Intune-fiók összes felhasználójára. Az Azure Portalon ezek a szabályok két szabályzattípusba (eszköztípus szerinti és eszközök száma szerinti korlátozások) lettek szétválasztva:
+Ezek a szabályok kivétel nélkül vonatkoztak az Intune-fiók összes felhasználójára. Az Azure Portalon ezek a szabályok két szabályzattípusba (eszköztípus szerinti és eszközök száma szerinti korlátozások) lettek szétválasztva.
 
 ![Azure-os mobileszköz-regisztrációs korlátozások képe](./media/02-azure-enroll-restrictions.png)
 
-Az eszközök száma szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a Regisztrált eszközök maximális száma szabálynak:
+Az eszközök száma szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a Regisztrált eszközök maximális száma szabálynak.
 
 ![Azure-os eszközszám-korlátozások képe](./media/03-azure-device-limit.png)
 
-Az eszköztípus szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a platformkorlátozási szabálynak:
+Az eszköztípus szerinti alapértelmezett korlátozás megfelel a klasszikus portálon a platformkorlátozási szabálynak.
 
 ![Azure-os eszköztípus-korlátozások képe](./media/04-azure-platform-restrictions.png)
 
-A személyes tulajdonú eszközök letiltásának vagy engedélyezésének képességét az eszköztípus szerinti korlátozások platformkonfigurációjában lehet kezelni:
+A személyes tulajdonú eszközök letiltásának vagy engedélyezésének képességét az eszköztípus szerinti korlátozások platformkonfigurációjában lehet kezelni.
 
 ![Azure-os személyes eszközletiltási beállítások képe](./media/05-azure-personal-block.png)
 
 A további korlátozási képességek csak az Azure Portalon érhetők el.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Mi történt a feltételes hozzáférési szabályzataimmal?
+Miután a bérlője migrál az Azure Portalra, a bérlő feltételes hozzáférési szabályzatai továbbra is érvényesülnek. Megtekinteni vagy módosítani viszont nem tudja őket az Intune-ból az Azure Portalon.
+
+Ha meg kívánja tekinteni vagy módosítani szeretné a feltételes hozzáférési szabályzatokat az Azure Portalon, akkor el kell távolítania a régi szabályzatokat a klasszikus portálról. Ez után újra létrehozhatja azokat az Azure Portalon. További információk a feltételes hozzáférési szabályzatok migrálásáról: [Klasszikus szabályzatok migrálása az Azure Portalon](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>Mi történt a megfelelőségi szabályzataimmal?
+Miután a bérlője migrál az Azure Portalra, a bérlő megfelelőségi szabályzatai továbbra is érvényesülnek. Megtekinteni vagy módosítani viszont nem tudja őket az Intune-ból az Azure Portalon.
+
+Ha meg kívánja tekinteni vagy módosítani szeretné a megfelelőségi szabályzatokat az Azure Portalon, akkor el kell távolítania a régi szabályzatokat a klasszikus portálról. Ez után újra létrehozhatja azokat az Azure Portalon. További információk az eszközmegfelelőségi szabályzatokról: [Az Intune eszközmegfelelőségi szabályzatai – első lépések](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Hová tűnt az Apple DEP?
 A klasszikus portálon az Intune-t integrálni lehetett az Apple készülékregisztrációs programjával, és manuálisan szinkronizálást kérni az Apple szolgáltatásával:

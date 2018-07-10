@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833348"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329875"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Segítségnyújtás a céges felhasználóknak a hibaelhárítási portál használatával
 
@@ -234,6 +234,15 @@ Az alkalmazásvédelmi szabályzat az EMS-technológiával integrált mobilalkal
 | Eszköz típusa | Az eszköztípus neve.                                                       |
 | Házirendek    | Az eszköz tulajdonlástípusa. A típus lehet **Vállalati**, **Személyes** vagy **Ismeretlen**. |
 | Legutóbbi szinkronizálás   | Időbélyeg, amely az eszköz Intune-nal való szinkronizálásának utolsó idejét mutatja.                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>Rendelkezésre álló adatok gyűjtése mobileszközön
+
+A következő erőforrásokkal eszközadatokat gyűjthet a felhasználói eszközök hibáinak elhárításakor:
+  - [Az iOS regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [A cég informatikai támogatási szolgálatának segítése az eszközproblémák megoldásában részletes naplózással](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Android-naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Az Android diagnosztikai adatait tartalmazó naplófájlok elküldése e-mailben a rendszergazdának](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Az Android regisztrálási hibáinak elküldése a rendszergazdának](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>További lépések
 

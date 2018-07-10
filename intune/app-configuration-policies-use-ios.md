@@ -3,10 +3,10 @@ title: Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszk
 titlesuffix: Microsoft Intune
 description: Ez a témakör azt ismerteti, hogyan lehet alkalmazáskonfigurációs szabályzatokkal konfigurációs adatokat szolgáltatni a futó iOS-alkalmazásoknak.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232233"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt iOS-eszközökhöz
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott iOS-alkalmazásokhoz. A házirendeket nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
+Ha iOS-alkalmazáshoz szeretne egyéni konfigurációs beállításokat megadni, használja az alkalmazáskonfigurációs szabályzatokat a Microsoft Intune-ban. Ezek a konfigurációs beállítások lehetővé teszik az alkalmazás testre szabását a szállító igényei szerint. Ezeket a konfigurációs beállításokat (kulcsokat és értékeket) az alkalmazás szállítójától kell beszerezni. Az alkalmazás konfigurálásához a beállításokat kulcs-érték párokban, vagy a kulcsokat és az értékeket tartalmazó XML-fájlként kell megadni. Ezeket a konfigurációs szabályzatokat nem kell közvetlenül felhasználókhoz vagy eszközökhöz rendelni. Ehelyett a konfigurációs szabályzatot egy alkalmazáshoz kell társítani, majd az alkalmazást hozzárendelni a felhasználókhoz vagy eszközökhöz. A konfigurációs szabályzatbeállítások akkor használatosak, amikor egy alkalmazás keresi azokat (általában az első futtatáskor).
 
-Alkalmazáskonfigurálási szabályzatot rendelhet a felhasználók és eszközök egy csoportjához belefoglalási és kizárási hozzárendelések kombinációjával. Miután hozzáadta az alkalmazáskonfigurálási szabályzatot, beállíthatja az alkalmazáskonfigurálási szabályzat hozzárendeléseit. A szabályzat hozzárendeléseinek beállításakor felvehet vagy kizárhat a szabályzat hatálya alá eső felhasználói csoportokat. Amikor felvesz egy vagy több csoportot, kiválaszthat bizonyos csoportokat, vagy választhat beépített csoportokat. Beépített csoportok a következők: **Minden felhasználó**, **Minden eszköz**, és **Minden felhasználó és minden eszköz**. 
+Miután hozzáadta az alkalmazáskonfigurálási szabályzatot, beállíthatja az alkalmazáskonfigurálási szabályzat hozzárendeléseit. A szabályzat hozzárendeléseinek beállításakor felvehet vagy kizárhat a szabályzat hatálya alá eső felhasználói csoportokat. Amikor felvesz egy vagy több csoportot, kiválaszthat bizonyos csoportokat, vagy választhat beépített csoportokat. Beépített csoportok a következők: **Minden felhasználó**, **Minden eszköz**, és **Minden felhasználó és minden eszköz**. 
 
 >[!NOTE]
 >Az Intune biztosítja az előre létrehozott **Minden felhasználó** és **Minden eszköz** csoportok beépített optimalizálását a felhasználók kényelme érdekében a konzolon. Mindenképpen ajánlott ezeket a csoportokat használni az összes felhasználó és az összes eszköz megcélzására az Ön által létrehozott „Minden felhasználó” vagy „Minden eszköz” csoport helyett.
 
-Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási szabályzathoz, kiválaszthatja az adott kizárni kívánt csoportokat is.
+Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási szabályzathoz, kiválaszthatja az adott kizárni kívánt csoportokat is. További információ: [Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Ez a szabályzattípus jelenleg csak az iOS 8.0-ás vagy újabb verzióit futtató eszközökön érhető el. A szabályzat az alábbi alkalmazástelepítési módszereket támogatja:
@@ -49,18 +50,16 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 3. Válassza a **Mobilalkalmazások** panelt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
-    - **Név**<br>
-      Az Azure Portalon megjelenő profilnév.
-    - **Leírás**<br>
-      Az Azure Portalon megjelenő profilleírás.
-    - **Eszközbeléptetés típusa**<br>
-      Válasza a **Felügyelt eszközök** lehetőséget.
+    - **Név** – Az Azure Portalon megjelenítendő profilnév.
+    - **Leírás** – Az Azure Portalon megjelenítendő profilleírás.
+    - **Eszközregisztráció típusa** – Válassza a **Felügyelt eszközök** lehetőséget.
 6. A **Platform** beállításban válassza az **iOS** lehetőséget.
 7.  Válassza a **Társított alkalmazás** lehetőséget. A **Társított alkalmazás** panelen jelölje ki azt a felügyelt alkalmazást, amelyre a konfigurációt alkalmazni szeretné, majd nyomja meg az **OK** gombot.
 8.  A **Konfigurációs szabályzat hozzáadása** panelen válassza a **Konfigurációs beállítások** lehetőséget.
-9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. Válasszon az alábbi lehetőségek közül:
-    - **[Konfigurációtervező használata](#use-configuration-designer)**
-    - **[XML-adatok megadása](#enter-xml-data)**
+9. Válassza a **Konfigurációs beállítások formátuma** lehetőséget. XML-információk hozzáadásához válassza az alábbiak egyikét:
+    - **Konfigurációtervező használata**
+    - **XML-adatok megadása**<br></br>
+    A konfigurációtervező használatáról a [Konfigurációtervező használatát](#use-configuration-designer) ismertető cikkben talál bővebb információt. Az XML-adatok megadásáról az [XML-adatok megadása](#enter-xml-data) című cikkben talál útmutatást. 
 10. XML-adatainak hozzáadását követően használja az **OK**, majd a **Hozzáadás** gombot a konfigurációs szabályzat hozzáadásához. Ekkor megjelenik a konfigurációs szabályzat áttekintő panelje.
 11. Válassza a **Hozzárendelések** lehetőséget a belefoglalási és kizárási beállítások megjelenítéséhez. 
 
@@ -80,17 +79,14 @@ Miután kiválasztotta a belefoglalt csoportokat az alkalmazáskonfigurálási s
 
 ## <a name="use-configuration-designer"></a>A configuration designer használata
 
-A konfigurációtervezőt olyan eszközökön található alkalmazásokhoz használhatja, amelyek regisztrálva vannak vagy nincsenek regisztrálva az Intune-ban. A tervezővel konkrét konfigurációs kulcsokat és értékeket konfigurálhat. Az értékekhez az adattípust is meg kell adnia. A beállítások megadása ezen alkalmazások számára azok telepítésekor automatikusan történik.
+A Microsoft Intune olyan konfigurációs beállításokat tesz elérhetővé, amelyek egy-egy alkalmazásra érvényesek. A konfigurációtervezőt olyan eszközökön található alkalmazásokhoz használhatja, amelyek regisztrálva vannak vagy nincsenek regisztrálva a Microsoft Intune-ban. A tervezővel konkrét konfigurációs kulcsokat és értékeket konfigurálhat, amelyekkel létrehozhatja az alapul szolgáló XML-fájl. Az értékekhez az adattípust is meg kell adnia. Az alkalmazás telepítésének idején ezek a beállítások automatikusan érvénybe lépnek az adott alkalmazáson.
 
 ### <a name="add-a-setting"></a>Beállítás hozzáadása
 
 1. A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:
-   - **Konfigurációs kulcs**<br>
-     Az adott beállításkonfigurációhoz egyedi azonosítóként szolgáló kulcs.
-   - **Érték típusa**<br>
-     A konfigurációs érték adattípusa. A típus az alábbiak egyike: egész szám, valós szám, karakterlánc vagy logikai.
-   - **Konfigurációs érték**<br>
-     A konfiguráció értéke.
+   - **Konfigurációs kulcs** - Az adott beállításkonfigurációhoz egyedi azonosítóként szolgáló kulcs.
+   - **Értéktípus** - A konfigurációs érték adattípusa. A típus az alábbiak egyike: egész szám, valós szám, sztring vagy logikai.
+   - **Konfigurációs érték** - A konfiguráció értéke.
 2. A konfigurációs beállítások megadásához válassza az **OK** gombot.
 
 ### <a name="delete-a-setting"></a>Beállítás törlése
@@ -145,7 +141,8 @@ Az Intune a következő adattípusokat támogatja a tulajdonságlistákban:
 
 - &lt;integer&gt; (egész szám)
 - &lt;real&gt; (valós szám)
-- &lt;string&gt; (karakterlánc)
+- 
+  &lt;string&gt;
 - &lt;array&gt; (tömb)
 - &lt;dict&gt; (szótár)
 - &lt;true /&gt; (igaz) vagy &lt;false /&gt; (hamis)
@@ -165,4 +162,4 @@ Ezenkívül az Intune a következő tokentípusokat támogatja a tulajdonságlis
 
 ## <a name="next-steps"></a>További lépések
 
-Ezt követően a szokott módon gondoskodhat az alkalmazás valamely csoporthoz történő [hozzárendeléséről](apps-deploy.md) és [figyeléséről](apps-monitor.md).
+Ezt követően gondoskodhat az alkalmazás valamely csoporthoz történő [hozzárendeléséről](apps-deploy.md) és [figyeléséről](apps-monitor.md).

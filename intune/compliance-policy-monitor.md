@@ -1,54 +1,54 @@
 ---
-title: A Microsoft Intune eszközmegfelelőségi szabályzatainak figyelése
-titlesuffix: ''
+title: Eszközmegfelelőségi szabályzatok figyelése az Azure-beli Microsoft Intune-ban | Microsoft Docs
 description: Az eszközmegfelelőségi irányítópulttal figyelheti az eszközmegfelelőségeket, jelentéseket tekinthet meg, valamint megtekintheti a szabályzatonkénti és beállításonkénti eszközmegfelelőségeket.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 2/27/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4c3c3a2d73c6390ef5761f1bd0b12fe55855c6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831871"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232970"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
 A megfelelőségi jelentésekkel a rendszergazdák elemezhetik a cég eszközeinek megfelelőségi állapotát, és így gyorsan elháríthatják a szervezet felhasználói által tapasztalt megfelelőségi problémákat. A jelentésekkel információ szerezhető egy eszköz általános megfelelőségi állapotáról, az egyes beállítások vagy egyes szabályzatok megfelelőségi állapotáról, és egy-egy eszköz részletesebben is megvizsgálható, és ellenőrizhető, hogy mely beállítások és szabályzatok vonatkoznak rá.
 
-> [!NOTE]
-> Az Önök visszajelzései alapján márciusban bevezetünk néhány biztonsági fejlesztést az Intune szolgáltatásban. A megfelelőségi szabályzatai konfigurációjától függően esetleg be kell avatkoznia, hogy a végfelhasználók ne veszítsék el e-mail-hozzáférésüket. A részleteket a [Várható biztonsági fejlesztések](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) című cikk tartalmazza.
-
 ## <a name="before-you-begin"></a>Előkészületek
 
 Az **Intune eszközmegfelelőségi irányítópultját** az alábbi lépéseket követve találja meg az Azure Portalon:
 
-1.  Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival.
+1. Az [Azure Portalon](https://portal.azure.com) jelentkezzen be az Intune-os hitelesítő adataival.
 
-2.  Válassza a bal oldali menü **Minden szolgáltatás** pontját, majd írja be a szűrő szövegmezőbe az **Intune** nevet.
+2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 
-3.  Az **Eszközmegfelelőségi irányítópult** megnyitásához válassza az **Intune** &gt; **Eszközmegfelelőség** &gt; **Áttekintés** elemet.
+3. Válassza az **Eszközmegfelelőség** > **Áttekintés** elemet. Megnyílik az **Eszközmegfelelőségi irányítópult**.
 
 > [!IMPORTANT]
 > Az eszközmegfelelőségi szabályzatok csak akkor alkalmazhatók az eszközökre, ha azok regisztrálva vannak az Intune-ban.
 
 ## <a name="device-compliance-dashboard"></a>Eszközmegfelelőségi irányítópult
 
-Az **Eszközmegfelelőségi irányítópulton** ellenőrizheti az eszközmegfelelőségi szabályzatok állapotát. A különböző csempéken több jelentés érhető el, amelyek a szervezet eszközeinek megfelelőségi állapotáról adnak információt. A következő jelentések érhetőek el:
+Az **Eszközmegfelelőségi irányítópulton** sok más mellett figyelni tudja a különböző eszközök megfelelőségét és védelmi állapotát. A következő jelentések érhetőek el:
 
--   Általános összesített eszközmegfelelőség
+- Általános összesített eszközmegfelelőség
 
--   Szabályzatok szerinti eszközmegfelelőség
+- Szabályzatok szerinti eszközmegfelelőség
 
--   Beállítások szerinti eszközmegfelelőség
+- Beállítások szerinti eszközmegfelelőség
+
+- Eszközvédelem állapota
+
+- Fenyegetésfigyelő ügynök állapota
 
 ![Az Eszközmegfelelőségi irányítópult képe](./media/idc-1.png)
 
@@ -58,26 +58,26 @@ Az egyes eszközökre vonatkozó megfelelőségi szabályzatokat és beállítá
 
 Az Intune-ban regisztrált összes eszköz összesített megfelelőségi állapota egy fánkdiagramon látható. Az eszközmegfelelőségi állapot adatait két külön adatbázis tárolja: az Intune és az Azure Active Directory. További információ az eszközmegfelelőségi szabályzatok állapotáról:
 
--   **Megfelelő**: az eszköz megfelel a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak.
+- **Megfelelő**: az eszköz megfelel a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak.
 
--   **Nem megfelelő:** az eszköz nem felel meg a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak, vagy a felhasználó nem a rendszergazda által meghatározott szabályzatoknak megfelelően járt el.
+- **Nem megfelelő:** az eszköz nem felel meg a rendszergazda által meghatározott egy vagy több eszközmegfelelőségi szabályzatnak, vagy a felhasználó nem a rendszergazda által meghatározott szabályzatoknak megfelelően járt el.
 
--   **Türelmi időszak:** az eszközre a rendszergazda által létrehozott egy vagy több eszközmegfelelőségi szabályzat vonatkozik, de a felhasználó még nem alkalmazta a szabályzatokat, az eszköz tehát még nem megfelelő állapotú, de a rendszergazda által meghatározott türelmi időszak érvényes rá.
+- **Türelmi időszak:** az eszközre a rendszergazda által létrehozott egy vagy több eszközmegfelelőségi szabályzat vonatkozik, de a felhasználó még nem alkalmazta a szabályzatokat, az eszköz tehát még nem megfelelő állapotú, de a rendszergazda által meghatározott türelmi időszak érvényes rá.
 
-    -   További információ a nem megfelelő eszközökre alkalmazható műveletekről.
+  - További információ a nem megfelelő eszközökre alkalmazható műveletekről.
 
--   **Az eszköz nincs szinkronizálva:** az eszköz nem jelentette az eszközmegfelelőségi szabályzat állapotát az alábbi okok miatt:
+- **Az eszköz nincs szinkronizálva:** az eszköz nem jelentette az eszközmegfelelőségi szabályzat állapotát az alábbi okok miatt:
 
-    -   **Ismeretlen**: az eszköz offline állapotban van, vagy valamilyen más okból nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel.
+  - **Ismeretlen**: az eszköz offline állapotban van, vagy valamilyen más okból nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel.
 
-    -   **Hiba**: az eszköznek nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel, és üzenetben megkapta a hiba okát.
+  - **Hiba**: az eszköznek nem sikerült kapcsolatba lépnie az Intune-nal vagy az Azure AD-vel, és üzenetben megkapta a hiba okát.
 
 > [!IMPORTANT]
 > A jelentésben a **Megfelelő** gyűjtőben szerepelnek azok az eszközök, amelyek regisztrálva vannak az Intune-ban, de nem vonatkozik rájuk eszközmegfelelőségi szabályzat.
 
 #### <a name="drill-down-option"></a>Részletes információ
 
-Az **Eszközmegfelelőségi irányítópulton** az eszközmegfelelőségi csempére kattintva részletes információt kaphat a **megfelelőségi állapotról**, a **felhasználói e-mail-aliasokról**, az **eszköz modelljéről** és a **tartózkodási helyről** az eszközmegfelelőségi szabályzat által érintett egyes eszközök esetében.
+Az **Eszközmegfelelőségi irányítópulton** az eszközmegfelelőségi csempére kattintva részletes információt kap a **megfelelőségi állapotról**, a **felhasználói e-mail-aliasokról**, az **eszköz típusáról** és a **tartózkodási helyről** az eszközmegfelelőségi szabályzat által érintett egyes eszközök esetében.
 
 ![Az Eszközmegfelelőségi irányítópult részletezésének képe](./media/idc-2.png)
 
@@ -93,41 +93,41 @@ Az eszközmegfelelőségi diagram egyes megfelelőségi állapotaira kattintva t
 
 Ha a **Szűrő** gombra kattint, egy beúszó lapka jelenik meg az alábbi lehetőségekkel:
 
--   Modell
+- Modell
 
-    -   Szövegmező tetszőleges keresési szöveg beírásához
-<br></br>
--   Platform
+  - Szövegmező tetszőleges keresési sztring beírásához
 
-    -   Android
+- Platform
 
-    -   iOS
+  - Android
 
-    -   macOS
+  - iOS
 
-    -   Windows
+  - macOS
 
-    -   Windows Phone
+  - Windows
 
--   Állapot
+  - Windows Phone
 
-    -   Compliant (Megfelelő)
+- Állapot
 
-    -   Nem megfelelő
+  - Compliant (Megfelelő)
 
-    -   Türelmi időszakban
+  - Nem megfelelő
 
-    -   Ismeretlen
+  - Türelmi időszakban
 
-    -   Hiba
+  - Ismeretlen
+
+  - Hiba
 
 Ha a **Frissítés gombra** kattint, a beúszó lapka bezárul, a megjelenített eredmények pedig a bejelölt szűrési feltételeknek megfelelően frissülnek.
 
 ##### <a name="device-details"></a>Eszközadatok
 
-Kattintson egy eszközre. Ekkor megnyílik az **Eszközök panel** a kiválasztott eszközzel, ahol további részleteket láthat a vonatkozó eszközmegfelelőségi szabályzat beállításáról.
+Ha kijelöl egy eszközt, megnyílik az **Eszközök** panel a kijelölt eszköz adataival. Itt további információt talál az adott eszközre alkalmazott eszközmegfelelőségi szabályzat beállításairól.
 
-Ha az egyes eszközmegfelelőségi szabályzatbeállításokra kattint, megjelenik annak a rendszergazda által meghatározott eszközmegfelelőségi szabályzatnak a neve, amelyen ez a beállítás alapul.
+Ha kijelöli az egyes eszközmegfelelőségi szabályzatbeállításokat, megjelenik annak a rendszergazda által meghatározott eszközmegfelelőségi szabályzatnak a neve, amelyen ez a beállítás alapul.
 
 ### <a name="devices-without-compliance-policy"></a>Megfelelőségi szabályzat nélküli eszközök
 Ez a jelentés azokat az eszközöket azonosítja, amelyekhez nincs megfelelőségi szabályzat rendelve. Az összes megfelelőségi szabályzat nélküli eszközt „nem megfelelő”-ként megjelölő biztonsági beállítás bevezetésével fontossá válik az ilyen eszközök azonosítása. Ezt követően hozzájuk rendelhet legalább egy megfelelőségi szabályzatot.
@@ -157,3 +157,10 @@ Ez a jelentés szabályzatbeállítások szerinti bontásban tartalmaz informác
 ![Beállítások szerinti eszközmegfelelőségi jelentés képe](./media/idc-10.png)
 
 A Beállításmegfelelőségi csempére, majd az egyes eszközmegfelelőségi szabályzatbeállításokra kattintva megtekinthető a **megfelelőségi állapot**, a **felhasználói e-mail-alias**, **az eszköz modellje** és a **tartózkodási hely** az adott eszközmegfelelőségi szabályzatbeállítás által érintett egyes eszközök esetében.
+
+## <a name="how-intune-resolves-policy-conflicts"></a>Hogyan oldja fel az Intune az szabályzatütközéseket?
+Szabályzatütközésről akkor beszélünk, hogy egy eszközre több Intune-szabályzat vonatkozik. Ha a szabályzatbeállítások közt átfedés van, az Intune a következő szabályok alkalmazásával oldja fel az ütközéseket:
+
+- Ha az ütköző beállítások egy Intune konfigurációs szabályzatból és egy megfelelőségi szabályzatból kerülnek ki, akkor a megfelelőségi szabályzat beállításai érvényesülnek a konfigurációs szabályzatéival szemben. Ez még akkor is így van, ha a konfigurációs szabályzat beállításai biztonságosabbak.
+
+- Ha több megfelelőségi szabályzatot telepített, akkor az Intune a legbiztonságosabbat alkalmazza a szabályzatok közül.

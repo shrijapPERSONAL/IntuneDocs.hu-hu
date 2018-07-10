@@ -2,10 +2,10 @@
 title: RBAC a Microsoft Intune-nal
 description: Megtudhatja, hogyan szabhatja meg a Szerepköralapú hozzáférés-vezérléssel, hogy mely felhasználók hajthatnak végre műveleteket és végezhetnek módosításokat a Microsoft Intune-ban.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474564"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Szerepköralapú hozzáférés-vezérlés (RBAC) a Microsoft Intune-nal
 
@@ -26,7 +27,7 @@ Az RBAC lehetővé teszi annak szabályozását, hogy a cégen belül ki hajthat
 
 - **Szerepkör-definíció**: a szerepkör neve, a szerepkör által kezelt erőforrások és az egyes erőforrásokhoz rendelt engedélyek.
 - **Tagok**: Az engedélyekkel rendelkező felhasználói csoportok.
-- **Hatókör**: Azok a felhasználói vagy eszközcsoportok, amelyeken a tagok alkalmazások vagy szabályzatok üzembe helyezését végezhetik, vagy távoli műveleteket hajthatnak végre.
+- **Hatókör**: Azon felhasználói vagy eszközcsoportok, amelyeket a tagok kezelhetnek.
 - **Feladat**: A definíció, a tagok és a hatókör konfigurálása után feladat rendelhető a szerepkörköz.
 
 ![Példa az Intune-beli RBAC felépítésére](./media/intune-rbac-1.PNG)
@@ -59,7 +60,8 @@ A következő szerepköröket beépített szerepkörként tartalmazza az Intune,
 - **Ügyfélszolgálat**: Távoli feladatokat hajt végre felhasználókon és eszközökön, valamint alkalmazásokat és szabályzatokat rendelhet hozzájuk.
 - **Szabályzat- és profilkezelő**: A megfelelőségi szabályzatot, a konfigurációs profilokat, az Apple-regisztrációt és a céges eszközazonosítókat kezeli.
 - **Csak olvasási jogosultságú operátor**: Megtekintheti a felhasználókra, regisztrációra, konfigurációra és alkalmazásokra vonatkozó információkat. Az Intune-ban nem hajthat végre változtatásokat.
-- **Alkalmazáskezelő**: Kezeli a mobil- és felügyelt alkalmazásokat, és olvashatja az eszközadatokat.
+- **Alkalmazáskezelő**: Kezeli a mobil- és felügyelt alkalmazásokat, olvashatja az eszközadatokat, és megtekintheti az eszközkonfigurációs profilokat.
+- **Intune-szerepkörök adminisztrátora**: Egyéni Intune-szerepköröket felügyel, és beépített Intune-szerepkörökhöz adhat hozzá hozzárendeléseket. Ez az egyetlen olyan Intune-szerepkör, amely engedélyeket tud hozzárendelni rendszergadákhoz.
 - **Iskolai rendszergazda**: Az [Intune for Education](introduction-intune-education.md) Windows 10-eszközeit kezeli, és az alábbi műveleteket hajthatja végre: 
 
 |Engedély|Működés|
@@ -78,18 +80,20 @@ A következő szerepköröket beépített szerepkörként tartalmazza az Intune,
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Az **Intune** panelen válassza az **Intune-szerepkörök**, majd a **Minden szerepkör** lehetőséget.
-4. Válassza ki a hozzárendelni kívánt szerepkört az **Intune-szerepkörök – Minden szerepkör** panelen.
+1. Válassza ki a hozzárendelni kívánt szerepkört az **Intune-szerepkörök – Minden szerepkör** panelen.
 
-5. A <*szerepkör neve*> – **Áttekintés** panelen válassza a **Hozzárendelések** > **Hozzárendelés** lehetőséget.
+2. A <*szerepkör neve*> – **Áttekintés** panelen kattintson a **Kezelés**, majd a **Hozzárendelések** elemre.
 
     > [!NOTE]
     > A beépített szerepkörök nem törölhetők és nem szerkeszthetők
 
-6. A **Szerepkör-hozzárendelések** panelen töltse ki a **Hozzárendelés neve** és igény esetén a **Hozzárendelés leírása** mezőt, majd végezze el a következőket:
+3. Kattintson a **Hozzárendelés** elemre az Egyéni szerepkör panelen.
+
+4. A **Szerepkör-hozzárendelések** panelen adja meg a hozzárendelés **nevét** és választható **leírását**, és válassza ki a következőket:
     - **Tagok** – Válasszon ki egy csoportot, amely tartalmazza azt a felhasználót, akinek meg szeretné adni az engedélyeket.
-    - **Hatókör** – Válassza ki az azon felhasználókat tartalmazó csoportot, akik kezelése a fenti tag számára engedélyezett lesz. A hatókört a **Minden felhasználó**, a **Minden eszköz** vagy a **Minden felhasználó és eszköz** értékre is állíthatja.
+    - **Hatókör** – Válassza ki az azon felhasználókat tartalmazó csoportot, akik kezelése a fenti tag számára engedélyezett lesz.
 <br></br>
-7. Amikor elkészült, kattintson az **OK**gombra. Az új hozzárendelés megjelenik a hozzárendelések listájában.
+5. Amikor elkészült, kattintson az **OK**gombra. Az új hozzárendelés megjelenik a hozzárendelések listájában.
 
 ### <a name="intune-rbac-table"></a>Intune-os RBAC-táblázat
 
@@ -126,13 +130,13 @@ Egyéni szerepkört is létrehozhat, amely az adott munkakörhöz szükséges ö
 
 1. Válassza ki a hozzárendelni kívánt egyéni szerepkört az **Intune-szerepkörök – Minden szerepkör** panelen.
 
-2. A <*szerepkör neve*> – **Áttekintés** panelen válassza a **Hozzárendelések** lehetőséget. A panelen szerkesztheti és törölheti is a meglévő szerepköröket.
+2. A <*szerepkör neve*> – **Áttekintés** panelen kattintson a **Kezelés**, majd a **Hozzárendelések** elemre. A panelen szerkesztheti és törölheti is a meglévő szerepköröket.
 
 3. Kattintson a **Hozzárendelés** elemre az Egyéni szerepkör panelen.
 
 4. A **Szerepkör-hozzárendelések** panelen adja meg a hozzárendelés **nevét** és választható **leírását**, és válassza ki a következőket:
     - **Tagok** – Válasszon ki egy csoportot, amely tartalmazza azt a felhasználót, akinek meg szeretné adni az engedélyeket.
-    - **Hatókör** – Válassza ki az azon felhasználókat tartalmazó csoportot, akik kezelése a fenti tag számára engedélyezett lesz. A hatókört a **Minden felhasználó**, a **Minden eszköz** vagy a **Minden felhasználó és eszköz** értékre is állíthatja.
+    - **Hatókör** – Válassza ki az azon felhasználókat tartalmazó csoportot, akik kezelése a fenti tag számára engedélyezett lesz.
 <br></br>
 5. Amikor elkészült, kattintson az **OK**gombra. Az új hozzárendelés megjelenik a hozzárendelések listájában.
 
@@ -143,5 +147,3 @@ Egyéni szerepkört is létrehozhat, amely az adott munkakörhöz szükséges ö
 ## <a name="see-also"></a>Lásd még:
 
 [Szerepkörök hozzárendelése az Azure AD használatával](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
-
-
