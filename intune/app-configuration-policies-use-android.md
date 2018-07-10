@@ -3,10 +3,10 @@ title: Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-
 titlesuffix: Microsoft Intune
 description: A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat adhat meg a felhasználók által futtatott Android for Work-alkalmazásokhoz.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470865"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Alkalmazáskonfigurációs szabályzatok hozzáadása felügyelt Android-eszközökhöz
 
@@ -35,15 +36,12 @@ A Microsoft Intune alkalmazáskonfigurációs szabályzataival beállításokat 
 3. Válassza a **Mobilalkalmazások** panelt.
 4. Válassza az **Alkalmazáskonfigurációs szabályzatok** lehetőséget a **Felügyelet** csoportban, majd a **Hozzáadás** lehetőséget.
 5. Adja meg a következő adatokat:
-    - **Név**  
-      Az Azure Portalon megjelenő profilnév.
-    - **Leírás**  
-      Az Azure Portalon megjelenő profilleírás.
-    - **Eszközbeléptetés típusa**  
-      Válasza a **Felügyelt eszközök** lehetőséget.
+    - **Név** – Az Azure Portalon megjelenítendő profilnév.
+    - **Leírás** – Az Azure Portalon megjelenítendő profilleírás.
+    - **Eszközregisztráció típusa** – Válassza a **Felügyelt eszközök** lehetőséget.
 6. A **Platform** beállításban válassza az **Android for Work** lehetőséget.
 7. Válassza a **Társított alkalmazás** lehetőséget azon alkalmazás kiválasztásához, amelyhez a konfigurációs szabályzatot definiálni szeretné. Válassza ki a listából azon Android for Work alkalmazásokat, amelyeket jóváhagyott az Intune-nal való szinkronizáláshoz.
-8. Válassza a **Konfigurációs beállítások** lehetőséget. A konfigurációkat a következőkkel adhatja meg:
+8. Válassza az **Engedélyek** lehetőséget. A konfigurációkat a következőkkel adhatja meg:
     - [A konfigurációtervező](#Use-the-configuration-designer)
     - [A JSON-szerkesztő](#Enter-the-JSON-editor)
 9. Válassza az **OK**, majd a **Hozzáadás** gombot.
@@ -56,7 +54,7 @@ Az alkalmazáshoz megadni kívánt konfigurációs beállítások kiválasztás�
 A konfiguráció minden kulcsához és értékéhez állítsa be az alábbiakat:
 
   - **Érték típusa**  
-    A konfigurációs érték adattípusa. Karakterlánc értéktípusok esetében igény szerint megadhat egy változót vagy tanúsítványprofilt értéktípusnak.
+    A konfigurációs érték adattípusa. Sztring értéktípusok esetében igény szerint megadhat egy változót vagy tanúsítványprofilt értéktípusnak.
   - **Konfigurációs érték**  
     A konfiguráció értéke. Ha értéktípusnak egy változót vagy tanúsítványt ad meg, a konfigurációs érték legördülő menüjében változók és tanúsítványprofilok közül választhat.  Ha egy tanúsítványt választ, az eszközre alkalmazott tanúsítványalias a futásidő során lesz feltöltve.
     
