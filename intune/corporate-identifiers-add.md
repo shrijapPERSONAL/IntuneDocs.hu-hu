@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042711"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905869"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Eszközök azonosítása vállalati tulajdonúként
 
@@ -47,7 +47,7 @@ Intune-rendszergazdaként létrehozhat és importálhat IMEI számokat vagy soro
 [Ismerje meg, hogyan találhatja meg egy Apple-eszköz sorozatszámát](https://support.apple.com/HT204308).<br>
 [Ismerje meg, hogyan találhatja meg a saját Apple-eszköz sorozatszámát](https://support.google.com/store/answer/3333000).
 
-## <a name="add-corporate-identifiers"></a>Vállalati azonosítók felvétele
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Vállalati azonosítók felvétele .csv-fájlból
 Hozzon létre egy kétoszlopos, fejléc nélküli listát .csv formátumban. A bal oldali oszlopban tüntesse fel az IMEI-azonosítót vagy a sorozatszámot, a jobb oldali oszlopban pedig a további adatokat. Egy .csv-fájlból csak egyféle azonosítót (IMEI-azonosítót vagy sorozatszámot) importálhat. A részletes adatok maximális terjedelme 128 karakter, csak adminisztratív célt szolgálnak, és nem jelennek meg az eszközön. A .csv-fájlok jelenleg legfeljebb 5 000 sorosak lehetnek.
 
 **Sorozatszámokat tartalmazó .csv-fájl feltöltése** – Hozzon létre egy vesszővel elválasztott, kétoszlopos, fejléc nélküli értéklistát (.csv), amelyben maximum 5,000 eszköz szerepel. A csv-fájl mérete nem haladja meg az 5 MB-ot.
@@ -70,19 +70,33 @@ Ez a .csv- fájl egy szövegszerkesztőben megtekintve így jelenik meg:
 >Elképzelhető, hogy az a sorozatszám, amelyet az eszköz az Intune felé jelez, nem egyezik meg az eszköz Android beállítások/Névjegy (Android Settings/About) menüjében megjelenő azonosítóval. Ellenőrizze, hogy az eszköz gyártója milyen típusú sorozatszámot tüntet fel itt.
 >Ha a feltöltendő sorozatszámokból álló fájl pontokat (.) tartalmaz, a feltöltés sikertelen lesz. A pontokat tartalmazó sorozatszámok nem támogatottak.
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>Céges azonosítók .csv-listájának felvétele
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Céges azonosítók .csv-listájának feltöltése
 
-1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** lehetőséget, majd kattintson a **Hozzáadás** gombra.
+1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** > **Hozzáadás** > **CSV-fájl feltöltése** lehetőséget.
 
    ![A céges készülékazonosítók munkaterülete a Hozzáadás gomb kiemelésével](./media/add-corp-id.png)
 
-2. Az **Azonosítók hozzáadása** panelen adja meg az azonosító típusát: **IMEI** vagy **Sorozatszám**. Megadhatja, hogy a korábban importált számok **felülírják-e a meglévő azonosítók adatait**.
+2. Az **Azonosítók hozzáadása** panelen adja meg az azonosító típusát: **IMEI** vagy **Sorozatszám**.
 
-3. Kattintson a mappa ikonra, és adja meg az importálni kívánt lista elérési útját. Keresse meg a .csv-fájlt, és kattintson a **Hozzáadás** elemre. A **Frissítés** elemre kattintva megtekintheti az új eszközazonosítókat.
+3. Kattintson a mappa ikonra, és adja meg az importálni kívánt lista elérési útját. Keresse meg a .csv-fájlt, és kattintson a **Hozzáadás** elemre. 
+
+4. Ha a .csv-fájl az Intune-ban már meglévő céges azonosítókat tartalmaz, de más részletekkel, megjelenik az **Ismétlődő azonosítók áttekintése** előugró üzenet. Válassza ki azokat az azonosítókat, amelyeket szeretne felülírni az Intune-ban, majd válassza az **OK** gombot az azonosítók hozzáadásához. Az egyes azonosítóknál csak az első ismétlődés lesz összehasonlítva.
+
+## <a name="manually-enter-corporate-identifiers"></a>A céges azonosítók manuális megadása
+
+1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** > **Hozzáadás** > **Beírás manuálisan** lehetőséget.
+
+2. Az **Azonosítók hozzáadása** panelen adja meg az azonosító típusát: **IMEI** vagy **Sorozatszám**.
+
+3. Adja meg minden egyes azonosítóhoz, amelyet fel szeretne venni az **Azonosító** és a **Részletek** adatait. Az azonosítók megadásának befejezése után válassza a **Hozzáadás** gombot.
+
+5. Ha az Intune-ban már meglévő céges azonosítókat adott meg, de más részletekkel, megjelenik az **Ismétlődő azonosítók áttekintése** előugró üzenet. Válassza ki azokat az azonosítókat, amelyeket szeretne felülírni az Intune-ban, majd válassza az **OK** gombot az azonosítók hozzáadásához. Az egyes azonosítóknál csak az első ismétlődés lesz összehasonlítva.
+
+A **Frissítés** elemre kattintva megtekintheti az új eszközazonosítókat.
 
 Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszközök **Regisztrált** vagy **Nincs kapcsolat** állapotúak lehetnek. Utóbbi állapot azt jelenti, hogy az eszköz még **nem lépett kapcsolatba** az Intune szolgáltatással.
 
-### <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
+## <a name="delete-corporate-identifiers"></a>Céges azonosítók törlése
 
 1. Az [Azure Portalbeli Intune-ban](https://portal.azure.com) válassza az **Eszközök regisztrálása** > **Céges készülékazonosítók** lehetőséget.
 2. Válassza ki a törölni kívánt eszközazonosítókat, majd kattintson a **Törlés** gombra.
@@ -90,7 +104,7 @@ Az importált eszközöket nem mindig regisztrálja a rendszer. Emiatt az eszkö
 
 Ha törli egy regisztrált eszköz céges azonosítóját, azzal nem változtatja meg az eszköz tulajdonosát. Az eszköz tulajdonosának módosításához nyissa meg az **Eszközök** panelt, válassza ki az eszközt, majd válassza a **Tulajdonságok** lehetőséget, és módosítsa az **Eszköz tulajdonosa** értékét.
 
-### <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
+## <a name="imei-specifications"></a>IMEI-azonosítók specifikációi
 Az IMEI-azonosítók részletes specifikációját a [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729) lapon találja.
 
 ## <a name="change-device-ownership"></a>Eszköz tulajdonosának módosítása

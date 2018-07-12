@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232918"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906039"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobileszköz-felügyeleti szolgáltató megadása
 
@@ -41,9 +41,11 @@ A lehetséges konfigurációk a következők:
 
 ## <a name="set-mdm-authority-to-intune"></a>Az Intune beállítása MDM-szolgáltatóként
 
+Ha még nem állította be az MDM-szolgáltatót, kövesse az alábbi lépéseket. Az MDM-szolgáltatók váltásához lásd az alábbi [Mobileszköz-felügyeleti szolgáltató módosítása](#prepare-to-change-the-mdm-authority-to-configuration-manager) szakaszt.
+
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
-3. A **Mobileszköz-kezelő szolgáltató** beállítás megnyitásához válassza a narancssárga szalagcímet.
+3. A **Mobileszköz-kezelő szolgáltató** beállítás megnyitásához válassza a narancssárga szalagcímet. A narancssárga szalagcím csak akkor jelenik meg, ha még nem állított be az MDM-szolgáltatót.
 4. A **Mobileszköz-kezelő szolgáltató** szakaszban válassza ki az alábbiak közül a kívánt MDM-szolgáltatót:
    - **Intune MDM-szolgáltató**
    - **Configuration Manager MDM-szolgáltató**.
@@ -57,7 +59,7 @@ A lehetséges konfigurációk a következők:
 Engedélyezett Android- vagy Apple-eszközkezelés esetén az Intune eszköz- és felhasználóadatok küldésével végzi el az eszközök kezeléséhez szükséges integrációt a külső szolgáltatásokkal.
 
 Néhány új helyzet, amelyben az adatok megosztásához a rendszer jóváhagyást kér:
-- Android for Work engedélyezése.
+- Az androidos munkahelyi profilok engedélyezése.
 - Apple MDM leküldéses tanúsítványok engedélyezése és feltöltése.
 - Olyan Apple-szolgáltatások engedélyezése, mint a Készülékregisztrációs program, a School Manager és a mennyiségi vásárlási program (VPP).
 

@@ -1,6 +1,6 @@
 ---
 title: Vállalati adatok eltávolítása az eszközökről a Microsoft Intene használatával – Azure | Microsoft Docs
-description: Eltávolíthatja a vállalati adatokat az eszközről, vagy visszaállíthatja a gyári beállításokat Android, Android for Work, iOS, macOS vagy Windows rendszerű eszközön a Windows Intune-nal. Törölheti is az eszközt az Azure Active Directoryból.
+description: Eltávolíthatja a vállalati adatokat az eszközről, vagy visszaállíthatja a gyári beállításokat Android, androidos munkahelyi profilt használó, iOS, macOS vagy Windows rendszerű eszközön a Windows Intune-nal. Törölheti is az eszközt az Azure Active Directoryból.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091727"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906056"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása gyári beállítások visszaállításával, a céges adatok eltávolításával vagy az eszköz regisztrációjának manuális megszüntetésével
 
@@ -31,7 +31,7 @@ A **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállít
 
 ## <a name="factory-reset"></a>Gyári beállítások visszaállítása
 
-A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg vagy törlődnek, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet.
+A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet. Ellenkező esetben megtörténik a meghajtó biztonságos törölése.
 
 |Gyári beállítások visszaállítása művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ Az alábbi táblázatok ismertetik, hogy milyen adatokat távolít el a rendszer
 |Az Azure AD elhagyása|Törlődik az Azure AD rekord.|Törlődik az Azure AD rekord.|
 |Névjegyek |Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.|Az alkalmazásból a natív címjegyzékbe közvetlenül szinkronizált névjegyeket a rendszer eltávolítja. A natív címjegyzékből egy másik külső forrásba szinkronizált névjegyek nem távolíthatók el. <br /> <br />Jelenleg csak az Outlook alkalmazás használata támogatott.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Androidos munkahelyi profil
 
-Az Android for Work-eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz kikerült az Intune felügyeletéből. Az Android for Work esetében a gyári beállítások visszaállítása nem támogatott.
+Az androidos munkahelyi profillal rendelkező eszközökről a céges adatok eltávolítása a munkahelyi profilban lévő összes adatot, alkalmazást és beállítást eltávolítja. Az eszköz kikerült az Intune felügyeletéből. Az androidos munkahely profilok esetében a gyári beállítások visszaállítása nem támogatott.
+
+### <a name="android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök
+
+A gyári alapbeállításokat csak androidos kioszkeszközökön állíthatja vissza. Az androidos kioszkeszközökről a céges adatok nem távolíthatók el.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Ha el szeretne távolítani eszközöket az Intune-portálról, ezt megteheti az
 
 1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
 2. Válassza az **Eszközök** > **Minden eszköz** > a törölni kívánt eszközök > **Törlés** lehetőséget.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eszközök automatikus törlése törlési szabályok alkalmazásával
+Az Intune konfigurálható úgy, hogy automatikusan törölje az inaktívnak, elavultnak vagy nem válaszolónak látszó eszközöket. Ezek a törlési szabályok folyamatosan figyelik az eszközleltárt, hogy az eszközrekordok naprakészek maradjanak. Az így törölt eszközök törlődnek az Intune-felügyeletből.
+1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
+2. Válassza az **Eszközök** > **Eszköztörlési szabályok** > **Igen** lehetőséget.
+3. Az **Azon eszközök törlése, amelyek a megadott számú napig nem jelentkeztek be** mezőben adjon meg egy 90 és 270 közötti értéket.
+4. Válassza a **Mentés** elemet.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eszközök törlése az Azure Active Directory portálról
 

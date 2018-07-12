@@ -10,7 +10,7 @@
   Az ellenőrzött Samsung Knox Standard-eszközök teljes listája megtalálható az [Android és Samsung Knox Standard-eszközök konfigurációs szabályzatának beállításai](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices) című témakörben.
 
 
-- Android for Work [(követelmények)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+- Android Enterprise – [követelmények](https://support.google.com/work/android/answer/6174145?hl=en).
 
 ### <a name="microsoft"></a>Microsoft
 

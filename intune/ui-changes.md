@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232936"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905376"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Hová kerültek az Intune-funkciók az Azure-ban?
 Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és logikusabban rendeztünk el néhány feladatot. Minden ilyen előrelépés azzal jár, hogy meg kell tanulni az új elrendezést. Ez az útmutató azoknak készült, akik jól ismerik a klasszikus Intune-portált, és szeretnék megtudni, hogyan végezhetik el a feladatokat az Azure Portalbeli Intune-ban. Ha a cikk nem tartalmazza az Ön által keresett információt, írja meg a lap alján hozzászólásban, hogy pótolhassuk.
@@ -36,7 +36,7 @@ Az Intune Azure Portalra való költöztetésekor éltünk a lehetőséggel, és
 |Csoportok IMEI szerint (minden platform)| Csoportok > Minden eszköz > Előre regisztrált vállalati eszközök > IMEI szerint (minden platform) | [Eszközregisztráció > Céges készülékazonosítók](#by-imei-all-platforms)|
 | Vállalati eszközregisztrációs profil| Szabályzat > Vállalati eszközök regisztrációja | [Eszközregisztráció > Apple-regisztráció > Regisztrációs programprofilok](#where-did-corporate-pre-enrolled-devices-go) |
 | Vállalati eszközregisztrációs profil | Szabályzat > Vállalati eszközök regisztrációja | [Eszközregisztráció > Apple-regisztráció > AC-profilok](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android for Work > Regisztráció |
+| Android for Work | Felügyelet > Mobileszköz-kezelés > Android for Work | Eszközregisztráció > Android eszközök beléptetése |
 | Feltételek és kikötések | Szabályzatok > Használati feltételek | Eszközregisztráció > Használati feltételek |
 A céges portál beállításai|Felügyelet > Céges portál|**Kezelés** > Mobilalkalmazások<br> **Telepítő** > A Céges portál védjegyezése
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547403"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905971"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Mennyiségi vásárlási program keretében vásárolt iOS-alkalmazások kezelése a Microsoft Intune-nal
 
@@ -135,8 +135,7 @@ A végfelhasználó különféle helyzetekben figyelmeztetést fog kapni VPP-alk
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Alkalmazásengedélyek visszavonása és tokenek törlése 
 
-<!-- 820863 -->  
-Ha egy adott eszközhöz egy vagy több iOS Volume Purchase Program-alkalmazás is tartozik, akkor visszavonhatja az eszköztől az összes eszközalapú alkalmazáslicencet. Az alkalmazáslicenc visszavonása nem törli a vonatkozó VPP-alkalmazást az eszközről. A VPP-alkalmazások eltávolításához és a licenc visszaigényléséhez a VPP-alkalmazás hozzárendelési típusát **Eltávolítás** értékre kell módosítania. Ha egy felhasználóhoz hozzárendelt alkalmazást töröl, az Intune visszaigényli a felhasználó vagy az eszköz licencét, és törli az alkalmazást az eszközről.
+Visszavonhatja az iOS-es mennyiségi licencprogramban (VPP) részt vevő összes társított alkalmazáslicencet az adott eszköz, felhasználó vagy alkalmazás alapján. A felhasználókat értesítheti, amikor megszűnik az alkalmazás hozzájuk rendelése. Az alkalmazáslicenc visszavonása nem törli a vonatkozó VPP-alkalmazást az eszközről. A VPP-alkalmazás eltávolításához és a felhasználóhoz vagy eszközhöz társított alkalmazáslicenc visszaszerzéséhez a hozzárendelési műveletet meg kell változtatnia **Eltávolítás** műveletre. Ha egy felhasználóhoz hozzárendelt alkalmazást eltávolít, az Intune visszaigényli a felhasználó vagy az eszköz licencét, és eltávolítja az alkalmazást az eszközről. A visszavont licencek száma látható lesz az Intune **Alkalmazások** tevékenységcsoportján belüli **Licencelt alkalmazások** csomóponton. Miután eltávolított egy VPP-alkalmazást és visszavonta az alkalmazás licencét, választhatja, hogy hozzárendeli az alkalmazás licencét egy másik felhasználóhoz vagy eszközhöz. 
 
 >[!NOTE]
 >Ha egy alkalmazott távozik a cégtől, és nem tagja már AAD-csoportoknak, az Intune visszaszerez minden olyan alkalmazáslicencet, amely felhasználó által licencelt iOS VPP-alkalmazáshoz tartozik.
