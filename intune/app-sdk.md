@@ -1,27 +1,20 @@
----
-title: Az Intune App SDK előnyei
-titlesuffix: Microsoft Intune
-description: Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi a Microsoft Intune mobilalkalmazás-felügyeleti funkcióinak használatát.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>required metadata
+
+title: Az Intune App SDK előnyei titlesuffix: Microsoft Intune description: Az Intune App SDK iOS és Android platformokra egyaránt elérhető, lehetővé teszi a Microsoft Intune használatával való mobilalkalmazás-felügyeletet.
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>optional metadata
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223577"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Az Intune App SDK áttekintése
 Az iOS és az Android platformhoz is elérhető Intune App SDK lehetővé teszi az alkalmazások számára az Intune alkalmazásvédelmi szabályzatainak használatát. Arra törekszik, hogy minimálisra csökkentse az alkalmazásfejlesztő által végzendő kódmódosítás mennyiségét. Az SDK legtöbb funkcióját alkalmazása működésének módosítása nélkül is engedélyezheti. Ha hatékonyabbá szeretné tenni a végfelhasználók és a rendszergazdák munkáját, az API-jainkkal személyre szabhatja alkalmazása működését olyan funkciók tekintetében, amelyek használatához az alkalmazás közreműködése szükséges.
 
@@ -70,3 +63,8 @@ A többszörös identitás támogatása megoldást kínál arra az adatvédelmi 
 A saját eszközt használó felhasználók sok esetben anélkül szeretnének a vállalati adatokhoz hozzáférni, hogy eszközüket mobileszköz-felügyeleti (MDM) szolgáltatóban kellene regisztrálniuk. Az MDM-alapú regisztrációhoz globális irányítás szükséges az eszköz felett, a felhasználók pedig sok esetben nem szívesen biztosítanak saját eszközük felett ilyen mértékű irányítást a vállalatnak.
 
 A regisztráció nélküli alkalmazásvédelemmel a Microsoft Intune szolgáltatás közvetlenül az alkalmazásokra léptethet érvénybe alkalmazásvédelmi szabályzatokat, mindehhez nincs szüksége eszközfelügyeleti csatornára.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Igény szerinti VPN-alkalmazáskapcsolatok Citrix mVPN segítségével 
+Az eszközöket és az alkalmazásokat a Citrix XenMobile MDX és a Microsoft Intune kombinációjával is kezelheti. Ez a kombináció lehetővé teszi, hogy az eszközök kezelésénél egyaránt igénybe vehesse az Intune alkalmazásvédelmi szabályzatát és a Citrix mVPN-technológiáját. A Citrix-integráció elérhető az iOS-es és androidos Intune App SDK-hoz és az iOS-es és androidos Intune alkalmazásburkoló eszközhöz is (a -citrix jelölővel használva).
+ 
+A Citrix MDX-ről további információt [Az MDX Toolkit bemutatása](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), a [Citrix MDX alkalmazásburkoló iOS-hez](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) és a [Citrix MDX alkalmazásburkoló Androidhoz](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) című cikkekben talál.

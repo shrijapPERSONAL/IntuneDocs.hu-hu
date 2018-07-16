@@ -1,6 +1,6 @@
 ---
-title: Android for Work megfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Android for Work-eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása. Feltört eszközök választható engedélyezése, az elfogadható fenyegetettségi szint megadása, a Google Play Áruház ellenőrzése, minimális és maximális operációsrendszer-verzió megadása, jelszókövetelmények megválasztása és alkalmazások közvetlen telepítésének engedélyezése.
+title: Androidos munkahelyi profil megfelelőségi szabályzatának létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Androidos munkahelyi profilos eszközök Microsoft Intune eszközmegfelelőségi szabályzatának létrehozása vagy konfigurálása. Feltört eszközök választható engedélyezése, az elfogadható fenyegetettségi szint megadása, a Google Play Áruház ellenőrzése, minimális és maximális operációsrendszer-verzió megadása, jelszókövetelmények megválasztása és alkalmazások közvetlen telepítésének engedélyezése.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047985"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905087"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Android for Work-eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Androidos munkahelyi profilos eszközök eszközmegfelelőségi szabályzatának hozzáadása az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Intune-beli Android for Work-eszközmegfelelőségi szabályzatokkal megszabhatja az ilyen eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozható vagy engedélyezhető a vállalati erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon különböző platformokhoz hozhat létre megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
+Az Intune-beli androidos munkahelyi profilos eszközmegfelelőségi szabályzatokkal megszabhatja az ilyen eszközöktől a megfelelőséghez kötelezően elvárt szabályokat és beállításokat. Ezeket a szabályzatokat feltételes hozzáféréssel használva megakadályozható vagy engedélyezhető a vállalati erőforrásokhoz való hozzáférés. Emellett lekérhet eszközjelentéseket, és különböző műveleteket hajthat végre meg nem felelés esetén. Az Azure-beli Intune portálon különböző platformokhoz hozhat létre megfelelőségi szabályzatokat. A megfelelőségi szabályzatokról és azok előfeltételeiről az [Eszközmegfelelőség – első lépések](device-compliance-get-started.md) című cikk nyújt bővebb tájékoztatást.
 
 Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítások kezelése, ha a megfelelőségi szabályzatot feltételes hozzáférési szabályzattal együtt használják.
 
 --------------------------
 
-|**házirend-beállítás**| **Android for Work** |
+|**házirend-beállítás**| **Androidos munkahelyi profil** |
 | --- | --- |
 | **PIN-kód vagy jelszó konfigurálása** |  Karanténba helyezve |
 | **Eszköztitkosítás** |  Karanténba helyezve |
@@ -51,7 +51,7 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 ## <a name="create-a-device-compliance-policy"></a>Eszközmegfelelőségi szabályzat létrehozása
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. A **Platform** beállításban válassza az **Android for Work** lehetőséget. Válassza a **Beállítások konfigurálása** lehetőséget az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK**, majd a **Létrehozás** lehetőséget.
+5. A **Platform** beállításban válassza a **Vállalati Android** lehetőséget. Válassza a **Beállítások konfigurálása** lehetőséget az **Eszközállapot**, **Eszköztulajdonságok** és **Rendszerbiztonság** beállításainak megadásához. Ha elkészült, válassza az **OK**, majd a **Létrehozás** lehetőséget.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ Az alábbi táblázat ismerteti, hogyan történik a nem megfelelő beállítás
 
 #### <a name="threat-scan-on-apps"></a>Alkalmazások fenyegetettségvizsgálata
 
-A munkahelyi profilokkal rendelkező (Android for Work ) eszközökön az **Alkalmazások fenyegetettségvizsgálata** beállítás a konfigurációs szabályzat beállításai között található. A beállítást rendszergazdák tudják engedélyezni az adott eszközre.
+Az androidos munkahelyi profilokkal rendelkező eszközökön az **Alkalmazások fenyegetettségvizsgálata** beállítás a konfigurációs szabályzat beállításai között található. A beállítást rendszergazdák tudják engedélyezni az adott eszközre.
 
-Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vonatkozóan engedélyezhető az **Alkalmazások fenyegetettségvizsgálata** beállítás. Hozzon létre egy eszközprofilt, és tegye kötelezővé a rendszerbiztonsági beállítást. További információt az [Android for Work-eszközök korlátozásaira vonatkozó beállítások az Intune-ban](device-restrictions-android-for-work.md) című témakörben talál.
+Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vonatkozóan engedélyezhető az **Alkalmazások fenyegetettségvizsgálata** beállítás. Hozzon létre egy eszközprofilt, és tegye kötelezővé a rendszerbiztonsági beállítást. További információt az [Munkahelyi eszközök korlátozásaira vonatkozó beállítások az Intune-ban](device-restrictions-android-for-work.md) című témakörben talál.
 
 ## <a name="device-property-settings"></a>Eszköztulajdonság-beállítások
 
@@ -106,13 +106,13 @@ Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vo
 
 ### <a name="encryption"></a>Encryption
 
-- **Titkosítás megkövetelése mobileszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök megkövetelik a titkosítást.
+- **Titkosítás megkövetelése mobileszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközök kikényszerítik a titkosítást.
 
 ### <a name="device-security"></a>Eszközbiztonság
 
-- **Az ismeretlen forrásból származó alkalmazások tiltása**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
+- **Az ismeretlen forrásból származó alkalmazások tiltása**: Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközök mindig korlátozzák az ismeretlen forrásokból való telepítést.
 - **Céges portál alkalmazás futtatókörnyezetének integritása**: Ellenőrzi, hogy a Céges portál alkalmazás alapértelmezett futtatókörnyezete van-e telepítve, megfelelően alá van-e írva, nincs-e hibakereső módban, és ismert forrásból telepítették-e.
-- **Az USB-hibakeresés letiltása az eszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az Android for Work-eszközökön már le van tiltva az USB-hibakeresés.
+- **Az USB-hibakeresés letiltása az eszközön**: Ezt a beállítást nem szükséges konfigurálni, mivel az androidos munkahelyi profilokkal rendelkező eszközökön már le van tiltva az USB-hibakeresés.
 - **Minimális biztonsági javítási szint**: Megadható a legrégebbi biztonsági javítás, amellyel az eszköz rendelkezhet. Az ennél régebbi javítási szintű eszközök nem megfelelőek. A dátumot `YYYY-MM-DD` formátumban kell megadni.
 
 ## <a name="assign-user-groups"></a>Felhasználói csoportok hozzárendelése

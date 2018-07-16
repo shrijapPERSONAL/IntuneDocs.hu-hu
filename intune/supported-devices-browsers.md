@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033374"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434266"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Támogatott operációs rendszerek és böngészők
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033374"
 
 A Microsoft Intune beállítása előtt tekintse át a támogatott operációs rendszereket és böngészőket.
 
-A következő témakörben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions). Ismerkedjen meg [az Intune hálózatisávszélesség-felhasználásával](network-bandwidth-use.md) is ([a klasszikus portálon](/intune-classic/get-started/network-bandwidth-use)).
+A következő témakörökben találhat segítséget az Intune eszközre való telepítéséhez: [Feladatok elvégzése kezelt eszközökön](/intune-user-help/company-portal-frequently-asked-questions) és [Az Intune hálózati sávszélesség-használata](network-bandwidth-use.md) ([klasszikus portál](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Az Intune által támogatott operációs rendszerek
 
@@ -38,12 +38,12 @@ Az alábbi operációs rendszereket használó eszközöket kezelheti:
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Támogatott Samsung Knox Standard-eszközök
 
-Az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung Knox-aktiválást, ha az eszköz szerepel a [támogatott Knox-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Így elkerülhetők az MDM-regisztrációt megakadályozó Knox-aktiválási hibák. Azokat az eszközöket, melyek nem támogatják a Samsung Knox-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a Knox platformot, míg mások nem. Egy adott eszköz megvásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy kompatibilis-e a KNOX-szal.
+Az MDM-regisztrálást megakadályozó Knox-aktiválási hibák elkerülése érdekében az MDM-regisztráció során a Céges portál alkalmazás csak akkor kísérli meg a Samsung Knox-aktiválást, ha az eszköz szerepel a [támogatott Knox-eszközök listáján](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Azokat az eszközöket, melyek nem támogatják a Samsung Knox-aktiválást, szabványos Android-eszközként regisztrálja a rendszer. Előfordulhat, hogy egy Samsung eszköz néhány modellje támogatja a Knox platformot, míg mások nem. Samsung-eszközök vásárlása és üzembe helyezése előtt egyeztesse az eszköz viszonteladójával, hogy az eszköz kompatibilis-e a KNOX-szal.
 
 > [!NOTE]
 > Előfordulhat, hogy a Samsung Knox-eszközök regisztrálásához [engedélyeznie kell a Samsung kiszolgálóinak elérését](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-Az alábbi Samsung-eszközök nem támogatják a Knox platformot, így ezeket az androidos Céges portál alkalmazás natív Android-eszközként fogja regisztrálni:
+Az alábbi Samsung-modellek nem támogatják a Knoxot. Ezeket az Androidhoz készült Céges portál alkalmazás natív Android-eszközként regisztrálja:
 
 | **Eszköz neve** | **Eszköz modellszáma** |
 | --- | --- |
@@ -103,7 +103,7 @@ Ezeken a portálokon jelenleg a következő böngészők támogatottak:
 - Microsoft Internet Explorer 11
 - Safari (csak Mac, legújabb verzió)
 - Chrome (legújabb verzió)
-- Mozilla Firefox (a Silverlightot engedélyezni kell) – [További információ (az 52-es verziónál korábbi verziók)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (legújabb verzió)
 
 
 

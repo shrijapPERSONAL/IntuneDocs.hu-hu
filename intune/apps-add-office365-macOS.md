@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223611"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869498"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Az Office 365 hozzárendelése macOS rendszerű eszközökhöz a Microsoft Intune-nal
 
-Az *áruházbeli alkalmazástípussal* könnyedén hozzárendelheti az Office 365-alkalmazásokat a macOS rendszerű eszközökhöz. Ezzel az alkalmazástípussal a Word, az Excel, a PowerPoint, az Outlook és a OneNote alkalmazást telepítheti. Az alkalmazásokhoz a Microsoft automatikus frissítési (MAU) szolgáltatása is rendelkezésre áll, amely segít azokat biztonságosabban és naprakészebben tartani. A kívánt alkalmazások egyetlen alkalmazásként jelennek meg az Intune-konzol alkalmazáslistájában.
+Ezzel az alkalmazástípussal könnyedén hozzárendelhet Office 365 2016-alkalmazásokat macOS rendszerű eszközökhöz. Ezzel az alkalmazástípussal a Word, az Excel, a PowerPoint, az Outlook és a OneNote alkalmazást telepítheti. Az alkalmazásokhoz a Microsoft automatikus frissítési (MAU) szolgáltatása is rendelkezésre áll, amely segít azokat biztonságosabban és naprakészebben tartani. A kívánt alkalmazások egyetlen alkalmazásként jelennek meg az Intune-konzol alkalmazáslistájában.
 
 
 ## <a name="before-you-start"></a>Előkészületek
@@ -70,7 +70,7 @@ Ebben a lépésben az alkalmazáscsomag hozzárendeléseit konfigurálhatja.
 2. Az **Office 365** panelen válassza a **Hozzárendelések** lehetőséget.
 3. Az alkalmazáscsomagot használó csoport megadásához válassza a **Csoport hozzáadása** lehetőséget.  
     Ekkor megjelenik a **Csoport hozzáadása** panel.
-4. A **Hozzárendelés típusa** beállítást állítsa **Kötelező** értékre.
+4. A **Hozzárendelés típusa** beállítást állítsa **Kötelező** vagy **Elérhető** értékre.
 5. Rendelje hozzá a csomagot a kijelölt csoportokhoz. További információ: [Alkalmazások hozzárendelése csoportokhoz a Microsoft Intune-nal](apps-deploy.md).
 
     >[!Note]

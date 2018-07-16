@@ -1,11 +1,11 @@
 ---
 title: 'Lásd: Eszközprofilok a Microsoft Intune-ban – Azure | Microsoft Docs'
-description: Megtekintheti és kezelheti az eszközkonfigurációs profilok adatait a Microsoft Intune-ban, egy grafikus diagramon tekintheti meg a profilokhoz rendelt eszközök számát, és megtekintheti, mely eszközök rendelkeznek hozzárendelt vagy üzembe helyezett profillal.
+description: Megtekintheti és kezelheti az eszközkonfigurációs profilok adatait a Microsoft Intune-ban, egy grafikus diagramon tekintheti meg a profilokhoz rendelt eszközök számát, és megtekintheti, mely eszközök rendelkeznek hozzárendelt vagy üzembe helyezett profillal. Az ütközést okozó beállításokkal rendelkező profilok hibaelhárítása is elvégezhető.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744788"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905920"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Eszközprofilok figyelése a Microsoft Intune-ban
 
@@ -33,7 +33,7 @@ Az Intune egyes Azure Portalbeli funkcióival figyelheti és kezelheti az eszkö
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközkonfiguráció** > **Profilok** lehetőséget.
 
-Itt mindegyik meglévő profil megjelenik olyan adatokkal, mint a platform, vagy a profil eszköz-hozzárendelési állapota.
+Itt mindegyik meglévő profil megjelenik olyan adatokkal, mint a platform, és megmutatja a profil eszköz-hozzárendelési állapotát is.
 
 ## <a name="view-details-on-a-profile"></a>Egy profil adatainak megtekintése
 
@@ -68,6 +68,16 @@ Az eszközprofil létrehozása után az Intune grafikus diagramokat nyújt. Ezek
   - **Eszközállapot**: Itt láthatja a profilhoz rendelt eszközöket, valamint azt, hogy a profilt sikeresen üzembe helyezték-e. Egy adott eszközt kijelölve még több adatot megtekinthet, például a telepített alkalmazásokat.
   - **Felhasználói állapot**: A profil hatálya alá tartozó eszközök felhasználóinak neveit jeleníti meg, valamint azt, hogy a profilt sikeresen üzembe helyezték-e. Egy adott felhasználót kijelölve még több adatot megtekinthet.
   - **Állapot beállításonként**: A kimenetet szűri a profil egyes beállításait megjelenítve, valamint megmutatja, hogy a beállítást sikeresen alkalmazták-e.
+
+## <a name="view-conflicts"></a>Ütközések megtekintése
+
+Az **Eszközök** > **Minden eszköz** területen megtekintheti az ütközést okozó beállításokat. Ütközés esetén az összes olyan profil is látható, amely ezt a beállítást tartalmazza. A rendszergazdák ezzel a funkcióval hibakeresést végezhetnek, és elháríthatják a profilok hibáit is.
+
+1. Az Intune-ban válassza az **Eszközök** > **Minden eszköz** lehetőséget, majd válasszon ki a listából egy meglévő eszközt. A végfelhasználók a céges portál alkalmazásban nézhetik meg az eszköz nevét.
+2. Válassza az **Eszközök konfigurálása** lehetőséget. Az eszközre alkalmazott összes konfigurációs szabályzat megjelenik.
+3. Válassza ki a szabályzatot. Megjelenik a szabályzat összes olyan beállítása, amely az eszközre vonatkozik. Ha egy eszköz **Ütközés** állapotban van, válassza ki a vonatkozó sort. Az új ablakban megjelenik az összes olyan profil és profilnév, amely az ütközést kiváltó beállítást tartalmazza.
+
+Miután ismeri az ütközést okozó beállítást, és tudja, hogy mely szabályzatok tartalmazzák ezt a beállítást, az ütközés elhárítása egyszerűbben elvégezhető. 
 
 ## <a name="next-steps"></a>További lépések
 [Felhasználói és eszközprofilok hozzárendelése](device-profile-assign.md)  

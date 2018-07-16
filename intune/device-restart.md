@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829325"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904948"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Az eszközök távoli újraindítása az Intune-nal
 
@@ -31,12 +31,13 @@ Az **újraindítási** eszközművelettel a kiválasztott eszköz újraindíthat
 
 - Windows – A Windows 8.1-es és újabb verziói esetén támogatott
 - Windows Phone – A Windows Phone 8.1-es és újabb verziói esetén támogatott
+- Androidos kioszk módú eszközök – támogatottak
 - iOS – támogatott
 
     > [!Note]  
     > Ehhez a parancshoz felügyelt eszközökre és az **Eszközzárolás** hozzáférési jogosultságra van szükség. Az eszköz azonnal újraindul. Újraindítás után a PIN-kóddal zárolt iOS-eszközök nem csatlakoznak újra a Wi-Fi-hálózathoz. Újraindítás után az eszköz lehet, hogy nem fog tudni kommunikálni a kiszolgálóval.
 - macOS – nem támogatott
-- Android – nem támogatott
+- Androidos és androidos munkahelyi profillal rendelkező eszközök – nem támogatottak
 
 ## <a name="restart-a-device"></a>Eszköz újraindítása
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832767"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844963"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technológiai döntések a hozott eszközök Microsoft Enterprise Mobility + Security (EMS) általi felügyeletével kapcsolatban.
 
@@ -39,7 +39,7 @@ Könnyedén hozzásegítheti a felhasználókat az eszközük beléptetésére, 
 **Megfelelőség** – Egyes cégeknek meg kell felelniük bizonyos jogszabályoknak vagy más előírásoknak, melyek specifikus MDM-vezérlést igényelnek. Előfordulhat például, hogy az MDM segítségével titkosítania kell a teljes eszközt, vagy jelentést kell készítenie az eszközön megtalálható összes alkalmazásról.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Gyakori érvek csak az alkalmazások felügyelete mellett (MAM)
-Az MDM nélküli MAM rendkívül népszerű a hozott eszközt támogató cégek körében. Ösztönözheti a felhasználókat az e-mailek Outlook Mobile alkalmazással (mely támogatja a MAM-védelmet) való elérésére azáltal, hogy bevezet egy feltételes hozzáférési szabályzatot az Exchange Online-ban. Az alábbi okokból lehet szükség arra, hogy csak az alkalmazásokat felügyelje a személyes eszközökön:
+Az MDM nélküli MAM rendkívül népszerű a hozott eszközt támogató cégek körében. Ha bevezet egy feltételes hozzáférési szabályzatot az Exchange Online-ban, arra ösztönözheti a felhasználókat, hogy az e-maileket a MAM-védelmet is támogató Outlook Mobile alkalmazással érjék el. Az alábbi okokból lehet szükség arra, hogy csak az alkalmazásokat felügyelje a személyes eszközökön:
 
 **Felhasználói élmény** – Az MDM-regisztráció számos (platform által kényszerített) figyelmeztető üzenet megjelenésével jár, melyek hatására a felhasználók gyakran úgy döntenek, hogy inkább nem szeretnének hozzáférni a levelezésükhöz a személyes eszközükön. A MAM sokkal kevésbé ijesztő a felhasználóknak, hiszen csak egy előugró üzenet jelenik meg egyszer, mely tudatja velük, hogy a MAM-védelem aktív.
 

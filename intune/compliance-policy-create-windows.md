@@ -1,23 +1,23 @@
 ---
 title: Windows-eszközmegfelelőségi szabályzat létrehozása a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Microsoft Intune-eszközmegfelelőségi szabályzatot hozhat létre vagy konfigurálhat Windows Phone 8.1, Windows 8.1 és újabb és Windows 10 és újabb rendszerű eszközökhöz. A megfelelőség szempontjából ellenőrizheti az operációs rendszer minimális és maximális verzióját, jelszóra és annak hosszára vonatkozó követelményeket állíthat be, megkövetelheti a bitlocker használatát, beállíthatja az elfogadható fenyegetettségi szintet és az adattárolók titkosításának engedélyezését. Ez a Surface Hubra és a Windows Holographic for Businessre is vonatkozik.
+description: Microsoft Intune-eszközmegfelelőségi szabályzatot hozhat létre vagy konfigurálhat Windows Phone 8.1, Windows 8.1 és újabb és Windows 10 és újabb rendszerű eszközökhöz. A megfelelőség szempontjából ellenőrizheti az operációs rendszer minimális és maximális verzióját, jelszóra és annak hosszára vonatkozó követelményeket állíthat be, megkövetelheti a bitlocker használatát, ellenőrizheti a harmadik féltől származó vírusvédelmi megoldásokat, beállíthatja az elfogadható fenyegetettségi szintet és az adattárolók titkosításának engedélyezését. Ez a Surface Hubra és a Windows Holographic for Businessre is vonatkozik.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744907"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909337"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Windowsos eszközök megfelelőségi szabályzatainak hozzáadása az Intune-ban
 
@@ -115,6 +115,8 @@ Windows 8.1-es számítógépek esetén például a visszaadott verzió a **3**-
 
 A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
+A Windows Defender ATP (Advanced Threat Protection) fenyegetések elleni védelmi szolgáltatásként való beállításáról a [Windows Defender ATP engedélyezése feltételes hozzáféréssel](advanced-threat-protection.md) című témakörben talál információt.
+
 ### <a name="device-properties"></a>Eszköztulajdonságok
 
 - **Operációs rendszer minimális verziója**: Adja meg a minimálisan megkövetelt verziót a **főverzió.alverzió.build.CU szám** formátumban. A helyes érték megtekintéséhez nyisson meg egy parancssort, és írja be a következőt: `ver`. A `ver` parancs visszaadja a verziószámot a következő formátumban:
@@ -164,6 +166,11 @@ A HAS szolgáltatás működésével kapcsolatban lásd: [Állapotigazolási CSP
 #### <a name="encryption"></a>Encryption
 
 - **Adattároló titkosítása az eszközön**: A **Kötelező** lehetőséget választva az adattárolók titkosítva lesznek az eszközökön.
+
+#### <a name="device-security"></a>Eszközbiztonság
+
+- **Vírusvédelem**: Ha a **Szükséges** lehetőség van beállítva, a Windows Security Centerben regisztrált vírusvédelmi megoldások (például Symantec és Windows Defender) használatával ellenőrizheti a megfelelőséget. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített vírusvédelmi megoldásokat.
+- **Kémprogram-elhárító**: Ha a **Szükséges** lehetőség van beállítva, a Windows Security Centerben regisztrált kémprogram-elhárító megoldások (például Symantec és Windows Defender) használatával ellenőrizheti a megfelelőséget. A **Nincs konfigurálva** beállítás esetén az Intune nem ellenőrzi az eszközön telepített kémprogram-elhárító megoldásokat.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

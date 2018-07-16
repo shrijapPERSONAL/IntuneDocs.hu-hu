@@ -15,12 +15,12 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 346e69b56d9ee690e2bc3f3970e47d6d25ddcff7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835367"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905172"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Eszközmegfelelőségi szabályzat létrehozása a Google Play Protect engedélyezéséhez ‒ útmutató
 
@@ -49,9 +49,9 @@ Az adott beállításokat szükségessé tevő megfelelőségi szabályzatot And
  - **Alkalmazások fenyegetettségvizsgálata**  
    Megadása esetén engedélyezve kell lennie az androidos **Alkalmazások ellenőrzése** (Verify Apps) szolgáltatásnak.
     > [!Note]  
-    > A régebbi Android platformon ez a szolgáltatás egy megfelelőségi beállítás. Az Intune csak azt tudja ellenőrizni, hogy eszközszinten engedélyezett-e ez a beállítás. A korábban Android for Work néven ismert, munkahelyi profilokkal rendelkező eszközökön a konfigurációs szabályzat (configuration policy) beállításai között található ez a beállítás. A rendszergazdák itt tudják engedélyezni az adott eszközre vonatkozóan.
+    > A régebbi Android platformon ez a szolgáltatás egy megfelelőségi beállítás. Az Intune csak azt tudja ellenőrizni, hogy eszközszinten engedélyezett-e ez a beállítás. Az androidos munkahelyi profilokkal rendelkező eszközökön ez a beállítás a konfigurációs szabályzat beállításai között található. A rendszergazdák itt tudják engedélyezni az adott eszközre vonatkozóan.
 
-    Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vonatkozóan engedélyezhető az **Alkalmazások fenyegetettségvizsgálata** beállítás. Hozzon létre egy eszközprofilt, és tegye kötelezővé a rendszerbiztonsági beállítást. További információt az [Android for Work-eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban](device-restrictions-android-for-work.md) című témakörben talál.
+    Ha cég használ androidos munkahelyi profilokat, a regisztrált eszközökre vonatkozóan engedélyezhető az **Alkalmazások fenyegetettségvizsgálata** beállítás. Hozzon létre egy eszközprofilt, és tegye kötelezővé a rendszerbiztonsági beállítást. További információt az [Androidos munkahelyi profilos eszközök korlátozásaira vonatkozó beállítások a Microsoft Intune-ban](device-restrictions-android-for-work.md) című témakörben talál.
 
  - **SafetyNet eszközigazolás**  
    Adja meg a szükséges SafetyNet eszközigazolás-integritási szintet. A megadható szintek többek között: **Nincs konfigurálva**, **Alapvető integritás ellenőrzése**, és **Alapvető integritás ellenőrzés és tanúsított eszközök**.

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834210"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905308"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Az e-mail-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -31,7 +31,7 @@ A beépített levelezési ügyfélprogram a legtöbb platformon támogatott. A l
 A következő eszköztípusokon konfigurálható a natív e-mail-ügyfélprogram e-mail-profilok segítségével:
 
 - Android Samsung Knox Standard (4.0-s és újabb verziók)
-- Android for Work
+- Androidos munkahelyi profilos eszközök
 - iOS 8.0 és újabb verziók
 - Windows Phone 8.1 és újabb verziók
 - Windows 10 (asztali rendszer) és Windows 10 Mobile
@@ -48,7 +48,7 @@ A cikkben található információk alapján megismerheti az e-mail-profilok kon
 4. A **Profil létrehozása** panelen írja be az egyéni e-mail-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné az e-mail-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet e-mail-eszközbeállításokat megadni:
     - **Android** (csak Samsung Android Knox Standard esetén)
-    - **Android for Work**
+    - **Vállalati Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -56,7 +56,7 @@ A cikkben található információk alapján megismerheti az e-mail-profilok kon
     - **Windows 10 és újabb**
 6. A **Profil típusa** legördülő listában válassza az **E-mail** lehetőséget.
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-    - [Az Android for Work és a Samsung Knox Standard beállításai](email-settings-android.md)
+    - [Az androidos munkahelyi profilok és a Samsung Knox Standard beállításai](email-settings-android.md)
     - [iOS-beállítások](email-settings-ios.md)
     - [Windows Phone 8.1-beállítások](email-settings-windows-phone-8-1.md)
     - [Windows 10-beállítások](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ Ha a felhasználó már konfigurálta az e-mail-fiókot, az eszközplatformtól 
 - **Windows**: A rendszer az állomásnév és az e-mail-cím alapján egy már meglévő e-mail profilt észlel. Az Intune felülírja a felhasználó által létrehozott meglévő e-mail profilt.
 - **Android Samsung Knox Standard**: A rendszer az e-mail-cím alapján egy meglévő, duplikált e-mail-profilt észlelt, és felülírja azt az Intune-profillal.
 Mivel az Android nem használja az állomásnevet a profil azonosításához, ezért azt javasoljuk, hogy ne hozzon létre több e-mail-profilt azért, hogy ugyanahhoz az e-mail-címhez használja őket a különböző gazdagépeken, ezek ugyanis felülírják egymást.
-- Az Intune két **Android for Work** rendszerű e-mail-profilt biztosít, egyet a Gmail és egyet a Nine Work levelezőalkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el, telepíthetők az eszköz munkahelyi profiljába és így nem eredményeznek ismétlődő profilokat. Mindkét alkalmazás támogatja az Exchange-kapcsolatokat. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő e-mail-profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
+- Az Intune két **androidos munkahelyi profilos** e-mail-profilt biztosít, egyet a Gmail és egyet a Nine Work levelezőalkalmazás számára. Ezek az alkalmazások a Google Play áruházból érhetők el, telepíthetők az eszköz munkahelyi profiljába és így nem eredményeznek ismétlődő profilokat. Mindkét alkalmazás támogatja az Exchange-kapcsolatokat. Az e-mail-kapcsolat létrehozásához telepítse a két email-alkalmazás valamelyikét a felhasználók eszközein, majd hozza létre és telepítse a megfelelő e-mail-profilt. Lehetséges, hogy egyes e-mail alkalmazások, például a Nine Work, csak díjfizetés mellett használhatók. Olvassa el az alkalmazás licencelési információit, vagy kérdés esetén lépjen kapcsolatba az alkalmazás kibocsátójával.
 
 ### <a name="update-an-email-profile"></a>E-mail-profil frissítése
 

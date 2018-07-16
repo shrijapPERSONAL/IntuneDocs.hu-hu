@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771805"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905206"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Eszközök tanúsítványprofiljainak konfigurálása a Microsoft Intune-ban
 
@@ -43,7 +43,7 @@ Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és 
     - iOS 8.0 és újabb verziók
     - macOS 10.11 és újabb verziók
     - Android 4.0 és újabb verziók
-    - Android for Work
+    - Androidos munkahelyi profil
     - Windows 8.1 és újabb
     - Windows Phone 8.1 és újabb verziók
     - Windows 10 és újabb
@@ -52,7 +52,7 @@ Ezen tanúsítványtípusok mindegyikének megvannak a maga előfeltételei és 
 
    - iOS 8.0 és újabb verziók
    - Android 4.0 és újabb verziók
-   - Android for Work
+   - Androidos munkahelyi profil
    - Windows 10 (asztali és mobilverzió), illetve újabb
 
    A következő platformot futtató eszközök esetében csak **SCEP-tanúsítványprofil** használható:
@@ -95,7 +95,7 @@ Ahhoz, hogy SCEP- vagy PKCS-tanúsítványprofilt hozhasson létre, először l�
 5. Válassza ki a megbízható tanúsítvány eszközplatformját a **Platform** legördülő listából. Jelenleg az alábbi platformokra vonatkozóan lehet tanúsítványbeállításokat megadni:
 
     - **Android**
-    - **Android for Work**
+    - **Vállalati Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

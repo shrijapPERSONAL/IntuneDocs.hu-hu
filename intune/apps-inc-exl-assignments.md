@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224663"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905410"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Alkalmazás-hozzárendelések belefoglalása vagy kizárása a Microsoft Intune-ban
 
@@ -37,7 +37,7 @@ Az Intune nem veszi számításba a felhasználók és eszközök közötti tár
 >
 > Az Intune előre létrehozott, **Minden felhasználó** és **Minden eszköz** csoportokat biztosít a konzolon. A csoportok beépített optimalizációkkal bírnak a felhasználók kényelme érdekében. Mindenképpen ajánlott ezeket a csoportokat használni az összes felhasználó és az összes eszköz megcélzására az Ön által létrehozott „Minden felhasználó” vagy „Minden eszköz” csoport helyett.  
 >
-> Az Android Enterprise (korábbi nevén Android for Work) támogatja a csoportok belefoglalását és kizárását. Kihasználhatja a beépített **Minden felhasználó** és **Minden eszköz** csoportot az Android Enterprise-alapú alkalmazástársításokhoz. 
+> A vállalati Android támogatja a csoportok belefoglalását és kizárását. Kihasználhatja a beépített **Minden felhasználó** és **Minden eszköz** csoportot a Vállalati Android-alapú alkalmazástársításokhoz. 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Csoportok belefoglalása és kizárása alkalmazások hozzárendelésénél 

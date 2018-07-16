@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223781"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906107"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>A Microsoft Intune-alkalmazásfelügyelet ismertetése
 
@@ -114,8 +114,8 @@ Az e szakasz tartalmával kapcsolatos további információ: [Alkalmazások figy
 - **A Céges portál védjegye**: A Céges portál testreszabása saját céges védjegy megadásával. További információkért lásd:
     - [Céges portál konfigurálása](company-portal-app.md).
 - **Alkalmazáskategóriák**: Alkalmazáskategória-neveket adhat hozzá, rögzíthet és törölhet.
-- **Android for Work**: A cégben engedélyezett alkalmazások jóváhagyása és szinkronizálása. További információkért lásd:
-    - [Android for Work-alkalmazások](apps-add-android-for-work.md).
+- **Androidos munkahelyi profil**: A cégben engedélyezett alkalmazások jóváhagyása és szinkronizálása. További információkért lásd:
+    - [Androidos munkahelyi profilos alkalmazások](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Súgó és támogatás
 - **Súgó és támogatás**: Hibaelhárítási információkat kereshet, támogatást kérhet, és megtekintheti az Intune állapotát. További információkért lásd:

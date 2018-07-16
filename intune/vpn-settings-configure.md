@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744601"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905104"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>VPN-profilok létrehozása az Intune-ban
 
@@ -40,7 +40,7 @@ Egyéni Intune-konfigurációs szabályzatokkal VPN-profilok hozhatók létre a 
 
 A következő kapcsolattípusokkal hozhat létre VPN-profilt:
 
-|Kapcsolat típusa|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Kapcsolat típusa|Android<br>Androidos munkahelyi profilok|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatikus|Nem|Nem|Nem|Nem|Nem|Igen|
 |Check Point Capsule VPN|Igen|Igen|Igen|Igen|Igen|Igen|
@@ -68,21 +68,21 @@ Az [Egyéni beállításokkal rendelkező profil létrehozása](custom-settings-
 3. Válassza az **Eszközkonfiguráció** > **Profilok** > **Profil létrehozása** lehetőséget.
 4. Adja meg a VPN-profil nevét és leírását a **Név** és a **Leírás** mezőben.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné a VPN-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet VPN-eszközbeállításokat megadni:
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 és újabb**
-  - **Windows 10 és újabb**
+   - **Android**
+   - **Vállalati Android**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 és újabb**
+   - **Windows 10 és újabb**
 6. A **Profil típusa** legördülő listában válassza a **VPN** lehetőséget.
 7. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-  - [Az Android és az Android for Work beállításai](vpn-settings-android.md)
-  - [iOS-beállítások](vpn-settings-ios.md)
-  - [macOS-beállítások](vpn-settings-macos.md)
-  - [Windows Phone 8.1-beállítások](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1-beállítások](vpn-settings-windows-8-1.md)
-  - [Windows 10-beállítások](vpn-settings-windows-10.md) (beleértve a Windows Holographic for Businesst is)
+   - [Androidos és androidos munkahelyi profil beállításai](vpn-settings-android.md)
+   - [iOS-beállítások](vpn-settings-ios.md)
+   - [macOS-beállítások](vpn-settings-macos.md)
+   - [Windows Phone 8.1-beállítások](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1-beállítások](vpn-settings-windows-8-1.md)
+   - [Windows 10-beállítások](vpn-settings-windows-10.md) (beleértve a Windows Holographic for Businesst is)
 8. Ha végzett, hozza létre a profilt a **Létrehozás** lehetőség választásával.
 
 Ekkor létrejön a profil, és megjelenik a profilok listájában. Ha csoportokhoz szeretné hozzárendelni a profilt, tekintse meg az [eszközprofilok hozzárendelését](device-profile-assign.md) ismertető cikket.

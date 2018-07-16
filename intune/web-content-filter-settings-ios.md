@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456350"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921348"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Webtartalomszűrő-beállítások iOS-eszközökhöz
 
@@ -58,7 +58,7 @@ Ha nincs megadva semmilyen URL, akkor a felhasználók mindössze a microsoft.co
 ## <a name="specific-websites-only"></a>Csak meghatározott webhelyek
 
 1. A **Webes tartalomszűrés** panelen minden engedélyezni kívánt webhelyhez konfigurálja az alábbi beállításokat:
-    - **URL** – írja be az engedélyezni kívánt webhely URL-címét (például **http://www.contoso.com**).
+    - **URL** – Írja be az engedélyezni kívánt webhely URL-címét (például `https://www.contoso.com`).
     - **Elérési út felvétele a könyvjelzők közé** – Adja meg a könyvjelző kívánt tárolási helyét (például **/Contoso/Business Apps**). Ha nem adja meg az elérési utat, a könyvjelző az eszköz alapértelmezett könyvjelzőmappájába kerül.
     - **Cím** – Adjon jellemző címet a könyvjelzőnek.
 2. Az egyes webhelyek adatainak kitöltése után mindig kattintson a **Hozzáadás** gombra.

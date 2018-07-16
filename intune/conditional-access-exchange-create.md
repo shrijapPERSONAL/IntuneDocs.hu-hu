@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744771"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905529"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Feltételes hozzáférési szabályzat létrehozása a helyszíni Exchange-hez és régi Dedikált Exchange Online-hoz
 
@@ -63,7 +63,7 @@ Mielőtt konfigurálja a feltételes hozzáférést, ellenőrizze a következők
 - Windows Phone 8.1 és újabb verziók
 - Natív e-mail alkalmazás iOS rendszerű eszközökön.
 - EAS levelezési ügyfélprogramok, mint például a Gmail az Android 4-es vagy újabb verzióiban.
-- EAS levelezési ügyfélprogramok **Android for Work** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak Android for Work eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön Android for Work rendszerű eszközökön, telepíteni kell egy email-profilt a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
+- EAS levelezési ügyfélprogramok **Androidos munkahelyi profilos** eszközökön: a **munka profilban** csak a **Gmail** és a **Nine Work** alkalmazások támogatottak androidos munkahelyi profilos eszközökön. Ahhoz, hogy a feltételes hozzáférés működjön androidos munkahelyi profilos eszközökön, telepíteni kell egy email-profilt a Gmail vagy a Nine Work alkalmazáshoz, és ezeket az alkalmazásokat kötelező telepítésként kell központilag telepíteni.
 
 > [!NOTE]
 > A Microsoft Outlook alkalmazás Android- és iOS-verziója nem támogatott. 

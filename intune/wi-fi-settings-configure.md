@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832307"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905331"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>A Wi-Fi-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -37,7 +37,7 @@ Tegyük fel például, hogy egy új, Contoso Wi-Fi nevű vezeték nélküli hál
 A Wi-Fi-profilok a következő eszközplatformokat támogatják:
 
 - Android 4 és újabb verziók
-- Android for Work
+- Androidos munkahelyi profilok
 - iOS 8.0 és újabb verziók
 - macOS (a Mac OS X 10.11-es vagy újabb verziója)
 
@@ -55,7 +55,7 @@ A témakörben található információk alapján megismerheti a Wi-Fi-profilok 
 4. A **Profil létrehozása** panelen írja be az egyéni Wi-Fi-profil nevét és leírását a **Név** és a **Leírás** mezőbe.
 5. A **Platform** legördülő listából válassza ki azt az eszközplatformot, amelyre alkalmazni szeretné a Wi-Fi-beállításokat. Jelenleg az alábbi platformokra vonatkozóan lehet Wi-Fi-beállításokat megadni:
     - **Android**
-    - **Android for Work**
+    - **Vállalati Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -69,7 +69,7 @@ A témakörben található információk alapján megismerheti a Wi-Fi-profilok 
 
    A **Wi-Fi-importálás** profil (Windows 8.1 és újabb esetén) lehetővé teszi, hogy egy másik eszközön XML-fájlba exportált Wi-Fi-beállításokat importálhasson.
 1. A kiválasztott platformtól függően a konfigurálható beállítások eltérőek. Az egyes platformokra vonatkozóan az alábbi témakörökben találja a beállítások részletes ismertetését:
-    - [Az Android és az Android for Work beállításai](wi-fi-settings-android.md)
+    - [Androidos és androidos munkahelyi profil beállításai](wi-fi-settings-android.md)
     - [iOS-beállítások](wi-fi-settings-ios.md)
     - [macOS-beállítások](wi-fi-settings-macos.md)
     - [Windows 8.1 és újabb beállításai](wi-fi-settings-import-windows-8-1.md) (beleértve a Windows Holographic for Businesst is)

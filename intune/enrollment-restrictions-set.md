@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026329"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905818"
 ---
 # <a name="set-enrollment-restrictions"></a>Regisztrációs korlátozások beállítása
 
@@ -39,14 +39,14 @@ Többek között az alábbi regisztrációs korlátozásokat hozhatja létre:
 - Regisztrált eszközök maximális száma.
 - Regisztrációra alkalmas eszközplatformok:
   - Android.
-  - Android for Work.
+  - Androidos munkahelyi profil.
   - iOS.
   - macOS.
   - Windows.
-- Platform operációsrendszer-verziók iOS, Android, Android for Work és Windows rendszerhez. (Csak a Windows 10-es verziók használhatók. Hagyja üresen, ha a Windows 8.1 engedélyezett.)
+- Platform operációsrendszer-verziók iOS, Android, androidos munkahelyi profilos és Windows rendszerű eszközökhöz. (Csak a Windows 10-es verziók használhatók. Hagyja üresen, ha a Windows 8.1 engedélyezett.)
   - Minimális verzió.
   - Maximális verzió.
-- Személyes tulajdonú eszközök korlátozása (csak iOS, Android, Android for Work vagy macOS esetén).
+- Személyes tulajdonú eszközök korlátozása (csak iOS, Android, androidos munkahelyi profil vagy macOS esetén).
 
 ## <a name="default-restrictions"></a>Alapértelmezett korlátozások
 
@@ -78,7 +78,7 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 5. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformok** lehetőséget. Adja meg az **Engedélyezés** vagy a **Blokkolás** beállítást az összes felsorolt platformhoz.
 6. Válassza a **Mentés** lehetőséget.
 7. A korlát neve alatt (mely az alapértelmezett korlát esetében **Minden felhasználó**) válassza a **Platformkonfigurációk** lehetőséget. Ezután válassza ki a felsorolt platformokhoz a minimális és maximális **Verziók** értékét. Példa a támogatott verziókra:
-    - Az Android és az Android for Work a főverzió.alverzió.változat.build formátumot támogatja.
+    - Az androidos munkahelyi profil támogatja a főverzió.alverzió.változat.build formátumot.
     - Az iOS a főverzió.alverzió.változat formátumot támogatja.
     - A Windows a főverzió.alverzió.változat.build formátumot támogatja, csak Windows 10 esetén.
   Az operációs rendszer verziójának korlátozásai nem vonatkoznak a Készülékregisztrációs programban, az Apple School Manager programban vagy az Apple Configurator alkalmazással regisztrált Apple-eszközökre.
@@ -88,9 +88,9 @@ Az eszköztípuskorlátok beállításait az alábbi lépésekkel módosíthatja
 
 
 >[!NOTE]
->- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú Android for Work-eszközök továbbra is regisztrálhatók.
->- Alapértelmezés szerint az Android for Work-eszközök beállításai ugyanazok, mint az Android-eszközöké. Az Android for Work-beállítások módosítása után ez már nem lesz így.
->- Ha letiltja a személyes Android for Work-regisztrációt, csak a vállalati Android-eszközök regisztrálhatók Android for Work-eszközként.
+>- Ha letiltja a személyes tulajdonú Android-eszközök regisztrációját, a személyes tulajdonú androidos munkahelyi profilos eszközök továbbra is regisztrálhatók.
+>- Alapértelmezés szerint az androidos munkahelyi profilos eszközök beállításai ugyanazok, mint az Android-eszközöké. Az androidos munkahelyi profil beállításainak módosítása után ez már nem lesz így.
+>- Ha letiltja a személyes androidos munkahelyi profilos regisztrációt, csak a vállalati Android-eszközök regisztrálhatók androidos munkahelyi profilos eszközként.
 
 ## <a name="set-device-limit-restrictions"></a>Regisztrált eszközök maximális számának beállítása
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829764"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905138"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Eszközök távoli zárolása az Intune-nal
 
@@ -31,12 +31,14 @@ A **Távoli zárolás** eszközművelet zárolja az eszközt. A zárolás felold
 A **távoli zárolás** az alábbi platformokon támogatott:
 
 - Android
+- Vállalati androidos kioszkeszközök
+- Vállalati androidos kioszkeszközök
 - iOS
 - macOS
 - Windows 10 mobil verzió
 - Windows Phone 8.1 és újabb verziók
 
-A **távoli zárolás** *nem* támogatott:
+A **távoli zárolás** nem támogatott:
 - Windows 10 asztali verzió
 
 > [!NOTE]

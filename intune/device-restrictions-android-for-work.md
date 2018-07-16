@@ -1,6 +1,6 @@
 ---
-title: Eszközkorlátozások az Android for Work rendszerhez a Microsoft Intune-ban – Azure | Microsoft Docs
-description: Az Android for Work rendszert futtató eszközökön korlátozhatja az eszköz bizonyos beállításait, többek között a másolást és beillesztést, az értesítések megjelenítését, az alkalmazásengedélyeket, az adatmegosztást, a jelszóhosszt, a sikertelen bejelentkezéseket, a zárolás feloldását ujjlenyomattal, a jelszavak újbóli használatát és a munkahelyi kapcsolatok bluetooth-on keresztüli megosztásának engedélyezését.
+title: Eszközkorlátozások az androidos munkahelyi profilokhoz a Microsoft Intune-ban – Azure | Microsoft Docs
+description: Az androidos munkahelyi profilt használó eszközökön korlátozhatja az eszköz bizonyos beállításait, többek között a másolást és beillesztést, az értesítések megjelenítését, az alkalmazásengedélyeket, az adatmegosztást, a jelszóhosszt, a sikertelen bejelentkezéseket, a zárolás feloldását ujjlenyomattal, a jelszavak újbóli használatát és a munkahelyi kapcsolatok bluetoothon keresztüli megosztásának engedélyezését.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046315"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905937"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>A Work eszközkorlátozásainak beállításai az Intune-ban
 
-A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók Android for Work rendszerű eszközökhöz.
+A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonatkozó beállítását, melyek konfigurálhatók androidos munkahelyi profilos eszközökhöz.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
 ### <a name="general-settings"></a>Általános beállítások
 
 - **Munkahelyi és személyes profilok közötti másolás**: A munkahelyi és személyes alkalmazások közötti másolást és beillesztést szabályozza. A letiltáshoz válassza a **Letiltás** lehetőséget. A **Nincs beállítva** lehetőség választásával nem alkalmazza a letiltást.
-- **Munkahelyi és személyes profilok közötti adatmegosztás**: Ezzel a beállítással szabályozhatja, hogy a munkahelyi profilban szereplő alkalmazások megoszthatnak-e adatokat a személyes profilban szereplőkkel. A beállítás az alkalmazáson belüli megosztási műveleteket szabályozza (például a **Megosztás...** lehetőséget a Chrome böngészőalkalmazásban), és nem vonatkozik a vágólap másolási/beillesztési funkciójára. Az [alkalmazásvédelmi szabályzat beállításaitól](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) eltérően az eszközkorlátozási beállítások felügyelete az Intune-portálon történik, és az Android for Work típusú munkahelyiprofil-partíció szolgál a felügyelt alkalmazások elkülönítésére. A következő lehetőségek közül választhat:
+- **Munkahelyi és személyes profilok közötti adatmegosztás**: Ezzel a beállítással szabályozhatja, hogy a munkahelyi profilban szereplő alkalmazások megoszthatnak-e adatokat a személyes profilban szereplőkkel. A beállítás az alkalmazáson belüli megosztási műveleteket szabályozza (például a **Megosztás...** lehetőséget a Chrome böngészőalkalmazásban), és nem vonatkozik a vágólap másolási/beillesztési funkciójára. Az [alkalmazásvédelmi szabályzat beállításaitól](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) eltérően az eszközkorlátozási beállítások felügyelete az Intune-portálon történik, és az androidos munkahelyi profilos partíció szolgál a felügyelt alkalmazások elkülönítésére. A következő lehetőségek közül választhat:
   - **Alapértelmezett megosztási korlátozások**: Ez az eszköz alapértelmezett megosztási működésmódja, amely az Android-verziótól függően eltérő. Alapértelmezés szerint a személyes profilból lehet a munkahelyi profilba adatokat megosztani, a munkahelyiből a személyesbe viszont nem. A beállítás célja a munkahelyi profilból a személyesbe irányuló adatmegosztás megelőzése. A Google a 6.0-snál újabb verziójú eszközökön nem nyújt lehetőséget a személyesből a munkahelyi profilba irányuló adatmegosztás blokkolására.
   - **A munkahelyi profilban lévő alkalmazások kezelhetik a személyes profilból érkező megosztási kérelmeket**: Engedélyezi a személyesből a munkahelyi profilba irányuló adatmegosztásra szolgáló beépített Android-funkciót. Engedélyezéskor a személyes profil alkalmazásaiból származó megosztási kérések kezdeményezhetnek adatmegosztást a munkahelyi profil alkalmazásaival. A 6.0-snál korábbi verziójú androidos eszközökön ez az alapértelmezett beállítás.
   - **Határokon keresztüli megosztás engedélyezése**: Lehetővé teszi a munkahelyi profil határán kívüli megosztást mindkét irányban. Ilyenkor a munkahelyi profilban szereplő alkalmazások megoszthatnak adatokat a személyes profi jelöletlen alkalmazásaival. A beállítást csak körültekintően szabad használni, mert lehetővé teszi a munkahelyi profil alkalmazásainak az adatmegosztást az eszköz nem felügyelt részén található eszközökkel.
@@ -48,7 +48,7 @@ A cikk felsorolja a Microsoft Intune összes olyan eszközkorlátozásokra vonat
 
    Letiltja a munkahelyi profilban található fiókok manuális hozzáadását vagy eltávolítását a végfelhasználók számára.
 
-   Ha például a Gmail alkalmazást Android for Work-profilban telepíti, megakadályozhatja, hogy a végfelhasználók fiókokat adjanak hozzá vagy távolítsanak el ebben a munkaprofilban.
+   Ha például a Gmail alkalmazást androidos munkahelyi profilban telepíti, megakadályozhatja, hogy a végfelhasználók fiókokat adjanak hozzá vagy távolítsanak el ebben a munkaprofilban.
 
 - **Névjegyek megosztása Bluetooth-kapcsolattal**: Engedélyezi egy másik Bluetooth-eszköz (például egy autó) a munkahelyi névjegyekhez való hozzáférését. Alapértelmezés szerint ez a beállítás nincs konfigurálva, a munkahelyi névjegyek pedig nem jelennek meg. A megosztás engedélyezéséhez és a munkahelyi profil névjegyeinek megjelenítéséhez válassza az **Engedélyezés** lehetőséget. Ez a beállítás az Android munkahelyi profilos, Android v6.0 és újabb operációs rendszerekkel rendelkező eszközökre vonatkozik. Engedélyezésével megengedheti bizonyos Bluetooth-eszközöknek, hogy az első kapcsolat alkalmával gyorsítótárazzák a munkahelyi kapcsolatokat. Ennek a szabályzatnak az eredeti párosítás/szinkronizálás utáni letiltása nem feltétlenül távolítja el a munkahelyi kapcsolatokat a Bluetooth-eszközről.
 

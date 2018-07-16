@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744754"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905189"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Mik azok a Microsoft Intune-eszközprofilok?
 
@@ -157,3 +157,7 @@ Ez a funkció a következőket támogatja:
 - iOS
 - macOS
 - Windows Phone 8.1
+
+## <a name="manage-and-troubleshoot"></a>Felügyelet és hibaelhárítás
+
+[A profilok kezelésével](device-profile-monitor.md) ellenőrizheti az eszközök állapotát és a hozzárendelt profilokat. Az ütközéseket okozó beállítások és az ezeket a beállításokat tartalmazó profilok azonosításával egyszerűbben lehet az ütközéseket elhárítani. A [gyakori problémák és megoldásaik](device-profile-troubleshoot.md) olyan kérdések és válaszok listáját tartalmazza, amelyek segítenek a profilok kezelésében, többek között megtudható belőlük, mi történik egy profil törlésekor, mi okozza az eszközökre küldött értesítéseket és így tovább.

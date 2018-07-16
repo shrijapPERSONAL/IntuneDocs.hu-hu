@@ -1,44 +1,49 @@
 ---
 title: A Microsoft Intune Wi-Fi-beállításainak konfigurálása Android rendszerű eszközökhöz
 titleSuffix: ''
-description: Az Android- és Android for Work-eszközök Intune-beli Wi-Fi-konfigurációs beállításainak ismertetése.
+description: Az Android rendszerű eszközök Intune-beli Wi-Fi-konfigurációs beállításainak ismertetése.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831061"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905665"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android és Android for Work rendszerű eszközök Wi-Fi-beállításainak konfigurálása a Microsoft Intune-ban  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Az Android, androidos munkahelyi profilos és kioszk módú Android rendszerű eszközök Intune-beli Wi-Fi-konfigurációs beállításainak ismertetése
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a cikk bemutatja a Microsoft Intune-ban az Android és Android for Work rendszerű eszközökhöz konfigurálható Wi-Fi-beállításokat.
+Ez a cikk bemutatja a Microsoft Intune-ban az Android rendszerű és androidos munkahelyi profilos eszközökhöz konfigurálható Wi-Fi-beállításokat.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Alapszintű és vállalati profilokban használható Wi-Fi-beállítások
 
-Az alábbi Wi-Fi-beállítások Android- és Android for Work-eszközökhöz egyaránt elérhetőek:
+Az alábbi Wi-Fi-beállítások Android rendszerű és androidos munkahelyi profilos eszközökhöz egyaránt elérhetőek:
 
 - **Hálózatnév** – Adja meg a Wi-Fi-kapcsolat nevét. Ez a név jelenik meg a felhasználók számára, amikor a rendelkezésre álló kapcsolatok listáját böngészik az eszközeiken.
 - **SSID** – A szolgáltatáskészlet-azonosító rövidítése. Ez a valódi neve a vezeték nélküli hálózatnak, amelyhez az eszközök csatlakoznak. A felhasználók azonban csak a konfigurált hálózatnevet látják, amikor kiválasztják a kapcsolatot.
 - **Automatikus csatlakozás** – Az eszköz automatikusan csatlakozik, ha a hálózat hatókörében van.
 - **Rejtett hálózat** – A hálózat nem jelenik meg a rendelkezésre álló hálózatok listájában az eszközön.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>A vállalati kioszk profilokhoz elérhető Wi-Fi-beállítások
+- **Wi-Fi-típus**: Ezek a Wi-Fi-típusbeállítások csak akkor érhetőek el, ha a **Profiltípus** > **Csak az eszköz tulajdonosa** > **Wi-Fi** beállítást választja.
+    - **Nyílt (nincs hitelesítés)**
+    - **WEP-előmegosztott kulcs**: A jelszót az **Előmegosztott kulcs** területen kell megadnia.
+    - **WPA-előmegosztott kulcs**: A jelszót az **Előmegosztott kulcs** területen kell megadnia
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Csak vállalati profilokban használható Wi-Fi-beállítások
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Wi-Fi-beállítások csak az örökölt Android rendszerű és az androidos munkahelyi profilos eszközökhöz
 
-- **EAP típusa** – Válassza ki az EAP protokoll biztonságos vezeték nélküli kapcsolatok hitelesítéséhez használni kívánt típusát:
+- **EAP típusa** – Válassza ki az EAP protokoll biztonságos vezeték nélküli kapcsolatok hitelesítéséhez használni kívánt típusát a következő lehetőségek közül:
     - **EAP-TLS**
     - **EAP-TTLS**
     - **PEAP**

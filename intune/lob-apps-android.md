@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224483"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905036"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Androidos üzletági alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224483"
 Az üzletági (LOB) alkalmazásokat egy alkalmazástelepítő fájlból adja hozzá az Intune-hoz. Az ilyen alkalmazásokat általában házon belül írják. Az Intune telepíti az üzletági alkalmazást a felhasználó eszközén. 
 
 > [!Note]
-> A Google Play for Work áruház üzletági alkalmazásairól [A Google Play for Work áruházból származó üzletági alkalmazások használata](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store) című cikkben találhat további információt. 
+> A Felügyelt Google Play áruház üzletági alkalmazásairól [A Felügyelt Google Play áruházból származó üzletági alkalmazások használata](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store) című cikkben találhat további információt. 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1. lépés: A szoftvertelepítő fájl megadása
 
@@ -78,7 +78,7 @@ A létrehozott alkalmazás ekkor megjelenik az alkalmazások listájában. A lis
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!Note]
-> Ahhoz, hogy az Intune szolgáltatás sikeresen üzembe tudja helyezni az új APK-fájlt az eszközön, az APK-csomagban található AndroidManifest.xml fájlban meg kell növelni az `android:versionCode` karakterlánc értékét.
+> Ahhoz, hogy az Intune szolgáltatás sikeresen üzembe tudja helyezni az új APK-fájlt az eszközön, az APK-csomagban található AndroidManifest.xml fájlban meg kell növelni az `android:versionCode` sztring értékét.
 
 ## <a name="next-steps"></a>További lépések
 

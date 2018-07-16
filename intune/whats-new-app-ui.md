@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da85b0087709a719cafaaf893c3188a3bf3148d8
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046281"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906073"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Felhasználói felületi frissítések az Intune végfelhasználói alkalmazásaiban
 A cikkből megismerheti, mit módosítottunk a végfelhasználók számára látható alkalmazások felhasználói felületén ebben a Microsoft Intune-kiadásban. Ez segítségére lehet a felhasználói kommunikációban és az Ön üzemeltetési környezetének támogatására létrehozott egyéni dokumentáció frissítésében. Annak megértését is megkönnyíti, hogy miképpen háríthatja el jobban a végfelhasználók által tapasztalt hibákat, ha telefonos segítséget igényelnek a Céges portál használatához.
@@ -86,12 +86,12 @@ Ha engedélyezte az [eszközcsoport-leképezést](device-group-mapping.md), a Wi
 
 ## <a name="week-of-november-13-2017"></a>2017. november 13-i hét
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Újdonságok az iOS rendszerre készült Céges portál 2.9.0-s verziójának eszközbeállítási munkafolyamatával kapcsolatban <!---1417174--->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Újdonságok az iOS rendszerre készült Céges portál 2.9.0-s verziójának eszközbeállítási munkafolyamatával kapcsolatban <!-- 1417174 -->
 
 Továbbfejlesztettük az iOS rendszerre készült Céges portál alkalmazás eszközbeállítási munkafolyamatát. Nyelvezete felhasználóbarátabb lett, képernyőit – ahol lehetett – összevontuk. A nyelvezetet ezenkívül az Ön cégére alkalmaztuk, ezért a beállítás szövegében végig a konkrét cégnév jelenik meg.
 
 > [!NOTE]
-> Azt a cégnevet használjuk, amelyet az Azure Portal **Microsoft Intune** > **Mobilalkalmazások**  > **Céges portál védjegyezése** > **Cég neve** alatt adott meg. Ha nem állította be ezt az értéket, az **Azure Active Directory** > **Tulajdonságok** > **Név** alatt megadott bérlő nevét használjuk. Ha a Céges portál védjegyezése alatt nem állított be cégnevet, és nem kívánja a bérlő nevét megjeleníteni, azt javasoljuk, hogy állítsa be cége nevét a Céges portál védjegyezése alatt. Ha nem szeretné, hogy ez a karakterlánc megjelenjen a Céges portál fejlécén, törölheti a jelölőnégyzetet a “Cég nevének megjelenítése az embléma mellett” feliratnál.
+> Azt a cégnevet használjuk, amelyet az Azure Portal **Microsoft Intune** > **Mobilalkalmazások**  > **Céges portál védjegyezése** > **Cég neve** alatt adott meg. Ha nem állította be ezt az értéket, az **Azure Active Directory** > **Tulajdonságok** > **Név** alatt megadott bérlő nevét használjuk. Ha a Céges portál védjegyezése alatt nem állított be cégnevet, és nem kívánja a bérlő nevét megjeleníteni, azt javasoljuk, hogy állítsa be cége nevét a Céges portál védjegyezése alatt. Ha nem szeretné, hogy ez a sztring megjelenjen a Céges portál fejlécén, törölheti a jelölőnégyzetet a “Cég nevének megjelenítése az embléma mellett” feliratnál.
 
 |Előtte|Utána|
 |---|---|
@@ -145,7 +145,7 @@ Továbbfejlesztettük az androidos Céges portál alkalmazás eszközbeállítá
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-A további lépéseket javítottuk az Android for Work eszközökön.
+A további lépéseket javítottuk az androidos munkahelyi profilos eszközökön.
 
 |Előtte|Utána|
 |---|---|

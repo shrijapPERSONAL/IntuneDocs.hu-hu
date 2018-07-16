@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024617"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905053"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Ezközkorlátozásokra vonatkozó beállítások konfigurálása a Microsoft Intune-ban
 
@@ -56,7 +56,7 @@ A cikk az eszközkorlátozási profilok alapjait ismerteti, és további cikkeke
     - [Windows 10-beállítások](device-restrictions-windows-10.md)
     - [Windows 10 Team-beállítások](device-restrictions-windows-10-teams.md)
     - [A Windows Holographic for Business beállításai](device-restrictions-windows-holographic.md)
-    - [Az Android for Work beállításai](device-restrictions-android-for-work.md)
+    - [Androidos munkahelyi profil beállításai](device-restrictions-android-for-work.md)
 8. Miután elkészült, lépjen vissza a **Profil létrehozása** panelre, és kattintson a **Létrehozás** elemre.
 
 Ekkor létrejön a profil, és megjelenik a profilok listáját tartalmazó lapon.

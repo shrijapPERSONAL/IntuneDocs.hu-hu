@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d0725240840e93522fe80668fdb96cbe4de1236
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224381"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906124"
 ---
 # <a name="reference-for-devices-entities"></a>Eszközök típusú entitások referenciája
 
@@ -65,7 +65,7 @@ A **DeviceTypes** entitás az adattárház más entitásai által hivatkozott es
 | 14 |MacMDM |A beépített MDM-ügynökkel felügyelt Mac OS X-eszköz |
 | 15 |HoloLens |Holo Lens-eszköz |
 | 16 |SurfaceHub |Surface Hub-eszköz |
-| 17 |AndroidForWork |Android for Work Profile Owner használatával felügyelt Android-eszköz |
+| 17 |AndroidForWork |Android Profile Owner használatával felügyelt Android-eszköz |
 | 100 |Blackberry |Blackberry-eszköz |
 | 101 |Palm |Palm-eszköz |
 | 255 |Ismeretlen |Ismeretlen eszköztípus |

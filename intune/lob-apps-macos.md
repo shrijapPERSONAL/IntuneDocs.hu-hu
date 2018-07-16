@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0304d90384bb2f6a5a78dd14bcf289fc8eb03bd1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224364"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906005"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>MacOS-es üzletági (LOB) alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -31,7 +31,9 @@ A cikkben található információ segítségével macOS rendszerű üzletági a
 >[!NOTE]
 >Bár az macOS-eszközök felhasználói eltávolíthatnak néhányat a beépített macOS-alkalmazások közül – például a Részvények vagy a Térképek alkalmazást –, az Intune nem használható ezek újratelepítésére. Amennyiben a végfelhasználó törölte ezeket az alkalmazásokat, manuálisan telepítheti újra őket az App Store áruházból.
 >
->MacOS LOB-alkalmazások Microsoft Intune-ba való feltöltésére csak *.pkg*-fájlok használhatók. 
+>MacOS LOB-alkalmazások Microsoft Intune-ba való feltöltésére csak *.pkg*-fájlok használhatók. A más formátumokra (például *.dmg* vagy *.pkg*) való konvertálás nincs támogatva.
+
+A Microsoft Intune lehetővé teszi macOS üzletági alkalmazások **Kötelező** vagy **Regisztrációval elérhető** beállítással való üzembe helyezését. A végfelhasználók elvégezhetik az alkalmazások **Rendelkezésre álló** állapotban való üzembe helyezését a macOS-es céges portálon vagy a [Céges portál webhelyén](https://portal.manage.microsoft.com).
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>1. lépés – A szoftvertelepítő fájl előzetes feldolgozása
 
@@ -104,7 +106,7 @@ A létrehozott alkalmazás megjelenik az alkalmazáslistában, ahol hozzárendel
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
-> Ahhoz, hogy az Intune szolgáltatás sikeresen üzembe tudja helyezni az új *.pkg*-fájlt az eszközön, a *.pkg* kiterjesztésű csomagban található *packageinfo* fájlban meg kell növelni a csomag `version` és `CFBundleVersion` karakterláncának értékét.
+> Ahhoz, hogy az Intune szolgáltatás sikeresen üzembe tudja helyezni az új *.pkg*-fájlt az eszközön, a *.pkg* kiterjesztésű csomagban található *packageinfo* fájlban meg kell növelni a csomag `version` és `CFBundleVersion` sztringjének értékét.
 
 ## <a name="next-steps"></a>További lépések
 
