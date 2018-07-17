@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905070"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225442"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Az Intune eszközmegfelelőségi szabályzatai – első lépések
 
@@ -88,7 +88,7 @@ Az eszközmegfelelőségi szabályzatok használatához az alábbi követelmény
 
 Az eszközök Intune-beli regisztrálásakor elindul az Azure AD-regisztrációs folyamat, mely frissíti az eszköz attribútumait az Azure AD-ben. Az egyik legfontosabb információ az eszköz megfelelőségi állapota. Ezt a megfelelőségi állapotot használják a feltételes hozzáférési szabályzatok az e-mailekhez és más vállalati erőforrásokhoz való hozzáférés engedélyezéséhez vagy letiltásához.
 
-Többet is megtudhat az [Azure AD-regisztrációs folyamatról](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+Többet is megtudhat az [Azure AD-regisztrációs folyamatról](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Eszközkonfigurációs profil eredményül kapott állapotának hozzárendelése
 

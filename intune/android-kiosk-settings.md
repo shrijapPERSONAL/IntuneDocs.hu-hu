@@ -2,8 +2,8 @@
 title: Kioszkbeállítások Android rendszerhez a Microsoft Intune-ban – Azure | Microsoft Docs
 description: Androidos kioszkeszközeit egyalkalmazásos és többalkalmazásos kioszkként is konfigurálhatja.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9158893b3ae2c2f70b08682a61cbba4d55b43710
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909150"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949543"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Android-eszközök kioszkbeállításai az Intune-ban
 

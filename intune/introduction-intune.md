@@ -15,11 +15,11 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
 ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046400"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224806"
 ---
 # <a name="what-is-intune"></a>Mi az az Intune?
 
@@ -48,7 +48,7 @@ Az Intune az Enterprise Mobility + Security (EMS) megoldás mobileszköz- és mo
 
 Az Intune architektúráját szemléltető diagramot [nagyobb méretben](./media/intunearchitecture.svg) is megnézheti.
 
-Az Intune eszköz- és alkalmazásfelügyeleti funkcióinak és az EMS adatvédelmének alkalmazási módja a [megoldani kívánt üzleti problémától](#common-business-problems-that-intune-helps-solve) függ. Például:
+Az Intune eszköz- és alkalmazásfelügyeleti funkcióinak és az EMS adatvédelmének alkalmazási módja a [megoldani kívánt üzleti problémától](#common-business-problems-that-intune-helps-solve) függ. Példa:
 * Az eszközfelügyeletet igen hasznosnak fogja találni, ha olyan eszközök készletét alakítja ki, amelyeket közösen használnak egyetlen célra egy kiskereskedelmi bolt több műszakban dolgozó alkalmazottai.
 * Az alkalmazásfelügyeletre támaszkodhat, ha engedélyezni kívánja a dolgozóknak a saját eszközeik használatát (BYOD) a céges adatok elérésére.  
 * Ha pedig céges telefonokat bocsát az infomunkások rendelkezésére, akkor mindkét technológiát alkalmaznia kell.

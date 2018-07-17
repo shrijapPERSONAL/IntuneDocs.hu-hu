@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 7744d8422e774242e0883c8d77814c42fd71895f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023155"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224825"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS-felhasználói alkalmazások letöltése
 
@@ -50,7 +50,7 @@ A regisztrált felhasználók úgy jutnak hozzá az alkalmazásokhoz, hogy a kö
 
 Az alkalmazások hozzáadásáról az [Alkalmazás hozzáadása a Microsoft Intune-hoz](apps-add.md) című témakörben találhat további információt.
 
-### <a name="see-also"></a>Lásd még:
+### <a name="see-also"></a>További információ
 [Android-felhasználói alkalmazások letöltése](end-user-apps-android.md)
 
 [Windows-felhasználói alkalmazások letöltése](end-user-apps-windows.md)

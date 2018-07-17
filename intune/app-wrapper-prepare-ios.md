@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224347"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224935"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>iOS-alkalmazások előkészítése alkalmazásvédelmi szabályzatokkal való felügyeletre az Intune alkalmazásburkoló eszközével
 
@@ -138,7 +138,7 @@ Az Intune által burkolt alkalmazások terjesztéséhez az alábbiakra van szük
 
     ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-8.png)
 
-16. Ekkor megjelenik egy információs ablak. Görgessen az ablak aljára, és keresse meg a **Fingerprints** (Ujjlenyomatok) címkét. Másolja ki az (itt homályosan látható) **SHA1** karakterláncot, és használja ezt az App Wrapping Tool -c paraméterének argumentumaként.
+16. Ekkor megjelenik egy információs ablak. Görgessen az ablak aljára, és keresse meg a **Fingerprints** (Ujjlenyomatok) címkét. Másolja ki az (itt homályosan látható) **SHA1** sztringet, és használja ezt az App Wrapping Tool -c paraméterének argumentumaként.
 
     ![Tanúsítvány hozzáadása a kulcslánchoz](./media/iOS-signing-cert-9.png)
 
@@ -227,7 +227,7 @@ Az IntuneMAMPackager/Contents/MacOS mappában nyissa meg a `Parameters.plist` ne
 | Részletes üzenetek engedélyezve |hamis| Ugyanaz, mint a -v|
 | Hiányzó jogosultságok eltávolítása | hamis| Ugyanaz, mint a -c|
 | Alapértelmezett build tiltása |hamis | Ugyanaz, mint a -b argumentumok nélkül|
-|Build karakterláncának felülbírálása | üres| A burkolt kimeneti alkalmazás egyéni CFBundleVersion-száma |
+|Build sztringjének felülbírálása | üres| A burkolt kimeneti alkalmazás egyéni CFBundleVersion-száma |
 |Bővítménylétesítési profilok elérési útjai | üres| Az alkalmazás bővítménylétesítési profiljainak tömbje.
 
 
@@ -320,7 +320,7 @@ Az alkalmazást a burkolása előtt *jogosultságok* megadásával további enge
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Az iOS rendszerhez készült alkalmazásburkoló eszköz támogatott képességei
 
-|Képesség|Description|Ajánlott útmutatás|
+|Képesség|Leírás|Ajánlott útmutatás|
 |--------------|---------------|------------------------|
 |Alkalmazáscsoportok|Alkalmazáscsoportok használatával biztosíthatja több alkalmazás hozzáférését a megosztott tárolókhoz, és engedélyezheti a folyamatközi kommunikációt az alkalmazások között.<br /><br />Az alkalmazáscsoportok engedélyezéséhez nyissa meg a **Capabilities** (Képességek) panelt, és kattintson az **On** (Bekapcsolás) lehetőségre az **App Groups** (Alkalmazáscsoportok) beállításnál. Felvehet alkalmazáscsoportokat, illetve kijelölhet meglévőket.|Alkalmazáscsoportok használatakor használjon címfeloldási DNS-t:<br /><br />*csoport.com.cégnév.Alkalmazáscsoport*|
 |Háttérbeli üzemmódok|A háttérbeli üzemmódok engedélyezése esetén az iOS-alkalmazás tovább futhat a háttérben is.||
@@ -418,7 +418,7 @@ Hibaelhárítás során az alábbi lépésekkel szerezhet be naplófájlokat a b
 > [!NOTE]
 > A naplózási funkció engedélyezve van az Intune alkalmazásburkoló eszköz 7.1.13-as vagy újabb verziójával burkolt alkalmazásokban.
 
-### <a name="see-also"></a>Lásd még:
+### <a name="see-also"></a>További információ
 - [Annak eldöntése, hogyan készíti elő az alkalmazásokat a mobilalkalmazás-kezeléshez a Microsoft Intune-nal](apps-prepare-mobile-application-management.md)</br>
 - [Az eszközök beállításainak és funkcióinak kezelése a Microsoft Intune-házirendek használatával](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Alkalmazások előkészítése a mobilalkalmazás-felügyeletre az SDK segítségével](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

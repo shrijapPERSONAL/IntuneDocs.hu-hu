@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905988"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028728"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Alkalmazások hozzáadása a Microsoft Intune-hoz
 
@@ -51,7 +51,7 @@ A következő táblázatban megtekintheti a konkrét alkalmazástípusokat és a
 | iOS-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza az **iOS** lehetőséget az **alkalmazás típusa** területen, keresse meg az alkalmazást majd jelölje ki az Intune-ban. |
 | Windows Phone 8.1-es áruházbeli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows Phone 8.1** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
 | Microsoft Store-beli alkalmazások  | Áruházbeli alkalmazás  | Válassza a **Windows** lehetőséget az **alkalmazás típusa** területen, majd adja meg a Microsoft Store alkalmazáshoz tartozó URL-címét. |
-| Androidos munkahelyi alkalmazások | Áruházbeli alkalmazás  | Keresse meg és hagyja jóvá az Android munkahelyi profilalkalmazást a felügyelt Google Play áruházban.  |
+| Androidos munkahelyi profilos alkalmazások | Áruházbeli alkalmazás  | Keresse meg és hagyja jóvá az Android munkahelyi profilalkalmazást a felügyelt Google Play áruházban.  |
 | Windows 10-es Office 365-alkalmazások  | Áruházbeli alkalmazás (Office 365) | Válassza a **Windows 10** lehetőséget az **Office 365 csomag** területen, az **alkalmazás típusa** részen, majd válassza ki a telepíteni kívánt Office 365-alkalmazást.  |
 | macOS-es Office 365-alkalmazások | Áruházbeli alkalmazás (Office 365) | Válassza a **macOS** lehetőséget az **Office 365 csomag** területen, az **alkalmazás típusa** részen, majd válassza ki az Office 365 csomagot. |
 | Androidos üzletági (LOB) alkalmazások | Üzletági (LOB) alkalmazás | Válassza az **Üzletági alkalmazás** lehetőséget az **alkalmazás típusa** területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy **.apk** kiterjesztésű Androidos telepítőfájlt.  |

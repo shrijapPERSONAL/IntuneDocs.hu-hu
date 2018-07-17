@@ -16,11 +16,11 @@ ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032455"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38219923"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Felhasználók hozzáadása és rendszergazdai engedély biztosítása az Intune-hoz
 
@@ -85,14 +85,14 @@ Javasoljuk, hogy a felhasználók Intune-előfizetéshez történő hozzáadása
 
 5. Az elérhető szerepkörök listájából válassza ki a hozzárendelni kívánt rendszergazdai jogosultságot.
 ![Képernyőkép a szerepkörök hozzárendeléséről](./media/office-assign-roles.png)
-6. Válassza a **Mentés** elemet.
+6. Válassza a **Mentés** lehetőséget.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Rendszergazdai jogosultságok megadása az Azure Portalon
 1. Jelentkezzen be az [Azure Portalra](https://www.office.com/signin) egy globális rendszergazdai fiókkal.
 2. Az Azure Portalon válassza a **Felhasználó** lehetőséget, majd válassza ki azt a felhasználót, akinek rendszergazdai jogosultságot szeretne adni.
 3. Válassza a **Címtárbeli szerepkör** elemet, majd pedig a kívánt jogosultságot.
   ![Képernyőkép a Címtárszerepkörről](./media/add-intune-directory-role.png)
-4. Válassza a **Mentés** elemet.
+4. Válassza a **Mentés** lehetőséget.
 
 ### <a name="types-of-administrators"></a>Rendszergazdatípusok
 

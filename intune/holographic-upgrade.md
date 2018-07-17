@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830433"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224769"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>A Windows Holographic operációs rendszert futtató eszközök frissítése a Windows Holographic for Business verzióra
 
 
-A Windows Holographic operációs rendszert futtató eszközök Microsoft Intune-nal való kezeléséhez frissítenie kell az eszközöket a Windows Holographicról a Windows Holographic for Businessre. A frissítéshez létrehozhat egy kiadásfrissítési profilt. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információkért lásd: [Unlock Windows Holographic for Business features](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise) (A Windows Holographic for Business új funkcióinak elérése).
+A Windows Holographic operációs rendszert futtató eszközök Microsoft Intune-nal való kezeléséhez frissítenie kell az eszközöket a Windows Holographicról a Windows Holographic for Businessre. A frissítéshez létrehozhat egy kiadásfrissítési profilt. A Microsoft HoloLens esetében a frissítéshez szükséges licenc beszerzéséhez megvásárolhatja a Commercial Suite-ot is. További információkért lásd: [Unlock Windows Holographic for Business features](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise) (A Windows Holographic for Business új funkcióinak elérése).
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Kiadásfrissítési eszközkonfigurációs profil beállítása
 
