@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927029"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039420"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,22 @@ Heti összesítésben olvashat a Microsoft Intune újdonságairól. Emellett tá
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-9-2018"></a>2018. július 9-ei hét
+
+### <a name="app-management"></a>Alkalmazáskezelés
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>Alkalmazás-hozzáférés letiltása a nem jóváhagyott eszközgyártókon és -modelleken <!-- 1425689 ! -->
+Az Intune rendszergazdái egy adott Android-gyártókat és/vagy iOS-modelleket tartalmazó listát kényszeríthetnek az Intune App Protection-szabályzatokkal. A rendszergazda egy pontosvesszőkkel elválasztott listában adhat meg gyártókat az Android-szabályzatokhoz, valamint eszközmodelleket az iOS-szabályzatokhoz. Az Intune App Protection-szabályzatok csak Android- és iOS-eszközökre vonatkoznak. A megadott listán két különálló művelet hajtható létre:
+- Az alkalmazás-hozzáférés letiltása a nem megadott eszközökön,
+- vagy a vállalati adatok szelektív törlése a nem megadott eszközökön. 
+
+A felhasználó nem férhet hozzá a célalkalmazáshoz, ha az nem felel meg a szabályzat feltételeinek. A rendszer a beállítások alapján letilthatja a felhasználót, vagy szelektíven törölheti annak vállalati adatait az alkalmazáson belül. IOS-eszközökön a funkcióhoz az alkalmazásoknak (például WXP, Outlook, Managed Browser, Yammer) integrálniuk kell az Intune App SDK-t, hogy a megcélzott alkalmazásokon kötelezővé lehessen tennie ezt a funkciót. Ez az integráció fokozatosan történik, és az egyes alkalmazáscsapatoktól függ. Android-eszközökön ennek a funkciónak a használatához a Céges portál legújabb verziójára van szükség. 
+
+A végfelhasználói eszközökön az Intune-ügyfél az Application Protection-szabályzatok Intune-panelén megadott egyszerű sztringegyezések alapján végez műveleteket. Ez teljes mértékben az eszköz által jelentett értéktől függ. Ennek fényében a rendszergazának kell ügyelnie arra, hogy a kívánt viselkedés az elvártnak megfelelően működjön. Ezt úgy lehet elérni, ha teszteli a beállítást különböző eszközgyártókkal és -modellekkel egy kisebb felhasználói csoportban. A Microsoft Intune-ban válassza a **Mobilalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget az alkalmazásvédelmi szabályzatok megtekintéséhez és hozzáadásához. Az alkalmazásvédelmi szabályzatokkal kapcsolatos további információért lásd: [Mik azok az alkalmazásvédelmi szabályzatok](app-protection-policy.md) és [Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban](app-protection-policies-access-actions.md).
+
+### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>Hozzáférés a macOS Céges portáljának kiadás előtti buildjéhez <!-- 1734766 -->
+A Microsoft AutoUpdate-tel regisztrálhat, hogy korábban megkapja a buildeket, ha csatlakozik az Insider programhoz. A regisztráció lehetővé teszi a frissített Céges portál használatát, még mielőtt az elérhetővé válna a végfelhasználók számára. További információért lásd a [Microsoft Intune blogját](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
+
 ## <a name="week-of-july-2-2018"></a>2018. július 2-ai hét
 
 ### <a name="app-management"></a>Alkalmazáskezelés
@@ -68,9 +84,6 @@ Az alábbi szöveg eredeti és átdolgozott változata a megjelenő üzenetek ja
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP-alkalmazáslicenc visszavonása <!-- 1863797 -->
 Rendszergazdaként visszavonhatja egy eszköz vagy egy felhasználó hozzárendelt iOS VPP-alkalmazáslicencét. Az iOS VPP-alkalmazás eltávolítása az alkalmazás licencének visszavonását is lehetővé teszi. Az alkalmazás eltávolítása előtt a felhasználót vagy az eszközt ki kell vonni az alkalmazás céljaként megadott csoportból. A felhasználó vagy az eszköz csoportból való eltávolításával elkerülhető az alkalmazás újratelepítése. Ezeknek a lépéseknek a követése után az alkalmazáslicencet hozzárendelheti egy másik felhasználóhoz vagy eszközhöz. Az iOS VPP-alkalmazáslicencekre vonatkozó további információkat az [iOS mennyiségi programban vásárolt alkalmazások kezelése a Microsoft Intune-ban](vpp-apps-ios.md) című témakörben tekintheti meg.
-
-#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS – üzletági (LOB) alkalmazások támogatása <!-- 1895847 -->
-A Microsoft Intune lehetővé teszi macOS üzletági alkalmazások **Kötelező** vagy **Regisztrációval elérhető** beállítással való üzembe helyezését. A végfelhasználók elvégezhetik az alkalmazások **Rendelkezésre álló** állapotban való üzembe helyezését a macOS-es céges portálon vagy a [Céges portál webhelyén](https://portal.manage.microsoft.com).
 
 ### <a name="device-configuration"></a>Eszközök konfigurálása
 
@@ -645,10 +658,10 @@ Szeretnénk nagyobb irányítást adni a felhasználóknak az adataik védelmév
 
 ## <a name="week-of-march-19-2018"></a>2018. március 19-i hét
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Minden eszköz exportálása CSV-fájlokba IE, Microsoft Edge vagy Chrome böngészőben <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Minden eszköz exportálása CSV-fájlokba IE, Edge vagy Chrome böngészőben <!-- 2258071 -->
 Az **Eszközök** > **Minden eszköz** területen **exportálhatja** az eszközöket egy CSV formátumú listába. Az Internet Explorer (IE) 10000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 10000 eszközt tartalmaz.
 
-A Microsoft Edge és a Chrome 30000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 30000 eszközt tartalmaz.
+Az Edge és a Chrome 30000 eszköznél kevesebbel rendelkező felhasználói sikeresen exportálhatják a fájljaikat több fájlba. Minden fájl legfeljebb 30000 eszközt tartalmaz.
 
 Az [Eszközkezelés](device-management.md) területen további részletek jelennek meg a kezelt eszközökkel végezhető műveletekről.
 
@@ -669,7 +682,7 @@ Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kia
 
 #### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
 
-|Beállítás neve  |Beállítás lehetőségei  |Description  |
+|Beállítás neve  |Beállítás lehetőségei  |Leírás  |
 |---------|---------|---------|
 |Zsarolóprogramok elleni speciális védelem|Engedélyezve, Naplózás, Nincs konfigurálva|Zsarolóprogramok elleni agresszív védelem.|
 |A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése|Engedélyezve, Naplózás, Nincs konfigurálva|A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése (lsass.exe).|
@@ -679,7 +692,7 @@ Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kia
 
 #### <a name="controlled-folder-access"></a>Mappahozzáférés felügyelete
 
-|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Description |
+|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Leírás |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
@@ -758,7 +771,7 @@ Az erőforrásfiók megjelenhet például **Konferenciaterem B41/6233** néven.
 ##### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
 
 
-|Beállítás neve  |Beállítás lehetőségei  |Description  |
+|Beállítás neve  |Beállítás lehetőségei  |Leírás  |
 |---------|---------|---------|
 |Jelszóval védett végrehajtható tartalom futtatása e-mailből|Tiltás, Naplózás, Nincs konfigurálva|E-mailből letöltött jelszóval védett végrehajtható fájlok futtatásának megakadályozása.|
 |Zsarolóprogramok elleni speciális védelem|Engedélyezve, Naplózás, Nincs konfigurálva|Zsarolóprogramok elleni agresszív védelem.|
@@ -769,7 +782,7 @@ Az erőforrásfiók megjelenhet például **Konferenciaterem B41/6233** néven.
 
 ##### <a name="controlled-folder-access"></a>Mappahozzáférés felügyelete
 
-|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Description |
+|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Leírás |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
@@ -1086,7 +1099,7 @@ A Windows 10-eszközökön az új Helyi eszközbiztonsági beállításokkal adh
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Új frissítés a felhasználói felülethez a Céges portál webhelyen <!--2000968-->
 
-Áprilisban új felhasználói élményt vezetünk be a Céges portál webhelyén, melynek része a megújult felhasználói felület, az egyszerűsített műveletek és továbbfejlesztett kisegítő lehetőségek. A felhasználóbarátabb élmény érdekében az ügyfelek által javasolt olyan fejlesztéseket valósítottunk meg, mint az alkalmazások megosztása és a teljesítmény javítása általában.
+Augusztustól új felhasználói élményt vezetünk be a Céges portál webhelyén, melynek része a megújult felhasználói felület, az egyszerűsített műveletek és továbbfejlesztett akadálymentes felület. A felhasználóbarátabb élmény érdekében az ügyfelek által javasolt olyan fejlesztéseket valósítottunk meg, mint az alkalmazások megosztása és a teljesítmény javítása általában.
 Ügyfeleink javaslatai alapján olyan új funkciókat is bevezettünk, amelyek jelentősen megnövelik a jelenlegi funkciók használhatóságát és működését:
 
 * A webhely felhasználói felületének fejlesztései
@@ -1100,7 +1113,7 @@ Az Apple bejelentette, hogy konkrét követelményeket ír elő az Application T
 
 
 
-## <a name="see-also"></a>Lásd még:
+## <a name="see-also"></a>További információ
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A felhőplatform ütemterve](https://www.microsoft.com/cloud-platform/roadmap)
 * [A Céges portál felhasználói felületének újdonságai](whats-new-app-ui.md)

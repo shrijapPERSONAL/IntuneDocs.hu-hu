@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906056"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028745"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Eszközök eltávolítása gyári beállítások visszaállításával, a céges adatok eltávolításával vagy az eszköz regisztrációjának manuális megszüntetésével
 
@@ -33,7 +33,7 @@ A **Céges adatok eltávolítása** vagy a **Gyári beállítások visszaállít
 
 A **Gyári beállítások visszaállítása** művelet visszaállítja az eszközön az alapértelmezett gyári beállításokat. A felhasználói adatok attól függően maradnak meg, hogy bejelölte-e a **Regisztrációs állapot és felhasználói fiók megtartása** jelölőnégyzetet. Ellenkező esetben megtörténik a meghajtó biztonságos törölése.
 
-|Gyári beállítások visszaállítása művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Description|
+|Gyári beállítások visszaállítása művelet|**Regisztrációs állapot és felhasználói fiók megtartása**|Eltávolítva az Intune kezelése alól|Leírás|
 |:-------------:|:------------:|:------------:|------------|
 |**Gyári beállítások visszaállítása**| Nincs bejelölve | Igen | Törli az összes felhasználói fiókot, adatot, MDM-szabályzatot és beállítást. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
 |**Gyári beállítások visszaállítása**| Bejelölve | Nem | Törli az összes MDM-szabályzatot. Megtartja a felhasználói fiókokat és az adatokat. Visszaállítja a felhasználói beállításokat az alapértelmezett értékre. Visszaállítja az operációs rendszert az alapértelmezett állapotra és beállításokra.|
@@ -130,7 +130,7 @@ A gyári alapbeállításokat csak androidos kioszkeszközökön állíthatja vi
 
 ### <a name="windows"></a>Windows
 
-|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
+|Adattípus|Windows 8.1 (MDM) és Windows RT 8.1|Windows RT|Windows Phone 8.1 és Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Vállalati alkalmazások és az Intune által telepített egyéb vonatkozó adatok|Az EFS által védett fájloknál a kulcsok visszavonódnak. A felhasználó nem tudja megnyitni a fájlokat.|A vállalati alkalmazásokat a rendszer nem távolítja el.|Törlődnek az eredetileg a Céges portálon keresztül telepített alkalmazások. Törlődnek a vállalati alkalmazásadatok.|Törlődnek az alkalmazások. A közvetlen telepítési kulcsokat a rendszer eltávolítja.<br>A Windows 10 1703-as (alkotói frissítés) és újabb verzióinál a rendszer az Office 365 ProPlus alkalmazásokat nem távolítja el.|
 |Beállítások|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|Az Intune-szabályzat által konfigurált beállítások érvényüket vesztik. A felhasználók megváltoztathatják a beállításokat.|
@@ -160,7 +160,7 @@ Az Intune konfigurálható úgy, hogy automatikusan törölje az inaktívnak, el
 1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
 2. Válassza az **Eszközök** > **Eszköztörlési szabályok** > **Igen** lehetőséget.
 3. Az **Azon eszközök törlése, amelyek a megadott számú napig nem jelentkeztek be** mezőben adjon meg egy 90 és 270 közötti értéket.
-4. Válassza a **Mentés** elemet.
+4. Válassza a **Mentés** lehetőséget.
 
 
 
@@ -175,3 +175,24 @@ Előfordulhat, hogy eszközöket kell törölnie az Azure AD-ből kommunikáció
 5. Válassza ki azt a felhasználót, aki a törölni kívánt eszközhöz van társítva.
 6.  Válassza az **Eszközök** lehetőséget.
 7.  Szükség szerint távolítsa el az eszközöket. Eltávolíthat például olyan eszközöket, amelyeket már nem használnak vagy pontatlan definíciókkal rendelkeznek.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Apple DEP-eszközök kivonása az Intune-ból
+
+Ha szeretne teljesen kivonni egy Apple DEP-eszközt az Intune általi felügyeletből, kövesse az alábbi lépéseket:
+
+1. Jelentkezzen be az [Intune-ba az Azure Portalon](https://aka.ms/intuneportal).
+2. Válassza az **Eszközök** > **Minden eszköz** > a törölni kívánt eszköz > **Céges adatok eltávolítása** lehetőséget.
+![Képernyőkép a céges adatok eltávolításáról](./media/devices-wipe/remove-company-data.png)
+3. Válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** > token kiválasztása > **Eszközök** > jelölőnégyzet bejelölése az eszközhöz > **Törlés** > **Igen** lehetőséget.
+![Képernyőkép az eszköz törléséről](./media/devices-wipe/delete-device.png)
+4. Látogasson el a [deploy.apple.com](http://deploy.apple.com) webhelyre, és keressen rá az eszközre a sorozatszáma alapján.
+5. A **Hozzárendelve** menüben válassza a **Nincs hozzárendelés** elemet.
+
+6. Válassza az **Újbóli hozzárendelés** lehetőséget.
+
+    ![Képernyőkép az újbóli hozzárendelésről az Apple esetében](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>További lépések
+
+Ha szeretne egy törölt eszközt újból regisztrálni, olvassa el a [Regisztrációs lehetőségek](enrollment-options.md) szakaszt.
+

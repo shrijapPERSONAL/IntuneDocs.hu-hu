@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906022"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949492"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>A Microsoft Intune előzetes kiadása – 2018. július
 
@@ -40,6 +40,9 @@ A lap tartalmát rendszeresen frissítjük. További hírekért látogasson viss
 ## <a name="intune-in-the-azure-portal"></a>Intune az Azure Portalon
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>További szinkronizálási lehetőségek a windowsos céges portál alkalmazásban <!-- 2683177 -->
+A windowsos Céges portál alkalmazás hozzáad egy eszközszinkronizálási műveletet a Windows tálcájához és a Start menü gyorslistáihoz. Az eszközök gyors szinkronizáláshoz és a vállalati erőforrások eléréséhez kattintson ezek közöl valamelyik helyre.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Eszközök PIN-kódjának alaphelyzetbe állítása a Windows 10-es Céges portál alkalmazásból <!-- 2101282 --> 
 Alkalmazottaik rövidesen közvetlenül a Windows 10-es Céges portál alkalmazásból tudják alaphelyzetbe állítani eszközeik PIN-kódját vagy jelszavát. Ez a funkció a PIN-kód alaphelyzetbe állítását támogató, Intune által felügyelt távoli és helyszíni eszközökön is elérhető lesz. A távoli eszközre vonatkozó kérelmek az eszköz típusától függően vagy eltávolítják az eszköz PIN-kódját, vagy létrehoznak egy ideiglenes PIN-kódot. A helyszíni eszközre alaphelyzetbe állítást kérő felhasználók az eszköz Beállítások alkalmazásához lesznek irányítva.  
@@ -199,5 +202,5 @@ Az Intune alkalmazásvédelmi szabályzatai lehetőséget nyújtanak globális s
 
 Jelenleg nincsenek aktív értesítések.
 
-### <a name="see-also"></a>Lásd még:
+### <a name="see-also"></a>További információ
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new.md).

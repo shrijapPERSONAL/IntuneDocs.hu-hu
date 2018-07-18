@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909116"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993734"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Szelektív adattörlés alkalmazásvédelmi szabályzatok hozzáférési műveleteivel az Intune-ban
 
@@ -36,7 +36,7 @@ Ezekkel a beállításokkal egyértelműen megadható az összes vállalati adat
 3. Az **Intune** panelen válassza a **Mobilalkalmazások** > **Alkalmazásvédelmi szabályzatok** lehetőséget.
 4. Kattintson a **Szabályzat hozzáadása** lehetőségre (a meglévő szabályzatok is módosíthatók). 
 5. Kattintson a **Kötelező beállítások konfigurálása** lehetőségre a szabályzathoz konfigurálható beállítások listájának megjelenítéséhez. 
-6. A **Beállítások** panelen lefelé görgetve megtalálja a **Hozzáférési műveletek** című szakaszt és egy szerkeszthető táblázatot.
+6. A Beállítások ablaktáblán lefelé görgetve láthatóvá válik a **Hozzáférési műveletek** szakasz egy szerkeszthető táblázattal.
 
     ![Képernyőkép az Intune alkalmazásvédelmi hozzáférési műveleteiről](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ Ezekkel a beállításokkal egyértelműen megadható az összes vállalati adat
 
 Az alkalmazásvédelmi szabályzatbeállítások táblázata a **Beállítás**, **Érték** és **Művelet** oszlopokból áll.
 
+### <a name="ios-policy-settings"></a>iOS-es szabályzatbeállítások
 iOS rendszeren a következő beállításokhoz konfigurálhat műveleteket a **Beállítások** legördülő lista használatával:
 -  PIN-kód-megadási kísérletek maximális száma
 -  Offline türelmi időszak
@@ -58,6 +59,19 @@ iOS rendszeren a következő beállításokhoz konfigurálhat műveleteket a **B
 -  Alkalmazás minimális verziója
 -  SDK minimális verziója
 -  Eszközmodell(ek)
+
+Az **Eszközmodell(ek)** beállítás használatához adjon meg egy iOS-modellazonosítókat tartalmazó, pontosvesszővel tagolt listát. Az iOS-modellazonosítót a [HockeyApp támogatási dokumentációjának](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Eszköztípus oszlopában találja.<br>
+Példabemenet: *iPhone5,2; iPhone5,3*
+
+A végfelhasználói eszközökön az Intune-ügyfél az Intune-ban az Application Protection-szabályzatokhoz megadott eszközmodellsztringek egyszerű egyeztetése alapján végez műveleteket. Az egyeztetés teljes mértékben az eszköz által jelentett értéktől függ. Az informatikai rendszergazda számára ajánlatos ellenőrizni, hogy a szándéknak megfelelő viselkedés történik-e, ennek a beállításnak kölönféle eszközgyártókon és modelleken alapuló, kisméretű felhasználói csoportot célzó tesztelésével. Az alapértelmezett érték a **Nincs konfigurálva**.<br>
+Állítsa be a következő műveletek egyikét: 
+- Megadottak engedélyezése (nem megadottak tiltása)
+- Megadottak engedélyezése (nem megadottak törlése)
+
+**Mi történik, ha az informatikai rendszergazda az ugyanazokra az alkalmazásokra és azonos Intune-felhasználóra célzott szabályzatok között bemenetként a iOS-modellazonosítók egy másik listáját adja meg?**<br>
+Ha két alkalmazásvédelmi szabályzat konfigurált értékei között ütközés van, az Intune általában a legkorlátozóbb megközelítést alkalmazza. Ezért a célzott Intune-felhasználó által megnyitott alkalmazásnak leküldött, eredményül kapott szabályzat az *A szabályzatban* és a *B szabályzatban* listázott iOS-modellazonosító(k) metszete lesz, ugyanarra az alkalmazás/felhasználó kombinációra célozva. Ha például az *A szabályzat* meghatározza az „iPhone5,2; iPhone5,3” szabályt, míg a *B szabályzat* az „iPhone5,3” szabályt az *A szabályzat* és a *B szabályzat* által is megcélzott Intune-felhasználó számára az eredményül kapott szabályzat az „iPhone5,3” lesz. 
+
+### <a name="android-policy-settings"></a>Android-szabályzat beállításai
 
 Android rendszeren a következő beállításokhoz konfigurálhat műveleteket a **Beállítások** legördülő lista használatával:
 -  PIN-kód-megadási kísérletek maximális száma
@@ -68,6 +82,19 @@ Android rendszeren a következő beállításokhoz konfigurálhat műveleteket a
 -  Minimális javításverzió
 -  Eszközgyártó(k)
 
+Az **Eszközgyártó(k)** beállítás használatához gépelje be az Android-gyártók pontosvesszővel tagolt felsorolását. Az eszköz Android-gyártóját az eszközbeállításokban találja meg.<br>
+Példabemenet: *A gyártó; B gyártó; Google* 
+
+A végfelhasználói eszközökön az Intune-ügyfél az Intune-ban az Application Protection-szabályzatokhoz megadott eszközmodellsztringek egyszerű egyeztetése alapján végez műveleteket. Az egyeztetés teljes mértékben az eszköz által jelentett értéktől függ. Az informatikai rendszergazda számára ajánlatos ellenőrizni, hogy a szándéknak megfelelő viselkedés történik-e, ennek a beállításnak kölönféle eszközgyártókon és modelleken alapuló, kisméretű felhasználói csoportot célzó tesztelésével. Az alapértelmezett érték a **Nincs konfigurálva**.<br>
+Állítsa be a következő műveletek egyikét: 
+- Megadottak engedélyezése (nem megadottak tiltása)
+- Megadottak engedélyezése (nem megadottak törlése)
+
+**Mi történik, ha az informatikai rendszergazda az ugyanazokra az alkalmazásokra és azonos Intune-felhasználóra célzott szabályzatok között bemenetként az Android-gyártók egy másik listáját adja meg?**<br>
+Ha két alkalmazásvédelmi szabályzat konfigurált értékei között ütközés van, az Intune általában a legkorlátozóbb megközelítést alkalmazza. Ezért a célzott Intune-felhasználó által megnyitott alkalmazásnak leküldött, eredményül kapott szabályzat az *A szabályzatban* és a *B szabályzatban* listázott Android-gyártók metszete lesz, ugyanarra az alkalmazás/felhasználó kombinációra célozva. Ha például az *A szabályzat* meghatározza az „Google, Samsung” szabályt, míg a *B szabályzat* a „Google” szabályt az *A szabályzat* és a *B szabályzat* által is megcélzott Intune-felhasználó számára az eredményül kapott szabályzat a „Google” lesz. 
+
+### <a name="additional-settings-and-actions"></a>További beállítások és műveletek 
+
 A táblázat néhány sora alapértelmezés szerint ki lesz töltve az **Offline türelmi időszak** és a **PIN-kód-megadási kísérletek maximális száma** beállítások konfigurációjával, ha a **PIN-kód megkövetelése a hozzáféréshez** beállítás **Igen** értékre van beállítva.
  
 A beállítások konfigurálásához válasszon egy beállítást a **Beállítás** oszlop alatti legördülő listából. A beállítás kiválasztása után szerkeszthetővé válik az **Érték** oszlop alatti szövegmező, ha kötelező megadni egy értéket. Használhatóvá válik a **Művelet** oszlop alatti legördülő lista is, amely a beállításhoz tartozó feltételesen végrehajtható műveleteket tartalmazza. 
@@ -76,8 +103,6 @@ A következő lista a leggyakoribb műveleteket sorolja fel:
 -  **Hozzáférés letiltása** – Letiltja a végfelhasználó hozzáférését a vállalati alkalmazáshoz.
 -  **Összes adat törlése** – Az összes vállalati adat törlése a végfelhasználó eszközéről.
 -  **Figyelmeztetés** – Figyelmeztető üzenetet jelenít meg a végfelhasználó számára.
-
-### <a name="additional-settings-and-actions"></a>További beállítások és műveletek 
 
 Bizonyos beállítások, például az **Operációs rendszer minimális verziója**, a különféle verziószámok alapján minden lehetséges műveletet végrehajtásához konfigurálhatók. 
 

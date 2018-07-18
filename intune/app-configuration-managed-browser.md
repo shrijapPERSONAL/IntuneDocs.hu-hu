@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37967238"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Az internet-hozzáférés felügyelt böngészőszabályzatokkal való kezelése a Microsoft Intune-ban
 
@@ -35,7 +36,7 @@ Mivel az alkalmazás integrálva van az Intune SDK-val, alkalmazásvédelmi szab
 - Képernyőmentés megakadályozása
 - Annak biztosítása, hogy a felhasználók által kiválasztott tartalomra mutató hivatkozások csak más felügyelt alkalmazásokban nyíljanak meg.
 
-További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](/intune/app-protection-policy.md) című témakörben talál.
+További információt a [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md) című témakörben talál.
 
 Ezek a beállítások az alábbiakra alkalmazhatók:
 
@@ -86,7 +87,7 @@ Ha az Azure AD-hez csatlakozó webalkalmazásokat az Intune Managed Browser hasz
 8. A **Hozzárendelések** szakaszban válassza a **Felhasználók és csoportok** lehetőséget, majd válassza ki azokat a felhasználókat és csoportokat, akikhez hozzá szeretné rendelni ezt a szabályzatot. 
 
     > [!NOTE]
-    > A felhasználóknak az Intune alkalmazásvédelmi szabályzatának hatásköre alatt is kell lenniük. További információ az Intune alkalmazásvédelmi szabályzatainak létrehozásáról: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
+    > A felhasználóknak az Intune alkalmazásvédelmi szabályzatának hatásköre alatt is kell lenniük. További információ az Intune App Protection szabályzatainak létrehozásáról: [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
 
 9. A szabályzat védelme alá tartozó alkalmazások megadásához a **Hozzárendelések** szakaszban válassza a **Felhőalkalmazások** lehetőséget.
 
@@ -141,7 +142,7 @@ Az Intune Managed Browser és az [Azure AD Alkalmazásproxy]( https://docs.micro
 ### <a name="before-you-start"></a>Előkészületek
 
 - Állítsa be a belső alkalmazásokat az Azure AD alkalmazásproxyban.
-    - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
+    - Az Alkalmazásproxy konfigurálásáról és az alkalmazások közzétételéről a [telepítési dokumentációban](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started) olvashat. 
 - A Managed Browser alkalmazás 1.2.0-s vagy annál újabb verzióját kell használnia.
 - A Managed Browser felhasználói rendelkezzenek az alkalmazáshoz rendelt [Intune alkalmazásvédelmi szabályzattal]( app-protection-policy.md).
 
@@ -167,7 +168,7 @@ Ezzel a beállítással adható meg a kezdőlap, amelyet a felhasználók a Mana
 
 |                                Kulcs                                |                                                           Érték                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: <strong><https://www.bing.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Adjon meg egy érvényes URL-címet. A helytelen URL-címek biztonsági intézkedésként le vannak tiltva.<br>Például: `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>A Managed Browser könyvjelzőinek beállítása
 
@@ -181,7 +182,7 @@ A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó
 
 |                                Kulcs                                 |                                                                                                                                                                                                                                                         Érték                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Több könyvjelző megadásakor az egyes párokat a <strong>&#124;&#124;</strong> karakter választja el.<br><br>Például: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Ennek a konfigurációnak egy könyvjelzőlista az értéke. Minden könyvjelző egy címből és egy URL-címből áll. A címet és az URL-címet a <strong>&#124;</strong> karakter választja el.<br><br>Például:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Engedélyezett és letiltott URL-címek meghatározása a Managed Browser számára
 
@@ -189,7 +190,7 @@ A Managed Browser alkalmazás konfigurációjának meghatározására vonatkozó
 
 |Kulcs|Érték|
 |-|-|
-|A következő lehetőségek közül választhat:<br><br>- Engedélyezett URL-címek megadásához (kizárólag ezek az URL-címek engedélyezettek, más webhelyek nem lesznek elérhetőek): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Tiltott URL-címek megadásához (minden más webhely elérhető lesz): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Példák:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
+|A következő lehetőségek közül választhat:<br><ul><li>Engedélyezett URL-címek megadása (csak ezek az URL-címek engedélyezettek, más webhelyek nem érhetők el):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Tiltott URL-címek megadása (minden más webhely elérhető lesz):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|A kulcs megfelelő értéke egy URL-címlista. Az engedélyezni vagy letiltani kívánt URL-címeket egyetlen értékként kell megadni, az egyes tételeket függőleges vonal **&#124;** karakterrel elválasztva egymástól.<br><br>Például:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Mindkét kulcsot ne adja meg. Ha ugyanahhoz a felhasználóhoz mindkét kulcs meg van adva, akkor az engedélyezett kulcs érvényesül, mert az jelent nagyobb korlátozást.
@@ -208,42 +209,42 @@ Az alábbi táblázat azokat az engedélyezett formátumokat és helyettesítő 
 
   -   HTTPS – 443-as port
 
-  A portszám helyettesítő karakterrel való megadása nem támogatott. Például a <strong>http&colon;//www&period;contoso&period;com:*;</strong> és a <strong>http&colon;//www&period;contoso&period;com: /*;</strong> nem támogatott.
+  A portszám helyettesítő karakterrel való megadása nem támogatott. Például a `http://www.contoso.com:;` és a `http://www.contoso.com: /;` nem támogatottak.
 
 - Az alábbi táblázat az URL-címek megadásakor használható mintákat ismerteti:
 
 |                  URL-cím                  |                     Részletek                      |                                                Egyezik                                                |                                Nem egyezik                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Egyetlen lapnak felel meg               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Egyetlen lapnak felel meg               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Az összes www.contoso.com karakterlánccal kezdődő URL-cím |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
-|    http://&#42;.contoso.com/&#42;     |     A contoso.com összes altartománya     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Egyetlen mappa              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
-|       http://www.contoso.com:80       |  Egyetlen lap, amely portszámot használ   |                                       http://www.contoso.com:80                                       |                                                                               |
-|        https://www.contoso.com        |          Egyetlen biztonságos lap           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Egyetlen mappa és annak összes almappája    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+|        `http://www.contoso.com`         |              Egyetlen lapnak felel meg               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              Egyetlen lapnak felel meg               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | Az összes `www.contoso.com` karakterlánccal kezdődő URL-cím |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     A contoso.com összes altartománya     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             Egyetlen mappa              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  Egyetlen lap, amely portszámot használ   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          Egyetlen biztonságos lap           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    Egyetlen mappa és annak összes almappája    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
 - Az alábbi példák nem engedélyezett beviteleket szemléltetnek:
 
-  - &#42;.com
+  - `*.com`
 
-  - &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-  - www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-  - www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
   - IP-címek
 
-  - https://&#42;
+  - `https://*`
 
-  - http://&#42;
+  - `http://*`
 
-  - http://www.contoso.com:&#42;
+  - `http://www.contoso.com:*`
 
-  - http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>A felügyelt alkalmazások naplóinak elérése a Managed Browser használatával iOS rendszeren
 
@@ -277,7 +278,7 @@ Az alkalmazásnaplókban tárolt beállítások listáját az [Alkalmazásvédel
 A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módszerekkel név nélküli adatokat gyűjt a Managed Browser teljesítményéről és használatáról. A felhasználók kikapcsolhatják az adatgyűjtést az eszköz **Használati adatok** beállításával. Nem tudja befolyásolni ezen adatok gyűjtését.
 
 
--   Az IOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
+-   Az iOS-eszközökön nem nyithatók meg azok a felhasználók által felkeresett webhelyek, amelyek lejárt vagy nem megbízható tanúsítvánnyal rendelkeznek.
 -   A Managed Browser nem használja a felhasználók eszközein futó beépített böngésző egyedi beállításait. Ezekhez a beállításokhoz a Managed Browser nem fér hozzá.
 
 -   Ha engedélyezi az **Egyszerű PIN-kód megkövetelése a hozzáféréshez** vagy a **Vállalati hitelesítő adatok megkövetelése a hozzáféréshez** beállítást a Managed Browser böngészőhöz hozzárendelt alkalmazásvédelmi szabályzatban, és a felhasználó a hitelesítési lapon a súgóhivatkozásra kattint, bármely internetes webhelyet elérhet, függetlenül attól, hogy azok hozzá lettek-e adva a felügyeltböngésző-szabályzat blokklistájához.
@@ -291,4 +292,4 @@ A Microsoft termék- és szolgáltatásfejlesztési célból automatikus módsze
 
 ## <a name="next-steps"></a>További lépések
 
-- [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md)
+- [Mik azok az alkalmazásvédelmi szabályzatok?](app-protection-policy.md) 

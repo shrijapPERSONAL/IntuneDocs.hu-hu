@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905155"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039301"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Eszközök PIN-kódjának visszaállítása vagy eltávolítása az Intune-ban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ha új PIN-kódot szeretne létrehozni egy eszközhöz, használja a  **PIN-kód eltávolítása** műveletet.
+Ha új PIN-kódot szeretne létrehozni egy eszközhöz, használja a  **PIN-kód eltávolítása** műveletet. Ez a művelet csak a munkahelyi profilnál kéri a PIN-kód alaphelyzetbe állítását. Az androidos munkahelyi profilok esetében az eszköz PIN-kódjának alaphelyzetbe állítása nem támogatott.
 
-## <a name="supported-platforms"></a>Támogatott platformok
+## <a name="work-profile-pin-reset-supported-platforms"></a>A munkahelyi profil PIN-kódjának alaphelyzetbe állítása szempontjából támogatott platformok
 
-- Munkahelyi profillal regisztrált, 8.0-ás vagy újabb verziójú Android-eszközök
+- Munkahelyi profillal regisztrált, 8.0-ás vagy újabb verziójú Android-eszközök 
 - 6.0-ás vagy régebbi verziójú Android-eszközök
 - Vállalati androidos kioszkeszközök
 - iOS 
@@ -49,7 +49,9 @@ Ha új PIN-kódot szeretne létrehozni egy eszközhöz, használja a  **PIN-kód
 
 ## <a name="resetting-android-work-profile-passcodes"></a>Androidos munkahelyi profilok PIN-kódjainak alaphelyzetbe állítása
 
-A támogatott, androidos munkahelyi profilt használó eszközök végfelhasználói új feloldó jelszót vagy biztonsági kérdést kapnak a felügyelt profilhoz. Az Android 8.0-s munkahelyi profilos eszközökön a végfelhasználók a regisztráció befejeződése után azonnal értesítést kapnak, hogy aktiválják alaphelyzetbe állítási PIN-kódjukat. Az értesítés akkor jelenik meg, ha egy munkahelyi profil jelszavát kell beállítani. A PIN-kód megadása után az értesítés eltűnik.
+A támogatott, androidos munkahelyi profilt használó eszközök végfelhasználói új feloldó jelszót vagy biztonsági kérdést kapnak a felügyelt profilhoz. 
+
+Az Android 8.0-s munkahelyi profilos eszközökön a végfelhasználók a regisztráció befejeződése után azonnal értesítést kapnak, hogy aktiválják alaphelyzetbe állítási PIN-kódjukat. Az értesítés akkor jelenik meg, ha egy munkahelyi profil jelszavát kell beállítani. A PIN-kód megadása után az értesítés eltűnik.
 
 ## <a name="resetting-ios-passcodes"></a>iOS PIN-kódok alaphelyzetbe állítása
 

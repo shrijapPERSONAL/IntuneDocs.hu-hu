@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021560"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949475"
 ---
 # <a name="get-started-managing-users"></a>A felhasználók kezelésének első lépései
 
@@ -31,9 +31,11 @@ Gondolja végig, hányan dolgoznak a munkahelyén. Mindegyiküknek, aki céges a
 1. Jelentkezzen be az [Azure Portal](https://portal.azure.com) webhelyre.
 2. Válassza a **Minden szolgáltatás** > **Intune** lehetőséget. Az Intune a **Figyelés + felügyelet** szakaszban található.
 3. Miután megnyitotta a **Microsoft Intune** panelt, válassza a **Felhasználók** lehetőséget. Nyissa meg a **Minden felhasználó** lapot, és válassza az **+ Új felhasználó** lehetőséget.
-4. Adja meg az új felhasználó adatait, például **Név** és a **Felhasználónév**. A felhasználónév részét képező tartománynév csak az eredeti, alapértelmezett “contoso.onmicrosoft.com” tartománynév, vagy olyan ellenőrzött, nem összevont tartománynév lehet, amilyen a “contoso.com”.
-5. A **Csoportok** részen válassza ki a tesztcsoportot, amelyhez a felhasználót hozzá kívánja adni.
-6. Mentse az automatikusan generált jelszót, hogy be tudjon jelentkezni vele a teszthez használt eszközön. Ezt a jelszót meg kell adni a felhasználónak, hogy megváltoztathassák egy saját jelszóra, amelyet meg tudnak jegyezni.
+4. Adja meg az új felhasználó adatait, például **Név** és a **Felhasználónév**. A felhasználónév tartománynév részének a következő tartományok egyikének kell lennie:
+    - a kezdeti alapértelmezett tartománynév: „contoso.onmicrosoft.com” vagy
+    - egy ellenőrzött, nem összevont tartománynév, például „contoso.com”.
+5. A **Csoportok** szakaszban válassza ki a [csoportot](get-started-groups.md), amelyhez a felhasználót hozzá kívánja adni.
+6. Mentse az automatikusan generált felhasználói jelszót, hogy be tudjon jelentkezni vele a teszthez használt eszközön. Ezt a jelszót meg kell adni a felhasználónak, hogy megváltoztathassák egy saját jelszóra, amelyet meg tudnak jegyezni.
 7. A **Felhasználó** panelen válassza a **Létrehozás** lehetőséget.
 
 ## <a name="assigning-licenses-to-users"></a>Licencek kiosztása a felhasználók számára
