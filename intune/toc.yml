@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Vállalati erőforrás-hozzáférési problémák elhárítása
           href: troubleshoot-company-resource-access-problems.md
+        - name: Alkalmazások telepítésével kapcsolatos problémák elhárítása
+          href: troubleshoot-app-install.md
         - name: Auditnaplók Intune-tevékenységekhez
           href: monitor-audit-logs.md
         - name: Alkalmazásvédelmi naplók áttekintése
