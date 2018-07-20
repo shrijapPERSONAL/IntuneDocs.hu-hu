@@ -521,6 +521,7 @@
         - name: Jamf Pro által felügyelt Mac számítógépek megfelelőségének kikényszerítése
           href: conditional-access-assign-jamf.md
     - name: Eszközadatok védelme
+      href: device-protect.md
       items:
         - name: Adatvédelem és személyes adatok
           href: privacy-personal-data.md
