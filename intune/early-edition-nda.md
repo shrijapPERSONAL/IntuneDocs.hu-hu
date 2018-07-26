@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949492"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212137"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>A Microsoft Intune előzetes kiadása – 2018. július
 
@@ -79,8 +79,8 @@ A profil létrehozásához nyissa meg az **Eszközkonfiguráció** > **Profilok*
 
 A Windows 10 és újabb verziókra vonatkozik.
 
-###  <a name="windows-line-of-business-lob-apps-file-extension-rename----1884873---"></a>Módosul a Windows rendszerű üzletági (LOB) alkalmazások fájlnévkiterjesztése <!-- 1884873 -->
-A Windowsos üzletági alkalmazások fájlnévkiterjesztése *.appx* és *.appxbundle* helyett *.msix* és *.msixbundle* lesz. A **Mobilalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel hozzáadhat egy alkalmazást a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **Alkalmazás típusát**. Windowsos üzletági alkalmazásokhoz válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy megfelelő kiterjesztésű telepítőfájlt.
+###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows rendszerű üzletági (LOB) alkalmazások fájlnévkiterjesztései <!-- 1884873 -->
+A Windowsos üzletági alkalmazások fájlnévkiterjesztései közé tartozik már az *.msi*, *.appx*, *.appxbundle*, *.msix* és *.msixbundle* is. A **Mobilalkalmazások** > **Alkalmazások** > **Hozzáadás** lehetőséggel hozzáadhat egy alkalmazást a Microsoft Intune-hoz. Megjelenik az **Alkalmazás hozzáadása** panel, ahol kiválaszthatja az **Alkalmazás típusát**. Windowsos üzletági alkalmazásokhoz válassza az **Üzletági alkalmazás** lehetőséget az alkalmazás típusa területen, válassza az **Alkalmazáscsomag-fájl** elemet, majd adjon meg egy megfelelő kiterjesztésű telepítőfájlt.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP konfigurációs csomag automatikus hozzáadása a konfigurációs profilhoz <!-- 2144658 -->
 Ha a [Komplex veszélyforrások elleni védelem használata mellett készít elő](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) eszközöket az Intune-ban, ehhez jelenleg le kell töltenie egy konfigurációs csomagot, melyet aztán hozzáad a konfigurációs profilhoz. Egy későbbi frissítéstől kezdve az Intune automatikusan megkapja a csomagot a Windows Defender biztonsági központtól, és hozzáadja azt az Ön profiljához.
@@ -202,5 +202,5 @@ Az Intune alkalmazásvédelmi szabályzatai lehetőséget nyújtanak globális s
 
 Jelenleg nincsenek aktív értesítések.
 
-### <a name="see-also"></a>További információ
+### <a name="see-also"></a>Lásd még:
 A közelmúltbeli fejlesztésekkel kapcsolatban lásd: [Újdonságok a Microsoft Intune-ban](whats-new.md).

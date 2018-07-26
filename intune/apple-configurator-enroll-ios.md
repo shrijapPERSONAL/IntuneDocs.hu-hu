@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840274"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212120"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>iOS-eszközök regisztrálása az Apple Configurator használatával
 
@@ -135,7 +135,7 @@ Nem telepíthetők a felhasználói kapcsolatot igénylő alkalmazások, többek
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>A profil exportálása iOS-eszközökre .mobileconfig fájlként
 
 1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Apple Configurator** > **Profilok** lehetőséget, válassza ki az exportálni kívánt profilt, majd válassza a **Profil exportálása** lehetőséget.
-2. A **Közvetlen regisztrálás** területen válassza a **Profil letöltése** lehetőséget, és mentse a fájlt.
+2. A **Közvetlen regisztrálás** területen válassza a **Profil letöltése** lehetőséget, és mentse a fájlt. A regisztrációs profilok csak két hétig érvényesek, ez után újra létre kell hozni őket.
 3. Ha a profilt közvetlenül az iOS-eszközökre szeretné telepíteni felügyeleti profilként, helyezze át a fájlt egy [Apple Configuratort](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) futtató Mac gépre.
 4. Készítse elő az eszközt az Apple Configuratorral az alábbi lépések segítségével:
     1. Egy Mac számítógépen nyissa meg az Apple Configurator 2.0 eszközt.

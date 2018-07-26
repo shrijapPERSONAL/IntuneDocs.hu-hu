@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909133"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212035"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Vállalati androidos kioszkeszközök regisztrálásának beállítása
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Az Android vállalati tulajdonú, egycélú (COSU) megoldáskészletével támogatja a kioszk-stílusú eszközök használatát. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
+Az Android vállalati tulajdonú, egycélú megoldáskészletével támogatja a kioszk-stílusú eszközök használatát. Az ilyen eszközöknek egyetlen rendeltetése van, például digitális aláírás, jegynyomtatás vagy leltárkezelés, hogy csak néhányat említsünk. A rendszergazdák alkalmazások és webes hivatkozások egy adott körére korlátozzák az eszköz használatát. Ez azt is megakadályozza, hogy a felhasználók más alkalmazásokat adjanak az eszközhöz, vagy más műveleteket hajtsanak végre rajta.
 
 Az Intune segítséget nyújt az alkalmazások és beállítások androidos kioszkeszközökre való telepítéséhez. A Vállalati Androidra vonatkozó részletekről az [A Vállalati Android követelményei](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) című weboldal nyújt tájékoztatást.
 

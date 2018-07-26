@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015608"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117854"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Naplók elküldése a cég informatikai támogatási szolgálatának USB-kábelen keresztül
 
@@ -35,7 +35,7 @@ Ha androidos eszközén hibaüzenet jelenik meg a Céges portál alkalmazás has
 
 2. Csatlakoztassa eszközét az USB-kábellel a számítógépéhez. Ez rendszerint ugyanaz a kábel, amellyel az eszközt a fali aljzatból tölti.
 
-3. A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az <strong>Androidos eszköz neve\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong> mappát.
+3. A számítógépen keresse meg az eszköz nevével megegyező nevű könyvtárt. Ebben a könyvtárban keresse meg az <strong>Androidos eszköz neve\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong> mappát.
 
 4. Válassza ki a fájlokat és csatolja őket egy e-mailhez. Küldje ezt az e-mailt a cég informatikai támogatási szolgálatának.
 

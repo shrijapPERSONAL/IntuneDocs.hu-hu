@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833365"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117871"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Az eszközök szinkronizálása az Intune-nal a legfrissebb szabályzatok és műveletek beolvasásához
 
@@ -43,6 +43,7 @@ A **Szinkronizálás** eszközművelet kikényszeríti a választott eszköz azo
 4. A kezelt eszközök listájában válasszon ki egy eszközt, válassza a **További** lehetőséget, majd a **Szinkronizálás** elemet.
 5. Válassza az **Igen** lehetőséget a megerősítéshez.
 
+A szinkronizálási művelet állapotának megtekintéséhez válassza az **Eszközök** > **Eszközműveletek** lehetőséget.
 
 ## <a name="retryable-error-codes"></a>Újrapróbálható hibakódok
 
@@ -65,4 +66,5 @@ Ha a rendszergazda a **Szinkronizálás** eszközműveletet futtatja, a sikertel
 
 ## <a name="next-steps"></a>További lépések
 
-- A szinkronizálási művelet állapotának megtekintéséhez válassza az **Eszközműveletek** lehetőséget. 
+[Megtekintheti az eszköz részleteit](device-inventory.md).
+ 

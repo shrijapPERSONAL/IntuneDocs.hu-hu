@@ -15,18 +15,18 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bfc42775424ac84737af6c713a04295e24859f79
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219900"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203254"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS-eszközök automatikus regisztrálása az Apple készülékregisztrációs programjával (DEP)
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör az Apple [készülékregisztrációs programja (DEP)](https://deploy.apple.com) keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Nagyszámú eszköz DEP-regisztrálását végezheti el anélkül, hogy kézbe venné őket. Közvetlenül a felhasználóknak küldhet el olyan eszközöket, mint az iPhone vagy az iPad. Amikor a felhasználó bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint fut, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
+Ez a cikk az Apple [Készülékregisztrációs programja (DEP)](https://deploy.apple.com) keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Nagyszámú eszköz DEP-regisztrálását végezheti el anélkül, hogy kézbe venné őket. Közvetlenül a felhasználóknak küldhet el olyan eszközöket, mint az iPhone vagy az iPad. Amikor a felhasználó bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint fut, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
 
 DEP-regisztráció engedélyezéséhez az Intune- és az Apple DEP-portált is használnia kell. Ahhoz, hogy az eszközök felügyeletét az Intune-hoz rendelhesse, szükség van a sorozatszámok vagy a beszerzési rendelésszámok listájára. Olyan DEP-regisztrációs profilokat hoz létre, amelyek tartalmazzák a regisztráció során az eszközre vonatkozó beállításokat.
 
@@ -92,7 +92,7 @@ A DEP-tokent az Apple DEP-portálon hozhatja létre. Szintén a DEP-portál hasz
 
    Az Apple-portál **Központi telepítési programok** &gt; **Készülékregisztrációs program** &gt; **Hozzárendelési előzmények** menüpontjában jeleníthető meg az eszközök és a hozzájuk tartozó MDM-kiszolgálók listája.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés Mentse a token létrehozásához használt Apple ID-t.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés. Mentse a token létrehozásához használt Apple ID-t.
 
 Az Azure-beli Intune-portálon adja meg az Apple ID azonosítót későbbi felhasználásra.
 
@@ -115,7 +115,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
     ![A profil neve és leírása.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül szükséges-e regisztrálni.
-    - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, például alkalmazások telepítéséhez, a céges portált kívánják használni. Ez a beállítás emellett arra is lehetőséget nyújt a felhasználóknak, hogy a céges portál segítségével hitelesítsék az eszközüket. A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információk](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, például alkalmazások telepítéséhez, a céges portált kívánják használni. Ez a beállítás emellett arra is lehetőséget nyújt a felhasználóknak, hogy a céges portál segítségével hitelesítsék az eszközüket. ADFS használata esetén a felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek nincsenek egy adott felhasználóhoz társítva. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
@@ -151,7 +151,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 11. Válassza **A beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    |                 Beállítás                  |                                                                                               Leírás                                                                                               |
+    |                 Beállítás                  |                                                                                               Description                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Részleg neve</strong>     |                                                             Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Konfiguráció névjegye</strong> elemre koppint.                                                              |
     |    <strong>Részleg telefonszáma</strong>     |                                                          Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint.                                                          |
@@ -178,7 +178,7 @@ Miután az Intune engedélyt kapott az eszközei felügyeletére, szinkronizálh
 1. Az Azure-beli Intune-portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, válasszon egy tokent a listából, majd válassza az **Eszközök** > **Szinkronizálás** lehetőséget. ![Képernyőkép – A Szinkronizálás hivatkozás választása a Készülékregisztrációs programba felvett eszközök mező kijelölése után.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Az Apple elfogadható regisztrációs programforgalomra vonatkozó feltételeinek teljesítése céljából az Intune az alábbi korlátozásokat írja elő:
-   - Teljes szinkronizálás legfeljebb hétnaponta futtatható. A teljes szinkronizálás során az Intune beolvassa az Intune-hoz csatlakoztatott Apple MDM-kiszolgálóhoz rendelt sorozatszámok frissített teljes listáját. A regisztrációs programot követően az eszköz törlődik az Intune-portálról, és addig nem lehet újraimportálni, amíg a teljes szinkronizálás fut.   
+   - Teljes szinkronizálás legfeljebb hétnaponta futtatható. A teljes szinkronizálás során az Intune beolvassa az Intune-hoz csatlakoztatott Apple MDM-kiszolgálóhoz rendelt sorozatszámok frissített teljes listáját. Miután egy Készülékregisztrációs programbeli eszközt úgy törölnek az Intune portálról, hogy nem szüntetik meg az Apple MDM-kiszolgálóval való társítását a DEP-portálon, csak a teljes szinkronizálás lefuttatása után lesz újraimportálva az Intune-ba.   
    - A szinkronizálás futtatása automatikusan történik 24 óránként. A **Szinkronizálás** gombra kattintva is végezhet szinkronizálást (legfeljebb 15 percenként egyszer). Az összes szinkronizálási kérelemnek 15 percen belül kell befejeződnie. A szinkronizálás befejeződéséig a **Szinkronizálás** gomb letiltott. A szinkronizálás frissíti a meglévő eszközök állapotát, és a importálja az Apple MDM-kiszolgálóhoz rendelt új eszközöket.   
 
 
@@ -213,9 +213,9 @@ Lásd: [iOS-eszköz regisztrálása az Intune-ban a Készülékregisztrációs p
 
 4. Válassza a **Your Server Token** (Saját kiszolgálói token) lehetőséget.  
 5. Az [Azure-beli Intune-portálon](https://aka.ms/intuneportal) válassza az **Eszközök regisztrálása** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, és válasszon ki a tokent.
-    ![Képernyőkép a regisztrációs programtokenekről.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+    ![Képernyőkép a regisztrációs program jogkivonatairól.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
-6. Válassza a **Token megújítsa** lehetőséget, majd adja meg az eredeti token létrehozásához használt Apple ID-t.  
+6. Válassza a **Jogkivonat megújítása** lehetőséget, majd adja meg az eredeti jogkivonat létrehozásához használt Apple ID-t.  
     ![Képernyőkép új token generálásáról.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
 
 8. Töltse fel az újonnan letöltött tokent.  

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905223"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203220"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Eszközök regisztrálása készülékregisztráció-kezelői fiók használatával
 
@@ -56,7 +56,7 @@ Az eszközregisztráció-kezelői fiókokkal regisztrált eszközökre a követk
   - (Csak iOS esetén) Ha eszközregisztráció-kezelővel regisztrálja az iOS-eszközöket, akkor nem használhatja az Apple Configuratort, a Készülékregisztrációs programot (DEP) és az Apple School Manager (ASM) programot az eszközök regisztrálására.
   - (Csak Android esetén) Az adott DEM-fiókkal regisztrálható androidos munkahelyi profilos eszközök száma korlátozott. DEM-fiókonként legfeljebb tíz androidos munkahelyi profillal rendelkező eszközt lehet regisztrálni. Ez a korlátozás a hagyományos Android-eszközök regisztrációjára nem vonatkozik.
   - Az eszközök telepíthetnek VPP-alkalmazásokat, ha rendelkeznek eszközlicenccel.
-  - Mindegyik eszközhöz eszközlicenc szükséges. További információ a [felhasználói és eszközlicencekről](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
+  - A DEM használatához nem szükséges Intune-eszközlicenc. További információ a [felhasználói és eszközlicencekről](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]

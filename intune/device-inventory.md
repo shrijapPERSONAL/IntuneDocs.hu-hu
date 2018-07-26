@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051606"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117922"
 ---
 # <a name="see-device-details-in-intune"></a>Eszközadatok megtekintése az Intune-ban
 
@@ -34,7 +34,7 @@ Ez a cikk bemutatja, hogyan tekintheti meg az összes eszközét és azok tulajd
 2. Kattintson az **Összes szolgáltatás** lehetőségre, szűrjön az **Intune-ra**, és válassza ki a **Microsoft Intune** elemet.
 3. Válassza az **Eszközök** > **Minden eszköz** lehetőséget, majd jelölje ki a listában szereplő eszközök egyikét, hogy megnyissa annak részletes adatait:
 
-   - Az **Áttekintés** az eszköz nevét és néhány lényeges tulajdonságát tartalmazza, köztük sok más mellett azt is, hogy saját eszköz-e (BYOD), és mikor jelentkezett be. A továbbiakhoz válassza a **További részletek** lehetőséget:
+   - Az **Áttekintés** az eszköz nevét és néhány lényeges tulajdonságát tartalmazza, köztük sok más mellett azt is, hogy saját eszköz-e (BYOD), és mikor jelentkezett be. Válassza a **További részletek** lehetőséget az alábbiakhoz:
      - Céges adatok eltávolítása
      - Eszköz törlése
      - Az eszköz távoli zárolása
@@ -57,6 +57,49 @@ Az Intune csak a vállalat tulajdonában lévő eszközökön található alkalm
 |iOS|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|
 |macOS|Az összes, az eszközön telepített alkalmazás|Az összes, az eszközön telepített alkalmazás|  
 |Android|Csak felügyelt alkalmazások|Az összes, az eszközön telepített alkalmazás|  
+
+## <a name="hardware-device-details"></a>Hardvereszköz részletes adatai
+
+### <a name="windows-and-ios-device-details"></a>Windows és iOS rendszerű eszköz részletes adatai:
+|Részletek|Description|  
+|--------------|----------------------|  
+|Név|Az eszköz neve.|
+|Felügyeleti név|A csak a konzolon használt eszköznév. Ennek a névnek a módosítása nem változtatja meg a nevet az eszközön.|
+|UDID|Az eszköz egyedi eszközazonosítója.|
+|Intune-eszközazonosító|Az eszközt egyedileg azonosító GUID.|
+|Sorozatszám|Az eszköz gyártótól származó sorozatszáma.|
+|Megosztott eszköz|Ha **Igen**, akkor az eszköz több felhasználó között van megosztva.|
+|Felhasználó által jóváhagyott regisztráció|Ha **Igen**, akkor az eszközön felhasználó által jóváhagyott regisztráció van érvényben. Ezáltal a rendszergazdák felügyelni tudják az eszköz bizonyos biztonsági beállításait.|
+|Operációs rendszer|Az eszközön futó operációs rendszer.|
+|Operációs rendszer verziója|Az eszközön futó operációs rendszer verziója.|
+|Operációs rendszer nyelve|Az eszközön futó operációs rendszerhez beállított nyelv.|
+|Teljes tárterület|Az eszközön lévő teljes tárterület (gigabájtban).|
+|Szabad tárterület|Az eszközön lévő felhasználatlan tárterület (gigabájtban).|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Windows, iOS és macOS rendszerű eszköz részletei
+|Részletek|Description|  
+|--------------|----------------------|  
+|IMEI|Az eszköz Nemzetközi mobilkészülék-azonosító (IMEI) száma.|
+|MEID|Az eszköz mobilkészülék-azonosító száma.|
+|Gyártó|Az eszköz gyártója.|
+|Modell|Az eszköz típusa.|
+|Telefonszám|Az eszközhöz rendelt telefonszám.|
+|Előfizetés-szolgáltató|Az eszköz vezeték nélküli szolgáltatója.|
+|Mobiltechnológia|Az eszköz által használt rádiórendszer.|
+|Wi-Fi MAC|Az eszköz MAC-címe.|
+|ICCID|Az integrált áramköri kártya (ICC) azonosítója, amely a SIM-kártya egyedi azonosítószáma.|
+|Regisztrálás dátuma|Az eszköz Intune-ban történt regisztrálásának dátuma és időpontja.|
+|Utolsó kapcsolat|Az eszköz Intune-hoz való utolsó kapcsolódásának dátuma és időpontja.|
+|Kód az aktiválási zár megkerüléséhez|Az aktiválási zár megkerüléséhez használható kód.|
+|Az Azure AD-ban regisztrálva|Ha **Igen**, akkor az eszköz regisztrálva van az Azure Active Directoryban.|
+|Megfelelőség|Az eszköz megfelelőségi állapota.|
+|EAS aktiválva|Ha **Igen**, akkor az eszköz szinkronizálva van egy Exchange-postafiókkal.|
+|EAS-aktiválási azonosító|Az eszköz Exchange ActiveSync-azonosítója.|
+|Felügyelt|Ha **Igen**, akkor a rendszergazdák fokozott felügyelettel rendelkeznek az eszköz felett.|
+|Titkosítva|Ha **Igen**, akkor az eszközön tárolt adatok titkosítva vannak.|
+
+
 
 ## <a name="next-steps"></a>További lépések
 Ismerje meg az Intune-beli [eszközkezelés](device-management.md) további funkcióit.

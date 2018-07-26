@@ -15,12 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75a4d6f91323992cf7aa2c8bae6db419b14d1942
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5d8357a63f80552ff4b6ebd6d1da2998e675dd00
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831226"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146679"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Alkalmazásonkénti VPN-profil létrehozása androidos eszközökhöz egyéni Microsoft Intune-profillal
 
@@ -63,8 +63,8 @@ Jegyezze le a VPN-profil létrehozásakor megadott **Kapcsolat neve** értéket.
 7. Válassza a **Beállítások** > **Konfigurálás** lehetőséget.
 3. Az **Egyéni OMA-URI beállítások** panelen válassza a **Hozzáadás** lehetőséget.
     - Adja meg a beállítás nevét.
-    - Az **OMA-URI** mezőbe írja be a következő karakterláncot: **./Vendor/MSFT/VPN/Profile/*Név*/PackageList**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A jelen példában a karakterlánc a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/PackageList**.
-    - Az **Adattípus** mezőben válassza a **Karakterlánc** lehetőséget.
+    - Az **OMA-URI** mezőbe írja be a következő sztringet: **./Vendor/MSFT/VPN/Profile/*Név*/PackageList**, ahol a *Név* a kapcsolatnak az 1. lépésben feljegyzett neve. A jelen példában a sztring a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/PackageList**.
+    - Az **Adattípus** mezőben válassza a **Sztring** lehetőséget.
     - Az **Érték** területen adja meg azoknak a csomagoknak a pontosvesszővel tagolt listáját, amelyeket a profilhoz társít. Ha például azt szeretné, hogy az Excel és a Google Chrome böngésző VPN-kapcsolatot használjon, írja be a következőt: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Példa Android rendszerű, alkalmazásonkénti VPN-hez létrehozott egyéni szabályzatra](./media/android_per_app_vpn_oma_uri.png)
@@ -74,8 +74,8 @@ Jegyezze le a VPN-profil létrehozásakor megadott **Kapcsolat neve** értéket.
 Másik megoldásként használhatja a **WHITELIST** (ENGEDÉLYEZETT) értéket, és megadhatja azon alkalmazások listáját, amelyek *használhatják* a VPN-kapcsolatot. A listán nem szereplő alkalmazások nem csatlakozhatnak az internethez a VPN-kapcsolaton keresztül.
   1.    Az **Egyéni OMA-URI beállítások** panelen válassza a **Hozzáadás** lehetőséget.
   2.    Adja meg a beállítás nevét.
-  3.    Az **OMA-URI** mezőbe írja be a következő karakterláncot: **./Vendor/MSFT/VPN/Profile/*Név*/Mode**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A fenti példában a karakterlánc a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/Mode**.
-  4.    Az **Adattípus** mezőben válassza a **Karakterlánc** lehetőséget.
+  3.    Az **OMA-URI** mezőbe írja be a következő sztringet: **./Vendor/MSFT/VPN/Profile/*Név*/Mode**, ahol a *Név* az 1. lépésben feljegyzett VPN-profil neve. A fenti példában a sztring a következő lenne: **./Vendor/MSFT/VPN/Profile/AlkVpnProfil/Mode**.
+  4.    Az **Adattípus** mezőben válassza a **Sztring** lehetőséget.
   5.    Az **Érték** mezőbe írja be a **BLACKLIST** (LETILTOTT) vagy a **WHITELIST** (ENGEDÉLYEZETT) értéket.
 
 

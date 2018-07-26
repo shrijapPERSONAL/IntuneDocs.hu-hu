@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744567"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146628"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Az iOS rendszerű eszközökre vonatkozó VPN-beállítások konfigurálása a Microsoft Intune-ban
 
@@ -63,10 +63,10 @@ Ha a kapcsolat típusaként az **Egyéni VPN** lehetőséget választotta, konfi
 - **VPN-azonosító**: Ez az Ön által használt VPN-alkalmazás azonosítója, amelyet a VPN-szolgáltatója biztosított.
 - **Adja meg a kulcs-érték párokat az egyéni VPN attribútumainak konfigurálásához**: **Kulcsok** és **Értékek** hozzáadásával vagy importálásával szabhatja testre a VPN-kapcsolatot. Rendszerint ezeket az értékeket is a VPN-szolgáltató biztosítja.
 
-## <a name="apps-per-app-vpn-settings"></a>Alkalmazások (alkalmazásonkénti VPN) beállításai
+## <a name="automatic-vpn-settings"></a>Automatikus VPN-beállítások
 
-- **Alkalmazásonkénti VPN**: Engedélyezze ezt a beállítást, ha olyan URL-címeket szeretne használni, amelyek engedélyezik a VPN-kapcsolatot a Safari böngészőből való megnyitáskor. Az alkalmazásonkénti VPN konfiguráláshoz hitelesítési módszerként a **Tanúsítványok** lehetőséget kell választania az alapvető VPN-beállításokban.
-  - **A VPN-t aktiváló Safari URL-címek**: E lehetőség választásával megadhat egy vagy több webhelycímet. Ezeknek a URL-címeknek a használatakor a VPN-kapcsolat engedélyezve van.
+- **Alkalmazásonkénti VPN**: Ezt a beállítást választva engedélyezi az alkalmazásonkénti VPN, ezáltal a VPN-kapcsolat bizonyos alkalmazások megnyitásakor automatikusan aktiválódni fog. A beállítás kiválasztása mellett az alkalmazásokat is társítania kell ehhez a VPN-profilhoz. További információt az [Útmutató alkalmazásonkénti VPN beállításához iOS rendszeren](vpn-setting-configure-per-app.md) című cikkben találhat. 
+  - **A VPN-t aktiváló Safari URL-címek**: E lehetőség választásával megadhat egy vagy több webhelycímet. Ezeket az URL-címeket az eszköz Safari böngészőjében megnyitva a VPN-kapcsolat automatikusan létrejön.
 
 - **Igény szerinti VPN**: Ezzel a beállítással feltételes szabályokat állíthat be, melyek a VPN-kapcsolat kezdeményezésekor lépnek érvénybe. Létrehozhat például egy olyan feltételt, amelyben a rendszer csak akkor használja a VPN-kapcsolatot, ha az eszköz nem kapcsolódik a vállalati Wi-Fi-hálózathoz. Vagy olyan feltételt is létrehozhat, amelyben ha egy eszköz nem férhet hozzá egy megadott DNS-keresési tartományhoz, akkor a rendszer nem kezdeményez VPN-kapcsolatot.
 

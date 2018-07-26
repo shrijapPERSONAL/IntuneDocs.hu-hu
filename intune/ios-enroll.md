@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027118"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146696"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>iOS-eszközök regisztrálása az Intune-ban
 
@@ -70,29 +70,15 @@ Felhasználói affinitás szükséges az alábbiak támogatásához:
   - Vállalati portál alkalmazás
 
 **A vállalat által birtokolt iOS-eszközök regisztrálása felhasználói affinitás használatával**
-1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. A telepítés során a rendszer kéri a felhasználóktól a hitelesítő adataik megadását. A felhasználóknak az Intune-előfizetésükhöz tartozó hitelesítő adataikat (vagyis az egyedi felhasználónevüket vagy az egyszerű felhasználónevüket) kell megadniuk.
-
-2. A telepítés során a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Vállalati portál alkalmazást. Az azonosítót a telepítés után, az iOS-beállítások menüben is megadhatják.
-
-3. A telepítés befejezése után az iOS-eszközön telepíteni kell a Vállalati portál alkalmazását az App Store áruházból.
-
-4. A felhasználó ekkor bejelentkezhet a Vállalati portál alkalmazásba az eszköz beállításakor megadott egyszerű felhasználónév használatával.
-
-5. A bejelentkezés után a rendszer kéri a felhasználótól az eszköz regisztrálását. Ennek első lépése az eszköz azonosítása. Az alkalmazás megjeleníti azon iOS-eszközök listáját, amelyek már a vállalat tulajdonában vannak, és amelyek hozzá vannak rendelve a felhasználók Intune-fiókjához. A felhasználónak ki kell választania a megfelelő eszközt.
-
-   Ha az eszköz még nincs regisztrálva a vállalatnál, a normál regisztrálási művelet folytatásához a felhasználó válassza az **új eszköz** lehetőséget.
-
-6. A következő képernyőn a felhasználónak meg kell erősítenie az új eszköz sorozatszámát. A felhasználó a **sorozatszám megerősítése** hivatkozásra koppinthat, és ezzel megnyithatja a beállítási alkalmazás a sorozatszám ellenőrzéséhez való használatára vonatkozó útmutatást. A felhasználónak ezután meg kell adnia a sorozatszám utolsó négy számjegyét a Vállalati portál alkalmazásban.
-
-   Ez a lépés azt ellenőrzi, hogy az eszköz az Intune-ban regisztrált vállalati eszköz-e. Ha az eszközön található sorozatszám nem egyezik, nem a megfelelő eszköz választotta ki. A felhasználónak ekkor vissza kell lépnie az előző képernyőre, és ki kell választania egy másik eszközt.
-
-7. A sorozatszám ellenőrzése után a Vállalati portál alkalmazás átirányítja a felhasználót a Vállalati portál webhelyre a regisztrálás véglegesítéséhez. Ekkor a webhely felajánlja a lehetőséget, hogy visszatérjen az alkalmazáshoz.
-
-8. Ezzel befejeződött a regisztráció. Ezután a felhasználó az összes funkciójával együtt használhatja az eszközt.
+1. Amikor a felhasználók bekapcsolják az eszközüket, megjelenik a Beállítási asszisztens befejezését kérő üzenet. 
+2. A telepítés befejezése után a rendszer kéri a felhasználóktól az Apple ID azonosítójuk megadását. Az Apple ID azonosítót azért kell megadni, hogy az eszköz telepíthesse a Céges portál alkalmazást. 
+3. Az iOS-eszköz automatikusan telepíti a Céges portál alkalmazást az App Store-ból.
+4. A felhasználóknak el kell indítaniuk a Céges portál alkalmazást, és be kell jelentkezniük az Intune-előfizetésükhöz társított hitelesítő adatok (mint az egyszerű felhasználónév vagy UPN) használatával. 
+5. Bejelentkezés után a regisztráció kész. A felhasználók ezután az összes funkciójával együtt használhatják az eszközt.
 
 ### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>A felhasználói affinitás nélküli vállalati tulajdonú eszközök áttekintése
 
-A felhasználói affinitás nélkül konfigurált eszközök nem támogatják a Vállalati portált, ezért ezekre az eszközökre ne telepítse az alkalmazást. A Vállalati portál az olyan felhasználók számára készült, akik rendelkeznek vállalati hitelesítő adatokkal, és hozzá kell férniük a személyre szabott vállalati erőforrásokhoz (pl. az e-mailhez). A felhasználói affinitás nélkül regisztrált eszközökhöz nem tartozhat dedikált felhasználói bejelentkezés. A felhasználói affinitás nélkül regisztrált eszközök jellemző példái közé tartoznak a kioszkok, a pénztári eszközök (POS) és a megosztott segédeszközök.
+A felhasználói affinitás nélkül konfigurált eszközök nem támogatják a Vállalati portált, ezért ezekre az eszközökre ne telepítse az alkalmazást. A Céges portál az olyan felhasználók számára készült, akik rendelkeznek vállalati hitelesítő adatokkal, és hozzá kell férniük a személyre szabott vállalati erőforrásokhoz (például e-mailhez). A felhasználói affinitás nélkül regisztrált eszközökhöz nem tartozhat dedikált felhasználói bejelentkezés. A felhasználói affinitás nélkül regisztrált eszközök jellemző példái közé tartoznak a kioszkok, a pénztári eszközök (POS) és a megosztott segédeszközök.
 
 Ha szükség van a felhasználói affinitásra, az eszköz regisztrálása előtt adja meg a **Felhasználói affinitás** beállítást az eszközregisztrációs profilban. Ha egy eszközön módosítani kell az affinitási állapotot, ki kell vonnia az eszközt, majd újból regisztrálnia kell.
 
