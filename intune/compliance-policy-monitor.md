@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905359"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132459"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune-eszközmegfelelőségi szabályzatok figyelése
 
@@ -167,11 +167,11 @@ Ezt a funkciót tartalmazza az eszköz állapotjelentése:
 1. Válassza az **Eszközmegfelelőség** > **Szabályzatok** elemet. Megjelenik a szabályzatok listája, amely tartalmazza a platformot, hogy hozzá van-e rendelve a szabályzat, és további részleteket.
 2. Válasszon ki egy szabályzatot > **Áttekintés**. Ebben a nézetben a szabályzat-hozzárendelés a következő állapotokat tartalmazza:
 
-  - Sikerült
-  - Hiba
-  - Ütközés
-  - Függőben
-  - Nem alkalmazható
+  - Sikeres művelet: Szabályzat alkalmazva
+  - Hiba: A szabályzatot nem sikerült alkalmazni. Ehhez általában egy hibakód is tartozik, amely a hiba ismertetőjére hivatkozik. 
+  - Ütközés: Két beállítást alkalmaztak ugyanazon eszközre, az Intune pedig nem tudta feloldani az ütközést. Rendszergazdai ellenőrzés szükséges.
+  - Függőben: Az eszköz nem jelentkezett be az Intune-ba, így még nem kapta meg a szabályzatot. 
+  - Nem alkalmazható: Az eszköz nem tudja megkapni a szabályzatot. A szabályzat például egy, az iOS 11.1-re vonatkozó beállítást frissít, az eszköz azonban az iOS 10-et használja. 
 
 3. A szabályzatot használó eszközökön a részletek megtekintéséhez válassza ki a állapotok egyikét. Válassza például a **Sikeres** elemet. A következő ablakban megjelennek az eszköz adatai, például az eszköz neve és az üzembe helyezési állapot.
 
@@ -181,4 +181,3 @@ Szabályzatütközésről akkor beszélünk, hogy egy eszközre több Intune-sza
 - Ha az ütköző beállítások egy Intune konfigurációs szabályzatból és egy megfelelőségi szabályzatból kerülnek ki, akkor a megfelelőségi szabályzat beállításai érvényesülnek a konfigurációs szabályzatéival szemben. Ez még akkor is így van, ha a konfigurációs szabályzat beállításai biztonságosabbak.
 
 - Ha több megfelelőségi szabályzatot telepített, akkor az Intune a legbiztonságosabbat alkalmazza ezek közül.
-

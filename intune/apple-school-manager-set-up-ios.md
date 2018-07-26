@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225152"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164552"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>iOS-eszközök regisztrálásának engedélyezése az Apple School Manager programban
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ez a témakör az [Apple School Manager](https://school.apple.com/) program keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Az Intune használatával nagy számú iOS-eszközt regisztrálhat az Apple School Manager programba anélkül, hogy kézbe venné az eszközökhöz. Amikor egy tanuló vagy a tanár bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint indul el, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
+Ez a cikk az [Apple School Manager](https://school.apple.com/) program keretében vásárolt iOS-eszközök regisztrálásához nyújt segítséget. Az Intune használatával nagy számú iOS-eszközt regisztrálhat az Apple School Manager programba anélkül, hogy kézbe venné az eszközökhöz. Amikor egy tanuló vagy a tanár bekapcsolja az eszközt, a Beállítási asszisztens az előre konfigurált beállítások szerint indul el, és regisztrálja az eszközt a felügyeleti szolgáltatásban.
 
 Az Apple School Manager programba történő regisztráció az Intune és az Apple School Manager portálok együttes használatával kapcsolható be. Ahhoz, hogy az eszközök felügyeletét az Intune-hoz rendelhesse, szükség van a sorozatszámok vagy a beszerzési rendelésszámok listájára. Olyan DEP-regisztrációs profilokat hoz létre, amelyek tartalmazzák a regisztráció során az eszközre vonatkozó beállításokat.
 
@@ -36,7 +36,7 @@ Az Apple School Manager programba történő regisztráció nem használható eg
 - [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
 - [MDM-szolgáltató ](mdm-authority-set.md)
 - [Apple MDM Push-tanúsítvány](apple-mdm-push-certificate-get.md)
-- A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információk](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- ADFS használata esetén a felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Az [Apple School Management](http://school.apple.com) program keretében vásárolt eszközök
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Az Apple-token beszerzése és az eszközök hozzárendelése
@@ -66,7 +66,7 @@ A céges tulajdonú iOS-eszközök regisztrálását csak akkor végezheti el az
 8. Adja meg az eszközkiválasztás **(Choose Devices)** módját, majd az eszközhöz kapcsolódó információkat és adatokat.
 9. Válassza az **Assign to Server** (Hozzárendelés kiszolgálóhoz) lehetőséget, válassza ki a Microsoft Intune-hoz megadott &lt;kiszolgálónevet&gt;, majd kattintson az **OK** gombra.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés Mentse a token létrehozásához használt Apple ID-t.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. lépés. Mentse a token létrehozásához használt Apple ID-t.
 
 Az Azure-beli Intune-portálon adja meg az Apple ID azonosítót későbbi felhasználásra.
 
@@ -80,13 +80,15 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 1. Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget.
 2. Válasszon egy tokent, és válassza a **Profilok**, majd a **Profil létrehozása** lehetőséget.
+
 3. A **Profil létrehozása** panelen adminisztrációs célból adja meg a profil **Nevét** és **Leírását**. Ezeket a felhasználók nem fogják látni. A **Név** mező felhasználásával dinamikus csoportot hozhat létre az Azure Active Directoryban. Használja a profilnevet az enrollmentProfileName paraméter meghatározásához, hogy ezzel a regisztrációs profillal rendelhesse hozzá az eszközöket. További információk az [Azure Active Directory-alapú dinamikus csoportokról](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+
     ![A profil neve és leírása.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. A **Felhasználói affinitást** aszerint állítsa be, hogy a profilhoz tartozó eszközöket hozzárendelt felhasználóval vagy anélkül szükséges-e regisztrálni.
-    - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, például alkalmazások telepítéséhez, a céges portált kívánják használni. Ez a beállítás emellett arra is lehetőséget nyújt a felhasználóknak, hogy a céges portál segítségével hitelesítsék az eszközüket. A felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információk](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Az Apple School Manager megosztott iPadeket kezelő üzemmódja felhasználói affinitás nélküli regisztrálást igényel.
+    - **Regisztráció felhasználói affinitással** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek a felhasználók tulajdonában vannak, de egyes szolgáltatásokhoz, például alkalmazások telepítéséhez, a céges portált kívánják használni. Ez a beállítás emellett arra is lehetőséget nyújt a felhasználóknak, hogy a céges portál segítségével hitelesítsék az eszközüket. ADFS használata esetén a felhasználói affinitáshoz [WS-Trust 1.3 Username/Mixed végpont](https://technet.microsoft.com/library/adfs2-help-endpoints) szükséges. [További információ](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Az Apple School Manager megosztott iPadeket kezelő üzemmódja felhasználói affinitás nélküli regisztrálást igényel.
 
-    - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek nincsenek egy adott felhasználóhoz társítva, például közös használatú eszközökhöz. Olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
+    - **Regisztráció felhasználói affinitás nélkül** – Ezt a lehetőséget olyan eszközökhöz válassza, amelyek nincsenek egy adott felhasználóhoz társítva, például közös használatú eszközökhöz. Ezt a lehetőséget olyan eszközökhöz használja, amelyek a helyi felhasználói adatokhoz való hozzáférés nélkül végeznek feladatokat. Egyes alkalmazások, mint például a Céges portál alkalmazás, nem működnek.
 
 5. A **Regisztráció felhasználói affinitással** lehetőség választásakor engedélyezheti a felhasználóknak, hogy az Apple beállítási asszisztens helyett a Céges portál alkalmazással végezzenek hitelesítést.
 
@@ -108,7 +110,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 7. Adja meg, hogy zárolt regisztrációt kíván-e beállítani a jelen profilt használó eszközökhöz. A **Zárolt regisztráció** letiltja azokat az iOS-beállításokat a **Beállítások** menüből, amelyek segítségével eltávolítható a felügyeleti profil. Az eszköz regisztrálása után ez a beállítás nem módosítható az eszköz gyári beállításainak visszaállítása állítása nélkül. A zárolt regisztrációjú eszközökön a **Felügyelt** felügyeleti módot az *Igen* értékre kell beállítani. 
 
-8. Ha szeretné engedélyezni, hogy egy felügyelt Apple ID azonosítóval több felhasználó is bejelentkezzen a regisztrált iPadekre, válassza az **Igen** lehetőséget a **Megosztott iPad** beállításnál. E beállítás használatához a **Regisztráció felhasználói affinitás nélkül** beállítást és a **Felügyelt** módot is az **Igen** értékre kell állítani.) A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. [További tudnivalók a megosztott iPadekről.](education-settings-configure-ios-shared.md) Érdemes áttekintenie az [Apple megosztott iPadekre vonatkozó követelményeit](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) is.
+8. Ha szeretné engedélyezni, hogy egy felügyelt Apple ID azonosítóval több felhasználó is bejelentkezzen a regisztrált iPadekre, válassza az **Igen** lehetőséget a **Megosztott iPad** beállításnál (ez beállítás **Felhasználói affinitás nélküli regisztrálást** és **Igen** értékre állított **Felügyelt** üzemmódot igényel). A felügyelt Apple ID-k létrehozása az Apple School Manager portálján történik. További információ a [megosztott iPadekről](education-settings-configure-ios-shared.md) és az [Apple megosztott iPadekre vonatkozó követelményeiről](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
 9. Adja meg, hogy a jelen profilt használó eszközök végezhetnek-e **Szinkronizálást számítógépekkel**. Ha az **Apple Configurator engedélyezése tanúsítvány szerint** lehetőséget választja, tanúsítványt kell választania az **Apple Configurator-tanúsítványok** területen.
 
@@ -119,7 +121,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 12. Válassza **A beállítási asszisztens beállításai** elemet, és konfigurálja az alábbi profilbeállításokat: ![A beállítási asszisztens testreszabása.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    |                 Beállítás                  |                                                                                               Leírás                                                                                               |
+    |                 Beállítás                  |                                                                                               Description                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Részleg neve</strong>     |                                                             Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Konfiguráció névjegye</strong> elemre koppint.                                                              |
     |    <strong>Részleg telefonszáma</strong>     |                                                          Akkor jelenik meg, ha a felhasználó az aktiválás során a <strong>Segítségre van szüksége?</strong> gombra kattint.                                                          |
@@ -151,7 +153,7 @@ Most, hogy telepítette a jogkivonatot, létrehozhatja a regisztrációs profilt
 
 ## <a name="sync-managed-devices"></a>Felügyelt eszközök szinkronizálása
 
-Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyeletére, szinkronizálhatja az Intune-t az Apple szolgáltatással, hogy a felügyelt eszközök megjelenjenek az Intune-ban.
+Miután az Intune engedélyt kapott az Apple School Manager-eszközök felügyeletére, szinkronizálja az Intune-t az Apple szolgáltatással, hogy a felügyelt eszközök megjelenjenek az Intune-ban.
 
 Az [Intune](https://aka.ms/intuneportal) portálon válassza az **Eszközök beléptetése** > **Apple-regisztráció** > **Készülékregisztrációs programbeli token** lehetőséget, válasszon egy tokent a listából, majd válassza az **Eszközök** > **Szinkronizálás** lehetőséget. ![Képernyőkép – A Szinkronizálás hivatkozás választása a Készülékregisztrációs programba felvett eszközök mező kijelölése után.](./media/device-enrollment-program-enroll-ios/image06.png)
 
