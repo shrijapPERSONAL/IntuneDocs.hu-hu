@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039420"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212069"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Újdonságok a Microsoft Intune-ban
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -133,7 +133,7 @@ Az Intune a Google egyes márkaneveit érintő változtatásaihoz igazodva friss
 #### <a name="rules-for-removing-devices----1609459---"></a>Szabályok eszközeltávolításhoz <!-- 1609459 -->
 Új szabályok érhetők el, melyekkel automatikusan eltávolíthatja azokat az eszközöket, amelyek nem jelentkeztek be az Ön által megadott számú napon keresztül. Az új szabály megtekintéséhez nyissa meg az **Intune** panelt, és válassza az **Eszközök**, majd az **Eszközök adattörlési szabályai** lehetőséget.
 
-#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>Egyetlen célra használható céges funkció (COSU) támogatása Android-eszközökhöz <!-- 1630973 -->
+#### <a name="corporate-owned-single-use-support-for-android-devices----1630973---"></a>Egyetlen célra használható céges funkció támogatása Android-eszközökhöz <!-- 1630973 -->
 
 Az Intune támogatja a gondosan felügyelt, zárolt, kioszkstílusú Android-eszközöket. Ez lehetővé teszi a rendszergazdák számára, hogy egyetlen alkalmazásra vagy kis alkalmazáskészletre szűkítsék az eszközhasználatot, és megakadályozzák, hogy a felhasználók más alkalmazásokat engedélyezzenek vagy más műveleteket hajtsanak végre az eszközön. Az Android-kioszk beállításához lépjen az Intune > **Eszközregisztráció** > **Android-regisztráció** > **Kioszk- és feladatalapú eszközök regisztrációja** területre. További információért lásd: [Vállalati androidos kioszkeszközök regisztrálásának beállítása](android-kiosk-enroll.md).
 
@@ -682,7 +682,7 @@ Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kia
 
 #### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
 
-|Beállítás neve  |Beállítás lehetőségei  |Leírás  |
+|Beállítás neve  |Beállítás lehetőségei  |Description  |
 |---------|---------|---------|
 |Zsarolóprogramok elleni speciális védelem|Engedélyezve, Naplózás, Nincs konfigurálva|Zsarolóprogramok elleni agresszív védelem.|
 |A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése|Engedélyezve, Naplózás, Nincs konfigurálva|A Windows helyi biztonsági szervezet alrendszeréből történő hitelesítő adatok lopásának megjelölése (lsass.exe).|
@@ -692,7 +692,7 @@ Profil létrehozása\Endpoint Protection\Windows Defender - biztonsági rés kia
 
 #### <a name="controlled-folder-access"></a>Mappahozzáférés felügyelete
 
-|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Leírás |
+|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
@@ -771,7 +771,7 @@ Az erőforrásfiók megjelenhet például **Konferenciaterem B41/6233** néven.
 ##### <a name="attack-surface-reduction"></a>Támadási felület csökkentése
 
 
-|Beállítás neve  |Beállítás lehetőségei  |Leírás  |
+|Beállítás neve  |Beállítás lehetőségei  |Description  |
 |---------|---------|---------|
 |Jelszóval védett végrehajtható tartalom futtatása e-mailből|Tiltás, Naplózás, Nincs konfigurálva|E-mailből letöltött jelszóval védett végrehajtható fájlok futtatásának megakadályozása.|
 |Zsarolóprogramok elleni speciális védelem|Engedélyezve, Naplózás, Nincs konfigurálva|Zsarolóprogramok elleni agresszív védelem.|
@@ -782,7 +782,7 @@ Az erőforrásfiók megjelenhet például **Konferenciaterem B41/6233** néven.
 
 ##### <a name="controlled-folder-access"></a>Mappahozzáférés felügyelete
 
-|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Leírás |
+|              Beállítás neve               |                                                              Beállítás lehetőségei                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Mappavédelem (már implementálva) | Nincs konfigurálva, Engedélyezés, Csak naplózás (már implementálva)<br><br> <strong>Új</strong><br>Lemezmódosítás letiltása, lemezmódosítás naplózása |             |
 
@@ -1113,7 +1113,7 @@ Az Apple bejelentette, hogy konkrét követelményeket ír elő az Application T
 
 
 
-## <a name="see-also"></a>További információ
+## <a name="see-also"></a>Lásd még:
 * [A Microsoft Intune blogja](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [A felhőplatform ütemterve](https://www.microsoft.com/cloud-platform/roadmap)
 * [A Céges portál felhasználói felületének újdonságai](whats-new-app-ui.md)
