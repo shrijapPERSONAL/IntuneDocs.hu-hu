@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909167"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279406"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Androidos munkahelyi profilos eszközök kezelése az Intune-nal
 
@@ -66,7 +66,7 @@ Az érvényben lévő alkalmazásvédelmi szabályzatokat a munkahelyi és a sze
 
 A VPN-támogatás az Android VPN-profilokhoz hasonlít. Ugyanazon VPN-szolgáltatók és általános beállítási lehetőségek érhetők el az eszközök a vállalati Android segítségével való kezeléséhez, két eltéréssel:
 
--  **Munkahelyi profil hatókörű VPN** – A VPN-kapcsolatok a munkahelyi profilban üzembe helyezett alkalmazásokra vannak korlátozva. Csak a vállalati Android által felügyelt alkalmazások használhatják a VPN-kapcsolatot. Az eszközön lévő saját alkalmazások nem használhatnak felügyelt VPN-kapcsolatot. További információt a [Vállalati Android VPN-beállításai](vpn-settings-android.md#android-work-profile-device-vpn-settings) című témakörben talál.
+-  **Munkahelyi profil hatókörű VPN** – A VPN-kapcsolatok a munkahelyi profilban üzembe helyezett alkalmazásokra vannak korlátozva. Csak a vállalati Android által felügyelt alkalmazások használhatják a VPN-kapcsolatot. Az eszközön lévő saját alkalmazások nem használhatnak felügyelt VPN-kapcsolatot. További információt a [Vállalati Android VPN-beállításai](vpn-settings-android.md#android-for-work-vpn-settings) című témakörben talál.
 
 -  **Alkalmazásspecifikus VPN** – Az alkalmazásspecifikus VPN akkor konfigurálható az Intune-ban, ha a VPN-szolgáltató támogatja:
     - alkalmazásspecifikus VPN konfigurációja
